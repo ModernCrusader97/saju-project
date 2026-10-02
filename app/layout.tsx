@@ -1,0 +1,1 @@
+import "./globals.css"; export const metadata={title:"사주 행성 실험실",description:"천간 재질과 구면 마스크를 직접 비교하는 비공개 행성 미리보기",icons:{icon:"/favicon.svg"}}; export default function Layout({children}:{children:React.ReactNode}){return <html lang="ko"><body>{children}</body></html>}
