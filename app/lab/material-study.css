@@ -2,3 +2,5 @@
 .material-accent-toggle{display:flex;align-items:center;gap:9px;font-size:14px;color:#516873;margin:4px 0 14px}.material-accent-toggle input{width:17px;height:17px;accent-color:#173c48}
 
 .material-fallback{position:absolute;inset:0;background:#102333;display:flex;align-items:center;justify-content:center;flex-direction:column;padding:18px;gap:8px;color:#eef5fa;text-align:center}.material-fallback strong{font-size:16px}.material-fallback p{font-size:13px;color:#b5cbd6}.material-fallback img{max-width:100%;max-height:66%;object-fit:contain}.material-fallback button{font-size:13px;border:1px solid #7294a5;border-radius:4px;padding:6px 12px;margin-top:3px}
+
+.lab-sections{overflow-x:auto}.lab-sections button{flex:0 0 auto}.material-pair-tabs button{font-size:14px}
