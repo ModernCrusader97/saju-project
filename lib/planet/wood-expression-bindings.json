@@ -1,0 +1,38 @@
+{
+  "rootNode": 16,
+  "faceNodes": [
+    0,
+    1,
+    2,
+    3,
+    6,
+    7,
+    14
+  ],
+  "rootName": "ElementExpressionRoot",
+  "morphNames": [
+    "Curious",
+    "Warm",
+    "Blink"
+  ],
+  "glbSha256": "9988e332a4efaefbe2c4c2885e0a5c4842e6089e8c5d0f2b430e70d1a5930b2b",
+  "nodeNames": {
+    "0": "wood | eye glint",
+    "1": "wood | eye glint.001",
+    "2": "wood | gentle brow",
+    "3": "wood | gentle brow.001",
+    "4": "Wood | growing crown",
+    "5": "Wood | left leaf",
+    "6": "wood | quiet eye",
+    "7": "wood | quiet eye.001",
+    "8": "Wood | restrained side grain",
+    "9": "Wood | restrained side grain.001",
+    "10": "Wood | restrained side grain.002",
+    "11": "Wood | restrained side grain.003",
+    "12": "Wood | right leaf",
+    "13": "Wood | side shoot",
+    "14": "wood | small smile",
+    "15": "Wood | tapered seed heart",
+    "16": "ElementExpressionRoot"
+  }
+}
