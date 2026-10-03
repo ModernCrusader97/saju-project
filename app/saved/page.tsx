@@ -155,7 +155,7 @@ function SavedContent() {
               <p className="text-xs text-doryeong-textMuted">
                 나의 우주에서 궁금한 주제로 풀이를 남겨보세요.
               </p>
-              <Link
+              <Link prefetch={false}
                 href="/"
                 className="inline-block mt-3 px-5 py-2.5 rounded-xl bg-doryeong-gold text-doryeong-navy text-xs font-bold shadow-md hover:brightness-105 transition-all"
               >
