@@ -32,6 +32,12 @@ export function createSpiritGeometry(
   const shapeWidth=family==="earth"?1.08:family==="metal"?1.03:family==="lava"?.94:1;
   const sphere=(radius:number,segments=low?18:28)=>new THREE.SphereGeometry(radius,segments,Math.round(segments*.75));
   const mesh=(geometry:THREE.BufferGeometry,name:string,parent:THREE.Object3D=group,material=bodyMaterial)=>{
+    // Shared PBR vertex-color materials need a color attribute on EVERY mesh.
+    // Missing attributes default to black in WebGL, even when shader compilation passes.
+    if(material instanceof THREE.MeshStandardMaterial && material.vertexColors && !geometry.getAttribute("color")){
+      const count=geometry.getAttribute("position").count;
+      geometry.setAttribute("color",new THREE.BufferAttribute(new Float32Array(count*3).fill(1),3));
+    }
     const object=new THREE.Mesh(geometry,material);object.name=name;parent.add(object);return object;
   };
   const tube=(points:THREE.Vector3[],radius:number,endRadius:number,name:string,parent:THREE.Object3D=group,material=bodyMaterial,radiusAt?:(u:number)=>number)=>{

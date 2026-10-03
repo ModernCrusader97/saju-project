@@ -22,3 +22,6 @@ These checks do not validate browser WebGL, touch behavior, or hosted sign-in. T
 
 ## Independent visual redesign (2026-10-03)
 Replaced the benchmark marketplace homepage, fictitious prices/tickets and legacy persona with a personal-universe workspace, responsive four-destination navigation, ink/aqua/cool-white design tokens, and one generated conceptual cover illustration. The image is labeled as conceptual art, not a render of the live 3D scene. Working title remains 나의 우주 pending the owner’s brand selection. All existing routes and seven reading categories remain accessible. No payment, provider, quota or data-permission changes.
+
+## Controlled material prototype (2026-10-03)
+/lab now opens a 5-pair ten-stem real-PBR comparison on equal geometry, camera, lights and clock. Sphere and torus-knot surfaces are available; optional sphere-only vine/fire/dew geometry is clearly separate from the material-only test. This is not a finished customizable avatar, rig, seasonal scene or pet system. Original planet/avatar view is retained as a separate tab. The older avatar vertex-color attribute omission is repaired independently; its rejected design is not thereby approved. Reference image is the user-refined v2 concept. No AI provider, user records, sharing or billing changes.

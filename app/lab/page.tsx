@@ -1,5 +1,8 @@
 "use client";
 import "./lab.css";
+import "./material-study.css";
+import Header from "@/components/Header";
+import StemMaterialStudy from "@/components/planet/StemMaterialStudy";
 import {useEffect,useState} from 'react';
 import PlanetCanvas from '@/components/planet/PlanetCanvas';
 import ElementalSpiritCanvas from '@/components/planet/ElementalSpiritCanvas';
@@ -7,7 +10,7 @@ import {SIXTY_GANZI_KEYS,getThemePreset,getStemThemePreset} from '@/lib/planet/t
 import type {MaskStyle} from '@/lib/planet/uv-mask';
 const masks:{id:MaskStyle,label:string}[]=[{id:'pangaea',label:'대륙'},{id:'archipelago',label:'군도'},{id:'tectonic',label:'단층'},{id:'bands',label:'목성 띠'},{id:'vortices',label:'소용돌이'}];
 const defaults={day:'갑자',month:'병인',hour:'계유',year:'을축'};
-export default function Page(){
+function LegacyLab(){
  const [view,setView]=useState<'planet'|'spirit'>('planet');
  const [keys,setKeys]=useState(defaults);const [mask,setMask]=useState<MaskStyle>('pangaea');const [hideMoon,setHideMoon]=useState(false);
  const selected=view==='planet'?getStemThemePreset(keys.day):getThemePreset(keys.day);
@@ -24,3 +27,5 @@ export default function Page(){
  <section><p className="section-number">03 / FOUR PILLARS</p><h2>4기둥 조합</h2><div className="pillar-grid">{(['day','month','hour','year'] as const).filter(slot=>view==='planet'||slot==='day'||slot==='month').map((slot,i)=><label key={slot}><span>{view==='spirit'?['본체 · 일간 + 일지','지상 펫 · 월간 + 월지'][i]:['일주 · 주 표면','월주 · 보조 표면','시주 · 위성','연주 · 소행성대'][i]}</span><select value={view==='planet'?keys[slot][0]:keys[slot]} onChange={e=>setKeys(o=>({...o,[slot]:view==='planet'?(SIXTY_GANZI_KEYS.find(g=>g.stem===e.target.value)?.key??e.target.value):e.target.value}))}>{(view==='planet'?SIXTY_GANZI_KEYS.slice(0,10):SIXTY_GANZI_KEYS).map(k=><option key={k.key} value={view==='planet'?k.stem:k.key}>{view==='planet'?k.stem:k.key} · {getStemThemePreset(k.key).themeName}</option>)}</select></label>)}</div>{view==='planet' && <label className="toggle"><input type="checkbox" checked={hideMoon} onChange={e=>setHideMoon(e.target.checked)}/>위성 숨기기 · 시간 미상</label>}<button className="reset" onClick={()=>{setKeys(defaults);setMask('pangaea');setHideMoon(false);}}>조합 초기화</button></section></aside></div>
  <footer>행성과 자연 정령의 재질·입체 효과 확인용입니다. 생년월일 입력, 사주 계산, AI 연결은 포함하지 않습니다.</footer></main>;
 }
+
+export default function Page(){const [section,setSection]=useState<"materials"|"legacy">("materials");return <><Header/><nav className="lab-sections" aria-label="실험실 구역"><button aria-pressed={section==="materials"} onClick={()=>setSection("materials")}>새 재질 비교</button><button aria-pressed={section==="legacy"} onClick={()=>setSection("legacy")}>기존 행성·분신</button></nav>{section==="materials"?<StemMaterialStudy/>:<LegacyLab/>}</>;}
