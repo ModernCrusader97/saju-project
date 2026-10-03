@@ -456,6 +456,69 @@ export function createStemAccents(
         }
       `,
     }));
+    if (!candle) {
+      // 丙 only: four evolving flame families share one transparent draw. 丁's
+      // original shaders, dimensions, lifetimes and trajectories stay untouched.
+      fireMaterial.vertexShader = fireMaterial.vertexShader
+        .replace('varying vec2 vUv;', 'varying vec2 vUv;\n        varying float vFamily;')
+        .replace('vUv = uv;', 'vUv = uv;\n          vFamily = aFlow.z;')
+        .replace('vBodyPosition = (uWorldToLocal', /* glsl */ `
+          float family = aFlow.z;
+          float age = aParticle.x;
+          float phase = aParticle.y * 6.2831853;
+          float tip = smoothstep(0.12, 1.0, y);
+          float wave = sin(y * 6.8 - uTime * 4.4 + phase);
+          // Broad sheets roll over in 3D; tongues stretch and whip; the two
+          // fork/burst families open laterally as they climb and burn away.
+          float sheet = 1.0 - step(0.5, family);
+          float tongue = step(0.5, family) * (1.0 - step(1.5, family));
+          float split = step(1.5, family);
+          float opening = smoothstep(0.12, 0.65, age);
+          worldPosition += right * size.x * (sheet * tip * (0.28 * wave + 0.17 * sin(age * 5.0 + phase))
+            + tongue * tip * tip * 0.33 * sin(uTime * 5.1 - y * 4.0 + phase)
+            + split * position.x * tip * opening * 0.46);
+          worldPosition += forward * size.x * sheet * tip * 0.30 * sin(y * 5.6 - uTime * 3.1 + phase);
+          worldPosition += up * size.y * (tongue * tip * 0.16 * sin(age * 4.2)
+            - sheet * tip * tip * 0.17 * (0.5 + 0.5 * wave));
+          vBodyPosition = (uWorldToLocal`);
+      fireMaterial.fragmentShader = fireMaterial.fragmentShader
+        .replace('varying vec2 vUv;', 'varying vec2 vUv;\n        varying float vFamily;')
+        .replace('float interior = 1.0 - abs(x) / max(width, 0.06);', /* glsl */ `
+          // Family-specific animated signed silhouettes, not four rigid cards.
+          // The split center is a true transparent cleft that grows with age.
+          float family = vFamily;
+          float tip = smoothstep(0.16, 1.0, y);
+          float travel = uTime * (3.2 + seed) + seed * 12.0;
+          float interior;
+          if (family < 0.5) {
+            float sheetX = x + tip * 0.28 * sin(y * 5.5 - travel);
+            float sheetWidth = (0.80 - y * 0.38) * (0.85 + 0.15 * sin(y * 9.0 - travel));
+            interior = 1.0 - abs(sheetX) / max(sheetWidth, 0.06);
+            // Asymmetric mouth opening makes a curling, torn sheet.
+            float mouth = smoothstep(0.40, 0.87, y) * smoothstep(0.18, 0.77, age);
+            interior -= mouth * (0.5 + 0.5 * sin(y * 10.0 + travel * 0.7)) * 0.40;
+          } else if (family < 1.5) {
+            float tongueX = x + tip * 0.24 * sin(y * 8.5 - travel * 1.5);
+            float tongueWidth = mix(0.60, 0.055, pow(y, 0.75));
+            tongueWidth *= 0.84 + 0.16 * sin(y * 13.0 - travel * 1.8);
+            interior = 1.0 - abs(tongueX) / max(tongueWidth, 0.035);
+          } else {
+            float burst = step(2.5, family);
+            float forkStart = mix(0.30, 0.19, burst);
+            float open = smoothstep(forkStart, 0.86, y)
+              * (0.20 + 0.28 * smoothstep(0.10, 0.68, age));
+            float branchWidth = mix(0.49, 0.065, smoothstep(0.14, 1.0, y));
+            float leftX = -open + tip * 0.09 * sin(travel + y * 6.0);
+            float rightX = open + tip * 0.10 * sin(travel * 0.83 - y * 7.0);
+            float left = 1.0 - abs(x - leftX) / max(branchWidth * (1.0 - y * 0.20), 0.035);
+            float right = 1.0 - abs(x - rightX) / max(branchWidth * (0.86 + 0.14 * sin(travel)), 0.035);
+            // A short third tongue breaks up the brief, wider burst family.
+            float middle = 1.0 - abs(x + tip * 0.08 * sin(travel * 1.3)) / max(branchWidth * 0.52, 0.035);
+            middle -= smoothstep(0.66, 0.93, y) * 2.0;
+            interior = max(left, right);
+            if (burst > 0.5) interior = max(interior, middle);
+          }`);
+    }
     const count = candle ? (high ? 18 : 12) : (high ? 72 : 48);
     const geometry = ownGeometry(new THREE.PlaneGeometry(1, 1, candle ? 1 : 3, candle ? 4 : (high ? 12 : 8)));
     const particleData = new Float32Array(count * 4);
@@ -472,7 +535,8 @@ export function createStemAccents(
     fire.renderOrder = 2;
     fire.userData.particleCount = count;
     fire.userData.activeFraction = candle ? 0.66 : 1;
-    fire.userData.effect = 'curled-advected-soft-alpha-fire';
+    fire.userData.effect = candle ? 'curled-advected-soft-alpha-fire' : 'evolving-sheet-tongue-fork-burst-fire';
+    if (!candle) fire.userData.flameFamilies = ['curling-sheet', 'slender-tongue', 'forked-flame', 'brief-burst'];
     instancedMeshes.add(fire);
     group.add(fire);
     const particles = Array.from({ length: count }, (_, index) => ({
@@ -485,7 +549,7 @@ export function createStemAccents(
       width: unit * (candle ? 0.058 + 0.048 * hash(index + 730) : 0.25 + 0.21 * hash(index + 730)),
       height: unit * (candle ? 0.105 + 0.11 * hash(index + 760) : 0.29 + 0.28 * hash(index + 760)),
       rise: unit * (candle ? 0.032 + 0.052 * hash(index + 870) : 0.27 + 0.26 * hash(index + 870)),
-      flowX: 0, flowZ: 0, roll: 0,
+      flowX: 0, flowZ: 0, roll: 0, family: 0, stretch: 1, spread: 1,
       position: new THREE.Vector3(),
       world: new THREE.Vector3(),
       age: 0,
@@ -509,10 +573,23 @@ export function createStemAccents(
         const cycle = Math.floor(clock);
         const phase = fract(clock);
         // Per-birth lifetime and launch point vary while invisible at the boundary.
-        const duration = candle ? 0.66 : 0.76 + 0.24 * hash(cycle * 19 + particle.index + 927);
+        // Rotate families only at invisible rebirth, with positive modulo for
+        // backwards seeks. Staggered seeds avoid synchronized shape changes.
+        particle.family = candle ? 0 : ((particle.index + cycle) % 4 + 4) % 4;
+        const duration = candle ? 0.66 : (particle.family === 3 ? 0.47 : 0.76)
+          + (particle.family === 3 ? 0.14 : 0.24) * hash(cycle * 19 + particle.index + 927);
         const age = Math.min(1, phase / duration);
         particle.age = age;
         particle.growth = 0.68 + Math.sin(age * Math.PI) * 0.51;
+        if (!candle) {
+          const opening = THREE.MathUtils.smoothstep(age, 0.04, 0.50);
+          const melting = THREE.MathUtils.smoothstep(age, 0.60, 1);
+          const variation = 0.88 + 0.24 * hash(cycle * 31 + particle.index + 1030);
+          particle.spread = [1.22, 0.60, 1.01, 1.26][particle.family]
+            * (0.64 + opening * 0.43 - melting * 0.19) * variation;
+          particle.stretch = [0.92, 1.34, 1.10, 0.82][particle.family]
+            * (0.68 + opening * 0.56 - melting * 0.12) / variation;
+        }
         const birth = (cycle - particle.phase) * particle.period;
         const flight = Math.min(time - birth, particle.period * duration);
         const longitude = particle.longitude + (hash(cycle * 17 + particle.index + 890) - 0.5) * (candle ? 0.9 : 1.45);
@@ -543,7 +620,8 @@ export function createStemAccents(
       for (let slot = 0; slot < count; slot++) {
         const particle = order[slot];
         dummy.position.copy(particle.position);
-        dummy.scale.set(particle.width * particle.growth, particle.height * (1 - particle.age * 0.24), 1);
+        dummy.scale.set(particle.width * particle.growth * particle.spread,
+          particle.height * (1 - particle.age * 0.24) * particle.stretch, 1);
         dummy.updateMatrix();
         fire.setMatrixAt(slot, dummy.matrix);
         particleData[slot * 4] = particle.age;
@@ -552,14 +630,14 @@ export function createStemAccents(
         particleData[slot * 4 + 3] = particle.index % (candle ? 3 : 7) === 0 ? 1 : 0;
         flowData[slot * 4] = particle.flowX;
         flowData[slot * 4 + 1] = particle.flowZ;
-        flowData[slot * 4 + 2] = 0;
+        flowData[slot * 4 + 2] = particle.family;
         flowData[slot * 4 + 3] = particle.roll;
       }
       fire.instanceMatrix.needsUpdate = true;
       particleAttribute.needsUpdate = true;
       flowAttribute.needsUpdate = true;
       // Bounds are for consumers/inspectors; renderer culling is disabled above.
-      const margin = unit * (candle ? 0.3 : 1.03);
+      const margin = unit * (candle ? 0.3 : 1.35);
       fire.boundingBox = new THREE.Box3(
         new THREE.Vector3(-radius - margin, -halfHeight - margin, -radius - margin),
         new THREE.Vector3(radius + margin, halfHeight + margin, radius + margin),
@@ -665,8 +743,8 @@ export function createStemAccents(
       color: 0xd9f5fa, roughness: 0.58, metalness: 0,
       emissive: 0x295a64, emissiveIntensity: 0.1,
     }));
-    const sprayCount = high ? 58 : 34;
-    const foamCount = high ? 32 : 20;
+    const sprayCount = high ? 36 : 24;
+    const foamCount = high ? 18 : 12;
     const sprayGeometry = ownGeometry(new THREE.SphereGeometry(1, high ? 10 : 8, 6));
     const foamPoints = Array.from({ length: 10 }, (_, i) => {
       const t = i / 9;
@@ -688,90 +766,105 @@ export function createStemAccents(
       instancedMeshes.add(item);
       group.add(item);
     }
-    // Candidate anchors are selected from the same two warped crest fields as
-    // the core shader. Each family then travels with its own wrapping current.
-    const axes = [new THREE.Vector3(0.18, 1, 0.24).normalize(), new THREE.Vector3(0.68, 0.25, 0.69).normalize()];
-    const rates = [1.22, -1.70];
-    function crest(point: THREE.Vector3, family: number): number {
-      if (family === 0) return Math.sin(point.x * 11.5 + point.y * 3.1 + point.z * 5.2
-        + fieldNoise(point.x * 3.1 + 4, point.y * 3.1 + 4, point.z * 3.1 + 4) * 3.2);
-      return Math.sin(point.x * -5.2 + point.y * 9.8 + point.z * 6.4
-        + fieldNoise(point.x * 3.6 - 7, point.y * 3.6 - 7, point.z * 3.6 - 7) * 2.8);
+    // Shared with STEM_KIND 8: one analytic, invertible angular mapping.
+    // Axial latitude is rotation-invariant, so forward CPU and inverse GLSL
+    // coordinates agree without accumulated integration or hash-based tracking.
+    const axis = new THREE.Vector3(0.18, 1, 0.24).normalize();
+    const phaseDirection = new THREE.Vector3(9.5, 2.2, 4.2);
+    const pulseDirection = new THREE.Vector3(2.1, 1.3, -1.4);
+    const flowAngle = (latitude: number, time: number): number =>
+      1.08 * time + 0.14 * Math.sin(latitude * 2.5) * Math.sin(time * 0.8)
+      + 0.055 * (Math.sin(latitude * 4 + time * 1.6) - Math.sin(latitude * 4));
+    const flowSpeed = (latitude: number, time: number): number =>
+      1.08 + 0.112 * Math.sin(latitude * 2.5) * Math.cos(time * 0.8) + 0.088 * Math.cos(latitude * 4 + time * 1.6);
+    function breaking(point: THREE.Vector3, time: number): number {
+      const warp = 0.55 * Math.sin(point.x * 3.1 + point.y * 2.6 + point.z * 1.4)
+        + 0.45 * Math.sin(point.x * -1.8 + point.y * 3.4 + point.z * 2.6);
+      const wave = Math.sin(point.dot(phaseDirection) + 0.85 * warp);
+      const region = 0.55 * Math.sin(point.x * 2.5 - point.y * 2.1 + point.z * 1.2 + 0.7)
+        + 0.45 * Math.sin(point.x * -1.7 + point.y * 1.8 + point.z * 3.1 - 0.4);
+      const pulse = THREE.MathUtils.smoothstep(Math.sin(time * 2.4 + point.dot(pulseDirection)), -0.45, 0.65);
+      return THREE.MathUtils.smoothstep(wave, 0.52, 0.94) * THREE.MathUtils.smoothstep(region, 0.06, 0.50) * pulse;
     }
-    const anchors = axes.map((_, family) => Array.from({ length: 96 }, (__, i) => {
-      let chosen = new THREE.Vector3(1, 0, 0), best = -Infinity;
-      for (let j = 0; j < 20; j++) {
-        const latitude = Math.acos(0.9 - hash(i * 29 + j * 11 + family * 701 + 2600) * 1.8);
-        const longitude = i * GOLDEN_ANGLE + (hash(i * 47 + j + 2800) - 0.5) * 0.8;
-        const candidate = new THREE.Vector3(Math.sin(latitude) * Math.cos(longitude), Math.cos(latitude), Math.sin(latitude) * Math.sin(longitude));
-        const score = crest(candidate, family);
-        if (score > best) { best = score; chosen = candidate; }
-      }
-      return chosen;
-    }));
+    // Retain spatially distributed high crests only inside the localized breaker
+    // regions. No arbitrary surface sources or second direction remain.
+    const anchors: THREE.Vector3[] = [];
+    for (let i = 0; i < 1536; i++) {
+      const latitude = Math.acos(1 - 2 * (i + 0.5) / 1536);
+      const longitude = i * GOLDEN_ANGLE;
+      const point = new THREE.Vector3(Math.sin(latitude) * Math.cos(longitude), Math.cos(latitude), Math.sin(latitude) * Math.sin(longitude));
+      const crestPhase = Math.PI / 2 - point.dot(pulseDirection);
+      if (breaking(point, crestPhase / 2.4) > 0.68) anchors.push(point);
+    }
+    if (!anchors.length) throw new Error('Water breaker field has no source anchors.');
     const dummy = new THREE.Object3D();
     const inverse = new THREE.Matrix4();
     const globalUp = new THREE.Vector3();
-    const direction = new THREE.Vector3(), point = new THREE.Vector3(), normal = new THREE.Vector3();
-    const tangent = new THREE.Vector3(), side = new THREE.Vector3(), counterpart = new THREE.Vector3();
+    const point = new THREE.Vector3(), normal = new THREE.Vector3(), tangent = new THREE.Vector3();
+    const side = new THREE.Vector3(), velocity = new THREE.Vector3();
     const basis = new THREE.Matrix4();
     const axisSize = new THREE.Vector3(radius, halfHeight, radius);
-    const prepare = (index: number, epoch: number, family: number, time: number): void => {
-      const anchorIndex = (index * 17 + epoch * 13 % 96 + 960000) % 96;
-      direction.copy(anchors[family][anchorIndex]).applyAxisAngle(axes[family], rates[family] * time);
-      point.copy(direction).multiply(axisSize);
+    const sourceAt = (index: number, epoch: number): THREE.Vector3 => anchors[((index * 17 + epoch * 13) % anchors.length + anchors.length) % anchors.length];
+    const prepare = (source: THREE.Vector3, time: number): void => {
+      point.copy(source).applyAxisAngle(axis, flowAngle(source.dot(axis), time)).multiply(axisSize);
       normal.copy(normalAt(point));
-      tangent.crossVectors(axes[family], direction).multiply(axisSize).multiplyScalar(Math.sign(rates[family]));
+      tangent.crossVectors(axis, point);
       tangent.addScaledVector(normal, -tangent.dot(normal));
       if (tangent.lengthSq() < 0.0001) tangent.set(1, 0, 0).addScaledVector(normal, -normal.x);
       tangent.normalize();
     };
-    sprays.userData.currentRates = rates.slice();
-    foam.userData.currentRates = rates.slice();
-    sprays.userData.effect = 'short-ballistic-crosscurrent-spray';
-    foam.userData.effect = 'rapid-crest-convergence-foam';
+    for (const item of [sprays, foam]) {
+      item.userData.flow = 'single-latitude-sheared-advection';
+      item.userData.flowAxis = axis.toArray();
+      item.userData.breakerAnchorCount = anchors.length;
+    }
+    sprays.userData.effect = 'crest-gated-tangent-spray';
+    foam.userData.effect = 'sparse-shared-flow-whitewater';
     animations.push((time) => {
       group.updateWorldMatrix(true, false);
       inverse.copy(group.matrixWorld).invert();
       globalUp.copy(Y_AXIS).transformDirection(inverse);
       for (let i = 0; i < sprayCount; i++) {
         const seed = hash(i + 940);
-        const period = 0.43 + seed * 0.42;
-        const clock = time / period + hash(i + 955);
-        const age = fract(clock), epoch = Math.floor(clock);
-        const birth = (epoch - hash(i + 955)) * period;
-        const family = i % 3 === 0 ? 1 : 0;
-        // Spray inherits strong tangential velocity, then peels outward and drops.
-        prepare(i, epoch, family, birth + age * period * 0.80);
-        const lift = unit * (Math.sin(age * Math.PI) * (0.13 + seed * 0.13) + age * 0.12);
-        dummy.position.copy(point).addScaledVector(normal, unit * 0.024 + lift);
-        dummy.position.addScaledVector(tangent, unit * age * (0.08 + seed * 0.13));
-        dummy.position.addScaledVector(globalUp, unit * (0.21 * age - 0.34 * age * age));
-        side.copy(tangent).multiplyScalar(0.75).addScaledVector(normal, 0.42 - age * 0.28).addScaledVector(globalUp, 0.18 - age * 0.46).normalize();
+        const period = 0.90 + seed * 0.70;
+        const phase = hash(i + 955);
+        const clock = time / period + phase;
+        const epoch = Math.floor(clock), birth = (epoch - phase) * period;
+        const duration = 0.34 + seed * 0.20;
+        const flight = Math.min(time - birth, duration);
+        const age = THREE.MathUtils.clamp(flight / duration, 0, 1);
+        const source = sourceAt(i, epoch);
+        const emission = THREE.MathUtils.smoothstep(breaking(source, birth), 0.30, 0.72);
+        prepare(source, birth);
+        // Launch with the very same dominant tangent speed as the source water.
+        velocity.crossVectors(axis, point).multiplyScalar(flowSpeed(source.dot(axis), birth));
+        dummy.position.copy(point).addScaledVector(velocity, flight * 0.83);
+        dummy.position.addScaledVector(normal, unit * (0.018 + 0.30 * flight));
+        dummy.position.addScaledVector(globalUp, unit * (0.20 * flight - 0.75 * flight * flight));
+        side.copy(velocity).addScaledVector(normal, unit * 0.30).addScaledVector(globalUp, unit * (0.20 - 1.50 * flight)).normalize();
         dummy.quaternion.setFromUnitVectors(Y_AXIS, side);
-        const life = THREE.MathUtils.smoothstep(age, 0, 0.09) * (1 - THREE.MathUtils.smoothstep(age, 0.60, 1));
-        const size = unit * (0.013 + 0.017 * seed) * Math.max(life, 0.001);
-        dummy.scale.set(size * 0.71, size * (2.1 - 0.55 * age), size * 0.71);
+        const life = THREE.MathUtils.smoothstep(age, 0, 0.10) * (1 - THREE.MathUtils.smoothstep(age, 0.55, 1));
+        const size = unit * (0.010 + 0.014 * seed) * Math.max(life * emission, 0.0001);
+        dummy.scale.set(size * 0.72, size * (1.75 - 0.40 * age), size * 0.72);
         dummy.updateMatrix(); sprays.setMatrixAt(i, dummy.matrix);
       }
       for (let i = 0; i < foamCount; i++) {
         const seed = hash(i + 1120);
-        const period = 0.44 + seed * 0.47;
+        const period = 0.67 + seed * 0.45;
         const clock = time / period + hash(i + 1170);
         const age = fract(clock), epoch = Math.floor(clock);
-        const family = i % 3 === 0 ? 1 : 0;
-        prepare(i + 53, epoch, family, time);
-        counterpart.copy(point).applyAxisAngle(axes[1 - family], -rates[1 - family] * time);
-        const convergence = THREE.MathUtils.smoothstep(crest(counterpart, 1 - family), 0.05, 0.9);
-        dummy.position.copy(point).addScaledVector(normal, unit * (0.02 + convergence * 0.011));
+        const source = sourceAt(i + 53, epoch);
+        prepare(source, time);
+        // The core shader and this wisp use the same parcel and breaker pulse.
+        const strength = breaking(source, time);
+        dummy.position.copy(point).addScaledVector(normal, unit * 0.018);
         side.crossVectors(tangent, normal).normalize();
         basis.makeBasis(tangent, normal, side);
         dummy.quaternion.setFromRotationMatrix(basis);
-        const life = THREE.MathUtils.smoothstep(age, 0, 0.10) * (1 - THREE.MathUtils.smoothstep(age, 0.52, 1));
-        const grow = Math.max(life, 0.001);
-        const intensity = 0.64 + convergence * 0.36;
-        dummy.scale.set(unit * (0.20 + seed * 0.21) * grow,
-          unit * 0.23 * grow * intensity, unit * (0.23 + age * 0.18) * grow * intensity);
+        const life = THREE.MathUtils.smoothstep(age, 0, 0.13) * (1 - THREE.MathUtils.smoothstep(age, 0.55, 1));
+        const grow = Math.max(life * strength, 0.0001);
+        dummy.scale.set(unit * (0.13 + seed * 0.13) * grow,
+          unit * 0.14 * grow, unit * (0.14 + age * 0.08) * grow);
         dummy.updateMatrix(); foam.setMatrixAt(i, dummy.matrix);
       }
       sprays.instanceMatrix.needsUpdate = true;

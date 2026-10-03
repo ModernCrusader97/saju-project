@@ -22,7 +22,7 @@ export interface StemMaterialHandle {
   dispose(): void;
 }
 
-const VERSION = 'stem-motion-v2-r186-countercurrents';
+const VERSION = 'stem-water-v3-r186-coherent-advection';
 
 /** Readable botanical ink, generated once per porcelain material with no DOM/canvas. */
 function cobaltBotanicalTexture(size: number): THREE.DataTexture {
@@ -242,32 +242,32 @@ StemSurface stSurface(vec3 p,vec3 n) {
   s.color=vec3(.94,.95,.97);s.roughness=.052;
   s.height=.014*ripple;
  #elif STEM_KIND == 8
-  // Two fast currents wrap around different tilted axes. Their crossings
-  // overturn short crests; this is advection, not a slow global sine swell.
-  vec3 qA=stFlowRotate(p,normalize(vec3(.18,1.,.24)),-uStemTime*1.22);
-  vec3 qB=stFlowRotate(p,normalize(vec3(.68,.25,.69)),uStemTime*1.70);
-  float warpA=stNoise(qA*3.1+4.);
-  float warpB=stNoise(qB*3.6-7.);
-  float phaseA=dot(qA,vec3(11.5,3.1,5.2))+warpA*3.2;
-  float phaseB=dot(qB,vec3(-5.2,9.8,6.4))+warpB*2.8;
-  float w1=sin(phaseA),w2=sin(phaseB);
-  float chop=sin(phaseA*1.93+phaseB*.44-uStemTime*3.8);
-  float crestA=smoothstep(.35,.92,w1);
-  float crestB=smoothstep(.40,.94,w2);
-  float collision=crestA*crestB;
-  vec3 advected=qA*vec3(17.,23.,17.)+qB*3.4+vec3(0,uStemTime*6.0,-uStemTime*2.2);
-  float froth=stFbm(advected+vec3(warpB*1.8,warpA*2.4,warpB));
-  float breaking=smoothstep(.30,.56,froth);
-  float tornEdge=smoothstep(.27,.64,stNoise(qB*28.+vec3(uStemTime*4.2,0,-uStemTime*3.5)));
-  float foam=clamp((crestA*.78+crestB*.43+collision*.88)*breaking*(.47+.53*tornEdge),0.,.98);
+  // One invertible, latitude-sheared advection map drives every water layer.
+  // This exact angle and crest/breaker field are also used by the CPU accents.
+  vec3 axis=normalize(vec3(.18,1.,.24));
+  float latitude=dot(p,axis);
+  float angle=1.08*uStemTime+.14*sin(latitude*2.5)*sin(uStemTime*.8)
+    +.055*(sin(latitude*4.+uStemTime*1.6)-sin(latitude*4.));
+  vec3 q=stFlowRotate(p,axis,-angle);
+  float warp=.55*sin(dot(q,vec3(3.1,2.6,1.4)))+.45*sin(dot(q,vec3(-1.8,3.4,2.6)));
+  float phase=dot(q,vec3(9.5,2.2,4.2))+.85*warp;
+  float wave=sin(phase);
+  // Smaller harmonics stay in the same moving frame; they never counter-rotate.
+  float ripple=sin(phase*1.9+warp*.65);
+  float detail=stNoise(q*19.+vec3(warp*.5));
+  float crest=smoothstep(.52,.94,wave);
+  float region=.55*sin(dot(q,vec3(2.5,-2.1,1.2))+.7)+.45*sin(dot(q,vec3(-1.7,1.8,3.1))-.4);
+  float breaker=smoothstep(.06,.50,region);
+  float pulse=smoothstep(-.45,.65,sin(uStemTime*2.4+dot(q,vec3(2.1,1.3,-1.4))));
+  float pores=smoothstep(.24,.66,stNoise(q*23.+vec3(warp*.55,warp*.3,0.)));
+  float foam=clamp(crest*breaker*pulse*(.52+.48*pores)*.93,0.,.93);
   s.foam=foam;
-  float body=.5+.5*w1*w2;
+  float body=.5+.5*wave;
   vec3 blue=mix(vec3(.070,.32,.53),vec3(.11,.49,.69),body*.68);
   s.color=mix(blue,vec3(.91,.96,.95),foam);
-  s.roughness=mix(.055+.023*body,.61,foam);
-  // Bound relief and harmonics: fast folded highlights, no displaced spikes.
-  s.height=.041*w1+.027*w2+.012*chop+.004*foam;
-  s.emission=vec3(.008,.018,.024)*foam;
+  s.roughness=mix(.054+.018*body,.59,foam);
+  s.height=.034*wave+.0045*ripple+.0014*(detail-.5)+.0018*foam;
+  s.emission=vec3(.006,.014,.020)*foam;
  #elif STEM_KIND == 9
   // Raised smooth spherical-cap droplets, independent of the much flatter underlying liquid.
   vec3 cellP=p*13.;vec3 ip=floor(cellP),fp=fract(cellP)-.5;
