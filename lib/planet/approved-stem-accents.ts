@@ -7,6 +7,8 @@ export interface StemAccentOptions {
   /** Total polar height, centered on the origin. Defaults to 2. */
   height?: number;
   quality?: 'low' | 'high';
+  /** Optional actual mesh emitter in accent-group local coordinates; fire only. */
+  surfaceEmitter?: (index: number, epoch: number, group: THREE.Group, offset: number) => THREE.Vector3;
 }
 export interface StemAccents {
   group: THREE.Group;
@@ -519,6 +521,14 @@ export function createStemAccents(
             if (burst > 0.5) interior = max(interior, middle);
           }`);
     }
+    // Arbitrary mesh attachment must NOT use the ellipsoid's analytic clipping.
+    // Ordinary depth testing still clips flames behind the actual body meshes.
+    if (options.surfaceEmitter) {
+      fireMaterial.fragmentShader = fireMaterial.fragmentShader.replace(
+        'float contactFade = smoothstep(-uUnit * 0.018, uUnit * 0.06, outside);',
+        'float contactFade = 1.0;',
+      );
+    }
     const count = candle ? (high ? 18 : 12) : (high ? 72 : 48);
     const geometry = ownGeometry(new THREE.PlaneGeometry(1, 1, candle ? 1 : 3, candle ? 4 : (high ? 12 : 8)));
     const particleData = new Float32Array(count * 4);
@@ -594,7 +604,8 @@ export function createStemAccents(
         const flight = Math.min(time - birth, particle.period * duration);
         const longitude = particle.longitude + (hash(cycle * 17 + particle.index + 890) - 0.5) * (candle ? 0.9 : 1.45);
         const latitude = particle.latitude + (candle ? 0 : (hash(cycle * 23 + particle.index + 920) - 0.5) * 0.29);
-        const base = surface(latitude, longitude, unit * (candle ? 0.032 : 0.068));
+        const base = options.surfaceEmitter?.(particle.index, cycle, group, unit * (candle ? 0.012 : 0.025))
+          ?? surface(latitude, longitude, unit * (candle ? 0.032 : 0.068));
         particle.world.copy(base).applyMatrix4(group.matrixWorld);
         particle.world.y += worldScale * (particle.height * 0.32 + particle.rise * (age * 0.66 + age * age * 0.34));
         // Difference of smooth flow potentials anchors each trajectory at birth.
