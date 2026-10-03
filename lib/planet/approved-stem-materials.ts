@@ -15,6 +15,12 @@ export const STEM_PRESETS = [
 ] as const;
 export type Stem = (typeof STEM_PRESETS)[number]['stem'];
 export type StemQuality = 'low' | 'medium' | 'high';
+export interface StemMaterialOptions {
+  /** Default preserves the approved sphere/knot shader exactly. Requires bound attributes when enabled. */
+  coordinateMode?: 'mesh-local' | 'character-rest';
+  /** Uniform motif frequency in character-rest space; does not normalize each limb. Default 1. */
+  coordinateDensity?: number;
+}
 export interface StemMaterialHandle {
   material: THREE.MeshPhysicalMaterial;
   /** Absolute seconds, not delta time. Calling update(0) resets exactly. */
@@ -298,7 +304,13 @@ function replaceRequired(source: string, needle: string, replacement: string): s
   return source.replace(needle,replacement);
 }
 
-export function createStemMaterial(stem: Stem, quality: StemQuality = 'high'): StemMaterialHandle {
+export function createStemMaterial(stem: Stem, quality: StemQuality = 'high', options: StemMaterialOptions = {}): StemMaterialHandle {
+  const coordinateMode = options.coordinateMode ?? 'mesh-local';
+  if (!['mesh-local','character-rest'].includes(coordinateMode)) throw new RangeError('Unknown coordinate mode');
+  const characterRest = coordinateMode === 'character-rest';
+  const coordinateDensity = options.coordinateDensity ?? 1;
+  if (!Number.isFinite(coordinateDensity) || coordinateDensity <= 0) throw new RangeError('Coordinate density must be positive and finite');
+  if (!characterRest && coordinateDensity !== 1) throw new Error('Coordinate density requires character-rest mode');
   const index=STEM_PRESETS.findIndex(p=>p.stem===stem);
   if(index<0) throw new RangeError(`Unknown heavenly stem: ${String(stem)}`);
   if(!['low','medium','high'].includes(quality)) throw new RangeError(`Unknown quality: ${String(quality)}`);
@@ -323,16 +335,36 @@ export function createStemMaterial(stem: Stem, quality: StemQuality = 'high'): S
   const time={value:0};
   const botanical=index===5?cobaltBotanicalTexture(quality==='low'?256:quality==='medium'?384:512):null;
   material.defines={...material.defines,STEM_KIND:index,STEM_OCTAVES:quality==='low'?3:4};
-  material.customProgramCacheKey=()=>`${VERSION}:${index}:${quality}`;
+  material.customProgramCacheKey=()=>`${VERSION}:${index}:${quality}${characterRest ? ':character-rest-v1' : ''}`;
   material.onBeforeCompile=(shader)=>{
     shader.uniforms.uStemTime=time;
+    if(characterRest) shader.uniforms.uStemCoordinateDensity={value:coordinateDensity};
     shader.uniforms.uStemBotanical={value:botanical};
     shader.vertexShader=replaceRequired(shader.vertexShader,'#include <common>',`#include <common>\nvarying vec3 vStemPosition;\nvarying vec3 vStemObjectNormal;\nvarying vec3 vStemBrushAxis;\nvarying vec3 vStemBrushSide;`);
     shader.vertexShader=replaceRequired(shader.vertexShader,'#include <begin_vertex>',`#include <begin_vertex>\nvStemPosition=position;\nvStemObjectNormal=normal;\nvStemBrushAxis=normalize(normalMatrix*vec3(0.,1.,0.));\nvStemBrushSide=normalize(normalMatrix*vec3(1.,0.,0.));`);
+    if(characterRest) {
+      shader.vertexShader=shader.vertexShader.replace('varying vec3 vStemPosition;', 'attribute vec3 stemRestPosition;\nattribute vec3 stemRestNormal;\nattribute vec3 stemLocalBrushAxis;\nattribute vec3 stemLocalBrushSide;\nvarying vec3 vStemPosition;');
+      shader.vertexShader=shader.vertexShader.replace('vStemPosition=position;', 'vStemPosition=stemRestPosition;').replace('vStemObjectNormal=normal;', 'vStemObjectNormal=stemRestNormal;').replace('normalMatrix*vec3(0.,1.,0.)', '(modelViewMatrix*vec4(stemLocalBrushAxis,0.)).xyz').replace('normalMatrix*vec3(1.,0.,0.)', '(modelViewMatrix*vec4(stemLocalBrushSide,0.)).xyz');
+    }
     shader.fragmentShader=replaceRequired(shader.fragmentShader,'#include <common>',`#include <common>\n${COMMON}`);
+    if(characterRest) {
+      shader.fragmentShader=shader.fragmentShader.replace('uniform float uStemTime;', 'uniform float uStemTime;\nuniform float uStemCoordinateDensity;');
+      // Keep vStemPosition unscaled for the geometric metric; density only scales the motif.
+    }
+    if(characterRest) shader.fragmentShader=shader.fragmentShader.replace('vec3 grad=sign(det)*(dFdx(height)*r1+dFdy(height)*r2);', `
+ // Height is in character-rest units. Convert its first derivatives to view units.
+ // The area ratio is exact for rigid animation + uniform character display scale.
+ // Do not differentiate this derivative-derived scale (nested derivatives are undefined).
+ vec3 restDx=dFdx(vStemPosition),restDy=dFdy(vStemPosition);
+ float restArea=length(cross(restDx,restDy));
+ float viewArea=length(cross(dpdx,dpdy));
+ float restToViewScale=sqrt(max(viewArea,1.e-20)/max(restArea,1.e-20));
+ vec3 grad=sign(det)*restToViewScale*(dFdx(height)*r1+dFdy(height)*r2);`);
     shader.fragmentShader=replaceRequired(shader.fragmentShader,'#include <color_fragment>',`#include <color_fragment>\nStemSurface stemSurface=stSurface(vStemPosition,normalize(vStemObjectNormal));\ndiffuseColor.rgb*=stemSurface.color;`);
     shader.fragmentShader=replaceRequired(shader.fragmentShader,'#include <roughnessmap_fragment>',`#include <roughnessmap_fragment>\nroughnessFactor=stemSurface.roughness;`);
     shader.fragmentShader=replaceRequired(shader.fragmentShader,'#include <normal_fragment_maps>',`#include <normal_fragment_maps>\nnormal=stPerturb(normal,stemSurface.height);\n#ifdef USE_ANISOTROPY\n float brushAngle=stBrushAngle(vStemPosition);\n vec3 brushDirection=vStemBrushAxis*cos(brushAngle)+vStemBrushSide*sin(brushAngle);\n vec3 brush=brushDirection-normal*dot(brushDirection,normal);\n if(dot(brush,brush)<.00001)brush=cross(normal,vec3(1.,.01,.01));\n tbn=mat3(normalize(brush),normalize(cross(normal,brush)),normal);\n#endif`);
+    if(characterRest) shader.fragmentShader=shader.fragmentShader.replace('stSurface(vStemPosition,normalize(vStemObjectNormal))','stSurface(vStemPosition*uStemCoordinateDensity,normalize(vStemObjectNormal))').replace('stBrushAngle(vStemPosition)','stBrushAngle(vStemPosition*uStemCoordinateDensity)');
+    if(characterRest && index===8) shader.fragmentShader=replaceRequired(shader.fragmentShader, 'diffuseColor.rgb*=stemSurface.color;', 'stemSurface.height/=pow(max(uStemCoordinateDensity,1.0),.65);\ndiffuseColor.rgb*=stemSurface.color;');
     shader.fragmentShader=replaceRequired(shader.fragmentShader,'#include <clearcoat_normal_fragment_maps>',`#include <clearcoat_normal_fragment_maps>\n#ifdef USE_CLEARCOAT\nclearcoatNormal=normal;\n#endif`);
     shader.fragmentShader=replaceRequired(shader.fragmentShader,'#include <emissivemap_fragment>',`#include <emissivemap_fragment>\ntotalEmissiveRadiance+=stemSurface.emission;`);
     if(index===8) {
