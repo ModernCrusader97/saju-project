@@ -1,0 +1,5 @@
+import {sqliteTable,text,integer,index} from 'drizzle-orm/sqlite-core';
+export const fortunes=sqliteTable('fortunes',{id:text('id').primaryKey(),ownerId:text('owner_id').notNull(),createdAt:text('created_at').notNull(),data:text('data').notNull()},t=>[index('idx_fortunes_owner_created').on(t.ownerId,t.createdAt)]);
+export const guinMaps=sqliteTable('guin_maps',{id:text('id').primaryKey(),ownerId:text('owner_id').notNull(),createdAt:text('created_at').notNull(),data:text('data').notNull()});
+export const chats=sqliteTable('chats',{sequence:integer('sequence').primaryKey({autoIncrement:true}),ownerId:text('owner_id').notNull(),fortuneId:text('fortune_id').notNull().references(()=>fortunes.id),role:text('role').notNull(),content:text('content').notNull(),createdAt:text('created_at').notNull()},t=>[index('idx_chats_owner_fortune_sequence').on(t.ownerId,t.fortuneId,t.sequence)]);
+export const aiTestBudget=sqliteTable('ai_test_budget',{period:text('period').primaryKey(),calls:integer('calls').notNull()});

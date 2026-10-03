@@ -5,7 +5,7 @@ import * as THREE from "three";
 import { MAX_LIVING_RADIAL_RELIEF } from "@/lib/planet/living-surface-shader";
 import { RoomEnvironment } from "three/addons/environments/RoomEnvironment.js";
 import { createSurfaceEffects, animateSurfaceEffects, disposeSurfaceEffects } from "@/lib/planet/surface-effects";
-import { getThemePreset } from "@/lib/planet/theme-library";
+import { getStemThemePreset } from "@/lib/planet/theme-library";
 import { createPlanetMaterial, animateSurface, resetSurface } from "@/lib/planet/surface-material";
 import { disposeObject, disposeMaterial } from "@/lib/planet/render-resources";
 import { safeDelta } from "@/lib/planet/surface-math";
@@ -30,6 +30,11 @@ export default function PlanetCanvas({
   maskStyle = "pangaea",
   isUnknownTime = false,
 }: PlanetCanvasProps) {
+  // Full pillar keys remain props/data; only heavenly stems reach rendering.
+  const presetD = getStemThemePreset(dayKey);
+  const presetM = getStemThemePreset(monthKey);
+  const presetH = getStemThemePreset(hourKey);
+  const presetY = getStemThemePreset(yearKey);
   const [isCloseUp, setIsCloseUp] = useState(false);
   const [graphicsError, setGraphicsError] = useState<string | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -164,7 +169,6 @@ export default function PlanetCanvas({
     satelliteMeshRef.current = satMesh;
 
     // C. 연주 고리/소행성대 (SLOT-Y: 띠 메쉬 대신 수천 개의 잘게 부서진 성간 파티클 클라우드)
-    const presetY = getThemePreset(yearKey);
     const belt = createAsteroidBeltParticles(presetY, 1.0, 2200);
     belt.points.rotation.x = .28;
     belt.points.rotation.y = 0.12;
@@ -311,13 +315,7 @@ export default function PlanetCanvas({
   useEffect(() => {
     if (!mainPlanetRef.current || !satelliteMeshRef.current || !asteroidBeltPointsRef.current) return;
 
-    // 1) 간지 프리셋 조회
-    const presetD = getThemePreset(dayKey);    // SLOT-D (일주 70%)
-    const presetM = getThemePreset(monthKey);  // SLOT-M (월주 30%)
-    const presetH = getThemePreset(hourKey);   // SLOT-H (시주 위성)
-    const presetY = getThemePreset(yearKey);   // SLOT-Y (연주 고리)
-
-    // Shared sphere UV/material path for all four ganzi slots.
+    // Shared sphere UV/material path for all four heavenly-stem slots.
     disposeMaterial(mainPlanetRef.current.material as THREE.Material);
     mainPlanetRef.current.material = createPlanetMaterial(presetD, presetM, maskStyle, 1024);
     if (surfaceEffectsRef.current) disposeSurfaceEffects(surfaceEffectsRef.current);
@@ -335,14 +333,13 @@ export default function PlanetCanvas({
       planetRootRef.current.remove(asteroidBeltPointsRef.current);
       disposeObject(asteroidBeltPointsRef.current);
 
-      const presetY = getThemePreset(yearKey);
       const newBelt = createAsteroidBeltParticles(presetY, 1.0, 2200);
       newBelt.points.rotation.x = .28;
       newBelt.points.rotation.y = 0.12;
       planetRootRef.current.add(newBelt.points);
       asteroidBeltPointsRef.current = newBelt.points;
     }
-  }, [dayKey, monthKey, hourKey, yearKey, maskStyle, isUnknownTime]);
+  }, [presetD, presetM, presetH, presetY, maskStyle, isUnknownTime]);
 
   const handleToggleAutoRotate = () => {
     isAutoRotatingRef.current = !isAutoRotatingRef.current;
@@ -447,23 +444,23 @@ export default function PlanetCanvas({
       <div className="absolute bottom-4 left-4 right-4 z-10 grid grid-cols-4 gap-1.5 text-center pointer-events-none">
         <div className="bg-black/60 backdrop-blur-md border border-white/15 rounded-xl p-2 text-white">
           <span className="text-[9px] text-doryeong-gold font-bold block">주 표면 (70%)</span>
-          <span className="text-xs font-bold font-serif">{dayKey}</span>
-          <span className="text-[9px] text-white/60 block">일주</span>
+          <span className="text-xs font-bold font-serif">{presetD.stem}</span>
+          <span className="text-[9px] text-white/60 block">일간</span>
         </div>
         <div className="bg-black/60 backdrop-blur-md border border-white/15 rounded-xl p-2 text-white">
           <span className="text-[9px] text-blue-300 font-bold block">보조 표면 (30%)</span>
-          <span className="text-xs font-bold font-serif">{monthKey}</span>
-          <span className="text-[9px] text-white/60 block">월주</span>
+          <span className="text-xs font-bold font-serif">{presetM.stem}</span>
+          <span className="text-[9px] text-white/60 block">월간</span>
         </div>
         <div className="bg-black/60 backdrop-blur-md border border-white/15 rounded-xl p-2 text-white">
           <span className="text-[9px] text-amber-300 font-bold block">위성 구체</span>
-          <span className="text-xs font-bold font-serif">{isUnknownTime ? "미상" : hourKey}</span>
-          <span className="text-[9px] text-white/60 block">시주</span>
+          <span className="text-xs font-bold font-serif">{isUnknownTime ? "미상" : presetH.stem}</span>
+          <span className="text-[9px] text-white/60 block">시의 천간</span>
         </div>
         <div className="bg-black/60 backdrop-blur-md border border-white/15 rounded-xl p-2 text-white">
           <span className="text-[9px] text-rose-300 font-bold block">고리/소행성</span>
-          <span className="text-xs font-bold font-serif">{yearKey}</span>
-          <span className="text-[9px] text-white/60 block">연주</span>
+          <span className="text-xs font-bold font-serif">{presetY.stem}</span>
+          <span className="text-[9px] text-white/60 block">연간</span>
         </div>
       </div>
     </div>

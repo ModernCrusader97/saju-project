@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 import { RoomEnvironment } from "three/examples/jsm/environments/RoomEnvironment.js";
 import { createElementalSpirit, type ElementalSpiritInstance, TEN_STEM_SPIRITS } from "@/lib/planet/elemental-spirit";
+import { ZODIAC_FEATURES, type ZodiacBranch } from "@/lib/planet/spirit-zodiac";
 import { safeDelta } from "@/lib/planet/surface-math";
 import type { MaskStyle } from "@/lib/planet/uv-mask";
 import { Sparkles, RotateCcw, Camera, Pause, Play } from "lucide-react";
@@ -20,8 +21,7 @@ interface ElementalSpiritCanvasProps {
 }
 
 export default function ElementalSpiritCanvas({
-  dayKey, monthKey="병인", hourKey, yearKey, isUnknownTime=false,
-  maskStyle="pangaea", onCapture, className="",
+  dayKey, monthKey="병인", onCapture, className="",
 }: ElementalSpiritCanvasProps) {
   const containerRef=useRef<HTMLDivElement>(null);
   const rendererRef=useRef<THREE.WebGLRenderer|null>(null);
@@ -81,7 +81,7 @@ export default function ElementalSpiritCanvas({
 
     let spirit:ElementalSpiritInstance;
     try {
-      spirit=createElementalSpirit(dayKey,monthKey,hourKey,{yearKey,isUnknownTime,maskStyle,quality:low?"low":"high"});
+      spirit=createElementalSpirit(dayKey,monthKey,undefined,{quality:low?"low":"high"});
     } catch {
       scene.environment=null;environment.dispose();renderer.dispose();renderer.forceContextLoss();rendererRef.current=null;container.replaceChildren();
       setGraphicsError("정령을 만들지 못했어요. 재질을 바꾸거나 화면을 다시 열어주세요.");return;
@@ -95,9 +95,9 @@ export default function ElementalSpiritCanvas({
       if(disposed)return;
       const width=Math.max(1,container.clientWidth),height=Math.max(1,container.clientHeight);
       camera.aspect=width/height;
-      // Fit both the full crown and detached pillar companion on portrait screens.
-      const distance=Math.max(5.4,1.72/(Math.tan(THREE.MathUtils.degToRad(camera.fov/2))*camera.aspect));
-      camera.position.set(0,.55,distance);camera.lookAt(0,.16,0);camera.updateProjectionMatrix();
+      // Fit the adult avatar, zodiac crown and grounded month pet in portrait.
+      const distance=Math.max(7.5,1.50/(Math.tan(THREE.MathUtils.degToRad(camera.fov/2))*camera.aspect));
+      camera.position.set(0,1.90,distance);camera.lookAt(0,1.78,0);camera.updateProjectionMatrix();
       renderer.setSize(width,height,false);render();
     };
     const observer=new ResizeObserver(resize);observer.observe(container);resize();
@@ -174,7 +174,7 @@ export default function ElementalSpiritCanvas({
       renderRef.current=null;scene.clear();
       if(container.contains(dom))container.removeChild(dom);
     };
-  },[dayKey,monthKey,hourKey,yearKey,isUnknownTime,maskStyle]);
+  },[dayKey,monthKey]);
 
   useEffect(()=>()=>{if(timerRef.current)clearTimeout(timerRef.current);},[]);
   const showNotice=(text:string)=>{
@@ -201,7 +201,7 @@ export default function ElementalSpiritCanvas({
       <div className="pointer-events-none absolute left-4 right-4 top-4 flex items-start justify-between gap-3">
         <div className="min-w-0 rounded-2xl border border-white/10 bg-black/30 px-3 py-2 backdrop-blur-md">
           <div className="flex items-center gap-1.5 text-xs font-semibold text-amber-100"><Sparkles className="h-3 w-3 shrink-0"/><span>{spiritInfo.name}</span></div>
-          <p className="mt-1 text-[10px] text-white/50">일주 {dayKey} 주재질 · 월주 {monthKey} 보조재질</p>
+          <p className="mt-1 text-[10px] text-white/50">일간 {dayKey.charAt(0)} 본체 · 일지 {ZODIAC_FEATURES[dayKey.charAt(1) as ZodiacBranch]?.label || "동물"} 특징</p>
         </div>
         <div className="pointer-events-auto flex shrink-0 items-center gap-1.5">
           <button type="button" onClick={toggleMotion} aria-label={running?"정령 움직임 일시정지":"정령 움직임 재생"} aria-pressed={!running} title={running?"일시정지":"재생"} className="rounded-full border border-white/15 bg-black/40 p-2 text-white/80 hover:bg-black/60">
@@ -214,7 +214,7 @@ export default function ElementalSpiritCanvas({
       <div className="pointer-events-none absolute bottom-4 left-4 right-4 text-center">
         <p className="text-[11px] text-white/60">{spiritInfo.speciesTitle}</p>
         <p className="mt-1 text-[10px] text-white/35">드래그로 둘러보기 · 가볍게 눌러 인사하기{reactionCount>0?` · ${reactionCount}번 인사`:""}</p>
-        <p className="mt-1 text-[9px] text-white/30">{hourKey&&!isUnknownTime?`시주 ${hourKey} 작은 동반자`:"시간 모름 · 동반자 생략"}{yearKey?` · 연주 ${yearKey} 고리`:""}</p>
+        <p className="mt-1 text-[9px] text-white/30">월주 {monthKey} · {ZODIAC_FEATURES[monthKey.charAt(1) as ZodiacBranch]?.label || "동물"} 지상 펫</p>
       </div>
       {graphicsError&&<div role="alert" className="absolute inset-0 flex items-center justify-center bg-slate-950/85 px-8 text-center text-sm text-white/80">{graphicsError}</div>}
       {notice&&<div role="status" className="absolute bottom-24 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-black/80 px-4 py-2 text-xs text-white">{notice}</div>}

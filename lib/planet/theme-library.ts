@@ -20,6 +20,13 @@ export interface GanziThemePreset {
   };
 }
 
+/** Planet-only visual preset. The stem is also the procedural seed, and no
+ * earthly branch is forwarded to the shared material/effect/belt renderers.
+ * Full ganzi identities remain in the calculation and spirit APIs below. */
+export interface StemThemePreset extends GanziThemePreset {
+  branch: "";
+}
+
 // 60갑자 전체 목록 (순서대로)
 export const SIXTY_GANZI_KEYS: Array<{ key: string; hanja: string; stem: string; branch: string }> = [
   { key: "갑자", hanja: "甲子", stem: "갑", branch: "자" },
@@ -103,7 +110,7 @@ const STEM_BASE_PROFILES: Record<string, { primary: string; secondary: string; r
   계: { primary: "#096B77", secondary: "#77D1C3", roughness: 0.12, metalness: 0.0, pattern: "waves" },
 };
 
-// 10천간이 시각적 바탕, 지지가 색감/지형/물성을 변주합니다. 모든 기둥이 공유합니다.
+// 행성의 10천간 시각적 바탕. 지지 변주는 별도의 기존 간지/정령 API에만 남깁니다.
 export const STEM_VISUAL_NAMES: Record<string, string> = {
   갑: "울창한 수림", 을: "이끼 숲", 병: "끓는 용암", 정: "화산 불씨",
   무: "황금 사구", 기: "적토 도자", 경: "티타늄 단층", 신: "수은 물결",
@@ -116,6 +123,43 @@ export function getSurfaceFamily(preset: Pick<GanziThemePreset, "stem">): Surfac
   if (preset.stem === "무" || preset.stem === "기") return "earth";
   if (preset.stem === "경" || preset.stem === "신") return "metal";
   return "water";
+}
+
+// Exactly ten stable planet appearances, independent of any ganzi branch.
+// Keep the current material profiles; this does not introduce new stem designs.
+const STEM_THEME_PRESET_MAP: Record<string, StemThemePreset> = Object.create(null);
+const STEM_HANJA = "甲乙丙丁戊己庚辛壬癸";
+Object.entries(STEM_BASE_PROFILES).forEach(([stem, base], index) => {
+  const family = getSurfaceFamily({ stem });
+  STEM_THEME_PRESET_MAP[stem] = Object.freeze({
+    key: stem,
+    hanja: STEM_HANJA[index],
+    themeName: `${STEM_VISUAL_NAMES[stem]} · ${stem}`,
+    natureMotive: `${STEM_VISUAL_NAMES[stem]}를 담은 ${stem} 천간의 표면`,
+    stem,
+    branch: "" as const,
+    surface: Object.freeze({
+      family,
+      primaryColor: base.primary,
+      secondaryColor: base.secondary,
+      roughness: base.roughness,
+      metalness: base.metalness,
+      bumpScale: 0.6,
+      emissive: family === "lava" ? base.secondary : undefined,
+      emissiveIntensity: family === "lava" ? 0.8 : 0.0,
+      patternType: base.pattern,
+    }),
+  });
+});
+
+/** Accept one Korean heavenly stem or a valid full 60-cycle ganzi. Always
+ * return the same immutable object for that stem so branch-only changes do
+ * not alter colors, silhouette, procedural phase, or animation lifecycle. */
+export function getStemThemePreset(stemOrGanzi: string): StemThemePreset {
+  const stem = STEM_THEME_PRESET_MAP[stemOrGanzi]
+    ? stemOrGanzi
+    : SIXTY_GANZI_KEYS.find(({ key }) => key === stemOrGanzi)?.stem;
+  return STEM_THEME_PRESET_MAP[stem ?? "갑"];
 }
 
 // 지지별 질감 변조 계수 (지지의 한난조습 및 밀도 반영)

@@ -1,10 +1,10 @@
 import * as THREE from "three";
 import { getThemePreset, getSurfaceFamily, SIXTY_GANZI_KEYS } from "./theme-library";
 import { createPlanetMaterial, animateSurface, resetSurface, setSurfaceReliefScale, setSurfaceBarkMix } from "./surface-material";
-import { createAsteroidBeltParticles } from "./asteroid-belt";
+import { createZodiacFeatures, ZODIAC_FEATURES, type ZodiacBranch } from "./spirit-zodiac";
+import { createMonthSpiritPet } from "./spirit-month-pet";
 import { disposeObject } from "./render-resources";
 import { createSpiritGeometry, type SpiritQuality } from "./spirit-geometry";
-import { hashSeed } from "./surface-math";
 import { createSpiritCrownEffects, animateSurfaceEffects, disposeSurfaceEffects } from "./surface-effects";
 import type { MaskStyle } from "./uv-mask";
 
@@ -23,20 +23,27 @@ export interface ElementalSpiritData {
 }
 
 const PROFILES: Record<string, [ElementalSpiritData["element"], string, string, string, string[]]> = {
-  갑: ["wood", "거목의 씨앗 · 트루티", "가지 사이에 숲을 품은 정령", "깊게 뿌리내린 씨앗에서 가지와 잎이 층층이 자라난 작은 숲.", ["우직함", "개척", "생명력"]],
-  을: ["wood", "이끼 숲 · 플로라", "작은 틈에서 자라는 숲의 정령", "부드러운 이끼와 섬세한 잎사귀가 겹쳐 자라는 유연한 숲.", ["유연함", "친화력", "끈기"]],
-  병: ["fire", "용암 불씨 · 솔라", "검은 돌 속에서 타오르는 정령", "검은 화산암 사이로 용암이 흐르고 작은 불꽃들이 피어오르는 불씨.", ["활력", "솔직함", "열정"]],
-  정: ["fire", "작은 화산 · 루미", "잔잔한 열을 품은 불의 정령", "짙은 화산석 속에 따뜻한 빛을 간직하고 은은하게 타오르는 작은 불.", ["온기", "통찰", "섬세함"]],
-  무: ["earth", "황금 사구 · 샌디", "모래와 지층으로 빚어진 정령", "거친 모래와 단단한 층들이 천천히 쌓여 태어난 둥근 대지의 조각.", ["신뢰", "포용", "뚝심"]],
-  기: ["earth", "흙빛 도자 · 테라", "흙의 결을 품은 대지의 정령", "흙빛 도자와 작은 돌들이 포개진 차분하고 단단한 자연물.", ["다정함", "배려", "돌봄"]],
-  경: ["metal", "티타늄 조각 · 아이언", "빛을 반사하는 금속의 정령", "차분한 티타늄 단층과 작은 금속 결정이 빛을 받아 다른 표정을 만드는 조각.", ["의리", "결단", "정직"]],
-  신: ["metal", "수은 물방울 · 루나", "유려하게 맺힌 금속의 정령", "매끄러운 액체 금속 표면 위에 작은 은빛 방울들이 맺힌 정령.", ["정교함", "감각", "명료함"]],
-  임: ["water", "큰 물결 · 아쿠아", "물결을 머금은 물의 정령", "깊은 물빛 방울의 양옆으로 작은 파도가 말려 올라가는 정령.", ["지혜", "자유", "유연함"]],
-  계: ["water", "맑은 이슬 · 드롭", "빛을 담은 이슬의 정령", "잔잔한 물빛과 밝은 반사를 머금고 천천히 떠 있는 맑은 이슬.", ["공감", "다정함", "적응력"]],
+  갑: ["wood", "갑목 · 숲의 분신", "곧게 자라는 숲의 기운", "단단한 수피와 층층이 자란 잎을 두른 원소 분신.", ["우직함", "개척", "생명력"]],
+  을: ["wood", "을목 · 초록의 분신", "유연하게 뻗는 가지의 기운", "섬세한 가지와 부드러운 숲의 결을 지닌 원소 분신.", ["유연함", "친화력", "끈기"]],
+  병: ["fire", "병화 · 불의 분신", "환하게 타오르는 불의 기운", "움직이는 용암의 빛과 위로 피어나는 불꽃을 지닌 원소 분신.", ["활력", "솔직함", "열정"]],
+  정: ["fire", "정화 · 온기의 분신", "깊고 은은한 불의 기운", "따뜻한 빛을 간직하고 차분하게 타오르는 원소 분신.", ["온기", "통찰", "섬세함"]],
+  무: ["earth", "무토 · 대지의 분신", "단단하게 받쳐 주는 대지의 기운", "모래와 지층의 결을 입고 안정감 있게 선 원소 분신.", ["신뢰", "포용", "뚝심"]],
+  기: ["earth", "기토 · 흙의 분신", "생명을 품는 흙의 기운", "흙빛 도자와 고운 토양의 결을 지닌 원소 분신.", ["다정함", "배려", "돌봄"]],
+  경: ["metal", "경금 · 강철의 분신", "곧고 선명한 금속의 기운", "티타늄 단층이 빛을 반사하는 견고한 원소 분신.", ["의리", "결단", "정직"]],
+  신: ["metal", "신금 · 은빛의 분신", "정교하게 빛나는 금속의 기운", "유려한 액체 금속의 결을 지닌 세련된 원소 분신.", ["정교함", "감각", "명료함"]],
+  임: ["water", "임수 · 물결의 분신", "크고 자유로운 물의 기운", "깊은 물빛과 흐르는 파도의 몸짓을 지닌 원소 분신.", ["지혜", "자유", "유연함"]],
+  계: ["water", "계수 · 이슬의 분신", "맑고 섬세한 물의 기운", "잔잔한 물결과 밝은 반사를 지닌 원소 분신.", ["공감", "다정함", "적응력"]],
 };
 
+/** Spirit materials are stem-only. The branch changes animal features, not the
+ * body material seed/properties; planet presets and their four-pillar rules stay intact. */
+export function getSpiritStemPreset(stemOrKey:string) {
+  const stem=stemOrKey.charAt(0);
+  return getThemePreset(SIXTY_GANZI_KEYS.find(item=>item.stem===stem)?.key ?? "갑자");
+}
+
 /** Identity copy only. Every color and physical property comes from the common
- * 60-ganzi preset pipeline, also used by planets, moons and the year belt. */
+ * shared preset/material pipeline. Spirit pillar roles are separate from planets. */
 export const TEN_STEM_SPIRITS: Record<string, ElementalSpiritData> = Object.fromEntries(
   Object.entries(PROFILES).map(([stem, [element,name,speciesTitle,conceptDesc,personalityTraits]], index) => {
     const key=SIXTY_GANZI_KEYS.find(item=>item.stem===stem)!.key;
@@ -48,6 +55,7 @@ export const TEN_STEM_SPIRITS: Record<string, ElementalSpiritData> = Object.from
 );
 
 export interface ElementalSpiritOptions {
+  /** Legacy canvas compatibility only; no year object in spirit mode. */
   yearKey?: string;
   isUnknownTime?: boolean;
   maskStyle?: MaskStyle;
@@ -60,7 +68,10 @@ export interface ElementalSpiritInstance {
   eyeLeft: THREE.Mesh;
   eyeRight: THREE.Mesh;
   propGroup: THREE.Group;
+  /** Deprecated alias for the grounded month pet. It never orbits. */
   petPivot?: THREE.Group;
+  monthPet: THREE.Group;
+  mapping: {bodyStem:string;bodyBranch:string;petStem:string;petBranch:string};
   yearBelt?: THREE.Points;
   update: (time: number, deltaSeconds?: number) => void;
   triggerReaction: () => void;
@@ -71,103 +82,57 @@ export interface ElementalSpiritInstance {
 }
 
 export function createElementalSpirit(
-  dayKey="갑자", monthKey="병인", hourKey?:string, options:ElementalSpiritOptions={},
+  dayKey="갑자", monthKey="병인", _hourKey?:string, options:ElementalSpiritOptions={},
 ):ElementalSpiritInstance {
-  const day=getThemePreset(dayKey), month=getThemePreset(monthKey);
-  const family=getSurfaceFamily(day), quality=options.quality ?? "high", low=quality==="low";
-  const data={...TEN_STEM_SPIRITS[day.stem],primaryColor:day.surface.primaryColor,secondaryColor:day.surface.secondaryColor,
-    emissiveColor:day.surface.emissive ?? "#000000",roughness:day.surface.roughness};
-  const group=new THREE.Group();group.name=`saju-spirit:${day.key}`;
-  const floatGroup=new THREE.Group();group.add(floatGroup);
+  const dayPillar=getThemePreset(dayKey),monthPillar=getThemePreset(monthKey);
+  const day=getSpiritStemPreset(dayPillar.stem),month=getSpiritStemPreset(monthPillar.stem);
+  const family=getSurfaceFamily(day),quality=options.quality ?? "high";
+  const data={...TEN_STEM_SPIRITS[day.stem]};
+  const group=new THREE.Group();group.name=`saju-avatar:${dayPillar.key}`;
+  group.userData.pillarRoles={body:"day-stem",features:"day-branch",pet:"month-stem-and-branch"};
   const materials:THREE.Material[]=[];
-  const material=createPlanetMaterial(day,month,options.maskStyle ?? "pangaea",low?256:384);
-  // Preserve sculpted silhouettes and small facial marks. Procedural albedo and
-  // micro-normal flow remain active; sphere radial displacement is not suitable
-  // for the droplet lathe, trunk or miniature crown pieces.
+  const material=createPlanetMaterial(day,undefined,"pangaea",128);
   setSurfaceReliefScale(material,0);
   if(family==="forest")setSurfaceBarkMix(material,1);
   materials.push(material);
   const accent=createPlanetMaterial(day,undefined,"pangaea",128);
-  setSurfaceReliefScale(accent,0);
-  materials.push(accent);
+  setSurfaceReliefScale(accent,0);materials.push(accent);
   const form=createSpiritGeometry(day,material,accent,quality);
-  floatGroup.add(form.group);
-  const crownEffects=createSpiritCrownEffects(day,.72);
-  floatGroup.add(crownEffects);
+  form.group.position.x=-.27;group.add(form.group);
+  const zodiac=createZodiacFeatures(dayPillar.branch,accent,quality);
+  zodiac.name=`day-branch-features:${dayPillar.branch}`;form.head.add(zodiac);
+  const crownEffects=createSpiritCrownEffects(day,.34);form.head.add(crownEffects);
 
-  // Two restrained marks, attached to the natural object itself. No human face,
-  // sclera, lips, cheeks or limb anatomy; the silhouette does the storytelling.
-  const face=new THREE.Group();face.name="simple-eye-marks";form.group.add(face);
-  const eyeGeo=new THREE.SphereGeometry(.035,12,8);eyeGeo.scale(.78,1.3,.36);
-  const eyeMat=new THREE.MeshBasicMaterial({color:0x071518});
-  const eyeLeft=new THREE.Mesh(eyeGeo,eyeMat),eyeRight=new THREE.Mesh(eyeGeo,eyeMat);
-  const eyeY=family==="forest"?.02:.07;
-  eyeLeft.position.set(-.115,eyeY,form.faceDepth+.019);
-  eyeRight.position.set(.115,eyeY,form.faceDepth+.019);
-  face.add(eyeLeft,eyeRight);
-  const glintGeo=new THREE.SphereGeometry(.007,6,4);
-  const glintMat=new THREE.MeshBasicMaterial({color:0xf5f3e8});
-  for(const eye of [eyeLeft,eyeRight]) {
-    const glint=new THREE.Mesh(glintGeo,glintMat);glint.position.set(-.006,.012,.013);eye.add(glint);
-  }
+  const petMaterial=createPlanetMaterial(month,undefined,"pangaea",128);
+  setSurfaceReliefScale(petMaterial,0);materials.push(petMaterial);
+  // Material is month-stem-only; the resolved month branch reaches the feature factory.
+  const pet=createMonthSpiritPet({...month, key:monthPillar.key, branch:monthPillar.branch},petMaterial,quality);
+  pet.group.position.set(.90,0,.10);group.add(pet.group);
+  const groundGeometry=new THREE.CircleGeometry(1.30,quality==="low"?40:64);
+  groundGeometry.scale(1,.52,1);groundGeometry.rotateX(-Math.PI/2);
+  const groundMaterial=new THREE.MeshStandardMaterial({color:0x718087,roughness:1,transparent:true,opacity:.16,depthWrite:false});
+  const ground=new THREE.Mesh(groundGeometry,groundMaterial);ground.name="shared-ground-plane";ground.position.set(.15,-.004,.08);group.add(ground);
+  const mapping={bodyStem:day.stem,bodyBranch:dayPillar.branch,petStem:month.stem,petBranch:monthPillar.branch};
+  group.userData.mapping=mapping;
+  group.userData.animal=ZODIAC_FEATURES[dayPillar.branch as ZodiacBranch]?.animal;
 
-  // SLOT-H is a separate miniature natural object, always using its own pillar.
-  let petPivot:THREE.Group|undefined;
-  let petMesh:THREE.Mesh|undefined;
-  if(hourKey && !options.isUnknownTime) {
-    const hour=getThemePreset(hourKey);
-    const petMaterial=createPlanetMaterial(hour,undefined,"pangaea",128);
-    setSurfaceReliefScale(petMaterial,.18);materials.push(petMaterial);
-    petPivot=new THREE.Group();petPivot.name=`hour-companion:${hour.key}`;group.add(petPivot);
-    petMesh=new THREE.Mesh(new THREE.SphereGeometry(.145,low?20:28,low?14:20),petMaterial);
-    petMesh.position.set(1.18,.22,0);petPivot.add(petMesh);
-  }
-
-  // SLOT-Y stays a single detached, fine-particle belt. No season/atmosphere shell.
-  let yearBelt:THREE.Points|undefined;
-  if(options.yearKey) {
-    const belt=createAsteroidBeltParticles(getThemePreset(options.yearKey),.47,low?220:400);
-    yearBelt=belt.points;yearBelt.name=`year-belt:${options.yearKey}`;
-    yearBelt.position.y=-.65;yearBelt.rotation.set(.16,0,.09);
-    belt.material.opacity=.52;belt.material.size=.018;
-    group.add(yearBelt);
-  }
-
-  let currentTime=0, reactionStart=-100, disposed=false;
-  const phase=hashSeed(day.key)%1000/1000*Math.PI*2;
+  let currentTime=0,reactionStart=-100,disposed=false;
   const update=(time:number,deltaSeconds?:number)=>{
-    if(disposed || !Number.isFinite(time)) return;
-    const t=Math.max(0,time), dt=Math.max(0,Math.min(.05,deltaSeconds ?? t-currentTime));
-    currentTime=t;
-    for(const mat of materials) animateSurface(mat,dt);
-    form.update(t);
-    animateSurfaceEffects(crownEffects,t,dt);
-    const elapsed=Math.max(0,t-reactionStart);
-    const reaction=elapsed<1.4?Math.sin(elapsed*8)*Math.exp(-elapsed*3.8):0;
-    // Breath is a tiny rigid lift and lean, never random squash/stretch.
-    floatGroup.position.y=Math.sin(t*1.15+phase)*.027+reaction*.045;
-    floatGroup.rotation.z=Math.sin(t*.63+phase)*.018+reaction*.035;
-    floatGroup.rotation.y=Math.sin(t*.39)*.055;
-    const blinkPhase=(t+phase*.2)%5.2;
-    const blink=blinkPhase>4.96?1-Math.sin((blinkPhase-4.96)/.24*Math.PI)*.85:1;
-    eyeLeft.scale.y=eyeRight.scale.y=blink;
-    if(petPivot) petPivot.rotation.y=t*.27;
-    if(petMesh) {petMesh.position.y=.22+Math.sin(t*1.25+1)*.05;petMesh.rotation.y=t*.18;}
-    if(yearBelt) yearBelt.rotation.y=t*.038;
+    if(disposed||!Number.isFinite(time))return;
+    const t=Math.max(0,time),dt=Math.max(0,Math.min(.05,deltaSeconds??t-currentTime));currentTime=t;
+    for(const mat of materials)animateSurface(mat,dt);
+    const elapsed=Math.max(0,t-reactionStart),reaction=elapsed<1.4?Math.sin(elapsed*5)*Math.exp(-elapsed*2.7):0;
+    form.update(t,reaction);pet.update(t);animateSurfaceEffects(crownEffects,t,dt);
   };
   const triggerReaction=()=>{reactionStart=currentTime;};
-  const reset=()=>{
-    currentTime=0;reactionStart=-100;
-    for(const mat of materials) resetSurface(mat);
-    group.rotation.set(0,0,0);update(0,0);
-  };
+  const reset=()=>{currentTime=0;reactionStart=-100;for(const mat of materials)resetSurface(mat);group.rotation.set(0,0,0);update(0,0);};
   const dispose=()=>{
-    if(disposed)return;disposed=true;
-    disposeSurfaceEffects(crownEffects);
+    if(disposed)return;disposed=true;disposeSurfaceEffects(crownEffects);
     group.traverse(object=>{if((object as THREE.InstancedMesh).isInstancedMesh)(object as THREE.InstancedMesh).dispose();});
     disposeObject(group);group.removeFromParent();group.clear();
   };
   reset();
-  return {group,data,bodyMesh:form.bodyMesh,eyeLeft,eyeRight,propGroup:form.crown,petPivot,yearBelt,
+  return {group,data,bodyMesh:form.bodyMesh,eyeLeft:form.eyeLeft,eyeRight:form.eyeRight,propGroup:form.crown,
+    petPivot:pet.group,monthPet:pet.group,mapping,yearBelt:undefined,
     update,triggerReaction,triggerSquish:triggerReaction,reset,dispose};
 }

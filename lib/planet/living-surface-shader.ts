@@ -7,7 +7,11 @@ import { getSurfaceFamily, type GanziThemePreset } from './theme-library';
  * object-space procedural geometry/normal/albedo, with one scalar clock update.
  * No screen-space paint, UV drift, screen readback, or per-frame CPU texture work.
  */
-export const LIVING_SURFACE_SHADER_VERSION = 'living-surface-r186-v2';
+export const LIVING_SURFACE_SHADER_VERSION = 'living-surface-r186-v3-gerstner';
+// Historical name retained for callers: this bounds the WHOLE offset vector,
+// including Gerstner horizontal orbits, not only radial height. For water,
+// (base .012 + amplitude sum .022 * 1.12 * (1 + Q .30)) * 1.10
+// = .0484352 < .065. Other families retain their existing smaller bounds.
 export const MAX_LIVING_RADIAL_RELIEF = .065;
 
 export interface LivingSurfaceState {
@@ -57,7 +61,8 @@ float lsFractal(vec3 p) {
 // Inverse of THREE.SphereGeometry's x=-cos(phi)*sin(theta) convention.
 // CanvasTexture's flipY means north is texture v=1, as in the geometry UVs.
 vec2 lsDirectionUv(vec3 p) {
-  return vec2(fract(atan(p.z, -p.x) / 6.28318530718 + 1.0), 1.0 - acos(clamp(p.y, -1.0, 1.0)) / 3.14159265359);
+  float longitude = dot(p.xz, p.xz) > 1e-12 ? atan(p.z, -p.x) : 0.0;
+  return vec2(fract(longitude / 6.28318530718 + 1.0), 1.0 - acos(clamp(p.y, -1.0, 1.0)) / 3.14159265359);
 }
 float lsMask(vec2 surfaceUv) {
   #if LS_HAS_MONTH == 1
@@ -66,8 +71,53 @@ float lsMask(vec2 surfaceUv) {
     return 1.0;
   #endif
 }
+// Artistic spherical Gerstner mapping, not a fluid solver.
+// Three globally defined directions avoid a longitude seam or a pole frame.
+// Tangent projections are deliberately NOT normalized: orbits die off smoothly
+// at a direction's extrema rather than dividing by a vanishing tangent length.
+const vec3 LS_WATER_D0 = normalize(vec3(.9078, .2542, .3359));
+const vec3 LS_WATER_D1 = normalize(vec3(-.3601, .8103, .4602));
+const vec3 LS_WATER_D2 = normalize(vec3(.2399, -.5098, .8297));
+struct LivingWater {
+  vec3 phase;
+  vec3 amplitude;
+};
+LivingWater lsWaterState(vec3 p, vec4 profile) {
+  float yin = profile.x;
+  float seed = profile.y;
+  // Bounded C1 value noise changes continuously with the one simulation clock.
+  // Two slow 3D fields make the wave trains less periodic without frame jitter.
+  float n0 = lsNoise(p * 1.35 + vec3(seed, uLsTime * .065, -uLsTime * .047));
+  float n1 = lsNoise(p * 1.85 + vec3(-uLsTime * .039, seed + 7.1, uLsTime * .053));
+  vec3 modulation = vec3(n0, n1, .5 * (n0 + n1));
+  LivingWater water;
+  // 임: broad, slower ocean swells. 계: smaller, gentler ripple/dew orbits.
+  vec3 frequency = mix(vec3(7.2, 11.5, 19.0), vec3(15.0, 24.0, 36.0), yin);
+  vec3 speed = mix(vec3(.56, -.77, 1.04), vec3(.82, -1.13, 1.52), yin);
+  water.phase = vec3(dot(p, LS_WATER_D0), dot(p, LS_WATER_D1), dot(p, LS_WATER_D2)) * frequency
+    - uLsTime * speed + seed + vec3(.0, 2.1, 4.4) + (modulation * 2.0 - 1.0) * .55;
+  water.amplitude = mix(vec3(.013, .0065, .0025), vec3(.0034, .0017, .0009), yin)
+    * (.88 + modulation * .24);
+  return water;
+}
+vec3 lsWaterDisplacement(vec3 p, vec4 profile) {
+  LivingWater water = lsWaterState(p, profile);
+  float radial = .012 + dot(water.amplitude, sin(water.phase));
+  vec3 orbit = water.amplitude * cos(water.phase);
+  // Sum A*k <= .24176 (임) / .13911 (계), before the mild noise warp.
+  // Q never exceeds .30. At sharp fixed day/month coasts use 10% horizontal
+  // orbit radius to keep mask-gradient steepness conservative at shorelines.
+  float steepness = mix(.30, .18, profile.x);
+  #if LS_HAS_MONTH == 1
+    steepness *= .10;
+  #endif
+  vec3 horizontal = (LS_WATER_D0 - p * dot(p, LS_WATER_D0)) * orbit.x
+    + (LS_WATER_D1 - p * dot(p, LS_WATER_D1)) * orbit.y
+    + (LS_WATER_D2 - p * dot(p, LS_WATER_D2)) * orbit.z;
+  return p * radial + horizontal * steepness;
+}
 // Low-frequency geometry is also used for a finite-difference vertex normal.
-// profile = (yin variant, deterministic ganzi phase, roughness, relief amount).
+// profile = (yin variant, deterministic stem phase, roughness, relief amount).
 float lsHeight(vec3 p, int family, vec4 profile) {
   float seed = profile.y;
   float variant = profile.x;
@@ -95,17 +145,18 @@ float lsHeight(vec3 p, int family, vec4 profile) {
       * sin(dot(p, vec3(-5.0, 12.0, 7.0)) - t * .52);
     return .008 + mix(lsNoise(q * 1.5) * .013, liquid * .016 + .016, variant);
   }
-  float swell = sin(dot(p, vec3(8.0, 5.0, 3.0)) - t * .8 + seed) * .004;
-  float waves = sin(dot(p, vec3(22.0, 9.0, -12.0)) - t * 1.7 + seed) * .0045
-    + sin(dot(p, vec3(-13.0, 29.0, 7.0)) + t * 1.3) * .003;
-  return .012 + swell + waves;
+  return .0; // Water uses the full vector deformation below.
 }
-float lsBlendedHeight(vec3 p, float region) {
-  float dayHeight = lsHeight(p, LS_DAY_FAMILY, uLsDay) * (.75 + uLsDay.w * .35);
+vec3 lsDisplacement(vec3 p, int family, vec4 profile) {
+  vec3 offset = family == 4 ? lsWaterDisplacement(p, profile) : p * lsHeight(p, family, profile);
+  return offset * (.75 + clamp(profile.w, 0.0, 1.0) * .35);
+}
+vec3 lsBlendedDisplacement(vec3 p, float region) {
+  vec3 dayOffset = lsDisplacement(p, LS_DAY_FAMILY, uLsDay);
   #if LS_HAS_MONTH == 1
-    return mix(lsHeight(p, LS_MONTH_FAMILY, uLsMonth) * (.75 + uLsMonth.w * .35), dayHeight, region) * uLsReliefScale;
+    return mix(lsDisplacement(p, LS_MONTH_FAMILY, uLsMonth), dayOffset, region) * uLsReliefScale;
   #else
-    return dayHeight * uLsReliefScale;
+    return dayOffset * uLsReliefScale;
   #endif
 }
 `;
@@ -188,15 +239,17 @@ LivingSample lsSample(vec3 p, int family, vec4 profile, vec3 primary, vec3 secon
     s.microHeight = mix(brushed * .00009, flowing * .0003, variant);
     s.coat = .16;
   } else {
-    float swell = sin(dot(p, vec3(22.0, 9.0, -12.0)) - t * 1.7 + seed);
-    float ripple = sin(dot(p, vec3(74.0, 29.0, -37.0)) - t * 2.7 + broad * 4.0)
-      + sin(dot(p, vec3(-41.0, 83.0, 18.0)) + t * 2.1);
-    float foam = smoothstep(.87, .99, swell) * smoothstep(.76, .93, broad);
+    LivingWater water = lsWaterState(p, profile);
+    // Fine crossing wavelets ride the same noise-modulated wave phases. Their
+    // derivative normal remains active on sculpted spirits at reliefScale=0.
+    float ripple = sin(dot(p, vec3(74.0, 29.0, -37.0)) - t * 2.7 + water.phase.y * .18)
+      + sin(dot(p, vec3(-41.0, 83.0, 18.0)) + t * 2.1 + water.phase.z * .13);
+    float foam = smoothstep(.89, .995, sin(water.phase.x)) * smoothstep(.72, .92, broad) * (1.0 - variant * .88);
     s.color = mix(primary, secondary, .20 + broad * .50);
     s.color = mix(s.color, vec3(.59, .78, .73), foam * .65);
-    s.rough = .11 + broad * .08 + foam * .35;
+    s.rough = mix(.11, .085, variant) + broad * .08 + foam * .35;
     s.coat = .82;
-    s.microHeight = ripple * .00085 + grain * .00008;
+    s.microHeight = ripple * mix(.00085, .00034, variant) + grain * .00008;
   }
   s.microHeight *= .65 + profile.w * .6;
   return s;
@@ -235,27 +288,35 @@ export function patchLivingSurfaceShader(vertex: string, fragment: string): { ve
   vertex = replaceRequired(vertex, '#include <common>', '#include <common>\n' + COMMON);
   vertex = replaceRequired(vertex, '#include <beginnormal_vertex>', /* glsl */`
     #include <beginnormal_vertex>
-    vec3 lsDirection = normalize(position);
+    float lsObjectRadius = length(position);
+    vec3 lsDirection = lsObjectRadius > 1e-8 ? position / lsObjectRadius : vec3(0.0, 1.0, 0.0);
     float lsRegion = lsMask(uv);
-    float lsRelief = lsBlendedHeight(lsDirection, lsRegion);
-    vec3 lsTangent = normalize(cross(abs(lsDirection.y) < .95 ? vec3(0.0,1.0,0.0) : vec3(1.0,0.0,0.0), lsDirection));
-    vec3 lsBitangent = cross(lsDirection, lsTangent);
-    float lsStep = .006;
-    vec3 lsDirectionX = normalize(lsDirection + lsTangent * lsStep);
-    vec3 lsDirectionY = normalize(lsDirection + lsBitangent * lsStep);
-    float lsDx = (lsBlendedHeight(lsDirectionX, lsMask(lsDirectionUv(lsDirectionX))) - lsRelief) / lsStep;
-    float lsDy = (lsBlendedHeight(lsDirectionY, lsMask(lsDirectionUv(lsDirectionY))) - lsRelief) / lsStep;
-    objectNormal = normalize(objectNormal - (lsTangent * lsDx + lsBitangent * lsDy) / (1.0 + lsRelief));
+    vec3 lsOffset = vec3(0.0);
+    // Leave authored non-sphere geometry and its normals entirely untouched.
+    if (uLsReliefScale > 0.0) {
+      lsOffset = lsBlendedDisplacement(lsDirection, lsRegion);
+      vec3 lsTangent = normalize(cross(abs(lsDirection.y) < .95 ? vec3(0.0,1.0,0.0) : vec3(1.0,0.0,0.0), lsDirection));
+      vec3 lsBitangent = cross(lsDirection, lsTangent);
+      float lsStep = .002;
+      vec3 lsDirectionX = normalize(lsDirection + lsTangent * lsStep);
+      vec3 lsDirectionY = normalize(lsDirection + lsBitangent * lsStep);
+      vec3 lsPosition = lsDirection + lsOffset;
+      vec3 lsDx = lsDirectionX + lsBlendedDisplacement(lsDirectionX, lsMask(lsDirectionUv(lsDirectionX))) - lsPosition;
+      vec3 lsDy = lsDirectionY + lsBlendedDisplacement(lsDirectionY, lsMask(lsDirectionUv(lsDirectionY))) - lsPosition;
+      // Cross DIFFERENCES OF DISPLACED POSITIONS, including horizontal orbits
+      // and static coast blending, so normals/reflections follow the geometry.
+      vec3 lsNormal = cross(lsDx, lsDy);
+      objectNormal = normalize(dot(lsNormal, lsNormal) > 1e-16 ? lsNormal : objectNormal);
+    }
   `);
   vertex = replaceRequired(vertex, '#include <begin_vertex>', /* glsl */`
     #include <begin_vertex>
     vLsDirection = lsDirection;
     vLsUv = uv;
-    float lsObjectRadius = length(position);
     // Meshes in the planet/galaxy/spirit canvases use uniform object scaling.
     // Matching the height to view-position units keeps moon glints size invariant.
     vLsRadius = lsObjectRadius * length(modelViewMatrix[0].xyz);
-    transformed += lsDirection * lsObjectRadius * lsRelief;
+    transformed += lsObjectRadius * lsOffset;
   `);
   fragment = replaceRequired(fragment, '#include <common>', '#include <common>\n' + COMMON + FRAGMENT);
   fragment = replaceRequired(fragment, '#include <map_fragment>', /* glsl */`
@@ -292,7 +353,7 @@ export function installLivingSurface(
   const state: LivingSurfaceState = { time: { value: 0 }, reliefScale: { value: 1 }, barkMix: { value: 0 }, disposed: false };
   const profile = (theme: GanziThemePreset) => new THREE.Vector4(
     EVEN_STEMS.has(theme.stem) ? 1 : 0,
-    hashSeed(theme.key) / 4294967296 * 31,
+    hashSeed(theme.stem) / 4294967296 * 31,
     theme.surface.roughness,
     theme.surface.bumpScale,
   );

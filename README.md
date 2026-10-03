@@ -1,9 +1,21 @@
-# 사주 행성 · 자연 정령 실험실
+# 사주도령 전체 비공개 테스트
 
-Private static preview. The original SaJuProject renderer modules are reused byte-for-byte. Shared physical materials, fixed spherical 70/30 masks, instanced surface effects, and authored nonhuman nature spirits are included. The complex spirit surface is not claimed to have a measured 70/30 area.
+Full original experience ported to Sites Workers: home, daily view, manse calculator, planet/avatar studio, saved fortunes and conversations, guin map creation/detail, and the retained material comparison lab.
 
-No birth input, API routes, database, environment settings, LLM calls, tracking, or external fonts. Textures and reflection lighting are generated locally.
+## Privacy and persistence
 
-Validation: full original source type checks and regression tests are run separately. Native EGL/OpenGL ES 3.2 Mesa shader compilation and linkage passed 104/104 configurations, including bark and instanced effects. This does not establish browser appearance or mobile performance. Browser/WebMCP runtime validation is unavailable in the current permitted preview context.
+- Owner-private Sites access remains enabled.
+- Every stored record is scoped to the authenticated ChatGPT user ID. Anonymous API calls are rejected.
+- This deployment starts with a new D1 database. Original JSON data, environment files and credentials were not imported.
+- Normal fortune generation and conversation stay template-only. A separate /ai-test screen uses the owner-configured GEMINI_API_KEY secret for fixed fictional fixtures only, capped at six calls per UTC day. It never reads saved personal records; no credential is stored in source.
+- Relationship scores remain visibly labeled arbitrary demo values. Precise solar-term and daewun work is incomplete; this is not a verified professional fortune service.
 
-Run npm ci and npm run build. Static output is out/. Optional WebMCP updates the same visible controls and has no persistence or external transmission.
+## Runtime
+
+Vinext/React on Cloudflare Workers, D1 prepared SQL behind lib/db/store.ts, Drizzle schema-only migrations. No fs-based storage or runtime table creation. The original application source remains separately preserved.
+
+## Checks
+
+Run npm run build, then node scripts/integration-preview.mjs for local synthetic-data integration tests. Miniflare uses a fresh in-memory D1 database, explicit built ES modules and loopback-only transport. All Worker outbound requests are intercepted rather than sent externally. The harness checks template creation, persistence, chat, invalid inputs, anonymous rejection, cross-user isolation, concurrent friend additions, all page HTML and representative static assets. It also mocks Gemini to check fixed-fixture fact validation, rejection of extra personal-data fields, and the six-call daily cap. Current local integration result: 23 checks passed; this does not constitute a live Gemini test.
+
+These checks do not validate browser WebGL, touch behavior, or hosted sign-in. The planet/avatar GLSL previously passed native EGL compilation/linkage; actual device appearance still needs feedback.
