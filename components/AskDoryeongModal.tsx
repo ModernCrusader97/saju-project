@@ -126,7 +126,7 @@ export default function AskDoryeongModal({
             </div>
             <div>
               <h3 className="font-serif text-base font-bold text-doryeong-navy leading-tight">
-                도령 청명과의 대화
+                나의 풀이에 관해
               </h3>
               <p className="text-[11px] text-doryeong-textMuted">
                 {fortune.analysis.name}님의 사주를 바탕으로 상담합니다
@@ -160,7 +160,7 @@ export default function AskDoryeongModal({
                 {m.content}
               </div>
               <span className="text-[10px] text-doryeong-textSubtle mt-1 px-1">
-                {m.role === "user" ? "나" : "청명이"}
+                {m.role === "user" ? "나" : "해석 안내"}
               </span>
             </div>
           ))}
@@ -169,7 +169,7 @@ export default function AskDoryeongModal({
             <div className="flex flex-col items-start">
               <div className="rounded-2xl bg-white border border-doryeong-border px-4 py-3 text-sm text-doryeong-textMuted rounded-bl-none flex items-center gap-2">
                 <Loader2 className="h-4 w-4 animate-spin text-doryeong-gold" />
-                <span className="font-serif">도령이 사색에 잠겨 글을 짓는 중입니다...</span>
+                <span className="font-serif">답변을 정리하고 있어요.</span>
               </div>
             </div>
           )}

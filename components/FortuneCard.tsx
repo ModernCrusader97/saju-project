@@ -35,7 +35,7 @@ export default function FortuneCard({ fortune }: FortuneCardProps) {
         <div className="absolute -top-10 -right-10 w-44 h-44 rounded-full bg-doryeong-gold/20 blur-2xl pointer-events-none" />
         <div className="relative z-10">
           <span className="inline-block px-3 py-1 rounded-full bg-doryeong-gold/20 border border-doryeong-gold/40 text-[11px] font-bold text-doryeong-gold mb-3">
-            도령 청명이의 사주 풀이
+            나의 사주 이야기
           </span>
           <h2 className="font-serif text-2xl font-bold leading-tight">
             {fortune.title}
@@ -196,7 +196,7 @@ export default function FortuneCard({ fortune }: FortuneCardProps) {
             {sec.advice && (
               <div className="mt-3 rounded-xl bg-doryeong-ivoryDark/60 p-3 border-l-4 border-doryeong-gold">
                 <p className="text-xs font-serif text-doryeong-textMuted leading-relaxed">
-                  💡 <strong className="text-doryeong-navy font-bold">도령의 조언:</strong> {sec.advice}
+                  💡 <strong className="text-doryeong-navy font-bold">돌아볼 점:</strong> {sec.advice}
                 </p>
               </div>
             )}
@@ -208,7 +208,7 @@ export default function FortuneCard({ fortune }: FortuneCardProps) {
       <div className="rounded-[24px] bg-white border border-doryeong-border p-5 shadow-sm">
         <h4 className="font-serif text-base font-bold text-doryeong-navy mb-3 flex items-center gap-2">
           <Compass className="h-4 w-4 text-doryeong-gold" />
-          <span>도령의 생활 개운법 (開運)</span>
+          <span>일상에서 실천하기</span>
         </h4>
         <div className="grid grid-cols-2 gap-3 text-xs">
           <div className="p-3 rounded-xl bg-doryeong-ivory border border-doryeong-border">
@@ -241,10 +241,10 @@ export default function FortuneCard({ fortune }: FortuneCardProps) {
           className="w-full py-4 rounded-2xl bg-gradient-to-r from-doryeong-navy to-doryeong-navyLight text-white font-serif font-bold text-base shadow-lg hover:brightness-110 active:scale-[0.98] transition-all flex items-center justify-center gap-2"
         >
           <MessageCircle className="h-5 w-5 text-doryeong-gold" />
-          <span>도령에게 더 물어보기 (질문권 사용)</span>
+          <span>풀이에 관해 더 물어보기</span>
         </button>
         <p className="text-center text-[11px] text-doryeong-textMuted mt-2">
-          받은 풀이에서 더 궁금한 점이나 다음 선택을 청명이에게 직접 물어보세요.
+          저장된 풀이를 바탕으로 대화를 이어가세요. 현재 답변은 기본 문구로 제공됩니다.
         </p>
       </div>
 

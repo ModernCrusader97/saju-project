@@ -67,7 +67,7 @@ const ELEMENT_DATA: Record<
 export default function DailyPage() {
   const [mounted, setMounted] = useState(false);
   const [dateInfo, setDateInfo] = useState({
-    dateStr: "오늘의 운세",
+    dateStr: "오늘의 해석",
     dailyPillar: {
       gan: "기",
       ji: "해",

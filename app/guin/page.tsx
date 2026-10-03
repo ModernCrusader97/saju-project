@@ -63,14 +63,14 @@ export default function GuinPage() {
               <div className="absolute -top-10 -right-10 w-44 h-44 rounded-full bg-doryeong-gold/20 blur-2xl" />
               <div className="relative z-10">
                 <span className="inline-flex rounded-full bg-doryeong-gold px-3 py-1 text-xs font-bold text-doryeong-navy mb-3">
-                  ✨ 3D 관계 은하 · 완전 무료
+                  RELATIONSHIP ATLAS
                 </span>
                 <h2 className="font-serif text-2xl font-bold leading-tight">
-                  도령의 우리은하 귀인 지도
+                  우리의 우주
                 </h2>
                 <p className="mt-2 text-xs text-white/80 leading-relaxed font-serif">
                   나의 3D 중심 행성을 기준으로 인연들의 행성이 나선팔을 따라 부유하는 4대 나선은하가 펼쳐집니다.
-                  지도를 열고 친구들에게 공유하여 나만의 3D 우리은하 인연망을 완성해보세요.
+                  내 행성과 함께 놓을 사람들을 추가해 관계 지도를 둘러보세요. 현재는 본인만 볼 수 있습니다.
                 </p>
               </div>
             </div>
@@ -87,7 +87,7 @@ export default function GuinPage() {
               <div className="flex items-start gap-2">
                 <Share2 className="h-4 w-4 text-doryeong-gold shrink-0 mt-0.5" />
                 <p>
-                  <strong className="text-doryeong-navy">친구 초대하기: </strong>
+                  <strong className="text-doryeong-navy">관계 더하기: </strong>
                   생성된 지도의 링크를 단톡방이나 인스타 스토리에 공유해보세요. 친구가 생일을 입력하면 내 은하에 친구의 행성이 채워집니다.
                 </p>
               </div>

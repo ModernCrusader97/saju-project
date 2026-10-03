@@ -18,7 +18,7 @@ const CATEGORY_MAP: Record<string, { label: string; badge: string }> = {
   career: { label: "직업·재물운", badge: "bg-emerald-100 text-emerald-800" },
   year: { label: "한 해 운세", badge: "bg-blue-100 text-blue-800" },
   daewun: { label: "10년 대운", badge: "bg-indigo-100 text-indigo-800" },
-  consult: { label: "도령 상담", badge: "bg-purple-100 text-purple-800" },
+  consult: { label: "풀이 대화", badge: "bg-purple-100 text-purple-800" },
 };
 
 function SavedContent() {
@@ -85,15 +85,15 @@ function SavedContent() {
             <div className="flex items-center justify-between mb-2">
               <div className="flex items-center gap-2 text-doryeong-gold text-xs font-bold">
                 <ScrollText className="h-4 w-4" />
-                <span>도령의 사주 서책</span>
+                <span>MY ARCHIVE</span>
               </div>
               <span className="text-xs bg-white/15 px-2.5 py-0.5 rounded-full font-bold">
                 총 {fortunes.length}권의 기록
               </span>
             </div>
-            <h2 className="font-serif text-2xl font-bold">사주 풀이 보관함</h2>
+            <h2 className="font-serif text-2xl font-bold">나의 기록</h2>
             <p className="mt-1 text-xs text-white/70">
-              그동안 도령 청명이가 읽어드린 맞춤 비유와 조언을 다시 살펴보세요.
+              저장한 사주 풀이와 대화를 다시 살펴보세요.
             </p>
           </div>
 
@@ -153,7 +153,7 @@ function SavedContent() {
                 아직 보관된 사주 풀이가 없습니다.
               </p>
               <p className="text-xs text-doryeong-textMuted">
-                홈에서 도령 청명에게 내 사주나 연애운을 물어보세요.
+                나의 우주에서 궁금한 주제로 풀이를 남겨보세요.
               </p>
               <Link
                 href="/"

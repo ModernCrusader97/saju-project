@@ -117,7 +117,7 @@ export default function SajuInputModal({
         <div className="flex items-center justify-between px-6 pt-6 pb-3 border-b border-doryeong-border/60">
           <div>
             <span className="text-[11px] font-bold text-doryeong-gold tracking-widest uppercase">
-              사주도령의 문답
+              나의 사주 정보
             </span>
             <h2 className="text-xl font-serif font-bold text-doryeong-navy">
               {categoryTitle}
@@ -143,7 +143,7 @@ export default function SajuInputModal({
             <h3 className="font-serif text-lg font-bold text-doryeong-navy">
               {loadingStep === 1
                 ? "사주 4주와 오행을 정밀하게 계산하고 있습니다..."
-                : "도령 청명이가 사주 책장을 넘겨 비유로 풀어내는 중입니다..."}
+                : "입력한 사주 구성으로 해석을 정리하고 있어요."}
             </h3>
             <p className="mt-2 text-xs text-doryeong-textMuted">
               조금만 기다려주시면 마음에 남는 풀이를 전해드립니다.
@@ -312,7 +312,7 @@ export default function SajuInputModal({
             {/* 맞춤 질문 (선택) */}
             <div>
               <label className="block text-xs font-bold text-doryeong-textDark mb-1">
-                도령에게 특별히 묻고 싶은 말 (선택)
+                함께 살펴보고 싶은 이야기 (선택)
               </label>
               <textarea
                 rows={2}
@@ -330,10 +330,10 @@ export default function SajuInputModal({
                 className="w-full py-4 rounded-2xl bg-doryeong-navy text-white font-serif font-bold text-base shadow-lg hover:bg-doryeong-navyDark active:scale-[0.98] transition-all flex items-center justify-center gap-2"
               >
                 <Sparkles className="h-4 w-4 text-doryeong-gold" />
-                <span>도령에게 사주 풀이 청하기</span>
+                <span>나의 이야기 보기</span>
               </button>
               <p className="text-[11px] text-center text-doryeong-textMuted mt-2">
-                사주도령은 겁을 주지 않고, 따뜻한 비유와 삶의 방향을 전합니다.
+                결과는 자기 이해를 위한 참고이며, 미래를 확정하지 않습니다.
               </p>
             </div>
           </form>

@@ -134,10 +134,10 @@ export default function PlanetStudioPage() {
         <div>
           <div className="flex items-center gap-1.5 text-xs font-bold text-doryeong-gold mb-1">
             <Sparkles className="h-4 w-4" />
-            <span>확정사항 기준서 v0.1 프로토타입</span>
+            <span>MY ELEMENTAL WORLD</span>
           </div>
           <h2 className="font-serif text-2xl font-bold text-doryeong-navy">
-            3D 사주 행성 · 분신
+            같은 나, 두 가지 모습
           </h2>
           <p className="text-xs text-doryeong-textMuted mt-1 leading-relaxed">
             {viewMode === "planet" ? "일주 70% · 월주 30%의 행성, 시주 위성, 연주 소행성대입니다." : "일간으로 이루어진 분신에 일지 동물 특징을 더하고, 월주 펫을 옆 바닥에 둡니다."}
@@ -159,27 +159,27 @@ export default function PlanetStudioPage() {
                       : "text-doryeong-textMuted hover:text-doryeong-navy"
                   }`}
                 >
-                  <span>🪐 3D 사주 행성</span>
+                  <span>행성</span>
                 </button>
                 <button
                   onClick={() => setViewMode("spirit")}
                   className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 ${
                     viewMode === "spirit"
-                      ? "bg-doryeong-gold text-doryeong-navy shadow-sm"
+                      ? "bg-doryeong-navy text-white shadow-sm"
                       : "text-doryeong-textMuted hover:text-doryeong-navy"
                   }`}
                 >
                   <Sparkles className="h-3.5 w-3.5 text-doryeong-gold" />
-                  <span>✨ 3D 엘리멘탈 캐릭터</span>
+                  <span>나의 분신</span>
                 </button>
               </div>
 
               <button
                 onClick={() => setShowPassportModal(true)}
-                className="px-3 py-1.5 rounded-xl bg-gradient-to-r from-amber-500 to-yellow-500 text-doryeong-navy font-bold text-xs flex items-center gap-1 shadow-sm hover:brightness-105 active:scale-95 transition-all"
+                className="px-3 py-1.5 rounded-xl bg-[#d5ef9e] text-doryeong-navy font-bold text-xs flex items-center gap-1 shadow-sm hover:brightness-105 active:scale-95 transition-all"
               >
                 <Download className="h-3.5 w-3.5" />
-                <span>우주 여권 발급 (9:16)</span>
+                <span>이미지로 간직하기</span>
               </button>
             </div>
 
@@ -213,7 +213,7 @@ export default function PlanetStudioPage() {
                 <div className="flex items-center justify-between mb-2">
                   <span className="font-serif text-xs font-bold text-doryeong-navy flex items-center gap-1.5">
                     <Compass className="h-4 w-4 text-doryeong-gold" />
-                    70:30 UV 표면 분할 마스크
+                    행성의 표면 무늬
                   </span>
                   <span className="text-[10px] text-doryeong-textSubtle">
                     일주 70% : 월주 30% 고정
@@ -259,7 +259,7 @@ export default function PlanetStudioPage() {
                 <div className="p-3.5 rounded-2xl bg-doryeong-ivory border border-doryeong-border flex items-center justify-between">
                   <div>
                     <span className="text-[10.5px] font-bold text-doryeong-gold block">
-                      {viewMode === "planet" ? "SLOT-D · 행성 주 표면 (70%)" : "본체 · 일간 재질 + 일지 특징"}
+                      {viewMode === "planet" ? "행성의 바탕 · 70%" : "본체 · 일간 재질 + 일지 특징"}
                     </span>
                     <span className="text-xs font-semibold text-doryeong-navy">
                       일주: {pDay.themeName}
@@ -433,7 +433,7 @@ export default function PlanetStudioPage() {
         </div>
       </div>
 
-      {/* [Step 1] "당신의 영혼이 빚어낸 3D 사주 행성이 생성되었습니다" 인트로 모달 */}
+      {/* [Step 1] "사주로 표현한 나의 행성을 만나보세요" 인트로 모달 */}
       {showIntroOverlay && viewMode === "planet" && (
         <div className="fixed inset-0 z-50 bg-black/90 backdrop-blur-2xl flex items-center justify-center p-4 animate-in fade-in zoom-in-95">
           <div className="relative w-full max-w-lg bg-gradient-to-b from-[#0F172A] via-[#1E293B] to-[#0A0F1D] border-2 border-doryeong-gold/60 rounded-[36px] p-7 text-white text-center shadow-[0_0_60px_rgba(230,200,117,0.3)] space-y-6">
@@ -444,7 +444,7 @@ export default function PlanetStudioPage() {
 
             <div className="space-y-2">
               <h3 className="font-serif text-2xl md:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-yellow-300 to-amber-100 leading-tight">
-                "당신의 영혼이 빚어낸 3D 사주 행성이 생성되었습니다"
+                "사주로 표현한 나의 행성을 만나보세요"
               </h3>
               <p className="text-xs text-slate-300 leading-relaxed max-w-sm mx-auto">
                 [{dayKey}] 일간의 영혼을 품은 3D 입체 행성과 오행 수호 정령이 은하계에 탄생했습니다.
