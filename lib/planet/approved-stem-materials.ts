@@ -22,7 +22,7 @@ export interface StemMaterialHandle {
   dispose(): void;
 }
 
-const VERSION = 'stem-approved-v2-r186-2-feedback';
+const VERSION = 'stem-approved-v2-r186-3-continuous-vines';
 
 /** Readable botanical ink, generated once per porcelain material with no DOM/canvas. */
 function cobaltBotanicalTexture(size: number): THREE.DataTexture {
@@ -108,6 +108,7 @@ const COMMON = /* glsl */`
 varying vec3 vStemPosition;
 varying vec3 vStemObjectNormal;
 varying vec3 vStemBrushAxis;
+varying vec3 vStemBrushSide;
 uniform float uStemTime;
 uniform sampler2D uStemBotanical;
 float stHash(vec3 p) { p=fract(p*.1031); p+=dot(p,p.yzx+33.33); return fract((p.x+p.y)*p.z); }
@@ -134,9 +135,10 @@ float stBotanical(vec3 p,vec3 n) {
       + texture2D(uStemBotanical,p.xz*.57+vec2(.08,.32)).r*w.y
       + texture2D(uStemBotanical,p.xy*.57+vec2(.11,.28)).r*w.z;
 }
-struct StemSurface { vec3 color; float roughness; float height; vec3 emission; };
+float stBrushAngle(vec3 p) { return .60*sin(p.x*1.7+p.z*1.3)+.35*sin(p.y*1.5-p.z*1.1); }
+struct StemSurface { vec3 color; float roughness; float height; vec3 emission; float foam; };
 StemSurface stSurface(vec3 p,vec3 n) {
- StemSurface s; s.color=vec3(.5);s.roughness=.5;s.height=0.;s.emission=vec3(0);
+ StemSurface s; s.color=vec3(.5);s.roughness=.5;s.height=0.;s.emission=vec3(0);s.foam=0.;
  #if STEM_KIND == 0
   vec3 warp=vec3(stFbm(p*2.3),stFbm(p*2.3+17.),stFbm(p*2.3-11.));
   vec3 q=p*vec3(8.8,2.1,8.8)+warp*1.35;
@@ -150,36 +152,38 @@ StemSurface stSurface(vec3 p,vec3 n) {
   s.roughness=.86+.09*fissure;
   s.height=.066*smoothstep(.018,.17,cell.y)+.022*fibre+.010*flakes;
  #elif STEM_KIND == 1
-  // The whole surface is packed stem bundles, not green skin below a few decorative lines.
-  float drift=.055*sin(p.y*2.2+uStemTime*.48);
+  // Continuous live tissue fills the weave: no clipped profiles or black checker gaps.
+  float drift=.045*sin(p.y*2.2+uStemTime*.48);
   float organic=stFbm(p*vec3(2.2,1.1,2.2));
-  float phaseA=(p.x*.82+p.z*.56)*11.4+p.y*3.5+2.3*sin(p.y*2.2+organic)+drift;
-  float phaseB=(p.x*.56-p.z*.82)*9.1-p.y*4.3+1.9*sin(p.y*2.8+organic*2.);
-  float widthA=.72+.16*stNoise(p*3.+5.);
-  float widthB=.68+.19*stNoise(p*3.-8.);
-  float a=abs(sin(phaseA))/widthA,b=abs(sin(phaseB))/widthB;
-  float stemA=sqrt(max(0.,1.-a*a)),stemB=sqrt(max(0.,1.-b*b));
-  float weave=smoothstep(-.18,.18,sin(p.y*4.2+p.x*3.3-p.z*2.7));
+  float warpA=stFbm(p*2.7+7.),warpB=stFbm(p*2.3-11.);
+  float phaseA=(p.x*.82+p.z*.56)*10.2+p.y*3.5+2.8*sin(p.y*2.2+organic)+warpA*3.+drift;
+  float phaseB=(p.x*.56-p.z*.82)*8.6-p.y*4.3+2.4*sin(p.y*2.8+organic*2.)+warpB*3.4;
+  // Smooth rounded ridges have finite slopes at their feet, unlike sqrt(max(0,...)).
+  float stemA=pow(.5+.5*sin(phaseA),1.55);
+  float stemB=pow(.5+.5*sin(phaseB),1.65);
+  float weave=smoothstep(.28,.69,stNoise(p*2.1+3.));
   float upper=mix(stemA,stemB,weave),lower=mix(stemB,stemA,weave);
-  float body=max(upper,lower*.88);
-  float fibre=.5+.5*sin(mix(phaseA,phaseB,weave)*5.5+organic*7.);
-  vec3 vineColor=mix(vec3(.042,.14,.012),vec3(.15,.255,.028),organic*.55+body*.45);
-  s.color=mix(vec3(.006,.022,.005),vineColor,smoothstep(.0,.56,body));
-  s.color*=.90+.10*fibre;
-  s.roughness=mix(.58,.30,body);
-  s.height=max(.026*lower,.057*upper+.010*lower)+.002*fibre*body;
+  float body=.30+.70*max(upper,lower*.88);
+  float fibre=.5+.5*sin(phaseA*3.1+phaseB*.42+organic*7.);
+  vec3 substrate=mix(vec3(.054,.084,.021),vec3(.071,.112,.025),organic);
+  vec3 vineColor=mix(vec3(.075,.18,.017),vec3(.15,.265,.038),organic*.55+body*.45);
+  s.color=mix(substrate,vineColor,smoothstep(.30,.88,body));
+  s.color*=.94+.06*fibre;
+  s.roughness=mix(.52,.36,body);
+  s.height=.028*upper+.018*lower+.007*upper*lower+.0008*fibre;
  #elif STEM_KIND == 2
-  vec3 q=p*vec3(3.4,2.,3.4)-vec3(0,uStemTime*.64,0);
-  float flow=stFbm(q+vec3(stFbm(q+4.),0,stFbm(q-3.))*3.1);
-  float stream=sin(p.x*7.2+p.z*6.1+flow*19.-uStemTime*1.8);
-  float tongues=smoothstep(.02,.82,stream);
-  float core=pow(max(0.,stream),10.)*smoothstep(.47,.72,flow);
-  float blue=pow(max(0.,sin(p.x*5.-p.z*9.+flow*14.+uStemTime)),18.)*.18;
-  s.color=mix(vec3(.27,.015,.001),vec3(.58,.14,.007),tongues);
-  // Orange negative space keeps the handful of hot cores readable under tone mapping.
-  s.emission=mix(vec3(.42,.022,.001),vec3(2.15,.65,.018),tongues);
-  s.emission+=vec3(1.5,1.4,.72)*core+vec3(.018,.18,.7)*blue;
-  s.roughness=.48;s.height=.008*flow;
+  vec3 q=p*vec3(3.2,1.8,3.2)-vec3(0,uStemTime*.58,0);
+  vec3 warp=vec3(stFbm(q+4.),stFbm(q*.8+17.),stFbm(q-3.));
+  float flow=stFbm(q+warp*2.6);
+  float heat=clamp((flow-.20)*1.8,0.,1.);
+  float stream=.5+.5*sin(p.x*5.1+p.z*4.7+flow*13.-uStemTime*1.35);
+  float fineHeat=pow(stream,3.)*.16;
+  // Continuously graded orange heat supports the external flame particles;
+  // no binary red islands/yellow crust or persistent white-hot posterized patches.
+  s.color=mix(vec3(.18,.025,.002),vec3(.35,.105,.008),heat);
+  s.emission=mix(vec3(.78,.10,.004),vec3(2.12,.73,.050),heat);
+  s.emission+=vec3(.85,.38,.024)*fineHeat;
+  s.roughness=.54;s.height=.0035*flow;
  #elif STEM_KIND == 3
   vec3 warp=vec3(stFbm(p*2.4),stFbm(p*2.4+18.),stFbm(p*2.4-12.));
   vec3 q=p*vec3(5.6,7.1,5.9)+warp*2.1;
@@ -219,11 +223,16 @@ StemSurface stSurface(vec3 p,vec3 n) {
   s.roughness=.135+.025*ink;
   s.height=.00016*stDetail(p*60.)-.00025*ink;
  #elif STEM_KIND == 6
-  float brushed=stNoise(p*vec3(2.5,340.,2.5));
-  float fine=sin(p.y*1050.+stNoise(p*vec3(7.,1.,7.))*3.);
-  s.color=vec3(.57,.59,.63)*(.94+.06*brushed);
-  s.roughness=.295+.07*brushed;
-  s.height=.00075*brushed+.00012*fine;
+  float angle=stBrushAngle(p);
+  float brushing=p.y*cos(angle)+p.x*sin(angle)+.10*sin(p.z*2.1+p.x*.7);
+  float brushed=stDetail(vec3(p.x*2.4,brushing*145.,p.z*2.4));
+  float crossPolish=stDetail(vec3((p.x*.71+p.y*.31+p.z*.47)*117.,p.y*2.8,p.z*2.8));
+  float finishPatch=stNoise(p*1.6+7.);
+  float finish=mix(brushed,crossPolish,.10+.12*finishPatch);
+  // Static, clean machining variation. No rust, dents, dirty color or time drift.
+  s.color=vec3(.57,.59,.63)*(.96+.035*finish);
+  s.roughness=.285+.075*finish+.020*finishPatch;
+  s.height=.00070*brushed+.00017*crossPolish;
  #elif STEM_KIND == 7
   float ripple=sin(p.x*3.4+p.y*2.1+uStemTime*.31)*cos(p.z*3.8-p.y*2.3-uStemTime*.22);
   s.color=vec3(.94,.95,.97);s.roughness=.052;
@@ -233,9 +242,16 @@ StemSurface stSurface(vec3 p,vec3 n) {
   float w2=sin(p.x*-3.2+p.y*6.2+p.z*3.6+uStemTime*.96);
   float w3=sin(p.x*8.2-p.y*3.8+p.z*5.1-uStemTime*1.9);
   float crest=.5+.5*w1*w2;
-  s.color=mix(vec3(.016,.18,.32),vec3(.035,.28,.43),crest*.55);
-  s.roughness=.042+.026*crest;
-  s.height=.092*w1+.057*w2+.026*w3;
+  vec3 advected=p*vec3(9.,12.,9.)+vec3(uStemTime*.7,uStemTime*3.8,-uStemTime*1.1);
+  float froth=stFbm(advected+stNoise(p*5.)*1.4);
+  float convergence=smoothstep(.34,.87,w1)*smoothstep(-.10,.68,w2*.72+w3*.28);
+  float crestLine=(1.-smoothstep(.035,.18,abs(w2-.72)))*smoothstep(.12,.77,w1);
+  float foam=clamp((convergence*.85+crestLine*.60)*smoothstep(.27,.58,froth),0.,.95);
+  s.foam=foam;
+  vec3 blue=mix(vec3(.070,.37,.55),vec3(.115,.50,.68),crest*.65);
+  s.color=mix(blue,vec3(.86,.91,.90),foam);
+  s.roughness=mix(.042+.020*crest,.57,foam);
+  s.height=.092*w1+.057*w2+.026*w3+.004*foam;
  #elif STEM_KIND == 9
   // Raised smooth spherical-cap droplets, independent of the much flatter underlying liquid.
   vec3 cellP=p*13.;vec3 ip=floor(cellP),fp=fract(cellP)-.5;
@@ -277,11 +293,11 @@ export function createStemMaterial(stem: Stem, quality: StemQuality = 'high'): S
     roughness:metallic?(index===6?.33:.052):water?.06:.5,
     clearcoat:index===5?.85:index===1?.28:0,
     clearcoatRoughness:index===5?.07:.16,
-    transmission:water?(index===8?.90:.98):0,
-    thickness:index===8?.95:index===9?.30:0,
+    transmission:water?(index===8?.85:.98):0,
+    thickness:index===8?.62:index===9?.30:0,
     ior:water?1.333:index===5?1.50:1.46,
-    attenuationColor:water?(index===8?new THREE.Color('#0c709f'):new THREE.Color('#d1f7ee')):new THREE.Color(0xffffff),
-    attenuationDistance:index===8?.95:index===9?6:Infinity,
+    attenuationColor:water?(index===8?new THREE.Color('#50b8db'):new THREE.Color('#d1f7ee')):new THREE.Color(0xffffff),
+    attenuationDistance:index===8?2.8:index===9?6:Infinity,
     anisotropy:index===6?.72:0,
     anisotropyRotation:0,
     envMapIntensity:1,
@@ -295,14 +311,20 @@ export function createStemMaterial(stem: Stem, quality: StemQuality = 'high'): S
   material.onBeforeCompile=(shader)=>{
     shader.uniforms.uStemTime=time;
     shader.uniforms.uStemBotanical={value:botanical};
-    shader.vertexShader=replaceRequired(shader.vertexShader,'#include <common>',`#include <common>\nvarying vec3 vStemPosition;\nvarying vec3 vStemObjectNormal;\nvarying vec3 vStemBrushAxis;`);
-    shader.vertexShader=replaceRequired(shader.vertexShader,'#include <begin_vertex>',`#include <begin_vertex>\nvStemPosition=position;\nvStemObjectNormal=normal;\nvStemBrushAxis=normalize(normalMatrix*vec3(0.,1.,0.));`);
+    shader.vertexShader=replaceRequired(shader.vertexShader,'#include <common>',`#include <common>\nvarying vec3 vStemPosition;\nvarying vec3 vStemObjectNormal;\nvarying vec3 vStemBrushAxis;\nvarying vec3 vStemBrushSide;`);
+    shader.vertexShader=replaceRequired(shader.vertexShader,'#include <begin_vertex>',`#include <begin_vertex>\nvStemPosition=position;\nvStemObjectNormal=normal;\nvStemBrushAxis=normalize(normalMatrix*vec3(0.,1.,0.));\nvStemBrushSide=normalize(normalMatrix*vec3(1.,0.,0.));`);
     shader.fragmentShader=replaceRequired(shader.fragmentShader,'#include <common>',`#include <common>\n${COMMON}`);
     shader.fragmentShader=replaceRequired(shader.fragmentShader,'#include <color_fragment>',`#include <color_fragment>\nStemSurface stemSurface=stSurface(vStemPosition,normalize(vStemObjectNormal));\ndiffuseColor.rgb*=stemSurface.color;`);
     shader.fragmentShader=replaceRequired(shader.fragmentShader,'#include <roughnessmap_fragment>',`#include <roughnessmap_fragment>\nroughnessFactor=stemSurface.roughness;`);
-    shader.fragmentShader=replaceRequired(shader.fragmentShader,'#include <normal_fragment_maps>',`#include <normal_fragment_maps>\nnormal=stPerturb(normal,stemSurface.height);\n#ifdef USE_ANISOTROPY\n vec3 brush=vStemBrushAxis-normal*dot(vStemBrushAxis,normal);\n if(dot(brush,brush)<.00001)brush=cross(normal,vec3(1.,.01,.01));\n tbn=mat3(normalize(brush),normalize(cross(normal,brush)),normal);\n#endif`);
+    shader.fragmentShader=replaceRequired(shader.fragmentShader,'#include <normal_fragment_maps>',`#include <normal_fragment_maps>\nnormal=stPerturb(normal,stemSurface.height);\n#ifdef USE_ANISOTROPY\n float brushAngle=stBrushAngle(vStemPosition);\n vec3 brushDirection=vStemBrushAxis*cos(brushAngle)+vStemBrushSide*sin(brushAngle);\n vec3 brush=brushDirection-normal*dot(brushDirection,normal);\n if(dot(brush,brush)<.00001)brush=cross(normal,vec3(1.,.01,.01));\n tbn=mat3(normalize(brush),normalize(cross(normal,brush)),normal);\n#endif`);
     shader.fragmentShader=replaceRequired(shader.fragmentShader,'#include <clearcoat_normal_fragment_maps>',`#include <clearcoat_normal_fragment_maps>\n#ifdef USE_CLEARCOAT\nclearcoatNormal=normal;\n#endif`);
     shader.fragmentShader=replaceRequired(shader.fragmentShader,'#include <emissivemap_fragment>',`#include <emissivemap_fragment>\ntotalEmissiveRadiance+=stemSurface.emission;`);
+    if(index===8) {
+      const transmissionChunk=replaceRequired(THREE.ShaderChunk.transmission_fragment,
+        'material.transmission = transmission;',
+        'material.transmission = transmission * (1.0 - stemSurface.foam * .96);');
+      shader.fragmentShader=replaceRequired(shader.fragmentShader,'#include <transmission_fragment>',transmissionChunk);
+    }
   };
   let disposed=false;
   const release=()=>{if(disposed)return;disposed=true;botanical?.dispose();material.onBeforeCompile=()=>{};material.removeEventListener('dispose',release);};
