@@ -9,7 +9,7 @@ import FortuneCard from "@/components/FortuneCard";
 import { FortuneResult } from "@/lib/saju/types";
 import { ScrollText, ChevronRight, ArrowLeft, Search, Sparkles } from "lucide-react";
 import { useSearchParams } from "next/navigation";
-import Link from "next/link";
+
 
 const CATEGORY_MAP: Record<string, { label: string; badge: string }> = {
   overall: { label: "종합 사주", badge: "bg-amber-100 text-amber-800" },
@@ -155,12 +155,12 @@ function SavedContent() {
               <p className="text-xs text-doryeong-textMuted">
                 나의 우주에서 궁금한 주제로 풀이를 남겨보세요.
               </p>
-              <Link prefetch={false}
+              <a
                 href="/"
                 className="inline-block mt-3 px-5 py-2.5 rounded-xl bg-doryeong-gold text-doryeong-navy text-xs font-bold shadow-md hover:brightness-105 transition-all"
               >
                 사주 풀이 보러가기
-              </Link>
+              </a>
             </div>
           ) : filteredFortunes.length === 0 ? (
             <div className="py-12 text-center rounded-[20px] bg-white/70 border border-doryeong-border p-5 text-xs text-doryeong-textMuted">

@@ -5,7 +5,7 @@ import { readApiResponse } from "@/lib/http-client";
 
 import React, { useState, useEffect } from "react";
 import { X, Sparkles, Loader2 } from "lucide-react";
-import { useRouter } from "next/navigation";
+
 import { HOUR_PERIODS } from "@/lib/saju/input";
 import { FortuneResult } from "@/lib/saju/types";
 
@@ -24,7 +24,7 @@ export default function SajuInputModal({
   categoryTitle = "내 사주 풀이",
   onSuccess,
 }: SajuInputModalProps) {
-  const router = useRouter();
+  
   const [name, setName] = useState("");
   const [gender, setGender] = useState<"male" | "female">("male");
   const [calendarType, setCalendarType] = useState<"solar" | "lunar" | "leap-lunar">("solar");
@@ -89,7 +89,7 @@ export default function SajuInputModal({
         if (onSuccess) {
           onSuccess(data.fortune);
         } else {
-          router.push(`/saved?id=${data.fortune.id}`);
+          window.location.assign(`/saved?id=${data.fortune.id}`);
         }
         onClose();
       } else {

@@ -4,12 +4,12 @@ import { readApiResponse } from "@/lib/http-client";
 
 
 import React, { useState } from "react";
-import { useRouter } from "next/navigation";
+
 import Header from "@/components/Header";
 import { Compass, Sparkles, Share2, Users, ArrowRight } from "lucide-react";
 
 export default function GuinPage() {
-  const router = useRouter();
+  
   const [name, setName] = useState("");
   const [birthYear, setBirthYear] = useState("1996");
   const [birthMonth, setBirthMonth] = useState("7");
@@ -40,7 +40,7 @@ export default function GuinPage() {
       });
       const data = await readApiResponse(res);
       if (data.success && data.guinMap) {
-        router.push(`/guin/${data.guinMap.id}`);
+        window.location.assign(`/guin/${data.guinMap.id}`);
       } else {
         alert(data.error || "지도 생성 실패");
       }

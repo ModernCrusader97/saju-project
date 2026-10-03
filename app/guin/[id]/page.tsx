@@ -19,7 +19,7 @@ import {
   Download,
   Flame,
 } from "lucide-react";
-import Link from "next/link";
+
 import { useParams } from "next/navigation";
 import GalaxyCanvas from "@/components/planet/GalaxyCanvas";
 import { Sliders, PlusCircle } from "lucide-react";
@@ -169,9 +169,9 @@ export default function GuinMapDetailPage() {
     return (
       <div className="min-h-screen p-6 text-center">
         <p className="text-sm text-doryeong-textMuted">{loadError || "지도를 찾을 수 없습니다."}</p>
-        <Link prefetch={false} href="/guin" className="mt-4 inline-block text-xs text-doryeong-navy underline">
+        <a href="/guin" className="mt-4 inline-block text-xs text-doryeong-navy underline">
           새 은하 만들기
-        </Link>
+        </a>
       </div>
     );
   }
@@ -182,13 +182,13 @@ export default function GuinMapDetailPage() {
 
       <div className="px-5 pt-2 space-y-6">
         <div className="flex items-center justify-between">
-          <Link prefetch={false}
+          <a
             href="/guin"
             className="flex items-center gap-1 text-xs text-doryeong-textMuted hover:text-doryeong-navy font-semibold"
           >
             <ArrowLeft className="h-3.5 w-3.5" />
             <span>지도 목록</span>
-          </Link>
+          </a>
           <span className="text-[11px] text-doryeong-gold font-bold">
             은하 속 인연: {mapData.guins.length}개 행성
           </span>
