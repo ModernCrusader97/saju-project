@@ -1,3 +1,5 @@
+export type SurfaceFamily = "forest" | "lava" | "earth" | "metal" | "water";
+
 export interface GanziThemePreset {
   key: string;             // 예: "갑자", "을축"
   hanja: string;           // 예: "甲子", "乙丑"
@@ -6,6 +8,7 @@ export interface GanziThemePreset {
   stem: string;            // 천간
   branch: string;          // 지지
   surface: {
+    family?: SurfaceFamily;   // 살아 있는 표면/지형/VFX의 공통 재질 분류
     primaryColor: string;    // 주 색상
     secondaryColor: string;  // 보조/악센트 색상
     roughness: number;       // 거칠기 (0.0 ~ 1.0)
@@ -88,24 +91,32 @@ export const SIXTY_GANZI_KEYS: Array<{ key: string; hanja: string; stem: string;
 
 // 천간별 기본 색조 및 기본 물성 프로파일
 const STEM_BASE_PROFILES: Record<string, { primary: string; secondary: string; roughness: number; metalness: number; pattern: GanziThemePreset["surface"]["patternType"] }> = {
-  갑: { primary: "#174E42", secondary: "#9CCB83", roughness: 0.85, metalness: 0.05, pattern: "veins" },
-  을: { primary: "#1C7769", secondary: "#C6E887", roughness: 0.75, metalness: 0.05, pattern: "veins" },
-  병: { primary: "#A82E20", secondary: "#FFC76B", roughness: 0.45, metalness: 0.20, pattern: "crater" },
-  정: { primary: "#721E43", secondary: "#F89E88", roughness: 0.55, metalness: 0.15, pattern: "crater" },
-  무: { primary: "#9D6338", secondary: "#EDD09C", roughness: 0.90, metalness: 0.08, pattern: "strata" },
-  기: { primary: "#665342", secondary: "#DBC57D", roughness: 0.80, metalness: 0.05, pattern: "granite" },
-  경: { primary: "#465D78", secondary: "#DAE8F3", roughness: 0.35, metalness: 0.75, pattern: "crystals" },
-  신: { primary: "#6C9AA8", secondary: "#F0FCFF", roughness: 0.20, metalness: 0.85, pattern: "crystals" },
-  임: { primary: "#173873", secondary: "#78AEEE", roughness: 0.30, metalness: 0.25, pattern: "waves" },
-  계: { primary: "#176D85", secondary: "#B6EFDF", roughness: 0.40, metalness: 0.15, pattern: "waves" },
+  갑: { primary: "#183A20", secondary: "#9ABB54", roughness: 0.91, metalness: 0.0, pattern: "veins" },
+  을: { primary: "#22553B", secondary: "#C4D57C", roughness: 0.83, metalness: 0.0, pattern: "veins" },
+  병: { primary: "#341713", secondary: "#FF9D27", roughness: 0.76, metalness: 0.0, pattern: "crater" },
+  정: { primary: "#492020", secondary: "#FFBD66", roughness: 0.69, metalness: 0.0, pattern: "crater" },
+  무: { primary: "#9D6338", secondary: "#EDD09C", roughness: 0.94, metalness: 0.0, pattern: "strata" },
+  기: { primary: "#784C36", secondary: "#DCA978", roughness: 0.82, metalness: 0.0, pattern: "granite" },
+  경: { primary: "#87929E", secondary: "#DEE5EE", roughness: 0.23, metalness: 1.0, pattern: "crystals" },
+  신: { primary: "#ABB5BC", secondary: "#F1F5F5", roughness: 0.09, metalness: 1.0, pattern: "crystals" },
+  임: { primary: "#073E66", secondary: "#25A0B4", roughness: 0.15, metalness: 0.0, pattern: "waves" },
+  계: { primary: "#096B77", secondary: "#77D1C3", roughness: 0.12, metalness: 0.0, pattern: "waves" },
 };
 
 // 10천간이 시각적 바탕, 지지가 색감/지형/물성을 변주합니다. 모든 기둥이 공유합니다.
 export const STEM_VISUAL_NAMES: Record<string, string> = {
-  갑: "비취 대륙", 을: "청록 덩굴", 병: "태양 용암", 정: "홍옥 불씨",
-  무: "황금 사암", 기: "호박 퇴적층", 경: "백금 단층", 신: "서리 결정",
+  갑: "울창한 수림", 을: "이끼 숲", 병: "끓는 용암", 정: "화산 불씨",
+  무: "황금 사구", 기: "적토 도자", 경: "티타늄 단층", 신: "수은 물결",
   임: "남빛 소용돌이", 계: "청옥 물결",
 };
+
+export function getSurfaceFamily(preset: Pick<GanziThemePreset, "stem">): SurfaceFamily {
+  if (preset.stem === "갑" || preset.stem === "을") return "forest";
+  if (preset.stem === "병" || preset.stem === "정") return "lava";
+  if (preset.stem === "무" || preset.stem === "기") return "earth";
+  if (preset.stem === "경" || preset.stem === "신") return "metal";
+  return "water";
+}
 
 // 지지별 질감 변조 계수 (지지의 한난조습 및 밀도 반영)
 const BRANCH_MODIFIERS: Record<string, { roughMod: number; metalMod: number; bumpScale: number; emissive?: string }> = {
@@ -130,8 +141,12 @@ SIXTY_GANZI_KEYS.forEach(({ key, hanja, stem, branch }) => {
   const base = STEM_BASE_PROFILES[stem] || STEM_BASE_PROFILES["갑"];
   const mod = BRANCH_MODIFIERS[branch] || BRANCH_MODIFIERS["자"];
 
-  const roughness = Math.max(0.1, Math.min(0.95, base.roughness + mod.roughMod));
-  const metalness = Math.max(0.0, Math.min(0.95, base.metalness + mod.metalMod));
+  const family = getSurfaceFamily({ stem });
+  // A branch varies its material; it never turns water/soil into a metal.
+  const roughness = family === "metal" ? Math.max(.07, base.roughness + mod.roughMod * .15)
+    : family === "water" ? Math.max(.08, base.roughness + mod.roughMod * .1)
+    : Math.max(.5, Math.min(.98, base.roughness + mod.roughMod * .25));
+  const metalness = family === "metal" ? 1 : 0;
 
   THEME_PRESET_MAP[key] = {
     key,
@@ -141,13 +156,14 @@ SIXTY_GANZI_KEYS.forEach(({ key, hanja, stem, branch }) => {
     stem,
     branch,
     surface: {
+      family,
       primaryColor: base.primary,
       secondaryColor: base.secondary,
       roughness: Number(roughness.toFixed(2)),
       metalness: Number(metalness.toFixed(2)),
       bumpScale: mod.bumpScale,
-      emissive: mod.emissive,
-      emissiveIntensity: mod.emissive ? 0.35 : 0.0,
+      emissive: family === "lava" ? base.secondary : undefined,
+      emissiveIntensity: family === "lava" ? 0.8 : 0.0,
       patternType: base.pattern,
     },
   };

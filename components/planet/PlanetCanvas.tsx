@@ -2,6 +2,9 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
+import { MAX_LIVING_RADIAL_RELIEF } from "@/lib/planet/living-surface-shader";
+import { RoomEnvironment } from "three/addons/environments/RoomEnvironment.js";
+import { createSurfaceEffects, animateSurfaceEffects, disposeSurfaceEffects } from "@/lib/planet/surface-effects";
 import { getThemePreset } from "@/lib/planet/theme-library";
 import { createPlanetMaterial, animateSurface, resetSurface } from "@/lib/planet/surface-material";
 import { disposeObject, disposeMaterial } from "@/lib/planet/render-resources";
@@ -27,6 +30,7 @@ export default function PlanetCanvas({
   maskStyle = "pangaea",
   isUnknownTime = false,
 }: PlanetCanvasProps) {
+  const [isCloseUp, setIsCloseUp] = useState(false);
   const [graphicsError, setGraphicsError] = useState<string | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const rendererRef = useRef<THREE.WebGLRenderer | null>(null);
@@ -35,6 +39,7 @@ export default function PlanetCanvas({
 
   // Mesh refs
   const mainPlanetRef = useRef<THREE.Mesh | null>(null);
+  const surfaceEffectsRef = useRef<THREE.Group | null>(null);
   const satelliteMeshRef = useRef<THREE.Mesh | null>(null);
   const satellitePivotRef = useRef<THREE.Group | null>(null);
   const asteroidBeltPointsRef = useRef<THREE.Points | null>(null);
@@ -79,25 +84,52 @@ export default function PlanetCanvas({
       setGraphicsError("3D 화면을 사용할 수 없어요. WebGL을 지원하는 브라우저에서 다시 열어주세요.");
       return;
     }
+    renderer.debug.onShaderError = () => {
+      setGraphicsError("이 기기에서 입체 재질을 표시하지 못했어요. 브라우저 이름과 화면을 알려주세요.");
+    };
     renderer.setSize(width, height);
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.75));
+    renderer.shadowMap.enabled = true;
+    renderer.shadowMap.type = THREE.PCFSoftShadowMap;
     renderer.outputColorSpace = THREE.SRGBColorSpace;
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
-    renderer.toneMappingExposure = 1.25;
+    renderer.toneMappingExposure = 1.05;
     rendererRef.current = renderer;
     container.appendChild(renderer.domElement);
 
+    // Locally generated studio reflections give water and metal real specular structure.
+    const roomEnvironment = new RoomEnvironment();
+    const pmrem = new THREE.PMREMGenerator(renderer);
+    const reflectionTarget = pmrem.fromScene(roomEnvironment, 0.035);
+    scene.environment = reflectionTarget.texture;
+    scene.environmentIntensity = 1.1;
+    roomEnvironment.dispose();
+    pmrem.dispose();
+
     // 조명 (주 태양광 + 은은한 보조광)
-    const ambientLight = new THREE.AmbientLight(0xffffff, 0.65);
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.22);
     scene.add(ambientLight);
 
     const mainSunLight = new THREE.DirectionalLight(0xfff5e6, 2.0);
     mainSunLight.position.set(5, 4, 5);
+    mainSunLight.castShadow = true;
+    mainSunLight.shadow.mapSize.set(1024, 1024);
+    mainSunLight.shadow.camera.left = -4;
+    mainSunLight.shadow.camera.right = 4;
+    mainSunLight.shadow.camera.top = 4;
+    mainSunLight.shadow.camera.bottom = -4;
+    mainSunLight.shadow.camera.near = 0.5;
+    mainSunLight.shadow.camera.far = 20;
+    mainSunLight.shadow.bias = -0.00015;
+    mainSunLight.shadow.normalBias = 0.025;
     scene.add(mainSunLight);
 
     const fillLight = new THREE.DirectionalLight(0x5070a0, 0.8);
     fillLight.position.set(-6, -2, -4);
     scene.add(fillLight);
+    const rimLight = new THREE.DirectionalLight(0xb7dcff, 1.5);
+    rimLight.position.set(-4, 3, -3);
+    scene.add(rimLight);
 
     // 행성 루트 그룹
     const planetRoot = new THREE.Group();
@@ -106,6 +138,8 @@ export default function PlanetCanvas({
 
     // A. 공통 본체 구체 메쉬 (SLOT-D 70% + SLOT-M 30%)
     const sphereGeo = new THREE.SphereGeometry(1.85, 96, 64);
+    sphereGeo.computeBoundingSphere();
+    if (sphereGeo.boundingSphere) sphereGeo.boundingSphere.radius *= 1 + MAX_LIVING_RADIAL_RELIEF;
     const mainMat = new THREE.MeshStandardMaterial({
       roughness: 0.65,
       metalness: 0.1,
@@ -113,6 +147,7 @@ export default function PlanetCanvas({
     const mainMesh = new THREE.Mesh(sphereGeo, mainMat);
     planetRoot.add(mainMesh);
     mainPlanetRef.current = mainMesh;
+    mainMesh.receiveShadow = true;
 
     // B. 위성 궤도 그룹 & 위성 구체 (SLOT-H)
     const satPivot = new THREE.Group();
@@ -120,6 +155,8 @@ export default function PlanetCanvas({
     satellitePivotRef.current = satPivot;
 
     const satGeo = new THREE.SphereGeometry(0.44, 32, 32);
+    satGeo.computeBoundingSphere();
+    if (satGeo.boundingSphere) satGeo.boundingSphere.radius *= 1 + MAX_LIVING_RADIAL_RELIEF;
     const satMat = new THREE.MeshStandardMaterial({ roughness: 0.75 });
     const satMesh = new THREE.Mesh(satGeo, satMat);
     satMesh.position.set(3.8, 0.65, 0);
@@ -178,6 +215,7 @@ export default function PlanetCanvas({
     };
 
     const dom = renderer.domElement;
+    dom.style.touchAction = "none";
     const onContextLost = (event: Event) => { event.preventDefault(); setGraphicsError("3D 연결이 잠시 끊겼어요. 복구를 기다려주세요."); };
     const onContextRestored = () => setGraphicsError(null);
     dom.addEventListener("webglcontextlost", onContextLost);
@@ -225,6 +263,7 @@ export default function PlanetCanvas({
         if (mainPlanetRef.current) {
           mainPlanetRef.current.rotation.y = t * .13;
           animateSurface(mainPlanetRef.current.material, dt);
+          if (surfaceEffectsRef.current) animateSurfaceEffects(surfaceEffectsRef.current, t, dt);
         }
         if (satellitePivotRef.current) satellitePivotRef.current.rotation.y = t * .24;
         if (satelliteMeshRef.current) {
@@ -250,10 +289,18 @@ export default function PlanetCanvas({
       dom.removeEventListener("touchstart", onTouchStart);
       window.removeEventListener("touchmove", onTouchMove);
       window.removeEventListener("touchend", onTouchEnd);
+      if (surfaceEffectsRef.current) {
+        disposeSurfaceEffects(surfaceEffectsRef.current);
+        surfaceEffectsRef.current = null;
+      }
       disposeObject(scene);
+      scene.environment = null;
+      reflectionTarget.dispose();
+      mainSunLight.shadow.dispose();
       dom.removeEventListener("webglcontextlost", onContextLost);
       dom.removeEventListener("webglcontextrestored", onContextRestored);
       renderer.dispose();
+      renderer.forceContextLoss();
       if (container.contains(dom)) {
         container.removeChild(dom);
       }
@@ -273,6 +320,11 @@ export default function PlanetCanvas({
     // Shared sphere UV/material path for all four ganzi slots.
     disposeMaterial(mainPlanetRef.current.material as THREE.Material);
     mainPlanetRef.current.material = createPlanetMaterial(presetD, presetM, maskStyle, 1024);
+    if (surfaceEffectsRef.current) disposeSurfaceEffects(surfaceEffectsRef.current);
+    const effects = createSurfaceEffects(presetD, presetM, maskStyle, 1.85);
+    mainPlanetRef.current.add(effects);
+    surfaceEffectsRef.current = effects;
+    animateSurfaceEffects(effects, motionTimeRef.current, 0);
     const satMesh = satelliteMeshRef.current;
     satMesh.visible = !isUnknownTime;
     disposeMaterial(satMesh.material as THREE.Material);
@@ -297,13 +349,25 @@ export default function PlanetCanvas({
     setIsAutoRotating(isAutoRotatingRef.current);
   };
 
+  const handleToggleCloseUp = () => {
+    const close = !isCloseUp;
+    setIsCloseUp(close);
+    if (cameraRef.current) {
+      cameraRef.current.zoom = close ? 1.6 : 1;
+      cameraRef.current.updateProjectionMatrix();
+    }
+  };
+
   const handleResetRotation = () => {
     motionTimeRef.current = 0;
+    setIsCloseUp(false);
+    if (cameraRef.current) { cameraRef.current.zoom = 1; cameraRef.current.updateProjectionMatrix(); }
     mainPlanetRef.current?.rotation.set(0, 0, 0);
     satellitePivotRef.current?.rotation.set(0, 0, 0);
     satelliteMeshRef.current?.rotation.set(0, 0, 0);
     asteroidBeltPointsRef.current?.rotation.set(.28, .12, 0);
     if (mainPlanetRef.current) resetSurface(mainPlanetRef.current.material);
+    if (surfaceEffectsRef.current) animateSurfaceEffects(surfaceEffectsRef.current, 0, 0);
     if (satelliteMeshRef.current) resetSurface(satelliteMeshRef.current.material);
     if (planetRootRef.current) {
       planetRootRef.current.rotation.set(0, 0, 0);
@@ -339,6 +403,11 @@ export default function PlanetCanvas({
         </span>
 
         <div className="flex items-center gap-1.5 pointer-events-auto">
+          <button onClick={handleToggleCloseUp} aria-pressed={isCloseUp}
+            title="표면 질감 확대 또는 전체 보기"
+            className="px-2.5 py-1 rounded-full bg-black/60 border border-white/20 text-white text-xs">
+            {isCloseUp ? "전체" : "확대"}
+          </button>
           <button
             onClick={handleToggleAutoRotate}
             className="px-2.5 py-1 rounded-full bg-black/60 hover:bg-black/80 backdrop-blur-md border border-white/20 text-[10.5px] font-medium text-white transition-all shadow-sm flex items-center gap-1"
