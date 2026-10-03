@@ -2,6 +2,7 @@
 import "./lab.css";
 import "./material-study.css";
 import Header from "@/components/Header";
+import PorcelainHeroStudy from "@/components/planet/PorcelainHeroStudy";
 import ImWaterStudy from "@/components/planet/ImWaterStudy";
 import StemMaterialStudy from "@/components/planet/StemMaterialStudy";
 import {useEffect,useState} from 'react';
@@ -29,4 +30,4 @@ function LegacyLab(){
  <footer>행성과 자연 정령의 재질·입체 효과 확인용입니다. 생년월일 입력, 사주 계산, AI 연결은 포함하지 않습니다.</footer></main>;
 }
 
-export default function Page(){const [section,setSection]=useState<"materials"|"water"|"legacy">("materials");return <><Header/><nav className="lab-sections" aria-label="실험실 구역"><button aria-pressed={section==="materials"} onClick={()=>setSection("materials")}>새 재질 비교</button><button aria-pressed={section==="water"} onClick={()=>setSection("water")}>임 집중 · 정지 화면</button><button aria-pressed={section==="legacy"} onClick={()=>setSection("legacy")}>기존 행성·분신</button></nav>{section==="materials"?<StemMaterialStudy/>:section==="water"?<ImWaterStudy/>:<LegacyLab/>}</>;}
+export default function Page(){const [section,setSection]=useState<"hero"|"materials"|"water"|"legacy">("hero");return <><Header/><nav className="lab-sections" aria-label="실험실 구역"><button aria-pressed={section==="hero"} onClick={()=>setSection("hero")}>기토 · 새 조형</button><button aria-pressed={section==="materials"} onClick={()=>setSection("materials")}>새 재질 비교</button><button aria-pressed={section==="water"} onClick={()=>setSection("water")}>임 집중 · 정지 화면</button><button aria-pressed={section==="legacy"} onClick={()=>setSection("legacy")}>기존 행성·분신</button></nav>{section==="hero"?<PorcelainHeroStudy/>:section==="materials"?<StemMaterialStudy/>:section==="water"?<ImWaterStudy/>:<LegacyLab/>}</>;}

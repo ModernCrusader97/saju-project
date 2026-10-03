@@ -1,0 +1,31 @@
+"use client";
+import {useEffect,useRef,useState} from 'react';
+import * as THREE from 'three';
+import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader.js';
+import {RoomEnvironment} from 'three/examples/jsm/environments/RoomEnvironment.js';
+
+export default function PorcelainHeroStudy(){
+ const mount=useRef<HTMLDivElement>(null),canvas=useRef<HTMLCanvasElement|null>(null),rotate=useRef(false);
+ const [portrait,setPortrait]=useState(true),[auto,setAuto]=useState(false),[reset,setReset]=useState(0),[ready,setReady]=useState(false),[error,setError]=useState('');
+ useEffect(()=>{rotate.current=auto},[auto]);
+ useEffect(()=>{
+  const target=mount.current;if(!target)return;setReady(false);setError('');
+  let renderer:THREE.WebGLRenderer;try{renderer=new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true})}catch{setError('이 브라우저에서 3D를 시작하지 못했어요. 아래 렌더 이미지를 확인하세요.');return}
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio,1.6));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=.8;
+  const element=renderer.domElement;canvas.current=element;target.replaceChildren(element);element.style.cssText='display:block;width:100%;height:100%;touch-action:pan-y';element.setAttribute('aria-label','청화백자 기토의 새 조형을 회전하며 살펴보는 실제 3D 모델');
+  const scene=new THREE.Scene();scene.background=new THREE.Color('#18272c');const pmrem=new THREE.PMREMGenerator(renderer),room=new RoomEnvironment(),environment=pmrem.fromScene(room,.04);room.dispose();pmrem.dispose();scene.environment=environment.texture;scene.environmentIntensity=.45;
+  scene.add(new THREE.HemisphereLight('#f5f0e4','#263c49',.7));const key=new THREE.DirectionalLight('#fff0db',2);key.position.set(-3,4,4);scene.add(key);const rim=new THREE.DirectionalLight('#c6e5ff',1);rim.position.set(3,2,-3);scene.add(rim);
+  const pivot=new THREE.Group();scene.add(pivot);pivot.rotation.y=.28;
+  const camera=new THREE.PerspectiveCamera(32,1,.01,100);let active=true,frame=0,last=performance.now(),size=new THREE.Vector3(1,4,1),lookY=0;
+  const disposeModel=(root:THREE.Object3D)=>{const gs=new Set<THREE.BufferGeometry>(),ms=new Set<THREE.Material>(),ts=new Set<THREE.Texture>();root.traverse(o=>{if(!(o instanceof THREE.Mesh))return;gs.add(o.geometry);for(const m of Array.isArray(o.material)?o.material:[o.material]){ms.add(m);for(const v of Object.values(m))if(v instanceof THREE.Texture)ts.add(v)}});gs.forEach(g=>g.dispose());ms.forEach(m=>m.dispose());ts.forEach(t=>t.dispose());};
+  const resize=()=>{const w=Math.max(1,target.clientWidth),h=Math.max(1,target.clientHeight);renderer.setSize(w,h,false);camera.aspect=w/h;const frameHeight=portrait?size.y*.43:size.y*1.15,halfWidth=portrait?size.x*.48:size.x*.62;lookY=portrait?size.y*.29:0;camera.position.set(0,lookY,Math.max(frameHeight*.5,halfWidth/camera.aspect)/Math.tan(THREE.MathUtils.degToRad(16))+size.z*.65);camera.lookAt(0,lookY,0);camera.updateProjectionMatrix();};
+  const observer=new ResizeObserver(resize);observer.observe(target);resize();
+  new GLTFLoader().load('/models/porcelain-hero-v1.glb',gltf=>{if(!active){disposeModel(gltf.scene);return}const model=gltf.scene;const bounds=new THREE.Box3().setFromObject(model);bounds.getSize(size);const center=bounds.getCenter(new THREE.Vector3());model.position.sub(center);pivot.add(model);resize();setReady(true)},undefined,()=>{if(active)setError('모델 파일을 불러오지 못했어요. 초기화를 눌러주세요.')});
+  let drag:{x:number;angle:number}|null=null;const down=(e:PointerEvent)=>{drag={x:e.clientX,angle:pivot.rotation.y};element.setPointerCapture(e.pointerId)};const move=(e:PointerEvent)=>{if(drag)pivot.rotation.y=drag.angle+(e.clientX-drag.x)*.008};const up=()=>{drag=null};const lost=(e:Event)=>{e.preventDefault();active=false;setError('그래픽 연결이 끊겼어요. 초기화로 다시 열어주세요.')};
+  element.addEventListener('pointerdown',down);element.addEventListener('pointermove',move);element.addEventListener('pointerup',up);element.addEventListener('pointercancel',up);element.addEventListener('webglcontextlost',lost);
+  const draw=(now:number)=>{if(!active)return;const dt=Math.min(.05,(now-last)/1000);last=now;if(rotate.current&&!document.hidden)pivot.rotation.y+=dt*.18;renderer.render(scene,camera);frame=requestAnimationFrame(draw)};frame=requestAnimationFrame(draw);
+  return()=>{active=false;cancelAnimationFrame(frame);observer.disconnect();element.removeEventListener('pointerdown',down);element.removeEventListener('pointermove',move);element.removeEventListener('pointerup',up);element.removeEventListener('pointercancel',up);element.removeEventListener('webglcontextlost',lost);disposeModel(pivot);environment.dispose();renderer.dispose();renderer.forceContextLoss();target.replaceChildren();canvas.current=null};
+ },[portrait,reset]);
+ const capture=()=>{if(!canvas.current)return;const a=document.createElement('a');a.href=canvas.current.toDataURL('image/png');a.download='porcelain-hero-study.png';a.click();};
+ return <section className="material-study"><div className="material-study-heading"><p>己 · FORM + MATERIAL</p><h2>청화백자, 첫 번째 분신</h2><span>새 얼굴과 체형에 도자기 재질을 함께 적용한 첫 조형안입니다. 드래그해서 옆모습도 확인하세요.</span></div><div className="material-study-toolbar"><div><button aria-pressed={portrait} onClick={()=>setPortrait(true)}>상반신</button><button aria-pressed={!portrait} onClick={()=>setPortrait(false)}>전신</button></div><button onClick={()=>setReset(v=>v+1)}>초기화</button><button disabled={!ready} onClick={capture}>이미지 저장</button></div><label className="material-accent-toggle"><input type="checkbox" checked={auto} onChange={e=>setAuto(e.target.checked)}/>천천히 회전</label><div ref={mount} style={{height:'min(70vh,720px)',minHeight:400,borderRadius:20,overflow:'hidden'}}/>{!ready&&!error&&<p>새 모델을 불러오는 중입니다.</p>}{error&&<p role="alert" className="material-error">{error}</p>}<p className="material-study-note">미완성 조형 검토용입니다. 헤어·귀·손의 표현과 표정은 추가 조정 대상이며, 리깅·성별·꾸미기 기능은 아직 없습니다.</p><details className="material-reference" open={!!error}><summary>Blender 렌더와 비교하기</summary><p>같은 모델의 Blender 렌더입니다. 웹 조명·광택과 차이가 있습니다.</p><img src="/images/porcelain-hero-portrait.png" alt="새로운 기토 조형에 청화백자 재질을 적용한 Blender 상반신 렌더" loading="lazy"/></details></section>;
+}
