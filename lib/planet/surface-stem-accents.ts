@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import {createSurfaceWoodyBranches} from './surface-woody-branches';
 import {createStemAccents,type AccentStem,type StemAccents} from './approved-stem-accents';
 import {MeshSurface,seeded,type SurfaceAnchor} from './mesh-surface';
 export interface SurfaceAccentOptions {meshes:THREE.Mesh[];quality?:'low'|'high';detailScale?:number}
@@ -6,6 +7,9 @@ export interface SurfaceAccentDiagnostics {supported:boolean;mode:string;limitat
 export interface SurfaceStemAccents extends StemAccents {diagnostics:SurfaceAccentDiagnostics}
 /** Actual-triangle accents for static topology / rigid moving meshes, never a bounding sphere shell. */
 export function createSurfaceStemAccents(stem:AccentStem | '己' | '庚' | '辛',options:SurfaceAccentOptions):SurfaceStemAccents {
+  return stem==='甲'?createSurfaceWoodyBranches(options):createSurfaceStemAccentsUnchanged(stem,options);
+}
+function createSurfaceStemAccentsUnchanged(stem:AccentStem | '己' | '庚' | '辛',options:SurfaceAccentOptions):SurfaceStemAccents {
   const sampler=new MeshSurface(options.meshes);
   const extent=sampler.bounds.getSize(new THREE.Vector3());
   const unit=options.detailScale??Math.min(extent.x,extent.y,extent.z)*.5;
