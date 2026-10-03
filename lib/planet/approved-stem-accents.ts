@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 
-export type AccentStem = '甲' | '乙' | '丙' | '丁' | '壬' | '癸';
+export type AccentStem = '甲' | '乙' | '丙' | '丁' | '戊' | '壬' | '癸';
 export interface StemAccentOptions {
   /** Equatorial radius in local world units. Defaults to 1. */
   radius?: number;
@@ -24,6 +24,41 @@ const Z_AXIS = new THREE.Vector3(0, 0, 1);
 const fract = (value: number): number => value - Math.floor(value);
 const hash = (seed: number): number => fract(Math.sin(seed * 127.1 + 311.7) * 43758.5453123);
 
+// Matches the local-space stone/flow shader hash and trilinear value noise.
+// Used only to choose a small number of meaningful source anchors at creation.
+const f32 = Math.fround;
+function fieldHash(x: number, y: number, z: number): number {
+  x = f32(fract(f32(f32(x) * f32(0.1031))));
+  y = f32(fract(f32(f32(y) * f32(0.1031))));
+  z = f32(fract(f32(f32(z) * f32(0.1031))));
+  const dot = f32(f32(f32(x * f32(y + f32(33.33))) + f32(y * f32(z + f32(33.33)))) + f32(z * f32(x + f32(33.33))));
+  x = f32(x + dot); y = f32(y + dot); z = f32(z + dot);
+  return fract(f32(f32(x + y) * z));
+}
+function fieldNoise(x: number, y: number, z: number): number {
+  x = f32(x); y = f32(y); z = f32(z);
+  const ix = Math.floor(x), iy = Math.floor(y), iz = Math.floor(z);
+  const smooth = (v: number): number => f32(f32(v * v) * f32(3 - f32(2 * v)));
+  const sx = smooth(fract(x)), sy = smooth(fract(y)), sz = smooth(fract(z));
+  const mix = (a: number, b: number, t: number): number => f32(f32(a * f32(1 - t)) + f32(b * t));
+  return mix(mix(mix(fieldHash(ix, iy, iz), fieldHash(ix + 1, iy, iz), sx),
+    mix(fieldHash(ix, iy + 1, iz), fieldHash(ix + 1, iy + 1, iz), sx), sy),
+    mix(mix(fieldHash(ix, iy, iz + 1), fieldHash(ix + 1, iy, iz + 1), sx),
+    mix(fieldHash(ix, iy + 1, iz + 1), fieldHash(ix + 1, iy + 1, iz + 1), sx), sy), sz);
+}
+function fieldFbm(x: number, y: number, z: number, octaves: number): number {
+  x = f32(x); y = f32(y); z = f32(z);
+  let sum = 0, amplitude = f32(0.52);
+  for (let i = 0; i < octaves; i++) {
+    sum = f32(sum + f32(amplitude * fieldNoise(x, y, z)));
+    x = f32(f32(x * f32(2.03)) + f32(7.1));
+    y = f32(f32(y * f32(2.03)) + f32(3.7));
+    z = f32(f32(z * f32(2.03)) + f32(8.9));
+    amplitude = f32(amplitude * f32(0.48));
+  }
+  return sum;
+}
+
 /**
  * Optional, mesh-independent accents for a Y-up ellipsoid centered at (0,0,0).
  * Match its radius/height to the underlying body and parent both under the same
@@ -41,8 +76,8 @@ export function createStemAccents(
   if (!Number.isFinite(radius) || radius <= 0 || !Number.isFinite(height) || height <= 0) {
     throw new RangeError('Stem accents require finite positive radius and height.');
   }
-  if (stem !== '甲' && stem !== '乙' && stem !== '丙' && stem !== '丁' && stem !== '壬' && stem !== '癸') {
-    throw new RangeError('Stem accents support 甲, 乙, 丙, 丁, 壬 and 癸.');
+  if (stem !== '甲' && stem !== '乙' && stem !== '丙' && stem !== '丁' && stem !== '戊' && stem !== '壬' && stem !== '癸') {
+    throw new RangeError('Stem accents support 甲, 乙, 丙, 丁, 戊, 壬 and 癸.');
   }
   const high = options.quality !== 'low';
   const halfHeight = height / 2;
@@ -294,7 +329,7 @@ export function createStemAccents(
     // Dynamic particle silhouettes and scrolling UV distortion, following the
     // game-VFX approach described by Keith Guerrette (Naughty Dog), GDC 2012:
     // https://www.gdcvault.com/play/1016066/The-Tricks-Up-Our-Sleeves
-    // This WebGL implementation uses two packed-noise reads, no external art,
+    // This WebGL implementation uses three packed-noise reads, no external art,
     // no scene-depth pass, and one instanced transparent draw per emitter.
     const noiseSize = 256;
     const noiseData = new Uint8Array(noiseSize * noiseSize * 4);
@@ -340,6 +375,8 @@ export function createStemAccents(
       toneMapped: true,
       vertexShader: /* glsl */ `
         attribute vec4 aParticle;
+        attribute vec4 aFlow;
+        uniform float uTime;
         uniform mat4 uWorldToLocal;
         uniform float uWorldScale;
         varying vec2 vUv;
@@ -355,7 +392,16 @@ export function createStemAccents(
           up = normalize(up);
           vec3 right = normalize(cross(up, forward));
           vec2 size = vec2(length(instanceMatrix[0].xyz), length(instanceMatrix[1].xyz)) * uWorldScale;
+          // Subdivided cards bend continuously through a shared low-frequency
+          // wind field. The lower and upper ends no longer form rigid columns.
+          float y = uv.y;
+          float strength = 1.0 - aParticle.z * 0.82;
+          float roll = sin(y * 5.5 + aFlow.w) - sin(aFlow.w);
+          float curl = sin(y * 9.0 - uTime * 2.1 + aParticle.y * 9.0);
+          vec3 drift = vec3(aFlow.x, 0.0, aFlow.y) * (y * y - 0.28) * size.y;
           vec3 worldPosition = center.xyz + right * position.x * size.x + up * position.y * size.y;
+          worldPosition += strength * (drift + right * (roll * 0.14 + curl * y * 0.065) * size.x);
+          worldPosition += up * (cos(y * 5.5 + aFlow.w) - cos(aFlow.w)) * size.y * 0.07 * strength;
           vBodyPosition = (uWorldToLocal * vec4(worldPosition, 1.0)).xyz;
           gl_Position = projectionMatrix * viewMatrix * vec4(worldPosition, 1.0);
         }
@@ -374,29 +420,36 @@ export function createStemAccents(
           float candle = vParticle.z;
           float core = vParticle.w;
           float y = vUv.y;
-          vec2 flowUV = vec2(vUv.x * 0.66 + seed * 3.7, y * 0.86 - uTime * (0.78 + seed * 0.39));
+          // Domain-warped, advected density creates rolling, tearing wisps.
+          // Every card boundary fades to zero; erosion never exposes a rectangle.
+          vec2 flowUV = vec2(vUv.x * 0.72 + seed * 3.7, y * 0.76 - uTime * (0.51 + seed * 0.37));
           vec2 flow = texture2D(uNoise, flowUV).rg;
-          float bend = (flow.r - 0.5) * (0.2 + y * 0.52);
-          vec2 detail = texture2D(uNoise, flowUV * vec2(1.8, 1.65) + vec2(bend, seed * 2.1)).rg;
-          float x = vUv.x * 2.0 - 1.0 + bend + sin(y * 6.0 - uTime * 3.4 + seed * 20.0) * y * 0.13;
-          float width = (0.72 * pow(max(0.0, 1.0 - y), 0.57) + 0.07) * (0.8 + flow.r * 0.4);
-          float interior = 1.0 - abs(x) / max(width, 0.04);
-          float edge = smoothstep(0.0, 0.30, interior);
-          float density = flow.g * 0.57 + detail.r * 0.43;
-          float threshold = 0.23 + y * 0.25 + age * age * 0.20;
-          float erosion = smoothstep(threshold, threshold + 0.17, density + interior * 0.1);
-          float vertical = smoothstep(0.0, 0.10, y) * (1.0 - smoothstep(0.72, 1.0, y));
-          float life = smoothstep(0.0, 0.12, age) * (1.0 - smoothstep(0.60, 1.0, age));
+          vec2 detailUV = flowUV * vec2(1.67, 1.42) + (flow - 0.5) * vec2(0.24, 0.31);
+          vec2 detail = texture2D(uNoise, detailUV + vec2(uTime * 0.13, seed * 2.1)).rg;
+          vec2 fine = texture2D(uNoise, flowUV * vec2(2.8, 2.1) + (detail - 0.5) * 0.27 - vec2(uTime * 0.11, uTime * 0.19)).rg;
+          float bend = (flow.r - 0.5) * (0.28 + y * 0.62) + (detail.r - 0.5) * y * 0.22;
+          float x = vUv.x * 2.0 - 1.0 + bend;
+          float bulge = 0.70 + 0.22 * sin(y * 7.0 + flow.r * 5.0 - uTime * 1.6 + seed * 8.0);
+          float width = mix(0.72, 0.28, smoothstep(0.26, 1.0, y)) * bulge;
+          width *= mix(1.0, 0.85, candle);
+          float interior = 1.0 - abs(x) / max(width, 0.06);
+          float edge = smoothstep(-0.02, 0.34, interior);
+          float density = flow.g * 0.42 + detail.g * 0.38 + fine.r * 0.20;
+          float threshold = 0.21 + y * 0.23 + age * age * 0.17;
+          float erosion = smoothstep(threshold - 0.035, threshold + 0.19, density + interior * 0.09);
+          float rim = smoothstep(0.0, 0.095, vUv.x) * (1.0 - smoothstep(0.905, 1.0, vUv.x));
+          float vertical = smoothstep(0.0, 0.14, y) * (1.0 - smoothstep(0.75, 1.0, y));
+          float life = smoothstep(0.0, 0.12, age) * (1.0 - smoothstep(0.59, 1.0, age));
           float outside = (length(vBodyPosition / uBodyRadii) - 1.0) * uUnit;
-          float contactFade = smoothstep(-uUnit * 0.01, uUnit * 0.055, outside);
-          float alpha = edge * erosion * vertical * life * contactFade * mix(0.79, 0.9, candle);
-          if (alpha < 0.008) discard;
-          float hot = smoothstep(0.18, 0.9, interior) * (1.0 - y * 0.76);
-          vec3 orange = vec3(1.35, 0.13, 0.008);
-          vec3 gold = vec3(1.85, 0.83, 0.075);
-          vec3 color = mix(orange, gold, clamp(hot * 0.71 + density * 0.25, 0.0, 1.0));
-          float blueSource = core * hot * (1.0 - smoothstep(0.07, 0.24, y)) * (1.0 - age * 0.72);
-          color = mix(color, vec3(0.55, 1.1, 1.8), blueSource * 0.78);
+          float contactFade = smoothstep(-uUnit * 0.018, uUnit * 0.06, outside);
+          float alpha = edge * erosion * vertical * rim * life * contactFade * mix(0.77, 0.9, candle);
+          if (alpha < 0.003) discard;
+          float hot = smoothstep(0.12, 0.91, interior) * (1.0 - y * 0.78);
+          vec3 orange = vec3(1.60, 0.18, 0.008);
+          vec3 gold = vec3(1.95, 0.85, 0.075);
+          vec3 color = mix(orange, gold, clamp(hot * 0.63 + density * 0.23, 0.0, 1.0));
+          float blueSource = core * hot * (1.0 - smoothstep(0.045, 0.20, y)) * (1.0 - age * 0.8);
+          color = mix(color, vec3(0.57, 1.1, 1.8), blueSource * 0.62);
           gl_FragColor = vec4(color, alpha);
           #include <tonemapping_fragment>
           #include <colorspace_fragment>
@@ -404,10 +457,13 @@ export function createStemAccents(
       `,
     }));
     const count = candle ? (high ? 18 : 12) : (high ? 72 : 48);
-    const geometry = ownGeometry(new THREE.PlaneGeometry(1, 1));
+    const geometry = ownGeometry(new THREE.PlaneGeometry(1, 1, candle ? 1 : 3, candle ? 4 : (high ? 12 : 8)));
     const particleData = new Float32Array(count * 4);
     const particleAttribute = new THREE.InstancedBufferAttribute(particleData, 4).setUsage(THREE.DynamicDrawUsage);
     geometry.setAttribute('aParticle', particleAttribute);
+    const flowData = new Float32Array(count * 4);
+    const flowAttribute = new THREE.InstancedBufferAttribute(flowData, 4).setUsage(THREE.DynamicDrawUsage);
+    geometry.setAttribute('aFlow', flowAttribute);
     const fire = new THREE.InstancedMesh(geometry, fireMaterial, count);
     fire.name = candle ? 'ScatteredCandleFlames' : 'SoftSolarFireWisps';
     fire.instanceMatrix.setUsage(THREE.DynamicDrawUsage);
@@ -416,19 +472,20 @@ export function createStemAccents(
     fire.renderOrder = 2;
     fire.userData.particleCount = count;
     fire.userData.activeFraction = candle ? 0.66 : 1;
-    fire.userData.effect = 'updraft-soft-alpha-fire';
+    fire.userData.effect = 'curled-advected-soft-alpha-fire';
     instancedMeshes.add(fire);
     group.add(fire);
     const particles = Array.from({ length: count }, (_, index) => ({
       index,
       seed: hash(index + 530),
       phase: hash(index + 600),
-      period: candle ? 1.12 + 0.68 * hash(index + 820) : 0.47 + 0.66 * hash(index + 820),
+      period: candle ? 1.12 + 0.68 * hash(index + 820) : 0.64 + 0.73 * hash(index + 820),
       latitude: Math.acos((candle ? 0.85 : 0.96) - (candle ? 1.40 : 1.63) * (index + 0.5) / count),
       longitude: index * GOLDEN_ANGLE,
-      width: unit * (candle ? 0.058 + 0.048 * hash(index + 730) : 0.22 + 0.22 * hash(index + 730)),
-      height: unit * (candle ? 0.105 + 0.11 * hash(index + 760) : 0.35 + 0.27 * hash(index + 760)),
-      rise: unit * (candle ? 0.032 + 0.052 * hash(index + 870) : 0.20 + 0.31 * hash(index + 870)),
+      width: unit * (candle ? 0.058 + 0.048 * hash(index + 730) : 0.25 + 0.21 * hash(index + 730)),
+      height: unit * (candle ? 0.105 + 0.11 * hash(index + 760) : 0.29 + 0.28 * hash(index + 760)),
+      rise: unit * (candle ? 0.032 + 0.052 * hash(index + 870) : 0.27 + 0.26 * hash(index + 870)),
+      flowX: 0, flowZ: 0, roll: 0,
       position: new THREE.Vector3(),
       world: new THREE.Vector3(),
       age: 0,
@@ -451,16 +508,33 @@ export function createStemAccents(
         const clock = time / particle.period + particle.phase;
         const cycle = Math.floor(clock);
         const phase = fract(clock);
-        const age = candle ? Math.min(1, phase / 0.66) : phase;
+        // Per-birth lifetime and launch point vary while invisible at the boundary.
+        const duration = candle ? 0.66 : 0.76 + 0.24 * hash(cycle * 19 + particle.index + 927);
+        const age = Math.min(1, phase / duration);
         particle.age = age;
         particle.growth = 0.68 + Math.sin(age * Math.PI) * 0.51;
-        const longitude = particle.longitude + (candle ? (hash(cycle * 17 + particle.index + 890) - 0.5) * 0.9 : 0);
-        const base = surface(particle.latitude, longitude, unit * (candle ? 0.032 : 0.063));
+        const birth = (cycle - particle.phase) * particle.period;
+        const flight = Math.min(time - birth, particle.period * duration);
+        const longitude = particle.longitude + (hash(cycle * 17 + particle.index + 890) - 0.5) * (candle ? 0.9 : 1.45);
+        const latitude = particle.latitude + (candle ? 0 : (hash(cycle * 23 + particle.index + 920) - 0.5) * 0.29);
+        const base = surface(latitude, longitude, unit * (candle ? 0.032 : 0.068));
         particle.world.copy(base).applyMatrix4(group.matrixWorld);
-        particle.world.y += worldScale * (particle.height * 0.35 + particle.rise * age);
-        const sway = unit * (candle ? 0.016 : 0.065) * age;
-        particle.world.x += worldScale * sway * Math.sin(time * 2.7 + particle.seed * 19);
-        particle.world.z += worldScale * sway * Math.cos(time * 2.1 + particle.seed * 23);
+        particle.world.y += worldScale * (particle.height * 0.32 + particle.rise * (age * 0.66 + age * age * 0.34));
+        // Difference of smooth flow potentials anchors each trajectory at birth.
+        // Nearby emitters share broad gusts; seed detail gives smaller rolling eddies.
+        const xPhase = birth * 1.65 + base.z * 1.7 + base.y * 0.9;
+        const zPhase = birth * 1.31 + base.x * 1.6 - base.y * 0.6;
+        const finePhase = birth * 3.2 + particle.seed * 9.0;
+        const amplitude = unit * (candle ? 0.014 : 0.20);
+        const dx = (Math.sin(xPhase + flight * 2.15) - Math.sin(xPhase)) * 0.9
+          + (Math.cos(finePhase + flight * 3.4) - Math.cos(finePhase)) * 0.26;
+        const dz = (Math.cos(zPhase + flight * 1.8) - Math.cos(zPhase)) * 0.8
+          + (Math.sin(finePhase + flight * 2.7) - Math.sin(finePhase)) * 0.23;
+        particle.world.x += worldScale * amplitude * dx;
+        particle.world.z += worldScale * amplitude * dz;
+        particle.flowX = Math.cos(xPhase + flight * 2.15) * (candle ? 0.08 : 0.48);
+        particle.flowZ = -Math.sin(zPhase + flight * 1.8) * (candle ? 0.08 : 0.48);
+        particle.roll = birth * 1.4 + particle.seed * TAU + flight * 2.1;
         particle.position.copy(particle.world).applyMatrix4(uniforms.uWorldToLocal.value);
         particle.depth = camera ? cameraPoint.copy(particle.world).applyMatrix4(camera.matrixWorldInverse).z : -particle.index;
       }
@@ -476,16 +550,110 @@ export function createStemAccents(
         particleData[slot * 4 + 1] = particle.seed;
         particleData[slot * 4 + 2] = candle ? 1 : 0;
         particleData[slot * 4 + 3] = particle.index % (candle ? 3 : 7) === 0 ? 1 : 0;
+        flowData[slot * 4] = particle.flowX;
+        flowData[slot * 4 + 1] = particle.flowZ;
+        flowData[slot * 4 + 2] = 0;
+        flowData[slot * 4 + 3] = particle.roll;
       }
       fire.instanceMatrix.needsUpdate = true;
       particleAttribute.needsUpdate = true;
+      flowAttribute.needsUpdate = true;
       // Bounds are for consumers/inspectors; renderer culling is disabled above.
-      const margin = unit * (candle ? 0.3 : 0.82);
+      const margin = unit * (candle ? 0.3 : 1.03);
       fire.boundingBox = new THREE.Box3(
         new THREE.Vector3(-radius - margin, -halfHeight - margin, -radius - margin),
         new THREE.Vector3(radius + margin, halfHeight + margin, radius + margin),
       );
       fire.boundingSphere = new THREE.Sphere(new THREE.Vector3(), Math.max(radius, halfHeight) + margin);
+    });
+  } else if (stem === '戊') {
+    const sourceCount = high ? 6 : 4;
+    const grainsPerSource = high ? 8 : 6;
+    const count = sourceCount * grainsPerSource;
+    // Find actual F2-F1 rock fissures, using the same field as STEM_KIND 4.
+    // Anchors stay on mid/lower sides, so falling grains leave the intact mass.
+    function fissureDistance(point: THREE.Vector3): number {
+      const octaves = high ? 4 : 3;
+      point = new THREE.Vector3(f32(point.x), f32(point.y), f32(point.z));
+      const scaled = (v: number, factor: number, offset = 0): number => f32(f32(v * f32(factor)) + f32(offset));
+      const x = point.x * 4.4 + fieldFbm(scaled(point.x, 2.6), scaled(point.y, 2.6), scaled(point.z, 2.6), octaves) * 0.85;
+      const y = point.y * 3.4 + fieldFbm(scaled(point.x, 3.0, 13), scaled(point.y, 3.0, 13), scaled(point.z, 3.0, 13), octaves) * 0.85;
+      const z = point.z * 4.4 + fieldFbm(scaled(point.x, 2.8, -9), scaled(point.y, 2.8, -9), scaled(point.z, 2.8, -9), octaves) * 0.85;
+      const ix = Math.floor(x), iy = Math.floor(y), iz = Math.floor(z);
+      let first = Infinity, second = Infinity;
+      for (let a = -1; a <= 1; a++) for (let b = -1; b <= 1; b++) for (let c = -1; c <= 1; c++) {
+        const dx = a + 0.2 + 0.6 * fieldHash(ix + a, iy + b, iz + c) - fract(x);
+        const dy = b + 0.2 + 0.6 * fieldHash(ix + a + 19.1, iy + b + 19.1, iz + c + 19.1) - fract(y);
+        const dz = c + 0.2 + 0.6 * fieldHash(ix + a + 47.2, iy + b + 47.2, iz + c + 47.2) - fract(z);
+        const distance = Math.hypot(dx, dy, dz);
+        if (distance < first) { second = first; first = distance; }
+        else second = Math.min(second, distance);
+      }
+      return second - first;
+    }
+    const sources = Array.from({ length: sourceCount }, (_, i) => {
+      let best = surface(1.55, i * GOLDEN_ANGLE), score = Infinity;
+      for (let j = 0; j < 96; j++) {
+        const point = surface(1.43 + hash(i * 113 + j + 1900) * 0.61,
+          i * GOLDEN_ANGLE + (hash(i * 107 + j + (high ? 2000 : 2001)) - 0.5) * 0.44);
+        const candidate = fissureDistance(point);
+        if (candidate < score) { best = point; score = candidate; }
+      }
+      const normal = normalAt(best);
+      return { point: best.addScaledVector(normal, unit * 0.023), normal, score,
+        period: 2.8 + hash(i + 2070) * 2.6, phase: hash(i + 2080) };
+    });
+    const material = ownMaterial(new THREE.MeshStandardMaterial({ color: 0xe1b77e, roughness: 0.94, metalness: 0 }));
+    const geometry = ownGeometry(new THREE.IcosahedronGeometry(1, 0));
+    const grains = new THREE.InstancedMesh(geometry, material, count);
+    grains.name = 'IntermittentFissureSand';
+    grains.instanceMatrix.setUsage(THREE.DynamicDrawUsage);
+    grains.frustumCulled = false;
+    grains.userData.sourceCount = sourceCount;
+    grains.userData.fissureDistances = sources.map(source => source.score);
+    grains.userData.sourceAnchors = sources.map(source => source.point.clone().addScaledVector(source.normal, -unit * 0.023).toArray());
+    grains.userData.maxParticles = count;
+    grains.userData.effect = 'gravity-fissure-trickles';
+    grains.boundingSphere = new THREE.Sphere(new THREE.Vector3(), Math.max(radius, halfHeight) + unit * 0.62);
+    grains.boundingBox = new THREE.Box3(new THREE.Vector3(-radius - unit * 0.4, -halfHeight - unit * 0.1, -radius - unit * 0.4),
+      new THREE.Vector3(radius + unit * 0.4, halfHeight + unit * 0.1, radius + unit * 0.4));
+    for (let i = 0; i < count; i++) grains.setColorAt(i, new THREE.Color().setRGB(0.66 + hash(i + 2180) * 0.25, 0.54 + hash(i + 2190) * 0.20, 0.33 + hash(i + 2200) * 0.15));
+    instancedMeshes.add(grains);
+    group.add(grains);
+    const dummy = new THREE.Object3D();
+    const inverse = new THREE.Matrix4();
+    const down = new THREE.Vector3();
+    const world = new THREE.Vector3();
+    animations.push((time) => {
+      group.updateWorldMatrix(true, false);
+      inverse.copy(group.matrixWorld).invert();
+      down.set(0, -1, 0).transformDirection(inverse);
+      const m = group.matrixWorld.elements;
+      const worldHalfHeight = Math.hypot(m[1] * radius, m[5] * halfHeight, m[9] * radius);
+      const floorY = m[13] - worldHalfHeight;
+      for (let i = 0; i < count; i++) {
+        const source = sources[Math.floor(i / grainsPerSource)];
+        const clock = time / source.period + source.phase;
+        const epoch = Math.floor(clock);
+        const release = (i % grainsPerSource) * 0.064 + hash(i + epoch * 13 + 2260) * 0.065;
+        const lifeSeconds = 0.39 + hash(i + epoch * 17 + 2270) * 0.22;
+        const flight = fract(clock) * source.period - release;
+        const age = THREE.MathUtils.clamp(flight / lifeSeconds, 0, 1);
+        const visible = flight >= 0 && flight <= lifeSeconds;
+        dummy.position.copy(source.point).addScaledVector(source.normal, unit * (0.006 + age * 0.10));
+        dummy.position.addScaledVector(down, unit * (0.085 * age + 0.43 * age * age));
+        const jitter = unit * (hash(i + 2290) - 0.5) * 0.024;
+        dummy.position.x += jitter;
+        dummy.position.z += unit * (hash(i + 2300) - 0.5) * 0.022;
+        world.copy(dummy.position).applyMatrix4(group.matrixWorld);
+        const floorFade = THREE.MathUtils.smoothstep(world.y - floorY, unit * 0.035, unit * 0.14);
+        const fade = visible ? THREE.MathUtils.smoothstep(age, 0, 0.07) * (1 - THREE.MathUtils.smoothstep(age, 0.70, 1)) * floorFade : 0;
+        const size = unit * (0.006 + hash(i + 2310) * 0.005) * Math.max(fade, 0.0001);
+        dummy.scale.set(size, size * (1.05 + 0.8 * age), size * 0.81);
+        dummy.rotation.set(age * 2.1 + i, age * 1.7 + i * 0.7, age * 2.4);
+        dummy.updateMatrix(); grains.setMatrixAt(i, dummy.matrix);
+      }
+      grains.instanceMatrix.needsUpdate = true;
     });
   } else if (stem === '壬') {
     const sprayMaterial = ownMaterial(new THREE.MeshPhysicalMaterial({
@@ -512,57 +680,99 @@ export function createStemAccents(
     for (const item of [sprays, foam]) {
       item.instanceMatrix.setUsage(THREE.DynamicDrawUsage);
       item.frustumCulled = false;
-      item.boundingSphere = new THREE.Sphere(new THREE.Vector3(), Math.max(radius, halfHeight) + unit * 0.45);
+      item.boundingSphere = new THREE.Sphere(new THREE.Vector3(), Math.max(radius, halfHeight) + unit * 0.62);
       item.boundingBox = new THREE.Box3(
-        new THREE.Vector3(-radius - unit * 0.3, -halfHeight - unit * 0.3, -radius - unit * 0.3),
-        new THREE.Vector3(radius + unit * 0.3, halfHeight + unit * 0.45, radius + unit * 0.3),
+        new THREE.Vector3(-radius - unit * 0.62, -halfHeight - unit * 0.62, -radius - unit * 0.62),
+        new THREE.Vector3(radius + unit * 0.62, halfHeight + unit * 0.62, radius + unit * 0.62),
       );
       instancedMeshes.add(item);
       group.add(item);
     }
+    // Candidate anchors are selected from the same two warped crest fields as
+    // the core shader. Each family then travels with its own wrapping current.
+    const axes = [new THREE.Vector3(0.18, 1, 0.24).normalize(), new THREE.Vector3(0.68, 0.25, 0.69).normalize()];
+    const rates = [1.22, -1.70];
+    function crest(point: THREE.Vector3, family: number): number {
+      if (family === 0) return Math.sin(point.x * 11.5 + point.y * 3.1 + point.z * 5.2
+        + fieldNoise(point.x * 3.1 + 4, point.y * 3.1 + 4, point.z * 3.1 + 4) * 3.2);
+      return Math.sin(point.x * -5.2 + point.y * 9.8 + point.z * 6.4
+        + fieldNoise(point.x * 3.6 - 7, point.y * 3.6 - 7, point.z * 3.6 - 7) * 2.8);
+    }
+    const anchors = axes.map((_, family) => Array.from({ length: 96 }, (__, i) => {
+      let chosen = new THREE.Vector3(1, 0, 0), best = -Infinity;
+      for (let j = 0; j < 20; j++) {
+        const latitude = Math.acos(0.9 - hash(i * 29 + j * 11 + family * 701 + 2600) * 1.8);
+        const longitude = i * GOLDEN_ANGLE + (hash(i * 47 + j + 2800) - 0.5) * 0.8;
+        const candidate = new THREE.Vector3(Math.sin(latitude) * Math.cos(longitude), Math.cos(latitude), Math.sin(latitude) * Math.sin(longitude));
+        const score = crest(candidate, family);
+        if (score > best) { best = score; chosen = candidate; }
+      }
+      return chosen;
+    }));
     const dummy = new THREE.Object3D();
     const inverse = new THREE.Matrix4();
     const globalUp = new THREE.Vector3();
+    const direction = new THREE.Vector3(), point = new THREE.Vector3(), normal = new THREE.Vector3();
+    const tangent = new THREE.Vector3(), side = new THREE.Vector3(), counterpart = new THREE.Vector3();
+    const basis = new THREE.Matrix4();
+    const axisSize = new THREE.Vector3(radius, halfHeight, radius);
+    const prepare = (index: number, epoch: number, family: number, time: number): void => {
+      const anchorIndex = (index * 17 + epoch * 13 % 96 + 960000) % 96;
+      direction.copy(anchors[family][anchorIndex]).applyAxisAngle(axes[family], rates[family] * time);
+      point.copy(direction).multiply(axisSize);
+      normal.copy(normalAt(point));
+      tangent.crossVectors(axes[family], direction).multiply(axisSize).multiplyScalar(Math.sign(rates[family]));
+      tangent.addScaledVector(normal, -tangent.dot(normal));
+      if (tangent.lengthSq() < 0.0001) tangent.set(1, 0, 0).addScaledVector(normal, -normal.x);
+      tangent.normalize();
+    };
+    sprays.userData.currentRates = rates.slice();
+    foam.userData.currentRates = rates.slice();
+    sprays.userData.effect = 'short-ballistic-crosscurrent-spray';
+    foam.userData.effect = 'rapid-crest-convergence-foam';
     animations.push((time) => {
       group.updateWorldMatrix(true, false);
       inverse.copy(group.matrixWorld).invert();
       globalUp.copy(Y_AXIS).transformDirection(inverse);
       for (let i = 0; i < sprayCount; i++) {
         const seed = hash(i + 940);
-        const period = 0.92 + seed * 0.73;
-        const cycle = time / period + hash(i + 955);
-        const age = fract(cycle);
-        const epoch = Math.floor(cycle);
-        const latitude = 0.42 + 2.02 * hash(i * 7 + epoch * 11 + 1200);
-        const longitude = i * GOLDEN_ANGLE + time * 0.15 + 0.2 * Math.sin(latitude * 5);
-        const base = surface(latitude, longitude, unit * 0.018);
-        const normal = normalAt(base);
-        const lift = Math.sin(age * Math.PI) * unit * (0.075 + seed * 0.13);
-        dummy.position.copy(base).addScaledVector(normal, unit * 0.12 * age).addScaledVector(globalUp, lift);
-        const velocity = normal.clone().multiplyScalar(0.3).addScaledVector(globalUp, 0.75 - age).normalize();
-        dummy.quaternion.setFromUnitVectors(Y_AXIS, velocity);
-        const life = THREE.MathUtils.smoothstep(age, 0, 0.12) * (1 - THREE.MathUtils.smoothstep(age, 0.67, 1));
-        const size = unit * (0.012 + 0.016 * seed) * Math.max(life, 0.001);
-        dummy.scale.set(size * 0.82, size * (1.8 - 0.55 * age), size * 0.82);
-        dummy.updateMatrix();
-        sprays.setMatrixAt(i, dummy.matrix);
+        const period = 0.43 + seed * 0.42;
+        const clock = time / period + hash(i + 955);
+        const age = fract(clock), epoch = Math.floor(clock);
+        const birth = (epoch - hash(i + 955)) * period;
+        const family = i % 3 === 0 ? 1 : 0;
+        // Spray inherits strong tangential velocity, then peels outward and drops.
+        prepare(i, epoch, family, birth + age * period * 0.80);
+        const lift = unit * (Math.sin(age * Math.PI) * (0.13 + seed * 0.13) + age * 0.12);
+        dummy.position.copy(point).addScaledVector(normal, unit * 0.024 + lift);
+        dummy.position.addScaledVector(tangent, unit * age * (0.08 + seed * 0.13));
+        dummy.position.addScaledVector(globalUp, unit * (0.21 * age - 0.34 * age * age));
+        side.copy(tangent).multiplyScalar(0.75).addScaledVector(normal, 0.42 - age * 0.28).addScaledVector(globalUp, 0.18 - age * 0.46).normalize();
+        dummy.quaternion.setFromUnitVectors(Y_AXIS, side);
+        const life = THREE.MathUtils.smoothstep(age, 0, 0.09) * (1 - THREE.MathUtils.smoothstep(age, 0.60, 1));
+        const size = unit * (0.013 + 0.017 * seed) * Math.max(life, 0.001);
+        dummy.scale.set(size * 0.71, size * (2.1 - 0.55 * age), size * 0.71);
+        dummy.updateMatrix(); sprays.setMatrixAt(i, dummy.matrix);
       }
       for (let i = 0; i < foamCount; i++) {
         const seed = hash(i + 1120);
-        const cycle = time / (1.5 + 1.1 * seed) + hash(i + 1170);
-        const age = fract(cycle);
-        const latitude = 0.47 + 2.08 * hash(i * 5 + Math.floor(cycle) * 7 + 1190);
-        const longitude = i * GOLDEN_ANGLE + time * 0.16 + 0.18 * Math.sin(latitude * 5);
-        const point = surface(latitude, longitude, unit * 0.015);
-        const normal = normalAt(point);
-        dummy.position.copy(point);
-        dummy.quaternion.setFromUnitVectors(Y_AXIS, normal);
-        dummy.rotateY(seed * TAU + age * 0.28);
-        const life = THREE.MathUtils.smoothstep(age, 0, 0.18) * (1 - THREE.MathUtils.smoothstep(age, 0.64, 1));
+        const period = 0.44 + seed * 0.47;
+        const clock = time / period + hash(i + 1170);
+        const age = fract(clock), epoch = Math.floor(clock);
+        const family = i % 3 === 0 ? 1 : 0;
+        prepare(i + 53, epoch, family, time);
+        counterpart.copy(point).applyAxisAngle(axes[1 - family], -rates[1 - family] * time);
+        const convergence = THREE.MathUtils.smoothstep(crest(counterpart, 1 - family), 0.05, 0.9);
+        dummy.position.copy(point).addScaledVector(normal, unit * (0.02 + convergence * 0.011));
+        side.crossVectors(tangent, normal).normalize();
+        basis.makeBasis(tangent, normal, side);
+        dummy.quaternion.setFromRotationMatrix(basis);
+        const life = THREE.MathUtils.smoothstep(age, 0, 0.10) * (1 - THREE.MathUtils.smoothstep(age, 0.52, 1));
         const grow = Math.max(life, 0.001);
-        dummy.scale.set(unit * (0.19 + seed * 0.19) * grow, unit * 0.2 * grow, unit * 0.27 * grow);
-        dummy.updateMatrix();
-        foam.setMatrixAt(i, dummy.matrix);
+        const intensity = 0.64 + convergence * 0.36;
+        dummy.scale.set(unit * (0.20 + seed * 0.21) * grow,
+          unit * 0.23 * grow * intensity, unit * (0.23 + age * 0.18) * grow * intensity);
+        dummy.updateMatrix(); foam.setMatrixAt(i, dummy.matrix);
       }
       sprays.instanceMatrix.needsUpdate = true;
       foam.instanceMatrix.needsUpdate = true;
