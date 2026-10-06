@@ -1,0 +1,232 @@
+[
+  {
+    "file": "APPROVAL_STATUS_ko.txt",
+    "bytes": 458,
+    "sha256": "c01876c5734d69fcd065d128a9e47a121cc2d987315e987e19cb5419866dde7f"
+  },
+  {
+    "file": "README_ko.txt",
+    "bytes": 4142,
+    "sha256": "0b3098e06050dd622b531e0dbe2dd972a763d25343839311f77338e60b6f986f"
+  },
+  {
+    "file": "SaJu_Jade_EvolvingLight_12s_Preview_v002.mp4",
+    "bytes": 407694,
+    "sha256": "97be904f1df4f56da995731083bb29f33e42b466efc84af2f991fdc62344ac4e"
+  },
+  {
+    "file": "SaJu_Jade_EvolvingLight_Keyframes_v002.jpg",
+    "bytes": 228557,
+    "sha256": "f72a868571672045af00a22b9ec20142db74abde3a6ad49b27ad54a05a832401"
+  },
+  {
+    "file": "SaJu_Jade_EvolvingLight_Loop6s_v002.mp4",
+    "bytes": 204286,
+    "sha256": "29a306fcefd5035bb4071b0ac22de847ced89f179e4d6016575e59dd944832f9"
+  },
+  {
+    "file": "SaJu_Jade_Evolving_Light_v002_Final.blend",
+    "bytes": 11011189,
+    "sha256": "e1ad952239b05064e265d6317383a20cf2182a12ab3e3731193f19e2674507c4"
+  },
+  {
+    "file": "bake_field_triplet.py",
+    "bytes": 5220,
+    "sha256": "1529139dd9c489f92b8300a0f1705967e8c84ef3aecb26791b8b3130854338e8"
+  },
+  {
+    "file": "build_evolving_light_final.py",
+    "bytes": 5864,
+    "sha256": "d6873827f8932024ce85cf563e251fef0291f25178bc9bbc510260057935d6b7"
+  },
+  {
+    "file": "flow_parameters_v002.json",
+    "bytes": 1575,
+    "sha256": "0091c5ae0972b421caf0c72db9b69194f06ae8734083c2e027648bcb0c32c92e"
+  },
+  {
+    "file": "movie_qa.json",
+    "bytes": 950,
+    "sha256": "0eb459dd42570892de52c9f5317ed269bdd5db6c7be5bdc2882f2be40f09b696"
+  },
+  {
+    "file": "native_weights_qa.json",
+    "bytes": 3649,
+    "sha256": "907dcd91519712523cffbc832d4e41ee70205a7546eb68207dc6317485a53c11"
+  },
+  {
+    "file": "preview_keyframes/001.png",
+    "bytes": 188340,
+    "sha256": "f17790815107c4c5d751df92050c3e00c6c597f95843dfcd1b2c6c39c7735c54"
+  },
+  {
+    "file": "preview_keyframes/013.png",
+    "bytes": 188097,
+    "sha256": "29e3c0583bd94ec8c198cdb48c6bfdd5b11b866ff13a5f3d4ef9a379fc4e3136"
+  },
+  {
+    "file": "preview_keyframes/025.png",
+    "bytes": 189001,
+    "sha256": "66dc62450f4f9729f981e5a64758769d28fc58f9cd14656e1caaa68b663323f8"
+  },
+  {
+    "file": "preview_keyframes/037.png",
+    "bytes": 188992,
+    "sha256": "56b567e49fde6287b4362367f189cd35c7b08f610669a1a5ec790f4b10977dba"
+  },
+  {
+    "file": "preview_keyframes/049.png",
+    "bytes": 188856,
+    "sha256": "442dd611af35ace4ec25c996e87118f7963a2b64324f3581040722c02d03efd8"
+  },
+  {
+    "file": "preview_keyframes/061.png",
+    "bytes": 188942,
+    "sha256": "78ec41dea6b3cca1af3be29836cae0b7741454bbdd71c2cb3797f5fe2c45d43c"
+  },
+  {
+    "file": "preview_keyframes/073.png",
+    "bytes": 188340,
+    "sha256": "982e1bf9af3a59ba3c7efb578a01ad0019778249a8af2b47ee99d596f09ba42d"
+  },
+  {
+    "file": "reference/SaJu_Jade_Approved_Static_Material.glb",
+    "bytes": 4293332,
+    "sha256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84"
+  },
+  {
+    "file": "render_remaining.py",
+    "bytes": 1053,
+    "sha256": "39f62305fd1517663819c2f85ce8e74518caee1f6ef9753da252ff46947b4b47"
+  },
+  {
+    "file": "runtime/README_ko.txt",
+    "bytes": 6696,
+    "sha256": "5b3fc7c409170e56e2217732dcf8fb177d84c4f538894b71b793a53eaa34086b"
+  },
+  {
+    "file": "runtime/animation-parameters.json",
+    "bytes": 2247,
+    "sha256": "3699d60417965c60db87e9027248c9bba22fecdc2cd88993fbfa526a9d327bd9"
+  },
+  {
+    "file": "runtime/atlas-metadata.json",
+    "bytes": 1081,
+    "sha256": "5c636086d34bf2076efd93361912fca5d9f53431bb588e99e94cf5b786e487ac"
+  },
+  {
+    "file": "runtime/native-field-probes.json",
+    "bytes": 31715,
+    "sha256": "fcd8b567bf67bc2ba6defee4d343484c27a6948b5ed0e1d83834d8fecfe8ece4"
+  },
+  {
+    "file": "runtime/saju-jade-evolution.glsl",
+    "bytes": 4041,
+    "sha256": "7cfc8ad83f76f8b9505db1e0e38e94bd9ebd7b0c4282a686016c06a09e96255f"
+  },
+  {
+    "file": "runtime/saju-jade-evolution.mjs",
+    "bytes": 5678,
+    "sha256": "b92ffe42be37a8c52427ec6c104a56eb828c4e7f6a02b7d368b72921a46a9e7c"
+  },
+  {
+    "file": "runtime/tests/check_glsl_mesa.py",
+    "bytes": 12409,
+    "sha256": "3fe9c40a336ca154d484333ba6db6ccc95a134daf8f2feb46a7f53fae2a665aa"
+  },
+  {
+    "file": "runtime/tests/check_native_atlas.mjs",
+    "bytes": 4962,
+    "sha256": "a6157a591b8e9b95fd926640bf21c45f4f05fe9275a7ceb72401e30a366d039b"
+  },
+  {
+    "file": "runtime/tests/cpu-test-results.txt",
+    "bytes": 1007,
+    "sha256": "db16eed5f0adcd0da3a572b9d7aed12c1eac579087d98245a1241a2eee5ecf08"
+  },
+  {
+    "file": "runtime/tests/final-atlas-results.txt",
+    "bytes": 1983,
+    "sha256": "6c6e5c4f39319008db532d26112f1e5567d813a8af032d2ef465db47f5e9f5c1"
+  },
+  {
+    "file": "runtime/tests/final-cpu-results.txt",
+    "bytes": 1010,
+    "sha256": "e080f7306e6829656240c2608a796afe6a7486fc8419d76e118a51114abcbaec"
+  },
+  {
+    "file": "runtime/tests/final-mesa-results.txt",
+    "bytes": 635,
+    "sha256": "bd115275f46386a4db58a51171fdcd1b4cd8e52bc360aaa2f4636172e0264bf2"
+  },
+  {
+    "file": "runtime/tests/final-native-atlas-check.txt",
+    "bytes": 1983,
+    "sha256": "6c6e5c4f39319008db532d26112f1e5567d813a8af032d2ef465db47f5e9f5c1"
+  },
+  {
+    "file": "runtime/tests/final-png-raw-check.txt",
+    "bytes": 575,
+    "sha256": "ed4dea2c787477a5b10d95cffd385bacaea68bbbeeed9eedd063729f5f25ec8b"
+  },
+  {
+    "file": "runtime/tests/glsl-mesa-errors.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "file": "runtime/tests/glsl-mesa-results.json",
+    "bytes": 635,
+    "sha256": "bd115275f46386a4db58a51171fdcd1b4cd8e52bc360aaa2f4636172e0264bf2"
+  },
+  {
+    "file": "runtime/tests/native-atlas-results.json",
+    "bytes": 1983,
+    "sha256": "6c6e5c4f39319008db532d26112f1e5567d813a8af032d2ef465db47f5e9f5c1"
+  },
+  {
+    "file": "runtime/tests/png-raw-verification.json",
+    "bytes": 575,
+    "sha256": "ed4dea2c787477a5b10d95cffd385bacaea68bbbeeed9eedd063729f5f25ec8b"
+  },
+  {
+    "file": "runtime/tests/saju-jade-evolution.test.mjs",
+    "bytes": 6347,
+    "sha256": "82745f09b9dd28354b3eb2f6d85a591bec4f344f81fff1795ead47d9db474f15"
+  },
+  {
+    "file": "runtime/tests/verify_png_raw.py",
+    "bytes": 1478,
+    "sha256": "4dd168dd73de1da548e73637b33f1ae396d2052328370538fca7254acba8e251"
+  },
+  {
+    "file": "runtime/textures/Jade_OriginalBaseColor_1024.png",
+    "bytes": 804444,
+    "sha256": "29bdd5ab8a2c87715fd3aedae3f0465c8b6910b5a9c0e8b8bffeb84a03c6b824"
+  },
+  {
+    "file": "runtime/textures/jade_fields_atlas_128.png",
+    "bytes": 3338794,
+    "sha256": "3175c131be983bd985b8018c191d3a25c9ce00ea20baa31bbb2772833b9a5bd0"
+  },
+  {
+    "file": "runtime/textures/jade_fields_atlas_128.rgba8",
+    "bytes": 8388608,
+    "sha256": "ea115bec1027fb9379da0ae4cea6568a6a9ad9699ea4ea10a5bfd29fde6f56d5"
+  },
+  {
+    "file": "source_reproduction_qa.json",
+    "bytes": 166,
+    "sha256": "02fe8e684297b1d82a1138268b0259abe0d23c7effdca13e0b5fa7634b253eb1"
+  },
+  {
+    "file": "verify_movie.py",
+    "bytes": 2859,
+    "sha256": "e01627c3087cd4c95e39c4a593fd778ab979ac6af9a584943b7f62e2a6735102"
+  },
+  {
+    "file": "verify_native_weights.py",
+    "bytes": 1978,
+    "sha256": "384f811f4a37fbad3f3380ff03ab181411955b3662e7c861f8f7c6175093e3f9"
+  }
+]

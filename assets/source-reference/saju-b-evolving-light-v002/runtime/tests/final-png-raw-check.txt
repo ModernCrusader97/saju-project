@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "pixelFormat": "RGBA8_UNORM",
+  "pngMode": "RGBA",
+  "size": [
+    2048,
+    1024
+  ],
+  "bytes": 8388608,
+  "raw_sha256": "ea115bec1027fb9379da0ae4cea6568a6a9ad9699ea4ea10a5bfd29fde6f56d5",
+  "png_sha256": "3175c131be983bd985b8018c191d3a25c9ce00ea20baa31bbb2772833b9a5bd0",
+  "pngRawExactMatch": true,
+  "alphaAlways255": true,
+  "originalUnattenuatedJadeBaseSHA256": "29bdd5ab8a2c87715fd3aedae3f0465c8b6910b5a9c0e8b8bffeb84a03c6b824",
+  "originalJadeBaseUnchanged": true,
+  "colorHandling": "Load RGB as normalized linear data; no sRGB conversion."
+}

@@ -1,0 +1,96 @@
+{
+  "version": "v002",
+  "loopSeconds": 6,
+  "segmentSeconds": 2,
+  "fixedFieldOffsets": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      5.21,
+      8.73,
+      2.91
+    ],
+    [
+      -7.43,
+      3.17,
+      11.61
+    ]
+  ],
+  "noise": {
+    "dimensions": "3D",
+    "type": "FBM",
+    "scale": 4.3,
+    "detail": 3.2,
+    "roughness": 0.65,
+    "lacunarity": 2,
+    "normalize": true
+  },
+  "atlas": {
+    "gridSize": 128,
+    "columns": 16,
+    "rows": 8,
+    "width": 2048,
+    "height": 1024,
+    "byteLength": 8388608,
+    "domainMin": [
+      0,
+      0,
+      0
+    ],
+    "domainMax": [
+      1,
+      1,
+      1
+    ],
+    "pixelFormat": "RGBA8_UNORM",
+    "channels": "R=A G=B B=C A=255",
+    "colorSpace": "linear/non-color",
+    "sourceRow0": "canonical minimum Y within first Z tile row"
+  },
+  "emission": {
+    "thresholds": [
+      0.5,
+      0.72
+    ],
+    "linearRGB": [
+      0.001,
+      0.65,
+      0.08
+    ],
+    "strength": 2
+  },
+  "isolationThresholds": [
+    0.38,
+    0.66
+  ],
+  "sourceBody": {
+    "texspaceCenter": [
+      0.000006973743438720703,
+      -0.000013902783393859863,
+      1.1804927587509155
+    ],
+    "texspaceHalfSize": [
+      0.877256453037262,
+      0.4755038022994995,
+      1.1923989057540894
+    ],
+    "canonicalBlenderFromGLTFLocal": "(x, -z, y)"
+  },
+  "fieldBake": "RGB = noise3D_FBM(canonicalSourcePosition + fixedFieldOffsets[A/B/C]); identical native noise settings for all fields",
+  "timeFormula": "phase=wrap(seconds,6)/2; segment=floor(phase); u=fract(phase); theta=PI/2*u*u*(3-2*u)",
+  "weights": "w[current]=cos(theta); w[(current+1)%3]=sin(theta); w[other]=0",
+  "fieldFormula": "clamp(0.5 + dot(weights, fields - 0.5), 0, 1)",
+  "emissionFormula": "clamp((field-0.5)/0.22,0,1)",
+  "isolationFormula": "smoothstep(0.38,0.66,field)",
+  "outputFormula": "originalJadeBRDF * (1-isolation) + linearRGB * 2 * emissionMask",
+  "invariants": [
+    "No time-dependent coordinate displacement or rotation",
+    "No time-dependent geometry or base-color UV changes",
+    "No global intensity multiplier",
+    "Bloom and exposure unchanged"
+  ],
+  "validationScope": "Reference module and local Mesa shader validation; no application, browser, Three.js or mobile integration claim"
+}

@@ -1,0 +1,13 @@
+from pathlib import Path
+from PIL import Image,ImageDraw,ImageFont
+import numpy as np,json,subprocess
+P=Path(__file__).resolve().parent;frames=[np.asarray(Image.open(P/'frames'/f'{i:03}.png').convert('RGB')) for i in range(1,74)];assert all(a.shape==(320,320,3) for a in frames);assert np.array_equal(frames[0],frames[72]);assert np.array_equal(frames[0],np.asarray(Image.open(P/'final_endpoint_001.png').convert('RGB')));assert np.array_equal(frames[0],np.asarray(Image.open(P/'final_endpoint_073.png').convert('RGB')));approved=np.asarray(Image.open(P.parent/'saju_jade_moving_light_v001/approved_static_reference_320.png').convert('RGB'));assert np.array_equal(frames[0],approved)
+rows=[]
+for ia,ib in [(0,24),(24,48),(48,72)]:
+ a=frames[ia].astype(float);b=frames[ib].astype(float);delta=b[:,:,1]-a[:,:,1];mask=((a[:,:,1]>a[:,:,0]*1.08)&(a[:,:,1]>a[:,:,2]*1.05))|((b[:,:,1]>b[:,:,0]*1.08)&(b[:,:,1]>b[:,:,2]*1.05));pos=int(((delta>8)&mask).sum());neg=int(((delta< -8)&mask).sum());assert pos>500 and neg>500;rows.append({'from_frame':ia+1,'to_frame':ib+1,'brighter_pixels':pos,'dimmer_pixels':neg})
+raw=subprocess.check_output(['ffmpeg','-v','error','-i',str(P/'SaJu_Jade_EvolvingLight_12s_Preview_v002.mp4'),'-f','rawvideo','-pix_fmt','rgb24','-']);movie=np.frombuffer(raw,dtype=np.uint8).reshape(-1,320,320,3);assert len(movie)==144 and np.array_equal(movie[:72],movie[72:])
+report={'rendered_loop_frames':72,'fps':12,'loop_seconds':6,'preview_seconds':12,'final_native_endpoints_pixel_identical':True,'first_frame_matches_approved_static_pixels':True,'encoded_two_loops_pixel_identical':True,'decoded_frames':144,'time_dependent_source_coordinates':False,'emission_strength':2,'transition_spatial_changes':rows,'qualification':'Numerical continuity and source-coordinate invariance checks do not alone establish subjective naturalness. Actual keyframes were inspected; user acceptance pending.'};json.dump(report,open(P/'movie_qa.json','w'),indent=2)
+F='/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc';B='/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc';f=lambda z:ImageFont.truetype(F,z);bold=lambda z:ImageFont.truetype(B,z);im=Image.new('RGB',(1060,950),'#eff1ec');d=ImageDraw.Draw(im);d.text((28,24),'비취 초록빛 v002 · 각 부분에서 피고 사라지는 빛',font=bold(29),fill='#17372b');d.text((30,78),'비취 바탕과 몸은 고정  |  무늬 전체를 도는 좌표 이동은 제거',font=f(20),fill='#486252')
+for i,frame in enumerate([1,13,25,37,49,61]):
+ x=20+(i%3)*345;y=126+(i//3)*374;im.paste(Image.fromarray(frames[frame-1]),(x,y));d.text((x+10,y+330),f'{(frame-1)/12:g}초',font=bold(22),fill='#17372b')
+d.text((30,891),'6초 루프 · 초록색/강도 유지 · 웹사이트 적용은 별도',font=f(21),fill='#486252');im.save(P/'SaJu_Jade_EvolvingLight_Keyframes_v002.jpg',quality=95);print(json.dumps(report))

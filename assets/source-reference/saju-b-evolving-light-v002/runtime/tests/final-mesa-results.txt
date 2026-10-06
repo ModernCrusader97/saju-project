@@ -1,0 +1,22 @@
+{
+  "scope": "GLSL ES source compiled in local Mesa ES context; not browser, Three.js or mobile integration.",
+  "atlas_format": "RGBA8_UNORM",
+  "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "version": "OpenGL ES 3.2 Mesa 25.0.7-2+deb13u1",
+  "results": [
+    {
+      "dialect": "100",
+      "compiled_and_linked": true,
+      "numerical_checks": 1117,
+      "native_atlas_checks": 216,
+      "max_abs_error": 5.565857761069548e-07
+    },
+    {
+      "dialect": "300 es",
+      "compiled_and_linked": true,
+      "numerical_checks": 1117,
+      "native_atlas_checks": 216,
+      "max_abs_error": 5.565857761069548e-07
+    }
+  ]
+}

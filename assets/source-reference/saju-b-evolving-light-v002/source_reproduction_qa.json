@@ -1,0 +1,6 @@
+{
+  "source_build_only_pass": true,
+  "source_native_weight_bakes_pass": true,
+  "simple_driver_reopen_pass": true,
+  "maximum_weight_error": 1.2745883737341757e-07
+}
