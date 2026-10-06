@@ -1,5 +1,5 @@
-> **PARTIAL SOURCE PRESERVATION — one original binary is still pending.**
-> `public/models/porcelain-hero-blink-v1.glb` (13,700,928 bytes; Git blob `d2ee073a4841a9e1ca798bca368dbe1eba3cecb3`) could not yet be uploaded because the connector request exceeded its 16 MiB limit and the browser upload stalled. This commit does not claim a complete runnable checkout. No placeholder or modified substitute is included. The exact original remains preserved locally; the full-project upload task is still open. See `docs/SOURCE_MANIFEST.json` for the missing-file record. Standalone B art is preserved separately and has not been integrated into the runtime or published to the Site.
+> **All selected source bytes are preserved; one original asset requires restoration after checkout.**
+> `public/models/porcelain-hero-blink-v1.glb` is preserved losslessly as `preservation-archives/porcelain-hero-blink-v1.glb.gz` because the connector could not upload the original 13,700,928-byte binary directly and browser upload stalled. The runtime path is absent until you run `python3 scripts/restore-preserved-assets.py` from the repository. The script verifies both archive and original SHA-256 values and refuses to overwrite different content. This is not a ready-to-run checkout claim. Standalone B art has not been integrated into the runtime, and no new Site publication occurred.
 
 # SaJu source preservation snapshot
 

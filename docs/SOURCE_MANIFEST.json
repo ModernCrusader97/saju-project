@@ -3,7 +3,7 @@
   "proposed_repository": "ModernCrusader97/saju-project",
   "visibility_required": "private",
   "file_count": 212,
-  "size_bytes": 78139968,
+  "size_bytes": 78139985,
   "exclusions": [
     ".git and all original commit history",
     "tsconfig.tsbuildinfo",
@@ -43,11 +43,11 @@
     },
     {
       "target_path": "README.md",
-      "size_bytes": 4047,
-      "sha256": "4304c96536fc97f36bc1ba8c4936dfe5bf736979ac5e5ce7e831506ffdeef494",
+      "size_bytes": 4064,
+      "sha256": "3bd6d55a892909a3534bbf4a2814eb73475433785919c5806a57abc5c01ae8ea",
       "category": "site-source-v23",
       "original_source_sha256": "80451f2d590ce115f10134fa3797fbc98c38ae8a976a3f4448cb4751ad4b1cee",
-      "note": "Original README content retained below an explicit partial-import status notice."
+      "note": "Original README content retained below explicit archive/restoration status notice."
     },
     {
       "target_path": "app/ai-test/page.tsx",
@@ -1298,8 +1298,8 @@
       "category": "standalone-art-source-reference"
     }
   ],
-  "preservation_status": "PARTIAL: one original runtime binary pending upload",
-  "repository_file_count": 214,
+  "preservation_status": "ALL_SELECTED_SOURCE_BYTES_PRESERVED; one runtime asset requires restoration from its lossless gzip archive",
+  "repository_file_count": 217,
   "expected_full_repository_file_count": 215,
   "missing_files": [
     {
@@ -1307,8 +1307,15 @@
       "size_bytes": 13700928,
       "git_blob_sha": "d2ee073a4841a9e1ca798bca368dbe1eba3cecb3",
       "sha256": "57d7ee5b3c4e0b99eaadefb8095283bed44986beaa5a91c096dd7a0c514bf9c2",
-      "reason": "Connector MCP request exceeds 16 MiB; browser file picker and subsequent read-only inspection stalled.",
-      "placeholder_included": false
+      "reason": "Original bytes are preserved in a verified lossless gzip archive; runtime target is absent until restoration.",
+      "placeholder_included": false,
+      "archive_path": "preservation-archives/porcelain-hero-blink-v1.glb.gz",
+      "archive_size_bytes": 10310913,
+      "archive_sha256": "09f11f913f4853ea2050a007618ec607e7a6e4350403f7e4bdd91a68e542f3a1",
+      "source_bytes_preserved": true
     }
-  ]
+  ],
+  "source_content_complete": true,
+  "runtime_checkout_complete": false,
+  "restoration_command": "python3 scripts/restore-preserved-assets.py"
 }
