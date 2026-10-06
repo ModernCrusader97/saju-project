@@ -1,7 +1,7 @@
-> **All selected source bytes are preserved; one original asset requires restoration after checkout.**
-> `public/models/porcelain-hero-blink-v1.glb` is preserved losslessly as `preservation-archives/porcelain-hero-blink-v1.glb.gz` because the connector could not upload the original 13,700,928-byte binary directly and browser upload stalled. The runtime path is absent until you run `python3 scripts/restore-preserved-assets.py` from the repository. The script verifies both archive and original SHA-256 values and refuses to overwrite different content. This is not a ready-to-run checkout claim. Standalone B art has not been integrated into the runtime, and no new Site publication occurred.
+> **Preserved source art now supplies the approved B spirit and v002 evolving light.**
+> The 13,700,928-byte original `public/models/porcelain-hero-blink-v1.glb` remains archived losslessly in `preservation-archives/porcelain-hero-blink-v1.glb.gz`. The README Python restoration script is retained and was executed with both hashes verified. `npm run dev` and `npm run build` now also restore that asset with Node's standard gzip support, refusing to replace different content, and copy the four checksum-verified v002 runtime assets from their canonical source package. See [the integration notes](docs/UNIVERSE_INTEGRATION.md). No Site deployment or access change is part of this branch.
 
-# 사주도령 전체 비공개 테스트
+# 나의 우주 · 전체 비공개 테스트
 
 Full original experience ported to Sites Workers: home, daily view, manse calculator, planet/avatar studio, saved fortunes and conversations, guin map creation/detail, and the retained material comparison lab.
 

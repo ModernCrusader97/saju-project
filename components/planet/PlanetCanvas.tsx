@@ -1,9 +1,10 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
+import { bindSceneGestures } from "@/lib/planet/scene-gestures";
 import * as THREE from "three";
 import { MAX_LIVING_RADIAL_RELIEF } from "@/lib/planet/living-surface-shader";
-import { RoomEnvironment } from "three/addons/environments/RoomEnvironment.js";
+import { createStudioEnvironment } from "@/lib/planet/scene-environment";
 import { createSurfaceEffects, animateSurfaceEffects, disposeSurfaceEffects } from "@/lib/planet/surface-effects";
 import { getStemThemePreset } from "@/lib/planet/theme-library";
 import { createPlanetMaterial, animateSurface, resetSurface } from "@/lib/planet/surface-material";
@@ -20,6 +21,7 @@ interface PlanetCanvasProps {
   yearKey: string;   // SLOT-Y (연주 고리/소행성대)
   maskStyle?: MaskStyle;
   isUnknownTime?: boolean; // 시간 모름일 경우 위성 숨김 여부
+  onCapture?: (dataUrl: string) => void;
 }
 
 export default function PlanetCanvas({
@@ -29,6 +31,7 @@ export default function PlanetCanvas({
   yearKey,
   maskStyle = "pangaea",
   isUnknownTime = false,
+  onCapture,
 }: PlanetCanvasProps) {
   // Full pillar keys remain props/data; only heavenly stems reach rendering.
   const presetD = getStemThemePreset(dayKey);
@@ -65,6 +68,7 @@ export default function PlanetCanvas({
     const container = containerRef.current;
     const width = container.clientWidth || 360;
     const height = container.clientHeight || 460;
+    const low = window.matchMedia("(max-width: 640px), (pointer: coarse)").matches;
 
     // 씬
     const scene = new THREE.Scene();
@@ -80,7 +84,7 @@ export default function PlanetCanvas({
     let renderer: THREE.WebGLRenderer;
     try {
       renderer = new THREE.WebGLRenderer({
-      antialias: true,
+      antialias: !low,
       alpha: true,
       powerPreference: "high-performance",
       preserveDrawingBuffer: true, // 이미지 캡처 지원
@@ -89,11 +93,12 @@ export default function PlanetCanvas({
       setGraphicsError("3D 화면을 사용할 수 없어요. WebGL을 지원하는 브라우저에서 다시 열어주세요.");
       return;
     }
-    renderer.debug.onShaderError = () => {
+    let shaderFailed = false;
+    renderer.debug.onShaderError = () => { shaderFailed = true;
       setGraphicsError("이 기기에서 입체 재질을 표시하지 못했어요. 브라우저 이름과 화면을 알려주세요.");
     };
     renderer.setSize(width, height);
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.75));
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, low ? 1.25 : 1.75));
     renderer.shadowMap.enabled = true;
     renderer.shadowMap.type = THREE.PCFSoftShadowMap;
     renderer.outputColorSpace = THREE.SRGBColorSpace;
@@ -103,13 +108,9 @@ export default function PlanetCanvas({
     container.appendChild(renderer.domElement);
 
     // Locally generated studio reflections give water and metal real specular structure.
-    const roomEnvironment = new RoomEnvironment();
-    const pmrem = new THREE.PMREMGenerator(renderer);
-    const reflectionTarget = pmrem.fromScene(roomEnvironment, 0.035);
-    scene.environment = reflectionTarget.texture;
-    scene.environmentIntensity = 1.1;
-    roomEnvironment.dispose();
-    pmrem.dispose();
+    let reflectionTarget: THREE.WebGLRenderTarget;
+    try { reflectionTarget = createStudioEnvironment(renderer); scene.environment = reflectionTarget.texture; scene.environmentIntensity = 1.1; }
+    catch { renderer.dispose(); renderer.forceContextLoss(); rendererRef.current = null; container.replaceChildren(); setGraphicsError("반사광을 준비하지 못했어요. 아래 사주 구성은 계속 확인할 수 있어요."); return; }
 
     // 조명 (주 태양광 + 은은한 보조광)
     const ambientLight = new THREE.AmbientLight(0xffffff, 0.22);
@@ -142,7 +143,7 @@ export default function PlanetCanvas({
     planetRootRef.current = planetRoot;
 
     // A. 공통 본체 구체 메쉬 (SLOT-D 70% + SLOT-M 30%)
-    const sphereGeo = new THREE.SphereGeometry(1.85, 96, 64);
+    const sphereGeo = new THREE.SphereGeometry(1.85, low ? 64 : 96, low ? 40 : 64);
     sphereGeo.computeBoundingSphere();
     if (sphereGeo.boundingSphere) sphereGeo.boundingSphere.radius *= 1 + MAX_LIVING_RADIAL_RELIEF;
     const mainMat = new THREE.MeshStandardMaterial({
@@ -176,60 +177,19 @@ export default function PlanetCanvas({
     asteroidBeltPointsRef.current = belt.points;
 
     // 마우스 / 터치 인터랙션
-    const onMouseDown = (e: MouseEvent) => {
-      isDragging.current = true;
-      previousMousePosition.current = { x: e.clientX, y: e.clientY };
-    };
-
-    const onMouseMove = (e: MouseEvent) => {
-      if (!isDragging.current || !planetRootRef.current) return;
-      const deltaX = e.clientX - previousMousePosition.current.x;
-      const deltaY = e.clientY - previousMousePosition.current.y;
-
-      planetRootRef.current.rotation.y += deltaX * 0.008;
-      planetRootRef.current.rotation.x += deltaY * 0.008;
-
-      previousMousePosition.current = { x: e.clientX, y: e.clientY };
-    };
-
-    const onMouseUp = () => {
-      isDragging.current = false;
-    };
-
-    const onTouchStart = (e: TouchEvent) => {
-      if (e.touches.length === 1) {
-        isDragging.current = true;
-        previousMousePosition.current = { x: e.touches[0].clientX, y: e.touches[0].clientY };
-      }
-    };
-
-    const onTouchMove = (e: TouchEvent) => {
-      if (!isDragging.current || e.touches.length !== 1 || !planetRootRef.current) return;
-      const deltaX = e.touches[0].clientX - previousMousePosition.current.x;
-      const deltaY = e.touches[0].clientY - previousMousePosition.current.y;
-
-      planetRootRef.current.rotation.y += deltaX * 0.008;
-      planetRootRef.current.rotation.x += deltaY * 0.008;
-
-      previousMousePosition.current = { x: e.touches[0].clientX, y: e.touches[0].clientY };
-    };
-
-    const onTouchEnd = () => {
-      isDragging.current = false;
-    };
-
     const dom = renderer.domElement;
-    dom.style.touchAction = "none";
-    const onContextLost = (event: Event) => { event.preventDefault(); setGraphicsError("3D 연결이 잠시 끊겼어요. 복구를 기다려주세요."); };
-    const onContextRestored = () => setGraphicsError(null);
+    let contextLost = false;
+    const detachGestures = bindSceneGestures(dom, {
+      dragging: active => { isDragging.current = active; },
+      rotate: (dx, dy) => { if (planetRootRef.current) { planetRootRef.current.rotation.y += dx * .008; planetRootRef.current.rotation.x += dy * .008; } },
+    });
+    const onContextLost = (event: Event) => { event.preventDefault(); contextLost = true; setGraphicsError("3D 연결이 잠시 끊겼어요. 복구를 기다려주세요."); };
+    const onContextRestored = () => {
+      try { const restored = createStudioEnvironment(renderer); reflectionTarget.dispose(); reflectionTarget = restored; scene.environment = restored.texture; contextLost = false; shaderFailed = false; setGraphicsError(null); }
+      catch { setGraphicsError("반사광을 복구하지 못했어요. 화면을 다시 열어주세요."); }
+    };
     dom.addEventListener("webglcontextlost", onContextLost);
     dom.addEventListener("webglcontextrestored", onContextRestored);
-    dom.addEventListener("mousedown", onMouseDown);
-    window.addEventListener("mousemove", onMouseMove);
-    window.addEventListener("mouseup", onMouseUp);
-    dom.addEventListener("touchstart", onTouchStart, { passive: true });
-    window.addEventListener("touchmove", onTouchMove, { passive: true });
-    window.addEventListener("touchend", onTouchEnd);
 
     const handleResize = () => {
       if (!containerRef.current || !rendererRef.current || !cameraRef.current) return;
@@ -259,7 +219,7 @@ export default function PlanetCanvas({
       animationFrameId = requestAnimationFrame(animate);
       const dt = safeDelta(now, previousTime);
       previousTime = now;
-      if (document.hidden) return;
+      if (document.hidden || contextLost || shaderFailed) return;
       if (!isDragging.current && isAutoRotatingRef.current) {
         motionTimeRef.current += dt;
         const t = motionTimeRef.current;
@@ -287,12 +247,7 @@ export default function PlanetCanvas({
       resizeObserver.disconnect();
       reducedMotion.removeEventListener("change", updateMotionPreference);
       document.removeEventListener("visibilitychange", onVisibility);
-      dom.removeEventListener("mousedown", onMouseDown);
-      window.removeEventListener("mousemove", onMouseMove);
-      window.removeEventListener("mouseup", onMouseUp);
-      dom.removeEventListener("touchstart", onTouchStart);
-      window.removeEventListener("touchmove", onTouchMove);
-      window.removeEventListener("touchend", onTouchEnd);
+      detachGestures();
       if (surfaceEffectsRef.current) {
         disposeSurfaceEffects(surfaceEffectsRef.current);
         surfaceEffectsRef.current = null;
@@ -372,9 +327,10 @@ export default function PlanetCanvas({
   };
 
   const handleCaptureSnapshot = () => {
-    if (!rendererRef.current) return;
+    if (!rendererRef.current || graphicsError) return;
     try {
       const dataUrl = rendererRef.current.domElement.toDataURL("image/png");
+      onCapture?.(dataUrl);
       const a = document.createElement("a");
       a.href = dataUrl;
       a.download = `사주행성_${dayKey}_${monthKey}.png`;
@@ -388,7 +344,7 @@ export default function PlanetCanvas({
   };
 
   return (
-    <div className="relative w-full h-full min-h-[440px] rounded-[32px] overflow-hidden bg-gradient-to-b from-[#0A0D18] via-[#10162A] to-[#151D36] border border-white/10 shadow-2xl">
+    <div className="planet-stage relative w-full h-full min-h-[440px] rounded-[32px] overflow-hidden border border-doryeong-border" data-scene="planet" data-scene-state={graphicsError?"fallback":"ready"}>
       {graphicsError && <div role="status" className="absolute inset-0 z-20 flex items-center justify-center p-8 text-center text-sm text-white bg-[#0A0D18]/90">{graphicsError}</div>}
       {/* 3D WebGL 캔버스 컨테이너 */}
       <div ref={containerRef} className="w-full h-full cursor-grab active:cursor-grabbing" />

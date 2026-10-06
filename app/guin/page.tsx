@@ -3,7 +3,8 @@
 import { readApiResponse } from "@/lib/http-client";
 
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { readUniverseSession, rememberGalaxyPath } from "@/lib/universe-state";
 
 import Header from "@/components/Header";
 import { Compass, Sparkles, Share2, Users, ArrowRight } from "lucide-react";
@@ -18,6 +19,14 @@ export default function GuinPage() {
   const [birthMinute, setBirthMinute] = useState("30");
   const [isUnknownTime, setIsUnknownTime] = useState(false);
   const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    const saved = readUniverseSession();
+    if (!saved) return;
+    const birth = saved.birth;
+    setName(birth.name); setBirthYear(birth.year); setBirthMonth(birth.month);
+    setBirthDay(birth.day); setBirthHour(birth.hour); setBirthMinute(birth.minute);
+    setIsUnknownTime(birth.unknown);
+  }, []);
 
   const handleCreate = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -40,6 +49,7 @@ export default function GuinPage() {
       });
       const data = await readApiResponse(res);
       if (data.success && data.guinMap) {
+        rememberGalaxyPath(`/guin/${data.guinMap.id}`);
         window.location.assign(`/guin/${data.guinMap.id}`);
       } else {
         alert(data.error || "지도 생성 실패");
@@ -52,7 +62,7 @@ export default function GuinPage() {
   };
 
   return (
-    <div className="min-h-screen pb-24">
+    <div className="galaxy-page min-h-screen pb-24">
       <Header />
 
       <div className="px-5 pt-3 space-y-6">
@@ -113,7 +123,7 @@ export default function GuinPage() {
                 type="text"
                 required
                 placeholder="예: 별이"
-                value={name}
+                aria-label="은하 이름" value={name}
                 onChange={(e) => setName(e.target.value)}
                 className="w-full px-4 py-3 rounded-xl border border-doryeong-border bg-doryeong-ivory text-sm focus:outline-none focus:border-doryeong-navy font-medium"
               />
@@ -127,9 +137,9 @@ export default function GuinPage() {
                 <div className="flex items-center rounded-xl border border-doryeong-border bg-doryeong-ivory px-2 py-2.5">
                   <input
                     type="number"
-                    min="1930"
-                    max="2030"
-                    value={birthYear}
+                    min="1900"
+                    max="2100"
+                    aria-label="은하 연도" value={birthYear}
                     onChange={(e) => setBirthYear(e.target.value)}
                     className="w-full text-center text-sm font-semibold bg-transparent focus:outline-none"
                   />
@@ -140,7 +150,7 @@ export default function GuinPage() {
                     type="number"
                     min="1"
                     max="12"
-                    value={birthMonth}
+                    aria-label="은하 월" value={birthMonth}
                     onChange={(e) => setBirthMonth(e.target.value)}
                     className="w-full text-center text-sm font-semibold bg-transparent focus:outline-none"
                   />
@@ -151,7 +161,7 @@ export default function GuinPage() {
                     type="number"
                     min="1"
                     max="31"
-                    value={birthDay}
+                    aria-label="은하 일" value={birthDay}
                     onChange={(e) => setBirthDay(e.target.value)}
                     className="w-full text-center text-sm font-semibold bg-transparent focus:outline-none"
                   />
@@ -168,7 +178,7 @@ export default function GuinPage() {
                 <label className="text-[11px] text-doryeong-textMuted flex items-center gap-1 cursor-pointer">
                   <input
                     type="checkbox"
-                    checked={isUnknownTime}
+                    aria-label="은하 시간 모름" checked={isUnknownTime}
                     onChange={(e) => setIsUnknownTime(e.target.checked)}
                     className="rounded accent-doryeong-navy"
                   />
@@ -183,7 +193,7 @@ export default function GuinPage() {
                       type="number"
                       min="0"
                       max="23"
-                      value={birthHour}
+                      aria-label="은하 시" value={birthHour}
                       onChange={(e) => setBirthHour(e.target.value)}
                       className="w-full text-center text-sm font-semibold bg-transparent focus:outline-none"
                     />
@@ -194,7 +204,7 @@ export default function GuinPage() {
                       type="number"
                       min="0"
                       max="59"
-                      value={birthMinute}
+                      aria-label="은하 분" value={birthMinute}
                       onChange={(e) => setBirthMinute(e.target.value)}
                       className="w-full text-center text-sm font-semibold bg-transparent focus:outline-none"
                     />
