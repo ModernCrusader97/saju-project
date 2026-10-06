@@ -253,7 +253,8 @@ try {
     if(savedGalaxyPath) {
       await view.goto(origin+savedGalaxyPath,{waitUntil:'networkidle'}); await waitScene(view,'galaxy');
       const quality=await view.evaluate(()=>{const r=window.__sceneQa.find(r=>r.canvas.closest('[data-scene="galaxy"]'));return{points:[...r.points],ratio:r.gl.drawingBufferWidth/r.canvas.clientWidth,antialias:r.gl.getContextAttributes().antialias};});
-      assert(quality.points.includes(9000),JSON.stringify(quality)); assert(quality.ratio<=1.26); assert.equal(quality.antialias,false);
+      // The spiral renderer splits its 9,000 stars into 90% arm and 10% core draws.
+      assert(quality.points.includes(8100)&&quality.points.includes(900),JSON.stringify(quality)); assert(quality.ratio<=1.26); assert.equal(quality.antialias,false);
       await view.screenshot({path:path.join(output,'galaxy-mobile-coarse.png'),fullPage:true}); checks.push({name:'Mobile quality evidence',...quality});
     }
     await reduced.close();
