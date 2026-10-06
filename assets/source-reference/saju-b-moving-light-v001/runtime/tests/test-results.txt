@@ -1,0 +1,19 @@
+✔ pins the immutable six-second, 128-cubed atlas and emission contract (1.38492ms)
+✔ loop has zero origin, exact endpoint, negative wrapping and analytic quarter phase (1.650611ms)
+✔ analytic derivative and one-sided seam derivatives agree (0.220182ms)
+✔ loop values are finite and bounded for finite time; non-finite input is rejected (2.415224ms)
+✔ texel centers span endpoints and z-tile boundaries without bleeding (0.2788ms)
+✔ CPU trilinear sampler reconstructs an affine field, including inter-tile z interpolation (0.359021ms)
+✔ sampler clamps each axis to its domain boundary (0.414265ms)
+✔ uint16 atlas values are normalized once; malformed atlas and inputs reject (290.149865ms)
+✔ emission and BRDF-isolation masks use their separate fixed ramps (0.578021ms)
+✔ both masks travel through one field offset; output is spatial, not a global brightness multiplier (0.599404ms)
+✔ verified body-local adapter maps source texspace extrema and center correctly (0.421015ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 411.179253

@@ -1,0 +1,197 @@
+[
+  {
+    "file": "README_ko.txt",
+    "bytes": 3683,
+    "sha256": "d50cbccded6db14710f74ca15e66c579664e67240a4915201a354c8061226453"
+  },
+  {
+    "file": "SaJu_Jade_MovingLight_12s_Preview_v001.mp4",
+    "bytes": 766782,
+    "sha256": "a9d0de82d2c9ce7934dc287d37752cb73d3bf900125db5a97b59f46919010e7e"
+  },
+  {
+    "file": "SaJu_Jade_MovingLight_Loop6s_v001.mp4",
+    "bytes": 383826,
+    "sha256": "ecd4a3059f9986ababfbf6b4287465ccfa04786be73c7f8d0527ccd8474c7689"
+  },
+  {
+    "file": "SaJu_Jade_Moving_Green_Light_v001.blend",
+    "bytes": 10901917,
+    "sha256": "ea9fcc1b6c258edf2d7564ceb00b21358d9bb6cc7844d17b2dfd1d84289463ca"
+  },
+  {
+    "file": "SaJu_Jade_Moving_Light_Keyframes_v001.jpg",
+    "bytes": 168158,
+    "sha256": "f335c14592623f6ec4c391f4ddf34f273b006ab9e83605a7752d1bfc92dd958b"
+  },
+  {
+    "file": "approved_static_reference_320.png",
+    "bytes": 188355,
+    "sha256": "c6c34c564514ea13c015359a7e0191fc02acb3563d58c8a3b2312ea6f19c7c10"
+  },
+  {
+    "file": "bake_native_probes.py",
+    "bytes": 4101,
+    "sha256": "e7757d5e5d2734e2f9720e0c47d12d22a80a4003f244e227466ac776d0b730de"
+  },
+  {
+    "file": "bake_noise_atlas.py",
+    "bytes": 5411,
+    "sha256": "2f5e12b878ac41a2f268e1bbdcca64b666a0eaaf7be9602b16a2426ce591d82b"
+  },
+  {
+    "file": "build_and_render_flow.py",
+    "bytes": 4083,
+    "sha256": "62e98ca9dec627e3f4785dd6d7f2b4f31bb7620c2d4ebcc285d8d1d6532795e7"
+  },
+  {
+    "file": "flow_parameters.json",
+    "bytes": 1318,
+    "sha256": "02c9d85839185ecbadf038a7d1462f6e9b2c5de1f416f55a694feb73c8c48f88"
+  },
+  {
+    "file": "movie_qa.json",
+    "bytes": 636,
+    "sha256": "45f48abb76c2114eaa50ef91e74a977e3129c0805ea8713218b26545cb7eab8d"
+  },
+  {
+    "file": "preview_keyframes/001.png",
+    "bytes": 188342,
+    "sha256": "92956674ee90c5cf04f4ae3d95993c4c6dd23bd5e803bef7671c5ff59adcb17b"
+  },
+  {
+    "file": "preview_keyframes/019.png",
+    "bytes": 189355,
+    "sha256": "b0f5d6a003b4b769db309c5f46ee59d9d837e1a3d9c8ad3f646ee25dad6fda07"
+  },
+  {
+    "file": "preview_keyframes/037.png",
+    "bytes": 189524,
+    "sha256": "7cb2de5c01371d23739a871f31275b329180371d70e6d94e60d56ea8d4709ca5"
+  },
+  {
+    "file": "preview_keyframes/055.png",
+    "bytes": 189256,
+    "sha256": "70b1af546b29f8c7c5599ea69ad660ef1fdaa3edd3e97c0e3bdc026e48062ddd"
+  },
+  {
+    "file": "preview_keyframes/073.png",
+    "bytes": 188342,
+    "sha256": "aef67caaa207f0937dd7732b41a02bca5f987f9616dd893ca515a170c71a66dd"
+  },
+  {
+    "file": "reference/SaJu_Jade_Approved_Static_Material.glb",
+    "bytes": 4293332,
+    "sha256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84"
+  },
+  {
+    "file": "render_static_reference.py",
+    "bytes": 686,
+    "sha256": "109443d825ad7832da17573aa80a0a9709fba93e4eb723521d48436e61aeb06b"
+  },
+  {
+    "file": "runtime/README_ko.txt",
+    "bytes": 10072,
+    "sha256": "497e4d672ff3f0e119031bb23941f230188512675c2ba4d7a42ab985a42e3bc4"
+  },
+  {
+    "file": "runtime/atlas-metadata.json",
+    "bytes": 1056,
+    "sha256": "6d5ad6cfad35b42f2dbaf78a973482bdd0eebf82f751beb69ff9422e5cca770d"
+  },
+  {
+    "file": "runtime/native-field-probes.json",
+    "bytes": 21041,
+    "sha256": "1cb0ac1821e2d7b6207449825954ee972153dc8ad0ecb7b3f00164877a7d22b4"
+  },
+  {
+    "file": "runtime/saju-jade-flow.glsl",
+    "bytes": 4711,
+    "sha256": "536b95545a51284a0fec3f070f842c5d9c6ec9999f922943dff6a7829a1c8418"
+  },
+  {
+    "file": "runtime/saju-jade-flow.mjs",
+    "bytes": 5893,
+    "sha256": "d484cbee398dba463ce3056a14ed5b5e825bf640459ad500829fad8551449ba6"
+  },
+  {
+    "file": "runtime/tests/check_glsl_mesa.py",
+    "bytes": 9823,
+    "sha256": "eaf24f59e4d0a5ed36592e516b0aa3dc39a417e6bf5070a17460041e6c81d47c"
+  },
+  {
+    "file": "runtime/tests/check_native_atlas.mjs",
+    "bytes": 3870,
+    "sha256": "515bc2f1fa8a756cdb44a16bd6ee893a3d2a4ba3389e64737a6a8ba5765ad816"
+  },
+  {
+    "file": "runtime/tests/final-cpu-test-results.txt",
+    "bytes": 1117,
+    "sha256": "967deefbcac4d4390e2480ab5fa8a4bfb5b325feeac3292f2d79765955eb14c5"
+  },
+  {
+    "file": "runtime/tests/final-mesa-check.txt",
+    "bytes": 425,
+    "sha256": "e850734285131a770c90fbb0d666c6c1d776b51dd5119368573699acda7c77c0"
+  },
+  {
+    "file": "runtime/tests/final-native-atlas-check.txt",
+    "bytes": 798,
+    "sha256": "1600cfcb5abd817d7168e89666b41904a984ebf6523ed553cf6d4fde40462a0f"
+  },
+  {
+    "file": "runtime/tests/glsl-mesa-errors.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "file": "runtime/tests/glsl-mesa-results.json",
+    "bytes": 425,
+    "sha256": "e850734285131a770c90fbb0d666c6c1d776b51dd5119368573699acda7c77c0"
+  },
+  {
+    "file": "runtime/tests/native-atlas-results.json",
+    "bytes": 797,
+    "sha256": "e49d2bc6aed97686dabf9142d182590cc1aba81ccd2b133aea3f5a0c52ffafb2"
+  },
+  {
+    "file": "runtime/tests/png-raw-verification.json",
+    "bytes": 125,
+    "sha256": "8b9cc025207ff3e47aad833553688916d5356ba5ca1a5441701e8232c54ccf2a"
+  },
+  {
+    "file": "runtime/tests/saju-jade-flow.test.mjs",
+    "bytes": 6759,
+    "sha256": "68dd03199345b0f86bed464709c63e31baf84511f3c05c5e82d8587535fad6be"
+  },
+  {
+    "file": "runtime/tests/test-results.txt",
+    "bytes": 1114,
+    "sha256": "e08c786fac745881bf4f8e8e4518d4b2b96fa2cc67092b1546d86d30e0679caf"
+  },
+  {
+    "file": "runtime/textures/Jade_OriginalBaseColor_1024.png",
+    "bytes": 804444,
+    "sha256": "29bdd5ab8a2c87715fd3aedae3f0465c8b6910b5a9c0e8b8bffeb84a03c6b824"
+  },
+  {
+    "file": "runtime/textures/jade_field_atlas_128.png",
+    "bytes": 3569004,
+    "sha256": "1987d11a0d4c0c261ec7adb61c536c6e542ed5f3c7667274b4abe15d14117296"
+  },
+  {
+    "file": "runtime/textures/jade_field_atlas_128.u16le",
+    "bytes": 4194304,
+    "sha256": "e93d72ea0d7571669f345263e1948f907dce35d48cb6fd148b38dc81cb5bbc4c"
+  },
+  {
+    "file": "source_reproduction_qa.json",
+    "bytes": 223,
+    "sha256": "e0fd8254725e79419c191ee411e8eaee88981c00e6e692ebbc20210d02edba4d"
+  },
+  {
+    "file": "verify_movie.py",
+    "bytes": 2403,
+    "sha256": "d18a77f37b6a96ab8a4c52d7f073600e1b900c6db87f0127177240d2d472ab15"
+  }
+]

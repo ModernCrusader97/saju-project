@@ -1,0 +1,38 @@
+{
+  "dimension": 128,
+  "columns": 16,
+  "rows": 8,
+  "width": 2048,
+  "height": 1024,
+  "domainMin": [
+    -0.2,
+    -0.05,
+    -0.3
+  ],
+  "domainMax": [
+    1.2,
+    1.2,
+    1.1
+  ],
+  "sampleGrid": "grid endpoints i/127",
+  "sourceRow0": "z-tile-row0; within-tile y-minimum; canonical source rows increase toward y maximum",
+  "pixelFormat": "uint16 little-endian normalized by65535; row-major",
+  "png": "16-bit grayscale; file top row is canonical source row0",
+  "atlasPng": "jade_field_atlas_128.png",
+  "atlasRaw": "jade_field_atlas_128.u16le",
+  "minValue": 0.20268146693706512,
+  "maxValue": 0.7980170845985413,
+  "raw_sha256": "e93d72ea0d7571669f345263e1948f907dce35d48cb6fd148b38dc81cb5bbc4c",
+  "noise": {
+    "W": 0.0,
+    "Scale": 4.300000190734863,
+    "Detail": 3.200000047683716,
+    "Roughness": 0.6499999761581421,
+    "Lacunarity": 2.0,
+    "Offset": 0.0,
+    "Gain": 1.0,
+    "Distortion": 0.0
+  },
+  "noiseType": "3D FBM normalizedtrue",
+  "source": "Actual Blender procedural-node render, not a replacement noise approximation."
+}

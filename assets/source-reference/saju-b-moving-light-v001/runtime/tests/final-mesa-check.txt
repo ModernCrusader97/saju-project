@@ -1,0 +1,18 @@
+{
+  "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "version": "OpenGL ES 3.2 Mesa 25.0.7-2+deb13u1",
+  "results": [
+    {
+      "dialect": "100",
+      "compiled_and_linked": true,
+      "numerical_checks": 289,
+      "max_abs_error": 3.2369230207329736e-07
+    },
+    {
+      "dialect": "300 es",
+      "compiled_and_linked": true,
+      "numerical_checks": 289,
+      "max_abs_error": 3.2369230207329736e-07
+    }
+  ]
+}
