@@ -1,0 +1,29 @@
+{
+  "source": "SaJu_B_Jade_Emission050_20261006.blend",
+  "emission_strength_before": 2.0,
+  "emission_strength_after": 2.0,
+  "old_emission_color_linear_rgba": [
+    0.12999999523162842,
+    1.0,
+    0.2199999988079071,
+    1.0
+  ],
+  "new_emission_color_linear_rgba": [
+    0.001,
+    0.65,
+    0.3,
+    1
+  ],
+  "base_jade_ramp_unchanged": true,
+  "geometry_coordinate_sha256": "b0168d62c9f6369262b9f048df331b766e7f3e212a5d9d7b25e98dd009fb03dd",
+  "camera_lighting_exposure_unchanged": true,
+  "emission_cloud_thresholds_unchanged": [
+    0.5,
+    0.7200000286102295
+  ],
+  "tone_mapping": "AgX",
+  "frame": 1,
+  "full_geometry_morph_transform_hash_before": "43eb9e4ec3aab55ebbc6aef0eacd0da6461048ad1e1d31fa61dc5b135841c084",
+  "full_geometry_morph_transform_hash_after": "43eb9e4ec3aab55ebbc6aef0eacd0da6461048ad1e1d31fa61dc5b135841c084",
+  "full_unaffected_state_fresh_comparison_pass": true
+}

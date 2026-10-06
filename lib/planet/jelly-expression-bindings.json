@@ -1,0 +1,73 @@
+{
+  "rootNode": 9,
+  "faceNodes": [
+    1,
+    2,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "nodes": [
+    {
+      "name": "A | accessory socket",
+      "translation": [
+        0.4099999964237213,
+        2.059999942779541,
+        -0.019999999552965164
+      ]
+    },
+    {
+      "mesh": 0,
+      "name": "A | almond gaze -1"
+    },
+    {
+      "mesh": 1,
+      "name": "A | almond gaze 1"
+    },
+    {
+      "mesh": 2,
+      "name": "A | continuous asymmetric jelly",
+      "translation": [
+        0,
+        1.190000057220459,
+        0
+      ]
+    },
+    {
+      "mesh": 3,
+      "name": "A | expressive brow -1"
+    },
+    {
+      "mesh": 4,
+      "name": "A | expressive brow 1"
+    },
+    {
+      "mesh": 5,
+      "name": "A | quiet smile"
+    },
+    {
+      "mesh": 6,
+      "name": "A | small eye glint -1"
+    },
+    {
+      "mesh": 7,
+      "name": "A | small eye glint 1"
+    },
+    {
+      "children": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "name": "JellyExpressionRoot"
+    }
+  ]
+}

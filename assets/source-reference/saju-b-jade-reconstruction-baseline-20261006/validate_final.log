@@ -1,0 +1,76 @@
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/agent/.config/blender').
+16:15:57 | INFO: Data are loaded, start creating Blender stuff
+16:15:57 | INFO: Blender create Mesh node Sphere
+16:15:57 | INFO: Blender create Mesh node Sphere.007
+16:15:57 | INFO: Blender create Mesh node B | expressive brow -1
+16:15:57 | INFO: Blender create Mesh node Sphere.009
+16:15:57 | INFO: Blender create Mesh node B | expressive brow 1
+16:15:57 | INFO: Blender create Mesh node B | quiet smile
+16:15:57 | INFO: Blender create Mesh node Sphere.010
+16:15:57 | INFO: Blender create Mesh node Sphere.011
+16:15:57 | INFO: glTF import finished in 0.11s
+{
+  "native_closed_components": [
+    31064
+  ],
+  "native_nonmanifold_edges": 0,
+  "native_sampled_poses": 21,
+  "native_finite_all": true,
+  "wave_max_edge_ratio": 4.365369006916251,
+  "wave_min_edge_ratio": 0.18064957356948666,
+  "native_vertices": 31064,
+  "native_triangles": 62124,
+  "native_morphs": [
+    "Basis",
+    "Gentle_wave_pose"
+  ],
+  "full_production_rig": false,
+  "browser_runtime_tested": false,
+  "gather_open_excluded": true,
+  "glb_animation_names": [
+    "Gentle_wave_study"
+  ],
+  "glb_external_uris": [],
+  "glb_reimport_meshes": 8,
+  "glb_reimport_morphs": {
+    "B candidate5 reconstructed | seamless body and mittens": [
+      "Basis",
+      "Gentle_wave_pose"
+    ]
+  },
+  "glb_pose_checks": [
+    {
+      "frame": 1,
+      "finite": true
+    },
+    {
+      "frame": 8,
+      "finite": true
+    },
+    {
+      "frame": 16,
+      "finite": true
+    },
+    {
+      "frame": 25,
+      "finite": true
+    },
+    {
+      "frame": 34,
+      "finite": true
+    },
+    {
+      "frame": 41,
+      "finite": true
+    },
+    {
+      "frame": 48,
+      "finite": true
+    }
+  ]
+}
+RELEASE_NATIVE_CLOSED_21_POSES_AND_GLB_REIMPORT_PASS
+Blender 4.3.2
+Read blend: "/workspace/scratch/c9f1a9454187/saju_jade_rebuild_v001/SaJu_B_Jade_Character_Study_Native.blend"
+
+Blender quit

@@ -1,0 +1,3 @@
+"use client";
+import {usePathname} from 'next/navigation';import {Orbit,Sun,Network,Notebook} from 'lucide-react';
+export default function BottomNav(){const path=usePathname();return <nav className="bottom-nav" aria-label="주 메뉴">{[{href:'/',label:'나의 우주',Icon:Orbit},{href:'/daily',label:'오늘',Icon:Sun},{href:'/guin',label:'관계',Icon:Network},{href:'/saved',label:'기록',Icon:Notebook}].map(({href,label,Icon})=><a key={href} href={href} aria-current={(path===href||(href==='/guin'&&path.startsWith('/guin/'))||(href==='/'&&path==='/planet'))?'page':undefined}><Icon size={21}/><span>{label}</span></a>)}</nav>}

@@ -1,0 +1,30 @@
+{
+  "rootNode": 8,
+  "faceNodes": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "rootName": "ElementExpressionRoot",
+  "morphNames": [
+    "Curious",
+    "Warm",
+    "Blink"
+  ],
+  "glbSha256": "adddd4af80479125b9750b15f36a91fdc74ab618c2fc1f99b8c2018095c0289b",
+  "nodeNames": {
+    "0": "earth | continuous original volume",
+    "1": "earth | eye glint",
+    "2": "earth | eye glint.001",
+    "3": "earth | gentle brow",
+    "4": "earth | gentle brow.001",
+    "5": "earth | quiet eye",
+    "6": "earth | quiet eye.001",
+    "7": "earth | small smile",
+    "8": "ElementExpressionRoot"
+  }
+}

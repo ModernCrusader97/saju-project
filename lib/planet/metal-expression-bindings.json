@@ -1,0 +1,30 @@
+{
+  "rootNode": 8,
+  "faceNodes": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "rootName": "ElementExpressionRoot",
+  "morphNames": [
+    "Curious",
+    "Warm",
+    "Blink"
+  ],
+  "glbSha256": "d01210e7870b94c96a0c1be4f4c1b147d059f91803f8ac0b294bc94b66ba9145",
+  "nodeNames": {
+    "0": "Metal | compact beveled ingot",
+    "1": "metal | eye glint",
+    "2": "metal | eye glint.001",
+    "3": "metal | gentle brow",
+    "4": "metal | gentle brow.001",
+    "5": "metal | quiet eye",
+    "6": "metal | quiet eye.001",
+    "7": "metal | small smile",
+    "8": "ElementExpressionRoot"
+  }
+}

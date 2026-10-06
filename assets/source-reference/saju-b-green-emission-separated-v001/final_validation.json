@@ -1,0 +1,30 @@
+{
+  "source_full_geometry_morph_transform_hash": "43eb9e4ec3aab55ebbc6aef0eacd0da6461048ad1e1d31fa61dc5b135841c084",
+  "final_full_geometry_morph_transform_hash": "43eb9e4ec3aab55ebbc6aef0eacd0da6461048ad1e1d31fa61dc5b135841c084",
+  "geometry_morph_camera_light_exposure_base_ramp_unchanged": true,
+  "emission_multiplier": 2.0,
+  "bloom_added": false,
+  "emission_mask_thresholds": [
+    0.5,
+    0.72
+  ],
+  "brdf_isolation_thresholds": [
+    0.38,
+    0.66
+  ],
+  "tone_mapping": "AgX",
+  "final_green_color_linear_rgb": [
+    0.001,
+    0.65,
+    0.08
+  ],
+  "emission_green_channel_test": {
+    "pixels": 28056,
+    "mean_absolute_delta": 0.005700673442333937,
+    "max_absolute_delta": 0.09129482507705688,
+    "mean_before": 0.2992481589317322,
+    "mean_after": 0.3049488365650177
+  },
+  "reimport_mesh_count": 8,
+  "reimport_7_sampled_frames_finite": true
+}
