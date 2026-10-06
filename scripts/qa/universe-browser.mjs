@@ -31,6 +31,7 @@ const mf = new Miniflare({
   outboundService: async request => { outbound.push(new URL(request.url).hostname); return new Response('QA blocks outbound requests', { status: 502 }); },
 });
 let browser, qaPage, savedGalaxyPath;
+let expectedNetworkFailure = false;
 const owner = { 'oai-authenticated-user-id': 'universe-browser-fixture', 'oai-authenticated-user-email': 'qa@example.invalid' };
 async function check(name, fn) {
   if (process.env.SAJU_QA_SECTION && !name.includes(process.env.SAJU_QA_SECTION)) return;
@@ -78,6 +79,15 @@ async function waitScene(page, name) {
   catch (error) { throw new Error(String(error) + '\n' + JSON.stringify(await page.evaluate(() => ({ url:location.href,text:document.body.innerText,scenes:[...document.querySelectorAll('[data-scene]')].map(el=>[el.dataset.scene,el.dataset.sceneState]) })))); }
   await page.waitForFunction(name => window.__sceneQa.some(r => r.canvas.closest('[data-scene="' + name + '"]') && r.draws > 0), name);
 }
+const sceneRaster = async (page, scene) => page.evaluate(async scene => {
+  const source = document.querySelector('[data-scene="' + scene + '"] canvas');
+  const image = new Image(); image.src = source.toDataURL('image/png'); await image.decode();
+  const canvas = document.createElement('canvas'); canvas.width = source.width; canvas.height = source.height;
+  const ctx = canvas.getContext('2d'); ctx.drawImage(image,0,0);
+  const data = ctx.getImageData(0,0,canvas.width,canvas.height).data, colors=new Set();
+  for(let i=0;i<data.length;i+=68)colors.add(`${data[i]},${data[i+1]},${data[i+2]}`);
+  return { image:source.toDataURL('image/png'), colors:colors.size };
+}, scene);
 async function fit(page, width, scene) {
   await page.setViewportSize({ width, height: 920 }); await page.waitForTimeout(200);
   const result = await page.evaluate(() => ({
@@ -112,7 +122,7 @@ try {
   });
   const page = await context.newPage(); qaPage = page; page.setDefaultTimeout(20000);
   page.on('pageerror', e => errors.push(e.message));
-  page.on('console', msg => { if (msg.type() === 'error') errors.push(msg.text()); });
+  page.on('console', msg => { if (msg.type() === 'error' && !expectedNetworkFailure) errors.push(msg.text()); });
   await page.goto(origin + (process.env.SAJU_QA_SECTION ? '/planet?view=spirit&name=Fixture%20One&y=2000&m=1&d=1&h=12&minute=30' : '/planet?view=spirit'), { waitUntil: 'networkidle' });
   await waitScene(page, 'spirit');
   await check('four responsive widths; 44px controls; 16px body; three tabs', async () => {
@@ -217,22 +227,118 @@ try {
     assert.equal(await page.evaluate(() => sessionStorage.getItem('saju:galaxy-path')), null);
     await page.getByText('시간을 몰라 위성은 쉬고 있어요.').waitFor();
   });
-  await check('context loss has honest fallback and restoration', async () => {
-    await page.evaluate(() => { window.__lostRecord=window.__sceneQa.find(r => r.canvas.closest('[data-scene="planet"]')); window.__lossExtension=window.__lostRecord.gl.getExtension('WEBGL_lose_context'); window.__lossExtension.loseContext(); });
-    await page.waitForSelector('[data-scene="planet"][data-scene-state="fallback"]');
-    const stopped=await page.evaluate(()=>window.__lostRecord.draws); await page.waitForTimeout(300); assert.equal(await page.evaluate(()=>window.__lostRecord.draws),stopped);
-    await page.evaluate(() => window.__lossExtension.restoreContext());
-    await page.waitForSelector('[data-scene="planet"][data-scene-state="ready"]');
+  await check('synchronized home input and Back/Forward keep only the matching galaxy', async () => {
+    await page.goto(origin + '/planet?name=Fixture%20A&y=2000&m=1&d=1&h=12&minute=30', { waitUntil:'networkidle' });
+    const a = await page.evaluate(() => JSON.parse(sessionStorage.getItem('saju:universe:v1')));
+    await page.goto(origin + '/guin', { waitUntil:'networkidle' });
+    await page.getByRole('button',{name:'귀인 지도 만들기'}).click(); await page.waitForURL(/\/guin\/[a-zA-Z0-9_-]+$/);
+    const pathA = new URL(page.url()).pathname;
+    await page.goto(origin + '/', { waitUntil:'networkidle' });
+    const homeRequests = [];
+    const observeHome = request => { const url=new URL(request.url()); if(request.isNavigationRequest()&&url.pathname==='/planet')homeRequests.push(url); };
+    page.on('request',observeHome);
+    for (const [label,value] of [['이름 또는 별명','Fixture B'],['연도','2001'],['월','2'],['일','3'],['태어난 시각','9']]) await page.getByLabel(label,{exact:true}).fill(value);
+    await page.getByRole('button',{name:'나의 우주 보기'}).click(); await page.waitForURL(/\/planet\?view=/);
+    await page.waitForFunction(() => JSON.parse(sessionStorage.getItem('saju:universe:v1'))?.birth.name === 'Fixture B');
+    page.off('request',observeHome);
+    assert(homeRequests.some(url=>url.searchParams.get('y')==='2001'&&url.searchParams.get('name')==='Fixture B'),'The legacy home request still sends birth query parameters');
+    assert.equal(new URL(page.url()).searchParams.has('y'),false);
+    checks.push({name:'Legacy home URL evidence',initialRequestContainsBirthQuery:true,clientReplacesQueryAfterHydration:true});
+    const b = await page.evaluate(() => JSON.parse(sessionStorage.getItem('saju:universe:v1')));
+    assert.notEqual(a.dayKey,b.dayKey);
+    assert.equal(await page.locator('.bottom-nav a').filter({hasText:'은하'}).getAttribute('href'),'/guin','Home B must not link to A');
+    assert.equal(await page.evaluate(() => sessionStorage.getItem('saju:galaxy-path')),null);
+    await page.goBack(); await page.goBack(); await page.waitForURL(origin + pathA);
+    await page.waitForFunction(() => JSON.parse(sessionStorage.getItem('saju:universe:v1'))?.birth.name === 'Fixture A');
+    assert.equal(await page.locator('.bottom-nav a').filter({hasText:'은하'}).getAttribute('href'),pathA);
+    await page.goForward(); await page.goForward(); await page.waitForURL(/\/planet\?view=/);
+    await page.waitForFunction(() => JSON.parse(sessionStorage.getItem('saju:universe:v1'))?.birth.name === 'Fixture B');
+    assert.equal(await page.locator('.bottom-nav a').filter({hasText:'은하'}).getAttribute('href'),'/guin');
+    // Native history entries inside the workspace must reconcile the owner too.
+    await page.getByLabel('스튜디오 이름',{exact:true}).fill(a.birth.name);
+    for (const field of ['year','month','day','hour','minute']) {
+      const label = {year:'연도',month:'월',day:'일',hour:'시',minute:'분'}[field];
+      await page.getByLabel('스튜디오 '+label,{exact:true}).fill(a.birth[field]);
+    }
+    await page.getByRole('button',{name:'내 사주 반영하기'}).click();
+    assert.equal(await page.locator('.bottom-nav a').filter({hasText:'은하'}).getAttribute('href'),pathA);
+    await page.goBack(); await page.waitForFunction(() => JSON.parse(sessionStorage.getItem('saju:universe:v1'))?.birth.name === 'Fixture B');
+    assert.equal(await page.locator('.bottom-nav a').filter({hasText:'은하'}).getAttribute('href'),'/guin');
+    await page.goForward(); await page.waitForFunction(() => JSON.parse(sessionStorage.getItem('saju:universe:v1'))?.birth.name === 'Fixture A');
+    assert.equal(await page.locator('.bottom-nav a').filter({hasText:'은하'}).getAttribute('href'),pathA);
+  });
+  await check('synchronized direct galaxy creation, cancelled/failed input and new-tab restoration', async () => {
+    await page.evaluate(() => sessionStorage.clear());
+    await page.goto(origin + '/guin',{waitUntil:'networkidle'});
+    const birthB = {name:'Fixture Direct B',year:'2002',month:'4',day:'5',hour:'6',minute:'17',unknown:false};
+    for (const [field,label] of [['name','이름'],['year','연도'],['month','월'],['day','일'],['hour','시'],['minute','분']]) await page.getByLabel('은하 '+label,{exact:true}).fill(birthB[field]);
+    await page.getByRole('button',{name:'귀인 지도 만들기'}).click(); await page.waitForURL(/\/guin\/[a-zA-Z0-9_-]+$/);
+    const mapPath = new URL(page.url()).pathname;
+    const map = (await (await page.request.get(origin + '/api' + mapPath)).json()).guinMap;
+    const ownerPillars = map.guins.find(person=>person.isMe).pillars;
+    const verify = async target => {
+      await target.waitForFunction(() => JSON.parse(sessionStorage.getItem('saju:universe:v1'))?.birth.name === 'Fixture Direct B');
+      const snapshot = await target.evaluate(() => JSON.parse(sessionStorage.getItem('saju:universe:v1')));
+      assert.deepEqual(snapshot.birth,birthB); assert.equal(snapshot.source,'calculated');
+      for (const field of ['dayKey','monthKey','yearKey','hourKey']) assert.equal(snapshot[field],ownerPillars[field]);
+      assert.equal(await target.locator('.bottom-nav a').filter({hasText:'은하'}).getAttribute('href'),mapPath);
+    };
+    await verify(page);
+    for (const mode of ['spirit','planet']) { await page.goto(origin+'/planet?view='+mode,{waitUntil:'networkidle'}); await verify(page); }
+    await page.reload({waitUntil:'networkidle'}); await verify(page);
+    const opened=page.waitForEvent('popup'); await page.evaluate(()=>window.open('/planet?view=spirit','_blank'));
+    const restored=await opened; await restored.waitForLoadState('networkidle'); await verify(restored);
+    await restored.reload({waitUntil:'networkidle'}); await verify(restored); await restored.close();
+    await page.goto(origin+'/guin',{waitUntil:'networkidle'});
+    await page.getByLabel('은하 이름').fill('Cancelled draft'); await page.getByLabel('은하 연도').fill('2003');
+    await page.goto(origin+'/planet?view=spirit',{waitUntil:'networkidle'}); await verify(page);
+    await page.goto(origin+'/guin',{waitUntil:'networkidle'});
+    const before = await page.evaluate(()=>({snapshot:sessionStorage.getItem('saju:universe:v1'),path:sessionStorage.getItem('saju:galaxy-path'),owner:sessionStorage.getItem('saju:galaxy-owner:v1')}));
+    await page.getByLabel('은하 이름').fill('Failed draft'); await page.getByLabel('은하 연도').fill('2003');
+    await page.route('**/api/guin',route=>route.fulfill({status:503,json:{success:false,error:'Synthetic save failure'}}));
+    expectedNetworkFailure = true;
+    const failed=page.waitForEvent('dialog').then(dialog=>dialog.dismiss()); await page.getByRole('button',{name:'귀인 지도 만들기'}).click(); await failed;
+    await page.waitForFunction(()=>!document.querySelector('button[type=submit]').disabled);
+    expectedNetworkFailure = false; await page.unroute('**/api/guin');
+    assert.deepEqual(await page.evaluate(()=>({snapshot:sessionStorage.getItem('saju:universe:v1'),path:sessionStorage.getItem('saju:galaxy-path'),owner:sessionStorage.getItem('saju:galaxy-owner:v1')})),before);
+    await page.getByLabel('은하 월').fill('2'); await page.getByLabel('은하 일').fill('30');
+    const invalid=page.waitForEvent('dialog').then(dialog=>dialog.dismiss()); await page.getByRole('button',{name:'귀인 지도 만들기'}).click(); await invalid;
+    assert.deepEqual(await page.evaluate(()=>({snapshot:sessionStorage.getItem('saju:universe:v1'),path:sessionStorage.getItem('saju:galaxy-path'),owner:sessionStorage.getItem('saju:galaxy-owner:v1')})),before);
+    await page.goto(origin+'/planet?view=planet',{waitUntil:'networkidle'}); await verify(page);
+    // Restore the original scene used by the remaining rendering checks.
+    await page.getByLabel('스튜디오 시간 모름').check(); await page.getByRole('button',{name:'내 사주 반영하기'}).click(); await waitScene(page,'planet');
+  });
+  await check('context loss restores actual draws and changing pixels in all three scenes', async () => {
+    let galaxyPath = savedGalaxyPath;
+    if (!galaxyPath) {
+      const result=await (await page.request.post(origin+'/api/guin',{data:{name:'Recovery Fixture',birthYear:2000,birthMonth:1,birthDay:1,birthHour:12,birthMinute:30,isUnknownTime:false}})).json();
+      galaxyPath='/guin/'+result.guinMap.id;
+    }
+    for(const scene of ['spirit','planet','galaxy']) {
+      await page.goto(origin+(scene==='galaxy'?galaxyPath:'/planet?view='+scene),{waitUntil:'networkidle'}); await waitScene(page,scene);
+      await page.evaluate(scene => { window.__lostRecord=window.__sceneQa.find(r => r.canvas.closest('[data-scene="'+scene+'"]')); window.__lossExtension=window.__lostRecord.gl.getExtension('WEBGL_lose_context'); window.__lossExtension.loseContext(); },scene);
+      await page.waitForSelector('[data-scene="'+scene+'"][data-scene-state="fallback"]');
+      const stopped=await page.evaluate(()=>window.__lostRecord.draws); await page.waitForTimeout(300); assert.equal(await page.evaluate(()=>window.__lostRecord.draws),stopped);
+      await page.evaluate(() => window.__lossExtension.restoreContext());
+      await page.waitForSelector('[data-scene="'+scene+'"][data-scene-state="ready"]');
+      await page.waitForFunction(stopped=>window.__lostRecord.draws>stopped+5,stopped);
+      const first=await sceneRaster(page,scene); assert(first.colors>20,'Recovered '+scene+' must render varied pixels');
+      await page.waitForTimeout(600); const second=await sceneRaster(page,scene); assert.notEqual(second.image,first.image,'Recovered '+scene+' must advance its visible frame');
+      checks.push({name:'Context recovery pixel/draw evidence',scene,colors:second.colors,drawsAfterRecovery:(await page.evaluate(()=>window.__lostRecord.draws))-stopped});
+      await page.screenshot({path:path.join(output,scene+'-restored.png'),fullPage:true});
+    }
+    await page.goto(origin+'/planet?view=planet',{waitUntil:'networkidle'}); await waitScene(page,'planet');
   });
   await check('default share image contains no birth date/time; existing close interaction', async () => {
+    const birth=await page.evaluate(()=>JSON.parse(sessionStorage.getItem('saju:universe:v1')).birth);
     await page.evaluate(() => { window.__shareText=[]; const original=CanvasRenderingContext2D.prototype.fillText; CanvasRenderingContext2D.prototype.fillText=function(text,...args){if(this.canvas.width===1080&&this.canvas.height===1920)window.__shareText.push(String(text));return original.call(this,text,...args);}; });
     await page.getByRole('button', { name: '이미지로 간직하기' }).click();
     await page.getByRole('dialog', { name:'우주 여권' }).waitFor();
     const texts = await page.locator('[role=dialog]').allTextContents();
     assert.equal(await page.locator('[role=dialog] img[src^="data:image/png"]').count(),1,'Share preview must contain the current rendered scene');
-    assert(!texts.join(' ').includes('2000')); assert(!texts.join(' ').includes('12:30'));
+    assert(!texts.join(' ').includes(birth.year)); assert(!texts.join(' ').includes(`${birth.hour}:${birth.minute}`));
     const download=page.waitForEvent('download'); await page.getByRole('button',{name:'인스타 스토리용 9:16 카드 저장 (PNG)'}).click(); await (await download).saveAs(path.join(output,'default-share.png'));
-    const rasterText=await page.evaluate(()=>window.__shareText); assert(rasterText.length>5); assert(!rasterText.join(' ').includes('2000')); assert(!rasterText.join(' ').includes('12:30'));
+    const rasterText=await page.evaluate(()=>window.__shareText); assert(rasterText.length>5); assert(!rasterText.join(' ').includes(birth.year)); assert(!rasterText.join(' ').includes(`${birth.hour}:${birth.minute}`));
     await page.keyboard.press('Escape');
   });
   assert.equal(errors.length, 0, JSON.stringify(errors));
@@ -252,6 +358,22 @@ try {
     await touch('touchStart',hx,hy); for(let step=1;step<=5;step++){await touch('touchMove',hx+step*16,hy);await view.waitForTimeout(40);} await touch('touchEnd',hx+80,hy); assert.notDeepEqual(await picture(view),original,'Horizontal scene gesture must rotate');
     if(savedGalaxyPath) {
       await view.goto(origin+savedGalaxyPath,{waitUntil:'networkidle'}); await waitScene(view,'galaxy');
+      await view.getByRole('button',{name:'움직임 재생',exact:true}).waitFor();
+      const galaxyStill=await sceneRaster(view,'galaxy'); await view.waitForTimeout(300); assert.equal((await sceneRaster(view,'galaxy')).image,galaxyStill.image,'Reduced-motion galaxy must be static before gestures');
+      box=await view.locator('[data-scene="galaxy"] canvas').boundingBox();
+      const gx=box.x+box.width*.6,gy=box.y+box.height*.6;
+      await touch('touchStart',gx,gy); for(let step=1;step<=6;step++)await touch('touchMove',gx,gy-step*25); await touch('touchEnd',gx,gy-150); await view.waitForTimeout(200);
+      assert(await view.evaluate(()=>window.scrollY>40),'Vertical galaxy gesture must scroll the page');
+      await view.locator('[data-scene="galaxy"]').scrollIntoViewIfNeeded(); await view.waitForTimeout(500);
+      box=await view.locator('[data-scene="galaxy"] canvas').boundingBox(); const rotatedBefore=await sceneRaster(view,'galaxy');
+      const rx=box.x+box.width*.4,ry=Math.max(120,box.y+box.height*.45);
+      await touch('touchStart',rx,ry); for(let step=1;step<=5;step++){await touch('touchMove',rx+step*16,ry);await view.waitForTimeout(40);} await touch('touchEnd',rx+80,ry);
+      assert.notEqual((await sceneRaster(view,'galaxy')).image,rotatedBefore.image,'Horizontal galaxy gesture must rotate the rendered view');
+      const zoomBefore=await sceneRaster(view,'galaxy');
+      const pinch=(type,half)=>cdp.send('Input.dispatchTouchEvent',{type,touchPoints:type==='touchEnd'?[]:[{x:rx-half,y:ry,id:1},{x:rx+half,y:ry,id:2}]});
+      await pinch('touchStart',20); for(let step=1;step<=5;step++){await pinch('touchMove',20+step*10);await view.waitForTimeout(40);} await pinch('touchEnd',70);
+      assert.notEqual((await sceneRaster(view,'galaxy')).image,zoomBefore.image,'Galaxy pinch must change the rendered zoom');
+      checks.push({name:'Mobile galaxy gesture evidence',verticalScroll:true,horizontalRotation:true,pinchZoom:true,pausedBaseline:true});
       const quality=await view.evaluate(()=>{const r=window.__sceneQa.find(r=>r.canvas.closest('[data-scene="galaxy"]'));return{points:[...r.points],ratio:r.gl.drawingBufferWidth/r.canvas.clientWidth,antialias:r.gl.getContextAttributes().antialias};});
       // The spiral renderer splits its 9,000 stars into 90% arm and 10% core draws.
       assert(quality.points.includes(8100)&&quality.points.includes(900),JSON.stringify(quality)); assert(quality.ratio<=1.26); assert.equal(quality.antialias,false);

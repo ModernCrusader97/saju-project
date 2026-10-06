@@ -20,7 +20,7 @@
     "page /ai-test",
     "page /saved",
     "page /guin",
-    "page /guin/gm_128acd18-6a46-4bf6-bee6-1e886872d2c9",
+    "page /guin/gm_2dbf48b9-52a1-47e0-a2e6-587eedd22901",
     "ordinary flows make zero outbound requests",
     "AI test rejects extra personal-data fields",
     "fixed Gemini fixtures and fact validation (mock-only)",

@@ -4,10 +4,10 @@ import { readApiResponse } from "@/lib/http-client";
 
 
 import React, { useEffect, useState } from "react";
-import { readUniverseSession, rememberGalaxyPath } from "@/lib/universe-state";
+import { calculateUniverse, EXAMPLE_UNIVERSE, readUniverseSession, saveGalaxyUniverse, UNIVERSE_CHANGE_EVENT } from "@/lib/universe-state";
 
 import Header from "@/components/Header";
-import { Compass, Sparkles, Share2, Users, ArrowRight } from "lucide-react";
+import { Compass, Sparkles, Share2 } from "lucide-react";
 
 export default function GuinPage() {
   
@@ -20,12 +20,16 @@ export default function GuinPage() {
   const [isUnknownTime, setIsUnknownTime] = useState(false);
   const [loading, setLoading] = useState(false);
   useEffect(() => {
-    const saved = readUniverseSession();
-    if (!saved) return;
-    const birth = saved.birth;
-    setName(birth.name); setBirthYear(birth.year); setBirthMonth(birth.month);
-    setBirthDay(birth.day); setBirthHour(birth.hour); setBirthMinute(birth.minute);
-    setIsUnknownTime(birth.unknown);
+    const restore = () => {
+      const saved = readUniverseSession();
+      if (!saved) return;
+      const birth = saved.birth;
+      setName(birth.name); setBirthYear(birth.year); setBirthMonth(birth.month);
+      setBirthDay(birth.day); setBirthHour(birth.hour); setBirthMinute(birth.minute);
+      setIsUnknownTime(birth.unknown);
+    };
+    restore(); window.addEventListener(UNIVERSE_CHANGE_EVENT, restore);
+    return () => window.removeEventListener(UNIVERSE_CHANGE_EVENT, restore);
   }, []);
 
   const handleCreate = async (e: React.FormEvent) => {
@@ -34,6 +38,8 @@ export default function GuinPage() {
 
     setLoading(true);
     try {
+      const next = calculateUniverse({ name:name.trim(), year:birthYear, month:birthMonth, day:birthDay,
+        hour:birthHour, minute:birthMinute, unknown:isUnknownTime }, readUniverseSession() || EXAMPLE_UNIVERSE);
       const res = await fetch("/api/guin", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -48,14 +54,14 @@ export default function GuinPage() {
         }),
       });
       const data = await readApiResponse(res);
-      if (data.success && data.guinMap) {
-        rememberGalaxyPath(`/guin/${data.guinMap.id}`);
+      if (res.ok && data.success && data.guinMap) {
+        saveGalaxyUniverse(next, data.guinMap);
         window.location.assign(`/guin/${data.guinMap.id}`);
       } else {
         alert(data.error || "지도 생성 실패");
       }
-    } catch {
-      alert("네트워크 오류가 발생했습니다.");
+    } catch (reason) {
+      alert(reason instanceof Error ? reason.message : "네트워크 오류가 발생했습니다.");
     } finally {
       setLoading(false);
     }

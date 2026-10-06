@@ -4,7 +4,7 @@ import { readApiResponse } from "@/lib/http-client";
 
 
 import React, { lazy, Suspense, useState, useEffect } from "react";
-import { rememberGalaxyPath } from "@/lib/universe-state";
+import { restoreGalaxyUniverse } from "@/lib/universe-state";
 import Header from "@/components/Header";
 import { GuinMapData, GuinPerson } from "@/lib/saju/types";
 import {
@@ -60,7 +60,7 @@ export default function GuinMapDetailPage() {
       .then((data) => {
         if (data.guinMap) {
           setMapData(data.guinMap);
-          rememberGalaxyPath(`/guin/${data.guinMap.id}`);
+          restoreGalaxyUniverse(data.guinMap);
         }
       })
       .catch(error=>setLoadError(error.message || "지도를 불러오지 못했습니다."))
