@@ -1,0 +1,52 @@
+{
+  "version": 2,
+  "dimension": 128,
+  "columns": 16,
+  "rows": 8,
+  "width": 2048,
+  "height": 1024,
+  "domainMin": [
+    0,
+    0,
+    0
+  ],
+  "domainMax": [
+    1,
+    1,
+    1
+  ],
+  "sampleGrid": "grid endpoints i/127",
+  "sourceRow0": "z-tile-row0; within-tile y-minimum; source rows increase toward y maximum",
+  "pixelFormat": "interleaved RGBA8;R=fieldA,G=fieldB,B=fieldC,A=255;normalizeRGBby255",
+  "atlasPng": "jade_fields_atlas_128.png",
+  "atlasRaw": "jade_fields_atlas_128.rgba8",
+  "raw_sha256": "ea115bec1027fb9379da0ae4cea6568a6a9ad9699ea4ea10a5bfd29fde6f56d5",
+  "fixed_field_offsets": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      5.21,
+      8.73,
+      2.91
+    ],
+    [
+      -7.43,
+      3.17,
+      11.61
+    ]
+  ],
+  "noise": {
+    "W": 0.0,
+    "Scale": 4.300000190734863,
+    "Detail": 3.200000047683716,
+    "Roughness": 0.6499999761581421,
+    "Lacunarity": 2.0,
+    "Offset": 0.0,
+    "Gain": 1.0,
+    "Distortion": 0.0
+  },
+  "source": "Three exact native Blender noise fields at fixed independent offsets; positions never depend on time."
+}

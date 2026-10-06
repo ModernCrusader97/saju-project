@@ -1,0 +1,70 @@
+20:12:48 | INFO: Data are loaded, start creating Blender stuff
+20:12:48 | INFO: Blender create Mesh node Sphere
+20:12:48 | INFO: Blender create Mesh node Sphere.007
+20:12:48 | INFO: Blender create Mesh node B | expressive brow -1
+20:12:48 | INFO: Blender create Mesh node Sphere.009
+20:12:48 | INFO: Blender create Mesh node B | expressive brow 1
+20:12:48 | INFO: Blender create Mesh node B | quiet smile
+20:12:48 | INFO: Blender create Mesh node Sphere.010
+20:12:48 | INFO: Blender create Mesh node Sphere.011
+20:12:48 | INFO: glTF import finished in 0.09s
+Blender 4.3.2
+Read blend: "/workspace/scratch/c9f1a9454187/saju_jade_green050_20261006/SaJu_B_Jade_ClearGreen050_20261006.blend"
+Read blend: "/workspace/scratch/c9f1a9454187/saju_green_emission_separation_v001/SaJu_Jade_GreenEmission_Separated_v001.blend"
+Fra:1 Mem:35.05M (Peak 42.11M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Plane
+Fra:1 Mem:35.05M (Peak 42.11M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | B | almond gaze 1
+Fra:1 Mem:36.06M (Peak 42.11M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | B candidate5 reconstructed | seamless body and mittens
+Fra:1 Mem:37.89M (Peak 42.11M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | B | almond gaze -1
+Fra:1 Mem:38.02M (Peak 42.11M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | B | quiet smile
+Fra:1 Mem:40.91M (Peak 42.11M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | B | expressive brow 1
+Fra:1 Mem:40.96M (Peak 42.11M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | B | small eye glint 1
+Fra:1 Mem:41.09M (Peak 42.11M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | B | expressive brow -1
+Fra:1 Mem:41.13M (Peak 42.11M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | B | small eye glint -1
+Fra:1 Mem:46.53M (Peak 47.96M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:1 Mem:41.42M (Peak 47.96M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading Jade_ReflectionMask_1024.001
+Fra:1 Mem:41.42M (Peak 47.96M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading Jade_GreenEmission_1024.001
+Fra:1 Mem:57.44M (Peak 65.44M) | Time:00:00.04 | Mem:4.00M, Peak:4.00M | Scene, ViewLayer | Updating Images | Loading Jade_ReflectanceBase_1024.001
+Fra:1 Mem:52.05M (Peak 65.44M) | Time:00:00.06 | Mem:12.00M, Peak:12.00M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:52.05M (Peak 65.44M) | Time:00:00.06 | Mem:12.00M, Peak:12.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:52.05M (Peak 65.44M) | Time:00:00.06 | Mem:12.00M, Peak:12.00M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:52.05M (Peak 65.44M) | Time:00:00.06 | Mem:12.00M, Peak:12.00M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:52.13M (Peak 65.44M) | Time:00:00.06 | Mem:12.00M, Peak:12.00M | Scene, ViewLayer | Updating Procedurals
+Fra:1 Mem:52.13M (Peak 65.44M) | Time:00:00.06 | Mem:12.00M, Peak:12.00M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:52.13M (Peak 65.44M) | Time:00:00.06 | Mem:12.00M, Peak:12.00M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:52.13M (Peak 65.44M) | Time:00:00.06 | Mem:12.00M, Peak:12.00M | Scene, ViewLayer | Updating Meshes Flags
+Fra:1 Mem:52.13M (Peak 65.44M) | Time:00:00.06 | Mem:12.00M, Peak:12.00M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:52.13M (Peak 65.44M) | Time:00:00.06 | Mem:12.00M, Peak:12.00M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:1 Mem:52.14M (Peak 65.44M) | Time:00:00.06 | Mem:12.01M, Peak:12.01M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:1 Mem:52.14M (Peak 65.44M) | Time:00:00.06 | Mem:12.01M, Peak:12.01M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:52.14M (Peak 65.44M) | Time:00:00.06 | Mem:12.01M, Peak:12.01M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:52.14M (Peak 65.44M) | Time:00:00.06 | Mem:12.01M, Peak:12.01M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:53.18M (Peak 65.44M) | Time:00:00.06 | Mem:12.01M, Peak:12.01M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:1 Mem:55.02M (Peak 65.44M) | Time:00:00.06 | Mem:12.01M, Peak:12.01M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:55.02M (Peak 65.44M) | Time:00:00.06 | Mem:13.85M, Peak:13.85M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:1 Mem:55.02M (Peak 65.44M) | Time:00:00.06 | Mem:13.85M, Peak:13.85M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:1 Mem:55.02M (Peak 65.44M) | Time:00:00.06 | Mem:15.94M, Peak:15.94M | Scene, ViewLayer | Updating Scene BVH | Building BVH 0%
+Fra:1 Mem:55.02M (Peak 65.44M) | Time:00:00.07 | Mem:18.43M, Peak:20.52M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:55.02M (Peak 65.44M) | Time:00:00.07 | Mem:18.43M, Peak:20.52M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:1 Mem:57.45M (Peak 65.44M) | Time:00:00.07 | Mem:18.43M, Peak:20.52M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:57.45M (Peak 65.44M) | Time:00:00.07 | Mem:20.86M, Peak:20.86M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:57.45M (Peak 65.44M) | Time:00:00.07 | Mem:20.86M, Peak:20.86M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:57.45M (Peak 65.44M) | Time:00:00.07 | Mem:20.86M, Peak:20.86M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:57.45M (Peak 65.44M) | Time:00:00.07 | Mem:20.86M, Peak:20.86M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:57.45M (Peak 65.44M) | Time:00:00.07 | Mem:20.86M, Peak:20.86M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:57.45M (Peak 65.44M) | Time:00:00.07 | Mem:20.94M, Peak:20.94M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:57.45M (Peak 65.44M) | Time:00:00.07 | Mem:20.94M, Peak:20.94M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:1 Mem:69.07M (Peak 76.65M) | Time:00:00.25 | Mem:32.55M, Peak:32.55M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:69.07M (Peak 76.65M) | Time:00:00.25 | Mem:32.55M, Peak:32.55M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:69.07M (Peak 76.65M) | Time:00:00.25 | Mem:32.47M, Peak:32.55M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:69.07M (Peak 76.65M) | Time:00:00.25 | Mem:32.56M, Peak:32.56M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:69.07M (Peak 76.65M) | Time:00:00.25 | Mem:32.56M, Peak:32.56M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:69.07M (Peak 76.65M) | Time:00:00.25 | Mem:32.56M, Peak:32.56M | Scene, ViewLayer | Sample 0/48
+Fra:1 Mem:76.99M (Peak 76.99M) | Time:00:00.66 | Remaining:00:19.56 | Mem:40.48M, Peak:40.48M | Scene, ViewLayer | Sample 1/48
+Fra:1 Mem:80.50M (Peak 87.54M) | Time:00:20.12 | Mem:40.48M, Peak:40.48M | Scene, ViewLayer | Sample 48/48
+Fra:1 Mem:80.50M (Peak 87.54M) | Time:00:20.12 | Mem:40.48M, Peak:40.48M | Scene, ViewLayer | Finished
+Saved: '/workspace/scratch/c9f1a9454187/saju_green_emission_separation_v001/glb_reimport_green.png'
+Time: 00:20.32 (Saving: 00:00.20)
+
+FINAL_VALIDATION_PASS {"source_full_geometry_morph_transform_hash": "43eb9e4ec3aab55ebbc6aef0eacd0da6461048ad1e1d31fa61dc5b135841c084", "final_full_geometry_morph_transform_hash": "43eb9e4ec3aab55ebbc6aef0eacd0da6461048ad1e1d31fa61dc5b135841c084", "geometry_morph_camera_light_exposure_base_ramp_unchanged": true, "emission_multiplier": 2.0, "bloom_added": false, "emission_mask_thresholds": [0.5, 0.72], "brdf_isolation_thresholds": [0.38, 0.66], "tone_mapping": "AgX", "final_green_color_linear_rgb": [0.001, 0.65, 0.08], "emission_green_channel_test": {"pixels": 28056, "mean_absolute_delta": 0.005700673442333937, "max_absolute_delta": 0.09129482507705688, "mean_before": 0.2992481589317322, "mean_after": 0.3049488365650177}, "reimport_mesh_count": 8, "reimport_7_sampled_frames_finite": true}
+
+Blender quit

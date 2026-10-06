@@ -1,0 +1,18 @@
+✔ exposes fixed-field RGB8 v002 contract (1.496728ms)
+✔ fixed native noise inputs and atlas sampling coordinates never depend on time (74.274006ms)
+✔ time wraps safely; segment endpoints select A, B, C and loop exactly (0.908761ms)
+✔ unit L2 pair weights and zero first derivative at every segment boundary (2.705873ms)
+✔ RGB8 trilinear sampling interpolates vector linear fixture and normalizes by 255 (0.610482ms)
+✔ all atlas texel centers address the correct tile; V flip and boundary clamp agree (6.878769ms)
+✔ centered blending is spatial evolution rather than one uniform intensity pulse (0.297429ms)
+✔ approved masks, green strength and BRDF isolation remain unchanged (0.25219ms)
+✔ verified glTF to Generated adapter is preserved (0.308966ms)
+✔ GLSL evaluator samples source position directly; contains no translating or rotating coordinate function (6.14326ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 181.446083

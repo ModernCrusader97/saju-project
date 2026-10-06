@@ -3,7 +3,8 @@
 import { readApiResponse } from "@/lib/http-client";
 
 
-import React, { useState, useEffect } from "react";
+import React, { lazy, Suspense, useState, useEffect } from "react";
+import { restoreGalaxyUniverse } from "@/lib/universe-state";
 import Header from "@/components/Header";
 import { GuinMapData, GuinPerson } from "@/lib/saju/types";
 import {
@@ -21,7 +22,7 @@ import {
 } from "lucide-react";
 
 import { useParams } from "next/navigation";
-import GalaxyCanvas from "@/components/planet/GalaxyCanvas";
+const GalaxyCanvas = lazy(() => import("@/components/planet/GalaxyCanvas"));
 import { Sliders, PlusCircle } from "lucide-react";
 import { calculateDailyOrbitalWeather } from "@/lib/saju/daily-orbital";
 import CosmicPassportModal from "@/components/planet/CosmicPassportModal";
@@ -59,6 +60,7 @@ export default function GuinMapDetailPage() {
       .then((data) => {
         if (data.guinMap) {
           setMapData(data.guinMap);
+          restoreGalaxyUniverse(data.guinMap);
         }
       })
       .catch(error=>setLoadError(error.message || "지도를 불러오지 못했습니다."))
@@ -177,10 +179,11 @@ export default function GuinMapDetailPage() {
   }
 
   return (
-    <div className="min-h-screen pb-24">
+    <div className="galaxy-page min-h-screen pb-24">
       <Header />
 
       <div className="px-5 pt-2 space-y-6">
+        <div className="galaxy-heading"><p className="eyebrow">PERSONAL UNIVERSE / 03</p><h1>{mapData.ownerName}의 갤럭시</h1><p>행성을 선택하면 함께하는 사람의 이야기를 볼 수 있어요. 관계 점수는 기존 시연용 해석입니다.</p></div>
         <div className="flex items-center justify-between">
           <a
             href="/guin"
@@ -196,14 +199,14 @@ export default function GuinMapDetailPage() {
 
         {/* 1. 우리은하 3D 관계 은하 뷰어 (기준서 v0.1: 중심별 + 인연 행성들 + 관계선) */}
         <div className="h-[500px] md:h-[600px] lg:h-[680px] w-full">
-          <GalaxyCanvas
+          <Suspense fallback={<div className="scene-loading" role="status">갤럭시를 불러오고 있어요.</div>}><GalaxyCanvas
             guins={mapData.guins}
             selectedPersonId={selectedPersonId}
             onSelectPerson={(p) => setSelectedPersonId(p.id)}
             distanceScale={distanceScale}
             speedScale={speedScale}
             incomingPersonId={lastAddedPersonId}
-          />
+          /></Suspense>
         </div>
 
         {/* [Step 3] "오늘 우리 행성의 궤도 날씨" 데일리 관계 인사이트 */}
@@ -286,7 +289,7 @@ export default function GuinMapDetailPage() {
                   min="0.7"
                   max="1.5"
                   step="0.05"
-                  value={distanceScale}
+                  aria-label="인연 거리" value={distanceScale}
                   onChange={(e) => setDistanceScale(parseFloat(e.target.value))}
                   className="w-16 sm:w-20 accent-doryeong-gold cursor-pointer"
                   title={`거리 배율: ${distanceScale.toFixed(2)}x`}
@@ -299,7 +302,7 @@ export default function GuinMapDetailPage() {
                   min="0"
                   max="2.5"
                   step="0.1"
-                  value={speedScale}
+                  aria-label="공전 속도" value={speedScale}
                   onChange={(e) => setSpeedScale(parseFloat(e.target.value))}
                   className="w-16 sm:w-20 accent-cyan-600 cursor-pointer"
                   title={`공전 속도: ${speedScale.toFixed(1)}x`}
@@ -370,7 +373,7 @@ export default function GuinMapDetailPage() {
                 <div
                   key={person.id}
                   onClick={() => setSelectedPersonId(person.id)}
-                  className={`p-4 rounded-[22px] border transition-all cursor-pointer ${
+                  className={`relationship-card p-4 rounded-[22px] border transition-all cursor-pointer ${
                     isSelected
                       ? "bg-[#FCF9F2] border-doryeong-gold shadow-md ring-2 ring-doryeong-gold/60"
                       : person.isMe
@@ -409,7 +412,7 @@ export default function GuinMapDetailPage() {
                   {!person.isMe && (
                     <div className="text-right">
                       <span className="text-xs font-bold text-doryeong-roseText bg-doryeong-roseBg px-2 py-0.5 rounded-full">
-                        궁합 {person.affinityScore}점
+                        시연 점수 {person.affinityScore}점
                       </span>
                     </div>
                   )}

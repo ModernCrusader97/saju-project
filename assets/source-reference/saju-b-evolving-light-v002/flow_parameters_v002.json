@@ -1,0 +1,71 @@
+{
+  "version": 2,
+  "period_seconds": 6,
+  "fps": 12,
+  "frames_per_loop": 72,
+  "time_dependent_coordinate_translation": false,
+  "fixed_field_offsets": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      5.21,
+      8.73,
+      2.91
+    ],
+    [
+      -7.43,
+      3.17,
+      11.61
+    ]
+  ],
+  "field_formula": "clamp(0.5 + dot(weights, fields-0.5),0,1)",
+  "weights_formula": "segment=floor(wrap(t,6)/2);u=fract(wrap(t,6)/2);a=pi/2*u*u*(3-2*u);w[segment]=cos(a);w[next]=sin(a);other=0",
+  "weight_squared_sum": 1,
+  "emission_strength": 2,
+  "emission_rgb_linear": [
+    0.001,
+    0.65,
+    0.08
+  ],
+  "emission_thresholds": [
+    0.5,
+    0.72
+  ],
+  "reflection_isolation_thresholds": [
+    0.38,
+    0.66
+  ],
+  "noise_inputs": {
+    "W": 0.0,
+    "Scale": 4.300000190734863,
+    "Detail": 3.200000047683716,
+    "Roughness": 0.6499999761581421,
+    "Lacunarity": 2.0,
+    "Offset": 0.0,
+    "Gain": 1.0,
+    "Distortion": 0.0
+  },
+  "noise_dimensions": "3D",
+  "noise_type": "FBM",
+  "noise_normalize": true,
+  "texspace_location": [
+    6.973743438720703e-06,
+    -1.3902783393859863e-05,
+    1.1804927587509155
+  ],
+  "texspace_half_size": [
+    0.877256453037262,
+    0.4755038022994995,
+    1.1923989057540894
+  ],
+  "glb_shader_animation_supported": false,
+  "source_native": "/workspace/scratch/c9f1a9454187/saju_green_emission_separation_v001/SaJu_Jade_GreenEmission_Separated_v001.blend",
+  "driver_expressions": [
+    "(frame-1)/24"
+  ],
+  "native_phase_wrap": "Shader Math MODULO3, not Python conditional/eval",
+  "simple_driver_reopen_verified": true
+}

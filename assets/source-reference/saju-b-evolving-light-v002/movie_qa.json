@@ -1,0 +1,34 @@
+{
+  "rendered_loop_frames": 72,
+  "fps": 12,
+  "loop_seconds": 6,
+  "preview_seconds": 12,
+  "final_native_endpoints_pixel_identical": true,
+  "first_frame_matches_approved_static_pixels": true,
+  "encoded_two_loops_pixel_identical": true,
+  "decoded_frames": 144,
+  "time_dependent_source_coordinates": false,
+  "emission_strength": 2,
+  "transition_spatial_changes": [
+    {
+      "from_frame": 1,
+      "to_frame": 25,
+      "brighter_pixels": 10343,
+      "dimmer_pixels": 6941
+    },
+    {
+      "from_frame": 25,
+      "to_frame": 49,
+      "brighter_pixels": 8587,
+      "dimmer_pixels": 8781
+    },
+    {
+      "from_frame": 49,
+      "to_frame": 73,
+      "brighter_pixels": 7925,
+      "dimmer_pixels": 10213
+    }
+  ],
+  "qualification": "Numerical checks prove continuity and implementation properties, not subjective naturalness. The user subsequently approved the v002 preview video on2026-10-06.",
+  "user_v002_visual_approval": true
+}

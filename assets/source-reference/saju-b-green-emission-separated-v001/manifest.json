@@ -1,0 +1,142 @@
+[
+  {
+    "file": "SaJu_Jade_GreenEmission_Separated_v001.blend",
+    "bytes": 10886965,
+    "sha256": "989921a8e85b36d5215f61882fa54938d9a588e9f5e387a37bd40820446b337f"
+  },
+  {
+    "file": "SaJu_Jade_GreenEmission_Separated_v001.glb",
+    "bytes": 4293332,
+    "sha256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84"
+  },
+  {
+    "file": "Jade_ReflectanceBase_1024.png",
+    "bytes": 813644,
+    "sha256": "3a3ffe202958c031015d3230907cd9087e21763c6ab398dceb80bc158aafc542"
+  },
+  {
+    "file": "Jade_GreenEmission_1024.png",
+    "bytes": 642963,
+    "sha256": "173142e815855363bdeabdc5779279fe6ec182ba89f4003e070b791d70af62c6"
+  },
+  {
+    "file": "Jade_ReflectionMask_1024.png",
+    "bytes": 704064,
+    "sha256": "f26aa1771b0eecccceb84b40f30f8c1a7d6589a4a32d6f565991abe1103db2b7"
+  },
+  {
+    "file": "SaJu_Jade_Green_Emission_Before_After_Proof.jpg",
+    "bytes": 203286,
+    "sha256": "76bda74170685e032affb2da2263c3efc8607baffd994de7ef6cd3b772a5d2d2"
+  },
+  {
+    "file": "SaJu_Jade_Native_vs_GLB_Verification.jpg",
+    "bytes": 123369,
+    "sha256": "4788e0a271fa0e2c889cb05cbfc733f6cda929b9d245dc7971870a4b78ddd2fc"
+  },
+  {
+    "file": "before_beauty.png",
+    "bytes": 382418,
+    "sha256": "6a2ae08bf3decbde23edc01239ceae343b0b390d1d12173de473c171e80f9906"
+  },
+  {
+    "file": "after_green_verified.png",
+    "bytes": 380676,
+    "sha256": "1af86fd7410339af2a3096af70aa9144d01c2b06b79a0415480febf3044d2eac"
+  },
+  {
+    "file": "after_emission_only_AgX.png",
+    "bytes": 80615,
+    "sha256": "540a956a2739153220b6671392a84d168aee48e880b957612c9f0eef84535e96"
+  },
+  {
+    "file": "glb_reimport_green.png",
+    "bytes": 371053,
+    "sha256": "4e331680e6000f6d85dfc09e68db2d506307b81c48f724eb5d91b83d23c00d82"
+  },
+  {
+    "file": "emission_raw_0001.exr",
+    "bytes": 410738,
+    "sha256": "ddfeedf64b725f187ce27b023d55148f16a54363d93ea3688b84f6a6dd9f09c2"
+  },
+  {
+    "file": "after_emission_raw_0001.exr",
+    "bytes": 411142,
+    "sha256": "7f404d4bd9dd738c6fef219441e5d68e33efc5073cb46701b48a80818c9efa82"
+  },
+  {
+    "file": "emission_raw_AgX.png",
+    "bytes": 78798,
+    "sha256": "dfe259d13b385448b5babff02f1a3dd446fa98989d7e489d447ce69f394907be"
+  },
+  {
+    "file": "emission_raw_Standard.png",
+    "bytes": 69964,
+    "sha256": "1edeb1fb8de244222c7ac9347ecb4084f697f6121c29667c3c3b6d50a2e7de97"
+  },
+  {
+    "file": "beauty_raw_Standard.png",
+    "bytes": 297057,
+    "sha256": "053967fe01a8478a7d57b19f066172e6f2053c3c08f6eb7b337ec49d6f9538ce"
+  },
+  {
+    "file": "gloss_direct_AgX.png",
+    "bytes": 421156,
+    "sha256": "d7aaa17b8c3ecf38e7c0130a02e308dbd800f81c8f26bbd7c57671106fb22c5c"
+  },
+  {
+    "file": "INTEGRATION_README_ko.txt",
+    "bytes": 3913,
+    "sha256": "66215962e5e5f6fba112a2ef209456766f119b68a1cbc522695301242a2c648e"
+  },
+  {
+    "file": "final_validation.json",
+    "bytes": 866,
+    "sha256": "8a9571b34671753bdc7007bbbb10cd5c7cce7d6270f8c5d74af30fe90bea710c"
+  },
+  {
+    "file": "gltf_material_contract.json",
+    "bytes": 1090,
+    "sha256": "fbcfebdae97a0cc1a2c3d3bcca40817217f85872c5c67c00fc84b6def58cb09b"
+  },
+  {
+    "file": "diagnose_passes.py",
+    "bytes": 1613,
+    "sha256": "6d9923ed18fa2531f885fa887de06f41608c0520126f024d5527da06866aa7e0"
+  },
+  {
+    "file": "test_separation.py",
+    "bytes": 1834,
+    "sha256": "934007dcf4797520cec570ef61a59f606abbd0ca0bff002ee953a2ff8f1067c3"
+  },
+  {
+    "file": "refine_separation.py",
+    "bytes": 1606,
+    "sha256": "4afe84dc2a14514f5f97e9860991148e7db77bead529a02c92b50e831826c19f"
+  },
+  {
+    "file": "smooth_isolation.py",
+    "bytes": 1091,
+    "sha256": "0e3931ae1513dc5e2d8ff1819f030acc6d6c0910dd561aa9989f64e036911159"
+  },
+  {
+    "file": "bake_export_final.py",
+    "bytes": 5175,
+    "sha256": "f726758b6b5c656b428a72bcc9560db1685e21f5f366930fdfc363cd8ec4b0a9"
+  },
+  {
+    "file": "verify_and_reimport.py",
+    "bytes": 3477,
+    "sha256": "0d093510c00426b8d9c8e1935fe3db086ad02cb10cd64126aaf60b173c1fe735"
+  },
+  {
+    "file": "package_release.py",
+    "bytes": 4204,
+    "sha256": "19fcbd78cdec7abbda46d0ac8a314d68d7a9e2c888772bd7de922068e6ad0e68"
+  },
+  {
+    "file": "verification.log",
+    "bytes": 8182,
+    "sha256": "d3fb66921faae312a487a20c1c1770ec1cbcde47d926f548a95326a7a0203186"
+  }
+]

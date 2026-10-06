@@ -1,4 +1,7 @@
-# 사주도령 전체 비공개 테스트
+> **Preserved source art now supplies the approved B spirit and v002 evolving light.**
+> The 13,700,928-byte original `public/models/porcelain-hero-blink-v1.glb` remains archived losslessly in `preservation-archives/porcelain-hero-blink-v1.glb.gz`. The README Python restoration script is retained and was executed with both hashes verified. `npm run dev` and `npm run build` now also restore that asset with Node's standard gzip support, refusing to replace different content, and copy the four checksum-verified v002 runtime assets from their canonical source package. See [the integration notes](docs/UNIVERSE_INTEGRATION.md). No Site deployment or access change is part of this branch.
+
+# 나의 우주 · 전체 비공개 테스트
 
 Full original experience ported to Sites Workers: home, daily view, manse calculator, planet/avatar studio, saved fortunes and conversations, guin map creation/detail, and the retained material comparison lab.
 

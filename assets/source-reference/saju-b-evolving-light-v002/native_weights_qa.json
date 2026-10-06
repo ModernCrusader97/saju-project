@@ -1,0 +1,190 @@
+{
+  "native_shader_weight_bakes_pass": true,
+  "samples": [
+    {
+      "frame": 1,
+      "actual_baked_weights": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "expected_weights": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "maximum_error": 0.0
+    },
+    {
+      "frame": 7,
+      "actual_baked_weights": [
+        0.9700313806533813,
+        0.2429802119731903,
+        0.0
+      ],
+      "expected_weights": [
+        0.970031253194544,
+        0.24298017990326387,
+        0.0
+      ],
+      "maximum_error": 1.2745883737341757e-07
+    },
+    {
+      "frame": 13,
+      "actual_baked_weights": [
+        0.7071067690849304,
+        0.7071067690849304,
+        0.0
+      ],
+      "expected_weights": [
+        0.7071067811865476,
+        0.7071067811865475,
+        0.0
+      ],
+      "maximum_error": 1.2101617152815436e-08
+    },
+    {
+      "frame": 19,
+      "actual_baked_weights": [
+        0.24298009276390076,
+        0.9700313806533813,
+        0.0
+      ],
+      "expected_weights": [
+        0.24298017990326398,
+        0.970031253194544,
+        0.0
+      ],
+      "maximum_error": 1.2745883737341757e-07
+    },
+    {
+      "frame": 25,
+      "actual_baked_weights": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "expected_weights": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "maximum_error": 0.0
+    },
+    {
+      "frame": 31,
+      "actual_baked_weights": [
+        0.0,
+        0.9700313806533813,
+        0.2429802119731903
+      ],
+      "expected_weights": [
+        0.0,
+        0.970031253194544,
+        0.24298017990326387
+      ],
+      "maximum_error": 1.2745883737341757e-07
+    },
+    {
+      "frame": 37,
+      "actual_baked_weights": [
+        0.0,
+        0.7071067690849304,
+        0.7071067690849304
+      ],
+      "expected_weights": [
+        0.0,
+        0.7071067811865476,
+        0.7071067811865475
+      ],
+      "maximum_error": 1.2101617152815436e-08
+    },
+    {
+      "frame": 43,
+      "actual_baked_weights": [
+        0.0,
+        0.24298009276390076,
+        0.9700313806533813
+      ],
+      "expected_weights": [
+        0.0,
+        0.24298017990326398,
+        0.970031253194544
+      ],
+      "maximum_error": 1.2745883737341757e-07
+    },
+    {
+      "frame": 49,
+      "actual_baked_weights": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "expected_weights": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "maximum_error": 0.0
+    },
+    {
+      "frame": 55,
+      "actual_baked_weights": [
+        0.2429802119731903,
+        0.0,
+        0.9700313806533813
+      ],
+      "expected_weights": [
+        0.24298017990326387,
+        0.0,
+        0.970031253194544
+      ],
+      "maximum_error": 1.2745883737341757e-07
+    },
+    {
+      "frame": 61,
+      "actual_baked_weights": [
+        0.7071067690849304,
+        0.0,
+        0.7071067690849304
+      ],
+      "expected_weights": [
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "maximum_error": 1.2101617152815436e-08
+    },
+    {
+      "frame": 67,
+      "actual_baked_weights": [
+        0.9700313806533813,
+        0.0,
+        0.24298009276390076
+      ],
+      "expected_weights": [
+        0.970031253194544,
+        0.0,
+        0.24298017990326398
+      ],
+      "maximum_error": 1.2745883737341757e-07
+    },
+    {
+      "frame": 73,
+      "actual_baked_weights": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "expected_weights": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "maximum_error": 0.0
+    }
+  ],
+  "maximum_error": 1.2745883737341757e-07,
+  "simple_driver": true,
+  "no_auto_execute_override": true
+}

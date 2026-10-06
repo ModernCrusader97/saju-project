@@ -1,0 +1,1321 @@
+{
+  "created_at_utc": "2026-10-06T12:01:24.043533+00:00",
+  "proposed_repository": "ModernCrusader97/saju-project",
+  "visibility_required": "private",
+  "file_count": 212,
+  "size_bytes": 78139985,
+  "exclusions": [
+    ".git and all original commit history",
+    "tsconfig.tsbuildinfo",
+    "node_modules, build outputs, caches, execution metadata",
+    "environment files, credential/config stores, live database or personal user records",
+    "unrelated WW2Stone sources, attachments and assistant/private notes",
+    "Intermediate B_Jade_* scenes not in the canonical completed package"
+  ],
+  "limitations": [
+    "No build/test was run as part of this read-only inventory.",
+    "This is the full Sites-adapted application source, not a verified copy of the separately preserved original pre-Sites application.",
+    "Runtime ChatGPT authentication, D1 binding and optional GEMINI_API_KEY must be configured at deployment; actual values and records are excluded.",
+    "Standalone B art is not wired into the site runtime.",
+    "Art is a candidate-5-based reconstruction, not the missing October 4 selected-5 final master.",
+    "Credential pattern scan is limited to text files below 1 MB and is not a full security audit."
+  ],
+  "source_commit": "843a4a088a9e20760421b4c81f890d026a53ae6b",
+  "saved_site_version": 23,
+  "files": [
+    {
+      "target_path": ".gitignore",
+      "size_bytes": 598,
+      "sha256": "55d0a3e1f8e2e31b6fda7293305b96d676e6fcd51a9680d6903dd7240fa0e192",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": ".npmrc",
+      "size_bytes": 45,
+      "sha256": "a3909ac0447c469fda12c57374993be70f47ce73e49fd3124678c7c047f2214d",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": ".openai/hosting.json",
+      "size_bytes": 91,
+      "sha256": "9e1fb7eef4d729865c16d638f731f2f37d27bbec12a3345e48cdc44d51dd1f6f",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "README.md",
+      "size_bytes": 4064,
+      "sha256": "3bd6d55a892909a3534bbf4a2814eb73475433785919c5806a57abc5c01ae8ea",
+      "category": "site-source-v23",
+      "original_source_sha256": "80451f2d590ce115f10134fa3797fbc98c38ae8a976a3f4448cb4751ad4b1cee",
+      "note": "Original README content retained below explicit archive/restoration status notice."
+    },
+    {
+      "target_path": "app/ai-test/page.tsx",
+      "size_bytes": 2355,
+      "sha256": "225bf184c230793c672106173f442e35bb47ffb774532d86b87be1c2cdbf6701",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "app/api/ai-test/route.ts",
+      "size_bytes": 7462,
+      "sha256": "2e1fcb86585e91e96d1fd6ec10936b7f885f75c6890f81ca94b1f2535a8fcbed",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "app/api/guin/[id]/route.ts",
+      "size_bytes": 3594,
+      "sha256": "8dd73d626b0b06fee452a2c0dbb9dac1f85476d4bda38c18c41e0e7aae899e08",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "app/api/guin/route.ts",
+      "size_bytes": 2466,
+      "sha256": "d30b39ba805647b315dc006e21e21222669d746bb0eaba59a3e04d1a75ebb145",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "app/api/saju/[id]/chat/route.ts",
+      "size_bytes": 1647,
+      "sha256": "a76b1b37f7cd7d2a886c282a57da2750b892f2774a7c529b5f949236a0c646af",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "app/api/saju/[id]/route.ts",
+      "size_bytes": 814,
+      "sha256": "a961fcf75131ebfe4bd40e3a139370b8d8984efcdb523495f3f0d44b6b9b225d",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "app/api/saju/route.ts",
+      "size_bytes": 2465,
+      "sha256": "09e995b99dfe5df1344a7c18f9406b156962ac130831b4e8dc4dde219a7bc843",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "app/chatgpt-auth.ts",
+      "size_bytes": 2550,
+      "sha256": "4265a2e7c2dcb3a6f4b7026f762bf5b6e4caec76cc13c0a45987ee9a9f2e42cc",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "app/daily/page.tsx",
+      "size_bytes": 8896,
+      "sha256": "71e8d2411db526e3c6ddea8b3825ac0dbefaa4edaf20ba3e3037842a063faa0c",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "app/globals.css",
+      "size_bytes": 8104,
+      "sha256": "348f8fecb0a07be93829945782a3eb1236e33a87bf0ab68cca1e952acf9a7d73",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "app/guin/[id]/page.tsx",
+      "size_bytes": 26443,
+      "sha256": "8ee5759b90fce125c817685959a0857f42e04e72e87593445595c1f1b5b20dde",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "app/guin/page.tsx",
+      "size_bytes": 10826,
+      "sha256": "a9f2a9b651b8dc7f1d2c8fbfdbdf5a8aa2d7b14073eb25ccb6e15aceb8656e9f",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "app/lab/lab.css",
+      "size_bytes": 4887,
+      "sha256": "04183c8365176d827a4f91a80260db874f065c351b7cd753a4138bbbb676cc3b",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "app/lab/material-study.css",
+      "size_bytes": 3220,
+      "sha256": "9930c14b576d23554bcc89e92a310fc0a51635937f52ddaed8ef8055fc91b623",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "app/lab/page.tsx",
+      "size_bytes": 7821,
+      "sha256": "72b9dfd50298ebd4d7f4760aef4ed61046c61cc5c6a40e83de306bf1f6c19bb3",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "app/layout.tsx",
+      "size_bytes": 617,
+      "sha256": "720720384d1dc56665e7abb254e25106fbc49a358abb83fb2d482e55ec9ace3c",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "app/manse/page.tsx",
+      "size_bytes": 14641,
+      "sha256": "823495ad9e71435d1d516ee03167a8baa45afd2565dda5b159f809a691713ff4",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "app/page.tsx",
+      "size_bytes": 5596,
+      "sha256": "32e8f52dce4e59ce1c92396afe7ae9ff9805888b7e0cd946e5ed3e306d2507b3",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "app/planet/page.tsx",
+      "size_bytes": 26354,
+      "sha256": "c891598cbec48498ea9a3a77696daf651768c2ba1eec6849b84150ad8784a467",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "app/saved/page.tsx",
+      "size_bytes": 10893,
+      "sha256": "362f08aec5817e009f010452d0705ac26b7ff243f2dd7aa5c35f56a3feebbc8e",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "build/connector-preview-plugin.mjs",
+      "size_bytes": 7211,
+      "sha256": "a6a9fe2086e302f94a3f91e3c1a68a45bb3aa07d4a79faf01b14732191eb4e80",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "build/connector-preview-worker.mjs",
+      "size_bytes": 594,
+      "sha256": "c1b6b2c420cb67d9e28f8f4ae440f578c0dfd4cb840a12cfe4b58076629a17ba",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "build/sites-vite-plugin.LICENSE",
+      "size_bytes": 1063,
+      "sha256": "7de1e115d165f176e68f962acdb809b5ab8d8ae78d3981e0701392b2ac50c713",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "build/sites-vite-plugin.ts",
+      "size_bytes": 7185,
+      "sha256": "07af20e7097d9ed1d76f7c446d02997550b8fc5ca89668b249e25eabd62c6834",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "build/sites-worker.ts",
+      "size_bytes": 1279,
+      "sha256": "28a75f74adfc226a773d1c00d5779c26412eea40a104da5c77f7d0f0fc30f0e8",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "cloudflare-env.d.ts",
+      "size_bytes": 175,
+      "sha256": "173bc87514f76d9cd1eb4c7a37ffa4490f947ef10aab39b8c72da1648ff56d90",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "components.json",
+      "size_bytes": 420,
+      "sha256": "31f4ca67a4a62572571003d3d5aac85ee6fbfca67a192924bac6b168d95e98fd",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "components/AskDoryeongModal.tsx",
+      "size_bytes": 6987,
+      "sha256": "8e799a4f2e45367f347b0a76baa7fba975b8a90daedc55bb40b5c562f6b724c0",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "components/BottomNav.tsx",
+      "size_bytes": 635,
+      "sha256": "5a4dfbc19e2d1d38cdb7bb3ef5efdc96e65515a8cad7cb32b0a5ec8040905dc5",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "components/FortuneCard.tsx",
+      "size_bytes": 11785,
+      "sha256": "8af53011982b49d962ae0b95eadc688ab5f7d4eb4c3e451a74b86c8b911e5d93",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "components/Header.tsx",
+      "size_bytes": 2513,
+      "sha256": "3165326cf14689fd530210c0254ce6eb2740a0b0123216f252223b4535378bc2",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "components/SajuInputModal.tsx",
+      "size_bytes": 14077,
+      "sha256": "b1149546b91789a14c86b8d6473cf920bac35500c22ac5d954314ad435274cea",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "components/planet/CosmicPassportModal.tsx",
+      "size_bytes": 11603,
+      "sha256": "238d09d72e31474de72065306e9367cbd44b1952a07c1463aaa2015a3f507e9c",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "components/planet/ElementalSpiritCanvas.tsx",
+      "size_bytes": 13758,
+      "sha256": "57e17547686baefd8c609f94239c9a95ff1763781ba032b31450886426047cef",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "components/planet/FiveElementFormStudy.tsx",
+      "size_bytes": 10187,
+      "sha256": "589ba4190ce405a8106b5ab00566ace0bdf7aa9e38f7ecdd83a3f31b050b09b1",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "components/planet/GalaxyCanvas.tsx",
+      "size_bytes": 45606,
+      "sha256": "3f6ea2f9602cdde17eea306f09dbdc87b82d933476a1c73a41e97f460bc8bfc3",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "components/planet/GalaxyPokedexModal.tsx",
+      "size_bytes": 7217,
+      "sha256": "41f2dc176c4116742910c13b85955c1924de4c438dbcef0264ffeee445898c61",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "components/planet/ImWaterStudy.tsx",
+      "size_bytes": 6164,
+      "sha256": "8fdb860a47b236225ef1d5fe93d4a83ea3d6785f9a89b21e057898f1bc482134",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "components/planet/PlanetCanvas.tsx",
+      "size_bytes": 21333,
+      "sha256": "dcd23e4904ba9b7ef9c622f2c362f0984c7cd4f5bc841a5d4c9a5f0640a3fb6a",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "components/planet/PorcelainHeroStudy.tsx",
+      "size_bytes": 8254,
+      "sha256": "97f7c7dc60e9bbd89b8347fbc8fbf808a6641dc1351032d0ab7a0796e1b6dfd4",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "components/planet/StemMaterialStudy.tsx",
+      "size_bytes": 12915,
+      "sha256": "57719868ed4cba5c15206b933f1ed5479e3e91a5792107abbe0d51063ebf3d13",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "db/index.ts",
+      "size_bytes": 423,
+      "sha256": "dc7610b00b918e0ffff1360a63626f16655ced3064b2eaf96095a4101fb14bcd",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "db/schema.ts",
+      "size_bytes": 1015,
+      "sha256": "62cc5b93062f6413ed44265131c073c9ed772a7d640cb45f1c1a7015b9b9d93e",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "drizzle.config.ts",
+      "size_bytes": 148,
+      "sha256": "af081f7384aaeb0082cf422e29f139d137ca2f6a57c69b2c37b9fb1f8479867b",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "drizzle/0000_windy_maestro.sql",
+      "size_bytes": 871,
+      "sha256": "8e96da17ba8f773233dc32d65449dd734d49e3cbb7dcd125b5edd10ea7fd59cf",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "drizzle/0001_fuzzy_blue_blade.sql",
+      "size_bytes": 98,
+      "sha256": "fb8809a8db6e5e07366ee349078c8470aeda9667842ebb9df2201c92996553cb",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "drizzle/meta/0000_snapshot.json",
+      "size_bytes": 4279,
+      "sha256": "2e81bafe8ffec7e85d00efea5127a8020b4a8cb616b0aba6584566442f7e05bc",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "drizzle/meta/0001_snapshot.json",
+      "size_bytes": 4861,
+      "sha256": "5f449ebd38fa36ed4dd916d017c2b629b239b4de13e6fb082d4a0d02d9011e0c",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "drizzle/meta/_journal.json",
+      "size_bytes": 347,
+      "sha256": "cc2c77bba410f2d93ad59c27c70effff8dd8abedd827046a2edbe9a0f352bda2",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "eslint.config.mjs",
+      "size_bytes": 846,
+      "sha256": "f22a254df7d934bbf9be499d3c969a13abb7f7f64c03f5967d0095cad81dfe06",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "examples/d1/app/api/notes/route.ts",
+      "size_bytes": 1700,
+      "sha256": "a3d4a74fd53b7bf53e2df41f169d9d9d44a8b22aeb6d92f4e754956079af8909",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "examples/d1/db/schema.ts",
+      "size_bytes": 370,
+      "sha256": "d89eabd95716ce404f5f7ca2a254220435be8ddce7c899d7ef461ff22ec80454",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "hooks/use-mobile.ts",
+      "size_bytes": 565,
+      "sha256": "ad0936f84f1df79d3697bfbff9c18f8ad58431c1cbaf2359c6a853b0fcc9f28b",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/ai/doryeong-ai.ts",
+      "size_bytes": 20981,
+      "sha256": "5320c0836ef5c9370629bfc5e437777acb2a1669bb078c11e863f16154947c00",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/connector-context.ts",
+      "size_bytes": 612,
+      "sha256": "bbddff68689cb0f6926fecd4b8b96f12f2054277c296e97b0df07d4ad5ece24e",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/connector-contract.mts",
+      "size_bytes": 5362,
+      "sha256": "e1a7b24a8793af34b595690d9b1300c897c7321c14f215cedf58ad95799d7c3e",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/connector-errors.mts",
+      "size_bytes": 2717,
+      "sha256": "a22edf13d6873ae832c4a2a0d579fc666c73ec996ef0722d39172649d38f0871",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/connector-preview.d.ts",
+      "size_bytes": 433,
+      "sha256": "abd69a94f7f61f1359063bb557574faae35e8ff5a028cc4c04b9ee248ef52642",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/connectors.ts",
+      "size_bytes": 416,
+      "sha256": "1c93d747e384c8e17e3e3dd5361b24412babf5eba2a11d2ae7a75f4e0924112c",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/db/store.ts",
+      "size_bytes": 3045,
+      "sha256": "49a961195f57ba7ed734978c2ebaaa94bff99f3385b44169fa9a11905f9fd6a9",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/http-client.ts",
+      "size_bytes": 766,
+      "sha256": "62b9d80947ebcbcc0b87e2fbea86634c676b30a2cf7a30e7580638fbc667c372",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/planet/approved-stem-accents.ts",
+      "size_bytes": 54505,
+      "sha256": "9ff2202e415c0f58c126e4232a53b697960c4175315c0b1b90c012f16a0e54d5",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/planet/approved-stem-materials.ts",
+      "size_bytes": 24509,
+      "sha256": "4f625fe9b75ee278e67b4b452b6bc16fe01f599bec2b48dad8e3842602266f7b",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/planet/asteroid-belt.ts",
+      "size_bytes": 3271,
+      "sha256": "dbd48365358397d47413f2082594c5bf8bf9bc2bb5325be8df7339149d74ad08",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/planet/character-material-fixture.ts",
+      "size_bytes": 4047,
+      "sha256": "cd47bc28963202b51801d7892f304731d1b12afeb650fa371f3c96b9364121c0",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/planet/character-rest-coordinates.ts",
+      "size_bytes": 3454,
+      "sha256": "a76a2e165b704e9665e5a45c975006a44cf5710cf4cc44bae92eee8cc5646e01",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/planet/earth-expression-bindings.json",
+      "size_bytes": 604,
+      "sha256": "3cf13c1757800bc42f9519e51fc0d47cf493e76450127a30955136e736b91f52",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/planet/elemental-spirit.ts",
+      "size_bytes": 8704,
+      "sha256": "2cff895a7112aba3aa7f8e88c178c42eb7cdea4fb32d3db312587c57f93abc40",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/planet/fire-expression-bindings.json",
+      "size_bytes": 596,
+      "sha256": "adba4f07464d5a9960ceffdf1ad49595ff241bbb40d8e89b435e27d0836db211",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/planet/galaxy-helper.ts",
+      "size_bytes": 5776,
+      "sha256": "d6978b4f112c1c1ae9348b38d5dda3766a827c836a95095fcb701789c6e342a2",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/planet/im-water-study-material.ts",
+      "size_bytes": 8349,
+      "sha256": "22f3eacf8d7043e60ceb614dbf47b6068569b5ddacc40132666da2a443d4d77e",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/planet/jelly-expression-bindings.json",
+      "size_bytes": 1072,
+      "sha256": "6a4dd698e818bfd38df8cccf78048231c50f541815bd2f89051c7f0ce2dcebd7",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/planet/jelly-expression-controller.ts",
+      "size_bytes": 2638,
+      "sha256": "3daafe544e94776d15b7dd820ada11440b7894a8019452446bd3eba8883bc8af",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/planet/living-surface-shader.ts",
+      "size_bytes": 19073,
+      "sha256": "588edc821ca82d0e6bf8e0389fd503929b94ba8a985e67792b002dd8d1f14f03",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/planet/mesh-surface.ts",
+      "size_bytes": 5489,
+      "sha256": "9830bd535309760bd76aaf768f4a2d95373cfd9bee21280487c878545ec365ac",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/planet/metal-expression-bindings.json",
+      "size_bytes": 599,
+      "sha256": "26774785a73632cae3bfc8508364a06d7cc3b5190ba9bc0af49aaedea230d442",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/planet/porcelain-blink.ts",
+      "size_bytes": 1986,
+      "sha256": "8b70b1764a990280ddb7a6b0b72d40f963f21267458db39fd2dc68d803eeee27",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/planet/render-resources.ts",
+      "size_bytes": 1331,
+      "sha256": "3bdc79d99b391581263ab03d2fb355fcc9fc66b7fa32b8ced767b38cf9858629",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/planet/spiral-galaxy.ts",
+      "size_bytes": 9491,
+      "sha256": "f27f6753491383414c331ef863cb76b31273983ec2cbd873fd793fabaa4b7be7",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/planet/spirit-geometry.ts",
+      "size_bytes": 12590,
+      "sha256": "881471269bb0940aba4fc808e727ea8563b45468d6de78443f5b4b73de3deffb",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/planet/spirit-month-pet.ts",
+      "size_bytes": 2392,
+      "sha256": "cad13d8f90558d7bf202fc61af7fef3d3e36329c55706eb1646beaeb1d7188a4",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/planet/spirit-zodiac.ts",
+      "size_bytes": 8785,
+      "sha256": "85794f6f3e24eb497580069e667ad4b4be557eb8e846870e8c7cc2a2d7515303",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/planet/surface-effects.ts",
+      "size_bytes": 28306,
+      "sha256": "94f1c479f8ed96ee42af839bf7a78aaba2acd4d90be5db8d4d02cda5b3bc8a52",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/planet/surface-material.ts",
+      "size_bytes": 4176,
+      "sha256": "ab2ba1d4386e4b76a3c77372274439fecb0bddb623269127eb45046aff45df45",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/planet/surface-math.ts",
+      "size_bytes": 3988,
+      "sha256": "6f785c406149941df100690d5e64404e1108a60ea46a79625c0fa76dc46af0f9",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/planet/surface-stem-accents.ts",
+      "size_bytes": 8213,
+      "sha256": "861016c5289af6295b28256f5182592dcc53d6a24254ed4d7ffeaaf338bb71b6",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/planet/surface-vine-body.ts",
+      "size_bytes": 9008,
+      "sha256": "5e3968374e868e44e234b332cba4cf0cabccd0e437b98d72c87add2e72730c24",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/planet/surface-woody-branches.ts",
+      "size_bytes": 8208,
+      "sha256": "4563680398e8739ade4e6d652b46843db8c7310660a0b0ecbb026d1fd2a149f2",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/planet/texture-generator.ts",
+      "size_bytes": 5097,
+      "sha256": "044def6002449599755a04582024c15fb2f455275f36ebd7dad8d027305fb7a7",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/planet/theme-library.ts",
+      "size_bytes": 11643,
+      "sha256": "1e51156fbb99ea622a075dbbd22531c083ecb4a8b0aeec15c609cd9302d7798a",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/planet/uv-mask.ts",
+      "size_bytes": 2672,
+      "sha256": "2134589728d410b7c64d5a8f8cf4b8dde533141e33f7acf158df482e4a20a349",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/planet/vine-bundle.ts",
+      "size_bytes": 12387,
+      "sha256": "cc8f6eb7fe6dc868077fc8ab0b7012f5cf197476a097953026b68f3374e9cbb8",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/planet/wood-expression-bindings.json",
+      "size_bytes": 895,
+      "sha256": "5b16c35bfcf0fa24f60dbf9179ba644caa4c935a4841eb8caa3ac9d096ed7ebd",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/saju/daily-orbital.ts",
+      "size_bytes": 4230,
+      "sha256": "6756859b26da60494203f5903532ed8b7ffe76ef2d9ae69ab4d1c2b629fec79b",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/saju/input-error.ts",
+      "size_bytes": 167,
+      "sha256": "a1533c1b2c00755ed076e978990d0fb8119ec80ff5599096da4781990b54285a",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/saju/input.ts",
+      "size_bytes": 5520,
+      "sha256": "7880ae0a8808631918cc3d33ac4acc39955443fac9c4d24acc11077b17e220cf",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/saju/lunar-calendar.ts",
+      "size_bytes": 2920,
+      "sha256": "5a7c2c411873e640eab764db21f5ab1bd6f149b5d41434327b81e46e00a6a6c1",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/saju/manse.ts",
+      "size_bytes": 15053,
+      "sha256": "dae53e7bf50f5b821d1c737967c23e70e5c0623fb7089142fe01bcc5c6b15710",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/saju/types.ts",
+      "size_bytes": 3551,
+      "sha256": "278346290f6b8d9fa32ceea4b891ee48b67e8c5f4385d3ce985daecf72b66d79",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "lib/utils.ts",
+      "size_bytes": 177,
+      "sha256": "53f3d3d070f0a9082934da25b875f9499855c2b0693868dd28be8c23d8730f68",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "next-env.d.ts",
+      "size_bytes": 284,
+      "sha256": "217ce9348b523c3e6954fb50bb93364b58781d86742c995f3a5b03ba88b9ba72",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "next.config.ts",
+      "size_bytes": 133,
+      "sha256": "614bce25b089c3f19b1e17a6346c74b858034040154c6621e7d35303004767cc",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "package-lock.json",
+      "size_bytes": 527535,
+      "sha256": "ffb8ad533a7ea1d2f48ca306489d19884296f7902423fbbc00c48f3b8fd11d4e",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "package.json",
+      "size_bytes": 2253,
+      "sha256": "2028920683812c2b0e03ed6e3d77cfe1d122b7097920d90b23045fd976829d40",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "postcss.config.mjs",
+      "size_bytes": 59,
+      "sha256": "9199a4d20e13f66b8be9a348af182f4d14805b93b315db19f95be8432cd8301b",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "public/favicon.svg",
+      "size_bytes": 281,
+      "sha256": "bf6c12ea64f442b40dd90523ce350875c2ed5e0d325abbf2dfe1e2e9325e2cda",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "public/images/cosmos-cover.png",
+      "size_bytes": 2463808,
+      "sha256": "8749ac60a1333b432c55c9a9fc826a78eabdb4187e292bba0bfbcf5d7d9ac1ba",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "public/images/five-element-lineup-v1.png",
+      "size_bytes": 1093134,
+      "sha256": "662e822695e7477d671aa3911ac21b461f40d1173ac1d41b4aa593b3692dc6ca",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "public/images/im-water-target.png",
+      "size_bytes": 2139813,
+      "sha256": "0af98704cdb10f38ec6c67ea6eba6938af5dfd5fdbafa3b8350f0596b15d0744",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "public/images/porcelain-hero-portrait-v2.png",
+      "size_bytes": 1272069,
+      "sha256": "1c6761dfbb1bcd1b496258c51382ceab63a9e6e3374d8fcf813d992a647c8e54",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "public/images/porcelain-hero-portrait.png",
+      "size_bytes": 1282479,
+      "sha256": "36e44ff235b3e5440f0e0eac1c4a55e79e3c8def9977ba53d4b5d5983725f168",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "public/images/stem-material-reference-v2.png",
+      "size_bytes": 2642558,
+      "sha256": "0cda0a5c0b27c5921703c563bbbe1bb2255c8a8eb0bb948163f3948198143562",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "public/models/five-elements/earth-expression-v1.glb",
+      "size_bytes": 313216,
+      "sha256": "adddd4af80479125b9750b15f36a91fdc74ab618c2fc1f99b8c2018095c0289b",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "public/models/five-elements/earth-v1.glb",
+      "size_bytes": 207808,
+      "sha256": "8a5e1c2604ff66ad154f83fa6da67734c19c4fe696d2228d2808576637b8ebfa",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "public/models/five-elements/fire-expression-v1.glb",
+      "size_bytes": 300900,
+      "sha256": "c3d4c4d4a1cf606e323f0bf213dbf4b5eec7a3794905fce817465541d25d30c3",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "public/models/five-elements/fire-v1.glb",
+      "size_bytes": 195492,
+      "sha256": "f1c897e34302278ca4d78abbc787348acf8adb73de506c60b873ef3cf3062f93",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "public/models/five-elements/metal-expression-v1.glb",
+      "size_bytes": 179040,
+      "sha256": "d01210e7870b94c96a0c1be4f4c1b147d059f91803f8ac0b294bc94b66ba9145",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "public/models/five-elements/metal-v1.glb",
+      "size_bytes": 74064,
+      "sha256": "9ed143929120a5836005ffe707be9bbf6f20a94a6bfee1828455fdcceb27a023",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "public/models/five-elements/water-expression-v1.glb",
+      "size_bytes": 441872,
+      "sha256": "1a5139c2aa1bc78f67d6755f2da9e0ec2997f78b06c541a8898b348191ebb42b",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "public/models/five-elements/water-v1.glb",
+      "size_bytes": 184500,
+      "sha256": "8ceb8507485b78ea482dd765b32118734ce0cb17655998d2740e19f203bc1a0c",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "public/models/five-elements/wood-expression-v1.glb",
+      "size_bytes": 304336,
+      "sha256": "9988e332a4efaefbe2c4c2885e0a5c4842e6089e8c5d0f2b430e70d1a5930b2b",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "public/models/five-elements/wood-v1.glb",
+      "size_bytes": 198948,
+      "sha256": "1bf696c798ca3c97e9125fa8866e8146895129cf0dadab19ec755c98255c3cf1",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "public/models/porcelain-hero-v1-lite.glb",
+      "size_bytes": 5504312,
+      "sha256": "22bd1b4d410db3d8dbfe5068f78ce12ef4fcdc759a46915541fa356501a62f6e",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "public/models/porcelain-hero-v2.glb",
+      "size_bytes": 5951928,
+      "sha256": "8a21d20acf59a6e77105359f85a0a3275ea5fa0753a7b7533aaf47656ad8484b",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "scripts/build-verified.sh",
+      "size_bytes": 661,
+      "sha256": "2ae5329ac860076070c9217a43106a15cb5ecf907a0f7baeb9ef903f76b53c68",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "scripts/connector-preview/connector-preview-session.mjs",
+      "size_bytes": 6842,
+      "sha256": "45d5d0511a5b9689278b59570223017cdd3c4129431c6745e710c26323cac45c",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "scripts/connector-preview/host-binding.mjs",
+      "size_bytes": 7793,
+      "sha256": "9e44ab6864133a5c82f834a5904ebb7d6104cb783c24efba3c0fe1a161182cea",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "scripts/connector-preview/protocol.mjs",
+      "size_bytes": 1781,
+      "sha256": "111e062ebf08d3f180130f5bc3dcb3c1414c1d7be3c032c9d675a61c0c7513a8",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "scripts/execution-profile.mjs",
+      "size_bytes": 624,
+      "sha256": "2e71116f4d2b70cff8bb70436f8dd5c709ec7ff62893424530f404e0193d3630",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "scripts/install-ci.mjs",
+      "size_bytes": 1685,
+      "sha256": "4a5a92d60a08d0ba54effd8373da2da06284312c55b767287c68a0bec7200da7",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "scripts/install-ci.sh",
+      "size_bytes": 6783,
+      "sha256": "10d8764a61be50351dc3496e13588270de7956f0aa5f1189c49cabb2d89fe5c0",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "scripts/install-pnpm.sh",
+      "size_bytes": 9015,
+      "sha256": "a684c02c2b493dfbf262a66252a5cd36f81ca995a4024761728662ae63aa40c0",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "scripts/integration-preview.mjs",
+      "size_bytes": 6515,
+      "sha256": "8b63a3402bf4ec665be6edfb104219d1fa6f7e5bc6bcabec33c829f230178a72",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "scripts/npm-install.mjs",
+      "size_bytes": 7025,
+      "sha256": "9715c6a32d1d4a0289ef6376a0e819c3b6a6416b8a9877733d9fb4339ce626b6",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "scripts/pnpm-install.mjs",
+      "size_bytes": 10633,
+      "sha256": "a83164e344c1947053def83b546be8115deaa827314bbaead7afe6b6451c5cdf",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "scripts/qa/load-ts.cjs",
+      "size_bytes": 1960,
+      "sha256": "52a8984a1fd29e2c866fe060e07e1b42b5effdbe847dececaef317d066891b07",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "scripts/qa/spirit-vertex-colors.cjs",
+      "size_bytes": 1200,
+      "sha256": "c27cd237e5c4086ef5e43728c0cf19b11defa0b0da8e0f582ed9d906be84eb2a",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "scripts/run-framework.mjs",
+      "size_bytes": 993,
+      "sha256": "9bf9f41a29314cabe0238b8e9c540ec3f7b5a6adafc7c8fb6c3940722d061dca",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "scripts/sites-env.mjs",
+      "size_bytes": 906,
+      "sha256": "5de99d6806b01f0ee0b941af3684d75dcf1afbbcff22cb95bfa2e584c5dafa88",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "scripts/sites-env.sh",
+      "size_bytes": 1530,
+      "sha256": "df86ebfc27d2f00860036658e933ac0ddd7b5f6879aa5d51218f0863c7e1fb60",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "tailwind.config.ts",
+      "size_bytes": 1227,
+      "sha256": "757bf87d5c1850ee1aa02a55b69bd61695c230fa93c65cb34ff847a9f4c96267",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "tsconfig.json",
+      "size_bytes": 800,
+      "sha256": "7199c6e4e400921e8049729840165a39f1476fa97901bed00239e7697bfe8da4",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "vendor/shadcn-tailwind-4.13.0.LICENSE.md",
+      "size_bytes": 1063,
+      "sha256": "1564074e13439397221ffd522e2e504d56561994a23d371aa5e3ad43e4f5423f",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "vendor/shadcn-tailwind-4.13.0.css",
+      "size_bytes": 16041,
+      "sha256": "bc7d83425702955b4cb67cb14ede9d603f9d912376d57a2d81d661094d2a782a",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "vite.config.ts",
+      "size_bytes": 3115,
+      "sha256": "6f6d890794fbe23f3e35cceb327f49d5977432a5aaf715e040a6408932da395b",
+      "category": "site-source-v23"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/Jade_BaseColor_1024.png",
+      "size_bytes": 804444,
+      "sha256": "29bdd5ab8a2c87715fd3aedae3f0465c8b6910b5a9c0e8b8bffeb84a03c6b824",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/Jade_GreenLight_v002_1024.png",
+      "size_bytes": 674300,
+      "sha256": "df575df959c160f8ad6ce03d5b75009052ef5bea3b013114b5c78dfe8b3bcc8d",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/README_ko.txt",
+      "size_bytes": 2614,
+      "sha256": "c11a0f3895988e6166423852a72c9255b769affcde35becae347f7c8afb2839b",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/SHA256SUMS.txt",
+      "size_bytes": 2047,
+      "sha256": "c5f4ef6263eb84a436d1afb91fed50e776a7b3a9057aade0e322868d2b162d7c",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/SaJu_B_Connection_Pose_Review_20261006.jpg",
+      "size_bytes": 198523,
+      "sha256": "fc88be2615528b0fb87e284287d11af3eb9d8eb8ebf92750abd369eb7a3cfa5f",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/SaJu_B_Jade_Character_Study.glb",
+      "size_bytes": 3610460,
+      "sha256": "342485a2f1bae6503ee87b412558493b84f7fc7f40de49b3e23e5218bf80bcf9",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/SaJu_B_Jade_Character_Study_Native.blend",
+      "size_bytes": 8722368,
+      "sha256": "7ef742eeea82ac4e4fb42f3a57db9c3d0125fd2c332944e251f413ddef55251b",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/SaJu_B_Jade_Material_Comparison_20261006.jpg",
+      "size_bytes": 227953,
+      "sha256": "fbbe21f02de04ec75ac7dd3cdc39756e02a2f2ebbd16269d272be4d98ebe85a3",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/release_glass.png",
+      "size_bytes": 369114,
+      "sha256": "3f4636d08a031f16179ef3b382b7f2f548627ee61b6e3e10c708bf11eb878b11",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/release_jade_control.png",
+      "size_bytes": 367974,
+      "sha256": "4b11d587fcf5eb4c315afddff49c5b114916dd97db43936afa8695d144b36808",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/release_jade_glow_v002.png",
+      "size_bytes": 371489,
+      "sha256": "c5ce13cd4ed0f64957781e72596c0dede5453d22412b91151fe6b4570459f7ff",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/release_qa.json",
+      "size_bytes": 1098,
+      "sha256": "783439ae0a462a234d1630608aba23006801e428d2e66a847ff3267c859d1f33",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/release_wave_v002.png",
+      "size_bytes": 371460,
+      "sha256": "49b6acb239f53ae5528b0aa528adcee20aa3f2e8ee8bdf37f6022328d36e5f9e",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/scripts/build_jade_v003.py",
+      "size_bytes": 9022,
+      "sha256": "a65d53d1047dc1d93cfb4d95b62438283a12e39d6a379da4c12468a09ee8da3b",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/scripts/compose_release.py",
+      "size_bytes": 2608,
+      "sha256": "5a175c1c7e44eca5cc6b35e2c46d131a462eb2ecf199ac2ab25c778d8e82919a",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/scripts/finalize_jade.py",
+      "size_bytes": 4350,
+      "sha256": "d7c83345da20b0ff36f1d7a2221e39434d360db59f9d3a7718f44292aacb932c",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/scripts/finish_assets.py",
+      "size_bytes": 2228,
+      "sha256": "f5b90b1eb7c678a63340cece5bd0dd6aa0951c4b4211cc952ad7e1423e1a79e9",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/scripts/render_release.py",
+      "size_bytes": 1907,
+      "sha256": "25812f92d21909e969425ac8f0429ee4799c3fde47bf120338cc7028129f1b1a",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/scripts/strengthen_glow.py",
+      "size_bytes": 936,
+      "sha256": "0a39d00589dd6af6258257b0bddc2b2756a01958b910f68d87012b57a889c508",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/scripts/validate_final.py",
+      "size_bytes": 2953,
+      "sha256": "687d6746aa7f81fc18e475e7ddb3f06d2908d7d47dd2d731555fa66bded845d5",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/source/candidate_5.blend",
+      "size_bytes": 2165756,
+      "sha256": "65e637c9d635d0cff58c82a8094826c218ddb7e005943cf066dd3a69ef33ecc7",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/source/candidate_5_neutral.png",
+      "size_bytes": 255281,
+      "sha256": "8e22eb6e6150b9dab347c94a923e4bfee6ba50fc178f7f012f6a2265f9794f2e",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/validate_final.log",
+      "size_bytes": 1948,
+      "sha256": "3a586aed10127a3ba726783e727109d05a2fff18152fa633eb9e09160590fd86",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-clear-green050-20261006/SaJu_B_Jade_ClearGreen050_20261006.blend",
+      "size_bytes": 8643044,
+      "sha256": "cfc4361cd0dfad37e422dc3de87a44320af78d95187cf9b5af7af1762b000bd7",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-clear-green050-20261006/SaJu_B_Jade_ClearGreen050_20261006.glb",
+      "size_bytes": 3530976,
+      "sha256": "e0cd0cd29e610173ad1e783a0e37672b4563884123001440b3fc7b638111a9fe",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-clear-green050-20261006/Jade_richer_green_50.png",
+      "size_bytes": 366980,
+      "sha256": "aec703fb2ad34b8973ee2d243e53b629c5d449140edbbd9fcc534f8c16e01e90",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-clear-green050-20261006/SaJu_Jade_GlowHue_Old_vs_ClearGreen50_20261006.jpg",
+      "size_bytes": 144185,
+      "sha256": "9b64659205244f5169e0ce8b4c5bbe75008c72ce132a81537a8de8d05a76f29e",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-clear-green050-20261006/Jade_ClearGreen_Emission_1024.png",
+      "size_bytes": 594639,
+      "sha256": "4a4a77ab0e98a4500dacbfa9e286c3bc4f0b8686654f9e7dacfba8743d005696",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-clear-green050-20261006/color_only_audit.json",
+      "size_bytes": 898,
+      "sha256": "68622ad1908c270bd85ad4155c26d8319e58e99a970e1ed60a590efec3a53a77",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-clear-green050-20261006/change_glow_hue.py",
+      "size_bytes": 1867,
+      "sha256": "794537f2d8bb1ac207733f7ecc3555c9ce177f4b8755bc9a60ea39498035b7a8",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-clear-green050-20261006/finalize_green.py",
+      "size_bytes": 1951,
+      "sha256": "b287568967c6af7e6f2fc489c1336318e460623bff34761013fb3c032aaca072",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-clear-green050-20261006/README_ko.txt",
+      "size_bytes": 888,
+      "sha256": "dced5f6248b4deddcb6b79651bd8dd8f68c47f380f41fc489e5539417881ab1d",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-clear-green050-20261006/SHA256SUMS.txt",
+      "size_bytes": 857,
+      "sha256": "363265aaf3d320b2087461be5449339c54f776258b3d8a1e2dada5f9ddd5dba3",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-green-emission-separated-v001/SaJu_Jade_GreenEmission_Separated_v001.blend",
+      "size_bytes": 10886965,
+      "sha256": "989921a8e85b36d5215f61882fa54938d9a588e9f5e387a37bd40820446b337f",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-green-emission-separated-v001/SaJu_Jade_GreenEmission_Separated_v001.glb",
+      "size_bytes": 4293332,
+      "sha256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-green-emission-separated-v001/Jade_ReflectanceBase_1024.png",
+      "size_bytes": 813644,
+      "sha256": "3a3ffe202958c031015d3230907cd9087e21763c6ab398dceb80bc158aafc542",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-green-emission-separated-v001/Jade_GreenEmission_1024.png",
+      "size_bytes": 642963,
+      "sha256": "173142e815855363bdeabdc5779279fe6ec182ba89f4003e070b791d70af62c6",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-green-emission-separated-v001/Jade_ReflectionMask_1024.png",
+      "size_bytes": 704064,
+      "sha256": "f26aa1771b0eecccceb84b40f30f8c1a7d6589a4a32d6f565991abe1103db2b7",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-green-emission-separated-v001/SaJu_Jade_Green_Emission_Before_After_Proof.jpg",
+      "size_bytes": 203286,
+      "sha256": "76bda74170685e032affb2da2263c3efc8607baffd994de7ef6cd3b772a5d2d2",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-green-emission-separated-v001/SaJu_Jade_Native_vs_GLB_Verification.jpg",
+      "size_bytes": 123369,
+      "sha256": "4788e0a271fa0e2c889cb05cbfc733f6cda929b9d245dc7971870a4b78ddd2fc",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-green-emission-separated-v001/before_beauty.png",
+      "size_bytes": 382418,
+      "sha256": "6a2ae08bf3decbde23edc01239ceae343b0b390d1d12173de473c171e80f9906",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-green-emission-separated-v001/after_green_verified.png",
+      "size_bytes": 380676,
+      "sha256": "1af86fd7410339af2a3096af70aa9144d01c2b06b79a0415480febf3044d2eac",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-green-emission-separated-v001/after_emission_only_AgX.png",
+      "size_bytes": 80615,
+      "sha256": "540a956a2739153220b6671392a84d168aee48e880b957612c9f0eef84535e96",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-green-emission-separated-v001/glb_reimport_green.png",
+      "size_bytes": 371053,
+      "sha256": "4e331680e6000f6d85dfc09e68db2d506307b81c48f724eb5d91b83d23c00d82",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-green-emission-separated-v001/emission_raw_0001.exr",
+      "size_bytes": 410738,
+      "sha256": "ddfeedf64b725f187ce27b023d55148f16a54363d93ea3688b84f6a6dd9f09c2",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-green-emission-separated-v001/after_emission_raw_0001.exr",
+      "size_bytes": 411142,
+      "sha256": "7f404d4bd9dd738c6fef219441e5d68e33efc5073cb46701b48a80818c9efa82",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-green-emission-separated-v001/emission_raw_AgX.png",
+      "size_bytes": 78798,
+      "sha256": "dfe259d13b385448b5babff02f1a3dd446fa98989d7e489d447ce69f394907be",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-green-emission-separated-v001/emission_raw_Standard.png",
+      "size_bytes": 69964,
+      "sha256": "1edeb1fb8de244222c7ac9347ecb4084f697f6121c29667c3c3b6d50a2e7de97",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-green-emission-separated-v001/beauty_raw_Standard.png",
+      "size_bytes": 297057,
+      "sha256": "053967fe01a8478a7d57b19f066172e6f2053c3c08f6eb7b337ec49d6f9538ce",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-green-emission-separated-v001/gloss_direct_AgX.png",
+      "size_bytes": 421156,
+      "sha256": "d7aaa17b8c3ecf38e7c0130a02e308dbd800f81c8f26bbd7c57671106fb22c5c",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-green-emission-separated-v001/INTEGRATION_README_ko.txt",
+      "size_bytes": 3913,
+      "sha256": "66215962e5e5f6fba112a2ef209456766f119b68a1cbc522695301242a2c648e",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-green-emission-separated-v001/final_validation.json",
+      "size_bytes": 866,
+      "sha256": "8a9571b34671753bdc7007bbbb10cd5c7cce7d6270f8c5d74af30fe90bea710c",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-green-emission-separated-v001/gltf_material_contract.json",
+      "size_bytes": 1090,
+      "sha256": "fbcfebdae97a0cc1a2c3d3bcca40817217f85872c5c67c00fc84b6def58cb09b",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-green-emission-separated-v001/diagnose_passes.py",
+      "size_bytes": 1613,
+      "sha256": "6d9923ed18fa2531f885fa887de06f41608c0520126f024d5527da06866aa7e0",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-green-emission-separated-v001/test_separation.py",
+      "size_bytes": 1834,
+      "sha256": "934007dcf4797520cec570ef61a59f606abbd0ca0bff002ee953a2ff8f1067c3",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-green-emission-separated-v001/refine_separation.py",
+      "size_bytes": 1606,
+      "sha256": "4afe84dc2a14514f5f97e9860991148e7db77bead529a02c92b50e831826c19f",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-green-emission-separated-v001/smooth_isolation.py",
+      "size_bytes": 1091,
+      "sha256": "0e3931ae1513dc5e2d8ff1819f030acc6d6c0910dd561aa9989f64e036911159",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-green-emission-separated-v001/bake_export_final.py",
+      "size_bytes": 5175,
+      "sha256": "f726758b6b5c656b428a72bcc9560db1685e21f5f366930fdfc363cd8ec4b0a9",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-green-emission-separated-v001/verify_and_reimport.py",
+      "size_bytes": 3477,
+      "sha256": "0d093510c00426b8d9c8e1935fe3db086ad02cb10cd64126aaf60b173c1fe735",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-green-emission-separated-v001/package_release.py",
+      "size_bytes": 4204,
+      "sha256": "19fcbd78cdec7abbda46d0ac8a314d68d7a9e2c888772bd7de922068e6ad0e68",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-green-emission-separated-v001/verification.log",
+      "size_bytes": 8182,
+      "sha256": "d3fb66921faae312a487a20c1c1770ec1cbcde47d926f548a95326a7a0203186",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-green-emission-separated-v001/manifest.json",
+      "size_bytes": 4242,
+      "sha256": "bc5b7b072dd6946d1699023e2ecd251c29e872b1d77ce601e0eb66d9ff8de5db",
+      "category": "standalone-art-source-reference"
+    },
+    {
+      "target_path": "assets/source-reference/saju-b-green-emission-separated-v001/SHA256SUMS.txt",
+      "size_bytes": 2583,
+      "sha256": "40d825b0e976ff149da7c4c9ddd9cdbc3994c0630725a12adf56136fda4b72b7",
+      "category": "standalone-art-source-reference"
+    }
+  ],
+  "preservation_status": "ALL_SELECTED_SOURCE_BYTES_PRESERVED; one runtime asset requires restoration from its lossless gzip archive",
+  "repository_file_count": 217,
+  "expected_full_repository_file_count": 215,
+  "missing_files": [
+    {
+      "target_path": "public/models/porcelain-hero-blink-v1.glb",
+      "size_bytes": 13700928,
+      "git_blob_sha": "d2ee073a4841a9e1ca798bca368dbe1eba3cecb3",
+      "sha256": "57d7ee5b3c4e0b99eaadefb8095283bed44986beaa5a91c096dd7a0c514bf9c2",
+      "reason": "Original bytes are preserved in a verified lossless gzip archive; runtime target is absent until restoration.",
+      "placeholder_included": false,
+      "archive_path": "preservation-archives/porcelain-hero-blink-v1.glb.gz",
+      "archive_size_bytes": 10310913,
+      "archive_sha256": "09f11f913f4853ea2050a007618ec607e7a6e4350403f7e4bdd91a68e542f3a1",
+      "source_bytes_preserved": true
+    }
+  ],
+  "source_content_complete": true,
+  "runtime_checkout_complete": false,
+  "restoration_command": "python3 scripts/restore-preserved-assets.py"
+}

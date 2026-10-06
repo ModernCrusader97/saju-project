@@ -1,0 +1,31 @@
+{
+  "atlasBytes": 4194304,
+  "verifiedRawSHA256": "e93d72ea0d7571669f345263e1948f907dce35d48cb6fd148b38dc81cb5bbc4c",
+  "quantizedFieldRange": [
+    0.20268558785381857,
+    0.7980163271534295
+  ],
+  "samples": 9000,
+  "finiteSamples": 9000,
+  "maximumLoopEndpointError": 0,
+  "animatedMaskSpan": 1,
+  "nativeProbeComparison": {
+    "count": 256,
+    "field": {
+      "maxAbsolute": 0.012981666139413983,
+      "meanAbsolute": 0.0031567543490329582,
+      "rms": 0.004210125009297163
+    },
+    "emissionMask": {
+      "maxAbsolute": 0.048781050825253386,
+      "meanAbsolute": 0.006683515182282966,
+      "rms": 0.012854345285904647
+    },
+    "isolationMask": {
+      "maxAbsolute": 0.058034382341618285,
+      "meanAbsolute": 0.011341780413703133,
+      "rms": 0.016645784805911907
+    }
+  }
+}
+

@@ -1,22 +1,9 @@
 import * as THREE from "three";
 
-/** Shared by the day-branch avatar and the month-branch miniature companion. */
-export const ZODIAC_FEATURES = {
-  자: { branch: "자", animal: "rat", label: "쥐", silhouette: "round-ears" },
-  축: { branch: "축", animal: "ox", label: "소", silhouette: "outward-horns" },
-  인: { branch: "인", animal: "tiger", label: "호랑이", silhouette: "rounded-ears-and-stripes" },
-  묘: { branch: "묘", animal: "rabbit", label: "토끼", silhouette: "long-ears" },
-  진: { branch: "진", animal: "dragon", label: "용", silhouette: "forked-horns" },
-  사: { branch: "사", animal: "snake", label: "뱀", silhouette: "scaled-crown" },
-  오: { branch: "오", animal: "horse", label: "말", silhouette: "leaf-ears-and-mane" },
-  미: { branch: "미", animal: "sheep", label: "양", silhouette: "curled-horns" },
-  신: { branch: "신", animal: "monkey", label: "원숭이", silhouette: "cupped-ears" },
-  유: { branch: "유", animal: "rooster", label: "닭", silhouette: "scalloped-crest" },
-  술: { branch: "술", animal: "dog", label: "개", silhouette: "floppy-ears" },
-  해: { branch: "해", animal: "pig", label: "돼지", silhouette: "pointed-ears" },
-} as const;
+import { ZODIAC_FEATURES, type ZodiacBranch } from "./spirit-profiles";
+export { ZODIAC_FEATURES } from "./spirit-profiles";
+export type { ZodiacBranch } from "./spirit-profiles";
 
-export type ZodiacBranch = keyof typeof ZODIAC_FEATURES;
 type Point = readonly [number, number, number];
 
 /**

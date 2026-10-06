@@ -1,0 +1,85 @@
+{
+  "atlasBytes": 8388608,
+  "verifiedRawSHA256": "ea115bec1027fb9379da0ae4cea6568a6a9ad9699ea4ea10a5bfd29fde6f56d5",
+  "fieldRanges": [
+    [
+      0.23921568627450981,
+      0.788235294117647
+    ],
+    [
+      0.2235294117647059,
+      0.7764705882352941
+    ],
+    [
+      0.1843137254901961,
+      0.7568627450980392
+    ]
+  ],
+  "samples": 24696,
+  "maximumLoopEndpointError": 0,
+  "maximumStaticFieldDifference": 0,
+  "animatedMaskSpan": 1,
+  "boundaryDerivativesMax": 0.000003106814805420299,
+  "spatialOppositeChangeCounts": [
+    {
+      "fromSeconds": 0,
+      "toSeconds": 2,
+      "brighter": 134,
+      "darker": 134
+    },
+    {
+      "fromSeconds": 2,
+      "toSeconds": 4,
+      "brighter": 137,
+      "darker": 122
+    },
+    {
+      "fromSeconds": 4,
+      "toSeconds": 6,
+      "brighter": 126,
+      "darker": 141
+    }
+  ],
+  "nativeProbeComparison": {
+    "points": 256,
+    "blendedChecks": 3072,
+    "fieldABC": [
+      {
+        "maxAbsolute": 0.01113293580882213,
+        "meanAbsolute": 0.0020940928740166504,
+        "rms": 0.002755803070016594
+      },
+      {
+        "maxAbsolute": 0.009958229442888489,
+        "meanAbsolute": 0.0020404440216453107,
+        "rms": 0.0026199138051499257
+      },
+      {
+        "maxAbsolute": 0.008416547890544912,
+        "meanAbsolute": 0.0021933286311270703,
+        "rms": 0.0027776451307716353
+      }
+    ],
+    "blendedField": {
+      "maxAbsolute": 0.012060537756427459,
+      "meanAbsolute": 0.0021110822460634984,
+      "rms": 0.0027141251682500753
+    },
+    "emissionMask": {
+      "maxAbsolute": 0.04208463845859689,
+      "meanAbsolute": 0.004429012215287745,
+      "rms": 0.008149980724905852
+    },
+    "isolationMask": {
+      "maxAbsolute": 0.046056902659499466,
+      "meanAbsolute": 0.008166993855146886,
+      "rms": 0.01104484788883438
+    },
+    "acceptanceBudget": {
+      "perFieldMax": 0.02,
+      "blendedFieldMax": 0.025,
+      "emissionMax": 0.12,
+      "isolationMax": 0.14
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "rendered_frames": 73,
+  "movie_loop_frames": 72,
+  "fps": 12,
+  "loop_seconds": 6,
+  "preview_seconds": 12,
+  "preview_decoded_frames": 144,
+  "native_endpoint_pixel_identical": true,
+  "video_two_repeats_pixel_identical": true,
+  "quarter_cycle_green_pixels_brighter": 8872,
+  "quarter_cycle_green_pixels_dimmer": 9160,
+  "spatial_change_both_directions": true,
+  "emission_strength_constant": 2,
+  "base_material_coordinates_static": true,
+  "shader_animation_in_glb": false,
+  "approved_static_frame0_pixel_identical": true,
+  "approved_static_frame0_pixel_mean_abs_diff": 0.0,
+  "approved_static_frame0_pixel_max_abs_diff": 0
+}

@@ -1,0 +1,8 @@
+import bpy,os
+P=os.path.dirname(os.path.abspath(__file__));bpy.ops.wm.open_mainfile(filepath=P+'/B_Jade_Separated_Green_Test.blend');s=bpy.context.scene;s.frame_set(1);m=bpy.data.materials['Deep cloudy jade green mineral light'];n=m.node_tree.nodes;l=m.node_tree.links;mix=n.get('Reduce white BRDF overlap only inside emitting mineral');em=n.get('Separated green light | strength 2');mask=n.get('Same mineral emission mask')
+# Emitted energy remains exactly 2 * original mask * green. Only the competing reflected component is isolated more strongly.
+power=n.new('ShaderNodeMath');power.name='Emission-region BRDF isolation';power.operation='POWER';power.inputs[1].default_value=.22;l.new(mask.outputs['Color'],power.inputs[0]);l.new(power.outputs[0],mix.inputs[0])
+maxn=n.new('ShaderNodeMath');maxn.operation='MAXIMUM';maxn.inputs[1].default_value=.000001;l.new(power.outputs[0],maxn.inputs[0]);div=n.new('ShaderNodeMath');div.operation='DIVIDE';l.new(mask.outputs['Color'],div.inputs[0]);l.new(maxn.outputs[0],div.inputs[1])
+col=n.new('ShaderNodeMixRGB');col.blend_type='MULTIPLY';col.inputs[0].default_value=1;col.inputs[1].default_value=(.001,.65,.08,1);l.new(div.outputs[0],col.inputs[2]);l.new(col.outputs[0],em.inputs['Color'])
+s['emission_proof']='Dedicated emission multiplier stays2; power/ratio pair cancels, preserving original mask amplitude. BRDF overlaps suppressed independently.'
+s.render.filepath=P+'/after_green_isolated.png';bpy.ops.render.render(write_still=True);bpy.ops.wm.save_as_mainfile(filepath=P+'/B_Jade_Green_Emission_Isolated_v001.blend');print('ISOLATED_GREEN_RENDER_DONE')
