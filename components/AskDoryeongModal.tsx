@@ -4,7 +4,7 @@ import { readApiResponse } from "@/lib/http-client";
 
 
 import React, { useState, useEffect, useRef } from "react";
-import { X, Send, Sparkles, Loader2 } from "lucide-react";
+import { X, Send, Loader2 } from "lucide-react";
 import { FortuneResult } from "@/lib/saju/types";
 
 interface Message {
@@ -19,38 +19,78 @@ interface AskDoryeongModalProps {
   fortune: FortuneResult;
 }
 
-export default function AskDoryeongModal({
+export default function AskDoryeongModal(props: AskDoryeongModalProps) {
+  return <Conversation key={props.fortune.id} {...props} />;
+}
+
+function Conversation({
   isOpen,
   onClose,
   fortune,
 }: AskDoryeongModalProps) {
-  const [messages, setMessages] = useState<Message[]>([]);
+  const [visit, setVisit] = useState({ open: isOpen, version: 0 });
+  if (visit.open !== isOpen) setVisit({ open: isOpen, version: visit.version + 1 });
+  const [historyRetry, setHistoryRetry] = useState(0);
+  const historyToken = `${visit.version}:${historyRetry}`;
+  const [history, setHistory] = useState<{ token: string; messages: Message[]; error: string }>({ token: "", messages: [], error: "" });
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
+  const [sendError, setSendError] = useState("");
+  const [notice, setNotice] = useState("");
+  const [needsReview, setNeedsReview] = useState(false);
+  const [resendChoice, setResendChoice] = useState(false);
+  const inFlight = useRef(false);
+  const mounted = useRef(true);
+  const persistedCount = useRef(0);
+  const uncertainSend = useRef<{ question: string; after: number } | null>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
+  const messages = history.messages;
+  const historyLoading = history.token !== historyToken;
+  const historyError = history.token === historyToken ? history.error : "";
+  const canSend = !loading && !historyLoading && !historyError && !needsReview;
 
   useEffect(() => {
-    if (isOpen) {
-      // 대화 내역 불러오기
-      fetch(`/api/saju/${fortune.id}`)
-        .then((res) => readApiResponse(res))
-        .then((data) => {
-          if (data.chats && data.chats.length > 0) {
-            setMessages(data.chats);
+    mounted.current = true;
+    return () => { mounted.current = false; };
+  }, []);
+
+  useEffect(() => {
+    if (!isOpen || inFlight.current) return;
+    const controller = new AbortController();
+    fetch(`/api/saju/${encodeURIComponent(fortune.id)}`, { signal: controller.signal })
+      .then(async res => {
+        const data = await readApiResponse(res);
+        if (!res.ok) throw new Error(data.error || "대화 기록을 불러오지 못했어요.");
+        if (!Array.isArray(data.chats)) throw new Error("대화 기록을 확인할 수 없습니다.");
+        return data.chats;
+      })
+      .then(chats => {
+        if (controller.signal.aborted) return;
+        const uncertain = uncertainSend.current;
+        if (uncertain) {
+          const found = chats.slice(uncertain.after).some(message => message.role === "user" && message.content === uncertain.question);
+          if (found) {
+            setInput(current => current.trim() === uncertain.question ? "" : current);
+            setNotice("질문이 이미 대화에 저장되어 있어요. 대화 기록을 확인해 주세요.");
+            uncertainSend.current = null;
+            setNeedsReview(false);
+            setResendChoice(false);
+            setSendError("");
           } else {
-            // 초기 인사 메시지
-            setMessages([
-              {
-                role: "doryeong",
-                content: `${fortune.analysis.name}님, 사주 풀이를 읽어보시며 마음에 남은 질문이나 더 알고 싶은 시기, 관계에 대해 편히 여쭈어보시옵소서.`,
-                createdAt: new Date().toISOString(),
-              },
-            ]);
+            setNotice("");
+            setSendError("지금 불러온 기록에는 질문이 없지만, 이전 요청이 나중에 저장될 수도 있어요. 다시 보내면 같은 질문이 중복될 수 있습니다.");
+            setNeedsReview(true);
+            setResendChoice(true);
           }
-        })
-        .catch(() => {});
-    }
-  }, [isOpen, fortune.id, fortune.analysis.name]);
+        }
+        persistedCount.current = chats.length;
+        setHistory({ token: historyToken, error: "", messages: chats.length ? chats : [{ role: "doryeong", content: `${fortune.analysis.name}님, 사주 풀이에서 궁금한 점을 질문해 주세요.`, createdAt: new Date().toISOString() }] });
+      })
+      .catch(error => {
+        if (!controller.signal.aborted) setHistory(previous => ({ ...previous, token: historyToken, error: error.message || "대화 기록을 불러오지 못했어요." }));
+      });
+    return () => controller.abort();
+  }, [isOpen, fortune.id, fortune.analysis.name, historyToken]);
 
   useEffect(() => {
     scrollRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -68,44 +108,47 @@ export default function AskDoryeongModal({
 
   if (!isOpen) return null;
 
-  const handleSend = async (e: React.FormEvent) => {
+  const handleSend = async (e: React.FormEvent, allowResend = false) => {
     e.preventDefault();
-    if (!input.trim() || loading) return;
-
+    if (!input.trim() || loading || historyLoading || historyError || (!allowResend && needsReview) || inFlight.current) return;
+    // A synchronous fence also covers two submits before React has committed
+    // the disabled button. Failed/uncertain requests are never retried here.
+    inFlight.current = true;
     const userText = input.trim();
-    setInput("");
-    const userMsg: Message = {
-      role: "user",
-      content: userText,
-      createdAt: new Date().toISOString(),
-    };
-    setMessages((prev) => [...prev, userMsg]);
+    const after = persistedCount.current;
     setLoading(true);
-
+    setSendError("");
+    setNotice("");
+    setResendChoice(false);
+    setNeedsReview(false);
+    uncertainSend.current = null;
+    let acknowledged = false;
     try {
-      const res = await fetch(`/api/saju/${fortune.id}/chat`, {
+      const res = await fetch(`/api/saju/${encodeURIComponent(fortune.id)}/chat`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ question: userText }),
       });
       const data = await readApiResponse(res);
-      if (data.success && data.reply) {
-        const reply = data.reply;
-        setMessages((prev) => [
-          ...prev,
-          {
-            role: "doryeong",
-            content: reply,
-            createdAt: new Date().toISOString(),
-          },
-        ]);
-      } else {
-        alert(data.error || "답변을 불러오지 못했습니다.");
-      }
-    } catch {
-      alert("네트워크 오류가 발생했습니다.");
+      if (!res.ok || !data.success || !data.reply) throw new Error(data.error || "답변을 확인하지 못했어요.");
+      if (!mounted.current) return;
+      const now = new Date().toISOString();
+      setHistory(previous => ({ ...previous, messages: [...previous.messages, { role: "user", content: userText, createdAt: now }, { role: "doryeong", content: data.reply!, createdAt: now }] }));
+      setInput(current => current.trim() === userText ? "" : current);
+      acknowledged = true;
+    } catch (error) {
+      if (!mounted.current) return;
+      uncertainSend.current = { question: userText, after };
+      setNeedsReview(true);
+      setSendError(`${error instanceof Error ? error.message : "네트워크 응답을 확인하지 못했어요."} 질문은 입력란에 남겨두었어요. 중복 전송을 피하려면 대화 기록을 먼저 확인해 주세요.`);
     } finally {
-      setLoading(false);
+      inFlight.current = false;
+      if (mounted.current) {
+        setLoading(false);
+        // Reconcile the authoritative history after an acknowledged write,
+        // including completion while the dialog was closed then reopened.
+        if (acknowledged) setHistoryRetry(count => count + 1);
+      }
     }
   };
 
@@ -135,6 +178,7 @@ export default function AskDoryeongModal({
           </div>
           <button
             onClick={onClose}
+            aria-label="대화 닫기"
             className="p-1 rounded-full text-doryeong-textMuted hover:bg-black/5"
           >
             <X className="h-6 w-6" />
@@ -142,7 +186,7 @@ export default function AskDoryeongModal({
         </div>
 
         {/* Message List */}
-        <div className="flex-1 overflow-y-auto p-4 space-y-4">
+        <div className="flex-1 overflow-y-auto p-4 space-y-4" aria-live="polite">
           {messages.map((m, idx) => (
             <div
               key={idx}
@@ -176,6 +220,20 @@ export default function AskDoryeongModal({
           <div ref={scrollRef} />
         </div>
 
+        {/* Keep recovery next to the composer, outside the scrolling history. */}
+        <div className="px-3 space-y-2">
+          {historyLoading && !loading && !sendError && <p role="status" className="text-sm text-doryeong-textMuted">대화 기록을 불러오고 있어요.</p>}
+          {historyError && <div role="alert" className="p-3 rounded-xl border border-red-200 bg-red-50 text-red-800 text-sm space-y-2">
+            <p>{historyError}</p><button type="button" className="secondary-button" onClick={() => setHistoryRetry(count => count + 1)}>대화 기록 다시 불러오기</button>
+          </div>}
+          {sendError && <div role="alert" className="p-3 rounded-xl border border-red-200 bg-red-50 text-red-800 text-sm space-y-2">
+            <p>{sendError}</p><button type="button" className="secondary-button" onClick={() => setHistoryRetry(count => count + 1)}>대화 기록 확인하기</button>
+            {resendChoice && <button type="button" className="secondary-button" disabled={loading || historyLoading || !!historyError || !input.trim()} onClick={event => void handleSend(event, true)}>중복 가능성을 알고 다시 보내기</button>}
+          </div>}
+          {notice && <div className="space-y-2"><p role="status" className="text-sm text-doryeong-textMuted">{notice}</p>
+            <button type="button" className="secondary-button" disabled={loading || historyLoading} onClick={() => setHistoryRetry(count => count + 1)}>기록 다시 확인</button></div>}
+        </div>
+
         {/* Input Bar */}
         <form
           onSubmit={handleSend}
@@ -183,15 +241,18 @@ export default function AskDoryeongModal({
         >
           <input
             type="text"
+            aria-label="사주 풀이 질문"
+            maxLength={500}
             placeholder="궁금한 시기, 연애, 이직 등 마음껏 물어보세요..."
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            disabled={loading}
+            disabled={loading || historyLoading || !!historyError}
             className="flex-1 px-4 py-3 rounded-xl bg-doryeong-ivory border border-doryeong-border text-sm focus:outline-none focus:border-doryeong-navy"
           />
           <button
             type="submit"
-            disabled={!input.trim() || loading}
+            aria-label="질문 보내기"
+            disabled={!input.trim() || !canSend}
             className="h-11 w-11 rounded-xl bg-doryeong-navy text-white flex items-center justify-center disabled:opacity-40 hover:bg-doryeong-navyDark active:scale-95 transition-all shrink-0"
           >
             <Send className="h-4 w-4" />
