@@ -1,6 +1,7 @@
 import {env} from 'cloudflare:workers';
 import {getChatGPTUser} from '@/app/chatgpt-auth';
 import type {FortuneResult,GuinMapData,GuinPerson} from '../saju/types';
+import {FORTUNE_SUMMARY_SQL,type FortuneSummary} from './fortune-summary';
 export class DataStoreError extends Error {constructor(message:string,public status=503){super(message);this.name='DataStoreError';}}
 async function context(){
  const user=await getChatGPTUser();
@@ -18,6 +19,7 @@ export const db={
  saveFortune:(value:FortuneResult)=>save('fortunes',value),
  getFortune:(id:string)=>get<FortuneResult>('fortunes',id),
  async listFortunes():Promise<FortuneResult[]>{const {owner,db}=await context();const r=await db.prepare('SELECT data FROM fortunes WHERE owner_id=? ORDER BY created_at DESC').bind(owner).all<{data:string}>();return r.results.map(x=>JSON.parse(x.data));},
+ async listFortuneSummaries():Promise<FortuneSummary[]>{const {owner,db}=await context();const r=await db.prepare(FORTUNE_SUMMARY_SQL).bind(owner).all<FortuneSummary>();return r.results;},
  saveGuinMap:(value:GuinMapData)=>save('guin_maps',value),
  getGuinMap:(id:string)=>get<GuinMapData>('guin_maps',id),
  async addFriendToGuinMap(id:string,friend:GuinPerson):Promise<GuinMapData|null>{const {owner,db}=await context();const row=await db.prepare("UPDATE guin_maps SET data=json_insert(data,'$.guins[#]',json(?)) WHERE id=? AND owner_id=? RETURNING data").bind(JSON.stringify(friend),id,owner).first<{data:string}>();return row?JSON.parse(row.data):null;},
