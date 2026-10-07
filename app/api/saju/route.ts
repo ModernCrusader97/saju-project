@@ -30,7 +30,7 @@ export async function POST(req: NextRequest) {
     await db.saveFortune(fortune);
 
     return NextResponse.json({ success: true, fortune });
-  } catch (error: any) {
+  } catch (error: unknown) {
     if (error instanceof DataStoreError) return NextResponse.json({error:error.message},{status:error.status});
     if (error instanceof SajuInputError) {
       return NextResponse.json({ error: error.message }, { status: error.status });
@@ -40,11 +40,14 @@ export async function POST(req: NextRequest) {
   }
 }
 
-export async function GET() {
+export async function GET(req: NextRequest) {
   try {
+    if (req.nextUrl.searchParams.get("view") === "summary") {
+      return NextResponse.json({ fortuneSummaries: await db.listFortuneSummaries() });
+    }
     const list = await db.listFortunes();
     return NextResponse.json({ fortunes: list });
-  } catch (error: any) {
+  } catch (error: unknown) {
     if (error instanceof DataStoreError) return NextResponse.json({error:error.message},{status:error.status});
     return NextResponse.json({ error: "저장소를 사용할 수 없습니다. 입력을 보존하고 다시 시도해주세요." }, { status: 500 });
   }

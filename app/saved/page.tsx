@@ -7,8 +7,10 @@ import React, { useState, useEffect, Suspense, useMemo } from "react";
 import Header from "@/components/Header";
 import FortuneCard from "@/components/FortuneCard";
 import { FortuneResult } from "@/lib/saju/types";
-import { ScrollText, ChevronRight, ArrowLeft, Search, Sparkles } from "lucide-react";
-import { useSearchParams } from "next/navigation";
+import type { FortuneSummary } from "@/lib/db/fortune-summary";
+import { ScrollText, ChevronRight, ArrowLeft, Search } from "lucide-react";
+import { useRouter, useSearchParams } from "next/navigation";
+import Link from "next/link";
 
 
 const CATEGORY_MAP: Record<string, { label: string; badge: string }> = {
@@ -22,32 +24,56 @@ const CATEGORY_MAP: Record<string, { label: string; badge: string }> = {
 };
 
 function SavedContent() {
+  const router = useRouter();
   const searchParams = useSearchParams();
   const queryId = searchParams.get("id");
 
-  const [fortunes, setFortunes] = useState<FortuneResult[]>([]);
-  const [selectedFortune, setSelectedFortune] = useState<FortuneResult | null>(null);
+  const [fortunes, setFortunes] = useState<FortuneSummary[]>([]);
+  const [details, setDetails] = useState<Map<string, FortuneResult>>(() => new Map());
+  const selectedFortune = queryId ? details.get(queryId) : undefined;
+  const [detailError, setDetailError] = useState<{ id: string | null; message: string }>({ id: queryId, message: "" });
+  // Errors belong to one selection visit. Reset before rendering another route,
+  // including Back to a previously failed reading, while its fresh request runs.
+  if (detailError.id !== queryId) setDetailError({ id: queryId, message: "" });
+  const [detailRetry, setDetailRetry] = useState(0);
+  const [listRetry, setListRetry] = useState(0);
   const [loading, setLoading] = useState(true);
   const [loadError, setLoadError] = useState<string|null>(null);
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
 
   useEffect(() => {
-    setLoadError(null);
-    fetch("/api/saju")
+    const controller = new AbortController();
+    fetch("/api/saju?view=summary", { signal: controller.signal })
       .then(async (res) => {const data=await readApiResponse(res); if(!res.ok) throw new Error(data.error || "기록을 불러오지 못했습니다."); return data;})
       .then((data) => {
-        if (data.fortunes) {
-          setFortunes(data.fortunes);
-          if (queryId) {
-            const found = data.fortunes.find((f: FortuneResult) => f.id === queryId);
-            if (found) setSelectedFortune(found);
-          }
-        }
+        if (!Array.isArray(data.fortuneSummaries)) throw new Error("기록 목록을 확인할 수 없습니다.");
+        if (!controller.signal.aborted) setFortunes(data.fortuneSummaries);
       })
-      .catch((error) => setLoadError(error.message || "기록을 불러오지 못했습니다."))
-      .finally(() => setLoading(false));
-  }, [queryId]);
+      .catch((error) => { if (!controller.signal.aborted) setLoadError(error.message || "기록을 불러오지 못했습니다."); })
+      .finally(() => { if (!controller.signal.aborted) setLoading(false); });
+    return () => controller.abort();
+  }, [listRetry]);
+
+  useEffect(() => {
+    if (!queryId || details.has(queryId)) return;
+    const controller = new AbortController();
+    fetch(`/api/saju/${encodeURIComponent(queryId)}`, { signal: controller.signal })
+      .then(async (res) => {
+        const data = await readApiResponse(res);
+        if (!res.ok) throw new Error(data.error || "기록을 불러오지 못했습니다.");
+        if (!data.fortune || data.fortune.id !== queryId) throw new Error("요청한 기록을 확인할 수 없습니다.");
+        return data.fortune;
+      })
+      .then((fortune) => { if (!controller.signal.aborted) setDetails(previous => new Map(previous).set(queryId, fortune)); })
+      .catch((error) => { if (!controller.signal.aborted) setDetailError({ id: queryId, message: error.message || "기록을 불러오지 못했습니다." }); });
+    return () => controller.abort();
+  }, [queryId, details, detailRetry]);
+
+  const openFortune = (id: string) => {
+    setDetailError({ id, message: "" });
+    router.push(`/saved?id=${encodeURIComponent(id)}`, { scroll: false });
+  };
 
   const filteredFortunes = useMemo(() => {
     return fortunes.filter((f) => {
@@ -56,27 +82,31 @@ function SavedContent() {
       const q = searchQuery.trim().toLowerCase();
       const matchSearch =
         !q ||
-        f.analysis.name.toLowerCase().includes(q) ||
+        f.name.toLowerCase().includes(q) ||
         f.title.toLowerCase().includes(q) ||
         f.summary.toLowerCase().includes(q) ||
-        (f.analysis.dayMaster && f.analysis.dayMaster.toLowerCase().includes(q));
+        (f.dayMaster && f.dayMaster.toLowerCase().includes(q));
       return matchCategory && matchSearch;
     });
   }, [fortunes, selectedCategory, searchQuery]);
 
   return (
     <div className="px-5 pt-2 pb-24 space-y-5">
-      {loadError && <p role="alert" className="p-3 border border-red-200 bg-red-50 text-red-800 rounded-xl">{loadError}</p>}
-      {selectedFortune ? (
+      {queryId ? (
         <div>
           <button
-            onClick={() => setSelectedFortune(null)}
+            onClick={() => router.push("/saved", { scroll: false })}
             className="flex items-center gap-1.5 text-xs font-bold text-doryeong-textMuted hover:text-doryeong-navy mb-4 transition-colors p-1"
           >
             <ArrowLeft className="h-4 w-4" />
             <span>← 보관함 전체 목록으로 돌아가기</span>
           </button>
-          <FortuneCard fortune={selectedFortune} />
+          {selectedFortune ? <FortuneCard key={selectedFortune.id} fortune={selectedFortune} />
+            : detailError.id === queryId && detailError.message ? <div role="alert" className="p-4 border border-red-200 bg-red-50 text-red-800 rounded-xl space-y-3">
+              <p>{detailError.message}</p>
+              <button type="button" className="secondary-button" onClick={() => { setDetailError({ id: queryId, message: "" }); setDetailRetry(count => count + 1); }}>다시 불러오기</button>
+            </div>
+            : <p role="status" className="py-16 text-center text-sm text-doryeong-textMuted">선택한 기록을 불러오고 있어요.</p>}
         </div>
       ) : (
         <>
@@ -103,6 +133,7 @@ function SavedContent() {
               <Search className="h-4 w-4 text-doryeong-textMuted absolute left-3.5 top-1/2 -translate-y-1/2" />
               <input
                 type="text"
+                aria-label="저장한 기록 검색"
                 placeholder="이름, 일간 또는 제목으로 기록 검색..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
@@ -147,6 +178,11 @@ function SavedContent() {
             <div className="py-16 text-center text-xs text-doryeong-textMuted font-serif">
               보관된 사주 서책을 불러오는 중이옵니다...
             </div>
+          ) : loadError ? (
+            <div role="alert" className="p-4 border border-red-200 bg-red-50 text-red-800 rounded-xl space-y-3">
+              <p>{loadError}</p>
+              <button type="button" className="secondary-button" onClick={() => { setLoading(true); setLoadError(null); setListRetry(count => count + 1); }}>다시 불러오기</button>
+            </div>
           ) : fortunes.length === 0 ? (
             <div className="py-16 text-center rounded-[24px] bg-white border border-doryeong-border p-6 space-y-3 shadow-sm">
               <p className="text-sm font-serif font-bold text-doryeong-navy">
@@ -155,12 +191,12 @@ function SavedContent() {
               <p className="text-xs text-doryeong-textMuted">
                 나의 우주에서 궁금한 주제로 풀이를 남겨보세요.
               </p>
-              <a
+              <Link
                 href="/"
                 className="inline-block mt-3 px-5 py-2.5 rounded-xl bg-doryeong-gold text-doryeong-navy text-xs font-bold shadow-md hover:brightness-105 transition-all"
               >
                 사주 풀이 보러가기
-              </a>
+              </Link>
             </div>
           ) : filteredFortunes.length === 0 ? (
             <div className="py-12 text-center rounded-[20px] bg-white/70 border border-doryeong-border p-5 text-xs text-doryeong-textMuted">
@@ -179,11 +215,11 @@ function SavedContent() {
                     key={f.id}
                     role="button"
                     tabIndex={0}
-                    onClick={() => setSelectedFortune(f)}
+                    onClick={() => openFortune(f.id)}
                     onKeyDown={(e) => {
                       if (e.key === "Enter" || e.key === " ") {
                         e.preventDefault();
-                        setSelectedFortune(f);
+                        openFortune(f.id);
                       }
                     }}
                     className="p-4 rounded-[22px] bg-white border border-doryeong-border hover:border-doryeong-gold/60 focus:outline-none focus:ring-2 focus:ring-doryeong-gold cursor-pointer shadow-sm active:scale-[0.99] transition-all flex items-center justify-between gap-3 group"
@@ -191,14 +227,14 @@ function SavedContent() {
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-1.5 flex-wrap">
                         <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-doryeong-ivoryDark text-doryeong-navy">
-                          {f.analysis.name}님
+                          {f.name}님
                         </span>
                         <span className={`text-[9.5px] font-bold px-1.5 py-0.5 rounded-md ${catInfo.badge}`}>
                           {catInfo.label}
                         </span>
-                        {f.analysis.dayMaster && (
+                        {f.dayMaster && (
                           <span className="text-[9.5px] font-bold text-doryeong-gold bg-doryeong-gold/10 px-1.5 py-0.5 rounded-md">
-                            {f.analysis.dayMaster}
+                            {f.dayMaster}
                           </span>
                         )}
                       </div>
