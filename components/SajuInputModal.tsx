@@ -3,8 +3,9 @@
 import { readApiResponse } from "@/lib/http-client";
 
 
-import React, { useState, useEffect } from "react";
-import { X, Sparkles, Loader2 } from "lucide-react";
+import React, { useState, useRef, useId } from "react";
+import { useDialogFocus } from "@/hooks/use-dialog-focus";
+import { X, Sparkles } from "lucide-react";
 
 import { HOUR_PERIODS } from "@/lib/saju/input";
 import { FortuneResult } from "@/lib/saju/types";
@@ -24,6 +25,9 @@ export default function SajuInputModal({
   categoryTitle = "내 사주 풀이",
   onSuccess,
 }: SajuInputModalProps) {
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const titleId = useId();
+  useDialogFocus(isOpen, dialogRef, onClose);
   
   const [name, setName] = useState("");
   const [gender, setGender] = useState<"male" | "female">("male");
@@ -37,16 +41,6 @@ export default function SajuInputModal({
 
   const [loading, setLoading] = useState(false);
   const [loadingStep, setLoadingStep] = useState(0);
-
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") onClose();
-    };
-    if (isOpen) {
-      window.addEventListener("keydown", handleKeyDown);
-    }
-    return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [isOpen, onClose]);
 
   if (!isOpen) return null;
 
@@ -95,7 +89,7 @@ export default function SajuInputModal({
       } else {
         alert(data.error || "풀이 중 문제가 발생했습니다.");
       }
-    } catch (err: any) {
+    } catch {
       alert("네트워크 오류가 발생했습니다.");
     } finally {
       clearTimeout(timer);
@@ -110,6 +104,11 @@ export default function SajuInputModal({
       onClick={onClose}
     >
       <div
+        ref={dialogRef}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby={titleId}
+        tabIndex={-1}
         className="w-full max-w-md bg-doryeong-ivory rounded-t-[32px] sm:rounded-[32px] shadow-2xl border border-doryeong-border flex flex-col max-h-[92vh] overflow-hidden animate-in slide-in-from-bottom duration-300"
         onClick={(e) => e.stopPropagation()}
       >
@@ -119,13 +118,14 @@ export default function SajuInputModal({
             <span className="text-[11px] font-bold text-doryeong-gold tracking-widest uppercase">
               나의 사주 정보
             </span>
-            <h2 className="text-xl font-serif font-bold text-doryeong-navy">
+            <h2 id={titleId} className="text-xl font-serif font-bold text-doryeong-navy">
               {categoryTitle}
             </h2>
           </div>
           <button
             onClick={onClose}
-            className="p-1 rounded-full text-doryeong-textMuted hover:bg-black/5 transition-colors"
+            aria-label="입력창 닫기"
+            className="min-h-11 min-w-11 flex items-center justify-center p-1 rounded-full text-doryeong-textMuted hover:bg-black/5 transition-colors"
           >
             <X className="h-6 w-6" />
           </button>
@@ -203,15 +203,15 @@ export default function SajuInputModal({
                 달력 구분
               </label>
               <div className="grid grid-cols-3 gap-2 bg-doryeong-ivoryDark p-1 rounded-xl text-xs font-bold">
-                {[
+                {([
                   { id: "solar", label: "양력" },
                   { id: "lunar", label: "음력 (평달)" },
                   { id: "leap-lunar", label: "음력 (윤달)" },
-                ].map((item) => (
+                ] as const).map((item) => (
                   <button
                     key={item.id}
                     type="button"
-                    onClick={() => setCalendarType(item.id as any)}
+                    onClick={() => setCalendarType(item.id)}
                     className={`py-1.5 rounded-lg transition-all ${
                       calendarType === item.id
                         ? "bg-white text-doryeong-navy shadow-sm"

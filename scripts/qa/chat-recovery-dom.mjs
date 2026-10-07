@@ -20,7 +20,8 @@ async function compile(file, overrides = {}) {
  const mod = new Module(absolute);mod.filename=absolute;mod.paths=Module._nodeModulePaths(path.dirname(absolute));mod.require=name=>Object.hasOwn(overrides,name)?overrides[name]:require(name);mod._compile(code,absolute);return mod.exports;
 }
 const reader=await compile('lib/http-client.ts');
-const Modal=(await compile('components/AskDoryeongModal.tsx',{'@/lib/http-client':reader})).default;
+const dialogFocus=await compile('hooks/use-dialog-focus.ts');
+const Modal=(await compile('components/AskDoryeongModal.tsx',{'@/lib/http-client':reader,'@/hooks/use-dialog-focus':dialogFocus})).default;
 const renderer=createRoot(document.getElementById('root'));
 let props={isOpen:true,onClose(){},fortune:{id:'a',analysis:{name:'Synthetic A'}}};
 const render=async changes=>{props={...props,...changes};await act(async()=>renderer.render(React.createElement(Modal,props)));};

@@ -3,7 +3,8 @@
 import { readApiResponse } from "@/lib/http-client";
 
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useId } from "react";
+import { useDialogFocus } from "@/hooks/use-dialog-focus";
 import { X, Send, Loader2 } from "lucide-react";
 import { FortuneResult } from "@/lib/saju/types";
 
@@ -28,6 +29,9 @@ function Conversation({
   onClose,
   fortune,
 }: AskDoryeongModalProps) {
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const titleId = useId();
+  useDialogFocus(isOpen, dialogRef, onClose);
   const [visit, setVisit] = useState({ open: isOpen, version: 0 });
   if (visit.open !== isOpen) setVisit({ open: isOpen, version: visit.version + 1 });
   const [historyRetry, setHistoryRetry] = useState(0);
@@ -96,16 +100,6 @@ function Conversation({
     scrollRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages, loading]);
 
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") onClose();
-    };
-    if (isOpen) {
-      window.addEventListener("keydown", handleKeyDown);
-    }
-    return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [isOpen, onClose]);
-
   if (!isOpen) return null;
 
   const handleSend = async (e: React.FormEvent, allowResend = false) => {
@@ -158,6 +152,11 @@ function Conversation({
       onClick={onClose}
     >
       <div
+        ref={dialogRef}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby={titleId}
+        tabIndex={-1}
         className="w-full max-w-md bg-doryeong-ivory rounded-t-[32px] sm:rounded-[32px] shadow-2xl border border-doryeong-border flex flex-col h-[85vh] overflow-hidden animate-in slide-in-from-bottom duration-300"
         onClick={(e) => e.stopPropagation()}
       >
@@ -168,7 +167,7 @@ function Conversation({
               청
             </div>
             <div>
-              <h3 className="font-serif text-base font-bold text-doryeong-navy leading-tight">
+              <h3 id={titleId} className="font-serif text-base font-bold text-doryeong-navy leading-tight">
                 나의 풀이에 관해
               </h3>
               <p className="text-[11px] text-doryeong-textMuted">
@@ -179,7 +178,7 @@ function Conversation({
           <button
             onClick={onClose}
             aria-label="대화 닫기"
-            className="p-1 rounded-full text-doryeong-textMuted hover:bg-black/5"
+            className="min-h-11 min-w-11 flex items-center justify-center p-1 rounded-full text-doryeong-textMuted hover:bg-black/5"
           >
             <X className="h-6 w-6" />
           </button>
