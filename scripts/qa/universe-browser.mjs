@@ -174,6 +174,44 @@ try {
     assert.equal(await page.locator('[data-scene] canvas').count(), 1);
     for (const width of [320, 390, 768, 1440]) await fit(page, width, 'planet');
   });
+  await check('leaving before the spirit setup frame cancels its GPU allocation', async () => {
+    const pending=await browser.newContext({viewport:{width:390,height:844},extraHTTPHeaders:owner});
+    try {
+      await pending.addInitScript(init);
+      await pending.addInitScript(()=>{
+        const request=window.requestAnimationFrame.bind(window),cancel=window.cancelAnimationFrame.bind(window);
+        const frames=new Map();let sequence=0,cancelled=0;
+        window.requestAnimationFrame=callback=>{const id=++sequence;frames.set(id,callback);return id;};
+        window.cancelAnimationFrame=id=>{if(frames.delete(id))cancelled++;};
+        window.__pendingSceneFrames={count:()=>frames.size,cancelled:()=>cancelled,flush:()=>{
+          window.requestAnimationFrame=request;window.cancelAnimationFrame=cancel;
+          const callbacks=[...frames.values()];frames.clear();
+          callbacks.forEach(callback=>callback(performance.now()));
+        }};
+      });
+      await pending.route('**/*',route=>{
+        const url=new URL(route.request().url());
+        if(url.origin===origin||['data:','blob:'].includes(url.protocol))return route.continue();
+        outbound.push(url.hostname);return route.abort();
+      });
+      const view=await pending.newPage();
+      view.on('pageerror',error=>errors.push(error.message));
+      view.on('console',message=>{if(message.type()==='error')errors.push(message.text());});
+      await view.goto(origin+'/planet?view=spirit',{waitUntil:'networkidle'});
+      await view.waitForFunction(()=>window.__pendingSceneFrames.count()>0);
+      assert.equal(await view.locator('[data-scene="spirit"][data-scene-state="loading"]').count(),1);
+      assert.equal(await view.evaluate(()=>window.__sceneQa.length),0,'Pending spirit must not allocate a GPU context');
+      await view.getByRole('button',{name:'같은 나의 행성 보기'}).click();
+      await waitScene(view,'planet');
+      const before=await view.evaluate(()=>({contexts:window.__sceneQa.length,cancelled:window.__pendingSceneFrames.cancelled()}));
+      assert(before.cancelled>0,'Unmount must cancel the queued spirit setup');
+      await view.evaluate(()=>window.__pendingSceneFrames.flush());
+      await view.waitForTimeout(150);
+      assert.equal(await view.evaluate(()=>window.__sceneQa.length),before.contexts,'Flushing pending frames must not create an abandoned spirit');
+      assert.equal(await view.locator('[data-scene="spirit"]').count(),0);
+      checks.push({name:'Pending setup cleanup evidence',cancelled:before.cancelled,abandonedSpiritContexts:0});
+    } finally {await pending.close();}
+  });
   await check('GPU RGB atlas, masks and strength-2 composition agree with v002 CPU reference', async () => {
     const glsl = await fs.readFile('assets/source-reference/saju-b-evolving-light-v002/runtime/saju-jade-evolution.glsl', 'utf8');
     const positions = [[0,0,0],[1,1,1],[.13,.71,.41],[.52,.48,.07],[.9,.07,.93],[.25,.35,.65]];

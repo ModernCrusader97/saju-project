@@ -47,6 +47,11 @@ export default function ElementalSpiritCanvas({
 
   useEffect(()=>{
     const container=containerRef.current;if(!container)return;
+    let disposed=false;
+    let disposeScene:(()=>void)|undefined;
+    // Report renderer setup results from a cancellable browser callback. Cancel
+    // this frame on cleanup so an abandoned view never allocates GPU resources.
+    const initialize=()=>{
     setLoading(true);
     setSpiritInfo(TEN_STEM_SPIRITS[dayKey.charAt(0)] || TEN_STEM_SPIRITS.갑);
     const low=window.matchMedia("(max-width: 640px), (pointer: coarse)").matches;
@@ -94,7 +99,7 @@ export default function ElementalSpiritCanvas({
 
     let spirit:ElementalSpiritInstance|null=null;
     motionTime.current=0;viewRotation.current={x:0,y:0};
-    let contextLost=false, disposed=false;
+    let contextLost=false;
     const render=()=>{if(!disposed && !contextLost && !shaderFailed)renderer.render(scene,camera);};
     renderRef.current=render;
     const resize=()=>{
@@ -183,7 +188,7 @@ export default function ElementalSpiritCanvas({
     };
     frame=requestAnimationFrame(animate);
     return ()=>{
-      disposed=true;cancelAnimationFrame(frame);observer.disconnect();
+      cancelAnimationFrame(frame);observer.disconnect();
       reducedMotion.removeEventListener("change",onMotionPreference);
       document.removeEventListener("visibilitychange",onVisibility);
       dom.removeEventListener("pointerdown",onDown);dom.removeEventListener("pointermove",onMove);
@@ -195,6 +200,11 @@ export default function ElementalSpiritCanvas({
       if(spiritRef.current===spirit)spiritRef.current=null;
       renderRef.current=null;scene.clear();
       if(container.contains(dom))container.removeChild(dom);
+    };
+    };
+    const startFrame=requestAnimationFrame(()=>{disposeScene=initialize();});
+    return ()=>{
+      disposed=true;cancelAnimationFrame(startFrame);disposeScene?.();
     };
   },[dayKey,monthKey]);
 

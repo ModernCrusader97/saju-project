@@ -3,24 +3,33 @@
   "checks": [
     {
       "name": "four responsive widths; 44px controls; 16px body; three tabs",
-      "ms": 12179
+      "ms": 12509
     },
     {
       "name": "day animal and month background stay separate; mobile front/side composition",
-      "ms": 28430
+      "ms": 26399
     },
     {
       "name": "body ROI evidence",
-      "risingPixels": 430,
+      "risingPixels": 429,
       "fallingPixels": 250
     },
     {
       "name": "actual body emission changes locally; pause freezes its image",
-      "ms": 6975
+      "ms": 7024
     },
     {
       "name": "active scene unmounts; old GPU context and draws stop",
-      "ms": 10012
+      "ms": 9330
+    },
+    {
+      "name": "Pending setup cleanup evidence",
+      "cancelled": 1,
+      "abandonedSpiritContexts": 0
+    },
+    {
+      "name": "leaving before the spirit setup frame cancels its GPU allocation",
+      "ms": 6842
     },
     {
       "name": "GPU numeric evidence",
@@ -30,15 +39,15 @@
     },
     {
       "name": "GPU RGB atlas, masks and strength-2 composition agree with v002 CPU reference",
-      "ms": 453
+      "ms": 613
     },
     {
       "name": "repeat inputs; invalid date preserves result; history Back restores preceding result",
-      "ms": 6715
+      "ms": 5914
     },
     {
       "name": "galaxy form keeps same birth; saved galaxy tab; readable cards and planet selection",
-      "ms": 15774
+      "ms": 14361
     },
     {
       "name": "Legacy home URL evidence",
@@ -47,37 +56,37 @@
     },
     {
       "name": "synchronized home input and Back/Forward keep only the matching galaxy",
-      "ms": 9633
+      "ms": 10484
     },
     {
       "name": "synchronized direct galaxy creation, cancelled/failed input and new-tab restoration",
-      "ms": 24563
+      "ms": 21804
     },
     {
       "name": "Context recovery pixel/draw evidence",
       "scene": "spirit",
-      "colors": 1082,
-      "drawsAfterRecovery": 1458
+      "colors": 1069,
+      "drawsAfterRecovery": 1552
     },
     {
       "name": "Context recovery pixel/draw evidence",
       "scene": "planet",
-      "colors": 1857,
+      "colors": 1855,
       "drawsAfterRecovery": 246
     },
     {
       "name": "Context recovery pixel/draw evidence",
       "scene": "galaxy",
-      "colors": 1634,
-      "drawsAfterRecovery": 741
+      "colors": 1644,
+      "drawsAfterRecovery": 862
     },
     {
       "name": "context loss restores actual draws and changing pixels in all three scenes",
-      "ms": 23389
+      "ms": 22002
     },
     {
       "name": "default share image contains no birth date/time; existing close interaction",
-      "ms": 2681
+      "ms": 2325
     },
     {
       "name": "Mobile galaxy gesture evidence",
@@ -99,7 +108,7 @@
     },
     {
       "name": "reduced motion starts paused; WebGL unavailable keeps readable results",
-      "ms": 30830
+      "ms": 38236
     }
   ],
   "errors": [],
@@ -109,73 +118,73 @@
       "scene": "spirit",
       "width": 1440,
       "cls": 0,
-      "lcp": 948
+      "lcp": 828
     },
     {
       "scene": "spirit",
       "width": 768,
       "cls": 0,
-      "lcp": 948
+      "lcp": 828
     },
     {
       "scene": "spirit",
       "width": 390,
       "cls": 0,
-      "lcp": 948
+      "lcp": 828
     },
     {
       "scene": "spirit",
       "width": 320,
       "cls": 0,
-      "lcp": 948
+      "lcp": 828
     },
     {
       "scene": "planet",
       "width": 320,
       "cls": 0.0003233821457326892,
-      "lcp": 948
+      "lcp": 828
     },
     {
       "scene": "planet",
       "width": 390,
       "cls": 0.0003233821457326892,
-      "lcp": 948
+      "lcp": 828
     },
     {
       "scene": "planet",
       "width": 768,
       "cls": 0.0003233821457326892,
-      "lcp": 948
+      "lcp": 828
     },
     {
       "scene": "planet",
       "width": 1440,
       "cls": 0.0003233821457326892,
-      "lcp": 948
+      "lcp": 828
     },
     {
       "scene": "galaxy",
       "width": 1440,
       "cls": 0,
-      "lcp": 1428
+      "lcp": 1444
     },
     {
       "scene": "galaxy",
       "width": 768,
       "cls": 0,
-      "lcp": 1428
+      "lcp": 1444
     },
     {
       "scene": "galaxy",
       "width": 390,
       "cls": 0,
-      "lcp": 1428
+      "lcp": 1444
     },
     {
       "scene": "galaxy",
       "width": 320,
       "cls": 0,
-      "lcp": 1428
+      "lcp": 1444
     }
   ],
   "limits": [
