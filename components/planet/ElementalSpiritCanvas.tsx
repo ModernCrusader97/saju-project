@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 import { createStudioEnvironment } from "@/lib/planet/scene-environment";
 import type { ElementalSpiritInstance } from "@/lib/planet/elemental-spirit";
-import { TEN_STEM_SPIRITS, ZODIAC_FEATURES, type ZodiacBranch } from "@/lib/planet/spirit-profiles";
+import { TEN_STEM_SPIRITS, ZODIAC_FEATURES, getSpiritStemPreset, type ZodiacBranch } from "@/lib/planet/spirit-profiles";
 import { loadApprovedSpirit } from "@/lib/planet/approved-jade-spirit";
 
 import { safeDelta } from "@/lib/planet/surface-math";
@@ -40,6 +40,10 @@ export default function ElementalSpiritCanvas({
   const [reactionCount,setReactionCount]=useState(0);
   const [spiritInfo,setSpiritInfo]=useState(TEN_STEM_SPIRITS[dayKey.charAt(0)] || TEN_STEM_SPIRITS.갑);
   const timerRef=useRef<ReturnType<typeof setTimeout>|null>(null);
+  const monthInfo=getSpiritStemPreset(monthKey);
+  const monthColor=new THREE.Color(monthInfo.surface.primaryColor);
+  const backdropTop=new THREE.Color('#f5f5ed').lerp(monthColor,.07).getStyle();
+  const backdropBottom=new THREE.Color('#edf0e7').lerp(monthColor,.12).getStyle();
 
   useEffect(()=>{
     const container=containerRef.current;if(!container)return;
@@ -59,6 +63,7 @@ export default function ElementalSpiritCanvas({
     renderer.outputColorSpace=THREE.SRGBColorSpace;
     renderer.toneMapping=THREE.ACESFilmicToneMapping;
     renderer.toneMappingExposure=1.12;
+    renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;
     let shaderFailed=false;
     renderer.debug.onShaderError=()=>{shaderFailed=true;setGraphicsError("정령 재질을 그리지 못했어요. 다른 WebGL 지원 브라우저에서 다시 열어주세요.");};
     rendererRef.current=renderer;
@@ -79,8 +84,13 @@ export default function ElementalSpiritCanvas({
     }
     scene.add(new THREE.HemisphereLight(0xf4f8fc,0x26343b,.85));
     const keyLight=new THREE.DirectionalLight(0xfff1d9,2.1);keyLight.position.set(-3,4,4);scene.add(keyLight);
+    keyLight.castShadow=true;keyLight.shadow.mapSize.set(low?512:1024,low?512:1024);
+    Object.assign(keyLight.shadow.camera,{left:-2.5,right:2.5,top:3,bottom:-2,near:.1,far:16});
+    keyLight.shadow.bias=-.0002;
     const fillLight=new THREE.DirectionalLight(0xc1e4f0,.8);fillLight.position.set(4,1,2);scene.add(fillLight);
     const rimLight=new THREE.DirectionalLight(0xf5fbff,1.8);rimLight.position.set(0,3,-3);scene.add(rimLight);
+    const ground=new THREE.Mesh(new THREE.PlaneGeometry(12,12),new THREE.ShadowMaterial({color:0x1c4836,opacity:.09}));
+    ground.rotation.x=-Math.PI/2;ground.position.y=-.016;ground.receiveShadow=true;scene.add(ground);
 
     let spirit:ElementalSpiritInstance|null=null;
     motionTime.current=0;viewRotation.current={x:0,y:0};
@@ -91,7 +101,7 @@ export default function ElementalSpiritCanvas({
       if(disposed)return;
       const width=Math.max(1,container.clientWidth),height=Math.max(1,container.clientHeight);
       camera.aspect=width/height;
-      // Fit the adult avatar, zodiac crown and grounded month pet in portrait.
+      // Fit the unchanged front width and the separate small day-branch animal.
       const distance=Math.max(5.7,1.50/(Math.tan(THREE.MathUtils.degToRad(camera.fov/2))*camera.aspect));
       camera.position.set(0,1.70,distance);camera.lookAt(0,1.24,0);camera.updateProjectionMatrix();
       renderer.setSize(width,height,false);render();
@@ -111,7 +121,9 @@ export default function ElementalSpiritCanvas({
     let previous={x:0,y:0};let origin={x:0,y:0};let movement=0;let dragIntent:"rotate"|null=null;
     const applyRotation=()=>{
       if(!spirit)return;
-      spirit.group.rotation.x=viewRotation.current.x;spirit.group.rotation.y=viewRotation.current.y;render();
+      // Orbit the avatar in place. Rotating the whole pair collapses the pet
+      // behind its owner at side views, especially on a narrow phone screen.
+      spirit.avatarPivot.rotation.x=viewRotation.current.x;spirit.avatarPivot.rotation.y=viewRotation.current.y;render();
     };
     const onDown=(event:PointerEvent)=>{
       if(activePointer!==null)return;
@@ -177,7 +189,8 @@ export default function ElementalSpiritCanvas({
       dom.removeEventListener("pointerdown",onDown);dom.removeEventListener("pointermove",onMove);
       dom.removeEventListener("pointerup",onUp);dom.removeEventListener("pointercancel",onUp);dom.removeEventListener("lostpointercapture",onLost);
       dom.removeEventListener("webglcontextlost",onContextLost);dom.removeEventListener("webglcontextrestored",onContextRestored);
-      spirit?.dispose();scene.environment=null;environment.dispose();renderer.dispose();renderer.forceContextLoss();
+      spirit?.dispose();ground.geometry.dispose();ground.material.dispose();keyLight.shadow.dispose();
+      scene.environment=null;environment.dispose();renderer.dispose();renderer.forceContextLoss();
       if(rendererRef.current===renderer)rendererRef.current=null;
       if(spiritRef.current===spirit)spiritRef.current=null;
       renderRef.current=null;scene.clear();
@@ -205,7 +218,7 @@ export default function ElementalSpiritCanvas({
   };
 
   return (
-    <div className={`spirit-stage relative h-full min-h-[380px] overflow-hidden rounded-3xl border border-doryeong-border bg-[#edf2ea] ${className}`} data-scene="spirit" data-scene-state={graphicsError?"fallback":loading?"loading":"ready"}>
+    <div className={`spirit-stage relative h-full min-h-[380px] overflow-hidden rounded-3xl border border-doryeong-border ${className}`} style={{background:`linear-gradient(155deg,${backdropTop},${backdropBottom})`}} data-scene="spirit" data-scene-state={graphicsError?"fallback":loading?"loading":"ready"}>
       <div ref={containerRef} className="h-full min-h-[380px] w-full cursor-grab active:cursor-grabbing" />
       {(loading||graphicsError)&&<div className="scene-placeholder" role={graphicsError?"alert":"status"}>
         <img src="/spirits/jade-v002/still.png" alt="승인된 비취 B형 정령의 참고 이미지" width="320" height="320"/>
@@ -215,7 +228,7 @@ export default function ElementalSpiritCanvas({
       <div className="pointer-events-none absolute left-4 right-4 top-4 flex items-start justify-between gap-3">
         <div className="min-w-0 rounded-2xl border border-white/10 bg-black/30 px-3 py-2 backdrop-blur-md">
           <div className="flex items-center gap-1.5 text-xs font-semibold text-amber-100"><Sparkles className="h-3 w-3 shrink-0"/><span>{spiritInfo.name}</span></div>
-          <p className="mt-1 text-[10px] text-white/50">일간 {dayKey.charAt(0)} 본체 · 일지 {ZODIAC_FEATURES[dayKey.charAt(1) as ZodiacBranch]?.label || "동물"} 특징</p>
+          <p className="mt-1 text-[10px] text-white/50">일간 {dayKey.charAt(0)} 정령 · 일지 {ZODIAC_FEATURES[dayKey.charAt(1) as ZodiacBranch]?.label || "동물"} 동반자</p>
         </div>
         <div className="pointer-events-auto flex shrink-0 items-center gap-1.5">
           <button type="button" onClick={toggleMotion} aria-label={running?"정령 움직임 일시정지":"정령 움직임 재생"} aria-pressed={!running} title={running?"일시정지":"재생"} className="rounded-full border border-white/15 bg-black/40 p-2 text-white/80 hover:bg-black/60">
@@ -228,7 +241,7 @@ export default function ElementalSpiritCanvas({
       <div className="pointer-events-none absolute bottom-4 left-4 right-4 text-center">
         <p className="text-sm text-[#234c3c]">{spiritInfo.speciesTitle}</p>
         <p className="mt-1 text-xs text-[#526b5b]">드래그로 둘러보기 · 가볍게 눌러 인사하기{reactionCount>0?` · ${reactionCount}번 인사`:""}</p>
-        <p className="mt-1 text-xs text-[#526b5b]">월주 {monthKey} · {ZODIAC_FEATURES[monthKey.charAt(1) as ZodiacBranch]?.label || "동물"} 지상 펫</p>
+        <p className="mt-1 text-xs text-[#526b5b]">월령 {monthKey} 배경 · 일지 {ZODIAC_FEATURES[dayKey.charAt(1) as ZodiacBranch]?.label || "동물"} 동반자</p>
       </div>
       {notice&&<div role="status" className="absolute bottom-24 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-black/80 px-4 py-2 text-xs text-white">{notice}</div>}
     </div>

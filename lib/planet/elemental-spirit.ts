@@ -2,8 +2,8 @@ import * as THREE from "three";
 import { TEN_STEM_SPIRITS, getSpiritStemPreset, type ElementalSpiritData } from "./spirit-profiles";
 import { getThemePreset, getSurfaceFamily } from "./theme-library";
 import { createPlanetMaterial, animateSurface, resetSurface, setSurfaceReliefScale, setSurfaceBarkMix } from "./surface-material";
-import { createZodiacFeatures, ZODIAC_FEATURES, type ZodiacBranch } from "./spirit-zodiac";
-import { createMonthSpiritPet } from "./spirit-month-pet";
+import { ZODIAC_FEATURES, type ZodiacBranch } from "./spirit-profiles";
+import { createZodiacPet } from "./spirit-zodiac-pet";
 import { disposeObject } from "./render-resources";
 import { createSpiritGeometry, type SpiritQuality } from "./spirit-geometry";
 import { createSpiritCrownEffects, animateSurfaceEffects, disposeSurfaceEffects } from "./surface-effects";
@@ -23,13 +23,16 @@ export interface ElementalSpiritInstance {
   group: THREE.Group;
   data: ElementalSpiritData;
   bodyMesh: THREE.Mesh;
+  avatarPivot: THREE.Group;
   eyeLeft: THREE.Mesh;
   eyeRight: THREE.Mesh;
   propGroup: THREE.Group;
-  /** Deprecated alias for the grounded month pet. It never orbits. */
+  /** Deprecated alias for the day-branch animal. It never orbits. */
   petPivot?: THREE.Group;
+  zodiacPet: THREE.Group;
+  /** Deprecated compatibility alias. This is the same day-branch animal. */
   monthPet: THREE.Group;
-  mapping: {bodyStem:string;bodyBranch:string;petStem:string;petBranch:string};
+  mapping: {bodyStem:string;bodyBranch:string;petBranch:string;backgroundStem:string;backgroundBranch:string};
   yearBelt?: THREE.Points;
   update: (time: number, deltaSeconds?: number) => void;
   triggerReaction: () => void;
@@ -47,7 +50,7 @@ export function createElementalSpirit(
   const family=getSurfaceFamily(day),quality=options.quality ?? "high";
   const data={...TEN_STEM_SPIRITS[day.stem]};
   const group=new THREE.Group();group.name=`saju-avatar:${dayPillar.key}`;
-  group.userData.pillarRoles={body:"day-stem",features:"day-branch",pet:"month-stem-and-branch"};
+  group.userData.pillarRoles={body:"day-stem",pet:"day-branch",background:"month-pillar"};
   const materials:THREE.Material[]=[];
   const material=createPlanetMaterial(day,undefined,"pangaea",128);
   setSurfaceReliefScale(material,0);
@@ -56,21 +59,16 @@ export function createElementalSpirit(
   const accent=createPlanetMaterial(day,undefined,"pangaea",128);
   setSurfaceReliefScale(accent,0);materials.push(accent);
   const form=createSpiritGeometry(day,material,accent,quality);
-  form.group.position.x=-.27;group.add(form.group);
-  const zodiac=createZodiacFeatures(dayPillar.branch,accent,quality);
-  zodiac.name=`day-branch-features:${dayPillar.branch}`;form.head.add(zodiac);
+  form.group.position.x=-.42;group.add(form.group);
   const crownEffects=createSpiritCrownEffects(day,.34);form.head.add(crownEffects);
 
-  const petMaterial=createPlanetMaterial(month,undefined,"pangaea",128);
-  setSurfaceReliefScale(petMaterial,0);materials.push(petMaterial);
-  // Material is month-stem-only; the resolved month branch reaches the feature factory.
-  const pet=createMonthSpiritPet({...month, key:monthPillar.key, branch:monthPillar.branch},petMaterial,quality);
-  pet.group.position.set(.90,0,.10);group.add(pet.group);
+  const pet=createZodiacPet(dayPillar.branch,quality);
+  pet.group.position.set(1.10,0,.12);group.add(pet.group);
   const groundGeometry=new THREE.CircleGeometry(1.30,quality==="low"?40:64);
   groundGeometry.scale(1,.52,1);groundGeometry.rotateX(-Math.PI/2);
   const groundMaterial=new THREE.MeshStandardMaterial({color:0x718087,roughness:1,transparent:true,opacity:.16,depthWrite:false});
   const ground=new THREE.Mesh(groundGeometry,groundMaterial);ground.name="shared-ground-plane";ground.position.set(.15,-.004,.08);group.add(ground);
-  const mapping={bodyStem:day.stem,bodyBranch:dayPillar.branch,petStem:month.stem,petBranch:monthPillar.branch};
+  const mapping={bodyStem:day.stem,bodyBranch:dayPillar.branch,petBranch:dayPillar.branch,backgroundStem:month.stem,backgroundBranch:monthPillar.branch};
   group.userData.mapping=mapping;
   group.userData.animal=ZODIAC_FEATURES[dayPillar.branch as ZodiacBranch]?.animal;
 
@@ -83,14 +81,14 @@ export function createElementalSpirit(
     form.update(t,reaction);pet.update(t);animateSurfaceEffects(crownEffects,t,dt);
   };
   const triggerReaction=()=>{reactionStart=currentTime;};
-  const reset=()=>{currentTime=0;reactionStart=-100;for(const mat of materials)resetSurface(mat);group.rotation.set(0,0,0);update(0,0);};
+  const reset=()=>{currentTime=0;reactionStart=-100;for(const mat of materials)resetSurface(mat);group.rotation.set(0,0,0);form.group.rotation.set(0,0,0);update(0,0);};
   const dispose=()=>{
     if(disposed)return;disposed=true;disposeSurfaceEffects(crownEffects);
     group.traverse(object=>{if((object as THREE.InstancedMesh).isInstancedMesh)(object as THREE.InstancedMesh).dispose();});
     disposeObject(group);group.removeFromParent();group.clear();
   };
   reset();
-  return {group,data,bodyMesh:form.bodyMesh,eyeLeft:form.eyeLeft,eyeRight:form.eyeRight,propGroup:form.crown,
-    petPivot:pet.group,monthPet:pet.group,mapping,yearBelt:undefined,
+  return {group,data,avatarPivot:form.group,bodyMesh:form.bodyMesh,eyeLeft:form.eyeLeft,eyeRight:form.eyeRight,propGroup:form.crown,
+    petPivot:pet.group,zodiacPet:pet.group,monthPet:pet.group,mapping,yearBelt:undefined,
     update,triggerReaction,triggerSquish:triggerReaction,reset,dispose};
 }

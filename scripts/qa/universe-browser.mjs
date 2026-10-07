@@ -128,6 +128,34 @@ try {
   await check('four responsive widths; 44px controls; 16px body; three tabs', async () => {
     for (const width of [1440, 768, 390, 320]) await fit(page, width, 'spirit');
   });
+  await check('day animal and month background stay separate; mobile front/side composition', async () => {
+    const initial=await page.evaluate(()=>JSON.parse(sessionStorage.getItem('saju:universe:v1')));
+    await page.setViewportSize({width:1440,height:920});
+    await page.getByText('조합을 직접 둘러보기',{exact:true}).click();
+    await page.getByLabel('정령과 동반자 · 일주',{exact:true}).selectOption('을축');await waitScene(page,'spirit');
+    await page.locator('.identity-facts').getByText('일지 축 · 소',{exact:true}).waitFor();
+    const backdrop=await page.locator('.spirit-stage').getAttribute('style');
+    await page.getByLabel('배경 · 월령',{exact:true}).selectOption('경자');await waitScene(page,'spirit');
+    await page.locator('.identity-facts').getByText('일지 축 · 소',{exact:true}).waitFor();
+    assert.notEqual(await page.locator('.spirit-stage').getAttribute('style'),backdrop);
+    await page.getByLabel('정령과 동반자 · 일주',{exact:true}).selectOption('을묘');await waitScene(page,'spirit');
+    await page.locator('.identity-facts').getByText('일지 묘 · 토끼',{exact:true}).waitFor();
+    await page.getByText('동물 펫은 임시 조형이며, 전용 동물 리소스는 준비 중이에요.',{exact:true}).waitFor();
+    await page.getByLabel('정령과 동반자 · 일주',{exact:true}).selectOption(initial.dayKey);
+    await page.getByLabel('배경 · 월령',{exact:true}).selectOption(initial.monthKey);await waitScene(page,'spirit');
+    await page.getByRole('button',{name:'정령 움직임 일시정지',exact:true}).click();
+    await page.getByRole('button',{name:'정령 정면과 움직임 초기화',exact:true}).click();
+    for(const width of [390,320]){
+      await page.setViewportSize({width,height:920});await page.locator('[data-scene="spirit"]').scrollIntoViewIfNeeded();
+      await page.getByRole('button',{name:'정령 정면과 움직임 초기화',exact:true}).click();
+      await page.screenshot({path:path.join(output,'spirit-depth-front-'+width+'.png'),fullPage:true});
+      const box=await page.locator('[data-scene="spirit"] canvas').boundingBox(),x=box.x+box.width*.20,y=box.y+box.height*.48;
+      await page.mouse.move(x,y);await page.mouse.down();await page.mouse.move(x+Math.PI/2/.009,y,{steps:12});await page.mouse.up();
+      await page.screenshot({path:path.join(output,'spirit-depth-side-'+width+'.png'),fullPage:true});
+    }
+    await page.getByRole('button',{name:'정령 정면과 움직임 초기화',exact:true}).click();
+    await page.getByRole('button',{name:'정령 움직임 재생',exact:true}).click();
+  });
   await check('actual body emission changes locally; pause freezes its image', async () => {
     const before = await picture(page); await page.waitForTimeout(2800); const after = await picture(page);
     let rising = 0, falling = 0;
@@ -281,6 +309,9 @@ try {
       const snapshot = await target.evaluate(() => JSON.parse(sessionStorage.getItem('saju:universe:v1')));
       assert.deepEqual(snapshot.birth,birthB); assert.equal(snapshot.source,'calculated');
       for (const field of ['dayKey','monthKey','yearKey','hourKey']) assert.equal(snapshot[field],ownerPillars[field]);
+      // Creation writes the session before the new page's navigation hydrates.
+      // Await the actual bound link, rather than asserting its initial /guin placeholder.
+      await target.waitForFunction(path=>[...document.querySelectorAll('.bottom-nav a')].some(a=>a.getAttribute('href')===path),mapPath);
       assert.equal(await target.locator('.bottom-nav a').filter({hasText:'은하'}).getAttribute('href'),mapPath);
     };
     await verify(page);
