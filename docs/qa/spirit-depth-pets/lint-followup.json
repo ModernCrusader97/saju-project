@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "scope": [
+    "components/planet/ElementalSpiritCanvas.tsx",
+    "lib/planet/approved-jade-spirit.ts",
+    "lib/planet/elemental-spirit.ts",
+    "lib/planet/spirit-zodiac-pet.ts",
+    "lib/planet/spirit-profiles.ts",
+    "app/planet/page.tsx",
+    "app/lab/page.tsx",
+    "scripts/qa/spirit-depth-pets.mjs",
+    "scripts/qa/universe-browser.mjs"
+  ],
+  "files": [
+    {
+      "file": "components/planet/ElementalSpiritCanvas.tsx",
+      "errors": 0,
+      "warnings": 1,
+      "messages": [
+        {
+          "line": 234,
+          "rule": "@next/next/no-img-element",
+          "severity": 1,
+          "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element"
+        }
+      ]
+    },
+    {
+      "file": "lib/planet/approved-jade-spirit.ts",
+      "errors": 0,
+      "warnings": 0,
+      "messages": []
+    },
+    {
+      "file": "lib/planet/elemental-spirit.ts",
+      "errors": 0,
+      "warnings": 0,
+      "messages": []
+    },
+    {
+      "file": "lib/planet/spirit-zodiac-pet.ts",
+      "errors": 0,
+      "warnings": 0,
+      "messages": []
+    },
+    {
+      "file": "lib/planet/spirit-profiles.ts",
+      "errors": 0,
+      "warnings": 0,
+      "messages": []
+    },
+    {
+      "file": "app/planet/page.tsx",
+      "errors": 0,
+      "warnings": 0,
+      "messages": []
+    },
+    {
+      "file": "app/lab/page.tsx",
+      "errors": 0,
+      "warnings": 0,
+      "messages": []
+    },
+    {
+      "file": "scripts/qa/spirit-depth-pets.mjs",
+      "errors": 0,
+      "warnings": 0,
+      "messages": []
+    },
+    {
+      "file": "scripts/qa/universe-browser.mjs",
+      "errors": 0,
+      "warnings": 0,
+      "messages": []
+    }
+  ]
+}

@@ -1,0 +1,299 @@
+{
+  "source": "SaJu_Jade_Evolving_Light_v002_Final.blend",
+  "view_transform": "AgX",
+  "look": "AgX - Medium High Contrast",
+  "exposure": 0.0,
+  "camera": {
+    "name": "Shared comparison camera",
+    "type": "ORTHO",
+    "location": [
+      0.3,
+      -8.0,
+      3.25
+    ],
+    "rotation": [
+      1.320113,
+      -0.0,
+      0.037482
+    ],
+    "lens": 50.0,
+    "ortho_scale": 3.25
+  },
+  "lights": [
+    {
+      "name": "Broad soft key",
+      "type": "AREA",
+      "energy": 450.0,
+      "location": [
+        -3.0,
+        -4.0,
+        6.0
+      ],
+      "rotation": [
+        0.805803,
+        0.0,
+        -0.643501
+      ]
+    },
+    {
+      "name": "Pale rim",
+      "type": "AREA",
+      "energy": 350.0,
+      "location": [
+        3.0,
+        2.0,
+        4.0
+      ],
+      "rotation": [
+        0.9105,
+        -0.0,
+        2.158799
+      ]
+    },
+    {
+      "name": "Quiet face fill",
+      "type": "AREA",
+      "energy": 90.0,
+      "location": [
+        0.0,
+        -5.0,
+        2.0
+      ],
+      "rotation": [
+        1.412141,
+        -0.0,
+        0.0
+      ]
+    }
+  ],
+  "meshes": [
+    {
+      "name": "B candidate5 reconstructed | seamless body and mittens",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        1.754513,
+        0.951008,
+        2.384798
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 31064,
+      "morphs": {
+        "Basis": 0.0,
+        "Gentle_wave_pose": 0.0
+      }
+    },
+    {
+      "name": "B | small eye glint -1",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.034,
+        0.016,
+        0.036
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "location": [
+        -0.26,
+        -0.480691,
+        1.778
+      ],
+      "vertices": 610,
+      "morphs": {}
+    },
+    {
+      "name": "B | expressive brow -1",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.23933,
+        0.060544,
+        0.055424
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 250,
+      "morphs": {}
+    },
+    {
+      "name": "B | small eye glint 1",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.034,
+        0.016,
+        0.036
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "location": [
+        0.21,
+        -0.480727,
+        1.778
+      ],
+      "vertices": 610,
+      "morphs": {}
+    },
+    {
+      "name": "B | expressive brow 1",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.243052,
+        0.06053,
+        0.079552
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 250,
+      "morphs": {}
+    },
+    {
+      "name": "B | quiet smile",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.255633,
+        0.030265,
+        0.057455
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 250,
+      "morphs": {}
+    },
+    {
+      "name": "Plane",
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        200.0,
+        200.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "location": [
+        0.0,
+        0.0,
+        -0.015
+      ],
+      "vertices": 4,
+      "morphs": {}
+    },
+    {
+      "name": "B | almond gaze -1",
+      "scale": [
+        0.118,
+        0.029,
+        0.057
+      ],
+      "dimensions": [
+        0.236,
+        0.058,
+        0.114
+      ],
+      "rotation": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "location": [
+        -0.235,
+        -0.453691,
+        1.76
+      ],
+      "vertices": 610,
+      "morphs": {}
+    },
+    {
+      "name": "B | almond gaze 1",
+      "scale": [
+        0.118,
+        0.029,
+        0.057
+      ],
+      "dimensions": [
+        0.236,
+        0.058,
+        0.114
+      ],
+      "rotation": [
+        0.0,
+        -0.1,
+        0.0
+      ],
+      "location": [
+        0.235,
+        -0.453727,
+        1.76
+      ],
+      "vertices": 610,
+      "morphs": {}
+    }
+  ]
+}

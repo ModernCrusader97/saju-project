@@ -4,13 +4,15 @@ import evolutionGLSL from '../../assets/source-reference/saju-b-evolving-light-v
 import { wrapSeconds } from '../../assets/source-reference/saju-b-evolving-light-v002/runtime/saju-jade-evolution.mjs';
 import type { ElementalSpiritInstance } from './elemental-spirit';
 import { getSpiritStemPreset, TEN_STEM_SPIRITS } from './spirit-profiles';
-import { createZodiacFeatures } from './spirit-zodiac';
-import { createMonthSpiritPet } from './spirit-month-pet';
+import { createZodiacPet } from './spirit-zodiac-pet';
 import { createPlanetMaterial, animateSurface, resetSurface, setSurfaceReliefScale } from './surface-material';
 import { disposeObject, disposeMaterial } from './render-resources';
 import type { SpiritQuality } from './spirit-geometry';
 
 const ASSET_ROOT = '/spirits/jade-v002';
+/** Explicit presentation derivative requested after v24. The archived B GLB,
+ * UVs and mesh-local field coordinates stay unchanged; only world Z gains 35%. */
+export const APPROVED_BODY_PRESENTATION_DEPTH = 1.35;
 
 /** The approved RGB-triplet field contract is independent of UVs, world transforms and time. */
 export function attachJadeEvolution(material: THREE.MeshPhysicalMaterial, atlas: THREE.Texture) {
@@ -48,7 +50,9 @@ export async function loadApprovedSpirit(dayKey: string, monthKey: string, quali
   const group = new THREE.Group();
   group.name = `saju-B-avatar:${dayKey}`;
   const model = gltf.scene;
-  model.position.x = -.27;
+  model.position.x = -.42;
+  model.scale.z = APPROVED_BODY_PRESENTATION_DEPTH;
+  model.userData.presentationDepthScale = APPROVED_BODY_PRESENTATION_DEPTH;
   group.add(model);
   let body: THREE.Mesh | undefined;
   model.traverse(object => {
@@ -100,16 +104,10 @@ export async function loadApprovedSpirit(dayKey: string, monthKey: string, quali
   }
   for (const material of oldMaterials) disposeMaterial(material);
 
-  const accent = createPlanetMaterial(day, undefined, 'pangaea', 128);
-  setSurfaceReliefScale(accent, 0); animatedMaterials.push(accent);
-  const features = createZodiacFeatures(dayKey.charAt(1), accent, quality);
-  features.position.set(-.27, 1.9, 0);
-  features.name = `day-branch-features:${dayKey.charAt(1)}`;
-  group.add(features);
-  const petMaterial = createPlanetMaterial(month, undefined, 'pangaea', 128);
-  setSurfaceReliefScale(petMaterial, 0); animatedMaterials.push(petMaterial);
-  const pet = createMonthSpiritPet({ ...month, key: monthKey, branch: monthKey.charAt(1) }, petMaterial, quality);
-  pet.group.position.set(.9, 0, .1); group.add(pet.group);
+  const features = new THREE.Group(); // Compatibility slot; the animal now lives beside the avatar.
+  const pet = createZodiacPet(dayKey.charAt(1), quality);
+  pet.group.position.set(1.10, 0, .12); group.add(pet.group);
+  model.traverse(object => { if ((object as THREE.Mesh).isMesh) (object as THREE.Mesh).castShadow = true; });
   const eyes: THREE.Mesh[] = [];
   model.traverse(object => { const mesh = object as THREE.Mesh; if (mesh.isMesh && mesh.name.includes('almond_gaze')) eyes.push(mesh); });
   const eyeScales = eyes.map(eye => eye.scale.y);
@@ -125,7 +123,7 @@ export async function loadApprovedSpirit(dayKey: string, monthKey: string, quali
   };
   const reaction = () => { reactionStart = currentTime; };
   const reset = () => {
-    reactionStart = -100; group.rotation.set(0, 0, 0);
+    reactionStart = -100; group.rotation.set(0, 0, 0); model.rotation.set(0, 0, 0);
     for (const material of animatedMaterials) resetSurface(material);
     update(0, 0);
   };
@@ -133,12 +131,12 @@ export async function loadApprovedSpirit(dayKey: string, monthKey: string, quali
     if (disposed) return; disposed = true;
     disposeObject(group); atlas?.dispose(); group.removeFromParent(); group.clear();
   };
-  const mapping = { bodyStem: day.stem, bodyBranch: dayKey.charAt(1), petStem: month.stem, petBranch: monthKey.charAt(1) };
+  const mapping = { bodyStem: day.stem, bodyBranch: dayKey.charAt(1), petBranch: dayKey.charAt(1), backgroundStem: month.stem, backgroundBranch: monthKey.charAt(1) };
   group.userData.mapping = mapping;
-  group.userData.pillarRoles = { body: 'day-stem', features: 'day-branch', pet: 'month-stem-and-branch' };
+  group.userData.pillarRoles = { body: 'day-stem', pet: 'day-branch', background: 'month-pillar' };
   reset();
   return { group, data: TEN_STEM_SPIRITS[day.stem], bodyMesh: body,
     eyeLeft: eyes[0] ?? body, eyeRight: eyes[1] ?? body, propGroup: features,
-    petPivot: pet.group, monthPet: pet.group, mapping, update,
+    avatarPivot: model, petPivot: pet.group, zodiacPet: pet.group, monthPet: pet.group, mapping, update,
     triggerReaction: reaction, triggerSquish: reaction, reset, dispose };
 }

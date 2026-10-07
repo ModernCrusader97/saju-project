@@ -46,7 +46,7 @@ export const TEN_STEM_SPIRITS: Record<string, ElementalSpiritData> = Object.from
   }),
 );
 
-/** Shared by the day-branch avatar and the month-branch miniature companion. */
+/** Exact day-branch identity for the 12 animal companions. */
 export const ZODIAC_FEATURES = {
   자: { branch: "자", animal: "rat", label: "쥐", silhouette: "round-ears" },
   축: { branch: "축", animal: "ox", label: "소", silhouette: "outward-horns" },

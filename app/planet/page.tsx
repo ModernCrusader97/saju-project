@@ -29,7 +29,6 @@ export default function PlanetStudioPage() {
   const profile = TEN_STEM_SPIRITS[dayKey.charAt(0)] || TEN_STEM_SPIRITS.갑;
   const day = getStemThemePreset(dayKey), month = getStemThemePreset(monthKey);
   const animal = ZODIAC_FEATURES[dayKey.charAt(1) as ZodiacBranch]?.label;
-  const pet = ZODIAC_FEATURES[monthKey.charAt(1) as ZodiacBranch]?.label;
   const sceneKey = [mode, dayKey, monthKey, yearKey, hourKey, maskStyle, birth.unknown].join(":");
   const snapshotUrl = captured?.key === sceneKey ? captured.url : "";
   const capture = (url:string) => setCaptured({ key:sceneKey, url });
@@ -74,8 +73,10 @@ export default function PlanetStudioPage() {
           {mode === "spirit" ? <>
             <div className="identity-traits">{profile.personalityTraits.map(trait => <span key={trait}>{trait}</span>)}</div>
             <p>{dayKey.charAt(0) === "을" ? "부드러운 비취빛이 각 부분에서 피고 사라지는 정령이에요." : profile.conceptDesc}</p>
-            <dl className="identity-facts"><div><dt>나의 모습</dt><dd>일간 {dayKey.charAt(0)} · 일지 {animal} 특징</dd></div>
-              <div><dt>곁의 작은 펫</dt><dd>월주 {monthKey} · {pet}</dd></div></dl>
+            <dl className="identity-facts"><div><dt>나의 정령</dt><dd>일간 {dayKey.charAt(0)} · {profile.speciesTitle}</dd></div>
+              <div><dt>월령 배경</dt><dd>{monthKey} · {month.themeName}</dd></div>
+              <div><dt>곁의 작은 펫</dt><dd>일지 {dayKey.charAt(1)} · {animal}</dd></div></dl>
+            <p className="form-note">동물 펫은 임시 조형이며, 전용 동물 리소스는 준비 중이에요.</p>
             <button className="primary-button" type="button" onClick={() => commit({ ...snapshot, mode: "planet" }, true)}>같은 나의 행성 보기</button>
           </> : <>
             <dl className="identity-facts"><div><dt>일주 · 표면 70%</dt><dd>{dayKey} · {day.themeName}</dd></div>
@@ -116,13 +117,13 @@ export default function PlanetStudioPage() {
           <summary><Sliders size={19}/><span>조합을 직접 둘러보기</span></summary>
           <div className="pillar-inspector">
             <p>재질을 직접 고르면 계산 결과 대신 예시 조합으로 표시돼요.</p>
-            {([{ key: "dayKey", label: mode === "spirit" ? "본체 · 일주" : "주 표면 · 일주 70%" },
-              { key: "monthKey", label: mode === "spirit" ? "작은 펫 · 월주" : "보조 표면 · 월주 30%" },
+            {([{ key: "dayKey", label: mode === "spirit" ? "정령과 동반자 · 일주" : "주 표면 · 일주 70%" },
+              { key: "monthKey", label: mode === "spirit" ? "배경 · 월령" : "보조 표면 · 월주 30%" },
               ...(mode === "planet" ? [{ key: "hourKey", label: "위성 · 시주" }, { key: "yearKey", label: "소행성대 · 연주" }] : [])
             ] as { key: "dayKey" | "monthKey" | "hourKey" | "yearKey"; label: string }[]).map(item => <label key={item.key}>{item.label}
               <select aria-label={item.label} value={snapshot[item.key]} disabled={item.key === "hourKey" && birth.unknown}
                 onChange={e => selectPillar(item.key, e.target.value)}>{SIXTY_GANZI_KEYS.map(pillar => <option key={pillar.key} value={pillar.key}>{pillar.key} ({pillar.hanja})</option>)}</select></label>)}
-            <p className="form-note">정령은 일간 재질·일지 특징·월주 펫을 사용하고, 행성은 기존 십간 재질을 사용합니다.</p>
+            <p className="form-note">일간은 정령, 월령은 배경, 일지는 동물 동반자로 만나요. 행성은 기존 십간 재질을 사용합니다.</p>
           </div>
         </details>
       </div>
