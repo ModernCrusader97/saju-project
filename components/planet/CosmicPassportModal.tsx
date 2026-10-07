@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef, useState, useEffect } from "react";
-import { TEN_STEM_SPIRITS, ElementalSpiritData } from "@/lib/planet/elemental-spirit";
+import { TEN_STEM_SPIRITS } from "@/lib/planet/spirit-profiles";
 import { GuinPerson } from "@/lib/saju/types";
 import { X, Sparkles, Download, Share2, Compass, Check, Heart } from "lucide-react";
 
@@ -21,15 +21,26 @@ export default function CosmicPassportModal({
   const [downloading, setDownloading] = useState(false);
   const [copied, setCopied] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
+  const dialogRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    if (!isOpen) return;
+    const previous = document.activeElement as HTMLElement | null;
+    dialogRef.current?.querySelector<HTMLButtonElement>('button')?.focus();
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
+      if (e.key === "Tab") {
+        const controls = dialogRef.current?.querySelectorAll<HTMLElement>('button:not([disabled]),a[href]');
+        if (!controls?.length) return;
+        const first = controls[0], last = controls[controls.length - 1];
+        if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+        else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+      }
     };
     if (isOpen) {
       window.addEventListener("keydown", handleKeyDown);
     }
-    return () => window.removeEventListener("keydown", handleKeyDown);
+    return () => { window.removeEventListener("keydown", handleKeyDown); previous?.focus(); };
   }, [isOpen, onClose]);
 
   if (!isOpen) return null;
@@ -195,6 +206,7 @@ export default function CosmicPassportModal({
       onClick={onClose}
     >
       <div
+        ref={dialogRef} role="dialog" aria-modal="true" aria-label="우주 여권"
         className="relative w-full max-w-md bg-gradient-to-b from-[#0F172A] via-[#1E293B] to-[#0A0F1D] border border-doryeong-gold/30 rounded-[36px] p-6 text-white shadow-2xl space-y-6"
         onClick={(e) => e.stopPropagation()}
       >
@@ -215,6 +227,7 @@ export default function CosmicPassportModal({
           </div>
           <button
             onClick={onClose}
+            aria-label="우주 여권 닫기"
             className="p-1.5 rounded-full bg-white/10 hover:bg-white/20 text-white/70 hover:text-white transition-all"
           >
             <X className="h-4 w-4" />

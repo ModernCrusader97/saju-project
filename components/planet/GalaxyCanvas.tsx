@@ -1,8 +1,9 @@
 "use client";
 
 import React, { useEffect, useRef, useState, useCallback } from "react";
+import { bindSceneGestures } from "@/lib/planet/scene-gestures";
 import * as THREE from "three";
-import { RoomEnvironment } from "three/addons/environments/RoomEnvironment.js";
+import { createStudioEnvironment } from "@/lib/planet/scene-environment";
 import { MAX_LIVING_RADIAL_RELIEF } from "@/lib/planet/living-surface-shader";
 import { GuinPerson } from "@/lib/saju/types";
 import { buildGalaxyNodes, GalaxyNode } from "@/lib/planet/galaxy-helper";
@@ -184,6 +185,7 @@ export default function GalaxyCanvas({
     const container = containerRef.current;
     const width = container.clientWidth || 360;
     const height = container.clientHeight || 480;
+    const low = window.matchMedia("(max-width: 640px), (pointer: coarse)").matches;
 
     const scene = new THREE.Scene();
     sceneRef.current = scene;
@@ -195,7 +197,7 @@ export default function GalaxyCanvas({
     let renderer: THREE.WebGLRenderer;
     try {
       renderer = new THREE.WebGLRenderer({
-      antialias: true,
+      antialias: !low,
       alpha: true,
       powerPreference: "high-performance",
       preserveDrawingBuffer: true, // 캡처/스냅샷 지원
@@ -204,20 +206,19 @@ export default function GalaxyCanvas({
       setGraphicsError("3D 화면을 사용할 수 없어요. WebGL을 지원하는 브라우저에서 다시 열어주세요.");
       return;
     }
+    let shaderFailed = false;
+    renderer.debug.onShaderError = () => { shaderFailed = true; setGraphicsError("은하 재질을 그리지 못했어요. 아래 관계 카드는 계속 확인할 수 있어요."); };
+    setGraphicsError(null);
     renderer.setSize(width, height);
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, low ? 1.25 : 1.75));
     renderer.outputColorSpace = THREE.SRGBColorSpace;
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
     renderer.toneMappingExposure = 1.45;
     rendererRef.current = renderer;
     container.appendChild(renderer.domElement);
-    const reflectionRoom = new RoomEnvironment();
-    const pmrem = new THREE.PMREMGenerator(renderer);
-    const reflectionTarget = pmrem.fromScene(reflectionRoom, .035);
-    scene.environment = reflectionTarget.texture;
-    scene.environmentIntensity = 1.1;
-    reflectionRoom.dispose();
-    pmrem.dispose();
+    let reflectionTarget: THREE.WebGLRenderTarget;
+    try { reflectionTarget = createStudioEnvironment(renderer); scene.environment = reflectionTarget.texture; scene.environmentIntensity = 1.1; }
+    catch { renderer.dispose(); renderer.forceContextLoss(); rendererRef.current = null; container.replaceChildren(); setGraphicsError("반사광을 준비하지 못했어요. 아래 사주 구성은 계속 확인할 수 있어요."); return; }
 
     // 조명
     const ambientLight = new THREE.AmbientLight(0xffffff, 0.85);
@@ -241,12 +242,12 @@ export default function GalaxyCanvas({
     galaxyGroupRef.current = galaxyGroup;
 
     // 1-2. Hyper3D Astra 레퍼런스 스타일 4대 나선팔 은하 메쉬 (42,000 파티클)
-    const spiralGalaxy = buildSpiralGalaxy(42000);
+    const spiralGalaxy = buildSpiralGalaxy(low ? 9000 : 24000);
     galaxyGroup.add(spiralGalaxy.galaxyGroup);
 
     // 1-3. 원경 배경 은하 성단
     const bgStarGeo = new THREE.BufferGeometry();
-    const bgStarCount = 1800;
+    const bgStarCount = low ? 450 : 1200;
     const bgStarPositions = new Float32Array(bgStarCount * 3);
     const random = seededRandom(42186);
     for (let i = 0; i < bgStarCount; i++) {
@@ -268,83 +269,6 @@ export default function GalaxyCanvas({
     scene.add(bgStarPoints);
 
     // 인터랙션
-    const onMouseDown = (e: MouseEvent) => {
-      isDragging.current = true;
-      prevMouse.current = { x: e.clientX, y: e.clientY };
-    };
-
-    const onMouseMove = (e: MouseEvent) => {
-      if (!isDragging.current) return;
-      const dx = e.clientX - prevMouse.current.x;
-      const dy = e.clientY - prevMouse.current.y;
-
-      cameraAngle.current.theta -= dx * 0.0055;
-      cameraAngle.current.phi = Math.max(
-        0.18,
-        Math.min(Math.PI / 2 - 0.04, cameraAngle.current.phi + dy * 0.0055)
-      );
-      updateCameraPosition();
-
-      prevMouse.current = { x: e.clientX, y: e.clientY };
-    };
-
-    const onMouseUp = () => {
-      isDragging.current = false;
-    };
-
-    const onWheel = (e: WheelEvent) => {
-      e.preventDefault();
-      targetRadius.current = Math.max(
-        6,
-        Math.min(38, targetRadius.current + e.deltaY * 0.018)
-      );
-      cameraAngle.current.radius = targetRadius.current;
-      updateCameraPosition();
-    };
-
-    let lastTouchDist = 0;
-    const onTouchStart = (e: TouchEvent) => {
-      if (e.touches.length === 1) {
-        isDragging.current = true;
-        prevMouse.current = { x: e.touches[0].clientX, y: e.touches[0].clientY };
-      } else if (e.touches.length === 2) {
-        const dx = e.touches[0].clientX - e.touches[1].clientX;
-        const dy = e.touches[0].clientY - e.touches[1].clientY;
-        lastTouchDist = Math.sqrt(dx * dx + dy * dy);
-      }
-    };
-
-    const onTouchMove = (e: TouchEvent) => {
-      if (e.touches.length === 1 && isDragging.current) {
-        const dx = e.touches[0].clientX - prevMouse.current.x;
-        const dy = e.touches[0].clientY - prevMouse.current.y;
-        cameraAngle.current.theta -= dx * 0.0065;
-        cameraAngle.current.phi = Math.max(
-          0.18,
-          Math.min(Math.PI / 2 - 0.04, cameraAngle.current.phi + dy * 0.0065)
-        );
-        updateCameraPosition();
-        prevMouse.current = { x: e.touches[0].clientX, y: e.touches[0].clientY };
-      } else if (e.touches.length === 2) {
-        const dx = e.touches[0].clientX - e.touches[1].clientX;
-        const dy = e.touches[0].clientY - e.touches[1].clientY;
-        const dist = Math.sqrt(dx * dx + dy * dy);
-        const delta = lastTouchDist - dist;
-        targetRadius.current = Math.max(
-          6,
-          Math.min(38, targetRadius.current + delta * 0.04)
-        );
-        cameraAngle.current.radius = targetRadius.current;
-        updateCameraPosition();
-        lastTouchDist = dist;
-      }
-    };
-
-    const onTouchEnd = () => {
-      isDragging.current = false;
-    };
-
-    // 행성 클릭 선택 및 실시간 카메라 추적 포커싱
     const onClick = (e: MouseEvent) => {
       if (!cameraRef.current || !containerRef.current) return;
       const rect = containerRef.current.getBoundingClientRect();
@@ -378,18 +302,19 @@ export default function GalaxyCanvas({
     };
 
     const dom = renderer.domElement;
-    const onContextLost = (event: Event) => { event.preventDefault(); setGraphicsError("3D 연결이 잠시 끊겼어요. 복구를 기다려주세요."); };
-    const onContextRestored = () => setGraphicsError(null);
+    let contextLost = false;
+    const detachGestures = bindSceneGestures(dom, {
+      dragging: active => { isDragging.current = active; }, tap: onClick,
+      rotate: (dx, dy) => { cameraAngle.current.theta -= dx * .0065; cameraAngle.current.phi = Math.max(.18, Math.min(Math.PI / 2 - .04, cameraAngle.current.phi + dy * .0065)); updateCameraPosition(); },
+      zoom: delta => { targetRadius.current = Math.max(6, Math.min(38, targetRadius.current + delta)); cameraAngle.current.radius = targetRadius.current; updateCameraPosition(); },
+    });
+    const onContextLost = (event: Event) => { event.preventDefault(); contextLost = true; setGraphicsError("3D 연결이 잠시 끊겼어요. 복구를 기다려주세요."); };
+    const onContextRestored = () => {
+      try { const restored = createStudioEnvironment(renderer); reflectionTarget.dispose(); reflectionTarget = restored; scene.environment = restored.texture; contextLost = false; shaderFailed = false; setGraphicsError(null); }
+      catch { setGraphicsError("반사광을 복구하지 못했어요. 화면을 다시 열어주세요."); }
+    };
     dom.addEventListener("webglcontextlost", onContextLost);
     dom.addEventListener("webglcontextrestored", onContextRestored);
-    dom.addEventListener("mousedown", onMouseDown);
-    window.addEventListener("mousemove", onMouseMove);
-    window.addEventListener("mouseup", onMouseUp);
-    dom.addEventListener("wheel", onWheel, { passive: false });
-    dom.addEventListener("touchstart", onTouchStart, { passive: true });
-    window.addEventListener("touchmove", onTouchMove, { passive: true });
-    window.addEventListener("touchend", onTouchEnd);
-    dom.addEventListener("click", onClick);
 
     const handleResize = () => {
       if (!containerRef.current || !rendererRef.current || !cameraRef.current) return;
@@ -418,7 +343,7 @@ export default function GalaxyCanvas({
       animationFrameId = requestAnimationFrame(animate);
       const dt = safeDelta(now, previousTime);
       previousTime = now;
-      if (document.hidden) return;
+      if (document.hidden || contextLost || shaderFailed) return;
       const curSpeed = motionPausedRef.current ? 0 : Math.max(0, Math.min(3, speedScaleRef.current));
       const motionDt = dt * curSpeed;
       simulationTimeRef.current += motionDt;
@@ -530,14 +455,7 @@ export default function GalaxyCanvas({
       resizeObserver.disconnect();
       reducedMotion.removeEventListener("change", updateMotionPreference);
       document.removeEventListener("visibilitychange", onVisibility);
-      dom.removeEventListener("mousedown", onMouseDown);
-      window.removeEventListener("mousemove", onMouseMove);
-      window.removeEventListener("mouseup", onMouseUp);
-      dom.removeEventListener("wheel", onWheel);
-      dom.removeEventListener("touchstart", onTouchStart);
-      window.removeEventListener("touchmove", onTouchMove);
-      window.removeEventListener("touchend", onTouchEnd);
-      dom.removeEventListener("click", onClick);
+      detachGestures();
       if (sceneRef.current) {
         disposeHierarchy(sceneRef.current);
       }
@@ -822,7 +740,7 @@ export default function GalaxyCanvas({
 
   // 스냅샷/이미지 저장 기능
   const handleCaptureSnapshot = () => {
-    if (!rendererRef.current) return;
+    if (!rendererRef.current || graphicsError) return;
     try {
       const dataUrl = rendererRef.current.domElement.toDataURL("image/png");
       const a = document.createElement("a");
@@ -849,12 +767,13 @@ export default function GalaxyCanvas({
   return (
     <div
       ref={wrapperRef}
-      className={`relative w-full h-full min-h-[460px] rounded-[32px] overflow-hidden bg-gradient-to-b from-[#020409] via-[#080E1C] to-[#0E172E] border border-white/10 shadow-2xl ${
+      data-scene="galaxy" data-scene-state={graphicsError ? "fallback" : "ready"}
+      className={`galaxy-stage relative w-full h-full min-h-[460px] rounded-[32px] overflow-hidden bg-gradient-to-b from-[#020409] via-[#080E1C] to-[#0E172E] border border-white/10 shadow-2xl ${
         isFullscreen ? "fixed inset-0 z-50 rounded-none min-h-screen" : ""
       }`}
     >
       {/* Three.js 캔버스 마운트 */}
-      {graphicsError && <div role="status" className="absolute inset-0 z-20 flex items-center justify-center p-8 text-center text-sm text-white bg-[#0A0D18]/90">{graphicsError}</div>}
+      {graphicsError && <div role="status" className="scene-placeholder"><strong>{graphicsError}</strong><span>행성 없이도 같은 사람의 구성과 관계 카드를 읽을 수 있어요.</span><div className="scene-fallback-list">{guins.map(person => <button key={person.id} onClick={() => { setActivePerson(person); onSelectPerson?.(person); }}>{person.name}</button>)}</div></div>}
       <div ref={containerRef} className="w-full h-full cursor-grab active:cursor-grabbing" />
 
       {/* 상단 은하 타이틀 & 조작 안내 오버레이 (Hyper3D Astra HUD 스타일) */}
@@ -862,10 +781,10 @@ export default function GalaxyCanvas({
         <div className="flex items-center gap-2">
           <span className="px-3 py-1.5 rounded-full bg-black/75 backdrop-blur-md border border-white/20 text-[11px] font-bold text-doryeong-gold flex items-center gap-1.5 shadow-md">
             <Sparkles className="h-3.5 w-3.5 text-doryeong-gold" />
-            우리은하 4대 나선팔 · 동기화 공전
+            함께하는 사람들의 은하
           </span>
           <span className="text-[10px] text-white/70 bg-black/50 backdrop-blur-sm px-2.5 py-1 rounded-full border border-white/10 hidden md:inline-block font-mono">
-            42,000 STARS · 4 ARMS SPIRAL SPIN
+            행성을 선택해 둘러보세요
           </span>
         </div>
 

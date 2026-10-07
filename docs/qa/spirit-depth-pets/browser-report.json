@@ -1,0 +1,196 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "four responsive widths; 44px controls; 16px body; three tabs",
+      "ms": 12509
+    },
+    {
+      "name": "day animal and month background stay separate; mobile front/side composition",
+      "ms": 26399
+    },
+    {
+      "name": "body ROI evidence",
+      "risingPixels": 429,
+      "fallingPixels": 250
+    },
+    {
+      "name": "actual body emission changes locally; pause freezes its image",
+      "ms": 7024
+    },
+    {
+      "name": "active scene unmounts; old GPU context and draws stop",
+      "ms": 9330
+    },
+    {
+      "name": "Pending setup cleanup evidence",
+      "cancelled": 1,
+      "abandonedSpiritContexts": 0
+    },
+    {
+      "name": "leaving before the spirit setup frame cancels its GPU allocation",
+      "ms": 6842
+    },
+    {
+      "name": "GPU numeric evidence",
+      "samples": 108,
+      "maximumError": 0.001951116896535425,
+      "tolerance": 0.004313725490196079
+    },
+    {
+      "name": "GPU RGB atlas, masks and strength-2 composition agree with v002 CPU reference",
+      "ms": 613
+    },
+    {
+      "name": "repeat inputs; invalid date preserves result; history Back restores preceding result",
+      "ms": 5914
+    },
+    {
+      "name": "galaxy form keeps same birth; saved galaxy tab; readable cards and planet selection",
+      "ms": 14361
+    },
+    {
+      "name": "Legacy home URL evidence",
+      "initialRequestContainsBirthQuery": true,
+      "clientReplacesQueryAfterHydration": true
+    },
+    {
+      "name": "synchronized home input and Back/Forward keep only the matching galaxy",
+      "ms": 10484
+    },
+    {
+      "name": "synchronized direct galaxy creation, cancelled/failed input and new-tab restoration",
+      "ms": 21804
+    },
+    {
+      "name": "Context recovery pixel/draw evidence",
+      "scene": "spirit",
+      "colors": 1069,
+      "drawsAfterRecovery": 1552
+    },
+    {
+      "name": "Context recovery pixel/draw evidence",
+      "scene": "planet",
+      "colors": 1855,
+      "drawsAfterRecovery": 246
+    },
+    {
+      "name": "Context recovery pixel/draw evidence",
+      "scene": "galaxy",
+      "colors": 1644,
+      "drawsAfterRecovery": 862
+    },
+    {
+      "name": "context loss restores actual draws and changing pixels in all three scenes",
+      "ms": 22002
+    },
+    {
+      "name": "default share image contains no birth date/time; existing close interaction",
+      "ms": 2325
+    },
+    {
+      "name": "Mobile galaxy gesture evidence",
+      "verticalScroll": true,
+      "horizontalRotation": true,
+      "pinchZoom": true,
+      "pausedBaseline": true
+    },
+    {
+      "name": "Mobile quality evidence",
+      "points": [
+        450,
+        8100,
+        900,
+        1200
+      ],
+      "ratio": 1.2492836676217765,
+      "antialias": false
+    },
+    {
+      "name": "reduced motion starts paused; WebGL unavailable keeps readable results",
+      "ms": 38236
+    }
+  ],
+  "errors": [],
+  "outbound": [],
+  "metrics": [
+    {
+      "scene": "spirit",
+      "width": 1440,
+      "cls": 0,
+      "lcp": 828
+    },
+    {
+      "scene": "spirit",
+      "width": 768,
+      "cls": 0,
+      "lcp": 828
+    },
+    {
+      "scene": "spirit",
+      "width": 390,
+      "cls": 0,
+      "lcp": 828
+    },
+    {
+      "scene": "spirit",
+      "width": 320,
+      "cls": 0,
+      "lcp": 828
+    },
+    {
+      "scene": "planet",
+      "width": 320,
+      "cls": 0.0003233821457326892,
+      "lcp": 828
+    },
+    {
+      "scene": "planet",
+      "width": 390,
+      "cls": 0.0003233821457326892,
+      "lcp": 828
+    },
+    {
+      "scene": "planet",
+      "width": 768,
+      "cls": 0.0003233821457326892,
+      "lcp": 828
+    },
+    {
+      "scene": "planet",
+      "width": 1440,
+      "cls": 0.0003233821457326892,
+      "lcp": 828
+    },
+    {
+      "scene": "galaxy",
+      "width": 1440,
+      "cls": 0,
+      "lcp": 1444
+    },
+    {
+      "scene": "galaxy",
+      "width": 768,
+      "cls": 0,
+      "lcp": 1444
+    },
+    {
+      "scene": "galaxy",
+      "width": 390,
+      "cls": 0,
+      "lcp": 1444
+    },
+    {
+      "scene": "galaxy",
+      "width": 320,
+      "cls": 0,
+      "lcp": 1444
+    }
+  ],
+  "limits": [
+    "Desktop Chrome with SwiftShader; no physical mobile GPU or touch device",
+    "Synthetic local identity and disposable D1; hosted login not exercised",
+    "Lab LCP/CLS only; no field INP or production Web Vitals claim",
+    "No deployment or audience changes"
+  ]
+}
