@@ -660,7 +660,8 @@ export default function GalaxyCanvas({
           (ownerPos.y + friendPos.y) * 0.5 + 0.9,
           (ownerPos.z + friendPos.z) * 0.5
         );
-        const curve = new THREE.QuadraticBezierCurve3(ownerPos, mid, friendPos);
+        // The curve endpoints change every frame; never alias fixed orbit anchors.
+        const curve = new THREE.QuadraticBezierCurve3(ownerPos.clone(), mid, friendPos.clone());
 
         const curvePoints = curve.getPoints(24);
         const curveGeo = new THREE.BufferGeometry().setFromPoints(curvePoints);
