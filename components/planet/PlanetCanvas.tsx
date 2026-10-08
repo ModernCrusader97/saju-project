@@ -3,6 +3,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { bindSceneGestures } from "@/lib/planet/scene-gestures";
 import * as THREE from "three";
+import { createVisibilityLoop } from "@/lib/planet/visibility-loop";
 import { MAX_LIVING_RADIAL_RELIEF } from "@/lib/planet/living-surface-shader";
 import { createStudioEnvironment } from "@/lib/planet/scene-environment";
 import { createSurfaceEffects, animateSurfaceEffects, disposeSurfaceEffects } from "@/lib/planet/surface-effects";
@@ -209,16 +210,10 @@ export default function PlanetCanvas({
     };
     updateMotionPreference();
     reducedMotion.addEventListener("change", updateMotionPreference);
-    let previousTime = performance.now();
-    const onVisibility = () => { previousTime = performance.now(); };
-    document.addEventListener("visibilitychange", onVisibility);
     const resizeObserver = new ResizeObserver(handleResize);
     resizeObserver.observe(container);
-    let animationFrameId: number;
-    const animate = (now: number) => {
-      animationFrameId = requestAnimationFrame(animate);
+    const animate = (now: number, previousTime: number) => {
       const dt = safeDelta(now, previousTime);
-      previousTime = now;
       if (document.hidden || contextLost || shaderFailed) return;
       if (!isDragging.current && isAutoRotatingRef.current) {
         motionTimeRef.current += dt;
@@ -238,15 +233,14 @@ export default function PlanetCanvas({
       }
       renderer.render(scene, camera);
     };
-    animationFrameId = requestAnimationFrame(animate);
+    const stopAnimation = createVisibilityLoop(container, animate);
 
     return () => {
-      cancelAnimationFrame(animationFrameId);
+      stopAnimation();
       if (toastTimerRef.current) clearTimeout(toastTimerRef.current);
       window.removeEventListener("resize", handleResize);
       resizeObserver.disconnect();
       reducedMotion.removeEventListener("change", updateMotionPreference);
-      document.removeEventListener("visibilitychange", onVisibility);
       detachGestures();
       if (surfaceEffectsRef.current) {
         disposeSurfaceEffects(surfaceEffectsRef.current);

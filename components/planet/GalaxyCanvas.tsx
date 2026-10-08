@@ -3,6 +3,7 @@
 import React, { useEffect, useRef, useState, useCallback } from "react";
 import { bindSceneGestures } from "@/lib/planet/scene-gestures";
 import * as THREE from "three";
+import { createVisibilityLoop } from "@/lib/planet/visibility-loop";
 import { createStudioEnvironment } from "@/lib/planet/scene-environment";
 import { MAX_LIVING_RADIAL_RELIEF } from "@/lib/planet/living-surface-shader";
 import { GuinPerson } from "@/lib/saju/types";
@@ -327,22 +328,19 @@ export default function GalaxyCanvas({
     window.addEventListener("resize", handleResize);
 
     // 렌더 애니메이션 루프
-    let animationFrameId: number;
-    let previousTime = performance.now();
 
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
     const updateMotionPreference = () => { motionPausedRef.current = reducedMotion.matches; setMotionPaused(reducedMotion.matches); };
     updateMotionPreference();
     reducedMotion.addEventListener("change", updateMotionPreference);
-    const onVisibility = () => { previousTime = performance.now(); };
-    document.addEventListener("visibilitychange", onVisibility);
     const resizeObserver = new ResizeObserver(handleResize);
     resizeObserver.observe(container);
 
-    const animate = (now: number) => {
-      animationFrameId = requestAnimationFrame(animate);
+    // Scene-local scratch vectors keep per-connection curve sampling allocation-free.
+    const connectionOrigin = new THREE.Vector3();
+    const connectionPoint = new THREE.Vector3();
+    const animate = (now: number, previousTime: number) => {
       const dt = safeDelta(now, previousTime);
-      previousTime = now;
       if (document.hidden || contextLost || shaderFailed) return;
       const curSpeed = motionPausedRef.current ? 0 : Math.max(0, Math.min(3, speedScaleRef.current));
       const motionDt = dt * curSpeed;
@@ -429,32 +427,33 @@ export default function GalaxyCanvas({
 
       // 7. 인연선 펄스 파티클 동적 갱신
       connectionsRef.current.forEach((conn) => {
-        const origin = ownerGroupRef.current?.position ?? new THREE.Vector3();
+        const origin = ownerGroupRef.current?.position ?? connectionOrigin;
         conn.curve.v0.copy(origin);
         conn.curve.v2.copy(conn.friendGroup.position);
         conn.curve.v1.copy(origin).add(conn.friendGroup.position).multiplyScalar(.5);
         conn.curve.v1.y += .9;
-        const points = conn.curve.getPoints(24);
         const attribute = conn.line.geometry.getAttribute('position') as THREE.BufferAttribute;
-        points.forEach((point, i) => attribute.setXYZ(i, point.x, point.y, point.z));
+        for (let i = 0; i <= 24; i++) {
+          conn.curve.getPoint(i / 24, connectionPoint);
+          attribute.setXYZ(i, connectionPoint.x, connectionPoint.y, connectionPoint.z);
+        }
         attribute.needsUpdate = true;
         conn.line.geometry.computeBoundingSphere();
         conn.pulseT = (conn.pulseT + .22 * motionDt) % 1.0;
-        const pPos = conn.curve.getPoint(conn.pulseT);
-        conn.pulseMesh.position.copy(pPos);
+        conn.curve.getPoint(conn.pulseT, connectionPoint);
+        conn.pulseMesh.position.copy(connectionPoint);
       });
 
       renderer.render(scene, camera);
     };
-    animationFrameId = requestAnimationFrame(animate);
+    const stopAnimation = createVisibilityLoop(container, animate);
 
     return () => {
-      cancelAnimationFrame(animationFrameId);
+      stopAnimation();
       toastTimersRef.current.forEach(clearTimeout);
       window.removeEventListener("resize", handleResize);
       resizeObserver.disconnect();
       reducedMotion.removeEventListener("change", updateMotionPreference);
-      document.removeEventListener("visibilitychange", onVisibility);
       detachGestures();
       if (sceneRef.current) {
         disposeHierarchy(sceneRef.current);

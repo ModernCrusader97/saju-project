@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
+import { createVisibilityLoop } from "@/lib/planet/visibility-loop";
 import { createStudioEnvironment } from "@/lib/planet/scene-environment";
 import type { ElementalSpiritInstance } from "@/lib/planet/elemental-spirit";
 import { TEN_STEM_SPIRITS, ZODIAC_FEATURES, getSpiritStemPreset, type ZodiacBranch } from "@/lib/planet/spirit-profiles";
@@ -176,21 +177,15 @@ export default function ElementalSpiritCanvas({
     const onMotionPreference=()=>{runningRef.current=!reducedMotion.matches;setRunning(runningRef.current);};
     if(!motionPreferenceInitialized.current){onMotionPreference();motionPreferenceInitialized.current=true;}
     reducedMotion.addEventListener("change",onMotionPreference);
-    let previousTime=performance.now();
-    const onVisibility=()=>{previousTime=performance.now();};
-    document.addEventListener("visibilitychange",onVisibility);
-    let frame=0;
-    const animate=(now:number)=>{
-      frame=requestAnimationFrame(animate);
-      const delta=safeDelta(now,previousTime);previousTime=now;
+    const animate=(now:number,previousTime:number)=>{
+      const delta=safeDelta(now,previousTime);
       if(document.hidden || contextLost || shaderFailed || !runningRef.current || activePointer!==null || !spirit)return;
       motionTime.current+=delta;spirit.update(motionTime.current,delta);render();
     };
-    frame=requestAnimationFrame(animate);
+    const stopAnimation = createVisibilityLoop(container, animate);
     return ()=>{
-      cancelAnimationFrame(frame);observer.disconnect();
+      stopAnimation();observer.disconnect();
       reducedMotion.removeEventListener("change",onMotionPreference);
-      document.removeEventListener("visibilitychange",onVisibility);
       dom.removeEventListener("pointerdown",onDown);dom.removeEventListener("pointermove",onMove);
       dom.removeEventListener("pointerup",onUp);dom.removeEventListener("pointercancel",onUp);dom.removeEventListener("lostpointercapture",onLost);
       dom.removeEventListener("webglcontextlost",onContextLost);dom.removeEventListener("webglcontextrestored",onContextRestored);
