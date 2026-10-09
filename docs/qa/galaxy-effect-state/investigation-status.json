@@ -1,0 +1,21 @@
+{
+  "basis": "8ba3b9763bcaa88a8a3f2e108fa331a49800090f",
+  "status": "Paused at source investigation checkpoint to prioritize user-reported visual arrival and owner-appearance defects.",
+  "productionChanges": false,
+  "remoteHeadsChecked": 22,
+  "initialWorktreesChecked": 17,
+  "allInitiallyClean": true,
+  "gpuFailureSetterPresentInAllRemoteHeads": true,
+  "sourceObservations": [
+    "Diagnostic identifies WebGL constructor failure catch and setGraphicsError.",
+    "Healthy clear-to-null and false motion preference request initial state values. Actual extra render counts remain unmeasured.",
+    "Active-person initialization and reload synchronization update the summary card after scene setup. SSR/client/owner/reload behavior remains to be measured."
+  ],
+  "notExecuted": [
+    "SSR and initial client profiler measurement",
+    "owner/data reload profiling",
+    "candidate behavioral fixes",
+    "new type/build/regression runs"
+  ],
+  "noLintResolutionClaim": true
+}
