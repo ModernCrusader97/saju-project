@@ -1,0 +1,15 @@
+{"case":"null name from synthetic D1","httpStatus":200,"renderErrors":[],"alert":"기록 목록을 확인할 수 없습니다.다시 불러오기","visibleText":"MY ARCHIVE총 0권의 기록나의 기록저장한 사주 풀이와 대화를 다시 살펴보세요.전체 (0)기록 목록을 확인할 수 없습니다.다시 불러오기"}
+✔ a null name returned by the real summary API cannot crash archive search (862.843489ms)
+{"case":"invalid date from synthetic D1","httpStatus":200,"renderErrors":[],"alert":"기록 목록을 확인할 수 없습니다.다시 불러오기","visibleText":"MY ARCHIVE총 0권의 기록나의 기록저장한 사주 풀이와 대화를 다시 살펴보세요.전체 (0)기록 목록을 확인할 수 없습니다.다시 불러오기"}
+✔ an invalid record date is a recoverable list error instead of a render exception (498.462945ms)
+{"case":"malformed list item","httpStatus":200,"renderErrors":[],"alert":"기록 목록을 확인할 수 없습니다.다시 불러오기","visibleText":"MY ARCHIVE총 0권의 기록나의 기록저장한 사주 풀이와 대화를 다시 살펴보세요.전체 (0)기록 목록을 확인할 수 없습니다.다시 불러오기"}
+✔ a malformed list can retry through HTTP failure and then show a genuine empty result (39.487037ms)
+✔ the real API still lists legacy optional category and day-master fields with its defaults (486.379629ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1895.9173

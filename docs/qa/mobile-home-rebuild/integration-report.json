@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "count": 23,
+  "checks": [
+    "template fortune creation",
+    "saved list",
+    "saved detail",
+    "chat persistence",
+    "invalid date rejected",
+    "anonymous API rejected",
+    "cross-user fortune isolation",
+    "map persistence and concurrent friend inserts",
+    "cross-user map isolation",
+    "client assets",
+    "page /",
+    "page /daily",
+    "page /manse",
+    "page /planet",
+    "page /lab",
+    "page /ai-test",
+    "page /saved",
+    "page /guin",
+    "page /guin/gm_4bb0b73e-3887-437c-90f9-1ed3aa158a19",
+    "ordinary flows make zero outbound requests",
+    "AI test rejects extra personal-data fields",
+    "fixed Gemini fixtures and fact validation (mock-only)",
+    "six-call daily cap stops further calls"
+  ],
+  "limits": [
+    "No browser/WebGL/touch validation",
+    "Synthetic local identity; hosted login not exercised",
+    "Fresh local test database only"
+  ]
+}

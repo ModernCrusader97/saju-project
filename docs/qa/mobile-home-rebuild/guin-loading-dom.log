@@ -1,0 +1,15 @@
+✔ a late previous-route GET cannot replace the current map or restore its session (236.002534ms)
+✔ changing a loaded route hides its map and starts the new loading state (120.523442ms)
+✔ changing a failed route clears its error before the next map arrives (62.665928ms)
+✔ a late previous-route failure cannot finish loading the current route (35.429785ms)
+✔ unmount cancels the GET and a late success has no session side effect (22.49711ms)
+✔ current HTTP and malformed-response errors still render without restoring a map (32.459831ms)
+✔ Strict Mode cleanup prevents a discarded mount from replacing its fresh load (39.31923ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 555.958946

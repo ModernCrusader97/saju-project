@@ -1,0 +1,40 @@
+{
+  "status": "FAIL",
+  "phase": "after",
+  "browserVersion": "151.0.7922.173",
+  "sourceChecks": [
+    "two internal Next Links with explicit prefetch=false"
+  ],
+  "assetHashes": {
+    "jade": "f17790815107c4c5d751df92050c3e00c6c597f95843dfcd1b2c6c39c7735c54",
+    "cosmos": "8749ac60a1333b432c55c9a9fc826a78eabdb4187e292bba0bfbcf5d7d9ac1ba"
+  },
+  "links": [
+    {
+      "href": "/planet",
+      "disabledPrefetch": true
+    },
+    {
+      "href": "/guin",
+      "disabledPrefetch": true
+    }
+  ],
+  "widths": [],
+  "checks": [],
+  "errors": [
+    "TypeError: e is not a function\n    at http://127.0.0.1:44639/_next/static/chunks/FortuneCard-P-e9STnt.js:2:12274\n    at e.startTransition (http://127.0.0.1:44639/_next/static/chunks/framework-D_rUT4EX.js:1:6185)\n    at _e (http://127.0.0.1:44639/_next/static/chunks/FortuneCard-P-e9STnt.js:2:12253)",
+    "page.waitForURL: Timeout 20000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n============================================================\n    at /workspace/saju-mobile-home-rebuild/scripts/qa/mobile-home.mjs:200:54\n    at async check (/workspace/saju-mobile-home-rebuild/scripts/qa/mobile-home.mjs:62:129)\n    at async file:///workspace/saju-mobile-home-rebuild/scripts/qa/mobile-home.mjs:194:26"
+  ],
+  "outbound": [],
+  "failurePage": {
+    "url": "http://127.0.0.1:44639/",
+    "active": "<a href=\"/planet\" class=\"_entry_1dmuj_7\" aria-labelledby=\"spirit-entry-title\"><div class=\"_media_1dmuj_9 _jade_1dmuj_11\"><img src=\"/spirits/jade-v002/still.png\" alt=\"둥근 옥 정령 B의 정지 예시\" width=\"320\" height=\"320\" fetchpriority=\"high\"></div><div class=\"_entryText_1dmuj_13\"><span class=\"_example_1dmuj_16\">예시</span><h2 id=\"spirit-entry-title\">정령 · 행성 보기</h2><p>태어난 날을 나만의 모습으로.</p><span class=\"_arrow_1dmuj_17\" aria-hidden=\"true\">→</span></div></a>",
+    "text": "나의 우주\n비공개 테스트 · 해석과 계산 범위 안내\n\n태어난 순간에서 시작하는 이야기\n\n나를 닮은 우주\n\n나의 사주를 정령과 행성으로 만나보세요.\n소중한 사람들과는 하나의 은하로 이어져요.\n\n나의 우주 만들기\n↓\n예시\n정령 · 행성 보기\n\n태어난 날을 나만의 모습으로.\n\n예시\n은하 보기\n\n서로 다른 우리가 함께하는 우주.\n\n태어난 순간에서 시작해요.\n\n양력 생년월일로 나의 정령과 행성을 만나보세요.\n\n이름 또는 별명\n연도\n월\n일\n태어난 시각\n시간 모름\n나의 우주 보기\n\n시간을 몰라도 시작할 수 있어요. 음력·자세한 사주 구성\n\n나의 기록\n\n저장한 풀이와 대화를 다시 읽어요.\n\n기록 보기 →\n\nREAD YOUR STORY\n\n모습 너머의 이야기\n\n원하는 주제로 사주 풀이를 남겨보세요.\n현재는 준비된 해석 문구를 조합합니다.\n\n나의 성향\n연애와 관계\n두 사람의 궁합\n일과 재물\n한 해의 흐름\n긴 시간의 흐름\n궁금한 이야기\n사주는 자신을 돌아보는 하나의 관점입니다. 행성과 분신은 사주를 시각적으로 해석한 디자인이며, 미래를 확정하지 않습니다.\n정령\n행성\n은하"
+  },
+  "limits": [
+    "Real built Worker/client/HTML/CSS with Chromium; screenshots require visual inspection",
+    "Synthetic local identity and fresh disposable D1; no hosted auth or real user data",
+    "Only successful birth form destination document I/O is stubbed to inspect query parameters; internal Link navigation and modal save are real",
+    "Home has no WebGL; physical mobile/touch and full planet/galaxy rendering are outside this home regression"
+  ]
+}

@@ -1,0 +1,259 @@
+{
+  "status": "PASS",
+  "phase": "before",
+  "browserVersion": "151.0.7922.173",
+  "sourceChecks": [],
+  "assetHashes": {
+    "jade": "f17790815107c4c5d751df92050c3e00c6c597f95843dfcd1b2c6c39c7735c54",
+    "cosmos": "8749ac60a1333b432c55c9a9fc826a78eabdb4187e292bba0bfbcf5d7d9ac1ba"
+  },
+  "links": [],
+  "widths": [
+    {
+      "width": 320,
+      "overflow": 0,
+      "images": [
+        {
+          "src": "/spirits/jade-v002/still.png",
+          "loaded": true,
+          "width": 286,
+          "height": 215
+        }
+      ],
+      "inputs": [
+        {
+          "width": 246,
+          "height": 46,
+          "fontSize": 16
+        },
+        {
+          "width": 76,
+          "height": 46,
+          "fontSize": 16
+        },
+        {
+          "width": 76,
+          "height": 46,
+          "fontSize": 16
+        },
+        {
+          "width": 76,
+          "height": 46,
+          "fontSize": 16
+        },
+        {
+          "width": 151.828125,
+          "height": 46,
+          "fontSize": 16
+        }
+      ],
+      "canvasCount": 0,
+      "webglCalls": 0,
+      "navigation": [
+        "정령",
+        "행성",
+        "은하"
+      ]
+    },
+    {
+      "width": 360,
+      "overflow": 0,
+      "images": [
+        {
+          "src": "/spirits/jade-v002/still.png",
+          "loaded": true,
+          "width": 322,
+          "height": 215
+        }
+      ],
+      "inputs": [
+        {
+          "width": 282,
+          "height": 46,
+          "fontSize": 16
+        },
+        {
+          "width": 88,
+          "height": 46,
+          "fontSize": 16
+        },
+        {
+          "width": 88,
+          "height": 46,
+          "fontSize": 16
+        },
+        {
+          "width": 88,
+          "height": 46,
+          "fontSize": 16
+        },
+        {
+          "width": 187.828125,
+          "height": 46,
+          "fontSize": 16
+        }
+      ],
+      "canvasCount": 0,
+      "webglCalls": 0,
+      "navigation": [
+        "정령",
+        "행성",
+        "은하"
+      ]
+    },
+    {
+      "width": 390,
+      "overflow": 0,
+      "images": [
+        {
+          "src": "/spirits/jade-v002/still.png",
+          "loaded": true,
+          "width": 349,
+          "height": 215
+        }
+      ],
+      "inputs": [
+        {
+          "width": 309,
+          "height": 46,
+          "fontSize": 16
+        },
+        {
+          "width": 97,
+          "height": 46,
+          "fontSize": 16
+        },
+        {
+          "width": 97,
+          "height": 46,
+          "fontSize": 16
+        },
+        {
+          "width": 97,
+          "height": 46,
+          "fontSize": 16
+        },
+        {
+          "width": 214.828125,
+          "height": 46,
+          "fontSize": 16
+        }
+      ],
+      "canvasCount": 0,
+      "webglCalls": 0,
+      "navigation": [
+        "정령",
+        "행성",
+        "은하"
+      ]
+    },
+    {
+      "width": 430,
+      "overflow": 0,
+      "images": [
+        {
+          "src": "/spirits/jade-v002/still.png",
+          "loaded": true,
+          "width": 385,
+          "height": 215
+        }
+      ],
+      "inputs": [
+        {
+          "width": 345,
+          "height": 46,
+          "fontSize": 16
+        },
+        {
+          "width": 109,
+          "height": 46,
+          "fontSize": 16
+        },
+        {
+          "width": 109,
+          "height": 46,
+          "fontSize": 16
+        },
+        {
+          "width": 109,
+          "height": 46,
+          "fontSize": 16
+        },
+        {
+          "width": 250.828125,
+          "height": 46,
+          "fontSize": 16
+        }
+      ],
+      "canvasCount": 0,
+      "webglCalls": 0,
+      "navigation": [
+        "정령",
+        "행성",
+        "은하"
+      ]
+    },
+    {
+      "width": 1100,
+      "overflow": 0,
+      "images": [
+        {
+          "src": "/spirits/jade-v002/still.png",
+          "loaded": true,
+          "width": 528.453125,
+          "height": 520.15625
+        }
+      ],
+      "inputs": [
+        {
+          "width": 399.53125,
+          "height": 46,
+          "fontSize": 16
+        },
+        {
+          "width": 125.171875,
+          "height": 46,
+          "fontSize": 16
+        },
+        {
+          "width": 125.171875,
+          "height": 46,
+          "fontSize": 16
+        },
+        {
+          "width": 125.1875,
+          "height": 46,
+          "fontSize": 16
+        },
+        {
+          "width": 305.359375,
+          "height": 46,
+          "fontSize": 16
+        }
+      ],
+      "canvasCount": 0,
+      "webglCalls": 0,
+      "navigation": [
+        "정령",
+        "행성",
+        "은하"
+      ]
+    }
+  ],
+  "checks": [
+    "five real responsive widths, loaded original images and no horizontal overflow",
+    "home loads no model, three bundle, route prefetch or WebGL",
+    "original form defaults, unknown time and invalid-date rejection remain intact",
+    "known and unknown time preserve the original planet query and trimmed/default name",
+    "all original reading topics still open and the real modal saves to disposable D1",
+    "existing header drawer keyboard trap, Escape and saved navigation remain usable"
+  ],
+  "errors": [],
+  "outbound": [],
+  "limits": [
+    "Real built Worker/client/HTML/CSS with Chromium; screenshots require visual inspection",
+    "Synthetic local identity and fresh disposable D1; no hosted auth or real user data",
+    "Only successful birth form destination document I/O is stubbed to inspect query parameters; internal Link navigation and modal save are real",
+    "Home has no WebGL; physical mobile/touch and full planet/galaxy rendering are outside this home regression"
+  ]
+}

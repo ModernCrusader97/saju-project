@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "checks": [
+    "list-once/detail-on-demand/cache/URL Back and Forward",
+    "dismissal aborts detail and late completion cannot replace a newer selection",
+    "direct link/error/retry uses only requested detail",
+    "failed list is distinct from empty state and retry succeeds",
+    "category/all four search fields/case-fold/no-match/Space activation/mismatched detail guard",
+    "unmount aborts list and ignores late resolution"
+  ],
+  "limits": [
+    "JSDOM lifecycle checks with real page component; not browser rendering or visual QA",
+    "API/router boundaries stubbed; full D1 API coverage lives in saved-archive.mjs"
+  ]
+}

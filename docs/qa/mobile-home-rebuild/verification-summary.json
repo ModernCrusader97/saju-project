@@ -1,0 +1,143 @@
+{
+  "status": "PASS",
+  "reconstruction": "New records-based mobile home; unavailable candidates 32eb33a and c5d13cf are not claimed as identical restoration",
+  "repository": "ModernCrusader97/saju-project",
+  "repositoryVisibility": "private (confirmed using connected GitHub read)",
+  "branch": "rebuild/mobile-home-20261010",
+  "baseSha": "43e2d8dc6efe1654641e639397f37d0ea44f525a",
+  "separateTenStemShaPreserved": "de85ce2ed7f9c655f532d9a8a16be8855e6dd661",
+  "identicalBaseBlobsAt43AndDe85": {
+    "app/page.tsx": "83873d22cf40820a4e37ed35a5240a3644ee9a10",
+    "app/globals.css": "cd00d3060bfefd524bcf55b7074758436ed824e0"
+  },
+  "productChanged": [
+    "app/page.tsx",
+    "app/home.module.css"
+  ],
+  "sourceSha256": {
+    "app/page.tsx": "d11563c28148959044ebb534d0b420bca7116711b58c9bd2e220fb2167b4297d",
+    "app/home.module.css": "91c7a0b0897455af28de4f78e635ba3f8a729accde440a9d0224571a243a9b52",
+    "scripts/qa/mobile-home.mjs": "182c12a4c8d1d7aa1b111424a0990cca198dd177772a32741bba3a7d766098ba"
+  },
+  "checks": {
+    "beforeBrowser": {
+      "status": "PASS",
+      "widths": [
+        320,
+        360,
+        390,
+        430,
+        1100
+      ],
+      "count": 6
+    },
+    "beforeRequirements": {
+      "status": "EXPECTED_FAIL",
+      "reason": "Home entries must import internal Next Link"
+    },
+    "beforeLinkFix": {
+      "status": "REPRODUCED_FAIL",
+      "reason": "Vinext Link private navigateClientSide export absent in generated lazy module; real navigation TypeError"
+    },
+    "afterBrowser": {
+      "status": "PASS",
+      "widths": [
+        320,
+        360,
+        390,
+        430,
+        1100
+      ],
+      "count": 8,
+      "sourceChecks": [
+        "two internal Next Links with explicit prefetch=false"
+      ],
+      "browserVersion": "151.0.7922.173",
+      "errors": 0,
+      "outbound": 0
+    },
+    "buildBeforeAndAfter": {
+      "status": "PASS",
+      "exitCode": 0,
+      "command": "npm run build",
+      "remainingNotices": [
+        "large chunks",
+        "route classification currently unknown for some routes"
+      ]
+    },
+    "typecheck": {
+      "status": "PASS",
+      "exitCode": 0,
+      "command": "npx tsc --noEmit --incremental false"
+    },
+    "changedFileLint": {
+      "status": "PASS",
+      "exitCode": 0,
+      "command": "npx eslint app/page.tsx scripts/qa/mobile-home.mjs",
+      "errors": 0,
+      "warnings": 3,
+      "warningScope": "Preserved window.location.assign and two static images"
+    },
+    "integration": {
+      "status": "PASS",
+      "exitCode": 0,
+      "count": 23,
+      "AIProvider": "mock-only"
+    },
+    "relatedDOM": {
+      "status": "PASS",
+      "exitCode": 0,
+      "savedArchive": 6,
+      "guinLoading": 7,
+      "savedListResponse": 4,
+      "total": 17
+    },
+    "diffCheck": {
+      "status": "PASS",
+      "exitCode": 0
+    }
+  },
+  "visualInspection": {
+    "performedBy": "Codex direct image inspection of final Chromium screenshots",
+    "viewports": [
+      320,
+      360,
+      390,
+      430,
+      1100
+    ],
+    "fullPages": [
+      320,
+      1100
+    ],
+    "focusedForms": [
+      320,
+      1100
+    ],
+    "observations": [
+      "No horizontal overflow or card/button overlap",
+      "Both source images displayed fully and labeled examples",
+      "Desktop card media heights equal",
+      "320px card description wraps between words",
+      "CTA reaches existing form; name input focus visible and form controls usable above fixed bottom navigation",
+      "Saved records, all seven reading topics and footer remain present"
+    ],
+    "captureNote": "A full-page mobile screenshot captures fixed bottom navigation at its viewport position; separate focused-form screenshots show actual scrolled form accessibility"
+  },
+  "assetHashes": {
+    "jade": "f17790815107c4c5d751df92050c3e00c6c597f95843dfcd1b2c6c39c7735c54",
+    "cosmos": "8749ac60a1333b432c55c9a9fc826a78eabdb4187e292bba0bfbcf5d7d9ac1ba"
+  },
+  "limits": [
+    "Real built Worker/client/HTML/CSS with Chromium; screenshots require visual inspection",
+    "Synthetic local identity and fresh disposable D1; no hosted auth or real user data",
+    "Only successful birth form destination document I/O is stubbed to inspect query parameters; internal Link navigation and modal save are real",
+    "Home has no WebGL; physical mobile/touch and full planet/galaxy rendering are outside this home regression",
+    "Physical mobile/touch not exercised",
+    "Hosted login, live user DB and deployment not exercised",
+    "Full destination WebGL visual quality is outside this home change",
+    "Related DOM checks use JSDOM and mocked API/router boundaries except the dedicated saved response test"
+  ],
+  "sensitiveData": "Only synthetic fixtures. No .env, real secrets, actual user DB, build outputs or dependencies are included.",
+  "logFormatting": "Committed logs remove ANSI codes and trailing whitespace; original raw logs remain only in ignored local outputs."
+}
