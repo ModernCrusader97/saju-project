@@ -282,12 +282,6 @@
     "archive": "saju-source-candidates-and-qa--part-03.zip"
   },
   {
-    "path": "saju_planet_preview/tsconfig.tsbuildinfo",
-    "bytes": 340784,
-    "sha256": "5b1c9b68451235f7a355d5eb9b89fe3a3e009fd0da1eef3e665d71c808c9c42e",
-    "archive": "saju-source-candidates-and-qa--part-03.zip"
-  },
-  {
     "path": "saju_standalone_artifacts_20261009/SaJu_Standalone_Name_Boundary_Fix_QA_20261009_0155.zip",
     "bytes": 277850,
     "sha256": "c3d8d90e14b607ff20b3a937db71b4dccb25b288203944f616a8b06325aaa77d",

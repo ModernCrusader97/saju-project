@@ -1,7 +1,5 @@
-# SaJu local authoring preservation
+# SaJu local authoring archive
 
-This branch preserves independently available SaJu source, models, materials, animation studies and validation artifacts. This is an archive, not application integration or a deployment.
+Preserved 906 file entries in 15 ZIPs, separated by original authoring version and candidate. Read [PRESERVATION_REPORT.md](PRESERVATION_REPORT.md) for provenance, verification, exclusions and known missing candidates. Extract all ZIPs from `assets/` and `source/` into one empty folder. SHA-256 inventories and ZIP manifests are included.
 
-Initial repository baseline: `2e2d82b05f87b39ff8057ae914e8dfa01100a974`.
-
-Snapshots and the final SHA-256 inventory are being added in follow-up commits. Earlier repository content remains unchanged.
+This branch is preservation only. No merge, application integration or deployment was performed. Earlier repository content and Git history are retained.
