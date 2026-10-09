@@ -1,5 +1,5 @@
 import { GuinPerson } from "./types";
-import { TEN_STEM_SPIRITS } from "../planet/elemental-spirit";
+import { getDailyPillar } from "./manse";
 
 /**
  * [Step 3] "오늘 우리 행성의 궤도 날씨" 데일리 관계 인사이트 엔진
@@ -31,10 +31,9 @@ export function calculateDailyOrbitalWeather(
   friends: GuinPerson[]
 ): OrbitalWeatherInsight[] {
   const today = new Date();
-  const dayIndex = (today.getFullYear() * 365 + today.getMonth() * 30 + today.getDate()) % 10;
-  const stems = ["갑", "을", "병", "정", "무", "기", "경", "신", "임", "계"];
-  const todayStem = stems[dayIndex];
-  const todayElement = ELEMENT_MAP[todayStem] || "fire";
+  const { gan: todayStem, element: todayElement } = getDailyPillar(
+    today.getFullYear(), today.getMonth() + 1, today.getDate()
+  );
 
   const ownerStem = ownerPerson.pillars?.dayKey?.charAt(0) || "갑";
   const ownerElement = ELEMENT_MAP[ownerStem] || "wood";
