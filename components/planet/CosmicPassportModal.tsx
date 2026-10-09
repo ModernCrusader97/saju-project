@@ -2,6 +2,7 @@
 
 import React, { useRef, useState, useEffect } from "react";
 import { TEN_STEM_SPIRITS } from "@/lib/planet/spirit-profiles";
+import { fitPassportTitle } from "@/lib/planet/passport-title";
 import { GuinPerson } from "@/lib/saju/types";
 import { X, Sparkles, Download, Share2, Compass, Check, Heart } from "lucide-react";
 
@@ -107,8 +108,7 @@ export default function CosmicPassportModal({
 
       // 4. 이름 및 사주 간지
       ctx.fillStyle = "#FFFFFF";
-      ctx.font = "bold 72px serif";
-      ctx.fillText(`${person.name}님의 우주 정령`, 540, 360);
+      ctx.fillText(fitPassportTitle(ctx, `${person.name}님의 우주 정령`), 540, 360);
 
       ctx.fillStyle = "#F59E0B";
       ctx.font = "bold 38px sans-serif";
