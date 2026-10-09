@@ -72,10 +72,12 @@ export function readUniverseSession(): UniverseSnapshot | null {
 }
 // Viewing mode and surface masks do not change who owns a galaxy. Birth fields
 // and all four displayed pillars do; unbound legacy paths cannot prove ownership.
+// Calculated names contain the API's first parser result. An ordinary 50-unit
+// cut may retain trailing whitespace, so do not trim those names again.
 function universeOwnerKey(snapshot: UniverseSnapshot): string | null {
   if (snapshot.source !== 'calculated') return null;
   const b = snapshot.birth;
-  return JSON.stringify([b.name.trim() || '나', Number(b.year), Number(b.month), Number(b.day), b.unknown,
+  return JSON.stringify([b.name, Number(b.year), Number(b.month), Number(b.day), b.unknown,
     ...(b.unknown ? [] : [Number(b.hour), Number(b.minute)]),
     snapshot.dayKey, snapshot.monthKey, snapshot.yearKey, b.unknown ? null : snapshot.hourKey]);
 }
@@ -104,7 +106,7 @@ function galaxyMatchesSnapshot(map: GuinMapData, snapshot: UniverseSnapshot): bo
   const birth = snapshot.birth, pillars = map.guins.find(person => person.isMe)?.pillars;
   const date = map.ownerSolarBirthDate;
   const ownerDate = date ? [date.year, date.month, date.day] : map.ownerBirth.split('.').map(Number);
-  return snapshot.source === 'calculated' && map.ownerName === (birth.name.trim() || '나')
+  return snapshot.source === 'calculated' && map.ownerName === birth.name
     && ownerDate.join('.') === [Number(birth.year), Number(birth.month), Number(birth.day)].join('.')
     && !!pillars && pillars.dayKey === snapshot.dayKey && pillars.monthKey === snapshot.monthKey
     && pillars.yearKey === snapshot.yearKey

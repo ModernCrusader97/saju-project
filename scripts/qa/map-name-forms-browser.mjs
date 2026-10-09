@@ -6,21 +6,29 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { Miniflare } from 'miniflare';
 
 const root = fileURLToPath(new URL('../..', import.meta.url));
-const output = path.join(root, 'outputs/map-name-forms');
+const profile = process.env.SAJU_QA_PROFILE || 'standard';
+assert(['standard', 'name-binding'].includes(profile));
+const output = path.join(root, profile === 'name-binding' ? 'outputs/galaxy-name-binding' : 'outputs/map-name-forms');
 const phase = process.env.SAJU_QA_PHASE || 'after';
 assert(['before', 'before-layout', 'after'].includes(phase));
-const widths = process.env.SAJU_QA_FORM_WIDTH ? [Number(process.env.SAJU_QA_FORM_WIDTH)] : [320, 390];
-assert(widths.every(width => [320, 390].includes(width)));
+const widths = process.env.SAJU_QA_FORM_WIDTH ? [Number(process.env.SAJU_QA_FORM_WIDTH)]
+  : profile === 'name-binding' ? [320, 359, 360, 375, 390] : [320, 390];
+assert(widths.every(width => [320, 359, 360, 375, 390].includes(width)));
 await fs.mkdir(output, { recursive: true });
 const cases = [
   { key: 'ordinary', raw: '  합성 이름  ', expected: '합성 이름' },
   { key: 'space-boundary', raw: '가'.repeat(48) + ' 😀', expected: '가'.repeat(48) },
   { key: 'pair-crosses', raw: '가'.repeat(49) + '😀', expected: '가'.repeat(49) },
   { key: 'pair-fits', raw: '가'.repeat(48) + '😀', expected: '가'.repeat(48) + '😀' },
+  ...(profile === 'name-binding' ? [
+    { key: 'cut-space', raw: '가'.repeat(49) + ' x', expected: '가'.repeat(49) + ' ' },
+    { key: 'internal-spaces', raw: '  합성  이름  ', expected: '합성  이름' },
+  ] : []),
 ];
 const fixtures = process.env.SAJU_QA_FORM_CASE ? cases.filter(fixture => fixture.key === process.env.SAJU_QA_FORM_CASE) : cases;
 assert(fixtures.length);
 const checks = [], observations = [], layouts = [], dialogs = [], outbound = [], errors = [];
+const saveAttempts = [], emptyNames = [];
 async function check(name, page, run) {
   try { await run(); checks.push({ name, status: 'PASS' }); }
   catch (error) {
@@ -60,12 +68,15 @@ async function layout(page, form, label) {
       const rect = element.getBoundingClientRect();
       const style = getComputedStyle(element);
       measure.font = `${style.fontWeight} ${style.fontSize} ${style.fontFamily}`;
-      const numericTextWidth = element.type === 'number' ? measure.measureText(element.value).width : 0;
+      const numericMetrics = element.type === 'number' ? measure.measureText(element.value) : null;
+      const numericTextWidth = numericMetrics?.width || 0;
       const numericAvailableWidth = element.clientWidth - parseFloat(style.paddingLeft) - parseFloat(style.paddingRight);
       return { tag: element.tagName, type: element.getAttribute('type'), label: element.getAttribute('aria-label') || element.getAttribute('placeholder') || element.textContent.trim(),
         left: rect.left, right: rect.right, width: rect.width, height: rect.height,
         textOverflow: element.tagName === 'INPUT' ? 0 : element.scrollWidth - element.clientWidth,
         numericTextWidth, numericAvailableWidth,
+        ...(numericMetrics ? { numericInkLeft: -numericMetrics.actualBoundingBoxLeft,
+          numericInkRight: numericMetrics.actualBoundingBoxRight, numericTextAlign: style.textAlign } : {}),
         validationMessage: element.validationMessage || '' };
     }).filter(rect => rect.width && rect.height);
     const submit = form.querySelector('button[type=submit]');
@@ -95,14 +106,19 @@ async function layout(page, form, label) {
         throw new Error('Chromium numeric editing viewport was not found');
       }
       const { model } = await protocol.send('DOM.getBoxModel', { backendNodeId: viewport.backendNodeId });
-      numeric[index].numericAvailableWidth = model.content[2] - model.content[0];
+      const control = numeric[index];
+      control.numericAvailableWidth = model.content[2] - model.content[0];
+      assert.equal(control.numericTextAlign, 'center', 'Numeric ink checks require the actual centered form inputs');
+      const offset = (control.numericAvailableWidth - control.numericTextWidth) / 2;
+      control.numericInkOverflow = Math.max(0, -(offset + control.numericInkLeft),
+        offset + control.numericInkRight - control.numericAvailableWidth);
     }
   } finally { await protocol.detach(); }
   layouts.push({ label, ...data });
   assert(data.form.left >= -1 && data.form.right <= data.viewport + 1, JSON.stringify(data));
   const escaped = data.controls.filter(control => control.left < data.form.left - 1 || control.right > data.form.right + 1
     || control.left < -1 || control.right > data.viewport + 1 || control.textOverflow > 1
-    || control.numericTextWidth > control.numericAvailableWidth + 1);
+    || control.numericTextWidth > control.numericAvailableWidth + 1 || control.numericInkOverflow > 0.01);
   assert.deepEqual(escaped, [], JSON.stringify({ label, escaped }));
   assert(data.documentOverflow <= 1, JSON.stringify({ label, documentOverflow: data.documentOverflow }));
   assert(data.submitUnobscured, label + ': submit button must be reachable above the fixed navigation');
@@ -146,10 +162,31 @@ try {
     page.on('dialog', async dialog => { dialogs.push({ label, type: dialog.type(), message: dialog.message() }); await dialog.accept(); });
     const posts = [];
     page.on('request', request => { if (request.method() === 'POST' && new URL(request.url()).pathname.startsWith('/api/guin')) posts.push(new URL(request.url()).pathname); });
-    let created, mapPath;
+    const storedMapCount = async () => (await d1.prepare('SELECT COUNT(*) AS count FROM guin_maps WHERE owner_id=?')
+      .bind(identity['oai-authenticated-user-id']).first()).count;
+    let created, mapPath, saveAttempt;
     try {
       await page.goto(origin + '/guin', { waitUntil: 'networkidle' });
       const ownerName = page.getByLabel('은하 이름', { exact: true });
+      if (profile === 'name-binding' && fixture.key === 'ordinary') {
+        await check(label + '-owner-empty-name-guard-and-api', page, async () => {
+          const dialogCount = dialogs.length;
+          for (const raw of ['', '   ']) {
+            await ownerName.fill(raw);
+            await page.getByRole('button', { name: '귀인 지도 만들기', exact: true }).click();
+            await page.evaluate(() => new Promise(resolve => requestAnimationFrame(resolve)));
+            assert.deepEqual(posts, []);
+            assert.equal(await ownerName.inputValue(), raw);
+            assert.equal(dialogs.length, dialogCount);
+            const response = await page.request.post(origin + '/api/guin', { data: { name: raw,
+              birthYear: 1996, birthMonth: 7, birthDay: 20, birthHour: 14, birthMinute: 30 } });
+            assert.equal(response.status(), 400);
+            assert.equal((await response.json()).error, '이름을 입력해주세요.');
+            emptyNames.push({ label, flow: 'owner', rawUnits: raw.length, formPosts: posts.length, apiStatus: response.status() });
+          }
+          assert.equal(await storedMapCount(), 0);
+        });
+      }
       await ownerName.fill(fixture.raw);
       const ownerForm = page.locator('form');
       await check(label + '-owner-layout', page, () => layout(page, ownerForm, label + '-owner'));
@@ -180,12 +217,42 @@ try {
         mapPath = '/guin/' + created.id;
         observations.push({ label, flow: 'owner', rawUnits: fixture.raw.length, storedName: created.ownerName, storedUnits: created.ownerName.length });
         assert.equal(created.ownerName, fixture.expected);
-        assert.equal(await outcome, 'navigation');
+        const firstOutcome = await outcome;
+        if (profile === 'name-binding') {
+          saveAttempt = { label, firstStatus: result.status(), firstOutcome, firstMapId: created.id,
+            storedMapsAfterFirst: await storedMapCount(), retryPerformed: false };
+          saveAttempts.push(saveAttempt);
+          // Replay one retry only when a committed save produced the reported local error.
+          if (firstOutcome === '지도의 사주 결과를 확인하지 못했습니다.') {
+            const retryResponse = page.waitForResponse(response => new URL(response.url()).pathname === '/api/guin'
+              && response.request().method() === 'POST');
+            const retryDialog = page.waitForEvent('dialog');
+            await page.getByRole('button', { name: '귀인 지도 만들기', exact: true }).click();
+            saveAttempt.retryStatus = (await retryResponse).status();
+            saveAttempt.retryOutcome = (await retryDialog).message();
+            saveAttempt.retryPerformed = true;
+            saveAttempt.retryMapId = ownerReplies[1]?.data.guinMap?.id;
+            saveAttempt.storedMapsAfterRetry = await storedMapCount();
+            assert.equal(saveAttempt.retryStatus, 200);
+            assert.notEqual(saveAttempt.retryMapId, created.id);
+            assert.equal(saveAttempt.storedMapsAfterRetry, 2);
+          }
+        }
+        assert.equal(firstOutcome, 'navigation');
         await page.locator('.galaxy-heading h1').waitFor();
         assert.equal((await page.locator('.galaxy-heading h1').textContent()).trim(), fixture.expected + '의 갤럭시');
         assert.equal(await page.evaluate(() => sessionStorage.getItem('saju:galaxy-path')), mapPath);
       });
       if (!created) throw new Error('Owner form did not create a test map');
+      if (profile === 'name-binding') {
+        await check(label + '-no-misleading-error-or-duplicate', page, async () => {
+          assert.equal(saveAttempt.firstStatus, 200);
+          assert.equal(saveAttempt.firstOutcome, 'navigation');
+          assert.equal(saveAttempt.retryPerformed, false);
+          assert.equal(saveAttempt.storedMapsAfterFirst, 1);
+          assert.equal(await storedMapCount(), 1);
+        });
+      }
       await check(label + '-owner-reopen-and-refresh', page, async () => {
         await page.goto(origin + '/guin', { waitUntil: 'networkidle' });
         assert.equal(await ownerName.inputValue(), fixture.expected);
@@ -198,6 +265,26 @@ try {
       await page.goto(origin + mapPath, { waitUntil: 'networkidle' });
       await page.getByRole('button', { name: '친구 행성 등록', exact: true }).click();
       const friendName = page.getByPlaceholder('예: 지우', { exact: true });
+      if (profile === 'name-binding' && fixture.key === 'ordinary') {
+        await check(label + '-friend-empty-name-guard-and-api', page, async () => {
+          const postCount = posts.length, dialogCount = dialogs.length;
+          for (const raw of ['', '   ']) {
+            await friendName.fill(raw);
+            await page.getByRole('button', { name: '귀인 등록 완료하기', exact: true }).click();
+            await page.evaluate(() => new Promise(resolve => requestAnimationFrame(resolve)));
+            assert.equal(posts.length, postCount);
+            assert.equal(await friendName.inputValue(), raw);
+            assert.equal(dialogs.length, dialogCount);
+            const response = await page.request.post(origin + '/api' + mapPath, { data: { friendName: raw,
+              birthYear: 1997, birthMonth: 3, birthDay: 10, birthHour: 12, birthMinute: 0 } });
+            assert.equal(response.status(), 400);
+            assert.equal((await response.json()).error, '이름을 입력해주세요.');
+            emptyNames.push({ label, flow: 'friend', rawUnits: raw.length, formPosts: posts.length - postCount, apiStatus: response.status() });
+          }
+          const response = await page.request.get(origin + '/api' + mapPath);
+          assert.equal((await response.json()).guinMap.guins.length, 1);
+        });
+      }
       await friendName.fill(fixture.raw);
       await check(label + '-friend-close-and-reopen-draft', page, async () => {
         await page.getByRole('button', { name: '✕', exact: true }).click();
@@ -231,17 +318,17 @@ try {
         observations.push({ label, flow: 'friend', storedName: person.name, storedUnits: person.name.length });
         assert.equal(person.name, fixture.expected);
         assert.equal(await friendName.count(), 0);
-        assert.equal((await page.locator('.relationship-card h4').last().textContent()).trim(), fixture.expected);
+        assert.equal(await page.locator('.relationship-card h4').last().textContent(), fixture.expected);
       });
       await check(label + '-friend-reopen-refresh-and-storage', page, async () => {
         await page.getByRole('button', { name: '친구 행성 등록', exact: true }).click();
         assert.equal(await friendName.inputValue(), '', 'Saved name is shown in the card; a new draft starts empty');
         await page.keyboard.press('Escape');
-        assert.equal((await page.locator('.relationship-card h4').last().textContent()).trim(), fixture.expected);
+        assert.equal(await page.locator('.relationship-card h4').last().textContent(), fixture.expected);
         const count = posts.length;
         await page.reload({ waitUntil: 'networkidle' });
         assert.equal((await page.locator('.galaxy-heading h1').textContent()).trim(), fixture.expected + '의 갤럭시');
-        assert.equal((await page.locator('.relationship-card h4').last().textContent()).trim(), fixture.expected);
+        assert.equal(await page.locator('.relationship-card h4').last().textContent(), fixture.expected);
         const saved = await page.request.get(origin + '/api' + mapPath);
         assert.equal(saved.status(), 200);
         const map = (await saved.json()).guinMap;
@@ -258,7 +345,7 @@ try {
 } catch (error) { checks.push({ name: 'harness', status: 'FAIL', error: error.stack || String(error) }); }
 finally { if (browser) await browser.close(); await mf.dispose(); }
 const report = { status: checks.every(check => check.status === 'PASS') ? 'PASS' : 'FAIL', browserVersion,
-  coverage: { widths, fixtures: fixtures.map(fixture => fixture.key) }, checks, observations, layouts, dialogs,
+  coverage: { profile, widths, fixtures: fixtures.map(fixture => fixture.key) }, checks, observations, layouts, dialogs, saveAttempts, emptyNames,
   limits: ['Synthetic disposable local Worker/D1 and identities only; no hosted login or production records',
     'Native alert text and handling tested; browser/OS popup geometry cannot be measured by page DOM screenshots',
     'Software WebGL is used to load the real map UI; no 3D art or physical-device validation'] };

@@ -21,6 +21,9 @@ const mapFor = (snapshot, name) => ({ id: 'gm_synthetic', ownerName: name,
 
 for (const [label, raw, expected] of [
   ['ordinary form name', '합성 이름', '합성 이름'],
+  ['outer whitespace', ' \t합성 이름\n ', '합성 이름'],
+  ['internal spaces', '  합성  이름  ', '합성  이름'],
+  ['ordinary cut retains trailing space', '가'.repeat(49) + ' x', '가'.repeat(49) + ' '],
   ['space exposed by crossing pair', '가'.repeat(48) + ' 😀', '가'.repeat(48)],
   ['crossing pair', '가'.repeat(49) + '😀', '가'.repeat(49)],
   ['pair fitting at 50 units', '가'.repeat(48) + '😀', '가'.repeat(48) + '😀'],
@@ -50,4 +53,20 @@ for (const [label, change] of [['different name', { name: '다른 합성' }], ['
 test('oversized untrusted session name remains rejected', () => {
   const state = harness(), snapshot = state.calculateUniverse(birth('합성 이름'));
   assert.equal(state.decodeUniverse({ ...snapshot, birth: { ...snapshot.birth, name: '가'.repeat(51) } }), null);
+});
+
+test('map binding rejects a name different from the first parser result', () => {
+  const state = harness();
+  const snapshot = state.calculateUniverse(birth('가'.repeat(49) + ' x'));
+  assert.throws(() => state.saveGalaxyUniverse(snapshot, mapFor(snapshot, '가'.repeat(49))),
+    error => error.message === '지도의 사주 결과를 확인하지 못했습니다.');
+});
+
+test('owner binding distinguishes retained cut whitespace from a shorter name', () => {
+  const state = harness();
+  const snapshot = state.calculateUniverse(birth('가'.repeat(49) + ' x'));
+  // This represents the first parser result already bound by a successful POST.
+  state.saveGalaxyUniverse(snapshot, mapFor(snapshot, snapshot.birth.name));
+  state.saveUniverseSession(state.calculateUniverse(birth('가'.repeat(49))));
+  assert.equal(state.readGalaxyPath(), '/guin');
 });
