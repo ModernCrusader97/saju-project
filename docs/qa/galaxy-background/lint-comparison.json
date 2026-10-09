@@ -1,0 +1,95 @@
+{
+  "basis": "db5179b1723b4b462868ce656968a9d2f355720c",
+  "allSourceBytesAndMessagesUnchanged": true,
+  "totalErrors": 6,
+  "totalWarnings": 4,
+  "results": [
+    {
+      "file": "components/planet/GalaxyCanvas.tsx",
+      "sourceByteIdentical": true,
+      "messagesUnchanged": true,
+      "errorCount": 6,
+      "warningCount": 4,
+      "messages": [
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "line": 139,
+          "column": 9,
+          "message": "'prevMouse' is assigned a value but never used."
+        },
+        {
+          "ruleId": "react-hooks/immutability",
+          "severity": 2,
+          "line": 195,
+          "column": 5,
+          "message": "Error: Cannot access variable before it is declared\n\n`updateCameraPosition` is accessed before it is declared, which prevents the earlier access from updating when this value changes over time.\n\n/workspace/saju-galaxy-resume-fix/components/planet/GalaxyCanvas.tsx:195:5\n  193 |     const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1200);\n  194 |     cameraRef.current = camera;\n> 195 |     updateCameraPosition();\n      |     ^^^^^^^^^^^^^^^^^^^^ `updateCameraPosition` accessed before it is declared\n  196 |\n  197 |     let renderer: THREE.WebGLRenderer;\n  198 |     try {\n\n/workspace/saju-galaxy-resume-fix/components/planet/GalaxyCanvas.tsx:474:3\n  472 |   }, []);\n  473 |\n> 474 |   const updateCameraPosition = () => {\n      |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 475 |     if (!cameraRef.current) return;\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 476 |     const { theta, phi, radius } = cameraAngle.current;\n      …\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 485 |     cameraRef.current.lookAt(currentLookAt.current);\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 486 |   };\n      | ^^^^^ `updateCameraPosition` is declared here\n  487 |\n  488 |   const startTrackingPlanet = useCallback((personId: string, isOwner: boolean) => {\n  489 |     trackedPlanetIdRef.current = personId;"
+        },
+        {
+          "ruleId": "react-hooks/set-state-in-effect",
+          "severity": 2,
+          "line": 206,
+          "column": 7,
+          "message": "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\n/workspace/saju-galaxy-resume-fix/components/planet/GalaxyCanvas.tsx:206:7\n  204 |     });\n  205 |     } catch {\n> 206 |       setGraphicsError(\"3D 화면을 사용할 수 없어요. WebGL을 지원하는 브라우저에서 다시 열어주세요.\");\n      |       ^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect\n  207 |       return;\n  208 |     }\n  209 |     let shaderFailed = false;"
+        },
+        {
+          "ruleId": "react-hooks/immutability",
+          "severity": 2,
+          "line": 298,
+          "column": 13,
+          "message": "Error: Cannot access variable before it is declared\n\n`startTrackingPlanet` is accessed before it is declared, which prevents the earlier access from updating when this value changes over time.\n\n/workspace/saju-galaxy-resume-fix/components/planet/GalaxyCanvas.tsx:298:13\n  296 |\n  297 |             // 실시간 궤도 추적 락온\n> 298 |             startTrackingPlanet(val.node.person.id, val.node.isOwner);\n      |             ^^^^^^^^^^^^^^^^^^^ `startTrackingPlanet` accessed before it is declared\n  299 |           }\n  300 |         });\n  301 |       }\n\n/workspace/saju-galaxy-resume-fix/components/planet/GalaxyCanvas.tsx:488:3\n  486 |   };\n  487 |\n> 488 |   const startTrackingPlanet = useCallback((personId: string, isOwner: boolean) => {\n      |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 489 |     trackedPlanetIdRef.current = personId;\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 490 |     targetRadius.current = isOwner ? 6.2 : 5.2;\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 491 |     cameraAngle.current.phi = 0.44;\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 492 |     setFocusMode(isOwner ? \"owner\" : \"friend\");\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 493 |   }, []);\n      | ^^^^^^^^^^ `startTrackingPlanet` is declared here\n  494 |\n  495 |   const flyCameraToOverview = useCallback(() => {\n  496 |     trackedPlanetIdRef.current = null;"
+        },
+        {
+          "ruleId": "react-hooks/exhaustive-deps",
+          "severity": 1,
+          "line": 453,
+          "column": 22,
+          "message": "The ref value 'toastTimersRef.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'toastTimersRef.current' to a variable inside the effect, and use that variable in the cleanup function."
+        },
+        {
+          "ruleId": "react-hooks/exhaustive-deps",
+          "severity": 1,
+          "line": 472,
+          "column": 6,
+          "message": "React Hook useEffect has missing dependencies: 'onSelectPerson' and 'startTrackingPlanet'. Either include them or remove the dependency array. If 'onSelectPerson' changes too often, find the parent component that defines it and wrap that definition in useCallback."
+        },
+        {
+          "ruleId": "react-hooks/preserve-manual-memoization",
+          "severity": 2,
+          "line": 488,
+          "column": 43,
+          "message": "Compilation Skipped: Existing memoization could not be preserved\n\nReact Compiler has skipped optimizing this component because the existing manual memoization could not be preserved. This value was memoized in source but not in compilation output.\n\n/workspace/saju-galaxy-resume-fix/components/planet/GalaxyCanvas.tsx:488:43\n  486 |   };\n  487 |\n> 488 |   const startTrackingPlanet = useCallback((personId: string, isOwner: boolean) => {\n      |                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 489 |     trackedPlanetIdRef.current = personId;\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 490 |     targetRadius.current = isOwner ? 6.2 : 5.2;\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 491 |     cameraAngle.current.phi = 0.44;\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 492 |     setFocusMode(isOwner ? \"owner\" : \"friend\");\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 493 |   }, []);\n      | ^^^^ Could not preserve existing memoization\n  494 |\n  495 |   const flyCameraToOverview = useCallback(() => {\n  496 |     trackedPlanetIdRef.current = null;"
+        },
+        {
+          "ruleId": "react-hooks/exhaustive-deps",
+          "severity": 1,
+          "line": 729,
+          "column": 6,
+          "message": "React Hook useEffect has missing dependencies: 'selectedPersonId' and 'startTrackingPlanet'. Either include them or remove the dependency array."
+        },
+        {
+          "ruleId": "react/no-unescaped-entities",
+          "severity": 2,
+          "line": 1015,
+          "column": 25,
+          "message": "`'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`."
+        },
+        {
+          "ruleId": "react/no-unescaped-entities",
+          "severity": 2,
+          "line": 1015,
+          "column": 38,
+          "message": "`'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`."
+        }
+      ]
+    },
+    {
+      "file": "lib/planet/surface-math.ts",
+      "sourceByteIdentical": true,
+      "messagesUnchanged": true,
+      "errorCount": 0,
+      "warningCount": 0,
+      "messages": []
+    }
+  ]
+}

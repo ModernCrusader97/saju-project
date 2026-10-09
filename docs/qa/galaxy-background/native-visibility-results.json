@@ -1,0 +1,62 @@
+{
+  "syntheticDocumentOverrides": false,
+  "nativeHiddenObserved": false,
+  "observations": [
+    {
+      "mode": "headless",
+      "action": "activate other tab",
+      "hidden": false,
+      "state": "visible",
+      "events": []
+    },
+    {
+      "mode": "headless",
+      "action": "activate original tab",
+      "hidden": false,
+      "state": "visible",
+      "events": []
+    },
+    {
+      "mode": "headless",
+      "action": "window minimized",
+      "hidden": false,
+      "state": "visible",
+      "events": []
+    },
+    {
+      "mode": "headless",
+      "action": "window normal",
+      "hidden": false,
+      "state": "visible",
+      "events": []
+    },
+    {
+      "mode": "headed Ozone offscreen",
+      "action": "activate other tab",
+      "hidden": false,
+      "state": "visible",
+      "events": []
+    },
+    {
+      "mode": "headed Ozone offscreen",
+      "action": "activate original tab",
+      "hidden": false,
+      "state": "visible",
+      "events": []
+    },
+    {
+      "mode": "headed Ozone offscreen",
+      "action": "window minimized",
+      "hidden": false,
+      "state": "visible",
+      "events": []
+    },
+    {
+      "mode": "headed Ozone offscreen",
+      "action": "window normal",
+      "hidden": false,
+      "state": "visible",
+      "events": []
+    }
+  ]
+}

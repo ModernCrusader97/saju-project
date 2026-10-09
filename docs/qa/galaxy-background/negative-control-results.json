@@ -1,0 +1,45 @@
+{
+  "allDetected": true,
+  "productionFilesChanged": false,
+  "harnessSha256": "a4d331cc6d7cc88e08d2ae942130777b846c1af046501ad83a0e619b957f870c",
+  "controls": [
+    {
+      "mutation": "visibility-reset",
+      "onlyInMemory": true,
+      "exitCode": 1,
+      "passed": 9,
+      "failed": 8,
+      "failedChecks": [
+        "hidden gap 1000ms matches foreground control",
+        "hidden gap 300000ms matches foreground control",
+        "hidden gap 86400000ms matches foreground control",
+        "resume {\"speed\":3}",
+        "resume {\"landing\":true}",
+        "resume {\"landing\":true,\"pause\":true}",
+        "resume {\"tracking\":true}",
+        "repeated hide/show cycles keep a single rAF chain"
+      ]
+    },
+    {
+      "mutation": "hidden-gate",
+      "onlyInMemory": true,
+      "exitCode": 1,
+      "passed": 15,
+      "failed": 2,
+      "failedChecks": [
+        "resume {\"hiddenFrames\":3}",
+        "resume {\"pause\":true,\"hiddenFrames\":3}"
+      ]
+    },
+    {
+      "mutation": "delta-cap",
+      "onlyInMemory": true,
+      "exitCode": 1,
+      "passed": 16,
+      "failed": 1,
+      "failedChecks": [
+        "visible rAF stall is capped to 50ms"
+      ]
+    }
+  ]
+}

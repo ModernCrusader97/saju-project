@@ -1,0 +1,91 @@
+{
+  "basis": "db5179b1723b4b462868ce656968a9d2f355720c",
+  "branch": "fix/galaxy-background-resume-20261010",
+  "repository": "ModernCrusader97/saju-project",
+  "repositoryVisibility": "private",
+  "outcome": "No background elapsed-time defect reproduced. QA artifacts only; application source unchanged.",
+  "nodeVersion": "v24.19.0",
+  "validations": {
+    "clock": {
+      "passed": 17,
+      "failed": 0
+    },
+    "builtWebGL": {
+      "passed": 5,
+      "failed": 0,
+      "browser": "151.0.7922.173"
+    },
+    "negativeControls": {
+      "detected": 3,
+      "productionFilesChanged": false
+    },
+    "domRegression": {
+      "passed": 15,
+      "failed": 0
+    },
+    "galaxyBrowserRegression": {
+      "passed": 1,
+      "failed": 0,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ]
+    },
+    "type": {
+      "exitCode": 0
+    },
+    "build": {
+      "exitCode": 0
+    },
+    "newQaLint": {
+      "exitCode": 0
+    },
+    "existingRuntimeLint": {
+      "exitCode": 1,
+      "existingErrors": 6,
+      "existingWarnings": 4,
+      "unchanged": true
+    }
+  },
+  "scriptHashes": {
+    "scripts/qa/galaxy-background-clock.mjs": "a4d331cc6d7cc88e08d2ae942130777b846c1af046501ad83a0e619b957f870c",
+    "scripts/qa/galaxy-background-browser.mjs": "b0a3e916befe76bea5891b445ecfbcf5b96243a32cec10cb2e94a949e8628bf6",
+    "scripts/qa/galaxy-background-negative-controls.mjs": "6d545bfb619e79ee4b17e49f30c78f7104e8dad635e0f71e9f1fbf71da1ceb7d"
+  },
+  "sourceHashes": {
+    "components/planet/GalaxyCanvas.tsx": "674cd14bcc57aee27d89dea1826e66cb6a4dfb120c9797daf7e02d473f64b7ec",
+    "lib/planet/surface-math.ts": "6f785c406149941df100690d5e64404e1108a60ea46a79625c0fa76dc46af0f9",
+    "lib/planet/galaxy-helper.ts": "d6978b4f112c1c1ae9348b38d5dda3766a827c836a95095fcb701789c6e342a2"
+  },
+  "diagnostic": {
+    "diagnostic": "existing shared Vector3 anchor, independent of visibility",
+    "anchorObjectRetained": true,
+    "anchorMovedDistance": 0.022463983801961785,
+    "pausedForegroundPositionChanged": true,
+    "before": [
+      -0.699593065261,
+      0,
+      5.354490596036
+    ],
+    "after": [
+      -0.690682228471,
+      0,
+      5.355647305347
+    ]
+  },
+  "limits": [
+    "Synthetic clock, rAF and visibility events; native hidden-tab state is not emulated by this environment",
+    "Actual built Worker, disposable synthetic D1, Chromium/SwiftShader WebGL; no physical GPU/mobile tab suspension",
+    "Existing shared Vector3 orbit-anchor drift is a separate baseline diagnostic; paused comparison means equivalent frames, not globally frozen orbits"
+  ],
+  "prohibitedOperationsPerformed": {
+    "mainMerge": false,
+    "pullRequest": false,
+    "deployment": false,
+    "authenticationChanges": false,
+    "permissionChanges": false
+  },
+  "includedData": "Synthetic people and disposable local D1 only. No secrets, .env or user DB."
+}
