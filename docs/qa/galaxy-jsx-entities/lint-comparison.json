@@ -1,0 +1,24 @@
+{
+  "basis": "92b453514ee59c2b1231a4dfcdfea5b4a6ea0a33",
+  "scope": [
+    "components/planet/GalaxyCanvas.tsx",
+    "lib/planet/galaxy-helper.ts",
+    "lib/planet/surface-math.ts"
+  ],
+  "before": {
+    "errors": 6,
+    "warnings": 4,
+    "exitCode": 1
+  },
+  "after": {
+    "errors": 4,
+    "warnings": 4,
+    "exitCode": 1
+  },
+  "selectedRule": "react/no-unescaped-entities",
+  "selectedRuleBefore": 2,
+  "selectedRuleAfter": 0,
+  "errorsReduced": 2,
+  "remainingDiagnosticsByteIdentical": true,
+  "fullScopeLintGreen": false
+}

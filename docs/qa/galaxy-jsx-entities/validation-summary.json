@@ -1,0 +1,82 @@
+{
+  "repository": "ModernCrusader97/saju-project",
+  "visibilityVerifiedPrivate": true,
+  "basis": "92b453514ee59c2b1231a4dfcdfea5b4a6ea0a33",
+  "branch": "maint/galaxy-jsx-entities-20261010",
+  "remoteHeadsChecked": 20,
+  "existingFixFound": false,
+  "priorWorktreesChecked": 15,
+  "priorWorktreesCleanAtStart": true,
+  "productionChange": "Replace exactly two raw ASCII apostrophes in one JSX text node with &#39;. No rule suppression, handler, state, hook, material or motion changes.",
+  "lint": {
+    "beforeErrors": 6,
+    "afterErrors": 4,
+    "errorsRemoved": 2,
+    "beforeWarnings": 4,
+    "afterWarnings": 4,
+    "selectedRule": "react/no-unescaped-entities",
+    "selectedRuleAfter": 0,
+    "remainingDiagnosticsUnchanged": true,
+    "beforeExitCode": 1,
+    "afterExitCode": 1,
+    "fullScopePass": false
+  },
+  "typescriptEmit": {
+    "basis": "92b453514ee59c2b1231a4dfcdfea5b4a6ea0a33",
+    "file": "components/planet/GalaxyCanvas.tsx",
+    "singleJsxTextReplacement": true,
+    "renderedAsciiApostrophesPreserved": true,
+    "typescriptVersion": "5.9.3",
+    "compilerOptions": {
+      "module": "ESNext",
+      "jsx": "ReactJSX",
+      "target": "ES2022"
+    },
+    "sourceBeforeSha256": "aaa0ce4b6c079d4aef2de8d16c55f58697e5f424cf4834d84148a084bb9954cc",
+    "sourceAfterSha256": "9af47a752f6289c441814755f37ee6a14b80da52b0c3c49d2a69eefdc743da83",
+    "emittedBeforeSha256": "60d35c96bcd92a2e58e5c566b71b830b4c89f998d1834ae8df5171135b3b0ae3",
+    "emittedAfterSha256": "60d35c96bcd92a2e58e5c566b71b830b4c89f998d1834ae8df5171135b3b0ae3",
+    "entireComponentJavaScriptByteIdentical": true,
+    "diagnosticErrors": 0
+  },
+  "verification": {
+    "typeExitCode": 0,
+    "buildExitCode": 0,
+    "backgroundCPU": {
+      "passed": 17,
+      "failed": 0
+    },
+    "backgroundWebGL": {
+      "passed": 5,
+      "failed": 0
+    },
+    "dom": {
+      "passed": 15,
+      "failed": 0
+    },
+    "galaxyBrowser": {
+      "passed": 1,
+      "failed": 0,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ]
+    }
+  },
+  "projectWideTests": "No general test script exists; relevant existing Node and browser checks executed directly.",
+  "buildNotes": "Build exited zero with existing chunk-size and vinext route-classification notices.",
+  "evidence": "Lint classification retains exact diagnostics; comparison asserts all remaining messages and positions unchanged. Full emitted component is byte identical.",
+  "includedData": "Synthetic QA identities only; no secrets, .env, DB, node_modules, build outputs or profile files staged.",
+  "operations": {
+    "mainMerge": false,
+    "existingBranchWrite": false,
+    "pullRequest": false,
+    "deployment": false,
+    "authChange": false,
+    "paymentChange": false,
+    "permissionChange": false,
+    "forceGit": false
+  }
+}

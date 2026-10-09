@@ -1,0 +1,283 @@
+{
+  "basis": "92b453514ee59c2b1231a4dfcdfea5b4a6ea0a33",
+  "componentSourceSha256": "9af47a752f6289c441814755f37ee6a14b80da52b0c3c49d2a69eefdc743da83",
+  "backgroundCPU": {
+    "passed": 17,
+    "failed": 0,
+    "checks": [
+      {
+        "name": "hidden gap 1000ms matches foreground control",
+        "status": "PASS"
+      },
+      {
+        "name": "hidden gap 300000ms matches foreground control",
+        "status": "PASS"
+      },
+      {
+        "name": "hidden gap 86400000ms matches foreground control",
+        "status": "PASS"
+      },
+      {
+        "name": "resume {\"hiddenFrames\":3}",
+        "status": "PASS"
+      },
+      {
+        "name": "resume {\"speed\":3}",
+        "status": "PASS"
+      },
+      {
+        "name": "resume {\"pause\":true}",
+        "status": "PASS"
+      },
+      {
+        "name": "resume {\"pause\":true,\"hiddenFrames\":3}",
+        "status": "PASS"
+      },
+      {
+        "name": "resume {\"landing\":true}",
+        "status": "PASS"
+      },
+      {
+        "name": "resume {\"landing\":true,\"pause\":true}",
+        "status": "PASS"
+      },
+      {
+        "name": "resume {\"tracking\":true}",
+        "status": "PASS"
+      },
+      {
+        "name": "visible rAF stall is capped to 50ms",
+        "status": "PASS"
+      },
+      {
+        "name": "foreground speed and shader time use ordinary elapsed seconds",
+        "status": "PASS"
+      },
+      {
+        "name": "user pause time survives visibility and advances only after explicit play",
+        "status": "PASS"
+      },
+      {
+        "name": "reduced-motion initialization and visibility preserve zero simulation time",
+        "status": "PASS"
+      },
+      {
+        "name": "repeated hide/show cycles keep a single rAF chain",
+        "status": "PASS"
+      },
+      {
+        "name": "resize paths and unmount disposal remain functional",
+        "status": "PASS"
+      },
+      {
+        "name": "Strict Mode discards its first loop and cleans both renderer generations once",
+        "status": "PASS"
+      }
+    ],
+    "method": "real React component/source and Three CPU objects; synthetic clock/visibility; GPU/environment and Canvas2D boundary stubs",
+    "sourceHashes": {
+      "components/planet/GalaxyCanvas.tsx": "9af47a752f6289c441814755f37ee6a14b80da52b0c3c49d2a69eefdc743da83",
+      "lib/planet/surface-math.ts": "6f785c406149941df100690d5e64404e1108a60ea46a79625c0fa76dc46af0f9",
+      "lib/planet/galaxy-helper.ts": "d6978b4f112c1c1ae9348b38d5dda3766a827c836a95095fcb701789c6e342a2"
+    },
+    "anchorDiagnostic": {
+      "diagnostic": "existing shared Vector3 anchor, independent of visibility",
+      "anchorObjectRetained": true,
+      "anchorMovedDistance": 0,
+      "pausedForegroundPositionChanged": false,
+      "before": [
+        -0.704047758786,
+        0,
+        5.35390668142
+      ],
+      "after": [
+        -0.704047758786,
+        0,
+        5.35390668142
+      ]
+    }
+  },
+  "backgroundWebGL": {
+    "basis": "92b453514ee59c2b1231a4dfcdfea5b4a6ea0a33",
+    "browser": "151.0.7922.173",
+    "passed": 5,
+    "failed": 0,
+    "checks": [
+      {
+        "name": "built WebGL playing resume matches ordinary frames",
+        "status": "PASS"
+      },
+      {
+        "name": "built WebGL user pause resume matches ordinary frames",
+        "status": "PASS"
+      },
+      {
+        "name": "built reduced-motion remains visually static across long gap",
+        "status": "PASS"
+      },
+      {
+        "name": "built resize preserves drawing and one animation chain",
+        "status": "PASS"
+      },
+      {
+        "name": "browser errors and outbound requests remain empty",
+        "status": "PASS"
+      }
+    ],
+    "observations": [
+      {
+        "scenario": "playing resume",
+        "hiddenGapMs": 300000,
+        "control": {
+          "first": {
+            "rasterHash": "42c5fd8a637a4062f7520e4d7c2f0b152864e438dd8043edf3c73535678f4202",
+            "stateHash": "eaee03c181ea751d485ec96781acb4a733b5c48f58ee680d97f74d86608a4e24"
+          },
+          "after": {
+            "rasterHash": "358ea1fb1207abd09e6894aa6875c05733c2ea35016fc2b43aac85596c6b9675",
+            "stateHash": "627b25b66985baf70c8cab1cd3cea13d713881cd2907eeaa1cf412d32c198016"
+          }
+        },
+        "resumed": {
+          "first": {
+            "rasterHash": "42c5fd8a637a4062f7520e4d7c2f0b152864e438dd8043edf3c73535678f4202",
+            "stateHash": "eaee03c181ea751d485ec96781acb4a733b5c48f58ee680d97f74d86608a4e24"
+          },
+          "after": {
+            "rasterHash": "358ea1fb1207abd09e6894aa6875c05733c2ea35016fc2b43aac85596c6b9675",
+            "stateHash": "627b25b66985baf70c8cab1cd3cea13d713881cd2907eeaa1cf412d32c198016"
+          }
+        },
+        "matchingPixelsAndGPUState": true
+      },
+      {
+        "scenario": "paused resume",
+        "hiddenGapMs": 300000,
+        "control": {
+          "first": {
+            "rasterHash": "aa92f7755f028953f917542e6723fa09f628cfb973337de2316f7a730f15436d",
+            "stateHash": "175b44286aae7ec486298f2f591fb48e6e67e252a38c960005cd9492ca5d5dcc"
+          },
+          "after": {
+            "rasterHash": "aa92f7755f028953f917542e6723fa09f628cfb973337de2316f7a730f15436d",
+            "stateHash": "175b44286aae7ec486298f2f591fb48e6e67e252a38c960005cd9492ca5d5dcc"
+          }
+        },
+        "resumed": {
+          "first": {
+            "rasterHash": "aa92f7755f028953f917542e6723fa09f628cfb973337de2316f7a730f15436d",
+            "stateHash": "175b44286aae7ec486298f2f591fb48e6e67e252a38c960005cd9492ca5d5dcc"
+          },
+          "after": {
+            "rasterHash": "aa92f7755f028953f917542e6723fa09f628cfb973337de2316f7a730f15436d",
+            "stateHash": "175b44286aae7ec486298f2f591fb48e6e67e252a38c960005cd9492ca5d5dcc"
+          }
+        },
+        "matchingPixelsAndGPUState": true
+      },
+      {
+        "scenario": "reduced motion",
+        "hiddenGapMs": 86400000,
+        "matchingPixels": true
+      },
+      {
+        "scenario": "resize",
+        "viewportWidth": 320,
+        "overflow": 0,
+        "width": 349,
+        "displayWidth": 349,
+        "height": 498,
+        "displayHeight": 498,
+        "state": "ready"
+      },
+      {
+        "scenario": "resize",
+        "viewportWidth": 768,
+        "overflow": 0,
+        "width": 349,
+        "displayWidth": 349,
+        "height": 498,
+        "displayHeight": 498,
+        "state": "ready"
+      },
+      {
+        "scenario": "resize",
+        "viewportWidth": 1440,
+        "overflow": 0,
+        "width": 349,
+        "displayWidth": 349,
+        "height": 498,
+        "displayHeight": 498,
+        "state": "ready"
+      }
+    ],
+    "errors": [],
+    "outbound": [],
+    "limits": [
+      "Synthetic clock, rAF and visibility events; native hidden-tab state is not emulated by this environment",
+      "Actual built Worker, disposable synthetic D1, Chromium/SwiftShader WebGL; no physical GPU/mobile tab suspension",
+      "Existing shared Vector3 orbit-anchor drift is a separate baseline diagnostic; paused comparison means equivalent frames, not globally frozen orbits"
+    ]
+  },
+  "galaxyBrowser": {
+    "status": "PASS",
+    "checks": [
+      {
+        "name": "galaxy form keeps same birth; saved galaxy tab; readable cards and planet selection",
+        "ms": 27834
+      }
+    ],
+    "errors": [],
+    "outbound": [],
+    "metrics": [
+      {
+        "scene": "galaxy",
+        "width": 1440,
+        "cls": 0,
+        "lcp": 888
+      },
+      {
+        "scene": "galaxy",
+        "width": 768,
+        "cls": 0.45329546461483927,
+        "lcp": 888
+      },
+      {
+        "scene": "galaxy",
+        "width": 390,
+        "cls": 0.45329546461483927,
+        "lcp": 888
+      },
+      {
+        "scene": "galaxy",
+        "width": 320,
+        "cls": 0.45329546461483927,
+        "lcp": 888
+      }
+    ],
+    "limits": [
+      "Desktop Chrome with SwiftShader; no physical mobile GPU or touch device",
+      "Synthetic local identity and disposable D1; hosted login not exercised",
+      "Lab LCP/CLS only; no field INP or production Web Vitals claim",
+      "No deployment or audience changes"
+    ]
+  },
+  "dom": {
+    "passed": 15,
+    "failed": 0,
+    "exitCode": 0,
+    "tapSha256": "c75e384cfac27f7b380f9be9e3b2994d1865e5b67371eca62f0cecd2e5793852"
+  },
+  "unchangedHarnessSha256": {
+    "scripts/qa/galaxy-background-clock.mjs": "a4d331cc6d7cc88e08d2ae942130777b846c1af046501ad83a0e619b957f870c",
+    "scripts/qa/galaxy-background-browser.mjs": "b0a3e916befe76bea5891b445ecfbcf5b96243a32cec10cb2e94a949e8628bf6",
+    "scripts/qa/universe-browser.mjs": "148c4615935d9f4c4a0769b7c5215ec6f1d403bf8ae5936d6e37952ce484e418",
+    "scripts/qa/guin-map-loading-dom.mjs": "428984d3ad015971fe841942066d21c77c0b3c513731bf67dbf5027ea668f6c7",
+    "scripts/qa/daily-rollover-dom.mjs": "edf385034972e347a7359621e48d47a379d473765ab83c56ffe6979330e1b1a1"
+  },
+  "limits": [
+    "Existing harnesses, actual built Worker, synthetic identity and disposable local D1.",
+    "CPU GPU boundary is stubbed. Browser uses actual Chromium/SwiftShader WebGL with synthetic timing.",
+    "No physical GPU/mobile OS tab suspension or hosted login; the prior long orbit simulation was not repeated for this text-only change."
+  ]
+}

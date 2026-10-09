@@ -1,0 +1,267 @@
+{
+  "repository": "ModernCrusader97/saju-project",
+  "basis": "92b453514ee59c2b1231a4dfcdfea5b4a6ea0a33",
+  "headRefsChecked": 20,
+  "heads": [
+    {
+      "sha": "07a4d9267468c1a2de1e3a6f31a4397804f165b6",
+      "ref": "refs/heads/archive/saju-cloud-environment-20261009",
+      "sha256": "674cd14bcc57aee27d89dea1826e66cb6a4dfb120c9797daf7e02d473f64b7ec",
+      "rawApostrophePairPresent": true,
+      "snippets": [
+        {
+          "line": 1015,
+          "text": "하단의 <strong>'체험용 인연 행성 추가'</strong>를 누르면 4대 나선팔을 따라 인연별들이 즉시 함께 공전합니다."
+        }
+      ]
+    },
+    {
+      "sha": "956fe6e2a7f3de3a0aabe3c59d9d5db3795c7123",
+      "ref": "refs/heads/archive/saju-local-authoring-20261009",
+      "sha256": "3f6ea2f9602cdde17eea306f09dbdc87b82d933476a1c73a41e97f460bc8bfc3",
+      "rawApostrophePairPresent": true,
+      "snippets": [
+        {
+          "line": 1096,
+          "text": "하단의 <strong>'체험용 인연 행성 추가'</strong>를 누르면 4대 나선팔을 따라 인연별들이 즉시 함께 공전합니다."
+        }
+      ]
+    },
+    {
+      "sha": "a5a76df53d628191ecdbbee71626d8dc4480a481",
+      "ref": "refs/heads/feat/jade-spirit-universe",
+      "sha256": "674cd14bcc57aee27d89dea1826e66cb6a4dfb120c9797daf7e02d473f64b7ec",
+      "rawApostrophePairPresent": true,
+      "snippets": [
+        {
+          "line": 1015,
+          "text": "하단의 <strong>'체험용 인연 행성 추가'</strong>를 누르면 4대 나선팔을 따라 인연별들이 즉시 함께 공전합니다."
+        }
+      ]
+    },
+    {
+      "sha": "40f0c9a4b66bcae1c222d33d99cc6f6963e2f573",
+      "ref": "refs/heads/fix/chat-recovery",
+      "sha256": "674cd14bcc57aee27d89dea1826e66cb6a4dfb120c9797daf7e02d473f64b7ec",
+      "rawApostrophePairPresent": true,
+      "snippets": [
+        {
+          "line": 1015,
+          "text": "하단의 <strong>'체험용 인연 행성 추가'</strong>를 누르면 4대 나선팔을 따라 인연별들이 즉시 함께 공전합니다."
+        }
+      ]
+    },
+    {
+      "sha": "6f7f970878c39b1bae8148a47292c715a9946dc7",
+      "ref": "refs/heads/fix/detail-result-state-20261010",
+      "sha256": "674cd14bcc57aee27d89dea1826e66cb6a4dfb120c9797daf7e02d473f64b7ec",
+      "rawApostrophePairPresent": true,
+      "snippets": [
+        {
+          "line": 1015,
+          "text": "하단의 <strong>'체험용 인연 행성 추가'</strong>를 누르면 4대 나선팔을 따라 인연별들이 즉시 함께 공전합니다."
+        }
+      ]
+    },
+    {
+      "sha": "b4459dd9fb74af57f3cfeed9bfb630393096f448",
+      "ref": "refs/heads/fix/galaxy-background-resume-20261010",
+      "sha256": "674cd14bcc57aee27d89dea1826e66cb6a4dfb120c9797daf7e02d473f64b7ec",
+      "rawApostrophePairPresent": true,
+      "snippets": [
+        {
+          "line": 1015,
+          "text": "하단의 <strong>'체험용 인연 행성 추가'</strong>를 누르면 4대 나선팔을 따라 인연별들이 즉시 함께 공전합니다."
+        }
+      ]
+    },
+    {
+      "sha": "831d328889759f722b1e5b2214ace906b0483c0c",
+      "ref": "refs/heads/fix/galaxy-day-calendar-20261010",
+      "sha256": "674cd14bcc57aee27d89dea1826e66cb6a4dfb120c9797daf7e02d473f64b7ec",
+      "rawApostrophePairPresent": true,
+      "snippets": [
+        {
+          "line": 1015,
+          "text": "하단의 <strong>'체험용 인연 행성 추가'</strong>를 누르면 4대 나선팔을 따라 인연별들이 즉시 함께 공전합니다."
+        }
+      ]
+    },
+    {
+      "sha": "db5179b1723b4b462868ce656968a9d2f355720c",
+      "ref": "refs/heads/fix/galaxy-form-ime-20261010",
+      "sha256": "674cd14bcc57aee27d89dea1826e66cb6a4dfb120c9797daf7e02d473f64b7ec",
+      "rawApostrophePairPresent": true,
+      "snippets": [
+        {
+          "line": 1015,
+          "text": "하단의 <strong>'체험용 인연 행성 추가'</strong>를 누르면 4대 나선팔을 따라 인연별들이 즉시 함께 공전합니다."
+        }
+      ]
+    },
+    {
+      "sha": "8b3f1cb0c1c77c06a2fd0084753222f6d518126b",
+      "ref": "refs/heads/fix/galaxy-form-keyboard-20261010",
+      "sha256": "674cd14bcc57aee27d89dea1826e66cb6a4dfb120c9797daf7e02d473f64b7ec",
+      "rawApostrophePairPresent": true,
+      "snippets": [
+        {
+          "line": 1015,
+          "text": "하단의 <strong>'체험용 인연 행성 추가'</strong>를 누르면 4대 나선팔을 따라 인연별들이 즉시 함께 공전합니다."
+        }
+      ]
+    },
+    {
+      "sha": "caf265e529edd689f1ff7d33ed5e573cb397cc68",
+      "ref": "refs/heads/fix/galaxy-name-binding-20261010",
+      "sha256": "674cd14bcc57aee27d89dea1826e66cb6a4dfb120c9797daf7e02d473f64b7ec",
+      "rawApostrophePairPresent": true,
+      "snippets": [
+        {
+          "line": 1015,
+          "text": "하단의 <strong>'체험용 인연 행성 추가'</strong>를 누르면 4대 나선팔을 따라 인연별들이 즉시 함께 공전합니다."
+        }
+      ]
+    },
+    {
+      "sha": "92b453514ee59c2b1231a4dfcdfea5b4a6ea0a33",
+      "ref": "refs/heads/fix/galaxy-orbit-anchor-20261010",
+      "sha256": "aaa0ce4b6c079d4aef2de8d16c55f58697e5f424cf4834d84148a084bb9954cc",
+      "rawApostrophePairPresent": true,
+      "snippets": [
+        {
+          "line": 1016,
+          "text": "하단의 <strong>'체험용 인연 행성 추가'</strong>를 누르면 4대 나선팔을 따라 인연별들이 즉시 함께 공전합니다."
+        }
+      ]
+    },
+    {
+      "sha": "b36e98d989a36d098bb3668f89f3d35a8dc1cfa9",
+      "ref": "refs/heads/fix/name-normalization-idempotence-20261010",
+      "sha256": "674cd14bcc57aee27d89dea1826e66cb6a4dfb120c9797daf7e02d473f64b7ec",
+      "rawApostrophePairPresent": true,
+      "snippets": [
+        {
+          "line": 1015,
+          "text": "하단의 <strong>'체험용 인연 행성 추가'</strong>를 누르면 4대 나선팔을 따라 인연별들이 즉시 함께 공전합니다."
+        }
+      ]
+    },
+    {
+      "sha": "d84d77659faa7942c903f14885f3a7eaa47c2801",
+      "ref": "refs/heads/fix/name-utf16-boundary-20261010",
+      "sha256": "674cd14bcc57aee27d89dea1826e66cb6a4dfb120c9797daf7e02d473f64b7ec",
+      "rawApostrophePairPresent": true,
+      "snippets": [
+        {
+          "line": 1015,
+          "text": "하단의 <strong>'체험용 인연 행성 추가'</strong>를 누르면 4대 나선팔을 따라 인연별들이 즉시 함께 공전합니다."
+        }
+      ]
+    },
+    {
+      "sha": "073a71ec2120537332c489cec8b3ae07903ce5a6",
+      "ref": "refs/heads/fix/passport-title-fit-20261010",
+      "sha256": "674cd14bcc57aee27d89dea1826e66cb6a4dfb120c9797daf7e02d473f64b7ec",
+      "rawApostrophePairPresent": true,
+      "snippets": [
+        {
+          "line": 1015,
+          "text": "하단의 <strong>'체험용 인연 행성 추가'</strong>를 누르면 4대 나선팔을 따라 인연별들이 즉시 함께 공전합니다."
+        }
+      ]
+    },
+    {
+      "sha": "2e2d82b05f87b39ff8057ae914e8dfa01100a974",
+      "ref": "refs/heads/main",
+      "sha256": "3f6ea2f9602cdde17eea306f09dbdc87b82d933476a1c73a41e97f460bc8bfc3",
+      "rawApostrophePairPresent": true,
+      "snippets": [
+        {
+          "line": 1096,
+          "text": "하단의 <strong>'체험용 인연 행성 추가'</strong>를 누르면 4대 나선팔을 따라 인연별들이 즉시 함께 공전합니다."
+        }
+      ]
+    },
+    {
+      "sha": "43e2d8dc6efe1654641e639397f37d0ea44f525a",
+      "ref": "refs/heads/maint/guin-map-loading-20261009",
+      "sha256": "674cd14bcc57aee27d89dea1826e66cb6a4dfb120c9797daf7e02d473f64b7ec",
+      "rawApostrophePairPresent": true,
+      "snippets": [
+        {
+          "line": 1015,
+          "text": "하단의 <strong>'체험용 인연 행성 추가'</strong>를 누르면 4대 나선팔을 따라 인연별들이 즉시 함께 공전합니다."
+        }
+      ]
+    },
+    {
+      "sha": "90b92db056b1fa9728ae5da3d232c22a28540e94",
+      "ref": "refs/heads/perf/saved-archive-summary",
+      "sha256": "674cd14bcc57aee27d89dea1826e66cb6a4dfb120c9797daf7e02d473f64b7ec",
+      "rawApostrophePairPresent": true,
+      "snippets": [
+        {
+          "line": 1015,
+          "text": "하단의 <strong>'체험용 인연 행성 추가'</strong>를 누르면 4대 나선팔을 따라 인연별들이 즉시 함께 공전합니다."
+        }
+      ]
+    },
+    {
+      "sha": "c7648b7ac3f8b18c3ac08c4c12931276bb92aee4",
+      "ref": "refs/heads/qa/map-name-forms-20261010",
+      "sha256": "674cd14bcc57aee27d89dea1826e66cb6a4dfb120c9797daf7e02d473f64b7ec",
+      "rawApostrophePairPresent": true,
+      "snippets": [
+        {
+          "line": 1015,
+          "text": "하단의 <strong>'체험용 인연 행성 추가'</strong>를 누르면 4대 나선팔을 따라 인연별들이 즉시 함께 공전합니다."
+        }
+      ]
+    },
+    {
+      "sha": "23a067e2391ea033e5d507cf7b147b8794ce0316",
+      "ref": "refs/heads/rebuild/mobile-home-20261010",
+      "sha256": "674cd14bcc57aee27d89dea1826e66cb6a4dfb120c9797daf7e02d473f64b7ec",
+      "rawApostrophePairPresent": true,
+      "snippets": [
+        {
+          "line": 1015,
+          "text": "하단의 <strong>'체험용 인연 행성 추가'</strong>를 누르면 4대 나선팔을 따라 인연별들이 즉시 함께 공전합니다."
+        }
+      ]
+    },
+    {
+      "sha": "de85ce2ed7f9c655f532d9a8a16be8855e6dd661",
+      "ref": "refs/heads/rebuild/ten-stem-materials-20261009",
+      "sha256": "674cd14bcc57aee27d89dea1826e66cb6a4dfb120c9797daf7e02d473f64b7ec",
+      "rawApostrophePairPresent": true,
+      "snippets": [
+        {
+          "line": 1015,
+          "text": "하단의 <strong>'체험용 인연 행성 추가'</strong>를 누르면 4대 나선팔을 따라 인연별들이 즉시 함께 공전합니다."
+        }
+      ]
+    }
+  ],
+  "reachableGalaxyHistory": [
+    {
+      "sha": "92b453514ee59c2b1231a4dfcdfea5b4a6ea0a33",
+      "rawApostrophePairPresent": true,
+      "sha256": "aaa0ce4b6c079d4aef2de8d16c55f58697e5f424cf4834d84148a084bb9954cc"
+    },
+    {
+      "sha": "0caa08e9e80dd82f3cd78e9231e71e3972c32ed0",
+      "rawApostrophePairPresent": true,
+      "sha256": "674cd14bcc57aee27d89dea1826e66cb6a4dfb120c9797daf7e02d473f64b7ec"
+    },
+    {
+      "sha": "9273191bf0630b45a2373460a36dd75648087e40",
+      "rawApostrophePairPresent": true,
+      "sha256": "3f6ea2f9602cdde17eea306f09dbdc87b82d933476a1c73a41e97f460bc8bfc3"
+    }
+  ],
+  "allHeadsAndHistoryStillHaveRawApostrophes": true,
+  "reusableExistingFixFound": false,
+  "trackedWorkspaceInstructions": []
+}

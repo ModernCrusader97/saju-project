@@ -1,0 +1,115 @@
+{
+  "basis": "92b453514ee59c2b1231a4dfcdfea5b4a6ea0a33",
+  "scope": [
+    "components/planet/GalaxyCanvas.tsx",
+    "lib/planet/galaxy-helper.ts",
+    "lib/planet/surface-math.ts"
+  ],
+  "errors": 6,
+  "warnings": 4,
+  "entries": [
+    {
+      "file": "components/planet/GalaxyCanvas.tsx",
+      "line": 139,
+      "column": 9,
+      "severity": "warning",
+      "rule": "@typescript-eslint/no-unused-vars",
+      "cause": "useRef 결과를 prevMouse에 할당한 뒤 사용하지 않음",
+      "decision": "경고이며 이번 선택 오류 종류가 아님.",
+      "message": "'prevMouse' is assigned a value but never used."
+    },
+    {
+      "file": "components/planet/GalaxyCanvas.tsx",
+      "line": 195,
+      "column": 5,
+      "severity": "error",
+      "rule": "react-hooks/immutability",
+      "cause": "effect의 updateCameraPosition 참조가 해당 const 선언보다 앞에 있음",
+      "decision": "선언 순서와 closure 사용을 별도로 검증해야 함. 이번 문구 수정에서 제외.",
+      "message": "Error: Cannot access variable before it is declared\n\n`updateCameraPosition` is accessed before it is declared, which prevents the earlier access from updating when this value changes over time.\n\n/workspace/saju-galaxy-jsx-lint/components/planet/GalaxyCanvas.tsx:195:5\n  193 |     const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1200);\n  194 |     cameraRef.current = camera;\n> 195 |     updateCameraPosition();\n      |     ^^^^^^^^^^^^^^^^^^^^ `updateCameraPosition` accessed before it is declared\n  196 |\n  197 |     let renderer: THREE.WebGLRenderer;\n  198 |     try {\n\n/workspace/saju-galaxy-jsx-lint/components/planet/GalaxyCanvas.tsx:474:3\n  472 |   }, []);\n  473 |\n> 474 |   const updateCameraPosition = () => {\n      |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 475 |     if (!cameraRef.current) return;\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 476 |     const { theta, phi, radius } = cameraAngle.current;\n      …\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 485 |     cameraRef.current.lookAt(currentLookAt.current);\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 486 |   };\n      | ^^^^^ `updateCameraPosition` is declared here\n  487 |\n  488 |   const startTrackingPlanet = useCallback((personId: string, isOwner: boolean) => {\n  489 |     trackedPlanetIdRef.current = personId;"
+    },
+    {
+      "file": "components/planet/GalaxyCanvas.tsx",
+      "line": 206,
+      "column": 7,
+      "severity": "error",
+      "rule": "react-hooks/set-state-in-effect",
+      "cause": "WebGL 생성 실패 catch에서 setGraphicsError 동기 호출",
+      "decision": "fallback 갱신 시점 및 렌더 정책 검토가 필요. 이번 수정에서 제외.",
+      "message": "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\n/workspace/saju-galaxy-jsx-lint/components/planet/GalaxyCanvas.tsx:206:7\n  204 |     });\n  205 |     } catch {\n> 206 |       setGraphicsError(\"3D 화면을 사용할 수 없어요. WebGL을 지원하는 브라우저에서 다시 열어주세요.\");\n      |       ^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect\n  207 |       return;\n  208 |     }\n  209 |     let shaderFailed = false;"
+    },
+    {
+      "file": "components/planet/GalaxyCanvas.tsx",
+      "line": 298,
+      "column": 13,
+      "severity": "error",
+      "rule": "react-hooks/immutability",
+      "cause": "pointer callback의 startTrackingPlanet 참조가 해당 useCallback 선언보다 앞에 있음",
+      "decision": "선언 순서와 closure 사용을 별도로 검증해야 함. 이번 문구 수정에서 제외.",
+      "message": "Error: Cannot access variable before it is declared\n\n`startTrackingPlanet` is accessed before it is declared, which prevents the earlier access from updating when this value changes over time.\n\n/workspace/saju-galaxy-jsx-lint/components/planet/GalaxyCanvas.tsx:298:13\n  296 |\n  297 |             // 실시간 궤도 추적 락온\n> 298 |             startTrackingPlanet(val.node.person.id, val.node.isOwner);\n      |             ^^^^^^^^^^^^^^^^^^^ `startTrackingPlanet` accessed before it is declared\n  299 |           }\n  300 |         });\n  301 |       }\n\n/workspace/saju-galaxy-jsx-lint/components/planet/GalaxyCanvas.tsx:488:3\n  486 |   };\n  487 |\n> 488 |   const startTrackingPlanet = useCallback((personId: string, isOwner: boolean) => {\n      |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 489 |     trackedPlanetIdRef.current = personId;\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 490 |     targetRadius.current = isOwner ? 6.2 : 5.2;\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 491 |     cameraAngle.current.phi = 0.44;\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 492 |     setFocusMode(isOwner ? \"owner\" : \"friend\");\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 493 |   }, []);\n      | ^^^^^^^^^^ `startTrackingPlanet` is declared here\n  494 |\n  495 |   const flyCameraToOverview = useCallback(() => {\n  496 |     trackedPlanetIdRef.current = null;"
+    },
+    {
+      "file": "components/planet/GalaxyCanvas.tsx",
+      "line": 453,
+      "column": 22,
+      "severity": "warning",
+      "rule": "react-hooks/exhaustive-deps",
+      "cause": "cleanup에서 변경 가능한 toastTimersRef.current를 직접 읽음",
+      "decision": "effect 재실행·구독·scene 재생성에 영향을 줄 수 있음. 이번 수정에서 제외.",
+      "message": "The ref value 'toastTimersRef.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'toastTimersRef.current' to a variable inside the effect, and use that variable in the cleanup function."
+    },
+    {
+      "file": "components/planet/GalaxyCanvas.tsx",
+      "line": 472,
+      "column": 6,
+      "severity": "warning",
+      "rule": "react-hooks/exhaustive-deps",
+      "cause": "초기 scene effect 의존성에 onSelectPerson 및 startTrackingPlanet 누락",
+      "decision": "effect 재실행·구독·scene 재생성에 영향을 줄 수 있음. 이번 수정에서 제외.",
+      "message": "React Hook useEffect has missing dependencies: 'onSelectPerson' and 'startTrackingPlanet'. Either include them or remove the dependency array. If 'onSelectPerson' changes too often, find the parent component that defines it and wrap that definition in useCallback."
+    },
+    {
+      "file": "components/planet/GalaxyCanvas.tsx",
+      "line": 488,
+      "column": 43,
+      "severity": "error",
+      "rule": "react-hooks/preserve-manual-memoization",
+      "cause": "startTrackingPlanet의 수동 useCallback 보존을 Compiler가 확인하지 못함",
+      "decision": "effect 참조와 memoization 정책의 관계 검토가 필요. 이번 수정에서 제외.",
+      "message": "Compilation Skipped: Existing memoization could not be preserved\n\nReact Compiler has skipped optimizing this component because the existing manual memoization could not be preserved. This value was memoized in source but not in compilation output.\n\n/workspace/saju-galaxy-jsx-lint/components/planet/GalaxyCanvas.tsx:488:43\n  486 |   };\n  487 |\n> 488 |   const startTrackingPlanet = useCallback((personId: string, isOwner: boolean) => {\n      |                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 489 |     trackedPlanetIdRef.current = personId;\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 490 |     targetRadius.current = isOwner ? 6.2 : 5.2;\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 491 |     cameraAngle.current.phi = 0.44;\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 492 |     setFocusMode(isOwner ? \"owner\" : \"friend\");\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 493 |   }, []);\n      | ^^^^ Could not preserve existing memoization\n  494 |\n  495 |   const flyCameraToOverview = useCallback(() => {\n  496 |     trackedPlanetIdRef.current = null;"
+    },
+    {
+      "file": "components/planet/GalaxyCanvas.tsx",
+      "line": 730,
+      "column": 6,
+      "severity": "warning",
+      "rule": "react-hooks/exhaustive-deps",
+      "cause": "행성 재구성 effect 의존성에 selectedPersonId 및 startTrackingPlanet 누락",
+      "decision": "effect 재실행·구독·scene 재생성에 영향을 줄 수 있음. 이번 수정에서 제외.",
+      "message": "React Hook useEffect has missing dependencies: 'selectedPersonId' and 'startTrackingPlanet'. Either include them or remove the dependency array."
+    },
+    {
+      "file": "components/planet/GalaxyCanvas.tsx",
+      "line": 1016,
+      "column": 25,
+      "severity": "error",
+      "rule": "react/no-unescaped-entities",
+      "cause": "JSX 문구의 원시 ASCII 작은따옴표 두 개",
+      "decision": "같은 ASCII 작은따옴표로 디코딩되는 &#39; 사용. 동작 보존 가능.",
+      "message": "`'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`."
+    },
+    {
+      "file": "components/planet/GalaxyCanvas.tsx",
+      "line": 1016,
+      "column": 38,
+      "severity": "error",
+      "rule": "react/no-unescaped-entities",
+      "cause": "JSX 문구의 원시 ASCII 작은따옴표 두 개",
+      "decision": "같은 ASCII 작은따옴표로 디코딩되는 &#39; 사용. 동작 보존 가능.",
+      "message": "`'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`."
+    }
+  ],
+  "selectedRule": "react/no-unescaped-entities",
+  "selectedErrorCount": 2,
+  "otherFilesClean": true
+}

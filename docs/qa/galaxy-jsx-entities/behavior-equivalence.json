@@ -1,0 +1,18 @@
+{
+  "basis": "92b453514ee59c2b1231a4dfcdfea5b4a6ea0a33",
+  "file": "components/planet/GalaxyCanvas.tsx",
+  "singleJsxTextReplacement": true,
+  "renderedAsciiApostrophesPreserved": true,
+  "typescriptVersion": "5.9.3",
+  "compilerOptions": {
+    "module": "ESNext",
+    "jsx": "ReactJSX",
+    "target": "ES2022"
+  },
+  "sourceBeforeSha256": "aaa0ce4b6c079d4aef2de8d16c55f58697e5f424cf4834d84148a084bb9954cc",
+  "sourceAfterSha256": "9af47a752f6289c441814755f37ee6a14b80da52b0c3c49d2a69eefdc743da83",
+  "emittedBeforeSha256": "60d35c96bcd92a2e58e5c566b71b830b4c89f998d1834ae8df5171135b3b0ae3",
+  "emittedAfterSha256": "60d35c96bcd92a2e58e5c566b71b830b4c89f998d1834ae8df5171135b3b0ae3",
+  "entireComponentJavaScriptByteIdentical": true,
+  "diagnosticErrors": 0
+}

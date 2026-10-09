@@ -1013,7 +1013,7 @@ export default function GalaxyCanvas({
             은하 나선팔에 인연 행성을 추가해보세요
           </p>
           <p className="text-[10.5px] text-white/75 mt-1 leading-relaxed">
-            하단의 <strong>'체험용 인연 행성 추가'</strong>를 누르면 4대 나선팔을 따라 인연별들이 즉시 함께 공전합니다.
+            하단의 <strong>&#39;체험용 인연 행성 추가&#39;</strong>를 누르면 4대 나선팔을 따라 인연별들이 즉시 함께 공전합니다.
           </p>
         </div>
       )}
