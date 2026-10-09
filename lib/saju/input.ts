@@ -61,7 +61,14 @@ export function parseSolarDate(year: unknown, month: unknown, day: unknown) {
 
 export function parseSajuInput(value: unknown): SajuInput {
   const input = parseInputObject(value);
-  const name = typeof input.name === "string" ? input.name.trim().slice(0, 50) : "";
+  const trimmedName = typeof input.name === "string" ? input.name.trim() : "";
+  let name = trimmedName.slice(0, 50);
+  const lastUnit = name.charCodeAt(49);
+  const nextUnit = trimmedName.charCodeAt(50);
+  // Undo one unit when the existing 50-unit cut splits a surrogate pair.
+  if (lastUnit >= 0xd800 && lastUnit <= 0xdbff && nextUnit >= 0xdc00 && nextUnit <= 0xdfff) {
+    name = name.slice(0, -1);
+  }
   if (!name) throw new SajuInputError("이름을 입력해주세요.");
 
   const gender = input.gender === undefined ? "male" : input.gender;
