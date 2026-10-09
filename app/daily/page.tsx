@@ -1,9 +1,10 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Header from "@/components/Header";
 import { Flame, Sparkles, Sun, Moon, Coffee, ShieldCheck } from "lucide-react";
 import { getDailyPillar } from "@/lib/saju/manse";
+import { useLocalDate } from "@/lib/use-local-date";
 
 const ELEMENT_DATA: Record<
   string,
@@ -65,8 +66,12 @@ const ELEMENT_DATA: Record<
 };
 
 export default function DailyPage() {
-  const [mounted, setMounted] = useState(false);
-  const [dateInfo, setDateInfo] = useState({
+  const localDate = useLocalDate();
+  const [year, month, day] = localDate.split("-").map(Number);
+  const dateInfo = localDate ? {
+    dateStr: `${year}년 ${month}월 ${day}일`,
+    dailyPillar: getDailyPillar(year, month, day),
+  } : {
     dateStr: "오늘의 해석",
     dailyPillar: {
       gan: "기",
@@ -77,21 +82,7 @@ export default function DailyPage() {
       elemKo: "토",
       name: "기해 (己亥)",
     },
-  });
-
-  useEffect(() => {
-    const today = new Date();
-    const y = today.getFullYear();
-    const m = today.getMonth() + 1;
-    const d = today.getDate();
-    const pillar = getDailyPillar(y, m, d);
-
-    setDateInfo({
-      dateStr: `${y}년 ${m}월 ${d}일`,
-      dailyPillar: pillar,
-    });
-    setMounted(true);
-  }, []);
+  };
 
   const elementInfo = ELEMENT_DATA[dateInfo.dailyPillar.element] || ELEMENT_DATA.earth;
 
