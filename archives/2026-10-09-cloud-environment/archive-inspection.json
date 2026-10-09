@@ -1,0 +1,3006 @@
+{
+  "individual_archives_and_models": [
+    {
+      "path": "saju-project/assets/source-reference/saju-b-clear-green050-20261006/SaJu_B_Jade_ClearGreen050_20261006.blend",
+      "bytes": 8643044,
+      "sha256": "cfc4361cd0dfad37e422dc3de87a44320af78d95187cf9b5af7af1762b000bd7",
+      "sensitive_pattern_classes": [],
+      "format": "blend",
+      "blend_header_verified": true,
+      "validation": "Preserved bytes; not opened in Blender"
+    },
+    {
+      "path": "saju-project/assets/source-reference/saju-b-clear-green050-20261006/SaJu_B_Jade_ClearGreen050_20261006.glb",
+      "bytes": 3530976,
+      "sha256": "e0cd0cd29e610173ad1e783a0e37672b4563884123001440b3fc7b638111a9fe",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 3530976,
+        "mesh_count": 8,
+        "material_count": 3,
+        "animation_count": 1,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "saju-project/assets/source-reference/saju-b-evolving-light-v002/SaJu_Jade_Evolving_Light_v002_Final.blend",
+      "bytes": 11011189,
+      "sha256": "e1ad952239b05064e265d6317383a20cf2182a12ab3e3731193f19e2674507c4",
+      "sensitive_pattern_classes": [],
+      "format": "blend",
+      "blend_header_verified": true,
+      "validation": "Preserved bytes; not opened in Blender"
+    },
+    {
+      "path": "saju-project/assets/source-reference/saju-b-evolving-light-v002/reference/SaJu_Jade_Approved_Static_Material.glb",
+      "bytes": 4293332,
+      "sha256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 4293332,
+        "mesh_count": 8,
+        "material_count": 3,
+        "animation_count": 1,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "saju-project/assets/source-reference/saju-b-green-emission-separated-v001/SaJu_Jade_GreenEmission_Separated_v001.blend",
+      "bytes": 10886965,
+      "sha256": "989921a8e85b36d5215f61882fa54938d9a588e9f5e387a37bd40820446b337f",
+      "sensitive_pattern_classes": [],
+      "format": "blend",
+      "blend_header_verified": true,
+      "validation": "Preserved bytes; not opened in Blender"
+    },
+    {
+      "path": "saju-project/assets/source-reference/saju-b-green-emission-separated-v001/SaJu_Jade_GreenEmission_Separated_v001.glb",
+      "bytes": 4293332,
+      "sha256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 4293332,
+        "mesh_count": 8,
+        "material_count": 3,
+        "animation_count": 1,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "saju-project/assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/SaJu_B_Jade_Character_Study.glb",
+      "bytes": 3610460,
+      "sha256": "342485a2f1bae6503ee87b412558493b84f7fc7f40de49b3e23e5218bf80bcf9",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 3610460,
+        "mesh_count": 8,
+        "material_count": 3,
+        "animation_count": 1,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "saju-project/assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/SaJu_B_Jade_Character_Study_Native.blend",
+      "bytes": 8722368,
+      "sha256": "7ef742eeea82ac4e4fb42f3a57db9c3d0125fd2c332944e251f413ddef55251b",
+      "sensitive_pattern_classes": [],
+      "format": "blend",
+      "blend_header_verified": true,
+      "validation": "Preserved bytes; not opened in Blender"
+    },
+    {
+      "path": "saju-project/assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/source/candidate_5.blend",
+      "bytes": 2165756,
+      "sha256": "65e637c9d635d0cff58c82a8094826c218ddb7e005943cf066dd3a69ef33ecc7",
+      "sensitive_pattern_classes": [],
+      "format": "blend",
+      "blend_header_verified": true,
+      "validation": "Preserved bytes; not opened in Blender"
+    },
+    {
+      "path": "saju-project/assets/source-reference/saju-b-moving-light-v001/SaJu_Jade_Moving_Green_Light_v001.blend",
+      "bytes": 10901917,
+      "sha256": "ea9fcc1b6c258edf2d7564ceb00b21358d9bb6cc7844d17b2dfd1d84289463ca",
+      "sensitive_pattern_classes": [],
+      "format": "blend",
+      "blend_header_verified": true,
+      "validation": "Preserved bytes; not opened in Blender"
+    },
+    {
+      "path": "saju-project/assets/source-reference/saju-b-moving-light-v001/reference/SaJu_Jade_Approved_Static_Material.glb",
+      "bytes": 4293332,
+      "sha256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 4293332,
+        "mesh_count": 8,
+        "material_count": 3,
+        "animation_count": 1,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "saju-project/preservation-archives/porcelain-hero-blink-v1.glb.gz",
+      "bytes": 10310913,
+      "sha256": "09f11f913f4853ea2050a007618ec607e7a6e4350403f7e4bdd91a68e542f3a1",
+      "sensitive_pattern_classes": [],
+      "format": "gzip",
+      "uncompressed_bytes": 13700928,
+      "uncompressed_sha256": "57d7ee5b3c4e0b99eaadefb8095283bed44986beaa5a91c096dd7a0c514bf9c2",
+      "crc_verified": true,
+      "glb": {
+        "version": 2,
+        "bytes": 13700928,
+        "mesh_count": 24,
+        "material_count": 6,
+        "animation_count": 0,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "saju-project/public/models/five-elements/earth-expression-v1.glb",
+      "bytes": 313216,
+      "sha256": "adddd4af80479125b9750b15f36a91fdc74ab618c2fc1f99b8c2018095c0289b",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 313216,
+        "mesh_count": 8,
+        "material_count": 3,
+        "animation_count": 0,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "saju-project/public/models/five-elements/earth-v1.glb",
+      "bytes": 207808,
+      "sha256": "8a5e1c2604ff66ad154f83fa6da67734c19c4fe696d2228d2808576637b8ebfa",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 207808,
+        "mesh_count": 8,
+        "material_count": 3,
+        "animation_count": 0,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "saju-project/public/models/five-elements/fire-expression-v1.glb",
+      "bytes": 300900,
+      "sha256": "c3d4c4d4a1cf606e323f0bf213dbf4b5eec7a3794905fce817465541d25d30c3",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 300900,
+        "mesh_count": 8,
+        "material_count": 3,
+        "animation_count": 0,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "saju-project/public/models/five-elements/fire-v1.glb",
+      "bytes": 195492,
+      "sha256": "f1c897e34302278ca4d78abbc787348acf8adb73de506c60b873ef3cf3062f93",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 195492,
+        "mesh_count": 8,
+        "material_count": 3,
+        "animation_count": 0,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "saju-project/public/models/five-elements/metal-expression-v1.glb",
+      "bytes": 179040,
+      "sha256": "d01210e7870b94c96a0c1be4f4c1b147d059f91803f8ac0b294bc94b66ba9145",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 179040,
+        "mesh_count": 8,
+        "material_count": 3,
+        "animation_count": 0,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "saju-project/public/models/five-elements/metal-v1.glb",
+      "bytes": 74064,
+      "sha256": "9ed143929120a5836005ffe707be9bbf6f20a94a6bfee1828455fdcceb27a023",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 74064,
+        "mesh_count": 8,
+        "material_count": 3,
+        "animation_count": 0,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "saju-project/public/models/five-elements/water-expression-v1.glb",
+      "bytes": 441872,
+      "sha256": "1a5139c2aa1bc78f67d6755f2da9e0ec2997f78b06c541a8898b348191ebb42b",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 441872,
+        "mesh_count": 8,
+        "material_count": 3,
+        "animation_count": 0,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "saju-project/public/models/five-elements/water-v1.glb",
+      "bytes": 184500,
+      "sha256": "8ceb8507485b78ea482dd765b32118734ce0cb17655998d2740e19f203bc1a0c",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 184500,
+        "mesh_count": 8,
+        "material_count": 3,
+        "animation_count": 0,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "saju-project/public/models/five-elements/wood-expression-v1.glb",
+      "bytes": 304336,
+      "sha256": "9988e332a4efaefbe2c4c2885e0a5c4842e6089e8c5d0f2b430e70d1a5930b2b",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 304336,
+        "mesh_count": 16,
+        "material_count": 5,
+        "animation_count": 0,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "saju-project/public/models/five-elements/wood-v1.glb",
+      "bytes": 198948,
+      "sha256": "1bf696c798ca3c97e9125fa8866e8146895129cf0dadab19ec755c98255c3cf1",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 198948,
+        "mesh_count": 16,
+        "material_count": 5,
+        "animation_count": 0,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "saju-project/public/models/porcelain-hero-v1-lite.glb",
+      "bytes": 5504312,
+      "sha256": "22bd1b4d410db3d8dbfe5068f78ce12ef4fcdc759a46915541fa356501a62f6e",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 5504312,
+        "mesh_count": 6,
+        "material_count": 6,
+        "animation_count": 0,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "saju-project/public/models/porcelain-hero-v2.glb",
+      "bytes": 5951928,
+      "sha256": "8a21d20acf59a6e77105359f85a0a3275ea5fa0753a7b7533aaf47656ad8484b",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 5951928,
+        "mesh_count": 8,
+        "material_count": 6,
+        "animation_count": 0,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "scratch/saju-restore-verify-20261009/assets/source-reference/saju-b-clear-green050-20261006/SaJu_B_Jade_ClearGreen050_20261006.blend",
+      "bytes": 8643044,
+      "sha256": "cfc4361cd0dfad37e422dc3de87a44320af78d95187cf9b5af7af1762b000bd7",
+      "sensitive_pattern_classes": [],
+      "format": "blend",
+      "blend_header_verified": true,
+      "validation": "Preserved bytes; not opened in Blender"
+    },
+    {
+      "path": "scratch/saju-restore-verify-20261009/assets/source-reference/saju-b-clear-green050-20261006/SaJu_B_Jade_ClearGreen050_20261006.glb",
+      "bytes": 3530976,
+      "sha256": "e0cd0cd29e610173ad1e783a0e37672b4563884123001440b3fc7b638111a9fe",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 3530976,
+        "mesh_count": 8,
+        "material_count": 3,
+        "animation_count": 1,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "scratch/saju-restore-verify-20261009/assets/source-reference/saju-b-evolving-light-v002/SaJu_Jade_Evolving_Light_v002_Final.blend",
+      "bytes": 11011189,
+      "sha256": "e1ad952239b05064e265d6317383a20cf2182a12ab3e3731193f19e2674507c4",
+      "sensitive_pattern_classes": [],
+      "format": "blend",
+      "blend_header_verified": true,
+      "validation": "Preserved bytes; not opened in Blender"
+    },
+    {
+      "path": "scratch/saju-restore-verify-20261009/assets/source-reference/saju-b-evolving-light-v002/reference/SaJu_Jade_Approved_Static_Material.glb",
+      "bytes": 4293332,
+      "sha256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 4293332,
+        "mesh_count": 8,
+        "material_count": 3,
+        "animation_count": 1,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "scratch/saju-restore-verify-20261009/assets/source-reference/saju-b-green-emission-separated-v001/SaJu_Jade_GreenEmission_Separated_v001.blend",
+      "bytes": 10886965,
+      "sha256": "989921a8e85b36d5215f61882fa54938d9a588e9f5e387a37bd40820446b337f",
+      "sensitive_pattern_classes": [],
+      "format": "blend",
+      "blend_header_verified": true,
+      "validation": "Preserved bytes; not opened in Blender"
+    },
+    {
+      "path": "scratch/saju-restore-verify-20261009/assets/source-reference/saju-b-green-emission-separated-v001/SaJu_Jade_GreenEmission_Separated_v001.glb",
+      "bytes": 4293332,
+      "sha256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 4293332,
+        "mesh_count": 8,
+        "material_count": 3,
+        "animation_count": 1,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "scratch/saju-restore-verify-20261009/assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/SaJu_B_Jade_Character_Study.glb",
+      "bytes": 3610460,
+      "sha256": "342485a2f1bae6503ee87b412558493b84f7fc7f40de49b3e23e5218bf80bcf9",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 3610460,
+        "mesh_count": 8,
+        "material_count": 3,
+        "animation_count": 1,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "scratch/saju-restore-verify-20261009/assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/SaJu_B_Jade_Character_Study_Native.blend",
+      "bytes": 8722368,
+      "sha256": "7ef742eeea82ac4e4fb42f3a57db9c3d0125fd2c332944e251f413ddef55251b",
+      "sensitive_pattern_classes": [],
+      "format": "blend",
+      "blend_header_verified": true,
+      "validation": "Preserved bytes; not opened in Blender"
+    },
+    {
+      "path": "scratch/saju-restore-verify-20261009/assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/source/candidate_5.blend",
+      "bytes": 2165756,
+      "sha256": "65e637c9d635d0cff58c82a8094826c218ddb7e005943cf066dd3a69ef33ecc7",
+      "sensitive_pattern_classes": [],
+      "format": "blend",
+      "blend_header_verified": true,
+      "validation": "Preserved bytes; not opened in Blender"
+    },
+    {
+      "path": "scratch/saju-restore-verify-20261009/assets/source-reference/saju-b-moving-light-v001/SaJu_Jade_Moving_Green_Light_v001.blend",
+      "bytes": 10901917,
+      "sha256": "ea9fcc1b6c258edf2d7564ceb00b21358d9bb6cc7844d17b2dfd1d84289463ca",
+      "sensitive_pattern_classes": [],
+      "format": "blend",
+      "blend_header_verified": true,
+      "validation": "Preserved bytes; not opened in Blender"
+    },
+    {
+      "path": "scratch/saju-restore-verify-20261009/assets/source-reference/saju-b-moving-light-v001/reference/SaJu_Jade_Approved_Static_Material.glb",
+      "bytes": 4293332,
+      "sha256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 4293332,
+        "mesh_count": 8,
+        "material_count": 3,
+        "animation_count": 1,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "scratch/saju-restore-verify-20261009/preservation-archives/porcelain-hero-blink-v1.glb.gz",
+      "bytes": 10310913,
+      "sha256": "09f11f913f4853ea2050a007618ec607e7a6e4350403f7e4bdd91a68e542f3a1",
+      "sensitive_pattern_classes": [],
+      "format": "gzip",
+      "uncompressed_bytes": 13700928,
+      "uncompressed_sha256": "57d7ee5b3c4e0b99eaadefb8095283bed44986beaa5a91c096dd7a0c514bf9c2",
+      "crc_verified": true,
+      "glb": {
+        "version": 2,
+        "bytes": 13700928,
+        "mesh_count": 24,
+        "material_count": 6,
+        "animation_count": 0,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "scratch/saju-restore-verify-20261009/public/models/five-elements/earth-expression-v1.glb",
+      "bytes": 313216,
+      "sha256": "adddd4af80479125b9750b15f36a91fdc74ab618c2fc1f99b8c2018095c0289b",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 313216,
+        "mesh_count": 8,
+        "material_count": 3,
+        "animation_count": 0,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "scratch/saju-restore-verify-20261009/public/models/five-elements/earth-v1.glb",
+      "bytes": 207808,
+      "sha256": "8a5e1c2604ff66ad154f83fa6da67734c19c4fe696d2228d2808576637b8ebfa",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 207808,
+        "mesh_count": 8,
+        "material_count": 3,
+        "animation_count": 0,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "scratch/saju-restore-verify-20261009/public/models/five-elements/fire-expression-v1.glb",
+      "bytes": 300900,
+      "sha256": "c3d4c4d4a1cf606e323f0bf213dbf4b5eec7a3794905fce817465541d25d30c3",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 300900,
+        "mesh_count": 8,
+        "material_count": 3,
+        "animation_count": 0,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "scratch/saju-restore-verify-20261009/public/models/five-elements/fire-v1.glb",
+      "bytes": 195492,
+      "sha256": "f1c897e34302278ca4d78abbc787348acf8adb73de506c60b873ef3cf3062f93",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 195492,
+        "mesh_count": 8,
+        "material_count": 3,
+        "animation_count": 0,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "scratch/saju-restore-verify-20261009/public/models/five-elements/metal-expression-v1.glb",
+      "bytes": 179040,
+      "sha256": "d01210e7870b94c96a0c1be4f4c1b147d059f91803f8ac0b294bc94b66ba9145",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 179040,
+        "mesh_count": 8,
+        "material_count": 3,
+        "animation_count": 0,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "scratch/saju-restore-verify-20261009/public/models/five-elements/metal-v1.glb",
+      "bytes": 74064,
+      "sha256": "9ed143929120a5836005ffe707be9bbf6f20a94a6bfee1828455fdcceb27a023",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 74064,
+        "mesh_count": 8,
+        "material_count": 3,
+        "animation_count": 0,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "scratch/saju-restore-verify-20261009/public/models/five-elements/water-expression-v1.glb",
+      "bytes": 441872,
+      "sha256": "1a5139c2aa1bc78f67d6755f2da9e0ec2997f78b06c541a8898b348191ebb42b",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 441872,
+        "mesh_count": 8,
+        "material_count": 3,
+        "animation_count": 0,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "scratch/saju-restore-verify-20261009/public/models/five-elements/water-v1.glb",
+      "bytes": 184500,
+      "sha256": "8ceb8507485b78ea482dd765b32118734ce0cb17655998d2740e19f203bc1a0c",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 184500,
+        "mesh_count": 8,
+        "material_count": 3,
+        "animation_count": 0,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "scratch/saju-restore-verify-20261009/public/models/five-elements/wood-expression-v1.glb",
+      "bytes": 304336,
+      "sha256": "9988e332a4efaefbe2c4c2885e0a5c4842e6089e8c5d0f2b430e70d1a5930b2b",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 304336,
+        "mesh_count": 16,
+        "material_count": 5,
+        "animation_count": 0,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "scratch/saju-restore-verify-20261009/public/models/five-elements/wood-v1.glb",
+      "bytes": 198948,
+      "sha256": "1bf696c798ca3c97e9125fa8866e8146895129cf0dadab19ec755c98255c3cf1",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 198948,
+        "mesh_count": 16,
+        "material_count": 5,
+        "animation_count": 0,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "scratch/saju-restore-verify-20261009/public/models/porcelain-hero-v1-lite.glb",
+      "bytes": 5504312,
+      "sha256": "22bd1b4d410db3d8dbfe5068f78ce12ef4fcdc759a46915541fa356501a62f6e",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 5504312,
+        "mesh_count": 6,
+        "material_count": 6,
+        "animation_count": 0,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "scratch/saju-restore-verify-20261009/public/models/porcelain-hero-v2.glb",
+      "bytes": 5951928,
+      "sha256": "8a21d20acf59a6e77105359f85a0a3275ea5fa0753a7b7533aaf47656ad8484b",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 5951928,
+        "mesh_count": 8,
+        "material_count": 6,
+        "animation_count": 0,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "scratch/saju-preserve-a10d920-20261009/restore-probe/assets/source-reference/saju-b-clear-green050-20261006/SaJu_B_Jade_ClearGreen050_20261006.blend",
+      "bytes": 8643044,
+      "sha256": "cfc4361cd0dfad37e422dc3de87a44320af78d95187cf9b5af7af1762b000bd7",
+      "sensitive_pattern_classes": [],
+      "format": "blend",
+      "blend_header_verified": true,
+      "validation": "Preserved bytes; not opened in Blender"
+    },
+    {
+      "path": "scratch/saju-preserve-a10d920-20261009/restore-probe/assets/source-reference/saju-b-clear-green050-20261006/SaJu_B_Jade_ClearGreen050_20261006.glb",
+      "bytes": 3530976,
+      "sha256": "e0cd0cd29e610173ad1e783a0e37672b4563884123001440b3fc7b638111a9fe",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 3530976,
+        "mesh_count": 8,
+        "material_count": 3,
+        "animation_count": 1,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "scratch/saju-preserve-a10d920-20261009/restore-probe/assets/source-reference/saju-b-evolving-light-v002/SaJu_Jade_Evolving_Light_v002_Final.blend",
+      "bytes": 11011189,
+      "sha256": "e1ad952239b05064e265d6317383a20cf2182a12ab3e3731193f19e2674507c4",
+      "sensitive_pattern_classes": [],
+      "format": "blend",
+      "blend_header_verified": true,
+      "validation": "Preserved bytes; not opened in Blender"
+    },
+    {
+      "path": "scratch/saju-preserve-a10d920-20261009/restore-probe/assets/source-reference/saju-b-evolving-light-v002/reference/SaJu_Jade_Approved_Static_Material.glb",
+      "bytes": 4293332,
+      "sha256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 4293332,
+        "mesh_count": 8,
+        "material_count": 3,
+        "animation_count": 1,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "scratch/saju-preserve-a10d920-20261009/restore-probe/assets/source-reference/saju-b-green-emission-separated-v001/SaJu_Jade_GreenEmission_Separated_v001.blend",
+      "bytes": 10886965,
+      "sha256": "989921a8e85b36d5215f61882fa54938d9a588e9f5e387a37bd40820446b337f",
+      "sensitive_pattern_classes": [],
+      "format": "blend",
+      "blend_header_verified": true,
+      "validation": "Preserved bytes; not opened in Blender"
+    },
+    {
+      "path": "scratch/saju-preserve-a10d920-20261009/restore-probe/assets/source-reference/saju-b-green-emission-separated-v001/SaJu_Jade_GreenEmission_Separated_v001.glb",
+      "bytes": 4293332,
+      "sha256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 4293332,
+        "mesh_count": 8,
+        "material_count": 3,
+        "animation_count": 1,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "scratch/saju-preserve-a10d920-20261009/restore-probe/assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/SaJu_B_Jade_Character_Study.glb",
+      "bytes": 3610460,
+      "sha256": "342485a2f1bae6503ee87b412558493b84f7fc7f40de49b3e23e5218bf80bcf9",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 3610460,
+        "mesh_count": 8,
+        "material_count": 3,
+        "animation_count": 1,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "scratch/saju-preserve-a10d920-20261009/restore-probe/assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/SaJu_B_Jade_Character_Study_Native.blend",
+      "bytes": 8722368,
+      "sha256": "7ef742eeea82ac4e4fb42f3a57db9c3d0125fd2c332944e251f413ddef55251b",
+      "sensitive_pattern_classes": [],
+      "format": "blend",
+      "blend_header_verified": true,
+      "validation": "Preserved bytes; not opened in Blender"
+    },
+    {
+      "path": "scratch/saju-preserve-a10d920-20261009/restore-probe/assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/source/candidate_5.blend",
+      "bytes": 2165756,
+      "sha256": "65e637c9d635d0cff58c82a8094826c218ddb7e005943cf066dd3a69ef33ecc7",
+      "sensitive_pattern_classes": [],
+      "format": "blend",
+      "blend_header_verified": true,
+      "validation": "Preserved bytes; not opened in Blender"
+    },
+    {
+      "path": "scratch/saju-preserve-a10d920-20261009/restore-probe/assets/source-reference/saju-b-moving-light-v001/SaJu_Jade_Moving_Green_Light_v001.blend",
+      "bytes": 10901917,
+      "sha256": "ea9fcc1b6c258edf2d7564ceb00b21358d9bb6cc7844d17b2dfd1d84289463ca",
+      "sensitive_pattern_classes": [],
+      "format": "blend",
+      "blend_header_verified": true,
+      "validation": "Preserved bytes; not opened in Blender"
+    },
+    {
+      "path": "scratch/saju-preserve-a10d920-20261009/restore-probe/assets/source-reference/saju-b-moving-light-v001/reference/SaJu_Jade_Approved_Static_Material.glb",
+      "bytes": 4293332,
+      "sha256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 4293332,
+        "mesh_count": 8,
+        "material_count": 3,
+        "animation_count": 1,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "scratch/saju-preserve-a10d920-20261009/restore-probe/preservation-archives/porcelain-hero-blink-v1.glb.gz",
+      "bytes": 10310913,
+      "sha256": "09f11f913f4853ea2050a007618ec607e7a6e4350403f7e4bdd91a68e542f3a1",
+      "sensitive_pattern_classes": [],
+      "format": "gzip",
+      "uncompressed_bytes": 13700928,
+      "uncompressed_sha256": "57d7ee5b3c4e0b99eaadefb8095283bed44986beaa5a91c096dd7a0c514bf9c2",
+      "crc_verified": true,
+      "glb": {
+        "version": 2,
+        "bytes": 13700928,
+        "mesh_count": 24,
+        "material_count": 6,
+        "animation_count": 0,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "scratch/saju-preserve-a10d920-20261009/restore-probe/public/models/five-elements/earth-expression-v1.glb",
+      "bytes": 313216,
+      "sha256": "adddd4af80479125b9750b15f36a91fdc74ab618c2fc1f99b8c2018095c0289b",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 313216,
+        "mesh_count": 8,
+        "material_count": 3,
+        "animation_count": 0,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "scratch/saju-preserve-a10d920-20261009/restore-probe/public/models/five-elements/earth-v1.glb",
+      "bytes": 207808,
+      "sha256": "8a5e1c2604ff66ad154f83fa6da67734c19c4fe696d2228d2808576637b8ebfa",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 207808,
+        "mesh_count": 8,
+        "material_count": 3,
+        "animation_count": 0,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "scratch/saju-preserve-a10d920-20261009/restore-probe/public/models/five-elements/fire-expression-v1.glb",
+      "bytes": 300900,
+      "sha256": "c3d4c4d4a1cf606e323f0bf213dbf4b5eec7a3794905fce817465541d25d30c3",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 300900,
+        "mesh_count": 8,
+        "material_count": 3,
+        "animation_count": 0,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "scratch/saju-preserve-a10d920-20261009/restore-probe/public/models/five-elements/fire-v1.glb",
+      "bytes": 195492,
+      "sha256": "f1c897e34302278ca4d78abbc787348acf8adb73de506c60b873ef3cf3062f93",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 195492,
+        "mesh_count": 8,
+        "material_count": 3,
+        "animation_count": 0,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "scratch/saju-preserve-a10d920-20261009/restore-probe/public/models/five-elements/metal-expression-v1.glb",
+      "bytes": 179040,
+      "sha256": "d01210e7870b94c96a0c1be4f4c1b147d059f91803f8ac0b294bc94b66ba9145",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 179040,
+        "mesh_count": 8,
+        "material_count": 3,
+        "animation_count": 0,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "scratch/saju-preserve-a10d920-20261009/restore-probe/public/models/five-elements/metal-v1.glb",
+      "bytes": 74064,
+      "sha256": "9ed143929120a5836005ffe707be9bbf6f20a94a6bfee1828455fdcceb27a023",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 74064,
+        "mesh_count": 8,
+        "material_count": 3,
+        "animation_count": 0,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "scratch/saju-preserve-a10d920-20261009/restore-probe/public/models/five-elements/water-expression-v1.glb",
+      "bytes": 441872,
+      "sha256": "1a5139c2aa1bc78f67d6755f2da9e0ec2997f78b06c541a8898b348191ebb42b",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 441872,
+        "mesh_count": 8,
+        "material_count": 3,
+        "animation_count": 0,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "scratch/saju-preserve-a10d920-20261009/restore-probe/public/models/five-elements/water-v1.glb",
+      "bytes": 184500,
+      "sha256": "8ceb8507485b78ea482dd765b32118734ce0cb17655998d2740e19f203bc1a0c",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 184500,
+        "mesh_count": 8,
+        "material_count": 3,
+        "animation_count": 0,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "scratch/saju-preserve-a10d920-20261009/restore-probe/public/models/five-elements/wood-expression-v1.glb",
+      "bytes": 304336,
+      "sha256": "9988e332a4efaefbe2c4c2885e0a5c4842e6089e8c5d0f2b430e70d1a5930b2b",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 304336,
+        "mesh_count": 16,
+        "material_count": 5,
+        "animation_count": 0,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "scratch/saju-preserve-a10d920-20261009/restore-probe/public/models/five-elements/wood-v1.glb",
+      "bytes": 198948,
+      "sha256": "1bf696c798ca3c97e9125fa8866e8146895129cf0dadab19ec755c98255c3cf1",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 198948,
+        "mesh_count": 16,
+        "material_count": 5,
+        "animation_count": 0,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "scratch/saju-preserve-a10d920-20261009/restore-probe/public/models/porcelain-hero-v1-lite.glb",
+      "bytes": 5504312,
+      "sha256": "22bd1b4d410db3d8dbfe5068f78ce12ef4fcdc759a46915541fa356501a62f6e",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 5504312,
+        "mesh_count": 6,
+        "material_count": 6,
+        "animation_count": 0,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "scratch/saju-preserve-a10d920-20261009/restore-probe/public/models/porcelain-hero-v2.glb",
+      "bytes": 5951928,
+      "sha256": "8a21d20acf59a6e77105359f85a0a3275ea5fa0753a7b7533aaf47656ad8484b",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 5951928,
+        "mesh_count": 8,
+        "material_count": 6,
+        "animation_count": 0,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "scratch/saju-restore-verify-20261009/public/spirits/jade-v002/body.glb",
+      "bytes": 4293332,
+      "sha256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 4293332,
+        "mesh_count": 8,
+        "material_count": 3,
+        "animation_count": 1,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "scratch/saju-restore-verify-20261009/public/models/porcelain-hero-blink-v1.glb",
+      "bytes": 13700928,
+      "sha256": "57d7ee5b3c4e0b99eaadefb8095283bed44986beaa5a91c096dd7a0c514bf9c2",
+      "sensitive_pattern_classes": [],
+      "format": "glb",
+      "glb": {
+        "version": 2,
+        "bytes": 13700928,
+        "mesh_count": 24,
+        "material_count": 6,
+        "animation_count": 0,
+        "validation": "Header/chunks/JSON only; no native render or animation playback"
+      }
+    },
+    {
+      "path": "scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip",
+      "bytes": 185807,
+      "sha256": "d247c822443fa8bc69671cf78937708ec6d4890660ad509a5a6a418c064b4c41",
+      "sensitive_pattern_classes": [],
+      "format": "zip",
+      "members": [
+        {
+          "path": "scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/README.txt",
+          "bytes": 4415,
+          "sha256": "c0ef7dcf745d9debf6e4bac6cb5dca9e1b53d71a288c39fb124ab8e46136a9a2",
+          "sensitive_pattern_classes": []
+        },
+        {
+          "path": "scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/SHA256SUMS",
+          "bytes": 4095,
+          "sha256": "8ffc3434d6afd69eeeae4cb5588cb157c6e4c0976c2a298cc26869f7cdc4ed6a",
+          "sensitive_pattern_classes": []
+        },
+        {
+          "path": "scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/a10d920.bundle",
+          "bytes": 4275,
+          "sha256": "fd5e37081e4f5e1cec393e80a341bfb205a24a56c4cfa9711bd759e7940215fe",
+          "sensitive_pattern_classes": [],
+          "format": "git_bundle",
+          "validation": "Known incremental a10d920 bundle; verification recorded separately"
+        },
+        {
+          "path": "scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/a10d920.patch",
+          "bytes": 12761,
+          "sha256": "1bac1708a95f834423c8d1298f7dc42d65b8f198bbc85e52e4c88a79d2e62e56",
+          "sensitive_pattern_classes": []
+        },
+        {
+          "path": "scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/commit-manifest.json",
+          "bytes": 1015,
+          "sha256": "9f5b5ae2e8eae308e74e1ffde3f060e603d945db0c14b8ae112b09a6f15775db",
+          "sensitive_pattern_classes": []
+        },
+        {
+          "path": "scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/LINEAGE_CORRECTION.md",
+          "bytes": 1114,
+          "sha256": "a69d48b7703bb26f719b7e10b4f1ad286dba3515f9a2301cb12fe81ab816f73e",
+          "sensitive_pattern_classes": []
+        },
+        {
+          "path": "scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/LINT_CLASSIFICATION.md",
+          "bytes": 5837,
+          "sha256": "1abea3612de855885c00d7b2298bf5a4157fbecf1f5718cfe8e0afdae38e0067",
+          "sensitive_pattern_classes": []
+        },
+        {
+          "path": "scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/REPORT.md",
+          "bytes": 6993,
+          "sha256": "106b4ba9e155a2b9fa981130a4b135e6d3fecb190894c495c7ca0d24383d2d94",
+          "sensitive_pattern_classes": []
+        },
+        {
+          "path": "scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/build.log",
+          "bytes": 2233,
+          "sha256": "40786e8fe579bde5437a1ed2124ce0fd72834691245acea506a45f88380ff719",
+          "sensitive_pattern_classes": []
+        },
+        {
+          "path": "scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/build.result.json",
+          "bytes": 364,
+          "sha256": "242be42ee0ec2099e04ca14de548150237eff962a4f7c0433798e971b8663ad8",
+          "sensitive_pattern_classes": []
+        },
+        {
+          "path": "scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/chat-recovery-dom.log",
+          "bytes": 854,
+          "sha256": "dd55c0a78a95060aa3513ed043167a92824be37678ca3db6e62f634f8145c806",
+          "sensitive_pattern_classes": []
+        },
+        {
+          "path": "scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/chat-recovery-dom.result.json",
+          "bytes": 528,
+          "sha256": "420dfbd7a3ea6531a56568a656edc9a75e8e529e632d3d7b2555022a45ce0141",
+          "sensitive_pattern_classes": []
+        },
+        {
+          "path": "scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/guin-loading-final.log",
+          "bytes": 757,
+          "sha256": "5cae5b38191149ba9c308a07cff01881592907a56b63b140cdb1a4ffdf1fba6f",
+          "sensitive_pattern_classes": []
+        },
+        {
+          "path": "scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/guin-loading-final.result.json",
+          "bytes": 533,
+          "sha256": "4f27f50d347bd2f8bd505bfaae2e5f5b8a832213b929429634807d19ede4a1d5",
+          "sensitive_pattern_classes": []
+        },
+        {
+          "path": "scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/guin-loading-green.log",
+          "bytes": 758,
+          "sha256": "93de3bd3532959c9411baf22c9e64ba42d4cb1ac5f502465591607f0b8056453",
+          "sensitive_pattern_classes": []
+        },
+        {
+          "path": "scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/guin-loading-green.result.json",
+          "bytes": 533,
+          "sha256": "0f7e1635a18aa5377b791378888d2fbd07042dc25a6d938152ea0947e0e9cd33",
+          "sensitive_pattern_classes": []
+        },
+        {
+          "path": "scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/guin-loading-red.log",
+          "bytes": 5370,
+          "sha256": "a459da8ef6774b356f4d0a6ffd2161d2215a080c2a97a25a633d89b8c72cfb0a",
+          "sensitive_pattern_classes": []
+        },
+        {
+          "path": "scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/guin-loading-red.result.json",
+          "bytes": 529,
+          "sha256": "2abb15e212f93abb8ea4ac201d40c03023f2d3ed4054dfa845d7ba5103d83cef",
+          "sensitive_pattern_classes": []
+        },
+        {
+          "path": "scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/install-dom-test-tool.log",
+          "bytes": 147,
+          "sha256": "c5bfdac2f55cb5c129807b30107eda478bb3c9fad135a26625581baad5a6c482",
+          "sensitive_pattern_classes": []
+        },
+        {
+          "path": "scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/install-dom-test-tool.result.json",
+          "bytes": 589,
+          "sha256": "84cfebb0f391973d838aeabf4d3fd20a100628bac19769277f62f1dc66c473e3",
+          "sensitive_pattern_classes": []
+        },
+        {
+          "path": "scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/integration-preview.log",
+          "bytes": 921,
+          "sha256": "cb940b29c3508efb01bd84594222be856d3bd01671c2a4706b9d2e27139dd9fc",
+          "sensitive_pattern_classes": []
+        },
+        {
+          "path": "scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/integration-preview.result.json",
+          "bytes": 455,
+          "sha256": "16a01703b772ead2525758df75ec440ba1ba70e5e8c2048c7df50dbcb5200ca1",
+          "sensitive_pattern_classes": []
+        },
+        {
+          "path": "scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/lint-after-summary.json",
+          "bytes": 2307,
+          "sha256": "5084dd39b74e42176190e0b0032060cbd6419f466f1f772c876acfce4fd8b268",
+          "sensitive_pattern_classes": []
+        },
+        {
+          "path": "scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/lint-after.json",
+          "bytes": 428449,
+          "sha256": "43878f7288928567d8ed134bbdd9617b10676523d036db9a24131e30a1f184cc",
+          "sensitive_pattern_classes": []
+        },
+        {
+          "path": "scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/lint-after.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "sensitive_pattern_classes": []
+        },
+        {
+          "path": "scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/lint-after.result.json",
+          "bytes": 600,
+          "sha256": "3764f28dce96d281cd486f3bda8c60d1b391bedc71eb037a4c2e218d97246642",
+          "sensitive_pattern_classes": []
+        },
+        {
+          "path": "scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/run-command.py",
+          "bytes": 2295,
+          "sha256": "a9f1cae10ab48a0734309f36c2862c79a7203c051eec187e193d503a93157a34",
+          "sensitive_pattern_classes": []
+        },
+        {
+          "path": "scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/saved-archive-dom.log",
+          "bytes": 660,
+          "sha256": "0155d09807bd55a47f23d0ed8042d9278411fbb9a0923577eb78228c5545876b",
+          "sensitive_pattern_classes": []
+        },
+        {
+          "path": "scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/saved-archive-dom.result.json",
+          "bytes": 528,
+          "sha256": "0a06b6d27096b6624182678f2dc80153ec723266c48d78e31ec423a9c3e106bb",
+          "sensitive_pattern_classes": []
+        },
+        {
+          "path": "scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/summary.json",
+          "bytes": 7402,
+          "sha256": "7b71732a0cddab3df4ca7061ce8d12f840552f9413d26c4ad3102fee49983018",
+          "sensitive_pattern_classes": []
+        },
+        {
+          "path": "scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/typecheck.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "sensitive_pattern_classes": []
+        },
+        {
+          "path": "scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/typecheck.result.json",
+          "bytes": 437,
+          "sha256": "d99c4e6cdbf1f3750076bdbd8877bac9d34da61246ecd372c19e46eca6ed8560",
+          "sensitive_pattern_classes": []
+        },
+        {
+          "path": "scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/restore-baseline/REPORT.md",
+          "bytes": 9349,
+          "sha256": "058e4a792a1ca6dac8d515d592199e5ed5bd02afa4ce8b392134351ac76cb28a",
+          "sensitive_pattern_classes": []
+        },
+        {
+          "path": "scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/restore-baseline/lint-summary.json",
+          "bytes": 24446,
+          "sha256": "5958be117239892e262eca406449e4066ec7de56e2be10af6d341c2658bfdd32",
+          "sensitive_pattern_classes": []
+        },
+        {
+          "path": "scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/restore-baseline/lint.log",
+          "bytes": 61049,
+          "sha256": "362fba87f1776bbb62991668c0c82ffc4991ad1840f26d2a12f636cda7a9fefe",
+          "sensitive_pattern_classes": []
+        },
+        {
+          "path": "scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/restore-baseline/preservation-final.json",
+          "bytes": 714,
+          "sha256": "13b9e5741e86aa686cfb49cfdaeff0545724e17d258bd53c7ef26c333a8b404c",
+          "sensitive_pattern_classes": []
+        },
+        {
+          "path": "scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/recovery-operations.json",
+          "bytes": 94338,
+          "sha256": "d16dcf3d5fdf2f53d172e28d23fb26f0a75626918a5e91814f81b043e4ab8a6b",
+          "sensitive_pattern_classes": []
+        },
+        {
+          "path": "scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/recovery-verification.json",
+          "bytes": 786,
+          "sha256": "5511d8d2554994f0b0839f7ce508d884d6560bda6f9c934fa2e9388b498fe8e4",
+          "sensitive_pattern_classes": []
+        },
+        {
+          "path": "scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/source/app/guin/[id]/page.tsx",
+          "bytes": 27479,
+          "sha256": "9dc7f3b16e137a034da9a01ebcba75738d8d03304a700b5bdc1db90594984644",
+          "sensitive_pattern_classes": []
+        },
+        {
+          "path": "scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/source/scripts/qa/guin-map-loading-dom.mjs",
+          "bytes": 8177,
+          "sha256": "428984d3ad015971fe841942066d21c77c0b3c513731bf67dbf5027ea668f6c7",
+          "sensitive_pattern_classes": []
+        }
+      ],
+      "crc_verified": true
+    },
+    {
+      "path": "scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/a10d920.bundle",
+      "bytes": 4275,
+      "sha256": "fd5e37081e4f5e1cec393e80a341bfb205a24a56c4cfa9711bd759e7940215fe",
+      "sensitive_pattern_classes": [],
+      "format": "git_bundle",
+      "validation": "Known incremental a10d920 bundle; verification recorded separately"
+    }
+  ],
+  "new_artifact_zip": {
+    "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip",
+    "bytes": 1074022,
+    "sha256": "f9fe570446f64c04a54952b3905f9d304fe24db97f5d681e0da4c3a5161f497c",
+    "sensitive_pattern_classes": [],
+    "format": "zip",
+    "members": [
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-chat-atomic-evidence-20261009/REPORT.md",
+        "bytes": 5786,
+        "sha256": "ba8160a3aa8387a6ddc4d1c8b5882f4094a8b58179562f5a0e4977e1b595ca95",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-chat-atomic-evidence-20261009/atomic-green.log",
+        "bytes": 601,
+        "sha256": "1175093b7abba66b1e00bc126072f73e7579e54983c318f0b97f1f0a14ceb157",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-chat-atomic-evidence-20261009/atomic-green.result.json",
+        "bytes": 447,
+        "sha256": "7286b08232177bf9d9ba061bc1c3040ef7c358a56514b14582c444f2c3364595",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-chat-atomic-evidence-20261009/atomic-red.log",
+        "bytes": 1589,
+        "sha256": "459d524b37b1fd0e23864dacd82a5f59002e1d80a1ed89d6edf3e5f6bc47d19f",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-chat-atomic-evidence-20261009/atomic-red.result.json",
+        "bytes": 444,
+        "sha256": "a5de104c1cf1c825d24d679d75df9f3bd28f1a6679e26de03095574ccba59fb4",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-chat-atomic-evidence-20261009/build.log",
+        "bytes": 2233,
+        "sha256": "a70f3b23e4c04f7a3c38e70b6fc298f1e2b5834ddc453168a631858a5cd9ca29",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-chat-atomic-evidence-20261009/build.result.json",
+        "bytes": 364,
+        "sha256": "d85521835c4a39b3317120211b54b9ba22516a4954ef3d56bbe38491799c4897",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-chat-atomic-evidence-20261009/chat-recovery-dom.log",
+        "bytes": 854,
+        "sha256": "dd55c0a78a95060aa3513ed043167a92824be37678ca3db6e62f634f8145c806",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-chat-atomic-evidence-20261009/chat-recovery-dom.result.json",
+        "bytes": 528,
+        "sha256": "07e64a531dc8f93ee8a4d9a5a40b8d4fed5239cfece10960267ec22aa0ed02cf",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-chat-atomic-evidence-20261009/integration-preview.log",
+        "bytes": 921,
+        "sha256": "367afaef7e20d54857d67cf881799c00a6abb24bf21eeee98e98a78c5b4b791b",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-chat-atomic-evidence-20261009/integration-preview.result.json",
+        "bytes": 455,
+        "sha256": "1cee3778627142dbf5247d242d4bbfbb828329229d386b84110b45c4fffc0b43",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-chat-atomic-evidence-20261009/lint-summary.json",
+        "bytes": 423,
+        "sha256": "721f5f14a3df1d26e02afb730468085ee3678f9b3c4326869d545b29ca72186c",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-chat-atomic-evidence-20261009/lint.json",
+        "bytes": 428695,
+        "sha256": "f7d2c0ebc40e5854dfb0de012f7889d7a7544c3567ebd83b222fcf343cc05c73",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-chat-atomic-evidence-20261009/lint.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-chat-atomic-evidence-20261009/lint.result.json",
+        "bytes": 582,
+        "sha256": "de401a47414f3340232c06aa55d002c72b71c27b6f7c986f807008624cb6c148",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-chat-atomic-evidence-20261009/precommit-check.json",
+        "bytes": 573,
+        "sha256": "1c71fd4364c719bd21cb483503c2203469d485804d0acc8bee1d83623b9281c7",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-chat-atomic-evidence-20261009/push-operations.json",
+        "bytes": 2857,
+        "sha256": "b3187917708f26747fc87ffd28d01bf3897feed7d84de2fd22c5a13438064c42",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-chat-atomic-evidence-20261009/push-result.json",
+        "bytes": 950,
+        "sha256": "e8d9ab79fccacbcbb28853de699c87f9cb91d9013b5726045a0510f96874f74d",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-chat-atomic-evidence-20261009/run-command.py",
+        "bytes": 2295,
+        "sha256": "a9f1cae10ab48a0734309f36c2862c79a7203c051eec187e193d503a93157a34",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-chat-atomic-evidence-20261009/summary.json",
+        "bytes": 6824,
+        "sha256": "5f7e23429bfed6c272d44a7f4b1b4a83df3ad8abd9c5d1fa5fcee4142084f19e",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-chat-atomic-evidence-20261009/typecheck.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-chat-atomic-evidence-20261009/typecheck.result.json",
+        "bytes": 438,
+        "sha256": "99b3fe53fc6c4351a1633fc485a1cfc3eed7aa71d453669808c4f913fc413fe7",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-cumulative-regression-evidence-20261009/REPORT.md",
+        "bytes": 10344,
+        "sha256": "d9120905091bc56955d8336d599869c15f3721aedd71173f5d149afc082ea0e3",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-cumulative-regression-evidence-20261009/baseline.json",
+        "bytes": 1439,
+        "sha256": "83a13b0a497669aa8aceac08e877af7033f740867cba2ef8ec286309abeb6483",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-cumulative-regression-evidence-20261009/chat-atomic.log",
+        "bytes": 602,
+        "sha256": "e850d6bf1daa2147c3ce2459298b32744e6ea5f9514b10885295e5f798e956f8",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-cumulative-regression-evidence-20261009/chat-atomic.result.json",
+        "bytes": 906,
+        "sha256": "9f062be653f320b07657ec418cf89ec20fc78d9571b2e7791cfa0b7e823a98ac",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-cumulative-regression-evidence-20261009/chat-recovery-dom.log",
+        "bytes": 854,
+        "sha256": "dd55c0a78a95060aa3513ed043167a92824be37678ca3db6e62f634f8145c806",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-cumulative-regression-evidence-20261009/chat-recovery-dom.result.json",
+        "bytes": 1048,
+        "sha256": "bf533b73039586a5ae3a431d5e04c820c9c393f9852f6dea65dda05698f2f29b",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-cumulative-regression-evidence-20261009/final-state.json",
+        "bytes": 11889,
+        "sha256": "f45b66c6cc179971fcbb5578e70275bf183ecac0cffef7fb46e0ab60234321fd",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-cumulative-regression-evidence-20261009/guin-dom.log",
+        "bytes": 762,
+        "sha256": "503aac119871e075306c840d0f42d02806465814abd6e6a3c0c29b6740c44899",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-cumulative-regression-evidence-20261009/guin-dom.result.json",
+        "bytes": 997,
+        "sha256": "465684b60add769f522caaec47124d287475a93b82775f36bc4652a54511fe0e",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-cumulative-regression-evidence-20261009/integration-23.log",
+        "bytes": 921,
+        "sha256": "89963af362bd4e71b87cfef6fd3a8625e1ba959b0ba6738f02c9767112e22db8",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-cumulative-regression-evidence-20261009/integration-23.result.json",
+        "bytes": 917,
+        "sha256": "cb8de327e89cea1099d70639a43efe74edd72f4ede482f7c44e054a7849ffce2",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-cumulative-regression-evidence-20261009/jade-cpu.log",
+        "bytes": 1010,
+        "sha256": "b8b2ced1ac19a4c0ddc5bc981b60a835f428ce1fb361fcc8810b88c556292982",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-cumulative-regression-evidence-20261009/jade-cpu.result.json",
+        "bytes": 956,
+        "sha256": "d5ee0615c6034b04cf19cb813d03701f0e268a60d55f18d8cfea94e089fcddb2",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-cumulative-regression-evidence-20261009/lint-summary.json",
+        "bytes": 77,
+        "sha256": "b1d426438d6e66aeb3955703532f526d360d0b8672b24def14c9f30100d6f086",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-cumulative-regression-evidence-20261009/lint.json",
+        "bytes": 428695,
+        "sha256": "f7d2c0ebc40e5854dfb0de012f7889d7a7544c3567ebd83b222fcf343cc05c73",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-cumulative-regression-evidence-20261009/lint.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-cumulative-regression-evidence-20261009/lint.result.json",
+        "bytes": 1060,
+        "sha256": "6f899c56379be198582a22edafe7e0aa0c2f1b14f05fdc0f47fde7f727e6dbae",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-cumulative-regression-evidence-20261009/repository-visibility.json",
+        "bytes": 106,
+        "sha256": "b9c9632e89da37b598301830724e24fe21f75d4b06704ad8d1539917f6bafcde",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-cumulative-regression-evidence-20261009/run-command.py",
+        "bytes": 2295,
+        "sha256": "a9f1cae10ab48a0734309f36c2862c79a7203c051eec187e193d503a93157a34",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-cumulative-regression-evidence-20261009/saved-archive-api.log",
+        "bytes": 802,
+        "sha256": "094e21a6fd5db4b0938a9ee45fe034cf0f3ee31fdcb960317d9127164164827a",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-cumulative-regression-evidence-20261009/saved-archive-api.result.json",
+        "bytes": 932,
+        "sha256": "17c6cbfe75d02c86215403fcc2ad27b6f97295453a88e9a1726c662ab87e42d1",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-cumulative-regression-evidence-20261009/saved-archive-dom.log",
+        "bytes": 660,
+        "sha256": "0155d09807bd55a47f23d0ed8042d9278411fbb9a0923577eb78228c5545876b",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-cumulative-regression-evidence-20261009/saved-archive-dom.result.json",
+        "bytes": 1047,
+        "sha256": "cba701f00f9f0540c8b5e8a181186a1c1822a68b47968fc5b920f10226a8badb",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-cumulative-regression-evidence-20261009/typecheck.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-cumulative-regression-evidence-20261009/typecheck.result.json",
+        "bytes": 926,
+        "sha256": "79989d9f906b648331c64d7e766306c398a4424840c69ffb3966c56e34190307",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-cumulative-regression-evidence-20261009/verify-assets.log",
+        "bytes": 374,
+        "sha256": "a6b588303ef5aa8d2bb5929b13b585b6fd44e94b11be7b2e777bac7d975e646f",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-cumulative-regression-evidence-20261009/verify-assets.result.json",
+        "bytes": 917,
+        "sha256": "0e19e6e6999c7c08d0cbee1e6425cf88d53bf5fc4a94c3c93788e55ced423e63",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-cumulative-regression-run-20261009/outputs/chat-recovery/dom-results.json",
+        "bytes": 853,
+        "sha256": "a08a0faf7c11351e272122166ffd10de8ab06bf850839649af1b727038c57f11",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-cumulative-regression-run-20261009/outputs/saved-archive/api-results.json",
+        "bytes": 801,
+        "sha256": "6dca9b270b4e2fc79055adbf583afad95ae50c16d89ee81ab27bd8ffebcd9bd9",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-cumulative-regression-run-20261009/outputs/saved-archive/dom-results.json",
+        "bytes": 659,
+        "sha256": "f4eabae6d2da9ececcd32714974f43b444586a7e021e2cd6ec0bccf0e18d4812",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-daily-rollover-evidence-20261009/REPORT.md",
+        "bytes": 9511,
+        "sha256": "06c2b8004ec142ee16fe550d1aa0872e77e50c66dc2d46d33894086e529c3209",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-daily-rollover-evidence-20261009/baseline.json",
+        "bytes": 2930,
+        "sha256": "58ad73901793b31fcec6c209f371c2332eb8e9b81b1a45e11907ad15ab36ef89",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-daily-rollover-evidence-20261009/build.log",
+        "bytes": 2233,
+        "sha256": "da62c180e6150611657226539584f12b69375a6c4f9f0cf19c01146b5a7354ab",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-daily-rollover-evidence-20261009/build.result.json",
+        "bytes": 368,
+        "sha256": "6717d79e13727554389bff67b3ecf6ab720208ab9f7c3228477af064f70a5b0c",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-daily-rollover-evidence-20261009/chat-atomic.log",
+        "bytes": 601,
+        "sha256": "ca564905e7c72460cb2f4a2d96c858d839020535a39cd31357a0d73670622f67",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-daily-rollover-evidence-20261009/chat-atomic.result.json",
+        "bytes": 864,
+        "sha256": "9423c4a860eea05213606fbaaed850def16af19ca0b6f7c3d0eb9ad1b4d1431b",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-daily-rollover-evidence-20261009/chat-recovery-dom.log",
+        "bytes": 854,
+        "sha256": "dd55c0a78a95060aa3513ed043167a92824be37678ca3db6e62f634f8145c806",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-daily-rollover-evidence-20261009/chat-recovery-dom.result.json",
+        "bytes": 535,
+        "sha256": "fb1e9bc2f57305887083f3005d7bf31664af1be586204efd43e2b8f0813c164f",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-daily-rollover-evidence-20261009/check-precommit.py",
+        "bytes": 3230,
+        "sha256": "adc8c2b5be05745b07e1d7289caf5f030963976ee8a77722538f9d4f5c626191",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-daily-rollover-evidence-20261009/daily-green-dst.log",
+        "bytes": 1143,
+        "sha256": "0d4409c2a7a31cfdbedb0cfeec64d8fd0b5b8dcb62ec4fa1ad71c367da828201",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-daily-rollover-evidence-20261009/daily-green-dst.result.json",
+        "bytes": 559,
+        "sha256": "b26d690d66fadc1743ed9e7f55ac0b4fe81d469601130f9a889e94b76fad9a39",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-daily-rollover-evidence-20261009/daily-green-utc.log",
+        "bytes": 1102,
+        "sha256": "6e0b86427663e1a9ab84fbd3554f9884fd360374429982c0224fd393218fc3a3",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-daily-rollover-evidence-20261009/daily-green-utc.result.json",
+        "bytes": 550,
+        "sha256": "a0982c33c168450b7e6231037b7a4c67ca4c3eb00534c376eafda9efe113b6ac",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-daily-rollover-evidence-20261009/daily-green.log",
+        "bytes": 1100,
+        "sha256": "729eb15b9498c1b1d6816b1659acfd372d65f5178874d84b9dba34c57b1aa2dc",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-daily-rollover-evidence-20261009/daily-green.result.json",
+        "bytes": 538,
+        "sha256": "af883e49d852e15a96ae0114c0d31e297c6c5d298fef99186a8333ba08abc329",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-daily-rollover-evidence-20261009/daily-red.log",
+        "bytes": 5788,
+        "sha256": "54bb2b69c43ecbdd6d1918fa8503364cb3bca74d2c1a92ac6580094bae947ba7",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-daily-rollover-evidence-20261009/daily-red.result.json",
+        "bytes": 534,
+        "sha256": "c3276e7663836f42731a802601ee13a034eb9bcd0cd014f5efa632cac974d395",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-daily-rollover-evidence-20261009/final-state.json",
+        "bytes": 2861,
+        "sha256": "fad8c3d5354dc9fa6307d6a27d344d38d6097d4cbdcf21e89717fec5f9b6a716",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-daily-rollover-evidence-20261009/guin-dom.log",
+        "bytes": 760,
+        "sha256": "ee83c193731ac9e3282b45daad836ce6ff305b942227004a3cb4b6fbf1a67c86",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-daily-rollover-evidence-20261009/guin-dom.result.json",
+        "bytes": 520,
+        "sha256": "426aa28406359bfcf46f24a78f9ae4ddca4cc4c908b7c423a7a37d15982ea6a8",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-daily-rollover-evidence-20261009/integration-23.log",
+        "bytes": 921,
+        "sha256": "2253b6858d3bc468efdfded2e50efce57afae2a9543d878149071fd71b9529d7",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-daily-rollover-evidence-20261009/integration-23.result.json",
+        "bytes": 875,
+        "sha256": "414c4f87aeffb6670180863345d80cb31e8697097ec2315911bda3c0f1f452cf",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-daily-rollover-evidence-20261009/lint-comparison.json",
+        "bytes": 2069,
+        "sha256": "d5fbfab0a1f340876193957ded2c8cb1a550999a744eaa813a2b84ab7f2ca09e",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-daily-rollover-evidence-20261009/lint.json",
+        "bytes": 427658,
+        "sha256": "3d7515d7014060a4ba0e7430a2a629c108053ba087b4dcfaa1811234d8678672",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-daily-rollover-evidence-20261009/lint.log",
+        "bytes": 196,
+        "sha256": "e7992f9e081e215224ae2606b008775afc6a5d0df9a3c664e81c5be8904b1555",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-daily-rollover-evidence-20261009/lint.result.json",
+        "bytes": 497,
+        "sha256": "b04f55bc48f41095ff9c01548a2a33fe5ec68688429d4058cc143c3b0e7e3969",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-daily-rollover-evidence-20261009/precommit.json",
+        "bytes": 1634,
+        "sha256": "fb406ac1833d7420c53846aa4e5c98e67a13cd1a6b9e837f4a832e9d2fc60e81",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-daily-rollover-evidence-20261009/push.log",
+        "bytes": 166,
+        "sha256": "62494c5982e17282d01e624b629bb1fbb8b25132d8c4af0a0fc32b1dfd5c7514",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-daily-rollover-evidence-20261009/push.result.json",
+        "bytes": 547,
+        "sha256": "d5005fff6ec0b4a6f59cf7a548331d7ac8e4f011c32ae1f3e676164ff1a0c51e",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-daily-rollover-evidence-20261009/remote-before.json",
+        "bytes": 560,
+        "sha256": "499de63a36d0d7dd8c1b47838ce968670f63a7613cb20db2bfddd83bafaf663a",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-daily-rollover-evidence-20261009/run-command.py",
+        "bytes": 2295,
+        "sha256": "a9f1cae10ab48a0734309f36c2862c79a7203c051eec187e193d503a93157a34",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-daily-rollover-evidence-20261009/typecheck.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-daily-rollover-evidence-20261009/typecheck.result.json",
+        "bytes": 441,
+        "sha256": "0da696c2863837fcaee8ac445296abeb1d37c5d943bffd334789b3b106501dce",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-daily-rollover-run-20261009/outputs/chat-recovery/dom-results.json",
+        "bytes": 853,
+        "sha256": "a08a0faf7c11351e272122166ffd10de8ab06bf850839649af1b727038c57f11",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-maintenance-evidence-20261009/LINEAGE_CORRECTION.md",
+        "bytes": 1114,
+        "sha256": "a69d48b7703bb26f719b7e10b4f1ad286dba3515f9a2301cb12fe81ab816f73e",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-maintenance-evidence-20261009/LINT_CLASSIFICATION.md",
+        "bytes": 5837,
+        "sha256": "1abea3612de855885c00d7b2298bf5a4157fbecf1f5718cfe8e0afdae38e0067",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-maintenance-evidence-20261009/REPORT.md",
+        "bytes": 6993,
+        "sha256": "106b4ba9e155a2b9fa981130a4b135e6d3fecb190894c495c7ca0d24383d2d94",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-maintenance-evidence-20261009/build.log",
+        "bytes": 2233,
+        "sha256": "40786e8fe579bde5437a1ed2124ce0fd72834691245acea506a45f88380ff719",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-maintenance-evidence-20261009/build.result.json",
+        "bytes": 364,
+        "sha256": "242be42ee0ec2099e04ca14de548150237eff962a4f7c0433798e971b8663ad8",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-maintenance-evidence-20261009/chat-recovery-dom.log",
+        "bytes": 854,
+        "sha256": "dd55c0a78a95060aa3513ed043167a92824be37678ca3db6e62f634f8145c806",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-maintenance-evidence-20261009/chat-recovery-dom.result.json",
+        "bytes": 528,
+        "sha256": "420dfbd7a3ea6531a56568a656edc9a75e8e529e632d3d7b2555022a45ce0141",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-maintenance-evidence-20261009/guin-loading-final.log",
+        "bytes": 757,
+        "sha256": "5cae5b38191149ba9c308a07cff01881592907a56b63b140cdb1a4ffdf1fba6f",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-maintenance-evidence-20261009/guin-loading-final.result.json",
+        "bytes": 533,
+        "sha256": "4f27f50d347bd2f8bd505bfaae2e5f5b8a832213b929429634807d19ede4a1d5",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-maintenance-evidence-20261009/guin-loading-green.log",
+        "bytes": 758,
+        "sha256": "93de3bd3532959c9411baf22c9e64ba42d4cb1ac5f502465591607f0b8056453",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-maintenance-evidence-20261009/guin-loading-green.result.json",
+        "bytes": 533,
+        "sha256": "0f7e1635a18aa5377b791378888d2fbd07042dc25a6d938152ea0947e0e9cd33",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-maintenance-evidence-20261009/guin-loading-red.log",
+        "bytes": 5370,
+        "sha256": "a459da8ef6774b356f4d0a6ffd2161d2215a080c2a97a25a633d89b8c72cfb0a",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-maintenance-evidence-20261009/guin-loading-red.result.json",
+        "bytes": 529,
+        "sha256": "2abb15e212f93abb8ea4ac201d40c03023f2d3ed4054dfa845d7ba5103d83cef",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-maintenance-evidence-20261009/install-dom-test-tool.log",
+        "bytes": 147,
+        "sha256": "c5bfdac2f55cb5c129807b30107eda478bb3c9fad135a26625581baad5a6c482",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-maintenance-evidence-20261009/install-dom-test-tool.result.json",
+        "bytes": 589,
+        "sha256": "84cfebb0f391973d838aeabf4d3fd20a100628bac19769277f62f1dc66c473e3",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-maintenance-evidence-20261009/integration-preview.log",
+        "bytes": 921,
+        "sha256": "cb940b29c3508efb01bd84594222be856d3bd01671c2a4706b9d2e27139dd9fc",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-maintenance-evidence-20261009/integration-preview.result.json",
+        "bytes": 455,
+        "sha256": "16a01703b772ead2525758df75ec440ba1ba70e5e8c2048c7df50dbcb5200ca1",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-maintenance-evidence-20261009/lint-after-summary.json",
+        "bytes": 2307,
+        "sha256": "5084dd39b74e42176190e0b0032060cbd6419f466f1f772c876acfce4fd8b268",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-maintenance-evidence-20261009/lint-after.json",
+        "bytes": 428449,
+        "sha256": "43878f7288928567d8ed134bbdd9617b10676523d036db9a24131e30a1f184cc",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-maintenance-evidence-20261009/lint-after.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-maintenance-evidence-20261009/lint-after.result.json",
+        "bytes": 600,
+        "sha256": "3764f28dce96d281cd486f3bda8c60d1b391bedc71eb037a4c2e218d97246642",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-maintenance-evidence-20261009/run-command.py",
+        "bytes": 2295,
+        "sha256": "a9f1cae10ab48a0734309f36c2862c79a7203c051eec187e193d503a93157a34",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-maintenance-evidence-20261009/saved-archive-dom.log",
+        "bytes": 660,
+        "sha256": "0155d09807bd55a47f23d0ed8042d9278411fbb9a0923577eb78228c5545876b",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-maintenance-evidence-20261009/saved-archive-dom.result.json",
+        "bytes": 528,
+        "sha256": "0a06b6d27096b6624182678f2dc80153ec723266c48d78e31ec423a9c3e106bb",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-maintenance-evidence-20261009/summary.json",
+        "bytes": 7402,
+        "sha256": "7b71732a0cddab3df4ca7061ce8d12f840552f9413d26c4ad3102fee49983018",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-maintenance-evidence-20261009/typecheck.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-maintenance-evidence-20261009/typecheck.result.json",
+        "bytes": 437,
+        "sha256": "d99c4e6cdbf1f3750076bdbd8877bac9d34da61246ecd372c19e46eca6ed8560",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/HANDOFF.md",
+        "bytes": 4752,
+        "sha256": "3f581c7226756259ebb2361f53acfa025a577b9092972bee439c45ff7e009ddd",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip",
+        "bytes": 185807,
+        "sha256": "d247c822443fa8bc69671cf78937708ec6d4890660ad509a5a6a418c064b4c41",
+        "sensitive_pattern_classes": [],
+        "format": "zip",
+        "members": [
+          {
+            "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/README.txt",
+            "bytes": 4415,
+            "sha256": "c0ef7dcf745d9debf6e4bac6cb5dca9e1b53d71a288c39fb124ab8e46136a9a2",
+            "sensitive_pattern_classes": []
+          },
+          {
+            "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/SHA256SUMS",
+            "bytes": 4095,
+            "sha256": "8ffc3434d6afd69eeeae4cb5588cb157c6e4c0976c2a298cc26869f7cdc4ed6a",
+            "sensitive_pattern_classes": []
+          },
+          {
+            "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/a10d920.bundle",
+            "bytes": 4275,
+            "sha256": "fd5e37081e4f5e1cec393e80a341bfb205a24a56c4cfa9711bd759e7940215fe",
+            "sensitive_pattern_classes": [],
+            "format": "git_bundle",
+            "validation": "Known incremental a10d920 bundle; verification recorded separately"
+          },
+          {
+            "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/a10d920.patch",
+            "bytes": 12761,
+            "sha256": "1bac1708a95f834423c8d1298f7dc42d65b8f198bbc85e52e4c88a79d2e62e56",
+            "sensitive_pattern_classes": []
+          },
+          {
+            "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/commit-manifest.json",
+            "bytes": 1015,
+            "sha256": "9f5b5ae2e8eae308e74e1ffde3f060e603d945db0c14b8ae112b09a6f15775db",
+            "sensitive_pattern_classes": []
+          },
+          {
+            "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/LINEAGE_CORRECTION.md",
+            "bytes": 1114,
+            "sha256": "a69d48b7703bb26f719b7e10b4f1ad286dba3515f9a2301cb12fe81ab816f73e",
+            "sensitive_pattern_classes": []
+          },
+          {
+            "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/LINT_CLASSIFICATION.md",
+            "bytes": 5837,
+            "sha256": "1abea3612de855885c00d7b2298bf5a4157fbecf1f5718cfe8e0afdae38e0067",
+            "sensitive_pattern_classes": []
+          },
+          {
+            "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/REPORT.md",
+            "bytes": 6993,
+            "sha256": "106b4ba9e155a2b9fa981130a4b135e6d3fecb190894c495c7ca0d24383d2d94",
+            "sensitive_pattern_classes": []
+          },
+          {
+            "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/build.log",
+            "bytes": 2233,
+            "sha256": "40786e8fe579bde5437a1ed2124ce0fd72834691245acea506a45f88380ff719",
+            "sensitive_pattern_classes": []
+          },
+          {
+            "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/build.result.json",
+            "bytes": 364,
+            "sha256": "242be42ee0ec2099e04ca14de548150237eff962a4f7c0433798e971b8663ad8",
+            "sensitive_pattern_classes": []
+          },
+          {
+            "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/chat-recovery-dom.log",
+            "bytes": 854,
+            "sha256": "dd55c0a78a95060aa3513ed043167a92824be37678ca3db6e62f634f8145c806",
+            "sensitive_pattern_classes": []
+          },
+          {
+            "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/chat-recovery-dom.result.json",
+            "bytes": 528,
+            "sha256": "420dfbd7a3ea6531a56568a656edc9a75e8e529e632d3d7b2555022a45ce0141",
+            "sensitive_pattern_classes": []
+          },
+          {
+            "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/guin-loading-final.log",
+            "bytes": 757,
+            "sha256": "5cae5b38191149ba9c308a07cff01881592907a56b63b140cdb1a4ffdf1fba6f",
+            "sensitive_pattern_classes": []
+          },
+          {
+            "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/guin-loading-final.result.json",
+            "bytes": 533,
+            "sha256": "4f27f50d347bd2f8bd505bfaae2e5f5b8a832213b929429634807d19ede4a1d5",
+            "sensitive_pattern_classes": []
+          },
+          {
+            "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/guin-loading-green.log",
+            "bytes": 758,
+            "sha256": "93de3bd3532959c9411baf22c9e64ba42d4cb1ac5f502465591607f0b8056453",
+            "sensitive_pattern_classes": []
+          },
+          {
+            "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/guin-loading-green.result.json",
+            "bytes": 533,
+            "sha256": "0f7e1635a18aa5377b791378888d2fbd07042dc25a6d938152ea0947e0e9cd33",
+            "sensitive_pattern_classes": []
+          },
+          {
+            "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/guin-loading-red.log",
+            "bytes": 5370,
+            "sha256": "a459da8ef6774b356f4d0a6ffd2161d2215a080c2a97a25a633d89b8c72cfb0a",
+            "sensitive_pattern_classes": []
+          },
+          {
+            "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/guin-loading-red.result.json",
+            "bytes": 529,
+            "sha256": "2abb15e212f93abb8ea4ac201d40c03023f2d3ed4054dfa845d7ba5103d83cef",
+            "sensitive_pattern_classes": []
+          },
+          {
+            "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/install-dom-test-tool.log",
+            "bytes": 147,
+            "sha256": "c5bfdac2f55cb5c129807b30107eda478bb3c9fad135a26625581baad5a6c482",
+            "sensitive_pattern_classes": []
+          },
+          {
+            "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/install-dom-test-tool.result.json",
+            "bytes": 589,
+            "sha256": "84cfebb0f391973d838aeabf4d3fd20a100628bac19769277f62f1dc66c473e3",
+            "sensitive_pattern_classes": []
+          },
+          {
+            "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/integration-preview.log",
+            "bytes": 921,
+            "sha256": "cb940b29c3508efb01bd84594222be856d3bd01671c2a4706b9d2e27139dd9fc",
+            "sensitive_pattern_classes": []
+          },
+          {
+            "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/integration-preview.result.json",
+            "bytes": 455,
+            "sha256": "16a01703b772ead2525758df75ec440ba1ba70e5e8c2048c7df50dbcb5200ca1",
+            "sensitive_pattern_classes": []
+          },
+          {
+            "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/lint-after-summary.json",
+            "bytes": 2307,
+            "sha256": "5084dd39b74e42176190e0b0032060cbd6419f466f1f772c876acfce4fd8b268",
+            "sensitive_pattern_classes": []
+          },
+          {
+            "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/lint-after.json",
+            "bytes": 428449,
+            "sha256": "43878f7288928567d8ed134bbdd9617b10676523d036db9a24131e30a1f184cc",
+            "sensitive_pattern_classes": []
+          },
+          {
+            "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/lint-after.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "sensitive_pattern_classes": []
+          },
+          {
+            "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/lint-after.result.json",
+            "bytes": 600,
+            "sha256": "3764f28dce96d281cd486f3bda8c60d1b391bedc71eb037a4c2e218d97246642",
+            "sensitive_pattern_classes": []
+          },
+          {
+            "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/run-command.py",
+            "bytes": 2295,
+            "sha256": "a9f1cae10ab48a0734309f36c2862c79a7203c051eec187e193d503a93157a34",
+            "sensitive_pattern_classes": []
+          },
+          {
+            "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/saved-archive-dom.log",
+            "bytes": 660,
+            "sha256": "0155d09807bd55a47f23d0ed8042d9278411fbb9a0923577eb78228c5545876b",
+            "sensitive_pattern_classes": []
+          },
+          {
+            "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/saved-archive-dom.result.json",
+            "bytes": 528,
+            "sha256": "0a06b6d27096b6624182678f2dc80153ec723266c48d78e31ec423a9c3e106bb",
+            "sensitive_pattern_classes": []
+          },
+          {
+            "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/summary.json",
+            "bytes": 7402,
+            "sha256": "7b71732a0cddab3df4ca7061ce8d12f840552f9413d26c4ad3102fee49983018",
+            "sensitive_pattern_classes": []
+          },
+          {
+            "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/typecheck.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "sensitive_pattern_classes": []
+          },
+          {
+            "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/typecheck.result.json",
+            "bytes": 437,
+            "sha256": "d99c4e6cdbf1f3750076bdbd8877bac9d34da61246ecd372c19e46eca6ed8560",
+            "sensitive_pattern_classes": []
+          },
+          {
+            "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/restore-baseline/REPORT.md",
+            "bytes": 9349,
+            "sha256": "058e4a792a1ca6dac8d515d592199e5ed5bd02afa4ce8b392134351ac76cb28a",
+            "sensitive_pattern_classes": []
+          },
+          {
+            "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/restore-baseline/lint-summary.json",
+            "bytes": 24446,
+            "sha256": "5958be117239892e262eca406449e4066ec7de56e2be10af6d341c2658bfdd32",
+            "sensitive_pattern_classes": []
+          },
+          {
+            "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/restore-baseline/lint.log",
+            "bytes": 61049,
+            "sha256": "362fba87f1776bbb62991668c0c82ffc4991ad1840f26d2a12f636cda7a9fefe",
+            "sensitive_pattern_classes": []
+          },
+          {
+            "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/restore-baseline/preservation-final.json",
+            "bytes": 714,
+            "sha256": "13b9e5741e86aa686cfb49cfdaeff0545724e17d258bd53c7ef26c333a8b404c",
+            "sensitive_pattern_classes": []
+          },
+          {
+            "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/recovery-operations.json",
+            "bytes": 94338,
+            "sha256": "d16dcf3d5fdf2f53d172e28d23fb26f0a75626918a5e91814f81b043e4ab8a6b",
+            "sensitive_pattern_classes": []
+          },
+          {
+            "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/recovery-verification.json",
+            "bytes": 786,
+            "sha256": "5511d8d2554994f0b0839f7ce508d884d6560bda6f9c934fa2e9388b498fe8e4",
+            "sensitive_pattern_classes": []
+          },
+          {
+            "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/source/app/guin/[id]/page.tsx",
+            "bytes": 27479,
+            "sha256": "9dc7f3b16e137a034da9a01ebcba75738d8d03304a700b5bdc1db90594984644",
+            "sensitive_pattern_classes": []
+          },
+          {
+            "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip!/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/source/scripts/qa/guin-map-loading-dom.mjs",
+            "bytes": 8177,
+            "sha256": "428984d3ad015971fe841942066d21c77c0b3c513731bf67dbf5027ea668f6c7",
+            "sensitive_pattern_classes": []
+          }
+        ],
+        "crc_verified": true
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009.zip.sha256",
+        "bytes": 115,
+        "sha256": "87e490e6cf1b80c7d63bdd10a7f4a5afdc2953615135e67f0f562b3278168e7b",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/README.txt",
+        "bytes": 4415,
+        "sha256": "c0ef7dcf745d9debf6e4bac6cb5dca9e1b53d71a288c39fb124ab8e46136a9a2",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/SHA256SUMS",
+        "bytes": 4095,
+        "sha256": "8ffc3434d6afd69eeeae4cb5588cb157c6e4c0976c2a298cc26869f7cdc4ed6a",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/a10d920.bundle",
+        "bytes": 4275,
+        "sha256": "fd5e37081e4f5e1cec393e80a341bfb205a24a56c4cfa9711bd759e7940215fe",
+        "sensitive_pattern_classes": [],
+        "format": "git_bundle",
+        "validation": "Known incremental a10d920 bundle; verification recorded separately"
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/a10d920.patch",
+        "bytes": 12761,
+        "sha256": "1bac1708a95f834423c8d1298f7dc42d65b8f198bbc85e52e4c88a79d2e62e56",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/commit-manifest.json",
+        "bytes": 1015,
+        "sha256": "9f5b5ae2e8eae308e74e1ffde3f060e603d945db0c14b8ae112b09a6f15775db",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/LINEAGE_CORRECTION.md",
+        "bytes": 1114,
+        "sha256": "a69d48b7703bb26f719b7e10b4f1ad286dba3515f9a2301cb12fe81ab816f73e",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/LINT_CLASSIFICATION.md",
+        "bytes": 5837,
+        "sha256": "1abea3612de855885c00d7b2298bf5a4157fbecf1f5718cfe8e0afdae38e0067",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/REPORT.md",
+        "bytes": 6993,
+        "sha256": "106b4ba9e155a2b9fa981130a4b135e6d3fecb190894c495c7ca0d24383d2d94",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/build.log",
+        "bytes": 2233,
+        "sha256": "40786e8fe579bde5437a1ed2124ce0fd72834691245acea506a45f88380ff719",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/build.result.json",
+        "bytes": 364,
+        "sha256": "242be42ee0ec2099e04ca14de548150237eff962a4f7c0433798e971b8663ad8",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/chat-recovery-dom.log",
+        "bytes": 854,
+        "sha256": "dd55c0a78a95060aa3513ed043167a92824be37678ca3db6e62f634f8145c806",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/chat-recovery-dom.result.json",
+        "bytes": 528,
+        "sha256": "420dfbd7a3ea6531a56568a656edc9a75e8e529e632d3d7b2555022a45ce0141",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/guin-loading-final.log",
+        "bytes": 757,
+        "sha256": "5cae5b38191149ba9c308a07cff01881592907a56b63b140cdb1a4ffdf1fba6f",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/guin-loading-final.result.json",
+        "bytes": 533,
+        "sha256": "4f27f50d347bd2f8bd505bfaae2e5f5b8a832213b929429634807d19ede4a1d5",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/guin-loading-green.log",
+        "bytes": 758,
+        "sha256": "93de3bd3532959c9411baf22c9e64ba42d4cb1ac5f502465591607f0b8056453",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/guin-loading-green.result.json",
+        "bytes": 533,
+        "sha256": "0f7e1635a18aa5377b791378888d2fbd07042dc25a6d938152ea0947e0e9cd33",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/guin-loading-red.log",
+        "bytes": 5370,
+        "sha256": "a459da8ef6774b356f4d0a6ffd2161d2215a080c2a97a25a633d89b8c72cfb0a",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/guin-loading-red.result.json",
+        "bytes": 529,
+        "sha256": "2abb15e212f93abb8ea4ac201d40c03023f2d3ed4054dfa845d7ba5103d83cef",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/install-dom-test-tool.log",
+        "bytes": 147,
+        "sha256": "c5bfdac2f55cb5c129807b30107eda478bb3c9fad135a26625581baad5a6c482",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/install-dom-test-tool.result.json",
+        "bytes": 589,
+        "sha256": "84cfebb0f391973d838aeabf4d3fd20a100628bac19769277f62f1dc66c473e3",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/integration-preview.log",
+        "bytes": 921,
+        "sha256": "cb940b29c3508efb01bd84594222be856d3bd01671c2a4706b9d2e27139dd9fc",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/integration-preview.result.json",
+        "bytes": 455,
+        "sha256": "16a01703b772ead2525758df75ec440ba1ba70e5e8c2048c7df50dbcb5200ca1",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/lint-after-summary.json",
+        "bytes": 2307,
+        "sha256": "5084dd39b74e42176190e0b0032060cbd6419f466f1f772c876acfce4fd8b268",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/lint-after.json",
+        "bytes": 428449,
+        "sha256": "43878f7288928567d8ed134bbdd9617b10676523d036db9a24131e30a1f184cc",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/lint-after.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/lint-after.result.json",
+        "bytes": 600,
+        "sha256": "3764f28dce96d281cd486f3bda8c60d1b391bedc71eb037a4c2e218d97246642",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/run-command.py",
+        "bytes": 2295,
+        "sha256": "a9f1cae10ab48a0734309f36c2862c79a7203c051eec187e193d503a93157a34",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/saved-archive-dom.log",
+        "bytes": 660,
+        "sha256": "0155d09807bd55a47f23d0ed8042d9278411fbb9a0923577eb78228c5545876b",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/saved-archive-dom.result.json",
+        "bytes": 528,
+        "sha256": "0a06b6d27096b6624182678f2dc80153ec723266c48d78e31ec423a9c3e106bb",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/summary.json",
+        "bytes": 7402,
+        "sha256": "7b71732a0cddab3df4ca7061ce8d12f840552f9413d26c4ad3102fee49983018",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/typecheck.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/maintenance/typecheck.result.json",
+        "bytes": 437,
+        "sha256": "d99c4e6cdbf1f3750076bdbd8877bac9d34da61246ecd372c19e46eca6ed8560",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/restore-baseline/REPORT.md",
+        "bytes": 9349,
+        "sha256": "058e4a792a1ca6dac8d515d592199e5ed5bd02afa4ce8b392134351ac76cb28a",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/restore-baseline/lint-summary.json",
+        "bytes": 24446,
+        "sha256": "5958be117239892e262eca406449e4066ec7de56e2be10af6d341c2658bfdd32",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/restore-baseline/lint.log",
+        "bytes": 61049,
+        "sha256": "362fba87f1776bbb62991668c0c82ffc4991ad1840f26d2a12f636cda7a9fefe",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/evidence/restore-baseline/preservation-final.json",
+        "bytes": 714,
+        "sha256": "13b9e5741e86aa686cfb49cfdaeff0545724e17d258bd53c7ef26c333a8b404c",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/recovery-operations.json",
+        "bytes": 94338,
+        "sha256": "d16dcf3d5fdf2f53d172e28d23fb26f0a75626918a5e91814f81b043e4ab8a6b",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/recovery-verification.json",
+        "bytes": 786,
+        "sha256": "5511d8d2554994f0b0839f7ce508d884d6560bda6f9c934fa2e9388b498fe8e4",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/source/app/guin/[id]/page.tsx",
+        "bytes": 27479,
+        "sha256": "9dc7f3b16e137a034da9a01ebcba75738d8d03304a700b5bdc1db90594984644",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/source/scripts/qa/guin-map-loading-dom.mjs",
+        "bytes": 8177,
+        "sha256": "428984d3ad015971fe841942066d21c77c0b3c513731bf67dbf5027ea668f6c7",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/artifact-result.json",
+        "bytes": 562,
+        "sha256": "447c59676089f82b39ba98c079f7fa39e128008fec88e501f6cc00ba0e6378be",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/final-preservation.json",
+        "bytes": 415,
+        "sha256": "02f659bba88dfce7a1476824f6f02c419bd3b48de7771cec1c40d785dab612b0",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/library-upload-result.json",
+        "bytes": 532,
+        "sha256": "93b8e1e1afa34e725f7f0759fccace388fbc177d9387f591bfd1c24bd09eda61",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/prepare-backup.py",
+        "bytes": 11959,
+        "sha256": "9efdc2a14ab1e2f49b650a14fa084a067a0cf932b43e1b68f611435531782247",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/prepare-operations.json",
+        "bytes": 94712,
+        "sha256": "7202eb1a1bb1dc071b06d1cccf5b5674a7466bfddf971be5df896e44094e158c",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/push-operations.json",
+        "bytes": 1384,
+        "sha256": "1e7e9b4726f439ede276cff341e6040b3216a90d21788facb4aa00bce5dc6d86",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/push-preflight.json",
+        "bytes": 763,
+        "sha256": "60975c2241890647a2f59ac6cabe907749abbf0042b935452ea6c4ac19b1e4ab",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-preserve-a10d920-20261009/push-result.json",
+        "bytes": 892,
+        "sha256": "9e731a2a6ca3cf0e6c37105831bcda7a5d747931966c7a9b2ea765e0034d526c",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-reading-visit-evidence-20261009/baseline.json",
+        "bytes": 2438,
+        "sha256": "6f2aaf663ca79f5e8552834c096f595e481b8599bc798d6ae1bf6712a9a8cdb9",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-reading-visit-evidence-20261009/run-command.py",
+        "bytes": 2295,
+        "sha256": "a9f1cae10ab48a0734309f36c2862c79a7203c051eec187e193d503a93157a34",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-restore-evidence-20261009/INTEGRATION_BLOCKED.md",
+        "bytes": 3417,
+        "sha256": "f9953876e9ff0b8742783e05936f48db8b581a600edf0518b9ee229072515590",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-restore-evidence-20261009/NETWORK_BLOCK_CLASSIFICATION.md",
+        "bytes": 3649,
+        "sha256": "57f6669cd5c3f65dce001b0f26e6a04962e4259b1d1aa3428979619c3efadcee",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-restore-evidence-20261009/REPORT.md",
+        "bytes": 9349,
+        "sha256": "058e4a792a1ca6dac8d515d592199e5ed5bd02afa4ce8b392134351ac76cb28a",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-restore-evidence-20261009/baseline.json",
+        "bytes": 1302,
+        "sha256": "45c211578dd729b07d9c1f0f2f22eec611534239cf3e2cee5a14b8f7b675f840",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-restore-evidence-20261009/build.log",
+        "bytes": 2233,
+        "sha256": "bc801982a6bcf49ef2c36099aaea44748d04882f66374111680dbae7fe7422e3",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-restore-evidence-20261009/build.result.json",
+        "bytes": 360,
+        "sha256": "3b33b2d17b98e98206fa5050c050370af66e9631ff9e152f93c92d8041a02685",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-restore-evidence-20261009/candidate-access-report.json",
+        "bytes": 3080,
+        "sha256": "3db6c602effbedcb00c169e563b6063c454c974306e7277f6d917578a7175274",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-restore-evidence-20261009/d1-init-0000.log",
+        "bytes": 980,
+        "sha256": "9a8ab5f6aeefa8438daa924366d5a8f9b8d8a327445325930799a3ccde4c0002",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-restore-evidence-20261009/d1-init-0000.result.json",
+        "bytes": 639,
+        "sha256": "b25a0379ccf371850086b77a7f2691a00241e0cca6c8e2fa28749f048135ec7a",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-restore-evidence-20261009/d1-init-0001.log",
+        "bytes": 623,
+        "sha256": "7c80ce5b3230159c8ba8b1fdf9168634426de1fa32fe37efad5d3091912b1ec9",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-restore-evidence-20261009/d1-init-0001.result.json",
+        "bytes": 642,
+        "sha256": "0f1a243bcd3ff8d44bfb6466c62ec87165273ddb095c5829627876e3695515df",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-restore-evidence-20261009/dev-cycle.log",
+        "bytes": 2096,
+        "sha256": "f9730d9cc67004df01dcfb11c1060d7aced474d5fca46868c22d1e0ef4ffb3ff",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-restore-evidence-20261009/dev-cycle.py",
+        "bytes": 7732,
+        "sha256": "589292afbc33d0af66b489bbb8aacea773162f6432aa207866624f53f8438bac",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-restore-evidence-20261009/dev-cycle.result.json",
+        "bytes": 419,
+        "sha256": "a1a37566a2a90178b820aeb8cbae64700c9da35442c4f6eb65d406608cccc79f",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-restore-evidence-20261009/dev-first.log",
+        "bytes": 1523,
+        "sha256": "49639826f7a5af2ea909b64648bf34b1a015602da80f31db9fbe2bd3fdb7ed0b",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-restore-evidence-20261009/dev-persistence.json",
+        "bytes": 2012,
+        "sha256": "206c876e29ed8c35b4ebbc292b0d1138f0fc9e7fbeae0fc06eebe54b1459b2f0",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-restore-evidence-20261009/dev-restarted.log",
+        "bytes": 1105,
+        "sha256": "d86bb7273c28a77e7aa58d08d9a13412cac5b9c48efc14c9fa3ba41909ad999b",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-restore-evidence-20261009/install.log",
+        "bytes": 274,
+        "sha256": "0e3690075b9be9c3688bd274821448a1fae8be6e28eb6eebf0f679b990a13c12",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-restore-evidence-20261009/install.result.json",
+        "bytes": 370,
+        "sha256": "7b51622189a4acbac520675de739bc5a00250e7b95a83a91b591ab2f73ab6d3c",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-restore-evidence-20261009/integration-23.log",
+        "bytes": 921,
+        "sha256": "0d503ad2f164664765c8ff071ef728f95da9e0a5d8241d22a440f869dd778f24",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-restore-evidence-20261009/integration-23.result.json",
+        "bytes": 394,
+        "sha256": "26643e532389e961724193a10cbc3593dd292626a998377ede934da847c1f0b2",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-restore-evidence-20261009/jade-cpu.log",
+        "bytes": 1010,
+        "sha256": "55679c5d1a799436f8792fc69e2f42611a397799c4c5719160a4adcfeae06f10",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-restore-evidence-20261009/jade-cpu.result.json",
+        "bytes": 458,
+        "sha256": "ee2d850b226993eae11f47f581ff6907e40388a810ffd0d8faf6501e734d25be",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-restore-evidence-20261009/lint-summary.json",
+        "bytes": 24446,
+        "sha256": "5958be117239892e262eca406449e4066ec7de56e2be10af6d341c2658bfdd32",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-restore-evidence-20261009/lint.log",
+        "bytes": 61049,
+        "sha256": "362fba87f1776bbb62991668c0c82ffc4991ad1840f26d2a12f636cda7a9fefe",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-restore-evidence-20261009/lint.result.json",
+        "bytes": 357,
+        "sha256": "ef6b3e8e426c97840c116d53457154e5d5a36ab71516a0419903fa53392da17e",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-restore-evidence-20261009/preservation-final.json",
+        "bytes": 714,
+        "sha256": "13b9e5741e86aa686cfb49cfdaeff0545724e17d258bd53c7ef26c333a8b404c",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-restore-evidence-20261009/restore-assets.log",
+        "bytes": 132,
+        "sha256": "9cc87ad4e1b542a2f0e78aa45fb001f79eefb8e30299851397429f3f7f737b24",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-restore-evidence-20261009/restore-assets.result.json",
+        "bytes": 400,
+        "sha256": "63d430f8460ac8faa3381397052981f524379803d0529395290861fb4255794f",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-restore-evidence-20261009/restore-python-idempotence.log",
+        "bytes": 54,
+        "sha256": "4d7341d41f7216c84d65cf46d5088517541e646749b00556e9334b58b1fd053e",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-restore-evidence-20261009/restore-python-idempotence.result.json",
+        "bytes": 425,
+        "sha256": "1a9afaa2c50ed9b762e362a52e61514c1c835cc5d2654c192e5e4eff8b773e24",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-restore-evidence-20261009/run-command.py",
+        "bytes": 2295,
+        "sha256": "a9f1cae10ab48a0734309f36c2862c79a7203c051eec187e193d503a93157a34",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-restore-evidence-20261009/saved-archive-api.log",
+        "bytes": 802,
+        "sha256": "094e21a6fd5db4b0938a9ee45fe034cf0f3ee31fdcb960317d9127164164827a",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-restore-evidence-20261009/saved-archive-api.result.json",
+        "bytes": 396,
+        "sha256": "fd6ff27a4e977eba1dd48e16883800f8f9ff3e3e63344e423b6f31851cdb2797",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-restore-evidence-20261009/summary.json",
+        "bytes": 10125,
+        "sha256": "25b9d53b5a7595c31df9c4f3f1d0ec2cbcceddc825fec89594f4689c643ad6b0",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-restore-evidence-20261009/typecheck.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-restore-evidence-20261009/typecheck.result.json",
+        "bytes": 434,
+        "sha256": "9b9093374df543c9b2caa7887bb9599c2ebb7115adeccc74b3f164e7987ea959",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-restore-evidence-20261009/verify-assets.log",
+        "bytes": 374,
+        "sha256": "a6b588303ef5aa8d2bb5929b13b585b6fd44e94b11be7b2e777bac7d975e646f",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-restore-evidence-20261009/verify-assets.result.json",
+        "bytes": 398,
+        "sha256": "8f29395b1eb4585e0977e27bb4a7830e39b077d6d3b4e64fc7c6fe533d5a796d",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-restore-verify-20261009/outputs/chat-recovery/dom-results.json",
+        "bytes": 853,
+        "sha256": "a08a0faf7c11351e272122166ffd10de8ab06bf850839649af1b727038c57f11",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-restore-verify-20261009/outputs/saved-archive/api-results.json",
+        "bytes": 801,
+        "sha256": "6dca9b270b4e2fc79055adbf583afad95ae50c16d89ee81ab27bd8ffebcd9bd9",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-restore-verify-20261009/outputs/saved-archive/dom-results.json",
+        "bytes": 659,
+        "sha256": "f4eabae6d2da9ececcd32714974f43b444586a7e021e2cd6ec0bccf0e18d4812",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-saved-response-evidence-20261009/REPORT.md",
+        "bytes": 9961,
+        "sha256": "d1d66f15a6a00563fc753fcf12f4f59ee77999e25167c010da20f72344f5644f",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-saved-response-evidence-20261009/baseline.json",
+        "bytes": 2247,
+        "sha256": "77ef5b9fd9290afed34fd4a90bbbd4d91c139b78dd896659aaaf0488780e1971",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-saved-response-evidence-20261009/build.log",
+        "bytes": 2233,
+        "sha256": "1e8b7013eb5ee290deb68fa076069a9b8d7b13de67f73dd4c85674947c3741c7",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-saved-response-evidence-20261009/build.result.json",
+        "bytes": 367,
+        "sha256": "1ec58262fff3e14c3045acf1db31100ea0ea6334c27ef41a7c0949899aad05d0",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-saved-response-evidence-20261009/check-precommit.py",
+        "bytes": 3347,
+        "sha256": "fa57e92a4e76151c6c03ca31c4ce570a7858ba86131fb15db2f389f29b648a7b",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-saved-response-evidence-20261009/commit.log",
+        "bytes": 216,
+        "sha256": "10eb4dbf86223e53ae807fed7bedf8bfc4293466a34810a0600159ab548b70ef",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-saved-response-evidence-20261009/commit.result.json",
+        "bytes": 753,
+        "sha256": "93ac85c47bba76420707b845956a48616f14116270d5d31e15474bb7a33cfd17",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-saved-response-evidence-20261009/final-state.json",
+        "bytes": 2992,
+        "sha256": "0aa112f6b1bb375e46cfcb769d407bbe7fa864625e6f9f652d69d8f83bc9ebda",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-saved-response-evidence-20261009/integration-23.log",
+        "bytes": 921,
+        "sha256": "c9959fdb9c9ff56431dd8047bf8e0495efe99778d4029fa6d99ac462e1453500",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-saved-response-evidence-20261009/integration-23.result.json",
+        "bytes": 863,
+        "sha256": "5ef43e79c8b8797d6d23e8730814182a045b1d36858136334da7ca8abf5c7399",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-saved-response-evidence-20261009/lint-comparison.json",
+        "bytes": 240,
+        "sha256": "3af22ce5f9565416b7b3ef61a216f28e208b37bbd6e6874814d6a51371887d85",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-saved-response-evidence-20261009/lint.json",
+        "bytes": 427921,
+        "sha256": "a1de01e470a1aa63112539674fa93f0950c11a6bc7c067e5d7f0546560d63a17",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-saved-response-evidence-20261009/lint.log",
+        "bytes": 196,
+        "sha256": "7fe05707c2b51ba54571a10f8d37693fbfd533897e702dfbcb1970b0f2fdc720",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-saved-response-evidence-20261009/lint.result.json",
+        "bytes": 496,
+        "sha256": "d30ca107c6067591a3ab27804b91b09ac509444357e3765b2ab23f2f9479174e",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-saved-response-evidence-20261009/precommit.json",
+        "bytes": 1514,
+        "sha256": "05130c0e0e7838644c3a3613c0f53b8c200b9f4e2d52dc3cfed01f5d8f52ca76",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-saved-response-evidence-20261009/push.log",
+        "bytes": 166,
+        "sha256": "398057418bae6518906e96354b0c81c1caa797bb42af2ebde3f8894927a79f60",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-saved-response-evidence-20261009/push.result.json",
+        "bytes": 547,
+        "sha256": "564ca2aef435ec838c40454c033986d64d14fb2b348db931638ae73799f418ea",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-saved-response-evidence-20261009/remote-before.json",
+        "bytes": 560,
+        "sha256": "83241368472c28001a9274301f3510f76de9f66b1783a2e4aad7569143640b75",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-saved-response-evidence-20261009/run-command.py",
+        "bytes": 2295,
+        "sha256": "a9f1cae10ab48a0734309f36c2862c79a7203c051eec187e193d503a93157a34",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-saved-response-evidence-20261009/saved-archive-api.log",
+        "bytes": 802,
+        "sha256": "094e21a6fd5db4b0938a9ee45fe034cf0f3ee31fdcb960317d9127164164827a",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-saved-response-evidence-20261009/saved-archive-api.result.json",
+        "bytes": 866,
+        "sha256": "f23b5ad6558a6eed1a08c2f6ffdb92464d2d6e1563f6e23b8602ca4fa06dabdf",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-saved-response-evidence-20261009/saved-archive-dom.log",
+        "bytes": 660,
+        "sha256": "0155d09807bd55a47f23d0ed8042d9278411fbb9a0923577eb78228c5545876b",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-saved-response-evidence-20261009/saved-archive-dom.result.json",
+        "bytes": 535,
+        "sha256": "62a3a93b8504c2edece0ea38322138e294cc37acb43490617e59c3f53767dcee",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-saved-response-evidence-20261009/saved-response-green-built.log",
+        "bytes": 1532,
+        "sha256": "6f1cbc913c9bab5c02598941f1262b82957b0c4d6e081e00b92bc72b8147a465",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-saved-response-evidence-20261009/saved-response-green-built.result.json",
+        "bytes": 1006,
+        "sha256": "3785c06c993d1c72cf70fc85541c49de3b8c1bc2e2289ceb91c09d8515559f02",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-saved-response-evidence-20261009/saved-response-green-final.log",
+        "bytes": 3952,
+        "sha256": "34eedeaa0347f3d3a17554f3ae7088dba4adde3279cd3d7eef1e579dfc48b720",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-saved-response-evidence-20261009/saved-response-green-final.result.json",
+        "bytes": 1006,
+        "sha256": "a79a2c1acd86c836dc7e02622db8fe5deb13cb2c1688a9c333a070814f08d9b3",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-saved-response-evidence-20261009/saved-response-green.log",
+        "bytes": 1532,
+        "sha256": "9ed24f26b996f50d25fc5664e7f34f4069505d10c44c150bbe0ed5f52c2aa6f0",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-saved-response-evidence-20261009/saved-response-green.result.json",
+        "bytes": 969,
+        "sha256": "c13dc0e690f816114ef019e291ba387c2483be6de9422eaab34e85bec3ec7b33",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-saved-response-evidence-20261009/saved-response-red.log",
+        "bytes": 4669,
+        "sha256": "fa1c2c57566117610d7c0392e3f35d83aaaf67f72062eba76dc25753540704f2",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-saved-response-evidence-20261009/saved-response-red.result.json",
+        "bytes": 958,
+        "sha256": "6e1cb789ab2107263d164e57c82025532df52e56cc238c5ede74e552c68e7072",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-saved-response-evidence-20261009/typecheck.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-saved-response-evidence-20261009/typecheck.result.json",
+        "bytes": 441,
+        "sha256": "79baada08a0411f597620eec91699afd54bf7b6a9bc90f451b4e371e0cee35d0",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-saved-response-run-20261009/outputs/saved-archive/api-results.json",
+        "bytes": 801,
+        "sha256": "6dca9b270b4e2fc79055adbf583afad95ae50c16d89ee81ab27bd8ffebcd9bd9",
+        "sensitive_pattern_classes": []
+      },
+      {
+        "path": "archives/2026-10-09-cloud-environment/cloud-verification-artifacts.zip!/scratch/saju-saved-response-run-20261009/outputs/saved-archive/dom-results.json",
+        "bytes": 659,
+        "sha256": "f4eabae6d2da9ececcd32714974f43b444586a7e021e2cd6ec0bccf0e18d4812",
+        "sensitive_pattern_classes": []
+      }
+    ],
+    "crc_verified": true
+  },
+  "secret_pattern_classes": [
+    "private_key",
+    "aws_access_key",
+    "google_api_key",
+    "openai_key",
+    "github_token",
+    "slack_token",
+    "signed_download_url"
+  ],
+  "bundle_verification": {
+    "path": "/workspace/scratch/saju-preserve-a10d920-20261009/SaJu_Map_GET_Race_Reapplied_a10d920_20261009/a10d920.bundle",
+    "exit_code": 0,
+    "heads": "a10d920e6e492ba16f75a16cbbbf53a63eb4f178 refs/heads/maint/guin-map-loading-20261009",
+    "limitation": "Incremental bundle requires existing 40f0c9a baseline; existing recovery proof retained"
+  }
+}

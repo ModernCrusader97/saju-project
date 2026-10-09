@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-09T12:55:58.550679+00:00",
+  "ref": "refs/heads/archive/saju-local-authoring-20261009",
+  "commit": "956fe6e2a7f3de3a0aabe3c59d9d5db3795c7123",
+  "archive_path": "archives/2026-10-09-local-authoring/source/saju-source-candidates-and-qa--part-01.zip",
+  "archive_bytes": 11325604,
+  "archive_sha256": "4785de1b27c56d95252c603c3a229a2fdd985868eeae07b746caa5c96e8f8674",
+  "member": "saju_planet_preview/public/models/porcelain-hero-blink-v1.glb",
+  "member_bytes": 13700928,
+  "member_sha256": "57d7ee5b3c4e0b99eaadefb8095283bed44986beaa5a91c096dd7a0c514bf9c2",
+  "member_crc_verified": true,
+  "byte_equal_to_cloud_runtime": true,
+  "action": "Skip duplicate upload; no changes to the other worker branch",
+  "inspection_scope": "Only the matching known porcelain model member; no Library files or candidate materialization"
+}

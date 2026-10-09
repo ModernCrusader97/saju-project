@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-09T12:51:52.785722+00:00",
+  "ref": "refs/heads/archive/saju-local-authoring-20261009",
+  "sha": "956fe6e2a7f3de3a0aabe3c59d9d5db3795c7123",
+  "files": 329,
+  "native_model_files": 24,
+  "raw_porcelain_exact_matches": [],
+  "raw_porcelain_still_missing": true,
+  "action": "Read-only comparison; no writes to the other worker branch"
+}
