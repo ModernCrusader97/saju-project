@@ -1,0 +1,117 @@
+{
+  "basis": "b4459dd9fb74af57f3cfeed9bfb630393096f448",
+  "branch": "fix/galaxy-orbit-anchor-20261010",
+  "repository": "ModernCrusader97/saju-project",
+  "repositoryVisibility": "private",
+  "provenance": "Reapply the principle of the user-confirmed v29 fix. No reusable exact fix was found in 19 remote HEADs, their GalaxyCanvas history, or preserved nested source ZIPs. Not a new discovery or byte-identical v29 restoration.",
+  "productionChange": "Clone the two mutable QuadraticBezierCurve3 endpoints at construction; preserve original node.worldPos anchors. One implementation line and one explanatory comment.",
+  "rates": [
+    30,
+    60,
+    144
+  ],
+  "durationSecondsPerRate": 3600,
+  "simulatedFramesPerRate": [
+    108000,
+    216000,
+    518400
+  ],
+  "cpu": {
+    "before": {
+      "passed": 3,
+      "failed": 13
+    },
+    "after": {
+      "passed": 16,
+      "failed": 0
+    },
+    "anchorsMovedAfter": 0,
+    "maxPathErrorAfter": 1.0185645193545308e-8,
+    "tolerance": 0.000001,
+    "harnessByteIdentical": true,
+    "hostByteIdentical": true
+  },
+  "webGL": {
+    "before": {
+      "passed": 4,
+      "failed": 8
+    },
+    "after": {
+      "passed": 12,
+      "failed": 0
+    },
+    "sampleSeconds": 60,
+    "maxPathErrorAfter": 2.5158972466487946e-7,
+    "tolerance": 0.00002,
+    "nativeUniformReadback": true,
+    "harnessByteIdentical": true,
+    "buildFingerprintsDiffer": true,
+    "browser": "151.0.7922.173"
+  },
+  "regressions": {
+    "backgroundCPU": {
+      "passed": 17,
+      "failed": 0
+    },
+    "backgroundWebGL": {
+      "passed": 5,
+      "failed": 0
+    },
+    "dom": {
+      "passed": 15,
+      "failed": 0
+    },
+    "galaxyBrowser": {
+      "passed": 1,
+      "failed": 0,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ]
+    }
+  },
+  "type": {
+    "exitCode": 0
+  },
+  "build": {
+    "beforeExitCode": 0,
+    "afterExitCode": 0
+  },
+  "existingRelevantLint": {
+    "errors": 6,
+    "warnings": 4,
+    "unchanged": true
+  },
+  "nodeVersion": "v24.19.0",
+  "hashes": {
+    "applicationBefore": "674cd14bcc57aee27d89dea1826e66cb6a4dfb120c9797daf7e02d473f64b7ec",
+    "applicationAfter": "aaa0ce4b6c079d4aef2de8d16c55f58697e5f424cf4834d84148a084bb9954cc",
+    "cpuHarness": "ec238c0d1461342b07553ad975303966cb9378cfbb5f5173bd092343cbbf34b0",
+    "cpuHost": "c27e8e7bd6290a24acdfa3bf721b28df1f111705e6c2563bd8900999da4b3177",
+    "gpuHarness": "b829e4adcebdb1323ffce9de48f639421741fff9bd00063e44866a4cc114070e",
+    "builtClientBefore": "d9a8bc52be366a84a9ce2f8db91ceda8f6a043d169338290103fb1bdfe204ff2",
+    "builtClientAfter": "c15f539f5ea00686dfef6f7aca528a128380de779495fd6b0108574335359d26"
+  },
+  "limits": [
+    "Every simulated rAF executes the actual built animation and renderer, including native uniform uploads. Intermediate native draw/clear is suppressed; real shaders render once per simulated minute and in the pause check.",
+    "Native modelMatrix values are read back with gl.getUniform; milestone pixels are real WebGL PNGs after gl.finish.",
+    "Chromium/SwiftShader with synthetic clock/rAF and disposable local D1; no claim of physical GPU frame rate or OS tab suspension"
+  ],
+  "remainingProvenanceLimit": "Exact v29 source/patch bytes not recovered; its reported fix principle is reapplied and independently verified.",
+  "includedData": "Synthetic people and disposable local D1; no secrets, .env or real user DB.",
+  "forbiddenOperationsPerformed": {
+    "mainMerge": false,
+    "existingBranchWrite": false,
+    "pullRequest": false,
+    "deployment": false,
+    "authenticationChanges": false,
+    "permissionChanges": false
+  },
+  "newQaLint": {
+    "exitCode": 0,
+    "errors": 0,
+    "warnings": 0
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "basis": "b4459dd9fb74af57f3cfeed9bfb630393096f448",
+  "browser": "151.0.7922.173",
+  "passed": 5,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "built WebGL playing resume matches ordinary frames",
+      "status": "PASS"
+    },
+    {
+      "name": "built WebGL user pause resume matches ordinary frames",
+      "status": "PASS"
+    },
+    {
+      "name": "built reduced-motion remains visually static across long gap",
+      "status": "PASS"
+    },
+    {
+      "name": "built resize preserves drawing and one animation chain",
+      "status": "PASS"
+    },
+    {
+      "name": "browser errors and outbound requests remain empty",
+      "status": "PASS"
+    }
+  ],
+  "observations": [
+    {
+      "scenario": "playing resume",
+      "hiddenGapMs": 300000,
+      "control": {
+        "first": {
+          "rasterHash": "cf25400bae24b091c7cfa6ab4ec1f653e18c82c464bd9a460ff41ba3e47fb551",
+          "stateHash": "29299063b927a9ffbab73d34e7e971ce90f712a51a976828ddac6d75b94b8b06"
+        },
+        "after": {
+          "rasterHash": "9d6803eaeb9d67072592cdebcdaf83d024f533ab348ea3de296eef5a926dfb1b",
+          "stateHash": "9572f8f214d5427be92fdf888755a6a6e4ebbf97c0bd7030c9d9a3f5709cabfe"
+        }
+      },
+      "resumed": {
+        "first": {
+          "rasterHash": "cf25400bae24b091c7cfa6ab4ec1f653e18c82c464bd9a460ff41ba3e47fb551",
+          "stateHash": "29299063b927a9ffbab73d34e7e971ce90f712a51a976828ddac6d75b94b8b06"
+        },
+        "after": {
+          "rasterHash": "9d6803eaeb9d67072592cdebcdaf83d024f533ab348ea3de296eef5a926dfb1b",
+          "stateHash": "9572f8f214d5427be92fdf888755a6a6e4ebbf97c0bd7030c9d9a3f5709cabfe"
+        }
+      },
+      "matchingPixelsAndGPUState": true
+    },
+    {
+      "scenario": "paused resume",
+      "hiddenGapMs": 300000,
+      "control": {
+        "first": {
+          "rasterHash": "ee3945122c07556524f1ef3de2ac9f1ea89cb5e5ce0f4a28d92ae55e17b15792",
+          "stateHash": "f6f96f0bade5503dd82fb9cb0d02ea80640d3332d2ca895e6a05f6d501bd4a48"
+        },
+        "after": {
+          "rasterHash": "ee3945122c07556524f1ef3de2ac9f1ea89cb5e5ce0f4a28d92ae55e17b15792",
+          "stateHash": "f6f96f0bade5503dd82fb9cb0d02ea80640d3332d2ca895e6a05f6d501bd4a48"
+        }
+      },
+      "resumed": {
+        "first": {
+          "rasterHash": "ee3945122c07556524f1ef3de2ac9f1ea89cb5e5ce0f4a28d92ae55e17b15792",
+          "stateHash": "f6f96f0bade5503dd82fb9cb0d02ea80640d3332d2ca895e6a05f6d501bd4a48"
+        },
+        "after": {
+          "rasterHash": "ee3945122c07556524f1ef3de2ac9f1ea89cb5e5ce0f4a28d92ae55e17b15792",
+          "stateHash": "f6f96f0bade5503dd82fb9cb0d02ea80640d3332d2ca895e6a05f6d501bd4a48"
+        }
+      },
+      "matchingPixelsAndGPUState": true
+    },
+    {
+      "scenario": "reduced motion",
+      "hiddenGapMs": 86400000,
+      "matchingPixels": true
+    },
+    {
+      "scenario": "resize",
+      "viewportWidth": 320,
+      "overflow": 0,
+      "width": 286,
+      "displayWidth": 286,
+      "height": 498,
+      "displayHeight": 498,
+      "state": "ready"
+    },
+    {
+      "scenario": "resize",
+      "viewportWidth": 768,
+      "overflow": 0,
+      "width": 689,
+      "displayWidth": 689,
+      "height": 598,
+      "displayHeight": 598,
+      "state": "ready"
+    },
+    {
+      "scenario": "resize",
+      "viewportWidth": 1440,
+      "overflow": 0,
+      "width": 974,
+      "displayWidth": 974,
+      "height": 678,
+      "displayHeight": 678,
+      "state": "ready"
+    }
+  ],
+  "errors": [],
+  "outbound": [],
+  "limits": [
+    "Synthetic clock, rAF and visibility events; native hidden-tab state is not emulated by this environment",
+    "Actual built Worker, disposable synthetic D1, Chromium/SwiftShader WebGL; no physical GPU/mobile tab suspension",
+    "Existing shared Vector3 orbit-anchor drift is a separate baseline diagnostic; paused comparison means equivalent frames, not globally frozen orbits"
+  ]
+}

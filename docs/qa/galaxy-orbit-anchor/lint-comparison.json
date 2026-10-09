@@ -1,0 +1,265 @@
+{
+  "unchanged": true,
+  "existingErrors": 6,
+  "existingWarnings": 4,
+  "results": [
+    {
+      "file": "components/planet/GalaxyCanvas.tsx",
+      "messages": [
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'prevMouse' is assigned a value but never used.",
+          "line": 139,
+          "column": 9,
+          "nodeType": "Identifier",
+          "messageId": "unusedVar",
+          "endLine": 139,
+          "endColumn": 18
+        },
+        {
+          "ruleId": "react-hooks/immutability",
+          "severity": 2,
+          "message": "Error: Cannot access variable before it is declared\n\n`updateCameraPosition` is accessed before it is declared, which prevents the earlier access from updating when this value changes over time.\n\n/workspace/saju-galaxy-anchor-fix/components/planet/GalaxyCanvas.tsx:195:5\n  193 |     const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1200);\n  194 |     cameraRef.current = camera;\n> 195 |     updateCameraPosition();\n      |     ^^^^^^^^^^^^^^^^^^^^ `updateCameraPosition` accessed before it is declared\n  196 |\n  197 |     let renderer: THREE.WebGLRenderer;\n  198 |     try {\n\n/workspace/saju-galaxy-anchor-fix/components/planet/GalaxyCanvas.tsx:474:3\n  472 |   }, []);\n  473 |\n> 474 |   const updateCameraPosition = () => {\n      |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 475 |     if (!cameraRef.current) return;\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 476 |     const { theta, phi, radius } = cameraAngle.current;\n      …\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 485 |     cameraRef.current.lookAt(currentLookAt.current);\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 486 |   };\n      | ^^^^^ `updateCameraPosition` is declared here\n  487 |\n  488 |   const startTrackingPlanet = useCallback((personId: string, isOwner: boolean) => {\n  489 |     trackedPlanetIdRef.current = personId;",
+          "line": 195,
+          "column": 5,
+          "nodeType": null,
+          "endLine": 195,
+          "endColumn": 25
+        },
+        {
+          "ruleId": "react-hooks/set-state-in-effect",
+          "severity": 2,
+          "message": "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\n/workspace/saju-galaxy-anchor-fix/components/planet/GalaxyCanvas.tsx:206:7\n  204 |     });\n  205 |     } catch {\n> 206 |       setGraphicsError(\"3D 화면을 사용할 수 없어요. WebGL을 지원하는 브라우저에서 다시 열어주세요.\");\n      |       ^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect\n  207 |       return;\n  208 |     }\n  209 |     let shaderFailed = false;",
+          "line": 206,
+          "column": 7,
+          "nodeType": null,
+          "endLine": 206,
+          "endColumn": 23
+        },
+        {
+          "ruleId": "react-hooks/immutability",
+          "severity": 2,
+          "message": "Error: Cannot access variable before it is declared\n\n`startTrackingPlanet` is accessed before it is declared, which prevents the earlier access from updating when this value changes over time.\n\n/workspace/saju-galaxy-anchor-fix/components/planet/GalaxyCanvas.tsx:298:13\n  296 |\n  297 |             // 실시간 궤도 추적 락온\n> 298 |             startTrackingPlanet(val.node.person.id, val.node.isOwner);\n      |             ^^^^^^^^^^^^^^^^^^^ `startTrackingPlanet` accessed before it is declared\n  299 |           }\n  300 |         });\n  301 |       }\n\n/workspace/saju-galaxy-anchor-fix/components/planet/GalaxyCanvas.tsx:488:3\n  486 |   };\n  487 |\n> 488 |   const startTrackingPlanet = useCallback((personId: string, isOwner: boolean) => {\n      |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 489 |     trackedPlanetIdRef.current = personId;\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 490 |     targetRadius.current = isOwner ? 6.2 : 5.2;\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 491 |     cameraAngle.current.phi = 0.44;\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 492 |     setFocusMode(isOwner ? \"owner\" : \"friend\");\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 493 |   }, []);\n      | ^^^^^^^^^^ `startTrackingPlanet` is declared here\n  494 |\n  495 |   const flyCameraToOverview = useCallback(() => {\n  496 |     trackedPlanetIdRef.current = null;",
+          "line": 298,
+          "column": 13,
+          "nodeType": null,
+          "endLine": 298,
+          "endColumn": 32
+        },
+        {
+          "ruleId": "react-hooks/exhaustive-deps",
+          "severity": 1,
+          "message": "The ref value 'toastTimersRef.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'toastTimersRef.current' to a variable inside the effect, and use that variable in the cleanup function.",
+          "line": 453,
+          "column": 22,
+          "nodeType": "Identifier",
+          "endLine": 453,
+          "endColumn": 29
+        },
+        {
+          "ruleId": "react-hooks/exhaustive-deps",
+          "severity": 1,
+          "message": "React Hook useEffect has missing dependencies: 'onSelectPerson' and 'startTrackingPlanet'. Either include them or remove the dependency array. If 'onSelectPerson' changes too often, find the parent component that defines it and wrap that definition in useCallback.",
+          "line": 472,
+          "column": 6,
+          "nodeType": "ArrayExpression",
+          "endLine": 472,
+          "endColumn": 8,
+          "suggestions": [
+            {
+              "desc": "Update the dependencies array to be: [onSelectPerson, startTrackingPlanet]",
+              "fix": {
+                "range": [
+                  18201,
+                  18203
+                ],
+                "text": "[onSelectPerson, startTrackingPlanet]"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "react-hooks/preserve-manual-memoization",
+          "severity": 2,
+          "message": "Compilation Skipped: Existing memoization could not be preserved\n\nReact Compiler has skipped optimizing this component because the existing manual memoization could not be preserved. This value was memoized in source but not in compilation output.\n\n/workspace/saju-galaxy-anchor-fix/components/planet/GalaxyCanvas.tsx:488:43\n  486 |   };\n  487 |\n> 488 |   const startTrackingPlanet = useCallback((personId: string, isOwner: boolean) => {\n      |                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 489 |     trackedPlanetIdRef.current = personId;\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 490 |     targetRadius.current = isOwner ? 6.2 : 5.2;\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 491 |     cameraAngle.current.phi = 0.44;\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 492 |     setFocusMode(isOwner ? \"owner\" : \"friend\");\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 493 |   }, []);\n      | ^^^^ Could not preserve existing memoization\n  494 |\n  495 |   const flyCameraToOverview = useCallback(() => {\n  496 |     trackedPlanetIdRef.current = null;",
+          "line": 488,
+          "column": 43,
+          "nodeType": null,
+          "endLine": 493,
+          "endColumn": 4
+        },
+        {
+          "ruleId": "react-hooks/exhaustive-deps",
+          "severity": 1,
+          "message": "React Hook useEffect has missing dependencies: 'selectedPersonId' and 'startTrackingPlanet'. Either include them or remove the dependency array.",
+          "line": 730,
+          "column": 6,
+          "nodeType": "ArrayExpression",
+          "endLine": 730,
+          "endColumn": 63,
+          "suggestions": [
+            {
+              "desc": "Update the dependencies array to be: [guins, distanceScale, showOrbitGuides, incomingPersonId, startTrackingPlanet, selectedPersonId]",
+              "fix": {
+                "range": [
+                  27351,
+                  27408
+                ],
+                "text": "[guins, distanceScale, showOrbitGuides, incomingPersonId, startTrackingPlanet, selectedPersonId]"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "react/no-unescaped-entities",
+          "severity": 2,
+          "message": "`'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.",
+          "line": 1016,
+          "column": 25,
+          "nodeType": "JSXText",
+          "messageId": "unescapedEntityAlts",
+          "suggestions": [
+            {
+              "messageId": "replaceWithAlt",
+              "data": {
+                "alt": "&apos;"
+              },
+              "fix": {
+                "range": [
+                  41294,
+                  41308
+                ],
+                "text": "&apos;체험용 인연 행성 추가'"
+              },
+              "desc": "Replace with `&apos;`."
+            },
+            {
+              "messageId": "replaceWithAlt",
+              "data": {
+                "alt": "&lsquo;"
+              },
+              "fix": {
+                "range": [
+                  41294,
+                  41308
+                ],
+                "text": "&lsquo;체험용 인연 행성 추가'"
+              },
+              "desc": "Replace with `&lsquo;`."
+            },
+            {
+              "messageId": "replaceWithAlt",
+              "data": {
+                "alt": "&#39;"
+              },
+              "fix": {
+                "range": [
+                  41294,
+                  41308
+                ],
+                "text": "&#39;체험용 인연 행성 추가'"
+              },
+              "desc": "Replace with `&#39;`."
+            },
+            {
+              "messageId": "replaceWithAlt",
+              "data": {
+                "alt": "&rsquo;"
+              },
+              "fix": {
+                "range": [
+                  41294,
+                  41308
+                ],
+                "text": "&rsquo;체험용 인연 행성 추가'"
+              },
+              "desc": "Replace with `&rsquo;`."
+            }
+          ]
+        },
+        {
+          "ruleId": "react/no-unescaped-entities",
+          "severity": 2,
+          "message": "`'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.",
+          "line": 1016,
+          "column": 38,
+          "nodeType": "JSXText",
+          "messageId": "unescapedEntityAlts",
+          "suggestions": [
+            {
+              "messageId": "replaceWithAlt",
+              "data": {
+                "alt": "&apos;"
+              },
+              "fix": {
+                "range": [
+                  41294,
+                  41308
+                ],
+                "text": "'체험용 인연 행성 추가&apos;"
+              },
+              "desc": "Replace with `&apos;`."
+            },
+            {
+              "messageId": "replaceWithAlt",
+              "data": {
+                "alt": "&lsquo;"
+              },
+              "fix": {
+                "range": [
+                  41294,
+                  41308
+                ],
+                "text": "'체험용 인연 행성 추가&lsquo;"
+              },
+              "desc": "Replace with `&lsquo;`."
+            },
+            {
+              "messageId": "replaceWithAlt",
+              "data": {
+                "alt": "&#39;"
+              },
+              "fix": {
+                "range": [
+                  41294,
+                  41308
+                ],
+                "text": "'체험용 인연 행성 추가&#39;"
+              },
+              "desc": "Replace with `&#39;`."
+            },
+            {
+              "messageId": "replaceWithAlt",
+              "data": {
+                "alt": "&rsquo;"
+              },
+              "fix": {
+                "range": [
+                  41294,
+                  41308
+                ],
+                "text": "'체험용 인연 행성 추가&rsquo;"
+              },
+              "desc": "Replace with `&rsquo;`."
+            }
+          ]
+        }
+      ],
+      "errorCount": 6,
+      "warningCount": 4
+    },
+    {
+      "file": "lib/planet/surface-math.ts",
+      "messages": [],
+      "errorCount": 0,
+      "warningCount": 0
+    },
+    {
+      "file": "lib/planet/galaxy-helper.ts",
+      "messages": [],
+      "errorCount": 0,
+      "warningCount": 0
+    }
+  ]
+}

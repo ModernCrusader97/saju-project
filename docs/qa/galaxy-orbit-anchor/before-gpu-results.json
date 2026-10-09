@@ -1,0 +1,3271 @@
+{
+  "phase": "before",
+  "basis": "b4459dd9fb74af57f3cfeed9bfb630393096f448",
+  "browser": "151.0.7922.173",
+  "applicationSourceSha256": "674cd14bcc57aee27d89dea1826e66cb6a4dfb120c9797daf7e02d473f64b7ec",
+  "builtClientFingerprint": "d9a8bc52be366a84a9ce2f8db91ceda8f6a043d169338290103fb1bdfe204ff2",
+  "harnessSha256": "b829e4adcebdb1323ffce9de48f639421741fff9bd00063e44866a4cc114070e",
+  "durationSeconds": 3600,
+  "sampleSeconds": 60,
+  "fpsRates": [
+    30,
+    60,
+    144
+  ],
+  "tolerance": 0.00002,
+  "passed": 4,
+  "failed": 8,
+  "checks": [
+    {
+      "name": "30fps WebGL: native model matrices follow original paths for one hour",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: Native GPU modelMatrix diverges from the original orbit\n    at file:///workspace/saju-galaxy-anchor-fix/scripts/qa/galaxy-orbit-anchor-browser.mjs:219:102\n    at check (file:///workspace/saju-galaxy-anchor-fix/scripts/qa/galaxy-orbit-anchor-browser.mjs:22:15)\n    at file:///workspace/saju-galaxy-anchor-fix/scripts/qa/galaxy-orbit-anchor-browser.mjs:219:13"
+    },
+    {
+      "name": "30fps WebGL: radii remain bounded",
+      "status": "PASS"
+    },
+    {
+      "name": "30fps WebGL: angular speed and travel do not accumulate",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(records.every(record => record.maxAngularStepError < tolerance))\n\n    at file:///workspace/saju-galaxy-anchor-fix/scripts/qa/galaxy-orbit-anchor-browser.mjs:222:9\n    at check (file:///workspace/saju-galaxy-anchor-fix/scripts/qa/galaxy-orbit-anchor-browser.mjs:22:15)\n    at file:///workspace/saju-galaxy-anchor-fix/scripts/qa/galaxy-orbit-anchor-browser.mjs:221:13"
+    },
+    {
+      "name": "60fps WebGL: native model matrices follow original paths for one hour",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: Native GPU modelMatrix diverges from the original orbit\n    at file:///workspace/saju-galaxy-anchor-fix/scripts/qa/galaxy-orbit-anchor-browser.mjs:219:102\n    at check (file:///workspace/saju-galaxy-anchor-fix/scripts/qa/galaxy-orbit-anchor-browser.mjs:22:15)\n    at file:///workspace/saju-galaxy-anchor-fix/scripts/qa/galaxy-orbit-anchor-browser.mjs:219:13"
+    },
+    {
+      "name": "60fps WebGL: radii remain bounded",
+      "status": "PASS"
+    },
+    {
+      "name": "60fps WebGL: angular speed and travel do not accumulate",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(records.every(record => record.maxAngularStepError < tolerance))\n\n    at file:///workspace/saju-galaxy-anchor-fix/scripts/qa/galaxy-orbit-anchor-browser.mjs:222:9\n    at check (file:///workspace/saju-galaxy-anchor-fix/scripts/qa/galaxy-orbit-anchor-browser.mjs:22:15)\n    at file:///workspace/saju-galaxy-anchor-fix/scripts/qa/galaxy-orbit-anchor-browser.mjs:221:13"
+    },
+    {
+      "name": "144fps WebGL: native model matrices follow original paths for one hour",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: Native GPU modelMatrix diverges from the original orbit\n    at file:///workspace/saju-galaxy-anchor-fix/scripts/qa/galaxy-orbit-anchor-browser.mjs:219:102\n    at check (file:///workspace/saju-galaxy-anchor-fix/scripts/qa/galaxy-orbit-anchor-browser.mjs:22:15)\n    at file:///workspace/saju-galaxy-anchor-fix/scripts/qa/galaxy-orbit-anchor-browser.mjs:219:13"
+    },
+    {
+      "name": "144fps WebGL: radii remain bounded",
+      "status": "PASS"
+    },
+    {
+      "name": "144fps WebGL: angular speed and travel do not accumulate",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(records.every(record => record.maxAngularStepError < tolerance))\n\n    at file:///workspace/saju-galaxy-anchor-fix/scripts/qa/galaxy-orbit-anchor-browser.mjs:222:9\n    at check (file:///workspace/saju-galaxy-anchor-fix/scripts/qa/galaxy-orbit-anchor-browser.mjs:22:15)\n    at file:///workspace/saju-galaxy-anchor-fix/scripts/qa/galaxy-orbit-anchor-browser.mjs:221:13"
+    },
+    {
+      "name": "WebGL 30/60/144fps final planet centers agree",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(new THREE.Vector3(...position).distanceTo(new THREE.Vector3(...reference[index])) < tolerance)\n\n    at file:///workspace/saju-galaxy-anchor-fix/scripts/qa/galaxy-orbit-anchor-browser.mjs:230:7\n    at Array.forEach (<anonymous>)\n    at file:///workspace/saju-galaxy-anchor-fix/scripts/qa/galaxy-orbit-anchor-browser.mjs:229:91\n    at check (file:///workspace/saju-galaxy-anchor-fix/scripts/qa/galaxy-orbit-anchor-browser.mjs:22:15)\n    at file:///workspace/saju-galaxy-anchor-fix/scripts/qa/galaxy-orbit-anchor-browser.mjs:227:9"
+    },
+    {
+      "name": "actual WebGL user pause holds planet centers",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(first.every((position, index) => position.distanceTo(last[index]) < tolerance))\n\n    at file:///workspace/saju-galaxy-anchor-fix/scripts/qa/galaxy-orbit-anchor-browser.mjs:239:48\n    at async check (file:///workspace/saju-galaxy-anchor-fix/scripts/qa/galaxy-orbit-anchor-browser.mjs:22:9)\n    at async file:///workspace/saju-galaxy-anchor-fix/scripts/qa/galaxy-orbit-anchor-browser.mjs:233:3"
+    },
+    {
+      "name": "browser errors and outbound requests remain empty",
+      "status": "PASS"
+    }
+  ],
+  "observations": [
+    {
+      "fps": 30,
+      "durationSeconds": 3600,
+      "simulatedFrames": 108000,
+      "nativeRenderSampleSeconds": 60,
+      "records": [
+        {
+          "id": "me",
+          "owner": true,
+          "radius": 5.800000000000001,
+          "omega": 0,
+          "maxPathError": 1.8759005319751626e-7,
+          "maxRadiusError": 7.879990171488771e-8,
+          "maxAngularStepError": 0,
+          "signedTravel": 0,
+          "anchor": [
+            5.067185250247139,
+            0.1,
+            2.82199107717899
+          ],
+          "expectedSignedTravel": 0
+        },
+        {
+          "id": "friend_ee7fa1df-fa79-431d-934d-e226ad1c88c1",
+          "owner": false,
+          "radius": 5.4,
+          "omega": 0.052,
+          "maxPathError": 10.787720679767247,
+          "maxRadiusError": 2.3190585718424472e-7,
+          "maxAngularStepError": 6.202706396392128,
+          "signedTravel": -2.422981896603636,
+          "anchor": [
+            -0.7129556806750416,
+            0,
+            5.352727734285874
+          ],
+          "expectedSignedTravel": -187.2
+        }
+      ],
+      "samples": [
+        {
+          "seconds": 60,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              4.034568786621094,
+              0,
+              3.589185953140259
+            ]
+          ],
+          "nativeDraws": 76,
+          "rasterHash": "24185a291a052e0501c18855f979d19864e6ee4e933c3b35cc43f4eff955a345"
+        },
+        {
+          "seconds": 120,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              3.277693510055542,
+              0,
+              4.291471004486084
+            ]
+          ],
+          "nativeDraws": 90,
+          "rasterHash": "b3ac8eb49a70023c5abad24a67808a54918f4dd6e31bef5219c53d8df683b614"
+        },
+        {
+          "seconds": 180,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -3.507215976715088,
+              0,
+              4.106024265289307
+            ]
+          ],
+          "nativeDraws": 104,
+          "rasterHash": "95b3ceb085187486942998f5afc76bbd63df487376f5cb9fabd125d4b9602af7"
+        },
+        {
+          "seconds": 240,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              0.4968509078025818,
+              0,
+              -5.37709379196167
+            ]
+          ],
+          "nativeDraws": 118,
+          "rasterHash": "e729ae7a27c2e53aff4e2e2f704d54e340bf62528b4575c6b855bda55cee77ef"
+        },
+        {
+          "seconds": 300,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -3.2466349601745605,
+              0,
+              4.31501579284668
+            ]
+          ],
+          "nativeDraws": 132,
+          "rasterHash": "f7ad1710c0a3ac111444cc35540c16891538871c16aaaccefab062d3900d4586"
+        },
+        {
+          "seconds": 360,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              3.782292127609253,
+              0,
+              3.85412335395813
+            ]
+          ],
+          "nativeDraws": 146,
+          "rasterHash": "bff4d6b574aab34b618a7736db6aa5f642716722299f368888788ff8dc87682e"
+        },
+        {
+          "seconds": 420,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              4.627626895904541,
+              0,
+              2.782996416091919
+            ]
+          ],
+          "nativeDraws": 160,
+          "rasterHash": "ec2b4246638ec25bd8a31056393859e21d07fa05b4148b91c2c12d97475ffae3"
+        },
+        {
+          "seconds": 480,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              0.6199430227279663,
+              0,
+              5.364295959472656
+            ]
+          ],
+          "nativeDraws": 174,
+          "rasterHash": "5b4a94f9dc95b2b8303e8a609b3407e1202c82a283acb60cbdb93f2b08702c12"
+        },
+        {
+          "seconds": 540,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -4.98187255859375,
+              0,
+              -2.083493709564209
+            ]
+          ],
+          "nativeDraws": 188,
+          "rasterHash": "79db30cb1dffc0434541de9a2271ee699050ff7b1a9a4864853e122f56e8b793"
+        },
+        {
+          "seconds": 600,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              4.728172779083252,
+              0,
+              2.6085214614868164
+            ]
+          ],
+          "nativeDraws": 202,
+          "rasterHash": "ecb9100cc76dd6e84df08fc06a4eac25b4d4033e6383fa0863947d8c878d6e27"
+        },
+        {
+          "seconds": 660,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              1.1206645965576172,
+              0,
+              -5.282433986663818
+            ]
+          ],
+          "nativeDraws": 216,
+          "rasterHash": "b0ccceff48cec2d69fcd571b61fe931ed66dba3e4cfa5d75948ecbeb40a55e76"
+        },
+        {
+          "seconds": 720,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -2.537461042404175,
+              0,
+              -4.766685485839844
+            ]
+          ],
+          "nativeDraws": 230,
+          "rasterHash": "cdf4add2fd22fde86d70fb5c36430bbf4756d3a4beb6421dd7e22636859dc89d"
+        },
+        {
+          "seconds": 780,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -0.10659237951040268,
+              0,
+              -5.398947715759277
+            ]
+          ],
+          "nativeDraws": 244,
+          "rasterHash": "fa12001bc2618a56854b9f70b8006e310b1e35b3a6d361b3e52f26c83894918a"
+        },
+        {
+          "seconds": 840,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              5.394146919250488,
+              0,
+              0.25135892629623413
+            ]
+          ],
+          "nativeDraws": 258,
+          "rasterHash": "1f712ae660515bd45982226f59a36232b0c59e6bd8149fdb41b1bfc358e188b1"
+        },
+        {
+          "seconds": 900,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -5.174112796783447,
+              0,
+              1.5454953908920288
+            ]
+          ],
+          "nativeDraws": 272,
+          "rasterHash": "7cc110e23f6bfdacf648d4b3efe9606add809587665086552166fb22e4de6b2b"
+        },
+        {
+          "seconds": 960,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              4.6300249099731445,
+              0,
+              2.7790050506591797
+            ]
+          ],
+          "nativeDraws": 286,
+          "rasterHash": "3dc5c5371bbb8d9d934c18ae8ea2f23c1cbb4eea3d2c0464ace3bd09cbbf64ab"
+        },
+        {
+          "seconds": 1020,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              4.449135780334473,
+              0,
+              -3.0602598190307617
+            ]
+          ],
+          "nativeDraws": 300,
+          "rasterHash": "1adb363e0589281206b88ee4963cdfbfbd4b7363108f3afef2964bc2038d4355"
+        },
+        {
+          "seconds": 1080,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              4.5229902267456055,
+              0,
+              -2.950010061264038
+            ]
+          ],
+          "nativeDraws": 314,
+          "rasterHash": "edf15dc18055755f04c42b9b756fb4287e788ae1ef06e7631f54ca14c5d9caa9"
+        },
+        {
+          "seconds": 1140,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              4.412752628326416,
+              0,
+              3.1124935150146484
+            ]
+          ],
+          "nativeDraws": 328,
+          "rasterHash": "5a27a84c05fc2cb2fb40087783af979259fc685f55e10d3aeb48eadde54502e7"
+        },
+        {
+          "seconds": 1200,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -5.324526309967041,
+              0,
+              0.8996764421463013
+            ]
+          ],
+          "nativeDraws": 342,
+          "rasterHash": "736ceb0e41193b5088b3b8c8e5913d9856d86a84e4bd355e07a5128982b46a16"
+        },
+        {
+          "seconds": 1260,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              5.271503925323486,
+              0,
+              1.1710015535354614
+            ]
+          ],
+          "nativeDraws": 356,
+          "rasterHash": "7a72ac45cf528f853e0c18e7c6a1aa5c458827894e09794ae242ff8a9ae11189"
+        },
+        {
+          "seconds": 1320,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              1.080397367477417,
+              0,
+              -5.290816783905029
+            ]
+          ],
+          "nativeDraws": 370,
+          "rasterHash": "6b6151ac8b62e55bd2f8a5cae943ff8f747a165500000e9c9ce3b3c5d0006eec"
+        },
+        {
+          "seconds": 1380,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -1.1724019050598145,
+              0,
+              -5.271193027496338
+            ]
+          ],
+          "nativeDraws": 384,
+          "rasterHash": "857a328b0d5c8ac988a3e0ffdcb72a4bbb7b92fd43b773d4ff047f5d5e609f0f"
+        },
+        {
+          "seconds": 1440,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              2.722994804382324,
+              0,
+              -4.6631855964660645
+            ]
+          ],
+          "nativeDraws": 398,
+          "rasterHash": "8d495d17c645c8bf5feb4ce1a9ce88b839884d254c12c47c2ca7a2ea1535f918"
+        },
+        {
+          "seconds": 1500,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              3.4706239700317383,
+              0,
+              4.13700008392334
+            ]
+          ],
+          "nativeDraws": 412,
+          "rasterHash": "b3e22a143b23051f0970f8bcafc3a9626346266c4390caef0e527730b8c1d0ec"
+        },
+        {
+          "seconds": 1560,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -3.7080800533294678,
+              0,
+              -3.9255754947662354
+            ]
+          ],
+          "nativeDraws": 426,
+          "rasterHash": "e9bace59ac70a33f45287830323c5ce8032d83d60d53c2b97d14d47a20b7fbfe"
+        },
+        {
+          "seconds": 1620,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -1.8611011505126953,
+              0,
+              5.069151878356934
+            ]
+          ],
+          "nativeDraws": 440,
+          "rasterHash": "7861c2ec3d18bcdeae4d32118adf832c769e0f5fb78bd70491455946dff2c8a4"
+        },
+        {
+          "seconds": 1680,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              2.6516268253326416,
+              0,
+              4.704133987426758
+            ]
+          ],
+          "nativeDraws": 454,
+          "rasterHash": "11b76f158b75ddb82cf1c1fd85cd7a8a25dbc35cf26257ca4307295b669735d7"
+        },
+        {
+          "seconds": 1740,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              1.129752516746521,
+              0,
+              5.280498027801514
+            ]
+          ],
+          "nativeDraws": 468,
+          "rasterHash": "7ec0aaffa2a9a838550f22ee56e1563e074262ba925c1f3b6c6020aad7d5bb31"
+        },
+        {
+          "seconds": 1800,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -5.140311241149902,
+              0,
+              1.654449224472046
+            ]
+          ],
+          "nativeDraws": 482,
+          "rasterHash": "ba551fc81ecee598a7a5e7e345212f9f2ae4b4ae4428ade9d7e2a53721420c3e"
+        },
+        {
+          "seconds": 1860,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              3.703155755996704,
+              0,
+              -3.9302210807800293
+            ]
+          ],
+          "nativeDraws": 496,
+          "rasterHash": "95f9733fc510ed8fbc5a4ec80c8d87c4cfa40e10479bcce506178d2a39bef939"
+        },
+        {
+          "seconds": 1920,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -5.338375568389893,
+              0,
+              0.8134772777557373
+            ]
+          ],
+          "nativeDraws": 510,
+          "rasterHash": "fc8174efad7cccf3d5ed120ef39243ef87c482649df48a0a08a12c12baf89d5f"
+        },
+        {
+          "seconds": 1980,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -0.5904669165611267,
+              0,
+              5.367620468139648
+            ]
+          ],
+          "nativeDraws": 524,
+          "rasterHash": "45e05b10172133d1d7bba4df1f8ff94c8a44f553e6b84cc8252753b3bc197a86"
+        },
+        {
+          "seconds": 2040,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              0.1769937425851822,
+              0,
+              5.397098541259766
+            ]
+          ],
+          "nativeDraws": 538,
+          "rasterHash": "97a56db85740984da67a23879f3525aa2d40c7100487002e03c7d8f7f92fceca"
+        },
+        {
+          "seconds": 2100,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -4.522036075592041,
+              0,
+              2.951472043991089
+            ]
+          ],
+          "nativeDraws": 552,
+          "rasterHash": "425f9ef7761162da7c2164cbfc2f5da2f29433552759f22eca0f7ed3b870bf39"
+        },
+        {
+          "seconds": 2160,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              0.2371140569448471,
+              0,
+              -5.394791603088379
+            ]
+          ],
+          "nativeDraws": 566,
+          "rasterHash": "63a08f494d675326904a818ff506fa9d0ab777ce06d89357da2398e12628f815"
+        },
+        {
+          "seconds": 2220,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -1.4037699699401855,
+              0,
+              5.214348316192627
+            ]
+          ],
+          "nativeDraws": 580,
+          "rasterHash": "cf6e93cf97907596d6268680784fc98bbd460f3daabfd7ef081631a100007eb8"
+        },
+        {
+          "seconds": 2280,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              5.383200645446777,
+              0,
+              0.42562004923820496
+            ]
+          ],
+          "nativeDraws": 594,
+          "rasterHash": "8357824bc4037bcf3a0a9c54328b83e20458a0edd28ed0d3b49a632ce01d1c07"
+        },
+        {
+          "seconds": 2340,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              4.717271327972412,
+              0,
+              -2.6281840801239014
+            ]
+          ],
+          "nativeDraws": 608,
+          "rasterHash": "2ab5fea4f71f50b3d73820d4589014fdf7afc587dbf1a074713bc549e676e45e"
+        },
+        {
+          "seconds": 2400,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              5.385952472686768,
+              0,
+              0.3892516493797302
+            ]
+          ],
+          "nativeDraws": 622,
+          "rasterHash": "9e09b32a9b1f38d36c163fc97f53958b06756e3fce395c30f95bedf4383e2706"
+        },
+        {
+          "seconds": 2460,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -1.3332070112228394,
+              0,
+              5.232834815979004
+            ]
+          ],
+          "nativeDraws": 636,
+          "rasterHash": "57d591a0ed60599439629e714096bba384919344d37c2365f01508d1927f7cd2"
+        },
+        {
+          "seconds": 2520,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              0.127761110663414,
+              0,
+              -5.398488521575928
+            ]
+          ],
+          "nativeDraws": 650,
+          "rasterHash": "8a4b699bad5b64eaef41e715fc4b44264b7a1163ce53e4e57831903612c84ebf"
+        },
+        {
+          "seconds": 2580,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -4.440657138824463,
+              0,
+              3.0725502967834473
+            ]
+          ],
+          "nativeDraws": 664,
+          "rasterHash": "c1bf959b0c6b11f0e69972fd627810fef8456930454088721cb00c98173d230c"
+        },
+        {
+          "seconds": 2640,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              0.35912230610847473,
+              0,
+              5.388045310974121
+            ]
+          ],
+          "nativeDraws": 678,
+          "rasterHash": "429ff0650607d6fba52eab25537f73ace330f2525a2751a08f04fa217d430ab5"
+        },
+        {
+          "seconds": 2700,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -0.3725195527076721,
+              0,
+              5.3871355056762695
+            ]
+          ],
+          "nativeDraws": 692,
+          "rasterHash": "c9ff0e10fdde52777953147f7c7ecd3937fe9b386d9c2d6d3a954a922fc364ff"
+        },
+        {
+          "seconds": 2760,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -5.293964385986328,
+              0,
+              1.0648670196533203
+            ]
+          ],
+          "nativeDraws": 706,
+          "rasterHash": "ac9fcfcabd9747cf52fe0df30a33094d6cb2859da3fbe0e5b84dc4390b8d282b"
+        },
+        {
+          "seconds": 2820,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              3.4854931831359863,
+              0,
+              -4.124480247497559
+            ]
+          ],
+          "nativeDraws": 720,
+          "rasterHash": "1699dd429e45a47b23a6a0a12092ea6dea30a5141eaf013459b27ca31d85ba4a"
+        },
+        {
+          "seconds": 2880,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -5.030310153961182,
+              0,
+              1.9636651277542114
+            ]
+          ],
+          "nativeDraws": 734,
+          "rasterHash": "f1a84342b0a7d0638e8d2bd2edd68d889bb05baad3801d7771cf7fd02d98650a"
+        },
+        {
+          "seconds": 2940,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              1.4835551977157593,
+              0,
+              5.192211627960205
+            ]
+          ],
+          "nativeDraws": 748,
+          "rasterHash": "c5b83ee804798cd0ae06c4822f21b2cdc3d0c0d4405ec71272241be531cb4e2c"
+        },
+        {
+          "seconds": 3000,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              2.993483304977417,
+              0,
+              4.494336128234863
+            ]
+          ],
+          "nativeDraws": 762,
+          "rasterHash": "359ecd99c8b8d492660a4a20e9f03c7bf13186d30764d34534277a8f136e7f2b"
+        },
+        {
+          "seconds": 3060,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -1.4445931911468506,
+              0,
+              5.203186511993408
+            ]
+          ],
+          "nativeDraws": 776,
+          "rasterHash": "ea79f7325a1cc5696303a94b4cfb8c85d935c1d7e0cb51ec60a4d2e4d5d5a732"
+        },
+        {
+          "seconds": 3120,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -4.038028717041016,
+              0,
+              -3.5852928161621094
+            ]
+          ],
+          "nativeDraws": 790,
+          "rasterHash": "61fcd063c6184a1f1d3b6801315393513cd27667841d2d88036a97ee332f91e6"
+        },
+        {
+          "seconds": 3180,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              3.845717430114746,
+              0,
+              3.7908387184143066
+            ]
+          ],
+          "nativeDraws": 804,
+          "rasterHash": "32ce92ee26f317b2db2a7f6c286cd8dda68d6c3ea2eb012c8a6240b2e5fb0f04"
+        },
+        {
+          "seconds": 3240,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              2.237412452697754,
+              0,
+              -4.914670467376709
+            ]
+          ],
+          "nativeDraws": 818,
+          "rasterHash": "6b175aad6e03fd317bea9d7cf9371a7c8bf7a868f6af4d0cc8b4e5cd94ccc1ee"
+        },
+        {
+          "seconds": 3300,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -1.73408043384552,
+              0,
+              -5.113996982574463
+            ]
+          ],
+          "nativeDraws": 832,
+          "rasterHash": "95386f0e0e00c792a61c855923be4759ed969a28fc76fb67a2e884843674d1af"
+        },
+        {
+          "seconds": 3360,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              0.4671390652656555,
+              0,
+              -5.379756450653076
+            ]
+          ],
+          "nativeDraws": 846,
+          "rasterHash": "4e66e7b4332266020b41cc888ea1d98dcb845f26ce1534004ab0a3ee1ad25568"
+        },
+        {
+          "seconds": 3420,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              5.374606609344482,
+              0,
+              0.5230731964111328
+            ]
+          ],
+          "nativeDraws": 860,
+          "rasterHash": "e7ddc95ddfe020ff9042d670fb23428000e09d65467f68322e9942659fa88d53"
+        },
+        {
+          "seconds": 3480,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -5.16561222076416,
+              0,
+              1.5736740827560425
+            ]
+          ],
+          "nativeDraws": 874,
+          "rasterHash": "1f407a6c781881f5832bfa6914df3c7a6750d00c00fd68bf6b1c1b2b81cb3949"
+        },
+        {
+          "seconds": 3540,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              4.791708946228027,
+              0,
+              2.489884614944458
+            ]
+          ],
+          "nativeDraws": 888,
+          "rasterHash": "91055419f6cf7a4e96467cb18078aeaf64a61ba11bce8164314c3b6090b70b2e"
+        },
+        {
+          "seconds": 3600,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              4.0605692863464355,
+              0,
+              -3.559743881225586
+            ]
+          ],
+          "nativeDraws": 902,
+          "rasterHash": "180c5c349a0d6798a2de75a802d8a22d235d326a2918476b0897d20b61b99cb8"
+        }
+      ]
+    },
+    {
+      "fps": 60,
+      "durationSeconds": 3600,
+      "simulatedFrames": 216000,
+      "nativeRenderSampleSeconds": 60,
+      "records": [
+        {
+          "id": "me",
+          "owner": true,
+          "radius": 5.800000000000001,
+          "omega": 0,
+          "maxPathError": 1.8759005319751626e-7,
+          "maxRadiusError": 7.879990171488771e-8,
+          "maxAngularStepError": 0,
+          "signedTravel": 0,
+          "anchor": [
+            5.067185250247139,
+            0.1,
+            2.82199107717899
+          ],
+          "expectedSignedTravel": 0
+        },
+        {
+          "id": "friend_ee7fa1df-fa79-431d-934d-e226ad1c88c1",
+          "owner": false,
+          "radius": 5.4,
+          "omega": 0.052,
+          "maxPathError": 10.799756258820551,
+          "maxRadiusError": 2.2244943220783853e-7,
+          "maxAngularStepError": 6.229871171117086,
+          "signedTravel": 0.7894807003849584,
+          "anchor": [
+            -0.7129556806750416,
+            0,
+            5.352727734285874
+          ],
+          "expectedSignedTravel": -187.2
+        }
+      ],
+      "samples": [
+        {
+          "seconds": 60,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              1.387817144393921,
+              0,
+              5.218616962432861
+            ]
+          ],
+          "nativeDraws": 76,
+          "rasterHash": "9b525742d0eac80db2729e711e477dbf68547d04ef8bfb046426eeb8a2780a9e"
+        },
+        {
+          "seconds": 120,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -5.3659987449646,
+              0,
+              -0.6050259470939636
+            ]
+          ],
+          "nativeDraws": 90,
+          "rasterHash": "93ade401b68e6ca34ea99e75cc21eaf639636ceeb4fc38a9564ce9fc514976ef"
+        },
+        {
+          "seconds": 180,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              1.7078232765197754,
+              0,
+              5.1228251457214355
+            ]
+          ],
+          "nativeDraws": 104,
+          "rasterHash": "e68012db4d91b0674aa0cc5931fcb42eb22eaae4a8f6b475f5513c62cf2c37de"
+        },
+        {
+          "seconds": 240,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -0.04686463624238968,
+              0,
+              5.399796485900879
+            ]
+          ],
+          "nativeDraws": 118,
+          "rasterHash": "81ac5a5f99c7f789e51817ede77e54f16c66e848560b7bccac0722718348e107"
+        },
+        {
+          "seconds": 300,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -2.431698799133301,
+              0,
+              -4.821497917175293
+            ]
+          ],
+          "nativeDraws": 132,
+          "rasterHash": "88881907a8364ea038ffcf457e4bb7eaafc4ae898bec262b67ee9edeec8cb30f"
+        },
+        {
+          "seconds": 360,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -5.314313888549805,
+              0,
+              0.9581577777862549
+            ]
+          ],
+          "nativeDraws": 146,
+          "rasterHash": "35574f00782b4253b11bc1e7267072b8645d120a898ae379aa61a6db1ea0a8fc"
+        },
+        {
+          "seconds": 420,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -3.461846113204956,
+              0,
+              -4.14434814453125
+            ]
+          ],
+          "nativeDraws": 160,
+          "rasterHash": "ec59c9a1ad72d22b42e4f03343ffc3101538e9da33781be83d9b53c13ca9ee41"
+        },
+        {
+          "seconds": 480,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              2.3434739112854004,
+              0,
+              4.864990234375
+            ]
+          ],
+          "nativeDraws": 174,
+          "rasterHash": "8b8b40c47ccaf4e96989461cfee7d53b55fdb9e4d8f3b1e81e2182037c0dd50c"
+        },
+        {
+          "seconds": 540,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              4.567598342895508,
+              0,
+              2.8804593086242676
+            ]
+          ],
+          "nativeDraws": 188,
+          "rasterHash": "2ae03478f8632852962c023645b44d70bb6b89a989d9d9769f3080de990f3b9a"
+        },
+        {
+          "seconds": 600,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -3.751028299331665,
+              0,
+              3.8845572471618652
+            ]
+          ],
+          "nativeDraws": 202,
+          "rasterHash": "cab1689bb0663abb457247ad8c98f6d6611ca7adc977cc43a3cf5595a8e8a0e2"
+        },
+        {
+          "seconds": 660,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              5.324942588806152,
+              0,
+              0.8972107172012329
+            ]
+          ],
+          "nativeDraws": 216,
+          "rasterHash": "29d5c5a876808df300d266fec4627dd3abd383f99e31c50264bbaa811d612fc8"
+        },
+        {
+          "seconds": 720,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              5.107807159423828,
+              0,
+              1.752228856086731
+            ]
+          ],
+          "nativeDraws": 230,
+          "rasterHash": "c5c2b33280f546ff7a7ebf160814dfeb91098d91dff76afc4ef5244f700dd426"
+        },
+        {
+          "seconds": 780,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -5.138882637023926,
+              0,
+              1.6588801145553589
+            ]
+          ],
+          "nativeDraws": 244,
+          "rasterHash": "ed61a24420388414d4591a5ae7d34d495b860f9f7fdf32a303bf30cbc4753a05"
+        },
+        {
+          "seconds": 840,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              1.0221447944641113,
+              0,
+              5.3023786544799805
+            ]
+          ],
+          "nativeDraws": 258,
+          "rasterHash": "6159bf5b3818d060025eeaaa0175d6677fd4908b48ac3c0fbac843bb4eb309af"
+        },
+        {
+          "seconds": 900,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -3.4618635177612305,
+              0,
+              4.144333839416504
+            ]
+          ],
+          "nativeDraws": 272,
+          "rasterHash": "8a41ef1a1ab0aca550e68679e0dc49e54ee3f6d1554821910946dd6159a20765"
+        },
+        {
+          "seconds": 960,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              3.7823076248168945,
+              0,
+              -3.8541080951690674
+            ]
+          ],
+          "nativeDraws": 286,
+          "rasterHash": "b714edc5ba9634ac7bf3fef603a3451507ee60c3de35fa08b24828419dcd3518"
+        },
+        {
+          "seconds": 1020,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              0.2688977122306824,
+              0,
+              -5.393301010131836
+            ]
+          ],
+          "nativeDraws": 300,
+          "rasterHash": "1e789e832adaea717d549d41e664829a3a558c91e2f558661fc78fc2816b68e1"
+        },
+        {
+          "seconds": 1080,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              5.379024028778076,
+              0,
+              0.475500226020813
+            ]
+          ],
+          "nativeDraws": 314,
+          "rasterHash": "24725ef267970eaed817a1cf3d648bb6f37105e9ed80c2d67be8e4a705700efe"
+        },
+        {
+          "seconds": 1140,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -3.3943915367126465,
+              0,
+              -4.199774265289307
+            ]
+          ],
+          "nativeDraws": 328,
+          "rasterHash": "77900f3f8bef41f6a4969cb728a1c58ac6a3e800b3d07321471999e4ace0a210"
+        },
+        {
+          "seconds": 1200,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -3.408555269241333,
+              0,
+              -4.188287258148193
+            ]
+          ],
+          "nativeDraws": 342,
+          "rasterHash": "e327e9cd6a644be14b83375dcddc0859013e6ad27306edecb78ed728fa0c4a16"
+        },
+        {
+          "seconds": 1260,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              5.383565425872803,
+              0,
+              0.42098063230514526
+            ]
+          ],
+          "nativeDraws": 356,
+          "rasterHash": "0548c80e5b179e7bcd234a9f166a7353f0599139713d0e56f08927f5e10d53ae"
+        },
+        {
+          "seconds": 1320,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              0.17779579758644104,
+              0,
+              -5.3970723152160645
+            ]
+          ],
+          "nativeDraws": 370,
+          "rasterHash": "2a412eca397a48301561b99f939facc8e3f9b87c54161e6548192129d63567b6"
+        },
+        {
+          "seconds": 1380,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              3.690150260925293,
+              0,
+              -3.942434549331665
+            ]
+          ],
+          "nativeDraws": 384,
+          "rasterHash": "4d027ec9875cfe330b12d6b233dc821860e82791af45e2b0a47751cd9985fb65"
+        },
+        {
+          "seconds": 1440,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -3.3343234062194824,
+              0,
+              4.247621536254883
+            ]
+          ],
+          "nativeDraws": 398,
+          "rasterHash": "83a1c7ed389ec732ed3e5d46cb1ef6b3c6773e8815e512b0b3e525ce66d7c5bb"
+        },
+        {
+          "seconds": 1500,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              1.2183640003204346,
+              0,
+              5.260759353637695
+            ]
+          ],
+          "nativeDraws": 412,
+          "rasterHash": "0a20fb462d1533079001326be7db0cbeaaaf4a83c35303ff0f07a997bde084c7"
+        },
+        {
+          "seconds": 1560,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -5.06112813949585,
+              0,
+              1.8828128576278687
+            ]
+          ],
+          "nativeDraws": 426,
+          "rasterHash": "c367850f8c9533c078cdbbc1558a39a55a228f26b76f0a0b48efda1e4b47a59c"
+        },
+        {
+          "seconds": 1620,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              5.189976692199707,
+              0,
+              1.4913556575775146
+            ]
+          ],
+          "nativeDraws": 440,
+          "rasterHash": "3af55c0ae6ed7b9649f7a2451b2b058e5331e8783f287833bcd69f66c4640c43"
+        },
+        {
+          "seconds": 1680,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              5.367649555206299,
+              0,
+              0.5902020931243896
+            ]
+          ],
+          "nativeDraws": 454,
+          "rasterHash": "d67fa73dc5973d572b086f54b7b7ae622a2c3ccf84f2208e1af911f92e3d3f63"
+        },
+        {
+          "seconds": 1740,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -3.4942383766174316,
+              0,
+              4.117074012756348
+            ]
+          ],
+          "nativeDraws": 468,
+          "rasterHash": "496a17f038582243727bbb8300be80a14521f1994074b7076bb9f088f3b45a7d"
+        },
+        {
+          "seconds": 1800,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              4.760217189788818,
+              0,
+              2.549575090408325
+            ]
+          ],
+          "nativeDraws": 482,
+          "rasterHash": "eacf80c09c43c63a0e46353919a284d7b0fc9a26571e9488f1777e382674b444"
+        },
+        {
+          "seconds": 1860,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              2.7138900756835938,
+              0,
+              4.668489933013916
+            ]
+          ],
+          "nativeDraws": 496,
+          "rasterHash": "e7dca2530999e5c400ed5f2ae555ea98b5cb126d7f5135fd6f18fbc7613d67b8"
+        },
+        {
+          "seconds": 1920,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -3.798978805541992,
+              0,
+              -3.8376762866973877
+            ]
+          ],
+          "nativeDraws": 510,
+          "rasterHash": "14d280a6778acf29bc5221add963ddb907a5d4aaf933e961a4c1ce48c71aff78"
+        },
+        {
+          "seconds": 1980,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -5.204999923706055,
+              0,
+              1.438045620918274
+            ]
+          ],
+          "nativeDraws": 524,
+          "rasterHash": "e082e9783942bddc51d074079ee71086fcba38bec1bcb16e79bb7b7e6a53a65a"
+        },
+        {
+          "seconds": 2040,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -2.8914599418640137,
+              0,
+              -4.560642242431641
+            ]
+          ],
+          "nativeDraws": 538,
+          "rasterHash": "371675dca88b89ff02a2aa70f2401f6306601265a352441d20abf9ca365e2099"
+        },
+        {
+          "seconds": 2100,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              0.5176249742507935,
+              0,
+              5.375133991241455
+            ]
+          ],
+          "nativeDraws": 552,
+          "rasterHash": "945df1bbde52f27cbc2a56bfa3d60bd6460896da15cfebdb53bc411265fd8364"
+        },
+        {
+          "seconds": 2160,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              2.266915798187256,
+              0,
+              4.901131629943848
+            ]
+          ],
+          "nativeDraws": 566,
+          "rasterHash": "274a5a7df269090e00148d9c05f167e915e29e7c883da3bf0803268c959a1834"
+        },
+        {
+          "seconds": 2220,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -5.399905681610107,
+              0,
+              0.03192121163010597
+            ]
+          ],
+          "nativeDraws": 580,
+          "rasterHash": "067c5446f53ff1cb8b0740329ccf28f6385a6e2f057a4f37a06493456fbbe915"
+        },
+        {
+          "seconds": 2280,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              2.0273284912109375,
+              0,
+              5.00499153137207
+            ]
+          ],
+          "nativeDraws": 594,
+          "rasterHash": "054f2ad0dc1685f73e748ffe0b6d5fc57d995bad38308cfb62c3fc4cb26db2a3"
+        },
+        {
+          "seconds": 2340,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -0.003890048014000058,
+              0,
+              5.399998664855957
+            ]
+          ],
+          "nativeDraws": 608,
+          "rasterHash": "0657233c4d8a43aa95a31bf1d4b1c5c61820a1d20c42874ca66405e8e544d592"
+        },
+        {
+          "seconds": 2400,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -2.2017123699188232,
+              0,
+              -4.930767059326172
+            ]
+          ],
+          "nativeDraws": 622,
+          "rasterHash": "738304d7745eca3caf1e7a2632282aeeb78a72c69962b9b3c78cdef6e5e02473"
+        },
+        {
+          "seconds": 2460,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -5.384367942810059,
+              0,
+              0.4105899930000305
+            ]
+          ],
+          "nativeDraws": 636,
+          "rasterHash": "77dcea839a3b28e618153407a307a4acd974d22f2a1efaf3b204a1c86034ec47"
+        },
+        {
+          "seconds": 2520,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -2.7694766521453857,
+              0,
+              -4.635730743408203
+            ]
+          ],
+          "nativeDraws": 650,
+          "rasterHash": "78b4847ae0a8360cf81b74377e56f752e7c0e0c5ce4522f919de524748de6cea"
+        },
+        {
+          "seconds": 2580,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              1.2646948099136353,
+              0,
+              5.249814033508301
+            ]
+          ],
+          "nativeDraws": 664,
+          "rasterHash": "7d9a1abb1c874817318fea0861a47704cb51144245ed578d3dd6643cdaa81646"
+        },
+        {
+          "seconds": 2640,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              3.643308401107788,
+              0,
+              3.98576283454895
+            ]
+          ],
+          "nativeDraws": 678,
+          "rasterHash": "54fa7dcfa477771378fcf5b5c430a6885e9bc644cfcf496d3ca8ac80f36ba3cf"
+        },
+        {
+          "seconds": 2700,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -4.789401054382324,
+              0,
+              2.49432110786438
+            ]
+          ],
+          "nativeDraws": 692,
+          "rasterHash": "f682afa2b9e65e594c432c16dceb29d3ed248279b87e542a4333884b0c8d52e6"
+        },
+        {
+          "seconds": 2760,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              4.618316650390625,
+              0,
+              2.79841947555542
+            ]
+          ],
+          "nativeDraws": 706,
+          "rasterHash": "6fe98984428bc11867c42434d5c0be19324c4dbddeadfe7a2ed2253ee2b3ebc4"
+        },
+        {
+          "seconds": 2820,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              3.90130877494812,
+              0,
+              3.73360276222229
+            ]
+          ],
+          "nativeDraws": 720,
+          "rasterHash": "f5cdfbf344bc3a26fbf6bd69448d91050de0113810337e5d0c6fc32d70467dd0"
+        },
+        {
+          "seconds": 2880,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -5.316737651824951,
+              0,
+              -0.9446157813072205
+            ]
+          ],
+          "nativeDraws": 734,
+          "rasterHash": "228520391a049182cd6f7e57be9a992175eb53b946335b1b13f9c4b5693821da"
+        },
+        {
+          "seconds": 2940,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -1.8656615018844604,
+              0,
+              5.067475318908691
+            ]
+          ],
+          "nativeDraws": 748,
+          "rasterHash": "4c02f2759cd61a54f1744a1d80f7f75fc107cb562887bd2f28e9be8b673017c0"
+        },
+        {
+          "seconds": 3000,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -5.194788932800293,
+              0,
+              1.4745057821273804
+            ]
+          ],
+          "nativeDraws": 762,
+          "rasterHash": "e4389cc2e2bf8159870413e95e798d78e969fcc91d991cabd7dfa7da5ecd54cb"
+        },
+        {
+          "seconds": 3060,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              5.346129894256592,
+              0,
+              -0.7608519196510315
+            ]
+          ],
+          "nativeDraws": 776,
+          "rasterHash": "4e592db868775020d979e9f70775946c55f19be80d6be43313d6dcc6607e6f1e"
+        },
+        {
+          "seconds": 3120,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              3.7137677669525146,
+              0,
+              -3.9201948642730713
+            ]
+          ],
+          "nativeDraws": 790,
+          "rasterHash": "cd1a7fd9cccbb85590f4eab8db629099b7a08f77c995e996a99df1144983821a"
+        },
+        {
+          "seconds": 3180,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              3.5564634799957275,
+              0,
+              4.063442707061768
+            ]
+          ],
+          "nativeDraws": 804,
+          "rasterHash": "11894fc23704decadeba542c2249cb49f9b2d1e4150ba7da0d5093e805e421fe"
+        },
+        {
+          "seconds": 3240,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              0.7483997941017151,
+              0,
+              -5.34788703918457
+            ]
+          ],
+          "nativeDraws": 818,
+          "rasterHash": "4cdf6c8aee4f0eb4e578d267de67188aa6eddc4118a1ed5c9dcba49ceccf3807"
+        },
+        {
+          "seconds": 3300,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              1.0239708423614502,
+              0,
+              -5.302026271820068
+            ]
+          ],
+          "nativeDraws": 832,
+          "rasterHash": "0b94379fe88c2a98730c4fcef9f686b62cf94166b14ebde921b42132b5c8f404"
+        },
+        {
+          "seconds": 3360,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              2.8855178356170654,
+              0,
+              4.564404487609863
+            ]
+          ],
+          "nativeDraws": 846,
+          "rasterHash": "a8a6b1f13030150d891d0458da26f1dd717e3b93168d37a62a451bf0de4cbe32"
+        },
+        {
+          "seconds": 3420,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              4.5930562019348145,
+              0,
+              -2.839689254760742
+            ]
+          ],
+          "nativeDraws": 860,
+          "rasterHash": "ca194cdbe5e77bc0a21f72bb686f3b08e263293d1945371def05b24974d378f7"
+        },
+        {
+          "seconds": 3480,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              5.268894672393799,
+              0,
+              1.182687759399414
+            ]
+          ],
+          "nativeDraws": 874,
+          "rasterHash": "d62711c3e37e02bdb7465ea50b6a5c17c9479d74582f6b2fb03383db81429162"
+        },
+        {
+          "seconds": 3540,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -5.3037543296813965,
+              0,
+              -1.0149836540222168
+            ]
+          ],
+          "nativeDraws": 888,
+          "rasterHash": "4514965954fe8bdee4b2ff2a62cef0c7a52af4ec01eb70f676ad3384b951569e"
+        },
+        {
+          "seconds": 3600,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -4.302443981170654,
+              0,
+              3.2632765769958496
+            ]
+          ],
+          "nativeDraws": 902,
+          "rasterHash": "27c13ef816ff0eb9551a4aadc6b1cfb38341e08b390dc9848ce73daf364e5c5b"
+        }
+      ]
+    },
+    {
+      "fps": 144,
+      "durationSeconds": 3600,
+      "simulatedFrames": 518400,
+      "nativeRenderSampleSeconds": 60,
+      "records": [
+        {
+          "id": "me",
+          "owner": true,
+          "radius": 5.800000000000001,
+          "omega": 0,
+          "maxPathError": 1.8759005319751626e-7,
+          "maxRadiusError": 7.879990171488771e-8,
+          "maxAngularStepError": 0,
+          "signedTravel": 0,
+          "anchor": [
+            5.067185250247139,
+            0.1,
+            2.82199107717899
+          ],
+          "expectedSignedTravel": 0
+        },
+        {
+          "id": "friend_ee7fa1df-fa79-431d-934d-e226ad1c88c1",
+          "owner": false,
+          "radius": 5.4,
+          "omega": 0.052,
+          "maxPathError": 10.799285373428226,
+          "maxRadiusError": 2.3851059971491395e-7,
+          "maxAngularStepError": 5.896814238374656,
+          "signedTravel": -7.8086371709042055,
+          "anchor": [
+            -0.7129556806750416,
+            0,
+            5.352727734285874
+          ],
+          "expectedSignedTravel": -187.2
+        }
+      ],
+      "samples": [
+        {
+          "seconds": 60,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              3.666966199874878,
+              0,
+              -3.96400785446167
+            ]
+          ],
+          "nativeDraws": 76,
+          "rasterHash": "c11a949d37ea72451a989b45d9559be8389e39324ccedd68e195ad4901efe256"
+        },
+        {
+          "seconds": 120,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              2.934276819229126,
+              0,
+              4.533212661743164
+            ]
+          ],
+          "nativeDraws": 90,
+          "rasterHash": "a91690690ceec446dd597093d94690ba304759bf77eb31713f43df1e0b22ecaf"
+        },
+        {
+          "seconds": 180,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              3.4325459003448486,
+              0,
+              4.1686482429504395
+            ]
+          ],
+          "nativeDraws": 104,
+          "rasterHash": "a0ab9a6037ededea42bd0b563fb252d087ccf9745cefe2d0ea2a84f89d477041"
+        },
+        {
+          "seconds": 240,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              2.119292974472046,
+              0,
+              -4.96674919128418
+            ]
+          ],
+          "nativeDraws": 118,
+          "rasterHash": "a1409856704c06a45126500ff8736165d081e8c387f9b5bdf9f70f50e4427910"
+        },
+        {
+          "seconds": 300,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              2.2979252338409424,
+              0,
+              4.886669635772705
+            ]
+          ],
+          "nativeDraws": 132,
+          "rasterHash": "d1884699b9d46979329a81fecbca99108c6bd5174ccf0842b7402a7f83b1563a"
+        },
+        {
+          "seconds": 360,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              0.409288614988327,
+              0,
+              5.384466648101807
+            ]
+          ],
+          "nativeDraws": 146,
+          "rasterHash": "eea25515f3cb7996985407408f6daef4c894d7af065adf03c11ff3516c77ac0e"
+        },
+        {
+          "seconds": 420,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              5.384243965148926,
+              0,
+              -0.4122093915939331
+            ]
+          ],
+          "nativeDraws": 160,
+          "rasterHash": "7a6be77ac4e2f51b5bf015b2f5de056ebaa7c68c263046a6e5f1c18f9b384c8e"
+        },
+        {
+          "seconds": 480,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -4.882923603057861,
+              0,
+              2.305874824523926
+            ]
+          ],
+          "nativeDraws": 174,
+          "rasterHash": "6823e98dfcf76a7ae7d472d0406c266a45767a2da3a3373611dda0b2ca509f59"
+        },
+        {
+          "seconds": 540,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -4.972478866577148,
+              0,
+              -2.105813980102539
+            ]
+          ],
+          "nativeDraws": 188,
+          "rasterHash": "b03fe3e0986bc5876d22a7980617768d52d7b42998903e2cbf520a8be6fe87b6"
+        },
+        {
+          "seconds": 600,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -4.155584335327148,
+              0,
+              3.448349952697754
+            ]
+          ],
+          "nativeDraws": 202,
+          "rasterHash": "3fb27526e0c5c3ebcb2b378fcfae95a12241cca15223a41a197d7124fc3182f6"
+        },
+        {
+          "seconds": 660,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              4.518834590911865,
+              0,
+              -2.956372022628784
+            ]
+          ],
+          "nativeDraws": 216,
+          "rasterHash": "e083d6d9ce444f82cefe953ddbebe637769ede0eedc2a7947648714c78cc4e2f"
+        },
+        {
+          "seconds": 720,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              3.9858157634735107,
+              0,
+              3.6432502269744873
+            ]
+          ],
+          "nativeDraws": 230,
+          "rasterHash": "33c537dbbcf7ecc319054a3d5d6310900ac7787fe06f7b982c8a3883f5fe7574"
+        },
+        {
+          "seconds": 780,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              5.357621669769287,
+              0,
+              0.6751973032951355
+            ]
+          ],
+          "nativeDraws": 244,
+          "rasterHash": "39058ac2c8075481e65ced70a04b143a7ca7ce449a4e7a19770d1ff74d4afd66"
+        },
+        {
+          "seconds": 840,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -4.071250915527344,
+              0,
+              -3.54752254486084
+            ]
+          ],
+          "nativeDraws": 258,
+          "rasterHash": "52b6f0b22e2abbad1fad6012d5302682e3aef6a1f0ae2246bc885c011bffe1b2"
+        },
+        {
+          "seconds": 900,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              4.373291015625,
+              0,
+              -3.16770076751709
+            ]
+          ],
+          "nativeDraws": 272,
+          "rasterHash": "66cbdb9fad72138713d8568c9427b9e19966a314c5dc909d5e386f1fddab3b19"
+        },
+        {
+          "seconds": 960,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              3.8994269371032715,
+              0,
+              -3.7355682849884033
+            ]
+          ],
+          "nativeDraws": 286,
+          "rasterHash": "27c7663547005e9c3098ec8ba6447725c77e19c8df7af74b3163ff93558f5d7a"
+        },
+        {
+          "seconds": 1020,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -5.149882793426514,
+              0,
+              -1.624409794807434
+            ]
+          ],
+          "nativeDraws": 300,
+          "rasterHash": "4586f3b808ded22abffd470d6ae7cf88cc26ae5b07b86d7635b5fb3613e97e39"
+        },
+        {
+          "seconds": 1080,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              4.575193405151367,
+              0,
+              -2.868380546569824
+            ]
+          ],
+          "nativeDraws": 314,
+          "rasterHash": "b60e9a71766d5f269eb8f751f4e7e28882d971db9ce13ea7e1bcb295cf199556"
+        },
+        {
+          "seconds": 1140,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              5.271048069000244,
+              0,
+              -1.1730525493621826
+            ]
+          ],
+          "nativeDraws": 328,
+          "rasterHash": "ac02c634225560a13ad1c22551d755cad517d9cfe45c95e382993090443b5438"
+        },
+        {
+          "seconds": 1200,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -1.2951158285140991,
+              0,
+              -5.242392063140869
+            ]
+          ],
+          "nativeDraws": 342,
+          "rasterHash": "a9bfc9c53037e5f5c49c67605cdb2d3f208f3310b33074d48aad60a026eba5a9"
+        },
+        {
+          "seconds": 1260,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              3.179866313934326,
+              0,
+              4.364452838897705
+            ]
+          ],
+          "nativeDraws": 356,
+          "rasterHash": "8520306332b7a355ee05356f4d40fa4280c2bec92059dfc98601f1d7eb410cc4"
+        },
+        {
+          "seconds": 1320,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -1.016931176185608,
+              0,
+              5.303380966186523
+            ]
+          ],
+          "nativeDraws": 370,
+          "rasterHash": "4a1b1c1ab7b3f0aeb9394cbd1031198ef8e3a9b5abd0db551cbca331fe6be0fc"
+        },
+        {
+          "seconds": 1380,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              4.3173441886901855,
+              0,
+              3.243537664413452
+            ]
+          ],
+          "nativeDraws": 384,
+          "rasterHash": "0b2fc8894f0660feee40dd5c50628b75266ec77f2405802fab48ae5e6eea315a"
+        },
+        {
+          "seconds": 1440,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -4.0060577392578125,
+              0,
+              -3.6209805011749268
+            ]
+          ],
+          "nativeDraws": 398,
+          "rasterHash": "f7fd69588acbc7c028076ec87b1dfc81ae9487af8ef0490100e94ceff5c52a92"
+        },
+        {
+          "seconds": 1500,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              2.403843402862549,
+              0,
+              -4.835445880889893
+            ]
+          ],
+          "nativeDraws": 412,
+          "rasterHash": "93c5e07d8ff0c078256ed502b5456c90c126ed890a4c0c46dc604c7471e850d5"
+        },
+        {
+          "seconds": 1560,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -0.9481135010719299,
+              0,
+              -5.316115379333496
+            ]
+          ],
+          "nativeDraws": 426,
+          "rasterHash": "02a1ea169e60b84f9d088076be50b3126c16a27e6303275fd0dcce5acef2dea1"
+        },
+        {
+          "seconds": 1620,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -2.064143419265747,
+              0,
+              4.9899210929870605
+            ]
+          ],
+          "nativeDraws": 440,
+          "rasterHash": "4fe9002693508adb1c5fc87a86bc93ba6d5c15425cd5c79cd6929bb5d1a5788a"
+        },
+        {
+          "seconds": 1680,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -4.466811656951904,
+              0,
+              -3.0344016551971436
+            ]
+          ],
+          "nativeDraws": 454,
+          "rasterHash": "9a1081b21010bae94d79a0d7675d9dfcd687fdb8753bc7ea27f39c2c92aa6458"
+        },
+        {
+          "seconds": 1740,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -4.892627716064453,
+              0,
+              -2.2852118015289307
+            ]
+          ],
+          "nativeDraws": 468,
+          "rasterHash": "fae84585760145cdd6f3909affa7b2df8fe5a2f9690dce09ed7cedaacb7515cb"
+        },
+        {
+          "seconds": 1800,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              0.4693584144115448,
+              0,
+              5.379563331604004
+            ]
+          ],
+          "nativeDraws": 482,
+          "rasterHash": "c02901269cea928e7969779d207e5fd46338f490ed0fb16e6aa735ca8d3c4925"
+        },
+        {
+          "seconds": 1860,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -4.47035551071167,
+              0,
+              -3.0291783809661865
+            ]
+          ],
+          "nativeDraws": 496,
+          "rasterHash": "da0888b842b34370c7adf864e3160cf3ac605d622cb5e72adf6baf398469a0e4"
+        },
+        {
+          "seconds": 1920,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -3.297663450241089,
+              0,
+              -4.276144981384277
+            ]
+          ],
+          "nativeDraws": 510,
+          "rasterHash": "755ab279e2299ea7be1bb2ff54940ad668bb0133bff39ca847e4f783926c24a3"
+        },
+        {
+          "seconds": 1980,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -4.1203293800354,
+              0,
+              3.49039888381958
+            ]
+          ],
+          "nativeDraws": 524,
+          "rasterHash": "5ba319da3ea80fc980911a29e87b40fb9d116c73ca8ea9e0a841ca3334f9e0dc"
+        },
+        {
+          "seconds": 2040,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              2.3868720531463623,
+              0,
+              -4.843845844268799
+            ]
+          ],
+          "nativeDraws": 538,
+          "rasterHash": "ea08db1ec67935714ecf4c2ea6499cc8b22d9e9c20103c579d24e1f4c5753e2b"
+        },
+        {
+          "seconds": 2100,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              5.131733417510986,
+              0,
+              -1.680866003036499
+            ]
+          ],
+          "nativeDraws": 552,
+          "rasterHash": "261fc336b41df89df3e5cbfdea0d401a323485163e6519c938de6da9c6e55f5c"
+        },
+        {
+          "seconds": 2160,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              0.6231595277786255,
+              0,
+              -5.363923072814941
+            ]
+          ],
+          "nativeDraws": 566,
+          "rasterHash": "8683ea619eff7f9b12f0849618b9e2b9dd01382f32209212cf535829bcd518ae"
+        },
+        {
+          "seconds": 2220,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -0.985935628414154,
+              0,
+              5.309230804443359
+            ]
+          ],
+          "nativeDraws": 580,
+          "rasterHash": "e9a571bec0d8d3a01aef76e51b0c5d1e6c0d2caf9a961a1e032aa28d30a308ef"
+        },
+        {
+          "seconds": 2280,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -5.36575984954834,
+              0,
+              0.6071405410766602
+            ]
+          ],
+          "nativeDraws": 594,
+          "rasterHash": "cfbb6f32ce8df7553b4bacee49e80f7f33146244655aaf15056cf7eeb0b34837"
+        },
+        {
+          "seconds": 2340,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -3.8647091388702393,
+              0,
+              3.771474838256836
+            ]
+          ],
+          "nativeDraws": 608,
+          "rasterHash": "0055a38459cc941d23c31345600694997ba67993ceb02bcc802d459070b2aa1d"
+        },
+        {
+          "seconds": 2400,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              5.261291027069092,
+              0,
+              -1.216066598892212
+            ]
+          ],
+          "nativeDraws": 622,
+          "rasterHash": "b2d9afe8e2105b8e6d657d82d07a6b464fc52593506d5bd2958f0d8193431a05"
+        },
+        {
+          "seconds": 2460,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              0.24473892152309418,
+              0,
+              5.394451141357422
+            ]
+          ],
+          "nativeDraws": 636,
+          "rasterHash": "d2361263572cea75af853a991ec4139fd6d62d814494b175586da8ff7ffd03bd"
+        },
+        {
+          "seconds": 2520,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              1.2193224430084229,
+              0,
+              5.260537147521973
+            ]
+          ],
+          "nativeDraws": 650,
+          "rasterHash": "9730c5ea74c8fbac725c752e4813aed32b84537af5cb2bce9569c4dad2628ab1"
+        },
+        {
+          "seconds": 2580,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              3.8600380420684814,
+              0,
+              -3.7762556076049805
+            ]
+          ],
+          "nativeDraws": 664,
+          "rasterHash": "faebf06b0eb909376ee86ec5f34434311ae576747e3413c855ed07b486c0205b"
+        },
+        {
+          "seconds": 2640,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              0.6171019077301025,
+              0,
+              5.364623546600342
+            ]
+          ],
+          "nativeDraws": 678,
+          "rasterHash": "9a06785a4644ce77ab0f828f76d3a63472b5f5d2756fa702d873f1bb224f1b58"
+        },
+        {
+          "seconds": 2700,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -0.9727892875671387,
+              0,
+              5.311655044555664
+            ]
+          ],
+          "nativeDraws": 692,
+          "rasterHash": "4013312b615420f50ad91fa11b10121f58b03d8fb3aae9554909dcd82453f3cb"
+        },
+        {
+          "seconds": 2760,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              5.365825653076172,
+              0,
+              0.6065582036972046
+            ]
+          ],
+          "nativeDraws": 706,
+          "rasterHash": "9b9baab70b8111a2fa415c73ca695d345c496e0d9a30b69d3407fd3d7e4f4fcc"
+        },
+        {
+          "seconds": 2820,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -5.125456809997559,
+              0,
+              1.699910283088684
+            ]
+          ],
+          "nativeDraws": 720,
+          "rasterHash": "36b1327693b78fbde4c9104f2137c3829f531f763d0e2d54b4e631f05cdf9e37"
+        },
+        {
+          "seconds": 2880,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -4.854140281677246,
+              0,
+              -2.365865707397461
+            ]
+          ],
+          "nativeDraws": 734,
+          "rasterHash": "c8161f88cd1682967380d21ff3d0ed0b5bc57c3b9fca4ce13257bf3922443906"
+        },
+        {
+          "seconds": 2940,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -4.103000640869141,
+              0,
+              3.5107529163360596
+            ]
+          ],
+          "nativeDraws": 748,
+          "rasterHash": "e0e5d96a73eca8df19f6fd5f169f8d0c33b4c782db4c9bd40c8df7af124b5bbe"
+        },
+        {
+          "seconds": 3000,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              4.257718563079834,
+              0,
+              -3.321420192718506
+            ]
+          ],
+          "nativeDraws": 762,
+          "rasterHash": "ca3e63a7b59e8b2af1ae423ab77fa65c486e8480385016ad3af202fd90c5b021"
+        },
+        {
+          "seconds": 3060,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              4.489002227783203,
+              0,
+              3.0014758110046387
+            ]
+          ],
+          "nativeDraws": 776,
+          "rasterHash": "69aff916fbe056d8b958af6569f677f534d2248f5eb9857e27d4154de3eff980"
+        },
+        {
+          "seconds": 3120,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              5.376247882843018,
+              0,
+              -0.5059258341789246
+            ]
+          ],
+          "nativeDraws": 790,
+          "rasterHash": "7e43c63d39a377053d16f8d3e4146695dbc6d8b256bcc6b39adbb8f1823fa95a"
+        },
+        {
+          "seconds": 3180,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -4.909436225891113,
+              0,
+              -2.2488746643066406
+            ]
+          ],
+          "nativeDraws": 804,
+          "rasterHash": "b48be6adecaaebc50ce1c7a3914bc7481a6b39395caf57087abcac9feb2380f7"
+        },
+        {
+          "seconds": 3240,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              2.9984450340270996,
+              0,
+              -4.491027355194092
+            ]
+          ],
+          "nativeDraws": 818,
+          "rasterHash": "f990e2fb347eca28db4876c96899dd4395e88f594047b4f9f099902eef3d4d42"
+        },
+        {
+          "seconds": 3300,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              2.0209500789642334,
+              0,
+              -5.007570266723633
+            ]
+          ],
+          "nativeDraws": 832,
+          "rasterHash": "3974675a079812e21ebc83fbc3939d0876ca496d87d2c94855cd34494e757432"
+        },
+        {
+          "seconds": 3360,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -5.307115077972412,
+              0,
+              0.9972612261772156
+            ]
+          ],
+          "nativeDraws": 846,
+          "rasterHash": "2490c62a4fe4eed67b4d1ea2fbd022c02fbcdfc4b462d258db8fcc3534311340"
+        },
+        {
+          "seconds": 3420,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              2.3560307025909424,
+              0,
+              -4.858921527862549
+            ]
+          ],
+          "nativeDraws": 860,
+          "rasterHash": "dd08061049c6d929819630bb0cc31353f791ae2eb2688a3120ddcbee8d933709"
+        },
+        {
+          "seconds": 3480,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              3.578822612762451,
+              0,
+              -4.043764114379883
+            ]
+          ],
+          "nativeDraws": 874,
+          "rasterHash": "8d3acdefa8bfb479245673dd587e54275bf9178c6f789ae5bf9a753c41c4bde8"
+        },
+        {
+          "seconds": 3540,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              -4.353028297424316,
+              0,
+              -3.195488214492798
+            ]
+          ],
+          "nativeDraws": 888,
+          "rasterHash": "7a940fdb2d7d611b6e783515411d12bcc8801c0df702c34f7fe05f20404eba60"
+        },
+        {
+          "seconds": 3600,
+          "positions": [
+            [
+              5.067185401916504,
+              0.10000000149011612,
+              2.821990966796875
+            ],
+            [
+              5.314908027648926,
+              0,
+              0.9548561573028564
+            ]
+          ],
+          "nativeDraws": 902,
+          "rasterHash": "cce2714d0aec20cbdaa9be30a016c7ca6fc0931e5ea4458792e2c9ca9da3da24"
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "outbound": [],
+  "limits": [
+    "Every simulated rAF executes the actual built animation and renderer, including native uniform uploads. Intermediate native draw/clear is suppressed; real shaders render once per simulated minute and in the pause check.",
+    "Native modelMatrix values are read back with gl.getUniform; milestone pixels are real WebGL PNGs after gl.finish.",
+    "Chromium/SwiftShader with synthetic clock/rAF and disposable local D1; no claim of physical GPU frame rate or OS tab suspension"
+  ]
+}

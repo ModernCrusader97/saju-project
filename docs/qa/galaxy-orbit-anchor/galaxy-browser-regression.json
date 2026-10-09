@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "galaxy form keeps same birth; saved galaxy tab; readable cards and planet selection",
+      "ms": 32309
+    }
+  ],
+  "errors": [],
+  "outbound": [],
+  "metrics": [
+    {
+      "scene": "galaxy",
+      "width": 1440,
+      "cls": 0,
+      "lcp": 1108
+    },
+    {
+      "scene": "galaxy",
+      "width": 768,
+      "cls": 0,
+      "lcp": 1108
+    },
+    {
+      "scene": "galaxy",
+      "width": 390,
+      "cls": 0,
+      "lcp": 1108
+    },
+    {
+      "scene": "galaxy",
+      "width": 320,
+      "cls": 0,
+      "lcp": 1108
+    }
+  ],
+  "limits": [
+    "Desktop Chrome with SwiftShader; no physical mobile GPU or touch device",
+    "Synthetic local identity and disposable D1; hosted login not exercised",
+    "Lab LCP/CLS only; no field INP or production Web Vitals claim",
+    "No deployment or audience changes"
+  ]
+}
