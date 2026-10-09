@@ -1,0 +1,19 @@
+{
+  "basis": "5450f107182d9de0ef6d40281b8f018c45aea6f8",
+  "before": {
+    "passed": 6,
+    "failed": 1,
+    "onlyFailure": "2 declaration-before-use compiler diagnostics"
+  },
+  "after": {
+    "passed": 7,
+    "failed": 0
+  },
+  "observations": 15,
+  "observableTracesExactlyEqual": true,
+  "hookCalls": 38,
+  "hookOrderAndDependenciesExactlyEqual": true,
+  "harnessSha256": "bfe7841a1898f39c0c67557f8c0a7e9ecedc7cad83849c8130e3d2ba304fd2e3",
+  "hostSha256": "c27e8e7bd6290a24acdfa3bf721b28df1f111705e6c2563bd8900999da4b3177",
+  "sameHarnessAndHost": true
+}

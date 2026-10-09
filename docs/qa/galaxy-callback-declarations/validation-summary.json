@@ -1,0 +1,102 @@
+{
+  "repository": "ModernCrusader97/saju-project",
+  "visibilityVerifiedPrivate": true,
+  "basis": "5450f107182d9de0ef6d40281b8f018c45aea6f8",
+  "branch": "maint/galaxy-callback-declarations-20261010",
+  "remoteHeadsChecked": 21,
+  "reachableSourceChangesChecked": 4,
+  "existingFixFound": false,
+  "initialWorktreesClean": 16,
+  "productionChange": "Hoist camera/tracking implementations with function declarations. Keep the memoized tracking alias at its original hook position and route the early scene tap to the hoisted implementation. No helper bodies, hook dependency arrays or effect order changed.",
+  "runtimeEquivalence": {
+    "basis": "5450f107182d9de0ef6d40281b8f018c45aea6f8",
+    "before": {
+      "passed": 6,
+      "failed": 1,
+      "onlyFailure": "2 declaration-before-use compiler diagnostics"
+    },
+    "after": {
+      "passed": 7,
+      "failed": 0
+    },
+    "observations": 15,
+    "observableTracesExactlyEqual": true,
+    "hookCalls": 38,
+    "hookOrderAndDependenciesExactlyEqual": true,
+    "harnessSha256": "bfe7841a1898f39c0c67557f8c0a7e9ecedc7cad83849c8130e3d2ba304fd2e3",
+    "hostSha256": "c27e8e7bd6290a24acdfa3bf721b28df1f111705e6c2563bd8900999da4b3177",
+    "sameHarnessAndHost": true
+  },
+  "lintScope": [
+    "components/planet/GalaxyCanvas.tsx",
+    "lib/planet/surface-math.ts",
+    "lib/planet/galaxy-helper.ts",
+    "scripts/qa/galaxy-callback-declarations.mjs"
+  ],
+  "lint": {
+    "beforeErrors": 4,
+    "afterErrors": 1,
+    "errorsRemoved": 3,
+    "declarationErrorsRemoved": 2,
+    "additionalMemoizationDiagnosticRemoved": 1,
+    "beforeWarnings": 4,
+    "afterWarnings": 4,
+    "remainingError": "react-hooks/set-state-in-effect at components/planet/GalaxyCanvas.tsx:206:7",
+    "fullScopePass": false,
+    "normalCliAfterExitCode": 1,
+    "rulesDisabled": false,
+    "dependencyArraysChanged": false,
+    "sceneDependencyWarningNowOnlyOnSelectPerson": true
+  },
+  "verification": {
+    "newDeclarationAndBehaviorChecks": {
+      "beforePassed": 6,
+      "beforeFailed": 1,
+      "afterPassed": 7,
+      "afterFailed": 0,
+      "functionalCasesPassedBothPhases": 5,
+      "includesLintAndStaticHookAudit": true
+    },
+    "backgroundCPU": {
+      "passed": 17,
+      "failed": 0
+    },
+    "dom": {
+      "passed": 15,
+      "failed": 0
+    },
+    "backgroundWebGL": {
+      "passed": 5,
+      "failed": 0
+    },
+    "galaxyBrowser": {
+      "passed": 1,
+      "failed": 0,
+      "widths": [
+        1440,
+        768,
+        390,
+        320
+      ]
+    },
+    "typeExitCode": 0,
+    "buildExitCode": 0
+  },
+  "limits": [
+    "Actual React/Three/Raycaster CPU tests use inherited GPU, layout, Canvas2D, pointer-capture and synthetic clock boundaries.",
+    "Actual built Worker browser regression uses Chromium/SwiftShader, synthetic identity and disposable local D1.",
+    "No physical GPU/mobile tab suspension or hosted login test; prior one-hour orbit test not repeated."
+  ],
+  "projectWideTests": "No general test script exists; relevant existing Node and browser checks executed directly.",
+  "includedData": "Synthetic QA identities only; no secrets, .env or user DB.",
+  "operations": {
+    "mainMerge": false,
+    "existingBranchWrite": false,
+    "pullRequest": false,
+    "deployment": false,
+    "authChange": false,
+    "paymentChange": false,
+    "permissionChange": false,
+    "forceGit": false
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "basis": "5450f107182d9de0ef6d40281b8f018c45aea6f8",
+  "hookCallCount": 38,
+  "hookOrderAndDependencyArraysUnchanged": true,
+  "cameraBodyUnchanged": true,
+  "trackingBodyAndParametersUnchanged": true,
+  "memoizedAliasStillUsesEmptyDependencyArray": true,
+  "allOtherComponentStatementsUnchangedExceptEarlyCallName": true,
+  "firstEffectExecutionStillAfterRender": true
+}

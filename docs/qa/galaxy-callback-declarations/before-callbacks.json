@@ -1,0 +1,846 @@
+{
+  "basis": "5450f107182d9de0ef6d40281b8f018c45aea6f8",
+  "phase": "before",
+  "applicationSourceSha256": "9af47a752f6289c441814755f37ee6a14b80da52b0c3c49d2a69eefdc743da83",
+  "harnessSha256": "bfe7841a1898f39c0c67557f8c0a7e9ecedc7cad83849c8130e3d2ba304fd2e3",
+  "hostSha256": "c27e8e7bd6290a24acdfa3bf721b28df1f111705e6c2563bd8900999da4b3177",
+  "lintScope": [
+    "components/planet/GalaxyCanvas.tsx",
+    "lib/planet/surface-math.ts",
+    "lib/planet/galaxy-helper.ts",
+    "scripts/qa/galaxy-callback-declarations.mjs"
+  ],
+  "lintErrors": 4,
+  "lintWarnings": 4,
+  "hookCalls": [
+    {
+      "hook": "useState",
+      "binding": "[graphicsError, setGraphicsError]",
+      "dependencies": null
+    },
+    {
+      "hook": "useRef",
+      "binding": "containerRef",
+      "dependencies": null
+    },
+    {
+      "hook": "useRef",
+      "binding": "wrapperRef",
+      "dependencies": null
+    },
+    {
+      "hook": "useRef",
+      "binding": "rendererRef",
+      "dependencies": null
+    },
+    {
+      "hook": "useRef",
+      "binding": "sceneRef",
+      "dependencies": null
+    },
+    {
+      "hook": "useRef",
+      "binding": "cameraRef",
+      "dependencies": null
+    },
+    {
+      "hook": "useRef",
+      "binding": "galaxyGroupRef",
+      "dependencies": null
+    },
+    {
+      "hook": "useRef",
+      "binding": "ownerGroupRef",
+      "dependencies": null
+    },
+    {
+      "hook": "useRef",
+      "binding": "planetMeshesRef",
+      "dependencies": null
+    },
+    {
+      "hook": "useRef",
+      "binding": "connectionsRef",
+      "dependencies": null
+    },
+    {
+      "hook": "useRef",
+      "binding": "cameraAngle",
+      "dependencies": null
+    },
+    {
+      "hook": "useRef",
+      "binding": "isDragging",
+      "dependencies": null
+    },
+    {
+      "hook": "useRef",
+      "binding": "prevMouse",
+      "dependencies": null
+    },
+    {
+      "hook": "useRef",
+      "binding": "trackedPlanetIdRef",
+      "dependencies": null
+    },
+    {
+      "hook": "useRef",
+      "binding": "cameraTarget",
+      "dependencies": null
+    },
+    {
+      "hook": "useRef",
+      "binding": "currentLookAt",
+      "dependencies": null
+    },
+    {
+      "hook": "useRef",
+      "binding": "targetRadius",
+      "dependencies": null
+    },
+    {
+      "hook": "useRef",
+      "binding": "prevGuinIdsRef",
+      "dependencies": null
+    },
+    {
+      "hook": "useRef",
+      "binding": "landingAnimRef",
+      "dependencies": null
+    },
+    {
+      "hook": "useRef",
+      "binding": "speedScaleRef",
+      "dependencies": null
+    },
+    {
+      "hook": "useEffect",
+      "binding": null,
+      "dependencies": "[speedScale]"
+    },
+    {
+      "hook": "useRef",
+      "binding": "motionPausedRef",
+      "dependencies": null
+    },
+    {
+      "hook": "useRef",
+      "binding": "simulationTimeRef",
+      "dependencies": null
+    },
+    {
+      "hook": "useRef",
+      "binding": "toastTimersRef",
+      "dependencies": null
+    },
+    {
+      "hook": "useState",
+      "binding": "[motionPaused, setMotionPaused]",
+      "dependencies": null
+    },
+    {
+      "hook": "useState",
+      "binding": "[activePerson, setActivePerson]",
+      "dependencies": null
+    },
+    {
+      "hook": "useState",
+      "binding": "[showOrbitGuides, setShowOrbitGuides]",
+      "dependencies": null
+    },
+    {
+      "hook": "useState",
+      "binding": "[focusMode, setFocusMode]",
+      "dependencies": null
+    },
+    {
+      "hook": "useState",
+      "binding": "[isFullscreen, setIsFullscreen]",
+      "dependencies": null
+    },
+    {
+      "hook": "useState",
+      "binding": "[showPillarInspectModal, setShowPillarInspectModal]",
+      "dependencies": null
+    },
+    {
+      "hook": "useState",
+      "binding": "[capturedNotice, setCapturedNotice]",
+      "dependencies": null
+    },
+    {
+      "hook": "useState",
+      "binding": "[landingNotice, setLandingNotice]",
+      "dependencies": null
+    },
+    {
+      "hook": "useEffect",
+      "binding": null,
+      "dependencies": "[]"
+    },
+    {
+      "hook": "useCallback",
+      "binding": "startTrackingPlanet",
+      "dependencies": "[]"
+    },
+    {
+      "hook": "useCallback",
+      "binding": "flyCameraToOverview",
+      "dependencies": "[]"
+    },
+    {
+      "hook": "useCallback",
+      "binding": "flyCameraToOwner",
+      "dependencies": "[startTrackingPlanet, onSelectPerson]"
+    },
+    {
+      "hook": "useEffect",
+      "binding": null,
+      "dependencies": "[guins, distanceScale, showOrbitGuides, incomingPersonId]"
+    },
+    {
+      "hook": "useEffect",
+      "binding": null,
+      "dependencies": "[selectedPersonId, startTrackingPlanet]"
+    }
+  ],
+  "passed": 6,
+  "failed": 1,
+  "checks": [
+    {
+      "name": "no declaration-before-use compiler diagnostics",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n2 !== 0\n\n    at file:///workspace/saju-galaxy-declarations/scripts/qa/galaxy-callback-declarations.mjs:96:10\n    at check (file:///workspace/saju-galaxy-declarations/scripts/qa/galaxy-callback-declarations.mjs:50:15)\n    at file:///workspace/saju-galaxy-declarations/scripts/qa/galaxy-callback-declarations.mjs:95:7"
+    },
+    {
+      "name": "hook call order, dependency arrays and helper bodies preserve the basis",
+      "status": "PASS"
+    },
+    {
+      "name": "initial camera and actual friend/owner raycast taps",
+      "status": "PASS"
+    },
+    {
+      "name": "external selection keeps overview and owner controls stable across rerenders",
+      "status": "PASS"
+    },
+    {
+      "name": "initial camera and actual friend/owner raycast taps in Strict Mode",
+      "status": "PASS"
+    },
+    {
+      "name": "external selection keeps overview and owner controls stable across rerenders in Strict Mode",
+      "status": "PASS"
+    },
+    {
+      "name": "actual wheel and pointer rotation keep the existing camera equations",
+      "status": "PASS"
+    }
+  ],
+  "observations": [
+    {
+      "label": "initial-false",
+      "camera": [
+        4.754766160022,
+        19.092021952908,
+        9.843114167436
+      ],
+      "spiral": 0,
+      "planets": [
+        {
+          "position": [
+            5.067185250247,
+            0.1,
+            2.821991077179
+          ],
+          "spin": 0,
+          "surfaceTime": 0,
+          "belt": 0,
+          "satellite": 0,
+          "satelliteSpin": 0
+        },
+        {
+          "position": [
+            -0.712955680675,
+            0,
+            5.352727734286
+          ],
+          "spin": 0,
+          "surfaceTime": 0,
+          "belt": 0,
+          "satellite": 0,
+          "satelliteSpin": 0
+        }
+      ],
+      "overviewButton": false,
+      "ownerButton": true,
+      "activeOwner": true,
+      "activeFriend": false,
+      "rendererGenerations": 1
+    },
+    {
+      "label": "friend-tap-false",
+      "camera": [
+        3.7853203139,
+        18.735918284356,
+        8.352446055443
+      ],
+      "spiral": 0.000416,
+      "planets": [
+        {
+          "position": [
+            5.067185250247,
+            0.1,
+            2.821991077179
+          ],
+          "spin": 0.00256,
+          "surfaceTime": 0.016,
+          "belt": 0.0012,
+          "satellite": 0.00512,
+          "satelliteSpin": 0.00336
+        },
+        {
+          "position": [
+            -0.708501964951,
+            0,
+            5.353319060701
+          ],
+          "spin": 0.00256,
+          "surfaceTime": 0.016,
+          "belt": 0.0012,
+          "satellite": 0.00512,
+          "satelliteSpin": 0.00336
+        }
+      ],
+      "overviewButton": true,
+      "ownerButton": false,
+      "activeOwner": false,
+      "activeFriend": true,
+      "rendererGenerations": 1
+    },
+    {
+      "label": "owner-tap-false",
+      "camera": [
+        3.975266627762,
+        17.734396601798,
+        8.108578747743
+      ],
+      "spiral": 0.000832,
+      "planets": [
+        {
+          "position": [
+            5.067185250247,
+            0.1,
+            2.821991077179
+          ],
+          "spin": 0.00512,
+          "surfaceTime": 0.032,
+          "belt": 0.0024,
+          "satellite": 0.01024,
+          "satelliteSpin": 0.00672
+        },
+        {
+          "position": [
+            -0.704047758786,
+            0,
+            5.35390668142
+          ],
+          "spin": 0.00512,
+          "surfaceTime": 0.032,
+          "belt": 0.0024,
+          "satellite": 0.01024,
+          "satelliteSpin": 0.00672
+        }
+      ],
+      "overviewButton": true,
+      "ownerButton": false,
+      "activeOwner": true,
+      "activeFriend": false,
+      "rendererGenerations": 1
+    },
+    {
+      "label": "external-friend-false",
+      "camera": [
+        3.7853203139,
+        18.735918284356,
+        8.352446055443
+      ],
+      "spiral": 0.000416,
+      "planets": [
+        {
+          "position": [
+            5.067185250247,
+            0.1,
+            2.821991077179
+          ],
+          "spin": 0.00256,
+          "surfaceTime": 0.016,
+          "belt": 0.0012,
+          "satellite": 0.00512,
+          "satelliteSpin": 0.00336
+        },
+        {
+          "position": [
+            -0.708501964951,
+            0,
+            5.353319060701
+          ],
+          "spin": 0.00256,
+          "surfaceTime": 0.016,
+          "belt": 0.0012,
+          "satellite": 0.00512,
+          "satelliteSpin": 0.00336
+        }
+      ],
+      "overviewButton": true,
+      "ownerButton": false,
+      "activeOwner": false,
+      "activeFriend": true,
+      "rendererGenerations": 1
+    },
+    {
+      "label": "overview-rerender-false",
+      "camera": [
+        4.450510327076,
+        18.057287330697,
+        9.687783858934
+      ],
+      "spiral": 0.000416,
+      "planets": [
+        {
+          "position": [
+            5.067185250247,
+            0.1,
+            2.821991077179
+          ],
+          "spin": 0.00256,
+          "surfaceTime": 0.016,
+          "belt": 0.0012,
+          "satellite": 0.00512,
+          "satelliteSpin": 0.00336
+        },
+        {
+          "position": [
+            -0.708501964951,
+            0,
+            5.353319060701
+          ],
+          "spin": 0.00256,
+          "surfaceTime": 0.016,
+          "belt": 0.0012,
+          "satellite": 0.00512,
+          "satelliteSpin": 0.00336
+        }
+      ],
+      "overviewButton": false,
+      "ownerButton": true,
+      "activeOwner": false,
+      "activeFriend": true,
+      "rendererGenerations": 1
+    },
+    {
+      "label": "owner-rerender-false",
+      "camera": [
+        3.993125624994,
+        17.817336431657,
+        8.115973927348
+      ],
+      "spiral": 0.000416,
+      "planets": [
+        {
+          "position": [
+            5.067185250247,
+            0.1,
+            2.821991077179
+          ],
+          "spin": 0.00256,
+          "surfaceTime": 0.016,
+          "belt": 0.0012,
+          "satellite": 0.00512,
+          "satelliteSpin": 0.00336
+        },
+        {
+          "position": [
+            -0.708501964951,
+            0,
+            5.353319060701
+          ],
+          "spin": 0.00256,
+          "surfaceTime": 0.016,
+          "belt": 0.0012,
+          "satellite": 0.00512,
+          "satelliteSpin": 0.00336
+        }
+      ],
+      "overviewButton": true,
+      "ownerButton": false,
+      "activeOwner": true,
+      "activeFriend": false,
+      "rendererGenerations": 1
+    },
+    {
+      "label": "reset-false",
+      "camera": [
+        5.097931711944,
+        19.09971031827,
+        10.410806817518
+      ],
+      "spiral": 0,
+      "planets": [
+        {
+          "position": [
+            5.067185250247,
+            0.1,
+            2.821991077179
+          ],
+          "spin": 0,
+          "surfaceTime": 0,
+          "belt": 0,
+          "satellite": 0,
+          "satelliteSpin": 0
+        },
+        {
+          "position": [
+            -0.712955680675,
+            0,
+            5.352727734286
+          ],
+          "spin": 0,
+          "surfaceTime": 0,
+          "belt": 0,
+          "satellite": 0,
+          "satelliteSpin": 0
+        }
+      ],
+      "overviewButton": false,
+      "ownerButton": true,
+      "activeOwner": true,
+      "activeFriend": false,
+      "rendererGenerations": 1
+    },
+    {
+      "label": "initial-true",
+      "camera": [
+        4.754766160022,
+        19.092021952908,
+        9.843114167436
+      ],
+      "spiral": 0,
+      "planets": [
+        {
+          "position": [
+            5.067185250247,
+            0.1,
+            2.821991077179
+          ],
+          "spin": 0,
+          "surfaceTime": 0,
+          "belt": 0,
+          "satellite": 0,
+          "satelliteSpin": 0
+        },
+        {
+          "position": [
+            -0.712955680675,
+            0,
+            5.352727734286
+          ],
+          "spin": 0,
+          "surfaceTime": 0,
+          "belt": 0,
+          "satellite": 0,
+          "satelliteSpin": 0
+        }
+      ],
+      "overviewButton": false,
+      "ownerButton": true,
+      "activeOwner": true,
+      "activeFriend": false,
+      "rendererGenerations": 2
+    },
+    {
+      "label": "friend-tap-true",
+      "camera": [
+        3.7853203139,
+        18.735918284356,
+        8.352446055443
+      ],
+      "spiral": 0.000416,
+      "planets": [
+        {
+          "position": [
+            5.067185250247,
+            0.1,
+            2.821991077179
+          ],
+          "spin": 0.00256,
+          "surfaceTime": 0.016,
+          "belt": 0.0012,
+          "satellite": 0.00512,
+          "satelliteSpin": 0.00336
+        },
+        {
+          "position": [
+            -0.708501964951,
+            0,
+            5.353319060701
+          ],
+          "spin": 0.00256,
+          "surfaceTime": 0.016,
+          "belt": 0.0012,
+          "satellite": 0.00512,
+          "satelliteSpin": 0.00336
+        }
+      ],
+      "overviewButton": true,
+      "ownerButton": false,
+      "activeOwner": false,
+      "activeFriend": true,
+      "rendererGenerations": 2
+    },
+    {
+      "label": "owner-tap-true",
+      "camera": [
+        3.975266627762,
+        17.734396601798,
+        8.108578747743
+      ],
+      "spiral": 0.000832,
+      "planets": [
+        {
+          "position": [
+            5.067185250247,
+            0.1,
+            2.821991077179
+          ],
+          "spin": 0.00512,
+          "surfaceTime": 0.032,
+          "belt": 0.0024,
+          "satellite": 0.01024,
+          "satelliteSpin": 0.00672
+        },
+        {
+          "position": [
+            -0.704047758786,
+            0,
+            5.35390668142
+          ],
+          "spin": 0.00512,
+          "surfaceTime": 0.032,
+          "belt": 0.0024,
+          "satellite": 0.01024,
+          "satelliteSpin": 0.00672
+        }
+      ],
+      "overviewButton": true,
+      "ownerButton": false,
+      "activeOwner": true,
+      "activeFriend": false,
+      "rendererGenerations": 2
+    },
+    {
+      "label": "external-friend-true",
+      "camera": [
+        3.7853203139,
+        18.735918284356,
+        8.352446055443
+      ],
+      "spiral": 0.000416,
+      "planets": [
+        {
+          "position": [
+            5.067185250247,
+            0.1,
+            2.821991077179
+          ],
+          "spin": 0.00256,
+          "surfaceTime": 0.016,
+          "belt": 0.0012,
+          "satellite": 0.00512,
+          "satelliteSpin": 0.00336
+        },
+        {
+          "position": [
+            -0.708501964951,
+            0,
+            5.353319060701
+          ],
+          "spin": 0.00256,
+          "surfaceTime": 0.016,
+          "belt": 0.0012,
+          "satellite": 0.00512,
+          "satelliteSpin": 0.00336
+        }
+      ],
+      "overviewButton": true,
+      "ownerButton": false,
+      "activeOwner": false,
+      "activeFriend": true,
+      "rendererGenerations": 2
+    },
+    {
+      "label": "overview-rerender-true",
+      "camera": [
+        4.450510327076,
+        18.057287330697,
+        9.687783858934
+      ],
+      "spiral": 0.000416,
+      "planets": [
+        {
+          "position": [
+            5.067185250247,
+            0.1,
+            2.821991077179
+          ],
+          "spin": 0.00256,
+          "surfaceTime": 0.016,
+          "belt": 0.0012,
+          "satellite": 0.00512,
+          "satelliteSpin": 0.00336
+        },
+        {
+          "position": [
+            -0.708501964951,
+            0,
+            5.353319060701
+          ],
+          "spin": 0.00256,
+          "surfaceTime": 0.016,
+          "belt": 0.0012,
+          "satellite": 0.00512,
+          "satelliteSpin": 0.00336
+        }
+      ],
+      "overviewButton": false,
+      "ownerButton": true,
+      "activeOwner": false,
+      "activeFriend": true,
+      "rendererGenerations": 2
+    },
+    {
+      "label": "owner-rerender-true",
+      "camera": [
+        3.993125624994,
+        17.817336431657,
+        8.115973927348
+      ],
+      "spiral": 0.000416,
+      "planets": [
+        {
+          "position": [
+            5.067185250247,
+            0.1,
+            2.821991077179
+          ],
+          "spin": 0.00256,
+          "surfaceTime": 0.016,
+          "belt": 0.0012,
+          "satellite": 0.00512,
+          "satelliteSpin": 0.00336
+        },
+        {
+          "position": [
+            -0.708501964951,
+            0,
+            5.353319060701
+          ],
+          "spin": 0.00256,
+          "surfaceTime": 0.016,
+          "belt": 0.0012,
+          "satellite": 0.00512,
+          "satelliteSpin": 0.00336
+        }
+      ],
+      "overviewButton": true,
+      "ownerButton": false,
+      "activeOwner": true,
+      "activeFriend": false,
+      "rendererGenerations": 2
+    },
+    {
+      "label": "reset-true",
+      "camera": [
+        5.097931711944,
+        19.09971031827,
+        10.410806817518
+      ],
+      "spiral": 0,
+      "planets": [
+        {
+          "position": [
+            5.067185250247,
+            0.1,
+            2.821991077179
+          ],
+          "spin": 0,
+          "surfaceTime": 0,
+          "belt": 0,
+          "satellite": 0,
+          "satelliteSpin": 0
+        },
+        {
+          "position": [
+            -0.712955680675,
+            0,
+            5.352727734286
+          ],
+          "spin": 0,
+          "surfaceTime": 0,
+          "belt": 0,
+          "satellite": 0,
+          "satelliteSpin": 0
+        }
+      ],
+      "overviewButton": false,
+      "ownerButton": true,
+      "activeOwner": true,
+      "activeFriend": false,
+      "rendererGenerations": 2
+    },
+    {
+      "label": "wheel-rotation",
+      "camera": [
+        2.388189822017,
+        19.092006766813,
+        12.417802824573
+      ],
+      "spiral": 0,
+      "planets": [
+        {
+          "position": [
+            5.067185250247,
+            0.1,
+            2.821991077179
+          ],
+          "spin": 0,
+          "surfaceTime": 0,
+          "belt": 0,
+          "satellite": 0,
+          "satelliteSpin": 0
+        },
+        {
+          "position": [
+            -0.712955680675,
+            0,
+            5.352727734286
+          ],
+          "spin": 0,
+          "surfaceTime": 0,
+          "belt": 0,
+          "satellite": 0,
+          "satelliteSpin": 0
+        }
+      ],
+      "overviewButton": false,
+      "ownerButton": true,
+      "activeOwner": true,
+      "activeFriend": false,
+      "rendererGenerations": 1
+    }
+  ],
+  "limits": [
+    "Actual React and Three/Raycaster; GPU, Canvas2D, layout, pointer capture and host time are test boundaries.",
+    "Stable selectedPersonId across UI/prop rerenders is checked with actual camera controls; no physical browser/mobile device."
+  ]
+}

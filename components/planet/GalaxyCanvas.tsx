@@ -295,7 +295,7 @@ export default function GalaxyCanvas({
             if (onSelectPerson) onSelectPerson(val.node.person);
 
             // 실시간 궤도 추적 락온
-            startTrackingPlanet(val.node.person.id, val.node.isOwner);
+            trackPlanet(val.node.person.id, val.node.isOwner);
           }
         });
       }
@@ -471,7 +471,7 @@ export default function GalaxyCanvas({
     };
   }, []);
 
-  const updateCameraPosition = () => {
+  function updateCameraPosition() {
     if (!cameraRef.current) return;
     const { theta, phi, radius } = cameraAngle.current;
     const x = radius * Math.sin(phi) * Math.sin(theta);
@@ -483,14 +483,16 @@ export default function GalaxyCanvas({
       currentLookAt.current.z + z
     );
     cameraRef.current.lookAt(currentLookAt.current);
-  };
+  }
 
-  const startTrackingPlanet = useCallback((personId: string, isOwner: boolean) => {
+  function trackPlanet(personId: string, isOwner: boolean) {
     trackedPlanetIdRef.current = personId;
     targetRadius.current = isOwner ? 6.2 : 5.2;
     cameraAngle.current.phi = 0.44;
     setFocusMode(isOwner ? "owner" : "friend");
-  }, []);
+  }
+
+  const startTrackingPlanet = useCallback(trackPlanet, []);
 
   const flyCameraToOverview = useCallback(() => {
     trackedPlanetIdRef.current = null;

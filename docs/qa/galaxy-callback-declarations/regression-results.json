@@ -1,0 +1,273 @@
+{
+  "basis": "5450f107182d9de0ef6d40281b8f018c45aea6f8",
+  "componentSha256": "c1cbc80fc9137717f6a42c9759364c1707e03863d37f6f48f68d318bfd2d32fd",
+  "backgroundCPU": {
+    "passed": 17,
+    "failed": 0,
+    "checks": [
+      {
+        "name": "hidden gap 1000ms matches foreground control",
+        "status": "PASS"
+      },
+      {
+        "name": "hidden gap 300000ms matches foreground control",
+        "status": "PASS"
+      },
+      {
+        "name": "hidden gap 86400000ms matches foreground control",
+        "status": "PASS"
+      },
+      {
+        "name": "resume {\"hiddenFrames\":3}",
+        "status": "PASS"
+      },
+      {
+        "name": "resume {\"speed\":3}",
+        "status": "PASS"
+      },
+      {
+        "name": "resume {\"pause\":true}",
+        "status": "PASS"
+      },
+      {
+        "name": "resume {\"pause\":true,\"hiddenFrames\":3}",
+        "status": "PASS"
+      },
+      {
+        "name": "resume {\"landing\":true}",
+        "status": "PASS"
+      },
+      {
+        "name": "resume {\"landing\":true,\"pause\":true}",
+        "status": "PASS"
+      },
+      {
+        "name": "resume {\"tracking\":true}",
+        "status": "PASS"
+      },
+      {
+        "name": "visible rAF stall is capped to 50ms",
+        "status": "PASS"
+      },
+      {
+        "name": "foreground speed and shader time use ordinary elapsed seconds",
+        "status": "PASS"
+      },
+      {
+        "name": "user pause time survives visibility and advances only after explicit play",
+        "status": "PASS"
+      },
+      {
+        "name": "reduced-motion initialization and visibility preserve zero simulation time",
+        "status": "PASS"
+      },
+      {
+        "name": "repeated hide/show cycles keep a single rAF chain",
+        "status": "PASS"
+      },
+      {
+        "name": "resize paths and unmount disposal remain functional",
+        "status": "PASS"
+      },
+      {
+        "name": "Strict Mode discards its first loop and cleans both renderer generations once",
+        "status": "PASS"
+      }
+    ],
+    "method": "real React component/source and Three CPU objects; synthetic clock/visibility; GPU/environment and Canvas2D boundary stubs",
+    "anchorDiagnostic": {
+      "diagnostic": "existing shared Vector3 anchor, independent of visibility",
+      "anchorObjectRetained": true,
+      "anchorMovedDistance": 0,
+      "pausedForegroundPositionChanged": false,
+      "before": [
+        -0.704047758786,
+        0,
+        5.35390668142
+      ],
+      "after": [
+        -0.704047758786,
+        0,
+        5.35390668142
+      ]
+    }
+  },
+  "backgroundWebGL": {
+    "basis": "5450f107182d9de0ef6d40281b8f018c45aea6f8",
+    "browser": "151.0.7922.173",
+    "passed": 5,
+    "failed": 0,
+    "checks": [
+      {
+        "name": "built WebGL playing resume matches ordinary frames",
+        "status": "PASS"
+      },
+      {
+        "name": "built WebGL user pause resume matches ordinary frames",
+        "status": "PASS"
+      },
+      {
+        "name": "built reduced-motion remains visually static across long gap",
+        "status": "PASS"
+      },
+      {
+        "name": "built resize preserves drawing and one animation chain",
+        "status": "PASS"
+      },
+      {
+        "name": "browser errors and outbound requests remain empty",
+        "status": "PASS"
+      }
+    ],
+    "observations": [
+      {
+        "scenario": "playing resume",
+        "hiddenGapMs": 300000,
+        "control": {
+          "first": {
+            "rasterHash": "be1da1dfe4fb0b0dcf08913e095fd94103f54d1bcd37865701b37d53e3c30f80",
+            "stateHash": "74341a2f1811705854460d8c986af0a9c0391245ad65c3a9a06fbcddc09b8bad"
+          },
+          "after": {
+            "rasterHash": "4307f7f9c44ec7f8e116214d32e163f58040e556af6c661e6d724c07e11cf64c",
+            "stateHash": "2314e164d2e394f77b0d08276637c397516fedeb9fa938f9a247225edadd6481"
+          }
+        },
+        "resumed": {
+          "first": {
+            "rasterHash": "be1da1dfe4fb0b0dcf08913e095fd94103f54d1bcd37865701b37d53e3c30f80",
+            "stateHash": "74341a2f1811705854460d8c986af0a9c0391245ad65c3a9a06fbcddc09b8bad"
+          },
+          "after": {
+            "rasterHash": "4307f7f9c44ec7f8e116214d32e163f58040e556af6c661e6d724c07e11cf64c",
+            "stateHash": "2314e164d2e394f77b0d08276637c397516fedeb9fa938f9a247225edadd6481"
+          }
+        },
+        "matchingPixelsAndGPUState": true
+      },
+      {
+        "scenario": "paused resume",
+        "hiddenGapMs": 300000,
+        "control": {
+          "first": {
+            "rasterHash": "fa9ddc46742a91062b02687ef768fc7203c5282872f63c99ddbe72151769dc61",
+            "stateHash": "942b5e607eb6325c974b768c88ac60f5aef5e836b7e726d58be23d94fd1537fb"
+          },
+          "after": {
+            "rasterHash": "fa9ddc46742a91062b02687ef768fc7203c5282872f63c99ddbe72151769dc61",
+            "stateHash": "942b5e607eb6325c974b768c88ac60f5aef5e836b7e726d58be23d94fd1537fb"
+          }
+        },
+        "resumed": {
+          "first": {
+            "rasterHash": "fa9ddc46742a91062b02687ef768fc7203c5282872f63c99ddbe72151769dc61",
+            "stateHash": "942b5e607eb6325c974b768c88ac60f5aef5e836b7e726d58be23d94fd1537fb"
+          },
+          "after": {
+            "rasterHash": "fa9ddc46742a91062b02687ef768fc7203c5282872f63c99ddbe72151769dc61",
+            "stateHash": "942b5e607eb6325c974b768c88ac60f5aef5e836b7e726d58be23d94fd1537fb"
+          }
+        },
+        "matchingPixelsAndGPUState": true
+      },
+      {
+        "scenario": "reduced motion",
+        "hiddenGapMs": 86400000,
+        "matchingPixels": true
+      },
+      {
+        "scenario": "resize",
+        "viewportWidth": 320,
+        "overflow": 0,
+        "width": 286,
+        "displayWidth": 286,
+        "height": 498,
+        "displayHeight": 498,
+        "state": "ready"
+      },
+      {
+        "scenario": "resize",
+        "viewportWidth": 768,
+        "overflow": 0,
+        "width": 689,
+        "displayWidth": 689,
+        "height": 598,
+        "displayHeight": 598,
+        "state": "ready"
+      },
+      {
+        "scenario": "resize",
+        "viewportWidth": 1440,
+        "overflow": 0,
+        "width": 689,
+        "displayWidth": 689,
+        "height": 598,
+        "displayHeight": 598,
+        "state": "ready"
+      }
+    ],
+    "errors": [],
+    "outbound": [],
+    "limits": [
+      "Synthetic clock, rAF and visibility events; native hidden-tab state is not emulated by this environment",
+      "Actual built Worker, disposable synthetic D1, Chromium/SwiftShader WebGL; no physical GPU/mobile tab suspension",
+      "Existing shared Vector3 orbit-anchor drift is a separate baseline diagnostic; paused comparison means equivalent frames, not globally frozen orbits"
+    ]
+  },
+  "galaxyBrowser": {
+    "status": "PASS",
+    "checks": [
+      {
+        "name": "galaxy form keeps same birth; saved galaxy tab; readable cards and planet selection",
+        "ms": 29664
+      }
+    ],
+    "errors": [],
+    "outbound": [],
+    "metrics": [
+      {
+        "scene": "galaxy",
+        "width": 1440,
+        "cls": 0,
+        "lcp": 1080
+      },
+      {
+        "scene": "galaxy",
+        "width": 768,
+        "cls": 0,
+        "lcp": 1080
+      },
+      {
+        "scene": "galaxy",
+        "width": 390,
+        "cls": 0,
+        "lcp": 1080
+      },
+      {
+        "scene": "galaxy",
+        "width": 320,
+        "cls": 0,
+        "lcp": 1080
+      }
+    ],
+    "limits": [
+      "Desktop Chrome with SwiftShader; no physical mobile GPU or touch device",
+      "Synthetic local identity and disposable D1; hosted login not exercised",
+      "Lab LCP/CLS only; no field INP or production Web Vitals claim",
+      "No deployment or audience changes"
+    ]
+  },
+  "dom": {
+    "passed": 15,
+    "failed": 0,
+    "tapSha256": "b77a56d1619d1227e4fd78cfe607ffa49a7afe21c9c5658448e6e347d863e344"
+  },
+  "unchangedHarnessSha256": {
+    "scripts/qa/galaxy-scene-host.mjs": "c27e8e7bd6290a24acdfa3bf721b28df1f111705e6c2563bd8900999da4b3177",
+    "scripts/qa/galaxy-background-clock.mjs": "a4d331cc6d7cc88e08d2ae942130777b846c1af046501ad83a0e619b957f870c",
+    "scripts/qa/galaxy-background-browser.mjs": "b0a3e916befe76bea5891b445ecfbcf5b96243a32cec10cb2e94a949e8628bf6",
+    "scripts/qa/universe-browser.mjs": "148c4615935d9f4c4a0769b7c5215ec6f1d403bf8ae5936d6e37952ce484e418",
+    "scripts/qa/guin-map-loading-dom.mjs": "428984d3ad015971fe841942066d21c77c0b3c513731bf67dbf5027ea668f6c7",
+    "scripts/qa/daily-rollover-dom.mjs": "edf385034972e347a7359621e48d47a379d473765ab83c56ffe6979330e1b1a1"
+  }
+}
