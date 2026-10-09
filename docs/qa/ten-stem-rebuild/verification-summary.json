@@ -85,5 +85,62 @@
     "Hosted login and production user DB not exercised",
     "No deployment, merge, PR or auth/permission change",
     "No complete vine body, curved sand, water spray or sliding dew completion claim"
-  ]
+  ],
+  "gpuBufferFollowup": {
+    "reviewedCommit": "3e4e8e9dc273e956f332d2431d1751489772663c",
+    "threeVersion": "0.186.1",
+    "beforeRemainingRestBuffers": 4,
+    "beforeRemainingRestBytes": 1593936,
+    "beforeGeometryCount": 0,
+    "afterCases": 20,
+    "after": {
+      "createdOwnedBuffers": 2232,
+      "aliveOwnedBuffers": 0,
+      "undeletedOwnedBytes": 0
+    },
+    "vineTimings": [
+      {
+        "quality": "low",
+        "loadMs": 572.8999999999069,
+        "constructionMs": [
+          408,
+          398.70000000018626,
+          544.1000000000931
+        ],
+        "vertices": 33207,
+        "samples": 3,
+        "scope": "Separate real surface-accent construction on an already loaded neutral B mesh. Constructor includes MeshSurface/path/initial update, excludes network/GLB decode/GPU render. loadMs includes local fetch, embedded image decode, rest binding and accents."
+      },
+      {
+        "quality": "high",
+        "loadMs": 636,
+        "constructionMs": [
+          508.20000000018626,
+          451.39999999990687,
+          449.60000000009313
+        ],
+        "vertices": 33207,
+        "samples": 3,
+        "scope": "Separate real surface-accent construction on an already loaded neutral B mesh. Constructor includes MeshSurface/path/initial update, excludes network/GLB decode/GPU render. loadMs includes local fetch, embedded image decode, rest binding and accents."
+      }
+    ],
+    "claim": "Explicit deleteBuffer lifecycle; browser/driver GC timing not tested",
+    "rerun": {
+      "cpu": {
+        "tests": 25,
+        "pass": 25
+      },
+      "browserRendererCases": 23,
+      "canvasChecks": "PASS",
+      "pixelsUnchangedAgainstReviewedCommit": 23,
+      "depthPets": {
+        "checks": 6,
+        "animals": 12,
+        "qualities": 2
+      },
+      "typecheck": "PASS",
+      "build": "PASS",
+      "changedFilesLint": "0 errors, 0 warnings"
+    }
+  }
 }

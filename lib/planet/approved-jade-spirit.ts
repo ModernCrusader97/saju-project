@@ -82,8 +82,10 @@ export async function loadApprovedSpirit(dayKey: string, monthKey: string, quali
   let atlas: THREE.Texture | undefined;
   const release = () => {
     // Effects own their instance buffers and remove themselves before generic traversal.
-    effects?.dispose(); restBinding?.dispose();
-    disposeObject(group); atlas?.dispose(); group.removeFromParent(); group.clear();
+    effects?.dispose();
+    // Three r186 deletes GPU buffers for the attributes attached at geometry.dispose().
+    // Restore rest attributes only after that traversal has released their buffers.
+    disposeObject(group); restBinding?.dispose(); atlas?.dispose(); group.removeFromParent(); group.clear();
   };
   try {
     if (stem === '己') {

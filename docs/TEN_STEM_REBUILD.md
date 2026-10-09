@@ -37,7 +37,7 @@
 
 9개 study recipe는 부모 group을 rest 좌표 기준으로 삼아 그 아래 model의 고정 깊이 변환을 포함한다. 표시용 회전/스케일은 rest 속성을 다시 만들지 않는다. 己의 옥은 검증된 원본 mesh-local adapter를 그대로 쓴다. 표면 sampler는 비활성 morph가 존재하는 실제 B형을 허용하고, active morph/skinning/instancing을 허용하지 않는다. 생성 후 morph를 활성화해도 부착을 거부한다.
 
-Canvas의 모든 render에서 현재 절대 시간과 camera로 효과를 갱신한다. 일시정지 중 drag에도 부착이 따라가며 불꽃 alpha 정렬에 camera를 전달한다. 효과는 instance buffer를 포함해 먼저 정리하고 model에서 제거한다. rest 속성을 복원한 뒤 일반 geometry/material/texture traversal을 한 번 수행하고, 옥의 별도 field atlas도 한 번 정리한다. 텍스처 로드 실패 및 atlas 크기 오류의 경로도 검증한다.
+Canvas의 모든 render에서 현재 절대 시간과 camera로 효과를 갱신한다. 일시정지 중 drag에도 부착이 따라가며 불꽃 alpha 정렬에 camera를 전달한다. 효과는 instance buffer를 포함해 먼저 정리하고 model에서 제거한다. rest 속성이 붙어 있는 상태에서 일반 geometry/material/texture disposal을 한 번 수행한 **뒤** rest 속성을 복원한다. 옥의 별도 field atlas도 한 번 정리한다. 텍스처 로드 실패 및 atlas 크기 오류의 경로도 검증한다.
 
 ## 재현과 검증
 
@@ -53,6 +53,7 @@ Canvas의 모든 render에서 현재 절대 시간과 camera로 효과를 갱신
 | 타입 | `tsc --noEmit --incremental false` 통과 |
 | 빌드 | `npm run build` 통과; 큰 client chunk 및 vinext route 분류 경고는 남음 |
 | 실제 WebGL renderer | 십간 × low/high 20개와 oblique/side 3개, 실제 GLB/PNG, 원본 해시/크기/pet 간격, 움직이는 pixel, 정확한 reset, 안정적인 GPU 정리 검증 |
+| 실제 WebGL buffer 수명 | Three `0.186.1`에서 십간 × low/high 20개, 소유 VBO 2,232개 각각 1회 삭제, 삭제 후 `gl.isBuffer()` false, 잔존 소유 버퍼/bytes 0 |
 | 실제 Canvas component | Strict Mode/mobile viewport에서 7개 재질/효과 유형의 reduced-motion 일시정지·drag·정확한 reset, 재생/일시정지, WebGL 복구와 실제 draw 재개, unmount 후 draw 중단 통과 |
 | 기존 깊이·pet browser 회귀 | 6개 검사, 동반자 12종 × low/high 통과; 눈 부착/정면·측면 간격/월령 역할 포함 |
 | 기존 DOM 회귀 | 21/21 통과; chat/daily/guin/saved 및 malformed saved-list 포함 |
@@ -61,6 +62,16 @@ Canvas의 모든 render에서 현재 절대 시간과 camera로 효과를 갱신
 | 기존 전체 Worker 통합 | 23개 검사 통과; 페이지·정적 자산·일반 기능·mock 전용 AI fixture 및 제한 포함 |
 
 변경된 7개 소스/QA 파일의 lint는 오류 0개이며 Canvas의 기존 `<img>` 경고 1개가 남아 있다. 생성물 `outputs`를 제외한 전체 lint는 기존 오류 43개에서 40개로 감소했다. 변경 파일의 기존 `prefer-const` 3개를 정리했으며, 나머지 기존 오류는 이번 재제작 범위 밖이라 그대로 남긴다. 구체적 파일과 규칙은 lint 근거 JSON에 기록한다.
+
+## GPU buffer 정리 후속 검증
+
+초기 재제작 `3e4e8e9dc273e956f332d2431d1751489772663c`에는 `restBinding.dispose()`를 geometry disposal보다 먼저 실행하는 문제가 있었다. 실제 설치 버전은 Three `0.186.1`이다. 그 버전의 `WebGLGeometries.onGeometryDispose()`는 현재 `geometry.attributes`를 순회하고 `WebGLAttributes.remove()`가 각 `gl.deleteBuffer()`를 호출한다. rest 속성을 먼저 제거하면 renderer의 geometry 카운트가 0이어도 해당 속성의 삭제 경로가 빠진다.
+
+실제 승인 B GLB를 로드하고 렌더링한 수정 전 甲/high 검증에서 네 rest VBO의 업로드를 확인했다. 각 `398,484` bytes, 합계 `1,593,936` bytes였으며 dispose 두 번 뒤에도 네 버퍼의 delete 호출은 0이고 `gl.isBuffer()`는 true였다. 수정 전 추가 CPU 검사는 non-jade 9간 × 2 quality, 18개에서 정리 시점의 rest 속성 부재로 실패했다. 수정은 정리 순서만 바꾸며 형상·재질·효과 생성 알고리즘을 변경하지 않는다. 렌더러 23개, 실제 Canvas 동작, 깊이·12종 pet 회귀, 타입·빌드를 재실행해 통과했고, 23개 렌더의 pixel hash가 검토 대상 커밋의 기록과 모두 일치했다.
+
+`scripts/qa/ten-stem-buffer-lifecycle.mjs`는 업로드하는 TypedArray를 실제 WebGLBuffer와 연결하고 모델·효과·instance buffer의 생성/삭제 및 실제 유효성을 확인한다. 수정 후 20개 case에서 소유 버퍼 2,232개가 각각 한 번 삭제됐고, 살아 있는 소유 버퍼와 bytes가 0이었다. CPU 25개도 통과했다. 계측은 WebGLBuffer wrapper의 강한 참조를 유지해 GC가 누락된 명시적 삭제를 가리지 못하게 한다. 따라서 GC를 기다리면 자원이 언제 반환되는지 또는 영구 메모리 누수 크기를 측정한 결과라는 주장은 하지 않는다. 전후 근거는 [수정 전](qa/ten-stem-rebuild/buffer-lifecycle-before.json), [수정 후](qa/ten-stem-rebuild/buffer-lifecycle-after.json)에 있다.
+
+같은 브라우저에서 乙 표면 효과 constructor를 이미 로드된 중립 B형 mesh에 3회씩 별도 호출했다. low는 `408.0 / 398.7 / 544.1ms`, high는 `508.2 / 451.4 / 449.6ms`였다. 이 구간은 sampler/path/initial update를 포함하지만 네트워크·GLB 및 이미지 디코드·GPU 렌더는 제외한다. 선행 20개 case 뒤 같은 local 테스트 환경에서 별도 한 번의 loader 구간은 low `572.9ms`, high `636.0ms`로 해당 I/O·rest binding·효과 생성도 포함한다. 제한된 환경/표본이며 모바일 시간, 전체 CPU case 시간, p95 또는 cold load 시간으로 일반화하지 않는다. 이번 후속 수정에서는 생성 알고리즘 최적화를 하지 않는다.
 
 ```sh
 node scripts/sync-approved-jade-assets.mjs
@@ -73,6 +84,8 @@ npm run lint -- --ignore-pattern outputs
 # 설치된 Playwright와 Chromium의 실제 경로를 지정한다.
 SAJU_QA_PLAYWRIGHT_PATH=/path/to/playwright/index.mjs \
 SAJU_QA_CHROME=/path/to/chromium node scripts/qa/ten-stem-browser.mjs
+SAJU_QA_PLAYWRIGHT_PATH=/path/to/playwright/index.mjs \
+SAJU_QA_CHROME=/path/to/chromium node scripts/qa/ten-stem-buffer-lifecycle.mjs
 SAJU_QA_PLAYWRIGHT_PATH=/path/to/playwright/index.mjs \
 SAJU_QA_CHROME=/path/to/chromium node scripts/qa/spirit-depth-pets.mjs
 ```

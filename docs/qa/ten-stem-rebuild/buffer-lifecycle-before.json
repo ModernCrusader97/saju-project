@@ -1,0 +1,231 @@
+{
+  "status": "FAIL",
+  "phase": "before",
+  "cases": 1,
+  "results": [
+    {
+      "day": "갑자",
+      "quality": "high",
+      "threeRevision": "186",
+      "restExpected": [
+        {
+          "name": "stemRestPosition",
+          "bytes": 398484
+        },
+        {
+          "name": "stemRestNormal",
+          "bytes": 398484
+        },
+        {
+          "name": "stemLocalBrushAxis",
+          "bytes": 398484
+        },
+        {
+          "name": "stemLocalBrushSide",
+          "bytes": 398484
+        }
+      ],
+      "allocatedRest": [
+        {
+          "id": 4,
+          "bytes": 398484,
+          "names": [
+            "body:stemRestPosition"
+          ]
+        },
+        {
+          "id": 5,
+          "bytes": 398484,
+          "names": [
+            "body:stemRestNormal"
+          ]
+        },
+        {
+          "id": 6,
+          "bytes": 398484,
+          "names": [
+            "body:stemLocalBrushAxis"
+          ]
+        },
+        {
+          "id": 7,
+          "bytes": 398484,
+          "names": [
+            "body:stemLocalBrushSide"
+          ]
+        }
+      ],
+      "uploaded": {
+        "ownedBuffers": 114,
+        "restBuffers": 4,
+        "restBytes": 1593936
+      },
+      "remaining": [
+        {
+          "id": 4,
+          "bytes": 398484,
+          "deleteCalls": 0,
+          "names": [
+            "body:stemRestPosition"
+          ]
+        },
+        {
+          "id": 5,
+          "bytes": 398484,
+          "deleteCalls": 0,
+          "names": [
+            "body:stemRestNormal"
+          ]
+        },
+        {
+          "id": 6,
+          "bytes": 398484,
+          "deleteCalls": 0,
+          "names": [
+            "body:stemLocalBrushAxis"
+          ]
+        },
+        {
+          "id": 7,
+          "bytes": 398484,
+          "deleteCalls": 0,
+          "names": [
+            "body:stemLocalBrushSide"
+          ]
+        }
+      ],
+      "remainingBytes": 1593936,
+      "deleteCounts": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "memory": {
+        "geometries": 0,
+        "textures": 1
+      },
+      "glError": 0,
+      "shaderErrors": []
+    }
+  ],
+  "errors": [
+    "AssertionError [ERR_ASSERTION]: Disposed spirit must delete every uploaded model/effect/instance buffer\n+ actual - expected\n\n+ [\n+   {\n+     bytes: 398484,\n+     deleteCalls: 0,\n+     id: 4,\n+     names: [\n+       'body:stemRestPosition'\n+     ]\n+   },\n+   {\n+     bytes: 398484,\n+     deleteCalls: 0,\n+     id: 5,\n+     names: [\n+       'body:stemRestNormal'\n+     ]\n+   },\n+   {\n+     bytes: 398484,\n+     deleteCalls: 0,\n+     id: 6,\n+     names: [\n+       'body:stemLocalBrushAxis'\n+     ]\n+   },\n+   {\n+     bytes: 398484,\n+     deleteCalls: 0,\n+     id: 7,\n+     names: [\n+       'body:stemLocalBrushSide'\n+     ]\n+   }\n+ ]\n- []\n\n    at file://<checkout>/scripts/qa/ten-stem-buffer-lifecycle.mjs:90:12"
+  ],
+  "outbound": [],
+  "limits": [
+    "Chromium SwiftShader with actual production loader/GLB/PNGs",
+    "Strong audit references keep WebGLBuffer wrappers alive to measure deterministic explicit deletion, not browser GC behavior",
+    "Physical mobile GPU and driver GC timing not tested"
+  ]
+}

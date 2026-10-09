@@ -95,6 +95,10 @@ for (const quality of ['low', 'high']) for (const [index, [key, stem]] of pairs.
     const spirit = await loadApprovedSpirit(key, '병인', quality);
     try {
       const material = spirit.bodyMesh.material;
+      const restAtGeometryDisposal = [];
+      spirit.bodyMesh.geometry.addEventListener('dispose', () => {
+        restAtGeometryDisposal.push(CHARACTER_REST_ATTRIBUTES.map(name => !!spirit.bodyMesh.geometry.getAttribute(name)));
+      });
       if (stem === '己') assert.equal(material.userData.approvedJadeVersion, 'v002', '己 must use approved jade and evolving green light');
       else {
         assert.equal(material.defines?.STEM_KIND, index, 'Body must use the approved stem study recipe');
@@ -138,6 +142,8 @@ for (const quality of ['low', 'high']) for (const [index, [key, stem]] of pairs.
         }
       });
       spirit.dispose(); spirit.dispose(); spirit.update(6); spirit.reset();
+      assert.deepEqual(restAtGeometryDisposal, [CHARACTER_REST_ATTRIBUTES.map(() => stem !== '己')], 'Rest attributes must stay attached until geometry disposal releases their GPU buffers');
+      for (const name of CHARACTER_REST_ATTRIBUTES) assert.equal(spirit.bodyMesh.geometry.getAttribute(name), undefined, 'Owned geometry restores its original attributes after disposal');
       for (const item of tracked) assert.equal(item.count, 1, `${item.label} must be released exactly once`);
       assert.equal(spirit.group.children.length, 0);
     } finally { spirit.dispose(); }

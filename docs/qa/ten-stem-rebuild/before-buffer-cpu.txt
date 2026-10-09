@@ -1,0 +1,558 @@
+{"glbSHA256":"0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84","originalAttributeHashes":{"position":"f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b","normal":"80706bee870329a0829113e63ed178f0a904029265da2c96c69ad50f9b1f9cec","uv":"f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c","index":"934286d3bdd9361657e390c41762923871cec85a48a7d9775b362aee02dc7830"},"ioBoundary":"CPU uses real GLB with image I/O placeholders; browser QA loads actual textures"}
+✖ 甲 low: approved material, original B geometry and supported effects (251.537883ms)
+✖ 乙 low: approved material, original B geometry and supported effects (765.434272ms)
+✖ 丙 low: approved material, original B geometry and supported effects (96.126992ms)
+✖ 丁 low: approved material, original B geometry and supported effects (76.711476ms)
+✖ 戊 low: approved material, original B geometry and supported effects (55.380878ms)
+✔ 己 low: approved material, original B geometry and supported effects (35.938893ms)
+✖ 庚 low: approved material, original B geometry and supported effects (58.659954ms)
+✖ 辛 low: approved material, original B geometry and supported effects (121.939081ms)
+✖ 壬 low: approved material, original B geometry and supported effects (59.653073ms)
+✖ 癸 low: approved material, original B geometry and supported effects (69.913271ms)
+✖ 甲 high: approved material, original B geometry and supported effects (358.361695ms)
+✖ 乙 high: approved material, original B geometry and supported effects (871.287523ms)
+✖ 丙 high: approved material, original B geometry and supported effects (83.116443ms)
+✖ 丁 high: approved material, original B geometry and supported effects (62.06854ms)
+✖ 戊 high: approved material, original B geometry and supported effects (52.447379ms)
+✔ 己 high: approved material, original B geometry and supported effects (78.230927ms)
+✖ 庚 high: approved material, original B geometry and supported effects (149.726042ms)
+✖ 辛 high: approved material, original B geometry and supported effects (84.29861ms)
+✖ 壬 high: approved material, original B geometry and supported effects (83.569022ms)
+✖ 癸 high: approved material, original B geometry and supported effects (67.642792ms)
+✔ real B neutral morph has exact triangle attachment and rejects active morphs (35.894699ms)
+✔ rest binding includes fixed depth and restores prior attributes exactly once (27.765198ms)
+✔ 甲 leaves meet transformed branch tip centers under nonuniform presentation (344.586453ms)
+✔ jade reject releases the real GLB and fulfilled textures once (3.306887ms)
+✔ jade wrong-size releases the real GLB and fulfilled textures once (4.886176ms)
+ℹ tests 25
+ℹ suites 0
+ℹ pass 7
+ℹ fail 18
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3915.562911
+
+✖ failing tests:
+
+test at scripts/qa/ten-stem-materials.mjs:94:3
+✖ 甲 low: approved material, original B geometry and supported effects (251.537883ms)
+  AssertionError [ERR_ASSERTION]: Rest attributes must stay attached until geometry disposal releases their GPU buffers
+  + actual - expected
+
+    [
+      [
+  +     false,
+  +     false,
+  +     false,
+  +     false
+  -     true,
+  -     true,
+  -     true,
+  -     true
+      ]
+    ]
+
+      at TestContext.<anonymous> (file://<checkout>/scripts/qa/ten-stem-materials.mjs:145:14)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [Array],
+    expected: [Array],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/ten-stem-materials.mjs:94:3
+✖ 乙 low: approved material, original B geometry and supported effects (765.434272ms)
+  AssertionError [ERR_ASSERTION]: Rest attributes must stay attached until geometry disposal releases their GPU buffers
+  + actual - expected
+
+    [
+      [
+  +     false,
+  +     false,
+  +     false,
+  +     false
+  -     true,
+  -     true,
+  -     true,
+  -     true
+      ]
+    ]
+
+      at TestContext.<anonymous> (file://<checkout>/scripts/qa/ten-stem-materials.mjs:145:14)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [Array],
+    expected: [Array],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/ten-stem-materials.mjs:94:3
+✖ 丙 low: approved material, original B geometry and supported effects (96.126992ms)
+  AssertionError [ERR_ASSERTION]: Rest attributes must stay attached until geometry disposal releases their GPU buffers
+  + actual - expected
+
+    [
+      [
+  +     false,
+  +     false,
+  +     false,
+  +     false
+  -     true,
+  -     true,
+  -     true,
+  -     true
+      ]
+    ]
+
+      at TestContext.<anonymous> (file://<checkout>/scripts/qa/ten-stem-materials.mjs:145:14)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [Array],
+    expected: [Array],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/ten-stem-materials.mjs:94:3
+✖ 丁 low: approved material, original B geometry and supported effects (76.711476ms)
+  AssertionError [ERR_ASSERTION]: Rest attributes must stay attached until geometry disposal releases their GPU buffers
+  + actual - expected
+
+    [
+      [
+  +     false,
+  +     false,
+  +     false,
+  +     false
+  -     true,
+  -     true,
+  -     true,
+  -     true
+      ]
+    ]
+
+      at TestContext.<anonymous> (file://<checkout>/scripts/qa/ten-stem-materials.mjs:145:14)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [Array],
+    expected: [Array],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/ten-stem-materials.mjs:94:3
+✖ 戊 low: approved material, original B geometry and supported effects (55.380878ms)
+  AssertionError [ERR_ASSERTION]: Rest attributes must stay attached until geometry disposal releases their GPU buffers
+  + actual - expected
+
+    [
+      [
+  +     false,
+  +     false,
+  +     false,
+  +     false
+  -     true,
+  -     true,
+  -     true,
+  -     true
+      ]
+    ]
+
+      at TestContext.<anonymous> (file://<checkout>/scripts/qa/ten-stem-materials.mjs:145:14)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [Array],
+    expected: [Array],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/ten-stem-materials.mjs:94:3
+✖ 庚 low: approved material, original B geometry and supported effects (58.659954ms)
+  AssertionError [ERR_ASSERTION]: Rest attributes must stay attached until geometry disposal releases their GPU buffers
+  + actual - expected
+
+    [
+      [
+  +     false,
+  +     false,
+  +     false,
+  +     false
+  -     true,
+  -     true,
+  -     true,
+  -     true
+      ]
+    ]
+
+      at TestContext.<anonymous> (file://<checkout>/scripts/qa/ten-stem-materials.mjs:145:14)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [Array],
+    expected: [Array],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/ten-stem-materials.mjs:94:3
+✖ 辛 low: approved material, original B geometry and supported effects (121.939081ms)
+  AssertionError [ERR_ASSERTION]: Rest attributes must stay attached until geometry disposal releases their GPU buffers
+  + actual - expected
+
+    [
+      [
+  +     false,
+  +     false,
+  +     false,
+  +     false
+  -     true,
+  -     true,
+  -     true,
+  -     true
+      ]
+    ]
+
+      at TestContext.<anonymous> (file://<checkout>/scripts/qa/ten-stem-materials.mjs:145:14)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [Array],
+    expected: [Array],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/ten-stem-materials.mjs:94:3
+✖ 壬 low: approved material, original B geometry and supported effects (59.653073ms)
+  AssertionError [ERR_ASSERTION]: Rest attributes must stay attached until geometry disposal releases their GPU buffers
+  + actual - expected
+
+    [
+      [
+  +     false,
+  +     false,
+  +     false,
+  +     false
+  -     true,
+  -     true,
+  -     true,
+  -     true
+      ]
+    ]
+
+      at TestContext.<anonymous> (file://<checkout>/scripts/qa/ten-stem-materials.mjs:145:14)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [Array],
+    expected: [Array],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/ten-stem-materials.mjs:94:3
+✖ 癸 low: approved material, original B geometry and supported effects (69.913271ms)
+  AssertionError [ERR_ASSERTION]: Rest attributes must stay attached until geometry disposal releases their GPU buffers
+  + actual - expected
+
+    [
+      [
+  +     false,
+  +     false,
+  +     false,
+  +     false
+  -     true,
+  -     true,
+  -     true,
+  -     true
+      ]
+    ]
+
+      at TestContext.<anonymous> (file://<checkout>/scripts/qa/ten-stem-materials.mjs:145:14)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [Array],
+    expected: [Array],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/ten-stem-materials.mjs:94:3
+✖ 甲 high: approved material, original B geometry and supported effects (358.361695ms)
+  AssertionError [ERR_ASSERTION]: Rest attributes must stay attached until geometry disposal releases their GPU buffers
+  + actual - expected
+
+    [
+      [
+  +     false,
+  +     false,
+  +     false,
+  +     false
+  -     true,
+  -     true,
+  -     true,
+  -     true
+      ]
+    ]
+
+      at TestContext.<anonymous> (file://<checkout>/scripts/qa/ten-stem-materials.mjs:145:14)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [Array],
+    expected: [Array],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/ten-stem-materials.mjs:94:3
+✖ 乙 high: approved material, original B geometry and supported effects (871.287523ms)
+  AssertionError [ERR_ASSERTION]: Rest attributes must stay attached until geometry disposal releases their GPU buffers
+  + actual - expected
+
+    [
+      [
+  +     false,
+  +     false,
+  +     false,
+  +     false
+  -     true,
+  -     true,
+  -     true,
+  -     true
+      ]
+    ]
+
+      at TestContext.<anonymous> (file://<checkout>/scripts/qa/ten-stem-materials.mjs:145:14)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [Array],
+    expected: [Array],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/ten-stem-materials.mjs:94:3
+✖ 丙 high: approved material, original B geometry and supported effects (83.116443ms)
+  AssertionError [ERR_ASSERTION]: Rest attributes must stay attached until geometry disposal releases their GPU buffers
+  + actual - expected
+
+    [
+      [
+  +     false,
+  +     false,
+  +     false,
+  +     false
+  -     true,
+  -     true,
+  -     true,
+  -     true
+      ]
+    ]
+
+      at TestContext.<anonymous> (file://<checkout>/scripts/qa/ten-stem-materials.mjs:145:14)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [Array],
+    expected: [Array],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/ten-stem-materials.mjs:94:3
+✖ 丁 high: approved material, original B geometry and supported effects (62.06854ms)
+  AssertionError [ERR_ASSERTION]: Rest attributes must stay attached until geometry disposal releases their GPU buffers
+  + actual - expected
+
+    [
+      [
+  +     false,
+  +     false,
+  +     false,
+  +     false
+  -     true,
+  -     true,
+  -     true,
+  -     true
+      ]
+    ]
+
+      at TestContext.<anonymous> (file://<checkout>/scripts/qa/ten-stem-materials.mjs:145:14)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [Array],
+    expected: [Array],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/ten-stem-materials.mjs:94:3
+✖ 戊 high: approved material, original B geometry and supported effects (52.447379ms)
+  AssertionError [ERR_ASSERTION]: Rest attributes must stay attached until geometry disposal releases their GPU buffers
+  + actual - expected
+
+    [
+      [
+  +     false,
+  +     false,
+  +     false,
+  +     false
+  -     true,
+  -     true,
+  -     true,
+  -     true
+      ]
+    ]
+
+      at TestContext.<anonymous> (file://<checkout>/scripts/qa/ten-stem-materials.mjs:145:14)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [Array],
+    expected: [Array],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/ten-stem-materials.mjs:94:3
+✖ 庚 high: approved material, original B geometry and supported effects (149.726042ms)
+  AssertionError [ERR_ASSERTION]: Rest attributes must stay attached until geometry disposal releases their GPU buffers
+  + actual - expected
+
+    [
+      [
+  +     false,
+  +     false,
+  +     false,
+  +     false
+  -     true,
+  -     true,
+  -     true,
+  -     true
+      ]
+    ]
+
+      at TestContext.<anonymous> (file://<checkout>/scripts/qa/ten-stem-materials.mjs:145:14)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [Array],
+    expected: [Array],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/ten-stem-materials.mjs:94:3
+✖ 辛 high: approved material, original B geometry and supported effects (84.29861ms)
+  AssertionError [ERR_ASSERTION]: Rest attributes must stay attached until geometry disposal releases their GPU buffers
+  + actual - expected
+
+    [
+      [
+  +     false,
+  +     false,
+  +     false,
+  +     false
+  -     true,
+  -     true,
+  -     true,
+  -     true
+      ]
+    ]
+
+      at TestContext.<anonymous> (file://<checkout>/scripts/qa/ten-stem-materials.mjs:145:14)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [Array],
+    expected: [Array],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/ten-stem-materials.mjs:94:3
+✖ 壬 high: approved material, original B geometry and supported effects (83.569022ms)
+  AssertionError [ERR_ASSERTION]: Rest attributes must stay attached until geometry disposal releases their GPU buffers
+  + actual - expected
+
+    [
+      [
+  +     false,
+  +     false,
+  +     false,
+  +     false
+  -     true,
+  -     true,
+  -     true,
+  -     true
+      ]
+    ]
+
+      at TestContext.<anonymous> (file://<checkout>/scripts/qa/ten-stem-materials.mjs:145:14)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [Array],
+    expected: [Array],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/ten-stem-materials.mjs:94:3
+✖ 癸 high: approved material, original B geometry and supported effects (67.642792ms)
+  AssertionError [ERR_ASSERTION]: Rest attributes must stay attached until geometry disposal releases their GPU buffers
+  + actual - expected
+
+    [
+      [
+  +     false,
+  +     false,
+  +     false,
+  +     false
+  -     true,
+  -     true,
+  -     true,
+  -     true
+      ]
+    ]
+
+      at TestContext.<anonymous> (file://<checkout>/scripts/qa/ten-stem-materials.mjs:145:14)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [Array],
+    expected: [Array],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
