@@ -23,6 +23,15 @@ const CATEGORY_MAP: Record<string, { label: string; badge: string }> = {
   consult: { label: "풀이 대화", badge: "bg-purple-100 text-purple-800" },
 };
 
+// Validate before storing the list so malformed items reach the retryable error state.
+function canRenderFortuneSummary(value: unknown): boolean {
+  if (!value || typeof value !== "object" || Array.isArray(value)) return false;
+  const row = value as Record<string, unknown>;
+  if (typeof row.id !== "string" || !row.id || typeof row.createdAt !== "string") return false;
+  if (!["category", "title", "summary", "name", "dayMaster"].every(key => typeof row[key] === "string")) return false;
+  return row.createdAt === "" || Number.isFinite(new Date(row.createdAt).getTime());
+}
+
 function SavedContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -47,7 +56,7 @@ function SavedContent() {
     fetch("/api/saju?view=summary", { signal: controller.signal })
       .then(async (res) => {const data=await readApiResponse(res); if(!res.ok) throw new Error(data.error || "기록을 불러오지 못했습니다."); return data;})
       .then((data) => {
-        if (!Array.isArray(data.fortuneSummaries)) throw new Error("기록 목록을 확인할 수 없습니다.");
+        if (!Array.isArray(data.fortuneSummaries) || !data.fortuneSummaries.every(canRenderFortuneSummary)) throw new Error("기록 목록을 확인할 수 없습니다.");
         if (!controller.signal.aborted) setFortunes(data.fortuneSummaries);
       })
       .catch((error) => { if (!controller.signal.aborted) setLoadError(error.message || "기록을 불러오지 못했습니다."); })
