@@ -1,0 +1,2798 @@
+[
+  {
+    "path": "saju_planet_preview/lib/planet/approved-stem-materials.ts",
+    "bytes": 24509,
+    "sha256": "4f625fe9b75ee278e67b4b452b6bc16fe01f599bec2b48dad8e3842602266f7b",
+    "archive": "saju-source-candidates-and-qa--part-01.zip"
+  },
+  {
+    "path": "saju_planet_preview/postcss.config.mjs",
+    "bytes": 59,
+    "sha256": "9199a4d20e13f66b8be9a348af182f4d14805b93b315db19f95be8432cd8301b",
+    "archive": "saju-source-candidates-and-qa--part-01.zip"
+  },
+  {
+    "path": "saju_planet_preview/public/models/five-elements/metal-v1.glb",
+    "bytes": 74064,
+    "sha256": "9ed143929120a5836005ffe707be9bbf6f20a94a6bfee1828455fdcceb27a023",
+    "archive": "saju-source-candidates-and-qa--part-01.zip"
+  },
+  {
+    "path": "saju_planet_preview/public/models/porcelain-hero-blink-v1.glb",
+    "bytes": 13700928,
+    "sha256": "57d7ee5b3c4e0b99eaadefb8095283bed44986beaa5a91c096dd7a0c514bf9c2",
+    "archive": "saju-source-candidates-and-qa--part-01.zip"
+  },
+  {
+    "path": "saju_standalone_artifacts_20261009/SaJu_Standalone_Passport_Title_Fit_QA_20261009_0257.zip",
+    "bytes": 995962,
+    "sha256": "c67cb820658b8c1625dcaa3a7f6bc60eab8a404a9d1389aa7358806259e752d2",
+    "archive": "saju-source-candidates-and-qa--part-01.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/final-runs/tampered-snapshot/stdout.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "archive": "saju-source-candidates-and-qa--part-02.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/candidate-evidence/CPU_after_latin_40.png",
+    "bytes": 63950,
+    "sha256": "25032b2727c8bc24319d00833e348948352186bf7c7f78dd614e694f4771397c",
+    "archive": "saju-source-candidates-and-qa--part-02.zip"
+  },
+  {
+    "path": "saju_planet_preview/public/images/stem-material-reference-v2.png",
+    "bytes": 2642558,
+    "sha256": "0cda0a5c0b27c5921703c563bbbe1bb2255c8a8eb0bb948163f3948198143562",
+    "archive": "saju-source-candidates-and-qa--part-02.zip"
+  },
+  {
+    "path": "saju_planet_preview/public/models/five-elements/water-expression-v1.glb",
+    "bytes": 441872,
+    "sha256": "1a5139c2aa1bc78f67d6755f2da9e0ec2997f78b06c541a8898b348191ebb42b",
+    "archive": "saju-source-candidates-and-qa--part-02.zip"
+  },
+  {
+    "path": "saju_planet_preview/public/models/porcelain-hero-v1-lite.glb",
+    "bytes": 5504312,
+    "sha256": "22bd1b4d410db3d8dbfe5068f78ce12ef4fcdc759a46915541fa356501a62f6e",
+    "archive": "saju-source-candidates-and-qa--part-02.zip"
+  },
+  {
+    "path": "saju_planet_preview/public/models/porcelain-hero-v2.glb",
+    "bytes": 5951928,
+    "sha256": "8a21d20acf59a6e77105359f85a0a3275ea5fa0753a7b7533aaf47656ad8484b",
+    "archive": "saju-source-candidates-and-qa--part-02.zip"
+  },
+  {
+    "path": "saju_standalone_runner_20261009/delivery/SaJu_Combined_Standalone_Verifier_20261009.zip",
+    "bytes": 378567,
+    "sha256": "2a641dd478411a65cd48428492e8d8fd7b7245f4c15f51acd8bde2864ec69e90",
+    "archive": "saju-source-candidates-and-qa--part-02.zip"
+  },
+  {
+    "path": "saju_standalone_runner_20261009/delivery/SaJu_Combined_Standalone_Verifier_QA_20261009.zip",
+    "bytes": 337835,
+    "sha256": "b28d7df4bcc86678f42314ebbec9c4cdf718f4b4ab37dc869f843d9c1f37b1d4",
+    "archive": "saju-source-candidates-and-qa--part-02.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/source/package-lock.json",
+    "bytes": 527535,
+    "sha256": "ffb8ad533a7ea1d2f48ca306489d19884296f7902423fbbc00c48f3b8fd11d4e",
+    "archive": "saju-source-candidates-and-qa--part-03.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/final-runs/tampered-snapshot/stderr.log",
+    "bytes": 1097,
+    "sha256": "7a87c44d74d1f06f0810e43fc99d4a21ac95b0f2107aee57b676974256c81c28",
+    "archive": "saju-source-candidates-and-qa--part-03.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/candidate-evidence/CPU_after_hangul_3.png",
+    "bytes": 69359,
+    "sha256": "31f5939517341e822abdae45c681e314e18fefc3547c158418a747ad85adb498",
+    "archive": "saju-source-candidates-and-qa--part-03.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/candidate-evidence/CPU_after_hangul_40.png",
+    "bytes": 70874,
+    "sha256": "fddc1c0b301b472e975ea82051a1de6b9ff4e7e07d773e17f675dbb1884b102d",
+    "archive": "saju-source-candidates-and-qa--part-03.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/candidate-evidence/CPU_after_latin_20.png",
+    "bytes": 71746,
+    "sha256": "ec8f66d964f7bd70d8c6c5a354e2a341fa1b0e417188fbdc9ef73ef45b8f2614",
+    "archive": "saju-source-candidates-and-qa--part-03.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/candidate-evidence/CPU_before_hangul_3.png",
+    "bytes": 69058,
+    "sha256": "c7948fa60bb10926b5c281c022391e645cf2bbb69c5ccf52bde55f930573ca0f",
+    "archive": "saju-source-candidates-and-qa--part-03.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/candidate-evidence/CPU_before_hangul_40.png",
+    "bytes": 73649,
+    "sha256": "a15028dc92aea65b14abe43dd3ae940c19aaa226ebf855f16cc7ac4cadfc72e5",
+    "archive": "saju-source-candidates-and-qa--part-03.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/candidate-evidence/CPU_before_latin_20.png",
+    "bytes": 75278,
+    "sha256": "57c9121a4684f7202660098be3c1f32a9e5794686dab24c43233f42d128bb764",
+    "archive": "saju-source-candidates-and-qa--part-03.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/evidence/CPU_font_specimen_hangul_10.png",
+    "bytes": 69545,
+    "sha256": "7055990c0f4e61fd53b03dae7d542e5c37f612bcbb1ba73170d66e31802ba14a",
+    "archive": "saju-source-candidates-and-qa--part-03.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/evidence/CPU_font_specimen_hangul_40.png",
+    "bytes": 68455,
+    "sha256": "e450dd9293075c85ecc97cb63e3bb0ee743ce874ae1669d96e428f66116e7240",
+    "archive": "saju-source-candidates-and-qa--part-03.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/evidence/CPU_font_specimen_latin_20.png",
+    "bytes": 71658,
+    "sha256": "274d7c1add94ebb92f22d73075da6f44d01a81dccbe3f9b77f2911df9287b8c0",
+    "archive": "saju-source-candidates-and-qa--part-03.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/evidence/CPU_font_specimen_latin_40.png",
+    "bytes": 53952,
+    "sha256": "d3b1421ba4a26fb83518a3a8c26ba73d07e8befab4d53a8a72325a2535fe9f80",
+    "archive": "saju-source-candidates-and-qa--part-03.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/candidate-evidence/CPU_after_hangul_3.png",
+    "bytes": 69359,
+    "sha256": "31f5939517341e822abdae45c681e314e18fefc3547c158418a747ad85adb498",
+    "archive": "saju-source-candidates-and-qa--part-03.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/candidate-evidence/CPU_after_hangul_40.png",
+    "bytes": 70874,
+    "sha256": "fddc1c0b301b472e975ea82051a1de6b9ff4e7e07d773e17f675dbb1884b102d",
+    "archive": "saju-source-candidates-and-qa--part-03.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/candidate-evidence/CPU_after_latin_20.png",
+    "bytes": 71746,
+    "sha256": "ec8f66d964f7bd70d8c6c5a354e2a341fa1b0e417188fbdc9ef73ef45b8f2614",
+    "archive": "saju-source-candidates-and-qa--part-03.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/candidate-evidence/CPU_before_hangul_3.png",
+    "bytes": 69058,
+    "sha256": "c7948fa60bb10926b5c281c022391e645cf2bbb69c5ccf52bde55f930573ca0f",
+    "archive": "saju-source-candidates-and-qa--part-03.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/candidate-evidence/CPU_before_hangul_40.png",
+    "bytes": 73649,
+    "sha256": "a15028dc92aea65b14abe43dd3ae940c19aaa226ebf855f16cc7ac4cadfc72e5",
+    "archive": "saju-source-candidates-and-qa--part-03.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/candidate-evidence/CPU_before_latin_20.png",
+    "bytes": 75278,
+    "sha256": "57c9121a4684f7202660098be3c1f32a9e5794686dab24c43233f42d128bb764",
+    "archive": "saju-source-candidates-and-qa--part-03.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/evidence/CPU_font_specimen_hangul_10.png",
+    "bytes": 69545,
+    "sha256": "7055990c0f4e61fd53b03dae7d542e5c37f612bcbb1ba73170d66e31802ba14a",
+    "archive": "saju-source-candidates-and-qa--part-03.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/evidence/CPU_font_specimen_hangul_40.png",
+    "bytes": 68455,
+    "sha256": "e450dd9293075c85ecc97cb63e3bb0ee743ce874ae1669d96e428f66116e7240",
+    "archive": "saju-source-candidates-and-qa--part-03.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/evidence/CPU_font_specimen_latin_20.png",
+    "bytes": 71658,
+    "sha256": "274d7c1add94ebb92f22d73075da6f44d01a81dccbe3f9b77f2911df9287b8c0",
+    "archive": "saju-source-candidates-and-qa--part-03.zip"
+  },
+  {
+    "path": "saju_planet_preview/package-lock.json",
+    "bytes": 527535,
+    "sha256": "ffb8ad533a7ea1d2f48ca306489d19884296f7902423fbbc00c48f3b8fd11d4e",
+    "archive": "saju-source-candidates-and-qa--part-03.zip"
+  },
+  {
+    "path": "saju_planet_preview/public/images/cosmos-cover.png",
+    "bytes": 2463808,
+    "sha256": "8749ac60a1333b432c55c9a9fc826a78eabdb4187e292bba0bfbcf5d7d9ac1ba",
+    "archive": "saju-source-candidates-and-qa--part-03.zip"
+  },
+  {
+    "path": "saju_planet_preview/public/images/five-element-lineup-v1.png",
+    "bytes": 1093134,
+    "sha256": "662e822695e7477d671aa3911ac21b461f40d1173ac1d41b4aa593b3692dc6ca",
+    "archive": "saju-source-candidates-and-qa--part-03.zip"
+  },
+  {
+    "path": "saju_planet_preview/public/images/im-water-target.png",
+    "bytes": 2139813,
+    "sha256": "0af98704cdb10f38ec6c67ea6eba6938af5dfd5fdbafa3b8350f0596b15d0744",
+    "archive": "saju-source-candidates-and-qa--part-03.zip"
+  },
+  {
+    "path": "saju_planet_preview/public/images/porcelain-hero-portrait-v2.png",
+    "bytes": 1272069,
+    "sha256": "1c6761dfbb1bcd1b496258c51382ceab63a9e6e3374d8fcf813d992a647c8e54",
+    "archive": "saju-source-candidates-and-qa--part-03.zip"
+  },
+  {
+    "path": "saju_planet_preview/public/images/porcelain-hero-portrait.png",
+    "bytes": 1282479,
+    "sha256": "36e44ff235b3e5440f0e0eac1c4a55e79e3c8def9977ba53d4b5d5983725f168",
+    "archive": "saju-source-candidates-and-qa--part-03.zip"
+  },
+  {
+    "path": "saju_planet_preview/public/models/five-elements/earth-expression-v1.glb",
+    "bytes": 313216,
+    "sha256": "adddd4af80479125b9750b15f36a91fdc74ab618c2fc1f99b8c2018095c0289b",
+    "archive": "saju-source-candidates-and-qa--part-03.zip"
+  },
+  {
+    "path": "saju_planet_preview/public/models/five-elements/earth-v1.glb",
+    "bytes": 207808,
+    "sha256": "8a5e1c2604ff66ad154f83fa6da67734c19c4fe696d2228d2808576637b8ebfa",
+    "archive": "saju-source-candidates-and-qa--part-03.zip"
+  },
+  {
+    "path": "saju_planet_preview/public/models/five-elements/fire-expression-v1.glb",
+    "bytes": 300900,
+    "sha256": "c3d4c4d4a1cf606e323f0bf213dbf4b5eec7a3794905fce817465541d25d30c3",
+    "archive": "saju-source-candidates-and-qa--part-03.zip"
+  },
+  {
+    "path": "saju_planet_preview/public/models/five-elements/fire-v1.glb",
+    "bytes": 195492,
+    "sha256": "f1c897e34302278ca4d78abbc787348acf8adb73de506c60b873ef3cf3062f93",
+    "archive": "saju-source-candidates-and-qa--part-03.zip"
+  },
+  {
+    "path": "saju_planet_preview/public/models/five-elements/metal-expression-v1.glb",
+    "bytes": 179040,
+    "sha256": "d01210e7870b94c96a0c1be4f4c1b147d059f91803f8ac0b294bc94b66ba9145",
+    "archive": "saju-source-candidates-and-qa--part-03.zip"
+  },
+  {
+    "path": "saju_planet_preview/public/models/five-elements/wood-expression-v1.glb",
+    "bytes": 304336,
+    "sha256": "9988e332a4efaefbe2c4c2885e0a5c4842e6089e8c5d0f2b430e70d1a5930b2b",
+    "archive": "saju-source-candidates-and-qa--part-03.zip"
+  },
+  {
+    "path": "saju_planet_preview/public/models/five-elements/wood-v1.glb",
+    "bytes": 198948,
+    "sha256": "1bf696c798ca3c97e9125fa8866e8146895129cf0dadab19ec755c98255c3cf1",
+    "archive": "saju-source-candidates-and-qa--part-03.zip"
+  },
+  {
+    "path": "saju_planet_preview/tsconfig.tsbuildinfo",
+    "bytes": 340784,
+    "sha256": "5b1c9b68451235f7a355d5eb9b89fe3a3e009fd0da1eef3e665d71c808c9c42e",
+    "archive": "saju-source-candidates-and-qa--part-03.zip"
+  },
+  {
+    "path": "saju_standalone_artifacts_20261009/SaJu_Standalone_Name_Boundary_Fix_QA_20261009_0155.zip",
+    "bytes": 277850,
+    "sha256": "c3d8d90e14b607ff20b3a937db71b4dccb25b288203944f616a8b06325aaa77d",
+    "archive": "saju-source-candidates-and-qa--part-03.zip"
+  },
+  {
+    "path": "saju_standalone_artifacts_20261009/SaJu_Standalone_Orbital_Calendar_Fix_QA_20261009_0138.zip",
+    "bytes": 200403,
+    "sha256": "b6eea7a14b89f1d320c893b75f80f4419eea47364362a6cd3d8e1795afeb4aac",
+    "archive": "saju-source-candidates-and-qa--part-03.zip"
+  },
+  {
+    "path": "saju_standalone_runner_20261009/capsules/SaJu_Standalone_Name_Boundary_Fix_QA_20261009_0155.zip",
+    "bytes": 277850,
+    "sha256": "c3d8d90e14b607ff20b3a937db71b4dccb25b288203944f616a8b06325aaa77d",
+    "archive": "saju-source-candidates-and-qa--part-03.zip"
+  },
+  {
+    "path": "saju_standalone_runner_20261009/capsules/SaJu_Standalone_Orbital_Calendar_Fix_QA_20261009_0138.zip",
+    "bytes": 200403,
+    "sha256": "b6eea7a14b89f1d320c893b75f80f4419eea47364362a6cd3d8e1795afeb4aac",
+    "archive": "saju-source-candidates-and-qa--part-03.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/README.md",
+    "bytes": 10866,
+    "sha256": "75d31e8aec72110e1b52cf64728daf5344ea411b6398a42f0a35ea3148afcb2d",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/REPORT.md",
+    "bytes": 2158,
+    "sha256": "cac80f6f75e8aee428ea9418f7e1e236e134ef667d838f7339567b988436b780",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/artifact-sha256.json",
+    "bytes": 2852,
+    "sha256": "eb70b0116ab86908f2827f78827cdd6e432ac8c7a8496c7a66c3308812b7910c",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/candidate/lib/saju/daily-orbital.ts",
+    "bytes": 4139,
+    "sha256": "890d71b2e588911201a6db9ed78b61f9704260f51b14dccccc21b43f8900c21b",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/candidate-sha256.json",
+    "bytes": 102,
+    "sha256": "0a463c448cfcd4d6ba95d24ed47f25f30755dc0cee4fbed2612f7f13c5dafd99",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/daily-orbital-calendar.patch",
+    "bytes": 987,
+    "sha256": "02ea4336e6b2054c32bcbf0bbb2399113064335bc14e310e00f19b9d0f634a2d",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/evidence/coordinator-verification.log",
+    "bytes": 1922,
+    "sha256": "41267dc4f43c1ed7a0ffc03259c8301a3ddd9661df5ec20baa2a65c5732ab81f",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/evidence/initial-green.txt",
+    "bytes": 2836,
+    "sha256": "54d22052d01abb0ab4173a5beb238e7a4594b15440a5a0f773315a95ef88fd4c",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/evidence/initial-red.txt",
+    "bytes": 3208,
+    "sha256": "b662edca2f7295c2b5becd67e6ca1734d5a96f27b143366a249f9a739436eb6b",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/evidence/reproduced-green.txt",
+    "bytes": 2864,
+    "sha256": "0d978475043a05afcd43b4571f25186c2055708a1fb1c16c0ecac621c6dbb873",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/evidence/reproduced-red.txt",
+    "bytes": 3208,
+    "sha256": "b662edca2f7295c2b5becd67e6ca1734d5a96f27b143366a249f9a739436eb6b",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/evidence/verification.json",
+    "bytes": 4306,
+    "sha256": "d6c654bc6fcf69c94c85a53b3e67ce37cb2f41ee318e909348b31db194004baa",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/harness.mjs",
+    "bytes": 4201,
+    "sha256": "734506abd503c088ec0cd34e8c4d89f98e1690be9e1cb963a1e6c4a76df64067",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/provenance.json",
+    "bytes": 5588,
+    "sha256": "4d634dfd633e60cf79802e5c8929e518e7d4973c10b3b20a455ab5ba5bd9312e",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/review/INDEPENDENT_REVIEW.md",
+    "bytes": 7084,
+    "sha256": "5f63b85453ab0dc4306bfd94dd7bfd4d7e8b09bc0dfe114b507aa805dd8c6f0e",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/review/additional-semantics.json",
+    "bytes": 541,
+    "sha256": "4d0616964bfa83aa9eaf31ec0e8e9537d6160af404c6c55fd4181dbc1c5f3871",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/review/candidate-full.log",
+    "bytes": 2836,
+    "sha256": "54d22052d01abb0ab4173a5beb238e7a4594b15440a5a0f773315a95ef88fd4c",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/review/final-candidate-full.log",
+    "bytes": 2864,
+    "sha256": "0d978475043a05afcd43b4571f25186c2055708a1fb1c16c0ecac621c6dbb873",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/review/final-document-check.json",
+    "bytes": 795,
+    "sha256": "b58ad4ed86c99196318caa41eeeedf804c2e360bedabe0329c7bada5cd843d72",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/review/final-original-regression.log",
+    "bytes": 3208,
+    "sha256": "b662edca2f7295c2b5becd67e6ca1734d5a96f27b143366a249f9a739436eb6b",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/review/final-review-run-evidence.json",
+    "bytes": 5529,
+    "sha256": "8fd817a96953af46dd698b334c56719c26da369359d4af48ea914be144693b26",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/review/final-verify-runner.json",
+    "bytes": 3080,
+    "sha256": "b92f4f845c8bc96bdaead15909dea9610f91fc3aaea7591a6da3ec55e9931857",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/review/final-verify-runner.log",
+    "bytes": 1922,
+    "sha256": "41267dc4f43c1ed7a0ffc03259c8301a3ddd9661df5ec20baa2a65c5732ab81f",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/review/old-checkout-review-end.json",
+    "bytes": 15834,
+    "sha256": "4b0faa53619873d9201a630faa702d01ca4a17092ecc16d111a376c224af49ad",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/review/old-checkout-review-start.json",
+    "bytes": 15396,
+    "sha256": "e7b6d2168aa5d775c2f7ce67164984c4673a274c2431458479aec656a83b10b9",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/review/original-regression.log",
+    "bytes": 3208,
+    "sha256": "b662edca2f7295c2b5becd67e6ca1734d5a96f27b143366a249f9a739436eb6b",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/review/patch-verification.json",
+    "bytes": 1133,
+    "sha256": "64d6270394fba98ab82d962d03a3782cfb3535442a8fd7b973e67c4664095b4a",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/review/review-run-evidence.json",
+    "bytes": 5403,
+    "sha256": "08994181bd43a1f5d8bd556f22d56258857bcb5ffa3c5189c27893d3096bba83",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/run-tests.mjs",
+    "bytes": 14340,
+    "sha256": "32d7f76dd606df70d9123b9b10e08ec0ac19ba2a3b4797ccc46268c97e1e12d3",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/source/README.md",
+    "bytes": 3367,
+    "sha256": "80451f2d590ce115f10134fa3797fbc98c38ae8a976a3f4448cb4751ad4b1cee",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/source/app/daily/page.tsx",
+    "bytes": 8896,
+    "sha256": "71e8d2411db526e3c6ddea8b3825ac0dbefaa4edaf20ba3e3037842a063faa0c",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/source/lib/planet/elemental-spirit.ts",
+    "bytes": 8704,
+    "sha256": "2cff895a7112aba3aa7f8e88c178c42eb7cdea4fb32d3db312587c57f93abc40",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/source/lib/saju/daily-orbital.ts",
+    "bytes": 4230,
+    "sha256": "6756859b26da60494203f5903532ed8b7ffe76ef2d9ae69ab4d1c2b629fec79b",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/source/lib/saju/input-error.ts",
+    "bytes": 167,
+    "sha256": "a1533c1b2c00755ed076e978990d0fb8119ec80ff5599096da4781990b54285a",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/source/lib/saju/input.ts",
+    "bytes": 5520,
+    "sha256": "7880ae0a8808631918cc3d33ac4acc39955443fac9c4d24acc11077b17e220cf",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/source/lib/saju/lunar-calendar.ts",
+    "bytes": 2920,
+    "sha256": "5a7c2c411873e640eab764db21f5ab1bd6f149b5d41434327b81e46e00a6a6c1",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/source/lib/saju/manse.ts",
+    "bytes": 15053,
+    "sha256": "dae53e7bf50f5b821d1c737967c23e70e5c0623fb7089142fe01bcc5c6b15710",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/source/lib/saju/types.ts",
+    "bytes": 3551,
+    "sha256": "278346290f6b8d9fa32ceea4b891ee48b67e8c5f4385d3ce985daecf72b66d79",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/source/package.json",
+    "bytes": 2253,
+    "sha256": "2028920683812c2b0e03ed6e3d77cfe1d122b7097920d90b23045fd976829d40",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/source/tsconfig.json",
+    "bytes": 800,
+    "sha256": "7199c6e4e400921e8049729840165a39f1476fa97901bed00239e7697bfe8da4",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/source-tracked-sha256.json",
+    "bytes": 15396,
+    "sha256": "e7b6d2168aa5d775c2f7ce67164984c4673a274c2431458479aec656a83b10b9",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_calendar_maintenance_20261009/verify.mjs",
+    "bytes": 5917,
+    "sha256": "249fbdeb1774e9f695668ac933698412517eeb5699e279ed5e5c8c9fd74d710f",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/README.md",
+    "bytes": 10472,
+    "sha256": "ad4753b5a9e31c0afc0076bb40b68ebe07fa8eea908be5800b1716cc65244f54",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/candidate/name-boundary.ts",
+    "bytes": 627,
+    "sha256": "4d84f006107e4b30aa60598574fdd4a6160fef03d25a7743e6a29b3e6887f53f",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/candidate.patch",
+    "bytes": 1478,
+    "sha256": "8e07392e6761c52b599f267840f5b81fe8755015262937112d9e0e7ba332a817",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/evidence.json",
+    "bytes": 199203,
+    "sha256": "afb36e52b45df7f191d7c1832d2f20b9a22eefdd7185095559526f7b784f072f",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/frozen-manifest.sha256",
+    "bytes": 2365,
+    "sha256": "ef644ac0520010d9ecb387807dfd7eff56439b747640e20e51be37f91ef2da8c",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/green-results.json",
+    "bytes": 82147,
+    "sha256": "f0fadba69ae003d61cbddc71e5912e58d9a6cdef263a4527f09a6278421de740",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/green-run.log",
+    "bytes": 608,
+    "sha256": "c1f891ebdd409aa8af747d59c46893dfe1f181bb64f6cc45b8218ebf031537b9",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/harness-support.mjs",
+    "bytes": 3432,
+    "sha256": "c415bbc3e22d69289b7c9b41ad25b95af0508d80287ed728f12c150f6c519d0d",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/red-results.json",
+    "bytes": 89177,
+    "sha256": "99c1d6be52927d44a109144ea12326be9d0891486f6dd0c6c5ec0d8818862819",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/red-run.log",
+    "bytes": 8036,
+    "sha256": "7b36523c7a6404adb99521bb8a17f33be4052e68502444ba6fb3af66619bbc57",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/reproduce-run.log",
+    "bytes": 1794,
+    "sha256": "0440313eece57d6efb5b5424c69e7861b1fcef092af4b52cb7368e50c1543b75",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/reproduce.mjs",
+    "bytes": 10841,
+    "sha256": "a9936fd126ca989d2daef5657c0109188d49fe0ec21c1f94ecf2fe93ba58259e",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/REVIEW.md",
+    "bytes": 9691,
+    "sha256": "69872cc3de93a6a8b73458f6d3a8a3198466c3b1e0a43f1e98ec94648c8219ab",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/baseline/red-results.json",
+    "bytes": 89056,
+    "sha256": "9cb51f282d34d12642b96c669372703827e9df4070c4031d074e1c9002933403",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/baseline/stderr.log",
+    "bytes": 7670,
+    "sha256": "3faf1ed5f0d955dbba37780586e63663927b9a0a8b5f986042f6a5b0de64eae7",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/baseline/stdout.log",
+    "bytes": 256,
+    "sha256": "7242d5699f88c8aeba35fed2af2c82f7454b160f39fdb3f830e02ac29d98463e",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/candidate/green-results.json",
+    "bytes": 82026,
+    "sha256": "8ad33323e236ec1d9b4fc532d9a49e3962d2192e694e416819e5a21910f6608a",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/candidate/stderr.log",
+    "bytes": 180,
+    "sha256": "b6b910480afd570b509b7c4fcf9a2d0e22f83419f72ea0212f12311c7558f9b4",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/candidate/stdout.log",
+    "bytes": 318,
+    "sha256": "d220ebd55c66fccc5a6cdb9869667b4e73680db434ca4b3a4be420201587ff89",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/detached/candidate-package/README.md",
+    "bytes": 9808,
+    "sha256": "6a6f2d09b3e584652130a736c3fe94111c65421f245cf46dfda4bb3c6283d378",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/detached/candidate-package/candidate/name-boundary.ts",
+    "bytes": 627,
+    "sha256": "4d84f006107e4b30aa60598574fdd4a6160fef03d25a7743e6a29b3e6887f53f",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/detached/candidate-package/candidate.patch",
+    "bytes": 1478,
+    "sha256": "8e07392e6761c52b599f267840f5b81fe8755015262937112d9e0e7ba332a817",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/detached/candidate-package/evidence.json",
+    "bytes": 199203,
+    "sha256": "afb36e52b45df7f191d7c1832d2f20b9a22eefdd7185095559526f7b784f072f",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/detached/candidate-package/frozen-manifest.sha256",
+    "bytes": 2365,
+    "sha256": "66d1e59174f4784e7547a7b4925a867fb8ca0a984daf4aa64a74a709fa2563f7",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/detached/candidate-package/green-results.json",
+    "bytes": 82147,
+    "sha256": "f0fadba69ae003d61cbddc71e5912e58d9a6cdef263a4527f09a6278421de740",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/detached/candidate-package/green-run.log",
+    "bytes": 608,
+    "sha256": "c1f891ebdd409aa8af747d59c46893dfe1f181bb64f6cc45b8218ebf031537b9",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/detached/candidate-package/harness-support.mjs",
+    "bytes": 3432,
+    "sha256": "c415bbc3e22d69289b7c9b41ad25b95af0508d80287ed728f12c150f6c519d0d",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/detached/candidate-package/red-results.json",
+    "bytes": 89177,
+    "sha256": "99c1d6be52927d44a109144ea12326be9d0891486f6dd0c6c5ec0d8818862819",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/detached/candidate-package/red-run.log",
+    "bytes": 8036,
+    "sha256": "7b36523c7a6404adb99521bb8a17f33be4052e68502444ba6fb3af66619bbc57",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/detached/candidate-package/reproduce-run.log",
+    "bytes": 1794,
+    "sha256": "0440313eece57d6efb5b5424c69e7861b1fcef092af4b52cb7368e50c1543b75",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/detached/candidate-package/reproduce.mjs",
+    "bytes": 10841,
+    "sha256": "a9936fd126ca989d2daef5657c0109188d49fe0ec21c1f94ecf2fe93ba58259e",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/detached/candidate-package/snapshot-after.json",
+    "bytes": 575,
+    "sha256": "93dc360ebc7cc10f5bf67577b7e2f72e5245ddcc8360e9fd0be2635472872d6a",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/detached/candidate-package/snapshot-before.json",
+    "bytes": 575,
+    "sha256": "93dc360ebc7cc10f5bf67577b7e2f72e5245ddcc8360e9fd0be2635472872d6a",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/detached/candidate-package/snapshots/manifest.json",
+    "bytes": 575,
+    "sha256": "93dc360ebc7cc10f5bf67577b7e2f72e5245ddcc8360e9fd0be2635472872d6a",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/detached/candidate-package/snapshots/original/lib/saju/input-error.ts",
+    "bytes": 167,
+    "sha256": "a1533c1b2c00755ed076e978990d0fb8119ec80ff5599096da4781990b54285a",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/detached/candidate-package/snapshots/original/lib/saju/input.ts",
+    "bytes": 5520,
+    "sha256": "7880ae0a8808631918cc3d33ac4acc39955443fac9c4d24acc11077b17e220cf",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/detached/candidate-package/snapshots/original/lib/saju/lunar-calendar.ts",
+    "bytes": 2920,
+    "sha256": "5a7c2c411873e640eab764db21f5ab1bd6f149b5d41434327b81e46e00a6a6c1",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/detached/candidate-package/snapshots/original/lib/saju/types.ts",
+    "bytes": 3551,
+    "sha256": "278346290f6b8d9fa32ceea4b891ee48b67e8c5f4385d3ce985daecf72b66d79",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/detached/candidate-package/source-after.json",
+    "bytes": 15792,
+    "sha256": "80449dfb53ced43fd0af3a9341db6584ab6148c7cdd354312ea3798e98bde2a8",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/detached/candidate-package/source-before.json",
+    "bytes": 15792,
+    "sha256": "80449dfb53ced43fd0af3a9341db6584ab6148c7cdd354312ea3798e98bde2a8",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/detached/candidate-package/test-boundary.mjs",
+    "bytes": 9254,
+    "sha256": "441feae52692b51dd4cbb1b83040ac553106effdb73582f58453e64cde5d9bdc",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/detached/candidate-package/verification-record.json",
+    "bytes": 1381,
+    "sha256": "098017b8c176303b532565423628d8a86d4a810d022c4ce620538c3519cf8698",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/evidence/evidence.json",
+    "bytes": 199041,
+    "sha256": "98663900aa2238c53f9940818dba02f58d57deefc4b651a32da621176362ed0b",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/evidence/source-after.json",
+    "bytes": 15792,
+    "sha256": "80449dfb53ced43fd0af3a9341db6584ab6148c7cdd354312ea3798e98bde2a8",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/evidence/source-before.json",
+    "bytes": 15792,
+    "sha256": "80449dfb53ced43fd0af3a9341db6584ab6148c7cdd354312ea3798e98bde2a8",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/evidence/stderr.log",
+    "bytes": 180,
+    "sha256": "d6e88283721ef5ecb8fd1134fd2a526340c8073b4a44794817510c1b3582b970",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/evidence/stdout.log",
+    "bytes": 1453,
+    "sha256": "a8b938c4b169b4bc88d8156862756aba0d83c9291b02ebe0ae4b8a2342f78b85",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/final-runs/baseline/red-results.json",
+    "bytes": 89177,
+    "sha256": "99c1d6be52927d44a109144ea12326be9d0891486f6dd0c6c5ec0d8818862819",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/final-runs/baseline/stderr.log",
+    "bytes": 7670,
+    "sha256": "78f868199e18b915d219aa1033cb10e676461c03a95a37627df01c6293520bbe",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/final-runs/baseline/stdout.log",
+    "bytes": 367,
+    "sha256": "ac93b250a0b5dc82ecf8d062c023c308be9ccde37a9cec84a61f4fb5f443b5d8",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/final-runs/candidate/green-results.json",
+    "bytes": 82147,
+    "sha256": "f0fadba69ae003d61cbddc71e5912e58d9a6cdef263a4527f09a6278421de740",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/final-runs/candidate/stderr.log",
+    "bytes": 180,
+    "sha256": "d2ea88896ea0896a447423dcd3a0ab9ecf357b289cb3df69f48d6796fab82a4a",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/final-runs/candidate/stdout.log",
+    "bytes": 429,
+    "sha256": "9d1ace1055008722690b3349f71192711bed34310abb5ba2b29d334fd0338391",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/final-runs/detached-baseline/red-results.json",
+    "bytes": 89177,
+    "sha256": "99c1d6be52927d44a109144ea12326be9d0891486f6dd0c6c5ec0d8818862819",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/final-runs/detached-baseline/stderr.log",
+    "bytes": 7670,
+    "sha256": "47cd7222bc28ad79205366ccc755d4677eb355e551b226b5c94224ee298022ba",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/final-runs/detached-baseline/stdout.log",
+    "bytes": 367,
+    "sha256": "ac93b250a0b5dc82ecf8d062c023c308be9ccde37a9cec84a61f4fb5f443b5d8",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/final-runs/detached-candidate/green-results.json",
+    "bytes": 82147,
+    "sha256": "f0fadba69ae003d61cbddc71e5912e58d9a6cdef263a4527f09a6278421de740",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/final-runs/detached-candidate/stderr.log",
+    "bytes": 180,
+    "sha256": "51cc70e7456dbcb840e4ed8411d56a4e340eb1aad164b66b0b1c309359f19275",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/final-runs/detached-candidate/stdout.log",
+    "bytes": 429,
+    "sha256": "9d1ace1055008722690b3349f71192711bed34310abb5ba2b29d334fd0338391",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/final-runs/detached-evidence/evidence.json",
+    "bytes": 199237,
+    "sha256": "b7cfb7eeb0725ac61f61d584d3881308b684ea95ada2e3ade8407f154d959283",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/final-runs/detached-evidence/snapshot-after.json",
+    "bytes": 575,
+    "sha256": "93dc360ebc7cc10f5bf67577b7e2f72e5245ddcc8360e9fd0be2635472872d6a",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/final-runs/detached-evidence/snapshot-before.json",
+    "bytes": 575,
+    "sha256": "93dc360ebc7cc10f5bf67577b7e2f72e5245ddcc8360e9fd0be2635472872d6a",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/final-runs/detached-evidence/stderr.log",
+    "bytes": 180,
+    "sha256": "93b513c86714156c30ea15e3fabdf59afec20149454575957f9a2431bb2a9915",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/final-runs/detached-evidence/stdout.log",
+    "bytes": 1649,
+    "sha256": "c394fb13604fa5bfb677710cf6f6e1d86f03b974b16e78a3f127bb8fffc30b2c",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/final-runs/evidence/evidence.json",
+    "bytes": 199203,
+    "sha256": "afb36e52b45df7f191d7c1832d2f20b9a22eefdd7185095559526f7b784f072f",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/final-runs/evidence/snapshot-after.json",
+    "bytes": 575,
+    "sha256": "93dc360ebc7cc10f5bf67577b7e2f72e5245ddcc8360e9fd0be2635472872d6a",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/final-runs/evidence/snapshot-before.json",
+    "bytes": 575,
+    "sha256": "93dc360ebc7cc10f5bf67577b7e2f72e5245ddcc8360e9fd0be2635472872d6a",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/final-runs/evidence/stderr.log",
+    "bytes": 180,
+    "sha256": "0faa4313b736082639c26cbcd2fb4fe25151314be570c069e1f088c931b7d8f6",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/final-runs/evidence/stdout.log",
+    "bytes": 1615,
+    "sha256": "057edf035081c9d0df598618ec4efbc43c192da8c394da97bd084b1d3f4d6a3e",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/final-runs/explicit-checkout/green-results.json",
+    "bytes": 82229,
+    "sha256": "ec96b73994934a577db5e0207774eb30ff53f7c5d9561eb7fe4e73cba5389d9f",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/final-runs/explicit-checkout/stderr.log",
+    "bytes": 180,
+    "sha256": "7479e36f1b1f44d1dce3e241569ae3ab6914d1f413c43b0bbc39f04673f549b2",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/final-runs/explicit-checkout/stdout.log",
+    "bytes": 507,
+    "sha256": "b20d56414c1fadd34de0f76e2ca046a25e90063d043b108129c6c9605ac4f40d",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/final-runs/explicit-missing-checkout/green-results.json",
+    "bytes": 82277,
+    "sha256": "b0f14cf8a3607f4f14ee0affa41ba09fce188585be486aaa6aed9f1efc3183a1",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/final-runs/explicit-missing-checkout/stderr.log",
+    "bytes": 180,
+    "sha256": "b1d73faa2d02d40c87cbfc983b8d1f288637e0205bed6a33dc20da7d9394eb0a",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/final-runs/explicit-missing-checkout/stdout.log",
+    "bytes": 557,
+    "sha256": "57448b1d5fb5bff7ae6d7eed39dd31eb3de448dae386c77482af97e5d4e47960",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/independent-checks.mjs",
+    "bytes": 11972,
+    "sha256": "07d74e1a9cf272aa557fd51fe332cf16bda4160e9a87dea76d8acb86188b7292",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/independent-results.json",
+    "bytes": 211709,
+    "sha256": "b88e58f63bc1684ee9dda91cc0fed2911d46bf9fd21c0fc62998f89445f01d2a",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/published-baseline.mjs",
+    "bytes": 9527,
+    "sha256": "5fd2c120676c968acc7dc9e0b8b85de3f764810c44d58d0ef8b2b121d99c7029",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/published-candidate.mjs",
+    "bytes": 9528,
+    "sha256": "2e70dd9cf54fe037761b97e11107aa84346c3a17166bb07c5bd1d2266f2c5f41",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/published-evidence.mjs",
+    "bytes": 11291,
+    "sha256": "2299b92bf73aa86752ef99255369f9702a3bfd2e94f8fefe65aed226a8c76522",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/published-rerun.json",
+    "bytes": 10207,
+    "sha256": "b2a65bf8775c1eccfae0774d10986e6023e8a157a2a85baf9f0d42a4c4baeca0",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/run-published.mjs",
+    "bytes": 2546,
+    "sha256": "459031c0b4b6ac3f90999c2fdb97cc9842481874fe497d13afaee9acff62c269",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/review/verify-frozen-package.mjs",
+    "bytes": 6355,
+    "sha256": "3fb00c51bf16ae22d153248d2438d36bf1ff15ecbe08a98d0d95b26082f4db5e",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/snapshot-after.json",
+    "bytes": 575,
+    "sha256": "93dc360ebc7cc10f5bf67577b7e2f72e5245ddcc8360e9fd0be2635472872d6a",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/snapshot-before.json",
+    "bytes": 575,
+    "sha256": "93dc360ebc7cc10f5bf67577b7e2f72e5245ddcc8360e9fd0be2635472872d6a",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/snapshots/manifest.json",
+    "bytes": 575,
+    "sha256": "93dc360ebc7cc10f5bf67577b7e2f72e5245ddcc8360e9fd0be2635472872d6a",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/snapshots/original/lib/saju/input-error.ts",
+    "bytes": 167,
+    "sha256": "a1533c1b2c00755ed076e978990d0fb8119ec80ff5599096da4781990b54285a",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/snapshots/original/lib/saju/input.ts",
+    "bytes": 5520,
+    "sha256": "7880ae0a8808631918cc3d33ac4acc39955443fac9c4d24acc11077b17e220cf",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/snapshots/original/lib/saju/lunar-calendar.ts",
+    "bytes": 2920,
+    "sha256": "5a7c2c411873e640eab764db21f5ab1bd6f149b5d41434327b81e46e00a6a6c1",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/snapshots/original/lib/saju/types.ts",
+    "bytes": 3551,
+    "sha256": "278346290f6b8d9fa32ceea4b891ee48b67e8c5f4385d3ce985daecf72b66d79",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/source-after.json",
+    "bytes": 15792,
+    "sha256": "80449dfb53ced43fd0af3a9341db6584ab6148c7cdd354312ea3798e98bde2a8",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/source-before.json",
+    "bytes": 15792,
+    "sha256": "80449dfb53ced43fd0af3a9341db6584ab6148c7cdd354312ea3798e98bde2a8",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/test-boundary.mjs",
+    "bytes": 9254,
+    "sha256": "441feae52692b51dd4cbb1b83040ac553106effdb73582f58453e64cde5d9bdc",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_name_boundary_investigation_20261009/verification-record.json",
+    "bytes": 1381,
+    "sha256": "098017b8c176303b532565423628d8a86d4a810d022c4ce620538c3519cf8698",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/CANDIDATE.md",
+    "bytes": 7948,
+    "sha256": "7e1af91898db880e8487d8ebb7c64c458f5d448e046f5366e6c84b9ee9bdba8c",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/CANDIDATE_SHA256.json",
+    "bytes": 8130,
+    "sha256": "d0089b2b1280febb4726eb26840c3be647cd2a8ae0e8a4bae0428b969ff606f1",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/MANIFEST_SHA256.json",
+    "bytes": 3651,
+    "sha256": "cee0037e8e6152cab4ac1095b2a0dcfbe0563d87b370767ea2e03e41dfedfc49",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/README.md",
+    "bytes": 9229,
+    "sha256": "c3d9ddd12216f320a5447fc80d88882c49ae2e97f5b8d859858a3f8cf5aacc7b",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/candidate/components/planet/CosmicPassportModal.tsx",
+    "bytes": 11607,
+    "sha256": "fc12c4ede68d68964c5fa3a1828dfad61e89348beb353f6d66d967bc5d43ff22",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/candidate/lib/planet/passport-title.ts",
+    "bytes": 1806,
+    "sha256": "70f5b1e97138ccee4b23a151100653951222efda5284bc68524ff710f373b8a3",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/candidate-evidence/CPU_before_latin_40.png",
+    "bytes": 58691,
+    "sha256": "bcf95059f80144000350bc732243a4b9334823d1a9bde13e101acda1f7fbabde",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/candidate-evidence/green-results.json",
+    "bytes": 2270,
+    "sha256": "0e693ad1519217f82453181079b4856c6347789986ddbf9e889ff79f97b142c3",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/candidate-evidence/green-run.log",
+    "bytes": 2449,
+    "sha256": "cbb745cdcf40fe9b3ce4bfbeb60ba3bdbc6f1f30aabae70b06f3c2cc0fb9d965",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/candidate-evidence/patch-check/components/planet/CosmicPassportModal.tsx",
+    "bytes": 11607,
+    "sha256": "fc12c4ede68d68964c5fa3a1828dfad61e89348beb353f6d66d967bc5d43ff22",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/candidate-evidence/patch-check/lib/planet/passport-title.ts",
+    "bytes": 1806,
+    "sha256": "70f5b1e97138ccee4b23a151100653951222efda5284bc68524ff710f373b8a3",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/candidate-evidence/patch-check.json",
+    "bytes": 91,
+    "sha256": "c1d1734caa61ed9f2e89d491e8671f33535ead5bad0174525e1047acb8d748fc",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/candidate-evidence/real-font-results.json",
+    "bytes": 24448,
+    "sha256": "276a2229e3324317ca84c2d06873c839fc58f4129ca5eeac25c89cfd0197655b",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/candidate-evidence/real-font-run.log",
+    "bytes": 2562,
+    "sha256": "1d3b3b8475001e419b7a85d021ca9924f464e300d7a39876488eac9357fdde61",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/candidate-evidence/red-initial-results.json",
+    "bytes": 5343,
+    "sha256": "3233aeab24be51f4b7580102f093305d73bfc89839ef976aca7f39167a28665a",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/candidate-evidence/red-initial-run.log",
+    "bytes": 5343,
+    "sha256": "3233aeab24be51f4b7580102f093305d73bfc89839ef976aca7f39167a28665a",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/candidate-evidence/red-results.json",
+    "bytes": 6183,
+    "sha256": "38f56122a0b464237f296758245ce6204b2bc8a658fb84654323fd87b5f31725",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/candidate-evidence/red-run.log",
+    "bytes": 6183,
+    "sha256": "38f56122a0b464237f296758245ce6204b2bc8a658fb84654323fd87b5f31725",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/candidate-freeze.json",
+    "bytes": 662,
+    "sha256": "fc8e3b87ac044af983040d83878f7db640224e94dcaf29c963abfab402bc3539",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/candidate.patch",
+    "bytes": 2742,
+    "sha256": "81ed151e35a3a35a8ec0c68e5bbf05c5e19ce8956a660d2638ce0dbbebb032ff",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/evidence/CPU_font_specimen_hangul_3.png",
+    "bytes": 63933,
+    "sha256": "b9e0591be05b47d7c643d2e9254161cfdf3f1c73030c09dbe6b50169c7617163",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/evidence/CPU_font_specimen_hangul_7.png",
+    "bytes": 66594,
+    "sha256": "4eefe7032fd8941468b0bee262f3a056c3b1baa1e86fc646ceebd9bc042fa1d2",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/evidence/extracted-export.js",
+    "bytes": 4575,
+    "sha256": "0dc926f713e1d37ada3fb64a28bab145f3e39af9b6f0821ff188eccfb51925d8",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/evidence/extracted-export.ts",
+    "bytes": 4575,
+    "sha256": "f708c5523786915d9c6b695c2f77b39ca47ce3fad0c98922a383a0805fee24cc",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/evidence/independent-font-metrics.json",
+    "bytes": 6291,
+    "sha256": "50007bc9e2d86b5af2d8e186b580e2052290bd48b16b99589ada51b92cd467ad",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/evidence/results.csv",
+    "bytes": 1700,
+    "sha256": "c9e60e639248c965ec4fd25285e6676b0884e0c752c8e877fcbfe2657457f13e",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/evidence/results.json",
+    "bytes": 35129,
+    "sha256": "182bc3b8b1f8996220dcef75b57b3a72f6d485d89a448d4e45bfd644c71525d0",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/independent-font-run.log",
+    "bytes": 193,
+    "sha256": "5cfd9e6169366d6d4198d83485d77b38b6cade6e531917bbf3498d63a9dc5584",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/measure-fonts.py",
+    "bytes": 2508,
+    "sha256": "629a1e6cae6880ed4411c77948cadeaf8715a3c0857e014dd201938f5a0599a4",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/minimal-case.mjs",
+    "bytes": 1462,
+    "sha256": "947aa5b77accb9d0d3a296ff81fa89c4247c174a1ac0a61dda1cb60e09c29ae2",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/render-candidate.mjs",
+    "bytes": 6227,
+    "sha256": "099791f4f518cd3f0b07d16b6a2c463d07ff490e3f91e492fc4c3b8612b288d5",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/reproduce.mjs",
+    "bytes": 12271,
+    "sha256": "63830c5cc3bb400cf45edb4ae43515b239246e9f479687bf0519faa1ca678edd",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/reproduction-run.log",
+    "bytes": 3237,
+    "sha256": "84ee658542b542c1a01f10a387c9d0ec4d46b215553b55f75935e85cc3293df8",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/REVIEW.md",
+    "bytes": 3469,
+    "sha256": "dc06db7d97dee0befa00882a8c0c807d6c4d560b67c2dd0ea95ecf81a7c4f713",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/REVIEW_SHA256.json",
+    "bytes": 1077,
+    "sha256": "276481f4bd84354b831b80eebfdb05f91baccce8bdad9cbbf8d02c13fe871823",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/CANDIDATE.md",
+    "bytes": 7948,
+    "sha256": "7e1af91898db880e8487d8ebb7c64c458f5d448e046f5366e6c84b9ee9bdba8c",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/CANDIDATE_SHA256.json",
+    "bytes": 8130,
+    "sha256": "d0089b2b1280febb4726eb26840c3be647cd2a8ae0e8a4bae0428b969ff606f1",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/MANIFEST_SHA256.json",
+    "bytes": 3651,
+    "sha256": "cee0037e8e6152cab4ac1095b2a0dcfbe0563d87b370767ea2e03e41dfedfc49",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/README.md",
+    "bytes": 9229,
+    "sha256": "c3d9ddd12216f320a5447fc80d88882c49ae2e97f5b8d859858a3f8cf5aacc7b",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/candidate/components/planet/CosmicPassportModal.tsx",
+    "bytes": 11607,
+    "sha256": "fc12c4ede68d68964c5fa3a1828dfad61e89348beb353f6d66d967bc5d43ff22",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/candidate/lib/planet/passport-title.ts",
+    "bytes": 1806,
+    "sha256": "70f5b1e97138ccee4b23a151100653951222efda5284bc68524ff710f373b8a3",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/candidate-evidence/CPU_after_latin_40.png",
+    "bytes": 63950,
+    "sha256": "25032b2727c8bc24319d00833e348948352186bf7c7f78dd614e694f4771397c",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/candidate-evidence/CPU_before_latin_40.png",
+    "bytes": 58691,
+    "sha256": "bcf95059f80144000350bc732243a4b9334823d1a9bde13e101acda1f7fbabde",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/candidate-evidence/green-results.json",
+    "bytes": 2270,
+    "sha256": "0e693ad1519217f82453181079b4856c6347789986ddbf9e889ff79f97b142c3",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/candidate-evidence/green-run.log",
+    "bytes": 2449,
+    "sha256": "cbb745cdcf40fe9b3ce4bfbeb60ba3bdbc6f1f30aabae70b06f3c2cc0fb9d965",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/candidate-evidence/patch-check/components/planet/CosmicPassportModal.tsx",
+    "bytes": 11607,
+    "sha256": "fc12c4ede68d68964c5fa3a1828dfad61e89348beb353f6d66d967bc5d43ff22",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/candidate-evidence/patch-check/lib/planet/passport-title.ts",
+    "bytes": 1806,
+    "sha256": "70f5b1e97138ccee4b23a151100653951222efda5284bc68524ff710f373b8a3",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/candidate-evidence/patch-check.json",
+    "bytes": 91,
+    "sha256": "c1d1734caa61ed9f2e89d491e8671f33535ead5bad0174525e1047acb8d748fc",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/candidate-evidence/real-font-results.json",
+    "bytes": 24448,
+    "sha256": "1388b508d116ee603e868c25e7cfde730ec98311783886a4f894cec8bf8e5b52",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/candidate-evidence/real-font-run.log",
+    "bytes": 2562,
+    "sha256": "1d3b3b8475001e419b7a85d021ca9924f464e300d7a39876488eac9357fdde61",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/candidate-evidence/red-initial-results.json",
+    "bytes": 5343,
+    "sha256": "3233aeab24be51f4b7580102f093305d73bfc89839ef976aca7f39167a28665a",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/candidate-evidence/red-initial-run.log",
+    "bytes": 5343,
+    "sha256": "3233aeab24be51f4b7580102f093305d73bfc89839ef976aca7f39167a28665a",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/candidate-evidence/red-results.json",
+    "bytes": 6183,
+    "sha256": "38f56122a0b464237f296758245ce6204b2bc8a658fb84654323fd87b5f31725",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/candidate-evidence/red-run.log",
+    "bytes": 6183,
+    "sha256": "38f56122a0b464237f296758245ce6204b2bc8a658fb84654323fd87b5f31725",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/candidate-freeze.json",
+    "bytes": 662,
+    "sha256": "fc8e3b87ac044af983040d83878f7db640224e94dcaf29c963abfab402bc3539",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/candidate.patch",
+    "bytes": 2742,
+    "sha256": "81ed151e35a3a35a8ec0c68e5bbf05c5e19ce8956a660d2638ce0dbbebb032ff",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/evidence/CPU_font_specimen_hangul_3.png",
+    "bytes": 63933,
+    "sha256": "b9e0591be05b47d7c643d2e9254161cfdf3f1c73030c09dbe6b50169c7617163",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/evidence/CPU_font_specimen_hangul_7.png",
+    "bytes": 66594,
+    "sha256": "4eefe7032fd8941468b0bee262f3a056c3b1baa1e86fc646ceebd9bc042fa1d2",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/evidence/CPU_font_specimen_latin_40.png",
+    "bytes": 53952,
+    "sha256": "d3b1421ba4a26fb83518a3a8c26ba73d07e8befab4d53a8a72325a2535fe9f80",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/evidence/extracted-export.js",
+    "bytes": 4575,
+    "sha256": "0dc926f713e1d37ada3fb64a28bab145f3e39af9b6f0821ff188eccfb51925d8",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/evidence/extracted-export.ts",
+    "bytes": 4575,
+    "sha256": "f708c5523786915d9c6b695c2f77b39ca47ce3fad0c98922a383a0805fee24cc",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/evidence/independent-font-metrics.json",
+    "bytes": 6291,
+    "sha256": "50007bc9e2d86b5af2d8e186b580e2052290bd48b16b99589ada51b92cd467ad",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/evidence/results.csv",
+    "bytes": 1700,
+    "sha256": "c9e60e639248c965ec4fd25285e6676b0884e0c752c8e877fcbfe2657457f13e",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/evidence/results.json",
+    "bytes": 35129,
+    "sha256": "182bc3b8b1f8996220dcef75b57b3a72f6d485d89a448d4e45bfd644c71525d0",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/independent-font-run.log",
+    "bytes": 193,
+    "sha256": "5cfd9e6169366d6d4198d83485d77b38b6cade6e531917bbf3498d63a9dc5584",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/measure-fonts.py",
+    "bytes": 2508,
+    "sha256": "629a1e6cae6880ed4411c77948cadeaf8715a3c0857e014dd201938f5a0599a4",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/minimal-case.mjs",
+    "bytes": 1462,
+    "sha256": "947aa5b77accb9d0d3a296ff81fa89c4247c174a1ac0a61dda1cb60e09c29ae2",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/render-candidate.mjs",
+    "bytes": 6227,
+    "sha256": "099791f4f518cd3f0b07d16b6a2c463d07ff490e3f91e492fc4c3b8612b288d5",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/reproduce.mjs",
+    "bytes": 12271,
+    "sha256": "63830c5cc3bb400cf45edb4ae43515b239246e9f479687bf0519faa1ca678edd",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/reproduction-run.log",
+    "bytes": 3237,
+    "sha256": "84ee658542b542c1a01f10a387c9d0ec4d46b215553b55f75935e85cc3293df8",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/snapshots/app/page.tsx",
+    "bytes": 5596,
+    "sha256": "32e8f52dce4e59ce1c92396afe7ae9ff9805888b7e0cd946e5ed3e306d2507b3",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/snapshots/app/planet/page.tsx",
+    "bytes": 26354,
+    "sha256": "c891598cbec48498ea9a3a77696daf651768c2ba1eec6849b84150ad8784a467",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/snapshots/components/planet/CosmicPassportModal.tsx",
+    "bytes": 11603,
+    "sha256": "238d09d72e31474de72065306e9367cbd44b1952a07c1463aaa2015a3f507e9c",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/snapshots/lib/saju/input-error.ts",
+    "bytes": 167,
+    "sha256": "a1533c1b2c00755ed076e978990d0fb8119ec80ff5599096da4781990b54285a",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/snapshots/lib/saju/input.ts",
+    "bytes": 5520,
+    "sha256": "7880ae0a8808631918cc3d33ac4acc39955443fac9c4d24acc11077b17e220cf",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/source-after.json",
+    "bytes": 917,
+    "sha256": "0a3a7b060ae31a9ad995b8dfded284db47f9e8201585c3e262a3e8afa6abdc7f",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/source-before.json",
+    "bytes": 966,
+    "sha256": "c017e68ac14726fb67151d9a27158cd2edf5bc4b2cbcb4ed9956bee2419e2603",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/test-title.mjs",
+    "bytes": 9632,
+    "sha256": "9bc4acb72dfe755a5cb142e0cfdf27632c57b496e1c314fa63b45a4b7e6d154e",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/independent_20261009T0252/verify-frozen.mjs",
+    "bytes": 626,
+    "sha256": "9434e60f16421951ba4c4e22a174a6c89e8573b0733191e102dbd35d5f7c8472",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/patch-application/components/planet/CosmicPassportModal.tsx",
+    "bytes": 11607,
+    "sha256": "fc12c4ede68d68964c5fa3a1828dfad61e89348beb353f6d66d967bc5d43ff22",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/patch-application/lib/planet/passport-title.ts",
+    "bytes": 1806,
+    "sha256": "70f5b1e97138ccee4b23a151100653951222efda5284bc68524ff710f373b8a3",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/replayed-core-baseline.json",
+    "bytes": 6183,
+    "sha256": "38f56122a0b464237f296758245ce6204b2bc8a658fb84654323fd87b5f31725",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/replayed-core-candidate.json",
+    "bytes": 2270,
+    "sha256": "0e693ad1519217f82453181079b4856c6347789986ddbf9e889ff79f97b142c3",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/replayed-cpu-fonts.json",
+    "bytes": 24448,
+    "sha256": "1388b508d116ee603e868c25e7cfde730ec98311783886a4f894cec8bf8e5b52",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/review-execution.json",
+    "bytes": 2787,
+    "sha256": "695c84e950f682e5c439a000f281e6c1742081c62b68fd9c0f2651e0c81b8df0",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/review-targeted.mjs",
+    "bytes": 6966,
+    "sha256": "0df008c272e9fe7bea8130847931920d55273f1b9fa61f50c492ff4c1d1fa041",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/review/targeted-results.json",
+    "bytes": 15602,
+    "sha256": "a8eb1e52c086b0c6991b7870569956865ce926e5b1a9f0d1253e18ee9967c1db",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/snapshots/app/page.tsx",
+    "bytes": 5596,
+    "sha256": "32e8f52dce4e59ce1c92396afe7ae9ff9805888b7e0cd946e5ed3e306d2507b3",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/snapshots/app/planet/page.tsx",
+    "bytes": 26354,
+    "sha256": "c891598cbec48498ea9a3a77696daf651768c2ba1eec6849b84150ad8784a467",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/snapshots/components/planet/CosmicPassportModal.tsx",
+    "bytes": 11603,
+    "sha256": "238d09d72e31474de72065306e9367cbd44b1952a07c1463aaa2015a3f507e9c",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/snapshots/lib/saju/input-error.ts",
+    "bytes": 167,
+    "sha256": "a1533c1b2c00755ed076e978990d0fb8119ec80ff5599096da4781990b54285a",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/snapshots/lib/saju/input.ts",
+    "bytes": 5520,
+    "sha256": "7880ae0a8808631918cc3d33ac4acc39955443fac9c4d24acc11077b17e220cf",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/source-after.json",
+    "bytes": 917,
+    "sha256": "0a3a7b060ae31a9ad995b8dfded284db47f9e8201585c3e262a3e8afa6abdc7f",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/source-before.json",
+    "bytes": 966,
+    "sha256": "c017e68ac14726fb67151d9a27158cd2edf5bc4b2cbcb4ed9956bee2419e2603",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/test-title.mjs",
+    "bytes": 9632,
+    "sha256": "9bc4acb72dfe755a5cb142e0cfdf27632c57b496e1c314fa63b45a4b7e6d154e",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_passport_export_width_investigation_20261009/verify-frozen.mjs",
+    "bytes": 626,
+    "sha256": "9434e60f16421951ba4c4e22a174a6c89e8573b0733191e102dbd35d5f7c8472",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/.gitignore",
+    "bytes": 598,
+    "sha256": "55d0a3e1f8e2e31b6fda7293305b96d676e6fcd51a9680d6903dd7240fa0e192",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/.npmrc",
+    "bytes": 45,
+    "sha256": "a3909ac0447c469fda12c57374993be70f47ce73e49fd3124678c7c047f2214d",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/README.md",
+    "bytes": 3367,
+    "sha256": "80451f2d590ce115f10134fa3797fbc98c38ae8a976a3f4448cb4751ad4b1cee",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/app/ai-test/page.tsx",
+    "bytes": 2355,
+    "sha256": "225bf184c230793c672106173f442e35bb47ffb774532d86b87be1c2cdbf6701",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/app/api/ai-test/route.ts",
+    "bytes": 7462,
+    "sha256": "2e1fcb86585e91e96d1fd6ec10936b7f885f75c6890f81ca94b1f2535a8fcbed",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/app/api/guin/[id]/route.ts",
+    "bytes": 3594,
+    "sha256": "8dd73d626b0b06fee452a2c0dbb9dac1f85476d4bda38c18c41e0e7aae899e08",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/app/api/guin/route.ts",
+    "bytes": 2466,
+    "sha256": "d30b39ba805647b315dc006e21e21222669d746bb0eaba59a3e04d1a75ebb145",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/app/api/saju/[id]/chat/route.ts",
+    "bytes": 1647,
+    "sha256": "a76b1b37f7cd7d2a886c282a57da2750b892f2774a7c529b5f949236a0c646af",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/app/api/saju/[id]/route.ts",
+    "bytes": 814,
+    "sha256": "a961fcf75131ebfe4bd40e3a139370b8d8984efcdb523495f3f0d44b6b9b225d",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/app/api/saju/route.ts",
+    "bytes": 2465,
+    "sha256": "09e995b99dfe5df1344a7c18f9406b156962ac130831b4e8dc4dde219a7bc843",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/app/chatgpt-auth.ts",
+    "bytes": 2550,
+    "sha256": "4265a2e7c2dcb3a6f4b7026f762bf5b6e4caec76cc13c0a45987ee9a9f2e42cc",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/app/daily/page.tsx",
+    "bytes": 8896,
+    "sha256": "71e8d2411db526e3c6ddea8b3825ac0dbefaa4edaf20ba3e3037842a063faa0c",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/app/globals.css",
+    "bytes": 8104,
+    "sha256": "348f8fecb0a07be93829945782a3eb1236e33a87bf0ab68cca1e952acf9a7d73",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/app/guin/[id]/page.tsx",
+    "bytes": 26443,
+    "sha256": "8ee5759b90fce125c817685959a0857f42e04e72e87593445595c1f1b5b20dde",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/app/guin/page.tsx",
+    "bytes": 10826,
+    "sha256": "a9f2a9b651b8dc7f1d2c8fbfdbdf5a8aa2d7b14073eb25ccb6e15aceb8656e9f",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/app/lab/lab.css",
+    "bytes": 4887,
+    "sha256": "04183c8365176d827a4f91a80260db874f065c351b7cd753a4138bbbb676cc3b",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/app/lab/material-study.css",
+    "bytes": 3220,
+    "sha256": "9930c14b576d23554bcc89e92a310fc0a51635937f52ddaed8ef8055fc91b623",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/app/lab/page.tsx",
+    "bytes": 7821,
+    "sha256": "72b9dfd50298ebd4d7f4760aef4ed61046c61cc5c6a40e83de306bf1f6c19bb3",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/app/layout.tsx",
+    "bytes": 617,
+    "sha256": "720720384d1dc56665e7abb254e25106fbc49a358abb83fb2d482e55ec9ace3c",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/app/manse/page.tsx",
+    "bytes": 14641,
+    "sha256": "823495ad9e71435d1d516ee03167a8baa45afd2565dda5b159f809a691713ff4",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/app/page.tsx",
+    "bytes": 5596,
+    "sha256": "32e8f52dce4e59ce1c92396afe7ae9ff9805888b7e0cd946e5ed3e306d2507b3",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/app/planet/page.tsx",
+    "bytes": 26354,
+    "sha256": "c891598cbec48498ea9a3a77696daf651768c2ba1eec6849b84150ad8784a467",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/app/saved/page.tsx",
+    "bytes": 10893,
+    "sha256": "362f08aec5817e009f010452d0705ac26b7ff243f2dd7aa5c35f56a3feebbc8e",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/build/connector-preview-plugin.mjs",
+    "bytes": 7211,
+    "sha256": "a6a9fe2086e302f94a3f91e3c1a68a45bb3aa07d4a79faf01b14732191eb4e80",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/build/connector-preview-worker.mjs",
+    "bytes": 594,
+    "sha256": "c1b6b2c420cb67d9e28f8f4ae440f578c0dfd4cb840a12cfe4b58076629a17ba",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/build/sites-vite-plugin.LICENSE",
+    "bytes": 1063,
+    "sha256": "7de1e115d165f176e68f962acdb809b5ab8d8ae78d3981e0701392b2ac50c713",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/build/sites-vite-plugin.ts",
+    "bytes": 7185,
+    "sha256": "07af20e7097d9ed1d76f7c446d02997550b8fc5ca89668b249e25eabd62c6834",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/build/sites-worker.ts",
+    "bytes": 1279,
+    "sha256": "28a75f74adfc226a773d1c00d5779c26412eea40a104da5c77f7d0f0fc30f0e8",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/cloudflare-env.d.ts",
+    "bytes": 175,
+    "sha256": "173bc87514f76d9cd1eb4c7a37ffa4490f947ef10aab39b8c72da1648ff56d90",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/components/AskDoryeongModal.tsx",
+    "bytes": 6987,
+    "sha256": "8e799a4f2e45367f347b0a76baa7fba975b8a90daedc55bb40b5c562f6b724c0",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/components/BottomNav.tsx",
+    "bytes": 635,
+    "sha256": "5a4dfbc19e2d1d38cdb7bb3ef5efdc96e65515a8cad7cb32b0a5ec8040905dc5",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/components/FortuneCard.tsx",
+    "bytes": 11785,
+    "sha256": "8af53011982b49d962ae0b95eadc688ab5f7d4eb4c3e451a74b86c8b911e5d93",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/components/Header.tsx",
+    "bytes": 2513,
+    "sha256": "3165326cf14689fd530210c0254ce6eb2740a0b0123216f252223b4535378bc2",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/components/SajuInputModal.tsx",
+    "bytes": 14077,
+    "sha256": "b1149546b91789a14c86b8d6473cf920bac35500c22ac5d954314ad435274cea",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/components/planet/CosmicPassportModal.tsx",
+    "bytes": 11603,
+    "sha256": "238d09d72e31474de72065306e9367cbd44b1952a07c1463aaa2015a3f507e9c",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/components/planet/ElementalSpiritCanvas.tsx",
+    "bytes": 13758,
+    "sha256": "57e17547686baefd8c609f94239c9a95ff1763781ba032b31450886426047cef",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/components/planet/FiveElementFormStudy.tsx",
+    "bytes": 10187,
+    "sha256": "589ba4190ce405a8106b5ab00566ace0bdf7aa9e38f7ecdd83a3f31b050b09b1",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/components/planet/GalaxyCanvas.tsx",
+    "bytes": 45606,
+    "sha256": "3f6ea2f9602cdde17eea306f09dbdc87b82d933476a1c73a41e97f460bc8bfc3",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/components/planet/GalaxyPokedexModal.tsx",
+    "bytes": 7217,
+    "sha256": "41f2dc176c4116742910c13b85955c1924de4c438dbcef0264ffeee445898c61",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/components/planet/ImWaterStudy.tsx",
+    "bytes": 6164,
+    "sha256": "8fdb860a47b236225ef1d5fe93d4a83ea3d6785f9a89b21e057898f1bc482134",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/components/planet/PlanetCanvas.tsx",
+    "bytes": 21333,
+    "sha256": "dcd23e4904ba9b7ef9c622f2c362f0984c7cd4f5bc841a5d4c9a5f0640a3fb6a",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/components/planet/PorcelainHeroStudy.tsx",
+    "bytes": 8254,
+    "sha256": "97f7c7dc60e9bbd89b8347fbc8fbf808a6641dc1351032d0ab7a0796e1b6dfd4",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/components/planet/StemMaterialStudy.tsx",
+    "bytes": 12915,
+    "sha256": "57719868ed4cba5c15206b933f1ed5479e3e91a5792107abbe0d51063ebf3d13",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/components.json",
+    "bytes": 420,
+    "sha256": "31f4ca67a4a62572571003d3d5aac85ee6fbfca67a192924bac6b168d95e98fd",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/db/index.ts",
+    "bytes": 423,
+    "sha256": "dc7610b00b918e0ffff1360a63626f16655ced3064b2eaf96095a4101fb14bcd",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/db/schema.ts",
+    "bytes": 1015,
+    "sha256": "62cc5b93062f6413ed44265131c073c9ed772a7d640cb45f1c1a7015b9b9d93e",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/drizzle/0000_windy_maestro.sql",
+    "bytes": 871,
+    "sha256": "8e96da17ba8f773233dc32d65449dd734d49e3cbb7dcd125b5edd10ea7fd59cf",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/drizzle/0001_fuzzy_blue_blade.sql",
+    "bytes": 98,
+    "sha256": "fb8809a8db6e5e07366ee349078c8470aeda9667842ebb9df2201c92996553cb",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/drizzle/meta/0000_snapshot.json",
+    "bytes": 4279,
+    "sha256": "2e81bafe8ffec7e85d00efea5127a8020b4a8cb616b0aba6584566442f7e05bc",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/drizzle/meta/0001_snapshot.json",
+    "bytes": 4861,
+    "sha256": "5f449ebd38fa36ed4dd916d017c2b629b239b4de13e6fb082d4a0d02d9011e0c",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/drizzle/meta/_journal.json",
+    "bytes": 347,
+    "sha256": "cc2c77bba410f2d93ad59c27c70effff8dd8abedd827046a2edbe9a0f352bda2",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/drizzle.config.ts",
+    "bytes": 148,
+    "sha256": "af081f7384aaeb0082cf422e29f139d137ca2f6a57c69b2c37b9fb1f8479867b",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/eslint.config.mjs",
+    "bytes": 846,
+    "sha256": "f22a254df7d934bbf9be499d3c969a13abb7f7f64c03f5967d0095cad81dfe06",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/examples/d1/app/api/notes/route.ts",
+    "bytes": 1700,
+    "sha256": "a3d4a74fd53b7bf53e2df41f169d9d9d44a8b22aeb6d92f4e754956079af8909",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/examples/d1/db/schema.ts",
+    "bytes": 370,
+    "sha256": "d89eabd95716ce404f5f7ca2a254220435be8ddce7c899d7ef461ff22ec80454",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/hooks/use-mobile.ts",
+    "bytes": 565,
+    "sha256": "ad0936f84f1df79d3697bfbff9c18f8ad58431c1cbaf2359c6a853b0fcc9f28b",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/ai/doryeong-ai.ts",
+    "bytes": 20981,
+    "sha256": "5320c0836ef5c9370629bfc5e437777acb2a1669bb078c11e863f16154947c00",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/connector-context.ts",
+    "bytes": 612,
+    "sha256": "bbddff68689cb0f6926fecd4b8b96f12f2054277c296e97b0df07d4ad5ece24e",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/connector-contract.mts",
+    "bytes": 5362,
+    "sha256": "e1a7b24a8793af34b595690d9b1300c897c7321c14f215cedf58ad95799d7c3e",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/connector-errors.mts",
+    "bytes": 2717,
+    "sha256": "a22edf13d6873ae832c4a2a0d579fc666c73ec996ef0722d39172649d38f0871",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/connector-preview.d.ts",
+    "bytes": 433,
+    "sha256": "abd69a94f7f61f1359063bb557574faae35e8ff5a028cc4c04b9ee248ef52642",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/connectors.ts",
+    "bytes": 416,
+    "sha256": "1c93d747e384c8e17e3e3dd5361b24412babf5eba2a11d2ae7a75f4e0924112c",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/db/store.ts",
+    "bytes": 3045,
+    "sha256": "49a961195f57ba7ed734978c2ebaaa94bff99f3385b44169fa9a11905f9fd6a9",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/http-client.ts",
+    "bytes": 766,
+    "sha256": "62b9d80947ebcbcc0b87e2fbea86634c676b30a2cf7a30e7580638fbc667c372",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/planet/approved-stem-accents.ts",
+    "bytes": 54505,
+    "sha256": "9ff2202e415c0f58c126e4232a53b697960c4175315c0b1b90c012f16a0e54d5",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/planet/asteroid-belt.ts",
+    "bytes": 3271,
+    "sha256": "dbd48365358397d47413f2082594c5bf8bf9bc2bb5325be8df7339149d74ad08",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/planet/character-material-fixture.ts",
+    "bytes": 4047,
+    "sha256": "cd47bc28963202b51801d7892f304731d1b12afeb650fa371f3c96b9364121c0",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/planet/character-rest-coordinates.ts",
+    "bytes": 3454,
+    "sha256": "a76a2e165b704e9665e5a45c975006a44cf5710cf4cc44bae92eee8cc5646e01",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/planet/earth-expression-bindings.json",
+    "bytes": 604,
+    "sha256": "3cf13c1757800bc42f9519e51fc0d47cf493e76450127a30955136e736b91f52",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/planet/elemental-spirit.ts",
+    "bytes": 8704,
+    "sha256": "2cff895a7112aba3aa7f8e88c178c42eb7cdea4fb32d3db312587c57f93abc40",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/planet/fire-expression-bindings.json",
+    "bytes": 596,
+    "sha256": "adba4f07464d5a9960ceffdf1ad49595ff241bbb40d8e89b435e27d0836db211",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/planet/galaxy-helper.ts",
+    "bytes": 5776,
+    "sha256": "d6978b4f112c1c1ae9348b38d5dda3766a827c836a95095fcb701789c6e342a2",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/planet/im-water-study-material.ts",
+    "bytes": 8349,
+    "sha256": "22f3eacf8d7043e60ceb614dbf47b6068569b5ddacc40132666da2a443d4d77e",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/planet/jelly-expression-bindings.json",
+    "bytes": 1072,
+    "sha256": "6a4dd698e818bfd38df8cccf78048231c50f541815bd2f89051c7f0ce2dcebd7",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/planet/jelly-expression-controller.ts",
+    "bytes": 2638,
+    "sha256": "3daafe544e94776d15b7dd820ada11440b7894a8019452446bd3eba8883bc8af",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/planet/living-surface-shader.ts",
+    "bytes": 19073,
+    "sha256": "588edc821ca82d0e6bf8e0389fd503929b94ba8a985e67792b002dd8d1f14f03",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/planet/mesh-surface.ts",
+    "bytes": 5489,
+    "sha256": "9830bd535309760bd76aaf768f4a2d95373cfd9bee21280487c878545ec365ac",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/planet/metal-expression-bindings.json",
+    "bytes": 599,
+    "sha256": "26774785a73632cae3bfc8508364a06d7cc3b5190ba9bc0af49aaedea230d442",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/planet/porcelain-blink.ts",
+    "bytes": 1986,
+    "sha256": "8b70b1764a990280ddb7a6b0b72d40f963f21267458db39fd2dc68d803eeee27",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/planet/render-resources.ts",
+    "bytes": 1331,
+    "sha256": "3bdc79d99b391581263ab03d2fb355fcc9fc66b7fa32b8ced767b38cf9858629",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/planet/spiral-galaxy.ts",
+    "bytes": 9491,
+    "sha256": "f27f6753491383414c331ef863cb76b31273983ec2cbd873fd793fabaa4b7be7",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/planet/spirit-geometry.ts",
+    "bytes": 12590,
+    "sha256": "881471269bb0940aba4fc808e727ea8563b45468d6de78443f5b4b73de3deffb",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/planet/spirit-month-pet.ts",
+    "bytes": 2392,
+    "sha256": "cad13d8f90558d7bf202fc61af7fef3d3e36329c55706eb1646beaeb1d7188a4",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/planet/spirit-zodiac.ts",
+    "bytes": 8785,
+    "sha256": "85794f6f3e24eb497580069e667ad4b4be557eb8e846870e8c7cc2a2d7515303",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/planet/surface-effects.ts",
+    "bytes": 28306,
+    "sha256": "94f1c479f8ed96ee42af839bf7a78aaba2acd4d90be5db8d4d02cda5b3bc8a52",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/planet/surface-material.ts",
+    "bytes": 4176,
+    "sha256": "ab2ba1d4386e4b76a3c77372274439fecb0bddb623269127eb45046aff45df45",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/planet/surface-math.ts",
+    "bytes": 3988,
+    "sha256": "6f785c406149941df100690d5e64404e1108a60ea46a79625c0fa76dc46af0f9",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/planet/surface-stem-accents.ts",
+    "bytes": 8213,
+    "sha256": "861016c5289af6295b28256f5182592dcc53d6a24254ed4d7ffeaaf338bb71b6",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/planet/surface-vine-body.ts",
+    "bytes": 9008,
+    "sha256": "5e3968374e868e44e234b332cba4cf0cabccd0e437b98d72c87add2e72730c24",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/planet/surface-woody-branches.ts",
+    "bytes": 8208,
+    "sha256": "4563680398e8739ade4e6d652b46843db8c7310660a0b0ecbb026d1fd2a149f2",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/planet/texture-generator.ts",
+    "bytes": 5097,
+    "sha256": "044def6002449599755a04582024c15fb2f455275f36ebd7dad8d027305fb7a7",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/planet/theme-library.ts",
+    "bytes": 11643,
+    "sha256": "1e51156fbb99ea622a075dbbd22531c083ecb4a8b0aeec15c609cd9302d7798a",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/planet/uv-mask.ts",
+    "bytes": 2672,
+    "sha256": "2134589728d410b7c64d5a8f8cf4b8dde533141e33f7acf158df482e4a20a349",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/planet/vine-bundle.ts",
+    "bytes": 12387,
+    "sha256": "cc8f6eb7fe6dc868077fc8ab0b7012f5cf197476a097953026b68f3374e9cbb8",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/planet/wood-expression-bindings.json",
+    "bytes": 895,
+    "sha256": "5b16c35bfcf0fa24f60dbf9179ba644caa4c935a4841eb8caa3ac9d096ed7ebd",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/saju/daily-orbital.ts",
+    "bytes": 4230,
+    "sha256": "6756859b26da60494203f5903532ed8b7ffe76ef2d9ae69ab4d1c2b629fec79b",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/saju/input-error.ts",
+    "bytes": 167,
+    "sha256": "a1533c1b2c00755ed076e978990d0fb8119ec80ff5599096da4781990b54285a",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/saju/input.ts",
+    "bytes": 5520,
+    "sha256": "7880ae0a8808631918cc3d33ac4acc39955443fac9c4d24acc11077b17e220cf",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/saju/lunar-calendar.ts",
+    "bytes": 2920,
+    "sha256": "5a7c2c411873e640eab764db21f5ab1bd6f149b5d41434327b81e46e00a6a6c1",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/saju/manse.ts",
+    "bytes": 15053,
+    "sha256": "dae53e7bf50f5b821d1c737967c23e70e5c0623fb7089142fe01bcc5c6b15710",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/saju/types.ts",
+    "bytes": 3551,
+    "sha256": "278346290f6b8d9fa32ceea4b891ee48b67e8c5f4385d3ce985daecf72b66d79",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/lib/utils.ts",
+    "bytes": 177,
+    "sha256": "53f3d3d070f0a9082934da25b875f9499855c2b0693868dd28be8c23d8730f68",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/next-env.d.ts",
+    "bytes": 284,
+    "sha256": "217ce9348b523c3e6954fb50bb93364b58781d86742c995f3a5b03ba88b9ba72",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/next.config.ts",
+    "bytes": 133,
+    "sha256": "614bce25b089c3f19b1e17a6346c74b858034040154c6621e7d35303004767cc",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/package.json",
+    "bytes": 2253,
+    "sha256": "2028920683812c2b0e03ed6e3d77cfe1d122b7097920d90b23045fd976829d40",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/public/favicon.svg",
+    "bytes": 281,
+    "sha256": "bf6c12ea64f442b40dd90523ce350875c2ed5e0d325abbf2dfe1e2e9325e2cda",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/public/models/five-elements/water-v1.glb",
+    "bytes": 184500,
+    "sha256": "8ceb8507485b78ea482dd765b32118734ce0cb17655998d2740e19f203bc1a0c",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/scripts/build-verified.sh",
+    "bytes": 661,
+    "sha256": "2ae5329ac860076070c9217a43106a15cb5ecf907a0f7baeb9ef903f76b53c68",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/scripts/connector-preview/connector-preview-session.mjs",
+    "bytes": 6842,
+    "sha256": "45d5d0511a5b9689278b59570223017cdd3c4129431c6745e710c26323cac45c",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/scripts/connector-preview/host-binding.mjs",
+    "bytes": 7793,
+    "sha256": "9e44ab6864133a5c82f834a5904ebb7d6104cb783c24efba3c0fe1a161182cea",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/scripts/connector-preview/protocol.mjs",
+    "bytes": 1781,
+    "sha256": "111e062ebf08d3f180130f5bc3dcb3c1414c1d7be3c032c9d675a61c0c7513a8",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/scripts/execution-profile.mjs",
+    "bytes": 624,
+    "sha256": "2e71116f4d2b70cff8bb70436f8dd5c709ec7ff62893424530f404e0193d3630",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/scripts/install-ci.mjs",
+    "bytes": 1685,
+    "sha256": "4a5a92d60a08d0ba54effd8373da2da06284312c55b767287c68a0bec7200da7",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/scripts/install-ci.sh",
+    "bytes": 6783,
+    "sha256": "10d8764a61be50351dc3496e13588270de7956f0aa5f1189c49cabb2d89fe5c0",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/scripts/install-pnpm.sh",
+    "bytes": 9015,
+    "sha256": "a684c02c2b493dfbf262a66252a5cd36f81ca995a4024761728662ae63aa40c0",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/scripts/integration-preview.mjs",
+    "bytes": 6515,
+    "sha256": "8b63a3402bf4ec665be6edfb104219d1fa6f7e5bc6bcabec33c829f230178a72",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/scripts/npm-install.mjs",
+    "bytes": 7025,
+    "sha256": "9715c6a32d1d4a0289ef6376a0e819c3b6a6416b8a9877733d9fb4339ce626b6",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/scripts/pnpm-install.mjs",
+    "bytes": 10633,
+    "sha256": "a83164e344c1947053def83b546be8115deaa827314bbaead7afe6b6451c5cdf",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/scripts/qa/load-ts.cjs",
+    "bytes": 1960,
+    "sha256": "52a8984a1fd29e2c866fe060e07e1b42b5effdbe847dececaef317d066891b07",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/scripts/qa/spirit-vertex-colors.cjs",
+    "bytes": 1200,
+    "sha256": "c27cd237e5c4086ef5e43728c0cf19b11defa0b0da8e0f582ed9d906be84eb2a",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/scripts/run-framework.mjs",
+    "bytes": 993,
+    "sha256": "9bf9f41a29314cabe0238b8e9c540ec3f7b5a6adafc7c8fb6c3940722d061dca",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/scripts/sites-env.mjs",
+    "bytes": 906,
+    "sha256": "5de99d6806b01f0ee0b941af3684d75dcf1afbbcff22cb95bfa2e584c5dafa88",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/scripts/sites-env.sh",
+    "bytes": 1530,
+    "sha256": "df86ebfc27d2f00860036658e933ac0ddd7b5f6879aa5d51218f0863c7e1fb60",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/tailwind.config.ts",
+    "bytes": 1227,
+    "sha256": "757bf87d5c1850ee1aa02a55b69bd61695c230fa93c65cb34ff847a9f4c96267",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/tsconfig.json",
+    "bytes": 800,
+    "sha256": "7199c6e4e400921e8049729840165a39f1476fa97901bed00239e7697bfe8da4",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/vendor/shadcn-tailwind-4.13.0.LICENSE.md",
+    "bytes": 1063,
+    "sha256": "1564074e13439397221ffd522e2e504d56561994a23d371aa5e3ad43e4f5423f",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/vendor/shadcn-tailwind-4.13.0.css",
+    "bytes": 16041,
+    "sha256": "bc7d83425702955b4cb67cb14ede9d603f9d912376d57a2d81d661094d2a782a",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_planet_preview/vite.config.ts",
+    "bytes": 3115,
+    "sha256": "6f6d890794fbe23f3e35cceb327f49d5977432a5aaf715e040a6408932da395b",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_question_boundary_investigation_20261009/FINDINGS.md",
+    "bytes": 7677,
+    "sha256": "11193ca8bc6aecf2889681223bb7ef7ba2fcfe4ab0195ffb9e0038b5c515fbb8",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_question_boundary_investigation_20261009/probe-question-boundaries.mjs",
+    "bytes": 19338,
+    "sha256": "4cbacca0797a2112d03b401b9ae5c5ceb9f3783b7b1d110991d50b43cb697ea7",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_question_boundary_investigation_20261009/probe-results.json",
+    "bytes": 32287,
+    "sha256": "f846555f3e058cf9d4f7717609114810ca5df71d69e83a84a5bd750197c16fa8",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_question_boundary_investigation_20261009/source-manifest.json",
+    "bytes": 1636,
+    "sha256": "3081c8a60b861a45bb495e777224be1f3ec6ef2e1cbe7af414c8733c933e9447",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_question_boundary_investigation_20261009/source-snapshots/app/api/saju/[id]/chat/route.ts",
+    "bytes": 1647,
+    "sha256": "a76b1b37f7cd7d2a886c282a57da2750b892f2774a7c529b5f949236a0c646af",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_question_boundary_investigation_20261009/source-snapshots/app/api/saju/route.ts",
+    "bytes": 2465,
+    "sha256": "09e995b99dfe5df1344a7c18f9406b156962ac130831b4e8dc4dde219a7bc843",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_question_boundary_investigation_20261009/source-snapshots/lib/ai/doryeong-ai.ts",
+    "bytes": 20981,
+    "sha256": "5320c0836ef5c9370629bfc5e437777acb2a1669bb078c11e863f16154947c00",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_question_boundary_investigation_20261009/source-snapshots/lib/db/store.ts",
+    "bytes": 3045,
+    "sha256": "49a961195f57ba7ed734978c2ebaaa94bff99f3385b44169fa9a11905f9fd6a9",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_question_boundary_investigation_20261009/source-snapshots/lib/saju/input-error.ts",
+    "bytes": 167,
+    "sha256": "a1533c1b2c00755ed076e978990d0fb8119ec80ff5599096da4781990b54285a",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_question_boundary_investigation_20261009/source-snapshots/lib/saju/input.ts",
+    "bytes": 5520,
+    "sha256": "7880ae0a8808631918cc3d33ac4acc39955443fac9c4d24acc11077b17e220cf",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_question_boundary_investigation_20261009/source-snapshots/lib/saju/types.ts",
+    "bytes": 3551,
+    "sha256": "278346290f6b8d9fa32ceea4b891ee48b67e8c5f4385d3ce985daecf72b66d79",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_remaining_contract_audit_20261009/AUDIT.md",
+    "bytes": 6921,
+    "sha256": "475b687e23808e7f967643e623ff88f82658478ed2d004dd8ceb2adbed08fda5",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_remaining_contract_audit_20261009/AUDIT_FILES_SHA256.json",
+    "bytes": 1148,
+    "sha256": "12d0bb453fcdfe3d10972357cd26291890e15fe59112e4f9ce3e3d689234c375",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_remaining_contract_audit_20261009/COORDINATOR_LIMITS.md",
+    "bytes": 4730,
+    "sha256": "bc682a3037808382c6081a278fa9f79a77fee47024a071323739ceacd075c102",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_remaining_contract_audit_20261009/coordinator-source-map.json",
+    "bytes": 2164,
+    "sha256": "444ef330ccfe70b91e06c6960937078b364088ba81484fe589b48e9cb47eac88",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_remaining_contract_audit_20261009/diagnostic-old-source-results.json",
+    "bytes": 1126,
+    "sha256": "0adcbbc6bd7ffc51982ba723ff32bfe04a6339c3fb88f4686a3c37bb762a8e51",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_remaining_contract_audit_20261009/diagnostic-old-source-stderr.log",
+    "bytes": 179,
+    "sha256": "2a72ce8ac2074acb91b2005f675878f8449beb6a58e0a07534ccaca6948cea3c",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_remaining_contract_audit_20261009/reproduce-ai-test-contract.mjs",
+    "bytes": 3834,
+    "sha256": "205899628f1a54d05dcb23f963f28b16d3a17db17b16b472a5f41a74c0eb7d5e",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_standalone_runner_20261009/README.md",
+    "bytes": 8551,
+    "sha256": "73fb7dc595364fe6eb9f02693d0140e61598af96e766f3fd831d97f0e2109b96",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_standalone_runner_20261009/RUNNER_INTEGRITY.json",
+    "bytes": 386,
+    "sha256": "6cb022932efb1c4ad180931bc20d3cb715e6178cc334566fdeacd889b0777029",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_standalone_runner_20261009/delivery/DELIVERY_SHA256.json",
+    "bytes": 328,
+    "sha256": "eb309812bc6b0764e606b04c7b76a62ee2628923fa09733aa82239acbb7a614e",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_standalone_runner_20261009/delivery/PACKAGING_VERIFICATION.json",
+    "bytes": 650,
+    "sha256": "dbc424f0d4fc037be53a46a49172651286ba74881dbd21828e8de39a476730e3",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_standalone_runner_20261009/delivery/QA_INTEGRITY.json",
+    "bytes": 24125,
+    "sha256": "3d00e30d71b3c0d774ae72835250e8d3ca3b7fd0dfbbd63a0f1a4d8eab7d1244",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_standalone_runner_20261009/evidence/EXECUTION_INDEX.json",
+    "bytes": 5149,
+    "sha256": "d5285e4e76eaa61278c3788d251da5ad3d2a7af8e6b61f3050f6c4d3daf07675",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_standalone_runner_20261009/evidence/VERIFICATION.md",
+    "bytes": 3038,
+    "sha256": "dcf1a48f082e67cec3d9e0c76cb7a2cb35c07765595b1fe2136df62b4cef956b",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_standalone_runner_20261009/evidence/final-primary-run.log",
+    "bytes": 379,
+    "sha256": "307ce35ac7e015260becf29f6eaee1c7ce1f47ee5771fe06389417768d83dca9",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_standalone_runner_20261009/evidence/frozen-primary-run.log",
+    "bytes": 381,
+    "sha256": "529fe6282ae46b76d836a01df3a47800c7250d97b4b0a78aaa73744af8dd5969",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_standalone_runner_20261009/evidence/frozen-relocated-run.log",
+    "bytes": 401,
+    "sha256": "32a4ab8dc796dd5f1ad03396ab356512d678186a970c357ac3649d7922f9ffc7",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_standalone_runner_20261009/evidence/primary-run.log",
+    "bytes": 367,
+    "sha256": "a0a99ccaeed797d7ef6c6b9a8ae3b8b1efa4559de00a9d9c1e9058006073503c",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_standalone_runner_20261009/evidence/relocated-run.log",
+    "bytes": 387,
+    "sha256": "2df1fc63cc89041e9dd960b2a8276782f1195aeda3e4ca272c324e2ef9d62976",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_standalone_runner_20261009/evidence/selftests-expanded-green.log",
+    "bytes": 3795,
+    "sha256": "bbc71243cc29f62403f11c4cf0a30cc6022030fbefb22a022a0a765341aeaa63",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_standalone_runner_20261009/evidence/selftests-expanded-red.log",
+    "bytes": 4409,
+    "sha256": "3342e807e26fc488a69c01589da61f7e309fb804e85aa104065ba5273f8b9a47",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_standalone_runner_20261009/evidence/selftests-final.log",
+    "bytes": 4433,
+    "sha256": "3c73421d6e6f0cb29d4329b5f923a45d16e83a48523dd42c013b58ed09be0cf5",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_standalone_runner_20261009/evidence/selftests-first-green-attempt.log",
+    "bytes": 4260,
+    "sha256": "ddb4703e2bf2b7d8dae5c59d4d738a2c27dacd54c4f9868b8f4283ba64b02b45",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_standalone_runner_20261009/evidence/selftests-green.log",
+    "bytes": 2649,
+    "sha256": "2bad2d8095d13298bab62abfd5fcb322dbed6e1ee3e6fe914d84f2c908e5aa2c",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_standalone_runner_20261009/evidence/selftests-red.log",
+    "bytes": 14546,
+    "sha256": "cff01d0556d507096f36f901c3826dd204b8bfcd3ca185c323779128be4f4ec6",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_standalone_runner_20261009/review/REVIEW.md",
+    "bytes": 8512,
+    "sha256": "3d0d9958a6837d30f8c10ec15ed908077c38c8e7b0e9ff8306a77ed310e141c5",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_standalone_runner_20261009/review/REVIEW_EVIDENCE_SHA256.json",
+    "bytes": 2797,
+    "sha256": "e7ede4a8c0552cfca00058069bb9ec31c890c2af5150d327ac7d0544640c3967",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_standalone_runner_20261009/review/copied-inputs-before.json",
+    "bytes": 996,
+    "sha256": "aeb1e0589681d37ed804294341de6a34e2098c994b3d91d48d029c958d8171b1",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_standalone_runner_20261009/review/final-relocated-run.log",
+    "bytes": 363,
+    "sha256": "c18c807c86303c14c8071167120d2ba103d77a7e2199eb659637e53ccb998dc1",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_standalone_runner_20261009/review/final-selftests.log",
+    "bytes": 4833,
+    "sha256": "b594674aa5bd96313841d3d79fecee186104bd314576b4485f76033ffc1b3d74",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_standalone_runner_20261009/review/final-zip-independent-verification.json",
+    "bytes": 1240,
+    "sha256": "674f5b17fb365f727dc59056301e3fa654cb4e9694c08a6f2520bf9c871233d2",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_standalone_runner_20261009/review/independent-relocated-run.log",
+    "bytes": 363,
+    "sha256": "3a130dd092818ab84fac577c2b6a8d2cde7f8e3ef61737e276efec50497bb3e1",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_standalone_runner_20261009/review/independent-relocated-summary.json",
+    "bytes": 696,
+    "sha256": "716424cf6fec184716b88a48ffd09da40921e08359016a663a42672e02f370d3",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_standalone_runner_20261009/review/independent-selftests-summary.json",
+    "bytes": 312,
+    "sha256": "c1a712260b5e36aebf04c6aae244ab8c7f17abd0fe10003e3abb7a99aeef6f84",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_standalone_runner_20261009/review/independent-selftests.log",
+    "bytes": 4809,
+    "sha256": "b8ff90277b983490a4d39561a2e2c8b9fc82bc2fec2666df5f593fb53b823132",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_standalone_runner_20261009/review/independent-summary.json",
+    "bytes": 4708,
+    "sha256": "60104c2966367fbbd82d3c860ace865a6f90c47d85c146ee134e8954f555f7e9",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_standalone_runner_20261009/review/originals-after-second-run.json",
+    "bytes": 34505,
+    "sha256": "90494421228511e1043f822e0a2a4a700cd718af021b31f25ff64da1b1ba98c6",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_standalone_runner_20261009/review/originals-before-second-run.json",
+    "bytes": 34505,
+    "sha256": "90494421228511e1043f822e0a2a4a700cd718af021b31f25ff64da1b1ba98c6",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_standalone_runner_20261009/review/supplemental-checks.log",
+    "bytes": 1051,
+    "sha256": "b2ca6cf8cdbc54337cae7d4078e9bf1d20333afabaed932bc5885444941b5a92",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_standalone_runner_20261009/review/supplemental-results.json",
+    "bytes": 1238,
+    "sha256": "f8aa2c5a12c7e4070d717a202e0afe67b7f7a5d601b03c8ae2bb18ddbf4521a3",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_standalone_runner_20261009/review/supplemental_checks.py",
+    "bytes": 5402,
+    "sha256": "4452098290f77341b1a47c32030df5248e8d98035ec25319f7930ef283d0db63",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_standalone_runner_20261009/run.py",
+    "bytes": 28138,
+    "sha256": "94bf54a0bacc9f53323b0d63866f5944b08b9f8cc4921c7567597027e75fe24d",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  },
+  {
+    "path": "saju_standalone_runner_20261009/tests/test_runner.py",
+    "bytes": 16471,
+    "sha256": "82755a17f7b7e982b2c4a2a00e816b177504ebc24d7ac679769bd45291c4e9e9",
+    "archive": "saju-source-candidates-and-qa--part-04.zip"
+  }
+]

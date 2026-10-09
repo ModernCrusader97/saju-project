@@ -1,0 +1,26 @@
+[
+  {
+    "name": "saju-source-candidates-and-qa--part-01.zip",
+    "bytes": 11325604,
+    "sha256": "4785de1b27c56d95252c603c3a229a2fdd985868eeae07b746caa5c96e8f8674",
+    "git_blob_sha": "516a16bc0188ffbb64603aed9bb363629d74f190"
+  },
+  {
+    "name": "saju-source-candidates-and-qa--part-02.zip",
+    "bytes": 11326398,
+    "sha256": "95de0ff56a55812b1cbde5da0f405f76ee63b1222e3799a19aff620ca9b47bc5",
+    "git_blob_sha": "5ff4e93eddba6f1f96b048d8ceb410510efd1030"
+  },
+  {
+    "name": "saju-source-candidates-and-qa--part-03.zip",
+    "bytes": 11334111,
+    "sha256": "d82631dbc58e0fd7969818e795f6be99a2f471c89529971936f4b7b99cea4ad1",
+    "git_blob_sha": "990bad4de709aefdb94dc9b4e6866d836cdcfec0"
+  },
+  {
+    "name": "saju-source-candidates-and-qa--part-04.zip",
+    "bytes": 1452423,
+    "sha256": "e0a922ba3557e6d4173ff36dd7a538a76c306ffdd62120871f2fed7ceba82b7e",
+    "git_blob_sha": "31bb18b40c9e8f5fd3c5e89de2b23f7a4b9bacb4"
+  }
+]
