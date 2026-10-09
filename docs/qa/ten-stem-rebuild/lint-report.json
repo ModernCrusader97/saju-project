@@ -1,0 +1,326 @@
+{
+  "status": "BASELINE_ERRORS_REMAIN",
+  "excludes": "outputs/**, dist/**, .next/**",
+  "beforeWithInitialQA": {
+    "errorCount": 43,
+    "warningCount": 38
+  },
+  "after": {
+    "errorCount": 40,
+    "warningCount": 37
+  },
+  "changedFiles": {
+    "errorCount": 0,
+    "warningCount": 1
+  },
+  "unchangedRemainingErrorFiles": [
+    {
+      "file": "app/api/guin/[id]/route.ts",
+      "errorCount": 2,
+      "messages": [
+        {
+          "line": 18,
+          "rule": "@typescript-eslint/no-explicit-any",
+          "message": "Unexpected any. Specify a different type."
+        },
+        {
+          "line": 79,
+          "rule": "@typescript-eslint/no-explicit-any",
+          "message": "Unexpected any. Specify a different type."
+        }
+      ]
+    },
+    {
+      "file": "app/api/guin/route.ts",
+      "errorCount": 1,
+      "messages": [
+        {
+          "line": 56,
+          "rule": "@typescript-eslint/no-explicit-any",
+          "message": "Unexpected any. Specify a different type."
+        }
+      ]
+    },
+    {
+      "file": "app/api/saju/[id]/chat/route.ts",
+      "errorCount": 1,
+      "messages": [
+        {
+          "line": 30,
+          "rule": "@typescript-eslint/no-explicit-any",
+          "message": "Unexpected any. Specify a different type."
+        }
+      ]
+    },
+    {
+      "file": "app/api/saju/[id]/route.ts",
+      "errorCount": 1,
+      "messages": [
+        {
+          "line": 16,
+          "rule": "@typescript-eslint/no-explicit-any",
+          "message": "Unexpected any. Specify a different type."
+        }
+      ]
+    },
+    {
+      "file": "app/daily/page.tsx",
+      "errorCount": 2,
+      "messages": [
+        {
+          "line": 193,
+          "rule": "react/no-unescaped-entities",
+          "message": "`\"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`."
+        },
+        {
+          "line": 193,
+          "rule": "react/no-unescaped-entities",
+          "message": "`\"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`."
+        }
+      ]
+    },
+    {
+      "file": "app/guin/[id]/page.tsx",
+      "errorCount": 2,
+      "messages": [
+        {
+          "line": 191,
+          "rule": "@next/next/no-html-link-for-pages",
+          "message": "Do not use an `<a>` element to navigate to `/guin/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages"
+        },
+        {
+          "line": 205,
+          "rule": "@next/next/no-html-link-for-pages",
+          "message": "Do not use an `<a>` element to navigate to `/guin/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages"
+        }
+      ]
+    },
+    {
+      "file": "app/page.tsx",
+      "errorCount": 1,
+      "messages": [
+        {
+          "line": 8,
+          "rule": "@next/next/no-html-link-for-pages",
+          "message": "Do not use an `<a>` element to navigate to `/guin/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages"
+        }
+      ]
+    },
+    {
+      "file": "components/FortuneCard.tsx",
+      "errorCount": 4,
+      "messages": [
+        {
+          "line": 44,
+          "rule": "react/no-unescaped-entities",
+          "message": "`\"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`."
+        },
+        {
+          "line": 44,
+          "rule": "react/no-unescaped-entities",
+          "message": "`\"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`."
+        },
+        {
+          "line": 229,
+          "rule": "react/no-unescaped-entities",
+          "message": "`\"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`."
+        },
+        {
+          "line": 229,
+          "rule": "react/no-unescaped-entities",
+          "message": "`\"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`."
+        }
+      ]
+    },
+    {
+      "file": "components/Header.tsx",
+      "errorCount": 1,
+      "messages": [
+        {
+          "line": 8,
+          "rule": "@next/next/no-html-link-for-pages",
+          "message": "Do not use an `<a>` element to navigate to `/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages"
+        }
+      ]
+    },
+    {
+      "file": "components/SajuInputModal.tsx",
+      "errorCount": 2,
+      "messages": [
+        {
+          "line": 98,
+          "rule": "@typescript-eslint/no-explicit-any",
+          "message": "Unexpected any. Specify a different type."
+        },
+        {
+          "line": 214,
+          "rule": "@typescript-eslint/no-explicit-any",
+          "message": "Unexpected any. Specify a different type."
+        }
+      ]
+    },
+    {
+      "file": "components/planet/FiveElementFormStudy.tsx",
+      "errorCount": 2,
+      "messages": [
+        {
+          "line": 23,
+          "rule": "react-hooks/set-state-in-effect",
+          "message": "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\n/workspace/saju-stem-rebuild/components/planet/FiveElementFormStudy.tsx:23:124\n  21 |  useEffect(()=>{\n  22 |   const target=mount.current;if(!target)return;setReady(false);setError('');reaction.current=false;\n> 23 |   let renderer:THREE.WebGLRenderer;try{renderer=new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true})}catch{setError('이 브라우저에서 3D를 시작하지 못했어요. 아래 렌더 이미지로 비교할 수 있습니다.');return}\n     |                                                                                                                            ^^^^^^^^ Avoid calling setState() directly within an effect\n  24 |   renderer.setPixelRatio(Math.min(window.devicePixelRatio,1.5));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=.9;\n  25 |   const element=renderer.domElement;canvas.current=element;target.replaceChildren(element);element.style.cssText='display:block;width:100%;height:100%;touch-action:pan-y';element.setAttribute('aria-label',`${form.name} 오행 정령 형태의 3D 시제품`);\n  26 |   const scene=new THREE.Scene();scene.background=new THREE.Color('#dce5e8');const pmrem=new THREE.PMREMGenerator(renderer),room=new RoomEnvironment(),environment=pmrem.fromScene(room,.06);room.dispose();pmrem.dispose();scene.environment=environment.texture;scene.environmentIntensity=.75;"
+        },
+        {
+          "line": 30,
+          "rule": "prefer-const",
+          "message": "'size' is never reassigned. Use 'const' instead."
+        }
+      ]
+    },
+    {
+      "file": "components/planet/GalaxyCanvas.tsx",
+      "errorCount": 6,
+      "messages": [
+        {
+          "line": 195,
+          "rule": "react-hooks/immutability",
+          "message": "Error: Cannot access variable before it is declared\n\n`updateCameraPosition` is accessed before it is declared, which prevents the earlier access from updating when this value changes over time.\n\n/workspace/saju-stem-rebuild/components/planet/GalaxyCanvas.tsx:195:5\n  193 |     const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1200);\n  194 |     cameraRef.current = camera;\n> 195 |     updateCameraPosition();\n      |     ^^^^^^^^^^^^^^^^^^^^ `updateCameraPosition` accessed before it is declared\n  196 |\n  197 |     let renderer: THREE.WebGLRenderer;\n  198 |     try {\n\n/workspace/saju-stem-rebuild/components/planet/GalaxyCanvas.tsx:474:3\n  472 |   }, []);\n  473 |\n> 474 |   const updateCameraPosition = () => {\n      |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 475 |     if (!cameraRef.current) return;\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 476 |     const { theta, phi, radius } = cameraAngle.current;\n      …\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 485 |     cameraRef.current.lookAt(currentLookAt.current);\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 486 |   };\n      | ^^^^^ `updateCameraPosition` is declared here\n  487 |\n  488 |   const startTrackingPlanet = useCallback((personId: string, isOwner: boolean) => {\n  489 |     trackedPlanetIdRef.current = personId;"
+        },
+        {
+          "line": 206,
+          "rule": "react-hooks/set-state-in-effect",
+          "message": "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\n/workspace/saju-stem-rebuild/components/planet/GalaxyCanvas.tsx:206:7\n  204 |     });\n  205 |     } catch {\n> 206 |       setGraphicsError(\"3D 화면을 사용할 수 없어요. WebGL을 지원하는 브라우저에서 다시 열어주세요.\");\n      |       ^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect\n  207 |       return;\n  208 |     }\n  209 |     let shaderFailed = false;"
+        },
+        {
+          "line": 298,
+          "rule": "react-hooks/immutability",
+          "message": "Error: Cannot access variable before it is declared\n\n`startTrackingPlanet` is accessed before it is declared, which prevents the earlier access from updating when this value changes over time.\n\n/workspace/saju-stem-rebuild/components/planet/GalaxyCanvas.tsx:298:13\n  296 |\n  297 |             // 실시간 궤도 추적 락온\n> 298 |             startTrackingPlanet(val.node.person.id, val.node.isOwner);\n      |             ^^^^^^^^^^^^^^^^^^^ `startTrackingPlanet` accessed before it is declared\n  299 |           }\n  300 |         });\n  301 |       }\n\n/workspace/saju-stem-rebuild/components/planet/GalaxyCanvas.tsx:488:3\n  486 |   };\n  487 |\n> 488 |   const startTrackingPlanet = useCallback((personId: string, isOwner: boolean) => {\n      |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 489 |     trackedPlanetIdRef.current = personId;\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 490 |     targetRadius.current = isOwner ? 6.2 : 5.2;\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 491 |     cameraAngle.current.phi = 0.44;\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 492 |     setFocusMode(isOwner ? \"owner\" : \"friend\");\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 493 |   }, []);\n      | ^^^^^^^^^^ `startTrackingPlanet` is declared here\n  494 |\n  495 |   const flyCameraToOverview = useCallback(() => {\n  496 |     trackedPlanetIdRef.current = null;"
+        },
+        {
+          "line": 488,
+          "rule": "react-hooks/preserve-manual-memoization",
+          "message": "Compilation Skipped: Existing memoization could not be preserved\n\nReact Compiler has skipped optimizing this component because the existing manual memoization could not be preserved. This value was memoized in source but not in compilation output.\n\n/workspace/saju-stem-rebuild/components/planet/GalaxyCanvas.tsx:488:43\n  486 |   };\n  487 |\n> 488 |   const startTrackingPlanet = useCallback((personId: string, isOwner: boolean) => {\n      |                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 489 |     trackedPlanetIdRef.current = personId;\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 490 |     targetRadius.current = isOwner ? 6.2 : 5.2;\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 491 |     cameraAngle.current.phi = 0.44;\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 492 |     setFocusMode(isOwner ? \"owner\" : \"friend\");\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 493 |   }, []);\n      | ^^^^ Could not preserve existing memoization\n  494 |\n  495 |   const flyCameraToOverview = useCallback(() => {\n  496 |     trackedPlanetIdRef.current = null;"
+        },
+        {
+          "line": 1015,
+          "rule": "react/no-unescaped-entities",
+          "message": "`'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`."
+        },
+        {
+          "line": 1015,
+          "rule": "react/no-unescaped-entities",
+          "message": "`'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`."
+        }
+      ]
+    },
+    {
+      "file": "components/planet/ImWaterStudy.tsx",
+      "errorCount": 1,
+      "messages": [
+        {
+          "line": 16,
+          "rule": "react-hooks/set-state-in-effect",
+          "message": "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\n/workspace/saju-stem-rebuild/components/planet/ImWaterStudy.tsx:16:126\n  14 |   const target=mount.current;if(!target)return;setError('');setReady(false);\n  15 |   let renderer:THREE.WebGLRenderer;\n> 16 |   try{renderer=new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true,powerPreference:'high-performance'})}catch{setError('이 브라우저에서 3D를 시작하지 못했어요.');return}\n     |                                                                                                                              ^^^^^^^^ Avoid calling setState() directly within an effect\n  17 |   renderer.setPixelRatio(Math.min(window.devicePixelRatio,1.6));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=.9;\n  18 |   renderer.debug.onShaderError=()=>setError('물 재질 셰이더를 표시하지 못했어요.');\n  19 |   const element=renderer.domElement;canvas.current=element;target.replaceChildren(element);element.style.cssText='width:100%;height:100%;display:block;touch-action:pan-y';element.setAttribute('aria-label','임의 물 재질을 정지 상태로 살펴보는 상반신 3D 표본');"
+        }
+      ]
+    },
+    {
+      "file": "components/planet/PlanetCanvas.tsx",
+      "errorCount": 1,
+      "messages": [
+        {
+          "line": 93,
+          "rule": "react-hooks/set-state-in-effect",
+          "message": "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\n/workspace/saju-stem-rebuild/components/planet/PlanetCanvas.tsx:93:7\n  91 |     });\n  92 |     } catch {\n> 93 |       setGraphicsError(\"3D 화면을 사용할 수 없어요. WebGL을 지원하는 브라우저에서 다시 열어주세요.\");\n     |       ^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect\n  94 |       return;\n  95 |     }\n  96 |     let shaderFailed = false;"
+        }
+      ]
+    },
+    {
+      "file": "components/planet/PorcelainHeroStudy.tsx",
+      "errorCount": 3,
+      "messages": [
+        {
+          "line": 11,
+          "rule": "react-hooks/set-state-in-effect",
+          "message": "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\n/workspace/saju-stem-rebuild/components/planet/PorcelainHeroStudy.tsx:11:82\n   9 |  const [facial,setFacial]=useState(false),[autoBlink,setAutoBlink]=useState(true);const blinkAuto=useRef(true),blinkRequest=useRef<number|null>(null);\n  10 |  useEffect(()=>{blinkAuto.current=autoBlink},[autoBlink]);\n> 11 |  useEffect(()=>{if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)setAutoBlink(false)},[]);\n     |                                                                                  ^^^^^^^^^^^^ Avoid calling setState() directly within an effect\n  12 |  const mount=useRef<HTMLDivElement>(null),canvas=useRef<HTMLCanvasElement|null>(null),rotate=useRef(false);\n  13 |  const [portrait,setPortrait]=useState(true),[auto,setAuto]=useState(false),[reset,setReset]=useState(0),[ready,setReady]=useState(false),[error,setError]=useState('');\n  14 |  useEffect(()=>{rotate.current=auto},[auto]);"
+        },
+        {
+          "line": 17,
+          "rule": "react-hooks/set-state-in-effect",
+          "message": "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\n/workspace/saju-stem-rebuild/components/planet/PorcelainHeroStudy.tsx:17:124\n  15 |  useEffect(()=>{\n  16 |   const target=mount.current;if(!target)return;setReady(false);setError('');\n> 17 |   let renderer:THREE.WebGLRenderer;try{renderer=new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true})}catch{setError('이 브라우저에서 3D를 시작하지 못했어요. 아래 렌더 이미지를 확인하세요.');return}\n     |                                                                                                                            ^^^^^^^^ Avoid calling setState() directly within an effect\n  18 |   renderer.setPixelRatio(Math.min(window.devicePixelRatio,1.6));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=.8;\n  19 |   const element=renderer.domElement;canvas.current=element;target.replaceChildren(element);element.style.cssText='display:block;width:100%;height:100%;touch-action:pan-y';element.setAttribute('aria-label','청화백자 기토의 새 조형을 회전하며 살펴보는 실제 3D 모델');\n  20 |   const scene=new THREE.Scene();scene.background=new THREE.Color('#18272c');const pmrem=new THREE.PMREMGenerator(renderer),room=new RoomEnvironment(),environment=pmrem.fromScene(room,.04);room.dispose();pmrem.dispose();scene.environment=environment.texture;scene.environmentIntensity=.45;"
+        },
+        {
+          "line": 23,
+          "rule": "prefer-const",
+          "message": "'size' is never reassigned. Use 'const' instead."
+        }
+      ]
+    },
+    {
+      "file": "components/planet/StemMaterialStudy.tsx",
+      "errorCount": 2,
+      "messages": [
+        {
+          "line": 19,
+          "rule": "react-hooks/set-state-in-effect",
+          "message": "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\n/workspace/saju-stem-rebuild/components/planet/StemMaterialStudy.tsx:19:82\n  17 |  useEffect(()=>{runningRef.current=running},[running]);\n  18 |  useEffect(()=>{autoRotateRef.current=autoRotate},[autoRotate]);\n> 19 |  useEffect(()=>{if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)setRunning(false)},[]);\n     |                                                                                  ^^^^^^^^^^ Avoid calling setState() directly within an effect\n  20 |  useEffect(()=>{\n  21 |   const target=mount.current;if(!target)return;setReady(false);setError('');rotation.current={x:0,y:0};\n  22 |   const low=window.matchMedia('(pointer: coarse), (max-width: 640px)').matches;let renderer:THREE.WebGLRenderer;"
+        },
+        {
+          "line": 23,
+          "rule": "react-hooks/set-state-in-effect",
+          "message": "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\n/workspace/saju-stem-rebuild/components/planet/StemMaterialStudy.tsx:23:138\n  21 |   const target=mount.current;if(!target)return;setReady(false);setError('');rotation.current={x:0,y:0};\n  22 |   const low=window.matchMedia('(pointer: coarse), (max-width: 640px)').matches;let renderer:THREE.WebGLRenderer;\n> 23 |   try{renderer=new THREE.WebGLRenderer({antialias:!low,alpha:false,preserveDrawingBuffer:true,powerPreference:'high-performance'})}catch{setError('이 브라우저에서 3D 표본을 열지 못했어요.');return}\n     |                                                                                                                                          ^^^^^^^^ Avoid calling setState() directly within an effect\n  24 |   renderer.setPixelRatio(Math.min(window.devicePixelRatio,low?1.4:1.8));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=.85;renderer.setScissorTest(true);\n  25 |   renderer.debug.onShaderError=()=>setError('재질 셰이더를 표시하지 못했어요.');\n  26 |   const canvas=renderer.domElement;canvasRef.current=canvas;canvas.style.width='100%';canvas.style.height='100%';canvas.style.display='block';canvas.style.touchAction='pan-y';canvas.setAttribute('aria-label',`${pair.a}와 ${pair.b} 재질을 같은 형태와 조명으로 비교하는 3D 표본`);target.replaceChildren(canvas);"
+        }
+      ]
+    },
+    {
+      "file": "scripts/qa/load-ts.cjs",
+      "errorCount": 5,
+      "messages": [
+        {
+          "line": 2,
+          "rule": "@typescript-eslint/no-require-imports",
+          "message": "A `require()` style import is forbidden."
+        },
+        {
+          "line": 3,
+          "rule": "@typescript-eslint/no-require-imports",
+          "message": "A `require()` style import is forbidden."
+        },
+        {
+          "line": 4,
+          "rule": "@typescript-eslint/no-require-imports",
+          "message": "A `require()` style import is forbidden."
+        },
+        {
+          "line": 5,
+          "rule": "@typescript-eslint/no-require-imports",
+          "message": "A `require()` style import is forbidden."
+        },
+        {
+          "line": 7,
+          "rule": "@typescript-eslint/no-require-imports",
+          "message": "A `require()` style import is forbidden."
+        }
+      ]
+    },
+    {
+      "file": "scripts/qa/spirit-vertex-colors.cjs",
+      "errorCount": 3,
+      "messages": [
+        {
+          "line": 1,
+          "rule": "@typescript-eslint/no-require-imports",
+          "message": "A `require()` style import is forbidden."
+        },
+        {
+          "line": 2,
+          "rule": "@typescript-eslint/no-require-imports",
+          "message": "A `require()` style import is forbidden."
+        },
+        {
+          "line": 3,
+          "rule": "@typescript-eslint/no-require-imports",
+          "message": "A `require()` style import is forbidden."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "baseSHA": "43e2d8dc6efe1654641e639397f37d0ea44f525a",
+  "branch": "rebuild/ten-stem-materials-20261009",
+  "implementation": "new rebuild from preserved GitHub source, not an identical a97c418/2709 recovery",
+  "cpu": {
+    "before": {
+      "tests": 25,
+      "pass": 1,
+      "fail": 24
+    },
+    "after": {
+      "tests": 25,
+      "pass": 25,
+      "fail": 0
+    }
+  },
+  "browser": {
+    "afterStatus": "PASS",
+    "rendererRenders": 23,
+    "canvasChecks": "Strict Mode/mobile reduced motion, paused drag/reset, play/pause, context restore/draw, unmount/draw stop"
+  },
+  "typecheck": "PASS",
+  "build": "PASS",
+  "sourceChecksums": "46 files PASS, PNG/raw atlas exact match",
+  "jadeSourceTests": {
+    "tests": 21,
+    "pass": 21
+  },
+  "depthPets": {
+    "checks": 6,
+    "animals": 12,
+    "qualities": 2
+  },
+  "domRegressions": {
+    "tests": 21,
+    "pass": 21
+  },
+  "chatAtomicWorker": {
+    "tests": 3,
+    "pass": 3
+  },
+  "savedArchive": "120 synthetic in-memory records PASS",
+  "workerIntegration": {
+    "status": "PASS",
+    "count": 23,
+    "checks": [
+      "template fortune creation",
+      "saved list",
+      "saved detail",
+      "chat persistence",
+      "invalid date rejected",
+      "anonymous API rejected",
+      "cross-user fortune isolation",
+      "map persistence and concurrent friend inserts",
+      "cross-user map isolation",
+      "client assets",
+      "page /",
+      "page /daily",
+      "page /manse",
+      "page /planet",
+      "page /lab",
+      "page /ai-test",
+      "page /saved",
+      "page /guin",
+      "page /guin/gm_fbfaaef8-e605-4bd6-8f3d-499e58460ba7",
+      "ordinary flows make zero outbound requests",
+      "AI test rejects extra personal-data fields",
+      "fixed Gemini fixtures and fact validation (mock-only)",
+      "six-call daily cap stops further calls"
+    ],
+    "limits": [
+      "No browser/WebGL/touch validation",
+      "Synthetic local identity; hosted login not exercised",
+      "Fresh local test database only"
+    ]
+  },
+  "lint": {
+    "changedErrors": 0,
+    "changedExistingWarnings": 1,
+    "baselineErrors": 43,
+    "remainingExistingErrors": 40
+  },
+  "limitations": [
+    "Physical mobile GPU and real touch device not exercised",
+    "Hosted login and production user DB not exercised",
+    "No deployment, merge, PR or auth/permission change",
+    "No complete vine body, curved sand, water spray or sliding dew completion claim"
+  ]
+}

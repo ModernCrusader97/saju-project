@@ -1,0 +1,437 @@
+{"glbSHA256":"0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84","originalAttributeHashes":{"position":"f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b","normal":"80706bee870329a0829113e63ed178f0a904029265da2c96c69ad50f9b1f9cec","uv":"f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c","index":"934286d3bdd9361657e390c41762923871cec85a48a7d9775b362aee02dc7830"},"ioBoundary":"CPU uses real GLB with image I/O placeholders; browser QA loads actual textures"}
+✖ 甲 low: approved material, original B geometry and supported effects (23.200161ms)
+✖ 乙 low: approved material, original B geometry and supported effects (13.864372ms)
+✖ 丙 low: approved material, original B geometry and supported effects (11.13348ms)
+✖ 丁 low: approved material, original B geometry and supported effects (7.13589ms)
+✖ 戊 low: approved material, original B geometry and supported effects (10.510416ms)
+✖ 己 low: approved material, original B geometry and supported effects (6.653942ms)
+✖ 庚 low: approved material, original B geometry and supported effects (8.812031ms)
+✖ 辛 low: approved material, original B geometry and supported effects (21.029424ms)
+✖ 壬 low: approved material, original B geometry and supported effects (12.81431ms)
+✖ 癸 low: approved material, original B geometry and supported effects (8.453144ms)
+✖ 甲 high: approved material, original B geometry and supported effects (5.323689ms)
+✖ 乙 high: approved material, original B geometry and supported effects (9.56013ms)
+✖ 丙 high: approved material, original B geometry and supported effects (6.143501ms)
+✖ 丁 high: approved material, original B geometry and supported effects (8.817199ms)
+✖ 戊 high: approved material, original B geometry and supported effects (8.913ms)
+✖ 己 high: approved material, original B geometry and supported effects (5.207267ms)
+✖ 庚 high: approved material, original B geometry and supported effects (8.596865ms)
+✖ 辛 high: approved material, original B geometry and supported effects (5.481581ms)
+✖ 壬 high: approved material, original B geometry and supported effects (8.140185ms)
+✖ 癸 high: approved material, original B geometry and supported effects (5.24364ms)
+✖ real B neutral morph has exact triangle attachment and rejects active morphs (0.43576ms)
+✔ rest binding includes fixed depth and restores prior attributes exactly once (10.576412ms)
+✖ 甲 leaves meet transformed branch tip centers under nonuniform presentation (18.462503ms)
+✖ jade reject releases the real GLB and fulfilled textures once (5.336648ms)
+✖ jade wrong-size releases the real GLB and fulfilled textures once (5.738527ms)
+ℹ tests 25
+ℹ suites 0
+ℹ pass 1
+ℹ fail 24
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 248.74078
+
+✖ failing tests:
+
+test at scripts/qa/ten-stem-materials.mjs:94:3
+✖ 甲 low: approved material, original B geometry and supported effects (23.200161ms)
+  AssertionError [ERR_ASSERTION]: Body must use the approved stem study recipe
+
+  undefined !== 0
+
+      at TestContext.<anonymous> (file://<checkout>/scripts/qa/ten-stem-materials.mjs:100:16)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/ten-stem-materials.mjs:94:3
+✖ 乙 low: approved material, original B geometry and supported effects (13.864372ms)
+  AssertionError [ERR_ASSERTION]: Body must use the approved stem study recipe
+
+  undefined !== 1
+
+      at TestContext.<anonymous> (file://<checkout>/scripts/qa/ten-stem-materials.mjs:100:16)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/ten-stem-materials.mjs:94:3
+✖ 丙 low: approved material, original B geometry and supported effects (11.13348ms)
+  AssertionError [ERR_ASSERTION]: Body must use the approved stem study recipe
+
+  undefined !== 2
+
+      at TestContext.<anonymous> (file://<checkout>/scripts/qa/ten-stem-materials.mjs:100:16)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 2,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/ten-stem-materials.mjs:94:3
+✖ 丁 low: approved material, original B geometry and supported effects (7.13589ms)
+  AssertionError [ERR_ASSERTION]: Body must use the approved stem study recipe
+
+  undefined !== 3
+
+      at TestContext.<anonymous> (file://<checkout>/scripts/qa/ten-stem-materials.mjs:100:16)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 3,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/ten-stem-materials.mjs:94:3
+✖ 戊 low: approved material, original B geometry and supported effects (10.510416ms)
+  AssertionError [ERR_ASSERTION]: Body must use the approved stem study recipe
+
+  undefined !== 4
+
+      at TestContext.<anonymous> (file://<checkout>/scripts/qa/ten-stem-materials.mjs:100:16)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 4,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/ten-stem-materials.mjs:94:3
+✖ 己 low: approved material, original B geometry and supported effects (6.653942ms)
+  AssertionError [ERR_ASSERTION]: 己 must use approved jade and evolving green light
+  + actual - expected
+
+  + undefined
+  - 'v002'
+
+      at TestContext.<anonymous> (file://<checkout>/scripts/qa/ten-stem-materials.mjs:98:32)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 'v002',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/ten-stem-materials.mjs:94:3
+✖ 庚 low: approved material, original B geometry and supported effects (8.812031ms)
+  AssertionError [ERR_ASSERTION]: Body must use the approved stem study recipe
+
+  undefined !== 6
+
+      at TestContext.<anonymous> (file://<checkout>/scripts/qa/ten-stem-materials.mjs:100:16)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 6,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/ten-stem-materials.mjs:94:3
+✖ 辛 low: approved material, original B geometry and supported effects (21.029424ms)
+  AssertionError [ERR_ASSERTION]: Body must use the approved stem study recipe
+
+  undefined !== 7
+
+      at TestContext.<anonymous> (file://<checkout>/scripts/qa/ten-stem-materials.mjs:100:16)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 7,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/ten-stem-materials.mjs:94:3
+✖ 壬 low: approved material, original B geometry and supported effects (12.81431ms)
+  AssertionError [ERR_ASSERTION]: Body must use the approved stem study recipe
+
+  undefined !== 8
+
+      at TestContext.<anonymous> (file://<checkout>/scripts/qa/ten-stem-materials.mjs:100:16)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 8,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/ten-stem-materials.mjs:94:3
+✖ 癸 low: approved material, original B geometry and supported effects (8.453144ms)
+  AssertionError [ERR_ASSERTION]: Body must use the approved stem study recipe
+
+  undefined !== 9
+
+      at TestContext.<anonymous> (file://<checkout>/scripts/qa/ten-stem-materials.mjs:100:16)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 9,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/ten-stem-materials.mjs:94:3
+✖ 甲 high: approved material, original B geometry and supported effects (5.323689ms)
+  AssertionError [ERR_ASSERTION]: Body must use the approved stem study recipe
+
+  undefined !== 0
+
+      at TestContext.<anonymous> (file://<checkout>/scripts/qa/ten-stem-materials.mjs:100:16)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/ten-stem-materials.mjs:94:3
+✖ 乙 high: approved material, original B geometry and supported effects (9.56013ms)
+  AssertionError [ERR_ASSERTION]: Body must use the approved stem study recipe
+
+  undefined !== 1
+
+      at TestContext.<anonymous> (file://<checkout>/scripts/qa/ten-stem-materials.mjs:100:16)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/ten-stem-materials.mjs:94:3
+✖ 丙 high: approved material, original B geometry and supported effects (6.143501ms)
+  AssertionError [ERR_ASSERTION]: Body must use the approved stem study recipe
+
+  undefined !== 2
+
+      at TestContext.<anonymous> (file://<checkout>/scripts/qa/ten-stem-materials.mjs:100:16)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 2,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/ten-stem-materials.mjs:94:3
+✖ 丁 high: approved material, original B geometry and supported effects (8.817199ms)
+  AssertionError [ERR_ASSERTION]: Body must use the approved stem study recipe
+
+  undefined !== 3
+
+      at TestContext.<anonymous> (file://<checkout>/scripts/qa/ten-stem-materials.mjs:100:16)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 3,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/ten-stem-materials.mjs:94:3
+✖ 戊 high: approved material, original B geometry and supported effects (8.913ms)
+  AssertionError [ERR_ASSERTION]: Body must use the approved stem study recipe
+
+  undefined !== 4
+
+      at TestContext.<anonymous> (file://<checkout>/scripts/qa/ten-stem-materials.mjs:100:16)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 4,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/ten-stem-materials.mjs:94:3
+✖ 己 high: approved material, original B geometry and supported effects (5.207267ms)
+  AssertionError [ERR_ASSERTION]: 己 must use approved jade and evolving green light
+  + actual - expected
+
+  + undefined
+  - 'v002'
+
+      at TestContext.<anonymous> (file://<checkout>/scripts/qa/ten-stem-materials.mjs:98:32)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 'v002',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/ten-stem-materials.mjs:94:3
+✖ 庚 high: approved material, original B geometry and supported effects (8.596865ms)
+  AssertionError [ERR_ASSERTION]: Body must use the approved stem study recipe
+
+  undefined !== 6
+
+      at TestContext.<anonymous> (file://<checkout>/scripts/qa/ten-stem-materials.mjs:100:16)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 6,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/ten-stem-materials.mjs:94:3
+✖ 辛 high: approved material, original B geometry and supported effects (5.481581ms)
+  AssertionError [ERR_ASSERTION]: Body must use the approved stem study recipe
+
+  undefined !== 7
+
+      at TestContext.<anonymous> (file://<checkout>/scripts/qa/ten-stem-materials.mjs:100:16)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 7,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/ten-stem-materials.mjs:94:3
+✖ 壬 high: approved material, original B geometry and supported effects (8.140185ms)
+  AssertionError [ERR_ASSERTION]: Body must use the approved stem study recipe
+
+  undefined !== 8
+
+      at TestContext.<anonymous> (file://<checkout>/scripts/qa/ten-stem-materials.mjs:100:16)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 8,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/ten-stem-materials.mjs:94:3
+✖ 癸 high: approved material, original B geometry and supported effects (5.24364ms)
+  AssertionError [ERR_ASSERTION]: Body must use the approved stem study recipe
+
+  undefined !== 9
+
+      at TestContext.<anonymous> (file://<checkout>/scripts/qa/ten-stem-materials.mjs:100:16)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 9,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/ten-stem-materials.mjs:147:1
+✖ real B neutral morph has exact triangle attachment and rejects active morphs (0.43576ms)
+  Error: Rigid non-morph Mesh surfaces only.
+      at new MeshSurface (file://<checkout>/outputs/ten-stem-materials/cpu/runtime.mjs:1207:99)
+      at TestContext.<anonymous> (file://<checkout>/scripts/qa/ten-stem-materials.mjs:150:19)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at scripts/qa/ten-stem-materials.mjs:176:1
+✖ 甲 leaves meet transformed branch tip centers under nonuniform presentation (18.462503ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+    assert(leaves?.isInstancedMesh)
+
+      at TestContext.<anonymous> (file://<checkout>/scripts/qa/ten-stem-materials.mjs:181:5)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at scripts/qa/ten-stem-materials.mjs:199:50
+✖ jade reject releases the real GLB and fulfilled textures once (5.336648ms)
+  AssertionError [ERR_ASSERTION]: Missing expected rejection.
+      at async TestContext.<anonymous> (file://<checkout>/scripts/qa/ten-stem-materials.mjs:202:5)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /textures|atlas/,
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at scripts/qa/ten-stem-materials.mjs:199:50
+✖ jade wrong-size releases the real GLB and fulfilled textures once (5.738527ms)
+  AssertionError [ERR_ASSERTION]: Missing expected rejection.
+      at async TestContext.<anonymous> (file://<checkout>/scripts/qa/ten-stem-materials.mjs:202:5)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /textures|atlas/,
+    operator: 'rejects',
+    diff: 'simple'
+  }

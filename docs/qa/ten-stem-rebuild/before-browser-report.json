@@ -1,0 +1,572 @@
+{
+  "status": "FAIL",
+  "phase": "before",
+  "checks": [
+    "20 actual GLB/material/effect renders at low and high quality; original position/UV/morph/depth/dimensions/pet spacing",
+    "original delta-time behavior recorded; exact time-zero reset checked",
+    "front/oblique/side keep original B and separate pet composition"
+  ],
+  "errors": [
+    "AssertionError [ERR_ASSERTION]: Only the shared lighting texture may remain\n    at file://<checkout>/scripts/qa/ten-stem-browser.mjs:92:3"
+  ],
+  "outbound": [],
+  "results": [
+    {
+      "day": "갑자",
+      "quality": "high",
+      "angle": 0,
+      "material": "living:갑자",
+      "depth": 1.35,
+      "bodyDimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "petGap": 0.42711147068340855,
+      "positionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "uvHash": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "morphs": [
+        0
+      ],
+      "effects": [],
+      "drawCalls": 23,
+      "triangles": 74484,
+      "hash": "7b69096a1e87d52eeb28dd663b801ac02c68868527a2fac763cd23c05272ac31",
+      "colors": 8102,
+      "repeatedTimeStable": true
+    },
+    {
+      "day": "을축",
+      "quality": "high",
+      "angle": 0,
+      "material": "",
+      "jade": "v002",
+      "depth": 1.35,
+      "bodyDimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "petGap": 0.3961435295396977,
+      "positionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "uvHash": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "morphs": [
+        0
+      ],
+      "effects": [],
+      "drawCalls": 58,
+      "triangles": 151400,
+      "hash": "ad109fe26cb0321688df2ef4f7178fd1a6c9fdfc59f7b5e1ac69ce70b98c485e",
+      "colors": 8057,
+      "repeatedTimeStable": true
+    },
+    {
+      "day": "병인",
+      "quality": "high",
+      "angle": 0,
+      "material": "living:병인",
+      "depth": 1.35,
+      "bodyDimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "petGap": 0.45927455325251637,
+      "positionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "uvHash": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "morphs": [
+        0
+      ],
+      "effects": [],
+      "drawCalls": 36,
+      "triangles": 79632,
+      "hash": "018cca79325150e69091022a49fd128d5a1d5cdd03b25071336ef59ac7a58c92",
+      "colors": 7410,
+      "repeatedTimeStable": false
+    },
+    {
+      "day": "정묘",
+      "quality": "high",
+      "angle": 0,
+      "material": "living:정묘",
+      "depth": 1.35,
+      "bodyDimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "petGap": 0.5244908732394942,
+      "positionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "uvHash": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "morphs": [
+        0
+      ],
+      "effects": [],
+      "drawCalls": 23,
+      "triangles": 74368,
+      "hash": "ffed4f47a9cbe2b78dede15f37231d9bd8a298969aa50b0b416b568a90a8830c",
+      "colors": 7117,
+      "repeatedTimeStable": false
+    },
+    {
+      "day": "무진",
+      "quality": "high",
+      "angle": 0,
+      "material": "living:무진",
+      "depth": 1.35,
+      "bodyDimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "petGap": 0.45516406707942175,
+      "positionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "uvHash": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "morphs": [
+        0
+      ],
+      "effects": [],
+      "drawCalls": 24,
+      "triangles": 73836,
+      "hash": "86efe78f7c7b29036033a4000dbba4a73adf4b4e2944740e5b280db5424b9ec2",
+      "colors": 3621,
+      "repeatedTimeStable": true
+    },
+    {
+      "day": "기사",
+      "quality": "high",
+      "angle": 0,
+      "material": "living:기사",
+      "depth": 1.35,
+      "bodyDimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "petGap": 0.3334237082076515,
+      "positionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "uvHash": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "morphs": [
+        0
+      ],
+      "effects": [],
+      "drawCalls": 18,
+      "triangles": 72504,
+      "hash": "cdd979d5c1d3fffd0b2a217269bfbbdfcfe3df6c68439bb9cb68dcaafe78befe",
+      "colors": 3600,
+      "repeatedTimeStable": true
+    },
+    {
+      "day": "경오",
+      "quality": "high",
+      "angle": 0,
+      "material": "living:경오",
+      "depth": 1.35,
+      "bodyDimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "petGap": 0.5240241708628792,
+      "positionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "uvHash": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "morphs": [
+        0
+      ],
+      "effects": [],
+      "drawCalls": 29,
+      "triangles": 75468,
+      "hash": "57120aeadcd58164beeab59e5fd34b9eeb0be34f9e7adb91795d1f395c96f2fc",
+      "colors": 4064,
+      "repeatedTimeStable": true
+    },
+    {
+      "day": "신미",
+      "quality": "high",
+      "angle": 0,
+      "material": "living:신미",
+      "depth": 1.35,
+      "bodyDimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "petGap": 0.3810544325730421,
+      "positionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "uvHash": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "morphs": [
+        0
+      ],
+      "effects": [],
+      "drawCalls": 31,
+      "triangles": 77768,
+      "hash": "9e4f184c23836e4afdf3efc79acc8018ddc00e2ea6a7ea47bf5056a3e1680c36",
+      "colors": 2969,
+      "repeatedTimeStable": false
+    },
+    {
+      "day": "임신",
+      "quality": "high",
+      "angle": 0,
+      "material": "living:임신",
+      "depth": 1.35,
+      "bodyDimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "petGap": 0.3909178378186809,
+      "positionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "uvHash": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "morphs": [
+        0
+      ],
+      "effects": [],
+      "drawCalls": 24,
+      "triangles": 74880,
+      "hash": "192cd134300f5ba0a020d8ca2676e3dd53ab9bd4b20d5ef5fabeb7453280a4d1",
+      "colors": 6536,
+      "repeatedTimeStable": false
+    },
+    {
+      "day": "계유",
+      "quality": "high",
+      "angle": 0,
+      "material": "living:계유",
+      "depth": 1.35,
+      "bodyDimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "petGap": 0.46711178655096736,
+      "positionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "uvHash": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "morphs": [
+        0
+      ],
+      "effects": [],
+      "drawCalls": 26,
+      "triangles": 74164,
+      "hash": "dba0cc27cdf75eba284696f50e93a46c0a8b561ec33d112ec290bf5d8006e034",
+      "colors": 4205,
+      "repeatedTimeStable": false
+    },
+    {
+      "day": "갑자",
+      "quality": "low",
+      "angle": 0,
+      "material": "living:갑자",
+      "depth": 1.35,
+      "bodyDimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "petGap": 0.42712300272439147,
+      "positionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "uvHash": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "morphs": [
+        0
+      ],
+      "effects": [],
+      "drawCalls": 23,
+      "triangles": 71020,
+      "hash": "d6ea7823e3b07c86c4facf76e8590206da8fc1e3808fbed6b606e841bfbfca15",
+      "colors": 8096,
+      "repeatedTimeStable": true
+    },
+    {
+      "day": "을축",
+      "quality": "low",
+      "angle": 0,
+      "material": "",
+      "jade": "v002",
+      "depth": 1.35,
+      "bodyDimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "petGap": 0.39560301096053835,
+      "positionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "uvHash": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "morphs": [
+        0
+      ],
+      "effects": [],
+      "drawCalls": 58,
+      "triangles": 143256,
+      "hash": "52cb092014b410266b1a10c96204f32692392cdc531e541b1c75d617beb9dd80",
+      "colors": 8051,
+      "repeatedTimeStable": true
+    },
+    {
+      "day": "병인",
+      "quality": "low",
+      "angle": 0,
+      "material": "living:병인",
+      "depth": 1.35,
+      "bodyDimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "petGap": 0.4592856321892957,
+      "positionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "uvHash": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "morphs": [
+        0
+      ],
+      "effects": [],
+      "drawCalls": 36,
+      "triangles": 73204,
+      "hash": "36aa26679589e30ffe7bca7df3ea490c4f02aac5c9c63c50885976e74c76de46",
+      "colors": 7419,
+      "repeatedTimeStable": false
+    },
+    {
+      "day": "정묘",
+      "quality": "low",
+      "angle": 0,
+      "material": "living:정묘",
+      "depth": 1.35,
+      "bodyDimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "petGap": 0.5244960420388589,
+      "positionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "uvHash": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "morphs": [
+        0
+      ],
+      "effects": [],
+      "drawCalls": 23,
+      "triangles": 70948,
+      "hash": "a6b6f6559c39fd72211babb0ee6deb3820c7470de38da231644bbe1ac54713b9",
+      "colors": 7115,
+      "repeatedTimeStable": false
+    },
+    {
+      "day": "무진",
+      "quality": "low",
+      "angle": 0,
+      "material": "living:무진",
+      "depth": 1.35,
+      "bodyDimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "petGap": 0.4551405884247471,
+      "positionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "uvHash": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "morphs": [
+        0
+      ],
+      "effects": [],
+      "drawCalls": 24,
+      "triangles": 70860,
+      "hash": "aa3c518547b606f18c968a79d4d811b12dd3749768fed770420fa80be4b08f8a",
+      "colors": 3621,
+      "repeatedTimeStable": true
+    },
+    {
+      "day": "기사",
+      "quality": "low",
+      "angle": 0,
+      "material": "living:기사",
+      "depth": 1.35,
+      "bodyDimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "petGap": 0.3324691802613861,
+      "positionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "uvHash": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "morphs": [
+        0
+      ],
+      "effects": [],
+      "drawCalls": 18,
+      "triangles": 70180,
+      "hash": "c8b5d857d2344198017999fca14066e44e40152eeee4316bb7fbb58bb9764d9d",
+      "colors": 3625,
+      "repeatedTimeStable": true
+    },
+    {
+      "day": "경오",
+      "quality": "low",
+      "angle": 0,
+      "material": "living:경오",
+      "depth": 1.35,
+      "bodyDimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "petGap": 0.524028078150016,
+      "positionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "uvHash": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "morphs": [
+        0
+      ],
+      "effects": [],
+      "drawCalls": 29,
+      "triangles": 71484,
+      "hash": "971f20db08b07764b5dfec069097073cdc24e84fb002c18bfd2e82268e311ea6",
+      "colors": 4065,
+      "repeatedTimeStable": true
+    },
+    {
+      "day": "신미",
+      "quality": "low",
+      "angle": 0,
+      "material": "living:신미",
+      "depth": 1.35,
+      "bodyDimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "petGap": 0.38074161930433853,
+      "positionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "uvHash": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "morphs": [
+        0
+      ],
+      "effects": [],
+      "drawCalls": 31,
+      "triangles": 72436,
+      "hash": "ddd3761910fdcc9c0d760a39e6c89174e598d706822d15ee3c6f14030c9fdd84",
+      "colors": 2982,
+      "repeatedTimeStable": false
+    },
+    {
+      "day": "임신",
+      "quality": "low",
+      "angle": 0,
+      "material": "living:임신",
+      "depth": 1.35,
+      "bodyDimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "petGap": 0.3909765253589385,
+      "positionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "uvHash": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "morphs": [
+        0
+      ],
+      "effects": [],
+      "drawCalls": 24,
+      "triangles": 71188,
+      "hash": "db5d7829be75568c1000b68f0011a77b2013bfebbea409bc3a2d23abfe8a80db",
+      "colors": 6546,
+      "repeatedTimeStable": false
+    },
+    {
+      "day": "계유",
+      "quality": "low",
+      "angle": 0,
+      "material": "living:계유",
+      "depth": 1.35,
+      "bodyDimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "petGap": 0.467120430645166,
+      "positionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "uvHash": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "morphs": [
+        0
+      ],
+      "effects": [],
+      "drawCalls": 26,
+      "triangles": 70988,
+      "hash": "db82fe139b18580c2c583da0a00d612e4da44a29c60a696758a82a3179714c78",
+      "colors": 4212,
+      "repeatedTimeStable": false
+    },
+    {
+      "day": "갑자",
+      "quality": "high",
+      "angle": 0.7853981633974483,
+      "material": "living:갑자",
+      "depth": 1.35,
+      "bodyDimensions": [
+        1.4932122507176941,
+        2.384797894395888,
+        1.4932679572610426
+      ],
+      "petGap": 0.46497976294895077,
+      "positionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "uvHash": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "morphs": [
+        0
+      ],
+      "effects": [],
+      "drawCalls": 23,
+      "triangles": 74484,
+      "hash": "486e5c2a2d01964cddb1066477d629d3cd55fb082a0fec0dcf6fd1e554efea1f",
+      "colors": 7571
+    },
+    {
+      "day": "을축",
+      "quality": "high",
+      "angle": 1.5707963267948966,
+      "material": "",
+      "jade": "v002",
+      "depth": 1.35,
+      "bodyDimensions": [
+        1.2838603064417842,
+        2.384797894395888,
+        1.754512906074524
+      ],
+      "petGap": 0.6314580343419247,
+      "positionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "uvHash": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "morphs": [
+        0
+      ],
+      "effects": [],
+      "drawCalls": 58,
+      "triangles": 151400,
+      "hash": "880e4d1a2dc85e59f84ed83e15ea8219e649734b0ccca586a75cadb752258e78",
+      "colors": 7437
+    },
+    {
+      "day": "기사",
+      "quality": "high",
+      "angle": 1.5707963267948966,
+      "material": "living:기사",
+      "depth": 1.35,
+      "bodyDimensions": [
+        1.2838603064417842,
+        2.384797894395888,
+        1.754512906074524
+      ],
+      "petGap": 0.5687382130098784,
+      "positionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "uvHash": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "morphs": [
+        0
+      ],
+      "effects": [],
+      "drawCalls": 18,
+      "triangles": 72504,
+      "hash": "591e14cdc6c3dda8065b80e9f0a1adc7b2e820749d71d23f30628859ca7326e9",
+      "colors": 3182
+    }
+  ],
+  "limits": [
+    "Chromium SwiftShader; no physical mobile GPU",
+    "Local renderer harness loads production loader and actual GLB/PNGs; hosted auth and user DB are not accessed",
+    "No complete vine body, curved sand, water spray or sliding dew claim"
+  ]
+}

@@ -100,7 +100,11 @@ export default function ElementalSpiritCanvas({
     let spirit:ElementalSpiritInstance|null=null;
     motionTime.current=0;viewRotation.current={x:0,y:0};
     let contextLost=false;
-    const render=()=>{if(!disposed && !contextLost && !shaderFailed)renderer.render(scene,camera);};
+    const render=()=>{
+      if(disposed || contextLost || shaderFailed)return;
+      spirit?.update(motionTime.current,0,camera);
+      renderer.render(scene,camera);
+    };
     renderRef.current=render;
     const resize=()=>{
       if(disposed)return;
@@ -184,7 +188,7 @@ export default function ElementalSpiritCanvas({
       frame=requestAnimationFrame(animate);
       const delta=safeDelta(now,previousTime);previousTime=now;
       if(document.hidden || contextLost || shaderFailed || !runningRef.current || activePointer!==null || !spirit)return;
-      motionTime.current+=delta;spirit.update(motionTime.current,delta);render();
+      motionTime.current+=delta;render();
     };
     frame=requestAnimationFrame(animate);
     return ()=>{

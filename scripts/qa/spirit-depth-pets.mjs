@@ -45,8 +45,8 @@ const server=await createServer({root,configFile:false,logLevel:'error',server:{
 let browser;const checks=[],errors=[],results=[];
 try{
  await server.listen();const origin=server.resolvedUrls.local[0];
- const {chromium}=await import(pathToFileURL(path.join(root,'.sites-runtime/browser-qa/node_modules/playwright-core/index.mjs')).href);
- browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true,args:['--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+ const {chromium}=await import(pathToFileURL(process.env.SAJU_QA_PLAYWRIGHT_PATH??path.join(root,'.sites-runtime/browser-qa/node_modules/playwright-core/index.mjs')).href);
+ browser=await chromium.launch({executablePath:process.env.SAJU_QA_CHROME??'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true,args:['--no-sandbox','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
  const page=await browser.newPage({viewport:{width:560,height:560}});page.on('pageerror',e=>errors.push(e.message));
  await page.route('**/*',r=>new URL(r.request().url()).origin===new URL(origin).origin?r.continue():r.abort());
  await page.goto(origin+'__spirit');await page.waitForFunction(()=>!!window.spiritQA);
