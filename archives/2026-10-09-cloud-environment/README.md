@@ -31,3 +31,5 @@ SHA-256: 57d7ee5b3c4e0b99eaadefb8095283bed44986beaa5a91c096dd7a0c514bf9c2
 최신 홈 ZIP `libfile_063ee0caabbc8191a4a106468826f1dc`, 10천간 재질 ZIP `libfile_ea461fe7b4b08191a368a1023c392bfb`은 이 환경에서 미확보입니다. 과거 지원 다운로드 CONNECT 403 이후 재시도·다른 전송 경로·Library 우회를 수행하지 않았습니다. 별도 dot 보존 원본이 있을 수 있어도 이번 클라우드 작업에 이 두 Library 후보를 재생성하거나 실행 코드로 적용하지 않았습니다. 사라진 `2709bb7` 전체 복원 주장도 하지 않습니다.
 
 클라우드 환경 설정 Publish/새 자동 복원, 사이트 배포·공개, 실제 hosted 로그인은 미실행/미검증으로 유지합니다. 원본 checkout·잠금파일·기존 DB와 이전 원격 버전은 보존했습니다. 재현용 도구 및 로그는 자료이며 install_script/start_skill의 게시 설정을 대체하지 않습니다. `prepare-preservation.py`는 파일 수집 당시의 도구 원문이며 자동으로 실행되는 앱/설치 코드가 아닙니다. 최종 원격 ZIP 비교와 push 검증은 별도 JSON 근거를 확인해야 합니다.
+
+업로드 이후 빈 Git 저장소에서 원격 자료를 독립 재다운로드했습니다. 최신 tracked 파일 361개와 ZIP 멤버 243개, 모델·런타임 원본, 알려진 dot ZIP 멤버의 바이트 검사가 모두 통과했습니다. [최종 보존 보고](PRESERVATION_REPORT.md), [원격 바이너리 검사](remote-binary-verification.json), [검사 도구](verify-remote-preservation.py)를 추가했습니다. 검증 대상으로 고정한 실제 자료 커밋은 `c481d7616eb7ca3f938e64a41e11e4551504a5cc`이며 이후 같은 브랜치에는 검증 증거만 추가했습니다.
