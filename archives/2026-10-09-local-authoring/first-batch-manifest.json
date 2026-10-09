@@ -1,0 +1,30 @@
+{
+  "status": "partial_archive",
+  "baseline": "2e2d82b05f87b39ff8057ae914e8dfa01100a974",
+  "archives": [
+    {
+      "name": "elemental_form_comparison--part-01.zip",
+      "bytes": 1158077,
+      "sha256": "a234c2213f399a94069f655de2403c20fae4d9ab6f74644e0ec3e98990272aea",
+      "git_blob_sha": "863d486e864970cd61769b4d270ec4a4e33c08c4"
+    },
+    {
+      "name": "arm_candidates_v5--part-02.zip",
+      "bytes": 3687641,
+      "sha256": "6a82a6b3b96637567a4160df3f2f66c429059e95a5350c886a303bf779db4466",
+      "git_blob_sha": "e17fc8ed0ba5f3b42714a792abc5e2f83d10b077"
+    },
+    {
+      "name": "arm_candidates_v5--part-01.zip",
+      "bytes": 4926406,
+      "sha256": "e91866bd4ec412b905bae70619bcb205c46a55a509730fcd8646b0c7e824c1e3",
+      "git_blob_sha": "a8360244d36d56327c541e816ea14eadf34fd442"
+    },
+    {
+      "name": "b_five_elements_v1--part-01.zip",
+      "bytes": 6133576,
+      "sha256": "3115c7475aac987009a82587e019af557f40efd704828c72523502db4126375f",
+      "git_blob_sha": "9704ba4cde5632951dabc1567caacd0bbf43a61a"
+    }
+  ]
+}
