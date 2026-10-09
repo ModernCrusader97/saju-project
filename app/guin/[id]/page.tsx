@@ -29,7 +29,11 @@ import CosmicPassportModal from "@/components/planet/CosmicPassportModal";
 import GalaxyPokedexModal from "@/components/planet/GalaxyPokedexModal";
 
 export default function GuinMapDetailPage() {
-  const params = useParams<{id:string}>();
+  const { id } = useParams<{id:string}>();
+  return <GuinMapDetailContent key={id} mapId={id} />;
+}
+
+function GuinMapDetailContent({ mapId }: { mapId: string }) {
   const [mapData, setMapData] = useState<GuinMapData | null>(null);
   const [loading, setLoading] = useState(true);
   const [loadError,setLoadError]=useState<string|null>(null);
@@ -54,22 +58,35 @@ export default function GuinMapDetailPage() {
   const [fUnknownTime, setFUnknownTime] = useState(false);
   const [joining, setJoining] = useState(false);
 
-  const fetchMap = () => {
-    fetch(`/api/guin/${params.id}`)
-      .then(async (res) => {const data=await readApiResponse(res); if(!res.ok) throw new Error(data.error || "지도를 불러오지 못했습니다."); return data;})
-      .then((data) => {
+  useEffect(() => {
+    const controller = new AbortController();
+    let active = true;
+
+    const fetchMap = async () => {
+      try {
+        const res = await fetch(`/api/guin/${mapId}`, { signal: controller.signal });
+        const data = await readApiResponse(res);
+        if (!active) return;
+        if (!res.ok) throw new Error(data.error || "지도를 불러오지 못했습니다.");
         if (data.guinMap) {
           setMapData(data.guinMap);
           restoreGalaxyUniverse(data.guinMap);
         }
-      })
-      .catch(error=>setLoadError(error.message || "지도를 불러오지 못했습니다."))
-      .finally(() => setLoading(false));
-  };
+      } catch (error) {
+        if (active) {
+          setLoadError(error instanceof Error && error.message ? error.message : "지도를 불러오지 못했습니다.");
+        }
+      } finally {
+        if (active) setLoading(false);
+      }
+    };
 
-  useEffect(() => {
-    fetchMap();
-  }, [params.id]);
+    void fetchMap();
+    return () => {
+      active = false;
+      controller.abort();
+    };
+  }, [mapId]);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -93,7 +110,7 @@ export default function GuinMapDetailPage() {
   const handleQuickAddTestFriend = async (name: string, y: number, m: number, d: number, h?: number, min?: number) => {
     setJoining(true);
     try {
-      const res = await fetch(`/api/guin/${params.id}`, {
+      const res = await fetch(`/api/guin/${mapId}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -126,7 +143,7 @@ export default function GuinMapDetailPage() {
 
     setJoining(true);
     try {
-      const res = await fetch(`/api/guin/${params.id}`, {
+      const res = await fetch(`/api/guin/${mapId}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
