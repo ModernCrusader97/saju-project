@@ -9,6 +9,7 @@ export const seeded = (n:number):number => fract(Math.sin(n*127.1+311.7)*43758.5
 export class MeshSurface {
   private faces: Face[] = [];
   private byMesh = new Map<THREE.Mesh, Face[]>();
+  private pathNormals = new Map<THREE.Mesh, Float64Array>();
   private total = 0;
   readonly bounds = new THREE.Box3();
   constructor(readonly meshes: THREE.Mesh[]) {
@@ -60,19 +61,29 @@ export class MeshSurface {
   }
   /** Short local surface crawl. Restricts projection to the SAME mesh and similar facing triangles. */
   path(anchor:SurfaceAnchor,length:number,steps=24):SurfaceAnchor[] {
-    const face=(this.byMesh.get(anchor.mesh)??[]).find(f=>f.triangle===anchor.triangle)!;
+    const faces=this.byMesh.get(anchor.mesh)??[];
+    const face=faces.find(f=>f.triangle===anchor.triangle)!;
     let point=face.a.clone().multiplyScalar(anchor.barycentric.x).addScaledVector(face.b,anchor.barycentric.y).addScaledVector(face.c,anchor.barycentric.z);
     const normal=new THREE.Triangle(face.a,face.b,face.c).getNormal(new THREE.Vector3());
     const direction=new THREE.Vector3(0,1,0).addScaledVector(normal,-normal.y);
     if(direction.lengthSq()<.01)direction.set(1,0,0).addScaledVector(normal,-normal.x);
     direction.normalize();
     const result=[anchor], step=length/steps, tri=new THREE.Triangle(), closest=new THREE.Vector3(), n=new THREE.Vector3();
+    let normals=this.pathNormals.get(anchor.mesh);
+    if(!normals){
+      // Face vertices are immutable local snapshots. Cache only for callers that
+      // crawl; Float64 retains the exact Three normal and the original tie order.
+      normals=new Float64Array(faces.length*3);
+      faces.forEach((f,i)=>tri.set(f.a,f.b,f.c).getNormal(n).toArray(normals!,i*3));
+      this.pathNormals.set(anchor.mesh,normals);
+    }
     for(let i=1;i<=steps;i++){
       const wanted=point.clone().addScaledVector(direction,step);
       let best:Face|undefined, distance=Infinity;
       const pos=new THREE.Vector3();
-      for(const f of this.byMesh.get(anchor.mesh)??[]){
-        tri.set(f.a,f.b,f.c);tri.getNormal(n);if(n.dot(normal)<.35)continue;
+      for(let index=0;index<faces.length;index++){
+        const f=faces[index];n.fromArray(normals,index*3);if(n.dot(normal)<.35)continue;
+        tri.set(f.a,f.b,f.c);
         tri.closestPointToPoint(wanted,closest);const d=closest.distanceToSquared(wanted);
         if(d<distance){distance=d;best=f;pos.copy(closest);}
       }

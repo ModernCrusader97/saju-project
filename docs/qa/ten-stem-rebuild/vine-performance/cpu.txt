@@ -1,0 +1,34 @@
+{"glbSHA256":"0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84","originalAttributeHashes":{"position":"f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b","normal":"80706bee870329a0829113e63ed178f0a904029265da2c96c69ad50f9b1f9cec","uv":"f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c","index":"934286d3bdd9361657e390c41762923871cec85a48a7d9775b362aee02dc7830"},"ioBoundary":"CPU uses real GLB with image I/O placeholders; browser QA loads actual textures"}
+✔ 甲 low: approved material, original B geometry and supported effects (283.241378ms)
+✔ 乙 low: approved material, original B geometry and supported effects (653.802554ms)
+✔ 丙 low: approved material, original B geometry and supported effects (139.554547ms)
+✔ 丁 low: approved material, original B geometry and supported effects (121.501237ms)
+✔ 戊 low: approved material, original B geometry and supported effects (63.788805ms)
+✔ 己 low: approved material, original B geometry and supported effects (108.124625ms)
+✔ 庚 low: approved material, original B geometry and supported effects (112.32327ms)
+✔ 辛 low: approved material, original B geometry and supported effects (131.929561ms)
+✔ 壬 low: approved material, original B geometry and supported effects (134.949435ms)
+✔ 癸 low: approved material, original B geometry and supported effects (120.339031ms)
+✔ 甲 high: approved material, original B geometry and supported effects (390.828307ms)
+✔ 乙 high: approved material, original B geometry and supported effects (518.596001ms)
+✔ 丙 high: approved material, original B geometry and supported effects (98.834382ms)
+✔ 丁 high: approved material, original B geometry and supported effects (76.53744ms)
+✔ 戊 high: approved material, original B geometry and supported effects (58.094448ms)
+✔ 己 high: approved material, original B geometry and supported effects (38.549057ms)
+✔ 庚 high: approved material, original B geometry and supported effects (123.508439ms)
+✔ 辛 high: approved material, original B geometry and supported effects (119.203978ms)
+✔ 壬 high: approved material, original B geometry and supported effects (118.325349ms)
+✔ 癸 high: approved material, original B geometry and supported effects (110.41009ms)
+✔ real B neutral morph has exact triangle attachment and rejects active morphs (61.368951ms)
+✔ rest binding includes fixed depth and restores prior attributes exactly once (20.954881ms)
+✔ 甲 leaves meet transformed branch tip centers under nonuniform presentation (353.65475ms)
+✔ jade reject releases the real GLB and fulfilled textures once (5.341904ms)
+✔ jade wrong-size releases the real GLB and fulfilled textures once (8.040487ms)
+ℹ tests 25
+ℹ suites 0
+ℹ pass 25
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3985.253541

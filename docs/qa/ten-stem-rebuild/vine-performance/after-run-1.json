@@ -1,0 +1,490 @@
+{
+  "status": "PASS",
+  "phase": "after",
+  "baseline": "861584b5ffe1df41a8c8fcf0f948e3b1c20905e2",
+  "environment": {
+    "browser": "151.0.7922.173",
+    "node": "v24.19.0",
+    "three": "0.186.1"
+  },
+  "input": {
+    "threeRevision": "186",
+    "glbHash": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+    "positionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+    "uvHash": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+    "vertices": 33207,
+    "depth": 1.35
+  },
+  "profiles": [
+    {
+      "quality": "low",
+      "constructorMs": 53.80000000074506,
+      "triangles": 62124,
+      "pathMs": 709.9000000003725,
+      "pathCalls": 8,
+      "sampleMs": 0.09999999962747097,
+      "sampleCalls": 14,
+      "resolveMs": 8,
+      "resolveCalls": 398,
+      "pathLengths": [
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "totalMs": 778.0999999996275,
+      "otherMs": 6.299999998882413
+    },
+    {
+      "quality": "low",
+      "constructorMs": 15.900000000372529,
+      "triangles": 62124,
+      "pathMs": 536.0999999996275,
+      "pathCalls": 8,
+      "sampleMs": 0.09999999962747097,
+      "sampleCalls": 14,
+      "resolveMs": 1.699999999254942,
+      "resolveCalls": 398,
+      "pathLengths": [
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "totalMs": 556.7999999998137,
+      "otherMs": 3.0000000009313226
+    },
+    {
+      "quality": "low",
+      "constructorMs": 29.800000000745058,
+      "triangles": 62124,
+      "pathMs": 544.8999999994412,
+      "pathCalls": 8,
+      "sampleMs": 0,
+      "sampleCalls": 14,
+      "resolveMs": 0.599999999627471,
+      "resolveCalls": 398,
+      "pathLengths": [
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "totalMs": 577.8000000007451,
+      "otherMs": 2.5000000009313226
+    },
+    {
+      "quality": "high",
+      "constructorMs": 53.59999999962747,
+      "triangles": 62124,
+      "pathMs": 480.09999999962747,
+      "pathCalls": 8,
+      "sampleMs": 0.10000000055879354,
+      "sampleCalls": 22,
+      "resolveMs": 0.8000000007450581,
+      "resolveCalls": 406,
+      "pathLengths": [
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "totalMs": 536.0999999996275,
+      "otherMs": 1.4999999990686774
+    },
+    {
+      "quality": "high",
+      "constructorMs": 14,
+      "triangles": 62124,
+      "pathMs": 538.3000000007451,
+      "pathCalls": 8,
+      "sampleMs": 0.09999999962747097,
+      "sampleCalls": 22,
+      "resolveMs": 9.699999999254942,
+      "resolveCalls": 406,
+      "pathLengths": [
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "totalMs": 563.4000000003725,
+      "otherMs": 1.300000000745058
+    },
+    {
+      "quality": "high",
+      "constructorMs": 33.5,
+      "triangles": 62124,
+      "pathMs": 408.09999999962747,
+      "pathCalls": 8,
+      "sampleMs": 0.09999999962747097,
+      "sampleCalls": 22,
+      "resolveMs": 0.6000000005587935,
+      "resolveCalls": 406,
+      "pathLengths": [
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "totalMs": 443.40000000037253,
+      "otherMs": 1.1000000005587935
+    }
+  ],
+  "results": [
+    {
+      "quality": "low",
+      "pairs": [
+        {
+          "order": [
+            "before",
+            "after"
+          ],
+          "before": 651.2000000001863,
+          "after": 376.5
+        },
+        {
+          "order": [
+            "after",
+            "before"
+          ],
+          "after": 339,
+          "before": 410.40000000037253
+        },
+        {
+          "order": [
+            "before",
+            "after"
+          ],
+          "before": 845.5,
+          "after": 274.80000000074506
+        },
+        {
+          "order": [
+            "after",
+            "before"
+          ],
+          "after": 285.79999999981374,
+          "before": 485.5
+        },
+        {
+          "order": [
+            "before",
+            "after"
+          ],
+          "before": 463.29999999981374,
+          "after": 333.90000000037253
+        },
+        {
+          "order": [
+            "after",
+            "before"
+          ],
+          "after": 286.79999999981374,
+          "before": 425.3999999994412
+        },
+        {
+          "order": [
+            "before",
+            "after"
+          ],
+          "before": 438.5,
+          "after": 403
+        }
+      ],
+      "beforeMedianMs": 463.29999999981374,
+      "afterMedianMs": 333.90000000037253,
+      "reductionPercent": 27.930066911179196,
+      "operations": {
+        "before": {
+          "normalCalls": 11928008,
+          "closestCalls": 4155919
+        },
+        "after": {
+          "normalCalls": 62324,
+          "closestCalls": 4155919
+        }
+      }
+    },
+    {
+      "quality": "high",
+      "pairs": [
+        {
+          "order": [
+            "before",
+            "after"
+          ],
+          "before": 424.79999999981374,
+          "after": 304.5
+        },
+        {
+          "order": [
+            "after",
+            "before"
+          ],
+          "after": 298.3999999994412,
+          "before": 430.29999999981374
+        },
+        {
+          "order": [
+            "before",
+            "after"
+          ],
+          "before": 448.59999999962747,
+          "after": 293
+        },
+        {
+          "order": [
+            "after",
+            "before"
+          ],
+          "after": 306.6000000005588,
+          "before": 413.29999999981374
+        },
+        {
+          "order": [
+            "before",
+            "after"
+          ],
+          "before": 397.5,
+          "after": 309.40000000037253
+        },
+        {
+          "order": [
+            "after",
+            "before"
+          ],
+          "after": 271.70000000018626,
+          "before": 375.8999999994412
+        },
+        {
+          "order": [
+            "before",
+            "after"
+          ],
+          "before": 396.79999999981374,
+          "after": 304.1000000005588
+        }
+      ],
+      "beforeMedianMs": 413.29999999981374,
+      "afterMedianMs": 304.1000000005588,
+      "reductionPercent": 26.421485603509353,
+      "operations": {
+        "before": {
+          "normalCalls": 11928008,
+          "closestCalls": 4155919
+        },
+        "after": {
+          "normalCalls": 62324,
+          "closestCalls": 4155919
+        }
+      }
+    }
+  ],
+  "equivalence": [
+    {
+      "quality": "low",
+      "before": {
+        "pathHash": "e04b37d222641846c97ec6fc6c04010356050dcdbc19b8be62ad13b75f21cc27",
+        "paths": [
+          25,
+          25,
+          25,
+          25,
+          25,
+          25,
+          25,
+          25
+        ],
+        "diagnostics": {
+          "supported": true,
+          "mode": "triangle-attached",
+          "limitations": [
+            "Rigid transforms supported; rebuild after topology or morph/skinning changes.",
+            "Surface area distribution is fixed at creation; large later scale changes do not redistribute sources.",
+            "Short same-mesh surface crawls stop at boundaries; vines do not bridge separate character parts."
+          ],
+          "anchorCount": 214
+        },
+        "frameHash": "52295ecf4262032a4bca81b39295bbb43950194962240858ed60d546f491a79e",
+        "transformedHash": "1d4e79318d3583aac362a91ddda449e16e1e64d5fdc2ccae07db5fb16fb7a797",
+        "geometryMaterialHash": "46ead01f60b1e5f9bfa594e1db575b9921763da98da03658fb47f2144eb4eb11",
+        "counts": [
+          {
+            "name": "ActualSurfaceLeaves",
+            "count": 14
+          },
+          {
+            "name": "ActualSurfaceCrawlingVines",
+            "count": 192
+          }
+        ]
+      },
+      "after": {
+        "pathHash": "e04b37d222641846c97ec6fc6c04010356050dcdbc19b8be62ad13b75f21cc27",
+        "paths": [
+          25,
+          25,
+          25,
+          25,
+          25,
+          25,
+          25,
+          25
+        ],
+        "diagnostics": {
+          "supported": true,
+          "mode": "triangle-attached",
+          "limitations": [
+            "Rigid transforms supported; rebuild after topology or morph/skinning changes.",
+            "Surface area distribution is fixed at creation; large later scale changes do not redistribute sources.",
+            "Short same-mesh surface crawls stop at boundaries; vines do not bridge separate character parts."
+          ],
+          "anchorCount": 214
+        },
+        "frameHash": "52295ecf4262032a4bca81b39295bbb43950194962240858ed60d546f491a79e",
+        "transformedHash": "1d4e79318d3583aac362a91ddda449e16e1e64d5fdc2ccae07db5fb16fb7a797",
+        "geometryMaterialHash": "46ead01f60b1e5f9bfa594e1db575b9921763da98da03658fb47f2144eb4eb11",
+        "counts": [
+          {
+            "name": "ActualSurfaceLeaves",
+            "count": 14
+          },
+          {
+            "name": "ActualSurfaceCrawlingVines",
+            "count": 192
+          }
+        ]
+      }
+    },
+    {
+      "quality": "high",
+      "before": {
+        "pathHash": "e04b37d222641846c97ec6fc6c04010356050dcdbc19b8be62ad13b75f21cc27",
+        "paths": [
+          25,
+          25,
+          25,
+          25,
+          25,
+          25,
+          25,
+          25
+        ],
+        "diagnostics": {
+          "supported": true,
+          "mode": "triangle-attached",
+          "limitations": [
+            "Rigid transforms supported; rebuild after topology or morph/skinning changes.",
+            "Surface area distribution is fixed at creation; large later scale changes do not redistribute sources.",
+            "Short same-mesh surface crawls stop at boundaries; vines do not bridge separate character parts."
+          ],
+          "anchorCount": 222
+        },
+        "frameHash": "248489bca720a393538b76e1d6dee6e6a73a7471ea837688e48173671fbfb65b",
+        "transformedHash": "7128d1cd5c590b32dd20bf9f3313bb0d9eaeff525e9139ad5190eaab5a27f8e7",
+        "geometryMaterialHash": "4828c8c86ae2d5f5cb0386a482f9b265e9a3c30a2ed87a3d43f3e5fe08f0c480",
+        "counts": [
+          {
+            "name": "ActualSurfaceLeaves",
+            "count": 22
+          },
+          {
+            "name": "ActualSurfaceCrawlingVines",
+            "count": 192
+          }
+        ]
+      },
+      "after": {
+        "pathHash": "e04b37d222641846c97ec6fc6c04010356050dcdbc19b8be62ad13b75f21cc27",
+        "paths": [
+          25,
+          25,
+          25,
+          25,
+          25,
+          25,
+          25,
+          25
+        ],
+        "diagnostics": {
+          "supported": true,
+          "mode": "triangle-attached",
+          "limitations": [
+            "Rigid transforms supported; rebuild after topology or morph/skinning changes.",
+            "Surface area distribution is fixed at creation; large later scale changes do not redistribute sources.",
+            "Short same-mesh surface crawls stop at boundaries; vines do not bridge separate character parts."
+          ],
+          "anchorCount": 222
+        },
+        "frameHash": "248489bca720a393538b76e1d6dee6e6a73a7471ea837688e48173671fbfb65b",
+        "transformedHash": "7128d1cd5c590b32dd20bf9f3313bb0d9eaeff525e9139ad5190eaab5a27f8e7",
+        "geometryMaterialHash": "4828c8c86ae2d5f5cb0386a482f9b265e9a3c30a2ed87a3d43f3e5fe08f0c480",
+        "counts": [
+          {
+            "name": "ActualSurfaceLeaves",
+            "count": 22
+          },
+          {
+            "name": "ActualSurfaceCrawlingVines",
+            "count": 192
+          }
+        ]
+      }
+    }
+  ],
+  "fixtures": [
+    {
+      "label": "real-B",
+      "cases": 72,
+      "hash": "bef71213e528b93be82c3ee4ca2c21461aaae46c89b55cb94d1a51f89cb2f947"
+    },
+    {
+      "label": "indexed-boundary-plane",
+      "cases": 12,
+      "hash": "4cebc64996e85ca2072c15a5c51b53455af534eaedf53c265877d73fc98a7088"
+    },
+    {
+      "label": "non-indexed-sphere",
+      "cases": 12,
+      "hash": "d403042e23c3719a245623cee404c41587db2e5a72d475643e58c9182b88d536"
+    },
+    {
+      "label": "equal-distance-degenerate-multiple-mesh",
+      "cases": 12,
+      "hash": "33f2f5a6280a92d5b552691eb5d5178e053adfebcca159f8c1265e5618ec6c02"
+    }
+  ],
+  "errors": [],
+  "outbound": [],
+  "limits": [
+    "Same Chromium process and real neutral B GLB; synchronous effects creation only, excluding fetch/decode/render/dispose",
+    "Profiles instrument frozen baseline only; AB/BA timing uses uninstrumented modules",
+    "Two untimed warm-ups per variant and quality, seven paired samples; no mobile, cold-load, p95 or full-page claim",
+    "Original per-face arithmetic and strict tie order must be preserved; exact paths and rendered regression hashes are checked separately"
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "status": "PASS",
+  "baseline": "861584b5ffe1df41a8c8fcf0f948e3b1c20905e2",
+  "input": {
+    "threeRevision": "186",
+    "glbHash": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+    "positionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+    "uvHash": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+    "vertices": 33207,
+    "depth": 1.35
+  },
+  "productionScope": "Only lazy Float64 per-mesh face-normal reuse in MeshSurface.path; exact search order/arithmetic/candidates, no seed/quality/material/geometry changes.",
+  "cacheBytesPerRealBody": 1490976,
+  "performance": [
+    {
+      "run": 1,
+      "environment": {
+        "browser": "151.0.7922.173",
+        "node": "v24.19.0",
+        "three": "0.186.1"
+      },
+      "results": [
+        {
+          "quality": "low",
+          "beforeMedianMs": 463.29999999981374,
+          "afterMedianMs": 333.90000000037253,
+          "reductionPercent": 27.930066911179196,
+          "pairedSamples": 7,
+          "everyPairFaster": true,
+          "operations": {
+            "before": {
+              "normalCalls": 11928008,
+              "closestCalls": 4155919
+            },
+            "after": {
+              "normalCalls": 62324,
+              "closestCalls": 4155919
+            }
+          }
+        },
+        {
+          "quality": "high",
+          "beforeMedianMs": 413.29999999981374,
+          "afterMedianMs": 304.1000000005588,
+          "reductionPercent": 26.421485603509353,
+          "pairedSamples": 7,
+          "everyPairFaster": true,
+          "operations": {
+            "before": {
+              "normalCalls": 11928008,
+              "closestCalls": 4155919
+            },
+            "after": {
+              "normalCalls": 62324,
+              "closestCalls": 4155919
+            }
+          }
+        }
+      ],
+      "exactPathCases": 108,
+      "exactEffects": true
+    },
+    {
+      "run": 2,
+      "environment": {
+        "browser": "151.0.7922.173",
+        "node": "v24.19.0",
+        "three": "0.186.1"
+      },
+      "results": [
+        {
+          "quality": "low",
+          "beforeMedianMs": 560.8999999994412,
+          "afterMedianMs": 281,
+          "reductionPercent": 49.90194330535213,
+          "pairedSamples": 7,
+          "everyPairFaster": true,
+          "operations": {
+            "before": {
+              "normalCalls": 11928008,
+              "closestCalls": 4155919
+            },
+            "after": {
+              "normalCalls": 62324,
+              "closestCalls": 4155919
+            }
+          }
+        },
+        {
+          "quality": "high",
+          "beforeMedianMs": 408.3999999994412,
+          "afterMedianMs": 286.70000000018626,
+          "reductionPercent": 29.79921645431476,
+          "pairedSamples": 7,
+          "everyPairFaster": true,
+          "operations": {
+            "before": {
+              "normalCalls": 11928008,
+              "closestCalls": 4155919
+            },
+            "after": {
+              "normalCalls": 62324,
+              "closestCalls": 4155919
+            }
+          }
+        }
+      ],
+      "exactPathCases": 108,
+      "exactEffects": true
+    }
+  ],
+  "cpu": {
+    "passed": 25,
+    "failed": 0
+  },
+  "gpu": {
+    "cases": 20,
+    "createdOwnedBuffers": 2232,
+    "aliveOwnedBuffers": 0,
+    "undeletedOwnedBytes": 0,
+    "allOwnedBuffersDeletedExactlyOnce": true
+  },
+  "renderer": {
+    "cases": 23,
+    "equalBaselinePixelHashes": 23,
+    "checks": [
+      "20 actual GLB/material/effect renders at low and high quality; original position/UV/morph/depth/dimensions/pet spacing",
+      "absolute time produces identical repeated frames and exact time-zero reset",
+      "front/oblique/side keep original B and separate pet composition",
+      "after repeated load/replace/dispose, no model geometry remains and retained renderer/environment texture count stays stable",
+      "zero shader errors, browser errors or external requests",
+      "actual ElementalSpiritCanvas in Strict Mode/mobile viewport: seven material/effect families load, start paused, rotate with attachments and reset exactly",
+      "actual Canvas play/pause and WebGL context restoration resume drawing",
+      "actual Canvas unmount stops draws and removes the renderer"
+    ]
+  },
+  "depthPets": {
+    "checks": 6,
+    "animals": 12,
+    "qualities": 2
+  },
+  "commands": {
+    "typecheck": {
+      "command": "npx tsc --noEmit --incremental false",
+      "exitCode": 0
+    },
+    "lint": {
+      "command": "npx eslint lib/planet/mesh-surface.ts scripts/qa/ten-stem-vine-performance.mjs",
+      "exitCode": 0,
+      "errors": 0,
+      "warnings": 0
+    },
+    "build": {
+      "command": "npm run build",
+      "exitCode": 0,
+      "warnings": [
+        "Existing >500k client chunk",
+        "Existing vinext route classification warning"
+      ]
+    }
+  },
+  "limits": [
+    "Local real GLB/PNG browser tests on Chromium SwiftShader; physical mobile GPU/touch not tested",
+    "Timing excludes network/decode/render/dispose and is not a mobile/cold-load/p95/full-page latency measurement",
+    "API/DOM suites were not rerun for this source-only surface-path change",
+    "No main/maint changes, PR, deployment, credentials/permission changes or real user DB access"
+  ]
+}

@@ -73,6 +73,27 @@ Canvas의 모든 render에서 현재 절대 시간과 camera로 효과를 갱신
 
 같은 브라우저에서 乙 표면 효과 constructor를 이미 로드된 중립 B형 mesh에 3회씩 별도 호출했다. low는 `408.0 / 398.7 / 544.1ms`, high는 `508.2 / 451.4 / 449.6ms`였다. 이 구간은 sampler/path/initial update를 포함하지만 네트워크·GLB 및 이미지 디코드·GPU 렌더는 제외한다. 선행 20개 case 뒤 같은 local 테스트 환경에서 별도 한 번의 loader 구간은 low `572.9ms`, high `636.0ms`로 해당 I/O·rest binding·효과 생성도 포함한다. 제한된 환경/표본이며 모바일 시간, 전체 CPU case 시간, p95 또는 cold load 시간으로 일반화하지 않는다. 이번 후속 수정에서는 생성 알고리즘 최적화를 하지 않는다.
 
+## 乙 생성 비용 후속 개선
+
+다음 개선의 비교 기준은 GPU 정리 수정이 끝난 `861584b5ffe1df41a8c8fcf0f948e3b1c20905e2`이다. 변경 전 실제 중립 B GLB로 단계별 계측을 먼저 수행했다. 유효 삼각형은 62,124개였으며, sampler constructor는 `20.1–78.2ms`, 경로 검색은 `404.0–687.0ms`였다. 6회 profile에서 8개 × 24단계 경로 검색이 생성 시간의 `88.6–95.4%`를 차지했다. leaf sampling, initial attachment resolution, 나머지 geometry/material 생성 비용은 상대적으로 작았다.
+
+production 변경은 `MeshSurface.path()`에서 같은 삼각형 법선을 다시 계산하는 부분에 한정한다. 처음 crawl하는 mesh의 법선을 원래 `THREE.Triangle.getNormal()`으로 계산해 `Float64Array`에 저장하고, 이후 동일 값을 읽는다. 원본 face 좌표는 sampler가 보관하는 불변 local 사본이므로 rigid 표시 변환과 무관하다. Float32로 줄이지 않으며, 원래 face 순서, facing 조건, 최근접점 계산, 엄격한 `<` tie 처리, barycentric 계산, 길이/24단계, material/geometry/update 로직을 유지한다. 검색 근사화, face 생략, seed 변경이나 품질 축소는 없다. 다른 stem은 path를 호출하지 않아 법선 배열을 할당하지 않는다. 실제 B형 캐시 배열의 CPU 저장 공간은 `1,490,976 bytes`이며 sampler 수명 동안 유지된다. GPU 속성/버퍼는 추가하지 않는다.
+
+`scripts/qa/ten-stem-vine-performance.mjs`는 Git에서 기준 코드를 읽어 QA JS snapshot으로 만들고, 같은 브라우저의 같은 GLB/변환/quality에 전후 constructor를 호출한다. profile 계측은 별도 baseline 모듈에만 적용한다. 성능 비교는 계측하지 않은 모듈을 사용하고 variant/quality마다 2회 준비 호출 후 7쌍을 AB/BA 순서로 번갈아 실행한다. 호출 수를 세는 Three prototype 계측은 **모든 timing 이후**에만 설치한다. 비교 중 다른 자체 빌드·검사는 실행하지 않았다. Chromium `151.0.7922.173`, Node `v24.19.0`, Three `0.186.1`로 새 브라우저를 두 번 실행했다.
+
+| 새 브라우저 실행 | quality | 변경 전 중앙값 | 변경 후 중앙값 | 감소 |
+| --- | --- | --- | --- | --- |
+| 1 | low | 463.3ms | 333.9ms | 27.9% |
+| 1 | high | 413.3ms | 304.1ms | 26.4% |
+| 2 | low | 560.9ms | 281.0ms | 49.9% |
+| 2 | high | 408.4ms | 286.7ms | 29.8% |
+
+28개 비교 쌍 모두 변경 후가 빨랐다. 각 quality에서 법선 계산은 `11,928,008 → 62,324`회로 줄고, 최근접점 계산은 전후 모두 `4,155,919`회였다. 8개 path의 triangle/barycentric hash, 0/2.25/7.5초 및 rigid 변환 후 instance 행렬, effect geometry/material/diagnostics가 모두 정확히 일치했다. 실제 B seed/길이 72개, indexed boundary plane 12개, non-indexed sphere 12개, 같은 거리 tie·퇴화 triangle·여러 mesh 12개, 합계 108개 추가 경로 비교도 일치했다.
+
+원시 profile과 두 비교 실행은 [성능 검증 근거](qa/ten-stem-rebuild/vine-performance/)에 보존한다. 표의 시간은 이미 파싱한 GLB에서 동기 effects 생성만 측정하며 fetch/이미지·GLB decode/render/dispose를 제외한다. 공유 실행 환경의 편차를 포함한 제한된 표본이며 모바일, cold load, p95, 페이지 전체 로딩 시간이나 이전 3회 측정값에 대한 직접 비율로 일반화하지 않는다.
+
+후속 회귀도 새로 실행했다. 실제 GLB CPU 25/25, GPU buffer lifecycle 20개·소유 버퍼 2,232개 각각 1회 삭제·잔존 0, renderer 23개와 [기준 pixel hash 23개 일치](qa/ten-stem-rebuild/vine-performance/pixel-comparison.json), 실제 Canvas 7개 유형의 일시정지/drag/reset·재생·context 복구·unmount, 깊이/pet 6개·12종 × low/high가 통과했다. 타입, 변경된 두 소스/QA 파일 lint(오류/경고 0), 빌드도 통과했다. 기존 큰 chunk 및 route 분류 경고는 남아 있다. API/DOM 전체 suite는 이 성능 변경에서 재실행하지 않았으며 앞선 재제작 기록과 구분한다. 실물 모바일 GPU/터치 기기, hosted 로그인, 실제 사용자 DB와 배포는 실행하지 않았다.
+
 ```sh
 node scripts/sync-approved-jade-assets.mjs
 node scripts/qa/ten-stem-materials.mjs
@@ -86,6 +107,8 @@ SAJU_QA_PLAYWRIGHT_PATH=/path/to/playwright/index.mjs \
 SAJU_QA_CHROME=/path/to/chromium node scripts/qa/ten-stem-browser.mjs
 SAJU_QA_PLAYWRIGHT_PATH=/path/to/playwright/index.mjs \
 SAJU_QA_CHROME=/path/to/chromium node scripts/qa/ten-stem-buffer-lifecycle.mjs
+SAJU_QA_PLAYWRIGHT_PATH=/path/to/playwright/index.mjs \
+SAJU_QA_CHROME=/path/to/chromium node scripts/qa/ten-stem-vine-performance.mjs
 SAJU_QA_PLAYWRIGHT_PATH=/path/to/playwright/index.mjs \
 SAJU_QA_CHROME=/path/to/chromium node scripts/qa/spirit-depth-pets.mjs
 ```

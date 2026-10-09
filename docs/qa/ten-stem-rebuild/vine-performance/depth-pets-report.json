@@ -1,0 +1,6555 @@
+{
+  "status": "PASS",
+  "checks": [
+    "real body gains depth with original X/Y, mesh-local positions and neutral morphs preserved",
+    "eyes remain attached to the body surface",
+    "front/oblique/side composition keeps the companion separate",
+    "all 12 day branches have distinct matte animal placeholders in both qualities",
+    "changing the month affects background identity, not the day animal",
+    "legacy factory no longer creates the month elemental pet"
+  ],
+  "errors": [],
+  "results": [
+    {
+      "day": "을축",
+      "month": "병인",
+      "quality": "high",
+      "legacy": false,
+      "angle": 0,
+      "dimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "localPositionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyBox": {
+        "min": [
+          -1.2972494792938232,
+          -0.011906229890882969,
+          -0.6419113844633103
+        ],
+        "max": [
+          0.4572634267807007,
+          2.372891664505005,
+          0.6419489219784738
+        ]
+      },
+      "petBox": {
+        "min": [
+          0.8534069563203984,
+          6.938893903907228e-18,
+          -0.2218306198578812
+        ],
+        "max": [
+          1.3561198545219826,
+          0.657025493022098,
+          0.43860718675724536
+        ]
+      },
+      "petData": {
+        "pillarRole": "day-branch",
+        "branch": "축",
+        "animal": "ox",
+        "assetStatus": "procedural-placeholder"
+      },
+      "mapping": {
+        "bodyStem": "을",
+        "bodyBranch": "축",
+        "petBranch": "축",
+        "backgroundStem": "병",
+        "backgroundBranch": "인"
+      },
+      "faces": [
+        {
+          "name": "B_|_almond_gaze_-1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.061134571427371
+        },
+        {
+          "name": "B_|_almond_gaze_1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.06114388207320587
+        }
+      ],
+      "petEyes": [
+        {
+          "name": "ox-eye",
+          "firstHit": "ox-eye"
+        },
+        {
+          "name": "ox-eye",
+          "firstHit": "ox-eye"
+        }
+      ],
+      "petMeshes": [
+        {
+          "name": "ox-head",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-broad-snout",
+          "color": "e4d6bc",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-side-ear",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-outward-horn",
+          "color": "e4d6bc",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-nostril",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-side-ear",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-outward-horn",
+          "color": "e4d6bc",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-nostril",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-body",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-leg",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-hoof",
+          "color": "534335",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-leg",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-hoof",
+          "color": "534335",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-leg",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-hoof",
+          "color": "534335",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-leg",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-hoof",
+          "color": "534335",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-tail",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-tail-tuft",
+          "color": "534335",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        }
+      ],
+      "bodyMorphs": [
+        0
+      ],
+      "pillarRoles": {
+        "body": "day-stem",
+        "pet": "day-branch",
+        "background": "month-pillar"
+      },
+      "modelScale": [
+        1,
+        1,
+        1.35
+      ],
+      "draws": 31,
+      "triangles": 79628
+    },
+    {
+      "day": "을축",
+      "month": "병인",
+      "quality": "high",
+      "legacy": false,
+      "angle": 0.7853981633974483,
+      "dimensions": [
+        1.4932122507176941,
+        2.384797894395888,
+        1.4932679572610426
+      ],
+      "localPositionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyBox": {
+        "min": [
+          -1.0738171162025356,
+          -0.011906229890882969,
+          -0.6538615927180982
+        ],
+        "max": [
+          0.4193951345151585,
+          2.372891664505005,
+          0.8394063645429444
+        ]
+      },
+      "petBox": {
+        "min": [
+          0.8534069563203984,
+          6.938893903907228e-18,
+          -0.2218306198578812
+        ],
+        "max": [
+          1.3561198545219826,
+          0.657025493022098,
+          0.43860718675724536
+        ]
+      },
+      "petData": {
+        "pillarRole": "day-branch",
+        "branch": "축",
+        "animal": "ox",
+        "assetStatus": "procedural-placeholder"
+      },
+      "mapping": {
+        "bodyStem": "을",
+        "bodyBranch": "축",
+        "petBranch": "축",
+        "backgroundStem": "병",
+        "backgroundBranch": "인"
+      },
+      "faces": [
+        {
+          "name": "B_|_almond_gaze_-1",
+          "scale": [
+            0.11800000072585429,
+            0.05700000003492196,
+            0.039149998873472217
+          ],
+          "surfaceGap": null
+        },
+        {
+          "name": "B_|_almond_gaze_1",
+          "scale": [
+            0.11800000072585429,
+            0.05700000003492196,
+            0.039149998873472217
+          ],
+          "surfaceGap": null
+        }
+      ],
+      "petEyes": [
+        {
+          "name": "ox-eye",
+          "firstHit": "ox-eye"
+        },
+        {
+          "name": "ox-eye",
+          "firstHit": "ox-eye"
+        }
+      ],
+      "petMeshes": [
+        {
+          "name": "ox-head",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-broad-snout",
+          "color": "e4d6bc",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-side-ear",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-outward-horn",
+          "color": "e4d6bc",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-nostril",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-side-ear",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-outward-horn",
+          "color": "e4d6bc",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-nostril",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-body",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-leg",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-hoof",
+          "color": "534335",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-leg",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-hoof",
+          "color": "534335",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-leg",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-hoof",
+          "color": "534335",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-leg",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-hoof",
+          "color": "534335",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-tail",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-tail-tuft",
+          "color": "534335",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        }
+      ],
+      "bodyMorphs": [
+        0
+      ],
+      "pillarRoles": {
+        "body": "day-stem",
+        "pet": "day-branch",
+        "background": "month-pillar"
+      },
+      "modelScale": [
+        1,
+        1,
+        1.35
+      ],
+      "draws": 31,
+      "triangles": 79628
+    },
+    {
+      "day": "을축",
+      "month": "병인",
+      "quality": "high",
+      "legacy": false,
+      "angle": 1.5707963267948966,
+      "dimensions": [
+        1.2838603064417842,
+        2.384797894395888,
+        1.754512906074524
+      ],
+      "localPositionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyBox": {
+        "min": [
+          -1.0619113844633103,
+          -0.011906229890882969,
+          -0.8772634267807007
+        ],
+        "max": [
+          0.22194892197847377,
+          2.372891664505005,
+          0.8772494792938232
+        ]
+      },
+      "petBox": {
+        "min": [
+          0.8534069563203984,
+          6.938893903907228e-18,
+          -0.2218306198578812
+        ],
+        "max": [
+          1.3561198545219826,
+          0.657025493022098,
+          0.43860718675724536
+        ]
+      },
+      "petData": {
+        "pillarRole": "day-branch",
+        "branch": "축",
+        "animal": "ox",
+        "assetStatus": "procedural-placeholder"
+      },
+      "mapping": {
+        "bodyStem": "을",
+        "bodyBranch": "축",
+        "petBranch": "축",
+        "backgroundStem": "병",
+        "backgroundBranch": "인"
+      },
+      "faces": [
+        {
+          "name": "B_|_almond_gaze_-1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": null
+        },
+        {
+          "name": "B_|_almond_gaze_1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": null
+        }
+      ],
+      "petEyes": [
+        {
+          "name": "ox-eye",
+          "firstHit": "ox-eye"
+        },
+        {
+          "name": "ox-eye",
+          "firstHit": "ox-eye"
+        }
+      ],
+      "petMeshes": [
+        {
+          "name": "ox-head",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-broad-snout",
+          "color": "e4d6bc",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-side-ear",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-outward-horn",
+          "color": "e4d6bc",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-nostril",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-side-ear",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-outward-horn",
+          "color": "e4d6bc",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-nostril",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-body",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-leg",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-hoof",
+          "color": "534335",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-leg",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-hoof",
+          "color": "534335",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-leg",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-hoof",
+          "color": "534335",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-leg",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-hoof",
+          "color": "534335",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-tail",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-tail-tuft",
+          "color": "534335",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        }
+      ],
+      "bodyMorphs": [
+        0
+      ],
+      "pillarRoles": {
+        "body": "day-stem",
+        "pet": "day-branch",
+        "background": "month-pillar"
+      },
+      "modelScale": [
+        1,
+        1,
+        1.35
+      ],
+      "draws": 31,
+      "triangles": 79628
+    },
+    {
+      "day": "갑자",
+      "month": "병인",
+      "quality": "high",
+      "legacy": false,
+      "angle": 0,
+      "dimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "localPositionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyBox": {
+        "min": [
+          -1.2972494792938232,
+          -0.011906229890882969,
+          -0.6419113844633103
+        ],
+        "max": [
+          0.4572634267807007,
+          2.372891664505005,
+          0.6419489219784738
+        ]
+      },
+      "petBox": {
+        "min": [
+          0.8843748974641092,
+          0,
+          -0.2043769618795302
+        ],
+        "max": [
+          1.3814116861452297,
+          0.656276032777732,
+          0.4600040655740195
+        ]
+      },
+      "petData": {
+        "pillarRole": "day-branch",
+        "branch": "자",
+        "animal": "rat",
+        "assetStatus": "procedural-placeholder"
+      },
+      "mapping": {
+        "bodyStem": "갑",
+        "bodyBranch": "자",
+        "petBranch": "자",
+        "backgroundStem": "병",
+        "backgroundBranch": "인"
+      },
+      "faces": [
+        {
+          "name": "B_|_almond_gaze_-1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.061134571427371
+        },
+        {
+          "name": "B_|_almond_gaze_1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.06114388207320587
+        }
+      ],
+      "petEyes": [
+        {
+          "name": "rat-eye",
+          "firstHit": "rat-eye"
+        },
+        {
+          "name": "rat-eye",
+          "firstHit": "rat-eye"
+        }
+      ],
+      "petMeshes": [
+        {
+          "name": "rat-head",
+          "color": "8d9498",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rat-round-ear",
+          "color": "8d9498",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rat-ear-lining",
+          "color": "d9bbbd",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rat-round-ear",
+          "color": "8d9498",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rat-ear-lining",
+          "color": "d9bbbd",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rat-muzzle",
+          "color": "d9bbbd",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rat-nose",
+          "color": "655451",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rat-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rat-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rat-body",
+          "color": "8d9498",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rat-paw",
+          "color": "8d9498",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rat-paw",
+          "color": "8d9498",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rat-paw",
+          "color": "8d9498",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rat-paw",
+          "color": "8d9498",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rat-long-tail",
+          "color": "d9bbbd",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        }
+      ],
+      "bodyMorphs": [
+        0
+      ],
+      "pillarRoles": {
+        "body": "day-stem",
+        "pet": "day-branch",
+        "background": "month-pillar"
+      },
+      "modelScale": [
+        1,
+        1,
+        1.35
+      ],
+      "draws": 28,
+      "triangles": 99300
+    },
+    {
+      "day": "을축",
+      "month": "병인",
+      "quality": "high",
+      "legacy": false,
+      "angle": 0,
+      "dimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "localPositionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyBox": {
+        "min": [
+          -1.2972494792938232,
+          -0.011906229890882969,
+          -0.6419113844633103
+        ],
+        "max": [
+          0.4572634267807007,
+          2.372891664505005,
+          0.6419489219784738
+        ]
+      },
+      "petBox": {
+        "min": [
+          0.8534069563203984,
+          6.938893903907228e-18,
+          -0.2218306198578812
+        ],
+        "max": [
+          1.3561198545219826,
+          0.657025493022098,
+          0.43860718675724536
+        ]
+      },
+      "petData": {
+        "pillarRole": "day-branch",
+        "branch": "축",
+        "animal": "ox",
+        "assetStatus": "procedural-placeholder"
+      },
+      "mapping": {
+        "bodyStem": "을",
+        "bodyBranch": "축",
+        "petBranch": "축",
+        "backgroundStem": "병",
+        "backgroundBranch": "인"
+      },
+      "faces": [
+        {
+          "name": "B_|_almond_gaze_-1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.061134571427371
+        },
+        {
+          "name": "B_|_almond_gaze_1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.06114388207320587
+        }
+      ],
+      "petEyes": [
+        {
+          "name": "ox-eye",
+          "firstHit": "ox-eye"
+        },
+        {
+          "name": "ox-eye",
+          "firstHit": "ox-eye"
+        }
+      ],
+      "petMeshes": [
+        {
+          "name": "ox-head",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-broad-snout",
+          "color": "e4d6bc",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-side-ear",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-outward-horn",
+          "color": "e4d6bc",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-nostril",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-side-ear",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-outward-horn",
+          "color": "e4d6bc",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-nostril",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-body",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-leg",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-hoof",
+          "color": "534335",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-leg",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-hoof",
+          "color": "534335",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-leg",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-hoof",
+          "color": "534335",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-leg",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-hoof",
+          "color": "534335",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-tail",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-tail-tuft",
+          "color": "534335",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        }
+      ],
+      "bodyMorphs": [
+        0
+      ],
+      "pillarRoles": {
+        "body": "day-stem",
+        "pet": "day-branch",
+        "background": "month-pillar"
+      },
+      "modelScale": [
+        1,
+        1,
+        1.35
+      ],
+      "draws": 31,
+      "triangles": 79628
+    },
+    {
+      "day": "갑인",
+      "month": "병인",
+      "quality": "high",
+      "legacy": false,
+      "angle": 0,
+      "dimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "localPositionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyBox": {
+        "min": [
+          -1.2972494792938232,
+          -0.011906229890882969,
+          -0.6419113844633103
+        ],
+        "max": [
+          0.4572634267807007,
+          2.372891664505005,
+          0.6419489219784738
+        ]
+      },
+      "petBox": {
+        "min": [
+          0.9165379800332171,
+          0,
+          -0.2382898256370694
+        ],
+        "max": [
+          1.3203107368442581,
+          0.6563430358983482,
+          0.4488104786552114
+        ]
+      },
+      "petData": {
+        "pillarRole": "day-branch",
+        "branch": "인",
+        "animal": "tiger",
+        "assetStatus": "procedural-placeholder"
+      },
+      "mapping": {
+        "bodyStem": "갑",
+        "bodyBranch": "인",
+        "petBranch": "인",
+        "backgroundStem": "병",
+        "backgroundBranch": "인"
+      },
+      "faces": [
+        {
+          "name": "B_|_almond_gaze_-1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.061134571427371
+        },
+        {
+          "name": "B_|_almond_gaze_1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.06114388207320587
+        }
+      ],
+      "petEyes": [
+        {
+          "name": "tiger-eye",
+          "firstHit": "tiger-eye"
+        },
+        {
+          "name": "tiger-eye",
+          "firstHit": "tiger-eye"
+        }
+      ],
+      "petMeshes": [
+        {
+          "name": "tiger-head",
+          "color": "dca257",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-round-ear",
+          "color": "3d3831",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-ear-center",
+          "color": "eee1c8",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-cheek-stripe",
+          "color": "3d3831",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-cheek-stripe",
+          "color": "3d3831",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-cheek-stripe",
+          "color": "3d3831",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-round-ear",
+          "color": "3d3831",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-ear-center",
+          "color": "eee1c8",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-cheek-stripe",
+          "color": "3d3831",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-cheek-stripe",
+          "color": "3d3831",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-cheek-stripe",
+          "color": "3d3831",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-muzzle",
+          "color": "eee1c8",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-nose",
+          "color": "655451",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-body",
+          "color": "dca257",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-paw",
+          "color": "dca257",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-paw",
+          "color": "dca257",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-paw",
+          "color": "dca257",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-paw",
+          "color": "dca257",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-body-stripe",
+          "color": "3d3831",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-body-stripe",
+          "color": "3d3831",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-body-stripe",
+          "color": "3d3831",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-body-stripe",
+          "color": "3d3831",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-body-stripe",
+          "color": "3d3831",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-body-stripe",
+          "color": "3d3831",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-striped-tail",
+          "color": "dca257",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-tail-tip",
+          "color": "3d3831",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        }
+      ],
+      "bodyMorphs": [
+        0
+      ],
+      "pillarRoles": {
+        "body": "day-stem",
+        "pet": "day-branch",
+        "background": "month-pillar"
+      },
+      "modelScale": [
+        1,
+        1,
+        1.35
+      ],
+      "draws": 41,
+      "triangles": 104448
+    },
+    {
+      "day": "을묘",
+      "month": "병인",
+      "quality": "high",
+      "legacy": false,
+      "angle": 0,
+      "dimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "localPositionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyBox": {
+        "min": [
+          -1.2972494792938232,
+          -0.011906229890882969,
+          -0.6419113844633103
+        ],
+        "max": [
+          0.4572634267807007,
+          2.372891664505005,
+          0.6419489219784738
+        ]
+      },
+      "petBox": {
+        "min": [
+          0.9817543000201948,
+          0,
+          -0.1294516143236667
+        ],
+        "max": [
+          1.2182456999798055,
+          0.6550457184600483,
+          0.3639575636221168
+        ]
+      },
+      "petData": {
+        "pillarRole": "day-branch",
+        "branch": "묘",
+        "animal": "rabbit",
+        "assetStatus": "procedural-placeholder"
+      },
+      "mapping": {
+        "bodyStem": "을",
+        "bodyBranch": "묘",
+        "petBranch": "묘",
+        "backgroundStem": "병",
+        "backgroundBranch": "인"
+      },
+      "faces": [
+        {
+          "name": "B_|_almond_gaze_-1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.061134571427371
+        },
+        {
+          "name": "B_|_almond_gaze_1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.06114388207320587
+        }
+      ],
+      "petEyes": [
+        {
+          "name": "rabbit-eye",
+          "firstHit": "rabbit-eye"
+        },
+        {
+          "name": "rabbit-eye",
+          "firstHit": "rabbit-eye"
+        }
+      ],
+      "petMeshes": [
+        {
+          "name": "rabbit-head",
+          "color": "e7e5dc",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rabbit-long-ear",
+          "color": "e7e5dc",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rabbit-inner-ear",
+          "color": "cdaeb1",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rabbit-long-ear",
+          "color": "e7e5dc",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rabbit-inner-ear",
+          "color": "cdaeb1",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rabbit-muzzle",
+          "color": "e7e5dc",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rabbit-nose",
+          "color": "655451",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rabbit-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rabbit-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rabbit-body",
+          "color": "e7e5dc",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rabbit-paw",
+          "color": "e7e5dc",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rabbit-paw",
+          "color": "e7e5dc",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rabbit-paw",
+          "color": "e7e5dc",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rabbit-paw",
+          "color": "e7e5dc",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rabbit-cotton-tail",
+          "color": "e7e5dc",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        }
+      ],
+      "bodyMorphs": [
+        0
+      ],
+      "pillarRoles": {
+        "body": "day-stem",
+        "pet": "day-branch",
+        "background": "month-pillar"
+      },
+      "modelScale": [
+        1,
+        1,
+        1.35
+      ],
+      "draws": 25,
+      "triangles": 78296
+    },
+    {
+      "day": "갑진",
+      "month": "병인",
+      "quality": "high",
+      "legacy": false,
+      "angle": 0,
+      "dimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "localPositionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyBox": {
+        "min": [
+          -1.2972494792938232,
+          -0.011906229890882969,
+          -0.6419113844633103
+        ],
+        "max": [
+          0.4572634267807007,
+          2.372891664505005,
+          0.6419489219784738
+        ]
+      },
+      "petBox": {
+        "min": [
+          0.9124274938601225,
+          6.938893903907228e-18,
+          -0.2651425134696952
+        ],
+        "max": [
+          1.3245358693574336,
+          0.6550505417394358,
+          0.45839257549312357
+        ]
+      },
+      "petData": {
+        "pillarRole": "day-branch",
+        "branch": "진",
+        "animal": "dragon",
+        "assetStatus": "procedural-placeholder"
+      },
+      "mapping": {
+        "bodyStem": "갑",
+        "bodyBranch": "진",
+        "petBranch": "진",
+        "backgroundStem": "병",
+        "backgroundBranch": "인"
+      },
+      "faces": [
+        {
+          "name": "B_|_almond_gaze_-1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.061134571427371
+        },
+        {
+          "name": "B_|_almond_gaze_1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.06114388207320587
+        }
+      ],
+      "petEyes": [
+        {
+          "name": "dragon-eye",
+          "firstHit": "dragon-eye"
+        },
+        {
+          "name": "dragon-eye",
+          "firstHit": "dragon-eye"
+        }
+      ],
+      "petMeshes": [
+        {
+          "name": "dragon-head",
+          "color": "658b96",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dragon-long-snout",
+          "color": "d4cbb7",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dragon-antler",
+          "color": "d4cbb7",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dragon-antler-fork",
+          "color": "d4cbb7",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dragon-antler",
+          "color": "d4cbb7",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dragon-antler-fork",
+          "color": "d4cbb7",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dragon-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dragon-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dragon-serpentine-body",
+          "color": "658b96",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dragon-small-arm",
+          "color": "658b96",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dragon-claw",
+          "color": "d4cbb7",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dragon-foot",
+          "color": "d4cbb7",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dragon-small-arm",
+          "color": "658b96",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dragon-claw",
+          "color": "d4cbb7",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dragon-foot",
+          "color": "d4cbb7",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dragon-tapered-tail",
+          "color": "486873",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        }
+      ],
+      "bodyMorphs": [
+        0
+      ],
+      "pillarRoles": {
+        "body": "day-stem",
+        "pet": "day-branch",
+        "background": "month-pillar"
+      },
+      "modelScale": [
+        1,
+        1,
+        1.35
+      ],
+      "draws": 29,
+      "triangles": 98652
+    },
+    {
+      "day": "을사",
+      "month": "병인",
+      "quality": "high",
+      "legacy": false,
+      "angle": 0,
+      "dimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "localPositionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyBox": {
+        "min": [
+          -1.2972494792938232,
+          -0.011906229890882969,
+          -0.6419113844633103
+        ],
+        "max": [
+          0.4572634267807007,
+          2.372891664505005,
+          0.6419489219784738
+        ]
+      },
+      "petBox": {
+        "min": [
+          0.7906871349883522,
+          0,
+          -0.14354377233125298
+        ],
+        "max": [
+          1.4106871349883523,
+          0.44702376323239984,
+          0.4606896074422743
+        ]
+      },
+      "petData": {
+        "pillarRole": "day-branch",
+        "branch": "사",
+        "animal": "snake",
+        "assetStatus": "procedural-placeholder"
+      },
+      "mapping": {
+        "bodyStem": "을",
+        "bodyBranch": "사",
+        "petBranch": "사",
+        "backgroundStem": "병",
+        "backgroundBranch": "인"
+      },
+      "faces": [
+        {
+          "name": "B_|_almond_gaze_-1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.061134571427371
+        },
+        {
+          "name": "B_|_almond_gaze_1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.06114388207320587
+        }
+      ],
+      "petEyes": [
+        {
+          "name": "snake-eye",
+          "firstHit": "snake-eye"
+        },
+        {
+          "name": "snake-eye",
+          "firstHit": "snake-eye"
+        }
+      ],
+      "petMeshes": [
+        {
+          "name": "snake-head",
+          "color": "929b65",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "snake-chin",
+          "color": "d7d4ab",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "snake-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "snake-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "snake-coiled-body",
+          "color": "929b65",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "snake-back-mark",
+          "color": "67734b",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "snake-back-mark",
+          "color": "67734b",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "snake-back-mark",
+          "color": "67734b",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "snake-back-mark",
+          "color": "67734b",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "snake-back-mark",
+          "color": "67734b",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        }
+      ],
+      "bodyMorphs": [
+        0
+      ],
+      "pillarRoles": {
+        "body": "day-stem",
+        "pet": "day-branch",
+        "background": "month-pillar"
+      },
+      "modelScale": [
+        1,
+        1,
+        1.35
+      ],
+      "draws": 20,
+      "triangles": 76432
+    },
+    {
+      "day": "갑오",
+      "month": "병인",
+      "quality": "high",
+      "legacy": false,
+      "angle": 0,
+      "dimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "localPositionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyBox": {
+        "min": [
+          -1.2972494792938232,
+          -0.011906229890882969,
+          -0.6419113844633103
+        ],
+        "max": [
+          0.4572634267807007,
+          2.372891664505005,
+          0.6419489219784738
+        ]
+      },
+      "petBox": {
+        "min": [
+          0.98128759764358,
+          6.938893903907228e-18,
+          -0.16488385262172395
+        ],
+        "max": [
+          1.2187124023564202,
+          0.6549429771469407,
+          0.4289922291933174
+        ]
+      },
+      "petData": {
+        "pillarRole": "day-branch",
+        "branch": "오",
+        "animal": "horse",
+        "assetStatus": "procedural-placeholder"
+      },
+      "mapping": {
+        "bodyStem": "갑",
+        "bodyBranch": "오",
+        "petBranch": "오",
+        "backgroundStem": "병",
+        "backgroundBranch": "인"
+      },
+      "faces": [
+        {
+          "name": "B_|_almond_gaze_-1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.061134571427371
+        },
+        {
+          "name": "B_|_almond_gaze_1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.06114388207320587
+        }
+      ],
+      "petEyes": [
+        {
+          "name": "horse-eye",
+          "firstHit": "horse-eye"
+        },
+        {
+          "name": "horse-eye",
+          "firstHit": "horse-eye"
+        }
+      ],
+      "petMeshes": [
+        {
+          "name": "horse-head",
+          "color": "a17656",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "horse-long-muzzle",
+          "color": "a17656",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "horse-pointed-ear",
+          "color": "a17656",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "horse-pointed-ear",
+          "color": "a17656",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "horse-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "horse-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "horse-body",
+          "color": "a17656",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "horse-leg",
+          "color": "a17656",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "horse-hoof",
+          "color": "d8c4a9",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "horse-leg",
+          "color": "a17656",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "horse-hoof",
+          "color": "d8c4a9",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "horse-leg",
+          "color": "a17656",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "horse-hoof",
+          "color": "d8c4a9",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "horse-leg",
+          "color": "a17656",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "horse-hoof",
+          "color": "d8c4a9",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "horse-upright-neck",
+          "color": "a17656",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "horse-mane",
+          "color": "483d35",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "horse-mane",
+          "color": "483d35",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "horse-mane",
+          "color": "483d35",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "horse-mane",
+          "color": "483d35",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "horse-long-tail",
+          "color": "483d35",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        }
+      ],
+      "bodyMorphs": [
+        0
+      ],
+      "pillarRoles": {
+        "body": "day-stem",
+        "pet": "day-branch",
+        "background": "month-pillar"
+      },
+      "modelScale": [
+        1,
+        1,
+        1.35
+      ],
+      "draws": 34,
+      "triangles": 100284
+    },
+    {
+      "day": "을미",
+      "month": "병인",
+      "quality": "high",
+      "legacy": false,
+      "angle": 0,
+      "dimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "localPositionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyBox": {
+        "min": [
+          -1.2972494792938232,
+          -0.011906229890882969,
+          -0.6419113844633103
+        ],
+        "max": [
+          0.4572634267807007,
+          2.372891664505005,
+          0.6419489219784738
+        ]
+      },
+      "petBox": {
+        "min": [
+          0.8383178593537428,
+          0,
+          -0.11879806343110545
+        ],
+        "max": [
+          1.358892632290825,
+          0.6513692683034703,
+          0.4669107415159612
+        ]
+      },
+      "petData": {
+        "pillarRole": "day-branch",
+        "branch": "미",
+        "animal": "sheep",
+        "assetStatus": "procedural-placeholder"
+      },
+      "mapping": {
+        "bodyStem": "을",
+        "bodyBranch": "미",
+        "petBranch": "미",
+        "backgroundStem": "병",
+        "backgroundBranch": "인"
+      },
+      "faces": [
+        {
+          "name": "B_|_almond_gaze_-1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.061134571427371
+        },
+        {
+          "name": "B_|_almond_gaze_1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.06114388207320587
+        }
+      ],
+      "petEyes": [
+        {
+          "name": "sheep-eye",
+          "firstHit": "sheep-eye"
+        },
+        {
+          "name": "sheep-eye",
+          "firstHit": "sheep-eye"
+        }
+      ],
+      "petMeshes": [
+        {
+          "name": "sheep-head",
+          "color": "e6dfca",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-curled-horn",
+          "color": "a18d74",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-low-ear",
+          "color": "c7bea6",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-curled-horn",
+          "color": "a18d74",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-low-ear",
+          "color": "c7bea6",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-muzzle",
+          "color": "a18d74",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-nose",
+          "color": "655451",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-body",
+          "color": "e6dfca",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-paw",
+          "color": "e6dfca",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-paw",
+          "color": "e6dfca",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-paw",
+          "color": "e6dfca",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-paw",
+          "color": "e6dfca",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-wool-curl",
+          "color": "e6dfca",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-wool-curl",
+          "color": "e6dfca",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-wool-curl",
+          "color": "e6dfca",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-wool-curl",
+          "color": "e6dfca",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-wool-curl",
+          "color": "e6dfca",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-wool-curl",
+          "color": "e6dfca",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-wool-curl",
+          "color": "e6dfca",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-wool-curl",
+          "color": "e6dfca",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-wool-curl",
+          "color": "e6dfca",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        }
+      ],
+      "bodyMorphs": [
+        0
+      ],
+      "pillarRoles": {
+        "body": "day-stem",
+        "pet": "day-branch",
+        "background": "month-pillar"
+      },
+      "modelScale": [
+        1,
+        1,
+        1.35
+      ],
+      "draws": 33,
+      "triangles": 81696
+    },
+    {
+      "day": "갑신",
+      "month": "병인",
+      "quality": "high",
+      "legacy": false,
+      "angle": 0,
+      "dimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "localPositionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyBox": {
+        "min": [
+          -1.2972494792938232,
+          -0.011906229890882969,
+          -0.6419113844633103
+        ],
+        "max": [
+          0.4572634267807007,
+          2.372891664505005,
+          0.6419489219784738
+        ]
+      },
+      "petBox": {
+        "min": [
+          0.8481812645993816,
+          0,
+          -0.2703854022792183
+        ],
+        "max": [
+          1.389486898602769,
+          0.6474603749704072,
+          0.4669107415159612
+        ]
+      },
+      "petData": {
+        "pillarRole": "day-branch",
+        "branch": "신",
+        "animal": "monkey",
+        "assetStatus": "procedural-placeholder"
+      },
+      "mapping": {
+        "bodyStem": "갑",
+        "bodyBranch": "신",
+        "petBranch": "신",
+        "backgroundStem": "병",
+        "backgroundBranch": "인"
+      },
+      "faces": [
+        {
+          "name": "B_|_almond_gaze_-1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.061134571427371
+        },
+        {
+          "name": "B_|_almond_gaze_1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.06114388207320587
+        }
+      ],
+      "petEyes": [
+        {
+          "name": "monkey-eye",
+          "firstHit": "monkey-eye"
+        },
+        {
+          "name": "monkey-eye",
+          "firstHit": "monkey-eye"
+        }
+      ],
+      "petMeshes": [
+        {
+          "name": "monkey-head",
+          "color": "9e7859",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "monkey-cream-face",
+          "color": "ddc6a3",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "monkey-round-ear",
+          "color": "9e7859",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "monkey-ear-center",
+          "color": "ddc6a3",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "monkey-round-ear",
+          "color": "9e7859",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "monkey-ear-center",
+          "color": "ddc6a3",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "monkey-muzzle",
+          "color": "ddc6a3",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "monkey-nose",
+          "color": "655451",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "monkey-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "monkey-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "monkey-body",
+          "color": "9e7859",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "monkey-paw",
+          "color": "9e7859",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "monkey-paw",
+          "color": "9e7859",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "monkey-paw",
+          "color": "9e7859",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "monkey-paw",
+          "color": "9e7859",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "monkey-curled-tail",
+          "color": "9e7859",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        }
+      ],
+      "bodyMorphs": [
+        0
+      ],
+      "pillarRoles": {
+        "body": "day-stem",
+        "pet": "day-branch",
+        "background": "month-pillar"
+      },
+      "modelScale": [
+        1,
+        1,
+        1.35
+      ],
+      "draws": 29,
+      "triangles": 99696
+    },
+    {
+      "day": "을유",
+      "month": "병인",
+      "quality": "high",
+      "legacy": false,
+      "angle": 0,
+      "dimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "localPositionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyBox": {
+        "min": [
+          -1.2972494792938232,
+          -0.011906229890882969,
+          -0.6419113844633103
+        ],
+        "max": [
+          0.4572634267807007,
+          2.372891664505005,
+          0.6419489219784738
+        ]
+      },
+      "petBox": {
+        "min": [
+          0.924375213331668,
+          0,
+          -0.2950072089567793
+        ],
+        "max": [
+          1.275624786668332,
+          0.6574159793704577,
+          0.42127568933609416
+        ]
+      },
+      "petData": {
+        "pillarRole": "day-branch",
+        "branch": "유",
+        "animal": "rooster",
+        "assetStatus": "procedural-placeholder"
+      },
+      "mapping": {
+        "bodyStem": "을",
+        "bodyBranch": "유",
+        "petBranch": "유",
+        "backgroundStem": "병",
+        "backgroundBranch": "인"
+      },
+      "faces": [
+        {
+          "name": "B_|_almond_gaze_-1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.061134571427371
+        },
+        {
+          "name": "B_|_almond_gaze_1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.06114388207320587
+        }
+      ],
+      "petEyes": [
+        {
+          "name": "rooster-eye",
+          "firstHit": "rooster-eye"
+        },
+        {
+          "name": "rooster-eye",
+          "firstHit": "rooster-eye"
+        }
+      ],
+      "petMeshes": [
+        {
+          "name": "rooster-bird-head",
+          "color": "e5d8b8",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rooster-beak",
+          "color": "c69c52",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rooster-red-comb",
+          "color": "b76558",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rooster-red-comb",
+          "color": "b76558",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rooster-red-comb",
+          "color": "b76558",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rooster-red-wattle",
+          "color": "b76558",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rooster-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rooster-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rooster-bird-body",
+          "color": "e5d8b8",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rooster-wing",
+          "color": "54747b",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rooster-leg",
+          "color": "c69c52",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rooster-toe",
+          "color": "c69c52",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rooster-wing",
+          "color": "54747b",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rooster-leg",
+          "color": "c69c52",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rooster-toe",
+          "color": "c69c52",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rooster-tail-feather",
+          "color": "54747b",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rooster-tail-feather",
+          "color": "54747b",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rooster-tail-feather",
+          "color": "54747b",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        }
+      ],
+      "bodyMorphs": [
+        0
+      ],
+      "pillarRoles": {
+        "body": "day-stem",
+        "pet": "day-branch",
+        "background": "month-pillar"
+      },
+      "modelScale": [
+        1,
+        1,
+        1.35
+      ],
+      "draws": 28,
+      "triangles": 78092
+    },
+    {
+      "day": "갑술",
+      "month": "병인",
+      "quality": "high",
+      "legacy": false,
+      "angle": 0,
+      "dimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "localPositionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyBox": {
+        "min": [
+          -1.2972494792938232,
+          -0.011906229890882969,
+          -0.6419113844633103
+        ],
+        "max": [
+          0.4572634267807007,
+          2.372891664505005,
+          0.6419489219784738
+        ]
+      },
+      "petBox": {
+        "min": [
+          0.8900049841882277,
+          0,
+          -0.21890915585742143
+        ],
+        "max": [
+          1.3164705388922884,
+          0.6474603749704072,
+          0.48440175351928527
+        ]
+      },
+      "petData": {
+        "pillarRole": "day-branch",
+        "branch": "술",
+        "animal": "dog",
+        "assetStatus": "procedural-placeholder"
+      },
+      "mapping": {
+        "bodyStem": "갑",
+        "bodyBranch": "술",
+        "petBranch": "술",
+        "backgroundStem": "병",
+        "backgroundBranch": "인"
+      },
+      "faces": [
+        {
+          "name": "B_|_almond_gaze_-1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.061134571427371
+        },
+        {
+          "name": "B_|_almond_gaze_1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.06114388207320587
+        }
+      ],
+      "petEyes": [
+        {
+          "name": "dog-eye",
+          "firstHit": "dog-eye"
+        },
+        {
+          "name": "dog-eye",
+          "firstHit": "dog-eye"
+        }
+      ],
+      "petMeshes": [
+        {
+          "name": "dog-head",
+          "color": "c29e6c",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dog-floppy-ear",
+          "color": "826548",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dog-floppy-ear",
+          "color": "826548",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dog-muzzle",
+          "color": "ebe0c9",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dog-nose",
+          "color": "655451",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dog-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dog-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dog-body",
+          "color": "c29e6c",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dog-paw",
+          "color": "c29e6c",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dog-paw",
+          "color": "c29e6c",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dog-paw",
+          "color": "c29e6c",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dog-paw",
+          "color": "c29e6c",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dog-chest",
+          "color": "ebe0c9",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dog-raised-tail",
+          "color": "c29e6c",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        }
+      ],
+      "bodyMorphs": [
+        0
+      ],
+      "pillarRoles": {
+        "body": "day-stem",
+        "pet": "day-branch",
+        "background": "month-pillar"
+      },
+      "modelScale": [
+        1,
+        1,
+        1.35
+      ],
+      "draws": 27,
+      "triangles": 98904
+    },
+    {
+      "day": "을해",
+      "month": "병인",
+      "quality": "high",
+      "legacy": false,
+      "angle": 0,
+      "dimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "localPositionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyBox": {
+        "min": [
+          -1.2972494792938232,
+          -0.011906229890882969,
+          -0.6419113844633103
+        ],
+        "max": [
+          0.4572634267807007,
+          2.372891664505005,
+          0.6419489219784738
+        ]
+      },
+      "petBox": {
+        "min": [
+          0.9459504919429879,
+          0,
+          -0.18555247407783837
+        ],
+        "max": [
+          1.2559885912005277,
+          0.6358806166035479,
+          0.4434022363789171
+        ]
+      },
+      "petData": {
+        "pillarRole": "day-branch",
+        "branch": "해",
+        "animal": "pig",
+        "assetStatus": "procedural-placeholder"
+      },
+      "mapping": {
+        "bodyStem": "을",
+        "bodyBranch": "해",
+        "petBranch": "해",
+        "backgroundStem": "병",
+        "backgroundBranch": "인"
+      },
+      "faces": [
+        {
+          "name": "B_|_almond_gaze_-1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.061134571427371
+        },
+        {
+          "name": "B_|_almond_gaze_1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.06114388207320587
+        }
+      ],
+      "petEyes": [
+        {
+          "name": "pig-eye",
+          "firstHit": "pig-eye"
+        },
+        {
+          "name": "pig-eye",
+          "firstHit": "pig-eye"
+        }
+      ],
+      "petMeshes": [
+        {
+          "name": "pig-head",
+          "color": "dab5b1",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "pig-triangular-ear",
+          "color": "c99390",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "pig-triangular-ear",
+          "color": "c99390",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "pig-broad-snout",
+          "color": "c99390",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "pig-nostril",
+          "color": "846e66",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "pig-nostril",
+          "color": "846e66",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "pig-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "pig-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "pig-body",
+          "color": "dab5b1",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "pig-leg",
+          "color": "dab5b1",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "pig-hoof",
+          "color": "846e66",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "pig-leg",
+          "color": "dab5b1",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "pig-hoof",
+          "color": "846e66",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "pig-leg",
+          "color": "dab5b1",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "pig-hoof",
+          "color": "846e66",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "pig-leg",
+          "color": "dab5b1",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "pig-hoof",
+          "color": "846e66",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "pig-curly-tail",
+          "color": "c99390",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        }
+      ],
+      "bodyMorphs": [
+        0
+      ],
+      "pillarRoles": {
+        "body": "day-stem",
+        "pet": "day-branch",
+        "background": "month-pillar"
+      },
+      "modelScale": [
+        1,
+        1,
+        1.35
+      ],
+      "draws": 28,
+      "triangles": 78208
+    },
+    {
+      "day": "갑자",
+      "month": "병인",
+      "quality": "low",
+      "legacy": false,
+      "angle": 0,
+      "dimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "localPositionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyBox": {
+        "min": [
+          -1.2972494792938232,
+          -0.011906229890882969,
+          -0.6419113844633103
+        ],
+        "max": [
+          0.4572634267807007,
+          2.372891664505005,
+          0.6419489219784738
+        ]
+      },
+      "petBox": {
+        "min": [
+          0.8843864295050922,
+          -6.938893903907228e-18,
+          -0.20218118192303403
+        ],
+        "max": [
+          1.379453450432557,
+          0.6562409338861042,
+          0.45826309712867486
+        ]
+      },
+      "petData": {
+        "pillarRole": "day-branch",
+        "branch": "자",
+        "animal": "rat",
+        "assetStatus": "procedural-placeholder"
+      },
+      "mapping": {
+        "bodyStem": "갑",
+        "bodyBranch": "자",
+        "petBranch": "자",
+        "backgroundStem": "병",
+        "backgroundBranch": "인"
+      },
+      "faces": [
+        {
+          "name": "B_|_almond_gaze_-1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.061134571427371
+        },
+        {
+          "name": "B_|_almond_gaze_1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.06114388207320587
+        }
+      ],
+      "petEyes": [
+        {
+          "name": "rat-eye",
+          "firstHit": "rat-eye"
+        },
+        {
+          "name": "rat-eye",
+          "firstHit": "rat-eye"
+        }
+      ],
+      "petMeshes": [
+        {
+          "name": "rat-head",
+          "color": "8d9498",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rat-round-ear",
+          "color": "8d9498",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rat-ear-lining",
+          "color": "d9bbbd",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rat-round-ear",
+          "color": "8d9498",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rat-ear-lining",
+          "color": "d9bbbd",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rat-muzzle",
+          "color": "d9bbbd",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rat-nose",
+          "color": "655451",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rat-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rat-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rat-body",
+          "color": "8d9498",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rat-paw",
+          "color": "8d9498",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rat-paw",
+          "color": "8d9498",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rat-paw",
+          "color": "8d9498",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rat-paw",
+          "color": "8d9498",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rat-long-tail",
+          "color": "d9bbbd",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        }
+      ],
+      "bodyMorphs": [
+        0
+      ],
+      "pillarRoles": {
+        "body": "day-stem",
+        "pet": "day-branch",
+        "background": "month-pillar"
+      },
+      "modelScale": [
+        1,
+        1,
+        1.35
+      ],
+      "draws": 28,
+      "triangles": 83620
+    },
+    {
+      "day": "을축",
+      "month": "병인",
+      "quality": "low",
+      "legacy": false,
+      "angle": 0,
+      "dimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "localPositionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyBox": {
+        "min": [
+          -1.2972494792938232,
+          -0.011906229890882969,
+          -0.6419113844633103
+        ],
+        "max": [
+          0.4572634267807007,
+          2.372891664505005,
+          0.6419489219784738
+        ]
+      },
+      "petBox": {
+        "min": [
+          0.852866437741239,
+          -6.938893903907228e-18,
+          -0.22300528543822723
+        ],
+        "max": [
+          1.3566812553538756,
+          0.6577480370676658,
+          0.4393055564327491
+        ]
+      },
+      "petData": {
+        "pillarRole": "day-branch",
+        "branch": "축",
+        "animal": "ox",
+        "assetStatus": "procedural-placeholder"
+      },
+      "mapping": {
+        "bodyStem": "을",
+        "bodyBranch": "축",
+        "petBranch": "축",
+        "backgroundStem": "병",
+        "backgroundBranch": "인"
+      },
+      "faces": [
+        {
+          "name": "B_|_almond_gaze_-1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.061134571427371
+        },
+        {
+          "name": "B_|_almond_gaze_1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.06114388207320587
+        }
+      ],
+      "petEyes": [
+        {
+          "name": "ox-eye",
+          "firstHit": "ox-eye"
+        },
+        {
+          "name": "ox-eye",
+          "firstHit": "ox-eye"
+        }
+      ],
+      "petMeshes": [
+        {
+          "name": "ox-head",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-broad-snout",
+          "color": "e4d6bc",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-side-ear",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-outward-horn",
+          "color": "e4d6bc",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-nostril",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-side-ear",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-outward-horn",
+          "color": "e4d6bc",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-nostril",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-body",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-leg",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-hoof",
+          "color": "534335",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-leg",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-hoof",
+          "color": "534335",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-leg",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-hoof",
+          "color": "534335",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-leg",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-hoof",
+          "color": "534335",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-tail",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-tail-tuft",
+          "color": "534335",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        }
+      ],
+      "bodyMorphs": [
+        0
+      ],
+      "pillarRoles": {
+        "body": "day-stem",
+        "pet": "day-branch",
+        "background": "month-pillar"
+      },
+      "modelScale": [
+        1,
+        1,
+        1.35
+      ],
+      "draws": 31,
+      "triangles": 75524
+    },
+    {
+      "day": "갑인",
+      "month": "병인",
+      "quality": "low",
+      "legacy": false,
+      "angle": 0,
+      "dimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "localPositionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyBox": {
+        "min": [
+          -1.2972494792938232,
+          -0.011906229890882969,
+          -0.6419113844633103
+        ],
+        "max": [
+          0.4572634267807007,
+          2.372891664505005,
+          0.6419489219784738
+        ]
+      },
+      "petBox": {
+        "min": [
+          0.9165490589699964,
+          0,
+          -0.23793505924132147
+        ],
+        "max": [
+          1.320297432680673,
+          0.6563034005394792,
+          0.44879062239010514
+        ]
+      },
+      "petData": {
+        "pillarRole": "day-branch",
+        "branch": "인",
+        "animal": "tiger",
+        "assetStatus": "procedural-placeholder"
+      },
+      "mapping": {
+        "bodyStem": "갑",
+        "bodyBranch": "인",
+        "petBranch": "인",
+        "backgroundStem": "병",
+        "backgroundBranch": "인"
+      },
+      "faces": [
+        {
+          "name": "B_|_almond_gaze_-1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.061134571427371
+        },
+        {
+          "name": "B_|_almond_gaze_1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.06114388207320587
+        }
+      ],
+      "petEyes": [
+        {
+          "name": "tiger-eye",
+          "firstHit": "tiger-eye"
+        },
+        {
+          "name": "tiger-eye",
+          "firstHit": "tiger-eye"
+        }
+      ],
+      "petMeshes": [
+        {
+          "name": "tiger-head",
+          "color": "dca257",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-round-ear",
+          "color": "3d3831",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-ear-center",
+          "color": "eee1c8",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-cheek-stripe",
+          "color": "3d3831",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-cheek-stripe",
+          "color": "3d3831",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-cheek-stripe",
+          "color": "3d3831",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-round-ear",
+          "color": "3d3831",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-ear-center",
+          "color": "eee1c8",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-cheek-stripe",
+          "color": "3d3831",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-cheek-stripe",
+          "color": "3d3831",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-cheek-stripe",
+          "color": "3d3831",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-muzzle",
+          "color": "eee1c8",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-nose",
+          "color": "655451",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-body",
+          "color": "dca257",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-paw",
+          "color": "dca257",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-paw",
+          "color": "dca257",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-paw",
+          "color": "dca257",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-paw",
+          "color": "dca257",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-body-stripe",
+          "color": "3d3831",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-body-stripe",
+          "color": "3d3831",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-body-stripe",
+          "color": "3d3831",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-body-stripe",
+          "color": "3d3831",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-body-stripe",
+          "color": "3d3831",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-body-stripe",
+          "color": "3d3831",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-striped-tail",
+          "color": "dca257",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "tiger-tail-tip",
+          "color": "3d3831",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        }
+      ],
+      "bodyMorphs": [
+        0
+      ],
+      "pillarRoles": {
+        "body": "day-stem",
+        "pet": "day-branch",
+        "background": "month-pillar"
+      },
+      "modelScale": [
+        1,
+        1,
+        1.35
+      ],
+      "draws": 41,
+      "triangles": 85804
+    },
+    {
+      "day": "을묘",
+      "month": "병인",
+      "quality": "low",
+      "legacy": false,
+      "angle": 0,
+      "dimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "localPositionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyBox": {
+        "min": [
+          -1.2972494792938232,
+          -0.011906229890882969,
+          -0.6419113844633103
+        ],
+        "max": [
+          0.4572634267807007,
+          2.372891664505005,
+          0.6419489219784738
+        ]
+      },
+      "petBox": {
+        "min": [
+          0.9817594688195597,
+          0,
+          -0.13039171755071263
+        ],
+        "max": [
+          1.2182405311804405,
+          0.6550170848615828,
+          0.36394689965970545
+        ]
+      },
+      "petData": {
+        "pillarRole": "day-branch",
+        "branch": "묘",
+        "animal": "rabbit",
+        "assetStatus": "procedural-placeholder"
+      },
+      "mapping": {
+        "bodyStem": "을",
+        "bodyBranch": "묘",
+        "petBranch": "묘",
+        "backgroundStem": "병",
+        "backgroundBranch": "인"
+      },
+      "faces": [
+        {
+          "name": "B_|_almond_gaze_-1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.061134571427371
+        },
+        {
+          "name": "B_|_almond_gaze_1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.06114388207320587
+        }
+      ],
+      "petEyes": [
+        {
+          "name": "rabbit-eye",
+          "firstHit": "rabbit-eye"
+        },
+        {
+          "name": "rabbit-eye",
+          "firstHit": "rabbit-eye"
+        }
+      ],
+      "petMeshes": [
+        {
+          "name": "rabbit-head",
+          "color": "e7e5dc",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rabbit-long-ear",
+          "color": "e7e5dc",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rabbit-inner-ear",
+          "color": "cdaeb1",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rabbit-long-ear",
+          "color": "e7e5dc",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rabbit-inner-ear",
+          "color": "cdaeb1",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rabbit-muzzle",
+          "color": "e7e5dc",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rabbit-nose",
+          "color": "655451",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rabbit-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rabbit-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rabbit-body",
+          "color": "e7e5dc",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rabbit-paw",
+          "color": "e7e5dc",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rabbit-paw",
+          "color": "e7e5dc",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rabbit-paw",
+          "color": "e7e5dc",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rabbit-paw",
+          "color": "e7e5dc",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rabbit-cotton-tail",
+          "color": "e7e5dc",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        }
+      ],
+      "bodyMorphs": [
+        0
+      ],
+      "pillarRoles": {
+        "body": "day-stem",
+        "pet": "day-branch",
+        "background": "month-pillar"
+      },
+      "modelScale": [
+        1,
+        1,
+        1.35
+      ],
+      "draws": 25,
+      "triangles": 74844
+    },
+    {
+      "day": "갑진",
+      "month": "병인",
+      "quality": "low",
+      "legacy": false,
+      "angle": 0,
+      "dimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "localPositionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyBox": {
+        "min": [
+          -1.2972494792938232,
+          -0.011906229890882969,
+          -0.6419113844633103
+        ],
+        "max": [
+          0.4572634267807007,
+          2.372891664505005,
+          0.6419489219784738
+        ]
+      },
+      "petBox": {
+        "min": [
+          0.9124040152054478,
+          0,
+          -0.2611981531555831
+        ],
+        "max": [
+          1.3241701342366436,
+          0.655132535128448,
+          0.4562803355887392
+        ]
+      },
+      "petData": {
+        "pillarRole": "day-branch",
+        "branch": "진",
+        "animal": "dragon",
+        "assetStatus": "procedural-placeholder"
+      },
+      "mapping": {
+        "bodyStem": "갑",
+        "bodyBranch": "진",
+        "petBranch": "진",
+        "backgroundStem": "병",
+        "backgroundBranch": "인"
+      },
+      "faces": [
+        {
+          "name": "B_|_almond_gaze_-1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.061134571427371
+        },
+        {
+          "name": "B_|_almond_gaze_1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.06114388207320587
+        }
+      ],
+      "petEyes": [
+        {
+          "name": "dragon-eye",
+          "firstHit": "dragon-eye"
+        },
+        {
+          "name": "dragon-eye",
+          "firstHit": "dragon-eye"
+        }
+      ],
+      "petMeshes": [
+        {
+          "name": "dragon-head",
+          "color": "658b96",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dragon-long-snout",
+          "color": "d4cbb7",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dragon-antler",
+          "color": "d4cbb7",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dragon-antler-fork",
+          "color": "d4cbb7",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dragon-antler",
+          "color": "d4cbb7",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dragon-antler-fork",
+          "color": "d4cbb7",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dragon-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dragon-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dragon-serpentine-body",
+          "color": "658b96",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dragon-small-arm",
+          "color": "658b96",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dragon-claw",
+          "color": "d4cbb7",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dragon-foot",
+          "color": "d4cbb7",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dragon-small-arm",
+          "color": "658b96",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dragon-claw",
+          "color": "d4cbb7",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dragon-foot",
+          "color": "d4cbb7",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dragon-tapered-tail",
+          "color": "486873",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        }
+      ],
+      "bodyMorphs": [
+        0
+      ],
+      "pillarRoles": {
+        "body": "day-stem",
+        "pet": "day-branch",
+        "background": "month-pillar"
+      },
+      "modelScale": [
+        1,
+        1,
+        1.35
+      ],
+      "draws": 29,
+      "triangles": 83460
+    },
+    {
+      "day": "을사",
+      "month": "병인",
+      "quality": "low",
+      "legacy": false,
+      "angle": 0,
+      "dimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "localPositionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyBox": {
+        "min": [
+          -1.2972494792938232,
+          -0.011906229890882969,
+          -0.6419113844633103
+        ],
+        "max": [
+          0.4572634267807007,
+          2.372891664505005,
+          0.6419489219784738
+        ]
+      },
+      "petBox": {
+        "min": [
+          0.7897326070420868,
+          0,
+          -0.14533628220825784
+        ],
+        "max": [
+          1.4097326070420868,
+          0.4588858943398575,
+          0.46797781800414917
+        ]
+      },
+      "petData": {
+        "pillarRole": "day-branch",
+        "branch": "사",
+        "animal": "snake",
+        "assetStatus": "procedural-placeholder"
+      },
+      "mapping": {
+        "bodyStem": "을",
+        "bodyBranch": "사",
+        "petBranch": "사",
+        "backgroundStem": "병",
+        "backgroundBranch": "인"
+      },
+      "faces": [
+        {
+          "name": "B_|_almond_gaze_-1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.061134571427371
+        },
+        {
+          "name": "B_|_almond_gaze_1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.06114388207320587
+        }
+      ],
+      "petEyes": [
+        {
+          "name": "snake-eye",
+          "firstHit": "snake-eye"
+        },
+        {
+          "name": "snake-eye",
+          "firstHit": "snake-eye"
+        }
+      ],
+      "petMeshes": [
+        {
+          "name": "snake-head",
+          "color": "929b65",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "snake-chin",
+          "color": "d7d4ab",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "snake-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "snake-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "snake-coiled-body",
+          "color": "929b65",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "snake-back-mark",
+          "color": "67734b",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "snake-back-mark",
+          "color": "67734b",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "snake-back-mark",
+          "color": "67734b",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "snake-back-mark",
+          "color": "67734b",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "snake-back-mark",
+          "color": "67734b",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        }
+      ],
+      "bodyMorphs": [
+        0
+      ],
+      "pillarRoles": {
+        "body": "day-stem",
+        "pet": "day-branch",
+        "background": "month-pillar"
+      },
+      "modelScale": [
+        1,
+        1,
+        1.35
+      ],
+      "draws": 20,
+      "triangles": 74076
+    },
+    {
+      "day": "갑오",
+      "month": "병인",
+      "quality": "low",
+      "legacy": false,
+      "angle": 0,
+      "dimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "localPositionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyBox": {
+        "min": [
+          -1.2972494792938232,
+          -0.011906229890882969,
+          -0.6419113844633103
+        ],
+        "max": [
+          0.4572634267807007,
+          2.372891664505005,
+          0.6419489219784738
+        ]
+      },
+      "petBox": {
+        "min": [
+          0.9812915049307167,
+          0,
+          -0.16187297428873437
+        ],
+        "max": [
+          1.2187084950692835,
+          0.6549214204248199,
+          0.42778822345724393
+        ]
+      },
+      "petData": {
+        "pillarRole": "day-branch",
+        "branch": "오",
+        "animal": "horse",
+        "assetStatus": "procedural-placeholder"
+      },
+      "mapping": {
+        "bodyStem": "갑",
+        "bodyBranch": "오",
+        "petBranch": "오",
+        "backgroundStem": "병",
+        "backgroundBranch": "인"
+      },
+      "faces": [
+        {
+          "name": "B_|_almond_gaze_-1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.061134571427371
+        },
+        {
+          "name": "B_|_almond_gaze_1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.06114388207320587
+        }
+      ],
+      "petEyes": [
+        {
+          "name": "horse-eye",
+          "firstHit": "horse-eye"
+        },
+        {
+          "name": "horse-eye",
+          "firstHit": "horse-eye"
+        }
+      ],
+      "petMeshes": [
+        {
+          "name": "horse-head",
+          "color": "a17656",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "horse-long-muzzle",
+          "color": "a17656",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "horse-pointed-ear",
+          "color": "a17656",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "horse-pointed-ear",
+          "color": "a17656",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "horse-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "horse-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "horse-body",
+          "color": "a17656",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "horse-leg",
+          "color": "a17656",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "horse-hoof",
+          "color": "d8c4a9",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "horse-leg",
+          "color": "a17656",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "horse-hoof",
+          "color": "d8c4a9",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "horse-leg",
+          "color": "a17656",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "horse-hoof",
+          "color": "d8c4a9",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "horse-leg",
+          "color": "a17656",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "horse-hoof",
+          "color": "d8c4a9",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "horse-upright-neck",
+          "color": "a17656",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "horse-mane",
+          "color": "483d35",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "horse-mane",
+          "color": "483d35",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "horse-mane",
+          "color": "483d35",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "horse-mane",
+          "color": "483d35",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "horse-long-tail",
+          "color": "483d35",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        }
+      ],
+      "bodyMorphs": [
+        0
+      ],
+      "pillarRoles": {
+        "body": "day-stem",
+        "pet": "day-branch",
+        "background": "month-pillar"
+      },
+      "modelScale": [
+        1,
+        1,
+        1.35
+      ],
+      "draws": 34,
+      "triangles": 84084
+    },
+    {
+      "day": "을미",
+      "month": "병인",
+      "quality": "low",
+      "legacy": false,
+      "angle": 0,
+      "dimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "localPositionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyBox": {
+        "min": [
+          -1.2972494792938232,
+          -0.011906229890882969,
+          -0.6419113844633103
+        ],
+        "max": [
+          0.4572634267807007,
+          2.372891664505005,
+          0.6419489219784738
+        ]
+      },
+      "petBox": {
+        "min": [
+          0.8380050460850392,
+          -6.938893903907228e-18,
+          -0.12227285407846984
+        ],
+        "max": [
+          1.3582354718973197,
+          0.6473094812858656,
+          0.46682989233658584
+        ]
+      },
+      "petData": {
+        "pillarRole": "day-branch",
+        "branch": "미",
+        "animal": "sheep",
+        "assetStatus": "procedural-placeholder"
+      },
+      "mapping": {
+        "bodyStem": "을",
+        "bodyBranch": "미",
+        "petBranch": "미",
+        "backgroundStem": "병",
+        "backgroundBranch": "인"
+      },
+      "faces": [
+        {
+          "name": "B_|_almond_gaze_-1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.061134571427371
+        },
+        {
+          "name": "B_|_almond_gaze_1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.06114388207320587
+        }
+      ],
+      "petEyes": [
+        {
+          "name": "sheep-eye",
+          "firstHit": "sheep-eye"
+        },
+        {
+          "name": "sheep-eye",
+          "firstHit": "sheep-eye"
+        }
+      ],
+      "petMeshes": [
+        {
+          "name": "sheep-head",
+          "color": "e6dfca",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-curled-horn",
+          "color": "a18d74",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-low-ear",
+          "color": "c7bea6",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-curled-horn",
+          "color": "a18d74",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-low-ear",
+          "color": "c7bea6",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-muzzle",
+          "color": "a18d74",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-nose",
+          "color": "655451",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-body",
+          "color": "e6dfca",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-paw",
+          "color": "e6dfca",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-paw",
+          "color": "e6dfca",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-paw",
+          "color": "e6dfca",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-paw",
+          "color": "e6dfca",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-wool-curl",
+          "color": "e6dfca",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-wool-curl",
+          "color": "e6dfca",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-wool-curl",
+          "color": "e6dfca",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-wool-curl",
+          "color": "e6dfca",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-wool-curl",
+          "color": "e6dfca",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-wool-curl",
+          "color": "e6dfca",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-wool-curl",
+          "color": "e6dfca",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-wool-curl",
+          "color": "e6dfca",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "sheep-wool-curl",
+          "color": "e6dfca",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        }
+      ],
+      "bodyMorphs": [
+        0
+      ],
+      "pillarRoles": {
+        "body": "day-stem",
+        "pet": "day-branch",
+        "background": "month-pillar"
+      },
+      "modelScale": [
+        1,
+        1,
+        1.35
+      ],
+      "draws": 33,
+      "triangles": 76332
+    },
+    {
+      "day": "갑신",
+      "month": "병인",
+      "quality": "low",
+      "legacy": false,
+      "angle": 0,
+      "dimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "localPositionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyBox": {
+        "min": [
+          -1.2972494792938232,
+          -0.011906229890882969,
+          -0.6419113844633103
+        ],
+        "max": [
+          0.4572634267807007,
+          2.372891664505005,
+          0.6419489219784738
+        ]
+      },
+      "petBox": {
+        "min": [
+          0.8482399521396392,
+          -6.938893903907228e-18,
+          -0.27079898703917804
+        ],
+        "max": [
+          1.3892599964463879,
+          0.6473094812858656,
+          0.46682989233658584
+        ]
+      },
+      "petData": {
+        "pillarRole": "day-branch",
+        "branch": "신",
+        "animal": "monkey",
+        "assetStatus": "procedural-placeholder"
+      },
+      "mapping": {
+        "bodyStem": "갑",
+        "bodyBranch": "신",
+        "petBranch": "신",
+        "backgroundStem": "병",
+        "backgroundBranch": "인"
+      },
+      "faces": [
+        {
+          "name": "B_|_almond_gaze_-1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.061134571427371
+        },
+        {
+          "name": "B_|_almond_gaze_1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.06114388207320587
+        }
+      ],
+      "petEyes": [
+        {
+          "name": "monkey-eye",
+          "firstHit": "monkey-eye"
+        },
+        {
+          "name": "monkey-eye",
+          "firstHit": "monkey-eye"
+        }
+      ],
+      "petMeshes": [
+        {
+          "name": "monkey-head",
+          "color": "9e7859",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "monkey-cream-face",
+          "color": "ddc6a3",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "monkey-round-ear",
+          "color": "9e7859",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "monkey-ear-center",
+          "color": "ddc6a3",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "monkey-round-ear",
+          "color": "9e7859",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "monkey-ear-center",
+          "color": "ddc6a3",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "monkey-muzzle",
+          "color": "ddc6a3",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "monkey-nose",
+          "color": "655451",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "monkey-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "monkey-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "monkey-body",
+          "color": "9e7859",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "monkey-paw",
+          "color": "9e7859",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "monkey-paw",
+          "color": "9e7859",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "monkey-paw",
+          "color": "9e7859",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "monkey-paw",
+          "color": "9e7859",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "monkey-curled-tail",
+          "color": "9e7859",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        }
+      ],
+      "bodyMorphs": [
+        0
+      ],
+      "pillarRoles": {
+        "body": "day-stem",
+        "pet": "day-branch",
+        "background": "month-pillar"
+      },
+      "modelScale": [
+        1,
+        1,
+        1.35
+      ],
+      "draws": 29,
+      "triangles": 83788
+    },
+    {
+      "day": "을유",
+      "month": "병인",
+      "quality": "low",
+      "legacy": false,
+      "angle": 0,
+      "dimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "localPositionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyBox": {
+        "min": [
+          -1.2972494792938232,
+          -0.011906229890882969,
+          -0.6419113844633103
+        ],
+        "max": [
+          0.4572634267807007,
+          2.372891664505005,
+          0.6419489219784738
+        ]
+      },
+      "petBox": {
+        "min": [
+          0.9243838574258667,
+          0,
+          -0.2951010768718603
+        ],
+        "max": [
+          1.2756161425741335,
+          0.6573836219466505,
+          0.42126086081736536
+        ]
+      },
+      "petData": {
+        "pillarRole": "day-branch",
+        "branch": "유",
+        "animal": "rooster",
+        "assetStatus": "procedural-placeholder"
+      },
+      "mapping": {
+        "bodyStem": "을",
+        "bodyBranch": "유",
+        "petBranch": "유",
+        "backgroundStem": "병",
+        "backgroundBranch": "인"
+      },
+      "faces": [
+        {
+          "name": "B_|_almond_gaze_-1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.061134571427371
+        },
+        {
+          "name": "B_|_almond_gaze_1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.06114388207320587
+        }
+      ],
+      "petEyes": [
+        {
+          "name": "rooster-eye",
+          "firstHit": "rooster-eye"
+        },
+        {
+          "name": "rooster-eye",
+          "firstHit": "rooster-eye"
+        }
+      ],
+      "petMeshes": [
+        {
+          "name": "rooster-bird-head",
+          "color": "e5d8b8",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rooster-beak",
+          "color": "c69c52",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rooster-red-comb",
+          "color": "b76558",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rooster-red-comb",
+          "color": "b76558",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rooster-red-comb",
+          "color": "b76558",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rooster-red-wattle",
+          "color": "b76558",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rooster-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rooster-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rooster-bird-body",
+          "color": "e5d8b8",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rooster-wing",
+          "color": "54747b",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rooster-leg",
+          "color": "c69c52",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rooster-toe",
+          "color": "c69c52",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rooster-wing",
+          "color": "54747b",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rooster-leg",
+          "color": "c69c52",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rooster-toe",
+          "color": "c69c52",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rooster-tail-feather",
+          "color": "54747b",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rooster-tail-feather",
+          "color": "54747b",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "rooster-tail-feather",
+          "color": "54747b",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        }
+      ],
+      "bodyMorphs": [
+        0
+      ],
+      "pillarRoles": {
+        "body": "day-stem",
+        "pet": "day-branch",
+        "background": "month-pillar"
+      },
+      "modelScale": [
+        1,
+        1,
+        1.35
+      ],
+      "draws": 28,
+      "triangles": 74884
+    },
+    {
+      "day": "갑술",
+      "month": "병인",
+      "quality": "low",
+      "legacy": false,
+      "angle": 0,
+      "dimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "localPositionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyBox": {
+        "min": [
+          -1.2972494792938232,
+          -0.011906229890882969,
+          -0.6419113844633103
+        ],
+        "max": [
+          0.4572634267807007,
+          2.372891664505005,
+          0.6419489219784738
+        ]
+      },
+      "petBox": {
+        "min": [
+          0.8906696565738876,
+          -6.938893903907228e-18,
+          -0.22023043693761524
+        ],
+        "max": [
+          1.3158043573555287,
+          0.6473094812858656,
+          0.48186568100138955
+        ]
+      },
+      "petData": {
+        "pillarRole": "day-branch",
+        "branch": "술",
+        "animal": "dog",
+        "assetStatus": "procedural-placeholder"
+      },
+      "mapping": {
+        "bodyStem": "갑",
+        "bodyBranch": "술",
+        "petBranch": "술",
+        "backgroundStem": "병",
+        "backgroundBranch": "인"
+      },
+      "faces": [
+        {
+          "name": "B_|_almond_gaze_-1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.061134571427371
+        },
+        {
+          "name": "B_|_almond_gaze_1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.06114388207320587
+        }
+      ],
+      "petEyes": [
+        {
+          "name": "dog-eye",
+          "firstHit": "dog-eye"
+        },
+        {
+          "name": "dog-eye",
+          "firstHit": "dog-eye"
+        }
+      ],
+      "petMeshes": [
+        {
+          "name": "dog-head",
+          "color": "c29e6c",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dog-floppy-ear",
+          "color": "826548",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dog-floppy-ear",
+          "color": "826548",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dog-muzzle",
+          "color": "ebe0c9",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dog-nose",
+          "color": "655451",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dog-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dog-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dog-body",
+          "color": "c29e6c",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dog-paw",
+          "color": "c29e6c",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dog-paw",
+          "color": "c29e6c",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dog-paw",
+          "color": "c29e6c",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dog-paw",
+          "color": "c29e6c",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dog-chest",
+          "color": "ebe0c9",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "dog-raised-tail",
+          "color": "c29e6c",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        }
+      ],
+      "bodyMorphs": [
+        0
+      ],
+      "pillarRoles": {
+        "body": "day-stem",
+        "pet": "day-branch",
+        "background": "month-pillar"
+      },
+      "modelScale": [
+        1,
+        1,
+        1.35
+      ],
+      "draws": 27,
+      "triangles": 83452
+    },
+    {
+      "day": "을해",
+      "month": "병인",
+      "quality": "low",
+      "legacy": false,
+      "angle": 0,
+      "dimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "localPositionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyBox": {
+        "min": [
+          -1.2972494792938232,
+          -0.011906229890882969,
+          -0.6419113844633103
+        ],
+        "max": [
+          0.4572634267807007,
+          2.372891664505005,
+          0.6419489219784738
+        ]
+      },
+      "petBox": {
+        "min": [
+          0.9459575887665878,
+          0,
+          -0.1853942688155838
+        ],
+        "max": [
+          1.2559814050463536,
+          0.6357292329493746,
+          0.44330654323859314
+        ]
+      },
+      "petData": {
+        "pillarRole": "day-branch",
+        "branch": "해",
+        "animal": "pig",
+        "assetStatus": "procedural-placeholder"
+      },
+      "mapping": {
+        "bodyStem": "을",
+        "bodyBranch": "해",
+        "petBranch": "해",
+        "backgroundStem": "병",
+        "backgroundBranch": "인"
+      },
+      "faces": [
+        {
+          "name": "B_|_almond_gaze_-1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.061134571427371
+        },
+        {
+          "name": "B_|_almond_gaze_1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.06114388207320587
+        }
+      ],
+      "petEyes": [
+        {
+          "name": "pig-eye",
+          "firstHit": "pig-eye"
+        },
+        {
+          "name": "pig-eye",
+          "firstHit": "pig-eye"
+        }
+      ],
+      "petMeshes": [
+        {
+          "name": "pig-head",
+          "color": "dab5b1",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "pig-triangular-ear",
+          "color": "c99390",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "pig-triangular-ear",
+          "color": "c99390",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "pig-broad-snout",
+          "color": "c99390",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "pig-nostril",
+          "color": "846e66",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "pig-nostril",
+          "color": "846e66",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "pig-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "pig-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "pig-body",
+          "color": "dab5b1",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "pig-leg",
+          "color": "dab5b1",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "pig-hoof",
+          "color": "846e66",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "pig-leg",
+          "color": "dab5b1",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "pig-hoof",
+          "color": "846e66",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "pig-leg",
+          "color": "dab5b1",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "pig-hoof",
+          "color": "846e66",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "pig-leg",
+          "color": "dab5b1",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "pig-hoof",
+          "color": "846e66",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "pig-curly-tail",
+          "color": "c99390",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        }
+      ],
+      "bodyMorphs": [
+        0
+      ],
+      "pillarRoles": {
+        "body": "day-stem",
+        "pet": "day-branch",
+        "background": "month-pillar"
+      },
+      "modelScale": [
+        1,
+        1,
+        1.35
+      ],
+      "draws": 28,
+      "triangles": 74876
+    },
+    {
+      "day": "을축",
+      "month": "경자",
+      "quality": "high",
+      "legacy": false,
+      "angle": 0,
+      "dimensions": [
+        1.754512906074524,
+        2.384797894395888,
+        1.2838603064417842
+      ],
+      "localPositionHash": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyBox": {
+        "min": [
+          -1.2972494792938232,
+          -0.011906229890882969,
+          -0.6419113844633103
+        ],
+        "max": [
+          0.4572634267807007,
+          2.372891664505005,
+          0.6419489219784738
+        ]
+      },
+      "petBox": {
+        "min": [
+          0.8534069563203984,
+          6.938893903907228e-18,
+          -0.2218306198578812
+        ],
+        "max": [
+          1.3561198545219826,
+          0.657025493022098,
+          0.43860718675724536
+        ]
+      },
+      "petData": {
+        "pillarRole": "day-branch",
+        "branch": "축",
+        "animal": "ox",
+        "assetStatus": "procedural-placeholder"
+      },
+      "mapping": {
+        "bodyStem": "을",
+        "bodyBranch": "축",
+        "petBranch": "축",
+        "backgroundStem": "경",
+        "backgroundBranch": "자"
+      },
+      "faces": [
+        {
+          "name": "B_|_almond_gaze_-1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.061134571427371
+        },
+        {
+          "name": "B_|_almond_gaze_1",
+          "scale": [
+            0.1180000007258543,
+            0.05700000003492197,
+            0.039149998873472217
+          ],
+          "surfaceGap": 0.06114388207320587
+        }
+      ],
+      "petEyes": [
+        {
+          "name": "ox-eye",
+          "firstHit": "ox-eye"
+        },
+        {
+          "name": "ox-eye",
+          "firstHit": "ox-eye"
+        }
+      ],
+      "petMeshes": [
+        {
+          "name": "ox-head",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-broad-snout",
+          "color": "e4d6bc",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-side-ear",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-outward-horn",
+          "color": "e4d6bc",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-nostril",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-side-ear",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-outward-horn",
+          "color": "e4d6bc",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-nostril",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-body",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-leg",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-hoof",
+          "color": "534335",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-leg",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-hoof",
+          "color": "534335",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-leg",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-hoof",
+          "color": "534335",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-leg",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-hoof",
+          "color": "534335",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-tail",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-tail-tuft",
+          "color": "534335",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        }
+      ],
+      "bodyMorphs": [
+        0
+      ],
+      "pillarRoles": {
+        "body": "day-stem",
+        "pet": "day-branch",
+        "background": "month-pillar"
+      },
+      "modelScale": [
+        1,
+        1,
+        1.35
+      ],
+      "draws": 31,
+      "triangles": 79628
+    },
+    {
+      "day": "을축",
+      "month": "병인",
+      "quality": "low",
+      "legacy": true,
+      "angle": 0,
+      "dimensions": [
+        0.833945643479828,
+        1.3952685542594205,
+        0.5269284248352051
+      ],
+      "localPositionHash": "e2d5079625a94125f2904e094b5a818118296d94d75f6e4a681973c6dc6bc77f",
+      "bodyBox": {
+        "min": [
+          -0.8000169276660152,
+          1.2742496015187907,
+          -0.2613883912563324
+        ],
+        "max": [
+          0.03392871581381279,
+          2.6695181557782113,
+          0.2655400335788727
+        ]
+      },
+      "petBox": {
+        "min": [
+          0.852866437741239,
+          -6.938893903907228e-18,
+          -0.22300528543822723
+        ],
+        "max": [
+          1.3566812553538756,
+          0.6577480370676658,
+          0.4393055564327491
+        ]
+      },
+      "petData": {
+        "pillarRole": "day-branch",
+        "branch": "축",
+        "animal": "ox",
+        "assetStatus": "procedural-placeholder"
+      },
+      "mapping": {
+        "bodyStem": "을",
+        "bodyBranch": "축",
+        "petBranch": "축",
+        "backgroundStem": "병",
+        "backgroundBranch": "인"
+      },
+      "faces": [],
+      "petEyes": [
+        {
+          "name": "ox-eye",
+          "firstHit": "ox-eye"
+        },
+        {
+          "name": "ox-eye",
+          "firstHit": "ox-eye"
+        }
+      ],
+      "petMeshes": [
+        {
+          "name": "ox-head",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-broad-snout",
+          "color": "e4d6bc",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-side-ear",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-outward-horn",
+          "color": "e4d6bc",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-nostril",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-side-ear",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-outward-horn",
+          "color": "e4d6bc",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-nostril",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-eye",
+          "color": "303a37",
+          "roughness": 0.7,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-body",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-leg",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-hoof",
+          "color": "534335",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-leg",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-hoof",
+          "color": "534335",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-leg",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-hoof",
+          "color": "534335",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-leg",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-hoof",
+          "color": "534335",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-tail",
+          "color": "8e6650",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        },
+        {
+          "name": "ox-tail-tuft",
+          "color": "534335",
+          "roughness": 0.84,
+          "metalness": 0,
+          "emission": "000000"
+        }
+      ],
+      "bodyMorphs": [],
+      "pillarRoles": {
+        "body": "day-stem",
+        "pet": "day-branch",
+        "background": "month-pillar"
+      },
+      "modelScale": [
+        1,
+        1,
+        1
+      ],
+      "draws": 50,
+      "triangles": 14372
+    }
+  ],
+  "limits": [
+    "Chrome SwiftShader, not a physical device",
+    "Animals are explicitly temporary procedural geometry; no dedicated animal models were supplied"
+  ]
+}

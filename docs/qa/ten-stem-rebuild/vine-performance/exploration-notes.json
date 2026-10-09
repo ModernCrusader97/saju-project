@@ -1,0 +1,369 @@
+{
+  "baseline": "861584b5ffe1df41a8c8fcf0f948e3b1c20905e2",
+  "redControl": {
+    "status": "FAIL",
+    "scope": "Two equivalent unoptimized modules; expected budget failure before changing production.",
+    "initialMedianGuardPercent": 30,
+    "results": [
+      {
+        "quality": "low",
+        "pairs": [
+          {
+            "order": [
+              "before",
+              "after"
+            ],
+            "before": 547.8999999999069,
+            "after": 548
+          },
+          {
+            "order": [
+              "after",
+              "before"
+            ],
+            "after": 595.3000000002794,
+            "before": 585.6000000000931
+          },
+          {
+            "order": [
+              "before",
+              "after"
+            ],
+            "before": 584.3000000002794,
+            "after": 525.1999999997206
+          },
+          {
+            "order": [
+              "after",
+              "before"
+            ],
+            "after": 534.3999999999069,
+            "before": 521
+          },
+          {
+            "order": [
+              "before",
+              "after"
+            ],
+            "before": 570.8999999999069,
+            "after": 600.5
+          },
+          {
+            "order": [
+              "after",
+              "before"
+            ],
+            "after": 616.8999999999069,
+            "before": 547
+          },
+          {
+            "order": [
+              "before",
+              "after"
+            ],
+            "before": 642.4000000003725,
+            "after": 512.1000000000931
+          }
+        ],
+        "beforeMedianMs": 570.8999999999069,
+        "afterMedianMs": 548,
+        "reductionPercent": 4.0112103695762125
+      }
+    ]
+  },
+  "exploratoryNormalCache": {
+    "status": "FAIL",
+    "results": [
+      {
+        "quality": "low",
+        "pairs": [
+          {
+            "order": [
+              "before",
+              "after"
+            ],
+            "before": 568.2999999998137,
+            "after": 315.09999999962747
+          },
+          {
+            "order": [
+              "after",
+              "before"
+            ],
+            "after": 290.5,
+            "before": 544.5
+          },
+          {
+            "order": [
+              "before",
+              "after"
+            ],
+            "before": 782.7000000001863,
+            "after": 293.8000000002794
+          },
+          {
+            "order": [
+              "after",
+              "before"
+            ],
+            "after": 286.8000000002794,
+            "before": 414.20000000018626
+          },
+          {
+            "order": [
+              "before",
+              "after"
+            ],
+            "before": 434.5,
+            "after": 285.29999999981374
+          },
+          {
+            "order": [
+              "after",
+              "before"
+            ],
+            "after": 287.1999999997206,
+            "before": 477.29999999981374
+          },
+          {
+            "order": [
+              "before",
+              "after"
+            ],
+            "before": 433.79999999981374,
+            "after": 296.39999999990687
+          }
+        ],
+        "beforeMedianMs": 477.29999999981374,
+        "afterMedianMs": 290.5,
+        "reductionPercent": 39.13681122981073
+      },
+      {
+        "quality": "high",
+        "pairs": [
+          {
+            "order": [
+              "before",
+              "after"
+            ],
+            "before": 378.39999999990687,
+            "after": 284.10000000009313
+          },
+          {
+            "order": [
+              "after",
+              "before"
+            ],
+            "after": 303.10000000009313,
+            "before": 372
+          },
+          {
+            "order": [
+              "before",
+              "after"
+            ],
+            "before": 444.89999999990687,
+            "after": 299.40000000037253
+          },
+          {
+            "order": [
+              "after",
+              "before"
+            ],
+            "after": 295.90000000037253,
+            "before": 378
+          },
+          {
+            "order": [
+              "before",
+              "after"
+            ],
+            "before": 397.5,
+            "after": 324.10000000009313
+          },
+          {
+            "order": [
+              "after",
+              "before"
+            ],
+            "after": 303.60000000009313,
+            "before": 385.6999999997206
+          },
+          {
+            "order": [
+              "before",
+              "after"
+            ],
+            "before": 369.20000000018626,
+            "after": 280.60000000009313
+          }
+        ],
+        "beforeMedianMs": 378.39999999990687,
+        "afterMedianMs": 299.40000000037253,
+        "reductionPercent": 20.87737843540005
+      }
+    ],
+    "scope": "Exploratory only: typecheck overlapped part of timing; high improved 20.9% but missed the initial arbitrary 30% guard. Excluded from accepted timings."
+  },
+  "discardedCounterTiming": {
+    "results": [
+      {
+        "quality": "low",
+        "pairs": [
+          {
+            "order": [
+              "before",
+              "after"
+            ],
+            "before": 529.3999999999069,
+            "after": 290.20000000018626
+          },
+          {
+            "order": [
+              "after",
+              "before"
+            ],
+            "after": 321.60000000009313,
+            "before": 577.2000000001863
+          },
+          {
+            "order": [
+              "before",
+              "after"
+            ],
+            "before": 579.1000000000931,
+            "after": 337.6999999997206
+          },
+          {
+            "order": [
+              "after",
+              "before"
+            ],
+            "after": 318.60000000009313,
+            "before": 610.2000000001863
+          },
+          {
+            "order": [
+              "before",
+              "after"
+            ],
+            "before": 639.5,
+            "after": 294.5
+          },
+          {
+            "order": [
+              "after",
+              "before"
+            ],
+            "after": 304.10000000009313,
+            "before": 587.7000000001863
+          },
+          {
+            "order": [
+              "before",
+              "after"
+            ],
+            "before": 424.5,
+            "after": 284
+          }
+        ],
+        "beforeMedianMs": 579.1000000000931,
+        "afterMedianMs": 304.10000000009313,
+        "reductionPercent": 47.48748057329576,
+        "operations": {
+          "before": {
+            "normalCalls": 11928008,
+            "closestCalls": 4155919
+          },
+          "after": {
+            "normalCalls": 62324,
+            "closestCalls": 4155919
+          }
+        }
+      },
+      {
+        "quality": "high",
+        "pairs": [
+          {
+            "order": [
+              "before",
+              "after"
+            ],
+            "before": 700.3999999999069,
+            "after": 326.89999999990687
+          },
+          {
+            "order": [
+              "after",
+              "before"
+            ],
+            "after": 355.89999999990687,
+            "before": 738
+          },
+          {
+            "order": [
+              "before",
+              "after"
+            ],
+            "before": 687.7000000001863,
+            "after": 300.1999999997206
+          },
+          {
+            "order": [
+              "after",
+              "before"
+            ],
+            "after": 298.79999999981374,
+            "before": 657.7999999998137
+          },
+          {
+            "order": [
+              "before",
+              "after"
+            ],
+            "before": 622.9000000003725,
+            "after": 279.70000000018626
+          },
+          {
+            "order": [
+              "after",
+              "before"
+            ],
+            "after": 286.6999999997206,
+            "before": 612.6999999997206
+          },
+          {
+            "order": [
+              "before",
+              "after"
+            ],
+            "before": 606.7999999998137,
+            "after": 283.59999999962747
+          }
+        ],
+        "beforeMedianMs": 657.7999999998137,
+        "afterMedianMs": 298.79999999981374,
+        "reductionPercent": 54.57585892370047,
+        "operations": {
+          "before": {
+            "normalCalls": 11928008,
+            "closestCalls": 4155919
+          },
+          "after": {
+            "normalCalls": 62324,
+            "closestCalls": 4155919
+          }
+        }
+      }
+    ],
+    "scope": "Normal-call counters were initially installed between low and high timing, possibly invalidating Three JIT caches. Excluded; final harness installs counters only after all timing."
+  },
+  "harnessCorrections": [
+    "Compile generated baseline/profile snapshots to JS instead of TS so app typecheck does not include QA-only paths/timer globals. Fresh app typecheck passed afterwards.",
+    "Use 15% median improvement plus every paired sample faster and over 99% fewer normal computations; original red control improved only 4.0%. This is a local evidence gate, not a mobile or absolute latency target."
+  ],
+  "acceptedTimings": [
+    "after-run-1.json",
+    "after-run-2.json"
+  ]
+}

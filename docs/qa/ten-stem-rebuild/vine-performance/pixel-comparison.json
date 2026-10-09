@@ -1,0 +1,192 @@
+{
+  "status": "PASS",
+  "baseline": "861584b5ffe1df41a8c8fcf0f948e3b1c20905e2",
+  "reference": "docs/qa/ten-stem-rebuild/after-browser-report.json",
+  "cases": 23,
+  "results": [
+    {
+      "day": "갑자",
+      "quality": "high",
+      "angle": 0,
+      "before": "553c466c8bd16724320e93c92f63a51c62f503460fba3d30791891f762f0efe5",
+      "after": "553c466c8bd16724320e93c92f63a51c62f503460fba3d30791891f762f0efe5",
+      "equal": true
+    },
+    {
+      "day": "을축",
+      "quality": "high",
+      "angle": 0,
+      "before": "fa30bbf4b1205a5da806cca5849264a7f140f986f3d7abb3c530e75978751a87",
+      "after": "fa30bbf4b1205a5da806cca5849264a7f140f986f3d7abb3c530e75978751a87",
+      "equal": true
+    },
+    {
+      "day": "병인",
+      "quality": "high",
+      "angle": 0,
+      "before": "6f35546bbe9e443abb184bfce63efd6953757a381c66fa0b42b07101f863c148",
+      "after": "6f35546bbe9e443abb184bfce63efd6953757a381c66fa0b42b07101f863c148",
+      "equal": true
+    },
+    {
+      "day": "정묘",
+      "quality": "high",
+      "angle": 0,
+      "before": "72b2b5adef76d72b2ffd6aae4ebb0d19293b20a564d32fa6fffa1fa2a660800f",
+      "after": "72b2b5adef76d72b2ffd6aae4ebb0d19293b20a564d32fa6fffa1fa2a660800f",
+      "equal": true
+    },
+    {
+      "day": "무진",
+      "quality": "high",
+      "angle": 0,
+      "before": "2518a95a1d1bbacb9bbc8ea92860fcf634405501d6d27df6b889766517d40d4c",
+      "after": "2518a95a1d1bbacb9bbc8ea92860fcf634405501d6d27df6b889766517d40d4c",
+      "equal": true
+    },
+    {
+      "day": "기사",
+      "quality": "high",
+      "angle": 0,
+      "before": "b4bbcf9c4f25961cf763d96d4c76f3823ea6cf528a70a7818d3cb61b76bf231f",
+      "after": "b4bbcf9c4f25961cf763d96d4c76f3823ea6cf528a70a7818d3cb61b76bf231f",
+      "equal": true
+    },
+    {
+      "day": "경오",
+      "quality": "high",
+      "angle": 0,
+      "before": "1e49e3c07f938f33ade640ef8be5625f68382c3aa0c087f0a51ac81db2d737e2",
+      "after": "1e49e3c07f938f33ade640ef8be5625f68382c3aa0c087f0a51ac81db2d737e2",
+      "equal": true
+    },
+    {
+      "day": "신미",
+      "quality": "high",
+      "angle": 0,
+      "before": "a4a1b77228ce51f0ed081dd80b8c101b1e0674deaf11ebc5ead6bff28eab8beb",
+      "after": "a4a1b77228ce51f0ed081dd80b8c101b1e0674deaf11ebc5ead6bff28eab8beb",
+      "equal": true
+    },
+    {
+      "day": "임신",
+      "quality": "high",
+      "angle": 0,
+      "before": "8c967202ff30a2148e0e765d4cfeafda068c63723d7c1f00fe7a0684dd650a18",
+      "after": "8c967202ff30a2148e0e765d4cfeafda068c63723d7c1f00fe7a0684dd650a18",
+      "equal": true
+    },
+    {
+      "day": "계유",
+      "quality": "high",
+      "angle": 0,
+      "before": "259f350ac07fa4aad75748e461151dfff03389beb6a8ef462f57dc30b52c11e1",
+      "after": "259f350ac07fa4aad75748e461151dfff03389beb6a8ef462f57dc30b52c11e1",
+      "equal": true
+    },
+    {
+      "day": "갑자",
+      "quality": "low",
+      "angle": 0,
+      "before": "f14646a351d17a85dd5357cf81d756ec773f99bfe792c13a9c818f6ddc62babd",
+      "after": "f14646a351d17a85dd5357cf81d756ec773f99bfe792c13a9c818f6ddc62babd",
+      "equal": true
+    },
+    {
+      "day": "을축",
+      "quality": "low",
+      "angle": 0,
+      "before": "b2b9df1cda9f1a1c9f21e33a62e5c6a0981fef1d5252247519391e51bc66719a",
+      "after": "b2b9df1cda9f1a1c9f21e33a62e5c6a0981fef1d5252247519391e51bc66719a",
+      "equal": true
+    },
+    {
+      "day": "병인",
+      "quality": "low",
+      "angle": 0,
+      "before": "8bc9fae47d20a55fc2b9da6997a31b82717a10a62f30eb2948dad298bc7a1cce",
+      "after": "8bc9fae47d20a55fc2b9da6997a31b82717a10a62f30eb2948dad298bc7a1cce",
+      "equal": true
+    },
+    {
+      "day": "정묘",
+      "quality": "low",
+      "angle": 0,
+      "before": "a0851d1452328f5619b5971e4b291a27c438491cd490ac364b220a92cd34f479",
+      "after": "a0851d1452328f5619b5971e4b291a27c438491cd490ac364b220a92cd34f479",
+      "equal": true
+    },
+    {
+      "day": "무진",
+      "quality": "low",
+      "angle": 0,
+      "before": "ef90ce622acb97244bb66b27d373ee04446001e7d3d7905586c71676fbf94811",
+      "after": "ef90ce622acb97244bb66b27d373ee04446001e7d3d7905586c71676fbf94811",
+      "equal": true
+    },
+    {
+      "day": "기사",
+      "quality": "low",
+      "angle": 0,
+      "before": "212c9cc18850daacaa925fa5cb81db2094d586a174e8fa6fd0e117efae0d2566",
+      "after": "212c9cc18850daacaa925fa5cb81db2094d586a174e8fa6fd0e117efae0d2566",
+      "equal": true
+    },
+    {
+      "day": "경오",
+      "quality": "low",
+      "angle": 0,
+      "before": "0b2c9451c1cb2b384ec828af7902d7d456ac1efc8d093871f1e7a54ae8eabf51",
+      "after": "0b2c9451c1cb2b384ec828af7902d7d456ac1efc8d093871f1e7a54ae8eabf51",
+      "equal": true
+    },
+    {
+      "day": "신미",
+      "quality": "low",
+      "angle": 0,
+      "before": "c365943951b9cf043c8e503099b2d4aeb6886a92012c0cddd32521d5a9f4f686",
+      "after": "c365943951b9cf043c8e503099b2d4aeb6886a92012c0cddd32521d5a9f4f686",
+      "equal": true
+    },
+    {
+      "day": "임신",
+      "quality": "low",
+      "angle": 0,
+      "before": "0e2f0211117a5ef86f50fadab257dfc22943c14e368925dcd9b998cf6c09a7a5",
+      "after": "0e2f0211117a5ef86f50fadab257dfc22943c14e368925dcd9b998cf6c09a7a5",
+      "equal": true
+    },
+    {
+      "day": "계유",
+      "quality": "low",
+      "angle": 0,
+      "before": "32c7fb3bc65929654a1108e6f39e47fa8d15c7d8d53fdaa22246207307bdb541",
+      "after": "32c7fb3bc65929654a1108e6f39e47fa8d15c7d8d53fdaa22246207307bdb541",
+      "equal": true
+    },
+    {
+      "day": "갑자",
+      "quality": "high",
+      "angle": 0.7853981633974483,
+      "before": "b9506997a40fcc943fd6ab058889980427d6e9ce6d96263de33a1619502e9c26",
+      "after": "b9506997a40fcc943fd6ab058889980427d6e9ce6d96263de33a1619502e9c26",
+      "equal": true
+    },
+    {
+      "day": "을축",
+      "quality": "high",
+      "angle": 1.5707963267948966,
+      "before": "d901df21c531f9ca4932ea9e5af9f64602336c665b8b4c3ced9058f18d095adf",
+      "after": "d901df21c531f9ca4932ea9e5af9f64602336c665b8b4c3ced9058f18d095adf",
+      "equal": true
+    },
+    {
+      "day": "기사",
+      "quality": "high",
+      "angle": 1.5707963267948966,
+      "before": "ed63d866e74312d039702b6c1396d4e36e6c5db31cb9192a65fc9a64866f652c",
+      "after": "ed63d866e74312d039702b6c1396d4e36e6c5db31cb9192a65fc9a64866f652c",
+      "equal": true
+    }
+  ]
+}
