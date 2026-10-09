@@ -20,6 +20,15 @@ const cases = [
   ['emoji pair crosses the limit', '가'.repeat(49) + '😀', '가'.repeat(49)],
   ['trim before a crossing emoji', '  ' + '가'.repeat(49) + '😀  ', '가'.repeat(49)],
   ['crossing pair with trailing text removes just the cut unit', '가'.repeat(49) + '😀끝', '가'.repeat(49)],
+  ['space exposed by a crossing pair is normalized once', '가'.repeat(48) + ' 😀', '가'.repeat(48)],
+  ['multiple spaces exposed by a crossing pair are normalized once', '가'.repeat(47) + '  😀', '가'.repeat(47)],
+  ['tab exposed by a crossing pair is normalized once', '가'.repeat(48) + '\t😀', '가'.repeat(48)],
+  ['line endings exposed by a crossing pair are normalized once', '가'.repeat(47) + '\r\n😀', '가'.repeat(47)],
+  ['Unicode spaces exposed by a crossing pair are normalized once', '가'.repeat(47) + '\u00a0\u3000😀', '가'.repeat(47)],
+  ['BOM exposed by a crossing pair is normalized once', '가'.repeat(48) + '\ufeff😀', '가'.repeat(48)],
+  ['exposed space with trailing text is normalized once', '가'.repeat(48) + ' 😀끝', '가'.repeat(48)],
+  ['zero-width space keeps the existing trim semantics', '가'.repeat(48) + '\u200b😀', '가'.repeat(48) + '\u200b'],
+  ['internal whitespace remains inside the retained prefix', '가'.repeat(47) + ' 가😀', '가'.repeat(47) + ' 가'],
   ['emoji starts after the limit', '가'.repeat(50) + '😀', '가'.repeat(50)],
   ['25 emoji still use 50 UTF-16 units', '😀'.repeat(25), '😀'.repeat(25)],
   ['26 emoji do not become a 50-code-point policy', '😀'.repeat(26), '😀'.repeat(25)],
@@ -58,4 +67,23 @@ test('client-side analysis reuses the same normalized name', () => {
   assert.equal(input.name, '가'.repeat(49));
   assert.equal(analyzeSaju(input).name, input.name);
   assert.equal(analyzeSaju({ ...birth, name }).name, input.name);
+});
+
+test('all existing trim whitespace stays idempotent when exposed by a crossing pair', () => {
+  const whitespace = ['\t', '\n', '\v', '\f', '\r', ' ', '\u00a0', '\u1680',
+    ...Array.from({ length: 11 }, (_, index) => String.fromCharCode(0x2000 + index)),
+    '\u2028', '\u2029', '\u202f', '\u205f', '\u3000', '\ufeff'];
+  for (const unit of whitespace) for (let count = 1; count <= 5; count++) {
+    const expected = '가'.repeat(49 - count);
+    const input = parseSajuInput({ ...birth, name: expected + unit.repeat(count) + '😀' });
+    assert.equal(input.name, expected);
+    assert.equal(parseSajuInput(input).name, input.name);
+    assert.equal(analyzeSaju(input).name, input.name);
+  }
+});
+
+test('ordinary 50-unit truncation retains its existing whitespace behavior', () => {
+  const raw = '가'.repeat(49) + ' 끝';
+  assert.equal(parseSajuInput({ ...birth, name: raw }).name, '가'.repeat(49) + ' ');
+  assert.equal(parseSajuInput({ ...birth, name: '  합성  이름  ' }).name, '합성  이름');
 });

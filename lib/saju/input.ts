@@ -67,7 +67,8 @@ export function parseSajuInput(value: unknown): SajuInput {
   const nextUnit = trimmedName.charCodeAt(50);
   // Undo one unit when the existing 50-unit cut splits a surrogate pair.
   if (lastUnit >= 0xd800 && lastUnit <= 0xdbff && nextUnit >= 0xdc00 && nextUnit <= 0xdfff) {
-    name = name.slice(0, -1);
+    // Keep repeated parsing stable when the rollback exposes trailing whitespace.
+    name = name.slice(0, -1).trimEnd();
   }
   if (!name) throw new SajuInputError("이름을 입력해주세요.");
 

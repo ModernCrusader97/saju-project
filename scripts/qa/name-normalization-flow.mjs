@@ -8,7 +8,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { Miniflare } from 'miniflare';
 
 const root = fileURLToPath(new URL('../..', import.meta.url));
-const output = path.join(root, 'outputs/name-utf16-boundary');
+const output = path.join(root, 'outputs/name-idempotence');
 await fs.mkdir(output, { recursive: true });
 const require = createRequire(import.meta.url);
 const { createLoader } = require('./load-ts.cjs');
@@ -19,13 +19,17 @@ const birth = { gender: 'male', birthYear: 1995, birthMonth: 5, birthDay: 15,
   birthHour: 13, birthMinute: 30, isUnknownTime: false, calendarType: 'solar' };
 const cases = [
   { label: 'ordinary name and trim', raw: '  합성 이름  ', expected: '합성 이름' },
+  { label: 'over 50 BMP units', raw: '가'.repeat(51), expected: '가'.repeat(50) },
   { label: 'emoji fits at 50 units', raw: '가'.repeat(48) + '😀', expected: '가'.repeat(48) + '😀' },
   { label: 'emoji crosses 50 units', raw: '가'.repeat(49) + '😀', expected: '가'.repeat(49) },
+  { label: 'space exposed by crossing emoji', raw: '가'.repeat(48) + ' 😀', expected: '가'.repeat(48) },
+  { label: 'Unicode spaces exposed by crossing emoji', raw: '가'.repeat(47) + '\u00a0\u3000😀', expected: '가'.repeat(47) },
   { label: '26 emoji retain the 50-unit limit', raw: '😀'.repeat(26), expected: '😀'.repeat(25) },
 ];
 const owner = { 'oai-authenticated-user-id': 'name-boundary-fixture', 'oai-authenticated-user-email': 'qa@example.invalid' };
 const other = { 'oai-authenticated-user-id': 'name-boundary-other', 'oai-authenticated-user-email': 'other@example.invalid' };
-const checks = [], outbound = [], errors = [];
+const checks = [], outbound = [], errors = [], observations = [];
+const fortuneNames = new Map();
 async function check(name, run) {
   try { await run(); checks.push({ name, status: 'PASS' }); }
   catch (error) { checks.push({ name, status: 'FAIL', error: error.message }); }
@@ -72,8 +76,14 @@ try {
   for (const fixture of cases) await check('API/local calculation/detail/summary: ' + fixture.label, async () => {
     const created = await request('/api/saju', { ...birth, name: fixture.raw });
     assert.equal(created.response.status, 200);
+    fortuneNames.set(fixture.label, created.data.fortune.analysis.name);
+    const input = parseSajuInput({ ...birth, name: fixture.raw });
+    observations.push({ flow: 'fortune', fixture: fixture.label, firstUnits: input.name.length,
+      secondUnits: parseSajuInput(input).name.length, storedUnits: created.data.fortune.analysis.name.length,
+      namesAgree: input.name === created.data.fortune.analysis.name });
+    normalized(input.name, fixture.expected);
     normalized(created.data.fortune.analysis.name, fixture.expected);
-    const local = analyzeSaju(parseSajuInput({ ...birth, name: fixture.raw }));
+    const local = analyzeSaju(input);
     assert.equal(local.name, created.data.fortune.analysis.name);
     const id = created.data.fortune.id;
     normalized((await request('/api/saju/' + id)).data.fortune.analysis.name, fixture.expected);
@@ -82,19 +92,27 @@ try {
   });
   const map = await request('/api/guin', { ...birth, name: '합성 지도' });
   assert.equal(map.response.status, 200);
-  const crossing = cases[2];
-  await check('map owner reuses the shared normalization', async () => {
-    const created = await request('/api/guin', { ...birth, name: crossing.raw });
+  for (const fixture of cases) await check('map owner/save/readback: ' + fixture.label, async () => {
+    const created = await request('/api/guin', { ...birth, name: fixture.raw });
     assert.equal(created.response.status, 200);
-    normalized(created.data.guinMap.ownerName, crossing.expected);
-    assert.equal(created.data.guinMap.guins[0].name, crossing.expected + ' (나)');
+    observations.push({ flow: 'map owner', fixture: fixture.label, storedUnits: created.data.guinMap.ownerName.length,
+      namesAgree: created.data.guinMap.ownerName === fortuneNames.get(fixture.label) });
+    normalized(created.data.guinMap.ownerName, fixture.expected);
+    assert.equal(created.data.guinMap.ownerName, fortuneNames.get(fixture.label));
+    assert.equal(created.data.guinMap.guins[0].name, fixture.expected + ' (나)');
+    const saved = (await request('/api/guin/' + created.data.guinMap.id)).data.guinMap;
+    normalized(saved.ownerName, fixture.expected);
+    assert.equal(saved.guins[0].name, fixture.expected + ' (나)');
   });
-  await check('map friend reuses the shared normalization', async () => {
-    const added = await request('/api/guin/' + map.data.guinMap.id, { ...birth, friendName: crossing.raw });
+  for (const fixture of cases) await check('map friend/save/readback: ' + fixture.label, async () => {
+    const added = await request('/api/guin/' + map.data.guinMap.id, { ...birth, friendName: fixture.raw });
     assert.equal(added.response.status, 200);
-    normalized(added.data.newPerson.name, crossing.expected);
+    observations.push({ flow: 'map friend', fixture: fixture.label, storedUnits: added.data.newPerson.name.length,
+      namesAgree: added.data.newPerson.name === fortuneNames.get(fixture.label) });
+    normalized(added.data.newPerson.name, fixture.expected);
+    assert.equal(added.data.newPerson.name, fortuneNames.get(fixture.label));
     const saved = (await request('/api/guin/' + map.data.guinMap.id)).data.guinMap;
-    normalized(saved.guins.find(person => person.id === added.data.newPerson.id).name, crossing.expected);
+    normalized(saved.guins.find(person => person.id === added.data.newPerson.id).name, fixture.expected);
   });
   await check('invalid names still return 400 and save no records', async () => {
     const count = async () => (await d1.prepare('SELECT COUNT(*) AS count FROM fortunes').first()).count;
@@ -143,6 +161,9 @@ try {
     assert.equal(response.status(), 200);
     normalized((await response.json()).fortune.analysis.name, fixture.expected);
     await page.getByRole('heading', { name: '이번에 남긴 기록', exact: true }).waitFor();
+    const heading = page.getByRole('heading', { name: fixture.expected + '님의 사주팔자 (四柱)', exact: true });
+    await heading.waitFor();
+    assert.equal((await heading.textContent()).trim(), fixture.expected + '님의 사주팔자 (四柱)');
   });
   await check('browser whitespace name keeps validation and makes no API request', async () => {
     await openForm();
@@ -165,7 +186,7 @@ finally {
   if (browser) await browser.close();
   await mf.dispose();
 }
-const report = { status: checks.every(check => check.status === 'PASS') ? 'PASS' : 'FAIL', browserVersion, checks,
+const report = { status: checks.every(check => check.status === 'PASS') ? 'PASS' : 'FAIL', browserVersion, checks, observations,
   limits: ['Synthetic disposable local D1 and identity only', 'No hosted login, production records or external AI calls', 'No new character-count, grapheme or question policy'] };
 const phase = process.env.SAJU_QA_PHASE === 'before' ? 'before' : 'after';
 await fs.writeFile(path.join(output, 'flow-' + phase + '-report.json'), JSON.stringify(report, null, 2) + '\n');
