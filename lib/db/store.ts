@@ -25,4 +25,14 @@ export const db={
  async addFriendToGuinMap(id:string,friend:GuinPerson):Promise<GuinMapData|null>{const {owner,db}=await context();const row=await db.prepare("UPDATE guin_maps SET data=json_insert(data,'$.guins[#]',json(?)) WHERE id=? AND owner_id=? RETURNING data").bind(JSON.stringify(friend),id,owner).first<{data:string}>();return row?JSON.parse(row.data):null;},
  async getChat(id:string):Promise<Array<{role:'user'|'doryeong';content:string;createdAt:string}>>{const {owner,db}=await context();const rows=await db.prepare('SELECT role,content,created_at AS createdAt FROM chats WHERE fortune_id=? AND owner_id=? ORDER BY sequence').bind(id,owner).all<{role:'user'|'doryeong';content:string;createdAt:string}>();return rows.results;},
  async addChatMessage(id:string,role:'user'|'doryeong',content:string){const {owner,db}=await context();const result=await db.prepare('INSERT INTO chats (owner_id,fortune_id,role,content,created_at) SELECT ?,?,?,?,? WHERE EXISTS (SELECT 1 FROM fortunes WHERE id=? AND owner_id=?)').bind(owner,id,role,content,new Date().toISOString(),id,owner).run();if(result.meta.changes!==1)throw new DataStoreError('사주 결과를 찾을 수 없습니다.',404);},
+ async addChatExchange(id:string,question:string,reply:string){
+  const {owner,db}=await context();
+  const createdAt=new Date().toISOString();
+  const insert=db.prepare('INSERT INTO chats (owner_id,fortune_id,role,content,created_at) SELECT ?,?,?,?,? WHERE EXISTS (SELECT 1 FROM fortunes WHERE id=? AND owner_id=?)');
+  const results=await db.batch([
+   insert.bind(owner,id,'user',question,createdAt,id,owner),
+   insert.bind(owner,id,'doryeong',reply,createdAt,id,owner),
+  ]);
+  if(results.some(result=>result.meta.changes!==1))throw new DataStoreError('사주 결과를 찾을 수 없습니다.',404);
+ },
 };

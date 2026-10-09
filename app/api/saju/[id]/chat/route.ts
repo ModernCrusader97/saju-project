@@ -20,14 +20,11 @@ export async function POST(
       return NextResponse.json({ error: "사주 결과를 찾을 수 없습니다." }, { status: 404 });
     }
 
-    // 사용자 질문 저장
-    await db.addChatMessage(id, "user", cleanQuestion);
-
     // AI 도령 답변 생성
     const reply = await askDoryeong(fortune, cleanQuestion);
 
-    // 도령 답변 저장
-    await db.addChatMessage(id, "doryeong", reply);
+    // 질문과 답변을 함께 저장해 실패한 대화가 일부만 남지 않도록 합니다.
+    await db.addChatExchange(id, cleanQuestion, reply);
 
     return NextResponse.json({ success: true, reply });
   } catch (error: any) {
