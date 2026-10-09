@@ -17,7 +17,16 @@ Historical model/runtime/QA reports are preserved as evidence of their original 
 
 ## Known omissions and limits
 
-- Previously reported mobile-home candidate `c5d13cf` and spirit/material candidate `a97c418` directories are absent in this current workspace. Their previously inaccessible Library copies were not retried. They are NOT represented by this archive.
+This is a historical preservation set, NOT a complete backup of the latest selected models or latest application revision. The following five items are explicitly missing:
+
+1. Latest selected Dragon C model (용 C): SHA-256 `2745a970701c86a3bc74eb0008b597607022a5c7ee576d79b287970ac977d366` has no match in the preserved file inventories, including the 54 GLBs.
+2. Latest pig limb candidate (돼지 팔다리 후보): SHA-256 `d1c6f8625b5fb97cdbde102455cdbf181f335942b7cb0f87aeb07a7fc0fba290` has no match in the preserved file inventories, including the 54 GLBs.
+3. Restored application revision `2709bb7`: not included and unavailable in the local checkout used for this archive. The preserved application snapshot is `843a4a0`.
+4. Mobile-home candidate `c5d13cf`: its previously reported local directory is absent in the current workspace; its previously inaccessible Library copy was not retried.
+5. Spirit/material candidate `a97c418`: its previously reported local directory is absent in the current workspace; its previously inaccessible Library copy was not retried.
+
+Older B ten-stem v1/v2 Blender/GLB source versions ARE preserved. Their inclusion does not imply that the missing latest home/material candidates, Dragon C, pig candidate, or revision `2709bb7` were preserved.
+
 - Other historical files not present in the accessible local authoring workspace cannot be claimed preserved here.
 - Existing redundant model delivery ZIPs were replaced by exact source/file preservation with hashes. Render-frame intermediates and Python caches are excluded; original preview videos and comparison images are retained.
 - Temporary QA output copies, upload receipts, transfer utilities, internal planning notes and hosting metadata are omitted. Original standalone user-deliverable ZIPs are retained alongside their separate source/QA records for reproducibility.
