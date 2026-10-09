@@ -140,7 +140,7 @@ export default function GuinPage() {
                 생년월일 (양력 기준)
               </label>
               <div className="grid grid-cols-3 gap-2">
-                <div className="flex items-center rounded-xl border border-doryeong-border bg-doryeong-ivory px-2 py-2.5">
+                <div className="flex flex-col min-[360px]:flex-row items-center rounded-xl border border-doryeong-border bg-doryeong-ivory px-2 py-2.5">
                   <input
                     type="number"
                     min="1900"
@@ -151,7 +151,7 @@ export default function GuinPage() {
                   />
                   <span className="text-xs text-doryeong-textMuted ml-1">년</span>
                 </div>
-                <div className="flex items-center rounded-xl border border-doryeong-border bg-doryeong-ivory px-2 py-2.5">
+                <div className="flex flex-col min-[360px]:flex-row items-center rounded-xl border border-doryeong-border bg-doryeong-ivory px-2 py-2.5">
                   <input
                     type="number"
                     min="1"
@@ -162,7 +162,7 @@ export default function GuinPage() {
                   />
                   <span className="text-xs text-doryeong-textMuted ml-1">월</span>
                 </div>
-                <div className="flex items-center rounded-xl border border-doryeong-border bg-doryeong-ivory px-2 py-2.5">
+                <div className="flex flex-col min-[360px]:flex-row items-center rounded-xl border border-doryeong-border bg-doryeong-ivory px-2 py-2.5">
                   <input
                     type="number"
                     min="1"

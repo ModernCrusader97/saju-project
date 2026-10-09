@@ -31,7 +31,7 @@ export function decodeUniverse(value: unknown): UniverseSnapshot | null {
   if (s.version !== 1 || !s.birth || !['spirit', 'planet'].includes(s.mode)
     || !['example', 'calculated'].includes(s.source) || !validMasks.has(s.maskStyle)
     || ![s.dayKey, s.monthKey, s.yearKey, s.hourKey].every(key => validKeys.has(key))) return null;
-  if (typeof s.birth.name !== 'string' || s.birth.name.length > 40 || typeof s.birth.unknown !== 'boolean'
+  if (typeof s.birth.name !== 'string' || s.birth.name.length > 50 || typeof s.birth.unknown !== 'boolean'
     || !['year', 'month', 'day', 'hour', 'minute'].every(key => {
       const field = s.birth[key as keyof UniverseBirth];
       return typeof field === 'string' && field.length <= 8;
@@ -43,11 +43,12 @@ export function decodeUniverse(value: unknown): UniverseSnapshot | null {
 }
 
 export function calculateUniverse(birth: UniverseBirth, current = EXAMPLE_UNIVERSE): UniverseSnapshot {
-  const result = analyzeSaju(parseSajuInput({ name: birth.name.trim() || '나', gender: 'male',
+  const input = parseSajuInput({ name: birth.name.trim() || '나', gender: 'male',
     birthYear: birth.year, birthMonth: birth.month, birthDay: birth.day,
     birthHour: birth.unknown ? undefined : birth.hour, birthMinute: birth.unknown ? undefined : birth.minute,
-    isUnknownTime: birth.unknown, calendarType: 'solar' }));
-  return { ...current, birth, source: 'calculated',
+    isUnknownTime: birth.unknown, calendarType: 'solar' });
+  const result = analyzeSaju(input);
+  return { ...current, birth: { ...birth, name: input.name }, source: 'calculated',
     dayKey: result.dayPillar.gan + result.dayPillar.ji,
     monthKey: result.monthPillar.gan + result.monthPillar.ji,
     yearKey: result.yearPillar.gan + result.yearPillar.ji,
