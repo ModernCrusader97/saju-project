@@ -1,0 +1,2648 @@
+[
+  {
+    "path": "b_five_elements_v1/audit.json",
+    "bytes": 1346,
+    "sha256": "6d07d516aad265b1544c66f62edfbd88444dad67c373d2cef796242a17853106",
+    "archive": "b_five_elements_v1--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/build.log",
+    "bytes": 37865,
+    "sha256": "2790c466a8af39985271493ea9cd28109bcdd80502ca451dcf603949db55cde8",
+    "archive": "b_five_elements_v1--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/build.py",
+    "bytes": 4748,
+    "sha256": "b8f9d798997b3848b73459287923873a3f5e24f391dde79f4baec00690b5dfd7",
+    "archive": "b_five_elements_v1--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/check.log",
+    "bytes": 3492,
+    "sha256": "aab362fd4ed0b89bcc2f775f1cd3cfb1b7b1ff6a2daf99cbeedb1c950ee02f1b",
+    "archive": "b_five_elements_v1--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/check_exports.py",
+    "bytes": 736,
+    "sha256": "81d0efa86be69f711f4aed322c384605d31305e19020398362915192c1fcce5c",
+    "archive": "b_five_elements_v1--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/corrected/README.txt",
+    "bytes": 1837,
+    "sha256": "bd5c05605e27cd5b987e8ca097e2975d8dcbd9692cf78206d5b68a5d56c4fb3a",
+    "archive": "b_five_elements_v1--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/corrected/audit.json",
+    "bytes": 1346,
+    "sha256": "c294d7177521e84e1feb4db6a164c2952abf3ac475f9841a0ddfafa9de1d976a",
+    "archive": "b_five_elements_v1--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/corrected/build.log",
+    "bytes": 38764,
+    "sha256": "e76510868070bc1ae28893a039c670d993f0935fb9df085e9c897333a27f0e62",
+    "archive": "b_five_elements_v1--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/corrected/build.py",
+    "bytes": 5952,
+    "sha256": "2157c6e02f17b105dff5135bdcae56e6e0ffc06a925aebc906981863f97e9407",
+    "archive": "b_five_elements_v1--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/corrected/check.log",
+    "bytes": 3492,
+    "sha256": "48bcc1b94a16532734d72c1500315fe0d2ecb47f1444573b691e360888178ce8",
+    "archive": "b_five_elements_v1--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/corrected/check_exports.py",
+    "bytes": 736,
+    "sha256": "81d0efa86be69f711f4aed322c384605d31305e19020398362915192c1fcce5c",
+    "archive": "b_five_elements_v1--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/corrected/earth.blend",
+    "bytes": 1332676,
+    "sha256": "82f0cb5e45b9abb689bf174a8c8cc4abe6816f1d444e646645d38bb5c3021ba2",
+    "archive": "b_five_elements_v1--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/corrected/earth.glb",
+    "bytes": 472620,
+    "sha256": "122ac1d6354387e33b4dcf99dfa3f08dec9de14212af04d3191902554af07c51",
+    "archive": "b_five_elements_v1--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/corrected/earth.png",
+    "bytes": 347071,
+    "sha256": "d2842a46c8bd3b570205deb77b10658fba57c2f8507fe8db3f160d9d2c1fce4e",
+    "archive": "b_five_elements_v1--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/corrected/earth_audit.json",
+    "bytes": 271,
+    "sha256": "8d327d974930268724dcfc14e595c8522bc56fdfeb82b3a3a52241b3e728f460",
+    "archive": "b_five_elements_v1--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/corrected/fire.blend",
+    "bytes": 1332756,
+    "sha256": "a45fcbd2022bba19f42dd93b3d0167fcf1c6a9679de0b591610b315595909256",
+    "archive": "b_five_elements_v1--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/corrected/fire.glb",
+    "bytes": 472820,
+    "sha256": "87470ffb0a074335d494e826a33f739cc7af09b7d421b2fd612ea214924b7fa2",
+    "archive": "b_five_elements_v1--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/corrected/fire.png",
+    "bytes": 377135,
+    "sha256": "1a0775996e3b45da40f1ff99a39ec3b5423fa62f56e9818ca7df0d370aa0639e",
+    "archive": "b_five_elements_v1--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/corrected/fire_audit.json",
+    "bytes": 270,
+    "sha256": "0fec9dd7b108ffb116186b4b46dd1bff1157deaf152cf13b19bc9ef5154ddb9e",
+    "archive": "b_five_elements_v1--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/corrected/five_up.png",
+    "bytes": 509939,
+    "sha256": "2b04e2d71a6c9a4cbd3823c0f00e3da791193728dd2300e488826bee919eb1ff",
+    "archive": "b_five_elements_v1--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/corrected/five_up_128.png",
+    "bytes": 81162,
+    "sha256": "4f0fd0e0cd6665ea0fa69b52b43fe4af25a95181eee0f549f6c88d93cbe5e670",
+    "archive": "b_five_elements_v1--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/corrected/metal.blend",
+    "bytes": 1224724,
+    "sha256": "7368228fc0601f00adb583db6997fb03f2ce8736ce92ee79f6da5b1ceb6b46ac",
+    "archive": "b_five_elements_v1--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/corrected/metal.glb",
+    "bytes": 393192,
+    "sha256": "5b6b31ae9b0ca27393b8f1821509e1d669f948d46cff59a4ab6a8ed1abea8dfa",
+    "archive": "b_five_elements_v1--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/corrected/metal.png",
+    "bytes": 330562,
+    "sha256": "b6f1ab5a65e2719b241788e0da920599d629dc3a2ca424152faa7a603696e9cd",
+    "archive": "b_five_elements_v1--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/corrected/metal_audit.json",
+    "bytes": 271,
+    "sha256": "8e11fcf09053c62ad466f4e2f0db40d55bcd1fc7942b18b9b223cc728e42e030",
+    "archive": "b_five_elements_v1--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/corrected/roundtrip.json",
+    "bytes": 1657,
+    "sha256": "87128faa216128ef3e95989f1c5eaa194d5d96dfa5ac3129258b36e4864770d0",
+    "archive": "b_five_elements_v1--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/corrected/sheets.py",
+    "bytes": 1246,
+    "sha256": "8cd09d577deea9d48e6ae7a6bd8e455c0d34bcda19dafb69315b7bc3bcd9fcf4",
+    "archive": "b_five_elements_v1--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/corrected/water.blend",
+    "bytes": 1224724,
+    "sha256": "6023776dc0cd574a227d28cd82655e65e1c1077262806a4dfdcd617431f2ac66",
+    "archive": "b_five_elements_v1--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/corrected/water.glb",
+    "bytes": 393360,
+    "sha256": "d2ec723bb67505d330952764f04800936c22b0caa2131e9f96d085c625a70453",
+    "archive": "b_five_elements_v1--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/corrected/water.png",
+    "bytes": 404744,
+    "sha256": "4ab67e045f5ab86819543d059fc047be9d9158712af7c59123c1220267bb61f7",
+    "archive": "b_five_elements_v1--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/corrected/water_audit.json",
+    "bytes": 271,
+    "sha256": "c28171bfa61e4c798f1ec1b410ab84445b57b8d5ec82918101a812670c82ae67",
+    "archive": "b_five_elements_v1--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/corrected/wood.blend",
+    "bytes": 1334392,
+    "sha256": "268d825105b740ece1dfccdec02f435a06ecdc657c0b130504d0a1e2ae5c66d6",
+    "archive": "b_five_elements_v1--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/corrected/wood.glb",
+    "bytes": 437908,
+    "sha256": "da24fd7f64b18eab3cce3b5dba8f10eb64cbab38b6f4cea5d965062469826e01",
+    "archive": "b_five_elements_v1--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/corrected/wood.png",
+    "bytes": 358501,
+    "sha256": "2b1e13fa6dfe657fc81d46b6eae999ea70d231f68ef6d68a985309e6e7943692",
+    "archive": "b_five_elements_v1--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/corrected/wood_audit.json",
+    "bytes": 271,
+    "sha256": "c6a5159fb8c7f31732a6085f648b19e0b3fd52a5947574e17663a487fd869bb1",
+    "archive": "b_five_elements_v1--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/earth.blend",
+    "bytes": 1224724,
+    "sha256": "815a9a0d583200ee94336e1fddea8af2450d2a7927403bc7582c6645251c4dad",
+    "archive": "b_five_elements_v1--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/earth.glb",
+    "bytes": 393192,
+    "sha256": "620499851e3c8708a912c14e4e82c8082ea023c9861f836a3c42918e6ab2bc34",
+    "archive": "saju-models-materials-archive--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/earth.png",
+    "bytes": 323790,
+    "sha256": "816b89ac6af0e125e34f24f7b645078a24689d64746bc3b9e6a04463f5da24cd",
+    "archive": "saju-models-materials-archive--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/fire.blend",
+    "bytes": 1332676,
+    "sha256": "d546bb2b28155f971200a45d9e0465ed8b3d0dbef5976c9172feaca01574722f",
+    "archive": "saju-models-materials-archive--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/fire.glb",
+    "bytes": 472744,
+    "sha256": "537662b92cb39dd49c61c44b4cf8d4eaf36062b6f5e40c56ea2ee8d32f5bba70",
+    "archive": "saju-models-materials-archive--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/fire.png",
+    "bytes": 341612,
+    "sha256": "6937c241d13fb81c34b619bc501f9df7f58d39c925287637c912e422b7ecb3e5",
+    "archive": "saju-models-materials-archive--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/five_up.png",
+    "bytes": 450345,
+    "sha256": "18633c4e973cf4565b6e3ebf012c3899ea2a410cadd070d265887e3b2f9fbb52",
+    "archive": "saju-models-materials-archive--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/five_up_128.png",
+    "bytes": 71867,
+    "sha256": "255fc818edd646aec4fe6c1df404dae38b5ae50ad4a22920b41c17374b46a078",
+    "archive": "saju-models-materials-archive--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/metal.blend",
+    "bytes": 1224724,
+    "sha256": "a21025a4783d293685884b56a6124c394336dbcbb7ef517d8df6dcd82647d2ad",
+    "archive": "saju-models-materials-archive--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/metal.glb",
+    "bytes": 393192,
+    "sha256": "5b6b31ae9b0ca27393b8f1821509e1d669f948d46cff59a4ab6a8ed1abea8dfa",
+    "archive": "saju-models-materials-archive--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/metal.png",
+    "bytes": 306174,
+    "sha256": "05ecf7aa7de156a6e65a2a0e9d56b36c6685473b2e9bef7a8a5588c69ae360a2",
+    "archive": "saju-models-materials-archive--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/roundtrip.json",
+    "bytes": 1656,
+    "sha256": "c79f2c6a01aad986814d74c5aaa730b5da26e59dd087bfeb87cd00b014d72492",
+    "archive": "saju-models-materials-archive--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/sheets.py",
+    "bytes": 1246,
+    "sha256": "8cd09d577deea9d48e6ae7a6bd8e455c0d34bcda19dafb69315b7bc3bcd9fcf4",
+    "archive": "saju-models-materials-archive--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/water.blend",
+    "bytes": 1224724,
+    "sha256": "7da2ed163a9c905c8b0337d646c239871cc22e496acede8703204ac6790c6dbd",
+    "archive": "saju-models-materials-archive--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/water.glb",
+    "bytes": 393360,
+    "sha256": "e96e3e7254f9b4acd9608c9c5cb8707c7e91dfe7c51e9e3f5fa331a1025fda13",
+    "archive": "saju-models-materials-archive--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/water.png",
+    "bytes": 347408,
+    "sha256": "d711f12b24978e55737aac0fcb215fa803817af08e2deeaaf1d04752ce86bf26",
+    "archive": "saju-models-materials-archive--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/wood.blend",
+    "bytes": 1334392,
+    "sha256": "261bfeca77f2f254cc878bb5cb54e7eb22ba68280496cfc7d1d9a4f0a29caaa9",
+    "archive": "saju-models-materials-archive--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/wood.blend1",
+    "bytes": 1334392,
+    "sha256": "eac43c487fbd133d22f4e2b1eb1c6c6fdf6682ca7bb487c818a28d81cdd8926d",
+    "archive": "saju-models-materials-archive--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/wood.glb",
+    "bytes": 437992,
+    "sha256": "eda80d432e724b64260238a94f5ee027544d63b0a8e49fa41d0cebb87904ccc2",
+    "archive": "saju-models-materials-archive--part-01.zip"
+  },
+  {
+    "path": "b_five_elements_v1/wood.png",
+    "bytes": 322607,
+    "sha256": "625a669e176190ab4ec1a3827a50f1d8bb025a0a559dc690367bdfd92ab11853",
+    "archive": "saju-models-materials-archive--part-01.zip"
+  },
+  {
+    "path": "b_gestures_v1/B_gesture_contact_sheet.jpg",
+    "bytes": 236306,
+    "sha256": "834ed913c103481382930fee29337ee1c9d0ad88cdfb5e4acb8a8be8c3b4d282",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_gestures_v1/B_gesture_rig.blend",
+    "bytes": 2089704,
+    "sha256": "652c76b3ffef1f12fb79441535e68cbfdb4cd01348b1c0b9c95d6ed205aa21f9",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_gestures_v1/B_gesture_rig.blend1",
+    "bytes": 2089704,
+    "sha256": "f684314cbacf3005418d6d4ecb2d605d3a7a261e7ca7b0d67da7464bf75f6c1e",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_gestures_v1/B_gesture_rig.glb",
+    "bytes": 656828,
+    "sha256": "0fb11c4054014a8e67d5b0b19bebfdf308ff6394c2d9a6749569c7d5bd3d2c11",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_gestures_v1/B_gestures_preview.mp4",
+    "bytes": 135541,
+    "sha256": "88107478bfbcb2bda39c852e674c1482ae5a2fe099c6052433223ea76bcf1141",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_gestures_v1/README.md",
+    "bytes": 2980,
+    "sha256": "d910bcec36d1c46e6a7899c43466e1fcd3fd9f6fccc590a2c2e7b7f0042289c4",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_gestures_v1/assemble_proof.py",
+    "bytes": 2541,
+    "sha256": "1b3e89ca58ed5f903c466302e8814006b4ed83369443040f4edef848a4235395",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_gestures_v1/audit.json",
+    "bytes": 841,
+    "sha256": "a4adbb94c23b55dc478d4c650dd7cec97849028b2aed57405d61aaa501b15133",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_gestures_v1/build.log",
+    "bytes": 1607,
+    "sha256": "70fee03207d204404d986e3c70f6f639b3e5a0c8d9b9b97cfe680b6d5f2821b1",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_gestures_v1/build_gestures.py",
+    "bytes": 7252,
+    "sha256": "3954e0f632e03e42aa4d05df9655ff49e25e2dc3042a606bb63cd061da1f76a0",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_gestures_v1/combined_video_QA.png",
+    "bytes": 199731,
+    "sha256": "a1c52b028316038c417019ad274e5d6fc2dcdb941aad85a762974013221ec09d",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_gestures_v1/curious_lean.gif",
+    "bytes": 766580,
+    "sha256": "47fdd8bfcc340126b6cb4ff5b5449f67bd9423a4ccea274030f315a4c5fef3ee",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_gestures_v1/curious_lean.mp4",
+    "bytes": 46446,
+    "sha256": "5065b2ee91c491b67b9fb7eb58fe6d3a838f045fa5bfce22e7e1e857a2a97133",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_gestures_v1/curious_lean_concat.txt",
+    "bytes": 673,
+    "sha256": "4bee4291e7cd7b39c335cf7ae97e75ec551fdc5764ec1dd094ae4d604623e526",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_gestures_v1/import_inspect.log",
+    "bytes": 2520,
+    "sha256": "9252efd9d8e6ba50a056ccf82641fc085961fdfe9a57d5db41e608a400acb854",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_gestures_v1/inbetween_batch.log",
+    "bytes": 130083,
+    "sha256": "135e74c66bf267cfc70000f1d678c48349dd4615995d73f69abd60f42403cbff",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_gestures_v1/inspect.py",
+    "bytes": 469,
+    "sha256": "b44ff1ecbd54dcb66d5ae823fa84581a9f7e27b3ce55cdabd22ef1b8b5005f8b",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_gestures_v1/inspect_import.py",
+    "bytes": 517,
+    "sha256": "90a415246fde16c9734b3cc29369498533d29e59da596f60cc7ffdc5b75282e7",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_gestures_v1/keypose_batch.log",
+    "bytes": 111651,
+    "sha256": "13ec64035d724cad961b19c368abab96cf7c9a17d5a0b8c111c1f6b81b1d92aa",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_gestures_v1/proof_render.log",
+    "bytes": 38091,
+    "sha256": "103b61af9a85db4bc3e225de1f357f1f1be0f9736232495f2f59bc5dfefa1f49",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_gestures_v1/render_all.sh",
+    "bytes": 384,
+    "sha256": "18519f317842d264496ba77bb6f0a890a572c43f3a97e22157a9f5a5e66fc136",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_gestures_v1/render_proof.py",
+    "bytes": 633,
+    "sha256": "77f215f443e769b69ac3ee1da0b1b3e2179c800c9770329de57629f7deada7b5",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_gestures_v1/render_test.log",
+    "bytes": 6300,
+    "sha256": "718e9133767230b2854f6e570eed2ea82329a2f7ac4c0773ac140a1f306e9df1",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_gestures_v1/roundtrip_validation.json",
+    "bytes": 6712,
+    "sha256": "38c37eea6179ec881713c1c64887c9b5a5a14c5b507d8727225405ae8aefe8bb",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_gestures_v1/save_settings.py",
+    "bytes": 323,
+    "sha256": "a52ee518627f61be99b2e5858fce644d6841813b5da59515c4b70b087bb94781",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_gestures_v1/settings.log",
+    "bytes": 147,
+    "sha256": "12df8d87b6ca8390abcb7fba4a5cb60cbfcb6a22a4bbc79be10d460460dc09e2",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_gestures_v1/startled_recovery.gif",
+    "bytes": 999494,
+    "sha256": "684e62442b83c83969ba64c792e0336065cc486f02c7d75085ff3e86ad4b61c7",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_gestures_v1/startled_recovery.mp4",
+    "bytes": 63947,
+    "sha256": "0a969f9fbcc9230e5747f9f3ecb36fea8566033e375e4e04c81d6321ac96cc63",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_gestures_v1/startled_recovery_concat.txt",
+    "bytes": 743,
+    "sha256": "139d2448ad9d60191399295667144ff719d60d8e330b66d97a6842092da83609",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_gestures_v1/validate_glb.py",
+    "bytes": 1196,
+    "sha256": "fb10f78576a1c98f12d05cc01cb62cbca4d4cc1dd730adc8dfa27194f2fb0cae",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_gestures_v1/validation.log",
+    "bytes": 762,
+    "sha256": "e9ba88865410836db8c25524f5f19f3ecff92ca3e51268bac420eced1cfe3c1c",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_gestures_v1/wave_hello.gif",
+    "bytes": 1003467,
+    "sha256": "5d14b7d92dbf9c742061ee07fa09afeaec4abba67e01d7e6d62d0ca051d88731",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_gestures_v1/wave_hello.mp4",
+    "bytes": 41031,
+    "sha256": "e188a27510b43ef9140ab769678381b4584a7de77ad49f6fc7902e16feaa5eac",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_gestures_v1/wave_hello_concat.txt",
+    "bytes": 645,
+    "sha256": "335a2ff933b585dc077e9392c336cf8f94a2724b52ebe751e744f2fd20a367f1",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_gestures_v2/B_gesture_rig_v2.blend",
+    "bytes": 2116816,
+    "sha256": "3033650adc2376e3c61dbd966137353f0969b7fcc8ae8b237295cfe09bf685d9",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v2/B_gesture_rig_v2.blend1",
+    "bytes": 2116816,
+    "sha256": "6b8320255e4e28d8fffef1c1d3c5659bc6f5fdfdcd11643ec39c08587ad17f5c",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v2/B_gesture_rig_v2.glb",
+    "bytes": 656416,
+    "sha256": "d8a8e92c30f66dde2dffe2760353bb92e26f9072ff846a02aaa255c0763a6152",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v2/B_gestures_v2_preview.mp4",
+    "bytes": 108779,
+    "sha256": "5a08aec410a9b6ed53ead0402046bddf10eca5abe7a7ed860f721ad6a7c1a64a",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v2/B_v2_after.png",
+    "bytes": 377851,
+    "sha256": "f63e009bf3fae64176d1b84d23f50714d049642f3f3d3058c5cbc5e21acd4dbd",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v2/B_v2_before.png",
+    "bytes": 383760,
+    "sha256": "fe154ce64ebf6ebf076e394d354187a5fc6c1e2c6f1ed06a0bfa48e1b2a55611",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v2/B_v2_before_after.jpg",
+    "bytes": 125941,
+    "sha256": "d3877087084f58951a0f7f5226621bd78aa092a240a3cc4e328d6dbc5a97ae9b",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v2/README.md",
+    "bytes": 3199,
+    "sha256": "84e3f2956a26181c9a7c05a6e5ee88ed3d67384e7f43f9c7e5fde14078bd3dbd",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v2/assemble_v2.py",
+    "bytes": 2119,
+    "sha256": "d63dbfe33d96a05adfd4cc7560dabaf869fd92139d36f9a272db08012d3eebd1",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v2/build.log",
+    "bytes": 1563,
+    "sha256": "664c1edd681ef3618f7ba6b402aaadc0dcaa9ed453b28b2144058352c3127a22",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v2/comparison_render.log",
+    "bytes": 13038,
+    "sha256": "ebc16ee9d185f6397769e243d3c5cbfcc67f60592c80d7fb90c8e5c0372d0ed0",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v2/curious_lean.mp4",
+    "bytes": 40920,
+    "sha256": "04d12657d558cdeb48e20ad6b81cf174a20b639a39a33722ec4cf49eaf0ff366",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v2/curious_lean_concat.txt",
+    "bytes": 771,
+    "sha256": "065e5efe784e1243089790dde62c74f6e69b4a118b5053e9f195d85328cf24e9",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v2/deformation_ground_audit.json",
+    "bytes": 20370,
+    "sha256": "314bf22523a88a89e5d6597007e3fd9f13d57d804c971fdc1089eabaefddb445",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v2/geometry_audit.json",
+    "bytes": 584,
+    "sha256": "0109db8d97b78e2ed073d491296c7f69f02dbd9dcbd16e696c64c25b726401c7",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v2/glb_validation.log",
+    "bytes": 762,
+    "sha256": "74705641787de6d10609f3e1e5a7258f37eca931f34d3ca064550eb92461db62",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v2/motion_render.log",
+    "bytes": 241830,
+    "sha256": "e0748106a74249e6156c41bb66ed76b5619441a421751cb4294da39d68c064d4",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v2/package_v2.py",
+    "bytes": 908,
+    "sha256": "8a08b886a57523aa2f0d184768b11c2c7e3337e205dbfe6d022e0cbfdc642d68",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v2/qa_preview.log",
+    "bytes": 6258,
+    "sha256": "d20789fe014937e40cd63713ce0cf9e046f6ed8b1e7fe033f80b31af906ecd62",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v2/refine_geometry.py",
+    "bytes": 6036,
+    "sha256": "363ed6b403235195e5a507e18196f7f4e7fd2583bf8106410a9209fab63ed7d7",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v2/render_motion.sh",
+    "bytes": 449,
+    "sha256": "0e3453b1768a305c4d946e3d5b06c8bf1ee3ba74c12b4cfe7cefba24c250016d",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v2/render_v2.py",
+    "bytes": 1613,
+    "sha256": "96fd20973e9b48245a7d57f63eeb9f0131b6a3ae6cf3924d5ba2a663918aa757",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v2/roundtrip_validation.json",
+    "bytes": 6731,
+    "sha256": "cc43ca679de1bacb3d2acd8e92147c3c968053c36ad91b1f2d0818e6024ac795",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v2/startled_recovery.mp4",
+    "bytes": 45200,
+    "sha256": "3118f464697beca180f1df83f2cca6d349b3fc9fde851f35a48fe059ec60e326",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v2/startled_recovery_concat.txt",
+    "bytes": 841,
+    "sha256": "e3faaf9e31c96fccda64ef7e7f4b5ea7eca7d2714c9edba2252dd5a7899e3361",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v2/validate_glb.py",
+    "bytes": 1199,
+    "sha256": "b376ff901d65c9741735a026220771a8ebfaa0195c59e2b8bbdd79c504462bec",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v2/validate_v2.py",
+    "bytes": 1417,
+    "sha256": "490a7e823192535dc3dcd623cf2da325f12d21db0fe8a5d4f2cb1ddd5f870bbe",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v2/validation.log",
+    "bytes": 334,
+    "sha256": "0e78fd71b77054e8cb76174c894962b0436fc8914791f7bf0ab044f0b5f9afe4",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v2/video_QA.png",
+    "bytes": 208544,
+    "sha256": "1b04be4f75da124710cdf9328fba315aba94a6fe6cbc1b9736e716dd4787b6e9",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v2/wave_hello.mp4",
+    "bytes": 30481,
+    "sha256": "d21e245daeb53b3c9f4e06be5a64b09e7cefca4ceee6516387056c75431b9a11",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v2/wave_hello_concat.txt",
+    "bytes": 743,
+    "sha256": "d1cd0aac0ccd983992d0745d03ba98924770577a0ef540df1f77ac0c8c0e64e0",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v3/B_gestures_v3_preview.mp4",
+    "bytes": 85323,
+    "sha256": "ef2713a5cad7c891a8317eb3c71d566c73c1554c7c7216d95b3b2b466732eced",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v3/B_separate_arms_v3.blend",
+    "bytes": 2295616,
+    "sha256": "2a25e27ce26a4faa8d4b7188a5f8bae312f8e6e52337cca6af18f62dc5bd1907",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v3/B_separate_arms_v3.blend1",
+    "bytes": 2295616,
+    "sha256": "da3840f4160f796420ce9ac99a7623e768766a973de3c2fe200d349716c849fd",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v3/B_separate_arms_v3.glb",
+    "bytes": 743012,
+    "sha256": "bac7097ed234cada96974a666d43e1d3e43d8e756ce844019a2537ee2dccae72",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v3/B_v3_after.png",
+    "bytes": 392116,
+    "sha256": "4e7e37ab211166fea27ba6d0060357af1539fe2c9b61280124be71576baa189b",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v3/B_v3_before.png",
+    "bytes": 389434,
+    "sha256": "5cd6b579ee2fc9ec9fbea675e61a832de74867f15eb1ce7cc24361bb96c9c876",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v3/B_v3_before_after.jpg",
+    "bytes": 137375,
+    "sha256": "e48cc18dfeb4b33b9f7bb84e2487a6262304a8d7c920d51311c5ea58b3172ce3",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v3/README.md",
+    "bytes": 3310,
+    "sha256": "42cf42e51575ecbade6644e142886b43e2a9427e793f6c350e0240ece0fdd44f",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v3/assemble_v3.py",
+    "bytes": 2140,
+    "sha256": "c9947ec4e9b761af7136751f4804c3f604d35f6f718c196264b4b00a9f0be6e7",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v3/build.log",
+    "bytes": 345376,
+    "sha256": "fc9630ddcf613f95b2136a4d2b6edb18b369e34fd1e6b779637a2fe12bd724df",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v3/build_audit.json",
+    "bytes": 626,
+    "sha256": "4dce2fb75acaa5815dacc0240fd5c583dc2b8e5ebdfb8faea1bebb94bcbb8639",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v3/build_v3.py",
+    "bytes": 6687,
+    "sha256": "bd922941c43153ee1723fc48f71895254c1dcdaf4b1fc4306fe60956e295b690",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v3/check_mesh.py",
+    "bytes": 710,
+    "sha256": "8f4cfa3323625aa5bbb2ad91909abd6e20c62c44427297f25ca1eb9c8cefb8b4",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v3/comparison_render.log",
+    "bytes": 12810,
+    "sha256": "36286c921a7004f6a9a8b2b4e3024dd8c8f844a292cae6a1fbbbd59f0f10bf5a",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v3/deformation_clearance_audit.json",
+    "bytes": 169080,
+    "sha256": "d42ffde4cf179bd417b1d9af4c02f81ada6933ab2e1615dbab250b2253af28bf",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v3/final_core_render.log",
+    "bytes": 168481,
+    "sha256": "83345d7e889c70b725fc4fc469e413148a4b2ffee0fdd92a419690da85e5aa16",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v3/glb_validation.log",
+    "bytes": 868,
+    "sha256": "fdf9379f67b57510c99709928457ed1e3ef5184f1fa2163c7fe5e2bbaf4ee9a7",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v3/hands_gathered.mp4",
+    "bytes": 33030,
+    "sha256": "56746192cd088880d451df7cb3a57d52f588b000dd9800839db32a15ad949b8a",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v3/hands_gathered_concat.txt",
+    "bytes": 799,
+    "sha256": "d62b7cb9f6b79c58f8351cb39f4ab55311b1b42720bd15dee04d1b266e136548",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v3/mesh_integrity_audit.json",
+    "bytes": 574,
+    "sha256": "4540fa346146c14d2c20e31ba5ebe092e1112cfb4b6e2f85eddab8a2abdeafc8",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v3/mesh_validation.log",
+    "bytes": 611,
+    "sha256": "5ca8697c602cc3c62b7d88a5a9f1363659acba3a8b94d964c50beb00b59ba0a7",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v3/motion_render.log",
+    "bytes": 252861,
+    "sha256": "bc273a4a9f36b712a71f4a45a2f01729dd232daf357025a3fff0c927e7527a22",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v3/open_arms.mp4",
+    "bytes": 30772,
+    "sha256": "fda1b50d438c06d8c4ee32fcfed634b198cd38bf0c956c1de9fbcd596b524f4d",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v3/open_arms_concat.txt",
+    "bytes": 729,
+    "sha256": "ef8c93191d96cffdf5e26378c04251e0d6816338d20a4ae87214ef2904994ea3",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v3/package_v3.py",
+    "bytes": 1358,
+    "sha256": "4c8db6fb3eb3d0d99971ff06a0d085875232055818e556de623c9782ce1f4483",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v3/qa_render.log",
+    "bytes": 19773,
+    "sha256": "4c925e43b22d1e183b7c4135e08c9ce6591274dd19d41c30e6dada8907c41751",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v3/qa_render2.log",
+    "bytes": 13016,
+    "sha256": "c282f8bbeb9cf02837c2320b6db75bc016549b190c6c2802cbd732326a8b2853",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v3/qa_smooth_core.log",
+    "bytes": 6539,
+    "sha256": "d95774679daf53d44eb045cab12ea58f4d14d4182e1332934d2938ec20466424",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v3/render_motion.sh",
+    "bytes": 357,
+    "sha256": "6ce05edd44961b16865108dd0e8335ac11e5003b807e78cd65df85e9156de4b3",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v3/render_v3.py",
+    "bytes": 1129,
+    "sha256": "ec1cb4396ef2bb0580aea47d397645de75c016b042c354929c6bdd1ec6f57a5d",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v3/roundtrip_validation.json",
+    "bytes": 6677,
+    "sha256": "7e95e8745202d728196afd024f7a27592339a87756bbd246f3a04e6105bf3cae",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v3/validate_glb.py",
+    "bytes": 1201,
+    "sha256": "41237fafc587ae3f478708a668c86850c38094f4c8ee5dc1f4db16ce3f04cd5e",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v3/validate_v3.py",
+    "bytes": 2839,
+    "sha256": "c39aa90e37865e9f3b51e1dd485d858d6a76469772e37d6a6669876d1158001a",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v3/validation.log",
+    "bytes": 315,
+    "sha256": "ddfd6812f8c7b9ba2e63de95bf6172cb049f4da922da8ec9b765f334ee914db0",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v3/video_QA.png",
+    "bytes": 232331,
+    "sha256": "632ba8afc3a4e0ae2436cd58ad19f17209d848c6a34840f27168de6e26f006f9",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v3/wave_hello.mp4",
+    "bytes": 26060,
+    "sha256": "949de4c7d901600d410f473eb7765fcaa49b2efb7fe12959154adee40c354031",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v3/wave_hello_concat.txt",
+    "bytes": 743,
+    "sha256": "d1cd0aac0ccd983992d0745d03ba98924770577a0ef540df1f77ac0c8c0e64e0",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_gestures_v4/B_attached_arms_v4.blend",
+    "bytes": 3937960,
+    "sha256": "0df9c31242c780dd2825bf5b24d1b14553610ee48a34c6afc409124b472efdd2",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_gestures_v4/B_attached_arms_v4.blend1",
+    "bytes": 3573504,
+    "sha256": "efc5ded633a4708d8c8707dcede5ddf568db6f6054843cff4c60a2c51cab8b92",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_gestures_v4/B_attached_arms_v4.glb",
+    "bytes": 1103068,
+    "sha256": "65bc9ff964a9bdf2f9f26c8113d6a1207ed7e48c5d458603bf28370a64b5e520",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_gestures_v4/B_attached_arms_v4_preview.mp4",
+    "bytes": 83289,
+    "sha256": "d67aab2f0642350540c5af8be33ec346cd2a8cc5eb45a6472563ad59507adf97",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_gestures_v4/B_v4_attached_arm_poses.jpg",
+    "bytes": 113944,
+    "sha256": "ac7e7f52ca685e28f413fed134cd7f7ee1982a6d8f59f02d24cbf32a7b3694d8",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_gestures_v4/B_v4_neutral.png",
+    "bytes": 392715,
+    "sha256": "f428b99a4b6eb10af6f4a2e463b90c263dae3d7ded1f4c8f40303961fe3b2a17",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_gestures_v4/README.md",
+    "bytes": 3675,
+    "sha256": "9880c78d6cf812bfe6e952c0480430b6dbfabeaac758468e280bcfb3724e96a2",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_gestures_v4/assemble_v4.py",
+    "bytes": 2036,
+    "sha256": "77b2f25a300cb7f2071f36b0d2a01cb585730a59dbe1b27f9dac55ef29f25feb",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_gestures_v4/build.log",
+    "bytes": 1425,
+    "sha256": "a7d74402fbc15a4ae572c3b991d011a1f20f2dbf3906d412693213ec27980906",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_gestures_v4/build_audit.json",
+    "bytes": 748,
+    "sha256": "51a4321964691bab9d26d1b9afd93c5c120d15fe6dd663c8bba3160b64305745",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_gestures_v4/build_v4.py",
+    "bytes": 6990,
+    "sha256": "532a29de8396fa844dc9ba66623a98140d05cf309a042dd2997c90295cb69c8b",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_gestures_v4/check_mesh.py",
+    "bytes": 710,
+    "sha256": "353e9a578c7dfd35094fd4e290c96ae44ad93ab9ab7df8d464c05fff94e54d4d",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_gestures_v4/deformation_clearance_audit.json",
+    "bytes": 433798,
+    "sha256": "1b69f57bc759bb1de893a144ac90b8862c79d72734f4da0debb633ef6d9cdfd5",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_gestures_v4/early_render.log",
+    "bytes": 19592,
+    "sha256": "365c38f75c63f79c2c41d2bfd6742d8e002e4cd2cca6a51bdd3eec283b14e49a",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_gestures_v4/final_render.log",
+    "bytes": 6539,
+    "sha256": "b936009d772b053b6d35bb97340e035739655d360aa3c60f7702b531d73fe007",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_gestures_v4/glb_roundtrip_audit.json",
+    "bytes": 9553,
+    "sha256": "8404289d05714010bffe0d500d64d5b586b67f57caeebd43bda75bcfb8a1cb67",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_gestures_v4/glb_validation.log",
+    "bytes": 1028,
+    "sha256": "2a9eb6d0725275e959033bf983984f6ac0491fbcee17a7a2eb28284cb1008229",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_gestures_v4/hands_gathered.mp4",
+    "bytes": 33162,
+    "sha256": "72bad5d234bfc0a6cfad3f086b0d8617c608c3848f1274d13cf942b343deaaf7",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_gestures_v4/hands_gathered_concat.txt",
+    "bytes": 715,
+    "sha256": "17524149b4c48df49369c9c3a1750bf10043b7c1a51304edf2a4e63e185afea8",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_gestures_v4/mesh_integrity_audit.json",
+    "bytes": 616,
+    "sha256": "bd1552238aaa9293cd4b917deec305186e6ce26f89bfb0b0b337dcca0aff2d24",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_gestures_v4/mesh_validation.log",
+    "bytes": 653,
+    "sha256": "1a6ca8c1f493e11c27bf83c3558b6ac89572f75dd028da06c2e1eab31f5973be",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_gestures_v4/motion_render.log",
+    "bytes": 252493,
+    "sha256": "8fe93fdfd3c422cb93e7ef236581293e0506546e7a868113180c26b3c3b58a3c",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_gestures_v4/open_arms.mp4",
+    "bytes": 27828,
+    "sha256": "888f5ee4ebcadcf987c1c032d10d835c8aa5a5f07737d94ff18253857847583a",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_gestures_v4/open_arms_concat.txt",
+    "bytes": 645,
+    "sha256": "dabed907f0fc881f09c832142266854355a11e166b9008664bf48eee3267d3ec",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_gestures_v4/package_v4.py",
+    "bytes": 1419,
+    "sha256": "ef01e15b78f55ac63650e8510af475ab691aaa1ef2c21cfa407158a0825df1af",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_gestures_v4/render_motion.sh",
+    "bytes": 351,
+    "sha256": "077ae1c2eb37bb2aafc7b15834b223ebcaf8f1ba259791809cf8d810e0c87f56",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_gestures_v4/render_v4.py",
+    "bytes": 867,
+    "sha256": "2dd9191fc64d890592ce0eba9c9e70e7e8d7946d22050dc0f7f909af45e5ae31",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_gestures_v4/root_glb_validation.log",
+    "bytes": 1028,
+    "sha256": "10a5aa969413936348ee2050e87479e32c544326630fa5eda94a332e7dd2f328",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_gestures_v4/root_validation.log",
+    "bytes": 461,
+    "sha256": "cbad976e42ecbc8f2c0f5e75c7b915879993866d0c4eee409e207d69e9713dbb",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_gestures_v4/soft_elbow_QA.log",
+    "bytes": 6533,
+    "sha256": "9e5e744b4b743183c5d444703c9254a8b0f74fc1ab5279a7f6a2ed0f8d32fce8",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_gestures_v4/validate_glb_v4.py",
+    "bytes": 1843,
+    "sha256": "ddaaf3a1c129391e6ed8a763985d39f0d3dfc6f45d132e71f4649fa4221a982a",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_gestures_v4/validate_v4.py",
+    "bytes": 4295,
+    "sha256": "d484f373b768c9d3b0bad4c12ba703639d734624be7f8cf5c11c1fbd4f1ae67d",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_gestures_v4/validation.log",
+    "bytes": 461,
+    "sha256": "cbad976e42ecbc8f2c0f5e75c7b915879993866d0c4eee409e207d69e9713dbb",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_gestures_v4/video_QA.png",
+    "bytes": 231043,
+    "sha256": "6d71eaae09a2d3de5244cf7e35bdb2b14d8c37fdb3352255c8691fe6f082a001",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_gestures_v4/wave_hello.mp4",
+    "bytes": 26952,
+    "sha256": "4b119f47938cde1a0a4053baeee3d58ee856f3ab113e8751a17b6dcf09fb287d",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_gestures_v4/wave_hello_1.png",
+    "bytes": 392715,
+    "sha256": "f428b99a4b6eb10af6f4a2e463b90c263dae3d7ded1f4c8f40303961fe3b2a17",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_gestures_v4/wave_hello_concat.txt",
+    "bytes": 659,
+    "sha256": "9af1327f42bd9a54dfe93177bdbb58c1c29ab9a69a9ca53ae5005de8826e69d3",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/01_Jia.blend",
+    "bytes": 1850520,
+    "sha256": "3b6b727af98139a4dd561394e59d1cf0d272df0fe96ea6e73cd9cb14d027669f",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/01_Jia.blend1",
+    "bytes": 1850520,
+    "sha256": "4f1fb929457e87374cf120c5e5db9bc35cea70b3ee82046baa8dc46639922d32",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/01_Jia.glb",
+    "bytes": 769988,
+    "sha256": "6380b05e40762d0d130db737ad36adda9bfffd0ad8af42bbd28e8eb2d5f836b7",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/01_Jia.png",
+    "bytes": 370747,
+    "sha256": "b183e5c71c690098f70c02bd2be1e7e0dea165b8863e30a2dce5e75d10bb2466",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/01_Jia_audit.json",
+    "bytes": 135,
+    "sha256": "9e572094d1b76b29da1a87cc6a93450d7bc19415e72ee955c5d6a6dcd382e092",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/01_Jia_final.log",
+    "bytes": 15432,
+    "sha256": "04a3679de4d4a0ba93fe4e9d8579b4c720ab53573d9c35d00b7807a063cb911b",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/01_Jia_render.log",
+    "bytes": 11094,
+    "sha256": "1822c0ee81b800b362184dfcde52982d854e0cdccfd704c36f71b1417f6bf13c",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/01_build.log",
+    "bytes": 15268,
+    "sha256": "82cd5ccc50dce0eb542422c6b48212e8ae8e461dfcc98f4ff06fbda1e43ecf5f",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/02_Yi.blend",
+    "bytes": 2421336,
+    "sha256": "f7685434f2981442efe16db91cd1ca0fe91488c9f072059c615dba8087303d73",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/02_Yi.blend1",
+    "bytes": 2421336,
+    "sha256": "94611c2915d64b2c7f91e4631298c8d151783fc418c5b32493648dc188ab44bb",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/02_Yi.glb",
+    "bytes": 2638456,
+    "sha256": "a5b93c7e5fc51533eeb226adde44c042f4ea4ad2c7a277ffdad2fdbc956a2512",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/02_Yi.png",
+    "bytes": 428916,
+    "sha256": "b1ac3da39716554f893c7c4c3f25f780aec0e9ae1b828d1f790a3d4c8a08e03d",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/02_Yi.png0001.png",
+    "bytes": 366109,
+    "sha256": "41a1869a6ec5315cce9b7c9b8f056300fa130cea0e8038bf714598e5f82e5d97",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/02_Yi_audit.json",
+    "bytes": 169,
+    "sha256": "82109f8fe3eabcf7328ca1464fbc1c45c0866dc94139e69a703a2ef77f3bc5ae",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/02_Yi_final.log",
+    "bytes": 21479,
+    "sha256": "0595c122552e28d08ebe884699273bc2a6fae7f216784fe6ca48893c483b7099",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/02_Yi_render.log",
+    "bytes": 14543,
+    "sha256": "a784839adf91b3c9286bf9baf2f27444cd8f8b312aa7d53126a8bf94a302c008",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/02_build.log",
+    "bytes": 7163,
+    "sha256": "69ea2f52c1e66f444b0f917ae1ce3fa2b0ee6354bbe6b3217a0e92dddbf32a89",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/02_render.log",
+    "bytes": 14133,
+    "sha256": "5edba3cd69fc4c95e7fd27b68640eb93cecfe59277f43fe25685c07ed5542241",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/03_Bing.blend",
+    "bytes": 1802716,
+    "sha256": "5f26a2fa1d3956a82bac97515fb92a337b62dbaf355f91a0af4370e7985a9160",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/03_Bing.blend1",
+    "bytes": 1802716,
+    "sha256": "a62a8bd7db4d47d48720a6af1d19393af6c2f0c4a68471d8b11e32de0004428c",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/03_Bing.glb",
+    "bytes": 499608,
+    "sha256": "bc03ae25fef4832ae18460327be19a08404fe805fc47a0d8cac82cd0e006bee2",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/03_Bing.png",
+    "bytes": 384900,
+    "sha256": "c639dc262aec3e2d307c19cd5d31aeede89b967d54405d6e1f1d1831645c1fd2",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/03_Bing_audit.json",
+    "bytes": 169,
+    "sha256": "4a11d6f48accba1139403fdce0facd37b74de7d02f2c5d2f1d6c302bd29e7fca",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/03_Bing_final.log",
+    "bytes": 9053,
+    "sha256": "4427c400f8530001c69a68f2843163bc303e323f9b851507b45dd698839d3df7",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/03_Bing_render.log",
+    "bytes": 7334,
+    "sha256": "6f2d92f7a6ab032a0e41622ce9ed839162cd29541dc2afac7b47b36fe4734f2a",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/04_Ding.blend",
+    "bytes": 1843220,
+    "sha256": "5323501f652cf12366de6ccdee042977e12dcc83ca3123d5e7c1f13def912bab",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/04_Ding.blend1",
+    "bytes": 1843220,
+    "sha256": "db35afab6d1699b5d5672bf5208a19b75ebae809aa04b1dcaa3acb2d1c603fb0",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/04_Ding.glb",
+    "bytes": 508344,
+    "sha256": "6bede54e393488d3f57e28b02ab6c76fd92f05d9c76a1d7d85b905fc756e9c15",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/04_Ding.png",
+    "bytes": 340139,
+    "sha256": "ee19a71abde70e7d2715c69fca1c4b674c64c1c7cd1e60e69efaf83e58e90651",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/04_Ding_audit.json",
+    "bytes": 208,
+    "sha256": "c2dda27462597f14bb301c638cacd81c852536cf3f65eea224ff4670e42f4481",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/04_Ding_final.log",
+    "bytes": 10672,
+    "sha256": "1392fbb5d7f230cf5472303d102267d48e640aabfd611a4aa123a6149728122e",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/04_Ding_render.log",
+    "bytes": 8467,
+    "sha256": "cc11ec91405ae9da115c6013e4eede6b2f4bdbd3fc424865ef249c73b308d058",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/05_Wu.blend",
+    "bytes": 1714576,
+    "sha256": "188c0139993e5c1d1ecd29277d62384df8b0831f5d37a03ac53bdda06eec04ba",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/05_Wu.blend1",
+    "bytes": 1714576,
+    "sha256": "f0d54af7558d12457a9e81873ddcfbc4c581dc23efdc88027e2a6fc5b43d8256",
+    "archive": "saju-models-materials-archive--part-04.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/05_Wu.glb",
+    "bytes": 584620,
+    "sha256": "1586f90c3c677ece430f5570dc22e5bfa41bd55ba9fd13641b0e0c3cb0e7f8d8",
+    "archive": "saju-models-materials-archive--part-04.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/05_Wu.png",
+    "bytes": 358331,
+    "sha256": "5ec03fa9c0adf82af4281ee715f13a6d354390ff5c0200900f422b0fce0a16c2",
+    "archive": "saju-models-materials-archive--part-04.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/05_Wu_audit.json",
+    "bytes": 134,
+    "sha256": "ca96d345695991b6b8e3befc233e09f169f5cc83dbf013e03d7cbeba22a7ad51",
+    "archive": "saju-models-materials-archive--part-04.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/05_Wu_final.log",
+    "bytes": 9441,
+    "sha256": "2cfb0bcf1ff63253cb0e058f0ad9d16dfe3297bc9fd90874cdcd16e28d79ea9c",
+    "archive": "saju-models-materials-archive--part-04.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/05_Wu_render.log",
+    "bytes": 7645,
+    "sha256": "bd002a90d1752ab07196baf87185904d7c073c4ec26b9ba209594cfaad28f5f1",
+    "archive": "saju-models-materials-archive--part-04.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/06_Ji.blend",
+    "bytes": 1733692,
+    "sha256": "63766ecca017df992292d46f6d535f21404d57da4cf4dea488a2c970bd503b8b",
+    "archive": "saju-models-materials-archive--part-04.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/06_Ji.blend1",
+    "bytes": 1733692,
+    "sha256": "5bf23530f60aaf28468c0aff407b6663858aca3351dedf8abd77870530e42b8b",
+    "archive": "saju-models-materials-archive--part-04.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/06_Ji.glb",
+    "bytes": 523492,
+    "sha256": "6def035fc70a8bd512ebe573dfb85d05b44bac38d49607c2a4ba1b67bf9515aa",
+    "archive": "saju-models-materials-archive--part-04.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/06_Ji.png",
+    "bytes": 397084,
+    "sha256": "87b5eb3e1278cc2898bdfd66c192ec5c37f5fa9112e014b9db26a66f5e819b6c",
+    "archive": "saju-models-materials-archive--part-04.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/06_Ji_audit.json",
+    "bytes": 226,
+    "sha256": "57aad29862149cf35bb8ea942cd50923b0d20c2ed7d51838fba187625d31d487",
+    "archive": "saju-models-materials-archive--part-04.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/06_Ji_final.log",
+    "bytes": 8351,
+    "sha256": "50f2517a636e5d74e4892abc07db1b9b992ada73411a0daa850c7b956c7b59b4",
+    "archive": "saju-models-materials-archive--part-04.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/06_Ji_render.log",
+    "bytes": 7072,
+    "sha256": "6a52170a5cfb5579535391c6263e23ace1955a11d6fe81b122fe4169c40d9c2c",
+    "archive": "saju-models-materials-archive--part-04.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/07_Geng.blend",
+    "bytes": 2062864,
+    "sha256": "283424bb4557a621ef6f4f23e6db5cc25fb1ac357c186aa1262effbe14050690",
+    "archive": "saju-models-materials-archive--part-04.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/07_Geng.blend1",
+    "bytes": 2062864,
+    "sha256": "d90b678a410bdcb75ca42bc431ffee60020af6e6b985c22134f5fc33a0b69670",
+    "archive": "saju-models-materials-archive--part-04.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/07_Geng.glb",
+    "bytes": 715448,
+    "sha256": "5748bcc01acfd8f761116d326dda6416509aaa2dec1b0fc4ba5d6a8aecb92a48",
+    "archive": "saju-models-materials-archive--part-04.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/07_Geng.png",
+    "bytes": 336655,
+    "sha256": "66941b9aa8f500f6332781166777cca537d011072f241e5fb74893241926c695",
+    "archive": "saju-models-materials-archive--part-04.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/07_Geng_audit.json",
+    "bytes": 136,
+    "sha256": "f43e785f9454f5bcba9ba05f00969ba220e80bfec4864a9f5c924bb85c8b0734",
+    "archive": "saju-models-materials-archive--part-04.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/07_Geng_final.log",
+    "bytes": 8378,
+    "sha256": "a39b8d60e8c6eea24ac36c329b82518c2207002793b991539dfde00786a64477",
+    "archive": "saju-models-materials-archive--part-04.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/07_Geng_render.log",
+    "bytes": 6924,
+    "sha256": "d04affa33c169cf96f990bfb71c37c246650914ddacfde03548851a02439881a",
+    "archive": "saju-models-materials-archive--part-04.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/08_Xin.blend",
+    "bytes": 1678196,
+    "sha256": "a82aae13e6778d0ed96953727aeeeccbf6cf2f1d1ccdebe242a10574d15e71f7",
+    "archive": "saju-models-materials-archive--part-05.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/08_Xin.blend1",
+    "bytes": 1678196,
+    "sha256": "dae092987f7d5a0105e11762a5ba4219338535208e241d7591ca60eb8596a972",
+    "archive": "saju-models-materials-archive--part-05.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/08_Xin.glb",
+    "bytes": 498528,
+    "sha256": "4b89863ab647f4744e5f7d9c565afb43e78e93c29839832a6fd27c54207f6426",
+    "archive": "saju-models-materials-archive--part-05.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/08_Xin.png",
+    "bytes": 321233,
+    "sha256": "9c8ae5f864c75b55dbddfdf34dd64f05ad76153f0fdcc18a329893c2864f5365",
+    "archive": "saju-models-materials-archive--part-05.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/08_Xin_audit.json",
+    "bytes": 134,
+    "sha256": "2d71660a0bd6ac958848a217db3cf5aa8cc550a0c0bc004acb615f7aa539065a",
+    "archive": "saju-models-materials-archive--part-05.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/08_Xin_final.log",
+    "bytes": 7767,
+    "sha256": "e73790eec5fcea9e921bef7e9959a64136e0dd54ccabab1c407f91b725b743e5",
+    "archive": "saju-models-materials-archive--part-05.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/08_Xin_render.log",
+    "bytes": 7767,
+    "sha256": "1bca18840ad7f38450824eac0214653c8ed43087298ed15eeb11591230c4c792",
+    "archive": "saju-models-materials-archive--part-05.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/09_Ren.blend",
+    "bytes": 1695112,
+    "sha256": "32e44eb922ba58e5997dcffa82e0b573da2e4b1826a90dd3536d77395b9364e8",
+    "archive": "saju-models-materials-archive--part-05.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/09_Ren.blend1",
+    "bytes": 1695112,
+    "sha256": "ae239d211df0623d116e3d50145605c44c2b3fd0e7f62985632a04ba246777a7",
+    "archive": "saju-models-materials-archive--part-05.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/09_Ren.glb",
+    "bytes": 569640,
+    "sha256": "01888d2b4a2ae6bda5e705a153ce2198c4c42dc9b61e0751735fca569f0cfa71",
+    "archive": "saju-models-materials-archive--part-05.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/09_Ren.png",
+    "bytes": 393612,
+    "sha256": "a9b2c5dd509c961df1709cf058c8d1370783dce5a41fb4453669e8e3090f9143",
+    "archive": "saju-models-materials-archive--part-05.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/09_Ren_audit.json",
+    "bytes": 227,
+    "sha256": "9e764d498345245d245b951ffde9c9c9e9c557029933fabf91a3fc339553299e",
+    "archive": "saju-models-materials-archive--part-05.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/09_Ren_final.log",
+    "bytes": 8894,
+    "sha256": "7bcf2a3f787eaa3db9ebd749e5b3021b20d679b79da59ed82d4171769aa5d1ed",
+    "archive": "saju-models-materials-archive--part-05.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/09_Ren_render.log",
+    "bytes": 8894,
+    "sha256": "86e1e99d6fdf0985f9104aeb8a8d8764e23b15c85e4e23cea54d8cc62bdce9bc",
+    "archive": "saju-models-materials-archive--part-05.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/10_Gui.blend",
+    "bytes": 2811320,
+    "sha256": "2366b1f0087d43ea846dc8fcaa11349934a66493b581bf57f31c803574c5d71c",
+    "archive": "saju-models-materials-archive--part-05.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/10_Gui.blend1",
+    "bytes": 2811320,
+    "sha256": "bb11de2a0621d75384b1c688be668cd2321af40d66c973309b38c07401cf16b8",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/10_Gui.glb",
+    "bytes": 908048,
+    "sha256": "66e0180ce607cc001aee7a6c787d7ff6dc42e8f767166703238fd7cf9a387111",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/10_Gui.png",
+    "bytes": 347311,
+    "sha256": "1c78b876ee762f1d2581815c9bd397bf8ca019c71f967c11ecb3486fc397b315",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/10_Gui_audit.json",
+    "bytes": 227,
+    "sha256": "dcc893ddea7c2607c6b7b143ab3f9672347336444dbabcd13b56d4d76a8c6361",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/10_Gui_render.log",
+    "bytes": 16891,
+    "sha256": "47522d0f0505344440d61b425da15168daeb86789da513373fa4eb2f77f2205a",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/11_Ji_Jade_OPTION.blend",
+    "bytes": 1650484,
+    "sha256": "8ecc062c5188082783207a8214a3ab90c319e53834e69f7ad1281761143616bc",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/11_Ji_Jade_OPTION.blend1",
+    "bytes": 1650484,
+    "sha256": "390a7dba0f435cf56b82e3e4456e4ed637b9e54834d03e1296c44758522983eb",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/11_Ji_Jade_OPTION.glb",
+    "bytes": 472944,
+    "sha256": "286ed8606d59a578e5d535120d072c9229aed6e447c12dcb45057ed1699b057f",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/11_Ji_Jade_OPTION.png",
+    "bytes": 344262,
+    "sha256": "842dfe2c3089a05b4148a5a70049756a6cb479812633fd73e0d38a3bcc27833f",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/11_Ji_Jade_OPTION_audit.json",
+    "bytes": 305,
+    "sha256": "9aee03cee7d29813af6e23824a70e7bd1b73bda5eef2b2a4af66409fdc05c3bb",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/11_Ji_Jade_OPTION_final.log",
+    "bytes": 7679,
+    "sha256": "0a199fa7d6dd429186f683e1b35d3bf6b7de901f198f3f89e8c6e61a9e9e40d0",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/11_Ji_Jade_OPTION_render.log",
+    "bytes": 6964,
+    "sha256": "63ace75b0dc038b715dfd730c3179b97841063efd82ddfb62408be25a330b29a",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/11_build.log",
+    "bytes": 1636,
+    "sha256": "59e99202fdd66332b88247518ef4ac14de4d5113fe2fb2282486be3d29e0f290",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/11_rebuild.log",
+    "bytes": 1426,
+    "sha256": "fe1c3ca5b8421ffd1bd455a5d658a8c1318654f76ee2e826b9a65da7968ef58f",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/B_earth_glass_jade_options.png",
+    "bytes": 756976,
+    "sha256": "8bf8a6c8fa9e1adfd9805c7ba6147d7dcd6685e49766bac6b533c06be7a66637",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/B_ten_stems_128px.png",
+    "bytes": 171833,
+    "sha256": "34e98f0dc35e982bd35cbf689b3e24e9a6a41e5a7d658458964d9346c1b67e18",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/B_ten_stems_comparison.png",
+    "bytes": 1545544,
+    "sha256": "efca9935e60ab446a434872d9fb3240c521e04fed89f95652e8fcce20ff97350",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/README_ko.txt",
+    "bytes": 2233,
+    "sha256": "c50ba9583123100b2b2f020fc46b5ab20b46bd833abca43db06f59862d5bc369",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/build_2.log",
+    "bytes": 1947,
+    "sha256": "5ff46516009f36c4efc8afb28c1e98ea63b04318e58af3b3defa0bccf991fbce",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/build_3.log",
+    "bytes": 2727,
+    "sha256": "5e530c269c04ddb4d80d000575d44b6479ba2923730cda14b82d92cac32875c1",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/build_4.log",
+    "bytes": 2150,
+    "sha256": "049583512416a1c01edf6e5f983d9ad129cd1b4564aea635f5bf4fea1bf53536",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/build_5.log",
+    "bytes": 1683,
+    "sha256": "1aee8edfc27c218526eddd33825538fb4aec5fa005800c12462e3c3b803f601f",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/build_6.log",
+    "bytes": 1655,
+    "sha256": "3100f68dca16125ef245757078c9e986826e3efb9623a591586171be8427479e",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/build_7.log",
+    "bytes": 1460,
+    "sha256": "a966dc1c4a0a64fa7a40fd562447b8a4d72f7a5938819a3c968d533d9c98b580",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/build_8.log",
+    "bytes": 1938,
+    "sha256": "c86eeecedb7317d4e15750677dbecf4af191d70a8c3395d17ae99f7990b62faa",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/build_9.log",
+    "bytes": 5054,
+    "sha256": "ae39e23228609b25c2ff7956e5a8ebff2720ba3373510ef172f7f67cf31a9836",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/build_stems.py",
+    "bytes": 13672,
+    "sha256": "853b62c11e3005afbe24fdbba3e52a62eae3b46e275f0235243a63eb9732d7ac",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/check_light.py",
+    "bytes": 256,
+    "sha256": "bfb78afe175674550185f35421f15371ad174137d5d2a80a289aaf1c0046ad5f",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/compose.py",
+    "bytes": 3880,
+    "sha256": "20383fe23e0d29a91d97a3d8d9bbc3c4429bbedb417b9ee5e0a4c5a0f1e9585b",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/delivery_audit.json",
+    "bytes": 3350,
+    "sha256": "b3e4a210ef940fbac89c32680626a8c882354eeb1ef5b307e72e03ab1edd7dcc",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/finalize_assets.py",
+    "bytes": 865,
+    "sha256": "9647859a4fe783d0842b1fb6f88235ca1ae66782d9f1dd4183b253ccf80ac415",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/glb_roundtrip_verification.json",
+    "bytes": 4433,
+    "sha256": "39c7d5e261acb559fd3aaeb4ea0eb669bb0c17eb98b04f9a4a9da412a9bfc520",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/glb_verify.log",
+    "bytes": 17889,
+    "sha256": "59c58d13d553e50b4471292e2336a90bd4d7b4453d5545077bc96fd193066cc1",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/native_geometry_verification.json",
+    "bytes": 8991,
+    "sha256": "a98f4baac668f7bdca83343af26d2f28e209e293884fbcce3085d00479740f11",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/native_verify.log",
+    "bytes": 1262,
+    "sha256": "6ad3f72815bfd916ea8337ec27b8796c10ffad1851b063f18439227c5609cf16",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/rebuild_0.log",
+    "bytes": 4695,
+    "sha256": "398a16c80f21ead08bba28d58bafcf82c86407e476c2cf9e1011cb56c2d1ee41",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/rebuild_1.log",
+    "bytes": 7162,
+    "sha256": "0bfd9f7b401cfac48efcffa9e98520c39da1dacf48ad10ce7090f3ffdf49492c",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/render_one.py",
+    "bytes": 2355,
+    "sha256": "e1a9a6e938552afc267d1108206cd950934670c80ba1db54eb983591ec6f1066",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/smooth_4.log",
+    "bytes": 2149,
+    "sha256": "c2eaf1c12628849cbde4e271ea2aad5ec8b44ebbb701d107a318a10a3c99b109",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/smooth_8.log",
+    "bytes": 1937,
+    "sha256": "d7f30a168e7f2494b10609384980c51e80158f4115c9718ddfb4dfd9778dfa71",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/verify_glb.py",
+    "bytes": 919,
+    "sha256": "abdf447e372d54667160ebba7afd29a9923187a112be24fd61df4620bc572b08",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_ten_stems_v1/verify_native.py",
+    "bytes": 1130,
+    "sha256": "5e9562413253211751a860f2352ff2edce0b862ba9f11b5b50f254503080d381",
+    "archive": "saju-models-materials-archive--part-02.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/01_Jia.blend",
+    "bytes": 3833432,
+    "sha256": "d133fbcfd0f586a864f6da66325c35052044a568aea05adb47a281f1101a65ba",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/01_Jia.blend1",
+    "bytes": 3833432,
+    "sha256": "b34a29802b08bffc71bba86d91eee9b757eabacbdc8ab19650cc5f91017261b0",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/01_Jia.glb",
+    "bytes": 1203488,
+    "sha256": "3f6bd2e3c32247a91488ff2f3d22634b6633b3da98fb9a9c34a47a57fd42f967",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/01_Jia.png",
+    "bytes": 369727,
+    "sha256": "89accae9cf06b29fe5950066a44ae07d1bf569812e670e9b1d3b374b99cd6712",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/01_Jia_audit.json",
+    "bytes": 343,
+    "sha256": "f056969d96ca317bdc90c650514ef427c5a6c1394f1459d15382a4f226485f2b",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/01_Jia_final.log",
+    "bytes": 11230,
+    "sha256": "18a5a179bc031e0567548dcbf20ff2be3766948918a283e18105e01a5e5e3832",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/02_Yi.blend",
+    "bytes": 13293628,
+    "sha256": "6e667aa60144fc669a5cbfc3f4aef2015443019131cca2f47705c3894fdbb036",
+    "archive": "saju-models-materials-archive--part-05.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/02_Yi.blend1",
+    "bytes": 13293628,
+    "sha256": "7e5c8d4b065324c0b0cc63df466bf2c174084369c3ebb0ce02e243148ee37cde",
+    "archive": "saju-models-materials-archive--part-05.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/02_Yi.glb",
+    "bytes": 4851524,
+    "sha256": "b27200e39fedda77bb5cbd9b33ff2666c308087678d116c1b9d6c4c7a7bdc76c",
+    "archive": "saju-models-materials-archive--part-01.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/02_Yi.png",
+    "bytes": 428418,
+    "sha256": "21cfdcd03f353e483ed0423289bdcbb86400afe2490fd7e43119193cb06f30e7",
+    "archive": "saju-models-materials-archive--part-01.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/02_Yi_GLB_curious_lean.png",
+    "bytes": 287496,
+    "sha256": "174950b689d12c5dfb5d7b3575946e898d92ff0998092863762fbdba8f17e7f4",
+    "archive": "saju-models-materials-archive--part-01.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/02_Yi_audit.json",
+    "bytes": 376,
+    "sha256": "5f7ee39b18f6b8f6cac1eb73db6b9fbfe776f99669328c68223abf54fe84794d",
+    "archive": "saju-models-materials-archive--part-01.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/02_Yi_cleanup.log",
+    "bytes": 10393,
+    "sha256": "1057cae3c14e14a8df6909c97bf79d56df18d53ee98ac05a3ddcae5a019113eb",
+    "archive": "saju-models-materials-archive--part-01.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/02_Yi_final.log",
+    "bytes": 18830,
+    "sha256": "84440387e0193699c2e3b4faa05f0f7b26a733e95d0b5e1baff32bb9a16b8069",
+    "archive": "saju-models-materials-archive--part-01.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/02_Yi_pose.log",
+    "bytes": 24884,
+    "sha256": "020a5602caa23d1e3702fef4a5825ddf6893f1e7609ff7db536e8035d1e5c9cb",
+    "archive": "saju-models-materials-archive--part-01.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/02_Yi_proof.log",
+    "bytes": 18309,
+    "sha256": "7732a45daa72df7500c1807ec883616ec9d7faff56e2919e61aba1cfd479b7ac",
+    "archive": "saju-models-materials-archive--part-01.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/03_Bing.blend",
+    "bytes": 2995576,
+    "sha256": "ee2d7d64efebf11452e72d9a90cb83abe8a927a5390d676a2cee094dbecc3c7f",
+    "archive": "saju-models-materials-archive--part-01.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/03_Bing.blend1",
+    "bytes": 2542656,
+    "sha256": "74b6bee953989d9de1e1e7f392c268e8bfbdf0eb71e69cfa38f853c53f4f1391",
+    "archive": "saju-models-materials-archive--part-01.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/03_Bing.glb",
+    "bytes": 1005788,
+    "sha256": "b4bfb54b98b3a79a56c6f6e0aa01d2bc12178268b409547d2460cacb0ac704b0",
+    "archive": "saju-models-materials-archive--part-01.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/03_Bing.png",
+    "bytes": 369086,
+    "sha256": "2e831d7747358365df87171991e166bb8619d996d461d95a65ef6dcfa7d92d9e",
+    "archive": "saju-models-materials-archive--part-01.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/03_Bing_GLB_wave_hello.png",
+    "bytes": 257136,
+    "sha256": "b618e669724d8ec5f021d99f1b067eb4493ddf519a572098aa9fe0525b05de91",
+    "archive": "saju-models-materials-archive--part-04.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/03_Bing_audit.json",
+    "bytes": 341,
+    "sha256": "0bb2b7182a6c608bc34768856cbff09a5867bc69449de0979d48671cfbd5badc",
+    "archive": "saju-models-materials-archive--part-04.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/03_Bing_final.log",
+    "bytes": 9533,
+    "sha256": "7957a475ab1f73d9053ae48eedf64ba7f4d7a4e9d4e3a5aac44d4f950ce80a85",
+    "archive": "saju-models-materials-archive--part-04.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/03_Bing_pose.log",
+    "bytes": 7086,
+    "sha256": "9e7638390cbf1395ab23aba3c5d52bd6c40d0ca8179123cab6087201e92b5f73",
+    "archive": "saju-models-materials-archive--part-04.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/03_Bing_proof.log",
+    "bytes": 6259,
+    "sha256": "c403a69f674fc45ef4dc4b7a08f294d1d029bc19a86cf241e92bd0281cea8b34",
+    "archive": "saju-models-materials-archive--part-04.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/04_Ding.blend",
+    "bytes": 2858624,
+    "sha256": "6b1cf322473f9050473316f9e813322f26affa63eb539cb3c0d81eb68226ee27",
+    "archive": "saju-models-materials-archive--part-04.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/04_Ding.blend1",
+    "bytes": 2858624,
+    "sha256": "8ea4b208e5f37a41c385c7f6effbfdfc1079101adb858499bfce189e350c5443",
+    "archive": "saju-models-materials-archive--part-04.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/04_Ding.glb",
+    "bytes": 790944,
+    "sha256": "1e2348dab3bce7b07f95aa2346fed1636a6465d3f981fced558104d625463659",
+    "archive": "saju-models-materials-archive--part-04.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/04_Ding.png",
+    "bytes": 339851,
+    "sha256": "daa9b60d3ef0208121ee68f39cd37739bc3e3498a3eca478e7984064aba91d38",
+    "archive": "saju-models-materials-archive--part-04.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/04_Ding_audit.json",
+    "bytes": 415,
+    "sha256": "70ff393b7c42cd61d4ea20ab5d6a1a23f62c28ab1b362be0f3aae88a785c6438",
+    "archive": "saju-models-materials-archive--part-04.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/04_Ding_final.log",
+    "bytes": 8474,
+    "sha256": "df1dd6222c475e72b745bf169c5e0932b605fdca392f6247350a4defe621d150",
+    "archive": "saju-models-materials-archive--part-04.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/05_Wu.blend",
+    "bytes": 2923940,
+    "sha256": "41cbea381e6e0a81d70da0621e97126857ccab738305b8ee4dc384ab95fcf780",
+    "archive": "saju-models-materials-archive--part-04.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/05_Wu.blend1",
+    "bytes": 2923940,
+    "sha256": "68593ba78024ca79ff96c974e8789565a28fa56ce0ad263f0624952829498e7c",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/05_Wu.glb",
+    "bytes": 880496,
+    "sha256": "3308a63fae4a43ab3496d9ba00135653056656f33e73b87d2e1b8c39d99033e0",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/05_Wu.png",
+    "bytes": 357388,
+    "sha256": "25e1cac613f173c4a14d2f72204c181e0e05e0d3f70728fbba80af65abbe85a5",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/05_Wu_audit.json",
+    "bytes": 341,
+    "sha256": "46586aca166667a86468992ad5e5db0a9f53ad59b84141c4df6fc6e377f70a82",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/05_Wu_final.log",
+    "bytes": 7638,
+    "sha256": "32d6c8e8d964315f92d52b6d15765f40a9ec1ab388b1cc457159537f11d03a91",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/06_Ji.blend",
+    "bytes": 2646392,
+    "sha256": "c08e3d85dbcd5faf76d685e3577267c305d78c9b75e008ad18c1765dd0876c68",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/06_Ji.blend1",
+    "bytes": 2646392,
+    "sha256": "76b1d95a30827ef11974e93194fc5a8612c5302080850b5806851380f2d130b7",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/06_Ji.glb",
+    "bytes": 772084,
+    "sha256": "6a73e9b19feeccb63b5356240967b039712111cb17db7df44b04cea76310a3f7",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/06_Ji.png",
+    "bytes": 392419,
+    "sha256": "f0d7c053b86e41b4bdb92bcd94e6645a66bc859b3223eabb97f173ab1c58d6a8",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/06_Ji_audit.json",
+    "bytes": 433,
+    "sha256": "7691cde216e381870094c2201e64c2adadc61f64c3ce25cf3a67bb565af9d45d",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/06_Ji_final.log",
+    "bytes": 7068,
+    "sha256": "628af4027281b49759041f1df4989f77055d744c3473539522095c388a11e921",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/07_Geng.blend",
+    "bytes": 3106292,
+    "sha256": "305e9fef6eba1921a24b73531dff60cdf269c1937e3250e02302efad33478d1a",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/07_Geng.blend1",
+    "bytes": 3106292,
+    "sha256": "025738b7838f1de27a96c8db7239da652d7141e2dffb834aa361f85b19f83f75",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/07_Geng.glb",
+    "bytes": 1032104,
+    "sha256": "6e55dd268512afb826e64ffed42cbd73bf69ee696bc3fbcf60b07576ed4309bf",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/07_Geng.png",
+    "bytes": 335052,
+    "sha256": "0a84e39fb9cbd8f8b6e23d3bf692f3341a2585d642b5c2966e1d301e4d37c7ff",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/07_Geng_audit.json",
+    "bytes": 344,
+    "sha256": "8a98cddb5a026235a05b16fad0e4a051a39c41f89b7f58e352afc23b21828b08",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/07_Geng_final.log",
+    "bytes": 7078,
+    "sha256": "d02e21998a96b99f1b1c8513d187eed8f33c4185fb0e174d5b7a5a812fc32cc7",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/08_Xin.blend",
+    "bytes": 2542576,
+    "sha256": "6a9cca8c78c2601ef72fb96ee8744c691fba6490c9603d4640023f29b2bd1c29",
+    "archive": "saju-models-materials-archive--part-07.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/08_Xin.blend1",
+    "bytes": 2542576,
+    "sha256": "ffae625eadb83784a3188560137be22665bacf79b8d08ae67e97f2ee96a779a0",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/08_Xin.glb",
+    "bytes": 735600,
+    "sha256": "3f104248207ef5955b642bd082a6ab54e7ef8b736624f8f438de4b6a9fc281e0",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/08_Xin.png",
+    "bytes": 319390,
+    "sha256": "520b02e414610e1dc845c3473b264803e92bd32ed539490a2ea5cf81e42e6a18",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/08_Xin_audit.json",
+    "bytes": 341,
+    "sha256": "9f095229299ba4efaa1a3c169a137f4e04e76da956029562f4ebdc5b2e497718",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/08_Xin_final.log",
+    "bytes": 6783,
+    "sha256": "75fab4fd8bbb12ae31430cc37e2814c032cc43b3b9e41c3bdbe23f4017e8990d",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/09_Ren.blend",
+    "bytes": 2538096,
+    "sha256": "dd4092dbb96b892bb3e866f012984d7feef6ed1b285743b2963a39f3d9ce0067",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/09_Ren.blend1",
+    "bytes": 2538096,
+    "sha256": "29dd4fc14150dd9ee2fa3d1e1c9575a0040d40e7a063c8838e139d29d1cb43e2",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/09_Ren.glb",
+    "bytes": 736016,
+    "sha256": "b2901fe989fb9e7dc4575c7dd721af0f332934035038f6a70cb7bcef603c3a85",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/09_Ren.png",
+    "bytes": 396350,
+    "sha256": "f6e43d9173415bc575de4467dd8081d551134491be94295cf74b83edc46352e2",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/09_Ren_audit.json",
+    "bytes": 432,
+    "sha256": "cf483825ebb0f5f35514ea60e1a70b636182f77607ab46c3944c60dad39a4425",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/09_Ren_cleanup.log",
+    "bytes": 1614,
+    "sha256": "3358e6a76983515c5ad1470c4212815344ef50b6c52e958505f62c8ba911e395",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/09_Ren_final.log",
+    "bytes": 6783,
+    "sha256": "09884cd11c98e5b93886d917f355e9c32f292440ed50cb39de96f39229af215b",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/09_Ren_proof.log",
+    "bytes": 6256,
+    "sha256": "1d1a89edb755877d5998ac310ea54c84b03f45ace51f3338596383e1e3ce3604",
+    "archive": "saju-models-materials-archive--part-06.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/10_Gui.blend",
+    "bytes": 4226908,
+    "sha256": "d4eb5dce221df1d379f9587d6248f4eab890e0a75daab7c60ca737532d5e75bc",
+    "archive": "saju-models-materials-archive--part-04.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/10_Gui.blend1",
+    "bytes": 4226908,
+    "sha256": "64f0f8dd864b1edf6ed9df9bd939c695f7deaf8db88eae6f0711b1df7db17e73",
+    "archive": "saju-models-materials-archive--part-04.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/10_Gui.glb",
+    "bytes": 1402776,
+    "sha256": "e39ff0728f7b82ddea5ecbe82d2c4d37483dc29b7e0f90c40d02215757875068",
+    "archive": "saju-models-materials-archive--part-04.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/10_Gui.png",
+    "bytes": 345697,
+    "sha256": "4135f2079d47caf8b213f6a27d41fbdf274bb1e5c43f0b1c70f4557eaad141e9",
+    "archive": "saju-models-materials-archive--part-04.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/10_Gui_audit.json",
+    "bytes": 435,
+    "sha256": "7658709cdf672f51fefbc01c43f9f4bcd32fca50b2f2f1c63c4543c42cd2db84",
+    "archive": "saju-models-materials-archive--part-04.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/10_Gui_final.log",
+    "bytes": 12380,
+    "sha256": "2b3781420a77da3d1707ea4d551fe6402d541a50df47de8d58fcbeff91e9ba26",
+    "archive": "saju-models-materials-archive--part-04.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/B_v1_v2_priority_comparison.png",
+    "bytes": 1094983,
+    "sha256": "7db32b6f704143a5a8d6267d63fa6c4ff2c0114ead75e26ead32d2e13bd313d5",
+    "archive": "saju-models-materials-archive--part-04.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/B_v2_ten_stems_128px.png",
+    "bytes": 169473,
+    "sha256": "cf7601fcb9ddb984561118ccdf1f5d8f873515a65f3f2d4b6a10fc2204b2b21e",
+    "archive": "saju-models-materials-archive--part-04.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/B_v2_ten_stems_comparison.png",
+    "bytes": 1528458,
+    "sha256": "44131c7204c995e1c8e07964c11303b63a5537d7e701baf97753253d308504db",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/README_ko.txt",
+    "bytes": 2578,
+    "sha256": "9f3be34f938458c1c078b32563877bbe9bc8af0244e1c1b6be2876643e10d845",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/build_0.log",
+    "bytes": 4882,
+    "sha256": "7343a984ec0d2a81ac729dba1c2f1ad7bcc310da3a5f4ff1b2eb1a73a69654cc",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/build_1.log",
+    "bytes": 10393,
+    "sha256": "75b728cdf47c8cf0203a5a0d8832c82ce5be709210d569ea50be826ac5f1bc59",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/build_2.log",
+    "bytes": 1540,
+    "sha256": "1cfc9f132b3643ec91b3f4dcbcfbbff9228661d3866043436618ab3fd9310edb",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/build_3.log",
+    "bytes": 2938,
+    "sha256": "e32b7875644172022b72bcda88cc50fc3ed1f0d0ec40615f7ec62df6d48bc784",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/build_4.log",
+    "bytes": 2229,
+    "sha256": "022e220d2ac8477e54a853d5b4ba5ba7da0c0a92c88b9ae2a766fcda424561c2",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/build_5.log",
+    "bytes": 1791,
+    "sha256": "3c1269e9ced760fc85fbc5b239534375beded881eebec3e606a664cea012caa6",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/build_6.log",
+    "bytes": 1741,
+    "sha256": "7a1e975261b6f8e8b2ac7043ade032400402ba89643a2c8375e16f3420384df4",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/build_7.log",
+    "bytes": 1539,
+    "sha256": "4df06093194af9e801be9ad476ec9dffd86f1600546bc03c2939ad835393f93f",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/build_8.log",
+    "bytes": 1614,
+    "sha256": "3eaebaa8389d0108814ab004f437c41f9d6e3517be9cd6bafd89013c5741cde6",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/build_9.log",
+    "bytes": 5266,
+    "sha256": "62c1c46235dcb7a99d8b729699a2ff866183aac861ef71a479ec6bce881f079b",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/build_stems.py",
+    "bytes": 15949,
+    "sha256": "9b768c54cb824d2bf7709016bd85b6cf87dc7fab78d45a695b3cca4867b14632",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/compose.py",
+    "bytes": 3880,
+    "sha256": "20383fe23e0d29a91d97a3d8d9bbc3c4429bbedb417b9ee5e0a4c5a0f1e9585b",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/compose_v2.py",
+    "bytes": 2266,
+    "sha256": "ffc1357d08137c839a55cb3d8394bd4b7442d5ae279149065c1f25122f335ac2",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/delivery_v2_audit.json",
+    "bytes": 4264,
+    "sha256": "ec189139d35d2082dc1d6bda16ad3b47049b54def6f33a4f1b565045ee5aaf89",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/finalize_assets.py",
+    "bytes": 865,
+    "sha256": "9647859a4fe783d0842b1fb6f88235ca1ae66782d9f1dd4183b253ccf80ac415",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/finalize_v2.py",
+    "bytes": 2447,
+    "sha256": "e7725ec7a8f0c2edb4aa0ef29d2c2227ebc0d9640f47206d760fe1001ffdf0b3",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/glb_v2_verification.json",
+    "bytes": 4304,
+    "sha256": "bce0c4d3bbefa42d71836ec78e50deda11610a7ac0477a1cbccdd3a7c54f135f",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/native_v2_verification.json",
+    "bytes": 33978,
+    "sha256": "a1c1280acac129558f676d282d5e05a49952c7e01366463498c67737071b8092",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/render_one.py",
+    "bytes": 2473,
+    "sha256": "678e890a4d5a1b670188572b6f569a31dd37f67f72559d17885e4f324cf013fe",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/render_pose.py",
+    "bytes": 1332,
+    "sha256": "822cd822eafa81be9c5740e8612d998a7f931d6013b3ec220edff489fc35d836",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/verify_glb.py",
+    "bytes": 919,
+    "sha256": "abdf447e372d54667160ebba7afd29a9923187a112be24fd61df4620bc572b08",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/verify_v2.log",
+    "bytes": 19738,
+    "sha256": "8be8c4e2162afd8f5a1df0ac63637cada4fe077212623e92fce8dd4315caf010",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "b_ten_stems_v2/verify_v2.py",
+    "bytes": 3243,
+    "sha256": "de8bd1bf67392ab907ec56662d434c65313bb90844b87fd3443d352dd0df4aab",
+    "archive": "saju-models-materials-archive--part-03.zip"
+  },
+  {
+    "path": "arm_candidates_v5/B_arm_candidates_v5_sheet.jpg",
+    "bytes": 355025,
+    "sha256": "4ff133f6c2541ca92fb3eeea32f9c33c93ba605d67ee2cd80028228c5bb6444c",
+    "archive": "arm_candidates_v5--part-01.zip"
+  },
+  {
+    "path": "arm_candidates_v5/README.md",
+    "bytes": 2784,
+    "sha256": "92c9eef414553e38b4db3a77580eede912cfe849bd98213b8373974ce5509e46",
+    "archive": "arm_candidates_v5--part-01.zip"
+  },
+  {
+    "path": "arm_candidates_v5/assemble_sheet.py",
+    "bytes": 1558,
+    "sha256": "bb298104df706c898e4e6e399f543a4c6df43c4550ee8cf136ec7957cb3815e6",
+    "archive": "arm_candidates_v5--part-01.zip"
+  },
+  {
+    "path": "arm_candidates_v5/build.log",
+    "bytes": 6726,
+    "sha256": "d9a73d31aaeaee85ed238a27cc40b72c95df1808d015a2bacd73d06d015cae3d",
+    "archive": "arm_candidates_v5--part-01.zip"
+  },
+  {
+    "path": "arm_candidates_v5/build_candidates.py",
+    "bytes": 4956,
+    "sha256": "9a2a6cbae067646895a8f60600f5653cad816fcd33737a863cf64033762fdb24",
+    "archive": "arm_candidates_v5--part-01.zip"
+  },
+  {
+    "path": "arm_candidates_v5/candidate_1.blend",
+    "bytes": 2165756,
+    "sha256": "329c24ac75469f2d9faab9e32766df817d00e2e14414a8311096e1e20b6fdbd2",
+    "archive": "arm_candidates_v5--part-01.zip"
+  },
+  {
+    "path": "arm_candidates_v5/candidate_1.glb",
+    "bytes": 767896,
+    "sha256": "f7c9142ebf8f1a07902929c9575b3db95fba8e83151f308ca26d9c8b2d701762",
+    "archive": "arm_candidates_v5--part-01.zip"
+  },
+  {
+    "path": "arm_candidates_v5/candidate_1_neutral.png",
+    "bytes": 254321,
+    "sha256": "da987a460210362db985c819ef4c2e354dad9ea454b06f5694bbc9d7b3456a4b",
+    "archive": "arm_candidates_v5--part-01.zip"
+  },
+  {
+    "path": "arm_candidates_v5/candidate_1_raised.png",
+    "bytes": 255038,
+    "sha256": "48e19cd2bf368bbfd001e9f3eebf2bc010b77efe71a0be13ee40d0f010f997d6",
+    "archive": "arm_candidates_v5--part-01.zip"
+  },
+  {
+    "path": "arm_candidates_v5/candidate_2.blend",
+    "bytes": 2165760,
+    "sha256": "201a6573d7cbbb59755c13bc9ba685835e316aef156e407bd0500f03763c9098",
+    "archive": "arm_candidates_v5--part-01.zip"
+  },
+  {
+    "path": "arm_candidates_v5/candidate_2.glb",
+    "bytes": 767896,
+    "sha256": "ad7c95f1896940c9979bf557eef601a35f572d0e884e3e0519ce38625485e882",
+    "archive": "arm_candidates_v5--part-01.zip"
+  },
+  {
+    "path": "arm_candidates_v5/candidate_2_neutral.png",
+    "bytes": 254950,
+    "sha256": "45f6d546552484823c46f5926e5b4e2fa1bcdcc99d7d260bcab6b1e7ae3ee1b2",
+    "archive": "arm_candidates_v5--part-01.zip"
+  },
+  {
+    "path": "arm_candidates_v5/candidate_2_raised.png",
+    "bytes": 255321,
+    "sha256": "c3ea36178d52b6372e5e5cc546689e39ef0ce1c3b5b3c3dc63246a11a7295db1",
+    "archive": "arm_candidates_v5--part-01.zip"
+  },
+  {
+    "path": "arm_candidates_v5/candidate_3.blend",
+    "bytes": 2165756,
+    "sha256": "fff21794bed5300c3c837677bcf5e0a625cb6c77074960c45e79b2ed90158ca1",
+    "archive": "arm_candidates_v5--part-01.zip"
+  },
+  {
+    "path": "arm_candidates_v5/candidate_3.glb",
+    "bytes": 767896,
+    "sha256": "9cab416d659aa4444d6d6018c9e57fed04adb1088688733753d0b980006d7fe1",
+    "archive": "arm_candidates_v5--part-01.zip"
+  },
+  {
+    "path": "arm_candidates_v5/candidate_3_neutral.png",
+    "bytes": 253276,
+    "sha256": "5cf9bd6efbae94cf24a3f1d3fc62aeea1244eb01c876e4eb7ce9f582b6c9c550",
+    "archive": "arm_candidates_v5--part-01.zip"
+  },
+  {
+    "path": "arm_candidates_v5/candidate_3_raised.png",
+    "bytes": 255078,
+    "sha256": "fb4887fc0ae30209ea6400ecf1380bb578a5839ef0d45158035e58fe52a497e5",
+    "archive": "arm_candidates_v5--part-01.zip"
+  },
+  {
+    "path": "arm_candidates_v5/candidate_4.blend",
+    "bytes": 2165756,
+    "sha256": "39b8211effcf28ca8bccb65ed1cf473f4b7b218ae5ea370786cd9ea5fba76cbe",
+    "archive": "arm_candidates_v5--part-02.zip"
+  },
+  {
+    "path": "arm_candidates_v5/candidate_4.blend1",
+    "bytes": 2165756,
+    "sha256": "b1a79bb2138ea0db5e0bd188dbacdc5c5f52fc9e9577b09faa690c969a294439",
+    "archive": "arm_candidates_v5--part-02.zip"
+  },
+  {
+    "path": "arm_candidates_v5/candidate_4.glb",
+    "bytes": 767892,
+    "sha256": "0289b18e6fad3f2e36456b4174778d8d18b903c4bc6622155140cb96d975de75",
+    "archive": "arm_candidates_v5--part-02.zip"
+  },
+  {
+    "path": "arm_candidates_v5/candidate_4_neutral.png",
+    "bytes": 254097,
+    "sha256": "4374ad7775c2d0bee8df32169ba86565d41327b68e6a65d6867f447bd9ffaa60",
+    "archive": "arm_candidates_v5--part-02.zip"
+  },
+  {
+    "path": "arm_candidates_v5/candidate_4_raised.png",
+    "bytes": 254691,
+    "sha256": "4aa4ab7b280b1c38c715269945e0efbb60e22f33becb0dfef87baa6fe3281935",
+    "archive": "arm_candidates_v5--part-02.zip"
+  },
+  {
+    "path": "arm_candidates_v5/candidate_5.blend",
+    "bytes": 2165756,
+    "sha256": "65e637c9d635d0cff58c82a8094826c218ddb7e005943cf066dd3a69ef33ecc7",
+    "archive": "arm_candidates_v5--part-02.zip"
+  },
+  {
+    "path": "arm_candidates_v5/candidate_5.glb",
+    "bytes": 767896,
+    "sha256": "5012488dd34cd2eff29c325f2a397c702376db7e9be23f308ae7a1a7255fc89e",
+    "archive": "arm_candidates_v5--part-02.zip"
+  },
+  {
+    "path": "arm_candidates_v5/candidate_5_neutral.png",
+    "bytes": 255281,
+    "sha256": "8e22eb6e6150b9dab347c94a923e4bfee6ba50fc178f7f012f6a2265f9794f2e",
+    "archive": "arm_candidates_v5--part-02.zip"
+  },
+  {
+    "path": "arm_candidates_v5/candidate_5_raised.png",
+    "bytes": 255851,
+    "sha256": "ddfef7e462482ee91943cafbdd71dfb1d447456374cfdbf1e81b5b9ac7c7469a",
+    "archive": "arm_candidates_v5--part-02.zip"
+  },
+  {
+    "path": "arm_candidates_v5/candidate_manifest.json",
+    "bytes": 3507,
+    "sha256": "352a9d09ddcc581d02b5b1aa7d415f5bcff4a66d4d000e73ca4f172c451eca97",
+    "archive": "arm_candidates_v5--part-02.zip"
+  },
+  {
+    "path": "arm_candidates_v5/endpoint_checks.json",
+    "bytes": 5825,
+    "sha256": "3f673121f768f2b94aaeb9ca712adb8049bf39f875bd9e43aad837b5f20140f4",
+    "archive": "arm_candidates_v5--part-02.zip"
+  },
+  {
+    "path": "arm_candidates_v5/render.log",
+    "bytes": 64687,
+    "sha256": "5d2080a4923e9f5abcfbae14d8b3481a15f71397a78bb7aa5a243c5089009ac9",
+    "archive": "arm_candidates_v5--part-02.zip"
+  },
+  {
+    "path": "arm_candidates_v5/render_candidate.py",
+    "bytes": 357,
+    "sha256": "42ef98128837ecc30b267654535909ed17fc28635b8c4435e3ef1608552ac1ff",
+    "archive": "arm_candidates_v5--part-02.zip"
+  },
+  {
+    "path": "arm_candidates_v5/round_tip.log",
+    "bytes": 14455,
+    "sha256": "cf653438e9ece7398b21677940403ff485c2537c601065d15ef66d133ce8339c",
+    "archive": "arm_candidates_v5--part-02.zip"
+  },
+  {
+    "path": "arm_candidates_v5/validate_candidates.py",
+    "bytes": 2210,
+    "sha256": "abdea8d401445d6c20ad4cf3556e26f8c91a60fe8c14f757e82c19bd0ebf55af",
+    "archive": "arm_candidates_v5--part-02.zip"
+  },
+  {
+    "path": "arm_candidates_v5/validation.log",
+    "bytes": 559,
+    "sha256": "220867de2bd1c79800cc3dd1ff6a87312d4cf069f98232ee41f155a8309309f5",
+    "archive": "arm_candidates_v5--part-02.zip"
+  },
+  {
+    "path": "elemental_form_comparison/B_final.blend",
+    "bytes": 1224724,
+    "sha256": "d16cb18fe2f9e88f68deebddc826b9dfdffbee3c51d76ca41988961055bb7136",
+    "archive": "elemental_form_comparison--part-01.zip"
+  },
+  {
+    "path": "elemental_form_comparison/B_final.glb",
+    "bytes": 393424,
+    "sha256": "315665cbfbb763c9083066832dda7ae7d1d7a9074f410c4e044ba57ec420c57e",
+    "archive": "elemental_form_comparison--part-01.zip"
+  },
+  {
+    "path": "elemental_form_comparison/B_final.png",
+    "bytes": 544842,
+    "sha256": "e5ddd5ac6094b2da36d6eab8b7b623f7b34b040e45664267aa599f7dc3766b8e",
+    "archive": "elemental_form_comparison--part-01.zip"
+  },
+  {
+    "path": "elemental_form_comparison/RECOVERY.md",
+    "bytes": 1802,
+    "sha256": "cac12fb4db3be80d06d3cf577d6568f8edf0c74fc96912ecaabd1bf1dcb67e6a",
+    "archive": "elemental_form_comparison--part-01.zip"
+  },
+  {
+    "path": "elemental_form_comparison/recover_b.py",
+    "bytes": 7448,
+    "sha256": "0e9c85e328a8792b0561a050798177e0031cc1311714d7ce3fa4d4cb59e1c464",
+    "archive": "elemental_form_comparison--part-01.zip"
+  },
+  {
+    "path": "elemental_form_comparison/recovered_sha256.txt",
+    "bytes": 315,
+    "sha256": "458a00767235f871534a3ace6381ab170707e8239b0dc2314b6d92d8c78b3932",
+    "archive": "elemental_form_comparison--part-01.zip"
+  },
+  {
+    "path": "elemental_form_comparison/recovery.log",
+    "bytes": 8276,
+    "sha256": "5cd4c0c5737b3bfd9ff563d0654b9fe9a251cfc4cb845b19fe2148c6528dceb4",
+    "archive": "elemental_form_comparison--part-01.zip"
+  },
+  {
+    "path": "elemental_form_comparison/recovery_audit.json",
+    "bytes": 635,
+    "sha256": "e48779d87a47f02e76cc9e8fd535d6759d5728bdf53c2614b1cab7a528e2571d",
+    "archive": "elemental_form_comparison--part-01.zip"
+  }
+]

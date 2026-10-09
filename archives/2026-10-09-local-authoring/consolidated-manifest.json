@@ -1,0 +1,68 @@
+[
+  {
+    "name": "elemental_form_comparison--part-01.zip",
+    "bytes": 1158077,
+    "sha256": "a234c2213f399a94069f655de2403c20fae4d9ab6f74644e0ec3e98990272aea",
+    "git_blob_sha": "863d486e864970cd61769b4d270ec4a4e33c08c4"
+  },
+  {
+    "name": "arm_candidates_v5--part-02.zip",
+    "bytes": 3687641,
+    "sha256": "6a82a6b3b96637567a4160df3f2f66c429059e95a5350c886a303bf779db4466",
+    "git_blob_sha": "e17fc8ed0ba5f3b42714a792abc5e2f83d10b077"
+  },
+  {
+    "name": "arm_candidates_v5--part-01.zip",
+    "bytes": 4926406,
+    "sha256": "e91866bd4ec412b905bae70619bcb205c46a55a509730fcd8646b0c7e824c1e3",
+    "git_blob_sha": "a8360244d36d56327c541e816ea14eadf34fd442"
+  },
+  {
+    "name": "b_five_elements_v1--part-01.zip",
+    "bytes": 6133576,
+    "sha256": "3115c7475aac987009a82587e019af557f40efd704828c72523502db4126375f",
+    "git_blob_sha": "9704ba4cde5632951dabc1567caacd0bbf43a61a"
+  },
+  {
+    "name": "saju-models-materials-archive--part-01.zip",
+    "bytes": 10855128,
+    "sha256": "5c5b8846a4468c41e6bfea7d6299a87c427de26967d691c96f5b912e6c08e1b1",
+    "git_blob_sha": "806f9757e477fa843b9b1f1f64442ab247b94eae"
+  },
+  {
+    "name": "saju-models-materials-archive--part-02.zip",
+    "bytes": 10094542,
+    "sha256": "80702b73f82c98902e960e1c2f0d64aba758c7117db9b175f9ae468373f35ad4",
+    "git_blob_sha": "96d099895d540a97ad1846aaad836675ee3ba166"
+  },
+  {
+    "name": "saju-models-materials-archive--part-03.zip",
+    "bytes": 10787883,
+    "sha256": "5913e8eb940c876ff21e2acb8ae4d6a0511de59eccf7302ae14df1af985eca7b",
+    "git_blob_sha": "7108d2df352371a3b1bd3e5dc538da2755969159"
+  },
+  {
+    "name": "saju-models-materials-archive--part-04.zip",
+    "bytes": 11506894,
+    "sha256": "25c2b63777755680229035baefd2f2b8cb0997a130abbfbb4b19c6afdf1f8ad7",
+    "git_blob_sha": "70fe4ef796a2cc57cd6e177648db159a7bc8fe7a"
+  },
+  {
+    "name": "saju-models-materials-archive--part-05.zip",
+    "bytes": 10841651,
+    "sha256": "dee920fb7606cedb1dcc3745d42ac515182d971978b0ec8765ee11735c9dda5b",
+    "git_blob_sha": "07a0e3b38407fe968f167aca7b1abaaa120f5c21"
+  },
+  {
+    "name": "saju-models-materials-archive--part-06.zip",
+    "bytes": 9893630,
+    "sha256": "d666fd3dc19837c7aefb3b87fa91fbeff83eff46b118d09e459000decb728dca",
+    "git_blob_sha": "417e4260a07b7bdb5197ccc86e9be3a55139ad50"
+  },
+  {
+    "name": "saju-models-materials-archive--part-07.zip",
+    "bytes": 11180707,
+    "sha256": "ea99d758af1f138c5efb58b7c804ea094a1e96adc46a475cfbee3766ebc56471",
+    "git_blob_sha": "7b85ca3df20896ce4432b4dba7e1676404eb32d3"
+  }
+]

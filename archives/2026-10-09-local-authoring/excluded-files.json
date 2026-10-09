@@ -1,0 +1,674 @@
+[
+  {
+    "path": "b_five_elements_v1/B_five_elements_corrected.zip",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v1/B_gesture_native_bundle.zip",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v1/frames/curious_lean/001.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v1/frames/curious_lean/004.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v1/frames/curious_lean/007.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v1/frames/curious_lean/010.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v1/frames/curious_lean/013.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v1/frames/curious_lean/016.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v1/frames/curious_lean/018.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v1/frames/curious_lean/019.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v1/frames/curious_lean/022.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v1/frames/curious_lean/025.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v1/frames/curious_lean/028.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v1/frames/curious_lean/031.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v1/frames/curious_lean/034.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v1/frames/curious_lean/036.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v1/frames/startled_recovery/001.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v1/frames/startled_recovery/004.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v1/frames/startled_recovery/007.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v1/frames/startled_recovery/010.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v1/frames/startled_recovery/013.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v1/frames/startled_recovery/016.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v1/frames/startled_recovery/019.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v1/frames/startled_recovery/022.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v1/frames/startled_recovery/025.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v1/frames/startled_recovery/028.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v1/frames/startled_recovery/031.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v1/frames/startled_recovery/034.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v1/frames/startled_recovery/036.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v1/frames/wave_hello/001.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v1/frames/wave_hello/004.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v1/frames/wave_hello/007.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v1/frames/wave_hello/010.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v1/frames/wave_hello/013.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v1/frames/wave_hello/016.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v1/frames/wave_hello/019.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v1/frames/wave_hello/022.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v1/frames/wave_hello/025.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v1/frames/wave_hello/028.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v1/frames/wave_hello/031.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v1/frames/wave_hello/034.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v1/frames/wave_hello/036.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v2/B_gesture_v2_native_bundle.zip",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v2/frames/after/curious_lean/001.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v2/frames/after/curious_lean/004.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v2/frames/after/curious_lean/007.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v2/frames/after/curious_lean/010.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v2/frames/after/curious_lean/013.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v2/frames/after/curious_lean/016.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v2/frames/after/curious_lean/019.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v2/frames/after/curious_lean/022.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v2/frames/after/curious_lean/025.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v2/frames/after/curious_lean/028.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v2/frames/after/curious_lean/031.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v2/frames/after/curious_lean/034.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v2/frames/after/curious_lean/036.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v2/frames/after/startled_recovery/001.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v2/frames/after/startled_recovery/004.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v2/frames/after/startled_recovery/007.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v2/frames/after/startled_recovery/010.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v2/frames/after/startled_recovery/013.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v2/frames/after/startled_recovery/016.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v2/frames/after/startled_recovery/019.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v2/frames/after/startled_recovery/022.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v2/frames/after/startled_recovery/025.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v2/frames/after/startled_recovery/028.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v2/frames/after/startled_recovery/031.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v2/frames/after/startled_recovery/034.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v2/frames/after/startled_recovery/036.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v2/frames/after/wave_hello/001.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v2/frames/after/wave_hello/004.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v2/frames/after/wave_hello/007.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v2/frames/after/wave_hello/010.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v2/frames/after/wave_hello/013.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v2/frames/after/wave_hello/016.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v2/frames/after/wave_hello/019.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v2/frames/after/wave_hello/022.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v2/frames/after/wave_hello/025.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v2/frames/after/wave_hello/028.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v2/frames/after/wave_hello/031.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v2/frames/after/wave_hello/034.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v2/frames/after/wave_hello/036.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v2/frames/before/wave_hello/001.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v3/B_separate_arms_v3_native_bundle.zip",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v3/frames/after/hands_gathered/001.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v3/frames/after/hands_gathered/004.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v3/frames/after/hands_gathered/007.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v3/frames/after/hands_gathered/010.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v3/frames/after/hands_gathered/013.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v3/frames/after/hands_gathered/016.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v3/frames/after/hands_gathered/019.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v3/frames/after/hands_gathered/022.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v3/frames/after/hands_gathered/025.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v3/frames/after/hands_gathered/028.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v3/frames/after/hands_gathered/031.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v3/frames/after/hands_gathered/034.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v3/frames/after/hands_gathered/036.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v3/frames/after/open_arms/001.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v3/frames/after/open_arms/004.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v3/frames/after/open_arms/007.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v3/frames/after/open_arms/010.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v3/frames/after/open_arms/013.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v3/frames/after/open_arms/016.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v3/frames/after/open_arms/019.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v3/frames/after/open_arms/022.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v3/frames/after/open_arms/025.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v3/frames/after/open_arms/028.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v3/frames/after/open_arms/031.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v3/frames/after/open_arms/034.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v3/frames/after/open_arms/036.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v3/frames/after/wave_hello/001.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v3/frames/after/wave_hello/004.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v3/frames/after/wave_hello/007.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v3/frames/after/wave_hello/010.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v3/frames/after/wave_hello/013.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v3/frames/after/wave_hello/016.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v3/frames/after/wave_hello/019.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v3/frames/after/wave_hello/022.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v3/frames/after/wave_hello/025.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v3/frames/after/wave_hello/028.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v3/frames/after/wave_hello/031.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v3/frames/after/wave_hello/034.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v3/frames/after/wave_hello/036.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v3/frames/before/wave_hello/001.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v4/B_attached_arms_v4_native_bundle.zip",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v4/frames/hands_gathered/001.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v4/frames/hands_gathered/004.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v4/frames/hands_gathered/007.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v4/frames/hands_gathered/010.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v4/frames/hands_gathered/013.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v4/frames/hands_gathered/016.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v4/frames/hands_gathered/019.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v4/frames/hands_gathered/022.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v4/frames/hands_gathered/025.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v4/frames/hands_gathered/028.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v4/frames/hands_gathered/031.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v4/frames/hands_gathered/034.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v4/frames/hands_gathered/036.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v4/frames/open_arms/001.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v4/frames/open_arms/004.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v4/frames/open_arms/007.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v4/frames/open_arms/010.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v4/frames/open_arms/013.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v4/frames/open_arms/016.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v4/frames/open_arms/019.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v4/frames/open_arms/022.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v4/frames/open_arms/025.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v4/frames/open_arms/028.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v4/frames/open_arms/031.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v4/frames/open_arms/034.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v4/frames/open_arms/036.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v4/frames/wave_hello/001.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v4/frames/wave_hello/004.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v4/frames/wave_hello/007.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v4/frames/wave_hello/010.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v4/frames/wave_hello/013.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v4/frames/wave_hello/016.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v4/frames/wave_hello/019.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v4/frames/wave_hello/022.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v4/frames/wave_hello/025.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v4/frames/wave_hello/028.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v4/frames/wave_hello/031.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v4/frames/wave_hello/034.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_gestures_v4/frames/wave_hello/036.png",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_ten_stems_v1/B_ten_stems_v1_delivery.zip",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_ten_stems_v2/B_v2_ten_stems_delivery.zip",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "b_ten_stems_v2/__pycache__/build_stems.cpython-312.pyc",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  },
+  {
+    "path": "arm_candidates_v5/B_arm_candidates_v5_sources.zip",
+    "reason": "duplicate package, cache, or intermediate render frames"
+  }
+]
