@@ -3,7 +3,7 @@
 import { readApiResponse } from "@/lib/http-client";
 
 
-import React, { lazy, Suspense, useState, useEffect } from "react";
+import React, { lazy, Suspense, useState, useEffect, useRef } from "react";
 import { restoreGalaxyUniverse } from "@/lib/universe-state";
 import Header from "@/components/Header";
 import { GuinMapData, GuinPerson } from "@/lib/saju/types";
@@ -57,6 +57,8 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
   const [fMinute, setFMinute] = useState("30");
   const [fUnknownTime, setFUnknownTime] = useState(false);
   const [joining, setJoining] = useState(false);
+  const joinDialogRef = useRef<HTMLDivElement>(null);
+  const joinTriggerRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     const controller = new AbortController();
@@ -99,6 +101,48 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [showJoinModal, passportPerson, showPokedexModal]);
+
+  useEffect(() => {
+    if (!showJoinModal) return;
+    const dialog = joinDialogRef.current;
+    const trigger = joinTriggerRef.current;
+    if (!dialog) return;
+    dialog.querySelector<HTMLInputElement>('input')?.focus();
+    const handleTab = (event: KeyboardEvent) => {
+      if (event.key !== 'Tab' || event.altKey || event.ctrlKey || event.metaKey) return;
+      const controls = Array.from(dialog.querySelectorAll<HTMLElement>(
+        'button:not([disabled]),input:not([disabled]),select:not([disabled]),textarea:not([disabled]),a[href],[tabindex]'
+      )).filter(element => element.tabIndex >= 0 && element.getClientRects().length > 0);
+      if (!controls.length) return;
+      const first = controls[0], last = controls[controls.length - 1];
+      const active = document.activeElement;
+      if (!controls.includes(active as HTMLElement)
+        || (event.shiftKey && active === first) || (!event.shiftKey && active === last)) {
+        event.preventDefault();
+        (event.shiftKey ? last : first).focus();
+      }
+    };
+    document.addEventListener('keydown', handleTab);
+    return () => {
+      document.removeEventListener('keydown', handleTab);
+      if (!trigger?.isConnected) return;
+      trigger.focus();
+      requestAnimationFrame(() => {
+        if (document.activeElement !== trigger) return;
+        const navigation = document.querySelector<HTMLElement>('.bottom-nav');
+        if (navigation?.getClientRects().length && trigger.getBoundingClientRect().bottom > navigation.getBoundingClientRect().top) {
+          trigger.scrollIntoView({ block: 'center', behavior: 'instant' });
+        }
+      });
+    };
+  }, [showJoinModal]);
+
+  useEffect(() => {
+    if (!showJoinModal || joining) return;
+    const dialog = joinDialogRef.current;
+    // Disabling the submit button can move focus to body during a failed save.
+    if (dialog && !dialog.contains(document.activeElement)) dialog.querySelector<HTMLInputElement>('input')?.focus();
+  }, [showJoinModal, joining]);
 
   const handleCopyLink = () => {
     const url = window.location.href;
@@ -341,6 +385,7 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
             </button>
 
             <button
+              ref={joinTriggerRef}
               onClick={() => setShowJoinModal(true)}
               className="py-3 px-3 rounded-xl bg-doryeong-navy text-white hover:bg-doryeong-navyDark active:scale-95 transition-all text-xs font-bold flex items-center justify-center gap-1.5 shadow-sm"
             >
@@ -480,14 +525,16 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
             onClick={() => setShowJoinModal(false)}
           >
             <div
+              ref={joinDialogRef} role="dialog" aria-modal="true" aria-labelledby="guin-join-heading"
               className="w-full max-w-md bg-doryeong-ivory rounded-t-[32px] sm:rounded-[32px] shadow-2xl border border-doryeong-border p-6 animate-in slide-in-from-bottom"
               onClick={(e) => e.stopPropagation()}
             >
               <div className="flex items-center justify-between mb-4">
-                <h3 className="font-serif text-lg font-bold text-doryeong-navy">
+                <h3 id="guin-join-heading" className="font-serif text-lg font-bold text-doryeong-navy">
                   {mapData.ownerName}님의 지도에 참여하기
                 </h3>
                 <button
+                  type="button" aria-label="친구 등록 닫기"
                   onClick={() => setShowJoinModal(false)}
                   className="text-doryeong-textMuted hover:text-doryeong-textDark"
                 >

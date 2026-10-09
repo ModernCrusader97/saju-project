@@ -1,0 +1,1313 @@
+{
+  "baseSha": "caf265e529edd689f1ff7d33ed5e573cb397cc68",
+  "branch": "fix/galaxy-form-keyboard-20261010",
+  "environment": {
+    "node": "24.19.0",
+    "playwright": "1.62.1",
+    "chromium": "151.0.7922.173",
+    "jsdom": "26.1.0",
+    "database": "Disposable local Miniflare D1; no production accounts or data"
+  },
+  "sourceHashes": {
+    "app/guin/page.tsx": {
+      "afterSha256": "cecb02878c7cc159bf0a882408a779db6968940944efe792ef0359f554208ea3",
+      "baseSha256": "8f1be1906a0ca7f2bf978754e7a2d7a2672ea3a49335393db73893ca4f5a2614"
+    },
+    "app/guin/[id]/page.tsx": {
+      "afterSha256": "8357a69e2e5e924d307c9d3e2493e33c1ca779cecda2924097746aa3e275eb91",
+      "baseSha256": "9dc7f3b16e137a034da9a01ebcba75738d8d03304a700b5bdc1db90594984644"
+    },
+    "scripts/qa/map-keyboard-browser.mjs": {
+      "afterSha256": "2925813d7efb6d62b8ae1cea090ee2d5bb8b884eb558ee16e6d57f3b868cd0d9"
+    },
+    "scripts/qa/map-name-forms-browser.mjs": {
+      "afterSha256": "fa71216b1745a78a7282cc5f22b83a044de4ca188659667237771fec3ec0354d"
+    }
+  },
+  "keyboard": {
+    "coverage": {
+      "widths": [
+        320,
+        390,
+        768
+      ],
+      "pointerActions": 0,
+      "programmaticFocusActions": 0
+    },
+    "before": {
+      "status": "FAIL",
+      "checks": 52,
+      "failures": 22,
+      "actualSaves": [
+        {
+          "width": 320,
+          "flow": "owner",
+          "name": "합성 소유자 320",
+          "status": 200
+        },
+        {
+          "width": 320,
+          "flow": "friend",
+          "name": "합성 주변인 320",
+          "status": 200
+        },
+        {
+          "width": 390,
+          "flow": "owner",
+          "name": "합성 소유자 390",
+          "status": 200
+        },
+        {
+          "width": 390,
+          "flow": "friend",
+          "name": "합성 주변인 390",
+          "status": 200
+        },
+        {
+          "width": 768,
+          "flow": "owner",
+          "name": "합성 소유자 768",
+          "status": 200
+        },
+        {
+          "width": 768,
+          "flow": "friend",
+          "name": "합성 주변인 768",
+          "status": 200
+        }
+      ]
+    },
+    "after": {
+      "status": "PASS",
+      "checks": 52,
+      "failures": 0,
+      "actualSaves": [
+        {
+          "width": 320,
+          "flow": "owner",
+          "name": "합성 소유자 320",
+          "status": 200
+        },
+        {
+          "width": 320,
+          "flow": "friend",
+          "name": "합성 주변인 320",
+          "status": 200
+        },
+        {
+          "width": 390,
+          "flow": "owner",
+          "name": "합성 소유자 390",
+          "status": 200
+        },
+        {
+          "width": 390,
+          "flow": "friend",
+          "name": "합성 주변인 390",
+          "status": 200
+        },
+        {
+          "width": 768,
+          "flow": "owner",
+          "name": "합성 소유자 768",
+          "status": 200
+        },
+        {
+          "width": 768,
+          "flow": "friend",
+          "name": "합성 주변인 768",
+          "status": 200
+        }
+      ],
+      "focusObservations": 117,
+      "visibleAndUnobscured": 117
+    },
+    "checks": [
+      {
+        "name": "320-owner-required-name-enter",
+        "before": "PASS",
+        "after": "PASS"
+      },
+      {
+        "name": "320-owner-tab-visible",
+        "before": "PASS",
+        "after": "PASS"
+      },
+      {
+        "name": "320-owner-shift-tab-visible",
+        "before": "PASS",
+        "after": "PASS"
+      },
+      {
+        "name": "320-owner-unknown-time-tab-order",
+        "before": "PASS",
+        "after": "PASS"
+      },
+      {
+        "name": "320-owner-error-enter-keeps-focus-and-draft",
+        "before": "PASS",
+        "after": "PASS"
+      },
+      {
+        "name": "320-owner-enter-saves-and-navigates",
+        "before": "PASS",
+        "after": "PASS"
+      },
+      {
+        "name": "320-friend-open-focus-inside",
+        "before": "FAIL",
+        "after": "PASS"
+      },
+      {
+        "name": "320-friend-tab-visible",
+        "before": "PASS",
+        "after": "PASS"
+      },
+      {
+        "name": "320-friend-shift-tab-visible",
+        "before": "PASS",
+        "after": "PASS"
+      },
+      {
+        "name": "320-friend-tab-wrap",
+        "before": "FAIL",
+        "after": "PASS"
+      },
+      {
+        "name": "320-friend-shift-tab-wrap",
+        "before": "FAIL",
+        "after": "PASS"
+      },
+      {
+        "name": "320-friend-unknown-time-tab-order",
+        "before": "PASS",
+        "after": "PASS"
+      },
+      {
+        "name": "320-friend-escape-restores-trigger",
+        "before": "FAIL",
+        "after": "PASS"
+      },
+      {
+        "name": "320-friend-reopen-keeps-draft",
+        "before": "PASS",
+        "after": "PASS"
+      },
+      {
+        "name": "320-friend-close-enter-restores-trigger",
+        "before": "FAIL",
+        "after": "PASS"
+      },
+      {
+        "name": "320-friend-error-enter-keeps-focus-and-draft",
+        "before": "FAIL",
+        "after": "PASS"
+      },
+      {
+        "name": "320-friend-enter-save-restores-trigger",
+        "before": "FAIL",
+        "after": "PASS"
+      },
+      {
+        "name": "390-owner-required-name-enter",
+        "before": "PASS",
+        "after": "PASS"
+      },
+      {
+        "name": "390-owner-tab-visible",
+        "before": "FAIL",
+        "after": "PASS"
+      },
+      {
+        "name": "390-owner-shift-tab-visible",
+        "before": "PASS",
+        "after": "PASS"
+      },
+      {
+        "name": "390-owner-unknown-time-tab-order",
+        "before": "PASS",
+        "after": "PASS"
+      },
+      {
+        "name": "390-owner-error-enter-keeps-focus-and-draft",
+        "before": "PASS",
+        "after": "PASS"
+      },
+      {
+        "name": "390-owner-enter-saves-and-navigates",
+        "before": "PASS",
+        "after": "PASS"
+      },
+      {
+        "name": "390-friend-open-focus-inside",
+        "before": "FAIL",
+        "after": "PASS"
+      },
+      {
+        "name": "390-friend-tab-visible",
+        "before": "PASS",
+        "after": "PASS"
+      },
+      {
+        "name": "390-friend-shift-tab-visible",
+        "before": "PASS",
+        "after": "PASS"
+      },
+      {
+        "name": "390-friend-tab-wrap",
+        "before": "FAIL",
+        "after": "PASS"
+      },
+      {
+        "name": "390-friend-shift-tab-wrap",
+        "before": "FAIL",
+        "after": "PASS"
+      },
+      {
+        "name": "390-friend-unknown-time-tab-order",
+        "before": "PASS",
+        "after": "PASS"
+      },
+      {
+        "name": "390-friend-escape-restores-trigger",
+        "before": "FAIL",
+        "after": "PASS"
+      },
+      {
+        "name": "390-friend-reopen-keeps-draft",
+        "before": "PASS",
+        "after": "PASS"
+      },
+      {
+        "name": "390-friend-close-enter-restores-trigger",
+        "before": "FAIL",
+        "after": "PASS"
+      },
+      {
+        "name": "390-friend-error-enter-keeps-focus-and-draft",
+        "before": "FAIL",
+        "after": "PASS"
+      },
+      {
+        "name": "390-friend-enter-save-restores-trigger",
+        "before": "FAIL",
+        "after": "PASS"
+      },
+      {
+        "name": "768-owner-required-name-enter",
+        "before": "PASS",
+        "after": "PASS"
+      },
+      {
+        "name": "768-owner-tab-visible",
+        "before": "PASS",
+        "after": "PASS"
+      },
+      {
+        "name": "768-owner-shift-tab-visible",
+        "before": "PASS",
+        "after": "PASS"
+      },
+      {
+        "name": "768-owner-unknown-time-tab-order",
+        "before": "PASS",
+        "after": "PASS"
+      },
+      {
+        "name": "768-owner-error-enter-keeps-focus-and-draft",
+        "before": "PASS",
+        "after": "PASS"
+      },
+      {
+        "name": "768-owner-enter-saves-and-navigates",
+        "before": "PASS",
+        "after": "PASS"
+      },
+      {
+        "name": "768-friend-open-focus-inside",
+        "before": "FAIL",
+        "after": "PASS"
+      },
+      {
+        "name": "768-friend-tab-visible",
+        "before": "PASS",
+        "after": "PASS"
+      },
+      {
+        "name": "768-friend-shift-tab-visible",
+        "before": "PASS",
+        "after": "PASS"
+      },
+      {
+        "name": "768-friend-tab-wrap",
+        "before": "FAIL",
+        "after": "PASS"
+      },
+      {
+        "name": "768-friend-shift-tab-wrap",
+        "before": "FAIL",
+        "after": "PASS"
+      },
+      {
+        "name": "768-friend-unknown-time-tab-order",
+        "before": "PASS",
+        "after": "PASS"
+      },
+      {
+        "name": "768-friend-escape-restores-trigger",
+        "before": "FAIL",
+        "after": "PASS"
+      },
+      {
+        "name": "768-friend-reopen-keeps-draft",
+        "before": "PASS",
+        "after": "PASS"
+      },
+      {
+        "name": "768-friend-close-enter-restores-trigger",
+        "before": "FAIL",
+        "after": "PASS"
+      },
+      {
+        "name": "768-friend-error-enter-keeps-focus-and-draft",
+        "before": "FAIL",
+        "after": "PASS"
+      },
+      {
+        "name": "768-friend-enter-save-restores-trigger",
+        "before": "FAIL",
+        "after": "PASS"
+      },
+      {
+        "name": "no-browser-exceptions-or-external-calls",
+        "before": "PASS",
+        "after": "PASS"
+      }
+    ],
+    "focusBefore": [
+      {
+        "label": "320-friend-open",
+        "tag": "BUTTON",
+        "type": null,
+        "name": "친구 행성 등록",
+        "insideJoin": false,
+        "connected": true,
+        "visible": true,
+        "unobscured": false,
+        "hit": "LABEL",
+        "top": 387.9375,
+        "bottom": 455.9375,
+        "scrollY": 613,
+        "viewport": {
+          "width": 320,
+          "height": 844
+        }
+      },
+      {
+        "label": "320-friend-tab-wrap",
+        "tag": "A",
+        "type": null,
+        "name": "정령",
+        "insideJoin": false,
+        "connected": true,
+        "visible": true,
+        "unobscured": false,
+        "hit": "BUTTON",
+        "top": 781.5625,
+        "bottom": 836,
+        "scrollY": 613,
+        "viewport": {
+          "width": 320,
+          "height": 844
+        }
+      },
+      {
+        "label": "320-friend-shift-wrap",
+        "tag": "BUTTON",
+        "type": null,
+        "name": "3D 추적",
+        "insideJoin": false,
+        "connected": true,
+        "visible": true,
+        "unobscured": false,
+        "hit": "FORM",
+        "top": 591.9375,
+        "bottom": 635.9375,
+        "scrollY": 807,
+        "viewport": {
+          "width": 320,
+          "height": 844
+        }
+      },
+      {
+        "label": "320-friend-escape-return",
+        "tag": "BODY",
+        "type": null,
+        "name": "나의 우주정령행성은하PERSONAL UNIVERSE / 03합성 소유자 320의 갤럭시행성",
+        "insideJoin": false,
+        "connected": true,
+        "visible": false,
+        "unobscured": true,
+        "hit": "DIV",
+        "top": -776,
+        "bottom": 874.9375,
+        "scrollY": 776,
+        "viewport": {
+          "width": 320,
+          "height": 844
+        }
+      },
+      {
+        "label": "320-friend-close-return",
+        "tag": "BODY",
+        "type": null,
+        "name": "나의 우주정령행성은하PERSONAL UNIVERSE / 03합성 소유자 320의 갤럭시행성",
+        "insideJoin": false,
+        "connected": true,
+        "visible": false,
+        "unobscured": true,
+        "hit": "DIV",
+        "top": -807,
+        "bottom": 843.9375,
+        "scrollY": 807,
+        "viewport": {
+          "width": 320,
+          "height": 844
+        }
+      },
+      {
+        "label": "320-friend-error",
+        "tag": "BODY",
+        "type": null,
+        "name": "나의 우주정령행성은하PERSONAL UNIVERSE / 03합성 소유자 320의 갤럭시행성",
+        "insideJoin": false,
+        "connected": true,
+        "visible": false,
+        "unobscured": true,
+        "hit": "FORM",
+        "top": -211,
+        "bottom": 1439.9375,
+        "scrollY": 211,
+        "viewport": {
+          "width": 320,
+          "height": 844
+        }
+      },
+      {
+        "label": "320-friend-save-return",
+        "tag": "BODY",
+        "type": null,
+        "name": "나의 우주정령행성은하PERSONAL UNIVERSE / 03합성 소유자 320의 갤럭시행성",
+        "insideJoin": false,
+        "connected": true,
+        "visible": false,
+        "unobscured": false,
+        "top": -17,
+        "bottom": 2268.9375,
+        "scrollY": 17,
+        "viewport": {
+          "width": 320,
+          "height": 844
+        }
+      },
+      {
+        "label": "390-owner-tab-1",
+        "tag": "INPUT",
+        "type": "number",
+        "name": "은하 연도",
+        "insideJoin": false,
+        "connected": true,
+        "visible": true,
+        "unobscured": false,
+        "hit": "A",
+        "top": 800,
+        "bottom": 844,
+        "scrollY": 8,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        }
+      },
+      {
+        "label": "390-owner-tab-2",
+        "tag": "INPUT",
+        "type": "number",
+        "name": "은하 월",
+        "insideJoin": false,
+        "connected": true,
+        "visible": true,
+        "unobscured": false,
+        "hit": "SPAN",
+        "top": 800,
+        "bottom": 844,
+        "scrollY": 8,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        }
+      },
+      {
+        "label": "390-owner-tab-3",
+        "tag": "INPUT",
+        "type": "number",
+        "name": "은하 일",
+        "insideJoin": false,
+        "connected": true,
+        "visible": true,
+        "unobscured": false,
+        "hit": "A",
+        "top": 800,
+        "bottom": 844,
+        "scrollY": 8,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        }
+      },
+      {
+        "label": "390-friend-open",
+        "tag": "BUTTON",
+        "type": null,
+        "name": "친구 행성 등록",
+        "insideJoin": false,
+        "connected": true,
+        "visible": true,
+        "unobscured": false,
+        "hit": "DIV",
+        "top": 398.75,
+        "bottom": 445.75,
+        "scrollY": 575,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        }
+      },
+      {
+        "label": "390-friend-tab-wrap",
+        "tag": "A",
+        "type": null,
+        "name": "정령",
+        "insideJoin": false,
+        "connected": true,
+        "visible": true,
+        "unobscured": false,
+        "hit": "BUTTON",
+        "top": 781.5625,
+        "bottom": 836,
+        "scrollY": 575,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        }
+      },
+      {
+        "label": "390-friend-shift-wrap",
+        "tag": "BUTTON",
+        "type": null,
+        "name": "3D 추적",
+        "insideJoin": false,
+        "connected": true,
+        "visible": false,
+        "unobscured": false,
+        "top": 1309.75,
+        "bottom": 1353.75,
+        "scrollY": 0,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        }
+      },
+      {
+        "label": "390-friend-escape-return",
+        "tag": "BODY",
+        "type": null,
+        "name": "나의 우주정령행성은하PERSONAL UNIVERSE / 03합성 소유자 390의 갤럭시행성",
+        "insideJoin": false,
+        "connected": true,
+        "visible": false,
+        "unobscured": true,
+        "hit": "DIV",
+        "top": -718,
+        "bottom": 843.75,
+        "scrollY": 718,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        }
+      },
+      {
+        "label": "390-friend-close-return",
+        "tag": "BODY",
+        "type": null,
+        "name": "나의 우주정령행성은하PERSONAL UNIVERSE / 03합성 소유자 390의 갤럭시행성",
+        "insideJoin": false,
+        "connected": true,
+        "visible": false,
+        "unobscured": true,
+        "hit": "DIV",
+        "top": -718,
+        "bottom": 843.75,
+        "scrollY": 718,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        }
+      },
+      {
+        "label": "390-friend-error",
+        "tag": "BODY",
+        "type": null,
+        "name": "나의 우주정령행성은하PERSONAL UNIVERSE / 03합성 소유자 390의 갤럭시행성",
+        "insideJoin": false,
+        "connected": true,
+        "visible": false,
+        "unobscured": true,
+        "hit": "BUTTON",
+        "top": -5,
+        "bottom": 1556.75,
+        "scrollY": 5,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        }
+      },
+      {
+        "label": "390-friend-save-return",
+        "tag": "BODY",
+        "type": null,
+        "name": "나의 우주정령행성은하PERSONAL UNIVERSE / 03합성 소유자 390의 갤럭시행성",
+        "insideJoin": false,
+        "connected": true,
+        "visible": false,
+        "unobscured": true,
+        "hit": "P",
+        "top": -510,
+        "bottom": 1629.75,
+        "scrollY": 510,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        }
+      },
+      {
+        "label": "768-friend-open",
+        "tag": "BUTTON",
+        "type": null,
+        "name": "친구 행성 등록",
+        "insideJoin": false,
+        "connected": true,
+        "visible": true,
+        "unobscured": false,
+        "hit": "INPUT",
+        "top": 398.5625,
+        "bottom": 445.5625,
+        "scrollY": 614,
+        "viewport": {
+          "width": 768,
+          "height": 844
+        }
+      },
+      {
+        "label": "768-friend-tab-wrap",
+        "tag": "BODY",
+        "type": null,
+        "name": "나의 우주정령행성은하PERSONAL UNIVERSE / 03합성 소유자 768의 갤럭시행성",
+        "insideJoin": false,
+        "connected": true,
+        "visible": false,
+        "unobscured": true,
+        "hit": "DIV",
+        "top": -614,
+        "bottom": 946.5625,
+        "scrollY": 614,
+        "viewport": {
+          "width": 768,
+          "height": 844
+        }
+      },
+      {
+        "label": "768-friend-shift-wrap",
+        "tag": "BUTTON",
+        "type": null,
+        "name": "3D 추적",
+        "insideJoin": false,
+        "connected": true,
+        "visible": false,
+        "unobscured": false,
+        "top": 1293.5625,
+        "bottom": 1337.5625,
+        "scrollY": 0,
+        "viewport": {
+          "width": 768,
+          "height": 844
+        }
+      },
+      {
+        "label": "768-friend-escape-return",
+        "tag": "BODY",
+        "type": null,
+        "name": "나의 우주정령행성은하PERSONAL UNIVERSE / 03합성 소유자 768의 갤럭시행성",
+        "insideJoin": false,
+        "connected": true,
+        "visible": false,
+        "unobscured": true,
+        "hit": "CANVAS",
+        "top": -717,
+        "bottom": 843.5625,
+        "scrollY": 717,
+        "viewport": {
+          "width": 768,
+          "height": 844
+        }
+      },
+      {
+        "label": "768-friend-close-return",
+        "tag": "BODY",
+        "type": null,
+        "name": "나의 우주정령행성은하PERSONAL UNIVERSE / 03합성 소유자 768의 갤럭시행성",
+        "insideJoin": false,
+        "connected": true,
+        "visible": false,
+        "unobscured": true,
+        "hit": "CANVAS",
+        "top": -717,
+        "bottom": 843.5625,
+        "scrollY": 717,
+        "viewport": {
+          "width": 768,
+          "height": 844
+        }
+      },
+      {
+        "label": "768-friend-error",
+        "tag": "BODY",
+        "type": null,
+        "name": "나의 우주정령행성은하PERSONAL UNIVERSE / 03합성 소유자 768의 갤럭시행성",
+        "insideJoin": false,
+        "connected": true,
+        "visible": false,
+        "unobscured": true,
+        "hit": "DIV",
+        "top": 0,
+        "bottom": 1560.5625,
+        "scrollY": 0,
+        "viewport": {
+          "width": 768,
+          "height": 844
+        }
+      },
+      {
+        "label": "768-friend-save-return",
+        "tag": "BODY",
+        "type": null,
+        "name": "나의 우주정령행성은하PERSONAL UNIVERSE / 03합성 소유자 768의 갤럭시행성",
+        "insideJoin": false,
+        "connected": true,
+        "visible": false,
+        "unobscured": true,
+        "hit": "DIV",
+        "top": -717,
+        "bottom": 1121.5625,
+        "scrollY": 717,
+        "viewport": {
+          "width": 768,
+          "height": 844
+        }
+      }
+    ],
+    "focusAfter": [
+      {
+        "label": "320-friend-open",
+        "tag": "INPUT",
+        "type": "text",
+        "name": "예: 지우",
+        "insideJoin": true,
+        "connected": true,
+        "visible": true,
+        "unobscured": true,
+        "hit": "INPUT",
+        "top": 455,
+        "bottom": 499,
+        "scrollY": 613,
+        "viewport": {
+          "width": 320,
+          "height": 844
+        }
+      },
+      {
+        "label": "320-friend-tab-wrap",
+        "tag": "BUTTON",
+        "type": "button",
+        "name": "친구 등록 닫기",
+        "insideJoin": true,
+        "connected": true,
+        "visible": true,
+        "unobscured": true,
+        "hit": "친구 등록 닫기",
+        "top": 341,
+        "bottom": 385,
+        "scrollY": 613,
+        "viewport": {
+          "width": 320,
+          "height": 844
+        }
+      },
+      {
+        "label": "320-friend-shift-wrap",
+        "tag": "BUTTON",
+        "type": "submit",
+        "name": "귀인 등록 완료하기",
+        "insideJoin": true,
+        "connected": true,
+        "visible": true,
+        "unobscured": true,
+        "hit": "BUTTON",
+        "top": 771,
+        "bottom": 819,
+        "scrollY": 613,
+        "viewport": {
+          "width": 320,
+          "height": 844
+        }
+      },
+      {
+        "label": "320-friend-escape-return",
+        "tag": "BUTTON",
+        "type": null,
+        "name": "친구 행성 등록",
+        "insideJoin": false,
+        "connected": true,
+        "visible": true,
+        "unobscured": true,
+        "hit": "SPAN",
+        "top": 387.9375,
+        "bottom": 455.9375,
+        "scrollY": 613,
+        "viewport": {
+          "width": 320,
+          "height": 844
+        }
+      },
+      {
+        "label": "320-friend-close-return",
+        "tag": "BUTTON",
+        "type": null,
+        "name": "친구 행성 등록",
+        "insideJoin": false,
+        "connected": true,
+        "visible": true,
+        "unobscured": true,
+        "hit": "SPAN",
+        "top": 387.9375,
+        "bottom": 455.9375,
+        "scrollY": 613,
+        "viewport": {
+          "width": 320,
+          "height": 844
+        }
+      },
+      {
+        "label": "320-friend-error",
+        "tag": "INPUT",
+        "type": "text",
+        "name": "예: 지우",
+        "insideJoin": true,
+        "connected": true,
+        "visible": true,
+        "unobscured": true,
+        "hit": "INPUT",
+        "top": 455,
+        "bottom": 499,
+        "scrollY": 613,
+        "viewport": {
+          "width": 320,
+          "height": 844
+        }
+      },
+      {
+        "label": "320-friend-save-return",
+        "tag": "BUTTON",
+        "type": null,
+        "name": "친구 행성 등록",
+        "insideJoin": false,
+        "connected": true,
+        "visible": true,
+        "unobscured": true,
+        "hit": "SPAN",
+        "top": 387.9375,
+        "bottom": 455.9375,
+        "scrollY": 976,
+        "viewport": {
+          "width": 320,
+          "height": 844
+        }
+      },
+      {
+        "label": "390-owner-tab-1",
+        "tag": "INPUT",
+        "type": "number",
+        "name": "은하 연도",
+        "insideJoin": false,
+        "connected": true,
+        "visible": true,
+        "unobscured": true,
+        "hit": "은하 연도",
+        "top": 400,
+        "bottom": 444,
+        "scrollY": 408,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        }
+      },
+      {
+        "label": "390-owner-tab-2",
+        "tag": "INPUT",
+        "type": "number",
+        "name": "은하 월",
+        "insideJoin": false,
+        "connected": true,
+        "visible": true,
+        "unobscured": true,
+        "hit": "은하 월",
+        "top": 400,
+        "bottom": 444,
+        "scrollY": 408,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        }
+      },
+      {
+        "label": "390-owner-tab-3",
+        "tag": "INPUT",
+        "type": "number",
+        "name": "은하 일",
+        "insideJoin": false,
+        "connected": true,
+        "visible": true,
+        "unobscured": true,
+        "hit": "은하 일",
+        "top": 400,
+        "bottom": 444,
+        "scrollY": 408,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        }
+      },
+      {
+        "label": "390-friend-open",
+        "tag": "INPUT",
+        "type": "text",
+        "name": "예: 지우",
+        "insideJoin": true,
+        "connected": true,
+        "visible": true,
+        "unobscured": true,
+        "hit": "INPUT",
+        "top": 473,
+        "bottom": 517,
+        "scrollY": 514,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        }
+      },
+      {
+        "label": "390-friend-tab-wrap",
+        "tag": "BUTTON",
+        "type": "button",
+        "name": "친구 등록 닫기",
+        "insideJoin": true,
+        "connected": true,
+        "visible": true,
+        "unobscured": true,
+        "hit": "친구 등록 닫기",
+        "top": 359,
+        "bottom": 403,
+        "scrollY": 514,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        }
+      },
+      {
+        "label": "390-friend-shift-wrap",
+        "tag": "BUTTON",
+        "type": "submit",
+        "name": "귀인 등록 완료하기",
+        "insideJoin": true,
+        "connected": true,
+        "visible": true,
+        "unobscured": true,
+        "hit": "BUTTON",
+        "top": 771,
+        "bottom": 819,
+        "scrollY": 514,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        }
+      },
+      {
+        "label": "390-friend-escape-return",
+        "tag": "BUTTON",
+        "type": null,
+        "name": "친구 행성 등록",
+        "insideJoin": false,
+        "connected": true,
+        "visible": true,
+        "unobscured": true,
+        "hit": "SPAN",
+        "top": 459.75,
+        "bottom": 506.75,
+        "scrollY": 514,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        }
+      },
+      {
+        "label": "390-friend-close-return",
+        "tag": "BUTTON",
+        "type": null,
+        "name": "친구 행성 등록",
+        "insideJoin": false,
+        "connected": true,
+        "visible": true,
+        "unobscured": true,
+        "hit": "SPAN",
+        "top": 459.75,
+        "bottom": 506.75,
+        "scrollY": 514,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        }
+      },
+      {
+        "label": "390-friend-error",
+        "tag": "INPUT",
+        "type": "text",
+        "name": "예: 지우",
+        "insideJoin": true,
+        "connected": true,
+        "visible": true,
+        "unobscured": true,
+        "hit": "INPUT",
+        "top": 473,
+        "bottom": 517,
+        "scrollY": 514,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        }
+      },
+      {
+        "label": "390-friend-save-return",
+        "tag": "BUTTON",
+        "type": null,
+        "name": "친구 행성 등록",
+        "insideJoin": false,
+        "connected": true,
+        "visible": true,
+        "unobscured": true,
+        "hit": "SPAN",
+        "top": 398.75,
+        "bottom": 445.75,
+        "scrollY": 902,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        }
+      },
+      {
+        "label": "768-friend-open",
+        "tag": "INPUT",
+        "type": "text",
+        "name": "예: 지우",
+        "insideJoin": true,
+        "connected": true,
+        "visible": true,
+        "unobscured": true,
+        "hit": "INPUT",
+        "top": 315,
+        "bottom": 359,
+        "scrollY": 614,
+        "viewport": {
+          "width": 768,
+          "height": 844
+        }
+      },
+      {
+        "label": "768-friend-tab-wrap",
+        "tag": "BUTTON",
+        "type": "button",
+        "name": "친구 등록 닫기",
+        "insideJoin": true,
+        "connected": true,
+        "visible": true,
+        "unobscured": true,
+        "hit": "친구 등록 닫기",
+        "top": 207,
+        "bottom": 251,
+        "scrollY": 614,
+        "viewport": {
+          "width": 768,
+          "height": 844
+        }
+      },
+      {
+        "label": "768-friend-shift-wrap",
+        "tag": "BUTTON",
+        "type": "submit",
+        "name": "귀인 등록 완료하기",
+        "insideJoin": true,
+        "connected": true,
+        "visible": true,
+        "unobscured": true,
+        "hit": "BUTTON",
+        "top": 613,
+        "bottom": 661,
+        "scrollY": 614,
+        "viewport": {
+          "width": 768,
+          "height": 844
+        }
+      },
+      {
+        "label": "768-friend-escape-return",
+        "tag": "BUTTON",
+        "type": null,
+        "name": "친구 행성 등록",
+        "insideJoin": false,
+        "connected": true,
+        "visible": true,
+        "unobscured": true,
+        "hit": "SPAN",
+        "top": 398.5625,
+        "bottom": 445.5625,
+        "scrollY": 614,
+        "viewport": {
+          "width": 768,
+          "height": 844
+        }
+      },
+      {
+        "label": "768-friend-close-return",
+        "tag": "BUTTON",
+        "type": null,
+        "name": "친구 행성 등록",
+        "insideJoin": false,
+        "connected": true,
+        "visible": true,
+        "unobscured": true,
+        "hit": "SPAN",
+        "top": 398.5625,
+        "bottom": 445.5625,
+        "scrollY": 614,
+        "viewport": {
+          "width": 768,
+          "height": 844
+        }
+      },
+      {
+        "label": "768-friend-error",
+        "tag": "INPUT",
+        "type": "text",
+        "name": "예: 지우",
+        "insideJoin": true,
+        "connected": true,
+        "visible": true,
+        "unobscured": true,
+        "hit": "INPUT",
+        "top": 315,
+        "bottom": 359,
+        "scrollY": 614,
+        "viewport": {
+          "width": 768,
+          "height": 844
+        }
+      },
+      {
+        "label": "768-friend-save-return",
+        "tag": "BUTTON",
+        "type": null,
+        "name": "친구 행성 등록",
+        "insideJoin": false,
+        "connected": true,
+        "visible": true,
+        "unobscured": true,
+        "hit": "SPAN",
+        "top": 655.5625,
+        "bottom": 702.5625,
+        "scrollY": 614,
+        "viewport": {
+          "width": 768,
+          "height": 844
+        }
+      }
+    ],
+    "intermediateReturnIssue320": {
+      "label": "320-friend-save-return",
+      "tag": "BUTTON",
+      "type": null,
+      "name": "친구 행성 등록",
+      "insideJoin": false,
+      "connected": true,
+      "visible": true,
+      "unobscured": false,
+      "hit": "A",
+      "top": 750.9375,
+      "bottom": 818.9375,
+      "scrollY": 613,
+      "viewport": {
+        "width": 320,
+        "height": 844
+      }
+    }
+  },
+  "formRegression": {
+    "status": "PASS",
+    "checks": 65,
+    "failures": 0,
+    "coverage": {
+      "profile": "standard",
+      "widths": [
+        320,
+        390
+      ],
+      "fixtures": [
+        "ordinary",
+        "space-boundary",
+        "pair-crosses",
+        "pair-fits"
+      ]
+    },
+    "storedNames": 16,
+    "layoutObservations": 32
+  },
+  "nodeRegression": {
+    "passed": 47,
+    "failed": 0
+  },
+  "typecheck": {
+    "exitCode": 0
+  },
+  "build": {
+    "exitCode": 0
+  },
+  "lint": {
+    "status": "PASS",
+    "errors": 2,
+    "warnings": 4,
+    "sameAsBase": true,
+    "qaScriptMessages": 0
+  },
+  "limits": [
+    "Synthetic local Worker/D1 and browser identities only; no production accounts or records",
+    "Chromium keyboard events and text insertion; no physical keyboard, OS IME or assistive technology validation",
+    "Native validation/alert behavior tested; browser/OS popup outer geometry and 3D art unmeasured"
+  ]
+}

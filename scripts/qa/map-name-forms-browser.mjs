@@ -287,7 +287,7 @@ try {
       }
       await friendName.fill(fixture.raw);
       await check(label + '-friend-close-and-reopen-draft', page, async () => {
-        await page.getByRole('button', { name: '✕', exact: true }).click();
+        await page.locator('form').locator('..').getByRole('button', { name: /^(친구 등록 닫기|✕)$/ }).click();
         assert.equal(await friendName.count(), 0);
         await page.getByRole('button', { name: '친구 행성 등록', exact: true }).click();
         assert.equal(await friendName.inputValue(), fixture.raw);

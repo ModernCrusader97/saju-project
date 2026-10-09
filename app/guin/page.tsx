@@ -19,6 +19,16 @@ export default function GuinPage() {
   const [birthMinute, setBirthMinute] = useState("30");
   const [isUnknownTime, setIsUnknownTime] = useState(false);
   const [loading, setLoading] = useState(false);
+  const handleFormFocus = (event: React.FocusEvent<HTMLFormElement>) => {
+    const target = event.target as HTMLElement;
+    requestAnimationFrame(() => {
+      if (document.activeElement !== target) return;
+      const navigation = document.querySelector<HTMLElement>('.bottom-nav');
+      if (navigation?.getClientRects().length && target.getBoundingClientRect().bottom > navigation.getBoundingClientRect().top) {
+        target.scrollIntoView({ block: 'center', behavior: 'instant' });
+      }
+    });
+  };
   useEffect(() => {
     const restore = () => {
       const saved = readUniverseSession();
@@ -120,7 +130,7 @@ export default function GuinPage() {
                 생년월일을 입력하면 나를 중심으로 하는 4대 나선은하가 생성됩니다.
               </p>
 
-          <form onSubmit={handleCreate} className="space-y-4">
+          <form onSubmit={handleCreate} onFocusCapture={handleFormFocus} className="space-y-4">
             <div>
               <label className="block text-xs font-bold text-doryeong-textDark mb-1">
                 이름 (또는 닉네임)
