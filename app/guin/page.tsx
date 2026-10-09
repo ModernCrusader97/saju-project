@@ -130,7 +130,11 @@ export default function GuinPage() {
                 생년월일을 입력하면 나를 중심으로 하는 4대 나선은하가 생성됩니다.
               </p>
 
-          <form onSubmit={handleCreate} onFocusCapture={handleFormFocus} className="space-y-4">
+          <form onSubmit={handleCreate} onFocusCapture={handleFormFocus}
+            onKeyDown={(event) => {
+              if (event.key === "Enter" && event.nativeEvent.isComposing) event.preventDefault();
+            }}
+            className="space-y-4">
             <div>
               <label className="block text-xs font-bold text-doryeong-textDark mb-1">
                 이름 (또는 닉네임)

@@ -542,7 +542,11 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
                 </button>
               </div>
 
-              <form onSubmit={handleJoin} className="space-y-4">
+              <form onSubmit={handleJoin}
+                onKeyDown={(event) => {
+                  if (event.key === "Enter" && event.nativeEvent.isComposing) event.preventDefault();
+                }}
+                className="space-y-4">
                 <div>
                   <label className="block text-xs font-bold text-doryeong-textDark mb-1">
                     내 이름 (또는 별명)

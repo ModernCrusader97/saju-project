@@ -1,0 +1,2064 @@
+{
+  "baseSha": "8b3f1cb0c1c77c06a2fd0084753222f6d518126b",
+  "branch": "fix/galaxy-form-ime-20261010",
+  "environment": {
+    "node": "24.19.0",
+    "playwright": "1.62.1",
+    "chromium": "151.0.7922.173",
+    "jsdom": "26.1.0",
+    "osImeAvailable": false,
+    "displayServerAvailable": false,
+    "database": "Disposable local Miniflare D1; synthetic identities only"
+  },
+  "sourceHashes": {
+    "app/guin/page.tsx": {
+      "afterSha256": "010a94f93d525e92f059fbaa474b4e5c22383707215834ac8086a467cb47506d",
+      "baseSha256": "cecb02878c7cc159bf0a882408a779db6968940944efe792ef0359f554208ea3"
+    },
+    "app/guin/[id]/page.tsx": {
+      "afterSha256": "921e290cd43a22aa7bf3bbb7c3e64ad56ca9303a13a43745840d06830a8d02b4",
+      "baseSha256": "8357a69e2e5e924d307c9d3e2493e33c1ca779cecda2924097746aa3e275eb91"
+    },
+    "scripts/qa/map-ime-browser.mjs": {
+      "afterSha256": "8564b281d7609f71a54b99d2dc098e2e2120b98993c03b712bc04e529bdc5b60"
+    }
+  },
+  "coverage": {
+    "forms": [
+      "owner",
+      "friend"
+    ],
+    "modes": [
+      "active",
+      "committed",
+      "cancelled-empty"
+    ],
+    "width": 390,
+    "height": 844,
+    "compositionSource": "CDP Input.imeSetComposition / Input.insertText",
+    "enterSource": "Playwright Chromium keyboard input",
+    "domKeyboardDispatches": 0,
+    "programmaticSubmissions": 0
+  },
+  "imeBefore": {
+    "status": "FAIL",
+    "checks": [
+      {
+        "name": "owner-active",
+        "status": "FAIL",
+        "error": "Composing Enter must not issue a save request\n\n1 !== 0\n"
+      },
+      {
+        "name": "owner-committed",
+        "status": "PASS"
+      },
+      {
+        "name": "owner-cancelled-empty",
+        "status": "PASS"
+      },
+      {
+        "name": "friend-active",
+        "status": "FAIL",
+        "error": "Composing Enter must not issue a save request\n\n1 !== 0\n"
+      },
+      {
+        "name": "friend-committed",
+        "status": "PASS"
+      },
+      {
+        "name": "friend-cancelled-empty",
+        "status": "PASS"
+      },
+      {
+        "name": "no-browser-exceptions-or-external-calls",
+        "status": "PASS"
+      }
+    ],
+    "failures": 2,
+    "observations": [
+      {
+        "label": "owner-active",
+        "mode": "active",
+        "flow": "owner",
+        "events": [
+          {
+            "type": "compositionstart",
+            "data": "",
+            "value": "합성 owner-active ",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionupdate",
+            "data": "ㅎ",
+            "value": "합성 owner-active ",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "ㅎ",
+            "value": "합성 owner-active ",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "input",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "ㅎ",
+            "value": "합성 owner-active ㅎ",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionupdate",
+            "data": "한글",
+            "value": "합성 owner-active ㅎ",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "한글",
+            "value": "합성 owner-active ㅎ",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "input",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "한글",
+            "value": "합성 owner-active 한글",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "keyCode": 13,
+            "isComposing": true,
+            "value": "합성 owner-active 한글",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "keypress",
+            "key": "Enter",
+            "keyCode": 13,
+            "isComposing": true,
+            "value": "합성 owner-active 한글",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": false,
+            "inputType": "insertLineBreak",
+            "data": null,
+            "value": "합성 owner-active 한글",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "submit",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": true
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "keyCode": 13,
+            "isComposing": true,
+            "value": "합성 owner-active 한글",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          }
+        ],
+        "postCount": 1,
+        "dialogCount": 0,
+        "urlChanged": true,
+        "inputPresent": false
+      },
+      {
+        "label": "owner-committed",
+        "mode": "committed",
+        "flow": "owner",
+        "events": [
+          {
+            "type": "input",
+            "isComposing": false,
+            "inputType": "insertText",
+            "data": "합성 owner-committed ",
+            "value": "합성 owner-committed ",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionstart",
+            "data": "",
+            "value": "합성 owner-committed ",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionupdate",
+            "data": "ㅎ",
+            "value": "합성 owner-committed ",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "ㅎ",
+            "value": "합성 owner-committed ",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "input",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "ㅎ",
+            "value": "합성 owner-committed ㅎ",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionupdate",
+            "data": "한글",
+            "value": "합성 owner-committed ㅎ",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "한글",
+            "value": "합성 owner-committed ㅎ",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "input",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "한글",
+            "value": "합성 owner-committed 한글",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionupdate",
+            "data": "한글",
+            "value": "합성 owner-committed 한글",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "한글",
+            "value": "합성 owner-committed 한글",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "input",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "한글",
+            "value": "합성 owner-committed 한글",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionend",
+            "data": "한글",
+            "value": "합성 owner-committed 한글",
+            "isTrusted": false,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "value": "합성 owner-committed 한글",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "keypress",
+            "key": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "value": "합성 owner-committed 한글",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": false,
+            "inputType": "insertLineBreak",
+            "data": null,
+            "value": "합성 owner-committed 한글",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "submit",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": true
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "value": "합성 owner-committed 한글",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          }
+        ],
+        "postCount": 1,
+        "dialogCount": 0,
+        "urlChanged": true,
+        "inputPresent": false
+      },
+      {
+        "label": "owner-cancelled-empty",
+        "mode": "cancelled-empty",
+        "flow": "owner",
+        "events": [
+          {
+            "type": "beforeinput",
+            "isComposing": false,
+            "inputType": "deleteContentForward",
+            "data": null,
+            "value": "",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Delete",
+            "keyCode": 46,
+            "isComposing": false,
+            "value": "",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionstart",
+            "data": "",
+            "value": "",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionupdate",
+            "data": "ㅎ",
+            "value": "",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "ㅎ",
+            "value": "",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "input",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "ㅎ",
+            "value": "ㅎ",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionupdate",
+            "data": "한글",
+            "value": "ㅎ",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "한글",
+            "value": "ㅎ",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "input",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "한글",
+            "value": "한글",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionupdate",
+            "data": "",
+            "value": "한글",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "",
+            "value": "한글",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "input",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": null,
+            "value": "",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionend",
+            "data": "",
+            "value": "",
+            "isTrusted": false,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "value": "",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "keypress",
+            "key": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "value": "",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": false,
+            "inputType": "insertLineBreak",
+            "data": null,
+            "value": "",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "invalid",
+            "value": "",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "value": "",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          }
+        ],
+        "postCount": 0,
+        "dialogCount": 0,
+        "urlChanged": false,
+        "inputPresent": true
+      },
+      {
+        "label": "friend-active",
+        "mode": "active",
+        "flow": "friend",
+        "events": [
+          {
+            "type": "beforeinput",
+            "isComposing": false,
+            "inputType": "insertText",
+            "data": "합성 friend-active ",
+            "value": "",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "input",
+            "isComposing": false,
+            "inputType": "insertText",
+            "data": "합성 friend-active ",
+            "value": "합성 friend-active ",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionstart",
+            "data": "",
+            "value": "합성 friend-active ",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionupdate",
+            "data": "ㅎ",
+            "value": "합성 friend-active ",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "ㅎ",
+            "value": "합성 friend-active ",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "input",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "ㅎ",
+            "value": "합성 friend-active ㅎ",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionupdate",
+            "data": "한글",
+            "value": "합성 friend-active ㅎ",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "한글",
+            "value": "합성 friend-active ㅎ",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "input",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "한글",
+            "value": "합성 friend-active 한글",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "keyCode": 13,
+            "isComposing": true,
+            "value": "합성 friend-active 한글",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "keypress",
+            "key": "Enter",
+            "keyCode": 13,
+            "isComposing": true,
+            "value": "합성 friend-active 한글",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": false,
+            "inputType": "insertLineBreak",
+            "data": null,
+            "value": "합성 friend-active 한글",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "submit",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": true
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "keyCode": 13,
+            "isComposing": true,
+            "value": "합성 friend-active 한글",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionend",
+            "data": "한글",
+            "value": "합성 friend-active 한글",
+            "isTrusted": false,
+            "cancelable": true,
+            "defaultPrevented": false
+          }
+        ],
+        "postCount": 1,
+        "dialogCount": 1,
+        "urlChanged": false,
+        "inputPresent": false
+      },
+      {
+        "label": "friend-committed",
+        "mode": "committed",
+        "flow": "friend",
+        "events": [
+          {
+            "type": "compositionstart",
+            "data": "",
+            "value": "합성 friend-committed ",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionupdate",
+            "data": "ㅎ",
+            "value": "합성 friend-committed ",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "ㅎ",
+            "value": "합성 friend-committed ",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "input",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "ㅎ",
+            "value": "합성 friend-committed ㅎ",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionupdate",
+            "data": "한글",
+            "value": "합성 friend-committed ㅎ",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "한글",
+            "value": "합성 friend-committed ㅎ",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "input",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "한글",
+            "value": "합성 friend-committed 한글",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionupdate",
+            "data": "한글",
+            "value": "합성 friend-committed 한글",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "한글",
+            "value": "합성 friend-committed 한글",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "input",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "한글",
+            "value": "합성 friend-committed 한글",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionend",
+            "data": "한글",
+            "value": "합성 friend-committed 한글",
+            "isTrusted": false,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "value": "합성 friend-committed 한글",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "keypress",
+            "key": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "value": "합성 friend-committed 한글",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": false,
+            "inputType": "insertLineBreak",
+            "data": null,
+            "value": "합성 friend-committed 한글",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "submit",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": true
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "value": "합성 friend-committed 한글",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          }
+        ],
+        "postCount": 1,
+        "dialogCount": 1,
+        "urlChanged": false,
+        "inputPresent": false
+      },
+      {
+        "label": "friend-cancelled-empty",
+        "mode": "cancelled-empty",
+        "flow": "friend",
+        "events": [
+          {
+            "type": "keydown",
+            "key": "Delete",
+            "keyCode": 46,
+            "isComposing": false,
+            "value": "",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": false,
+            "inputType": "deleteContentForward",
+            "data": null,
+            "value": "",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Delete",
+            "keyCode": 46,
+            "isComposing": false,
+            "value": "",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionstart",
+            "data": "",
+            "value": "",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionupdate",
+            "data": "ㅎ",
+            "value": "",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "ㅎ",
+            "value": "",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "input",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "ㅎ",
+            "value": "ㅎ",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionupdate",
+            "data": "한글",
+            "value": "ㅎ",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "한글",
+            "value": "ㅎ",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "input",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "한글",
+            "value": "한글",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionupdate",
+            "data": "",
+            "value": "한글",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "",
+            "value": "한글",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "input",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": null,
+            "value": "",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionend",
+            "data": "",
+            "value": "",
+            "isTrusted": false,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "value": "",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "keypress",
+            "key": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "value": "",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": false,
+            "inputType": "insertLineBreak",
+            "data": null,
+            "value": "",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "invalid",
+            "value": "",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "value": "",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          }
+        ],
+        "postCount": 0,
+        "dialogCount": 0,
+        "urlChanged": false,
+        "inputPresent": true
+      }
+    ]
+  },
+  "imeAfter": {
+    "status": "PASS",
+    "checks": [
+      {
+        "name": "owner-active",
+        "status": "PASS"
+      },
+      {
+        "name": "owner-committed",
+        "status": "PASS"
+      },
+      {
+        "name": "owner-cancelled-empty",
+        "status": "PASS"
+      },
+      {
+        "name": "friend-active",
+        "status": "PASS"
+      },
+      {
+        "name": "friend-committed",
+        "status": "PASS"
+      },
+      {
+        "name": "friend-cancelled-empty",
+        "status": "PASS"
+      },
+      {
+        "name": "no-browser-exceptions-or-external-calls",
+        "status": "PASS"
+      }
+    ],
+    "failures": 0,
+    "observations": [
+      {
+        "label": "owner-active",
+        "mode": "active",
+        "flow": "owner",
+        "events": [
+          {
+            "type": "compositionstart",
+            "data": "",
+            "value": "합성 owner-active ",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionupdate",
+            "data": "ㅎ",
+            "value": "합성 owner-active ",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "ㅎ",
+            "value": "합성 owner-active ",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "input",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "ㅎ",
+            "value": "합성 owner-active ㅎ",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionupdate",
+            "data": "한글",
+            "value": "합성 owner-active ㅎ",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "한글",
+            "value": "합성 owner-active ㅎ",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "input",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "한글",
+            "value": "합성 owner-active 한글",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "keyCode": 13,
+            "isComposing": true,
+            "value": "합성 owner-active 한글",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": true
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "keyCode": 13,
+            "isComposing": true,
+            "value": "합성 owner-active 한글",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          }
+        ],
+        "postCount": 0,
+        "dialogCount": 0,
+        "urlChanged": false,
+        "inputPresent": true
+      },
+      {
+        "label": "owner-committed",
+        "mode": "committed",
+        "flow": "owner",
+        "events": [
+          {
+            "type": "beforeinput",
+            "isComposing": false,
+            "inputType": "insertText",
+            "data": "합성 owner-committed ",
+            "value": "",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "input",
+            "isComposing": false,
+            "inputType": "insertText",
+            "data": "합성 owner-committed ",
+            "value": "합성 owner-committed ",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionstart",
+            "data": "",
+            "value": "합성 owner-committed ",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionupdate",
+            "data": "ㅎ",
+            "value": "합성 owner-committed ",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "ㅎ",
+            "value": "합성 owner-committed ",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "input",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "ㅎ",
+            "value": "합성 owner-committed ㅎ",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionupdate",
+            "data": "한글",
+            "value": "합성 owner-committed ㅎ",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "한글",
+            "value": "합성 owner-committed ㅎ",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "input",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "한글",
+            "value": "합성 owner-committed 한글",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionupdate",
+            "data": "한글",
+            "value": "합성 owner-committed 한글",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "한글",
+            "value": "합성 owner-committed 한글",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "input",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "한글",
+            "value": "합성 owner-committed 한글",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionend",
+            "data": "한글",
+            "value": "합성 owner-committed 한글",
+            "isTrusted": false,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "value": "합성 owner-committed 한글",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "keypress",
+            "key": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "value": "합성 owner-committed 한글",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": false,
+            "inputType": "insertLineBreak",
+            "data": null,
+            "value": "합성 owner-committed 한글",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "submit",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": true
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "value": "합성 owner-committed 한글",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          }
+        ],
+        "postCount": 1,
+        "dialogCount": 0,
+        "urlChanged": true,
+        "inputPresent": false
+      },
+      {
+        "label": "owner-cancelled-empty",
+        "mode": "cancelled-empty",
+        "flow": "owner",
+        "events": [
+          {
+            "type": "keydown",
+            "key": "Delete",
+            "keyCode": 46,
+            "isComposing": false,
+            "value": "",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": false,
+            "inputType": "deleteContentForward",
+            "data": null,
+            "value": "",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Delete",
+            "keyCode": 46,
+            "isComposing": false,
+            "value": "",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionstart",
+            "data": "",
+            "value": "",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionupdate",
+            "data": "ㅎ",
+            "value": "",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "ㅎ",
+            "value": "",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "input",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "ㅎ",
+            "value": "ㅎ",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionupdate",
+            "data": "한글",
+            "value": "ㅎ",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "한글",
+            "value": "ㅎ",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "input",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "한글",
+            "value": "한글",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionupdate",
+            "data": "",
+            "value": "한글",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "",
+            "value": "한글",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "input",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": null,
+            "value": "",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionend",
+            "data": "",
+            "value": "",
+            "isTrusted": false,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "value": "",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "keypress",
+            "key": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "value": "",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": false,
+            "inputType": "insertLineBreak",
+            "data": null,
+            "value": "",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "invalid",
+            "value": "",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "value": "",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          }
+        ],
+        "postCount": 0,
+        "dialogCount": 0,
+        "urlChanged": false,
+        "inputPresent": true
+      },
+      {
+        "label": "friend-active",
+        "mode": "active",
+        "flow": "friend",
+        "events": [
+          {
+            "type": "beforeinput",
+            "isComposing": false,
+            "inputType": "insertText",
+            "data": "합성 friend-active ",
+            "value": "",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "input",
+            "isComposing": false,
+            "inputType": "insertText",
+            "data": "합성 friend-active ",
+            "value": "합성 friend-active ",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionstart",
+            "data": "",
+            "value": "합성 friend-active ",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionupdate",
+            "data": "ㅎ",
+            "value": "합성 friend-active ",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "ㅎ",
+            "value": "합성 friend-active ",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "input",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "ㅎ",
+            "value": "합성 friend-active ㅎ",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionupdate",
+            "data": "한글",
+            "value": "합성 friend-active ㅎ",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "한글",
+            "value": "합성 friend-active ㅎ",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "input",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "한글",
+            "value": "합성 friend-active 한글",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "keyCode": 13,
+            "isComposing": true,
+            "value": "합성 friend-active 한글",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": true
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "keyCode": 13,
+            "isComposing": true,
+            "value": "합성 friend-active 한글",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          }
+        ],
+        "postCount": 0,
+        "dialogCount": 0,
+        "urlChanged": false,
+        "inputPresent": true
+      },
+      {
+        "label": "friend-committed",
+        "mode": "committed",
+        "flow": "friend",
+        "events": [
+          {
+            "type": "input",
+            "isComposing": false,
+            "inputType": "insertText",
+            "data": "합성 friend-committed ",
+            "value": "합성 friend-committed ",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionstart",
+            "data": "",
+            "value": "합성 friend-committed ",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionupdate",
+            "data": "ㅎ",
+            "value": "합성 friend-committed ",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "ㅎ",
+            "value": "합성 friend-committed ",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "input",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "ㅎ",
+            "value": "합성 friend-committed ㅎ",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionupdate",
+            "data": "한글",
+            "value": "합성 friend-committed ㅎ",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "한글",
+            "value": "합성 friend-committed ㅎ",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "input",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "한글",
+            "value": "합성 friend-committed 한글",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionupdate",
+            "data": "한글",
+            "value": "합성 friend-committed 한글",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "한글",
+            "value": "합성 friend-committed 한글",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "input",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "한글",
+            "value": "합성 friend-committed 한글",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionend",
+            "data": "한글",
+            "value": "합성 friend-committed 한글",
+            "isTrusted": false,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "value": "합성 friend-committed 한글",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "keypress",
+            "key": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "value": "합성 friend-committed 한글",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": false,
+            "inputType": "insertLineBreak",
+            "data": null,
+            "value": "합성 friend-committed 한글",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "submit",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": true
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "value": "합성 friend-committed 한글",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          }
+        ],
+        "postCount": 1,
+        "dialogCount": 1,
+        "urlChanged": false,
+        "inputPresent": false
+      },
+      {
+        "label": "friend-cancelled-empty",
+        "mode": "cancelled-empty",
+        "flow": "friend",
+        "events": [
+          {
+            "type": "keydown",
+            "key": "Delete",
+            "keyCode": 46,
+            "isComposing": false,
+            "value": "",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": false,
+            "inputType": "deleteContentForward",
+            "data": null,
+            "value": "",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Delete",
+            "keyCode": 46,
+            "isComposing": false,
+            "value": "",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionstart",
+            "data": "",
+            "value": "",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionupdate",
+            "data": "ㅎ",
+            "value": "",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "ㅎ",
+            "value": "",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "input",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "ㅎ",
+            "value": "ㅎ",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionupdate",
+            "data": "한글",
+            "value": "ㅎ",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "한글",
+            "value": "ㅎ",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "input",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "한글",
+            "value": "한글",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionupdate",
+            "data": "",
+            "value": "한글",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": "",
+            "value": "한글",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "input",
+            "isComposing": true,
+            "inputType": "insertCompositionText",
+            "data": null,
+            "value": "",
+            "isTrusted": true,
+            "cancelable": false,
+            "defaultPrevented": false
+          },
+          {
+            "type": "compositionend",
+            "data": "",
+            "value": "",
+            "isTrusted": false,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "keydown",
+            "key": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "value": "",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "keypress",
+            "key": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "value": "",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "beforeinput",
+            "isComposing": false,
+            "inputType": "insertLineBreak",
+            "data": null,
+            "value": "",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "invalid",
+            "value": "",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          },
+          {
+            "type": "keyup",
+            "key": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "value": "",
+            "isTrusted": true,
+            "cancelable": true,
+            "defaultPrevented": false
+          }
+        ],
+        "postCount": 0,
+        "dialogCount": 0,
+        "urlChanged": false,
+        "inputPresent": true
+      }
+    ]
+  },
+  "keyboardRegression": {
+    "status": "PASS",
+    "checks": 52,
+    "failures": 0,
+    "coverage": {
+      "widths": [
+        320,
+        390,
+        768
+      ],
+      "pointerActions": 0,
+      "programmaticFocusActions": 0
+    },
+    "focusVisibleAndUnobscured": 117
+  },
+  "formRegression": {
+    "status": "PASS",
+    "checks": 65,
+    "failures": 0,
+    "coverage": {
+      "profile": "standard",
+      "widths": [
+        320,
+        390
+      ],
+      "fixtures": [
+        "ordinary",
+        "space-boundary",
+        "pair-crosses",
+        "pair-fits"
+      ]
+    },
+    "storedNames": 16,
+    "layoutObservations": 32
+  },
+  "nodeRegression": {
+    "passed": 47,
+    "failed": 0
+  },
+  "typecheck": {
+    "exitCode": 0
+  },
+  "build": {
+    "beforeExitCode": 0,
+    "afterExitCode": 0
+  },
+  "lint": {
+    "sameAsBase": true,
+    "errors": 2,
+    "warnings": 4,
+    "qaMessages": 0
+  },
+  "limits": [
+    "Synthesized composition and keyboard events in Chromium; no physical keyboard or OS IME",
+    "No desktop display/IBus/Fcitx tools available; no Safari, Firefox or actual mobile keyboard validation",
+    "Only synthetic identities and nonpersistent local D1; no production records or external calls"
+  ]
+}
