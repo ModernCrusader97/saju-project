@@ -1,0 +1,16 @@
+{
+  "basis": "5f70798e27c9dd2474bceb823706cf6d37e5475c",
+  "preexistingTrackedFiles": 596,
+  "byteIdenticalPreexistingFiles": 595,
+  "changedPreexistingFiles": [
+    "components/SajuInputModal.tsx"
+  ],
+  "productLinesReplaced": 3,
+  "exactOriginalSourceRecoveredByNormalizingOnlyCalendarTypeChanges": true,
+  "requestLifecycleAndLayoutUnchanged": true,
+  "beforeQAHashMatchesOriginal": true,
+  "currentApplicationSourceSHA256": "4f7b370074101abccc4883fca40684455bf1e9695b042aee0d58e7f315f45117",
+  "originalKeyboardWipSHA256": "75ea6f5726ce41272841494c3a3316e3f4b88ea7c4888d71e21e981ee9030539",
+  "afterQAHashMatchesCurrent": true,
+  "lunarSelectionScreenshotsByteIdentical": true
+}

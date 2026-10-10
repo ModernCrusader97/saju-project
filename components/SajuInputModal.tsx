@@ -237,15 +237,15 @@ export default function SajuInputModal({
                 달력 구분
               </label>
               <div className="grid grid-cols-3 gap-2 bg-doryeong-ivoryDark p-1 rounded-xl text-xs font-bold">
-                {[
+                {([
                   { id: "solar", label: "양력" },
                   { id: "lunar", label: "음력 (평달)" },
                   { id: "leap-lunar", label: "음력 (윤달)" },
-                ].map((item) => (
+                ] as const).map((item) => (
                   <button
                     key={item.id}
                     type="button"
-                    onClick={() => setCalendarType(item.id as any)}
+                    onClick={() => setCalendarType(item.id)}
                     className={`py-1.5 rounded-lg transition-all ${
                       calendarType === item.id
                         ? "bg-white text-doryeong-navy shadow-sm"

@@ -1,0 +1,91 @@
+{
+  "basis": "5f70798e27c9dd2474bceb823706cf6d37e5475c",
+  "phase": "before",
+  "applicationSourceSHA256": "a01468f56a6ba7a2c32f73b11f4ad1dea7105e5605c2427a299bad7d132bcc4a",
+  "passed": 4,
+  "failed": 1,
+  "checks": [
+    {
+      "name": "an invalid calendar option ID fails the actual state setter type check",
+      "status": "FAIL",
+      "error": "The invalid option must produce one state-domain diagnostic\n\n0 !== 1\n"
+    },
+    {
+      "name": "native selection preserves the solar payload and calendar year range",
+      "status": "PASS"
+    },
+    {
+      "name": "native selection preserves the lunar payload and calendar year range",
+      "status": "PASS"
+    },
+    {
+      "name": "native selection preserves the leap-lunar payload and calendar year range",
+      "status": "PASS"
+    },
+    {
+      "name": "calendar checks have no page errors or outbound calls",
+      "status": "PASS"
+    }
+  ],
+  "observations": [
+    {
+      "scenario": "in-memory typo solra, never written or executed",
+      "diagnostics": []
+    },
+    {
+      "scenario": "양력",
+      "yearMax": "2100",
+      "payload": {
+        "name": "합성 달력 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "scenario": "음력 (평달)",
+      "yearMax": "2050",
+      "payload": {
+        "name": "합성 달력 검증",
+        "gender": "male",
+        "calendarType": "lunar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "scenario": "음력 (윤달)",
+      "yearMax": "2050",
+      "payload": {
+        "name": "합성 달력 검증",
+        "gender": "male",
+        "calendarType": "leap-lunar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    }
+  ],
+  "errors": [],
+  "outbound": [],
+  "limits": [
+    "The invalid ID is an in-memory compile-only mutation, never written or used in a request.",
+    "Actual built modal and native Chromium events; synthetic POST replies prevent server writes and external AI calls.",
+    "No runtime defect is claimed for the three existing valid choices. Server calendar calculations, hosted auth and other browsers are not tested."
+  ]
+}

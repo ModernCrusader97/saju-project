@@ -1,0 +1,52 @@
+{
+  "basis": "5f70798e27c9dd2474bceb823706cf6d37e5475c",
+  "branch": "maint/saju-calendar-option-types-20261010",
+  "productSource": "components/SajuInputModal.tsx",
+  "productSourceSHA256": "4f7b370074101abccc4883fca40684455bf1e9695b042aee0d58e7f315f45117",
+  "productLinesReplaced": 3,
+  "before": {
+    "passed": 4,
+    "failed": 1,
+    "invalidOptionTypeDiagnostics": 0
+  },
+  "after": {
+    "passed": 5,
+    "failed": 0,
+    "invalidOptionTypeDiagnostics": 1,
+    "expectedTypeDiagnosticCode": 2345
+  },
+  "validRuntimeChoicesPreserved": [
+    "solar",
+    "lunar",
+    "leap-lunar"
+  ],
+  "typecheck": {
+    "command": "tsc --noEmit --incremental false",
+    "exitCode": 0,
+    "elapsedSeconds": 3.7
+  },
+  "build": {
+    "command": "npm run build",
+    "exitCode": 0,
+    "elapsedSeconds": 7.2
+  },
+  "lint": {
+    "lintExitCode": 1,
+    "beforeErrors": 2,
+    "afterErrors": 1,
+    "beforeWarnings": 3,
+    "afterWarnings": 3,
+    "onlyCalendarAnyErrorRemoved": true,
+    "newQaMessages": 0
+  },
+  "visualInspection": [
+    "before-selected-lunar.png",
+    "after-selected-lunar.png"
+  ],
+  "scope": "One explicit-any lint error at the calendar option/state boundary; no runtime defect claimed for existing choices.",
+  "limits": [
+    "Invalid option is compile-only and in memory.",
+    "POST replies are synthetic; no real user records or external AI calls.",
+    "Server calendar calculations, hosted authentication, other browsers and physical devices are not tested."
+  ]
+}

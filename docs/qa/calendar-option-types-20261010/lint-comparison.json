@@ -1,0 +1,9 @@
+{
+  "lintExitCode": 1,
+  "beforeErrors": 2,
+  "afterErrors": 1,
+  "beforeWarnings": 3,
+  "afterWarnings": 3,
+  "onlyCalendarAnyErrorRemoved": true,
+  "newQaMessages": 0
+}
