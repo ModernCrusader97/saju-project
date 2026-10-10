@@ -1,0 +1,142 @@
+{
+  "basis": "8ba3b9763bcaa88a8a3f2e108fa331a49800090f",
+  "browser": "151.0.7922.173",
+  "passed": 4,
+  "failed": 4,
+  "checks": [
+    {
+      "name": "built WebGL playing resume matches ordinary frames",
+      "status": "PASS"
+    },
+    {
+      "name": "built WebGL user pause resume matches ordinary frames",
+      "status": "PASS"
+    },
+    {
+      "name": "built reduced-motion remains visually static across long gap",
+      "status": "PASS"
+    },
+    {
+      "name": "built resize preserves drawing and one animation chain",
+      "status": "PASS"
+    },
+    {
+      "name": "built WebGL unavailable fallback and person selection at 390px",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n+   '합성 복귀 검증 (나)',\n-   '합성 복귀 검증',\n    '합성 복귀 친구'\n  ]\n\n    at file:///workspace/saju-galaxy-graphics-error-store-20261010/outputs/galaxy-graphics-errors/graphics-browser-fixture.mjs:204:14\n    at async check (file:///workspace/saju-galaxy-graphics-error-store-20261010/outputs/galaxy-graphics-errors/graphics-browser-fixture.mjs:20:9)\n    at async file:///workspace/saju-galaxy-graphics-error-store-20261010/outputs/galaxy-graphics-errors/graphics-browser-fixture.mjs:198:36"
+    },
+    {
+      "name": "built WebGL unavailable fallback and person selection at 1440px",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n+   '합성 복귀 검증 (나)',\n-   '합성 복귀 검증',\n    '합성 복귀 친구'\n  ]\n\n    at file:///workspace/saju-galaxy-graphics-error-store-20261010/outputs/galaxy-graphics-errors/graphics-browser-fixture.mjs:204:14\n    at async check (file:///workspace/saju-galaxy-graphics-error-store-20261010/outputs/galaxy-graphics-errors/graphics-browser-fixture.mjs:20:9)\n    at async file:///workspace/saju-galaxy-graphics-error-store-20261010/outputs/galaxy-graphics-errors/graphics-browser-fixture.mjs:198:36"
+    },
+    {
+      "name": "trusted native WebGL loss and restore keep fallback and resume drawing",
+      "status": "FAIL",
+      "error": "page.evaluate: TypeError: Cannot read properties of null (reading 'restoreContext')\n    at eval (eval at evaluate (:311:30), <anonymous>:3:53)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n    at /workspace/saju-galaxy-graphics-error-store-20261010/outputs/galaxy-graphics-errors/graphics-browser-fixture.mjs:230:20\n    at async check (/workspace/saju-galaxy-graphics-error-store-20261010/outputs/galaxy-graphics-errors/graphics-browser-fixture.mjs:20:9)\n    at async file:///workspace/saju-galaxy-graphics-error-store-20261010/outputs/galaxy-graphics-errors/graphics-browser-fixture.mjs:216:3"
+    },
+    {
+      "name": "browser errors and outbound requests remain empty",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(consoleErrors.every(message => message === 'THREE.WebGLRenderer: Error creating WebGL context.'))\n\n    at file:///workspace/saju-galaxy-graphics-error-store-20261010/outputs/galaxy-graphics-errors/graphics-browser-fixture.mjs:248:5\n    at check (file:///workspace/saju-galaxy-graphics-error-store-20261010/outputs/galaxy-graphics-errors/graphics-browser-fixture.mjs:20:15)\n    at file:///workspace/saju-galaxy-graphics-error-store-20261010/outputs/galaxy-graphics-errors/graphics-browser-fixture.mjs:245:9"
+    }
+  ],
+  "observations": [
+    {
+      "scenario": "playing resume",
+      "hiddenGapMs": 300000,
+      "control": {
+        "first": {
+          "rasterHash": "3dda184158660741a6692f699655d969dada4a1779668b93743a0a95767c7f34",
+          "stateHash": "bba9a8c614ff7cd6e224091d4a1c20219601060ed60034437a026cfbbf0702df"
+        },
+        "after": {
+          "rasterHash": "cb0eeaae17e629294d43b0ba23cb7b1616650732792681184640bf46f4778ea4",
+          "stateHash": "86ef26915e31f96091febfafab15ee85ed928d82e124a938ad077a306595451a"
+        }
+      },
+      "resumed": {
+        "first": {
+          "rasterHash": "3dda184158660741a6692f699655d969dada4a1779668b93743a0a95767c7f34",
+          "stateHash": "bba9a8c614ff7cd6e224091d4a1c20219601060ed60034437a026cfbbf0702df"
+        },
+        "after": {
+          "rasterHash": "cb0eeaae17e629294d43b0ba23cb7b1616650732792681184640bf46f4778ea4",
+          "stateHash": "86ef26915e31f96091febfafab15ee85ed928d82e124a938ad077a306595451a"
+        }
+      },
+      "matchingPixelsAndGPUState": true
+    },
+    {
+      "scenario": "paused resume",
+      "hiddenGapMs": 300000,
+      "control": {
+        "first": {
+          "rasterHash": "b619600723dcc2ba910f1927454c9143d6dbaa134c80773a08041f0c482dd29f",
+          "stateHash": "94756cbc46cecc5d82f8f1eb64dde7185236e642673ab02027afb6c13ee0699a"
+        },
+        "after": {
+          "rasterHash": "b619600723dcc2ba910f1927454c9143d6dbaa134c80773a08041f0c482dd29f",
+          "stateHash": "94756cbc46cecc5d82f8f1eb64dde7185236e642673ab02027afb6c13ee0699a"
+        }
+      },
+      "resumed": {
+        "first": {
+          "rasterHash": "b619600723dcc2ba910f1927454c9143d6dbaa134c80773a08041f0c482dd29f",
+          "stateHash": "94756cbc46cecc5d82f8f1eb64dde7185236e642673ab02027afb6c13ee0699a"
+        },
+        "after": {
+          "rasterHash": "b619600723dcc2ba910f1927454c9143d6dbaa134c80773a08041f0c482dd29f",
+          "stateHash": "94756cbc46cecc5d82f8f1eb64dde7185236e642673ab02027afb6c13ee0699a"
+        }
+      },
+      "matchingPixelsAndGPUState": true
+    },
+    {
+      "scenario": "reduced motion",
+      "hiddenGapMs": 86400000,
+      "matchingPixels": true
+    },
+    {
+      "scenario": "resize",
+      "viewportWidth": 320,
+      "overflow": 0,
+      "width": 286,
+      "displayWidth": 286,
+      "height": 498,
+      "displayHeight": 498,
+      "state": "ready"
+    },
+    {
+      "scenario": "resize",
+      "viewportWidth": 768,
+      "overflow": 0,
+      "width": 689,
+      "displayWidth": 689,
+      "height": 598,
+      "displayHeight": 598,
+      "state": "ready"
+    },
+    {
+      "scenario": "resize",
+      "viewportWidth": 1440,
+      "overflow": 0,
+      "width": 974,
+      "displayWidth": 974,
+      "height": 678,
+      "displayHeight": 678,
+      "state": "ready"
+    }
+  ],
+  "errors": [],
+  "outbound": [],
+  "consoleErrors": [
+    "THREE.WebGLRenderer: THREE.WebGLRenderer: Error creating WebGL context.",
+    "THREE.WebGLRenderer: THREE.WebGLRenderer: Error creating WebGL context."
+  ],
+  "limits": [
+    "Synthetic clock, rAF and visibility events; native hidden-tab state is not emulated by this environment",
+    "Actual built Worker, disposable synthetic D1, Chromium/SwiftShader WebGL; no physical GPU/mobile tab suspension",
+    "Existing shared Vector3 orbit-anchor drift is a separate baseline diagnostic; paused comparison means equivalent frames, not globally frozen orbits"
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "basis": "8ba3b9763bcaa88a8a3f2e108fa331a49800090f",
+  "sourceHashes": {
+    "components/planet/GalaxyCanvas.tsx": "d1a1e4d52dd529ce1a8b9a823ea42031fd1625b8c4914d37643d59cb60a2fdf7",
+    "lib/planet/surface-math.ts": "6f785c406149941df100690d5e64404e1108a60ea46a79625c0fa76dc46af0f9",
+    "lib/planet/galaxy-helper.ts": "d6978b4f112c1c1ae9348b38d5dda3766a827c836a95095fcb701789c6e342a2"
+  },
+  "method": "real React component/source and Three CPU objects; synthetic clock/visibility; GPU/environment and Canvas2D boundary stubs",
+  "passed": 17,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "hidden gap 1000ms matches foreground control",
+      "status": "PASS"
+    },
+    {
+      "name": "hidden gap 300000ms matches foreground control",
+      "status": "PASS"
+    },
+    {
+      "name": "hidden gap 86400000ms matches foreground control",
+      "status": "PASS"
+    },
+    {
+      "name": "resume {\"hiddenFrames\":3}",
+      "status": "PASS"
+    },
+    {
+      "name": "resume {\"speed\":3}",
+      "status": "PASS"
+    },
+    {
+      "name": "resume {\"pause\":true}",
+      "status": "PASS"
+    },
+    {
+      "name": "resume {\"pause\":true,\"hiddenFrames\":3}",
+      "status": "PASS"
+    },
+    {
+      "name": "resume {\"landing\":true}",
+      "status": "PASS"
+    },
+    {
+      "name": "resume {\"landing\":true,\"pause\":true}",
+      "status": "PASS"
+    },
+    {
+      "name": "resume {\"tracking\":true}",
+      "status": "PASS"
+    },
+    {
+      "name": "visible rAF stall is capped to 50ms",
+      "status": "PASS"
+    },
+    {
+      "name": "foreground speed and shader time use ordinary elapsed seconds",
+      "status": "PASS"
+    },
+    {
+      "name": "user pause time survives visibility and advances only after explicit play",
+      "status": "PASS"
+    },
+    {
+      "name": "reduced-motion initialization and visibility preserve zero simulation time",
+      "status": "PASS"
+    },
+    {
+      "name": "repeated hide/show cycles keep a single rAF chain",
+      "status": "PASS"
+    },
+    {
+      "name": "resize paths and unmount disposal remain functional",
+      "status": "PASS"
+    },
+    {
+      "name": "Strict Mode discards its first loop and cleans both renderer generations once",
+      "status": "PASS"
+    }
+  ],
+  "observations": [
+    {
+      "scenario": {
+        "gap": 1000,
+        "hiddenFrames": 0,
+        "speed": 1,
+        "pause": false,
+        "landing": false,
+        "tracking": false
+      },
+      "firstFrameMatchesControl": true,
+      "subsequentFramesMatchControl": true
+    },
+    {
+      "scenario": {
+        "gap": 300000,
+        "hiddenFrames": 0,
+        "speed": 1,
+        "pause": false,
+        "landing": false,
+        "tracking": false
+      },
+      "firstFrameMatchesControl": true,
+      "subsequentFramesMatchControl": true
+    },
+    {
+      "scenario": {
+        "gap": 86400000,
+        "hiddenFrames": 0,
+        "speed": 1,
+        "pause": false,
+        "landing": false,
+        "tracking": false
+      },
+      "firstFrameMatchesControl": true,
+      "subsequentFramesMatchControl": true
+    },
+    {
+      "scenario": {
+        "gap": 300000,
+        "hiddenFrames": 3,
+        "speed": 1,
+        "pause": false,
+        "landing": false,
+        "tracking": false
+      },
+      "firstFrameMatchesControl": true,
+      "subsequentFramesMatchControl": true
+    },
+    {
+      "scenario": {
+        "gap": 300000,
+        "hiddenFrames": 0,
+        "speed": 3,
+        "pause": false,
+        "landing": false,
+        "tracking": false
+      },
+      "firstFrameMatchesControl": true,
+      "subsequentFramesMatchControl": true
+    },
+    {
+      "scenario": {
+        "gap": 300000,
+        "hiddenFrames": 0,
+        "speed": 1,
+        "pause": true,
+        "landing": false,
+        "tracking": false
+      },
+      "firstFrameMatchesControl": true,
+      "subsequentFramesMatchControl": true
+    },
+    {
+      "scenario": {
+        "gap": 300000,
+        "hiddenFrames": 3,
+        "speed": 1,
+        "pause": true,
+        "landing": false,
+        "tracking": false
+      },
+      "firstFrameMatchesControl": true,
+      "subsequentFramesMatchControl": true
+    },
+    {
+      "scenario": {
+        "gap": 300000,
+        "hiddenFrames": 0,
+        "speed": 1,
+        "pause": false,
+        "landing": true,
+        "tracking": false
+      },
+      "firstFrameMatchesControl": true,
+      "subsequentFramesMatchControl": true
+    },
+    {
+      "scenario": {
+        "gap": 300000,
+        "hiddenFrames": 0,
+        "speed": 1,
+        "pause": true,
+        "landing": true,
+        "tracking": false
+      },
+      "firstFrameMatchesControl": true,
+      "subsequentFramesMatchControl": true
+    },
+    {
+      "scenario": {
+        "gap": 300000,
+        "hiddenFrames": 0,
+        "speed": 1,
+        "pause": false,
+        "landing": false,
+        "tracking": true
+      },
+      "firstFrameMatchesControl": true,
+      "subsequentFramesMatchControl": true
+    },
+    {
+      "diagnostic": "existing shared Vector3 anchor, independent of visibility",
+      "anchorObjectRetained": true,
+      "anchorMovedDistance": 0,
+      "pausedForegroundPositionChanged": false,
+      "before": [
+        -0.704047758786,
+        0,
+        5.35390668142
+      ],
+      "after": [
+        -0.704047758786,
+        0,
+        5.35390668142
+      ]
+    }
+  ]
+}

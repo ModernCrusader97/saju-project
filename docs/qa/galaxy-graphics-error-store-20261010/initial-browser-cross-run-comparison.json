@@ -1,0 +1,67 @@
+{
+  "status": "FAIL",
+  "kind": "cross-run hash comparison with independently randomized synthetic API IDs and affinity",
+  "differences": [
+    {
+      "index": 0,
+      "scenario": "playing resume",
+      "same": false,
+      "differentFields": [
+        "control",
+        "resumed"
+      ]
+    },
+    {
+      "index": 1,
+      "scenario": "paused resume",
+      "same": false,
+      "differentFields": [
+        "control",
+        "resumed"
+      ]
+    },
+    {
+      "index": 2,
+      "scenario": "reduced motion",
+      "same": true,
+      "differentFields": []
+    },
+    {
+      "index": 3,
+      "scenario": "resize",
+      "same": true,
+      "differentFields": []
+    },
+    {
+      "index": 4,
+      "scenario": "resize",
+      "same": true,
+      "differentFields": []
+    },
+    {
+      "index": 5,
+      "scenario": "resize",
+      "same": true,
+      "differentFields": []
+    },
+    {
+      "index": 6,
+      "scenario": "WebGL unavailable",
+      "same": true,
+      "differentFields": []
+    },
+    {
+      "index": 7,
+      "scenario": "WebGL unavailable",
+      "same": true,
+      "differentFields": []
+    },
+    {
+      "index": 8,
+      "scenario": "native context loss/restore",
+      "same": true,
+      "differentFields": []
+    }
+  ],
+  "bothIndividualSuitesPassed": true
+}

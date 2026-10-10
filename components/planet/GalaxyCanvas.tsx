@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useEffect, useRef, useState, useCallback } from "react";
+import React, { useEffect, useRef, useState, useCallback, useSyncExternalStore } from "react";
+import { createGraphicsErrorStore } from "@/lib/planet/graphics-error-store";
 import { bindSceneGestures } from "@/lib/planet/scene-gestures";
 import * as THREE from "three";
 import { createStudioEnvironment } from "@/lib/planet/scene-environment";
@@ -107,7 +108,10 @@ export default function GalaxyCanvas({
   speedScale = 1.0,
   incomingPersonId,
 }: GalaxyCanvasProps) {
-  const [graphicsError, setGraphicsError] = useState<string | null>(null);
+  const [graphicsErrors] = useState(createGraphicsErrorStore);
+  const graphicsError = useSyncExternalStore(
+    graphicsErrors.subscribe, graphicsErrors.getSnapshot, graphicsErrors.getServerSnapshot
+  );
   const containerRef = useRef<HTMLDivElement>(null);
   const wrapperRef = useRef<HTMLDivElement>(null);
   const rendererRef = useRef<THREE.WebGLRenderer | null>(null);
@@ -203,12 +207,12 @@ export default function GalaxyCanvas({
       preserveDrawingBuffer: true, // 캡처/스냅샷 지원
     });
     } catch {
-      setGraphicsError("3D 화면을 사용할 수 없어요. WebGL을 지원하는 브라우저에서 다시 열어주세요.");
+      graphicsErrors.setError("3D 화면을 사용할 수 없어요. WebGL을 지원하는 브라우저에서 다시 열어주세요.");
       return;
     }
     let shaderFailed = false;
-    renderer.debug.onShaderError = () => { shaderFailed = true; setGraphicsError("은하 재질을 그리지 못했어요. 아래 관계 카드는 계속 확인할 수 있어요."); };
-    setGraphicsError(null);
+    renderer.debug.onShaderError = () => { shaderFailed = true; graphicsErrors.setError("은하 재질을 그리지 못했어요. 아래 관계 카드는 계속 확인할 수 있어요."); };
+    graphicsErrors.setError(null);
     renderer.setSize(width, height);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, low ? 1.25 : 1.75));
     renderer.outputColorSpace = THREE.SRGBColorSpace;
@@ -218,7 +222,7 @@ export default function GalaxyCanvas({
     container.appendChild(renderer.domElement);
     let reflectionTarget: THREE.WebGLRenderTarget;
     try { reflectionTarget = createStudioEnvironment(renderer); scene.environment = reflectionTarget.texture; scene.environmentIntensity = 1.1; }
-    catch { renderer.dispose(); renderer.forceContextLoss(); rendererRef.current = null; container.replaceChildren(); setGraphicsError("반사광을 준비하지 못했어요. 아래 사주 구성은 계속 확인할 수 있어요."); return; }
+    catch { renderer.dispose(); renderer.forceContextLoss(); rendererRef.current = null; container.replaceChildren(); graphicsErrors.setError("반사광을 준비하지 못했어요. 아래 사주 구성은 계속 확인할 수 있어요."); return; }
 
     // 조명
     const ambientLight = new THREE.AmbientLight(0xffffff, 0.85);
@@ -308,10 +312,10 @@ export default function GalaxyCanvas({
       rotate: (dx, dy) => { cameraAngle.current.theta -= dx * .0065; cameraAngle.current.phi = Math.max(.18, Math.min(Math.PI / 2 - .04, cameraAngle.current.phi + dy * .0065)); updateCameraPosition(); },
       zoom: delta => { targetRadius.current = Math.max(6, Math.min(38, targetRadius.current + delta)); cameraAngle.current.radius = targetRadius.current; updateCameraPosition(); },
     });
-    const onContextLost = (event: Event) => { event.preventDefault(); contextLost = true; setGraphicsError("3D 연결이 잠시 끊겼어요. 복구를 기다려주세요."); };
+    const onContextLost = (event: Event) => { event.preventDefault(); contextLost = true; graphicsErrors.setError("3D 연결이 잠시 끊겼어요. 복구를 기다려주세요."); };
     const onContextRestored = () => {
-      try { const restored = createStudioEnvironment(renderer); reflectionTarget.dispose(); reflectionTarget = restored; scene.environment = restored.texture; contextLost = false; shaderFailed = false; setGraphicsError(null); }
-      catch { setGraphicsError("반사광을 복구하지 못했어요. 화면을 다시 열어주세요."); }
+      try { const restored = createStudioEnvironment(renderer); reflectionTarget.dispose(); reflectionTarget = restored; scene.environment = restored.texture; contextLost = false; shaderFailed = false; graphicsErrors.setError(null); }
+      catch { graphicsErrors.setError("반사광을 복구하지 못했어요. 화면을 다시 열어주세요."); }
     };
     dom.addEventListener("webglcontextlost", onContextLost);
     dom.addEventListener("webglcontextrestored", onContextRestored);
@@ -469,7 +473,7 @@ export default function GalaxyCanvas({
         container.removeChild(dom);
       }
     };
-  }, []);
+  }, [graphicsErrors]);
 
   function updateCameraPosition() {
     if (!cameraRef.current) return;

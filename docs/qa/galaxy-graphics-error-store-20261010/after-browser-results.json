@@ -1,0 +1,233 @@
+{
+  "basis": "8ba3b9763bcaa88a8a3f2e108fa331a49800090f",
+  "browser": "151.0.7922.173",
+  "passed": 8,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "built WebGL playing resume matches ordinary frames",
+      "status": "PASS"
+    },
+    {
+      "name": "built WebGL user pause resume matches ordinary frames",
+      "status": "PASS"
+    },
+    {
+      "name": "built reduced-motion remains visually static across long gap",
+      "status": "PASS"
+    },
+    {
+      "name": "built resize preserves drawing and one animation chain",
+      "status": "PASS"
+    },
+    {
+      "name": "built WebGL unavailable fallback and person selection at 390px",
+      "status": "PASS"
+    },
+    {
+      "name": "built WebGL unavailable fallback and person selection at 1440px",
+      "status": "PASS"
+    },
+    {
+      "name": "trusted native WebGL loss and restore keep fallback and resume drawing",
+      "status": "PASS"
+    },
+    {
+      "name": "browser errors and outbound requests remain empty",
+      "status": "PASS"
+    }
+  ],
+  "observations": [
+    {
+      "scenario": "playing resume",
+      "hiddenGapMs": 300000,
+      "control": {
+        "first": {
+          "rasterHash": "81c4bc113fd8265a62905dcb004d9221ced2c61cdb8f885d6fe37f32011e8160",
+          "stateHash": "010df4d9a1d99b1d43d3b8635a767cda0f78f65ea12978ff1462c3edb7291664"
+        },
+        "after": {
+          "rasterHash": "a3cc0645c6f5a9814b66645e98e48943cf2b91e6f1e46511c622ee7a006f0862",
+          "stateHash": "03c17e554fe3a6e1c239bdab66a3ba57d6469fb5ae5909c9026c06ecb731e075"
+        }
+      },
+      "resumed": {
+        "first": {
+          "rasterHash": "81c4bc113fd8265a62905dcb004d9221ced2c61cdb8f885d6fe37f32011e8160",
+          "stateHash": "010df4d9a1d99b1d43d3b8635a767cda0f78f65ea12978ff1462c3edb7291664"
+        },
+        "after": {
+          "rasterHash": "a3cc0645c6f5a9814b66645e98e48943cf2b91e6f1e46511c622ee7a006f0862",
+          "stateHash": "03c17e554fe3a6e1c239bdab66a3ba57d6469fb5ae5909c9026c06ecb731e075"
+        }
+      },
+      "matchingPixelsAndGPUState": true
+    },
+    {
+      "scenario": "paused resume",
+      "hiddenGapMs": 300000,
+      "control": {
+        "first": {
+          "rasterHash": "5caf1268c6a549bb32aaa43a5dc260c6a06059dff4909066831109d883e0ba81",
+          "stateHash": "461f6c4b9d356ff3d80fb118919635fa32a2bf4fee349c60ef1a7960a13f0ee3"
+        },
+        "after": {
+          "rasterHash": "5caf1268c6a549bb32aaa43a5dc260c6a06059dff4909066831109d883e0ba81",
+          "stateHash": "461f6c4b9d356ff3d80fb118919635fa32a2bf4fee349c60ef1a7960a13f0ee3"
+        }
+      },
+      "resumed": {
+        "first": {
+          "rasterHash": "5caf1268c6a549bb32aaa43a5dc260c6a06059dff4909066831109d883e0ba81",
+          "stateHash": "461f6c4b9d356ff3d80fb118919635fa32a2bf4fee349c60ef1a7960a13f0ee3"
+        },
+        "after": {
+          "rasterHash": "5caf1268c6a549bb32aaa43a5dc260c6a06059dff4909066831109d883e0ba81",
+          "stateHash": "461f6c4b9d356ff3d80fb118919635fa32a2bf4fee349c60ef1a7960a13f0ee3"
+        }
+      },
+      "matchingPixelsAndGPUState": true
+    },
+    {
+      "scenario": "reduced motion",
+      "hiddenGapMs": 86400000,
+      "matchingPixels": true
+    },
+    {
+      "scenario": "resize",
+      "viewportWidth": 320,
+      "overflow": 0,
+      "width": 286,
+      "displayWidth": 286,
+      "height": 498,
+      "displayHeight": 498,
+      "state": "ready"
+    },
+    {
+      "scenario": "resize",
+      "viewportWidth": 768,
+      "overflow": 0,
+      "width": 689,
+      "displayWidth": 689,
+      "height": 598,
+      "displayHeight": 598,
+      "state": "ready"
+    },
+    {
+      "scenario": "resize",
+      "viewportWidth": 1440,
+      "overflow": 0,
+      "width": 974,
+      "displayWidth": 974,
+      "height": 678,
+      "displayHeight": 678,
+      "state": "ready"
+    },
+    {
+      "scenario": "WebGL unavailable",
+      "width": 390,
+      "message": "3D 화면을 사용할 수 없어요. WebGL을 지원하는 브라우저에서 다시 열어주세요.",
+      "people": [
+        "합성 복귀 검증 (나)",
+        "합성 복귀 친구"
+      ],
+      "pendingFrames": 0,
+      "state": "fallback",
+      "contexts": 0,
+      "overflow": 0
+    },
+    {
+      "scenario": "WebGL unavailable",
+      "width": 1440,
+      "message": "3D 화면을 사용할 수 없어요. WebGL을 지원하는 브라우저에서 다시 열어주세요.",
+      "people": [
+        "합성 복귀 검증 (나)",
+        "합성 복귀 친구"
+      ],
+      "pendingFrames": 0,
+      "state": "fallback",
+      "contexts": 0,
+      "overflow": 0
+    },
+    {
+      "scenario": "native context loss/restore",
+      "beforeDraws": 61,
+      "lostDraws": 61,
+      "restoredDraws": 187,
+      "pendingFrames": 1,
+      "events": [
+        {
+          "type": "webglcontextlost",
+          "isTrusted": true
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "outbound": [],
+  "consoleErrors": [
+    "THREE.WebGLRenderer: THREE.WebGLRenderer: Error creating WebGL context.",
+    "THREE.WebGLRenderer: THREE.WebGLRenderer: Error creating WebGL context."
+  ],
+  "fixtureData": {
+    "people": [
+      {
+        "id": "me",
+        "name": "합성 복귀 검증 (나)",
+        "birthDate": "2000.1.1",
+        "calendarType": "solar",
+        "solarBirthDate": {
+          "year": 2000,
+          "month": 1,
+          "day": 1
+        },
+        "relationType": "mentor",
+        "relationTitle": "나의 중심 별",
+        "dayMaster": "戊午 (무오)",
+        "elementMatch": "화(火)",
+        "affinityScore": 100,
+        "advice": "내 사주의 고유한 빛이 주변의 좋은 인연들을 이끌어당깁니다.",
+        "isMe": true,
+        "pillars": {
+          "dayKey": "무오",
+          "monthKey": "병자",
+          "yearKey": "기묘",
+          "hourKey": "무오"
+        }
+      },
+      {
+        "id": "galaxy-graphics-synthetic-friend",
+        "name": "합성 복귀 친구",
+        "relationType": "supporter",
+        "relationTitle": "체험용 예시 · 합성 친구",
+        "birthDate": "1997.3.10",
+        "calendarType": "solar",
+        "solarBirthDate": {
+          "year": 1997,
+          "month": 3,
+          "day": 10
+        },
+        "dayMaster": "辛亥 (신해)",
+        "elementMatch": "수(水) 기운",
+        "affinityScore": 91,
+        "advice": "관계 점수와 설명은 체험용 임의 예시이며 실제 궁합 계산 결과가 아닙니다.",
+        "isMe": false,
+        "pillars": {
+          "dayKey": "신해",
+          "monthKey": "계묘",
+          "yearKey": "정축",
+          "hourKey": "계사"
+        }
+      }
+    ],
+    "createdAt": "2026-10-10T00:00:00.000Z",
+    "persist": false,
+    "source": "real API followed by an isolated synthetic D1 fixture update"
+  },
+  "applicationSourceSHA256": "d1a1e4d52dd529ce1a8b9a823ea42031fd1625b8c4914d37643d59cb60a2fdf7",
+  "limits": [
+    "Synthetic clock, rAF and visibility events; native hidden-tab state is not emulated by this environment",
+    "Actual built Worker, disposable synthetic D1, Chromium/SwiftShader WebGL; no physical GPU/mobile tab suspension",
+    "Existing shared Vector3 orbit-anchor drift is a separate baseline diagnostic; paused comparison means equivalent frames, not globally frozen orbits"
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "basis": "8ba3b9763bcaa88a8a3f2e108fa331a49800090f",
+  "branch": "maint/galaxy-graphics-error-store-20261010",
+  "status": "PASS",
+  "newCPU": {
+    "beforePassed": 11,
+    "beforeExpectedFailures": 2,
+    "afterPassed": 13,
+    "afterFailed": 0,
+    "identicalObservations": 25
+  },
+  "builtWorkerWebGL": {
+    "beforePassed": 8,
+    "afterPassed": 8,
+    "afterFailed": 0,
+    "identicalObservations": 9,
+    "pageErrors": 0,
+    "unexpectedConsoleErrors": 0,
+    "expectedWebGLUnavailableErrors": 2,
+    "outboundRequests": 0
+  },
+  "regressions": {
+    "animationClockPassed": 17,
+    "animationClockFailed": 0,
+    "mapAndDailyDOMPassed": 15,
+    "mapAndDailyDOMFailed": 0
+  },
+  "lint": {
+    "scope": "GalaxyCanvas and 3 new code/QA files",
+    "beforeErrors": 1,
+    "afterErrors": 0,
+    "beforeWarnings": 4,
+    "afterWarnings": 4,
+    "newFileWarnings": 0,
+    "suppressionAdded": false,
+    "configChanged": false
+  },
+  "types": {
+    "exit": 0,
+    "beforeNotRun": true
+  },
+  "build": {
+    "beforeExit": 0,
+    "afterExit": 0,
+    "existingWarnings": [
+      "proxy environment notice",
+      "chunk size",
+      "vinext route classification"
+    ]
+  },
+  "initialQAFailures": {
+    "browserFailed": 4,
+    "causes": [
+      "two owner-name expectations omitted (나)",
+      "extension looked up while context lost",
+      "incorrect console message expectation"
+    ],
+    "independentRunComparison": [
+      "random API UUID/score/title inputs caused different hashes; fixed only disposable fixture",
+      "one 1440px resize observation read before handler completed; wait for actual dimensions"
+    ]
+  },
+  "scope": {
+    "existingProductFilesChanged": [
+      "components/planet/GalaxyCanvas.tsx"
+    ],
+    "newProductFiles": [
+      "lib/planet/graphics-error-store.ts"
+    ],
+    "modelsChanged": false,
+    "screensRedesigned": false,
+    "mainMerged": false,
+    "PRCreated": false,
+    "deployed": false,
+    "authChanged": false,
+    "deniedLibraryFileAccessed": false
+  },
+  "limits": [
+    "Chromium SwiftShader, not physical mobile GPU",
+    "Synthetic clock/rAF/visibility; native trusted WebGL loss event",
+    "No hosted-session/OS tab suspension or deployment verification",
+    "No global lint or all archived QA pass claim"
+  ]
+}
