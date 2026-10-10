@@ -1,0 +1,61 @@
+{
+  "status": "SUCCEEDED",
+  "project_id": "appgprj_6ac0409a78688191a04e4997548f9e5b",
+  "url": "https://saju-planet-lab.whdtjr970717.chatgpt.site",
+  "version": 30,
+  "version_id": "appgprj_6ac0409a78688191a04e4997548f9e5b~appgver_6af82148ff88819194210a2faca948d2",
+  "deployment_id": "appgdep_6ac988609b7c8191855d14e0607b7c88",
+  "sourceCommit": "a5535893645f35d4000ec773bff61caef19463cf",
+  "reviewedGithubFix": "7291fd0f01aca2d8a339388377517c29003499be",
+  "preservedV29": {
+    "version_id": "appgprj_6ac0409a78688191a04e4997548f9e5b~appgver_d1d300c3b52c8191a6aaee464825cccc",
+    "sourceCommit": "aa41b1a3601c5254c28bc5a4c853cd5efa50c5cc",
+    "archiveHash": "sha256:6f495383e5b839945ede58d4ca819592d8b1c1b15c4f3002e8630a72bc6b7b2a",
+    "fileCount": 184,
+    "sizeBytes": 50841600
+  },
+  "platformArchive": {
+    "contentHash": "sha256:0fb1c6d522b83467606da543f74755ecdb60e91e50cfc2c6ed34e3972c5481c7",
+    "fileCount": 184,
+    "sizeBytes": 50841600
+  },
+  "audience": {
+    "role": "owner",
+    "mode": "custom",
+    "revision": 1,
+    "users": 1,
+    "roles": [
+      "owner"
+    ],
+    "editors": 0,
+    "groups": 0,
+    "policyUnchanged": true,
+    "authClientUnchanged": true
+  },
+  "database": {
+    "bindings": [
+      "DB"
+    ],
+    "selected_binding_name": "DB",
+    "tables": [
+      "ai_test_budget",
+      "chats",
+      "fortunes",
+      "guin_maps"
+    ],
+    "bindingAndTablesUnchanged": true,
+    "realRowsRead": 0,
+    "realRowsWritten": 0
+  },
+  "environmentRevision": 6,
+  "environmentRevisionUnchanged": true,
+  "githubMainMerge": false,
+  "prCreated": false,
+  "permissionsChanged": false,
+  "paymentsChanged": false,
+  "verificationLimit": "Direct hosted HTTP/browser QA blocked by environment DNS EAI_AGAIN and standard proxy CONNECT 403. Native publication succeeded; exact final local built Worker passed 8 native WebGL checks. No network/auth bypass.",
+  "packagingRecovery": "First invalid-layout archive was rejected before saving a version. Corrected compiled-output layout includes root .openai/hosting.json and dist/server/index.js; one version 30 was saved and published.",
+  "archiveNote": "Submitted TAR SHA/size are recorded in package-result.json. The native saved archive exposes a different content hash/size; both values are retained separately without claiming byte-identical container archives.",
+  "timestamp": "2026-10-10T00:38:02.939Z",
+  "scope": "Actual deployed native v30 provenance, metadata only. No account identifiers, credential values, signed URLs or DB rows."
+}

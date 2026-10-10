@@ -1,0 +1,29 @@
+{
+  "nativeV29Base": "aa41b1a3601c5254c28bc5a4c853cd5efa50c5cc",
+  "reviewedFixFromRestoredLineage": "7291fd0f01aca2d8a339388377517c29003499be",
+  "deployedNativeV30Commit": "a5535893645f35d4000ec773bff61caef19463cf",
+  "githubRepository": "ModernCrusader97/saju-project",
+  "githubVisibility": "private",
+  "archiveBranch": "archive/sites-v30-galaxy-fixes-20261010",
+  "preflightCommitLookup": {
+    "status": 422,
+    "message": "No commit found for SHA a5535893645f35d4000ec773bff61caef19463cf"
+  },
+  "sourcePreservation": "Archive branch starts at exact deployed commit a553. This added commit contains publication records only; every deployed source file is unchanged.",
+  "runtimeFilesPorted": [
+    "app/guin/[id]/page.tsx",
+    "components/planet/GalaxyCanvas.tsx",
+    "components/planet/PlanetCanvas.tsx",
+    "lib/universe-state.ts",
+    "lib/planet/galaxy-motion.ts",
+    "lib/planet/planet-appearance.ts"
+  ],
+  "scope": "Incoming friend entry continuously joins the existing slow orbit; same-owner planet material/mask/supported effects connection. Native v29 visibility gating and connection sampling preserved. No other restored-branch improvements, new GLB stem material connection or crafted zodiac models added in v30.",
+  "uvVerificationScope": "Approved body UV/geometry bytes were preserved. The CPU decode did not certify uniform shader texture density on the spirit body. The reported live Bing fire spirit distortion and crafted zodiac model linkage require a separate candidate.",
+  "additionalDeployment": false,
+  "mainMerge": false,
+  "prCreated": false,
+  "permissionsChanged": false,
+  "realDBDataIncluded": false,
+  "credentialsIncluded": false
+}

@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "scannedHistoryBlobs": 555,
+  "knownCredentialsOrAPIKeysIncluded": false,
+  "signedURLsIncluded": false,
+  "privateKeyFilesIncluded": false,
+  "issues": [],
+  "scope": "All blob objects reachable from immutable native v30 a553; exclusions supplied only via hidden stdin / existing in-memory credential helper",
+  "timestamp": "2026-10-10T00:45:11.087Z"
+}

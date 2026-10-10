@@ -1,0 +1,945 @@
+{
+  "status": "PASS",
+  "project_id": "appgprj_6ac0409a78688191a04e4997548f9e5b",
+  "commit_sha": "a5535893645f35d4000ec773bff61caef19463cf",
+  "remote_sha": "a5535893645f35d4000ec773bff61caef19463cf",
+  "archive": "sites-galaxy-v30.tar",
+  "archiveSha256": "265ca97bb0767cd99af83fb2510a4d94df1f060633bd7d947076593913645133",
+  "archiveBytes": 50851840,
+  "fileCount": 184,
+  "artifactKind": "Compiled outputs only: root .openai/hosting.json and existing schema metadata, dist/client assets and supported dist/server/index.js Worker entry",
+  "knownSecretsExcluded": true,
+  "envFilesExcluded": true,
+  "realDBFilesExcluded": true,
+  "sourceClean": true,
+  "releaseBrowser": {
+    "passed": 8,
+    "failed": 0,
+    "builtServerSha256": "4204b31a5bd05a61fb401e6836016ba9a0fb9fe0b5506e2ddcd9d987ad5177d0",
+    "harnessSha256": "7b39f72d67781e247e6e757832053f70e6fa2b351dad430698ef4a8682463a69"
+  },
+  "files": [
+    {
+      "file": ".openai/drizzle/0000_windy_maestro.sql",
+      "size": 871,
+      "sha256": "8e96da17ba8f773233dc32d65449dd734d49e3cbb7dcd125b5edd10ea7fd59cf"
+    },
+    {
+      "file": ".openai/drizzle/0001_fuzzy_blue_blade.sql",
+      "size": 98,
+      "sha256": "fb8809a8db6e5e07366ee349078c8470aeda9667842ebb9df2201c92996553cb"
+    },
+    {
+      "file": ".openai/drizzle/meta/0000_snapshot.json",
+      "size": 4279,
+      "sha256": "2e81bafe8ffec7e85d00efea5127a8020b4a8cb616b0aba6584566442f7e05bc"
+    },
+    {
+      "file": ".openai/drizzle/meta/0001_snapshot.json",
+      "size": 4861,
+      "sha256": "5f449ebd38fa36ed4dd916d017c2b629b239b4de13e6fb082d4a0d02d9011e0c"
+    },
+    {
+      "file": ".openai/drizzle/meta/_journal.json",
+      "size": 347,
+      "sha256": "cc2c77bba410f2d93ad59c27c70effff8dd8abedd827046a2edbe9a0f352bda2"
+    },
+    {
+      "file": ".openai/hosting.json",
+      "size": 91,
+      "sha256": "9e1fb7eef4d729865c16d638f731f2f37d27bbec12a3345e48cdc44d51dd1f6f"
+    },
+    {
+      "file": "dist/client/.assetsignore",
+      "size": 30,
+      "sha256": "14ce8d5101f6d8f172242053466d44f5e2cd622dee81db53c14bd445c25d1942"
+    },
+    {
+      "file": "dist/client/.vite/manifest.json",
+      "size": 15083,
+      "sha256": "a5dbb61183f74b202fe143e025ecc4be965c8fb0f37a65c41c241db265911a1e"
+    },
+    {
+      "file": "dist/client/_headers",
+      "size": 131,
+      "sha256": "2148fb62669525f5091532d36d4a48a8da95b08a5a797bacde75d2fe981351bb"
+    },
+    {
+      "file": "dist/client/_next/static/31fa92fd-b482-4eb4-94a8-9e4a1a161915/_buildManifest.js",
+      "size": 159,
+      "sha256": "47f02b34be6dc481257b6efce4c19e19111f37ef5c437f8ffed44f0da97fa9bb"
+    },
+    {
+      "file": "dist/client/_next/static/31fa92fd-b482-4eb4-94a8-9e4a1a161915/_ssgManifest.js",
+      "size": 76,
+      "sha256": "653f3e53e89b4f8548ff86c19e92bb3c6b84b6be7485a320b1e00893ed877479"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/BottomNav-4amNxC77.js",
+      "size": 160,
+      "sha256": "c7dbe471ac984cbdda8917301dafe5450aea7665c526a0b45a44727f2721a4e0"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/CosmicPassportModal-NjPkLlFZ.js",
+      "size": 8459,
+      "sha256": "99ce6147b2e28412b878dcc6d41fb5dc0cb598cef59603e6b4e11e115dd07eb5"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/ElementalSpiritCanvas-DKFlZivc.js",
+      "size": 64126,
+      "sha256": "ea7b3a651a2e13102049035e9c1975a5bdc6186c2dc848b8281100061ab49b14"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/FortuneCard-jsNTGLlM.js",
+      "size": 19233,
+      "sha256": "dafea409affc1377cb5563656e71fdb9dc3070fc99c70b4ee32b4fee917948de"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/GalaxyCanvas-BZgJbioQ.js",
+      "size": 25551,
+      "sha256": "fa4c8a577d0146ad0bf6c8745309ad7eef7dbcf17f08a1a9b86ec63efc7a3adf"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/Header-CydKyRZh.js",
+      "size": 2593,
+      "sha256": "151200d4bffeadcefc6081cb795f90c1ae3a038a2efa79d0a53bb12c5a374087"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/PlanetCanvas-CqSLqoIa.js",
+      "size": 10450,
+      "sha256": "f6b4e24238616eeef6ff46884c50d56d77af1787b3f7ac4292cdf2387cbdff34"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/UniverseNav-DddE4qZQ.js",
+      "size": 34420,
+      "sha256": "ce99b28b15a548852ab4d0a93179cb843400e698f92bbb4706bafdcc47cf8216"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/app-elements-E4UGPDDI.js",
+      "size": 12858,
+      "sha256": "fd8fc392508dcb02453576a6495f48199d6781ce2e007b4dbe1704eb0ff34b36"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/app-route-prefetch-policy-BOaYNayV.js",
+      "size": 1018,
+      "sha256": "734465dd142b966ae280c97e59697607bbab8243e2cbe9372c848647a52a58e2"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/app-rsc-render-mode-D-GRTnW-.js",
+      "size": 668,
+      "sha256": "b9db37ffe7d7e3f76c7e6bdffc078b9da7b799d56513d9bb5387f887b4d658dc"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/arrow-left-CAXnmeXt.js",
+      "size": 162,
+      "sha256": "52a678cfe8f70bd3ada8fbf8562bb1110697f8eb303375f1c4532c2df35348e2"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/asteroid-belt-tZPemDi5.js",
+      "size": 5298,
+      "sha256": "74d3a0ba767f8453d819259ade3c7aeca4ac437c7774fe1a208446c2b4c40be7"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/camera-CpkD6ouZ.js",
+      "size": 333,
+      "sha256": "5f1b11d9ea982ec45d5233f62f91cbb128df3a14bbc519af5f9a155b8332c16d"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/framework-D_rUT4EX.js",
+      "size": 190152,
+      "sha256": "939d0fabebb3b2f01753bb866b067d8d3384fb06da19f0e6557609d3b1a9f4f7"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/hash-D0ldriCF.js",
+      "size": 256,
+      "sha256": "fba69692645d8206561e12edf1653f0f7931d0f14f8f753ec3be5031dfd004d1"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/headers-C_MtfdF4.js",
+      "size": 3286,
+      "sha256": "d84532fc42b9a35aa8ebc1a2659d97cfecc4fc341718a0cf9f7c42f763ced4be"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/http-client-BrVkpaFu.js",
+      "size": 542,
+      "sha256": "f2fdaa6038e7f299daa25345a5f68228819b40e50abf2688bd8afde12121717b"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/hybrid-client-route-owner-DHnD6pfd.js",
+      "size": 19519,
+      "sha256": "1a98f8f4245b7ed5852c34e7c1c8afbd94c4329e147e87780914fac9598ac4f9"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/index-BIychL0N.js",
+      "size": 192098,
+      "sha256": "3f0caa717de0ae0b569826f7276c8e0f38780b72a0f4fe94af260101a49c71d7"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/layout-segment-context-D2a2gpIf.js",
+      "size": 534,
+      "sha256": "eb404781086e0d0306bafaec8b682205dd985a398ec31f96cd65c0e34a12eccf"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/navigation-errors-BYh_AYLR.js",
+      "size": 4040,
+      "sha256": "8079365b302385be914b5750316813c78cdbb88f897349ecec72f5998fb65500"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/page-2PzN7xXi.js",
+      "size": 10942,
+      "sha256": "338c6a3127b2857b1654297b2aa6601f67e9f43fc8acb7964594dd9736b6a554"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/page-BYfRNnar.js",
+      "size": 15491,
+      "sha256": "6edcebd0caf1d90787b90567c5c86817878dc1196ce5e7ba7e3d6220b56182b4"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/page-C7kRof1X.js",
+      "size": 8609,
+      "sha256": "7038539f711f509c266d51de124a16c51d4680f5b31ac6ae6bc9c739225ad47b"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/page-CCYzg-LL.js",
+      "size": 22501,
+      "sha256": "c53e92d9cbf43fc8366995e136b5429ff05b1d3c95f91225d1020864504fabf7"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/page-CGzbJBUI.js",
+      "size": 12150,
+      "sha256": "a9254052255183b8e221b6dada5f6b40ddafa72ab5c07ffe947c77ac15502e8f"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/page-CaQtGQrS.js",
+      "size": 2423,
+      "sha256": "fec9a4dccd200453059a4a98f66fc88a64c064c8001c29f11b27bb7a5eaca617"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/page-Cl8IqfqD.js",
+      "size": 8654,
+      "sha256": "95e26f40e64a85dd8f94afa85153a9ce1949d80cd470e917323dc0504ff51437"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/page-CoY7oXX3.js",
+      "size": 26399,
+      "sha256": "b93e7ea7f1bf877edb65e35470c834d17b41b6073610ad49d8c2f98a8e83873b"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/page-DjKwDsGw.js",
+      "size": 118900,
+      "sha256": "8bbccfdcf6995f353d9d46947ff9e63b1f3b0f249ba713ee5e2078d4c769c883"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/protocol-headers-B9-bVeat.js",
+      "size": 327,
+      "sha256": "9b15d2c8452ddb9df5d6f2cfb3a23dd576a10dc0450fb72565d9f293abab0edd"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/query-Bt8LwTGu.js",
+      "size": 984,
+      "sha256": "0a1973f3c6175c2655da2d796c0b590a07352ee8c22aed1a49cd90513fa34b02"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+      "size": 694,
+      "sha256": "5db5ba82eef00d1dee7e86e663098c9427d01183a88d357437daff295aec3e75"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/rotate-ccw-DI-d8NOa.js",
+      "size": 197,
+      "sha256": "f59a82f5b3abbdac349dc174bed54bfcdf7d8cffacecf0ff4e6020c4ec4a87af"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/scene-environment-Ch5mvVP5.js",
+      "size": 2929,
+      "sha256": "d1008e35c88b1c77e567d48099c50c0611e4c747c3f33c659be49dc21362232a"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/share-2-DiTdMyfs.js",
+      "size": 354,
+      "sha256": "1d2b9bce907c1d33bd6d04705cb47ea6a92ab5d1148f7c1172833cdbf27c88a8"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/spirit-geometry-KL1ZT8br.js",
+      "size": 6716,
+      "sha256": "e461db940e5b11d5c873a1f7625240dee6edc4fba33b609826fde9e724a67d22"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/spirit-profiles-e4vtJEbC.js",
+      "size": 3246,
+      "sha256": "7fb8bb2b99e45689b7fcc4c29e19ec63210073936fc33d2e84d30eaf9e3ffe74"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/spirit-zodiac-pet-7IYgC-bB.js",
+      "size": 6870,
+      "sha256": "7c82774e4216e426f0cbd123e5414699afb8addbf19186ca858d632aa5d665d5"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/streamed-icons-DakMrjCB.js",
+      "size": 772,
+      "sha256": "7eb2a6b44b9c0faa7300c8dd36b0fae7a35d9f65e139dd9046b3df193aa83bc8"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/surface-effects-CXIjuEcc.js",
+      "size": 13816,
+      "sha256": "65debee1b423f9cf83575275c241eb2e47d57d6bfae803005c44008d88201b93"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/surface-material-BAwoivMC.js",
+      "size": 624871,
+      "sha256": "bd3949cafa7f5d8704d0248162359da7d46966552c06f5a43cd452286d9357e5"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/theme-library-DnVAGHRL.js",
+      "size": 7863,
+      "sha256": "aae9151c51fa035b002952bd6225467b3741de2db86b778f3e3a9db0359b4728"
+    },
+    {
+      "file": "dist/client/_next/static/chunks/users-DwsF55fH.js",
+      "size": 303,
+      "sha256": "8b54dfece60df965fead7598ccbff8bd756873ff2eba8a0b4c5b34da99b74453"
+    },
+    {
+      "file": "dist/client/_next/static/css/index.BeA3Rjux.css",
+      "size": 57622,
+      "sha256": "a43a8d75fc95c09821f948e6f2ba1a7dbf1bccbedda4c2ee04dfdaa55ccf1372"
+    },
+    {
+      "file": "dist/client/_next/static/css/page.DMA6yQMN.css",
+      "size": 8170,
+      "sha256": "37280fe3f02007e3095249f4dd12567bba3bf8ced6ff2b0a7a5f3a663ee0f2c8"
+    },
+    {
+      "file": "dist/client/favicon.svg",
+      "size": 281,
+      "sha256": "bf6c12ea64f442b40dd90523ce350875c2ed5e0d325abbf2dfe1e2e9325e2cda"
+    },
+    {
+      "file": "dist/client/images/cosmos-cover.png",
+      "size": 2463808,
+      "sha256": "8749ac60a1333b432c55c9a9fc826a78eabdb4187e292bba0bfbcf5d7d9ac1ba"
+    },
+    {
+      "file": "dist/client/images/five-element-lineup-v1.png",
+      "size": 1093134,
+      "sha256": "662e822695e7477d671aa3911ac21b461f40d1173ac1d41b4aa593b3692dc6ca"
+    },
+    {
+      "file": "dist/client/images/im-water-target.png",
+      "size": 2139813,
+      "sha256": "0af98704cdb10f38ec6c67ea6eba6938af5dfd5fdbafa3b8350f0596b15d0744"
+    },
+    {
+      "file": "dist/client/images/porcelain-hero-portrait-v2.png",
+      "size": 1272069,
+      "sha256": "1c6761dfbb1bcd1b496258c51382ceab63a9e6e3374d8fcf813d992a647c8e54"
+    },
+    {
+      "file": "dist/client/images/porcelain-hero-portrait.png",
+      "size": 1282479,
+      "sha256": "36e44ff235b3e5440f0e0eac1c4a55e79e3c8def9977ba53d4b5d5983725f168"
+    },
+    {
+      "file": "dist/client/images/stem-material-reference-v2.png",
+      "size": 2642558,
+      "sha256": "0cda0a5c0b27c5921703c563bbbe1bb2255c8a8eb0bb948163f3948198143562"
+    },
+    {
+      "file": "dist/client/models/five-elements/earth-expression-v1.glb",
+      "size": 313216,
+      "sha256": "adddd4af80479125b9750b15f36a91fdc74ab618c2fc1f99b8c2018095c0289b"
+    },
+    {
+      "file": "dist/client/models/five-elements/earth-v1.glb",
+      "size": 207808,
+      "sha256": "8a5e1c2604ff66ad154f83fa6da67734c19c4fe696d2228d2808576637b8ebfa"
+    },
+    {
+      "file": "dist/client/models/five-elements/fire-expression-v1.glb",
+      "size": 300900,
+      "sha256": "c3d4c4d4a1cf606e323f0bf213dbf4b5eec7a3794905fce817465541d25d30c3"
+    },
+    {
+      "file": "dist/client/models/five-elements/fire-v1.glb",
+      "size": 195492,
+      "sha256": "f1c897e34302278ca4d78abbc787348acf8adb73de506c60b873ef3cf3062f93"
+    },
+    {
+      "file": "dist/client/models/five-elements/metal-expression-v1.glb",
+      "size": 179040,
+      "sha256": "d01210e7870b94c96a0c1be4f4c1b147d059f91803f8ac0b294bc94b66ba9145"
+    },
+    {
+      "file": "dist/client/models/five-elements/metal-v1.glb",
+      "size": 74064,
+      "sha256": "9ed143929120a5836005ffe707be9bbf6f20a94a6bfee1828455fdcceb27a023"
+    },
+    {
+      "file": "dist/client/models/five-elements/water-expression-v1.glb",
+      "size": 441872,
+      "sha256": "1a5139c2aa1bc78f67d6755f2da9e0ec2997f78b06c541a8898b348191ebb42b"
+    },
+    {
+      "file": "dist/client/models/five-elements/water-v1.glb",
+      "size": 184500,
+      "sha256": "8ceb8507485b78ea482dd765b32118734ce0cb17655998d2740e19f203bc1a0c"
+    },
+    {
+      "file": "dist/client/models/five-elements/wood-expression-v1.glb",
+      "size": 304336,
+      "sha256": "9988e332a4efaefbe2c4c2885e0a5c4842e6089e8c5d0f2b430e70d1a5930b2b"
+    },
+    {
+      "file": "dist/client/models/five-elements/wood-v1.glb",
+      "size": 198948,
+      "sha256": "1bf696c798ca3c97e9125fa8866e8146895129cf0dadab19ec755c98255c3cf1"
+    },
+    {
+      "file": "dist/client/models/porcelain-hero-blink-v1.glb",
+      "size": 13700928,
+      "sha256": "57d7ee5b3c4e0b99eaadefb8095283bed44986beaa5a91c096dd7a0c514bf9c2"
+    },
+    {
+      "file": "dist/client/models/porcelain-hero-v1-lite.glb",
+      "size": 5504312,
+      "sha256": "22bd1b4d410db3d8dbfe5068f78ce12ef4fcdc759a46915541fa356501a62f6e"
+    },
+    {
+      "file": "dist/client/models/porcelain-hero-v2.glb",
+      "size": 5951928,
+      "sha256": "8a21d20acf59a6e77105359f85a0a3275ea5fa0753a7b7533aaf47656ad8484b"
+    },
+    {
+      "file": "dist/client/spirits/jade-v002/base-color.png",
+      "size": 804444,
+      "sha256": "29bdd5ab8a2c87715fd3aedae3f0465c8b6910b5a9c0e8b8bffeb84a03c6b824"
+    },
+    {
+      "file": "dist/client/spirits/jade-v002/body.glb",
+      "size": 4293332,
+      "sha256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84"
+    },
+    {
+      "file": "dist/client/spirits/jade-v002/fields.png",
+      "size": 3338794,
+      "sha256": "3175c131be983bd985b8018c191d3a25c9ce00ea20baa31bbb2772833b9a5bd0"
+    },
+    {
+      "file": "dist/client/spirits/jade-v002/still.png",
+      "size": 188340,
+      "sha256": "f17790815107c4c5d751df92050c3e00c6c597f95843dfcd1b2c6c39c7735c54"
+    },
+    {
+      "file": "dist/client/vinext-client-entry-manifest.json",
+      "size": 65,
+      "sha256": "89c16439d47e79e6032ff761128728f8e68049e26b7d394d84526f883b673907"
+    },
+    {
+      "file": "dist/server/.vite/manifest.json",
+      "size": 15376,
+      "sha256": "0047e0ac0d226be6f50aec44fc78a9d7339326a5d23e9d150fff0c88abd93e76"
+    },
+    {
+      "file": "dist/server/BUILD_ID",
+      "size": 36,
+      "sha256": "bf16fc4d2a7d892f1c54d87f736514e3c17232a53ce878a8ca972228bf7a4cff"
+    },
+    {
+      "file": "dist/server/__vite_rsc_assets_manifest.js",
+      "size": 14322,
+      "sha256": "0e3e3865b38543613e6c1a937f8668b7f2b278a95b3c08545d9a373570df3026"
+    },
+    {
+      "file": "dist/server/_next/static/app-page-cache-CddK1Q_U.js",
+      "size": 5194,
+      "sha256": "d19e60829f3cf85abc19d51f0f38c96cd5c58a4f380277ba6304477b6dae53be"
+    },
+    {
+      "file": "dist/server/_next/static/app-page-cache-finalizer-BZJHtlYc.js",
+      "size": 3480,
+      "sha256": "a82ebfb6f82ecc17b9edb6439b302691bbe7e7e0e1f877d8e36088c98db2b346"
+    },
+    {
+      "file": "dist/server/_next/static/app-page-cache-render-C0Y0Dfq3.js",
+      "size": 1949,
+      "sha256": "e2e2a9707de98b6dce96f15a237fb28612be643c4fc6e8eed436e851d1c27848"
+    },
+    {
+      "file": "dist/server/_next/static/app-page-stream-CnLV7jJG.js",
+      "size": 10011,
+      "sha256": "40dccd73c3e3f66694872e2802236329f105801d44ee2b112bcdf9e3fbf9a705"
+    },
+    {
+      "file": "dist/server/_next/static/app-prerender-endpoints-cexVfvH3.js",
+      "size": 2012,
+      "sha256": "47dac83d7b5af1624e9996ac9bdb2189be57daffc7e66610741189ce308ae6e0"
+    },
+    {
+      "file": "dist/server/_next/static/app-prerender-static-params-BiAvMCvW.js",
+      "size": 1113,
+      "sha256": "c22c0f66264262b007a2a5fba558662becab4a30086da74a0cdf1c23bea7ccbf"
+    },
+    {
+      "file": "dist/server/_next/static/app-route-handler-dispatch-C7fiphHU.js",
+      "size": 18125,
+      "sha256": "934b1bd192374c7823c34b187c6d685c761c9bdefbb45aeb6e02408df0230f46"
+    },
+    {
+      "file": "dist/server/_next/static/app-segment-config-DRMu2aD3.js",
+      "size": 13628,
+      "sha256": "e32f7f98af13a3e3a790ec51f6d3bd8204b31d79e8bd30055ec53599f1104fc3"
+    },
+    {
+      "file": "dist/server/_next/static/app-static-generation-DAQZMoAy.js",
+      "size": 916,
+      "sha256": "71451721ae4a42108e9ed32567cd9d9861beb4952215b0fd57ffc373cd3edc01"
+    },
+    {
+      "file": "dist/server/_next/static/cache-headers-Dy5uvwlc.js",
+      "size": 38803,
+      "sha256": "66d6146140738d2346533088b099117680487dc6c3ce0901875f67a638e06354"
+    },
+    {
+      "file": "dist/server/_next/static/css/index.BeA3Rjux.css",
+      "size": 57622,
+      "sha256": "a43a8d75fc95c09821f948e6f2ba1a7dbf1bccbedda4c2ee04dfdaa55ccf1372"
+    },
+    {
+      "file": "dist/server/_next/static/doryeong-ai-J-0hwmj_.js",
+      "size": 9547,
+      "sha256": "b1b15aeb9bb3fc41f124ca668d2c97ab8e60ec04e32edcb7bc5d0add7514cfaa"
+    },
+    {
+      "file": "dist/server/_next/static/framework~index-ykkm6Xqy.js",
+      "size": 237,
+      "sha256": "683e8af479ce228e5c8aa95250d37d921a883bd17706c403cc448df4845531ed"
+    },
+    {
+      "file": "dist/server/_next/static/framework~index~app-page-cache-render~app-page-cache~layout~app-route-handler-dispatch-BO6G_FIf.js",
+      "size": 824,
+      "sha256": "a7068de307a14974f08446b53b5e75d444d8e18999c492bfdb1ffb9efeb44757"
+    },
+    {
+      "file": "dist/server/_next/static/framework~index~app-page-cache-render~app-page-cache~page~page~page~page~page~layout~page~p~lw5wnwab-DgT0_Uem.js",
+      "size": 5499,
+      "sha256": "4f686187dcd97b5d9eef7f152f93eaf0b53172f59e748a8ecf410a20b326e9f8"
+    },
+    {
+      "file": "dist/server/_next/static/framework~index~page~page~page~page~page~layout~page~page~page~page~app-route-handler-dispatch-CF1HaHkn.js",
+      "size": 56617,
+      "sha256": "4f3f27cbc3d16b7768d87e2f03cdf9b44e7078e79b4af9b66bd2804fe1424a6b"
+    },
+    {
+      "file": "dist/server/_next/static/headers-CTmDU-kO.js",
+      "size": 11737,
+      "sha256": "c0ed6b1b059e651b0f3b06f4409ec86163d7e933234cdf4de27641278be4f527"
+    },
+    {
+      "file": "dist/server/_next/static/headers-DiaRPf0p.js",
+      "size": 4990,
+      "sha256": "cf4958f25bdabe6de51588d8160341a3692c9b5bb4048f8738ce7fb88a5f8530"
+    },
+    {
+      "file": "dist/server/_next/static/implicit-tags-CGY6m8SY.js",
+      "size": 1033,
+      "sha256": "f05c51634c7fd9701ede15b8f83dafecd711ab7ca2cd7da25100108be5f12c5a"
+    },
+    {
+      "file": "dist/server/_next/static/input-Ogmb0171.js",
+      "size": 20808,
+      "sha256": "ce32fbad68ccb1a33ba345543e6975e8b325697e7cd8d9cd565e1ec123922796"
+    },
+    {
+      "file": "dist/server/_next/static/isr-cache-CuvVSU17.js",
+      "size": 4959,
+      "sha256": "c3247d663439bcadd35f090367ed109ac506c1ea5f263fa36f8c96623884bc47"
+    },
+    {
+      "file": "dist/server/_next/static/manse-CQn68uOK.js",
+      "size": 6970,
+      "sha256": "65e672a3dac3205ac241a97b9ddacf7eecb37b3593e3fb74f92949e6c0355841"
+    },
+    {
+      "file": "dist/server/_next/static/navigation-errors-B0uaL9is.js",
+      "size": 1253,
+      "sha256": "52ae7f0fd5188ffa3cd7ad609476e43f533c1f71a5517cd1f8f3d297d427b12b"
+    },
+    {
+      "file": "dist/server/_next/static/navigation-runtime-BNRDM_Kn.js",
+      "size": 803,
+      "sha256": "39a10440a096edfa93f9ed36b19c0719fb1af5bd9b65c4556682f3288e419b4b"
+    },
+    {
+      "file": "dist/server/_next/static/navigation.react-server-4_c5WWjm.js",
+      "size": 262,
+      "sha256": "5cc4a2c5c1e9ae4cb573470f4de59706df493e633e4492fc22d49e5076638eca"
+    },
+    {
+      "file": "dist/server/_next/static/page-4jyp1gCB.js",
+      "size": 181,
+      "sha256": "53398adf4b53b154d2f85e496162fb3a8aaf47795fc31b4899d2da44b7acfce8"
+    },
+    {
+      "file": "dist/server/_next/static/page-5Fc0ZR7G.js",
+      "size": 181,
+      "sha256": "8f6ec893376b0488d1c5c5a261c98cfb5f88efc90281bec0ded0f01a9ae07f37"
+    },
+    {
+      "file": "dist/server/_next/static/page-BBZ0y5dg.js",
+      "size": 181,
+      "sha256": "84d1d8c37790acfeba7469d0a19d8a7dee5f7e0170faeea1ed4dc0f7e7f8c484"
+    },
+    {
+      "file": "dist/server/_next/static/page-BwohE74b.js",
+      "size": 181,
+      "sha256": "7bc842e6608d24ff00a8ed4eb34d32f2c725a9948ea0dbad19aee5a90caa1a1d"
+    },
+    {
+      "file": "dist/server/_next/static/page-CkIo32s6.js",
+      "size": 181,
+      "sha256": "e76ac6a3d56e41775220fa0340d99091608fd7b4274ef598736f8aeb2d12f4c9"
+    },
+    {
+      "file": "dist/server/_next/static/page-D6b8B1Qd.js",
+      "size": 181,
+      "sha256": "cf3f5385b560e2beccec83bbd2d1d039ca15c14be148efa6a8a87b20ebf59aec"
+    },
+    {
+      "file": "dist/server/_next/static/page-DIN47yD4.js",
+      "size": 181,
+      "sha256": "a4c6c5a58fc0075900002ac7b2b539bb3a0def01a780e253db8709bb0a8dff9c"
+    },
+    {
+      "file": "dist/server/_next/static/page-DPcgxEcM.js",
+      "size": 181,
+      "sha256": "ae089bba32153a604f9b8e046bdb9f2deb051ef2739204b10d476d5a435e9ff4"
+    },
+    {
+      "file": "dist/server/_next/static/page-De1I7hj_.js",
+      "size": 181,
+      "sha256": "928dd49d77f9a2cffc9729b915ea2dc20c4ad7931d86a8d79cb1df4ee76c8143"
+    },
+    {
+      "file": "dist/server/_next/static/record-CW_Fw1mA.js",
+      "size": 79,
+      "sha256": "b9bdb7b7d0e4844d241dba61104d18111d61ef92af3f137d15749531d276f9cf"
+    },
+    {
+      "file": "dist/server/_next/static/redirect-digest-B8ePOqX5.js",
+      "size": 689,
+      "sha256": "49fd3bfbe26c427bb90f14faf5bb900172c193e882034b724d93f42e3d521df6"
+    },
+    {
+      "file": "dist/server/_next/static/rolldown-runtime-DUnMT5BP.js",
+      "size": 694,
+      "sha256": "5db5ba82eef00d1dee7e86e663098c9427d01183a88d357437daff295aec3e75"
+    },
+    {
+      "file": "dist/server/_next/static/root-params-C4cTde7Z.js",
+      "size": 1244,
+      "sha256": "ff635b7356083dc6267483b7472a9e9732f6fac95ea22e6384fa6a6794431dc9"
+    },
+    {
+      "file": "dist/server/_next/static/route-0AQTThCS.js",
+      "size": 1444,
+      "sha256": "a85393cddb099159ed8824d48a9649d34bc21ad85b20c53c30ec78ad7670f5b1"
+    },
+    {
+      "file": "dist/server/_next/static/route-CCFWeMHS.js",
+      "size": 1481,
+      "sha256": "d3930a2a1bd53ac39cf13d8d22b0da9d6af03d78f8e785b6f7539b068c783726"
+    },
+    {
+      "file": "dist/server/_next/static/route-CEAyzi8G.js",
+      "size": 5889,
+      "sha256": "f19e2ac514f63ffbd73d133f921f0295c28fc611ad36bf6bc2a7d4a2623ca68e"
+    },
+    {
+      "file": "dist/server/_next/static/route-CYf1i345.js",
+      "size": 930,
+      "sha256": "3676683973119f5298a24b562979d56d32d5a92ab5cf3151067157984f90a88d"
+    },
+    {
+      "file": "dist/server/_next/static/route-DBwyZQgp.js",
+      "size": 2153,
+      "sha256": "226835632c75b41522cdfde22edbf9f2bd010be9b82578d5baf33ce5ceea6010"
+    },
+    {
+      "file": "dist/server/_next/static/route-DywWbf9h.js",
+      "size": 526,
+      "sha256": "d48462200081887b107f4a37ad2ef2628c1989a1a65a71439ed562f3d7c89cc8"
+    },
+    {
+      "file": "dist/server/_next/static/rsc-CLBcEWdY.js",
+      "size": 772,
+      "sha256": "e97019bf3aa5d3d503ed85f8f689346e3d3e087b26a7fe63273f75b6ce4ca448"
+    },
+    {
+      "file": "dist/server/_next/static/server-D7DvwIdG.js",
+      "size": 12651,
+      "sha256": "ae5b8c1f0170b6e440f538c48ce13181172eab01036a0aee6c51f69ae5da12e3"
+    },
+    {
+      "file": "dist/server/_next/static/store-BDnznTeZ.js",
+      "size": 3044,
+      "sha256": "2a461a807d9cd8bf2a5182e69dc5710dd6621fcf18a1aa031ad2ef8e82209b25"
+    },
+    {
+      "file": "dist/server/_next/static/text-stream-aooNGKV6.js",
+      "size": 19441,
+      "sha256": "1b61fb446b7b8e29e6dea3cf9e283133b32fd5c927ae3e6de284d8a935b9fb8c"
+    },
+    {
+      "file": "dist/server/index.js",
+      "size": 215386,
+      "sha256": "4204b31a5bd05a61fb401e6836016ba9a0fb9fe0b5506e2ddcd9d987ad5177d0"
+    },
+    {
+      "file": "dist/server/ssr/__vite_rsc_assets_manifest.js",
+      "size": 14322,
+      "sha256": "0e3e3865b38543613e6c1a937f8668b7f2b278a95b3c08545d9a373570df3026"
+    },
+    {
+      "file": "dist/server/ssr/_next/static/BottomNav-B0xvtQQe.js",
+      "size": 151,
+      "sha256": "8dd6785c96c801b876024f4a89ef3118b589a4e9a23be86f528efbf734614c5a"
+    },
+    {
+      "file": "dist/server/ssr/_next/static/CosmicPassportModal-DYBU68DD.js",
+      "size": 8365,
+      "sha256": "8a41aede7eb3e0de3f409efb3ce1b7a733a979c773f944616e56a29b2a4d2439"
+    },
+    {
+      "file": "dist/server/ssr/_next/static/ElementalSpiritCanvas-C5DBT5J2.js",
+      "size": 64033,
+      "sha256": "91a24cd9783b8a3764e45f86ec84676be44a1bce5a050260988b346cd820df93"
+    },
+    {
+      "file": "dist/server/ssr/_next/static/FortuneCard-eKoS5esR.js",
+      "size": 19174,
+      "sha256": "2cc74eab9a2b95852a40afbc99709ee0f16a2c63c5966a3f027ac4f51ed50148"
+    },
+    {
+      "file": "dist/server/ssr/_next/static/GalaxyCanvas-_RndJIev.js",
+      "size": 25456,
+      "sha256": "d78ac3760ad2c30d8d2116af0304935620bd32043059823a9335d669eebda0fb"
+    },
+    {
+      "file": "dist/server/ssr/_next/static/Header-BRa6FalT.js",
+      "size": 2499,
+      "sha256": "96695313ce6246ac3d85d0db5b74a56c3acabc451334e28ca01be553a9c76b79"
+    },
+    {
+      "file": "dist/server/ssr/_next/static/PlanetCanvas-C_Zb4bNp.js",
+      "size": 10395,
+      "sha256": "7093c849507f2e3bc682de1fdf7d9bf4612ca3203d36ab5f8ee1d4c483b630fb"
+    },
+    {
+      "file": "dist/server/ssr/_next/static/UniverseNav-DyesuxlA.js",
+      "size": 92355,
+      "sha256": "3a418daf42a60166a45d11788b578986e1158a518e4dd7e1f1934029166283e0"
+    },
+    {
+      "file": "dist/server/ssr/_next/static/app-nav-failure-handler-JUk_EqPD.js",
+      "size": 72,
+      "sha256": "f6a9d62fb9873f70236c9c3eb21337fa5337df87f170dcb04565daeffb5f2f62"
+    },
+    {
+      "file": "dist/server/ssr/_next/static/app-prefetch-fetch-queue-ZiEFMHnZ.js",
+      "size": 475,
+      "sha256": "da80896850c27700c6c8d4143438f7626ae33c43e1be4b65c6dbbe91dd8b0476"
+    },
+    {
+      "file": "dist/server/ssr/_next/static/app-router-scroll-RTeCMeNb.js",
+      "size": 2130,
+      "sha256": "7fa43838e8d174d2317e7a22c6c255ca594b2e404378e682094566420124ee40"
+    },
+    {
+      "file": "dist/server/ssr/_next/static/app-router-scroll-state-Cjca_NGl.js",
+      "size": 1085,
+      "sha256": "e7964c9603534ac8f5158341b5deefc94a71f5f9f803978601c93830593c30ea"
+    },
+    {
+      "file": "dist/server/ssr/_next/static/arrow-left-BZquBScl.js",
+      "size": 160,
+      "sha256": "6bba7b13c5a365380dc41ea5332114fd444aab5f392589363183ad0abb8ff0ef"
+    },
+    {
+      "file": "dist/server/ssr/_next/static/asteroid-belt-CuOpkHil.js",
+      "size": 5298,
+      "sha256": "31bb7f27901411f4f8d67b42d7996e55cf2b9d1ade9cb8b81558cd6e4075a18e"
+    },
+    {
+      "file": "dist/server/ssr/_next/static/camera-BZF9368n.js",
+      "size": 331,
+      "sha256": "8c6fbd875d46dcbfadf7d66a030aed1a56d8371a731c33485fdbc1231ebbfa2b"
+    },
+    {
+      "file": "dist/server/ssr/_next/static/compass-CIdY7P9u.js",
+      "size": 540,
+      "sha256": "4b41a21d48e1c4aff2dd49db1dff13efe5ea5dd6b768e9793dd23a45f33e4e32"
+    },
+    {
+      "file": "dist/server/ssr/_next/static/css/page.DMA6yQMN.css",
+      "size": 8170,
+      "sha256": "37280fe3f02007e3095249f4dd12567bba3bf8ced6ff2b0a7a5f3a663ee0f2c8"
+    },
+    {
+      "file": "dist/server/ssr/_next/static/error-boundary-CVnEvxDo.js",
+      "size": 5439,
+      "sha256": "564de2c44e45f3a0a6c59bd53864a7a90150714a47d321c19d7c9c64fd92143e"
+    },
+    {
+      "file": "dist/server/ssr/_next/static/hybrid-client-route-owner-BczmGs3S.js",
+      "size": 169,
+      "sha256": "20b841180ef36f8c3cf387a55c5a996fe7f288ade4ae0eb743f3839a0a55076c"
+    },
+    {
+      "file": "dist/server/ssr/_next/static/layout-segment-context-D9tVD15k.js",
+      "size": 381,
+      "sha256": "7d7a613f366cd37b0360c38c1c08ed49b30bedd2be2c96386e6828f25d2d8624"
+    },
+    {
+      "file": "dist/server/ssr/_next/static/page-B0AaY6fc.js",
+      "size": 10808,
+      "sha256": "5ca2ed14df232e2cb0b1e689f1a72574a5e7685168b686c4bb49bcdb3717a183"
+    },
+    {
+      "file": "dist/server/ssr/_next/static/page-B0lpDv9S.js",
+      "size": 25186,
+      "sha256": "d83d08d9ffcd3afd9cc99459de9314fd3288b5f645f0e3da0df68718b7677696"
+    },
+    {
+      "file": "dist/server/ssr/_next/static/page-C44N6ymW.js",
+      "size": 15434,
+      "sha256": "7dc7157a98f8b67efdf8182e3ecb555d0b2cc1bdfbc886507dccc646306dbb11"
+    },
+    {
+      "file": "dist/server/ssr/_next/static/page-CPuR6tn4.js",
+      "size": 8592,
+      "sha256": "2729f00e663d1cf8b46400f851cb1b80e6dd624509c3a497dea5c1d11dc885de"
+    },
+    {
+      "file": "dist/server/ssr/_next/static/page-DD0wwp1d.js",
+      "size": 118845,
+      "sha256": "95f85e5edf2d96c7de3c7bfb447b84a2bd7811cfdea72dfe0305d6c026eaf35d"
+    },
+    {
+      "file": "dist/server/ssr/_next/static/page-DDXOzw1g.js",
+      "size": 8515,
+      "sha256": "950040047627c779564991d26af4c7be25694de042372962d2f64c62b0e6e5d7"
+    },
+    {
+      "file": "dist/server/ssr/_next/static/page-DPlf2uF1.js",
+      "size": 10848,
+      "sha256": "d7a6508964490d14f5bccdf39577ec3f74a28d3a39ddbb40200b401d34a03782"
+    },
+    {
+      "file": "dist/server/ssr/_next/static/page-QjgYJcDu.js",
+      "size": 2370,
+      "sha256": "808559e8b1213c6ee752d070adf5e7c13cfc93a8f8fedb45186f34cfdfcb8525"
+    },
+    {
+      "file": "dist/server/ssr/_next/static/page-uFZ8Uqcn.js",
+      "size": 15083,
+      "sha256": "9d74b6138b9bde0c1a1d7dac74b2e4eade10793508560ae387e2bcea9b0ae97a"
+    },
+    {
+      "file": "dist/server/ssr/_next/static/query-C5SXynaS.js",
+      "size": 544,
+      "sha256": "64abf6fde819d39344c044923b54e1c95e72d24fe2d767cc40bb8cc182aea6c8"
+    },
+    {
+      "file": "dist/server/ssr/_next/static/rotate-ccw-AXLO2xHn.js",
+      "size": 195,
+      "sha256": "35492b2f718eed89ae987ad4bbf5e0282d11c985ce462d55620c05ab300e9969"
+    },
+    {
+      "file": "dist/server/ssr/_next/static/scene-environment-CHc9SAUc.js",
+      "size": 2929,
+      "sha256": "a54bf9b4d075a12b0ad1778532c5ea274d4c4290bc5d48bfd27aae25ccc921d8"
+    },
+    {
+      "file": "dist/server/ssr/_next/static/share-2-CjArSZTX.js",
+      "size": 352,
+      "sha256": "59ca15cafd487e76e97b48db463ad58c1bac853e59bc4e0726a46ac670eced2d"
+    },
+    {
+      "file": "dist/server/ssr/_next/static/spirit-geometry-CBE_S0rs.js",
+      "size": 6714,
+      "sha256": "fa07c1e96846b6ce972bc47ad6837624633d5c63681d44479ed6f9786dd98b71"
+    },
+    {
+      "file": "dist/server/ssr/_next/static/spirit-profiles-DCXfWLtz.js",
+      "size": 3249,
+      "sha256": "605fd0a1986b9c12eb0e4a855861b1bae95c278273404c3abb766ff9a6942eaf"
+    },
+    {
+      "file": "dist/server/ssr/_next/static/spirit-zodiac-pet-6eipTnHg.js",
+      "size": 6870,
+      "sha256": "306ff040ee5fc26766394915ce9f71495150ecbcfe02dbe80cfe7c3192143a01"
+    },
+    {
+      "file": "dist/server/ssr/_next/static/static.edge-DcNOTEZG.js",
+      "size": 168,
+      "sha256": "9db3a6df4a1a46aa891c789b216604e53b898bb1e715a12451e6d61bbc78b736"
+    },
+    {
+      "file": "dist/server/ssr/_next/static/streamed-icons-J4DK2oXt.js",
+      "size": 691,
+      "sha256": "b1b32765c208ff75cde71f83ffcd106114ef96298569e51c6fae6dd85d22383c"
+    },
+    {
+      "file": "dist/server/ssr/_next/static/surface-effects-C6uAJlBJ.js",
+      "size": 13816,
+      "sha256": "c21cbad5d86ca17aee9c626bda108013760b4c2789ac23516d0581376881fc1c"
+    },
+    {
+      "file": "dist/server/ssr/_next/static/surface-material-Bd-5mVC2.js",
+      "size": 624768,
+      "sha256": "921e0c33ec984295579a7ae810e8aabe9b58d0860abf2b2bb628c0ca9ba733cf"
+    },
+    {
+      "file": "dist/server/ssr/_next/static/users-DeFBiR91.js",
+      "size": 301,
+      "sha256": "a48ea33176f5016ccc4060186822a1995b5870ea8bd92b3168f72727c645c455"
+    },
+    {
+      "file": "dist/server/ssr/index.js",
+      "size": 285313,
+      "sha256": "b4e76893053267f72e1ff802351b10c449973fe10a016e33981e2fde07065c98"
+    },
+    {
+      "file": "dist/server/ssr/vinext-client-assets.js",
+      "size": 15203,
+      "sha256": "ecda899213e97b0e69fd98e57279637663c56d7baef8e4150357e5ba68a20a60"
+    },
+    {
+      "file": "dist/server/ssr/vinext-server.json",
+      "size": 86,
+      "sha256": "40a0143808a99f091712f249baacc05079c4296948a49a34c89bbc70b2d22da8"
+    },
+    {
+      "file": "dist/server/vinext-client-assets.js",
+      "size": 15203,
+      "sha256": "ecda899213e97b0e69fd98e57279637663c56d7baef8e4150357e5ba68a20a60"
+    },
+    {
+      "file": "dist/server/vinext-externals.json",
+      "size": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "file": "dist/server/vinext-server.json",
+      "size": 86,
+      "sha256": "40a0143808a99f091712f249baacc05079c4296948a49a34c89bbc70b2d22da8"
+    },
+    {
+      "file": "dist/server/wrangler.json",
+      "size": 1297,
+      "sha256": "dc3bf3fb7b725d52abcba0b8f4f60357f9863b24633fdf52c66556001fe2e4c0"
+    }
+  ],
+  "timestamp": "2026-10-10T00:35:11.985Z",
+  "archiveNote": "Submitted TAR SHA/size are recorded in package-result.json. The native saved archive exposes a different content hash/size; both values are retained separately without claiming byte-identical container archives."
+}
