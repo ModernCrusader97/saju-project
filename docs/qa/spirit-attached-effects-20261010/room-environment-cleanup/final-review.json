@@ -1,0 +1,406 @@
+{
+  "schemaVersion": 1,
+  "taskDate": "2026-10-10",
+  "reviewer": "surface_release_review",
+  "verdict": "ready_with_scoped_limits",
+  "reviewedRuntimeCommit": "5a8fae1c90f1fbac2a9ee6b00bdce7cab7572dbd",
+  "scope": "Read-only shared RoomEnvironment cleanup and final exact Worker evidence review; only /tmp review artifacts written; no runtime edits, GPU/browser/build rerun, push, or deployment.",
+  "criticalBlockers": 0,
+  "importantBlockers": 0,
+  "findings": [],
+  "bindings": {
+    "report": {
+      "path": "/workspace/saju-spirit-attached-effects-20261010/outputs/spirit-attachment-worker/probes/final-room-buffer-pass/report.json",
+      "sha256": "7623e4c4973bd768faaaf01c416cdef21396596dbe836cb8264f40d28985847c"
+    },
+    "worker": {
+      "path": "/workspace/saju-spirit-attached-effects-20261010/dist/server/index.js",
+      "sha256": "a1b9ad766d2532d3fc351fd2fa01ebbf6efe9aad1822dd8f3aa864a26d594955"
+    },
+    "harness": {
+      "path": "/workspace/saju-spirit-attached-effects-20261010/scripts/qa/spirit-attachment-worker.mjs",
+      "sha256": "c5b3005deef3a6df9bc675d058a40d2ee50dd67b7e2e9639d0a4daf7bb6895a2"
+    },
+    "roomSource": {
+      "path": "/workspace/saju-spirit-attached-effects-20261010/lib/planet/scene-environment.ts",
+      "sha256": "6aca790acdf6b7e70282f22eb59e9030f68de681f3ffd958e918bde6fa12117e"
+    },
+    "sourceHashes": {
+      "components/planet/ElementalSpiritCanvas.tsx": "16bdfd48f94ac3b069e331cdf70b154098cccbd02268cddade06d5bf0c0c971a",
+      "lib/planet/approved-jade-spirit.ts": "64c85f63d50e63f57a53e4bcb10a98383657e2f3fce2fd9e5aaa7bde65a1a543",
+      "lib/planet/approved-spirit-motion.ts": "92454b392446e9a85814aafd5653518ad7694d9b4465f3436353a6792d66377f",
+      "lib/planet/mesh-surface.ts": "aed2f700821c6d1b0670af8fcb1acf8bdb908e2db84e41246b84a9889751aba0",
+      "lib/planet/surface-stem-accents.ts": "fbe09631ab1995a81eb0515144b17bcba11bf337b19beb57ce69317d1ebc9b33",
+      "lib/planet/surface-sliding-dew.ts": "e3c847935419bc704179e8c307868330d8df122c58c595a5065d4488f4689bb5",
+      "lib/planet/surface-fissure-sand.ts": "f07fc342b81e14148296ca6b89eee8ed55d785f12475253d21a2ee23b0d5f92f",
+      "lib/planet/surface-woody-branches.ts": "a460444533fd086a461618fff1ac1c7ee6677138ce06a8b9ad2f9d5356d3974b",
+      "lib/planet/affine-instance-normals.ts": "15e2d87ecab90ce9fa2fdce91613117cf021e101d071beb34555fdd02bc1415a",
+      "lib/planet/context-loss-resources.ts": "4e8a70a049d97663f577eb8f5701b005ca2f50836c539b9fcce9c160cbff394b",
+      "lib/planet/scene-environment.ts": "6aca790acdf6b7e70282f22eb59e9030f68de681f3ffd958e918bde6fa12117e",
+      "lib/planet/spirit-zodiac-pet.ts": "7c84e8a65e376d8abd60fcf77256c3546c15b83585ff4829a09ffdbb0082ec81",
+      "public/models/zodiac-pets/manifest.json": "15a803c0de98467f8931ee863f4a346d02fe1040720729a4247c19322fb70491",
+      "assets/source-reference/saju-b-evolving-light-v002/runtime/saju-jade-evolution.glsl": "7cfc8ad83f76f8b9505db1e0e38e94bd9ebd7b0c4282a686016c06a09e96255f",
+      "assets/source-reference/saju-b-evolving-light-v002/runtime/saju-jade-evolution.mjs": "b92ffe42be37a8c52427ec6c104a56eb828c4e7f6a02b7d368b72921a46a9e7c"
+    },
+    "verifiedCurrentBytes": {
+      "sourceFiles": 15,
+      "servedClientJSFiles": 27,
+      "pngs": 44,
+      "mismatches": []
+    },
+    "roomMatrixReference": {
+      "floatCount": 96,
+      "byteLength": 384,
+      "sha256": "54251af5a0b540b22c2dd4052cb686bef4375b7877b00c33610dfa84fd9fb409",
+      "installedRoomSourceSha256": "55f466192cc84298755a424c5e040345006b2ee1455589b3b54126c2ea4123f4"
+    }
+  },
+  "workerEvidence": {
+    "status": "PASS",
+    "passed": 19,
+    "failed": 0,
+    "configuredStems": [
+      "갑",
+      "을",
+      "병",
+      "정",
+      "무",
+      "계"
+    ],
+    "additionalJadeCases": 2,
+    "qualities": [
+      "high",
+      "low"
+    ],
+    "pngs": 44,
+    "normalBufferObservations": [
+      {
+        "quality": "high",
+        "defaultStemSwitch": {
+          "contextGeneration": 0,
+          "created": 166,
+          "explicitDeleted": 166,
+          "preForcedLossNativeAlive": 0,
+          "preForcedLossNativeAliveBytes": 0,
+          "glDiagnostics": 0,
+          "roomMatrix": {
+            "floatCount": 96,
+            "byteLength": 384,
+            "sha256": "54251af5a0b540b22c2dd4052cb686bef4375b7877b00c33610dfa84fd9fb409",
+            "nativeLiveAfterUpload": true,
+            "deleteCalls": 1,
+            "whileContextLost": false,
+            "nativeLiveBeforeDelete": true,
+            "nativeLiveAfterDelete": false
+          }
+        },
+        "normalUnmount": {
+          "contextGeneration": 0,
+          "created": 148,
+          "explicitDeleted": 148,
+          "preForcedLossNativeAlive": 0,
+          "preForcedLossNativeAliveBytes": 0,
+          "glDiagnostics": 0,
+          "roomMatrix": {
+            "floatCount": 96,
+            "byteLength": 384,
+            "sha256": "54251af5a0b540b22c2dd4052cb686bef4375b7877b00c33610dfa84fd9fb409",
+            "nativeLiveAfterUpload": true,
+            "deleteCalls": 1,
+            "whileContextLost": false,
+            "nativeLiveBeforeDelete": true,
+            "nativeLiveAfterDelete": false
+          }
+        }
+      },
+      {
+        "quality": "low",
+        "defaultStemSwitch": {
+          "contextGeneration": 0,
+          "created": 166,
+          "explicitDeleted": 166,
+          "preForcedLossNativeAlive": 0,
+          "preForcedLossNativeAliveBytes": 0,
+          "glDiagnostics": 0,
+          "roomMatrix": {
+            "floatCount": 96,
+            "byteLength": 384,
+            "sha256": "54251af5a0b540b22c2dd4052cb686bef4375b7877b00c33610dfa84fd9fb409",
+            "nativeLiveAfterUpload": true,
+            "deleteCalls": 1,
+            "whileContextLost": false,
+            "nativeLiveBeforeDelete": true,
+            "nativeLiveAfterDelete": false
+          }
+        },
+        "normalUnmount": {
+          "contextGeneration": 0,
+          "created": 148,
+          "explicitDeleted": 148,
+          "preForcedLossNativeAlive": 0,
+          "preForcedLossNativeAliveBytes": 0,
+          "glDiagnostics": 0,
+          "roomMatrix": {
+            "floatCount": 96,
+            "byteLength": 384,
+            "sha256": "54251af5a0b540b22c2dd4052cb686bef4375b7877b00c33610dfa84fd9fb409",
+            "nativeLiveAfterUpload": true,
+            "deleteCalls": 1,
+            "whileContextLost": false,
+            "nativeLiveBeforeDelete": true,
+            "nativeLiveAfterDelete": false
+          }
+        }
+      }
+    ],
+    "restoredWater": [
+      {
+        "quality": "high",
+        "unmount": {
+          "contextGeneration": 1,
+          "created": 145,
+          "explicitDeleted": 145,
+          "preForcedLossNativeAlive": 0,
+          "preForcedLossNativeAliveBytes": 0,
+          "glDiagnostics": 0,
+          "roomMatrix": {
+            "floatCount": 96,
+            "byteLength": 384,
+            "sha256": "54251af5a0b540b22c2dd4052cb686bef4375b7877b00c33610dfa84fd9fb409",
+            "nativeLiveAfterUpload": true,
+            "deleteCalls": 1,
+            "whileContextLost": false,
+            "nativeLiveBeforeDelete": true,
+            "nativeLiveAfterDelete": false
+          }
+        }
+      },
+      {
+        "quality": "low",
+        "unmount": {
+          "contextGeneration": 1,
+          "created": 145,
+          "explicitDeleted": 145,
+          "preForcedLossNativeAlive": 0,
+          "preForcedLossNativeAliveBytes": 0,
+          "glDiagnostics": 0,
+          "roomMatrix": {
+            "floatCount": 96,
+            "byteLength": 384,
+            "sha256": "54251af5a0b540b22c2dd4052cb686bef4375b7877b00c33610dfa84fd9fb409",
+            "nativeLiveAfterUpload": true,
+            "deleteCalls": 1,
+            "whileContextLost": false,
+            "nativeLiveBeforeDelete": true,
+            "nativeLiveAfterDelete": false
+          }
+        }
+      }
+    ],
+    "restoredJade": [
+      {
+        "quality": "high",
+        "offscreenBackFacePremultipliedAlpha": false,
+        "canvasPremultipliedAlpha": true,
+        "unmount": {
+          "contextGeneration": 1,
+          "created": 156,
+          "explicitDeleted": 156,
+          "preForcedLossNativeAlive": 0,
+          "preForcedLossNativeAliveBytes": 0,
+          "glDiagnostics": 0,
+          "roomMatrix": {
+            "floatCount": 96,
+            "byteLength": 384,
+            "sha256": "54251af5a0b540b22c2dd4052cb686bef4375b7877b00c33610dfa84fd9fb409",
+            "nativeLiveAfterUpload": true,
+            "deleteCalls": 1,
+            "whileContextLost": false,
+            "nativeLiveBeforeDelete": true,
+            "nativeLiveAfterDelete": false
+          }
+        }
+      },
+      {
+        "quality": "low",
+        "offscreenBackFacePremultipliedAlpha": false,
+        "canvasPremultipliedAlpha": true,
+        "unmount": {
+          "contextGeneration": 1,
+          "created": 156,
+          "explicitDeleted": 156,
+          "preForcedLossNativeAlive": 0,
+          "preForcedLossNativeAliveBytes": 0,
+          "glDiagnostics": 0,
+          "roomMatrix": {
+            "floatCount": 96,
+            "byteLength": 384,
+            "sha256": "54251af5a0b540b22c2dd4052cb686bef4375b7877b00c33610dfa84fd9fb409",
+            "nativeLiveAfterUpload": true,
+            "deleteCalls": 1,
+            "whileContextLost": false,
+            "nativeLiveBeforeDelete": true,
+            "nativeLiveAfterDelete": false
+          }
+        }
+      }
+    ],
+    "optical": [
+      {
+        "quality": "high",
+        "centerRawRGBA": [
+          109,
+          114,
+          113,
+          143
+        ],
+        "encodedCenterRGBA": [
+          194,
+          203,
+          202,
+          143
+        ],
+        "nativePreviousFrames": 72,
+        "changedPixels": 0
+      },
+      {
+        "quality": "low",
+        "centerRawRGBA": [
+          109,
+          114,
+          113,
+          143
+        ],
+        "encodedCenterRGBA": [
+          194,
+          203,
+          202,
+          143
+        ],
+        "nativePreviousFrames": 72,
+        "changedPixels": 0
+      }
+    ],
+    "fire": [
+      {
+        "quality": "high",
+        "orangePartialAlphaPixels": 2150,
+        "groundPartialAlphaPixels": 10234,
+        "nativePixelsSha256": "0638bb2b1f45e5ce63d249369a5c5a62b296f44a320b30ea53a3bc9691735682",
+        "pngSha256": "41f2ee115c425b871692a5d405e20ae9107474ff86a3333ce15b840864948380",
+        "historicalWholeNativeFrameExact": true,
+        "historicalWholePNGExact": true
+      },
+      {
+        "quality": "low",
+        "orangePartialAlphaPixels": 532,
+        "groundPartialAlphaPixels": 6635,
+        "nativePixelsSha256": "404aa4c634d81b40fa62c4c39e326dc34c35381d14ac68606cda31bd6281ea52",
+        "pngSha256": "ca3c9a887678dc496716b0ad3be3e8f0f505b296cfa0fb6e51eb9f2b61641419",
+        "historicalWholeNativeFrameExact": null,
+        "historicalWholePNGExact": null
+      }
+    ],
+    "errors": [],
+    "outbound": [],
+    "databaseCounts": {
+      "chats": 0,
+      "fortunes": 0,
+      "guin_maps": 0,
+      "ai_test_budget": 0
+    }
+  },
+  "galaxyEvidence": {
+    "reportPath": "/workspace/saju-spirit-attached-effects-20261010/outputs/galaxy-entry-appearance/after-entry-appearance-browser.json",
+    "curatedCopyPath": "/workspace/saju-spirit-attached-effects-20261010/docs/qa/spirit-attached-effects-20261010/worker/galaxy-entry-report.json",
+    "sameBytes": true,
+    "reportSha256": "787775b244d522d571e0c009089d0a40467cf8c8275a5e739f3dbea84c2a03aa",
+    "passed": 8,
+    "failed": 0,
+    "workerSha256": "a1b9ad766d2532d3fc351fd2fa01ebbf6efe9aad1822dd8f3aa864a26d594955",
+    "sourceSha256": "c22d45476068ab54977a0e06191b80b805ff28f33e571790be2bd0f7f2bde361",
+    "harnessSha256": "7b39f72d67781e247e6e757832053f70e6fa2b351dad430698ef4a8682463a69",
+    "currentHashesMatch": true,
+    "errors": [],
+    "outbound": []
+  },
+  "cpuProbe": {
+    "method": "Exact createStudioEnvironment source, actual pinned RoomEnvironment/WebGLObjects/WebGLGeometries/WebGLAttributes; stubbed PMREM and GL (no GPU)",
+    "results": [
+      {
+        "fail": false,
+        "sigma": 0.035,
+        "geometryDisposeEvents": 1,
+        "materialDisposeEvents": 8,
+        "instanceDisposeEvents": 1,
+        "pmremDisposals": 1,
+        "roomMatrix": {
+          "floatCount": 96,
+          "byteLength": 384,
+          "sha256": "54251af5a0b540b22c2dd4052cb686bef4375b7877b00c33610dfa84fd9fb409"
+        },
+        "beforeCleanup": {
+          "roomBufferLive": true,
+          "instanceDisposeEvents": 0
+        },
+        "sameOutput": true,
+        "error": null,
+        "roomBufferAfterCleanup": {
+          "live": false,
+          "deleteCalls": 1
+        },
+        "mockBufferOwnership": {
+          "created": 4,
+          "deletedOnce": 4,
+          "alive": 0
+        },
+        "geometryMemoryAfterCleanup": 0
+      },
+      {
+        "fail": true,
+        "sigma": 0.035,
+        "geometryDisposeEvents": 1,
+        "materialDisposeEvents": 8,
+        "instanceDisposeEvents": 1,
+        "pmremDisposals": 1,
+        "roomMatrix": {
+          "floatCount": 96,
+          "byteLength": 384,
+          "sha256": "54251af5a0b540b22c2dd4052cb686bef4375b7877b00c33610dfa84fd9fb409"
+        },
+        "beforeCleanup": {
+          "roomBufferLive": true,
+          "instanceDisposeEvents": 0
+        },
+        "sameOutput": false,
+        "error": "bake failed",
+        "roomBufferAfterCleanup": {
+          "live": false,
+          "deleteCalls": 1
+        },
+        "mockBufferOwnership": {
+          "created": 4,
+          "deletedOnce": 4,
+          "alive": 0
+        },
+        "geometryMemoryAfterCleanup": 0
+      }
+    ]
+  },
+  "conclusions": [
+    "fromScene completes synchronous baking and restores its render target before finally releases Room instance allocations. Returned environment target is untouched.",
+    "Pinned Three RoomEnvironment.dispose owns shared geometry/material cleanup but omits the instanceMatrix allocation; explicit InstancedMesh.dispose releases its old renderer callback and buffer.",
+    "Success and injected fromScene failure both release the Room instance, shared resources and PMREM once; the original failure propagates.",
+    "Final native report enforces explicit valid-context Room deletion once and checks full-buffer retirement before forced context loss, rather than counting context destruction."
+  ],
+  "limits": [
+    "Artifact inspection validates existing QA results; reviewer did not independently rerun GPU/browser/build checks.",
+    "The final 19-check Worker report exercises six configured stems plus approved jade in high and low quality; it is not all-ten-stem React wardrobe coverage.",
+    "Whole-frame historical fire/ground byte equality is asserted at high quality; low quality validates partial-alpha pixels and native blending without a historical whole-frame baseline.",
+    "Generic buffer totals establish that each tracked buffer received a valid explicit deletion; exactly one deletion is individually enforced for the source-matching Room matrix.",
+    "CPU probe uses actual pinned RoomEnvironment/WebGL resource modules and the exact helper source, but stubs PMREM and GL; it validates ownership/order and fromScene throw handling, not optical rendering.",
+    "Existing Worker/Galaxy runs use local production assets, disposable synthetic D1, synthetic rAF/clock and Chromium SwiftShader; no hosted authenticated session, physical mobile GPU or suspension certification.",
+    "No global body/intersection proof or new rig is claimed; only the original bounded .45 pose-study morph is exercised.",
+    "Fashion remains a separate private candidate and is outside this core review/deployment scope."
+  ]
+}

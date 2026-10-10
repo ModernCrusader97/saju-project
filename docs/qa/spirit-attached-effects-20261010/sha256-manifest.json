@@ -2,8 +2,8 @@
   "artifacts": [
     {
       "file": "README.md",
-      "bytes": 3847,
-      "sha256": "4a4a3a6ff69a6cdc541e7a95f8dc6089bcf42c383b5b17f5f0c0f1ac3f6a994b"
+      "bytes": 4287,
+      "sha256": "ab3ef7a2a360b4b67d1eab59fd7a8e1705c5963ac1399370679f3120b627c43d"
     },
     {
       "file": "affine-normal-after.json",
@@ -29,6 +29,11 @@
       "file": "affine-sand-webgl.json",
       "bytes": 15849,
       "sha256": "109b83074acfe7e045ac3ec649731ea932f5ba0e05d704652ce61a49a71e4a79"
+    },
+    {
+      "file": "alpha-compositing.md",
+      "bytes": 3916,
+      "sha256": "761ece3d313b2d12459331353fbe11b5daa288fa3361a0ee2dd32aa0404f0790"
     },
     {
       "file": "alpha-compositing/compatible-alpha-fire-water-jade-recovery/harness.mjs",
@@ -326,11 +331,6 @@
       "sha256": "8444a5b972d07daea95b4dccbff6f610314328348a9dda5eeb5eb79004b5db88"
     },
     {
-      "file": "alpha-compositing.md",
-      "bytes": 3916,
-      "sha256": "761ece3d313b2d12459331353fbe11b5daa288fa3361a0ee2dd32aa0404f0790"
-    },
-    {
       "file": "browser-report.json",
       "bytes": 32075,
       "sha256": "c27fc7ff6008146ea3bbcb4956f1370d50386c3902db0f8c8331ee67e984b374"
@@ -339,6 +339,11 @@
       "file": "buffer-lifecycle.json",
       "bytes": 52441,
       "sha256": "dafb98be1346ba90ccead5c9a934b14f45c7d6db43e29fe0e1084fc05dbf1177"
+    },
+    {
+      "file": "context-recovery.md",
+      "bytes": 3379,
+      "sha256": "93ff5ffc880bc50188694e21f4aeab0950bde7da01ab8b29be744f6492eaf878"
     },
     {
       "file": "context-recovery/environment-fail-harness.mjs",
@@ -371,19 +376,69 @@
       "sha256": "7a0d87a79b465f0c28043b1e5c96a319309260a7c2eb60a929182c95c95905c3"
     },
     {
-      "file": "context-recovery.md",
-      "bytes": 3379,
-      "sha256": "93ff5ffc880bc50188694e21f4aeab0950bde7da01ab8b29be744f6492eaf878"
-    },
-    {
       "file": "motion-cpu.json",
       "bytes": 5025,
       "sha256": "8f567d84d6cf1ef664386f83724b52ba4bf7f7fc0ef864e963538ad9585ebae6"
     },
     {
+      "file": "preservation-final.json",
+      "bytes": 69220,
+      "sha256": "492267c32d93d98753e7d9a5787293f3d45150cc353626737ba1f9829b6f7b41"
+    },
+    {
       "file": "preservation.json",
       "bytes": 69136,
       "sha256": "05a5927c402b6641182a589508e806815ad6bde550328d5c28e1a392f380c6bc"
+    },
+    {
+      "file": "room-environment-cleanup.md",
+      "bytes": 2764,
+      "sha256": "1bd37c50814c96070b52cab4fa2952965e1b7971528631a331a120174a7ac7af"
+    },
+    {
+      "file": "room-environment-cleanup/final-review.json",
+      "bytes": 15746,
+      "sha256": "edcb1717c30de68d8a5ee431a5c13c03034e083a2e5f2b51ac4308c3a9e40fbf"
+    },
+    {
+      "file": "room-environment-cleanup/native-final.json",
+      "bytes": 10603,
+      "sha256": "020b8f4e641979152fc6a25c5474fc3014a0989aff112ed00c43dbb8cb8e9c3f"
+    },
+    {
+      "file": "room-environment-cleanup/previous-failure/README.md",
+      "bytes": 2575,
+      "sha256": "d27143342d775e2036e4b8a1a33c433d8c89c32200a1a3293514765d90912364"
+    },
+    {
+      "file": "room-environment-cleanup/previous-failure/creation-stack-fail-harness.mjs",
+      "bytes": 35036,
+      "sha256": "93086d8187b1932a0d419db08f90eaed83cbe09eb141dfcd37a2b2ea95ab436e"
+    },
+    {
+      "file": "room-environment-cleanup/previous-failure/creation-stack-fail.json",
+      "bytes": 5496,
+      "sha256": "bb95cb6363f94ac3aacd4d208704dec45444b6664e38ea3b881daec5dfe5ad4a"
+    },
+    {
+      "file": "room-environment-cleanup/previous-failure/first-retired-buffer-fail-harness.mjs",
+      "bytes": 34732,
+      "sha256": "ca5df63b250cc7a74d1cdbf994684405fd643fbea33921422e6d7009e59519df"
+    },
+    {
+      "file": "room-environment-cleanup/previous-failure/first-retired-buffer-fail.json",
+      "bytes": 3240,
+      "sha256": "31d6352631d2895b626306d5b84f046365413cd985a37eae8e9949181110957a"
+    },
+    {
+      "file": "room-environment-cleanup/previous-failure/ownership-evidence.json",
+      "bytes": 4160,
+      "sha256": "efaa7cb0839b174b49ea30d2c8f263ad4c33322e8bbcc5b0fbd7a8dea91a4a3e"
+    },
+    {
+      "file": "room-environment-cleanup/previous-failure/sha256-manifest.json",
+      "bytes": 601,
+      "sha256": "328b778f75fdb37d303beb6a6039acd0dc44462c58cda44620ce46e431e6bb74"
     },
     {
       "file": "sand-build-contention.json",
@@ -402,28 +457,268 @@
     },
     {
       "file": "verification.json",
-      "bytes": 2534,
-      "sha256": "e0c9286af7bcb48e6fca29c4e5ebe80fde9d356fe4fa3d5726003544ed772646"
+      "bytes": 3851,
+      "sha256": "07c67b7c096997b72c3547cf31c3e45b34c689ca5f7c158d0db8a9365e4bc156"
     },
     {
-      "file": "worker/README.md",
-      "bytes": 3203,
-      "sha256": "e70498082fb3db984f0cec72bda59b8cab10f36e1ab17b10440572e6bf6355ee"
+      "file": "worker-pre-room-cleanup/README.md",
+      "bytes": 3593,
+      "sha256": "80aa9faaa4dc5142216bc6d25b8c57e1ab2c9df6e35b2b6130738ff1fa8840aa"
     },
     {
-      "file": "worker/galaxy-entry-report.json",
+      "file": "worker-pre-room-cleanup/galaxy-entry-report.json",
       "bytes": 170037,
       "sha256": "7a81043be480b9bda555291d9d2606b70783da2cd26d48736e6b7b2bab9e82ab"
     },
     {
-      "file": "worker/harness.mjs",
+      "file": "worker-pre-room-cleanup/harness.mjs",
       "bytes": 54706,
       "sha256": "d134d54acc4931f0e89c46c93bfa382b225ca3d64b436d1b83bbe213adcf90b8"
     },
     {
-      "file": "worker/report.json",
+      "file": "worker-pre-room-cleanup/report.json",
       "bytes": 1211729,
       "sha256": "fdc3ce376a573cf3fd0500b05c564ae05e837307fe1514f57ea21fc9dd65feb7"
+    },
+    {
+      "file": "worker-pre-room-cleanup/갑-high-front.png",
+      "bytes": 191476,
+      "sha256": "daa18c3b575b9394fd16b5a2f24ee62d73ab5608d5838ff26a0abf7514d890dd"
+    },
+    {
+      "file": "worker-pre-room-cleanup/갑-high-side.png",
+      "bytes": 171300,
+      "sha256": "b70487c462c98d9787838f9e38541500ac3deb9ad5b7e719deb164bd9872c360"
+    },
+    {
+      "file": "worker-pre-room-cleanup/갑-high-wave.png",
+      "bytes": 189195,
+      "sha256": "95fec20940e71b1e691af173192115d860a12b4c7e675979249e0ac213b9c611"
+    },
+    {
+      "file": "worker-pre-room-cleanup/갑-low-front.png",
+      "bytes": 120323,
+      "sha256": "4f937cbfdebb506b451ef0829fe238294ce231cb526311e81de512780c6274a4"
+    },
+    {
+      "file": "worker-pre-room-cleanup/갑-low-side.png",
+      "bytes": 106590,
+      "sha256": "46239ab40811d33abdcb1e4279f06d7317c2db7d0aac72c579bfd401673fe76b"
+    },
+    {
+      "file": "worker-pre-room-cleanup/갑-low-wave.png",
+      "bytes": 118207,
+      "sha256": "a2a1a75058f663769a80ede996ef59f258360cfe9c47b65a8a46c271ea010880"
+    },
+    {
+      "file": "worker-pre-room-cleanup/계-high-front.png",
+      "bytes": 78707,
+      "sha256": "75962569cbf45b702722166d39331c1885c696b78072ea7558bdab3835bdf99e"
+    },
+    {
+      "file": "worker-pre-room-cleanup/계-high-side-all-native.png",
+      "bytes": 59022,
+      "sha256": "3dee38958b8dd443d6400fd556acba536a5cc9ec1aa170dd203a65804b407cf2"
+    },
+    {
+      "file": "worker-pre-room-cleanup/계-high-side-ui-all-native.png",
+      "bytes": 245020,
+      "sha256": "7e373af30a105c8baf396bf1294ccda64f12a3264c700904f9c8e82a54d41511"
+    },
+    {
+      "file": "worker-pre-room-cleanup/계-high-side-ui-selected.png",
+      "bytes": 245020,
+      "sha256": "7e373af30a105c8baf396bf1294ccda64f12a3264c700904f9c8e82a54d41511"
+    },
+    {
+      "file": "worker-pre-room-cleanup/계-high-side.png",
+      "bytes": 59022,
+      "sha256": "3dee38958b8dd443d6400fd556acba536a5cc9ec1aa170dd203a65804b407cf2"
+    },
+    {
+      "file": "worker-pre-room-cleanup/계-high-wave.png",
+      "bytes": 77966,
+      "sha256": "937fb77e18e1e26b9c3f4a8065b8965411bcf57b018d0085f0f4c4092e03cce6"
+    },
+    {
+      "file": "worker-pre-room-cleanup/계-low-front.png",
+      "bytes": 50830,
+      "sha256": "be663d93cc2b93dffdbcb1212b077a46b24c0033e01065445e1327cae2dcbed2"
+    },
+    {
+      "file": "worker-pre-room-cleanup/계-low-side-all-native.png",
+      "bytes": 37167,
+      "sha256": "7105e1c6cabfd485676d4148a3514b393b99b0734c3f4f9212ddaab3f596039d"
+    },
+    {
+      "file": "worker-pre-room-cleanup/계-low-side-ui-all-native.png",
+      "bytes": 173569,
+      "sha256": "07b038e1dd6de2ae8f71692cb27430815bdd15396b0977da09ddc1604eb94bdc"
+    },
+    {
+      "file": "worker-pre-room-cleanup/계-low-side-ui-selected.png",
+      "bytes": 173569,
+      "sha256": "07b038e1dd6de2ae8f71692cb27430815bdd15396b0977da09ddc1604eb94bdc"
+    },
+    {
+      "file": "worker-pre-room-cleanup/계-low-side.png",
+      "bytes": 37167,
+      "sha256": "7105e1c6cabfd485676d4148a3514b393b99b0734c3f4f9212ddaab3f596039d"
+    },
+    {
+      "file": "worker-pre-room-cleanup/계-low-wave.png",
+      "bytes": 50490,
+      "sha256": "ec20d8412499572d75dc4699bde875aee3923a4d2cf1176a78ddeac5757c2bcb"
+    },
+    {
+      "file": "worker-pre-room-cleanup/기-high-jade-restored-moving.png",
+      "bytes": 154015,
+      "sha256": "ae492ed10b67f6c21a6db9ccce265039b2b3e468329849d7c2895b6a2f5c5069"
+    },
+    {
+      "file": "worker-pre-room-cleanup/기-low-jade-restored-moving.png",
+      "bytes": 101258,
+      "sha256": "96d1e143aa985e0cee68631d68f88943846b0ff6621f5bb380c5b3f624a0ee25"
+    },
+    {
+      "file": "worker-pre-room-cleanup/무-high-front.png",
+      "bytes": 164333,
+      "sha256": "0e54d5c670f9bfa93c3f1bd94e46b9c3a19bbe4cf3180c883a10ac2c72d811f0"
+    },
+    {
+      "file": "worker-pre-room-cleanup/무-high-side.png",
+      "bytes": 146495,
+      "sha256": "e149004ec1484b33bef6227ec5672abef46ca4fbbb54dd7027d8e9602ac0d62d"
+    },
+    {
+      "file": "worker-pre-room-cleanup/무-high-wave.png",
+      "bytes": 161412,
+      "sha256": "91c325c977eef2c2fea6cbb7775f2e845c34baa0b8e4c4ca1ad0d32830605950"
+    },
+    {
+      "file": "worker-pre-room-cleanup/무-low-front.png",
+      "bytes": 105027,
+      "sha256": "30c496bedabda5913e84ee0efb3f90e791f9e6b4c23fe99f4680d8b1bf7febe8"
+    },
+    {
+      "file": "worker-pre-room-cleanup/무-low-side.png",
+      "bytes": 93873,
+      "sha256": "139069f35c66e8dc385ed44d80856d015d3fde1382099e028f37556b228144ff"
+    },
+    {
+      "file": "worker-pre-room-cleanup/무-low-wave.png",
+      "bytes": 103197,
+      "sha256": "5110ed01274a19d38ac519af6adfe59b452614d6af048e2e1cf2866fe8bc4900"
+    },
+    {
+      "file": "worker-pre-room-cleanup/병-high-front.png",
+      "bytes": 122628,
+      "sha256": "0206c2451faba94fd8e118a51368a02b4ef96f1850546b173498fbee9873266b"
+    },
+    {
+      "file": "worker-pre-room-cleanup/병-high-side.png",
+      "bytes": 108051,
+      "sha256": "41f2ee115c425b871692a5d405e20ae9107474ff86a3333ce15b840864948380"
+    },
+    {
+      "file": "worker-pre-room-cleanup/병-high-wave.png",
+      "bytes": 121976,
+      "sha256": "7d33d3810a2d8cb0339edb2a7eac2457cb530405653fb3a016d34d05fb236e57"
+    },
+    {
+      "file": "worker-pre-room-cleanup/병-low-front.png",
+      "bytes": 75780,
+      "sha256": "569a9e42e88ab3c7fa29f2fdcceba65870d17dcfe3afb2c467df5330430a6b03"
+    },
+    {
+      "file": "worker-pre-room-cleanup/병-low-side.png",
+      "bytes": 65732,
+      "sha256": "ca3c9a887678dc496716b0ad3be3e8f0f505b296cfa0fb6e51eb9f2b61641419"
+    },
+    {
+      "file": "worker-pre-room-cleanup/병-low-wave.png",
+      "bytes": 74347,
+      "sha256": "93a58c43ceea490d75dd25dcf0e841c59e70ae02df533bcf11cc3e06246e1549"
+    },
+    {
+      "file": "worker-pre-room-cleanup/을-high-front.png",
+      "bytes": 133883,
+      "sha256": "9a17bfc6cc21d88e479cf8c58f053c916b12418a77589b8638128632df59a6a0"
+    },
+    {
+      "file": "worker-pre-room-cleanup/을-high-side.png",
+      "bytes": 118705,
+      "sha256": "80be8e4988ebe6c089e98af7787fe2e5058c30d00d6fe430c3df6eb211d8d5d8"
+    },
+    {
+      "file": "worker-pre-room-cleanup/을-high-wave.png",
+      "bytes": 131946,
+      "sha256": "f25280912716fc35d3d7de0dcd0453c496804e7eb11edf4cdbd164a34250ede8"
+    },
+    {
+      "file": "worker-pre-room-cleanup/을-low-front.png",
+      "bytes": 84023,
+      "sha256": "b98034e7ef02bb4f2f58c67127bc755b54c6fa08a36d42211403e7124d983f86"
+    },
+    {
+      "file": "worker-pre-room-cleanup/을-low-side.png",
+      "bytes": 75474,
+      "sha256": "c71bf0e6231cab3b257d1a459cf1dd120e525265744ad644fdebe0931b0aee63"
+    },
+    {
+      "file": "worker-pre-room-cleanup/을-low-wave.png",
+      "bytes": 82680,
+      "sha256": "5592f3f878e9f4ffc9ae2e31954f9c7ae0f63c4406287c31b3ef48e974157f46"
+    },
+    {
+      "file": "worker-pre-room-cleanup/정-high-front.png",
+      "bytes": 168538,
+      "sha256": "83137ae75aaa69f026ba21708880211fcf1e4ee3ebe496ea3191479910c9c708"
+    },
+    {
+      "file": "worker-pre-room-cleanup/정-high-side.png",
+      "bytes": 155019,
+      "sha256": "52ed48a8a094bba79d855a69ce7e1bbca4e844cd6cfd3b10a5b3ed6e876aa7cc"
+    },
+    {
+      "file": "worker-pre-room-cleanup/정-high-wave.png",
+      "bytes": 165697,
+      "sha256": "0abca0e79187eb2c4eb633f104e7d0c7a4c81a3348e6fb08661b92dc09e8fc68"
+    },
+    {
+      "file": "worker-pre-room-cleanup/정-low-front.png",
+      "bytes": 109752,
+      "sha256": "edc7b1917d3b6cff6e42d3ec56d6e93a8d4c7cdfe75bdf11ce76fe709e99b24f"
+    },
+    {
+      "file": "worker-pre-room-cleanup/정-low-side.png",
+      "bytes": 100450,
+      "sha256": "eff791cba2f19b057f4da8293fee8174a064588b8a07821cec76c744ad76000b"
+    },
+    {
+      "file": "worker-pre-room-cleanup/정-low-wave.png",
+      "bytes": 107572,
+      "sha256": "77259376e1da25d169d9d6509d8079cff6fa75e7e31206af1d5512e03ed00628"
+    },
+    {
+      "file": "worker/README.md",
+      "bytes": 4011,
+      "sha256": "d43bf2008aad6585054632daf9f30cd50fdce634872d6ba78086a13c18d6d41b"
+    },
+    {
+      "file": "worker/galaxy-entry-report.json",
+      "bytes": 170037,
+      "sha256": "787775b244d522d571e0c009089d0a40467cf8c8275a5e739f3dbea84c2a03aa"
+    },
+    {
+      "file": "worker/harness.mjs",
+      "bytes": 65537,
+      "sha256": "c5b3005deef3a6df9bc675d058a40d2ee50dd67b7e2e9639d0a4daf7bb6895a2"
+    },
+    {
+      "file": "worker/report.json",
+      "bytes": 1521159,
+      "sha256": "7623e4c4973bd768faaaf01c416cdef21396596dbe836cb8264f40d28985847c"
     },
     {
       "file": "worker/갑-high-front.png",
@@ -815,6 +1110,5 @@
       "bytes": 114506,
       "sha256": "160f3883386406803fcdb1c86fa081c1ef820bcde5bede0a5e13aae6001b6367"
     }
-  ],
-  "excludesOnly": "sha256-manifest.json at this directory root"
+  ]
 }

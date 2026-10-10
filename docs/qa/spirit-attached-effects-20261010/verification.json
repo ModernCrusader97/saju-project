@@ -3,16 +3,19 @@
   "candidateOnly": true,
   "exactWorkerUI": {
     "status": "PASS",
-    "passed": 17,
+    "passed": 19,
     "failed": 0,
     "cases": 12,
     "jadeRecoveryCases": 2,
     "captures": 44,
-    "builtServerSha256": "bb96468fe99e2888ec2a01e18935673b60e37571d402b5997aee8ac3fad4082f",
-    "harnessSha256": "d134d54acc4931f0e89c46c93bfa382b225ca3d64b436d1b83bbe213adcf90b8",
+    "builtServerSha256": "a1b9ad766d2532d3fc351fd2fa01ebbf6efe9aad1822dd8f3aa864a26d594955",
+    "harnessSha256": "c5b3005deef3a6df9bc675d058a40d2ee50dd67b7e2e9639d0a4daf7bb6895a2",
     "errors": 0,
     "outbound": 0,
-    "report": "worker/report.json"
+    "report": "worker/report.json",
+    "sourceHashesVerified": 15,
+    "reportSha256": "7623e4c4973bd768faaaf01c416cdef21396596dbe836cb8264f40d28985847c",
+    "normalPreEnvironmentChecks": 2
   },
   "siteDeployment": {
     "status": "NOT_RUN_AT_RECORD_TIME",
@@ -67,14 +70,17 @@
     "No actual-character Im spray/foam",
     "Local SwiftShader, not physical GPU",
     "Hosted signed-in view not inspected",
-    "Fashion and new tiger remain separate candidates"
+    "Fashion remains a separate undeployed candidate; new tiger work is stopped and unused",
+    "Latest separately authored animal assets/selected versions/approval remain unverified"
   ],
   "exactWorkerGalaxyEntry": {
     "status": "PASS",
     "passed": 8,
     "failed": 0,
-    "builtServerSha256": "bb96468fe99e2888ec2a01e18935673b60e37571d402b5997aee8ac3fad4082f",
-    "report": "worker/galaxy-entry-report.json"
+    "builtServerSha256": "a1b9ad766d2532d3fc351fd2fa01ebbf6efe9aad1822dd8f3aa864a26d594955",
+    "report": "worker/galaxy-entry-report.json",
+    "harnessSha256": "7b39f72d67781e247e6e757832053f70e6fa2b351dad430698ef4a8682463a69",
+    "reportSha256": "787775b244d522d571e0c009089d0a40467cf8c8275a5e739f3dbea84c2a03aa"
   },
   "petProvenanceFollowup": {
     "testPass": 8,
@@ -86,7 +92,30 @@
   "independentReview": {
     "critical": 0,
     "important": 0,
-    "reviewedSourceCommit": "a9e4f67dd8627b28b17aecf32cbb16b0b75d5bb1"
+    "reviewedSourceCommit": "5a8fae1c90f1fbac2a9ee6b00bdce7cab7572dbd",
+    "report": "room-environment-cleanup/final-review.json",
+    "workerBindings": "PASS",
+    "cpuSuccessAndFailureOwnership": "PASS"
   },
-  "releaseReadiness": "PASS; verified local production artifact, publication not run at record time"
+  "releaseReadiness": "PASS; verified local production artifact, publication not run at record time",
+  "roomEnvironmentNativeCleanup": {
+    "status": "PASS",
+    "checks": 2,
+    "measuredFloatCount": 96,
+    "measuredBytes": 384,
+    "measuredUploadSha256": "54251af5a0b540b22c2dd4052cb686bef4375b7877b00c33610dfa84fd9fb409",
+    "normalYi": "166/166 both qualities",
+    "normalJia": "148/148 both qualities",
+    "restoredWater": "145/145 both qualities",
+    "restoredJade": "156/156 both qualities",
+    "nativeAliveBeforeForcedLoss": 0,
+    "report": "room-environment-cleanup/native-final.json"
+  },
+  "visiblePreservationAcrossRoomFix": {
+    "images": 44,
+    "byteIdentical": 44,
+    "changed": 0,
+    "earlierEvidence": "worker-pre-room-cleanup/report.json",
+    "latestEvidence": "worker/report.json"
+  }
 }

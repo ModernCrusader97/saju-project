@@ -29,4 +29,4 @@
 
 기존 12지 코드 모델은 이미 연결되어 있음을 [실제 이력·runtime 감사](qa/zodiac-pet-assets/runtime-audit/README.md)와 192회 CPU 대조로 확인했습니다. 선택은 기존 일지 기준입니다. 별도 최신 제작 모델과 용 C·돼지 과거 해시의 관계는 미확인으로 남기며, 새 호랑이로 대신 연결하지 않았습니다.
 
-최종 실제 Worker UI 17조건과 같은 빌드의 은하 입장 8조건이 모두 통과했습니다. [최종 UI 증거](qa/spirit-attached-effects-20261010/worker/README.md)에 정확한 Worker·harness SHA, 44 PNG, native 검증과 미실행 범위를 고정했습니다. 이는 기존 소유자 전용 Site 반영 전 검증이며 실제 배포 결과는 Native version/deployment 조회로 확인합니다.
+최종 실제 Worker UI 19조건과 같은 빌드의 은하 입장 8조건이 모두 통과했습니다. [최종 UI 증거](qa/spirit-attached-effects-20261010/worker/README.md)에 정확한 Worker·harness SHA, 44 PNG, native 검증과 미실행 범위를 고정했습니다. 이는 기존 소유자 전용 Site 반영 전 검증이며 실제 배포 결과는 Native version/deployment 조회로 확인합니다.

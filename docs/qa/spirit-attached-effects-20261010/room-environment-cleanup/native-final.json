@@ -1,0 +1,362 @@
+{
+  "status": "PASS",
+  "scope": "measured native pre-PMREM upload, normal React stem-switch/unmount and restored current-generation teardown",
+  "builtServerSha256": "a1b9ad766d2532d3fc351fd2fa01ebbf6efe9aad1822dd8f3aa864a26d594955",
+  "harnessSha256": "c5b3005deef3a6df9bc675d058a40d2ee50dd67b7e2e9639d0a4daf7bb6895a2",
+  "reportSha256": "7623e4c4973bd768faaaf01c416cdef21396596dbe836cb8264f40d28985847c",
+  "roomMatrixReference": {
+    "floatCount": 96,
+    "byteLength": 384,
+    "sha256": "54251af5a0b540b22c2dd4052cb686bef4375b7877b00c33610dfa84fd9fb409",
+    "installedRoomSourceSha256": "55f466192cc84298755a424c5e040345006b2ee1455589b3b54126c2ea4123f4"
+  },
+  "normal": [
+    {
+      "quality": "high",
+      "defaultRetired": {
+        "created": 166,
+        "explicitDeleted": 166,
+        "contextGeneration": 0,
+        "nativeAlive": 0,
+        "preForceLoss": [
+          {
+            "created": 166,
+            "explicitDeleted": 166,
+            "nativeAlive": 0,
+            "nativeAliveBytes": 0
+          }
+        ],
+        "roomCandidates": [
+          {
+            "bufferId": 7,
+            "floatCount": 96,
+            "byteLength": 384,
+            "sha256": "54251af5a0b540b22c2dd4052cb686bef4375b7877b00c33610dfa84fd9fb409",
+            "nativeLiveAfterUpload": true,
+            "deletes": [
+              {
+                "whileContextLost": false,
+                "nativeLiveBefore": true,
+                "nativeLiveAfter": false,
+                "explicitNativeDelete": true,
+                "contextGeneration": 0
+              }
+            ]
+          }
+        ]
+      },
+      "unmounted": {
+        "created": 148,
+        "explicitDeleted": 148,
+        "contextGeneration": 0,
+        "nativeAlive": 0,
+        "preForceLoss": [
+          {
+            "created": 148,
+            "explicitDeleted": 148,
+            "nativeAlive": 0,
+            "nativeAliveBytes": 0
+          }
+        ],
+        "roomCandidates": [
+          {
+            "bufferId": 7,
+            "floatCount": 96,
+            "byteLength": 384,
+            "sha256": "54251af5a0b540b22c2dd4052cb686bef4375b7877b00c33610dfa84fd9fb409",
+            "nativeLiveAfterUpload": true,
+            "deletes": [
+              {
+                "whileContextLost": false,
+                "nativeLiveBefore": true,
+                "nativeLiveAfter": false,
+                "explicitNativeDelete": true,
+                "contextGeneration": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "quality": "low",
+      "defaultRetired": {
+        "created": 166,
+        "explicitDeleted": 166,
+        "contextGeneration": 0,
+        "nativeAlive": 0,
+        "preForceLoss": [
+          {
+            "created": 166,
+            "explicitDeleted": 166,
+            "nativeAlive": 0,
+            "nativeAliveBytes": 0
+          }
+        ],
+        "roomCandidates": [
+          {
+            "bufferId": 7,
+            "floatCount": 96,
+            "byteLength": 384,
+            "sha256": "54251af5a0b540b22c2dd4052cb686bef4375b7877b00c33610dfa84fd9fb409",
+            "nativeLiveAfterUpload": true,
+            "deletes": [
+              {
+                "whileContextLost": false,
+                "nativeLiveBefore": true,
+                "nativeLiveAfter": false,
+                "explicitNativeDelete": true,
+                "contextGeneration": 0
+              }
+            ]
+          }
+        ]
+      },
+      "unmounted": {
+        "created": 148,
+        "explicitDeleted": 148,
+        "contextGeneration": 0,
+        "nativeAlive": 0,
+        "preForceLoss": [
+          {
+            "created": 148,
+            "explicitDeleted": 148,
+            "nativeAlive": 0,
+            "nativeAliveBytes": 0
+          }
+        ],
+        "roomCandidates": [
+          {
+            "bufferId": 7,
+            "floatCount": 96,
+            "byteLength": 384,
+            "sha256": "54251af5a0b540b22c2dd4052cb686bef4375b7877b00c33610dfa84fd9fb409",
+            "nativeLiveAfterUpload": true,
+            "deletes": [
+              {
+                "whileContextLost": false,
+                "nativeLiveBefore": true,
+                "nativeLiveAfter": false,
+                "explicitNativeDelete": true,
+                "contextGeneration": 0
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "restoredWater": [
+    {
+      "quality": "high",
+      "unmounted": {
+        "created": 145,
+        "explicitDeleted": 145,
+        "contextGeneration": 1,
+        "nativeAlive": 0,
+        "preForceLoss": [
+          {
+            "created": 145,
+            "explicitDeleted": 145,
+            "nativeAlive": 0,
+            "nativeAliveBytes": 0
+          }
+        ],
+        "roomCandidates": [
+          {
+            "bufferId": 7,
+            "floatCount": 96,
+            "byteLength": 384,
+            "sha256": "54251af5a0b540b22c2dd4052cb686bef4375b7877b00c33610dfa84fd9fb409",
+            "nativeLiveAfterUpload": true,
+            "deletes": [
+              {
+                "whileContextLost": false,
+                "nativeLiveBefore": true,
+                "nativeLiveAfter": false,
+                "explicitNativeDelete": true,
+                "contextGeneration": 0
+              }
+            ]
+          },
+          {
+            "bufferId": 153,
+            "floatCount": 96,
+            "byteLength": 384,
+            "sha256": "54251af5a0b540b22c2dd4052cb686bef4375b7877b00c33610dfa84fd9fb409",
+            "nativeLiveAfterUpload": true,
+            "deletes": [
+              {
+                "whileContextLost": false,
+                "nativeLiveBefore": true,
+                "nativeLiveAfter": false,
+                "explicitNativeDelete": true,
+                "contextGeneration": 1
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "quality": "low",
+      "unmounted": {
+        "created": 145,
+        "explicitDeleted": 145,
+        "contextGeneration": 1,
+        "nativeAlive": 0,
+        "preForceLoss": [
+          {
+            "created": 145,
+            "explicitDeleted": 145,
+            "nativeAlive": 0,
+            "nativeAliveBytes": 0
+          }
+        ],
+        "roomCandidates": [
+          {
+            "bufferId": 7,
+            "floatCount": 96,
+            "byteLength": 384,
+            "sha256": "54251af5a0b540b22c2dd4052cb686bef4375b7877b00c33610dfa84fd9fb409",
+            "nativeLiveAfterUpload": true,
+            "deletes": [
+              {
+                "whileContextLost": false,
+                "nativeLiveBefore": true,
+                "nativeLiveAfter": false,
+                "explicitNativeDelete": true,
+                "contextGeneration": 0
+              }
+            ]
+          },
+          {
+            "bufferId": 153,
+            "floatCount": 96,
+            "byteLength": 384,
+            "sha256": "54251af5a0b540b22c2dd4052cb686bef4375b7877b00c33610dfa84fd9fb409",
+            "nativeLiveAfterUpload": true,
+            "deletes": [
+              {
+                "whileContextLost": false,
+                "nativeLiveBefore": true,
+                "nativeLiveAfter": false,
+                "explicitNativeDelete": true,
+                "contextGeneration": 1
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "restoredJade": [
+    {
+      "quality": "high",
+      "stopped": {
+        "created": 156,
+        "explicitDeleted": 156,
+        "contextGeneration": 1,
+        "nativeAlive": 0,
+        "preForceLoss": [
+          {
+            "created": 156,
+            "explicitDeleted": 156,
+            "nativeAlive": 0,
+            "nativeAliveBytes": 0
+          }
+        ],
+        "roomCandidates": [
+          {
+            "bufferId": 7,
+            "floatCount": 96,
+            "byteLength": 384,
+            "sha256": "54251af5a0b540b22c2dd4052cb686bef4375b7877b00c33610dfa84fd9fb409",
+            "nativeLiveAfterUpload": true,
+            "deletes": [
+              {
+                "whileContextLost": false,
+                "nativeLiveBefore": true,
+                "nativeLiveAfter": false,
+                "explicitNativeDelete": true,
+                "contextGeneration": 0
+              }
+            ]
+          },
+          {
+            "bufferId": 165,
+            "floatCount": 96,
+            "byteLength": 384,
+            "sha256": "54251af5a0b540b22c2dd4052cb686bef4375b7877b00c33610dfa84fd9fb409",
+            "nativeLiveAfterUpload": true,
+            "deletes": [
+              {
+                "whileContextLost": false,
+                "nativeLiveBefore": true,
+                "nativeLiveAfter": false,
+                "explicitNativeDelete": true,
+                "contextGeneration": 1
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "quality": "low",
+      "stopped": {
+        "created": 156,
+        "explicitDeleted": 156,
+        "contextGeneration": 1,
+        "nativeAlive": 0,
+        "preForceLoss": [
+          {
+            "created": 156,
+            "explicitDeleted": 156,
+            "nativeAlive": 0,
+            "nativeAliveBytes": 0
+          }
+        ],
+        "roomCandidates": [
+          {
+            "bufferId": 7,
+            "floatCount": 96,
+            "byteLength": 384,
+            "sha256": "54251af5a0b540b22c2dd4052cb686bef4375b7877b00c33610dfa84fd9fb409",
+            "nativeLiveAfterUpload": true,
+            "deletes": [
+              {
+                "whileContextLost": false,
+                "nativeLiveBefore": true,
+                "nativeLiveAfter": false,
+                "explicitNativeDelete": true,
+                "contextGeneration": 0
+              }
+            ]
+          },
+          {
+            "bufferId": 165,
+            "floatCount": 96,
+            "byteLength": 384,
+            "sha256": "54251af5a0b540b22c2dd4052cb686bef4375b7877b00c33610dfa84fd9fb409",
+            "nativeLiveAfterUpload": true,
+            "deletes": [
+              {
+                "whileContextLost": false,
+                "nativeLiveBefore": true,
+                "nativeLiveAfter": false,
+                "explicitNativeDelete": true,
+                "contextGeneration": 1
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "nativeErrors": 0,
+  "limits": [
+    "Earlier166/165 failure lacks old bufferData and pre-unmount native liveness; it is not described as measured96/384 or live after context loss",
+    "Context-loss invalidation is distinguished from explicit deletion; only current valid generations are required to delete explicitly"
+  ]
+}

@@ -19,4 +19,6 @@
 
 현재 파일은 검증된 구현의 첫 보존 단위입니다. 실제 빌드 Worker의 React UI와 배포 상태는 후속 증거로 추가합니다. 이 캡처는 hosted 로그인 화면이나 물리 GPU 성능 인증이 아닙니다. 덩굴은 짧은 경로이며 이슬 합쳐짐/분리 낙하와 壬 물보라는 미구현입니다.
 
-최종 [실제 빌드 Worker UI](worker/README.md)는 17/17 조건·44 PNG, 같은 빌드의 은하 입장 회귀는 8/8 통과했습니다. 투명 출력·불꽃 픽셀·옥 복구는 [alpha 보정 기록](alpha-compositing.md)에 실패/실험과 최종 통과를 구분해 보존했습니다. 최신 대상 lint는 오류 0, 기존 Canvas img 경고 1이며 전체 저장소 lint 통과라고 주장하지 않습니다. 배포는 이 기록을 먼저 비공개 원격에 보존한 뒤 기존 owner-only Site에서 별도로 수행합니다.
+최종 [실제 빌드 Worker UI](worker/README.md)는 19/19 조건·44 PNG, 같은 빌드의 은하 입장 회귀는 8/8 통과했습니다. 투명 출력·불꽃 픽셀·옥 복구는 [alpha 보정 기록](alpha-compositing.md)에 실패/실험과 최종 통과를 구분해 보존했습니다. 최신 대상 lint는 오류 0, 기존 Canvas img 경고 1이며 전체 저장소 lint 통과라고 주장하지 않습니다. 배포는 이 기록을 먼저 비공개 원격에 보존한 뒤 기존 owner-only Site에서 별도로 수행합니다.
+
+최신 [원본 보존 대조](preservation-final.json)는 v30 기존 407개 중 396개 그대로, 승인된 변경 11개와 원본 asset/public 171개 그대로를 확인합니다. 공유 RoomEnvironment 정리 수정 후 [실측 native 증거](room-environment-cleanup/native-final.json)와 Worker19/19·동일 빌드 진입8/8을 추가했고, 이전 Worker17/17은 [이력](worker-pre-room-cleanup/README.md)에 따로 보존합니다.

@@ -32,16 +32,26 @@ const sourceHashes = Object.fromEntries(await Promise.all([
   'lib/planet/surface-fissure-sand.ts', 'lib/planet/surface-woody-branches.ts',
   'lib/planet/affine-instance-normals.ts',
   'lib/planet/context-loss-resources.ts',
+  'lib/planet/scene-environment.ts',
   'lib/planet/spirit-zodiac-pet.ts', 'public/models/zodiac-pets/manifest.json',
   'assets/source-reference/saju-b-evolving-light-v002/runtime/saju-jade-evolution.glsl',
   'assets/source-reference/saju-b-evolving-light-v002/runtime/saju-jade-evolution.mjs',
 ].map(async file => [file, sha(await fs.readFile(path.join(builtRoot, file)))])));
 const require = createRequire(path.join(root, 'package.json'));
+const { RoomEnvironment } = await import(pathToFileURL(require.resolve('three/addons/environments/RoomEnvironment.js')).href);
+const referenceRoom = new RoomEnvironment();
+const roomBoxes = referenceRoom.children.find(object => object.isInstancedMesh);
+const roomMatrixReference = { floatCount: roomBoxes.instanceMatrix.array.length,
+  byteLength: roomBoxes.instanceMatrix.array.byteLength, sha256: sha(new Uint8Array(roomBoxes.instanceMatrix.array.buffer)),
+  installedRoomSourceSha256: sha(await fs.readFile(require.resolve('three/addons/environments/RoomEnvironment.js'))) };
+assert.equal(roomMatrixReference.floatCount, 96); assert.equal(roomMatrixReference.byteLength, 384);
+roomBoxes.dispose(); referenceRoom.dispose();
 const { Miniflare } = require('miniflare');
 const { chromium } = await import(pathToFileURL(process.env.SAJU_QA_PLAYWRIGHT_PATH ||
   '/opt/codex/runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/index.mjs').href);
 const checks = [], cases = [], jadeCases = [], images = [], lifecycleObservations = [], opticalBaselines = [], fireBlendingObservations = [], errors = [], outbound = [],
   servedAssets = new Map(), servedBodyHashes = new Set(), servedJadeAssets = new Map();
+const normalBufferObservations = [];
 // This selected side frame passed before the old run later failed context
 // restoration. Its full report, exact harness and three fire PNGs are retained
 // in probes/original-premultiplied-fire-reference; this is no whole-run approval.
@@ -91,6 +101,7 @@ const initializeClock = () => {
       const objectId = object => { if (!object) return null; if (!objectIds.has(object)) objectIds.set(object, ++objectSequence); return objectIds.get(object); };
       const record = { gl, canvas: this, draws: 0, skippedDraws: 0, nativeBody: [], glDiagnostics: [],
         bodyPasses: [], blendedPasses: [],
+        buffers: [], bufferLosses: [],
         contextId: records.length + 1, contextGeneration: 0, objectId, traceGl: false }; records.push(record);
       const getError = gl.getError.bind(gl);
       const captureError = (operation, args = []) => { const error = getError();
@@ -98,6 +109,62 @@ const initializeClock = () => {
           contextId: record.contextId, contextGeneration: record.contextGeneration,
           args: args.map(value => value && typeof value === 'object' ? { type: value.constructor?.name, id: objectId(value) } : value),
           stack: new Error('GL error boundary: ' + operation).stack }); };
+      // Installed as getContext returns, before the renderer's first PMREM bake.
+      // JS handle retention/context loss is never counted as explicit deletion.
+      const bufferRows = new Map(), boundBuffers = new Map();
+      const nativeIsBuffer = gl.isBuffer.bind(gl), nativeCreateBuffer = gl.createBuffer.bind(gl);
+      const nativeBindBuffer = gl.bindBuffer.bind(gl), nativeBufferData = gl.bufferData.bind(gl), nativeDeleteBuffer = gl.deleteBuffer.bind(gl);
+      gl.createBuffer = () => {
+        const buffer = nativeCreateBuffer();
+        if (buffer) { const row = { buffer, id: objectId(buffer), contextGeneration: record.contextGeneration,
+          byteLength: 0, uploads: [], deletes: [], creationStack: new Error('Native createBuffer before PMREM/body').stack };
+          bufferRows.set(buffer, row); record.buffers.push(row); }
+        return buffer;
+      };
+      gl.bindBuffer = (target, buffer) => { const result = nativeBindBuffer(target, buffer); boundBuffers.set(target, buffer); return result; };
+      gl.bufferData = (target, data, usage, ...rest) => {
+        const result = nativeBufferData(target, data, usage, ...rest), row = bufferRows.get(boundBuffers.get(target));
+        if (row) {
+          const byteLength = typeof data === 'number' ? data : rest[1] !== undefined ? rest[1] * data.BYTES_PER_ELEMENT :
+            data.byteLength - (rest[0] ?? 0) * (data.BYTES_PER_ELEMENT ?? 1);
+          row.byteLength = byteLength;
+          row.uploads.push({ target, usage, byteLength, type: data?.constructor?.name ?? typeof data,
+            floatCount: data instanceof Float32Array ? data.length : null,
+            values: data instanceof Float32Array && data.length === 96 ? [...data] : null,
+            nativeLiveAfterUpload: nativeIsBuffer(row.buffer), contextGeneration: record.contextGeneration });
+        }
+        return result;
+      };
+      gl.deleteBuffer = buffer => {
+        captureError('before native deleteBuffer');
+        const row = bufferRows.get(buffer), lost = gl.isContextLost(), before = lost ? null : nativeIsBuffer(buffer);
+        const result = nativeDeleteBuffer(buffer), after = lost ? null : nativeIsBuffer(buffer);
+        captureError('native deleteBuffer with liveness proof', [buffer]);
+        if (row) row.deletes.push({ whileContextLost: lost, nativeLiveBefore: before, nativeLiveAfter: after,
+          explicitNativeDelete: !lost && before === true && after === false,
+          contextGeneration: record.contextGeneration, stack: new Error('Native deleteBuffer owner').stack });
+        return result;
+      };
+      const nativeGetExtension = gl.getExtension.bind(gl), lossExtensions = new WeakSet();
+      gl.getExtension = name => {
+        const extension = nativeGetExtension(name);
+        if (name === 'WEBGL_lose_context' && extension && !lossExtensions.has(extension)) {
+          const nativeLose = extension.loseContext.bind(extension);
+          extension.loseContext = () => {
+            captureError('before QA pre-loss native buffer liveness');
+            const current = record.buffers.filter(row => row.contextGeneration === record.contextGeneration);
+            const nativeAlive = current.filter(row => nativeIsBuffer(row.buffer));
+            record.bufferLosses.push({ reason: record.nextLossReason ?? 'normal-retirement', contextGeneration: record.contextGeneration,
+              created: current.length, explicitDeleted: current.filter(row => row.deletes.some(deletion => deletion.explicitNativeDelete)).length,
+              nativeAlive: nativeAlive.map(row => ({ id: row.id, byteLength: row.byteLength })),
+              nativeAliveBytes: nativeAlive.reduce((sum, row) => sum + row.byteLength, 0) });
+            record.nextLossReason = undefined;
+            return nativeLose();
+          };
+          lossExtensions.add(extension);
+        }
+        return extension;
+      };
       const getUniform = gl.getUniform.bind(gl);
       gl.getUniform = (...args) => { captureError('before QA getUniform'); const result = getUniform(...args); captureError('QA getUniform'); return result; };
       const readPixels = gl.readPixels.bind(gl);
@@ -162,6 +229,18 @@ const initializeClock = () => {
     },
     advance(count, delta) { for (let i = 0; i < count; i++) this.step(delta, i === count - 1); },
     advanceNative(count, delta) { for (let i = 0; i < count; i++) this.step(delta, true); },
+    async bufferState(record) {
+      const hash = async values => [...new Uint8Array(await crypto.subtle.digest('SHA-256', new Float32Array(values)))].map(byte => byte.toString(16).padStart(2, '0')).join('');
+      const roomCandidates = [];
+      for (const row of record.buffers) for (const upload of row.uploads) if (upload.values)
+        roomCandidates.push({ bufferId: row.id, contextGeneration: row.contextGeneration, ...upload,
+          sha256: await hash(upload.values), deletes: row.deletes });
+      const current = record.buffers.filter(row => row.contextGeneration === record.contextGeneration);
+      return { contextId: record.contextId, contextGeneration: record.contextGeneration, contextLost: record.gl.isContextLost(),
+        created: current.length, explicitDeleted: current.filter(row => row.deletes.some(deletion => deletion.explicitNativeDelete)).length,
+        nativeAlive: current.filter(row => record.gl.isBuffer(row.buffer)).map(row => ({ id: row.id, byteLength: row.byteLength })),
+        losses: [...record.bufferLosses], roomCandidates, glDiagnostics: [...record.glDiagnostics] };
+    },
   };
 };
 
@@ -478,6 +557,33 @@ async function fireBlendingProof(page, state, quality) {
     assert.equal(image.pngSHA256, originalFireReference.pngSha256, 'Whole fire side PNG must match the retained original frame');
   }
 }
+function validRoomMatrix(state) {
+  const matches = state.roomCandidates.filter(upload => upload.sha256 === roomMatrixReference.sha256 &&
+    upload.contextGeneration === state.contextGeneration);
+  assert.equal(matches.length, 1, 'Exactly one source-matching Room instance matrix must upload per context generation');
+  const room = matches[0]; assert.equal(room.type, 'Float32Array'); assert.equal(room.floatCount, 96); assert.equal(room.byteLength, 384);
+  assert.equal(room.nativeLiveAfterUpload, true);
+  assert.equal(room.deletes.length, 1); assert.equal(room.deletes[0].explicitNativeDelete, true);
+  assert.equal(room.deletes[0].whileContextLost, false);
+  assert.equal(room.deletes[0].nativeLiveBefore, true); assert.equal(room.deletes[0].nativeLiveAfter, false);
+  return room;
+}
+function validNormalRetirement(before, retired) {
+  assert.equal(before.contextLost, false); assert(before.nativeAlive.length > 0, 'Normal cleanup begins with actual live body/effect buffers');
+  assert.equal(retired.losses.length, 1);
+  validCurrentNormalRetirement(retired);
+  validRoomMatrix(before);
+}
+function validCurrentNormalRetirement(retired) {
+  assert.equal(retired.contextLost, true); assert.equal(retired.nativeAlive.length, 0);
+  const boundaries = retired.losses.filter(loss => loss.contextGeneration === retired.contextGeneration && loss.reason === 'normal-retirement');
+  assert.equal(boundaries.length, 1); const boundary = boundaries[0];
+  assert.equal(boundary.nativeAlive.length, 0, 'No live GPU buffer may be hidden by the later forced context loss');
+  assert.equal(boundary.nativeAliveBytes, 0); assert.equal(boundary.created, boundary.explicitDeleted);
+  assert.equal(retired.created, retired.explicitDeleted);
+  assert.equal(retired.glDiagnostics.length, 0, JSON.stringify(retired.glDiagnostics.slice(0, 3)));
+  validRoomMatrix(retired);
+}
 try {
   mf = new Miniflare({ rootPath: builtRoot, modulesRoot: 'dist/server',
     modules: [entry, ...(await walk(path.join(builtRoot, 'dist/server'))).filter(file => file !== entry)].map(file => ({ type: 'ESModule', path: file })),
@@ -513,6 +619,25 @@ try {
     try {
       await page.goto(origin + '/planet?view=spirit', { waitUntil: 'networkidle' }); await ready(page, '을축');
       await page.locator('summary').filter({ hasText: '조합을 직접 둘러보기' }).evaluate(element => element.click());
+      await check(quality + ': pre-PMREM Room buffer and normal React stem-switch/unmount explicitly release every GPU buffer', async () => {
+        await page.evaluate(() => { window.__normalDefault = window.__spiritWorkerQa.view.record; window.__spiritWorkerQa.view.renderRef.current(); });
+        const initial = await page.evaluate(snapshot); valid(initial, '을축', quality);
+        const defaultBefore = await page.evaluate(() => window.__spiritWorkerQa.bufferState(window.__normalDefault)); validRoomMatrix(defaultBefore);
+        await selectDay(page, '갑자');
+        const defaultRetired = await page.evaluate(() => window.__spiritWorkerQa.bufferState(window.__normalDefault));
+        validNormalRetirement(defaultBefore, defaultRetired);
+        console.log(JSON.stringify({ stage: 'first-normal-native-buffer-cleanup', quality, defaultStem: '乙',
+          created: defaultRetired.created, explicitDeleted: defaultRetired.explicitDeleted,
+          nativeAliveBeforeLoss: defaultRetired.losses[0].nativeAlive.length, roomMatrix: validRoomMatrix(defaultRetired) }));
+        await page.evaluate(() => { window.__normalUnmount = window.__spiritWorkerQa.view.record; window.__spiritWorkerQa.view.renderRef.current(); });
+        const switched = await page.evaluate(snapshot); valid(switched, '갑자', quality);
+        const switchBefore = await page.evaluate(() => window.__spiritWorkerQa.bufferState(window.__normalUnmount)); validRoomMatrix(switchBefore);
+        await button(page, '같은 나의 행성 보기'); await page.waitForSelector('[data-scene="spirit"]', { state: 'detached' });
+        const unmounted = await page.evaluate(() => window.__spiritWorkerQa.bufferState(window.__normalUnmount));
+        validNormalRetirement(switchBefore, unmounted);
+        normalBufferObservations.push({ quality, initial, defaultBefore, defaultRetired, switched, switchBefore, unmounted });
+        await button(page, '같은 나의 정령 보기'); await ready(page, '갑자');
+      });
       for (const day of probeOnly ? ['갑자'] : contextProbe ? ['계유'] : additionalProbe ? ['병인', '계유'] : ['갑자', '을축', '병인', '정묘', '무진', '계유']) await check(day + ' ' + quality + ': exact Worker production controls and attached motion', async () => {
         await page.getByLabel('정령과 동반자 · 일주').evaluate((select, day) => { select.value = day; select.dispatchEvent(new Event('change', { bubbles: true })); }, day);
         await ready(page, day); await button(page, '정령 정면과 움직임 초기화');
@@ -563,6 +688,7 @@ try {
       await check(quality + ': production WebGL context loss/restoration and UI unmount stop GPU work', async () => {
         const before = await page.evaluate(() => window.__spiritWorkerQa.view.record.draws);
         await page.evaluate(() => { const { renderer } = window.__spiritWorkerQa.view;
+          window.__spiritWorkerQa.view.record.nextLossReason = 'intentional-recovery-test';
           window.__workerLoss = renderer.getContext().getExtension('WEBGL_lose_context'); window.__workerLoss.loseContext(); });
         await page.waitForSelector('[data-scene="spirit"][data-scene-state="fallback"]');
         await page.evaluate(() => window.__spiritWorkerQa.advance(3, 50)); assert.equal(await page.evaluate(() => window.__spiritWorkerQa.view.record.draws), before);
@@ -574,6 +700,8 @@ try {
           glError: restored.glError, diagnostics: restored.glDiagnostics, rendererProgramId: restored.rendererProgramId,
           native: restored.native }));
         valid(restored, '계유', quality);
+        const restoredBuffers = await page.evaluate(() => window.__spiritWorkerQa.bufferState(window.__spiritWorkerQa.view.record));
+        validRoomMatrix(restoredBuffers); Object.assign(lifecycleObservations.at(-1), { restoredBuffers });
         // GPU cleanup under loss must preserve the CPU controllers and original
         // scene: a new actual UI tap still animates the body and its attachments.
         await tap(page); await button(page, '정령 움직임 재생');
@@ -592,6 +720,8 @@ try {
           return { draws: record.draws, contextLost: record.gl.isContextLost(), connected: record.canvas.isConnected,
             children: window.__spiritWorkerQa.view.spirit.group.children.length, glDiagnostics: [...record.glDiagnostics] }; });
         lifecycleObservations.at(-1).unmounted = stopped;
+        const unmountedBuffers = await page.evaluate(() => window.__spiritWorkerQa.bufferState(window.__spiritWorkerQa.view.record));
+        validCurrentNormalRetirement(unmountedBuffers); Object.assign(lifecycleObservations.at(-1), { unmountedBuffers });
         await page.evaluate(() => window.__spiritWorkerQa.advance(8, 50));
         assert.equal(await page.evaluate(() => window.__spiritWorkerQa.view.record.draws), stopped.draws);
         assert(stopped.contextLost && !stopped.connected); assert.equal(stopped.children, 0);
@@ -605,12 +735,14 @@ try {
         const moving = await page.evaluate(snapshot); validJade(moving, quality); assert(moving.time > .59);
         assert.notEqual(moving.pixels, initial.pixels); await button(page, '정령 움직임 일시정지');
         const beforeDraws = await page.evaluate(() => window.__spiritWorkerQa.view.record.draws);
-        await page.evaluate(() => { window.__jadeLoss = window.__spiritWorkerQa.view.renderer.getContext().getExtension('WEBGL_lose_context'); window.__jadeLoss.loseContext(); });
+        await page.evaluate(() => { window.__spiritWorkerQa.view.record.nextLossReason = 'intentional-jade-recovery-test';
+          window.__jadeLoss = window.__spiritWorkerQa.view.renderer.getContext().getExtension('WEBGL_lose_context'); window.__jadeLoss.loseContext(); });
         await page.waitForSelector('[data-scene="spirit"][data-scene-state="fallback"]');
         await page.evaluate(() => window.__spiritWorkerQa.advance(3, 50));
         assert.equal(await page.evaluate(() => window.__spiritWorkerQa.view.record.draws), beforeDraws);
         await page.evaluate(() => window.__jadeLoss.restoreContext()); await page.waitForSelector('[data-scene="spirit"][data-scene-state="ready"]');
         await page.evaluate(bindView); const restored = await page.evaluate(snapshot); validJade(restored, quality);
+        const restoredBuffers = await page.evaluate(() => window.__spiritWorkerQa.bufferState(window.__spiritWorkerQa.view.record)); validRoomMatrix(restoredBuffers);
         assert.equal(restored.time, moving.time); assert.deepEqual(restored.jade, moving.jade);
         await button(page, '정령 움직임 재생'); await page.evaluate(() => window.__spiritWorkerQa.advance(36, 1000 / 60));
         const resumed = await page.evaluate(snapshot); validJade(resumed, quality); assert(resumed.time > restored.time + .59);
@@ -620,7 +752,8 @@ try {
         const stopped = await page.evaluate(() => { const { record, spirit } = window.__spiritWorkerQa.view;
           return { draws: record.draws, contextLost: record.gl.isContextLost(), connected: record.canvas.isConnected,
             children: spirit.group.children.length, glDiagnostics: [...record.glDiagnostics] }; });
-        jadeCases.push({ quality, initial, moving, restored, resumed, stopped, assetSources: jadeAssetSources });
+        const stoppedBuffers = await page.evaluate(() => window.__spiritWorkerQa.bufferState(window.__spiritWorkerQa.view.record)); validCurrentNormalRetirement(stoppedBuffers);
+        jadeCases.push({ quality, initial, moving, restored, resumed, stopped, restoredBuffers, stoppedBuffers, assetSources: jadeAssetSources });
         await page.evaluate(() => window.__spiritWorkerQa.advance(8, 50));
         assert.equal(await page.evaluate(() => window.__spiritWorkerQa.view.record.draws), stopped.draws);
         assert(stopped.contextLost && !stopped.connected); assert.equal(stopped.children, 0);
@@ -648,6 +781,7 @@ finally {
     harnessSha256: harnessSHA256,
     passed: checks.filter(check => check.status === 'PASS').length, failed: checks.filter(check => check.status === 'FAIL').length,
     browser: browser ? await browser.version() : null, checks, cases, jadeCases, images, lifecycleObservations, opticalBaselines, fireBlendingObservations,
+    normalBufferObservations, roomMatrixReference,
     servedClientJS: Object.fromEntries(servedAssets), jadeAssetSources, servedJadeAssets: Object.fromEntries(servedJadeAssets), databaseCounts, errors, outbound,
     limits: ['Exact local production dist/server Worker plus its dist/client assets, disposable synthetic D1; no hosted authenticated session or real user data.',
       'Chromium SwiftShader with native selected-frame draws; no physical mobile GPU or suspension certification.',

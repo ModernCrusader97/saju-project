@@ -30,3 +30,5 @@ Critical/Important issue. Root type/build/targeted lint passed.
 New pre-environment native tracking, normal React switch/unmount and final exact
 Worker checks are required before publication. Their result is recorded in the
 final Worker evidence; the older pre-fix failures remain immutable evidence.
+
+The final exact Worker passes **19/19** checks. [Measured native proof](room-environment-cleanup/native-final.json) captures the actual source-matching 96-float / 384-byte upload before PMREM, live→explicit-delete→not-live while valid, and normal 166/166 (乙), 148/148 (甲) plus restored145/145 (water),156/156 (jade), in both qualities. All pre-force-loss retirement boundaries have native live buffers/bytes zero. The final report and all44 PNGs are bound to Worker `a1b9ad766d2532d3fc351fd2fa01ebbf6efe9aad1822dd8f3aa864a26d594955`; no rendering-source change followed this check. Same-build Galaxy8 also passes.
