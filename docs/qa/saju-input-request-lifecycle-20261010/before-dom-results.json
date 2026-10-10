@@ -1,0 +1,174 @@
+{
+  "basis": "61f1a3dbcc3e4d991198b64e0a624c208ccf8b58",
+  "phase": "before",
+  "applicationSourceSHA256": "b1149546b91789a14c86b8d6473cf920bac35500c22ac5d954314ad435274cea",
+  "passed": 1,
+  "failed": 7,
+  "checks": [
+    {
+      "name": "Escape releases the pending request and progress timer",
+      "status": "FAIL",
+      "error": "The expression evaluated to a falsy value:\n\n  assert(request.options.signal?.aborted)\n"
+    },
+    {
+      "name": "reopening preserves the draft and shows an editable form",
+      "status": "FAIL",
+      "error": "The expression evaluated to a falsy value:\n\n  assert(v.input())\n"
+    },
+    {
+      "name": "late failed replies after close have no alert",
+      "status": "FAIL",
+      "error": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   '합성 늦은 오류'\n+ ]\n- []\n"
+    },
+    {
+      "name": "late success after close has no result or second close callback",
+      "status": "FAIL",
+      "error": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'stale'\n+ ]\n- []\n"
+    },
+    {
+      "name": "a superseded reply cannot finish the current loading state",
+      "status": "FAIL",
+      "error": "The reopened modal must show the editable form"
+    },
+    {
+      "name": "active failure restores the draft and allows manual successful retry",
+      "status": "PASS"
+    },
+    {
+      "name": "unmount cancels work and ignores an abort-insensitive late rejection",
+      "status": "FAIL",
+      "error": "The expression evaluated to a falsy value:\n\n  assert(request.options.signal?.aborted)\n"
+    },
+    {
+      "name": "Strict Mode preserves cancellation and a fresh reopen",
+      "status": "FAIL",
+      "error": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'discarded'\n+ ]\n- []\n"
+    }
+  ],
+  "observations": [
+    {
+      "name": "Escape releases the pending request and progress timer",
+      "alerts": [],
+      "results": [],
+      "closes": 1,
+      "pendingTimers": 1,
+      "requests": [
+        {
+          "aborted": false,
+          "category": "overall"
+        }
+      ]
+    },
+    {
+      "name": "reopening preserves the draft and shows an editable form",
+      "alerts": [],
+      "results": [],
+      "closes": 1,
+      "pendingTimers": 1,
+      "requests": [
+        {
+          "aborted": false,
+          "category": "overall"
+        }
+      ]
+    },
+    {
+      "name": "late failed replies after close have no alert",
+      "alerts": [
+        "합성 늦은 오류"
+      ],
+      "results": [],
+      "closes": 1,
+      "pendingTimers": 0,
+      "requests": [
+        {
+          "aborted": false,
+          "category": "overall"
+        }
+      ]
+    },
+    {
+      "name": "late success after close has no result or second close callback",
+      "alerts": [],
+      "results": [
+        "stale"
+      ],
+      "closes": 2,
+      "pendingTimers": 0,
+      "requests": [
+        {
+          "aborted": false,
+          "category": "overall"
+        }
+      ]
+    },
+    {
+      "name": "a superseded reply cannot finish the current loading state",
+      "alerts": [],
+      "results": [],
+      "closes": 1,
+      "pendingTimers": 1,
+      "requests": [
+        {
+          "aborted": false,
+          "category": "overall"
+        }
+      ]
+    },
+    {
+      "name": "active failure restores the draft and allows manual successful retry",
+      "alerts": [
+        "합성 현재 오류"
+      ],
+      "results": [
+        "retry"
+      ],
+      "closes": 1,
+      "pendingTimers": 0,
+      "requests": [
+        {
+          "aborted": false,
+          "category": "overall"
+        },
+        {
+          "aborted": false,
+          "category": "overall"
+        }
+      ]
+    },
+    {
+      "name": "unmount cancels work and ignores an abort-insensitive late rejection",
+      "alerts": [
+        "네트워크 오류가 발생했습니다."
+      ],
+      "results": [],
+      "closes": 0,
+      "pendingTimers": 0,
+      "requests": [
+        {
+          "aborted": false,
+          "category": "overall"
+        }
+      ]
+    },
+    {
+      "name": "Strict Mode preserves cancellation and a fresh reopen",
+      "alerts": [],
+      "results": [
+        "discarded"
+      ],
+      "closes": 2,
+      "pendingTimers": 0,
+      "requests": [
+        {
+          "aborted": false,
+          "category": "overall"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Actual React modal and response reader; progress time and HTTP replies are controlled.",
+    "Transport intentionally ignores abort. Callback suppression is tested separately from native browser abort. No server write executes."
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "basis": "61f1a3dbcc3e4d991198b64e0a624c208ccf8b58",
+  "phase": "before",
+  "applicationSourceSHA256": "b1149546b91789a14c86b8d6473cf920bac35500c22ac5d954314ad435274cea",
+  "passed": 2,
+  "failed": 2,
+  "checks": [
+    {
+      "name": "closing pending input prevents a late error alert in the same document",
+      "status": "FAIL",
+      "error": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   '합성 늦은 실패'\n+ ]\n- []\n"
+    },
+    {
+      "name": "reopening pending input restores its draft and a fresh request",
+      "status": "FAIL",
+      "error": "The canceled request must not keep the reopened modal in its loading state"
+    },
+    {
+      "name": "an active failed request still permits explicit successful retry",
+      "status": "PASS"
+    },
+    {
+      "name": "no page errors or outbound requests occur",
+      "status": "PASS"
+    }
+  ],
+  "observations": [
+    {
+      "scenario": "late failure after Escape",
+      "requests": [
+        {
+          "aborted": false,
+          "done": true,
+          "hasSignal": false,
+          "category": "overall"
+        }
+      ],
+      "dialogs": [
+        "합성 늦은 실패"
+      ],
+      "sameDocument": true
+    },
+    {
+      "scenario": "reopen a different category",
+      "inputCount": 0,
+      "requests": [
+        {
+          "aborted": false,
+          "done": false,
+          "hasSignal": false,
+          "category": "overall"
+        }
+      ]
+    },
+    {
+      "scenario": "active failure and manual retry",
+      "requests": [
+        {
+          "aborted": false,
+          "done": true,
+          "hasSignal": false,
+          "category": "overall"
+        },
+        {
+          "aborted": false,
+          "done": true,
+          "hasSignal": false,
+          "category": "overall"
+        }
+      ],
+      "dialogs": [
+        "합성 현재 실패"
+      ]
+    }
+  ],
+  "errors": [],
+  "outbound": [],
+  "limits": [
+    "Actual built home/modal and native pointer/keyboard events in Chromium; HTTP POST replies are controlled boundary fixtures.",
+    "No real /api/saju write or external AI request executes. Server persistence/rollback, hosted auth and other browsers are not tested."
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "basis": "61f1a3dbcc3e4d991198b64e0a624c208ccf8b58",
+  "productSource": "components/SajuInputModal.tsx",
+  "productSourceSHA256": "a01468f56a6ba7a2c32f73b11f4ad1dea7105e5605c2427a299bad7d132bcc4a",
+  "checks": {
+    "before": {
+      "dom": {
+        "passed": 1,
+        "failed": 7
+      },
+      "browser": {
+        "passed": 2,
+        "failed": 2
+      }
+    },
+    "after": {
+      "dom": {
+        "passed": 8,
+        "failed": 0
+      },
+      "browser": {
+        "passed": 4,
+        "failed": 0
+      }
+    }
+  },
+  "productionBuild": {
+    "completionObserved": true,
+    "log": "build.log.gz",
+    "afterBrowserUsedOwnFreshBuild": true
+  },
+  "visualInspection": [
+    "before-reopened.png",
+    "after-reopened.png"
+  ],
+  "scope": "Modal request ownership, cancellation and existing manual retry only",
+  "limits": [
+    "Client abort does not promise rollback of server work already started.",
+    "Synthetic POST boundary replies; no real writes or external AI calls.",
+    "Hosted authentication, server persistence, Safari, Firefox and physical devices were not tested."
+  ],
+  "typecheck": {
+    "command": "tsc --noEmit --incremental false",
+    "exitCode": 0,
+    "elapsedSeconds": 4.0
+  },
+  "scopedLint": {
+    "lintExitCode": 1,
+    "errors": 2,
+    "warnings": 3,
+    "baselineMessagesUnchanged": true,
+    "newQaMessages": 0
+  }
+}

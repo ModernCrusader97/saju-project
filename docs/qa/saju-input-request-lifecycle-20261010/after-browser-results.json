@@ -1,0 +1,78 @@
+{
+  "basis": "61f1a3dbcc3e4d991198b64e0a624c208ccf8b58",
+  "phase": "after",
+  "applicationSourceSHA256": "a01468f56a6ba7a2c32f73b11f4ad1dea7105e5605c2427a299bad7d132bcc4a",
+  "passed": 4,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "closing pending input prevents a late error alert in the same document",
+      "status": "PASS"
+    },
+    {
+      "name": "reopening pending input restores its draft and a fresh request",
+      "status": "PASS"
+    },
+    {
+      "name": "an active failed request still permits explicit successful retry",
+      "status": "PASS"
+    },
+    {
+      "name": "no page errors or outbound requests occur",
+      "status": "PASS"
+    }
+  ],
+  "observations": [
+    {
+      "scenario": "late failure after Escape",
+      "requests": [
+        {
+          "aborted": true,
+          "done": true,
+          "hasSignal": true,
+          "category": "overall"
+        }
+      ],
+      "dialogs": [],
+      "sameDocument": true
+    },
+    {
+      "scenario": "reopen a different category",
+      "inputCount": 1,
+      "requests": [
+        {
+          "aborted": true,
+          "done": true,
+          "hasSignal": true,
+          "category": "overall"
+        }
+      ]
+    },
+    {
+      "scenario": "active failure and manual retry",
+      "requests": [
+        {
+          "aborted": false,
+          "done": true,
+          "hasSignal": true,
+          "category": "overall"
+        },
+        {
+          "aborted": false,
+          "done": true,
+          "hasSignal": true,
+          "category": "overall"
+        }
+      ],
+      "dialogs": [
+        "합성 현재 실패"
+      ]
+    }
+  ],
+  "errors": [],
+  "outbound": [],
+  "limits": [
+    "Actual built home/modal and native pointer/keyboard events in Chromium; HTTP POST replies are controlled boundary fixtures.",
+    "No real /api/saju write or external AI request executes. Server persistence/rollback, hosted auth and other browsers are not tested."
+  ]
+}

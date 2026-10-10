@@ -3,7 +3,7 @@
 import { readApiResponse } from "@/lib/http-client";
 
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import { X, Sparkles, Loader2 } from "lucide-react";
 
 import { HOUR_PERIODS } from "@/lib/saju/input";
@@ -37,16 +37,40 @@ export default function SajuInputModal({
 
   const [loading, setLoading] = useState(false);
   const [loadingStep, setLoadingStep] = useState(0);
+  const [wasOpen, setWasOpen] = useState(isOpen);
+  const pendingRequest = useRef<{ controller: AbortController; timer: ReturnType<typeof setTimeout> } | null>(null);
+  if (wasOpen !== isOpen) {
+    setWasOpen(isOpen);
+    setLoading(false);
+    setLoadingStep(0);
+  }
+
+  const cancelRequest = useCallback(() => {
+    const request = pendingRequest.current;
+    if (!request) return;
+    pendingRequest.current = null;
+    request.controller.abort();
+    clearTimeout(request.timer);
+  }, []);
+  const handleClose = useCallback(() => {
+    cancelRequest();
+    onClose();
+  }, [cancelRequest, onClose]);
+
+  useEffect(() => {
+    if (!isOpen) return;
+    return cancelRequest;
+  }, [isOpen, cancelRequest]);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") onClose();
+      if (e.key === "Escape") handleClose();
     };
     if (isOpen) {
       window.addEventListener("keydown", handleKeyDown);
     }
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [isOpen, onClose]);
+  }, [isOpen, handleClose]);
 
   if (!isOpen) return null;
 
@@ -56,17 +80,23 @@ export default function SajuInputModal({
       alert("이름을 입력해주세요.");
       return;
     }
+    if (pendingRequest.current) return;
 
     setLoading(true);
     setLoadingStep(1); // 1. 만세력 사주팔자 계산 중
 
+    const controller = new AbortController();
     const timer = setTimeout(() => {
+      if (controller.signal.aborted) return;
       setLoadingStep(2); // 2. 도령 청명이가 비유로 풀어내는 중
     }, 900);
+    const request = { controller, timer };
+    pendingRequest.current = request;
 
     try {
       const res = await fetch("/api/saju", {
         method: "POST",
+        signal: controller.signal,
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           name: name.trim(),
@@ -84,6 +114,7 @@ export default function SajuInputModal({
       });
 
       const data = await readApiResponse(res);
+      if (controller.signal.aborted || pendingRequest.current !== request) return;
 
       if (data.success && data.fortune) {
         if (onSuccess) {
@@ -96,18 +127,21 @@ export default function SajuInputModal({
         alert(data.error || "풀이 중 문제가 발생했습니다.");
       }
     } catch (err: any) {
-      alert("네트워크 오류가 발생했습니다.");
+      if (!controller.signal.aborted) alert("네트워크 오류가 발생했습니다.");
     } finally {
       clearTimeout(timer);
-      setLoading(false);
-      setLoadingStep(0);
+      if (pendingRequest.current === request) {
+        pendingRequest.current = null;
+        setLoading(false);
+        setLoadingStep(0);
+      }
     }
   };
 
   return (
     <div
       className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/50 backdrop-blur-sm p-0 sm:p-4"
-      onClick={onClose}
+      onClick={handleClose}
     >
       <div
         className="w-full max-w-md bg-doryeong-ivory rounded-t-[32px] sm:rounded-[32px] shadow-2xl border border-doryeong-border flex flex-col max-h-[92vh] overflow-hidden animate-in slide-in-from-bottom duration-300"
@@ -124,7 +158,7 @@ export default function SajuInputModal({
             </h2>
           </div>
           <button
-            onClick={onClose}
+            onClick={handleClose}
             className="p-1 rounded-full text-doryeong-textMuted hover:bg-black/5 transition-colors"
           >
             <X className="h-6 w-6" />

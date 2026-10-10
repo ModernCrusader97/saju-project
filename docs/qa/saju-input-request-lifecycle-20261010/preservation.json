@@ -1,0 +1,15 @@
+{
+  "basis": "61f1a3dbcc3e4d991198b64e0a624c208ccf8b58",
+  "preexistingTrackedFiles": 571,
+  "byteIdenticalPreexistingFiles": 570,
+  "changedPreexistingFiles": [
+    "components/SajuInputModal.tsx"
+  ],
+  "jsxLayoutAndLabelsUnchangedExceptCloseBinding": true,
+  "postEndpointHeadersBodyUnchangedExceptAbortSignal": true,
+  "activeSuccessAndErrorResponseBranchUnchanged": true,
+  "qaSourceHashesMatchTestedBeforeAndAfter": true,
+  "originalKeyboardWipSHA256": "75ea6f5726ce41272841494c3a3316e3f4b88ea7c4888d71e21e981ee9030539",
+  "previousGalaxyCanvasSHA256": "37e92c3a8fc81fbcfd3343c706897bdb2112cc85f41341af37b98d69b18c7209",
+  "previousCopyPageSHA256": "ee5a07c7c1a7f2dbfd7d3ef4f864f354923176c5804ffadbc01bdaab46c9dc7d"
+}
