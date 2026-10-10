@@ -1,0 +1,1712 @@
+{
+  "status": "PASS",
+  "metadata": {
+    "pillarRole": "day-branch",
+    "branch": "인",
+    "animal": "tiger",
+    "authoredAssetStatus": "loaded",
+    "authoredVersion": "tiger-reconstructed-v001",
+    "authoredSha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+    "expectedAuthoredSha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+    "latestApprovedStatus": "new-candidate-unapproved",
+    "sourceArchiveCommit": "956fe6e2a7f3de3a0aabe3c59d9d5db3795c7123",
+    "authorship": "new-reconstruction",
+    "originalSourceStatus": "missing-source",
+    "assetStatus": "authored-glb",
+    "normalization": {
+      "uniformScale": 0.3362899844445236,
+      "sourceMin": [
+        -0.6069219708442688,
+        0.0026810169219970703,
+        -0.9313871237323224
+      ],
+      "sourceMax": [
+        0.6747380474773346,
+        1.965272918343544,
+        0.599761962890625
+      ]
+    },
+    "animation": {
+      "clip": "TigerIdle",
+      "duration": 5,
+      "playback": "absolute-time-loop"
+    },
+    "meshes": 21,
+    "triangles": 45160,
+    "skinned": 1,
+    "textureMapped": 1,
+    "emissive": 0,
+    "bounds": {
+      "min": [
+        -0.21550471381226993,
+        1.0842021724855044e-19,
+        -0.2574550359031209
+      ],
+      "max": [
+        0.2155046959618912,
+        0.6600000000000003,
+        0.25745505126133883
+      ],
+      "size": [
+        0.43100940977416113,
+        0.6600000000000003,
+        0.5149100871644597
+      ]
+    }
+  },
+  "frames": [
+    {
+      "file": "fallback-front.png",
+      "angle": 0,
+      "time": 0,
+      "mode": "fallback",
+      "calls": 57,
+      "triangles": 22410
+    },
+    {
+      "file": "new-front.png",
+      "angle": 0,
+      "time": 0,
+      "mode": "new",
+      "calls": 43,
+      "triangles": 90322
+    },
+    {
+      "file": "pair-front.png",
+      "angle": 0,
+      "time": 0,
+      "mode": "pair",
+      "calls": 88,
+      "triangles": 340766
+    },
+    {
+      "file": "fallback-oblique.png",
+      "angle": 0.7853981633974483,
+      "time": 0,
+      "mode": "fallback",
+      "calls": 57,
+      "triangles": 22410
+    },
+    {
+      "file": "new-oblique.png",
+      "angle": 0.7853981633974483,
+      "time": 0,
+      "mode": "new",
+      "calls": 43,
+      "triangles": 90322
+    },
+    {
+      "file": "pair-oblique.png",
+      "angle": 0.7853981633974483,
+      "time": 0,
+      "mode": "pair",
+      "calls": 88,
+      "triangles": 340766
+    },
+    {
+      "file": "fallback-side.png",
+      "angle": 1.5707963267948966,
+      "time": 0,
+      "mode": "fallback",
+      "calls": 57,
+      "triangles": 22410
+    },
+    {
+      "file": "new-side.png",
+      "angle": 1.5707963267948966,
+      "time": 0,
+      "mode": "new",
+      "calls": 43,
+      "triangles": 90322
+    },
+    {
+      "file": "pair-side.png",
+      "angle": 1.5707963267948966,
+      "time": 0,
+      "mode": "pair",
+      "calls": 88,
+      "triangles": 340766
+    },
+    {
+      "file": "idle-0.png",
+      "angle": 0,
+      "time": 0,
+      "mode": "new",
+      "bounds": {
+        "min": [
+          -0.21550471381226993,
+          1.0842021724855044e-19,
+          -0.2574550359031209
+        ],
+        "max": [
+          0.2155046959618912,
+          0.6600000000000003,
+          0.25745505126133883
+        ],
+        "size": [
+          0.43100940977416113,
+          0.6600000000000003,
+          0.5149100871644597
+        ]
+      },
+      "pose": [
+        {
+          "name": "TigerRoot",
+          "position": [
+            0,
+            0.07999999821186066,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "TigerChest",
+          "position": [
+            0,
+            0.44999998807907104,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "TigerHead",
+          "position": [
+            0,
+            0.5500000715255737,
+            0.03999999910593033
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "TigerTailBase",
+          "position": [
+            -1.841681473990775e-9,
+            0.5100000500679016,
+            -0.3400000035762787
+          ],
+          "quaternion": [
+            -0.658492114174169,
+            -0.11969748270978489,
+            -0.11969747525920467,
+            0.7333029132765984
+          ],
+          "scale": [
+            1,
+            0.9999999403953552,
+            1
+          ]
+        },
+        {
+          "name": "TigerTailTip",
+          "position": [
+            2.1476520117857945e-8,
+            0.48020827770233154,
+            -9.866343297915137e-10
+          ],
+          "quaternion": [
+            0.4538110718143352,
+            0.05347160907232407,
+            -0.45740207278917155,
+            0.762875902050989
+          ],
+          "scale": [
+            1,
+            0.9999998807907104,
+            0.9999999403953552
+          ]
+        }
+      ]
+    },
+    {
+      "file": "idle-1_25.png",
+      "angle": 0,
+      "time": 1.25,
+      "mode": "new",
+      "bounds": {
+        "min": [
+          -0.22169868909353957,
+          1.0842021724855044e-19,
+          -0.2634142838814071
+        ],
+        "max": [
+          0.20759822459323435,
+          0.664742852656356,
+          0.25745505126133883
+        ],
+        "size": [
+          0.4292969136867739,
+          0.664742852656356,
+          0.5208693351427459
+        ]
+      },
+      "pose": [
+        {
+          "name": "TigerRoot",
+          "position": [
+            0,
+            0.07999999821186066,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "TigerChest",
+          "position": [
+            0,
+            0.44999998807907104,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1.00900000333786,
+            1.0040000081062317,
+            1
+          ]
+        },
+        {
+          "name": "TigerHead",
+          "position": [
+            0,
+            0.5500000715255737,
+            0.03999999910593033
+          ],
+          "quaternion": [
+            0.005926742197061413,
+            0.004528483181675663,
+            0.008923626122095005,
+            0.9999323654447017
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "TigerTailBase",
+          "position": [
+            -1.841681473990775e-9,
+            0.5100000500679016,
+            -0.3400000035762787
+          ],
+          "quaternion": [
+            -0.6591082811355591,
+            -0.09211267530918121,
+            -0.11474795639514923,
+            0.7375123500823975
+          ],
+          "scale": [
+            1,
+            0.9999999403953552,
+            1
+          ]
+        },
+        {
+          "name": "TigerTailTip",
+          "position": [
+            2.1476520117857945e-8,
+            0.48020827770233154,
+            -9.866343297915137e-10
+          ],
+          "quaternion": [
+            0.46852391958236694,
+            0.03344127535820007,
+            -0.43701761960983276,
+            0.7670610547065735
+          ],
+          "scale": [
+            1,
+            0.9999998807907104,
+            0.9999999403953552
+          ]
+        }
+      ]
+    },
+    {
+      "file": "idle-2_5.png",
+      "angle": 0,
+      "time": 2.5,
+      "mode": "new",
+      "bounds": {
+        "min": [
+          -0.219178547217213,
+          1.0842021724855044e-19,
+          -0.2574550359031209
+        ],
+        "max": [
+          0.2155046959618912,
+          0.6638613511211848,
+          0.25745505126133883
+        ],
+        "size": [
+          0.43468324317910423,
+          0.6638613511211848,
+          0.5149100871644597
+        ]
+      },
+      "pose": [
+        {
+          "name": "TigerRoot",
+          "position": [
+            0,
+            0.07999999821186066,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "TigerChest",
+          "position": [
+            0,
+            0.44999998807907104,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1.0180000066757202,
+            1.0080000162124634,
+            1
+          ]
+        },
+        {
+          "name": "TigerHead",
+          "position": [
+            0,
+            0.5500000715255737,
+            0.03999999910593033
+          ],
+          "quaternion": [
+            7.347880536484578e-19,
+            5.510910402363434e-19,
+            1.1021819770751102e-18,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "TigerTailBase",
+          "position": [
+            -1.841681473990775e-9,
+            0.5100000500679016,
+            -0.3400000035762787
+          ],
+          "quaternion": [
+            -0.658492114174169,
+            -0.11969748270978489,
+            -0.11969747525920467,
+            0.7333029132765984
+          ],
+          "scale": [
+            1,
+            0.9999999403953552,
+            1
+          ]
+        },
+        {
+          "name": "TigerTailTip",
+          "position": [
+            2.1476520117857945e-8,
+            0.48020827770233154,
+            -9.866343297915137e-10
+          ],
+          "quaternion": [
+            0.4538110718143352,
+            0.05347160907232407,
+            -0.45740207278917155,
+            0.762875902050989
+          ],
+          "scale": [
+            1,
+            0.9999998807907104,
+            0.9999999403953552
+          ]
+        }
+      ]
+    },
+    {
+      "file": "idle-3_75.png",
+      "angle": 0,
+      "time": 3.75,
+      "mode": "new",
+      "bounds": {
+        "min": [
+          -0.21285435166427255,
+          1.0842021724855044e-19,
+          -0.2516584927727873
+        ],
+        "max": [
+          0.22296705471263567,
+          0.6644805175041323,
+          0.25745505126133883
+        ],
+        "size": [
+          0.43582140637690825,
+          0.6644805175041323,
+          0.5091135440341261
+        ]
+      },
+      "pose": [
+        {
+          "name": "TigerRoot",
+          "position": [
+            0,
+            0.07999999821186066,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "TigerChest",
+          "position": [
+            0,
+            0.44999998807907104,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1.00900000333786,
+            1.0040000081062317,
+            1
+          ]
+        },
+        {
+          "name": "TigerHead",
+          "position": [
+            0,
+            0.5500000715255737,
+            0.03999999910593033
+          ],
+          "quaternion": [
+            -0.006006854554270453,
+            -0.004421666069567128,
+            -0.00897703280205072,
+            0.9999318874051393
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "TigerTailBase",
+          "position": [
+            -1.841681473990775e-9,
+            0.5100000500679016,
+            -0.3400000035762787
+          ],
+          "quaternion": [
+            -0.6579177975654602,
+            -0.14709287881851196,
+            -0.12464405596256256,
+            0.72799152135849
+          ],
+          "scale": [
+            1,
+            0.9999999403953552,
+            1
+          ]
+        },
+        {
+          "name": "TigerTailTip",
+          "position": [
+            2.1476520117857945e-8,
+            0.48020827770233154,
+            -9.866343297915137e-10
+          ],
+          "quaternion": [
+            0.43905675411224365,
+            0.07417189329862595,
+            -0.4768739938735962,
+            0.7578383088111877
+          ],
+          "scale": [
+            1,
+            0.9999998807907104,
+            0.9999999403953552
+          ]
+        }
+      ]
+    },
+    {
+      "file": "idle-5.png",
+      "angle": 0,
+      "time": 5,
+      "mode": "new",
+      "bounds": {
+        "min": [
+          -0.21550471381226993,
+          1.0842021724855044e-19,
+          -0.2574550359031209
+        ],
+        "max": [
+          0.2155046959618912,
+          0.6600000000000003,
+          0.25745505126133883
+        ],
+        "size": [
+          0.43100940977416113,
+          0.6600000000000003,
+          0.5149100871644597
+        ]
+      },
+      "pose": [
+        {
+          "name": "TigerRoot",
+          "position": [
+            0,
+            0.07999999821186066,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "TigerChest",
+          "position": [
+            0,
+            0.44999998807907104,
+            0
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "TigerHead",
+          "position": [
+            0,
+            0.5500000715255737,
+            0.03999999910593033
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "TigerTailBase",
+          "position": [
+            -1.841681473990775e-9,
+            0.5100000500679016,
+            -0.3400000035762787
+          ],
+          "quaternion": [
+            -0.658492114174169,
+            -0.11969748270978489,
+            -0.11969747525920467,
+            0.7333029132765984
+          ],
+          "scale": [
+            1,
+            0.9999999403953552,
+            1
+          ]
+        },
+        {
+          "name": "TigerTailTip",
+          "position": [
+            2.1476520117857945e-8,
+            0.48020827770233154,
+            -9.866343297915137e-10
+          ],
+          "quaternion": [
+            0.4538110718143352,
+            0.05347160907232407,
+            -0.45740207278917155,
+            0.762875902050989
+          ],
+          "scale": [
+            1,
+            0.9999998807907104,
+            0.9999999403953552
+          ]
+        }
+      ]
+    }
+  ],
+  "stems": [
+    {
+      "stem": "갑",
+      "quality": "low",
+      "pet": {
+        "pillarRole": "day-branch",
+        "branch": "인",
+        "animal": "tiger",
+        "authoredAssetStatus": "loaded",
+        "authoredVersion": "tiger-reconstructed-v001",
+        "authoredSha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+        "expectedAuthoredSha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+        "latestApprovedStatus": "new-candidate-unapproved",
+        "sourceArchiveCommit": "956fe6e2a7f3de3a0aabe3c59d9d5db3795c7123",
+        "authorship": "new-reconstruction",
+        "originalSourceStatus": "missing-source",
+        "assetStatus": "authored-glb",
+        "normalization": {
+          "uniformScale": 0.3362899844445236,
+          "sourceMin": [
+            -0.6069219708442688,
+            0.0026810169219970703,
+            -0.9313871237323224
+          ],
+          "sourceMax": [
+            0.6747380474773346,
+            1.965272918343544,
+            0.599761962890625
+          ]
+        },
+        "animation": {
+          "clip": "TigerIdle",
+          "duration": 5,
+          "playback": "absolute-time-loop"
+        }
+      },
+      "bodyPositionSHA256": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyUVSHA256": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "depth": 1.35,
+      "bodyCastShadow": true,
+      "fireCardCasters": [],
+      "calls": 69,
+      "errors": [],
+      "posedCalls": 69,
+      "memoryAfterDispose": {
+        "geometries": 79,
+        "textures": 12
+      }
+    },
+    {
+      "stem": "을",
+      "quality": "low",
+      "pet": {
+        "pillarRole": "day-branch",
+        "branch": "인",
+        "animal": "tiger",
+        "authoredAssetStatus": "loaded",
+        "authoredVersion": "tiger-reconstructed-v001",
+        "authoredSha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+        "expectedAuthoredSha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+        "latestApprovedStatus": "new-candidate-unapproved",
+        "sourceArchiveCommit": "956fe6e2a7f3de3a0aabe3c59d9d5db3795c7123",
+        "authorship": "new-reconstruction",
+        "originalSourceStatus": "missing-source",
+        "assetStatus": "authored-glb",
+        "normalization": {
+          "uniformScale": 0.3362899844445236,
+          "sourceMin": [
+            -0.6069219708442688,
+            0.0026810169219970703,
+            -0.9313871237323224
+          ],
+          "sourceMax": [
+            0.6747380474773346,
+            1.965272918343544,
+            0.599761962890625
+          ]
+        },
+        "animation": {
+          "clip": "TigerIdle",
+          "duration": 5,
+          "playback": "absolute-time-loop"
+        }
+      },
+      "bodyPositionSHA256": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyUVSHA256": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "depth": 1.35,
+      "bodyCastShadow": true,
+      "fireCardCasters": [],
+      "calls": 63,
+      "errors": [],
+      "posedCalls": 63,
+      "memoryAfterDispose": {
+        "geometries": 79,
+        "textures": 12
+      }
+    },
+    {
+      "stem": "병",
+      "quality": "low",
+      "pet": {
+        "pillarRole": "day-branch",
+        "branch": "인",
+        "animal": "tiger",
+        "authoredAssetStatus": "loaded",
+        "authoredVersion": "tiger-reconstructed-v001",
+        "authoredSha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+        "expectedAuthoredSha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+        "latestApprovedStatus": "new-candidate-unapproved",
+        "sourceArchiveCommit": "956fe6e2a7f3de3a0aabe3c59d9d5db3795c7123",
+        "authorship": "new-reconstruction",
+        "originalSourceStatus": "missing-source",
+        "assetStatus": "authored-glb",
+        "normalization": {
+          "uniformScale": 0.3362899844445236,
+          "sourceMin": [
+            -0.6069219708442688,
+            0.0026810169219970703,
+            -0.9313871237323224
+          ],
+          "sourceMax": [
+            0.6747380474773346,
+            1.965272918343544,
+            0.599761962890625
+          ]
+        },
+        "animation": {
+          "clip": "TigerIdle",
+          "duration": 5,
+          "playback": "absolute-time-loop"
+        }
+      },
+      "bodyPositionSHA256": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyUVSHA256": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "depth": 1.35,
+      "bodyCastShadow": true,
+      "fireCardCasters": [
+        false
+      ],
+      "calls": 60,
+      "errors": [],
+      "posedCalls": 60,
+      "memoryAfterDispose": {
+        "geometries": 79,
+        "textures": 12
+      }
+    },
+    {
+      "stem": "정",
+      "quality": "low",
+      "pet": {
+        "pillarRole": "day-branch",
+        "branch": "인",
+        "animal": "tiger",
+        "authoredAssetStatus": "loaded",
+        "authoredVersion": "tiger-reconstructed-v001",
+        "authoredSha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+        "expectedAuthoredSha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+        "latestApprovedStatus": "new-candidate-unapproved",
+        "sourceArchiveCommit": "956fe6e2a7f3de3a0aabe3c59d9d5db3795c7123",
+        "authorship": "new-reconstruction",
+        "originalSourceStatus": "missing-source",
+        "assetStatus": "authored-glb",
+        "normalization": {
+          "uniformScale": 0.3362899844445236,
+          "sourceMin": [
+            -0.6069219708442688,
+            0.0026810169219970703,
+            -0.9313871237323224
+          ],
+          "sourceMax": [
+            0.6747380474773346,
+            1.965272918343544,
+            0.599761962890625
+          ]
+        },
+        "animation": {
+          "clip": "TigerIdle",
+          "duration": 5,
+          "playback": "absolute-time-loop"
+        }
+      },
+      "bodyPositionSHA256": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyUVSHA256": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "depth": 1.35,
+      "bodyCastShadow": true,
+      "fireCardCasters": [
+        false
+      ],
+      "calls": 60,
+      "errors": [],
+      "posedCalls": 60,
+      "memoryAfterDispose": {
+        "geometries": 79,
+        "textures": 12
+      }
+    },
+    {
+      "stem": "무",
+      "quality": "low",
+      "pet": {
+        "pillarRole": "day-branch",
+        "branch": "인",
+        "animal": "tiger",
+        "authoredAssetStatus": "loaded",
+        "authoredVersion": "tiger-reconstructed-v001",
+        "authoredSha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+        "expectedAuthoredSha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+        "latestApprovedStatus": "new-candidate-unapproved",
+        "sourceArchiveCommit": "956fe6e2a7f3de3a0aabe3c59d9d5db3795c7123",
+        "authorship": "new-reconstruction",
+        "originalSourceStatus": "missing-source",
+        "assetStatus": "authored-glb",
+        "normalization": {
+          "uniformScale": 0.3362899844445236,
+          "sourceMin": [
+            -0.6069219708442688,
+            0.0026810169219970703,
+            -0.9313871237323224
+          ],
+          "sourceMax": [
+            0.6747380474773346,
+            1.965272918343544,
+            0.599761962890625
+          ]
+        },
+        "animation": {
+          "clip": "TigerIdle",
+          "duration": 5,
+          "playback": "absolute-time-loop"
+        }
+      },
+      "bodyPositionSHA256": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyUVSHA256": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "depth": 1.35,
+      "bodyCastShadow": true,
+      "fireCardCasters": [],
+      "calls": 59,
+      "errors": [],
+      "posedCalls": 59,
+      "memoryAfterDispose": {
+        "geometries": 79,
+        "textures": 12
+      }
+    },
+    {
+      "stem": "기",
+      "quality": "low",
+      "pet": {
+        "pillarRole": "day-branch",
+        "branch": "인",
+        "animal": "tiger",
+        "authoredAssetStatus": "loaded",
+        "authoredVersion": "tiger-reconstructed-v001",
+        "authoredSha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+        "expectedAuthoredSha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+        "latestApprovedStatus": "new-candidate-unapproved",
+        "sourceArchiveCommit": "956fe6e2a7f3de3a0aabe3c59d9d5db3795c7123",
+        "authorship": "new-reconstruction",
+        "originalSourceStatus": "missing-source",
+        "assetStatus": "authored-glb",
+        "normalization": {
+          "uniformScale": 0.3362899844445236,
+          "sourceMin": [
+            -0.6069219708442688,
+            0.0026810169219970703,
+            -0.9313871237323224
+          ],
+          "sourceMax": [
+            0.6747380474773346,
+            1.965272918343544,
+            0.599761962890625
+          ]
+        },
+        "animation": {
+          "clip": "TigerIdle",
+          "duration": 5,
+          "playback": "absolute-time-loop"
+        }
+      },
+      "bodyPositionSHA256": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyUVSHA256": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "depth": 1.35,
+      "bodyCastShadow": true,
+      "fireCardCasters": [],
+      "calls": 88,
+      "errors": [],
+      "posedCalls": 88,
+      "memoryAfterDispose": {
+        "geometries": 79,
+        "textures": 12
+      }
+    },
+    {
+      "stem": "경",
+      "quality": "low",
+      "pet": {
+        "pillarRole": "day-branch",
+        "branch": "인",
+        "animal": "tiger",
+        "authoredAssetStatus": "loaded",
+        "authoredVersion": "tiger-reconstructed-v001",
+        "authoredSha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+        "expectedAuthoredSha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+        "latestApprovedStatus": "new-candidate-unapproved",
+        "sourceArchiveCommit": "956fe6e2a7f3de3a0aabe3c59d9d5db3795c7123",
+        "authorship": "new-reconstruction",
+        "originalSourceStatus": "missing-source",
+        "assetStatus": "authored-glb",
+        "normalization": {
+          "uniformScale": 0.3362899844445236,
+          "sourceMin": [
+            -0.6069219708442688,
+            0.0026810169219970703,
+            -0.9313871237323224
+          ],
+          "sourceMax": [
+            0.6747380474773346,
+            1.965272918343544,
+            0.599761962890625
+          ]
+        },
+        "animation": {
+          "clip": "TigerIdle",
+          "duration": 5,
+          "playback": "absolute-time-loop"
+        }
+      },
+      "bodyPositionSHA256": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyUVSHA256": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "depth": 1.35,
+      "bodyCastShadow": true,
+      "fireCardCasters": [],
+      "calls": 59,
+      "errors": [],
+      "posedCalls": 59,
+      "memoryAfterDispose": {
+        "geometries": 79,
+        "textures": 12
+      }
+    },
+    {
+      "stem": "신",
+      "quality": "low",
+      "pet": {
+        "pillarRole": "day-branch",
+        "branch": "인",
+        "animal": "tiger",
+        "authoredAssetStatus": "loaded",
+        "authoredVersion": "tiger-reconstructed-v001",
+        "authoredSha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+        "expectedAuthoredSha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+        "latestApprovedStatus": "new-candidate-unapproved",
+        "sourceArchiveCommit": "956fe6e2a7f3de3a0aabe3c59d9d5db3795c7123",
+        "authorship": "new-reconstruction",
+        "originalSourceStatus": "missing-source",
+        "assetStatus": "authored-glb",
+        "normalization": {
+          "uniformScale": 0.3362899844445236,
+          "sourceMin": [
+            -0.6069219708442688,
+            0.0026810169219970703,
+            -0.9313871237323224
+          ],
+          "sourceMax": [
+            0.6747380474773346,
+            1.965272918343544,
+            0.599761962890625
+          ]
+        },
+        "animation": {
+          "clip": "TigerIdle",
+          "duration": 5,
+          "playback": "absolute-time-loop"
+        }
+      },
+      "bodyPositionSHA256": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyUVSHA256": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "depth": 1.35,
+      "bodyCastShadow": true,
+      "fireCardCasters": [],
+      "calls": 59,
+      "errors": [],
+      "posedCalls": 59,
+      "memoryAfterDispose": {
+        "geometries": 79,
+        "textures": 12
+      }
+    },
+    {
+      "stem": "임",
+      "quality": "low",
+      "pet": {
+        "pillarRole": "day-branch",
+        "branch": "인",
+        "animal": "tiger",
+        "authoredAssetStatus": "loaded",
+        "authoredVersion": "tiger-reconstructed-v001",
+        "authoredSha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+        "expectedAuthoredSha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+        "latestApprovedStatus": "new-candidate-unapproved",
+        "sourceArchiveCommit": "956fe6e2a7f3de3a0aabe3c59d9d5db3795c7123",
+        "authorship": "new-reconstruction",
+        "originalSourceStatus": "missing-source",
+        "assetStatus": "authored-glb",
+        "normalization": {
+          "uniformScale": 0.3362899844445236,
+          "sourceMin": [
+            -0.6069219708442688,
+            0.0026810169219970703,
+            -0.9313871237323224
+          ],
+          "sourceMax": [
+            0.6747380474773346,
+            1.965272918343544,
+            0.599761962890625
+          ]
+        },
+        "animation": {
+          "clip": "TigerIdle",
+          "duration": 5,
+          "playback": "absolute-time-loop"
+        }
+      },
+      "bodyPositionSHA256": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyUVSHA256": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "depth": 1.35,
+      "bodyCastShadow": true,
+      "fireCardCasters": [],
+      "calls": 87,
+      "errors": [],
+      "posedCalls": 87,
+      "memoryAfterDispose": {
+        "geometries": 79,
+        "textures": 12
+      }
+    },
+    {
+      "stem": "계",
+      "quality": "low",
+      "pet": {
+        "pillarRole": "day-branch",
+        "branch": "인",
+        "animal": "tiger",
+        "authoredAssetStatus": "loaded",
+        "authoredVersion": "tiger-reconstructed-v001",
+        "authoredSha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+        "expectedAuthoredSha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+        "latestApprovedStatus": "new-candidate-unapproved",
+        "sourceArchiveCommit": "956fe6e2a7f3de3a0aabe3c59d9d5db3795c7123",
+        "authorship": "new-reconstruction",
+        "originalSourceStatus": "missing-source",
+        "assetStatus": "authored-glb",
+        "normalization": {
+          "uniformScale": 0.3362899844445236,
+          "sourceMin": [
+            -0.6069219708442688,
+            0.0026810169219970703,
+            -0.9313871237323224
+          ],
+          "sourceMax": [
+            0.6747380474773346,
+            1.965272918343544,
+            0.599761962890625
+          ]
+        },
+        "animation": {
+          "clip": "TigerIdle",
+          "duration": 5,
+          "playback": "absolute-time-loop"
+        }
+      },
+      "bodyPositionSHA256": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyUVSHA256": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "depth": 1.35,
+      "bodyCastShadow": true,
+      "fireCardCasters": [],
+      "calls": 89,
+      "errors": [],
+      "posedCalls": 89,
+      "memoryAfterDispose": {
+        "geometries": 79,
+        "textures": 12
+      }
+    },
+    {
+      "stem": "갑",
+      "quality": "high",
+      "pet": {
+        "pillarRole": "day-branch",
+        "branch": "인",
+        "animal": "tiger",
+        "authoredAssetStatus": "loaded",
+        "authoredVersion": "tiger-reconstructed-v001",
+        "authoredSha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+        "expectedAuthoredSha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+        "latestApprovedStatus": "new-candidate-unapproved",
+        "sourceArchiveCommit": "956fe6e2a7f3de3a0aabe3c59d9d5db3795c7123",
+        "authorship": "new-reconstruction",
+        "originalSourceStatus": "missing-source",
+        "assetStatus": "authored-glb",
+        "normalization": {
+          "uniformScale": 0.3362899844445236,
+          "sourceMin": [
+            -0.6069219708442688,
+            0.0026810169219970703,
+            -0.9313871237323224
+          ],
+          "sourceMax": [
+            0.6747380474773346,
+            1.965272918343544,
+            0.599761962890625
+          ]
+        },
+        "animation": {
+          "clip": "TigerIdle",
+          "duration": 5,
+          "playback": "absolute-time-loop"
+        }
+      },
+      "bodyPositionSHA256": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyUVSHA256": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "depth": 1.35,
+      "bodyCastShadow": true,
+      "fireCardCasters": [],
+      "calls": 69,
+      "errors": [],
+      "posedCalls": 69,
+      "memoryAfterDispose": {
+        "geometries": 79,
+        "textures": 12
+      }
+    },
+    {
+      "stem": "을",
+      "quality": "high",
+      "pet": {
+        "pillarRole": "day-branch",
+        "branch": "인",
+        "animal": "tiger",
+        "authoredAssetStatus": "loaded",
+        "authoredVersion": "tiger-reconstructed-v001",
+        "authoredSha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+        "expectedAuthoredSha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+        "latestApprovedStatus": "new-candidate-unapproved",
+        "sourceArchiveCommit": "956fe6e2a7f3de3a0aabe3c59d9d5db3795c7123",
+        "authorship": "new-reconstruction",
+        "originalSourceStatus": "missing-source",
+        "assetStatus": "authored-glb",
+        "normalization": {
+          "uniformScale": 0.3362899844445236,
+          "sourceMin": [
+            -0.6069219708442688,
+            0.0026810169219970703,
+            -0.9313871237323224
+          ],
+          "sourceMax": [
+            0.6747380474773346,
+            1.965272918343544,
+            0.599761962890625
+          ]
+        },
+        "animation": {
+          "clip": "TigerIdle",
+          "duration": 5,
+          "playback": "absolute-time-loop"
+        }
+      },
+      "bodyPositionSHA256": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyUVSHA256": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "depth": 1.35,
+      "bodyCastShadow": true,
+      "fireCardCasters": [],
+      "calls": 63,
+      "errors": [],
+      "posedCalls": 63,
+      "memoryAfterDispose": {
+        "geometries": 79,
+        "textures": 12
+      }
+    },
+    {
+      "stem": "병",
+      "quality": "high",
+      "pet": {
+        "pillarRole": "day-branch",
+        "branch": "인",
+        "animal": "tiger",
+        "authoredAssetStatus": "loaded",
+        "authoredVersion": "tiger-reconstructed-v001",
+        "authoredSha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+        "expectedAuthoredSha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+        "latestApprovedStatus": "new-candidate-unapproved",
+        "sourceArchiveCommit": "956fe6e2a7f3de3a0aabe3c59d9d5db3795c7123",
+        "authorship": "new-reconstruction",
+        "originalSourceStatus": "missing-source",
+        "assetStatus": "authored-glb",
+        "normalization": {
+          "uniformScale": 0.3362899844445236,
+          "sourceMin": [
+            -0.6069219708442688,
+            0.0026810169219970703,
+            -0.9313871237323224
+          ],
+          "sourceMax": [
+            0.6747380474773346,
+            1.965272918343544,
+            0.599761962890625
+          ]
+        },
+        "animation": {
+          "clip": "TigerIdle",
+          "duration": 5,
+          "playback": "absolute-time-loop"
+        }
+      },
+      "bodyPositionSHA256": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyUVSHA256": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "depth": 1.35,
+      "bodyCastShadow": true,
+      "fireCardCasters": [
+        false
+      ],
+      "calls": 60,
+      "errors": [],
+      "posedCalls": 60,
+      "memoryAfterDispose": {
+        "geometries": 79,
+        "textures": 12
+      }
+    },
+    {
+      "stem": "정",
+      "quality": "high",
+      "pet": {
+        "pillarRole": "day-branch",
+        "branch": "인",
+        "animal": "tiger",
+        "authoredAssetStatus": "loaded",
+        "authoredVersion": "tiger-reconstructed-v001",
+        "authoredSha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+        "expectedAuthoredSha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+        "latestApprovedStatus": "new-candidate-unapproved",
+        "sourceArchiveCommit": "956fe6e2a7f3de3a0aabe3c59d9d5db3795c7123",
+        "authorship": "new-reconstruction",
+        "originalSourceStatus": "missing-source",
+        "assetStatus": "authored-glb",
+        "normalization": {
+          "uniformScale": 0.3362899844445236,
+          "sourceMin": [
+            -0.6069219708442688,
+            0.0026810169219970703,
+            -0.9313871237323224
+          ],
+          "sourceMax": [
+            0.6747380474773346,
+            1.965272918343544,
+            0.599761962890625
+          ]
+        },
+        "animation": {
+          "clip": "TigerIdle",
+          "duration": 5,
+          "playback": "absolute-time-loop"
+        }
+      },
+      "bodyPositionSHA256": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyUVSHA256": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "depth": 1.35,
+      "bodyCastShadow": true,
+      "fireCardCasters": [
+        false
+      ],
+      "calls": 60,
+      "errors": [],
+      "posedCalls": 60,
+      "memoryAfterDispose": {
+        "geometries": 79,
+        "textures": 12
+      }
+    },
+    {
+      "stem": "무",
+      "quality": "high",
+      "pet": {
+        "pillarRole": "day-branch",
+        "branch": "인",
+        "animal": "tiger",
+        "authoredAssetStatus": "loaded",
+        "authoredVersion": "tiger-reconstructed-v001",
+        "authoredSha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+        "expectedAuthoredSha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+        "latestApprovedStatus": "new-candidate-unapproved",
+        "sourceArchiveCommit": "956fe6e2a7f3de3a0aabe3c59d9d5db3795c7123",
+        "authorship": "new-reconstruction",
+        "originalSourceStatus": "missing-source",
+        "assetStatus": "authored-glb",
+        "normalization": {
+          "uniformScale": 0.3362899844445236,
+          "sourceMin": [
+            -0.6069219708442688,
+            0.0026810169219970703,
+            -0.9313871237323224
+          ],
+          "sourceMax": [
+            0.6747380474773346,
+            1.965272918343544,
+            0.599761962890625
+          ]
+        },
+        "animation": {
+          "clip": "TigerIdle",
+          "duration": 5,
+          "playback": "absolute-time-loop"
+        }
+      },
+      "bodyPositionSHA256": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyUVSHA256": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "depth": 1.35,
+      "bodyCastShadow": true,
+      "fireCardCasters": [],
+      "calls": 59,
+      "errors": [],
+      "posedCalls": 59,
+      "memoryAfterDispose": {
+        "geometries": 79,
+        "textures": 12
+      }
+    },
+    {
+      "stem": "기",
+      "quality": "high",
+      "pet": {
+        "pillarRole": "day-branch",
+        "branch": "인",
+        "animal": "tiger",
+        "authoredAssetStatus": "loaded",
+        "authoredVersion": "tiger-reconstructed-v001",
+        "authoredSha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+        "expectedAuthoredSha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+        "latestApprovedStatus": "new-candidate-unapproved",
+        "sourceArchiveCommit": "956fe6e2a7f3de3a0aabe3c59d9d5db3795c7123",
+        "authorship": "new-reconstruction",
+        "originalSourceStatus": "missing-source",
+        "assetStatus": "authored-glb",
+        "normalization": {
+          "uniformScale": 0.3362899844445236,
+          "sourceMin": [
+            -0.6069219708442688,
+            0.0026810169219970703,
+            -0.9313871237323224
+          ],
+          "sourceMax": [
+            0.6747380474773346,
+            1.965272918343544,
+            0.599761962890625
+          ]
+        },
+        "animation": {
+          "clip": "TigerIdle",
+          "duration": 5,
+          "playback": "absolute-time-loop"
+        }
+      },
+      "bodyPositionSHA256": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyUVSHA256": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "depth": 1.35,
+      "bodyCastShadow": true,
+      "fireCardCasters": [],
+      "calls": 88,
+      "errors": [],
+      "posedCalls": 88,
+      "memoryAfterDispose": {
+        "geometries": 79,
+        "textures": 12
+      }
+    },
+    {
+      "stem": "경",
+      "quality": "high",
+      "pet": {
+        "pillarRole": "day-branch",
+        "branch": "인",
+        "animal": "tiger",
+        "authoredAssetStatus": "loaded",
+        "authoredVersion": "tiger-reconstructed-v001",
+        "authoredSha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+        "expectedAuthoredSha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+        "latestApprovedStatus": "new-candidate-unapproved",
+        "sourceArchiveCommit": "956fe6e2a7f3de3a0aabe3c59d9d5db3795c7123",
+        "authorship": "new-reconstruction",
+        "originalSourceStatus": "missing-source",
+        "assetStatus": "authored-glb",
+        "normalization": {
+          "uniformScale": 0.3362899844445236,
+          "sourceMin": [
+            -0.6069219708442688,
+            0.0026810169219970703,
+            -0.9313871237323224
+          ],
+          "sourceMax": [
+            0.6747380474773346,
+            1.965272918343544,
+            0.599761962890625
+          ]
+        },
+        "animation": {
+          "clip": "TigerIdle",
+          "duration": 5,
+          "playback": "absolute-time-loop"
+        }
+      },
+      "bodyPositionSHA256": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyUVSHA256": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "depth": 1.35,
+      "bodyCastShadow": true,
+      "fireCardCasters": [],
+      "calls": 59,
+      "errors": [],
+      "posedCalls": 59,
+      "memoryAfterDispose": {
+        "geometries": 79,
+        "textures": 12
+      }
+    },
+    {
+      "stem": "신",
+      "quality": "high",
+      "pet": {
+        "pillarRole": "day-branch",
+        "branch": "인",
+        "animal": "tiger",
+        "authoredAssetStatus": "loaded",
+        "authoredVersion": "tiger-reconstructed-v001",
+        "authoredSha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+        "expectedAuthoredSha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+        "latestApprovedStatus": "new-candidate-unapproved",
+        "sourceArchiveCommit": "956fe6e2a7f3de3a0aabe3c59d9d5db3795c7123",
+        "authorship": "new-reconstruction",
+        "originalSourceStatus": "missing-source",
+        "assetStatus": "authored-glb",
+        "normalization": {
+          "uniformScale": 0.3362899844445236,
+          "sourceMin": [
+            -0.6069219708442688,
+            0.0026810169219970703,
+            -0.9313871237323224
+          ],
+          "sourceMax": [
+            0.6747380474773346,
+            1.965272918343544,
+            0.599761962890625
+          ]
+        },
+        "animation": {
+          "clip": "TigerIdle",
+          "duration": 5,
+          "playback": "absolute-time-loop"
+        }
+      },
+      "bodyPositionSHA256": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyUVSHA256": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "depth": 1.35,
+      "bodyCastShadow": true,
+      "fireCardCasters": [],
+      "calls": 59,
+      "errors": [],
+      "posedCalls": 59,
+      "memoryAfterDispose": {
+        "geometries": 79,
+        "textures": 12
+      }
+    },
+    {
+      "stem": "임",
+      "quality": "high",
+      "pet": {
+        "pillarRole": "day-branch",
+        "branch": "인",
+        "animal": "tiger",
+        "authoredAssetStatus": "loaded",
+        "authoredVersion": "tiger-reconstructed-v001",
+        "authoredSha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+        "expectedAuthoredSha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+        "latestApprovedStatus": "new-candidate-unapproved",
+        "sourceArchiveCommit": "956fe6e2a7f3de3a0aabe3c59d9d5db3795c7123",
+        "authorship": "new-reconstruction",
+        "originalSourceStatus": "missing-source",
+        "assetStatus": "authored-glb",
+        "normalization": {
+          "uniformScale": 0.3362899844445236,
+          "sourceMin": [
+            -0.6069219708442688,
+            0.0026810169219970703,
+            -0.9313871237323224
+          ],
+          "sourceMax": [
+            0.6747380474773346,
+            1.965272918343544,
+            0.599761962890625
+          ]
+        },
+        "animation": {
+          "clip": "TigerIdle",
+          "duration": 5,
+          "playback": "absolute-time-loop"
+        }
+      },
+      "bodyPositionSHA256": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyUVSHA256": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "depth": 1.35,
+      "bodyCastShadow": true,
+      "fireCardCasters": [],
+      "calls": 87,
+      "errors": [],
+      "posedCalls": 87,
+      "memoryAfterDispose": {
+        "geometries": 79,
+        "textures": 12
+      }
+    },
+    {
+      "stem": "계",
+      "quality": "high",
+      "pet": {
+        "pillarRole": "day-branch",
+        "branch": "인",
+        "animal": "tiger",
+        "authoredAssetStatus": "loaded",
+        "authoredVersion": "tiger-reconstructed-v001",
+        "authoredSha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+        "expectedAuthoredSha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+        "latestApprovedStatus": "new-candidate-unapproved",
+        "sourceArchiveCommit": "956fe6e2a7f3de3a0aabe3c59d9d5db3795c7123",
+        "authorship": "new-reconstruction",
+        "originalSourceStatus": "missing-source",
+        "assetStatus": "authored-glb",
+        "normalization": {
+          "uniformScale": 0.3362899844445236,
+          "sourceMin": [
+            -0.6069219708442688,
+            0.0026810169219970703,
+            -0.9313871237323224
+          ],
+          "sourceMax": [
+            0.6747380474773346,
+            1.965272918343544,
+            0.599761962890625
+          ]
+        },
+        "animation": {
+          "clip": "TigerIdle",
+          "duration": 5,
+          "playback": "absolute-time-loop"
+        }
+      },
+      "bodyPositionSHA256": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "bodyUVSHA256": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "depth": 1.35,
+      "bodyCastShadow": true,
+      "fireCardCasters": [],
+      "calls": 89,
+      "errors": [],
+      "posedCalls": 89,
+      "memoryAfterDispose": {
+        "geometries": 79,
+        "textures": 12
+      }
+    }
+  ],
+  "memory": {
+    "geometries": 0,
+    "textures": 4
+  },
+  "errors": [],
+  "outbound": [],
+  "limits": [
+    "New unapproved candidate, not a recovered historical tiger original",
+    "Actual locally served GLB and source materials/skin/idle; local Chromium SwiftShader, no hosted session or physical mobile GPU",
+    "Frames compare the unchanged procedural study with the new animal; the eleven other animals are unchanged"
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "status": "PASS",
+  "basis": "ee6e9740054394b0bee30563f35e957b49adf4bb",
+  "includedFireShadowQAFollowup": "f7e99f144223d1497238767c26d10ec9f6e2002b",
+  "animal": "인 / tiger",
+  "candidateVersion": "tiger-reconstructed-v001",
+  "authorship": "new-reconstruction",
+  "latestApprovedStatus": "new-candidate-unapproved",
+  "originalsRecovered": 0,
+  "newlyAuthoredAnimals": 1,
+  "otherAnimalsUnchanged": 11,
+  "previousAssetFilesPreserved": 171,
+  "proceduralFactoryExact": true,
+  "proceduralFactorySHA256": "a3695c0a7fcb0f6cac1cd34101b9be98a4cc8bf4b252997f8743c82d81847892",
+  "runtime": {
+    "file": "public/models/zodiac-pets/tiger-reconstructed-v001.glb",
+    "bytes": 2237548,
+    "sha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef"
+  },
+  "source": {
+    "file": "assets/source-reference/tiger-reconstructed-v001/Tiger_Reconstructed_v001.blend",
+    "sha256": "8775288d7c521170f19bc5a0aa7fbe821fd23e714610f3bf202861df305ebe84"
+  },
+  "coatTexture": {
+    "file": "assets/source-reference/tiger-reconstructed-v001/Tiger_Coat_v001.png",
+    "sha256": "d9d1686c4e0e41a237d41f4d106a097ad97992491346ce440f15e36cac7b33d4",
+    "resolution": [
+      2048,
+      2048
+    ],
+    "authorship": "original procedural 3D field evaluated at final mesh UV texels"
+  },
+  "generator": {
+    "file": "scripts/authoring/build-tiger-reconstructed-v001.py",
+    "sha256": "cebcff4e64a5b0447da372743eb91d758eb96a151213e241fbf51b29a2fdeb39"
+  },
+  "CPU": {
+    "status": "PASS",
+    "cases": 13,
+    "fixtureLoaderCases": 8,
+    "realGLBAssetCases": 5,
+    "checks": [
+      "embedded original PNG bytes/native source/generator hashes",
+      "closed manifold and single connected fused body",
+      "exact previous assets and other eleven animal manifest entries",
+      "actual skin idle/feet/loop/reset/backwards/frame independence",
+      "owned resources, mixer actions/bindings and idempotent disposal",
+      "checksum failure and abort handling"
+    ]
+  },
+  "WebGL": {
+    "status": "PASS",
+    "captures": 14,
+    "stemQualityLoads": 20,
+    "errors": 0,
+    "outboundRequests": 0,
+    "memoryAfterAllOwnedModels": {
+      "geometries": 0,
+      "textures": 4
+    },
+    "memoryAcross20SwitchesFlat": true,
+    "bodyCastShadowPreserved": true,
+    "fireCardCastersDisabled": true
+  },
+  "regeneration": {
+    "status": "PASS",
+    "byteExact": false,
+    "contract": "canonical decoded geometry/normals/skin and exact material/scene/idle reproduction; UV/PNG packing varies"
+  },
+  "typecheck": {
+    "status": "PASS",
+    "command": "node node_modules/typescript/bin/tsc --noEmit"
+  },
+  "build": {
+    "status": "PASS",
+    "command": "npm run build"
+  },
+  "lint": {
+    "status": "PASS",
+    "command": "node node_modules/eslint/bin/eslint.js lib/planet/spirit-zodiac-pet.ts scripts/qa/zodiac-pet-loader.mjs scripts/qa/tiger-authored-asset.mjs scripts/qa/tiger-authored-browser.mjs scripts/qa/tiger-regeneration-compare.mjs"
+  },
+  "approvedAssets": {
+    "status": "PASS",
+    "sourceFilesVerified": 46,
+    "realGLBMeshesPerFile": 8,
+    "runtimeGLBBytes": 4293332,
+    "presentationDepth": 1.35,
+    "bodyUVAndPositionsUnchanged": true
+  },
+  "limits": [
+    "New unapproved tiger, not recovered missing historical original",
+    "Local Chromium SwiftShader; no physical GPU or hosted authenticated session",
+    "No deployment/main merge/PR/auth/permission change",
+    "Eleven authored original animal sources remain missing",
+    "Final pre-renderer-dispose texture counter is four, not zero; CPU owned texture disposal and switch memory plateau checked",
+    "Blender 4.3.2 UV packing varies between regenerations; current runtime checksum is recorded"
+  ]
+}

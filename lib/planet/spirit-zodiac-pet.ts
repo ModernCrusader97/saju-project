@@ -15,6 +15,9 @@ interface PetAsset {
   sha256: string | null;
   expectedSha256: string | null;
   latestApprovedStatus: string;
+  authorship?: string;
+  originalSourceStatus?: string;
+  animationClip?: string;
 }
 const petAssets = manifest.pets as Record<ZodiacBranch, PetAsset>;
 const resolveBranch = (branch: string): ZodiacBranch => Object.hasOwn(ZODIAC_FEATURES, branch) ? branch as ZodiacBranch : '자';
@@ -27,6 +30,8 @@ function provenance(branch: ZodiacBranch) {
     expectedAuthoredSha256: asset.expectedSha256 ?? asset.sha256,
     latestApprovedStatus: asset.latestApprovedStatus,
     sourceArchiveCommit: manifest.sourceArchive.commit,
+    authorship: asset.authorship ?? null,
+    originalSourceStatus: asset.originalSourceStatus ?? asset.sourceStatus,
   };
 }
 
@@ -49,13 +54,13 @@ function disposePetResources(roots: readonly THREE.Object3D[]) {
   for (const geometry of geometries) geometry.dispose();
 }
 
-function ownPet(group: THREE.Group, update: (time: number) => void = () => {}, roots: THREE.Object3D[] = [group]): ZodiacPet {
+function ownPet(group: THREE.Group, update: (time: number) => void = () => {}, roots: THREE.Object3D[] = [group], releaseAnimation: () => void = () => {}): ZodiacPet {
   let disposed = false;
   return { group,
     update(time) { if (!disposed && Number.isFinite(time)) update(time); },
     dispose() {
       if (disposed) return;
-      disposed = true; disposePetResources(roots); roots.length = 0;
+      disposed = true; releaseAnimation(); disposePetResources(roots); roots.length = 0;
       group.removeFromParent(); group.clear();
     },
   };
@@ -66,13 +71,14 @@ function checkAbort(signal?: AbortSignal) {
 }
 
 /** Freshly parse a checksum-verified animal, preserving its meshes, materials
- * and source pose. No authored animals are present in the audited archive yet;
- * missing entries keep an explicitly labelled temporary animal visible. */
+ * and source pose. The new tiger candidate is separately identified in the
+ * manifest; the eleven missing entries retain their temporary animals. */
 export async function loadZodiacPet(branch: string, quality: SpiritQuality = 'high', options: ZodiacPetLoadOptions = {}): Promise<ZodiacPet> {
   checkAbort(options.signal);
   const resolved = resolveBranch(branch), asset = petAssets[resolved];
   if (asset.sourceStatus !== 'available' || !asset.file || !asset.version || !asset.sha256) return createZodiacPet(resolved, quality);
   const roots: THREE.Object3D[] = [];
+  let mixer: THREE.AnimationMixer | undefined;
   try {
     const url = `/models/zodiac-pets/${asset.file}`;
     const response = await fetch(url, { signal: options.signal });
@@ -100,10 +106,22 @@ export async function loadZodiacPet(branch: string, quality: SpiritQuality = 'hi
     rig.scale.setScalar(scale); rig.position.set(-center.x * scale, -bounds.min.y * scale, -center.z * scale);
     rig.add(gltf.scene); group.add(rig);
     group.traverse(object => { if ((object as THREE.Mesh).isMesh) (object as THREE.Mesh).castShadow = true; });
-    // The original static/rest pose is retained. The procedural head animation
-    // does not apply to an authored mesh or alter its neutral coordinates.
-    return ownPet(group, undefined, roots);
+    const clip = asset.animationClip ? gltf.animations.find(animation => animation.name === asset.animationClip) : undefined;
+    if (asset.animationClip && (!clip || !Number.isFinite(clip.duration) || clip.duration <= 0)) throw new Error('Authored zodiac GLB does not contain its declared idle clip.');
+    if (clip) {
+      mixer = new THREE.AnimationMixer(gltf.scene);
+      mixer.clipAction(clip).setLoop(THREE.LoopRepeat, Infinity).play();
+      mixer.setTime(0);
+      group.userData.animation = { clip: clip.name, duration: clip.duration, playback: 'absolute-time-loop' };
+    }
+    const ownedMixer = mixer;
+    // Absolute time supports pause, reset, seeking backwards and independent
+    // frame rates. Declared original idle drives only the authored source rig.
+    return ownPet(group, clip ? time => ownedMixer!.setTime(((time % clip.duration) + clip.duration) % clip.duration) : undefined, roots, () => {
+      ownedMixer?.stopAllAction(); ownedMixer?.uncacheRoot(gltf.scene);
+    });
   } catch (error) {
+    mixer?.stopAllAction(); for (const root of roots) mixer?.uncacheRoot(root);
     disposePetResources(roots); roots.length = 0;
     checkAbort(options.signal);
     if ((error as { name?: string })?.name === 'AbortError') throw error;

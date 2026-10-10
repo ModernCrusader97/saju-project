@@ -1,5 +1,5 @@
 // Run with: node --test scripts/qa/zodiac-pet-loader.mjs
-// Authored animal sources are unavailable. The GLB below is an explicitly
+// Historical authored animal sources are unavailable. The GLB below is an explicitly
 // synthetic loader fixture; it is never shipped or described as a zodiac asset.
 import assert from 'node:assert/strict';
 import { createHash, webcrypto } from 'node:crypto';
@@ -204,16 +204,28 @@ test('an abort while GLTF parsing completes disposes the late model and never re
   assert(parsed[0].resources.every(row => row.disposals === 1));
 });
 
-test('the shipped manifest records zero recovered animals and both known missing selected hashes', async () => {
+test('the shipped manifest separates the new tiger from eleven missing originals and preserves both selected hashes', async () => {
   let shipped;
   try { shipped = JSON.parse(await fs.readFile('public/models/zodiac-pets/manifest.json', 'utf8')); }
   catch { assert.fail('publish a truthful zodiac source manifest before integrating a loader'); }
   assert.equal(shipped.sourceArchive.commit, missingManifest.sourceArchive.commit);
   assert.deepEqual(Object.keys(shipped.pets), branches);
+  assert.equal(shipped.recoveredOriginalAnimals, 0);
+  assert.equal(shipped.reconstructedAnimals, 1);
+  assert.equal(shipped.availableAuthoredAnimals, 1);
   for (const [index, branch] of branches.entries()) {
     assert.equal(shipped.pets[branch].animal, animals[index]);
-    assert.equal(shipped.pets[branch].sourceStatus, 'missing-source');
-    assert.equal(shipped.pets[branch].file, null); assert.equal(shipped.pets[branch].sha256, null);
     assert.equal(shipped.pets[branch].expectedSha256, missingHashes[branch] ?? null);
+    if (branch === '인') {
+      assert.equal(shipped.pets[branch].sourceStatus, 'available');
+      assert.equal(shipped.pets[branch].authorship, 'new-reconstruction');
+      assert.equal(shipped.pets[branch].originalSourceStatus, 'missing-source');
+      assert.equal(shipped.pets[branch].latestApprovedStatus, 'new-candidate-unapproved');
+      const bytes = await fs.readFile(`public/models/zodiac-pets/${shipped.pets[branch].file}`);
+      assert.equal(sha(bytes), shipped.pets[branch].sha256);
+    } else {
+      assert.equal(shipped.pets[branch].sourceStatus, 'missing-source');
+      assert.equal(shipped.pets[branch].file, null); assert.equal(shipped.pets[branch].sha256, null);
+    }
   }
 });

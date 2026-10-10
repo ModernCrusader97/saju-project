@@ -1,0 +1,21 @@
+✔ new candidate native source, regenerator and GLB have recorded provenance and no external asset dependencies (17.10831ms)
+✔ only tiger manifest changes; eleven animal entries, selected missing hashes and all previous model assets remain exact (2136.689917ms)
+✔ actual GLB body is one closed connected surface with original UV coat and no intersecting runtime seed shells (299.17075ms)
+✔ TigerIdle changes actual skin/head/tail, plants all feet, loops exactly and supports backwards seeking/reset (198.304201ms)
+✔ animated loads own separate resources, stop the mixer and release every parsed resource once (66.564124ms)
+✔ all twelve branches expose missing authored sources without claiming asset approval (337.541311ms)
+✔ procedural fallback owns resources and stops updates after idempotent disposal (100.355858ms)
+✔ checksum verified GLB keeps its original pose, geometry and material while fitting the pet bounds (108.781475ms)
+✔ separate parses have independent owned resources and disposing one cannot damage the other (39.349729ms)
+✔ a mismatched GLB hash falls back explicitly before allocating a model (61.208346ms)
+✔ pre-aborted loads reject without creating a fallback or requesting assets (37.877797ms)
+✔ an abort while GLTF parsing completes disposes the late model and never returns a fallback (73.684192ms)
+✔ the shipped manifest separates the new tiger from eleven missing originals and preserves both selected hashes (22.286546ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3020.426793

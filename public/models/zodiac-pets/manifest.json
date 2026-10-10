@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "auditedAt": "2026-10-10",
   "sourceArchive": {
     "repository": "ModernCrusader97/saju-project",
@@ -8,7 +8,9 @@
     "directory": "archives/2026-10-09-local-authoring",
     "report": "PRESERVATION_REPORT.md"
   },
-  "availableAuthoredAnimals": 0,
+  "availableAuthoredAnimals": 1,
+  "recoveredOriginalAnimals": 0,
+  "reconstructedAnimals": 1,
   "fallback": "procedural-placeholder",
   "pets": {
     "자": {
@@ -36,13 +38,19 @@
     "인": {
       "branch": "인",
       "animal": "tiger",
-      "sourceStatus": "missing-source",
-      "file": null,
-      "version": null,
-      "sha256": null,
+      "sourceStatus": "available",
+      "file": "tiger-reconstructed-v001.glb",
+      "version": "tiger-reconstructed-v001",
+      "sha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
       "expectedSha256": null,
-      "latestApprovedStatus": "unverified",
-      "missingVersion": null
+      "latestApprovedStatus": "new-candidate-unapproved",
+      "missingVersion": null,
+      "authorship": "new-reconstruction",
+      "originalSourceStatus": "missing-source",
+      "source": "assets/source-reference/tiger-reconstructed-v001/Tiger_Reconstructed_v001.blend",
+      "recipe": "assets/source-reference/tiger-reconstructed-v001/recipe.json",
+      "regenerator": "scripts/authoring/build-tiger-reconstructed-v001.py",
+      "animationClip": "TigerIdle"
     },
     "묘": {
       "branch": "묘",

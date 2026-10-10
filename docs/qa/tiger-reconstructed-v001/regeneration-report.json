@@ -1,0 +1,891 @@
+{
+  "status": "PASS",
+  "method": "Decode actual GLB accessors and compare canonical shape/normals/skin plus exact animation/material/scene data",
+  "before": {
+    "bytes": 2233092,
+    "sha256": "d69382018cdb3ca6ea6ca9058a8ca3448ed9598fd0242a7d5945534c23297bca"
+  },
+  "after": {
+    "file": "public/models/zodiac-pets/tiger-reconstructed-v001.glb",
+    "bytes": 2237548,
+    "sha256": "3bd87ec409dc1ac897341bce006c35c15cd9b1941cfb49f5df173e52ecc98aef",
+    "meshes": [
+      {
+        "name": "Embedded_cream_ear_-1_mesh",
+        "triangles": 720,
+        "positionSetSHA256": "b4a499d29d61e3a94d6fa12dbe6cd3e535c8ff72f958daf45fabcec2ee7de5d7",
+        "trianglePositionsSHA256": "413cd473541dfbe3286af1dd5e7991b6ce1bfb573978937d155e89abc05a4459",
+        "normalsSHA256": "079ee0ac0ffa672b971b9b629a1f8f1b8fc34888437a291e679c134153d5ea25",
+        "skinSHA256": null
+      },
+      {
+        "name": "Embedded_cream_ear_1_mesh",
+        "triangles": 720,
+        "positionSetSHA256": "b4a499d29d61e3a94d6fa12dbe6cd3e535c8ff72f958daf45fabcec2ee7de5d7",
+        "trianglePositionsSHA256": "413cd473541dfbe3286af1dd5e7991b6ce1bfb573978937d155e89abc05a4459",
+        "normalsSHA256": "079ee0ac0ffa672b971b9b629a1f8f1b8fc34888437a291e679c134153d5ea25",
+        "skinSHA256": null
+      },
+      {
+        "name": "Eye_amber_iris_-1_mesh",
+        "triangles": 720,
+        "positionSetSHA256": "03cbac900396b17b8c6e3d006e9df0f9b61f5218cfb49cbbe476b00af6850ee2",
+        "trianglePositionsSHA256": "cfcaa12d50fc531bc99316939ef023957de46f9b6b0b1c4083507f4940a83633",
+        "normalsSHA256": "047f2ad90a6c774b67fcffe0074c38e4e623d62c95ca00107b7738989aeccf49",
+        "skinSHA256": null
+      },
+      {
+        "name": "Eye_amber_iris_1_mesh",
+        "triangles": 720,
+        "positionSetSHA256": "03cbac900396b17b8c6e3d006e9df0f9b61f5218cfb49cbbe476b00af6850ee2",
+        "trianglePositionsSHA256": "cfcaa12d50fc531bc99316939ef023957de46f9b6b0b1c4083507f4940a83633",
+        "normalsSHA256": "047f2ad90a6c774b67fcffe0074c38e4e623d62c95ca00107b7738989aeccf49",
+        "skinSHA256": null
+      },
+      {
+        "name": "Eye_large_glint_-1_mesh",
+        "triangles": 720,
+        "positionSetSHA256": "f7bd4ef802edef7b968cf6d2d6e07dd95d045c57b8f8e0fc99fafbefab35c640",
+        "trianglePositionsSHA256": "3bde498fa500a976b7e57f3d10e5a892bbf8dcf9e7d6bf064b26fade83813a12",
+        "normalsSHA256": "42cd44bbe7f8fa97a16ba90d3b5ff5af14c03dd0983c470d12a87d3e8ece049b",
+        "skinSHA256": null
+      },
+      {
+        "name": "Eye_large_glint_1_mesh",
+        "triangles": 720,
+        "positionSetSHA256": "f7bd4ef802edef7b968cf6d2d6e07dd95d045c57b8f8e0fc99fafbefab35c640",
+        "trianglePositionsSHA256": "3bde498fa500a976b7e57f3d10e5a892bbf8dcf9e7d6bf064b26fade83813a12",
+        "normalsSHA256": "42cd44bbe7f8fa97a16ba90d3b5ff5af14c03dd0983c470d12a87d3e8ece049b",
+        "skinSHA256": null
+      },
+      {
+        "name": "Eye_round_pupil_-1_mesh",
+        "triangles": 720,
+        "positionSetSHA256": "edf07cd35730bb7221b643e477a4c31702a0f9ecf683a8d8d97e003adaf9b76f",
+        "trianglePositionsSHA256": "39dcf7f9d7a5c60df5ca564598c4014e29591cb054c01b8f39ff268d61fb8152",
+        "normalsSHA256": "114d4e8a578b45715b0173283c8ea8dde883a61ba893ba7b77adbe979e9ec24c",
+        "skinSHA256": null
+      },
+      {
+        "name": "Eye_round_pupil_1_mesh",
+        "triangles": 720,
+        "positionSetSHA256": "edf07cd35730bb7221b643e477a4c31702a0f9ecf683a8d8d97e003adaf9b76f",
+        "trianglePositionsSHA256": "39dcf7f9d7a5c60df5ca564598c4014e29591cb054c01b8f39ff268d61fb8152",
+        "normalsSHA256": "114d4e8a578b45715b0173283c8ea8dde883a61ba893ba7b77adbe979e9ec24c",
+        "skinSHA256": null
+      },
+      {
+        "name": "Eye_small_glint_-1_mesh",
+        "triangles": 720,
+        "positionSetSHA256": "bd418e68e266a2dc42f71401437e382ac006f2ce3dc010455344cc8eaf9a43d9",
+        "trianglePositionsSHA256": "4c26b08693f1777288ec338153e205461bcf1be2bdb07219dbd810a33c68a22a",
+        "normalsSHA256": "b64c482aa029d06cf7413f2b6309a734104e593b2906139c5af078d61c7a54f8",
+        "skinSHA256": null
+      },
+      {
+        "name": "Eye_small_glint_1_mesh",
+        "triangles": 720,
+        "positionSetSHA256": "bd418e68e266a2dc42f71401437e382ac006f2ce3dc010455344cc8eaf9a43d9",
+        "trianglePositionsSHA256": "4c26b08693f1777288ec338153e205461bcf1be2bdb07219dbd810a33c68a22a",
+        "normalsSHA256": "b64c482aa029d06cf7413f2b6309a734104e593b2906139c5af078d61c7a54f8",
+        "skinSHA256": null
+      },
+      {
+        "name": "Eye_white_-1_mesh",
+        "triangles": 720,
+        "positionSetSHA256": "4ffcd4c3bb0430dd9db8b23e0efa3391e3fff3c84a96d395cdbeb664c140289c",
+        "trianglePositionsSHA256": "0e7fec9a81b02aa5399e62f351a261473ab94c2a173573aa0b6dbd882f5e4a41",
+        "normalsSHA256": "93a5f86f34d76e7c620b9b417d283e026436cad3a8c9e1c84d2015247cf19ada",
+        "skinSHA256": null
+      },
+      {
+        "name": "Eye_white_1_mesh",
+        "triangles": 720,
+        "positionSetSHA256": "4ffcd4c3bb0430dd9db8b23e0efa3391e3fff3c84a96d395cdbeb664c140289c",
+        "trianglePositionsSHA256": "0e7fec9a81b02aa5399e62f351a261473ab94c2a173573aa0b6dbd882f5e4a41",
+        "normalsSHA256": "93a5f86f34d76e7c620b9b417d283e026436cad3a8c9e1c84d2015247cf19ada",
+        "skinSHA256": null
+      },
+      {
+        "name": "Muzzle_whisker_dot_-1_0_mesh",
+        "triangles": 720,
+        "positionSetSHA256": "e278bb89718d498f22fc9899c50e3df66e4dfc88a11363872a4c7d8ff95b5b0b",
+        "trianglePositionsSHA256": "97d197010778eeeb0393578de4cc83079160a1cb97cd4308971abe37539e2392",
+        "normalsSHA256": "dd8c1f95ca0c636ea1ecb858c3f9a9b1e8e5969b9d872f6d05d3cf57d83ae430",
+        "skinSHA256": null
+      },
+      {
+        "name": "Muzzle_whisker_dot_-1_1_mesh",
+        "triangles": 720,
+        "positionSetSHA256": "e278bb89718d498f22fc9899c50e3df66e4dfc88a11363872a4c7d8ff95b5b0b",
+        "trianglePositionsSHA256": "97d197010778eeeb0393578de4cc83079160a1cb97cd4308971abe37539e2392",
+        "normalsSHA256": "dd8c1f95ca0c636ea1ecb858c3f9a9b1e8e5969b9d872f6d05d3cf57d83ae430",
+        "skinSHA256": null
+      },
+      {
+        "name": "Muzzle_whisker_dot_-1_2_mesh",
+        "triangles": 720,
+        "positionSetSHA256": "e278bb89718d498f22fc9899c50e3df66e4dfc88a11363872a4c7d8ff95b5b0b",
+        "trianglePositionsSHA256": "97d197010778eeeb0393578de4cc83079160a1cb97cd4308971abe37539e2392",
+        "normalsSHA256": "dd8c1f95ca0c636ea1ecb858c3f9a9b1e8e5969b9d872f6d05d3cf57d83ae430",
+        "skinSHA256": null
+      },
+      {
+        "name": "Muzzle_whisker_dot_1_0_mesh",
+        "triangles": 720,
+        "positionSetSHA256": "e278bb89718d498f22fc9899c50e3df66e4dfc88a11363872a4c7d8ff95b5b0b",
+        "trianglePositionsSHA256": "97d197010778eeeb0393578de4cc83079160a1cb97cd4308971abe37539e2392",
+        "normalsSHA256": "dd8c1f95ca0c636ea1ecb858c3f9a9b1e8e5969b9d872f6d05d3cf57d83ae430",
+        "skinSHA256": null
+      },
+      {
+        "name": "Muzzle_whisker_dot_1_1_mesh",
+        "triangles": 720,
+        "positionSetSHA256": "e278bb89718d498f22fc9899c50e3df66e4dfc88a11363872a4c7d8ff95b5b0b",
+        "trianglePositionsSHA256": "97d197010778eeeb0393578de4cc83079160a1cb97cd4308971abe37539e2392",
+        "normalsSHA256": "dd8c1f95ca0c636ea1ecb858c3f9a9b1e8e5969b9d872f6d05d3cf57d83ae430",
+        "skinSHA256": null
+      },
+      {
+        "name": "Muzzle_whisker_dot_1_2_mesh",
+        "triangles": 720,
+        "positionSetSHA256": "e278bb89718d498f22fc9899c50e3df66e4dfc88a11363872a4c7d8ff95b5b0b",
+        "trianglePositionsSHA256": "97d197010778eeeb0393578de4cc83079160a1cb97cd4308971abe37539e2392",
+        "normalsSHA256": "dd8c1f95ca0c636ea1ecb858c3f9a9b1e8e5969b9d872f6d05d3cf57d83ae430",
+        "skinSHA256": null
+      },
+      {
+        "name": "Rounded_triangular_tiger_nose_mesh",
+        "triangles": 140,
+        "positionSetSHA256": "0590e713fd7a7ace753c933f9d7a43f1de27963da91c7eb1af3c9f96ac91334c",
+        "trianglePositionsSHA256": "14683ddc8c8f67fefca0653876ceb4fd3ebe5003944520e7107ec85823fa3bc5",
+        "normalsSHA256": "e4b76966fd07a3d5a5557134b218c143a769655506a3fd5963358ab5e128f68c",
+        "skinSHA256": null
+      },
+      {
+        "name": "Tiger_FusedBodyMesh",
+        "triangles": 31464,
+        "positionSetSHA256": "ef643ba229e4b98828ddbf64b4b72badde24924d353e9ca209b712c2db3d3d0d",
+        "trianglePositionsSHA256": "fb2b7168058746cfca37cda512480ef57e9516277e3a3555a0d7d68b2da98fa3",
+        "normalsSHA256": "9fbd0708f0f1b56c58d61e527adaa18dc9da77df9cc7b1e372df8fcb7ba8abee",
+        "skinSHA256": "b6f50e38c061089862d5f4c303bbd3d8edcdc56ebdb264d35d9b1fdd91296aed"
+      },
+      {
+        "name": "Tiger_gentle_mouth",
+        "triangles": 596,
+        "positionSetSHA256": "1a89f49c80802d28568a91b92968db8f45695c09ff2545ac49bbd618f6506e15",
+        "trianglePositionsSHA256": "040ef0f41b56407c48093ab88014572e9e9eb9193af53ed70a39f4488f8e1c63",
+        "normalsSHA256": "0c023842fdb9de8b259f4e27bbf1c39868c45485e1cf12498adcbf8847074d4e",
+        "skinSHA256": null
+      }
+    ],
+    "clips": [
+      {
+        "name": "TigerIdle",
+        "channels": [
+          {
+            "sampler": 0,
+            "target": {
+              "node": 24,
+              "path": "translation"
+            }
+          },
+          {
+            "sampler": 1,
+            "target": {
+              "node": 24,
+              "path": "rotation"
+            }
+          },
+          {
+            "sampler": 2,
+            "target": {
+              "node": 24,
+              "path": "scale"
+            }
+          },
+          {
+            "sampler": 3,
+            "target": {
+              "node": 21,
+              "path": "translation"
+            }
+          },
+          {
+            "sampler": 4,
+            "target": {
+              "node": 21,
+              "path": "rotation"
+            }
+          },
+          {
+            "sampler": 5,
+            "target": {
+              "node": 21,
+              "path": "scale"
+            }
+          },
+          {
+            "sampler": 6,
+            "target": {
+              "node": 20,
+              "path": "translation"
+            }
+          },
+          {
+            "sampler": 7,
+            "target": {
+              "node": 20,
+              "path": "rotation"
+            }
+          },
+          {
+            "sampler": 8,
+            "target": {
+              "node": 20,
+              "path": "scale"
+            }
+          },
+          {
+            "sampler": 9,
+            "target": {
+              "node": 23,
+              "path": "translation"
+            }
+          },
+          {
+            "sampler": 10,
+            "target": {
+              "node": 23,
+              "path": "rotation"
+            }
+          },
+          {
+            "sampler": 11,
+            "target": {
+              "node": 23,
+              "path": "scale"
+            }
+          },
+          {
+            "sampler": 12,
+            "target": {
+              "node": 22,
+              "path": "translation"
+            }
+          },
+          {
+            "sampler": 13,
+            "target": {
+              "node": 22,
+              "path": "rotation"
+            }
+          },
+          {
+            "sampler": 14,
+            "target": {
+              "node": 22,
+              "path": "scale"
+            }
+          }
+        ],
+        "samplers": [
+          {
+            "interpolation": "STEP",
+            "inputSHA256": "469a4a29ea91c9711717cb0c7022ab1571cf19ce87a7196315e0d0b25914d56a",
+            "outputSHA256": "fc0b6cb805c02a3973d2b12bbc09822398a6d49666f8e96f70b7e9685255cd41"
+          },
+          {
+            "interpolation": "STEP",
+            "inputSHA256": "469a4a29ea91c9711717cb0c7022ab1571cf19ce87a7196315e0d0b25914d56a",
+            "outputSHA256": "3288eb1340a09e82e090e0c1d78f65a74ce56f333d35e0572b56bb8ecf8e99ba"
+          },
+          {
+            "interpolation": "STEP",
+            "inputSHA256": "469a4a29ea91c9711717cb0c7022ab1571cf19ce87a7196315e0d0b25914d56a",
+            "outputSHA256": "4bf994429e904d636ddceb4967ed28bd1846d3b653d9dc8c36dd0234aa4ae4d4"
+          },
+          {
+            "interpolation": "STEP",
+            "inputSHA256": "469a4a29ea91c9711717cb0c7022ab1571cf19ce87a7196315e0d0b25914d56a",
+            "outputSHA256": "0d0a5d9a0bcb4db1a376fe91a146c86e592f08ba65f52babe265f1aafff29923"
+          },
+          {
+            "interpolation": "STEP",
+            "inputSHA256": "469a4a29ea91c9711717cb0c7022ab1571cf19ce87a7196315e0d0b25914d56a",
+            "outputSHA256": "3288eb1340a09e82e090e0c1d78f65a74ce56f333d35e0572b56bb8ecf8e99ba"
+          },
+          {
+            "interpolation": "LINEAR",
+            "inputSHA256": "dd450d692e4d14fe2d872bee68ecbb95933a7036999a416eb61b81ef9a25d379",
+            "outputSHA256": "4e6d9eccd6b51f110e43757061224c795f76b807eb069e011a022b2d20282445"
+          },
+          {
+            "interpolation": "STEP",
+            "inputSHA256": "469a4a29ea91c9711717cb0c7022ab1571cf19ce87a7196315e0d0b25914d56a",
+            "outputSHA256": "87f9f86f26b4da93717e28759f7a295efdc102358e22e3dc2b13b2dadff372ec"
+          },
+          {
+            "interpolation": "LINEAR",
+            "inputSHA256": "dd450d692e4d14fe2d872bee68ecbb95933a7036999a416eb61b81ef9a25d379",
+            "outputSHA256": "21e087f02138dd71c489d87a80028310e1ac9c85ea0bdb0103e46d9bdeb8ba19"
+          },
+          {
+            "interpolation": "STEP",
+            "inputSHA256": "469a4a29ea91c9711717cb0c7022ab1571cf19ce87a7196315e0d0b25914d56a",
+            "outputSHA256": "4bf994429e904d636ddceb4967ed28bd1846d3b653d9dc8c36dd0234aa4ae4d4"
+          },
+          {
+            "interpolation": "STEP",
+            "inputSHA256": "469a4a29ea91c9711717cb0c7022ab1571cf19ce87a7196315e0d0b25914d56a",
+            "outputSHA256": "085a9d5c79d473327b4436cac801c8b38bee00c7b3ff9bfcef474515b4e7dadb"
+          },
+          {
+            "interpolation": "LINEAR",
+            "inputSHA256": "dd450d692e4d14fe2d872bee68ecbb95933a7036999a416eb61b81ef9a25d379",
+            "outputSHA256": "fec755155e0db11de263d6f0286039f7e840cf4cbe42ec32aaa8e37f7029585b"
+          },
+          {
+            "interpolation": "STEP",
+            "inputSHA256": "469a4a29ea91c9711717cb0c7022ab1571cf19ce87a7196315e0d0b25914d56a",
+            "outputSHA256": "d7855c0f7bdb4c7643e0f93baca50c8d56c0faf7955ac54ddaed91a7d9f0725b"
+          },
+          {
+            "interpolation": "STEP",
+            "inputSHA256": "469a4a29ea91c9711717cb0c7022ab1571cf19ce87a7196315e0d0b25914d56a",
+            "outputSHA256": "1bfc704178047263b0dc10abdd895055807fcdb94290c3a4166080ca21bfb5c3"
+          },
+          {
+            "interpolation": "LINEAR",
+            "inputSHA256": "dd450d692e4d14fe2d872bee68ecbb95933a7036999a416eb61b81ef9a25d379",
+            "outputSHA256": "0c71a929dee342328d8aaed374e822ca817637bcf13c94ae4ff9feff9c743cfb"
+          },
+          {
+            "interpolation": "STEP",
+            "inputSHA256": "469a4a29ea91c9711717cb0c7022ab1571cf19ce87a7196315e0d0b25914d56a",
+            "outputSHA256": "c3112c0c9497ab17618b0ca257bf3ed9b87b4f48a6c00d02bcfdafbb912320cc"
+          }
+        ]
+      }
+    ],
+    "nodes": [
+      {
+        "mesh": 1,
+        "name": "Embedded_cream_ear_-1",
+        "rotation": [
+          3.774895063202166e-8,
+          0,
+          0,
+          1
+        ],
+        "translation": [
+          -0.4560000002384186,
+          0.7400000095367432,
+          0.08384186029434204
+        ]
+      },
+      {
+        "mesh": 2,
+        "name": "Embedded_cream_ear_1",
+        "rotation": [
+          3.774895063202166e-8,
+          0,
+          0,
+          1
+        ],
+        "translation": [
+          0.4560000002384186,
+          0.7400000095367432,
+          0.08353716135025024
+        ]
+      },
+      {
+        "mesh": 3,
+        "name": "Eye_amber_iris_-1",
+        "rotation": [
+          3.774895063202166e-8,
+          0,
+          0,
+          1
+        ],
+        "translation": [
+          -0.2329999953508377,
+          0.343999981880188,
+          0.4548371434211731
+        ]
+      },
+      {
+        "mesh": 4,
+        "name": "Eye_amber_iris_1",
+        "rotation": [
+          3.774895063202166e-8,
+          0,
+          0,
+          1
+        ],
+        "translation": [
+          0.2329999953508377,
+          0.343999981880188,
+          0.45477086305618286
+        ]
+      },
+      {
+        "mesh": 5,
+        "name": "Eye_large_glint_-1",
+        "rotation": [
+          3.774895063202166e-8,
+          0,
+          0,
+          1
+        ],
+        "translation": [
+          -0.2720000147819519,
+          0.38499999046325684,
+          0.48783716559410095
+        ]
+      },
+      {
+        "mesh": 6,
+        "name": "Eye_large_glint_1",
+        "rotation": [
+          3.774895063202166e-8,
+          0,
+          0,
+          1
+        ],
+        "translation": [
+          0.21799999475479126,
+          0.38499999046325684,
+          0.4877708852291107
+        ]
+      },
+      {
+        "mesh": 7,
+        "name": "Eye_round_pupil_-1",
+        "rotation": [
+          3.774895063202166e-8,
+          0,
+          0,
+          1
+        ],
+        "translation": [
+          -0.23100000619888306,
+          0.34499990940093994,
+          0.4728371798992157
+        ]
+      },
+      {
+        "mesh": 8,
+        "name": "Eye_round_pupil_1",
+        "rotation": [
+          3.774895063202166e-8,
+          0,
+          0,
+          1
+        ],
+        "translation": [
+          0.23100000619888306,
+          0.34499990940093994,
+          0.47277089953422546
+        ]
+      },
+      {
+        "mesh": 9,
+        "name": "Eye_small_glint_-1",
+        "rotation": [
+          3.774895063202166e-8,
+          0,
+          0,
+          1
+        ],
+        "translation": [
+          -0.2160000056028366,
+          0.3169999122619629,
+          0.4868371784687042
+        ]
+      },
+      {
+        "mesh": 10,
+        "name": "Eye_small_glint_1",
+        "rotation": [
+          3.774895063202166e-8,
+          0,
+          0,
+          1
+        ],
+        "translation": [
+          0.27399998903274536,
+          0.3169999122619629,
+          0.486770898103714
+        ]
+      },
+      {
+        "mesh": 11,
+        "name": "Eye_white_-1",
+        "rotation": [
+          3.774895063202166e-8,
+          0,
+          0,
+          1
+        ],
+        "translation": [
+          -0.24500000476837158,
+          0.34499990940093994,
+          0.41483715176582336
+        ]
+      },
+      {
+        "mesh": 12,
+        "name": "Eye_white_1",
+        "rotation": [
+          3.774895063202166e-8,
+          0,
+          0,
+          1
+        ],
+        "translation": [
+          0.24500000476837158,
+          0.34499990940093994,
+          0.41477087140083313
+        ]
+      },
+      {
+        "mesh": 13,
+        "name": "Muzzle_whisker_dot_-1_0",
+        "rotation": [
+          3.774895063202166e-8,
+          0,
+          0,
+          1
+        ],
+        "translation": [
+          -0.15800000727176666,
+          0.09599995613098145,
+          0.4959804117679596
+        ]
+      },
+      {
+        "mesh": 14,
+        "name": "Muzzle_whisker_dot_-1_1",
+        "rotation": [
+          3.774895063202166e-8,
+          0,
+          0,
+          1
+        ],
+        "translation": [
+          -0.1940000057220459,
+          0.11399996280670166,
+          0.4832698404788971
+        ]
+      },
+      {
+        "mesh": 15,
+        "name": "Muzzle_whisker_dot_-1_2",
+        "rotation": [
+          3.774895063202166e-8,
+          0,
+          0,
+          1
+        ],
+        "translation": [
+          -0.23000000417232513,
+          0.09599995613098145,
+          0.4637965261936188
+        ]
+      },
+      {
+        "mesh": 16,
+        "name": "Muzzle_whisker_dot_1_0",
+        "rotation": [
+          3.774895063202166e-8,
+          0,
+          0,
+          1
+        ],
+        "translation": [
+          0.15800000727176666,
+          0.09599995613098145,
+          0.49608173966407776
+        ]
+      },
+      {
+        "mesh": 17,
+        "name": "Muzzle_whisker_dot_1_1",
+        "rotation": [
+          3.774895063202166e-8,
+          0,
+          0,
+          1
+        ],
+        "translation": [
+          0.1940000057220459,
+          0.11399996280670166,
+          0.48327770829200745
+        ]
+      },
+      {
+        "mesh": 18,
+        "name": "Muzzle_whisker_dot_1_2",
+        "rotation": [
+          3.774895063202166e-8,
+          0,
+          0,
+          1
+        ],
+        "translation": [
+          0.23000000417232513,
+          0.09599995613098145,
+          0.4640132486820221
+        ]
+      },
+      {
+        "mesh": 19,
+        "name": "Tiger_gentle_mouth",
+        "rotation": [
+          3.774895063202166e-8,
+          0,
+          0,
+          1
+        ],
+        "translation": [
+          0,
+          -1.0800000429153442,
+          -0.03999999910593033
+        ]
+      },
+      {
+        "mesh": 20,
+        "name": "Tiger_rounded_nose",
+        "rotation": [
+          3.774895063202166e-8,
+          0,
+          0,
+          1
+        ],
+        "translation": [
+          0,
+          -1.0800000429153442,
+          -0.03999999910593033
+        ]
+      },
+      {
+        "children": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "name": "TigerHead",
+        "translation": [
+          0,
+          0.5500000715255737,
+          0.03999999910593033
+        ]
+      },
+      {
+        "children": [
+          20
+        ],
+        "name": "TigerChest",
+        "translation": [
+          0,
+          0.44999998807907104,
+          0
+        ]
+      },
+      {
+        "name": "TigerTailTip",
+        "rotation": [
+          0.45381107926368713,
+          0.05347160995006561,
+          -0.4574020802974701,
+          0.7628759145736694
+        ],
+        "scale": [
+          1,
+          0.9999999403953552,
+          0.9999999403953552
+        ],
+        "translation": [
+          3.259629011154175e-8,
+          0.48020824790000916,
+          -3.3993273973464966e-8
+        ]
+      },
+      {
+        "children": [
+          22
+        ],
+        "name": "TigerTailBase",
+        "rotation": [
+          -0.6584921479225159,
+          -0.11969748884439468,
+          -0.11969748139381409,
+          0.7333029508590698
+        ],
+        "scale": [
+          1,
+          0.9999999403953552,
+          1
+        ],
+        "translation": [
+          0,
+          0.5099999904632568,
+          -0.3400000035762787
+        ]
+      },
+      {
+        "children": [
+          21,
+          23
+        ],
+        "name": "TigerRoot",
+        "translation": [
+          0,
+          0.07999999821186066,
+          0
+        ]
+      },
+      {
+        "extras": {
+          "continuousBody": "applied voxel union of original sculpt seeds",
+          "coat": "original 3D paint field baked at authored UVs; no external assets"
+        },
+        "mesh": 0,
+        "name": "Tiger_FusedBody",
+        "skin": 0
+      },
+      {
+        "children": [
+          25,
+          24
+        ],
+        "extras": {
+          "authorship": "new-reconstruction",
+          "originalSourceStatus": "missing-source",
+          "candidateStatus": "unapproved",
+          "assetVersion": "tiger-reconstructed-v001"
+        },
+        "name": "Tiger_Idle_Rig"
+      }
+    ],
+    "materials": [
+      {
+        "doubleSided": true,
+        "name": "Tiger_original_UV_coat",
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 0
+          },
+          "metallicFactor": 0,
+          "roughnessFactor": 0.7900000214576721
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "Tiger_cream_eye_and_ear",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0.8549926280975342,
+            0.7529422044754028,
+            0.577580451965332,
+            1
+          ],
+          "metallicFactor": 0,
+          "roughnessFactor": 0.6899999976158142
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "Tiger_warm_amber_iris",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0.48514994978904724,
+            0.20507873594760895,
+            0.03560131415724754,
+            1
+          ],
+          "metallicFactor": 0,
+          "roughnessFactor": 0.4000000059604645
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "Tiger_bright_eye_glints",
+        "pbrMetallicRoughness": {
+          "metallicFactor": 0,
+          "roughnessFactor": 0.1599999964237213
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "Tiger_dark_round_pupils",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0.022173885256052017,
+            0.028426039963960648,
+            0.024157632142305374,
+            1
+          ],
+          "metallicFactor": 0,
+          "roughnessFactor": 0.23999999463558197
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "Tiger_soft_rose_nose",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0.40724021196365356,
+            0.17144110798835754,
+            0.13286831974983215,
+            1
+          ],
+          "metallicFactor": 0,
+          "roughnessFactor": 0.6499999761581421
+        }
+      }
+    ],
+    "skins": [
+      {
+        "inverseBindMatrices": 6,
+        "joints": [
+          24,
+          21,
+          20,
+          23,
+          22
+        ],
+        "name": "Tiger_Idle_Rig"
+      }
+    ],
+    "embeddedImages": [
+      {
+        "mimeType": "image/png"
+      }
+    ]
+  },
+  "byteExact": false,
+  "limits": [
+    "UV island coordinates and generated coat PNG bytes can vary under Blender smart-project packing",
+    "Coat color field is the original vector_paint function; actual exported coat is separately checked by CPU PNG embedding and WebGL captures",
+    "Not a recovered historical animal or a cross-Blender byte identity claim"
+  ]
+}
