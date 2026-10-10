@@ -1,0 +1,38 @@
+{
+  "checkedAt": "2026-10-10",
+  "method": "Native Sites get_site_version (read-only)",
+  "versions": [
+    {
+      "id": "appgprj_6ac0409a78688191a04e4997548f9e5b~appgver_d1d300c3b52c8191a6aaee464825cccc",
+      "project_id": "appgprj_6ac0409a78688191a04e4997548f9e5b",
+      "version_number": 29,
+      "source": {
+        "commit_sha": "aa41b1a3601c5254c28bc5a4c853cd5efa50c5cc"
+      },
+      "archive_storage": {
+        "archive_format": "tar",
+        "sediment_file_id": "file_00000000cdec81f58b3c2c19c1678067",
+        "content_hash": "sha256:6f495383e5b839945ede58d4ca819592d8b1c1b15c4f3002e8630a72bc6b7b2a",
+        "size_bytes": 50841600,
+        "file_count": 184
+      },
+      "deployment_id": "appgdep_6ac71feee79081919e47b88ab131bd2a"
+    },
+    {
+      "id": "appgprj_6ac0409a78688191a04e4997548f9e5b~appgver_6af82148ff88819194210a2faca948d2",
+      "project_id": "appgprj_6ac0409a78688191a04e4997548f9e5b",
+      "version_number": 30,
+      "source": {
+        "commit_sha": "a5535893645f35d4000ec773bff61caef19463cf"
+      },
+      "archive_storage": {
+        "archive_format": "tar",
+        "sediment_file_id": "file_0000000095e882098d92a3851d849e07",
+        "content_hash": "sha256:0fb1c6d522b83467606da543f74755ecdb60e91e50cfc2c6ed34e3972c5481c7",
+        "size_bytes": 50841600,
+        "file_count": 184
+      },
+      "deployment_id": "appgdep_6ac988609b7c8191855d14e0607b7c88"
+    }
+  ]
+}

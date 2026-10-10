@@ -1,13 +1,18 @@
 # Zodiac pet source audit and loading boundary
 
-The current tiger and other eleven companions are temporary procedural geometry.
+The existing tiger and other eleven companions are temporary procedural geometry.
 The v30 application called `createZodiacPet`, which constructs primitives and has
 no authored-model request. The preserved authoring archive was also never an
 application integration: its own report says preservation only.
 
 ## Recovered animal assets
 
-**Zero authored zodiac animals were found.** The repository archive was read at
+**Zero authored zodiac GLBs were found in the audited archive.** This is a scoped
+archive result, not evidence that models in other work or storage do not exist.
+The existing twelve code-generated models are preserved and already connected;
+their source first appears at verified commit
+`dffb235fbe47c063b8535a21b4fdf3ea8235d6aa`. v29/v30 use the same generator.
+The repository archive was read at
 immutable commit `956fe6e2a7f3de3a0aabe3c59d9d5db3795c7123`, branch
 `archive/saju-local-authoring-20261009`, directory
 `archives/2026-10-09-local-authoring`. All 906 indexed file entries were checked
@@ -26,19 +31,30 @@ source path, ZIP, bytes, SHA-256 and identifying mesh/node names, plus hashes fo
 the archive's own reports and manifests. This is evidence of the accessible
 archive contents, not a claim that inaccessible animal files were preserved.
 
-Two missing selected versions have known hashes from the archive's
-`PRESERVATION_REPORT.md`:
+Two historical references have known hashes from the archive's 2026-10-09
+`PRESERVATION_REPORT.md`. Their relationship to the user's current latest
+selection and approval is unverified:
 
-| Branch | Animal | Missing version | Expected SHA-256 |
+| Branch | Animal | Historical reference | Expected SHA-256 |
 | --- | --- | --- | --- |
-| 진 | Dragon | Latest selected Dragon C | `2745a970701c86a3bc74eb0008b597607022a5c7ee576d79b287970ac977d366` |
-| 해 | Pig | Latest pig limb candidate | `d1c6f8625b5fb97cdbde102455cdbf181f335942b7cb0f87aeb07a7fc0fba290` |
+| 진 | Dragon | Previously recorded Dragon C | `2745a970701c86a3bc74eb0008b597607022a5c7ee576d79b287970ac977d366` |
+| 해 | Pig | Previously recorded limb candidate; current latest Pig equivalence unknown | `d1c6f8625b5fb97cdbde102455cdbf181f335942b7cb0f87aeb07a7fc0fba290` |
 
 The other ten animals have no accessible version/approval evidence. The public
 [`manifest.json`](../../../public/models/zodiac-pets/manifest.json) records all
-twelve as `missing-source`, with no guessed model URL or source SHA. Dragon/pig
-latest approval status is `missing`; the others are `unverified`. Their fallback
-remains `procedural-placeholder`.
+twelve as `missing-source` specifically for authored runtime GLBs present in
+this repository, with no guessed model URL or source SHA. Every latest approval
+status is `unverified`. This does not mark the available procedural source as
+missing. The existing `procedural-placeholder` models remain connected.
+
+The follow-up [runtime audit](runtime-audit/README.md) compares actual remote
+history, v29/v30 source and build linkage, all twelve generated models and their
+current loading path. Selection remains the day branch `dayKey[1]`, rather than
+the birth-year animal. The preserved [twelve-model preview](../spirit-depth-pets/twelve-pets.png)
+already labels these models as temporary forms. No new animal design substitutes
+for an unidentified original. The older `source-inventory.json` remains unchanged
+as historical archive evidence; its former latest-version wording is superseded
+by the scoped manifest and runtime audit.
 
 ## Application contract
 

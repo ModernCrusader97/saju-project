@@ -66,8 +66,9 @@ function checkAbort(signal?: AbortSignal) {
 }
 
 /** Freshly parse a checksum-verified animal, preserving its meshes, materials
- * and source pose. No authored animals are present in the audited archive yet;
- * missing entries keep an explicitly labelled temporary animal visible. */
+ * and source pose. Missing refers to authored runtime GLBs in this repository;
+ * the existing twelve procedural models remain connected. Other workspaces and
+ * the user's latest crafted model selection have not been verified. */
 export async function loadZodiacPet(branch: string, quality: SpiritQuality = 'high', options: ZodiacPetLoadOptions = {}): Promise<ZodiacPet> {
   checkAbort(options.signal);
   const resolved = resolveBranch(branch), asset = petAssets[resolved];

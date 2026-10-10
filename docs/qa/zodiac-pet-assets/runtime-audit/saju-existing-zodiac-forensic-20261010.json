@@ -1,0 +1,490 @@
+{
+  "mode": "read-only existing source audit; no new models or asset exports",
+  "checkedAtUTC": "2026-10-10T02:29:50.323247+00:00",
+  "remoteHeads": 29,
+  "allCommitObjectsExamined": 90,
+  "canonicalGeneratorParity": [
+    {
+      "commit": "dffb235fbe47c063b8535a21b4fdf3ea8235d6aa",
+      "root": "/workspace/saju-project",
+      "fileSha256": "d6e8384d03f1a3eec3ec0f916fb9212ac10c14aa32f41c0d8751892ea54b0daa",
+      "gitBlob": "8595a73296087b93c34487dad9b55174cc396238",
+      "anatomySha256": "19058b23183635624a0fd0aa1441454b19e849192f109d2ad51316b45001f6d0",
+      "lines": 165,
+      "factoryFirstLine": 10
+    },
+    {
+      "commit": "43e2d8dc6efe1654641e639397f37d0ea44f525a",
+      "root": "/workspace/saju-project",
+      "fileSha256": "d6e8384d03f1a3eec3ec0f916fb9212ac10c14aa32f41c0d8751892ea54b0daa",
+      "gitBlob": "8595a73296087b93c34487dad9b55174cc396238",
+      "anatomySha256": "19058b23183635624a0fd0aa1441454b19e849192f109d2ad51316b45001f6d0",
+      "lines": 165,
+      "factoryFirstLine": 10
+    },
+    {
+      "commit": "de85ce2ed7f9c655f532d9a8a16be8855e6dd661",
+      "root": "/workspace/saju-project",
+      "fileSha256": "d6e8384d03f1a3eec3ec0f916fb9212ac10c14aa32f41c0d8751892ea54b0daa",
+      "gitBlob": "8595a73296087b93c34487dad9b55174cc396238",
+      "anatomySha256": "19058b23183635624a0fd0aa1441454b19e849192f109d2ad51316b45001f6d0",
+      "lines": 165,
+      "factoryFirstLine": 10
+    },
+    {
+      "commit": "e0c99c1c72e1fd6f4c90eedf66c12e9a2dd9b744",
+      "root": "/workspace/saju-sites-live-v29-20261010",
+      "fileSha256": "d6e8384d03f1a3eec3ec0f916fb9212ac10c14aa32f41c0d8751892ea54b0daa",
+      "gitBlob": "8595a73296087b93c34487dad9b55174cc396238",
+      "anatomySha256": "19058b23183635624a0fd0aa1441454b19e849192f109d2ad51316b45001f6d0",
+      "lines": 165,
+      "factoryFirstLine": 10
+    },
+    {
+      "commit": "a5535893645f35d4000ec773bff61caef19463cf",
+      "root": "/workspace/saju-sites-live-v29-20261010",
+      "fileSha256": "d6e8384d03f1a3eec3ec0f916fb9212ac10c14aa32f41c0d8751892ea54b0daa",
+      "gitBlob": "8595a73296087b93c34487dad9b55174cc396238",
+      "anatomySha256": "19058b23183635624a0fd0aa1441454b19e849192f109d2ad51316b45001f6d0",
+      "lines": 165,
+      "factoryFirstLine": 10
+    },
+    {
+      "commit": "f7e99f144223d1497238767c26d10ec9f6e2002b",
+      "root": "/workspace/saju-sites-live-v29-20261010",
+      "fileSha256": "08a6596adc8a04de25cce807e417ee90c31c46ecfa082a642537d22401a85a4c",
+      "gitBlob": "9c44ad1d9f9acdfa6cca8ce370e3bf71be6a9067",
+      "anatomySha256": "19058b23183635624a0fd0aa1441454b19e849192f109d2ad51316b45001f6d0",
+      "lines": 274,
+      "factoryFirstLine": 119
+    }
+  ],
+  "perZodiac": [
+    {
+      "branch": "자",
+      "animal": "rat",
+      "existingGenerator": {
+        "commit": "dffb235fbe47c063b8535a21b4fdf3ea8235d6aa",
+        "file": "lib/planet/spirit-zodiac-pet.ts",
+        "line": 61,
+        "sha256": "d6e8384d03f1a3eec3ec0f916fb9212ac10c14aa32f41c0d8751892ea54b0daa",
+        "gitBlob": "8595a73296087b93c34487dad9b55174cc396238"
+      },
+      "currentRuntime": {
+        "commit": "f7e99f144223d1497238767c26d10ec9f6e2002b",
+        "caller": "lib/planet/approved-jade-spirit.ts:136",
+        "loader": "lib/planet/spirit-zodiac-pet.ts:74",
+        "existingGeneratorLine": 170,
+        "connection": "loadZodiacPet → existing createZodiacPet",
+        "cpuParity": true
+      },
+      "separateAuthoredGlb": {
+        "file": null,
+        "url": null,
+        "version": null,
+        "sha256": null,
+        "sourceStatus": "missing-source",
+        "expectedRecordedSha256": null,
+        "recordedLabel": null,
+        "latestApprovalEvidence": "unverified",
+        "scope": "separate authored GLB only; existing procedural source is preserved"
+      },
+      "uncertainty": "No separate authored GLB version or approval identified in the examined sources"
+    },
+    {
+      "branch": "축",
+      "animal": "ox",
+      "existingGenerator": {
+        "commit": "dffb235fbe47c063b8535a21b4fdf3ea8235d6aa",
+        "file": "lib/planet/spirit-zodiac-pet.ts",
+        "line": 65,
+        "sha256": "d6e8384d03f1a3eec3ec0f916fb9212ac10c14aa32f41c0d8751892ea54b0daa",
+        "gitBlob": "8595a73296087b93c34487dad9b55174cc396238"
+      },
+      "currentRuntime": {
+        "commit": "f7e99f144223d1497238767c26d10ec9f6e2002b",
+        "caller": "lib/planet/approved-jade-spirit.ts:136",
+        "loader": "lib/planet/spirit-zodiac-pet.ts:74",
+        "existingGeneratorLine": 174,
+        "connection": "loadZodiacPet → existing createZodiacPet",
+        "cpuParity": true
+      },
+      "separateAuthoredGlb": {
+        "file": null,
+        "url": null,
+        "version": null,
+        "sha256": null,
+        "sourceStatus": "missing-source",
+        "expectedRecordedSha256": null,
+        "recordedLabel": null,
+        "latestApprovalEvidence": "unverified",
+        "scope": "separate authored GLB only; existing procedural source is preserved"
+      },
+      "uncertainty": "No separate authored GLB version or approval identified in the examined sources"
+    },
+    {
+      "branch": "인",
+      "animal": "tiger",
+      "existingGenerator": {
+        "commit": "dffb235fbe47c063b8535a21b4fdf3ea8235d6aa",
+        "file": "lib/planet/spirit-zodiac-pet.ts",
+        "line": 75,
+        "sha256": "d6e8384d03f1a3eec3ec0f916fb9212ac10c14aa32f41c0d8751892ea54b0daa",
+        "gitBlob": "8595a73296087b93c34487dad9b55174cc396238"
+      },
+      "currentRuntime": {
+        "commit": "f7e99f144223d1497238767c26d10ec9f6e2002b",
+        "caller": "lib/planet/approved-jade-spirit.ts:136",
+        "loader": "lib/planet/spirit-zodiac-pet.ts:74",
+        "existingGeneratorLine": 184,
+        "connection": "loadZodiacPet → existing createZodiacPet",
+        "cpuParity": true
+      },
+      "separateAuthoredGlb": {
+        "file": null,
+        "url": null,
+        "version": null,
+        "sha256": null,
+        "sourceStatus": "missing-source",
+        "expectedRecordedSha256": null,
+        "recordedLabel": null,
+        "latestApprovalEvidence": "unverified",
+        "scope": "separate authored GLB only; existing procedural source is preserved"
+      },
+      "uncertainty": "No separate authored GLB version or approval identified in the examined sources"
+    },
+    {
+      "branch": "묘",
+      "animal": "rabbit",
+      "existingGenerator": {
+        "commit": "dffb235fbe47c063b8535a21b4fdf3ea8235d6aa",
+        "file": "lib/planet/spirit-zodiac-pet.ts",
+        "line": 84,
+        "sha256": "d6e8384d03f1a3eec3ec0f916fb9212ac10c14aa32f41c0d8751892ea54b0daa",
+        "gitBlob": "8595a73296087b93c34487dad9b55174cc396238"
+      },
+      "currentRuntime": {
+        "commit": "f7e99f144223d1497238767c26d10ec9f6e2002b",
+        "caller": "lib/planet/approved-jade-spirit.ts:136",
+        "loader": "lib/planet/spirit-zodiac-pet.ts:74",
+        "existingGeneratorLine": 193,
+        "connection": "loadZodiacPet → existing createZodiacPet",
+        "cpuParity": true
+      },
+      "separateAuthoredGlb": {
+        "file": null,
+        "url": null,
+        "version": null,
+        "sha256": null,
+        "sourceStatus": "missing-source",
+        "expectedRecordedSha256": null,
+        "recordedLabel": null,
+        "latestApprovalEvidence": "unverified",
+        "scope": "separate authored GLB only; existing procedural source is preserved"
+      },
+      "uncertainty": "No separate authored GLB version or approval identified in the examined sources"
+    },
+    {
+      "branch": "진",
+      "animal": "dragon",
+      "existingGenerator": {
+        "commit": "dffb235fbe47c063b8535a21b4fdf3ea8235d6aa",
+        "file": "lib/planet/spirit-zodiac-pet.ts",
+        "line": 88,
+        "sha256": "d6e8384d03f1a3eec3ec0f916fb9212ac10c14aa32f41c0d8751892ea54b0daa",
+        "gitBlob": "8595a73296087b93c34487dad9b55174cc396238"
+      },
+      "currentRuntime": {
+        "commit": "f7e99f144223d1497238767c26d10ec9f6e2002b",
+        "caller": "lib/planet/approved-jade-spirit.ts:136",
+        "loader": "lib/planet/spirit-zodiac-pet.ts:74",
+        "existingGeneratorLine": 197,
+        "connection": "loadZodiacPet → existing createZodiacPet",
+        "cpuParity": true
+      },
+      "separateAuthoredGlb": {
+        "file": null,
+        "url": null,
+        "version": null,
+        "sha256": null,
+        "sourceStatus": "missing-source",
+        "expectedRecordedSha256": "2745a970701c86a3bc74eb0008b597607022a5c7ee576d79b287970ac977d366",
+        "recordedLabel": "Previously recorded Dragon C; current latest/approval unverified",
+        "latestApprovalEvidence": "unverified",
+        "scope": "separate authored GLB only; existing procedural source is preserved"
+      },
+      "uncertainty": "No scoped match for recorded GLB hash"
+    },
+    {
+      "branch": "사",
+      "animal": "snake",
+      "existingGenerator": {
+        "commit": "dffb235fbe47c063b8535a21b4fdf3ea8235d6aa",
+        "file": "lib/planet/spirit-zodiac-pet.ts",
+        "line": 101,
+        "sha256": "d6e8384d03f1a3eec3ec0f916fb9212ac10c14aa32f41c0d8751892ea54b0daa",
+        "gitBlob": "8595a73296087b93c34487dad9b55174cc396238"
+      },
+      "currentRuntime": {
+        "commit": "f7e99f144223d1497238767c26d10ec9f6e2002b",
+        "caller": "lib/planet/approved-jade-spirit.ts:136",
+        "loader": "lib/planet/spirit-zodiac-pet.ts:74",
+        "existingGeneratorLine": 210,
+        "connection": "loadZodiacPet → existing createZodiacPet",
+        "cpuParity": true
+      },
+      "separateAuthoredGlb": {
+        "file": null,
+        "url": null,
+        "version": null,
+        "sha256": null,
+        "sourceStatus": "missing-source",
+        "expectedRecordedSha256": null,
+        "recordedLabel": null,
+        "latestApprovalEvidence": "unverified",
+        "scope": "separate authored GLB only; existing procedural source is preserved"
+      },
+      "uncertainty": "No separate authored GLB version or approval identified in the examined sources"
+    },
+    {
+      "branch": "오",
+      "animal": "horse",
+      "existingGenerator": {
+        "commit": "dffb235fbe47c063b8535a21b4fdf3ea8235d6aa",
+        "file": "lib/planet/spirit-zodiac-pet.ts",
+        "line": 109,
+        "sha256": "d6e8384d03f1a3eec3ec0f916fb9212ac10c14aa32f41c0d8751892ea54b0daa",
+        "gitBlob": "8595a73296087b93c34487dad9b55174cc396238"
+      },
+      "currentRuntime": {
+        "commit": "f7e99f144223d1497238767c26d10ec9f6e2002b",
+        "caller": "lib/planet/approved-jade-spirit.ts:136",
+        "loader": "lib/planet/spirit-zodiac-pet.ts:74",
+        "existingGeneratorLine": 218,
+        "connection": "loadZodiacPet → existing createZodiacPet",
+        "cpuParity": true
+      },
+      "separateAuthoredGlb": {
+        "file": null,
+        "url": null,
+        "version": null,
+        "sha256": null,
+        "sourceStatus": "missing-source",
+        "expectedRecordedSha256": null,
+        "recordedLabel": null,
+        "latestApprovalEvidence": "unverified",
+        "scope": "separate authored GLB only; existing procedural source is preserved"
+      },
+      "uncertainty": "No separate authored GLB version or approval identified in the examined sources"
+    },
+    {
+      "branch": "미",
+      "animal": "sheep",
+      "existingGenerator": {
+        "commit": "dffb235fbe47c063b8535a21b4fdf3ea8235d6aa",
+        "file": "lib/planet/spirit-zodiac-pet.ts",
+        "line": 116,
+        "sha256": "d6e8384d03f1a3eec3ec0f916fb9212ac10c14aa32f41c0d8751892ea54b0daa",
+        "gitBlob": "8595a73296087b93c34487dad9b55174cc396238"
+      },
+      "currentRuntime": {
+        "commit": "f7e99f144223d1497238767c26d10ec9f6e2002b",
+        "caller": "lib/planet/approved-jade-spirit.ts:136",
+        "loader": "lib/planet/spirit-zodiac-pet.ts:74",
+        "existingGeneratorLine": 225,
+        "connection": "loadZodiacPet → existing createZodiacPet",
+        "cpuParity": true
+      },
+      "separateAuthoredGlb": {
+        "file": null,
+        "url": null,
+        "version": null,
+        "sha256": null,
+        "sourceStatus": "missing-source",
+        "expectedRecordedSha256": null,
+        "recordedLabel": null,
+        "latestApprovalEvidence": "unverified",
+        "scope": "separate authored GLB only; existing procedural source is preserved"
+      },
+      "uncertainty": "No separate authored GLB version or approval identified in the examined sources"
+    },
+    {
+      "branch": "신",
+      "animal": "monkey",
+      "existingGenerator": {
+        "commit": "dffb235fbe47c063b8535a21b4fdf3ea8235d6aa",
+        "file": "lib/planet/spirit-zodiac-pet.ts",
+        "line": 124,
+        "sha256": "d6e8384d03f1a3eec3ec0f916fb9212ac10c14aa32f41c0d8751892ea54b0daa",
+        "gitBlob": "8595a73296087b93c34487dad9b55174cc396238"
+      },
+      "currentRuntime": {
+        "commit": "f7e99f144223d1497238767c26d10ec9f6e2002b",
+        "caller": "lib/planet/approved-jade-spirit.ts:136",
+        "loader": "lib/planet/spirit-zodiac-pet.ts:74",
+        "existingGeneratorLine": 233,
+        "connection": "loadZodiacPet → existing createZodiacPet",
+        "cpuParity": true
+      },
+      "separateAuthoredGlb": {
+        "file": null,
+        "url": null,
+        "version": null,
+        "sha256": null,
+        "sourceStatus": "missing-source",
+        "expectedRecordedSha256": null,
+        "recordedLabel": null,
+        "latestApprovalEvidence": "unverified",
+        "scope": "separate authored GLB only; existing procedural source is preserved"
+      },
+      "uncertainty": "No separate authored GLB version or approval identified in the examined sources"
+    },
+    {
+      "branch": "유",
+      "animal": "rooster",
+      "existingGenerator": {
+        "commit": "dffb235fbe47c063b8535a21b4fdf3ea8235d6aa",
+        "file": "lib/planet/spirit-zodiac-pet.ts",
+        "line": 129,
+        "sha256": "d6e8384d03f1a3eec3ec0f916fb9212ac10c14aa32f41c0d8751892ea54b0daa",
+        "gitBlob": "8595a73296087b93c34487dad9b55174cc396238"
+      },
+      "currentRuntime": {
+        "commit": "f7e99f144223d1497238767c26d10ec9f6e2002b",
+        "caller": "lib/planet/approved-jade-spirit.ts:136",
+        "loader": "lib/planet/spirit-zodiac-pet.ts:74",
+        "existingGeneratorLine": 238,
+        "connection": "loadZodiacPet → existing createZodiacPet",
+        "cpuParity": true
+      },
+      "separateAuthoredGlb": {
+        "file": null,
+        "url": null,
+        "version": null,
+        "sha256": null,
+        "sourceStatus": "missing-source",
+        "expectedRecordedSha256": null,
+        "recordedLabel": null,
+        "latestApprovalEvidence": "unverified",
+        "scope": "separate authored GLB only; existing procedural source is preserved"
+      },
+      "uncertainty": "No separate authored GLB version or approval identified in the examined sources"
+    },
+    {
+      "branch": "술",
+      "animal": "dog",
+      "existingGenerator": {
+        "commit": "dffb235fbe47c063b8535a21b4fdf3ea8235d6aa",
+        "file": "lib/planet/spirit-zodiac-pet.ts",
+        "line": 138,
+        "sha256": "d6e8384d03f1a3eec3ec0f916fb9212ac10c14aa32f41c0d8751892ea54b0daa",
+        "gitBlob": "8595a73296087b93c34487dad9b55174cc396238"
+      },
+      "currentRuntime": {
+        "commit": "f7e99f144223d1497238767c26d10ec9f6e2002b",
+        "caller": "lib/planet/approved-jade-spirit.ts:136",
+        "loader": "lib/planet/spirit-zodiac-pet.ts:74",
+        "existingGeneratorLine": 247,
+        "connection": "loadZodiacPet → existing createZodiacPet",
+        "cpuParity": true
+      },
+      "separateAuthoredGlb": {
+        "file": null,
+        "url": null,
+        "version": null,
+        "sha256": null,
+        "sourceStatus": "missing-source",
+        "expectedRecordedSha256": null,
+        "recordedLabel": null,
+        "latestApprovalEvidence": "unverified",
+        "scope": "separate authored GLB only; existing procedural source is preserved"
+      },
+      "uncertainty": "No separate authored GLB version or approval identified in the examined sources"
+    },
+    {
+      "branch": "해",
+      "animal": "pig",
+      "existingGenerator": {
+        "commit": "dffb235fbe47c063b8535a21b4fdf3ea8235d6aa",
+        "file": "lib/planet/spirit-zodiac-pet.ts",
+        "line": 143,
+        "sha256": "d6e8384d03f1a3eec3ec0f916fb9212ac10c14aa32f41c0d8751892ea54b0daa",
+        "gitBlob": "8595a73296087b93c34487dad9b55174cc396238"
+      },
+      "currentRuntime": {
+        "commit": "f7e99f144223d1497238767c26d10ec9f6e2002b",
+        "caller": "lib/planet/approved-jade-spirit.ts:136",
+        "loader": "lib/planet/spirit-zodiac-pet.ts:74",
+        "existingGeneratorLine": 252,
+        "connection": "loadZodiacPet → existing createZodiacPet",
+        "cpuParity": true
+      },
+      "separateAuthoredGlb": {
+        "file": null,
+        "url": null,
+        "version": null,
+        "sha256": null,
+        "sourceStatus": "missing-source",
+        "expectedRecordedSha256": "d1c6f8625b5fb97cdbde102455cdbf181f335942b7cb0f87aeb07a7fc0fba290",
+        "recordedLabel": "Recorded pig limb candidate; identity/approval unverified",
+        "latestApprovalEvidence": "unverified",
+        "scope": "separate authored GLB only; existing procedural source is preserved"
+      },
+      "uncertainty": "No scoped match for recorded GLB hash"
+    }
+  ],
+  "cpuVerification": {
+    "report": "/tmp/saju-existing-zodiac-cpu-parity.json",
+    "pass": true,
+    "instancesCompared": 24,
+    "comparisons": 192,
+    "animalUrlRequests": 0
+  },
+  "loaderTests": {
+    "command": "node --test scripts/qa/zodiac-pet-loader.mjs",
+    "cwd": "/workspace/saju-spirit-surface-zodiac-v30-20261010",
+    "passed": 8,
+    "failed": 0
+  },
+  "glbScope": {
+    "gitVersionedPathCount": 20,
+    "gitPathCountExcludingNewTiger": 19,
+    "workspacePaths": 877,
+    "workspaceUniqueHashesExcludingNewTiger": 16,
+    "nestedArchiveZipContainers": 35,
+    "nestedArchiveUniqueZipHashes": 27,
+    "archiveGlbMembers": 61,
+    "archiveUniqueGlbHashes": 53
+  },
+  "excludedNewCandidateCommit": "2c25d0a9c9a339d9d3c37682a04bbe01c8c76b47",
+  "notRun": [
+    "type/build",
+    "new browser render",
+    "original authored animal approval verification",
+    "Library retrieval",
+    "external environment access"
+  ],
+  "changedRepositories": [],
+  "preservedVisualProvenance": {
+    "image": [
+      {
+        "commit": "dffb235fbe47c063b8535a21b4fdf3ea8235d6aa",
+        "file": "docs/qa/spirit-depth-pets/twelve-pets.png",
+        "bytes": 124773,
+        "sha256": "526f9654f18f23f29318f77190b4e0dfdb8e62baf415b900b2216f3dc08d2af2",
+        "gitBlob": "d30565b478eca154cfe47e1a6a617936db3de1a1"
+      },
+      {
+        "commit": "f7e99f144223d1497238767c26d10ec9f6e2002b",
+        "file": "docs/qa/spirit-depth-pets/twelve-pets.png",
+        "bytes": 124773,
+        "sha256": "526f9654f18f23f29318f77190b4e0dfdb8e62baf415b900b2216f3dc08d2af2",
+        "gitBlob": "d30565b478eca154cfe47e1a6a617936db3de1a1"
+      }
+    ],
+    "visuallyInspected": true,
+    "visibleTitle": "일지의 12지 동반자 · 임시 조형",
+    "visibleQualification": "전용 동물 모델의 완성본이 아닙니다.",
+    "scope": "Preserved original grid screenshot, no regeneration or new model authoring."
+  }
+}

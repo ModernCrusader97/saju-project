@@ -1,0 +1,22 @@
+{
+  "image": [
+    {
+      "commit": "dffb235fbe47c063b8535a21b4fdf3ea8235d6aa",
+      "file": "docs/qa/spirit-depth-pets/twelve-pets.png",
+      "bytes": 124773,
+      "sha256": "526f9654f18f23f29318f77190b4e0dfdb8e62baf415b900b2216f3dc08d2af2",
+      "gitBlob": "d30565b478eca154cfe47e1a6a617936db3de1a1"
+    },
+    {
+      "commit": "f7e99f144223d1497238767c26d10ec9f6e2002b",
+      "file": "docs/qa/spirit-depth-pets/twelve-pets.png",
+      "bytes": 124773,
+      "sha256": "526f9654f18f23f29318f77190b4e0dfdb8e62baf415b900b2216f3dc08d2af2",
+      "gitBlob": "d30565b478eca154cfe47e1a6a617936db3de1a1"
+    }
+  ],
+  "visuallyInspected": true,
+  "visibleTitle": "일지의 12지 동반자 · 임시 조형",
+  "visibleQualification": "전용 동물 모델의 완성본이 아닙니다.",
+  "scope": "Preserved original grid screenshot, no regeneration or new model authoring."
+}
