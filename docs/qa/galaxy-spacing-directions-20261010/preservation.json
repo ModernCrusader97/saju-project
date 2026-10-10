@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "base": "c6b79d2e1f0e4bf3aa77c948b0b7190d69ad6573",
+  "originalFiles": 1101,
+  "unchanged": 1097,
+  "changed": [
+    {
+      "file": "components/planet/GalaxyCanvas.tsx",
+      "beforeSha256": "c22d45476068ab54977a0e06191b80b805ff28f33e571790be2bd0f7f2bde361",
+      "afterSha256": "e46889e9b6a3338a8de52c5cae92ede44d41ad970c87350f57e61443fb49b145"
+    },
+    {
+      "file": "lib/planet/asteroid-belt.ts",
+      "beforeSha256": "dbd48365358397d47413f2082594c5bf8bf9bc2bb5325be8df7339149d74ad08",
+      "afterSha256": "84e1ca4778813724c34955793171ebc36ccbfc0f7c60fce89ad5374fde18ea4e"
+    },
+    {
+      "file": "lib/planet/galaxy-helper.ts",
+      "beforeSha256": "d6978b4f112c1c1ae9348b38d5dda3766a827c836a95095fcb701789c6e342a2",
+      "afterSha256": "ca90cd2c7d2c1b7587842a16d8c95647b89bbf317bb3b0f1e576f38e6ff166e7"
+    },
+    {
+      "file": "lib/planet/galaxy-motion.ts",
+      "beforeSha256": "1e9f55f1e1944700fde30e8163f6f7681bf3fc448f2db20e1c91448763b85962",
+      "afterSha256": "22447ccbcbf9470c79c16e796c823494ad5cc0643876c75db56f3f4cf1df5706"
+    }
+  ],
+  "unexpected": [],
+  "originalSourceSha256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+  "publicBodySha256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+  "preserved": [
+    "Every pre-existing file except four explicitly allowed galaxy placement/motion files has identical bytes.",
+    "All original approved source/public models, UV/depth/morphs, pet/planet recipes, APIs, auth, database schema, dependencies/lock and hosting code.",
+    "The independently committed actual B-rig candidate is not merged into this separate galaxy branch."
+  ]
+}

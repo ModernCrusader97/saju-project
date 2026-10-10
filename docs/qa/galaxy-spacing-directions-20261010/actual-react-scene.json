@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "30fps actual React scene keeps envelopes and independent rotations for 600 seconds",
+      "status": "PASS"
+    },
+    {
+      "name": "60fps actual React scene keeps envelopes and independent rotations for 600 seconds",
+      "status": "PASS"
+    },
+    {
+      "name": "144fps actual React scene keeps envelopes and independent rotations for 600 seconds",
+      "status": "PASS"
+    },
+    {
+      "name": "pause, zero speed, prop rebuild, append and reset preserve ID directions and absolute rotation",
+      "status": "PASS"
+    }
+  ],
+  "measurements": [
+    {
+      "fps": 30,
+      "seconds": 600,
+      "systems": 24,
+      "minimumEnvelopeGap": 0.6001641381368676,
+      "hostMilliseconds": 1437.621977
+    },
+    {
+      "fps": 60,
+      "seconds": 600,
+      "systems": 24,
+      "minimumEnvelopeGap": 0.6001641381368481,
+      "hostMilliseconds": 2536.764426
+    },
+    {
+      "fps": 144,
+      "seconds": 600,
+      "systems": 24,
+      "minimumEnvelopeGap": 0.6001641381368339,
+      "hostMilliseconds": 6259.028151
+    },
+    {
+      "scenario": "pause-rebuild-entry-reset",
+      "entryMinimumEnvelopeGap": 0.6002027019686524,
+      "systems": 25
+    }
+  ],
+  "limits": [
+    "Actual React component and Three objects; GPU, Canvas2D and host clock are explicit CPU boundaries.",
+    "Native Worker/WebGL verification is recorded separately."
+  ]
+}

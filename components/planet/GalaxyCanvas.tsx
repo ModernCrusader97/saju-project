@@ -13,6 +13,7 @@ import { createPlanetMaterial, animateSurface, resetSurface } from "@/lib/planet
 import { createPlanetAppearance } from "@/lib/planet/planet-appearance";
 import { animateSurfaceEffects, disposeSurfaceEffects } from "@/lib/planet/surface-effects";
 import { setGalaxyOrbitPosition } from "@/lib/planet/galaxy-motion";
+import { GALAXY_OWNER_SCALE, GALAXY_FRIEND_SCALE, GALAXY_BELT_SCALE, GALAXY_MOON_SCALE, GALAXY_MOON_DISTANCE } from "@/lib/planet/galaxy-system-layout";
 import type { MaskStyle } from "@/lib/planet/uv-mask";
 import { safeDelta, damping, seededRandom, hashSeed } from "@/lib/planet/surface-math";
 import { disposeObject } from "@/lib/planet/render-resources";
@@ -360,7 +361,7 @@ export default function GalaxyCanvas({
         spiralGalaxy.galaxyGroup.rotation.y = simulationTime * .026;
         planetMeshesRef.current.forEach(({group, node}) => {
           if (node.isOwner) return;
-          setGalaxyOrbitPosition(group.position, node.worldPos, simulationTime);
+          setGalaxyOrbitPosition(group.position, node.worldPos, simulationTime, node.baseRadius);
           const landing = landingAnimRef.current;
           if (landing?.group === group) {
             landing.elapsed += motionDt;
@@ -405,19 +406,19 @@ export default function GalaxyCanvas({
       updateCameraPosition();
 
       // 6. 사주 행성 개별 자전, 연주 소행성대 회전 및 위성 공전
-      planetMeshesRef.current.forEach(({ mesh, effects, beltPoints, satPivot, satMesh }) => {
-        mesh.rotation.y += .16 * motionDt;
+      planetMeshesRef.current.forEach(({ node, mesh, effects, beltPoints, satPivot, satMesh }) => {
+        mesh.rotation.y = .16 * simulationTime * node.rotationDirections.body;
         animateSurface(mesh.material, motionDt);
         animateSurfaceEffects(effects, simulationTime, motionDt);
 
         if (beltPoints) {
-          beltPoints.rotation.y += .075 * motionDt;
+          beltPoints.rotation.y = .075 * simulationTime * node.rotationDirections.belt;
         }
 
         if (satPivot) {
-          satPivot.rotation.y += .32 * motionDt;
+          satPivot.rotation.y = .32 * simulationTime * node.rotationDirections.moonOrbit;
           if (satMesh) {
-            satMesh.rotation.y += .21 * motionDt;
+            satMesh.rotation.y = .21 * simulationTime * node.rotationDirections.moonSpin;
             animateSurface(satMesh.material, motionDt);
           }
         }
@@ -558,7 +559,7 @@ export default function GalaxyCanvas({
     nodes.forEach((node) => {
       const planetGroup = new THREE.Group();
       const isOwner = node.isOwner;
-      const scale = isOwner ? 1.3 : 0.88;
+      const scale = isOwner ? GALAXY_OWNER_SCALE : GALAXY_FRIEND_SCALE;
 
       // 4기둥의 천간만 시각화합니다. 원래 간지/계산 데이터는 node에 보존합니다.
       const pD = getStemThemePreset(node.dayKey);
@@ -576,7 +577,7 @@ export default function GalaxyCanvas({
       planetGroup.add(mainMesh);
 
       // 연주 소행성대 파티클 (SLOT-Y: 단 1개 고리 또는 얇은 소행성대 파티클 클라우드)
-      const belt = createAsteroidBeltParticles(pY, scale * 0.58, 1200);
+      const belt = createAsteroidBeltParticles(pY, scale * GALAXY_BELT_SCALE, 1200);
       belt.points.rotation.x = .28;
       planetGroup.add(belt.points);
 
@@ -592,8 +593,8 @@ export default function GalaxyCanvas({
 
         const satMat = createPlanetMaterial(pH, undefined, "pangaea", 256);
         satMesh = new THREE.Mesh(sharedSphereGeo, satMat);
-        satMesh.scale.set(scale * 0.28, scale * 0.28, scale * 0.28);
-        satMesh.position.set(scale * 2.2, 0, 0);
+        satMesh.scale.setScalar(scale * GALAXY_MOON_SCALE);
+        satMesh.position.set(scale * GALAXY_MOON_DISTANCE, 0, 0);
         satPivot.add(satMesh);
       }
 
@@ -619,15 +620,12 @@ export default function GalaxyCanvas({
         newlyArrivedNode.person.id === node.person.id;
 
       if (isNewlyArrived) {
-        // 우주 저편에서 날아오는 초기 시작 좌표 (원경 고도)
-        const startPos = new THREE.Vector3(
-          node.worldPos.x * 2.8 + 8,
-          13,
-          node.worldPos.z * 2.8 + 8
-        );
-        planetGroup.position.copy(startPos);
         const orbitalPosition = new THREE.Vector3();
-        setGalaxyOrbitPosition(orbitalPosition, node.worldPos, simulationTimeRef.current);
+        setGalaxyOrbitPosition(orbitalPosition, node.worldPos, simulationTimeRef.current, node.baseRadius);
+        // Descend above the safe moving lane. Horizontal clearance is preserved
+        // throughout entry; the same cubic offset has zero endpoint velocity.
+        const startPos = orbitalPosition.clone();startPos.y=13;
+        planetGroup.position.copy(startPos);
 
         landingAnimRef.current = {
           personId: node.person.id,
@@ -652,8 +650,14 @@ export default function GalaxyCanvas({
         }, 5500));
       } else {
         // 4대 나선팔 내 3D 안착 좌표 지정
-        planetGroup.position.copy(node.worldPos);
+        if(isOwner)planetGroup.position.copy(node.worldPos);
+        else setGalaxyOrbitPosition(planetGroup.position,node.worldPos,simulationTimeRef.current,node.baseRadius);
       }
+
+      mainMesh.rotation.y=.16*simulationTimeRef.current*node.rotationDirections.body;
+      belt.points.rotation.y=.075*simulationTimeRef.current*node.rotationDirections.belt;
+      if(satPivot)satPivot.rotation.y=.32*simulationTimeRef.current*node.rotationDirections.moonOrbit;
+      if(satMesh)satMesh.rotation.y=.21*simulationTimeRef.current*node.rotationDirections.moonSpin;
 
       if (isOwner) {
         ownerGroupRef.current = planetGroup;

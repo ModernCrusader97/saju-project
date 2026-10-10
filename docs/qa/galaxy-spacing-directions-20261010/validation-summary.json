@@ -1,0 +1,23 @@
+{
+  "cpu": "PASS",
+  "react": "PASS",
+  "independent": "PASS",
+  "preservation": "PASS",
+  "lintDelta": "PASS",
+  "native": {
+    "passed": 11,
+    "failed": 0
+  },
+  "tsc": "PASS",
+  "coreESLint": "PASS",
+  "build": "PASS",
+  "entryCPU": "23/23",
+  "ownerEffects": "13/13",
+  "ownerMaskSession": "10/10",
+  "orbitAnchor": "PASS",
+  "connections": "PASS",
+  "visibility": "PASS",
+  "fullUILint": "6 existing errors and 4 existing warnings, identical to c6",
+  "deployed": false,
+  "parentRigVisualReview": "Blocked: parent Library read returned 403 scope_violation; no retries or alternate transfer performed"
+}

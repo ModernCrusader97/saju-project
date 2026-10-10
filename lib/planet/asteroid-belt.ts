@@ -16,6 +16,16 @@ export interface AsteroidBeltResult {
   particleCount: number;
 }
 
+export const ASTEROID_BELT_SHAPE = Object.freeze({
+  innerRadius: 2.35, outerRadius: 3.35, radialJitter: .22, thickness: .22, pointSize: .08,
+});
+
+/** Full point-cloud sphere, including maximum jitter, thickness and sprite size. */
+export function asteroidBeltVisualRadius(scale: number): number {
+  return Math.hypot((ASTEROID_BELT_SHAPE.outerRadius + ASTEROID_BELT_SHAPE.radialJitter * .5) * scale,
+    ASTEROID_BELT_SHAPE.thickness * .5 * scale) + ASTEROID_BELT_SHAPE.pointSize * scale;
+}
+
 export function createAsteroidBeltParticles(
   yearPreset: GanziThemePreset,
   scale: number = 1.0,
@@ -30,8 +40,8 @@ export function createAsteroidBeltParticles(
   const sCol = new THREE.Color(yearPreset.surface.secondaryColor);
 
   // 안쪽/바깥쪽 반경 (행성 본체와의 간격 유지)
-  const innerRadius = 2.35 * scale;
-  const outerRadius = 3.35 * scale;
+  const innerRadius = ASTEROID_BELT_SHAPE.innerRadius * scale;
+  const outerRadius = ASTEROID_BELT_SHAPE.outerRadius * scale;
   const beltWidth = outerRadius - innerRadius;
 
   for (let i = 0; i < count; i++) {
@@ -40,14 +50,14 @@ export function createAsteroidBeltParticles(
     const v = random();
     const rNorm = (u + v) * 0.5;
     // 자연스러운 경계선 분산을 위한 미세 지터
-    const jitter = (random() - 0.5) * 0.22 * scale;
+    const jitter = (random() - 0.5) * ASTEROID_BELT_SHAPE.radialJitter * scale;
     const r = innerRadius + rNorm * beltWidth + jitter;
 
     // 2. 궤도 각도
     const theta = random() * Math.PI * 2;
 
     // 3. 소행성대 3D 입체 두께 (성간 암석 부유 클라우드)
-    const thickness = (random() - 0.5) * 0.22 * scale;
+    const thickness = (random() - 0.5) * ASTEROID_BELT_SHAPE.thickness * scale;
 
     const x = Math.cos(theta) * r;
     const z = Math.sin(theta) * r;
@@ -78,7 +88,7 @@ export function createAsteroidBeltParticles(
   const starTex = createStarGlowTexture();
 
   const material = new THREE.PointsMaterial({
-    size: 0.08 * scale,
+    size: ASTEROID_BELT_SHAPE.pointSize * scale,
     map: starTex,
     vertexColors: true,
     transparent: true,

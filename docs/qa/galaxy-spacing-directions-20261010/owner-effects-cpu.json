@@ -1,0 +1,303 @@
+{
+  "phase": "after",
+  "checks": [
+    {
+      "name": "갑자: personal and galaxy effects share batches and normalized placements",
+      "status": "PASS"
+    },
+    {
+      "name": "을축: personal and galaxy effects share batches and normalized placements",
+      "status": "PASS"
+    },
+    {
+      "name": "병인: personal and galaxy effects share batches and normalized placements",
+      "status": "PASS"
+    },
+    {
+      "name": "정묘: personal and galaxy effects share batches and normalized placements",
+      "status": "PASS"
+    },
+    {
+      "name": "무진: personal and galaxy effects share batches and normalized placements",
+      "status": "PASS"
+    },
+    {
+      "name": "기사: personal and galaxy effects share batches and normalized placements",
+      "status": "PASS"
+    },
+    {
+      "name": "경오: personal and galaxy effects share batches and normalized placements",
+      "status": "PASS"
+    },
+    {
+      "name": "신미: personal and galaxy effects share batches and normalized placements",
+      "status": "PASS"
+    },
+    {
+      "name": "임신: personal and galaxy effects share batches and normalized placements",
+      "status": "PASS"
+    },
+    {
+      "name": "계유: personal and galaxy effects share batches and normalized placements",
+      "status": "PASS"
+    },
+    {
+      "name": "mixed day/month effects occupy the same personal 70/30 regions",
+      "status": "PASS"
+    },
+    {
+      "name": "effects follow simulation time, freeze on pause and zero speed, reset with the body",
+      "status": "PASS"
+    },
+    {
+      "name": "node replacement and unmount dispose every effect instance buffer, geometry and material once",
+      "status": "PASS"
+    }
+  ],
+  "observations": [
+    {
+      "key": "갑자",
+      "batches": [
+        {
+          "name": "whole-갑-trunks",
+          "count": 860,
+          "kind": "trunks",
+          "region": "whole",
+          "presetKey": "갑"
+        },
+        {
+          "name": "whole-갑-tiered-forest-canopy",
+          "count": 860,
+          "kind": "tiered-forest-canopy",
+          "region": "whole",
+          "presetKey": "갑"
+        }
+      ],
+      "maxNormalizedMatrixError": 6.121558127070159e-8,
+      "geometryRadius": 1,
+      "effectsRadius": 1,
+      "worldScale": 1.3
+    },
+    {
+      "key": "을축",
+      "batches": [
+        {
+          "name": "whole-을-trunks",
+          "count": 920,
+          "kind": "trunks",
+          "region": "whole",
+          "presetKey": "을"
+        },
+        {
+          "name": "whole-을-broadleaf-canopy",
+          "count": 920,
+          "kind": "broadleaf-canopy",
+          "region": "whole",
+          "presetKey": "을"
+        },
+        {
+          "name": "whole-을-climbing-vines",
+          "count": 307,
+          "kind": "climbing-vines",
+          "region": "whole",
+          "presetKey": "을"
+        }
+      ],
+      "maxNormalizedMatrixError": 7.410307190092169e-8,
+      "geometryRadius": 1,
+      "effectsRadius": 1,
+      "worldScale": 1.3
+    },
+    {
+      "key": "병인",
+      "batches": [
+        {
+          "name": "whole-병-lava-domes",
+          "count": 94,
+          "kind": "lava-domes",
+          "region": "whole",
+          "presetKey": "병"
+        },
+        {
+          "name": "whole-병-flame-plumes",
+          "count": 94,
+          "kind": "flame-plumes",
+          "region": "whole",
+          "presetKey": "병"
+        },
+        {
+          "name": "whole-병-rising-embers",
+          "count": 94,
+          "kind": "rising-embers",
+          "region": "whole",
+          "presetKey": "병"
+        }
+      ],
+      "maxNormalizedMatrixError": 8.054681721603174e-8,
+      "geometryRadius": 1,
+      "effectsRadius": 1,
+      "worldScale": 1.3
+    },
+    {
+      "key": "정묘",
+      "batches": [
+        {
+          "name": "whole-정-lava-domes",
+          "count": 70,
+          "kind": "lava-domes",
+          "region": "whole",
+          "presetKey": "정"
+        },
+        {
+          "name": "whole-정-flame-plumes",
+          "count": 70,
+          "kind": "flame-plumes",
+          "region": "whole",
+          "presetKey": "정"
+        },
+        {
+          "name": "whole-정-rising-embers",
+          "count": 70,
+          "kind": "rising-embers",
+          "region": "whole",
+          "presetKey": "정"
+        }
+      ],
+      "maxNormalizedMatrixError": 6.443745381723431e-8,
+      "geometryRadius": 1,
+      "effectsRadius": 1,
+      "worldScale": 1.3
+    },
+    {
+      "key": "무진",
+      "batches": [
+        {
+          "name": "whole-무-sandstone-outcrops",
+          "count": 172,
+          "kind": "sandstone-outcrops",
+          "region": "whole",
+          "presetKey": "무"
+        },
+        {
+          "name": "whole-무-strata-caps",
+          "count": 58,
+          "kind": "strata-caps",
+          "region": "whole",
+          "presetKey": "무"
+        }
+      ],
+      "maxNormalizedMatrixError": 8.054681721603174e-8,
+      "geometryRadius": 1,
+      "effectsRadius": 1,
+      "worldScale": 1.3
+    },
+    {
+      "key": "기사",
+      "batches": [
+        {
+          "name": "whole-기-earthen-terraces",
+          "count": 135,
+          "kind": "earthen-terraces",
+          "region": "whole",
+          "presetKey": "기"
+        }
+      ],
+      "maxNormalizedMatrixError": 7.410307190092169e-8,
+      "geometryRadius": 1,
+      "effectsRadius": 1,
+      "worldScale": 1.3
+    },
+    {
+      "key": "경오",
+      "batches": [
+        {
+          "name": "whole-경-titanium-fins",
+          "count": 180,
+          "kind": "titanium-fins",
+          "region": "whole",
+          "presetKey": "경"
+        }
+      ],
+      "maxNormalizedMatrixError": 5.960464477539063e-8,
+      "geometryRadius": 1,
+      "effectsRadius": 1,
+      "worldScale": 1.3
+    },
+    {
+      "key": "신미",
+      "batches": [
+        {
+          "name": "whole-신-mercury-beads",
+          "count": 155,
+          "kind": "mercury-beads",
+          "region": "whole",
+          "presetKey": "신"
+        }
+      ],
+      "maxNormalizedMatrixError": 5.960464477539063e-8,
+      "geometryRadius": 1,
+      "effectsRadius": 1,
+      "worldScale": 1.3
+    },
+    {
+      "key": "임신",
+      "batches": [
+        {
+          "name": "whole-임-raised-water-crests",
+          "count": 68,
+          "kind": "raised-water-crests",
+          "region": "whole",
+          "presetKey": "임"
+        },
+        {
+          "name": "whole-임-foam-crest-lines",
+          "count": 68,
+          "kind": "foam-crest-lines",
+          "region": "whole",
+          "presetKey": "임"
+        }
+      ],
+      "maxNormalizedMatrixError": 7.410307190092169e-8,
+      "geometryRadius": 1,
+      "effectsRadius": 1,
+      "worldScale": 1.3
+    },
+    {
+      "key": "계유",
+      "batches": [
+        {
+          "name": "whole-계-raised-water-crests",
+          "count": 48,
+          "kind": "raised-water-crests",
+          "region": "whole",
+          "presetKey": "계"
+        },
+        {
+          "name": "whole-계-foam-crest-lines",
+          "count": 48,
+          "kind": "foam-crest-lines",
+          "region": "whole",
+          "presetKey": "계"
+        }
+      ],
+      "maxNormalizedMatrixError": 5.4771835733546936e-8,
+      "geometryRadius": 1,
+      "effectsRadius": 1,
+      "worldScale": 1.3
+    },
+    {
+      "scenario": "cleanup",
+      "firstResources": 30,
+      "nextResources": 45,
+      "allOnce": true
+    }
+  ],
+  "passed": 13,
+  "failed": 0,
+  "sourceSha256": "e46889e9b6a3338a8de52c5cae92ede44d41ad970c87350f57e61443fb49b145",
+  "harnessSha256": "e503059e6b5f05bf8dd2f17dab1eddba7f542c146b2560583a25ad505a974f34",
+  "hostSha256": "c27e8e7bd6290a24acdfa3bf721b28df1f111705e6c2563bd8900999da4b3177",
+  "limits": [
+    "Actual React/Three/material/effects/disposal; GPU, Canvas2D and clock are synthetic host boundaries"
+  ]
+}

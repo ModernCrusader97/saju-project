@@ -1,0 +1,133 @@
+{
+  "status": "FAIL",
+  "phase": "boundary-before",
+  "checks": [
+    {
+      "name": "full body/ring/moon envelopes remain separated during slow differential orbits",
+      "status": "PASS"
+    },
+    {
+      "name": "first lane remains valid with unknown owner birth time and every moon/affinity combination",
+      "status": "FAIL",
+      "error": "Error: No finite galaxy orbit lane could be placed.\n    at spaceGalaxySystems (file:///workspace/saju-galaxy-spacing-directions-20261010/outputs/galaxy-spacing-directions/boundary-before/runtime.mjs:676:36)\n    at Module.buildGalaxyNodes (file:///workspace/saju-galaxy-spacing-directions-20261010/outputs/galaxy-spacing-directions/boundary-before/runtime.mjs:753:10)\n    at file:///workspace/saju-galaxy-spacing-directions-20261010/scripts/qa/galaxy-spacing-directions.mjs:39:19\n    at check (file:///workspace/saju-galaxy-spacing-directions-20261010/scripts/qa/galaxy-spacing-directions.mjs:24:42)\n    at file:///workspace/saju-galaxy-spacing-directions-20261010/scripts/qa/galaxy-spacing-directions.mjs:33:7\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+    },
+    {
+      "name": "analytical orbit-lane separation bounds all future angles, including a fixed owner",
+      "status": "PASS"
+    },
+    {
+      "name": "affinity data, selected arm meanings and owner anchor survive packing; append preserves existing anchors",
+      "status": "PASS"
+    },
+    {
+      "name": "each ID has independent stable bidirectional spin, ring and per-moon directions",
+      "status": "PASS"
+    },
+    {
+      "name": "30/60/144 fps long runs preserve envelopes and agree with the original analytic speed",
+      "status": "PASS"
+    },
+    {
+      "name": "system envelope helper contains body, belt and complete moon sweep across scales",
+      "status": "PASS"
+    },
+    {
+      "name": "dense deterministic construction remains bounded without per-frame collision simulation",
+      "status": "PASS"
+    }
+  ],
+  "measurements": {
+    "spacing": {
+      "minEnvelopeGap": 0.6002030593514056,
+      "worst": {
+        "count": 24,
+        "scale": 1,
+        "time": 120,
+        "gap": 0.6002030593514056,
+        "pair": [
+          11,
+          15
+        ]
+      }
+    },
+    "analytic": {
+      "nodes": 128,
+      "minimumHorizontalEnvelopeGap": 0.6000099999999993,
+      "lanes": 8
+    },
+    "directionDistribution": {
+      "IDs": 10000,
+      "counts": [
+        {
+          "plus": 4989,
+          "minus": 5011
+        },
+        {
+          "plus": 5004,
+          "minus": 4996
+        },
+        {
+          "plus": 4916,
+          "minus": 5084
+        },
+        {
+          "plus": 5011,
+          "minus": 4989
+        }
+      ],
+      "crossCorrelation": [
+        [
+          1,
+          -0.0078,
+          -0.0258,
+          0.0084
+        ],
+        [
+          -0.0078,
+          1,
+          0.0008,
+          -0.0022
+        ],
+        [
+          -0.0258,
+          0.0008,
+          1,
+          0.0038
+        ],
+        [
+          0.0084,
+          -0.0022,
+          0.0038,
+          1
+        ]
+      ]
+    },
+    "longRun": {
+      "seconds": 3600,
+      "fps": [
+        30,
+        60,
+        144
+      ],
+      "minimumEnvelopeGap": 0.6001349361682351,
+      "maxEndpointError": 2.0077893691101456e-8,
+      "positionsCheckedEverySimulationSecond": true
+    },
+    "layoutPerformance": {
+      "systems": 256,
+      "milliseconds": 16.041638000000006,
+      "budgetMilliseconds": 1500
+    }
+  },
+  "sourceHashes": {
+    "components/planet/GalaxyCanvas.tsx": "e46889e9b6a3338a8de52c5cae92ede44d41ad970c87350f57e61443fb49b145",
+    "lib/planet/galaxy-helper.ts": "ca90cd2c7d2c1b7587842a16d8c95647b89bbf317bb3b0f1e576f38e6ff166e7",
+    "lib/planet/galaxy-motion.ts": "22447ccbcbf9470c79c16e796c823494ad5cc0643876c75db56f3f4cf1df5706",
+    "lib/planet/galaxy-system-layout.ts": "754d60e2178967abb4452c49a6f5bd70d96989f5d8bfa775cc0a10ec30a800b5"
+  },
+  "limits": [
+    "CPU uses actual node placement and orbit code; native WebGL/React integration is checked separately.",
+    "Analytical disjoint lanes plus constant equal-radius phase separation provide the all-angle bound; hourly long-run samples alone would not prove it.",
+    "Rendered text-label rectangles and star glow are excluded from physical system envelopes."
+  ]
+}

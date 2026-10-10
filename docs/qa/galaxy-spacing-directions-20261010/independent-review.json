@@ -1,0 +1,101 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "randomized independent swept bounds, arm/data preservation and append stability",
+      "status": "PASS",
+      "evidence": {
+        "fixtures": 160,
+        "systems": 7749,
+        "pairs": 241955,
+        "minimumAllAngleGap": 0.6000199999999967,
+        "maxOrbitRadius": 135.60000000000002,
+        "scope": "Body effects budget 1.19 also included; ring/moon dominate it."
+      }
+    },
+    {
+      "name": "actual React rebuild retains current orbit and four component spin angles",
+      "status": "PASS",
+      "evidence": {
+        "simulationSeconds": 20,
+        "rebuilds": [
+          "owner mask",
+          "same people new array"
+        ],
+        "fourAnglesPreserved": true
+      }
+    },
+    {
+      "name": "actual React entry stays vertical above its moving lane and maintains swept-system gaps",
+      "status": "PASS",
+      "evidence": {
+        "fps": 60,
+        "entrySeconds": 3,
+        "minimumEnvelopeGap": 5.198494917212704,
+        "maxHorizontalLaneError": 1.7963175239127478e-13,
+        "existingComponentsStableOnArrival": true
+      }
+    },
+    {
+      "name": "actual React pause, speed zero, reset and reduced-motion settle are stable",
+      "status": "PASS",
+      "evidence": {
+        "pausedComponentsFrozen": true,
+        "zeroSpeedFrozen": true,
+        "resetTransformsNeutral": true,
+        "reducedEntrySettles": true
+      }
+    },
+    {
+      "name": "actual React no-hour owner and friend construct, render via CPU host and animate across all supported spacing scales",
+      "status": "PASS",
+      "evidence": [
+        {
+          "scale": 0.7,
+          "status": "PASS",
+          "bodies": 2,
+          "moons": 0
+        },
+        {
+          "scale": 1,
+          "status": "PASS",
+          "bodies": 2,
+          "moons": 0
+        },
+        {
+          "scale": 1.5,
+          "status": "PASS",
+          "bodies": 2,
+          "moons": 0
+        }
+      ]
+    }
+  ],
+  "findings": [],
+  "measurements": {},
+  "sourceHashes": {
+    "lib/planet/galaxy-system-layout.ts": "312201f12792973d2c37268694f95a33b6ec3e2fe9d90b65775fb0503eb5fd93",
+    "lib/planet/galaxy-helper.ts": "ca90cd2c7d2c1b7587842a16d8c95647b89bbf317bb3b0f1e576f38e6ff166e7",
+    "lib/planet/galaxy-motion.ts": "22447ccbcbf9470c79c16e796c823494ad5cc0643876c75db56f3f4cf1df5706",
+    "components/planet/GalaxyCanvas.tsx": "e46889e9b6a3338a8de52c5cae92ede44d41ad970c87350f57e61443fb49b145",
+    "lib/planet/asteroid-belt.ts": "84e1ca4778813724c34955793171ebc36ccbfc0f7c60fce89ad5374fde18ea4e"
+  },
+  "limits": [
+    "Read-only production review; GPU renderer/environment and Canvas2D drawing stubbed in /tmp host copy.",
+    "Text label rectangles and star glow excluded from physical envelopes.",
+    "No new production defect identified by these checks."
+  ],
+  "resolvedFindings": [
+    {
+      "priority": "P1",
+      "title": "First owner-adjacent lane rejected by one ULP for no-hour owners",
+      "fix": "Parent raised owner minimum to clearance + MARGIN*2; radialSafe predicate stays strict.",
+      "file": "lib/planet/galaxy-system-layout.ts",
+      "line": 86,
+      "originalEvidence": "/tmp/galaxy-review-boundary-finding.json",
+      "beforeFixAudit": "/tmp/galaxy-review-before-fix-audit.json",
+      "verification": "160 randomized fixtures plus three actual React no-moon cases pass."
+    }
+  ],
+  "reviewConclusion": "No remaining critical or important defect identified in the reviewed spacing/direction change."
+}

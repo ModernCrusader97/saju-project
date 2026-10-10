@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "baseline": "c6b79d2",
+  "baselineErrors": 6,
+  "baselineWarnings": 4,
+  "currentErrors": 6,
+  "currentWarnings": 4,
+  "baselineRules": {
+    "@typescript-eslint/no-unused-vars:1": 1,
+    "react-hooks/immutability:2": 2,
+    "react-hooks/set-state-in-effect:2": 1,
+    "react-hooks/exhaustive-deps:1": 3,
+    "react-hooks/preserve-manual-memoization:2": 1,
+    "react/no-unescaped-entities:2": 2
+  },
+  "currentRules": {
+    "@typescript-eslint/no-unused-vars:1": 1,
+    "react-hooks/immutability:2": 2,
+    "react-hooks/set-state-in-effect:2": 1,
+    "react-hooks/exhaustive-deps:1": 3,
+    "react-hooks/preserve-manual-memoization:2": 1,
+    "react/no-unescaped-entities:2": 2
+  },
+  "limit": "Existing UI lint findings are retained; this is a no-new-findings delta check."
+}

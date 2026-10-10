@@ -1,0 +1,40 @@
+{
+  "finding": "P1 - first orbit lane rejected by floating point boundary subtraction",
+  "source": "lib/planet/galaxy-system-layout.ts:52,84-91",
+  "reproduction": {
+    "people": [
+      {
+        "id": "owner",
+        "isMe": true,
+        "pillars": {
+          "dayKey": "갑자",
+          "monthKey": "병인",
+          "yearKey": "경오"
+        }
+      },
+      {
+        "id": "friend",
+        "isMe": false,
+        "affinityScore": 90,
+        "pillars": {
+          "dayKey": "갑자",
+          "monthKey": "병인",
+          "yearKey": "경오"
+        }
+      }
+    ],
+    "distanceScale": 1
+  },
+  "numbers": {
+    "ownerBaseRadius": 5.8,
+    "ownerVisualRadius": 2.6704780774351575,
+    "friendVisualRadius": 1.8077082370330295,
+    "minimum": 10.878196314468186,
+    "measuredOwnerSeparation": 5.078196314468186,
+    "requiredOwnerSeparation": 5.078196314468187,
+    "difference": -8.881784197001252e-16,
+    "rejected": true
+  },
+  "consequence": "GalaxyCanvas useEffect calls buildGalaxyNodes without catching this exception; valid no-hour owner maps fail to construct.",
+  "recommendation": "Add another MARGIN above the owner minimum (as lane-boundary candidates already do); keep strict radialSafe checks, and cover all owner/friend moon combinations."
+}

@@ -4,6 +4,8 @@ import { SajuInputError } from "@/lib/saju/input";
 import * as THREE from "three";
 
 import { getSpiralArmPosition } from "./spiral-galaxy";
+import { GALAXY_OWNER_SCALE, GALAXY_FRIEND_SCALE, GALAXY_VISUAL_GAP, galaxySystemVisualRadius,
+  galaxyRotationDirections, spaceGalaxySystems, type GalaxyRotationDirections } from './galaxy-system-layout';
 
 export interface GalaxyNode {
   person: GuinPerson;
@@ -17,6 +19,8 @@ export interface GalaxyNode {
   monthKey: string;        // SLOT-M (보조 표면 30%)
   yearKey: string;         // SLOT-Y (고리)
   hourKey?: string;        // SLOT-H (위성)
+  visualRadius: number;    // 몸체·고리·위성의 전체 회전 영역
+  rotationDirections: GalaxyRotationDirections;
 }
 
 // 등록된 인연 데이터를 기반으로 4대 나선팔 3D 은하 노드 좌표를 산출합니다.
@@ -48,6 +52,8 @@ export function buildGalaxyNodes(
       monthKey: ownerPillars.monthKey,
       yearKey: ownerPillars.yearKey,
       hourKey: ownerPillars.hourKey,
+      visualRadius: galaxySystemVisualRadius(GALAXY_OWNER_SCALE,!!ownerPillars.hourKey),
+      rotationDirections: galaxyRotationDirections(ownerPerson.id),
     });
   }
 
@@ -96,10 +102,12 @@ export function buildGalaxyNodes(
       monthKey: pillars.monthKey,
       yearKey: pillars.yearKey,
       hourKey: pillars.hourKey,
+      visualRadius: galaxySystemVisualRadius(GALAXY_FRIEND_SCALE,!!pillars.hourKey),
+      rotationDirections: galaxyRotationDirections(friend.id),
     });
   });
 
-  return nodes;
+  return spaceGalaxySystems(nodes,GALAXY_VISUAL_GAP*Math.max(1,distanceScale));
 }
 
 function withCalculationWarning(person: GuinPerson, warning?: string): GuinPerson {
