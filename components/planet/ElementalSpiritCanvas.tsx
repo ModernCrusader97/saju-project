@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 import { createVisibilityLoop } from "@/lib/planet/visibility-loop";
 import { createStudioEnvironment } from "@/lib/planet/scene-environment";
+import { releaseSceneGPUAllocations } from "@/lib/planet/context-loss-resources";
 import type { ElementalSpiritInstance } from "@/lib/planet/elemental-spirit";
 import { TEN_STEM_SPIRITS, ZODIAC_FEATURES, getSpiritStemPreset, type ZodiacBranch } from "@/lib/planet/spirit-profiles";
 import { loadApprovedSpirit } from "@/lib/planet/approved-jade-spirit";
@@ -170,9 +171,15 @@ export default function ElementalSpiritCanvas({
     const onLost=()=>{activePointer=null;};
     dom.addEventListener("pointerdown",onDown);dom.addEventListener("pointermove",onMove);
     dom.addEventListener("pointerup",onUp);dom.addEventListener("pointercancel",onUp);dom.addEventListener("lostpointercapture",onLost);
-    const onContextLost=(event:Event)=>{event.preventDefault();contextLost=true;setGraphicsError("3D 연결이 잠시 끊겼어요. 복구를 기다려주세요.");};
+    const onContextLost=(event:Event)=>{
+      event.preventDefault();if(contextLost)return;contextLost=true;
+      // Release the old render-target callbacks while the context is lost.
+      // After restoration their captured GPU handles are invalid.
+      scene.environment=null;environment.dispose();releaseSceneGPUAllocations(scene,renderer);
+      setGraphicsError("3D 연결이 잠시 끊겼어요. 복구를 기다려주세요.");
+    };
     const onContextRestored=()=>{
-      try { const restored=createStudioEnvironment(renderer); environment.dispose();environment=restored;scene.environment=restored.texture;contextLost=false;shaderFailed=false;setGraphicsError(null);render(); }
+      try { const restored=createStudioEnvironment(renderer);environment=restored;scene.environment=restored.texture;contextLost=false;shaderFailed=false;setGraphicsError(null);render(); }
       catch { setGraphicsError("정령 반사광을 복구하지 못했어요. 화면을 다시 열어주세요."); }
     };
     dom.addEventListener("webglcontextlost",onContextLost);dom.addEventListener("webglcontextrestored",onContextRestored);

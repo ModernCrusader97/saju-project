@@ -21,6 +21,6 @@
 
 정령은 발 바닥을 유지하는 작은 호흡과 무게 이동, 눈 깜박임을 갖습니다. 화면 탭은 원본 `Gentle_wave_pose`를 최대 0.45로 사용하여 이어진 팔을 살짝 올리고 두 번 작은 인사를 한 뒤 idle로 돌아갑니다. 눈·눈빛·눈썹·미소는 같은 움직임 프레임을 공유합니다. 연속 탭은 한 번의 추가 인사로 모아 포즈 점프를 막습니다. 절대 시간·일시정지·되감기·초기화와 15/60Hz CPU 비교를 검증했습니다. 이는 소실된 production rig나 전체 제스처 라이브러리의 복구가 아닙니다.
 
-[WebGL 캡처·보고서](qa/spirit-attached-effects-20261010/README.md), [가지와 짧은 덩굴 검증](qa/surface-vegetation-actual-b.md), [모래 검증](qa/surface-fissure-sand-20261010/README.md), [이슬 검증](qa/surface-sliding-dew/README.md), [수정한 불꽃 그림자와 기존 비교의 한계](qa/spirit-fire-shadow/README.md)를 함께 보존합니다. 검증된 구현을 먼저 private 후보로 커밋합니다. 실제 빌드 Worker의 앱 UI 검증과 owner-only 사이트 배포 상태는 후속 검증 기록에서 구분해 보고합니다.
+[WebGL 캡처·보고서](qa/spirit-attached-effects-20261010/README.md), [가지와 짧은 덩굴 검증](qa/surface-vegetation-actual-b.md), [모래 검증](qa/surface-fissure-sand-20261010/README.md), [이슬 검증](qa/surface-sliding-dew/README.md), [수정한 불꽃 그림자와 기존 비교의 한계](qa/spirit-fire-shadow/README.md), [모래 법선 보정](qa/spirit-attached-effects-20261010/affine-normal-fix.md), [그래픽 복구 회귀](qa/spirit-attached-effects-20261010/context-recovery.md)를 함께 보존합니다. 검증된 구현을 먼저 private 후보로 커밋합니다. 실제 빌드 Worker의 앱 UI 검증과 owner-only 사이트 배포 상태는 후속 검증 기록에서 구분해 보고합니다.
 
-전체 몸을 감싸는 덩굴, 연속 물리 충돌, 모래 튕김·퇴적, 이슬 합쳐짐·분리 낙하, 壬 물보라는 이번 범위에 없습니다. 모래 비행은 seek 시 현재 부착점 포즈로 재계산합니다. 물리 모바일 GPU의 FPS와 hosted 로그인 화면은 아직 확인하지 않았습니다. 호랑이와 패션은 별도의 private 후보이며 이 표면 릴리스에 섞지 않습니다.
+전체 몸을 감싸는 덩굴, 연속 물리 충돌, 모래 튕김·퇴적, 이슬 합쳐짐·분리 낙하, 壬 물보라는 이번 범위에 없습니다. 모래 비행은 seek 시 현재 부착점 포즈로 재계산합니다. 물리 모바일 GPU의 FPS와 hosted 로그인 화면은 아직 확인하지 않았습니다. 패션은 별도의 private 후보이며 이 표면 릴리스에 섞지 않습니다. 신규 호랑이 후보는 기존 12지 연결이라는 사용자 범위 정정에 따라 사용하지 않고 별도로 보존합니다. 기존 12지의 제작 코드·Git·v29/v30 참조 추적은 별도 작업이며 한 보존 묶음의 검색 결과를 전체 원본 부재로 확대하지 않습니다.

@@ -1,0 +1,2630 @@
+{
+  "status": "PROBE",
+  "builtRoot": "/workspace/saju-spirit-attached-effects-20261010",
+  "builtServerSha256": "c7a0dd754fdf6d4565f9024a1bfa779c336009a5a21a4986c8cdffe055bcdb8f",
+  "harnessSHA256": "731053732ca3cba067090b14951c293eb920e111dcd61b2cec75d100c7402f36",
+  "sourceHashes": {
+    "components/planet/ElementalSpiritCanvas.tsx": "f92df4c866dbecd7284b138e4504e2efdb2ded9dcc052a908d167aa76fb50b71",
+    "lib/planet/approved-jade-spirit.ts": "64c85f63d50e63f57a53e4bcb10a98383657e2f3fce2fd9e5aaa7bde65a1a543",
+    "lib/planet/approved-spirit-motion.ts": "92454b392446e9a85814aafd5653518ad7694d9b4465f3436353a6792d66377f",
+    "lib/planet/mesh-surface.ts": "aed2f700821c6d1b0670af8fcb1acf8bdb908e2db84e41246b84a9889751aba0",
+    "lib/planet/surface-stem-accents.ts": "fbe09631ab1995a81eb0515144b17bcba11bf337b19beb57ce69317d1ebc9b33",
+    "lib/planet/surface-sliding-dew.ts": "e3c847935419bc704179e8c307868330d8df122c58c595a5065d4488f4689bb5",
+    "lib/planet/surface-fissure-sand.ts": "f07fc342b81e14148296ca6b89eee8ed55d785f12475253d21a2ee23b0d5f92f",
+    "lib/planet/surface-woody-branches.ts": "a460444533fd086a461618fff1ac1c7ee6677138ce06a8b9ad2f9d5356d3974b",
+    "lib/planet/affine-instance-normals.ts": "15e2d87ecab90ce9fa2fdce91613117cf021e101d071beb34555fdd02bc1415a",
+    "lib/planet/context-loss-resources.ts": "4e8a70a049d97663f577eb8f5701b005ca2f50836c539b9fcce9c160cbff394b"
+  },
+  "bodySourceSha256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+  "servedBodySha256": [
+    "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84"
+  ],
+  "harnessSha256": "731053732ca3cba067090b14951c293eb920e111dcd61b2cec75d100c7402f36",
+  "passed": 3,
+  "failed": 0,
+  "browser": "151.0.7922.173",
+  "checks": [
+    {
+      "name": "계유 high: exact Worker production controls and attached motion",
+      "status": "PASS"
+    },
+    {
+      "name": "high: production WebGL context loss/restoration and UI unmount stop GPU work",
+      "status": "PASS"
+    },
+    {
+      "name": "source artifact and local-only data boundary remain exact",
+      "status": "PASS"
+    }
+  ],
+  "cases": [
+    {
+      "day": "계유",
+      "quality": "high",
+      "initial": {
+        "ready": "ready",
+        "time": 0,
+        "pixels": "b778ae168fb008444dba79554519a3640472becdbb4a4a66feedb0c8f8c0ad38",
+        "attributes": {
+          "position": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+          "normal": "80706bee870329a0829113e63ed178f0a904029265da2c96c69ad50f9b1f9cec",
+          "uv": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+          "index": "934286d3bdd9361657e390c41762923871cec85a48a7d9775b362aee02dc7830",
+          "morphPosition": "7bf926ae1fd903a4a63d39b32c3c1cdafdcd30bc982138404f38b75f50c4dfde",
+          "morphNormal": "cf790aaebf3c4a41cbed597f93c53a82f4ba43f726c178d9504bc30dffd1ffbd"
+        },
+        "stem": "계",
+        "material": "癸 · Dew water",
+        "kind": 9,
+        "program": "stem-water-v3-r186-coherent-advection:9:high:character-rest-v1",
+        "depth": 1.35,
+        "presentationPosition": [
+          -0.42,
+          0,
+          0
+        ],
+        "displayRotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "bodyMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1.35,
+          0,
+          -0.42,
+          0,
+          0,
+          1
+        ],
+        "native": {
+          "modelMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1.350000023841858,
+            0,
+            -0.41999998688697815,
+            0,
+            0,
+            1
+          ],
+          "seconds": 0,
+          "timeUniformOptimizedOut": false,
+          "density": 1,
+          "morphWeights": [
+            0
+          ],
+          "contextId": 2,
+          "contextGeneration": 0,
+          "programId": 1,
+          "programIsCurrent": true,
+          "programIsLive": true
+        },
+        "rendererProgramId": 1,
+        "morph": [
+          0
+        ],
+        "floor": -0.011906229890882969,
+        "motionRoot": {
+          "name": "ApprovedSpiritMotion",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            "XYZ"
+          ]
+        },
+        "accentsShareMotionRoot": true,
+        "accents": [
+          {
+            "name": "ActualSurfaceSlidingDew",
+            "count": 80,
+            "matrix": 562986269,
+            "particles": null
+          }
+        ],
+        "castFlags": [
+          {
+            "name": "ActualSurfaceSlidingDew",
+            "instanced": true,
+            "castShadow": false,
+            "nonShadowTag": true
+          }
+        ],
+        "bodyCasters": [
+          {
+            "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_quiet_smile",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_1",
+            "castShadow": true
+          }
+        ],
+        "diagnostics": {
+          "supported": true,
+          "mode": "triangle-sliding-condensation",
+          "anchorCount": 80,
+          "limitations": [
+            "Routes follow connected reference triangle edges in rest-local gravity; rigid transforms and explicitly enabled morph vertex positions preserve attachment.",
+            "Condensation, sliding, evaporation and repeat are implemented; bead coalescence and detached falling droplets are omitted.",
+            "Each ellipsoid stays outside its current face plane; full collision simulation against other body parts is not performed.",
+            "Creation-time face masking preserves gaze and expression; accessory masks hide only local beads without reseeding.",
+            "Fixed path/particle budgets do not adapt to later topology, skinning or large scale changes; morphs require explicit opt-in."
+          ],
+          "budget": {
+            "drawCalls": 1,
+            "instances": 80,
+            "triangles": 13440,
+            "bufferBytes": 9872
+          }
+        },
+        "draws": 208,
+        "skippedDraws": 0,
+        "shadow": {
+          "enabled": true,
+          "actualType": 1,
+          "mapSize": [
+            1024,
+            1024
+          ],
+          "groundMaterial": "ShadowMaterial",
+          "groundOpacity": 0.09,
+          "groundY": -0.016,
+          "receiveShadow": true
+        },
+        "memory": {
+          "geometries": 28,
+          "textures": 6
+        },
+        "glError": 0,
+        "glDiagnostics": []
+      },
+      "idle": {
+        "ready": "ready",
+        "time": 0.6000000000000001,
+        "pixels": "abc38cea621c3568d97a52c32f983546fb067512bd38c013bd3bc44ccec3f3c5",
+        "attributes": {
+          "position": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+          "normal": "80706bee870329a0829113e63ed178f0a904029265da2c96c69ad50f9b1f9cec",
+          "uv": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+          "index": "934286d3bdd9361657e390c41762923871cec85a48a7d9775b362aee02dc7830",
+          "morphPosition": "7bf926ae1fd903a4a63d39b32c3c1cdafdcd30bc982138404f38b75f50c4dfde",
+          "morphNormal": "cf790aaebf3c4a41cbed597f93c53a82f4ba43f726c178d9504bc30dffd1ffbd"
+        },
+        "stem": "계",
+        "material": "癸 · Dew water",
+        "kind": 9,
+        "program": "stem-water-v3-r186-coherent-advection:9:high:character-rest-v1",
+        "depth": 1.35,
+        "presentationPosition": [
+          -0.42,
+          0,
+          0
+        ],
+        "displayRotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "bodyMatrix": [
+          0.9999977187894707,
+          0.0021359812393047326,
+          0,
+          0,
+          -0.0021366764183356683,
+          1.0003231792533989,
+          0,
+          0,
+          0,
+          0,
+          1.35,
+          0,
+          -0.4166694396680825,
+          0.0004374505296447437,
+          0,
+          1
+        ],
+        "native": {
+          "modelMatrix": [
+            0.9999977350234985,
+            0.0021359813399612904,
+            0,
+            0,
+            -0.002136676339432597,
+            1.0003231763839722,
+            0,
+            0,
+            0,
+            0,
+            1.350000023841858,
+            0,
+            -0.41666942834854126,
+            0.0004374505369924009,
+            0,
+            1
+          ],
+          "seconds": 0.6000000238418579,
+          "timeUniformOptimizedOut": false,
+          "density": 1,
+          "morphWeights": [
+            0
+          ],
+          "contextId": 2,
+          "contextGeneration": 0,
+          "programId": 1,
+          "programIsCurrent": true,
+          "programIsLive": true
+        },
+        "rendererProgramId": 1,
+        "morph": [
+          0
+        ],
+        "floor": -0.011906229890882969,
+        "motionRoot": {
+          "name": "ApprovedSpiritMotion",
+          "position": [
+            0.0033305603319174946,
+            0.0004374505296447437,
+            0
+          ],
+          "scale": [
+            1,
+            1.0003254612063737,
+            1
+          ],
+          "rotation": [
+            0,
+            0,
+            0.0021359828635138457,
+            "XYZ"
+          ]
+        },
+        "accentsShareMotionRoot": true,
+        "accents": [
+          {
+            "name": "ActualSurfaceSlidingDew",
+            "count": 80,
+            "matrix": 122202905,
+            "particles": null
+          }
+        ],
+        "castFlags": [
+          {
+            "name": "ActualSurfaceSlidingDew",
+            "instanced": true,
+            "castShadow": false,
+            "nonShadowTag": true
+          }
+        ],
+        "bodyCasters": [
+          {
+            "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_quiet_smile",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_1",
+            "castShadow": true
+          }
+        ],
+        "diagnostics": {
+          "supported": true,
+          "mode": "triangle-sliding-condensation",
+          "anchorCount": 80,
+          "limitations": [
+            "Routes follow connected reference triangle edges in rest-local gravity; rigid transforms and explicitly enabled morph vertex positions preserve attachment.",
+            "Condensation, sliding, evaporation and repeat are implemented; bead coalescence and detached falling droplets are omitted.",
+            "Each ellipsoid stays outside its current face plane; full collision simulation against other body parts is not performed.",
+            "Creation-time face masking preserves gaze and expression; accessory masks hide only local beads without reseeding.",
+            "Fixed path/particle budgets do not adapt to later topology, skinning or large scale changes; morphs require explicit opt-in."
+          ],
+          "budget": {
+            "drawCalls": 1,
+            "instances": 80,
+            "triangles": 13440,
+            "bufferBytes": 9872
+          }
+        },
+        "draws": 287,
+        "skippedDraws": 2765,
+        "shadow": {
+          "enabled": true,
+          "actualType": 1,
+          "mapSize": [
+            1024,
+            1024
+          ],
+          "groundMaterial": "ShadowMaterial",
+          "groundOpacity": 0.09,
+          "groundY": -0.016,
+          "receiveShadow": true
+        },
+        "memory": {
+          "geometries": 28,
+          "textures": 6
+        },
+        "glError": 0,
+        "glDiagnostics": []
+      },
+      "wave": {
+        "ready": "ready",
+        "time": 1.1999999999999953,
+        "pixels": "0f3b435114ceb4a44e604a5d827f04be9d5d89c2b8d3a2204b80008a9217a11a",
+        "attributes": {
+          "position": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+          "normal": "80706bee870329a0829113e63ed178f0a904029265da2c96c69ad50f9b1f9cec",
+          "uv": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+          "index": "934286d3bdd9361657e390c41762923871cec85a48a7d9775b362aee02dc7830",
+          "morphPosition": "7bf926ae1fd903a4a63d39b32c3c1cdafdcd30bc982138404f38b75f50c4dfde",
+          "morphNormal": "cf790aaebf3c4a41cbed597f93c53a82f4ba43f726c178d9504bc30dffd1ffbd"
+        },
+        "stem": "계",
+        "material": "癸 · Dew water",
+        "kind": 9,
+        "program": "stem-water-v3-r186-coherent-advection:9:high:character-rest-v1",
+        "depth": 1.35,
+        "presentationPosition": [
+          -0.42,
+          0,
+          0
+        ],
+        "displayRotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "bodyMatrix": [
+          0.9999881897212228,
+          0.004860084163031101,
+          0,
+          0,
+          -0.00486572483258397,
+          1.0011487875104328,
+          0,
+          0,
+          0,
+          0,
+          1.35,
+          0,
+          -0.41181663656308204,
+          0.0010002717996753247,
+          0,
+          1
+        ],
+        "native": {
+          "modelMatrix": [
+            0.9999881982803345,
+            0.0048600840382277966,
+            0,
+            0,
+            -0.0048657250590622425,
+            1.0011488199234009,
+            0,
+            0,
+            0,
+            0,
+            1.350000023841858,
+            0,
+            -0.41181662678718567,
+            0.0010002717608585954,
+            0,
+            1
+          ],
+          "seconds": 1.2000000476837158,
+          "timeUniformOptimizedOut": false,
+          "density": 1,
+          "morphWeights": [
+            0.4489055871963501
+          ],
+          "contextId": 2,
+          "contextGeneration": 0,
+          "programId": 1,
+          "programIsCurrent": true,
+          "programIsLive": true
+        },
+        "rendererProgramId": 1,
+        "morph": [
+          0.44890560115428435
+        ],
+        "floor": -0.011906229890882969,
+        "motionRoot": {
+          "name": "ApprovedSpiritMotion",
+          "position": [
+            0.00818336343691793,
+            0.0010002717996753247,
+            0
+          ],
+          "scale": [
+            1,
+            1.0011606114963554,
+            1
+          ],
+          "rotation": [
+            0,
+            0,
+            0.004860103296104436,
+            "XYZ"
+          ]
+        },
+        "accentsShareMotionRoot": true,
+        "accents": [
+          {
+            "name": "ActualSurfaceSlidingDew",
+            "count": 80,
+            "matrix": 2902995015,
+            "particles": null
+          }
+        ],
+        "castFlags": [
+          {
+            "name": "ActualSurfaceSlidingDew",
+            "instanced": true,
+            "castShadow": false,
+            "nonShadowTag": true
+          }
+        ],
+        "bodyCasters": [
+          {
+            "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_quiet_smile",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_1",
+            "castShadow": true
+          }
+        ],
+        "diagnostics": {
+          "supported": true,
+          "mode": "triangle-sliding-condensation",
+          "anchorCount": 80,
+          "limitations": [
+            "Routes follow connected reference triangle edges in rest-local gravity; rigid transforms and explicitly enabled morph vertex positions preserve attachment.",
+            "Condensation, sliding, evaporation and repeat are implemented; bead coalescence and detached falling droplets are omitted.",
+            "Each ellipsoid stays outside its current face plane; full collision simulation against other body parts is not performed.",
+            "Creation-time face masking preserves gaze and expression; accessory masks hide only local beads without reseeding.",
+            "Fixed path/particle budgets do not adapt to later topology, skinning or large scale changes; morphs require explicit opt-in."
+          ],
+          "budget": {
+            "drawCalls": 1,
+            "instances": 80,
+            "triangles": 13440,
+            "bufferBytes": 9872
+          }
+        },
+        "draws": 366,
+        "skippedDraws": 5530,
+        "shadow": {
+          "enabled": true,
+          "actualType": 1,
+          "mapSize": [
+            1024,
+            1024
+          ],
+          "groundMaterial": "ShadowMaterial",
+          "groundOpacity": 0.09,
+          "groundY": -0.016,
+          "receiveShadow": true
+        },
+        "memory": {
+          "geometries": 28,
+          "textures": 6
+        },
+        "glError": 0,
+        "glDiagnostics": []
+      },
+      "paused": {
+        "ready": "ready",
+        "time": 1.1999999999999953,
+        "pixels": "0f3b435114ceb4a44e604a5d827f04be9d5d89c2b8d3a2204b80008a9217a11a",
+        "attributes": {
+          "position": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+          "normal": "80706bee870329a0829113e63ed178f0a904029265da2c96c69ad50f9b1f9cec",
+          "uv": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+          "index": "934286d3bdd9361657e390c41762923871cec85a48a7d9775b362aee02dc7830",
+          "morphPosition": "7bf926ae1fd903a4a63d39b32c3c1cdafdcd30bc982138404f38b75f50c4dfde",
+          "morphNormal": "cf790aaebf3c4a41cbed597f93c53a82f4ba43f726c178d9504bc30dffd1ffbd"
+        },
+        "stem": "계",
+        "material": "癸 · Dew water",
+        "kind": 9,
+        "program": "stem-water-v3-r186-coherent-advection:9:high:character-rest-v1",
+        "depth": 1.35,
+        "presentationPosition": [
+          -0.42,
+          0,
+          0
+        ],
+        "displayRotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "bodyMatrix": [
+          0.9999881897212228,
+          0.004860084163031101,
+          0,
+          0,
+          -0.00486572483258397,
+          1.0011487875104328,
+          0,
+          0,
+          0,
+          0,
+          1.35,
+          0,
+          -0.41181663656308204,
+          0.0010002717996753247,
+          0,
+          1
+        ],
+        "native": {
+          "modelMatrix": [
+            0.9999881982803345,
+            0.0048600840382277966,
+            0,
+            0,
+            -0.0048657250590622425,
+            1.0011488199234009,
+            0,
+            0,
+            0,
+            0,
+            1.350000023841858,
+            0,
+            -0.41181662678718567,
+            0.0010002717608585954,
+            0,
+            1
+          ],
+          "seconds": 1.2000000476837158,
+          "timeUniformOptimizedOut": false,
+          "density": 1,
+          "morphWeights": [
+            0.4489055871963501
+          ],
+          "contextId": 2,
+          "contextGeneration": 0,
+          "programId": 1,
+          "programIsCurrent": true,
+          "programIsLive": true
+        },
+        "rendererProgramId": 1,
+        "morph": [
+          0.44890560115428435
+        ],
+        "floor": -0.011906229890882969,
+        "motionRoot": {
+          "name": "ApprovedSpiritMotion",
+          "position": [
+            0.00818336343691793,
+            0.0010002717996753247,
+            0
+          ],
+          "scale": [
+            1,
+            1.0011606114963554,
+            1
+          ],
+          "rotation": [
+            0,
+            0,
+            0.004860103296104436,
+            "XYZ"
+          ]
+        },
+        "accentsShareMotionRoot": true,
+        "accents": [
+          {
+            "name": "ActualSurfaceSlidingDew",
+            "count": 80,
+            "matrix": 2902995015,
+            "particles": null
+          }
+        ],
+        "castFlags": [
+          {
+            "name": "ActualSurfaceSlidingDew",
+            "instanced": true,
+            "castShadow": false,
+            "nonShadowTag": true
+          }
+        ],
+        "bodyCasters": [
+          {
+            "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_quiet_smile",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_1",
+            "castShadow": true
+          }
+        ],
+        "diagnostics": {
+          "supported": true,
+          "mode": "triangle-sliding-condensation",
+          "anchorCount": 80,
+          "limitations": [
+            "Routes follow connected reference triangle edges in rest-local gravity; rigid transforms and explicitly enabled morph vertex positions preserve attachment.",
+            "Condensation, sliding, evaporation and repeat are implemented; bead coalescence and detached falling droplets are omitted.",
+            "Each ellipsoid stays outside its current face plane; full collision simulation against other body parts is not performed.",
+            "Creation-time face masking preserves gaze and expression; accessory masks hide only local beads without reseeding.",
+            "Fixed path/particle budgets do not adapt to later topology, skinning or large scale changes; morphs require explicit opt-in."
+          ],
+          "budget": {
+            "drawCalls": 1,
+            "instances": 80,
+            "triangles": 13440,
+            "bufferBytes": 9872
+          }
+        },
+        "draws": 366,
+        "skippedDraws": 5530,
+        "shadow": {
+          "enabled": true,
+          "actualType": 1,
+          "mapSize": [
+            1024,
+            1024
+          ],
+          "groundMaterial": "ShadowMaterial",
+          "groundOpacity": 0.09,
+          "groundY": -0.016,
+          "receiveShadow": true
+        },
+        "memory": {
+          "geometries": 28,
+          "textures": 6
+        },
+        "glError": 0,
+        "glDiagnostics": []
+      },
+      "rotated": {
+        "ready": "ready",
+        "time": 1.1999999999999953,
+        "pixels": "0a805ecc261627e76904bc946a3a0bfbc9c1e4c3c3840d6fe543a9e9bf1af7f3",
+        "attributes": {
+          "position": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+          "normal": "80706bee870329a0829113e63ed178f0a904029265da2c96c69ad50f9b1f9cec",
+          "uv": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+          "index": "934286d3bdd9361657e390c41762923871cec85a48a7d9775b362aee02dc7830",
+          "morphPosition": "7bf926ae1fd903a4a63d39b32c3c1cdafdcd30bc982138404f38b75f50c4dfde",
+          "morphNormal": "cf790aaebf3c4a41cbed597f93c53a82f4ba43f726c178d9504bc30dffd1ffbd"
+        },
+        "stem": "계",
+        "material": "癸 · Dew water",
+        "kind": 9,
+        "program": "stem-water-v3-r186-coherent-advection:9:high:character-rest-v1",
+        "depth": 1.35,
+        "presentationPosition": [
+          -0.42,
+          0,
+          0
+        ],
+        "displayRotation": [
+          0,
+          1.5707962188720703,
+          0,
+          "XYZ"
+        ],
+        "bodyMatrix": [
+          1.0792155163262391e-7,
+          0.004860084163031101,
+          -0.9999881897212171,
+          0,
+          -5.251227755962233e-10,
+          1.0011487875104328,
+          0.004865724832583942,
+          0,
+          1.3499999999999923,
+          0,
+          1.4569581541223897e-7,
+          0,
+          -0.4199999991168283,
+          0.0010002717996753247,
+          -0.008183363436917883,
+          1
+        ],
+        "native": {
+          "modelMatrix": [
+            1.0792155080707744e-7,
+            0.0048600840382277966,
+            -0.9999881982803345,
+            0,
+            -5.251227785940671e-10,
+            1.0011488199234009,
+            0.0048657250590622425,
+            0,
+            1.350000023841858,
+            0,
+            1.456958216294879e-7,
+            0,
+            -0.41999998688697815,
+            0.0010002717608585954,
+            -0.008183363825082779,
+            1
+          ],
+          "seconds": 1.2000000476837158,
+          "timeUniformOptimizedOut": false,
+          "density": 1,
+          "morphWeights": [
+            0.4489055871963501
+          ],
+          "contextId": 2,
+          "contextGeneration": 0,
+          "programId": 1,
+          "programIsCurrent": true,
+          "programIsLive": true
+        },
+        "rendererProgramId": 1,
+        "morph": [
+          0.44890560115428435
+        ],
+        "floor": -0.011906229890882969,
+        "motionRoot": {
+          "name": "ApprovedSpiritMotion",
+          "position": [
+            0.00818336343691793,
+            0.0010002717996753247,
+            0
+          ],
+          "scale": [
+            1,
+            1.0011606114963554,
+            1
+          ],
+          "rotation": [
+            0,
+            0,
+            0.004860103296104436,
+            "XYZ"
+          ]
+        },
+        "accentsShareMotionRoot": true,
+        "accents": [
+          {
+            "name": "ActualSurfaceSlidingDew",
+            "count": 80,
+            "matrix": 2902995015,
+            "particles": null
+          }
+        ],
+        "castFlags": [
+          {
+            "name": "ActualSurfaceSlidingDew",
+            "instanced": true,
+            "castShadow": false,
+            "nonShadowTag": true
+          }
+        ],
+        "bodyCasters": [
+          {
+            "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_quiet_smile",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_1",
+            "castShadow": true
+          }
+        ],
+        "diagnostics": {
+          "supported": true,
+          "mode": "triangle-sliding-condensation",
+          "anchorCount": 80,
+          "limitations": [
+            "Routes follow connected reference triangle edges in rest-local gravity; rigid transforms and explicitly enabled morph vertex positions preserve attachment.",
+            "Condensation, sliding, evaporation and repeat are implemented; bead coalescence and detached falling droplets are omitted.",
+            "Each ellipsoid stays outside its current face plane; full collision simulation against other body parts is not performed.",
+            "Creation-time face masking preserves gaze and expression; accessory masks hide only local beads without reseeding.",
+            "Fixed path/particle budgets do not adapt to later topology, skinning or large scale changes; morphs require explicit opt-in."
+          ],
+          "budget": {
+            "drawCalls": 1,
+            "instances": 80,
+            "triangles": 13440,
+            "bufferBytes": 9872
+          }
+        },
+        "draws": 761,
+        "skippedDraws": 5530,
+        "shadow": {
+          "enabled": true,
+          "actualType": 1,
+          "mapSize": [
+            1024,
+            1024
+          ],
+          "groundMaterial": "ShadowMaterial",
+          "groundOpacity": 0.09,
+          "groundY": -0.016,
+          "receiveShadow": true
+        },
+        "memory": {
+          "geometries": 28,
+          "textures": 6
+        },
+        "glError": 0,
+        "glDiagnostics": []
+      },
+      "reset": {
+        "ready": "ready",
+        "time": 0,
+        "pixels": "b778ae168fb008444dba79554519a3640472becdbb4a4a66feedb0c8f8c0ad38",
+        "attributes": {
+          "position": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+          "normal": "80706bee870329a0829113e63ed178f0a904029265da2c96c69ad50f9b1f9cec",
+          "uv": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+          "index": "934286d3bdd9361657e390c41762923871cec85a48a7d9775b362aee02dc7830",
+          "morphPosition": "7bf926ae1fd903a4a63d39b32c3c1cdafdcd30bc982138404f38b75f50c4dfde",
+          "morphNormal": "cf790aaebf3c4a41cbed597f93c53a82f4ba43f726c178d9504bc30dffd1ffbd"
+        },
+        "stem": "계",
+        "material": "癸 · Dew water",
+        "kind": 9,
+        "program": "stem-water-v3-r186-coherent-advection:9:high:character-rest-v1",
+        "depth": 1.35,
+        "presentationPosition": [
+          -0.42,
+          0,
+          0
+        ],
+        "displayRotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "bodyMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1.35,
+          0,
+          -0.42,
+          0,
+          0,
+          1
+        ],
+        "native": {
+          "modelMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1.350000023841858,
+            0,
+            -0.41999998688697815,
+            0,
+            0,
+            1
+          ],
+          "seconds": 0,
+          "timeUniformOptimizedOut": false,
+          "density": 1,
+          "morphWeights": [
+            0
+          ],
+          "contextId": 2,
+          "contextGeneration": 0,
+          "programId": 1,
+          "programIsCurrent": true,
+          "programIsLive": true
+        },
+        "rendererProgramId": 1,
+        "morph": [
+          0
+        ],
+        "floor": -0.011906229890882969,
+        "motionRoot": {
+          "name": "ApprovedSpiritMotion",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            "XYZ"
+          ]
+        },
+        "accentsShareMotionRoot": true,
+        "accents": [
+          {
+            "name": "ActualSurfaceSlidingDew",
+            "count": 80,
+            "matrix": 562986269,
+            "particles": null
+          }
+        ],
+        "castFlags": [
+          {
+            "name": "ActualSurfaceSlidingDew",
+            "instanced": true,
+            "castShadow": false,
+            "nonShadowTag": true
+          }
+        ],
+        "bodyCasters": [
+          {
+            "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_quiet_smile",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_1",
+            "castShadow": true
+          }
+        ],
+        "diagnostics": {
+          "supported": true,
+          "mode": "triangle-sliding-condensation",
+          "anchorCount": 80,
+          "limitations": [
+            "Routes follow connected reference triangle edges in rest-local gravity; rigid transforms and explicitly enabled morph vertex positions preserve attachment.",
+            "Condensation, sliding, evaporation and repeat are implemented; bead coalescence and detached falling droplets are omitted.",
+            "Each ellipsoid stays outside its current face plane; full collision simulation against other body parts is not performed.",
+            "Creation-time face masking preserves gaze and expression; accessory masks hide only local beads without reseeding.",
+            "Fixed path/particle budgets do not adapt to later topology, skinning or large scale changes; morphs require explicit opt-in."
+          ],
+          "budget": {
+            "drawCalls": 1,
+            "instances": 80,
+            "triangles": 13440,
+            "bufferBytes": 9872
+          }
+        },
+        "draws": 840,
+        "skippedDraws": 5530,
+        "shadow": {
+          "enabled": true,
+          "actualType": 1,
+          "mapSize": [
+            1024,
+            1024
+          ],
+          "groundMaterial": "ShadowMaterial",
+          "groundOpacity": 0.09,
+          "groundY": -0.016,
+          "receiveShadow": true
+        },
+        "memory": {
+          "geometries": 28,
+          "textures": 6
+        },
+        "glError": 0,
+        "glDiagnostics": []
+      },
+      "sixtyHz": {
+        "ready": "ready",
+        "time": 0.5999999999999942,
+        "pixels": "17af05674d2b3b8255cb39137977fd650075b158570be32b7fe3a1ac96ae1953",
+        "attributes": {
+          "position": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+          "normal": "80706bee870329a0829113e63ed178f0a904029265da2c96c69ad50f9b1f9cec",
+          "uv": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+          "index": "934286d3bdd9361657e390c41762923871cec85a48a7d9775b362aee02dc7830",
+          "morphPosition": "7bf926ae1fd903a4a63d39b32c3c1cdafdcd30bc982138404f38b75f50c4dfde",
+          "morphNormal": "cf790aaebf3c4a41cbed597f93c53a82f4ba43f726c178d9504bc30dffd1ffbd"
+        },
+        "stem": "계",
+        "material": "癸 · Dew water",
+        "kind": 9,
+        "program": "stem-water-v3-r186-coherent-advection:9:high:character-rest-v1",
+        "depth": 1.35,
+        "presentationPosition": [
+          -0.42,
+          0,
+          0
+        ],
+        "displayRotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "bodyMatrix": [
+          0.9999950904335022,
+          0.0031335457379517736,
+          0,
+          0,
+          -0.0031345655855278746,
+          1.0003205500420025,
+          0,
+          0,
+          0,
+          0,
+          1.35,
+          0,
+          -0.4146743036629524,
+          0.0006399245326088199,
+          0,
+          1
+        ],
+        "native": {
+          "modelMatrix": [
+            0.9999951124191284,
+            0.0031335456296801567,
+            0,
+            0,
+            -0.0031345656607300043,
+            1.000320553779602,
+            0,
+            0,
+            0,
+            0,
+            1.350000023841858,
+            0,
+            -0.414674311876297,
+            0.0006399245467036963,
+            0,
+            1
+          ],
+          "seconds": 0.6000000238418579,
+          "timeUniformOptimizedOut": false,
+          "density": 1,
+          "morphWeights": [
+            0.4489055871963501
+          ],
+          "contextId": 2,
+          "contextGeneration": 0,
+          "programId": 1,
+          "programIsCurrent": true,
+          "programIsLive": true
+        },
+        "rendererProgramId": 1,
+        "morph": [
+          0.4489056011542842
+        ],
+        "floor": -0.01190622989088297,
+        "motionRoot": {
+          "name": "ApprovedSpiritMotion",
+          "position": [
+            0.005325696337047615,
+            0.0006399245326088199,
+            0
+          ],
+          "scale": [
+            1,
+            1.0003254612063737,
+            1
+          ],
+          "rotation": [
+            0,
+            0,
+            0.0031335508660789023,
+            "XYZ"
+          ]
+        },
+        "accentsShareMotionRoot": true,
+        "accents": [
+          {
+            "name": "ActualSurfaceSlidingDew",
+            "count": 80,
+            "matrix": 2760845578,
+            "particles": null
+          }
+        ],
+        "castFlags": [
+          {
+            "name": "ActualSurfaceSlidingDew",
+            "instanced": true,
+            "castShadow": false,
+            "nonShadowTag": true
+          }
+        ],
+        "bodyCasters": [
+          {
+            "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_quiet_smile",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_1",
+            "castShadow": true
+          }
+        ],
+        "diagnostics": {
+          "supported": true,
+          "mode": "triangle-sliding-condensation",
+          "anchorCount": 80,
+          "limitations": [
+            "Routes follow connected reference triangle edges in rest-local gravity; rigid transforms and explicitly enabled morph vertex positions preserve attachment.",
+            "Condensation, sliding, evaporation and repeat are implemented; bead coalescence and detached falling droplets are omitted.",
+            "Each ellipsoid stays outside its current face plane; full collision simulation against other body parts is not performed.",
+            "Creation-time face masking preserves gaze and expression; accessory masks hide only local beads without reseeding.",
+            "Fixed path/particle budgets do not adapt to later topology, skinning or large scale changes; morphs require explicit opt-in."
+          ],
+          "budget": {
+            "drawCalls": 1,
+            "instances": 80,
+            "triangles": 13440,
+            "bufferBytes": 9872
+          }
+        },
+        "draws": 919,
+        "skippedDraws": 8295,
+        "shadow": {
+          "enabled": true,
+          "actualType": 1,
+          "mapSize": [
+            1024,
+            1024
+          ],
+          "groundMaterial": "ShadowMaterial",
+          "groundOpacity": 0.09,
+          "groundY": -0.016,
+          "receiveShadow": true
+        },
+        "memory": {
+          "geometries": 28,
+          "textures": 6
+        },
+        "glError": 0,
+        "glDiagnostics": []
+      },
+      "fifteenHz": {
+        "ready": "ready",
+        "time": 0.6,
+        "pixels": "17af05674d2b3b8255cb39137977fd650075b158570be32b7fe3a1ac96ae1953",
+        "attributes": {
+          "position": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+          "normal": "80706bee870329a0829113e63ed178f0a904029265da2c96c69ad50f9b1f9cec",
+          "uv": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+          "index": "934286d3bdd9361657e390c41762923871cec85a48a7d9775b362aee02dc7830",
+          "morphPosition": "7bf926ae1fd903a4a63d39b32c3c1cdafdcd30bc982138404f38b75f50c4dfde",
+          "morphNormal": "cf790aaebf3c4a41cbed597f93c53a82f4ba43f726c178d9504bc30dffd1ffbd"
+        },
+        "stem": "계",
+        "material": "癸 · Dew water",
+        "kind": 9,
+        "program": "stem-water-v3-r186-coherent-advection:9:high:character-rest-v1",
+        "depth": 1.35,
+        "presentationPosition": [
+          -0.42,
+          0,
+          0
+        ],
+        "displayRotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "bodyMatrix": [
+          0.9999950904335022,
+          0.0031335457379517945,
+          0,
+          0,
+          -0.0031345655855278954,
+          1.0003205500420025,
+          0,
+          0,
+          0,
+          0,
+          1.35,
+          0,
+          -0.4146743036629523,
+          0.0006399245326088251,
+          0,
+          1
+        ],
+        "native": {
+          "modelMatrix": [
+            0.9999951124191284,
+            0.0031335456296801567,
+            0,
+            0,
+            -0.0031345656607300043,
+            1.000320553779602,
+            0,
+            0,
+            0,
+            0,
+            1.350000023841858,
+            0,
+            -0.414674311876297,
+            0.0006399245467036963,
+            0,
+            1
+          ],
+          "seconds": 0.6000000238418579,
+          "timeUniformOptimizedOut": false,
+          "density": 1,
+          "morphWeights": [
+            0.4489055871963501
+          ],
+          "contextId": 2,
+          "contextGeneration": 0,
+          "programId": 1,
+          "programIsCurrent": true,
+          "programIsLive": true
+        },
+        "rendererProgramId": 1,
+        "morph": [
+          0.4489056011542849
+        ],
+        "floor": -0.011906229890882969,
+        "motionRoot": {
+          "name": "ApprovedSpiritMotion",
+          "position": [
+            0.005325696337047649,
+            0.0006399245326088251,
+            0
+          ],
+          "scale": [
+            1,
+            1.0003254612063737,
+            1
+          ],
+          "rotation": [
+            0,
+            0,
+            0.003133550866078923,
+            "XYZ"
+          ]
+        },
+        "accentsShareMotionRoot": true,
+        "accents": [
+          {
+            "name": "ActualSurfaceSlidingDew",
+            "count": 80,
+            "matrix": 2760845578,
+            "particles": null
+          }
+        ],
+        "castFlags": [
+          {
+            "name": "ActualSurfaceSlidingDew",
+            "instanced": true,
+            "castShadow": false,
+            "nonShadowTag": true
+          }
+        ],
+        "bodyCasters": [
+          {
+            "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_quiet_smile",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_1",
+            "castShadow": true
+          }
+        ],
+        "diagnostics": {
+          "supported": true,
+          "mode": "triangle-sliding-condensation",
+          "anchorCount": 80,
+          "limitations": [
+            "Routes follow connected reference triangle edges in rest-local gravity; rigid transforms and explicitly enabled morph vertex positions preserve attachment.",
+            "Condensation, sliding, evaporation and repeat are implemented; bead coalescence and detached falling droplets are omitted.",
+            "Each ellipsoid stays outside its current face plane; full collision simulation against other body parts is not performed.",
+            "Creation-time face masking preserves gaze and expression; accessory masks hide only local beads without reseeding.",
+            "Fixed path/particle budgets do not adapt to later topology, skinning or large scale changes; morphs require explicit opt-in."
+          ],
+          "budget": {
+            "drawCalls": 1,
+            "instances": 80,
+            "triangles": 13440,
+            "bufferBytes": 9872
+          }
+        },
+        "draws": 1077,
+        "skippedDraws": 9164,
+        "shadow": {
+          "enabled": true,
+          "actualType": 1,
+          "mapSize": [
+            1024,
+            1024
+          ],
+          "groundMaterial": "ShadowMaterial",
+          "groundOpacity": 0.09,
+          "groundY": -0.016,
+          "receiveShadow": true
+        },
+        "memory": {
+          "geometries": 28,
+          "textures": 6
+        },
+        "glError": 0,
+        "glDiagnostics": []
+      },
+      "timeGap": {
+        "ready": "ready",
+        "time": 0.65,
+        "pixels": "bff21cdaef0f1a9136fde1934cabbd5350ec82c8adac317e71c41f4bbeaa944c",
+        "attributes": {
+          "position": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+          "normal": "80706bee870329a0829113e63ed178f0a904029265da2c96c69ad50f9b1f9cec",
+          "uv": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+          "index": "934286d3bdd9361657e390c41762923871cec85a48a7d9775b362aee02dc7830",
+          "morphPosition": "7bf926ae1fd903a4a63d39b32c3c1cdafdcd30bc982138404f38b75f50c4dfde",
+          "morphNormal": "cf790aaebf3c4a41cbed597f93c53a82f4ba43f726c178d9504bc30dffd1ffbd"
+        },
+        "stem": "계",
+        "material": "癸 · Dew water",
+        "kind": 9,
+        "program": "stem-water-v3-r186-coherent-advection:9:high:character-rest-v1",
+        "depth": 1.35,
+        "presentationPosition": [
+          -0.42,
+          0,
+          0
+        ],
+        "displayRotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "bodyMatrix": [
+          0.9999945605939694,
+          0.00329829993695687,
+          0,
+          0,
+          -0.0032995515177442363,
+          1.000374020923058,
+          0,
+          0,
+          0,
+          0,
+          1.35,
+          0,
+          -0.41441198352435493,
+          0.0006740061552623633,
+          0,
+          1
+        ],
+        "native": {
+          "modelMatrix": [
+            0.9999945759773254,
+            0.003298299852758646,
+            0,
+            0,
+            -0.003299551550298929,
+            1.0003740787506104,
+            0,
+            0,
+            0,
+            0,
+            1.350000023841858,
+            0,
+            -0.4144119918346405,
+            0.0006740061799064279,
+            0,
+            1
+          ],
+          "seconds": 0.6499999761581421,
+          "timeUniformOptimizedOut": false,
+          "density": 1,
+          "morphWeights": [
+            0.44888365268707275
+          ],
+          "contextId": 2,
+          "contextGeneration": 0,
+          "programId": 1,
+          "programIsCurrent": true,
+          "programIsLive": true
+        },
+        "rendererProgramId": 1,
+        "morph": [
+          0.44888366715799294
+        ],
+        "floor": -0.011906229890882969,
+        "motionRoot": {
+          "name": "ApprovedSpiritMotion",
+          "position": [
+            0.005588016475645069,
+            0.0006740061552623633,
+            0
+          ],
+          "scale": [
+            1,
+            1.0003794623931386,
+            1
+          ],
+          "rotation": [
+            0,
+            0,
+            0.003298305917234071,
+            "XYZ"
+          ]
+        },
+        "accentsShareMotionRoot": true,
+        "accents": [
+          {
+            "name": "ActualSurfaceSlidingDew",
+            "count": 80,
+            "matrix": 2181327101,
+            "particles": null
+          }
+        ],
+        "castFlags": [
+          {
+            "name": "ActualSurfaceSlidingDew",
+            "instanced": true,
+            "castShadow": false,
+            "nonShadowTag": true
+          }
+        ],
+        "bodyCasters": [
+          {
+            "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_quiet_smile",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_1",
+            "castShadow": true
+          }
+        ],
+        "diagnostics": {
+          "supported": true,
+          "mode": "triangle-sliding-condensation",
+          "anchorCount": 80,
+          "limitations": [
+            "Routes follow connected reference triangle edges in rest-local gravity; rigid transforms and explicitly enabled morph vertex positions preserve attachment.",
+            "Condensation, sliding, evaporation and repeat are implemented; bead coalescence and detached falling droplets are omitted.",
+            "Each ellipsoid stays outside its current face plane; full collision simulation against other body parts is not performed.",
+            "Creation-time face masking preserves gaze and expression; accessory masks hide only local beads without reseeding.",
+            "Fixed path/particle budgets do not adapt to later topology, skinning or large scale changes; morphs require explicit opt-in."
+          ],
+          "budget": {
+            "drawCalls": 1,
+            "instances": 80,
+            "triangles": 13440,
+            "bufferBytes": 9872
+          }
+        },
+        "draws": 1156,
+        "skippedDraws": 9164,
+        "shadow": {
+          "enabled": true,
+          "actualType": 1,
+          "mapSize": [
+            1024,
+            1024
+          ],
+          "groundMaterial": "ShadowMaterial",
+          "groundOpacity": 0.09,
+          "groundY": -0.016,
+          "receiveShadow": true
+        },
+        "memory": {
+          "geometries": 28,
+          "textures": 6
+        },
+        "glError": 0,
+        "glDiagnostics": []
+      },
+      "returned": {
+        "ready": "ready",
+        "time": 8.14999999999998,
+        "pixels": "65879f2bb3b0c84ecb6333425162ab844ba5fd253cf8d9daadd46474a73de422",
+        "attributes": {
+          "position": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+          "normal": "80706bee870329a0829113e63ed178f0a904029265da2c96c69ad50f9b1f9cec",
+          "uv": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+          "index": "934286d3bdd9361657e390c41762923871cec85a48a7d9775b362aee02dc7830",
+          "morphPosition": "7bf926ae1fd903a4a63d39b32c3c1cdafdcd30bc982138404f38b75f50c4dfde",
+          "morphNormal": "cf790aaebf3c4a41cbed597f93c53a82f4ba43f726c178d9504bc30dffd1ffbd"
+        },
+        "stem": "계",
+        "material": "癸 · Dew water",
+        "kind": 9,
+        "program": "stem-water-v3-r186-coherent-advection:9:high:character-rest-v1",
+        "depth": 1.35,
+        "presentationPosition": [
+          -0.42,
+          0,
+          0
+        ],
+        "displayRotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "bodyMatrix": [
+          0.9999989940063412,
+          -0.0014184450309112184,
+          0,
+          0,
+          0.0014226011739813178,
+          1.0029290609447659,
+          0,
+          0,
+          0,
+          0,
+          1.35,
+          0,
+          -0.42815526753068295,
+          0.0003162631803633499,
+          0,
+          1
+        ],
+        "native": {
+          "modelMatrix": [
+            0.9999989867210388,
+            -0.0014184450265020132,
+            0,
+            0,
+            0.0014226011699065566,
+            1.0029290914535522,
+            0,
+            0,
+            0,
+            0,
+            1.350000023841858,
+            0,
+            -0.4281552731990814,
+            0.00031626317650079727,
+            0,
+            1
+          ],
+          "seconds": 8.149999618530273,
+          "timeUniformOptimizedOut": false,
+          "density": 1,
+          "morphWeights": [
+            0
+          ],
+          "contextId": 2,
+          "contextGeneration": 0,
+          "programId": 1,
+          "programIsCurrent": true,
+          "programIsLive": true
+        },
+        "rendererProgramId": 1,
+        "morph": [
+          0
+        ],
+        "floor": -0.011906229890882969,
+        "motionRoot": {
+          "name": "ApprovedSpiritMotion",
+          "position": [
+            -0.008155267530682984,
+            0.0003162631803633499,
+            0
+          ],
+          "scale": [
+            1,
+            1.0029300698860564,
+            1
+          ],
+          "rotation": [
+            0,
+            0,
+            -0.0014184455065603119,
+            "XYZ"
+          ]
+        },
+        "accentsShareMotionRoot": true,
+        "accents": [
+          {
+            "name": "ActualSurfaceSlidingDew",
+            "count": 80,
+            "matrix": 3494309866,
+            "particles": null
+          }
+        ],
+        "castFlags": [
+          {
+            "name": "ActualSurfaceSlidingDew",
+            "instanced": true,
+            "castShadow": false,
+            "nonShadowTag": true
+          }
+        ],
+        "bodyCasters": [
+          {
+            "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_quiet_smile",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_1",
+            "castShadow": true
+          }
+        ],
+        "diagnostics": {
+          "supported": true,
+          "mode": "triangle-sliding-condensation",
+          "anchorCount": 80,
+          "limitations": [
+            "Routes follow connected reference triangle edges in rest-local gravity; rigid transforms and explicitly enabled morph vertex positions preserve attachment.",
+            "Condensation, sliding, evaporation and repeat are implemented; bead coalescence and detached falling droplets are omitted.",
+            "Each ellipsoid stays outside its current face plane; full collision simulation against other body parts is not performed.",
+            "Creation-time face masking preserves gaze and expression; accessory masks hide only local beads without reseeding.",
+            "Fixed path/particle budgets do not adapt to later topology, skinning or large scale changes; morphs require explicit opt-in."
+          ],
+          "budget": {
+            "drawCalls": 1,
+            "instances": 80,
+            "triangles": 13440,
+            "bufferBytes": 9872
+          }
+        },
+        "draws": 1235,
+        "skippedDraws": 20935,
+        "shadow": {
+          "enabled": true,
+          "actualType": 1,
+          "mapSize": [
+            1024,
+            1024
+          ],
+          "groundMaterial": "ShadowMaterial",
+          "groundOpacity": 0.09,
+          "groundY": -0.016,
+          "receiveShadow": true
+        },
+        "memory": {
+          "geometries": 28,
+          "textures": 6
+        },
+        "glError": 0,
+        "glDiagnostics": []
+      },
+      "checks": [
+        "ready/pause stable",
+        "idle changes with neutral arm",
+        "native GPU body matrix equals CPU; active material time equals CPU",
+        "bounded original connected wave",
+        "repeat taps no jump",
+        "paused drag same time/pose",
+        "exact reset",
+        "15/60Hz at matched material time",
+        "5s gap clamps to .05",
+        "returns to neutral idle"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "file": "계-high-front.png",
+      "day": "계유",
+      "quality": "high",
+      "label": "front",
+      "time": 0,
+      "waveWeight": 0,
+      "pixels": "b778ae168fb008444dba79554519a3640472becdbb4a4a66feedb0c8f8c0ad38",
+      "pngSHA256": "63c00ce6cb1b8f3b88de22d82060547eabc2e5bf23b7cf2bb5a5c61e1f161107"
+    },
+    {
+      "file": "계-high-wave.png",
+      "day": "계유",
+      "quality": "high",
+      "label": "wave",
+      "time": 1.1999999999999953,
+      "waveWeight": 0.44890560115428435,
+      "pixels": "0f3b435114ceb4a44e604a5d827f04be9d5d89c2b8d3a2204b80008a9217a11a",
+      "pngSHA256": "c4308f8ae1b174492f75769125a3ab1d346365e6496f6b8bf7069de1775224ec"
+    },
+    {
+      "file": "계-high-side.png",
+      "day": "계유",
+      "quality": "high",
+      "label": "side",
+      "time": 1.1999999999999953,
+      "waveWeight": 0.44890560115428435,
+      "pixels": "0a805ecc261627e76904bc946a3a0bfbc9c1e4c3c3840d6fe543a9e9bf1af7f3",
+      "pngSHA256": "8b429eeb462f2f83c0d242185a3ab2a174ceed5e55aa2d028c99a9c94f9dd7b9"
+    }
+  ],
+  "lifecycleObservations": [
+    {
+      "quality": "high",
+      "restored": {
+        "ready": "ready",
+        "time": 8.14999999999998,
+        "pixels": "65879f2bb3b0c84ecb6333425162ab844ba5fd253cf8d9daadd46474a73de422",
+        "attributes": {
+          "position": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+          "normal": "80706bee870329a0829113e63ed178f0a904029265da2c96c69ad50f9b1f9cec",
+          "uv": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+          "index": "934286d3bdd9361657e390c41762923871cec85a48a7d9775b362aee02dc7830",
+          "morphPosition": "7bf926ae1fd903a4a63d39b32c3c1cdafdcd30bc982138404f38b75f50c4dfde",
+          "morphNormal": "cf790aaebf3c4a41cbed597f93c53a82f4ba43f726c178d9504bc30dffd1ffbd"
+        },
+        "stem": "계",
+        "material": "癸 · Dew water",
+        "kind": 9,
+        "program": "stem-water-v3-r186-coherent-advection:9:high:character-rest-v1",
+        "depth": 1.35,
+        "presentationPosition": [
+          -0.42,
+          0,
+          0
+        ],
+        "displayRotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "bodyMatrix": [
+          0.9999989940063412,
+          -0.0014184450309112184,
+          0,
+          0,
+          0.0014226011739813178,
+          1.0029290609447659,
+          0,
+          0,
+          0,
+          0,
+          1.35,
+          0,
+          -0.42815526753068295,
+          0.0003162631803633499,
+          0,
+          1
+        ],
+        "native": {
+          "modelMatrix": [
+            0.9999989867210388,
+            -0.0014184450265020132,
+            0,
+            0,
+            0.0014226011699065566,
+            1.0029290914535522,
+            0,
+            0,
+            0,
+            0,
+            1.350000023841858,
+            0,
+            -0.4281552731990814,
+            0.00031626317650079727,
+            0,
+            1
+          ],
+          "seconds": 8.149999618530273,
+          "timeUniformOptimizedOut": false,
+          "density": 1,
+          "morphWeights": [
+            0
+          ],
+          "contextId": 2,
+          "contextGeneration": 1,
+          "programId": 2,
+          "programIsCurrent": true,
+          "programIsLive": true
+        },
+        "rendererProgramId": 2,
+        "morph": [
+          0
+        ],
+        "floor": -0.011906229890882969,
+        "motionRoot": {
+          "name": "ApprovedSpiritMotion",
+          "position": [
+            -0.008155267530682984,
+            0.0003162631803633499,
+            0
+          ],
+          "scale": [
+            1,
+            1.0029300698860564,
+            1
+          ],
+          "rotation": [
+            0,
+            0,
+            -0.0014184455065603119,
+            "XYZ"
+          ]
+        },
+        "accentsShareMotionRoot": true,
+        "accents": [
+          {
+            "name": "ActualSurfaceSlidingDew",
+            "count": 80,
+            "matrix": 3494309866,
+            "particles": null
+          }
+        ],
+        "castFlags": [
+          {
+            "name": "ActualSurfaceSlidingDew",
+            "instanced": true,
+            "castShadow": false,
+            "nonShadowTag": true
+          }
+        ],
+        "bodyCasters": [
+          {
+            "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_quiet_smile",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_1",
+            "castShadow": true
+          }
+        ],
+        "diagnostics": {
+          "supported": true,
+          "mode": "triangle-sliding-condensation",
+          "anchorCount": 80,
+          "limitations": [
+            "Routes follow connected reference triangle edges in rest-local gravity; rigid transforms and explicitly enabled morph vertex positions preserve attachment.",
+            "Condensation, sliding, evaporation and repeat are implemented; bead coalescence and detached falling droplets are omitted.",
+            "Each ellipsoid stays outside its current face plane; full collision simulation against other body parts is not performed.",
+            "Creation-time face masking preserves gaze and expression; accessory masks hide only local beads without reseeding.",
+            "Fixed path/particle budgets do not adapt to later topology, skinning or large scale changes; morphs require explicit opt-in."
+          ],
+          "budget": {
+            "drawCalls": 1,
+            "instances": 80,
+            "triangles": 13440,
+            "bufferBytes": 9872
+          }
+        },
+        "draws": 1362,
+        "skippedDraws": 20935,
+        "shadow": {
+          "enabled": true,
+          "actualType": 1,
+          "mapSize": [
+            1024,
+            1024
+          ],
+          "groundMaterial": "ShadowMaterial",
+          "groundOpacity": 0.09,
+          "groundY": -0.016,
+          "receiveShadow": true
+        },
+        "memory": {
+          "geometries": 28,
+          "textures": 6
+        },
+        "glError": 0,
+        "glDiagnostics": []
+      },
+      "restoredWave": {
+        "ready": "ready",
+        "time": 8.75000000000001,
+        "pixels": "6750a544db10ff86f11ee2672b82bb402c49b301f5de1414e657be17ea6278b2",
+        "attributes": {
+          "position": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+          "normal": "80706bee870329a0829113e63ed178f0a904029265da2c96c69ad50f9b1f9cec",
+          "uv": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+          "index": "934286d3bdd9361657e390c41762923871cec85a48a7d9775b362aee02dc7830",
+          "morphPosition": "7bf926ae1fd903a4a63d39b32c3c1cdafdcd30bc982138404f38b75f50c4dfde",
+          "morphNormal": "cf790aaebf3c4a41cbed597f93c53a82f4ba43f726c178d9504bc30dffd1ffbd"
+        },
+        "stem": "계",
+        "material": "癸 · Dew water",
+        "kind": 9,
+        "program": "stem-water-v3-r186-coherent-advection:9:high:character-rest-v1",
+        "depth": 1.35,
+        "presentationPosition": [
+          -0.42,
+          0,
+          0
+        ],
+        "displayRotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "bodyMatrix": [
+          0.9999984453924893,
+          0.0017632959492777202,
+          0,
+          0,
+          -0.001768411853873083,
+          1.0028997715392627,
+          0,
+          0,
+          0,
+          0,
+          1.35,
+          0,
+          -0.42417241682822177,
+          0.0003924735983368722,
+          0,
+          1
+        ],
+        "native": {
+          "modelMatrix": [
+            0.9999984502792358,
+            0.0017632959643378854,
+            0,
+            0,
+            -0.00176841183565557,
+            1.0028997659683228,
+            0,
+            0,
+            0,
+            0,
+            1.350000023841858,
+            0,
+            -0.42417243123054504,
+            0.00039247359381988645,
+            0,
+            1
+          ],
+          "seconds": 8.75,
+          "timeUniformOptimizedOut": false,
+          "density": 1,
+          "morphWeights": [
+            0.4489055871963501
+          ],
+          "contextId": 2,
+          "contextGeneration": 1,
+          "programId": 2,
+          "programIsCurrent": true,
+          "programIsLive": true
+        },
+        "rendererProgramId": 2,
+        "morph": [
+          0.4489056011542885
+        ],
+        "floor": -0.01190622989088297,
+        "motionRoot": {
+          "name": "ApprovedSpiritMotion",
+          "position": [
+            -0.004172416828221792,
+            0.0003924735983368722,
+            0
+          ],
+          "scale": [
+            1,
+            1.0029013306572039,
+            1
+          ],
+          "rotation": [
+            0,
+            0,
+            0.0017632968630226639,
+            "XYZ"
+          ]
+        },
+        "accentsShareMotionRoot": true,
+        "accents": [
+          {
+            "name": "ActualSurfaceSlidingDew",
+            "count": 80,
+            "matrix": 873342724,
+            "particles": null
+          }
+        ],
+        "castFlags": [
+          {
+            "name": "ActualSurfaceSlidingDew",
+            "instanced": true,
+            "castShadow": false,
+            "nonShadowTag": true
+          }
+        ],
+        "bodyCasters": [
+          {
+            "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_quiet_smile",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_1",
+            "castShadow": true
+          }
+        ],
+        "diagnostics": {
+          "supported": true,
+          "mode": "triangle-sliding-condensation",
+          "anchorCount": 80,
+          "limitations": [
+            "Routes follow connected reference triangle edges in rest-local gravity; rigid transforms and explicitly enabled morph vertex positions preserve attachment.",
+            "Condensation, sliding, evaporation and repeat are implemented; bead coalescence and detached falling droplets are omitted.",
+            "Each ellipsoid stays outside its current face plane; full collision simulation against other body parts is not performed.",
+            "Creation-time face masking preserves gaze and expression; accessory masks hide only local beads without reseeding.",
+            "Fixed path/particle budgets do not adapt to later topology, skinning or large scale changes; morphs require explicit opt-in."
+          ],
+          "budget": {
+            "drawCalls": 1,
+            "instances": 80,
+            "triangles": 13440,
+            "bufferBytes": 9872
+          }
+        },
+        "draws": 1441,
+        "skippedDraws": 23700,
+        "shadow": {
+          "enabled": true,
+          "actualType": 1,
+          "mapSize": [
+            1024,
+            1024
+          ],
+          "groundMaterial": "ShadowMaterial",
+          "groundOpacity": 0.09,
+          "groundY": -0.016,
+          "receiveShadow": true
+        },
+        "memory": {
+          "geometries": 28,
+          "textures": 6
+        },
+        "glError": 0,
+        "glDiagnostics": []
+      },
+      "restoredIdle": {
+        "ready": "ready",
+        "time": 16.250000000000117,
+        "pixels": "49d34ba58c5bf29a52e791688c9b6c76646d801fa408cef499349a353c51d8da",
+        "attributes": {
+          "position": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+          "normal": "80706bee870329a0829113e63ed178f0a904029265da2c96c69ad50f9b1f9cec",
+          "uv": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+          "index": "934286d3bdd9361657e390c41762923871cec85a48a7d9775b362aee02dc7830",
+          "morphPosition": "7bf926ae1fd903a4a63d39b32c3c1cdafdcd30bc982138404f38b75f50c4dfde",
+          "morphNormal": "cf790aaebf3c4a41cbed597f93c53a82f4ba43f726c178d9504bc30dffd1ffbd"
+        },
+        "stem": "계",
+        "material": "癸 · Dew water",
+        "kind": 9,
+        "program": "stem-water-v3-r186-coherent-advection:9:high:character-rest-v1",
+        "depth": 1.35,
+        "presentationPosition": [
+          -0.42,
+          0,
+          0
+        ],
+        "displayRotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "bodyMatrix": [
+          0.9999958735809165,
+          -0.002872772378695277,
+          0,
+          0,
+          0.0028737013657799244,
+          1.00031924874915,
+          0,
+          0,
+          0,
+          0,
+          1.35,
+          0,
+          -0.42671297797135344,
+          0.0005804346363094716,
+          0,
+          1
+        ],
+        "native": {
+          "modelMatrix": [
+            0.9999958872795105,
+            -0.0028727722819894552,
+            0,
+            0,
+            0.002873701276257634,
+            1.000319242477417,
+            0,
+            0,
+            0,
+            0,
+            1.350000023841858,
+            0,
+            -0.4267129898071289,
+            0.0005804346292279661,
+            0,
+            1
+          ],
+          "seconds": 16.25,
+          "timeUniformOptimizedOut": false,
+          "density": 1,
+          "morphWeights": [
+            0
+          ],
+          "contextId": 2,
+          "contextGeneration": 1,
+          "programId": 2,
+          "programIsCurrent": true,
+          "programIsLive": true
+        },
+        "rendererProgramId": 2,
+        "morph": [
+          0
+        ],
+        "floor": -0.011906229890882969,
+        "motionRoot": {
+          "name": "ApprovedSpiritMotion",
+          "position": [
+            -0.00671297797135343,
+            0.0005804346363094716,
+            0
+          ],
+          "scale": [
+            1,
+            1.0003233765026205,
+            1
+          ],
+          "rotation": [
+            0,
+            0,
+            -0.002872776330122721,
+            "XYZ"
+          ]
+        },
+        "accentsShareMotionRoot": true,
+        "accents": [
+          {
+            "name": "ActualSurfaceSlidingDew",
+            "count": 80,
+            "matrix": 3809866903,
+            "particles": null
+          }
+        ],
+        "castFlags": [
+          {
+            "name": "ActualSurfaceSlidingDew",
+            "instanced": true,
+            "castShadow": false,
+            "nonShadowTag": true
+          }
+        ],
+        "bodyCasters": [
+          {
+            "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_quiet_smile",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_1",
+            "castShadow": true
+          }
+        ],
+        "diagnostics": {
+          "supported": true,
+          "mode": "triangle-sliding-condensation",
+          "anchorCount": 80,
+          "limitations": [
+            "Routes follow connected reference triangle edges in rest-local gravity; rigid transforms and explicitly enabled morph vertex positions preserve attachment.",
+            "Condensation, sliding, evaporation and repeat are implemented; bead coalescence and detached falling droplets are omitted.",
+            "Each ellipsoid stays outside its current face plane; full collision simulation against other body parts is not performed.",
+            "Creation-time face masking preserves gaze and expression; accessory masks hide only local beads without reseeding.",
+            "Fixed path/particle budgets do not adapt to later topology, skinning or large scale changes; morphs require explicit opt-in."
+          ],
+          "budget": {
+            "drawCalls": 1,
+            "instances": 80,
+            "triangles": 13440,
+            "bufferBytes": 9872
+          }
+        },
+        "draws": 1520,
+        "skippedDraws": 35471,
+        "shadow": {
+          "enabled": true,
+          "actualType": 1,
+          "mapSize": [
+            1024,
+            1024
+          ],
+          "groundMaterial": "ShadowMaterial",
+          "groundOpacity": 0.09,
+          "groundY": -0.016,
+          "receiveShadow": true
+        },
+        "memory": {
+          "geometries": 28,
+          "textures": 6
+        },
+        "glError": 0,
+        "glDiagnostics": []
+      },
+      "unmounted": {
+        "draws": 1599,
+        "contextLost": true,
+        "connected": false,
+        "children": 0,
+        "glDiagnostics": []
+      }
+    }
+  ],
+  "servedClientJS": {
+    "/_next/static/chunks/rolldown-runtime-C60lm6uB.js": "5db5ba82eef00d1dee7e86e663098c9427d01183a88d357437daff295aec3e75",
+    "/_next/static/chunks/hash-D0ldriCF.js": "fba69692645d8206561e12edf1653f0f7931d0f14f8f753ec3be5031dfd004d1",
+    "/_next/static/chunks/app-elements-E4UGPDDI.js": "fd8fc392508dcb02453576a6495f48199d6781ce2e007b4dbe1704eb0ff34b36",
+    "/_next/static/chunks/app-rsc-render-mode-D-GRTnW-.js": "b9db37ffe7d7e3f76c7e6bdffc078b9da7b799d56513d9bb5387f887b4d658dc",
+    "/_next/static/chunks/protocol-headers-B9-bVeat.js": "9b15d2c8452ddb9df5d6f2cfb3a23dd576a10dc0450fb72565d9f293abab0edd",
+    "/_next/static/chunks/navigation-errors-BYh_AYLR.js": "8079365b302385be914b5750316813c78cdbb88f897349ecec72f5998fb65500",
+    "/_next/static/chunks/layout-segment-context-BckcPcis.js": "c64de838e71fad3cf5336f5624d3748651dcee78ce018188ba69bbd080a82881",
+    "/_next/static/chunks/index-D_ljqlZJ.js": "ba0b19cc13774e72a1a972220b2fa8dcc081b69f384a63726c5033da92b3226a",
+    "/_next/static/chunks/framework-D_rUT4EX.js": "939d0fabebb3b2f01753bb866b067d8d3384fb06da19f0e6557609d3b1a9f4f7",
+    "/_next/static/chunks/headers-C_MtfdF4.js": "d84532fc42b9a35aa8ebc1a2659d97cfecc4fc341718a0cf9f7c42f763ced4be",
+    "/_next/static/chunks/BottomNav-DSYCqw4G.js": "130f8e1f156f8ac0a8be81c3fabfac4a7d4fc3108bc0fcbc2ab90c957aa86db2",
+    "/_next/static/chunks/UniverseNav-n1aAjfL4.js": "3213d77acd6372dfcd85056de9c3de035cc6560074262cffb891ad41f6e718b6",
+    "/_next/static/chunks/page-Cq1gnFKK.js": "30fe51538ee8f1b36187da0c50c926f37a625386afd256a603775ddc18a34a64",
+    "/_next/static/chunks/camera-CpkD6ouZ.js": "5f1b11d9ea982ec45d5233f62f91cbb128df3a14bbc519af5f9a155b8332c16d",
+    "/_next/static/chunks/Header-DK6aSDDV.js": "9fdc8af1f797d436c4eca896c7633c80a3830644f4e3fdae42d302bd985945a5",
+    "/_next/static/chunks/theme-library-DnVAGHRL.js": "aae9151c51fa035b002952bd6225467b3741de2db86b778f3e3a9db0359b4728",
+    "/_next/static/chunks/share-2-DiTdMyfs.js": "1d2b9bce907c1d33bd6d04705cb47ea6a92ab5d1148f7c1172833cdbf27c88a8",
+    "/_next/static/chunks/CosmicPassportModal-D87oCeRh.js": "06815612464a8acc81d6426f7174b388c3d37d40573369ee85eb0ac1b427dfb5",
+    "/_next/static/chunks/spirit-profiles-3s-qcMto.js": "fee4426ff88b333ad4f625300206368c2b30f950c119417fe89f9f3a1fb593fe",
+    "/_next/static/chunks/ElementalSpiritCanvas-ClIXRhuO.js": "3cd52f116a3ad2dc218d67b36bc6248edb9c6fc67c5c2aa99e72224182213890",
+    "/_next/static/chunks/rotate-ccw-DI-d8NOa.js": "f59a82f5b3abbdac349dc174bed54bfcdf7d8cffacecf0ff4e6020c4ec4a87af",
+    "/_next/static/chunks/scene-environment-FvN9uoeD.js": "fb4d5e2828429fe90f90c05077e4e89ef5cc0533e27e3b4a4a114239532f9981",
+    "/_next/static/chunks/spirit-zodiac-pet-BfXjFzlN.js": "b1b19c10d55bd4de1cd8ac810410eebebbd31b32e545509a127a370fa8dd2108",
+    "/_next/static/chunks/render-resources-yDq6Xwnv.js": "0f742f356bc8b34fcda5e3ae71e9c22f6d7ae34b7702023a10febda5cea3baa1",
+    "/_next/static/chunks/PlanetCanvas-BEV5QBEL.js": "3bc8aba43a7793fa88cfbeb60bccae0ce039cfc14a7cccfd32bcad7fa298fe4b",
+    "/_next/static/chunks/asteroid-belt-Fr1gmRQv.js": "cc88afc354c6eb68f11c7f006f911dfac1d72b5f0c5193eab5a38d586db57c5e",
+    "/_next/static/chunks/surface-effects-CvtCcSGP.js": "1b0597381616be517dabed0ac3e45473ac803556f108bf892ad7909b3d1693bc"
+  },
+  "databaseCounts": {
+    "chats": 0,
+    "fortunes": 0,
+    "guin_maps": 0,
+    "ai_test_budget": 0
+  },
+  "errors": [],
+  "outbound": [],
+  "limits": [
+    "Exact local production dist/server Worker plus its dist/client assets, disposable synthetic D1; no hosted authenticated session or real user data.",
+    "Chromium SwiftShader with native selected-frame draws; no physical mobile GPU or suspension certification.",
+    "Synthetic rAF/performance clock and skipped intermediate draws; CPU motion/effects update every stepped frame, selected screenshots/native uniform readbacks use real draw calls.",
+    "Existing Canvas safeDelta caps each gap at .05 seconds, so 15/60Hz comparison matches animation time rather than wall duration.",
+    "Native body draws/model matrices are required for every case. Static bark/stone can optimize out uStemTime; native active time assertions cover the other animated recipes.",
+    "Only the original bounded .45 pose-study morph is exercised; local joint/topology CPU measurements and captured appearance are not a new production rig or global nonintersection proof."
+  ]
+}
