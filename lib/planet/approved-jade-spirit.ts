@@ -136,7 +136,13 @@ export async function loadApprovedSpirit(dayKey: string, monthKey: string, quali
     pet = await loadZodiacPet(dayKey.charAt(1), quality);
     const ownedPet = pet;
     pet.group.position.set(1.10, 0, .12); group.add(pet.group);
-    model.traverse(object => { if ((object as THREE.Mesh).isMesh) (object as THREE.Mesh).castShadow = true; });
+    model.traverse(object => {
+      const mesh = object as THREE.Mesh;
+      if (!mesh.isMesh) return;
+      // Fire uses transparent camera-facing cards without an alpha-aware depth
+      // shader. Keep the B body and other accents casting their existing shadows.
+      mesh.castShadow = !((stem === '丙' || stem === '丁') && (mesh as THREE.InstancedMesh).isInstancedMesh);
+    });
     const eyes: THREE.Mesh[] = [];
     model.traverse(object => { const mesh = object as THREE.Mesh; if (mesh.isMesh && mesh.name.includes('almond_gaze')) eyes.push(mesh); });
     const eyeScales = eyes.map(eye => eye.scale.y);

@@ -1,0 +1,208 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-10-10T01:31:59.013899+00:00",
+  "before": {
+    "commit": "ee6e9740054394b0bee30563f35e957b49adf4bb",
+    "loaderSHA256": "714a0d668bb16ae31dd67e7d6103028e80e601547fe5b142062d481bd99eea6f",
+    "canvasSHA256": "2b00129caabcd3062846bc4d53c789d41ee387e21b3b9bc7007b3018bb7a16ca",
+    "harnessSHA256": "73c4cf29d57dbaf094fd7a16558424c1a6b793eec8ac8cfed3e42302e8a64589"
+  },
+  "after": {
+    "commit": "ee6e9740054394b0bee30563f35e957b49adf4bb",
+    "loaderSHA256": "d352f7d268ae0326bb25b0bb5bc060640b2c6156382fc4369fa68b8049e78b2c",
+    "canvasSHA256": "2b00129caabcd3062846bc4d53c789d41ee387e21b3b9bc7007b3018bb7a16ca",
+    "harnessSHA256": "73c4cf29d57dbaf094fd7a16558424c1a6b793eec8ac8cfed3e42302e8a64589"
+  },
+  "sourceNote": "Both shadow captures were made against candidate base ee6e974; source loader bytes distinguish the unchanged negative control from the working-tree fix. Native v30 is only the before source for the separate surface/timing comparison.",
+  "negativeControlFixedExpectationFailed": true,
+  "negativeControlAssertionReportSHA256": "fdbe21005d7eb00f850b10324802776e4f6425e33da44086685a1800f44c9e59",
+  "views": [
+    {
+      "day": "병인",
+      "quality": "high",
+      "view": "front",
+      "cardShadowPixelsBefore": 228,
+      "cardShadowPixelsAfter": 0,
+      "bodyShadowPixelsAfter": 6570,
+      "originalWithoutCardShadowEqualsFixedProduction": true,
+      "bodyFlagsAndLightingGroundCameraPoseExactlyEqual": true,
+      "beforePNG_SHA256": "501f71dd629277adbf3721dbe433422cd0a7e5de5cb49f94962fdfd80bfd073c",
+      "afterPNG_SHA256": "fdfd555289038e0df187b5867dfd6038f87344fbacf1c1eef3cafca98df0cfdd"
+    },
+    {
+      "day": "병인",
+      "quality": "high",
+      "view": "oblique",
+      "cardShadowPixelsBefore": 34,
+      "cardShadowPixelsAfter": 0,
+      "bodyShadowPixelsAfter": 5845,
+      "originalWithoutCardShadowEqualsFixedProduction": true,
+      "bodyFlagsAndLightingGroundCameraPoseExactlyEqual": true,
+      "beforePNG_SHA256": "4097b2cfa812b2e2ae93a50054e15ef2ad3c87e2339e02f16dd9ecbe988d8e34",
+      "afterPNG_SHA256": "ef5ec73629cc9ef37831a3641f7fe32d7a8191c43875d07aedae370bef4427f9"
+    },
+    {
+      "day": "병인",
+      "quality": "high",
+      "view": "side",
+      "cardShadowPixelsBefore": 213,
+      "cardShadowPixelsAfter": 0,
+      "bodyShadowPixelsAfter": 6721,
+      "originalWithoutCardShadowEqualsFixedProduction": true,
+      "bodyFlagsAndLightingGroundCameraPoseExactlyEqual": true,
+      "beforePNG_SHA256": "1111b2f507612006f7792b4df85735e446f17578cc4aa5718cb2b5c5418d179f",
+      "afterPNG_SHA256": "0f6d8b635961d684bd0d925e808c08f921b4331ab9fc64e18cd84519bbf44b2b"
+    },
+    {
+      "day": "병인",
+      "quality": "low",
+      "view": "front",
+      "cardShadowPixelsBefore": 140,
+      "cardShadowPixelsAfter": 0,
+      "bodyShadowPixelsAfter": 6574,
+      "originalWithoutCardShadowEqualsFixedProduction": true,
+      "bodyFlagsAndLightingGroundCameraPoseExactlyEqual": true
+    },
+    {
+      "day": "병인",
+      "quality": "low",
+      "view": "oblique",
+      "cardShadowPixelsBefore": 19,
+      "cardShadowPixelsAfter": 0,
+      "bodyShadowPixelsAfter": 5850,
+      "originalWithoutCardShadowEqualsFixedProduction": true,
+      "bodyFlagsAndLightingGroundCameraPoseExactlyEqual": true
+    },
+    {
+      "day": "병인",
+      "quality": "low",
+      "view": "side",
+      "cardShadowPixelsBefore": 153,
+      "cardShadowPixelsAfter": 0,
+      "bodyShadowPixelsAfter": 6726,
+      "originalWithoutCardShadowEqualsFixedProduction": true,
+      "bodyFlagsAndLightingGroundCameraPoseExactlyEqual": true
+    },
+    {
+      "day": "정묘",
+      "quality": "high",
+      "view": "front",
+      "cardShadowPixelsBefore": 0,
+      "cardShadowPixelsAfter": 0,
+      "bodyShadowPixelsAfter": 7007,
+      "originalWithoutCardShadowEqualsFixedProduction": true,
+      "bodyFlagsAndLightingGroundCameraPoseExactlyEqual": true,
+      "beforePNG_SHA256": "3a19681753acc18abc43e80cfb74cd1433f4954a6c5be7833c6344b7652ea583",
+      "afterPNG_SHA256": "3a19681753acc18abc43e80cfb74cd1433f4954a6c5be7833c6344b7652ea583"
+    },
+    {
+      "day": "정묘",
+      "quality": "high",
+      "view": "oblique",
+      "cardShadowPixelsBefore": 2,
+      "cardShadowPixelsAfter": 0,
+      "bodyShadowPixelsAfter": 6227,
+      "originalWithoutCardShadowEqualsFixedProduction": true,
+      "bodyFlagsAndLightingGroundCameraPoseExactlyEqual": true,
+      "beforePNG_SHA256": "89fc536d98cd473e203311a2498e068c1b3c0ccb2b021900146d1a696aa70172",
+      "afterPNG_SHA256": "ec433632a13c0d53267dcd05fc96a41bc7e4916adc9aa307b647bcf7bbb24821"
+    },
+    {
+      "day": "정묘",
+      "quality": "high",
+      "view": "side",
+      "cardShadowPixelsBefore": 6,
+      "cardShadowPixelsAfter": 0,
+      "bodyShadowPixelsAfter": 7123,
+      "originalWithoutCardShadowEqualsFixedProduction": true,
+      "bodyFlagsAndLightingGroundCameraPoseExactlyEqual": true,
+      "beforePNG_SHA256": "fb74fc8b4a2cdef861522cac95fbb9be165ae836707ed387f8a4e4f9e5e23943",
+      "afterPNG_SHA256": "9cdf69303df990c80cc587ae8f92eef1b38535c7ce7529eafd67f52353c6fa99"
+    },
+    {
+      "day": "정묘",
+      "quality": "low",
+      "view": "front",
+      "cardShadowPixelsBefore": 0,
+      "cardShadowPixelsAfter": 0,
+      "bodyShadowPixelsAfter": 7015,
+      "originalWithoutCardShadowEqualsFixedProduction": true,
+      "bodyFlagsAndLightingGroundCameraPoseExactlyEqual": true
+    },
+    {
+      "day": "정묘",
+      "quality": "low",
+      "view": "oblique",
+      "cardShadowPixelsBefore": 2,
+      "cardShadowPixelsAfter": 0,
+      "bodyShadowPixelsAfter": 6234,
+      "originalWithoutCardShadowEqualsFixedProduction": true,
+      "bodyFlagsAndLightingGroundCameraPoseExactlyEqual": true
+    },
+    {
+      "day": "정묘",
+      "quality": "low",
+      "view": "side",
+      "cardShadowPixelsBefore": 3,
+      "cardShadowPixelsAfter": 0,
+      "bodyShadowPixelsAfter": 7129,
+      "originalWithoutCardShadowEqualsFixedProduction": true,
+      "bodyFlagsAndLightingGroundCameraPoseExactlyEqual": true
+    }
+  ],
+  "cardShadowChangedPixelsBeforeTotal": 800,
+  "cardShadowChangedPixelsAfterTotal": 0,
+  "bodyCasterCountPerView": 8,
+  "bodyShadowPixelsAfterRange": [
+    5845,
+    7129
+  ],
+  "nonFireCasterCasesCompared": 16,
+  "nonFireCastersExactlyEqual": true,
+  "canvasCases": [
+    {
+      "day": "병인",
+      "actualProductionComponent": true,
+      "strictMode": true,
+      "ready": true,
+      "pauseStable": true,
+      "dragPreservesMaterialClock": true,
+      "resetExact": true,
+      "playAdvancedTime": true,
+      "lowQualityMapSize": [
+        512,
+        512
+      ],
+      "flameCastShadow": false
+    },
+    {
+      "day": "정묘",
+      "actualProductionComponent": true,
+      "strictMode": true,
+      "ready": true,
+      "pauseStable": true,
+      "dragPreservesMaterialClock": true,
+      "resetExact": true,
+      "playAdvancedTime": true,
+      "lowQualityMapSize": [
+        512,
+        512
+      ],
+      "flameCastShadow": false
+    }
+  ],
+  "canvasSourceExactlyEqual": true,
+  "canvasUnmountStoppedDrawsAndRemovedCanvas": true,
+  "configuredShadowMapType": "PCFSoftShadowMap (2), same as Canvas",
+  "observedShadowMapType": "PCFShadowMap (1), automatic Three r186.1 fallback on render; Canvas source unchanged",
+  "memoryAfterSpiritDisposal": {
+    "geometries": 0,
+    "textures": 4
+  },
+  "limitations": [
+    "Pixels are direct local Chromium SwiftShader draws, not physical mobile GPU or hosted authentication.",
+    "Actual React Canvas harness uses its production component and controls with local module instrumentation; standalone page does not import site CSS or prove hosted page layout.",
+    "Only high-quality standalone views and the low-quality actual Canvas screenshots are saved; all 12 standalone view/quality combinations have pixel hashes and assertions.",
+    "The original B caster and non-fire accent flags are preserved; no claim about complete future dew/vine/sand effects."
+  ]
+}

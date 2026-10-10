@@ -1,6 +1,9 @@
 {
   "status": "PASS",
   "phase": "after",
+  "sourceCommit": "ee6e9740054394b0bee30563f35e957b49adf4bb",
+  "harnessSHA256": "a441204812202d0c8e5b4d0eb7ab1d95a055045b076710aecc2f2964174b049b",
+  "loaderSHA256": "d352f7d268ae0326bb25b0bb5bc060640b2c6156382fc4369fa68b8049e78b2c",
   "metadata": {
     "material": "丙 · Solar fire",
     "kind": 2,
@@ -16,38 +19,958 @@
     "authoredPetStatus": "missing-source",
     "effects": [
       "SoftSolarFireWisps"
-    ]
+    ],
+    "clockUniform": "uStemTime",
+    "initialMaterialSeconds": 0
   },
   "frames": [
     {
       "file": "fire-front.png",
       "angle": 0,
-      "diagnostic": false
+      "diagnostic": false,
+      "clock": {
+        "uniform": "uStemTime",
+        "resetSeconds": 0,
+        "steps": 135,
+        "deltaSeconds": 0.016666666666666666,
+        "targetSeconds": 2.25,
+        "materialSeconds": 2.25,
+        "uploadedSeconds": 2.25,
+        "effectClocks": [
+          {
+            "name": "SoftSolarFireWisps",
+            "seconds": 2.25
+          }
+        ]
+      },
+      "conditions": {
+        "camera": {
+          "fov": 38,
+          "aspect": 1,
+          "near": 0.1,
+          "far": 40,
+          "position": [
+            0,
+            1.7,
+            5.7
+          ],
+          "worldMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0.9967594336616964,
+            -0.0804402349972597,
+            0,
+            0,
+            0.0804402349972597,
+            0.9967594336616964,
+            0,
+            0,
+            1.7,
+            5.7,
+            1
+          ],
+          "projectionMatrix": [
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            -1.005012531328321,
+            -1,
+            0,
+            0,
+            -0.2005012531328321,
+            0
+          ]
+        },
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "color": "f4f8fc",
+            "intensity": 0.85,
+            "position": [
+              0,
+              1,
+              0
+            ],
+            "castShadow": false,
+            "groundColor": "26343b"
+          },
+          {
+            "type": "DirectionalLight",
+            "color": "fff1d9",
+            "intensity": 2.1,
+            "position": [
+              -3,
+              4,
+              4
+            ],
+            "castShadow": false
+          },
+          {
+            "type": "DirectionalLight",
+            "color": "c1e4f0",
+            "intensity": 0.8,
+            "position": [
+              4,
+              1,
+              2
+            ],
+            "castShadow": false
+          },
+          {
+            "type": "DirectionalLight",
+            "color": "f5fbff",
+            "intensity": 1.8,
+            "position": [
+              0,
+              3,
+              -3
+            ],
+            "castShadow": false
+          }
+        ],
+        "renderer": {
+          "toneMapping": 4,
+          "exposure": 1.12,
+          "outputColorSpace": "srgb",
+          "shadowMapEnabled": false
+        },
+        "model": {
+          "position": [
+            -0.42,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1.35
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            "XYZ"
+          ],
+          "bodyWorldMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1.35,
+            0,
+            -0.42,
+            0,
+            0,
+            1
+          ]
+        }
+      }
     },
     {
       "file": "coordinates-front.png",
       "angle": 0,
-      "diagnostic": true
+      "diagnostic": true,
+      "clock": {
+        "uniform": "uStemTime",
+        "resetSeconds": 0,
+        "steps": 135,
+        "deltaSeconds": 0.016666666666666666,
+        "targetSeconds": 2.25,
+        "materialSeconds": 2.25,
+        "uploadedSeconds": 2.25,
+        "effectClocks": [
+          {
+            "name": "SoftSolarFireWisps",
+            "seconds": 2.25
+          }
+        ]
+      },
+      "conditions": {
+        "camera": {
+          "fov": 38,
+          "aspect": 1,
+          "near": 0.1,
+          "far": 40,
+          "position": [
+            0,
+            1.7,
+            5.7
+          ],
+          "worldMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0.9967594336616964,
+            -0.0804402349972597,
+            0,
+            0,
+            0.0804402349972597,
+            0.9967594336616964,
+            0,
+            0,
+            1.7,
+            5.7,
+            1
+          ],
+          "projectionMatrix": [
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            -1.005012531328321,
+            -1,
+            0,
+            0,
+            -0.2005012531328321,
+            0
+          ]
+        },
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "color": "f4f8fc",
+            "intensity": 0.85,
+            "position": [
+              0,
+              1,
+              0
+            ],
+            "castShadow": false,
+            "groundColor": "26343b"
+          },
+          {
+            "type": "DirectionalLight",
+            "color": "fff1d9",
+            "intensity": 2.1,
+            "position": [
+              -3,
+              4,
+              4
+            ],
+            "castShadow": false
+          },
+          {
+            "type": "DirectionalLight",
+            "color": "c1e4f0",
+            "intensity": 0.8,
+            "position": [
+              4,
+              1,
+              2
+            ],
+            "castShadow": false
+          },
+          {
+            "type": "DirectionalLight",
+            "color": "f5fbff",
+            "intensity": 1.8,
+            "position": [
+              0,
+              3,
+              -3
+            ],
+            "castShadow": false
+          }
+        ],
+        "renderer": {
+          "toneMapping": 4,
+          "exposure": 1.12,
+          "outputColorSpace": "srgb",
+          "shadowMapEnabled": false
+        },
+        "model": {
+          "position": [
+            -0.42,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1.35
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            "XYZ"
+          ],
+          "bodyWorldMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1.35,
+            0,
+            -0.42,
+            0,
+            0,
+            1
+          ]
+        }
+      }
     },
     {
       "file": "fire-oblique.png",
       "angle": 0.7853981633974483,
-      "diagnostic": false
+      "diagnostic": false,
+      "clock": {
+        "uniform": "uStemTime",
+        "resetSeconds": 0,
+        "steps": 135,
+        "deltaSeconds": 0.016666666666666666,
+        "targetSeconds": 2.25,
+        "materialSeconds": 2.25,
+        "uploadedSeconds": 2.25,
+        "effectClocks": [
+          {
+            "name": "SoftSolarFireWisps",
+            "seconds": 2.25
+          }
+        ]
+      },
+      "conditions": {
+        "camera": {
+          "fov": 38,
+          "aspect": 1,
+          "near": 0.1,
+          "far": 40,
+          "position": [
+            0,
+            1.7,
+            5.7
+          ],
+          "worldMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0.9967594336616964,
+            -0.0804402349972597,
+            0,
+            0,
+            0.0804402349972597,
+            0.9967594336616964,
+            0,
+            0,
+            1.7,
+            5.7,
+            1
+          ],
+          "projectionMatrix": [
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            -1.005012531328321,
+            -1,
+            0,
+            0,
+            -0.2005012531328321,
+            0
+          ]
+        },
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "color": "f4f8fc",
+            "intensity": 0.85,
+            "position": [
+              0,
+              1,
+              0
+            ],
+            "castShadow": false,
+            "groundColor": "26343b"
+          },
+          {
+            "type": "DirectionalLight",
+            "color": "fff1d9",
+            "intensity": 2.1,
+            "position": [
+              -3,
+              4,
+              4
+            ],
+            "castShadow": false
+          },
+          {
+            "type": "DirectionalLight",
+            "color": "c1e4f0",
+            "intensity": 0.8,
+            "position": [
+              4,
+              1,
+              2
+            ],
+            "castShadow": false
+          },
+          {
+            "type": "DirectionalLight",
+            "color": "f5fbff",
+            "intensity": 1.8,
+            "position": [
+              0,
+              3,
+              -3
+            ],
+            "castShadow": false
+          }
+        ],
+        "renderer": {
+          "toneMapping": 4,
+          "exposure": 1.12,
+          "outputColorSpace": "srgb",
+          "shadowMapEnabled": false
+        },
+        "model": {
+          "position": [
+            -0.42,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1.35
+          ],
+          "rotation": [
+            0,
+            0.7853981633974483,
+            0,
+            "XYZ"
+          ],
+          "bodyWorldMatrix": [
+            0.7071067811865475,
+            0,
+            -0.7071067811865476,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0.9545941546018393,
+            0,
+            0.9545941546018392,
+            0,
+            -0.42,
+            0,
+            0,
+            1
+          ]
+        }
+      }
     },
     {
       "file": "coordinates-oblique.png",
       "angle": 0.7853981633974483,
-      "diagnostic": true
+      "diagnostic": true,
+      "clock": {
+        "uniform": "uStemTime",
+        "resetSeconds": 0,
+        "steps": 135,
+        "deltaSeconds": 0.016666666666666666,
+        "targetSeconds": 2.25,
+        "materialSeconds": 2.25,
+        "uploadedSeconds": 2.25,
+        "effectClocks": [
+          {
+            "name": "SoftSolarFireWisps",
+            "seconds": 2.25
+          }
+        ]
+      },
+      "conditions": {
+        "camera": {
+          "fov": 38,
+          "aspect": 1,
+          "near": 0.1,
+          "far": 40,
+          "position": [
+            0,
+            1.7,
+            5.7
+          ],
+          "worldMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0.9967594336616964,
+            -0.0804402349972597,
+            0,
+            0,
+            0.0804402349972597,
+            0.9967594336616964,
+            0,
+            0,
+            1.7,
+            5.7,
+            1
+          ],
+          "projectionMatrix": [
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            -1.005012531328321,
+            -1,
+            0,
+            0,
+            -0.2005012531328321,
+            0
+          ]
+        },
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "color": "f4f8fc",
+            "intensity": 0.85,
+            "position": [
+              0,
+              1,
+              0
+            ],
+            "castShadow": false,
+            "groundColor": "26343b"
+          },
+          {
+            "type": "DirectionalLight",
+            "color": "fff1d9",
+            "intensity": 2.1,
+            "position": [
+              -3,
+              4,
+              4
+            ],
+            "castShadow": false
+          },
+          {
+            "type": "DirectionalLight",
+            "color": "c1e4f0",
+            "intensity": 0.8,
+            "position": [
+              4,
+              1,
+              2
+            ],
+            "castShadow": false
+          },
+          {
+            "type": "DirectionalLight",
+            "color": "f5fbff",
+            "intensity": 1.8,
+            "position": [
+              0,
+              3,
+              -3
+            ],
+            "castShadow": false
+          }
+        ],
+        "renderer": {
+          "toneMapping": 4,
+          "exposure": 1.12,
+          "outputColorSpace": "srgb",
+          "shadowMapEnabled": false
+        },
+        "model": {
+          "position": [
+            -0.42,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1.35
+          ],
+          "rotation": [
+            0,
+            0.7853981633974483,
+            0,
+            "XYZ"
+          ],
+          "bodyWorldMatrix": [
+            0.7071067811865475,
+            0,
+            -0.7071067811865476,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0.9545941546018393,
+            0,
+            0.9545941546018392,
+            0,
+            -0.42,
+            0,
+            0,
+            1
+          ]
+        }
+      }
     },
     {
       "file": "fire-side.png",
       "angle": 1.5707963267948966,
-      "diagnostic": false
+      "diagnostic": false,
+      "clock": {
+        "uniform": "uStemTime",
+        "resetSeconds": 0,
+        "steps": 135,
+        "deltaSeconds": 0.016666666666666666,
+        "targetSeconds": 2.25,
+        "materialSeconds": 2.25,
+        "uploadedSeconds": 2.25,
+        "effectClocks": [
+          {
+            "name": "SoftSolarFireWisps",
+            "seconds": 2.25
+          }
+        ]
+      },
+      "conditions": {
+        "camera": {
+          "fov": 38,
+          "aspect": 1,
+          "near": 0.1,
+          "far": 40,
+          "position": [
+            0,
+            1.7,
+            5.7
+          ],
+          "worldMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0.9967594336616964,
+            -0.0804402349972597,
+            0,
+            0,
+            0.0804402349972597,
+            0.9967594336616964,
+            0,
+            0,
+            1.7,
+            5.7,
+            1
+          ],
+          "projectionMatrix": [
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            -1.005012531328321,
+            -1,
+            0,
+            0,
+            -0.2005012531328321,
+            0
+          ]
+        },
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "color": "f4f8fc",
+            "intensity": 0.85,
+            "position": [
+              0,
+              1,
+              0
+            ],
+            "castShadow": false,
+            "groundColor": "26343b"
+          },
+          {
+            "type": "DirectionalLight",
+            "color": "fff1d9",
+            "intensity": 2.1,
+            "position": [
+              -3,
+              4,
+              4
+            ],
+            "castShadow": false
+          },
+          {
+            "type": "DirectionalLight",
+            "color": "c1e4f0",
+            "intensity": 0.8,
+            "position": [
+              4,
+              1,
+              2
+            ],
+            "castShadow": false
+          },
+          {
+            "type": "DirectionalLight",
+            "color": "f5fbff",
+            "intensity": 1.8,
+            "position": [
+              0,
+              3,
+              -3
+            ],
+            "castShadow": false
+          }
+        ],
+        "renderer": {
+          "toneMapping": 4,
+          "exposure": 1.12,
+          "outputColorSpace": "srgb",
+          "shadowMapEnabled": false
+        },
+        "model": {
+          "position": [
+            -0.42,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1.35
+          ],
+          "rotation": [
+            0,
+            1.5707963267948966,
+            0,
+            "XYZ"
+          ],
+          "bodyWorldMatrix": [
+            2.220446049250313e-16,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1.35,
+            0,
+            2.997602166487923e-16,
+            0,
+            -0.42,
+            0,
+            0,
+            1
+          ]
+        }
+      }
     },
     {
       "file": "coordinates-side.png",
       "angle": 1.5707963267948966,
-      "diagnostic": true
+      "diagnostic": true,
+      "clock": {
+        "uniform": "uStemTime",
+        "resetSeconds": 0,
+        "steps": 135,
+        "deltaSeconds": 0.016666666666666666,
+        "targetSeconds": 2.25,
+        "materialSeconds": 2.25,
+        "uploadedSeconds": 2.25,
+        "effectClocks": [
+          {
+            "name": "SoftSolarFireWisps",
+            "seconds": 2.25
+          }
+        ]
+      },
+      "conditions": {
+        "camera": {
+          "fov": 38,
+          "aspect": 1,
+          "near": 0.1,
+          "far": 40,
+          "position": [
+            0,
+            1.7,
+            5.7
+          ],
+          "worldMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0.9967594336616964,
+            -0.0804402349972597,
+            0,
+            0,
+            0.0804402349972597,
+            0.9967594336616964,
+            0,
+            0,
+            1.7,
+            5.7,
+            1
+          ],
+          "projectionMatrix": [
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            -1.005012531328321,
+            -1,
+            0,
+            0,
+            -0.2005012531328321,
+            0
+          ]
+        },
+        "lights": [
+          {
+            "type": "HemisphereLight",
+            "color": "f4f8fc",
+            "intensity": 0.85,
+            "position": [
+              0,
+              1,
+              0
+            ],
+            "castShadow": false,
+            "groundColor": "26343b"
+          },
+          {
+            "type": "DirectionalLight",
+            "color": "fff1d9",
+            "intensity": 2.1,
+            "position": [
+              -3,
+              4,
+              4
+            ],
+            "castShadow": false
+          },
+          {
+            "type": "DirectionalLight",
+            "color": "c1e4f0",
+            "intensity": 0.8,
+            "position": [
+              4,
+              1,
+              2
+            ],
+            "castShadow": false
+          },
+          {
+            "type": "DirectionalLight",
+            "color": "f5fbff",
+            "intensity": 1.8,
+            "position": [
+              0,
+              3,
+              -3
+            ],
+            "castShadow": false
+          }
+        ],
+        "renderer": {
+          "toneMapping": 4,
+          "exposure": 1.12,
+          "outputColorSpace": "srgb",
+          "shadowMapEnabled": false
+        },
+        "model": {
+          "position": [
+            -0.42,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1.35
+          ],
+          "rotation": [
+            0,
+            1.5707963267948966,
+            0,
+            "XYZ"
+          ],
+          "bodyWorldMatrix": [
+            2.220446049250313e-16,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1.35,
+            0,
+            2.997602166487923e-16,
+            0,
+            -0.42,
+            0,
+            0,
+            1
+          ]
+        }
+      }
     }
   ],
   "memory": {
@@ -56,9 +979,12 @@
   },
   "errors": [],
   "outbound": [],
+  "timing": "Each frame resets, advances 135 steps at 1/60 second, then asserts both shader uniform reference and uploaded GPU time at 2.25 seconds",
   "limits": [
+    "Supersedes initial fire captures where native v30 delta=0 held material time at 0 while candidate absolute time was 2.25",
     "Diagnostic grid replaces shading only in clearly named coordinate screenshots; fire screenshots use the actual runtime material and effects",
     "Same 8 cycles per coordinate unit in both diagnostic modes; coordinate units are collapsed unit directions in v30, displayed rest units in candidate",
+    "This comparison harness does not enable shadows or add a ground; separate flame shadow regression uses actual Canvas shadow conditions",
     "Local Chromium SwiftShader, no hosted authenticated session or physical mobile GPU",
     "No authored animal GLB is available; the existing tiger remains a temporary procedural model"
   ]

@@ -38,15 +38,45 @@ v30의 정령 loader는 병화를 포함한 9개 천간에 구형 행성용
 | 큰 방향의 밀도, 99백분위 | 5.7510 | 1.000003 |
 | 기존 UV 경계 중복점의 rest 좌표 틈 | 해당 좌표 없음 | 2,143쌍 모두 0 |
 
-같은 harness로 원본 v30와 후보에서 실제 GLB/PNG를 렌더링했습니다.
-fire 화면은 실제 runtime 재질·효과입니다. `coordinates-*`는 좌표 압축을
-비교하기 위해 명시적으로 만든 진단 격자이며 제품 화면이 아닙니다.
+초기 fire 캡처는 원본 v30의 delta API에 0을 전달해 재질 시간이 0초에 머물렀고,
+후보의 absolute API는 2.25초였으므로 같은 시간 비교가 아니었습니다. 이 초기
+캡처를 같은 시간의 시각 개선이나 승인 근거로 사용하지 않습니다. 좌표 Jacobian
+측정과 `coordinates-*` 진단 격자의 좌표 압축 증거는 이 시간 오류와 독립입니다.
+후속 QA를 원본 v30과 후보에서 다시 실행했습니다. 매 프레임 reset 후 1/60초 간격으로
+135회를 갱신했고, 원본 `uLsTime`과 후보 `uStemTime`의 실제 GPU 업로드 값이 모두
+2.25초임을 assert했습니다. 여섯 프레임의 카메라·조명·몸체 변환은 정확히 일치합니다.
+아래 이미지는 보정한 결과이며 [시간·변환·이미지 SHA 비교](qa/spirit-surface-v30/timing-comparison.json)를
+함께 보존합니다. fire 화면은 각 버전의 전체 runtime 재질·효과를 비교하므로 좌표 변경만의
+영향을 분리하거나 외형 승인을 뜻하지 않습니다. `coordinates-*`는 명시적인 진단 격자이며
+제품 화면이 아닙니다. 이 harness는 그림자를 끄고, 그림자는 아래 별도 QA로 검증했습니다.
 
 | 화면 | 수정 전 | 후보 |
 | --- | --- | --- |
 | 실제 병화 | [정면](qa/spirit-surface-v30/before/fire-front.png) | [정면](qa/spirit-surface-v30/after/fire-front.png) |
 | 좌표 진단 | [정면](qa/spirit-surface-v30/before/coordinates-front.png) | [정면](qa/spirit-surface-v30/after/coordinates-front.png) |
 | 실제 병화 측면 | [측면](qa/spirit-surface-v30/before/fire-side.png) | [측면](qa/spirit-surface-v30/after/fire-side.png) |
+
+## 불꽃 카드의 사각 그림자 수정
+
+후보 loader는 효과를 추가한 뒤 모든 mesh에 `castShadow=true`를 지정했습니다.
+丙·丁의 투명 billboard `InstancedMesh`에는 alpha를 반영하는 `customDepthMaterial`이
+없어 보이지 않는 카드 면도 바닥 그림자에 포함됐습니다. 이 두 천간의 instanced
+불꽃 카드만 casting에서 제외하고, 원래 B mesh 8개와 다른 효과의 caster flags는 보존했습니다.
+
+`ee6e974` 후보를 수정 전 negative control로 사용했습니다. 실제 Canvas 조명과
+`ShadowMaterial` 바닥·그림자를 켠 상태에서 두 천간 × high/low × 세 방향, 총 12개
+조건을 reset 후 2.25초에 비교했습니다. 카드 casting만 끄는 참조와 수정 전의 픽셀
+차이는 합계 800개였고, 수정 후 12개 조건 모두 0개입니다. 몸체 casting만 끈 참조와는
+조건별 5,845–7,129개 픽셀이 달라 실제 몸체 그림자가 유지됨을 확인했습니다.
+다른 여덟 천간 × 두 품질의 caster 목록 16개도 수정 전후 정확히 일치합니다.
+
+실제 `ElementalSpiritCanvas`를 모바일 크기·StrictMode·reduced motion으로 실행해
+丙·丁의 ready, 정지 화면 안정성, 같은 시간의 drag 회전, 정확한 reset, play/pause,
+unmount를 검증했습니다. 이 standalone QA 페이지는 사이트 CSS를 가져오지 않습니다.
+Three r186.1은 Canvas가 요청한 `PCFSoftShadowMap`을 render 시 `PCFShadowMap`으로
+변환하므로 실제 관측 type은 1이며, Canvas 설정은 변경하지 않았습니다.
+[그림자 검증과 캡처](qa/spirit-fire-shadow/README.md),
+[조건별 비교](qa/spirit-fire-shadow/comparison.json)에 근거와 한계를 기록했습니다.
 
 ## 연결한 십간과 효과 범위
 
@@ -96,7 +126,9 @@ fire 화면은 실제 runtime 재질·효과입니다. `coordinates-*`는 좌표
 | 실제 B GLB 기반 십간·깊이·변환 부착·cleanup CPU | 25개 통과 |
 | 펫 provenance·checksum·독립 소유·취소 CPU | 8개 통과 |
 | 원본/생성 GLB CPU 해독 | 8 mesh씩, 4,293,332 byte씩 동일 |
-| 동일 병화 harness의 정면·사선·측면 | 수정 전/후 각각 6장, shader 오류 0 |
+| 동일 병화 harness의 정면·사선·측면 | 수정 전/후 각각 6장, 실제 GPU 시간 2.25초·동일 변환, shader 오류 0 |
+| 실제 그림자 negative control / 수정 후 | 각각 12조건, 카드 그림자 차이 800 → 0 pixel, B caster 8개·nonfire 16조건 보존 |
+| 후속 실제 React Canvas 불꽃 그림자 | 丙·丁 ready/pause/drag/reset/play/unmount 통과 |
 | 실제 십간 GLB/PNG WebGL | 수정 전/후 각각 23 render 통과 |
 | 실제 React Canvas 모바일·StrictMode | 일곱 재질군 로드, pause/drag/reset/play, context 복구·unmount 통과 |
 | WebGL buffer lifecycle | 20회, 생성된 소유 buffer 2,232개 모두 명시적 해제 |
@@ -104,6 +136,7 @@ fire 화면은 실제 runtime 재질·효과입니다. `coordinates-*`는 좌표
 | 기존 소유자 mask·연결 샘플링·visibility·modal | 통과 |
 | TypeScript / production build | 통과 |
 | 변경 파일 lint | 오류 0, 기존 img 경고 1 |
+| 후속 loader·불꽃 QA 두 파일 lint | 오류·경고 0 |
 | 전체 source lint | 기존 43오류/37경고 → 40오류/37경고, 전체 통과 아님 |
 
 원본 407개 파일 중 402개는 byte 단위로 동일합니다. 변경은 정령 renderer/loader,
@@ -118,6 +151,7 @@ node scripts/qa/spirit-coordinate-density.mjs
 node --test scripts/qa/ten-stem-materials.mjs scripts/qa/zodiac-pet-loader.mjs
 node scripts/qa/approved-jade-glb-cpu.mjs
 SAJU_QA_PLAYWRIGHT_PATH=/path/to/playwright/index.mjs node scripts/qa/spirit-fire-surface-browser.mjs
+SAJU_QA_PLAYWRIGHT_PATH=/path/to/playwright/index.mjs node scripts/qa/spirit-fire-shadow-browser.mjs
 SAJU_QA_PLAYWRIGHT_PATH=/path/to/playwright/index.mjs node scripts/qa/ten-stem-browser.mjs
 SAJU_QA_PLAYWRIGHT_PATH=/path/to/playwright/index.mjs node scripts/qa/ten-stem-buffer-lifecycle.mjs
 ./node_modules/.bin/tsc --noEmit

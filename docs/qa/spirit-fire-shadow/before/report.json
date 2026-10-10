@@ -1,0 +1,4503 @@
+{
+  "status": "PASS",
+  "phase": "before",
+  "source": {
+    "commit": "ee6e9740054394b0bee30563f35e957b49adf4bb",
+    "loaderSHA256": "714a0d668bb16ae31dd67e7d6103028e80e601547fe5b142062d481bd99eea6f",
+    "canvasSHA256": "2b00129caabcd3062846bc4d53c789d41ee387e21b3b9bc7007b3018bb7a16ca",
+    "harnessSHA256": "73c4cf29d57dbaf094fd7a16558424c1a6b793eec8ac8cfed3e42302e8a64589"
+  },
+  "checks": [
+    "丙/丁, high/low and front/oblique/side: original eight B casters preserved, actual ground body shadows observed, card-only pixel comparison checked",
+    "Non-fire body/accent caster flags recorded in both qualities for before/after regression comparison",
+    "Actual React Canvas/StrictMode/mobile: ready, paused stability, drag at unchanged clock, exact reset, play/pause and unmount, with its real shadow settings"
+  ],
+  "results": [
+    {
+      "day": "병인",
+      "quality": "high",
+      "name": "front",
+      "file": "병인-high-front.png",
+      "production": {
+        "body": [
+          {
+            "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_quiet_smile",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_1",
+            "castShadow": true
+          }
+        ],
+        "particles": [
+          {
+            "name": "SoftSolarFireWisps",
+            "castShadow": true,
+            "receiveShadow": false,
+            "instanced": true,
+            "geometry": "PlaneGeometry",
+            "transparent": true,
+            "customDepthMaterial": false
+          }
+        ],
+        "shadowMap": {
+          "enabled": true,
+          "type": 1
+        },
+        "keyLight": {
+          "color": "fff1d9",
+          "intensity": 2.1,
+          "position": [
+            -3,
+            4,
+            4
+          ],
+          "mapSize": [
+            1024,
+            1024
+          ],
+          "bias": -0.0002,
+          "camera": {
+            "left": -2.5,
+            "right": 2.5,
+            "top": 3,
+            "bottom": -2,
+            "near": 0.1,
+            "far": 16
+          }
+        },
+        "ground": {
+          "material": "ShadowMaterial",
+          "opacity": 0.09,
+          "color": "1c4836",
+          "receiveShadow": true,
+          "position": [
+            0,
+            -0.016,
+            0
+          ],
+          "rotation": [
+            -1.5707963267948966,
+            0,
+            0,
+            "XYZ"
+          ],
+          "width": 12,
+          "height": 12
+        },
+        "camera": {
+          "position": [
+            0,
+            1.7,
+            5.7
+          ],
+          "matrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0.9967594336616964,
+            -0.0804402349972597,
+            0,
+            0,
+            0.0804402349972597,
+            0.9967594336616964,
+            0,
+            0,
+            1.7,
+            5.7,
+            1
+          ],
+          "projection": [
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            -1.005012531328321,
+            -1,
+            0,
+            0,
+            -0.2005012531328321,
+            0
+          ]
+        },
+        "model": {
+          "position": [
+            -0.42,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1.35
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            "XYZ"
+          ],
+          "morphs": [
+            0
+          ]
+        },
+        "materialSeconds": 2.25,
+        "effectSeconds": [
+          2.25
+        ],
+        "hash": "f8876d99d9c0f8488bdda8710e980e4d4ea2e9fca8174bf3434cf91ad10417e4",
+        "draws": 75,
+        "errors": []
+      },
+      "referenceHash": "66b36cb1badd83f89eda0ffd9ce0c452637e1517fd71af37df5e394fd46054fa",
+      "noBodyHash": "0eb598a59afd4d090636b9defd3a5d42c7341bbf2d40e4388eebfd23489d03d6",
+      "cardDifference": {
+        "changedPixels": 228,
+        "maxChannelDelta": 23,
+        "totalDelta": 5126
+      },
+      "bodyDifference": {
+        "changedPixels": 6570,
+        "maxChannelDelta": 23,
+        "totalDelta": 210846
+      }
+    },
+    {
+      "day": "병인",
+      "quality": "high",
+      "name": "oblique",
+      "file": "병인-high-oblique.png",
+      "production": {
+        "body": [
+          {
+            "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_quiet_smile",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_1",
+            "castShadow": true
+          }
+        ],
+        "particles": [
+          {
+            "name": "SoftSolarFireWisps",
+            "castShadow": true,
+            "receiveShadow": false,
+            "instanced": true,
+            "geometry": "PlaneGeometry",
+            "transparent": true,
+            "customDepthMaterial": false
+          }
+        ],
+        "shadowMap": {
+          "enabled": true,
+          "type": 1
+        },
+        "keyLight": {
+          "color": "fff1d9",
+          "intensity": 2.1,
+          "position": [
+            -3,
+            4,
+            4
+          ],
+          "mapSize": [
+            1024,
+            1024
+          ],
+          "bias": -0.0002,
+          "camera": {
+            "left": -2.5,
+            "right": 2.5,
+            "top": 3,
+            "bottom": -2,
+            "near": 0.1,
+            "far": 16
+          }
+        },
+        "ground": {
+          "material": "ShadowMaterial",
+          "opacity": 0.09,
+          "color": "1c4836",
+          "receiveShadow": true,
+          "position": [
+            0,
+            -0.016,
+            0
+          ],
+          "rotation": [
+            -1.5707963267948966,
+            0,
+            0,
+            "XYZ"
+          ],
+          "width": 12,
+          "height": 12
+        },
+        "camera": {
+          "position": [
+            0,
+            1.7,
+            5.7
+          ],
+          "matrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0.9967594336616964,
+            -0.0804402349972597,
+            0,
+            0,
+            0.0804402349972597,
+            0.9967594336616964,
+            0,
+            0,
+            1.7,
+            5.7,
+            1
+          ],
+          "projection": [
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            -1.005012531328321,
+            -1,
+            0,
+            0,
+            -0.2005012531328321,
+            0
+          ]
+        },
+        "model": {
+          "position": [
+            -0.42,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1.35
+          ],
+          "rotation": [
+            0,
+            0.7853981633974483,
+            0,
+            "XYZ"
+          ],
+          "morphs": [
+            0
+          ]
+        },
+        "materialSeconds": 2.25,
+        "effectSeconds": [
+          2.25
+        ],
+        "hash": "b209c0d6d84cee748c4474f691091ec8ad0dbee74bae59e33fbb06bd4ec7f67f",
+        "draws": 75,
+        "errors": []
+      },
+      "referenceHash": "e9cd8a52bce065a4f6872c2ca6663d1c9282d9c2588939b6aac4757785557905",
+      "noBodyHash": "953144cb7f27a9928370c7c65ed4b808737a1d00a2a8a44aee956e4860793511",
+      "cardDifference": {
+        "changedPixels": 34,
+        "maxChannelDelta": 23,
+        "totalDelta": 484
+      },
+      "bodyDifference": {
+        "changedPixels": 5845,
+        "maxChannelDelta": 23,
+        "totalDelta": 188278
+      }
+    },
+    {
+      "day": "병인",
+      "quality": "high",
+      "name": "side",
+      "file": "병인-high-side.png",
+      "production": {
+        "body": [
+          {
+            "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_quiet_smile",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_1",
+            "castShadow": true
+          }
+        ],
+        "particles": [
+          {
+            "name": "SoftSolarFireWisps",
+            "castShadow": true,
+            "receiveShadow": false,
+            "instanced": true,
+            "geometry": "PlaneGeometry",
+            "transparent": true,
+            "customDepthMaterial": false
+          }
+        ],
+        "shadowMap": {
+          "enabled": true,
+          "type": 1
+        },
+        "keyLight": {
+          "color": "fff1d9",
+          "intensity": 2.1,
+          "position": [
+            -3,
+            4,
+            4
+          ],
+          "mapSize": [
+            1024,
+            1024
+          ],
+          "bias": -0.0002,
+          "camera": {
+            "left": -2.5,
+            "right": 2.5,
+            "top": 3,
+            "bottom": -2,
+            "near": 0.1,
+            "far": 16
+          }
+        },
+        "ground": {
+          "material": "ShadowMaterial",
+          "opacity": 0.09,
+          "color": "1c4836",
+          "receiveShadow": true,
+          "position": [
+            0,
+            -0.016,
+            0
+          ],
+          "rotation": [
+            -1.5707963267948966,
+            0,
+            0,
+            "XYZ"
+          ],
+          "width": 12,
+          "height": 12
+        },
+        "camera": {
+          "position": [
+            0,
+            1.7,
+            5.7
+          ],
+          "matrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0.9967594336616964,
+            -0.0804402349972597,
+            0,
+            0,
+            0.0804402349972597,
+            0.9967594336616964,
+            0,
+            0,
+            1.7,
+            5.7,
+            1
+          ],
+          "projection": [
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            -1.005012531328321,
+            -1,
+            0,
+            0,
+            -0.2005012531328321,
+            0
+          ]
+        },
+        "model": {
+          "position": [
+            -0.42,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1.35
+          ],
+          "rotation": [
+            0,
+            1.5707963267948966,
+            0,
+            "XYZ"
+          ],
+          "morphs": [
+            0
+          ]
+        },
+        "materialSeconds": 2.25,
+        "effectSeconds": [
+          2.25
+        ],
+        "hash": "439887aaa2b6258f977a6ca9ade0d97ca5cbe9c6f75410028efa4afac446cb99",
+        "draws": 75,
+        "errors": []
+      },
+      "referenceHash": "4e4b84b6befae38675d9e992d4c658adf674c5f8764e5d8840c9abd4fb30fce9",
+      "noBodyHash": "8c9557a64ebe7a5e5cf954d28912afc1c8e209614c6dec8b3b74de41dbb7671e",
+      "cardDifference": {
+        "changedPixels": 213,
+        "maxChannelDelta": 23,
+        "totalDelta": 5026
+      },
+      "bodyDifference": {
+        "changedPixels": 6721,
+        "maxChannelDelta": 23,
+        "totalDelta": 216289
+      }
+    },
+    {
+      "day": "병인",
+      "quality": "low",
+      "name": "front",
+      "file": null,
+      "production": {
+        "body": [
+          {
+            "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_quiet_smile",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_1",
+            "castShadow": true
+          }
+        ],
+        "particles": [
+          {
+            "name": "SoftSolarFireWisps",
+            "castShadow": true,
+            "receiveShadow": false,
+            "instanced": true,
+            "geometry": "PlaneGeometry",
+            "transparent": true,
+            "customDepthMaterial": false
+          }
+        ],
+        "shadowMap": {
+          "enabled": true,
+          "type": 1
+        },
+        "keyLight": {
+          "color": "fff1d9",
+          "intensity": 2.1,
+          "position": [
+            -3,
+            4,
+            4
+          ],
+          "mapSize": [
+            1024,
+            1024
+          ],
+          "bias": -0.0002,
+          "camera": {
+            "left": -2.5,
+            "right": 2.5,
+            "top": 3,
+            "bottom": -2,
+            "near": 0.1,
+            "far": 16
+          }
+        },
+        "ground": {
+          "material": "ShadowMaterial",
+          "opacity": 0.09,
+          "color": "1c4836",
+          "receiveShadow": true,
+          "position": [
+            0,
+            -0.016,
+            0
+          ],
+          "rotation": [
+            -1.5707963267948966,
+            0,
+            0,
+            "XYZ"
+          ],
+          "width": 12,
+          "height": 12
+        },
+        "camera": {
+          "position": [
+            0,
+            1.7,
+            5.7
+          ],
+          "matrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0.9967594336616964,
+            -0.0804402349972597,
+            0,
+            0,
+            0.0804402349972597,
+            0.9967594336616964,
+            0,
+            0,
+            1.7,
+            5.7,
+            1
+          ],
+          "projection": [
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            -1.005012531328321,
+            -1,
+            0,
+            0,
+            -0.2005012531328321,
+            0
+          ]
+        },
+        "model": {
+          "position": [
+            -0.42,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1.35
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            "XYZ"
+          ],
+          "morphs": [
+            0
+          ]
+        },
+        "materialSeconds": 2.25,
+        "effectSeconds": [
+          2.25
+        ],
+        "hash": "d3657621707e9ded86c96bac81a687380e479af160241ee220d00327b291a041",
+        "draws": 75,
+        "errors": []
+      },
+      "referenceHash": "b0ff6cf09e5287df948686ff0d3d32c54180a540286ca4c9bd8d507e1416122e",
+      "noBodyHash": "412149656ab298b7880390b1e44fa6589f20c8f529d74aae79fc2c77b26b397d",
+      "cardDifference": {
+        "changedPixels": 140,
+        "maxChannelDelta": 23,
+        "totalDelta": 2991
+      },
+      "bodyDifference": {
+        "changedPixels": 6574,
+        "maxChannelDelta": 23,
+        "totalDelta": 210947
+      }
+    },
+    {
+      "day": "병인",
+      "quality": "low",
+      "name": "oblique",
+      "file": null,
+      "production": {
+        "body": [
+          {
+            "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_quiet_smile",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_1",
+            "castShadow": true
+          }
+        ],
+        "particles": [
+          {
+            "name": "SoftSolarFireWisps",
+            "castShadow": true,
+            "receiveShadow": false,
+            "instanced": true,
+            "geometry": "PlaneGeometry",
+            "transparent": true,
+            "customDepthMaterial": false
+          }
+        ],
+        "shadowMap": {
+          "enabled": true,
+          "type": 1
+        },
+        "keyLight": {
+          "color": "fff1d9",
+          "intensity": 2.1,
+          "position": [
+            -3,
+            4,
+            4
+          ],
+          "mapSize": [
+            1024,
+            1024
+          ],
+          "bias": -0.0002,
+          "camera": {
+            "left": -2.5,
+            "right": 2.5,
+            "top": 3,
+            "bottom": -2,
+            "near": 0.1,
+            "far": 16
+          }
+        },
+        "ground": {
+          "material": "ShadowMaterial",
+          "opacity": 0.09,
+          "color": "1c4836",
+          "receiveShadow": true,
+          "position": [
+            0,
+            -0.016,
+            0
+          ],
+          "rotation": [
+            -1.5707963267948966,
+            0,
+            0,
+            "XYZ"
+          ],
+          "width": 12,
+          "height": 12
+        },
+        "camera": {
+          "position": [
+            0,
+            1.7,
+            5.7
+          ],
+          "matrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0.9967594336616964,
+            -0.0804402349972597,
+            0,
+            0,
+            0.0804402349972597,
+            0.9967594336616964,
+            0,
+            0,
+            1.7,
+            5.7,
+            1
+          ],
+          "projection": [
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            -1.005012531328321,
+            -1,
+            0,
+            0,
+            -0.2005012531328321,
+            0
+          ]
+        },
+        "model": {
+          "position": [
+            -0.42,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1.35
+          ],
+          "rotation": [
+            0,
+            0.7853981633974483,
+            0,
+            "XYZ"
+          ],
+          "morphs": [
+            0
+          ]
+        },
+        "materialSeconds": 2.25,
+        "effectSeconds": [
+          2.25
+        ],
+        "hash": "e391c8bc710b4cd007f9a3ce1c4ab513e14fafdb44740dc1190a2bb96a59bde7",
+        "draws": 75,
+        "errors": []
+      },
+      "referenceHash": "f2a8a626cffaf45e2d6f6641d7914ed0bcab4e4f1e141e8b92928f753259a1bc",
+      "noBodyHash": "93cdcb70f7edb09bb72e6a4e736272a0b711487d07357f3742a54b5866bccdfc",
+      "cardDifference": {
+        "changedPixels": 19,
+        "maxChannelDelta": 23,
+        "totalDelta": 289
+      },
+      "bodyDifference": {
+        "changedPixels": 5850,
+        "maxChannelDelta": 23,
+        "totalDelta": 188408
+      }
+    },
+    {
+      "day": "병인",
+      "quality": "low",
+      "name": "side",
+      "file": null,
+      "production": {
+        "body": [
+          {
+            "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_quiet_smile",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_1",
+            "castShadow": true
+          }
+        ],
+        "particles": [
+          {
+            "name": "SoftSolarFireWisps",
+            "castShadow": true,
+            "receiveShadow": false,
+            "instanced": true,
+            "geometry": "PlaneGeometry",
+            "transparent": true,
+            "customDepthMaterial": false
+          }
+        ],
+        "shadowMap": {
+          "enabled": true,
+          "type": 1
+        },
+        "keyLight": {
+          "color": "fff1d9",
+          "intensity": 2.1,
+          "position": [
+            -3,
+            4,
+            4
+          ],
+          "mapSize": [
+            1024,
+            1024
+          ],
+          "bias": -0.0002,
+          "camera": {
+            "left": -2.5,
+            "right": 2.5,
+            "top": 3,
+            "bottom": -2,
+            "near": 0.1,
+            "far": 16
+          }
+        },
+        "ground": {
+          "material": "ShadowMaterial",
+          "opacity": 0.09,
+          "color": "1c4836",
+          "receiveShadow": true,
+          "position": [
+            0,
+            -0.016,
+            0
+          ],
+          "rotation": [
+            -1.5707963267948966,
+            0,
+            0,
+            "XYZ"
+          ],
+          "width": 12,
+          "height": 12
+        },
+        "camera": {
+          "position": [
+            0,
+            1.7,
+            5.7
+          ],
+          "matrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0.9967594336616964,
+            -0.0804402349972597,
+            0,
+            0,
+            0.0804402349972597,
+            0.9967594336616964,
+            0,
+            0,
+            1.7,
+            5.7,
+            1
+          ],
+          "projection": [
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            -1.005012531328321,
+            -1,
+            0,
+            0,
+            -0.2005012531328321,
+            0
+          ]
+        },
+        "model": {
+          "position": [
+            -0.42,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1.35
+          ],
+          "rotation": [
+            0,
+            1.5707963267948966,
+            0,
+            "XYZ"
+          ],
+          "morphs": [
+            0
+          ]
+        },
+        "materialSeconds": 2.25,
+        "effectSeconds": [
+          2.25
+        ],
+        "hash": "8749fe9437b9a03991a78292ecd5e1cdf2aef3e87fbb05e4687edfb9637efe69",
+        "draws": 75,
+        "errors": []
+      },
+      "referenceHash": "a483cb43a90c76587d09f97ab5c003f837fe8ba2084652e7675365707607e25f",
+      "noBodyHash": "1d7111f72a14af55ca3552aa28ae9e12aac4e60df226f322cb2897b35b8f9588",
+      "cardDifference": {
+        "changedPixels": 153,
+        "maxChannelDelta": 23,
+        "totalDelta": 3508
+      },
+      "bodyDifference": {
+        "changedPixels": 6726,
+        "maxChannelDelta": 23,
+        "totalDelta": 216436
+      }
+    },
+    {
+      "day": "정묘",
+      "quality": "high",
+      "name": "front",
+      "file": "정묘-high-front.png",
+      "production": {
+        "body": [
+          {
+            "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_quiet_smile",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_1",
+            "castShadow": true
+          }
+        ],
+        "particles": [
+          {
+            "name": "ScatteredCandleFlames",
+            "castShadow": true,
+            "receiveShadow": false,
+            "instanced": true,
+            "geometry": "PlaneGeometry",
+            "transparent": true,
+            "customDepthMaterial": false
+          }
+        ],
+        "shadowMap": {
+          "enabled": true,
+          "type": 1
+        },
+        "keyLight": {
+          "color": "fff1d9",
+          "intensity": 2.1,
+          "position": [
+            -3,
+            4,
+            4
+          ],
+          "mapSize": [
+            1024,
+            1024
+          ],
+          "bias": -0.0002,
+          "camera": {
+            "left": -2.5,
+            "right": 2.5,
+            "top": 3,
+            "bottom": -2,
+            "near": 0.1,
+            "far": 16
+          }
+        },
+        "ground": {
+          "material": "ShadowMaterial",
+          "opacity": 0.09,
+          "color": "1c4836",
+          "receiveShadow": true,
+          "position": [
+            0,
+            -0.016,
+            0
+          ],
+          "rotation": [
+            -1.5707963267948966,
+            0,
+            0,
+            "XYZ"
+          ],
+          "width": 12,
+          "height": 12
+        },
+        "camera": {
+          "position": [
+            0,
+            1.7,
+            5.7
+          ],
+          "matrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0.9967594336616964,
+            -0.0804402349972597,
+            0,
+            0,
+            0.0804402349972597,
+            0.9967594336616964,
+            0,
+            0,
+            1.7,
+            5.7,
+            1
+          ],
+          "projection": [
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            -1.005012531328321,
+            -1,
+            0,
+            0,
+            -0.2005012531328321,
+            0
+          ]
+        },
+        "model": {
+          "position": [
+            -0.42,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1.35
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            "XYZ"
+          ],
+          "morphs": [
+            0
+          ]
+        },
+        "materialSeconds": 2.25,
+        "effectSeconds": [
+          2.25
+        ],
+        "hash": "4ca03f150b413651c81b2316a398a941c5d2bbfac75441dd1630659755e936c8",
+        "draws": 49,
+        "errors": []
+      },
+      "referenceHash": "4ca03f150b413651c81b2316a398a941c5d2bbfac75441dd1630659755e936c8",
+      "noBodyHash": "0d2259b469713536f20dca03884ea93e8bd385fdd5a4cc208b8a4f9bd988d27c",
+      "cardDifference": {
+        "changedPixels": 0,
+        "maxChannelDelta": 0,
+        "totalDelta": 0
+      },
+      "bodyDifference": {
+        "changedPixels": 7007,
+        "maxChannelDelta": 23,
+        "totalDelta": 225488
+      }
+    },
+    {
+      "day": "정묘",
+      "quality": "high",
+      "name": "oblique",
+      "file": "정묘-high-oblique.png",
+      "production": {
+        "body": [
+          {
+            "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_quiet_smile",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_1",
+            "castShadow": true
+          }
+        ],
+        "particles": [
+          {
+            "name": "ScatteredCandleFlames",
+            "castShadow": true,
+            "receiveShadow": false,
+            "instanced": true,
+            "geometry": "PlaneGeometry",
+            "transparent": true,
+            "customDepthMaterial": false
+          }
+        ],
+        "shadowMap": {
+          "enabled": true,
+          "type": 1
+        },
+        "keyLight": {
+          "color": "fff1d9",
+          "intensity": 2.1,
+          "position": [
+            -3,
+            4,
+            4
+          ],
+          "mapSize": [
+            1024,
+            1024
+          ],
+          "bias": -0.0002,
+          "camera": {
+            "left": -2.5,
+            "right": 2.5,
+            "top": 3,
+            "bottom": -2,
+            "near": 0.1,
+            "far": 16
+          }
+        },
+        "ground": {
+          "material": "ShadowMaterial",
+          "opacity": 0.09,
+          "color": "1c4836",
+          "receiveShadow": true,
+          "position": [
+            0,
+            -0.016,
+            0
+          ],
+          "rotation": [
+            -1.5707963267948966,
+            0,
+            0,
+            "XYZ"
+          ],
+          "width": 12,
+          "height": 12
+        },
+        "camera": {
+          "position": [
+            0,
+            1.7,
+            5.7
+          ],
+          "matrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0.9967594336616964,
+            -0.0804402349972597,
+            0,
+            0,
+            0.0804402349972597,
+            0.9967594336616964,
+            0,
+            0,
+            1.7,
+            5.7,
+            1
+          ],
+          "projection": [
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            -1.005012531328321,
+            -1,
+            0,
+            0,
+            -0.2005012531328321,
+            0
+          ]
+        },
+        "model": {
+          "position": [
+            -0.42,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1.35
+          ],
+          "rotation": [
+            0,
+            0.7853981633974483,
+            0,
+            "XYZ"
+          ],
+          "morphs": [
+            0
+          ]
+        },
+        "materialSeconds": 2.25,
+        "effectSeconds": [
+          2.25
+        ],
+        "hash": "2eb52e0a84109af58cdb58a113efb62b08edc164120a4dd0cd33f1069ac1085a",
+        "draws": 49,
+        "errors": []
+      },
+      "referenceHash": "9336fc37ecdd211ccc2880955532cb4e388da576df1cf80645ce135cb8050ad2",
+      "noBodyHash": "837c42a848d7e7d82025059e741d3c5bc5083571be2fdb9d887db8af3b34a3f6",
+      "cardDifference": {
+        "changedPixels": 2,
+        "maxChannelDelta": 5,
+        "totalDelta": 9
+      },
+      "bodyDifference": {
+        "changedPixels": 6227,
+        "maxChannelDelta": 23,
+        "totalDelta": 200164
+      }
+    },
+    {
+      "day": "정묘",
+      "quality": "high",
+      "name": "side",
+      "file": "정묘-high-side.png",
+      "production": {
+        "body": [
+          {
+            "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_quiet_smile",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_1",
+            "castShadow": true
+          }
+        ],
+        "particles": [
+          {
+            "name": "ScatteredCandleFlames",
+            "castShadow": true,
+            "receiveShadow": false,
+            "instanced": true,
+            "geometry": "PlaneGeometry",
+            "transparent": true,
+            "customDepthMaterial": false
+          }
+        ],
+        "shadowMap": {
+          "enabled": true,
+          "type": 1
+        },
+        "keyLight": {
+          "color": "fff1d9",
+          "intensity": 2.1,
+          "position": [
+            -3,
+            4,
+            4
+          ],
+          "mapSize": [
+            1024,
+            1024
+          ],
+          "bias": -0.0002,
+          "camera": {
+            "left": -2.5,
+            "right": 2.5,
+            "top": 3,
+            "bottom": -2,
+            "near": 0.1,
+            "far": 16
+          }
+        },
+        "ground": {
+          "material": "ShadowMaterial",
+          "opacity": 0.09,
+          "color": "1c4836",
+          "receiveShadow": true,
+          "position": [
+            0,
+            -0.016,
+            0
+          ],
+          "rotation": [
+            -1.5707963267948966,
+            0,
+            0,
+            "XYZ"
+          ],
+          "width": 12,
+          "height": 12
+        },
+        "camera": {
+          "position": [
+            0,
+            1.7,
+            5.7
+          ],
+          "matrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0.9967594336616964,
+            -0.0804402349972597,
+            0,
+            0,
+            0.0804402349972597,
+            0.9967594336616964,
+            0,
+            0,
+            1.7,
+            5.7,
+            1
+          ],
+          "projection": [
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            -1.005012531328321,
+            -1,
+            0,
+            0,
+            -0.2005012531328321,
+            0
+          ]
+        },
+        "model": {
+          "position": [
+            -0.42,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1.35
+          ],
+          "rotation": [
+            0,
+            1.5707963267948966,
+            0,
+            "XYZ"
+          ],
+          "morphs": [
+            0
+          ]
+        },
+        "materialSeconds": 2.25,
+        "effectSeconds": [
+          2.25
+        ],
+        "hash": "827572c075afa00dde8ff8a081c956c71326e1c9d04adb6ccdcb00591b1bfa94",
+        "draws": 49,
+        "errors": []
+      },
+      "referenceHash": "fa640a066b462e573194a0bfca9cc65f37ea15452e143aaf438e1586d35db3c8",
+      "noBodyHash": "67ebe0b3ebd1d4741ea6f172434179c503b3c7088bb32282a2aa2facba91d884",
+      "cardDifference": {
+        "changedPixels": 6,
+        "maxChannelDelta": 13,
+        "totalDelta": 78
+      },
+      "bodyDifference": {
+        "changedPixels": 7123,
+        "maxChannelDelta": 23,
+        "totalDelta": 228797
+      }
+    },
+    {
+      "day": "정묘",
+      "quality": "low",
+      "name": "front",
+      "file": null,
+      "production": {
+        "body": [
+          {
+            "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_quiet_smile",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_1",
+            "castShadow": true
+          }
+        ],
+        "particles": [
+          {
+            "name": "ScatteredCandleFlames",
+            "castShadow": true,
+            "receiveShadow": false,
+            "instanced": true,
+            "geometry": "PlaneGeometry",
+            "transparent": true,
+            "customDepthMaterial": false
+          }
+        ],
+        "shadowMap": {
+          "enabled": true,
+          "type": 1
+        },
+        "keyLight": {
+          "color": "fff1d9",
+          "intensity": 2.1,
+          "position": [
+            -3,
+            4,
+            4
+          ],
+          "mapSize": [
+            1024,
+            1024
+          ],
+          "bias": -0.0002,
+          "camera": {
+            "left": -2.5,
+            "right": 2.5,
+            "top": 3,
+            "bottom": -2,
+            "near": 0.1,
+            "far": 16
+          }
+        },
+        "ground": {
+          "material": "ShadowMaterial",
+          "opacity": 0.09,
+          "color": "1c4836",
+          "receiveShadow": true,
+          "position": [
+            0,
+            -0.016,
+            0
+          ],
+          "rotation": [
+            -1.5707963267948966,
+            0,
+            0,
+            "XYZ"
+          ],
+          "width": 12,
+          "height": 12
+        },
+        "camera": {
+          "position": [
+            0,
+            1.7,
+            5.7
+          ],
+          "matrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0.9967594336616964,
+            -0.0804402349972597,
+            0,
+            0,
+            0.0804402349972597,
+            0.9967594336616964,
+            0,
+            0,
+            1.7,
+            5.7,
+            1
+          ],
+          "projection": [
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            -1.005012531328321,
+            -1,
+            0,
+            0,
+            -0.2005012531328321,
+            0
+          ]
+        },
+        "model": {
+          "position": [
+            -0.42,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1.35
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            "XYZ"
+          ],
+          "morphs": [
+            0
+          ]
+        },
+        "materialSeconds": 2.25,
+        "effectSeconds": [
+          2.25
+        ],
+        "hash": "d72fe1793dbf865029c2ee5f181e7979cf9a3ac7f4877f9f4a92bc6b46247fad",
+        "draws": 49,
+        "errors": []
+      },
+      "referenceHash": "d72fe1793dbf865029c2ee5f181e7979cf9a3ac7f4877f9f4a92bc6b46247fad",
+      "noBodyHash": "6fa1aeab2fa1221c6d227120ff84f35d1f010cb6206110ab220535c6e0f449a9",
+      "cardDifference": {
+        "changedPixels": 0,
+        "maxChannelDelta": 0,
+        "totalDelta": 0
+      },
+      "bodyDifference": {
+        "changedPixels": 7015,
+        "maxChannelDelta": 23,
+        "totalDelta": 225708
+      }
+    },
+    {
+      "day": "정묘",
+      "quality": "low",
+      "name": "oblique",
+      "file": null,
+      "production": {
+        "body": [
+          {
+            "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_quiet_smile",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_1",
+            "castShadow": true
+          }
+        ],
+        "particles": [
+          {
+            "name": "ScatteredCandleFlames",
+            "castShadow": true,
+            "receiveShadow": false,
+            "instanced": true,
+            "geometry": "PlaneGeometry",
+            "transparent": true,
+            "customDepthMaterial": false
+          }
+        ],
+        "shadowMap": {
+          "enabled": true,
+          "type": 1
+        },
+        "keyLight": {
+          "color": "fff1d9",
+          "intensity": 2.1,
+          "position": [
+            -3,
+            4,
+            4
+          ],
+          "mapSize": [
+            1024,
+            1024
+          ],
+          "bias": -0.0002,
+          "camera": {
+            "left": -2.5,
+            "right": 2.5,
+            "top": 3,
+            "bottom": -2,
+            "near": 0.1,
+            "far": 16
+          }
+        },
+        "ground": {
+          "material": "ShadowMaterial",
+          "opacity": 0.09,
+          "color": "1c4836",
+          "receiveShadow": true,
+          "position": [
+            0,
+            -0.016,
+            0
+          ],
+          "rotation": [
+            -1.5707963267948966,
+            0,
+            0,
+            "XYZ"
+          ],
+          "width": 12,
+          "height": 12
+        },
+        "camera": {
+          "position": [
+            0,
+            1.7,
+            5.7
+          ],
+          "matrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0.9967594336616964,
+            -0.0804402349972597,
+            0,
+            0,
+            0.0804402349972597,
+            0.9967594336616964,
+            0,
+            0,
+            1.7,
+            5.7,
+            1
+          ],
+          "projection": [
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            -1.005012531328321,
+            -1,
+            0,
+            0,
+            -0.2005012531328321,
+            0
+          ]
+        },
+        "model": {
+          "position": [
+            -0.42,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1.35
+          ],
+          "rotation": [
+            0,
+            0.7853981633974483,
+            0,
+            "XYZ"
+          ],
+          "morphs": [
+            0
+          ]
+        },
+        "materialSeconds": 2.25,
+        "effectSeconds": [
+          2.25
+        ],
+        "hash": "a1ee8d47a700afb30b69100f52cc07d5a2b7a8202d3b9b3763f93c36b03f1530",
+        "draws": 49,
+        "errors": []
+      },
+      "referenceHash": "bbf3dd7b218858e3e7a852bd5374e72354c3418f5b9437bbd0db264bdd854146",
+      "noBodyHash": "56d3735355ea3f25f17e1658351b8a61a587a368a004af71cf4c47ca53d363b8",
+      "cardDifference": {
+        "changedPixels": 2,
+        "maxChannelDelta": 5,
+        "totalDelta": 9
+      },
+      "bodyDifference": {
+        "changedPixels": 6234,
+        "maxChannelDelta": 23,
+        "totalDelta": 200299
+      }
+    },
+    {
+      "day": "정묘",
+      "quality": "low",
+      "name": "side",
+      "file": null,
+      "production": {
+        "body": [
+          {
+            "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_quiet_smile",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_1",
+            "castShadow": true
+          }
+        ],
+        "particles": [
+          {
+            "name": "ScatteredCandleFlames",
+            "castShadow": true,
+            "receiveShadow": false,
+            "instanced": true,
+            "geometry": "PlaneGeometry",
+            "transparent": true,
+            "customDepthMaterial": false
+          }
+        ],
+        "shadowMap": {
+          "enabled": true,
+          "type": 1
+        },
+        "keyLight": {
+          "color": "fff1d9",
+          "intensity": 2.1,
+          "position": [
+            -3,
+            4,
+            4
+          ],
+          "mapSize": [
+            1024,
+            1024
+          ],
+          "bias": -0.0002,
+          "camera": {
+            "left": -2.5,
+            "right": 2.5,
+            "top": 3,
+            "bottom": -2,
+            "near": 0.1,
+            "far": 16
+          }
+        },
+        "ground": {
+          "material": "ShadowMaterial",
+          "opacity": 0.09,
+          "color": "1c4836",
+          "receiveShadow": true,
+          "position": [
+            0,
+            -0.016,
+            0
+          ],
+          "rotation": [
+            -1.5707963267948966,
+            0,
+            0,
+            "XYZ"
+          ],
+          "width": 12,
+          "height": 12
+        },
+        "camera": {
+          "position": [
+            0,
+            1.7,
+            5.7
+          ],
+          "matrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0.9967594336616964,
+            -0.0804402349972597,
+            0,
+            0,
+            0.0804402349972597,
+            0.9967594336616964,
+            0,
+            0,
+            1.7,
+            5.7,
+            1
+          ],
+          "projection": [
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            -1.005012531328321,
+            -1,
+            0,
+            0,
+            -0.2005012531328321,
+            0
+          ]
+        },
+        "model": {
+          "position": [
+            -0.42,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1.35
+          ],
+          "rotation": [
+            0,
+            1.5707963267948966,
+            0,
+            "XYZ"
+          ],
+          "morphs": [
+            0
+          ]
+        },
+        "materialSeconds": 2.25,
+        "effectSeconds": [
+          2.25
+        ],
+        "hash": "43449916b5c587019ed89ec81016171ec073a8efeafe608e033d3216f2138aa6",
+        "draws": 49,
+        "errors": []
+      },
+      "referenceHash": "6efbdb493e1e46120fb2335ecd18db5a79c646220b94f2569278d24f7cfc2c29",
+      "noBodyHash": "552a53612d69b1de4754b0d4744ed9026915f979d270d3281bc47adefa9911f8",
+      "cardDifference": {
+        "changedPixels": 3,
+        "maxChannelDelta": 13,
+        "totalDelta": 53
+      },
+      "bodyDifference": {
+        "changedPixels": 7129,
+        "maxChannelDelta": 23,
+        "totalDelta": 228918
+      }
+    }
+  ],
+  "nonFireCasters": {
+    "갑자:high": [
+      {
+        "name": "B_|_almond_gaze_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_almond_gaze_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_expressive_brow_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_expressive_brow_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_quiet_smile",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_small_eye_glint_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_small_eye_glint_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "NormalRootedWoodyBranches_0",
+        "castShadow": true,
+        "receiveShadow": true,
+        "instanced": true,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "NormalRootedWoodyBranches_1",
+        "castShadow": true,
+        "receiveShadow": true,
+        "instanced": true,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "NormalRootedWoodyBranches_2",
+        "castShadow": true,
+        "receiveShadow": true,
+        "instanced": true,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "NormalRootedWoodyBranches_3",
+        "castShadow": true,
+        "receiveShadow": true,
+        "instanced": true,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "WoodyBranchTipLeaves",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": true,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      }
+    ],
+    "갑자:low": [
+      {
+        "name": "B_|_almond_gaze_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_almond_gaze_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_expressive_brow_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_expressive_brow_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_quiet_smile",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_small_eye_glint_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_small_eye_glint_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "NormalRootedWoodyBranches_0",
+        "castShadow": true,
+        "receiveShadow": true,
+        "instanced": true,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "NormalRootedWoodyBranches_1",
+        "castShadow": true,
+        "receiveShadow": true,
+        "instanced": true,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "NormalRootedWoodyBranches_2",
+        "castShadow": true,
+        "receiveShadow": true,
+        "instanced": true,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "NormalRootedWoodyBranches_3",
+        "castShadow": true,
+        "receiveShadow": true,
+        "instanced": true,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "WoodyBranchTipLeaves",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": true,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      }
+    ],
+    "을축:high": [
+      {
+        "name": "ActualSurfaceCrawlingVines",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": true,
+        "geometry": "CylinderGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "ActualSurfaceLeaves",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": true,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_almond_gaze_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_almond_gaze_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_expressive_brow_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_expressive_brow_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_quiet_smile",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_small_eye_glint_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_small_eye_glint_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      }
+    ],
+    "을축:low": [
+      {
+        "name": "ActualSurfaceCrawlingVines",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": true,
+        "geometry": "CylinderGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "ActualSurfaceLeaves",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": true,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_almond_gaze_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_almond_gaze_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_expressive_brow_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_expressive_brow_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_quiet_smile",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_small_eye_glint_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_small_eye_glint_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      }
+    ],
+    "무진:high": [
+      {
+        "name": "B_|_almond_gaze_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_almond_gaze_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_expressive_brow_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_expressive_brow_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_quiet_smile",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_small_eye_glint_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_small_eye_glint_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      }
+    ],
+    "무진:low": [
+      {
+        "name": "B_|_almond_gaze_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_almond_gaze_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_expressive_brow_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_expressive_brow_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_quiet_smile",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_small_eye_glint_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_small_eye_glint_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      }
+    ],
+    "기사:high": [
+      {
+        "name": "B_|_almond_gaze_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_almond_gaze_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_expressive_brow_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_expressive_brow_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_quiet_smile",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_small_eye_glint_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_small_eye_glint_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      }
+    ],
+    "기사:low": [
+      {
+        "name": "B_|_almond_gaze_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_almond_gaze_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_expressive_brow_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_expressive_brow_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_quiet_smile",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_small_eye_glint_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_small_eye_glint_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      }
+    ],
+    "경오:high": [
+      {
+        "name": "B_|_almond_gaze_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_almond_gaze_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_expressive_brow_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_expressive_brow_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_quiet_smile",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_small_eye_glint_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_small_eye_glint_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      }
+    ],
+    "경오:low": [
+      {
+        "name": "B_|_almond_gaze_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_almond_gaze_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_expressive_brow_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_expressive_brow_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_quiet_smile",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_small_eye_glint_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_small_eye_glint_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      }
+    ],
+    "신미:high": [
+      {
+        "name": "B_|_almond_gaze_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_almond_gaze_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_expressive_brow_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_expressive_brow_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_quiet_smile",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_small_eye_glint_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_small_eye_glint_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      }
+    ],
+    "신미:low": [
+      {
+        "name": "B_|_almond_gaze_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_almond_gaze_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_expressive_brow_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_expressive_brow_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_quiet_smile",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_small_eye_glint_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_small_eye_glint_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      }
+    ],
+    "임신:high": [
+      {
+        "name": "B_|_almond_gaze_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_almond_gaze_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_expressive_brow_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_expressive_brow_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_quiet_smile",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_small_eye_glint_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_small_eye_glint_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      }
+    ],
+    "임신:low": [
+      {
+        "name": "B_|_almond_gaze_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_almond_gaze_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_expressive_brow_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_expressive_brow_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_quiet_smile",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_small_eye_glint_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_small_eye_glint_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      }
+    ],
+    "계유:high": [
+      {
+        "name": "ActualSurfaceDew",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": true,
+        "geometry": "SphereGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_almond_gaze_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_almond_gaze_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_expressive_brow_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_expressive_brow_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_quiet_smile",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_small_eye_glint_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_small_eye_glint_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      }
+    ],
+    "계유:low": [
+      {
+        "name": "ActualSurfaceDew",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": true,
+        "geometry": "SphereGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_almond_gaze_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_almond_gaze_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_expressive_brow_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_expressive_brow_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_quiet_smile",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_small_eye_glint_-1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_|_small_eye_glint_1",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      },
+      {
+        "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+        "castShadow": true,
+        "receiveShadow": false,
+        "instanced": false,
+        "geometry": "BufferGeometry",
+        "transparent": false,
+        "customDepthMaterial": false
+      }
+    ]
+  },
+  "componentResults": [
+    {
+      "day": "병인",
+      "initial": {
+        "body": [
+          {
+            "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_quiet_smile",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_1",
+            "castShadow": true
+          }
+        ],
+        "particles": [
+          {
+            "name": "SoftSolarFireWisps",
+            "castShadow": true,
+            "receiveShadow": false,
+            "instanced": true,
+            "geometry": "PlaneGeometry",
+            "transparent": true,
+            "customDepthMaterial": false
+          }
+        ],
+        "shadowMap": {
+          "enabled": true,
+          "type": 1
+        },
+        "keyLight": {
+          "color": "fff1d9",
+          "intensity": 2.1,
+          "position": [
+            -3,
+            4,
+            4
+          ],
+          "mapSize": [
+            512,
+            512
+          ],
+          "bias": -0.0002,
+          "camera": {
+            "left": -2.5,
+            "right": 2.5,
+            "top": 3,
+            "bottom": -2,
+            "near": 0.1,
+            "far": 16
+          }
+        },
+        "ground": {
+          "material": "ShadowMaterial",
+          "opacity": 0.09,
+          "color": "1c4836",
+          "receiveShadow": true,
+          "position": [
+            0,
+            -0.016,
+            0
+          ],
+          "rotation": [
+            -1.5707963267948966,
+            0,
+            0,
+            "XYZ"
+          ],
+          "width": 12,
+          "height": 12
+        },
+        "camera": {
+          "position": [
+            0,
+            1.7,
+            5.808421755351645
+          ],
+          "matrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0.9968787227980263,
+            -0.07894816041286767,
+            0,
+            0,
+            0.07894816041286767,
+            0.9968787227980263,
+            0,
+            0,
+            1.7,
+            5.808421755351645,
+            1
+          ],
+          "projection": [
+            3.87228117023443,
+            0,
+            0,
+            0,
+            0,
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            -1.005012531328321,
+            -1,
+            0,
+            0,
+            -0.2005012531328321,
+            0
+          ]
+        },
+        "model": {
+          "position": [
+            -0.42,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1.35
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            "XYZ"
+          ],
+          "morphs": [
+            0
+          ]
+        },
+        "materialSeconds": 0,
+        "effectSeconds": [
+          0
+        ]
+      },
+      "rotated": {
+        "body": [
+          {
+            "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_quiet_smile",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_1",
+            "castShadow": true
+          }
+        ],
+        "particles": [
+          {
+            "name": "SoftSolarFireWisps",
+            "castShadow": true,
+            "receiveShadow": false,
+            "instanced": true,
+            "geometry": "PlaneGeometry",
+            "transparent": true,
+            "customDepthMaterial": false
+          }
+        ],
+        "shadowMap": {
+          "enabled": true,
+          "type": 1
+        },
+        "keyLight": {
+          "color": "fff1d9",
+          "intensity": 2.1,
+          "position": [
+            -3,
+            4,
+            4
+          ],
+          "mapSize": [
+            512,
+            512
+          ],
+          "bias": -0.0002,
+          "camera": {
+            "left": -2.5,
+            "right": 2.5,
+            "top": 3,
+            "bottom": -2,
+            "near": 0.1,
+            "far": 16
+          }
+        },
+        "ground": {
+          "material": "ShadowMaterial",
+          "opacity": 0.09,
+          "color": "1c4836",
+          "receiveShadow": true,
+          "position": [
+            0,
+            -0.016,
+            0
+          ],
+          "rotation": [
+            -1.5707963267948966,
+            0,
+            0,
+            "XYZ"
+          ],
+          "width": 12,
+          "height": 12
+        },
+        "camera": {
+          "position": [
+            0,
+            1.7,
+            5.808421755351645
+          ],
+          "matrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0.9968787227980263,
+            -0.07894816041286767,
+            0,
+            0,
+            0.07894816041286767,
+            0.9968787227980263,
+            0,
+            0,
+            1.7,
+            5.808421755351645,
+            1
+          ],
+          "projection": [
+            3.87228117023443,
+            0,
+            0,
+            0,
+            0,
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            -1.005012531328321,
+            -1,
+            0,
+            0,
+            -0.2005012531328321,
+            0
+          ]
+        },
+        "model": {
+          "position": [
+            -0.42,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1.35
+          ],
+          "rotation": [
+            0,
+            1.053,
+            0,
+            "XYZ"
+          ],
+          "morphs": [
+            0
+          ]
+        },
+        "materialSeconds": 0,
+        "effectSeconds": [
+          0
+        ]
+      },
+      "playing": {
+        "body": [
+          {
+            "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_quiet_smile",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_1",
+            "castShadow": true
+          }
+        ],
+        "particles": [
+          {
+            "name": "SoftSolarFireWisps",
+            "castShadow": true,
+            "receiveShadow": false,
+            "instanced": true,
+            "geometry": "PlaneGeometry",
+            "transparent": true,
+            "customDepthMaterial": false
+          }
+        ],
+        "shadowMap": {
+          "enabled": true,
+          "type": 1
+        },
+        "keyLight": {
+          "color": "fff1d9",
+          "intensity": 2.1,
+          "position": [
+            -3,
+            4,
+            4
+          ],
+          "mapSize": [
+            512,
+            512
+          ],
+          "bias": -0.0002,
+          "camera": {
+            "left": -2.5,
+            "right": 2.5,
+            "top": 3,
+            "bottom": -2,
+            "near": 0.1,
+            "far": 16
+          }
+        },
+        "ground": {
+          "material": "ShadowMaterial",
+          "opacity": 0.09,
+          "color": "1c4836",
+          "receiveShadow": true,
+          "position": [
+            0,
+            -0.016,
+            0
+          ],
+          "rotation": [
+            -1.5707963267948966,
+            0,
+            0,
+            "XYZ"
+          ],
+          "width": 12,
+          "height": 12
+        },
+        "camera": {
+          "position": [
+            0,
+            1.7,
+            5.808421755351645
+          ],
+          "matrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0.9968787227980263,
+            -0.07894816041286767,
+            0,
+            0,
+            0.07894816041286767,
+            0.9968787227980263,
+            0,
+            0,
+            1.7,
+            5.808421755351645,
+            1
+          ],
+          "projection": [
+            3.87228117023443,
+            0,
+            0,
+            0,
+            0,
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            -1.005012531328321,
+            -1,
+            0,
+            0,
+            -0.2005012531328321,
+            0
+          ]
+        },
+        "model": {
+          "position": [
+            -0.42,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1.35
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            "XYZ"
+          ],
+          "morphs": [
+            0
+          ]
+        },
+        "materialSeconds": 0.18339999999999962,
+        "effectSeconds": [
+          0.18339999999999962
+        ]
+      },
+      "pauseStable": true,
+      "resetExact": true
+    },
+    {
+      "day": "정묘",
+      "initial": {
+        "body": [
+          {
+            "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_quiet_smile",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_1",
+            "castShadow": true
+          }
+        ],
+        "particles": [
+          {
+            "name": "ScatteredCandleFlames",
+            "castShadow": true,
+            "receiveShadow": false,
+            "instanced": true,
+            "geometry": "PlaneGeometry",
+            "transparent": true,
+            "customDepthMaterial": false
+          }
+        ],
+        "shadowMap": {
+          "enabled": true,
+          "type": 1
+        },
+        "keyLight": {
+          "color": "fff1d9",
+          "intensity": 2.1,
+          "position": [
+            -3,
+            4,
+            4
+          ],
+          "mapSize": [
+            512,
+            512
+          ],
+          "bias": -0.0002,
+          "camera": {
+            "left": -2.5,
+            "right": 2.5,
+            "top": 3,
+            "bottom": -2,
+            "near": 0.1,
+            "far": 16
+          }
+        },
+        "ground": {
+          "material": "ShadowMaterial",
+          "opacity": 0.09,
+          "color": "1c4836",
+          "receiveShadow": true,
+          "position": [
+            0,
+            -0.016,
+            0
+          ],
+          "rotation": [
+            -1.5707963267948966,
+            0,
+            0,
+            "XYZ"
+          ],
+          "width": 12,
+          "height": 12
+        },
+        "camera": {
+          "position": [
+            0,
+            1.7,
+            5.808421755351645
+          ],
+          "matrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0.9968787227980263,
+            -0.07894816041286767,
+            0,
+            0,
+            0.07894816041286767,
+            0.9968787227980263,
+            0,
+            0,
+            1.7,
+            5.808421755351645,
+            1
+          ],
+          "projection": [
+            3.87228117023443,
+            0,
+            0,
+            0,
+            0,
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            -1.005012531328321,
+            -1,
+            0,
+            0,
+            -0.2005012531328321,
+            0
+          ]
+        },
+        "model": {
+          "position": [
+            -0.42,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1.35
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            "XYZ"
+          ],
+          "morphs": [
+            0
+          ]
+        },
+        "materialSeconds": 0,
+        "effectSeconds": [
+          0
+        ]
+      },
+      "rotated": {
+        "body": [
+          {
+            "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_quiet_smile",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_1",
+            "castShadow": true
+          }
+        ],
+        "particles": [
+          {
+            "name": "ScatteredCandleFlames",
+            "castShadow": true,
+            "receiveShadow": false,
+            "instanced": true,
+            "geometry": "PlaneGeometry",
+            "transparent": true,
+            "customDepthMaterial": false
+          }
+        ],
+        "shadowMap": {
+          "enabled": true,
+          "type": 1
+        },
+        "keyLight": {
+          "color": "fff1d9",
+          "intensity": 2.1,
+          "position": [
+            -3,
+            4,
+            4
+          ],
+          "mapSize": [
+            512,
+            512
+          ],
+          "bias": -0.0002,
+          "camera": {
+            "left": -2.5,
+            "right": 2.5,
+            "top": 3,
+            "bottom": -2,
+            "near": 0.1,
+            "far": 16
+          }
+        },
+        "ground": {
+          "material": "ShadowMaterial",
+          "opacity": 0.09,
+          "color": "1c4836",
+          "receiveShadow": true,
+          "position": [
+            0,
+            -0.016,
+            0
+          ],
+          "rotation": [
+            -1.5707963267948966,
+            0,
+            0,
+            "XYZ"
+          ],
+          "width": 12,
+          "height": 12
+        },
+        "camera": {
+          "position": [
+            0,
+            1.7,
+            5.808421755351645
+          ],
+          "matrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0.9968787227980263,
+            -0.07894816041286767,
+            0,
+            0,
+            0.07894816041286767,
+            0.9968787227980263,
+            0,
+            0,
+            1.7,
+            5.808421755351645,
+            1
+          ],
+          "projection": [
+            3.87228117023443,
+            0,
+            0,
+            0,
+            0,
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            -1.005012531328321,
+            -1,
+            0,
+            0,
+            -0.2005012531328321,
+            0
+          ]
+        },
+        "model": {
+          "position": [
+            -0.42,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1.35
+          ],
+          "rotation": [
+            0,
+            1.053,
+            0,
+            "XYZ"
+          ],
+          "morphs": [
+            0
+          ]
+        },
+        "materialSeconds": 0,
+        "effectSeconds": [
+          0
+        ]
+      },
+      "playing": {
+        "body": [
+          {
+            "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_quiet_smile",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_1",
+            "castShadow": true
+          }
+        ],
+        "particles": [
+          {
+            "name": "ScatteredCandleFlames",
+            "castShadow": true,
+            "receiveShadow": false,
+            "instanced": true,
+            "geometry": "PlaneGeometry",
+            "transparent": true,
+            "customDepthMaterial": false
+          }
+        ],
+        "shadowMap": {
+          "enabled": true,
+          "type": 1
+        },
+        "keyLight": {
+          "color": "fff1d9",
+          "intensity": 2.1,
+          "position": [
+            -3,
+            4,
+            4
+          ],
+          "mapSize": [
+            512,
+            512
+          ],
+          "bias": -0.0002,
+          "camera": {
+            "left": -2.5,
+            "right": 2.5,
+            "top": 3,
+            "bottom": -2,
+            "near": 0.1,
+            "far": 16
+          }
+        },
+        "ground": {
+          "material": "ShadowMaterial",
+          "opacity": 0.09,
+          "color": "1c4836",
+          "receiveShadow": true,
+          "position": [
+            0,
+            -0.016,
+            0
+          ],
+          "rotation": [
+            -1.5707963267948966,
+            0,
+            0,
+            "XYZ"
+          ],
+          "width": 12,
+          "height": 12
+        },
+        "camera": {
+          "position": [
+            0,
+            1.7,
+            5.808421755351645
+          ],
+          "matrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0.9968787227980263,
+            -0.07894816041286767,
+            0,
+            0,
+            0.07894816041286767,
+            0.9968787227980263,
+            0,
+            0,
+            1.7,
+            5.808421755351645,
+            1
+          ],
+          "projection": [
+            3.87228117023443,
+            0,
+            0,
+            0,
+            0,
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            -1.005012531328321,
+            -1,
+            0,
+            0,
+            -0.2005012531328321,
+            0
+          ]
+        },
+        "model": {
+          "position": [
+            -0.42,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1.35
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            "XYZ"
+          ],
+          "morphs": [
+            0
+          ]
+        },
+        "materialSeconds": 0.13330000000000108,
+        "effectSeconds": [
+          0.13330000000000108
+        ]
+      },
+      "pauseStable": true,
+      "resetExact": true
+    }
+  ],
+  "memory": {
+    "geometries": 0,
+    "textures": 4
+  },
+  "errors": [],
+  "outbound": [],
+  "limits": [
+    "Local Chromium SwiftShader, no physical GPU or hosted authentication",
+    "The before control is candidate ee6e974 with the erroneous fire castShadow=true, not native v30 which has no these fire cards",
+    "Reference probes disable only fire casting or original B casting to measure shadow contributions; production screenshots keep normal runtime flags",
+    "Canvas observation only stores the production renderer and loader result through Vite instrumentation; no lighting, shadow, animation or production source configuration is changed"
+  ]
+}
