@@ -7,6 +7,7 @@ import { createStudioEnvironment } from "@/lib/planet/scene-environment";
 import type { ElementalSpiritInstance } from "@/lib/planet/elemental-spirit";
 import { TEN_STEM_SPIRITS, ZODIAC_FEATURES, getSpiritStemPreset, type ZodiacBranch } from "@/lib/planet/spirit-profiles";
 import { loadApprovedSpirit } from "@/lib/planet/approved-jade-spirit";
+import { EMPTY_FASHION, type FashionSelection } from '@/lib/planet/spirit-fashion-catalog';
 
 import { safeDelta } from "@/lib/planet/surface-math";
 import type { MaskStyle } from "@/lib/planet/uv-mask";
@@ -21,16 +22,21 @@ interface ElementalSpiritCanvasProps {
   maskStyle?: MaskStyle;
   onCapture?: (dataUrl: string) => void;
   className?: string;
+  fashion?: FashionSelection;
 }
 
 export default function ElementalSpiritCanvas({
-  dayKey, monthKey="병인", onCapture, className="",
+  dayKey, monthKey="병인", onCapture, className="", fashion = EMPTY_FASHION,
 }: ElementalSpiritCanvasProps) {
   const containerRef=useRef<HTMLDivElement>(null);
   const rendererRef=useRef<THREE.WebGLRenderer|null>(null);
   const spiritRef=useRef<ElementalSpiritInstance|null>(null);
   const renderRef=useRef<(()=>void)|null>(null);
   const motionTime=useRef(0);
+  const fashionRef=useRef(fashion);
+  useEffect(()=>{
+    fashionRef.current=fashion;spiritRef.current?.fashion?.set(fashion);renderRef.current?.();
+  },[fashion]);
   const runningRef=useRef(true);
   const motionPreferenceInitialized=useRef(false);
   const viewRotation=useRef({x:0,y:0});
@@ -122,6 +128,7 @@ export default function ElementalSpiritCanvas({
     loadApprovedSpirit(dayKey,monthKey,low?"low":"high").then(instance=>{
       if(disposed){instance.dispose();return;}
       spirit=instance;scene.add(instance.group);spiritRef.current=instance;
+      instance.fashion?.set(fashionRef.current);
       setSpiritInfo(instance.data);setLoading(false);resize();
     }).catch(()=>{
       if(!disposed){setLoading(false);setGraphicsError("정령을 불러오지 못했어요. 아래 사주 구성은 계속 확인할 수 있어요.");}

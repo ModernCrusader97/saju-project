@@ -1,0 +1,55 @@
+{
+  "status": "CHECKPOINT",
+  "baseline": "96150b21de463574859c6574c481a5f1ec4e8400",
+  "cpuTestBasis": "ca7efc68eb6638b12a5102a7946857f6f80e2021",
+  "sourceUITestBasis": "ca7efc68eb6638b12a5102a7946857f6f80e2021",
+  "cpuChecks": 13,
+  "sourceUIChecks": 5,
+  "bodyGLBSHA256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+  "build": {
+    "status": "PASS",
+    "builtWorkerSHA256": "d0a540a7b6a5f785c6790aa63796597e38f88234f65b65a3730e05f2e3c6e863",
+    "gpuQAAgainstThisBuild": "NOT_RUN"
+  },
+  "relatedRegression": {
+    "tenStemCPU": 25,
+    "zodiacLoader": 8,
+    "visibility": 8
+  },
+  "sourcePreservation": {
+    "files": 558,
+    "originalAssets": 172,
+    "allowedChangedExistingFiles": [
+      "app/planet/page.tsx",
+      "components/planet/ElementalSpiritCanvas.tsx",
+      "lib/planet/approved-jade-spirit.ts",
+      "lib/planet/elemental-spirit.ts"
+    ]
+  },
+  "review": "Independent read-only review against 96150b2 found no concrete Critical/Important issues; atomic failed replacement and prior-exclusion restoration verified.",
+  "pending": [
+    "Integrate separately verified context-loss fix before claiming context restoration.",
+    "Fresh forty-outfit WebGL and exact production Worker fashion QA.",
+    "Final Worker hash after context fix."
+  ],
+  "notDeployed": true,
+  "runtimeSourceHashes": {
+    "app/planet/page.tsx": "31162c98f6616dd1f73f4d1593e3069dc6ddefa5f9fc276dc607ce47d538eab3",
+    "components/planet/ElementalSpiritCanvas.tsx": "70fcb82b9a748acb3196f64121eec45adfc609758b6340ad52fbf84b2973a2b0",
+    "components/planet/SpiritFashionPanel.tsx": "32131006e1c5556fd79be468d1d4858d3940ccaf48efd872aa83c4c3cbe7c866",
+    "hooks/use-spirit-fashion.ts": "0062599251193b082620e5f52a9126dbd5581d3b5f1aa57147c003034f0524c9",
+    "lib/planet/approved-jade-spirit.ts": "6488a295800a41eb1f601f634d41a18563ccfa748119df309714cb76a5bac3b3",
+    "lib/planet/elemental-spirit.ts": "f092e22f3745a93f981c03bcd21aa643627dbc46ef47a9528e5d2d4490b5060d",
+    "lib/planet/spirit-fashion.ts": "820a248cfe06e7940dbf779ea7071506a048b7b318d5f162927599f71548c3c1",
+    "lib/planet/fashion-surface-projector.ts": "608ef8f99dcba59a117dfa9d8ff649f972f5fcebd164c5a00e356d68a6fe444f",
+    "lib/planet/spirit-fashion-catalog.ts": "cd78cc7d096d54f52c1aa9fd0d6e53952de3fa3ba0571c1d1d11545180af1bb6",
+    "lib/planet/spirit-fashion-storage.ts": "fa465992008bbab56866a99149e9b1f40be994947bdc7ecc423c66332a86f261"
+  },
+  "typeCheck": "PASS",
+  "targetedLint": {
+    "errors": 0,
+    "warnings": 1,
+    "note": "existing Canvas img warning"
+  },
+  "diffCheck": "PASS"
+}
