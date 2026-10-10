@@ -18,3 +18,5 @@
 [검증 요약](verification.json)에 root에서 재실행한 명령과 범위를 기록합니다. 십간 CPU 25개, 새 motion/dew/sand/triangle/vegetation Node runner 38개(vegetation 파일 내부 4조건), 별도 관련 회귀와 TypeScript·빌드가 통과했습니다. 대상 lint는 error 0개이며 기존 unused `Z_AXIS` warning 1개가 남습니다. 최초 관련 회귀는 jsdom 경로를 지정하지 않아 2개 파일이 시작되지 않았고, 기존 설치 경로를 지정한 최종 실행에서는 모두 통과했습니다.
 
 현재 파일은 검증된 구현의 첫 보존 단위입니다. 실제 빌드 Worker의 React UI와 배포 상태는 후속 증거로 추가합니다. 이 캡처는 hosted 로그인 화면이나 물리 GPU 성능 인증이 아닙니다. 덩굴은 짧은 경로이며 이슬 합쳐짐/분리 낙하와 壬 물보라는 미구현입니다.
+
+최종 [실제 빌드 Worker UI](worker/README.md)는 17/17 조건·44 PNG, 같은 빌드의 은하 입장 회귀는 8/8 통과했습니다. 투명 출력·불꽃 픽셀·옥 복구는 [alpha 보정 기록](alpha-compositing.md)에 실패/실험과 최종 통과를 구분해 보존했습니다. 최신 대상 lint는 오류 0, 기존 Canvas img 경고 1이며 전체 저장소 lint 통과라고 주장하지 않습니다. 배포는 이 기록을 먼저 비공개 원격에 보존한 뒤 기존 owner-only Site에서 별도로 수행합니다.

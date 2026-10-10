@@ -1,8 +1,24 @@
 {
   "status": "PASS",
   "candidateOnly": true,
-  "exactWorkerUI": "pending",
-  "siteDeployment": "pending",
+  "exactWorkerUI": {
+    "status": "PASS",
+    "passed": 17,
+    "failed": 0,
+    "cases": 12,
+    "jadeRecoveryCases": 2,
+    "captures": 44,
+    "builtServerSha256": "bb96468fe99e2888ec2a01e18935673b60e37571d402b5997aee8ac3fad4082f",
+    "harnessSha256": "d134d54acc4931f0e89c46c93bfa382b225ca3d64b436d1b83bbe213adcf90b8",
+    "errors": 0,
+    "outbound": 0,
+    "report": "worker/report.json"
+  },
+  "siteDeployment": {
+    "status": "NOT_RUN_AT_RECORD_TIME",
+    "scope": "existing owner-only Site; publication follows private source preservation",
+    "siteId": "appgprj_6ac0409a78688191a04e4997548f9e5b"
+  },
   "CPU": {
     "tenStemActualGLB": 25,
     "newAttachmentNodeRunner": 38,
@@ -35,7 +51,7 @@
   "targetedLint": {
     "errors": 0,
     "warnings": 1,
-    "existingWarning": "approved-stem-accents.ts unused Z_AXIS"
+    "existingWarning": "ElementalSpiritCanvas.tsx existing img warning"
   },
   "originalAssetFilesUnchanged": 171,
   "protectedSource": [
@@ -52,5 +68,25 @@
     "Local SwiftShader, not physical GPU",
     "Hosted signed-in view not inspected",
     "Fashion and new tiger remain separate candidates"
-  ]
+  ],
+  "exactWorkerGalaxyEntry": {
+    "status": "PASS",
+    "passed": 8,
+    "failed": 0,
+    "builtServerSha256": "bb96468fe99e2888ec2a01e18935673b60e37571d402b5997aee8ac3fad4082f",
+    "report": "worker/galaxy-entry-report.json"
+  },
+  "petProvenanceFollowup": {
+    "testPass": 8,
+    "existingTwelveCPUComparisons": 192,
+    "animalURLsRequested": 0,
+    "latestCraftedApproval": "unverified",
+    "report": "../zodiac-pet-assets/runtime-audit/README.md"
+  },
+  "independentReview": {
+    "critical": 0,
+    "important": 0,
+    "reviewedSourceCommit": "a9e4f67dd8627b28b17aecf32cbb16b0b75d5bb1"
+  },
+  "releaseReadiness": "PASS; verified local production artifact, publication not run at record time"
 }

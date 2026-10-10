@@ -1,212 +1,820 @@
-[
-  {
-    "file": "README.md",
-    "bytes": 3302,
-    "sha256": "5d2a57610f3583efb12aa88e08e92688c1390c5589a9092bfff098d48f40105e"
-  },
-  {
-    "file": "browser-report.json",
-    "bytes": 32075,
-    "sha256": "c27fc7ff6008146ea3bbcb4956f1370d50386c3902db0f8c8331ee67e984b374"
-  },
-  {
-    "file": "buffer-lifecycle.json",
-    "bytes": 52441,
-    "sha256": "dafb98be1346ba90ccead5c9a934b14f45c7d6db43e29fe0e1084fc05dbf1177"
-  },
-  {
-    "file": "motion-cpu.json",
-    "bytes": 5025,
-    "sha256": "8f567d84d6cf1ef664386f83724b52ba4bf7f7fc0ef864e963538ad9585ebae6"
-  },
-  {
-    "file": "preservation.json",
-    "bytes": 69136,
-    "sha256": "05a5927c402b6641182a589508e806815ad6bde550328d5c28e1a392f380c6bc"
-  },
-  {
-    "file": "triangle-walk.json",
-    "bytes": 11330,
-    "sha256": "5fee7a07cf08e0df18d20bed3ae7472de3ab0988d370a40ea42e39a28d76acf8"
-  },
-  {
-    "file": "vegetation.json",
-    "bytes": 3511,
-    "sha256": "71bc8d14f285bc5eb23c6d325ab0173c58b293f5982719c7c4718ed250d6ea19"
-  },
-  {
-    "file": "verification.json",
-    "bytes": 1270,
-    "sha256": "970c828df560c7bf0fc3ee7f9c52b9330839524a20cf18976dc2a3eb060785cd"
-  },
-  {
-    "file": "갑-front.png",
-    "bytes": 136703,
-    "sha256": "9d43cbf7bf32eaa8b8ce474a4928a05449ae8f0a5f48449a8cd1e1dfab9b3fb6"
-  },
-  {
-    "file": "갑-motion-a.png",
-    "bytes": 133076,
-    "sha256": "56cfcaa1cbb84ca2374da45381a4fad6c77293cc1f45c70e8e7ed6a721c8e599"
-  },
-  {
-    "file": "갑-motion-b.png",
-    "bytes": 133180,
-    "sha256": "9067ccbbb5fec90fdd432b17beaba1d78fffde87b6f0cb8cd0bdddb648ae7a78"
-  },
-  {
-    "file": "갑-side.png",
-    "bytes": 121635,
-    "sha256": "90b9fe48bcb58377a4ed11bb51be11c9290e5e7233223adc262565609a9e2731"
-  },
-  {
-    "file": "갑-wave.png",
-    "bytes": 132322,
-    "sha256": "aa76ea4af41265c56f7e301c1aa3c15548d649777e14945f5e0f9a51ff2eda84"
-  },
-  {
-    "file": "경-wave.png",
-    "bytes": 76321,
-    "sha256": "52b45286361ae9fc2d376051687b025064ea18870f4b2c8b1bea7f25ab1c0781"
-  },
-  {
-    "file": "계-front.png",
-    "bytes": 41615,
-    "sha256": "c5d40a74b04e75d2a884226bde57eb0357be7048c70c9db0aa2a201378c0cee4"
-  },
-  {
-    "file": "계-motion-a.png",
-    "bytes": 38098,
-    "sha256": "86358ecaf932ad32fd6a2a060aaaa7386973ad1d8cee3d406e856bbb571fa26b"
-  },
-  {
-    "file": "계-motion-b.png",
-    "bytes": 38009,
-    "sha256": "25efd7950ace83c610d643c9f5614f008924eb5d012ba7bdf09f97fd4993f474"
-  },
-  {
-    "file": "계-side.png",
-    "bytes": 31018,
-    "sha256": "0799ac90bf67dc9f0d4b3dccc8743130587ba9b67ce2b2473e25afb531cf93db"
-  },
-  {
-    "file": "계-wave.png",
-    "bytes": 36982,
-    "sha256": "855b76339ba41dbb42d535566fc817c87d99959b10579dc7144590d5bd342758"
-  },
-  {
-    "file": "기-wave.png",
-    "bytes": 99932,
-    "sha256": "340a2c902abda679d1c2b748a2f55fd67b69b56108ab1e82b013c8a1c7a0078b"
-  },
-  {
-    "file": "무-front.png",
-    "bytes": 109766,
-    "sha256": "cada88a4a9122d25eea540da54fa2a9d261ff43154fe8c2cc8e629293f962e43"
-  },
-  {
-    "file": "무-motion-a.png",
-    "bytes": 107146,
-    "sha256": "1f29c527ac3dbc55a0e91539619c82ac7941b52a6271451fd1eb3b7b7024f5f9"
-  },
-  {
-    "file": "무-motion-b.png",
-    "bytes": 107185,
-    "sha256": "d2711f88d9f1c656c5376be734816af8c33ea3782b17b3fdd5d2480dfe1a7e09"
-  },
-  {
-    "file": "무-side.png",
-    "bytes": 97273,
-    "sha256": "a739ae88f23cfb93d5b9b810aa04d1c8725ffee38f7b06430b5b3e28a516395c"
-  },
-  {
-    "file": "무-wave.png",
-    "bytes": 105300,
-    "sha256": "adcc6d596b226d0bd302bc2279096a4dc48d4dccf63a053b8071fd7062e5ce99"
-  },
-  {
-    "file": "병-front.png",
-    "bytes": 76779,
-    "sha256": "41b1980ced4e9099053c79e8be4ff7df5d046c9f82f99120086bf22eecafee32"
-  },
-  {
-    "file": "병-motion-a.png",
-    "bytes": 73569,
-    "sha256": "ad0342f4b2de7a03c42465910e0cb04bd8b1a3268db6217f964206c6dfcc4a6c"
-  },
-  {
-    "file": "병-motion-b.png",
-    "bytes": 71883,
-    "sha256": "bdd7e4da2c349e72c759c53513e85ad1231a0c7946ae019981d4db3219515858"
-  },
-  {
-    "file": "병-side.png",
-    "bytes": 66940,
-    "sha256": "d1c83d3724093bed6102d0c1f9fff46644aa4fe8a12060317f7351d234c1b718"
-  },
-  {
-    "file": "병-wave.png",
-    "bytes": 73711,
-    "sha256": "be5926ceaa18e6c06c7ee6e40b1bf8f2bb56c62f444633b9c18359f2176c884c"
-  },
-  {
-    "file": "신-wave.png",
-    "bytes": 80829,
-    "sha256": "129f0c3d5acae59f99fa53c03c3e662c90d70235a5e177216393da8107f8f924"
-  },
-  {
-    "file": "을-front.png",
-    "bytes": 86896,
-    "sha256": "73bbf580c5690f8f8f992afa2c83c86210b5528878ad84cf881b508ffc5fb83b"
-  },
-  {
-    "file": "을-motion-a.png",
-    "bytes": 86202,
-    "sha256": "7bd6b6774f9b7967d09235d3346eb5dd9ec862fe9b15b47f08b0d4cecd30e5ed"
-  },
-  {
-    "file": "을-motion-b.png",
-    "bytes": 86162,
-    "sha256": "6c629684f67aa1c146d27b124dae9fddb53ab239f3641d70d1472b22045d54ba"
-  },
-  {
-    "file": "을-side.png",
-    "bytes": 77276,
-    "sha256": "710571678792909d08ec849164dc5ba6e6ac4873071ce38d0d18fd840ac91897"
-  },
-  {
-    "file": "을-wave.png",
-    "bytes": 84740,
-    "sha256": "a35ba0b069fe6105dbc631e84c750156c8944256abac4a889bb8c5fff0259b62"
-  },
-  {
-    "file": "임-wave.png",
-    "bytes": 86360,
-    "sha256": "464928b28a19463bc20781778311b211190b4f88e0f48da305f14ee4b22e117c"
-  },
-  {
-    "file": "정-front.png",
-    "bytes": 118626,
-    "sha256": "57063de582dd82e2e792ce84a8d9860f43f09b190b5aa3f36fd37ed901ee1521"
-  },
-  {
-    "file": "정-motion-a.png",
-    "bytes": 116303,
-    "sha256": "e522aa4913c3b9c5e4c4deb122dfb4b5950534a40227462ab0df700fc0eb1664"
-  },
-  {
-    "file": "정-motion-b.png",
-    "bytes": 116223,
-    "sha256": "071e7e22170c38951eb7885df41c245a9791b989a8b89a730e43b4764753511d"
-  },
-  {
-    "file": "정-side.png",
-    "bytes": 108632,
-    "sha256": "ae841e43a2b32cffe9259ec12ead79bc2b8a445b4f77db03eaa612638ebdfe7f"
-  },
-  {
-    "file": "정-wave.png",
-    "bytes": 114506,
-    "sha256": "160f3883386406803fcdb1c86fa081c1ef820bcde5bede0a5e13aae6001b6367"
-  }
-]
+{
+  "artifacts": [
+    {
+      "file": "README.md",
+      "bytes": 3847,
+      "sha256": "4a4a3a6ff69a6cdc541e7a95f8dc6089bcf42c383b5b17f5f0c0f1ac3f6a994b"
+    },
+    {
+      "file": "affine-normal-after.json",
+      "bytes": 1100,
+      "sha256": "4a8967f4a7c3cf26ccb00e1476c284f88b06a715031a6f1e62d80f960a6edeec"
+    },
+    {
+      "file": "affine-normal-before.json",
+      "bytes": 774,
+      "sha256": "7445206657881a1d7e9e76a10dce67226d39ab81aeaf7858be0912a4c3964ac4"
+    },
+    {
+      "file": "affine-normal-fix.md",
+      "bytes": 2599,
+      "sha256": "38f09cd194807dff57987a4d6864ec6598892be904a736a25e7037ad3bbe185e"
+    },
+    {
+      "file": "affine-sand-cpu.json",
+      "bytes": 6651,
+      "sha256": "1de60caceaa31250a50cba9c1ca67deeae579de8c5aa4c29333175080d07e5e0"
+    },
+    {
+      "file": "affine-sand-webgl.json",
+      "bytes": 15849,
+      "sha256": "109b83074acfe7e045ac3ec649731ea932f5ba0e05d704652ce61a49a71e4a79"
+    },
+    {
+      "file": "alpha-compositing/compatible-alpha-fire-water-jade-recovery/harness.mjs",
+      "bytes": 54706,
+      "sha256": "d134d54acc4931f0e89c46c93bfa382b225ca3d64b436d1b83bbe213adcf90b8"
+    },
+    {
+      "file": "alpha-compositing/compatible-alpha-fire-water-jade-recovery/report.json",
+      "bytes": 525250,
+      "sha256": "f4a0f9bc2fed81bf25287f3e0731d9fe273273bd197b1808fcdb692e7e28af6b"
+    },
+    {
+      "file": "alpha-compositing/compatible-alpha-fire-water-jade-recovery/계-high-front.png",
+      "bytes": 78707,
+      "sha256": "75962569cbf45b702722166d39331c1885c696b78072ea7558bdab3835bdf99e"
+    },
+    {
+      "file": "alpha-compositing/compatible-alpha-fire-water-jade-recovery/계-high-side-all-native.png",
+      "bytes": 59022,
+      "sha256": "3dee38958b8dd443d6400fd556acba536a5cc9ec1aa170dd203a65804b407cf2"
+    },
+    {
+      "file": "alpha-compositing/compatible-alpha-fire-water-jade-recovery/계-high-side-ui-all-native.png",
+      "bytes": 245020,
+      "sha256": "7e373af30a105c8baf396bf1294ccda64f12a3264c700904f9c8e82a54d41511"
+    },
+    {
+      "file": "alpha-compositing/compatible-alpha-fire-water-jade-recovery/계-high-side-ui-selected.png",
+      "bytes": 245020,
+      "sha256": "7e373af30a105c8baf396bf1294ccda64f12a3264c700904f9c8e82a54d41511"
+    },
+    {
+      "file": "alpha-compositing/compatible-alpha-fire-water-jade-recovery/계-high-side.png",
+      "bytes": 59022,
+      "sha256": "3dee38958b8dd443d6400fd556acba536a5cc9ec1aa170dd203a65804b407cf2"
+    },
+    {
+      "file": "alpha-compositing/compatible-alpha-fire-water-jade-recovery/계-high-wave.png",
+      "bytes": 77966,
+      "sha256": "937fb77e18e1e26b9c3f4a8065b8965411bcf57b018d0085f0f4c4092e03cce6"
+    },
+    {
+      "file": "alpha-compositing/compatible-alpha-fire-water-jade-recovery/계-low-front.png",
+      "bytes": 50830,
+      "sha256": "be663d93cc2b93dffdbcb1212b077a46b24c0033e01065445e1327cae2dcbed2"
+    },
+    {
+      "file": "alpha-compositing/compatible-alpha-fire-water-jade-recovery/계-low-side-all-native.png",
+      "bytes": 37167,
+      "sha256": "7105e1c6cabfd485676d4148a3514b393b99b0734c3f4f9212ddaab3f596039d"
+    },
+    {
+      "file": "alpha-compositing/compatible-alpha-fire-water-jade-recovery/계-low-side-ui-all-native.png",
+      "bytes": 173569,
+      "sha256": "07b038e1dd6de2ae8f71692cb27430815bdd15396b0977da09ddc1604eb94bdc"
+    },
+    {
+      "file": "alpha-compositing/compatible-alpha-fire-water-jade-recovery/계-low-side-ui-selected.png",
+      "bytes": 173569,
+      "sha256": "07b038e1dd6de2ae8f71692cb27430815bdd15396b0977da09ddc1604eb94bdc"
+    },
+    {
+      "file": "alpha-compositing/compatible-alpha-fire-water-jade-recovery/계-low-side.png",
+      "bytes": 37167,
+      "sha256": "7105e1c6cabfd485676d4148a3514b393b99b0734c3f4f9212ddaab3f596039d"
+    },
+    {
+      "file": "alpha-compositing/compatible-alpha-fire-water-jade-recovery/계-low-wave.png",
+      "bytes": 50490,
+      "sha256": "ec20d8412499572d75dc4699bde875aee3923a4d2cf1176a78ddeac5757c2bcb"
+    },
+    {
+      "file": "alpha-compositing/compatible-alpha-fire-water-jade-recovery/기-high-jade-restored-moving.png",
+      "bytes": 154015,
+      "sha256": "ae492ed10b67f6c21a6db9ccce265039b2b3e468329849d7c2895b6a2f5c5069"
+    },
+    {
+      "file": "alpha-compositing/compatible-alpha-fire-water-jade-recovery/기-low-jade-restored-moving.png",
+      "bytes": 101258,
+      "sha256": "96d1e143aa985e0cee68631d68f88943846b0ff6621f5bb380c5b3f624a0ee25"
+    },
+    {
+      "file": "alpha-compositing/compatible-alpha-fire-water-jade-recovery/병-high-front.png",
+      "bytes": 122628,
+      "sha256": "0206c2451faba94fd8e118a51368a02b4ef96f1850546b173498fbee9873266b"
+    },
+    {
+      "file": "alpha-compositing/compatible-alpha-fire-water-jade-recovery/병-high-side.png",
+      "bytes": 108051,
+      "sha256": "41f2ee115c425b871692a5d405e20ae9107474ff86a3333ce15b840864948380"
+    },
+    {
+      "file": "alpha-compositing/compatible-alpha-fire-water-jade-recovery/병-high-wave.png",
+      "bytes": 121976,
+      "sha256": "7d33d3810a2d8cb0339edb2a7eac2457cb530405653fb3a016d34d05fb236e57"
+    },
+    {
+      "file": "alpha-compositing/compatible-alpha-fire-water-jade-recovery/병-low-front.png",
+      "bytes": 75780,
+      "sha256": "569a9e42e88ab3c7fa29f2fdcceba65870d17dcfe3afb2c467df5330430a6b03"
+    },
+    {
+      "file": "alpha-compositing/compatible-alpha-fire-water-jade-recovery/병-low-side.png",
+      "bytes": 65732,
+      "sha256": "ca3c9a887678dc496716b0ad3be3e8f0f505b296cfa0fb6e51eb9f2b61641419"
+    },
+    {
+      "file": "alpha-compositing/compatible-alpha-fire-water-jade-recovery/병-low-wave.png",
+      "bytes": 74347,
+      "sha256": "93a58c43ceea490d75dd25dcf0e841c59e70ae02df533bcf11cc3e06246e1549"
+    },
+    {
+      "file": "alpha-compositing/original-premultiplied-fire-reference/harness.mjs",
+      "bytes": 28765,
+      "sha256": "8fa8b2659fede9371e0fd83fa6c51cf7fc2687969ec4ec4fc907df9feb1430fd"
+    },
+    {
+      "file": "alpha-compositing/original-premultiplied-fire-reference/report.json",
+      "bytes": 339373,
+      "sha256": "b7b9b5adb6ec821f08684f9e58a4b76dd63a2c28c3634ac35202f7674962a46d"
+    },
+    {
+      "file": "alpha-compositing/original-premultiplied-fire-reference/병-high-front.png",
+      "bytes": 122628,
+      "sha256": "0206c2451faba94fd8e118a51368a02b4ef96f1850546b173498fbee9873266b"
+    },
+    {
+      "file": "alpha-compositing/original-premultiplied-fire-reference/병-high-side.png",
+      "bytes": 108051,
+      "sha256": "41f2ee115c425b871692a5d405e20ae9107474ff86a3333ce15b840864948380"
+    },
+    {
+      "file": "alpha-compositing/original-premultiplied-fire-reference/병-high-wave.png",
+      "bytes": 121976,
+      "sha256": "7d33d3810a2d8cb0339edb2a7eac2457cb530405653fb3a016d34d05fb236e57"
+    },
+    {
+      "file": "alpha-compositing/premultiplied-white-ui-and-jade-recovery/harness.mjs",
+      "bytes": 47560,
+      "sha256": "9e4672c41f3279dbb7cf59c8c6bee3e7d01753856d91f3a27f3a6e7739857eed"
+    },
+    {
+      "file": "alpha-compositing/premultiplied-white-ui-and-jade-recovery/report.json",
+      "bytes": 295355,
+      "sha256": "6155bb4e46e002dc076cad913247f65698f106d1d85c9e201d1a47c6425231fa"
+    },
+    {
+      "file": "alpha-compositing/premultiplied-white-ui-and-jade-recovery/계-high-front.png",
+      "bytes": 43132,
+      "sha256": "63c00ce6cb1b8f3b88de22d82060547eabc2e5bf23b7cf2bb5a5c61e1f161107"
+    },
+    {
+      "file": "alpha-compositing/premultiplied-white-ui-and-jade-recovery/계-high-side-all-native.png",
+      "bytes": 27883,
+      "sha256": "8b429eeb462f2f83c0d242185a3ab2a174ceed5e55aa2d028c99a9c94f9dd7b9"
+    },
+    {
+      "file": "alpha-compositing/premultiplied-white-ui-and-jade-recovery/계-high-side-ui-all-native.png",
+      "bytes": 218711,
+      "sha256": "5007ea196c783380740e106d3303ac333c73ffcfe686f0177bed12338e13057a"
+    },
+    {
+      "file": "alpha-compositing/premultiplied-white-ui-and-jade-recovery/계-high-side-ui-selected.png",
+      "bytes": 218711,
+      "sha256": "5007ea196c783380740e106d3303ac333c73ffcfe686f0177bed12338e13057a"
+    },
+    {
+      "file": "alpha-compositing/premultiplied-white-ui-and-jade-recovery/계-high-side.png",
+      "bytes": 27883,
+      "sha256": "8b429eeb462f2f83c0d242185a3ab2a174ceed5e55aa2d028c99a9c94f9dd7b9"
+    },
+    {
+      "file": "alpha-compositing/premultiplied-white-ui-and-jade-recovery/계-high-wave.png",
+      "bytes": 43156,
+      "sha256": "c4308f8ae1b174492f75769125a3ab1d346365e6496f6b8bf7069de1775224ec"
+    },
+    {
+      "file": "alpha-compositing/premultiplied-white-ui-and-jade-recovery/계-low-front.png",
+      "bytes": 25886,
+      "sha256": "eabb577f7f7b02e44d974b3450b51439129d87addefab9137c081e9f8cba5da2"
+    },
+    {
+      "file": "alpha-compositing/premultiplied-white-ui-and-jade-recovery/계-low-side-all-native.png",
+      "bytes": 15610,
+      "sha256": "2fa2df7bc9aec09d226cd6b1a4fbff860cd6e714db8f00e09e12be58296f132f"
+    },
+    {
+      "file": "alpha-compositing/premultiplied-white-ui-and-jade-recovery/계-low-side-ui-all-native.png",
+      "bytes": 155057,
+      "sha256": "1bdf19fd696b4830f73451eef4c2179e5adbe6663e593081b83276835db79e66"
+    },
+    {
+      "file": "alpha-compositing/premultiplied-white-ui-and-jade-recovery/계-low-side-ui-selected.png",
+      "bytes": 155191,
+      "sha256": "345552f3e0603c7c197c765504777549753efa93e48d4c12aea96c2603fac931"
+    },
+    {
+      "file": "alpha-compositing/premultiplied-white-ui-and-jade-recovery/계-low-side.png",
+      "bytes": 15610,
+      "sha256": "2fa2df7bc9aec09d226cd6b1a4fbff860cd6e714db8f00e09e12be58296f132f"
+    },
+    {
+      "file": "alpha-compositing/premultiplied-white-ui-and-jade-recovery/계-low-wave.png",
+      "bytes": 25889,
+      "sha256": "0ba2d661c79cf3438094faab5a493fcfb7b59efaae6c8557f54a72db61cc53ac"
+    },
+    {
+      "file": "alpha-compositing/premultiplied-white-ui-and-jade-recovery/기-high-jade-restored-moving.png",
+      "bytes": 154112,
+      "sha256": "ab9b698a72ac8c955384c5874c1265508aec230738ce3a505c10fc8dc8892d1b"
+    },
+    {
+      "file": "alpha-compositing/premultiplied-white-ui-and-jade-recovery/기-low-jade-restored-moving.png",
+      "bytes": 101242,
+      "sha256": "ec5b717ed9933e37eb7e9378a9d120df8942637b934b85a80f86c5940b16026f"
+    },
+    {
+      "file": "alpha-compositing/straight-alpha-water-and-jade-recovery/harness.mjs",
+      "bytes": 48683,
+      "sha256": "caf3137c2514ca7bf3e9eeba6052e365f14d5a0ec486ee3586e3ec1dac604b8e"
+    },
+    {
+      "file": "alpha-compositing/straight-alpha-water-and-jade-recovery/report.json",
+      "bytes": 295949,
+      "sha256": "044e266b843d091e3ee5943b3dc29a4213f968e408013da51431772584d1603e"
+    },
+    {
+      "file": "alpha-compositing/straight-alpha-water-and-jade-recovery/계-high-front.png",
+      "bytes": 73856,
+      "sha256": "8ab4efbabd89d1e53a3bb51e638b0335885bf3918fb067bbeb39587ba0593610"
+    },
+    {
+      "file": "alpha-compositing/straight-alpha-water-and-jade-recovery/계-high-side-all-native.png",
+      "bytes": 54601,
+      "sha256": "48dabcacb689efd5fa5006c6768dc405a2a05a5cdd706a2dfb333f362c317501"
+    },
+    {
+      "file": "alpha-compositing/straight-alpha-water-and-jade-recovery/계-high-side-ui-all-native.png",
+      "bytes": 238080,
+      "sha256": "5c20a8cbe771b7fef2b40c89272b460addf3744149b3d20fd83b39b381304fe9"
+    },
+    {
+      "file": "alpha-compositing/straight-alpha-water-and-jade-recovery/계-high-side-ui-selected.png",
+      "bytes": 238080,
+      "sha256": "5c20a8cbe771b7fef2b40c89272b460addf3744149b3d20fd83b39b381304fe9"
+    },
+    {
+      "file": "alpha-compositing/straight-alpha-water-and-jade-recovery/계-high-side.png",
+      "bytes": 54601,
+      "sha256": "48dabcacb689efd5fa5006c6768dc405a2a05a5cdd706a2dfb333f362c317501"
+    },
+    {
+      "file": "alpha-compositing/straight-alpha-water-and-jade-recovery/계-high-wave.png",
+      "bytes": 73382,
+      "sha256": "e2a6617c3ab59cdc83f329e2eb33a7f4913d0f7a95398340fc8dfc98a2dfe3c5"
+    },
+    {
+      "file": "alpha-compositing/straight-alpha-water-and-jade-recovery/계-low-front.png",
+      "bytes": 46540,
+      "sha256": "4fc6445108f0e1d2a15924cb878c89693dbb38f5ea40ba200c90e4ff1002bb1e"
+    },
+    {
+      "file": "alpha-compositing/straight-alpha-water-and-jade-recovery/계-low-side-all-native.png",
+      "bytes": 33325,
+      "sha256": "f1e2c68ccdfe2adf3a8ff8772521a557cf5c9a38c26f8d6a9c86e46a3727a070"
+    },
+    {
+      "file": "alpha-compositing/straight-alpha-water-and-jade-recovery/계-low-side-ui-all-native.png",
+      "bytes": 169148,
+      "sha256": "11cee2aa1b0dfe68619168ae6111e5d1dc9b5e18a771e4ed25d71265e81c3df0"
+    },
+    {
+      "file": "alpha-compositing/straight-alpha-water-and-jade-recovery/계-low-side-ui-selected.png",
+      "bytes": 169388,
+      "sha256": "6c280f26424fde4331e0752d03bd814bb46d38b16581f07b4aaa9ddc8fcf7354"
+    },
+    {
+      "file": "alpha-compositing/straight-alpha-water-and-jade-recovery/계-low-side.png",
+      "bytes": 33325,
+      "sha256": "f1e2c68ccdfe2adf3a8ff8772521a557cf5c9a38c26f8d6a9c86e46a3727a070"
+    },
+    {
+      "file": "alpha-compositing/straight-alpha-water-and-jade-recovery/계-low-wave.png",
+      "bytes": 45988,
+      "sha256": "3cfec27dcb32d0b1d2bfb8c635d169089f727277e66c6ccad124111526872d90"
+    },
+    {
+      "file": "alpha-compositing/straight-alpha-water-and-jade-recovery/기-high-jade-restored-moving.png",
+      "bytes": 154701,
+      "sha256": "4ea28df1c290f236025d3ea91e41a4f1f0e8a6bab3b67788bf037eaf6237fd0b"
+    },
+    {
+      "file": "alpha-compositing/straight-alpha-water-and-jade-recovery/기-low-jade-restored-moving.png",
+      "bytes": 101059,
+      "sha256": "8444a5b972d07daea95b4dccbff6f610314328348a9dda5eeb5eb79004b5db88"
+    },
+    {
+      "file": "alpha-compositing.md",
+      "bytes": 3916,
+      "sha256": "761ece3d313b2d12459331353fbe11b5daa288fa3361a0ee2dd32aa0404f0790"
+    },
+    {
+      "file": "browser-report.json",
+      "bytes": 32075,
+      "sha256": "c27fc7ff6008146ea3bbcb4956f1370d50386c3902db0f8c8331ee67e984b374"
+    },
+    {
+      "file": "buffer-lifecycle.json",
+      "bytes": 52441,
+      "sha256": "dafb98be1346ba90ccead5c9a934b14f45c7d6db43e29fe0e1084fc05dbf1177"
+    },
+    {
+      "file": "context-recovery/environment-fail-harness.mjs",
+      "bytes": 32357,
+      "sha256": "cdb103c5f33b52cdb4701795d48832fc492853e5b36f3eef6759d4b9fd393924"
+    },
+    {
+      "file": "context-recovery/environment-fail.json",
+      "bytes": 75381,
+      "sha256": "1b49bdf7f81647037ee105af391d6e3765ae87aa54548ebb77bce93a179f7672"
+    },
+    {
+      "file": "context-recovery/environment-only-teardown-fail-harness.mjs",
+      "bytes": 32677,
+      "sha256": "12d54e895f4345c4febe86cb6905d5d2c5fa0f2d06ad000cfb4c21f32ad9251b"
+    },
+    {
+      "file": "context-recovery/environment-only-teardown-fail.json",
+      "bytes": 328962,
+      "sha256": "8dc1da57e6c751d2ad46d482d9c698c97d1b23f4e2ad91a69ce4df446f4a942a"
+    },
+    {
+      "file": "context-recovery/focused-pass-harness.mjs",
+      "bytes": 33669,
+      "sha256": "731053732ca3cba067090b14951c293eb920e111dcd61b2cec75d100c7402f36"
+    },
+    {
+      "file": "context-recovery/focused-pass.json",
+      "bytes": 80808,
+      "sha256": "7a0d87a79b465f0c28043b1e5c96a319309260a7c2eb60a929182c95c95905c3"
+    },
+    {
+      "file": "context-recovery.md",
+      "bytes": 3379,
+      "sha256": "93ff5ffc880bc50188694e21f4aeab0950bde7da01ab8b29be744f6492eaf878"
+    },
+    {
+      "file": "motion-cpu.json",
+      "bytes": 5025,
+      "sha256": "8f567d84d6cf1ef664386f83724b52ba4bf7f7fc0ef864e963538ad9585ebae6"
+    },
+    {
+      "file": "preservation.json",
+      "bytes": 69136,
+      "sha256": "05a5927c402b6641182a589508e806815ad6bde550328d5c28e1a392f380c6bc"
+    },
+    {
+      "file": "sand-build-contention.json",
+      "bytes": 6799,
+      "sha256": "2c25e2f68f95d385f8613b71f3d070b37f7fe56760df75e9d5cac67daa32d3b0"
+    },
+    {
+      "file": "triangle-walk.json",
+      "bytes": 11330,
+      "sha256": "5fee7a07cf08e0df18d20bed3ae7472de3ab0988d370a40ea42e39a28d76acf8"
+    },
+    {
+      "file": "vegetation.json",
+      "bytes": 3511,
+      "sha256": "71bc8d14f285bc5eb23c6d325ab0173c58b293f5982719c7c4718ed250d6ea19"
+    },
+    {
+      "file": "verification.json",
+      "bytes": 2534,
+      "sha256": "e0c9286af7bcb48e6fca29c4e5ebe80fde9d356fe4fa3d5726003544ed772646"
+    },
+    {
+      "file": "worker/README.md",
+      "bytes": 3203,
+      "sha256": "e70498082fb3db984f0cec72bda59b8cab10f36e1ab17b10440572e6bf6355ee"
+    },
+    {
+      "file": "worker/galaxy-entry-report.json",
+      "bytes": 170037,
+      "sha256": "7a81043be480b9bda555291d9d2606b70783da2cd26d48736e6b7b2bab9e82ab"
+    },
+    {
+      "file": "worker/harness.mjs",
+      "bytes": 54706,
+      "sha256": "d134d54acc4931f0e89c46c93bfa382b225ca3d64b436d1b83bbe213adcf90b8"
+    },
+    {
+      "file": "worker/report.json",
+      "bytes": 1211729,
+      "sha256": "fdc3ce376a573cf3fd0500b05c564ae05e837307fe1514f57ea21fc9dd65feb7"
+    },
+    {
+      "file": "worker/갑-high-front.png",
+      "bytes": 191476,
+      "sha256": "daa18c3b575b9394fd16b5a2f24ee62d73ab5608d5838ff26a0abf7514d890dd"
+    },
+    {
+      "file": "worker/갑-high-side.png",
+      "bytes": 171300,
+      "sha256": "b70487c462c98d9787838f9e38541500ac3deb9ad5b7e719deb164bd9872c360"
+    },
+    {
+      "file": "worker/갑-high-wave.png",
+      "bytes": 189195,
+      "sha256": "95fec20940e71b1e691af173192115d860a12b4c7e675979249e0ac213b9c611"
+    },
+    {
+      "file": "worker/갑-low-front.png",
+      "bytes": 120323,
+      "sha256": "4f937cbfdebb506b451ef0829fe238294ce231cb526311e81de512780c6274a4"
+    },
+    {
+      "file": "worker/갑-low-side.png",
+      "bytes": 106590,
+      "sha256": "46239ab40811d33abdcb1e4279f06d7317c2db7d0aac72c579bfd401673fe76b"
+    },
+    {
+      "file": "worker/갑-low-wave.png",
+      "bytes": 118207,
+      "sha256": "a2a1a75058f663769a80ede996ef59f258360cfe9c47b65a8a46c271ea010880"
+    },
+    {
+      "file": "worker/계-high-front.png",
+      "bytes": 78707,
+      "sha256": "75962569cbf45b702722166d39331c1885c696b78072ea7558bdab3835bdf99e"
+    },
+    {
+      "file": "worker/계-high-side-all-native.png",
+      "bytes": 59022,
+      "sha256": "3dee38958b8dd443d6400fd556acba536a5cc9ec1aa170dd203a65804b407cf2"
+    },
+    {
+      "file": "worker/계-high-side-ui-all-native.png",
+      "bytes": 245020,
+      "sha256": "7e373af30a105c8baf396bf1294ccda64f12a3264c700904f9c8e82a54d41511"
+    },
+    {
+      "file": "worker/계-high-side-ui-selected.png",
+      "bytes": 245020,
+      "sha256": "7e373af30a105c8baf396bf1294ccda64f12a3264c700904f9c8e82a54d41511"
+    },
+    {
+      "file": "worker/계-high-side.png",
+      "bytes": 59022,
+      "sha256": "3dee38958b8dd443d6400fd556acba536a5cc9ec1aa170dd203a65804b407cf2"
+    },
+    {
+      "file": "worker/계-high-wave.png",
+      "bytes": 77966,
+      "sha256": "937fb77e18e1e26b9c3f4a8065b8965411bcf57b018d0085f0f4c4092e03cce6"
+    },
+    {
+      "file": "worker/계-low-front.png",
+      "bytes": 50830,
+      "sha256": "be663d93cc2b93dffdbcb1212b077a46b24c0033e01065445e1327cae2dcbed2"
+    },
+    {
+      "file": "worker/계-low-side-all-native.png",
+      "bytes": 37167,
+      "sha256": "7105e1c6cabfd485676d4148a3514b393b99b0734c3f4f9212ddaab3f596039d"
+    },
+    {
+      "file": "worker/계-low-side-ui-all-native.png",
+      "bytes": 173569,
+      "sha256": "07b038e1dd6de2ae8f71692cb27430815bdd15396b0977da09ddc1604eb94bdc"
+    },
+    {
+      "file": "worker/계-low-side-ui-selected.png",
+      "bytes": 173569,
+      "sha256": "07b038e1dd6de2ae8f71692cb27430815bdd15396b0977da09ddc1604eb94bdc"
+    },
+    {
+      "file": "worker/계-low-side.png",
+      "bytes": 37167,
+      "sha256": "7105e1c6cabfd485676d4148a3514b393b99b0734c3f4f9212ddaab3f596039d"
+    },
+    {
+      "file": "worker/계-low-wave.png",
+      "bytes": 50490,
+      "sha256": "ec20d8412499572d75dc4699bde875aee3923a4d2cf1176a78ddeac5757c2bcb"
+    },
+    {
+      "file": "worker/기-high-jade-restored-moving.png",
+      "bytes": 154015,
+      "sha256": "ae492ed10b67f6c21a6db9ccce265039b2b3e468329849d7c2895b6a2f5c5069"
+    },
+    {
+      "file": "worker/기-low-jade-restored-moving.png",
+      "bytes": 101258,
+      "sha256": "96d1e143aa985e0cee68631d68f88943846b0ff6621f5bb380c5b3f624a0ee25"
+    },
+    {
+      "file": "worker/무-high-front.png",
+      "bytes": 164333,
+      "sha256": "0e54d5c670f9bfa93c3f1bd94e46b9c3a19bbe4cf3180c883a10ac2c72d811f0"
+    },
+    {
+      "file": "worker/무-high-side.png",
+      "bytes": 146495,
+      "sha256": "e149004ec1484b33bef6227ec5672abef46ca4fbbb54dd7027d8e9602ac0d62d"
+    },
+    {
+      "file": "worker/무-high-wave.png",
+      "bytes": 161412,
+      "sha256": "91c325c977eef2c2fea6cbb7775f2e845c34baa0b8e4c4ca1ad0d32830605950"
+    },
+    {
+      "file": "worker/무-low-front.png",
+      "bytes": 105027,
+      "sha256": "30c496bedabda5913e84ee0efb3f90e791f9e6b4c23fe99f4680d8b1bf7febe8"
+    },
+    {
+      "file": "worker/무-low-side.png",
+      "bytes": 93873,
+      "sha256": "139069f35c66e8dc385ed44d80856d015d3fde1382099e028f37556b228144ff"
+    },
+    {
+      "file": "worker/무-low-wave.png",
+      "bytes": 103197,
+      "sha256": "5110ed01274a19d38ac519af6adfe59b452614d6af048e2e1cf2866fe8bc4900"
+    },
+    {
+      "file": "worker/병-high-front.png",
+      "bytes": 122628,
+      "sha256": "0206c2451faba94fd8e118a51368a02b4ef96f1850546b173498fbee9873266b"
+    },
+    {
+      "file": "worker/병-high-side.png",
+      "bytes": 108051,
+      "sha256": "41f2ee115c425b871692a5d405e20ae9107474ff86a3333ce15b840864948380"
+    },
+    {
+      "file": "worker/병-high-wave.png",
+      "bytes": 121976,
+      "sha256": "7d33d3810a2d8cb0339edb2a7eac2457cb530405653fb3a016d34d05fb236e57"
+    },
+    {
+      "file": "worker/병-low-front.png",
+      "bytes": 75780,
+      "sha256": "569a9e42e88ab3c7fa29f2fdcceba65870d17dcfe3afb2c467df5330430a6b03"
+    },
+    {
+      "file": "worker/병-low-side.png",
+      "bytes": 65732,
+      "sha256": "ca3c9a887678dc496716b0ad3be3e8f0f505b296cfa0fb6e51eb9f2b61641419"
+    },
+    {
+      "file": "worker/병-low-wave.png",
+      "bytes": 74347,
+      "sha256": "93a58c43ceea490d75dd25dcf0e841c59e70ae02df533bcf11cc3e06246e1549"
+    },
+    {
+      "file": "worker/을-high-front.png",
+      "bytes": 133883,
+      "sha256": "9a17bfc6cc21d88e479cf8c58f053c916b12418a77589b8638128632df59a6a0"
+    },
+    {
+      "file": "worker/을-high-side.png",
+      "bytes": 118705,
+      "sha256": "80be8e4988ebe6c089e98af7787fe2e5058c30d00d6fe430c3df6eb211d8d5d8"
+    },
+    {
+      "file": "worker/을-high-wave.png",
+      "bytes": 131946,
+      "sha256": "f25280912716fc35d3d7de0dcd0453c496804e7eb11edf4cdbd164a34250ede8"
+    },
+    {
+      "file": "worker/을-low-front.png",
+      "bytes": 84023,
+      "sha256": "b98034e7ef02bb4f2f58c67127bc755b54c6fa08a36d42211403e7124d983f86"
+    },
+    {
+      "file": "worker/을-low-side.png",
+      "bytes": 75474,
+      "sha256": "c71bf0e6231cab3b257d1a459cf1dd120e525265744ad644fdebe0931b0aee63"
+    },
+    {
+      "file": "worker/을-low-wave.png",
+      "bytes": 82680,
+      "sha256": "5592f3f878e9f4ffc9ae2e31954f9c7ae0f63c4406287c31b3ef48e974157f46"
+    },
+    {
+      "file": "worker/정-high-front.png",
+      "bytes": 168538,
+      "sha256": "83137ae75aaa69f026ba21708880211fcf1e4ee3ebe496ea3191479910c9c708"
+    },
+    {
+      "file": "worker/정-high-side.png",
+      "bytes": 155019,
+      "sha256": "52ed48a8a094bba79d855a69ce7e1bbca4e844cd6cfd3b10a5b3ed6e876aa7cc"
+    },
+    {
+      "file": "worker/정-high-wave.png",
+      "bytes": 165697,
+      "sha256": "0abca0e79187eb2c4eb633f104e7d0c7a4c81a3348e6fb08661b92dc09e8fc68"
+    },
+    {
+      "file": "worker/정-low-front.png",
+      "bytes": 109752,
+      "sha256": "edc7b1917d3b6cff6e42d3ec56d6e93a8d4c7cdfe75bdf11ce76fe709e99b24f"
+    },
+    {
+      "file": "worker/정-low-side.png",
+      "bytes": 100450,
+      "sha256": "eff791cba2f19b057f4da8293fee8174a064588b8a07821cec76c744ad76000b"
+    },
+    {
+      "file": "worker/정-low-wave.png",
+      "bytes": 107572,
+      "sha256": "77259376e1da25d169d9d6509d8079cff6fa75e7e31206af1d5512e03ed00628"
+    },
+    {
+      "file": "갑-front.png",
+      "bytes": 136703,
+      "sha256": "9d43cbf7bf32eaa8b8ce474a4928a05449ae8f0a5f48449a8cd1e1dfab9b3fb6"
+    },
+    {
+      "file": "갑-motion-a.png",
+      "bytes": 133076,
+      "sha256": "56cfcaa1cbb84ca2374da45381a4fad6c77293cc1f45c70e8e7ed6a721c8e599"
+    },
+    {
+      "file": "갑-motion-b.png",
+      "bytes": 133180,
+      "sha256": "9067ccbbb5fec90fdd432b17beaba1d78fffde87b6f0cb8cd0bdddb648ae7a78"
+    },
+    {
+      "file": "갑-side.png",
+      "bytes": 121635,
+      "sha256": "90b9fe48bcb58377a4ed11bb51be11c9290e5e7233223adc262565609a9e2731"
+    },
+    {
+      "file": "갑-wave.png",
+      "bytes": 132322,
+      "sha256": "aa76ea4af41265c56f7e301c1aa3c15548d649777e14945f5e0f9a51ff2eda84"
+    },
+    {
+      "file": "경-wave.png",
+      "bytes": 76321,
+      "sha256": "52b45286361ae9fc2d376051687b025064ea18870f4b2c8b1bea7f25ab1c0781"
+    },
+    {
+      "file": "계-front.png",
+      "bytes": 41615,
+      "sha256": "c5d40a74b04e75d2a884226bde57eb0357be7048c70c9db0aa2a201378c0cee4"
+    },
+    {
+      "file": "계-motion-a.png",
+      "bytes": 38098,
+      "sha256": "86358ecaf932ad32fd6a2a060aaaa7386973ad1d8cee3d406e856bbb571fa26b"
+    },
+    {
+      "file": "계-motion-b.png",
+      "bytes": 38009,
+      "sha256": "25efd7950ace83c610d643c9f5614f008924eb5d012ba7bdf09f97fd4993f474"
+    },
+    {
+      "file": "계-side.png",
+      "bytes": 31018,
+      "sha256": "0799ac90bf67dc9f0d4b3dccc8743130587ba9b67ce2b2473e25afb531cf93db"
+    },
+    {
+      "file": "계-wave.png",
+      "bytes": 36982,
+      "sha256": "855b76339ba41dbb42d535566fc817c87d99959b10579dc7144590d5bd342758"
+    },
+    {
+      "file": "기-wave.png",
+      "bytes": 99932,
+      "sha256": "340a2c902abda679d1c2b748a2f55fd67b69b56108ab1e82b013c8a1c7a0078b"
+    },
+    {
+      "file": "무-front.png",
+      "bytes": 109766,
+      "sha256": "cada88a4a9122d25eea540da54fa2a9d261ff43154fe8c2cc8e629293f962e43"
+    },
+    {
+      "file": "무-motion-a.png",
+      "bytes": 107146,
+      "sha256": "1f29c527ac3dbc55a0e91539619c82ac7941b52a6271451fd1eb3b7b7024f5f9"
+    },
+    {
+      "file": "무-motion-b.png",
+      "bytes": 107185,
+      "sha256": "d2711f88d9f1c656c5376be734816af8c33ea3782b17b3fdd5d2480dfe1a7e09"
+    },
+    {
+      "file": "무-side.png",
+      "bytes": 97273,
+      "sha256": "a739ae88f23cfb93d5b9b810aa04d1c8725ffee38f7b06430b5b3e28a516395c"
+    },
+    {
+      "file": "무-wave.png",
+      "bytes": 105300,
+      "sha256": "adcc6d596b226d0bd302bc2279096a4dc48d4dccf63a053b8071fd7062e5ce99"
+    },
+    {
+      "file": "병-front.png",
+      "bytes": 76779,
+      "sha256": "41b1980ced4e9099053c79e8be4ff7df5d046c9f82f99120086bf22eecafee32"
+    },
+    {
+      "file": "병-motion-a.png",
+      "bytes": 73569,
+      "sha256": "ad0342f4b2de7a03c42465910e0cb04bd8b1a3268db6217f964206c6dfcc4a6c"
+    },
+    {
+      "file": "병-motion-b.png",
+      "bytes": 71883,
+      "sha256": "bdd7e4da2c349e72c759c53513e85ad1231a0c7946ae019981d4db3219515858"
+    },
+    {
+      "file": "병-side.png",
+      "bytes": 66940,
+      "sha256": "d1c83d3724093bed6102d0c1f9fff46644aa4fe8a12060317f7351d234c1b718"
+    },
+    {
+      "file": "병-wave.png",
+      "bytes": 73711,
+      "sha256": "be5926ceaa18e6c06c7ee6e40b1bf8f2bb56c62f444633b9c18359f2176c884c"
+    },
+    {
+      "file": "신-wave.png",
+      "bytes": 80829,
+      "sha256": "129f0c3d5acae59f99fa53c03c3e662c90d70235a5e177216393da8107f8f924"
+    },
+    {
+      "file": "을-front.png",
+      "bytes": 86896,
+      "sha256": "73bbf580c5690f8f8f992afa2c83c86210b5528878ad84cf881b508ffc5fb83b"
+    },
+    {
+      "file": "을-motion-a.png",
+      "bytes": 86202,
+      "sha256": "7bd6b6774f9b7967d09235d3346eb5dd9ec862fe9b15b47f08b0d4cecd30e5ed"
+    },
+    {
+      "file": "을-motion-b.png",
+      "bytes": 86162,
+      "sha256": "6c629684f67aa1c146d27b124dae9fddb53ab239f3641d70d1472b22045d54ba"
+    },
+    {
+      "file": "을-side.png",
+      "bytes": 77276,
+      "sha256": "710571678792909d08ec849164dc5ba6e6ac4873071ce38d0d18fd840ac91897"
+    },
+    {
+      "file": "을-wave.png",
+      "bytes": 84740,
+      "sha256": "a35ba0b069fe6105dbc631e84c750156c8944256abac4a889bb8c5fff0259b62"
+    },
+    {
+      "file": "임-wave.png",
+      "bytes": 86360,
+      "sha256": "464928b28a19463bc20781778311b211190b4f88e0f48da305f14ee4b22e117c"
+    },
+    {
+      "file": "정-front.png",
+      "bytes": 118626,
+      "sha256": "57063de582dd82e2e792ce84a8d9860f43f09b190b5aa3f36fd37ed901ee1521"
+    },
+    {
+      "file": "정-motion-a.png",
+      "bytes": 116303,
+      "sha256": "e522aa4913c3b9c5e4c4deb122dfb4b5950534a40227462ab0df700fc0eb1664"
+    },
+    {
+      "file": "정-motion-b.png",
+      "bytes": 116223,
+      "sha256": "071e7e22170c38951eb7885df41c245a9791b989a8b89a730e43b4764753511d"
+    },
+    {
+      "file": "정-side.png",
+      "bytes": 108632,
+      "sha256": "ae841e43a2b32cffe9259ec12ead79bc2b8a445b4f77db03eaa612638ebdfe7f"
+    },
+    {
+      "file": "정-wave.png",
+      "bytes": 114506,
+      "sha256": "160f3883386406803fcdb1c86fa081c1ef820bcde5bede0a5e13aae6001b6367"
+    }
+  ],
+  "excludesOnly": "sha256-manifest.json at this directory root"
+}

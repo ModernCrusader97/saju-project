@@ -24,3 +24,9 @@
 [WebGL 캡처·보고서](qa/spirit-attached-effects-20261010/README.md), [가지와 짧은 덩굴 검증](qa/surface-vegetation-actual-b.md), [모래 검증](qa/surface-fissure-sand-20261010/README.md), [이슬 검증](qa/surface-sliding-dew/README.md), [수정한 불꽃 그림자와 기존 비교의 한계](qa/spirit-fire-shadow/README.md), [모래 법선 보정](qa/spirit-attached-effects-20261010/affine-normal-fix.md), [그래픽 복구 회귀](qa/spirit-attached-effects-20261010/context-recovery.md)를 함께 보존합니다. 검증된 구현을 먼저 private 후보로 커밋합니다. 실제 빌드 Worker의 앱 UI 검증과 owner-only 사이트 배포 상태는 후속 검증 기록에서 구분해 보고합니다.
 
 전체 몸을 감싸는 덩굴, 연속 물리 충돌, 모래 튕김·퇴적, 이슬 합쳐짐·분리 낙하, 壬 물보라는 이번 범위에 없습니다. 모래 비행은 seek 시 현재 부착점 포즈로 재계산합니다. 물리 모바일 GPU의 FPS와 hosted 로그인 화면은 아직 확인하지 않았습니다. 패션은 별도의 private 후보이며 이 표면 릴리스에 섞지 않습니다. 신규 호랑이 후보는 기존 12지 연결이라는 사용자 범위 정정에 따라 사용하지 않고 별도로 보존합니다. 기존 12지의 제작 코드·Git·v29/v30 참조 추적은 별도 작업이며 한 보존 묶음의 검색 결과를 전체 원본 부재로 확대하지 않습니다.
+
+실제 투명 Canvas에서 확인한 이슬 흰 실루엣은 [최종 출력 보정](qa/spirit-attached-effects-20261010/alpha-compositing.md)으로 해결했습니다. 불꽃·그림자 픽셀을 보존하고 옥의 offscreen 굴절 처리와 원본 재질 광학 값도 유지합니다. 집중 검사 9조건이 통과했으며 전체 Worker UI 결과는 별도로 기록합니다.
+
+기존 12지 코드 모델은 이미 연결되어 있음을 [실제 이력·runtime 감사](qa/zodiac-pet-assets/runtime-audit/README.md)와 192회 CPU 대조로 확인했습니다. 선택은 기존 일지 기준입니다. 별도 최신 제작 모델과 용 C·돼지 과거 해시의 관계는 미확인으로 남기며, 새 호랑이로 대신 연결하지 않았습니다.
+
+최종 실제 Worker UI 17조건과 같은 빌드의 은하 입장 8조건이 모두 통과했습니다. [최종 UI 증거](qa/spirit-attached-effects-20261010/worker/README.md)에 정확한 Worker·harness SHA, 44 PNG, native 검증과 미실행 범위를 고정했습니다. 이는 기존 소유자 전용 Site 반영 전 검증이며 실제 배포 결과는 Native version/deployment 조회로 확인합니다.

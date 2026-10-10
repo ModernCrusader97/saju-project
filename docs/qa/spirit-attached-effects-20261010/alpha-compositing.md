@@ -32,9 +32,25 @@ Independent review resolved the Important whole-context blending issue and
 found no further Critical/Important issue. Its CPU callback probe checked both
 targets, repeat draws, prior callback and program-key handling. Root type/build
 and targeted lint passed; the sole lint warning is the existing img warning.
-Final actual Worker optical and lifecycle validation is recorded in the final
-Worker evidence when complete. These preserved experiments alone are not a
-deployment approval.
+The [compatible focused probe](alpha-compositing/compatible-alpha-fire-water-jade-recovery/)
+passed 9/9 checks on Worker
+`bb96468fe99e2888ec2a01e18935673b60e37571d402b5997aee8ac3fad4082f`
+with exact harness
+`d134d54acc4931f0e89c46c93bfa382b225ca3d64b436d1b83bbe213adcf90b8`.
+Its 20 PNGs include actual desktop/mobile UI and jade recovery. Water native
+center is premultiplied `[109,114,113,143]`, canvas PNG `[194,203,202,143]`;
+selected and fresh 72-frame all-native trajectories match with zero changed
+pixels. High fire's entire native pixel hash and PNG are byte-identical to the
+[retained original reference](alpha-compositing/original-premultiplied-fire-reference/),
+including partial-alpha orange fire and ground pixels. Low fire/ground retain
+the same blend conventions. Both jade qualities record offscreen BackSide
+premultiplication false and final canvas true, original base-map/fields and
+animated uSajuSeconds after restore. Both qualities restore, retap, return to
+idle and unmount with zero native errors. Browser errors and outbound requests
+are zero. Root directly inspected the corrected desktop UI and fire image.
+
+The complete UI release matrix is separate final Worker evidence. These PROBE
+units do not alone constitute the full release gate.
 
 Pinned Three r186 uses material flags in blend/program selection and calls the
 material callback before drawing: [renderer source](https://github.com/mrdoob/three.js/blob/r186/src/renderers/WebGLRenderer.js),
