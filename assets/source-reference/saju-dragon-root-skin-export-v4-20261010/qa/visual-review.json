@@ -1,0 +1,13 @@
+{
+  "status": "PASS_ACTUAL_V3_V4_RENDER_REVIEW",
+  "inspected_images": [
+    "previews/V3-baseline-glb-reimport-threequarter.png",
+    "previews/V4-glb-reimport-threequarter.png"
+  ],
+  "both_real_official_glb_reimport_renders": true,
+  "pixels_identical": true,
+  "eye_face_limbs_material_and_silhouette_unchanged": true,
+  "new_front_side_movie_rendered": false,
+  "earlier_v3_front_quarter_side_review_preserved": true,
+  "scope": "Hierarchy-only correction; native source and accepted V3 appearance are unchanged. Full six-second runtime world-vertex results verified at all 145 frames."
+}

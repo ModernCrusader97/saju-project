@@ -1,0 +1,16 @@
+{
+  "status": "UNCHANGED_EDITABLE_V3_SOURCE",
+  "repository": "ModernCrusader97/saju-project",
+  "source_commit": "44a9b0ab5bfe7cb6bc19398797ca6c1d0e2aa803",
+  "source_branch": "art/dragon-material-boundary-v3-20261010-joseph",
+  "repository_asset_folder": "assets/source-reference/saju-dragon-material-boundary-v3-20261010",
+  "blend_name": "SaJu_Dragon_Approved_Candidate_v3.blend",
+  "blend_bytes": 16684534,
+  "blend_sha256": "c18682ca0f32973b815abd0185c049c6ed9ce005eee6388a2549388bd66bc3bc",
+  "input_glb_sha256": "56023b8a0299b1d203d892530f5004e2f4833cda56ed298d4be97bfbb63992c6",
+  "private_zip_baseline_paths": [
+    "baseline/SourceV3.blend",
+    "baseline/SourceV3.glb"
+  ],
+  "source_not_modified": true
+}
