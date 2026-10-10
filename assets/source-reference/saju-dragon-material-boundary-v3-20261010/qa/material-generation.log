@@ -1,0 +1,47 @@
+00:01.844  blend            | Read blend: "D:\Codex\Results\SaJuDragonApproved20261010-Joseph\final-delivery-v2\candidate\SaJu_Dragon_Approved_Candidate_v2.blend"
+UV_READY 212004
+D:\Codex\Work\SaJuDragonMaterialBoundaryV3-20261010-Joseph\authoring\repair_material_boundary-v03.py:84: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  position_mat=bpy.data.materials.new('TEMP_Bake_RestPosition');position_mat.use_nodes=True;pt=position_mat.node_tree;pt.nodes.clear()
+Info: Baking map saved to internal image, save it externally or pack it
+REST_POSITION_PIXELS_READY 9380172
+CONTINUOUS_BODY_COLOR_PIXELS 0 9380172
+CONTINUOUS_BODY_COLOR_PIXELS 2097152 9380172
+CONTINUOUS_BODY_COLOR_PIXELS 4194304 9380172
+CONTINUOUS_BODY_COLOR_PIXELS 6291456 9380172
+CONTINUOUS_BODY_COLOR_PIXELS 8388608 9380172
+BODY_TEXTURE_BAKED D:\Codex\Results\SaJuDragonMaterialBoundaryV3-20261010-Joseph\material-v03\textures\Dragon_V3_Body_BaseColor.png
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+04:54:47 | INFO: Starting glTF 2.0 export
+04:54:47 | INFO: Extracting primitive: Horn_Main_-1_Mesh.001
+04:54:47 | INFO: Primitives created: 1
+04:54:47 | INFO: Extracting primitive: Belly_Fold_00_Mesh.001
+04:54:47 | INFO: Primitives created: 1
+04:54:47 | INFO: Extracting primitive: Surface_Eye_Soft_Lid_-1_Mesh.001
+04:54:47 | INFO: Primitives created: 1
+04:54:47 | INFO: Extracting primitive: Dragon_Continuous_Skin_Mesh.001
+04:54:47 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+04:54:47 | INFO: Primitives created: 2
+04:54:47 | INFO: Extracting primitive: Surface_Ear_Ivory_Inset_-1_Mesh.001
+04:54:47 | INFO: Primitives created: 1
+04:54:47 | INFO: Extracting primitive: Surface_Eye_White_-1_Mesh.001
+04:54:47 | INFO: Primitives created: 1
+04:54:48 | INFO: Extracting primitive: Surface_Eye_Brown_-1_Mesh.001
+04:54:48 | INFO: Primitives created: 1
+04:54:48 | INFO: Extracting primitive: Sphere.024
+04:54:48 | INFO: Primitives created: 1
+04:54:48 | INFO: Extracting primitive: Surface_Nostril_-1_Mesh.001
+04:54:48 | INFO: Primitives created: 1
+04:54:48 | INFO: Extracting primitive: Surface_Gentle_Closed_Smile_Mesh.001
+04:54:48 | INFO: Primitives created: 1
+04:54:48 | INFO: Finished glTF 2.0 export in 1.2866103649139404 s
+
+Info: Saved as "SaJu_Dragon_Approved_Candidate_v3.blend"
+{"status": "MATERIAL_ONLY_V3_GENERATED", "source_v2_blend_sha256": "0e4cd443c67a180bfff6befd7b2d5b67dca70ad298f0ecea5e83ba1a22396938", "geometry_normals_weights_objects_exact_unchanged": true, "verified_mesh_objects": 121, "original_BodyTint_exact_unchanged": true, "preserved_face_region": "All vertices z >= 2.73, plus lower front face x < -0.24 / y < -0.33 / z >= 2.54", "preserved_head_face_count": 18382, "repaired_body_face_count": 50983, "pose_145_frames_exact_unchanged": true, "pose_matrix_sha256": "8de85c1ead97d652eb1b701beb146af2592c6935593f10d8d030e66173ca165f", "studio_camera_lights_exact_unchanged": true, "uv_layer": "BoundaryUV", "texture_pixels": [4096, 4096], "texture_sha256": "ac78763cfaf4d3b514860e8d0a92d388d0a03e68e2889f34f3eacc3a3c9e5751", "changes": "Only body material/UV: continuous rest-position contour and rounded paw color exclusions, baked into embedded PBR base-color PNG. Face retains exact original corner-color interpolation; all original BodyTint data retained.", "remaining_scope": "222646 triangles and 10 Khronos hierarchy warnings are existing separate items; no mobile optimization or hierarchy modification."}
+02:06.078  render           | Saved: 'D:\Codex\Results\SaJuDragonMaterialBoundaryV3-20261010-Joseph\material-v03\previews\front.png'
+02:32.656  render           | Saved: 'D:\Codex\Results\SaJuDragonMaterialBoundaryV3-20261010-Joseph\material-v03\previews\threequarter.png'
+02:42.297  render           | Saved: 'D:\Codex\Results\SaJuDragonMaterialBoundaryV3-20261010-Joseph\material-v03\previews\side.png'
+V3_ACTUAL_STILLS_READY
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

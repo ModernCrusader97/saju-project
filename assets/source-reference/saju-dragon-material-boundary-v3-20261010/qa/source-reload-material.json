@@ -1,0 +1,19 @@
+{
+  "status": "PASS_SAVED_SOURCE_RELOAD_FACE_FIELD_AND_PACKED_BYTES",
+  "blend_sha256": "c18682ca0f32973b815abd0185c049c6ed9ce005eee6388a2549388bd66bc3bc",
+  "original_BodyTint_exact_v2": true,
+  "original_BodyTint_sha256": "c8fac5a6097447f5fd8667f9b8e87eabe3dcb3a4dc5759aa2f9aacec484df100",
+  "unrelated_material_parameters_exact_v2": true,
+  "head_and_body_PBR_parameters_exact_v2": true,
+  "face_corner_colors_exact_v2": true,
+  "head_color_max_error": 0,
+  "preserved_head_face_count": 18382,
+  "packed_texture_sha256": "ac78763cfaf4d3b514860e8d0a92d388d0a03e68e2889f34f3eacc3a3c9e5751",
+  "packed_generator_sha256": "ca35bb95b1a1043561b7f932e9e8d5a51edca0a7f806f79249acd7374784b4c2",
+  "approved_reference_packed_bytes_verified": true,
+  "uv_layers": [
+    "BoundaryUV"
+  ],
+  "base_color_texture_embedded": true,
+  "temporary_bake_images_removed": true
+}

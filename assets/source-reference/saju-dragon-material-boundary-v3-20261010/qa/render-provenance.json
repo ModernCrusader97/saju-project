@@ -1,0 +1,228 @@
+{
+  "status": "EXACT_MODEL_CAMERA_REAL_STILL_BYTES_RECORDED",
+  "model": {
+    "blend_file": "SaJu_Dragon_Approved_Candidate_v3.blend",
+    "blend_sha256": "c18682ca0f32973b815abd0185c049c6ed9ce005eee6388a2549388bd66bc3bc",
+    "glb_file": "SaJu_Dragon_Approved_Candidate_v3.glb",
+    "glb_sha256": "56023b8a0299b1d203d892530f5004e2f4833cda56ed298d4be97bfbb63992c6",
+    "generator_sha256": "ca35bb95b1a1043561b7f932e9e8d5a51edca0a7f806f79249acd7374784b4c2",
+    "approved_reference_sha256": "6184555091c80769d6553ae40641dbb44eb6dcc859dd0b8591b7887cc1502e58"
+  },
+  "views": [
+    {
+      "view": "front",
+      "actual_render": true,
+      "render_source": "Saved native Blender geometry; Cycles CPU",
+      "frame": 0,
+      "file_name": "front.png",
+      "bytes": 875644,
+      "sha256": "b8f4e33fef936786e3bb36dbf91de2124f134058d754221dd35d12e08b4bf79f",
+      "width": 900,
+      "height": 900,
+      "model": {
+        "blend_file": "SaJu_Dragon_Approved_Candidate_v3.blend",
+        "blend_sha256": "c18682ca0f32973b815abd0185c049c6ed9ce005eee6388a2549388bd66bc3bc",
+        "glb_file": "SaJu_Dragon_Approved_Candidate_v3.glb",
+        "glb_sha256": "56023b8a0299b1d203d892530f5004e2f4833cda56ed298d4be97bfbb63992c6",
+        "generator_sha256": "ca35bb95b1a1043561b7f932e9e8d5a51edca0a7f806f79249acd7374784b4c2",
+        "approved_reference_sha256": "6184555091c80769d6553ae40641dbb44eb6dcc859dd0b8591b7887cc1502e58"
+      },
+      "camera": {
+        "object": "Camera_Front",
+        "type": "ORTHO",
+        "orthographic_scale": 5.849999904632568,
+        "location": [
+          0.0,
+          -11.0,
+          2.180000066757202
+        ],
+        "euler_radians": [
+          1.5698872804641724,
+          6.231171134629676e-10,
+          -0.013635518960654736
+        ],
+        "world_matrix": [
+          [
+            0.9999070167541504,
+            1.2395556041155942e-05,
+            -0.013635090552270412,
+            0.0
+          ],
+          [
+            -0.01363509614020586,
+            0.0009089616942219436,
+            -0.999906599521637,
+            -11.0
+          ],
+          [
+            -6.231171134629676e-10,
+            0.9999995827674866,
+            0.00090904621174559,
+            2.180000066757202
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens_mm": 50.0,
+        "clip_start": 0.10000000149011612,
+        "clip_end": 1000.0
+      },
+      "studio_floor_visible": false,
+      "blender_version": "5.2.1 LTS",
+      "render_samples": 48,
+      "color_transform": "AgX",
+      "color_look": "AgX - Medium High Contrast"
+    },
+    {
+      "view": "threequarter",
+      "actual_render": true,
+      "render_source": "Saved native Blender geometry; Cycles CPU",
+      "frame": 0,
+      "file_name": "threequarter.png",
+      "bytes": 910460,
+      "sha256": "973c4f126caed32fefdf2ab1e0be34338718190322b331f6daab145fa8de6474",
+      "width": 900,
+      "height": 900,
+      "model": {
+        "blend_file": "SaJu_Dragon_Approved_Candidate_v3.blend",
+        "blend_sha256": "c18682ca0f32973b815abd0185c049c6ed9ce005eee6388a2549388bd66bc3bc",
+        "glb_file": "SaJu_Dragon_Approved_Candidate_v3.glb",
+        "glb_sha256": "56023b8a0299b1d203d892530f5004e2f4833cda56ed298d4be97bfbb63992c6",
+        "generator_sha256": "ca35bb95b1a1043561b7f932e9e8d5a51edca0a7f806f79249acd7374784b4c2",
+        "approved_reference_sha256": "6184555091c80769d6553ae40641dbb44eb6dcc859dd0b8591b7887cc1502e58"
+      },
+      "camera": {
+        "object": "Camera_ThreeQuarter",
+        "type": "ORTHO",
+        "orthographic_scale": 5.849999904632568,
+        "location": [
+          6.0,
+          -10.0,
+          5.599999904632568
+        ],
+        "euler_radians": [
+          1.2829573154449463,
+          -1.9346337865044916e-09,
+          0.5293172001838684
+        ],
+        "world_matrix": [
+          [
+            0.863152027130127,
+            -0.1433439403772354,
+            0.48417049646377563,
+            6.0
+          ],
+          [
+            0.5049440860748291,
+            0.24503229558467865,
+            -0.8276416063308716,
+            -10.0
+          ],
+          [
+            1.9346337865044916e-09,
+            0.9588595628738403,
+            0.2838808000087738,
+            5.599999904632568
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens_mm": 50.0,
+        "clip_start": 0.10000000149011612,
+        "clip_end": 1000.0
+      },
+      "studio_floor_visible": true,
+      "blender_version": "5.2.1 LTS",
+      "render_samples": 48,
+      "color_transform": "AgX",
+      "color_look": "AgX - Medium High Contrast"
+    },
+    {
+      "view": "side",
+      "actual_render": true,
+      "render_source": "Saved native Blender geometry; Cycles CPU",
+      "frame": 0,
+      "file_name": "side.png",
+      "bytes": 784487,
+      "sha256": "73f9214122a902bb12d225b2a6651adc1e0156d7536e050e509a2c33a94b539d",
+      "width": 900,
+      "height": 900,
+      "model": {
+        "blend_file": "SaJu_Dragon_Approved_Candidate_v3.blend",
+        "blend_sha256": "c18682ca0f32973b815abd0185c049c6ed9ce005eee6388a2549388bd66bc3bc",
+        "glb_file": "SaJu_Dragon_Approved_Candidate_v3.glb",
+        "glb_sha256": "56023b8a0299b1d203d892530f5004e2f4833cda56ed298d4be97bfbb63992c6",
+        "generator_sha256": "ca35bb95b1a1043561b7f932e9e8d5a51edca0a7f806f79249acd7374784b4c2",
+        "approved_reference_sha256": "6184555091c80769d6553ae40641dbb44eb6dcc859dd0b8591b7887cc1502e58"
+      },
+      "camera": {
+        "object": "Camera_Side",
+        "type": "ORTHO",
+        "orthographic_scale": 5.300000190734863,
+        "location": [
+          10.0,
+          -0.05000000074505806,
+          2.299999952316284
+        ],
+        "euler_radians": [
+          1.557599425315857,
+          9.316531190961541e-08,
+          1.5657203197479248
+        ],
+        "world_matrix": [
+          [
+            0.005075985100120306,
+            -0.013196348212659359,
+            0.9999000430107117,
+            10.0
+          ],
+          [
+            0.9999871253967285,
+            6.7078486608807e-05,
+            -0.005075541790574789,
+            -0.05000000074505806
+          ],
+          [
+            -9.316531190961541e-08,
+            0.9999129176139832,
+            0.013196518644690514,
+            2.299999952316284
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens_mm": 50.0,
+        "clip_start": 0.10000000149011612,
+        "clip_end": 1000.0
+      },
+      "studio_floor_visible": false,
+      "blender_version": "5.2.1 LTS",
+      "render_samples": 48,
+      "color_transform": "AgX",
+      "color_look": "AgX - Medium High Contrast"
+    }
+  ],
+  "runtime_animation": {
+    "name": "Idle_Loop",
+    "source_fps": 24,
+    "keyframe_endpoints": [
+      0,
+      144
+    ],
+    "seconds": 6.0,
+    "new_video_rendered": false,
+    "existing_v2_video_preserved": true
+  }
+}

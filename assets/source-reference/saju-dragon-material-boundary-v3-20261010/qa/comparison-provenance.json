@@ -1,0 +1,32 @@
+{
+  "status": "REAL_RENDER_SAME_CAMERA_BEFORE_AFTER",
+  "views": [
+    {
+      "view": "front",
+      "file": "V2-left_V3-right_front.png",
+      "layout": "V2 LEFT; V3 RIGHT",
+      "source_before_sha256": "8e020eeabec8c7503659d594db35cf7d7408a90b4cbcc06fbcbd33cbfe30bdc6",
+      "source_after_sha256": "b8f4e33fef936786e3bb36dbf91de2124f134058d754221dd35d12e08b4bf79f",
+      "comparison_sha256": "70538da811c168c19e4a3ff6f6514cfbf88f394e838d9f3243cbf83012b65fac",
+      "source_pixels_preserved": true
+    },
+    {
+      "view": "threequarter",
+      "file": "V2-left_V3-right_threequarter.png",
+      "layout": "V2 LEFT; V3 RIGHT",
+      "source_before_sha256": "146c74a8ee633c4bf0bfec6fc0b8beb67057baf984600184e85200fc5bb98d0b",
+      "source_after_sha256": "973c4f126caed32fefdf2ab1e0be34338718190322b331f6daab145fa8de6474",
+      "comparison_sha256": "aad19b8cd8efb6675f2aa9e2fdf57173bfec7f0ccd62bbce05dfcb9c2e3250e8",
+      "source_pixels_preserved": true
+    },
+    {
+      "view": "side",
+      "file": "V2-left_V3-right_side.png",
+      "layout": "V2 LEFT; V3 RIGHT",
+      "source_before_sha256": "ea4bb3adcc869b7d7a823c67603ed6924cc0033e2752c4944db860ffa8cd8586",
+      "source_after_sha256": "73f9214122a902bb12d225b2a6651adc1e0156d7536e050e509a2c33a94b539d",
+      "comparison_sha256": "8bb81e3eb4273887e37c0c4b463bce065733713d1cdae3b7625f3218f91192f2",
+      "source_pixels_preserved": true
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "status": "PASS_EXACT_V2_CAMERA_RENDER_SETTINGS_AND_MATERIAL_VISUAL_REVIEW",
+  "cameras_and_render_settings_exact_v2": true,
+  "native_views": [
+    "front",
+    "threequarter",
+    "side"
+  ],
+  "glb_import_render_inspected": true,
+  "actual_comparisons": "comparisons/V2-left_V3-right_*.png",
+  "color_boundary_observation": "Wide fuzzy body and paw-boundary paint replaced by crisp continuous ivory/teal contours; original facial corner colors preserved",
+  "geometry_unchanged": true,
+  "studio_lights_exact_v2": true,
+  "no_new_animation_or_mobile_claim": true,
+  "current_glb_sha256": "56023b8a0299b1d203d892530f5004e2f4833cda56ed298d4be97bfbb63992c6",
+  "current_blend_sha256": "c18682ca0f32973b815abd0185c049c6ed9ce005eee6388a2549388bd66bc3bc"
+}

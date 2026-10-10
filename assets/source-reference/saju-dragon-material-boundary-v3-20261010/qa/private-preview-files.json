@@ -1,0 +1,75 @@
+{
+  "status": "PASS_NEW_PRIVATE_DRIVE_PREVIEWS",
+  "glb_sha256": "56023b8a0299b1d203d892530f5004e2f4833cda56ed298d4be97bfbb63992c6",
+  "blend_sha256": "c18682ca0f32973b815abd0185c049c6ed9ce005eee6388a2549388bd66bc3bc",
+  "images": [
+    {
+      "kind": "actual_render",
+      "view": "threequarter",
+      "local_path": "D:\\Codex\\Results\\SaJuDragonMaterialBoundaryV3-20261010-Joseph\\material-v03\\previews\\threequarter.png",
+      "drive": {
+        "id": "1prr0G4ymaAoMzZZlQjB2_nlqiV0GtbJv",
+        "bytes": 910460,
+        "owner_only": true,
+        "url": "https://drive.google.com/file/d/1prr0G4ymaAoMzZZlQjB2_nlqiV0GtbJv/view?usp=drivesdk"
+      }
+    },
+    {
+      "kind": "before_after",
+      "view": "threequarter",
+      "local_path": "D:\\Codex\\Results\\SaJuDragonMaterialBoundaryV3-20261010-Joseph\\comparisons\\V2-left_V3-right_threequarter.png",
+      "drive": {
+        "id": "1l9IDS1vQ_LgzxnwRFO6ZxHHgP7Ro9Hsa",
+        "bytes": 945422,
+        "owner_only": true,
+        "url": "https://drive.google.com/file/d/1l9IDS1vQ_LgzxnwRFO6ZxHHgP7Ro9Hsa/view?usp=drivesdk"
+      }
+    },
+    {
+      "kind": "actual_render",
+      "view": "front",
+      "local_path": "D:\\Codex\\Results\\SaJuDragonMaterialBoundaryV3-20261010-Joseph\\material-v03\\previews\\front.png",
+      "drive": {
+        "id": "1KP8EWKmfXSeipJmqRxNfoaggtjqv2iY-",
+        "bytes": 875644,
+        "owner_only": true,
+        "url": "https://drive.google.com/file/d/1KP8EWKmfXSeipJmqRxNfoaggtjqv2iY-/view?usp=drivesdk"
+      }
+    },
+    {
+      "kind": "before_after",
+      "view": "front",
+      "local_path": "D:\\Codex\\Results\\SaJuDragonMaterialBoundaryV3-20261010-Joseph\\comparisons\\V2-left_V3-right_front.png",
+      "drive": {
+        "id": "1apEVXY4QA32qsvh03b2nPXLKvU04Y8mR",
+        "bytes": 911068,
+        "owner_only": true,
+        "url": "https://drive.google.com/file/d/1apEVXY4QA32qsvh03b2nPXLKvU04Y8mR/view?usp=drivesdk"
+      }
+    },
+    {
+      "kind": "actual_render",
+      "view": "side",
+      "local_path": "D:\\Codex\\Results\\SaJuDragonMaterialBoundaryV3-20261010-Joseph\\material-v03\\previews\\side.png",
+      "drive": {
+        "id": "1T-RiFVaBCfEovhgHTwatcBCW29Jak5oB",
+        "bytes": 784487,
+        "owner_only": true,
+        "url": "https://drive.google.com/file/d/1T-RiFVaBCfEovhgHTwatcBCW29Jak5oB/view?usp=drivesdk"
+      }
+    },
+    {
+      "kind": "before_after",
+      "view": "side",
+      "local_path": "D:\\Codex\\Results\\SaJuDragonMaterialBoundaryV3-20261010-Joseph\\comparisons\\V2-left_V3-right_side.png",
+      "drive": {
+        "id": "1bh1o7hncv5avLsHs-AxckM9_dvVEQB1-",
+        "bytes": 672712,
+        "owner_only": true,
+        "url": "https://drive.google.com/file/d/1bh1o7hncv5avLsHs-AxckM9_dvVEQB1-/view?usp=drivesdk"
+      }
+    }
+  ],
+  "library_preview_ids": null,
+  "library_note": "Verified new owner-only Drive files and local paths supplied; no Library preview IDs were issued."
+}
