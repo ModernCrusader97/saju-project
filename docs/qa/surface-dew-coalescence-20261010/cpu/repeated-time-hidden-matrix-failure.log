@@ -1,0 +1,405 @@
+✔ original GLB neutral pose, face transforms and geometry remain exact at t=0 and reset (15.089181ms)
+✔ all ten stem idles are bounded, distinct, neutral-arm and keep the original floor planted (91.399431ms)
+✔ sole subset matches the full posed mesh across the complete allowed roll/scale/wave range (63.164804ms)
+✔ greeting has two small waves, opens its blink and returns exactly to the moving idle (23.50905ms)
+✔ active tap retriggers coalesce without any pose jump, including while paused (4.365289ms)
+✔ raised arm and the complete reaction stay planted, with a smooth return under user yaw (36.349059ms)
+✔ 15 and 60 Hz plus one large time step produce the same pose and bounded queued wave (5.347831ms)
+✔ absolute time repeats are stable, finite extremes remain finite and backwards seek cancels reaction (3.420872ms)
+✔ dispose restores captured facial transforms and neutral root, then every method is inert (3.449514ms)
+✔ geometry queries and allocations are confined to setup, with cached sole updates below the attachment budget (60.37593ms)
+✔ bounded real morph preserves welded seams and has no collapsed triangles, rest-normal reversal or new adjacent folds (3147.28704ms)
+(node:112508) [THREE_CJS_DEPRECATED] DeprecationWarning: `require("three")` is deprecated and will be removed.
+Replace `const THREE = require("three")` with `import * as THREE from "three"`.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✔ same bound owner preserves later pangaea preference and view on restore (157.710053ms)
+✔ same bound owner preserves later archipelago preference and view on restore (51.918846ms)
+✔ same bound owner preserves later tectonic preference and view on restore (45.680298ms)
+✔ same bound owner preserves later bands preference and view on restore (44.882155ms)
+✔ same bound owner preserves later vortices preference and view on restore (40.922363ms)
+✔ unbound legacy map cannot use a current session mask (35.107086ms)
+✔ restore excludes a different owner key: {"name":"다른 소유자"} (33.650117ms)
+✔ restore excludes a different owner key: {"minute":"31"} (44.42909ms)
+✔ a different map id returns null and does not inherit the owner mask (32.857153ms)
+✔ map owner/pillars must still match the saved binding (45.267551ms)
+✔ near drops transfer volume and become one larger rendered bead (27.367885ms)
+✔ threshold drop detaches and keeps its world launch while the body moves (6.150279ms)
+✔ round released bead starts outside its tilted source plane (5.323615ms)
+✔ one bounded draw has deterministic seek, dead slots and new condensation (14.42766ms)
+✔ sparse surface routes remain distinct instead of duplicating bead pairs (13.078719ms)
+✔ exclusion overlap includes bead radius under transformed fashion masks (0.346338ms)
+✔ 戊 low: actual triangle fissure origins, original B geometry and bounded instances (311.06275ms)
+✔ 戊 high: actual triangle fissure origins, original B geometry and bounded instances (290.899261ms)
+✔ attached source follows paused rigid rotations with inverse-transpose normals (250.973414ms)
+✔ world-gravity flight remains vertical under nonuniform presentation; body-crossing particles hide (266.370923ms)
+✔ one owned instance mesh/geometry/material releases once, source stays owned by caller (220.782865ms)
+✔ Gentle_wave_pose keeps rest crack identity and refits collision to actual posed vertices (331.394424ms)
+✔ invalid time, missing rest binding, active morph and singular transforms fail explicitly (513.811015ms)
+✔ fashion exclusion hides a source batch and restores unchanged seeds when removed (216.380976ms)
+✔ real-body CPU update has finite bounded budget (227.221039ms)
+✔ dew contact actually slides downward rather than changing only bead radius (32.545204ms)
+✔ attached beads stay outside their actual face plane through growth and travel (19.336747ms)
+✔ absolute time repeats after reverse seek and reset with a visible death and rebirth (37.124553ms)
+✔ quality levels have fixed geometry budgets and isolated transparent material (4.506961ms)
+✔ world normal and plane clearance survive paused nested nonuniform rotation (2.5564ms)
+✔ local accessory masking hides nearby beads and restores the same identities exactly (4.423079ms)
+✔ real approved GLB shows cross-triangle contact travel and preserves source attributes (647.339785ms)
+✔ explicit morph opt-in reattaches actual B arm beads to the posed triangles (670.148115ms)
+✔ actual GLB full cycles remain continuous with bounded quality update work (451.809634ms)
+✔ disposal releases only owned instance buffers geometry material exactly once (2.145139ms)
+✔ unsupported deformation and nonfinite values fail without changing the source (10.361409ms)
+✔ real B: closed welded UV topology and cross-triangle downward paths (24.236555ms)
+✔ interpolation preserves its target and arc-length endpoint identity (1.025886ms)
+✔ open boundaries and separate close surfaces stop rather than project to another part (0.471702ms)
+✔ explicit wave support follows actual preserved posed vertices and geometric normals (2.373193ms)
+✔ accessory exclusions use local model regions and exact stable clear/restore (0.613711ms)
+✔ write actual B topology/path evidence (5.4705ms)
+{"glbSHA256":"0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84","originalAttributeHashes":{"position":"f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b","normal":"80706bee870329a0829113e63ed178f0a904029265da2c96c69ad50f9b1f9cec","uv":"f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c","index":"934286d3bdd9361657e390c41762923871cec85a48a7d9775b362aee02dc7830"},"ioBoundary":"CPU uses real GLB with image I/O placeholders; browser QA loads actual textures"}
+✔ 甲 low: approved material, original B geometry and supported effects (439.906499ms)
+✔ 乙 low: approved material, original B geometry and supported effects (235.737486ms)
+✔ 丙 low: approved material, original B geometry and supported effects (78.022765ms)
+✔ 丁 low: approved material, original B geometry and supported effects (68.308897ms)
+✔ 戊 low: approved material, original B geometry and supported effects (323.286329ms)
+✔ 己 low: approved material, original B geometry and supported effects (88.481437ms)
+✔ 庚 low: approved material, original B geometry and supported effects (49.012243ms)
+✔ 辛 low: approved material, original B geometry and supported effects (53.776335ms)
+✔ 壬 low: approved material, original B geometry and supported effects (49.808691ms)
+✖ 癸 low: approved material, original B geometry and supported effects (209.486033ms)
+✔ 甲 high: approved material, original B geometry and supported effects (337.517252ms)
+✔ 乙 high: approved material, original B geometry and supported effects (206.103332ms)
+✔ 丙 high: approved material, original B geometry and supported effects (75.92155ms)
+✔ 丁 high: approved material, original B geometry and supported effects (167.543338ms)
+✔ 戊 high: approved material, original B geometry and supported effects (303.547039ms)
+✔ 己 high: approved material, original B geometry and supported effects (22.732538ms)
+✔ 庚 high: approved material, original B geometry and supported effects (53.303221ms)
+✔ 辛 high: approved material, original B geometry and supported effects (53.708586ms)
+✔ 壬 high: approved material, original B geometry and supported effects (64.905872ms)
+✖ 癸 high: approved material, original B geometry and supported effects (230.28997ms)
+✔ real B neutral morph has exact triangle attachment and rejects active morphs (36.268637ms)
+✔ rest binding includes fixed depth and restores prior attributes exactly once (22.153167ms)
+✔ 甲 leaves meet transformed branch tip centers under nonuniform presentation (657.355726ms)
+✔ jade reject releases the real GLB and fulfilled textures once (4.78968ms)
+✔ jade wrong-size releases the real GLB and fulfilled textures once (4.639559ms)
+✔ all twelve branches expose missing authored sources without claiming asset approval (191.052273ms)
+✔ procedural fallback owns resources and stops updates after idempotent disposal (51.179926ms)
+✔ checksum verified GLB keeps its original pose, geometry and material while fitting the pet bounds (68.499806ms)
+✔ separate parses have independent owned resources and disposing one cannot damage the other (39.321071ms)
+✔ a mismatched GLB hash falls back explicitly before allocating a model (46.984778ms)
+✔ pre-aborted loads reject without creating a fallback or requesting assets (28.686803ms)
+✔ an abort while GLTF parsing completes disposes the late model and never returns a fallback (35.773714ms)
+✔ the shipped manifest scopes missing runtime GLBs and separates historical references from current approval (1.424521ms)
+ℹ tests 86
+ℹ suites 0
+ℹ pass 84
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 14489.442289
+
+✖ failing tests:
+
+test at scripts/qa/ten-stem-materials.mjs:94:3
+✖ 癸 low: approved material, original B geometry and supported effects (209.486033ms)
+  AssertionError [ERR_ASSERTION]: Absolute time must be deterministic across frame rates
+  + actual - expected
+  ... Skipped lines
+  
+    [
+      [
+        0.0059980666264891624,
+        0.0012108987430110574,
+        -0.0015115742571651936,
+  ...
+        1,
+  +     0,
+  +     0,
+        -0,
+        0,
+        0,
+  +     -0,
+        0,
+        0,
+        0,
+        -0,
+  -     0,
+        -0,
+        0,
+  -     -0,
+  -     0,
+        -0.21424555778503418,
+        1.6906801462173462,
+        -0.4819223880767822,
+        1,
+        -0.00777163403108716,
+  ...
+        1,
+  -     0,
+  -     0,
+        -0,
+        0,
+        0,
+  -     -0,
+        0,
+        0,
+        0,
+        -0,
+  +     0,
+        -0,
+        0,
+  +     -0,
+  +     0,
+        -0.18834829330444336,
+        -0.46450090408325195,
+        -0.059215083718299866,
+        1,
+        0,
+  
+      at TestContext.<anonymous> (file:///workspace/saju-spirit-dew-coalescence-20261010/scripts/qa/ten-stem-materials.mjs:127:14)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [
+      [
+         0.0059980666264891624,  0.0012108987430110574,  -0.0015115742571651936, 0,
+         0.0013923856895416975,   0.001718672807328403,    0.006901917979121208, 0,
+         0.0007624401478096843, -0.0030275708995759487,   0.0006000930443406105, 0,
+            0.7361676096916199,     0.7098230719566345,     0.20715023577213287, 1,
+          0.007552070077508688,  0.0018753975164145231,  -0.0024730174336582422, 0,
+          0.001969167497009039,  0.0025477830786257982,    0.007945515215396881, 0,
+         0.0013660476543009281,  -0.004179953597486019,    0.001001777476631105, 0,
+            0.7434787154197693,     0.7142173051834106,     0.21663202345371246, 1,
+         0.0014725985238328576,  -0.003860172815620899,    0.007731366902589798, 0,
+         -0.004693164490163326,     0.0081737469881773,   0.0049749575555324554, 0,
+         -0.003688291646540165, -0.0019520875066518784,   -0.000272141071036458, 0,
+            0.4533369243144989,     0.9111435413360596,     0.11350341141223907, 1,
+          0.001275378162972629, -0.0033431921619921923,    0.006695929914712906, 0,
+         -0.004034348763525486,   0.007026334758847952,    0.004276583902537823, 0,
+        -0.0032183020375669003, -0.0017033381154760718, -0.00023746283841319382, 0,
+            0.4524531960487366,     0.9141178727149963,     0.11335267871618271, 1,
+                            -0,                     -0,                      -0, 0,
+                            -0,                      0,                      -0, 0,
+                             0,                      0,                      -0, 0,
+            0.6848652362823486,     1.0307055711746216,    0.008282952941954136, 1,
+                            -0,                     -0,                      -0, 0,
+                            -0,                      0,                      -0, 0,
+                             0,                      0,                      -0, 0,
+            0.6848652362823486,     1.0307055711746216,    0.008282952941954136, 1,
+         0.0011920452816411853,   0.001003577490337193,    0.013711913488805294, 0,
+        ... 668 more items
+      ]
+    ],
+    expected: [
+      [
+         0.0059980666264891624,  0.0012108987430110574,  -0.0015115742571651936, 0,
+         0.0013923856895416975,   0.001718672807328403,    0.006901917979121208, 0,
+         0.0007624401478096843, -0.0030275708995759487,   0.0006000930443406105, 0,
+            0.7361676096916199,     0.7098230719566345,     0.20715023577213287, 1,
+          0.007552070077508688,  0.0018753975164145231,  -0.0024730174336582422, 0,
+          0.001969167497009039,  0.0025477830786257982,    0.007945515215396881, 0,
+         0.0013660476543009281,  -0.004179953597486019,    0.001001777476631105, 0,
+            0.7434787154197693,     0.7142173051834106,     0.21663202345371246, 1,
+         0.0014725985238328576,  -0.003860172815620899,    0.007731366902589798, 0,
+         -0.004693164490163326,     0.0081737469881773,   0.0049749575555324554, 0,
+         -0.003688291646540165, -0.0019520875066518784,   -0.000272141071036458, 0,
+            0.4533369243144989,     0.9111435413360596,     0.11350341141223907, 1,
+          0.001275378162972629, -0.0033431921619921923,    0.006695929914712906, 0,
+         -0.004034348763525486,   0.007026334758847952,    0.004276583902537823, 0,
+        -0.0032183020375669003, -0.0017033381154760718, -0.00023746283841319382, 0,
+            0.4524531960487366,     0.9141178727149963,     0.11335267871618271, 1,
+                            -0,                     -0,                      -0, 0,
+                            -0,                      0,                      -0, 0,
+                             0,                      0,                      -0, 0,
+            0.6848652362823486,     1.0307055711746216,    0.008282952941954136, 1,
+                            -0,                     -0,                      -0, 0,
+                            -0,                      0,                      -0, 0,
+                             0,                      0,                      -0, 0,
+            0.6848652362823486,     1.0307055711746216,    0.008282952941954136, 1,
+         0.0011920452816411853,   0.001003577490337193,    0.013711913488805294, 0,
+        ... 668 more items
+      ]
+    ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/ten-stem-materials.mjs:94:3
+✖ 癸 high: approved material, original B geometry and supported effects (230.28997ms)
+  AssertionError [ERR_ASSERTION]: Absolute time must be deterministic across frame rates
+  + actual - expected
+  ... Skipped lines
+  
+    [
+      [
+        0.0059980666264891624,
+        0.0012108987430110574,
+        -0.0015115742571651936,
+  ...
+        1,
+  +     0,
+  +     0,
+        -0,
+        0,
+        0,
+  +     -0,
+        0,
+        0,
+        0,
+        -0,
+  -     0,
+        -0,
+        0,
+  -     -0,
+  -     0,
+        -0.21424555778503418,
+        1.6906801462173462,
+        -0.4819223880767822,
+        1,
+        -0.00777163403108716,
+  ...
+        1,
+  -     0,
+  -     0,
+        -0,
+        0,
+        0,
+  -     -0,
+        0,
+        0,
+        0,
+        -0,
+  +     0,
+        -0,
+        0,
+  +     -0,
+  +     0,
+        -0.18834829330444336,
+        -0.46450090408325195,
+        -0.059215083718299866,
+        1,
+        0,
+  ...
+        1,
+  -     -0,
+  -     -0,
+  -     -0,
+        0,
+  +     0,
+        -0,
+        0,
+  +     0,
+        -0,
+        0,
+        0,
+        0,
+        -0,
+  +     -0,
+        0,
+        0.2723334729671478,
+        0.08610934019088745,
+        -0.670036792755127,
+        1,
+  ...
+        1,
+  +     -0,
+        0,
+  -     0,
+        -0,
+        0,
+        0,
+  -     -0,
+        0,
+        0,
+        0,
+  +     0,
+        -0,
+        -0,
+        0,
+        0.3201085329055786,
+        -1.4291926622390747,
+  ...
+        0,
+  -     -0,
+        0,
+        0,
+        0,
+  +     0,
+        -0,
+  -     -0,
+        0,
+  +     0,
+        0.15991157293319702,
+        1.3389030694961548,
+        -0.5241823196411133,
+        1
+      ]
+  
+      at TestContext.<anonymous> (file:///workspace/saju-spirit-dew-coalescence-20261010/scripts/qa/ten-stem-materials.mjs:127:14)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [
+      [
+         0.0059980666264891624,  0.0012108987430110574,  -0.0015115742571651936, 0,
+         0.0013923856895416975,   0.001718672807328403,    0.006901917979121208, 0,
+         0.0007624401478096843, -0.0030275708995759487,   0.0006000930443406105, 0,
+            0.7361676096916199,     0.7098230719566345,     0.20715023577213287, 1,
+          0.007552070077508688,  0.0018753975164145231,  -0.0024730174336582422, 0,
+          0.001969167497009039,  0.0025477830786257982,    0.007945515215396881, 0,
+         0.0013660476543009281,  -0.004179953597486019,    0.001001777476631105, 0,
+            0.7434787154197693,     0.7142173051834106,     0.21663202345371246, 1,
+         0.0014725985238328576,  -0.003860172815620899,    0.007731366902589798, 0,
+         -0.004693164490163326,     0.0081737469881773,   0.0049749575555324554, 0,
+         -0.003688291646540165, -0.0019520875066518784,   -0.000272141071036458, 0,
+            0.4533369243144989,     0.9111435413360596,     0.11350341141223907, 1,
+          0.001275378162972629, -0.0033431921619921923,    0.006695929914712906, 0,
+         -0.004034348763525486,   0.007026334758847952,    0.004276583902537823, 0,
+        -0.0032183020375669003, -0.0017033381154760718, -0.00023746283841319382, 0,
+            0.4524531960487366,     0.9141178727149963,     0.11335267871618271, 1,
+                            -0,                     -0,                      -0, 0,
+                            -0,                      0,                      -0, 0,
+                             0,                      0,                      -0, 0,
+            0.6848652362823486,     1.0307055711746216,    0.008282952941954136, 1,
+                            -0,                     -0,                      -0, 0,
+                            -0,                      0,                      -0, 0,
+                             0,                      0,                      -0, 0,
+            0.6848652362823486,     1.0307055711746216,    0.008282952941954136, 1,
+                             0,                     -0,                      -0, 0,
+        ... 1180 more items
+      ]
+    ],
+    expected: [
+      [
+         0.0059980666264891624,  0.0012108987430110574,  -0.0015115742571651936, 0,
+         0.0013923856895416975,   0.001718672807328403,    0.006901917979121208, 0,
+         0.0007624401478096843, -0.0030275708995759487,   0.0006000930443406105, 0,
+            0.7361676096916199,     0.7098230719566345,     0.20715023577213287, 1,
+          0.007552070077508688,  0.0018753975164145231,  -0.0024730174336582422, 0,
+          0.001969167497009039,  0.0025477830786257982,    0.007945515215396881, 0,
+         0.0013660476543009281,  -0.004179953597486019,    0.001001777476631105, 0,
+            0.7434787154197693,     0.7142173051834106,     0.21663202345371246, 1,
+         0.0014725985238328576,  -0.003860172815620899,    0.007731366902589798, 0,
+         -0.004693164490163326,     0.0081737469881773,   0.0049749575555324554, 0,
+         -0.003688291646540165, -0.0019520875066518784,   -0.000272141071036458, 0,
+            0.4533369243144989,     0.9111435413360596,     0.11350341141223907, 1,
+          0.001275378162972629, -0.0033431921619921923,    0.006695929914712906, 0,
+         -0.004034348763525486,   0.007026334758847952,    0.004276583902537823, 0,
+        -0.0032183020375669003, -0.0017033381154760718, -0.00023746283841319382, 0,
+            0.4524531960487366,     0.9141178727149963,     0.11335267871618271, 1,
+                            -0,                     -0,                      -0, 0,
+                            -0,                      0,                      -0, 0,
+                             0,                      0,                      -0, 0,
+            0.6848652362823486,     1.0307055711746216,    0.008282952941954136, 1,
+                            -0,                     -0,                      -0, 0,
+                            -0,                      0,                      -0, 0,
+                             0,                      0,                      -0, 0,
+            0.6848652362823486,     1.0307055711746216,    0.008282952941954136, 1,
+                             0,                     -0,                      -0, 0,
+        ... 1180 more items
+      ]
+    ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

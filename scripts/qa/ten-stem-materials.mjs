@@ -77,7 +77,7 @@ let referenceBody;
 reference.scene.traverse(object => { if (object.isMesh && object.geometry.getAttribute('position').count === 33207) referenceBody = object; });
 const expectedHashes = attributeHashes(referenceBody.geometry);
 const pairs = [['갑자', '甲'], ['을축', '乙'], ['병인', '丙'], ['정묘', '丁'], ['무진', '戊'], ['기사', '己'], ['경오', '庚'], ['신미', '辛'], ['임신', '壬'], ['계유', '癸']];
-const expectedModes = ['normal-rooted-forked-woody-branches', 'connected-triangle-short-creeping-vines', 'triangle-emitted-original-fire', 'triangle-emitted-original-fire', 'triangle-fissure-gravity-sand', 'base-material-only', 'base-material-only', 'base-material-only', 'base-material-only', 'triangle-sliding-condensation'];
+const expectedModes = ['normal-rooted-forked-woody-branches', 'connected-triangle-short-creeping-vines', 'triangle-emitted-original-fire', 'triangle-emitted-original-fire', 'triangle-fissure-gravity-sand', 'base-material-only', 'base-material-only', 'base-material-only', 'base-material-only', 'triangle-sliding-coalescing-dew'];
 const snapshotEffects = group => {
   const result = [];
   group.traverse(object => {

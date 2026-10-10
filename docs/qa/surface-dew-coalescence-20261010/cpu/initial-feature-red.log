@@ -1,0 +1,104 @@
+✖ near drops transfer volume and become one larger rendered bead (15.536641ms)
+✖ threshold drop detaches and keeps its world launch while the body moves (6.77587ms)
+✖ one bounded draw has deterministic seek, dead slots and new condensation (2.964258ms)
+✖ exclusion overlap includes bead radius under transformed fashion masks (0.297607ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 0
+ℹ fail 4
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 153.537077
+
+✖ failing tests:
+
+test at scripts/qa/surface-dew-coalescence.mjs:53:1
+✖ near drops transfer volume and become one larger rendered bead (15.536641ms)
+  AssertionError [ERR_ASSERTION]: The feature must merge actual nearby drops.
+  
+  false !== true
+  
+      at frame (file:///workspace/saju-spirit-dew-coalescence-20261010/scripts/qa/surface-dew-coalescence.mjs:46:10)
+      at TestContext.<anonymous> (file:///workspace/saju-spirit-dew-coalescence-20261010/scripts/qa/surface-dew-coalescence.mjs:54:37)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/surface-dew-coalescence.mjs:68:1
+✖ threshold drop detaches and keeps its world launch while the body moves (6.77587ms)
+  AssertionError [ERR_ASSERTION]: The feature must merge actual nearby drops.
+  
+  false !== true
+  
+      at frame (file:///workspace/saju-spirit-dew-coalescence-20261010/scripts/qa/surface-dew-coalescence.mjs:46:10)
+      at TestContext.<anonymous> (file:///workspace/saju-spirit-dew-coalescence-20261010/scripts/qa/surface-dew-coalescence.mjs:69:38)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/surface-dew-coalescence.mjs:83:1
+✖ one bounded draw has deterministic seek, dead slots and new condensation (2.964258ms)
+  AssertionError [ERR_ASSERTION]: The feature must merge actual nearby drops.
+  
+  false !== true
+  
+      at frame (file:///workspace/saju-spirit-dew-coalescence-20261010/scripts/qa/surface-dew-coalescence.mjs:46:10)
+      at TestContext.<anonymous> (file:///workspace/saju-spirit-dew-coalescence-20261010/scripts/qa/surface-dew-coalescence.mjs:85:40)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/surface-dew-coalescence.mjs:100:1
+✖ exclusion overlap includes bead radius under transformed fashion masks (0.297607ms)
+  AssertionError [ERR_ASSERTION]: A large merged bead must not intersect the mask boundary.
+  
+  false !== true
+  
+      at TestContext.<anonymous> (file:///workspace/saju-spirit-dew-coalescence-20261010/scripts/qa/surface-dew-coalescence.mjs:104:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+

@@ -1,0 +1,166 @@
+{
+  "task": "癸 dew coalescence/detached flight/regrowth read-only review",
+  "workspace": "/workspace/saju-spirit-dew-coalescence-20261010",
+  "baseline": "9ec0150bf7f595f28541d91355bf64143bd137e8",
+  "artifact": "/tmp/saju-dew-coalescence-review-20261010.json",
+  "sourceHashes": {
+    "lib/planet/surface-sliding-dew.ts": "536cc61b5b25edb014cd1514aabfc81ea2698f13dec3538e068d8a00f00d6805",
+    "lib/planet/surface-attachment-exclusions.ts": "1b071d4ded3bbb6dbd029b585f4aa7354a7e96a3f8f59d7eb40e0552e35f583f"
+  },
+  "severityCounts": {
+    "Critical": 0,
+    "Important": 0,
+    "Minor": 0
+  },
+  "assessment": "Ready within the authorized original B-body scope; no unresolved review findings. Sparse-route identities and cached-launch hidden-slot byte determinism are corrected. Expanded all-related CPU validation and browser/GPU verification remain with the parent task.",
+  "findings": [
+    {
+      "id": "DEW-001",
+      "severity": "Minor",
+      "file": "lib/planet/surface-sliding-dew.ts",
+      "line": 109,
+      "title": "Sparse route pools reuse the same DewSource in multiple pair slots",
+      "evidence": "When rest.length is smaller than remaining, floor(i * rest.length / remaining) repeats early source indices. PlaneGeometry(2, .0451, 3, 3), detailScale .5, quality high yields 5 pair entries but only 1 unique frame/source identity; height .0453 yields 14 pairs but only 5 unique identities.",
+      "impact": "The promised fewer-route fallback stacks several pairs at identical positions, drops valid later routes, and aliases launch caches and diagnostic slot states. Full approved B-body pools do not trigger the issue.",
+      "recommendation": "Compute count = Math.min(remaining, rest.length), then iterate i < count and index Math.floor(i * rest.length / count). Preserve one source object per pair.",
+      "status": "resolved",
+      "resolvedAtLine": 110,
+      "resolution": "restCount = min(remaining, rest.length) is now both iteration limit and stride denominator. restCount=0 skips the loop safely; when nonzero, rest.length/restCount >= 1 so selected indices are strictly increasing and in bounds. The new sparse-route regression asserts nontrivial sparse fallback and distinct pair frame/source identities.",
+      "verification": "Current QA report: 5 pairs / 5 unique identities. Independent final-runtime sparse probes: low quality 1/1, 5/5, 20/20; high quality 5/5, 14/14, 36/36 at heights .0451, .0453, .046."
+    },
+    {
+      "id": "DEW-002",
+      "severity": "Minor",
+      "status": "resolved",
+      "file": "lib/planet/surface-sliding-dew.ts",
+      "line": 259,
+      "title": "Cached launch reuse left hidden slots dependent on the prior route quaternion",
+      "evidence": "Parent-reported RED repeated-time assertion differed only in signed-zero basis bytes. The current regression copies the entire Float32 instance buffer before repeating original B plus original motion at time 2.25 for both quality levels, so the comparison cannot alias the live array.",
+      "resolution": "Both hidden flight slots now use an explicit zero-scale local matrix with the current position. makeScale(0,0,0) writes canonical basis entries and bypasses stale dummy quaternion state; setMatrixAt copies the active first-slot matrix before the local scratch matrix is reused for the hidden second slot.",
+      "verification": "Current-hash feature QA report contains actual-b-repeated-time-exact-matrices and success true (7/7 feature tests). No full suite or GPU rerun by reviewer."
+    }
+  ],
+  "verification": {
+    "command": "node scripts/qa/surface-dew-coalescence.mjs",
+    "passed": 7,
+    "failed": 0,
+    "exitCode": 0,
+    "reviewProbes": {
+      "affineFlight": {
+        "worldPositionError": 4.4015332601880225e-8,
+        "worldVolumeError": 1.0324494546719797e-14,
+        "releasePlaneClearance": 0.0008394641661002202
+      },
+      "cacheEviction": {
+        "oldCycleColdSeekRebasesToCurrentPose": true,
+        "pausedFlightPositionError": 2.60770320892334e-8,
+        "resetRebases": true
+      },
+      "sparsePoolsBeforeFix": [
+        {
+          "planeHeight": 0.0451,
+          "pairs": 5,
+          "uniqueSources": 1
+        },
+        {
+          "planeHeight": 0.0453,
+          "pairs": 14,
+          "uniqueSources": 5
+        },
+        {
+          "planeHeight": 0.046,
+          "pairs": 36,
+          "uniqueSources": 32
+        }
+      ],
+      "sparsePoolsAfterFix": [
+        {
+          "quality": "low",
+          "planeHeight": 0.0451,
+          "pairs": 1,
+          "uniqueSources": 1
+        },
+        {
+          "quality": "low",
+          "planeHeight": 0.0453,
+          "pairs": 5,
+          "uniqueSources": 5
+        },
+        {
+          "quality": "low",
+          "planeHeight": 0.046,
+          "pairs": 20,
+          "uniqueSources": 20
+        },
+        {
+          "quality": "high",
+          "planeHeight": 0.0451,
+          "pairs": 5,
+          "uniqueSources": 5
+        },
+        {
+          "quality": "high",
+          "planeHeight": 0.0453,
+          "pairs": 14,
+          "uniqueSources": 14
+        },
+        {
+          "quality": "high",
+          "planeHeight": 0.046,
+          "pairs": 36,
+          "uniqueSources": 36
+        }
+      ]
+    },
+    "sourceBodyPreservation": "Existing approved-GLB tests verified unchanged POSITION/NORMAL/UV/index bytes and original arm morph attachment/restoration.",
+    "boundaries": "No product edits, commit, push, deployment, browser/GPU execution, or secret access. CPU checks generated only existing ignored QA outputs.",
+    "previousReviewerRun": {
+      "passed": 16,
+      "failed": 0,
+      "exitCode": 0,
+      "sourceHashes": {
+        "lib/planet/surface-sliding-dew.ts": "e6c5b3d0aa54a2367e91030a0da431116466d74c8b0d02dbd539363736bcdfc5",
+        "lib/planet/surface-attachment-exclusions.ts": "1b071d4ded3bbb6dbd029b585f4aa7354a7e96a3f8f59d7eb40e0552e35f583f"
+      }
+    },
+    "runOwner": "parent; current report inspected by reviewer",
+    "finalEvidence": "Reviewer checked the canonical hidden-slot matrix correction and byte-copy regression, verified exact final source hashes against the successful seven-test feature report, and found no new coupling or cleanup issue. Expanded all-related CPU rerun remains with the parent; previous probes were not repeated.",
+    "previousParentRun": {
+      "passed": 17,
+      "failed": 0,
+      "sourceHashes": {
+        "lib/planet/surface-sliding-dew.ts": "f21ec2347e4c4436c7f2f0c5ecbdd89864b75bece01cbc42b85a46c9db2cbf3a",
+        "lib/planet/surface-attachment-exclusions.ts": "1b071d4ded3bbb6dbd029b585f4aa7354a7e96a3f8f59d7eb40e0552e35f583f"
+      }
+    }
+  },
+  "remainingBlockers": [],
+  "previousReviewedSourceHashes": {
+    "lib/planet/surface-sliding-dew.ts": "e6c5b3d0aa54a2367e91030a0da431116466d74c8b0d02dbd539363736bcdfc5",
+    "lib/planet/surface-attachment-exclusions.ts": "1b071d4ded3bbb6dbd029b585f4aa7354a7e96a3f8f59d7eb40e0552e35f583f"
+  },
+  "resolvedSeverityCounts": {
+    "Critical": 0,
+    "Important": 0,
+    "Minor": 2
+  },
+  "reviewedRevisions": [
+    {
+      "sourceHashes": {
+        "lib/planet/surface-sliding-dew.ts": "e6c5b3d0aa54a2367e91030a0da431116466d74c8b0d02dbd539363736bcdfc5",
+        "lib/planet/surface-attachment-exclusions.ts": "1b071d4ded3bbb6dbd029b585f4aa7354a7e96a3f8f59d7eb40e0552e35f583f"
+      },
+      "reviewerSuitePasses": 16
+    },
+    {
+      "sourceHashes": {
+        "lib/planet/surface-sliding-dew.ts": "f21ec2347e4c4436c7f2f0c5ecbdd89864b75bece01cbc42b85a46c9db2cbf3a",
+        "lib/planet/surface-attachment-exclusions.ts": "1b071d4ded3bbb6dbd029b585f4aa7354a7e96a3f8f59d7eb40e0552e35f583f"
+      },
+      "parentCombinedSuitePasses": 17
+    }
+  ],
+  "pendingValidation": [
+    "Parent is completing the expanded all-related CPU rerun."
+  ]
+}

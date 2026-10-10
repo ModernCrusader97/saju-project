@@ -1,0 +1,49 @@
+{
+  "sourceHash": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+  "sourceBytes": 4293332,
+  "implementation": "surface-sliding-dew",
+  "tests": [
+    "downward-surface-slide",
+    "absolute-time-death-rebirth",
+    "quality-budget-and-material",
+    "local-mask-stable-restoration",
+    "full-cycle-continuity-and-cpu-budget",
+    "idempotent-owned-disposal",
+    "invalid-inputs"
+  ],
+  "measurements": {
+    "flatSurfaceSlide": 0.3834703415632248,
+    "rebirthsOver42Seconds": 3,
+    "budgets": {
+      "low": 48,
+      "high": 80,
+      "lowTrianglesPerBead": 80,
+      "highTrianglesPerBead": 168
+    },
+    "localMask": {
+      "hiddenCount": 1,
+      "unchangedCount": 79
+    },
+    "cpuUpdateBudget": {
+      "low": {
+        "beads": 48,
+        "frames": 480,
+        "seconds": 16,
+        "constructionMs": 170.75683800000002,
+        "meanUpdateMs": 0.07718964583333397,
+        "p95UpdateMs": 0.08524499999998625,
+        "maximumVisibleStep": 0.024619469200010395
+      },
+      "high": {
+        "beads": 80,
+        "frames": 480,
+        "seconds": 16,
+        "constructionMs": 154.70649099999991,
+        "meanUpdateMs": 0.11417696875000113,
+        "p95UpdateMs": 0.12554499999987456,
+        "maximumVisibleStep": 0.02494400849510002
+      }
+    }
+  },
+  "success": false
+}

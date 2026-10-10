@@ -1,0 +1,140 @@
+✔ original GLB neutral pose, face transforms and geometry remain exact at t=0 and reset (13.847059ms)
+✔ all ten stem idles are bounded, distinct, neutral-arm and keep the original floor planted (80.497479ms)
+✔ sole subset matches the full posed mesh across the complete allowed roll/scale/wave range (58.966891ms)
+✔ greeting has two small waves, opens its blink and returns exactly to the moving idle (17.575003ms)
+✔ active tap retriggers coalesce without any pose jump, including while paused (3.639763ms)
+✔ raised arm and the complete reaction stay planted, with a smooth return under user yaw (35.97802ms)
+✔ 15 and 60 Hz plus one large time step produce the same pose and bounded queued wave (5.297728ms)
+✔ absolute time repeats are stable, finite extremes remain finite and backwards seek cancels reaction (2.754544ms)
+✔ dispose restores captured facial transforms and neutral root, then every method is inert (3.684339ms)
+✔ geometry queries and allocations are confined to setup, with cached sole updates below the attachment budget (60.648199ms)
+✔ bounded real morph preserves welded seams and has no collapsed triangles, rest-normal reversal or new adjacent folds (3515.478632ms)
+(node:112182) [THREE_CJS_DEPRECATED] DeprecationWarning: `require("three")` is deprecated and will be removed.
+Replace `const THREE = require("three")` with `import * as THREE from "three"`.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✔ same bound owner preserves later pangaea preference and view on restore (160.056315ms)
+✔ same bound owner preserves later archipelago preference and view on restore (53.425305ms)
+✔ same bound owner preserves later tectonic preference and view on restore (46.015557ms)
+✔ same bound owner preserves later bands preference and view on restore (34.339595ms)
+✔ same bound owner preserves later vortices preference and view on restore (36.745126ms)
+✔ unbound legacy map cannot use a current session mask (35.978932ms)
+✔ restore excludes a different owner key: {"name":"다른 소유자"} (29.385702ms)
+✔ restore excludes a different owner key: {"minute":"31"} (34.406974ms)
+✔ a different map id returns null and does not inherit the owner mask (34.910943ms)
+✔ map owner/pillars must still match the saved binding (32.280432ms)
+✔ near drops transfer volume and become one larger rendered bead (24.37139ms)
+✔ threshold drop detaches and keeps its world launch while the body moves (5.683304ms)
+✔ round released bead starts outside its tilted source plane (4.826926ms)
+✔ one bounded draw has deterministic seek, dead slots and new condensation (10.374281ms)
+✔ sparse surface routes remain distinct instead of duplicating bead pairs (11.534244ms)
+✔ exclusion overlap includes bead radius under transformed fashion masks (0.32011ms)
+✔ 戊 low: actual triangle fissure origins, original B geometry and bounded instances (307.051713ms)
+✔ 戊 high: actual triangle fissure origins, original B geometry and bounded instances (290.581833ms)
+✔ attached source follows paused rigid rotations with inverse-transpose normals (236.653458ms)
+✔ world-gravity flight remains vertical under nonuniform presentation; body-crossing particles hide (269.252028ms)
+✔ one owned instance mesh/geometry/material releases once, source stays owned by caller (227.164513ms)
+✔ Gentle_wave_pose keeps rest crack identity and refits collision to actual posed vertices (344.145802ms)
+✔ invalid time, missing rest binding, active morph and singular transforms fail explicitly (522.654011ms)
+✔ fashion exclusion hides a source batch and restores unchanged seeds when removed (221.916002ms)
+✔ real-body CPU update has finite bounded budget (232.826331ms)
+✔ dew contact actually slides downward rather than changing only bead radius (33.659587ms)
+✔ attached beads stay outside their actual face plane through growth and travel (18.165079ms)
+✔ absolute time repeats after reverse seek and reset with a visible death and rebirth (41.517723ms)
+✔ quality levels have fixed geometry budgets and isolated transparent material (4.289267ms)
+✔ world normal and plane clearance survive paused nested nonuniform rotation (2.641098ms)
+✔ local accessory masking hides nearby beads and restores the same identities exactly (4.712759ms)
+✔ real approved GLB shows cross-triangle contact travel and preserves source attributes (671.066946ms)
+✔ explicit morph opt-in reattaches actual B arm beads to the posed triangles (677.126553ms)
+✔ actual GLB full cycles remain continuous with bounded quality update work (537.945513ms)
+✔ disposal releases only owned instance buffers geometry material exactly once (2.596442ms)
+✔ unsupported deformation and nonfinite values fail without changing the source (3.176894ms)
+✔ real B: closed welded UV topology and cross-triangle downward paths (22.973398ms)
+✔ interpolation preserves its target and arc-length endpoint identity (1.012797ms)
+✔ open boundaries and separate close surfaces stop rather than project to another part (0.49049ms)
+✔ explicit wave support follows actual preserved posed vertices and geometric normals (2.248371ms)
+✔ accessory exclusions use local model regions and exact stable clear/restore (0.479424ms)
+✔ write actual B topology/path evidence (16.550869ms)
+{"glbSHA256":"0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84","originalAttributeHashes":{"position":"f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b","normal":"80706bee870329a0829113e63ed178f0a904029265da2c96c69ad50f9b1f9cec","uv":"f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c","index":"934286d3bdd9361657e390c41762923871cec85a48a7d9775b362aee02dc7830"},"ioBoundary":"CPU uses real GLB with image I/O placeholders; browser QA loads actual textures"}
+✔ 甲 low: approved material, original B geometry and supported effects (450.706755ms)
+✔ 乙 low: approved material, original B geometry and supported effects (232.023313ms)
+✔ 丙 low: approved material, original B geometry and supported effects (76.311226ms)
+✔ 丁 low: approved material, original B geometry and supported effects (68.949578ms)
+✔ 戊 low: approved material, original B geometry and supported effects (317.407989ms)
+✔ 己 low: approved material, original B geometry and supported effects (73.352742ms)
+✔ 庚 low: approved material, original B geometry and supported effects (75.538591ms)
+✔ 辛 low: approved material, original B geometry and supported effects (77.820561ms)
+✔ 壬 low: approved material, original B geometry and supported effects (52.848348ms)
+✖ 癸 low: approved material, original B geometry and supported effects (203.386249ms)
+✔ 甲 high: approved material, original B geometry and supported effects (359.621965ms)
+✔ 乙 high: approved material, original B geometry and supported effects (199.316625ms)
+✔ 丙 high: approved material, original B geometry and supported effects (88.018634ms)
+✔ 丁 high: approved material, original B geometry and supported effects (65.814235ms)
+✔ 戊 high: approved material, original B geometry and supported effects (494.755735ms)
+✔ 己 high: approved material, original B geometry and supported effects (32.186975ms)
+✔ 庚 high: approved material, original B geometry and supported effects (72.788714ms)
+✔ 辛 high: approved material, original B geometry and supported effects (52.205565ms)
+✔ 壬 high: approved material, original B geometry and supported effects (55.367818ms)
+✖ 癸 high: approved material, original B geometry and supported effects (225.404055ms)
+✔ real B neutral morph has exact triangle attachment and rejects active morphs (38.964606ms)
+✔ rest binding includes fixed depth and restores prior attributes exactly once (22.877327ms)
+✔ 甲 leaves meet transformed branch tip centers under nonuniform presentation (406.103967ms)
+✔ jade reject releases the real GLB and fulfilled textures once (7.179951ms)
+✔ jade wrong-size releases the real GLB and fulfilled textures once (17.436509ms)
+✔ all twelve branches expose missing authored sources without claiming asset approval (190.034747ms)
+✔ procedural fallback owns resources and stops updates after idempotent disposal (51.352302ms)
+✔ checksum verified GLB keeps its original pose, geometry and material while fitting the pet bounds (61.435866ms)
+✔ separate parses have independent owned resources and disposing one cannot damage the other (34.965324ms)
+✔ a mismatched GLB hash falls back explicitly before allocating a model (37.011889ms)
+✔ pre-aborted loads reject without creating a fallback or requesting assets (25.345841ms)
+✔ an abort while GLTF parsing completes disposes the late model and never returns a fallback (27.554144ms)
+✔ the shipped manifest scopes missing runtime GLBs and separates historical references from current approval (1.508504ms)
+ℹ tests 86
+ℹ suites 0
+ℹ pass 84
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 15122.09599
+
+✖ failing tests:
+
+test at scripts/qa/ten-stem-materials.mjs:94:3
+✖ 癸 low: approved material, original B geometry and supported effects (203.386249ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'triangle-sliding-coalescing-dew'
+  - 'triangle-sliding-condensation'
+                        ^
+  
+      at TestContext.<anonymous> (file:///workspace/saju-spirit-dew-coalescence-20261010/scripts/qa/ten-stem-materials.mjs:121:14)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'triangle-sliding-coalescing-dew',
+    expected: 'triangle-sliding-condensation',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/ten-stem-materials.mjs:94:3
+✖ 癸 high: approved material, original B geometry and supported effects (225.404055ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'triangle-sliding-coalescing-dew'
+  - 'triangle-sliding-condensation'
+                        ^
+  
+      at TestContext.<anonymous> (file:///workspace/saju-spirit-dew-coalescence-20261010/scripts/qa/ten-stem-materials.mjs:121:14)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'triangle-sliding-coalescing-dew',
+    expected: 'triangle-sliding-condensation',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "timestampUTC": "2026-10-10T05:14:38.512840+00:00",
+  "baseline": "9ec0150bf7f595f28541d91355bf64143bd137e8",
+  "candidateBranch": "feature/spirit-dew-coalescence-20261010",
+  "testedWorkingTreeSourceHashes": {
+    "lib/planet/surface-sliding-dew.ts": "536cc61b5b25edb014cd1514aabfc81ea2698f13dec3538e068d8a00f00d6805",
+    "lib/planet/surface-attachment-exclusions.ts": "1b071d4ded3bbb6dbd029b585f4aa7354a7e96a3f8f59d7eb40e0552e35f583f"
+  },
+  "cpu": {
+    "tests": 87,
+    "passed": 87,
+    "failed": 0,
+    "dewTests": 18,
+    "featureTests": 7,
+    "originalGLB": true
+  },
+  "typecheck": "PASS",
+  "targetedLint": "PASS",
+  "build": "PASS",
+  "diffWhitespace": "PASS",
+  "builtServerSHA256": "755626b3e4c0daa15576228569bf4165f3bc8216ef308e5d7fde8e24a4e5d1ed",
+  "webgl": {
+    "beforePNG": 22,
+    "afterPNG": 30,
+    "matchedNativeFrames": 22,
+    "unchangedFirePixelAndPNG": 2,
+    "independentFashionOverlapSamples": 8,
+    "observedOverlaps": 0
+  },
+  "productionWorker": {
+    "checks": 19,
+    "cases": 12,
+    "images": 44,
+    "syntheticOnly": true
+  },
+  "review": "No unresolved findings; both Minor findings fixed and reviewed at final source hashes.",
+  "limits": [
+    "No continuous full-body/ground collision physics.",
+    "Fixed paired routes, not arbitrary all-pairs fluid interaction.",
+    "Cold seeks use supplied pose instead of unavailable history.",
+    "No physical desktop/mobile GPU measurements or hosted logged-in QA.",
+    "Whole-repository lint not represented as clean."
+  ],
+  "publication": {
+    "additionalDeployment": false,
+    "mainMerge": false,
+    "PR": false,
+    "authenticationOrPermissionChange": false,
+    "animalFabrication": false,
+    "siteVersionUnchanged": 31
+  },
+  "sourceVersionNote": "Native QA reports record baseline HEAD 9ec0150 plus exact modified source hashes before the documentation commit; final pushed candidate includes these identical tested product bytes."
+}

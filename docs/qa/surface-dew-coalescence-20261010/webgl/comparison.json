@@ -1,0 +1,203 @@
+{
+  "status": "PASS",
+  "beforeCommit": "9ec0150bf7f595f28541d91355bf64143bd137e8",
+  "afterSourceHashes": {
+    "lib/planet/surface-sliding-dew.ts": "536cc61b5b25edb014cd1514aabfc81ea2698f13dec3538e068d8a00f00d6805",
+    "lib/planet/surface-attachment-exclusions.ts": "1b071d4ded3bbb6dbd029b585f4aa7354a7e96a3f8f59d7eb40e0552e35f583f",
+    "lib/planet/approved-jade-spirit.ts": "64c85f63d50e63f57a53e4bcb10a98383657e2f3fce2fd9e5aaa7bde65a1a543",
+    "lib/planet/approved-spirit-motion.ts": "92454b392446e9a85814aafd5653518ad7694d9b4465f3436353a6792d66377f",
+    "components/planet/ElementalSpiritCanvas.tsx": "16bdfd48f94ac3b069e331cdf70b154098cccbd02268cddade06d5bf0c0c971a",
+    "public/spirits/jade-v002/body.glb": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84"
+  },
+  "fashionReferenceCommit": "3fb604600de32687df4f2b2d3561e88ff9657486",
+  "matchedFrames": 22,
+  "beforePNGCount": 22,
+  "afterPNGCount": 30,
+  "fashionOverlapSamples": 8,
+  "compared": [
+    {
+      "key": "high:separate",
+      "seconds": 3.5696864607025147,
+      "materialTime": 3.5696864128112793,
+      "matchedNativePoseCameraShadow": true,
+      "pixelsChanged": true,
+      "firePixelAndPNGIdentical": null
+    },
+    {
+      "key": "high:merging",
+      "seconds": 5.316442686049567,
+      "materialTime": 5.316442489624023,
+      "matchedNativePoseCameraShadow": true,
+      "pixelsChanged": true,
+      "firePixelAndPNGIdentical": null
+    },
+    {
+      "key": "high:merged",
+      "seconds": 6.298993062807286,
+      "materialTime": 6.298993110656738,
+      "matchedNativePoseCameraShadow": true,
+      "pixelsChanged": true,
+      "firePixelAndPNGIdentical": null
+    },
+    {
+      "key": "high:release",
+      "seconds": 7.499887967733386,
+      "materialTime": 7.499887943267822,
+      "matchedNativePoseCameraShadow": true,
+      "pixelsChanged": true,
+      "firePixelAndPNGIdentical": null
+    },
+    {
+      "key": "high:falling",
+      "seconds": 7.949887967733385,
+      "materialTime": 7.949887752532959,
+      "matchedNativePoseCameraShadow": true,
+      "pixelsChanged": true,
+      "firePixelAndPNGIdentical": null
+    },
+    {
+      "key": "high:empty",
+      "seconds": 10.77505589025911,
+      "materialTime": 10.775055885314941,
+      "matchedNativePoseCameraShadow": true,
+      "pixelsChanged": true,
+      "firePixelAndPNGIdentical": null
+    },
+    {
+      "key": "high:regrowth",
+      "seconds": 13.941051548700644,
+      "materialTime": 13.941051483154297,
+      "matchedNativePoseCameraShadow": true,
+      "pixelsChanged": true,
+      "firePixelAndPNGIdentical": null
+    },
+    {
+      "key": "high:separate-closeup",
+      "seconds": 3.5696864607025147,
+      "materialTime": 3.5696864128112793,
+      "matchedNativePoseCameraShadow": true,
+      "pixelsChanged": true,
+      "firePixelAndPNGIdentical": null
+    },
+    {
+      "key": "high:merged-closeup",
+      "seconds": 6.298993062807286,
+      "materialTime": 6.298993110656738,
+      "matchedNativePoseCameraShadow": true,
+      "pixelsChanged": true,
+      "firePixelAndPNGIdentical": null
+    },
+    {
+      "key": "high:falling-closeup",
+      "seconds": 7.949887967733385,
+      "materialTime": 7.949887752532959,
+      "matchedNativePoseCameraShadow": true,
+      "pixelsChanged": true,
+      "firePixelAndPNGIdentical": null
+    },
+    {
+      "key": "high:fire-shadow-same-time",
+      "seconds": 2.25,
+      "materialTime": 2.25,
+      "matchedNativePoseCameraShadow": true,
+      "pixelsChanged": false,
+      "firePixelAndPNGIdentical": true
+    },
+    {
+      "key": "low:separate",
+      "seconds": 3.5696864607025147,
+      "materialTime": 3.5696864128112793,
+      "matchedNativePoseCameraShadow": true,
+      "pixelsChanged": true,
+      "firePixelAndPNGIdentical": null
+    },
+    {
+      "key": "low:merging",
+      "seconds": 5.316442686049567,
+      "materialTime": 5.316442489624023,
+      "matchedNativePoseCameraShadow": true,
+      "pixelsChanged": true,
+      "firePixelAndPNGIdentical": null
+    },
+    {
+      "key": "low:merged",
+      "seconds": 6.298993062807286,
+      "materialTime": 6.298993110656738,
+      "matchedNativePoseCameraShadow": true,
+      "pixelsChanged": true,
+      "firePixelAndPNGIdentical": null
+    },
+    {
+      "key": "low:release",
+      "seconds": 7.499887967733386,
+      "materialTime": 7.499887943267822,
+      "matchedNativePoseCameraShadow": true,
+      "pixelsChanged": true,
+      "firePixelAndPNGIdentical": null
+    },
+    {
+      "key": "low:falling",
+      "seconds": 7.949887967733385,
+      "materialTime": 7.949887752532959,
+      "matchedNativePoseCameraShadow": true,
+      "pixelsChanged": true,
+      "firePixelAndPNGIdentical": null
+    },
+    {
+      "key": "low:empty",
+      "seconds": 10.77505589025911,
+      "materialTime": 10.775055885314941,
+      "matchedNativePoseCameraShadow": true,
+      "pixelsChanged": true,
+      "firePixelAndPNGIdentical": null
+    },
+    {
+      "key": "low:regrowth",
+      "seconds": 13.941051548700644,
+      "materialTime": 13.941051483154297,
+      "matchedNativePoseCameraShadow": true,
+      "pixelsChanged": true,
+      "firePixelAndPNGIdentical": null
+    },
+    {
+      "key": "low:separate-closeup",
+      "seconds": 3.5696864607025147,
+      "materialTime": 3.5696864128112793,
+      "matchedNativePoseCameraShadow": true,
+      "pixelsChanged": true,
+      "firePixelAndPNGIdentical": null
+    },
+    {
+      "key": "low:merged-closeup",
+      "seconds": 6.298993062807286,
+      "materialTime": 6.298993110656738,
+      "matchedNativePoseCameraShadow": true,
+      "pixelsChanged": true,
+      "firePixelAndPNGIdentical": null
+    },
+    {
+      "key": "low:falling-closeup",
+      "seconds": 7.949887967733385,
+      "materialTime": 7.949887752532959,
+      "matchedNativePoseCameraShadow": true,
+      "pixelsChanged": true,
+      "firePixelAndPNGIdentical": null
+    },
+    {
+      "key": "low:fire-shadow-same-time",
+      "seconds": 2.25,
+      "materialTime": 2.25,
+      "matchedNativePoseCameraShadow": true,
+      "pixelsChanged": false,
+      "firePixelAndPNGIdentical": true
+    }
+  ],
+  "reports": {
+    "before": "cd7c71454d0353cd900b2c188d5a506a8dabca1abc4ac5c4db1b2dc462f5ce8a",
+    "after": "0077b10ac74f21bf39673e766c6f530764dcc7c7f360182b5512b0f9b6605a60"
+  },
+  "limitations": [
+    "Native Chromium SwiftShader; no physical device or hosted logged-in run.",
+    "Accessory envelope exclusion and source-face clearance do not establish continuous collision against every body part."
+  ]
+}

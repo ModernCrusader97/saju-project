@@ -52,6 +52,10 @@ const beads = effect => {
   return meshes[0];
 };
 const matrix = new THREE.Matrix4();
+// Attachment assertions apply to surface beads. The new explicitly detached
+// pool is separately checked for world gravity, volume and flight ownership.
+const attached = (effect, index) => !effect.group.userData.surfaceDewFrame ||
+  effect.group.userData.surfaceDewFrame.pairs[Math.floor(index / 2)].slots[index % 2] === 'surface';
 function poseAt(mesh, index) {
   mesh.getMatrixAt(index, matrix);
   const world = new THREE.Matrix4().copy(mesh.matrixWorld).multiply(matrix);
@@ -90,7 +94,7 @@ test('attached beads stay outside their actual face plane through growth and tra
     fixture.effect.update(time);
     for (let i = 0; i < fixture.mesh.count; i++) {
       const pose = poseAt(fixture.mesh, i);
-      if (!pose.visible) continue;
+      if (!pose.visible || !attached(fixture.effect, i)) continue;
       const support = Math.sqrt(pose.basis.reduce((sum, v) => sum + v.z * v.z, 0));
       minimumClearance = Math.min(minimumClearance, pose.center.z - support);
       assert(pose.center.x >= -1 - 1e-5 && pose.center.x <= 1 + 1e-5);
@@ -157,7 +161,7 @@ test('world normal and plane clearance survive paused nested nonuniform rotation
   let minimumDot = 1, minimumClearance = Infinity;
   for (let i = 0; i < fixture.mesh.count; i++) {
     const pose = poseAt(fixture.mesh, i);
-    if (!pose.visible) continue;
+    if (!pose.visible || !attached(fixture.effect, i)) continue;
     minimumDot = Math.min(minimumDot, pose.basis[2].clone().normalize().dot(normal));
     const support = Math.sqrt(pose.basis.reduce((sum, v) => sum + Math.pow(v.dot(normal), 2), 0));
     minimumClearance = Math.min(minimumClearance, pose.center.clone().sub(origin).dot(normal) - support);
@@ -209,7 +213,7 @@ test('real approved GLB shows cross-triangle contact travel and preserves source
     effect.update(time); root.updateMatrixWorld(true);
     for (let index = 0; index < Math.min(16, mesh.count); index++) {
       const pose = poseAt(mesh, index);
-      if (!pose.visible) continue;
+      if (!pose.visible || !attached(effect, index)) continue;
       ray.set(pose.center, pose.basis[2].clone().normalize().negate());
       const hit = ray.intersectObject(body, false)[0];
       assert(hit, `Every visible bead must be just outside an actual B triangle: t=${time} slot=${index}`);
@@ -247,7 +251,7 @@ test('explicit morph opt-in reattaches actual B arm beads to the posed triangles
   const ray = new THREE.Raycaster(); ray.near = 0; ray.far = .2;
   const inverseBody = new THREE.Matrix4().copy(body.matrixWorld).invert(), restContacts = new Map();
   for (let index = 0; index < mesh.count; index++) {
-    const pose = initial[index]; if (!pose.visible) continue;
+    const pose = initial[index]; if (!pose.visible || !attached(effect, index)) continue;
     ray.set(pose.center, pose.basis[2].clone().normalize().negate());
     const hit = ray.intersectObject(body, false)[0];
     assert(hit, `Reference bead ${index} has an actual source contact`);
@@ -263,7 +267,7 @@ test('explicit morph opt-in reattaches actual B arm beads to the posed triangles
     const moved = [];
     for (let index = 0; index < mesh.count; index++) {
       const pose = poseAt(mesh, index);
-      if (!pose.visible || !initial[index].visible) continue;
+      if (!pose.visible || !initial[index].visible || !attached(effect, index) || !restContacts.has(index)) continue;
       const displacement = pose.center.distanceTo(initial[index].center);
       maximumMorphMotion = Math.max(maximumMorphMotion, displacement);
       if (displacement > .03) movedArmBeads++;

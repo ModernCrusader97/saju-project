@@ -1,0 +1,57 @@
+{
+  "sourceSHA256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+  "sourceHashes": {
+    "lib/planet/surface-sliding-dew.ts": "9e40509e32ebc273cb93651422632d823e089440c5dcb878eb49aa8011fe6a84",
+    "lib/planet/surface-attachment-exclusions.ts": "1b071d4ded3bbb6dbd029b585f4aa7354a7e96a3f8f59d7eb40e0552e35f583f"
+  },
+  "tests": [
+    "near-contact-and-volume-conservation",
+    "world-flight-independent-of-body",
+    "bounded-pool-seek-and-regrowth",
+    "radius-aware-fashion-overlap"
+  ],
+  "measurements": {
+    "volumeTransfer": [
+      {
+        "age": 0.3,
+        "sum": 8.631911731311693e-7,
+        "mergeFraction": 0,
+        "a": 7.203242278773269e-7,
+        "b": 1.4286694525384245e-7
+      },
+      {
+        "age": 0.43,
+        "sum": 8.631912364990433e-7,
+        "mergeFraction": 0.042968750000000056,
+        "a": 7.264631102820135e-7,
+        "b": 1.3672812621702976e-7
+      },
+      {
+        "age": 0.47,
+        "sum": 8.631912392160787e-7,
+        "mergeFraction": 0.6835937499999997,
+        "a": 8.179872443300455e-7,
+        "b": 4.520399488603323e-8
+      },
+      {
+        "age": 0.53,
+        "sum": 8.631911923524801e-7,
+        "mergeFraction": 1,
+        "a": 8.631911923524801e-7,
+        "b": 0
+      },
+      {
+        "age": 0.6,
+        "sum": 8.631912455021773e-7,
+        "mergeFraction": 1,
+        "a": 8.631912455021773e-7,
+        "b": 0
+      }
+    ],
+    "detachedWorldError": 2.0559157081035986e-8
+  },
+  "limitations": [
+    "CPU geometry/matrix checks; timings are host measurements, not physical GPU FPS."
+  ],
+  "success": false
+}

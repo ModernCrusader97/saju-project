@@ -1,0 +1,29 @@
+{
+  "status": "FAIL",
+  "phase": "before",
+  "sourceRoot": "/workspace/saju-spirit-effects-normal-checkpoint-20261010",
+  "sourceCommit": "9ec0150bf7f595f28541d91355bf64143bd137e8",
+  "sourceHashes": {
+    "lib/planet/surface-sliding-dew.ts": "e3c847935419bc704179e8c307868330d8df122c58c595a5065d4488f4689bb5",
+    "lib/planet/surface-attachment-exclusions.ts": "86dec9178e0fd0d01e4bcd174be765c37eafbb32c8aadfedd32dd460f75c94c0",
+    "lib/planet/approved-jade-spirit.ts": "64c85f63d50e63f57a53e4bcb10a98383657e2f3fce2fd9e5aaa7bde65a1a543",
+    "lib/planet/approved-spirit-motion.ts": "92454b392446e9a85814aafd5653518ad7694d9b4465f3436353a6792d66377f",
+    "components/planet/ElementalSpiritCanvas.tsx": "16bdfd48f94ac3b069e331cdf70b154098cccbd02268cddade06d5bf0c0c971a",
+    "public/spirits/jade-v002/body.glb": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84"
+  },
+  "fashionReferenceCommit": "3fb604600de32687df4f2b2d3561e88ff9657486",
+  "harnessSHA256": "d2f034c2606b1c4120f614e8df33fb49d41457854c70add1e8a86bed832ce9a6",
+  "pageSHA256": "97b70c690444926c57efb27837ecf409cc0dd2851a4d7f64d0682e049c22ee2c",
+  "cases": [],
+  "frames": [],
+  "errors": [
+    "Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+    "Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+    "page.waitForFunction: Timeout 30000ms exceeded.\n    at /workspace/saju-spirit-dew-coalescence-20261010/scripts/qa/dew-coalescence-browser.mjs:65:70"
+  ],
+  "outbound": [],
+  "limitations": [
+    "Actual source loader/GLB/materials in local Chromium SwiftShader; exact production Worker separately checked.",
+    "Same body/material time, camera and shadows for before/after; no physical GPU or hosted logged-in validation."
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "baseline": "9ec0150bf7f595f28541d91355bf64143bd137e8",
+  "productFilesChanged": [
+    "lib/planet/surface-attachment-exclusions.ts",
+    "lib/planet/surface-sliding-dew.ts"
+  ],
+  "protectedTrackedFilesCompared": 325,
+  "bodySourceAndRuntimeSHA256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+  "presentationDepth": 1.35,
+  "fashionReference": {
+    "branch": "feature/spirit-fashion-slots-20261010",
+    "commit": "3fb604600de32687df4f2b2d3561e88ff9657486",
+    "changed": false
+  },
+  "assetsOriginalsPetPlanetOtherStemCodePackageAndLockfilesUnchanged": true,
+  "scope": "All baseline tracked files outside QA/docs and the two authorized product files compared byte-for-byte."
+}

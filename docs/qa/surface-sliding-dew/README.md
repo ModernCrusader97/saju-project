@@ -1,5 +1,9 @@
 # 癸 surface condensation and sliding candidate
 
+Historical condensation-only baseline report, preserved unchanged below. The
+new merge/release extension and its fresh validation are recorded in
+[the coalescence report](../surface-dew-coalescence-20261010/README.md).
+
 The new `createSurfaceSlidingDew(options)` implementation adds clear beads to the
 actual approved B body. Each fixed source condenses, grows, travels down a connected
 triangle path, shrinks, disappears, and regrows. It does not change the original

@@ -1,0 +1,177 @@
+✔ near drops transfer volume and become one larger rendered bead (25.706849ms)
+✔ threshold drop detaches and keeps its world launch while the body moves (5.913218ms)
+✔ round released bead starts outside its tilted source plane (5.515995ms)
+✔ one bounded draw has deterministic seek, dead slots and new condensation (13.241924ms)
+✔ sparse surface routes remain distinct instead of duplicating bead pairs (12.412948ms)
+✖ actual B matrices including hidden slots repeat byte-for-byte at one time (327.474759ms)
+✔ exclusion overlap includes bead radius under transformed fashion masks (0.352648ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 6
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 561.643879
+
+✖ failing tests:
+
+test at scripts/qa/surface-dew-coalescence.mjs:133:1
+✖ actual B matrices including hidden slots repeat byte-for-byte at one time (327.474759ms)
+  AssertionError [ERR_ASSERTION]: Frozen launch reuse must not inherit another route quaternion in hidden slots.
+  + actual - expected
+  ... Skipped lines
+  
+    Buffer(3072) [Uint8Array] [
+      110,
+      139,
+      196,
+      59,
+  ...
+      0,
+  -   128,
+      0,
+      0,
+      0,
+      0,
+      0,
+  ...
+      0,
+  +   128,
+      0,
+      0,
+      0,
+      0,
+      0,
+  ...
+      0,
+  +   128,
+      0,
+      0,
+      0,
+      0,
+  -   128,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+  -   128,
+      0,
+      0,
+      0,
+      0,
+  +   128,
+      0,
+      0,
+      0,
+      128,
+      0,
+  ...
+      0,
+  +   128,
+      0,
+      0,
+      0,
+      0,
+      0,
+  ...
+      0,
+  -   128,
+      0,
+      0,
+      0,
+      0,
+      0,
+  ...
+      0,
+  -   128,
+      0,
+      0,
+      0,
+      0,
+  +   128,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+  +   128,
+      0,
+      0,
+      0,
+      0,
+  -   128,
+      0,
+      0,
+      0,
+      128,
+      0,
+  ...
+      0,
+  -   128,
+      0,
+      0,
+      0,
+  -   128,
+      0,
+      0,
+      0,
+      0,
+      0,
+  +   128,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+  -   128,
+      0,
+      0,
+      0,
+      0,
+      0,
+  ...
+      0,
+  -   128,
+      0,
+      0,
+      0,
+  -   128,
+      0,
+      0,
+      0,
+      128,
+      0,
+  ...
+      0,
+  +   0,
+  +   0,
+  +   0,
+  +   0,
+      88,
+      48,
+      167,
+      190,
+      250,
+  
+      at TestContext.<anonymous> (file:///workspace/saju-spirit-dew-coalescence-20261010/scripts/qa/surface-dew-coalescence.mjs:141:12)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: <Buffer 6e 8b c4 3b 05 b7 9e 3a 04 20 c6 ba 00 00 00 00 b6 80 b6 3a 17 45 e1 3a 7c 29 e2 3b 00 00 00 00 7e de 47 3a 36 6a 46 bb 90 4f 1d 3a 00 00 00 00 7b 75 ... 3022 more bytes>,
+    expected: <Buffer 6e 8b c4 3b 05 b7 9e 3a 04 20 c6 ba 00 00 00 00 b6 80 b6 3a 17 45 e1 3a 7c 29 e2 3b 00 00 00 00 7e de 47 3a 36 6a 46 bb 90 4f 1d 3a 00 00 00 00 7b 75 ... 3022 more bytes>,
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

@@ -11,7 +11,7 @@ const root = process.cwd(), builtRoot = process.env.SAJU_QA_BUILT_ROOT || root;
 const probeOnly = process.env.SAJU_QA_PROBE === '1';
 const contextProbe = process.env.SAJU_QA_CONTEXT_PROBE === '1';
 const additionalProbe = process.env.SAJU_QA_ADDITIONAL_PROBE === '1';
-const output = path.join(root, 'outputs/spirit-attachment-worker');
+const output = path.resolve(process.env.SAJU_QA_OUTPUT || path.join(root, 'outputs/spirit-attachment-worker'));
 await fs.mkdir(output, { recursive: true });
 const sha = bytes => createHash('sha256').update(bytes).digest('hex');
 const entry = path.join(builtRoot, 'dist/server/index.js');
@@ -29,6 +29,7 @@ const sourceHashes = Object.fromEntries(await Promise.all([
   'components/planet/ElementalSpiritCanvas.tsx', 'lib/planet/approved-jade-spirit.ts',
   'lib/planet/approved-spirit-motion.ts', 'lib/planet/mesh-surface.ts',
   'lib/planet/surface-stem-accents.ts', 'lib/planet/surface-sliding-dew.ts',
+  'lib/planet/surface-attachment-exclusions.ts', 'lib/planet/surface-triangle-walk.ts',
   'lib/planet/surface-fissure-sand.ts', 'lib/planet/surface-woody-branches.ts',
   'lib/planet/affine-instance-normals.ts',
   'lib/planet/context-loss-resources.ts',

@@ -1,0 +1,11 @@
+{
+  "projectId": "appgprj_6ac0409a78688191a04e4997548f9e5b",
+  "version": 31,
+  "status": "active",
+  "role": "owner",
+  "accessMode": "custom",
+  "accessPolicyUnchanged": true,
+  "liveUrlUnchanged": true,
+  "sourceCommit": "a4011b690078001b148403a923735368b9768835",
+  "additionalDeployment": false
+}
