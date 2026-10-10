@@ -234,7 +234,7 @@ test('actual flame attachment exclusions preserve particle identities and restor
   report.checks.push('actual 丙/丁 flame-source visibility masks restore particle age/seed data and preserve flight matrices; flight collisions are not simulated');
 });
 
-test('ten production stems: accessories and exclusion regions follow real idle and bounded original Gentle_wave_pose', async () => {
+test('ten production stems: accessories and exclusion regions follow actual raised-arm triangles', async () => {
   for (const key of ['갑자', '을축', '병인', '정묘', '무진', '기사', '경오', '신미', '임신', '계유']) {
     const spirit = await api.loadApprovedSpirit(key, '병인', 'low'), body = spirit.bodyMesh, owner = spirit.fashion.group.parent;
     const original = hashes(body.geometry), morphHash = sha(body.geometry.morphAttributes.position[0].array);
@@ -242,9 +242,14 @@ test('ten production stems: accessories and exclusion regions follow real idle a
     spirit.fashion.set(outfit); spirit.reset(); spirit.update(0); const start = spirit.fashion.group.children[0].getWorldPosition(new THREE.Vector3());
     spirit.update(1.5); const idle = spirit.fashion.group.children[0].getWorldPosition(new THREE.Vector3()); assert(idle.distanceTo(start) > .001, 'hardware must follow actual idle');
     spirit.reset(); spirit.update(0); spirit.triggerReaction(); let peakTime;
-    for (let t = .05; t <= 1.2; t += .05) { spirit.update(t); if (body.morphTargetInfluences[0] > .445) { peakTime = t; break; } }
-    assert(peakTime); assert(body.morphTargetInfluences[0] <= .45);
-    const waveWeight = body.morphTargetInfluences[0];
+    for (let t = .05; t <= 1.2; t += .05) { spirit.update(t); if (body.userData.approvedSpiritGreeting.stage === 'wave') { peakTime = t; break; } }
+    assert(peakTime); assert.equal(body.morphTargetInfluences[0], 0);
+    const greeting = body.userData.approvedSpiritGreeting;
+    assert.equal(greeting.armLift, 1); assert.equal(body.morphTargetInfluences.length, 11);
+    assert(greeting.controlWeights.filter(weight => weight > 1e-12).length <= 2);
+    const hand = new THREE.Vector3();
+    for (const id of greeting.handVertexIDs) hand.add(body.getVertexPosition(id, new THREE.Vector3()));
+    hand.divideScalar(greeting.handVertexIDs.length); assert(hand.y > 1.55);
     for (const config of [outfit, { ...outfit, head: 'crescent-pin', face: 'fitted-mask' }]) {
       spirit.fashion.set(config); spirit.avatarPivot.rotation.set(.17, .93, -.08); spirit.update(peakTime); spirit.group.updateMatrixWorld(true);
       let samples = 0; const inside = [], ray = new THREE.Raycaster();
@@ -270,12 +275,13 @@ test('ten production stems: accessories and exclusion regions follow real idle a
         });
       }
       assert.deepEqual(inside, [], 'sampled hardware must stay outside the actual waving body');
-      report.motion.push({ key, face: config.face, peakTime, waveWeight, sampledClearanceVertices: samples, sampledInside: inside, owner: owner.name, depth: spirit.avatarPivot.scale.z });
+      report.motion.push({ key, face: config.face, peakTime, sourceWaveWeight: body.morphTargetInfluences[0], armLift: greeting.armLift,
+        wrist: greeting.wrist, handCenter: hand.toArray(), sampledClearanceVertices: samples, sampledInside: inside, owner: owner.name, depth: spirit.avatarPivot.scale.z });
     }
-    spirit.reset(); spirit.update(0); assert.equal(body.morphTargetInfluences[0], 0); assert.equal(spirit.fashion.group.children.length, 4);
+    spirit.reset(); spirit.update(0); assert(body.morphTargetInfluences.every(weight => weight === 0)); assert.equal(spirit.fashion.group.children.length, 4);
     assert.deepEqual(hashes(body.geometry), original); assert.equal(sha(body.geometry.morphAttributes.position[0].array), morphHash); spirit.dispose(); spirit.dispose();
   }
-  report.checks.push('ten production stems: actual idle, original bounded wave, live triangle normals/supports, current local regions and sampled clearance; reset keeps clothing and restores neutral morph');
+  report.checks.push('ten production stems: actual idle and raised hand, live triangle normals/supports, current local regions and sampled clearance; reset keeps clothing and restores all neutral controls');
 });
 test.after(async () => { GLTFLoader.prototype.loadAsync = nativeLoad; THREE.TextureLoader.prototype.loadAsync = nativeTexture;
   report.status = report.checks.length === 13 ? 'PASS' : 'FAIL'; await fs.writeFile(path.join(output, 'report.json'), JSON.stringify(report, null, 2) + '\n'); console.log(JSON.stringify({ status: report.status, checks: report.checks, budgets: report.budgets })); });

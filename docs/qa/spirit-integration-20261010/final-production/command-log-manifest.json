@@ -1,0 +1,38 @@
+[
+  {
+    "file": "commands/build.log",
+    "rawSHA256": "5773d15b5ce9bb1d747f2b12604e20b81d6822aacef451768502eb6f7aa348b1",
+    "archivedSHA256": "8831abf3cd6827712aa2db8ab1b978d37fd42b2185f0f195c19119578cbb1c61",
+    "normalization": "line-end whitespace and final blank lines only, for git diff --check"
+  },
+  {
+    "file": "commands/cpu-serial.log",
+    "rawSHA256": "4279803b74fb0852de19fa7059cce6c456be54104e63e49af9485bde7b202f77",
+    "archivedSHA256": "4279803b74fb0852de19fa7059cce6c456be54104e63e49af9485bde7b202f77",
+    "normalization": "line-end whitespace and final blank lines only, for git diff --check"
+  },
+  {
+    "file": "commands/diff.log",
+    "rawSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "archivedSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "normalization": "line-end whitespace and final blank lines only, for git diff --check"
+  },
+  {
+    "file": "commands/lint.log",
+    "rawSHA256": "90be704de5c5da4c4878691ceec5013e4acdb13a865d4ae7d2a6602b18993890",
+    "archivedSHA256": "f5600f5b961aad014de1ccb23d5d1d561b4aa9e9f6bce27329f6914d8e43bb70",
+    "normalization": "line-end whitespace and final blank lines only, for git diff --check"
+  },
+  {
+    "file": "commands/preservation.log",
+    "rawSHA256": "89d4ea1b480040cd7366efacc5fa6e5736e026737264197988e4810752e822a5",
+    "archivedSHA256": "89d4ea1b480040cd7366efacc5fa6e5736e026737264197988e4810752e822a5",
+    "normalization": "line-end whitespace and final blank lines only, for git diff --check"
+  },
+  {
+    "file": "commands/type.log",
+    "rawSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "archivedSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "normalization": "line-end whitespace and final blank lines only, for git diff --check"
+  }
+]

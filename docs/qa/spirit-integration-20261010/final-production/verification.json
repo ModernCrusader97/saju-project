@@ -1,0 +1,134 @@
+{
+  "status": "PASS",
+  "sourceHEAD": "0cf16dcef6c7fb1dec40021eceffe53ba07db461",
+  "commands": [
+    {
+      "name": "cpu-serial",
+      "command": [
+        "node",
+        "--test",
+        "--test-concurrency=1",
+        "scripts/qa/surface-triangle-walk.mjs",
+        "scripts/qa/surface-sliding-dew.mjs",
+        "scripts/qa/approved-spirit-motion.mjs",
+        "scripts/qa/ten-stem-materials.mjs",
+        "scripts/qa/surface-fissure-sand.mjs",
+        "scripts/qa/surface-dew-coalescence.mjs",
+        "scripts/qa/galaxy-owner-mask-session.mjs",
+        "scripts/qa/zodiac-pet-loader.mjs",
+        "scripts/qa/spirit-fashion-cpu.mjs",
+        "scripts/qa/spirit-water-wave-cpu.mjs",
+        "scripts/qa/approved-spirit-raised-wave.mjs",
+        "scripts/qa/affine-instance-normals.mjs",
+        "scripts/qa/surface-vegetation.mjs"
+      ],
+      "exit_code": 0,
+      "milliseconds": 124166,
+      "log": "final/cpu-serial.log",
+      "logSHA256": "4279803b74fb0852de19fa7059cce6c456be54104e63e49af9485bde7b202f77"
+    },
+    {
+      "name": "type",
+      "command": [
+        "node",
+        "node_modules/typescript/bin/tsc",
+        "--noEmit",
+        "--incremental",
+        "false"
+      ],
+      "exit_code": 0,
+      "milliseconds": 3900,
+      "log": "final/type.log",
+      "logSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "lint",
+      "command": [
+        "node",
+        "node_modules/eslint/bin/eslint.js",
+        "app/planet/page.tsx",
+        "components/planet/ElementalSpiritCanvas.tsx",
+        "components/planet/SpiritFashionPanel.tsx",
+        "hooks/use-spirit-fashion.ts",
+        "lib/planet/approved-jade-spirit.ts",
+        "lib/planet/elemental-spirit.ts",
+        "lib/planet/approved-spirit-motion.ts",
+        "lib/planet/approved-spirit-arm-controls.ts",
+        "lib/planet/approved-stem-materials.ts",
+        "lib/planet/surface-sliding-dew.ts",
+        "lib/planet/surface-attachment-exclusions.ts",
+        "lib/planet/surface-fissure-sand.ts",
+        "lib/planet/spirit-fashion.ts",
+        "lib/planet/fashion-surface-projector.ts",
+        "lib/planet/spirit-fashion-catalog.ts",
+        "lib/planet/spirit-fashion-storage.ts"
+      ],
+      "exit_code": 0,
+      "milliseconds": 1928,
+      "log": "final/lint.log",
+      "logSHA256": "90be704de5c5da4c4878691ceec5013e4acdb13a865d4ae7d2a6602b18993890"
+    },
+    {
+      "name": "build",
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "exit_code": 0,
+      "milliseconds": 7227,
+      "log": "final/build.log",
+      "logSHA256": "5773d15b5ce9bb1d747f2b12604e20b81d6822aacef451768502eb6f7aa348b1"
+    },
+    {
+      "name": "preservation",
+      "command": [
+        "node",
+        "scripts/qa/spirit-integration-preservation.mjs"
+      ],
+      "exit_code": 0,
+      "milliseconds": 1669,
+      "log": "final/preservation.log",
+      "logSHA256": "89d4ea1b480040cd7366efacc5fa6e5736e026737264197988e4810752e822a5"
+    },
+    {
+      "name": "diff",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "milliseconds": 6,
+      "log": "final/diff.log",
+      "logSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "cpuPassed": 119,
+  "cpuFailed": 0,
+  "sourceHashes": {
+    "app/planet/page.tsx": "31162c98f6616dd1f73f4d1593e3069dc6ddefa5f9fc276dc607ce47d538eab3",
+    "components/planet/ElementalSpiritCanvas.tsx": "2367829265fd949db74f8e6cd698ccc3e30677d04440e54fe401bd6e0041bad2",
+    "components/planet/SpiritFashionPanel.tsx": "32131006e1c5556fd79be468d1d4858d3940ccaf48efd872aa83c4c3cbe7c866",
+    "hooks/use-spirit-fashion.ts": "0062599251193b082620e5f52a9126dbd5581d3b5f1aa57147c003034f0524c9",
+    "lib/planet/approved-jade-spirit.ts": "dc5ab6e65327de1c5fad40ee4be67ac6b7e08a2cf73bfc07c61529d41314ba93",
+    "lib/planet/elemental-spirit.ts": "f092e22f3745a93f981c03bcd21aa643627dbc46ef47a9528e5d2d4490b5060d",
+    "lib/planet/approved-spirit-motion.ts": "0e5af540f134fff609d5554e5ee7be452e3aa4dfc73f03de3b1348480f6a8ee1",
+    "lib/planet/approved-spirit-arm-controls.ts": "c2e57055797ac9aaed58206402b20514e775877c2b9e19c35dd472986d0d2b46",
+    "lib/planet/approved-stem-materials.ts": "d5c83cc58c8e61c39a1beb2dfca1542d93e7a29c35b448d499a4091d7f9b19b3",
+    "lib/planet/surface-sliding-dew.ts": "536cc61b5b25edb014cd1514aabfc81ea2698f13dec3538e068d8a00f00d6805",
+    "lib/planet/surface-attachment-exclusions.ts": "1b071d4ded3bbb6dbd029b585f4aa7354a7e96a3f8f59d7eb40e0552e35f583f",
+    "lib/planet/surface-fissure-sand.ts": "1cf4eb177eb69b90b06e41a3393eda065dcb07249390e51e3c3395576aa0c4b1",
+    "lib/planet/spirit-fashion.ts": "820a248cfe06e7940dbf779ea7071506a048b7b318d5f162927599f71548c3c1",
+    "lib/planet/fashion-surface-projector.ts": "608ef8f99dcba59a117dfa9d8ff649f972f5fcebd164c5a00e356d68a6fe444f",
+    "lib/planet/spirit-fashion-catalog.ts": "cd78cc7d096d54f52c1aa9fd0d6e53952de3fa3ba0571c1d1d11545180af1bb6",
+    "lib/planet/spirit-fashion-storage.ts": "fa465992008bbab56866a99149e9b1f40be994947bdc7ecc423c66332a86f261"
+  },
+  "builtServerSHA256": "ab88fb26884c21c59199e8aa5261c77e4d062eb3b3c7a01e751042991c701214",
+  "timestamp": "2026-10-10T06:13:46.684Z",
+  "limits": [
+    "Serial actual-source GLB CPU suites. Lint is targeted to integration production paths; it is not a clean repository-wide lint claim.",
+    "Native exact Worker/fashion/galaxy checks and terminal owner-only deployment readback are recorded separately."
+  ],
+  "cpuCountParser": "Node spec or TAP summary, read from exact saved cpu-serial.log"
+}

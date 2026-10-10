@@ -27,7 +27,8 @@ assert.equal(jadeAssetSources['base-color.png'].sha256, '29bdd5ab8a2c87715fd3aed
 assert.equal(jadeAssetSources['fields.png'].sha256, '3175c131be983bd985b8018c191d3a25c9ce00ea20baa31bbb2772833b9a5bd0');
 const sourceHashes = Object.fromEntries(await Promise.all([
   'components/planet/ElementalSpiritCanvas.tsx', 'lib/planet/approved-jade-spirit.ts',
-  'lib/planet/approved-spirit-motion.ts', 'lib/planet/mesh-surface.ts',
+  'lib/planet/approved-spirit-motion.ts', 'lib/planet/approved-spirit-arm-controls.ts', 'lib/planet/approved-stem-materials.ts', 'lib/planet/mesh-surface.ts',
+  'lib/planet/spirit-fashion.ts', 'lib/planet/fashion-surface-projector.ts', 'lib/planet/spirit-fashion-catalog.ts',
   'lib/planet/surface-stem-accents.ts', 'lib/planet/surface-sliding-dew.ts',
   'lib/planet/surface-attachment-exclusions.ts', 'lib/planet/surface-triangle-walk.ts',
   'lib/planet/surface-fissure-sand.ts', 'lib/planet/surface-woody-branches.ts',
@@ -174,12 +175,23 @@ const initializeClock = () => {
       this.addEventListener('webglcontextlost', () => { matrices.clear(); times.clear(); timeNames.clear(); markers.clear(); markerNames.clear(); morphWeights.clear(); active = undefined; }, true);
       this.addEventListener('webglcontextrestored', () => { record.contextGeneration++; record.traceGl = true; }, true);
       const getLocation = gl.getUniformLocation.bind(gl);
+      const actualMorphUniform = program => {
+        for (let i = 0; i < gl.getProgramParameter(program, gl.ACTIVE_UNIFORMS); i++) {
+          const info = gl.getActiveUniform(program, i);
+          if (info && /^morphTargetInfluences(?:\[0\])?$/.test(info.name)) {
+            const locations = Array.from({ length: info.size }, (_, index) => getLocation(program, 'morphTargetInfluences[' + index + ']'));
+            if (locations.some(location => !location)) throw new Error('Native morph-array element location missing');
+            return { size: info.size, locations };
+          }
+        }
+        throw new Error('Native active morph-array metadata missing');
+      };
       gl.getUniformLocation = (program, name) => {
         const location = getLocation(program, name);
         if (location && name === 'modelMatrix') matrices.set(program, location);
         if (location && ['uStemTime', 'uSajuSeconds'].includes(name)) { times.set(program, location); timeNames.set(program, name); }
         if (location && ['uStemCoordinateDensity', 'uSajuFields'].includes(name)) { markers.set(program, location); markerNames.set(program, name); }
-        if (location && /^morphTargetInfluences(?:\[0\])?$/.test(name)) morphWeights.set(program, location);
+        if (location && /^morphTargetInfluences(?:\[0\])?$/.test(name)) morphWeights.set(program, actualMorphUniform(program));
         return location;
       };
       const nativeUseProgram = gl.useProgram.bind(gl); gl.useProgram = program => { active = program; return nativeUseProgram(program); };
@@ -191,7 +203,7 @@ const initializeClock = () => {
           // optimized out. Identify the actual body program by its rest-density
           // uniform, then read its native model matrix for every stem.
           if (markers.has(active) && matrices.has(active)) {
-            const influences = morphWeights.has(active) ? gl.getUniform(active, morphWeights.get(active)) : null;
+            const morphUniform = morphWeights.get(active), influences = morphUniform?.locations.map(location => gl.getUniform(active, location)) ?? null;
             record.nativeBody.push({
             modelMatrix: [...gl.getUniform(active, matrices.get(active))],
             seconds: times.has(active) ? gl.getUniform(active, times.get(active)) : null,
@@ -199,7 +211,7 @@ const initializeClock = () => {
             markerUniform: markerNames.get(active),
             density: markerNames.get(active) === 'uStemCoordinateDensity' ? gl.getUniform(active, markers.get(active)) : null,
             jadeSamplerUnit: markerNames.get(active) === 'uSajuFields' ? gl.getUniform(active, markers.get(active)) : null,
-            morphWeights: influences === null ? null : typeof influences === 'number' ? [influences] : [...influences],
+            morphWeights: influences, morphUniformSize: morphUniform?.size ?? null,
             contextId: record.contextId, contextGeneration: record.contextGeneration,
             programId: objectId(active), programIsCurrent: gl.getParameter(gl.CURRENT_PROGRAM) === active, programIsLive: gl.isProgram(active),
             });
@@ -325,6 +337,10 @@ const snapshot = async () => {
     compileRecipeSha256: await hash(new TextEncoder().encode(body.material.onBeforeCompile.toString())),
     seconds: uniforms?.uSajuSeconds?.value, base: texture(body.material.map), fields: texture(uniforms?.uSajuFields?.value) } : null;
   let floor = Infinity; const point = body.position.clone();
+  const greeting = body.userData.approvedSpiritGreeting;
+  const hand = body.position.clone().set(0, 0, 0);
+  for (const id of greeting.handVertexIDs) hand.add(body.getVertexPosition(id, point));
+  hand.divideScalar(greeting.handVertexIDs.length);
   body.updateWorldMatrix(true, false);
   for (let i = 0; i < geometry.getAttribute('position').count; i++) {
     body.getVertexPosition(i, point).applyMatrix4(body.matrixWorld); floor = Math.min(floor, point.y);
@@ -335,6 +351,9 @@ const snapshot = async () => {
     kind: body.material.defines?.STEM_KIND, program: body.material.customProgramCacheKey(), depth: spirit.avatarPivot.scale.z,
     presentationPosition: spirit.avatarPivot.position.toArray(), displayRotation: spirit.avatarPivot.rotation.toArray(),
     bodyMatrix: body.matrixWorld.toArray(), native, rendererProgramId: record.objectId(rendererProgram), morph: [...body.morphTargetInfluences], floor,
+    greeting: { version: greeting.version, stage: greeting.stage, progress: greeting.progress, duration: greeting.duration,
+      armLift: greeting.armLift, wrist: greeting.wrist, queued: greeting.queued, cycles: greeting.cycles,
+      controlIndices: [...greeting.controlIndices], controlWeights: [...greeting.controlWeights], handCenter: hand.toArray() },
     materialOptics: { transmission: body.material.transmission ?? 0, opacity: body.material.opacity,
       transparent: body.material.transparent, blending: body.material.blending },
     bodyPasses: [...record.bodyPasses], blendedPasses: [...record.blendedPasses],
@@ -360,7 +379,7 @@ function valid(state, day, quality, requireNative = true) {
   assert.equal(state.frame.alpha, true);
   assert.equal(state.frame.premultipliedAlpha, true, 'Preserve the canvas convention used by normal-blended fire and ground');
   assert.equal(state.frame.materialPremultipliedAlpha, state.materialOptics.transmission > 0);
-  assert(state.morph[0] >= 0 && state.morph[0] <= .45); assert(state.accentsShareMotionRoot);
+  validArmControls(state); assert(state.accentsShareMotionRoot);
   assert.equal(state.motionRoot.name, 'ApprovedSpiritMotion');
   assert(Math.abs(state.motionRoot.position[0]) <= .012); assert(Math.abs(state.motionRoot.scale[1] - 1) <= .003 + 1e-12);
   assert(Math.abs(state.motionRoot.rotation[2]) <= .006 + 1e-12);
@@ -388,6 +407,7 @@ function valid(state, day, quality, requireNative = true) {
     assert(state.native.programIsCurrent && state.native.programIsLive);
     assert.equal(state.native.programId, state.rendererProgramId);
     assert(state.native.morphWeights, 'Actual GPU original morph uniform required');
+    assert.equal(state.native.morphUniformSize, state.morph.length);
     assert.equal(state.native.morphWeights.length, state.morph.length);
     state.native.morphWeights.forEach((value, index) => assert(Math.abs(value - state.morph[index]) < 1e-7));
     if (state.native.timeUniformOptimizedOut) assert([0, 4].includes(state.kind), 'Only static bark/stone may omit their time uniform');
@@ -395,6 +415,18 @@ function valid(state, day, quality, requireNative = true) {
     state.native.modelMatrix.forEach((value, index) => assert(Math.abs(value - state.bodyMatrix[index]) < 2e-6));
   }
 }
+
+function validArmControls(state) {
+  assert.equal(state.morph.length, 11); assert.equal(state.morph[0], 0, 'Original limited pose study stays neutral');
+  assert.equal(state.greeting.version, 'raised-hand-wave-v1'); assert.equal(state.greeting.cycles, 3);
+  assert.deepEqual(state.greeting.controlIndices, [1,2,3,4,5,6,7,8,9,10]);
+  assert.deepEqual(state.greeting.controlWeights, state.morph.slice(1));
+  assert(state.morph.every(Number.isFinite)); assert(state.morph.every(weight => weight >= 0 && weight <= 1));
+  assert(state.morph.slice(1).filter(weight => weight > 1e-12).length <= 2);
+  assert(state.morph.reduce((sum, weight) => sum + weight, 0) <= 1 + 1e-12);
+}
+function neutralArm(state) { assert(state.morph.every(weight => weight === 0)); assert.equal(state.greeting.stage, 'idle'); }
+function raisedArm(state) { assert.equal(state.greeting.stage, 'wave'); assert.equal(state.greeting.armLift, 1); assert(state.greeting.handCenter[1] > 1.55); }
 
 let mf, browser, origin, databaseCounts;
 const assetsPromises = [];
@@ -428,7 +460,7 @@ async function png(page, day, quality, label, state) {
   const file = day[0] + '-' + quality + '-' + label + '.png';
   const uri = await page.locator('[data-scene="spirit"] canvas').evaluate(canvas => canvas.toDataURL('image/png'));
   const bytes = Buffer.from(uri.split(',')[1], 'base64'); await fs.writeFile(path.join(output, file), bytes);
-  images.push({ file, day, quality, label, time: state.time, waveWeight: state.morph[0], pixels: state.pixels, pngSHA256: sha(bytes) });
+  images.push({ file, day, quality, label, time: state.time, sourceWaveWeight: state.morph[0], armLift: state.greeting.armLift, wrist: state.greeting.wrist, pixels: state.pixels, pngSHA256: sha(bytes) });
 }
 async function selectDay(page, day) {
   await page.getByLabel('정령과 동반자 · 일주').evaluate((select, value) => {
@@ -440,7 +472,7 @@ async function fullPagePng(page, quality, label, state) {
   const file = '계-' + quality + '-' + label + '.png';
   const bytes = await page.screenshot({ fullPage: true, animations: 'disabled' });
   await fs.writeFile(path.join(output, file), bytes);
-  images.push({ file, quality, label, time: state.time, waveWeight: state.morph[0], pngSHA256: sha(bytes) });
+  images.push({ file, quality, label, time: state.time, sourceWaveWeight: state.morph[0], armLift: state.greeting.armLift, wrist: state.greeting.wrist, pngSHA256: sha(bytes) });
 }
 async function freshNativeOpticalBaseline(page, selected, quality) {
   const selectedMeta = await page.evaluate(async () => {
@@ -476,11 +508,11 @@ async function freshNativeOpticalBaseline(page, selected, quality) {
   // then renders *every* previous frame, not only a warm cached final frame.
   await selectDay(page, '을축'); await selectDay(page, '계유'); await button(page, '정령 정면과 움직임 초기화');
   await button(page, '정령 움직임 재생'); await page.evaluate(() => window.__spiritWorkerQa.advanceNative(36, 1000 / 60));
-  await tap(page); await page.evaluate(() => window.__spiritWorkerQa.advanceNative(36, 1000 / 60));
+  await tap(page); await page.evaluate(() => window.__spiritWorkerQa.advanceNative(72, 1000 / 60));
   for (let i = 0; i < 5; i++) await tap(page);
   await button(page, '정령 움직임 일시정지'); await side(page);
   const allNative = await page.evaluate(snapshot); valid(allNative, '계유', quality);
-  assert(Math.abs(allNative.time - selected.time) < 1e-10); assert(Math.abs(allNative.morph[0] - selected.morph[0]) < 1e-10);
+  assert(Math.abs(allNative.time - selected.time) < 1e-10); allNative.morph.forEach((weight, index) => assert(Math.abs(weight - selected.morph[index]) < 1e-10));
   allNative.bodyMatrix.forEach((value, index) => assert(Math.abs(value - selected.bodyMatrix[index]) < 1e-10));
   assert.deepEqual(allNative.frame, selected.frame);
   const comparison = await page.evaluate(() => {
@@ -500,7 +532,7 @@ async function freshNativeOpticalBaseline(page, selected, quality) {
     return { changedPixels, changedBodyPixels, bodyPixels, meanAbsoluteDifference: sum / after.length,
       bodyMeanAbsoluteDifference: bodySum / (bodyPixels * 4), maxChannelDifference: max };
   });
-  const evidence = { quality, selected, selectedMeta, sameTimeRedraw: redraw, allNative, comparison, nativePreviousFrames: 72 };
+  const evidence = { quality, selected, selectedMeta, sameTimeRedraw: redraw, allNative, comparison, nativePreviousFrames: 108 };
   opticalBaselines.push(evidence);
   await png(page, '계유', quality, 'side-all-native', allNative); await fullPagePng(page, quality, 'side-ui-all-native', allNative);
   assert.equal(redraw.pixels, selected.pixels, 'Same-time production native redraw must preserve optical pixels');
@@ -541,22 +573,19 @@ async function fireBlendingProof(page, state, quality) {
       fireRGBA: at(290, 100), groundRGBA: at(420, 430) };
   });
   const image = images.findLast(item => item.file === '병-' + quality + '-side.png');
-  const evidence = { quality, time: state.time, waveWeight: state.morph[0],
+  const evidence = { quality, time: state.time, sourceWaveWeight: state.morph[0], armLift: state.greeting.armLift, wrist: state.greeting.wrist,
     nativePixelsSha256: state.pixels, pngSha256: image.pngSHA256, samples,
-    blendedPasses: state.blendedPasses, reference: quality === 'high' ? originalFireReference : null };
+    blendedPasses: state.blendedPasses, historicalReference: quality === 'high' ? originalFireReference : null,
+    historicalComparisonApplicable: false,
+    reason: 'The requested raised-arm pose and capture time differ from the old limited-pose reference. Its old PNG is retained as historical evidence, not asserted equal.' };
   fireBlendingObservations.push(evidence);
   assert(samples.orangePartialAlphaPixels > 0); assert(samples.groundPartialAlphaPixels > 0);
   assert(state.blendedPasses.some(pass => pass.kind === 'fire' && pass.target === 'canvas'));
   assert(state.blendedPasses.some(pass => pass.kind === 'ground' && pass.target === 'canvas'));
-  if (quality === 'high') {
-    assert.deepEqual(samples.dimensions, originalFireReference.dimensions);
-    assert(Math.abs(state.time - originalFireReference.time) < 1e-10);
-    assert(Math.abs(state.morph[0] - originalFireReference.waveWeight) < 1e-10);
-    samples.fireRGBA.forEach((value, index) => assert(Math.abs(value - originalFireReference.fireRGBA[index]) <= 2));
-    samples.groundRGBA.forEach((value, index) => assert(Math.abs(value - originalFireReference.groundRGBA[index]) <= 2));
-    assert.equal(state.pixels, originalFireReference.nativePixelsSha256, 'All native fire/ground pixels must retain original blending');
-    assert.equal(image.pngSHA256, originalFireReference.pngSha256, 'Whole fire side PNG must match the retained original frame');
-  }
+  await page.evaluate(() => window.__spiritWorkerQa.view.renderRef.current());
+  const redraw = await page.evaluate(snapshot); valid(redraw, '병인', quality);
+  assert.equal(redraw.pixels, state.pixels, 'Current raised-arm fire/ground pixels remain exact on a same-time native redraw');
+  evidence.sameTimeRedraw = { pixels: redraw.pixels, bodyPasses: redraw.bodyPasses, blendedPasses: redraw.blendedPasses };
 }
 function validRoomMatrix(state) {
   const matches = state.roomCandidates.filter(upload => upload.sha256 === roomMatrixReference.sha256 &&
@@ -644,28 +673,28 @@ try {
         await ready(page, day); await button(page, '정령 정면과 움직임 초기화');
         const initial = await page.evaluate(snapshot);
         if (!initial.native) console.log(JSON.stringify({ stage: 'initial-native', day, quality, time: initial.time, draws: initial.draws, native: initial.native, kind: initial.kind }));
-        valid(initial, day, quality); assert.equal(initial.time, 0); assert.equal(initial.morph[0], 0);
+        valid(initial, day, quality); assert.equal(initial.time, 0); neutralArm(initial);
         await png(page, day, quality, 'front', initial);
         await page.evaluate(() => window.__spiritWorkerQa.advance(6, 100));
         const held = await page.evaluate(snapshot); valid(held, day, quality, false); assert.equal(held.time, 0); assert.equal(held.pixels, initial.pixels);
         await button(page, '정령 움직임 재생'); await page.evaluate(() => window.__spiritWorkerQa.advance(36, 1000 / 60));
         const idle = await page.evaluate(snapshot); valid(idle, day, quality); assert(Math.abs(idle.time - .6) < 1e-10);
-        assert.notEqual(idle.pixels, initial.pixels); assert.equal(idle.morph[0], 0); assert(Math.abs(idle.floor - initial.floor) < 1e-8);
-        await tap(page); await page.evaluate(() => window.__spiritWorkerQa.advance(36, 1000 / 60));
-        const wave = await page.evaluate(snapshot); valid(wave, day, quality); assert(wave.morph[0] > .3); assert(Math.abs(wave.floor - initial.floor) < 1e-8);
+        assert.notEqual(idle.pixels, initial.pixels); neutralArm(idle); assert(Math.abs(idle.floor - initial.floor) < 1e-8);
+        await tap(page); await page.evaluate(() => window.__spiritWorkerQa.advance(72, 1000 / 60));
+        const wave = await page.evaluate(snapshot); valid(wave, day, quality); raisedArm(wave); assert(Math.abs(wave.floor - initial.floor) < 1e-8);
         await png(page, day, quality, 'wave', wave);
-        const beforeRepeat = wave.morph[0]; for (let count = 0; count < 5; count++) await tap(page);
-        assert.equal((await page.evaluate(snapshot)).morph[0], beforeRepeat, 'Repeated tap cannot jump current weight');
+        const beforeRepeat = wave.morph; for (let count = 0; count < 5; count++) await tap(page);
+        const repeated = await page.evaluate(snapshot); assert.deepEqual(repeated.morph, beforeRepeat, 'Repeated tap cannot jump any current control'); assert.equal(repeated.greeting.queued, true);
         await button(page, '정령 움직임 일시정지');
         const paused = await page.evaluate(snapshot); await page.evaluate(() => window.__spiritWorkerQa.advance(5, 100));
         const still = await page.evaluate(snapshot); assert.equal(still.time, paused.time); assert.equal(still.pixels, paused.pixels);
         await side(page); const rotated = await page.evaluate(snapshot); valid(rotated, day, quality);
-        assert.equal(rotated.time, paused.time); assert.equal(rotated.morph[0], paused.morph[0]); assert.notEqual(rotated.pixels, paused.pixels);
+        assert.equal(rotated.time, paused.time); assert.deepEqual(rotated.morph, paused.morph); assert.notEqual(rotated.pixels, paused.pixels);
         assert(Math.abs(rotated.displayRotation[1] - Math.PI / 2) < .015); await png(page, day, quality, 'side', rotated);
         if (day === '병인') await fireBlendingProof(page, rotated, quality);
         const opticalBaseline = day === '계유' ? await freshNativeOpticalBaseline(page, rotated, quality) : null;
         await button(page, '정령 정면과 움직임 초기화'); const reset = await page.evaluate(snapshot); valid(reset, day, quality);
-        assert.equal(reset.time, 0); assert.equal(reset.morph[0], 0); assert.equal(reset.pixels, initial.pixels);
+        assert.equal(reset.time, 0); neutralArm(reset); assert.equal(reset.pixels, initial.pixels);
         // Compare frame rates at matched *animation* time. The existing Canvas
         // clamps 15 Hz's 66.7ms delta to .05 rather than equating wall duration.
         await tap(page); await button(page, '정령 움직임 재생'); await page.evaluate(() => window.__spiritWorkerQa.advance(36, 1000 / 60));
@@ -673,16 +702,16 @@ try {
         await button(page, '정령 움직임 일시정지'); await button(page, '정령 정면과 움직임 초기화'); await tap(page);
         await button(page, '정령 움직임 재생'); await page.evaluate(() => window.__spiritWorkerQa.advance(12, 1000 / 15));
         const fifteen = await page.evaluate(snapshot); valid(fifteen, day, quality);
-        assert(Math.abs(fifteen.time - sixty.time) < 1e-10); assert(Math.abs(fifteen.morph[0] - sixty.morph[0]) < 1e-10);
+        assert(Math.abs(fifteen.time - sixty.time) < 1e-10); fifteen.morph.forEach((weight, index) => assert(Math.abs(weight - sixty.morph[index]) < 1e-10));
         fifteen.bodyMatrix.forEach((value, index) => assert(Math.abs(value - sixty.bodyMatrix[index]) < 1e-10));
         const beforeGap = fifteen.time; await page.evaluate(() => window.__spiritWorkerQa.step(5000));
         const gap = await page.evaluate(snapshot); valid(gap, day, quality); assert(Math.abs(gap.time - beforeGap - .05) < 1e-10);
         await page.evaluate(() => window.__spiritWorkerQa.advance(150, 50));
-        const returned = await page.evaluate(snapshot); valid(returned, day, quality); assert.equal(returned.morph[0], 0);
+        const returned = await page.evaluate(snapshot); valid(returned, day, quality); neutralArm(returned);
         await button(page, '정령 움직임 일시정지');
         cases.push({ day, quality, initial, idle, wave, paused, rotated, reset, sixtyHz: sixty, fifteenHz: fifteen, timeGap: gap, returned,
-          opticalBaseline: opticalBaseline ? { changedPixels: opticalBaseline.comparison.changedPixels, nativePreviousFrames: 72 } : null,
-          checks: ['ready/pause stable', 'idle changes with neutral arm', 'native GPU body matrix equals CPU; active material time equals CPU', 'bounded original connected wave',
+          opticalBaseline: opticalBaseline ? { changedPixels: opticalBaseline.comparison.changedPixels, nativePreviousFrames: 108 } : null,
+          checks: ['ready/pause stable', 'idle changes with neutral arm', 'native GPU body matrix equals CPU; active material time equals CPU', 'three-cycle raised-hand controls on unchanged source mesh',
             'repeat taps no jump', 'paused drag same time/pose', 'exact reset', '15/60Hz at matched material time', '5s gap clamps to .05', 'returns to neutral idle'] });
       });
       if (probeOnly) continue;
@@ -706,12 +735,12 @@ try {
         // GPU cleanup under loss must preserve the CPU controllers and original
         // scene: a new actual UI tap still animates the body and its attachments.
         await tap(page); await button(page, '정령 움직임 재생');
-        await page.evaluate(() => window.__spiritWorkerQa.advance(36, 1000 / 60));
+        await page.evaluate(() => window.__spiritWorkerQa.advance(72, 1000 / 60));
         const restoredWave = await page.evaluate(snapshot); valid(restoredWave, '계유', quality);
-        assert(restoredWave.morph[0] > .3); assert.notEqual(restoredWave.pixels, restored.pixels);
+        raisedArm(restoredWave); assert.notEqual(restoredWave.pixels, restored.pixels);
         assert.notDeepEqual(restoredWave.accents, restored.accents);
         await page.evaluate(() => window.__spiritWorkerQa.advance(150, 50));
-        const restoredIdle = await page.evaluate(snapshot); valid(restoredIdle, '계유', quality); assert.equal(restoredIdle.morph[0], 0);
+        const restoredIdle = await page.evaluate(snapshot); valid(restoredIdle, '계유', quality); neutralArm(restoredIdle);
         await button(page, '정령 움직임 일시정지');
         Object.assign(lifecycleObservations.at(-1), { restoredWave, restoredIdle });
         // The profile button switches to the real PlanetCanvas, unmounting this
@@ -789,7 +818,7 @@ finally {
       'Synthetic rAF/performance clock and skipped intermediate draws; CPU motion/effects update every stepped frame, selected screenshots/native uniform readbacks use real draw calls.',
       'Existing Canvas safeDelta caps each gap at .05 seconds, so 15/60Hz comparison matches animation time rather than wall duration.',
       'Native body draws/model matrices are required for every case. Static bark/stone can optimize out uStemTime; native active time assertions cover the other animated recipes.',
-      'Only the original bounded .45 pose-study morph is exercised; local joint/topology CPU measurements and captured appearance are not a new production rig or global nonintersection proof.'] };
+      'Original source geometry/morph remains unchanged. Ten owned derived morph controls raise the joined arm and wave three times; at most two are active. Local topology, surface following and captured appearance are bounded validation, not a skeletal rig or global nonintersection proof.'] };
   await fs.writeFile(path.join(output, 'report.json'), JSON.stringify(report, null, 2) + '\n');
   await browser?.close(); await mf?.dispose();
   console.log(JSON.stringify({ status: report.status, cases: cases.length, checks: checks.length, images: images.length, builtServerSha256, harnessSHA256 }));

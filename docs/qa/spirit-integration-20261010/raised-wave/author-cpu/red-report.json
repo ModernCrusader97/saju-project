@@ -1,0 +1,27 @@
+{
+  "status": "FAIL",
+  "sourceGLB_SHA256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+  "moduleSHA256": "92454b392446e9a85814aafd5653518ad7694d9b4465f3436353a6792d66377f",
+  "testResults": [
+    {
+      "name": "the actual original mitten reaches beside the face before its greeting",
+      "status": "FAIL",
+      "error": "Hand must rise beside the face; original distal-mitten centroid only reached y=1.0300"
+    }
+  ],
+  "handVertices": 734,
+  "raisedHand": {
+    "rest": [
+      0.7809096651116249,
+      0.7829354273850652,
+      0.16230660935797872
+    ],
+    "maximumY": 1.0300342294656022,
+    "atMaximum": [
+      0.8119741853323929,
+      1.0300342294656022,
+      0.19184243919338992
+    ],
+    "verticalTravel": 0.24709880208053703
+  }
+}

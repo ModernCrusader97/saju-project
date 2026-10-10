@@ -18,7 +18,7 @@ await build({ stdin: { contents: "export * from './lib/planet/approved-spirit-mo
   outfile: entry, bundle: true, platform: 'node', format: 'esm', packages: 'external' });
 const { createApprovedSpiritMotion, APPROVED_SPIRIT_WAVE_MAX_WEIGHT } = await import(pathToFileURL(entry).href);
 assert(APPROVED_SPIRIT_WAVE_MAX_WEIGHT > 0 && APPROVED_SPIRIT_WAVE_MAX_WEIGHT <= .45,
-  'Limited study greeting must stay inside the conservative measured .45 bound');
+  'The preserved source pose study must retain the measured .45 analysis bound');
 const bytes = await fs.readFile('public/spirits/jade-v002/body.glb');
 const source = await fs.readFile('assets/source-reference/saju-b-evolving-light-v002/reference/SaJu_Jade_Approved_Static_Material.glb');
 assert(bytes.equals(source), 'Runtime GLB must match its archived source byte for byte');
@@ -32,11 +32,11 @@ const sha = array => createHash('sha256').update(Buffer.from(array.buffer, array
 const hashes = geometry => Object.fromEntries([
   ...Object.entries(geometry.attributes).map(([name, attribute]) => [name, sha(attribute.array)]),
   ['index', sha(geometry.index.array)],
-  ...Object.entries(geometry.morphAttributes).flatMap(([name, attributes]) => attributes.map((attribute, i) => [`morph:${name}:${i}`, sha(attribute.array)])),
+  ...Object.entries(geometry.morphAttributes).flatMap(([name, attributes]) => attributes.slice(0, referenceBody.geometry.morphAttributes[name].length).map((attribute, i) => [`morph:${name}:${i}`, sha(attribute.array)])),
 ]);
 const expectedHashes = hashes(referenceBody.geometry);
 const geometry = referenceBody.geometry, positions = geometry.getAttribute('position'), target = geometry.morphAttributes.position[0];
-const index = geometry.index, waveIndex = 0, stems = ['甲', '乙', '丙', '丁', '戊', '己', '庚', '辛', '壬', '癸'];
+const index = geometry.index, stems = ['甲', '乙', '丙', '丁', '戊', '己', '庚', '辛', '壬', '癸'];
 const report = { status: 'PENDING', sourceGLB_SHA256: sha(bytes),
   moduleSHA256: sha(await fs.readFile('lib/planet/approved-spirit-motion.ts')),
   harnessSHA256: sha(await fs.readFile(new URL(import.meta.url))),
@@ -53,11 +53,15 @@ function fixture(stem = '甲', modifyFace) {
   model.add(root); let body;
   root.traverse(object => { if (object.isMesh && object.geometry.getAttribute('position').count === 33207) body = object; });
   body.morphTargetInfluences.fill(0); modifyFace?.(root);
-  return { model, root, body, motion: createApprovedSpiritMotion(root, body, stem) };
+  const sourceGeometry = body.geometry, sourceDictionary = body.morphTargetDictionary, sourceInfluences = body.morphTargetInfluences;
+  return { model, root, body, sourceGeometry, sourceDictionary, sourceInfluences, motion: createApprovedSpiritMotion(root, body, stem) };
 }
 const pose = f => ({ root: { position: f.root.position.toArray(), quaternion: f.root.quaternion.toArray(), scale: f.root.scale.toArray() },
   morph: [...f.body.morphTargetInfluences], faces: f.root.children.filter(o => /almond_gaze|small_eye_glint|expressive_brow|quiet_smile/.test(o.name))
     .map(o => ({ name: o.name, position: o.position.toArray(), quaternion: o.quaternion.toArray(), scale: o.scale.toArray() })) });
+const handIDs = []; for (let i = 0; i < positions.count; i++) if (positions.getX(i) > .69 && positions.getY(i) > .70 && positions.getY(i) < .87) handIDs.push(i);
+const handCenter = f => { const result = new THREE.Vector3(), v = new THREE.Vector3(); for (const id of handIDs) result.add(f.body.getVertexPosition(id, v)); return result.multiplyScalar(1 / handIDs.length); };
+const response = f => f.body.userData.approvedSpiritGreeting.armLift;
 const nearPose = (a, b, epsilon = 1e-12) => {
   const compare = (x, y) => { if (Array.isArray(x)) x.forEach((v, i) => compare(v, y[i]));
     else if (x && typeof x === 'object') Object.keys(x).forEach(k => compare(x[k], y[k]));
@@ -77,7 +81,7 @@ test('original GLB neutral pose, face transforms and geometry remain exact at t=
   const f = fixture(); const neutral = pose(f);
   assert.deepEqual(f.root.position.toArray(), [0, 0, 0]); assert.deepEqual(f.root.scale.toArray(), [1, 1, 1]);
   f.motion.update(0); assert.deepEqual(pose(f), neutral);
-  f.motion.triggerReaction(); f.motion.update(.7); assert(f.body.morphTargetInfluences[waveIndex] > 0);
+  f.motion.triggerReaction(); f.motion.update(.7); assert(response(f) > 0);
   f.motion.reset(); assert.deepEqual(pose(f), neutral);
   assert.deepEqual(hashes(f.body.geometry), expectedHashes);
   assert.equal(f.model.position.x, -.42); assert.deepEqual(f.model.scale.toArray(), [1, 1, 1.35]);
@@ -89,7 +93,7 @@ test('all ten stem idles are bounded, distinct, neutral-arm and keep the origina
   for (const stem of stems) {
     const f = fixture(stem), floor = fullFloor(f);
     for (const t of [0, .25, .6, 1.3, 2.4, 4.7, 8.8, 15, 23.1]) {
-      f.motion.update(t); assert.equal(f.body.morphTargetInfluences[waveIndex], 0);
+      f.motion.update(t); assert(f.body.morphTargetInfluences.every(weight => weight === 0));
       assert(Math.abs(f.root.position.x) <= .012); assert(Math.abs(f.root.scale.y - 1) <= .003 + 1e-12);
       assert(Math.abs(f.root.rotation.z) <= .006 + 1e-12);
       maxFloorError = Math.max(maxFloorError, Math.abs(fullFloor(f) - floor));
@@ -118,31 +122,35 @@ test('sole subset matches the full posed mesh across the complete allowed roll/s
   report.floorSubset = { totalVertices: positions.count, candidates: sole.length, affectedVertices: affected, minAffectedY, cases, maxSubsetError: error };
 });
 
-test('greeting has two small waves, opens its blink and returns exactly to the moving idle', () => {
+test('greeting raises the original mitten, makes three distinct wrist waves and returns to moving idle', () => {
   const f = fixture('丙'), idle = fixture('丙'); f.motion.triggerReaction();
-  let maximum = 0, peaks = 0, lastDifference = 0, minEyeScale = Infinity;
+  let maximumY = 0, minWaveX = Infinity, maxWaveX = -Infinity, maxima = 0, minima = 0, previousX, previousDirection = 0, minEyeScale = Infinity;
   for (let frame = 1; frame <= 720; frame++) {
-    const time = frame / 120; f.motion.update(time); const weight = f.body.morphTargetInfluences[0];
-    assert(weight >= 0 && weight <= APPROVED_SPIRIT_WAVE_MAX_WEIGHT); maximum = Math.max(maximum, weight);
-    const prior = f.body.userData.qaLastWeight ?? 0, difference = weight - prior;
-    if (difference < -1e-7 && lastDifference > 1e-7) peaks++;
-    if (Math.abs(difference) > 1e-7) lastDifference = difference;
-    f.body.userData.qaLastWeight = weight;
-    const eye = f.root.children.find(o => o.name.includes('almond_gaze'));
-    minEyeScale = Math.min(minEyeScale, eye.scale.y);
+    const time = frame / 120; f.motion.update(time); const hand = handCenter(f), greeting = f.body.userData.approvedSpiritGreeting;
+    maximumY = Math.max(maximumY, hand.y); assert.equal(f.body.morphTargetInfluences[0], 0, 'Source pose stays neutral');
+    assert(greeting.controlWeights.filter(weight => weight > 1e-10).length <= 2);
+    if (greeting.stage === 'wave') {
+      minWaveX = Math.min(minWaveX, hand.x); maxWaveX = Math.max(maxWaveX, hand.x);
+      const difference = previousX === undefined ? 0 : hand.x - previousX;
+      const direction = Math.abs(difference) > 1e-7 ? Math.sign(difference) : previousDirection;
+      if (direction !== previousDirection && previousDirection) { if (direction < 0) maxima++; else minima++; }
+      if (direction) previousDirection = direction; previousX = hand.x;
+      assert(hand.y > 1.6, 'Wrist waves occur beside the face');
+    }
+    minEyeScale = Math.min(minEyeScale, f.root.children.find(o => o.name.includes('almond_gaze')).scale.y);
   }
-  assert(maximum > APPROVED_SPIRIT_WAVE_MAX_WEIGHT - 1e-4); assert(peaks >= 2);
+  assert(maximumY > 1.70); assert(maxWaveX - minWaveX > .13); assert.equal(maxima, 3); assert.equal(minima, 3);
   assert(minEyeScale < .057 * .5); idle.motion.update(6); nearPose(pose(f), pose(idle));
-  report.greeting = { maximumWeight: maximum, smallWavePeaks: peaks, minEyeScale, returnedToIdle: true };
+  report.greeting = { maximumY, sideToSideTravel: maxWaveX - minWaveX, maxima, minima, minEyeScale, returnedToIdle: true };
   f.motion.dispose(); idle.motion.dispose();
 });
 
 test('active tap retriggers coalesce without any pose jump, including while paused', () => {
-  const f = fixture(); f.motion.triggerReaction(); f.motion.update(.43); const beforeTap = pose(f);
+  const f = fixture(); f.motion.triggerReaction(); f.motion.update(.43); const beforeTap = pose(f), beforeTapHand = handCenter(f);
   for (let i = 0; i < 100; i++) f.motion.triggerReaction();
   assert.deepEqual(pose(f), beforeTap); f.motion.update(.43); assert.deepEqual(pose(f), beforeTap);
-  f.motion.update(.43 + 1e-6); assert(Math.abs(f.body.morphTargetInfluences[0] - beforeTap.morph[0]) < 1e-5);
-  f.motion.update(3.4); assert(f.body.morphTargetInfluences[0] > 0, 'One coalesced second greeting survives');
+  f.motion.update(.43 + 1e-6); assert(handCenter(f).distanceTo(beforeTapHand) < 1e-5);
+  f.motion.update(3.4); assert(response(f) > 0, 'The raised-hand greeting remains active');
   f.motion.update(8); assert.equal(f.body.morphTargetInfluences[0], 0, 'Repeated tap queue remains bounded');
   const idle = fixture(); idle.motion.update(8); nearPose(pose(f), pose(idle));
   f.motion.dispose(); idle.motion.dispose();
@@ -152,12 +160,12 @@ test('raised arm and the complete reaction stay planted, with a smooth return un
   const f = fixture('己'); f.model.rotation.y = .85;
   const floor = fullFloor(f), originalChildren = [...f.root.children];
   f.motion.triggerReaction(); let error = 0, largestWeightStep = 0, previousWeight = 0;
-  for (let frame = 1; frame <= 720; frame++) {
-    f.motion.update(frame / 240); const weight = f.body.morphTargetInfluences[0];
+  for (let frame = 1; frame <= 1200; frame++) {
+    f.motion.update(frame / 240); const weight = response(f);
     largestWeightStep = Math.max(largestWeightStep, Math.abs(weight - previousWeight)); previousWeight = weight;
     if (frame % 24 === 0) error = Math.max(error, Math.abs(fullFloor(f) - floor));
   }
-  assert(error < 1e-9); assert(largestWeightStep < .008); assert.equal(previousWeight, 0);
+  assert(error < 1e-9); assert(largestWeightStep < .01); assert.equal(previousWeight, 0);
   assert.equal(f.model.rotation.y, .85); assert.deepEqual(f.root.children, originalChildren, 'No separate arm or replacement mesh is introduced');
   assert.deepEqual(hashes(f.body.geometry), expectedHashes);
   report.reactionFloor = { yaw: .85, maxFloorError: error, largestWeightStepAt240Hz: largestWeightStep, originalChildrenPreserved: true };
@@ -190,8 +198,9 @@ test('dispose restores captured facial transforms and neutral root, then every m
   const f = fixture('壬', root => root.traverse(o => { if (o.isMesh && /almond_gaze|small_eye_glint|expressive_brow|quiet_smile/.test(o.name)) {
     o.position.x += .002; o.position.y += .001; o.rotation.z += .003; o.scale.multiplyScalar(.99);
   } }));
-  const original = pose(f); f.motion.triggerReaction(); f.motion.update(.6); assert.notDeepEqual(pose(f), original);
+  const original = pose(f); original.morph = original.morph.slice(0, f.sourceInfluences.length); f.motion.triggerReaction(); f.motion.update(.6); assert.notDeepEqual(pose(f), original);
   f.motion.dispose(); assert.deepEqual(pose(f), original);
+  assert.equal(f.body.geometry, f.sourceGeometry); assert.equal(f.body.morphTargetDictionary, f.sourceDictionary); assert.equal(f.body.morphTargetInfluences, f.sourceInfluences);
   for (const t of [1, 8, 0]) { f.motion.triggerReaction(); f.motion.update(t); f.motion.reset(); f.motion.dispose(); }
   assert.deepEqual(pose(f), original); assert.deepEqual(hashes(f.body.geometry), expectedHashes);
 });
@@ -205,7 +214,7 @@ test('geometry queries and allocations are confined to setup, with cached sole u
   f.motion.dispose();
 });
 
-test('bounded real morph preserves welded seams and has no collapsed triangles, rest-normal reversal or new adjacent folds', () => {
+test('the preserved original limited study still preserves welded seams and has no collapsed triangles, rest-normal reversal or new adjacent folds', () => {
   const edges = new Map(), triangles = [], edgeFaces = new Map(), welds = new Map();
   for (let i = 0; i < positions.count; i++) {
     const key = [positions.getX(i), positions.getY(i), positions.getZ(i)].map(v => Math.round(v * 1e6)).join(':');
@@ -282,8 +291,8 @@ test('bounded real morph preserves welded seams and has no collapsed triangles, 
 
 nodeTest.after(async () => {
   report.status = report.testResults.length === 11 && report.testResults.every(result => result.status === 'PASS') ? 'PASS' : 'FAIL';
-  report.limitations = ['CPU uses real approved GLB with placeholder texture I/O.', 'Single limited pose-study morph, not a new production animation rig.',
-    'The .45 bound was reduced from .60 after triangle compression/orientation probes; actual front/side GPU and joint appearance remain a separate required review.',
+  report.limitations = ['CPU uses real approved GLB with placeholder texture I/O.', 'Original limited pose study is retained at neutral; raised greeting uses runtime morphs derived from original connected topology.',
+  'The original .45 pose-study bound is separate from the derived raised greeting; actual front/side GPU and joint appearance remain a separate required review.',
     'Topology assertions are local measurements, not a proof of global nonintersection or artistic approval.'];
   await fs.writeFile(path.join(output, 'report.json'), JSON.stringify(report, null, 2) + '\n');
 });

@@ -1,12 +1,14 @@
 # 십간·패션·이슬·얼굴·인사 통합 검증
 
-2026-10-10의 보존 소스에서 만든 **새 구현**이다. 미확보 후보 `a97c418`과 동일하게 복원했다고 주장하지 않는다. 이 문서는 진행 중 검증 단위의 근거를 보존하며, 최종 배포 결과는 `release.json`의 실제 원격 SHA·Site 버전·종료 상태로 판단한다.
+2026-10-10의 보존 소스에서 만든 **새 구현**이다. 미확보 후보 `a97c418`과 동일하게 복원했다고 주장하지 않는다. 이 문서는 구현과 로컬 검증 근거를 보존한다. 정상 push/readback과 Site 배포 결과는 별도 전달 파일 `/workspace/saju-spirit-integration-release-20261010.json`의 실제 원격 SHA·Site 버전·종료 상태로 판단한다. 로컬 검사 결과만으로 배포 성공을 가정하지 않는다.
 
 ## 확인한 기준과 누락
 
 기존 운영 Site는 소유자 전용 v31, 실제 원본 커밋 `a4011b690078001b148403a923735368b9768835`였다. 비공개 GitHub의 연결/검증 체크포인트는 `9ec0150bf7f595f28541d91355bf64143bd137e8`이었다. 이슬의 독립 단위 `1f1aa08ff74a1934a1ceb908957e041ffd97df41`은 정상 push 뒤886 tracked 파일을 원격에서 바이트 비교했다. 패션의 독립 후보는 `3fb604600de32687df4f2b2d3561e88ff9657486`으로 보존되어 있으나 v31에는 연결되지 않았다.
 
 통합 branch는 `feature/spirit-fashion-dew-water-20261010`이며, 이슬1f에서 시작해 패션 동작 구현 `c4570c8`만 가져왔다. 이전 공통 수정 이력을 중복 적용하지 않았다. 원래 운영 소스 a401도 조상 이력에 포함되어 있다.
+
+실제 최신 GitHub main은 `2e2d82b05f87b39ff8057ae914e8dfa01100a974`이며, 통합 branch의 조상임을 확인했다. main의 v002 원본 패키지와 이 branch의 해당 파일들은 동일하다. 처음 전달된 `43e2d8dc6efe1654641e639397f37d0ea44f525a`는 현재 보호 대상 `maint/guin-map-loading-20261009`의 SHA다. 두 원격 branch는 최종 push 전후에 비교한다.
 
 | 항목 | 기존 운영 v31 | 이번 통합 / 검증 경계 |
 |---|---|---|
@@ -20,7 +22,7 @@
 | 癸 | 표면을 미끄러지는 작은 이슬 | 짝 경로의 응결→접근→부피 보존 합침→큰 방울 낙하→재응결. 한정된 표면/중력 효과이며 전체 유체 구현 아님 |
 | 패션 | 운영 UI 연결 누락 | 보존된4슬롯/6품목 후보 연결. 기본은 미착용, stem별 browser storage |
 | 얼굴 | 壬/癸 원래 얼굴의 흐린 재굴절상 | 기존 얼굴7개만 transmission 뒤에 그리도록 조정. 눈 형태·깜박임·그림자 설정 보존 |
-| 인사 | 단일 제한 모프 .45의 작은 흔들림 | 새 사용자 정정에 따라 얼굴 높이 팔 올림→손2–3회 흔들기→내리기 검증 진행. 완료 결과는 별도 motion 근거로 판정 |
+| 인사 | 단일 제한 모프 .45의 작은 흔들림 | 원래 연결 몸체에서 얼굴 높이로 올림→손3회 흔들기→부드럽게 내리기. 원본 attribute와 기존 깜박임 보존 |
 | 기존12지 | 공통 원본 생성기가 실제 연결됨 | 조형 교체 없음. 마지막 피드백/후보와의 대조 한계를 아래 문서에 기록 |
 
 ## 원본과 실제 측정
@@ -32,6 +34,14 @@ B GLB SHA256은 `0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b8
 [임수 Native report](water/webgl/report.json)는 같은 GLB·loader·얼굴 경로·카메라·포즈·시각·조명에서 재질 두 버전만 교체했다. 실제 float GPU field를 시각0/1.25/5.5에 읽어 각 약53300표본에서 큰 요철 RMS비0.5와 오차0을 측정했다. 나머지 작은 요철 최대 오차는 `4.6566128730773926e-9`이다. high/low의16 PNG도 보존했다. 물결은 bump normal 요철이며 원래 silhouette의 vertex displacement가 아니다. [CPU recipe 검사](water/cpu/report.json)와 [변경 전 실패](water/cpu/initial-red.log)를 함께 기록했다.
 
 기존 인사 원본에는 뼈/skin weights가 없지만 `Gentle_wave_pose`의 상대 POSITION+NORMAL 모프와3초 weight animation이 있었다. 작은 동작은 제한 포즈/컨트롤러 설계 문제였다. 원본 파일이 없어서 생긴 문제라고 판정하지 않았다.
+
+[새 인사 CPU 및 전달 기록](raised-wave/delivery-report.json)은 원래 몸체의 연결 삼각형에서 런타임 전용 팔 제어를 만든다. 원래 모프는 0으로 유지하고, 파생10개를 포함한11개 중 최대2개만 활성화한다. 실제 손 중심은 y=.783에서 최대1.752로 올라가며 유지 구간 최저1.623, 좌우 이동 폭 .139, 최대/최소 각3회다. 202개 실제 Float32 모프 포즈의 seam gap·collapse·새 인접 fold·국소 방향 역전은 0이었다. 최소 면적 비 .640, 어깨 .919다. 최대 국소 edge stretch 5.088은 작은 UV seam이 아닌 안쪽 팔 연결 구간의 .0131→.0667 변화이며, 전체 self-intersection 부재를 증명하지 않는다.
+
+[정면 영상](raised-wave/review/raised-wave-front.mp4), [측면 영상](raised-wave/review/raised-wave-side.mp4), [선택 프레임](raised-wave/review/front-side-contact.png)은 실제77프레임씩의 Native 시퀀스다. 전체234 PNG hash와 시각은 함께 보존했다. **이 독립 시퀀스의 loader adapter는 실제로 FALSE였다.** 몸체·패션·그림자의 시각 근거로만 사용하며 모래 생성 시점의 제어 개수 근거로 사용하지 않는다. 수정된 QA hook의 module 변환 검사는 GPU 없이 통과했다. 최종 통합 loader는 제어를 먼저 설치한 뒤 surface effects를 생성한다. 이 순서와 실제 모래·패션 추종은 별도 통합 CPU 및 정확한 production Worker 검사로 확인한다.
+
+원래 몸체·UV·depth를 보존하는 파생 geometry는 소유자가 한 번 해제한 뒤 원래 geometry/모프 사전을 복원한다. 최종 Native 검사에서는 context loss 전에 생성된 body/환경/효과 버퍼의 명시적 삭제를 읽었다. 공유 immutable 제어 cache는 원래 position/normal/index의 모든 바이트를 비교하며 한 항목 약8.72MiB를 보존한다. 독립 초기 생성246ms, 다음 새 GLTF parse3.24/2.59ms였으며 물리 기기 성능으로 해석하지 않는다. 모래의 한정된 상대 모프 refit 최적화는 Three의 계산 순서를 보존한다. 약249만 축 비교의 오차0, 기존3ms median 기준에서1.59ms였다.
+
+최종 검증은 [production 근거](final-production/README.md)에 기록한다. CPU119/119, 새 incremental cache를 쓰지 않은 타입 검사, 변경 제품 경로 lint, build와 원본 보존 검사가 통과했다. lint에는 기존 Canvas 이미지 권고1개가 남아 있으며 전체 repository lint 통과를 주장하지 않는다. 기본 렌더·일시정지·반복 탭·회전·복구·해제의 정확한 Worker 검사는19/19,12조합44 PNG다. 원래 production327파일 중318개는 바이트 동일하며, 변경9개와 새 기능 파일의 hash를 기록했다. 런타임 GLB는 원본과 바이트 동일하다. 실제 십간·고저 품질 패션28/28(40조합)과 같은 빌드의 행성 진입·외형8/8도 통과했다.
 
 [기존12지 현재 대조](zodiac-current-assessment.md)는 생성기 자체를 원본으로 인정하고, GLB 미발견이나 `Temporary` 주석을 최종 승인 판단으로 사용하지 않는다. 실제 조형·눈·idle은 dffb의 생성 구간과 바이트 동일하다. 소/돼지4다리와 작은 머리 idle은 존재하지만 전달된 긴 뱀형 공중 똬리 용의 마지막 피드백 반영은 확인되지 않았다. 미확보 후보를 새 동물로 대체하거나 연결 완료라고 주장하지 않는다.
 

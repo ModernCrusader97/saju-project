@@ -77,8 +77,8 @@ export async function loadApprovedSpirit(dayKey: string, monthKey: string, quali
     disposeObject(group);
     throw new Error('Approved B body does not match the verified undeformed adapter.');
   }
-  // Bind original reference coordinates before reusing the preserved limited
-  // wave morph. Original POSITION/UV/targets are never rewritten.
+  // Bind original reference coordinates before installing owned runtime arm
+  // controls. Original POSITION/UV/targets are never rewritten.
   body.morphTargetInfluences?.fill(0);
   const oldMaterials = Array.isArray(body.material) ? body.material : [body.material];
   const day = getSpiritStemPreset(dayKey), month = getSpiritStemPreset(monthKey);
@@ -141,6 +141,8 @@ export async function loadApprovedSpirit(dayKey: string, monthKey: string, quali
     }
     for (const material of oldMaterials) disposeMaterial(material);
 
+    // Install owned arm controls before effects cache the moving triangle set.
+    motion = createApprovedSpiritMotion(motionRoot, body, stem);
     effects = createSurfaceStemAccents(stem, { meshes: [body], quality, allowMorphTargets: true });
     const features = effects.group;
     features.userData.surfaceAccentDiagnostics = effects.diagnostics;
@@ -167,7 +169,6 @@ export async function loadApprovedSpirit(dayKey: string, monthKey: string, quali
     });
     const eyes: THREE.Mesh[] = [];
     model.traverse(object => { const mesh = object as THREE.Mesh; if (mesh.isMesh && mesh.name.includes('almond_gaze')) eyes.push(mesh); });
-    motion = createApprovedSpiritMotion(motionRoot, body, stem);
     fashion = createSpiritFashion({ body, model: motionRoot, eyes, stem: fashionStem(dayKey), quality,
       presentationDepth: APPROVED_BODY_PRESENTATION_DEPTH });
     let currentTime = 0, disposed = false;

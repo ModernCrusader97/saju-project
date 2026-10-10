@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "nativeFrames": 234,
+  "sources": [
+    {
+      "role": "motion",
+      "path": "lib/planet/approved-spirit-motion.ts",
+      "beforeNativeSHA256": "0e5af540f134fff609d5554e5ee7be452e3aa4dfc73f03de3b1348480f6a8ee1",
+      "afterNativeSHA256": "0e5af540f134fff609d5554e5ee7be452e3aa4dfc73f03de3b1348480f6a8ee1",
+      "unchanged": true
+    },
+    {
+      "role": "armControls",
+      "path": "lib/planet/approved-spirit-arm-controls.ts",
+      "beforeNativeSHA256": "c2e57055797ac9aaed58206402b20514e775877c2b9e19c35dd472986d0d2b46",
+      "afterNativeSHA256": "c2e57055797ac9aaed58206402b20514e775877c2b9e19c35dd472986d0d2b46",
+      "unchanged": true
+    },
+    {
+      "role": "sandCollision",
+      "path": "lib/planet/surface-fissure-sand.ts",
+      "beforeNativeSHA256": "1cf4eb177eb69b90b06e41a3393eda065dcb07249390e51e3c3395576aa0c4b1",
+      "afterNativeSHA256": "1cf4eb177eb69b90b06e41a3393eda065dcb07249390e51e3c3395576aa0c4b1",
+      "unchanged": true
+    },
+    {
+      "role": "isolatedLoader",
+      "path": "lib/planet/approved-jade-spirit.ts",
+      "baselineSHA256": "64c85f63d50e63f57a53e4bcb10a98383657e2f3fce2fd9e5aaa7bde65a1a543",
+      "afterNativeSHA256": "64c85f63d50e63f57a53e4bcb10a98383657e2f3fce2fd9e5aaa7bde65a1a543",
+      "unchanged": true
+    },
+    {
+      "role": "restBinding",
+      "path": "lib/planet/character-rest-coordinates.ts",
+      "baselineSHA256": "a76a2e165b704e9665e5a45c975006a44cf5710cf4cc44bae92eee8cc5646e01",
+      "afterNativeSHA256": "a76a2e165b704e9665e5a45c975006a44cf5710cf4cc44bae92eee8cc5646e01",
+      "unchanged": true
+    }
+  ],
+  "nativeGeneratedHarnessSHA256": "2c8810e684e230defc9cebcd9fa5df3b3fa886fabab957a49f001e1f1f4b74b3",
+  "nativeGeneratedHarnessUnchanged": true,
+  "nativeFashionPath": "/workspace/saju-spirit-fashion-dew-water-20261010/lib/planet/spirit-fashion.ts",
+  "nativeFashionSHA256": "820a248cfe06e7940dbf779ea7071506a048b7b318d5f162927599f71548c3c1",
+  "lifecycleAdapter": false,
+  "lifecycleAdapterChange": "No loader change occurred in the captured run; its adapter failed to match the already-transformed code.",
+  "controllerResolverEditedDuringRun": "Only Node controller default fashion path resolution changed; the running process had already generated the unchanged browser harness with the identical explicit read-only fashion module path. Runtime production sources and generated browser harness did not change.",
+  "limits": [
+    "Isolated lifecycle adapter proof; final integrated loader and Worker/native evidence is owned by root.",
+    "Native Chromium SwiftShader, not physical mobile GPU.",
+    "Native sand cache constructor ordering was not proven by this capture. Actual integrated loader and high-sand Worker validation belong to root."
+  ],
+  "nativeMotionBeforeEffectsVerified": false,
+  "isolatedLoaderObservedOrder": "effects at line140, motion at line157",
+  "capturedBrowserHarnessPath": "captured-harness.mjs",
+  "nativeGeneratedHarnessUnchangedScope": "Generated harness was unchanged throughout capture and checked on completion. This immutable archived capture copy matches the native report SHA256.",
+  "futureQAFix": "Pre-transform regex now verifies order, injects observed effects-constructor morph count, and supports GPU-free fetched-loader verification; not rendered in this capture."
+}

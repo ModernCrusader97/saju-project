@@ -1,0 +1,3751 @@
+{
+  "status": "PASS",
+  "frames": [
+    {
+      "file": "기사-front-000.png",
+      "bytes": 135003,
+      "SHA256": "a0bff24c837cc1afabc0f0902a45ff15b4e2ab7a8f262fc6000c247ee2e2de8b",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 0,
+      "progress": 0,
+      "stage": "raise",
+      "hand": [
+        0.7809096651116249,
+        0.7829354273850652,
+        0.16230660935797872
+      ],
+      "nativePixelSHA256": "4131876fdcf00a42ae7932075da2dd99c45e711289289164c8caf568375a3193"
+    },
+    {
+      "file": "기사-front-001.png",
+      "bytes": 135106,
+      "SHA256": "75909e882d9194305f1b4359bcfdd89d9779949268bab6f18d91f24cc05ec87b",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 0.051157894736842104,
+      "progress": 0.013157894736842105,
+      "stage": "raise",
+      "hand": [
+        0.782218426047634,
+        0.7836405746996236,
+        0.16234696719414485
+      ],
+      "nativePixelSHA256": "be7eefdcdbda48297539d311609efb65b81c80d0670b7b3d5165550f75f693ef"
+    },
+    {
+      "file": "기사-front-002.png",
+      "bytes": 134978,
+      "SHA256": "3380275f794b5e8cdd258bcc9c0ea3db80488036daf35d29faeed4acd6c8538a",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 0.10231578947368421,
+      "progress": 0.02631578947368421,
+      "stage": "raise",
+      "hand": [
+        0.7905405111228615,
+        0.7881244309799239,
+        0.16260359263028215
+      ],
+      "nativePixelSHA256": "9f4242d1a5d9012d61e52102887f2c8062b830c913fed8988d20fa1ede4eb9dc"
+    },
+    {
+      "file": "기사-front-003.png",
+      "bytes": 134966,
+      "SHA256": "44b45a4bfc0fa72aa7c6d734ef75b69f9b1a5c6fb03d164d828b3289c259453d",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 0.15347368421052632,
+      "progress": 0.039473684210526314,
+      "stage": "raise",
+      "hand": [
+        0.8107086310887051,
+        0.7989908124880685,
+        0.1632255103991527
+      ],
+      "nativePixelSHA256": "d9e2c51082c1c4b492d12781aabb2bfd721e09b63ff86f91ff36776d182835bc"
+    },
+    {
+      "file": "기사-front-004.png",
+      "bytes": 135083,
+      "SHA256": "e313a6c6363a3a5b3b75b8bbdfb378638fcbe71cb9775f000ccd087c82b61b16",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 0.20463157894736841,
+      "progress": 0.05263157894736842,
+      "stage": "raise",
+      "hand": [
+        0.8454338188057046,
+        0.8177003966393865,
+        0.1642963197410785
+      ],
+      "nativePixelSHA256": "96babcf87b20601648d08915afd7905b89aad9871176981c9efc5e7c844d88dc"
+    },
+    {
+      "file": "기사-front-005.png",
+      "bytes": 135687,
+      "SHA256": "b4e359b5a4d2143fbacea1a5395ca56287ca2a95a34eda00c3561583bc5e16f7",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 0.2557894736842105,
+      "progress": 0.06578947368421052,
+      "stage": "raise",
+      "hand": [
+        0.8955883196289887,
+        0.8447231405153327,
+        0.1658429178029465
+      ],
+      "nativePixelSHA256": "f61eeb6ab082413cac0f9605b99ef8ab329f34d3b20179a85ec6b5e3a3f2cc67"
+    },
+    {
+      "file": "기사-front-006.png",
+      "bytes": 136119,
+      "SHA256": "9d68aeeda20cc0711fc132883c53e11982251ef885d773d4a17065e3e3dd3eff",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 0.30694736842105264,
+      "progress": 0.07894736842105263,
+      "stage": "raise",
+      "hand": [
+        0.951403322618957,
+        0.8925743428422662,
+        0.16784422303720462
+      ],
+      "nativePixelSHA256": "1e273b954a98a009eafcfb87e86650ada1478515580c9cc1df7dfeeeeb0fff8e"
+    },
+    {
+      "file": "기사-front-007.png",
+      "bytes": 136251,
+      "SHA256": "0a34509a3cc0d4fc182d33474107980b7da16a87eb83618e40713b1da67b205f",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 0.35810526315789476,
+      "progress": 0.09210526315789473,
+      "stage": "raise",
+      "hand": [
+        1.0140357507907252,
+        0.954208430777054,
+        0.17023989868153633
+      ],
+      "nativePixelSHA256": "77b1829b627bac2c8af3054a7d9c88b7f34d1a595356dc743fca389c2a81d7ef"
+    },
+    {
+      "file": "기사-front-008.png",
+      "bytes": 136520,
+      "SHA256": "074be10d8e0ac5e75b6b51695ff506959f971f356a89947a222a81611b347cb1",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 0.40926315789473683,
+      "progress": 0.10526315789473684,
+      "stage": "raise",
+      "hand": [
+        1.0699004999881219,
+        1.0364582834366065,
+        0.17293907633779587
+      ],
+      "nativePixelSHA256": "509fe65c9bbc3b851973f5a594eee29f2be3980795b722ded7f8f26cf495af08"
+    },
+    {
+      "file": "기사-front-009.png",
+      "bytes": 137080,
+      "SHA256": "37a9c9888525e5590b9459f311423bdb0226b1427864538881f5196ca4537ea3",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 0.46042105263157895,
+      "progress": 0.11842105263157894,
+      "stage": "raise",
+      "hand": [
+        1.1119078015651611,
+        1.1337176155483017,
+        0.17582907753596358
+      ],
+      "nativePixelSHA256": "35b765cd85a186c5eca59b42fc303588dd4aa6782bd26764c8209798f26041e6"
+    },
+    {
+      "file": "기사-front-010.png",
+      "bytes": 138224,
+      "SHA256": "4a27eaa4bb37032a8c3d1afeb1ba7abd273e1983f6881dae6bb961039f2f88c9",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 0.511578947368421,
+      "progress": 0.13157894736842105,
+      "stage": "raise",
+      "hand": [
+        1.1372459088106666,
+        1.2387764135994388,
+        0.17878414124333594
+      ],
+      "nativePixelSHA256": "7d0f3ed3a0f729bd5b1faa4984ae0de9587c7ca3adf264106d8a0839b054f290"
+    },
+    {
+      "file": "기사-front-011.png",
+      "bytes": 139834,
+      "SHA256": "d5459a430cb9a1806bbe19860ff9c1cfbdf7d42960215b3fc96633be59fa77d7",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 0.5627368421052632,
+      "progress": 0.14473684210526316,
+      "stage": "raise",
+      "hand": [
+        1.1441920995002433,
+        1.3444917946764052,
+        0.18167414349356523
+      ],
+      "nativePixelSHA256": "c4a16c677ba59612a411dc96de3cbf10514152ffb82d77a23b7f89114d17e344"
+    },
+    {
+      "file": "기사-front-012.png",
+      "bytes": 140589,
+      "SHA256": "ba2111cba9e97e23d6c568ee03e3cd961a9ac6777a8da3ea74ae4f1359747573",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 0.6138947368421053,
+      "progress": 0.15789473684210525,
+      "stage": "raise",
+      "hand": [
+        1.1319623458887333,
+        1.4431646965875697,
+        0.18437332081465652
+      ],
+      "nativePixelSHA256": "aabd16a2a2f76b0ad9b681cce1aad209bfeeb6fef66abadaa9c021aece0cebb2"
+    },
+    {
+      "file": "기사-front-013.png",
+      "bytes": 141158,
+      "SHA256": "b44fd814e7705d1cf010807ab04462080e1a77edadd69a6459aa633e6284a7e8",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 0.6650526315789475,
+      "progress": 0.17105263157894737,
+      "stage": "raise",
+      "hand": [
+        1.104311364765683,
+        1.5265733588848167,
+        0.18676899555229629
+      ],
+      "nativePixelSHA256": "cedfcb2a6e5862bf955e1bb7a7e397c641afed9ee5067df8c710837080f23e11"
+    },
+    {
+      "file": "기사-front-014.png",
+      "bytes": 142070,
+      "SHA256": "7c772fc94726b51dc03fe282b52b8c74c3e2157e0e04e75f859609acc6669def",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 0.7162105263157895,
+      "progress": 0.18421052631578946,
+      "stage": "raise",
+      "hand": [
+        1.0764454367626384,
+        1.5946067483115614,
+        0.18877030002289083
+      ],
+      "nativePixelSHA256": "5794232e863fc897c0a3a52dbcfa0465153ac3cfe4ea6067132ce1e650128d34"
+    },
+    {
+      "file": "기사-front-015.png",
+      "bytes": 142397,
+      "SHA256": "b8453275a2a30c284e462e381b922ab7eddf46b27fef47a80765de3cb1ba3f47",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 0.7673684210526317,
+      "progress": 0.19736842105263158,
+      "stage": "raise",
+      "hand": [
+        1.0441231430704012,
+        1.6415212663536156,
+        0.19031689818078942
+      ],
+      "nativePixelSHA256": "5c4105bb38699fa9d090ee1ce8691748bea67ace7a87a59496f97c055c3be639"
+    },
+    {
+      "file": "기사-front-016.png",
+      "bytes": 142990,
+      "SHA256": "e874bd2bf898e53a813444f6ec3538121123a9c44e0c58cc24b8d6ed8b201cc6",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 0.8185263157894737,
+      "progress": 0.21052631578947367,
+      "stage": "raise",
+      "hand": [
+        1.0217443396233954,
+        1.6740032055399492,
+        0.19138770758919782
+      ],
+      "nativePixelSHA256": "690373b201351743d47743faa13e3174d669f1d05b3f34dabdcb653a56b88108"
+    },
+    {
+      "file": "기사-front-017.png",
+      "bytes": 143194,
+      "SHA256": "d9b8ad1470f8aeccf44487bc22b82ce94ab57c4296c357b846dc1319c4cf053e",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 0.8696842105263158,
+      "progress": 0.2236842105263158,
+      "stage": "raise",
+      "hand": [
+        1.008746903978425,
+        1.6928684641404799,
+        0.19200962539668553
+      ],
+      "nativePixelSHA256": "47a906cc84f26db4a54e425152571530e58d80771ee45f0a37ab72b58be78461"
+    },
+    {
+      "file": "기사-front-018.png",
+      "bytes": 143576,
+      "SHA256": "56e0f2383a94c439088ba3704265d260ad7e7da665c956d948bd6177561f9594",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 0.9208421052631579,
+      "progress": 0.23684210526315788,
+      "stage": "raise",
+      "hand": [
+        1.0033836988120288,
+        1.7006529421833407,
+        0.19226625084875815
+      ],
+      "nativePixelSHA256": "56f59db5bd8feed0fffec3cbfe80f7e4d8dcbbf424397362e2c9088abe6aca03"
+    },
+    {
+      "file": "기사-front-019.png",
+      "bytes": 144018,
+      "SHA256": "3f9a6f13ecab1b78d278b86bfd876400ea19a2f3c6236d5cb901f486f553b4a9",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 0.9720000000000001,
+      "progress": 0.25,
+      "stage": "wave",
+      "hand": [
+        1.0025402619389243,
+        1.7018771571099596,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "007a2dfce1bba8dcf05f83413c409f9f05b6b14d318c4cbd1914647c3738cf71"
+    },
+    {
+      "file": "기사-front-020.png",
+      "bytes": 144387,
+      "SHA256": "4833a716fb40a3eafdb6133059287246cfd9fcb944659d96eba112d2027c6ce4",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 1.023157894736842,
+      "progress": 0.2631578947368421,
+      "stage": "wave",
+      "hand": [
+        0.9925892852524242,
+        1.7079763886282482,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "602b1587e2a52ff05356da1e383bd2292a969f3cafec4de377cdcb939b08a48c"
+    },
+    {
+      "file": "기사-front-021.png",
+      "bytes": 145322,
+      "SHA256": "0b3e7557f6c71ae0a776fa848a9010c65da8c751944509791d26f95e10728b75",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 1.0743157894736843,
+      "progress": 0.27631578947368424,
+      "stage": "wave",
+      "hand": [
+        0.9521938476596183,
+        1.7327358804774617,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "51e6e52da85bc4c93e72afbc1c0b571acd0e5ddfcd5ebcd0889f867a2a95bf19"
+    },
+    {
+      "file": "기사-front-022.png",
+      "bytes": 146148,
+      "SHA256": "1e64b4e6dcef9bca1b7fe157a82c3dceb2a7405dfc4688722af5678f8670a962",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 1.1254736842105264,
+      "progress": 0.2894736842105263,
+      "stage": "wave",
+      "hand": [
+        0.9203655876373226,
+        1.7522443099327962,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "701e3c8d2bec322d10054d42a25df36546c48828eb91b2974f3c632701c00521"
+    },
+    {
+      "file": "기사-front-023.png",
+      "bytes": 146357,
+      "SHA256": "e40b870501a2b4a778f0cd9f4d039843b2a6a5fbb89ecabaf109980ed5597526",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 1.1766315789473685,
+      "progress": 0.3026315789473684,
+      "stage": "wave",
+      "hand": [
+        0.9269900819268241,
+        1.7481839723763783,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "bf29addb86525404b4fbbdbd2f834d158531589d9db1b7cbd59b78d5ae6b0951"
+    },
+    {
+      "file": "기사-front-024.png",
+      "bytes": 146344,
+      "SHA256": "99bcd2d1f543a29c2c715aa8c5581ce1b7af21f0fd93534d9e8a40d5990f01d3",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 1.2277894736842105,
+      "progress": 0.3157894736842105,
+      "stage": "wave",
+      "hand": [
+        0.9518684639527144,
+        1.7329353172386155,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "c02f8b10c2adbc66ea605ad50046e0cf52d955e1836d05c38ca0685c9c372a04"
+    },
+    {
+      "file": "기사-front-025.png",
+      "bytes": 146257,
+      "SHA256": "19afb323a3e117889f723862a51fcf9f7af07a29b8b9247cad7bb9000f497869",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 1.2789473684210528,
+      "progress": 0.32894736842105265,
+      "stage": "wave",
+      "hand": [
+        0.9889614094404042,
+        1.7102000150313865,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "0b4999010dc2a03deed3f069c1b157a4f08987b03fb39c2c5ce4d2a5b8c932bc"
+    },
+    {
+      "file": "기사-front-026.png",
+      "bytes": 145841,
+      "SHA256": "1d79f170804951bffd4f5232556c4b6f27c699cf6f17aa4e5b2629eb3f58ce53",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 1.330105263157895,
+      "progress": 0.34210526315789475,
+      "stage": "wave",
+      "hand": [
+        1.0208273649128845,
+        1.676333643124352,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "8909bf08eda8640afb4e1c682704c34d0fcd5ebabf683a282a104d4dcd392d2a"
+    },
+    {
+      "file": "기사-front-027.png",
+      "bytes": 145683,
+      "SHA256": "3cb41711ff3893a75de904bd3c053231a244cb8c3c7efa7a067f65ef813cdfe2",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 1.381263157894737,
+      "progress": 0.35526315789473684,
+      "stage": "wave",
+      "hand": [
+        1.0439762979997136,
+        1.6439991012946622,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "705e0eb5954fe5785bc144c6d7182ba81d72b87f6a97543025fc4e561281822e"
+    },
+    {
+      "file": "기사-front-028.png",
+      "bytes": 145658,
+      "SHA256": "d8267e2ef0d844c361ef278dd9caf1aa9e5d724ce56d0f74e9ba7612fdcf9a92",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 1.432421052631579,
+      "progress": 0.3684210526315789,
+      "stage": "wave",
+      "hand": [
+        1.0571369711039822,
+        1.6256162093747313,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "9772a277062c72468623c340b925e4ad0ad7dc80b9aa92507123640b71ddb9e4"
+    },
+    {
+      "file": "기사-front-029.png",
+      "bytes": 145742,
+      "SHA256": "130a6551b38e835e2cf0943856ea84194f6096f90fd8dbe762c3dd4d891af0e7",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 1.4835789473684213,
+      "progress": 0.3815789473684211,
+      "stage": "wave",
+      "hand": [
+        1.0571369711039822,
+        1.6256162093747313,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "cdcacd65d77be0c0114c178842e93b74e7efc0899108accaf401546a79f664f3"
+    },
+    {
+      "file": "기사-front-030.png",
+      "bytes": 146155,
+      "SHA256": "ff6f330e85d51f4be1d194c486c3f385ac6a42fad6835f46b758908c754bb3e9",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 1.5347368421052634,
+      "progress": 0.39473684210526316,
+      "stage": "wave",
+      "hand": [
+        1.0439762979997136,
+        1.6439991012946622,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "c5764d968a31ab9214e3656c9b774e8e1e086667f2cde40c180ed3a871afb9dd"
+    },
+    {
+      "file": "기사-front-031.png",
+      "bytes": 147083,
+      "SHA256": "c45902e882d5700c18fc7ef28c9bbf1680a4215736fb24776e4a337c46ea7c8e",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 1.5858947368421055,
+      "progress": 0.40789473684210525,
+      "stage": "wave",
+      "hand": [
+        1.0208273649128845,
+        1.676333643124352,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "b7ad5c69244cfd7fd4795207ee6f474c650ab4b7145f04e6f39750752bc3885e"
+    },
+    {
+      "file": "기사-front-032.png",
+      "bytes": 148016,
+      "SHA256": "1e1e3f1c392bfe7b7a328ceca7007c83cf04a91e27539f2a4d42a875fe53c224",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 1.6370526315789473,
+      "progress": 0.42105263157894735,
+      "stage": "wave",
+      "hand": [
+        0.9889614094404042,
+        1.7102000150313865,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "552dc4d03999aa025331046cc844e30d218b3440c528f866c612512c5da2964b"
+    },
+    {
+      "file": "기사-front-033.png",
+      "bytes": 148979,
+      "SHA256": "aa040c3f5800d5f15e2009fa57ed30b900b058181dac13439e1d9c457d60280f",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 1.6882105263157896,
+      "progress": 0.4342105263157895,
+      "stage": "wave",
+      "hand": [
+        0.9518684639527144,
+        1.7329353172386155,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "7933a22a0638da5e19ac13958070bcb57767a19267415fa368db8b95361114e3"
+    },
+    {
+      "file": "기사-front-034.png",
+      "bytes": 149916,
+      "SHA256": "f7ca49477f7d0aa129f1080f6017b891a8d8fd98a8129defdb611d82c5742cc0",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 1.7393684210526317,
+      "progress": 0.4473684210526316,
+      "stage": "wave",
+      "hand": [
+        0.9269900819268241,
+        1.7481839723763783,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "2c767a4825a602d5ba021ef74da85f023e61ca3440aba131153825d732e6f2a6"
+    },
+    {
+      "file": "기사-front-035.png",
+      "bytes": 150088,
+      "SHA256": "3899d15fbfb26e684b09af92a9abd3926e9ff6bf318007d4903950a003100f80",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 1.7905263157894737,
+      "progress": 0.4605263157894737,
+      "stage": "wave",
+      "hand": [
+        0.9203232594859998,
+        1.7522702540388655,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "dc67b03215874e8a8da6d3e6e5094ec8f6ff7f6ae983e22305617d79f9ed6e73"
+    },
+    {
+      "file": "기사-front-036.png",
+      "bytes": 149691,
+      "SHA256": "1280e91a7c2829cced471f643daaffa27dfa5fd5b79d8bdbf6db3a95e1abc79c",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 1.8416842105263158,
+      "progress": 0.47368421052631576,
+      "stage": "wave",
+      "hand": [
+        0.933475050830574,
+        1.7442091538254996,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "a565e254028ef70b429f9ea34753463d731b12857c27385fab6c1e343d9d1d34"
+    },
+    {
+      "file": "기사-front-037.png",
+      "bytes": 149329,
+      "SHA256": "0ab4ad320f54e2ccfd7e28ebff3d74ac4fe42bbbad5df01c981eaeb51794a474",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 1.892842105263158,
+      "progress": 0.4868421052631579,
+      "stage": "wave",
+      "hand": [
+        0.9632751838091859,
+        1.725943820076005,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "a18e44a09004d08fe15742784fb94e53652a8e775be3463af185974b89014ade"
+    },
+    {
+      "file": "기사-front-038.png",
+      "bytes": 148710,
+      "SHA256": "16c12e9be8f07cb131db6a7800ac6f2e7394a3ed539df311288bd307356f0d3c",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 1.9440000000000002,
+      "progress": 0.5,
+      "stage": "wave",
+      "hand": [
+        1.0025402619389243,
+        1.7018771571099596,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "5b36d998e2d225620e792e66a2d74ffd63e78d701954b360ee3bc395e4506104"
+    },
+    {
+      "file": "기사-front-039.png",
+      "bytes": 147565,
+      "SHA256": "aed0aaf4e46326903ed3df8e47af5e7ecbe8a41c9ab3abeb6c2ac285da38806f",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 1.9951578947368425,
+      "progress": 0.5131578947368421,
+      "stage": "wave",
+      "hand": [
+        1.029345661430262,
+        1.6644352453007565,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "28d97644ef38c1293cd42266acb5169104e8c9d2a5857a6fc6f4fb164b864dc6"
+    },
+    {
+      "file": "기사-front-040.png",
+      "bytes": 146922,
+      "SHA256": "78ba3bcfa8e241e92747faff827a30429c3673db1d831a63a79e0f890a57a7f5",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 2.046315789473684,
+      "progress": 0.5263157894736842,
+      "stage": "wave",
+      "hand": [
+        1.0496895524253957,
+        1.6360187998475937,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "ea9022fe251dc79b58f6f03946970104452b5b9ce5cc5655798c12930af6dcba"
+    },
+    {
+      "file": "기사-front-041.png",
+      "bytes": 147109,
+      "SHA256": "940ca2186314ae724a28f7061e421c965c526029847dec7643d5dd03646c86f3",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 2.0974736842105264,
+      "progress": 0.5394736842105263,
+      "stage": "wave",
+      "hand": [
+        1.0586679891893087,
+        1.623477675899506,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "db430544e0d2a74e1d033886bdc1935997f0a4cd939b0db85378fb9fe7908575"
+    },
+    {
+      "file": "기사-front-042.png",
+      "bytes": 147098,
+      "SHA256": "4a8c22026f6aa2fdc3ec5feb6e1ebc2c5ab83c1475fea9d62544024acdc928f6",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 2.1486315789473687,
+      "progress": 0.5526315789473685,
+      "stage": "wave",
+      "hand": [
+        1.0541166971156335,
+        1.6298349427067207,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "8663113e41a67170dac7de4cdc1062b4f513e9f6b85a81f712cd01776c0c0892"
+    },
+    {
+      "file": "기사-front-043.png",
+      "bytes": 147443,
+      "SHA256": "93bffe38ba792de6cc7be09e9d1efec9edd46273bdb1cdb63c1bd70c67d1de19",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 2.1997894736842105,
+      "progress": 0.5657894736842105,
+      "stage": "wave",
+      "hand": [
+        1.0371327765259777,
+        1.653558165227537,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "c7aa61385954e063fd8b5e821a8933d5fdcb6d5ef2b6c505ba35f9ede5c7cfbb"
+    },
+    {
+      "file": "기사-front-044.png",
+      "bytes": 148285,
+      "SHA256": "7c077ec9bfe4dd8f9c13b91fbf15fa00bf4af9cf722887fd6eed0364dd9dea40",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 2.250947368421053,
+      "progress": 0.5789473684210527,
+      "stage": "wave",
+      "hand": [
+        1.011810243897296,
+        1.6889288014224975,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "d6cc44d67af720ebe68661201b208f42c312bdad17191b490bf640003b7da096"
+    },
+    {
+      "file": "기사-front-045.png",
+      "bytes": 148881,
+      "SHA256": "f1853c34eaa2cdbbea0e9af5f7db293723f7a6dae17dbfcfd88fd390fad7164b",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 2.3021052631578947,
+      "progress": 0.5921052631578947,
+      "stage": "wave",
+      "hand": [
+        0.9757529526406196,
+        1.7182958470847884,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "5f1269c04508ebac42c05c17f49b8d7f1aadf08890fa526c7179fcfc15247712"
+    },
+    {
+      "file": "기사-front-046.png",
+      "bytes": 149572,
+      "SHA256": "144dba19bdd2cc6e83b72190efb15d3c0f8ad89f3621f76029eff6cf1bf645ff",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 2.353263157894737,
+      "progress": 0.6052631578947368,
+      "stage": "wave",
+      "hand": [
+        0.9418439386537872,
+        1.7390796287555021,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "d72cc31fc4bad966962b901c8ca1ccead9b66a68a1d02307dcd3ba40b63a586a"
+    },
+    {
+      "file": "기사-front-047.png",
+      "bytes": 149998,
+      "SHA256": "1bffd9fbcea3331f25369295f4f034a46fc4ef62f03676583e341d718bb0f69c",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 2.4044210526315792,
+      "progress": 0.618421052631579,
+      "stage": "wave",
+      "hand": [
+        0.9225659249891862,
+        1.7508956617196456,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "c93bd016daafa73d4a4344cda4692f130a5fa3dbb058c25e78fc3f2d38b0dd3a"
+    },
+    {
+      "file": "기사-front-048.png",
+      "bytes": 150039,
+      "SHA256": "f718ce405f252ca04fab5bb62959223eee099459a3da0e6687905b39c1573e90",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 2.455578947368421,
+      "progress": 0.631578947368421,
+      "stage": "wave",
+      "hand": [
+        0.9225659249891862,
+        1.7508956617196456,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "6d45a161afb0587de2d4038fcc89b485458d4cc861c172c71dec6e72f66cbc7a"
+    },
+    {
+      "file": "기사-front-049.png",
+      "bytes": 149827,
+      "SHA256": "b8af7a52ae62df2a0d3ff5e24f5eb7aef15cd190519c89bbacc7f3ba2d7695b7",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 2.5067368421052634,
+      "progress": 0.6447368421052632,
+      "stage": "wave",
+      "hand": [
+        0.9418439386537871,
+        1.7390796287555021,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "b4c39a3b7483025512ea7673e80b0b61d25f4550d056556e9b99e0e14ac77c57"
+    },
+    {
+      "file": "기사-front-050.png",
+      "bytes": 149026,
+      "SHA256": "752dc8f7f5dcd2d9b97f237263c3f0a4a5d8a0cec148c0a2c87f454822182ac4",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 2.5578947368421057,
+      "progress": 0.6578947368421053,
+      "stage": "wave",
+      "hand": [
+        0.9757529526406193,
+        1.7182958470847884,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "612f33495747bfee4f89d6837e9df7134e6303388e47ca00e43fc2620d3b0743"
+    },
+    {
+      "file": "기사-front-051.png",
+      "bytes": 148337,
+      "SHA256": "d5d9ba4eb2c1c88908ac6d797516aa8a714936df87967c7ffbcbaf29710676ae",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 2.6090526315789475,
+      "progress": 0.6710526315789473,
+      "stage": "wave",
+      "hand": [
+        1.011810243897296,
+        1.688928801422498,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "ede152b896187b899bac053dff50dd94510e0047c13d40c8bc843a95b8f0b66b"
+    },
+    {
+      "file": "기사-front-052.png",
+      "bytes": 147508,
+      "SHA256": "85ece9d36ce6d388dee61ee09b23bc3dc1b8e3c1cc070d863bed0a1cb3a5bc15",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 2.66021052631579,
+      "progress": 0.6842105263157895,
+      "stage": "wave",
+      "hand": [
+        1.0371327765259775,
+        1.653558165227537,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "1349c24d4a115dc33b94f19e6f6a2be918d3dd3a4bd1c65dfa71caae0ca6cc11"
+    },
+    {
+      "file": "기사-front-053.png",
+      "bytes": 147037,
+      "SHA256": "9ae6179b7bc672a2ced64e5e38d034eaf0fd2428156c7e840e1d1aa1c8e5836a",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 2.7113684210526316,
+      "progress": 0.6973684210526315,
+      "stage": "wave",
+      "hand": [
+        1.0541166971156335,
+        1.6298349427067207,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "2587cbdf3579a75d498d3df52644f8ce8c68a8195f5e153e5731f71a542f6920"
+    },
+    {
+      "file": "기사-front-054.png",
+      "bytes": 146811,
+      "SHA256": "6124c34994b01c115924f13c5a44dd3d32efdd9658c40e66d2f759b88bad8c12",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 2.762526315789474,
+      "progress": 0.7105263157894737,
+      "stage": "wave",
+      "hand": [
+        1.0586390926975668,
+        1.6235180386590948,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "391633881127ab9c81f6bc276a1b8ee718038a8b82be89adae67e7562148336f"
+    },
+    {
+      "file": "기사-front-055.png",
+      "bytes": 147418,
+      "SHA256": "0786577488e0578090140490dae56d3e63599e8dc5824c94e79d61d5c667c1d7",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 2.8136842105263162,
+      "progress": 0.7236842105263158,
+      "stage": "wave",
+      "hand": [
+        1.0369106442734268,
+        1.653868440633531,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "e489ade9d7a52e32f0890754ccb5016e65197c76ab76d36a89a7dc4a0290c493"
+    },
+    {
+      "file": "기사-front-056.png",
+      "bytes": 148412,
+      "SHA256": "fb3ecb237a9409190e0270ac8a593c347f5f8b599b17febdf1d519f91380f6ae",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 2.864842105263158,
+      "progress": 0.7368421052631579,
+      "stage": "wave",
+      "hand": [
+        1.0093335734033573,
+        1.6923882267612078,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "ddd47439aecf9e8508fbf78baebfa0b711764260b66d35f9584421a450e410eb"
+    },
+    {
+      "file": "기사-front-057.png",
+      "bytes": 148438,
+      "SHA256": "37d5cfc6b86999cc79ecde3eb763f05fdc4f34494bffc78108f7a6e3dce306e3",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 2.9160000000000004,
+      "progress": 0.75,
+      "stage": "wave",
+      "hand": [
+        1.0025402619389243,
+        1.7018771571099596,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "d5f0bb1d35b086e0f63156dbc3952ed7683b22380f7a5b31116201be81d5668f"
+    },
+    {
+      "file": "기사-front-058.png",
+      "bytes": 148386,
+      "SHA256": "f19bc3967954c03768b29fe02df3cc71e3324967715b48d834b701981fabca5d",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 2.9671578947368427,
+      "progress": 0.7631578947368421,
+      "stage": "lower",
+      "hand": [
+        1.0033836988120293,
+        1.70065294218334,
+        0.19226625084875792
+      ],
+      "nativePixelSHA256": "807895e8dac4990ee527d50b81efc9cda354cb41111cfe3ade272d8f145690e9"
+    },
+    {
+      "file": "기사-front-059.png",
+      "bytes": 148237,
+      "SHA256": "418963456b3b57cb1fa8707c5fcf7f3f1eac79b968d057f341899d8399dde6e3",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 3.0183157894736845,
+      "progress": 0.7763157894736842,
+      "stage": "lower",
+      "hand": [
+        1.0087469039784245,
+        1.6928684641404805,
+        0.19200962539668553
+      ],
+      "nativePixelSHA256": "c006ecfd4b5aaea0621ad200969c6cf1f6b4e87bf8b10808652d5edd64c64e9b"
+    },
+    {
+      "file": "기사-front-060.png",
+      "bytes": 148093,
+      "SHA256": "861b88a5f5f3e94701e8bb92a588ff31d8fb9c9d5425cca25a95dd9f49e195ae",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 3.069473684210527,
+      "progress": 0.7894736842105263,
+      "stage": "lower",
+      "hand": [
+        1.0217443396233954,
+        1.6740032055399492,
+        0.19138770758919782
+      ],
+      "nativePixelSHA256": "526530713992d3b7a4452e30c4056eaba1bb3420db312c8582ceb802be4b5840"
+    },
+    {
+      "file": "기사-front-061.png",
+      "bytes": 148098,
+      "SHA256": "654ad46ee95918259d3a604b462c1415466cee3dd8b618494ad3a0253b6d0299",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 3.120631578947369,
+      "progress": 0.8026315789473685,
+      "stage": "lower",
+      "hand": [
+        1.0441231430704012,
+        1.6415212663536156,
+        0.19031689818078942
+      ],
+      "nativePixelSHA256": "8211631cbbd690527ee399cb4cad301ae8b8765d8b89c6d8815198d61c67fe86"
+    },
+    {
+      "file": "기사-front-062.png",
+      "bytes": 147906,
+      "SHA256": "6bf3b8f22554c89fe8d6e5f210a14fe8f7a7e81a1d159d477452b867b3cd60a2",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 3.171789473684211,
+      "progress": 0.8157894736842105,
+      "stage": "lower",
+      "hand": [
+        1.0764454367626382,
+        1.5946067483115614,
+        0.18877030002289083
+      ],
+      "nativePixelSHA256": "23487d93e72f6756df93f46c428358eeefb8b15887352e717ae447239f504cfa"
+    },
+    {
+      "file": "기사-front-063.png",
+      "bytes": 147302,
+      "SHA256": "583e24961c08a1173d7577921a8a37883e72719966c088b8c1bc2ebef8936a81",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 3.2229473684210532,
+      "progress": 0.8289473684210527,
+      "stage": "lower",
+      "hand": [
+        1.104311364765683,
+        1.5265733588848158,
+        0.18676899555229629
+      ],
+      "nativePixelSHA256": "7b008d389439cffa0ba628a3e580ea7d1422ecfdc10254987f8da802b1c36716"
+    },
+    {
+      "file": "기사-front-064.png",
+      "bytes": 146945,
+      "SHA256": "d2e90b2e6a907de19e545ef0cf7930c81df068daefb60cdc5ee7dd5d3ab9c6cb",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 3.2741052631578946,
+      "progress": 0.8421052631578947,
+      "stage": "lower",
+      "hand": [
+        1.1319623458887333,
+        1.4431646965875706,
+        0.18437332081465652
+      ],
+      "nativePixelSHA256": "d3ec4d26b4f96b5b04e66255c0fd3d05c060c7610a9879e263d4005154aa1741"
+    },
+    {
+      "file": "기사-front-065.png",
+      "bytes": 146220,
+      "SHA256": "5b37d83a84083abd1b23a670aeb3e629097f4209d87f5f1b8f6b0a62f14c87b0",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 3.325263157894737,
+      "progress": 0.8552631578947368,
+      "stage": "lower",
+      "hand": [
+        1.1441920995002433,
+        1.3444917946764052,
+        0.18167414349356523
+      ],
+      "nativePixelSHA256": "1e6c6946de187e13dc70694fca4fb0907b40729f8043c37a7271939a009254e6"
+    },
+    {
+      "file": "기사-front-066.png",
+      "bytes": 145055,
+      "SHA256": "f34a83d26940b2d06ed20638d6eecf0d25dea684cf161a39169c36efa3c10806",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 3.376421052631579,
+      "progress": 0.868421052631579,
+      "stage": "lower",
+      "hand": [
+        1.1372459088106666,
+        1.2387764135994388,
+        0.17878414124333594
+      ],
+      "nativePixelSHA256": "e4e64963a252563f3ccc8fc14da8b4e0d0de9991d002514e24f50bd36ab592fb"
+    },
+    {
+      "file": "기사-front-067.png",
+      "bytes": 144051,
+      "SHA256": "0fb37889b64f16df736046233285e0b200fa0930603d68cc3e27a0b8d8b0b1ed",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 3.427578947368421,
+      "progress": 0.881578947368421,
+      "stage": "lower",
+      "hand": [
+        1.1119078015651613,
+        1.1337176155483017,
+        0.17582907753596358
+      ],
+      "nativePixelSHA256": "aeb61dab504fcdc71443776a21f7651f353a52da382b1f87587aaf04b56290ff"
+    },
+    {
+      "file": "기사-front-068.png",
+      "bytes": 143684,
+      "SHA256": "e8f2fb6d26ede6de38537870b5b61c8afa746268fb0c4d528668add9cd81aa49",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 3.4787368421052633,
+      "progress": 0.8947368421052632,
+      "stage": "lower",
+      "hand": [
+        1.0699004999881219,
+        1.0364582834366065,
+        0.17293907633779587
+      ],
+      "nativePixelSHA256": "6b49f66b594bdd175626e1506a6c8d049294373aef5e3f36e036b6c0c57953ac"
+    },
+    {
+      "file": "기사-front-069.png",
+      "bytes": 143330,
+      "SHA256": "f8d87d41fc40ef0e381e829f2a4517f7e3f97d98d85214e6aafbed0cbddfb9b5",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 3.5298947368421056,
+      "progress": 0.9078947368421053,
+      "stage": "lower",
+      "hand": [
+        1.0140357507907252,
+        0.954208430777054,
+        0.17023989868153633
+      ],
+      "nativePixelSHA256": "783ac0cc057a4380b12c9d72273782b493f80eed9e5ce481b7d6b508e0888117"
+    },
+    {
+      "file": "기사-front-070.png",
+      "bytes": 143296,
+      "SHA256": "cce3cd26b5f10ba0eaf04beff31e0158fda5f2a5d090377ca0716a8de4b0af42",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 3.5810526315789475,
+      "progress": 0.9210526315789473,
+      "stage": "lower",
+      "hand": [
+        0.951403322618957,
+        0.8925743428422662,
+        0.16784422303720462
+      ],
+      "nativePixelSHA256": "239632633ac0f41d99cca293b27556d6053d6b13320662c68b5cce6ae39c6920"
+    },
+    {
+      "file": "기사-front-071.png",
+      "bytes": 143244,
+      "SHA256": "379a1df21a46a6bb7f77c7a6d7862f9ab382a4231c93220f25b57bc5eafd5158",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 3.63221052631579,
+      "progress": 0.9342105263157895,
+      "stage": "lower",
+      "hand": [
+        0.8955883196289879,
+        0.8447231405153324,
+        0.1658429178029465
+      ],
+      "nativePixelSHA256": "c11630d98b3969c99dbff26a87770cd62cdf6bf6f54fa95d5ce895f52cc2f83c"
+    },
+    {
+      "file": "기사-front-072.png",
+      "bytes": 142529,
+      "SHA256": "64f94ccc72863f621d6c902f14cf3e4bdd7f6f6470ea220f397087cec057c69c",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 3.6833684210526316,
+      "progress": 0.9473684210526315,
+      "stage": "lower",
+      "hand": [
+        0.8454338188057046,
+        0.8177003966393865,
+        0.1642963197410785
+      ],
+      "nativePixelSHA256": "fd0a414feffced9715833dcff7ffff02b8f53946d10bb414379c3f64f60c5c13"
+    },
+    {
+      "file": "기사-front-073.png",
+      "bytes": 142124,
+      "SHA256": "a65ede611183bdf1f270f3ced43ae2b0c2fee4e3b2320526bebac2033476916c",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 3.734526315789474,
+      "progress": 0.9605263157894737,
+      "stage": "lower",
+      "hand": [
+        0.8107086310887053,
+        0.7989908124880685,
+        0.1632255103991527
+      ],
+      "nativePixelSHA256": "7d19168103a5ec48362c0101e2090968b05d3a24d02a75602c14454cc1663f56"
+    },
+    {
+      "file": "기사-front-074.png",
+      "bytes": 142131,
+      "SHA256": "646e1e98b8e604bca5a24ae3a89c944cb730a35fe232b62f60bb02a18dcaaaed",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 3.785684210526316,
+      "progress": 0.9736842105263158,
+      "stage": "lower",
+      "hand": [
+        0.7905405111228615,
+        0.7881244309799239,
+        0.16260359263028215
+      ],
+      "nativePixelSHA256": "7b567366da483ca9d417d7124a0320b20993acfecf7db91a7624b54c4256bdb2"
+    },
+    {
+      "file": "기사-front-075.png",
+      "bytes": 141872,
+      "SHA256": "1acb84bea89b27c3fec34f43f047d896bf6cfbdc60e00560b871dc42cf4721bf",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 3.836842105263158,
+      "progress": 0.9868421052631579,
+      "stage": "lower",
+      "hand": [
+        0.7822184260476349,
+        0.7836405746996249,
+        0.16234696719414485
+      ],
+      "nativePixelSHA256": "0fd69b0e0801b9860cf1390d74390d12a01ba86869aea9070d1155ab16161de7"
+    },
+    {
+      "file": "기사-front-076.png",
+      "bytes": 141909,
+      "SHA256": "30e9b006c3876af76519db4f28e4253beace33a679f7a8fffaa17f8de1558bbe",
+      "day": "기사",
+      "view": "front",
+      "nativeTime": 3.8880000000000003,
+      "progress": 1,
+      "stage": "idle",
+      "hand": [
+        0.7809096651116249,
+        0.7829354273850652,
+        0.16230660935797872
+      ],
+      "nativePixelSHA256": "13d65684299672c328c585a328637a42c572218c98dcb7ef0ca57900ec60695f"
+    },
+    {
+      "file": "기사-side-000.png",
+      "bytes": 119135,
+      "SHA256": "2aede9744296bebb4f0c0b4d98135fefce7b1ae40992591f54db08bf72411b6b",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 0,
+      "progress": 0,
+      "stage": "raise",
+      "hand": [
+        0.7809096651116249,
+        0.7829354273850652,
+        0.16230660935797872
+      ],
+      "nativePixelSHA256": "adc49c1fdd1fb596d469f9f2b0246c0a0d81b1639dfd44aae184655b01ecbce1"
+    },
+    {
+      "file": "기사-side-001.png",
+      "bytes": 119011,
+      "SHA256": "ce9c758fa705a1abab1a1b94b0613eacb9c0d082ff8ed4d9d889b97ae1ec6574",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 0.051157894736842104,
+      "progress": 0.013157894736842105,
+      "stage": "raise",
+      "hand": [
+        0.782218426047634,
+        0.7836405746996236,
+        0.16234696719414485
+      ],
+      "nativePixelSHA256": "e4040123f90f7aad9fd35e7dc6971189ef793f052f8e50073a4660cbc7bf4efa"
+    },
+    {
+      "file": "기사-side-002.png",
+      "bytes": 118939,
+      "SHA256": "13b68bbc6a4709f2fc5ff9ab18c7bdeab66892f6d7bb65a9fbdc4f113cbe92d3",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 0.10231578947368421,
+      "progress": 0.02631578947368421,
+      "stage": "raise",
+      "hand": [
+        0.7905405111228615,
+        0.7881244309799239,
+        0.16260359263028215
+      ],
+      "nativePixelSHA256": "6597af16d7a6ff2609e9c00b6e38e8e8b53f1d82fdde47639ba9c6ecca31949c"
+    },
+    {
+      "file": "기사-side-003.png",
+      "bytes": 119091,
+      "SHA256": "a144628eb8fb26fea9703757a99dfec36fc1f2f5ee2f21e603866b2df0533951",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 0.15347368421052632,
+      "progress": 0.039473684210526314,
+      "stage": "raise",
+      "hand": [
+        0.8107086310887051,
+        0.7989908124880685,
+        0.1632255103991527
+      ],
+      "nativePixelSHA256": "7bbc436fc85c45e2a066e20c4abd4c7fee8b91c0173ea9fb64fc483ed300ed5e"
+    },
+    {
+      "file": "기사-side-004.png",
+      "bytes": 119115,
+      "SHA256": "1d23e373dec51b467de2129867e6ee413735fd77fea4a2088a3d109a9443203f",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 0.20463157894736841,
+      "progress": 0.05263157894736842,
+      "stage": "raise",
+      "hand": [
+        0.8454338188057046,
+        0.8177003966393865,
+        0.1642963197410785
+      ],
+      "nativePixelSHA256": "4598d59ab5ec168494615140bb965ae7cd4117a2e9e33037ef786543eee2ae85"
+    },
+    {
+      "file": "기사-side-005.png",
+      "bytes": 119534,
+      "SHA256": "4e9747fa492ae200f9838c497bb782e7c7741f43bea2965833c17422a64b6df1",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 0.2557894736842105,
+      "progress": 0.06578947368421052,
+      "stage": "raise",
+      "hand": [
+        0.8955883196289887,
+        0.8447231405153327,
+        0.1658429178029465
+      ],
+      "nativePixelSHA256": "5de12139649601636fd6456f288af5f9a55bfd5e236b208cadf8294560805ef6"
+    },
+    {
+      "file": "기사-side-006.png",
+      "bytes": 119901,
+      "SHA256": "18747f39375a15919fe0be5649bf1750ca4baa4274cad0d018363cf4f7701784",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 0.30694736842105264,
+      "progress": 0.07894736842105263,
+      "stage": "raise",
+      "hand": [
+        0.951403322618957,
+        0.8925743428422662,
+        0.16784422303720462
+      ],
+      "nativePixelSHA256": "c33c78c4c7f8ca2933c3a75339731ab28e7f9994701695c6062970b50c5cc94c"
+    },
+    {
+      "file": "기사-side-007.png",
+      "bytes": 120207,
+      "SHA256": "b7b0766d0e373bb53fc1a2c7f86cd452deab550a1f22260fa2c17d5f0d34bb5e",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 0.35810526315789476,
+      "progress": 0.09210526315789473,
+      "stage": "raise",
+      "hand": [
+        1.0140357507907252,
+        0.954208430777054,
+        0.17023989868153633
+      ],
+      "nativePixelSHA256": "2e9a2e7f86343ba270809a2c9fe0e01560ab546c65739caefc2e725842dee7e5"
+    },
+    {
+      "file": "기사-side-008.png",
+      "bytes": 120900,
+      "SHA256": "bfe0921601d7965035856db66c78f6e5232e88ca9d39a44754b9ead3cf040e94",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 0.40926315789473683,
+      "progress": 0.10526315789473684,
+      "stage": "raise",
+      "hand": [
+        1.0699004999881219,
+        1.0364582834366065,
+        0.17293907633779587
+      ],
+      "nativePixelSHA256": "7be5b8048e80c799429a3e9b44d9e0ff0c5e3aa2a8182480a4c203ebbaff8471"
+    },
+    {
+      "file": "기사-side-009.png",
+      "bytes": 121950,
+      "SHA256": "0a0b5ae491050d6dc5d6eb70a7e5aa01cd5648cdccbc940474a113e2665b7f56",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 0.46042105263157895,
+      "progress": 0.11842105263157894,
+      "stage": "raise",
+      "hand": [
+        1.1119078015651611,
+        1.1337176155483017,
+        0.17582907753596358
+      ],
+      "nativePixelSHA256": "166e1f8f542da2086b130cb6880fbff9b397ed752fb928536954e188c7e5fa65"
+    },
+    {
+      "file": "기사-side-010.png",
+      "bytes": 121791,
+      "SHA256": "4afff04c9ac15a7ba8fbf53695477477cb5b408dcca49c0080b815c17f82d6cc",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 0.511578947368421,
+      "progress": 0.13157894736842105,
+      "stage": "raise",
+      "hand": [
+        1.1372459088106666,
+        1.2387764135994388,
+        0.17878414124333594
+      ],
+      "nativePixelSHA256": "28e02592853f313f610895bb716f7d5f6a251e12bf94c1f849e4bba6e2113785"
+    },
+    {
+      "file": "기사-side-011.png",
+      "bytes": 121698,
+      "SHA256": "9a050e03ea0130806bc3b89d8e2c5470b3a9c18bbc8e3a0c0f8575dbedc24eab",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 0.5627368421052632,
+      "progress": 0.14473684210526316,
+      "stage": "raise",
+      "hand": [
+        1.1441920995002433,
+        1.3444917946764052,
+        0.18167414349356523
+      ],
+      "nativePixelSHA256": "721aebf2f3e46bbe4e50043548b6b4a675e3e13c6c8af28268453aaa36c9e548"
+    },
+    {
+      "file": "기사-side-012.png",
+      "bytes": 121597,
+      "SHA256": "98d8c8abd97e7344f678da9192df7678b22f4ad3ab0e016795cf6f31496b122f",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 0.6138947368421053,
+      "progress": 0.15789473684210525,
+      "stage": "raise",
+      "hand": [
+        1.1319623458887333,
+        1.4431646965875697,
+        0.18437332081465652
+      ],
+      "nativePixelSHA256": "5ed1d54823e625a3899df147f0be7d65000471ac920fe3f7bf7c14d890cb529d"
+    },
+    {
+      "file": "기사-side-013.png",
+      "bytes": 121461,
+      "SHA256": "84be63fa4f60ea614b61be80e21b8edcc85fa323ee60e51475b658aef4e6e898",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 0.6650526315789475,
+      "progress": 0.17105263157894737,
+      "stage": "raise",
+      "hand": [
+        1.104311364765683,
+        1.5265733588848167,
+        0.18676899555229629
+      ],
+      "nativePixelSHA256": "4b77008e5f36ae813d734a57ebc96691756d1f864ef3272052a5aa8246abe58e"
+    },
+    {
+      "file": "기사-side-014.png",
+      "bytes": 121154,
+      "SHA256": "b5f5123b3d9de6735aa29a74b94061335903be20a3f1a550ef56c2e939f77816",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 0.7162105263157895,
+      "progress": 0.18421052631578946,
+      "stage": "raise",
+      "hand": [
+        1.0764454367626384,
+        1.5946067483115614,
+        0.18877030002289083
+      ],
+      "nativePixelSHA256": "8252f554c08382b2ee04296e39d7ae3581eca1cc9af21df379952f26173f1072"
+    },
+    {
+      "file": "기사-side-015.png",
+      "bytes": 121250,
+      "SHA256": "185ded6ce33f189601f1a6404431edaf4ae55ed8539908193fd28037efb7eb28",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 0.7673684210526317,
+      "progress": 0.19736842105263158,
+      "stage": "raise",
+      "hand": [
+        1.0441231430704012,
+        1.6415212663536156,
+        0.19031689818078942
+      ],
+      "nativePixelSHA256": "bb83c6b99fee2bfb202464138c79eba8ef4aecf8bb48d287d5577e1959102c22"
+    },
+    {
+      "file": "기사-side-016.png",
+      "bytes": 121501,
+      "SHA256": "e6e84b525035ca2bf5e528f85539dc2fa56868444f775ad1d69a7823f7359edf",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 0.8185263157894737,
+      "progress": 0.21052631578947367,
+      "stage": "raise",
+      "hand": [
+        1.0217443396233954,
+        1.6740032055399492,
+        0.19138770758919782
+      ],
+      "nativePixelSHA256": "b1e01b154d0cb13cb74800346d0ca22604ae1237cef5e570f838b9d2e6e1e17a"
+    },
+    {
+      "file": "기사-side-017.png",
+      "bytes": 121605,
+      "SHA256": "d7f627a465b4bbcd77a90a7971442dee8552cb201339b41fe537261745bd658c",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 0.8696842105263158,
+      "progress": 0.2236842105263158,
+      "stage": "raise",
+      "hand": [
+        1.008746903978425,
+        1.6928684641404799,
+        0.19200962539668553
+      ],
+      "nativePixelSHA256": "66cc8106987af2f8a8f3ece0067086728c1c5c3fe7018020564f4be391dc1348"
+    },
+    {
+      "file": "기사-side-018.png",
+      "bytes": 121562,
+      "SHA256": "98f2a5ef7b08ea40e57df61356a809fd6ea81203863268ad73dff0622e3d33f8",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 0.9208421052631579,
+      "progress": 0.23684210526315788,
+      "stage": "raise",
+      "hand": [
+        1.0033836988120288,
+        1.7006529421833407,
+        0.19226625084875815
+      ],
+      "nativePixelSHA256": "cb5ccd6e394e0ad6ffc1b2cd137d076acdecca8cf0f34612cad950d0f706c567"
+    },
+    {
+      "file": "기사-side-019.png",
+      "bytes": 121810,
+      "SHA256": "2bde69b7cadf21ecd13ff4e8813f0cb04906918060ab5813d1c6aea9476e0c9e",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 0.9720000000000001,
+      "progress": 0.25,
+      "stage": "wave",
+      "hand": [
+        1.0025402619389243,
+        1.7018771571099596,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "b81304244ca7917b86c0e486a8127d5df48333278922c97de3ee2303b7ab0ae3"
+    },
+    {
+      "file": "기사-side-020.png",
+      "bytes": 122272,
+      "SHA256": "62285e606cc4aa9901d8bb20055c5257a25b0d2e5670cf2707e87a29ecf38d29",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 1.023157894736842,
+      "progress": 0.2631578947368421,
+      "stage": "wave",
+      "hand": [
+        0.9925892852524242,
+        1.7079763886282482,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "da083a9af07f818e7a2a14e45a4130c19da1ac429b5ef97918b87402c0fbdcbc"
+    },
+    {
+      "file": "기사-side-021.png",
+      "bytes": 122336,
+      "SHA256": "c9e08f90a3f7ecf0dbb37fae272ddb90dcf99429b0f549bf63e68f34d96b863d",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 1.0743157894736843,
+      "progress": 0.27631578947368424,
+      "stage": "wave",
+      "hand": [
+        0.9521938476596183,
+        1.7327358804774617,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "f4bab83a5f1d625bfdd7cf5fa37f24049a9c65a795bb54b2c85c80266a9e2dc3"
+    },
+    {
+      "file": "기사-side-022.png",
+      "bytes": 122832,
+      "SHA256": "33fa796d60d7a1411920bc1bb66466cef06ceefee574404f5465450d18c0aacb",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 1.1254736842105264,
+      "progress": 0.2894736842105263,
+      "stage": "wave",
+      "hand": [
+        0.9203655876373226,
+        1.7522443099327962,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "1a8477ffd050de7e83ad0cd6c3ff1f3926c8b1c0e9564864570b4269bd7f2b70"
+    },
+    {
+      "file": "기사-side-023.png",
+      "bytes": 122984,
+      "SHA256": "88112bef77bc681e8423cd7dba193b97c7080fc574c66ade43c40debc25a6326",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 1.1766315789473685,
+      "progress": 0.3026315789473684,
+      "stage": "wave",
+      "hand": [
+        0.9269900819268241,
+        1.7481839723763783,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "94ec45856cce8ea3cb0f5a7b368a25ee54cd3f03f4bef7850ecd7a133133f7ca"
+    },
+    {
+      "file": "기사-side-024.png",
+      "bytes": 123344,
+      "SHA256": "669c5eea6871486b321dfbc48b2ce6adb20e6549d6358961f6bcd4770369521f",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 1.2277894736842105,
+      "progress": 0.3157894736842105,
+      "stage": "wave",
+      "hand": [
+        0.9518684639527144,
+        1.7329353172386155,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "e2749475c4d837c8b036ce6c619797b348a56e7462b864e679737c5d0c50f9f7"
+    },
+    {
+      "file": "기사-side-025.png",
+      "bytes": 123344,
+      "SHA256": "152db5ce9bc02f159e800f165db9dac2bf8bc4c9cc863b0054f55e7c1517717b",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 1.2789473684210528,
+      "progress": 0.32894736842105265,
+      "stage": "wave",
+      "hand": [
+        0.9889614094404042,
+        1.7102000150313865,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "333e0f1a2112bdd2adc9a1a2e1e22c1f3d1e6d171b46756c979326cd8434e47d"
+    },
+    {
+      "file": "기사-side-026.png",
+      "bytes": 123665,
+      "SHA256": "5caeaf47c8db296a199e82437c2b1d0cb2df2536b3aeb601a825e795731b7b9a",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 1.330105263157895,
+      "progress": 0.34210526315789475,
+      "stage": "wave",
+      "hand": [
+        1.0208273649128845,
+        1.676333643124352,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "749e8319b8f580a7d991987ae122a5a653fc89d6421beaee04079b2c24816ca4"
+    },
+    {
+      "file": "기사-side-027.png",
+      "bytes": 123834,
+      "SHA256": "18f5a0f47c70481e52f4611f144c8f0c5d7b4439eb6ca42d47865e0c1b5700a0",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 1.381263157894737,
+      "progress": 0.35526315789473684,
+      "stage": "wave",
+      "hand": [
+        1.0439762979997136,
+        1.6439991012946622,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "138e9d92b9494425aa96a31dbe47f7c87c204e815fb6a6f4aeb573cec9d9be8d"
+    },
+    {
+      "file": "기사-side-028.png",
+      "bytes": 124318,
+      "SHA256": "cfd33bf09580edb6aa0edd69517e96e7f2276bdd9ac1d5b90141e311153c110b",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 1.432421052631579,
+      "progress": 0.3684210526315789,
+      "stage": "wave",
+      "hand": [
+        1.0571369711039822,
+        1.6256162093747313,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "0e669b647866ab52b0f720fa0ceb788a5a6deb2c1e0efbf98f099d4597bfefd5"
+    },
+    {
+      "file": "기사-side-029.png",
+      "bytes": 124700,
+      "SHA256": "1abdee9915f339570912ae2ee7af3b8a318abfbbb2c82d8dee40604a4f5de00a",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 1.4835789473684213,
+      "progress": 0.3815789473684211,
+      "stage": "wave",
+      "hand": [
+        1.0571369711039822,
+        1.6256162093747313,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "1ca1de34c12b36c59a933ae1ac1ce503a14282f44462c4122278db3f659dc16e"
+    },
+    {
+      "file": "기사-side-030.png",
+      "bytes": 124527,
+      "SHA256": "ab6f44492df57e0045d8f6b3db3ca0ffa7bff0caf25d9127cae77676d031fa38",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 1.5347368421052634,
+      "progress": 0.39473684210526316,
+      "stage": "wave",
+      "hand": [
+        1.0439762979997136,
+        1.6439991012946622,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "833960b4beb24aeaffe1831d78e30b3ec01444610f5ca9de3936550ca0d19c8c"
+    },
+    {
+      "file": "기사-side-031.png",
+      "bytes": 124241,
+      "SHA256": "fe6dc5c1ee3cf7bdfd0800ac9afb350e1dbd7bbef2cd066ed20de0a8cd45b587",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 1.5858947368421055,
+      "progress": 0.40789473684210525,
+      "stage": "wave",
+      "hand": [
+        1.0208273649128845,
+        1.676333643124352,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "ffa27bdc5425b3ebfe87dce166f22a6ef5d62953e2666e6717bf3cd55bb385f1"
+    },
+    {
+      "file": "기사-side-032.png",
+      "bytes": 124598,
+      "SHA256": "c8e8b7f33a6068f507df788e1bb18120449db1e866cf33f64818b67b35798c99",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 1.6370526315789473,
+      "progress": 0.42105263157894735,
+      "stage": "wave",
+      "hand": [
+        0.9889614094404042,
+        1.7102000150313865,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "b1074eb8ee57892989f2908be6c34551f100b2f6aec5546a63f8c9b98a99237b"
+    },
+    {
+      "file": "기사-side-033.png",
+      "bytes": 124668,
+      "SHA256": "dc4261125b2f3f5ec9cecb755f40b72db246edd17ed7bd70bfee4291a0840664",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 1.6882105263157896,
+      "progress": 0.4342105263157895,
+      "stage": "wave",
+      "hand": [
+        0.9518684639527144,
+        1.7329353172386155,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "88063ce5a6b9f6d9f8af4dcc72558ac29676d947376fc6cad76573441bac58bc"
+    },
+    {
+      "file": "기사-side-034.png",
+      "bytes": 124778,
+      "SHA256": "2438d54bbce721289188ad7845f30e1cd970214632732fbd8972cdd5e97a6c61",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 1.7393684210526317,
+      "progress": 0.4473684210526316,
+      "stage": "wave",
+      "hand": [
+        0.9269900819268241,
+        1.7481839723763783,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "6bdb4c313a1c00baf9aff9c606e4906966a3b16a97bcf7fb3fb87a677c6c6260"
+    },
+    {
+      "file": "기사-side-035.png",
+      "bytes": 125109,
+      "SHA256": "03c345862b8a85df97e467ba899057499f302ebf834ebbf361c60293189b84de",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 1.7905263157894737,
+      "progress": 0.4605263157894737,
+      "stage": "wave",
+      "hand": [
+        0.9203232594859998,
+        1.7522702540388655,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "b34c06da83c534766862c3d8e34afd9a9336a569773cbfd3291e349730e7fb60"
+    },
+    {
+      "file": "기사-side-036.png",
+      "bytes": 124971,
+      "SHA256": "d4d92c1aced5ef70c1227b99a5b39d51413f3f5d5f75d5a21679349ade7cb9bf",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 1.8416842105263158,
+      "progress": 0.47368421052631576,
+      "stage": "wave",
+      "hand": [
+        0.933475050830574,
+        1.7442091538254996,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "a12e8a1a6909c05a2a23c854c85035ce17c7d570032140b677e641f07e438658"
+    },
+    {
+      "file": "기사-side-037.png",
+      "bytes": 125065,
+      "SHA256": "2fc07e750dc6147b58efddd6fc5affa9f5d538a091b15d11c6fd772343717ad3",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 1.892842105263158,
+      "progress": 0.4868421052631579,
+      "stage": "wave",
+      "hand": [
+        0.9632751838091859,
+        1.725943820076005,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "d9afdfb4515c00bc3481badec170ab7804f2ed85dfd6e3d9271df86a771972e9"
+    },
+    {
+      "file": "기사-side-038.png",
+      "bytes": 125115,
+      "SHA256": "3df957846e38f1145d0a8441ffb4c42046bb078d94e858b062837cc9bb344da1",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 1.9440000000000002,
+      "progress": 0.5,
+      "stage": "wave",
+      "hand": [
+        1.0025402619389243,
+        1.7018771571099596,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "b6534dd8c309509fc5f3c4a123e6f6017c6f482376155960161cfcfc3106894d"
+    },
+    {
+      "file": "기사-side-039.png",
+      "bytes": 124854,
+      "SHA256": "537028060ad8ddf278c0e44d3c023c16bb2ffb06c2974b74fc5a08e9a9000cf4",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 1.9951578947368425,
+      "progress": 0.5131578947368421,
+      "stage": "wave",
+      "hand": [
+        1.029345661430262,
+        1.6644352453007565,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "e932a0f498716dbcb0c74d10fa3639a36de10339cadd9f4438d0a296b1ed64a8"
+    },
+    {
+      "file": "기사-side-040.png",
+      "bytes": 125444,
+      "SHA256": "914635d8bc9053a79c04378d2971e2d6625ea96c64bc8cffa0eb8a3a28a7fdca",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 2.046315789473684,
+      "progress": 0.5263157894736842,
+      "stage": "wave",
+      "hand": [
+        1.0496895524253957,
+        1.6360187998475937,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "3c69e45e144eada3ea7e93e274ef4beef3ed30e542fe5f3b42722fbf594538a5"
+    },
+    {
+      "file": "기사-side-041.png",
+      "bytes": 125465,
+      "SHA256": "e06b098fe8f572ac6928098907d4638d6b3cacc4634689e75b98b6ed9bca94c5",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 2.0974736842105264,
+      "progress": 0.5394736842105263,
+      "stage": "wave",
+      "hand": [
+        1.0586679891893087,
+        1.623477675899506,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "73f6d958089ef56633eed6fbe26ca4848d3ddff1adcbe775c512c20d27ce7a66"
+    },
+    {
+      "file": "기사-side-042.png",
+      "bytes": 125353,
+      "SHA256": "0cf0412f7ef8cc86a22558273850fc253c976f51a438a4b15fc1dba4877ddb47",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 2.1486315789473687,
+      "progress": 0.5526315789473685,
+      "stage": "wave",
+      "hand": [
+        1.0541166971156335,
+        1.6298349427067207,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "9a429377dcf7bcd2f3479a2ef131e161892f2f61283a8d3956d2747fb590aeb9"
+    },
+    {
+      "file": "기사-side-043.png",
+      "bytes": 124958,
+      "SHA256": "840820c3dbe320ecba88d035e7f232665ec69fb976d003a7d4cce31b2671fe06",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 2.1997894736842105,
+      "progress": 0.5657894736842105,
+      "stage": "wave",
+      "hand": [
+        1.0371327765259777,
+        1.653558165227537,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "e4839dac83d7f79a8a1bc618af34f115b293552e57186dfd86da349752e20a67"
+    },
+    {
+      "file": "기사-side-044.png",
+      "bytes": 125132,
+      "SHA256": "24921d030d0176383e555b9601058c1854026e6ce594c7b00d4100438f8d4e52",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 2.250947368421053,
+      "progress": 0.5789473684210527,
+      "stage": "wave",
+      "hand": [
+        1.011810243897296,
+        1.6889288014224975,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "f5e10d8cba08aa8b5466fbfc215563a8b0dd6674ed5c552c81db837137ebf6a8"
+    },
+    {
+      "file": "기사-side-045.png",
+      "bytes": 124964,
+      "SHA256": "64486df647c6fe3d6b757b030092b589b791bcff9f5363ba20a99076095d3930",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 2.3021052631578947,
+      "progress": 0.5921052631578947,
+      "stage": "wave",
+      "hand": [
+        0.9757529526406196,
+        1.7182958470847884,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "6f59f7615d342879e487bdc7b4c87a7c41aa59ac8eba65c89afb2dcd64934508"
+    },
+    {
+      "file": "기사-side-046.png",
+      "bytes": 124876,
+      "SHA256": "2174a057b44c27abb6b232c29c4d40b8da1de73fbb85a269404bc5f68ab6e8a1",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 2.353263157894737,
+      "progress": 0.6052631578947368,
+      "stage": "wave",
+      "hand": [
+        0.9418439386537872,
+        1.7390796287555021,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "adcb97c9f441da55bdb3fac9180d1144f23446b33ed36fe3fbf5ba16490766f4"
+    },
+    {
+      "file": "기사-side-047.png",
+      "bytes": 125176,
+      "SHA256": "39fa94b1919d75e1bd5fe168ab958cd9808086fc5d484252df36602abd41b3aa",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 2.4044210526315792,
+      "progress": 0.618421052631579,
+      "stage": "wave",
+      "hand": [
+        0.9225659249891862,
+        1.7508956617196456,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "92bf199428be6b268cb5352789a3843b90d0ec88dadf4f38a768f9f673081aa4"
+    },
+    {
+      "file": "기사-side-048.png",
+      "bytes": 125242,
+      "SHA256": "0399b5d672c4bae2e239fe58ff7017aadd8388ff3eeb97f097af4ea10b2d3ef0",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 2.455578947368421,
+      "progress": 0.631578947368421,
+      "stage": "wave",
+      "hand": [
+        0.9225659249891862,
+        1.7508956617196456,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "fb50d16c3084114ebd11191e8acb5fc601a61594ed8b33c25ad7ca40a4cf632f"
+    },
+    {
+      "file": "기사-side-049.png",
+      "bytes": 125225,
+      "SHA256": "e650e64d3bcdecfca9642b5a3a64185a854fd3c6173786f2c9f3054f3c40d479",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 2.5067368421052634,
+      "progress": 0.6447368421052632,
+      "stage": "wave",
+      "hand": [
+        0.9418439386537871,
+        1.7390796287555021,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "eb2281ad9f4b4288b42d31c645c9a22e2dcdf392378096fbfc2b9167b51dc38c"
+    },
+    {
+      "file": "기사-side-050.png",
+      "bytes": 125327,
+      "SHA256": "c105293965525cd57bea5781a147b8c85232f73786a31b982f4820e3f871505a",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 2.5578947368421057,
+      "progress": 0.6578947368421053,
+      "stage": "wave",
+      "hand": [
+        0.9757529526406193,
+        1.7182958470847884,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "748fcbc3d0fbc07c1c88f333c4b4978b1e12ce643b6b234204c4baa1ff02a0b4"
+    },
+    {
+      "file": "기사-side-051.png",
+      "bytes": 125550,
+      "SHA256": "7e9da0b7420473faf3658c5d5c819378b19089417a57cdcd7407650e1028db8b",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 2.6090526315789475,
+      "progress": 0.6710526315789473,
+      "stage": "wave",
+      "hand": [
+        1.011810243897296,
+        1.688928801422498,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "61d0f90eb7a3ba2335bc3420769b1a0f5750edea2cd1ef8766aa0df978019719"
+    },
+    {
+      "file": "기사-side-052.png",
+      "bytes": 125336,
+      "SHA256": "35c71515250c747285fe5501b062028db391115eef7f4a4bea992b48abd1d27e",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 2.66021052631579,
+      "progress": 0.6842105263157895,
+      "stage": "wave",
+      "hand": [
+        1.0371327765259775,
+        1.653558165227537,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "bcab71b52242f982637d133dde11a86e3dda8aa130ccee280cd43f6f23a23ae9"
+    },
+    {
+      "file": "기사-side-053.png",
+      "bytes": 125989,
+      "SHA256": "9ff4b11bf6dd095a80f6ae1cbf34df5d8b32e2243b9e6a47239d7dfbc028e97b",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 2.7113684210526316,
+      "progress": 0.6973684210526315,
+      "stage": "wave",
+      "hand": [
+        1.0541166971156335,
+        1.6298349427067207,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "023ff76df1016c609a420d1a38fcc51f3c94aa92479405178f11d6fbf6443496"
+    },
+    {
+      "file": "기사-side-054.png",
+      "bytes": 126120,
+      "SHA256": "3577a594e4c0b3e7b5995722b99408a552c79dad4971c8022474fee5a14fae3e",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 2.762526315789474,
+      "progress": 0.7105263157894737,
+      "stage": "wave",
+      "hand": [
+        1.0586390926975668,
+        1.6235180386590948,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "937d811f38b79614f3d4b1a8025cf2752022d67fd834344d76ba6a4bb05d8a80"
+    },
+    {
+      "file": "기사-side-055.png",
+      "bytes": 125853,
+      "SHA256": "63bc8693289e20774cc80e861c4eb188d70a7329d0644960256b93e2657a9a3a",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 2.8136842105263162,
+      "progress": 0.7236842105263158,
+      "stage": "wave",
+      "hand": [
+        1.0369106442734268,
+        1.653868440633531,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "647de7187fc38fba4ad5342b84b6f22455b9220dc103161a9d06fa29462b4f73"
+    },
+    {
+      "file": "기사-side-056.png",
+      "bytes": 126042,
+      "SHA256": "6caa099cff33c40c3c50ca21fa01ec1372e0da101648ba478afe4e48e3ba32b4",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 2.864842105263158,
+      "progress": 0.7368421052631579,
+      "stage": "wave",
+      "hand": [
+        1.0093335734033573,
+        1.6923882267612078,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "12004e82c2070da491e8f67963d69e51ed81b0a4495d7fc18e5934075ff32f2b"
+    },
+    {
+      "file": "기사-side-057.png",
+      "bytes": 126411,
+      "SHA256": "78fd27f17e478e22b32f0818f08c20be594de531cd3d5cf85ca942d2fb27350c",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 2.9160000000000004,
+      "progress": 0.75,
+      "stage": "wave",
+      "hand": [
+        1.0025402619389243,
+        1.7018771571099596,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "8f2a2cdce14859747e5dc245835e7f358ed0950ccdf3a99d19ef5a361384a6ae"
+    },
+    {
+      "file": "기사-side-058.png",
+      "bytes": 126527,
+      "SHA256": "7207c727c92e91bae691d17497be5be35ddef49454387f1dc83927abfb06c1ac",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 2.9671578947368427,
+      "progress": 0.7631578947368421,
+      "stage": "lower",
+      "hand": [
+        1.0033836988120293,
+        1.70065294218334,
+        0.19226625084875792
+      ],
+      "nativePixelSHA256": "9d47891dd78635c46214c0248268c431561d161b9aa4657e19f88b2acc9bda01"
+    },
+    {
+      "file": "기사-side-059.png",
+      "bytes": 126579,
+      "SHA256": "576bd7f4c2084b275cd590380feed26e18af09a9054ba0be25acfd9f69609ab0",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 3.0183157894736845,
+      "progress": 0.7763157894736842,
+      "stage": "lower",
+      "hand": [
+        1.0087469039784245,
+        1.6928684641404805,
+        0.19200962539668553
+      ],
+      "nativePixelSHA256": "f90875f5250827252119282544d9335b2e985a9c21cda0daa3cf5efa74f529d6"
+    },
+    {
+      "file": "기사-side-060.png",
+      "bytes": 126927,
+      "SHA256": "654b8110d5339b66cfb2c8b95a33439253a519ed94fd39930994e59877122aeb",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 3.069473684210527,
+      "progress": 0.7894736842105263,
+      "stage": "lower",
+      "hand": [
+        1.0217443396233954,
+        1.6740032055399492,
+        0.19138770758919782
+      ],
+      "nativePixelSHA256": "c5b0efdba8c07c97133349d9b5c5cc86d59280332d92302deb40698ee360effd"
+    },
+    {
+      "file": "기사-side-061.png",
+      "bytes": 126887,
+      "SHA256": "fa9526a4470c93e6781376193a59dfa475d604d45340e270c432c72239fcdf47",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 3.120631578947369,
+      "progress": 0.8026315789473685,
+      "stage": "lower",
+      "hand": [
+        1.0441231430704012,
+        1.6415212663536156,
+        0.19031689818078942
+      ],
+      "nativePixelSHA256": "9159b23e36947fb83726ca9a76cae4ab832dc8ee17ee0cbd39a91b6664ce5491"
+    },
+    {
+      "file": "기사-side-062.png",
+      "bytes": 127362,
+      "SHA256": "8d449e6feac87a1244bfe967b9336cc9eb9a690ccc740d7ae3f50be15df0b069",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 3.171789473684211,
+      "progress": 0.8157894736842105,
+      "stage": "lower",
+      "hand": [
+        1.0764454367626382,
+        1.5946067483115614,
+        0.18877030002289083
+      ],
+      "nativePixelSHA256": "3120f0572d87505f00022929e3d2fd7da7fe8add426335e490b0f6b8ff6a61d7"
+    },
+    {
+      "file": "기사-side-063.png",
+      "bytes": 127571,
+      "SHA256": "d763275824f7c2c3e74c17593f5595aa1c7728dad56142d1b25ae61eff65d876",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 3.2229473684210532,
+      "progress": 0.8289473684210527,
+      "stage": "lower",
+      "hand": [
+        1.104311364765683,
+        1.5265733588848158,
+        0.18676899555229629
+      ],
+      "nativePixelSHA256": "929b0cce811bb3cc25591b3ae2c578ccb9c331a84d92cf796f58c1dd3858e43c"
+    },
+    {
+      "file": "기사-side-064.png",
+      "bytes": 127884,
+      "SHA256": "88bd10d80b8dba3ea631073ea3e2a19781be4de1ad518f6cd2fd033591ba67f1",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 3.2741052631578946,
+      "progress": 0.8421052631578947,
+      "stage": "lower",
+      "hand": [
+        1.1319623458887333,
+        1.4431646965875706,
+        0.18437332081465652
+      ],
+      "nativePixelSHA256": "d570b9b456fe50897bba3482c80bdb27e85c5e6d0b743a7f073da25b822e3d8c"
+    },
+    {
+      "file": "기사-side-065.png",
+      "bytes": 128178,
+      "SHA256": "089cde4c80e47cae8e7da92f47b46ff3ce7804f5b5ab0f693101f54d796b406f",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 3.325263157894737,
+      "progress": 0.8552631578947368,
+      "stage": "lower",
+      "hand": [
+        1.1441920995002433,
+        1.3444917946764052,
+        0.18167414349356523
+      ],
+      "nativePixelSHA256": "e1ec94b35b66b72113c72aaaa2379550dfcf1d58b2c07b49ced73e9b08703214"
+    },
+    {
+      "file": "기사-side-066.png",
+      "bytes": 128694,
+      "SHA256": "c0d93f856db8ae41ffd3a3f7f546d08987ee274b075cfb68102ac705dcd4d9e4",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 3.376421052631579,
+      "progress": 0.868421052631579,
+      "stage": "lower",
+      "hand": [
+        1.1372459088106666,
+        1.2387764135994388,
+        0.17878414124333594
+      ],
+      "nativePixelSHA256": "ea145af83fff8b27b075d17653be8bb8baef80063a74383f5e73ab149ceafb64"
+    },
+    {
+      "file": "기사-side-067.png",
+      "bytes": 128608,
+      "SHA256": "b203e7e4983e6b9ebb046ff3ab4fbf948a6bb094558028345e5e190f1356d610",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 3.427578947368421,
+      "progress": 0.881578947368421,
+      "stage": "lower",
+      "hand": [
+        1.1119078015651613,
+        1.1337176155483017,
+        0.17582907753596358
+      ],
+      "nativePixelSHA256": "84f516d208be198f3421480770d262bbefef75c2c78028e7df81e06dc3fa5f20"
+    },
+    {
+      "file": "기사-side-068.png",
+      "bytes": 128237,
+      "SHA256": "0307aeea7b439c6821145195ed757e0e51627727dcf3487ab06111cc9f2f86cc",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 3.4787368421052633,
+      "progress": 0.8947368421052632,
+      "stage": "lower",
+      "hand": [
+        1.0699004999881219,
+        1.0364582834366065,
+        0.17293907633779587
+      ],
+      "nativePixelSHA256": "ec868a525582bf95e436dcb0ce5831cb953ac64f1e8118b3168eb8ef699eef1c"
+    },
+    {
+      "file": "기사-side-069.png",
+      "bytes": 127792,
+      "SHA256": "aa85e4547aa194756086f201a0dbb52a559646c80959b054fbee2a993689a31f",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 3.5298947368421056,
+      "progress": 0.9078947368421053,
+      "stage": "lower",
+      "hand": [
+        1.0140357507907252,
+        0.954208430777054,
+        0.17023989868153633
+      ],
+      "nativePixelSHA256": "16e756103514ac189e168d45a04ec9e39c3e16cfacbce352096216be1ae7fa64"
+    },
+    {
+      "file": "기사-side-070.png",
+      "bytes": 127567,
+      "SHA256": "e6710584787d44b22957d899696b8bb81099fd655cd7ff65ac0233dd82c1671c",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 3.5810526315789475,
+      "progress": 0.9210526315789473,
+      "stage": "lower",
+      "hand": [
+        0.951403322618957,
+        0.8925743428422662,
+        0.16784422303720462
+      ],
+      "nativePixelSHA256": "0f159321d07285127a6d04814c1f41c45bd2e1bac0eb22179d64b3902924f5ab"
+    },
+    {
+      "file": "기사-side-071.png",
+      "bytes": 127364,
+      "SHA256": "fb5be2f75281be61d3063c4f94f6bba65dd4e97a4cde59ef329055a168bf111d",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 3.63221052631579,
+      "progress": 0.9342105263157895,
+      "stage": "lower",
+      "hand": [
+        0.8955883196289879,
+        0.8447231405153324,
+        0.1658429178029465
+      ],
+      "nativePixelSHA256": "93ab38f855fe0bb702bf071a207a41f06d75a83b2f6f413715f593b1eb70cc9c"
+    },
+    {
+      "file": "기사-side-072.png",
+      "bytes": 127008,
+      "SHA256": "7e40b92e6c201de041b65427f8c7af96679c70ec74f391869fa73bafcc0011ca",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 3.6833684210526316,
+      "progress": 0.9473684210526315,
+      "stage": "lower",
+      "hand": [
+        0.8454338188057046,
+        0.8177003966393865,
+        0.1642963197410785
+      ],
+      "nativePixelSHA256": "563a185b51b8a4569ef8ef9133d7c6dec5fc7d47d875a0d227016e368b06bcab"
+    },
+    {
+      "file": "기사-side-073.png",
+      "bytes": 126768,
+      "SHA256": "101d44763edc2f449647354f4d9fe4cf1ce9919ce68b2ad4d03643f8931f4428",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 3.734526315789474,
+      "progress": 0.9605263157894737,
+      "stage": "lower",
+      "hand": [
+        0.8107086310887053,
+        0.7989908124880685,
+        0.1632255103991527
+      ],
+      "nativePixelSHA256": "a3df7f85151a72a9a42112fbf0d343aec2670a63cdc51e2305c1ee8af3857086"
+    },
+    {
+      "file": "기사-side-074.png",
+      "bytes": 126496,
+      "SHA256": "0c7ea33e35acf579ec45c5f1ec0d439dbfcea6f58463134ba23150f27c715e30",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 3.785684210526316,
+      "progress": 0.9736842105263158,
+      "stage": "lower",
+      "hand": [
+        0.7905405111228615,
+        0.7881244309799239,
+        0.16260359263028215
+      ],
+      "nativePixelSHA256": "1fdf5e83e47495910f9edbd24e9c28220e172e62a96f247326fce8d45bff154d"
+    },
+    {
+      "file": "기사-side-075.png",
+      "bytes": 126503,
+      "SHA256": "351b21ed5c5c80a0302299009ebf1fa9f4602bb2525ff3d04fa8ff99177fb699",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 3.836842105263158,
+      "progress": 0.9868421052631579,
+      "stage": "lower",
+      "hand": [
+        0.7822184260476349,
+        0.7836405746996249,
+        0.16234696719414485
+      ],
+      "nativePixelSHA256": "e384b3a4fdaa95921bbc4f81e24b7d38c1bbcd271433f5c9e97a955d215cb5e6"
+    },
+    {
+      "file": "기사-side-076.png",
+      "bytes": 126577,
+      "SHA256": "6a94631c089df9d7fe186b56935561b0b42e3fea328e6bc547b74e37b9d89dac",
+      "day": "기사",
+      "view": "side",
+      "nativeTime": 3.8880000000000003,
+      "progress": 1,
+      "stage": "idle",
+      "hand": [
+        0.7809096651116249,
+        0.7829354273850652,
+        0.16230660935797872
+      ],
+      "nativePixelSHA256": "21d475a213553aadf4a7bc37e3e549d762f0e4a56eac4ff3b398afd12de0a04f"
+    },
+    {
+      "file": "계유-front-000.png",
+      "bytes": 59239,
+      "SHA256": "8a1fdfc976b8302ca8cbc6fdb093debc5e28e17b072c6402d34b8a8e153147b4",
+      "day": "계유",
+      "view": "front",
+      "nativeTime": 0,
+      "progress": 0,
+      "stage": "raise",
+      "hand": [
+        0.7809096651116249,
+        0.7829354273850652,
+        0.16230660935797872
+      ],
+      "nativePixelSHA256": "33383e7b4178ea8a3cebe93670ddf60038d2b872fd6186ba9a268c787bc34bb2"
+    },
+    {
+      "file": "계유-front-001.png",
+      "bytes": 56863,
+      "SHA256": "810062419cf7a18e1a302b2d82b6755a4b23b46c2bed7f90e85e8919f35617a7",
+      "day": "계유",
+      "view": "front",
+      "nativeTime": 0.22168421052631576,
+      "progress": 0.05263157894736842,
+      "stage": "raise",
+      "hand": [
+        0.8454338188057046,
+        0.8177003966393865,
+        0.1642963197410785
+      ],
+      "nativePixelSHA256": "c5ce4e0f49cfe004e5bb16da8a8c6eb4921b3a18ee8f048d2d8add298177cef3"
+    },
+    {
+      "file": "계유-front-002.png",
+      "bytes": 59019,
+      "SHA256": "0c1b719fd70ef999d8cb83b18400522a7dda85eb9359814a54f8a865e7db317d",
+      "day": "계유",
+      "view": "front",
+      "nativeTime": 0.4433684210526315,
+      "progress": 0.10526315789473684,
+      "stage": "raise",
+      "hand": [
+        1.0699004999881219,
+        1.0364582834366065,
+        0.17293907633779587
+      ],
+      "nativePixelSHA256": "33b3e9ec782106109a32d84e129710beede9c024152177523915c60dda11bcf1"
+    },
+    {
+      "file": "계유-front-003.png",
+      "bytes": 61422,
+      "SHA256": "bbc4e40d6f7a31736b97a0b7072cb44c6db762bab31adfbd856d3e0af8ba51a7",
+      "day": "계유",
+      "view": "front",
+      "nativeTime": 0.6650526315789473,
+      "progress": 0.15789473684210525,
+      "stage": "raise",
+      "hand": [
+        1.1319623458887333,
+        1.4431646965875697,
+        0.18437332081465652
+      ],
+      "nativePixelSHA256": "1e36279b4b974328df75321c6b2c994d91618f24ca1ddd9c79dd958bd399f396"
+    },
+    {
+      "file": "계유-front-004.png",
+      "bytes": 62248,
+      "SHA256": "8e584cf39e97994e6fec83e80dfbc21dd5cad790828cf5f64ad09aea6bad8fb6",
+      "day": "계유",
+      "view": "front",
+      "nativeTime": 0.886736842105263,
+      "progress": 0.21052631578947367,
+      "stage": "raise",
+      "hand": [
+        1.0217443396233954,
+        1.6740032055399492,
+        0.19138770758919782
+      ],
+      "nativePixelSHA256": "bbe4e3897c4a70fccc9c460c86c7dc855191c0381c5a8821cb93cfac725378cc"
+    },
+    {
+      "file": "계유-front-005.png",
+      "bytes": 62386,
+      "SHA256": "6ee21b255ab3583082568a4705289a4bbd9d32f6329ea99758fa974adfe786bd",
+      "day": "계유",
+      "view": "front",
+      "nativeTime": 1.1084210526315788,
+      "progress": 0.2631578947368421,
+      "stage": "wave",
+      "hand": [
+        0.9925892852524242,
+        1.7079763886282482,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "417cb07fc9348350f0393157df072ed24e4fb81fa46a8516e9521f8b4a16043b"
+    },
+    {
+      "file": "계유-front-006.png",
+      "bytes": 62635,
+      "SHA256": "77276ec574ba33ac092cd0093072c8b388208665635eaee98a979b3fe21e5d30",
+      "day": "계유",
+      "view": "front",
+      "nativeTime": 1.3301052631578947,
+      "progress": 0.3157894736842105,
+      "stage": "wave",
+      "hand": [
+        0.9518684639527144,
+        1.7329353172386155,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "135b48772a71758454e998a5c4a2ba1c7a9fb3136d4713a54f3544924dadc060"
+    },
+    {
+      "file": "계유-front-007.png",
+      "bytes": 62074,
+      "SHA256": "9837f220b462375ffe3946ab91beaefc6a844a4d4fba42fdc203ea55434d386c",
+      "day": "계유",
+      "view": "front",
+      "nativeTime": 1.5517894736842104,
+      "progress": 0.3684210526315789,
+      "stage": "wave",
+      "hand": [
+        1.0571369711039822,
+        1.6256162093747313,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "02311bcaf71825f74e77feabc1a819f3a05706055434907105f49d1e52134084"
+    },
+    {
+      "file": "계유-front-008.png",
+      "bytes": 62471,
+      "SHA256": "c011c8aaeca12baa7559ebc1bbe05de3faa9beca5174e5f1a511429c43a828f3",
+      "day": "계유",
+      "view": "front",
+      "nativeTime": 1.773473684210526,
+      "progress": 0.42105263157894735,
+      "stage": "wave",
+      "hand": [
+        0.9889614094404042,
+        1.7102000150313865,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "3d15dac88259390f0609b7de81adf9769bf98fb4898cbd034fa8d0c087076102"
+    },
+    {
+      "file": "계유-front-009.png",
+      "bytes": 62476,
+      "SHA256": "48df846081c944e8660e6225211895b81924dee4c0321229e73c58085549bf79",
+      "day": "계유",
+      "view": "front",
+      "nativeTime": 1.9951578947368418,
+      "progress": 0.47368421052631576,
+      "stage": "wave",
+      "hand": [
+        0.933475050830574,
+        1.7442091538254996,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "57455621f586a0c9bc8afac72ff1d31fbb21760561149a6baa889f8d1b22de44"
+    },
+    {
+      "file": "계유-front-010.png",
+      "bytes": 61807,
+      "SHA256": "3cac40ee60b41d3a8763343ed4166dd6d9feac676a424afa7c3422fd32cb6a09",
+      "day": "계유",
+      "view": "front",
+      "nativeTime": 2.2168421052631575,
+      "progress": 0.5263157894736842,
+      "stage": "wave",
+      "hand": [
+        1.0496895524253957,
+        1.6360187998475937,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "7973c65e3036496b33c2cf9d09130342b8256a4d549e8a8721ca91321380a07f"
+    },
+    {
+      "file": "계유-front-011.png",
+      "bytes": 62130,
+      "SHA256": "ecf3e6e601dd37e7ca120eb97b7403a04fe148e0a5af60287b40d5a4022b292f",
+      "day": "계유",
+      "view": "front",
+      "nativeTime": 2.4385263157894737,
+      "progress": 0.5789473684210527,
+      "stage": "wave",
+      "hand": [
+        1.011810243897296,
+        1.6889288014224975,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "9ef2be2119b930db11cc8db84673bc2c57f6952a68227a6a8b32676d6a70e183"
+    },
+    {
+      "file": "계유-front-012.png",
+      "bytes": 62428,
+      "SHA256": "44aa97e3b6d5bc1ba5fcd45f211b13202858f447750fce886504d8f972aefc14",
+      "day": "계유",
+      "view": "front",
+      "nativeTime": 2.6602105263157894,
+      "progress": 0.631578947368421,
+      "stage": "wave",
+      "hand": [
+        0.9225659249891862,
+        1.7508956617196456,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "4f80a5d5d0e5dc4b4a3c444bf9fa640bbfb86f66aaec1045aded766c5e06a4b7"
+    },
+    {
+      "file": "계유-front-013.png",
+      "bytes": 62109,
+      "SHA256": "933a0f3fb046e1fdbbe2f7c465b24d6a7906f7591c69da640ad46e3c259240ba",
+      "day": "계유",
+      "view": "front",
+      "nativeTime": 2.881894736842105,
+      "progress": 0.6842105263157895,
+      "stage": "wave",
+      "hand": [
+        1.0371327765259775,
+        1.653558165227537,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "6a273df4c364ac3f42f3b5d97c26084194e69113e5c84bb2f3411d8da1eaff0c"
+    },
+    {
+      "file": "계유-front-014.png",
+      "bytes": 62367,
+      "SHA256": "1e03b51f0252752ca03ebd87a911f8c16567e643bd5596f9a82e741bdab08258",
+      "day": "계유",
+      "view": "front",
+      "nativeTime": 3.1035789473684208,
+      "progress": 0.7368421052631579,
+      "stage": "wave",
+      "hand": [
+        1.0093335734033573,
+        1.6923882267612078,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "cf7639bf97be7e74c9c9011351f05e64ac8d83b0dcd6bf803d176d0c9995d285"
+    },
+    {
+      "file": "계유-front-015.png",
+      "bytes": 62374,
+      "SHA256": "05458ecced9707aa328c88bb25709c6ced656383e5bf99b5b84cde2f71d986ef",
+      "day": "계유",
+      "view": "front",
+      "nativeTime": 3.3252631578947365,
+      "progress": 0.7894736842105263,
+      "stage": "lower",
+      "hand": [
+        1.0217443396233954,
+        1.6740032055399492,
+        0.19138770758919782
+      ],
+      "nativePixelSHA256": "f27f5ea47af57b46f8203783f4a4b865485e5b2afb97dfd367be69fcf7a4dcfb"
+    },
+    {
+      "file": "계유-front-016.png",
+      "bytes": 61621,
+      "SHA256": "ec0b97b6c0e18b315598e26cbc1dc528cc5d922f93963b14a4a03490eb853856",
+      "day": "계유",
+      "view": "front",
+      "nativeTime": 3.546947368421052,
+      "progress": 0.8421052631578947,
+      "stage": "lower",
+      "hand": [
+        1.1319623458887333,
+        1.4431646965875706,
+        0.18437332081465652
+      ],
+      "nativePixelSHA256": "e26c152a0a609af47cf7abe9f14ae586697ee5128eb3a0f36ee077c802fbbfb3"
+    },
+    {
+      "file": "계유-front-017.png",
+      "bytes": 60441,
+      "SHA256": "49344bc19cce0bbb4b2e39d503a694d36d2e1d24c642ef029bc43dbf57cae276",
+      "day": "계유",
+      "view": "front",
+      "nativeTime": 3.7686315789473683,
+      "progress": 0.8947368421052632,
+      "stage": "lower",
+      "hand": [
+        1.0699004999881219,
+        1.0364582834366065,
+        0.17293907633779587
+      ],
+      "nativePixelSHA256": "1e0b19b9c1dd74d1c7c7f3cc8af70eada5aa419c47a19759e670196492293ef9"
+    },
+    {
+      "file": "계유-front-018.png",
+      "bytes": 59760,
+      "SHA256": "6820c915e59ce889cc857eb261179c8e74d2fb6f0a42c26e9c994f92ba767720",
+      "day": "계유",
+      "view": "front",
+      "nativeTime": 3.9903157894736836,
+      "progress": 0.9473684210526315,
+      "stage": "lower",
+      "hand": [
+        0.8454338188057046,
+        0.8177003966393865,
+        0.1642963197410785
+      ],
+      "nativePixelSHA256": "a42f1ddb006816475286f2b1fc011eca75e26310e877894bcd820ce33b24a00c"
+    },
+    {
+      "file": "계유-front-019.png",
+      "bytes": 59642,
+      "SHA256": "1b5b0f774603f7c45d9c2fc83ddcfa101f373527085ec100490f42ff87a4dbe7",
+      "day": "계유",
+      "view": "front",
+      "nativeTime": 4.212,
+      "progress": 1,
+      "stage": "idle",
+      "hand": [
+        0.7809096651116249,
+        0.7829354273850652,
+        0.16230660935797872
+      ],
+      "nativePixelSHA256": "884ad7545452b2e6fe484ef6f327b70781a1c7bdb182e573128867781767338f"
+    },
+    {
+      "file": "계유-side-000.png",
+      "bytes": 40409,
+      "SHA256": "e10512e222a089203c7ee2d8ff1cb5fd9b0fe3e9902c79bc65a6037fe142b70c",
+      "day": "계유",
+      "view": "side",
+      "nativeTime": 0,
+      "progress": 0,
+      "stage": "raise",
+      "hand": [
+        0.7809096651116249,
+        0.7829354273850652,
+        0.16230660935797872
+      ],
+      "nativePixelSHA256": "3398d656d2c87bbf613dccabcf722d8d94f0d97b9db85fb097650fee4b98e110"
+    },
+    {
+      "file": "계유-side-001.png",
+      "bytes": 40355,
+      "SHA256": "2ab0e8aa20501b99883e8651b12e48426ef141fd5da0109864e3e221a2e172ed",
+      "day": "계유",
+      "view": "side",
+      "nativeTime": 0.22168421052631576,
+      "progress": 0.05263157894736842,
+      "stage": "raise",
+      "hand": [
+        0.8454338188057046,
+        0.8177003966393865,
+        0.1642963197410785
+      ],
+      "nativePixelSHA256": "102046c31a5d672d554e561a5717a57904cf4968712ed74e307491cfcf71b691"
+    },
+    {
+      "file": "계유-side-002.png",
+      "bytes": 41097,
+      "SHA256": "6c43279a7626566b905b665c615ebac0bddf1f12759e3f6a08681673ce6735fa",
+      "day": "계유",
+      "view": "side",
+      "nativeTime": 0.4433684210526315,
+      "progress": 0.10526315789473684,
+      "stage": "raise",
+      "hand": [
+        1.0699004999881219,
+        1.0364582834366065,
+        0.17293907633779587
+      ],
+      "nativePixelSHA256": "ed582aa38cff2f4334cf6fe87ffe487b3f2e5f84c0fba5948859fd42660fb9f5"
+    },
+    {
+      "file": "계유-side-003.png",
+      "bytes": 41558,
+      "SHA256": "64c5f8855a708533836fbbb065c1ed487f737051c0bd338105b357db1e066bb3",
+      "day": "계유",
+      "view": "side",
+      "nativeTime": 0.6650526315789473,
+      "progress": 0.15789473684210525,
+      "stage": "raise",
+      "hand": [
+        1.1319623458887333,
+        1.4431646965875697,
+        0.18437332081465652
+      ],
+      "nativePixelSHA256": "70fe445f603189d4e3d968312f754ebd03ab77154216a24d12dd342d4adae692"
+    },
+    {
+      "file": "계유-side-004.png",
+      "bytes": 41250,
+      "SHA256": "06e264a1ea8747fd609c799bb43e63d103686603513c57085295355bc45ae5f3",
+      "day": "계유",
+      "view": "side",
+      "nativeTime": 0.886736842105263,
+      "progress": 0.21052631578947367,
+      "stage": "raise",
+      "hand": [
+        1.0217443396233954,
+        1.6740032055399492,
+        0.19138770758919782
+      ],
+      "nativePixelSHA256": "839d64a46e683220e68d62c8e55fe191edabfa798625b600639812a7104ceff7"
+    },
+    {
+      "file": "계유-side-005.png",
+      "bytes": 41507,
+      "SHA256": "2b2351e68fc643a09ef6774abe9a743d8ede0040fc77a3199d4dc2b5bb01a53b",
+      "day": "계유",
+      "view": "side",
+      "nativeTime": 1.1084210526315788,
+      "progress": 0.2631578947368421,
+      "stage": "wave",
+      "hand": [
+        0.9925892852524242,
+        1.7079763886282482,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "54769ae35e023ae8dc838c07881701ccd35df5530e1be098c2801447ebc24f45"
+    },
+    {
+      "file": "계유-side-006.png",
+      "bytes": 41977,
+      "SHA256": "f1c4283ea5b7f70eb6f31c150d3c28164108469d7c31c63cbbee7b9afb45e3bc",
+      "day": "계유",
+      "view": "side",
+      "nativeTime": 1.3301052631578947,
+      "progress": 0.3157894736842105,
+      "stage": "wave",
+      "hand": [
+        0.9518684639527144,
+        1.7329353172386155,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "925c7556fe44a7c3c8399ed58b25d9e0514d90865dec69c63e0ad753f4b7d76d"
+    },
+    {
+      "file": "계유-side-007.png",
+      "bytes": 40236,
+      "SHA256": "a953898cd27fd4b1d6e1135a5f4a6c0c3db604f87bb7d285806f7237a981e84e",
+      "day": "계유",
+      "view": "side",
+      "nativeTime": 1.5517894736842104,
+      "progress": 0.3684210526315789,
+      "stage": "wave",
+      "hand": [
+        1.0571369711039822,
+        1.6256162093747313,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "962e8e291cfc435b491aa63bb07470537b1e886c2b126d3cb2816ae275c6d2ed"
+    },
+    {
+      "file": "계유-side-008.png",
+      "bytes": 41307,
+      "SHA256": "2f645ef75fb0dedfd620195d363bfc4d8543bb15e4943e99d1507c268d100937",
+      "day": "계유",
+      "view": "side",
+      "nativeTime": 1.773473684210526,
+      "progress": 0.42105263157894735,
+      "stage": "wave",
+      "hand": [
+        0.9889614094404042,
+        1.7102000150313865,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "af91067ac457419ba10fff11448f08c71e6f11b8e87d4dc667bfbfe89bcec46c"
+    },
+    {
+      "file": "계유-side-009.png",
+      "bytes": 42430,
+      "SHA256": "31d20459761135e7bb58278bda1ec886d99bef5d0c1ce7b67c49b4327f8bcdc7",
+      "day": "계유",
+      "view": "side",
+      "nativeTime": 1.9951578947368418,
+      "progress": 0.47368421052631576,
+      "stage": "wave",
+      "hand": [
+        0.933475050830574,
+        1.7442091538254996,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "34d94f4f45c55f42094592d430400811ff0f99c4239d6d66ad6be0adfb704ef2"
+    },
+    {
+      "file": "계유-side-010.png",
+      "bytes": 40417,
+      "SHA256": "f5d3be3651a717fcc4d9eebc419946bf9f5c3843400a5913683c85309a30c770",
+      "day": "계유",
+      "view": "side",
+      "nativeTime": 2.2168421052631575,
+      "progress": 0.5263157894736842,
+      "stage": "wave",
+      "hand": [
+        1.0496895524253957,
+        1.6360187998475937,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "32ada125a8979e5a9eb1c7811ef7f6fdca9db698cc8b5a85f3f92705c88dfe30"
+    },
+    {
+      "file": "계유-side-011.png",
+      "bytes": 40992,
+      "SHA256": "8ed2a008449fa80c67271f20b074b8eafe8ee8d5815828815c11940d3a83c931",
+      "day": "계유",
+      "view": "side",
+      "nativeTime": 2.4385263157894737,
+      "progress": 0.5789473684210527,
+      "stage": "wave",
+      "hand": [
+        1.011810243897296,
+        1.6889288014224975,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "a9fac9dcaa620379eedb6f7281cae37ae8870c586a7b303be5002f3e144db7b3"
+    },
+    {
+      "file": "계유-side-012.png",
+      "bytes": 42775,
+      "SHA256": "34bdac466b490517dda3dbecdcf86b7ebc81eea00f5c66c70af746f026ef28df",
+      "day": "계유",
+      "view": "side",
+      "nativeTime": 2.6602105263157894,
+      "progress": 0.631578947368421,
+      "stage": "wave",
+      "hand": [
+        0.9225659249891862,
+        1.7508956617196456,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "6016b07e066b7f6b23e2f2cb46ccf884836b98cbadc9c66852ddbab67536044e"
+    },
+    {
+      "file": "계유-side-013.png",
+      "bytes": 40627,
+      "SHA256": "47d917d26a77ea8e21a491c4048ea69f57cd7d9d46cf96f4b4101a4a768dbbfc",
+      "day": "계유",
+      "view": "side",
+      "nativeTime": 2.881894736842105,
+      "progress": 0.6842105263157895,
+      "stage": "wave",
+      "hand": [
+        1.0371327765259775,
+        1.653558165227537,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "c05ee5d6a0e1741dfd73727b3b88e9c6c1eaaeefb57ec627035aef7b96c20916"
+    },
+    {
+      "file": "계유-side-014.png",
+      "bytes": 41035,
+      "SHA256": "79fb85774129c3d290d8851bb7431bf5fe825d0ea8ad3bdd2c7e1f7dac53823a",
+      "day": "계유",
+      "view": "side",
+      "nativeTime": 3.1035789473684208,
+      "progress": 0.7368421052631579,
+      "stage": "wave",
+      "hand": [
+        1.0093335734033573,
+        1.6923882267612078,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "bfd5856279a8a801d27b4d897ef4541ee966218e592444498a097c442620f7ae"
+    },
+    {
+      "file": "계유-side-015.png",
+      "bytes": 41206,
+      "SHA256": "cd92119d5f27c8adc82e6448ed16bdacbe965e1cb2b673410438da546fe34b60",
+      "day": "계유",
+      "view": "side",
+      "nativeTime": 3.3252631578947365,
+      "progress": 0.7894736842105263,
+      "stage": "lower",
+      "hand": [
+        1.0217443396233954,
+        1.6740032055399492,
+        0.19138770758919782
+      ],
+      "nativePixelSHA256": "ddff2fdd9d22a73ed1dff2104adcf5a774fe5424d175ec580974e9251b8da688"
+    },
+    {
+      "file": "계유-side-016.png",
+      "bytes": 41442,
+      "SHA256": "1c8ab051155e5728918318a5b3088e08c4e906d2a91e38f49edd04356a031c44",
+      "day": "계유",
+      "view": "side",
+      "nativeTime": 3.546947368421052,
+      "progress": 0.8421052631578947,
+      "stage": "lower",
+      "hand": [
+        1.1319623458887333,
+        1.4431646965875706,
+        0.18437332081465652
+      ],
+      "nativePixelSHA256": "37ee744f0c382dc6abdd06efeb861dced98f23a92126bc078662a5ec61cbde01"
+    },
+    {
+      "file": "계유-side-017.png",
+      "bytes": 41319,
+      "SHA256": "8d91a88ece6d4608bd64d26d4ef1b2f63a0622a5575d405e51575595d36e5c9a",
+      "day": "계유",
+      "view": "side",
+      "nativeTime": 3.7686315789473683,
+      "progress": 0.8947368421052632,
+      "stage": "lower",
+      "hand": [
+        1.0699004999881219,
+        1.0364582834366065,
+        0.17293907633779587
+      ],
+      "nativePixelSHA256": "f19d1e4351a20e8d4ae5b89d7f6680b2863464c5ca451ff502222bb568cbd71e"
+    },
+    {
+      "file": "계유-side-018.png",
+      "bytes": 40814,
+      "SHA256": "5cd726a8fd6115b7975f882a91220d7f1376369701db2ce6f2ea1b92c57bbe56",
+      "day": "계유",
+      "view": "side",
+      "nativeTime": 3.9903157894736836,
+      "progress": 0.9473684210526315,
+      "stage": "lower",
+      "hand": [
+        0.8454338188057046,
+        0.8177003966393865,
+        0.1642963197410785
+      ],
+      "nativePixelSHA256": "baafd92211204bf80ed712c677d945527eb4f0ec2c7d3e84295dfce3933aa237"
+    },
+    {
+      "file": "계유-side-019.png",
+      "bytes": 40466,
+      "SHA256": "2bd6e8c6fc4a676f68feca2082417bd0a4dd5f7202a212f66f7abbed127ee71d",
+      "day": "계유",
+      "view": "side",
+      "nativeTime": 4.212,
+      "progress": 1,
+      "stage": "idle",
+      "hand": [
+        0.7809096651116249,
+        0.7829354273850652,
+        0.16230660935797872
+      ],
+      "nativePixelSHA256": "564ff5759200bc47090eba2bffdca79d12730d36882c635aa6cf74b67ba41103"
+    },
+    {
+      "file": "무진-front-000.png",
+      "bytes": 150731,
+      "SHA256": "d1a4e8b3ac07b45a5ce4b8834e5aae9b29837482481089af88debe61d62d7afe",
+      "day": "무진",
+      "view": "front",
+      "nativeTime": 0,
+      "progress": 0,
+      "stage": "raise",
+      "hand": [
+        0.7809096651116249,
+        0.7829354273850652,
+        0.16230660935797872
+      ],
+      "nativePixelSHA256": "d2b6b3a19be1afe9b0fdcc3e0631e9cdf62c3812b6f69c5ca4527f0769c2898e"
+    },
+    {
+      "file": "무진-front-001.png",
+      "bytes": 151257,
+      "SHA256": "3b9f26c78e480810b0b90620d5c6c767b5ede90792c660a6ba050e8543ff52f5",
+      "day": "무진",
+      "view": "front",
+      "nativeTime": 0.21789473684210522,
+      "progress": 0.05263157894736842,
+      "stage": "raise",
+      "hand": [
+        0.8454338188057046,
+        0.8177003966393865,
+        0.1642963197410785
+      ],
+      "nativePixelSHA256": "fdec5225baa4248f6f8800507375bbf8c8b4bc94e18940eceaa9774bc4bdfd6f"
+    },
+    {
+      "file": "무진-front-002.png",
+      "bytes": 153616,
+      "SHA256": "8206f8b038de340bc42f5b965982aed64752710ba602d89273918c4561a07723",
+      "day": "무진",
+      "view": "front",
+      "nativeTime": 0.43578947368421045,
+      "progress": 0.10526315789473684,
+      "stage": "raise",
+      "hand": [
+        1.0699004999881219,
+        1.0364582834366065,
+        0.17293907633779587
+      ],
+      "nativePixelSHA256": "3212fb4c6a2798a951ee868786f70d8e74055b88b94740409fcaff78266dc059"
+    },
+    {
+      "file": "무진-front-003.png",
+      "bytes": 158624,
+      "SHA256": "0b7ec216000aef0ac26efd49b9ba4280c9c3866d3a7cc64c5c998e86b86e0ec6",
+      "day": "무진",
+      "view": "front",
+      "nativeTime": 0.6536842105263158,
+      "progress": 0.15789473684210525,
+      "stage": "raise",
+      "hand": [
+        1.1319623458887333,
+        1.4431646965875697,
+        0.18437332081465652
+      ],
+      "nativePixelSHA256": "ca17237d2ff42ae381fdc3e677691bd7e68826085595b84c113cecf53f84aeda"
+    },
+    {
+      "file": "무진-front-004.png",
+      "bytes": 161336,
+      "SHA256": "0a7c3280ac6ef056d9941ab737623a5fd99de185ba161b996f3ccd3581b5cb2e",
+      "day": "무진",
+      "view": "front",
+      "nativeTime": 0.8715789473684209,
+      "progress": 0.21052631578947367,
+      "stage": "raise",
+      "hand": [
+        1.0217443396233954,
+        1.6740032055399492,
+        0.19138770758919782
+      ],
+      "nativePixelSHA256": "bdb0fb215505510aeb6e101ed146bd7ca7dc6453a91e71192870c5d2628ab369"
+    },
+    {
+      "file": "무진-front-005.png",
+      "bytes": 161789,
+      "SHA256": "62c7350404babce4ebe270f90880a98db318d6072d4ee439538593128fcfe1cd",
+      "day": "무진",
+      "view": "front",
+      "nativeTime": 1.0894736842105261,
+      "progress": 0.2631578947368421,
+      "stage": "wave",
+      "hand": [
+        0.9925892852524242,
+        1.7079763886282482,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "01c51152404a5cae55c2b59092d5424d8fb0b6150dbe5460be99b2c581d533ff"
+    },
+    {
+      "file": "무진-front-006.png",
+      "bytes": 162736,
+      "SHA256": "86a0148c6ec677a35a2e25191a52bd165db836569c44b44cd9375fd4a296a3a9",
+      "day": "무진",
+      "view": "front",
+      "nativeTime": 1.3073684210526315,
+      "progress": 0.3157894736842105,
+      "stage": "wave",
+      "hand": [
+        0.9518684639527144,
+        1.7329353172386155,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "4229769b015396ad70a0126c2f39fbd39e79a66d8f7ab587f63bf86d860c4f88"
+    },
+    {
+      "file": "무진-front-007.png",
+      "bytes": 159419,
+      "SHA256": "ba443c3ce378c74732de707e330e86fe68742f2c98d8862ddddf13d08f97ec78",
+      "day": "무진",
+      "view": "front",
+      "nativeTime": 1.5252631578947367,
+      "progress": 0.3684210526315789,
+      "stage": "wave",
+      "hand": [
+        1.0571369711039822,
+        1.6256162093747313,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "a4bcc3092d4c357ff1de60e231df1816056411402ea3869bc91beff513c18f2f"
+    },
+    {
+      "file": "무진-front-008.png",
+      "bytes": 162192,
+      "SHA256": "17db23e8671d9f4d23c113a9a341aa8dc278ead547f198a425f7b4501a128132",
+      "day": "무진",
+      "view": "front",
+      "nativeTime": 1.7431578947368418,
+      "progress": 0.42105263157894735,
+      "stage": "wave",
+      "hand": [
+        0.9889614094404042,
+        1.7102000150313865,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "63157104922ae68b269808f998acfc4573a79aff5e078947d2f19fdc61f7c64e"
+    },
+    {
+      "file": "무진-front-009.png",
+      "bytes": 163582,
+      "SHA256": "dbd32b51f86a6f524e015a2efd2bb65efc8968183ad5aab5cad93411191a9f8b",
+      "day": "무진",
+      "view": "front",
+      "nativeTime": 1.9610526315789472,
+      "progress": 0.47368421052631576,
+      "stage": "wave",
+      "hand": [
+        0.933475050830574,
+        1.7442091538254996,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "fe8887cd048c09493e933cd7e0f55a6c9c7203834a5d16f111f65051721a72ca"
+    },
+    {
+      "file": "무진-front-010.png",
+      "bytes": 160170,
+      "SHA256": "ee1c58d56f0f230ce3ae8bcc347ab5779a7dd06be4f34fe1fb437212a6bf1408",
+      "day": "무진",
+      "view": "front",
+      "nativeTime": 2.1789473684210523,
+      "progress": 0.5263157894736842,
+      "stage": "wave",
+      "hand": [
+        1.0496895524253957,
+        1.6360187998475937,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "03a73dac401ac2abe3b6e0505bcd3c3500d2fb8cff0d056bcd0fb6c587e711a7"
+    },
+    {
+      "file": "무진-front-011.png",
+      "bytes": 161477,
+      "SHA256": "1aa35ae4e21200bcfb3c2ec7b9833cfac10796a13b1556aa94a4fd85f7dabdd8",
+      "day": "무진",
+      "view": "front",
+      "nativeTime": 2.3968421052631577,
+      "progress": 0.5789473684210527,
+      "stage": "wave",
+      "hand": [
+        1.011810243897296,
+        1.6889288014224975,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "36299712b3bd883cdb5d0380bad2cd8a007c91f4c85cf2a8d5dd5d7c23f9d99c"
+    },
+    {
+      "file": "무진-front-012.png",
+      "bytes": 163748,
+      "SHA256": "3a8d07236321975eab23998184b34beaa4bc57a00bdea2182733ac33d31ee1a7",
+      "day": "무진",
+      "view": "front",
+      "nativeTime": 2.614736842105263,
+      "progress": 0.631578947368421,
+      "stage": "wave",
+      "hand": [
+        0.9225659249891862,
+        1.7508956617196456,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "2449a57d4a9d2eebdfcb8ae9f6fffc6689f93b7eec166c97c140d837c752ef8c"
+    },
+    {
+      "file": "무진-front-013.png",
+      "bytes": 160061,
+      "SHA256": "d9ed108959e817af2e23c73fa1080ac17818c8d464cb99874352ccf9835a496f",
+      "day": "무진",
+      "view": "front",
+      "nativeTime": 2.8326315789473684,
+      "progress": 0.6842105263157895,
+      "stage": "wave",
+      "hand": [
+        1.0371327765259775,
+        1.653558165227537,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "8a35e9d179b68e584de988a9c5539ece14e3539adc90d281411637e1ac035f76"
+    },
+    {
+      "file": "무진-front-014.png",
+      "bytes": 161605,
+      "SHA256": "3fbfd434b4ebae162d4c5d894d6785d84f57e428f0904f47276258f94bbb8bbb",
+      "day": "무진",
+      "view": "front",
+      "nativeTime": 3.0505263157894733,
+      "progress": 0.7368421052631579,
+      "stage": "wave",
+      "hand": [
+        1.0093335734033573,
+        1.6923882267612078,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "386793aacd1f7e287b46125da5faa50e9af7b521234cd1e717046474eb8c3581"
+    },
+    {
+      "file": "무진-front-015.png",
+      "bytes": 161607,
+      "SHA256": "8c89b1e5e286303f02faa9631d167091e622c0bc5219a743fce03699680fcb7f",
+      "day": "무진",
+      "view": "front",
+      "nativeTime": 3.2684210526315787,
+      "progress": 0.7894736842105263,
+      "stage": "lower",
+      "hand": [
+        1.0217443396233954,
+        1.6740032055399492,
+        0.19138770758919782
+      ],
+      "nativePixelSHA256": "c2e16a93e9e23a412856118b0cf6f607a8a524a8e6f388d276a01f5424333b28"
+    },
+    {
+      "file": "무진-front-016.png",
+      "bytes": 158684,
+      "SHA256": "e2666867abfa10a2dc369fe2db80f656d63a68b2c645aab57f62be2697e1c648",
+      "day": "무진",
+      "view": "front",
+      "nativeTime": 3.4863157894736836,
+      "progress": 0.8421052631578947,
+      "stage": "lower",
+      "hand": [
+        1.1319623458887333,
+        1.4431646965875706,
+        0.18437332081465652
+      ],
+      "nativePixelSHA256": "c6126c24bea75f8193834b2e740765dd58f1b1370eb554a635d8b04f30732e76"
+    },
+    {
+      "file": "무진-front-017.png",
+      "bytes": 154255,
+      "SHA256": "359e5a2ef099cd11f17e4b760149a8f495ea5bad65ccfd843d9517aa83ba4bca",
+      "day": "무진",
+      "view": "front",
+      "nativeTime": 3.7042105263157894,
+      "progress": 0.8947368421052632,
+      "stage": "lower",
+      "hand": [
+        1.0699004999881219,
+        1.0364582834366065,
+        0.17293907633779587
+      ],
+      "nativePixelSHA256": "cc998f3bab3c340beb03232d13cb5ad7fbe1e650194f145bcd658140abcf9c2c"
+    },
+    {
+      "file": "무진-front-018.png",
+      "bytes": 151500,
+      "SHA256": "87095f5bc56af223d615b8428fad1796d7bf63e5c7e55b2daf78bc737e221b46",
+      "day": "무진",
+      "view": "front",
+      "nativeTime": 3.9221052631578943,
+      "progress": 0.9473684210526315,
+      "stage": "lower",
+      "hand": [
+        0.8454338188057046,
+        0.8177003966393865,
+        0.1642963197410785
+      ],
+      "nativePixelSHA256": "393150f648bda3dd7fd682bac905a8ac0cbb5631949e367431edb1acfdf32987"
+    },
+    {
+      "file": "무진-front-019.png",
+      "bytes": 150846,
+      "SHA256": "8fe5c6e6ac37df680b24ca11dd7fb4e69b72b5826d2da6cdd76de0b826ac42bc",
+      "day": "무진",
+      "view": "front",
+      "nativeTime": 4.14,
+      "progress": 1,
+      "stage": "idle",
+      "hand": [
+        0.7809096651116249,
+        0.7829354273850652,
+        0.16230660935797872
+      ],
+      "nativePixelSHA256": "da1cbc8776bb02b1a26b9c2ebbd5b021a80fca5cd8c5065a0af9a3cb6cef5aff"
+    },
+    {
+      "file": "무진-side-000.png",
+      "bytes": 138581,
+      "SHA256": "af687550661801882c817dae36044ac867973063c275637a8d4e259d78dfafe9",
+      "day": "무진",
+      "view": "side",
+      "nativeTime": 0,
+      "progress": 0,
+      "stage": "raise",
+      "hand": [
+        0.7809096651116249,
+        0.7829354273850652,
+        0.16230660935797872
+      ],
+      "nativePixelSHA256": "41a3de1681e90da6c324e61cdb51e39477e06ac453a5d7d7d87b7a9f82ef3ba9"
+    },
+    {
+      "file": "무진-side-001.png",
+      "bytes": 138812,
+      "SHA256": "a60262bf7646dd03eb88fdb0f5217423dd737184cc7b31b567ba851dcf4ac7f9",
+      "day": "무진",
+      "view": "side",
+      "nativeTime": 0.21789473684210522,
+      "progress": 0.05263157894736842,
+      "stage": "raise",
+      "hand": [
+        0.8454338188057046,
+        0.8177003966393865,
+        0.1642963197410785
+      ],
+      "nativePixelSHA256": "8dc868d5b591d6b1ec967186653c359a9c0f8ef5e68132cc1485f03a0b2b6937"
+    },
+    {
+      "file": "무진-side-002.png",
+      "bytes": 140631,
+      "SHA256": "21e1a4016df3b142d943a5734c96e8cfa53f333e01a03ef3a39fd9da33e6e29c",
+      "day": "무진",
+      "view": "side",
+      "nativeTime": 0.43578947368421045,
+      "progress": 0.10526315789473684,
+      "stage": "raise",
+      "hand": [
+        1.0699004999881219,
+        1.0364582834366065,
+        0.17293907633779587
+      ],
+      "nativePixelSHA256": "7cccc3a52c6aa7ef8255e2445e836b3dd01c6ece24299360f802ece14559cf6b"
+    },
+    {
+      "file": "무진-side-003.png",
+      "bytes": 139584,
+      "SHA256": "28738c1f0fef87f0d8bbe8793866ced634444a95032003f0931517715035a121",
+      "day": "무진",
+      "view": "side",
+      "nativeTime": 0.6536842105263158,
+      "progress": 0.15789473684210525,
+      "stage": "raise",
+      "hand": [
+        1.1319623458887333,
+        1.4431646965875697,
+        0.18437332081465652
+      ],
+      "nativePixelSHA256": "f539203eece669a2a25c4ee3976240a8bc1f62ecd6ef15c233b09f8c4d05e604"
+    },
+    {
+      "file": "무진-side-004.png",
+      "bytes": 138451,
+      "SHA256": "bdf28cc4417d33c5c6224881802f53032cda70713a14fd9936eed5cc29fc337d",
+      "day": "무진",
+      "view": "side",
+      "nativeTime": 0.8715789473684209,
+      "progress": 0.21052631578947367,
+      "stage": "raise",
+      "hand": [
+        1.0217443396233954,
+        1.6740032055399492,
+        0.19138770758919782
+      ],
+      "nativePixelSHA256": "7c2f43eb80aba23854f754129ef2446628de91459dde6abffee7601aadb60d6a"
+    },
+    {
+      "file": "무진-side-005.png",
+      "bytes": 138345,
+      "SHA256": "ef3d744b3f85e8d61668a3091604bd362960027664032d05c371fc986be35bce",
+      "day": "무진",
+      "view": "side",
+      "nativeTime": 1.0894736842105261,
+      "progress": 0.2631578947368421,
+      "stage": "wave",
+      "hand": [
+        0.9925892852524242,
+        1.7079763886282482,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "654a3b9256911967f5ceec0e804d7123f55a06c9b0b6ecdc18575c596daab845"
+    },
+    {
+      "file": "무진-side-006.png",
+      "bytes": 138030,
+      "SHA256": "09f9cb140d30855b2a0ad31ff943900d36394cac610f80a4d2c62618e24e11f3",
+      "day": "무진",
+      "view": "side",
+      "nativeTime": 1.3073684210526315,
+      "progress": 0.3157894736842105,
+      "stage": "wave",
+      "hand": [
+        0.9518684639527144,
+        1.7329353172386155,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "f6b1f5a60a007170570ca25570adb956e51817961e42c558668e526831cf7dc7"
+    },
+    {
+      "file": "무진-side-007.png",
+      "bytes": 139249,
+      "SHA256": "37640ec55b282e934070aaf7b4764afe12ad7ebb139ac440aec9e9a281fa4162",
+      "day": "무진",
+      "view": "side",
+      "nativeTime": 1.5252631578947367,
+      "progress": 0.3684210526315789,
+      "stage": "wave",
+      "hand": [
+        1.0571369711039822,
+        1.6256162093747313,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "b91a8e0ed30dd312959fbda120be3446ea7a605d3a1338422bddba64bf5c5782"
+    },
+    {
+      "file": "무진-side-008.png",
+      "bytes": 138650,
+      "SHA256": "cb813a55ce83723b0d3a1280cda6d00c873f7ff668a9bcd84b15d86fd6a09ae1",
+      "day": "무진",
+      "view": "side",
+      "nativeTime": 1.7431578947368418,
+      "progress": 0.42105263157894735,
+      "stage": "wave",
+      "hand": [
+        0.9889614094404042,
+        1.7102000150313865,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "3e7f7500a6cc0d60daabe9685af7bbaba530b76fe770fdb6eae1a3d4496357f8"
+    },
+    {
+      "file": "무진-side-009.png",
+      "bytes": 137858,
+      "SHA256": "777f821f96c3d50bbf735f6cb4839505c00982fa2e37ca42062e94db6d8a4658",
+      "day": "무진",
+      "view": "side",
+      "nativeTime": 1.9610526315789472,
+      "progress": 0.47368421052631576,
+      "stage": "wave",
+      "hand": [
+        0.933475050830574,
+        1.7442091538254996,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "490ee52278be40f0a4d9c5d30c6727f34156f1f974072b8dfec08d4ca3f3f77d"
+    },
+    {
+      "file": "무진-side-010.png",
+      "bytes": 139277,
+      "SHA256": "d000678421ccd2f6e40d65e6575b5feeb46528ac223682db60e3d6551e204e38",
+      "day": "무진",
+      "view": "side",
+      "nativeTime": 2.1789473684210523,
+      "progress": 0.5263157894736842,
+      "stage": "wave",
+      "hand": [
+        1.0496895524253957,
+        1.6360187998475937,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "654236559946aa63674fce55d6bf0f24fd3404fc218d73df5401bfec23b4c2f4"
+    },
+    {
+      "file": "무진-side-011.png",
+      "bytes": 138908,
+      "SHA256": "90eeaee52ec2c06ed7de86f5a238373b18f78ead2ee1e10012ed64f675ef0eb6",
+      "day": "무진",
+      "view": "side",
+      "nativeTime": 2.3968421052631577,
+      "progress": 0.5789473684210527,
+      "stage": "wave",
+      "hand": [
+        1.011810243897296,
+        1.6889288014224975,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "aad68524648d9c6b969d5ebadd4398b3b685fe6d62d910eaf654ffe6976b2c06"
+    },
+    {
+      "file": "무진-side-012.png",
+      "bytes": 137921,
+      "SHA256": "a29c0f4446dc7a7d0f39c0830d883858a718e3480af97b3ae85bc4ca8f2cae0f",
+      "day": "무진",
+      "view": "side",
+      "nativeTime": 2.614736842105263,
+      "progress": 0.631578947368421,
+      "stage": "wave",
+      "hand": [
+        0.9225659249891862,
+        1.7508956617196456,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "74d3c05a3d903dfc4958304e04907b33199680078ab559136086ee1ee96acaf0"
+    },
+    {
+      "file": "무진-side-013.png",
+      "bytes": 139201,
+      "SHA256": "c1ceb16aa228266dd5e50e1b578908fbd50a10403f24eda6e9d0d28b04b7cf4b",
+      "day": "무진",
+      "view": "side",
+      "nativeTime": 2.8326315789473684,
+      "progress": 0.6842105263157895,
+      "stage": "wave",
+      "hand": [
+        1.0371327765259775,
+        1.653558165227537,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "645e32a7a047bd1ab85d4b95f8a4fa70259ae7527939c64ad47fbabcd61f9759"
+    },
+    {
+      "file": "무진-side-014.png",
+      "bytes": 138867,
+      "SHA256": "a75c86110bb257c02ae29495b3561f9d4a02e7b8c0ec34b5cc88187ff32502e3",
+      "day": "무진",
+      "view": "side",
+      "nativeTime": 3.0505263157894733,
+      "progress": 0.7368421052631579,
+      "stage": "wave",
+      "hand": [
+        1.0093335734033573,
+        1.6923882267612078,
+        0.19230660868742647
+      ],
+      "nativePixelSHA256": "6fb33c27c9d55402573e44f542df4efb20ae70b65816048bdb6eb9159fd0efe1"
+    },
+    {
+      "file": "무진-side-015.png",
+      "bytes": 138828,
+      "SHA256": "59d4ed88b414bb349f5e052d47aeb1627622ebe30acf056ac248c76455302ead",
+      "day": "무진",
+      "view": "side",
+      "nativeTime": 3.2684210526315787,
+      "progress": 0.7894736842105263,
+      "stage": "lower",
+      "hand": [
+        1.0217443396233954,
+        1.6740032055399492,
+        0.19138770758919782
+      ],
+      "nativePixelSHA256": "fb082cfa4a917959ae4e77cfbd779c9c2db38043f0a031fc0a0adba1a3558287"
+    },
+    {
+      "file": "무진-side-016.png",
+      "bytes": 139993,
+      "SHA256": "d2c0402e27236e9ad6b0fd43f893d8734181cec547e08d051e358e81d55f36dd",
+      "day": "무진",
+      "view": "side",
+      "nativeTime": 3.4863157894736836,
+      "progress": 0.8421052631578947,
+      "stage": "lower",
+      "hand": [
+        1.1319623458887333,
+        1.4431646965875706,
+        0.18437332081465652
+      ],
+      "nativePixelSHA256": "01d5f911cdfbfc5b0f0c9147beeeceaef6befa3847d83050e51e24ef739cfc03"
+    },
+    {
+      "file": "무진-side-017.png",
+      "bytes": 141291,
+      "SHA256": "d527093f1123c98d174c55199b0bc551117c45a99d8cbe281189697af4b5569d",
+      "day": "무진",
+      "view": "side",
+      "nativeTime": 3.7042105263157894,
+      "progress": 0.8947368421052632,
+      "stage": "lower",
+      "hand": [
+        1.0699004999881219,
+        1.0364582834366065,
+        0.17293907633779587
+      ],
+      "nativePixelSHA256": "5f00d9d47efc75fea4ce1beb04372715fb7b55490ac29b36eecf75b0ea7630da"
+    },
+    {
+      "file": "무진-side-018.png",
+      "bytes": 139426,
+      "SHA256": "ddcb702a8128b37df195562dead07a33b0ee71542a7c9f327d34634266f2d111",
+      "day": "무진",
+      "view": "side",
+      "nativeTime": 3.9221052631578943,
+      "progress": 0.9473684210526315,
+      "stage": "lower",
+      "hand": [
+        0.8454338188057046,
+        0.8177003966393865,
+        0.1642963197410785
+      ],
+      "nativePixelSHA256": "b91e15cd3b8e2966b51f8b565d4f35831c87709c6f1c7bc116fd33b96ccaa1c1"
+    },
+    {
+      "file": "무진-side-019.png",
+      "bytes": 138738,
+      "SHA256": "523ffd60fcc407882c87e4e6857003647de16a4f8d20e9fb90e8685e604c12b4",
+      "day": "무진",
+      "view": "side",
+      "nativeTime": 4.14,
+      "progress": 1,
+      "stage": "idle",
+      "hand": [
+        0.7809096651116249,
+        0.7829354273850652,
+        0.16230660935797872
+      ],
+      "nativePixelSHA256": "64e664dd30cb5538623ef2035584eb8ebffb40af74a533e89aa8ea567bf70bcd"
+    }
+  ],
+  "count": 234,
+  "totalBytes": 28712053
+}

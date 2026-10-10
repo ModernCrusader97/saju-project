@@ -16,9 +16,9 @@
 test at scripts/qa/spirit-water-wave-cpu.mjs:41:1
 ✖ 壬 broad height is exactly half on the actual original GLB rest coordinates (2.648227ms)
   AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
-  
+
   0.034 !== 0.017
-  
+
       at TestContext.<anonymous> (file:///workspace/saju-spirit-fashion-dew-water-20261010/scripts/qa/spirit-water-wave-cpu.mjs:43:33)
       at Test.runInAsyncScope (node:async_hooks:227:14)
       at Test.run (node:internal/test_runner/test:1382:25)
@@ -37,7 +37,7 @@ test at scripts/qa/spirit-water-wave-cpu.mjs:58:1
   AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
   + actual - expected
   ... Skipped lines
-  
+
     '\n' +
       '  // One invertible, latitude-sheared advection map drives every water layer.\n' +
       '  // This exact angle and crest/breaker field are also used by the CPU accents.\n' +
@@ -49,7 +49,7 @@ test at scripts/qa/spirit-water-wave-cpu.mjs:58:1
   -   '  s.height=.034*wave+.0045*ripple+.0014*(detail-.5)+.0018*foam;\n' +
       '  s.emission=vec3(.006,.014,.020)*foam;\n' +
       ' '
-  
+
       at TestContext.<anonymous> (file:///workspace/saju-spirit-fashion-dew-water-20261010/scripts/qa/spirit-water-wave-cpu.mjs:61:12)
       at Test.runInAsyncScope (node:async_hooks:227:14)
       at Test.run (node:internal/test_runner/test:1382:25)

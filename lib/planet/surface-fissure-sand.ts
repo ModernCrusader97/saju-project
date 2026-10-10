@@ -71,7 +71,18 @@ class RigidTriangleCollider {
   if(this.mesh.morphTargetInfluences?.some(w=>!Number.isFinite(w)))throw new RangeError('Sand collision morph weights must be finite.');
   if(weights!==this.weights){
    this.weights=weights;
-   for(const id of this.affectedVertices)this.mesh.getVertexPosition(id,this.a).toArray(this.vertices,id*3);
+   const geometry=this.mesh.geometry,influences=this.mesh.morphTargetInfluences,morphs=geometry.morphAttributes.position??[];
+   if(geometry.morphTargetsRelative&&influences&&influences.length===morphs.length&&this.mesh.getVertexPosition===THREE.Mesh.prototype.getVertexPosition){
+    // Collect the bounded nonzero controls once. Match Three's target order and
+    // Float64 arithmetic: sum relative deltas first, then add the source point.
+    // Custom vertex methods and absolute morphs retain the original API path.
+    const active=morphs.map((attribute,i)=>({attribute,weight:influences[i]})).filter(p=>p.weight!==0),position=geometry.getAttribute('position');
+    for(const id of this.affectedVertices){
+     let x=0,y=0,z=0;
+     for(const {attribute,weight} of active){x+=attribute.getX(id)*weight;y+=attribute.getY(id)*weight;z+=attribute.getZ(id)*weight;}
+     this.vertices[id*3]=position.getX(id)+x;this.vertices[id*3+1]=position.getY(id)+y;this.vertices[id*3+2]=position.getZ(id)+z;
+    }
+   }else for(const id of this.affectedVertices)this.mesh.getVertexPosition(id,this.a).toArray(this.vertices,id*3);
    const oversizedWeights=this.mesh.morphTargetInfluences?.some(w=>Math.abs(w)>1)??false;
    if(this.tree){this.refit(this.tree,oversizedWeights||this.oversizedWeights);this.refitCount++;}
    this.oversizedWeights=oversizedWeights;

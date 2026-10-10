@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "transformOnly": true,
+  "lifecycleAdapter": true,
+  "motionBeforeEffects": true,
+  "sourceLoaderSHA256": "64c85f63d50e63f57a53e4bcb10a98383657e2f3fce2fd9e5aaa7bde65a1a543",
+  "transformedLoaderSHA256": "41ea888a42fa030608bf5804282d833e3e0d06894f31ccf3e5053db17be93509",
+  "generatedBrowserHarnessSHA256": "b6c64b7dbca51dab1b62b67d3c97cc75ca66bb50229f4160a01636d71e50bc78",
+  "limits": [
+    "Read-only Vite transform verification; no browser, WebGL or render claim."
+  ]
+}

@@ -1,0 +1,267 @@
+{
+  "status": "PASS",
+  "videos": [
+    {
+      "file": "outputs/approved-spirit-raised-wave/review/raised-wave-front.mp4",
+      "SHA256": "ce32f7472cff6f7601743c04a256cca2027a6ad95a7e59c3e0d5fcada50e77d2",
+      "bytes": 284739,
+      "view": "front",
+      "nativeWaveDuration": 3.888,
+      "nativeWaveDurationRational": "486/125",
+      "frames": 77,
+      "frameRateRational": "4750/243",
+      "frameIntervalRational": "243/4750",
+      "lastFrameNativeTime": 3.8880000000000003,
+      "lastFramePTS": 18468,
+      "timeBase": "1/4750",
+      "encodedTrackDuration": "3.939158",
+      "encodedFormatDuration": "3.939158",
+      "exactTrackDurationRational": "18711/4750",
+      "endIdleHoldDuration": 0.051157894736842104,
+      "timing": "Native sampled times are preserved exactly in MP4 PTS; the final idle frame is held for one additional native frame interval. No source-time retiming.",
+      "codec": "h264",
+      "resolution": [
+        560,
+        640
+      ],
+      "encoderCommand": [
+        "ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-y",
+        "-framerate",
+        "4750/243",
+        "-start_number",
+        "0",
+        "-i",
+        "outputs/approved-spirit-raised-wave/native/기사-front-%03d.png",
+        "-frames:v",
+        "77",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "veryfast",
+        "-crf",
+        "18",
+        "-threads",
+        "1",
+        "-pix_fmt",
+        "yuv420p",
+        "-video_track_timescale",
+        "4750",
+        "-movflags",
+        "+faststart",
+        "outputs/approved-spirit-raised-wave/review/raised-wave-front.mp4"
+      ]
+    },
+    {
+      "file": "outputs/approved-spirit-raised-wave/review/raised-wave-side.mp4",
+      "SHA256": "49092e1c786a8e3303258c7ce03af4c167005e78faaa28ed32efe4cabec08767",
+      "bytes": 245062,
+      "view": "side",
+      "nativeWaveDuration": 3.888,
+      "nativeWaveDurationRational": "486/125",
+      "frames": 77,
+      "frameRateRational": "4750/243",
+      "frameIntervalRational": "243/4750",
+      "lastFrameNativeTime": 3.8880000000000003,
+      "lastFramePTS": 18468,
+      "timeBase": "1/4750",
+      "encodedTrackDuration": "3.939158",
+      "encodedFormatDuration": "3.939158",
+      "exactTrackDurationRational": "18711/4750",
+      "endIdleHoldDuration": 0.051157894736842104,
+      "timing": "Native sampled times are preserved exactly in MP4 PTS; the final idle frame is held for one additional native frame interval. No source-time retiming.",
+      "codec": "h264",
+      "resolution": [
+        560,
+        640
+      ],
+      "encoderCommand": [
+        "ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-y",
+        "-framerate",
+        "4750/243",
+        "-start_number",
+        "0",
+        "-i",
+        "outputs/approved-spirit-raised-wave/native/기사-side-%03d.png",
+        "-frames:v",
+        "77",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "veryfast",
+        "-crf",
+        "18",
+        "-threads",
+        "1",
+        "-pix_fmt",
+        "yuv420p",
+        "-video_track_timescale",
+        "4750",
+        "-movflags",
+        "+faststart",
+        "outputs/approved-spirit-raised-wave/review/raised-wave-side.mp4"
+      ]
+    }
+  ],
+  "keyframes": [
+    {
+      "file": "기사-front-000.png",
+      "nativeTime": 0,
+      "progress": 0,
+      "stage": "raise",
+      "SHA256": "a0bff24c837cc1afabc0f0902a45ff15b4e2ab7a8f262fc6000c247ee2e2de8b"
+    },
+    {
+      "file": "기사-front-010.png",
+      "nativeTime": 0.511578947368421,
+      "progress": 0.13157894736842105,
+      "stage": "raise",
+      "SHA256": "4a27eaa4bb37032a8c3d1afeb1ba7abd273e1983f6881dae6bb961039f2f88c9"
+    },
+    {
+      "file": "기사-front-022.png",
+      "nativeTime": 1.1254736842105264,
+      "progress": 0.2894736842105263,
+      "stage": "wave",
+      "SHA256": "1e64b4e6dcef9bca1b7fe157a82c3dceb2a7405dfc4688722af5678f8670a962"
+    },
+    {
+      "file": "기사-front-028.png",
+      "nativeTime": 1.432421052631579,
+      "progress": 0.3684210526315789,
+      "stage": "wave",
+      "SHA256": "d8267e2ef0d844c361ef278dd9caf1aa9e5d724ce56d0f74e9ba7612fdcf9a92"
+    },
+    {
+      "file": "기사-front-035.png",
+      "nativeTime": 1.7905263157894737,
+      "progress": 0.4605263157894737,
+      "stage": "wave",
+      "SHA256": "3899d15fbfb26e684b09af92a9abd3926e9ff6bf318007d4903950a003100f80"
+    },
+    {
+      "file": "기사-front-041.png",
+      "nativeTime": 2.0974736842105264,
+      "progress": 0.5394736842105263,
+      "stage": "wave",
+      "SHA256": "940ca2186314ae724a28f7061e421c965c526029847dec7643d5dd03646c86f3"
+    },
+    {
+      "file": "기사-front-047.png",
+      "nativeTime": 2.4044210526315792,
+      "progress": 0.618421052631579,
+      "stage": "wave",
+      "SHA256": "1bffd9fbcea3331f25369295f4f034a46fc4ef62f03676583e341d718bb0f69c"
+    },
+    {
+      "file": "기사-front-054.png",
+      "nativeTime": 2.762526315789474,
+      "progress": 0.7105263157894737,
+      "stage": "wave",
+      "SHA256": "6124c34994b01c115924f13c5a44dd3d32efdd9658c40e66d2f759b88bad8c12"
+    },
+    {
+      "file": "기사-front-066.png",
+      "nativeTime": 3.376421052631579,
+      "progress": 0.868421052631579,
+      "stage": "lower",
+      "SHA256": "f34a83d26940b2d06ed20638d6eecf0d25dea684cf161a39169c36efa3c10806"
+    },
+    {
+      "file": "기사-front-076.png",
+      "nativeTime": 3.8880000000000003,
+      "progress": 1,
+      "stage": "idle",
+      "SHA256": "30e9b006c3876af76519db4f28e4253beace33a679f7a8fffaa17f8de1558bbe"
+    },
+    {
+      "file": "기사-side-000.png",
+      "nativeTime": 0,
+      "progress": 0,
+      "stage": "raise",
+      "SHA256": "2aede9744296bebb4f0c0b4d98135fefce7b1ae40992591f54db08bf72411b6b"
+    },
+    {
+      "file": "기사-side-010.png",
+      "nativeTime": 0.511578947368421,
+      "progress": 0.13157894736842105,
+      "stage": "raise",
+      "SHA256": "4afff04c9ac15a7ba8fbf53695477477cb5b408dcca49c0080b815c17f82d6cc"
+    },
+    {
+      "file": "기사-side-022.png",
+      "nativeTime": 1.1254736842105264,
+      "progress": 0.2894736842105263,
+      "stage": "wave",
+      "SHA256": "33fa796d60d7a1411920bc1bb66466cef06ceefee574404f5465450d18c0aacb"
+    },
+    {
+      "file": "기사-side-028.png",
+      "nativeTime": 1.432421052631579,
+      "progress": 0.3684210526315789,
+      "stage": "wave",
+      "SHA256": "cfd33bf09580edb6aa0edd69517e96e7f2276bdd9ac1d5b90141e311153c110b"
+    },
+    {
+      "file": "기사-side-035.png",
+      "nativeTime": 1.7905263157894737,
+      "progress": 0.4605263157894737,
+      "stage": "wave",
+      "SHA256": "03c345862b8a85df97e467ba899057499f302ebf834ebbf361c60293189b84de"
+    },
+    {
+      "file": "기사-side-041.png",
+      "nativeTime": 2.0974736842105264,
+      "progress": 0.5394736842105263,
+      "stage": "wave",
+      "SHA256": "e06b098fe8f572ac6928098907d4638d6b3cacc4634689e75b98b6ed9bca94c5"
+    },
+    {
+      "file": "기사-side-047.png",
+      "nativeTime": 2.4044210526315792,
+      "progress": 0.618421052631579,
+      "stage": "wave",
+      "SHA256": "39fa94b1919d75e1bd5fe168ab958cd9808086fc5d484252df36602abd41b3aa"
+    },
+    {
+      "file": "기사-side-054.png",
+      "nativeTime": 2.762526315789474,
+      "progress": 0.7105263157894737,
+      "stage": "wave",
+      "SHA256": "3577a594e4c0b3e7b5995722b99408a552c79dad4971c8022474fee5a14fae3e"
+    },
+    {
+      "file": "기사-side-066.png",
+      "nativeTime": 3.376421052631579,
+      "progress": 0.868421052631579,
+      "stage": "lower",
+      "SHA256": "c0d93f856db8ae41ffd3a3f7f546d08987ee274b075cfb68102ac705dcd4d9e4"
+    },
+    {
+      "file": "기사-side-076.png",
+      "nativeTime": 3.8880000000000003,
+      "progress": 1,
+      "stage": "idle",
+      "SHA256": "6a94631c089df9d7fe186b56935561b0b42e3fea328e6bc547b74e37b9d89dac"
+    }
+  ],
+  "contactSheet": {
+    "file": "front-side-contact.png",
+    "SHA256": "77149d84595c3582142b9eecf6ff9affaf1e59b973f4c68e9c349fcd805dddf3"
+  },
+  "nativeSourceManifest": "../native/png-manifest.json",
+  "nativeSourceFrames": 234,
+  "limits": [
+    "These videos encode actual native screenshots in order with exact source PTS, plus a final idle-frame hold of 0.0511578947368421s.",
+    "Native greeting itself lasts exactly 3.888s; track duration is 3.939157894736842s because the final idle frame remains visible.",
+    "Isolated native lifecycle adapter; final integrated loader and Worker result is separate.",
+    "Captured isolated loader adapter was false; these videos do not prove sand cache initialization order."
+  ]
+}

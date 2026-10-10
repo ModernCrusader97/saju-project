@@ -19,7 +19,9 @@ const builtWorkerSHA256 = sha(await fs.readFile(entry)), baseline = execFileSync
 const qaHarnessSHA256 = sha(await fs.readFile(new URL(import.meta.url)));
 const runtimeFiles = ['app/planet/page.tsx', 'components/planet/ElementalSpiritCanvas.tsx', 'components/planet/SpiritFashionPanel.tsx',
   'hooks/use-spirit-fashion.ts', 'lib/planet/approved-jade-spirit.ts', 'lib/planet/elemental-spirit.ts', 'lib/planet/spirit-fashion.ts',
-  'lib/planet/fashion-surface-projector.ts', 'lib/planet/spirit-fashion-catalog.ts', 'lib/planet/spirit-fashion-storage.ts', 'lib/planet/scene-environment.ts'];
+  'lib/planet/fashion-surface-projector.ts', 'lib/planet/spirit-fashion-catalog.ts', 'lib/planet/spirit-fashion-storage.ts', 'lib/planet/scene-environment.ts',
+  'lib/planet/approved-spirit-motion.ts', 'lib/planet/approved-spirit-arm-controls.ts', 'lib/planet/approved-stem-materials.ts',
+  'lib/planet/surface-sliding-dew.ts', 'lib/planet/surface-attachment-exclusions.ts'];
 const sourceHashes = Object.fromEntries(await Promise.all(runtimeFiles.map(async file => [file, sha(await fs.readFile(file))])));
 const expected = { position: 'f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b',
   normal: '80706bee870329a0829113e63ed178f0a904029265da2c96c69ad50f9b1f9cec',
@@ -107,9 +109,21 @@ function initializeClock() {
       const attachShader = gl.attachShader.bind(gl); gl.attachShader = (program, shader) => {
         const source = fragmentSources.get(shader); if (source) programFragments.set(program, source); return attachShader(program, shader);
       };
-      const getLocation = gl.getUniformLocation.bind(gl); gl.getUniformLocation = (program, name) => { const location = getLocation(program, name); if (location) {
+      const getLocation = gl.getUniformLocation.bind(gl);
+      const actualMorphUniform = program => {
+        for (let i = 0; i < gl.getProgramParameter(program, gl.ACTIVE_UNIFORMS); i++) {
+          const info = gl.getActiveUniform(program, i);
+          if (info && /^morphTargetInfluences(?:\[0\])?$/.test(info.name)) {
+            const locations = Array.from({ length: info.size }, (_, index) => getLocation(program, 'morphTargetInfluences[' + index + ']'));
+            if (locations.some(location => !location)) throw new Error('Native morph-array element location missing');
+            return { size: info.size, locations };
+          }
+        }
+        throw new Error('Native active morph-array metadata missing');
+      };
+      gl.getUniformLocation = (program, name) => { const location = getLocation(program, name); if (location) {
         const uniforms = programs.get(program) || {}; if (['modelMatrix', 'uStemCoordinateDensity', 'uSajuFields'].includes(name)) uniforms[name] = location;
-        if (/^morphTargetInfluences(?:\[0\])?$/.test(name)) uniforms.morph = location; programs.set(program, uniforms);
+        if (/^morphTargetInfluences(?:\[0\])?$/.test(name)) uniforms.morph = actualMorphUniform(program); programs.set(program, uniforms);
       } return location; };
       const nativeUseProgram = gl.useProgram.bind(gl); gl.useProgram = program => { active = program; return nativeUseProgram(program); };
       this.addEventListener('webglcontextlost', () => { programs.clear(); boundBuffers.clear(); active = undefined; }, true);
@@ -118,8 +132,8 @@ function initializeClock() {
         const draw = gl[method].bind(gl); gl[method] = (...values) => {
           if (!drawEnabled) { record.skipped++; return; }
           const uniforms = programs.get(active); if (uniforms?.modelMatrix && (uniforms.uStemCoordinateDensity || uniforms.uSajuFields)) {
-            const weights = uniforms.morph ? gl.getUniform(active, uniforms.morph) : null;
-            record.nativeBody.push({ matrix: [...gl.getUniform(active, uniforms.modelMatrix)], morph: weights === null ? null : typeof weights === 'number' ? [weights] : [...weights], live: gl.isProgram(active), current: gl.getParameter(gl.CURRENT_PROGRAM) === active,
+            const weights = uniforms.morph?.locations.map(location => gl.getUniform(active, location)) ?? null;
+            record.nativeBody.push({ matrix: [...gl.getUniform(active, uniforms.modelMatrix)], morph: weights, morphUniformSize: uniforms.morph?.size ?? null, live: gl.isProgram(active), current: gl.getParameter(gl.CURRENT_PROGRAM) === active,
               canvas: gl.getParameter(gl.FRAMEBUFFER_BINDING) === null, premultipliedAlpha: /^#define\s+PREMULTIPLIED_ALPHA(?:\s|$)/m.test(programFragments.get(active) || '') });
           }
           record.draws++; const result = draw(...values); captureError(method); return result;
@@ -145,11 +159,22 @@ function bindView() {
       if (!timeRef || typeof timeRef.current !== 'number') throw new Error('Actual Canvas motion ref unavailable');
       const record = window.fashionWorkerQA.records.find(record => record.canvas === renderer.domElement); record.spirit = true;
       if (!record.renderObserved) {
+        // Equipment and paused controls can render several times without a rAF step.
+        // Observe one complete renderer call, rather than accumulating those frames.
+        const render = renderer.render.bind(renderer);
+        renderer.render = (...args) => {
+          record.nativeBody = []; record.bodyPasses = []; record.blendedPasses = [];
+          record.accessoryPasses = []; record.facePasses = []; record.passSequence = 0;
+          record.renderSequence = (record.renderSequence ?? 0) + 1;
+          const result = render(...args);
+          record.completedRenderSequence = record.renderSequence;
+          return result;
+        };
         const renderBufferDirect = renderer.renderBufferDirect.bind(renderer);
         renderer.renderBufferDirect = (camera, scene, geometry, material, object, group) => {
           // The production material callback has run before this entry point.
           const pass = { target: renderer.getRenderTarget() === null ? 'canvas' : 'offscreen', premultipliedAlpha: material.premultipliedAlpha,
-            transmission: material.transmission ?? 0, blending: material.blending, side: material.side };
+            transmission: material.transmission ?? 0, blending: material.blending, side: material.side, sequence: ++record.passSequence };
           if (object === spirit.bodyMesh && material === spirit.bodyMesh.material) record.bodyPasses.push(pass);
           if (material.type === 'ShadowMaterial') record.blendedPasses.push({ kind: 'ground', ...pass });
           else if (['병', '정'].includes(spirit.mapping.bodyStem) && object.isInstancedMesh && material.type === 'ShaderMaterial') record.blendedPasses.push({ kind: 'fire', ...pass });
@@ -190,11 +215,16 @@ async function snapshot() {
     supports.push({ id: item.userData.fashionItemId, triangle: s.triangle, world: item.getWorldPosition(body.position.clone()).toArray() });
   }
   const key = spirit.group.parent.children.find(object => object.isDirectionalLight && object.castShadow);
+  const greeting = body.userData.approvedSpiritGreeting, hand = body.position.clone().set(0,0,0), point = body.position.clone();
+  for (const id of greeting.handVertexIDs) hand.add(body.getVertexPosition(id, point));
+  hand.divideScalar(greeting.handVertexIDs.length);
   return { time: timeRef.current, stem: spirit.mapping.bodyStem, pixels: await hash(pixels), depth: spirit.avatarPivot.scale.z, modelPosition: spirit.avatarPivot.position.toArray(),
     attributes: { position: await hash(geometry.attributes.position.array), normal: await hash(geometry.attributes.normal.array), uv: await hash(geometry.attributes.uv.array), index: await hash(geometry.index.array), morphPosition: await hash(geometry.morphAttributes.position[0].array), morphNormal: await hash(geometry.morphAttributes.normal[0].array) },
     selection: fashion.selection, itemCount: fashion.group.children.length, quality: fashion.group.userData.diagnostics.quality, owner: owner.name, effectsShareOwner: spirit.propGroup.parent === owner,
     maxSupportError, minNormalDot, supports, exclusions: owner.userData.surfaceAttachmentExclusions, regionCenters: owner.userData.surfaceAttachmentExclusions.map(r => body.position.clone().fromArray(r.min).add(body.position.clone().fromArray(r.max)).multiplyScalar(.5).applyMatrix4(owner.matrixWorld).toArray()),
     morph: [...body.morphTargetInfluences], eyeScale: [spirit.eyeLeft.scale.y, spirit.eyeRight.scale.y],
+    greeting: { version: greeting.version, stage: greeting.stage, armLift: greeting.armLift, wrist: greeting.wrist,
+      cycles: greeting.cycles, controlIndices: [...greeting.controlIndices], controlWeights: [...greeting.controlWeights], handCenter: hand.toArray() },
     setTimings: [...fashion.qaSetTimings], bodyMatrix: body.matrixWorld.toArray(), native: record.nativeBody.at(-1), effects, glError: gl.getError(), glErrors: [...record.errors],
     alpha: { context: gl.getContextAttributes().alpha, premultipliedContext: gl.getContextAttributes().premultipliedAlpha,
       bodyTransmission: body.material.transmission ?? 0, bodyPremultiplied: body.material.premultipliedAlpha,
@@ -222,31 +252,42 @@ function valid(state, day, quality) {
   report.lastState = state;
   assert.equal(state.stem, day[0]); assert.equal(state.quality, quality); assert.equal(state.depth, 1.35); assert.deepEqual(state.modelPosition, [-.42, 0, 0]); assert.deepEqual(state.attributes, expected);
   assert.equal(state.owner, 'ApprovedSpiritMotion'); assert(state.effectsShareOwner); assert(state.maxSupportError < 1e-7 && state.minNormalDot > .99999);
-  assert(state.morph[0] >= 0 && state.morph[0] <= .45); assert.equal(state.glError, 0); assert.deepEqual(state.glErrors, []); assert.deepEqual(state.shadowSize, quality === 'high' ? [1024, 1024] : [512, 512]);
+  assert.equal(state.morph.length, 11); assert.equal(state.morph[0], 0);
+  assert.equal(state.greeting.version, 'raised-hand-wave-v1'); assert.equal(state.greeting.cycles, 3);
+  assert.deepEqual(state.greeting.controlIndices, [1,2,3,4,5,6,7,8,9,10]); assert.deepEqual(state.greeting.controlWeights, state.morph.slice(1));
+  assert(state.morph.every(weight => Number.isFinite(weight) && weight >= 0 && weight <= 1));
+  assert(state.morph.filter(weight => weight > 1e-12).length <= 2 && state.morph.reduce((sum, weight) => sum + weight, 0) <= 1 + 1e-12);
+  assert.equal(state.glError, 0); assert.deepEqual(state.glErrors, []); assert.deepEqual(state.shadowSize, quality === 'high' ? [1024, 1024] : [512, 512]);
   assert(state.native?.live && state.native.current, 'Actual native body draw required'); state.native.matrix.forEach((value, i) => assert(Math.abs(value - state.bodyMatrix[i]) < 2e-6));
   assert(state.alpha.context && state.alpha.premultipliedContext);
   assert.equal(state.alpha.bodyPremultiplied, state.alpha.bodyTransmission > 0);
   if (['임','계'].includes(day[0])) {
     assert.equal(state.alpha.facePasses.length,7,'Every original water facial marker draws once after transmission');
+    assert.equal(new Set(state.alpha.facePasses.map(pass => pass.name)).size, 7);
     assert(state.alpha.facePasses.every(p=>p.target==='canvas'&&p.transparent&&p.opacity===1&&p.depthWrite&&p.forceSinglePass&&p.castShadow&&!p.receiveShadow),
       'Original water face shapes/shadows remain and never enter their own refraction target, including dressed wave frames');
+    const bodySequence = Math.max(...state.alpha.bodyPasses.filter(pass => pass.target === 'canvas').map(pass => pass.sequence));
+    assert(Number.isFinite(bodySequence) && state.alpha.facePasses.every(pass => pass.sequence > bodySequence),
+      'The seven original water facial markers draw after the transmitted body in the same renderer call');
   }
   assert(state.alpha.bodyPasses.some(pass => pass.target === 'canvas'));
   for (const pass of state.alpha.bodyPasses) assert.equal(pass.premultipliedAlpha, pass.transmission > 0 && pass.target === 'canvas');
   for (const pass of state.alpha.blendedPasses) { assert.equal(pass.premultipliedAlpha, false); assert.equal(pass.blending, 1); }
   for (const pass of state.alpha.accessoryPasses) { assert.equal(pass.transmission, 0); assert.equal(pass.premultipliedAlpha, false); }
   assert(state.native.canvas); assert.equal(state.native.premultipliedAlpha, state.alpha.bodyTransmission > 0, 'Linked native body fragment shader matches the final canvas alpha convention');
-  assert(state.native.morph); state.native.morph.forEach((value, i) => assert(Math.abs(value - state.morph[i]) < 1e-7));
+  assert(state.native.morph); assert.equal(state.native.morphUniformSize, state.morph.length); assert.equal(state.native.morph.length, state.morph.length);
+  state.native.morph.forEach((value, i) => assert(Math.abs(value - state.morph[i]) < 1e-7));
   assert(state.setTimings.every(sample => sample.nestedProbeCalls === 0 && sample.excludingQAProbeMs >= 0 && sample.excludingQAProbeMs < 300),
     'Each actual UI item update meets the 300ms QA-host CPU-work budget excluding disjoint added native queries: ' + JSON.stringify(state.setTimings));
   validRoomMatrix(state.bufferLifecycle);
   for (const retired of state.retired) { assert(!retired.connected && retired.contextLost); assert.equal(retired.buffers, 0, JSON.stringify(retired)); assert.equal(retired.created, retired.deleted); assert.deepEqual(retired.errors, []); validNormalRetirement(retired.lifecycle); }
 }
+function raisedArm(state) { assert.equal(state.greeting.stage, 'wave'); assert.equal(state.greeting.armLift, 1); assert(state.greeting.handCenter[1] > 1.55); }
 const button = (page, name) => page.getByRole('button', { name, exact: true }).evaluate(element => element.click());
 async function ready(page, day) { for (let i = 0; i < 240; i++) { await page.evaluate(() => window.fashionWorkerQA.step(0)); const stem = await page.evaluate(bindView); if (stem === day[0] && await page.locator('[data-scene="spirit"][data-scene-state="ready"]').count()) { await page.locator('[data-scene="spirit"] canvas').scrollIntoViewIfNeeded(); await page.waitForTimeout(80); await page.evaluate(() => window.fashionWorkerQA.step(0)); return; } await page.waitForTimeout(25); } throw new Error('Worker Canvas not ready: ' + day); }
 async function select(page, day) { await page.getByLabel('정령과 동반자 · 일주').evaluate((element, day) => { element.value = day; element.dispatchEvent(new Event('change', { bubbles: true })); }, day); await ready(page, day); }
 async function equip(page, mask = false) { for (const name of [mask ? '초승달 핀' : '새싹 핀', mask ? '곡면 마스크' : '동그란 선글라스', '작은 리본', '잎사귀 등 장식']) await button(page, name + ' 착용'); await page.waitForFunction(face => window.fashionWorkerQA.view.spirit.fashion.selection.face === face && window.fashionWorkerQA.view.spirit.fashion.group.children.length === 4, mask ? 'fitted-mask' : 'round-sunglasses', { polling: 25 }); }
-async function image(page, name, state, fullPage = false) { const file = name + '.png'; if (fullPage) await page.screenshot({ path: path.join(output, file), fullPage: true }); else { const uri = await page.locator('[data-scene="spirit"] canvas').evaluate(canvas => canvas.toDataURL()); await fs.writeFile(path.join(output, file), Buffer.from(uri.split(',')[1], 'base64')); } report.images.push({ file, pixels: state.pixels, wave: state.morph[0], sha256: sha(await fs.readFile(path.join(output, file))) }); }
+async function image(page, name, state, fullPage = false) { const file = name + '.png'; if (fullPage) await page.screenshot({ path: path.join(output, file), fullPage: true }); else { const uri = await page.locator('[data-scene="spirit"] canvas').evaluate(canvas => canvas.toDataURL()); await fs.writeFile(path.join(output, file), Buffer.from(uri.split(',')[1], 'base64')); } report.images.push({ file, pixels: state.pixels, sourceWaveWeight: state.morph[0], armLift: state.greeting.armLift, wrist: state.greeting.wrist, sha256: sha(await fs.readFile(path.join(output, file))) }); }
 async function atReferenceTime(page) { await button(page, '정령 정면과 움직임 초기화'); await button(page, '정령 움직임 재생'); await page.evaluate(() => window.fashionWorkerQA.advance(45, 50)); await button(page, '정령 움직임 일시정지'); }
 let mf, browser, origin;
 function record(page) { page.on('pageerror', error => report.errors.push(error.message)); page.on('console', message => { if (message.type() === 'error') report.errors.push(message.text()); }); page.on('response', response => { if (response.status() !== 200) return; const url = new URL(response.url()); if (url.pathname.endsWith('/body.glb') || /\.m?js$/.test(url.pathname)) pendingAssets.push(response.body().then(bytes => { if (url.pathname.endsWith('/body.glb')) bodyResponses.add(sha(bytes)); else assets.set(url.pathname, sha(bytes)); }).catch(error => report.errors.push('Response hash: ' + error.message))); }); }
@@ -261,15 +302,15 @@ try {
     const c = await context({ viewport: quality === 'high' ? { width: 1280, height: 900 } : { width: 390, height: 844 }, isMobile: quality === 'low', hasTouch: quality === 'low' }), page = await c.newPage(); record(page); page.setDefaultTimeout(20000);
     try {
       await page.goto(origin + '/planet?view=spirit', { waitUntil: 'networkidle' }); await ready(page, '을축'); await page.locator('summary').filter({ hasText: '조합을 직접 둘러보기' }).evaluate(element => element.click());
-      for (const day of ['갑자', '을축', '병인', '정묘', '무진', '기사', '경오', '신미', '임신', '계유']) await check(day + ' ' + quality + ': two outfits, same-time default restore, original-wave anchors', async () => {
+      for (const day of ['갑자', '을축', '병인', '정묘', '무진', '기사', '경오', '신미', '임신', '계유']) await check(day + ' ' + quality + ': two outfits, same-time default restore, raised-hand anchors', async () => {
         await select(page, day); await atReferenceTime(page); const initial = await page.evaluate(snapshot); valid(initial, day, quality); assert.equal(initial.itemCount, 0); assert(Math.abs(initial.time - 2.25) < 1e-10);
         await equip(page); const dressed = await page.evaluate(snapshot); valid(dressed, day, quality); assert.equal(dressed.itemCount, 4); assert.equal(dressed.exclusions.length, 4); assert.notEqual(dressed.pixels, initial.pixels);
         if (quality === 'high' && ['갑자', '병인', '기사', '계유'].includes(day)) await image(page, day + '-sun-front', dressed);
         await equip(page, true); const masked = await page.evaluate(snapshot); valid(masked, day, quality); assert.notEqual(masked.pixels, dressed.pixels); assert.equal(masked.selection.face, 'fitted-mask');
         if (quality === 'low' && day === '갑자') await image(page, 'mobile-ui-four-items-mask', masked, true);
         if (quality === 'high') {
-          const box = await page.locator('[data-scene="spirit"] canvas').boundingBox(); await page.mouse.click(box.x + box.width * .48, box.y + box.height * .44); await button(page, '정령 움직임 재생'); await page.evaluate(() => window.fashionWorkerQA.advance(13, 50)); await button(page, '정령 움직임 일시정지');
-          const wave = await page.evaluate(snapshot); valid(wave, day, quality); assert(wave.morph[0] > .37); assert.notDeepEqual(wave.regionCenters, masked.regionCenters); assert.notEqual(wave.pixels, masked.pixels); report.motion.push({ day, ...wave });
+          const box = await page.locator('[data-scene="spirit"] canvas').boundingBox(); await page.mouse.click(box.x + box.width * .48, box.y + box.height * .44); await button(page, '정령 움직임 재생'); await page.evaluate(() => window.fashionWorkerQA.advance(24, 50)); await button(page, '정령 움직임 일시정지');
+          const wave = await page.evaluate(snapshot); valid(wave, day, quality); raisedArm(wave); assert.notDeepEqual(wave.regionCenters, masked.regionCenters); assert.notEqual(wave.pixels, masked.pixels); report.motion.push({ day, ...wave });
           if (['갑자', '을축', '병인', '계유'].includes(day)) await image(page, day + '-mask-wave-front', wave);
         }
         await button(page, '장식 모두 벗기'); await page.waitForFunction(() => window.fashionWorkerQA.view.spirit.fashion.group.children.length === 0, undefined, { polling: 25 }); await atReferenceTime(page); const cleared = await page.evaluate(snapshot); valid(cleared, day, quality);
@@ -282,7 +323,7 @@ try {
         const side = await page.evaluate(snapshot); valid(side, '갑자', quality); assert.equal(side.time, initial.time); assert.notEqual(side.pixels, initial.pixels); await image(page, quality + '-paused-side', side);
         await button(page, '정령 정면과 움직임 초기화'); assert.equal((await page.evaluate(snapshot)).pixels, initial.pixels); const draws = await page.evaluate(() => window.fashionWorkerQA.view.record.draws); await page.evaluate(() => window.fashionWorkerQA.advance(4, 100)); assert.equal(await page.evaluate(() => window.fashionWorkerQA.view.record.draws), draws);
         await page.mouse.click(box.x + box.width * .48, box.y + box.height * .44); await button(page, '정령 움직임 재생'); await page.evaluate(() => window.fashionWorkerQA.advance(4, 50)); await button(page, '정령 움직임 일시정지'); const blink = await page.evaluate(snapshot); valid(blink, '갑자', quality); assert(blink.eyeScale.every((scale, i) => scale < initial.eyeScale[i] * .5)); await image(page, quality + '-blink', blink);
-        await button(page, '정령 움직임 재생'); await page.evaluate(() => window.fashionWorkerQA.advance(9, 50)); await button(page, '정령 움직임 일시정지'); const wave = await page.evaluate(snapshot); valid(wave, '갑자', quality); assert(wave.morph[0] > .37); await image(page, quality + '-raised-wave', wave, quality === 'low');
+        await button(page, '정령 움직임 재생'); await page.evaluate(() => window.fashionWorkerQA.advance(20, 50)); await button(page, '정령 움직임 일시정지'); const wave = await page.evaluate(snapshot); valid(wave, '갑자', quality); raisedArm(wave); await image(page, quality + '-raised-wave', wave, quality === 'low');
         await button(page, '곡면 마스크 착용'); await select(page, '경오'); assert.equal((await page.evaluate(snapshot)).itemCount, 0); await select(page, '갑자'); assert.equal((await page.evaluate(snapshot)).selection.face, 'fitted-mask');
         await page.reload({ waitUntil: 'networkidle' }); await ready(page, '갑자'); assert.equal((await page.evaluate(snapshot)).selection.face, 'fitted-mask');
         for (const raw of ['{bad', JSON.stringify({ version: 2, outfits: { 갑: outfit } })]) { await page.evaluate(raw => localStorage.setItem('saju.spirit-fashion.v1', raw), raw); await page.reload({ waitUntil: 'networkidle' }); await ready(page, '갑자'); assert.equal((await page.evaluate(snapshot)).itemCount, 0); }
@@ -301,8 +342,8 @@ try {
         assert.equal(restored.pixels, initial.pixels); assert.deepEqual(restored.effects, initial.effects);
         assert(restored.draws > draws); const box = await page.locator('[data-scene="spirit"] canvas').boundingBox();
         await page.mouse.click(box.x + box.width * .48, box.y + box.height * .44); await button(page, '정령 움직임 재생');
-        await page.evaluate(() => window.fashionWorkerQA.advance(13, 50)); await button(page, '정령 움직임 일시정지');
-        const wave = await page.evaluate(snapshot); valid(wave, '갑자', quality); assert(wave.morph[0] > .37); assert.notEqual(wave.pixels, restored.pixels);
+        await page.evaluate(() => window.fashionWorkerQA.advance(24, 50)); await button(page, '정령 움직임 일시정지');
+        const wave = await page.evaluate(snapshot); valid(wave, '갑자', quality); raisedArm(wave); assert.notEqual(wave.pixels, restored.pixels);
         assert.notDeepEqual(wave.regionCenters, restored.regionCenters); await image(page, quality + '-restored-mask-wave', wave);
         report.contextRecovery ??= []; report.contextRecovery.push({ quality, initial, restored, wave });
       });

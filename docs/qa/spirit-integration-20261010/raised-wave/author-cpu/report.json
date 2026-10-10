@@ -1,0 +1,393 @@
+{
+  "status": "PASS",
+  "sourceGLB_SHA256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+  "sourceGLBPath": "assets/source-reference/saju-b-evolving-light-v002/reference/SaJu_Jade_Approved_Static_Material.glb",
+  "moduleSHA256": "0e5af540f134fff609d5554e5ee7be452e3aa4dfc73f03de3b1348480f6a8ee1",
+  "controlsSHA256": "c2e57055797ac9aaed58206402b20514e775877c2b9e19c35dd472986d0d2b46",
+  "sandColliderSHA256": "1cf4eb177eb69b90b06e41a3393eda065dcb07249390e51e3c3395576aa0c4b1",
+  "fashionPath": "/workspace/saju-spirit-fashion-dew-water-20261010/lib/planet/spirit-fashion.ts",
+  "fashionModuleSHA256": "820a248cfe06e7940dbf779ea7071506a048b7b318d5f162927599f71548c3c1",
+  "harnessSHA256": "77eb8ba00b685bbdb2687a4d6bcd548aa2a57dda7e5861f61e6b0efa90cc3eb7",
+  "sourceHashes": {
+    "position": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+    "normal": "80706bee870329a0829113e63ed178f0a904029265da2c96c69ad50f9b1f9cec",
+    "uv": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+    "index": "934286d3bdd9361657e390c41762923871cec85a48a7d9775b362aee02dc7830",
+    "morph:position:0": "7bf926ae1fd903a4a63d39b32c3c1cdafdcd30bc982138404f38b75f50c4dfde",
+    "morph:normal:0": "cf790aaebf3c4a41cbed597f93c53a82f4ba43f726c178d9504bc30dffd1ffbd"
+  },
+  "testResults": [
+    {
+      "name": "the exact source GLB has one limited morph study and no skeleton, skin or joint attributes",
+      "status": "PASS"
+    },
+    {
+      "name": "the actual original mitten reaches beside the face before its greeting",
+      "status": "PASS"
+    },
+    {
+      "name": "eight raise keys plus two wrist keys use at most two active controls and keep the original study neutral",
+      "status": "PASS"
+    },
+    {
+      "name": "interpolated raised poses preserve welded seams, local oriented area and adjacent shoulder continuity",
+      "status": "PASS"
+    },
+    {
+      "name": "fresh GLTF parses share immutable controls only after exact source position/normal/index byte verification",
+      "status": "PASS"
+    },
+    {
+      "name": "the head, feet, opposite arm and all original source attributes are preserved; reset and disposal restore exact ownership",
+      "status": "PASS"
+    },
+    {
+      "name": "actual moving triangles and rest-space coordinates remain compatible with MeshSurface and triangle walkers under display depth and yaw",
+      "status": "PASS"
+    },
+    {
+      "name": "all six read-only fashion items follow their original support triangles through raised waves and active replacement",
+      "status": "PASS"
+    },
+    {
+      "name": "sand created after derived controls retains crack identity and refits the actual posed triangle cache within its isolated update budget",
+      "status": "PASS"
+    },
+    {
+      "name": "optimized relative-morph collision vertices and segment hits equal actual Three queries, including custom and absolute fallbacks",
+      "status": "PASS"
+    },
+    {
+      "name": "tap blinking preserves the original elapsed-time curve independently of the longer greeting for every stem",
+      "status": "PASS"
+    },
+    {
+      "name": "absolute timing, paused repeated taps, 15/60Hz queued re-entry and a large step agree on actual hand positions",
+      "status": "PASS"
+    },
+    {
+      "name": "motion updates only cached transforms and control weights; all native geometry attributes remain static",
+      "status": "PASS"
+    }
+  ],
+  "handVertices": 734,
+  "sourceStructure": {
+    "meshes": [
+      {
+        "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+        "vertices": 33207,
+        "attributes": [
+          "position",
+          "normal",
+          "uv"
+        ],
+        "dictionary": {
+          "Gentle_wave_pose": 0
+        },
+        "skinned": false
+      },
+      {
+        "name": "B_|_small_eye_glint_-1",
+        "vertices": 691,
+        "attributes": [
+          "position",
+          "normal",
+          "uv"
+        ],
+        "skinned": false
+      },
+      {
+        "name": "B_|_expressive_brow_-1",
+        "vertices": 275,
+        "attributes": [
+          "position",
+          "normal",
+          "uv"
+        ],
+        "skinned": false
+      },
+      {
+        "name": "B_|_small_eye_glint_1",
+        "vertices": 691,
+        "attributes": [
+          "position",
+          "normal",
+          "uv"
+        ],
+        "skinned": false
+      },
+      {
+        "name": "B_|_expressive_brow_1",
+        "vertices": 275,
+        "attributes": [
+          "position",
+          "normal",
+          "uv"
+        ],
+        "skinned": false
+      },
+      {
+        "name": "B_|_quiet_smile",
+        "vertices": 275,
+        "attributes": [
+          "position",
+          "normal",
+          "uv"
+        ],
+        "skinned": false
+      },
+      {
+        "name": "B_|_almond_gaze_-1",
+        "vertices": 691,
+        "attributes": [
+          "position",
+          "normal",
+          "uv"
+        ],
+        "skinned": false
+      },
+      {
+        "name": "B_|_almond_gaze_1",
+        "vertices": 691,
+        "attributes": [
+          "position",
+          "normal",
+          "uv"
+        ],
+        "skinned": false
+      }
+    ],
+    "skinCount": 0,
+    "boneCount": 0,
+    "animationPaths": [
+      "weights"
+    ],
+    "animation": [
+      {
+        "name": "Gentle_wave_study",
+        "duration": 3
+      }
+    ],
+    "bounds": {
+      "min": [
+        -0.97804194688797,
+        -0.01190634910017252,
+        -0.47548994421958923
+      ],
+      "max": [
+        1.2389100193977356,
+        3.0142458081245422,
+        0.5473074913024902
+      ]
+    },
+    "builders": [
+      {
+        "path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/scripts/build_jade_v003.py",
+        "SHA256": "a65d53d1047dc1d93cfb4d95b62438283a12e39d6a379da4c12468a09ee8da3b"
+      },
+      {
+        "path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/scripts/finalize_jade.py",
+        "SHA256": "d7c83345da20b0ff36f1d7a2221e39434d360db59f9d3a7718f44292aacb932c"
+      }
+    ],
+    "finding": "The exact B GLB contains no skeletal rig. The previous small gesture drove its only limited arm morph, whose shape and bounded amplitude cannot make the requested full raised greeting."
+  },
+  "raisedHand": {
+    "rest": [
+      0.7809096651116249,
+      0.7829354273850652,
+      0.16230660935797872
+    ],
+    "maximumY": 1.7524181526843108,
+    "atMaximum": [
+      0.9200819608947961,
+      1.7524181526843108,
+      0.19230660868742647
+    ],
+    "verticalTravel": 0.9694827252992456,
+    "firstControlSetupMs": 500.93342899999993
+  },
+  "controls": {
+    "totalInfluences": 11,
+    "derivedControls": 10,
+    "maximumActive": 2,
+    "minimumWavingY": 1.6232089842047939,
+    "lateralTravel": 0.13881886651268738,
+    "maxima": 3,
+    "minima": 3,
+    "field": {
+      "weldedNodes": 31064,
+      "freeNodes": 4900,
+      "handNodes": 1183,
+      "iterations": 279,
+      "relativeResidual": 8.965049866953476e-11
+    },
+    "cachedControlSetupMs": 1.0093200000000024,
+    "perFrameGeometryWrites": 0
+  },
+  "raisedTopology": {
+    "samples": 202,
+    "explicitRaiseAndLowerLiftAmounts": [
+      0.0625,
+      0.125,
+      0.1875,
+      0.25,
+      0.3125,
+      0.375,
+      0.4375,
+      0.5,
+      0.5625,
+      0.625,
+      0.6875,
+      0.75,
+      0.8125,
+      0.875,
+      0.9375,
+      1
+    ],
+    "explicitWristMixtures": [
+      -1,
+      -0.75,
+      -0.5,
+      -0.25,
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ],
+    "triangles": 62124,
+    "weldedNodes": 31064,
+    "seamPairs": 2143,
+    "edges": 93186,
+    "adjacentPairs": 93186,
+    "minAreaRatio": 0.6399353531922839,
+    "maxAreaRatio": 22.53204970114036,
+    "minShoulderAreaRatio": 0.9187274083228415,
+    "minEdgeRatio": 0.45565518460955423,
+    "maxEdgeRatio": 5.088384942584751,
+    "maxEdge": {
+      "vertexIDs": [
+        20149,
+        20148
+      ],
+      "ratio": 5.088384942584751,
+      "originalLength": 0.013107800258105366,
+      "posedLength": 0.06669753346375186,
+      "progress": 0.45833333333333337,
+      "stage": "wave",
+      "restEndpoints": [
+        [
+          0.4383171498775482,
+          0.945895254611969,
+          0.13252854347229004
+        ],
+        [
+          0.44512322545051575,
+          0.934698224067688,
+          0.13287244737148285
+        ]
+      ],
+      "posedEndpoints": [
+        [
+          0.9178137481212616,
+          1.049358643591404,
+          0.1502661593258381
+        ],
+        [
+          0.9680403172969818,
+          1.0931972563266754,
+          0.15227333456277847
+        ]
+      ]
+    },
+    "maxWeldGap": 0,
+    "collapsedBelowOnePercent": 0,
+    "newSharpAdjacentFolds": 0,
+    "localOrientedReversals": 0,
+    "minLocalOrientedAreaRatio": 0.5277356146479383,
+    "minRestNormalDotDiagnosticOnly": -0.9283306243710584,
+    "maxProtectedDisplacement": 0,
+    "limits": "Local area/orientation/adjacency checks and native visual review are not a mathematical global nonintersection proof."
+  },
+  "crossParseCache": {
+    "coldOriginalSetupMs": 500.93342899999993,
+    "verifiedFreshParseSetupMs": [
+      3.1270370000002004,
+      2.9363869999997405
+    ],
+    "separateSourceArrays": true,
+    "sharedImmutablePoseArrays": true,
+    "sharedPoseBytes": 7969680,
+    "sourceSnapshotBytes": 1169712,
+    "sameCountChangedNormalRecomputed": true,
+    "changedSetupMs": 285.31180799999856,
+    "retainedSharedEntries": 1
+  },
+  "attachments": {
+    "pathPoints": 18,
+    "anchorTriangle": 13180,
+    "maxPositionError": 0,
+    "maxNormalError": 2.2887833992611187e-16,
+    "depth": 1.35,
+    "yaw": 0.72,
+    "immutableRestBindings": true
+  },
+  "fashionFollow": {
+    "itemsChecked": 6,
+    "supportsPerOutfit": 4,
+    "replacedDuringActiveWave": true,
+    "maxPositionError": 0,
+    "maxNormalError": 0,
+    "modulePath": "/workspace/saju-spirit-fashion-dew-water-20261010/lib/planet/spirit-fashion.ts"
+  },
+  "sandRefit": {
+    "samples": 100,
+    "medianMs": 1.5571139999992738,
+    "p95Ms": 3.0257569999994303,
+    "maximumMs": 18.457421999999497,
+    "effectSetupMs": 349.3083310000002,
+    "colliderRefits": 120,
+    "maxEmitterPositionError": 5.087681048627601e-16,
+    "requiredInitializationOrder": "Rest/material binding, then motion, then effects",
+    "meaningfulControlsAtConstruction": 10
+  },
+  "sandExactness": {
+    "samples": 25,
+    "vertexAxisComparisons": 2490525,
+    "segmentComparisons": 600,
+    "intersectingSegments": 300,
+    "maximumVertexError": 0,
+    "exactSameBounds": true,
+    "customQueryFallback": true,
+    "absoluteMorphFallback": true,
+    "oversizedControlsPreserved": true,
+    "nonfiniteRejected": true
+  },
+  "originalTapBlink": {
+    "stems": 10,
+    "durationBeforeTempo": 0.48,
+    "maxCurveError": 3.3306690738754696e-16
+  },
+  "timing": {
+    "queueRequestsPerFixture": 100,
+    "maximumAdditionalCycles": 1,
+    "comparedFrameRates": [
+      15,
+      60
+    ],
+    "largeStepEquivalent": true,
+    "identicalActualHand": true
+  },
+  "cachedMotionUpdate": {
+    "samples": 10000,
+    "meanMs": 0.008236125600000014,
+    "completeVertexQueries": 0,
+    "attributeVersionChanges": 0
+  },
+  "limits": [
+    "CPU uses exact source GLB triangles; image decode alone is replaced.",
+    "Source study remains neutral; derived static morphs use Mesh.getVertexPosition, rest-coordinate attributes and native Three position/normal/depth paths.",
+    "Performance numbers are local isolated CPU measurements; native GPU rendering and visual review are recorded by the separate browser harness."
+  ]
+}

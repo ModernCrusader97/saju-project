@@ -1,7 +1,8 @@
 import * as THREE from 'three';
+import { createApprovedSpiritArmControls } from './approved-spirit-arm-controls';
 
-// The source is a limited pose study. Larger .55–.60 weights compress wrist
-// triangles strongly; .45 is a conservative greeting, still requiring GPU review.
+// Retained for QA of the original limited pose study, which stays neutral in the
+// raised greeting. Larger source weights compress the original wrist triangles.
 export const APPROVED_SPIRIT_WAVE_MAX_WEIGHT = .45;
 
 export interface ApprovedSpiritMotion {
@@ -31,38 +32,38 @@ const phase = (time: number, period: number) => (time % period) / period * Math.
 
 function waveEnvelope(progress: number): number {
   if (progress <= 0 || progress >= 1) return 0;
-  if (progress < .22) return smooth(progress / .22);
-  if (progress < .72) {
-    // Two small dips around the raised pose, with zero derivative at both joins.
-    const waves = Math.sin((progress - .22) / .5 * Math.PI * 2);
-    return 1 - .12 * waves * waves;
-  }
-  return 1 - smooth((progress - .72) / .28);
+  const ease = (x: number) => x * x * x * (x * (x * 6 - 15) + 10);
+  if (progress < .25) return ease(progress / .25);
+  if (progress <= .75) return 1;
+  return 1 - ease((progress - .75) / .25);
 }
 
 /** Pass an identity child of avatarPivot containing the original body, face and
  * every attached effect. Display placement/depth and user rotation stay outside
  * this owned child. stemKey is the mapped 甲…癸 key, not the Korean day label.
  * update uses absolute paused/playback time; it never edits
- * original vertex, UV, normal, index or morph-target attributes. */
+ * original vertex, UV, normal, index or morph-target attributes. Owned derived
+ * morph controls use the same Mesh.getVertexPosition and native shadow path. */
 export function createApprovedSpiritMotion(
   motionRoot: THREE.Object3D, body: THREE.Mesh, stemKey: string,
 ): ApprovedSpiritMotion {
   const waveIndex = body.morphTargetDictionary?.Gentle_wave_pose;
-  const influences = body.morphTargetInfluences;
+  const sourceInfluences = body.morphTargetInfluences;
   const position = body.geometry.getAttribute('position');
   const waveTarget = waveIndex === undefined ? undefined : body.geometry.morphAttributes.position?.[waveIndex];
-  if (waveIndex === undefined || !influences || !position || !waveTarget || waveTarget.count !== position.count ||
+  if (waveIndex === undefined || !sourceInfluences || !position || !waveTarget || waveTarget.count !== position.count ||
     (body as THREE.SkinnedMesh).isSkinnedMesh || (body as THREE.InstancedMesh).isInstancedMesh) {
     throw new Error('Approved motion requires the original rigid B Gentle_wave_pose target.');
   }
-  if (influences.some(weight => weight !== 0)) throw new Error('Approved motion starts from neutral source morphs.');
+  if (sourceInfluences.some(weight => weight !== 0)) throw new Error('Approved motion starts from neutral source morphs.');
   let ancestor: THREE.Object3D | null = body;
   while (ancestor && ancestor !== motionRoot) ancestor = ancestor.parent;
   if (!ancestor) throw new Error('The original B body must belong to the owned motion root.');
+  const arm = createApprovedSpiritArmControls(body);
+  const influences = body.morphTargetInfluences!;
 
   const restPosition = motionRoot.position.clone(), restQuaternion = motionRoot.quaternion.clone();
-  const restScale = motionRoot.scale.clone(), restMorphs = [...influences];
+  const restScale = motionRoot.scale.clone(), restMorphs = [...sourceInfluences];
   const turn = new THREE.Quaternion(), linearPose = new THREE.Matrix4(), zero = new THREE.Vector3();
   const faces: FaceRest[] = [];
   motionRoot.traverse(object => {
@@ -77,9 +78,9 @@ export function createApprovedSpiritMotion(
     face.eyeY = faces.find(other => other.kind === 'eye' && other.object.name.endsWith(side))?.position.y ?? face.position.y;
   }
 
-  // Only a setup scan touches the complete mesh. The source wave changes the arm
-  // above y=.697; a .10 band contains 1,577 sole candidates. The CPU test proves
-  // their minimum equals all 33,207 vertices over allowed roll/scale/wave poses.
+  // Only a setup scan touches the complete mesh. Derived arm controls retain the
+  // soles. A .10 band contains 1,577 sole candidates; CPU QA checks their minimum
+  // against all 33,207 vertices over the greeting's allowed roll/scale poses.
   motionRoot.updateWorldMatrix(true, true);
   const bodyToRoot = motionRoot.matrixWorld.clone().invert().multiply(body.matrixWorld);
   const direction = new THREE.Matrix3().setFromMatrix4(bodyToRoot), point = new THREE.Vector3(), delta = new THREE.Vector3();
@@ -101,8 +102,13 @@ export function createApprovedSpiritMotion(
     soleValues.push(point.x, point.y, point.z, delta.x, delta.y, delta.z);
   }
   const soles = new Float64Array(soleValues);
-  const tempo = STEM_TEMPO[stemKey] ?? 1, duration = 2.4 * tempo;
+  const tempo = STEM_TEMPO[stemKey] ?? 1, duration = 3.6 * tempo, tapBlinkDuration = 2.4 * tempo * .2;
   let currentTime = 0, reactionStart = 0, reacting = false, queued = false, disposed = false;
+  const previousRootDiagnostic = motionRoot.userData.approvedSpiritGreeting, previousBodyDiagnostic = body.userData.approvedSpiritGreeting;
+  const greeting = { version: 'raised-hand-wave-v1', stage: 'idle', duration, progress: 0, armLift: 0, wrist: 0,
+    cycles: 3, queued: false, sourceWaveIndex: waveIndex, sourceWaveWeight: 0,
+    controlIndices: arm.controlIndices, controlWeights: arm.controlWeights, handVertexIDs: arm.handVertexIDs, field: arm.field };
+  motionRoot.userData.approvedSpiritGreeting = body.userData.approvedSpiritGreeting = greeting;
 
   const restore = () => {
     motionRoot.position.copy(restPosition); motionRoot.quaternion.copy(restQuaternion); motionRoot.scale.copy(restScale);
@@ -110,6 +116,7 @@ export function createApprovedSpiritMotion(
       face.object.position.copy(face.position); face.object.quaternion.copy(face.quaternion); face.object.scale.copy(face.scale);
     }
     for (let i = 0; i < restMorphs.length; i++) influences[i] = restMorphs[i];
+    arm.setPose(0, 0); greeting.stage = 'idle'; greeting.progress = greeting.armLift = greeting.wrist = 0; greeting.queued = false;
     motionRoot.updateMatrix();
   };
 
@@ -126,9 +133,20 @@ export function createApprovedSpiritMotion(
       if (reacting && currentTime >= reactionStart + duration) reacting = false;
     }
     const elapsed = reacting ? currentTime - reactionStart : -1;
-    const response = elapsed >= 0 ? waveEnvelope(elapsed / duration) : 0;
-    const weight = response * APPROVED_SPIRIT_WAVE_MAX_WEIGHT;
-    influences[waveIndex] = weight;
+    const progress = elapsed >= 0 ? elapsed / duration : 0;
+    const response = elapsed >= 0 ? waveEnvelope(progress) : 0;
+    let wrist = 0;
+    if (elapsed >= 0 && progress >= .25 && progress <= .75) {
+      const stage = (progress - .25) / .50, taper = smooth(Math.min(1, stage / .08)) * smooth(Math.min(1, (1 - stage) / .08));
+      wrist = Math.sin(stage * Math.PI * 6) * taper;
+    }
+    // The source pose study remains neutral. Increasing its old cap would fold
+    // the wrist; two adjacent derived pose controls are sufficient at any time.
+    influences[waveIndex] = 0;
+    arm.setPose(response, wrist);
+    greeting.stage = elapsed < 0 ? 'idle' : progress < .25 ? 'raise' : progress <= .75 ? 'wave' : 'lower';
+    greeting.progress = progress; greeting.armLift = response; greeting.wrist = wrist; greeting.queued = queued;
+    const weight = 0;
 
     const roll = .005 * Math.sin(phase(currentTime, 7.3 * tempo)) + .001 * response;
     const drift = .009 * Math.sin(phase(currentTime, 8.5 * tempo)) + .002 * response;
@@ -148,7 +166,7 @@ export function createApprovedSpiritMotion(
 
     const blinkPeriod = 5.8 * tempo, idlePhase = currentTime % blinkPeriod;
     const idleBlink = idlePhase > blinkPeriod - .28 ? Math.sin(Math.PI * (idlePhase - (blinkPeriod - .28)) / .28) ** 2 : 0;
-    const tapBlink = elapsed >= 0 && elapsed < duration * .2 ? Math.sin(Math.PI * elapsed / (duration * .2)) ** 2 : 0;
+    const tapBlink = elapsed >= 0 && elapsed < tapBlinkDuration ? Math.sin(Math.PI * elapsed / tapBlinkDuration) ** 2 : 0;
     const blinkScale = 1 - .78 * Math.max(idleBlink, tapBlink);
     for (const face of faces) {
       if (face.kind === 'eye') face.object.scale.y = face.scale.y * blinkScale;
@@ -167,6 +185,7 @@ export function createApprovedSpiritMotion(
       if (disposed) return;
       if (reacting) queued = true;
       else { reactionStart = currentTime; reacting = true; }
+      greeting.queued = queued;
     },
     reset() {
       if (disposed) return;
@@ -174,7 +193,11 @@ export function createApprovedSpiritMotion(
     },
     dispose() {
       if (disposed) return;
-      restore(); disposed = true;
+      restore(); arm.dispose(); disposed = true;
+      if (previousRootDiagnostic === undefined) delete motionRoot.userData.approvedSpiritGreeting;
+      else motionRoot.userData.approvedSpiritGreeting = previousRootDiagnostic;
+      if (previousBodyDiagnostic === undefined) delete body.userData.approvedSpiritGreeting;
+      else body.userData.approvedSpiritGreeting = previousBodyDiagnostic;
     },
   };
 }

@@ -1,0 +1,324 @@
+{
+  "status": "PASS",
+  "productionSourceFrozen": true,
+  "GPUReleased": true,
+  "files": [
+    {
+      "path": "lib/planet/approved-spirit-arm-controls.ts",
+      "SHA256": "c2e57055797ac9aaed58206402b20514e775877c2b9e19c35dd472986d0d2b46"
+    },
+    {
+      "path": "lib/planet/approved-spirit-motion.ts",
+      "SHA256": "0e5af540f134fff609d5554e5ee7be452e3aa4dfc73f03de3b1348480f6a8ee1"
+    },
+    {
+      "path": "lib/planet/surface-fissure-sand.ts",
+      "SHA256": "1cf4eb177eb69b90b06e41a3393eda065dcb07249390e51e3c3395576aa0c4b1"
+    },
+    {
+      "path": "scripts/qa/approved-spirit-motion.mjs",
+      "SHA256": "6b717d6c2814fdd4117971e543f2755be1943a84f50a60acc4156571f6124f24"
+    },
+    {
+      "path": "scripts/qa/approved-spirit-raised-wave.mjs",
+      "SHA256": "77eb8ba00b685bbdb2687a4d6bcd548aa2a57dda7e5861f61e6b0efa90cc3eb7"
+    },
+    {
+      "path": "scripts/qa/approved-spirit-raised-wave-browser.mjs",
+      "SHA256": "0e65acb5c0e2f242fc5351bc8caa1f3d70db6be6321c83e8c18524e5fda57828"
+    }
+  ],
+  "sourceGLB_SHA256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+  "sourceStructure": {
+    "meshes": [
+      {
+        "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+        "vertices": 33207,
+        "attributes": [
+          "position",
+          "normal",
+          "uv"
+        ],
+        "dictionary": {
+          "Gentle_wave_pose": 0
+        },
+        "skinned": false
+      },
+      {
+        "name": "B_|_small_eye_glint_-1",
+        "vertices": 691,
+        "attributes": [
+          "position",
+          "normal",
+          "uv"
+        ],
+        "skinned": false
+      },
+      {
+        "name": "B_|_expressive_brow_-1",
+        "vertices": 275,
+        "attributes": [
+          "position",
+          "normal",
+          "uv"
+        ],
+        "skinned": false
+      },
+      {
+        "name": "B_|_small_eye_glint_1",
+        "vertices": 691,
+        "attributes": [
+          "position",
+          "normal",
+          "uv"
+        ],
+        "skinned": false
+      },
+      {
+        "name": "B_|_expressive_brow_1",
+        "vertices": 275,
+        "attributes": [
+          "position",
+          "normal",
+          "uv"
+        ],
+        "skinned": false
+      },
+      {
+        "name": "B_|_quiet_smile",
+        "vertices": 275,
+        "attributes": [
+          "position",
+          "normal",
+          "uv"
+        ],
+        "skinned": false
+      },
+      {
+        "name": "B_|_almond_gaze_-1",
+        "vertices": 691,
+        "attributes": [
+          "position",
+          "normal",
+          "uv"
+        ],
+        "skinned": false
+      },
+      {
+        "name": "B_|_almond_gaze_1",
+        "vertices": 691,
+        "attributes": [
+          "position",
+          "normal",
+          "uv"
+        ],
+        "skinned": false
+      }
+    ],
+    "skinCount": 0,
+    "boneCount": 0,
+    "animationPaths": [
+      "weights"
+    ],
+    "animation": [
+      {
+        "name": "Gentle_wave_study",
+        "duration": 3
+      }
+    ],
+    "bounds": {
+      "min": [
+        -0.97804194688797,
+        -0.01190634910017252,
+        -0.47548994421958923
+      ],
+      "max": [
+        1.2389100193977356,
+        3.0142458081245422,
+        0.5473074913024902
+      ]
+    },
+    "builders": [
+      {
+        "path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/scripts/build_jade_v003.py",
+        "SHA256": "a65d53d1047dc1d93cfb4d95b62438283a12e39d6a379da4c12468a09ee8da3b"
+      },
+      {
+        "path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/scripts/finalize_jade.py",
+        "SHA256": "d7c83345da20b0ff36f1d7a2221e39434d360db59f9d3a7718f44292aacb932c"
+      }
+    ],
+    "finding": "The exact B GLB contains no skeletal rig. The previous small gesture drove its only limited arm morph, whose shape and bounded amplitude cannot make the requested full raised greeting."
+  },
+  "sourceHashes": {
+    "position": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+    "normal": "80706bee870329a0829113e63ed178f0a904029265da2c96c69ad50f9b1f9cec",
+    "uv": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+    "index": "934286d3bdd9361657e390c41762923871cec85a48a7d9775b362aee02dc7830",
+    "morph:position:0": "7bf926ae1fd903a4a63d39b32c3c1cdafdcd30bc982138404f38b75f50c4dfde",
+    "morph:normal:0": "cf790aaebf3c4a41cbed597f93c53a82f4ba43f726c178d9504bc30dffd1ffbd"
+  },
+  "raisedControls": {
+    "totalInfluences": 11,
+    "derivedControls": 10,
+    "maximumActive": 2,
+    "minimumWavingY": 1.6232089842047939,
+    "lateralTravel": 0.13881886651268738,
+    "maxima": 3,
+    "minima": 3,
+    "field": {
+      "weldedNodes": 31064,
+      "freeNodes": 4900,
+      "handNodes": 1183,
+      "iterations": 279,
+      "relativeResidual": 8.965049866953476e-11
+    },
+    "cachedControlSetupMs": 1.0093200000000024,
+    "perFrameGeometryWrites": 0
+  },
+  "topology": {
+    "samples": 202,
+    "explicitRaiseAndLowerLiftAmounts": [
+      0.0625,
+      0.125,
+      0.1875,
+      0.25,
+      0.3125,
+      0.375,
+      0.4375,
+      0.5,
+      0.5625,
+      0.625,
+      0.6875,
+      0.75,
+      0.8125,
+      0.875,
+      0.9375,
+      1
+    ],
+    "explicitWristMixtures": [
+      -1,
+      -0.75,
+      -0.5,
+      -0.25,
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ],
+    "triangles": 62124,
+    "weldedNodes": 31064,
+    "seamPairs": 2143,
+    "edges": 93186,
+    "adjacentPairs": 93186,
+    "minAreaRatio": 0.6399353531922839,
+    "maxAreaRatio": 22.53204970114036,
+    "minShoulderAreaRatio": 0.9187274083228415,
+    "minEdgeRatio": 0.45565518460955423,
+    "maxEdgeRatio": 5.088384942584751,
+    "maxEdge": {
+      "vertexIDs": [
+        20149,
+        20148
+      ],
+      "ratio": 5.088384942584751,
+      "originalLength": 0.013107800258105366,
+      "posedLength": 0.06669753346375186,
+      "progress": 0.45833333333333337,
+      "stage": "wave",
+      "restEndpoints": [
+        [
+          0.4383171498775482,
+          0.945895254611969,
+          0.13252854347229004
+        ],
+        [
+          0.44512322545051575,
+          0.934698224067688,
+          0.13287244737148285
+        ]
+      ],
+      "posedEndpoints": [
+        [
+          0.9178137481212616,
+          1.049358643591404,
+          0.1502661593258381
+        ],
+        [
+          0.9680403172969818,
+          1.0931972563266754,
+          0.15227333456277847
+        ]
+      ]
+    },
+    "maxWeldGap": 0,
+    "collapsedBelowOnePercent": 0,
+    "newSharpAdjacentFolds": 0,
+    "localOrientedReversals": 0,
+    "minLocalOrientedAreaRatio": 0.5277356146479383,
+    "minRestNormalDotDiagnosticOnly": -0.9283306243710584,
+    "maxProtectedDisplacement": 0,
+    "limits": "Local area/orientation/adjacency checks and native visual review are not a mathematical global nonintersection proof."
+  },
+  "QA": {
+    "raisedCPU": {
+      "passed": 13,
+      "report": "cpu/report.json"
+    },
+    "originalMotion": {
+      "passed": 11,
+      "report": "../approved-spirit-motion/cpu/report.json"
+    },
+    "originalSand": {
+      "passed": 9,
+      "report": "../surface-fissure-sand/cpu-report.json"
+    },
+    "typecheck": "PASS",
+    "scopedLint": "PASS",
+    "diffCheck": "PASS",
+    "nativeRendering": {
+      "status": "PASS",
+      "frames": 234,
+      "cases": 3,
+      "lifecycleAdapter": false,
+      "scope": "Raised body, attached fashion and native rendering; sand constructor ordering unverified in this capture.",
+      "report": "native/report.json"
+    },
+    "futureQAOrderTransform": {
+      "status": "PASS",
+      "browserRendered": false,
+      "report": "native/loader-transform-report.json"
+    }
+  },
+  "runtimePerformance": {
+    "firstIsolatedColdSetupMs": 246.175842,
+    "latestColdSetupMs": 500.93342899999993,
+    "latestFreshParseSetupMs": [
+      3.1270370000002004,
+      2.9363869999997405
+    ],
+    "firstIsolatedSandMedianMs": 1.5890629999994417,
+    "firstIsolatedSandP95Ms": 1.9910020000006625,
+    "latestSandRefit": {
+      "samples": 100,
+      "medianMs": 1.5571139999992738,
+      "p95Ms": 3.0257569999994303,
+      "maximumMs": 18.457421999999497,
+      "effectSetupMs": 349.3083310000002,
+      "colliderRefits": 120,
+      "maxEmitterPositionError": 5.087681048627601e-16,
+      "requiredInitializationOrder": "Rest/material binding, then motion, then effects",
+      "meaningfulControlsAtConstruction": 10
+    },
+    "latestMotionMeanMs": 0.008236125600000014,
+    "limits": "Latest explicit-fashion-path CPU rerun overlapped root integration activity after GPU release; isolated figures were recorded before the root resumed testing. Host activity and GC can cause outliers."
+  },
+  "requiredIntegration": "Motion after material/rest binding and before effect/collider construction; root owns actual loader integration and final Worker QA.",
+  "limits": [
+    "No modified GLB or asset export. Original POSITION/NORMAL/UV/index/source-morph objects and bytes preserved.",
+    "Native 234 captures prove raised body, fashion and native shaders/shadows, but their adapter failed and sand constructor-order proof is absent. Flag remains false.",
+    "Future QA hook fixed and fetched transformed module verified without GPU. Root actual integrated high-sand Worker validation is separate.",
+    "Local topology checks and native visual review do not prove mathematical global nonintersection."
+  ]
+}

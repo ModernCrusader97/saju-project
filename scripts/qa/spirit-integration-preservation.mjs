@@ -9,7 +9,7 @@ const git=args=>execFileSync('git',args,{maxBuffer:128*1024*1024});
 const sha=b=>createHash('sha256').update(b).digest('hex');
 const files=git(['ls-tree','-r','--name-only','-z',base]).toString().split('\0').filter(Boolean);
 const allowed=new Set(['app/planet/page.tsx','components/planet/ElementalSpiritCanvas.tsx','lib/planet/approved-jade-spirit.ts','lib/planet/elemental-spirit.ts',
-  'lib/planet/approved-stem-materials.ts','lib/planet/approved-spirit-motion.ts','lib/planet/surface-sliding-dew.ts','lib/planet/surface-attachment-exclusions.ts']);
+  'lib/planet/approved-stem-materials.ts','lib/planet/approved-spirit-motion.ts','lib/planet/surface-sliding-dew.ts','lib/planet/surface-attachment-exclusions.ts','lib/planet/surface-fissure-sand.ts']);
 const rows=[];
 for(const file of files.filter(f=>!f.startsWith('docs/')&&!f.startsWith('scripts/qa/'))){
   const a=git(['cat-file','blob',`${base}:${file}`]),b=await fs.readFile(file),same=a.equals(b);
