@@ -1,0 +1,172 @@
+[
+  {
+    "kind": "focusin",
+    "now": 895.8999999910593,
+    "scrollY": 0,
+    "target": "나의 우주",
+    "top": 28,
+    "bottom": 64
+  },
+  {
+    "kind": "focusin",
+    "now": 902.0999999940395,
+    "scrollY": 0,
+    "target": "정령",
+    "top": 24,
+    "bottom": 68
+  },
+  {
+    "kind": "focusin",
+    "now": 908.3999999910593,
+    "scrollY": 0,
+    "target": "행성",
+    "top": 24,
+    "bottom": 68
+  },
+  {
+    "kind": "focusin",
+    "now": 914.6999999880791,
+    "scrollY": 0,
+    "target": "은하",
+    "top": 24,
+    "bottom": 68
+  },
+  {
+    "kind": "focusin",
+    "now": 922.0999999940395,
+    "scrollY": 0,
+    "target": "전체 메뉴 열기",
+    "top": 24,
+    "bottom": 68
+  },
+  {
+    "kind": "focusin",
+    "now": 936,
+    "scrollY": 0,
+    "target": "지도 목록",
+    "top": 283.0625,
+    "bottom": 304.0625
+  },
+  {
+    "kind": "focusin",
+    "now": 941.8999999910593,
+    "scrollY": 0,
+    "target": "합성 키보드 검증 (나)",
+    "top": 705.890625,
+    "bottom": 749.890625
+  },
+  {
+    "kind": "focusin",
+    "now": 955.8999999910593,
+    "scrollY": 0,
+    "target": "합성 키보드 친구",
+    "top": 705.890625,
+    "bottom": 749.890625
+  },
+  {
+    "kind": "focusin",
+    "now": 989.6999999880791,
+    "scrollY": 0,
+    "target": "나의 별로 카메라 포커스 및 공전 궤도 추적",
+    "top": 345.0625,
+    "bottom": 389.0625
+  },
+  {
+    "kind": "focusin",
+    "now": 1007.7999999970198,
+    "scrollY": 0,
+    "target": "은하와 천체 움직임 일시정지 또는 재생",
+    "top": 345.0625,
+    "bottom": 389.0625
+  },
+  {
+    "kind": "focusin",
+    "now": 1013.0999999940395,
+    "scrollY": 0,
+    "target": "은하 시점과 천체 움직임 초기화",
+    "top": 345.0625,
+    "bottom": 389.0625
+  },
+  {
+    "kind": "focusin",
+    "now": 1019.1999999880791,
+    "scrollY": 0,
+    "target": "나선 궤도 안내선 토글",
+    "top": 345.0625,
+    "bottom": 389.0625
+  },
+  {
+    "kind": "focusin",
+    "now": 1065.7999999970198,
+    "scrollY": 0,
+    "target": "은하 캡처 이미지 저장",
+    "top": 345.0625,
+    "bottom": 389.0625
+  },
+  {
+    "kind": "focusin",
+    "now": 1072.5,
+    "scrollY": 0,
+    "target": "전체화면 모드",
+    "top": 345.0625,
+    "bottom": 389.0625
+  },
+  {
+    "kind": "focusin",
+    "now": 1078.7999999970198,
+    "scrollY": 0,
+    "target": "4기둥 행성 슬롯 상세 보기",
+    "top": 934.0625,
+    "bottom": 978.0625
+  },
+  {
+    "kind": "focus",
+    "now": 1088.8999999910593,
+    "scrollY": 0,
+    "target": "사주 행성 구성 닫기",
+    "top": 511.5625,
+    "bottom": 555.5625,
+    "options": [],
+    "stack": "Error\n    at record (<anonymous>:9:70)\n    at prototype.<computed> [as focus] (<anonymous>:13:47)\n    at http://127.0.0.1:45009/_next/static/chunks/GalaxyCanvas-CzSO_Rw-.js:1:5618\n    at Gc (http://127.0.0.1:45009/_next/static/chunks/framework-D_rUT4EX.js:8:91639)\n    at Ol (http://127.0.0.1:45009/_next/static/chunks/framework-D_rUT4EX.js:8:106732)\n    at Dl (http://127.0.0.1:45009/_next/static/chunks/framework-D_rUT4EX.js:8:106616)\n    at Ol (http://127.0.0.1:45009/_next/static/chunks/framework-D_rUT4EX.js:8:107305)\n    at Dl (http://127.0.0.1:45009/_next/static/chunks/framework-D_rUT4EX.js:8:106616)\n    at Ol (http://127.0.0.1:45009/_next/static/chunks/framework-D_rUT4EX.js:8:107198)\n    at Dl (http://127.0.0.1:45009/_next/static/chunks/framework-D_rUT4EX.js:8:106616)"
+  },
+  {
+    "kind": "focusin",
+    "now": 1090,
+    "scrollY": 0,
+    "target": "사주 행성 구성 닫기",
+    "top": 511.5625,
+    "bottom": 555.5625
+  },
+  {
+    "kind": "scroll",
+    "now": 1366.3999999910593,
+    "scrollY": 68,
+    "target": "사주 행성 구성 닫기",
+    "top": 443.5625,
+    "bottom": 487.5625
+  },
+  {
+    "kind": "scroll",
+    "now": 1561.0999999940395,
+    "scrollY": 512,
+    "target": "사주 행성 구성 닫기",
+    "top": -0.4375,
+    "bottom": 43.5625
+  },
+  {
+    "kind": "scroll",
+    "now": 1598,
+    "scrollY": 524,
+    "target": "사주 행성 구성 닫기",
+    "top": -12.4375,
+    "bottom": 31.5625
+  },
+  {
+    "kind": "scroll",
+    "now": 1791.2999999970198,
+    "scrollY": 534,
+    "target": "사주 행성 구성 닫기",
+    "top": -22.4375,
+    "bottom": 21.5625
+  }
+]

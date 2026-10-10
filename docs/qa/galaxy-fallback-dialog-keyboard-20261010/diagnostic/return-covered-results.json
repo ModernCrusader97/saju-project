@@ -1,0 +1,427 @@
+{
+  "basis": "8a358bd77879cabc5d884a098587d38fee7a1306",
+  "phase": "after",
+  "browser": "151.0.7922.173",
+  "applicationSourceSHA256": "593deaeb3301b8a673cd264e2e66286e1690ba613d48799e4f63aa67fbbca099",
+  "passed": 8,
+  "failed": 2,
+  "checks": [
+    {
+      "name": "fallback people use visible native Tab, Enter and Space at 390px",
+      "status": "PASS"
+    },
+    {
+      "name": "fallback slot dialog contains keyboard focus, closes and returns focus at 390px",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: wrapped and returned keyboard focus must remain visible\n    at file:///workspace/saju-galaxy-fallback-dialog-keyboard-20261010/scripts/qa/error-keyboard-browser.mjs:170:11\n    at async check (file:///workspace/saju-galaxy-fallback-dialog-keyboard-20261010/scripts/qa/error-keyboard-browser.mjs:39:9)\n    at async file:///workspace/saju-galaxy-fallback-dialog-keyboard-20261010/scripts/qa/error-keyboard-browser.mjs:130:5"
+    },
+    {
+      "name": "saved list retry uses Enter/Space and one request per attempt at 390px",
+      "status": "PASS"
+    },
+    {
+      "name": "saved detail retry uses Enter/Space and one request per attempt at 390px",
+      "status": "PASS"
+    },
+    {
+      "name": "fallback people use visible native Tab, Enter and Space at 1440px",
+      "status": "PASS"
+    },
+    {
+      "name": "fallback slot dialog contains keyboard focus, closes and returns focus at 1440px",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: wrapped and returned keyboard focus must remain visible\n    at file:///workspace/saju-galaxy-fallback-dialog-keyboard-20261010/scripts/qa/error-keyboard-browser.mjs:170:11\n    at async check (file:///workspace/saju-galaxy-fallback-dialog-keyboard-20261010/scripts/qa/error-keyboard-browser.mjs:39:9)\n    at async file:///workspace/saju-galaxy-fallback-dialog-keyboard-20261010/scripts/qa/error-keyboard-browser.mjs:130:5"
+    },
+    {
+      "name": "saved list retry uses Enter/Space and one request per attempt at 1440px",
+      "status": "PASS"
+    },
+    {
+      "name": "saved detail retry uses Enter/Space and one request per attempt at 1440px",
+      "status": "PASS"
+    },
+    {
+      "name": "native context restoration removes the error after keyboard fallback selection",
+      "status": "PASS"
+    },
+    {
+      "name": "only intentional WebGL and HTTP fault console messages occur; no page errors or outbound requests",
+      "status": "PASS"
+    }
+  ],
+  "observations": [
+    {
+      "scenario": "fallback native person selection",
+      "width": 390,
+      "ownerFocus": {
+        "tag": "BUTTON",
+        "name": "합성 키보드 검증 (나)",
+        "visible": true,
+        "unobscured": true,
+        "focusVisible": true,
+        "outlineStyle": "solid",
+        "outlineWidth": "3px",
+        "top": 610.578125,
+        "bottom": 654.578125,
+        "scrollY": 0,
+        "hitTag": "BUTTON",
+        "hitName": "합성 키보드 검증 (나)"
+      },
+      "friendFocus": {
+        "tag": "BUTTON",
+        "name": "합성 키보드 친구",
+        "visible": true,
+        "unobscured": true,
+        "focusVisible": true,
+        "outlineStyle": "solid",
+        "outlineWidth": "3px",
+        "top": 610.578125,
+        "bottom": 654.578125,
+        "scrollY": 0,
+        "hitTag": "BUTTON",
+        "hitName": "합성 키보드 친구"
+      }
+    },
+    {
+      "scenario": "fallback slot dialog",
+      "width": 390,
+      "opened": {
+        "tag": "BUTTON",
+        "name": "사주 행성 구성 닫기",
+        "visible": true,
+        "unobscured": true,
+        "focusVisible": true,
+        "outlineStyle": "solid",
+        "outlineWidth": "3px",
+        "top": 398.25,
+        "bottom": 442.25,
+        "scrollY": 0,
+        "hitTag": "BUTTON",
+        "hitName": "사주 행성 구성 닫기"
+      },
+      "firstInitiallyFocused": true,
+      "semantics": {
+        "role": "dialog",
+        "modal": "true",
+        "label": "_r_0_",
+        "closeLabel": "사주 행성 구성 닫기"
+      },
+      "reverseWrap": true,
+      "reverseFocus": {
+        "tag": "BUTTON",
+        "name": "닫기",
+        "visible": true,
+        "unobscured": true,
+        "focusVisible": true,
+        "outlineStyle": "solid",
+        "outlineWidth": "3px",
+        "top": 723.25,
+        "bottom": 767.25,
+        "scrollY": 0,
+        "hitTag": "BUTTON",
+        "hitName": "닫기"
+      },
+      "forwardWrap": true,
+      "forwardFocus": {
+        "tag": "BUTTON",
+        "name": "사주 행성 구성 닫기",
+        "visible": true,
+        "unobscured": true,
+        "focusVisible": true,
+        "outlineStyle": "solid",
+        "outlineWidth": "3px",
+        "top": 398.25,
+        "bottom": 442.25,
+        "scrollY": 0,
+        "hitTag": "BUTTON",
+        "hitName": "사주 행성 구성 닫기"
+      },
+      "escaped": true,
+      "returned": true,
+      "returnedFocus": {
+        "tag": "BUTTON",
+        "name": "슬롯 정보",
+        "visible": true,
+        "unobscured": false,
+        "focusVisible": true,
+        "outlineStyle": "solid",
+        "outlineWidth": "3px",
+        "top": 399.75,
+        "bottom": 443.75,
+        "scrollY": 349,
+        "hitTag": "DIV",
+        "hitName": "3D 화면을 사용할 수 없어요. WebGL을 지원하는 브라우저에서 다시 열어주세요.행성 없이도 같은 사람의 구성과 관계 카드를"
+      }
+    },
+    {
+      "scenario": "saved list keyboard retry",
+      "width": 390,
+      "attempts": 3,
+      "firstFocus": {
+        "tag": "BUTTON",
+        "name": "다시 불러오기",
+        "visible": true,
+        "unobscured": true,
+        "focusVisible": true,
+        "outlineStyle": "solid",
+        "outlineWidth": "3px",
+        "top": 424.390625,
+        "bottom": 474.78125,
+        "scrollY": 0,
+        "hitTag": "BUTTON",
+        "hitName": "다시 불러오기"
+      },
+      "secondFocus": {
+        "tag": "BUTTON",
+        "name": "다시 불러오기",
+        "visible": true,
+        "unobscured": true,
+        "focusVisible": true,
+        "outlineStyle": "solid",
+        "outlineWidth": "3px",
+        "top": 424.390625,
+        "bottom": 474.78125,
+        "scrollY": 0,
+        "hitTag": "BUTTON",
+        "hitName": "다시 불러오기"
+      },
+      "successful": true
+    },
+    {
+      "scenario": "saved detail keyboard retry",
+      "width": 390,
+      "attempts": 3,
+      "firstFocus": {
+        "tag": "BUTTON",
+        "name": "다시 불러오기",
+        "visible": true,
+        "unobscured": true,
+        "focusVisible": true,
+        "outlineStyle": "solid",
+        "outlineWidth": "3px",
+        "top": 200.390625,
+        "bottom": 250.78125,
+        "scrollY": 0,
+        "hitTag": "BUTTON",
+        "hitName": "다시 불러오기"
+      },
+      "secondFocus": {
+        "tag": "BUTTON",
+        "name": "다시 불러오기",
+        "visible": true,
+        "unobscured": true,
+        "focusVisible": true,
+        "outlineStyle": "solid",
+        "outlineWidth": "3px",
+        "top": 200.390625,
+        "bottom": 250.78125,
+        "scrollY": 0,
+        "hitTag": "BUTTON",
+        "hitName": "다시 불러오기"
+      },
+      "successful": true
+    },
+    {
+      "scenario": "fallback native person selection",
+      "width": 1440,
+      "ownerFocus": {
+        "tag": "BUTTON",
+        "name": "합성 키보드 검증 (나)",
+        "visible": true,
+        "unobscured": true,
+        "focusVisible": true,
+        "outlineStyle": "solid",
+        "outlineWidth": "3px",
+        "top": 705.890625,
+        "bottom": 749.890625,
+        "scrollY": 0,
+        "hitTag": "BUTTON",
+        "hitName": "합성 키보드 검증 (나)"
+      },
+      "friendFocus": {
+        "tag": "BUTTON",
+        "name": "합성 키보드 친구",
+        "visible": true,
+        "unobscured": true,
+        "focusVisible": true,
+        "outlineStyle": "solid",
+        "outlineWidth": "3px",
+        "top": 705.890625,
+        "bottom": 749.890625,
+        "scrollY": 0,
+        "hitTag": "BUTTON",
+        "hitName": "합성 키보드 친구"
+      }
+    },
+    {
+      "scenario": "fallback slot dialog",
+      "width": 1440,
+      "opened": {
+        "tag": "BUTTON",
+        "name": "사주 행성 구성 닫기",
+        "visible": true,
+        "unobscured": true,
+        "focusVisible": true,
+        "outlineStyle": "solid",
+        "outlineWidth": "3px",
+        "top": 399.5625,
+        "bottom": 443.5625,
+        "scrollY": 112,
+        "hitTag": "BUTTON",
+        "hitName": "사주 행성 구성 닫기"
+      },
+      "firstInitiallyFocused": true,
+      "semantics": {
+        "role": "dialog",
+        "modal": "true",
+        "label": "_r_0_",
+        "closeLabel": "사주 행성 구성 닫기"
+      },
+      "reverseWrap": true,
+      "reverseFocus": {
+        "tag": "BUTTON",
+        "name": "닫기",
+        "visible": true,
+        "unobscured": true,
+        "focusVisible": true,
+        "outlineStyle": "solid",
+        "outlineWidth": "3px",
+        "top": 668.5625,
+        "bottom": 712.5625,
+        "scrollY": 112,
+        "hitTag": "BUTTON",
+        "hitName": "닫기"
+      },
+      "forwardWrap": true,
+      "forwardFocus": {
+        "tag": "BUTTON",
+        "name": "사주 행성 구성 닫기",
+        "visible": true,
+        "unobscured": true,
+        "focusVisible": true,
+        "outlineStyle": "solid",
+        "outlineWidth": "3px",
+        "top": 399.5625,
+        "bottom": 443.5625,
+        "scrollY": 112,
+        "hitTag": "BUTTON",
+        "hitName": "사주 행성 구성 닫기"
+      },
+      "escaped": true,
+      "returned": true,
+      "returnedFocus": {
+        "tag": "BUTTON",
+        "name": "슬롯 정보",
+        "visible": true,
+        "unobscured": false,
+        "focusVisible": true,
+        "outlineStyle": "solid",
+        "outlineWidth": "3px",
+        "top": 400.0625,
+        "bottom": 444.0625,
+        "scrollY": 534,
+        "hitTag": "DIV",
+        "hitName": "3D 화면을 사용할 수 없어요. WebGL을 지원하는 브라우저에서 다시 열어주세요.행성 없이도 같은 사람의 구성과 관계 카드를"
+      }
+    },
+    {
+      "scenario": "saved list keyboard retry",
+      "width": 1440,
+      "attempts": 3,
+      "firstFocus": {
+        "tag": "BUTTON",
+        "name": "다시 불러오기",
+        "visible": true,
+        "unobscured": true,
+        "focusVisible": true,
+        "outlineStyle": "solid",
+        "outlineWidth": "3px",
+        "top": 437.390625,
+        "bottom": 487.78125,
+        "scrollY": 0,
+        "hitTag": "BUTTON",
+        "hitName": "다시 불러오기"
+      },
+      "secondFocus": {
+        "tag": "BUTTON",
+        "name": "다시 불러오기",
+        "visible": true,
+        "unobscured": true,
+        "focusVisible": true,
+        "outlineStyle": "solid",
+        "outlineWidth": "3px",
+        "top": 437.390625,
+        "bottom": 487.78125,
+        "scrollY": 0,
+        "hitTag": "BUTTON",
+        "hitName": "다시 불러오기"
+      },
+      "successful": true
+    },
+    {
+      "scenario": "saved detail keyboard retry",
+      "width": 1440,
+      "attempts": 3,
+      "firstFocus": {
+        "tag": "BUTTON",
+        "name": "다시 불러오기",
+        "visible": true,
+        "unobscured": true,
+        "focusVisible": true,
+        "outlineStyle": "solid",
+        "outlineWidth": "3px",
+        "top": 216.390625,
+        "bottom": 266.78125,
+        "scrollY": 0,
+        "hitTag": "BUTTON",
+        "hitName": "다시 불러오기"
+      },
+      "secondFocus": {
+        "tag": "BUTTON",
+        "name": "다시 불러오기",
+        "visible": true,
+        "unobscured": true,
+        "focusVisible": true,
+        "outlineStyle": "solid",
+        "outlineWidth": "3px",
+        "top": 216.390625,
+        "bottom": 266.78125,
+        "scrollY": 0,
+        "hitTag": "BUTTON",
+        "hitName": "다시 불러오기"
+      },
+      "successful": true
+    },
+    {
+      "scenario": "native context restoration after keyboard selection",
+      "events": [
+        {
+          "type": "webglcontextlost",
+          "trusted": true
+        }
+      ],
+      "ready": true
+    }
+  ],
+  "errors": [],
+  "consoleErrors": [
+    "THREE.WebGLRenderer: THREE.WebGLRenderer: Error creating WebGL context.",
+    "THREE.WebGLRenderer: THREE.WebGLRenderer: Error creating WebGL context.",
+    "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+    "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+    "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+    "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+    "THREE.WebGLRenderer: THREE.WebGLRenderer: Error creating WebGL context.",
+    "THREE.WebGLRenderer: THREE.WebGLRenderer: Error creating WebGL context.",
+    "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+    "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+    "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+    "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+  ],
+  "outbound": [],
+  "limits": [
+    "Chromium/SwiftShader on a local built Worker with synthetic identity and ephemeral D1; no physical GPU, mobile OS or hosted auth.",
+    "Native keyboard, rAF and scroll; unsupported WebGL and HTTP retry failures are explicit browser-boundary faults.",
+    "Dialog DOM semantics/focus verified; screen-reader speech and Safari/Firefox not tested."
+  ]
+}

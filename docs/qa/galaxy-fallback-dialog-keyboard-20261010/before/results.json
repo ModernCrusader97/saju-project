@@ -1,0 +1,273 @@
+{
+  "basis": "8a358bd77879cabc5d884a098587d38fee7a1306",
+  "phase": "before",
+  "browser": "151.0.7922.173",
+  "applicationSourceSHA256": "d1a1e4d52dd529ce1a8b9a823ea42031fd1625b8c4914d37643d59cb60a2fdf7",
+  "passed": 8,
+  "failed": 2,
+  "checks": [
+    {
+      "name": "fallback people use visible native Tab, Enter and Space at 390px",
+      "status": "PASS"
+    },
+    {
+      "name": "fallback slot dialog contains keyboard focus, closes and returns focus at 390px",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: opening the overlay must move keyboard focus to its visible close control\n    at file:///workspace/saju-galaxy-fallback-dialog-keyboard-20261010/scripts/qa/error-keyboard-browser.mjs:158:9\n    at async check (file:///workspace/saju-galaxy-fallback-dialog-keyboard-20261010/scripts/qa/error-keyboard-browser.mjs:39:9)\n    at async file:///workspace/saju-galaxy-fallback-dialog-keyboard-20261010/scripts/qa/error-keyboard-browser.mjs:128:5"
+    },
+    {
+      "name": "saved list retry uses Enter/Space and one request per attempt at 390px",
+      "status": "PASS"
+    },
+    {
+      "name": "saved detail retry uses Enter/Space and one request per attempt at 390px",
+      "status": "PASS"
+    },
+    {
+      "name": "fallback people use visible native Tab, Enter and Space at 1440px",
+      "status": "PASS"
+    },
+    {
+      "name": "fallback slot dialog contains keyboard focus, closes and returns focus at 1440px",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: opening the overlay must move keyboard focus to its visible close control\n    at file:///workspace/saju-galaxy-fallback-dialog-keyboard-20261010/scripts/qa/error-keyboard-browser.mjs:158:9\n    at async check (file:///workspace/saju-galaxy-fallback-dialog-keyboard-20261010/scripts/qa/error-keyboard-browser.mjs:39:9)\n    at async file:///workspace/saju-galaxy-fallback-dialog-keyboard-20261010/scripts/qa/error-keyboard-browser.mjs:128:5"
+    },
+    {
+      "name": "saved list retry uses Enter/Space and one request per attempt at 1440px",
+      "status": "PASS"
+    },
+    {
+      "name": "saved detail retry uses Enter/Space and one request per attempt at 1440px",
+      "status": "PASS"
+    },
+    {
+      "name": "native context restoration removes the error after keyboard fallback selection",
+      "status": "PASS"
+    },
+    {
+      "name": "only intentional WebGL and HTTP fault console messages occur; no page errors or outbound requests",
+      "status": "PASS"
+    }
+  ],
+  "observations": [
+    {
+      "scenario": "fallback native person selection",
+      "width": 390,
+      "ownerFocus": {
+        "tag": "BUTTON",
+        "name": "합성 키보드 검증 (나)",
+        "visible": true,
+        "unobscured": true,
+        "focusVisible": true,
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "friendFocus": {
+        "tag": "BUTTON",
+        "name": "합성 키보드 친구",
+        "visible": true,
+        "unobscured": true,
+        "focusVisible": true,
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      }
+    },
+    {
+      "scenario": "fallback slot dialog",
+      "width": 390,
+      "opened": {
+        "tag": "BUTTON",
+        "name": "슬롯 정보",
+        "visible": true,
+        "unobscured": false,
+        "focusVisible": true,
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "firstInitiallyFocused": false,
+      "semantics": {
+        "role": null,
+        "modal": null,
+        "label": null,
+        "closeLabel": null
+      },
+      "reverseWrap": false,
+      "forwardWrap": false,
+      "escaped": false,
+      "returned": false
+    },
+    {
+      "scenario": "saved list keyboard retry",
+      "width": 390,
+      "attempts": 3,
+      "firstFocus": {
+        "tag": "BUTTON",
+        "name": "다시 불러오기",
+        "visible": true,
+        "unobscured": true,
+        "focusVisible": true,
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "secondFocus": {
+        "tag": "BUTTON",
+        "name": "다시 불러오기",
+        "visible": true,
+        "unobscured": true,
+        "focusVisible": true,
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "successful": true
+    },
+    {
+      "scenario": "saved detail keyboard retry",
+      "width": 390,
+      "attempts": 3,
+      "firstFocus": {
+        "tag": "BUTTON",
+        "name": "다시 불러오기",
+        "visible": true,
+        "unobscured": true,
+        "focusVisible": true,
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "secondFocus": {
+        "tag": "BUTTON",
+        "name": "다시 불러오기",
+        "visible": true,
+        "unobscured": true,
+        "focusVisible": true,
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "successful": true
+    },
+    {
+      "scenario": "fallback native person selection",
+      "width": 1440,
+      "ownerFocus": {
+        "tag": "BUTTON",
+        "name": "합성 키보드 검증 (나)",
+        "visible": true,
+        "unobscured": true,
+        "focusVisible": true,
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "friendFocus": {
+        "tag": "BUTTON",
+        "name": "합성 키보드 친구",
+        "visible": true,
+        "unobscured": true,
+        "focusVisible": true,
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      }
+    },
+    {
+      "scenario": "fallback slot dialog",
+      "width": 1440,
+      "opened": {
+        "tag": "BUTTON",
+        "name": "슬롯 정보",
+        "visible": true,
+        "unobscured": false,
+        "focusVisible": true,
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "firstInitiallyFocused": false,
+      "semantics": {
+        "role": null,
+        "modal": null,
+        "label": null,
+        "closeLabel": null
+      },
+      "reverseWrap": false,
+      "forwardWrap": false,
+      "escaped": false,
+      "returned": false
+    },
+    {
+      "scenario": "saved list keyboard retry",
+      "width": 1440,
+      "attempts": 3,
+      "firstFocus": {
+        "tag": "BUTTON",
+        "name": "다시 불러오기",
+        "visible": true,
+        "unobscured": true,
+        "focusVisible": true,
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "secondFocus": {
+        "tag": "BUTTON",
+        "name": "다시 불러오기",
+        "visible": true,
+        "unobscured": true,
+        "focusVisible": true,
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "successful": true
+    },
+    {
+      "scenario": "saved detail keyboard retry",
+      "width": 1440,
+      "attempts": 3,
+      "firstFocus": {
+        "tag": "BUTTON",
+        "name": "다시 불러오기",
+        "visible": true,
+        "unobscured": true,
+        "focusVisible": true,
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "secondFocus": {
+        "tag": "BUTTON",
+        "name": "다시 불러오기",
+        "visible": true,
+        "unobscured": true,
+        "focusVisible": true,
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      "successful": true
+    },
+    {
+      "scenario": "native context restoration after keyboard selection",
+      "events": [
+        {
+          "type": "webglcontextlost",
+          "trusted": true
+        }
+      ],
+      "ready": true
+    }
+  ],
+  "errors": [],
+  "consoleErrors": [
+    "THREE.WebGLRenderer: THREE.WebGLRenderer: Error creating WebGL context.",
+    "THREE.WebGLRenderer: THREE.WebGLRenderer: Error creating WebGL context.",
+    "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+    "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+    "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+    "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+    "THREE.WebGLRenderer: THREE.WebGLRenderer: Error creating WebGL context.",
+    "THREE.WebGLRenderer: THREE.WebGLRenderer: Error creating WebGL context.",
+    "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+    "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+    "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+    "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+  ],
+  "outbound": [],
+  "limits": [
+    "Chromium/SwiftShader on a local built Worker with synthetic identity and ephemeral D1; no physical GPU, mobile OS or hosted auth.",
+    "Native keyboard, rAF and scroll; unsupported WebGL and HTTP retry failures are explicit browser-boundary faults.",
+    "Dialog DOM semantics/focus verified; screen-reader speech and Safari/Firefox not tested."
+  ]
+}

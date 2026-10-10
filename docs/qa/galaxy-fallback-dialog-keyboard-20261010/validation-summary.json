@@ -1,0 +1,60 @@
+{
+  "basis": "8a358bd77879cabc5d884a098587d38fee7a1306",
+  "branch": "fix/galaxy-fallback-dialog-keyboard-20261010",
+  "applicationSourceSHA256": "37e92c3a8fc81fbcfd3343c706897bdb2112cc85f41341af37b98d69b18c7209",
+  "browserScriptSHA256": "70cf1f5c2774b896588a589a85a4543f868368a932d340b3eae8aeb39b3ac696",
+  "baselineBrowser": {
+    "passed": 8,
+    "failed": 2,
+    "classification": "product defects: dialog semantics, initial focus, Tab containment and Escape/return handling"
+  },
+  "finalBrowser": {
+    "passed": 10,
+    "failed": 0,
+    "widths": [
+      390,
+      1440
+    ],
+    "nativeKeyboard": true,
+    "syntheticIdentityAndEphemeralD1": true,
+    "pageErrors": 0,
+    "outboundRequests": 0,
+    "expectedFaultConsoleMessages": 12
+  },
+  "sceneClockRegression": {
+    "passed": 17,
+    "failed": 0
+  },
+  "types": {
+    "exitCode": 0,
+    "incremental": false
+  },
+  "build": {
+    "exitCode": 0,
+    "ownBuiltWorker": true
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 4,
+    "baselineWarningsUnchanged": true
+  },
+  "diffCheck": {
+    "exitCode": 0
+  },
+  "visualReview": [
+    "after/dialog-1440.png",
+    "after/returned-390.png",
+    "after/healthy-dialog-390.png"
+  ],
+  "limits": [
+    "Chromium/SwiftShader on a local built Worker with synthetic identity and ephemeral D1; no physical GPU, mobile OS or hosted auth.",
+    "Native keyboard, rAF and scroll; unsupported WebGL and HTTP retry failures are explicit browser-boundary faults.",
+    "Dialog DOM semantics/focus verified; screen-reader speech and Safari/Firefox not tested."
+  ],
+  "remoteBasisVerified": true,
+  "protectedRemoteReferences": {
+    "refs/heads/main": "2e2d82b05f87b39ff8057ae914e8dfa01100a974",
+    "refs/heads/maint/galaxy-graphics-error-store-20261010": "8a358bd77879cabc5d884a098587d38fee7a1306",
+    "refs/heads/maint/guin-map-loading-20261009": "43e2d8dc6efe1654641e639397f37d0ea44f525a"
+  }
+}

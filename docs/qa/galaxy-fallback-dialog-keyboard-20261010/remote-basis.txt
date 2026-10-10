@@ -1,0 +1,3 @@
+2e2d82b05f87b39ff8057ae914e8dfa01100a974	refs/heads/main
+8a358bd77879cabc5d884a098587d38fee7a1306	refs/heads/maint/galaxy-graphics-error-store-20261010
+43e2d8dc6efe1654641e639397f37d0ea44f525a	refs/heads/maint/guin-map-loading-20261009

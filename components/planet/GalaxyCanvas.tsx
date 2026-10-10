@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef, useState, useCallback, useSyncExternalStore } from "react";
+import React, { useEffect, useRef, useState, useCallback, useSyncExternalStore, useId } from "react";
 import { createGraphicsErrorStore } from "@/lib/planet/graphics-error-store";
 import { bindSceneGestures } from "@/lib/planet/scene-gestures";
 import * as THREE from "three";
@@ -176,12 +176,31 @@ export default function GalaxyCanvas({
   const [focusMode, setFocusMode] = useState<"galaxy" | "owner" | "friend">("galaxy");
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [showPillarInspectModal, setShowPillarInspectModal] = useState(false);
+  const pillarInspectDialogRef = useRef<HTMLDivElement>(null);
+  const pillarInspectTriggerRef = useRef<HTMLButtonElement>(null);
+  const pillarInspectTitleId = useId();
   const [capturedNotice, setCapturedNotice] = useState(false);
   const [landingNotice, setLandingNotice] = useState<{
     name: string;
     relationTitle: string;
     affinity: number;
   } | null>(null);
+
+  useEffect(() => {
+    if (!showPillarInspectModal) return;
+    const dialog = pillarInspectDialogRef.current;
+    const trigger = pillarInspectTriggerRef.current;
+    if (!dialog) return;
+    const firstClose = dialog.querySelector<HTMLButtonElement>('button:not([disabled])');
+    firstClose?.focus({ preventScroll: true });
+    // Finish any smooth scroll started by Tab to the trigger before opening.
+    firstClose?.scrollIntoView({ block: "center", behavior: "instant" });
+    return () => {
+      if (!trigger?.isConnected) return;
+      trigger.focus({ preventScroll: true });
+      trigger.scrollIntoView({ block: "center", behavior: "instant" });
+    };
+  }, [showPillarInspectModal]);
 
   // 1. Scene & Environment 초기화
   useEffect(() => {
@@ -892,7 +911,7 @@ export default function GalaxyCanvas({
 
       {/* 하단 활성화된 인연 요약 바 (행성 클릭 시 연동) */}
       {activePerson && (
-        <div className="absolute bottom-4 left-4 right-4 z-10 bg-black/85 backdrop-blur-xl border border-white/20 rounded-2xl p-3 text-white shadow-2xl flex items-center justify-between animate-in fade-in slide-in-from-bottom-2">
+        <div className={`absolute bottom-4 left-4 right-4 ${graphicsError ? "z-20" : "z-10"} bg-black/85 backdrop-blur-xl border border-white/20 rounded-2xl p-3 text-white shadow-2xl flex items-center justify-between animate-in fade-in slide-in-from-bottom-2`}>
           <div className="flex items-center gap-3">
             <div
               className={`h-10 w-10 rounded-xl flex items-center justify-center font-bold text-sm shrink-0 font-serif ${
@@ -925,6 +944,7 @@ export default function GalaxyCanvas({
               </span>
             )}
             <button
+              ref={pillarInspectTriggerRef}
               onClick={() => setShowPillarInspectModal(true)}
               className="p-1.5 rounded-lg bg-white/10 hover:bg-white/20 border border-white/20 text-white transition-all text-[11px] flex items-center gap-1"
               title="4기둥 행성 슬롯 상세 보기"
@@ -939,10 +959,28 @@ export default function GalaxyCanvas({
       {/* 4기둥 슬롯 정밀 분석 모달 */}
       {showPillarInspectModal && activePerson && (
         <div className="absolute inset-0 z-30 bg-black/70 backdrop-blur-md flex items-center justify-center p-4">
-          <div className="w-full max-w-sm bg-[#0B101E] border border-white/20 rounded-2xl p-5 text-white shadow-2xl space-y-4 animate-in fade-in zoom-in-95">
+          <div ref={pillarInspectDialogRef} role="dialog" aria-modal="true" aria-labelledby={pillarInspectTitleId}
+            onKeyDown={event => {
+              if (event.key === "Escape") {
+                event.preventDefault();
+                event.stopPropagation();
+                setShowPillarInspectModal(false);
+              } else if (event.key === "Tab") {
+                const buttons = event.currentTarget.querySelectorAll<HTMLButtonElement>('button:not([disabled])');
+                const first = buttons[0], last = buttons[buttons.length - 1];
+                if (event.shiftKey && document.activeElement === first) {
+                  event.preventDefault();
+                  last?.focus();
+                } else if (!event.shiftKey && document.activeElement === last) {
+                  event.preventDefault();
+                  first?.focus();
+                }
+              }
+            }}
+            className="w-full max-w-sm bg-[#0B101E] border border-white/20 rounded-2xl p-5 text-white shadow-2xl space-y-4 animate-in fade-in zoom-in-95">
             <div className="flex items-center justify-between border-b border-white/10 pb-3">
               <div>
-                <h4 className="font-serif font-bold text-base text-doryeong-gold flex items-center gap-1.5">
+                <h4 id={pillarInspectTitleId} className="font-serif font-bold text-base text-doryeong-gold flex items-center gap-1.5">
                   <span>{activePerson.name}님의 사주 행성 구성</span>
                 </h4>
                 <p className="text-[10.5px] text-white/60">
@@ -950,6 +988,7 @@ export default function GalaxyCanvas({
                 </p>
               </div>
               <button
+                aria-label="사주 행성 구성 닫기"
                 onClick={() => setShowPillarInspectModal(false)}
                 className="text-white/60 hover:text-white p-1"
               >

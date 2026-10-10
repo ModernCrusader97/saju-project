@@ -1,0 +1,17 @@
+{
+  "basis": "8a358bd77879cabc5d884a098587d38fee7a1306",
+  "oldTrackedFiles": 513,
+  "oldFilesByteIdentical": 512,
+  "changedOldPaths": [
+    "components/planet/GalaxyCanvas.tsx"
+  ],
+  "normalizedCanvasByteIdentical": true,
+  "normalSceneSummaryLayerPreserved": true,
+  "canvasBeforeSHA256": "d1a1e4d52dd529ce1a8b9a823ea42031fd1625b8c4914d37643d59cb60a2fdf7",
+  "canvasAfterSHA256": "37e92c3a8fc81fbcfd3343c706897bdb2112cc85f41341af37b98d69b18c7209",
+  "graphicsErrorStoreUntouched": true,
+  "approvedBodyRuntimeSHA256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+  "approvedSourceBodySHA256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+  "preservedWipScriptSHA256": "75ea6f5726ce41272841494c3a3316e3f4b88ea7c4888d71e21e981ee9030539",
+  "finalBrowserScriptSHA256": "70cf1f5c2774b896588a589a85a4543f868368a932d340b3eae8aeb39b3ac696"
+}

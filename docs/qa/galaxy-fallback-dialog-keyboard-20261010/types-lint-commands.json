@@ -1,0 +1,27 @@
+[
+  {
+    "name": "types",
+    "command": [
+      "node_modules/.bin/tsc",
+      "--noEmit",
+      "--incremental",
+      "false"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 4.41,
+    "log": "/tmp/saju-fallback-dialog-keyboard-final-types-20261010.log"
+  },
+  {
+    "name": "lint",
+    "command": [
+      "node_modules/.bin/eslint",
+      "components/planet/GalaxyCanvas.tsx",
+      "scripts/qa/error-keyboard-browser.mjs",
+      "--format",
+      "json"
+    ],
+    "exitCode": 0,
+    "elapsedSeconds": 1.95,
+    "log": "/tmp/saju-fallback-dialog-keyboard-final-lint-20261010.log"
+  }
+]
