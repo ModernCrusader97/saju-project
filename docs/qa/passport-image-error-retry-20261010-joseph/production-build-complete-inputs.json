@@ -1,0 +1,7 @@
+{
+  "command": "npm run build (isolated empty npm configs)",
+  "exit_code": 0,
+  "own_fresh_build": true,
+  "existing_build_inputs_materialized_byte_preserving": true,
+  "initial_failure_preserved": "production-build.json / production-build.log"
+}

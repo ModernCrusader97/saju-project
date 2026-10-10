@@ -117,8 +117,11 @@ export default function CosmicPassportModal({
       // 5. 3D 행성 / 샌드맨 정령 샷 (있을 시 렌더링)
       if (planetSnapshotUrl) {
         const img = new Image();
-        img.src = planetSnapshotUrl;
-        await new Promise((res) => (img.onload = res));
+        await new Promise<void>((resolve, reject) => {
+          img.onload = () => resolve();
+          img.onerror = () => reject(new Error("Passport snapshot could not be loaded."));
+          img.src = planetSnapshotUrl;
+        });
         ctx.save();
         ctx.beginPath();
         ctx.arc(540, 800, 300, 0, Math.PI * 2);

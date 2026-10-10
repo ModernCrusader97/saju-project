@@ -1,0 +1,3 @@
+* -text
+# Raw process output retains exact bytes; no textual diff normalization.
+*.log -text -diff

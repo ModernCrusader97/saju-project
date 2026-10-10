@@ -1,0 +1,20 @@
+{
+  "status": "PASS_MINIMAL_PRODUCT_SCOPE_AND_REUSED_COMPLETED_QA",
+  "at_utc": "2026-10-10T22:25:03.459Z",
+  "basis": "61f1a3dbcc3e4d991198b64e0a624c208ccf8b58",
+  "product_file": "components/planet/CosmicPassportModal.tsx",
+  "modified_preexisting_files": 1,
+  "preexisting_tracked_files": 571,
+  "all_other_preexisting_tracked_tree_entries_preserved": true,
+  "product_lines_replaced": 2,
+  "product_lines_added": 5,
+  "reverse_patch_recreates_byte_exact_original_working_source": true,
+  "before_source_sha256": "718325c5deab4c80088c789521d41bcb8d98bd04a14b3073d154dafa4d3e84ad",
+  "after_source_sha256": "92cf1fc79c00316d0820c05b4e68595f3e6c6ced9da22ad1e8830a185b2ec2c6",
+  "completed_fix_qa_records_read": 9,
+  "completed_fix_suites_rerun": 0,
+  "model_shape_color_uv_or_reduction_work_repeated": false,
+  "auth_billing_permissions_db_and_app_default_changes": false,
+  "build_only_materialized_original_tracked_inputs": "Original non-secret hosting config, existing approved jade build assets and its two runtime/shader imports. No tracked changes to these inputs.",
+  "git_crlf": "Existing core.autocrlf=true is preserved. Working-source hashes in browser reports include native CRLF; Git stores the canonical LF source. QA evidence is committed with -text."
+}

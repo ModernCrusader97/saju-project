@@ -1,0 +1,6 @@
+{
+  "command": "tsc --noEmit --incremental false",
+  "exit_code": 2,
+  "fresh_source": true,
+  "build_failed_and_type_gate_run_independently": true
+}

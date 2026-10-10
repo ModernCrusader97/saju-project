@@ -1,0 +1,39 @@
+{
+  "status": "PASS_NORMAL_PASSPORT_EXPORTS_BYTE_AND_PIXEL_IDENTICAL",
+  "records": [
+    {
+      "case": "valid-cached-snapshot-can-export-twice",
+      "export": "first",
+      "file": "valid-first.png",
+      "bytes": 471799,
+      "png_sha256": "007ca073c0a85735884dffa07b87ff606c23ad2f9a4734d9c6feac68fa6cd21a",
+      "decoded_rgba_sha256": "8ec0529c482186b8fb7840b081ed689504d948d273fc422bf70097cf5ba03f2c",
+      "before_after_bytes_and_pixels_identical": true
+    },
+    {
+      "case": "valid-cached-snapshot-can-export-twice",
+      "export": "second",
+      "file": "valid-cached-second.png",
+      "bytes": 471799,
+      "png_sha256": "007ca073c0a85735884dffa07b87ff606c23ad2f9a4734d9c6feac68fa6cd21a",
+      "decoded_rgba_sha256": "8ec0529c482186b8fb7840b081ed689504d948d273fc422bf70097cf5ba03f2c",
+      "before_after_bytes_and_pixels_identical": true
+    },
+    {
+      "case": "missing-snapshot-fallback-still-exports",
+      "export": "exported",
+      "file": "no-snapshot-fallback.png",
+      "bytes": 449171,
+      "png_sha256": "b898df6a1c009766e3b4bccc236eb47f78394765cb365d2942a71ad6bebc5db4",
+      "decoded_rgba_sha256": "50ceb937b5bbb5d322ab24f2ed27a6398576d1003608f2b88b97b2837f48508c",
+      "before_after_bytes_and_pixels_identical": true
+    }
+  ],
+  "css_sha256": "f455acbc02ae6740a95b9ee2da3aeb77d70fdb906ae45ef504a55b7eb3c83387",
+  "browser_version": "154.0.8037.98",
+  "existing_title_style_valid_snapshot_and_no_snapshot_output_unchanged": true,
+  "before_source_sha256": "718325c5deab4c80088c789521d41bcb8d98bd04a14b3073d154dafa4d3e84ad",
+  "after_source_sha256": "92cf1fc79c00316d0820c05b4e68595f3e6c6ced9da22ad1e8830a185b2ec2c6",
+  "new_image_error_cases_after": 3,
+  "api_and_outbound_requests": 0
+}

@@ -1,0 +1,5 @@
+{
+  "command": "tsc --noEmit --incremental false",
+  "exit_code": 0,
+  "after_successful_own_production_build": true
+}

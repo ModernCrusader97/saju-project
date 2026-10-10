@@ -1,0 +1,153 @@
+{
+  "status": "PASS_NATIVE_CHROME_PASSPORT_IMAGE_ERROR_RECOVERY",
+  "phase": "after",
+  "application_source_sha256": "92cf1fc79c00316d0820c05b4e68595f3e6c6ced9da22ad1e8830a185b2ec2c6",
+  "harness_bundle_sha256": "ec3e35a909861cb7b604c3551bd9b37022cd4fd46e69ed7e9a7c995eeb32f4a8",
+  "harness_css_sha256": "f455acbc02ae6740a95b9ee2da3aeb77d70fdb906ae45ef504a55b7eb3c83387",
+  "checks": [
+    {
+      "name": "corrupt-data-uri-image-error-recovers",
+      "status": "PASS",
+      "details": {
+        "disabled": false,
+        "label": "인스타 스토리용 9:16 카드 저장 (PNG)",
+        "native_image_events": [
+          {
+            "type": "error",
+            "trusted": true,
+            "complete": true,
+            "naturalWidth": 0,
+            "src": "data:image/png;base64,aW52YWxpZC1wbmc="
+          }
+        ],
+        "alerts": [
+          "스토리 카드 생성 중 오류가 발생했습니다."
+        ],
+        "downloads": []
+      }
+    },
+    {
+      "name": "http-image-decode-error-recovers-wide",
+      "status": "PASS",
+      "details": {
+        "disabled": false,
+        "label": "인스타 스토리용 9:16 카드 저장 (PNG)",
+        "native_image_events": [
+          {
+            "type": "error",
+            "trusted": true,
+            "complete": true,
+            "naturalWidth": 0,
+            "src": "http://127.0.0.1:3046/invalid-snapshot.png"
+          }
+        ],
+        "alerts": [
+          "스토리 카드 생성 중 오류가 발생했습니다."
+        ],
+        "downloads": []
+      }
+    },
+    {
+      "name": "same-open-dialog-can-retry-with-valid-snapshot",
+      "status": "PASS",
+      "details": {
+        "error_state": {
+          "disabled": false,
+          "label": "인스타 스토리용 9:16 카드 저장 (PNG)",
+          "native_image_events": [
+            {
+              "type": "error",
+              "trusted": true,
+              "complete": true,
+              "naturalWidth": 0,
+              "src": "data:image/png;base64,aW52YWxpZC1wbmc="
+            }
+          ],
+          "alerts": [
+            "스토리 카드 생성 중 오류가 발생했습니다."
+          ],
+          "downloads": []
+        },
+        "exported": {
+          "file": "retry-valid-export.png",
+          "filename": "우주여권_QA Snapshot_갑자.png",
+          "bytes": 471799,
+          "sha256": "007ca073c0a85735884dffa07b87ff606c23ad2f9a4734d9c6feac68fa6cd21a",
+          "decoded_rgba_sha256": "8ec0529c482186b8fb7840b081ed689504d948d273fc422bf70097cf5ba03f2c",
+          "width": 1080,
+          "height": 1920
+        }
+      }
+    },
+    {
+      "name": "valid-cached-snapshot-can-export-twice",
+      "status": "PASS",
+      "details": {
+        "first": {
+          "file": "valid-first.png",
+          "filename": "우주여권_QA Snapshot_갑자.png",
+          "bytes": 471799,
+          "sha256": "007ca073c0a85735884dffa07b87ff606c23ad2f9a4734d9c6feac68fa6cd21a",
+          "decoded_rgba_sha256": "8ec0529c482186b8fb7840b081ed689504d948d273fc422bf70097cf5ba03f2c",
+          "width": 1080,
+          "height": 1920
+        },
+        "second": {
+          "file": "valid-cached-second.png",
+          "filename": "우주여권_QA Snapshot_갑자.png",
+          "bytes": 471799,
+          "sha256": "007ca073c0a85735884dffa07b87ff606c23ad2f9a4734d9c6feac68fa6cd21a",
+          "decoded_rgba_sha256": "8ec0529c482186b8fb7840b081ed689504d948d273fc422bf70097cf5ba03f2c",
+          "width": 1080,
+          "height": 1920
+        },
+        "native_image_events": [
+          {
+            "type": "load",
+            "trusted": true,
+            "complete": true,
+            "naturalWidth": 32,
+            "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAYUlEQVR4AezVwQkAIQxE0WAJW8x2sFuiRViCJViMLWgJ/5CDIF+YUyAMD4Lla3WdTInDzwIKKIAC/X0iE7pyLEALsnMLKKCAAgoooAAK/GNGJvRdYwFakJ1bQIH7BehKNgAAAP//Nh/otAAAAAZJREFUAwCpmYDBoyPU8wAAAABJRU5ErkJggg=="
+          },
+          {
+            "type": "load",
+            "trusted": true,
+            "complete": true,
+            "naturalWidth": 32,
+            "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAYUlEQVR4AezVwQkAIQxE0WAJW8x2sFuiRViCJViMLWgJ/5CDIF+YUyAMD4Lla3WdTInDzwIKKIAC/X0iE7pyLEALsnMLKKCAAgoooAAK/GNGJvRdYwFakJ1bQIH7BehKNgAAAP//Nh/otAAAAAZJREFUAwCpmYDBoyPU8wAAAABJRU5ErkJggg=="
+          }
+        ]
+      }
+    },
+    {
+      "name": "missing-snapshot-fallback-still-exports",
+      "status": "PASS",
+      "details": {
+        "exported": {
+          "file": "no-snapshot-fallback.png",
+          "filename": "우주여권_QA Snapshot_갑자.png",
+          "bytes": 449171,
+          "sha256": "b898df6a1c009766e3b4bccc236eb47f78394765cb365d2942a71ad6bebc5db4",
+          "decoded_rgba_sha256": "50ceb937b5bbb5d322ab24f2ed27a6398576d1003608f2b88b97b2837f48508c",
+          "width": 1080,
+          "height": 1920
+        }
+      }
+    }
+  ],
+  "passed": 5,
+  "failed": 0,
+  "browser_version": "154.0.8037.98",
+  "page_errors": [],
+  "outbound_requests": [],
+  "console_errors": [],
+  "native_image_error_fixture": "Real trusted Chromium image decode errors; no synthetic dispatch and no stubbed Image load/error or Canvas.",
+  "star_randomness_seeded_for_pixel_comparison": true,
+  "api_calls": 0,
+  "database_reads_or_writes": 0,
+  "auth_or_clipboard_permissions_changed": false,
+  "limits": [
+    "Actual current React component bundled in production mode with actual Tailwind styles; no built full-app route, hosted auth, live DB, physical device or model rendering claim.",
+    "Only synthetic malformed PNG and valid 32px Canvas snapshot fixtures; no user images or personal data."
+  ]
+}

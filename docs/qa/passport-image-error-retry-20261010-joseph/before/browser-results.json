@@ -1,0 +1,139 @@
+{
+  "status": "REPRODUCED_FAILURE",
+  "phase": "before",
+  "application_source_sha256": "718325c5deab4c80088c789521d41bcb8d98bd04a14b3073d154dafa4d3e84ad",
+  "harness_bundle_sha256": "86a9b46a4ebf6d603d9390ffc3d52f6b51a4236e3d5dd718c508ad360775b2d5",
+  "harness_css_sha256": "f455acbc02ae6740a95b9ee2da3aeb77d70fdb906ae45ef504a55b7eb3c83387",
+  "checks": [
+    {
+      "name": "corrupt-data-uri-image-error-recovers",
+      "status": "FAIL",
+      "error": "Download button must unlock after a native image error\n\ntrue !== false\n",
+      "details": {
+        "disabled": true,
+        "label": "9:16 스토리 카드 생성 중...",
+        "native_image_events": [
+          {
+            "type": "error",
+            "trusted": true,
+            "complete": true,
+            "naturalWidth": 0,
+            "src": "data:image/png;base64,aW52YWxpZC1wbmc="
+          }
+        ],
+        "alerts": [],
+        "downloads": []
+      }
+    },
+    {
+      "name": "http-image-decode-error-recovers-wide",
+      "status": "FAIL",
+      "error": "Download button must unlock after a native image error\n\ntrue !== false\n",
+      "details": {
+        "disabled": true,
+        "label": "9:16 스토리 카드 생성 중...",
+        "native_image_events": [
+          {
+            "type": "error",
+            "trusted": true,
+            "complete": true,
+            "naturalWidth": 0,
+            "src": "http://127.0.0.1:10396/invalid-snapshot.png"
+          }
+        ],
+        "alerts": [],
+        "downloads": []
+      }
+    },
+    {
+      "name": "same-open-dialog-can-retry-with-valid-snapshot",
+      "status": "FAIL",
+      "error": "Download button must unlock after a native image error\n\ntrue !== false\n",
+      "details": {
+        "disabled": true,
+        "label": "9:16 스토리 카드 생성 중...",
+        "native_image_events": [
+          {
+            "type": "error",
+            "trusted": true,
+            "complete": true,
+            "naturalWidth": 0,
+            "src": "data:image/png;base64,aW52YWxpZC1wbmc="
+          }
+        ],
+        "alerts": [],
+        "downloads": []
+      }
+    },
+    {
+      "name": "valid-cached-snapshot-can-export-twice",
+      "status": "PASS",
+      "details": {
+        "first": {
+          "file": "valid-first.png",
+          "filename": "우주여권_QA Snapshot_갑자.png",
+          "bytes": 471799,
+          "sha256": "007ca073c0a85735884dffa07b87ff606c23ad2f9a4734d9c6feac68fa6cd21a",
+          "decoded_rgba_sha256": "8ec0529c482186b8fb7840b081ed689504d948d273fc422bf70097cf5ba03f2c",
+          "width": 1080,
+          "height": 1920
+        },
+        "second": {
+          "file": "valid-cached-second.png",
+          "filename": "우주여권_QA Snapshot_갑자.png",
+          "bytes": 471799,
+          "sha256": "007ca073c0a85735884dffa07b87ff606c23ad2f9a4734d9c6feac68fa6cd21a",
+          "decoded_rgba_sha256": "8ec0529c482186b8fb7840b081ed689504d948d273fc422bf70097cf5ba03f2c",
+          "width": 1080,
+          "height": 1920
+        },
+        "native_image_events": [
+          {
+            "type": "load",
+            "trusted": true,
+            "complete": true,
+            "naturalWidth": 32,
+            "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAYUlEQVR4AezVwQkAIQxE0WAJW8x2sFuiRViCJViMLWgJ/5CDIF+YUyAMD4Lla3WdTInDzwIKKIAC/X0iE7pyLEALsnMLKKCAAgoooAAK/GNGJvRdYwFakJ1bQIH7BehKNgAAAP//Nh/otAAAAAZJREFUAwCpmYDBoyPU8wAAAABJRU5ErkJggg=="
+          },
+          {
+            "type": "load",
+            "trusted": true,
+            "complete": true,
+            "naturalWidth": 32,
+            "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAYUlEQVR4AezVwQkAIQxE0WAJW8x2sFuiRViCJViMLWgJ/5CDIF+YUyAMD4Lla3WdTInDzwIKKIAC/X0iE7pyLEALsnMLKKCAAgoooAAK/GNGJvRdYwFakJ1bQIH7BehKNgAAAP//Nh/otAAAAAZJREFUAwCpmYDBoyPU8wAAAABJRU5ErkJggg=="
+          }
+        ]
+      }
+    },
+    {
+      "name": "missing-snapshot-fallback-still-exports",
+      "status": "PASS",
+      "details": {
+        "exported": {
+          "file": "no-snapshot-fallback.png",
+          "filename": "우주여권_QA Snapshot_갑자.png",
+          "bytes": 449171,
+          "sha256": "b898df6a1c009766e3b4bccc236eb47f78394765cb365d2942a71ad6bebc5db4",
+          "decoded_rgba_sha256": "50ceb937b5bbb5d322ab24f2ed27a6398576d1003608f2b88b97b2837f48508c",
+          "width": 1080,
+          "height": 1920
+        }
+      }
+    }
+  ],
+  "passed": 2,
+  "failed": 3,
+  "browser_version": "154.0.8037.98",
+  "page_errors": [],
+  "outbound_requests": [],
+  "console_errors": [],
+  "native_image_error_fixture": "Real trusted Chromium image decode errors; no synthetic dispatch and no stubbed Image load/error or Canvas.",
+  "star_randomness_seeded_for_pixel_comparison": true,
+  "api_calls": 0,
+  "database_reads_or_writes": 0,
+  "auth_or_clipboard_permissions_changed": false,
+  "limits": [
+    "Actual current React component bundled in production mode with actual Tailwind styles; no built full-app route, hosted auth, live DB, physical device or model rendering claim.",
+    "Only synthetic malformed PNG and valid 32px Canvas snapshot fixtures; no user images or personal data."
+  ]
+}

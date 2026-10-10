@@ -1,0 +1,6 @@
+{
+  "command": "npm run build (isolated empty npm configs)",
+  "exit_code": 1,
+  "own_fresh_build": true,
+  "auth_db_and_deploy_commands_run": false
+}

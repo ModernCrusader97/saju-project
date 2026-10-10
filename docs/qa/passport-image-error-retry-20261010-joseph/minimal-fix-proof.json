@@ -1,0 +1,15 @@
+{
+  "status": "PASS_MINIMAL_IMAGE_ERROR_REJECTION_FIX",
+  "branch": "fix/passport-image-error-retry-20261010-joseph",
+  "basis": "61f1a3dbcc3e4d991198b64e0a624c208ccf8b58",
+  "product_file": "components/planet/CosmicPassportModal.tsx",
+  "before_sha256": "718325c5deab4c80088c789521d41bcb8d98bd04a14b3073d154dafa4d3e84ad",
+  "after_sha256": "92cf1fc79c00316d0820c05b4e68595f3e6c6ced9da22ad1e8830a185b2ec2c6",
+  "old_block": "        img.src = planetSnapshotUrl;\r\n        await new Promise((res) => (img.onload = res));",
+  "new_block": "        await new Promise<void>((resolve, reject) => {\r\n          img.onload = () => resolve();\r\n          img.onerror = () => reject(new Error(\"Passport snapshot could not be loaded.\"));\r\n          img.src = planetSnapshotUrl;\r\n        });",
+  "reverse_patch_byte_exact": true,
+  "source_bytes_outside_image_load_promise_unchanged": true,
+  "ui_labels_styles_title_share_dialog_model_api_auth_db_untouched": true,
+  "cause": "The actual native Image error event never settled a load-only promise, so existing catch/finally never ran and downloading stayed true. Rejecting on error reaches the existing alert and state-reset path.",
+  "native_failure_reproduced": true
+}

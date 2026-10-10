@@ -1,0 +1,60 @@
+{
+  "status": "PASS_ONE_DISTINCT_UI_IMAGE_ERROR_FIX",
+  "host": "Joseph",
+  "basis": "61f1a3dbcc3e4d991198b64e0a624c208ccf8b58",
+  "branch": "fix/passport-image-error-retry-20261010-joseph",
+  "problem": "A native snapshot image load/decode error leaves the PNG save promise pending. Existing catch/finally never executes and the save button stays disabled.",
+  "fix": "Register load and error handlers before src; reject on image error so the existing error alert and loading-state reset execute.",
+  "before": {
+    "passed": 2,
+    "failed": 3
+  },
+  "after": {
+    "passed": 5,
+    "failed": 0
+  },
+  "actual_browser": "154.0.8037.98",
+  "viewports": [
+    390,
+    1440
+  ],
+  "native_image_error_is_trusted": true,
+  "canvas_png_dimensions": [
+    1080,
+    1920
+  ],
+  "normal_successful_exports_byte_and_pixel_identical": 3,
+  "css_sha256": "f455acbc02ae6740a95b9ee2da3aeb77d70fdb906ae45ef504a55b7eb3c83387",
+  "unexpected_page_errors": 0,
+  "outbound_requests": 0,
+  "api_requests": 0,
+  "database_operations": 0,
+  "types": {
+    "exit_code": 0,
+    "nonincremental": true,
+    "after_own_build": true
+  },
+  "build": {
+    "exit_code": 0,
+    "command": "npm run build (isolated empty npm configs)",
+    "own_fresh_build": true
+  },
+  "lint": {
+    "errors": 0,
+    "existing_product_warnings": 2,
+    "new_qa_warnings": 0,
+    "suppressions_or_rule_overrides": false
+  },
+  "visual_review": [
+    "before/data-error-390.png",
+    "after/data-error-390.png"
+  ],
+  "scope": "docs/qa/passport-image-error-retry-20261010-joseph",
+  "limits": [
+    "Actual current React component bundled in production mode with actual Tailwind styles; no built full-app route, hosted auth, live DB, physical device or model rendering claim.",
+    "Only synthetic malformed PNG and valid 32px Canvas snapshot fixtures; no user images or personal data."
+  ],
+  "initial_setup_failures_retained_under": "diagnostic",
+  "repo_visibility": "private; fresh connected GitHub GET verified",
+  "remaining_blockers": []
+}

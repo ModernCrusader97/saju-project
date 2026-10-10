@@ -1,0 +1,37 @@
+{
+  "status": "PASS_ORIGINAL_RAW_LOG_BYTES_PRESERVED",
+  "raw_logs": [
+    {
+      "hash": "3a7c634e1ff0544aa83e2db50ceea74ce789186ed1f3dbf427ec30c2a5eef81d",
+      "file": "after-native-browser-process.log"
+    },
+    {
+      "hash": "254a7a6c87f73c9db12202be7151c3b5b1308d352bdfd54a70f67e099be63b35",
+      "file": "before-native-browser-process.log"
+    },
+    {
+      "hash": "2a19bbf17d0e8b3e4eacc9a480f7c107cd0f9ddfb514031af9e20914679e7ee7",
+      "file": "diagnostic/initial-build-missing-inputs.log"
+    },
+    {
+      "hash": "bb4b2c0f8219691f029b930f1f5620cb3c44557eabb7b151fa9f0da801ae244c",
+      "file": "diagnostic/initial-bundle-incomplete-dependency.log"
+    },
+    {
+      "hash": "73164391211374533b38d7e016eaa5e8b92f0fd4a458edf9f975d5eda6bef1ce",
+      "file": "diagnostic/initial-types-missing-inputs.log"
+    },
+    {
+      "hash": "47455473f5e2ab8f1b5418c578dc1d78e7f28c15c14f61490c5cc9a50d2dda53",
+      "file": "production-build-complete-inputs.log"
+    },
+    {
+      "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "file": "types-after-complete-build.log"
+    }
+  ],
+  "initial_staged_check_exit": 2,
+  "initial_check_scope": "Only trailing whitespace emitted by original Vite/build error and route-table output",
+  "change": "Only per-evidence-folder .gitattributes: *.log -text -diff. No raw log bytes, product/QA code, lint rules, global Git settings or regression results changed.",
+  "source_qa_document_whitespace_check_required": true
+}
