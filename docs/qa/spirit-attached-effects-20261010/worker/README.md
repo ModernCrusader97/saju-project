@@ -60,3 +60,12 @@ and no actual-character 壬 spray/foam remain the documented implementation scop
 No production source or asset changed after this tested build; final preservation
 commits add only QA scripts/evidence/documentation. Publication is a subsequent
 existing owner-only Site operation, whose result must be checked separately.
+
+Publication follow-up: existing owner-only Site **v31 succeeded**, source
+`a4011b690078001b148403a923735368b9768835`; access/auth remain unchanged.
+[Native receipt](../site-deployment.json), [submitted compiled package](../site-package.json)
+and [private source readback](../github-source-readback.json) preserve exact provenance.
+The Native service re-serializes the stored tar; its stored archive hash differs
+from the submitted tar, and whole-tar byte identity is not claimed. Hosted
+signed-in visual verification remains unrun. This follow-up changes only evidence;
+no additional Site version is published for documentation.

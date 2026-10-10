@@ -376,9 +376,19 @@
       "sha256": "7a0d87a79b465f0c28043b1e5c96a319309260a7c2eb60a929182c95c95905c3"
     },
     {
+      "file": "github-source-readback.json",
+      "bytes": 457,
+      "sha256": "bc68b77f135dd708908b4a92719dd835004e2c49dde7f36cdd64c08af9c3ea3f"
+    },
+    {
       "file": "motion-cpu.json",
       "bytes": 5025,
       "sha256": "8f567d84d6cf1ef664386f83724b52ba4bf7f7fc0ef864e963538ad9585ebae6"
+    },
+    {
+      "file": "native-source-push.json",
+      "bytes": 461,
+      "sha256": "0558a2879251712b914c48f8aef1c634c08245dd951cc2fca6bc671a3023c037"
     },
     {
       "file": "preservation-final.json",
@@ -446,6 +456,16 @@
       "sha256": "2c25e2f68f95d385f8613b71f3d070b37f7fe56760df75e9d5cac67daa32d3b0"
     },
     {
+      "file": "site-deployment.json",
+      "bytes": 2244,
+      "sha256": "cac811322422063e07f3a974d02d598a2371954fcf7a6d2eed3f3ad201631028"
+    },
+    {
+      "file": "site-package.json",
+      "bytes": 35063,
+      "sha256": "89929c044cc596541ddd0be505bb286cd69d930c83bf6ade3c498920cc2eb6aa"
+    },
+    {
       "file": "triangle-walk.json",
       "bytes": 11330,
       "sha256": "5fee7a07cf08e0df18d20bed3ae7472de3ab0988d370a40ea42e39a28d76acf8"
@@ -457,8 +477,8 @@
     },
     {
       "file": "verification.json",
-      "bytes": 3851,
-      "sha256": "07c67b7c096997b72c3547cf31c3e45b34c689ca5f7c158d0db8a9365e4bc156"
+      "bytes": 4041,
+      "sha256": "22c83bcc9da3ea601ebddfa3bb1c0d41906477d57048012ef81b06ee53aa908a"
     },
     {
       "file": "worker-pre-room-cleanup/README.md",
@@ -702,8 +722,8 @@
     },
     {
       "file": "worker/README.md",
-      "bytes": 4011,
-      "sha256": "d43bf2008aad6585054632daf9f30cd50fdce634872d6ba78086a13c18d6d41b"
+      "bytes": 4641,
+      "sha256": "40e64a8f4f2e8e26d2cbd3e0f377961ea89b605c985a4b1e8434e08f3e22a975"
     },
     {
       "file": "worker/galaxy-entry-report.json",

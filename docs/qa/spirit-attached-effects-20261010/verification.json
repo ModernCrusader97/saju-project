@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "candidateOnly": true,
+  "candidateOnly": false,
   "exactWorkerUI": {
     "status": "PASS",
     "passed": 19,
@@ -18,9 +18,15 @@
     "normalPreEnvironmentChecks": 2
   },
   "siteDeployment": {
-    "status": "NOT_RUN_AT_RECORD_TIME",
-    "scope": "existing owner-only Site; publication follows private source preservation",
-    "siteId": "appgprj_6ac0409a78688191a04e4997548f9e5b"
+    "status": "PASS",
+    "scope": "existing owner-only Site",
+    "siteId": "appgprj_6ac0409a78688191a04e4997548f9e5b",
+    "version": 31,
+    "sourceCommitSHA": "a4011b690078001b148403a923735368b9768835",
+    "report": "site-deployment.json",
+    "accessPolicyUnchanged": true,
+    "authClientUnchanged": true,
+    "envSetRevision": 6
   },
   "CPU": {
     "tenStemActualGLB": 25,
@@ -97,7 +103,7 @@
     "workerBindings": "PASS",
     "cpuSuccessAndFailureOwnership": "PASS"
   },
-  "releaseReadiness": "PASS; verified local production artifact, publication not run at record time",
+  "releaseReadiness": "PASS; exact local production Worker19/Galaxy8, private source preserved, Native owner-only v31 deployment confirmed",
   "roomEnvironmentNativeCleanup": {
     "status": "PASS",
     "checks": 2,

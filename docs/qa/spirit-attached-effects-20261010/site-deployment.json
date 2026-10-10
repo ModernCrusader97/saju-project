@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "project_id": "appgprj_6ac0409a78688191a04e4997548f9e5b",
+  "versionNumber": 31,
+  "version_id": "appgprj_6ac0409a78688191a04e4997548f9e5b~appgver_98da456fb150819194c2e09b9ac47b32",
+  "deployment_id": "appgdep_6ac9b2ac0370819198023ecb84de962c",
+  "deploymentStatus": "succeeded",
+  "deploymentUpdatedAt": "2026-10-10T03:36:28.592890+00:00",
+  "url": "https://saju-planet-lab.whdtjr970717.chatgpt.site",
+  "sourceCommitSHA": "a4011b690078001b148403a923735368b9768835",
+  "envSetRevision": 6,
+  "ownerOnly": true,
+  "accessPolicyUnchanged": true,
+  "authClientUnchanged": true,
+  "accessPolicyRevision": 1,
+  "allowedUsers": 1,
+  "allowedGroups": 0,
+  "allowedEditors": 0,
+  "externalVisitors": 0,
+  "storedArchive": {
+    "format": "tar",
+    "hash": "sha256:54dee3336dd758a2e7f9659de57aa29994d953d94c146bf882188db05e4bd65d",
+    "bytes": 50923520,
+    "files": 185
+  },
+  "priorVersions": [
+    {
+      "version": 29,
+      "id": "appgprj_6ac0409a78688191a04e4997548f9e5b~appgver_d1d300c3b52c8191a6aaee464825cccc",
+      "sourceCommitSHA": "aa41b1a3601c5254c28bc5a4c853cd5efa50c5cc",
+      "storedArchiveHash": "sha256:6f495383e5b839945ede58d4ca819592d8b1c1b15c4f3002e8630a72bc6b7b2a",
+      "preserved": true
+    },
+    {
+      "version": 30,
+      "id": "appgprj_6ac0409a78688191a04e4997548f9e5b~appgver_6af82148ff88819194210a2faca948d2",
+      "sourceCommitSHA": "a5535893645f35d4000ec773bff61caef19463cf",
+      "storedArchiveHash": "sha256:0fb1c6d522b83467606da543f74755ecdb60e91e50cfc2c6ed34e3972c5481c7",
+      "preserved": true
+    }
+  ],
+  "hostedSignedInVisual": "NOT_RUN",
+  "physicalDeviceGPU": "NOT_RUN",
+  "sourcePackageProof": "site-package.json",
+  "limits": [
+    "Stored Native archive is re-serialized and has a different tar hash from the submitted local package; archive byte identity is not claimed.",
+    "Exact local production Worker19/Galaxy8 were checked before publication. Hosted sign-in visual was not inspected; earlier403 was not retried or bypassed.",
+    "No fashion or new tiger was deployed; no GitHub main/PR/maint branch, access/auth/storage schema or actual DB change."
+  ],
+  "nativeSourceProof": "native-source-push.json",
+  "privateSourceProof": "github-source-readback.json"
+}
