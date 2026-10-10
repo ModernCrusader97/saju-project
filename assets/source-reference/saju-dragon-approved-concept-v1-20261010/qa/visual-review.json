@@ -1,0 +1,28 @@
+{
+  "status": "PASS_ACTUAL_RENDER_VISUAL_REVIEW",
+  "rendered_glb_sha256": "6e4270709ea0305b4e4caeb26e4fbc683565e6739bd71bcb92b7cb5447147282",
+  "reviewed": [
+    "native front / three-quarter / side at 900x900",
+    "actual GLB-reimport three-quarter render",
+    "actual MP4 decoded full 6-second loop contact sheet",
+    "actual MP4 decoded repeated 5.5s-to-7.5s loop-boundary contact sheet"
+  ],
+  "observations": [
+    "Rounded cheeks and short snout; closed smile without fangs",
+    "Four short paws remain attached to the continuous skin",
+    "No observed flipped face, severe joint collapse, floating body seam, or sudden loop jump",
+    "Gentle float with small head and tail motion"
+  ],
+  "video": {
+    "bytes": 250628,
+    "sha256": "6cfeb0153ff1b5ab232cb1b9d2356d01ed0e76f9cb16df22ba38c60f92228400",
+    "seconds": 6,
+    "fps": 12,
+    "frames": 72
+  },
+  "browser_playback": {
+    "status": "NOT_RUN_TOOL_RUNTIME_UNAVAILABLE",
+    "reason": "cua_repl kernel could not start: Windows platform directory HRESULT 0x80070003",
+    "fallback": "Decoded the actual MP4 and visually inspected its full-cycle and repeated-boundary pixels; no browser playback success claim."
+  }
+}

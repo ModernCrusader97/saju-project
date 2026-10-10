@@ -1,0 +1,12 @@
+{
+  "status": "PASS_PACKED_SOURCE_BYTES",
+  "reference_bytes": 1651398,
+  "reference_sha256": "6184555091c80769d6553ae40641dbb44eb6dcc859dd0b8591b7887cc1502e58",
+  "pixels": [
+    1254,
+    1254
+  ],
+  "embedded_generator_matches_delivered_script": true,
+  "generator_sha256": "1779ea7ba6a77c3f6f5ea3a98a5991c1bf9aa26c7b3ce96294cf221e887f8b5b",
+  "blend_sha256": "85b208cae6c134ceea2170906abcf1716b2a2d980ea2607b4cbaa269be1dcaaf"
+}

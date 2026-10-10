@@ -1,0 +1,22 @@
+{
+  "status": "PASS_TYPES_AND_PRODUCTION_BUILD",
+  "source_commit": "2e2d82b05f87b39ff8057ae914e8dfa01100a974",
+  "installation": {
+    "command": "npm run install:ci",
+    "exit_code": 0,
+    "lockfile_changed": false,
+    "isolated_checkout": true
+  },
+  "typecheck": {
+    "command": "node node_modules/typescript/lib/tsc.js --noEmit --incremental false",
+    "exit_code": 0
+  },
+  "build": {
+    "command": "npm run build",
+    "exit_code": 0,
+    "output": "build.log",
+    "routes_classification_warning": true
+  },
+  "scope": "Only this new source-reference candidate folder is added; no application source, product default, existing model, auth, payment, or deployment modification.",
+  "validation_scope": "Local build and CPU asset checks; no deployed or mobile GPU runtime claim."
+}

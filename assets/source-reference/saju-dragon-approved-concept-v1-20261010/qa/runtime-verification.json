@@ -1,0 +1,41 @@
+{
+  "status": "PASS_GLTFLOADER_ANIMATIONMIXER",
+  "generator": "Khronos glTF Blender I/O v5.2.40",
+  "sha256": "6e4270709ea0305b4e4caeb26e4fbc683565e6739bd71bcb92b7cb5447147282",
+  "bytes": 4200544,
+  "tests": {
+    "meshCount": 10,
+    "skinCount": 1,
+    "boneCount": 13,
+    "animationName": "Idle_Loop",
+    "animationSeconds": 6,
+    "externalBuffers": 0,
+    "externalImages": 0,
+    "triangles": 129212,
+    "vertices": 65913,
+    "invalidNormals": 0,
+    "invalidWeights": 0,
+    "nonFinitePositions": 0,
+    "zeroAreaTriangles": 0,
+    "exactEndPoseError": 6.283966303950071e-7,
+    "loopBoundaryVelocityDifference": 0.0058312302299247595,
+    "maxMotion": 0.26143714195525386,
+    "sampledVertices": 8580,
+    "sampledFrames": 145,
+    "animatedBoundsYUp": {
+      "min": [
+        -2.5111902628274256,
+        -0.0005447174280784409,
+        -0.6313199163056786
+      ],
+      "max": [
+        3.0495701410726377,
+        4.480399825788696,
+        0.9811247886651885
+      ]
+    }
+  },
+  "limits": [
+    "CPU geometry/runtime verification; no deployed product or mobile GPU performance claim."
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "status": "FIRST_MODEL_GENERATED_REVIEW_PENDING",
+  "blender_version": "5.2.1 LTS",
+  "reference_sha256": "6184555091c80769d6553ae40641dbb44eb6dcc859dd0b8591b7887cc1502e58",
+  "reference_bytes": 1651398,
+  "mesh_objects": 10,
+  "native_editable_mesh_objects": 71,
+  "triangles_native": 129212,
+  "belly_is_single_skin_vertex_color": true,
+  "fitted_eye_caps": true,
+  "connected_skin_vertices": 31730,
+  "connected_skin_polygons": 44854,
+  "bones": 13,
+  "frame_start": 0,
+  "frame_end": 144,
+  "fps": 24,
+  "loop_seconds": 6,
+  "candidate_only": true,
+  "old_dragon_imported": false,
+  "wings": 0,
+  "paws": 4,
+  "fangs": 0
+}

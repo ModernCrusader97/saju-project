@@ -1,0 +1,18 @@
+00:01.688  blend            | Read blend: "D:\Codex\Results\SaJuDragonApproved20261010-Joseph\model-v07\SaJu_Dragon_Approved_Candidate_v1.blend"
+03:23:15 | INFO: Data are loaded, start creating Blender stuff
+03:23:15 | INFO: Blender create Mesh node Sphere.035
+03:23:16 | INFO: Blender create Mesh node Belly_Fold_00_Mesh.001
+03:23:16 | INFO: Blender create Mesh node Eye_Soft_Lid_-1_Mesh.001
+03:23:16 | INFO: Blender create Mesh node Continuous_Body_Seed_Mesh.002
+03:23:16 | INFO: Blender create Mesh node Ear_Ivory_Inset_-1_Mesh.001
+03:23:16 | INFO: Blender create Mesh node Eye_White_-1_Mesh.001
+03:23:16 | INFO: Blender create Mesh node Eye_Brown_-1_Mesh.001
+03:23:16 | INFO: Blender create Mesh node Head_Mane_00_Mesh.001
+03:23:16 | INFO: Blender create Mesh node Sphere.036
+03:23:16 | INFO: Blender create Mesh node Gentle_Closed_Smile_Mesh.001
+03:23:16 | INFO: glTF import finished in 0.30s
+00:30.391  render           | Saved: 'D:\Codex\Results\SaJuDragonApproved20261010-Joseph\native-glb-delivery-qa\glb-reimport-threequarter.png'
+NATIVE_GLB_QA_PASS {"continuous_skin_components": 1, "skin_weights_normalized": true, "bones": 13, "vertex_color_on_same_skin": true, "native_loop_max_vertex_error": 0.0, "sampled_edge_length_ratio": [0.8234983872031365, 1.1112071347390755], "sampled_skin_motion_max": 0.18077200986393124, "sampled_frames": [0, 36, 72, 108, 144], "sampled_edge_count": 8510, "invalid_native_vertex_normals": 0, "native_sampled_bounds_zup": {"min": [-2.5125269889831543, -0.9838031530380249, -0.006234601140022278], "max": [3.044689178466797, 0.6355525255203247, 4.4970526695251465]}, "importer_control_objects_excluded": ["Icosphere"], "glb_import_mesh_count": 10, "glb_roundtrip_max_nearest_vertex_error": {"0": 1.8345721173318452e-06, "36": 2.869083118639537e-06, "72": 2.135719114448875e-06, "108": 2.846862798833172e-06, "144": 1.8345721173318452e-06}, "glb_source_geometry_preserved": true, "glb_animation_reimported": true, "glb_actual_render": "glb-reimport-threequarter.png"}
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit
