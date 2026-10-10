@@ -1,0 +1,222 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-10-10T01:31:29.197233+00:00",
+  "supersedes": "Initial fire captures had native v30 delta=0/material time 0 vs candidate absolute time 2.25; those initial images cannot support an equal-time visual claim.",
+  "before": {
+    "commit": "a5535893645f35d4000ec773bff61caef19463cf",
+    "loaderSHA256": "5da840b01972fba1f388f0edb3d4d796c680a99d9d002c4a0099f72c27f338aa",
+    "material": "living:병인"
+  },
+  "after": {
+    "workingTreeBaseCommit": "ee6e9740054394b0bee30563f35e957b49adf4bb",
+    "loaderSHA256": "d352f7d268ae0326bb25b0bb5bc060640b2c6156382fc4369fa68b8049e78b2c",
+    "material": "丙 · Solar fire"
+  },
+  "harnessSHA256": "a441204812202d0c8e5b4d0eb7ab1d95a055045b076710aecc2f2964174b049b",
+  "sameGeometrySHA256": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+  "sameUV_SHA256": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+  "samePresentationDepth": 1.35,
+  "sameNeutralMorphs": [
+    0
+  ],
+  "frames": [
+    {
+      "file": "fire-front.png",
+      "diagnostic": false,
+      "conditionsExactlyEqual": true,
+      "beforeClock": {
+        "uniform": "uLsTime",
+        "resetSeconds": 0,
+        "steps": 135,
+        "deltaSeconds": 0.016666666666666666,
+        "targetSeconds": 2.25,
+        "materialSeconds": 2.249999999999997,
+        "uploadedSeconds": 2.25,
+        "effectClocks": []
+      },
+      "afterClock": {
+        "uniform": "uStemTime",
+        "resetSeconds": 0,
+        "steps": 135,
+        "deltaSeconds": 0.016666666666666666,
+        "targetSeconds": 2.25,
+        "materialSeconds": 2.25,
+        "uploadedSeconds": 2.25,
+        "effectClocks": [
+          {
+            "name": "SoftSolarFireWisps",
+            "seconds": 2.25
+          }
+        ]
+      },
+      "beforePNG_SHA256": "ba7d2a4838e69e0de2f5f44fd4ca769603eb70a3d2f0a30153fa08743cf7dcce",
+      "afterPNG_SHA256": "727360f27673a94668e7697fa9c09ad5e24b7e4097d98f8d3f802b43635862d9"
+    },
+    {
+      "file": "coordinates-front.png",
+      "diagnostic": true,
+      "conditionsExactlyEqual": true,
+      "beforeClock": {
+        "uniform": "uLsTime",
+        "resetSeconds": 0,
+        "steps": 135,
+        "deltaSeconds": 0.016666666666666666,
+        "targetSeconds": 2.25,
+        "materialSeconds": 2.249999999999997,
+        "uploadedSeconds": 2.25,
+        "effectClocks": []
+      },
+      "afterClock": {
+        "uniform": "uStemTime",
+        "resetSeconds": 0,
+        "steps": 135,
+        "deltaSeconds": 0.016666666666666666,
+        "targetSeconds": 2.25,
+        "materialSeconds": 2.25,
+        "uploadedSeconds": 2.25,
+        "effectClocks": [
+          {
+            "name": "SoftSolarFireWisps",
+            "seconds": 2.25
+          }
+        ]
+      },
+      "beforePNG_SHA256": "c5ad797d0ff29d9757c1dd0b7193d9a9c9af2932092c4f9abc147620ed6db8af",
+      "afterPNG_SHA256": "0f461aede86b742c308af526369542560994b6b835d9bb81d940249278736216"
+    },
+    {
+      "file": "fire-oblique.png",
+      "diagnostic": false,
+      "conditionsExactlyEqual": true,
+      "beforeClock": {
+        "uniform": "uLsTime",
+        "resetSeconds": 0,
+        "steps": 135,
+        "deltaSeconds": 0.016666666666666666,
+        "targetSeconds": 2.25,
+        "materialSeconds": 2.249999999999997,
+        "uploadedSeconds": 2.25,
+        "effectClocks": []
+      },
+      "afterClock": {
+        "uniform": "uStemTime",
+        "resetSeconds": 0,
+        "steps": 135,
+        "deltaSeconds": 0.016666666666666666,
+        "targetSeconds": 2.25,
+        "materialSeconds": 2.25,
+        "uploadedSeconds": 2.25,
+        "effectClocks": [
+          {
+            "name": "SoftSolarFireWisps",
+            "seconds": 2.25
+          }
+        ]
+      },
+      "beforePNG_SHA256": "0b7b0214072ed951474532251d30bb1458760be424d9bc6db395feaec3ed92bc",
+      "afterPNG_SHA256": "d5272961dd7669daca473d07f99d82f3b005de8856cd9e8c598766ff4aedcaa6"
+    },
+    {
+      "file": "coordinates-oblique.png",
+      "diagnostic": true,
+      "conditionsExactlyEqual": true,
+      "beforeClock": {
+        "uniform": "uLsTime",
+        "resetSeconds": 0,
+        "steps": 135,
+        "deltaSeconds": 0.016666666666666666,
+        "targetSeconds": 2.25,
+        "materialSeconds": 2.249999999999997,
+        "uploadedSeconds": 2.25,
+        "effectClocks": []
+      },
+      "afterClock": {
+        "uniform": "uStemTime",
+        "resetSeconds": 0,
+        "steps": 135,
+        "deltaSeconds": 0.016666666666666666,
+        "targetSeconds": 2.25,
+        "materialSeconds": 2.25,
+        "uploadedSeconds": 2.25,
+        "effectClocks": [
+          {
+            "name": "SoftSolarFireWisps",
+            "seconds": 2.25
+          }
+        ]
+      },
+      "beforePNG_SHA256": "680d38c0eef51ce02dbe61098ae229817a14c2f82b938e2969f4db32881f6ed0",
+      "afterPNG_SHA256": "57d866fd5ae9b4aff384ca80e5f636722457e610733a802b26cb7fbd248703f1"
+    },
+    {
+      "file": "fire-side.png",
+      "diagnostic": false,
+      "conditionsExactlyEqual": true,
+      "beforeClock": {
+        "uniform": "uLsTime",
+        "resetSeconds": 0,
+        "steps": 135,
+        "deltaSeconds": 0.016666666666666666,
+        "targetSeconds": 2.25,
+        "materialSeconds": 2.249999999999997,
+        "uploadedSeconds": 2.25,
+        "effectClocks": []
+      },
+      "afterClock": {
+        "uniform": "uStemTime",
+        "resetSeconds": 0,
+        "steps": 135,
+        "deltaSeconds": 0.016666666666666666,
+        "targetSeconds": 2.25,
+        "materialSeconds": 2.25,
+        "uploadedSeconds": 2.25,
+        "effectClocks": [
+          {
+            "name": "SoftSolarFireWisps",
+            "seconds": 2.25
+          }
+        ]
+      },
+      "beforePNG_SHA256": "cf3d225546d28a1927da622c3208d4ee8d3e672df4af14900eeb60067ff3e506",
+      "afterPNG_SHA256": "34592115cebd5979bdfef1204d4de44507a20a278d9c603159baa43ae2a24ecc"
+    },
+    {
+      "file": "coordinates-side.png",
+      "diagnostic": true,
+      "conditionsExactlyEqual": true,
+      "beforeClock": {
+        "uniform": "uLsTime",
+        "resetSeconds": 0,
+        "steps": 135,
+        "deltaSeconds": 0.016666666666666666,
+        "targetSeconds": 2.25,
+        "materialSeconds": 2.249999999999997,
+        "uploadedSeconds": 2.25,
+        "effectClocks": []
+      },
+      "afterClock": {
+        "uniform": "uStemTime",
+        "resetSeconds": 0,
+        "steps": 135,
+        "deltaSeconds": 0.016666666666666666,
+        "targetSeconds": 2.25,
+        "materialSeconds": 2.25,
+        "uploadedSeconds": 2.25,
+        "effectClocks": [
+          {
+            "name": "SoftSolarFireWisps",
+            "seconds": 2.25
+          }
+        ]
+      },
+      "beforePNG_SHA256": "3915e15d75bcf75f74e4bd76b876a20547c30a9b09f3b6b508ddee31ea51e55a",
+      "afterPNG_SHA256": "ea7e1d62a9d3d606996413e530ebedc8cc9bb5d5692b903ca0f50b4b4843db41"
+    }
+  ],
+  "limitations": [
+    "Fire images compare the complete native and candidate runtime recipes, including candidate flame effects. They do not isolate only the coordinate change or establish artistic approval.",
+    "Independent Jacobian/coordinate-grid evidence measures coordinate density; the coordinate grid replaces runtime shading.",
+    "This surface harness has shadows disabled; separate fire-shadow evidence enables actual Canvas shadows.",
+    "Local Chromium SwiftShader; no hosted authentication or physical mobile GPU."
+  ]
+}

@@ -3,11 +3,16 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
+import { createHash } from 'node:crypto';
+import { execFileSync } from 'node:child_process';
 import { createServer } from 'vite';
 
 const root = process.cwd(), phase = process.env.SAJU_QA_PHASE || 'after';
 assert(['before', 'after'].includes(phase));
 const output = path.join(root, 'outputs/spirit-fire-surface', phase);
+const sourceCommit = execFileSync('git', ['rev-parse', 'HEAD'], { cwd: root, encoding: 'utf8' }).trim();
+const harnessSHA256 = createHash('sha256').update(await fs.readFile(new URL(import.meta.url))).digest('hex');
+const loaderSHA256 = createHash('sha256').update(await fs.readFile(path.join(root, 'lib/planet/approved-jade-spirit.ts'))).digest('hex');
 await fs.mkdir(output, { recursive: true });
 const harness = path.join(output, 'harness.mjs');
 await fs.writeFile(harness, `
@@ -24,6 +29,16 @@ const camera=new THREE.PerspectiveCamera(38,1,.1,40);camera.position.set(0,1.7,5
 const errors=[];renderer.debug.onShaderError=(gl,p,v,f)=>errors.push({program:gl.getProgramInfoLog(p),vertex:gl.getShaderInfoLog(v),fragment:gl.getShaderInfoLog(f)});
 const spirit=await loadApprovedSpirit('병인','병인','high');scene.add(spirit.group);
 const body=spirit.bodyMesh,original=body.material,rest=body.geometry.getAttribute('stemRestPosition');
+let clock,clockName;const compile=original.onBeforeCompile;
+original.onBeforeCompile=function(shader,...args){compile.call(this,shader,...args);clockName=shader.uniforms.uStemTime?'uStemTime':'uLsTime';clock=shader.uniforms[clockName];};
+// Compile the actual runtime material before observing its shader clock.
+renderer.render(scene,camera);
+if(!clock)throw new Error('Runtime fire shader has no observable material clock.');
+const gpuClock=()=>{const program=renderer.properties.get(original).currentProgram.program;const gl=renderer.getContext();return gl.getUniform(program,gl.getUniformLocation(program,clockName));};
+const conditions=()=>({camera:{fov:camera.fov,aspect:camera.aspect,near:camera.near,far:camera.far,position:camera.position.toArray(),worldMatrix:camera.matrixWorld.toArray(),projectionMatrix:camera.projectionMatrix.toArray()},
+ lights:scene.children.filter(o=>o.isLight).map(o=>({type:o.type,color:o.color.getHexString(),intensity:o.intensity,position:o.position.toArray(),castShadow:o.castShadow,groundColor:o.groundColor?.getHexString()})),
+ renderer:{toneMapping:renderer.toneMapping,exposure:renderer.toneMappingExposure,outputColorSpace:renderer.outputColorSpace,shadowMapEnabled:renderer.shadowMap.enabled},
+ model:{position:spirit.avatarPivot.position.toArray(),scale:spirit.avatarPivot.scale.toArray(),rotation:spirit.avatarPivot.rotation.toArray(),bodyWorldMatrix:body.matrixWorld.toArray()}});
 const diagnostic=new THREE.MeshBasicMaterial({color:0xffffff,side:THREE.DoubleSide,toneMapped:false});
 diagnostic.customProgramCacheKey=()=>rest?'qa-rest-density':'qa-radial-density';
 diagnostic.onBeforeCompile=s=>{
@@ -36,8 +51,15 @@ diagnostic.onBeforeCompile=s=>{
 const hash=async array=>[...new Uint8Array(await crypto.subtle.digest('SHA-256',new Uint8Array(array.buffer,array.byteOffset,array.byteLength)))].map(x=>x.toString(16).padStart(2,'0')).join('');
 window.fireQA={async metadata(){return{material:original.name,kind:original.defines?.STEM_KIND,program:original.customProgramCacheKey(),restCoordinateVertices:rest?.count??0,presentationDepth:spirit.avatarPivot.scale.z,
  positionSHA256:await hash(body.geometry.getAttribute('position').array),uvSHA256:await hash(body.geometry.getAttribute('uv').array),morphs:body.morphTargetInfluences,
- petStatus:spirit.zodiacPet.userData.assetStatus,authoredPetStatus:spirit.zodiacPet.userData.authoredAssetStatus??'not-tracked-in-v30',effects:spirit.propGroup.children.map(x=>x.name)};},
- frame(angle,diagnosis){body.material=diagnosis?diagnostic:original;spirit.propGroup.visible=!diagnosis;spirit.zodiacPet.visible=!diagnosis;spirit.avatarPivot.rotation.y=angle;spirit.update(2.25,0,camera);renderer.render(scene,camera);return{draws:renderer.info.render.calls,errors};},
+ petStatus:spirit.zodiacPet.userData.assetStatus,authoredPetStatus:spirit.zodiacPet.userData.authoredAssetStatus??'not-tracked-in-v30',effects:spirit.propGroup.children.map(x=>x.name),clockUniform:clockName,initialMaterialSeconds:clock.value};},
+ frame(angle,diagnosis){body.material=original;spirit.propGroup.visible=true;spirit.zodiacPet.visible=true;spirit.reset();const resetSeconds=clock.value;
+ spirit.avatarPivot.rotation.y=angle;for(let step=1;step<=135;step++)spirit.update(step/60,1/60,camera);
+ // Both APIs now reach 2.25 actual material seconds. Upload the runtime uniform
+ // even when the final screenshot uses the independent coordinate diagnostic.
+ renderer.render(scene,camera);const uploadedSeconds=gpuClock();
+ if(diagnosis){body.material=diagnostic;spirit.propGroup.visible=false;spirit.zodiacPet.visible=false;renderer.render(scene,camera);}
+ const effectClocks=[];spirit.propGroup.traverse(o=>{if(o.material?.uniforms?.uTime)effectClocks.push({name:o.name,seconds:o.material.uniforms.uTime.value});});
+ return{draws:renderer.info.render.calls,errors,clock:{uniform:clockName,resetSeconds,steps:135,deltaSeconds:1/60,targetSeconds:2.25,materialSeconds:clock.value,uploadedSeconds,effectClocks},conditions:conditions()};},
  dispose(){body.material=original;diagnostic.dispose();spirit.dispose();renderer.render(scene,camera);return {...renderer.info.memory};}};
 `);
 const server = await createServer({ root, configFile: false, logLevel: 'error', server: { host: '127.0.0.1', port: 0 }, optimizeDeps: { noDiscovery: true },
@@ -58,6 +80,8 @@ try {
     outbound.push(url.origin); return route.abort(); });
   await page.goto(origin + '__fire'); await page.waitForFunction(() => !!window.fireQA);
   metadata = await page.evaluate(() => window.fireQA.metadata());
+  assert.equal(metadata.initialMaterialSeconds, 0);
+  assert.equal(metadata.clockUniform, phase === 'before' ? 'uLsTime' : 'uStemTime');
   assert.equal(metadata.presentationDepth, 1.35); assert(metadata.morphs.every(w => w === 0));
   assert.equal(metadata.positionSHA256, 'f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b');
   assert.equal(metadata.uvSHA256, 'f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c');
@@ -67,15 +91,20 @@ try {
   for (const [name, angle] of [['front', 0], ['oblique', Math.PI / 4], ['side', Math.PI / 2]]) for (const diagnosis of [false, true]) {
     const result = await page.evaluate(args => window.fireQA.frame(...args), [angle, diagnosis]);
     assert(result.draws > 0); assert.deepEqual(result.errors, []);
+    assert.equal(result.clock.resetSeconds, 0); assert.equal(result.clock.steps, 135);
+    assert(Math.abs(result.clock.materialSeconds - 2.25) < 1e-10, 'Both API paths must reach 2.25 material seconds');
+    assert(Math.abs(result.clock.uploadedSeconds - 2.25) < 1e-6, 'Actual uploaded GPU time uniform must equal 2.25');
+    assert(result.clock.effectClocks.every(effect => Math.abs(effect.seconds - 2.25) < 1e-10));
     const file = `${diagnosis ? 'coordinates' : 'fire'}-${name}.png`; await page.screenshot({ path: path.join(output, file) });
-    frames.push({ file, angle, diagnostic: diagnosis });
+    frames.push({ file, angle, diagnostic: diagnosis, clock: result.clock, conditions: result.conditions });
   }
   memory = await page.evaluate(() => window.fireQA.dispose()); assert.equal(memory.geometries, 0);
   assert.deepEqual(errors, []); assert.deepEqual(outbound, []);
   console.log(JSON.stringify({ status: 'PASS', phase, metadata, frames: frames.length, memory }));
 } catch (e) { errors.push(e.stack || String(e)); process.exitCode = 1; console.error(e); }
 finally {
-  await fs.writeFile(path.join(output, 'report.json'), JSON.stringify({ status: process.exitCode ? 'FAIL' : 'PASS', phase, metadata, frames, memory, errors, outbound,
-    limits: ['Diagnostic grid replaces shading only in clearly named coordinate screenshots; fire screenshots use the actual runtime material and effects', 'Same 8 cycles per coordinate unit in both diagnostic modes; coordinate units are collapsed unit directions in v30, displayed rest units in candidate', 'Local Chromium SwiftShader, no hosted authenticated session or physical mobile GPU', 'No authored animal GLB is available; the existing tiger remains a temporary procedural model'] }, null, 2) + '\n');
+  await fs.writeFile(path.join(output, 'report.json'), JSON.stringify({ status: process.exitCode ? 'FAIL' : 'PASS', phase, sourceCommit, harnessSHA256, loaderSHA256, metadata, frames, memory, errors, outbound,
+    timing: 'Each frame resets, advances 135 steps at 1/60 second, then asserts both shader uniform reference and uploaded GPU time at 2.25 seconds',
+    limits: ['Supersedes initial fire captures where native v30 delta=0 held material time at 0 while candidate absolute time was 2.25', 'Diagnostic grid replaces shading only in clearly named coordinate screenshots; fire screenshots use the actual runtime material and effects', 'Same 8 cycles per coordinate unit in both diagnostic modes; coordinate units are collapsed unit directions in v30, displayed rest units in candidate', 'This comparison harness does not enable shadows or add a ground; separate flame shadow regression uses actual Canvas shadow conditions', 'Local Chromium SwiftShader, no hosted authenticated session or physical mobile GPU', 'No authored animal GLB is available; the existing tiger remains a temporary procedural model'] }, null, 2) + '\n');
   await browser?.close(); await server.close();
 }

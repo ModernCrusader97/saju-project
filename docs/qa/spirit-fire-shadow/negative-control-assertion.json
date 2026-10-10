@@ -1,0 +1,194 @@
+{
+  "status": "FAIL",
+  "phase": "after",
+  "source": {
+    "commit": "ee6e9740054394b0bee30563f35e957b49adf4bb",
+    "loaderSHA256": "714a0d668bb16ae31dd67e7d6103028e80e601547fe5b142062d481bd99eea6f",
+    "canvasSHA256": "2b00129caabcd3062846bc4d53c789d41ee387e21b3b9bc7007b3018bb7a16ca",
+    "harnessSHA256": "73c4cf29d57dbaf094fd7a16558424c1a6b793eec8ac8cfed3e42302e8a64589"
+  },
+  "checks": [],
+  "results": [
+    {
+      "day": "병인",
+      "quality": "high",
+      "name": "front",
+      "file": "병인-high-front.png",
+      "production": {
+        "body": [
+          {
+            "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_small_eye_glint_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_expressive_brow_1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_quiet_smile",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_-1",
+            "castShadow": true
+          },
+          {
+            "name": "B_|_almond_gaze_1",
+            "castShadow": true
+          }
+        ],
+        "particles": [
+          {
+            "name": "SoftSolarFireWisps",
+            "castShadow": true,
+            "receiveShadow": false,
+            "instanced": true,
+            "geometry": "PlaneGeometry",
+            "transparent": true,
+            "customDepthMaterial": false
+          }
+        ],
+        "shadowMap": {
+          "enabled": true,
+          "type": 1
+        },
+        "keyLight": {
+          "color": "fff1d9",
+          "intensity": 2.1,
+          "position": [
+            -3,
+            4,
+            4
+          ],
+          "mapSize": [
+            1024,
+            1024
+          ],
+          "bias": -0.0002,
+          "camera": {
+            "left": -2.5,
+            "right": 2.5,
+            "top": 3,
+            "bottom": -2,
+            "near": 0.1,
+            "far": 16
+          }
+        },
+        "ground": {
+          "material": "ShadowMaterial",
+          "opacity": 0.09,
+          "color": "1c4836",
+          "receiveShadow": true,
+          "position": [
+            0,
+            -0.016,
+            0
+          ],
+          "rotation": [
+            -1.5707963267948966,
+            0,
+            0,
+            "XYZ"
+          ],
+          "width": 12,
+          "height": 12
+        },
+        "camera": {
+          "position": [
+            0,
+            1.7,
+            5.7
+          ],
+          "matrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0.9967594336616964,
+            -0.0804402349972597,
+            0,
+            0,
+            0.0804402349972597,
+            0.9967594336616964,
+            0,
+            0,
+            1.7,
+            5.7,
+            1
+          ],
+          "projection": [
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            2.9042108776758226,
+            0,
+            0,
+            0,
+            0,
+            -1.005012531328321,
+            -1,
+            0,
+            0,
+            -0.2005012531328321,
+            0
+          ]
+        },
+        "model": {
+          "position": [
+            -0.42,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1.35
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            "XYZ"
+          ],
+          "morphs": [
+            0
+          ]
+        },
+        "materialSeconds": 2.25,
+        "effectSeconds": [
+          2.25
+        ],
+        "hash": "f8876d99d9c0f8488bdda8710e980e4d4ea2e9fca8174bf3434cf91ad10417e4",
+        "draws": 75,
+        "errors": []
+      }
+    }
+  ],
+  "nonFireCasters": {},
+  "componentResults": [],
+  "errors": [
+    "AssertionError [ERR_ASSERTION]: Only fire-card shadow casting should be excluded\n    at assertFlags (file:///workspace/saju-spirit-surface-zodiac-v30-20261010/scripts/qa/spirit-fire-shadow-browser.mjs:85:3)\n    at file:///workspace/saju-spirit-surface-zodiac-v30-20261010/scripts/qa/spirit-fire-shadow-browser.mjs:109:7"
+  ],
+  "outbound": [],
+  "limits": [
+    "Local Chromium SwiftShader, no physical GPU or hosted authentication",
+    "The before control is candidate ee6e974 with the erroneous fire castShadow=true, not native v30 which has no these fire cards",
+    "Reference probes disable only fire casting or original B casting to measure shadow contributions; production screenshots keep normal runtime flags",
+    "Canvas observation only stores the production renderer and loader result through Vite instrumentation; no lighting, shadow, animation or production source configuration is changed"
+  ]
+}

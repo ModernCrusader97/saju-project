@@ -38,10 +38,11 @@
     },
     "fullyPassing": false
   },
-  "fireHarnessSHA256": "f42f1ea85cdcb582177feca5d5d3ef1dfc43b0bb76eeabbc4f0bf39a9ae1af43",
+  "fireHarnessSHA256": "a441204812202d0c8e5b4d0eb7ab1d95a055045b076710aecc2f2964174b049b",
   "imageReview": [
-    "before/after actual fire front",
-    "before/after diagnostic coordinate front"
+    "Corrected equal-time native/candidate actual fire front",
+    "Shadow negative-control/fixed actual fire side",
+    "Actual production React Canvas rotated with shadows enabled"
   ],
   "missingAuthoredPets": 12,
   "availableAuthoredPets": 0,
@@ -51,6 +52,56 @@
     "Local real GLB/PNG WebGL uses Chromium SwiftShader; no physical mobile GPU or hosted authenticated session",
     "No real user DB used; all fixtures synthetic",
     "No complete vine body, curved sand, water spray or sliding dew completion claim",
-    "Authored zodiac originals remain missing; primitives intentionally preserved"
-  ]
+    "Authored zodiac originals remain missing; primitives intentionally preserved",
+    "Initial fire images had unequal clocks and were replaced; corrected full runtime images do not isolate coordinate-only effects or establish artistic approval."
+  ],
+  "followUpQA": {
+    "timestamp": "2026-10-10T01:31:59.014225+00:00",
+    "candidateBaseCommit": "ee6e9740054394b0bee30563f35e957b49adf4bb",
+    "loaderSHA256": "d352f7d268ae0326bb25b0bb5bc060640b2c6156382fc4369fa68b8049e78b2c",
+    "fireTimingComparison": "timing-comparison.json",
+    "fireShadowComparison": "../spirit-fire-shadow/comparison.json",
+    "supersededFireCapturesAcknowledged": true,
+    "tenStemAndPetCPU": {
+      "command": "node --test scripts/qa/ten-stem-materials.mjs scripts/qa/zodiac-pet-loader.mjs",
+      "passed": 33,
+      "failed": 0
+    },
+    "coordinateDensityCPU": {
+      "command": "node scripts/qa/spirit-coordinate-density.mjs",
+      "exitCode": 0,
+      "triangles": 62124
+    },
+    "approvedGLB_CPU": {
+      "command": "node scripts/qa/approved-jade-glb-cpu.mjs",
+      "exitCode": 0,
+      "meshesPerOriginalAndRuntime": 8,
+      "bytesPerGLB": 4293332
+    },
+    "typecheck": {
+      "command": "./node_modules/.bin/tsc --noEmit --incremental false",
+      "exitCode": 0
+    },
+    "targetedLint": {
+      "command": "./node_modules/.bin/eslint lib/planet/approved-jade-spirit.ts scripts/qa/spirit-fire-surface-browser.mjs scripts/qa/spirit-fire-shadow-browser.mjs",
+      "exitCode": 0,
+      "errors": 0,
+      "warnings": 0
+    },
+    "productionBuild": {
+      "command": "npm run build",
+      "exitCode": 0,
+      "existingWarnings": "Proxy configuration, bundle chunk size and vinext route static-analysis warnings"
+    },
+    "sameGPU_TimeSeconds": 2.25,
+    "surfaceFramesPerPhase": 6,
+    "shadowViewsPerPhase": 12,
+    "actualCanvasCasesPerPhase": 2,
+    "nonFireCasesUnchanged": 16,
+    "cardShadowChangedPixelsBeforeTotal": 800,
+    "cardShadowChangedPixelsAfterTotal": 0,
+    "bodyCasterCount": 8,
+    "fullSourceLintRerun": false,
+    "pushOrDeploymentPerformed": false
+  }
 }
