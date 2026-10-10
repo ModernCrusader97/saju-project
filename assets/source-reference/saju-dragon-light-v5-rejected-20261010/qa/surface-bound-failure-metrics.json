@@ -1,0 +1,38 @@
+{
+  "status": "FAIL_CONSERVATIVE_SURFACE_BOUND",
+  "threshold": 0.004,
+  "measured_max": 0.008926763199269772,
+  "by_frame": {
+    "0": {
+      "candidate_to_original_max": 0.0014650835655629635,
+      "original_to_candidate_max": 0.008926763199269772,
+      "candidate_to_original_mean": 3.529922188855606e-05,
+      "original_to_candidate_mean": 5.765814668449188e-05
+    },
+    "36": {
+      "candidate_to_original_max": 0.0011573565425351262,
+      "original_to_candidate_max": 0.006642481312155724,
+      "candidate_to_original_mean": 3.515285826153264e-05,
+      "original_to_candidate_mean": 5.482614047202685e-05
+    },
+    "72": {
+      "candidate_to_original_max": 0.0013678972609341145,
+      "original_to_candidate_max": 0.006596985273063183,
+      "candidate_to_original_mean": 3.518687963166099e-05,
+      "original_to_candidate_mean": 5.679386168288694e-05
+    },
+    "108": {
+      "candidate_to_original_max": 0.0015252274461090565,
+      "original_to_candidate_max": 0.007377054076641798,
+      "candidate_to_original_mean": 3.5132859472832675e-05,
+      "original_to_candidate_mean": 5.417122491744219e-05
+    },
+    "144": {
+      "candidate_to_original_max": 0.0014650835655629635,
+      "original_to_candidate_max": 0.008926763199269772,
+      "candidate_to_original_mean": 3.529922188855606e-05,
+      "original_to_candidate_mean": 5.765814668449188e-05
+    }
+  },
+  "same_single_ratio_candidate": 0.8
+}

@@ -1,0 +1,66 @@
+{
+  "uri": "FAILED_SaJu_Dragon_Light_Candidate_v5.glb",
+  "mimeType": "model/gltf-binary",
+  "validatorVersion": "2.0.0-dev.3.10",
+  "validatedAt": "2026-10-10T20:53:15.921Z",
+  "issues": {
+    "numErrors": 0,
+    "numWarnings": 0,
+    "numInfos": 1,
+    "numHints": 0,
+    "messages": [
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/meshes/3/primitives/0/attributes/TEXCOORD_0"
+      }
+    ],
+    "truncated": false
+  },
+  "info": {
+    "version": "2.0",
+    "generator": "Khronos glTF Blender I/O v5.2.40",
+    "extensionsUsed": [
+      "KHR_materials_clearcoat",
+      "KHR_materials_specular",
+      "KHR_materials_ior"
+    ],
+    "resources": [
+      {
+        "pointer": "/buffers/0",
+        "mimeType": "application/gltf-buffer",
+        "storage": "glb",
+        "byteLength": 7477656
+      },
+      {
+        "pointer": "/images/0",
+        "mimeType": "image/png",
+        "storage": "buffer-view",
+        "image": {
+          "width": 4096,
+          "height": 4096,
+          "format": "rgba",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      }
+    ],
+    "animationCount": 1,
+    "materialCount": 11,
+    "hasMorphTargets": false,
+    "hasSkins": true,
+    "hasTextures": true,
+    "hasDefaultScene": true,
+    "drawCallCount": 11,
+    "totalVertexCount": 107705,
+    "totalTriangleCount": 205706,
+    "maxUVs": 1,
+    "maxInfluences": 4,
+    "maxAttributes": 6
+  },
+  "validated_sha256": "3a2c6297c871d97cc4c32e6adc6b2cd67251db8c8d1c28d2e002980ed68b203e",
+  "validation_library": "KhronosGroup/glTF-Validator",
+  "status": "PASS_KHRONOS_GLTF_VALIDATOR"
+}

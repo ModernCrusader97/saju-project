@@ -1,0 +1,184 @@
+{
+  "status": "MEASURED_ACTUAL_RENDER_DIFFERENCES_REJECTED_GEOMETRY",
+  "accepted": false,
+  "rgba_real_glb_import_renders": true,
+  "alpha_threshold": 128,
+  "same_camera_lights_pose_seed_and_settings": true,
+  "entries": [
+    {
+      "file": "front-frame000.png",
+      "width": 640,
+      "height": 640,
+      "before_pixel_sha256": "295f9c5b79afedac635e88453ba21510e1d93a57f7dff56b86c5f29bf818bcfe",
+      "after_pixel_sha256": "e04d7f3cb709bd91dab8509807ef97be4823101f0d2ca5d5ac9cdcc84747f686",
+      "silhouette_iou": 0.9999662165015498,
+      "silhouette_changed_pixels": 4,
+      "bounds_before": [
+        31,
+        72,
+        629,
+        549
+      ],
+      "bounds_after": [
+        31,
+        72,
+        629,
+        549
+      ],
+      "rgb_changed_pixels": 14209,
+      "max_rgb_channel_delta_8bit": 208,
+      "mean_rgb_channel_delta_8bit": 0.022303873697916667
+    },
+    {
+      "file": "threequarter-frame000.png",
+      "width": 640,
+      "height": 640,
+      "before_pixel_sha256": "59b5c9ec9c92f008fe13901c123ceef035ea4c69d5cc81333f33dd498b12d4a7",
+      "after_pixel_sha256": "8296c1d234c444ce8ce37e591ecfb0b1fb6ae194400154b405c198b25d070041",
+      "silhouette_iou": 0.9999725128731377,
+      "silhouette_changed_pixels": 3,
+      "bounds_before": [
+        21,
+        54,
+        596,
+        557
+      ],
+      "bounds_after": [
+        21,
+        54,
+        596,
+        557
+      ],
+      "rgb_changed_pixels": 15153,
+      "max_rgb_channel_delta_8bit": 189,
+      "mean_rgb_channel_delta_8bit": 0.022891438802083334
+    },
+    {
+      "file": "side-frame000.png",
+      "width": 640,
+      "height": 640,
+      "before_pixel_sha256": "65bbc89c3c6e098c09bb021977af2306dc2f3a513e5e1df2b54b98995c6a9a2c",
+      "after_pixel_sha256": "c96499c8cf2f371f4b8f1b9bfe9a404bbd86be32b115f2a167c96e7d547adeb5",
+      "silhouette_iou": 0.9999832028756677,
+      "silhouette_changed_pixels": 1,
+      "bounds_before": [
+        205,
+        44,
+        392,
+        574
+      ],
+      "bounds_after": [
+        205,
+        44,
+        392,
+        574
+      ],
+      "rgb_changed_pixels": 9438,
+      "max_rgb_channel_delta_8bit": 26,
+      "mean_rgb_channel_delta_8bit": 0.01223388671875
+    },
+    {
+      "file": "idle-frame036.png",
+      "width": 512,
+      "height": 512,
+      "before_pixel_sha256": "fdcd7c4ab1bb5a18a212987ec5fabcf6e8fca88fcc7c8c1dbd409c67abd65783",
+      "after_pixel_sha256": "a09a8fa1cc3e5eee12e82cb7c2c02a4c775b11736b394f015f01cc207dd36ddc",
+      "silhouette_iou": 0.9999574377527134,
+      "silhouette_changed_pixels": 3,
+      "bounds_before": [
+        16,
+        39,
+        482,
+        438
+      ],
+      "bounds_after": [
+        16,
+        39,
+        482,
+        438
+      ],
+      "rgb_changed_pixels": 10787,
+      "max_rgb_channel_delta_8bit": 162,
+      "mean_rgb_channel_delta_8bit": 0.024328867594401043
+    },
+    {
+      "file": "idle-frame072.png",
+      "width": 512,
+      "height": 512,
+      "before_pixel_sha256": "6234bc3c84a5c45a4d9abcf78e0100593d21bc6b00466eec889c1f75304ffc7b",
+      "after_pixel_sha256": "1c736938dbc02d5eff5cf9c0d90ad4e79661d29fe0123166a0d3a08743aa9803",
+      "silhouette_iou": 0.9999858288694272,
+      "silhouette_changed_pixels": 1,
+      "bounds_before": [
+        19,
+        41,
+        489,
+        447
+      ],
+      "bounds_after": [
+        19,
+        41,
+        489,
+        447
+      ],
+      "rgb_changed_pixels": 11196,
+      "max_rgb_channel_delta_8bit": 163,
+      "mean_rgb_channel_delta_8bit": 0.025801340738932293
+    },
+    {
+      "file": "idle-frame108.png",
+      "width": 512,
+      "height": 512,
+      "before_pixel_sha256": "9da0ae5407eecb9fcc72576f25b960fb33517c888227cd3dbe90b7a3e52e9820",
+      "after_pixel_sha256": "e39ae14cd1c1ca9eafe3ab4b5718472933ac36d855ca15f3200847f2b68b4328",
+      "silhouette_iou": 0.9999714440732174,
+      "silhouette_changed_pixels": 2,
+      "bounds_before": [
+        20,
+        45,
+        484,
+        454
+      ],
+      "bounds_after": [
+        20,
+        45,
+        484,
+        454
+      ],
+      "rgb_changed_pixels": 10687,
+      "max_rgb_channel_delta_8bit": 146,
+      "mean_rgb_channel_delta_8bit": 0.023972829182942707
+    },
+    {
+      "file": "idle-frame142.png",
+      "width": 512,
+      "height": 512,
+      "before_pixel_sha256": "5bd177929d01bee3df7c1ca6a5fe98851c9bcc9fe0e951109b2166e73edcdd0f",
+      "after_pixel_sha256": "bc4dd8f507af106e1669d1cb73fd517fc0855106b732aa37fe877bdddfdd4207",
+      "silhouette_iou": 0.9999713876967096,
+      "silhouette_changed_pixels": 2,
+      "bounds_before": [
+        17,
+        43,
+        477,
+        446
+      ],
+      "bounds_after": [
+        17,
+        43,
+        477,
+        446
+      ],
+      "rgb_changed_pixels": 11361,
+      "max_rgb_channel_delta_8bit": 153,
+      "mean_rgb_channel_delta_8bit": 0.027394612630208332
+    }
+  ],
+  "visual_review": {
+    "all_seven_pairs_directly_inspected": true,
+    "large_silhouette_eye_body_color_boundary_or_joint_changes_observed": false,
+    "quality_gate_remains_failed": true,
+    "note": "Visual similarity and format PASS do not override the predeclared .004 bidirectional surface bound. Local mane geometric deviation is measured at .0089267632."
+  },
+  "performance_claims": false
+}

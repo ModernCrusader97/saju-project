@@ -1,0 +1,328 @@
+{
+  "source_blend_sha256": "c18682ca0f32973b815abd0185c049c6ed9ce005eee6388a2549388bd66bc3bc",
+  "runtime_objects": [
+    {
+      "name": "Dragon_Continuous_Teal_Ivory_Vertex_PBR",
+      "vertices": 36639,
+      "triangles": 73274,
+      "polygons": 69365,
+      "uv_layers": [
+        "BoundaryUV"
+      ],
+      "color_layers": [
+        "RuntimeTint"
+      ],
+      "materials": [
+        "Continuous_Head_V2_Preserved_PBR",
+        "Continuous_Body_Clean_UV_PBR"
+      ],
+      "modifiers": [
+        [
+          "Idle_Skin_Deform",
+          "ARMATURE"
+        ]
+      ],
+      "vertex_groups": [
+        "Head",
+        "Front_Left",
+        "Neck",
+        "Body_Core",
+        "Front_Right",
+        "Hind_Far",
+        "Spine_Lower",
+        "Tail_Base",
+        "Spine_Bend",
+        "Hind_Near",
+        "Tail_Mid",
+        "Tail_Tip"
+      ]
+    },
+    {
+      "name": "Dragon_Belly_Subtle_Seams",
+      "vertices": 2466,
+      "triangles": 4896,
+      "polygons": 2520,
+      "uv_layers": [],
+      "color_layers": [],
+      "materials": [
+        "Belly_Subtle_Seams"
+      ],
+      "modifiers": [
+        [
+          "Idle_Skin_Deform",
+          "ARMATURE"
+        ]
+      ],
+      "vertex_groups": [
+        "Body_Core",
+        "Front_Right",
+        "Spine_Bend",
+        "Spine_Lower",
+        "Tail_Base",
+        "Hind_Near",
+        "Tail_Mid",
+        "Tail_Tip"
+      ]
+    },
+    {
+      "name": "Dragon_Smile_Warm_Deep_Teal",
+      "vertices": 552,
+      "triangles": 1100,
+      "polygons": 560,
+      "uv_layers": [],
+      "color_layers": [],
+      "materials": [
+        "Smile_Warm_Deep_Teal"
+      ],
+      "modifiers": [
+        [
+          "Idle_Skin_Deform",
+          "ARMATURE"
+        ]
+      ],
+      "vertex_groups": [
+        "Head",
+        "Neck"
+      ]
+    },
+    {
+      "name": "Dragon_Body_Teal",
+      "vertices": 1234,
+      "triangles": 2376,
+      "polygons": 1232,
+      "uv_layers": [],
+      "color_layers": [],
+      "materials": [
+        "Body_Teal"
+      ],
+      "modifiers": [
+        [
+          "Idle_Skin_Deform",
+          "ARMATURE"
+        ]
+      ],
+      "vertex_groups": [
+        "Head"
+      ]
+    },
+    {
+      "name": "Dragon_Eyes_Soft_Ivory",
+      "vertices": 3702,
+      "triangles": 7128,
+      "polygons": 3696,
+      "uv_layers": [],
+      "color_layers": [],
+      "materials": [
+        "Eyes_Soft_Ivory"
+      ],
+      "modifiers": [
+        [
+          "Idle_Skin_Deform",
+          "ARMATURE"
+        ]
+      ],
+      "vertex_groups": [
+        "Head"
+      ]
+    },
+    {
+      "name": "Dragon_Eyes_Warm_Brown",
+      "vertices": 1234,
+      "triangles": 2376,
+      "polygons": 1232,
+      "uv_layers": [],
+      "color_layers": [],
+      "materials": [
+        "Eyes_Warm_Brown"
+      ],
+      "modifiers": [
+        [
+          "Idle_Skin_Deform",
+          "ARMATURE"
+        ]
+      ],
+      "vertex_groups": [
+        "Head"
+      ]
+    },
+    {
+      "name": "Dragon_Nostrils_Deep_Teal",
+      "vertices": 1234,
+      "triangles": 2376,
+      "polygons": 1232,
+      "uv_layers": [],
+      "color_layers": [],
+      "materials": [
+        "Nostrils_Deep_Teal"
+      ],
+      "modifiers": [
+        [
+          "Idle_Skin_Deform",
+          "ARMATURE"
+        ]
+      ],
+      "vertex_groups": [
+        "Head",
+        "Neck"
+      ]
+    },
+    {
+      "name": "Dragon_Ear_Inner_Ivory",
+      "vertices": 1234,
+      "triangles": 2376,
+      "polygons": 1232,
+      "uv_layers": [],
+      "color_layers": [],
+      "materials": [
+        "Ear_Inner_Ivory"
+      ],
+      "modifiers": [
+        [
+          "Idle_Skin_Deform",
+          "ARMATURE"
+        ]
+      ],
+      "vertex_groups": [
+        "Head",
+        "Neck"
+      ]
+    },
+    {
+      "name": "Dragon_Belly_Horns_Whiskers_Ivory",
+      "vertices": 21216,
+      "triangles": 42048,
+      "polygons": 25791,
+      "uv_layers": [],
+      "color_layers": [],
+      "materials": [
+        "Belly_Horns_Whiskers_Ivory"
+      ],
+      "modifiers": [
+        [
+          "Idle_Skin_Deform",
+          "ARMATURE"
+        ]
+      ],
+      "vertex_groups": [
+        "Head",
+        "Front_Left",
+        "Neck",
+        "Front_Right",
+        "Body_Core",
+        "Hind_Far",
+        "Spine_Lower",
+        "Tail_Base",
+        "Hind_Near"
+      ]
+    },
+    {
+      "name": "Dragon_Mane_Warm_Orange",
+      "vertices": 42348,
+      "triangles": 84696,
+      "polygons": 66151,
+      "uv_layers": [],
+      "color_layers": [],
+      "materials": [
+        "Mane_Warm_Orange"
+      ],
+      "modifiers": [
+        [
+          "Idle_Skin_Deform",
+          "ARMATURE"
+        ]
+      ],
+      "vertex_groups": [
+        "Head",
+        "Neck",
+        "Spine_Lower",
+        "Tail_Base",
+        "Tail_Mid",
+        "Body_Core",
+        "Spine_Bend",
+        "Tail_Tip"
+      ]
+    }
+  ],
+  "conservative_probe": [
+    {
+      "source_object": "Dragon_Belly_Horns_Whiskers_Ivory",
+      "before": {
+        "name": "Dragon_Belly_Horns_Whiskers_Ivory.001",
+        "vertices": 21216,
+        "triangles": 42048,
+        "polygons": 25791,
+        "uv_layers": [],
+        "color_layers": [],
+        "materials": [
+          "Belly_Horns_Whiskers_Ivory"
+        ],
+        "modifiers": [],
+        "vertex_groups": [
+          "Head",
+          "Front_Left",
+          "Neck",
+          "Front_Right",
+          "Body_Core",
+          "Hind_Far",
+          "Spine_Lower",
+          "Tail_Base",
+          "Hind_Near"
+        ]
+      },
+      "after": {
+        "vertices": 20931,
+        "triangles": 41478,
+        "polygons": 23810
+      },
+      "angle_degrees": 0.5,
+      "delimit": [
+        "MATERIAL",
+        "NORMAL",
+        "SEAM",
+        "UV"
+      ],
+      "boundary_dissolve": false,
+      "only_probe_in_memory_no_source_save": true
+    },
+    {
+      "source_object": "Dragon_Mane_Warm_Orange",
+      "before": {
+        "name": "Dragon_Mane_Warm_Orange.001",
+        "vertices": 42348,
+        "triangles": 84696,
+        "polygons": 66151,
+        "uv_layers": [],
+        "color_layers": [],
+        "materials": [
+          "Mane_Warm_Orange"
+        ],
+        "modifiers": [],
+        "vertex_groups": [
+          "Head",
+          "Neck",
+          "Spine_Lower",
+          "Tail_Base",
+          "Tail_Mid",
+          "Body_Core",
+          "Spine_Bend",
+          "Tail_Tip"
+        ]
+      },
+      "after": {
+        "vertices": 42338,
+        "triangles": 84676,
+        "polygons": 63005
+      },
+      "angle_degrees": 0.5,
+      "delimit": [
+        "MATERIAL",
+        "NORMAL",
+        "SEAM",
+        "UV"
+      ],
+      "boundary_dissolve": false,
+      "only_probe_in_memory_no_source_save": true
+    }
+  ],
+  "decimate_description": "Decimation modifier"
+}

@@ -1,0 +1,46 @@
+00:01.906  blend            | Read blend: "D:\Codex\Results\SaJuDragonRootSkinExportV4-20261010-Joseph\baseline\SourceV3.blend"
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+05:49:36 | INFO: Starting glTF 2.0 export
+05:49:36 | INFO: Extracting primitive: Horn_Main_-1_Mesh.001
+05:49:36 | INFO: Primitives created: 1
+05:49:36 | INFO: Extracting primitive: Belly_Fold_00_Mesh.001
+05:49:36 | INFO: Primitives created: 1
+05:49:36 | INFO: Extracting primitive: Surface_Eye_Soft_Lid_-1_Mesh.001
+05:49:36 | INFO: Primitives created: 1
+05:49:36 | INFO: Extracting primitive: Dragon_Continuous_Skin_Mesh.001
+05:49:36 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+05:49:36 | INFO: Primitives created: 2
+05:49:36 | INFO: Extracting primitive: Surface_Ear_Ivory_Inset_-1_Mesh.001
+05:49:36 | INFO: Primitives created: 1
+05:49:36 | INFO: Extracting primitive: Surface_Eye_White_-1_Mesh.001
+05:49:36 | INFO: Primitives created: 1
+05:49:36 | INFO: Extracting primitive: Surface_Eye_Brown_-1_Mesh.001
+05:49:36 | INFO: Primitives created: 1
+05:49:36 | INFO: Extracting primitive: Sphere.024
+05:49:36 | INFO: Primitives created: 1
+05:49:36 | INFO: Extracting primitive: Surface_Nostril_-1_Mesh.001
+05:49:36 | INFO: Primitives created: 1
+05:49:36 | INFO: Extracting primitive: Surface_Gentle_Closed_Smile_Mesh.001
+05:49:36 | INFO: Primitives created: 1
+05:49:37 | INFO: Finished glTF 2.0 export in 0.8045966625213623 s
+Traceback (most recent call last):
+  File "D:\Codex\Work\SaJuDragonLightCandidateV5-20261010-Joseph\authoring\build_light_candidate-diagnostic-preservation.py", line 78, in <module>
+    runpy.run_path(a.root_export_script,run_name='__main__');sys.argv=arguments
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\Codex\Work\SaJuDragonLightCandidateV5-20261010-Joseph\authoring\root_skin_export.py", line 122, in <module>
+    main()
+    ~~~~^^
+  File "D:\Codex\Work\SaJuDragonLightCandidateV5-20261010-Joseph\authoring\root_skin_export.py", line 81, in main
+    assert len(moved) == 10, 'This accepted source must have exactly ten non-root skin nodes'
+           ^^^^^^^^^^^^^^^^
+AssertionError: This accepted source must have exactly ten non-root skin nodes
+
+
+Error: script failed, file: 'D:\Codex\Work\SaJuDragonLightCandidateV5-20261010-Joseph\authoring\build_light_candidate-diagnostic-preservation.py', exiting.
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

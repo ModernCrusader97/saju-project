@@ -1,0 +1,27 @@
+{
+  "status": "REJECTED_SINGLE_V5_CANDIDATE_NOT_A_COMPLETED_OPTIMIZATION",
+  "accepted": false,
+  "reason": "Maximum bidirectional mane surface distance .0089267632 exceeds predeclared .004. Gate and ratio unchanged.",
+  "measured_asset_cost_reduction": {
+    "triangles": 16940,
+    "triangle_percent": 7.608490608409762,
+    "vertices": 8470,
+    "vertex_percent": 7.290725199053153,
+    "glb_bytes": 474320,
+    "glb_percent": 5.94346937619635
+  },
+  "original_v4_remains_accepted": true,
+  "source_commit": "68f4801b5180a8c38b6073f3a8ae7f48a869caa9",
+  "no_second_geometry_variant": true,
+  "initial_export_capture_failure_preserved": true,
+  "format_native_runtime_diagnostics_pass_only": true,
+  "matched_static_3views_and_idle_poses_directly_reviewed": true,
+  "related_app_type_build": {
+    "status": "NOT_RERUN_REJECTED_CANDIDATE_NO_APP_INTEGRATION",
+    "conditional_acceptance_path_not_reached": true,
+    "application_source_unchanged": true,
+    "earlier_evidence_not_relabelled_as_v5_pass": true
+  },
+  "scope_stopped_before_retopology_or_further_ratio_tuning": true,
+  "mobile_gpu_performance_claims": false
+}

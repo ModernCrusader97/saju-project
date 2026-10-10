@@ -1,0 +1,132 @@
+00:01.797  blend            | Read blend: "D:\Codex\Results\SaJuDragonRootSkinExportV4-20261010-Joseph\baseline\SourceV3.blend"
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+05:51:48 | INFO: Starting glTF 2.0 export
+05:51:48 | INFO: Extracting primitive: Horn_Main_-1_Mesh.001
+05:51:48 | INFO: Primitives created: 1
+05:51:48 | INFO: Extracting primitive: Belly_Fold_00_Mesh.001
+05:51:48 | INFO: Primitives created: 1
+05:51:48 | INFO: Extracting primitive: Surface_Eye_Soft_Lid_-1_Mesh.001
+05:51:48 | INFO: Primitives created: 1
+05:51:48 | INFO: Extracting primitive: Dragon_Continuous_Skin_Mesh.001
+05:51:48 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+05:51:48 | INFO: Primitives created: 2
+05:51:48 | INFO: Extracting primitive: Surface_Ear_Ivory_Inset_-1_Mesh.001
+05:51:48 | INFO: Primitives created: 1
+05:51:48 | INFO: Extracting primitive: Surface_Eye_White_-1_Mesh.001
+05:51:48 | INFO: Primitives created: 1
+05:51:48 | INFO: Extracting primitive: Surface_Eye_Brown_-1_Mesh.001
+05:51:48 | INFO: Primitives created: 1
+05:51:48 | INFO: Extracting primitive: Sphere.024
+05:51:48 | INFO: Primitives created: 1
+05:51:48 | INFO: Extracting primitive: Surface_Nostril_-1_Mesh.001
+05:51:48 | INFO: Primitives created: 1
+05:51:48 | INFO: Extracting primitive: Surface_Gentle_Closed_Smile_Mesh.001
+05:51:48 | INFO: Primitives created: 1
+05:51:49 | INFO: Finished glTF 2.0 export in 1.4597077369689941 s
+
+{
+  "status": "PASS_EXPORT_HIERARCHY_ONLY",
+  "input_name": "V5_pre_root_cleanup.glb",
+  "output_name": "FAILED_SaJu_Dragon_Light_Candidate_v5.glb",
+  "input_sha256": "78a6400fe0c90873ce568da3cabf75d0911965d2b749da11623072560645274a",
+  "output_sha256": "3a2c6297c871d97cc4c32e6adc6b2cd67251db8c8d1c28d2e002980ed68b203e",
+  "input_bytes": 7506204,
+  "output_bytes": 7506204,
+  "bin_chunk_bytes": 7477656,
+  "bin_chunk_sha256": "eef122885769eedc82209f245e69576e542e26d187bf804f51bc65ac161f8883",
+  "bin_chunk_byte_identical": true,
+  "moved_skinned_mesh_nodes": [
+    {
+      "node": 13,
+      "name": "Dragon_Belly_Horns_Whiskers_Ivory",
+      "former_parent": 23
+    },
+    {
+      "node": 14,
+      "name": "Dragon_Belly_Subtle_Seams",
+      "former_parent": 23
+    },
+    {
+      "node": 15,
+      "name": "Dragon_Body_Teal",
+      "former_parent": 23
+    },
+    {
+      "node": 16,
+      "name": "Dragon_Continuous_Teal_Ivory_Vertex_PBR",
+      "former_parent": 23
+    },
+    {
+      "node": 17,
+      "name": "Dragon_Ear_Inner_Ivory",
+      "former_parent": 23
+    },
+    {
+      "node": 18,
+      "name": "Dragon_Eyes_Soft_Ivory",
+      "former_parent": 23
+    },
+    {
+      "node": 19,
+      "name": "Dragon_Eyes_Warm_Brown",
+      "former_parent": 23
+    },
+    {
+      "node": 20,
+      "name": "Dragon_Mane_Warm_Orange",
+      "former_parent": 23
+    },
+    {
+      "node": 21,
+      "name": "Dragon_Nostrils_Deep_Teal",
+      "former_parent": 23
+    },
+    {
+      "node": 22,
+      "name": "Dragon_Smile_Warm_Deep_Teal",
+      "former_parent": 23
+    }
+  ],
+  "former_parent_children": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    12
+  ],
+  "new_parent_children": [
+    12
+  ],
+  "scene_roots_before": [
+    23
+  ],
+  "scene_roots_after": [
+    23,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22
+  ],
+  "all_other_json_properties_equal": true,
+  "native_blend_modified": false,
+  "primary_spec": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#joint-hierarchy",
+  "warning_code": "NODE_SKINNED_MESH_NON_ROOT",
+  "reason": "Mesh parent transforms are ignored for skinning. Identity, unanimated mesh nodes and their identity, unanimated former parent permit direct scene-root promotion; joint hierarchy remains unchanged."
+}
+Info: Saved as "FAILED_SaJu_Dragon_Light_Candidate_v5.blend"
+V5_CANDIDATE_GENERATED {"status": "PRESERVED_FAILED_SINGLE_CANDIDATE_NOT_DELIVERABLE", "source_blend_sha256": "c18682ca0f32973b815abd0185c049c6ed9ce005eee6388a2549388bd66bc3bc", "candidate_blend_sha256": "4a01f8c7482e0cabf87842016cc01723de1da53a3c6452727b93a8e1fc37582b", "candidate_glb_sha256": "3a2c6297c871d97cc4c32e6adc6b2cd67251db8c8d1c28d2e002980ed68b203e", "method": "COLLAPSE 0.8, only untextured Dragon_Mane_Warm_Orange, before armature. No UV changes or new design.", "optimized_objects": ["Dragon_Mane_Warm_Orange"], "before": {"Dragon_Continuous_Teal_Ivory_Vertex_PBR": {"vertices": 36639, "triangles": 73274}, "Dragon_Belly_Subtle_Seams": {"vertices": 2466, "triangles": 4896}, "Dragon_Smile_Warm_Deep_Teal": {"vertices": 552, "triangles": 1100}, "Dragon_Body_Teal": {"vertices": 1234, "triangles": 2376}, "Dragon_Eyes_Soft_Ivory": {"vertices": 3702, "triangles": 7128}, "Dragon_Eyes_Warm_Brown": {"vertices": 1234, "triangles": 2376}, "Dragon_Nostrils_Deep_Teal": {"vertices": 1234, "triangles": 2376}, "Dragon_Ear_Inner_Ivory": {"vertices": 1234, "triangles": 2376}, "Dragon_Belly_Horns_Whiskers_Ivory": {"vertices": 21216, "triangles": 42048}, "Dragon_Mane_Warm_Orange": {"vertices": 42348, "triangles": 84696}}, "after": {"Dragon_Continuous_Teal_Ivory_Vertex_PBR": {"vertices": 36639, "triangles": 73274}, "Dragon_Belly_Subtle_Seams": {"vertices": 2466, "triangles": 4896}, "Dragon_Smile_Warm_Deep_Teal": {"vertices": 552, "triangles": 1100}, "Dragon_Body_Teal": {"vertices": 1234, "triangles": 2376}, "Dragon_Eyes_Soft_Ivory": {"vertices": 3702, "triangles": 7128}, "Dragon_Eyes_Warm_Brown": {"vertices": 1234, "triangles": 2376}, "Dragon_Nostrils_Deep_Teal": {"vertices": 1234, "triangles": 2376}, "Dragon_Ear_Inner_Ivory": {"vertices": 1234, "triangles": 2376}, "Dragon_Belly_Horns_Whiskers_Ivory": {"vertices": 21216, "triangles": 42048}, "Dragon_Mane_Warm_Orange": {"vertices": 33878, "triangles": 67756}}, "runtime_triangles_before": 222646, "runtime_triangles_after": 205706, "all_other_9_runtime_meshes_exact": true, "original_editable_sculpt_unchanged": true, "original_sculpt_mesh_objects_preserved": 111, "all_145_bone_poses_exact": true, "pose_sha256": "8de85c1ead97d652eb1b701beb146af2592c6935593f10d8d030e66173ca165f", "materials_uv_texture_eye_face_body_limbs_unchanged": true, "bad_weights": 0, "mane_surface_distances_by_frame": {"0": {"candidate_to_original_max": 0.0014650835655629635, "original_to_candidate_max": 0.008926763199269772, "candidate_to_original_mean": 3.529922188855606e-05, "original_to_candidate_mean": 5.765814668449188e-05}, "36": {"candidate_to_original_max": 0.0011573565425351262, "original_to_candidate_max": 0.006642481312155724, "candidate_to_original_mean": 3.515285826153264e-05, "original_to_candidate_mean": 5.482614047202685e-05}, "72": {"candidate_to_original_max": 0.0013678972609341145, "original_to_candidate_max": 0.006596985273063183, "candidate_to_original_mean": 3.518687963166099e-05, "original_to_candidate_mean": 5.679386168288694e-05}, "108": {"candidate_to_original_max": 0.0015252274461090565, "original_to_candidate_max": 0.007377054076641798, "candidate_to_original_mean": 3.5132859472832675e-05, "original_to_candidate_mean": 5.417122491744219e-05}, "144": {"candidate_to_original_max": 0.0014650835655629635, "original_to_candidate_max": 0.008926763199269772, "candidate_to_original_mean": 3.529922188855606e-05, "original_to_candidate_mean": 5.765814668449188e-05}}, "original_high_sculpt_hidden_not_deleted": true, "native_active_collection": "Runtime_GLTF_Meshes"}
+FAILED_CANDIDATE_PRESERVED_NOT_DELIVERABLE 0.008926763199269772
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)

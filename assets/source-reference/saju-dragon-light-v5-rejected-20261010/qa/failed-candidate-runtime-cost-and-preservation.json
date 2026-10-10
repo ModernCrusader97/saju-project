@@ -1,0 +1,42 @@
+{
+  "status": "PASS_LOADER_SKIN_CLIP_FORMAT_DIAGNOSTICS_ONLY_GEOMETRY_STILL_FAILED",
+  "accepted_candidate": false,
+  "baseline_glb_sha256": "971aa616c595b5a0d5128b75a86ba3e032e115483ee7d22db031f7e520b54f9c",
+  "failed_glb_sha256": "3a2c6297c871d97cc4c32e6adc6b2cd67251db8c8d1c28d2e002980ed68b203e",
+  "baseline": {
+    "triangles": 222646,
+    "vertices": 116175,
+    "glb_bytes": 7980524
+  },
+  "failed_candidate": {
+    "triangles": 205706,
+    "vertices": 107705,
+    "glb_bytes": 7506204
+  },
+  "reductions": {
+    "triangles": 16940,
+    "triangle_percent": 7.608490608409762,
+    "vertices": 8470,
+    "vertex_percent": 7.290725199053153,
+    "glb_bytes": 474320,
+    "glb_percent": 5.94346937619635
+  },
+  "all_other_9_meshes_10_primitives_attribute_values_exact": true,
+  "scene_skin_joint_graph_materials_texture_png_and_animation_exact": true,
+  "clip": "Idle_Loop",
+  "seconds": 6,
+  "bones": 13,
+  "stats": {
+    "vertices": 107705,
+    "triangles": 205706,
+    "invalidWeights": 0,
+    "invalidNormals": 0,
+    "nonfinitePositions": 0,
+    "zeroAreaTriangles": 0,
+    "loopError": 6.393207398340102e-7,
+    "unchangedMeshesWorldVertexError": 0,
+    "maxMotion": 0.2608878044997632,
+    "frames": 145
+  },
+  "failed_quality_gate": "Bidirectional mane surface deviation exceeds unchanged .004 at original and idle poses. No acceptance or mobile performance claim."
+}

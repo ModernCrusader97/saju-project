@@ -1,0 +1,11 @@
+00:01.828  blend            | Read blend: "D:\Codex\Results\SaJuDragonRootSkinExportV4-20261010-Joseph\baseline\SourceV3.blend"
+Traceback (most recent call last):
+  File "D:\Codex\Work\SaJuDragonLightCandidateV5-20261010-Joseph\authoring\build_light_candidate.py", line 63, in <module>
+    assert max(max(v['candidate_to_original_max'],v['original_to_candidate_max']) for v in surface_errors.values())<.004,'Mane surface regression exceeds conservative subpixel-scale bound'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Mane surface regression exceeds conservative subpixel-scale bound
+
+Error: script failed, file: 'D:\Codex\Work\SaJuDragonLightCandidateV5-20261010-Joseph\authoring\build_light_candidate.py', exiting.
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

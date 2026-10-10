@@ -1,0 +1,13 @@
+{
+  "original_v4_commit": "68f4801b5180a8c38b6073f3a8ae7f48a869caa9",
+  "original_glb_sha256": "971aa616c595b5a0d5128b75a86ba3e032e115483ee7d22db031f7e520b54f9c",
+  "original_editable_blend_sha256": "c18682ca0f32973b815abd0185c049c6ed9ce005eee6388a2549388bd66bc3bc",
+  "original_triangles": 222646,
+  "original_vertices": 116175,
+  "original_glb_bytes": 7980524,
+  "private_archive_baseline_paths": [
+    "baseline/V4_original.glb",
+    "baseline/SourceV3_original.blend"
+  ],
+  "original_unchanged": true
+}

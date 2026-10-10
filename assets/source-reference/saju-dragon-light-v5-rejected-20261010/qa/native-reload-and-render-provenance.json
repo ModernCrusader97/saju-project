@@ -1,0 +1,174 @@
+{
+  "status": "PASS_FORMAT_RELOAD_ONLY_GEOMETRY_CANDIDATE_STILL_FAILED",
+  "candidate_geometry_accepted": false,
+  "candidate_native_sha256": "4a01f8c7482e0cabf87842016cc01723de1da53a3c6452727b93a8e1fc37582b",
+  "candidate_glb_sha256": "3a2c6297c871d97cc4c32e6adc6b2cd67251db8c8d1c28d2e002980ed68b203e",
+  "baseline_glb_sha256": "971aa616c595b5a0d5128b75a86ba3e032e115483ee7d22db031f7e520b54f9c",
+  "native_loop_error": 0.0,
+  "invalid_normals": 0,
+  "invalid_weights": 0,
+  "glb_native_max_nearest_vertex_error_by_frame": {
+    "0": 2.396076979493955e-06,
+    "36": 2.6340937893110095e-06,
+    "72": 2.700031245694845e-06,
+    "108": 2.499322818039218e-06,
+    "144": 2.396076979493955e-06
+  },
+  "actual_glb_import_meshes": 10,
+  "sampled_loop_frames": [
+    0,
+    36,
+    72,
+    108,
+    144
+  ],
+  "render_records": [
+    {
+      "label": "V4-baseline",
+      "camera": "Camera_Front",
+      "frame": 0,
+      "file": "V4-baseline/front-frame000.png",
+      "width": 640,
+      "height": 640,
+      "samples": 24,
+      "sha256": "342d62fd9bb6fecda91027686588f1203f5572114bab6af6e984438475af3415"
+    },
+    {
+      "label": "V4-baseline",
+      "camera": "Camera_ThreeQuarter",
+      "frame": 0,
+      "file": "V4-baseline/threequarter-frame000.png",
+      "width": 640,
+      "height": 640,
+      "samples": 24,
+      "sha256": "9220b3f36e637e3ba823591d3f4a550c2f62dd130ce6a992df16b22d1b2f44ba"
+    },
+    {
+      "label": "V4-baseline",
+      "camera": "Camera_Side",
+      "frame": 0,
+      "file": "V4-baseline/side-frame000.png",
+      "width": 640,
+      "height": 640,
+      "samples": 24,
+      "sha256": "5024e9ae952a26d30066d829a6ba7af75902953f8672f3669b13eb4df32705a8"
+    },
+    {
+      "label": "V4-baseline",
+      "camera": "Camera_ThreeQuarter",
+      "frame": 36,
+      "file": "V4-baseline/idle-frame036.png",
+      "width": 512,
+      "height": 512,
+      "samples": 8,
+      "sha256": "e84568655b8e133f45a13c833ad38ca9283106067758927f296a8e7c2b25d09d"
+    },
+    {
+      "label": "V4-baseline",
+      "camera": "Camera_ThreeQuarter",
+      "frame": 72,
+      "file": "V4-baseline/idle-frame072.png",
+      "width": 512,
+      "height": 512,
+      "samples": 8,
+      "sha256": "60527b249b3f8049076d91114652445d77940decb62eed7cb2b8e0b1528cf130"
+    },
+    {
+      "label": "V4-baseline",
+      "camera": "Camera_ThreeQuarter",
+      "frame": 108,
+      "file": "V4-baseline/idle-frame108.png",
+      "width": 512,
+      "height": 512,
+      "samples": 8,
+      "sha256": "58c69623f3490511b6a95cb2f4b48027a826301ce37f1970ca0bdb22576ac2ff"
+    },
+    {
+      "label": "V4-baseline",
+      "camera": "Camera_ThreeQuarter",
+      "frame": 142,
+      "file": "V4-baseline/idle-frame142.png",
+      "width": 512,
+      "height": 512,
+      "samples": 8,
+      "sha256": "4077472764db715f5cb64279d3a4af9e87c7264b9d0eee816958490e637d192d"
+    },
+    {
+      "label": "FAILED-V5",
+      "camera": "Camera_Front",
+      "frame": 0,
+      "file": "FAILED-V5/front-frame000.png",
+      "width": 640,
+      "height": 640,
+      "samples": 24,
+      "sha256": "653b8b5b8c660cda0b7ca185587aab7d1189960a5d24ff0e16f9744279ace0a7"
+    },
+    {
+      "label": "FAILED-V5",
+      "camera": "Camera_ThreeQuarter",
+      "frame": 0,
+      "file": "FAILED-V5/threequarter-frame000.png",
+      "width": 640,
+      "height": 640,
+      "samples": 24,
+      "sha256": "b6b1211b03fe453d5c01406f3594aebd1af940478a77f0865cf75babb2c28e48"
+    },
+    {
+      "label": "FAILED-V5",
+      "camera": "Camera_Side",
+      "frame": 0,
+      "file": "FAILED-V5/side-frame000.png",
+      "width": 640,
+      "height": 640,
+      "samples": 24,
+      "sha256": "453affcb260b7371c7e7f1da39d5f5ae150974fd8c147c718afedf61924386a8"
+    },
+    {
+      "label": "FAILED-V5",
+      "camera": "Camera_ThreeQuarter",
+      "frame": 36,
+      "file": "FAILED-V5/idle-frame036.png",
+      "width": 512,
+      "height": 512,
+      "samples": 8,
+      "sha256": "ea14c33528c2b31ca3244404808e38c22b7fb48bad2cabe923af066f7c754093"
+    },
+    {
+      "label": "FAILED-V5",
+      "camera": "Camera_ThreeQuarter",
+      "frame": 72,
+      "file": "FAILED-V5/idle-frame072.png",
+      "width": 512,
+      "height": 512,
+      "samples": 8,
+      "sha256": "377f80bf205b3ae7f397c83bfaaf1344f8636a3503e133904448fc6c28663c04"
+    },
+    {
+      "label": "FAILED-V5",
+      "camera": "Camera_ThreeQuarter",
+      "frame": 108,
+      "file": "FAILED-V5/idle-frame108.png",
+      "width": 512,
+      "height": 512,
+      "samples": 8,
+      "sha256": "4b87ce1eef5acd6c13c8e962768d1700d4571aeeb7005c48a7ace5d9fc18e9e2"
+    },
+    {
+      "label": "FAILED-V5",
+      "camera": "Camera_ThreeQuarter",
+      "frame": 142,
+      "file": "FAILED-V5/idle-frame142.png",
+      "width": 512,
+      "height": 512,
+      "samples": 8,
+      "sha256": "438355187a6bb8d26a57a651c1530f9c9b1a5cd9207330938d86afc1233e0849"
+    }
+  ],
+  "same_source_cameras_lights_film_seed_for_both": true,
+  "transparent_background_and_floor_hidden_for_silhouette_comparison": true,
+  "source_blend_or_existing_outputs_overwritten": false,
+  "limits": [
+    "Five idle poses and three same-camera real GLB views; not a new smooth full idle video.",
+    "Native/export reload and format checks do not override the failed .004 surface-deviation gate."
+  ]
+}

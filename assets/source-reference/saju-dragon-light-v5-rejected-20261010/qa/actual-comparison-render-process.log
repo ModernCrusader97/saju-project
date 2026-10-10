@@ -1,0 +1,57 @@
+00:01.766  blend            | Read blend: "D:\Codex\Results\SaJuDragonLightCandidateV5-20261010-Joseph\failed-one-candidate-complete-evidence\FAILED_SaJu_Dragon_Light_Candidate_v5.blend"
+05:53:11 | INFO: Data are loaded, start creating Blender stuff
+05:53:11 | INFO: Blender create Mesh node Horn_Main_-1_Mesh.001
+05:53:11 | INFO: Blender create Mesh node Belly_Fold_00_Mesh.001
+05:53:11 | INFO: Blender create Mesh node Surface_Eye_Soft_Lid_-1_Mesh.001
+05:53:11 | INFO: Blender create Mesh node Dragon_Continuous_Skin_Mesh.001
+05:53:12 | INFO: Blender create Mesh node Surface_Ear_Ivory_Inset_-1_Mesh.001
+05:53:12 | INFO: Blender create Mesh node Surface_Eye_White_-1_Mesh.001
+05:53:12 | INFO: Blender create Mesh node Surface_Eye_Brown_-1_Mesh.001
+05:53:12 | INFO: Blender create Mesh node Sphere.024
+05:53:12 | INFO: Blender create Mesh node Surface_Nostril_-1_Mesh.001
+05:53:12 | INFO: Blender create Mesh node Surface_Gentle_Closed_Smile_Mesh.001
+05:53:12 | INFO: glTF import finished in 0.66s
+05:53:13 | INFO: Data are loaded, start creating Blender stuff
+05:53:13 | INFO: Blender create Mesh node Horn_Main_-1_Mesh.001
+05:53:13 | INFO: Blender create Mesh node Belly_Fold_00_Mesh.001
+05:53:13 | INFO: Blender create Mesh node Surface_Eye_Soft_Lid_-1_Mesh.001
+05:53:13 | INFO: Blender create Mesh node Dragon_Continuous_Skin_Mesh.001
+05:53:14 | INFO: Blender create Mesh node Surface_Ear_Ivory_Inset_-1_Mesh.001
+05:53:14 | INFO: Blender create Mesh node Surface_Eye_White_-1_Mesh.001
+05:53:14 | INFO: Blender create Mesh node Surface_Eye_Brown_-1_Mesh.001
+05:53:14 | INFO: Blender create Mesh node Sphere.024
+05:53:14 | INFO: Blender create Mesh node Surface_Nostril_-1_Mesh.001
+05:53:14 | INFO: Blender create Mesh node Surface_Gentle_Closed_Smile_Mesh.001
+05:53:14 | INFO: glTF import finished in 0.59s
+00:11.359  render           | Saved: 'D:\Codex\Results\SaJuDragonLightCandidateV5-20261010-Joseph\actual-comparison-renders\V4-baseline\front-frame000.png'
+ACTUAL_COMPARISON_RENDER V4-baseline front 0
+00:16.844  render           | Saved: 'D:\Codex\Results\SaJuDragonLightCandidateV5-20261010-Joseph\actual-comparison-renders\V4-baseline\threequarter-frame000.png'
+ACTUAL_COMPARISON_RENDER V4-baseline threequarter 0
+00:21.375  render           | Saved: 'D:\Codex\Results\SaJuDragonLightCandidateV5-20261010-Joseph\actual-comparison-renders\V4-baseline\side-frame000.png'
+ACTUAL_COMPARISON_RENDER V4-baseline side 0
+00:23.937  render           | Saved: 'D:\Codex\Results\SaJuDragonLightCandidateV5-20261010-Joseph\actual-comparison-renders\V4-baseline\idle-frame036.png'
+ACTUAL_COMPARISON_RENDER V4-baseline idle 36
+00:26.422  render           | Saved: 'D:\Codex\Results\SaJuDragonLightCandidateV5-20261010-Joseph\actual-comparison-renders\V4-baseline\idle-frame072.png'
+ACTUAL_COMPARISON_RENDER V4-baseline idle 72
+00:29.000  render           | Saved: 'D:\Codex\Results\SaJuDragonLightCandidateV5-20261010-Joseph\actual-comparison-renders\V4-baseline\idle-frame108.png'
+ACTUAL_COMPARISON_RENDER V4-baseline idle 108
+00:31.547  render           | Saved: 'D:\Codex\Results\SaJuDragonLightCandidateV5-20261010-Joseph\actual-comparison-renders\V4-baseline\idle-frame142.png'
+ACTUAL_COMPARISON_RENDER V4-baseline idle 142
+00:37.047  render           | Saved: 'D:\Codex\Results\SaJuDragonLightCandidateV5-20261010-Joseph\actual-comparison-renders\FAILED-V5\front-frame000.png'
+ACTUAL_COMPARISON_RENDER FAILED-V5 front 0
+00:42.344  render           | Saved: 'D:\Codex\Results\SaJuDragonLightCandidateV5-20261010-Joseph\actual-comparison-renders\FAILED-V5\threequarter-frame000.png'
+ACTUAL_COMPARISON_RENDER FAILED-V5 threequarter 0
+00:47.031  render           | Saved: 'D:\Codex\Results\SaJuDragonLightCandidateV5-20261010-Joseph\actual-comparison-renders\FAILED-V5\side-frame000.png'
+ACTUAL_COMPARISON_RENDER FAILED-V5 side 0
+00:49.594  render           | Saved: 'D:\Codex\Results\SaJuDragonLightCandidateV5-20261010-Joseph\actual-comparison-renders\FAILED-V5\idle-frame036.png'
+ACTUAL_COMPARISON_RENDER FAILED-V5 idle 36
+00:52.234  render           | Saved: 'D:\Codex\Results\SaJuDragonLightCandidateV5-20261010-Joseph\actual-comparison-renders\FAILED-V5\idle-frame072.png'
+ACTUAL_COMPARISON_RENDER FAILED-V5 idle 72
+00:54.703  render           | Saved: 'D:\Codex\Results\SaJuDragonLightCandidateV5-20261010-Joseph\actual-comparison-renders\FAILED-V5\idle-frame108.png'
+ACTUAL_COMPARISON_RENDER FAILED-V5 idle 108
+00:56.984  render           | Saved: 'D:\Codex\Results\SaJuDragonLightCandidateV5-20261010-Joseph\actual-comparison-renders\FAILED-V5\idle-frame142.png'
+ACTUAL_COMPARISON_RENDER FAILED-V5 idle 142
+FAILED_CANDIDATE_DIAGNOSTIC_RENDER_CAPTURE_COMPLETE
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

@@ -1,0 +1,137 @@
+{
+  "status": "PRESERVED_FAILED_SINGLE_CANDIDATE_NOT_DELIVERABLE",
+  "source_blend_sha256": "c18682ca0f32973b815abd0185c049c6ed9ce005eee6388a2549388bd66bc3bc",
+  "candidate_blend_sha256": "4a01f8c7482e0cabf87842016cc01723de1da53a3c6452727b93a8e1fc37582b",
+  "candidate_glb_sha256": "3a2c6297c871d97cc4c32e6adc6b2cd67251db8c8d1c28d2e002980ed68b203e",
+  "method": "COLLAPSE 0.8, only untextured Dragon_Mane_Warm_Orange, before armature. No UV changes or new design.",
+  "optimized_objects": [
+    "Dragon_Mane_Warm_Orange"
+  ],
+  "before": {
+    "Dragon_Continuous_Teal_Ivory_Vertex_PBR": {
+      "vertices": 36639,
+      "triangles": 73274
+    },
+    "Dragon_Belly_Subtle_Seams": {
+      "vertices": 2466,
+      "triangles": 4896
+    },
+    "Dragon_Smile_Warm_Deep_Teal": {
+      "vertices": 552,
+      "triangles": 1100
+    },
+    "Dragon_Body_Teal": {
+      "vertices": 1234,
+      "triangles": 2376
+    },
+    "Dragon_Eyes_Soft_Ivory": {
+      "vertices": 3702,
+      "triangles": 7128
+    },
+    "Dragon_Eyes_Warm_Brown": {
+      "vertices": 1234,
+      "triangles": 2376
+    },
+    "Dragon_Nostrils_Deep_Teal": {
+      "vertices": 1234,
+      "triangles": 2376
+    },
+    "Dragon_Ear_Inner_Ivory": {
+      "vertices": 1234,
+      "triangles": 2376
+    },
+    "Dragon_Belly_Horns_Whiskers_Ivory": {
+      "vertices": 21216,
+      "triangles": 42048
+    },
+    "Dragon_Mane_Warm_Orange": {
+      "vertices": 42348,
+      "triangles": 84696
+    }
+  },
+  "after": {
+    "Dragon_Continuous_Teal_Ivory_Vertex_PBR": {
+      "vertices": 36639,
+      "triangles": 73274
+    },
+    "Dragon_Belly_Subtle_Seams": {
+      "vertices": 2466,
+      "triangles": 4896
+    },
+    "Dragon_Smile_Warm_Deep_Teal": {
+      "vertices": 552,
+      "triangles": 1100
+    },
+    "Dragon_Body_Teal": {
+      "vertices": 1234,
+      "triangles": 2376
+    },
+    "Dragon_Eyes_Soft_Ivory": {
+      "vertices": 3702,
+      "triangles": 7128
+    },
+    "Dragon_Eyes_Warm_Brown": {
+      "vertices": 1234,
+      "triangles": 2376
+    },
+    "Dragon_Nostrils_Deep_Teal": {
+      "vertices": 1234,
+      "triangles": 2376
+    },
+    "Dragon_Ear_Inner_Ivory": {
+      "vertices": 1234,
+      "triangles": 2376
+    },
+    "Dragon_Belly_Horns_Whiskers_Ivory": {
+      "vertices": 21216,
+      "triangles": 42048
+    },
+    "Dragon_Mane_Warm_Orange": {
+      "vertices": 33878,
+      "triangles": 67756
+    }
+  },
+  "runtime_triangles_before": 222646,
+  "runtime_triangles_after": 205706,
+  "all_other_9_runtime_meshes_exact": true,
+  "original_editable_sculpt_unchanged": true,
+  "original_sculpt_mesh_objects_preserved": 111,
+  "all_145_bone_poses_exact": true,
+  "pose_sha256": "8de85c1ead97d652eb1b701beb146af2592c6935593f10d8d030e66173ca165f",
+  "materials_uv_texture_eye_face_body_limbs_unchanged": true,
+  "bad_weights": 0,
+  "mane_surface_distances_by_frame": {
+    "0": {
+      "candidate_to_original_max": 0.0014650835655629635,
+      "original_to_candidate_max": 0.008926763199269772,
+      "candidate_to_original_mean": 3.529922188855606e-05,
+      "original_to_candidate_mean": 5.765814668449188e-05
+    },
+    "36": {
+      "candidate_to_original_max": 0.0011573565425351262,
+      "original_to_candidate_max": 0.006642481312155724,
+      "candidate_to_original_mean": 3.515285826153264e-05,
+      "original_to_candidate_mean": 5.482614047202685e-05
+    },
+    "72": {
+      "candidate_to_original_max": 0.0013678972609341145,
+      "original_to_candidate_max": 0.006596985273063183,
+      "candidate_to_original_mean": 3.518687963166099e-05,
+      "original_to_candidate_mean": 5.679386168288694e-05
+    },
+    "108": {
+      "candidate_to_original_max": 0.0015252274461090565,
+      "original_to_candidate_max": 0.007377054076641798,
+      "candidate_to_original_mean": 3.5132859472832675e-05,
+      "original_to_candidate_mean": 5.417122491744219e-05
+    },
+    "144": {
+      "candidate_to_original_max": 0.0014650835655629635,
+      "original_to_candidate_max": 0.008926763199269772,
+      "candidate_to_original_mean": 3.529922188855606e-05,
+      "original_to_candidate_mean": 5.765814668449188e-05
+    }
+  },
+  "original_high_sculpt_hidden_not_deleted": true,
+  "native_active_collection": "Runtime_GLTF_Meshes"
+}
