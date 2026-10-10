@@ -38,6 +38,7 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
   const [loading, setLoading] = useState(true);
   const [loadError,setLoadError]=useState<string|null>(null);
   const [copied, setCopied] = useState(false);
+  const copyFeedbackTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
   const [selectedPersonId, setSelectedPersonId] = useState<string | undefined>(undefined);
   const [distanceScale, setDistanceScale] = useState(1.0);
   const [speedScale, setSpeedScale] = useState(1.0);
@@ -59,6 +60,10 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
   const [joining, setJoining] = useState(false);
   const joinDialogRef = useRef<HTMLDivElement>(null);
   const joinTriggerRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => () => {
+    clearTimeout(copyFeedbackTimer.current);
+  }, []);
 
   useEffect(() => {
     const controller = new AbortController();
@@ -148,7 +153,11 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
     const url = window.location.href;
     navigator.clipboard.writeText(url);
     setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+    clearTimeout(copyFeedbackTimer.current);
+    copyFeedbackTimer.current = setTimeout(() => {
+      copyFeedbackTimer.current = undefined;
+      setCopied(false);
+    }, 2000);
   };
 
   const handleQuickAddTestFriend = async (name: string, y: number, m: number, d: number, h?: number, min?: number) => {

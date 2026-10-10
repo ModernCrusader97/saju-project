@@ -1,0 +1,134 @@
+{
+  "basis": "bad1d8abd9d6b691d7da0b506e763bca53d3c424",
+  "phase": "after",
+  "applicationSourceSHA256": "ee5a07c7c1a7f2dbfd7d3ef4f864f354923176c5804ffadbc01bdaab46c9dc7d",
+  "passed": 8,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "single copy stays acknowledged for two seconds",
+      "status": "PASS"
+    },
+    {
+      "name": "a later copy receives its own full two-second acknowledgment",
+      "status": "PASS"
+    },
+    {
+      "name": "a burst of copies owns one pending feedback deadline",
+      "status": "PASS"
+    },
+    {
+      "name": "unmount leaves no pending feedback callback",
+      "status": "PASS"
+    },
+    {
+      "name": "a keyed route replacement disposes the old feedback deadline",
+      "status": "PASS"
+    },
+    {
+      "name": "copy can start fresh after the previous acknowledgment expires",
+      "status": "PASS"
+    },
+    {
+      "name": "every copy keeps the current map URL and clipboard call count",
+      "status": "PASS"
+    },
+    {
+      "name": "Strict Mode also releases feedback work when the page leaves",
+      "status": "PASS"
+    }
+  ],
+  "observations": [
+    {
+      "name": "single copy stays acknowledged for two seconds",
+      "now": 2000,
+      "fired": 1,
+      "canceled": 0,
+      "pending": 0,
+      "writes": [
+        "http://local.test/guin/qa-share-a"
+      ]
+    },
+    {
+      "name": "a later copy receives its own full two-second acknowledgment",
+      "now": 3500,
+      "fired": 1,
+      "canceled": 1,
+      "pending": 0,
+      "writes": [
+        "http://local.test/guin/qa-share-a",
+        "http://local.test/guin/qa-share-a"
+      ]
+    },
+    {
+      "name": "a burst of copies owns one pending feedback deadline",
+      "now": 2000,
+      "fired": 1,
+      "canceled": 4,
+      "pending": 0,
+      "writes": [
+        "http://local.test/guin/qa-share-a",
+        "http://local.test/guin/qa-share-a",
+        "http://local.test/guin/qa-share-a",
+        "http://local.test/guin/qa-share-a",
+        "http://local.test/guin/qa-share-a"
+      ]
+    },
+    {
+      "name": "unmount leaves no pending feedback callback",
+      "now": 3000,
+      "fired": 0,
+      "canceled": 1,
+      "pending": 0,
+      "writes": [
+        "http://local.test/guin/qa-share-a"
+      ]
+    },
+    {
+      "name": "a keyed route replacement disposes the old feedback deadline",
+      "now": 2500,
+      "fired": 0,
+      "canceled": 1,
+      "pending": 0,
+      "writes": [
+        "http://local.test/guin/qa-share-a"
+      ]
+    },
+    {
+      "name": "copy can start fresh after the previous acknowledgment expires",
+      "now": 4000,
+      "fired": 2,
+      "canceled": 0,
+      "pending": 0,
+      "writes": [
+        "http://local.test/guin/qa-share-a",
+        "http://local.test/guin/qa-share-a"
+      ]
+    },
+    {
+      "name": "every copy keeps the current map URL and clipboard call count",
+      "now": 0,
+      "fired": 0,
+      "canceled": 1,
+      "pending": 1,
+      "writes": [
+        "http://local.test/guin/qa-share-a",
+        "http://local.test/guin/qa-share-a"
+      ]
+    },
+    {
+      "name": "Strict Mode also releases feedback work when the page leaves",
+      "now": 3000,
+      "fired": 0,
+      "canceled": 1,
+      "pending": 0,
+      "writes": [
+        "http://local.test/guin/qa-share-a"
+      ]
+    }
+  ],
+  "limits": [
+    "Real React and page/response reader; navigation and 3D components are boundary stubs.",
+    "Feedback time, clipboard and HTTP are controlled boundaries; native browser time is verified separately."
+  ]
+}

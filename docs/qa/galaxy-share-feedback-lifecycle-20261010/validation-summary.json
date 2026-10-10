@@ -1,0 +1,60 @@
+{
+  "basis": "bad1d8abd9d6b691d7da0b506e763bca53d3c424",
+  "branch": "fix/galaxy-share-feedback-lifecycle-20261010",
+  "applicationSourceSHA256": "ee5a07c7c1a7f2dbfd7d3ef4f864f354923176c5804ffadbc01bdaab46c9dc7d",
+  "clientJavaScriptSHA256": "276756351932fae1f4ce6ee156e99c63004a2da226496f4763fc9e16cabe202c",
+  "results": {
+    "before": {
+      "dom": {
+        "passed": 3,
+        "failed": 5
+      },
+      "browser": {
+        "passed": 3,
+        "failed": 2
+      }
+    },
+    "after": {
+      "dom": {
+        "passed": 8,
+        "failed": 0
+      },
+      "browser": {
+        "passed": 5,
+        "failed": 0
+      }
+    }
+  },
+  "buildExitCode": 0,
+  "types": {
+    "command": "tsc --noEmit --incremental false",
+    "exitCode": 0,
+    "elapsedSeconds": 4.18
+  },
+  "lint": {
+    "exitCode": 1,
+    "errors": 2,
+    "warnings": 3,
+    "baselineMessagesUnchanged": true,
+    "newQaMessages": 0
+  },
+  "unexpectedPageErrors": 0,
+  "outboundRequests": 0,
+  "copyPostRequests": 0,
+  "expectedUnsupportedWebGLConsoleErrors": 4,
+  "protectedRemoteReferences": {
+    "refs/heads/fix/galaxy-fallback-dialog-keyboard-20261010": "bad1d8abd9d6b691d7da0b506e763bca53d3c424",
+    "refs/heads/main": "2e2d82b05f87b39ff8057ae914e8dfa01100a974",
+    "refs/heads/maint/guin-map-loading-20261009": "43e2d8dc6efe1654641e639397f37d0ea44f525a"
+  },
+  "visualReview": [
+    "before/recent-copy-390.png",
+    "after/recent-copy-390.png"
+  ],
+  "diffCheckExitCode": 0,
+  "limits": [
+    "Actual Chromium keyboard, performance clock and browser timers on a built local Worker with synthetic identity/ephemeral D1.",
+    "Clipboard writes are intercepted; OS clipboard permission and contents are not tested. WebGL is explicitly unsupported for these UI checks.",
+    "Component unmount/Strict Mode cleanup uses the separate React DOM suite; Safari/Firefox and physical devices are not tested."
+  ]
+}

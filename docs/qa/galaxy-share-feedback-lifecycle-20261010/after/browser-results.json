@@ -1,0 +1,118 @@
+{
+  "basis": "bad1d8abd9d6b691d7da0b506e763bca53d3c424",
+  "phase": "after",
+  "browser": "151.0.7922.173",
+  "applicationSourceSHA256": "ee5a07c7c1a7f2dbfd7d3ef4f864f354923176c5804ffadbc01bdaab46c9dc7d",
+  "clientJavaScriptSHA256": "276756351932fae1f4ce6ee156e99c63004a2da226496f4763fc9e16cabe202c",
+  "passed": 5,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "native repeated copy keeps the recent acknowledgment at 390px",
+      "status": "PASS"
+    },
+    {
+      "name": "native copy restarts normally after expiry at 390px",
+      "status": "PASS"
+    },
+    {
+      "name": "native repeated copy keeps the recent acknowledgment at 1440px",
+      "status": "PASS"
+    },
+    {
+      "name": "native copy restarts normally after expiry at 1440px",
+      "status": "PASS"
+    },
+    {
+      "name": "copy adds no unexpected errors or outbound requests",
+      "status": "PASS"
+    }
+  ],
+  "observations": [
+    {
+      "scenario": "native repeated copy",
+      "width": 390,
+      "writes": [
+        {
+          "text": "http://127.0.0.1:36511/guin/gm_fe5f451a-72db-483a-bbe1-811db1ddc032",
+          "time": 1141.7999999970198
+        },
+        {
+          "text": "http://127.0.0.1:36511/guin/gm_fe5f451a-72db-483a-bbe1-811db1ddc032",
+          "time": 2351.5999999940395
+        }
+      ],
+      "recent": {
+        "now": 3401.2999999970198,
+        "label": "복사 완료!"
+      },
+      "elapsedAfterLatest": 1049.7000000029802,
+      "expired": "은하 링크 공유",
+      "posts": 0
+    },
+    {
+      "scenario": "native copy after expiry",
+      "width": 390,
+      "writes": [
+        {
+          "text": "http://127.0.0.1:36511/guin/gm_fe5f451a-72db-483a-bbe1-811db1ddc032",
+          "time": 914.8999999910593
+        },
+        {
+          "text": "http://127.0.0.1:36511/guin/gm_fe5f451a-72db-483a-bbe1-811db1ddc032",
+          "time": 3181.2999999970198
+        }
+      ],
+      "posts": 0
+    },
+    {
+      "scenario": "native repeated copy",
+      "width": 1440,
+      "writes": [
+        {
+          "text": "http://127.0.0.1:36511/guin/gm_fe5f451a-72db-483a-bbe1-811db1ddc032",
+          "time": 859.7000000029802
+        },
+        {
+          "text": "http://127.0.0.1:36511/guin/gm_fe5f451a-72db-483a-bbe1-811db1ddc032",
+          "time": 2065.2999999970198
+        }
+      ],
+      "recent": {
+        "now": 3115.3999999910593,
+        "label": "복사 완료!"
+      },
+      "elapsedAfterLatest": 1050.0999999940395,
+      "expired": "은하 링크 공유",
+      "posts": 0
+    },
+    {
+      "scenario": "native copy after expiry",
+      "width": 1440,
+      "writes": [
+        {
+          "text": "http://127.0.0.1:36511/guin/gm_fe5f451a-72db-483a-bbe1-811db1ddc032",
+          "time": 953.9000000059605
+        },
+        {
+          "text": "http://127.0.0.1:36511/guin/gm_fe5f451a-72db-483a-bbe1-811db1ddc032",
+          "time": 3217.4000000059605
+        }
+      ],
+      "posts": 0
+    }
+  ],
+  "errors": [],
+  "consoleErrors": [
+    "THREE.WebGLRenderer: THREE.WebGLRenderer: Error creating WebGL context.",
+    "THREE.WebGLRenderer: THREE.WebGLRenderer: Error creating WebGL context.",
+    "THREE.WebGLRenderer: THREE.WebGLRenderer: Error creating WebGL context.",
+    "THREE.WebGLRenderer: THREE.WebGLRenderer: Error creating WebGL context."
+  ],
+  "outbound": [],
+  "limits": [
+    "Actual Chromium keyboard, performance clock and browser timers on a built local Worker with synthetic identity/ephemeral D1.",
+    "Clipboard writes are intercepted; OS clipboard permission and contents are not tested. WebGL is explicitly unsupported for these UI checks.",
+    "Component unmount/Strict Mode cleanup uses the separate React DOM suite; Safari/Firefox and physical devices are not tested."
+  ]
+}

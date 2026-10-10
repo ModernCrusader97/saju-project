@@ -1,0 +1,18 @@
+{
+  "basis": "bad1d8abd9d6b691d7da0b506e763bca53d3c424",
+  "oldTrackedFiles": 545,
+  "oldFilesByteIdentical": 544,
+  "changedOldPaths": [
+    "app/guin/[id]/page.tsx"
+  ],
+  "normalizedPageByteIdentical": true,
+  "clipboardCallAndUrlUnchanged": true,
+  "friendRequestHandlersUnchanged": true,
+  "uiClassesAndLabelsUnchanged": true,
+  "pageBeforeSHA256": "921e290cd43a22aa7bf3bbb7c3e64ad56ca9303a13a43745840d06830a8d02b4",
+  "pageAfterSHA256": "ee5a07c7c1a7f2dbfd7d3ef4f864f354923176c5804ffadbc01bdaab46c9dc7d",
+  "previousKeyboardFixCanvasSHA256": "37e92c3a8fc81fbcfd3343c706897bdb2112cc85f41341af37b98d69b18c7209",
+  "preservedWipScriptSHA256": "75ea6f5726ce41272841494c3a3316e3f4b88ea7c4888d71e21e981ee9030539",
+  "newDomScriptSHA256": "db4159375b3d9c0545c30973eb7dabeca31cb6ef0ffe02ff1c88c019b055b14a",
+  "newBrowserScriptSHA256": "7208f88676793ee886627b034a3ee08d6141ab8aea054b002bac4a134f4661f5"
+}

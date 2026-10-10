@@ -1,0 +1,139 @@
+{
+  "basis": "bad1d8abd9d6b691d7da0b506e763bca53d3c424",
+  "phase": "before",
+  "applicationSourceSHA256": "921e290cd43a22aa7bf3bbb7c3e64ad56ca9303a13a43745840d06830a8d02b4",
+  "passed": 3,
+  "failed": 5,
+  "checks": [
+    {
+      "name": "single copy stays acknowledged for two seconds",
+      "status": "PASS"
+    },
+    {
+      "name": "a later copy receives its own full two-second acknowledgment",
+      "status": "FAIL",
+      "error": "The first copy deadline must not erase the recent acknowledgment\n+ actual - expected\n\n+ '은하 링크 공유'\n- '복사 완료!'\n"
+    },
+    {
+      "name": "a burst of copies owns one pending feedback deadline",
+      "status": "FAIL",
+      "error": "Repeated copies must replace their old feedback work\n\n5 !== 1\n"
+    },
+    {
+      "name": "unmount leaves no pending feedback callback",
+      "status": "FAIL",
+      "error": "Leaving the page must cancel its feedback work\n\n1 !== 0\n"
+    },
+    {
+      "name": "a keyed route replacement disposes the old feedback deadline",
+      "status": "FAIL",
+      "error": "A replaced map must release its feedback deadline\n\n1 !== 0\n"
+    },
+    {
+      "name": "copy can start fresh after the previous acknowledgment expires",
+      "status": "PASS"
+    },
+    {
+      "name": "every copy keeps the current map URL and clipboard call count",
+      "status": "PASS"
+    },
+    {
+      "name": "Strict Mode also releases feedback work when the page leaves",
+      "status": "FAIL",
+      "error": "Expected values to be strictly equal:\n\n1 !== 0\n"
+    }
+  ],
+  "observations": [
+    {
+      "name": "single copy stays acknowledged for two seconds",
+      "now": 2000,
+      "fired": 1,
+      "canceled": 0,
+      "pending": 0,
+      "writes": [
+        "http://local.test/guin/qa-share-a"
+      ]
+    },
+    {
+      "name": "a later copy receives its own full two-second acknowledgment",
+      "now": 2000,
+      "fired": 1,
+      "canceled": 0,
+      "pending": 1,
+      "writes": [
+        "http://local.test/guin/qa-share-a",
+        "http://local.test/guin/qa-share-a"
+      ]
+    },
+    {
+      "name": "a burst of copies owns one pending feedback deadline",
+      "now": 0,
+      "fired": 0,
+      "canceled": 0,
+      "pending": 5,
+      "writes": [
+        "http://local.test/guin/qa-share-a",
+        "http://local.test/guin/qa-share-a",
+        "http://local.test/guin/qa-share-a",
+        "http://local.test/guin/qa-share-a",
+        "http://local.test/guin/qa-share-a"
+      ]
+    },
+    {
+      "name": "unmount leaves no pending feedback callback",
+      "now": 0,
+      "fired": 0,
+      "canceled": 0,
+      "pending": 1,
+      "writes": [
+        "http://local.test/guin/qa-share-a"
+      ]
+    },
+    {
+      "name": "a keyed route replacement disposes the old feedback deadline",
+      "now": 500,
+      "fired": 0,
+      "canceled": 0,
+      "pending": 1,
+      "writes": [
+        "http://local.test/guin/qa-share-a"
+      ]
+    },
+    {
+      "name": "copy can start fresh after the previous acknowledgment expires",
+      "now": 4000,
+      "fired": 2,
+      "canceled": 0,
+      "pending": 0,
+      "writes": [
+        "http://local.test/guin/qa-share-a",
+        "http://local.test/guin/qa-share-a"
+      ]
+    },
+    {
+      "name": "every copy keeps the current map URL and clipboard call count",
+      "now": 0,
+      "fired": 0,
+      "canceled": 0,
+      "pending": 2,
+      "writes": [
+        "http://local.test/guin/qa-share-a",
+        "http://local.test/guin/qa-share-a"
+      ]
+    },
+    {
+      "name": "Strict Mode also releases feedback work when the page leaves",
+      "now": 0,
+      "fired": 0,
+      "canceled": 0,
+      "pending": 1,
+      "writes": [
+        "http://local.test/guin/qa-share-a"
+      ]
+    }
+  ],
+  "limits": [
+    "Real React and page/response reader; navigation and 3D components are boundary stubs.",
+    "Feedback time, clipboard and HTTP are controlled boundaries; native browser time is verified separately."
+  ]
+}

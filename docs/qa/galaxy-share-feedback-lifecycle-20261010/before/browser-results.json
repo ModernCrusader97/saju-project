@@ -1,0 +1,120 @@
+{
+  "basis": "bad1d8abd9d6b691d7da0b506e763bca53d3c424",
+  "phase": "before",
+  "browser": "151.0.7922.173",
+  "applicationSourceSHA256": "921e290cd43a22aa7bf3bbb7c3e64ad56ca9303a13a43745840d06830a8d02b4",
+  "clientJavaScriptSHA256": "90ad7dc67edd3ae3a6cffbd4dc67d03dc1cf2af86b63ca2ee4a5e7fd679883fd",
+  "passed": 3,
+  "failed": 2,
+  "checks": [
+    {
+      "name": "native repeated copy keeps the recent acknowledgment at 390px",
+      "status": "FAIL",
+      "error": "The previous copy deadline must not hide feedback from the recent copy\n+ actual - expected\n\n+ '은하 링크 공유'\n- '복사 완료!'\n"
+    },
+    {
+      "name": "native copy restarts normally after expiry at 390px",
+      "status": "PASS"
+    },
+    {
+      "name": "native repeated copy keeps the recent acknowledgment at 1440px",
+      "status": "FAIL",
+      "error": "The previous copy deadline must not hide feedback from the recent copy\n+ actual - expected\n\n+ '은하 링크 공유'\n- '복사 완료!'\n"
+    },
+    {
+      "name": "native copy restarts normally after expiry at 1440px",
+      "status": "PASS"
+    },
+    {
+      "name": "copy adds no unexpected errors or outbound requests",
+      "status": "PASS"
+    }
+  ],
+  "observations": [
+    {
+      "scenario": "native repeated copy",
+      "width": 390,
+      "writes": [
+        {
+          "text": "http://127.0.0.1:46575/guin/gm_f4514439-391c-4862-aff5-2548b47b45da",
+          "time": 1014.7999999970198
+        },
+        {
+          "text": "http://127.0.0.1:46575/guin/gm_f4514439-391c-4862-aff5-2548b47b45da",
+          "time": 2225
+        }
+      ],
+      "recent": {
+        "now": 3274.9000000059605,
+        "label": "은하 링크 공유"
+      },
+      "elapsedAfterLatest": 1049.9000000059605,
+      "expired": "은하 링크 공유",
+      "posts": 0
+    },
+    {
+      "scenario": "native copy after expiry",
+      "width": 390,
+      "writes": [
+        {
+          "text": "http://127.0.0.1:46575/guin/gm_f4514439-391c-4862-aff5-2548b47b45da",
+          "time": 888.6000000089407
+        },
+        {
+          "text": "http://127.0.0.1:46575/guin/gm_f4514439-391c-4862-aff5-2548b47b45da",
+          "time": 3147.7000000029802
+        }
+      ],
+      "posts": 0
+    },
+    {
+      "scenario": "native repeated copy",
+      "width": 1440,
+      "writes": [
+        {
+          "text": "http://127.0.0.1:46575/guin/gm_f4514439-391c-4862-aff5-2548b47b45da",
+          "time": 944.2999999970198
+        },
+        {
+          "text": "http://127.0.0.1:46575/guin/gm_f4514439-391c-4862-aff5-2548b47b45da",
+          "time": 2152.9000000059605
+        }
+      ],
+      "recent": {
+        "now": 3203.2999999970198,
+        "label": "은하 링크 공유"
+      },
+      "elapsedAfterLatest": 1050.3999999910593,
+      "expired": "은하 링크 공유",
+      "posts": 0
+    },
+    {
+      "scenario": "native copy after expiry",
+      "width": 1440,
+      "writes": [
+        {
+          "text": "http://127.0.0.1:46575/guin/gm_f4514439-391c-4862-aff5-2548b47b45da",
+          "time": 954.0999999940395
+        },
+        {
+          "text": "http://127.0.0.1:46575/guin/gm_f4514439-391c-4862-aff5-2548b47b45da",
+          "time": 3212.7999999970198
+        }
+      ],
+      "posts": 0
+    }
+  ],
+  "errors": [],
+  "consoleErrors": [
+    "THREE.WebGLRenderer: THREE.WebGLRenderer: Error creating WebGL context.",
+    "THREE.WebGLRenderer: THREE.WebGLRenderer: Error creating WebGL context.",
+    "THREE.WebGLRenderer: THREE.WebGLRenderer: Error creating WebGL context.",
+    "THREE.WebGLRenderer: THREE.WebGLRenderer: Error creating WebGL context."
+  ],
+  "outbound": [],
+  "limits": [
+    "Actual Chromium keyboard, performance clock and browser timers on a built local Worker with synthetic identity/ephemeral D1.",
+    "Clipboard writes are intercepted; OS clipboard permission and contents are not tested. WebGL is explicitly unsupported for these UI checks.",
+    "Component unmount/Strict Mode cleanup uses the separate React DOM suite; Safari/Firefox and physical devices are not tested."
+  ]
+}
