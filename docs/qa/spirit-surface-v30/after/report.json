@@ -1,0 +1,65 @@
+{
+  "status": "PASS",
+  "phase": "after",
+  "metadata": {
+    "material": "丙 · Solar fire",
+    "kind": 2,
+    "program": "stem-water-v3-r186-coherent-advection:2:high:character-rest-v1",
+    "restCoordinateVertices": 33207,
+    "presentationDepth": 1.35,
+    "positionSHA256": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+    "uvSHA256": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+    "morphs": [
+      0
+    ],
+    "petStatus": "procedural-placeholder",
+    "authoredPetStatus": "missing-source",
+    "effects": [
+      "SoftSolarFireWisps"
+    ]
+  },
+  "frames": [
+    {
+      "file": "fire-front.png",
+      "angle": 0,
+      "diagnostic": false
+    },
+    {
+      "file": "coordinates-front.png",
+      "angle": 0,
+      "diagnostic": true
+    },
+    {
+      "file": "fire-oblique.png",
+      "angle": 0.7853981633974483,
+      "diagnostic": false
+    },
+    {
+      "file": "coordinates-oblique.png",
+      "angle": 0.7853981633974483,
+      "diagnostic": true
+    },
+    {
+      "file": "fire-side.png",
+      "angle": 1.5707963267948966,
+      "diagnostic": false
+    },
+    {
+      "file": "coordinates-side.png",
+      "angle": 1.5707963267948966,
+      "diagnostic": true
+    }
+  ],
+  "memory": {
+    "geometries": 0,
+    "textures": 2
+  },
+  "errors": [],
+  "outbound": [],
+  "limits": [
+    "Diagnostic grid replaces shading only in clearly named coordinate screenshots; fire screenshots use the actual runtime material and effects",
+    "Same 8 cycles per coordinate unit in both diagnostic modes; coordinate units are collapsed unit directions in v30, displayed rest units in candidate",
+    "Local Chromium SwiftShader, no hosted authenticated session or physical mobile GPU",
+    "No authored animal GLB is available; the existing tiger remains a temporary procedural model"
+  ]
+}

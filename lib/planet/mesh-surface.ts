@@ -4,16 +4,18 @@ export interface SurfacePose { position: THREE.Vector3; normal: THREE.Vector3 }
 interface Face { mesh: THREE.Mesh; triangle: number; a: THREE.Vector3; b: THREE.Vector3; c: THREE.Vector3; cumulative: number }
 const fract = (n:number) => n-Math.floor(n);
 export const seeded = (n:number):number => fract(Math.sin(n*127.1+311.7)*43758.5453123);
-/** Static geometry, moving rigid transforms. Barycentric positions use actual triangle planes. */
+/** Static geometry, moving rigid transforms and neutral morphs. Barycentric
+ * positions use actual triangle planes; active deformation requires a rebuild. */
 export class MeshSurface {
   private faces: Face[] = [];
   private byMesh = new Map<THREE.Mesh, Face[]>();
+  private pathNormals = new Map<THREE.Mesh, Float64Array>();
   private total = 0;
   readonly bounds = new THREE.Box3();
   constructor(readonly meshes: THREE.Mesh[]) {
     if (!meshes.length) throw new RangeError('At least one mesh surface is required.');
     for (const mesh of meshes) {
-      if ((mesh as THREE.SkinnedMesh).isSkinnedMesh || (mesh as THREE.InstancedMesh).isInstancedMesh || mesh.morphTargetInfluences?.length) throw new Error('Rigid non-morph Mesh surfaces only.');
+      if ((mesh as THREE.SkinnedMesh).isSkinnedMesh || (mesh as THREE.InstancedMesh).isInstancedMesh || mesh.morphTargetInfluences?.some(weight => weight !== 0)) throw new Error('Rigid Mesh surfaces with neutral morphs only.');
       const p = mesh.geometry.getAttribute('position');
       if (!p) throw new Error('Mesh requires position geometry.');
       mesh.updateWorldMatrix(true,false);
@@ -45,6 +47,7 @@ export class MeshSurface {
   resolve(anchor:SurfaceAnchor, root:THREE.Object3D, target?:SurfacePose):SurfacePose {
     const out=target??{position:new THREE.Vector3(),normal:new THREE.Vector3()};
     const mesh=anchor.mesh, p=mesh.geometry.getAttribute('position'), index=mesh.geometry.index;
+    if (mesh.morphTargetInfluences?.some(weight => weight !== 0)) throw new Error('Surface attachment requires neutral morphs.');
     const ids=[0,1,2].map(i=>index?index.getX(anchor.triangle*3+i):anchor.triangle*3+i);
     const [a,b,c]=ids.map(i=>new THREE.Vector3().fromBufferAttribute(p,i));
     out.position.copy(a).multiplyScalar(anchor.barycentric.x).addScaledVector(b,anchor.barycentric.y).addScaledVector(c,anchor.barycentric.z);
@@ -58,18 +61,29 @@ export class MeshSurface {
   }
   /** Short local surface crawl. Restricts projection to the SAME mesh and similar facing triangles. */
   path(anchor:SurfaceAnchor,length:number,steps=24):SurfaceAnchor[] {
-    const face=(this.byMesh.get(anchor.mesh)??[]).find(f=>f.triangle===anchor.triangle)!;
+    const faces=this.byMesh.get(anchor.mesh)??[];
+    const face=faces.find(f=>f.triangle===anchor.triangle)!;
     let point=face.a.clone().multiplyScalar(anchor.barycentric.x).addScaledVector(face.b,anchor.barycentric.y).addScaledVector(face.c,anchor.barycentric.z);
-    let normal=new THREE.Triangle(face.a,face.b,face.c).getNormal(new THREE.Vector3());
-    let direction=new THREE.Vector3(0,1,0).addScaledVector(normal,-normal.y);
+    const normal=new THREE.Triangle(face.a,face.b,face.c).getNormal(new THREE.Vector3());
+    const direction=new THREE.Vector3(0,1,0).addScaledVector(normal,-normal.y);
     if(direction.lengthSq()<.01)direction.set(1,0,0).addScaledVector(normal,-normal.x);
     direction.normalize();
     const result=[anchor], step=length/steps, tri=new THREE.Triangle(), closest=new THREE.Vector3(), n=new THREE.Vector3();
+    let normals=this.pathNormals.get(anchor.mesh);
+    if(!normals){
+      // Face vertices are immutable local snapshots. Cache only for callers that
+      // crawl; Float64 retains the exact Three normal and the original tie order.
+      normals=new Float64Array(faces.length*3);
+      faces.forEach((f,i)=>tri.set(f.a,f.b,f.c).getNormal(n).toArray(normals!,i*3));
+      this.pathNormals.set(anchor.mesh,normals);
+    }
     for(let i=1;i<=steps;i++){
       const wanted=point.clone().addScaledVector(direction,step);
-      let best:Face|undefined, distance=Infinity, pos=new THREE.Vector3();
-      for(const f of this.byMesh.get(anchor.mesh)??[]){
-        tri.set(f.a,f.b,f.c);tri.getNormal(n);if(n.dot(normal)<.35)continue;
+      let best:Face|undefined, distance=Infinity;
+      const pos=new THREE.Vector3();
+      for(let index=0;index<faces.length;index++){
+        const f=faces[index];n.fromArray(normals,index*3);if(n.dot(normal)<.35)continue;
+        tri.set(f.a,f.b,f.c);
         tri.closestPointToPoint(wanted,closest);const d=closest.distanceToSquared(wanted);
         if(d<distance){distance=d;best=f;pos.copy(closest);}
       }

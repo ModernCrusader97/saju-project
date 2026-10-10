@@ -1,0 +1,1458 @@
+{
+  "status": "AUDITED_WITH_MISSING_ANIMAL_SOURCES",
+  "sourceArchive": {
+    "repository": "ModernCrusader97/saju-project",
+    "branch": "archive/saju-local-authoring-20261009",
+    "commit": "956fe6e2a7f3de3a0aabe3c59d9d5db3795c7123",
+    "directory": "archives/2026-10-09-local-authoring",
+    "report": "PRESERVATION_REPORT.md"
+  },
+  "verification": {
+    "zipCRC": "PASS",
+    "entrySHA256": "PASS",
+    "verifiedFileEntries": 906,
+    "zipFiles": 15,
+    "glbEntries": 54,
+    "availableAuthoredAnimals": 0,
+    "nestedZIPInspection": "No additional animal source found"
+  },
+  "sourceEvidence": [
+    {
+      "path": "PRESERVATION_REPORT.md",
+      "bytes": 4459,
+      "sha256": "811c3bd2122efb875cd1c82b228a364251239bdc632f1931bc4be9f056bf6ad7"
+    },
+    {
+      "path": "preservation-asset-inventory.json",
+      "bytes": 95552,
+      "sha256": "51837fa2e9bef58aec18ca46896aaf37b0bb15489890b750d1932b72c1f0d4fe"
+    },
+    {
+      "path": "source-file-inventory.json",
+      "bytes": 119535,
+      "sha256": "9ac50cc87c0ce50b4e88d893ed680b7ee0fdad4d9ea7b2e5ca50dc1c7bae43cd"
+    },
+    {
+      "path": "consolidated-manifest.json",
+      "bytes": 2543,
+      "sha256": "08ef87c03a7d67e1bf1cd37158a9ad7002eeee15071610cf8df0431b8c472eec"
+    },
+    {
+      "path": "source-archive-manifest.json",
+      "bytes": 941,
+      "sha256": "67ade77d8b2dbace3d5e914758adaad8b9abee34b93dfba38651cb40a7b16bc3"
+    }
+  ],
+  "models": [
+    {
+      "path": "b_five_elements_v1/corrected/earth.glb",
+      "bytes": 472620,
+      "sha256": "122ac1d6354387e33b4dcf99dfa3f08dec9de14212af04d3191902554af07c51",
+      "archive": "b_five_elements_v1--part-01.zip",
+      "meshNames": [
+        "Sphere",
+        "Sphere.007",
+        "B | expressive brow -1",
+        "Sphere.009",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "Sphere.010",
+        "Sphere.011"
+      ],
+      "nodeNames": [
+        "B earth | soft continuous body and paddle hands",
+        "B | small eye glint -1",
+        "B | expressive brow -1",
+        "B | small eye glint 1",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "B | accessory socket",
+        "B | almond gaze -1"
+      ]
+    },
+    {
+      "path": "b_five_elements_v1/corrected/fire.glb",
+      "bytes": 472820,
+      "sha256": "87470ffb0a074335d494e826a33f739cc7af09b7d421b2fd612ea214924b7fa2",
+      "archive": "b_five_elements_v1--part-01.zip",
+      "meshNames": [
+        "Sphere",
+        "Sphere.007",
+        "B | expressive brow -1",
+        "Sphere.009",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "Sphere.010",
+        "Sphere.011"
+      ],
+      "nodeNames": [
+        "B fire | soft continuous body and paddle hands",
+        "B | small eye glint -1",
+        "B | expressive brow -1",
+        "B | small eye glint 1",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "B | accessory socket",
+        "B | almond gaze -1"
+      ]
+    },
+    {
+      "path": "b_five_elements_v1/corrected/metal.glb",
+      "bytes": 393192,
+      "sha256": "5b6b31ae9b0ca27393b8f1821509e1d669f948d46cff59a4ab6a8ed1abea8dfa",
+      "archive": "b_five_elements_v1--part-01.zip",
+      "meshNames": [
+        "Sphere",
+        "Sphere.007",
+        "B | expressive brow -1",
+        "Sphere.009",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "Sphere.010",
+        "Sphere.011"
+      ],
+      "nodeNames": [
+        "B metal | soft continuous body and paddle hands",
+        "B | small eye glint -1",
+        "B | expressive brow -1",
+        "B | small eye glint 1",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "B | accessory socket",
+        "B | almond gaze -1"
+      ]
+    },
+    {
+      "path": "b_five_elements_v1/corrected/water.glb",
+      "bytes": 393360,
+      "sha256": "d2ec723bb67505d330952764f04800936c22b0caa2131e9f96d085c625a70453",
+      "archive": "b_five_elements_v1--part-01.zip",
+      "meshNames": [
+        "Sphere",
+        "Sphere.007",
+        "B | expressive brow -1",
+        "Sphere.009",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "Sphere.010",
+        "Sphere.011"
+      ],
+      "nodeNames": [
+        "B water | soft continuous body and paddle hands",
+        "B | small eye glint -1",
+        "B | expressive brow -1",
+        "B | small eye glint 1",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "B | accessory socket",
+        "B | almond gaze -1"
+      ]
+    },
+    {
+      "path": "b_five_elements_v1/corrected/wood.glb",
+      "bytes": 437908,
+      "sha256": "da24fd7f64b18eab3cce3b5dba8f10eb64cbab38b6f4cea5d965062469826e01",
+      "archive": "b_five_elements_v1--part-01.zip",
+      "meshNames": [
+        "Sphere",
+        "Sphere.007",
+        "B | expressive brow -1",
+        "Sphere.009",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "Sphere.010",
+        "Sphere.011"
+      ],
+      "nodeNames": [
+        "B wood | soft continuous body and paddle hands",
+        "B | small eye glint -1",
+        "B | expressive brow -1",
+        "B | small eye glint 1",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "B | accessory socket",
+        "B | almond gaze -1"
+      ]
+    },
+    {
+      "path": "b_five_elements_v1/earth.glb",
+      "bytes": 393192,
+      "sha256": "620499851e3c8708a912c14e4e82c8082ea023c9861f836a3c42918e6ab2bc34",
+      "archive": "saju-models-materials-archive--part-01.zip",
+      "meshNames": [
+        "Sphere",
+        "Sphere.007",
+        "B | expressive brow -1",
+        "Sphere.009",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "Sphere.010",
+        "Sphere.011"
+      ],
+      "nodeNames": [
+        "B earth | soft continuous body and paddle hands",
+        "B | small eye glint -1",
+        "B | expressive brow -1",
+        "B | small eye glint 1",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "B | accessory socket",
+        "B | almond gaze -1"
+      ]
+    },
+    {
+      "path": "b_five_elements_v1/fire.glb",
+      "bytes": 472744,
+      "sha256": "537662b92cb39dd49c61c44b4cf8d4eaf36062b6f5e40c56ea2ee8d32f5bba70",
+      "archive": "saju-models-materials-archive--part-01.zip",
+      "meshNames": [
+        "Sphere",
+        "Sphere.007",
+        "B | expressive brow -1",
+        "Sphere.009",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "Sphere.010",
+        "Sphere.011"
+      ],
+      "nodeNames": [
+        "B fire | soft continuous body and paddle hands",
+        "B | small eye glint -1",
+        "B | expressive brow -1",
+        "B | small eye glint 1",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "B | accessory socket",
+        "B | almond gaze -1"
+      ]
+    },
+    {
+      "path": "b_five_elements_v1/metal.glb",
+      "bytes": 393192,
+      "sha256": "5b6b31ae9b0ca27393b8f1821509e1d669f948d46cff59a4ab6a8ed1abea8dfa",
+      "archive": "saju-models-materials-archive--part-01.zip",
+      "meshNames": [
+        "Sphere",
+        "Sphere.007",
+        "B | expressive brow -1",
+        "Sphere.009",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "Sphere.010",
+        "Sphere.011"
+      ],
+      "nodeNames": [
+        "B metal | soft continuous body and paddle hands",
+        "B | small eye glint -1",
+        "B | expressive brow -1",
+        "B | small eye glint 1",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "B | accessory socket",
+        "B | almond gaze -1"
+      ]
+    },
+    {
+      "path": "b_five_elements_v1/water.glb",
+      "bytes": 393360,
+      "sha256": "e96e3e7254f9b4acd9608c9c5cb8707c7e91dfe7c51e9e3f5fa331a1025fda13",
+      "archive": "saju-models-materials-archive--part-01.zip",
+      "meshNames": [
+        "Sphere",
+        "Sphere.007",
+        "B | expressive brow -1",
+        "Sphere.009",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "Sphere.010",
+        "Sphere.011"
+      ],
+      "nodeNames": [
+        "B water | soft continuous body and paddle hands",
+        "B | small eye glint -1",
+        "B | expressive brow -1",
+        "B | small eye glint 1",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "B | accessory socket",
+        "B | almond gaze -1"
+      ]
+    },
+    {
+      "path": "b_five_elements_v1/wood.glb",
+      "bytes": 437992,
+      "sha256": "eda80d432e724b64260238a94f5ee027544d63b0a8e49fa41d0cebb87904ccc2",
+      "archive": "saju-models-materials-archive--part-01.zip",
+      "meshNames": [
+        "Sphere",
+        "Sphere.007",
+        "B | expressive brow -1",
+        "Sphere.009",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "Sphere.010",
+        "Sphere.011"
+      ],
+      "nodeNames": [
+        "B wood | soft continuous body and paddle hands",
+        "B | small eye glint -1",
+        "B | expressive brow -1",
+        "B | small eye glint 1",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "B | accessory socket",
+        "B | almond gaze -1"
+      ]
+    },
+    {
+      "path": "b_ten_stems_v2/02_Yi.glb",
+      "bytes": 4851524,
+      "sha256": "b27200e39fedda77bb5cbd9b33ff2666c308087678d116c1b9d6c4c7a7bdc76c",
+      "archive": "saju-models-materials-archive--part-01.zip",
+      "meshNames": [
+        "Sphere.010",
+        "Sphere.011",
+        "Sphere",
+        "B | expressive brow -1",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "Sphere.007",
+        "Sphere.009"
+      ],
+      "nodeNames": [
+        "eye_-1",
+        "brow_-1",
+        "eye_1",
+        "brow_1",
+        "smile",
+        "surprise_mouth",
+        "B | accessory socket",
+        "head"
+      ]
+    },
+    {
+      "path": "b_ten_stems_v2/03_Bing.glb",
+      "bytes": 1005788,
+      "sha256": "b4bfb54b98b3a79a56c6f6e0aa01d2bc12178268b409547d2460cacb0ac704b0",
+      "archive": "saju-models-materials-archive--part-01.zip",
+      "meshNames": [
+        "Sphere.010",
+        "Sphere.011",
+        "Sphere",
+        "B | expressive brow -1",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "Sphere.007",
+        "Sphere.009"
+      ],
+      "nodeNames": [
+        "eye_-1",
+        "brow_-1",
+        "eye_1",
+        "brow_1",
+        "smile",
+        "surprise_mouth",
+        "B | accessory socket",
+        "head"
+      ]
+    },
+    {
+      "path": "b_gestures_v1/B_gesture_rig.glb",
+      "bytes": 656828,
+      "sha256": "0fb11c4054014a8e67d5b0b19bebfdf308ff6394c2d9a6749569c7d5bd3d2c11",
+      "archive": "saju-models-materials-archive--part-02.zip",
+      "meshNames": [
+        "Sphere.010",
+        "Sphere.011",
+        "Sphere",
+        "B | expressive brow -1",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "Sphere.007",
+        "Sphere.009"
+      ],
+      "nodeNames": [
+        "eye_-1",
+        "brow_-1",
+        "eye_1",
+        "brow_1",
+        "smile",
+        "surprise_mouth",
+        "B | accessory socket",
+        "head"
+      ]
+    },
+    {
+      "path": "b_ten_stems_v1/10_Gui.glb",
+      "bytes": 908048,
+      "sha256": "66e0180ce607cc001aee7a6c787d7ff6dc42e8f767166703238fd7cf9a387111",
+      "archive": "saju-models-materials-archive--part-02.zip",
+      "meshNames": [
+        "Sphere",
+        "Sphere.007",
+        "B | expressive brow -1",
+        "Sphere.009",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "Sphere.010",
+        "Sphere.011"
+      ],
+      "nodeNames": [
+        "B | continuous soft body and small hands",
+        "B | small eye glint -1",
+        "B | expressive brow -1",
+        "B | small eye glint 1",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "B | accessory socket",
+        "B | almond gaze -1"
+      ]
+    },
+    {
+      "path": "b_ten_stems_v1/11_Ji_Jade_OPTION.glb",
+      "bytes": 472944,
+      "sha256": "286ed8606d59a578e5d535120d072c9229aed6e447c12dcb45057ed1699b057f",
+      "archive": "saju-models-materials-archive--part-02.zip",
+      "meshNames": [
+        "Sphere",
+        "Sphere.007",
+        "B | expressive brow -1",
+        "Sphere.009",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "Sphere.010",
+        "Sphere.011"
+      ],
+      "nodeNames": [
+        "B | continuous soft body and small hands",
+        "B | small eye glint -1",
+        "B | expressive brow -1",
+        "B | small eye glint 1",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "B | accessory socket",
+        "B | almond gaze -1"
+      ]
+    },
+    {
+      "path": "b_gestures_v2/B_gesture_rig_v2.glb",
+      "bytes": 656416,
+      "sha256": "d8a8e92c30f66dde2dffe2760353bb92e26f9072ff846a02aaa255c0763a6152",
+      "archive": "saju-models-materials-archive--part-07.zip",
+      "meshNames": [
+        "Sphere.010",
+        "Sphere.011",
+        "Sphere",
+        "B | expressive brow -1",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "Sphere.007",
+        "Sphere.009"
+      ],
+      "nodeNames": [
+        "eye_-1",
+        "brow_-1",
+        "eye_1",
+        "brow_1",
+        "smile",
+        "surprise_mouth",
+        "B | accessory socket",
+        "head"
+      ]
+    },
+    {
+      "path": "b_gestures_v3/B_separate_arms_v3.glb",
+      "bytes": 743012,
+      "sha256": "bac7097ed234cada96974a666d43e1d3e43d8e756ce844019a2537ee2dccae72",
+      "archive": "saju-models-materials-archive--part-07.zip",
+      "meshNames": [
+        "Sphere.010",
+        "Sphere.011",
+        "Sphere",
+        "B | expressive brow -1",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "Sphere.001",
+        "Sphere.002"
+      ],
+      "nodeNames": [
+        "eye_-1",
+        "brow_-1",
+        "eye_1",
+        "brow_1",
+        "smile",
+        "surprise_mouth",
+        "B | accessory socket",
+        "head"
+      ]
+    },
+    {
+      "path": "b_ten_stems_v2/01_Jia.glb",
+      "bytes": 1203488,
+      "sha256": "3f6bd2e3c32247a91488ff2f3d22634b6633b3da98fb9a9c34a47a57fd42f967",
+      "archive": "saju-models-materials-archive--part-07.zip",
+      "meshNames": [
+        "Sphere.010",
+        "Sphere.011",
+        "Sphere",
+        "B | expressive brow -1",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "Sphere.007",
+        "Sphere.009"
+      ],
+      "nodeNames": [
+        "eye_-1",
+        "brow_-1",
+        "eye_1",
+        "brow_1",
+        "smile",
+        "surprise_mouth",
+        "B | accessory socket",
+        "head"
+      ]
+    },
+    {
+      "path": "b_ten_stems_v2/07_Geng.glb",
+      "bytes": 1032104,
+      "sha256": "6e55dd268512afb826e64ffed42cbd73bf69ee696bc3fbcf60b07576ed4309bf",
+      "archive": "saju-models-materials-archive--part-07.zip",
+      "meshNames": [
+        "Sphere.010",
+        "Sphere.011",
+        "Sphere",
+        "B | expressive brow -1",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "Sphere.007",
+        "Sphere.009"
+      ],
+      "nodeNames": [
+        "eye_-1",
+        "brow_-1",
+        "eye_1",
+        "brow_1",
+        "smile",
+        "surprise_mouth",
+        "B | accessory socket",
+        "head"
+      ]
+    },
+    {
+      "path": "b_gestures_v4/B_attached_arms_v4.glb",
+      "bytes": 1103068,
+      "sha256": "65bc9ff964a9bdf2f9f26c8113d6a1207ed7e48c5d458603bf28370a64b5e520",
+      "archive": "saju-models-materials-archive--part-06.zip",
+      "meshNames": [
+        "Sphere.010",
+        "Sphere.011",
+        "Sphere.003",
+        "Sphere.012",
+        "Sphere",
+        "B | expressive brow -1",
+        "B | expressive brow 1",
+        "B | quiet smile"
+      ],
+      "nodeNames": [
+        "eye_-1",
+        "brow_-1",
+        "eye_1",
+        "brow_1",
+        "smile",
+        "surprise_mouth",
+        "B | accessory socket",
+        "head"
+      ]
+    },
+    {
+      "path": "b_ten_stems_v2/05_Wu.glb",
+      "bytes": 880496,
+      "sha256": "3308a63fae4a43ab3496d9ba00135653056656f33e73b87d2e1b8c39d99033e0",
+      "archive": "saju-models-materials-archive--part-06.zip",
+      "meshNames": [
+        "Sphere.010",
+        "Sphere.011",
+        "Sphere",
+        "B | expressive brow -1",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "Sphere.007",
+        "Sphere.009"
+      ],
+      "nodeNames": [
+        "eye_-1",
+        "brow_-1",
+        "eye_1",
+        "brow_1",
+        "smile",
+        "surprise_mouth",
+        "B | accessory socket",
+        "head"
+      ]
+    },
+    {
+      "path": "b_ten_stems_v2/06_Ji.glb",
+      "bytes": 772084,
+      "sha256": "6a73e9b19feeccb63b5356240967b039712111cb17db7df44b04cea76310a3f7",
+      "archive": "saju-models-materials-archive--part-06.zip",
+      "meshNames": [
+        "Sphere.010",
+        "Sphere.011",
+        "Sphere",
+        "B | expressive brow -1",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "Sphere.007",
+        "Sphere.009"
+      ],
+      "nodeNames": [
+        "eye_-1",
+        "brow_-1",
+        "eye_1",
+        "brow_1",
+        "smile",
+        "surprise_mouth",
+        "B | accessory socket",
+        "head"
+      ]
+    },
+    {
+      "path": "b_ten_stems_v2/08_Xin.glb",
+      "bytes": 735600,
+      "sha256": "3f104248207ef5955b642bd082a6ab54e7ef8b736624f8f438de4b6a9fc281e0",
+      "archive": "saju-models-materials-archive--part-06.zip",
+      "meshNames": [
+        "Sphere.010",
+        "Sphere.011",
+        "Sphere",
+        "B | expressive brow -1",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "Sphere.007",
+        "Sphere.009"
+      ],
+      "nodeNames": [
+        "eye_-1",
+        "brow_-1",
+        "eye_1",
+        "brow_1",
+        "smile",
+        "surprise_mouth",
+        "B | accessory socket",
+        "head"
+      ]
+    },
+    {
+      "path": "b_ten_stems_v2/09_Ren.glb",
+      "bytes": 736016,
+      "sha256": "b2901fe989fb9e7dc4575c7dd721af0f332934035038f6a70cb7bcef603c3a85",
+      "archive": "saju-models-materials-archive--part-06.zip",
+      "meshNames": [
+        "Sphere.010",
+        "Sphere.011",
+        "Sphere",
+        "B | expressive brow -1",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "Sphere.007",
+        "Sphere.009"
+      ],
+      "nodeNames": [
+        "eye_-1",
+        "brow_-1",
+        "eye_1",
+        "brow_1",
+        "smile",
+        "surprise_mouth",
+        "B | accessory socket",
+        "head"
+      ]
+    },
+    {
+      "path": "b_ten_stems_v1/01_Jia.glb",
+      "bytes": 769988,
+      "sha256": "6380b05e40762d0d130db737ad36adda9bfffd0ad8af42bbd28e8eb2d5f836b7",
+      "archive": "saju-models-materials-archive--part-03.zip",
+      "meshNames": [
+        "Sphere",
+        "Sphere.007",
+        "B | expressive brow -1",
+        "Sphere.009",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "Sphere.010",
+        "Sphere.011"
+      ],
+      "nodeNames": [
+        "B | continuous soft body and small hands",
+        "B | small eye glint -1",
+        "B | expressive brow -1",
+        "B | small eye glint 1",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "B | accessory socket",
+        "B | almond gaze -1"
+      ]
+    },
+    {
+      "path": "b_ten_stems_v1/02_Yi.glb",
+      "bytes": 2638456,
+      "sha256": "a5b93c7e5fc51533eeb226adde44c042f4ea4ad2c7a277ffdad2fdbc956a2512",
+      "archive": "saju-models-materials-archive--part-03.zip",
+      "meshNames": [
+        "Sphere",
+        "Sphere.007",
+        "B | expressive brow -1",
+        "Sphere.009",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "Sphere.010",
+        "Sphere.011"
+      ],
+      "nodeNames": [
+        "B | continuous soft body and small hands",
+        "B | small eye glint -1",
+        "B | expressive brow -1",
+        "B | small eye glint 1",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "B | accessory socket",
+        "B | almond gaze -1"
+      ]
+    },
+    {
+      "path": "b_ten_stems_v1/03_Bing.glb",
+      "bytes": 499608,
+      "sha256": "bc03ae25fef4832ae18460327be19a08404fe805fc47a0d8cac82cd0e006bee2",
+      "archive": "saju-models-materials-archive--part-03.zip",
+      "meshNames": [
+        "Sphere",
+        "Sphere.007",
+        "B | expressive brow -1",
+        "Sphere.009",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "Sphere.010",
+        "Sphere.011"
+      ],
+      "nodeNames": [
+        "B | continuous soft body and small hands",
+        "B | small eye glint -1",
+        "B | expressive brow -1",
+        "B | small eye glint 1",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "B | accessory socket",
+        "B | almond gaze -1"
+      ]
+    },
+    {
+      "path": "b_ten_stems_v1/04_Ding.glb",
+      "bytes": 508344,
+      "sha256": "6bede54e393488d3f57e28b02ab6c76fd92f05d9c76a1d7d85b905fc756e9c15",
+      "archive": "saju-models-materials-archive--part-03.zip",
+      "meshNames": [
+        "Sphere",
+        "Sphere.007",
+        "B | expressive brow -1",
+        "Sphere.009",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "Sphere.010",
+        "Sphere.011"
+      ],
+      "nodeNames": [
+        "B | continuous soft body and small hands",
+        "B | small eye glint -1",
+        "B | expressive brow -1",
+        "B | small eye glint 1",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "B | accessory socket",
+        "B | almond gaze -1"
+      ]
+    },
+    {
+      "path": "b_ten_stems_v1/05_Wu.glb",
+      "bytes": 584620,
+      "sha256": "1586f90c3c677ece430f5570dc22e5bfa41bd55ba9fd13641b0e0c3cb0e7f8d8",
+      "archive": "saju-models-materials-archive--part-04.zip",
+      "meshNames": [
+        "Sphere",
+        "Sphere.007",
+        "B | expressive brow -1",
+        "Sphere.009",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "Sphere.010",
+        "Sphere.011"
+      ],
+      "nodeNames": [
+        "B | continuous soft body and small hands",
+        "B | small eye glint -1",
+        "B | expressive brow -1",
+        "B | small eye glint 1",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "B | accessory socket",
+        "B | almond gaze -1"
+      ]
+    },
+    {
+      "path": "b_ten_stems_v1/06_Ji.glb",
+      "bytes": 523492,
+      "sha256": "6def035fc70a8bd512ebe573dfb85d05b44bac38d49607c2a4ba1b67bf9515aa",
+      "archive": "saju-models-materials-archive--part-04.zip",
+      "meshNames": [
+        "Sphere",
+        "Sphere.007",
+        "B | expressive brow -1",
+        "Sphere.009",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "Sphere.010",
+        "Sphere.011"
+      ],
+      "nodeNames": [
+        "B | continuous soft body and small hands",
+        "B | small eye glint -1",
+        "B | expressive brow -1",
+        "B | small eye glint 1",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "B | accessory socket",
+        "B | almond gaze -1"
+      ]
+    },
+    {
+      "path": "b_ten_stems_v1/07_Geng.glb",
+      "bytes": 715448,
+      "sha256": "5748bcc01acfd8f761116d326dda6416509aaa2dec1b0fc4ba5d6a8aecb92a48",
+      "archive": "saju-models-materials-archive--part-04.zip",
+      "meshNames": [
+        "Sphere",
+        "Sphere.007",
+        "B | expressive brow -1",
+        "Sphere.009",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "Sphere.010",
+        "Sphere.011"
+      ],
+      "nodeNames": [
+        "B | continuous soft body and small hands",
+        "B | small eye glint -1",
+        "B | expressive brow -1",
+        "B | small eye glint 1",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "B | accessory socket",
+        "B | almond gaze -1"
+      ]
+    },
+    {
+      "path": "b_ten_stems_v2/04_Ding.glb",
+      "bytes": 790944,
+      "sha256": "1e2348dab3bce7b07f95aa2346fed1636a6465d3f981fced558104d625463659",
+      "archive": "saju-models-materials-archive--part-04.zip",
+      "meshNames": [
+        "Sphere.010",
+        "Sphere.011",
+        "Sphere",
+        "B | expressive brow -1",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "Sphere.007",
+        "Sphere.009"
+      ],
+      "nodeNames": [
+        "eye_-1",
+        "brow_-1",
+        "eye_1",
+        "brow_1",
+        "smile",
+        "surprise_mouth",
+        "B | accessory socket",
+        "head"
+      ]
+    },
+    {
+      "path": "b_ten_stems_v2/10_Gui.glb",
+      "bytes": 1402776,
+      "sha256": "e39ff0728f7b82ddea5ecbe82d2c4d37483dc29b7e0f90c40d02215757875068",
+      "archive": "saju-models-materials-archive--part-04.zip",
+      "meshNames": [
+        "Sphere.010",
+        "Sphere.011",
+        "Sphere",
+        "B | expressive brow -1",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "Sphere.007",
+        "Sphere.009"
+      ],
+      "nodeNames": [
+        "eye_-1",
+        "brow_-1",
+        "eye_1",
+        "brow_1",
+        "smile",
+        "surprise_mouth",
+        "B | accessory socket",
+        "head"
+      ]
+    },
+    {
+      "path": "b_ten_stems_v1/08_Xin.glb",
+      "bytes": 498528,
+      "sha256": "4b89863ab647f4744e5f7d9c565afb43e78e93c29839832a6fd27c54207f6426",
+      "archive": "saju-models-materials-archive--part-05.zip",
+      "meshNames": [
+        "Sphere",
+        "Sphere.007",
+        "B | expressive brow -1",
+        "Sphere.009",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "Sphere.010",
+        "Sphere.011"
+      ],
+      "nodeNames": [
+        "B | continuous soft body and small hands",
+        "B | small eye glint -1",
+        "B | expressive brow -1",
+        "B | small eye glint 1",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "B | accessory socket",
+        "B | almond gaze -1"
+      ]
+    },
+    {
+      "path": "b_ten_stems_v1/09_Ren.glb",
+      "bytes": 569640,
+      "sha256": "01888d2b4a2ae6bda5e705a153ce2198c4c42dc9b61e0751735fca569f0cfa71",
+      "archive": "saju-models-materials-archive--part-05.zip",
+      "meshNames": [
+        "Sphere",
+        "Sphere.007",
+        "B | expressive brow -1",
+        "Sphere.009",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "Sphere.010",
+        "Sphere.011"
+      ],
+      "nodeNames": [
+        "B | continuous soft body and small hands",
+        "B | small eye glint -1",
+        "B | expressive brow -1",
+        "B | small eye glint 1",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "B | accessory socket",
+        "B | almond gaze -1"
+      ]
+    },
+    {
+      "path": "arm_candidates_v5/candidate_1.glb",
+      "bytes": 767896,
+      "sha256": "f7c9142ebf8f1a07902929c9575b3db95fba8e83151f308ca26d9c8b2d701762",
+      "archive": "arm_candidates_v5--part-01.zip",
+      "meshNames": [
+        "Sphere.010",
+        "Sphere.011",
+        "Sphere",
+        "B | expressive brow -1",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "Sphere.007",
+        "Sphere.009"
+      ],
+      "nodeNames": [
+        "eye_-1",
+        "brow_-1",
+        "eye_1",
+        "brow_1",
+        "smile",
+        "surprise_mouth",
+        "B | accessory socket",
+        "head"
+      ]
+    },
+    {
+      "path": "arm_candidates_v5/candidate_2.glb",
+      "bytes": 767896,
+      "sha256": "ad7c95f1896940c9979bf557eef601a35f572d0e884e3e0519ce38625485e882",
+      "archive": "arm_candidates_v5--part-01.zip",
+      "meshNames": [
+        "Sphere.010",
+        "Sphere.011",
+        "Sphere",
+        "B | expressive brow -1",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "Sphere.007",
+        "Sphere.009"
+      ],
+      "nodeNames": [
+        "eye_-1",
+        "brow_-1",
+        "eye_1",
+        "brow_1",
+        "smile",
+        "surprise_mouth",
+        "B | accessory socket",
+        "head"
+      ]
+    },
+    {
+      "path": "arm_candidates_v5/candidate_3.glb",
+      "bytes": 767896,
+      "sha256": "9cab416d659aa4444d6d6018c9e57fed04adb1088688733753d0b980006d7fe1",
+      "archive": "arm_candidates_v5--part-01.zip",
+      "meshNames": [
+        "Sphere.010",
+        "Sphere.011",
+        "Sphere",
+        "B | expressive brow -1",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "Sphere.007",
+        "Sphere.009"
+      ],
+      "nodeNames": [
+        "eye_-1",
+        "brow_-1",
+        "eye_1",
+        "brow_1",
+        "smile",
+        "surprise_mouth",
+        "B | accessory socket",
+        "head"
+      ]
+    },
+    {
+      "path": "arm_candidates_v5/candidate_4.glb",
+      "bytes": 767892,
+      "sha256": "0289b18e6fad3f2e36456b4174778d8d18b903c4bc6622155140cb96d975de75",
+      "archive": "arm_candidates_v5--part-02.zip",
+      "meshNames": [
+        "Sphere.010",
+        "Sphere.011",
+        "Sphere",
+        "B | expressive brow -1",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "Sphere.007",
+        "Sphere.009"
+      ],
+      "nodeNames": [
+        "eye_-1",
+        "brow_-1",
+        "eye_1",
+        "brow_1",
+        "smile",
+        "surprise_mouth",
+        "B | accessory socket",
+        "head"
+      ]
+    },
+    {
+      "path": "arm_candidates_v5/candidate_5.glb",
+      "bytes": 767896,
+      "sha256": "5012488dd34cd2eff29c325f2a397c702376db7e9be23f308ae7a1a7255fc89e",
+      "archive": "arm_candidates_v5--part-02.zip",
+      "meshNames": [
+        "Sphere.010",
+        "Sphere.011",
+        "Sphere",
+        "B | expressive brow -1",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "Sphere.007",
+        "Sphere.009"
+      ],
+      "nodeNames": [
+        "eye_-1",
+        "brow_-1",
+        "eye_1",
+        "brow_1",
+        "smile",
+        "surprise_mouth",
+        "B | accessory socket",
+        "head"
+      ]
+    },
+    {
+      "path": "elemental_form_comparison/B_final.glb",
+      "bytes": 393424,
+      "sha256": "315665cbfbb763c9083066832dda7ae7d1d7a9074f410c4e044ba57ec420c57e",
+      "archive": "elemental_form_comparison--part-01.zip",
+      "meshNames": [
+        "Sphere",
+        "Sphere.007",
+        "B | expressive brow -1",
+        "Sphere.009",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "Sphere.010",
+        "Sphere.011"
+      ],
+      "nodeNames": [
+        "B | continuous soft body and small hands",
+        "B | small eye glint -1",
+        "B | expressive brow -1",
+        "B | small eye glint 1",
+        "B | expressive brow 1",
+        "B | quiet smile",
+        "B | accessory socket",
+        "B | almond gaze -1"
+      ]
+    },
+    {
+      "path": "saju_planet_preview/public/models/five-elements/metal-v1.glb",
+      "bytes": 74064,
+      "sha256": "9ed143929120a5836005ffe707be9bbf6f20a94a6bfee1828455fdcceb27a023",
+      "archive": "saju-source-candidates-and-qa--part-01.zip",
+      "meshNames": [
+        "Cube",
+        "Sphere",
+        "Sphere.001",
+        "metal | gentle brow",
+        "Sphere.002",
+        "Sphere.003",
+        "metal | gentle brow.001",
+        "metal | small smile"
+      ],
+      "nodeNames": [
+        "Metal | compact beveled ingot",
+        "metal | quiet eye",
+        "metal | eye glint",
+        "metal | gentle brow",
+        "metal | quiet eye.001",
+        "metal | eye glint.001",
+        "metal | gentle brow.001",
+        "metal | small smile"
+      ]
+    },
+    {
+      "path": "saju_planet_preview/public/models/porcelain-hero-blink-v1.glb",
+      "bytes": 13700928,
+      "sha256": "57d7ee5b3c4e0b99eaadefb8095283bed44986beaa5a91c096dd7a0c514bf9c2",
+      "archive": "saju-source-candidates-and-qa--part-01.zip",
+      "meshNames": [
+        "Material 0 batch 0",
+        "Material 0 batch 1",
+        "Material 0 batch 2",
+        "Material 0 batch 3",
+        "Material 0 batch 4",
+        "Material 0 batch 5",
+        "Material 1 batch 0",
+        "Material 4 batch 0"
+      ],
+      "nodeNames": [
+        "Material 0 batch 0",
+        "Material 0 batch 1",
+        "Material 0 batch 2",
+        "Material 0 batch 3",
+        "Material 0 batch 4",
+        "Material 0 batch 5",
+        "Material 1 batch 0",
+        "Material 4 batch 0"
+      ]
+    },
+    {
+      "path": "saju_planet_preview/public/models/five-elements/water-expression-v1.glb",
+      "bytes": 441872,
+      "sha256": "1a5139c2aa1bc78f67d6755f2da9e0ec2997f78b06c541a8898b348191ebb42b",
+      "archive": "saju-source-candidates-and-qa--part-02.zip",
+      "meshNames": [
+        "Sphere.002",
+        "Sphere.003",
+        "Sphere",
+        "A | expressive brow -1",
+        "A | expressive brow 1",
+        "A | quiet smile",
+        "Sphere.008",
+        "Sphere.010"
+      ],
+      "nodeNames": [
+        "A | accessory socket",
+        "A | almond gaze -1",
+        "A | almond gaze 1",
+        "A | continuous asymmetric jelly",
+        "A | expressive brow -1",
+        "A | expressive brow 1",
+        "A | quiet smile",
+        "A | small eye glint -1"
+      ]
+    },
+    {
+      "path": "saju_planet_preview/public/models/porcelain-hero-v1-lite.glb",
+      "bytes": 5504312,
+      "sha256": "22bd1b4d410db3d8dbfe5068f78ce12ef4fcdc759a46915541fa356501a62f6e",
+      "archive": "saju-source-candidates-and-qa--part-02.zip",
+      "meshNames": [
+        "Continuous porcelain tunic.001",
+        "Sphere.021",
+        "Sphere.026",
+        "Sphere.027",
+        "Upper lid incision -1.001",
+        "Cobalt temple stem.001"
+      ],
+      "nodeNames": [
+        "Preview Porcelain | blue-white fired glaze.001",
+        "Preview Porcelain | soft eye inlay.001",
+        "Preview Porcelain | smoky blue iris.001",
+        "Preview Porcelain | iris core.001",
+        "Preview Porcelain | warm shadow incision.001",
+        "Preview Underglaze | deep cobalt.001"
+      ]
+    },
+    {
+      "path": "saju_planet_preview/public/models/porcelain-hero-v2.glb",
+      "bytes": 5951928,
+      "sha256": "8a21d20acf59a6e77105359f85a0a3275ea5fa0753a7b7533aaf47656ad8484b",
+      "archive": "saju-source-candidates-and-qa--part-02.zip",
+      "meshNames": [
+        "Material 0 batch 0",
+        "Material 0 batch 1",
+        "Material 0 batch 2",
+        "Material 1 batch 0",
+        "Material 2 batch 0",
+        "Material 3 batch 0",
+        "Material 4 batch 0",
+        "Material 5 batch 0"
+      ],
+      "nodeNames": [
+        "Material 0 batch 0",
+        "Material 0 batch 1",
+        "Material 0 batch 2",
+        "Material 1 batch 0",
+        "Material 2 batch 0",
+        "Material 3 batch 0",
+        "Material 4 batch 0",
+        "Material 5 batch 0"
+      ]
+    },
+    {
+      "path": "saju_planet_preview/public/models/five-elements/earth-expression-v1.glb",
+      "bytes": 313216,
+      "sha256": "adddd4af80479125b9750b15f36a91fdc74ab618c2fc1f99b8c2018095c0289b",
+      "archive": "saju-source-candidates-and-qa--part-03.zip",
+      "meshNames": [
+        "Sphere",
+        "Sphere.004",
+        "Sphere.006",
+        "earth | gentle brow",
+        "earth | gentle brow.001",
+        "Sphere.003",
+        "Sphere.005",
+        "earth | small smile"
+      ],
+      "nodeNames": [
+        "earth | continuous original volume",
+        "earth | eye glint",
+        "earth | eye glint.001",
+        "earth | gentle brow",
+        "earth | gentle brow.001",
+        "earth | quiet eye",
+        "earth | quiet eye.001",
+        "earth | small smile"
+      ]
+    },
+    {
+      "path": "saju_planet_preview/public/models/five-elements/earth-v1.glb",
+      "bytes": 207808,
+      "sha256": "8a5e1c2604ff66ad154f83fa6da67734c19c4fe696d2228d2808576637b8ebfa",
+      "archive": "saju-source-candidates-and-qa--part-03.zip",
+      "meshNames": [
+        "Sphere",
+        "Sphere.003",
+        "Sphere.004",
+        "earth | gentle brow",
+        "Sphere.005",
+        "Sphere.006",
+        "earth | gentle brow.001",
+        "earth | small smile"
+      ],
+      "nodeNames": [
+        "earth | continuous original volume",
+        "earth | quiet eye",
+        "earth | eye glint",
+        "earth | gentle brow",
+        "earth | quiet eye.001",
+        "earth | eye glint.001",
+        "earth | gentle brow.001",
+        "earth | small smile"
+      ]
+    },
+    {
+      "path": "saju_planet_preview/public/models/five-elements/fire-expression-v1.glb",
+      "bytes": 300900,
+      "sha256": "c3d4c4d4a1cf606e323f0bf213dbf4b5eec7a3794905fce817465541d25d30c3",
+      "archive": "saju-source-candidates-and-qa--part-03.zip",
+      "meshNames": [
+        "Sphere",
+        "Sphere.005",
+        "Sphere.007",
+        "fire | gentle brow",
+        "fire | gentle brow.001",
+        "Sphere.004",
+        "Sphere.006",
+        "fire | small smile"
+      ],
+      "nodeNames": [
+        "fire | continuous original volume",
+        "fire | eye glint",
+        "fire | eye glint.001",
+        "fire | gentle brow",
+        "fire | gentle brow.001",
+        "fire | quiet eye",
+        "fire | quiet eye.001",
+        "fire | small smile"
+      ]
+    },
+    {
+      "path": "saju_planet_preview/public/models/five-elements/fire-v1.glb",
+      "bytes": 195492,
+      "sha256": "f1c897e34302278ca4d78abbc787348acf8adb73de506c60b873ef3cf3062f93",
+      "archive": "saju-source-candidates-and-qa--part-03.zip",
+      "meshNames": [
+        "Sphere",
+        "Sphere.004",
+        "Sphere.005",
+        "fire | gentle brow",
+        "Sphere.006",
+        "Sphere.007",
+        "fire | gentle brow.001",
+        "fire | small smile"
+      ],
+      "nodeNames": [
+        "fire | continuous original volume",
+        "fire | quiet eye",
+        "fire | eye glint",
+        "fire | gentle brow",
+        "fire | quiet eye.001",
+        "fire | eye glint.001",
+        "fire | gentle brow.001",
+        "fire | small smile"
+      ]
+    },
+    {
+      "path": "saju_planet_preview/public/models/five-elements/metal-expression-v1.glb",
+      "bytes": 179040,
+      "sha256": "d01210e7870b94c96a0c1be4f4c1b147d059f91803f8ac0b294bc94b66ba9145",
+      "archive": "saju-source-candidates-and-qa--part-03.zip",
+      "meshNames": [
+        "Cube",
+        "Sphere.001",
+        "Sphere.003",
+        "metal | gentle brow",
+        "metal | gentle brow.001",
+        "Sphere",
+        "Sphere.002",
+        "metal | small smile"
+      ],
+      "nodeNames": [
+        "Metal | compact beveled ingot",
+        "metal | eye glint",
+        "metal | eye glint.001",
+        "metal | gentle brow",
+        "metal | gentle brow.001",
+        "metal | quiet eye",
+        "metal | quiet eye.001",
+        "metal | small smile"
+      ]
+    },
+    {
+      "path": "saju_planet_preview/public/models/five-elements/wood-expression-v1.glb",
+      "bytes": 304336,
+      "sha256": "9988e332a4efaefbe2c4c2885e0a5c4842e6089e8c5d0f2b430e70d1a5930b2b",
+      "archive": "saju-source-candidates-and-qa--part-03.zip",
+      "meshNames": [
+        "Sphere.004",
+        "Sphere.006",
+        "wood | gentle brow",
+        "wood | gentle brow.001",
+        "Wood | growing crown",
+        "Sphere.001",
+        "Sphere.003",
+        "Sphere.005"
+      ],
+      "nodeNames": [
+        "wood | eye glint",
+        "wood | eye glint.001",
+        "wood | gentle brow",
+        "wood | gentle brow.001",
+        "Wood | growing crown",
+        "Wood | left leaf",
+        "wood | quiet eye",
+        "wood | quiet eye.001"
+      ]
+    },
+    {
+      "path": "saju_planet_preview/public/models/five-elements/wood-v1.glb",
+      "bytes": 198948,
+      "sha256": "1bf696c798ca3c97e9125fa8866e8146895129cf0dadab19ec755c98255c3cf1",
+      "archive": "saju-source-candidates-and-qa--part-03.zip",
+      "meshNames": [
+        "Sphere",
+        "Wood | growing crown",
+        "Wood | side shoot",
+        "Sphere.001",
+        "Sphere.002",
+        "Wood | restrained side grain",
+        "Wood | restrained side grain.001",
+        "Wood | restrained side grain.002"
+      ],
+      "nodeNames": [
+        "Wood | tapered seed heart",
+        "Wood | growing crown",
+        "Wood | side shoot",
+        "Wood | left leaf",
+        "Wood | right leaf",
+        "Wood | restrained side grain",
+        "Wood | restrained side grain.001",
+        "Wood | restrained side grain.002"
+      ]
+    },
+    {
+      "path": "saju_planet_preview/public/models/five-elements/water-v1.glb",
+      "bytes": 184500,
+      "sha256": "8ceb8507485b78ea482dd765b32118734ce0cb17655998d2740e19f203bc1a0c",
+      "archive": "saju-source-candidates-and-qa--part-04.zip",
+      "meshNames": [
+        "Sphere.010",
+        "Sphere.008",
+        "A | quiet smile",
+        "A | expressive brow 1",
+        "A | expressive brow -1",
+        "Sphere",
+        "Sphere.003",
+        "Sphere.002"
+      ],
+      "nodeNames": [
+        "A | small eye glint 1",
+        "A | small eye glint -1",
+        "A | quiet smile",
+        "A | expressive brow 1",
+        "A | expressive brow -1",
+        "A | continuous asymmetric jelly",
+        "A | almond gaze 1",
+        "A | almond gaze -1"
+      ]
+    }
+  ],
+  "missingLatestSelectedHashes": {
+    "진": "2745a970701c86a3bc74eb0008b597607022a5c7ee576d79b287970ac977d366",
+    "해": "d1c6f8625b5fb97cdbde102455cdbf181f335942b7cb0f87aeb07a7fc0fba290"
+  },
+  "limits": [
+    "The archive reports preservation only, not candidate approval, application integration or deployment.",
+    "No zodiac animal GLB, native source or animal texture was found in this archive or accessible workspace originals.",
+    "The recorded latest selected dragon and pig candidates are missing; older versions cannot be claimed latest approved.",
+    "GLB JSON scene/mesh names were inspected; this audit does not claim rendering or visual fidelity of inaccessible animals."
+  ]
+}

@@ -1,18 +1,127 @@
 import * as THREE from 'three';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import manifest from '../../public/models/zodiac-pets/manifest.json';
 import { ZODIAC_FEATURES, type ZodiacBranch } from './spirit-profiles';
 import type { SpiritQuality } from './spirit-geometry';
 
-export interface ZodiacPet { group: THREE.Group; update: (time: number) => void }
+export interface ZodiacPet { group: THREE.Group; update: (time: number) => void; dispose: () => void }
+export interface ZodiacPetLoadOptions { signal?: AbortSignal }
 type Point = [number, number, number];
+
+interface PetAsset {
+  sourceStatus: 'available' | 'missing-source';
+  file: string | null;
+  version: string | null;
+  sha256: string | null;
+  expectedSha256: string | null;
+  latestApprovedStatus: string;
+}
+const petAssets = manifest.pets as Record<ZodiacBranch, PetAsset>;
+const resolveBranch = (branch: string): ZodiacBranch => Object.hasOwn(ZODIAC_FEATURES, branch) ? branch as ZodiacBranch : '자';
+
+function provenance(branch: ZodiacBranch) {
+  const asset = petAssets[branch];
+  return {
+    authoredAssetStatus: asset.sourceStatus === 'available' ? 'not-loaded' : 'missing-source',
+    authoredVersion: asset.version, authoredSha256: null,
+    expectedAuthoredSha256: asset.expectedSha256 ?? asset.sha256,
+    latestApprovedStatus: asset.latestApprovedStatus,
+    sourceArchiveCommit: manifest.sourceArchive.commit,
+  };
+}
+
+/** Each parse owns its resources. Deduplicate textures across materials/slots,
+ * and include unused glTF scenes when releasing a loaded file. */
+function disposePetResources(roots: readonly THREE.Object3D[]) {
+  const geometries = new Set<THREE.BufferGeometry>(), materials = new Set<THREE.Material>(), textures = new Set<THREE.Texture>();
+  for (const root of roots) root.traverse(object => {
+    const mesh = object as THREE.Mesh;
+    if (mesh.geometry) geometries.add(mesh.geometry);
+    for (const material of Array.isArray(mesh.material) ? mesh.material : mesh.material ? [mesh.material] : []) {
+      materials.add(material);
+      for (const value of Object.values(material)) if (value?.isTexture) textures.add(value);
+    }
+    const skeleton = (object as THREE.SkinnedMesh).skeleton;
+    if (skeleton?.boneTexture) textures.add(skeleton.boneTexture);
+  });
+  for (const texture of textures) texture.dispose();
+  for (const material of materials) material.dispose();
+  for (const geometry of geometries) geometry.dispose();
+}
+
+function ownPet(group: THREE.Group, update: (time: number) => void = () => {}, roots: THREE.Object3D[] = [group]): ZodiacPet {
+  let disposed = false;
+  return { group,
+    update(time) { if (!disposed && Number.isFinite(time)) update(time); },
+    dispose() {
+      if (disposed) return;
+      disposed = true; disposePetResources(roots); roots.length = 0;
+      group.removeFromParent(); group.clear();
+    },
+  };
+}
+
+function checkAbort(signal?: AbortSignal) {
+  if (signal?.aborted) throw new DOMException('Zodiac pet loading aborted.', 'AbortError');
+}
+
+/** Freshly parse a checksum-verified animal, preserving its meshes, materials
+ * and source pose. No authored animals are present in the audited archive yet;
+ * missing entries keep an explicitly labelled temporary animal visible. */
+export async function loadZodiacPet(branch: string, quality: SpiritQuality = 'high', options: ZodiacPetLoadOptions = {}): Promise<ZodiacPet> {
+  checkAbort(options.signal);
+  const resolved = resolveBranch(branch), asset = petAssets[resolved];
+  if (asset.sourceStatus !== 'available' || !asset.file || !asset.version || !asset.sha256) return createZodiacPet(resolved, quality);
+  const roots: THREE.Object3D[] = [];
+  try {
+    const url = `/models/zodiac-pets/${asset.file}`;
+    const response = await fetch(url, { signal: options.signal });
+    if (!response.ok) throw new Error(`Authored zodiac GLB returned HTTP ${response.status}.`);
+    const bytes = await response.arrayBuffer(); checkAbort(options.signal);
+    const digest = await crypto.subtle.digest('SHA-256', bytes);
+    const hash = Array.from(new Uint8Array(digest), byte => byte.toString(16).padStart(2, '0')).join('');
+    if (hash !== asset.sha256) throw new Error('Authored zodiac GLB SHA-256 does not match its source manifest.');
+    checkAbort(options.signal);
+    const gltf = await new GLTFLoader().parseAsync(bytes, url.slice(0, url.lastIndexOf('/') + 1));
+    roots.push(...gltf.scenes); if (!roots.includes(gltf.scene)) roots.push(gltf.scene);
+    // GLTF parsing/image decoding cannot be cancelled; dispose a late completion
+    // before exposing it if the owner has already cancelled this request.
+    checkAbort(options.signal);
+    const bounds = new THREE.Box3().setFromObject(gltf.scene, true), size = bounds.getSize(new THREE.Vector3());
+    if (bounds.isEmpty() || ![size.x, size.y, size.z].every(Number.isFinite) || size.y <= 0) throw new Error('Authored zodiac GLB has no finite animal bounds.');
+    const scale = Math.min(.66 / size.y, size.x > 0 ? .62 / size.x : Infinity, size.z > 0 ? .85 / size.z : Infinity);
+    const center = bounds.getCenter(new THREE.Vector3()), group = new THREE.Group(), rig = new THREE.Group();
+    const info = ZODIAC_FEATURES[resolved];
+    group.name = `day-zodiac-pet:${info.animal}`;
+    group.userData = { pillarRole: 'day-branch', branch: resolved, animal: info.animal, ...provenance(resolved),
+      assetStatus: 'authored-glb', authoredAssetStatus: 'loaded', authoredSha256: hash,
+      normalization: { uniformScale: scale, sourceMin: bounds.min.toArray(), sourceMax: bounds.max.toArray() } };
+    rig.name = `${info.animal}-authored-presentation`;
+    rig.scale.setScalar(scale); rig.position.set(-center.x * scale, -bounds.min.y * scale, -center.z * scale);
+    rig.add(gltf.scene); group.add(rig);
+    group.traverse(object => { if ((object as THREE.Mesh).isMesh) (object as THREE.Mesh).castShadow = true; });
+    // The original static/rest pose is retained. The procedural head animation
+    // does not apply to an authored mesh or alter its neutral coordinates.
+    return ownPet(group, undefined, roots);
+  } catch (error) {
+    disposePetResources(roots); roots.length = 0;
+    checkAbort(options.signal);
+    if ((error as { name?: string })?.name === 'AbortError') throw error;
+    const fallback = createZodiacPet(resolved, quality);
+    fallback.group.userData.authoredAssetStatus = 'load-error';
+    fallback.group.userData.authoredLoadError = error instanceof Error ? error.message : String(error);
+    return fallback;
+  }
+}
 
 /** Temporary animal studies, not approved animal assets. The day branch chooses
  * anatomy; natural matte colors deliberately stay independent of elemental jade. */
 export function createZodiacPet(branch: string, quality: SpiritQuality = 'high'): ZodiacPet {
-  const resolved: ZodiacBranch = Object.hasOwn(ZODIAC_FEATURES, branch) ? branch as ZodiacBranch : '자';
+  const resolved = resolveBranch(branch);
   const info = ZODIAC_FEATURES[resolved], low = quality === 'low';
   const group = new THREE.Group(), rig = new THREE.Group(), head = new THREE.Group();
   group.name = `day-zodiac-pet:${info.animal}`;
-  group.userData = { pillarRole: 'day-branch', branch: resolved, animal: info.animal, assetStatus: 'procedural-placeholder' };
+  group.userData = { pillarRole: 'day-branch', branch: resolved, animal: info.animal, assetStatus: 'procedural-placeholder', ...provenance(resolved) };
   group.add(rig); rig.add(head); head.name = `${info.animal}-head`;
   const colors: Record<ZodiacBranch, [number, number, number]> = {
     자: [0x8d9498, 0xd9bbbd, 0xc5ccce], 축: [0x8e6650, 0xe4d6bc, 0x534335],
@@ -161,5 +270,5 @@ export function createZodiacPet(branch: string, quality: SpiritQuality = 'high')
     head.rotation.y = -.22 + Math.sin(time * .54) * .035;
     head.rotation.z = Math.sin(time * .72) * .018;
   };
-  update(0); return { group, update };
+  update(0); return ownPet(group, update);
 }

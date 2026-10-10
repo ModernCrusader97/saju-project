@@ -1,0 +1,1355 @@
+{
+  "before": {
+    "errors": 43,
+    "warnings": 37,
+    "files": [
+      {
+        "path": "app/api/guin/[id]/route.ts",
+        "errors": 2,
+        "warnings": 0,
+        "messages": [
+          {
+            "line": 18,
+            "ruleId": "@typescript-eslint/no-explicit-any",
+            "severity": 2,
+            "message": "Unexpected any. Specify a different type."
+          },
+          {
+            "line": 79,
+            "ruleId": "@typescript-eslint/no-explicit-any",
+            "severity": 2,
+            "message": "Unexpected any. Specify a different type."
+          }
+        ]
+      },
+      {
+        "path": "app/api/guin/route.ts",
+        "errors": 1,
+        "warnings": 1,
+        "messages": [
+          {
+            "line": 5,
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'GuinPerson' is defined but never used."
+          },
+          {
+            "line": 56,
+            "ruleId": "@typescript-eslint/no-explicit-any",
+            "severity": 2,
+            "message": "Unexpected any. Specify a different type."
+          }
+        ]
+      },
+      {
+        "path": "app/api/saju/[id]/chat/route.ts",
+        "errors": 1,
+        "warnings": 0,
+        "messages": [
+          {
+            "line": 33,
+            "ruleId": "@typescript-eslint/no-explicit-any",
+            "severity": 2,
+            "message": "Unexpected any. Specify a different type."
+          }
+        ]
+      },
+      {
+        "path": "app/api/saju/[id]/route.ts",
+        "errors": 1,
+        "warnings": 0,
+        "messages": [
+          {
+            "line": 16,
+            "ruleId": "@typescript-eslint/no-explicit-any",
+            "severity": 2,
+            "message": "Unexpected any. Specify a different type."
+          }
+        ]
+      },
+      {
+        "path": "app/daily/page.tsx",
+        "errors": 3,
+        "warnings": 1,
+        "messages": [
+          {
+            "line": 68,
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'mounted' is assigned a value but never used."
+          },
+          {
+            "line": 89,
+            "ruleId": "react-hooks/set-state-in-effect",
+            "severity": 2,
+            "message": "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\n/workspace/saju-spirit-surface-v30-baseline-20261010/app/daily/page.tsx:89:5\n  87 |     const pillar = getDailyPillar(y, m, d);\n  88 |\n> 89 |     setDateInfo({\n     |     ^^^^^^^^^^^ Avoid calling setState() directly within an effect\n  90 |       dateStr: `${y}\ub144 ${m}\uc6d4 ${d}\uc77c`,\n  91 |       dailyPillar: pillar,\n  92 |     });"
+          },
+          {
+            "line": 202,
+            "ruleId": "react/no-unescaped-entities",
+            "severity": 2,
+            "message": "`\"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`."
+          },
+          {
+            "line": 202,
+            "ruleId": "react/no-unescaped-entities",
+            "severity": 2,
+            "message": "`\"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`."
+          }
+        ]
+      },
+      {
+        "path": "app/guin/[id]/page.tsx",
+        "errors": 2,
+        "warnings": 4,
+        "messages": [
+          {
+            "line": 14,
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Share2' is defined but never used."
+          },
+          {
+            "line": 22,
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Flame' is defined but never used."
+          },
+          {
+            "line": 27,
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Sliders' is defined but never used."
+          },
+          {
+            "line": 74,
+            "ruleId": "react-hooks/exhaustive-deps",
+            "severity": 1,
+            "message": "React Hook useEffect has a missing dependency: 'fetchMap'. Either include it or remove the dependency array."
+          },
+          {
+            "line": 176,
+            "ruleId": "@next/next/no-html-link-for-pages",
+            "severity": 2,
+            "message": "Do not use an `<a>` element to navigate to `/guin/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages"
+          },
+          {
+            "line": 190,
+            "ruleId": "@next/next/no-html-link-for-pages",
+            "severity": 2,
+            "message": "Do not use an `<a>` element to navigate to `/guin/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages"
+          }
+        ]
+      },
+      {
+        "path": "app/guin/page.tsx",
+        "errors": 0,
+        "warnings": 1,
+        "messages": [
+          {
+            "line": 59,
+            "ruleId": "@next/next/no-location-assign-relative-destination",
+            "severity": 1,
+            "message": "Do not use `window.location.assign()` to navigate to internal Next.js pages. Use `redirect()` in the render phase, or `useRouter().push()` in Client Components' event handlers instead. See: https://nextjs.org/docs/messages/no-location-assign-relative-destination"
+          }
+        ]
+      },
+      {
+        "path": "app/manse/page.tsx",
+        "errors": 0,
+        "warnings": 4,
+        "messages": [
+          {
+            "line": 8,
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Sparkles' is defined but never used."
+          },
+          {
+            "line": 8,
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'User' is defined but never used."
+          },
+          {
+            "line": 8,
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Clock' is defined but never used."
+          },
+          {
+            "line": 8,
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Compass' is defined but never used."
+          }
+        ]
+      },
+      {
+        "path": "app/page.tsx",
+        "errors": 1,
+        "warnings": 2,
+        "messages": [
+          {
+            "line": 5,
+            "ruleId": "@next/next/no-location-assign-relative-destination",
+            "severity": 1,
+            "message": "Do not use `window.location.assign()` to navigate to internal Next.js pages. Use `redirect()` in the render phase, or `useRouter().push()` in Client Components' event handlers instead. See: https://nextjs.org/docs/messages/no-location-assign-relative-destination"
+          },
+          {
+            "line": 7,
+            "ruleId": "@next/next/no-img-element",
+            "severity": 1,
+            "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element"
+          },
+          {
+            "line": 8,
+            "ruleId": "@next/next/no-html-link-for-pages",
+            "severity": 2,
+            "message": "Do not use an `<a>` element to navigate to `/guin/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages"
+          }
+        ]
+      },
+      {
+        "path": "components/FortuneCard.tsx",
+        "errors": 4,
+        "warnings": 3,
+        "messages": [
+          {
+            "line": 5,
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Sparkles' is defined but never used."
+          },
+          {
+            "line": 5,
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Heart' is defined but never used."
+          },
+          {
+            "line": 5,
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'ShieldCheck' is defined but never used."
+          },
+          {
+            "line": 44,
+            "ruleId": "react/no-unescaped-entities",
+            "severity": 2,
+            "message": "`\"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`."
+          },
+          {
+            "line": 44,
+            "ruleId": "react/no-unescaped-entities",
+            "severity": 2,
+            "message": "`\"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`."
+          },
+          {
+            "line": 229,
+            "ruleId": "react/no-unescaped-entities",
+            "severity": 2,
+            "message": "`\"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`."
+          },
+          {
+            "line": 229,
+            "ruleId": "react/no-unescaped-entities",
+            "severity": 2,
+            "message": "`\"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`."
+          }
+        ]
+      },
+      {
+        "path": "components/Header.tsx",
+        "errors": 1,
+        "warnings": 1,
+        "messages": [
+          {
+            "line": 7,
+            "ruleId": "react-hooks/exhaustive-deps",
+            "severity": 1,
+            "message": "The ref value 'trigger.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'trigger.current' to a variable inside the effect, and use that variable in the cleanup function."
+          },
+          {
+            "line": 8,
+            "ruleId": "@next/next/no-html-link-for-pages",
+            "severity": 2,
+            "message": "Do not use an `<a>` element to navigate to `/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages"
+          }
+        ]
+      },
+      {
+        "path": "components/SajuInputModal.tsx",
+        "errors": 0,
+        "warnings": 1,
+        "messages": [
+          {
+            "line": 86,
+            "ruleId": "@next/next/no-location-assign-relative-destination",
+            "severity": 1,
+            "message": "Do not use `window.location.assign()` to navigate to internal Next.js pages. Use `redirect()` in the render phase, or `useRouter().push()` in Client Components' event handlers instead. See: https://nextjs.org/docs/messages/no-location-assign-relative-destination"
+          }
+        ]
+      },
+      {
+        "path": "components/planet/CosmicPassportModal.tsx",
+        "errors": 0,
+        "warnings": 2,
+        "messages": [
+          {
+            "line": 6,
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Compass' is defined but never used."
+          },
+          {
+            "line": 258,
+            "ruleId": "@next/next/no-img-element",
+            "severity": 1,
+            "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element"
+          }
+        ]
+      },
+      {
+        "path": "components/planet/ElementalSpiritCanvas.tsx",
+        "errors": 0,
+        "warnings": 1,
+        "messages": [
+          {
+            "line": 229,
+            "ruleId": "@next/next/no-img-element",
+            "severity": 1,
+            "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element"
+          }
+        ]
+      },
+      {
+        "path": "components/planet/FiveElementFormStudy.tsx",
+        "errors": 2,
+        "warnings": 1,
+        "messages": [
+          {
+            "line": 23,
+            "ruleId": "react-hooks/set-state-in-effect",
+            "severity": 2,
+            "message": "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\n/workspace/saju-spirit-surface-v30-baseline-20261010/components/planet/FiveElementFormStudy.tsx:23:124\n  21 |  useEffect(()=>{\n  22 |   const target=mount.current;if(!target)return;setReady(false);setError('');reaction.current=false;\n> 23 |   let renderer:THREE.WebGLRenderer;try{renderer=new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true})}catch{setError('\uc774 \ube0c\ub77c\uc6b0\uc800\uc5d0\uc11c 3D\ub97c \uc2dc\uc791\ud558\uc9c0 \ubabb\ud588\uc5b4\uc694. \uc544\ub798 \ub80c\ub354 \uc774\ubbf8\uc9c0\ub85c \ube44\uad50\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4.');return}\n     |                                                                                                                            ^^^^^^^^ Avoid calling setState() directly within an effect\n  24 |   renderer.setPixelRatio(Math.min(window.devicePixelRatio,1.5));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=.9;\n  25 |   const element=renderer.domElement;canvas.current=element;target.replaceChildren(element);element.style.cssText='display:block;width:100%;height:100%;touch-action:pan-y';element.setAttribute('aria-label',`${form.name} \uc624\ud589 \uc815\ub839 \ud615\ud0dc\uc758 3D \uc2dc\uc81c\ud488`);\n  26 |   const scene=new THREE.Scene();scene.background=new THREE.Color('#dce5e8');const pmrem=new THREE.PMREMGenerator(renderer),room=new RoomEnvironment(),environment=pmrem.fromScene(room,.06);room.dispose();pmrem.dispose();scene.environment=environment.texture;scene.environmentIntensity=.75;"
+          },
+          {
+            "line": 30,
+            "ruleId": "prefer-const",
+            "severity": 2,
+            "message": "'size' is never reassigned. Use 'const' instead."
+          },
+          {
+            "line": 44,
+            "ruleId": "@next/next/no-img-element",
+            "severity": 1,
+            "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element"
+          }
+        ]
+      },
+      {
+        "path": "components/planet/GalaxyCanvas.tsx",
+        "errors": 6,
+        "warnings": 4,
+        "messages": [
+          {
+            "line": 147,
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'prevMouse' is assigned a value but never used."
+          },
+          {
+            "line": 203,
+            "ruleId": "react-hooks/immutability",
+            "severity": 2,
+            "message": "Error: Cannot access variable before it is declared\n\n`updateCameraPosition` is accessed before it is declared, which prevents the earlier access from updating when this value changes over time.\n\n/workspace/saju-spirit-surface-v30-baseline-20261010/components/planet/GalaxyCanvas.tsx:203:5\n  201 |     const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1200);\n  202 |     cameraRef.current = camera;\n> 203 |     updateCameraPosition();\n      |     ^^^^^^^^^^^^^^^^^^^^ `updateCameraPosition` accessed before it is declared\n  204 |\n  205 |     let renderer: THREE.WebGLRenderer;\n  206 |     try {\n\n/workspace/saju-spirit-surface-v30-baseline-20261010/components/planet/GalaxyCanvas.tsx:472:3\n  470 |   }, []);\n  471 |\n> 472 |   const updateCameraPosition = () => {\n      |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 473 |     if (!cameraRef.current) return;\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 474 |     const { theta, phi, radius } = cameraAngle.current;\n      \u2026\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 483 |     cameraRef.current.lookAt(currentLookAt.current);\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 484 |   };\n      | ^^^^^ `updateCameraPosition` is declared here\n  485 |\n  486 |   const startTrackingPlanet = useCallback((personId: string, isOwner: boolean) => {\n  487 |     trackedPlanetIdRef.current = personId;"
+          },
+          {
+            "line": 214,
+            "ruleId": "react-hooks/set-state-in-effect",
+            "severity": 2,
+            "message": "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\n/workspace/saju-spirit-surface-v30-baseline-20261010/components/planet/GalaxyCanvas.tsx:214:7\n  212 |     });\n  213 |     } catch {\n> 214 |       setGraphicsError(\"3D \ud654\uba74\uc744 \uc0ac\uc6a9\ud560 \uc218 \uc5c6\uc5b4\uc694. WebGL\uc744 \uc9c0\uc6d0\ud558\ub294 \ube0c\ub77c\uc6b0\uc800\uc5d0\uc11c \ub2e4\uc2dc \uc5f4\uc5b4\uc8fc\uc138\uc694.\");\n      |       ^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect\n  215 |       return;\n  216 |     }\n  217 |     let shaderFailed = false;"
+          },
+          {
+            "line": 306,
+            "ruleId": "react-hooks/immutability",
+            "severity": 2,
+            "message": "Error: Cannot access variable before it is declared\n\n`startTrackingPlanet` is accessed before it is declared, which prevents the earlier access from updating when this value changes over time.\n\n/workspace/saju-spirit-surface-v30-baseline-20261010/components/planet/GalaxyCanvas.tsx:306:13\n  304 |\n  305 |             // \uc2e4\uc2dc\uac04 \uada4\ub3c4 \ucd94\uc801 \ub77d\uc628\n> 306 |             startTrackingPlanet(val.node.person.id, val.node.isOwner);\n      |             ^^^^^^^^^^^^^^^^^^^ `startTrackingPlanet` accessed before it is declared\n  307 |           }\n  308 |         });\n  309 |       }\n\n/workspace/saju-spirit-surface-v30-baseline-20261010/components/planet/GalaxyCanvas.tsx:486:3\n  484 |   };\n  485 |\n> 486 |   const startTrackingPlanet = useCallback((personId: string, isOwner: boolean) => {\n      |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 487 |     trackedPlanetIdRef.current = personId;\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 488 |     targetRadius.current = isOwner ? 6.2 : 5.2;\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 489 |     cameraAngle.current.phi = 0.44;\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 490 |     setFocusMode(isOwner ? \"owner\" : \"friend\");\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 491 |   }, []);\n      | ^^^^^^^^^^ `startTrackingPlanet` is declared here\n  492 |\n  493 |   const flyCameraToOverview = useCallback(() => {\n  494 |     trackedPlanetIdRef.current = null;"
+          },
+          {
+            "line": 451,
+            "ruleId": "react-hooks/exhaustive-deps",
+            "severity": 1,
+            "message": "The ref value 'toastTimersRef.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'toastTimersRef.current' to a variable inside the effect, and use that variable in the cleanup function."
+          },
+          {
+            "line": 470,
+            "ruleId": "react-hooks/exhaustive-deps",
+            "severity": 1,
+            "message": "React Hook useEffect has missing dependencies: 'onSelectPerson' and 'startTrackingPlanet'. Either include them or remove the dependency array. If 'onSelectPerson' changes too often, find the parent component that defines it and wrap that definition in useCallback."
+          },
+          {
+            "line": 486,
+            "ruleId": "react-hooks/preserve-manual-memoization",
+            "severity": 2,
+            "message": "Compilation Skipped: Existing memoization could not be preserved\n\nReact Compiler has skipped optimizing this component because the existing manual memoization could not be preserved. This value was memoized in source but not in compilation output.\n\n/workspace/saju-spirit-surface-v30-baseline-20261010/components/planet/GalaxyCanvas.tsx:486:43\n  484 |   };\n  485 |\n> 486 |   const startTrackingPlanet = useCallback((personId: string, isOwner: boolean) => {\n      |                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 487 |     trackedPlanetIdRef.current = personId;\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 488 |     targetRadius.current = isOwner ? 6.2 : 5.2;\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 489 |     cameraAngle.current.phi = 0.44;\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 490 |     setFocusMode(isOwner ? \"owner\" : \"friend\");\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 491 |   }, []);\n      | ^^^^ Could not preserve existing memoization\n  492 |\n  493 |   const flyCameraToOverview = useCallback(() => {\n  494 |     trackedPlanetIdRef.current = null;"
+          },
+          {
+            "line": 735,
+            "ruleId": "react-hooks/exhaustive-deps",
+            "severity": 1,
+            "message": "React Hook useEffect has missing dependencies: 'selectedPersonId' and 'startTrackingPlanet'. Either include them or remove the dependency array."
+          },
+          {
+            "line": 1021,
+            "ruleId": "react/no-unescaped-entities",
+            "severity": 2,
+            "message": "`'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`."
+          },
+          {
+            "line": 1021,
+            "ruleId": "react/no-unescaped-entities",
+            "severity": 2,
+            "message": "`'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`."
+          }
+        ]
+      },
+      {
+        "path": "components/planet/GalaxyPokedexModal.tsx",
+        "errors": 0,
+        "warnings": 1,
+        "messages": [
+          {
+            "line": 53,
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'level' is assigned a value but never used."
+          }
+        ]
+      },
+      {
+        "path": "components/planet/ImWaterStudy.tsx",
+        "errors": 1,
+        "warnings": 1,
+        "messages": [
+          {
+            "line": 16,
+            "ruleId": "react-hooks/set-state-in-effect",
+            "severity": 2,
+            "message": "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\n/workspace/saju-spirit-surface-v30-baseline-20261010/components/planet/ImWaterStudy.tsx:16:126\n  14 |   const target=mount.current;if(!target)return;setError('');setReady(false);\n  15 |   let renderer:THREE.WebGLRenderer;\n> 16 |   try{renderer=new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true,powerPreference:'high-performance'})}catch{setError('\uc774 \ube0c\ub77c\uc6b0\uc800\uc5d0\uc11c 3D\ub97c \uc2dc\uc791\ud558\uc9c0 \ubabb\ud588\uc5b4\uc694.');return}\n     |                                                                                                                              ^^^^^^^^ Avoid calling setState() directly within an effect\n  17 |   renderer.setPixelRatio(Math.min(window.devicePixelRatio,1.6));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=.9;\n  18 |   renderer.debug.onShaderError=()=>setError('\ubb3c \uc7ac\uc9c8 \uc170\uc774\ub354\ub97c \ud45c\uc2dc\ud558\uc9c0 \ubabb\ud588\uc5b4\uc694.');\n  19 |   const element=renderer.domElement;canvas.current=element;target.replaceChildren(element);element.style.cssText='width:100%;height:100%;display:block;touch-action:pan-y';element.setAttribute('aria-label','\uc784\uc758 \ubb3c \uc7ac\uc9c8\uc744 \uc815\uc9c0 \uc0c1\ud0dc\ub85c \uc0b4\ud3b4\ubcf4\ub294 \uc0c1\ubc18\uc2e0 3D \ud45c\ubcf8');"
+          },
+          {
+            "line": 37,
+            "ruleId": "@next/next/no-img-element",
+            "severity": 1,
+            "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element"
+          }
+        ]
+      },
+      {
+        "path": "components/planet/PlanetCanvas.tsx",
+        "errors": 1,
+        "warnings": 2,
+        "messages": [
+          {
+            "line": 60,
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'previousMousePosition' is assigned a value but never used."
+          },
+          {
+            "line": 95,
+            "ruleId": "react-hooks/set-state-in-effect",
+            "severity": 2,
+            "message": "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\n/workspace/saju-spirit-surface-v30-baseline-20261010/components/planet/PlanetCanvas.tsx:95:7\n  93 |     });\n  94 |     } catch {\n> 95 |       setGraphicsError(\"3D \ud654\uba74\uc744 \uc0ac\uc6a9\ud560 \uc218 \uc5c6\uc5b4\uc694. WebGL\uc744 \uc9c0\uc6d0\ud558\ub294 \ube0c\ub77c\uc6b0\uc800\uc5d0\uc11c \ub2e4\uc2dc \uc5f4\uc5b4\uc8fc\uc138\uc694.\");\n     |       ^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect\n  96 |       return;\n  97 |     }\n  98 |     let shaderFailed = false;"
+          },
+          {
+            "line": 262,
+            "ruleId": "react-hooks/exhaustive-deps",
+            "severity": 1,
+            "message": "React Hook useEffect has a missing dependency: 'presetY'. Either include it or remove the dependency array."
+          }
+        ]
+      },
+      {
+        "path": "components/planet/PorcelainHeroStudy.tsx",
+        "errors": 3,
+        "warnings": 1,
+        "messages": [
+          {
+            "line": 11,
+            "ruleId": "react-hooks/set-state-in-effect",
+            "severity": 2,
+            "message": "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\n/workspace/saju-spirit-surface-v30-baseline-20261010/components/planet/PorcelainHeroStudy.tsx:11:82\n   9 |  const [facial,setFacial]=useState(false),[autoBlink,setAutoBlink]=useState(true);const blinkAuto=useRef(true),blinkRequest=useRef<number|null>(null);\n  10 |  useEffect(()=>{blinkAuto.current=autoBlink},[autoBlink]);\n> 11 |  useEffect(()=>{if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)setAutoBlink(false)},[]);\n     |                                                                                  ^^^^^^^^^^^^ Avoid calling setState() directly within an effect\n  12 |  const mount=useRef<HTMLDivElement>(null),canvas=useRef<HTMLCanvasElement|null>(null),rotate=useRef(false);\n  13 |  const [portrait,setPortrait]=useState(true),[auto,setAuto]=useState(false),[reset,setReset]=useState(0),[ready,setReady]=useState(false),[error,setError]=useState('');\n  14 |  useEffect(()=>{rotate.current=auto},[auto]);"
+          },
+          {
+            "line": 17,
+            "ruleId": "react-hooks/set-state-in-effect",
+            "severity": 2,
+            "message": "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\n/workspace/saju-spirit-surface-v30-baseline-20261010/components/planet/PorcelainHeroStudy.tsx:17:124\n  15 |  useEffect(()=>{\n  16 |   const target=mount.current;if(!target)return;setReady(false);setError('');\n> 17 |   let renderer:THREE.WebGLRenderer;try{renderer=new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true})}catch{setError('\uc774 \ube0c\ub77c\uc6b0\uc800\uc5d0\uc11c 3D\ub97c \uc2dc\uc791\ud558\uc9c0 \ubabb\ud588\uc5b4\uc694. \uc544\ub798 \ub80c\ub354 \uc774\ubbf8\uc9c0\ub97c \ud655\uc778\ud558\uc138\uc694.');return}\n     |                                                                                                                            ^^^^^^^^ Avoid calling setState() directly within an effect\n  18 |   renderer.setPixelRatio(Math.min(window.devicePixelRatio,1.6));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=.8;\n  19 |   const element=renderer.domElement;canvas.current=element;target.replaceChildren(element);element.style.cssText='display:block;width:100%;height:100%;touch-action:pan-y';element.setAttribute('aria-label','\uccad\ud654\ubc31\uc790 \uae30\ud1a0\uc758 \uc0c8 \uc870\ud615\uc744 \ud68c\uc804\ud558\uba70 \uc0b4\ud3b4\ubcf4\ub294 \uc2e4\uc81c 3D \ubaa8\ub378');\n  20 |   const scene=new THREE.Scene();scene.background=new THREE.Color('#18272c');const pmrem=new THREE.PMREMGenerator(renderer),room=new RoomEnvironment(),environment=pmrem.fromScene(room,.04);room.dispose();pmrem.dispose();scene.environment=environment.texture;scene.environmentIntensity=.45;"
+          },
+          {
+            "line": 23,
+            "ruleId": "prefer-const",
+            "severity": 2,
+            "message": "'size' is never reassigned. Use 'const' instead."
+          },
+          {
+            "line": 34,
+            "ruleId": "@next/next/no-img-element",
+            "severity": 1,
+            "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element"
+          }
+        ]
+      },
+      {
+        "path": "components/planet/StemMaterialStudy.tsx",
+        "errors": 2,
+        "warnings": 2,
+        "messages": [
+          {
+            "line": 19,
+            "ruleId": "react-hooks/set-state-in-effect",
+            "severity": 2,
+            "message": "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\n/workspace/saju-spirit-surface-v30-baseline-20261010/components/planet/StemMaterialStudy.tsx:19:82\n  17 |  useEffect(()=>{runningRef.current=running},[running]);\n  18 |  useEffect(()=>{autoRotateRef.current=autoRotate},[autoRotate]);\n> 19 |  useEffect(()=>{if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)setRunning(false)},[]);\n     |                                                                                  ^^^^^^^^^^ Avoid calling setState() directly within an effect\n  20 |  useEffect(()=>{\n  21 |   const target=mount.current;if(!target)return;setReady(false);setError('');rotation.current={x:0,y:0};\n  22 |   const low=window.matchMedia('(pointer: coarse), (max-width: 640px)').matches;let renderer:THREE.WebGLRenderer;"
+          },
+          {
+            "line": 23,
+            "ruleId": "react-hooks/set-state-in-effect",
+            "severity": 2,
+            "message": "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\n/workspace/saju-spirit-surface-v30-baseline-20261010/components/planet/StemMaterialStudy.tsx:23:138\n  21 |   const target=mount.current;if(!target)return;setReady(false);setError('');rotation.current={x:0,y:0};\n  22 |   const low=window.matchMedia('(pointer: coarse), (max-width: 640px)').matches;let renderer:THREE.WebGLRenderer;\n> 23 |   try{renderer=new THREE.WebGLRenderer({antialias:!low,alpha:false,preserveDrawingBuffer:true,powerPreference:'high-performance'})}catch{setError('\uc774 \ube0c\ub77c\uc6b0\uc800\uc5d0\uc11c 3D \ud45c\ubcf8\uc744 \uc5f4\uc9c0 \ubabb\ud588\uc5b4\uc694.');return}\n     |                                                                                                                                          ^^^^^^^^ Avoid calling setState() directly within an effect\n  24 |   renderer.setPixelRatio(Math.min(window.devicePixelRatio,low?1.4:1.8));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=.85;renderer.setScissorTest(true);\n  25 |   renderer.debug.onShaderError=()=>setError('\uc7ac\uc9c8 \uc170\uc774\ub354\ub97c \ud45c\uc2dc\ud558\uc9c0 \ubabb\ud588\uc5b4\uc694.');\n  26 |   const canvas=renderer.domElement;canvasRef.current=canvas;canvas.style.width='100%';canvas.style.height='100%';canvas.style.display='block';canvas.style.touchAction='pan-y';canvas.setAttribute('aria-label',`${pair.a}\uc640 ${pair.b} \uc7ac\uc9c8\uc744 \uac19\uc740 \ud615\ud0dc\uc640 \uc870\uba85\uc73c\ub85c \ube44\uad50\ud558\ub294 3D \ud45c\ubcf8`);target.replaceChildren(canvas);"
+          },
+          {
+            "line": 54,
+            "ruleId": "@next/next/no-img-element",
+            "severity": 1,
+            "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element"
+          },
+          {
+            "line": 54,
+            "ruleId": "@next/next/no-img-element",
+            "severity": 1,
+            "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element"
+          }
+        ]
+      },
+      {
+        "path": "lib/planet/approved-stem-accents.ts",
+        "errors": 0,
+        "warnings": 1,
+        "messages": [
+          {
+            "line": 25,
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Z_AXIS' is assigned a value but never used."
+          }
+        ]
+      },
+      {
+        "path": "lib/planet/mesh-surface.ts",
+        "errors": 3,
+        "warnings": 0,
+        "messages": [
+          {
+            "line": 63,
+            "ruleId": "prefer-const",
+            "severity": 2,
+            "message": "'normal' is never reassigned. Use 'const' instead."
+          },
+          {
+            "line": 64,
+            "ruleId": "prefer-const",
+            "severity": 2,
+            "message": "'direction' is never reassigned. Use 'const' instead."
+          },
+          {
+            "line": 70,
+            "ruleId": "prefer-const",
+            "severity": 2,
+            "message": "'pos' is never reassigned. Use 'const' instead."
+          }
+        ]
+      },
+      {
+        "path": "lib/planet/surface-effects.ts",
+        "errors": 0,
+        "warnings": 1,
+        "messages": [
+          {
+            "line": 28,
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'_deltaSeconds' is defined but never used."
+          }
+        ]
+      },
+      {
+        "path": "lib/saju/daily-orbital.ts",
+        "errors": 0,
+        "warnings": 1,
+        "messages": [
+          {
+            "line": 2,
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'TEN_STEM_SPIRITS' is defined but never used."
+          }
+        ]
+      },
+      {
+        "path": "postcss.config.mjs",
+        "errors": 0,
+        "warnings": 1,
+        "messages": [
+          {
+            "line": 1,
+            "ruleId": "import/no-anonymous-default-export",
+            "severity": 1,
+            "message": "Assign object to a variable before exporting as module default"
+          }
+        ]
+      },
+      {
+        "path": "scripts/qa/load-ts.cjs",
+        "errors": 5,
+        "warnings": 0,
+        "messages": [
+          {
+            "line": 2,
+            "ruleId": "@typescript-eslint/no-require-imports",
+            "severity": 2,
+            "message": "A `require()` style import is forbidden."
+          },
+          {
+            "line": 3,
+            "ruleId": "@typescript-eslint/no-require-imports",
+            "severity": 2,
+            "message": "A `require()` style import is forbidden."
+          },
+          {
+            "line": 4,
+            "ruleId": "@typescript-eslint/no-require-imports",
+            "severity": 2,
+            "message": "A `require()` style import is forbidden."
+          },
+          {
+            "line": 5,
+            "ruleId": "@typescript-eslint/no-require-imports",
+            "severity": 2,
+            "message": "A `require()` style import is forbidden."
+          },
+          {
+            "line": 7,
+            "ruleId": "@typescript-eslint/no-require-imports",
+            "severity": 2,
+            "message": "A `require()` style import is forbidden."
+          }
+        ]
+      },
+      {
+        "path": "scripts/qa/spirit-vertex-colors.cjs",
+        "errors": 3,
+        "warnings": 0,
+        "messages": [
+          {
+            "line": 1,
+            "ruleId": "@typescript-eslint/no-require-imports",
+            "severity": 2,
+            "message": "A `require()` style import is forbidden."
+          },
+          {
+            "line": 2,
+            "ruleId": "@typescript-eslint/no-require-imports",
+            "severity": 2,
+            "message": "A `require()` style import is forbidden."
+          },
+          {
+            "line": 3,
+            "ruleId": "@typescript-eslint/no-require-imports",
+            "severity": 2,
+            "message": "A `require()` style import is forbidden."
+          }
+        ]
+      },
+      {
+        "path": "scripts/qa/visibility-loop.mjs",
+        "errors": 1,
+        "warnings": 0,
+        "messages": [
+          {
+            "line": 22,
+            "ruleId": "@typescript-eslint/no-this-alias",
+            "severity": 2,
+            "message": "Unexpected aliasing of 'this' to local variable."
+          }
+        ]
+      }
+    ]
+  },
+  "after": {
+    "errors": 40,
+    "warnings": 37,
+    "files": [
+      {
+        "path": "app/api/guin/[id]/route.ts",
+        "errors": 2,
+        "warnings": 0,
+        "messages": [
+          {
+            "line": 18,
+            "ruleId": "@typescript-eslint/no-explicit-any",
+            "severity": 2,
+            "message": "Unexpected any. Specify a different type."
+          },
+          {
+            "line": 79,
+            "ruleId": "@typescript-eslint/no-explicit-any",
+            "severity": 2,
+            "message": "Unexpected any. Specify a different type."
+          }
+        ]
+      },
+      {
+        "path": "app/api/guin/route.ts",
+        "errors": 1,
+        "warnings": 1,
+        "messages": [
+          {
+            "line": 5,
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'GuinPerson' is defined but never used."
+          },
+          {
+            "line": 56,
+            "ruleId": "@typescript-eslint/no-explicit-any",
+            "severity": 2,
+            "message": "Unexpected any. Specify a different type."
+          }
+        ]
+      },
+      {
+        "path": "app/api/saju/[id]/chat/route.ts",
+        "errors": 1,
+        "warnings": 0,
+        "messages": [
+          {
+            "line": 33,
+            "ruleId": "@typescript-eslint/no-explicit-any",
+            "severity": 2,
+            "message": "Unexpected any. Specify a different type."
+          }
+        ]
+      },
+      {
+        "path": "app/api/saju/[id]/route.ts",
+        "errors": 1,
+        "warnings": 0,
+        "messages": [
+          {
+            "line": 16,
+            "ruleId": "@typescript-eslint/no-explicit-any",
+            "severity": 2,
+            "message": "Unexpected any. Specify a different type."
+          }
+        ]
+      },
+      {
+        "path": "app/daily/page.tsx",
+        "errors": 3,
+        "warnings": 1,
+        "messages": [
+          {
+            "line": 68,
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'mounted' is assigned a value but never used."
+          },
+          {
+            "line": 89,
+            "ruleId": "react-hooks/set-state-in-effect",
+            "severity": 2,
+            "message": "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\n/workspace/saju-spirit-surface-zodiac-v30-20261010/app/daily/page.tsx:89:5\n  87 |     const pillar = getDailyPillar(y, m, d);\n  88 |\n> 89 |     setDateInfo({\n     |     ^^^^^^^^^^^ Avoid calling setState() directly within an effect\n  90 |       dateStr: `${y}\ub144 ${m}\uc6d4 ${d}\uc77c`,\n  91 |       dailyPillar: pillar,\n  92 |     });"
+          },
+          {
+            "line": 202,
+            "ruleId": "react/no-unescaped-entities",
+            "severity": 2,
+            "message": "`\"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`."
+          },
+          {
+            "line": 202,
+            "ruleId": "react/no-unescaped-entities",
+            "severity": 2,
+            "message": "`\"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`."
+          }
+        ]
+      },
+      {
+        "path": "app/guin/[id]/page.tsx",
+        "errors": 2,
+        "warnings": 4,
+        "messages": [
+          {
+            "line": 14,
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Share2' is defined but never used."
+          },
+          {
+            "line": 22,
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Flame' is defined but never used."
+          },
+          {
+            "line": 27,
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Sliders' is defined but never used."
+          },
+          {
+            "line": 74,
+            "ruleId": "react-hooks/exhaustive-deps",
+            "severity": 1,
+            "message": "React Hook useEffect has a missing dependency: 'fetchMap'. Either include it or remove the dependency array."
+          },
+          {
+            "line": 176,
+            "ruleId": "@next/next/no-html-link-for-pages",
+            "severity": 2,
+            "message": "Do not use an `<a>` element to navigate to `/guin/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages"
+          },
+          {
+            "line": 190,
+            "ruleId": "@next/next/no-html-link-for-pages",
+            "severity": 2,
+            "message": "Do not use an `<a>` element to navigate to `/guin/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages"
+          }
+        ]
+      },
+      {
+        "path": "app/guin/page.tsx",
+        "errors": 0,
+        "warnings": 1,
+        "messages": [
+          {
+            "line": 59,
+            "ruleId": "@next/next/no-location-assign-relative-destination",
+            "severity": 1,
+            "message": "Do not use `window.location.assign()` to navigate to internal Next.js pages. Use `redirect()` in the render phase, or `useRouter().push()` in Client Components' event handlers instead. See: https://nextjs.org/docs/messages/no-location-assign-relative-destination"
+          }
+        ]
+      },
+      {
+        "path": "app/manse/page.tsx",
+        "errors": 0,
+        "warnings": 4,
+        "messages": [
+          {
+            "line": 8,
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Sparkles' is defined but never used."
+          },
+          {
+            "line": 8,
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'User' is defined but never used."
+          },
+          {
+            "line": 8,
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Clock' is defined but never used."
+          },
+          {
+            "line": 8,
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Compass' is defined but never used."
+          }
+        ]
+      },
+      {
+        "path": "app/page.tsx",
+        "errors": 1,
+        "warnings": 2,
+        "messages": [
+          {
+            "line": 5,
+            "ruleId": "@next/next/no-location-assign-relative-destination",
+            "severity": 1,
+            "message": "Do not use `window.location.assign()` to navigate to internal Next.js pages. Use `redirect()` in the render phase, or `useRouter().push()` in Client Components' event handlers instead. See: https://nextjs.org/docs/messages/no-location-assign-relative-destination"
+          },
+          {
+            "line": 7,
+            "ruleId": "@next/next/no-img-element",
+            "severity": 1,
+            "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element"
+          },
+          {
+            "line": 8,
+            "ruleId": "@next/next/no-html-link-for-pages",
+            "severity": 2,
+            "message": "Do not use an `<a>` element to navigate to `/guin/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages"
+          }
+        ]
+      },
+      {
+        "path": "components/FortuneCard.tsx",
+        "errors": 4,
+        "warnings": 3,
+        "messages": [
+          {
+            "line": 5,
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Sparkles' is defined but never used."
+          },
+          {
+            "line": 5,
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Heart' is defined but never used."
+          },
+          {
+            "line": 5,
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'ShieldCheck' is defined but never used."
+          },
+          {
+            "line": 44,
+            "ruleId": "react/no-unescaped-entities",
+            "severity": 2,
+            "message": "`\"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`."
+          },
+          {
+            "line": 44,
+            "ruleId": "react/no-unescaped-entities",
+            "severity": 2,
+            "message": "`\"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`."
+          },
+          {
+            "line": 229,
+            "ruleId": "react/no-unescaped-entities",
+            "severity": 2,
+            "message": "`\"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`."
+          },
+          {
+            "line": 229,
+            "ruleId": "react/no-unescaped-entities",
+            "severity": 2,
+            "message": "`\"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`."
+          }
+        ]
+      },
+      {
+        "path": "components/Header.tsx",
+        "errors": 1,
+        "warnings": 1,
+        "messages": [
+          {
+            "line": 7,
+            "ruleId": "react-hooks/exhaustive-deps",
+            "severity": 1,
+            "message": "The ref value 'trigger.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'trigger.current' to a variable inside the effect, and use that variable in the cleanup function."
+          },
+          {
+            "line": 8,
+            "ruleId": "@next/next/no-html-link-for-pages",
+            "severity": 2,
+            "message": "Do not use an `<a>` element to navigate to `/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages"
+          }
+        ]
+      },
+      {
+        "path": "components/SajuInputModal.tsx",
+        "errors": 0,
+        "warnings": 1,
+        "messages": [
+          {
+            "line": 86,
+            "ruleId": "@next/next/no-location-assign-relative-destination",
+            "severity": 1,
+            "message": "Do not use `window.location.assign()` to navigate to internal Next.js pages. Use `redirect()` in the render phase, or `useRouter().push()` in Client Components' event handlers instead. See: https://nextjs.org/docs/messages/no-location-assign-relative-destination"
+          }
+        ]
+      },
+      {
+        "path": "components/planet/CosmicPassportModal.tsx",
+        "errors": 0,
+        "warnings": 2,
+        "messages": [
+          {
+            "line": 6,
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Compass' is defined but never used."
+          },
+          {
+            "line": 258,
+            "ruleId": "@next/next/no-img-element",
+            "severity": 1,
+            "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element"
+          }
+        ]
+      },
+      {
+        "path": "components/planet/ElementalSpiritCanvas.tsx",
+        "errors": 0,
+        "warnings": 1,
+        "messages": [
+          {
+            "line": 233,
+            "ruleId": "@next/next/no-img-element",
+            "severity": 1,
+            "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element"
+          }
+        ]
+      },
+      {
+        "path": "components/planet/FiveElementFormStudy.tsx",
+        "errors": 2,
+        "warnings": 1,
+        "messages": [
+          {
+            "line": 23,
+            "ruleId": "react-hooks/set-state-in-effect",
+            "severity": 2,
+            "message": "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\n/workspace/saju-spirit-surface-zodiac-v30-20261010/components/planet/FiveElementFormStudy.tsx:23:124\n  21 |  useEffect(()=>{\n  22 |   const target=mount.current;if(!target)return;setReady(false);setError('');reaction.current=false;\n> 23 |   let renderer:THREE.WebGLRenderer;try{renderer=new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true})}catch{setError('\uc774 \ube0c\ub77c\uc6b0\uc800\uc5d0\uc11c 3D\ub97c \uc2dc\uc791\ud558\uc9c0 \ubabb\ud588\uc5b4\uc694. \uc544\ub798 \ub80c\ub354 \uc774\ubbf8\uc9c0\ub85c \ube44\uad50\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4.');return}\n     |                                                                                                                            ^^^^^^^^ Avoid calling setState() directly within an effect\n  24 |   renderer.setPixelRatio(Math.min(window.devicePixelRatio,1.5));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=.9;\n  25 |   const element=renderer.domElement;canvas.current=element;target.replaceChildren(element);element.style.cssText='display:block;width:100%;height:100%;touch-action:pan-y';element.setAttribute('aria-label',`${form.name} \uc624\ud589 \uc815\ub839 \ud615\ud0dc\uc758 3D \uc2dc\uc81c\ud488`);\n  26 |   const scene=new THREE.Scene();scene.background=new THREE.Color('#dce5e8');const pmrem=new THREE.PMREMGenerator(renderer),room=new RoomEnvironment(),environment=pmrem.fromScene(room,.06);room.dispose();pmrem.dispose();scene.environment=environment.texture;scene.environmentIntensity=.75;"
+          },
+          {
+            "line": 30,
+            "ruleId": "prefer-const",
+            "severity": 2,
+            "message": "'size' is never reassigned. Use 'const' instead."
+          },
+          {
+            "line": 44,
+            "ruleId": "@next/next/no-img-element",
+            "severity": 1,
+            "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element"
+          }
+        ]
+      },
+      {
+        "path": "components/planet/GalaxyCanvas.tsx",
+        "errors": 6,
+        "warnings": 4,
+        "messages": [
+          {
+            "line": 147,
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'prevMouse' is assigned a value but never used."
+          },
+          {
+            "line": 203,
+            "ruleId": "react-hooks/immutability",
+            "severity": 2,
+            "message": "Error: Cannot access variable before it is declared\n\n`updateCameraPosition` is accessed before it is declared, which prevents the earlier access from updating when this value changes over time.\n\n/workspace/saju-spirit-surface-zodiac-v30-20261010/components/planet/GalaxyCanvas.tsx:203:5\n  201 |     const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1200);\n  202 |     cameraRef.current = camera;\n> 203 |     updateCameraPosition();\n      |     ^^^^^^^^^^^^^^^^^^^^ `updateCameraPosition` accessed before it is declared\n  204 |\n  205 |     let renderer: THREE.WebGLRenderer;\n  206 |     try {\n\n/workspace/saju-spirit-surface-zodiac-v30-20261010/components/planet/GalaxyCanvas.tsx:472:3\n  470 |   }, []);\n  471 |\n> 472 |   const updateCameraPosition = () => {\n      |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 473 |     if (!cameraRef.current) return;\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 474 |     const { theta, phi, radius } = cameraAngle.current;\n      \u2026\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 483 |     cameraRef.current.lookAt(currentLookAt.current);\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 484 |   };\n      | ^^^^^ `updateCameraPosition` is declared here\n  485 |\n  486 |   const startTrackingPlanet = useCallback((personId: string, isOwner: boolean) => {\n  487 |     trackedPlanetIdRef.current = personId;"
+          },
+          {
+            "line": 214,
+            "ruleId": "react-hooks/set-state-in-effect",
+            "severity": 2,
+            "message": "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\n/workspace/saju-spirit-surface-zodiac-v30-20261010/components/planet/GalaxyCanvas.tsx:214:7\n  212 |     });\n  213 |     } catch {\n> 214 |       setGraphicsError(\"3D \ud654\uba74\uc744 \uc0ac\uc6a9\ud560 \uc218 \uc5c6\uc5b4\uc694. WebGL\uc744 \uc9c0\uc6d0\ud558\ub294 \ube0c\ub77c\uc6b0\uc800\uc5d0\uc11c \ub2e4\uc2dc \uc5f4\uc5b4\uc8fc\uc138\uc694.\");\n      |       ^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect\n  215 |       return;\n  216 |     }\n  217 |     let shaderFailed = false;"
+          },
+          {
+            "line": 306,
+            "ruleId": "react-hooks/immutability",
+            "severity": 2,
+            "message": "Error: Cannot access variable before it is declared\n\n`startTrackingPlanet` is accessed before it is declared, which prevents the earlier access from updating when this value changes over time.\n\n/workspace/saju-spirit-surface-zodiac-v30-20261010/components/planet/GalaxyCanvas.tsx:306:13\n  304 |\n  305 |             // \uc2e4\uc2dc\uac04 \uada4\ub3c4 \ucd94\uc801 \ub77d\uc628\n> 306 |             startTrackingPlanet(val.node.person.id, val.node.isOwner);\n      |             ^^^^^^^^^^^^^^^^^^^ `startTrackingPlanet` accessed before it is declared\n  307 |           }\n  308 |         });\n  309 |       }\n\n/workspace/saju-spirit-surface-zodiac-v30-20261010/components/planet/GalaxyCanvas.tsx:486:3\n  484 |   };\n  485 |\n> 486 |   const startTrackingPlanet = useCallback((personId: string, isOwner: boolean) => {\n      |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 487 |     trackedPlanetIdRef.current = personId;\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 488 |     targetRadius.current = isOwner ? 6.2 : 5.2;\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 489 |     cameraAngle.current.phi = 0.44;\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 490 |     setFocusMode(isOwner ? \"owner\" : \"friend\");\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 491 |   }, []);\n      | ^^^^^^^^^^ `startTrackingPlanet` is declared here\n  492 |\n  493 |   const flyCameraToOverview = useCallback(() => {\n  494 |     trackedPlanetIdRef.current = null;"
+          },
+          {
+            "line": 451,
+            "ruleId": "react-hooks/exhaustive-deps",
+            "severity": 1,
+            "message": "The ref value 'toastTimersRef.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'toastTimersRef.current' to a variable inside the effect, and use that variable in the cleanup function."
+          },
+          {
+            "line": 470,
+            "ruleId": "react-hooks/exhaustive-deps",
+            "severity": 1,
+            "message": "React Hook useEffect has missing dependencies: 'onSelectPerson' and 'startTrackingPlanet'. Either include them or remove the dependency array. If 'onSelectPerson' changes too often, find the parent component that defines it and wrap that definition in useCallback."
+          },
+          {
+            "line": 486,
+            "ruleId": "react-hooks/preserve-manual-memoization",
+            "severity": 2,
+            "message": "Compilation Skipped: Existing memoization could not be preserved\n\nReact Compiler has skipped optimizing this component because the existing manual memoization could not be preserved. This value was memoized in source but not in compilation output.\n\n/workspace/saju-spirit-surface-zodiac-v30-20261010/components/planet/GalaxyCanvas.tsx:486:43\n  484 |   };\n  485 |\n> 486 |   const startTrackingPlanet = useCallback((personId: string, isOwner: boolean) => {\n      |                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 487 |     trackedPlanetIdRef.current = personId;\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 488 |     targetRadius.current = isOwner ? 6.2 : 5.2;\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 489 |     cameraAngle.current.phi = 0.44;\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 490 |     setFocusMode(isOwner ? \"owner\" : \"friend\");\n      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> 491 |   }, []);\n      | ^^^^ Could not preserve existing memoization\n  492 |\n  493 |   const flyCameraToOverview = useCallback(() => {\n  494 |     trackedPlanetIdRef.current = null;"
+          },
+          {
+            "line": 735,
+            "ruleId": "react-hooks/exhaustive-deps",
+            "severity": 1,
+            "message": "React Hook useEffect has missing dependencies: 'selectedPersonId' and 'startTrackingPlanet'. Either include them or remove the dependency array."
+          },
+          {
+            "line": 1021,
+            "ruleId": "react/no-unescaped-entities",
+            "severity": 2,
+            "message": "`'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`."
+          },
+          {
+            "line": 1021,
+            "ruleId": "react/no-unescaped-entities",
+            "severity": 2,
+            "message": "`'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`."
+          }
+        ]
+      },
+      {
+        "path": "components/planet/GalaxyPokedexModal.tsx",
+        "errors": 0,
+        "warnings": 1,
+        "messages": [
+          {
+            "line": 53,
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'level' is assigned a value but never used."
+          }
+        ]
+      },
+      {
+        "path": "components/planet/ImWaterStudy.tsx",
+        "errors": 1,
+        "warnings": 1,
+        "messages": [
+          {
+            "line": 16,
+            "ruleId": "react-hooks/set-state-in-effect",
+            "severity": 2,
+            "message": "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\n/workspace/saju-spirit-surface-zodiac-v30-20261010/components/planet/ImWaterStudy.tsx:16:126\n  14 |   const target=mount.current;if(!target)return;setError('');setReady(false);\n  15 |   let renderer:THREE.WebGLRenderer;\n> 16 |   try{renderer=new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true,powerPreference:'high-performance'})}catch{setError('\uc774 \ube0c\ub77c\uc6b0\uc800\uc5d0\uc11c 3D\ub97c \uc2dc\uc791\ud558\uc9c0 \ubabb\ud588\uc5b4\uc694.');return}\n     |                                                                                                                              ^^^^^^^^ Avoid calling setState() directly within an effect\n  17 |   renderer.setPixelRatio(Math.min(window.devicePixelRatio,1.6));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=.9;\n  18 |   renderer.debug.onShaderError=()=>setError('\ubb3c \uc7ac\uc9c8 \uc170\uc774\ub354\ub97c \ud45c\uc2dc\ud558\uc9c0 \ubabb\ud588\uc5b4\uc694.');\n  19 |   const element=renderer.domElement;canvas.current=element;target.replaceChildren(element);element.style.cssText='width:100%;height:100%;display:block;touch-action:pan-y';element.setAttribute('aria-label','\uc784\uc758 \ubb3c \uc7ac\uc9c8\uc744 \uc815\uc9c0 \uc0c1\ud0dc\ub85c \uc0b4\ud3b4\ubcf4\ub294 \uc0c1\ubc18\uc2e0 3D \ud45c\ubcf8');"
+          },
+          {
+            "line": 37,
+            "ruleId": "@next/next/no-img-element",
+            "severity": 1,
+            "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element"
+          }
+        ]
+      },
+      {
+        "path": "components/planet/PlanetCanvas.tsx",
+        "errors": 1,
+        "warnings": 2,
+        "messages": [
+          {
+            "line": 60,
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'previousMousePosition' is assigned a value but never used."
+          },
+          {
+            "line": 95,
+            "ruleId": "react-hooks/set-state-in-effect",
+            "severity": 2,
+            "message": "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\n/workspace/saju-spirit-surface-zodiac-v30-20261010/components/planet/PlanetCanvas.tsx:95:7\n  93 |     });\n  94 |     } catch {\n> 95 |       setGraphicsError(\"3D \ud654\uba74\uc744 \uc0ac\uc6a9\ud560 \uc218 \uc5c6\uc5b4\uc694. WebGL\uc744 \uc9c0\uc6d0\ud558\ub294 \ube0c\ub77c\uc6b0\uc800\uc5d0\uc11c \ub2e4\uc2dc \uc5f4\uc5b4\uc8fc\uc138\uc694.\");\n     |       ^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect\n  96 |       return;\n  97 |     }\n  98 |     let shaderFailed = false;"
+          },
+          {
+            "line": 262,
+            "ruleId": "react-hooks/exhaustive-deps",
+            "severity": 1,
+            "message": "React Hook useEffect has a missing dependency: 'presetY'. Either include it or remove the dependency array."
+          }
+        ]
+      },
+      {
+        "path": "components/planet/PorcelainHeroStudy.tsx",
+        "errors": 3,
+        "warnings": 1,
+        "messages": [
+          {
+            "line": 11,
+            "ruleId": "react-hooks/set-state-in-effect",
+            "severity": 2,
+            "message": "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\n/workspace/saju-spirit-surface-zodiac-v30-20261010/components/planet/PorcelainHeroStudy.tsx:11:82\n   9 |  const [facial,setFacial]=useState(false),[autoBlink,setAutoBlink]=useState(true);const blinkAuto=useRef(true),blinkRequest=useRef<number|null>(null);\n  10 |  useEffect(()=>{blinkAuto.current=autoBlink},[autoBlink]);\n> 11 |  useEffect(()=>{if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)setAutoBlink(false)},[]);\n     |                                                                                  ^^^^^^^^^^^^ Avoid calling setState() directly within an effect\n  12 |  const mount=useRef<HTMLDivElement>(null),canvas=useRef<HTMLCanvasElement|null>(null),rotate=useRef(false);\n  13 |  const [portrait,setPortrait]=useState(true),[auto,setAuto]=useState(false),[reset,setReset]=useState(0),[ready,setReady]=useState(false),[error,setError]=useState('');\n  14 |  useEffect(()=>{rotate.current=auto},[auto]);"
+          },
+          {
+            "line": 17,
+            "ruleId": "react-hooks/set-state-in-effect",
+            "severity": 2,
+            "message": "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\n/workspace/saju-spirit-surface-zodiac-v30-20261010/components/planet/PorcelainHeroStudy.tsx:17:124\n  15 |  useEffect(()=>{\n  16 |   const target=mount.current;if(!target)return;setReady(false);setError('');\n> 17 |   let renderer:THREE.WebGLRenderer;try{renderer=new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true})}catch{setError('\uc774 \ube0c\ub77c\uc6b0\uc800\uc5d0\uc11c 3D\ub97c \uc2dc\uc791\ud558\uc9c0 \ubabb\ud588\uc5b4\uc694. \uc544\ub798 \ub80c\ub354 \uc774\ubbf8\uc9c0\ub97c \ud655\uc778\ud558\uc138\uc694.');return}\n     |                                                                                                                            ^^^^^^^^ Avoid calling setState() directly within an effect\n  18 |   renderer.setPixelRatio(Math.min(window.devicePixelRatio,1.6));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=.8;\n  19 |   const element=renderer.domElement;canvas.current=element;target.replaceChildren(element);element.style.cssText='display:block;width:100%;height:100%;touch-action:pan-y';element.setAttribute('aria-label','\uccad\ud654\ubc31\uc790 \uae30\ud1a0\uc758 \uc0c8 \uc870\ud615\uc744 \ud68c\uc804\ud558\uba70 \uc0b4\ud3b4\ubcf4\ub294 \uc2e4\uc81c 3D \ubaa8\ub378');\n  20 |   const scene=new THREE.Scene();scene.background=new THREE.Color('#18272c');const pmrem=new THREE.PMREMGenerator(renderer),room=new RoomEnvironment(),environment=pmrem.fromScene(room,.04);room.dispose();pmrem.dispose();scene.environment=environment.texture;scene.environmentIntensity=.45;"
+          },
+          {
+            "line": 23,
+            "ruleId": "prefer-const",
+            "severity": 2,
+            "message": "'size' is never reassigned. Use 'const' instead."
+          },
+          {
+            "line": 34,
+            "ruleId": "@next/next/no-img-element",
+            "severity": 1,
+            "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element"
+          }
+        ]
+      },
+      {
+        "path": "components/planet/StemMaterialStudy.tsx",
+        "errors": 2,
+        "warnings": 2,
+        "messages": [
+          {
+            "line": 19,
+            "ruleId": "react-hooks/set-state-in-effect",
+            "severity": 2,
+            "message": "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\n/workspace/saju-spirit-surface-zodiac-v30-20261010/components/planet/StemMaterialStudy.tsx:19:82\n  17 |  useEffect(()=>{runningRef.current=running},[running]);\n  18 |  useEffect(()=>{autoRotateRef.current=autoRotate},[autoRotate]);\n> 19 |  useEffect(()=>{if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)setRunning(false)},[]);\n     |                                                                                  ^^^^^^^^^^ Avoid calling setState() directly within an effect\n  20 |  useEffect(()=>{\n  21 |   const target=mount.current;if(!target)return;setReady(false);setError('');rotation.current={x:0,y:0};\n  22 |   const low=window.matchMedia('(pointer: coarse), (max-width: 640px)').matches;let renderer:THREE.WebGLRenderer;"
+          },
+          {
+            "line": 23,
+            "ruleId": "react-hooks/set-state-in-effect",
+            "severity": 2,
+            "message": "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\n/workspace/saju-spirit-surface-zodiac-v30-20261010/components/planet/StemMaterialStudy.tsx:23:138\n  21 |   const target=mount.current;if(!target)return;setReady(false);setError('');rotation.current={x:0,y:0};\n  22 |   const low=window.matchMedia('(pointer: coarse), (max-width: 640px)').matches;let renderer:THREE.WebGLRenderer;\n> 23 |   try{renderer=new THREE.WebGLRenderer({antialias:!low,alpha:false,preserveDrawingBuffer:true,powerPreference:'high-performance'})}catch{setError('\uc774 \ube0c\ub77c\uc6b0\uc800\uc5d0\uc11c 3D \ud45c\ubcf8\uc744 \uc5f4\uc9c0 \ubabb\ud588\uc5b4\uc694.');return}\n     |                                                                                                                                          ^^^^^^^^ Avoid calling setState() directly within an effect\n  24 |   renderer.setPixelRatio(Math.min(window.devicePixelRatio,low?1.4:1.8));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=.85;renderer.setScissorTest(true);\n  25 |   renderer.debug.onShaderError=()=>setError('\uc7ac\uc9c8 \uc170\uc774\ub354\ub97c \ud45c\uc2dc\ud558\uc9c0 \ubabb\ud588\uc5b4\uc694.');\n  26 |   const canvas=renderer.domElement;canvasRef.current=canvas;canvas.style.width='100%';canvas.style.height='100%';canvas.style.display='block';canvas.style.touchAction='pan-y';canvas.setAttribute('aria-label',`${pair.a}\uc640 ${pair.b} \uc7ac\uc9c8\uc744 \uac19\uc740 \ud615\ud0dc\uc640 \uc870\uba85\uc73c\ub85c \ube44\uad50\ud558\ub294 3D \ud45c\ubcf8`);target.replaceChildren(canvas);"
+          },
+          {
+            "line": 54,
+            "ruleId": "@next/next/no-img-element",
+            "severity": 1,
+            "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element"
+          },
+          {
+            "line": 54,
+            "ruleId": "@next/next/no-img-element",
+            "severity": 1,
+            "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element"
+          }
+        ]
+      },
+      {
+        "path": "lib/planet/approved-stem-accents.ts",
+        "errors": 0,
+        "warnings": 1,
+        "messages": [
+          {
+            "line": 25,
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Z_AXIS' is assigned a value but never used."
+          }
+        ]
+      },
+      {
+        "path": "lib/planet/surface-effects.ts",
+        "errors": 0,
+        "warnings": 1,
+        "messages": [
+          {
+            "line": 28,
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'_deltaSeconds' is defined but never used."
+          }
+        ]
+      },
+      {
+        "path": "lib/saju/daily-orbital.ts",
+        "errors": 0,
+        "warnings": 1,
+        "messages": [
+          {
+            "line": 2,
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'TEN_STEM_SPIRITS' is defined but never used."
+          }
+        ]
+      },
+      {
+        "path": "postcss.config.mjs",
+        "errors": 0,
+        "warnings": 1,
+        "messages": [
+          {
+            "line": 1,
+            "ruleId": "import/no-anonymous-default-export",
+            "severity": 1,
+            "message": "Assign object to a variable before exporting as module default"
+          }
+        ]
+      },
+      {
+        "path": "scripts/qa/load-ts.cjs",
+        "errors": 5,
+        "warnings": 0,
+        "messages": [
+          {
+            "line": 2,
+            "ruleId": "@typescript-eslint/no-require-imports",
+            "severity": 2,
+            "message": "A `require()` style import is forbidden."
+          },
+          {
+            "line": 3,
+            "ruleId": "@typescript-eslint/no-require-imports",
+            "severity": 2,
+            "message": "A `require()` style import is forbidden."
+          },
+          {
+            "line": 4,
+            "ruleId": "@typescript-eslint/no-require-imports",
+            "severity": 2,
+            "message": "A `require()` style import is forbidden."
+          },
+          {
+            "line": 5,
+            "ruleId": "@typescript-eslint/no-require-imports",
+            "severity": 2,
+            "message": "A `require()` style import is forbidden."
+          },
+          {
+            "line": 7,
+            "ruleId": "@typescript-eslint/no-require-imports",
+            "severity": 2,
+            "message": "A `require()` style import is forbidden."
+          }
+        ]
+      },
+      {
+        "path": "scripts/qa/spirit-vertex-colors.cjs",
+        "errors": 3,
+        "warnings": 0,
+        "messages": [
+          {
+            "line": 1,
+            "ruleId": "@typescript-eslint/no-require-imports",
+            "severity": 2,
+            "message": "A `require()` style import is forbidden."
+          },
+          {
+            "line": 2,
+            "ruleId": "@typescript-eslint/no-require-imports",
+            "severity": 2,
+            "message": "A `require()` style import is forbidden."
+          },
+          {
+            "line": 3,
+            "ruleId": "@typescript-eslint/no-require-imports",
+            "severity": 2,
+            "message": "A `require()` style import is forbidden."
+          }
+        ]
+      },
+      {
+        "path": "scripts/qa/visibility-loop.mjs",
+        "errors": 1,
+        "warnings": 0,
+        "messages": [
+          {
+            "line": 22,
+            "ruleId": "@typescript-eslint/no-this-alias",
+            "severity": 2,
+            "message": "Unexpected aliasing of 'this' to local variable."
+          }
+        ]
+      }
+    ]
+  }
+}

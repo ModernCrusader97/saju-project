@@ -34,7 +34,7 @@ export interface ElementalSpiritInstance {
   monthPet: THREE.Group;
   mapping: {bodyStem:string;bodyBranch:string;petBranch:string;backgroundStem:string;backgroundBranch:string};
   yearBelt?: THREE.Points;
-  update: (time: number, deltaSeconds?: number) => void;
+  update: (time: number, deltaSeconds?: number, camera?: THREE.Camera) => void;
   triggerReaction: () => void;
   /** Backward-compatible interaction alias; no anatomy-stretching deformation. */
   triggerSquish: () => void;

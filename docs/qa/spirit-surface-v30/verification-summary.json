@@ -1,0 +1,56 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_LIMITS",
+  "timestamp": "2026-10-10T01:04:00.589986+00:00",
+  "basis": "a5535893645f35d4000ec773bff61caef19463cf",
+  "newCandidateBranch": "fix/spirit-surface-zodiac-v30-20261010",
+  "newDeploymentPerformed": false,
+  "v30ArchiveCommit": "56d5a1682a89ebe0727fefe67f58c028a03252cc",
+  "v30ArchiveRemoteVerifiedFiles": 415,
+  "tenStemCPU": {
+    "passed": 25,
+    "failed": 0
+  },
+  "petLoaderCPU": {
+    "passed": 8,
+    "failed": 0,
+    "assetFixture": "synthetic GLB; no crafted animal fidelity claim"
+  },
+  "typecheck": {
+    "command": "tsc --noEmit",
+    "exitCode": 0
+  },
+  "productionBuild": {
+    "command": "npm run build",
+    "exitCode": 0
+  },
+  "targetedLint": {
+    "errors": 0,
+    "preexistingWarnings": 1
+  },
+  "fullSourceLint": {
+    "before": {
+      "errors": 43,
+      "warnings": 37
+    },
+    "after": {
+      "errors": 40,
+      "warnings": 37
+    },
+    "fullyPassing": false
+  },
+  "fireHarnessSHA256": "f42f1ea85cdcb582177feca5d5d3ef1dfc43b0bb76eeabbc4f0bf39a9ae1af43",
+  "imageReview": [
+    "before/after actual fire front",
+    "before/after diagnostic coordinate front"
+  ],
+  "missingAuthoredPets": 12,
+  "availableAuthoredPets": 0,
+  "sourceArchiveCommit": "956fe6e2a7f3de3a0aabe3c59d9d5db3795c7123",
+  "environmentAdjustment": "Initial existing galaxy host harness failed because its checkout-local jsdom tool was absent; reran successfully with SAJU_QA_JSDOM_PATH pointing to the existing /tmp dependency. No runtime/test assertion changes.",
+  "limits": [
+    "Local real GLB/PNG WebGL uses Chromium SwiftShader; no physical mobile GPU or hosted authenticated session",
+    "No real user DB used; all fixtures synthetic",
+    "No complete vine body, curved sand, water spray or sliding dew completion claim",
+    "Authored zodiac originals remain missing; primitives intentionally preserved"
+  ]
+}

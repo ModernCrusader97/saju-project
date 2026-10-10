@@ -1,0 +1,121 @@
+{
+  "status": "PASS",
+  "sourceSHA256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+  "vertices": 33207,
+  "triangles": 62124,
+  "presentationDepth": 1.35,
+  "method": "Area-weighted singular values of the coordinate Jacobian at each real triangle centroid; sphere mode mirrors vertex/fragment normalizations, rest mode uses actual bound Float32 attributes",
+  "before": {
+    "triangles": 62124,
+    "area": 9.484562099022526,
+    "minimumDensityP01": 0.009145469037312646,
+    "maximumDensityP99": 5.751000147300629,
+    "medianAreaDensity": 0.1277678487030125,
+    "anisotropyP50": 1.9872233807360282,
+    "anisotropyP95": 17.047065654101047
+  },
+  "after": {
+    "triangles": 62124,
+    "area": 9.484562099022526,
+    "minimumDensityP01": 0.9999965884631253,
+    "maximumDensityP99": 1.000003389882506,
+    "medianAreaDensity": 0.9999999993506749,
+    "anisotropyP50": 1.000000683385133,
+    "anisotropyP95": 1.000002712969316
+  },
+  "regions": {
+    "head": {
+      "before": {
+        "triangles": 14998,
+        "area": 2.844316410526538,
+        "minimumDensityP01": 0.1727642411066495,
+        "maximumDensityP99": 0.5663690013492313,
+        "medianAreaDensity": 0.11791896197608719,
+        "anisotropyP50": 1.5741645918868057,
+        "anisotropyP95": 2.821405888010681
+      },
+      "after": {
+        "triangles": 14998,
+        "area": 2.844316410526538,
+        "minimumDensityP01": 0.9999975435431706,
+        "maximumDensityP99": 1.0000024882398701,
+        "medianAreaDensity": 0.9999999999999999,
+        "anisotropyP50": 1.000000733131565,
+        "anisotropyP95": 1.000002296064883
+      }
+    },
+    "torso": {
+      "before": {
+        "triangles": 20945,
+        "area": 3.4200124015326625,
+        "minimumDensityP01": 0.005728850947056893,
+        "maximumDensityP99": 1.5776639186164876,
+        "medianAreaDensity": 0.28792487220241486,
+        "anisotropyP50": 2.925895955987102,
+        "anisotropyP95": 28.172108553830174
+      },
+      "after": {
+        "triangles": 20945,
+        "area": 3.4200124015326625,
+        "minimumDensityP01": 0.9999973352746196,
+        "maximumDensityP99": 1.0000027019235938,
+        "medianAreaDensity": 0.999999998040775,
+        "anisotropyP50": 1.0000007007771163,
+        "anisotropyP95": 1.0000023847334807
+      }
+    },
+    "arms": {
+      "before": {
+        "triangles": 14495,
+        "area": 1.6637598648132124,
+        "minimumDensityP01": 0.004778588386946304,
+        "maximumDensityP99": 1.0463995483536614,
+        "medianAreaDensity": 0.14905594396107674,
+        "anisotropyP50": 2.7381882198608207,
+        "anisotropyP95": 27.546895240693974
+      },
+      "after": {
+        "triangles": 14495,
+        "area": 1.6637598648132124,
+        "minimumDensityP01": 0.9999947327439526,
+        "maximumDensityP99": 1.0000050386752604,
+        "medianAreaDensity": 0.9999999985391229,
+        "anisotropyP50": 1.0000005297190242,
+        "anisotropyP95": 1.0000047391062488
+      }
+    },
+    "feet": {
+      "before": {
+        "triangles": 11686,
+        "area": 1.556473422150172,
+        "minimumDensityP01": 0.06146047641737791,
+        "maximumDensityP99": 7.7520721531896015,
+        "medianAreaDensity": 2.6548164525483093,
+        "anisotropyP50": 1.390580302274637,
+        "anisotropyP95": 11.789536745639744
+      },
+      "after": {
+        "triangles": 11686,
+        "area": 1.556473422150172,
+        "minimumDensityP01": 0.9999971127215016,
+        "maximumDensityP99": 1.0000031055864185,
+        "medianAreaDensity": 1.0000000002507248,
+        "anisotropyP50": 1.0000006940477948,
+        "anisotropyP95": 1.0000025735450606
+      }
+    }
+  },
+  "uvSeamPairs": 2143,
+  "maximumSeamCoordinateGap": 0,
+  "maximumBindingError": 4.54287504771656e-8,
+  "originalAttributeSHA256": {
+    "position": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+    "normal": "80706bee870329a0829113e63ed178f0a904029265da2c96c69ad50f9b1f9cec",
+    "uv": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c"
+  },
+  "limits": [
+    "Measures spatial-coordinate distortion, not final motif frequency or visual quality",
+    "Intentional directional fire flow and camera foreshortening are distinct from this coordinate metric",
+    "CPU texture images are placeholders; browser QA loads the real GLB and PNGs"
+  ]
+}

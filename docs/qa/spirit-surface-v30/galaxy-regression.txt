@@ -1,0 +1,107 @@
+{
+  "status": "PASS",
+  "checks": [
+    "10 connections × 120 frames: baseline 31,200 sample vectors / 1,200 arrays; restored 0 / 0",
+    "all Float32 point coordinates, pulse phases/positions and recomputed bounding spheres equal v27 exactly",
+    "missing owner fallback, zero motion and pulse wrap remain equivalent; geometry and typed buffers retain identity",
+    "separate scene sampling vectors do not affect another mounted scene"
+  ],
+  "limits": [
+    "Counts cover connection curve sampling only, not total scene allocations or frame rate",
+    "CPU equality with pinned Three.js; no WebGL or real-browser rendering claim"
+  ]
+}
+✔ scripts/qa/galaxy-connection-sampling.mjs (593.384586ms)
+PASS 30fps after 0s: entry joins the moving orbit without a jump
+PASS 30fps after 0s: entry and connection preserve every rest anchor
+PASS 30fps after 20s: entry joins the moving orbit without a jump
+PASS 30fps after 20s: entry and connection preserve every rest anchor
+PASS 30fps after 3600s: entry joins the moving orbit without a jump
+PASS 30fps after 3600s: entry and connection preserve every rest anchor
+PASS 60fps after 0s: entry joins the moving orbit without a jump
+PASS 60fps after 0s: entry and connection preserve every rest anchor
+PASS 60fps after 20s: entry joins the moving orbit without a jump
+PASS 60fps after 20s: entry and connection preserve every rest anchor
+PASS 60fps after 3600s: entry joins the moving orbit without a jump
+PASS 60fps after 3600s: entry and connection preserve every rest anchor
+PASS 144fps after 0s: entry joins the moving orbit without a jump
+PASS 144fps after 0s: entry and connection preserve every rest anchor
+PASS 144fps after 20s: entry joins the moving orbit without a jump
+PASS 144fps after 20s: entry and connection preserve every rest anchor
+PASS 144fps after 3600s: entry joins the moving orbit without a jump
+PASS 144fps after 3600s: entry and connection preserve every rest anchor
+PASS entry velocity joins orbit at 0s
+PASS entry velocity joins orbit at 20s
+PASS pause and zero speed freeze an unfinished entry; resume reaches the current orbit
+PASS reduced motion settles directly on the current orbit, including after explicit playback
+PASS reset during entry restores original positions and an ordinary orbit
+{"passed":23,"failed":0}
+✔ scripts/qa/galaxy-entry-motion.mjs (13715.00744ms)
+PASS 갑자: personal and galaxy effects share batches and normalized placements
+PASS 을축: personal and galaxy effects share batches and normalized placements
+PASS 병인: personal and galaxy effects share batches and normalized placements
+PASS 정묘: personal and galaxy effects share batches and normalized placements
+PASS 무진: personal and galaxy effects share batches and normalized placements
+PASS 기사: personal and galaxy effects share batches and normalized placements
+PASS 경오: personal and galaxy effects share batches and normalized placements
+PASS 신미: personal and galaxy effects share batches and normalized placements
+PASS 임신: personal and galaxy effects share batches and normalized placements
+PASS 계유: personal and galaxy effects share batches and normalized placements
+PASS mixed day/month effects occupy the same personal 70/30 regions
+PASS effects follow simulation time, freeze on pause and zero speed, reset with the body
+PASS node replacement and unmount dispose every effect instance buffer, geometry and material once
+{"passed":13,"failed":0}
+✔ scripts/qa/galaxy-owner-effects.mjs (8227.013257ms)
+(node:55705) [THREE_CJS_DEPRECATED] DeprecationWarning: `require("three")` is deprecated and will be removed.
+Replace `const THREE = require("three")` with `import * as THREE from "three"`.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✔ same bound owner preserves later pangaea preference and view on restore (382.529079ms)
+✔ same bound owner preserves later archipelago preference and view on restore (232.124349ms)
+✔ same bound owner preserves later tectonic preference and view on restore (256.510935ms)
+✔ same bound owner preserves later bands preference and view on restore (89.674351ms)
+✔ same bound owner preserves later vortices preference and view on restore (61.888668ms)
+✔ unbound legacy map cannot use a current session mask (91.697945ms)
+✔ restore excludes a different owner key: {"name":"다른 소유자"} (66.385123ms)
+✔ restore excludes a different owner key: {"minute":"31"} (107.119397ms)
+✔ a different map id returns null and does not inherit the owner mask (83.189477ms)
+✔ map owner/pillars must still match the saved binding (44.18986ms)
+{
+  "status": "PASS",
+  "checks": [
+    "birth: named dialog/focus entry/Tab wrap/latest Escape/restore/44px close declaration",
+    "chat: named dialog/focus entry/Tab wrap/latest Escape/restore/44px close declaration",
+    "dynamic disabled and removed controls retain focus containment"
+  ],
+  "limits": [
+    "JSDOM validates focus/event/semantic behavior, not real browser layout or assistive technology",
+    "44px is the CSS minimum declaration, not a device measurement",
+    "No API writes or real-user data"
+  ]
+}
+✔ scripts/qa/modal-accessibility-dom.mjs (2488.984669ms)
+{
+  "status": "PASS",
+  "checks": [
+    "offscreen 180 ticks produce zero automatic callbacks; visibility resumes one loop",
+    "document and viewport suspension exclude 160-second hidden intervals from delta",
+    "initially hidden and offscreen states both gate scheduling",
+    "canceled stale callbacks cannot render or create duplicate loops",
+    "repeated visibility events and idempotent disposal leave no frame or listener",
+    "missing or unavailable IntersectionObserver falls back to document visibility",
+    "remounts are isolated from disposed observer and animation callbacks",
+    "disposal from a callback cannot resurrect the loop"
+  ],
+  "limits": [
+    "Synthetic browser scheduling boundaries; no WebGL or real-browser QA",
+    "Motion preferences remain in the three original animation bodies"
+  ]
+}
+✔ scripts/qa/visibility-loop.mjs (698.520248ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 13735.334559
