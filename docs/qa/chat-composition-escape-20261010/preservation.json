@@ -1,0 +1,12 @@
+{
+  "basis": "468861672c7a44c9fb96439e7f2031778001c33c",
+  "comparedPreexistingFiles": 744,
+  "byteIdenticalPreexistingFiles": 743,
+  "changedPreexistingFiles": [
+    "components/AskDoryeongModal.tsx"
+  ],
+  "normalizingOnlyTheCompositionEscapeGuardRestoresOriginalExactly": true,
+  "originalSourceSHA256": "02c43262476408d1b9c85ba6d54773434bf7c2c8d9410202667f522a261a9eb8",
+  "sourceSHA256": "b3d1756a2844a022071d35f90936784155f6de156004e80a79beb06ab2389d66",
+  "preservedWipSHA256": "75ea6f5726ce41272841494c3a3316e3f4b88ea7c4888d71e21e981ee9030539"
+}

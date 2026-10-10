@@ -1,0 +1,19 @@
+{
+  "before": {
+    "errors": 0,
+    "warnings": 0,
+    "suppressed": 0,
+    "files": [
+      "components/AskDoryeongModal.tsx"
+    ]
+  },
+  "after": {
+    "errors": 0,
+    "warnings": 0,
+    "suppressed": 0,
+    "files": [
+      "components/AskDoryeongModal.tsx",
+      "scripts/qa/chat-composition-escape.mjs"
+    ]
+  }
+}

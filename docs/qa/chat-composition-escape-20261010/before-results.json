@@ -1,0 +1,387 @@
+{
+  "basis": "468861672c7a44c9fb96439e7f2031778001c33c",
+  "phase": "before",
+  "applicationSourceSHA256": "02c43262476408d1b9c85ba6d54773434bf7c2c8d9410202667f522a261a9eb8",
+  "passed": 5,
+  "failed": 1,
+  "checks": [
+    {
+      "name": "active-composition Escape keeps the chat open and the committed prefix intact",
+      "status": "FAIL",
+      "error": "IME Escape must not invoke dialog close\n\n0 !== 1\n"
+    },
+    {
+      "name": "ordinary native Escape closes the dialog and reopening retains the draft",
+      "status": "PASS"
+    },
+    {
+      "name": "Escape after composition commit still closes and preserves the complete question",
+      "status": "PASS"
+    },
+    {
+      "name": "Escape after composition cancellation still closes and retains the committed prefix",
+      "status": "PASS"
+    },
+    {
+      "name": "native close button and backdrop pointer still close and retain the draft",
+      "status": "PASS"
+    },
+    {
+      "name": "no browser errors, unexpected API requests, chat POSTs or outbound calls",
+      "status": "PASS"
+    }
+  ],
+  "observations": [
+    {
+      "name": "active-composition Escape keeps the chat open and the committed prefix intact",
+      "events": [
+        {
+          "type": "input",
+          "isComposing": false,
+          "isTrusted": true,
+          "inputType": "insertText",
+          "data": "합성 질문 ",
+          "value": "합성 질문 "
+        },
+        {
+          "type": "compositionstart",
+          "isTrusted": true,
+          "data": "",
+          "value": "합성 질문 "
+        },
+        {
+          "type": "compositionupdate",
+          "isTrusted": true,
+          "data": "ㅎ",
+          "value": "합성 질문 "
+        },
+        {
+          "type": "input",
+          "isComposing": true,
+          "isTrusted": true,
+          "inputType": "insertCompositionText",
+          "data": "ㅎ",
+          "value": "합성 질문 ㅎ"
+        },
+        {
+          "type": "compositionupdate",
+          "isTrusted": true,
+          "data": "한글",
+          "value": "합성 질문 ㅎ"
+        },
+        {
+          "type": "input",
+          "isComposing": true,
+          "isTrusted": true,
+          "inputType": "insertCompositionText",
+          "data": "한글",
+          "value": "합성 질문 한글"
+        },
+        {
+          "type": "keydown",
+          "key": "Escape",
+          "isComposing": true,
+          "isTrusted": true,
+          "value": "합성 질문 한글"
+        }
+      ],
+      "errors": [],
+      "consoleErrors": [],
+      "requests": [
+        {
+          "path": "/api/saju",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/a",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/a",
+          "method": "GET"
+        }
+      ]
+    },
+    {
+      "name": "ordinary native Escape closes the dialog and reopening retains the draft",
+      "events": [
+        {
+          "type": "input",
+          "isComposing": false,
+          "isTrusted": true,
+          "inputType": "insertText",
+          "data": "합성 일반 질문",
+          "value": "합성 일반 질문"
+        },
+        {
+          "type": "keydown",
+          "key": "Escape",
+          "isComposing": false,
+          "isTrusted": true,
+          "value": "합성 일반 질문"
+        }
+      ],
+      "errors": [],
+      "consoleErrors": [],
+      "requests": [
+        {
+          "path": "/api/saju",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/a",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/a",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/a",
+          "method": "GET"
+        }
+      ]
+    },
+    {
+      "name": "Escape after composition commit still closes and preserves the complete question",
+      "events": [
+        {
+          "type": "input",
+          "isComposing": false,
+          "isTrusted": true,
+          "inputType": "insertText",
+          "data": "합성 확정 ",
+          "value": "합성 확정 "
+        },
+        {
+          "type": "compositionstart",
+          "isTrusted": true,
+          "data": "",
+          "value": "합성 확정 "
+        },
+        {
+          "type": "compositionupdate",
+          "isTrusted": true,
+          "data": "ㅎ",
+          "value": "합성 확정 "
+        },
+        {
+          "type": "input",
+          "isComposing": true,
+          "isTrusted": true,
+          "inputType": "insertCompositionText",
+          "data": "ㅎ",
+          "value": "합성 확정 ㅎ"
+        },
+        {
+          "type": "compositionupdate",
+          "isTrusted": true,
+          "data": "한글",
+          "value": "합성 확정 ㅎ"
+        },
+        {
+          "type": "input",
+          "isComposing": true,
+          "isTrusted": true,
+          "inputType": "insertCompositionText",
+          "data": "한글",
+          "value": "합성 확정 한글"
+        },
+        {
+          "type": "compositionupdate",
+          "isTrusted": true,
+          "data": "한글",
+          "value": "합성 확정 한글"
+        },
+        {
+          "type": "input",
+          "isComposing": true,
+          "isTrusted": true,
+          "inputType": "insertCompositionText",
+          "data": "한글",
+          "value": "합성 확정 한글"
+        },
+        {
+          "type": "compositionend",
+          "isTrusted": false,
+          "data": "한글",
+          "value": "합성 확정 한글"
+        },
+        {
+          "type": "keydown",
+          "key": "Escape",
+          "isComposing": false,
+          "isTrusted": true,
+          "value": "합성 확정 한글"
+        }
+      ],
+      "errors": [],
+      "consoleErrors": [],
+      "requests": [
+        {
+          "path": "/api/saju",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/a",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/a",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/a",
+          "method": "GET"
+        }
+      ]
+    },
+    {
+      "name": "Escape after composition cancellation still closes and retains the committed prefix",
+      "events": [
+        {
+          "type": "input",
+          "isComposing": false,
+          "isTrusted": true,
+          "inputType": "insertText",
+          "data": "합성 취소 ",
+          "value": "합성 취소 "
+        },
+        {
+          "type": "compositionstart",
+          "isTrusted": true,
+          "data": "",
+          "value": "합성 취소 "
+        },
+        {
+          "type": "compositionupdate",
+          "isTrusted": true,
+          "data": "ㅎ",
+          "value": "합성 취소 "
+        },
+        {
+          "type": "input",
+          "isComposing": true,
+          "isTrusted": true,
+          "inputType": "insertCompositionText",
+          "data": "ㅎ",
+          "value": "합성 취소 ㅎ"
+        },
+        {
+          "type": "compositionupdate",
+          "isTrusted": true,
+          "data": "한글",
+          "value": "합성 취소 ㅎ"
+        },
+        {
+          "type": "input",
+          "isComposing": true,
+          "isTrusted": true,
+          "inputType": "insertCompositionText",
+          "data": "한글",
+          "value": "합성 취소 한글"
+        },
+        {
+          "type": "compositionupdate",
+          "isTrusted": true,
+          "data": "",
+          "value": "합성 취소 한글"
+        },
+        {
+          "type": "input",
+          "isComposing": true,
+          "isTrusted": true,
+          "inputType": "insertCompositionText",
+          "data": null,
+          "value": "합성 취소 "
+        },
+        {
+          "type": "compositionend",
+          "isTrusted": false,
+          "data": "",
+          "value": "합성 취소 "
+        },
+        {
+          "type": "keydown",
+          "key": "Escape",
+          "isComposing": false,
+          "isTrusted": true,
+          "value": "합성 취소 "
+        }
+      ],
+      "errors": [],
+      "consoleErrors": [],
+      "requests": [
+        {
+          "path": "/api/saju",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/a",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/a",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/a",
+          "method": "GET"
+        }
+      ]
+    },
+    {
+      "name": "native close button and backdrop pointer still close and retain the draft",
+      "events": [
+        {
+          "type": "input",
+          "isComposing": false,
+          "isTrusted": true,
+          "inputType": "insertText",
+          "data": "합성 명시적 닫기",
+          "value": "합성 명시적 닫기"
+        }
+      ],
+      "errors": [],
+      "consoleErrors": [],
+      "requests": [
+        {
+          "path": "/api/saju",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/a",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/a",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/a",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/a",
+          "method": "GET"
+        }
+      ]
+    }
+  ],
+  "outbound": [],
+  "unexpectedApi": [],
+  "coverage": {
+    "compositionSource": "CDP Input.imeSetComposition / Input.insertText",
+    "escapeSource": "Chromium native keyboard",
+    "domKeyboardDispatches": 0,
+    "handlerInvocations": 0,
+    "programmaticSubmissions": 0,
+    "chatPOSTs": 0
+  },
+  "limits": [
+    "Actual built chat dialog in Chromium at 390x844; composition-start/update and Escape events are trusted browser events.",
+    "Composition is synthesized through CDP; physical keyboards and OS IMEs are not tested.",
+    "Only valid intercepted synthetic GET responses; no actual user DB, chat sending, recovery/error-response rerun or external AI.",
+    "Other browsers, physical devices, screen readers, hosted authentication and unrelated completed flows are not tested."
+  ]
+}

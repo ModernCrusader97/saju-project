@@ -98,7 +98,7 @@ function Conversation({
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") onClose();
+      if (e.key === "Escape" && !e.isComposing) onClose();
     };
     if (isOpen) {
       window.addEventListener("keydown", handleKeyDown);

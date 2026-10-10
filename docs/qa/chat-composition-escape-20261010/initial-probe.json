@@ -1,0 +1,70 @@
+{
+  "basis": "468861672c7a44c9fb96439e7f2031778001c33c",
+  "beforeValue": "합성 질문 한글",
+  "escape": {
+    "type": "keydown",
+    "key": "Escape",
+    "isComposing": true,
+    "isTrusted": true,
+    "value": "합성 질문 한글"
+  },
+  "dialogRemainsOpen": false,
+  "events": [
+    {
+      "type": "input",
+      "isComposing": false,
+      "isTrusted": true,
+      "inputType": "insertText",
+      "data": "합성 질문 ",
+      "value": "합성 질문 "
+    },
+    {
+      "type": "compositionstart",
+      "isTrusted": true,
+      "data": "",
+      "value": "합성 질문 "
+    },
+    {
+      "type": "compositionupdate",
+      "isTrusted": true,
+      "data": "ㅎ",
+      "value": "합성 질문 "
+    },
+    {
+      "type": "input",
+      "isComposing": true,
+      "isTrusted": true,
+      "inputType": "insertCompositionText",
+      "data": "ㅎ",
+      "value": "합성 질문 ㅎ"
+    },
+    {
+      "type": "compositionupdate",
+      "isTrusted": true,
+      "data": "한글",
+      "value": "합성 질문 ㅎ"
+    },
+    {
+      "type": "input",
+      "isComposing": true,
+      "isTrusted": true,
+      "inputType": "insertCompositionText",
+      "data": "한글",
+      "value": "합성 질문 한글"
+    },
+    {
+      "type": "keydown",
+      "key": "Escape",
+      "isComposing": true,
+      "isTrusted": true,
+      "value": "합성 질문 한글"
+    }
+  ],
+  "outbound": [],
+  "unexpected": [],
+  "limits": [
+    "Actual built page; Chromium CDP composition plus trusted native keyboard input. No DOM keyboard dispatch or handler invocation.",
+    "No physical OS IME; intercepted synthetic GETs only; no actual user DB, chat POST or external AI."
+  ],
+  "reproduced": true
+}

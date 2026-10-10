@@ -1,0 +1,85 @@
+{
+  "basis": "468861672c7a44c9fb96439e7f2031778001c33c",
+  "branch": "fix/chat-composition-escape-20261010",
+  "productChange": "Only the existing Escape close condition gains !e.isComposing. No preventDefault, state, request, style or markup change.",
+  "sourceSHA256": "b3d1756a2844a022071d35f90936784155f6de156004e80a79beb06ab2389d66",
+  "browserBefore": {
+    "passed": 5,
+    "failed": 1,
+    "exit": 1
+  },
+  "browserAfter": {
+    "passed": 6,
+    "failed": 0,
+    "exit": 0
+  },
+  "types": {
+    "command": "node_modules/.bin/tsc --noEmit --incremental false",
+    "exit": 0
+  },
+  "build": {
+    "command": "npm run build",
+    "completed": true,
+    "ownFreshCandidateBuild": true,
+    "log": "build.log.gz"
+  },
+  "lint": {
+    "before": {
+      "errors": 0,
+      "warnings": 0,
+      "suppressed": 0,
+      "files": [
+        "components/AskDoryeongModal.tsx"
+      ]
+    },
+    "after": {
+      "errors": 0,
+      "warnings": 0,
+      "suppressed": 0,
+      "files": [
+        "components/AskDoryeongModal.tsx",
+        "scripts/qa/chat-composition-escape.mjs"
+      ]
+    }
+  },
+  "diffCheckExit": 0,
+  "preservation": {
+    "basis": "468861672c7a44c9fb96439e7f2031778001c33c",
+    "comparedPreexistingFiles": 744,
+    "byteIdenticalPreexistingFiles": 743,
+    "changedPreexistingFiles": [
+      "components/AskDoryeongModal.tsx"
+    ],
+    "normalizingOnlyTheCompositionEscapeGuardRestoresOriginalExactly": true,
+    "originalSourceSHA256": "02c43262476408d1b9c85ba6d54773434bf7c2c8d9410202667f522a261a9eb8",
+    "sourceSHA256": "b3d1756a2844a022071d35f90936784155f6de156004e80a79beb06ab2389d66",
+    "preservedWipSHA256": "75ea6f5726ce41272841494c3a3316e3f4b88ea7c4888d71e21e981ee9030539"
+  },
+  "visual": {
+    "viewport": [
+      390,
+      844
+    ],
+    "healthyScreenshotByteIdentical": false,
+    "healthyScreenshotDifferingPixels": 44,
+    "healthyScreenshotDifferenceBounds": [
+      1,
+      788,
+      25,
+      843
+    ],
+    "allFourNativeScreenshotsVisuallyInspected": true,
+    "interpretation": "Healthy native screenshots differ by 44 pixels around the input caret and lower left panel corner, not byte-identical. No layout/style source changed. Before composing Escape removes the modal; after keeps it and the input focused."
+  },
+  "syntheticGETCountBefore": 20,
+  "syntheticGETCountAfter": 20,
+  "chatPOSTs": 0,
+  "outboundCalls": 0,
+  "limits": [
+    "Actual built chat dialog in Chromium at 390x844; composition-start/update and Escape events are trusted browser events.",
+    "Composition is synthesized through CDP; physical keyboards and OS IMEs are not tested.",
+    "Only valid intercepted synthetic GET responses; no actual user DB, chat sending, recovery/error-response rerun or external AI.",
+    "Other browsers, physical devices, screen readers, hosted authentication and unrelated completed flows are not tested."
+  ],
+  "unrelatedCompletedSuitesRerun": false
+}
