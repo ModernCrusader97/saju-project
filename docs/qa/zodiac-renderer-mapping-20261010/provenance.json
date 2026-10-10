@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "scope": "one supplementary QA improvement; no model replacement",
+  "base": "c6b79d2e1f0e4bf3aa77c948b0b7190d69ad6573",
+  "newBranch": "qa/zodiac-renderer-mapping-20261010",
+  "latestDelegatedInstruction": "Check existing twelve renderer mappings and provenance; preserve models when final appearance feedback is unverified. Add only missing regression coverage. No deploy/PR/main/auth change. No Library retry/bypass.",
+  "existingCandidates": {
+    "rig": "9e7d2ed470db89cc6c0179cf9d34a2e05df4cdba",
+    "galaxy": "3a6400a328734f4fb08578a4213b91a25a0d294a",
+    "cleanBeforeStart": true,
+    "visualReview": "PENDING; parent Library ZIP read was denied with403 scope_violation"
+  },
+  "workCheck": {
+    "currentCollaborationDuplicateZodiacTask": false,
+    "activeZodiacScriptProcess": false,
+    "relevantFiveWorktreesClean": true,
+    "sourceRepositoryBranch": "work",
+    "sourceRepositoryClean": true
+  },
+  "source": {
+    "repository": "ModernCrusader97/saju-project",
+    "verifiedCommit": "dffb235fbe47c063b8535a21b4fdf3ea8235d6aa",
+    "path": "lib/planet/spirit-zodiac-pet.ts",
+    "blob": "8595a73296087b93c34487dad9b55174cc396238",
+    "sha256": "d6e8384d03f1a3eec3ec0f916fb9212ac10c14aa32f41c0d8751892ea54b0daa",
+    "currentPerCaseShaIdentical": true,
+    "caseCount": 12
+  },
+  "existingCoverageRetained": [
+    "zodiac-pet-loader 8/8 before and after",
+    "Archived192 original/current geometry/material/idle parity samples",
+    "Existing spirit-depth-pets all12 high/low names/bounds and month check; not reimplemented as a new browser suite"
+  ],
+  "newCoverage": [
+    "Unshadowed AST/raw JSON declarations, including deliberate missing/duplicate controls",
+    "Geometry identities exclude names, UUIDs, colors and labels;12 unique per quality",
+    "48 actual approved-GLB renderer assemblies with two contrasting month branches",
+    "Deliberate correctly labeled tiger-to-dog geometry reuse is rejected"
+  ],
+  "preservation": {
+    "originalTrackedFiles": 1101,
+    "unchanged": 1101,
+    "changedExistingFiles": [],
+    "modelOrRendererChanges": 0
+  },
+  "confirmedMissingMappings": [],
+  "confirmedDuplicateShapes": [],
+  "latestAppearanceApproval": "UNVERIFIED: eyes, ox/pig limbs, floating/coiled eastern dragon and idle; preserved generator presence does not prove final approval. Separate authored tiger candidate is not substituted.",
+  "validation": {
+    "newChecks": "6/6",
+    "negativeControls": "5/5 rejected as expected",
+    "loaderRegressionBefore": "8/8",
+    "loaderRegressionAfter": "8/8",
+    "tsc": "PASS",
+    "newQAScriptESLint": "PASS",
+    "build": "PASS"
+  },
+  "unexecuted": [
+    "New WebGL/browser rendering",
+    "Physical mobile GPU",
+    "Final authored animal selection and visual approval"
+  ],
+  "deployed": false,
+  "authOrPermissionsChanged": false,
+  "LibraryReadRetriedOrBypassed": false
+}

@@ -1,0 +1,577 @@
+{
+  "status": "PASS",
+  "base": "c6b79d2e1f0e4bf3aa77c948b0b7190d69ad6573",
+  "checks": [
+    {
+      "name": "profiles and raw manifest have exactly twelve explicit, unshadowed branch/animal mappings",
+      "status": "PASS"
+    },
+    {
+      "name": "twelve generator cases match the preserved source blob individually",
+      "status": "PASS"
+    },
+    {
+      "name": "negative controls reject missing and duplicate cases plus shadowed profile/JSON keys",
+      "status": "PASS"
+    },
+    {
+      "name": "every quality has twelve distinct geometry identities independent of all names/colors/labels",
+      "status": "PASS"
+    },
+    {
+      "name": "actual approved GLB renderer assembly retains each geometry identity across contrasting month branches",
+      "status": "PASS"
+    },
+    {
+      "name": "mislabeled tiger-to-dog renderer mutation is rejected by geometry while identity labels remain correct",
+      "status": "PASS"
+    }
+  ],
+  "controls": [
+    {
+      "name": "missing generator case",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "name": "duplicate generator case",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "name": "shadowed profile key",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "name": "shadowed JSON key",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "name": "metadata-correct tiger-to-dog geometry reuse",
+      "status": "REJECTED_AS_EXPECTED",
+      "geometrySha256": "ec4fcbc62c74c1d9c174ef5a7863ec89ec67d7193d53268a9e5f52004a4e77e1"
+    }
+  ],
+  "sourceRows": [
+    {
+      "branch": "자",
+      "line": 171,
+      "sha256": "18cc0c5137d1d8b44a3b692438ae1c3a764b271ec67c041b5fcb354150aba0ef",
+      "animal": "rat",
+      "preservedSourceLine": 61
+    },
+    {
+      "branch": "축",
+      "line": 175,
+      "sha256": "1333737b5c52452b8cc047d06423ee7e8983b5b946fbac191c774488a027575c",
+      "animal": "ox",
+      "preservedSourceLine": 65
+    },
+    {
+      "branch": "인",
+      "line": 185,
+      "sha256": "36e09eb778d0f828c04415d1da0261af27b1b23bbfc6b84fb9acd443d701702a",
+      "animal": "tiger",
+      "preservedSourceLine": 75
+    },
+    {
+      "branch": "묘",
+      "line": 194,
+      "sha256": "ae0193af2ca93ef7c0633094cc1bd8a73bf4099c798a70043289afaa12710778",
+      "animal": "rabbit",
+      "preservedSourceLine": 84
+    },
+    {
+      "branch": "진",
+      "line": 198,
+      "sha256": "6cfbbbde9c7a0aeea7395b1ac5245aab63502e3333508324b22bb08e8780dd2d",
+      "animal": "dragon",
+      "preservedSourceLine": 88
+    },
+    {
+      "branch": "사",
+      "line": 211,
+      "sha256": "18c770e3bbf9cfd7807c293f995fe546b96d7b9a0df9943cab357543ce091dfe",
+      "animal": "snake",
+      "preservedSourceLine": 101
+    },
+    {
+      "branch": "오",
+      "line": 219,
+      "sha256": "01c2b7dfdb4cdaf6b68bf4d8d1e0be37ac2243771293857e13f75170fbd479a0",
+      "animal": "horse",
+      "preservedSourceLine": 109
+    },
+    {
+      "branch": "미",
+      "line": 226,
+      "sha256": "ef2f81fe9eaac91d5c8584ed1a95abcbc43a97b901390a74d6f82f4de82836d1",
+      "animal": "sheep",
+      "preservedSourceLine": 116
+    },
+    {
+      "branch": "신",
+      "line": 234,
+      "sha256": "7e679aa7d0304612afe5b959307e947bdfd5936cfb3bb81f2eb9883640f883a2",
+      "animal": "monkey",
+      "preservedSourceLine": 124
+    },
+    {
+      "branch": "유",
+      "line": 239,
+      "sha256": "6022cf56f628e097025d825415536284fa5257ca005d1290345c1c097f5fa0eb",
+      "animal": "rooster",
+      "preservedSourceLine": 129
+    },
+    {
+      "branch": "술",
+      "line": 248,
+      "sha256": "458a997b18bc1bb09f9f5b807bc9ebe42c7c9a07e5b27f9bd166e536b1f4e22f",
+      "animal": "dog",
+      "preservedSourceLine": 138
+    },
+    {
+      "branch": "해",
+      "line": 253,
+      "sha256": "60048a6416bc2dd2d80dc5831cc35a4a6a40a2179fdff488a4e7f54aaf8fa8c9",
+      "animal": "pig",
+      "preservedSourceLine": 143
+    }
+  ],
+  "runtimeRows": [
+    {
+      "dayKey": "갑자",
+      "monthKey": "병인",
+      "quality": "high",
+      "branch": "자",
+      "animal": "rat",
+      "geometrySha256": "9ed0364ef9ffdad06be43146c0e048ea225b4eea9e04eaf9287d4ff2b918f318"
+    },
+    {
+      "dayKey": "갑자",
+      "monthKey": "정묘",
+      "quality": "high",
+      "branch": "자",
+      "animal": "rat",
+      "geometrySha256": "9ed0364ef9ffdad06be43146c0e048ea225b4eea9e04eaf9287d4ff2b918f318"
+    },
+    {
+      "dayKey": "을축",
+      "monthKey": "병인",
+      "quality": "high",
+      "branch": "축",
+      "animal": "ox",
+      "geometrySha256": "c48117dcdc74ebf01d47c31814332726f41e8a2babc9727a575eee054e2465cb"
+    },
+    {
+      "dayKey": "을축",
+      "monthKey": "정묘",
+      "quality": "high",
+      "branch": "축",
+      "animal": "ox",
+      "geometrySha256": "c48117dcdc74ebf01d47c31814332726f41e8a2babc9727a575eee054e2465cb"
+    },
+    {
+      "dayKey": "갑인",
+      "monthKey": "병인",
+      "quality": "high",
+      "branch": "인",
+      "animal": "tiger",
+      "geometrySha256": "a421a214d55f39f52527f841d2655bc2edb5fb7a5d4977f50a6ce46c034922fd"
+    },
+    {
+      "dayKey": "갑인",
+      "monthKey": "정묘",
+      "quality": "high",
+      "branch": "인",
+      "animal": "tiger",
+      "geometrySha256": "a421a214d55f39f52527f841d2655bc2edb5fb7a5d4977f50a6ce46c034922fd"
+    },
+    {
+      "dayKey": "을묘",
+      "monthKey": "병인",
+      "quality": "high",
+      "branch": "묘",
+      "animal": "rabbit",
+      "geometrySha256": "f5fc825ed55a04fc865f80a6ea423c05f92b7c200644ebf9861667f3208bfe87"
+    },
+    {
+      "dayKey": "을묘",
+      "monthKey": "정묘",
+      "quality": "high",
+      "branch": "묘",
+      "animal": "rabbit",
+      "geometrySha256": "f5fc825ed55a04fc865f80a6ea423c05f92b7c200644ebf9861667f3208bfe87"
+    },
+    {
+      "dayKey": "갑진",
+      "monthKey": "병인",
+      "quality": "high",
+      "branch": "진",
+      "animal": "dragon",
+      "geometrySha256": "3963298352db5c2b821feebac6bc4b66dc2608e35bf62424e4fdd7b821e0c38a"
+    },
+    {
+      "dayKey": "갑진",
+      "monthKey": "정묘",
+      "quality": "high",
+      "branch": "진",
+      "animal": "dragon",
+      "geometrySha256": "3963298352db5c2b821feebac6bc4b66dc2608e35bf62424e4fdd7b821e0c38a"
+    },
+    {
+      "dayKey": "을사",
+      "monthKey": "병인",
+      "quality": "high",
+      "branch": "사",
+      "animal": "snake",
+      "geometrySha256": "20c7907269e0ceff0f32d10cc8b544ed53a20c2d788d8b70f5f1f6ee4bb7db8e"
+    },
+    {
+      "dayKey": "을사",
+      "monthKey": "정묘",
+      "quality": "high",
+      "branch": "사",
+      "animal": "snake",
+      "geometrySha256": "20c7907269e0ceff0f32d10cc8b544ed53a20c2d788d8b70f5f1f6ee4bb7db8e"
+    },
+    {
+      "dayKey": "갑오",
+      "monthKey": "병인",
+      "quality": "high",
+      "branch": "오",
+      "animal": "horse",
+      "geometrySha256": "0851ab91046dd46102752f0cf18f424378b04ddc406e178403fe1a373cc792e8"
+    },
+    {
+      "dayKey": "갑오",
+      "monthKey": "정묘",
+      "quality": "high",
+      "branch": "오",
+      "animal": "horse",
+      "geometrySha256": "0851ab91046dd46102752f0cf18f424378b04ddc406e178403fe1a373cc792e8"
+    },
+    {
+      "dayKey": "을미",
+      "monthKey": "병인",
+      "quality": "high",
+      "branch": "미",
+      "animal": "sheep",
+      "geometrySha256": "ba23f2d76d2451267c7ecb59c6a6598f57eb17c28c177f7424ce2ce7bf18cefe"
+    },
+    {
+      "dayKey": "을미",
+      "monthKey": "정묘",
+      "quality": "high",
+      "branch": "미",
+      "animal": "sheep",
+      "geometrySha256": "ba23f2d76d2451267c7ecb59c6a6598f57eb17c28c177f7424ce2ce7bf18cefe"
+    },
+    {
+      "dayKey": "갑신",
+      "monthKey": "병인",
+      "quality": "high",
+      "branch": "신",
+      "animal": "monkey",
+      "geometrySha256": "4cec560bc6c5a5afdb4bd501983116838196e6a8b2160f4b510a4ddbecb15c42"
+    },
+    {
+      "dayKey": "갑신",
+      "monthKey": "정묘",
+      "quality": "high",
+      "branch": "신",
+      "animal": "monkey",
+      "geometrySha256": "4cec560bc6c5a5afdb4bd501983116838196e6a8b2160f4b510a4ddbecb15c42"
+    },
+    {
+      "dayKey": "을유",
+      "monthKey": "병인",
+      "quality": "high",
+      "branch": "유",
+      "animal": "rooster",
+      "geometrySha256": "afeee1efd2616a651ce6cc88a67accb364782a7c021b370b5e04024df97ed72c"
+    },
+    {
+      "dayKey": "을유",
+      "monthKey": "정묘",
+      "quality": "high",
+      "branch": "유",
+      "animal": "rooster",
+      "geometrySha256": "afeee1efd2616a651ce6cc88a67accb364782a7c021b370b5e04024df97ed72c"
+    },
+    {
+      "dayKey": "갑술",
+      "monthKey": "병인",
+      "quality": "high",
+      "branch": "술",
+      "animal": "dog",
+      "geometrySha256": "be64374591ecf67dfe39d4826b09519b65c414a5ab0d93a2a16057605f9a0e09"
+    },
+    {
+      "dayKey": "갑술",
+      "monthKey": "정묘",
+      "quality": "high",
+      "branch": "술",
+      "animal": "dog",
+      "geometrySha256": "be64374591ecf67dfe39d4826b09519b65c414a5ab0d93a2a16057605f9a0e09"
+    },
+    {
+      "dayKey": "을해",
+      "monthKey": "병인",
+      "quality": "high",
+      "branch": "해",
+      "animal": "pig",
+      "geometrySha256": "631057c2ff3dae9046113a465da397682b78e177841e8850c7aa161914a99cac"
+    },
+    {
+      "dayKey": "을해",
+      "monthKey": "정묘",
+      "quality": "high",
+      "branch": "해",
+      "animal": "pig",
+      "geometrySha256": "631057c2ff3dae9046113a465da397682b78e177841e8850c7aa161914a99cac"
+    },
+    {
+      "dayKey": "갑자",
+      "monthKey": "병인",
+      "quality": "low",
+      "branch": "자",
+      "animal": "rat",
+      "geometrySha256": "54f66a1dfb340fab7cb154fd632d0753bec1d2fd7ace3d0c88fb910063e13dd1"
+    },
+    {
+      "dayKey": "갑자",
+      "monthKey": "정묘",
+      "quality": "low",
+      "branch": "자",
+      "animal": "rat",
+      "geometrySha256": "54f66a1dfb340fab7cb154fd632d0753bec1d2fd7ace3d0c88fb910063e13dd1"
+    },
+    {
+      "dayKey": "을축",
+      "monthKey": "병인",
+      "quality": "low",
+      "branch": "축",
+      "animal": "ox",
+      "geometrySha256": "e0093d0352420b8f00bd5355cad141d8e215c32eadb33588159bf689a555f933"
+    },
+    {
+      "dayKey": "을축",
+      "monthKey": "정묘",
+      "quality": "low",
+      "branch": "축",
+      "animal": "ox",
+      "geometrySha256": "e0093d0352420b8f00bd5355cad141d8e215c32eadb33588159bf689a555f933"
+    },
+    {
+      "dayKey": "갑인",
+      "monthKey": "병인",
+      "quality": "low",
+      "branch": "인",
+      "animal": "tiger",
+      "geometrySha256": "4f004524db001bd923c7d71a147afb702db4e7391054f0ddf2ad931333ddf72b"
+    },
+    {
+      "dayKey": "갑인",
+      "monthKey": "정묘",
+      "quality": "low",
+      "branch": "인",
+      "animal": "tiger",
+      "geometrySha256": "4f004524db001bd923c7d71a147afb702db4e7391054f0ddf2ad931333ddf72b"
+    },
+    {
+      "dayKey": "을묘",
+      "monthKey": "병인",
+      "quality": "low",
+      "branch": "묘",
+      "animal": "rabbit",
+      "geometrySha256": "42a1b1932f93e41ab9cef69a09542389896a229202a11a5d6cfc76e56f84fafc"
+    },
+    {
+      "dayKey": "을묘",
+      "monthKey": "정묘",
+      "quality": "low",
+      "branch": "묘",
+      "animal": "rabbit",
+      "geometrySha256": "42a1b1932f93e41ab9cef69a09542389896a229202a11a5d6cfc76e56f84fafc"
+    },
+    {
+      "dayKey": "갑진",
+      "monthKey": "병인",
+      "quality": "low",
+      "branch": "진",
+      "animal": "dragon",
+      "geometrySha256": "e07cc402f0837509722d048b63722aae4ba9b9cf4d34bbb76e21ee8ce58138e5"
+    },
+    {
+      "dayKey": "갑진",
+      "monthKey": "정묘",
+      "quality": "low",
+      "branch": "진",
+      "animal": "dragon",
+      "geometrySha256": "e07cc402f0837509722d048b63722aae4ba9b9cf4d34bbb76e21ee8ce58138e5"
+    },
+    {
+      "dayKey": "을사",
+      "monthKey": "병인",
+      "quality": "low",
+      "branch": "사",
+      "animal": "snake",
+      "geometrySha256": "4fb9e9f3b5dbc0e11f594a5f03602bd24f2df50228e9abe985f04beb0599ac05"
+    },
+    {
+      "dayKey": "을사",
+      "monthKey": "정묘",
+      "quality": "low",
+      "branch": "사",
+      "animal": "snake",
+      "geometrySha256": "4fb9e9f3b5dbc0e11f594a5f03602bd24f2df50228e9abe985f04beb0599ac05"
+    },
+    {
+      "dayKey": "갑오",
+      "monthKey": "병인",
+      "quality": "low",
+      "branch": "오",
+      "animal": "horse",
+      "geometrySha256": "3b30605b14377f9099d6bdb1a4292d21b5a05c1f6b9edfd023073ebade03244c"
+    },
+    {
+      "dayKey": "갑오",
+      "monthKey": "정묘",
+      "quality": "low",
+      "branch": "오",
+      "animal": "horse",
+      "geometrySha256": "3b30605b14377f9099d6bdb1a4292d21b5a05c1f6b9edfd023073ebade03244c"
+    },
+    {
+      "dayKey": "을미",
+      "monthKey": "병인",
+      "quality": "low",
+      "branch": "미",
+      "animal": "sheep",
+      "geometrySha256": "d6753ea9973585038e1d39d0813290941b93bfb1ea13373203b3c531fb156742"
+    },
+    {
+      "dayKey": "을미",
+      "monthKey": "정묘",
+      "quality": "low",
+      "branch": "미",
+      "animal": "sheep",
+      "geometrySha256": "d6753ea9973585038e1d39d0813290941b93bfb1ea13373203b3c531fb156742"
+    },
+    {
+      "dayKey": "갑신",
+      "monthKey": "병인",
+      "quality": "low",
+      "branch": "신",
+      "animal": "monkey",
+      "geometrySha256": "2e422270ebd72fd0d5388017b97fc10134a0681e8da29e4e15ff3fb31928a0c9"
+    },
+    {
+      "dayKey": "갑신",
+      "monthKey": "정묘",
+      "quality": "low",
+      "branch": "신",
+      "animal": "monkey",
+      "geometrySha256": "2e422270ebd72fd0d5388017b97fc10134a0681e8da29e4e15ff3fb31928a0c9"
+    },
+    {
+      "dayKey": "을유",
+      "monthKey": "병인",
+      "quality": "low",
+      "branch": "유",
+      "animal": "rooster",
+      "geometrySha256": "b012f925f0cdaab16e67d6eb15f26c316e57ab2c2e51be1687f2eff067390506"
+    },
+    {
+      "dayKey": "을유",
+      "monthKey": "정묘",
+      "quality": "low",
+      "branch": "유",
+      "animal": "rooster",
+      "geometrySha256": "b012f925f0cdaab16e67d6eb15f26c316e57ab2c2e51be1687f2eff067390506"
+    },
+    {
+      "dayKey": "갑술",
+      "monthKey": "병인",
+      "quality": "low",
+      "branch": "술",
+      "animal": "dog",
+      "geometrySha256": "ec4fcbc62c74c1d9c174ef5a7863ec89ec67d7193d53268a9e5f52004a4e77e1"
+    },
+    {
+      "dayKey": "갑술",
+      "monthKey": "정묘",
+      "quality": "low",
+      "branch": "술",
+      "animal": "dog",
+      "geometrySha256": "ec4fcbc62c74c1d9c174ef5a7863ec89ec67d7193d53268a9e5f52004a4e77e1"
+    },
+    {
+      "dayKey": "을해",
+      "monthKey": "병인",
+      "quality": "low",
+      "branch": "해",
+      "animal": "pig",
+      "geometrySha256": "33efb2427dc977332281e692ef0ed81ede54ac6aca619cb9e8c903a09c8d1d8d"
+    },
+    {
+      "dayKey": "을해",
+      "monthKey": "정묘",
+      "quality": "low",
+      "branch": "해",
+      "animal": "pig",
+      "geometrySha256": "33efb2427dc977332281e692ef0ed81ede54ac6aca619cb9e8c903a09c8d1d8d"
+    }
+  ],
+  "fingerprints": {
+    "high": {
+      "자": "9ed0364ef9ffdad06be43146c0e048ea225b4eea9e04eaf9287d4ff2b918f318",
+      "축": "c48117dcdc74ebf01d47c31814332726f41e8a2babc9727a575eee054e2465cb",
+      "인": "a421a214d55f39f52527f841d2655bc2edb5fb7a5d4977f50a6ce46c034922fd",
+      "묘": "f5fc825ed55a04fc865f80a6ea423c05f92b7c200644ebf9861667f3208bfe87",
+      "진": "3963298352db5c2b821feebac6bc4b66dc2608e35bf62424e4fdd7b821e0c38a",
+      "사": "20c7907269e0ceff0f32d10cc8b544ed53a20c2d788d8b70f5f1f6ee4bb7db8e",
+      "오": "0851ab91046dd46102752f0cf18f424378b04ddc406e178403fe1a373cc792e8",
+      "미": "ba23f2d76d2451267c7ecb59c6a6598f57eb17c28c177f7424ce2ce7bf18cefe",
+      "신": "4cec560bc6c5a5afdb4bd501983116838196e6a8b2160f4b510a4ddbecb15c42",
+      "유": "afeee1efd2616a651ce6cc88a67accb364782a7c021b370b5e04024df97ed72c",
+      "술": "be64374591ecf67dfe39d4826b09519b65c414a5ab0d93a2a16057605f9a0e09",
+      "해": "631057c2ff3dae9046113a465da397682b78e177841e8850c7aa161914a99cac"
+    },
+    "low": {
+      "자": "54f66a1dfb340fab7cb154fd632d0753bec1d2fd7ace3d0c88fb910063e13dd1",
+      "축": "e0093d0352420b8f00bd5355cad141d8e215c32eadb33588159bf689a555f933",
+      "인": "4f004524db001bd923c7d71a147afb702db4e7391054f0ddf2ad931333ddf72b",
+      "묘": "42a1b1932f93e41ab9cef69a09542389896a229202a11a5d6cfc76e56f84fafc",
+      "진": "e07cc402f0837509722d048b63722aae4ba9b9cf4d34bbb76e21ee8ce58138e5",
+      "사": "4fb9e9f3b5dbc0e11f594a5f03602bd24f2df50228e9abe985f04beb0599ac05",
+      "오": "3b30605b14377f9099d6bdb1a4292d21b5a05c1f6b9edfd023073ebade03244c",
+      "미": "d6753ea9973585038e1d39d0813290941b93bfb1ea13373203b3c531fb156742",
+      "신": "2e422270ebd72fd0d5388017b97fc10134a0681e8da29e4e15ff3fb31928a0c9",
+      "유": "b012f925f0cdaab16e67d6eb15f26c316e57ab2c2e51be1687f2eff067390506",
+      "술": "ec4fcbc62c74c1d9c174ef5a7863ec89ec67d7193d53268a9e5f52004a4e77e1",
+      "해": "33efb2427dc977332281e692ef0ed81ede54ac6aca619cb9e8c903a09c8d1d8d"
+    }
+  },
+  "sourceHashes": {
+    "lib/planet/spirit-zodiac-pet.ts": "7c84e8a65e376d8abd60fcf77256c3546c15b83585ff4829a09ffdbb0082ec81",
+    "lib/planet/spirit-profiles.ts": "5eea12236f7a72d42d0e800c0fd64b137640bf0e80927a055aab51ed642dad56",
+    "public/models/zodiac-pets/manifest.json": "15a803c0de98467f8931ee863f4a346d02fe1040720729a4247c19322fb70491",
+    "lib/planet/approved-jade-spirit.ts": "dc5ab6e65327de1c5fad40ee4be67ac6b7e08a2cf73bfc07c61529d41314ba93",
+    "components/planet/ElementalSpiritCanvas.tsx": "2367829265fd949db74f8e6cd698ccc3e30677d04440e54fe401bd6e0041bad2"
+  },
+  "originalSource": {
+    "blob": "8595a73296087b93c34487dad9b55174cc396238",
+    "sha256": "d6e8384d03f1a3eec3ec0f916fb9212ac10c14aa32f41c0d8751892ea54b0daa",
+    "firstVerifiedCommit": "dffb235fbe47c063b8535a21b4fdf3ea8235d6aa",
+    "firstVerifiedCommitEvidence": "Existing preserved forensic report; this runner verifies the actual blob and per-case contents"
+  },
+  "runtimeBodySha256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+  "confirmedMissingBranches": [],
+  "confirmedDuplicateShapes": [],
+  "authoredAnimalGLBRequests": [],
+  "limits": [
+    "CPU executes actual Three objects and approved GLB assembly; image/network I/O are explicit offline boundaries. No new GPU/browser/visual approval claim.",
+    "Standalone animal GLB absence does not imply the existing generator is missing or unfinished. Latest model/eye/limb/dragon/idle approval remains unverified.",
+    "Negative renderer mutation is in an output-only bundle. No product source, model, manifest, rig or galaxy file is changed."
+  ]
+}
