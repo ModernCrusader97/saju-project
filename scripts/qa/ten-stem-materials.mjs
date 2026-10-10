@@ -77,7 +77,7 @@ let referenceBody;
 reference.scene.traverse(object => { if (object.isMesh && object.geometry.getAttribute('position').count === 33207) referenceBody = object; });
 const expectedHashes = attributeHashes(referenceBody.geometry);
 const pairs = [['갑자', '甲'], ['을축', '乙'], ['병인', '丙'], ['정묘', '丁'], ['무진', '戊'], ['기사', '己'], ['경오', '庚'], ['신미', '辛'], ['임신', '壬'], ['계유', '癸']];
-const expectedModes = ['normal-rooted-forked-woody-branches', 'triangle-attached', 'triangle-emitted-original-fire', 'triangle-emitted-original-fire', 'base-material-only', 'base-material-only', 'base-material-only', 'base-material-only', 'base-material-only', 'triangle-attached-condensation'];
+const expectedModes = ['normal-rooted-forked-woody-branches', 'connected-triangle-short-creeping-vines', 'triangle-emitted-original-fire', 'triangle-emitted-original-fire', 'triangle-fissure-gravity-sand', 'base-material-only', 'base-material-only', 'base-material-only', 'base-material-only', 'triangle-sliding-condensation'];
 const snapshotEffects = group => {
   const result = [];
   group.traverse(object => {
@@ -119,7 +119,7 @@ for (const quality of ['low', 'high']) for (const [index, [key, stem]] of pairs.
       assert.equal(spirit.mapping.petBranch, key[1]);
       assert.equal(spirit.mapping.backgroundStem, '병');
       assert.equal(spirit.propGroup.userData.surfaceAccentDiagnostics?.mode, expectedModes[index]);
-      if ([0, 1, 2, 3, 9].includes(index)) assert(spirit.propGroup.children.length > 0);
+      if ([0, 1, 2, 3, 4, 9].includes(index)) assert(spirit.propGroup.children.length > 0);
       else assert.equal(spirit.propGroup.children.length, 0, 'Unsupported geometry effects must stay disabled');
       spirit.update(2.25, 1 / 60);
       const first = snapshotEffects(spirit.propGroup);

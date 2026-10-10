@@ -1,0 +1,115 @@
+{
+  "status": "PASS",
+  "phase": "after",
+  "original": {
+    "position": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+    "uv": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c"
+  },
+  "checks": [
+    {
+      "name": "甲 low: original B face is free of woody roots; transforms/time/mask/disposal",
+      "status": "PASS"
+    },
+    {
+      "name": "乙 low: connected real-triangle crawl with leaves on its actual stem",
+      "status": "PASS"
+    },
+    {
+      "name": "甲 high: original B face is free of woody roots; transforms/time/mask/disposal",
+      "status": "PASS"
+    },
+    {
+      "name": "乙 high: connected real-triangle crawl with leaves on its actual stem",
+      "status": "PASS"
+    }
+  ],
+  "observations": [
+    {
+      "stem": "甲",
+      "quality": "low",
+      "branches": 30,
+      "drawCalls": 5,
+      "minWorldRootNormalDot": 0.9999999999999998,
+      "woodyCenterlineSweeps": 930,
+      "woodyCenterlineCrossings": 0,
+      "transformedWoodyCenterlineCrossings": 0,
+      "productionWaveCenterlineCrossings": 0,
+      "creationMs": 587.1339790000001,
+      "budget": {
+        "drawCalls": 5,
+        "instances": 120,
+        "triangles": 12600,
+        "bufferBytes": 42480
+      },
+      "maxRightArmAnchorTravel": 0.10730569366128548,
+      "maxConnectedLeafTravel": 0.18338231456948983
+    },
+    {
+      "stem": "乙",
+      "quality": "low",
+      "paths": 6,
+      "leaves": 18,
+      "segments": 144,
+      "drawCalls": 3,
+      "maxLeafRootToStemDistance": 0,
+      "creationMs": 253.08173700000043,
+      "budget": {
+        "drawCalls": 3,
+        "instances": 318,
+        "triangles": 9144,
+        "bufferBytes": 23256
+      },
+      "minimumTubePlaneClearance": 0.0052388688281464636,
+      "maxRenderedLeafRootDistance": 9.313012002984801e-8,
+      "visibleSegments": 123,
+      "maxRightArmAnchorTravel": 0.12576237516936173,
+      "maxConnectedLeafTravel": 0.1118971834411031
+    },
+    {
+      "stem": "甲",
+      "quality": "high",
+      "branches": 44,
+      "drawCalls": 5,
+      "minWorldRootNormalDot": 0.9999999999999998,
+      "woodyCenterlineSweeps": 1892,
+      "woodyCenterlineCrossings": 0,
+      "transformedWoodyCenterlineCrossings": 0,
+      "productionWaveCenterlineCrossings": 0,
+      "creationMs": 475.5701349999981,
+      "budget": {
+        "drawCalls": 5,
+        "instances": 176,
+        "triangles": 24816,
+        "bufferBytes": 57584
+      },
+      "maxRightArmAnchorTravel": 0.3254518089103035,
+      "maxConnectedLeafTravel": 0.42109016837775276
+    },
+    {
+      "stem": "乙",
+      "quality": "high",
+      "paths": 10,
+      "leaves": 30,
+      "segments": 328,
+      "drawCalls": 3,
+      "maxLeafRootToStemDistance": 0,
+      "creationMs": 211.09054599999945,
+      "budget": {
+        "drawCalls": 3,
+        "instances": 706,
+        "triangles": 26008,
+        "bufferBytes": 48600
+      },
+      "minimumTubePlaneClearance": 0.0052042957814448666,
+      "maxRenderedLeafRootDistance": 7.273812770392945e-8,
+      "visibleSegments": 246,
+      "maxRightArmAnchorTravel": 0.12576237516936173,
+      "maxConnectedLeafTravel": 0.10918398666588142
+    }
+  ],
+  "limitations": [
+    "Actual original GLB CPU geometry, transforms and opted-in Gentle_wave_pose=.65; texture images are CPU placeholders.",
+    "Short connected crawls only, not full-body vines.",
+    "No skinned meshes or physical mobile GPU claim; unrelated body parts have no continuous collision simulation."
+  ]
+}

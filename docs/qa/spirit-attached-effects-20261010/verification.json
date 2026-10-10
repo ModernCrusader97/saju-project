@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "candidateOnly": true,
+  "exactWorkerUI": "pending",
+  "siteDeployment": "pending",
+  "CPU": {
+    "tenStemActualGLB": 25,
+    "newAttachmentNodeRunner": 38,
+    "vegetationConditions": 4,
+    "failures": 0
+  },
+  "WebGL": {
+    "stemQualityConditions": 20,
+    "captures": 34,
+    "errors": 0,
+    "outbound": 0
+  },
+  "ownedGPUBufferLifecycle": {
+    "conditions": 20,
+    "created": 2250,
+    "alive": 0,
+    "undeletedBytes": 0
+  },
+  "relatedRegressions": {
+    "nodeRunner": 21,
+    "entryInternal": 23,
+    "ownerEffectsInternal": 13,
+    "ownerMasks": 10,
+    "visibilityInternal": 8,
+    "petLoader": 8,
+    "failures": 0
+  },
+  "typecheck": "PASS",
+  "build": "PASS",
+  "targetedLint": {
+    "errors": 0,
+    "warnings": 1,
+    "existingWarning": "approved-stem-accents.ts unused Z_AXIS"
+  },
+  "originalAssetFilesUnchanged": 171,
+  "protectedSource": [
+    "auth",
+    "DB",
+    "API",
+    "drizzle",
+    "hosting"
+  ],
+  "knownLimits": [
+    "No full-body vines or continuous collision simulation",
+    "No dew coalescence or detached dripping",
+    "No actual-character Im spray/foam",
+    "Local SwiftShader, not physical GPU",
+    "Hosted signed-in view not inspected",
+    "Fashion and new tiger remain separate candidates"
+  ]
+}

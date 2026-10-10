@@ -1,0 +1,20 @@
+{
+  "typecheck": {
+    "command": "npx tsc --noEmit --skipLibCheck --strict --target ES2017 --module ESNext --moduleResolution Bundler --lib esnext,dom lib/planet/surface-fissure-sand.ts lib/planet/sandstone-fissure-field.ts",
+    "exitCode": 0
+  },
+  "lint": {
+    "command": "npx eslint lib/planet/surface-fissure-sand.ts lib/planet/sandstone-fissure-field.ts scripts/qa/surface-fissure-sand.mjs",
+    "exitCode": 0
+  },
+  "cpuAndBrowser": {
+    "command": "SAJU_QA_SAND_WEBGL=1 node --test scripts/qa/surface-fissure-sand.mjs",
+    "exitCode": 0,
+    "passed": 10,
+    "failed": 0
+  },
+  "limits": [
+    "Scoped typecheck includes imported surface modules; parent owns final application type/build/integration checks",
+    "No child commit, push, site deploy, auth change, or hosted session"
+  ]
+}

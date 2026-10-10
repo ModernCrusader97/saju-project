@@ -9,6 +9,8 @@ export interface StemAccentOptions {
   quality?: 'low' | 'high';
   /** Optional actual mesh emitter in accent-group local coordinates; fire only. */
   surfaceEmitter?: (index: number, epoch: number, group: THREE.Group, offset: number) => THREE.Vector3;
+  /** Optional local accessory mask. Hides births without changing seed or source. */
+  surfaceVisibility?: (index: number, epoch: number, group: THREE.Group) => boolean;
 }
 export interface StemAccents {
   group: THREE.Group;
@@ -542,6 +544,8 @@ export function createStemAccents(
     fire.instanceMatrix.setUsage(THREE.DynamicDrawUsage);
     // Camera-facing shader offsets do not match ordinary geometry bounds.
     fire.frustumCulled = false;
+    fire.castShadow = false;
+    fire.userData.surfaceNonShadowCaster = true;
     fire.renderOrder = 2;
     fire.userData.particleCount = count;
     fire.userData.activeFraction = candle ? 0.66 : 1;
@@ -565,6 +569,7 @@ export function createStemAccents(
       age: 0,
       growth: 1,
       depth: 0,
+      hidden: false,
     }));
     const order = particles.slice();
     const dummy = new THREE.Object3D();
@@ -606,6 +611,7 @@ export function createStemAccents(
         const latitude = particle.latitude + (candle ? 0 : (hash(cycle * 23 + particle.index + 920) - 0.5) * 0.29);
         const base = options.surfaceEmitter?.(particle.index, cycle, group, unit * (candle ? 0.012 : 0.025))
           ?? surface(latitude, longitude, unit * (candle ? 0.032 : 0.068));
+        particle.hidden = options.surfaceVisibility ? !options.surfaceVisibility(particle.index, cycle, group) : false;
         particle.world.copy(base).applyMatrix4(group.matrixWorld);
         particle.world.y += worldScale * (particle.height * 0.32 + particle.rise * (age * 0.66 + age * age * 0.34));
         // Difference of smooth flow potentials anchors each trajectory at birth.
@@ -635,7 +641,7 @@ export function createStemAccents(
           particle.height * (1 - particle.age * 0.24) * particle.stretch, 1);
         dummy.updateMatrix();
         fire.setMatrixAt(slot, dummy.matrix);
-        particleData[slot * 4] = particle.age;
+        particleData[slot * 4] = particle.hidden ? 1 : particle.age;
         particleData[slot * 4 + 1] = particle.seed;
         particleData[slot * 4 + 2] = candle ? 1 : 0;
         particleData[slot * 4 + 3] = particle.index % (candle ? 3 : 7) === 0 ? 1 : 0;

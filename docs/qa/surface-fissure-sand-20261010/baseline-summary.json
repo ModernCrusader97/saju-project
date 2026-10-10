@@ -1,0 +1,11 @@
+{
+  "status": "EXPECTED_PRECHANGE_FAILURE",
+  "baseCommit": "ee6e9740054394b0bee30563f35e957b49adf4bb",
+  "scope": "戊 router unchanged from base; before actual surface sand implementation",
+  "glbSHA256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+  "failedCases": [
+    "low: diagnostics.supported false, expected true",
+    "high: diagnostics.supported false, expected true"
+  ],
+  "source": "Initial actual-GLB Node test run; failure printed before implementing the new sand module"
+}

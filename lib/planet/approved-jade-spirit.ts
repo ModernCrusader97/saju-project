@@ -8,6 +8,7 @@ import { loadZodiacPet, type ZodiacPet } from './spirit-zodiac-pet';
 import { createStemMaterial, type Stem, type StemMaterialHandle } from './approved-stem-materials';
 import { bindCharacterRestCoordinates } from './character-rest-coordinates';
 import { createSurfaceStemAccents, type SurfaceStemAccents } from './surface-stem-accents';
+import { createApprovedSpiritMotion } from './approved-spirit-motion';
 import { disposeObject, disposeMaterial } from './render-resources';
 import type { SpiritQuality } from './spirit-geometry';
 
@@ -60,6 +61,11 @@ export async function loadApprovedSpirit(dayKey: string, monthKey: string, quali
   model.scale.z = APPROVED_BODY_PRESENTATION_DEPTH;
   model.userData.presentationDepthScale = APPROVED_BODY_PRESENTATION_DEPTH;
   group.add(model);
+  // Display rotation/depth stays on model. This identity child owns the small
+  // idle transform; body, facial markers and attachments share the same frame.
+  const motionRoot = new THREE.Group(); motionRoot.name = 'ApprovedSpiritMotion';
+  for (const child of [...model.children]) motionRoot.add(child);
+  model.add(motionRoot);
   let body: THREE.Mesh | undefined;
   model.traverse(object => {
     const mesh = object as THREE.Mesh;
@@ -69,8 +75,8 @@ export async function loadApprovedSpirit(dayKey: string, monthKey: string, quali
     disposeObject(group);
     throw new Error('Approved B body does not match the verified undeformed adapter.');
   }
-  // The source GLB has a limited pose-study morph. It must remain neutral: the field adapter
-  // is verified against original mesh-local POSITION, not a recentered/skinned/posed export.
+  // Bind original reference coordinates before reusing the preserved limited
+  // wave morph. Original POSITION/UV/targets are never rewritten.
   body.morphTargetInfluences?.fill(0);
   const oldMaterials = Array.isArray(body.material) ? body.material : [body.material];
   const day = getSpiritStemPreset(dayKey), month = getSpiritStemPreset(monthKey);
@@ -81,10 +87,12 @@ export async function loadApprovedSpirit(dayKey: string, monthKey: string, quali
   let jade: ReturnType<typeof attachJadeEvolution> | undefined;
   let atlas: THREE.Texture | undefined;
   let pet: ZodiacPet | undefined;
+  let motion: ReturnType<typeof createApprovedSpiritMotion> | undefined;
   let released = false;
   const release = () => {
     if (released) return;
     released = true;
+    motion?.dispose();
     // Effects own their instance buffers and remove themselves before generic traversal.
     effects?.dispose();
     pet?.dispose();
@@ -129,10 +137,10 @@ export async function loadApprovedSpirit(dayKey: string, monthKey: string, quali
     }
     for (const material of oldMaterials) disposeMaterial(material);
 
-    effects = createSurfaceStemAccents(stem, { meshes: [body], quality });
+    effects = createSurfaceStemAccents(stem, { meshes: [body], quality, allowMorphTargets: true });
     const features = effects.group;
     features.userData.surfaceAccentDiagnostics = effects.diagnostics;
-    model.add(features);
+    motionRoot.add(features);
     pet = await loadZodiacPet(dayKey.charAt(1), quality);
     const ownedPet = pet;
     pet.group.position.set(1.10, 0, .12); group.add(pet.group);
@@ -141,28 +149,27 @@ export async function loadApprovedSpirit(dayKey: string, monthKey: string, quali
       if (!mesh.isMesh) return;
       // Fire uses transparent camera-facing cards without an alpha-aware depth
       // shader. Keep the B body and other accents casting their existing shadows.
-      mesh.castShadow = !((stem === '丙' || stem === '丁') && (mesh as THREE.InstancedMesh).isInstancedMesh);
+      mesh.castShadow = mesh.userData.surfaceNonShadowCaster !== true &&
+        !((stem === '丙' || stem === '丁') && (mesh as THREE.InstancedMesh).isInstancedMesh);
     });
     const eyes: THREE.Mesh[] = [];
     model.traverse(object => { const mesh = object as THREE.Mesh; if (mesh.isMesh && mesh.name.includes('almond_gaze')) eyes.push(mesh); });
-    const eyeScales = eyes.map(eye => eye.scale.y);
-    let currentTime = 0, reactionStart = -100, disposed = false;
+    motion = createApprovedSpiritMotion(motionRoot, body, stem);
+    let currentTime = 0, disposed = false;
     const update = (time: number, _delta?: number, camera?: THREE.Camera) => {
       if (disposed || !Number.isFinite(time)) return;
-      currentTime = Math.max(0, time); jade?.update(currentTime);
+      currentTime = Math.max(0, time);
+      motion?.update(currentTime); jade?.update(currentTime);
       stemMaterial?.update(currentTime);
       // A zero delta still rebinds attachments after a paused drag. Absolute time
       // preserves pause, backwards seeks and reset, including fire-card sorting.
       effects?.update(currentTime, camera);
       ownedPet.update(currentTime);
-      const elapsed = currentTime - reactionStart;
-      const blink = elapsed >= 0 && elapsed < .5 ? 1 - .85 * Math.sin(Math.PI * elapsed / .5) : 1;
-      eyes.forEach((eye, index) => { eye.scale.y = eyeScales[index] * blink; });
     };
-    const reaction = () => { reactionStart = currentTime; };
+    const reaction = () => { motion?.triggerReaction(); };
     const reset = () => {
       if (disposed) return;
-      reactionStart = -100; group.rotation.set(0, 0, 0); model.rotation.set(0, 0, 0);
+      group.rotation.set(0, 0, 0); model.rotation.set(0, 0, 0); motion?.reset();
       update(0, 0);
     };
     const dispose = () => {

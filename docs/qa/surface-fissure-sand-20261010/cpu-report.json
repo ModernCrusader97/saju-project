@@ -1,0 +1,221 @@
+{
+  "status": "completed",
+  "glbSHA256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+  "sourceHashes": {
+    "position": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+    "normal": "80706bee870329a0829113e63ed178f0a904029265da2c96c69ad50f9b1f9cec",
+    "uv": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+    "index": "934286d3bdd9361657e390c41762923871cec85a48a7d9775b362aee02dc7830"
+  },
+  "reports": [
+    {
+      "quality": "low",
+      "instances": 24,
+      "sourceCount": 4,
+      "sources": [
+        {
+          "mesh": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+          "triangle": 3964,
+          "barycentric": [
+            0.7263113911437085,
+            0.23487040138227971,
+            0.03881820747401183
+          ],
+          "restPosition": [
+            -0.7442159652709961,
+            0.731577455997467,
+            0.2950845956802368
+          ],
+          "fieldDistance": 0.0018910765647888184,
+          "period": 3.931834459246602,
+          "phase": 0.2991332097699342
+        },
+        {
+          "mesh": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+          "triangle": 17113,
+          "barycentric": [
+            0.3204726996340387,
+            0.3710369214644275,
+            0.3084903789015338
+          ],
+          "restPosition": [
+            -0.06946984678506851,
+            1.3719981908798218,
+            -0.4979155659675598
+          ],
+          "fieldDistance": 0.0005738139152526855,
+          "period": 4.570555735054404,
+          "phase": 0.6694617713292246
+        },
+        {
+          "mesh": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+          "triangle": 55512,
+          "barycentric": [
+            0.00983611881108759,
+            0.623687637474701,
+            0.3664762437142114
+          ],
+          "restPosition": [
+            -0.13563120365142822,
+            0.45277950167655945,
+            -0.3766633868217468
+          ],
+          "fieldDistance": 0.005946844816207886,
+          "period": 4.818819674162659,
+          "phase": 0.925486237183577
+        },
+        {
+          "mesh": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+          "triangle": 28075,
+          "barycentric": [
+            0.18000968701628883,
+            0.4412840082207829,
+            0.37870630476292827
+          ],
+          "restPosition": [
+            -0.47401899099349976,
+            0.8137267827987671,
+            0.4431065022945404
+          ],
+          "fieldDistance": 0.005251288414001465,
+          "period": 4.618191970959742,
+          "phase": 0.6405802304943791
+        }
+      ]
+    },
+    {
+      "quality": "high",
+      "instances": 48,
+      "sourceCount": 6,
+      "sources": [
+        {
+          "mesh": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+          "triangle": 35284,
+          "barycentric": [
+            0.05028760255056397,
+            0.06387083396102679,
+            0.8858415634884093
+          ],
+          "restPosition": [
+            -0.7378989458084106,
+            1.032083511352539,
+            -0.37396422028541565
+          ],
+          "fieldDistance": 0.003773033618927002,
+          "period": 3.931834459246602,
+          "phase": 0.2991332097699342
+        },
+        {
+          "mesh": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+          "triangle": 31389,
+          "barycentric": [
+            0.03225269050701385,
+            0.1833139365278947,
+            0.7844333729650914
+          ],
+          "restPosition": [
+            -0.987009584903717,
+            1.394563913345337,
+            -0.2547270953655243
+          ],
+          "fieldDistance": 0.0027688145637512207,
+          "period": 4.570555735054404,
+          "phase": 0.6694617713292246
+        },
+        {
+          "mesh": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+          "triangle": 34260,
+          "barycentric": [
+            0.48056775092059223,
+            0.1428190447457004,
+            0.3766132043337074
+          ],
+          "restPosition": [
+            -0.8067573308944702,
+            1.336520791053772,
+            -0.4617190659046173
+          ],
+          "fieldDistance": 0.005204558372497559,
+          "period": 4.818819674162659,
+          "phase": 0.925486237183577
+        },
+        {
+          "mesh": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+          "triangle": 44519,
+          "barycentric": [
+            0.5837763127012452,
+            0.3236489028362988,
+            0.09257478446245601
+          ],
+          "restPosition": [
+            -0.06968657672405243,
+            1.0788980722427368,
+            0.2607344388961792
+          ],
+          "fieldDistance": 0.003944098949432373,
+          "period": 4.618191970959742,
+          "phase": 0.6405802304943791
+        },
+        {
+          "mesh": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+          "triangle": 26094,
+          "barycentric": [
+            0.37692887392554786,
+            0.02479894428730125,
+            0.5982721817871509
+          ],
+          "restPosition": [
+            -0.7492775917053223,
+            1.0753536224365234,
+            0.28538620471954346
+          ],
+          "fieldDistance": 0.004970729351043701,
+          "period": 4.288715310531552,
+          "phase": 0.3641681912961303
+        },
+        {
+          "mesh": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+          "triangle": 28164,
+          "barycentric": [
+            0.2066880861530408,
+            0.32092587727494104,
+            0.47238603657201816
+          ],
+          "restPosition": [
+            -0.5058380365371704,
+            1.0317867994308472,
+            0.425583153963089
+          ],
+          "fieldDistance": 0.0036284327507019043,
+          "period": 4.155700033754329,
+          "phase": 0.5146110623318236
+        }
+      ]
+    },
+    {
+      "collisionHiddenOverTiltedFrames": 41
+    },
+    {
+      "morphRefitBudget": {
+        "samples": 30,
+        "medianMs": 2.5241660000001502,
+        "p95Ms": 31.31820800000014,
+        "averageMs": 5.0540360666666855,
+        "colliderRefits": 41
+      }
+    },
+    {
+      "cpuBudget": {
+        "samples": 100,
+        "medianMs": 0.0501139999996667,
+        "p95Ms": 0.13086199999997916,
+        "maxMs": 4.119488000000274
+      }
+    }
+  ],
+  "limits": [
+    "CPU uses actual GLB triangles; glTF image decode alone is replaced",
+    "Static topology, rigid transforms and explicitly permitted pose morphs",
+    "Browser shader comparison is a separate real WebGL check"
+  ]
+}

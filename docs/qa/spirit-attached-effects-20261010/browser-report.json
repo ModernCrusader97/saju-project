@@ -1,0 +1,886 @@
+{
+  "status": "PASS",
+  "cases": 20,
+  "results": [
+    {
+      "day": "갑자",
+      "quality": "low",
+      "mode": "normal-rooted-forked-woody-branches",
+      "budget": {
+        "drawCalls": 5,
+        "instances": 120,
+        "triangles": 12600,
+        "bufferBytes": 42480
+      },
+      "frames": {
+        "initial": "a96ad6916e47f149276532cfd842859730bf115c0a55de6a95cf235d4dad6674",
+        "active": "b6fc9488fcee7672e4357dff04827219a484fa1fde41e0081d0f12afac07075a",
+        "mask": "67f8775653a48d097eb2508dc8a5c49f037707e0e0cf6cc809725df5f70b3272",
+        "wave": "41744762c6919e4cc64106f97cc286a34b68f2990045b105b6e9c807f206ae61"
+      },
+      "waveWeight": 0.41120961264047745,
+      "limits": [
+        "Roots and directions resolve current morph triangles; branch curves remain a rigid shape attached to each root.",
+        "Creation-time curved trunk/fork centerline collision filters; branch thickness and unrelated moving body parts have no continuous collision simulation."
+      ]
+    },
+    {
+      "day": "을축",
+      "quality": "low",
+      "mode": "connected-triangle-short-creeping-vines",
+      "budget": {
+        "drawCalls": 3,
+        "instances": 318,
+        "triangles": 9144,
+        "bufferBytes": 23256
+      },
+      "frames": {
+        "initial": "cfa6c6ba51bdb89010a938fb900891bce4d29f18dff2b6f9404b14ff04a09fc2",
+        "active": "b63ff99af4415aa77c871814ac1d2c0b03a84c6b7aeb888451f60e6f270b998c",
+        "mask": "ee6b697444794e4932c459ef42952b3565a7ccd9c00d503cfc4a35c8c92395cb",
+        "wave": "6852dffe3953c48ef9d62cab2ed87fdc61aabaeb0805429857998686eb55f0ce"
+      },
+      "waveWeight": 0.42535991134799683,
+      "limits": [
+        "Short edge-connected crawls only; this does not wrap vines around the entire body.",
+        "Rest-topology paths resolve actual posed morph triangles each frame; skinned surfaces are unsupported.",
+        "Tube offsets clear their incident triangle planes; unrelated moving parts have no physical collision simulation."
+      ]
+    },
+    {
+      "day": "병인",
+      "quality": "low",
+      "mode": "triangle-emitted-original-fire",
+      "budget": {
+        "drawCalls": 1,
+        "instances": 48,
+        "triangles": 2304,
+        "bufferBytes": 6048
+      },
+      "frames": {
+        "initial": "ed84093679b1c1dce69c0b04555a093eec4c2070e6203c763fda98aa576ec57d",
+        "active": "b6a96cd41de04cb51b0e9717c4d163ce9497c7de93e28d92f697adb694d0ad0b",
+        "mask": "d8bfd13946368414cd168862d96088efd78f4df2f8ef9cede22d2b2f3ec02ce9",
+        "wave": "df41e742f83bfa64c9e8c700716fc306c7e3633ca302a6c752c3cf0ff9706d60"
+      },
+      "waveWeight": 0.39668450544909933,
+      "limits": [
+        "Reference-pose area; rotations and explicitly enabled morphs resolve current triangles. Skinning/topology changes require another adapter.",
+        "Detached flame flight is intentional; full body/flame collisions are not simulated."
+      ]
+    },
+    {
+      "day": "정묘",
+      "quality": "low",
+      "mode": "triangle-emitted-original-fire",
+      "budget": {
+        "drawCalls": 1,
+        "instances": 12,
+        "triangles": 96,
+        "bufferBytes": 1520
+      },
+      "frames": {
+        "initial": "156b88ea9a0beeabb9823ae8581866c687c658570c09318349137bd0ddaf1bbd",
+        "active": "9c59531d6743ae7394e1d4dc052cf94ab27691fd78b044531b1b8f865eeda465",
+        "mask": "ead3878c045524e535cab0b60c64a4bfd558c18c812018931990e2bbe3e0f84c",
+        "wave": "a36e12a77f57deb0d349c13244f4326f740076345892d2b7ab6f86631b080e20"
+      },
+      "waveWeight": 0.40610206762980666,
+      "limits": [
+        "Reference-pose area; rotations and explicitly enabled morphs resolve current triangles. Skinning/topology changes require another adapter.",
+        "Detached flame flight is intentional; full body/flame collisions are not simulated."
+      ]
+    },
+    {
+      "day": "무진",
+      "quality": "low",
+      "mode": "triangle-fissure-gravity-sand",
+      "budget": {
+        "drawCalls": 1,
+        "instances": 24,
+        "triangles": 480,
+        "bufferBytes": 3456
+      },
+      "frames": {
+        "initial": "3ae644e175b095fda290691fde73aa19e0c5ae20ee059fa5175b1dc3c040cbdc",
+        "active": "017b3747d27b2e0cf2a73c86d149d00f0ab375a0455eac2c0a36b1dfe1f19c9a",
+        "mask": "2db8d0efa6c941e8e33d8ae11b34031c834bf0d653b253c3709107b847a1d68e",
+        "wave": "bd378dd66863410d80019a1325039ea9b990b23acc626014df4a4ae7645b53d3"
+      },
+      "waveWeight": 0.4302134617848494,
+      "limits": [
+        "Actual triangle/barycentric sources use character-rest F2-F1 cracks; optional pose morphs refit persistent collision storage. Skinning and changed topology require rebuilding.",
+        "Float32 CPU field is tested against the actual WebGL material on the QA device; GPU arithmetic can differ on other hardware.",
+        "Deterministic flights are re-evaluated from current emitter pose on seeks; birth-transform history and free independent world trajectories are not cached.",
+        "Actual-triangle segment collision hides body-crossing grains; no bouncing, floor accumulation or full swept-sphere collision simulation."
+      ]
+    },
+    {
+      "day": "기사",
+      "quality": "low",
+      "mode": "base-material-only",
+      "budget": {
+        "drawCalls": 0,
+        "instances": 0,
+        "triangles": 0,
+        "bufferBytes": 0
+      },
+      "frames": {
+        "initial": "41f1862b3bb7fc288beb4a401dbf2764022b2dd0f0af3d8659225d2cf6b2a1c9",
+        "active": "487dd59704775a3df73e4f94664fc0cffef344359ca9a7f08101f11e14554315",
+        "mask": "487dd59704775a3df73e4f94664fc0cffef344359ca9a7f08101f11e14554315",
+        "wave": "138b10238fcbdd0be15805048aad5c5126f0adb5ae7f3002e11aae46452bccd7"
+      },
+      "waveWeight": 0.41837338913828215,
+      "limits": [
+        "Reference-pose area; rotations and explicitly enabled morphs resolve current triangles. Skinning/topology changes require another adapter.",
+        "This stem uses its base material without geometry accents."
+      ]
+    },
+    {
+      "day": "경오",
+      "quality": "low",
+      "mode": "base-material-only",
+      "budget": {
+        "drawCalls": 0,
+        "instances": 0,
+        "triangles": 0,
+        "bufferBytes": 0
+      },
+      "frames": {
+        "initial": "46f963de729390758f7a6cbdba0ea487aee291b9089c21ea7dc53c8dd0e4b586",
+        "active": "d11ac6c1a303c390c74d9cf05fae8a478ca4ad2a364695de33cdd6cebc16ce50",
+        "mask": "d11ac6c1a303c390c74d9cf05fae8a478ca4ad2a364695de33cdd6cebc16ce50",
+        "wave": "8f2923b681c04a366f2e268cb4ea537b18db95f39c36fdf565b3874cdbe80c11"
+      },
+      "waveWeight": 0.40161287476941393,
+      "limits": [
+        "Reference-pose area; rotations and explicitly enabled morphs resolve current triangles. Skinning/topology changes require another adapter.",
+        "This stem uses its base material without geometry accents."
+      ]
+    },
+    {
+      "day": "신미",
+      "quality": "low",
+      "mode": "base-material-only",
+      "budget": {
+        "drawCalls": 0,
+        "instances": 0,
+        "triangles": 0,
+        "bufferBytes": 0
+      },
+      "frames": {
+        "initial": "8ac80342c98f598bafed0ada84a19550f15c0be7e41152c447f07bd1157dc88f",
+        "active": "cbacda6ca6bc97aeeaa22e164fc7133d1c297232c9b7a66735edbb364be4bd70",
+        "mask": "cbacda6ca6bc97aeeaa22e164fc7133d1c297232c9b7a66735edbb364be4bd70",
+        "wave": "397a2c3a052717fee7f5628edbc85c290ce7c7bca50b6bf687db8b2928436d1c"
+      },
+      "waveWeight": 0.409461980921084,
+      "limits": [
+        "Reference-pose area; rotations and explicitly enabled morphs resolve current triangles. Skinning/topology changes require another adapter.",
+        "This stem uses its base material without geometry accents."
+      ]
+    },
+    {
+      "day": "임신",
+      "quality": "low",
+      "mode": "base-material-only",
+      "budget": {
+        "drawCalls": 0,
+        "instances": 0,
+        "triangles": 0,
+        "bufferBytes": 0
+      },
+      "frames": {
+        "initial": "5093da3f228c2f3f8d6f9b009e5edf222cdefdec88add3f471d02b8d5f358a7a",
+        "active": "1c3bdb31cccd28f496015ad85dc44e36106f75c7702ed8328d06b8baadc57ea1",
+        "mask": "1c3bdb31cccd28f496015ad85dc44e36106f75c7702ed8328d06b8baadc57ea1",
+        "wave": "5efd910b79256baebb70b63a66c25a9d69af10772bef07718576a9ecac0fc3a7"
+      },
+      "waveWeight": 0.4236571223302794,
+      "limits": [
+        "Reference-pose area; rotations and explicitly enabled morphs resolve current triangles. Skinning/topology changes require another adapter.",
+        "Actual-character spray/foam remains unimplemented."
+      ]
+    },
+    {
+      "day": "계유",
+      "quality": "low",
+      "mode": "triangle-sliding-condensation",
+      "budget": {
+        "drawCalls": 1,
+        "instances": 48,
+        "triangles": 3840,
+        "bufferBytes": 5568
+      },
+      "frames": {
+        "initial": "ca279c9ba2a9c3e0a8303d1d7b469b517eb28307623abc7c5d2d9c26a6472e3b",
+        "active": "da9354fdf8499285809017a523b35e5738a5964bd10933bb1c69a4e7b24d821f",
+        "mask": "7362b9b9e8a099b1ae838524cf43169cac490713a0bf97986e71fd9ee2e3f7df",
+        "wave": "ab24b157fc54262b53b93dfd0c2074677f19bfb74087c7de5004b06f64d7dd13"
+      },
+      "waveWeight": 0.43319498847281235,
+      "limits": [
+        "Routes follow connected reference triangle edges in rest-local gravity; rigid transforms and explicitly enabled morph vertex positions preserve attachment.",
+        "Condensation, sliding, evaporation and repeat are implemented; bead coalescence and detached falling droplets are omitted.",
+        "Each ellipsoid stays outside its current face plane; full collision simulation against other body parts is not performed.",
+        "Creation-time face masking preserves gaze and expression; accessory masks hide only local beads without reseeding.",
+        "Fixed path/particle budgets do not adapt to later topology, skinning or large scale changes; morphs require explicit opt-in."
+      ]
+    },
+    {
+      "day": "갑자",
+      "quality": "high",
+      "mode": "normal-rooted-forked-woody-branches",
+      "budget": {
+        "drawCalls": 5,
+        "instances": 176,
+        "triangles": 24816,
+        "bufferBytes": 57584
+      },
+      "frames": {
+        "initial": "ee5e9d574754fbb1f927b766cfd2a339f1248ade62aa0eadec74aa3b3fd9c711",
+        "active": "29ad3baf7dfe94c5ebf35cc854a10cedb0e89d506c733343e5086f5942d758d4",
+        "mask": "f07967104f8866ea0b1e212718b5ffa6f00816e3b75637c269c3f3aa3acb7950",
+        "wave": "1a28b8ab775bc9d387ace07e5bc6e84c8148819db185ae3a354740f008eae977"
+      },
+      "waveWeight": 0.41120961264047745,
+      "limits": [
+        "Roots and directions resolve current morph triangles; branch curves remain a rigid shape attached to each root.",
+        "Creation-time curved trunk/fork centerline collision filters; branch thickness and unrelated moving body parts have no continuous collision simulation."
+      ]
+    },
+    {
+      "day": "을축",
+      "quality": "high",
+      "mode": "connected-triangle-short-creeping-vines",
+      "budget": {
+        "drawCalls": 3,
+        "instances": 706,
+        "triangles": 26008,
+        "bufferBytes": 48600
+      },
+      "frames": {
+        "initial": "fb6d85b60ffd8baf0be8148bc3f764a512bd9d32b37b591afa66e45fefa3a0af",
+        "active": "4694c8282737872d321a7430757bf82e232a160eb03959ffafd24f7ffdd1e806",
+        "mask": "1051bae0f6b4039ec1f20d0f6d19f9e4505670f850b17a624b52a913336fcff7",
+        "wave": "68c27ca167004b4c7f6afb140f199794b773787882d8e6ce86c09e9f659936ed"
+      },
+      "waveWeight": 0.42535991134799683,
+      "limits": [
+        "Short edge-connected crawls only; this does not wrap vines around the entire body.",
+        "Rest-topology paths resolve actual posed morph triangles each frame; skinned surfaces are unsupported.",
+        "Tube offsets clear their incident triangle planes; unrelated moving parts have no physical collision simulation."
+      ]
+    },
+    {
+      "day": "병인",
+      "quality": "high",
+      "mode": "triangle-emitted-original-fire",
+      "budget": {
+        "drawCalls": 1,
+        "instances": 72,
+        "triangles": 5184,
+        "bufferBytes": 9008
+      },
+      "frames": {
+        "initial": "e9592ca72030a2fe1041d2e2b1dd6719e30219452ce901109a611096b133b477",
+        "active": "b6ce17f62f1a9064899f4c78b56c5d9dd2f9df7a4c402e5087cb278169452827",
+        "mask": "831fe3cda1535456c2ce2a6806a89bd1a41791041c6b8ca672c457847d9e13dc",
+        "wave": "81cdf3abd0140d76725b3be7c30515fb601ff4ee0ee2dda8d71ccf0823a767fa"
+      },
+      "waveWeight": 0.39668450544909933,
+      "limits": [
+        "Reference-pose area; rotations and explicitly enabled morphs resolve current triangles. Skinning/topology changes require another adapter.",
+        "Detached flame flight is intentional; full body/flame collisions are not simulated."
+      ]
+    },
+    {
+      "day": "정묘",
+      "quality": "high",
+      "mode": "triangle-emitted-original-fire",
+      "budget": {
+        "drawCalls": 1,
+        "instances": 18,
+        "triangles": 144,
+        "bufferBytes": 2096
+      },
+      "frames": {
+        "initial": "fd702e0333ba4b6c82e1e6d46e4c3b23ae87ca844538946cf2daef8e5f26e482",
+        "active": "e0661c4a99f8b3d6cd51819947403b713ce6449611c4c1f4ecc4e4696b5d6b01",
+        "mask": "de163505b7e610414b699fd0b81f52d8a1a7f88b3c7fe5acb97ae7b5b10a53be",
+        "wave": "983cea1f70b25dcaa80786e5065413fe0179e0d2615a9b3d76afb2e1169fcf45"
+      },
+      "waveWeight": 0.40610206762980666,
+      "limits": [
+        "Reference-pose area; rotations and explicitly enabled morphs resolve current triangles. Skinning/topology changes require another adapter.",
+        "Detached flame flight is intentional; full body/flame collisions are not simulated."
+      ]
+    },
+    {
+      "day": "무진",
+      "quality": "high",
+      "mode": "triangle-fissure-gravity-sand",
+      "budget": {
+        "drawCalls": 1,
+        "instances": 48,
+        "triangles": 960,
+        "bufferBytes": 4992
+      },
+      "frames": {
+        "initial": "dd04a33e77cfd6d837375b6231a0902b436e0314e82926d54eda5ad5b46f7c4b",
+        "active": "133b262c16bdba768c81c87a657b84a234fcf07184cd867a2a8f872f270670ea",
+        "mask": "484c5d99343a3c5eb85acf88f3a85297047e0d797cd165400e3662d05f224d93",
+        "wave": "8963a153f79060423e569e16e038348f0e170c20f2de926ab867ae34c4494665"
+      },
+      "waveWeight": 0.4302134617848494,
+      "limits": [
+        "Actual triangle/barycentric sources use character-rest F2-F1 cracks; optional pose morphs refit persistent collision storage. Skinning and changed topology require rebuilding.",
+        "Float32 CPU field is tested against the actual WebGL material on the QA device; GPU arithmetic can differ on other hardware.",
+        "Deterministic flights are re-evaluated from current emitter pose on seeks; birth-transform history and free independent world trajectories are not cached.",
+        "Actual-triangle segment collision hides body-crossing grains; no bouncing, floor accumulation or full swept-sphere collision simulation."
+      ]
+    },
+    {
+      "day": "기사",
+      "quality": "high",
+      "mode": "base-material-only",
+      "budget": {
+        "drawCalls": 0,
+        "instances": 0,
+        "triangles": 0,
+        "bufferBytes": 0
+      },
+      "frames": {
+        "initial": "ce409844b532de147bc493580940935322efa8dd584807f6c666b6042fcb0502",
+        "active": "28b310ac00e9353dce78a6598d6cdad3671eb78cab96db4e7d6b8cf7fd9036ff",
+        "mask": "28b310ac00e9353dce78a6598d6cdad3671eb78cab96db4e7d6b8cf7fd9036ff",
+        "wave": "a55d1d83dcf5deae80faeec94927a8bd38520ab66f878742e7124b0a087b1c2f"
+      },
+      "waveWeight": 0.41837338913828215,
+      "limits": [
+        "Reference-pose area; rotations and explicitly enabled morphs resolve current triangles. Skinning/topology changes require another adapter.",
+        "This stem uses its base material without geometry accents."
+      ]
+    },
+    {
+      "day": "경오",
+      "quality": "high",
+      "mode": "base-material-only",
+      "budget": {
+        "drawCalls": 0,
+        "instances": 0,
+        "triangles": 0,
+        "bufferBytes": 0
+      },
+      "frames": {
+        "initial": "6048d8ced0aa8cd91aa65d51279a6b1d200eed6610931e3eb8c6e4ffdd3cc471",
+        "active": "fe6e42b9bce5632a478a01f8a0930c47018ef07213980c3c05a76d37068ada3d",
+        "mask": "fe6e42b9bce5632a478a01f8a0930c47018ef07213980c3c05a76d37068ada3d",
+        "wave": "79a359bc8dfc6052682abf45d2306d5dc021fbeaa9c956da597428fac03d1d2e"
+      },
+      "waveWeight": 0.40161287476941393,
+      "limits": [
+        "Reference-pose area; rotations and explicitly enabled morphs resolve current triangles. Skinning/topology changes require another adapter.",
+        "This stem uses its base material without geometry accents."
+      ]
+    },
+    {
+      "day": "신미",
+      "quality": "high",
+      "mode": "base-material-only",
+      "budget": {
+        "drawCalls": 0,
+        "instances": 0,
+        "triangles": 0,
+        "bufferBytes": 0
+      },
+      "frames": {
+        "initial": "4bd45159695158ee1c92f1d12691f133fddc80f2156eba1530a460d7c0c5f3e4",
+        "active": "b04dcd6fd8c02b6bd1bb70addb1895cc2dbc7bdb6323395d99a14cdd79a69a79",
+        "mask": "b04dcd6fd8c02b6bd1bb70addb1895cc2dbc7bdb6323395d99a14cdd79a69a79",
+        "wave": "dc49fc82d8e99adf2dfccbb0a1b3dbc18b8e6e579ca8d420738d9d65acf576ec"
+      },
+      "waveWeight": 0.409461980921084,
+      "limits": [
+        "Reference-pose area; rotations and explicitly enabled morphs resolve current triangles. Skinning/topology changes require another adapter.",
+        "This stem uses its base material without geometry accents."
+      ]
+    },
+    {
+      "day": "임신",
+      "quality": "high",
+      "mode": "base-material-only",
+      "budget": {
+        "drawCalls": 0,
+        "instances": 0,
+        "triangles": 0,
+        "bufferBytes": 0
+      },
+      "frames": {
+        "initial": "0aac431ee7a3b25fbca8024812104daca0754e27b524e343269cf4809861d172",
+        "active": "5740396f8c984645df38aad578dc9e7cb0b90918b1fb40981144510e252c1369",
+        "mask": "5740396f8c984645df38aad578dc9e7cb0b90918b1fb40981144510e252c1369",
+        "wave": "88f7a73f996fde66ac9e47c7047f83c584cbc46ee8f4cbeb3a9a352a750676fb"
+      },
+      "waveWeight": 0.4236571223302794,
+      "limits": [
+        "Reference-pose area; rotations and explicitly enabled morphs resolve current triangles. Skinning/topology changes require another adapter.",
+        "Actual-character spray/foam remains unimplemented."
+      ]
+    },
+    {
+      "day": "계유",
+      "quality": "high",
+      "mode": "triangle-sliding-condensation",
+      "budget": {
+        "drawCalls": 1,
+        "instances": 80,
+        "triangles": 13440,
+        "bufferBytes": 9872
+      },
+      "frames": {
+        "initial": "dd2b937a5851e39596d8fb3cd76e353fc09aedf99775f37dc7e26e555804d43f",
+        "active": "0f66f8670c259a3675579d93bccb2a2e11d022aa8c154bc611c5a80b5b5b7c49",
+        "mask": "24c8e84d1490784c1aa1ad21f258bd3a6cbe42c4f56258df552053b9586e43d7",
+        "wave": "a5ffba9db9bd7ed0ef44b96b23c47f75377bfdab3ea992c5f59135df745dada9"
+      },
+      "waveWeight": 0.43319498847281235,
+      "limits": [
+        "Routes follow connected reference triangle edges in rest-local gravity; rigid transforms and explicitly enabled morph vertex positions preserve attachment.",
+        "Condensation, sliding, evaporation and repeat are implemented; bead coalescence and detached falling droplets are omitted.",
+        "Each ellipsoid stays outside its current face plane; full collision simulation against other body parts is not performed.",
+        "Creation-time face masking preserves gaze and expression; accessory masks hide only local beads without reseeding.",
+        "Fixed path/particle budgets do not adapt to later topology, skinning or large scale changes; morphs require explicit opt-in."
+      ]
+    }
+  ],
+  "frames": [
+    {
+      "day": "갑자",
+      "label": "wave",
+      "time": 3,
+      "angle": 0.6,
+      "pixels": "1a28b8ab775bc9d387ace07e5bc6e84c8148819db185ae3a354740f008eae977",
+      "file": "갑-wave.png"
+    },
+    {
+      "day": "갑자",
+      "label": "front",
+      "time": 2.25,
+      "angle": 0,
+      "pixels": "29ad3baf7dfe94c5ebf35cc854a10cedb0e89d506c733343e5086f5942d758d4",
+      "file": "갑-front.png"
+    },
+    {
+      "day": "갑자",
+      "label": "side",
+      "time": 2.25,
+      "angle": 1.5707963267948966,
+      "pixels": "d47951de62063b30283f7e938dd71a5ada8049e2d3a6e29ae18ac205c65f8fe7",
+      "file": "갑-side.png"
+    },
+    {
+      "day": "갑자",
+      "label": "motion-a",
+      "time": 1.8,
+      "angle": 0.6,
+      "pixels": "0371c277f2963d7fa201b9d7dcb775175d55fc3d55f096c918710404fc0fd65e",
+      "file": "갑-motion-a.png"
+    },
+    {
+      "day": "갑자",
+      "label": "motion-b",
+      "time": 2.8,
+      "angle": 0.6,
+      "pixels": "286dd02422bdc0826c6a32c1ca6ed6b55f50213784bed1557f53ccac45f1b7d1",
+      "file": "갑-motion-b.png"
+    },
+    {
+      "day": "을축",
+      "label": "wave",
+      "time": 3,
+      "angle": 0.6,
+      "pixels": "68c27ca167004b4c7f6afb140f199794b773787882d8e6ce86c09e9f659936ed",
+      "file": "을-wave.png"
+    },
+    {
+      "day": "을축",
+      "label": "front",
+      "time": 2.25,
+      "angle": 0,
+      "pixels": "4694c8282737872d321a7430757bf82e232a160eb03959ffafd24f7ffdd1e806",
+      "file": "을-front.png"
+    },
+    {
+      "day": "을축",
+      "label": "side",
+      "time": 2.25,
+      "angle": 1.5707963267948966,
+      "pixels": "c4e351f21c716f3a64e61a8b320a5266dc882d37b449d688a3c6cebceeec4c4e",
+      "file": "을-side.png"
+    },
+    {
+      "day": "을축",
+      "label": "motion-a",
+      "time": 1.8,
+      "angle": 0.6,
+      "pixels": "92c02013c6ac5b61c5c7d6f4afca4e77ec7f6eca8f88dd738c7ddcc1944901f8",
+      "file": "을-motion-a.png"
+    },
+    {
+      "day": "을축",
+      "label": "motion-b",
+      "time": 2.8,
+      "angle": 0.6,
+      "pixels": "5df18dad57004c455b5277f780fe8ddebdb77e391c0f7c98239e9b155ffe0c4d",
+      "file": "을-motion-b.png"
+    },
+    {
+      "day": "병인",
+      "label": "wave",
+      "time": 3,
+      "angle": 0.6,
+      "pixels": "81cdf3abd0140d76725b3be7c30515fb601ff4ee0ee2dda8d71ccf0823a767fa",
+      "file": "병-wave.png"
+    },
+    {
+      "day": "병인",
+      "label": "front",
+      "time": 2.25,
+      "angle": 0,
+      "pixels": "b6ce17f62f1a9064899f4c78b56c5d9dd2f9df7a4c402e5087cb278169452827",
+      "file": "병-front.png"
+    },
+    {
+      "day": "병인",
+      "label": "side",
+      "time": 2.25,
+      "angle": 1.5707963267948966,
+      "pixels": "ee567cd213a27998c11870957ed9fd073496c29800906c250fef1c5cc0318cee",
+      "file": "병-side.png"
+    },
+    {
+      "day": "병인",
+      "label": "motion-a",
+      "time": 1.8,
+      "angle": 0.6,
+      "pixels": "91ae3324e0f9baee77ac7ec2b02391e0805d540852bbaea6286e58e2f171680f",
+      "file": "병-motion-a.png"
+    },
+    {
+      "day": "병인",
+      "label": "motion-b",
+      "time": 2.8,
+      "angle": 0.6,
+      "pixels": "9ed709f1b5969a017b1fbdc9e275694ae1e3b5f431cce8caac523c0a05a02500",
+      "file": "병-motion-b.png"
+    },
+    {
+      "day": "정묘",
+      "label": "wave",
+      "time": 3,
+      "angle": 0.6,
+      "pixels": "983cea1f70b25dcaa80786e5065413fe0179e0d2615a9b3d76afb2e1169fcf45",
+      "file": "정-wave.png"
+    },
+    {
+      "day": "정묘",
+      "label": "front",
+      "time": 2.25,
+      "angle": 0,
+      "pixels": "e0661c4a99f8b3d6cd51819947403b713ce6449611c4c1f4ecc4e4696b5d6b01",
+      "file": "정-front.png"
+    },
+    {
+      "day": "정묘",
+      "label": "side",
+      "time": 2.25,
+      "angle": 1.5707963267948966,
+      "pixels": "531deaf22a27dea9d80242737c2def0995bcef7c7b90468cadb60130aaa5c392",
+      "file": "정-side.png"
+    },
+    {
+      "day": "정묘",
+      "label": "motion-a",
+      "time": 1.8,
+      "angle": 0.6,
+      "pixels": "b365a544d79afeaa7624f4d57abea3b4edce314b656625d94c05ff9c4dd19018",
+      "file": "정-motion-a.png"
+    },
+    {
+      "day": "정묘",
+      "label": "motion-b",
+      "time": 2.8,
+      "angle": 0.6,
+      "pixels": "bd4a771ed74013c765e7fbe7c5f98aa7fae8184bc70f762282ceb330470e9456",
+      "file": "정-motion-b.png"
+    },
+    {
+      "day": "무진",
+      "label": "wave",
+      "time": 3,
+      "angle": 0.6,
+      "pixels": "8963a153f79060423e569e16e038348f0e170c20f2de926ab867ae34c4494665",
+      "file": "무-wave.png"
+    },
+    {
+      "day": "무진",
+      "label": "front",
+      "time": 2.25,
+      "angle": 0,
+      "pixels": "133b262c16bdba768c81c87a657b84a234fcf07184cd867a2a8f872f270670ea",
+      "file": "무-front.png"
+    },
+    {
+      "day": "무진",
+      "label": "side",
+      "time": 2.25,
+      "angle": 1.5707963267948966,
+      "pixels": "dc9cf53269a6997ec7156582ab09761d847905ff12c65138d58ae1d6db4efec6",
+      "file": "무-side.png"
+    },
+    {
+      "day": "무진",
+      "label": "motion-a",
+      "time": 1.8,
+      "angle": 0.6,
+      "pixels": "172db88c9047b1d9d2d9946bc58981d68e4a18939e215fa571e7f103fac3e7a7",
+      "file": "무-motion-a.png"
+    },
+    {
+      "day": "무진",
+      "label": "motion-b",
+      "time": 2.8,
+      "angle": 0.6,
+      "pixels": "af63c71a612f8537014f57e044f889553c73049d7b096bf232a53f6d26610eb9",
+      "file": "무-motion-b.png"
+    },
+    {
+      "day": "기사",
+      "label": "wave",
+      "time": 3,
+      "angle": 0.6,
+      "pixels": "a55d1d83dcf5deae80faeec94927a8bd38520ab66f878742e7124b0a087b1c2f",
+      "file": "기-wave.png"
+    },
+    {
+      "day": "경오",
+      "label": "wave",
+      "time": 3,
+      "angle": 0.6,
+      "pixels": "79a359bc8dfc6052682abf45d2306d5dc021fbeaa9c956da597428fac03d1d2e",
+      "file": "경-wave.png"
+    },
+    {
+      "day": "신미",
+      "label": "wave",
+      "time": 3,
+      "angle": 0.6,
+      "pixels": "dc49fc82d8e99adf2dfccbb0a1b3dbc18b8e6e579ca8d420738d9d65acf576ec",
+      "file": "신-wave.png"
+    },
+    {
+      "day": "임신",
+      "label": "wave",
+      "time": 3,
+      "angle": 0.6,
+      "pixels": "88f7a73f996fde66ac9e47c7047f83c584cbc46ee8f4cbeb3a9a352a750676fb",
+      "file": "임-wave.png"
+    },
+    {
+      "day": "계유",
+      "label": "wave",
+      "time": 3,
+      "angle": 0.6,
+      "pixels": "a5ffba9db9bd7ed0ef44b96b23c47f75377bfdab3ea992c5f59135df745dada9",
+      "file": "계-wave.png"
+    },
+    {
+      "day": "계유",
+      "label": "front",
+      "time": 2.25,
+      "angle": 0,
+      "pixels": "0f66f8670c259a3675579d93bccb2a2e11d022aa8c154bc611c5a80b5b5b7c49",
+      "file": "계-front.png"
+    },
+    {
+      "day": "계유",
+      "label": "side",
+      "time": 2.25,
+      "angle": 1.5707963267948966,
+      "pixels": "773c4470d54ba95fcff20e46c0a6c053a3a842aa9359dcddeae9716fc0ea881f",
+      "file": "계-side.png"
+    },
+    {
+      "day": "계유",
+      "label": "motion-a",
+      "time": 1.8,
+      "angle": 0.6,
+      "pixels": "f9791895f5d34e2a09768cb8b85a271ce386d1f5cab7c5b9ce4a87c787bb74b9",
+      "file": "계-motion-a.png"
+    },
+    {
+      "day": "계유",
+      "label": "motion-b",
+      "time": 2.8,
+      "angle": 0.6,
+      "pixels": "830c4268e7d8dca8baf59717782ab0162674d3785ae97a3e2e13b1826e00260e",
+      "file": "계-motion-b.png"
+    }
+  ],
+  "timings": [
+    {
+      "day": "갑자",
+      "quality": "low",
+      "medianMs": 0.10000000149011612,
+      "p95Ms": 0.30000000447034836,
+      "scope": "CPU update only on Chromium SwiftShader host; not physical mobile FPS"
+    },
+    {
+      "day": "을축",
+      "quality": "low",
+      "medianMs": 0.4000000059604645,
+      "p95Ms": 0.6000000014901161,
+      "scope": "CPU update only on Chromium SwiftShader host; not physical mobile FPS"
+    },
+    {
+      "day": "병인",
+      "quality": "low",
+      "medianMs": 0.19999999552965164,
+      "p95Ms": 0.4000000059604645,
+      "scope": "CPU update only on Chromium SwiftShader host; not physical mobile FPS"
+    },
+    {
+      "day": "정묘",
+      "quality": "low",
+      "medianMs": 0.10000000149011612,
+      "p95Ms": 0.20000000298023224,
+      "scope": "CPU update only on Chromium SwiftShader host; not physical mobile FPS"
+    },
+    {
+      "day": "무진",
+      "quality": "low",
+      "medianMs": 0,
+      "p95Ms": 0.29999999701976776,
+      "scope": "CPU update only on Chromium SwiftShader host; not physical mobile FPS"
+    },
+    {
+      "day": "기사",
+      "quality": "low",
+      "medianMs": 0,
+      "p95Ms": 0.10000000149011612,
+      "scope": "CPU update only on Chromium SwiftShader host; not physical mobile FPS"
+    },
+    {
+      "day": "경오",
+      "quality": "low",
+      "medianMs": 0,
+      "p95Ms": 0.09999999403953552,
+      "scope": "CPU update only on Chromium SwiftShader host; not physical mobile FPS"
+    },
+    {
+      "day": "신미",
+      "quality": "low",
+      "medianMs": 0,
+      "p95Ms": 0.10000000149011612,
+      "scope": "CPU update only on Chromium SwiftShader host; not physical mobile FPS"
+    },
+    {
+      "day": "임신",
+      "quality": "low",
+      "medianMs": 0,
+      "p95Ms": 0.10000000149011612,
+      "scope": "CPU update only on Chromium SwiftShader host; not physical mobile FPS"
+    },
+    {
+      "day": "계유",
+      "quality": "low",
+      "medianMs": 0.10000000149011612,
+      "p95Ms": 0.20000000298023224,
+      "scope": "CPU update only on Chromium SwiftShader host; not physical mobile FPS"
+    },
+    {
+      "day": "갑자",
+      "quality": "high",
+      "medianMs": 0.19999999552965164,
+      "p95Ms": 0.30000000447034836,
+      "scope": "CPU update only on Chromium SwiftShader host; not physical mobile FPS"
+    },
+    {
+      "day": "을축",
+      "quality": "high",
+      "medianMs": 1,
+      "p95Ms": 1.7000000029802322,
+      "scope": "CPU update only on Chromium SwiftShader host; not physical mobile FPS"
+    },
+    {
+      "day": "병인",
+      "quality": "high",
+      "medianMs": 0.29999999701976776,
+      "p95Ms": 0.4000000059604645,
+      "scope": "CPU update only on Chromium SwiftShader host; not physical mobile FPS"
+    },
+    {
+      "day": "정묘",
+      "quality": "high",
+      "medianMs": 0.10000000149011612,
+      "p95Ms": 0.20000000298023224,
+      "scope": "CPU update only on Chromium SwiftShader host; not physical mobile FPS"
+    },
+    {
+      "day": "무진",
+      "quality": "high",
+      "medianMs": 0.10000000149011612,
+      "p95Ms": 0.20000000298023224,
+      "scope": "CPU update only on Chromium SwiftShader host; not physical mobile FPS"
+    },
+    {
+      "day": "기사",
+      "quality": "high",
+      "medianMs": 0,
+      "p95Ms": 0.10000000149011612,
+      "scope": "CPU update only on Chromium SwiftShader host; not physical mobile FPS"
+    },
+    {
+      "day": "경오",
+      "quality": "high",
+      "medianMs": 0,
+      "p95Ms": 0.10000000149011612,
+      "scope": "CPU update only on Chromium SwiftShader host; not physical mobile FPS"
+    },
+    {
+      "day": "신미",
+      "quality": "high",
+      "medianMs": 0,
+      "p95Ms": 0.10000000149011612,
+      "scope": "CPU update only on Chromium SwiftShader host; not physical mobile FPS"
+    },
+    {
+      "day": "임신",
+      "quality": "high",
+      "medianMs": 0,
+      "p95Ms": 0.10000000149011612,
+      "scope": "CPU update only on Chromium SwiftShader host; not physical mobile FPS"
+    },
+    {
+      "day": "계유",
+      "quality": "high",
+      "medianMs": 0.20000000298023224,
+      "p95Ms": 0.30000000447034836,
+      "scope": "CPU update only on Chromium SwiftShader host; not physical mobile FPS"
+    }
+  ],
+  "memory": {
+    "geometries": 1,
+    "textures": 5
+  },
+  "errors": [],
+  "outbound": [],
+  "harnessSHA256": "d911fbd13ff287a2024de274e318f3e302b4e13be9ff5eb58376faa81018c830",
+  "limits": [
+    "Actual Three WebGL with production loader/GLB/materials/shadow lighting; Chromium SwiftShader",
+    "No physical mobile GPU performance certification",
+    "No hosted signed-in screenshot; no hosted access bypass"
+  ]
+}

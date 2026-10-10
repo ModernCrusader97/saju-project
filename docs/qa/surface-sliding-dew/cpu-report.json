@@ -1,0 +1,76 @@
+{
+  "sourceHash": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+  "sourceBytes": 4293332,
+  "implementation": "surface-sliding-dew",
+  "tests": [
+    "downward-surface-slide",
+    "plane-contact-clearance",
+    "absolute-time-death-rebirth",
+    "quality-budget-and-material",
+    "paused-rotation-nonuniform-binding",
+    "local-mask-stable-restoration",
+    "actual-glb-triangle-contact-and-preservation",
+    "actual-morph-attachment-and-restoration",
+    "full-cycle-continuity-and-cpu-budget",
+    "idempotent-owned-disposal",
+    "invalid-inputs"
+  ],
+  "measurements": {
+    "flatSurfaceSlide": 0.26946941018104553,
+    "minimumPlaneClearance": 0.00015050077990963473,
+    "rebirthsOver42Seconds": 3,
+    "budgets": {
+      "low": 48,
+      "high": 80,
+      "lowTrianglesPerBead": 80,
+      "highTrianglesPerBead": 168
+    },
+    "nonuniformNormalDot": 0.9999999999999997,
+    "nonuniformClearance": 0.0002528215393035799,
+    "localMask": {
+      "hiddenCount": 1,
+      "unchangedCount": 79
+    },
+    "approvedBody": {
+      "contactCount": 125,
+      "maxTravel": 0.26121098299227485,
+      "crossedTriangles": 54,
+      "minNormalDot": 0.999999999999999,
+      "minClearance": 0.00019328262454793718,
+      "attributeHashes": {
+        "position": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+        "normal": "80706bee870329a0829113e63ed178f0a904029265da2c96c69ad50f9b1f9cec",
+        "uv": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+        "index": "934286d3bdd9361657e390c41762923871cec85a48a7d9775b362aee02dc7830"
+      }
+    },
+    "preservedWaveMorph": {
+      "weight": 0.65,
+      "maximumMorphMotion": 0.10409627212922512,
+      "movedArmBeads": 2,
+      "minDot": 0.9999999999999994,
+      "maxBarycentricContactError": 1.1425214830077857e-7
+    },
+    "cpuUpdateBudget": {
+      "low": {
+        "beads": 48,
+        "frames": 480,
+        "seconds": 16,
+        "constructionMs": 207.15195100000028,
+        "meanUpdateMs": 0.04220757291666739,
+        "p95UpdateMs": 0.062241999999969266,
+        "maximumVisibleStep": 0.004501237798781656
+      },
+      "high": {
+        "beads": 80,
+        "frames": 480,
+        "seconds": 16,
+        "constructionMs": 206.2071619999997,
+        "meanUpdateMs": 0.0655946020833331,
+        "p95UpdateMs": 0.07587100000000646,
+        "maximumVisibleStep": 0.004501237798781656
+      }
+    }
+  },
+  "success": true
+}

@@ -72,7 +72,7 @@ export default function PlanetStudioPage() {
           <p className="identity-line">{mode === "spirit" ? profile.speciesTitle : "일주와 월주가 하나의 표면에서 만나요."}</p>
           {mode === "spirit" ? <>
             <div className="identity-traits">{profile.personalityTraits.map(trait => <span key={trait}>{trait}</span>)}</div>
-            <p>{dayKey.charAt(0) === "을" ? "부드러운 비취빛이 각 부분에서 피고 사라지는 정령이에요." : profile.conceptDesc}</p>
+            <p>{profile.conceptDesc}</p>
             <dl className="identity-facts"><div><dt>나의 정령</dt><dd>일간 {dayKey.charAt(0)} · {profile.speciesTitle}</dd></div>
               <div><dt>월령 배경</dt><dd>{monthKey} · {month.themeName}</dd></div>
               <div><dt>곁의 작은 펫</dt><dd>일지 {dayKey.charAt(1)} · {animal}</dd></div></dl>

@@ -1,21 +1,28 @@
 import * as THREE from 'three';
 export interface SurfaceAnchor { mesh: THREE.Mesh; triangle: number; barycentric: THREE.Vector3 }
 export interface SurfacePose { position: THREE.Vector3; normal: THREE.Vector3 }
+export interface MeshSurfaceOptions { allowMorphTargets?: boolean }
 interface Face { mesh: THREE.Mesh; triangle: number; a: THREE.Vector3; b: THREE.Vector3; c: THREE.Vector3; cumulative: number }
 const fract = (n:number) => n-Math.floor(n);
 export const seeded = (n:number):number => fract(Math.sin(n*127.1+311.7)*43758.5453123);
-/** Static geometry, moving rigid transforms and neutral morphs. Barycentric
- * positions use actual triangle planes; active deformation requires a rebuild. */
+/** Static topology and moving transforms. The explicit morph option resolves
+ * actual posed vertices while sampling/walking still uses the reference pose. */
 export class MeshSurface {
   private faces: Face[] = [];
   private byMesh = new Map<THREE.Mesh, Face[]>();
   private pathNormals = new Map<THREE.Mesh, Float64Array>();
   private total = 0;
+  private a = new THREE.Vector3();
+  private b = new THREE.Vector3();
+  private c = new THREE.Vector3();
+  private relative = new THREE.Matrix4();
+  private normalMatrix = new THREE.Matrix3();
   readonly bounds = new THREE.Box3();
-  constructor(readonly meshes: THREE.Mesh[]) {
+  constructor(readonly meshes: THREE.Mesh[], private options: MeshSurfaceOptions = {}) {
     if (!meshes.length) throw new RangeError('At least one mesh surface is required.');
     for (const mesh of meshes) {
-      if ((mesh as THREE.SkinnedMesh).isSkinnedMesh || (mesh as THREE.InstancedMesh).isInstancedMesh || mesh.morphTargetInfluences?.some(weight => weight !== 0)) throw new Error('Rigid Mesh surfaces with neutral morphs only.');
+      if ((mesh as THREE.SkinnedMesh).isSkinnedMesh || (mesh as THREE.InstancedMesh).isInstancedMesh ||
+        (!options.allowMorphTargets && mesh.morphTargetInfluences?.some(weight => weight !== 0))) throw new Error('Rigid Mesh surfaces with neutral morphs only.');
       const p = mesh.geometry.getAttribute('position');
       if (!p) throw new Error('Mesh requires position geometry.');
       mesh.updateWorldMatrix(true,false);
@@ -47,16 +54,21 @@ export class MeshSurface {
   resolve(anchor:SurfaceAnchor, root:THREE.Object3D, target?:SurfacePose):SurfacePose {
     const out=target??{position:new THREE.Vector3(),normal:new THREE.Vector3()};
     const mesh=anchor.mesh, p=mesh.geometry.getAttribute('position'), index=mesh.geometry.index;
-    if (mesh.morphTargetInfluences?.some(weight => weight !== 0)) throw new Error('Surface attachment requires neutral morphs.');
-    const ids=[0,1,2].map(i=>index?index.getX(anchor.triangle*3+i):anchor.triangle*3+i);
-    const [a,b,c]=ids.map(i=>new THREE.Vector3().fromBufferAttribute(p,i));
+    if (!this.options.allowMorphTargets && mesh.morphTargetInfluences?.some(weight => weight !== 0)) throw new Error('Surface attachment requires neutral morphs.');
+    const {a,b,c,relative,normalMatrix}=this;
+    const vertex=(offset:number,out:THREE.Vector3)=>{
+      const id=index?index.getX(anchor.triangle*3+offset):anchor.triangle*3+offset;
+      if(this.options.allowMorphTargets)mesh.getVertexPosition(id,out);
+      else out.fromBufferAttribute(p,id);
+    };
+    vertex(0,a);vertex(1,b);vertex(2,c);
     out.position.copy(a).multiplyScalar(anchor.barycentric.x).addScaledVector(b,anchor.barycentric.y).addScaledVector(c,anchor.barycentric.z);
     // Geometric normals ensure attachment to actual polygon, avoiding interpolated-normal drift.
     out.normal.crossVectors(b.sub(a),c.sub(a)).normalize();
     mesh.updateWorldMatrix(true,false);root.updateWorldMatrix(true,false);
-    const relative=new THREE.Matrix4().copy(root.matrixWorld).invert().multiply(mesh.matrixWorld);
+    relative.copy(root.matrixWorld).invert().multiply(mesh.matrixWorld);
     if (Math.abs(relative.determinant())<1e-14) throw new Error('Surface transforms must be invertible.');
-    out.position.applyMatrix4(relative);out.normal.applyNormalMatrix(new THREE.Matrix3().getNormalMatrix(relative));
+    out.position.applyMatrix4(relative);out.normal.applyNormalMatrix(normalMatrix.getNormalMatrix(relative));
     return out;
   }
   /** Short local surface crawl. Restricts projection to the SAME mesh and similar facing triangles. */
