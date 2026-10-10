@@ -1,0 +1,54 @@
+{
+  "basis": "dd6fff0fe9701e3a190d14694ace10d517ca4a29",
+  "branch": "fix/saved-detail-analysis-response-20261010",
+  "productChange": "Read data.fortune.analysis and reject missing/non-object/array values before storing the selected detail. Existing error text and retry path are reused.",
+  "before": {
+    "passed": 3,
+    "failed": 6,
+    "exitCode": 1
+  },
+  "after": {
+    "passed": 9,
+    "failed": 0,
+    "exitCode": 0
+  },
+  "detailDOMRegression": {
+    "passed": 9,
+    "failed": 0,
+    "exitCode": 0
+  },
+  "types": {
+    "command": "node_modules/.bin/tsc --noEmit --incremental false",
+    "exitCode": 0
+  },
+  "build": {
+    "command": "npm run build",
+    "exitCode": 0,
+    "before": "Verified dd6fff0 completed own build reused via candidate-only symlink; removed before correction build.",
+    "after": "Fresh candidate production build."
+  },
+  "scopedLint": {
+    "exitCode": 0,
+    "samePageMessages": true,
+    "pageErrors": 0,
+    "pageWarnings": 0,
+    "newScriptErrors": 0,
+    "newScriptWarnings": 0
+  },
+  "diffCheck": {
+    "exitCode": 0
+  },
+  "validReadingScreenshotsByteIdentical": true,
+  "validReadingScreenshotSHA256": "fd8b2005b0106016f8f2db7021036b1352557fcd1090733fcd203933115d86c8",
+  "visualInspection": [
+    "Actual before missing-analysis framework fallback",
+    "Actual after existing detail error and retry button",
+    "Actual after retry recovery to selected B reading"
+  ],
+  "scope": "All 698 preexisting tracked files compared: 697 byte identical; only the saved page analysis guard differs.",
+  "limits": [
+    "Only missing/non-object required analysis is guarded; not a full validator for every nested FortuneResult field.",
+    "Synthetic intercepted GET responses; no claim that real private user records were corrupted. No API write, actual user DB, chat or external AI executed.",
+    "Native Chromium only. Physical devices, screen readers, other browsers, hosted authentication and calendar accuracy not tested."
+  ]
+}

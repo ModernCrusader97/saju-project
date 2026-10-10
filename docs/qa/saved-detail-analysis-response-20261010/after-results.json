@@ -1,0 +1,223 @@
+{
+  "basis": "dd6fff0fe9701e3a190d14694ace10d517ca4a29",
+  "phase": "after",
+  "applicationSourceSHA256": "90c9943a5960b6989de6529ec03622d19b253ca632ff35dd3debf75f3ac2c107",
+  "passed": 9,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "matching-ID missing analysis stays retryable and recovers to the selected reading",
+      "status": "PASS"
+    },
+    {
+      "name": "matching-ID null analysis stays retryable and recovers to the selected reading",
+      "status": "PASS"
+    },
+    {
+      "name": "matching-ID string analysis stays retryable and recovers to the selected reading",
+      "status": "PASS"
+    },
+    {
+      "name": "matching-ID number analysis stays retryable and recovers to the selected reading",
+      "status": "PASS"
+    },
+    {
+      "name": "matching-ID boolean analysis stays retryable and recovers to the selected reading",
+      "status": "PASS"
+    },
+    {
+      "name": "matching-ID array analysis stays retryable and recovers to the selected reading",
+      "status": "PASS"
+    },
+    {
+      "name": "unknown birth time retains its valid object analysis and missing-hour presentation",
+      "status": "PASS"
+    },
+    {
+      "name": "legacy lunar result without optional solar conversion remains readable",
+      "status": "PASS"
+    },
+    {
+      "name": "no unexpected API requests or outbound calls",
+      "status": "PASS"
+    }
+  ],
+  "observations": [
+    {
+      "name": "matching-ID missing analysis stays retryable and recovers to the selected reading",
+      "errors": [],
+      "consoleErrors": [],
+      "requests": [
+        {
+          "path": "/api/saju",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/a",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/b",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/b",
+          "method": "GET"
+        }
+      ]
+    },
+    {
+      "name": "matching-ID null analysis stays retryable and recovers to the selected reading",
+      "errors": [],
+      "consoleErrors": [],
+      "requests": [
+        {
+          "path": "/api/saju",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/a",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/b",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/b",
+          "method": "GET"
+        }
+      ]
+    },
+    {
+      "name": "matching-ID string analysis stays retryable and recovers to the selected reading",
+      "errors": [],
+      "consoleErrors": [],
+      "requests": [
+        {
+          "path": "/api/saju",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/a",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/b",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/b",
+          "method": "GET"
+        }
+      ]
+    },
+    {
+      "name": "matching-ID number analysis stays retryable and recovers to the selected reading",
+      "errors": [],
+      "consoleErrors": [],
+      "requests": [
+        {
+          "path": "/api/saju",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/a",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/b",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/b",
+          "method": "GET"
+        }
+      ]
+    },
+    {
+      "name": "matching-ID boolean analysis stays retryable and recovers to the selected reading",
+      "errors": [],
+      "consoleErrors": [],
+      "requests": [
+        {
+          "path": "/api/saju",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/a",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/b",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/b",
+          "method": "GET"
+        }
+      ]
+    },
+    {
+      "name": "matching-ID array analysis stays retryable and recovers to the selected reading",
+      "errors": [],
+      "consoleErrors": [],
+      "requests": [
+        {
+          "path": "/api/saju",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/a",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/b",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/b",
+          "method": "GET"
+        }
+      ]
+    },
+    {
+      "name": "unknown birth time retains its valid object analysis and missing-hour presentation",
+      "errors": [],
+      "consoleErrors": [],
+      "requests": [
+        {
+          "path": "/api/saju",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/a",
+          "method": "GET"
+        }
+      ]
+    },
+    {
+      "name": "legacy lunar result without optional solar conversion remains readable",
+      "errors": [],
+      "consoleErrors": [],
+      "requests": [
+        {
+          "path": "/api/saju",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/a",
+          "method": "GET"
+        }
+      ]
+    }
+  ],
+  "unexpectedApi": [],
+  "outbound": [],
+  "limits": [
+    "Actual built Saved page, FortuneCard and client router in Chromium at 390x844.",
+    "Only missing or non-object required analysis is under test; this does not validate every nested FortuneResult field.",
+    "Summary/detail GETs are synthetic intercepted fixtures. No real user DB, API writes, chat or external AI runs.",
+    "Physical devices, screen readers, other browsers, hosted authentication and calendar accuracy are not tested."
+  ]
+}

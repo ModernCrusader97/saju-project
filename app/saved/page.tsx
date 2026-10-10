@@ -71,7 +71,8 @@ function SavedContent() {
       .then(async (res) => {
         const data = await readApiResponse(res);
         if (!res.ok) throw new Error(data.error || "기록을 불러오지 못했습니다.");
-        if (!data.fortune || data.fortune.id !== queryId) throw new Error("요청한 기록을 확인할 수 없습니다.");
+        const analysis = data.fortune?.analysis;
+        if (!data.fortune || data.fortune.id !== queryId || !analysis || typeof analysis !== "object" || Array.isArray(analysis)) throw new Error("요청한 기록을 확인할 수 없습니다.");
         return data.fortune;
       })
       .then((fortune) => { if (!controller.signal.aborted) setDetails(previous => new Map(previous).set(queryId, fortune)); })

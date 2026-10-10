@@ -1,0 +1,223 @@
+{
+  "basis": "dd6fff0fe9701e3a190d14694ace10d517ca4a29",
+  "phase": "before",
+  "applicationSourceSHA256": "30f92245ffff3d5489d6e52975acb18ae51b1f421355527a1f0086b827e1b5de",
+  "passed": 3,
+  "failed": 6,
+  "checks": [
+    {
+      "name": "matching-ID missing analysis stays retryable and recovers to the selected reading",
+      "status": "FAIL",
+      "error": "invalid analysis must use the existing retryable detail error\n\n0 !== 1\n"
+    },
+    {
+      "name": "matching-ID null analysis stays retryable and recovers to the selected reading",
+      "status": "FAIL",
+      "error": "invalid analysis must use the existing retryable detail error\n\n0 !== 1\n"
+    },
+    {
+      "name": "matching-ID string analysis stays retryable and recovers to the selected reading",
+      "status": "FAIL",
+      "error": "invalid analysis must use the existing retryable detail error\n\n0 !== 1\n"
+    },
+    {
+      "name": "matching-ID number analysis stays retryable and recovers to the selected reading",
+      "status": "FAIL",
+      "error": "invalid analysis must use the existing retryable detail error\n\n0 !== 1\n"
+    },
+    {
+      "name": "matching-ID boolean analysis stays retryable and recovers to the selected reading",
+      "status": "FAIL",
+      "error": "invalid analysis must use the existing retryable detail error\n\n0 !== 1\n"
+    },
+    {
+      "name": "matching-ID array analysis stays retryable and recovers to the selected reading",
+      "status": "FAIL",
+      "error": "invalid analysis must use the existing retryable detail error\n\n0 !== 1\n"
+    },
+    {
+      "name": "unknown birth time retains its valid object analysis and missing-hour presentation",
+      "status": "PASS"
+    },
+    {
+      "name": "legacy lunar result without optional solar conversion remains readable",
+      "status": "PASS"
+    },
+    {
+      "name": "no unexpected API requests or outbound calls",
+      "status": "PASS"
+    }
+  ],
+  "observations": [
+    {
+      "name": "matching-ID missing analysis stays retryable and recovers to the selected reading",
+      "errors": [],
+      "consoleErrors": [
+        "TypeError: Cannot read properties of undefined (reading 'hourPillar')\n    at Me (http://127.0.0.1:40587/_next/static/chunks/FortuneCard-ilQVSAtd.js:2:20818)\n    at Oo (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:47494)\n    at yc (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:69918)\n    at Ic (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:80174)\n    at Mu (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:115478)\n    at ku (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:114561)\n    at Ou (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:114400)\n    at gu (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:111269)\n    at cd (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:122765)\n    at MessagePort.ie (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:1:12908)",
+        "The above error occurred in a React component:\n\n    at Me (http://127.0.0.1:40587/_next/static/chunks/FortuneCard-ilQVSAtd.js:2:20750)\n    at div (<anonymous>)\n    at div (<anonymous>)\n    at v (http://127.0.0.1:40587/_next/static/chunks/page-BIyvW7rD.js:1:1590)\n    at Suspense (<anonymous>)\n    at div (<anonymous>)\n    at y (<anonymous>)\n    at Xn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:16307)\n    at Qn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:17705)\n    at o (http://127.0.0.1:40587/_next/static/chunks/layout-segment-context-DBLIKwSo.js:1:263)\n    at kt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:4781)\n    at At (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:5253)\n    at un (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:11229)\n    at fn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:12165)\n    at Pt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:6301)\n    at Ft (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:6840)\n    at $n (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:18026)\n    at main (<anonymous>)\n    at div (<anonymous>)\n    at body (<anonymous>)\n    at html (<anonymous>)\n    at Xn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:16307)\n    at Qn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:17705)\n    at o (http://127.0.0.1:40587/_next/static/chunks/layout-segment-context-DBLIKwSo.js:1:263)\n    at jt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:5338)\n    at Mt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:6028)\n    at jt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:5338)\n    at Nt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:6145)\n    at Xn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:16307)\n    at Qn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:17705)\n    at M (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:110393)\n    at kt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:4781)\n    at At (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:5253)\n    at Pp (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:33:35693)\n    at dn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:12078)\n    at jt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:5338)\n    at Nt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:6145)\n    at Ip (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:33:36217)"
+      ],
+      "requests": [
+        {
+          "path": "/api/saju",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/a",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/b",
+          "method": "GET"
+        }
+      ]
+    },
+    {
+      "name": "matching-ID null analysis stays retryable and recovers to the selected reading",
+      "errors": [],
+      "consoleErrors": [
+        "TypeError: Cannot read properties of null (reading 'hourPillar')\n    at Me (http://127.0.0.1:40587/_next/static/chunks/FortuneCard-ilQVSAtd.js:2:20818)\n    at Oo (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:47494)\n    at yc (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:69918)\n    at Ic (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:80174)\n    at Mu (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:115478)\n    at ku (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:114561)\n    at Ou (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:114400)\n    at gu (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:111269)\n    at cd (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:122765)\n    at MessagePort.ie (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:1:12908)",
+        "The above error occurred in a React component:\n\n    at Me (http://127.0.0.1:40587/_next/static/chunks/FortuneCard-ilQVSAtd.js:2:20750)\n    at div (<anonymous>)\n    at div (<anonymous>)\n    at v (http://127.0.0.1:40587/_next/static/chunks/page-BIyvW7rD.js:1:1590)\n    at Suspense (<anonymous>)\n    at div (<anonymous>)\n    at y (<anonymous>)\n    at Xn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:16307)\n    at Qn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:17705)\n    at o (http://127.0.0.1:40587/_next/static/chunks/layout-segment-context-DBLIKwSo.js:1:263)\n    at kt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:4781)\n    at At (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:5253)\n    at un (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:11229)\n    at fn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:12165)\n    at Pt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:6301)\n    at Ft (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:6840)\n    at $n (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:18026)\n    at main (<anonymous>)\n    at div (<anonymous>)\n    at body (<anonymous>)\n    at html (<anonymous>)\n    at Xn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:16307)\n    at Qn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:17705)\n    at o (http://127.0.0.1:40587/_next/static/chunks/layout-segment-context-DBLIKwSo.js:1:263)\n    at jt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:5338)\n    at Mt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:6028)\n    at jt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:5338)\n    at Nt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:6145)\n    at Xn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:16307)\n    at Qn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:17705)\n    at M (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:110393)\n    at kt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:4781)\n    at At (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:5253)\n    at Pp (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:33:35693)\n    at dn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:12078)\n    at jt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:5338)\n    at Nt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:6145)\n    at Ip (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:33:36217)"
+      ],
+      "requests": [
+        {
+          "path": "/api/saju",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/a",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/b",
+          "method": "GET"
+        }
+      ]
+    },
+    {
+      "name": "matching-ID string analysis stays retryable and recovers to the selected reading",
+      "errors": [],
+      "consoleErrors": [
+        "TypeError: Cannot read properties of undefined (reading 'wood')\n    at Me (http://127.0.0.1:40587/_next/static/chunks/FortuneCard-ilQVSAtd.js:2:24730)\n    at Oo (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:47494)\n    at yc (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:69918)\n    at Ic (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:80174)\n    at Mu (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:115478)\n    at ku (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:114561)\n    at Ou (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:114400)\n    at gu (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:111269)\n    at cd (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:122765)\n    at MessagePort.ie (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:1:12908)",
+        "The above error occurred in a React component:\n\n    at Me (http://127.0.0.1:40587/_next/static/chunks/FortuneCard-ilQVSAtd.js:2:20750)\n    at div (<anonymous>)\n    at div (<anonymous>)\n    at v (http://127.0.0.1:40587/_next/static/chunks/page-BIyvW7rD.js:1:1590)\n    at Suspense (<anonymous>)\n    at div (<anonymous>)\n    at y (<anonymous>)\n    at Xn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:16307)\n    at Qn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:17705)\n    at o (http://127.0.0.1:40587/_next/static/chunks/layout-segment-context-DBLIKwSo.js:1:263)\n    at kt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:4781)\n    at At (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:5253)\n    at un (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:11229)\n    at fn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:12165)\n    at Pt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:6301)\n    at Ft (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:6840)\n    at $n (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:18026)\n    at main (<anonymous>)\n    at div (<anonymous>)\n    at body (<anonymous>)\n    at html (<anonymous>)\n    at Xn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:16307)\n    at Qn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:17705)\n    at o (http://127.0.0.1:40587/_next/static/chunks/layout-segment-context-DBLIKwSo.js:1:263)\n    at jt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:5338)\n    at Mt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:6028)\n    at jt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:5338)\n    at Nt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:6145)\n    at Xn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:16307)\n    at Qn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:17705)\n    at M (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:110393)\n    at kt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:4781)\n    at At (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:5253)\n    at Pp (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:33:35693)\n    at dn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:12078)\n    at jt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:5338)\n    at Nt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:6145)\n    at Ip (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:33:36217)"
+      ],
+      "requests": [
+        {
+          "path": "/api/saju",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/a",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/b",
+          "method": "GET"
+        }
+      ]
+    },
+    {
+      "name": "matching-ID number analysis stays retryable and recovers to the selected reading",
+      "errors": [],
+      "consoleErrors": [
+        "TypeError: Cannot read properties of undefined (reading 'wood')\n    at Me (http://127.0.0.1:40587/_next/static/chunks/FortuneCard-ilQVSAtd.js:2:24730)\n    at Oo (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:47494)\n    at yc (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:69918)\n    at Ic (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:80174)\n    at Mu (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:115478)\n    at ku (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:114561)\n    at Ou (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:114400)\n    at gu (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:111269)\n    at cd (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:122765)\n    at MessagePort.ie (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:1:12908)",
+        "The above error occurred in a React component:\n\n    at Me (http://127.0.0.1:40587/_next/static/chunks/FortuneCard-ilQVSAtd.js:2:20750)\n    at div (<anonymous>)\n    at div (<anonymous>)\n    at v (http://127.0.0.1:40587/_next/static/chunks/page-BIyvW7rD.js:1:1590)\n    at Suspense (<anonymous>)\n    at div (<anonymous>)\n    at y (<anonymous>)\n    at Xn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:16307)\n    at Qn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:17705)\n    at o (http://127.0.0.1:40587/_next/static/chunks/layout-segment-context-DBLIKwSo.js:1:263)\n    at kt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:4781)\n    at At (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:5253)\n    at un (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:11229)\n    at fn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:12165)\n    at Pt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:6301)\n    at Ft (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:6840)\n    at $n (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:18026)\n    at main (<anonymous>)\n    at div (<anonymous>)\n    at body (<anonymous>)\n    at html (<anonymous>)\n    at Xn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:16307)\n    at Qn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:17705)\n    at o (http://127.0.0.1:40587/_next/static/chunks/layout-segment-context-DBLIKwSo.js:1:263)\n    at jt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:5338)\n    at Mt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:6028)\n    at jt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:5338)\n    at Nt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:6145)\n    at Xn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:16307)\n    at Qn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:17705)\n    at M (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:110393)\n    at kt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:4781)\n    at At (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:5253)\n    at Pp (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:33:35693)\n    at dn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:12078)\n    at jt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:5338)\n    at Nt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:6145)\n    at Ip (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:33:36217)"
+      ],
+      "requests": [
+        {
+          "path": "/api/saju",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/a",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/b",
+          "method": "GET"
+        }
+      ]
+    },
+    {
+      "name": "matching-ID boolean analysis stays retryable and recovers to the selected reading",
+      "errors": [],
+      "consoleErrors": [
+        "TypeError: Cannot read properties of undefined (reading 'wood')\n    at Me (http://127.0.0.1:40587/_next/static/chunks/FortuneCard-ilQVSAtd.js:2:24730)\n    at Oo (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:47494)\n    at yc (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:69918)\n    at Ic (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:80174)\n    at Mu (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:115478)\n    at ku (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:114561)\n    at Ou (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:114400)\n    at gu (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:111269)\n    at cd (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:122765)\n    at MessagePort.ie (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:1:12908)",
+        "The above error occurred in a React component:\n\n    at Me (http://127.0.0.1:40587/_next/static/chunks/FortuneCard-ilQVSAtd.js:2:20750)\n    at div (<anonymous>)\n    at div (<anonymous>)\n    at v (http://127.0.0.1:40587/_next/static/chunks/page-BIyvW7rD.js:1:1590)\n    at Suspense (<anonymous>)\n    at div (<anonymous>)\n    at y (<anonymous>)\n    at Xn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:16307)\n    at Qn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:17705)\n    at o (http://127.0.0.1:40587/_next/static/chunks/layout-segment-context-DBLIKwSo.js:1:263)\n    at kt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:4781)\n    at At (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:5253)\n    at un (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:11229)\n    at fn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:12165)\n    at Pt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:6301)\n    at Ft (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:6840)\n    at $n (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:18026)\n    at main (<anonymous>)\n    at div (<anonymous>)\n    at body (<anonymous>)\n    at html (<anonymous>)\n    at Xn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:16307)\n    at Qn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:17705)\n    at o (http://127.0.0.1:40587/_next/static/chunks/layout-segment-context-DBLIKwSo.js:1:263)\n    at jt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:5338)\n    at Mt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:6028)\n    at jt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:5338)\n    at Nt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:6145)\n    at Xn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:16307)\n    at Qn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:17705)\n    at M (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:110393)\n    at kt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:4781)\n    at At (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:5253)\n    at Pp (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:33:35693)\n    at dn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:12078)\n    at jt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:5338)\n    at Nt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:6145)\n    at Ip (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:33:36217)"
+      ],
+      "requests": [
+        {
+          "path": "/api/saju",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/a",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/b",
+          "method": "GET"
+        }
+      ]
+    },
+    {
+      "name": "matching-ID array analysis stays retryable and recovers to the selected reading",
+      "errors": [],
+      "consoleErrors": [
+        "TypeError: Cannot read properties of undefined (reading 'wood')\n    at Me (http://127.0.0.1:40587/_next/static/chunks/FortuneCard-ilQVSAtd.js:2:24730)\n    at Oo (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:47494)\n    at yc (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:69918)\n    at Ic (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:80174)\n    at Mu (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:115478)\n    at ku (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:114561)\n    at Ou (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:114400)\n    at gu (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:111269)\n    at cd (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:8:122765)\n    at MessagePort.ie (http://127.0.0.1:40587/_next/static/chunks/framework-D_rUT4EX.js:1:12908)",
+        "The above error occurred in a React component:\n\n    at Me (http://127.0.0.1:40587/_next/static/chunks/FortuneCard-ilQVSAtd.js:2:20750)\n    at div (<anonymous>)\n    at div (<anonymous>)\n    at v (http://127.0.0.1:40587/_next/static/chunks/page-BIyvW7rD.js:1:1590)\n    at Suspense (<anonymous>)\n    at div (<anonymous>)\n    at y (<anonymous>)\n    at Xn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:16307)\n    at Qn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:17705)\n    at o (http://127.0.0.1:40587/_next/static/chunks/layout-segment-context-DBLIKwSo.js:1:263)\n    at kt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:4781)\n    at At (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:5253)\n    at un (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:11229)\n    at fn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:12165)\n    at Pt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:6301)\n    at Ft (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:6840)\n    at $n (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:18026)\n    at main (<anonymous>)\n    at div (<anonymous>)\n    at body (<anonymous>)\n    at html (<anonymous>)\n    at Xn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:16307)\n    at Qn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:17705)\n    at o (http://127.0.0.1:40587/_next/static/chunks/layout-segment-context-DBLIKwSo.js:1:263)\n    at jt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:5338)\n    at Mt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:6028)\n    at jt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:5338)\n    at Nt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:6145)\n    at Xn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:16307)\n    at Qn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:17705)\n    at M (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:110393)\n    at kt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:4781)\n    at At (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:5253)\n    at Pp (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:33:35693)\n    at dn (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:12078)\n    at jt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:5338)\n    at Nt (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:32:6145)\n    at Ip (http://127.0.0.1:40587/_next/static/chunks/index-UVrbxinV.js:33:36217)"
+      ],
+      "requests": [
+        {
+          "path": "/api/saju",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/a",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/b",
+          "method": "GET"
+        }
+      ]
+    },
+    {
+      "name": "unknown birth time retains its valid object analysis and missing-hour presentation",
+      "errors": [],
+      "consoleErrors": [],
+      "requests": [
+        {
+          "path": "/api/saju",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/a",
+          "method": "GET"
+        }
+      ]
+    },
+    {
+      "name": "legacy lunar result without optional solar conversion remains readable",
+      "errors": [],
+      "consoleErrors": [],
+      "requests": [
+        {
+          "path": "/api/saju",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/a",
+          "method": "GET"
+        }
+      ]
+    }
+  ],
+  "unexpectedApi": [],
+  "outbound": [],
+  "limits": [
+    "Actual built Saved page, FortuneCard and client router in Chromium at 390x844.",
+    "Only missing or non-object required analysis is under test; this does not validate every nested FortuneResult field.",
+    "Summary/detail GETs are synthetic intercepted fixtures. No real user DB, API writes, chat or external AI runs.",
+    "Physical devices, screen readers, other browsers, hosted authentication and calendar accuracy are not tested."
+  ]
+}
