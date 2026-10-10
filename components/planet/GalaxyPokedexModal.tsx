@@ -84,6 +84,7 @@ export default function GalaxyPokedexModal({
           </div>
           <button
             onClick={onClose}
+            aria-label="도감 닫기"
             className="p-1.5 rounded-full bg-white/10 hover:bg-white/20 text-white/70 hover:text-white transition-all"
           >
             <X className="h-4 w-4" />

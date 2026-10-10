@@ -1,0 +1,20 @@
+{
+  "status": "PASS_ONE_PRODUCT_ATTRIBUTE_ONLY",
+  "basis": "f13750ac8776bd360b9b1e9ad6d66de4e8a2e0a2",
+  "branch": "fix/pokedex-close-accessible-name-20261010-joseph",
+  "product": "components/planet/GalaxyPokedexModal.tsx",
+  "only_modified_preexisting_file": "components/planet/GalaxyPokedexModal.tsx",
+  "added_product_lines": 1,
+  "reverse_patch_native_byte_exact": true,
+  "all_610_other_preexisting_entries_preserved_except_product": true,
+  "preexisting_tracked_entries": 610,
+  "source_before_sha256": "e3647934694334564530ab7d8a50f5adf56ba58eb832c70aa07ef0c5de485640",
+  "source_after_sha256": "46dcf806c0f04250c399228fe5d440c08ff3a6b088acda99cc38e58fce2afdca",
+  "previous_completed_records_read": 10,
+  "previous_suites_rerun": 0,
+  "current_consumer": "app/guin/[id]/page.tsx:660",
+  "clean_owned_checkout_reused": true,
+  "old_branch_refs_and_external_checkouts_protected_by_postcommit_receipt": true,
+  "models_default_auth_billing_permissions_db_unchanged": true,
+  "git_line_endings": "Existing core.autocrlf retained. Native product CRLF canonicalizes to Git LF. New evidence uses -text; original raw .log output uses -diff without changing its bytes."
+}

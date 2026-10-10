@@ -1,0 +1,10 @@
+{
+  "status": "INITIAL_VALIDATION_HELPER_FAILED_BEFORE_BUILD_OR_TYPES",
+  "stage": "Windows native-path comparison in the lint report assembler",
+  "error_type": "TypeError",
+  "exact_error": "Cannot read properties of undefined (reading 'messages')",
+  "source": "authoring/validate_pokedex.mjs:17",
+  "cause": "ESLint returned native Windows backslash filePath; helper compared it literally to a forward-slash path. Both lint error-count assertions had passed. Build/types were not reached.",
+  "correction": "Normalize both paths with path.resolve before matching product/QA results. No product/QA behavior, lint rule or suppression changed.",
+  "original_helper_retained": true
+}

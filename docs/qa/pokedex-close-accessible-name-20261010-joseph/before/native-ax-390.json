@@ -1,0 +1,21 @@
+{
+  "buttons": [
+    {
+      "role": "button",
+      "name": "",
+      "backendDOMNodeId": 27
+    }
+  ],
+  "text": "60간지 우주 도감 (Galaxy Pokedex)\n\nCOLLECTED SPIRITS: 0 / 10 SPECIES\n\nLevel 1 · 성간 원시 성단 (Proto Cluster)\n행성 0개 안착\n\n나의 중심별과 인연들이 태동하는 작은 성단입니다.\n\n행성 3개 수집 시 '나선 은하'로 진화!\n\n나의 은하에 모인 10대 수호 정령\n(0/10)\n갑 (양)\n\n미발견 정령\n\n친구 초대 필요\n\n???\n을 (음)\n\n미발견 정령\n\n친구 초대 필요\n\n???\n병 (양)\n\n미발견 정령\n\n친구 초대 필요\n\n???\n정 (음)\n\n미발견 정령\n\n친구 초대 필요\n\n???\n무 (양)\n\n미발견 정령\n\n친구 초대 필요\n\n???\n기 (음)\n\n미발견 정령\n\n친구 초대 필요\n\n???\n경 (양)\n\n미발견 정령\n\n친구 초대 필요\n\n???\n신 (음)\n\n미발견 정령\n\n친구 초대 필요\n\n???\n임 (양)\n\n미발견 정령\n\n친구 초대 필요\n\n???\n계 (음)\n\n미발견 정령\n\n친구 초대 필요\n\n???",
+  "geometry": {
+    "x": 321,
+    "y": 89.203125,
+    "width": 28,
+    "height": 28,
+    "color": "rgba(255, 255, 255, 0.7)",
+    "backgroundColor": "rgba(255, 255, 255, 0.1)",
+    "display": "block"
+  },
+  "collection_count": 0,
+  "screenshot_sha256": "024a21a5c47d95555212c14d429035807264da8e86bcea357de83bd1f478052f"
+}

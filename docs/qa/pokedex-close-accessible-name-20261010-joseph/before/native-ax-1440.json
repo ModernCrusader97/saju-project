@@ -1,0 +1,21 @@
+{
+  "buttons": [
+    {
+      "role": "button",
+      "name": "",
+      "backendDOMNodeId": 27
+    }
+  ],
+  "text": "60간지 우주 도감 (Galaxy Pokedex)\n\nCOLLECTED SPIRITS: 10 / 10 SPECIES\n\nLevel 3 · 4대 나선팔 대은하 (Grand 4-Arm Galaxy)\n행성 10개 안착\n\n황금빛 은하핵과 42,000개 항성이 찬란하게 회전하는 완성형 대은하입니다!\n\n최고 등급 은하 달성! 우주 도감 10종 완성을 향해 달려보세요.\n\n나의 은하에 모인 10대 수호 정령\n(10/10)\n갑 (양)\n\n갑목\n\n곧게 자라는 숲의 기운\n\n#우직함\n을 (음)\n\n을목\n\n유연하게 뻗는 가지의 기운\n\n#유연함\n병 (양)\n\n병화\n\n환하게 타오르는 불의 기운\n\n#활력\n정 (음)\n\n정화\n\n깊고 은은한 불의 기운\n\n#온기\n무 (양)\n\n무토\n\n단단하게 받쳐 주는 대지의 기운\n\n#신뢰\n기 (음)\n\n기토\n\n생명을 품는 흙의 기운\n\n#다정함\n경 (양)\n\n경금\n\n곧고 선명한 금속의 기운\n\n#의리\n신 (음)\n\n신금\n\n정교하게 빛나는 금속의 기운\n\n#정교함\n임 (양)\n\n임수\n\n크고 자유로운 물의 기운\n\n#지혜\n계 (음)\n\n계수\n\n맑고 섬세한 물의 기운\n\n#공감",
+  "geometry": {
+    "x": 923,
+    "y": 130.015625,
+    "width": 28,
+    "height": 28,
+    "color": "rgba(255, 255, 255, 0.7)",
+    "backgroundColor": "rgba(255, 255, 255, 0.1)",
+    "display": "block"
+  },
+  "collection_count": 10,
+  "screenshot_sha256": "055368dc41db2e65dd169dfd3df5b1bbed03087a64e074810fb175f91da42f11"
+}

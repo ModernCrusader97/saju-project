@@ -1,0 +1,65 @@
+{
+  "status": "FAIL",
+  "phase": "before",
+  "at_utc": "2026-10-10T23:00:32.115Z",
+  "browser": "154.0.8037.98",
+  "product": "components/planet/GalaxyPokedexModal.tsx",
+  "source_sha256": "e3647934694334564530ab7d8a50f5adf56ba58eb832c70aa07ef0c5de485640",
+  "harness_sha256": "e698afcebb0f1f62607d1e73fea617244287f61a195256acd44639072a679fc6",
+  "css_sha256": "f455acbc02ae6740a95b9ee2da3aeb77d70fdb906ae45ef504a55b7eb3c83387",
+  "passed": 4,
+  "failed": 2,
+  "checks": [
+    {
+      "name": "native AX close button name 390",
+      "pass": false,
+      "error": "The actual native accessibility tree must expose a descriptive collection close button.\n\n'' !== '도감 닫기'\n"
+    },
+    {
+      "name": "native AX close button name 1440",
+      "pass": false,
+      "error": "The actual native accessibility tree must expose a descriptive collection close button.\n\n'' !== '도감 닫기'\n"
+    },
+    {
+      "name": "native Enter close once 390",
+      "observed": {
+        "close_calls": 1,
+        "closed_listener_removed": true
+      },
+      "pass": true
+    },
+    {
+      "name": "native Space close once 1440",
+      "observed": {
+        "close_calls": 1,
+        "closed_listener_removed": true
+      },
+      "pass": true
+    },
+    {
+      "name": "native backdrop click closes once",
+      "observed": {
+        "close_calls": 1
+      },
+      "pass": true
+    },
+    {
+      "name": "inside click preserves modal then native Escape closes once",
+      "observed": {
+        "inside_click_closes": 0,
+        "escape_close_calls": 1
+      },
+      "pass": true
+    }
+  ],
+  "page_errors": [],
+  "console_errors": [],
+  "outbound_requests": [],
+  "api_requests": 0,
+  "database_operations": 0,
+  "actual_native_chrome_AX": true,
+  "actual_native_keyboard_and_pointer": true,
+  "manual_keyboard_or_AX_event_dispatches": 0,
+  "synthetic_collection_only": true,
+  "scope": "Actual current production-mode React collection component and native AX tree, with synthetic 0/1/10-person data and actual Tailwind styles. No full built-app route, hosted auth/DB, screen reader, mobile hardware or model-render claim."
+}

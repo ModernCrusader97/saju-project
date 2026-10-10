@@ -1,0 +1,44 @@
+{
+  "status": "PASS_UI_SCREEN_BYTES_TEXT_GEOMETRY_CSS_IDENTICAL_ONLY_AX_NAME_CHANGED",
+  "screens": [
+    {
+      "width": 390,
+      "height": 844,
+      "bytes": 87094,
+      "sha256": "024a21a5c47d95555212c14d429035807264da8e86bcea357de83bd1f478052f",
+      "png_bytes_and_pixels_identical": true,
+      "displayed_text_identical": true,
+      "button_geometry_and_computed_colors_identical": true,
+      "native_button_name_before": "",
+      "native_button_name_after": "도감 닫기"
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "bytes": 136235,
+      "sha256": "055368dc41db2e65dd169dfd3df5b1bbed03087a64e074810fb175f91da42f11",
+      "png_bytes_and_pixels_identical": true,
+      "displayed_text_identical": true,
+      "button_geometry_and_computed_colors_identical": true,
+      "native_button_name_before": "",
+      "native_button_name_after": "도감 닫기"
+    }
+  ],
+  "css_sha256": "f455acbc02ae6740a95b9ee2da3aeb77d70fdb906ae45ef504a55b7eb3c83387",
+  "identical_harness_sha256": "e698afcebb0f1f62607d1e73fea617244287f61a195256acd44639072a679fc6",
+  "before": {
+    "passed": 4,
+    "failed": 2
+  },
+  "after": {
+    "passed": 6,
+    "failed": 0
+  },
+  "old_suites_rerun": 0,
+  "pixel_proof": "The complete PNG files are byte-identical, so their decoded pixels are identical.",
+  "visual_review": [
+    "before/dialog-390.png",
+    "after/dialog-390.png"
+  ],
+  "limits": "Actual current production-mode React collection component and native AX tree, with synthetic 0/1/10-person data and actual Tailwind styles. No full built-app route, hosted auth/DB, screen reader, mobile hardware or model-render claim."
+}

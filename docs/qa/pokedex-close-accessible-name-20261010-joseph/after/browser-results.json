@@ -1,0 +1,103 @@
+{
+  "status": "PASS",
+  "phase": "after",
+  "at_utc": "2026-10-10T23:02:36.433Z",
+  "browser": "154.0.8037.98",
+  "product": "components/planet/GalaxyPokedexModal.tsx",
+  "source_sha256": "46dcf806c0f04250c399228fe5d440c08ff3a6b088acda99cc38e58fce2afdca",
+  "harness_sha256": "e698afcebb0f1f62607d1e73fea617244287f61a195256acd44639072a679fc6",
+  "css_sha256": "f455acbc02ae6740a95b9ee2da3aeb77d70fdb906ae45ef504a55b7eb3c83387",
+  "passed": 6,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "native AX close button name 390",
+      "observed": {
+        "buttons": [
+          {
+            "role": "button",
+            "name": "도감 닫기",
+            "backendDOMNodeId": 26
+          }
+        ],
+        "collected": 0,
+        "geometry": {
+          "x": 321,
+          "y": 89.203125,
+          "width": 28,
+          "height": 28,
+          "color": "rgba(255, 255, 255, 0.7)",
+          "backgroundColor": "rgba(255, 255, 255, 0.1)",
+          "display": "block"
+        },
+        "screenshot_sha256": "024a21a5c47d95555212c14d429035807264da8e86bcea357de83bd1f478052f"
+      },
+      "pass": true
+    },
+    {
+      "name": "native AX close button name 1440",
+      "observed": {
+        "buttons": [
+          {
+            "role": "button",
+            "name": "도감 닫기",
+            "backendDOMNodeId": 26
+          }
+        ],
+        "collected": 10,
+        "geometry": {
+          "x": 923,
+          "y": 130.015625,
+          "width": 28,
+          "height": 28,
+          "color": "rgba(255, 255, 255, 0.7)",
+          "backgroundColor": "rgba(255, 255, 255, 0.1)",
+          "display": "block"
+        },
+        "screenshot_sha256": "055368dc41db2e65dd169dfd3df5b1bbed03087a64e074810fb175f91da42f11"
+      },
+      "pass": true
+    },
+    {
+      "name": "native Enter close once 390",
+      "observed": {
+        "close_calls": 1,
+        "closed_listener_removed": true
+      },
+      "pass": true
+    },
+    {
+      "name": "native Space close once 1440",
+      "observed": {
+        "close_calls": 1,
+        "closed_listener_removed": true
+      },
+      "pass": true
+    },
+    {
+      "name": "native backdrop click closes once",
+      "observed": {
+        "close_calls": 1
+      },
+      "pass": true
+    },
+    {
+      "name": "inside click preserves modal then native Escape closes once",
+      "observed": {
+        "inside_click_closes": 0,
+        "escape_close_calls": 1
+      },
+      "pass": true
+    }
+  ],
+  "page_errors": [],
+  "console_errors": [],
+  "outbound_requests": [],
+  "api_requests": 0,
+  "database_operations": 0,
+  "actual_native_chrome_AX": true,
+  "actual_native_keyboard_and_pointer": true,
+  "manual_keyboard_or_AX_event_dispatches": 0,
+  "synthetic_collection_only": true,
+  "scope": "Actual current production-mode React collection component and native AX tree, with synthetic 0/1/10-person data and actual Tailwind styles. No full built-app route, hosted auth/DB, screen reader, mobile hardware or model-render claim."
+}

@@ -1,0 +1,24 @@
+{
+  "status": "PASS_ONE_ACCESSIBLE_NAME_LINE_MINIMAL_FIX",
+  "basis": "f13750ac8776bd360b9b1e9ad6d66de4e8a2e0a2",
+  "branch": "fix/pokedex-close-accessible-name-20261010-joseph",
+  "product": "components/planet/GalaxyPokedexModal.tsx",
+  "before_sha256": "e3647934694334564530ab7d8a50f5adf56ba58eb832c70aa07ef0c5de485640",
+  "after_sha256": "46dcf806c0f04250c399228fe5d440c08ff3a6b088acda99cc38e58fce2afdca",
+  "added_product_lines": 1,
+  "oldBlock": "          <button\r\n            onClick={onClose}\r\n            className=",
+  "newBlock": "          <button\r\n            onClick={onClose}\r\n            aria-label=\"도감 닫기\"\r\n            className=",
+  "reverse_patch_recreates_original_native_source_byte_exact": true,
+  "source_bytes_outside_added_label_unchanged": true,
+  "styles_labels_displayed_data_handlers_models_api_db_unchanged": true,
+  "actual_before_native_ax_button_names": [
+    "",
+    ""
+  ],
+  "actual_existing_consumer": "app/guin/[id]/page.tsx:660",
+  "before_native_result": {
+    "passed": 4,
+    "failed": 2
+  },
+  "cause": "The icon-only X close button has no text or accessible label; native Chromium exposes its button name as empty. Adding a descriptive aria-label supplies the native AX name without changing visual DOM content or event handlers."
+}
