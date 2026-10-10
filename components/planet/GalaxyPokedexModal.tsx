@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { TEN_STEM_SPIRITS } from "@/lib/planet/elemental-spirit";
 import { GuinPerson } from "@/lib/saju/types";
 import { X, Sparkles, Trophy, CheckCircle2, Lock } from "lucide-react";
@@ -16,14 +16,24 @@ export default function GalaxyPokedexModal({
   isOpen,
   onClose,
 }: GalaxyPokedexModalProps) {
+  const closeButton = useRef<HTMLButtonElement>(null);
+
   useEffect(() => {
+    if (!isOpen) return;
+    const opener = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+    closeButton.current?.focus({ preventScroll: true });
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
+      if (e.key === "Tab") {
+        e.preventDefault();
+        closeButton.current?.focus({ preventScroll: true });
+      }
     };
-    if (isOpen) {
-      window.addEventListener("keydown", handleKeyDown);
-    }
-    return () => window.removeEventListener("keydown", handleKeyDown);
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+      if (opener?.isConnected) opener.focus({ preventScroll: true });
+    };
   }, [isOpen, onClose]);
 
   if (!isOpen) return null;
@@ -83,6 +93,7 @@ export default function GalaxyPokedexModal({
             </div>
           </div>
           <button
+            ref={closeButton}
             onClick={onClose}
             aria-label="도감 닫기"
             className="p-1.5 rounded-full bg-white/10 hover:bg-white/20 text-white/70 hover:text-white transition-all"

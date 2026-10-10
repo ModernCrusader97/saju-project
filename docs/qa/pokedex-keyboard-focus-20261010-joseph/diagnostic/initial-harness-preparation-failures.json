@@ -1,0 +1,22 @@
+{
+  "status": "TWO_HELPER_SETUP_FAILURES_BEFORE_BROWSER_OR_PRODUCT_CHANGE",
+  "failures": [
+    {
+      "type": "SyntaxError",
+      "exact_error": "missing ) after argument list",
+      "location": "pokedex-keyboard-focus-browser.mjs:64",
+      "raw_log": "before-browser-process.log",
+      "cause": "The close-return await check callback was missing its closing );."
+    },
+    {
+      "type": "AssertionError",
+      "exact_error": "2 !== 3",
+      "location": "prepare_focus_harness_v2.mjs:6",
+      "cause": "The first callback was already correct; only one bad callback matched. This helper exited before writing a correction."
+    }
+  ],
+  "correction": "Close the one callback, use bounded native Tabs to reach the close button, and report AX=false. Original sources and captured raw initial process log retained.",
+  "actual_browser_launched": false,
+  "product_changed": false,
+  "old_qa_run": false
+}

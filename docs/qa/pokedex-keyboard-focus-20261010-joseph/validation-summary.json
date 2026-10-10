@@ -1,0 +1,68 @@
+{
+  "status": "PASS_ONE_DISTINCT_POKEDEX_KEYBOARD_FOCUS_FIX",
+  "host": "Joseph",
+  "basis": "60f2f9c7f003667e71683a4e35d94871d23745f5",
+  "branch": "fix/pokedex-keyboard-focus-20261010-joseph",
+  "product": "components/planet/GalaxyPokedexModal.tsx",
+  "consumer": "app/guin/[id]/page.tsx:660",
+  "problem": "Opening leaves active focus behind the visible collection overlay; Tab/Shift+Tab reach background controls, and native Enter-close loses focus to body.",
+  "fix": "Focus existing close control on open, contain Tab/Shift+Tab on the current sole interactive control, remove the listener on cleanup and restore a connected opener with preventScroll.",
+  "product_diff": {
+    "insertions": 16,
+    "deletions": 5,
+    "modified_preexisting_files": 1
+  },
+  "before": {
+    "passed": 2,
+    "failed": 8
+  },
+  "after": {
+    "passed": 10,
+    "failed": 0
+  },
+  "actual_browser": "154.0.8037.98",
+  "viewports": [
+    390,
+    1440
+  ],
+  "actual_native_keyboard_pointer_focus": true,
+  "manual_event_dispatches": 0,
+  "previous_AX_close_name_suite_rerun": false,
+  "previous_close_label_unchanged": true,
+  "actual_same_harness_and_css": true,
+  "identical_opening_PNG_files_and_pixels": 2,
+  "unexpected_page_errors": 0,
+  "console_errors": 0,
+  "outbound_requests": 0,
+  "api_requests": 0,
+  "database_operations": 0,
+  "types": {
+    "exit_code": 0,
+    "nonincremental": true,
+    "after_own_build": true
+  },
+  "build": {
+    "exit_code": 0,
+    "own_current_branch_run": true,
+    "no_install_or_deployment": true
+  },
+  "lint": {
+    "errors": 0,
+    "unchanged_existing_product_warnings": 1,
+    "new_qa_warnings": 0,
+    "config_rules_suppressions_unchanged": true,
+    "warning_locations_shift_only_from_new_lines": true
+  },
+  "source_reverse_patch_byte_exact": true,
+  "previous_completed_records_reused": 11,
+  "preexisting_tracked_entries": 637,
+  "scope": "docs/qa/pokedex-keyboard-focus-20261010-joseph",
+  "models_default_auth_billing_permissions_db_unchanged": true,
+  "private_repo_fresh_read_verified": true,
+  "initial_helper_failures_preserved": "diagnostic; original/failed/final scripts retained in D: authoring",
+  "limits": [
+    "Actual production-mode React collection component and native keyboard focus, with synthetic empty collection and actual Tailwind. No prior name tests, built full-app route, hosted auth/DB, physical keyboard/screen-reader/mobile or model-render claim.",
+    "This modal currently has one focusable control. No full-app-route, real DB, physical keyboard or screen-reader session claim."
+  ],
+  "remaining_blockers": []
+}

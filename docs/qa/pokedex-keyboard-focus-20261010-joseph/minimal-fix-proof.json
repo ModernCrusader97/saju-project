@@ -1,0 +1,27 @@
+{
+  "status": "PASS_FOCUS_LIFECYCLE_ONLY_SOURCE_PROOF",
+  "basis": "60f2f9c7f003667e71683a4e35d94871d23745f5",
+  "branch": "fix/pokedex-keyboard-focus-20261010-joseph",
+  "product": "components/planet/GalaxyPokedexModal.tsx",
+  "before_sha256": "46dcf806c0f04250c399228fe5d440c08ff3a6b088acda99cc38e58fce2afdca",
+  "after_sha256": "3606a887f5781959e52b833a0eea63a718c7348b66bef472eac336eb1fd0bc85",
+  "changes": [
+    {
+      "from": "import React, { useEffect } from \"react\";",
+      "to": "import React, { useEffect, useRef } from \"react\";"
+    },
+    {
+      "from": "  useEffect(() => {\r\n    const handleKeyDown = (e: KeyboardEvent) => {\r\n      if (e.key === \"Escape\") onClose();\r\n    };\r\n    if (isOpen) {\r\n      window.addEventListener(\"keydown\", handleKeyDown);\r\n    }\r\n    return () => window.removeEventListener(\"keydown\", handleKeyDown);\r\n  }, [isOpen, onClose]);",
+      "to": "  const closeButton = useRef<HTMLButtonElement>(null);\r\n\r\n  useEffect(() => {\r\n    if (!isOpen) return;\r\n    const opener = document.activeElement instanceof HTMLElement ? document.activeElement : null;\r\n    closeButton.current?.focus({ preventScroll: true });\r\n    const handleKeyDown = (e: KeyboardEvent) => {\r\n      if (e.key === \"Escape\") onClose();\r\n      if (e.key === \"Tab\") {\r\n        e.preventDefault();\r\n        closeButton.current?.focus({ preventScroll: true });\r\n      }\r\n    };\r\n    window.addEventListener(\"keydown\", handleKeyDown);\r\n    return () => {\r\n      window.removeEventListener(\"keydown\", handleKeyDown);\r\n      if (opener?.isConnected) opener.focus({ preventScroll: true });\r\n    };\r\n  }, [isOpen, onClose]);"
+    },
+    {
+      "from": "          <button\r\n            onClick={onClose}",
+      "to": "          <button\r\n            ref={closeButton}\r\n            onClick={onClose}"
+    }
+  ],
+  "reverse_native_source_byte_exact": true,
+  "previous_close_label_unchanged": true,
+  "displayed_labels_styles_collection_data_callbacks_escape_and_models_unchanged": true,
+  "only_new_behavior": "Opening focuses the existing close button; Tab/Shift+Tab stay on the only interactive modal control; cleanup removes its listener and restores a connected opener without scrolling.",
+  "only_modified_preexisting_file": "components/planet/GalaxyPokedexModal.tsx"
+}

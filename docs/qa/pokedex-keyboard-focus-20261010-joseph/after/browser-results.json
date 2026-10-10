@@ -1,0 +1,120 @@
+{
+  "status": "PASS",
+  "phase": "after",
+  "at_utc": "2026-10-10T23:32:34.096Z",
+  "browser": "154.0.8037.98",
+  "product": "components/planet/GalaxyPokedexModal.tsx",
+  "source_sha256": "3606a887f5781959e52b833a0eea63a718c7348b66bef472eac336eb1fd0bc85",
+  "harness_sha256": "a94e9db0167d1676f26eba7fd35f6d2d6e191c2bb47b5cb45baf616c55f635c1",
+  "css_sha256": "f455acbc02ae6740a95b9ee2da3aeb77d70fdb906ae45ef504a55b7eb3c83387",
+  "passed": 10,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "focus stays in collection opening 390",
+      "observed": {
+        "inside": true,
+        "active_tag": "BUTTON",
+        "active_name": "도감 닫기",
+        "close_calls": 0
+      },
+      "pass": true
+    },
+    {
+      "name": "focus stays in collection Tab 390",
+      "observed": {
+        "inside": true,
+        "active_tag": "BUTTON",
+        "active_name": "도감 닫기",
+        "close_calls": 0
+      },
+      "pass": true
+    },
+    {
+      "name": "focus stays in collection Shift+Tab 390",
+      "observed": {
+        "inside": true,
+        "active_tag": "BUTTON",
+        "active_name": "도감 닫기",
+        "close_calls": 0
+      },
+      "pass": true
+    },
+    {
+      "name": "close returns focus and releases Tab Escape 390",
+      "observed": {
+        "returned_to_opener": true,
+        "closed_tab_released": true,
+        "close_calls": 1
+      },
+      "pass": true
+    },
+    {
+      "name": "close returns focus and releases Tab Enter 390",
+      "observed": {
+        "returned_to_opener": true,
+        "closed_tab_released": true,
+        "close_calls": 1
+      },
+      "pass": true
+    },
+    {
+      "name": "focus stays in collection opening 1440",
+      "observed": {
+        "inside": true,
+        "active_tag": "BUTTON",
+        "active_name": "도감 닫기",
+        "close_calls": 0
+      },
+      "pass": true
+    },
+    {
+      "name": "focus stays in collection Tab 1440",
+      "observed": {
+        "inside": true,
+        "active_tag": "BUTTON",
+        "active_name": "도감 닫기",
+        "close_calls": 0
+      },
+      "pass": true
+    },
+    {
+      "name": "focus stays in collection Shift+Tab 1440",
+      "observed": {
+        "inside": true,
+        "active_tag": "BUTTON",
+        "active_name": "도감 닫기",
+        "close_calls": 0
+      },
+      "pass": true
+    },
+    {
+      "name": "close returns focus and releases Tab Escape 1440",
+      "observed": {
+        "returned_to_opener": true,
+        "closed_tab_released": true,
+        "close_calls": 1
+      },
+      "pass": true
+    },
+    {
+      "name": "close returns focus and releases Tab Enter 1440",
+      "observed": {
+        "returned_to_opener": true,
+        "closed_tab_released": true,
+        "close_calls": 1
+      },
+      "pass": true
+    }
+  ],
+  "page_errors": [],
+  "console_errors": [],
+  "outbound_requests": [],
+  "api_requests": 0,
+  "database_operations": 0,
+  "actual_native_chrome_AX": false,
+  "actual_native_keyboard_and_pointer": true,
+  "manual_keyboard_or_AX_event_dispatches": 0,
+  "synthetic_collection_only": true,
+  "scope": "Actual production-mode React collection component and native keyboard focus, with synthetic empty collection and actual Tailwind. No prior name tests, built full-app route, hosted auth/DB, physical keyboard/screen-reader/mobile or model-render claim."
+}

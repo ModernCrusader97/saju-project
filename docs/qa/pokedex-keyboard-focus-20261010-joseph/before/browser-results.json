@@ -1,0 +1,82 @@
+{
+  "status": "FAIL",
+  "phase": "before",
+  "at_utc": "2026-10-10T23:30:45.090Z",
+  "browser": "154.0.8037.98",
+  "product": "components/planet/GalaxyPokedexModal.tsx",
+  "source_sha256": "46dcf806c0f04250c399228fe5d440c08ff3a6b088acda99cc38e58fce2afdca",
+  "harness_sha256": "a94e9db0167d1676f26eba7fd35f6d2d6e191c2bb47b5cb45baf616c55f635c1",
+  "css_sha256": "f455acbc02ae6740a95b9ee2da3aeb77d70fdb906ae45ef504a55b7eb3c83387",
+  "passed": 2,
+  "failed": 8,
+  "checks": [
+    {
+      "name": "focus stays in collection opening 390",
+      "pass": false,
+      "error": "Active focus must remain inside the visible collection overlay.\n\nfalse !== true\n"
+    },
+    {
+      "name": "focus stays in collection Tab 390",
+      "pass": false,
+      "error": "Active focus must remain inside the visible collection overlay.\n\nfalse !== true\n"
+    },
+    {
+      "name": "focus stays in collection Shift+Tab 390",
+      "pass": false,
+      "error": "Active focus must remain inside the visible collection overlay.\n\nfalse !== true\n"
+    },
+    {
+      "name": "close returns focus and releases Tab Escape 390",
+      "observed": {
+        "returned_to_opener": true,
+        "closed_tab_released": true,
+        "close_calls": 1
+      },
+      "pass": true
+    },
+    {
+      "name": "close returns focus and releases Tab Enter 390",
+      "pass": false,
+      "error": "Closing the modal must return keyboard focus to its opener.\n\nfalse !== true\n"
+    },
+    {
+      "name": "focus stays in collection opening 1440",
+      "pass": false,
+      "error": "Active focus must remain inside the visible collection overlay.\n\nfalse !== true\n"
+    },
+    {
+      "name": "focus stays in collection Tab 1440",
+      "pass": false,
+      "error": "Active focus must remain inside the visible collection overlay.\n\nfalse !== true\n"
+    },
+    {
+      "name": "focus stays in collection Shift+Tab 1440",
+      "pass": false,
+      "error": "Active focus must remain inside the visible collection overlay.\n\nfalse !== true\n"
+    },
+    {
+      "name": "close returns focus and releases Tab Escape 1440",
+      "observed": {
+        "returned_to_opener": true,
+        "closed_tab_released": true,
+        "close_calls": 1
+      },
+      "pass": true
+    },
+    {
+      "name": "close returns focus and releases Tab Enter 1440",
+      "pass": false,
+      "error": "Closing the modal must return keyboard focus to its opener.\n\nfalse !== true\n"
+    }
+  ],
+  "page_errors": [],
+  "console_errors": [],
+  "outbound_requests": [],
+  "api_requests": 0,
+  "database_operations": 0,
+  "actual_native_chrome_AX": false,
+  "actual_native_keyboard_and_pointer": true,
+  "manual_keyboard_or_AX_event_dispatches": 0,
+  "synthetic_collection_only": true,
+  "scope": "Actual production-mode React collection component and native keyboard focus, with synthetic empty collection and actual Tailwind. No prior name tests, built full-app route, hosted auth/DB, physical keyboard/screen-reader/mobile or model-render claim."
+}

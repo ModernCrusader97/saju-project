@@ -1,0 +1,26 @@
+{
+  "status": "PASS_IDENTICAL_OPENING_UI_PNG_BYTES_AND_CSS",
+  "screens": [
+    {
+      "width": 390,
+      "height": 844,
+      "bytes": 87056,
+      "sha256": "02c57a11afb64a92f41ace1ec95369f9e98c6a3c334b27f2ff0187779c473fff",
+      "png_bytes_and_pixels_identical": true
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "bytes": 116438,
+      "sha256": "2c4dd4846aacd2c446f9b00b380af3c38bad0328624cf98b1024eb9bd14c2257",
+      "png_bytes_and_pixels_identical": true
+    }
+  ],
+  "css_sha256": "f455acbc02ae6740a95b9ee2da3aeb77d70fdb906ae45ef504a55b7eb3c83387",
+  "harness_sha256": "a94e9db0167d1676f26eba7fd35f6d2d6e191c2bb47b5cb45baf616c55f635c1",
+  "native_focus_observations_changed": true,
+  "visual_review": [
+    "before/opening-390.png",
+    "after/opening-390.png"
+  ]
+}
