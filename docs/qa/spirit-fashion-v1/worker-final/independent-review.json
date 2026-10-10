@@ -1,0 +1,395 @@
+{
+  "review": "Independent read-only fashion timing and assertion review",
+  "reviewedAtUTC": "2026-10-10T03:54:14.894Z",
+  "workspace": "/workspace/saju-spirit-fashion-slots-20261010",
+  "sourceHEAD": "57f5939ea65a46047b817fc91a2d4345f23b04a4",
+  "builtWorkerSHA256": "cbe4bf8a8d70e5f7b30c75b70c28330f8d77ebcd1797d96fb013d37e40fb26ab",
+  "finalHarnessSHA256": "cec2769294363c3ff69507a047d814a50484569d8ca01859989efaab5f561344",
+  "findings": [],
+  "verdict": "No Critical/Important findings. Corrected strict 40-outfit exact-Worker validation passed within recorded QA-host limits.",
+  "timing": {
+    "metric": "Exclusive synchronous fashion.set wall time after subtracting harness-added getError/isBuffer intervals; not processor-time or physical-device latency.",
+    "budgetMs": 300,
+    "raw300Claimed": false,
+    "diagnosticFailure": {
+      "rawMs": 747.5,
+      "addedQueriesMs": 739.6999999806285,
+      "exclusiveMs": 7.8000000193715096
+    },
+    "control": {
+      "diagnosticOnly": true,
+      "day": "기사",
+      "quality": "high",
+      "harnessSHA256": "02ed5cdfe215620e6971bd630c98207742ccdc9ecf5bd95ddc8219a28dc18216",
+      "reportedHarnessMatchesActual": true,
+      "allQueryDisabledSamplesMs": [
+        7.300000004470348,
+        8.199999995529652,
+        8.600000001490116,
+        5.600000001490116
+      ],
+      "scope": "Both added queries suppressed only during synchronous fashion.set; production deletes unchanged; control liveness/errors do not constitute strict lifecycle proof.",
+      "sameSourceAndWorker": true
+    },
+    "accounting": "Final harness subtracts only its added query closures, uses bound real wall clock, checks zero nesting and nonnegative exclusive times. Production calls and other instrumentation remain inside the exclusive measurement. All suppression flags are absent from final harness."
+  },
+  "nativeAndLifecycleAssertions": {
+    "weakened": false,
+    "evidence": "Diff against archived 300ms-first harness changes timing measurement/threshold and adds report.lastState only; native error, actual draw/program/matrix/morph/alpha, Room upload, source attributes, ownership, context recovery and pre-force-loss explicit deletion assertions are unchanged.",
+    "lines": {
+      "queryClosures": "scripts/qa/spirit-fashion-worker.mjs:63-67",
+      "timingWrapper": "scripts/qa/spirit-fashion-worker.mjs:164-168",
+      "timingAssertion": "scripts/qa/spirit-fashion-worker.mjs:232",
+      "preForceLossProof": "scripts/qa/spirit-fashion-worker.mjs:211-216",
+      "actualUnmount": "scripts/qa/spirit-fashion-worker.mjs:301-311"
+    }
+  },
+  "reports": {
+    "first": {
+      "path": "docs/qa/spirit-fashion-v1/worker-followup-failures/300ms-first/report.json",
+      "sha256": "77531544f51c690beea557e23c2ff289091468a86391c1797f284f8c7f22378d",
+      "status": "FAIL",
+      "harnessSHA256": "c881b4b4fa366eaec80920baec0eb06d7bc18ba365d5b6d8bcb0133fde720266"
+    },
+    "diagnostic": {
+      "path": "docs/qa/spirit-fashion-v1/worker-followup-failures/300ms-diagnostics/report.json",
+      "sha256": "bf7ef98325fee709902622ec1a3d57b55857fa60ee5341f02eb8a82444eb4b3e",
+      "status": "FAIL",
+      "harnessSHA256": "0d4740b9091929b1d371b7af69f7dd43e6836a80cb71a0572e54b0de1f9a22b0"
+    },
+    "getError": {
+      "path": "docs/qa/spirit-fashion-v1/worker-followup-failures/timing-geterror-probe/report.json",
+      "sha256": "17decaab450f950d881241cd9d49587d66c9d5d3fb797f7790ba9c5e8a5e4da7",
+      "status": "DIAGNOSTIC_COMPLETED",
+      "harnessSHA256": "4710abbe72ebe0e64c8155603cf017b40eeaad13efa4df5b10aa553b3821e03b"
+    },
+    "allQueries": {
+      "path": "docs/qa/spirit-fashion-v1/worker-followup-failures/timing-all-query-probe/report.json",
+      "sha256": "8dbdaf4a41f2cee86205b6d970b2de9353bb17351fdc7694a9778cd473806ad4",
+      "status": "DIAGNOSTIC_COMPLETED",
+      "harnessSHA256": "02ed5cdfe215620e6971bd630c98207742ccdc9ecf5bd95ddc8219a28dc18216"
+    },
+    "full": {
+      "path": "docs/qa/spirit-fashion-v1/worker-followup-failures/view-unmount-timeout/report.json",
+      "sha256": "953a9bdbec6179fe3ae4ddbdce93c2ade58eaff548424547727232c8cd98af2c",
+      "status": "FAIL",
+      "harnessSHA256": "e2521707b2a095766904ad404a5d55a8d751b9de0e3dd93538832965392a508d"
+    },
+    "final40": {
+      "path": "outputs/spirit-fashion/worker/report.json",
+      "sha256": "7785bc4900ddaead6b3fdeed77b4a666a435093ad50d6142e4d411309ba2f26a",
+      "status": "PASS",
+      "harnessSHA256": "cec2769294363c3ff69507a047d814a50484569d8ca01859989efaab5f561344"
+    }
+  },
+  "final40": {
+    "status": "PASS",
+    "sourceHEAD": "57f5939ea65a46047b817fc91a2d4345f23b04a4",
+    "WorkerSHA256": "cbe4bf8a8d70e5f7b30c75b70c28330f8d77ebcd1797d96fb013d37e40fb26ab",
+    "harnessSHA256": "cec2769294363c3ff69507a047d814a50484569d8ca01859989efaab5f561344",
+    "reportSHA256": "7785bc4900ddaead6b3fdeed77b4a666a435093ad50d6142e4d411309ba2f26a",
+    "completedStemQualityCases": 20,
+    "outfits": 40,
+    "checks": 28,
+    "allChecksPassed": true,
+    "images": 17,
+    "binding": {
+      "WorkerMatchesDisk": true,
+      "harnessMatchesDisk": true,
+      "sourceFiles": 11,
+      "sourceMismatches": [],
+      "servedClientJSFiles": 28,
+      "clientMismatches": [],
+      "imageMismatches": [],
+      "bodyMatchesDisk": true,
+      "servedBodySHA256": [
+        "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84"
+      ]
+    },
+    "matrix": [
+      {
+        "day": "갑자",
+        "quality": "high",
+        "exactSameTimeRestoration": true
+      },
+      {
+        "day": "을축",
+        "quality": "high",
+        "exactSameTimeRestoration": true
+      },
+      {
+        "day": "병인",
+        "quality": "high",
+        "exactSameTimeRestoration": true
+      },
+      {
+        "day": "정묘",
+        "quality": "high",
+        "exactSameTimeRestoration": true
+      },
+      {
+        "day": "무진",
+        "quality": "high",
+        "exactSameTimeRestoration": true
+      },
+      {
+        "day": "기사",
+        "quality": "high",
+        "exactSameTimeRestoration": true
+      },
+      {
+        "day": "경오",
+        "quality": "high",
+        "exactSameTimeRestoration": true
+      },
+      {
+        "day": "신미",
+        "quality": "high",
+        "exactSameTimeRestoration": true
+      },
+      {
+        "day": "임신",
+        "quality": "high",
+        "exactSameTimeRestoration": true
+      },
+      {
+        "day": "계유",
+        "quality": "high",
+        "exactSameTimeRestoration": true
+      },
+      {
+        "day": "갑자",
+        "quality": "low",
+        "exactSameTimeRestoration": true
+      },
+      {
+        "day": "을축",
+        "quality": "low",
+        "exactSameTimeRestoration": true
+      },
+      {
+        "day": "병인",
+        "quality": "low",
+        "exactSameTimeRestoration": true
+      },
+      {
+        "day": "정묘",
+        "quality": "low",
+        "exactSameTimeRestoration": true
+      },
+      {
+        "day": "무진",
+        "quality": "low",
+        "exactSameTimeRestoration": true
+      },
+      {
+        "day": "기사",
+        "quality": "low",
+        "exactSameTimeRestoration": true
+      },
+      {
+        "day": "경오",
+        "quality": "low",
+        "exactSameTimeRestoration": true
+      },
+      {
+        "day": "신미",
+        "quality": "low",
+        "exactSameTimeRestoration": true
+      },
+      {
+        "day": "임신",
+        "quality": "low",
+        "exactSameTimeRestoration": true
+      },
+      {
+        "day": "계유",
+        "quality": "low",
+        "exactSameTimeRestoration": true
+      }
+    ],
+    "timing": {
+      "matrixSamples": 180,
+      "rawMaxMs": 690.0999999940395,
+      "exclusiveMaxMs": 18.100000001490116,
+      "exclusiveMinMs": 0,
+      "allSamplesNestedZeroAndExclusiveNonnegativeUnder300": true,
+      "raw300Claimed": false
+    },
+    "nativeTeardown": [
+      {
+        "quality": "high",
+        "items": 0,
+        "buffers": 0,
+        "allGenerationsCreated": 430,
+        "allGenerationsDeleteCalls": 430,
+        "errors": [],
+        "currentGeneration": 1,
+        "created": 215,
+        "explicitDeleted": 215,
+        "nativeAlive": 0,
+        "nativeAliveBytes": 0,
+        "preForceLoss": {
+          "created": 215,
+          "explicitDeleted": 215,
+          "nativeAlive": 0,
+          "nativeAliveBytes": 0
+        },
+        "roomMatrix": [
+          {
+            "sha256": "54251af5a0b540b22c2dd4052cb686bef4375b7877b00c33610dfa84fd9fb409",
+            "floatCount": 96,
+            "byteLength": 384,
+            "nativeLiveAfterUpload": true,
+            "deleteCount": 1,
+            "explicitNativeDelete": true,
+            "whileContextLost": false,
+            "nativeLiveBefore": true,
+            "nativeLiveAfter": false
+          }
+        ]
+      },
+      {
+        "quality": "low",
+        "items": 0,
+        "buffers": 0,
+        "allGenerationsCreated": 430,
+        "allGenerationsDeleteCalls": 430,
+        "errors": [],
+        "currentGeneration": 1,
+        "created": 215,
+        "explicitDeleted": 215,
+        "nativeAlive": 0,
+        "nativeAliveBytes": 0,
+        "preForceLoss": {
+          "created": 215,
+          "explicitDeleted": 215,
+          "nativeAlive": 0,
+          "nativeAliveBytes": 0
+        },
+        "roomMatrix": [
+          {
+            "sha256": "54251af5a0b540b22c2dd4052cb686bef4375b7877b00c33610dfa84fd9fb409",
+            "floatCount": 96,
+            "byteLength": 384,
+            "nativeLiveAfterUpload": true,
+            "deleteCount": 1,
+            "explicitNativeDelete": true,
+            "whileContextLost": false,
+            "nativeLiveBefore": true,
+            "nativeLiveAfter": false
+          }
+        ]
+      }
+    ],
+    "contextRecovery": [
+      {
+        "quality": "high",
+        "sameTime": true,
+        "sameNativePixels": true,
+        "sameSelection": true,
+        "sameExclusions": true,
+        "sameEffects": true,
+        "postRestoreWave": 0.4372278064784108,
+        "nativeWave": 0.4372278153896332,
+        "nativeProgramLiveAndCurrent": true,
+        "preRecoveryLoss": [
+          {
+            "generation": 0,
+            "created": 215,
+            "explicitDeletedBeforeForcedLoss": 30,
+            "nativeAliveAtForcedLoss": 185
+          }
+        ],
+        "scope": "Old-generation handles are invalidated by forced recovery; subsequent normal unmount proves explicit deletion in restored generation separately."
+      },
+      {
+        "quality": "low",
+        "sameTime": true,
+        "sameNativePixels": true,
+        "sameSelection": true,
+        "sameExclusions": true,
+        "sameEffects": true,
+        "postRestoreWave": 0.4372278064784108,
+        "nativeWave": 0.4372278153896332,
+        "nativeProgramLiveAndCurrent": true,
+        "preRecoveryLoss": [
+          {
+            "generation": 0,
+            "created": 215,
+            "explicitDeletedBeforeForcedLoss": 30,
+            "nativeAliveAtForcedLoss": 185
+          }
+        ],
+        "scope": "Old-generation handles are invalidated by forced recovery; subsequent normal unmount proves explicit deletion in restored generation separately."
+      }
+    ],
+    "nativeWaveAnchorCases": 10,
+    "nativeWaveMaximum": 0.44888366715799316,
+    "waveSupportMaximumError": 4.965068306494546e-16,
+    "errors": [],
+    "outbound": [],
+    "databaseCounts": {
+      "chats": 0,
+      "fortunes": 0,
+      "guin_maps": 0,
+      "ai_test_budget": 0
+    },
+    "scope": "Ten stems, two outfits each, both quality modes. Raised-wave anchor matrix covers ten high-quality stems; UI wave and dressed recover/re-tap cover both qualities. No physical-device timing, hosted auth/real database or deployment claim."
+  },
+  "scopeLimits": [
+    "No runtime/source edits or GPU, browser, build or CPU probes executed by reviewer.",
+    "Bounded diagnostic controls cover high-quality 기사 on Chromium SwiftShader; they do not prove all outfits or physical-device performance.",
+    "Prior wardrobe source review preserved; source since reviewed 68b adds the separately verified shared Room cleanup only.",
+    "Fashion remains a separate private candidate; no deployment authorization inferred.",
+    "Final40 binds 28 checks, 17 native PNGs and 28 served client JS files; prior raw300 and controlled-rAF failures stay archived, with no claim that the raw instrumented 300ms bound passed."
+  ],
+  "priorFullHarnessSHA256": "e2521707b2a095766904ad404a5d55a8d751b9de0e3dd93538832965392a508d",
+  "waitCorrection": {
+    "verdict": "Valid harness-only correction; predicate and strict teardown assertions unchanged.",
+    "changes": "Three waitForFunction condition waits use numeric polling 25ms; explanatory comment only. No production source or Worker change.",
+    "probe": {
+      "path": "docs/qa/spirit-fashion-v1/worker-followup-failures/unmount-polling-probe/report.json",
+      "reportSHA256": "f7f63ab93a24e9950733f4b7abd849713f9a0a1442531fc90a448a7868acc064",
+      "harnessSHA256": "b7de6adacf5b874d8e03177effed25f6f129521b5938bdc891db42d24d3b1a1a",
+      "harnessMatchesActual": true,
+      "sourceHEAD": "57f5939ea65a46047b817fc91a2d4345f23b04a4",
+      "builtWorkerSHA256": "cbe4bf8a8d70e5f7b30c75b70c28330f8d77ebcd1797d96fb013d37e40fb26ab",
+      "status": "DIAGNOSTIC_COMPLETED",
+      "immediatePredicate": false,
+      "defaultRafWait": "page.waitForFunction: Timeout 1200ms exceeded.",
+      "samePredicateAfterTimeout": true,
+      "queuedPlaywrightCallback": true,
+      "numericPolling25Passed": true
+    },
+    "nativeTeardown": {
+      "allGenerationsCreated": 466,
+      "allGenerationsDeleteCalls": 466,
+      "currentValidGeneration": 1,
+      "currentGenerationCreated": 233,
+      "currentGenerationExplicitDeleted": 233,
+      "nativeAlive": 0,
+      "nativeAliveBytes": 0,
+      "errors": [],
+      "roomMatrix": [
+        {
+          "sha256": "54251af5a0b540b22c2dd4052cb686bef4375b7877b00c33610dfa84fd9fb409",
+          "type": "Float32Array",
+          "floatCount": 96,
+          "byteLength": 384,
+          "deletes": [
+            {
+              "whileContextLost": false,
+              "nativeLiveBefore": true,
+              "nativeLiveAfter": false,
+              "explicitNativeDelete": true,
+              "contextGeneration": 1,
+              "stack": "Error: Native deleteBuffer owner\n    at gl.deleteBuffer (<anonymous>:31:63)\n    at Object.a [as remove] (http://127.0.0.1:44489/_next/static/chunks/render-resources-ButTKQGL.js:5:57640)\n    at Bi.c (http://127.0.0.1:44489/_next/static/chunks/render-resources-ButTKQGL.js:4072:6808)\n    at Bi.dispatchEvent (http://127.0.0.1:44489/_next/static/chunks/render-resources-ButTKQGL.js:1:2545)\n    at Bi.dispose (http://127.0.0.1:44489/_next/static/chunks/render-resources-ButTKQGL.js:1:67085)\n    at Bi.dispose (http://127.0.0.1:44489/_next/static/chunks/render-resources-ButTKQGL.js:1:150518)\n    at http://127.0.0.1:44489/_next/static/chunks/scene-environment-mTM1WGRT.js:1:2920\n    at Bi.traverse (http://127.0.0.1:44489/_next/static/chunks/render-resources-ButTKQGL.js:1:60813)\n    at l.traverse (http://127.0.0.1:44489/_next/static/chunks/render-resources-ButTKQGL.js:1:60877)\n    at f (http://127.0.0.1:44489/_next/static/chunks/scene-environment-mTM1WGRT.js:1:2878)"
+            }
+          ]
+        }
+      ],
+      "scope": "466/466 tracks all-generation calls. Strict native explicit deletion is 233/233 in restored generation 1 before normal force-loss; generation 0 live handles at forced recovery are invalidated separately."
+    }
+  }
+}

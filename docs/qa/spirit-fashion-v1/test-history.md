@@ -7,4 +7,6 @@
 3. 초기 GPU 자원 비교에서는 Three renderer가 jade/dew transmission target을 늦게 생성하는 시점을 모델별 누수로 간주할 수 있었다. 실제 transmissive 경로를 먼저 렌더한 뒤 같은 renderer의 기준을 비교하고, renderer.dispose까지 확인하도록 수정했다. 이전 소스 run의 4,787개 buffer는 전부 해제됐다. 이 결과는 아직 실행하지 않은 최신 Worker GPU 검증의 대체 증거가 아니다.
 4. 원래 native raycast만으로 아이템을 만드는 측정은 약 0.5–1.3초였다. 실제 삼각형 XY 인덱스로 바꾸고 neutral/0.45 morph의 앞/뒤 ray 224개를 native와 비교해 정확도를 확인했다. 새 motion 전 소스 run은 네 아이템 13.4–64.3ms, 마스크 교체 2.9–31.6ms였다. 최신 기준의 성능 결과는 후속 검증으로 남는다.
 
-독립 리뷰는 `96150b2`에서 구체적인 Critical/Important 문제를 발견하지 않았다. 초기 몸체/재질 원본, 저장 스키마, triangle binding, atomic 실패 복구, 반복 dispose/이전 제외 영역 복구는 보존 범위다. 별도로 발견된 기존 context restoration 결함의 검증된 수정, 그 수정 뒤 새 빌드의 40개 착용 조합과 exact Worker QA는 아직 완료로 주장하지 않는다.
+위1–4항은 최초 체크포인트의 역사적 기록이다. 그 당시 독립 리뷰는 `96150b2`에서 구체적인 Critical/Important 문제를 발견하지 않았다. 초기 몸체/재질 원본, 저장 스키마, triangle binding, atomic 실패 복구, 반복 dispose/이전 제외 영역 복구를 보존했다.
+
+후속 공유 context/alpha/Room 수정 뒤 [최종 Worker](worker-final/README.md)는28/28개·40개 착용을 통과했다. 이전 Room 누락, 원시300ms 실패, 실제 native-query 대조와 controlled-rAF 대기 timeout의 원래 보고서/harness는 [후속 실패 이력](worker-followup-failures/FOLLOWUP_HISTORY.md)에 남긴다. 최초4,787/4,787 계측은 PMREM 생성 후 시작했으므로 Room instanceMatrix 누락을 검출하지 못했고, 최종 검증은 첫 PMREM 전에 시작해 정상 강제 context loss 전 explicit native delete/live0을 확인한다. 최종도 원시300ms나 실제 기기 성능을 통과했다고 주장하지 않는다.

@@ -1,0 +1,13 @@
+{
+  "status": "SCOPE_MISMATCH",
+  "format": "Observation reconstructed from actual exec output, not a JSON report emitted by the original script.",
+  "command": "node scripts/qa/spirit-fashion-preservation.mjs 5a8fae1c90f1fbac2a9ee6b00bdce7cab7572dbd",
+  "exitCode": 1,
+  "error": "AssertionError [ERR_ASSERTION]: Unexpected existing-file mutation: docs/SPIRIT_ATTACHED_EFFECTS_20261010.md",
+  "reason": "Verified runtime-only cherry-picks did not import independently committed newer core QA/doc evidence. The original all-files assertion was not changed. The separate production comparison covers every baseline file except docs/ and scripts/qa/, and permits only the four authorized fashion integration paths.",
+  "baseline": "5a8fae1c90f1fbac2a9ee6b00bdce7cab7572dbd",
+  "baselineFiles": 698,
+  "excludedEvidenceOnlyFiles": 371,
+  "productionFiles": 327,
+  "assets": 172
+}

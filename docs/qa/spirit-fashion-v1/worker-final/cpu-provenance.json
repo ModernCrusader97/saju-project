@@ -1,0 +1,357 @@
+{
+  "status": "PASS_CARRIED_UNCHANGED_MODULES",
+  "report": "../cpu-report.json",
+  "reportSHA256": "1b774a7df55973b1375130909557e3c1eda74aea85d517769356c05254ca2f54",
+  "checks": 13,
+  "lastExecutionSourceHEAD": "68b91c7165250107c378117f92c57a8f85321e2c",
+  "currentSourceHEAD": "57f5939ea65a46047b817fc91a2d4345f23b04a4",
+  "rerunAfterRoomFix": false,
+  "reason": "The sole lib/planet/package/CPU-script change since the completed13-test run is render-only scene-environment.ts. It is absent from the CPU esbuild entry and approved loader imports; CPU-tested fashion/effects/motion/material modules, dependency locks and original assets are unchanged. Parent explicitly requested no redundant CPU13 repeat. Fresh exact-Worker28/40 covers the Room runtime and high/low rendered recovery separately.",
+  "entryExports": [
+    "spirit-fashion",
+    "spirit-fashion-catalog",
+    "spirit-fashion-storage",
+    "surface-attachment-exclusions",
+    "surface-stem-accents",
+    "fashion-surface-projector",
+    "approved-jade-spirit"
+  ],
+  "sourceComparison": [
+    {
+      "file": "lib/planet/affine-instance-normals.ts",
+      "unchanged": true,
+      "beforeSHA256": "15e2d87ecab90ce9fa2fdce91613117cf021e101d071beb34555fdd02bc1415a",
+      "currentSHA256": "15e2d87ecab90ce9fa2fdce91613117cf021e101d071beb34555fdd02bc1415a"
+    },
+    {
+      "file": "lib/planet/approved-jade-spirit.ts",
+      "unchanged": true,
+      "beforeSHA256": "6488a295800a41eb1f601f634d41a18563ccfa748119df309714cb76a5bac3b3",
+      "currentSHA256": "6488a295800a41eb1f601f634d41a18563ccfa748119df309714cb76a5bac3b3"
+    },
+    {
+      "file": "lib/planet/approved-spirit-motion.ts",
+      "unchanged": true,
+      "beforeSHA256": "92454b392446e9a85814aafd5653518ad7694d9b4465f3436353a6792d66377f",
+      "currentSHA256": "92454b392446e9a85814aafd5653518ad7694d9b4465f3436353a6792d66377f"
+    },
+    {
+      "file": "lib/planet/approved-stem-accents.ts",
+      "unchanged": true,
+      "beforeSHA256": "1edebf186af335e1c2b703e53445b4a7b409750cf984f6a6fc63a94ffbac8a5b",
+      "currentSHA256": "1edebf186af335e1c2b703e53445b4a7b409750cf984f6a6fc63a94ffbac8a5b"
+    },
+    {
+      "file": "lib/planet/approved-stem-materials.ts",
+      "unchanged": true,
+      "beforeSHA256": "4f625fe9b75ee278e67b4b452b6bc16fe01f599bec2b48dad8e3842602266f7b",
+      "currentSHA256": "4f625fe9b75ee278e67b4b452b6bc16fe01f599bec2b48dad8e3842602266f7b"
+    },
+    {
+      "file": "lib/planet/asteroid-belt.ts",
+      "unchanged": true,
+      "beforeSHA256": "dbd48365358397d47413f2082594c5bf8bf9bc2bb5325be8df7339149d74ad08",
+      "currentSHA256": "dbd48365358397d47413f2082594c5bf8bf9bc2bb5325be8df7339149d74ad08"
+    },
+    {
+      "file": "lib/planet/character-material-fixture.ts",
+      "unchanged": true,
+      "beforeSHA256": "cd47bc28963202b51801d7892f304731d1b12afeb650fa371f3c96b9364121c0",
+      "currentSHA256": "cd47bc28963202b51801d7892f304731d1b12afeb650fa371f3c96b9364121c0"
+    },
+    {
+      "file": "lib/planet/character-rest-coordinates.ts",
+      "unchanged": true,
+      "beforeSHA256": "a76a2e165b704e9665e5a45c975006a44cf5710cf4cc44bae92eee8cc5646e01",
+      "currentSHA256": "a76a2e165b704e9665e5a45c975006a44cf5710cf4cc44bae92eee8cc5646e01"
+    },
+    {
+      "file": "lib/planet/context-loss-resources.ts",
+      "unchanged": true,
+      "beforeSHA256": "4e8a70a049d97663f577eb8f5701b005ca2f50836c539b9fcce9c160cbff394b",
+      "currentSHA256": "4e8a70a049d97663f577eb8f5701b005ca2f50836c539b9fcce9c160cbff394b"
+    },
+    {
+      "file": "lib/planet/earth-expression-bindings.json",
+      "unchanged": true,
+      "beforeSHA256": "3cf13c1757800bc42f9519e51fc0d47cf493e76450127a30955136e736b91f52",
+      "currentSHA256": "3cf13c1757800bc42f9519e51fc0d47cf493e76450127a30955136e736b91f52"
+    },
+    {
+      "file": "lib/planet/elemental-spirit.ts",
+      "unchanged": true,
+      "beforeSHA256": "f092e22f3745a93f981c03bcd21aa643627dbc46ef47a9528e5d2d4490b5060d",
+      "currentSHA256": "f092e22f3745a93f981c03bcd21aa643627dbc46ef47a9528e5d2d4490b5060d"
+    },
+    {
+      "file": "lib/planet/fashion-surface-projector.ts",
+      "unchanged": true,
+      "beforeSHA256": "608ef8f99dcba59a117dfa9d8ff649f972f5fcebd164c5a00e356d68a6fe444f",
+      "currentSHA256": "608ef8f99dcba59a117dfa9d8ff649f972f5fcebd164c5a00e356d68a6fe444f"
+    },
+    {
+      "file": "lib/planet/fire-expression-bindings.json",
+      "unchanged": true,
+      "beforeSHA256": "adba4f07464d5a9960ceffdf1ad49595ff241bbb40d8e89b435e27d0836db211",
+      "currentSHA256": "adba4f07464d5a9960ceffdf1ad49595ff241bbb40d8e89b435e27d0836db211"
+    },
+    {
+      "file": "lib/planet/galaxy-helper.ts",
+      "unchanged": true,
+      "beforeSHA256": "d6978b4f112c1c1ae9348b38d5dda3766a827c836a95095fcb701789c6e342a2",
+      "currentSHA256": "d6978b4f112c1c1ae9348b38d5dda3766a827c836a95095fcb701789c6e342a2"
+    },
+    {
+      "file": "lib/planet/galaxy-motion.ts",
+      "unchanged": true,
+      "beforeSHA256": "1e9f55f1e1944700fde30e8163f6f7681bf3fc448f2db20e1c91448763b85962",
+      "currentSHA256": "1e9f55f1e1944700fde30e8163f6f7681bf3fc448f2db20e1c91448763b85962"
+    },
+    {
+      "file": "lib/planet/im-water-study-material.ts",
+      "unchanged": true,
+      "beforeSHA256": "22f3eacf8d7043e60ceb614dbf47b6068569b5ddacc40132666da2a443d4d77e",
+      "currentSHA256": "22f3eacf8d7043e60ceb614dbf47b6068569b5ddacc40132666da2a443d4d77e"
+    },
+    {
+      "file": "lib/planet/jelly-expression-bindings.json",
+      "unchanged": true,
+      "beforeSHA256": "6a4dd698e818bfd38df8cccf78048231c50f541815bd2f89051c7f0ce2dcebd7",
+      "currentSHA256": "6a4dd698e818bfd38df8cccf78048231c50f541815bd2f89051c7f0ce2dcebd7"
+    },
+    {
+      "file": "lib/planet/jelly-expression-controller.ts",
+      "unchanged": true,
+      "beforeSHA256": "3daafe544e94776d15b7dd820ada11440b7894a8019452446bd3eba8883bc8af",
+      "currentSHA256": "3daafe544e94776d15b7dd820ada11440b7894a8019452446bd3eba8883bc8af"
+    },
+    {
+      "file": "lib/planet/living-surface-shader.ts",
+      "unchanged": true,
+      "beforeSHA256": "588edc821ca82d0e6bf8e0389fd503929b94ba8a985e67792b002dd8d1f14f03",
+      "currentSHA256": "588edc821ca82d0e6bf8e0389fd503929b94ba8a985e67792b002dd8d1f14f03"
+    },
+    {
+      "file": "lib/planet/mesh-surface.ts",
+      "unchanged": true,
+      "beforeSHA256": "aed2f700821c6d1b0670af8fcb1acf8bdb908e2db84e41246b84a9889751aba0",
+      "currentSHA256": "aed2f700821c6d1b0670af8fcb1acf8bdb908e2db84e41246b84a9889751aba0"
+    },
+    {
+      "file": "lib/planet/metal-expression-bindings.json",
+      "unchanged": true,
+      "beforeSHA256": "26774785a73632cae3bfc8508364a06d7cc3b5190ba9bc0af49aaedea230d442",
+      "currentSHA256": "26774785a73632cae3bfc8508364a06d7cc3b5190ba9bc0af49aaedea230d442"
+    },
+    {
+      "file": "lib/planet/planet-appearance.ts",
+      "unchanged": true,
+      "beforeSHA256": "6885f71d58183faf053f2922980d6104b9bd9e0dbad1be3111778197dcccd41f",
+      "currentSHA256": "6885f71d58183faf053f2922980d6104b9bd9e0dbad1be3111778197dcccd41f"
+    },
+    {
+      "file": "lib/planet/porcelain-blink.ts",
+      "unchanged": true,
+      "beforeSHA256": "8b70b1764a990280ddb7a6b0b72d40f963f21267458db39fd2dc68d803eeee27",
+      "currentSHA256": "8b70b1764a990280ddb7a6b0b72d40f963f21267458db39fd2dc68d803eeee27"
+    },
+    {
+      "file": "lib/planet/raw-assets.d.ts",
+      "unchanged": true,
+      "beforeSHA256": "1ba362a47115469a11c97b1003d7c16a78aa8f2a2f9a8d487c5c899a07dd2eb6",
+      "currentSHA256": "1ba362a47115469a11c97b1003d7c16a78aa8f2a2f9a8d487c5c899a07dd2eb6"
+    },
+    {
+      "file": "lib/planet/render-resources.ts",
+      "unchanged": true,
+      "beforeSHA256": "3bdc79d99b391581263ab03d2fb355fcc9fc66b7fa32b8ced767b38cf9858629",
+      "currentSHA256": "3bdc79d99b391581263ab03d2fb355fcc9fc66b7fa32b8ced767b38cf9858629"
+    },
+    {
+      "file": "lib/planet/sandstone-fissure-field.ts",
+      "unchanged": true,
+      "beforeSHA256": "f4f9a95f23efc52a430d8780517287cba8a664b30dbfe6dab8f962f34220a191",
+      "currentSHA256": "f4f9a95f23efc52a430d8780517287cba8a664b30dbfe6dab8f962f34220a191"
+    },
+    {
+      "file": "lib/planet/scene-environment.ts",
+      "unchanged": false,
+      "beforeSHA256": "718b09d03cadc6be60a789af9d7e236d78e8ff62c38b0dc93b3d157bba3e2dd4",
+      "currentSHA256": "6aca790acdf6b7e70282f22eb59e9030f68de681f3ffd958e918bde6fa12117e"
+    },
+    {
+      "file": "lib/planet/scene-gestures.ts",
+      "unchanged": true,
+      "beforeSHA256": "64ec271bf397c2a25d3092bb7bfb07e7fd46308b7090ce4f5f701bf9f2667976",
+      "currentSHA256": "64ec271bf397c2a25d3092bb7bfb07e7fd46308b7090ce4f5f701bf9f2667976"
+    },
+    {
+      "file": "lib/planet/spiral-galaxy.ts",
+      "unchanged": true,
+      "beforeSHA256": "f27f6753491383414c331ef863cb76b31273983ec2cbd873fd793fabaa4b7be7",
+      "currentSHA256": "f27f6753491383414c331ef863cb76b31273983ec2cbd873fd793fabaa4b7be7"
+    },
+    {
+      "file": "lib/planet/spirit-fashion-catalog.ts",
+      "unchanged": true,
+      "beforeSHA256": "cd78cc7d096d54f52c1aa9fd0d6e53952de3fa3ba0571c1d1d11545180af1bb6",
+      "currentSHA256": "cd78cc7d096d54f52c1aa9fd0d6e53952de3fa3ba0571c1d1d11545180af1bb6"
+    },
+    {
+      "file": "lib/planet/spirit-fashion-storage.ts",
+      "unchanged": true,
+      "beforeSHA256": "fa465992008bbab56866a99149e9b1f40be994947bdc7ecc423c66332a86f261",
+      "currentSHA256": "fa465992008bbab56866a99149e9b1f40be994947bdc7ecc423c66332a86f261"
+    },
+    {
+      "file": "lib/planet/spirit-fashion.ts",
+      "unchanged": true,
+      "beforeSHA256": "820a248cfe06e7940dbf779ea7071506a048b7b318d5f162927599f71548c3c1",
+      "currentSHA256": "820a248cfe06e7940dbf779ea7071506a048b7b318d5f162927599f71548c3c1"
+    },
+    {
+      "file": "lib/planet/spirit-geometry.ts",
+      "unchanged": true,
+      "beforeSHA256": "881471269bb0940aba4fc808e727ea8563b45468d6de78443f5b4b73de3deffb",
+      "currentSHA256": "881471269bb0940aba4fc808e727ea8563b45468d6de78443f5b4b73de3deffb"
+    },
+    {
+      "file": "lib/planet/spirit-profiles.ts",
+      "unchanged": true,
+      "beforeSHA256": "5eea12236f7a72d42d0e800c0fd64b137640bf0e80927a055aab51ed642dad56",
+      "currentSHA256": "5eea12236f7a72d42d0e800c0fd64b137640bf0e80927a055aab51ed642dad56"
+    },
+    {
+      "file": "lib/planet/spirit-zodiac-pet.ts",
+      "unchanged": true,
+      "beforeSHA256": "7c84e8a65e376d8abd60fcf77256c3546c15b83585ff4829a09ffdbb0082ec81",
+      "currentSHA256": "7c84e8a65e376d8abd60fcf77256c3546c15b83585ff4829a09ffdbb0082ec81"
+    },
+    {
+      "file": "lib/planet/spirit-zodiac.ts",
+      "unchanged": true,
+      "beforeSHA256": "a59195d639b56af25f4bfb718fdd9bc9a84f658d12ce7e8becdaeb194da8fde3",
+      "currentSHA256": "a59195d639b56af25f4bfb718fdd9bc9a84f658d12ce7e8becdaeb194da8fde3"
+    },
+    {
+      "file": "lib/planet/surface-attachment-exclusions.ts",
+      "unchanged": true,
+      "beforeSHA256": "86dec9178e0fd0d01e4bcd174be765c37eafbb32c8aadfedd32dd460f75c94c0",
+      "currentSHA256": "86dec9178e0fd0d01e4bcd174be765c37eafbb32c8aadfedd32dd460f75c94c0"
+    },
+    {
+      "file": "lib/planet/surface-creeping-vines.ts",
+      "unchanged": true,
+      "beforeSHA256": "545c0275e1ad6d09e9383757e6576279dc800d37309ac4f496db6548c807a645",
+      "currentSHA256": "545c0275e1ad6d09e9383757e6576279dc800d37309ac4f496db6548c807a645"
+    },
+    {
+      "file": "lib/planet/surface-effects.ts",
+      "unchanged": true,
+      "beforeSHA256": "94f1c479f8ed96ee42af839bf7a78aaba2acd4d90be5db8d4d02cda5b3bc8a52",
+      "currentSHA256": "94f1c479f8ed96ee42af839bf7a78aaba2acd4d90be5db8d4d02cda5b3bc8a52"
+    },
+    {
+      "file": "lib/planet/surface-fissure-sand.ts",
+      "unchanged": true,
+      "beforeSHA256": "f07fc342b81e14148296ca6b89eee8ed55d785f12475253d21a2ee23b0d5f92f",
+      "currentSHA256": "f07fc342b81e14148296ca6b89eee8ed55d785f12475253d21a2ee23b0d5f92f"
+    },
+    {
+      "file": "lib/planet/surface-material.ts",
+      "unchanged": true,
+      "beforeSHA256": "ab2ba1d4386e4b76a3c77372274439fecb0bddb623269127eb45046aff45df45",
+      "currentSHA256": "ab2ba1d4386e4b76a3c77372274439fecb0bddb623269127eb45046aff45df45"
+    },
+    {
+      "file": "lib/planet/surface-math.ts",
+      "unchanged": true,
+      "beforeSHA256": "6f785c406149941df100690d5e64404e1108a60ea46a79625c0fa76dc46af0f9",
+      "currentSHA256": "6f785c406149941df100690d5e64404e1108a60ea46a79625c0fa76dc46af0f9"
+    },
+    {
+      "file": "lib/planet/surface-sliding-dew.ts",
+      "unchanged": true,
+      "beforeSHA256": "e3c847935419bc704179e8c307868330d8df122c58c595a5065d4488f4689bb5",
+      "currentSHA256": "e3c847935419bc704179e8c307868330d8df122c58c595a5065d4488f4689bb5"
+    },
+    {
+      "file": "lib/planet/surface-stem-accents.ts",
+      "unchanged": true,
+      "beforeSHA256": "fbe09631ab1995a81eb0515144b17bcba11bf337b19beb57ce69317d1ebc9b33",
+      "currentSHA256": "fbe09631ab1995a81eb0515144b17bcba11bf337b19beb57ce69317d1ebc9b33"
+    },
+    {
+      "file": "lib/planet/surface-triangle-walk.ts",
+      "unchanged": true,
+      "beforeSHA256": "bef4cb6c034dfeb931a7e423933386a1f341443c2fc56d2099ce571c3b897a3e",
+      "currentSHA256": "bef4cb6c034dfeb931a7e423933386a1f341443c2fc56d2099ce571c3b897a3e"
+    },
+    {
+      "file": "lib/planet/surface-vine-body.ts",
+      "unchanged": true,
+      "beforeSHA256": "5e3968374e868e44e234b332cba4cf0cabccd0e437b98d72c87add2e72730c24",
+      "currentSHA256": "5e3968374e868e44e234b332cba4cf0cabccd0e437b98d72c87add2e72730c24"
+    },
+    {
+      "file": "lib/planet/surface-woody-branches.ts",
+      "unchanged": true,
+      "beforeSHA256": "a460444533fd086a461618fff1ac1c7ee6677138ce06a8b9ad2f9d5356d3974b",
+      "currentSHA256": "a460444533fd086a461618fff1ac1c7ee6677138ce06a8b9ad2f9d5356d3974b"
+    },
+    {
+      "file": "lib/planet/texture-generator.ts",
+      "unchanged": true,
+      "beforeSHA256": "044def6002449599755a04582024c15fb2f455275f36ebd7dad8d027305fb7a7",
+      "currentSHA256": "044def6002449599755a04582024c15fb2f455275f36ebd7dad8d027305fb7a7"
+    },
+    {
+      "file": "lib/planet/theme-library.ts",
+      "unchanged": true,
+      "beforeSHA256": "1e51156fbb99ea622a075dbbd22531c083ecb4a8b0aeec15c609cd9302d7798a",
+      "currentSHA256": "1e51156fbb99ea622a075dbbd22531c083ecb4a8b0aeec15c609cd9302d7798a"
+    },
+    {
+      "file": "lib/planet/uv-mask.ts",
+      "unchanged": true,
+      "beforeSHA256": "2134589728d410b7c64d5a8f8cf4b8dde533141e33f7acf158df482e4a20a349",
+      "currentSHA256": "2134589728d410b7c64d5a8f8cf4b8dde533141e33f7acf158df482e4a20a349"
+    },
+    {
+      "file": "lib/planet/vine-bundle.ts",
+      "unchanged": true,
+      "beforeSHA256": "cc8f6eb7fe6dc868077fc8ab0b7012f5cf197476a097953026b68f3374e9cbb8",
+      "currentSHA256": "cc8f6eb7fe6dc868077fc8ab0b7012f5cf197476a097953026b68f3374e9cbb8"
+    },
+    {
+      "file": "lib/planet/visibility-loop.ts",
+      "unchanged": true,
+      "beforeSHA256": "8b99ca32626371ff3f7dd3df659014a1b746ed749c3e8cd9179ace407aee9e1a",
+      "currentSHA256": "8b99ca32626371ff3f7dd3df659014a1b746ed749c3e8cd9179ace407aee9e1a"
+    },
+    {
+      "file": "lib/planet/wood-expression-bindings.json",
+      "unchanged": true,
+      "beforeSHA256": "5b16c35bfcf0fa24f60dbf9179ba644caa4c935a4841eb8caa3ac9d096ed7ebd",
+      "currentSHA256": "5b16c35bfcf0fa24f60dbf9179ba644caa4c935a4841eb8caa3ac9d096ed7ebd"
+    },
+    {
+      "file": "scripts/qa/spirit-fashion-cpu.mjs",
+      "unchanged": true,
+      "beforeSHA256": "bccc4536db5470dab1117a732ac2417502b1535fbaca3bfb6a8a66bb35e87474",
+      "currentSHA256": "bccc4536db5470dab1117a732ac2417502b1535fbaca3bfb6a8a66bb35e87474"
+    },
+    {
+      "file": "package.json",
+      "unchanged": true,
+      "beforeSHA256": "0001ed947a91213784bfe29ccc41d637a30ae17125412cc8ae9315562a98a5ef",
+      "currentSHA256": "0001ed947a91213784bfe29ccc41d637a30ae17125412cc8ae9315562a98a5ef"
+    },
+    {
+      "file": "package-lock.json",
+      "unchanged": true,
+      "beforeSHA256": "ffb8ad533a7ea1d2f48ca306489d19884296f7902423fbbc00c48f3b8fd11d4e",
+      "currentSHA256": "ffb8ad533a7ea1d2f48ca306489d19884296f7902423fbbc00c48f3b8fd11d4e"
+    }
+  ]
+}

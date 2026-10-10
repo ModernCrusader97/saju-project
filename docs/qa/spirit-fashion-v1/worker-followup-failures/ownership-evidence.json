@@ -1,0 +1,58 @@
+{
+  "status": "DIAGNOSED_PRE_FIX",
+  "baseline": "68b91c7165250107c378117f92c57a8f85321e2c",
+  "builtWorkerSHA256": "53cf7d83833454d553c4f6253c9d457c04396d728e4bff1581e3547180ee3048",
+  "retired": {
+    "connected": false,
+    "contextLost": true,
+    "buffers": 1,
+    "created": 166,
+    "deleted": 165,
+    "errors": [],
+    "remainingBuffers": [
+      {
+        "origin": "Error: GPU buffer creation\n    at gl.createBuffer (<anonymous>:14:151)\n    at n (http://127.0.0.1:39709/_next/static/chunks/render-resources-ButTKQGL.js:5:56312)\n    at Object.o [as update] (http://127.0.0.1:39709/_next/static/chunks/render-resources-ButTKQGL.js:5:57934)\n    at Object.o [as update] (http://127.0.0.1:39709/_next/static/chunks/render-resources-ButTKQGL.js:4072:6489)\n    at gt (http://127.0.0.1:39709/_next/static/chunks/render-resources-ButTKQGL.js:4220:35231)\n    at gt (http://127.0.0.1:39709/_next/static/chunks/render-resources-ButTKQGL.js:4220:35738)\n    at tf.render (http://127.0.0.1:39709/_next/static/chunks/render-resources-ButTKQGL.js:4220:33593)\n    at cl._sceneToCubeUV (http://127.0.0.1:39709/_next/static/chunks/render-resources-ButTKQGL.js:3823:22888)\n    at cl.fromScene (http://127.0.0.1:39709/_next/static/chunks/render-resources-ButTKQGL.js:3823:19737)\n    at f (http://127.0.0.1:39709/_next/static/chunks/scene-environment-Caw1hCJ2.js:1:2850)",
+        "nativeLive": false
+      }
+    ]
+  },
+  "contextGeneration": 0,
+  "contextGenerationBasis": "Initial real Canvas was unmounted before any explicit restore probe.",
+  "observed": {
+    "afterActualUnmount": {
+      "connected": false,
+      "contextLost": true,
+      "nativeIsBuffer": false,
+      "nativeGLErrors": []
+    },
+    "beforeActualUnmountNativeIsBuffer": "NOT_CAPTURED"
+  },
+  "sourceOwnership": {
+    "roomSourceSHA256": "55f466192cc84298755a424c5e040345006b2ee1455589b3b54126c2ea4123f4",
+    "webglObjectsSourceSHA256": "60829abba98579b02a84177ce86b3eea127a7decac487b69c70f0e3e83a1d923",
+    "instancedMeshSourceSHA256": "572ee1e4b09bb145ebf6b2398824b3b0d24d4c04ed41656aed2a442e61e8174e",
+    "compiledChunkSHA256": "d943a4144b6bfdc893a46d673e2b87c21dc3a325d9141c0fd8a576fcdd6c2d8c",
+    "compiledWebGLObjectsCallSite": "eometry,l=t.get(r,s);if(a.get(l)!==o&&(t.update(l),a.set(l,o)),r.isInstancedMesh&&(r.hasEventListener(`dispose`,c)===!1&&r.addEventListener(`dispose`,c),a.get(r)!==o&&(n.update(r.instanceMatrix,e.ARRAY_BUFFER),r.instanceColor!==null&&n.update(r.instanceColor,e.ARRAY_BUFFER),a.set(r,o))),r.isSkinnedMesh){let e=r.skeleton;a.get(e)!==o&&(e.u",
+    "nativeBufferSource": "WebGLAttributes.createBuffer -> WebGLObjects.update(instanceMatrix) -> PMREMGenerator._sceneToCubeUV/fromScene -> createStudioEnvironment",
+    "count": 6,
+    "floatsPerMatrix": 16,
+    "derivedFloatCount": 96,
+    "derivedByteLength": 384,
+    "derivationOnly": true,
+    "roomCreation": "const boxes = new InstancedMesh( geometry, boxMaterial, 6 );",
+    "arrayCreation": "this.instanceMatrix = new InstancedBufferAttribute( new Float32Array( count * 16 ), 16 );",
+    "roomDisposal": "\tdispose() {\n\n\t\tconst resources = new Set();\n\n\t\tthis.traverse( ( object ) => {\n\n\t\t\tif ( object.isMesh ) {\n\n\t\t\t\tresources.add( object.geometry );\n\t\t\t\tresources.add( object.material );\n\n\t\t\t}\n\n\t\t} );\n\n\t\tfor ( const resource of resources ) {\n\n\t\t\tresource.dispose();\n\n\t\t}\n\n\t}\n",
+    "explanation": "Installed Three RoomEnvironment.dispose releases geometry/material but not the single room InstancedMesh. Actual captured buffer creation stack resolves to its instanceMatrix upload. The 96-float size is derived from this unchanged source; bufferData arguments and a before-unmount native isBuffer result were not captured in this attempt."
+  },
+  "boundaries": {
+    "firstCanvasUndressed": true,
+    "wardrobeRuntimeEdited": false,
+    "ownedBufferAssertionsRelaxed": false,
+    "sourceAndDistFrozen": true,
+    "gpuReleasedToRoot": true
+  },
+  "harnessHashes": {
+    "first": "ca5df63b250cc7a74d1cdbf994684405fd643fbea33921422e6d7009e59519df",
+    "creationTrace": "93086d8187b1932a0d419db08f90eaed83cbe09eb141dfcd37a2b2ea95ab436e"
+  }
+}

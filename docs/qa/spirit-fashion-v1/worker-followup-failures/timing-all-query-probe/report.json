@@ -1,0 +1,1169 @@
+{
+  "status": "DIAGNOSTIC_COMPLETED",
+  "baseline": "57f5939ea65a46047b817fc91a2d4345f23b04a4",
+  "builtWorkerSHA256": "cbe4bf8a8d70e5f7b30c75b70c28330f8d77ebcd1797d96fb013d37e40fb26ab",
+  "qaHarnessSHA256": "02ed5cdfe215620e6971bd630c98207742ccdc9ecf5bd95ddc8219a28dc18216",
+  "sourceHashes": {
+    "app/planet/page.tsx": "31162c98f6616dd1f73f4d1593e3069dc6ddefa5f9fc276dc607ce47d538eab3",
+    "components/planet/ElementalSpiritCanvas.tsx": "2367829265fd949db74f8e6cd698ccc3e30677d04440e54fe401bd6e0041bad2",
+    "components/planet/SpiritFashionPanel.tsx": "32131006e1c5556fd79be468d1d4858d3940ccaf48efd872aa83c4c3cbe7c866",
+    "hooks/use-spirit-fashion.ts": "0062599251193b082620e5f52a9126dbd5581d3b5f1aa57147c003034f0524c9",
+    "lib/planet/approved-jade-spirit.ts": "6488a295800a41eb1f601f634d41a18563ccfa748119df309714cb76a5bac3b3",
+    "lib/planet/elemental-spirit.ts": "f092e22f3745a93f981c03bcd21aa643627dbc46ef47a9528e5d2d4490b5060d",
+    "lib/planet/spirit-fashion.ts": "820a248cfe06e7940dbf779ea7071506a048b7b318d5f162927599f71548c3c1",
+    "lib/planet/fashion-surface-projector.ts": "608ef8f99dcba59a117dfa9d8ff649f972f5fcebd164c5a00e356d68a6fe444f",
+    "lib/planet/spirit-fashion-catalog.ts": "cd78cc7d096d54f52c1aa9fd0d6e53952de3fa3ba0571c1d1d11545180af1bb6",
+    "lib/planet/spirit-fashion-storage.ts": "fa465992008bbab56866a99149e9b1f40be994947bdc7ecc423c66332a86f261",
+    "lib/planet/scene-environment.ts": "6aca790acdf6b7e70282f22eb59e9030f68de681f3ffd958e918bde6fa12117e"
+  },
+  "bodySHA256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+  "roomMatrixReference": {
+    "floatCount": 96,
+    "byteLength": 384,
+    "sha256": "54251af5a0b540b22c2dd4052cb686bef4375b7877b00c33610dfa84fd9fb409",
+    "installedRoomSourceSHA256": "55f466192cc84298755a424c5e040345006b2ee1455589b3b54126c2ea4123f4"
+  },
+  "checks": [],
+  "cases": [],
+  "motion": [],
+  "images": [],
+  "errors": [],
+  "outbound": [],
+  "limits": [
+    "Exact local production Worker and dist/client; isolated synthetic D1 and synthetic request headers, no real users or hosted authentication.",
+    "Synthetic rAF/performance clock, actual selected native WebGL draws; intermediate frames update motion/effects without GPU draws.",
+    "Chromium SwiftShader; no physical device/GPU or full cloth/flame collision simulation.",
+    "Fashion is a private candidate and has not been deployed."
+  ],
+  "timingProfile": {
+    "diagnosticOnly": true,
+    "day": "기사",
+    "quality": "high",
+    "originalHarnessSHA256": "0d4740b9091929b1d371b7af69f7dd43e6836a80cb71a0572e54b0de1f9a22b0",
+    "samples": [
+      {
+        "control": false,
+        "mask": true,
+        "selection": {
+          "head": "crescent-pin",
+          "face": "fitted-mask",
+          "neck": "ribbon-bow",
+          "back": "leaf-brooch"
+        },
+        "ms": 19,
+        "qaProbeMs": 11.600000008940697,
+        "excludingQAProbeMs": 7.399999991059303,
+        "probeDetails": {
+          "isBuffer": {
+            "calls": 56,
+            "ms": 1.9999999850988388
+          },
+          "getError:deleteVertexArray": {
+            "calls": 19,
+            "ms": 2.200000010430813
+          },
+          "getError:before deleteBuffer": {
+            "calls": 28,
+            "ms": 5.200000025331974
+          },
+          "getError:deleteBuffer": {
+            "calls": 28,
+            "ms": 2.199999988079071
+          }
+        },
+        "allRecentTimings": [
+          {
+            "selection": {
+              "head": "crescent-pin",
+              "face": "round-sunglasses",
+              "neck": "ribbon-bow",
+              "back": "leaf-brooch"
+            },
+            "ms": 9.799999997019768,
+            "qaProbeMs": 6.699999988079071,
+            "excludingQAProbeMs": 3.1000000089406967,
+            "probeDetails": {
+              "isBuffer": {
+                "calls": 28,
+                "ms": 1.4000000059604645
+              },
+              "getError:deleteVertexArray": {
+                "calls": 12,
+                "ms": 1.5
+              },
+              "getError:before deleteBuffer": {
+                "calls": 14,
+                "ms": 2.5999999940395355
+              },
+              "getError:deleteBuffer": {
+                "calls": 14,
+                "ms": 1.199999988079071
+              }
+            }
+          },
+          {
+            "selection": {
+              "head": "crescent-pin",
+              "face": "fitted-mask",
+              "neck": "ribbon-bow",
+              "back": "leaf-brooch"
+            },
+            "ms": 19,
+            "qaProbeMs": 11.600000008940697,
+            "excludingQAProbeMs": 7.399999991059303,
+            "probeDetails": {
+              "isBuffer": {
+                "calls": 56,
+                "ms": 1.9999999850988388
+              },
+              "getError:deleteVertexArray": {
+                "calls": 19,
+                "ms": 2.200000010430813
+              },
+              "getError:before deleteBuffer": {
+                "calls": 28,
+                "ms": 5.200000025331974
+              },
+              "getError:deleteBuffer": {
+                "calls": 28,
+                "ms": 2.199999988079071
+              }
+            }
+          },
+          {
+            "selection": {
+              "head": "crescent-pin",
+              "face": "fitted-mask",
+              "neck": "ribbon-bow",
+              "back": "leaf-brooch"
+            },
+            "ms": 0.10000000149011612,
+            "qaProbeMs": 0,
+            "excludingQAProbeMs": 0.10000000149011612,
+            "probeDetails": {}
+          },
+          {
+            "selection": {
+              "head": "crescent-pin",
+              "face": "fitted-mask",
+              "neck": "ribbon-bow",
+              "back": "leaf-brooch"
+            },
+            "ms": 0.10000000149011612,
+            "qaProbeMs": 0,
+            "excludingQAProbeMs": 0.10000000149011612,
+            "probeDetails": {}
+          }
+        ],
+        "glError": 0,
+        "glErrors": []
+      },
+      {
+        "control": false,
+        "mask": false,
+        "selection": {
+          "head": "sprout-pin",
+          "face": "round-sunglasses",
+          "neck": "ribbon-bow",
+          "back": "leaf-brooch"
+        },
+        "ms": 710.1000000014901,
+        "qaProbeMs": 704.0000000074506,
+        "excludingQAProbeMs": 6.0999999940395355,
+        "probeDetails": {
+          "isBuffer": {
+            "calls": 46,
+            "ms": 2.3999999910593033
+          },
+          "getError:deleteVertexArray": {
+            "calls": 18,
+            "ms": 1.7000000029802322
+          },
+          "getError:before deleteBuffer": {
+            "calls": 23,
+            "ms": 698.5000000149012
+          },
+          "getError:deleteBuffer": {
+            "calls": 23,
+            "ms": 1.3999999985098839
+          }
+        },
+        "allRecentTimings": [
+          {
+            "selection": {
+              "head": "sprout-pin",
+              "face": "fitted-mask",
+              "neck": "ribbon-bow",
+              "back": "leaf-brooch"
+            },
+            "ms": 7.800000004470348,
+            "qaProbeMs": 3,
+            "excludingQAProbeMs": 4.800000004470348,
+            "probeDetails": {
+              "isBuffer": {
+                "calls": 14,
+                "ms": 0.6999999955296516
+              },
+              "getError:deleteVertexArray": {
+                "calls": 6,
+                "ms": 0.6999999955296516
+              },
+              "getError:before deleteBuffer": {
+                "calls": 7,
+                "ms": 1.1000000014901161
+              },
+              "getError:deleteBuffer": {
+                "calls": 7,
+                "ms": 0.5000000074505806
+              }
+            }
+          },
+          {
+            "selection": {
+              "head": "sprout-pin",
+              "face": "round-sunglasses",
+              "neck": "ribbon-bow",
+              "back": "leaf-brooch"
+            },
+            "ms": 710.1000000014901,
+            "qaProbeMs": 704.0000000074506,
+            "excludingQAProbeMs": 6.0999999940395355,
+            "probeDetails": {
+              "isBuffer": {
+                "calls": 46,
+                "ms": 2.3999999910593033
+              },
+              "getError:deleteVertexArray": {
+                "calls": 18,
+                "ms": 1.7000000029802322
+              },
+              "getError:before deleteBuffer": {
+                "calls": 23,
+                "ms": 698.5000000149012
+              },
+              "getError:deleteBuffer": {
+                "calls": 23,
+                "ms": 1.3999999985098839
+              }
+            }
+          },
+          {
+            "selection": {
+              "head": "sprout-pin",
+              "face": "round-sunglasses",
+              "neck": "ribbon-bow",
+              "back": "leaf-brooch"
+            },
+            "ms": 0.10000000149011612,
+            "qaProbeMs": 0,
+            "excludingQAProbeMs": 0.10000000149011612,
+            "probeDetails": {}
+          },
+          {
+            "selection": {
+              "head": "sprout-pin",
+              "face": "round-sunglasses",
+              "neck": "ribbon-bow",
+              "back": "leaf-brooch"
+            },
+            "ms": 0,
+            "qaProbeMs": 0,
+            "excludingQAProbeMs": 0,
+            "probeDetails": {}
+          }
+        ],
+        "glError": 0,
+        "glErrors": []
+      },
+      {
+        "control": "getError-only",
+        "mask": true,
+        "selection": {
+          "head": "crescent-pin",
+          "face": "fitted-mask",
+          "neck": "ribbon-bow",
+          "back": "leaf-brooch"
+        },
+        "ms": 674.8000000044703,
+        "qaProbeMs": 667.7000000029802,
+        "excludingQAProbeMs": 7.100000001490116,
+        "probeDetails": {
+          "isBuffer": {
+            "calls": 56,
+            "ms": 667.6000000014901
+          },
+          "getError:deleteVertexArray": {
+            "calls": 19,
+            "ms": 0
+          },
+          "getError:before deleteBuffer": {
+            "calls": 28,
+            "ms": 0.10000000149011612
+          },
+          "getError:deleteBuffer": {
+            "calls": 28,
+            "ms": 0
+          }
+        },
+        "allRecentTimings": [
+          {
+            "selection": {
+              "head": "crescent-pin",
+              "face": "round-sunglasses",
+              "neck": "ribbon-bow",
+              "back": "leaf-brooch"
+            },
+            "ms": 7,
+            "qaProbeMs": 2.1999999806284904,
+            "excludingQAProbeMs": 4.8000000193715096,
+            "probeDetails": {
+              "isBuffer": {
+                "calls": 28,
+                "ms": 2.099999986588955
+              },
+              "getError:deleteVertexArray": {
+                "calls": 12,
+                "ms": 0
+              },
+              "getError:before deleteBuffer": {
+                "calls": 14,
+                "ms": 0
+              },
+              "getError:deleteBuffer": {
+                "calls": 14,
+                "ms": 0.09999999403953552
+              }
+            }
+          },
+          {
+            "selection": {
+              "head": "crescent-pin",
+              "face": "fitted-mask",
+              "neck": "ribbon-bow",
+              "back": "leaf-brooch"
+            },
+            "ms": 674.8000000044703,
+            "qaProbeMs": 667.7000000029802,
+            "excludingQAProbeMs": 7.100000001490116,
+            "probeDetails": {
+              "isBuffer": {
+                "calls": 56,
+                "ms": 667.6000000014901
+              },
+              "getError:deleteVertexArray": {
+                "calls": 19,
+                "ms": 0
+              },
+              "getError:before deleteBuffer": {
+                "calls": 28,
+                "ms": 0.10000000149011612
+              },
+              "getError:deleteBuffer": {
+                "calls": 28,
+                "ms": 0
+              }
+            }
+          },
+          {
+            "selection": {
+              "head": "crescent-pin",
+              "face": "fitted-mask",
+              "neck": "ribbon-bow",
+              "back": "leaf-brooch"
+            },
+            "ms": 0.09999999403953552,
+            "qaProbeMs": 0,
+            "excludingQAProbeMs": 0.09999999403953552,
+            "probeDetails": {}
+          },
+          {
+            "selection": {
+              "head": "crescent-pin",
+              "face": "fitted-mask",
+              "neck": "ribbon-bow",
+              "back": "leaf-brooch"
+            },
+            "ms": 0,
+            "qaProbeMs": 0,
+            "excludingQAProbeMs": 0,
+            "probeDetails": {}
+          }
+        ],
+        "glError": 0,
+        "glErrors": []
+      },
+      {
+        "control": "getError-only",
+        "mask": false,
+        "selection": {
+          "head": "sprout-pin",
+          "face": "round-sunglasses",
+          "neck": "ribbon-bow",
+          "back": "leaf-brooch"
+        },
+        "ms": 682.8000000044703,
+        "qaProbeMs": 677.2000000029802,
+        "excludingQAProbeMs": 5.600000001490116,
+        "probeDetails": {
+          "isBuffer": {
+            "calls": 46,
+            "ms": 677.2000000029802
+          },
+          "getError:deleteVertexArray": {
+            "calls": 18,
+            "ms": 0
+          },
+          "getError:before deleteBuffer": {
+            "calls": 23,
+            "ms": 0
+          },
+          "getError:deleteBuffer": {
+            "calls": 23,
+            "ms": 0
+          }
+        },
+        "allRecentTimings": [
+          {
+            "selection": {
+              "head": "sprout-pin",
+              "face": "fitted-mask",
+              "neck": "ribbon-bow",
+              "back": "leaf-brooch"
+            },
+            "ms": 2.7999999970197678,
+            "qaProbeMs": 1.1000000089406967,
+            "excludingQAProbeMs": 1.699999988079071,
+            "probeDetails": {
+              "isBuffer": {
+                "calls": 14,
+                "ms": 1.1000000089406967
+              },
+              "getError:deleteVertexArray": {
+                "calls": 6,
+                "ms": 0
+              },
+              "getError:before deleteBuffer": {
+                "calls": 7,
+                "ms": 0
+              },
+              "getError:deleteBuffer": {
+                "calls": 7,
+                "ms": 0
+              }
+            }
+          },
+          {
+            "selection": {
+              "head": "sprout-pin",
+              "face": "round-sunglasses",
+              "neck": "ribbon-bow",
+              "back": "leaf-brooch"
+            },
+            "ms": 682.8000000044703,
+            "qaProbeMs": 677.2000000029802,
+            "excludingQAProbeMs": 5.600000001490116,
+            "probeDetails": {
+              "isBuffer": {
+                "calls": 46,
+                "ms": 677.2000000029802
+              },
+              "getError:deleteVertexArray": {
+                "calls": 18,
+                "ms": 0
+              },
+              "getError:before deleteBuffer": {
+                "calls": 23,
+                "ms": 0
+              },
+              "getError:deleteBuffer": {
+                "calls": 23,
+                "ms": 0
+              }
+            }
+          },
+          {
+            "selection": {
+              "head": "sprout-pin",
+              "face": "round-sunglasses",
+              "neck": "ribbon-bow",
+              "back": "leaf-brooch"
+            },
+            "ms": 0.09999999403953552,
+            "qaProbeMs": 0,
+            "excludingQAProbeMs": 0.09999999403953552,
+            "probeDetails": {}
+          },
+          {
+            "selection": {
+              "head": "sprout-pin",
+              "face": "round-sunglasses",
+              "neck": "ribbon-bow",
+              "back": "leaf-brooch"
+            },
+            "ms": 0.10000000149011612,
+            "qaProbeMs": 0,
+            "excludingQAProbeMs": 0.10000000149011612,
+            "probeDetails": {}
+          }
+        ],
+        "glError": 0,
+        "glErrors": []
+      },
+      {
+        "control": "all-native-queries",
+        "mask": true,
+        "selection": {
+          "head": "crescent-pin",
+          "face": "fitted-mask",
+          "neck": "ribbon-bow",
+          "back": "leaf-brooch"
+        },
+        "ms": 7.300000004470348,
+        "qaProbeMs": 0,
+        "excludingQAProbeMs": 7.300000004470348,
+        "probeDetails": {
+          "getError:deleteVertexArray": {
+            "calls": 19,
+            "ms": 0
+          },
+          "getError:before deleteBuffer": {
+            "calls": 28,
+            "ms": 0
+          },
+          "getError:deleteBuffer": {
+            "calls": 28,
+            "ms": 0
+          }
+        },
+        "allRecentTimings": [
+          {
+            "selection": {
+              "head": "crescent-pin",
+              "face": "round-sunglasses",
+              "neck": "ribbon-bow",
+              "back": "leaf-brooch"
+            },
+            "ms": 2.5,
+            "qaProbeMs": 0,
+            "excludingQAProbeMs": 2.5,
+            "probeDetails": {
+              "getError:deleteVertexArray": {
+                "calls": 12,
+                "ms": 0
+              },
+              "getError:before deleteBuffer": {
+                "calls": 14,
+                "ms": 0
+              },
+              "getError:deleteBuffer": {
+                "calls": 14,
+                "ms": 0
+              }
+            }
+          },
+          {
+            "selection": {
+              "head": "crescent-pin",
+              "face": "fitted-mask",
+              "neck": "ribbon-bow",
+              "back": "leaf-brooch"
+            },
+            "ms": 7.300000004470348,
+            "qaProbeMs": 0,
+            "excludingQAProbeMs": 7.300000004470348,
+            "probeDetails": {
+              "getError:deleteVertexArray": {
+                "calls": 19,
+                "ms": 0
+              },
+              "getError:before deleteBuffer": {
+                "calls": 28,
+                "ms": 0
+              },
+              "getError:deleteBuffer": {
+                "calls": 28,
+                "ms": 0
+              }
+            }
+          },
+          {
+            "selection": {
+              "head": "crescent-pin",
+              "face": "fitted-mask",
+              "neck": "ribbon-bow",
+              "back": "leaf-brooch"
+            },
+            "ms": 0.09999999403953552,
+            "qaProbeMs": 0,
+            "excludingQAProbeMs": 0.09999999403953552,
+            "probeDetails": {}
+          },
+          {
+            "selection": {
+              "head": "crescent-pin",
+              "face": "fitted-mask",
+              "neck": "ribbon-bow",
+              "back": "leaf-brooch"
+            },
+            "ms": 0.10000000149011612,
+            "qaProbeMs": 0,
+            "excludingQAProbeMs": 0.10000000149011612,
+            "probeDetails": {}
+          }
+        ],
+        "glError": 0,
+        "glErrors": []
+      },
+      {
+        "control": "all-native-queries",
+        "mask": false,
+        "selection": {
+          "head": "sprout-pin",
+          "face": "round-sunglasses",
+          "neck": "ribbon-bow",
+          "back": "leaf-brooch"
+        },
+        "ms": 8.199999995529652,
+        "qaProbeMs": 0,
+        "excludingQAProbeMs": 8.199999995529652,
+        "probeDetails": {
+          "getError:deleteVertexArray": {
+            "calls": 18,
+            "ms": 0
+          },
+          "getError:before deleteBuffer": {
+            "calls": 23,
+            "ms": 0
+          },
+          "getError:deleteBuffer": {
+            "calls": 23,
+            "ms": 0
+          }
+        },
+        "allRecentTimings": [
+          {
+            "selection": {
+              "head": "sprout-pin",
+              "face": "fitted-mask",
+              "neck": "ribbon-bow",
+              "back": "leaf-brooch"
+            },
+            "ms": 1.7000000029802322,
+            "qaProbeMs": 0.10000000149011612,
+            "excludingQAProbeMs": 1.6000000014901161,
+            "probeDetails": {
+              "getError:deleteVertexArray": {
+                "calls": 6,
+                "ms": 0
+              },
+              "getError:before deleteBuffer": {
+                "calls": 7,
+                "ms": 0
+              },
+              "getError:deleteBuffer": {
+                "calls": 7,
+                "ms": 0.10000000149011612
+              }
+            }
+          },
+          {
+            "selection": {
+              "head": "sprout-pin",
+              "face": "round-sunglasses",
+              "neck": "ribbon-bow",
+              "back": "leaf-brooch"
+            },
+            "ms": 8.199999995529652,
+            "qaProbeMs": 0,
+            "excludingQAProbeMs": 8.199999995529652,
+            "probeDetails": {
+              "getError:deleteVertexArray": {
+                "calls": 18,
+                "ms": 0
+              },
+              "getError:before deleteBuffer": {
+                "calls": 23,
+                "ms": 0
+              },
+              "getError:deleteBuffer": {
+                "calls": 23,
+                "ms": 0
+              }
+            }
+          },
+          {
+            "selection": {
+              "head": "sprout-pin",
+              "face": "round-sunglasses",
+              "neck": "ribbon-bow",
+              "back": "leaf-brooch"
+            },
+            "ms": 0.20000000298023224,
+            "qaProbeMs": 0,
+            "excludingQAProbeMs": 0.20000000298023224,
+            "probeDetails": {}
+          },
+          {
+            "selection": {
+              "head": "sprout-pin",
+              "face": "round-sunglasses",
+              "neck": "ribbon-bow",
+              "back": "leaf-brooch"
+            },
+            "ms": 0,
+            "qaProbeMs": 0,
+            "excludingQAProbeMs": 0,
+            "probeDetails": {}
+          }
+        ],
+        "glError": 0,
+        "glErrors": []
+      },
+      {
+        "control": false,
+        "mask": true,
+        "selection": {
+          "head": "crescent-pin",
+          "face": "fitted-mask",
+          "neck": "ribbon-bow",
+          "back": "leaf-brooch"
+        },
+        "ms": 697.3000000044703,
+        "qaProbeMs": 688.9000000059605,
+        "excludingQAProbeMs": 8.399999998509884,
+        "probeDetails": {
+          "isBuffer": {
+            "calls": 56,
+            "ms": 3.3000000193715096
+          },
+          "getError:deleteVertexArray": {
+            "calls": 19,
+            "ms": 2.2000000029802322
+          },
+          "getError:before deleteBuffer": {
+            "calls": 28,
+            "ms": 680.3999999836087
+          },
+          "getError:deleteBuffer": {
+            "calls": 28,
+            "ms": 3
+          }
+        },
+        "allRecentTimings": [
+          {
+            "selection": {
+              "head": "crescent-pin",
+              "face": "round-sunglasses",
+              "neck": "ribbon-bow",
+              "back": "leaf-brooch"
+            },
+            "ms": 7.100000001490116,
+            "qaProbeMs": 5.300000004470348,
+            "excludingQAProbeMs": 1.7999999970197678,
+            "probeDetails": {
+              "isBuffer": {
+                "calls": 28,
+                "ms": 1.0999999940395355
+              },
+              "getError:deleteVertexArray": {
+                "calls": 12,
+                "ms": 1.2000000029802322
+              },
+              "getError:before deleteBuffer": {
+                "calls": 14,
+                "ms": 1.7000000029802322
+              },
+              "getError:deleteBuffer": {
+                "calls": 14,
+                "ms": 1.3000000044703484
+              }
+            }
+          },
+          {
+            "selection": {
+              "head": "crescent-pin",
+              "face": "fitted-mask",
+              "neck": "ribbon-bow",
+              "back": "leaf-brooch"
+            },
+            "ms": 697.3000000044703,
+            "qaProbeMs": 688.9000000059605,
+            "excludingQAProbeMs": 8.399999998509884,
+            "probeDetails": {
+              "isBuffer": {
+                "calls": 56,
+                "ms": 3.3000000193715096
+              },
+              "getError:deleteVertexArray": {
+                "calls": 19,
+                "ms": 2.2000000029802322
+              },
+              "getError:before deleteBuffer": {
+                "calls": 28,
+                "ms": 680.3999999836087
+              },
+              "getError:deleteBuffer": {
+                "calls": 28,
+                "ms": 3
+              }
+            }
+          },
+          {
+            "selection": {
+              "head": "crescent-pin",
+              "face": "fitted-mask",
+              "neck": "ribbon-bow",
+              "back": "leaf-brooch"
+            },
+            "ms": 0.10000000149011612,
+            "qaProbeMs": 0,
+            "excludingQAProbeMs": 0.10000000149011612,
+            "probeDetails": {}
+          },
+          {
+            "selection": {
+              "head": "crescent-pin",
+              "face": "fitted-mask",
+              "neck": "ribbon-bow",
+              "back": "leaf-brooch"
+            },
+            "ms": 0.20000000298023224,
+            "qaProbeMs": 0,
+            "excludingQAProbeMs": 0.20000000298023224,
+            "probeDetails": {}
+          }
+        ],
+        "glError": 0,
+        "glErrors": []
+      },
+      {
+        "control": false,
+        "mask": false,
+        "selection": {
+          "head": "sprout-pin",
+          "face": "round-sunglasses",
+          "neck": "ribbon-bow",
+          "back": "leaf-brooch"
+        },
+        "ms": 701.2000000029802,
+        "qaProbeMs": 690.8999999836087,
+        "excludingQAProbeMs": 10.30000001937151,
+        "probeDetails": {
+          "isBuffer": {
+            "calls": 46,
+            "ms": 3.3999999687075615
+          },
+          "getError:deleteVertexArray": {
+            "calls": 18,
+            "ms": 2.100000001490116
+          },
+          "getError:before deleteBuffer": {
+            "calls": 23,
+            "ms": 679.3999999910593
+          },
+          "getError:deleteBuffer": {
+            "calls": 23,
+            "ms": 6.000000022351742
+          }
+        },
+        "allRecentTimings": [
+          {
+            "selection": {
+              "head": "sprout-pin",
+              "face": "fitted-mask",
+              "neck": "ribbon-bow",
+              "back": "leaf-brooch"
+            },
+            "ms": 5.600000001490116,
+            "qaProbeMs": 2.5,
+            "excludingQAProbeMs": 3.100000001490116,
+            "probeDetails": {
+              "isBuffer": {
+                "calls": 14,
+                "ms": 0.3999999910593033
+              },
+              "getError:deleteVertexArray": {
+                "calls": 6,
+                "ms": 0.5999999940395355
+              },
+              "getError:before deleteBuffer": {
+                "calls": 7,
+                "ms": 1.0000000149011612
+              },
+              "getError:deleteBuffer": {
+                "calls": 7,
+                "ms": 0.5
+              }
+            }
+          },
+          {
+            "selection": {
+              "head": "sprout-pin",
+              "face": "round-sunglasses",
+              "neck": "ribbon-bow",
+              "back": "leaf-brooch"
+            },
+            "ms": 701.2000000029802,
+            "qaProbeMs": 690.8999999836087,
+            "excludingQAProbeMs": 10.30000001937151,
+            "probeDetails": {
+              "isBuffer": {
+                "calls": 46,
+                "ms": 3.3999999687075615
+              },
+              "getError:deleteVertexArray": {
+                "calls": 18,
+                "ms": 2.100000001490116
+              },
+              "getError:before deleteBuffer": {
+                "calls": 23,
+                "ms": 679.3999999910593
+              },
+              "getError:deleteBuffer": {
+                "calls": 23,
+                "ms": 6.000000022351742
+              }
+            }
+          },
+          {
+            "selection": {
+              "head": "sprout-pin",
+              "face": "round-sunglasses",
+              "neck": "ribbon-bow",
+              "back": "leaf-brooch"
+            },
+            "ms": 0.10000000149011612,
+            "qaProbeMs": 0,
+            "excludingQAProbeMs": 0.10000000149011612,
+            "probeDetails": {}
+          },
+          {
+            "selection": {
+              "head": "sprout-pin",
+              "face": "round-sunglasses",
+              "neck": "ribbon-bow",
+              "back": "leaf-brooch"
+            },
+            "ms": 0.19999999552965164,
+            "qaProbeMs": 0,
+            "excludingQAProbeMs": 0.19999999552965164,
+            "probeDetails": {}
+          }
+        ],
+        "glError": 0,
+        "glErrors": []
+      },
+      {
+        "control": "all-native-queries",
+        "mask": true,
+        "selection": {
+          "head": "crescent-pin",
+          "face": "fitted-mask",
+          "neck": "ribbon-bow",
+          "back": "leaf-brooch"
+        },
+        "ms": 8.600000001490116,
+        "qaProbeMs": 0,
+        "excludingQAProbeMs": 8.600000001490116,
+        "probeDetails": {
+          "getError:deleteVertexArray": {
+            "calls": 19,
+            "ms": 0
+          },
+          "getError:before deleteBuffer": {
+            "calls": 28,
+            "ms": 0
+          },
+          "getError:deleteBuffer": {
+            "calls": 28,
+            "ms": 0
+          }
+        },
+        "allRecentTimings": [
+          {
+            "selection": {
+              "head": "crescent-pin",
+              "face": "round-sunglasses",
+              "neck": "ribbon-bow",
+              "back": "leaf-brooch"
+            },
+            "ms": 2,
+            "qaProbeMs": 0.10000000149011612,
+            "excludingQAProbeMs": 1.8999999985098839,
+            "probeDetails": {
+              "getError:deleteVertexArray": {
+                "calls": 12,
+                "ms": 0
+              },
+              "getError:before deleteBuffer": {
+                "calls": 14,
+                "ms": 0
+              },
+              "getError:deleteBuffer": {
+                "calls": 14,
+                "ms": 0.10000000149011612
+              }
+            }
+          },
+          {
+            "selection": {
+              "head": "crescent-pin",
+              "face": "fitted-mask",
+              "neck": "ribbon-bow",
+              "back": "leaf-brooch"
+            },
+            "ms": 8.600000001490116,
+            "qaProbeMs": 0,
+            "excludingQAProbeMs": 8.600000001490116,
+            "probeDetails": {
+              "getError:deleteVertexArray": {
+                "calls": 19,
+                "ms": 0
+              },
+              "getError:before deleteBuffer": {
+                "calls": 28,
+                "ms": 0
+              },
+              "getError:deleteBuffer": {
+                "calls": 28,
+                "ms": 0
+              }
+            }
+          },
+          {
+            "selection": {
+              "head": "crescent-pin",
+              "face": "fitted-mask",
+              "neck": "ribbon-bow",
+              "back": "leaf-brooch"
+            },
+            "ms": 0,
+            "qaProbeMs": 0,
+            "excludingQAProbeMs": 0,
+            "probeDetails": {}
+          },
+          {
+            "selection": {
+              "head": "crescent-pin",
+              "face": "fitted-mask",
+              "neck": "ribbon-bow",
+              "back": "leaf-brooch"
+            },
+            "ms": 0,
+            "qaProbeMs": 0,
+            "excludingQAProbeMs": 0,
+            "probeDetails": {}
+          }
+        ],
+        "glError": 0,
+        "glErrors": []
+      },
+      {
+        "control": "all-native-queries",
+        "mask": false,
+        "selection": {
+          "head": "sprout-pin",
+          "face": "round-sunglasses",
+          "neck": "ribbon-bow",
+          "back": "leaf-brooch"
+        },
+        "ms": 5.600000001490116,
+        "qaProbeMs": 0,
+        "excludingQAProbeMs": 5.600000001490116,
+        "probeDetails": {
+          "getError:deleteVertexArray": {
+            "calls": 18,
+            "ms": 0
+          },
+          "getError:before deleteBuffer": {
+            "calls": 23,
+            "ms": 0
+          },
+          "getError:deleteBuffer": {
+            "calls": 23,
+            "ms": 0
+          }
+        },
+        "allRecentTimings": [
+          {
+            "selection": {
+              "head": "sprout-pin",
+              "face": "fitted-mask",
+              "neck": "ribbon-bow",
+              "back": "leaf-brooch"
+            },
+            "ms": 2.4000000059604645,
+            "qaProbeMs": 0,
+            "excludingQAProbeMs": 2.4000000059604645,
+            "probeDetails": {
+              "getError:deleteVertexArray": {
+                "calls": 6,
+                "ms": 0
+              },
+              "getError:before deleteBuffer": {
+                "calls": 7,
+                "ms": 0
+              },
+              "getError:deleteBuffer": {
+                "calls": 7,
+                "ms": 0
+              }
+            }
+          },
+          {
+            "selection": {
+              "head": "sprout-pin",
+              "face": "round-sunglasses",
+              "neck": "ribbon-bow",
+              "back": "leaf-brooch"
+            },
+            "ms": 5.600000001490116,
+            "qaProbeMs": 0,
+            "excludingQAProbeMs": 5.600000001490116,
+            "probeDetails": {
+              "getError:deleteVertexArray": {
+                "calls": 18,
+                "ms": 0
+              },
+              "getError:before deleteBuffer": {
+                "calls": 23,
+                "ms": 0
+              },
+              "getError:deleteBuffer": {
+                "calls": 23,
+                "ms": 0
+              }
+            }
+          },
+          {
+            "selection": {
+              "head": "sprout-pin",
+              "face": "round-sunglasses",
+              "neck": "ribbon-bow",
+              "back": "leaf-brooch"
+            },
+            "ms": 0.10000000149011612,
+            "qaProbeMs": 0,
+            "excludingQAProbeMs": 0.10000000149011612,
+            "probeDetails": {}
+          },
+          {
+            "selection": {
+              "head": "sprout-pin",
+              "face": "round-sunglasses",
+              "neck": "ribbon-bow",
+              "back": "leaf-brooch"
+            },
+            "ms": 0.09999999403953552,
+            "qaProbeMs": 0,
+            "excludingQAProbeMs": 0.09999999403953552,
+            "probeDetails": {}
+          }
+        ],
+        "glError": 0,
+        "glErrors": []
+      }
+    ],
+    "note": "Diagnostic control disables harness-added getError alone or both getError/isBuffer inside fashion.set only. Native production delete calls stay active; skipped liveness queries are null. Queries outside set remain active. Control lifecycle is not strict native proof and this is not a full40 PASS."
+  }
+}

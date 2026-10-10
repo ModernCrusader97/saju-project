@@ -1,0 +1,2354 @@
+{
+  "status": "PASS",
+  "baseline": "5a8fae1c90f1fbac2a9ee6b00bdce7cab7572dbd",
+  "candidateHEAD": "57f5939ea65a46047b817fc91a2d4345f23b04a4",
+  "scope": "All tracked baseline files except docs/ and scripts/qa/. This includes every production app/component/lib/hook, source/runtime asset, package/dependency lock, config, auth, DB, API and hosting file.",
+  "originalProductionFiles": 327,
+  "originalAssets": 172,
+  "changedExistingProductionFiles": [
+    "app/planet/page.tsx",
+    "components/planet/ElementalSpiritCanvas.tsx",
+    "lib/planet/approved-jade-spirit.ts",
+    "lib/planet/elemental-spirit.ts"
+  ],
+  "originalAssetsUnchanged": true,
+  "runtimeBodyMatchesOriginal": true,
+  "bodyGLBSHA256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+  "evidenceOnlyExcludedPaths": [
+    "docs/CHAT_RECOVERY.md",
+    "docs/GALAXY_ORBIT_ANCHOR_FIX.md",
+    "docs/MODAL_KEYBOARD_MAINTENANCE.md",
+    "docs/PERFORMANCE_RECOVERY.md",
+    "docs/SAVED_ARCHIVE_OPTIMIZATION.md",
+    "docs/SITES_V30_GALAXY_FIX_PORT.md",
+    "docs/SOURCE_MANIFEST.json",
+    "docs/SOURCE_SNAPSHOT.md",
+    "docs/SPIRIT_ATTACHED_EFFECTS_20261010.md",
+    "docs/SPIRIT_DEPTH_AND_PETS.md",
+    "docs/SPIRIT_SURFACE_ZODIAC_V30_CANDIDATE.md",
+    "docs/UNIVERSE_INTEGRATION.md",
+    "docs/qa/sites-v30-galaxy-fixes/after-build.log",
+    "docs/qa/sites-v30-galaxy-fixes/after-entry-60fps-168.png",
+    "docs/qa/sites-v30-galaxy-fixes/after-entry-60fps-177.png",
+    "docs/qa/sites-v30-galaxy-fixes/after-entry-appearance-browser.json",
+    "docs/qa/sites-v30-galaxy-fixes/after-entry-cpu.json",
+    "docs/qa/sites-v30-galaxy-fixes/after-galaxy-owner-archipelago.png",
+    "docs/qa/sites-v30-galaxy-fixes/after-galaxy-owner-pangaea.png",
+    "docs/qa/sites-v30-galaxy-fixes/after-lint.json",
+    "docs/qa/sites-v30-galaxy-fixes/after-owner-effects-cpu.json",
+    "docs/qa/sites-v30-galaxy-fixes/after-personal-archipelago.png",
+    "docs/qa/sites-v30-galaxy-fixes/after-personal-pangaea.png",
+    "docs/qa/sites-v30-galaxy-fixes/after-ten-stem-galaxy.png",
+    "docs/qa/sites-v30-galaxy-fixes/approved-assets.log",
+    "docs/qa/sites-v30-galaxy-fixes/approved-glb-cpu.json",
+    "docs/qa/sites-v30-galaxy-fixes/before-build.log",
+    "docs/qa/sites-v30-galaxy-fixes/before-entry-60fps-168.png",
+    "docs/qa/sites-v30-galaxy-fixes/before-entry-60fps-177.png",
+    "docs/qa/sites-v30-galaxy-fixes/before-entry-appearance-browser.json",
+    "docs/qa/sites-v30-galaxy-fixes/before-entry-cpu.json",
+    "docs/qa/sites-v30-galaxy-fixes/before-galaxy-owner-pangaea.png",
+    "docs/qa/sites-v30-galaxy-fixes/before-lint.json",
+    "docs/qa/sites-v30-galaxy-fixes/before-owner-effects-cpu.json",
+    "docs/qa/sites-v30-galaxy-fixes/before-personal-archipelago.png",
+    "docs/qa/sites-v30-galaxy-fixes/before-personal-pangaea.png",
+    "docs/qa/sites-v30-galaxy-fixes/comparison-summary.json",
+    "docs/qa/sites-v30-galaxy-fixes/connection-sampling-regression.json",
+    "docs/qa/sites-v30-galaxy-fixes/hosted-network-limit.json",
+    "docs/qa/sites-v30-galaxy-fixes/modal-regression.json",
+    "docs/qa/sites-v30-galaxy-fixes/new-files-lint.json",
+    "docs/qa/sites-v30-galaxy-fixes/orbit-anchor-regression.json",
+    "docs/qa/sites-v30-galaxy-fixes/preservation-audit.json",
+    "docs/qa/sites-v30-galaxy-fixes/validation-summary.json",
+    "docs/qa/sites-v30-galaxy-fixes/visibility-loop-regression.json",
+    "docs/qa/spirit-attached-effects-20261010/README.md",
+    "docs/qa/spirit-attached-effects-20261010/affine-normal-after.json",
+    "docs/qa/spirit-attached-effects-20261010/affine-normal-before.json",
+    "docs/qa/spirit-attached-effects-20261010/affine-normal-fix.md",
+    "docs/qa/spirit-attached-effects-20261010/affine-sand-cpu.json",
+    "docs/qa/spirit-attached-effects-20261010/affine-sand-webgl.json",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing.md",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/compatible-alpha-fire-water-jade-recovery/harness.mjs",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/compatible-alpha-fire-water-jade-recovery/report.json",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/compatible-alpha-fire-water-jade-recovery/계-high-front.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/compatible-alpha-fire-water-jade-recovery/계-high-side-all-native.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/compatible-alpha-fire-water-jade-recovery/계-high-side-ui-all-native.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/compatible-alpha-fire-water-jade-recovery/계-high-side-ui-selected.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/compatible-alpha-fire-water-jade-recovery/계-high-side.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/compatible-alpha-fire-water-jade-recovery/계-high-wave.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/compatible-alpha-fire-water-jade-recovery/계-low-front.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/compatible-alpha-fire-water-jade-recovery/계-low-side-all-native.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/compatible-alpha-fire-water-jade-recovery/계-low-side-ui-all-native.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/compatible-alpha-fire-water-jade-recovery/계-low-side-ui-selected.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/compatible-alpha-fire-water-jade-recovery/계-low-side.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/compatible-alpha-fire-water-jade-recovery/계-low-wave.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/compatible-alpha-fire-water-jade-recovery/기-high-jade-restored-moving.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/compatible-alpha-fire-water-jade-recovery/기-low-jade-restored-moving.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/compatible-alpha-fire-water-jade-recovery/병-high-front.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/compatible-alpha-fire-water-jade-recovery/병-high-side.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/compatible-alpha-fire-water-jade-recovery/병-high-wave.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/compatible-alpha-fire-water-jade-recovery/병-low-front.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/compatible-alpha-fire-water-jade-recovery/병-low-side.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/compatible-alpha-fire-water-jade-recovery/병-low-wave.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/original-premultiplied-fire-reference/harness.mjs",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/original-premultiplied-fire-reference/report.json",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/original-premultiplied-fire-reference/병-high-front.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/original-premultiplied-fire-reference/병-high-side.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/original-premultiplied-fire-reference/병-high-wave.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/premultiplied-white-ui-and-jade-recovery/harness.mjs",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/premultiplied-white-ui-and-jade-recovery/report.json",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/premultiplied-white-ui-and-jade-recovery/계-high-front.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/premultiplied-white-ui-and-jade-recovery/계-high-side-all-native.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/premultiplied-white-ui-and-jade-recovery/계-high-side-ui-all-native.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/premultiplied-white-ui-and-jade-recovery/계-high-side-ui-selected.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/premultiplied-white-ui-and-jade-recovery/계-high-side.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/premultiplied-white-ui-and-jade-recovery/계-high-wave.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/premultiplied-white-ui-and-jade-recovery/계-low-front.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/premultiplied-white-ui-and-jade-recovery/계-low-side-all-native.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/premultiplied-white-ui-and-jade-recovery/계-low-side-ui-all-native.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/premultiplied-white-ui-and-jade-recovery/계-low-side-ui-selected.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/premultiplied-white-ui-and-jade-recovery/계-low-side.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/premultiplied-white-ui-and-jade-recovery/계-low-wave.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/premultiplied-white-ui-and-jade-recovery/기-high-jade-restored-moving.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/premultiplied-white-ui-and-jade-recovery/기-low-jade-restored-moving.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/straight-alpha-water-and-jade-recovery/harness.mjs",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/straight-alpha-water-and-jade-recovery/report.json",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/straight-alpha-water-and-jade-recovery/계-high-front.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/straight-alpha-water-and-jade-recovery/계-high-side-all-native.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/straight-alpha-water-and-jade-recovery/계-high-side-ui-all-native.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/straight-alpha-water-and-jade-recovery/계-high-side-ui-selected.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/straight-alpha-water-and-jade-recovery/계-high-side.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/straight-alpha-water-and-jade-recovery/계-high-wave.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/straight-alpha-water-and-jade-recovery/계-low-front.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/straight-alpha-water-and-jade-recovery/계-low-side-all-native.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/straight-alpha-water-and-jade-recovery/계-low-side-ui-all-native.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/straight-alpha-water-and-jade-recovery/계-low-side-ui-selected.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/straight-alpha-water-and-jade-recovery/계-low-side.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/straight-alpha-water-and-jade-recovery/계-low-wave.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/straight-alpha-water-and-jade-recovery/기-high-jade-restored-moving.png",
+    "docs/qa/spirit-attached-effects-20261010/alpha-compositing/straight-alpha-water-and-jade-recovery/기-low-jade-restored-moving.png",
+    "docs/qa/spirit-attached-effects-20261010/browser-report.json",
+    "docs/qa/spirit-attached-effects-20261010/buffer-lifecycle.json",
+    "docs/qa/spirit-attached-effects-20261010/context-recovery.md",
+    "docs/qa/spirit-attached-effects-20261010/context-recovery/environment-fail-harness.mjs",
+    "docs/qa/spirit-attached-effects-20261010/context-recovery/environment-fail.json",
+    "docs/qa/spirit-attached-effects-20261010/context-recovery/environment-only-teardown-fail-harness.mjs",
+    "docs/qa/spirit-attached-effects-20261010/context-recovery/environment-only-teardown-fail.json",
+    "docs/qa/spirit-attached-effects-20261010/context-recovery/focused-pass-harness.mjs",
+    "docs/qa/spirit-attached-effects-20261010/context-recovery/focused-pass.json",
+    "docs/qa/spirit-attached-effects-20261010/motion-cpu.json",
+    "docs/qa/spirit-attached-effects-20261010/preservation.json",
+    "docs/qa/spirit-attached-effects-20261010/room-environment-cleanup.md",
+    "docs/qa/spirit-attached-effects-20261010/room-environment-cleanup/previous-failure/README.md",
+    "docs/qa/spirit-attached-effects-20261010/room-environment-cleanup/previous-failure/creation-stack-fail-harness.mjs",
+    "docs/qa/spirit-attached-effects-20261010/room-environment-cleanup/previous-failure/creation-stack-fail.json",
+    "docs/qa/spirit-attached-effects-20261010/room-environment-cleanup/previous-failure/first-retired-buffer-fail-harness.mjs",
+    "docs/qa/spirit-attached-effects-20261010/room-environment-cleanup/previous-failure/first-retired-buffer-fail.json",
+    "docs/qa/spirit-attached-effects-20261010/room-environment-cleanup/previous-failure/ownership-evidence.json",
+    "docs/qa/spirit-attached-effects-20261010/room-environment-cleanup/previous-failure/sha256-manifest.json",
+    "docs/qa/spirit-attached-effects-20261010/sand-build-contention.json",
+    "docs/qa/spirit-attached-effects-20261010/sha256-manifest.json",
+    "docs/qa/spirit-attached-effects-20261010/triangle-walk.json",
+    "docs/qa/spirit-attached-effects-20261010/vegetation.json",
+    "docs/qa/spirit-attached-effects-20261010/verification.json",
+    "docs/qa/spirit-attached-effects-20261010/worker/README.md",
+    "docs/qa/spirit-attached-effects-20261010/worker/galaxy-entry-report.json",
+    "docs/qa/spirit-attached-effects-20261010/worker/harness.mjs",
+    "docs/qa/spirit-attached-effects-20261010/worker/report.json",
+    "docs/qa/spirit-attached-effects-20261010/worker/갑-high-front.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/갑-high-side.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/갑-high-wave.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/갑-low-front.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/갑-low-side.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/갑-low-wave.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/계-high-front.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/계-high-side-all-native.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/계-high-side-ui-all-native.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/계-high-side-ui-selected.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/계-high-side.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/계-high-wave.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/계-low-front.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/계-low-side-all-native.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/계-low-side-ui-all-native.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/계-low-side-ui-selected.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/계-low-side.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/계-low-wave.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/기-high-jade-restored-moving.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/기-low-jade-restored-moving.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/무-high-front.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/무-high-side.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/무-high-wave.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/무-low-front.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/무-low-side.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/무-low-wave.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/병-high-front.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/병-high-side.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/병-high-wave.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/병-low-front.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/병-low-side.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/병-low-wave.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/을-high-front.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/을-high-side.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/을-high-wave.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/을-low-front.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/을-low-side.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/을-low-wave.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/정-high-front.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/정-high-side.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/정-high-wave.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/정-low-front.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/정-low-side.png",
+    "docs/qa/spirit-attached-effects-20261010/worker/정-low-wave.png",
+    "docs/qa/spirit-attached-effects-20261010/갑-front.png",
+    "docs/qa/spirit-attached-effects-20261010/갑-motion-a.png",
+    "docs/qa/spirit-attached-effects-20261010/갑-motion-b.png",
+    "docs/qa/spirit-attached-effects-20261010/갑-side.png",
+    "docs/qa/spirit-attached-effects-20261010/갑-wave.png",
+    "docs/qa/spirit-attached-effects-20261010/경-wave.png",
+    "docs/qa/spirit-attached-effects-20261010/계-front.png",
+    "docs/qa/spirit-attached-effects-20261010/계-motion-a.png",
+    "docs/qa/spirit-attached-effects-20261010/계-motion-b.png",
+    "docs/qa/spirit-attached-effects-20261010/계-side.png",
+    "docs/qa/spirit-attached-effects-20261010/계-wave.png",
+    "docs/qa/spirit-attached-effects-20261010/기-wave.png",
+    "docs/qa/spirit-attached-effects-20261010/무-front.png",
+    "docs/qa/spirit-attached-effects-20261010/무-motion-a.png",
+    "docs/qa/spirit-attached-effects-20261010/무-motion-b.png",
+    "docs/qa/spirit-attached-effects-20261010/무-side.png",
+    "docs/qa/spirit-attached-effects-20261010/무-wave.png",
+    "docs/qa/spirit-attached-effects-20261010/병-front.png",
+    "docs/qa/spirit-attached-effects-20261010/병-motion-a.png",
+    "docs/qa/spirit-attached-effects-20261010/병-motion-b.png",
+    "docs/qa/spirit-attached-effects-20261010/병-side.png",
+    "docs/qa/spirit-attached-effects-20261010/병-wave.png",
+    "docs/qa/spirit-attached-effects-20261010/신-wave.png",
+    "docs/qa/spirit-attached-effects-20261010/을-front.png",
+    "docs/qa/spirit-attached-effects-20261010/을-motion-a.png",
+    "docs/qa/spirit-attached-effects-20261010/을-motion-b.png",
+    "docs/qa/spirit-attached-effects-20261010/을-side.png",
+    "docs/qa/spirit-attached-effects-20261010/을-wave.png",
+    "docs/qa/spirit-attached-effects-20261010/임-wave.png",
+    "docs/qa/spirit-attached-effects-20261010/정-front.png",
+    "docs/qa/spirit-attached-effects-20261010/정-motion-a.png",
+    "docs/qa/spirit-attached-effects-20261010/정-motion-b.png",
+    "docs/qa/spirit-attached-effects-20261010/정-side.png",
+    "docs/qa/spirit-attached-effects-20261010/정-wave.png",
+    "docs/qa/spirit-depth-pets/after-controlled-front.png",
+    "docs/qa/spirit-depth-pets/after-controlled-oblique.png",
+    "docs/qa/spirit-depth-pets/after-controlled-side.png",
+    "docs/qa/spirit-depth-pets/after-front.png",
+    "docs/qa/spirit-depth-pets/after-mobile-front.png",
+    "docs/qa/spirit-depth-pets/after-mobile-side.png",
+    "docs/qa/spirit-depth-pets/after-oblique.png",
+    "docs/qa/spirit-depth-pets/after-side.png",
+    "docs/qa/spirit-depth-pets/baseline-lint.json",
+    "docs/qa/spirit-depth-pets/before-front.png",
+    "docs/qa/spirit-depth-pets/before-oblique.png",
+    "docs/qa/spirit-depth-pets/before-side.png",
+    "docs/qa/spirit-depth-pets/before-site-v24.png",
+    "docs/qa/spirit-depth-pets/browser-report.json",
+    "docs/qa/spirit-depth-pets/depth-only-side.png",
+    "docs/qa/spirit-depth-pets/depth-pets-report.json",
+    "docs/qa/spirit-depth-pets/lint-followup.json",
+    "docs/qa/spirit-depth-pets/native-front.png",
+    "docs/qa/spirit-depth-pets/native-inspection.json",
+    "docs/qa/spirit-depth-pets/native-oblique.png",
+    "docs/qa/spirit-depth-pets/native-side.png",
+    "docs/qa/spirit-depth-pets/twelve-pets.png",
+    "docs/qa/spirit-fire-shadow/README.md",
+    "docs/qa/spirit-fire-shadow/after/report.json",
+    "docs/qa/spirit-fire-shadow/after/병인-canvas-paused.png",
+    "docs/qa/spirit-fire-shadow/after/병인-canvas-rotated.png",
+    "docs/qa/spirit-fire-shadow/after/병인-high-front.png",
+    "docs/qa/spirit-fire-shadow/after/병인-high-oblique.png",
+    "docs/qa/spirit-fire-shadow/after/병인-high-side.png",
+    "docs/qa/spirit-fire-shadow/after/정묘-canvas-paused.png",
+    "docs/qa/spirit-fire-shadow/after/정묘-canvas-rotated.png",
+    "docs/qa/spirit-fire-shadow/after/정묘-high-front.png",
+    "docs/qa/spirit-fire-shadow/after/정묘-high-oblique.png",
+    "docs/qa/spirit-fire-shadow/after/정묘-high-side.png",
+    "docs/qa/spirit-fire-shadow/before/report.json",
+    "docs/qa/spirit-fire-shadow/before/병인-canvas-paused.png",
+    "docs/qa/spirit-fire-shadow/before/병인-canvas-rotated.png",
+    "docs/qa/spirit-fire-shadow/before/병인-high-front.png",
+    "docs/qa/spirit-fire-shadow/before/병인-high-oblique.png",
+    "docs/qa/spirit-fire-shadow/before/병인-high-side.png",
+    "docs/qa/spirit-fire-shadow/before/정묘-canvas-paused.png",
+    "docs/qa/spirit-fire-shadow/before/정묘-canvas-rotated.png",
+    "docs/qa/spirit-fire-shadow/before/정묘-high-front.png",
+    "docs/qa/spirit-fire-shadow/before/정묘-high-oblique.png",
+    "docs/qa/spirit-fire-shadow/before/정묘-high-side.png",
+    "docs/qa/spirit-fire-shadow/comparison.json",
+    "docs/qa/spirit-fire-shadow/negative-control-assertion.json",
+    "docs/qa/spirit-surface-v30/after/coordinates-front.png",
+    "docs/qa/spirit-surface-v30/after/coordinates-oblique.png",
+    "docs/qa/spirit-surface-v30/after/coordinates-side.png",
+    "docs/qa/spirit-surface-v30/after/fire-front.png",
+    "docs/qa/spirit-surface-v30/after/fire-oblique.png",
+    "docs/qa/spirit-surface-v30/after/fire-side.png",
+    "docs/qa/spirit-surface-v30/after/report.json",
+    "docs/qa/spirit-surface-v30/approved-glb-cpu.json",
+    "docs/qa/spirit-surface-v30/before/coordinates-front.png",
+    "docs/qa/spirit-surface-v30/before/coordinates-oblique.png",
+    "docs/qa/spirit-surface-v30/before/coordinates-side.png",
+    "docs/qa/spirit-surface-v30/before/fire-front.png",
+    "docs/qa/spirit-surface-v30/before/fire-oblique.png",
+    "docs/qa/spirit-surface-v30/before/fire-side.png",
+    "docs/qa/spirit-surface-v30/before/report.json",
+    "docs/qa/spirit-surface-v30/build.log",
+    "docs/qa/spirit-surface-v30/coordinate-density.json",
+    "docs/qa/spirit-surface-v30/galaxy-entry-regression.json",
+    "docs/qa/spirit-surface-v30/galaxy-owner-effects-regression.json",
+    "docs/qa/spirit-surface-v30/galaxy-regression.txt",
+    "docs/qa/spirit-surface-v30/gpu-buffer-lifecycle.json",
+    "docs/qa/spirit-surface-v30/source-lint-comparison.json",
+    "docs/qa/spirit-surface-v30/source-preservation.json",
+    "docs/qa/spirit-surface-v30/ten-stems-after.json",
+    "docs/qa/spirit-surface-v30/ten-stems-before.json",
+    "docs/qa/spirit-surface-v30/timing-comparison.json",
+    "docs/qa/spirit-surface-v30/verification-summary.json",
+    "docs/qa/surface-fissure-sand-20261010/README.md",
+    "docs/qa/surface-fissure-sand-20261010/baseline-summary.json",
+    "docs/qa/surface-fissure-sand-20261010/browser-report.json",
+    "docs/qa/surface-fissure-sand-20261010/cpu-report.json",
+    "docs/qa/surface-fissure-sand-20261010/evidence-manifest.json",
+    "docs/qa/surface-fissure-sand-20261010/sand-high-front.png",
+    "docs/qa/surface-fissure-sand-20261010/sand-high-motion-0.00.png",
+    "docs/qa/surface-fissure-sand-20261010/sand-high-motion-0.12.png",
+    "docs/qa/surface-fissure-sand-20261010/sand-high-motion-0.24.png",
+    "docs/qa/surface-fissure-sand-20261010/sand-high-oblique-wave.png",
+    "docs/qa/surface-fissure-sand-20261010/sand-high-side.png",
+    "docs/qa/surface-fissure-sand-20261010/sand-low-front.png",
+    "docs/qa/surface-fissure-sand-20261010/sand-low-motion-0.00.png",
+    "docs/qa/surface-fissure-sand-20261010/sand-low-motion-0.12.png",
+    "docs/qa/surface-fissure-sand-20261010/sand-low-motion-0.24.png",
+    "docs/qa/surface-fissure-sand-20261010/sand-low-oblique-wave.png",
+    "docs/qa/surface-fissure-sand-20261010/sand-low-side.png",
+    "docs/qa/surface-fissure-sand-20261010/targeted-checks.json",
+    "docs/qa/surface-fissure-sand-20261010/verification.txt",
+    "docs/qa/surface-sliding-dew/README.md",
+    "docs/qa/surface-sliding-dew/cpu-report.json",
+    "docs/qa/surface-vegetation-actual-b.md",
+    "docs/qa/universe/browser-report.json",
+    "docs/qa/universe/galaxy-390.png",
+    "docs/qa/universe/galaxy-mobile-coarse.png",
+    "docs/qa/universe/galaxy-webgl-fallback-320.png",
+    "docs/qa/universe/integration-report.json",
+    "docs/qa/universe/planet-390.png",
+    "docs/qa/universe/spirit-390.png",
+    "docs/qa/zodiac-pet-assets/README.md",
+    "docs/qa/zodiac-pet-assets/runtime-audit/README.md",
+    "docs/qa/zodiac-pet-assets/runtime-audit/saju-existing-zodiac-cpu-parity.json",
+    "docs/qa/zodiac-pet-assets/runtime-audit/saju-existing-zodiac-extra-history-scan.json",
+    "docs/qa/zodiac-pet-assets/runtime-audit/saju-existing-zodiac-forensic-20261010.json",
+    "docs/qa/zodiac-pet-assets/runtime-audit/saju-existing-zodiac-forensic-20261010.md",
+    "docs/qa/zodiac-pet-assets/runtime-audit/saju-existing-zodiac-generator-parity.json",
+    "docs/qa/zodiac-pet-assets/runtime-audit/saju-existing-zodiac-parity.cjs",
+    "docs/qa/zodiac-pet-assets/runtime-audit/saju-existing-zodiac-remote-heads.json",
+    "docs/qa/zodiac-pet-assets/runtime-audit/saju-existing-zodiac-visual-provenance.json",
+    "docs/qa/zodiac-pet-assets/runtime-audit/sha256-manifest.json",
+    "docs/qa/zodiac-pet-assets/runtime-audit/sites-archive-preservation-report.txt",
+    "docs/qa/zodiac-pet-assets/runtime-audit/sites-current-feature-manifest-snapshot.json",
+    "docs/qa/zodiac-pet-assets/runtime-audit/sites-native-version-provenance.json",
+    "docs/qa/zodiac-pet-assets/runtime-audit/sites-report.md",
+    "docs/qa/zodiac-pet-assets/runtime-audit/sites-runtime-linkage.json",
+    "docs/qa/zodiac-pet-assets/source-inventory.json",
+    "scripts/qa/affine-instance-normals.mjs",
+    "scripts/qa/approved-jade-glb-cpu.mjs",
+    "scripts/qa/approved-spirit-motion.mjs",
+    "scripts/qa/chat-recovery-dom.mjs",
+    "scripts/qa/galaxy-connection-sampling.mjs",
+    "scripts/qa/galaxy-entry-appearance-browser.mjs",
+    "scripts/qa/galaxy-entry-motion.mjs",
+    "scripts/qa/galaxy-orbit-anchor.mjs",
+    "scripts/qa/galaxy-owner-effects.mjs",
+    "scripts/qa/galaxy-owner-mask-session.mjs",
+    "scripts/qa/galaxy-scene-host.mjs",
+    "scripts/qa/load-ts.cjs",
+    "scripts/qa/modal-accessibility-dom.mjs",
+    "scripts/qa/saved-archive-dom.mjs",
+    "scripts/qa/saved-archive.mjs",
+    "scripts/qa/spirit-attachment-browser.mjs",
+    "scripts/qa/spirit-attachment-preservation.mjs",
+    "scripts/qa/spirit-attachment-worker.mjs",
+    "scripts/qa/spirit-coordinate-density.mjs",
+    "scripts/qa/spirit-depth-pets.mjs",
+    "scripts/qa/spirit-fire-shadow-browser.mjs",
+    "scripts/qa/spirit-fire-surface-browser.mjs",
+    "scripts/qa/spirit-vertex-colors.cjs",
+    "scripts/qa/surface-fissure-sand.mjs",
+    "scripts/qa/surface-sliding-dew.mjs",
+    "scripts/qa/surface-triangle-walk.mjs",
+    "scripts/qa/surface-vegetation.mjs",
+    "scripts/qa/ten-stem-browser.mjs",
+    "scripts/qa/ten-stem-buffer-lifecycle.mjs",
+    "scripts/qa/ten-stem-materials.mjs",
+    "scripts/qa/universe-browser.mjs",
+    "scripts/qa/verify-approved-assets.mjs",
+    "scripts/qa/visibility-loop.mjs",
+    "scripts/qa/zodiac-pet-loader.mjs"
+  ],
+  "files": [
+    {
+      "path": ".gitignore",
+      "baselineSHA256": "10086354b57701c6b9588827b3351527a47be27e71bdac26cda56ca49eeed8cb",
+      "candidateSHA256": "10086354b57701c6b9588827b3351527a47be27e71bdac26cda56ca49eeed8cb",
+      "unchanged": true
+    },
+    {
+      "path": ".npmrc",
+      "baselineSHA256": "a3909ac0447c469fda12c57374993be70f47ce73e49fd3124678c7c047f2214d",
+      "candidateSHA256": "a3909ac0447c469fda12c57374993be70f47ce73e49fd3124678c7c047f2214d",
+      "unchanged": true
+    },
+    {
+      "path": ".openai/hosting.json",
+      "baselineSHA256": "9e1fb7eef4d729865c16d638f731f2f37d27bbec12a3345e48cdc44d51dd1f6f",
+      "candidateSHA256": "9e1fb7eef4d729865c16d638f731f2f37d27bbec12a3345e48cdc44d51dd1f6f",
+      "unchanged": true
+    },
+    {
+      "path": "README.md",
+      "baselineSHA256": "6fd12f73b504945cdee1c83e796f37d0db00e28d3ea5e70e7997accd9c750bf4",
+      "candidateSHA256": "6fd12f73b504945cdee1c83e796f37d0db00e28d3ea5e70e7997accd9c750bf4",
+      "unchanged": true
+    },
+    {
+      "path": "app/ai-test/page.tsx",
+      "baselineSHA256": "225bf184c230793c672106173f442e35bb47ffb774532d86b87be1c2cdbf6701",
+      "candidateSHA256": "225bf184c230793c672106173f442e35bb47ffb774532d86b87be1c2cdbf6701",
+      "unchanged": true
+    },
+    {
+      "path": "app/api/ai-test/route.ts",
+      "baselineSHA256": "2e1fcb86585e91e96d1fd6ec10936b7f885f75c6890f81ca94b1f2535a8fcbed",
+      "candidateSHA256": "2e1fcb86585e91e96d1fd6ec10936b7f885f75c6890f81ca94b1f2535a8fcbed",
+      "unchanged": true
+    },
+    {
+      "path": "app/api/guin/[id]/route.ts",
+      "baselineSHA256": "8dd73d626b0b06fee452a2c0dbb9dac1f85476d4bda38c18c41e0e7aae899e08",
+      "candidateSHA256": "8dd73d626b0b06fee452a2c0dbb9dac1f85476d4bda38c18c41e0e7aae899e08",
+      "unchanged": true
+    },
+    {
+      "path": "app/api/guin/route.ts",
+      "baselineSHA256": "d30b39ba805647b315dc006e21e21222669d746bb0eaba59a3e04d1a75ebb145",
+      "candidateSHA256": "d30b39ba805647b315dc006e21e21222669d746bb0eaba59a3e04d1a75ebb145",
+      "unchanged": true
+    },
+    {
+      "path": "app/api/saju/[id]/chat/route.ts",
+      "baselineSHA256": "a76b1b37f7cd7d2a886c282a57da2750b892f2774a7c529b5f949236a0c646af",
+      "candidateSHA256": "a76b1b37f7cd7d2a886c282a57da2750b892f2774a7c529b5f949236a0c646af",
+      "unchanged": true
+    },
+    {
+      "path": "app/api/saju/[id]/route.ts",
+      "baselineSHA256": "a961fcf75131ebfe4bd40e3a139370b8d8984efcdb523495f3f0d44b6b9b225d",
+      "candidateSHA256": "a961fcf75131ebfe4bd40e3a139370b8d8984efcdb523495f3f0d44b6b9b225d",
+      "unchanged": true
+    },
+    {
+      "path": "app/api/saju/route.ts",
+      "baselineSHA256": "4e0672d6975866777a6131e8549e5bd238cf472611c91b8296e05dfe7c923c67",
+      "candidateSHA256": "4e0672d6975866777a6131e8549e5bd238cf472611c91b8296e05dfe7c923c67",
+      "unchanged": true
+    },
+    {
+      "path": "app/chatgpt-auth.ts",
+      "baselineSHA256": "4265a2e7c2dcb3a6f4b7026f762bf5b6e4caec76cc13c0a45987ee9a9f2e42cc",
+      "candidateSHA256": "4265a2e7c2dcb3a6f4b7026f762bf5b6e4caec76cc13c0a45987ee9a9f2e42cc",
+      "unchanged": true
+    },
+    {
+      "path": "app/daily/page.tsx",
+      "baselineSHA256": "71e8d2411db526e3c6ddea8b3825ac0dbefaa4edaf20ba3e3037842a063faa0c",
+      "candidateSHA256": "71e8d2411db526e3c6ddea8b3825ac0dbefaa4edaf20ba3e3037842a063faa0c",
+      "unchanged": true
+    },
+    {
+      "path": "app/globals.css",
+      "baselineSHA256": "348f8fecb0a07be93829945782a3eb1236e33a87bf0ab68cca1e952acf9a7d73",
+      "candidateSHA256": "348f8fecb0a07be93829945782a3eb1236e33a87bf0ab68cca1e952acf9a7d73",
+      "unchanged": true
+    },
+    {
+      "path": "app/guin/[id]/page.tsx",
+      "baselineSHA256": "d17ee36ba8e6cb08ad669a70c15d4c6d705b3c7d99a412fbfb62a3bbe2413101",
+      "candidateSHA256": "d17ee36ba8e6cb08ad669a70c15d4c6d705b3c7d99a412fbfb62a3bbe2413101",
+      "unchanged": true
+    },
+    {
+      "path": "app/guin/page.tsx",
+      "baselineSHA256": "7d2511a75bd271fb5c6634c7f847b2bbf422b870dfb1c46c4d3367f6d20bbffc",
+      "candidateSHA256": "7d2511a75bd271fb5c6634c7f847b2bbf422b870dfb1c46c4d3367f6d20bbffc",
+      "unchanged": true
+    },
+    {
+      "path": "app/lab/lab.css",
+      "baselineSHA256": "04183c8365176d827a4f91a80260db874f065c351b7cd753a4138bbbb676cc3b",
+      "candidateSHA256": "04183c8365176d827a4f91a80260db874f065c351b7cd753a4138bbbb676cc3b",
+      "unchanged": true
+    },
+    {
+      "path": "app/lab/material-study.css",
+      "baselineSHA256": "9930c14b576d23554bcc89e92a310fc0a51635937f52ddaed8ef8055fc91b623",
+      "candidateSHA256": "9930c14b576d23554bcc89e92a310fc0a51635937f52ddaed8ef8055fc91b623",
+      "unchanged": true
+    },
+    {
+      "path": "app/lab/page.tsx",
+      "baselineSHA256": "909af0a646738b4a49c9e638b017707b43ee2202c1600a42917cf366bcf1f194",
+      "candidateSHA256": "909af0a646738b4a49c9e638b017707b43ee2202c1600a42917cf366bcf1f194",
+      "unchanged": true
+    },
+    {
+      "path": "app/layout.tsx",
+      "baselineSHA256": "b0eb38a5c049edd279ec96d651b91754d1b3e282e44a8c5574c482d375bb2038",
+      "candidateSHA256": "b0eb38a5c049edd279ec96d651b91754d1b3e282e44a8c5574c482d375bb2038",
+      "unchanged": true
+    },
+    {
+      "path": "app/manse/page.tsx",
+      "baselineSHA256": "823495ad9e71435d1d516ee03167a8baa45afd2565dda5b159f809a691713ff4",
+      "candidateSHA256": "823495ad9e71435d1d516ee03167a8baa45afd2565dda5b159f809a691713ff4",
+      "unchanged": true
+    },
+    {
+      "path": "app/page.tsx",
+      "baselineSHA256": "c818795fc3012d110f4e16e3ab3f94513ac70ddcb36cda5c9b274b30d6e4f361",
+      "candidateSHA256": "c818795fc3012d110f4e16e3ab3f94513ac70ddcb36cda5c9b274b30d6e4f361",
+      "unchanged": true
+    },
+    {
+      "path": "app/planet/page.tsx",
+      "baselineSHA256": "e179363291e0bd7c0eefafdd51ed5f390562e5f44cdda7879a195f9397d2c6f5",
+      "candidateSHA256": "31162c98f6616dd1f73f4d1593e3069dc6ddefa5f9fc276dc607ce47d538eab3",
+      "unchanged": false
+    },
+    {
+      "path": "app/saved/page.tsx",
+      "baselineSHA256": "e2ed542cf5142e0bc9b4faae0a1afa9d0610930786e145d0ac2b0ac951bc01c9",
+      "candidateSHA256": "e2ed542cf5142e0bc9b4faae0a1afa9d0610930786e145d0ac2b0ac951bc01c9",
+      "unchanged": true
+    },
+    {
+      "path": "app/universe.css",
+      "baselineSHA256": "92a694bb53f224e31085165fabb0a2b1727327883d148bc9959b641cb11f240f",
+      "candidateSHA256": "92a694bb53f224e31085165fabb0a2b1727327883d148bc9959b641cb11f240f",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-clear-green050-20261006/Jade_ClearGreen_Emission_1024.png",
+      "baselineSHA256": "4a4a77ab0e98a4500dacbfa9e286c3bc4f0b8686654f9e7dacfba8743d005696",
+      "candidateSHA256": "4a4a77ab0e98a4500dacbfa9e286c3bc4f0b8686654f9e7dacfba8743d005696",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-clear-green050-20261006/Jade_richer_green_50.png",
+      "baselineSHA256": "aec703fb2ad34b8973ee2d243e53b629c5d449140edbbd9fcc534f8c16e01e90",
+      "candidateSHA256": "aec703fb2ad34b8973ee2d243e53b629c5d449140edbbd9fcc534f8c16e01e90",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-clear-green050-20261006/README_ko.txt",
+      "baselineSHA256": "dced5f6248b4deddcb6b79651bd8dd8f68c47f380f41fc489e5539417881ab1d",
+      "candidateSHA256": "dced5f6248b4deddcb6b79651bd8dd8f68c47f380f41fc489e5539417881ab1d",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-clear-green050-20261006/SHA256SUMS.txt",
+      "baselineSHA256": "363265aaf3d320b2087461be5449339c54f776258b3d8a1e2dada5f9ddd5dba3",
+      "candidateSHA256": "363265aaf3d320b2087461be5449339c54f776258b3d8a1e2dada5f9ddd5dba3",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-clear-green050-20261006/SaJu_B_Jade_ClearGreen050_20261006.blend",
+      "baselineSHA256": "cfc4361cd0dfad37e422dc3de87a44320af78d95187cf9b5af7af1762b000bd7",
+      "candidateSHA256": "cfc4361cd0dfad37e422dc3de87a44320af78d95187cf9b5af7af1762b000bd7",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-clear-green050-20261006/SaJu_B_Jade_ClearGreen050_20261006.glb",
+      "baselineSHA256": "e0cd0cd29e610173ad1e783a0e37672b4563884123001440b3fc7b638111a9fe",
+      "candidateSHA256": "e0cd0cd29e610173ad1e783a0e37672b4563884123001440b3fc7b638111a9fe",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-clear-green050-20261006/SaJu_Jade_GlowHue_Old_vs_ClearGreen50_20261006.jpg",
+      "baselineSHA256": "9b64659205244f5169e0ce8b4c5bbe75008c72ce132a81537a8de8d05a76f29e",
+      "candidateSHA256": "9b64659205244f5169e0ce8b4c5bbe75008c72ce132a81537a8de8d05a76f29e",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-clear-green050-20261006/change_glow_hue.py",
+      "baselineSHA256": "794537f2d8bb1ac207733f7ecc3555c9ce177f4b8755bc9a60ea39498035b7a8",
+      "candidateSHA256": "794537f2d8bb1ac207733f7ecc3555c9ce177f4b8755bc9a60ea39498035b7a8",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-clear-green050-20261006/color_only_audit.json",
+      "baselineSHA256": "68622ad1908c270bd85ad4155c26d8319e58e99a970e1ed60a590efec3a53a77",
+      "candidateSHA256": "68622ad1908c270bd85ad4155c26d8319e58e99a970e1ed60a590efec3a53a77",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-clear-green050-20261006/finalize_green.py",
+      "baselineSHA256": "b287568967c6af7e6f2fc489c1336318e460623bff34761013fb3c032aaca072",
+      "candidateSHA256": "b287568967c6af7e6f2fc489c1336318e460623bff34761013fb3c032aaca072",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/APPROVAL_STATUS_ko.txt",
+      "baselineSHA256": "c01876c5734d69fcd065d128a9e47a121cc2d987315e987e19cb5419866dde7f",
+      "candidateSHA256": "c01876c5734d69fcd065d128a9e47a121cc2d987315e987e19cb5419866dde7f",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/README_ko.txt",
+      "baselineSHA256": "0b3098e06050dd622b531e0dbe2dd972a763d25343839311f77338e60b6f986f",
+      "candidateSHA256": "0b3098e06050dd622b531e0dbe2dd972a763d25343839311f77338e60b6f986f",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/SHA256SUMS.txt",
+      "baselineSHA256": "a8c57385c849549a44baa66ed802a2ee3f1d8a12a4b6afb8c21915241978927f",
+      "candidateSHA256": "a8c57385c849549a44baa66ed802a2ee3f1d8a12a4b6afb8c21915241978927f",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/SaJu_Jade_EvolvingLight_12s_Preview_v002.mp4",
+      "baselineSHA256": "97be904f1df4f56da995731083bb29f33e42b466efc84af2f991fdc62344ac4e",
+      "candidateSHA256": "97be904f1df4f56da995731083bb29f33e42b466efc84af2f991fdc62344ac4e",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/SaJu_Jade_EvolvingLight_Keyframes_v002.jpg",
+      "baselineSHA256": "f72a868571672045af00a22b9ec20142db74abde3a6ad49b27ad54a05a832401",
+      "candidateSHA256": "f72a868571672045af00a22b9ec20142db74abde3a6ad49b27ad54a05a832401",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/SaJu_Jade_EvolvingLight_Loop6s_v002.mp4",
+      "baselineSHA256": "29a306fcefd5035bb4071b0ac22de847ced89f179e4d6016575e59dd944832f9",
+      "candidateSHA256": "29a306fcefd5035bb4071b0ac22de847ced89f179e4d6016575e59dd944832f9",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/SaJu_Jade_Evolving_Light_v002_Final.blend",
+      "baselineSHA256": "e1ad952239b05064e265d6317383a20cf2182a12ab3e3731193f19e2674507c4",
+      "candidateSHA256": "e1ad952239b05064e265d6317383a20cf2182a12ab3e3731193f19e2674507c4",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/bake_field_triplet.py",
+      "baselineSHA256": "1529139dd9c489f92b8300a0f1705967e8c84ef3aecb26791b8b3130854338e8",
+      "candidateSHA256": "1529139dd9c489f92b8300a0f1705967e8c84ef3aecb26791b8b3130854338e8",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/build_evolving_light_final.py",
+      "baselineSHA256": "d6873827f8932024ce85cf563e251fef0291f25178bc9bbc510260057935d6b7",
+      "candidateSHA256": "d6873827f8932024ce85cf563e251fef0291f25178bc9bbc510260057935d6b7",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/flow_parameters_v002.json",
+      "baselineSHA256": "0091c5ae0972b421caf0c72db9b69194f06ae8734083c2e027648bcb0c32c92e",
+      "candidateSHA256": "0091c5ae0972b421caf0c72db9b69194f06ae8734083c2e027648bcb0c32c92e",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/manifest.json",
+      "baselineSHA256": "e33e3f9e463a550fb05b11a20e8e832ea54564bc8415668f3ca0e4b1c15f6191",
+      "candidateSHA256": "e33e3f9e463a550fb05b11a20e8e832ea54564bc8415668f3ca0e4b1c15f6191",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/movie_qa.json",
+      "baselineSHA256": "0eb459dd42570892de52c9f5317ed269bdd5db6c7be5bdc2882f2be40f09b696",
+      "candidateSHA256": "0eb459dd42570892de52c9f5317ed269bdd5db6c7be5bdc2882f2be40f09b696",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/native_weights_qa.json",
+      "baselineSHA256": "907dcd91519712523cffbc832d4e41ee70205a7546eb68207dc6317485a53c11",
+      "candidateSHA256": "907dcd91519712523cffbc832d4e41ee70205a7546eb68207dc6317485a53c11",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/preview_keyframes/001.png",
+      "baselineSHA256": "f17790815107c4c5d751df92050c3e00c6c597f95843dfcd1b2c6c39c7735c54",
+      "candidateSHA256": "f17790815107c4c5d751df92050c3e00c6c597f95843dfcd1b2c6c39c7735c54",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/preview_keyframes/013.png",
+      "baselineSHA256": "29e3c0583bd94ec8c198cdb48c6bfdd5b11b866ff13a5f3d4ef9a379fc4e3136",
+      "candidateSHA256": "29e3c0583bd94ec8c198cdb48c6bfdd5b11b866ff13a5f3d4ef9a379fc4e3136",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/preview_keyframes/025.png",
+      "baselineSHA256": "66dc62450f4f9729f981e5a64758769d28fc58f9cd14656e1caaa68b663323f8",
+      "candidateSHA256": "66dc62450f4f9729f981e5a64758769d28fc58f9cd14656e1caaa68b663323f8",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/preview_keyframes/037.png",
+      "baselineSHA256": "56b567e49fde6287b4362367f189cd35c7b08f610669a1a5ec790f4b10977dba",
+      "candidateSHA256": "56b567e49fde6287b4362367f189cd35c7b08f610669a1a5ec790f4b10977dba",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/preview_keyframes/049.png",
+      "baselineSHA256": "442dd611af35ace4ec25c996e87118f7963a2b64324f3581040722c02d03efd8",
+      "candidateSHA256": "442dd611af35ace4ec25c996e87118f7963a2b64324f3581040722c02d03efd8",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/preview_keyframes/061.png",
+      "baselineSHA256": "78ec41dea6b3cca1af3be29836cae0b7741454bbdd71c2cb3797f5fe2c45d43c",
+      "candidateSHA256": "78ec41dea6b3cca1af3be29836cae0b7741454bbdd71c2cb3797f5fe2c45d43c",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/preview_keyframes/073.png",
+      "baselineSHA256": "982e1bf9af3a59ba3c7efb578a01ad0019778249a8af2b47ee99d596f09ba42d",
+      "candidateSHA256": "982e1bf9af3a59ba3c7efb578a01ad0019778249a8af2b47ee99d596f09ba42d",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/reference/SaJu_Jade_Approved_Static_Material.glb",
+      "baselineSHA256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+      "candidateSHA256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/render_remaining.py",
+      "baselineSHA256": "39f62305fd1517663819c2f85ce8e74518caee1f6ef9753da252ff46947b4b47",
+      "candidateSHA256": "39f62305fd1517663819c2f85ce8e74518caee1f6ef9753da252ff46947b4b47",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/runtime/README_ko.txt",
+      "baselineSHA256": "5b3fc7c409170e56e2217732dcf8fb177d84c4f538894b71b793a53eaa34086b",
+      "candidateSHA256": "5b3fc7c409170e56e2217732dcf8fb177d84c4f538894b71b793a53eaa34086b",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/runtime/animation-parameters.json",
+      "baselineSHA256": "3699d60417965c60db87e9027248c9bba22fecdc2cd88993fbfa526a9d327bd9",
+      "candidateSHA256": "3699d60417965c60db87e9027248c9bba22fecdc2cd88993fbfa526a9d327bd9",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/runtime/atlas-metadata.json",
+      "baselineSHA256": "5c636086d34bf2076efd93361912fca5d9f53431bb588e99e94cf5b786e487ac",
+      "candidateSHA256": "5c636086d34bf2076efd93361912fca5d9f53431bb588e99e94cf5b786e487ac",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/runtime/native-field-probes.json",
+      "baselineSHA256": "fcd8b567bf67bc2ba6defee4d343484c27a6948b5ed0e1d83834d8fecfe8ece4",
+      "candidateSHA256": "fcd8b567bf67bc2ba6defee4d343484c27a6948b5ed0e1d83834d8fecfe8ece4",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/runtime/saju-jade-evolution.glsl",
+      "baselineSHA256": "7cfc8ad83f76f8b9505db1e0e38e94bd9ebd7b0c4282a686016c06a09e96255f",
+      "candidateSHA256": "7cfc8ad83f76f8b9505db1e0e38e94bd9ebd7b0c4282a686016c06a09e96255f",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/runtime/saju-jade-evolution.mjs",
+      "baselineSHA256": "b92ffe42be37a8c52427ec6c104a56eb828c4e7f6a02b7d368b72921a46a9e7c",
+      "candidateSHA256": "b92ffe42be37a8c52427ec6c104a56eb828c4e7f6a02b7d368b72921a46a9e7c",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/runtime/tests/check_glsl_mesa.py",
+      "baselineSHA256": "3fe9c40a336ca154d484333ba6db6ccc95a134daf8f2feb46a7f53fae2a665aa",
+      "candidateSHA256": "3fe9c40a336ca154d484333ba6db6ccc95a134daf8f2feb46a7f53fae2a665aa",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/runtime/tests/check_native_atlas.mjs",
+      "baselineSHA256": "a6157a591b8e9b95fd926640bf21c45f4f05fe9275a7ceb72401e30a366d039b",
+      "candidateSHA256": "a6157a591b8e9b95fd926640bf21c45f4f05fe9275a7ceb72401e30a366d039b",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/runtime/tests/cpu-test-results.txt",
+      "baselineSHA256": "db16eed5f0adcd0da3a572b9d7aed12c1eac579087d98245a1241a2eee5ecf08",
+      "candidateSHA256": "db16eed5f0adcd0da3a572b9d7aed12c1eac579087d98245a1241a2eee5ecf08",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/runtime/tests/final-atlas-results.txt",
+      "baselineSHA256": "6c6e5c4f39319008db532d26112f1e5567d813a8af032d2ef465db47f5e9f5c1",
+      "candidateSHA256": "6c6e5c4f39319008db532d26112f1e5567d813a8af032d2ef465db47f5e9f5c1",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/runtime/tests/final-cpu-results.txt",
+      "baselineSHA256": "e080f7306e6829656240c2608a796afe6a7486fc8419d76e118a51114abcbaec",
+      "candidateSHA256": "e080f7306e6829656240c2608a796afe6a7486fc8419d76e118a51114abcbaec",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/runtime/tests/final-mesa-results.txt",
+      "baselineSHA256": "bd115275f46386a4db58a51171fdcd1b4cd8e52bc360aaa2f4636172e0264bf2",
+      "candidateSHA256": "bd115275f46386a4db58a51171fdcd1b4cd8e52bc360aaa2f4636172e0264bf2",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/runtime/tests/final-native-atlas-check.txt",
+      "baselineSHA256": "6c6e5c4f39319008db532d26112f1e5567d813a8af032d2ef465db47f5e9f5c1",
+      "candidateSHA256": "6c6e5c4f39319008db532d26112f1e5567d813a8af032d2ef465db47f5e9f5c1",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/runtime/tests/final-png-raw-check.txt",
+      "baselineSHA256": "ed4dea2c787477a5b10d95cffd385bacaea68bbbeeed9eedd063729f5f25ec8b",
+      "candidateSHA256": "ed4dea2c787477a5b10d95cffd385bacaea68bbbeeed9eedd063729f5f25ec8b",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/runtime/tests/glsl-mesa-errors.txt",
+      "baselineSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "candidateSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/runtime/tests/glsl-mesa-results.json",
+      "baselineSHA256": "bd115275f46386a4db58a51171fdcd1b4cd8e52bc360aaa2f4636172e0264bf2",
+      "candidateSHA256": "bd115275f46386a4db58a51171fdcd1b4cd8e52bc360aaa2f4636172e0264bf2",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/runtime/tests/native-atlas-results.json",
+      "baselineSHA256": "6c6e5c4f39319008db532d26112f1e5567d813a8af032d2ef465db47f5e9f5c1",
+      "candidateSHA256": "6c6e5c4f39319008db532d26112f1e5567d813a8af032d2ef465db47f5e9f5c1",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/runtime/tests/png-raw-verification.json",
+      "baselineSHA256": "ed4dea2c787477a5b10d95cffd385bacaea68bbbeeed9eedd063729f5f25ec8b",
+      "candidateSHA256": "ed4dea2c787477a5b10d95cffd385bacaea68bbbeeed9eedd063729f5f25ec8b",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/runtime/tests/saju-jade-evolution.test.mjs",
+      "baselineSHA256": "82745f09b9dd28354b3eb2f6d85a591bec4f344f81fff1795ead47d9db474f15",
+      "candidateSHA256": "82745f09b9dd28354b3eb2f6d85a591bec4f344f81fff1795ead47d9db474f15",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/runtime/tests/verify_png_raw.py",
+      "baselineSHA256": "4dd168dd73de1da548e73637b33f1ae396d2052328370538fca7254acba8e251",
+      "candidateSHA256": "4dd168dd73de1da548e73637b33f1ae396d2052328370538fca7254acba8e251",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/runtime/textures/Jade_OriginalBaseColor_1024.png",
+      "baselineSHA256": "29bdd5ab8a2c87715fd3aedae3f0465c8b6910b5a9c0e8b8bffeb84a03c6b824",
+      "candidateSHA256": "29bdd5ab8a2c87715fd3aedae3f0465c8b6910b5a9c0e8b8bffeb84a03c6b824",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/runtime/textures/jade_fields_atlas_128.png",
+      "baselineSHA256": "3175c131be983bd985b8018c191d3a25c9ce00ea20baa31bbb2772833b9a5bd0",
+      "candidateSHA256": "3175c131be983bd985b8018c191d3a25c9ce00ea20baa31bbb2772833b9a5bd0",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/runtime/textures/jade_fields_atlas_128.rgba8",
+      "baselineSHA256": "ea115bec1027fb9379da0ae4cea6568a6a9ad9699ea4ea10a5bfd29fde6f56d5",
+      "candidateSHA256": "ea115bec1027fb9379da0ae4cea6568a6a9ad9699ea4ea10a5bfd29fde6f56d5",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/source_reproduction_qa.json",
+      "baselineSHA256": "02fe8e684297b1d82a1138268b0259abe0d23c7effdca13e0b5fa7634b253eb1",
+      "candidateSHA256": "02fe8e684297b1d82a1138268b0259abe0d23c7effdca13e0b5fa7634b253eb1",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/verify_movie.py",
+      "baselineSHA256": "e01627c3087cd4c95e39c4a593fd778ab979ac6af9a584943b7f62e2a6735102",
+      "candidateSHA256": "e01627c3087cd4c95e39c4a593fd778ab979ac6af9a584943b7f62e2a6735102",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-evolving-light-v002/verify_native_weights.py",
+      "baselineSHA256": "384f811f4a37fbad3f3380ff03ab181411955b3662e7c861f8f7c6175093e3f9",
+      "candidateSHA256": "384f811f4a37fbad3f3380ff03ab181411955b3662e7c861f8f7c6175093e3f9",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-green-emission-separated-v001/INTEGRATION_README_ko.txt",
+      "baselineSHA256": "66215962e5e5f6fba112a2ef209456766f119b68a1cbc522695301242a2c648e",
+      "candidateSHA256": "66215962e5e5f6fba112a2ef209456766f119b68a1cbc522695301242a2c648e",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-green-emission-separated-v001/Jade_GreenEmission_1024.png",
+      "baselineSHA256": "173142e815855363bdeabdc5779279fe6ec182ba89f4003e070b791d70af62c6",
+      "candidateSHA256": "173142e815855363bdeabdc5779279fe6ec182ba89f4003e070b791d70af62c6",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-green-emission-separated-v001/Jade_ReflectanceBase_1024.png",
+      "baselineSHA256": "3a3ffe202958c031015d3230907cd9087e21763c6ab398dceb80bc158aafc542",
+      "candidateSHA256": "3a3ffe202958c031015d3230907cd9087e21763c6ab398dceb80bc158aafc542",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-green-emission-separated-v001/Jade_ReflectionMask_1024.png",
+      "baselineSHA256": "f26aa1771b0eecccceb84b40f30f8c1a7d6589a4a32d6f565991abe1103db2b7",
+      "candidateSHA256": "f26aa1771b0eecccceb84b40f30f8c1a7d6589a4a32d6f565991abe1103db2b7",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-green-emission-separated-v001/SHA256SUMS.txt",
+      "baselineSHA256": "40d825b0e976ff149da7c4c9ddd9cdbc3994c0630725a12adf56136fda4b72b7",
+      "candidateSHA256": "40d825b0e976ff149da7c4c9ddd9cdbc3994c0630725a12adf56136fda4b72b7",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-green-emission-separated-v001/SaJu_Jade_GreenEmission_Separated_v001.blend",
+      "baselineSHA256": "989921a8e85b36d5215f61882fa54938d9a588e9f5e387a37bd40820446b337f",
+      "candidateSHA256": "989921a8e85b36d5215f61882fa54938d9a588e9f5e387a37bd40820446b337f",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-green-emission-separated-v001/SaJu_Jade_GreenEmission_Separated_v001.glb",
+      "baselineSHA256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+      "candidateSHA256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-green-emission-separated-v001/SaJu_Jade_Green_Emission_Before_After_Proof.jpg",
+      "baselineSHA256": "76bda74170685e032affb2da2263c3efc8607baffd994de7ef6cd3b772a5d2d2",
+      "candidateSHA256": "76bda74170685e032affb2da2263c3efc8607baffd994de7ef6cd3b772a5d2d2",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-green-emission-separated-v001/SaJu_Jade_Native_vs_GLB_Verification.jpg",
+      "baselineSHA256": "4788e0a271fa0e2c889cb05cbfc733f6cda929b9d245dc7971870a4b78ddd2fc",
+      "candidateSHA256": "4788e0a271fa0e2c889cb05cbfc733f6cda929b9d245dc7971870a4b78ddd2fc",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-green-emission-separated-v001/after_emission_only_AgX.png",
+      "baselineSHA256": "540a956a2739153220b6671392a84d168aee48e880b957612c9f0eef84535e96",
+      "candidateSHA256": "540a956a2739153220b6671392a84d168aee48e880b957612c9f0eef84535e96",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-green-emission-separated-v001/after_emission_raw_0001.exr",
+      "baselineSHA256": "7f404d4bd9dd738c6fef219441e5d68e33efc5073cb46701b48a80818c9efa82",
+      "candidateSHA256": "7f404d4bd9dd738c6fef219441e5d68e33efc5073cb46701b48a80818c9efa82",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-green-emission-separated-v001/after_green_verified.png",
+      "baselineSHA256": "1af86fd7410339af2a3096af70aa9144d01c2b06b79a0415480febf3044d2eac",
+      "candidateSHA256": "1af86fd7410339af2a3096af70aa9144d01c2b06b79a0415480febf3044d2eac",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-green-emission-separated-v001/bake_export_final.py",
+      "baselineSHA256": "f726758b6b5c656b428a72bcc9560db1685e21f5f366930fdfc363cd8ec4b0a9",
+      "candidateSHA256": "f726758b6b5c656b428a72bcc9560db1685e21f5f366930fdfc363cd8ec4b0a9",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-green-emission-separated-v001/beauty_raw_Standard.png",
+      "baselineSHA256": "053967fe01a8478a7d57b19f066172e6f2053c3c08f6eb7b337ec49d6f9538ce",
+      "candidateSHA256": "053967fe01a8478a7d57b19f066172e6f2053c3c08f6eb7b337ec49d6f9538ce",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-green-emission-separated-v001/before_beauty.png",
+      "baselineSHA256": "6a2ae08bf3decbde23edc01239ceae343b0b390d1d12173de473c171e80f9906",
+      "candidateSHA256": "6a2ae08bf3decbde23edc01239ceae343b0b390d1d12173de473c171e80f9906",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-green-emission-separated-v001/diagnose_passes.py",
+      "baselineSHA256": "6d9923ed18fa2531f885fa887de06f41608c0520126f024d5527da06866aa7e0",
+      "candidateSHA256": "6d9923ed18fa2531f885fa887de06f41608c0520126f024d5527da06866aa7e0",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-green-emission-separated-v001/emission_raw_0001.exr",
+      "baselineSHA256": "ddfeedf64b725f187ce27b023d55148f16a54363d93ea3688b84f6a6dd9f09c2",
+      "candidateSHA256": "ddfeedf64b725f187ce27b023d55148f16a54363d93ea3688b84f6a6dd9f09c2",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-green-emission-separated-v001/emission_raw_AgX.png",
+      "baselineSHA256": "dfe259d13b385448b5babff02f1a3dd446fa98989d7e489d447ce69f394907be",
+      "candidateSHA256": "dfe259d13b385448b5babff02f1a3dd446fa98989d7e489d447ce69f394907be",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-green-emission-separated-v001/emission_raw_Standard.png",
+      "baselineSHA256": "1edeb1fb8de244222c7ac9347ecb4084f697f6121c29667c3c3b6d50a2e7de97",
+      "candidateSHA256": "1edeb1fb8de244222c7ac9347ecb4084f697f6121c29667c3c3b6d50a2e7de97",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-green-emission-separated-v001/final_validation.json",
+      "baselineSHA256": "8a9571b34671753bdc7007bbbb10cd5c7cce7d6270f8c5d74af30fe90bea710c",
+      "candidateSHA256": "8a9571b34671753bdc7007bbbb10cd5c7cce7d6270f8c5d74af30fe90bea710c",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-green-emission-separated-v001/glb_reimport_green.png",
+      "baselineSHA256": "4e331680e6000f6d85dfc09e68db2d506307b81c48f724eb5d91b83d23c00d82",
+      "candidateSHA256": "4e331680e6000f6d85dfc09e68db2d506307b81c48f724eb5d91b83d23c00d82",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-green-emission-separated-v001/gloss_direct_AgX.png",
+      "baselineSHA256": "d7aaa17b8c3ecf38e7c0130a02e308dbd800f81c8f26bbd7c57671106fb22c5c",
+      "candidateSHA256": "d7aaa17b8c3ecf38e7c0130a02e308dbd800f81c8f26bbd7c57671106fb22c5c",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-green-emission-separated-v001/gltf_material_contract.json",
+      "baselineSHA256": "fbcfebdae97a0cc1a2c3d3bcca40817217f85872c5c67c00fc84b6def58cb09b",
+      "candidateSHA256": "fbcfebdae97a0cc1a2c3d3bcca40817217f85872c5c67c00fc84b6def58cb09b",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-green-emission-separated-v001/manifest.json",
+      "baselineSHA256": "bc5b7b072dd6946d1699023e2ecd251c29e872b1d77ce601e0eb66d9ff8de5db",
+      "candidateSHA256": "bc5b7b072dd6946d1699023e2ecd251c29e872b1d77ce601e0eb66d9ff8de5db",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-green-emission-separated-v001/package_release.py",
+      "baselineSHA256": "19fcbd78cdec7abbda46d0ac8a314d68d7a9e2c888772bd7de922068e6ad0e68",
+      "candidateSHA256": "19fcbd78cdec7abbda46d0ac8a314d68d7a9e2c888772bd7de922068e6ad0e68",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-green-emission-separated-v001/refine_separation.py",
+      "baselineSHA256": "4afe84dc2a14514f5f97e9860991148e7db77bead529a02c92b50e831826c19f",
+      "candidateSHA256": "4afe84dc2a14514f5f97e9860991148e7db77bead529a02c92b50e831826c19f",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-green-emission-separated-v001/smooth_isolation.py",
+      "baselineSHA256": "0e3931ae1513dc5e2d8ff1819f030acc6d6c0910dd561aa9989f64e036911159",
+      "candidateSHA256": "0e3931ae1513dc5e2d8ff1819f030acc6d6c0910dd561aa9989f64e036911159",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-green-emission-separated-v001/test_separation.py",
+      "baselineSHA256": "934007dcf4797520cec570ef61a59f606abbd0ca0bff002ee953a2ff8f1067c3",
+      "candidateSHA256": "934007dcf4797520cec570ef61a59f606abbd0ca0bff002ee953a2ff8f1067c3",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-green-emission-separated-v001/verification.log",
+      "baselineSHA256": "d3fb66921faae312a487a20c1c1770ec1cbcde47d926f548a95326a7a0203186",
+      "candidateSHA256": "d3fb66921faae312a487a20c1c1770ec1cbcde47d926f548a95326a7a0203186",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-green-emission-separated-v001/verify_and_reimport.py",
+      "baselineSHA256": "0d093510c00426b8d9c8e1935fe3db086ad02cb10cd64126aaf60b173c1fe735",
+      "candidateSHA256": "0d093510c00426b8d9c8e1935fe3db086ad02cb10cd64126aaf60b173c1fe735",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/Jade_BaseColor_1024.png",
+      "baselineSHA256": "29bdd5ab8a2c87715fd3aedae3f0465c8b6910b5a9c0e8b8bffeb84a03c6b824",
+      "candidateSHA256": "29bdd5ab8a2c87715fd3aedae3f0465c8b6910b5a9c0e8b8bffeb84a03c6b824",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/Jade_GreenLight_v002_1024.png",
+      "baselineSHA256": "df575df959c160f8ad6ce03d5b75009052ef5bea3b013114b5c78dfe8b3bcc8d",
+      "candidateSHA256": "df575df959c160f8ad6ce03d5b75009052ef5bea3b013114b5c78dfe8b3bcc8d",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/README_ko.txt",
+      "baselineSHA256": "c11a0f3895988e6166423852a72c9255b769affcde35becae347f7c8afb2839b",
+      "candidateSHA256": "c11a0f3895988e6166423852a72c9255b769affcde35becae347f7c8afb2839b",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/SHA256SUMS.txt",
+      "baselineSHA256": "c5f4ef6263eb84a436d1afb91fed50e776a7b3a9057aade0e322868d2b162d7c",
+      "candidateSHA256": "c5f4ef6263eb84a436d1afb91fed50e776a7b3a9057aade0e322868d2b162d7c",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/SaJu_B_Connection_Pose_Review_20261006.jpg",
+      "baselineSHA256": "fc88be2615528b0fb87e284287d11af3eb9d8eb8ebf92750abd369eb7a3cfa5f",
+      "candidateSHA256": "fc88be2615528b0fb87e284287d11af3eb9d8eb8ebf92750abd369eb7a3cfa5f",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/SaJu_B_Jade_Character_Study.glb",
+      "baselineSHA256": "342485a2f1bae6503ee87b412558493b84f7fc7f40de49b3e23e5218bf80bcf9",
+      "candidateSHA256": "342485a2f1bae6503ee87b412558493b84f7fc7f40de49b3e23e5218bf80bcf9",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/SaJu_B_Jade_Character_Study_Native.blend",
+      "baselineSHA256": "7ef742eeea82ac4e4fb42f3a57db9c3d0125fd2c332944e251f413ddef55251b",
+      "candidateSHA256": "7ef742eeea82ac4e4fb42f3a57db9c3d0125fd2c332944e251f413ddef55251b",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/SaJu_B_Jade_Material_Comparison_20261006.jpg",
+      "baselineSHA256": "fbbe21f02de04ec75ac7dd3cdc39756e02a2f2ebbd16269d272be4d98ebe85a3",
+      "candidateSHA256": "fbbe21f02de04ec75ac7dd3cdc39756e02a2f2ebbd16269d272be4d98ebe85a3",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/release_glass.png",
+      "baselineSHA256": "3f4636d08a031f16179ef3b382b7f2f548627ee61b6e3e10c708bf11eb878b11",
+      "candidateSHA256": "3f4636d08a031f16179ef3b382b7f2f548627ee61b6e3e10c708bf11eb878b11",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/release_jade_control.png",
+      "baselineSHA256": "4b11d587fcf5eb4c315afddff49c5b114916dd97db43936afa8695d144b36808",
+      "candidateSHA256": "4b11d587fcf5eb4c315afddff49c5b114916dd97db43936afa8695d144b36808",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/release_jade_glow_v002.png",
+      "baselineSHA256": "c5ce13cd4ed0f64957781e72596c0dede5453d22412b91151fe6b4570459f7ff",
+      "candidateSHA256": "c5ce13cd4ed0f64957781e72596c0dede5453d22412b91151fe6b4570459f7ff",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/release_qa.json",
+      "baselineSHA256": "783439ae0a462a234d1630608aba23006801e428d2e66a847ff3267c859d1f33",
+      "candidateSHA256": "783439ae0a462a234d1630608aba23006801e428d2e66a847ff3267c859d1f33",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/release_wave_v002.png",
+      "baselineSHA256": "49b6acb239f53ae5528b0aa528adcee20aa3f2e8ee8bdf37f6022328d36e5f9e",
+      "candidateSHA256": "49b6acb239f53ae5528b0aa528adcee20aa3f2e8ee8bdf37f6022328d36e5f9e",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/scripts/build_jade_v003.py",
+      "baselineSHA256": "a65d53d1047dc1d93cfb4d95b62438283a12e39d6a379da4c12468a09ee8da3b",
+      "candidateSHA256": "a65d53d1047dc1d93cfb4d95b62438283a12e39d6a379da4c12468a09ee8da3b",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/scripts/compose_release.py",
+      "baselineSHA256": "5a175c1c7e44eca5cc6b35e2c46d131a462eb2ecf199ac2ab25c778d8e82919a",
+      "candidateSHA256": "5a175c1c7e44eca5cc6b35e2c46d131a462eb2ecf199ac2ab25c778d8e82919a",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/scripts/finalize_jade.py",
+      "baselineSHA256": "d7c83345da20b0ff36f1d7a2221e39434d360db59f9d3a7718f44292aacb932c",
+      "candidateSHA256": "d7c83345da20b0ff36f1d7a2221e39434d360db59f9d3a7718f44292aacb932c",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/scripts/finish_assets.py",
+      "baselineSHA256": "f5b90b1eb7c678a63340cece5bd0dd6aa0951c4b4211cc952ad7e1423e1a79e9",
+      "candidateSHA256": "f5b90b1eb7c678a63340cece5bd0dd6aa0951c4b4211cc952ad7e1423e1a79e9",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/scripts/render_release.py",
+      "baselineSHA256": "25812f92d21909e969425ac8f0429ee4799c3fde47bf120338cc7028129f1b1a",
+      "candidateSHA256": "25812f92d21909e969425ac8f0429ee4799c3fde47bf120338cc7028129f1b1a",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/scripts/strengthen_glow.py",
+      "baselineSHA256": "0a39d00589dd6af6258257b0bddc2b2756a01958b910f68d87012b57a889c508",
+      "candidateSHA256": "0a39d00589dd6af6258257b0bddc2b2756a01958b910f68d87012b57a889c508",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/scripts/validate_final.py",
+      "baselineSHA256": "687d6746aa7f81fc18e475e7ddb3f06d2908d7d47dd2d731555fa66bded845d5",
+      "candidateSHA256": "687d6746aa7f81fc18e475e7ddb3f06d2908d7d47dd2d731555fa66bded845d5",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/source/candidate_5.blend",
+      "baselineSHA256": "65e637c9d635d0cff58c82a8094826c218ddb7e005943cf066dd3a69ef33ecc7",
+      "candidateSHA256": "65e637c9d635d0cff58c82a8094826c218ddb7e005943cf066dd3a69ef33ecc7",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/source/candidate_5_neutral.png",
+      "baselineSHA256": "8e22eb6e6150b9dab347c94a923e4bfee6ba50fc178f7f012f6a2265f9794f2e",
+      "candidateSHA256": "8e22eb6e6150b9dab347c94a923e4bfee6ba50fc178f7f012f6a2265f9794f2e",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/validate_final.log",
+      "baselineSHA256": "3a586aed10127a3ba726783e727109d05a2fff18152fa633eb9e09160590fd86",
+      "candidateSHA256": "3a586aed10127a3ba726783e727109d05a2fff18152fa633eb9e09160590fd86",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-moving-light-v001/README_ko.txt",
+      "baselineSHA256": "d50cbccded6db14710f74ca15e66c579664e67240a4915201a354c8061226453",
+      "candidateSHA256": "d50cbccded6db14710f74ca15e66c579664e67240a4915201a354c8061226453",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-moving-light-v001/SHA256SUMS.txt",
+      "baselineSHA256": "f9d4bc7c0eceb2a4a7e633e5d5ceb38dd4808846625f7618a3409e61f04abf66",
+      "candidateSHA256": "f9d4bc7c0eceb2a4a7e633e5d5ceb38dd4808846625f7618a3409e61f04abf66",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-moving-light-v001/SaJu_Jade_MovingLight_12s_Preview_v001.mp4",
+      "baselineSHA256": "a9d0de82d2c9ce7934dc287d37752cb73d3bf900125db5a97b59f46919010e7e",
+      "candidateSHA256": "a9d0de82d2c9ce7934dc287d37752cb73d3bf900125db5a97b59f46919010e7e",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-moving-light-v001/SaJu_Jade_MovingLight_Loop6s_v001.mp4",
+      "baselineSHA256": "ecd4a3059f9986ababfbf6b4287465ccfa04786be73c7f8d0527ccd8474c7689",
+      "candidateSHA256": "ecd4a3059f9986ababfbf6b4287465ccfa04786be73c7f8d0527ccd8474c7689",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-moving-light-v001/SaJu_Jade_Moving_Green_Light_v001.blend",
+      "baselineSHA256": "ea9fcc1b6c258edf2d7564ceb00b21358d9bb6cc7844d17b2dfd1d84289463ca",
+      "candidateSHA256": "ea9fcc1b6c258edf2d7564ceb00b21358d9bb6cc7844d17b2dfd1d84289463ca",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-moving-light-v001/SaJu_Jade_Moving_Light_Keyframes_v001.jpg",
+      "baselineSHA256": "f335c14592623f6ec4c391f4ddf34f273b006ab9e83605a7752d1bfc92dd958b",
+      "candidateSHA256": "f335c14592623f6ec4c391f4ddf34f273b006ab9e83605a7752d1bfc92dd958b",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-moving-light-v001/approved_static_reference_320.png",
+      "baselineSHA256": "c6c34c564514ea13c015359a7e0191fc02acb3563d58c8a3b2312ea6f19c7c10",
+      "candidateSHA256": "c6c34c564514ea13c015359a7e0191fc02acb3563d58c8a3b2312ea6f19c7c10",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-moving-light-v001/bake_native_probes.py",
+      "baselineSHA256": "e7757d5e5d2734e2f9720e0c47d12d22a80a4003f244e227466ac776d0b730de",
+      "candidateSHA256": "e7757d5e5d2734e2f9720e0c47d12d22a80a4003f244e227466ac776d0b730de",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-moving-light-v001/bake_noise_atlas.py",
+      "baselineSHA256": "2f5e12b878ac41a2f268e1bbdcca64b666a0eaaf7be9602b16a2426ce591d82b",
+      "candidateSHA256": "2f5e12b878ac41a2f268e1bbdcca64b666a0eaaf7be9602b16a2426ce591d82b",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-moving-light-v001/build_and_render_flow.py",
+      "baselineSHA256": "62e98ca9dec627e3f4785dd6d7f2b4f31bb7620c2d4ebcc285d8d1d6532795e7",
+      "candidateSHA256": "62e98ca9dec627e3f4785dd6d7f2b4f31bb7620c2d4ebcc285d8d1d6532795e7",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-moving-light-v001/flow_parameters.json",
+      "baselineSHA256": "02c9d85839185ecbadf038a7d1462f6e9b2c5de1f416f55a694feb73c8c48f88",
+      "candidateSHA256": "02c9d85839185ecbadf038a7d1462f6e9b2c5de1f416f55a694feb73c8c48f88",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-moving-light-v001/manifest.json",
+      "baselineSHA256": "c2314fa0556645db563f62a8691a01380c2528361630f367390275798e38ccd6",
+      "candidateSHA256": "c2314fa0556645db563f62a8691a01380c2528361630f367390275798e38ccd6",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-moving-light-v001/movie_qa.json",
+      "baselineSHA256": "45f48abb76c2114eaa50ef91e74a977e3129c0805ea8713218b26545cb7eab8d",
+      "candidateSHA256": "45f48abb76c2114eaa50ef91e74a977e3129c0805ea8713218b26545cb7eab8d",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-moving-light-v001/preview_keyframes/001.png",
+      "baselineSHA256": "92956674ee90c5cf04f4ae3d95993c4c6dd23bd5e803bef7671c5ff59adcb17b",
+      "candidateSHA256": "92956674ee90c5cf04f4ae3d95993c4c6dd23bd5e803bef7671c5ff59adcb17b",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-moving-light-v001/preview_keyframes/019.png",
+      "baselineSHA256": "b0f5d6a003b4b769db309c5f46ee59d9d837e1a3d9c8ad3f646ee25dad6fda07",
+      "candidateSHA256": "b0f5d6a003b4b769db309c5f46ee59d9d837e1a3d9c8ad3f646ee25dad6fda07",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-moving-light-v001/preview_keyframes/037.png",
+      "baselineSHA256": "7cb2de5c01371d23739a871f31275b329180371d70e6d94e60d56ea8d4709ca5",
+      "candidateSHA256": "7cb2de5c01371d23739a871f31275b329180371d70e6d94e60d56ea8d4709ca5",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-moving-light-v001/preview_keyframes/055.png",
+      "baselineSHA256": "70b1af546b29f8c7c5599ea69ad660ef1fdaa3edd3e97c0e3bdc026e48062ddd",
+      "candidateSHA256": "70b1af546b29f8c7c5599ea69ad660ef1fdaa3edd3e97c0e3bdc026e48062ddd",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-moving-light-v001/preview_keyframes/073.png",
+      "baselineSHA256": "aef67caaa207f0937dd7732b41a02bca5f987f9616dd893ca515a170c71a66dd",
+      "candidateSHA256": "aef67caaa207f0937dd7732b41a02bca5f987f9616dd893ca515a170c71a66dd",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-moving-light-v001/reference/SaJu_Jade_Approved_Static_Material.glb",
+      "baselineSHA256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+      "candidateSHA256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-moving-light-v001/render_static_reference.py",
+      "baselineSHA256": "109443d825ad7832da17573aa80a0a9709fba93e4eb723521d48436e61aeb06b",
+      "candidateSHA256": "109443d825ad7832da17573aa80a0a9709fba93e4eb723521d48436e61aeb06b",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-moving-light-v001/runtime/README_ko.txt",
+      "baselineSHA256": "497e4d672ff3f0e119031bb23941f230188512675c2ba4d7a42ab985a42e3bc4",
+      "candidateSHA256": "497e4d672ff3f0e119031bb23941f230188512675c2ba4d7a42ab985a42e3bc4",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-moving-light-v001/runtime/atlas-metadata.json",
+      "baselineSHA256": "6d5ad6cfad35b42f2dbaf78a973482bdd0eebf82f751beb69ff9422e5cca770d",
+      "candidateSHA256": "6d5ad6cfad35b42f2dbaf78a973482bdd0eebf82f751beb69ff9422e5cca770d",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-moving-light-v001/runtime/native-field-probes.json",
+      "baselineSHA256": "1cb0ac1821e2d7b6207449825954ee972153dc8ad0ecb7b3f00164877a7d22b4",
+      "candidateSHA256": "1cb0ac1821e2d7b6207449825954ee972153dc8ad0ecb7b3f00164877a7d22b4",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-moving-light-v001/runtime/saju-jade-flow.glsl",
+      "baselineSHA256": "536b95545a51284a0fec3f070f842c5d9c6ec9999f922943dff6a7829a1c8418",
+      "candidateSHA256": "536b95545a51284a0fec3f070f842c5d9c6ec9999f922943dff6a7829a1c8418",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-moving-light-v001/runtime/saju-jade-flow.mjs",
+      "baselineSHA256": "d484cbee398dba463ce3056a14ed5b5e825bf640459ad500829fad8551449ba6",
+      "candidateSHA256": "d484cbee398dba463ce3056a14ed5b5e825bf640459ad500829fad8551449ba6",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-moving-light-v001/runtime/tests/check_glsl_mesa.py",
+      "baselineSHA256": "eaf24f59e4d0a5ed36592e516b0aa3dc39a417e6bf5070a17460041e6c81d47c",
+      "candidateSHA256": "eaf24f59e4d0a5ed36592e516b0aa3dc39a417e6bf5070a17460041e6c81d47c",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-moving-light-v001/runtime/tests/check_native_atlas.mjs",
+      "baselineSHA256": "515bc2f1fa8a756cdb44a16bd6ee893a3d2a4ba3389e64737a6a8ba5765ad816",
+      "candidateSHA256": "515bc2f1fa8a756cdb44a16bd6ee893a3d2a4ba3389e64737a6a8ba5765ad816",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-moving-light-v001/runtime/tests/final-cpu-test-results.txt",
+      "baselineSHA256": "967deefbcac4d4390e2480ab5fa8a4bfb5b325feeac3292f2d79765955eb14c5",
+      "candidateSHA256": "967deefbcac4d4390e2480ab5fa8a4bfb5b325feeac3292f2d79765955eb14c5",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-moving-light-v001/runtime/tests/final-mesa-check.txt",
+      "baselineSHA256": "e850734285131a770c90fbb0d666c6c1d776b51dd5119368573699acda7c77c0",
+      "candidateSHA256": "e850734285131a770c90fbb0d666c6c1d776b51dd5119368573699acda7c77c0",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-moving-light-v001/runtime/tests/final-native-atlas-check.txt",
+      "baselineSHA256": "1600cfcb5abd817d7168e89666b41904a984ebf6523ed553cf6d4fde40462a0f",
+      "candidateSHA256": "1600cfcb5abd817d7168e89666b41904a984ebf6523ed553cf6d4fde40462a0f",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-moving-light-v001/runtime/tests/glsl-mesa-errors.txt",
+      "baselineSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "candidateSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-moving-light-v001/runtime/tests/glsl-mesa-results.json",
+      "baselineSHA256": "e850734285131a770c90fbb0d666c6c1d776b51dd5119368573699acda7c77c0",
+      "candidateSHA256": "e850734285131a770c90fbb0d666c6c1d776b51dd5119368573699acda7c77c0",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-moving-light-v001/runtime/tests/native-atlas-results.json",
+      "baselineSHA256": "e49d2bc6aed97686dabf9142d182590cc1aba81ccd2b133aea3f5a0c52ffafb2",
+      "candidateSHA256": "e49d2bc6aed97686dabf9142d182590cc1aba81ccd2b133aea3f5a0c52ffafb2",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-moving-light-v001/runtime/tests/png-raw-verification.json",
+      "baselineSHA256": "8b9cc025207ff3e47aad833553688916d5356ba5ca1a5441701e8232c54ccf2a",
+      "candidateSHA256": "8b9cc025207ff3e47aad833553688916d5356ba5ca1a5441701e8232c54ccf2a",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-moving-light-v001/runtime/tests/saju-jade-flow.test.mjs",
+      "baselineSHA256": "68dd03199345b0f86bed464709c63e31baf84511f3c05c5e82d8587535fad6be",
+      "candidateSHA256": "68dd03199345b0f86bed464709c63e31baf84511f3c05c5e82d8587535fad6be",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-moving-light-v001/runtime/tests/test-results.txt",
+      "baselineSHA256": "e08c786fac745881bf4f8e8e4518d4b2b96fa2cc67092b1546d86d30e0679caf",
+      "candidateSHA256": "e08c786fac745881bf4f8e8e4518d4b2b96fa2cc67092b1546d86d30e0679caf",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-moving-light-v001/runtime/textures/Jade_OriginalBaseColor_1024.png",
+      "baselineSHA256": "29bdd5ab8a2c87715fd3aedae3f0465c8b6910b5a9c0e8b8bffeb84a03c6b824",
+      "candidateSHA256": "29bdd5ab8a2c87715fd3aedae3f0465c8b6910b5a9c0e8b8bffeb84a03c6b824",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-moving-light-v001/runtime/textures/jade_field_atlas_128.png",
+      "baselineSHA256": "1987d11a0d4c0c261ec7adb61c536c6e542ed5f3c7667274b4abe15d14117296",
+      "candidateSHA256": "1987d11a0d4c0c261ec7adb61c536c6e542ed5f3c7667274b4abe15d14117296",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-moving-light-v001/runtime/textures/jade_field_atlas_128.u16le",
+      "baselineSHA256": "e93d72ea0d7571669f345263e1948f907dce35d48cb6fd148b38dc81cb5bbc4c",
+      "candidateSHA256": "e93d72ea0d7571669f345263e1948f907dce35d48cb6fd148b38dc81cb5bbc4c",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-moving-light-v001/source_reproduction_qa.json",
+      "baselineSHA256": "e0fd8254725e79419c191ee411e8eaee88981c00e6e692ebbc20210d02edba4d",
+      "candidateSHA256": "e0fd8254725e79419c191ee411e8eaee88981c00e6e692ebbc20210d02edba4d",
+      "unchanged": true
+    },
+    {
+      "path": "assets/source-reference/saju-b-moving-light-v001/verify_movie.py",
+      "baselineSHA256": "d18a77f37b6a96ab8a4c52d7f073600e1b900c6db87f0127177240d2d472ab15",
+      "candidateSHA256": "d18a77f37b6a96ab8a4c52d7f073600e1b900c6db87f0127177240d2d472ab15",
+      "unchanged": true
+    },
+    {
+      "path": "build/connector-preview-plugin.mjs",
+      "baselineSHA256": "a6a9fe2086e302f94a3f91e3c1a68a45bb3aa07d4a79faf01b14732191eb4e80",
+      "candidateSHA256": "a6a9fe2086e302f94a3f91e3c1a68a45bb3aa07d4a79faf01b14732191eb4e80",
+      "unchanged": true
+    },
+    {
+      "path": "build/connector-preview-worker.mjs",
+      "baselineSHA256": "c1b6b2c420cb67d9e28f8f4ae440f578c0dfd4cb840a12cfe4b58076629a17ba",
+      "candidateSHA256": "c1b6b2c420cb67d9e28f8f4ae440f578c0dfd4cb840a12cfe4b58076629a17ba",
+      "unchanged": true
+    },
+    {
+      "path": "build/sites-vite-plugin.LICENSE",
+      "baselineSHA256": "7de1e115d165f176e68f962acdb809b5ab8d8ae78d3981e0701392b2ac50c713",
+      "candidateSHA256": "7de1e115d165f176e68f962acdb809b5ab8d8ae78d3981e0701392b2ac50c713",
+      "unchanged": true
+    },
+    {
+      "path": "build/sites-vite-plugin.ts",
+      "baselineSHA256": "07af20e7097d9ed1d76f7c446d02997550b8fc5ca89668b249e25eabd62c6834",
+      "candidateSHA256": "07af20e7097d9ed1d76f7c446d02997550b8fc5ca89668b249e25eabd62c6834",
+      "unchanged": true
+    },
+    {
+      "path": "build/sites-worker.ts",
+      "baselineSHA256": "28a75f74adfc226a773d1c00d5779c26412eea40a104da5c77f7d0f0fc30f0e8",
+      "candidateSHA256": "28a75f74adfc226a773d1c00d5779c26412eea40a104da5c77f7d0f0fc30f0e8",
+      "unchanged": true
+    },
+    {
+      "path": "cloudflare-env.d.ts",
+      "baselineSHA256": "173bc87514f76d9cd1eb4c7a37ffa4490f947ef10aab39b8c72da1648ff56d90",
+      "candidateSHA256": "173bc87514f76d9cd1eb4c7a37ffa4490f947ef10aab39b8c72da1648ff56d90",
+      "unchanged": true
+    },
+    {
+      "path": "components.json",
+      "baselineSHA256": "31f4ca67a4a62572571003d3d5aac85ee6fbfca67a192924bac6b168d95e98fd",
+      "candidateSHA256": "31f4ca67a4a62572571003d3d5aac85ee6fbfca67a192924bac6b168d95e98fd",
+      "unchanged": true
+    },
+    {
+      "path": "components/AskDoryeongModal.tsx",
+      "baselineSHA256": "5900690d92e636975bdb30707b400269da197a3230e58b5ca70491195b1e3524",
+      "candidateSHA256": "5900690d92e636975bdb30707b400269da197a3230e58b5ca70491195b1e3524",
+      "unchanged": true
+    },
+    {
+      "path": "components/BottomNav.tsx",
+      "baselineSHA256": "8a93503c31d425657f0d99e53ce1e1a80dc7fb7cebc95ddeadee83e2f11dea8e",
+      "candidateSHA256": "8a93503c31d425657f0d99e53ce1e1a80dc7fb7cebc95ddeadee83e2f11dea8e",
+      "unchanged": true
+    },
+    {
+      "path": "components/FortuneCard.tsx",
+      "baselineSHA256": "8af53011982b49d962ae0b95eadc688ab5f7d4eb4c3e451a74b86c8b911e5d93",
+      "candidateSHA256": "8af53011982b49d962ae0b95eadc688ab5f7d4eb4c3e451a74b86c8b911e5d93",
+      "unchanged": true
+    },
+    {
+      "path": "components/Header.tsx",
+      "baselineSHA256": "5598153a26e7989d12ebee60a28b583066e53fe607006d7215362de6d2be96d6",
+      "candidateSHA256": "5598153a26e7989d12ebee60a28b583066e53fe607006d7215362de6d2be96d6",
+      "unchanged": true
+    },
+    {
+      "path": "components/SajuInputModal.tsx",
+      "baselineSHA256": "4d6d5eae3ddefe0cffbfb3886eda4c7cd1c757c7971d3886b17207486bae213f",
+      "candidateSHA256": "4d6d5eae3ddefe0cffbfb3886eda4c7cd1c757c7971d3886b17207486bae213f",
+      "unchanged": true
+    },
+    {
+      "path": "components/UniverseNav.tsx",
+      "baselineSHA256": "52f29fc8c37191539b549a4fbea20671e279be0e1b44500946227c8ea3585863",
+      "candidateSHA256": "52f29fc8c37191539b549a4fbea20671e279be0e1b44500946227c8ea3585863",
+      "unchanged": true
+    },
+    {
+      "path": "components/planet/CosmicPassportModal.tsx",
+      "baselineSHA256": "1b8b5948252ce5558bd4b314cb7c86f1c8636bad4959ac2ecd9849468c6bc865",
+      "candidateSHA256": "1b8b5948252ce5558bd4b314cb7c86f1c8636bad4959ac2ecd9849468c6bc865",
+      "unchanged": true
+    },
+    {
+      "path": "components/planet/ElementalSpiritCanvas.tsx",
+      "baselineSHA256": "16bdfd48f94ac3b069e331cdf70b154098cccbd02268cddade06d5bf0c0c971a",
+      "candidateSHA256": "2367829265fd949db74f8e6cd698ccc3e30677d04440e54fe401bd6e0041bad2",
+      "unchanged": false
+    },
+    {
+      "path": "components/planet/FiveElementFormStudy.tsx",
+      "baselineSHA256": "589ba4190ce405a8106b5ab00566ace0bdf7aa9e38f7ecdd83a3f31b050b09b1",
+      "candidateSHA256": "589ba4190ce405a8106b5ab00566ace0bdf7aa9e38f7ecdd83a3f31b050b09b1",
+      "unchanged": true
+    },
+    {
+      "path": "components/planet/GalaxyCanvas.tsx",
+      "baselineSHA256": "c22d45476068ab54977a0e06191b80b805ff28f33e571790be2bd0f7f2bde361",
+      "candidateSHA256": "c22d45476068ab54977a0e06191b80b805ff28f33e571790be2bd0f7f2bde361",
+      "unchanged": true
+    },
+    {
+      "path": "components/planet/GalaxyPokedexModal.tsx",
+      "baselineSHA256": "41f2dc176c4116742910c13b85955c1924de4c438dbcef0264ffeee445898c61",
+      "candidateSHA256": "41f2dc176c4116742910c13b85955c1924de4c438dbcef0264ffeee445898c61",
+      "unchanged": true
+    },
+    {
+      "path": "components/planet/ImWaterStudy.tsx",
+      "baselineSHA256": "8fdb860a47b236225ef1d5fe93d4a83ea3d6785f9a89b21e057898f1bc482134",
+      "candidateSHA256": "8fdb860a47b236225ef1d5fe93d4a83ea3d6785f9a89b21e057898f1bc482134",
+      "unchanged": true
+    },
+    {
+      "path": "components/planet/PlanetCanvas.tsx",
+      "baselineSHA256": "6777d28d0275a3a7a9d2bf71edfe607bd4f677e61c53a5fc62071204f6ff5c2f",
+      "candidateSHA256": "6777d28d0275a3a7a9d2bf71edfe607bd4f677e61c53a5fc62071204f6ff5c2f",
+      "unchanged": true
+    },
+    {
+      "path": "components/planet/PorcelainHeroStudy.tsx",
+      "baselineSHA256": "97f7c7dc60e9bbd89b8347fbc8fbf808a6641dc1351032d0ab7a0796e1b6dfd4",
+      "candidateSHA256": "97f7c7dc60e9bbd89b8347fbc8fbf808a6641dc1351032d0ab7a0796e1b6dfd4",
+      "unchanged": true
+    },
+    {
+      "path": "components/planet/StemMaterialStudy.tsx",
+      "baselineSHA256": "57719868ed4cba5c15206b933f1ed5479e3e91a5792107abbe0d51063ebf3d13",
+      "candidateSHA256": "57719868ed4cba5c15206b933f1ed5479e3e91a5792107abbe0d51063ebf3d13",
+      "unchanged": true
+    },
+    {
+      "path": "db/index.ts",
+      "baselineSHA256": "dc7610b00b918e0ffff1360a63626f16655ced3064b2eaf96095a4101fb14bcd",
+      "candidateSHA256": "dc7610b00b918e0ffff1360a63626f16655ced3064b2eaf96095a4101fb14bcd",
+      "unchanged": true
+    },
+    {
+      "path": "db/schema.ts",
+      "baselineSHA256": "62cc5b93062f6413ed44265131c073c9ed772a7d640cb45f1c1a7015b9b9d93e",
+      "candidateSHA256": "62cc5b93062f6413ed44265131c073c9ed772a7d640cb45f1c1a7015b9b9d93e",
+      "unchanged": true
+    },
+    {
+      "path": "drizzle.config.ts",
+      "baselineSHA256": "af081f7384aaeb0082cf422e29f139d137ca2f6a57c69b2c37b9fb1f8479867b",
+      "candidateSHA256": "af081f7384aaeb0082cf422e29f139d137ca2f6a57c69b2c37b9fb1f8479867b",
+      "unchanged": true
+    },
+    {
+      "path": "drizzle/0000_windy_maestro.sql",
+      "baselineSHA256": "8e96da17ba8f773233dc32d65449dd734d49e3cbb7dcd125b5edd10ea7fd59cf",
+      "candidateSHA256": "8e96da17ba8f773233dc32d65449dd734d49e3cbb7dcd125b5edd10ea7fd59cf",
+      "unchanged": true
+    },
+    {
+      "path": "drizzle/0001_fuzzy_blue_blade.sql",
+      "baselineSHA256": "fb8809a8db6e5e07366ee349078c8470aeda9667842ebb9df2201c92996553cb",
+      "candidateSHA256": "fb8809a8db6e5e07366ee349078c8470aeda9667842ebb9df2201c92996553cb",
+      "unchanged": true
+    },
+    {
+      "path": "drizzle/meta/0000_snapshot.json",
+      "baselineSHA256": "2e81bafe8ffec7e85d00efea5127a8020b4a8cb616b0aba6584566442f7e05bc",
+      "candidateSHA256": "2e81bafe8ffec7e85d00efea5127a8020b4a8cb616b0aba6584566442f7e05bc",
+      "unchanged": true
+    },
+    {
+      "path": "drizzle/meta/0001_snapshot.json",
+      "baselineSHA256": "5f449ebd38fa36ed4dd916d017c2b629b239b4de13e6fb082d4a0d02d9011e0c",
+      "candidateSHA256": "5f449ebd38fa36ed4dd916d017c2b629b239b4de13e6fb082d4a0d02d9011e0c",
+      "unchanged": true
+    },
+    {
+      "path": "drizzle/meta/_journal.json",
+      "baselineSHA256": "cc2c77bba410f2d93ad59c27c70effff8dd8abedd827046a2edbe9a0f352bda2",
+      "candidateSHA256": "cc2c77bba410f2d93ad59c27c70effff8dd8abedd827046a2edbe9a0f352bda2",
+      "unchanged": true
+    },
+    {
+      "path": "eslint.config.mjs",
+      "baselineSHA256": "f22a254df7d934bbf9be499d3c969a13abb7f7f64c03f5967d0095cad81dfe06",
+      "candidateSHA256": "f22a254df7d934bbf9be499d3c969a13abb7f7f64c03f5967d0095cad81dfe06",
+      "unchanged": true
+    },
+    {
+      "path": "examples/d1/app/api/notes/route.ts",
+      "baselineSHA256": "a3d4a74fd53b7bf53e2df41f169d9d9d44a8b22aeb6d92f4e754956079af8909",
+      "candidateSHA256": "a3d4a74fd53b7bf53e2df41f169d9d9d44a8b22aeb6d92f4e754956079af8909",
+      "unchanged": true
+    },
+    {
+      "path": "examples/d1/db/schema.ts",
+      "baselineSHA256": "d89eabd95716ce404f5f7ca2a254220435be8ddce7c899d7ef461ff22ec80454",
+      "candidateSHA256": "d89eabd95716ce404f5f7ca2a254220435be8ddce7c899d7ef461ff22ec80454",
+      "unchanged": true
+    },
+    {
+      "path": "hooks/use-dialog-focus.ts",
+      "baselineSHA256": "03b11715109784c5fe2ef6587c6a326649820d55af93fd94f2279108b90e8133",
+      "candidateSHA256": "03b11715109784c5fe2ef6587c6a326649820d55af93fd94f2279108b90e8133",
+      "unchanged": true
+    },
+    {
+      "path": "hooks/use-mobile.ts",
+      "baselineSHA256": "ad0936f84f1df79d3697bfbff9c18f8ad58431c1cbaf2359c6a853b0fcc9f28b",
+      "candidateSHA256": "ad0936f84f1df79d3697bfbff9c18f8ad58431c1cbaf2359c6a853b0fcc9f28b",
+      "unchanged": true
+    },
+    {
+      "path": "hooks/use-universe.ts",
+      "baselineSHA256": "ba402065edace6a1608cdfd1f78ad2cd38c3c56e45992a34eee16b9f03183c17",
+      "candidateSHA256": "ba402065edace6a1608cdfd1f78ad2cd38c3c56e45992a34eee16b9f03183c17",
+      "unchanged": true
+    },
+    {
+      "path": "lib/ai/doryeong-ai.ts",
+      "baselineSHA256": "5320c0836ef5c9370629bfc5e437777acb2a1669bb078c11e863f16154947c00",
+      "candidateSHA256": "5320c0836ef5c9370629bfc5e437777acb2a1669bb078c11e863f16154947c00",
+      "unchanged": true
+    },
+    {
+      "path": "lib/connector-context.ts",
+      "baselineSHA256": "bbddff68689cb0f6926fecd4b8b96f12f2054277c296e97b0df07d4ad5ece24e",
+      "candidateSHA256": "bbddff68689cb0f6926fecd4b8b96f12f2054277c296e97b0df07d4ad5ece24e",
+      "unchanged": true
+    },
+    {
+      "path": "lib/connector-contract.mts",
+      "baselineSHA256": "e1a7b24a8793af34b595690d9b1300c897c7321c14f215cedf58ad95799d7c3e",
+      "candidateSHA256": "e1a7b24a8793af34b595690d9b1300c897c7321c14f215cedf58ad95799d7c3e",
+      "unchanged": true
+    },
+    {
+      "path": "lib/connector-errors.mts",
+      "baselineSHA256": "a22edf13d6873ae832c4a2a0d579fc666c73ec996ef0722d39172649d38f0871",
+      "candidateSHA256": "a22edf13d6873ae832c4a2a0d579fc666c73ec996ef0722d39172649d38f0871",
+      "unchanged": true
+    },
+    {
+      "path": "lib/connector-preview.d.ts",
+      "baselineSHA256": "abd69a94f7f61f1359063bb557574faae35e8ff5a028cc4c04b9ee248ef52642",
+      "candidateSHA256": "abd69a94f7f61f1359063bb557574faae35e8ff5a028cc4c04b9ee248ef52642",
+      "unchanged": true
+    },
+    {
+      "path": "lib/connectors.ts",
+      "baselineSHA256": "1c93d747e384c8e17e3e3dd5361b24412babf5eba2a11d2ae7a75f4e0924112c",
+      "candidateSHA256": "1c93d747e384c8e17e3e3dd5361b24412babf5eba2a11d2ae7a75f4e0924112c",
+      "unchanged": true
+    },
+    {
+      "path": "lib/db/fortune-summary.ts",
+      "baselineSHA256": "ed71a311cfb0eb23dd787c62b3a91302b4bc44023bbd13aaeea662f781d58154",
+      "candidateSHA256": "ed71a311cfb0eb23dd787c62b3a91302b4bc44023bbd13aaeea662f781d58154",
+      "unchanged": true
+    },
+    {
+      "path": "lib/db/store.ts",
+      "baselineSHA256": "f8340b9035e1c50dc832efc30c638f671e06f873a30186aac63b8afb22fa43c1",
+      "candidateSHA256": "f8340b9035e1c50dc832efc30c638f671e06f873a30186aac63b8afb22fa43c1",
+      "unchanged": true
+    },
+    {
+      "path": "lib/http-client.ts",
+      "baselineSHA256": "a40c7be344092dc378d14564f958d7a49a9370e0a295fe29a2685bbdbecd96f9",
+      "candidateSHA256": "a40c7be344092dc378d14564f958d7a49a9370e0a295fe29a2685bbdbecd96f9",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/affine-instance-normals.ts",
+      "baselineSHA256": "15e2d87ecab90ce9fa2fdce91613117cf021e101d071beb34555fdd02bc1415a",
+      "candidateSHA256": "15e2d87ecab90ce9fa2fdce91613117cf021e101d071beb34555fdd02bc1415a",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/approved-jade-spirit.ts",
+      "baselineSHA256": "64c85f63d50e63f57a53e4bcb10a98383657e2f3fce2fd9e5aaa7bde65a1a543",
+      "candidateSHA256": "6488a295800a41eb1f601f634d41a18563ccfa748119df309714cb76a5bac3b3",
+      "unchanged": false
+    },
+    {
+      "path": "lib/planet/approved-spirit-motion.ts",
+      "baselineSHA256": "92454b392446e9a85814aafd5653518ad7694d9b4465f3436353a6792d66377f",
+      "candidateSHA256": "92454b392446e9a85814aafd5653518ad7694d9b4465f3436353a6792d66377f",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/approved-stem-accents.ts",
+      "baselineSHA256": "1edebf186af335e1c2b703e53445b4a7b409750cf984f6a6fc63a94ffbac8a5b",
+      "candidateSHA256": "1edebf186af335e1c2b703e53445b4a7b409750cf984f6a6fc63a94ffbac8a5b",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/approved-stem-materials.ts",
+      "baselineSHA256": "4f625fe9b75ee278e67b4b452b6bc16fe01f599bec2b48dad8e3842602266f7b",
+      "candidateSHA256": "4f625fe9b75ee278e67b4b452b6bc16fe01f599bec2b48dad8e3842602266f7b",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/asteroid-belt.ts",
+      "baselineSHA256": "dbd48365358397d47413f2082594c5bf8bf9bc2bb5325be8df7339149d74ad08",
+      "candidateSHA256": "dbd48365358397d47413f2082594c5bf8bf9bc2bb5325be8df7339149d74ad08",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/character-material-fixture.ts",
+      "baselineSHA256": "cd47bc28963202b51801d7892f304731d1b12afeb650fa371f3c96b9364121c0",
+      "candidateSHA256": "cd47bc28963202b51801d7892f304731d1b12afeb650fa371f3c96b9364121c0",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/character-rest-coordinates.ts",
+      "baselineSHA256": "a76a2e165b704e9665e5a45c975006a44cf5710cf4cc44bae92eee8cc5646e01",
+      "candidateSHA256": "a76a2e165b704e9665e5a45c975006a44cf5710cf4cc44bae92eee8cc5646e01",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/context-loss-resources.ts",
+      "baselineSHA256": "4e8a70a049d97663f577eb8f5701b005ca2f50836c539b9fcce9c160cbff394b",
+      "candidateSHA256": "4e8a70a049d97663f577eb8f5701b005ca2f50836c539b9fcce9c160cbff394b",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/earth-expression-bindings.json",
+      "baselineSHA256": "3cf13c1757800bc42f9519e51fc0d47cf493e76450127a30955136e736b91f52",
+      "candidateSHA256": "3cf13c1757800bc42f9519e51fc0d47cf493e76450127a30955136e736b91f52",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/elemental-spirit.ts",
+      "baselineSHA256": "3bdb5c0c63f9b6c5f78f57a12435c0b876389f099b4cb560e6bb0523470a9ee7",
+      "candidateSHA256": "f092e22f3745a93f981c03bcd21aa643627dbc46ef47a9528e5d2d4490b5060d",
+      "unchanged": false
+    },
+    {
+      "path": "lib/planet/fire-expression-bindings.json",
+      "baselineSHA256": "adba4f07464d5a9960ceffdf1ad49595ff241bbb40d8e89b435e27d0836db211",
+      "candidateSHA256": "adba4f07464d5a9960ceffdf1ad49595ff241bbb40d8e89b435e27d0836db211",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/galaxy-helper.ts",
+      "baselineSHA256": "d6978b4f112c1c1ae9348b38d5dda3766a827c836a95095fcb701789c6e342a2",
+      "candidateSHA256": "d6978b4f112c1c1ae9348b38d5dda3766a827c836a95095fcb701789c6e342a2",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/galaxy-motion.ts",
+      "baselineSHA256": "1e9f55f1e1944700fde30e8163f6f7681bf3fc448f2db20e1c91448763b85962",
+      "candidateSHA256": "1e9f55f1e1944700fde30e8163f6f7681bf3fc448f2db20e1c91448763b85962",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/im-water-study-material.ts",
+      "baselineSHA256": "22f3eacf8d7043e60ceb614dbf47b6068569b5ddacc40132666da2a443d4d77e",
+      "candidateSHA256": "22f3eacf8d7043e60ceb614dbf47b6068569b5ddacc40132666da2a443d4d77e",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/jelly-expression-bindings.json",
+      "baselineSHA256": "6a4dd698e818bfd38df8cccf78048231c50f541815bd2f89051c7f0ce2dcebd7",
+      "candidateSHA256": "6a4dd698e818bfd38df8cccf78048231c50f541815bd2f89051c7f0ce2dcebd7",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/jelly-expression-controller.ts",
+      "baselineSHA256": "3daafe544e94776d15b7dd820ada11440b7894a8019452446bd3eba8883bc8af",
+      "candidateSHA256": "3daafe544e94776d15b7dd820ada11440b7894a8019452446bd3eba8883bc8af",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/living-surface-shader.ts",
+      "baselineSHA256": "588edc821ca82d0e6bf8e0389fd503929b94ba8a985e67792b002dd8d1f14f03",
+      "candidateSHA256": "588edc821ca82d0e6bf8e0389fd503929b94ba8a985e67792b002dd8d1f14f03",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/mesh-surface.ts",
+      "baselineSHA256": "aed2f700821c6d1b0670af8fcb1acf8bdb908e2db84e41246b84a9889751aba0",
+      "candidateSHA256": "aed2f700821c6d1b0670af8fcb1acf8bdb908e2db84e41246b84a9889751aba0",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/metal-expression-bindings.json",
+      "baselineSHA256": "26774785a73632cae3bfc8508364a06d7cc3b5190ba9bc0af49aaedea230d442",
+      "candidateSHA256": "26774785a73632cae3bfc8508364a06d7cc3b5190ba9bc0af49aaedea230d442",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/planet-appearance.ts",
+      "baselineSHA256": "6885f71d58183faf053f2922980d6104b9bd9e0dbad1be3111778197dcccd41f",
+      "candidateSHA256": "6885f71d58183faf053f2922980d6104b9bd9e0dbad1be3111778197dcccd41f",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/porcelain-blink.ts",
+      "baselineSHA256": "8b70b1764a990280ddb7a6b0b72d40f963f21267458db39fd2dc68d803eeee27",
+      "candidateSHA256": "8b70b1764a990280ddb7a6b0b72d40f963f21267458db39fd2dc68d803eeee27",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/raw-assets.d.ts",
+      "baselineSHA256": "1ba362a47115469a11c97b1003d7c16a78aa8f2a2f9a8d487c5c899a07dd2eb6",
+      "candidateSHA256": "1ba362a47115469a11c97b1003d7c16a78aa8f2a2f9a8d487c5c899a07dd2eb6",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/render-resources.ts",
+      "baselineSHA256": "3bdc79d99b391581263ab03d2fb355fcc9fc66b7fa32b8ced767b38cf9858629",
+      "candidateSHA256": "3bdc79d99b391581263ab03d2fb355fcc9fc66b7fa32b8ced767b38cf9858629",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/sandstone-fissure-field.ts",
+      "baselineSHA256": "f4f9a95f23efc52a430d8780517287cba8a664b30dbfe6dab8f962f34220a191",
+      "candidateSHA256": "f4f9a95f23efc52a430d8780517287cba8a664b30dbfe6dab8f962f34220a191",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/scene-environment.ts",
+      "baselineSHA256": "6aca790acdf6b7e70282f22eb59e9030f68de681f3ffd958e918bde6fa12117e",
+      "candidateSHA256": "6aca790acdf6b7e70282f22eb59e9030f68de681f3ffd958e918bde6fa12117e",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/scene-gestures.ts",
+      "baselineSHA256": "64ec271bf397c2a25d3092bb7bfb07e7fd46308b7090ce4f5f701bf9f2667976",
+      "candidateSHA256": "64ec271bf397c2a25d3092bb7bfb07e7fd46308b7090ce4f5f701bf9f2667976",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/spiral-galaxy.ts",
+      "baselineSHA256": "f27f6753491383414c331ef863cb76b31273983ec2cbd873fd793fabaa4b7be7",
+      "candidateSHA256": "f27f6753491383414c331ef863cb76b31273983ec2cbd873fd793fabaa4b7be7",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/spirit-geometry.ts",
+      "baselineSHA256": "881471269bb0940aba4fc808e727ea8563b45468d6de78443f5b4b73de3deffb",
+      "candidateSHA256": "881471269bb0940aba4fc808e727ea8563b45468d6de78443f5b4b73de3deffb",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/spirit-profiles.ts",
+      "baselineSHA256": "5eea12236f7a72d42d0e800c0fd64b137640bf0e80927a055aab51ed642dad56",
+      "candidateSHA256": "5eea12236f7a72d42d0e800c0fd64b137640bf0e80927a055aab51ed642dad56",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/spirit-zodiac-pet.ts",
+      "baselineSHA256": "7c84e8a65e376d8abd60fcf77256c3546c15b83585ff4829a09ffdbb0082ec81",
+      "candidateSHA256": "7c84e8a65e376d8abd60fcf77256c3546c15b83585ff4829a09ffdbb0082ec81",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/spirit-zodiac.ts",
+      "baselineSHA256": "a59195d639b56af25f4bfb718fdd9bc9a84f658d12ce7e8becdaeb194da8fde3",
+      "candidateSHA256": "a59195d639b56af25f4bfb718fdd9bc9a84f658d12ce7e8becdaeb194da8fde3",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/surface-attachment-exclusions.ts",
+      "baselineSHA256": "86dec9178e0fd0d01e4bcd174be765c37eafbb32c8aadfedd32dd460f75c94c0",
+      "candidateSHA256": "86dec9178e0fd0d01e4bcd174be765c37eafbb32c8aadfedd32dd460f75c94c0",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/surface-creeping-vines.ts",
+      "baselineSHA256": "545c0275e1ad6d09e9383757e6576279dc800d37309ac4f496db6548c807a645",
+      "candidateSHA256": "545c0275e1ad6d09e9383757e6576279dc800d37309ac4f496db6548c807a645",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/surface-effects.ts",
+      "baselineSHA256": "94f1c479f8ed96ee42af839bf7a78aaba2acd4d90be5db8d4d02cda5b3bc8a52",
+      "candidateSHA256": "94f1c479f8ed96ee42af839bf7a78aaba2acd4d90be5db8d4d02cda5b3bc8a52",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/surface-fissure-sand.ts",
+      "baselineSHA256": "f07fc342b81e14148296ca6b89eee8ed55d785f12475253d21a2ee23b0d5f92f",
+      "candidateSHA256": "f07fc342b81e14148296ca6b89eee8ed55d785f12475253d21a2ee23b0d5f92f",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/surface-material.ts",
+      "baselineSHA256": "ab2ba1d4386e4b76a3c77372274439fecb0bddb623269127eb45046aff45df45",
+      "candidateSHA256": "ab2ba1d4386e4b76a3c77372274439fecb0bddb623269127eb45046aff45df45",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/surface-math.ts",
+      "baselineSHA256": "6f785c406149941df100690d5e64404e1108a60ea46a79625c0fa76dc46af0f9",
+      "candidateSHA256": "6f785c406149941df100690d5e64404e1108a60ea46a79625c0fa76dc46af0f9",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/surface-sliding-dew.ts",
+      "baselineSHA256": "e3c847935419bc704179e8c307868330d8df122c58c595a5065d4488f4689bb5",
+      "candidateSHA256": "e3c847935419bc704179e8c307868330d8df122c58c595a5065d4488f4689bb5",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/surface-stem-accents.ts",
+      "baselineSHA256": "fbe09631ab1995a81eb0515144b17bcba11bf337b19beb57ce69317d1ebc9b33",
+      "candidateSHA256": "fbe09631ab1995a81eb0515144b17bcba11bf337b19beb57ce69317d1ebc9b33",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/surface-triangle-walk.ts",
+      "baselineSHA256": "bef4cb6c034dfeb931a7e423933386a1f341443c2fc56d2099ce571c3b897a3e",
+      "candidateSHA256": "bef4cb6c034dfeb931a7e423933386a1f341443c2fc56d2099ce571c3b897a3e",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/surface-vine-body.ts",
+      "baselineSHA256": "5e3968374e868e44e234b332cba4cf0cabccd0e437b98d72c87add2e72730c24",
+      "candidateSHA256": "5e3968374e868e44e234b332cba4cf0cabccd0e437b98d72c87add2e72730c24",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/surface-woody-branches.ts",
+      "baselineSHA256": "a460444533fd086a461618fff1ac1c7ee6677138ce06a8b9ad2f9d5356d3974b",
+      "candidateSHA256": "a460444533fd086a461618fff1ac1c7ee6677138ce06a8b9ad2f9d5356d3974b",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/texture-generator.ts",
+      "baselineSHA256": "044def6002449599755a04582024c15fb2f455275f36ebd7dad8d027305fb7a7",
+      "candidateSHA256": "044def6002449599755a04582024c15fb2f455275f36ebd7dad8d027305fb7a7",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/theme-library.ts",
+      "baselineSHA256": "1e51156fbb99ea622a075dbbd22531c083ecb4a8b0aeec15c609cd9302d7798a",
+      "candidateSHA256": "1e51156fbb99ea622a075dbbd22531c083ecb4a8b0aeec15c609cd9302d7798a",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/uv-mask.ts",
+      "baselineSHA256": "2134589728d410b7c64d5a8f8cf4b8dde533141e33f7acf158df482e4a20a349",
+      "candidateSHA256": "2134589728d410b7c64d5a8f8cf4b8dde533141e33f7acf158df482e4a20a349",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/vine-bundle.ts",
+      "baselineSHA256": "cc8f6eb7fe6dc868077fc8ab0b7012f5cf197476a097953026b68f3374e9cbb8",
+      "candidateSHA256": "cc8f6eb7fe6dc868077fc8ab0b7012f5cf197476a097953026b68f3374e9cbb8",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/visibility-loop.ts",
+      "baselineSHA256": "8b99ca32626371ff3f7dd3df659014a1b746ed749c3e8cd9179ace407aee9e1a",
+      "candidateSHA256": "8b99ca32626371ff3f7dd3df659014a1b746ed749c3e8cd9179ace407aee9e1a",
+      "unchanged": true
+    },
+    {
+      "path": "lib/planet/wood-expression-bindings.json",
+      "baselineSHA256": "5b16c35bfcf0fa24f60dbf9179ba644caa4c935a4841eb8caa3ac9d096ed7ebd",
+      "candidateSHA256": "5b16c35bfcf0fa24f60dbf9179ba644caa4c935a4841eb8caa3ac9d096ed7ebd",
+      "unchanged": true
+    },
+    {
+      "path": "lib/saju/daily-orbital.ts",
+      "baselineSHA256": "6756859b26da60494203f5903532ed8b7ffe76ef2d9ae69ab4d1c2b629fec79b",
+      "candidateSHA256": "6756859b26da60494203f5903532ed8b7ffe76ef2d9ae69ab4d1c2b629fec79b",
+      "unchanged": true
+    },
+    {
+      "path": "lib/saju/input-error.ts",
+      "baselineSHA256": "a1533c1b2c00755ed076e978990d0fb8119ec80ff5599096da4781990b54285a",
+      "candidateSHA256": "a1533c1b2c00755ed076e978990d0fb8119ec80ff5599096da4781990b54285a",
+      "unchanged": true
+    },
+    {
+      "path": "lib/saju/input.ts",
+      "baselineSHA256": "7880ae0a8808631918cc3d33ac4acc39955443fac9c4d24acc11077b17e220cf",
+      "candidateSHA256": "7880ae0a8808631918cc3d33ac4acc39955443fac9c4d24acc11077b17e220cf",
+      "unchanged": true
+    },
+    {
+      "path": "lib/saju/lunar-calendar.ts",
+      "baselineSHA256": "5a7c2c411873e640eab764db21f5ab1bd6f149b5d41434327b81e46e00a6a6c1",
+      "candidateSHA256": "5a7c2c411873e640eab764db21f5ab1bd6f149b5d41434327b81e46e00a6a6c1",
+      "unchanged": true
+    },
+    {
+      "path": "lib/saju/manse.ts",
+      "baselineSHA256": "dae53e7bf50f5b821d1c737967c23e70e5c0623fb7089142fe01bcc5c6b15710",
+      "candidateSHA256": "dae53e7bf50f5b821d1c737967c23e70e5c0623fb7089142fe01bcc5c6b15710",
+      "unchanged": true
+    },
+    {
+      "path": "lib/saju/types.ts",
+      "baselineSHA256": "278346290f6b8d9fa32ceea4b891ee48b67e8c5f4385d3ce985daecf72b66d79",
+      "candidateSHA256": "278346290f6b8d9fa32ceea4b891ee48b67e8c5f4385d3ce985daecf72b66d79",
+      "unchanged": true
+    },
+    {
+      "path": "lib/universe-state.ts",
+      "baselineSHA256": "071e217c6f9b968abaf876c966184df4d868494aca5128f40a32979407cb195c",
+      "candidateSHA256": "071e217c6f9b968abaf876c966184df4d868494aca5128f40a32979407cb195c",
+      "unchanged": true
+    },
+    {
+      "path": "lib/utils.ts",
+      "baselineSHA256": "53f3d3d070f0a9082934da25b875f9499855c2b0693868dd28be8c23d8730f68",
+      "candidateSHA256": "53f3d3d070f0a9082934da25b875f9499855c2b0693868dd28be8c23d8730f68",
+      "unchanged": true
+    },
+    {
+      "path": "next-env.d.ts",
+      "baselineSHA256": "217ce9348b523c3e6954fb50bb93364b58781d86742c995f3a5b03ba88b9ba72",
+      "candidateSHA256": "217ce9348b523c3e6954fb50bb93364b58781d86742c995f3a5b03ba88b9ba72",
+      "unchanged": true
+    },
+    {
+      "path": "next.config.ts",
+      "baselineSHA256": "614bce25b089c3f19b1e17a6346c74b858034040154c6621e7d35303004767cc",
+      "candidateSHA256": "614bce25b089c3f19b1e17a6346c74b858034040154c6621e7d35303004767cc",
+      "unchanged": true
+    },
+    {
+      "path": "package-lock.json",
+      "baselineSHA256": "ffb8ad533a7ea1d2f48ca306489d19884296f7902423fbbc00c48f3b8fd11d4e",
+      "candidateSHA256": "ffb8ad533a7ea1d2f48ca306489d19884296f7902423fbbc00c48f3b8fd11d4e",
+      "unchanged": true
+    },
+    {
+      "path": "package.json",
+      "baselineSHA256": "0001ed947a91213784bfe29ccc41d637a30ae17125412cc8ae9315562a98a5ef",
+      "candidateSHA256": "0001ed947a91213784bfe29ccc41d637a30ae17125412cc8ae9315562a98a5ef",
+      "unchanged": true
+    },
+    {
+      "path": "postcss.config.mjs",
+      "baselineSHA256": "9199a4d20e13f66b8be9a348af182f4d14805b93b315db19f95be8432cd8301b",
+      "candidateSHA256": "9199a4d20e13f66b8be9a348af182f4d14805b93b315db19f95be8432cd8301b",
+      "unchanged": true
+    },
+    {
+      "path": "preservation-archives/README.md",
+      "baselineSHA256": "b278f1b7d7ef72ec83484a341dadb43b9c12c57b74bc88e36cb213c05216d9ca",
+      "candidateSHA256": "b278f1b7d7ef72ec83484a341dadb43b9c12c57b74bc88e36cb213c05216d9ca",
+      "unchanged": true
+    },
+    {
+      "path": "preservation-archives/porcelain-hero-blink-v1.glb.gz",
+      "baselineSHA256": "09f11f913f4853ea2050a007618ec607e7a6e4350403f7e4bdd91a68e542f3a1",
+      "candidateSHA256": "09f11f913f4853ea2050a007618ec607e7a6e4350403f7e4bdd91a68e542f3a1",
+      "unchanged": true
+    },
+    {
+      "path": "public/favicon.svg",
+      "baselineSHA256": "bf6c12ea64f442b40dd90523ce350875c2ed5e0d325abbf2dfe1e2e9325e2cda",
+      "candidateSHA256": "bf6c12ea64f442b40dd90523ce350875c2ed5e0d325abbf2dfe1e2e9325e2cda",
+      "unchanged": true
+    },
+    {
+      "path": "public/images/cosmos-cover.png",
+      "baselineSHA256": "8749ac60a1333b432c55c9a9fc826a78eabdb4187e292bba0bfbcf5d7d9ac1ba",
+      "candidateSHA256": "8749ac60a1333b432c55c9a9fc826a78eabdb4187e292bba0bfbcf5d7d9ac1ba",
+      "unchanged": true
+    },
+    {
+      "path": "public/images/five-element-lineup-v1.png",
+      "baselineSHA256": "662e822695e7477d671aa3911ac21b461f40d1173ac1d41b4aa593b3692dc6ca",
+      "candidateSHA256": "662e822695e7477d671aa3911ac21b461f40d1173ac1d41b4aa593b3692dc6ca",
+      "unchanged": true
+    },
+    {
+      "path": "public/images/im-water-target.png",
+      "baselineSHA256": "0af98704cdb10f38ec6c67ea6eba6938af5dfd5fdbafa3b8350f0596b15d0744",
+      "candidateSHA256": "0af98704cdb10f38ec6c67ea6eba6938af5dfd5fdbafa3b8350f0596b15d0744",
+      "unchanged": true
+    },
+    {
+      "path": "public/images/porcelain-hero-portrait-v2.png",
+      "baselineSHA256": "1c6761dfbb1bcd1b496258c51382ceab63a9e6e3374d8fcf813d992a647c8e54",
+      "candidateSHA256": "1c6761dfbb1bcd1b496258c51382ceab63a9e6e3374d8fcf813d992a647c8e54",
+      "unchanged": true
+    },
+    {
+      "path": "public/images/porcelain-hero-portrait.png",
+      "baselineSHA256": "36e44ff235b3e5440f0e0eac1c4a55e79e3c8def9977ba53d4b5d5983725f168",
+      "candidateSHA256": "36e44ff235b3e5440f0e0eac1c4a55e79e3c8def9977ba53d4b5d5983725f168",
+      "unchanged": true
+    },
+    {
+      "path": "public/images/stem-material-reference-v2.png",
+      "baselineSHA256": "0cda0a5c0b27c5921703c563bbbe1bb2255c8a8eb0bb948163f3948198143562",
+      "candidateSHA256": "0cda0a5c0b27c5921703c563bbbe1bb2255c8a8eb0bb948163f3948198143562",
+      "unchanged": true
+    },
+    {
+      "path": "public/models/five-elements/earth-expression-v1.glb",
+      "baselineSHA256": "adddd4af80479125b9750b15f36a91fdc74ab618c2fc1f99b8c2018095c0289b",
+      "candidateSHA256": "adddd4af80479125b9750b15f36a91fdc74ab618c2fc1f99b8c2018095c0289b",
+      "unchanged": true
+    },
+    {
+      "path": "public/models/five-elements/earth-v1.glb",
+      "baselineSHA256": "8a5e1c2604ff66ad154f83fa6da67734c19c4fe696d2228d2808576637b8ebfa",
+      "candidateSHA256": "8a5e1c2604ff66ad154f83fa6da67734c19c4fe696d2228d2808576637b8ebfa",
+      "unchanged": true
+    },
+    {
+      "path": "public/models/five-elements/fire-expression-v1.glb",
+      "baselineSHA256": "c3d4c4d4a1cf606e323f0bf213dbf4b5eec7a3794905fce817465541d25d30c3",
+      "candidateSHA256": "c3d4c4d4a1cf606e323f0bf213dbf4b5eec7a3794905fce817465541d25d30c3",
+      "unchanged": true
+    },
+    {
+      "path": "public/models/five-elements/fire-v1.glb",
+      "baselineSHA256": "f1c897e34302278ca4d78abbc787348acf8adb73de506c60b873ef3cf3062f93",
+      "candidateSHA256": "f1c897e34302278ca4d78abbc787348acf8adb73de506c60b873ef3cf3062f93",
+      "unchanged": true
+    },
+    {
+      "path": "public/models/five-elements/metal-expression-v1.glb",
+      "baselineSHA256": "d01210e7870b94c96a0c1be4f4c1b147d059f91803f8ac0b294bc94b66ba9145",
+      "candidateSHA256": "d01210e7870b94c96a0c1be4f4c1b147d059f91803f8ac0b294bc94b66ba9145",
+      "unchanged": true
+    },
+    {
+      "path": "public/models/five-elements/metal-v1.glb",
+      "baselineSHA256": "9ed143929120a5836005ffe707be9bbf6f20a94a6bfee1828455fdcceb27a023",
+      "candidateSHA256": "9ed143929120a5836005ffe707be9bbf6f20a94a6bfee1828455fdcceb27a023",
+      "unchanged": true
+    },
+    {
+      "path": "public/models/five-elements/water-expression-v1.glb",
+      "baselineSHA256": "1a5139c2aa1bc78f67d6755f2da9e0ec2997f78b06c541a8898b348191ebb42b",
+      "candidateSHA256": "1a5139c2aa1bc78f67d6755f2da9e0ec2997f78b06c541a8898b348191ebb42b",
+      "unchanged": true
+    },
+    {
+      "path": "public/models/five-elements/water-v1.glb",
+      "baselineSHA256": "8ceb8507485b78ea482dd765b32118734ce0cb17655998d2740e19f203bc1a0c",
+      "candidateSHA256": "8ceb8507485b78ea482dd765b32118734ce0cb17655998d2740e19f203bc1a0c",
+      "unchanged": true
+    },
+    {
+      "path": "public/models/five-elements/wood-expression-v1.glb",
+      "baselineSHA256": "9988e332a4efaefbe2c4c2885e0a5c4842e6089e8c5d0f2b430e70d1a5930b2b",
+      "candidateSHA256": "9988e332a4efaefbe2c4c2885e0a5c4842e6089e8c5d0f2b430e70d1a5930b2b",
+      "unchanged": true
+    },
+    {
+      "path": "public/models/five-elements/wood-v1.glb",
+      "baselineSHA256": "1bf696c798ca3c97e9125fa8866e8146895129cf0dadab19ec755c98255c3cf1",
+      "candidateSHA256": "1bf696c798ca3c97e9125fa8866e8146895129cf0dadab19ec755c98255c3cf1",
+      "unchanged": true
+    },
+    {
+      "path": "public/models/porcelain-hero-v1-lite.glb",
+      "baselineSHA256": "22bd1b4d410db3d8dbfe5068f78ce12ef4fcdc759a46915541fa356501a62f6e",
+      "candidateSHA256": "22bd1b4d410db3d8dbfe5068f78ce12ef4fcdc759a46915541fa356501a62f6e",
+      "unchanged": true
+    },
+    {
+      "path": "public/models/porcelain-hero-v2.glb",
+      "baselineSHA256": "8a21d20acf59a6e77105359f85a0a3275ea5fa0753a7b7533aaf47656ad8484b",
+      "candidateSHA256": "8a21d20acf59a6e77105359f85a0a3275ea5fa0753a7b7533aaf47656ad8484b",
+      "unchanged": true
+    },
+    {
+      "path": "public/models/zodiac-pets/manifest.json",
+      "baselineSHA256": "15a803c0de98467f8931ee863f4a346d02fe1040720729a4247c19322fb70491",
+      "candidateSHA256": "15a803c0de98467f8931ee863f4a346d02fe1040720729a4247c19322fb70491",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/build-verified.sh",
+      "baselineSHA256": "2ae5329ac860076070c9217a43106a15cb5ecf907a0f7baeb9ef903f76b53c68",
+      "candidateSHA256": "2ae5329ac860076070c9217a43106a15cb5ecf907a0f7baeb9ef903f76b53c68",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/connector-preview/connector-preview-session.mjs",
+      "baselineSHA256": "45d5d0511a5b9689278b59570223017cdd3c4129431c6745e710c26323cac45c",
+      "candidateSHA256": "45d5d0511a5b9689278b59570223017cdd3c4129431c6745e710c26323cac45c",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/connector-preview/host-binding.mjs",
+      "baselineSHA256": "9e44ab6864133a5c82f834a5904ebb7d6104cb783c24efba3c0fe1a161182cea",
+      "candidateSHA256": "9e44ab6864133a5c82f834a5904ebb7d6104cb783c24efba3c0fe1a161182cea",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/connector-preview/protocol.mjs",
+      "baselineSHA256": "111e062ebf08d3f180130f5bc3dcb3c1414c1d7be3c032c9d675a61c0c7513a8",
+      "candidateSHA256": "111e062ebf08d3f180130f5bc3dcb3c1414c1d7be3c032c9d675a61c0c7513a8",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/execution-profile.mjs",
+      "baselineSHA256": "2e71116f4d2b70cff8bb70436f8dd5c709ec7ff62893424530f404e0193d3630",
+      "candidateSHA256": "2e71116f4d2b70cff8bb70436f8dd5c709ec7ff62893424530f404e0193d3630",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/install-ci.mjs",
+      "baselineSHA256": "4a5a92d60a08d0ba54effd8373da2da06284312c55b767287c68a0bec7200da7",
+      "candidateSHA256": "4a5a92d60a08d0ba54effd8373da2da06284312c55b767287c68a0bec7200da7",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/install-ci.sh",
+      "baselineSHA256": "10d8764a61be50351dc3496e13588270de7956f0aa5f1189c49cabb2d89fe5c0",
+      "candidateSHA256": "10d8764a61be50351dc3496e13588270de7956f0aa5f1189c49cabb2d89fe5c0",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/install-pnpm.sh",
+      "baselineSHA256": "a684c02c2b493dfbf262a66252a5cd36f81ca995a4024761728662ae63aa40c0",
+      "candidateSHA256": "a684c02c2b493dfbf262a66252a5cd36f81ca995a4024761728662ae63aa40c0",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/integration-preview.mjs",
+      "baselineSHA256": "8b63a3402bf4ec665be6edfb104219d1fa6f7e5bc6bcabec33c829f230178a72",
+      "candidateSHA256": "8b63a3402bf4ec665be6edfb104219d1fa6f7e5bc6bcabec33c829f230178a72",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/npm-install.mjs",
+      "baselineSHA256": "9715c6a32d1d4a0289ef6376a0e819c3b6a6416b8a9877733d9fb4339ce626b6",
+      "candidateSHA256": "9715c6a32d1d4a0289ef6376a0e819c3b6a6416b8a9877733d9fb4339ce626b6",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/pnpm-install.mjs",
+      "baselineSHA256": "a83164e344c1947053def83b546be8115deaa827314bbaead7afe6b6451c5cdf",
+      "candidateSHA256": "a83164e344c1947053def83b546be8115deaa827314bbaead7afe6b6451c5cdf",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/restore-preserved-assets.py",
+      "baselineSHA256": "fd6445a18d65c75f0126e53c18c25d3fe3db9a14439c1cf188a2e92450a7c235",
+      "candidateSHA256": "fd6445a18d65c75f0126e53c18c25d3fe3db9a14439c1cf188a2e92450a7c235",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/run-framework.mjs",
+      "baselineSHA256": "9bf9f41a29314cabe0238b8e9c540ec3f7b5a6adafc7c8fb6c3940722d061dca",
+      "candidateSHA256": "9bf9f41a29314cabe0238b8e9c540ec3f7b5a6adafc7c8fb6c3940722d061dca",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/sites-env.mjs",
+      "baselineSHA256": "5de99d6806b01f0ee0b941af3684d75dcf1afbbcff22cb95bfa2e584c5dafa88",
+      "candidateSHA256": "5de99d6806b01f0ee0b941af3684d75dcf1afbbcff22cb95bfa2e584c5dafa88",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/sites-env.sh",
+      "baselineSHA256": "df86ebfc27d2f00860036658e933ac0ddd7b5f6879aa5d51218f0863c7e1fb60",
+      "candidateSHA256": "df86ebfc27d2f00860036658e933ac0ddd7b5f6879aa5d51218f0863c7e1fb60",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/sync-approved-jade-assets.mjs",
+      "baselineSHA256": "50e834a91a9c0a46cbb79604c3a202deb00cac95aaf6d70acbb1b838df00126f",
+      "candidateSHA256": "50e834a91a9c0a46cbb79604c3a202deb00cac95aaf6d70acbb1b838df00126f",
+      "unchanged": true
+    },
+    {
+      "path": "tailwind.config.ts",
+      "baselineSHA256": "757bf87d5c1850ee1aa02a55b69bd61695c230fa93c65cb34ff847a9f4c96267",
+      "candidateSHA256": "757bf87d5c1850ee1aa02a55b69bd61695c230fa93c65cb34ff847a9f4c96267",
+      "unchanged": true
+    },
+    {
+      "path": "tsconfig.json",
+      "baselineSHA256": "7199c6e4e400921e8049729840165a39f1476fa97901bed00239e7697bfe8da4",
+      "candidateSHA256": "7199c6e4e400921e8049729840165a39f1476fa97901bed00239e7697bfe8da4",
+      "unchanged": true
+    },
+    {
+      "path": "vendor/shadcn-tailwind-4.13.0.LICENSE.md",
+      "baselineSHA256": "1564074e13439397221ffd522e2e504d56561994a23d371aa5e3ad43e4f5423f",
+      "candidateSHA256": "1564074e13439397221ffd522e2e504d56561994a23d371aa5e3ad43e4f5423f",
+      "unchanged": true
+    },
+    {
+      "path": "vendor/shadcn-tailwind-4.13.0.css",
+      "baselineSHA256": "bc7d83425702955b4cb67cb14ede9d603f9d912376d57a2d81d661094d2a782a",
+      "candidateSHA256": "bc7d83425702955b4cb67cb14ede9d603f9d912376d57a2d81d661094d2a782a",
+      "unchanged": true
+    },
+    {
+      "path": "vite.config.ts",
+      "baselineSHA256": "6f6d890794fbe23f3e35cceb327f49d5977432a5aaf715e040a6408932da395b",
+      "candidateSHA256": "6f6d890794fbe23f3e35cceb327f49d5977432a5aaf715e040a6408932da395b",
+      "unchanged": true
+    }
+  ]
+}

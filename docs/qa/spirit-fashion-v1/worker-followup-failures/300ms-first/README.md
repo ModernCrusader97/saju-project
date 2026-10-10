@@ -1,0 +1,3 @@
+# First final-Worker timing failure
+
+Frozen Worker cbe4bf8a8d70e5f7b30c75b70c28330f8d77ebcd1797d96fb013d37e40fb26ab; harness c881b4b4fa366eaec80920baec0eb06d7bc18ba365d5b6d8bcb0133fde720266. Five high-quality stems (10 outfits) passed native/body/attachment/default-restore checks. The sixth stem 己 failed the unchanged 300ms QA-host fashion.set assertion during mask replacement. This harness did not retain the failing snapshot or its exact timing value. Existing passing mask timings ranged 22.2–258.9ms. No production source or threshold was changed; subsequent QA instrumentation will retain the failing state and separate native QA-query overhead. These images and original report are historical failure evidence, not a completed 40-outfit result.

@@ -1,0 +1,135 @@
+{
+  "sourceHEAD": "57f5939ea65a46047b817fc91a2d4345f23b04a4",
+  "sharedSourceBaseline": "5a8fae1c90f1fbac2a9ee6b00bdce7cab7572dbd",
+  "builtWorkerSHA256": "cbe4bf8a8d70e5f7b30c75b70c28330f8d77ebcd1797d96fb013d37e40fb26ab",
+  "finalHarnessSHA256": "cec2769294363c3ff69507a047d814a50484569d8ca01859989efaab5f561344",
+  "finalReportSHA256": "7785bc4900ddaead6b3fdeed77b4a666a435093ad50d6142e4d411309ba2f26a",
+  "cpu": "PASS_CARRIED_UNCHANGED_MODULES",
+  "completedCommands": [
+    {
+      "command": "git cherry-pick 5a8fae1c90f1fbac2a9ee6b00bdce7cab7572dbd",
+      "result": "Applied as57f5939ea65a46047b817fc91a2d4345f23b04a4"
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0
+    },
+    {
+      "command": "npx tsc --noEmit --incremental false",
+      "exitCode": 0
+    },
+    {
+      "command": "npx eslint app/planet/page.tsx components/planet/ElementalSpiritCanvas.tsx components/planet/SpiritFashionPanel.tsx hooks/use-spirit-fashion.ts lib/planet/approved-jade-spirit.ts lib/planet/elemental-spirit.ts lib/planet/spirit-fashion.ts lib/planet/fashion-surface-projector.ts lib/planet/spirit-fashion-catalog.ts lib/planet/spirit-fashion-storage.ts lib/planet/scene-environment.ts scripts/qa/spirit-fashion-worker.mjs scripts/qa/spirit-fashion-preservation.mjs",
+      "exitCode": 0,
+      "errors": 0,
+      "warnings": [
+        "Existing Canvas no-img-element warning1"
+      ]
+    },
+    {
+      "command": "npx eslint scripts/qa/spirit-fashion-worker.mjs scripts/qa/spirit-fashion-production-preservation.mjs",
+      "exitCode": 0,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "command": "node scripts/qa/spirit-fashion-worker.mjs",
+      "exitCode": 0,
+      "checks": 28,
+      "outfits": 40
+    },
+    {
+      "command": "node scripts/qa/spirit-fashion-production-preservation.mjs 5a8fae1c90f1fbac2a9ee6b00bdce7cab7572dbd",
+      "exitCode": 0,
+      "productionFiles": 327,
+      "assets": 172
+    }
+  ],
+  "normalStemRetirements": [
+    {
+      "quality": "high",
+      "contexts": 10,
+      "created": 2468,
+      "explicitNativeDeleted": 2468,
+      "nativeAliveBeforeNormalForcedLoss": 0
+    },
+    {
+      "quality": "low",
+      "contexts": 10,
+      "created": 2468,
+      "explicitNativeDeleted": 2468,
+      "nativeAliveBeforeNormalForcedLoss": 0
+    }
+  ],
+  "restoredGenerationUnmount": [
+    {
+      "quality": "high",
+      "aggregateCreatedAcrossLostAndRestoredGenerations": 430,
+      "aggregateDeleteCalls": 430,
+      "currentValidGeneration": 1,
+      "currentGenerationCreated": 215,
+      "currentGenerationExplicitNativeDeleted": 215,
+      "nativeAlive": 0,
+      "nativeAliveBytes": 0,
+      "normalForcedLossBoundary": [
+        {
+          "reason": "normal-retirement",
+          "contextGeneration": 1,
+          "created": 215,
+          "explicitDeleted": 215,
+          "nativeAlive": [],
+          "nativeAliveBytes": 0
+        }
+      ]
+    },
+    {
+      "quality": "low",
+      "aggregateCreatedAcrossLostAndRestoredGenerations": 430,
+      "aggregateDeleteCalls": 430,
+      "currentValidGeneration": 1,
+      "currentGenerationCreated": 215,
+      "currentGenerationExplicitNativeDeleted": 215,
+      "nativeAlive": 0,
+      "nativeAliveBytes": 0,
+      "normalForcedLossBoundary": [
+        {
+          "reason": "normal-retirement",
+          "contextGeneration": 1,
+          "created": 215,
+          "explicitDeleted": 215,
+          "nativeAlive": [],
+          "nativeAliveBytes": 0
+        }
+      ]
+    }
+  ],
+  "matrixTiming": {
+    "samples": 180,
+    "exclusiveWallMaxMs": 18.100000001490116,
+    "rawInstrumentedMaxMs": 690.0999999940395,
+    "rawSamplesOver300": 3,
+    "nestedProbeCalls": 0,
+    "raw300Passed": false,
+    "metric": "Synchronous wall time minus disjoint harness-added native query intervals; not processor-time or physical-device latency."
+  },
+  "independentReviewSHA256": "a98cb4cd121561b512b41f74e5cbc2bd3132d7ace83c69389ea07c6808d93ebb",
+  "independentReviewVerdict": "No Critical/Important findings",
+  "images": 17,
+  "servedClientJS": 28,
+  "sourceFiles": 11,
+  "errors": [],
+  "outbound": [],
+  "databaseCounts": {
+    "chats": 0,
+    "fortunes": 0,
+    "guin_maps": 0,
+    "ai_test_budget": 0
+  },
+  "deployment": "NOT_DEPLOYED",
+  "remainingLimits": [
+    "Exact local production Worker and dist/client; isolated synthetic D1 and synthetic request headers, no real users or hosted authentication.",
+    "Synthetic rAF/performance clock, actual selected native WebGL draws; intermediate frames update motion/effects without GPU draws.",
+    "Chromium SwiftShader; no physical device/GPU or full cloth/flame collision simulation.",
+    "Fashion is a private candidate and has not been deployed."
+  ]
+}
