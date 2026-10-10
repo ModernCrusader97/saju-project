@@ -85,7 +85,7 @@ export default function Home() {
         </Link>
       </section>
 
-      <form id="birth-form" tabIndex={-1} aria-labelledby="birth-form-title" className={'birth-panel ' + styles.birthForm} onSubmit={submit}>
+      <form id="birth-form" tabIndex={-1} aria-labelledby="birth-form-title" className={'birth-panel ' + styles.birthForm} onSubmit={submit} onChange={() => setError('')}>
         <h2 id="birth-form-title">태어난 순간에서 시작해요.</h2>
         <p>양력 생년월일로 나의 정령과 행성을 만나보세요.</p>
         <label className="name-field">이름 또는 별명

@@ -1,0 +1,47 @@
+{
+  "basis": "6c2c4285e167d4feb9f966e0208ab1b81e9cd04c",
+  "branch": "fix/home-input-validation-state-20261010",
+  "productSource": "app/page.tsx",
+  "productSourceSHA256": "06ee2907a9876020c28c9f829d856f4a5b0a9a24c9fc2c326c3df64395b19a00",
+  "productLinesReplaced": 1,
+  "before": {
+    "qaPassed": 4,
+    "qaFailed": 4
+  },
+  "after": {
+    "qaPassed": 8,
+    "qaFailed": 0
+  },
+  "actualCpuParserConfirmsCorrectedDrafts": true,
+  "visualInspection": [
+    "before-corrected-date.png",
+    "after-corrected-date.png",
+    "before-unknown-time.png",
+    "after-unknown-time.png"
+  ],
+  "typecheck": {
+    "command": "tsc --noEmit --incremental false",
+    "exitCode": 0,
+    "elapsedSeconds": 3.9
+  },
+  "build": {
+    "command": "npm run build",
+    "exitCode": 0,
+    "elapsedSeconds": 7.4
+  },
+  "scopedLint": {
+    "lintExitCode": 0,
+    "beforeErrors": 0,
+    "afterErrors": 0,
+    "beforeWarnings": 3,
+    "afterWarnings": 3,
+    "baselineDiagnosticsUnchanged": true,
+    "newQaMessages": 0
+  },
+  "scope": "Clear the prior submission error only when an existing Home birth-form input changes. Preserve validation and manual submission.",
+  "limits": [
+    "Actual native Chromium at 390x844; destination document alone is a local fixture.",
+    "No planet renderer, API write, real user DB or external AI call executes.",
+    "Hosted authentication, other browsers and physical devices are not tested."
+  ]
+}

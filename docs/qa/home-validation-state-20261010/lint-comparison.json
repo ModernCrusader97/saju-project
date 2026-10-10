@@ -1,0 +1,9 @@
+{
+  "lintExitCode": 0,
+  "beforeErrors": 0,
+  "afterErrors": 0,
+  "beforeWarnings": 3,
+  "afterWarnings": 3,
+  "baselineDiagnosticsUnchanged": true,
+  "newQaMessages": 0
+}

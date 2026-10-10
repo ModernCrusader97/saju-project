@@ -1,0 +1,15 @@
+{
+  "basis": "6c2c4285e167d4feb9f966e0208ab1b81e9cd04c",
+  "preexistingTrackedFiles": 632,
+  "byteIdenticalPreexistingFiles": 631,
+  "changedPreexistingFiles": [
+    "app/page.tsx"
+  ],
+  "productLinesReplaced": 1,
+  "exactOriginalSourceRecoveredByRemovingOnlyBirthFormOnChange": true,
+  "validationSubmissionQueryAndAllStylesUnchanged": true,
+  "completedModalChangesUnchanged": true,
+  "beforeAndAfterQASourceHashesMatch": true,
+  "currentApplicationSourceSHA256": "06ee2907a9876020c28c9f829d856f4a5b0a9a24c9fc2c326c3df64395b19a00",
+  "originalKeyboardWipSHA256": "75ea6f5726ce41272841494c3a3316e3f4b88ea7c4888d71e21e981ee9030539"
+}

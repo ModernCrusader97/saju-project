@@ -1,0 +1,87 @@
+{
+  "basis": "6c2c4285e167d4feb9f966e0208ab1b81e9cd04c",
+  "phase": "before",
+  "applicationSourceSHA256": "d11563c28148959044ebb534d0b420bca7116711b58c9bd2e220fb2167b4297d",
+  "passed": 4,
+  "failed": 4,
+  "checks": [
+    {
+      "name": "correcting an invalid date removes the previous attempt error",
+      "status": "FAIL",
+      "error": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   '존재하지 않는 생년월일입니다. 날짜를 다시 확인해주세요.'\n+ ]\n- []\n"
+    },
+    {
+      "name": "unknown time removes the obsolete known-hour error",
+      "status": "FAIL",
+      "error": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   '시은(는) 0~23 사이의 정수로 입력해주세요.'\n+ ]\n- []\n"
+    },
+    {
+      "name": "correcting a known hour removes the previous hour error",
+      "status": "FAIL",
+      "error": "Expected values to be strictly equal:\n\n1 !== 0\n"
+    },
+    {
+      "name": "focus without editing retains the current attempt error",
+      "status": "PASS"
+    },
+    {
+      "name": "editing an invalid draft clears the old error and resubmission validates again",
+      "status": "FAIL",
+      "error": "Expected values to be strictly equal:\n\n1 !== 0\n"
+    },
+    {
+      "name": "explicit resubmission uses the corrected draft and existing destination query",
+      "status": "PASS"
+    },
+    {
+      "name": "editing the separate reading modal preserves the birth-form error",
+      "status": "PASS"
+    },
+    {
+      "name": "no page errors, API requests or outbound calls",
+      "status": "PASS"
+    }
+  ],
+  "observations": [
+    {
+      "scenario": "corrected leap-day draft",
+      "acceptedDate": {
+        "year": 2000,
+        "month": 2,
+        "day": 29
+      },
+      "alert": [
+        "존재하지 않는 생년월일입니다. 날짜를 다시 확인해주세요."
+      ],
+      "destinations": []
+    },
+    {
+      "scenario": "known-hour failure changed to unknown time",
+      "isUnknownTime": true,
+      "alert": [
+        "시은(는) 0~23 사이의 정수로 입력해주세요."
+      ]
+    },
+    {
+      "scenario": "manual corrected resubmission",
+      "destinations": [
+        {
+          "name": "합성 교정",
+          "y": "2000",
+          "m": "2",
+          "d": "29",
+          "h": "14",
+          "unknown": "false"
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "api": [],
+  "outbound": [],
+  "limits": [
+    "Actual built Home and native Chromium events; corrected DOM values also pass the actual CPU input parser.",
+    "Only the destination document response is replaced. No planet renderer, API write, real user DB or external AI call executes.",
+    "Hosted authentication, other browsers and physical devices are not tested."
+  ]
+}
