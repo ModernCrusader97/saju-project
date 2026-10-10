@@ -1,0 +1,640 @@
+{
+  "status": "PASS_UNUSED_HEAD_UV_LOSSLESS_BUFFER_CLEANUP",
+  "source_sha256": "971aa616c595b5a0d5128b75a86ba3e032e115483ee7d22db031f7e520b54f9c",
+  "output_sha256": "855d72c9b1f6ed7cd90ce1322021c8e6af8bfc46ea2abd323a3eca2d92999688",
+  "source_bytes": 7980524,
+  "output_bytes": 7892704,
+  "saved_bytes": 87820,
+  "saved_percent": 1.1004289943868346,
+  "attribute_pointer": "/meshes/3/primitives/0/attributes/TEXCOORD_0",
+  "removed_accessor": 18,
+  "removed_buffer_view": 18,
+  "removed_float32_vec2_count": 10959,
+  "removed_bin_bytes": 87672,
+  "material": {
+    "doubleSided": true,
+    "extensions": {
+      "KHR_materials_clearcoat": {
+        "clearcoatRoughnessFactor": 0.3499999940395355
+      },
+      "KHR_materials_specular": {
+        "specularFactor": 0.5600000023841858
+      },
+      "KHR_materials_ior": {
+        "ior": 1.399999976158142
+      }
+    },
+    "name": "Continuous_Head_V2_Preserved_PBR",
+    "pbrMetallicRoughness": {
+      "metallicFactor": 0,
+      "roughnessFactor": 0.6499999761581421
+    }
+  },
+  "all_head_material_and_extension_texture_references": [],
+  "accessor_incoming_references_before": [
+    "/meshes/3/primitives/0/attributes/TEXCOORD_0"
+  ],
+  "buffer_view_incoming_references_before": [
+    "/accessors/18/bufferView"
+  ],
+  "used_body_uv_retained": {
+    "old_accessor": 25,
+    "new_accessor": 24,
+    "material": "Continuous_Body_Clean_UV_PBR",
+    "texture_index": 0
+  },
+  "retained_buffer_views_byte_identical": [
+    {
+      "old_buffer_view": 0,
+      "new_buffer_view": 0,
+      "bytes": 254592,
+      "sha256": "e386da001df614d401a46b9f64c1581934eb8a0ef0ec6942f2027a6b877f485d"
+    },
+    {
+      "old_buffer_view": 1,
+      "new_buffer_view": 1,
+      "bytes": 254592,
+      "sha256": "ed5018f7dfced2f99ee27c3391ed878490debb2e2a4bc6aa1ffd57b96ac0cfe5"
+    },
+    {
+      "old_buffer_view": 2,
+      "new_buffer_view": 2,
+      "bytes": 84864,
+      "sha256": "2c7a6c2193803442bdb523e845f9a03ffaa53bc84354aed9477c8edcf55aa8b3"
+    },
+    {
+      "old_buffer_view": 3,
+      "new_buffer_view": 3,
+      "bytes": 339456,
+      "sha256": "e208ad9a42e70435f1b6070bc48a203a5c74517c160515ad92c74215df46cf03"
+    },
+    {
+      "old_buffer_view": 4,
+      "new_buffer_view": 4,
+      "bytes": 252288,
+      "sha256": "87bafc7bd1ed68d877d0888dfa9321e5fe2dc80fa8c65935f5f3f4bba7b1e15f"
+    },
+    {
+      "old_buffer_view": 5,
+      "new_buffer_view": 5,
+      "bytes": 832,
+      "sha256": "7cf1c3448fa24d4ea94fa67020e9447307c0de5913545d1ab977bd67df842dcb"
+    },
+    {
+      "old_buffer_view": 6,
+      "new_buffer_view": 6,
+      "bytes": 29592,
+      "sha256": "72c195575d03cecc72f89678f7806f3fb77537f40162766d7a01dac83e634598"
+    },
+    {
+      "old_buffer_view": 7,
+      "new_buffer_view": 7,
+      "bytes": 29592,
+      "sha256": "44151883dfed9cabed3eda65135ee06f8d550a6940d58b70279f297f1dd9154a"
+    },
+    {
+      "old_buffer_view": 8,
+      "new_buffer_view": 8,
+      "bytes": 9864,
+      "sha256": "43bc8b5800a4f283fc474f130511053da57a461b51ee5223dc6623264535bd3e"
+    },
+    {
+      "old_buffer_view": 9,
+      "new_buffer_view": 9,
+      "bytes": 39456,
+      "sha256": "5ef3e272ded6009bcc863abf7f14ad007fcc2b66c969584a0b88341193525b28"
+    },
+    {
+      "old_buffer_view": 10,
+      "new_buffer_view": 10,
+      "bytes": 29376,
+      "sha256": "eef3d4cdf36b391fdc7a0a3bd10321fc3e16e79de13cadc746de4c9a267bd0de"
+    },
+    {
+      "old_buffer_view": 11,
+      "new_buffer_view": 11,
+      "bytes": 14808,
+      "sha256": "22d4e084c70c7bbea5cfeecc1e3cea775732c4f4a7095fdd458b312e34cec220"
+    },
+    {
+      "old_buffer_view": 12,
+      "new_buffer_view": 12,
+      "bytes": 14808,
+      "sha256": "cc6901822fd45532dc413253fdb7846d4b9bd0335bf8243eb083c07dcd9d4d38"
+    },
+    {
+      "old_buffer_view": 13,
+      "new_buffer_view": 13,
+      "bytes": 4936,
+      "sha256": "aac77d0297f7b03a06ab1c27967c786a0792ef393a3fb5b77d98226939eb19fe"
+    },
+    {
+      "old_buffer_view": 14,
+      "new_buffer_view": 14,
+      "bytes": 19744,
+      "sha256": "7c0d0507e40c74d739c131277dfda48f51e8e87a75d525390e342a22712c63af"
+    },
+    {
+      "old_buffer_view": 15,
+      "new_buffer_view": 15,
+      "bytes": 14256,
+      "sha256": "014e9eb2b90afdc3ce0d311ed7153776beb1de791529091b5933aa65028c4fad"
+    },
+    {
+      "old_buffer_view": 16,
+      "new_buffer_view": 16,
+      "bytes": 131508,
+      "sha256": "208782efd9ea7cb5c3995fb9be3763db968232864cc9ac638df0101f95962df9"
+    },
+    {
+      "old_buffer_view": 17,
+      "new_buffer_view": 17,
+      "bytes": 131508,
+      "sha256": "c4dae8d30eae5776984c534df728633dec6cff05bbb3bf3cc323e6c0c944520f"
+    },
+    {
+      "old_buffer_view": 19,
+      "new_buffer_view": 18,
+      "bytes": 131508,
+      "sha256": "fd5dbbbf48bec5f22151da1ce018c523eb74fff9eb9f981373cf0898ac8f83e0"
+    },
+    {
+      "old_buffer_view": 20,
+      "new_buffer_view": 19,
+      "bytes": 43836,
+      "sha256": "da3953e331944b87c85ef4b62490a8c4ea41d379568a8d749b0fbf30fe0aef0a"
+    },
+    {
+      "old_buffer_view": 21,
+      "new_buffer_view": 20,
+      "bytes": 175344,
+      "sha256": "3420714979a5fddf4552d0ca8cb19b4a956767cd023d16cad4b64a8fa45d7e79"
+    },
+    {
+      "old_buffer_view": 22,
+      "new_buffer_view": 21,
+      "bytes": 116100,
+      "sha256": "051b0dcee7244dda66849b1c2ca08494e275afe8997bb536f3563a81332ac056"
+    },
+    {
+      "old_buffer_view": 23,
+      "new_buffer_view": 22,
+      "bytes": 359952,
+      "sha256": "705bb068d11ce699e29fac396fb1ffde90ba93ddd675aa9f484ea3a6b3b05b0d"
+    },
+    {
+      "old_buffer_view": 24,
+      "new_buffer_view": 23,
+      "bytes": 359952,
+      "sha256": "b489bfd0319499b665464763e3af11ce8bb6b03eac5ea660040d7eea112eee3b"
+    },
+    {
+      "old_buffer_view": 25,
+      "new_buffer_view": 24,
+      "bytes": 239968,
+      "sha256": "7014767522cae6f23011feff11c722d264ef8165f46ffafa2df8db390be87a74"
+    },
+    {
+      "old_buffer_view": 26,
+      "new_buffer_view": 25,
+      "bytes": 359952,
+      "sha256": "b303032d1427f74907206f8c534adc7e9650c729f20deea8484e6a659022a72a"
+    },
+    {
+      "old_buffer_view": 27,
+      "new_buffer_view": 26,
+      "bytes": 119984,
+      "sha256": "9859c5be8cc9fee996642d9e3004cd8d0cac5d13766a7ddd21c8737ff6df8afc"
+    },
+    {
+      "old_buffer_view": 28,
+      "new_buffer_view": 27,
+      "bytes": 479936,
+      "sha256": "d93ff017ac11f74d627fb9ae7412051b2659445459bd4adaf69d66f6e7a995d6"
+    },
+    {
+      "old_buffer_view": 29,
+      "new_buffer_view": 28,
+      "bytes": 323544,
+      "sha256": "42c63f9c85dcf8eb50fa98912236076cce6038ae002762e93d741ee7f5ab3571"
+    },
+    {
+      "old_buffer_view": 30,
+      "new_buffer_view": 29,
+      "bytes": 694148,
+      "sha256": "ac78763cfaf4d3b514860e8d0a92d388d0a03e68e2889f34f3eacc3a3c9e5751"
+    },
+    {
+      "old_buffer_view": 31,
+      "new_buffer_view": 30,
+      "bytes": 14808,
+      "sha256": "6fd21bab043c962b205edb4c67e0f71f32bc210efed15839517b2b6d7c6b1fb8"
+    },
+    {
+      "old_buffer_view": 32,
+      "new_buffer_view": 31,
+      "bytes": 14808,
+      "sha256": "130610943d52c97981326f0dab15a6e494be643c7b78291545279053aa5d038d"
+    },
+    {
+      "old_buffer_view": 33,
+      "new_buffer_view": 32,
+      "bytes": 4936,
+      "sha256": "3dca05809285f3cdb1849bce4698f2cd285f266febd6932e9255406ef12de4ff"
+    },
+    {
+      "old_buffer_view": 34,
+      "new_buffer_view": 33,
+      "bytes": 19744,
+      "sha256": "9e743538bce1a1a7a189fe734f9cd59c7f596be93699e990626eadc1fce980f9"
+    },
+    {
+      "old_buffer_view": 35,
+      "new_buffer_view": 34,
+      "bytes": 44424,
+      "sha256": "d0a7e65f1380410e0967fc58c2a12432e663522f76bf277d64a9307978fba299"
+    },
+    {
+      "old_buffer_view": 36,
+      "new_buffer_view": 35,
+      "bytes": 44424,
+      "sha256": "32f4dd7d2fb8d20cdaa393a090e96aef0aac5b2965cbf245036b55761d2f8025"
+    },
+    {
+      "old_buffer_view": 37,
+      "new_buffer_view": 36,
+      "bytes": 14808,
+      "sha256": "7a8369033ac6c94d17abecc690676faf93c5e9d01700b67f6f9cd78daf76bb24"
+    },
+    {
+      "old_buffer_view": 38,
+      "new_buffer_view": 37,
+      "bytes": 59232,
+      "sha256": "8a3088f6e27d44b0e85eba75d331165038d38f36a770fac6b02d39996e5750a0"
+    },
+    {
+      "old_buffer_view": 39,
+      "new_buffer_view": 38,
+      "bytes": 42768,
+      "sha256": "07518dcb8ca31874105a57f7e1c3c9833a1412c228470d69dc07a59c73206b7a"
+    },
+    {
+      "old_buffer_view": 40,
+      "new_buffer_view": 39,
+      "bytes": 14808,
+      "sha256": "b115d46ea3d115f18b69426b923ddc79e1b7aad923a8260c2903a9d93b9a3234"
+    },
+    {
+      "old_buffer_view": 41,
+      "new_buffer_view": 40,
+      "bytes": 14808,
+      "sha256": "b3e9bf3e39436967c97eab26a29c901a13b763d90fe06921ea4248be7174e27d"
+    },
+    {
+      "old_buffer_view": 42,
+      "new_buffer_view": 41,
+      "bytes": 4936,
+      "sha256": "aac77d0297f7b03a06ab1c27967c786a0792ef393a3fb5b77d98226939eb19fe"
+    },
+    {
+      "old_buffer_view": 43,
+      "new_buffer_view": 42,
+      "bytes": 19744,
+      "sha256": "7c0d0507e40c74d739c131277dfda48f51e8e87a75d525390e342a22712c63af"
+    },
+    {
+      "old_buffer_view": 44,
+      "new_buffer_view": 43,
+      "bytes": 508176,
+      "sha256": "c7e8e2852566bf1e2173956028fd094c096cc97b036c35d3a31202e4cf8cdad1"
+    },
+    {
+      "old_buffer_view": 45,
+      "new_buffer_view": 44,
+      "bytes": 508176,
+      "sha256": "340ccceedff7d7987339e35b8aa742d887809848ae0e5dce3ec789e4b9af39d7"
+    },
+    {
+      "old_buffer_view": 46,
+      "new_buffer_view": 45,
+      "bytes": 169392,
+      "sha256": "b19df2aa638af3e6ff4d5c699373c8b9a3c52d981aaf841fbd65f561dc6b2f28"
+    },
+    {
+      "old_buffer_view": 47,
+      "new_buffer_view": 46,
+      "bytes": 677568,
+      "sha256": "0eee39ff240504ed231e77db67c9419b8e42cae86147d2d0645a0b9490e906a6"
+    },
+    {
+      "old_buffer_view": 48,
+      "new_buffer_view": 47,
+      "bytes": 508176,
+      "sha256": "f2986484a485bc3d4669d640e07ee951a4a992e9ce4901180510881362748f25"
+    },
+    {
+      "old_buffer_view": 49,
+      "new_buffer_view": 48,
+      "bytes": 14808,
+      "sha256": "c1b584e58cc8e322ea77e5e2136c1d28b4916bf16e0f00b92a3e9e5d9509060c"
+    },
+    {
+      "old_buffer_view": 50,
+      "new_buffer_view": 49,
+      "bytes": 14808,
+      "sha256": "531980afa05d94623997d2316e40d7d642a007256c7f9509afa4cfad8fb8590f"
+    },
+    {
+      "old_buffer_view": 51,
+      "new_buffer_view": 50,
+      "bytes": 4936,
+      "sha256": "c8959a37913d25deb98d1eeda0187e728b513af5153e3ae3bc51c56bfbd1b836"
+    },
+    {
+      "old_buffer_view": 52,
+      "new_buffer_view": 51,
+      "bytes": 19744,
+      "sha256": "88703f158d1b9d7a6ba09decdf06ccf59d663775b38d571ac146d44595c435c5"
+    },
+    {
+      "old_buffer_view": 53,
+      "new_buffer_view": 52,
+      "bytes": 6624,
+      "sha256": "7fd17bbf05277e225bd1ca11e5193cd3a24270bc4d1a695215511d23a900d04b"
+    },
+    {
+      "old_buffer_view": 54,
+      "new_buffer_view": 53,
+      "bytes": 6624,
+      "sha256": "c15d033ebdf784e9aa4aa733f1c8bcfa2f6d57a8396da4e3ca036462bbf65624"
+    },
+    {
+      "old_buffer_view": 55,
+      "new_buffer_view": 54,
+      "bytes": 2208,
+      "sha256": "f499e6c97dc73f9825272b5a1122117f5560d0f2cb3a25410b19e8861dc70775"
+    },
+    {
+      "old_buffer_view": 56,
+      "new_buffer_view": 55,
+      "bytes": 8832,
+      "sha256": "67b1310f0de7eeec85a986bb3840437bcc36effd3ed89d8a3f8caab27b4ef756"
+    },
+    {
+      "old_buffer_view": 57,
+      "new_buffer_view": 56,
+      "bytes": 6600,
+      "sha256": "92e469b50140fdaf0bcdcf1b1314ab1c5e2a40cac871d39c4eec543e1b15956e"
+    },
+    {
+      "old_buffer_view": 58,
+      "new_buffer_view": 57,
+      "bytes": 580,
+      "sha256": "212aade7cd9a6d8721166d12f8df63910f0930e246b53b6aa1a15df702c4a679"
+    },
+    {
+      "old_buffer_view": 59,
+      "new_buffer_view": 58,
+      "bytes": 1740,
+      "sha256": "6e849792486b9b40bb2a10d13337b4de889ca2ea0be25470a9fdd60c677e5fae"
+    },
+    {
+      "old_buffer_view": 60,
+      "new_buffer_view": 59,
+      "bytes": 2320,
+      "sha256": "5da0e49ac7ff0b59ba91e9bcf8677e01dcedd879e72ed5463d84fa1e0114db63"
+    },
+    {
+      "old_buffer_view": 61,
+      "new_buffer_view": 60,
+      "bytes": 8,
+      "sha256": "44a5833cb8b06d1afc489843d583d22f714c4a868c7fbeb547597528e640a447"
+    },
+    {
+      "old_buffer_view": 62,
+      "new_buffer_view": 61,
+      "bytes": 24,
+      "sha256": "f46913286d895f62d646314f400fc3d7a543cf34eb4ae56df87f43dc4582a36b"
+    },
+    {
+      "old_buffer_view": 63,
+      "new_buffer_view": 62,
+      "bytes": 24,
+      "sha256": "f1633cae431b39ea43064aa00dc5a58cb9bba61072ee49a63b59e952534ce040"
+    },
+    {
+      "old_buffer_view": 64,
+      "new_buffer_view": 63,
+      "bytes": 2320,
+      "sha256": "0b975f166683d93c4323ecbf75ff11a4ed386c02a049ae27c66120d5229fa791"
+    },
+    {
+      "old_buffer_view": 65,
+      "new_buffer_view": 64,
+      "bytes": 24,
+      "sha256": "ab66974211bb2711e6827952d60a29651c1f77a9ad3c9e61baf90617d7dcfcbb"
+    },
+    {
+      "old_buffer_view": 66,
+      "new_buffer_view": 65,
+      "bytes": 24,
+      "sha256": "35b6199acef8b2f848004239118086cd3d57113eee4233baa30a5c38beb5e003"
+    },
+    {
+      "old_buffer_view": 67,
+      "new_buffer_view": 66,
+      "bytes": 2320,
+      "sha256": "e816c96fee60f7b0031594838c151f48f6643cc0998a00f4021cdcaf5a5f666a"
+    },
+    {
+      "old_buffer_view": 68,
+      "new_buffer_view": 67,
+      "bytes": 24,
+      "sha256": "f821ac1e103b439b0f3f05ac8ec9a71f93fbde7fa5a809d647122eb20cc361c1"
+    },
+    {
+      "old_buffer_view": 69,
+      "new_buffer_view": 68,
+      "bytes": 24,
+      "sha256": "5f3d2d315610575da83480571477b7ddef351def4c81f6b69a8702fca768d5df"
+    },
+    {
+      "old_buffer_view": 70,
+      "new_buffer_view": 69,
+      "bytes": 2320,
+      "sha256": "a9142ded1acaf01756d49a7dd799cee4e87a494fec321d94643b7884daa1f767"
+    },
+    {
+      "old_buffer_view": 71,
+      "new_buffer_view": 70,
+      "bytes": 24,
+      "sha256": "415b8d8e364f806d777c03d41fe6f23b122a80640ee2e872df21625172c8c1e8"
+    },
+    {
+      "old_buffer_view": 72,
+      "new_buffer_view": 71,
+      "bytes": 24,
+      "sha256": "106cc28cda01b610b32678112f8f15ca1a6698db410decaa3e3c220a2ca01765"
+    },
+    {
+      "old_buffer_view": 73,
+      "new_buffer_view": 72,
+      "bytes": 2320,
+      "sha256": "49fb024057ebf9a988312c8622b9fb0a85ba213dd7e207d5b9a2843927307b3c"
+    },
+    {
+      "old_buffer_view": 74,
+      "new_buffer_view": 73,
+      "bytes": 24,
+      "sha256": "79713f811ed94c7e2023aba7893b6cd5b2a62e3e78e7629c302b28a482ba835b"
+    },
+    {
+      "old_buffer_view": 75,
+      "new_buffer_view": 74,
+      "bytes": 24,
+      "sha256": "79634abeaa3b8a99c3eaceca9889445a0f942db782560e3097befddb6bf0f523"
+    },
+    {
+      "old_buffer_view": 76,
+      "new_buffer_view": 75,
+      "bytes": 2320,
+      "sha256": "82c066773dc8e63dd38a127fea7117e717fb4c15b033545493bc41fde825fcf2"
+    },
+    {
+      "old_buffer_view": 77,
+      "new_buffer_view": 76,
+      "bytes": 24,
+      "sha256": "c5f8c4cbbfedb9891de54a4e9c3ca64c3fd4479a883bedb592c6b8cb1cc3cfdd"
+    },
+    {
+      "old_buffer_view": 78,
+      "new_buffer_view": 77,
+      "bytes": 24,
+      "sha256": "56e738e3fa73f69cffacab56ef618e9b022e70e53972bf831bdc7d9f6e27950e"
+    },
+    {
+      "old_buffer_view": 79,
+      "new_buffer_view": 78,
+      "bytes": 2320,
+      "sha256": "8bd3560f67001a71bd0f4fdc450abf896cbd1c278b4a2ae6f2eb94fdc4f932c5"
+    },
+    {
+      "old_buffer_view": 80,
+      "new_buffer_view": 79,
+      "bytes": 24,
+      "sha256": "28aed3caa2f60fbfc9dcb107fc9f279a170c49df4677772911426b4dcca824eb"
+    },
+    {
+      "old_buffer_view": 81,
+      "new_buffer_view": 80,
+      "bytes": 24,
+      "sha256": "5be7d2d41d9f215d87c53714114fd0599e77c176524cdb930773c8c4855bfe77"
+    },
+    {
+      "old_buffer_view": 82,
+      "new_buffer_view": 81,
+      "bytes": 2320,
+      "sha256": "401e1ebcfd4b3d599e403996b1dff8808b71d7bdbb9757c00e7116638055f87d"
+    },
+    {
+      "old_buffer_view": 83,
+      "new_buffer_view": 82,
+      "bytes": 24,
+      "sha256": "8dee90bd975f6b1db08eb9d332663efcca3f214f8eb3a5a53a545cfaf95b2615"
+    },
+    {
+      "old_buffer_view": 84,
+      "new_buffer_view": 83,
+      "bytes": 24,
+      "sha256": "4c645c999b540d66b18fe26068a0576d388c5a5b87c0bef03fd9274c08a13d46"
+    },
+    {
+      "old_buffer_view": 85,
+      "new_buffer_view": 84,
+      "bytes": 2320,
+      "sha256": "c6eb72fb966d89fb7ea4d443e84f6ffa096cce2b538b9ae66e2e31b496a6ad70"
+    },
+    {
+      "old_buffer_view": 86,
+      "new_buffer_view": 85,
+      "bytes": 24,
+      "sha256": "15f9127028950c030f249caf2c0d58834da0ade7958abb419b95e5469764877b"
+    },
+    {
+      "old_buffer_view": 87,
+      "new_buffer_view": 86,
+      "bytes": 24,
+      "sha256": "2a03a796e68fe98bb9a5e2cb1bdafb843028e797e32b9a0c1a9e8baeeea0d69e"
+    },
+    {
+      "old_buffer_view": 88,
+      "new_buffer_view": 87,
+      "bytes": 2320,
+      "sha256": "e77fca2ea690ee919813788b46ac1137eca5b2fcbd4103b671b5e7168a9467e6"
+    },
+    {
+      "old_buffer_view": 89,
+      "new_buffer_view": 88,
+      "bytes": 24,
+      "sha256": "ca112d84af753e390d47b70338c01cf2336b52620ac370845f9173c3b7173491"
+    },
+    {
+      "old_buffer_view": 90,
+      "new_buffer_view": 89,
+      "bytes": 24,
+      "sha256": "97adc59f6b03d445083b391c44d8455259d7b2abf792d59cbee7167b9d9c08ad"
+    },
+    {
+      "old_buffer_view": 91,
+      "new_buffer_view": 90,
+      "bytes": 2320,
+      "sha256": "4b2f5f454a4e221921b67584a1aa2166f2e0aa87f0e31e0b010a3784695d8821"
+    },
+    {
+      "old_buffer_view": 92,
+      "new_buffer_view": 91,
+      "bytes": 24,
+      "sha256": "733a984de90a11db4183447a3337148be343715f99a4a6b33bfb5b8382a30726"
+    },
+    {
+      "old_buffer_view": 93,
+      "new_buffer_view": 92,
+      "bytes": 24,
+      "sha256": "a76699191f964e2bdc80e78d0078d4c3080e7ff999a6e0372cc2ba25e2f32925"
+    },
+    {
+      "old_buffer_view": 94,
+      "new_buffer_view": 93,
+      "bytes": 2320,
+      "sha256": "6c198a99967fad748d90dd3cf8de768535819b0be3a9433d321ff2f6357b5e88"
+    },
+    {
+      "old_buffer_view": 95,
+      "new_buffer_view": 94,
+      "bytes": 24,
+      "sha256": "8265b96971803fbd54d64eb90cda2a954b3aa693fdff0646e1fee348d8e4d8e2"
+    },
+    {
+      "old_buffer_view": 96,
+      "new_buffer_view": 95,
+      "bytes": 24,
+      "sha256": "f3907eb688f8d9f9cda69c2d41b7dd30f8fcd3ff7923e2635c58021777de4ea3"
+    },
+    {
+      "old_buffer_view": 97,
+      "new_buffer_view": 96,
+      "bytes": 2320,
+      "sha256": "7bc9149f3b4e4d2347577222ab25902370dae96f52d37d9ddf8bf32f834a66bb"
+    },
+    {
+      "old_buffer_view": 98,
+      "new_buffer_view": 97,
+      "bytes": 24,
+      "sha256": "f99440900cb6afd9e2fb0c3aa97288e363bc4cd31c7f793599d91f1982b808e4"
+    }
+  ],
+  "all_other_semantic_json_equal_after_inverse_remap": true,
+  "positions_indices_normals_colors_skin_clip_materials_images_unchanged": true,
+  "native_blend_modified": false,
+  "no_geometry_reduction_or_v5_retest": true
+}

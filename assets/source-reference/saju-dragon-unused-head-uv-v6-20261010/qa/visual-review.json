@@ -1,0 +1,14 @@
+{
+  "status": "PASS_ACTUAL_V4_V6_IDENTICAL_RENDER",
+  "actual_image_opened_and_visually_inspected": true,
+  "view": "three-quarter",
+  "frame": 0,
+  "camera": "Camera_ThreeQuarter",
+  "eyes_face_limbs_silhouette_material_boundary_and_normals": "Same rendered appearance as V4, decoded pixel difference zero.",
+  "baseline_render": "D:\\Codex\\Results\\SaJuDragonRootSkinExportV4-20261010-Joseph\\candidate\\previews\\V4-glb-reimport-threequarter.png",
+  "candidate_render": "D:\\Codex\\Results\\SaJuDragonUnusedHeadUVV6-20261010-Joseph\\qa\\native-v6\\glb-reimport-threequarter.png",
+  "pixel_sha256": "704665adf008c7ddc08c6093ba938062a5db5069ae5a84fd4d5a54bf77c7f503",
+  "clarification": "The unchanged comparison helper mentions V3 in its inherited note because native source is V3. Its actual before input is the V4 GLB reimport render, as filename and hashes show.",
+  "loop": "Actual GLTFLoader/AnimationMixer all 145 sampled frames match V4 vertex and joint matrices exactly; native endpoint error 0.",
+  "not_repeated": "No V5 shape or geometry-reduction checks were rerun. No new movie or front/side render was needed for a zero-byte-difference surviving geometry/material/animation cleanup."
+}

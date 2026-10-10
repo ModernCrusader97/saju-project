@@ -1,0 +1,50 @@
+{
+  "status": "PASS_UNUSED_HEAD_UV_LOSSLESS_BUFFER_CLEANUP",
+  "source_sha256": "971aa616c595b5a0d5128b75a86ba3e032e115483ee7d22db031f7e520b54f9c",
+  "output_sha256": "855d72c9b1f6ed7cd90ce1322021c8e6af8bfc46ea2abd323a3eca2d92999688",
+  "source_bytes": 7980524,
+  "output_bytes": 7892704,
+  "saved_bytes": 87820,
+  "saved_percent": 1.1004289943868346,
+  "attribute_pointer": "/meshes/3/primitives/0/attributes/TEXCOORD_0",
+  "removed_accessor": 18,
+  "removed_buffer_view": 18,
+  "removed_float32_vec2_count": 10959,
+  "removed_bin_bytes": 87672,
+  "material": {
+    "doubleSided": true,
+    "extensions": {
+      "KHR_materials_clearcoat": {
+        "clearcoatRoughnessFactor": 0.3499999940395355
+      },
+      "KHR_materials_specular": {
+        "specularFactor": 0.5600000023841858
+      },
+      "KHR_materials_ior": {
+        "ior": 1.399999976158142
+      }
+    },
+    "name": "Continuous_Head_V2_Preserved_PBR",
+    "pbrMetallicRoughness": {
+      "metallicFactor": 0,
+      "roughnessFactor": 0.6499999761581421
+    }
+  },
+  "all_head_material_and_extension_texture_references": [],
+  "accessor_incoming_references_before": [
+    "/meshes/3/primitives/0/attributes/TEXCOORD_0"
+  ],
+  "buffer_view_incoming_references_before": [
+    "/accessors/18/bufferView"
+  ],
+  "used_body_uv_retained": {
+    "old_accessor": 25,
+    "new_accessor": 24,
+    "material": "Continuous_Body_Clean_UV_PBR",
+    "texture_index": 0
+  },
+  "all_other_semantic_json_equal_after_inverse_remap": true,
+  "positions_indices_normals_colors_skin_clip_materials_images_unchanged": true,
+  "native_blend_modified": false,
+  "no_geometry_reduction_or_v5_retest": true
+}

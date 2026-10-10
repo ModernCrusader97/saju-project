@@ -1,0 +1,38 @@
+{
+  "status": "PASS_V4_V6_ACTUAL_GLTFLOADER_UNUSED_UV_FULL_LOOP_EQUIVALENCE",
+  "baseline_glb_sha256": "971aa616c595b5a0d5128b75a86ba3e032e115483ee7d22db031f7e520b54f9c",
+  "candidate_glb_sha256": "855d72c9b1f6ed7cd90ce1322021c8e6af8bfc46ea2abd323a3eca2d92999688",
+  "binary_chunk_sha256": "d48d10355b8987654dc2822bcef054ae5e71867352c6685e17ec689ed69fb0ca",
+  "retained_binary_bytes_identical_except_deleted_unused_uv": true,
+  "json_change_only": [
+    "head primitive TEXCOORD_0 deleted",
+    "exclusive accessor/view 18 deleted",
+    "accessor/view index and byteOffset remapping",
+    "buffer byteLength reduced"
+  ],
+  "mesh_nodes": 10,
+  "loader_skinned_primitives": 11,
+  "vertices": 116175,
+  "triangles": 222646,
+  "bones": 13,
+  "clip": "Idle_Loop",
+  "clip_seconds": 6,
+  "geometry_indices_normals_used_uv_colors_joints_weights_byte_equal": true,
+  "only_unused_head_uv_missing": true,
+  "skin_and_inverse_bind_matrices_equal": true,
+  "material_texture_and_animation_json_equal": true,
+  "decoded_images": 2,
+  "frames": 145,
+  "full_vertex_comparisons": 16845375,
+  "max_world_vertex_error": 0,
+  "max_joint_matrix_error": 0,
+  "max_mesh_matrix_error": 0,
+  "max_bind_inverse_error": 0,
+  "normal_output_equivalence": "Identical normals, skin weights, bone matrices, bind matrices and mesh matrices at all 145 frames imply identical skin-normal transforms.",
+  "loop_end_pose_error": 6.393207398340102e-7,
+  "max_skin_motion": 0.2608878044997632,
+  "transformed_model_group_vertex_error": 0,
+  "limits": [
+    "Actual CPU GLTFLoader and AnimationMixer evaluation; no browser GPU or mobile performance claim."
+  ]
+}

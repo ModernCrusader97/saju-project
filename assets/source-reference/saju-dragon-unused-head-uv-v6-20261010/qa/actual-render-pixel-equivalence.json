@@ -1,0 +1,22 @@
+{
+  "status": "PASS_ACTUAL_GLB_RENDER_PIXEL_IDENTICAL",
+  "before_name": "V4-glb-reimport-threequarter.png",
+  "after_name": "glb-reimport-threequarter.png",
+  "before_png_sha256": "fa45c10a9381d445cb64bb8d12cfff07e57136a1799253e3dcc02cbc19c2e12f",
+  "after_png_sha256": "6a50a00bf9b841cfee580e2401c29d32455f4366bb7f846dd15c7c89c233e977",
+  "before_pixel_sha256": "704665adf008c7ddc08c6093ba938062a5db5069ae5a84fd4d5a54bf77c7f503",
+  "after_pixel_sha256": "704665adf008c7ddc08c6093ba938062a5db5069ae5a84fd4d5a54bf77c7f503",
+  "width": 900,
+  "height": 900,
+  "max_channel_difference_8bit": 0,
+  "mean_channel_difference_8bit": 0,
+  "changed_channels": 0,
+  "changed_pixels": 0,
+  "source_blend_sha256": "c18682ca0f32973b815abd0185c049c6ed9ce005eee6388a2549388bd66bc3bc",
+  "camera": "Camera_ThreeQuarter",
+  "frame": 0,
+  "cycles_samples": 40,
+  "threads": 4,
+  "baseline_render_reused": true,
+  "note": "Both images are official Blender glTF reimport renders from the byte-identical V3 native source and identical verify_native.py helper. Existing V3 actual render is reused."
+}

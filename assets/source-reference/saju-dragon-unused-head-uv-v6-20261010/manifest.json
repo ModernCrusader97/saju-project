@@ -1,0 +1,141 @@
+{
+  "status": "PASS_V6_LOSSLESS_UNUSED_UV_CANDIDATE",
+  "schema_version": 1,
+  "at_utc": "2026-10-10T21:26:05.490Z",
+  "host": "Joseph",
+  "parent_commit": "68f4801b5180a8c38b6073f3a8ae7f48a869caa9",
+  "artifact_folder": "assets/source-reference/saju-dragon-unused-head-uv-v6-20261010",
+  "branch": "art/dragon-unused-head-uv-v6-20261010-joseph",
+  "candidate_glb": "SaJu_Dragon_Approved_Candidate_v6_UV-clean.glb",
+  "candidate_sha256": "855d72c9b1f6ed7cd90ce1322021c8e6af8bfc46ea2abd323a3eca2d92999688",
+  "candidate_bytes": 7892704,
+  "baseline_sha256": "971aa616c595b5a0d5128b75a86ba3e032e115483ee7d22db031f7e520b54f9c",
+  "native_sha256": "c18682ca0f32973b815abd0185c049c6ed9ce005eee6388a2549388bd66bc3bc",
+  "saved_bytes": 87820,
+  "saved_percent": 1.1004289943868346,
+  "triangles": 222646,
+  "vertices": 116175,
+  "material_count": 11,
+  "skin_count": 1,
+  "bones": 13,
+  "clip": "Idle_Loop",
+  "clip_seconds": 6,
+  "default_replaced": false,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2970,
+      "sha256": "9ddedb9ba2684826fe63b74f3553e2a7b1ae0203d2d2f254eaa2bf7374834f5d"
+    },
+    {
+      "path": "SaJu_Dragon_Approved_Candidate_v6_UV-clean.glb",
+      "bytes": 7892704,
+      "sha256": "855d72c9b1f6ed7cd90ce1322021c8e6af8bfc46ea2abd323a3eca2d92999688"
+    },
+    {
+      "path": "previews/V4-baseline-glb-reimport-threequarter.png",
+      "bytes": 910545,
+      "sha256": "fa45c10a9381d445cb64bb8d12cfff07e57136a1799253e3dcc02cbc19c2e12f"
+    },
+    {
+      "path": "previews/V6-glb-reimport-threequarter.png",
+      "bytes": 910499,
+      "sha256": "6a50a00bf9b841cfee580e2401c29d32455f4366bb7f846dd15c7c89c233e977"
+    },
+    {
+      "path": "qa-tools/compare_actual_renders.mjs",
+      "bytes": 1860,
+      "sha256": "9619443407393ce4506ec4d6c642d2e94d52683a75e6741394183b2929b1ea07"
+    },
+    {
+      "path": "qa-tools/png_decode.mjs",
+      "bytes": 1798,
+      "sha256": "4ad46dd94e32edc4a1e923e7878ed0b1f7d267144dbebe73d8cf895fbec98336"
+    },
+    {
+      "path": "qa-tools/verify_khronos.mjs",
+      "bytes": 1231,
+      "sha256": "fb3047edd0fa0435383550ad9f153703d043e0e0e621bf24e923fa9f08ff8d8d"
+    },
+    {
+      "path": "qa-tools/verify_native.py",
+      "bytes": 8364,
+      "sha256": "a77ff60a157f1bbfa64181c4846184f4424397bb865de246eab66e6ca1448497"
+    },
+    {
+      "path": "qa-tools/verify_uv_equivalence.mjs",
+      "bytes": 9460,
+      "sha256": "db47d13da98e89c861626f58a79a2cf9c7f2ab460a3555aadda8aeff60382c46"
+    },
+    {
+      "path": "qa/actual-loader-full-loop-equivalence.json",
+      "bytes": 1628,
+      "sha256": "65f26e510de65f865823c212685e1991362aab5de0ca6cbe2278c2793a5ecdad"
+    },
+    {
+      "path": "qa/actual-render-pixel-equivalence.json",
+      "bytes": 1080,
+      "sha256": "75effb293e9a4d99d471605574b56b2cd047b6672a1a733cf98352ea0113129c"
+    },
+    {
+      "path": "qa/change-provenance.json",
+      "bytes": 1674,
+      "sha256": "bf3590488fdc4155eaf1e924886d2bc730bb8a913e5d3a1aa23f53cbeec45c9d"
+    },
+    {
+      "path": "qa/khronos-v4-baseline.json",
+      "bytes": 1703,
+      "sha256": "0c3b6698f09012c96576bac9383f3420fa46fc1d9bfd083db7406e49bce17d86"
+    },
+    {
+      "path": "qa/khronos-v6-verification.json",
+      "bytes": 1520,
+      "sha256": "95683d7094f691c12f8ad24f4e59a1019c1e921455aa402a553eb9754c9ca256"
+    },
+    {
+      "path": "qa/native-glb-verification.json",
+      "bytes": 1766,
+      "sha256": "87b5672f29fd7eddf3bddea9988eae049ab33782852414e9e70eb4405507485d"
+    },
+    {
+      "path": "qa/native-v6-process.log",
+      "bytes": 2143,
+      "sha256": "cfba66e350f93e91e826bcdf6fa23631d95cff0a5bfe69a69d3974379847aedf"
+    },
+    {
+      "path": "qa/reproduction-process.log",
+      "bytes": 1699,
+      "sha256": "2d3295854d9bac0a608562c97292f6772bca4f927f2f2398f0e1e211988d1137"
+    },
+    {
+      "path": "qa/reproduction.json",
+      "bytes": 19480,
+      "sha256": "725d28b6c5e1ef93aaa64c3815536d40d225a53c336810c799f548b2df57cf2f"
+    },
+    {
+      "path": "qa/unused-head-uv-removal.json",
+      "bytes": 19480,
+      "sha256": "725d28b6c5e1ef93aaa64c3815536d40d225a53c336810c799f548b2df57cf2f"
+    },
+    {
+      "path": "qa/visual-review.json",
+      "bytes": 1203,
+      "sha256": "e68551b50cf75ae1981f3a463fb1ead0f9600b698b17555f655d0b411b3d788f"
+    },
+    {
+      "path": "source/remove_unused_head_uv.py",
+      "bytes": 7931,
+      "sha256": "e20fce55ea94881bcb534471def6c2dfad6a35d570b7e4a264da1dc21443c0ae"
+    },
+    {
+      "path": "source/source-v4-reference.json",
+      "bytes": 1090,
+      "sha256": "0838ab618b36287531315c69cc8e32214ca6d12bc91a76eb610e329f44fc940e"
+    }
+  ]
+}

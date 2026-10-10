@@ -1,0 +1,25 @@
+{
+  "accepted_parent_commit": "68f4801b5180a8c38b6073f3a8ae7f48a869caa9",
+  "source_glb": {
+    "path": "../saju-dragon-root-skin-export-v4-20261010/SaJu_Dragon_Approved_Candidate_v4.glb",
+    "sha256": "971aa616c595b5a0d5128b75a86ba3e032e115483ee7d22db031f7e520b54f9c",
+    "bytes": 7980524
+  },
+  "editable_source": {
+    "path": "../saju-dragon-material-boundary-v3-20261010/SaJu_Dragon_Approved_Candidate_v3.blend",
+    "sha256": "c18682ca0f32973b815abd0185c049c6ed9ce005eee6388a2549388bd66bc3bc",
+    "bytes": 16684534,
+    "modified_by_v6": false
+  },
+  "body_texture": {
+    "sha256": "ac78763cfaf4d3b514860e8d0a92d388d0a03e68e2889f34f3eacc3a3c9e5751",
+    "unchanged": true
+  },
+  "approved_design": {
+    "drive_id": "1Aop_3VuaFcGOcbuqkmKuLh4eRDiC4N3R",
+    "sha256": "6184555091c80769d6553ae40641dbb44eb6dcc859dd0b8591b7887cc1502e58",
+    "role": "Original approved 2D concept, not a 3D render",
+    "unchanged": true
+  },
+  "native_uv_retained": "Shared native UV layer remains editable and is needed by the body primitive. Only the unused exported head UV stream is removed."
+}

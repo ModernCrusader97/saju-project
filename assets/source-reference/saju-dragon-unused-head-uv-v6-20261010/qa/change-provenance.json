@@ -1,0 +1,39 @@
+{
+  "status": "PASS_BOUNDED_UNUSED_UV_ONLY",
+  "host": "Joseph",
+  "at_utc": "2026-10-10T21:26:05.451Z",
+  "parent_commit": "68f4801b5180a8c38b6073f3a8ae7f48a869caa9",
+  "branch": "art/dragon-unused-head-uv-v6-20261010-joseph",
+  "scope": "assets/source-reference/saju-dragon-unused-head-uv-v6-20261010",
+  "attribute": "/meshes/3/primitives/0/attributes/TEXCOORD_0",
+  "material": "Continuous_Head_V2_Preserved_PBR",
+  "material_extension_texture_references": [],
+  "allowed_extensions": [
+    "KHR_materials_clearcoat",
+    "KHR_materials_specular",
+    "KHR_materials_ior"
+  ],
+  "original_bytes": 7980524,
+  "new_bytes": 7892704,
+  "saved_bytes": 87820,
+  "unused_uv_bin_bytes": 87672,
+  "json_bytes_saved": 148,
+  "geometry_reduced": false,
+  "native_modified": false,
+  "v5_rechecked": false,
+  "app_code_changed": false,
+  "product_default_changed": false,
+  "other_animals_changed": false,
+  "application_type_build_checks": "Not repeated: the change adds an isolated asset candidate only; no application/type/build inputs are changed.",
+  "verification_tools": {
+    "blender": "5.2.1 LTS",
+    "three": "0.186.1",
+    "khronos": "2.0.0-dev.3.10",
+    "runtime": "Actual GLTFLoader + AnimationMixer CPU, PNG pixel decoding; no browser GPU/mobile performance claim"
+  },
+  "official_extension_sources": [
+    "https://raw.githubusercontent.com/KhronosGroup/glTF/main/extensions/2.0/Khronos/KHR_materials_clearcoat/README.md",
+    "https://raw.githubusercontent.com/KhronosGroup/glTF/main/extensions/2.0/Khronos/KHR_materials_specular/README.md",
+    "https://raw.githubusercontent.com/KhronosGroup/glTF/main/extensions/2.0/Khronos/KHR_materials_ior/README.md"
+  ]
+}
