@@ -9,6 +9,9 @@ import { calculateUniverse, type UniverseBirth } from "@/lib/universe-state";
 import { useUniverse } from "@/hooks/use-universe";
 import type { MaskStyle } from "@/lib/planet/uv-mask";
 import { Camera, Calendar, Sliders } from "lucide-react";
+import SpiritFashionPanel from '@/components/planet/SpiritFashionPanel';
+import { useSpiritFashion } from '@/hooks/use-spirit-fashion';
+import { fashionStem } from '@/lib/planet/spirit-fashion-catalog';
 
 const PlanetCanvas = lazy(() => import("@/components/planet/PlanetCanvas"));
 const ElementalSpiritCanvas = lazy(() => import("@/components/planet/ElementalSpiritCanvas"));
@@ -26,10 +29,11 @@ export default function PlanetStudioPage() {
   const [form, setForm] = useState({ birth:snapshot.birth, draft:snapshot.birth });
   const draft = form.birth === snapshot.birth ? form.draft : snapshot.birth;
   const { mode, dayKey, monthKey, yearKey, hourKey, maskStyle, birth } = snapshot;
+  const wardrobe = useSpiritFashion(fashionStem(dayKey));
   const profile = TEN_STEM_SPIRITS[dayKey.charAt(0)] || TEN_STEM_SPIRITS.갑;
   const day = getStemThemePreset(dayKey), month = getStemThemePreset(monthKey);
   const animal = ZODIAC_FEATURES[dayKey.charAt(1) as ZodiacBranch]?.label;
-  const sceneKey = [mode, dayKey, monthKey, yearKey, hourKey, maskStyle, birth.unknown].join(":");
+  const sceneKey = [mode, dayKey, monthKey, yearKey, hourKey, maskStyle, birth.unknown, mode === 'spirit' ? JSON.stringify(wardrobe.selection) : ''].join(":");
   const snapshotUrl = captured?.key === sceneKey ? captured.url : "";
   const capture = (url:string) => setCaptured({ key:sceneKey, url });
   function openPassport() {
@@ -61,7 +65,7 @@ export default function PlanetStudioPage() {
       <div className="universe-result-grid">
         <section ref={sceneRef} className={"universe-viewport " + mode} aria-label={mode === "spirit" ? "정령 입체 화면" : "행성 입체 화면"}>
           {ready ? <Suspense fallback={<div className="scene-placeholder" role="status"><span>내 우주를 준비하고 있어요.</span></div>}>
-            {mode === "spirit" ? <ElementalSpiritCanvas dayKey={dayKey} monthKey={monthKey} onCapture={capture}/>
+            {mode === "spirit" ? <ElementalSpiritCanvas dayKey={dayKey} monthKey={monthKey} onCapture={capture} fashion={wardrobe.selection}/>
               : <PlanetCanvas dayKey={dayKey} monthKey={monthKey} hourKey={hourKey} yearKey={yearKey}
                   isUnknownTime={birth.unknown} maskStyle={maskStyle} onCapture={capture}/>}
           </Suspense> : <div className="scene-placeholder" role="status"><span>내 우주를 준비하고 있어요.</span></div>}
@@ -93,6 +97,8 @@ export default function PlanetStudioPage() {
         <h2>표면을 가까이 둘러보세요.</h2><div>{masks.map(mask => <button key={mask.key} type="button"
           aria-pressed={maskStyle === mask.key} onClick={() => commit({ ...snapshot, maskStyle: mask.key }, true)}>{mask.label}</button>)}</div>
       </section>}
+      {mode === 'spirit' && <SpiritFashionPanel stem={fashionStem(dayKey)} selection={wardrobe.selection}
+        onChange={wardrobe.change} ready={wardrobe.ready} persisted={wardrobe.persisted}/>}
       <div className="universe-controls">
         <details className="universe-disclosure" open>
           <summary><Calendar size={19}/><span>내 사주로 만나기</span></summary>

@@ -11,6 +11,8 @@ import { createSurfaceStemAccents, type SurfaceStemAccents } from './surface-ste
 import { createApprovedSpiritMotion } from './approved-spirit-motion';
 import { disposeObject, disposeMaterial } from './render-resources';
 import type { SpiritQuality } from './spirit-geometry';
+import { createSpiritFashion, type SpiritFashion } from './spirit-fashion';
+import { fashionStem } from './spirit-fashion-catalog';
 
 const ASSET_ROOT = '/spirits/jade-v002';
 /** Explicit presentation derivative requested after v24. The archived B GLB,
@@ -88,6 +90,7 @@ export async function loadApprovedSpirit(dayKey: string, monthKey: string, quali
   let atlas: THREE.Texture | undefined;
   let pet: ZodiacPet | undefined;
   let motion: ReturnType<typeof createApprovedSpiritMotion> | undefined;
+  let fashion: SpiritFashion | undefined;
   let released = false;
   const release = () => {
     if (released) return;
@@ -95,6 +98,7 @@ export async function loadApprovedSpirit(dayKey: string, monthKey: string, quali
     motion?.dispose();
     // Effects own their instance buffers and remove themselves before generic traversal.
     effects?.dispose();
+    fashion?.dispose();
     pet?.dispose();
     // Three r186 deletes GPU buffers for the attributes attached at geometry.dispose().
     // Restore rest attributes only after that traversal has released their buffers.
@@ -155,6 +159,8 @@ export async function loadApprovedSpirit(dayKey: string, monthKey: string, quali
     const eyes: THREE.Mesh[] = [];
     model.traverse(object => { const mesh = object as THREE.Mesh; if (mesh.isMesh && mesh.name.includes('almond_gaze')) eyes.push(mesh); });
     motion = createApprovedSpiritMotion(motionRoot, body, stem);
+    fashion = createSpiritFashion({ body, model: motionRoot, eyes, stem: fashionStem(dayKey), quality,
+      presentationDepth: APPROVED_BODY_PRESENTATION_DEPTH });
     let currentTime = 0, disposed = false;
     const update = (time: number, _delta?: number, camera?: THREE.Camera) => {
       if (disposed || !Number.isFinite(time)) return;
@@ -163,6 +169,7 @@ export async function loadApprovedSpirit(dayKey: string, monthKey: string, quali
       stemMaterial?.update(currentTime);
       // A zero delta still rebinds attachments after a paused drag. Absolute time
       // preserves pause, backwards seeks and reset, including fire-card sorting.
+      fashion?.update();
       effects?.update(currentTime, camera);
       ownedPet.update(currentTime);
     };
@@ -182,7 +189,7 @@ export async function loadApprovedSpirit(dayKey: string, monthKey: string, quali
     reset();
     return { group, data: TEN_STEM_SPIRITS[day.stem], bodyMesh: body,
       eyeLeft: eyes[0] ?? body, eyeRight: eyes[1] ?? body, propGroup: features,
-      avatarPivot: model, petPivot: pet.group, zodiacPet: pet.group, monthPet: pet.group, mapping, update,
+      avatarPivot: model, petPivot: pet.group, zodiacPet: pet.group, monthPet: pet.group, mapping, fashion, update,
       triggerReaction: reaction, triggerSquish: reaction, reset, dispose };
   } catch (error) {
     release(); throw error;

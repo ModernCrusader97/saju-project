@@ -8,6 +8,7 @@ import { disposeObject } from "./render-resources";
 import { createSpiritGeometry, type SpiritQuality } from "./spirit-geometry";
 import { createSpiritCrownEffects, animateSurfaceEffects, disposeSurfaceEffects } from "./surface-effects";
 import type { MaskStyle } from "./uv-mask";
+import type { SpiritFashion } from './spirit-fashion';
 
 export { TEN_STEM_SPIRITS, getSpiritStemPreset } from "./spirit-profiles";
 export type { ElementalSpiritData } from "./spirit-profiles";
@@ -34,6 +35,8 @@ export interface ElementalSpiritInstance {
   monthPet: THREE.Group;
   mapping: {bodyStem:string;bodyBranch:string;petBranch:string;backgroundStem:string;backgroundBranch:string};
   yearBelt?: THREE.Points;
+  /** Optional code-authored wardrobe, separate from the body's material. */
+  fashion?: SpiritFashion;
   update: (time: number, deltaSeconds?: number, camera?: THREE.Camera) => void;
   triggerReaction: () => void;
   /** Backward-compatible interaction alias; no anatomy-stretching deformation. */

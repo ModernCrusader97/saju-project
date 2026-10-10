@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "checks": [
+    "production wardrobe UI: equip/face replace/four-slot combination, per-stem switch and browser reload persistence",
+    "actual Canvas reduced-motion pause, paused rotation, reset, original greeting/blink and raised-wave frames, playback and clear all",
+    "production hook reload repairs damaged JSON and rejects unknown storage versions without blocking the scene",
+    "StrictMode production Canvas unmount stops rendering and removes canvas",
+    "actual storage write denial keeps equipment usable and reports browser-only unsaved state"
+  ],
+  "errors": [],
+  "outbound": [],
+  "results": [],
+  "motion": [],
+  "limits": [
+    "Local Chromium SwiftShader; no physical GPU/device test.",
+    "Uses production loader, actual approved GLB/PNGs, and production Canvas + wardrobe component/hook.",
+    "No deployed fashion or hosted authenticated visual claim.",
+    "Physical fabric/fire collisions are not simulated."
+  ]
+}
