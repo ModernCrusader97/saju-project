@@ -1,0 +1,57 @@
+{
+  "scope": "Integrated fashion/dew, half water and scoped face fix BEFORE new raised-wave controls",
+  "typecheck": "PASS",
+  "build": "PASS",
+  "targetedLint": {
+    "errors": 0,
+    "warnings": 1,
+    "warning": "Existing Canvas img recommendation atline263"
+  },
+  "cpu": {
+    "initialParallel": {
+      "tests": 75,
+      "passed": 74,
+      "failed": 1,
+      "failure": "Only sand local3ms median under parallel build/CPU contention"
+    },
+    "sameSandIsolated": {
+      "tests": 9,
+      "passed": 9,
+      "failed": 0,
+      "thresholdUnchanged": true
+    },
+    "newTenStemFaceContracts": {
+      "tests": 25,
+      "passed": 25,
+      "failed": 0
+    },
+    "fashion": {
+      "tests": 13,
+      "passed": 13,
+      "failed": 0
+    },
+    "water": {
+      "tests": 4,
+      "passed": 4,
+      "failed": 0
+    }
+  },
+  "nativeWater": {
+    "cases": 8,
+    "png": 16,
+    "gpuFloatFieldTimes": 3,
+    "rmsRatio": 0.5,
+    "maximumBroadError": 0
+  },
+  "faceBaselineInvestigation": {
+    "matchedCases": 40,
+    "exactProposedPatchFrames": 8,
+    "status": "PASS"
+  },
+  "remaining": "Raised wave generation, final integrated exact productionWorker/fashionWorker, privatepush+Site deployment",
+  "preservedOwnerZodiacCPU": {
+    "tests": 18,
+    "passed": 18,
+    "failed": 0
+  }
+}

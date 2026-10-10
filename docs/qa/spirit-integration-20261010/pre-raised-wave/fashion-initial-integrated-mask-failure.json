@@ -1,0 +1,718 @@
+{
+  "status": "FAIL",
+  "glbSHA256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+  "checks": [
+    "validated four-slot schema; two face choices are exclusive",
+    "schema v1 recovery, independent ten-stem outfits, denied storage remains usable; no prior fashion schema exists",
+    "default appearance unchanged; original real B positions/normals/UV/index and eyes preserved",
+    "low: six items, four-item combination, transformed triangle supports, sampled body clearance, resource disposal once",
+    "high: six items, four-item combination, transformed triangle supports, sampled body clearance, resource disposal once",
+    "live triangle binding follows a controlled source-pose change; original bytes restored in the test",
+    "224 real front/back ray comparisons include morph snapshots, rotation/depth and scale; no radius approximation",
+    "갑자: motion-root regions, local masks, restorable stable seeds and resources",
+    "을축: motion-root regions, local masks, restorable stable seeds and resources",
+    "actual connected vine overlap probe: local hide, clear/replace and stable segment/leaf IDs; non-overlapping outfit points stay visible",
+    "actual 丙/丁 flame-source visibility masks restore particle age/seed data and preserve flight matrices; flight collisions are not simulated",
+    "ten production stems: actual idle, original bounded wave, live triangle normals/supports, current local regions and sampled clearance; reset keeps clothing and restores neutral morph"
+  ],
+  "attachments": [
+    {
+      "quality": "low",
+      "face": "round-sunglasses",
+      "supports": [
+        {
+          "id": "sprout-pin",
+          "triangle": 29610,
+          "barycentric": [
+            0.37493839350792685,
+            0.25868668708600256,
+            0.36637491940607064
+          ],
+          "role": "upper-left-head",
+          "position": [
+            -0.32,
+            2.12,
+            0.3740496719398596
+          ],
+          "normal": [
+            -0.5122390443728816,
+            0.6108259673581206,
+            0.6037406719949995
+          ],
+          "clearance": 0.045
+        },
+        {
+          "id": "round-sunglasses",
+          "triangle": 40295,
+          "barycentric": [
+            0.6644999611593411,
+            0.038065322223741135,
+            0.2974347166169177
+          ],
+          "role": "face-center",
+          "position": [
+            5.637851296924623e-17,
+            1.7599999999999998,
+            0.6343243632457082
+          ],
+          "normal": [
+            -0.005420553178315591,
+            0.13624070333556149,
+            0.9906609351124493
+          ],
+          "clearance": 0.045
+        },
+        {
+          "id": "ribbon-bow",
+          "triangle": 40453,
+          "barycentric": [
+            0.3358201499096725,
+            0.32737632368527664,
+            0.33680352640505085
+          ],
+          "role": "below-mouth",
+          "position": [
+            5.724587470723463e-17,
+            1.34,
+            0.5914459821790433
+          ],
+          "normal": [
+            -0.00041799076715211644,
+            -0.298630997677165,
+            0.9543685621970474
+          ],
+          "clearance": 0.055
+        },
+        {
+          "id": "leaf-brooch",
+          "triangle": 53545,
+          "barycentric": [
+            0.49645831574561883,
+            0.3961937766963348,
+            0.1073479075580464
+          ],
+          "role": "mid-back",
+          "position": [
+            5.648693318649478e-17,
+            1.25,
+            -0.5530928601711825
+          ],
+          "normal": [
+            -0.00040368568580457793,
+            -0.4436805190666592,
+            -0.8961849329455428
+          ],
+          "clearance": 0.045
+        }
+      ]
+    },
+    {
+      "quality": "low",
+      "face": "fitted-mask",
+      "supports": [
+        {
+          "id": "ribbon-bow",
+          "triangle": 40453,
+          "barycentric": [
+            0.3358201499096725,
+            0.32737632368527664,
+            0.33680352640505085
+          ],
+          "role": "below-mouth",
+          "position": [
+            5.724587470723463e-17,
+            1.34,
+            0.5914459821790433
+          ],
+          "normal": [
+            -0.00041799076715211644,
+            -0.298630997677165,
+            0.9543685621970474
+          ],
+          "clearance": 0.055
+        },
+        {
+          "id": "leaf-brooch",
+          "triangle": 53545,
+          "barycentric": [
+            0.49645831574561883,
+            0.3961937766963348,
+            0.1073479075580464
+          ],
+          "role": "mid-back",
+          "position": [
+            5.648693318649478e-17,
+            1.25,
+            -0.5530928601711825
+          ],
+          "normal": [
+            -0.00040368568580457793,
+            -0.4436805190666592,
+            -0.8961849329455428
+          ],
+          "clearance": 0.045
+        },
+        {
+          "id": "crescent-pin",
+          "triangle": 29610,
+          "barycentric": [
+            0.37493839350792685,
+            0.25868668708600256,
+            0.36637491940607064
+          ],
+          "role": "upper-left-head",
+          "position": [
+            -0.32,
+            2.12,
+            0.3740496719398596
+          ],
+          "normal": [
+            -0.5122390443728816,
+            0.6108259673581206,
+            0.6037406719949995
+          ],
+          "clearance": 0.045
+        },
+        {
+          "id": "fitted-mask",
+          "triangle": 9399,
+          "barycentric": [
+            0.40879464207306615,
+            0.4101312695728403,
+            0.18107408835409355
+          ],
+          "role": "face-center",
+          "position": [
+            5.499615519932721e-17,
+            1.6349999999999998,
+            0.6418015023349282
+          ],
+          "normal": [
+            0.006889296082914802,
+            -0.007789806388858601,
+            0.9999459267959975
+          ],
+          "clearance": 0.045
+        }
+      ]
+    },
+    {
+      "quality": "high",
+      "face": "round-sunglasses",
+      "supports": [
+        {
+          "id": "sprout-pin",
+          "triangle": 29610,
+          "barycentric": [
+            0.37493839350792685,
+            0.25868668708600256,
+            0.36637491940607064
+          ],
+          "role": "upper-left-head",
+          "position": [
+            -0.32,
+            2.12,
+            0.3740496719398596
+          ],
+          "normal": [
+            -0.5122390443728816,
+            0.6108259673581206,
+            0.6037406719949995
+          ],
+          "clearance": 0.045
+        },
+        {
+          "id": "round-sunglasses",
+          "triangle": 40295,
+          "barycentric": [
+            0.6644999611593411,
+            0.038065322223741135,
+            0.2974347166169177
+          ],
+          "role": "face-center",
+          "position": [
+            5.637851296924623e-17,
+            1.7599999999999998,
+            0.6343243632457082
+          ],
+          "normal": [
+            -0.005420553178315591,
+            0.13624070333556149,
+            0.9906609351124493
+          ],
+          "clearance": 0.045
+        },
+        {
+          "id": "ribbon-bow",
+          "triangle": 40453,
+          "barycentric": [
+            0.3358201499096725,
+            0.32737632368527664,
+            0.33680352640505085
+          ],
+          "role": "below-mouth",
+          "position": [
+            5.724587470723463e-17,
+            1.34,
+            0.5914459821790433
+          ],
+          "normal": [
+            -0.00041799076715211644,
+            -0.298630997677165,
+            0.9543685621970474
+          ],
+          "clearance": 0.055
+        },
+        {
+          "id": "leaf-brooch",
+          "triangle": 53545,
+          "barycentric": [
+            0.49645831574561883,
+            0.3961937766963348,
+            0.1073479075580464
+          ],
+          "role": "mid-back",
+          "position": [
+            5.648693318649478e-17,
+            1.25,
+            -0.5530928601711825
+          ],
+          "normal": [
+            -0.00040368568580457793,
+            -0.4436805190666592,
+            -0.8961849329455428
+          ],
+          "clearance": 0.045
+        }
+      ]
+    },
+    {
+      "quality": "high",
+      "face": "fitted-mask",
+      "supports": [
+        {
+          "id": "ribbon-bow",
+          "triangle": 40453,
+          "barycentric": [
+            0.3358201499096725,
+            0.32737632368527664,
+            0.33680352640505085
+          ],
+          "role": "below-mouth",
+          "position": [
+            5.724587470723463e-17,
+            1.34,
+            0.5914459821790433
+          ],
+          "normal": [
+            -0.00041799076715211644,
+            -0.298630997677165,
+            0.9543685621970474
+          ],
+          "clearance": 0.055
+        },
+        {
+          "id": "leaf-brooch",
+          "triangle": 53545,
+          "barycentric": [
+            0.49645831574561883,
+            0.3961937766963348,
+            0.1073479075580464
+          ],
+          "role": "mid-back",
+          "position": [
+            5.648693318649478e-17,
+            1.25,
+            -0.5530928601711825
+          ],
+          "normal": [
+            -0.00040368568580457793,
+            -0.4436805190666592,
+            -0.8961849329455428
+          ],
+          "clearance": 0.045
+        },
+        {
+          "id": "crescent-pin",
+          "triangle": 29610,
+          "barycentric": [
+            0.37493839350792685,
+            0.25868668708600256,
+            0.36637491940607064
+          ],
+          "role": "upper-left-head",
+          "position": [
+            -0.32,
+            2.12,
+            0.3740496719398596
+          ],
+          "normal": [
+            -0.5122390443728816,
+            0.6108259673581206,
+            0.6037406719949995
+          ],
+          "clearance": 0.045
+        },
+        {
+          "id": "fitted-mask",
+          "triangle": 9399,
+          "barycentric": [
+            0.40879464207306615,
+            0.4101312695728403,
+            0.18107408835409355
+          ],
+          "role": "face-center",
+          "position": [
+            5.499615519932721e-17,
+            1.6349999999999998,
+            0.6418015023349282
+          ],
+          "normal": [
+            0.006889296082914802,
+            -0.007789806388858601,
+            0.9999459267959975
+          ],
+          "clearance": 0.045
+        }
+      ]
+    }
+  ],
+  "penetration": [
+    {
+      "quality": "low",
+      "face": "round-sunglasses",
+      "sampledInside": []
+    },
+    {
+      "quality": "low",
+      "face": "fitted-mask",
+      "sampledInside": []
+    },
+    {
+      "quality": "high",
+      "face": "round-sunglasses",
+      "sampledInside": []
+    },
+    {
+      "quality": "high",
+      "face": "fitted-mask",
+      "sampledInside": []
+    }
+  ],
+  "budgets": [
+    {
+      "quality": "low",
+      "config": {
+        "head": "sprout-pin",
+        "face": "round-sunglasses",
+        "neck": "ribbon-bow",
+        "back": "leaf-brooch"
+      },
+      "draws": 21,
+      "triangles": 3204
+    },
+    {
+      "quality": "low",
+      "config": {
+        "head": "crescent-pin",
+        "face": "fitted-mask",
+        "neck": "ribbon-bow",
+        "back": "leaf-brooch"
+      },
+      "draws": 18,
+      "triangles": 3200
+    },
+    {
+      "quality": "high",
+      "config": {
+        "head": "sprout-pin",
+        "face": "round-sunglasses",
+        "neck": "ribbon-bow",
+        "back": "leaf-brooch"
+      },
+      "draws": 21,
+      "triangles": 9156
+    },
+    {
+      "quality": "high",
+      "config": {
+        "head": "crescent-pin",
+        "face": "fitted-mask",
+        "neck": "ribbon-bow",
+        "back": "leaf-brooch"
+      },
+      "draws": 18,
+      "triangles": 8952
+    }
+  ],
+  "motion": [
+    {
+      "key": "갑자",
+      "face": "round-sunglasses",
+      "peakTime": 0.5499999999999999,
+      "waveWeight": 0.4499989400464626,
+      "sampledClearanceVertices": 186,
+      "sampledInside": [],
+      "owner": "ApprovedSpiritMotion",
+      "depth": 1.35
+    },
+    {
+      "key": "갑자",
+      "face": "fitted-mask",
+      "peakTime": 0.5499999999999999,
+      "waveWeight": 0.4499989400464626,
+      "sampledClearanceVertices": 162,
+      "sampledInside": [],
+      "owner": "ApprovedSpiritMotion",
+      "depth": 1.35
+    },
+    {
+      "key": "을축",
+      "face": "round-sunglasses",
+      "peakTime": 0.6,
+      "waveWeight": 0.4499119465763764,
+      "sampledClearanceVertices": 186,
+      "sampledInside": [],
+      "owner": "ApprovedSpiritMotion",
+      "depth": 1.35
+    },
+    {
+      "key": "을축",
+      "face": "fitted-mask",
+      "peakTime": 0.6,
+      "waveWeight": 0.4499119465763764,
+      "sampledClearanceVertices": 162,
+      "sampledInside": [],
+      "owner": "ApprovedSpiritMotion",
+      "depth": 1.35
+    },
+    {
+      "key": "병인",
+      "face": "round-sunglasses",
+      "peakTime": 0.49999999999999994,
+      "waveWeight": 0.44986269931523726,
+      "sampledClearanceVertices": 186,
+      "sampledInside": [],
+      "owner": "ApprovedSpiritMotion",
+      "depth": 1.35
+    },
+    {
+      "key": "병인",
+      "face": "fitted-mask",
+      "peakTime": 0.49999999999999994,
+      "waveWeight": 0.44986269931523726,
+      "sampledClearanceVertices": 162,
+      "sampledInside": [],
+      "owner": "ApprovedSpiritMotion",
+      "depth": 1.35
+    },
+    {
+      "key": "정묘",
+      "face": "round-sunglasses",
+      "peakTime": 0.5499999999999999,
+      "waveWeight": 0.44959530030394634,
+      "sampledClearanceVertices": 186,
+      "sampledInside": [],
+      "owner": "ApprovedSpiritMotion",
+      "depth": 1.35
+    },
+    {
+      "key": "정묘",
+      "face": "fitted-mask",
+      "peakTime": 0.5499999999999999,
+      "waveWeight": 0.44959530030394634,
+      "sampledClearanceVertices": 162,
+      "sampledInside": [],
+      "owner": "ApprovedSpiritMotion",
+      "depth": 1.35
+    },
+    {
+      "key": "무진",
+      "face": "round-sunglasses",
+      "peakTime": 0.6,
+      "waveWeight": 0.44981168347311834,
+      "sampledClearanceVertices": 186,
+      "sampledInside": [],
+      "owner": "ApprovedSpiritMotion",
+      "depth": 1.35
+    },
+    {
+      "key": "무진",
+      "face": "fitted-mask",
+      "peakTime": 0.6,
+      "waveWeight": 0.44981168347311834,
+      "sampledClearanceVertices": 162,
+      "sampledInside": [],
+      "owner": "ApprovedSpiritMotion",
+      "depth": 1.35
+    },
+    {
+      "key": "기사",
+      "face": "round-sunglasses",
+      "peakTime": 0.5499999999999999,
+      "waveWeight": 0.44833949810221174,
+      "sampledClearanceVertices": 186,
+      "sampledInside": [],
+      "owner": "ApprovedSpiritMotion",
+      "depth": 1.35
+    },
+    {
+      "key": "기사",
+      "face": "fitted-mask",
+      "peakTime": 0.5499999999999999,
+      "waveWeight": 0.44833949810221174,
+      "sampledClearanceVertices": 162,
+      "sampledInside": [],
+      "owner": "ApprovedSpiritMotion",
+      "depth": 1.35
+    },
+    {
+      "key": "경오",
+      "face": "round-sunglasses",
+      "peakTime": 0.49999999999999994,
+      "waveWeight": 0.44850087789416737,
+      "sampledClearanceVertices": 186,
+      "sampledInside": [],
+      "owner": "ApprovedSpiritMotion",
+      "depth": 1.35
+    },
+    {
+      "key": "경오",
+      "face": "fitted-mask",
+      "peakTime": 0.49999999999999994,
+      "waveWeight": 0.44850087789416737,
+      "sampledClearanceVertices": 162,
+      "sampledInside": [],
+      "owner": "ApprovedSpiritMotion",
+      "depth": 1.35
+    },
+    {
+      "key": "신미",
+      "face": "round-sunglasses",
+      "peakTime": 0.5499999999999999,
+      "waveWeight": 0.4499470658405987,
+      "sampledClearanceVertices": 186,
+      "sampledInside": [],
+      "owner": "ApprovedSpiritMotion",
+      "depth": 1.35
+    },
+    {
+      "key": "신미",
+      "face": "fitted-mask",
+      "peakTime": 0.5499999999999999,
+      "waveWeight": 0.4499470658405987,
+      "sampledClearanceVertices": 162,
+      "sampledInside": [],
+      "owner": "ApprovedSpiritMotion",
+      "depth": 1.35
+    },
+    {
+      "key": "임신",
+      "face": "round-sunglasses",
+      "peakTime": 0.5499999999999999,
+      "waveWeight": 0.4450937119247321,
+      "sampledClearanceVertices": 186,
+      "sampledInside": [],
+      "owner": "ApprovedSpiritMotion",
+      "depth": 1.35
+    },
+    {
+      "key": "임신",
+      "face": "fitted-mask",
+      "peakTime": 0.5499999999999999,
+      "waveWeight": 0.4450937119247321,
+      "sampledClearanceVertices": 162,
+      "sampledInside": [],
+      "owner": "ApprovedSpiritMotion",
+      "depth": 1.35
+    },
+    {
+      "key": "계유",
+      "face": "round-sunglasses",
+      "peakTime": 0.6,
+      "waveWeight": 0.4489056011542849,
+      "sampledClearanceVertices": 186,
+      "sampledInside": [],
+      "owner": "ApprovedSpiritMotion",
+      "depth": 1.35
+    },
+    {
+      "key": "계유",
+      "face": "fitted-mask",
+      "peakTime": 0.6,
+      "waveWeight": 0.4489056011542849,
+      "sampledClearanceVertices": 162,
+      "sampledInside": [],
+      "owner": "ApprovedSpiritMotion",
+      "depth": 1.35
+    }
+  ],
+  "masks": [
+    {
+      "key": "갑자",
+      "pose": "idle",
+      "time": 2.25,
+      "hidden": 8,
+      "total": 120
+    },
+    {
+      "key": "갑자",
+      "pose": "wave",
+      "time": 0.65,
+      "hidden": 8,
+      "total": 120
+    },
+    {
+      "key": "을축",
+      "pose": "idle",
+      "time": 2.25,
+      "hidden": 0,
+      "total": 318
+    },
+    {
+      "key": "을축",
+      "pose": "wave",
+      "time": 0.65,
+      "hidden": 0,
+      "total": 318
+    },
+    {
+      "key": "을축",
+      "probe": "actual visible vine segment; isolated sphere descriptor",
+      "hidden": 11,
+      "total": 318
+    },
+    {
+      "key": "병인",
+      "quality": "low",
+      "pose": "wave",
+      "hiddenVisibleFlameSources": 4,
+      "totalFlameSources": 48
+    },
+    {
+      "key": "정묘",
+      "quality": "low",
+      "pose": "wave",
+      "hiddenVisibleFlameSources": 0,
+      "totalFlameSources": 12
+    },
+    {
+      "key": "병인",
+      "quality": "high",
+      "pose": "wave",
+      "hiddenVisibleFlameSources": 6,
+      "totalFlameSources": 72
+    },
+    {
+      "key": "정묘",
+      "quality": "high",
+      "pose": "wave",
+      "hiddenVisibleFlameSources": 0,
+      "totalFlameSources": 18
+    }
+  ],
+  "limits": [
+    "CPU image I/O placeholders; browser QA uses actual textures.",
+    "Support triangles move; fabric and physical collisions are not simulated."
+  ]
+}

@@ -1,0 +1,66 @@
+✖ 壬 broad height is exactly half on the actual original GLB rest coordinates (2.648227ms)
+✖ 壬 ripples, flow phase, foam, color and optics retain their complete compiled recipe (1.707236ms)
+✔ other nine recipes, vertex shaders, material settings and cache identity are preserved (65.041497ms)
+✔ source attributes remain exact after rest binding and release (1.020848ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 2
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 321.747473
+
+✖ failing tests:
+
+test at scripts/qa/spirit-water-wave-cpu.mjs:41:1
+✖ 壬 broad height is exactly half on the actual original GLB rest coordinates (2.648227ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0.034 !== 0.017
+  
+      at TestContext.<anonymous> (file:///workspace/saju-spirit-fashion-dew-water-20261010/scripts/qa/spirit-water-wave-cpu.mjs:43:33)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0.034,
+    expected: 0.017,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/qa/spirit-water-wave-cpu.mjs:58:1
+✖ 壬 ripples, flow phase, foam, color and optics retain their complete compiled recipe (1.707236ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  ... Skipped lines
+  
+    '\n' +
+      '  // One invertible, latitude-sheared advection map drives every water layer.\n' +
+      '  // This exact angle and crest/breaker field are also used by the CPU accents.\n' +
+      '  vec3 axis=normalize(vec3(.18,1.,.24));\n' +
+      '  float latitude=dot(p,axis);\n' +
+  ...
+      '  s.roughness=mix(.054+.018*body,.59,foam);\n' +
+  +   '  s.height=.017*wave+.0045*ripple+.0014*(detail-.5)+.0018*foam;\n' +
+  -   '  s.height=.034*wave+.0045*ripple+.0014*(detail-.5)+.0018*foam;\n' +
+      '  s.emission=vec3(.006,.014,.020)*foam;\n' +
+      ' '
+  
+      at TestContext.<anonymous> (file:///workspace/saju-spirit-fashion-dew-water-20261010/scripts/qa/spirit-water-wave-cpu.mjs:61:12)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '\n  // One invertible, latitude-sheared advection map drives every water layer.\n  // This exact angle and crest/breaker field are also used by the CPU accents.\n  vec3 axis=normalize(vec3(.18,1.,.24));\n  float latitude=dot(p,axis);\n  float angle=1.08*uStemTime+.14*sin(latitude*2.5)*sin(uStemTime*.8)\n    +.055*(sin(latitude*4.+uStemTime*1.6)-sin(latitude*4.));\n  vec3 q=stFlowRotate(p,axis,-angle);\n  float warp=.55*sin(dot(q,vec3(3.1,2.6,1.4)))+.45*sin(dot(q,vec3(-1.8,3.4,2.6)));\n  float phase=dot(q,vec3(9.5,2.2,4.2))+.85*warp;\n  float wave=sin(phase);\n  // Smaller harmonics stay in the same moving frame; they never counter-rotate.\n  float ripple=sin(phase*1.9+warp*.65);\n  float detail=stNoise(q*19.+vec3(warp*.5));\n  float crest=smoothstep(.52,.94,wave);\n  float region=.55*sin(dot(q,vec3(2.5,-2.1,1.2))+.7)+.45*sin(dot(q,vec3(-1.7,1.8,3.1))-.4);\n  float breaker=smoothstep(.06,.50,region);\n  float pulse=smoothstep(-.45,.65,sin(uStemTime*2.4+dot(q,vec3(2.1,1.3,-1.4))));\n  float pores=smoothstep(.24,.66,stNoise(q*23.+vec3(warp*.55,warp*.3,0.)));\n  float foam=clamp(crest*breaker*pulse*(.52+.48*pores)*.93,0.,.93);\n  s.foam=foam;\n  float body=.5+.5*wave;\n  vec3 blue=mix(vec3(.070,.32,.53),vec3(.11,.49,.69),body*.68);\n  s.color=mix(blue,vec3(.91,.96,.95),foam);\n  s.roughness=mix(.054+.018*body,.59,foam);\n  s.height=.017*wave+.0045*ripple+.0014*(detail-.5)+.0018*foam;\n  s.emission=vec3(.006,.014,.020)*foam;\n ',
+    expected: '\n  // One invertible, latitude-sheared advection map drives every water layer.\n  // This exact angle and crest/breaker field are also used by the CPU accents.\n  vec3 axis=normalize(vec3(.18,1.,.24));\n  float latitude=dot(p,axis);\n  float angle=1.08*uStemTime+.14*sin(latitude*2.5)*sin(uStemTime*.8)\n    +.055*(sin(latitude*4.+uStemTime*1.6)-sin(latitude*4.));\n  vec3 q=stFlowRotate(p,axis,-angle);\n  float warp=.55*sin(dot(q,vec3(3.1,2.6,1.4)))+.45*sin(dot(q,vec3(-1.8,3.4,2.6)));\n  float phase=dot(q,vec3(9.5,2.2,4.2))+.85*warp;\n  float wave=sin(phase);\n  // Smaller harmonics stay in the same moving frame; they never counter-rotate.\n  float ripple=sin(phase*1.9+warp*.65);\n  float detail=stNoise(q*19.+vec3(warp*.5));\n  float crest=smoothstep(.52,.94,wave);\n  float region=.55*sin(dot(q,vec3(2.5,-2.1,1.2))+.7)+.45*sin(dot(q,vec3(-1.7,1.8,3.1))-.4);\n  float breaker=smoothstep(.06,.50,region);\n  float pulse=smoothstep(-.45,.65,sin(uStemTime*2.4+dot(q,vec3(2.1,1.3,-1.4))));\n  float pores=smoothstep(.24,.66,stNoise(q*23.+vec3(warp*.55,warp*.3,0.)));\n  float foam=clamp(crest*breaker*pulse*(.52+.48*pores)*.93,0.,.93);\n  s.foam=foam;\n  float body=.5+.5*wave;\n  vec3 blue=mix(vec3(.070,.32,.53),vec3(.11,.49,.69),body*.68);\n  s.color=mix(blue,vec3(.91,.96,.95),foam);\n  s.roughness=mix(.054+.018*body,.59,foam);\n  s.height=.034*wave+.0045*ripple+.0014*(detail-.5)+.0018*foam;\n  s.emission=vec3(.006,.014,.020)*foam;\n ',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

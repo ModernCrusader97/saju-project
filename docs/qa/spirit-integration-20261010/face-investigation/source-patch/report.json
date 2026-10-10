@@ -1,0 +1,5931 @@
+{
+  "status": "PASS",
+  "root": "/workspace/saju-spirit-dew-coalescence-20261010",
+  "sourceCommit": "1f1aa08ff74a1934a1ceb908957e041ffd97df41",
+  "sourceHashes": {
+    "lib/planet/approved-jade-spirit.ts": "64c85f63d50e63f57a53e4bcb10a98383657e2f3fce2fd9e5aaa7bde65a1a543",
+    "lib/planet/approved-spirit-motion.ts": "92454b392446e9a85814aafd5653518ad7694d9b4465f3436353a6792d66377f",
+    "lib/planet/approved-stem-materials.ts": "4f625fe9b75ee278e67b4b452b6bc16fe01f599bec2b48dad8e3842602266f7b",
+    "lib/planet/scene-environment.ts": "6aca790acdf6b7e70282f22eb59e9030f68de681f3ffd958e918bde6fa12117e",
+    "components/planet/ElementalSpiritCanvas.tsx": "16bdfd48f94ac3b069e331cdf70b154098cccbd02268cddade06d5bf0c0c971a",
+    "lib/planet/surface-sliding-dew.ts": "536cc61b5b25edb014cd1514aabfc81ea2698f13dec3538e068d8a00f00d6805",
+    "public/spirits/jade-v002/body.glb": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84"
+  },
+  "loaderOverlaySHA256": "c37a59e821b90c40feb25944501800e16e671f7980db779a75f64d28f95684c9",
+  "harnessSHA256": "c608c03d086a82165b317b662eb5d2b95d4b872a8ecad01dac68e5d53550420c",
+  "pageSHA256": "1cc330e34e007c0cd78c1ac29ad2eeb8c849de98503322a53eae00fcd73abe51",
+  "cases": [
+    {
+      "loaded": {
+        "day": "임신",
+        "quality": "high",
+        "faceNames": [
+          "B_|_small_eye_glint_-1",
+          "B_|_expressive_brow_-1",
+          "B_|_small_eye_glint_1",
+          "B_|_expressive_brow_1",
+          "B_|_quiet_smile",
+          "B_|_almond_gaze_-1",
+          "B_|_almond_gaze_1"
+        ],
+        "bodyReceiveShadow": false,
+        "bodyMaterial": {
+          "transmission": 0.85,
+          "thickness": 0.62
+        }
+      },
+      "close": false,
+      "states": [
+        {
+          "day": "임신",
+          "quality": "high",
+          "mode": "original",
+          "time": 0,
+          "close": false,
+          "angle": 0,
+          "pixelRatio": 1,
+          "size": [
+            640,
+            760
+          ],
+          "pixels": "e27d457d183d0214201de347768e1cf6002942a9489fa7cc19af8ba9b4e8fc00",
+          "meshes": [
+            {
+              "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.42,
+                0,
+                0,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  -58.30737618325159,
+                  -9.747545037944136
+                ],
+                "max": [
+                  506.75051801869614,
+                  798.4018311973751
+                ]
+              },
+              "material": [
+                {
+                  "name": "壬 · Deep flowing water",
+                  "type": "MeshPhysicalMaterial",
+                  "transparent": false,
+                  "side": 0,
+                  "forceSinglePass": false,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0.85,
+                  "thickness": 0.62
+                }
+              ]
+            },
+            {
+              "name": "B_|_small_eye_glint_-1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                -0.25999999046325684,
+                1.777999997138977,
+                0.48069074749946594
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.6799999904632568,
+                1.777999997138977,
+                0.648932509124279,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  166.65534906135633,
+                  269.748227175704
+                ],
+                "max": [
+                  174.8423989595938,
+                  277.75839107755786
+                ]
+              },
+              "material": [
+                {
+                  "name": "Soft glint",
+                  "type": "MeshStandardMaterial",
+                  "transparent": true,
+                  "side": 2,
+                  "forceSinglePass": true,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_expressive_brow_-1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.42,
+                0,
+                0,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  147.2340597626176,
+                  230.81513775158345
+                ],
+                "max": [
+                  202.28466651970882,
+                  243.94398241067378
+                ]
+              },
+              "material": [
+                {
+                  "name": "Deep teal expression",
+                  "type": "MeshStandardMaterial",
+                  "transparent": true,
+                  "side": 2,
+                  "forceSinglePass": true,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_small_eye_glint_1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0.20999999344348907,
+                1.777999997138977,
+                0.4807272255420685
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.2100000065565109,
+                1.777999997138977,
+                0.6489817544817925,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  270.05799679566746,
+                  269.74801982727246
+                ],
+                "max": [
+                  277.74405482277655,
+                  277.7582627377074
+                ]
+              },
+              "material": [
+                {
+                  "name": "Soft glint",
+                  "type": "MeshStandardMaterial",
+                  "transparent": true,
+                  "side": 2,
+                  "forceSinglePass": true,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_expressive_brow_1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.42,
+                0,
+                0,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  250.9166208327562,
+                  225.2461882751249
+                ],
+                "max": [
+                  305.0466351151228,
+                  243.76636896566703
+                ]
+              },
+              "material": [
+                {
+                  "name": "Deep teal expression",
+                  "type": "MeshStandardMaterial",
+                  "transparent": true,
+                  "side": 2,
+                  "forceSinglePass": true,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_quiet_smile",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.42,
+                0,
+                0,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  200.8729737063387,
+                  312.56558883122256
+                ],
+                "max": [
+                  257.5709931563339,
+                  325.3667146762481
+                ]
+              },
+              "material": [
+                {
+                  "name": "Deep teal expression",
+                  "type": "MeshStandardMaterial",
+                  "transparent": true,
+                  "side": 2,
+                  "forceSinglePass": true,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_almond_gaze_-1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                -0.23499999940395355,
+                1.7599999904632568,
+                0.4536909759044647
+              ],
+              "scale": [
+                0.11800000071525574,
+                0.05700000002980232,
+                0.028999999165534973
+              ],
+              "matrix": [
+                0.11741049222272172,
+                -0.011780343259846721,
+                0,
+                0,
+                0.005690504763493039,
+                0.0567152374544775,
+                0,
+                0,
+                0,
+                0,
+                0.039149998873472217,
+                0,
+                -0.6549999994039535,
+                1.7599999904632568,
+                0.6124828174710274,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  148.99872037801822,
+                  262.6065778474739
+                ],
+                "max": [
+                  205.14301874603262,
+                  292.8065554553126
+                ]
+              },
+              "material": [
+                {
+                  "name": "Deep teal expression",
+                  "type": "MeshStandardMaterial",
+                  "transparent": true,
+                  "side": 2,
+                  "forceSinglePass": true,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_almond_gaze_1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0.23499999940395355,
+                1.7599999904632568,
+                0.45372721552848816
+              ],
+              "scale": [
+                0.11800000071525574,
+                0.05700000002980232,
+                0.028999999165534973
+              ],
+              "matrix": [
+                0.11741049222272172,
+                0.011780343259846721,
+                0,
+                0,
+                -0.005690504763493039,
+                0.0567152374544775,
+                0,
+                0,
+                0,
+                0,
+                0.039149998873472217,
+                0,
+                -0.18500000059604643,
+                1.7599999904632568,
+                0.6125317409634591,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  252.28878364783895,
+                  262.60630101922953
+                ],
+                "max": [
+                  306.6335449877873,
+                  292.80657186662313
+                ]
+              },
+              "material": [
+                {
+                  "name": "Deep teal expression",
+                  "type": "MeshStandardMaterial",
+                  "transparent": true,
+                  "side": 2,
+                  "forceSinglePass": true,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            }
+          ],
+          "geometryHashes": {
+            "B_candidate5_reconstructed_|_seamless_body_and_mittens": {
+              "position": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+              "normal": "80706bee870329a0829113e63ed178f0a904029265da2c96c69ad50f9b1f9cec",
+              "uv": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+              "stemRestPosition": "e1a4510de093384f0cb4f6d15c02bb941744d10406bd6d54b7889c746108e257",
+              "stemRestNormal": "4952dbc1c125087c1a15261b0d1147fd9fe31bfa2877ff49e025d462bf35f530",
+              "stemLocalBrushAxis": "4338236bc55b54d79da35af194ad20e035e6ace08283ab409015ad567b254410",
+              "stemLocalBrushSide": "80105553583026e49df09dcb2ef5f6443dc9f6c7084573245a1bcba62ebd3e63",
+              "index": "934286d3bdd9361657e390c41762923871cec85a48a7d9775b362aee02dc7830"
+            },
+            "B_|_small_eye_glint_-1": {
+              "position": "31d63b82449328a1454c8ffbac35522f996c58082325eb579f9fdb93682c0e25",
+              "normal": "c91f6d093288b9e4284433827e25974b5c35ba2b53b07243f5bbedd76aa480cd",
+              "uv": "22f5058b7f71ed79d582e2e6a1502f3117785ac7ffcbee4400cb450f15e4b3c8",
+              "index": "a22daa4a67dfd2d521f715bbbbd647427adcae4150dc5073974eb077b222367f"
+            },
+            "B_|_expressive_brow_-1": {
+              "position": "a7d026e4bf8e29ddaf2bc088699ab0a646bf4b50c4d1c1518fc3321d64280dd0",
+              "normal": "d67cb1f7e68afcffd73f6ce1feb38fa2ee775bb60727cac2bc7acdced2ac2588",
+              "uv": "28f426cd5e9c615e22566e1ba2dc5e7c6e927f301d6bf244781a4a21a2622f7d",
+              "index": "7d9ab7486d60694af1a925ead9ba087afd4250250fc391e57448120d44233f73"
+            },
+            "B_|_small_eye_glint_1": {
+              "position": "31d63b82449328a1454c8ffbac35522f996c58082325eb579f9fdb93682c0e25",
+              "normal": "c91f6d093288b9e4284433827e25974b5c35ba2b53b07243f5bbedd76aa480cd",
+              "uv": "22f5058b7f71ed79d582e2e6a1502f3117785ac7ffcbee4400cb450f15e4b3c8",
+              "index": "a4ce72fc9152999ec28a74c0573936689b6bb3bed65e909e0bfcb0a557693d30"
+            },
+            "B_|_expressive_brow_1": {
+              "position": "b625a42bb4606f94500f8bf75a91180ddf96341f28b1ac074e70552d167ff598",
+              "normal": "c6caa331e68a116f52427c9cab144eb4a957b8a1c2143ca79cf29c60dcf13853",
+              "uv": "28f426cd5e9c615e22566e1ba2dc5e7c6e927f301d6bf244781a4a21a2622f7d",
+              "index": "7d9ab7486d60694af1a925ead9ba087afd4250250fc391e57448120d44233f73"
+            },
+            "B_|_quiet_smile": {
+              "position": "12afa270a7e34881d323410814e0fa72874812f1d6705b55a5531ee1b522eb5b",
+              "normal": "c4647abf3c0863ace50b02ae6005e5c52a7059bca5c73dcc35137186eb95d23d",
+              "uv": "28f426cd5e9c615e22566e1ba2dc5e7c6e927f301d6bf244781a4a21a2622f7d",
+              "index": "7d9ab7486d60694af1a925ead9ba087afd4250250fc391e57448120d44233f73"
+            },
+            "B_|_almond_gaze_-1": {
+              "position": "ab4f85078af68be7ba5f07d962b602a7b629c502d8baf9e028802aa4704b9972",
+              "normal": "989df4cd7a9c446d99ccea582a1f29e0516b99b8329425b3ac98f71d54105bdf",
+              "uv": "22f5058b7f71ed79d582e2e6a1502f3117785ac7ffcbee4400cb450f15e4b3c8",
+              "index": "07d447b917012005f420be2c44775232c45500da2d1edfba73c1f3ffe2785ccc"
+            },
+            "B_|_almond_gaze_1": {
+              "position": "ab4f85078af68be7ba5f07d962b602a7b629c502d8baf9e028802aa4704b9972",
+              "normal": "989df4cd7a9c446d99ccea582a1f29e0516b99b8329425b3ac98f71d54105bdf",
+              "uv": "22f5058b7f71ed79d582e2e6a1502f3117785ac7ffcbee4400cb450f15e4b3c8",
+              "index": "0fb4a437ba2cbf65ed2a78754f9922e6ebbd31afa7237d237b6f2ab04b3d7e40"
+            }
+          },
+          "bodyMorphs": [
+            0
+          ],
+          "bodyNativeTime": 0,
+          "bodyNativeReceiveShadow": false,
+          "groundNativeReceiveShadow": true,
+          "groundLinkedShadowMap": true,
+          "bodyNativeTransmission": 0.8500000238418579,
+          "bodyNativeThickness": 0.6200000047683716,
+          "bodyNativeTransmissionSampler": 4,
+          "bodyNativeTransmissionSize": [
+            640,
+            760
+          ],
+          "camera": {
+            "position": [
+              0,
+              1.7,
+              5.7
+            ],
+            "world": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0.9967594336616964,
+              -0.0804402349972597,
+              0,
+              0,
+              0.0804402349972597,
+              0.9967594336616964,
+              0,
+              0,
+              1.7,
+              5.7,
+              1
+            ],
+            "projection": [
+              3.44875041724004,
+              0,
+              0,
+              0,
+              0,
+              2.9042108776758226,
+              0,
+              0,
+              0,
+              0,
+              -1.005012531328321,
+              -1,
+              0,
+              0,
+              -0.2005012531328321,
+              0
+            ]
+          },
+          "shadows": {
+            "enabled": true,
+            "type": 1,
+            "keyCast": true,
+            "mapSize": [
+              1024,
+              1024
+            ],
+            "bias": -0.0002,
+            "groundReceive": true
+          },
+          "passes": [
+            {
+              "mesh": "B_|_almond_gaze_-1",
+              "target": null,
+              "material": "Deep teal expression",
+              "transparent": true,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_almond_gaze_1",
+              "target": null,
+              "material": "Deep teal expression",
+              "transparent": true,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_quiet_smile",
+              "target": null,
+              "material": "Deep teal expression",
+              "transparent": true,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_small_eye_glint_-1",
+              "target": null,
+              "material": "Soft glint",
+              "transparent": true,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_small_eye_glint_1",
+              "target": null,
+              "material": "Soft glint",
+              "transparent": true,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_expressive_brow_-1",
+              "target": null,
+              "material": "Deep teal expression",
+              "transparent": true,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_expressive_brow_1",
+              "target": null,
+              "material": "Deep teal expression",
+              "transparent": true,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            }
+          ],
+          "errors": [],
+          "glError": 0,
+          "webgl": {
+            "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+            "renderer": "WebKit WebGL",
+            "vendor": "WebKit"
+          },
+          "draws": 65,
+          "file": "임신-high-0.00000-full-0.000-1-original.png",
+          "pngSHA256": "f29397090c95433f205c8737f6e301907eff244ae2f70c832ce850dca3f53ca3"
+        }
+      ],
+      "diffs": []
+    },
+    {
+      "loaded": {
+        "day": "임신",
+        "quality": "high",
+        "faceNames": [
+          "B_|_small_eye_glint_-1",
+          "B_|_expressive_brow_-1",
+          "B_|_small_eye_glint_1",
+          "B_|_expressive_brow_1",
+          "B_|_quiet_smile",
+          "B_|_almond_gaze_-1",
+          "B_|_almond_gaze_1"
+        ],
+        "bodyReceiveShadow": false,
+        "bodyMaterial": {
+          "transmission": 0.85,
+          "thickness": 0.62
+        }
+      },
+      "close": true,
+      "states": [
+        {
+          "day": "임신",
+          "quality": "high",
+          "mode": "original",
+          "time": 0,
+          "close": true,
+          "angle": 0,
+          "pixelRatio": 1,
+          "size": [
+            640,
+            760
+          ],
+          "pixels": "f9755fd108db753db87f851ea5a7fa2e5e192ec11de90b8944e4c0720cbb9d0c",
+          "meshes": [
+            {
+              "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.42,
+                0,
+                0,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  -503.53198298132315,
+                  -447.71595609393466
+                ],
+                "max": [
+                  1143.5412543009975,
+                  1851.3008862430804
+                ]
+              },
+              "material": [
+                {
+                  "name": "壬 · Deep flowing water",
+                  "type": "MeshPhysicalMaterial",
+                  "transparent": false,
+                  "side": 0,
+                  "forceSinglePass": false,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0.85,
+                  "thickness": 0.62
+                }
+              ]
+            },
+            {
+              "name": "B_|_small_eye_glint_-1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                -0.25999999046325684,
+                1.777999997138977,
+                0.48069074749946594
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.6799999904632568,
+                1.777999997138977,
+                0.648932509124279,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  149.27033625765694,
+                  360.352914565148
+                ],
+                "max": [
+                  172.1335771810101,
+                  382.84281969800924
+                ]
+              },
+              "material": [
+                {
+                  "name": "Soft glint",
+                  "type": "MeshStandardMaterial",
+                  "transparent": true,
+                  "side": 2,
+                  "forceSinglePass": true,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_expressive_brow_-1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.42,
+                0,
+                0,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  94.68145601713476,
+                  251.74345260982275
+                ],
+                "max": [
+                  247.96726457938544,
+                  288.61740444439835
+                ]
+              },
+              "material": [
+                {
+                  "name": "Deep teal expression",
+                  "type": "MeshStandardMaterial",
+                  "transparent": true,
+                  "side": 2,
+                  "forceSinglePass": true,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_small_eye_glint_1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0.20999999344348907,
+                1.777999997138977,
+                0.4807272255420685
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.2100000065565109,
+                1.777999997138977,
+                0.6489817544817925,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  437.4444270808873,
+                  360.3536427979969
+                ],
+                "max": [
+                  459.9158855341514,
+                  382.8441735763333
+                ]
+              },
+              "material": [
+                {
+                  "name": "Soft glint",
+                  "type": "MeshStandardMaterial",
+                  "transparent": true,
+                  "side": 2,
+                  "forceSinglePass": true,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_expressive_brow_1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.42,
+                0,
+                0,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  384.7190368574647,
+                  236.0577173998908
+                ],
+                "max": [
+                  540.114276077509,
+                  288.13194882503126
+                ]
+              },
+              "material": [
+                {
+                  "name": "Deep teal expression",
+                  "type": "MeshStandardMaterial",
+                  "transparent": true,
+                  "side": 2,
+                  "forceSinglePass": true,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_quiet_smile",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.42,
+                0,
+                0,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  244.58408151438974,
+                  477.50895754383276
+                ],
+                "max": [
+                  401.9684402272779,
+                  515.945889918505
+                ]
+              },
+              "material": [
+                {
+                  "name": "Deep teal expression",
+                  "type": "MeshStandardMaterial",
+                  "transparent": true,
+                  "side": 2,
+                  "forceSinglePass": true,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_almond_gaze_-1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                -0.23499999940395355,
+                1.7599999904632568,
+                0.4536909759044647
+              ],
+              "scale": [
+                0.11800000071525574,
+                0.05700000002980232,
+                0.028999999165534973
+              ],
+              "matrix": [
+                0.11741049222272172,
+                -0.011780343259846721,
+                0,
+                0,
+                0.005690504763493039,
+                0.0567152374544775,
+                0,
+                0,
+                0,
+                0,
+                0.039149998873472217,
+                0,
+                -0.6549999994039535,
+                1.7599999904632568,
+                0.6124828174710274,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  100.10951921382159,
+                  340.3082165493432
+                ],
+                "max": [
+                  254.356617329573,
+                  424.50486136789976
+                ]
+              },
+              "material": [
+                {
+                  "name": "Deep teal expression",
+                  "type": "MeshStandardMaterial",
+                  "transparent": true,
+                  "side": 2,
+                  "forceSinglePass": true,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_almond_gaze_1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0.23499999940395355,
+                1.7599999904632568,
+                0.45372721552848816
+              ],
+              "scale": [
+                0.11800000071525574,
+                0.05700000002980232,
+                0.028999999165534973
+              ],
+              "matrix": [
+                0.11741049222272172,
+                0.011780343259846721,
+                0,
+                0,
+                -0.005690504763493039,
+                0.0567152374544775,
+                0,
+                0,
+                0,
+                0,
+                0.039149998873472217,
+                0,
+                -0.18500000059604643,
+                1.7599999904632568,
+                0.6125317409634591,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  385.6451334840764,
+                  340.3083885957002
+                ],
+                "max": [
+                  539.8965086360636,
+                  424.50732298931837
+                ]
+              },
+              "material": [
+                {
+                  "name": "Deep teal expression",
+                  "type": "MeshStandardMaterial",
+                  "transparent": true,
+                  "side": 2,
+                  "forceSinglePass": true,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            }
+          ],
+          "geometryHashes": {
+            "B_candidate5_reconstructed_|_seamless_body_and_mittens": {
+              "position": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+              "normal": "80706bee870329a0829113e63ed178f0a904029265da2c96c69ad50f9b1f9cec",
+              "uv": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+              "stemRestPosition": "e1a4510de093384f0cb4f6d15c02bb941744d10406bd6d54b7889c746108e257",
+              "stemRestNormal": "4952dbc1c125087c1a15261b0d1147fd9fe31bfa2877ff49e025d462bf35f530",
+              "stemLocalBrushAxis": "4338236bc55b54d79da35af194ad20e035e6ace08283ab409015ad567b254410",
+              "stemLocalBrushSide": "80105553583026e49df09dcb2ef5f6443dc9f6c7084573245a1bcba62ebd3e63",
+              "index": "934286d3bdd9361657e390c41762923871cec85a48a7d9775b362aee02dc7830"
+            },
+            "B_|_small_eye_glint_-1": {
+              "position": "31d63b82449328a1454c8ffbac35522f996c58082325eb579f9fdb93682c0e25",
+              "normal": "c91f6d093288b9e4284433827e25974b5c35ba2b53b07243f5bbedd76aa480cd",
+              "uv": "22f5058b7f71ed79d582e2e6a1502f3117785ac7ffcbee4400cb450f15e4b3c8",
+              "index": "a22daa4a67dfd2d521f715bbbbd647427adcae4150dc5073974eb077b222367f"
+            },
+            "B_|_expressive_brow_-1": {
+              "position": "a7d026e4bf8e29ddaf2bc088699ab0a646bf4b50c4d1c1518fc3321d64280dd0",
+              "normal": "d67cb1f7e68afcffd73f6ce1feb38fa2ee775bb60727cac2bc7acdced2ac2588",
+              "uv": "28f426cd5e9c615e22566e1ba2dc5e7c6e927f301d6bf244781a4a21a2622f7d",
+              "index": "7d9ab7486d60694af1a925ead9ba087afd4250250fc391e57448120d44233f73"
+            },
+            "B_|_small_eye_glint_1": {
+              "position": "31d63b82449328a1454c8ffbac35522f996c58082325eb579f9fdb93682c0e25",
+              "normal": "c91f6d093288b9e4284433827e25974b5c35ba2b53b07243f5bbedd76aa480cd",
+              "uv": "22f5058b7f71ed79d582e2e6a1502f3117785ac7ffcbee4400cb450f15e4b3c8",
+              "index": "a4ce72fc9152999ec28a74c0573936689b6bb3bed65e909e0bfcb0a557693d30"
+            },
+            "B_|_expressive_brow_1": {
+              "position": "b625a42bb4606f94500f8bf75a91180ddf96341f28b1ac074e70552d167ff598",
+              "normal": "c6caa331e68a116f52427c9cab144eb4a957b8a1c2143ca79cf29c60dcf13853",
+              "uv": "28f426cd5e9c615e22566e1ba2dc5e7c6e927f301d6bf244781a4a21a2622f7d",
+              "index": "7d9ab7486d60694af1a925ead9ba087afd4250250fc391e57448120d44233f73"
+            },
+            "B_|_quiet_smile": {
+              "position": "12afa270a7e34881d323410814e0fa72874812f1d6705b55a5531ee1b522eb5b",
+              "normal": "c4647abf3c0863ace50b02ae6005e5c52a7059bca5c73dcc35137186eb95d23d",
+              "uv": "28f426cd5e9c615e22566e1ba2dc5e7c6e927f301d6bf244781a4a21a2622f7d",
+              "index": "7d9ab7486d60694af1a925ead9ba087afd4250250fc391e57448120d44233f73"
+            },
+            "B_|_almond_gaze_-1": {
+              "position": "ab4f85078af68be7ba5f07d962b602a7b629c502d8baf9e028802aa4704b9972",
+              "normal": "989df4cd7a9c446d99ccea582a1f29e0516b99b8329425b3ac98f71d54105bdf",
+              "uv": "22f5058b7f71ed79d582e2e6a1502f3117785ac7ffcbee4400cb450f15e4b3c8",
+              "index": "07d447b917012005f420be2c44775232c45500da2d1edfba73c1f3ffe2785ccc"
+            },
+            "B_|_almond_gaze_1": {
+              "position": "ab4f85078af68be7ba5f07d962b602a7b629c502d8baf9e028802aa4704b9972",
+              "normal": "989df4cd7a9c446d99ccea582a1f29e0516b99b8329425b3ac98f71d54105bdf",
+              "uv": "22f5058b7f71ed79d582e2e6a1502f3117785ac7ffcbee4400cb450f15e4b3c8",
+              "index": "0fb4a437ba2cbf65ed2a78754f9922e6ebbd31afa7237d237b6f2ab04b3d7e40"
+            }
+          },
+          "bodyMorphs": [
+            0
+          ],
+          "bodyNativeTime": 0,
+          "bodyNativeReceiveShadow": false,
+          "groundNativeReceiveShadow": true,
+          "groundLinkedShadowMap": true,
+          "bodyNativeTransmission": 0.8500000238418579,
+          "bodyNativeThickness": 0.6200000047683716,
+          "bodyNativeTransmissionSampler": 4,
+          "bodyNativeTransmissionSize": [
+            640,
+            760
+          ],
+          "camera": {
+            "position": [
+              -0.42,
+              1.84,
+              2.45
+            ],
+            "world": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0.9991147502967768,
+              -0.04206798948618011,
+              0,
+              0,
+              0.04206798948618011,
+              0.9991147502967768,
+              0,
+              -0.42,
+              1.84,
+              2.45,
+              1
+            ],
+            "projection": [
+              3.44875041724004,
+              0,
+              0,
+              0,
+              0,
+              2.9042108776758226,
+              0,
+              0,
+              0,
+              0,
+              -1.005012531328321,
+              -1,
+              0,
+              0,
+              -0.2005012531328321,
+              0
+            ]
+          },
+          "shadows": {
+            "enabled": true,
+            "type": 1,
+            "keyCast": true,
+            "mapSize": [
+              1024,
+              1024
+            ],
+            "bias": -0.0002,
+            "groundReceive": true
+          },
+          "passes": [
+            {
+              "mesh": "B_|_almond_gaze_-1",
+              "target": null,
+              "material": "Deep teal expression",
+              "transparent": true,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_almond_gaze_1",
+              "target": null,
+              "material": "Deep teal expression",
+              "transparent": true,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_quiet_smile",
+              "target": null,
+              "material": "Deep teal expression",
+              "transparent": true,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_expressive_brow_-1",
+              "target": null,
+              "material": "Deep teal expression",
+              "transparent": true,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_expressive_brow_1",
+              "target": null,
+              "material": "Deep teal expression",
+              "transparent": true,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_small_eye_glint_-1",
+              "target": null,
+              "material": "Soft glint",
+              "transparent": true,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_small_eye_glint_1",
+              "target": null,
+              "material": "Soft glint",
+              "transparent": true,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            }
+          ],
+          "errors": [],
+          "glError": 0,
+          "webgl": {
+            "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+            "renderer": "WebKit WebGL",
+            "vendor": "WebKit"
+          },
+          "draws": 33,
+          "file": "임신-high-0.00000-close-0.000-1-original.png",
+          "pngSHA256": "4253d7971ba44e3ef763eeecb3677c239498a5f2309a9354558470a9c541f163"
+        }
+      ],
+      "diffs": []
+    },
+    {
+      "loaded": {
+        "day": "계해",
+        "quality": "high",
+        "faceNames": [
+          "B_|_small_eye_glint_-1",
+          "B_|_expressive_brow_-1",
+          "B_|_small_eye_glint_1",
+          "B_|_expressive_brow_1",
+          "B_|_quiet_smile",
+          "B_|_almond_gaze_-1",
+          "B_|_almond_gaze_1"
+        ],
+        "bodyReceiveShadow": false,
+        "bodyMaterial": {
+          "transmission": 0.98,
+          "thickness": 0.3
+        }
+      },
+      "close": false,
+      "states": [
+        {
+          "day": "계해",
+          "quality": "high",
+          "mode": "original",
+          "time": 0,
+          "close": false,
+          "angle": 0,
+          "pixelRatio": 1,
+          "size": [
+            640,
+            760
+          ],
+          "pixels": "c9d2e8382115832c99dcccaea77a82dda8cbeeafb6bab2c8901b9df955434e11",
+          "meshes": [
+            {
+              "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.42,
+                0,
+                0,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  -58.30737618325159,
+                  -9.747545037944136
+                ],
+                "max": [
+                  506.75051801869614,
+                  798.4018311973751
+                ]
+              },
+              "material": [
+                {
+                  "name": "癸 · Dew water",
+                  "type": "MeshPhysicalMaterial",
+                  "transparent": false,
+                  "side": 0,
+                  "forceSinglePass": false,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0.98,
+                  "thickness": 0.3
+                }
+              ]
+            },
+            {
+              "name": "B_|_small_eye_glint_-1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                -0.25999999046325684,
+                1.777999997138977,
+                0.48069074749946594
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.6799999904632568,
+                1.777999997138977,
+                0.648932509124279,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  166.65534906135633,
+                  269.748227175704
+                ],
+                "max": [
+                  174.8423989595938,
+                  277.75839107755786
+                ]
+              },
+              "material": [
+                {
+                  "name": "Soft glint",
+                  "type": "MeshStandardMaterial",
+                  "transparent": true,
+                  "side": 2,
+                  "forceSinglePass": true,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_expressive_brow_-1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.42,
+                0,
+                0,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  147.2340597626176,
+                  230.81513775158345
+                ],
+                "max": [
+                  202.28466651970882,
+                  243.94398241067378
+                ]
+              },
+              "material": [
+                {
+                  "name": "Deep teal expression",
+                  "type": "MeshStandardMaterial",
+                  "transparent": true,
+                  "side": 2,
+                  "forceSinglePass": true,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_small_eye_glint_1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0.20999999344348907,
+                1.777999997138977,
+                0.4807272255420685
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.2100000065565109,
+                1.777999997138977,
+                0.6489817544817925,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  270.05799679566746,
+                  269.74801982727246
+                ],
+                "max": [
+                  277.74405482277655,
+                  277.7582627377074
+                ]
+              },
+              "material": [
+                {
+                  "name": "Soft glint",
+                  "type": "MeshStandardMaterial",
+                  "transparent": true,
+                  "side": 2,
+                  "forceSinglePass": true,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_expressive_brow_1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.42,
+                0,
+                0,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  250.9166208327562,
+                  225.2461882751249
+                ],
+                "max": [
+                  305.0466351151228,
+                  243.76636896566703
+                ]
+              },
+              "material": [
+                {
+                  "name": "Deep teal expression",
+                  "type": "MeshStandardMaterial",
+                  "transparent": true,
+                  "side": 2,
+                  "forceSinglePass": true,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_quiet_smile",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.42,
+                0,
+                0,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  200.8729737063387,
+                  312.56558883122256
+                ],
+                "max": [
+                  257.5709931563339,
+                  325.3667146762481
+                ]
+              },
+              "material": [
+                {
+                  "name": "Deep teal expression",
+                  "type": "MeshStandardMaterial",
+                  "transparent": true,
+                  "side": 2,
+                  "forceSinglePass": true,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_almond_gaze_-1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                -0.23499999940395355,
+                1.7599999904632568,
+                0.4536909759044647
+              ],
+              "scale": [
+                0.11800000071525574,
+                0.05700000002980232,
+                0.028999999165534973
+              ],
+              "matrix": [
+                0.11741049222272172,
+                -0.011780343259846721,
+                0,
+                0,
+                0.005690504763493039,
+                0.0567152374544775,
+                0,
+                0,
+                0,
+                0,
+                0.039149998873472217,
+                0,
+                -0.6549999994039535,
+                1.7599999904632568,
+                0.6124828174710274,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  148.99872037801822,
+                  262.6065778474739
+                ],
+                "max": [
+                  205.14301874603262,
+                  292.8065554553126
+                ]
+              },
+              "material": [
+                {
+                  "name": "Deep teal expression",
+                  "type": "MeshStandardMaterial",
+                  "transparent": true,
+                  "side": 2,
+                  "forceSinglePass": true,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_almond_gaze_1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0.23499999940395355,
+                1.7599999904632568,
+                0.45372721552848816
+              ],
+              "scale": [
+                0.11800000071525574,
+                0.05700000002980232,
+                0.028999999165534973
+              ],
+              "matrix": [
+                0.11741049222272172,
+                0.011780343259846721,
+                0,
+                0,
+                -0.005690504763493039,
+                0.0567152374544775,
+                0,
+                0,
+                0,
+                0,
+                0.039149998873472217,
+                0,
+                -0.18500000059604643,
+                1.7599999904632568,
+                0.6125317409634591,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  252.28878364783895,
+                  262.60630101922953
+                ],
+                "max": [
+                  306.6335449877873,
+                  292.80657186662313
+                ]
+              },
+              "material": [
+                {
+                  "name": "Deep teal expression",
+                  "type": "MeshStandardMaterial",
+                  "transparent": true,
+                  "side": 2,
+                  "forceSinglePass": true,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "ActualSurfaceSlidingDew",
+              "castShadow": false,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.42,
+                0,
+                0,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  21.861685529587938,
+                  193.14936436594323
+                ],
+                "max": [
+                  410.264096067132,
+                  1174.343495042712
+                ]
+              },
+              "material": [
+                {
+                  "name": "癸 · clear surface condensation",
+                  "type": "MeshPhysicalMaterial",
+                  "transparent": false,
+                  "side": 0,
+                  "forceSinglePass": false,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0.97,
+                  "thickness": 0.025677206128835683
+                }
+              ]
+            }
+          ],
+          "geometryHashes": {
+            "B_candidate5_reconstructed_|_seamless_body_and_mittens": {
+              "position": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+              "normal": "80706bee870329a0829113e63ed178f0a904029265da2c96c69ad50f9b1f9cec",
+              "uv": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+              "stemRestPosition": "e1a4510de093384f0cb4f6d15c02bb941744d10406bd6d54b7889c746108e257",
+              "stemRestNormal": "4952dbc1c125087c1a15261b0d1147fd9fe31bfa2877ff49e025d462bf35f530",
+              "stemLocalBrushAxis": "4338236bc55b54d79da35af194ad20e035e6ace08283ab409015ad567b254410",
+              "stemLocalBrushSide": "80105553583026e49df09dcb2ef5f6443dc9f6c7084573245a1bcba62ebd3e63",
+              "index": "934286d3bdd9361657e390c41762923871cec85a48a7d9775b362aee02dc7830"
+            },
+            "B_|_small_eye_glint_-1": {
+              "position": "31d63b82449328a1454c8ffbac35522f996c58082325eb579f9fdb93682c0e25",
+              "normal": "c91f6d093288b9e4284433827e25974b5c35ba2b53b07243f5bbedd76aa480cd",
+              "uv": "22f5058b7f71ed79d582e2e6a1502f3117785ac7ffcbee4400cb450f15e4b3c8",
+              "index": "a22daa4a67dfd2d521f715bbbbd647427adcae4150dc5073974eb077b222367f"
+            },
+            "B_|_expressive_brow_-1": {
+              "position": "a7d026e4bf8e29ddaf2bc088699ab0a646bf4b50c4d1c1518fc3321d64280dd0",
+              "normal": "d67cb1f7e68afcffd73f6ce1feb38fa2ee775bb60727cac2bc7acdced2ac2588",
+              "uv": "28f426cd5e9c615e22566e1ba2dc5e7c6e927f301d6bf244781a4a21a2622f7d",
+              "index": "7d9ab7486d60694af1a925ead9ba087afd4250250fc391e57448120d44233f73"
+            },
+            "B_|_small_eye_glint_1": {
+              "position": "31d63b82449328a1454c8ffbac35522f996c58082325eb579f9fdb93682c0e25",
+              "normal": "c91f6d093288b9e4284433827e25974b5c35ba2b53b07243f5bbedd76aa480cd",
+              "uv": "22f5058b7f71ed79d582e2e6a1502f3117785ac7ffcbee4400cb450f15e4b3c8",
+              "index": "a4ce72fc9152999ec28a74c0573936689b6bb3bed65e909e0bfcb0a557693d30"
+            },
+            "B_|_expressive_brow_1": {
+              "position": "b625a42bb4606f94500f8bf75a91180ddf96341f28b1ac074e70552d167ff598",
+              "normal": "c6caa331e68a116f52427c9cab144eb4a957b8a1c2143ca79cf29c60dcf13853",
+              "uv": "28f426cd5e9c615e22566e1ba2dc5e7c6e927f301d6bf244781a4a21a2622f7d",
+              "index": "7d9ab7486d60694af1a925ead9ba087afd4250250fc391e57448120d44233f73"
+            },
+            "B_|_quiet_smile": {
+              "position": "12afa270a7e34881d323410814e0fa72874812f1d6705b55a5531ee1b522eb5b",
+              "normal": "c4647abf3c0863ace50b02ae6005e5c52a7059bca5c73dcc35137186eb95d23d",
+              "uv": "28f426cd5e9c615e22566e1ba2dc5e7c6e927f301d6bf244781a4a21a2622f7d",
+              "index": "7d9ab7486d60694af1a925ead9ba087afd4250250fc391e57448120d44233f73"
+            },
+            "B_|_almond_gaze_-1": {
+              "position": "ab4f85078af68be7ba5f07d962b602a7b629c502d8baf9e028802aa4704b9972",
+              "normal": "989df4cd7a9c446d99ccea582a1f29e0516b99b8329425b3ac98f71d54105bdf",
+              "uv": "22f5058b7f71ed79d582e2e6a1502f3117785ac7ffcbee4400cb450f15e4b3c8",
+              "index": "07d447b917012005f420be2c44775232c45500da2d1edfba73c1f3ffe2785ccc"
+            },
+            "B_|_almond_gaze_1": {
+              "position": "ab4f85078af68be7ba5f07d962b602a7b629c502d8baf9e028802aa4704b9972",
+              "normal": "989df4cd7a9c446d99ccea582a1f29e0516b99b8329425b3ac98f71d54105bdf",
+              "uv": "22f5058b7f71ed79d582e2e6a1502f3117785ac7ffcbee4400cb450f15e4b3c8",
+              "index": "0fb4a437ba2cbf65ed2a78754f9922e6ebbd31afa7237d237b6f2ab04b3d7e40"
+            }
+          },
+          "bodyMorphs": [
+            0
+          ],
+          "bodyNativeTime": 0,
+          "bodyNativeReceiveShadow": false,
+          "groundNativeReceiveShadow": true,
+          "groundLinkedShadowMap": true,
+          "bodyNativeTransmission": 0.9800000190734863,
+          "bodyNativeThickness": 0.30000001192092896,
+          "bodyNativeTransmissionSampler": 4,
+          "bodyNativeTransmissionSize": [
+            640,
+            760
+          ],
+          "camera": {
+            "position": [
+              0,
+              1.7,
+              5.7
+            ],
+            "world": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0.9967594336616964,
+              -0.0804402349972597,
+              0,
+              0,
+              0.0804402349972597,
+              0.9967594336616964,
+              0,
+              0,
+              1.7,
+              5.7,
+              1
+            ],
+            "projection": [
+              3.44875041724004,
+              0,
+              0,
+              0,
+              0,
+              2.9042108776758226,
+              0,
+              0,
+              0,
+              0,
+              -1.005012531328321,
+              -1,
+              0,
+              0,
+              -0.2005012531328321,
+              0
+            ]
+          },
+          "shadows": {
+            "enabled": true,
+            "type": 1,
+            "keyCast": true,
+            "mapSize": [
+              1024,
+              1024
+            ],
+            "bias": -0.0002,
+            "groundReceive": true
+          },
+          "passes": [
+            {
+              "mesh": "B_|_almond_gaze_-1",
+              "target": null,
+              "material": "Deep teal expression",
+              "transparent": true,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_almond_gaze_1",
+              "target": null,
+              "material": "Deep teal expression",
+              "transparent": true,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_quiet_smile",
+              "target": null,
+              "material": "Deep teal expression",
+              "transparent": true,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_small_eye_glint_-1",
+              "target": null,
+              "material": "Soft glint",
+              "transparent": true,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_small_eye_glint_1",
+              "target": null,
+              "material": "Soft glint",
+              "transparent": true,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_expressive_brow_-1",
+              "target": null,
+              "material": "Deep teal expression",
+              "transparent": true,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_expressive_brow_1",
+              "target": null,
+              "material": "Deep teal expression",
+              "transparent": true,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            }
+          ],
+          "errors": [],
+          "glError": 0,
+          "webgl": {
+            "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+            "renderer": "WebKit WebGL",
+            "vendor": "WebKit"
+          },
+          "draws": 72,
+          "file": "계해-high-0.00000-full-0.000-1-original.png",
+          "pngSHA256": "ca951f8c89b9496ce306b967d2b0797e5fee30d04dfba913f14eaedf8192b75d"
+        }
+      ],
+      "diffs": []
+    },
+    {
+      "loaded": {
+        "day": "계해",
+        "quality": "high",
+        "faceNames": [
+          "B_|_small_eye_glint_-1",
+          "B_|_expressive_brow_-1",
+          "B_|_small_eye_glint_1",
+          "B_|_expressive_brow_1",
+          "B_|_quiet_smile",
+          "B_|_almond_gaze_-1",
+          "B_|_almond_gaze_1"
+        ],
+        "bodyReceiveShadow": false,
+        "bodyMaterial": {
+          "transmission": 0.98,
+          "thickness": 0.3
+        }
+      },
+      "close": true,
+      "states": [
+        {
+          "day": "계해",
+          "quality": "high",
+          "mode": "original",
+          "time": 0,
+          "close": true,
+          "angle": 0,
+          "pixelRatio": 1,
+          "size": [
+            640,
+            760
+          ],
+          "pixels": "9234a9ed82d400c6fc33db1092bb74dc6e2766a0b928b0628ec138eeb7ecddd2",
+          "meshes": [
+            {
+              "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.42,
+                0,
+                0,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  -503.53198298132315,
+                  -447.71595609393466
+                ],
+                "max": [
+                  1143.5412543009975,
+                  1851.3008862430804
+                ]
+              },
+              "material": [
+                {
+                  "name": "癸 · Dew water",
+                  "type": "MeshPhysicalMaterial",
+                  "transparent": false,
+                  "side": 0,
+                  "forceSinglePass": false,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0.98,
+                  "thickness": 0.3
+                }
+              ]
+            },
+            {
+              "name": "B_|_small_eye_glint_-1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                -0.25999999046325684,
+                1.777999997138977,
+                0.48069074749946594
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.6799999904632568,
+                1.777999997138977,
+                0.648932509124279,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  149.27033625765694,
+                  360.352914565148
+                ],
+                "max": [
+                  172.1335771810101,
+                  382.84281969800924
+                ]
+              },
+              "material": [
+                {
+                  "name": "Soft glint",
+                  "type": "MeshStandardMaterial",
+                  "transparent": true,
+                  "side": 2,
+                  "forceSinglePass": true,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_expressive_brow_-1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.42,
+                0,
+                0,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  94.68145601713476,
+                  251.74345260982275
+                ],
+                "max": [
+                  247.96726457938544,
+                  288.61740444439835
+                ]
+              },
+              "material": [
+                {
+                  "name": "Deep teal expression",
+                  "type": "MeshStandardMaterial",
+                  "transparent": true,
+                  "side": 2,
+                  "forceSinglePass": true,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_small_eye_glint_1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0.20999999344348907,
+                1.777999997138977,
+                0.4807272255420685
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.2100000065565109,
+                1.777999997138977,
+                0.6489817544817925,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  437.4444270808873,
+                  360.3536427979969
+                ],
+                "max": [
+                  459.9158855341514,
+                  382.8441735763333
+                ]
+              },
+              "material": [
+                {
+                  "name": "Soft glint",
+                  "type": "MeshStandardMaterial",
+                  "transparent": true,
+                  "side": 2,
+                  "forceSinglePass": true,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_expressive_brow_1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.42,
+                0,
+                0,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  384.7190368574647,
+                  236.0577173998908
+                ],
+                "max": [
+                  540.114276077509,
+                  288.13194882503126
+                ]
+              },
+              "material": [
+                {
+                  "name": "Deep teal expression",
+                  "type": "MeshStandardMaterial",
+                  "transparent": true,
+                  "side": 2,
+                  "forceSinglePass": true,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_quiet_smile",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.42,
+                0,
+                0,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  244.58408151438974,
+                  477.50895754383276
+                ],
+                "max": [
+                  401.9684402272779,
+                  515.945889918505
+                ]
+              },
+              "material": [
+                {
+                  "name": "Deep teal expression",
+                  "type": "MeshStandardMaterial",
+                  "transparent": true,
+                  "side": 2,
+                  "forceSinglePass": true,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_almond_gaze_-1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                -0.23499999940395355,
+                1.7599999904632568,
+                0.4536909759044647
+              ],
+              "scale": [
+                0.11800000071525574,
+                0.05700000002980232,
+                0.028999999165534973
+              ],
+              "matrix": [
+                0.11741049222272172,
+                -0.011780343259846721,
+                0,
+                0,
+                0.005690504763493039,
+                0.0567152374544775,
+                0,
+                0,
+                0,
+                0,
+                0.039149998873472217,
+                0,
+                -0.6549999994039535,
+                1.7599999904632568,
+                0.6124828174710274,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  100.10951921382159,
+                  340.3082165493432
+                ],
+                "max": [
+                  254.356617329573,
+                  424.50486136789976
+                ]
+              },
+              "material": [
+                {
+                  "name": "Deep teal expression",
+                  "type": "MeshStandardMaterial",
+                  "transparent": true,
+                  "side": 2,
+                  "forceSinglePass": true,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_almond_gaze_1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0.23499999940395355,
+                1.7599999904632568,
+                0.45372721552848816
+              ],
+              "scale": [
+                0.11800000071525574,
+                0.05700000002980232,
+                0.028999999165534973
+              ],
+              "matrix": [
+                0.11741049222272172,
+                0.011780343259846721,
+                0,
+                0,
+                -0.005690504763493039,
+                0.0567152374544775,
+                0,
+                0,
+                0,
+                0,
+                0.039149998873472217,
+                0,
+                -0.18500000059604643,
+                1.7599999904632568,
+                0.6125317409634591,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  385.6451334840764,
+                  340.3083885957002
+                ],
+                "max": [
+                  539.8965086360636,
+                  424.50732298931837
+                ]
+              },
+              "material": [
+                {
+                  "name": "Deep teal expression",
+                  "type": "MeshStandardMaterial",
+                  "transparent": true,
+                  "side": 2,
+                  "forceSinglePass": true,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "ActualSurfaceSlidingDew",
+              "castShadow": false,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.42,
+                0,
+                0,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  -236.7334770084836,
+                  152.9110184975525
+                ],
+                "max": [
+                  804.64270062934,
+                  2704.2470044358483
+                ]
+              },
+              "material": [
+                {
+                  "name": "癸 · clear surface condensation",
+                  "type": "MeshPhysicalMaterial",
+                  "transparent": false,
+                  "side": 0,
+                  "forceSinglePass": false,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0.97,
+                  "thickness": 0.025677206128835683
+                }
+              ]
+            }
+          ],
+          "geometryHashes": {
+            "B_candidate5_reconstructed_|_seamless_body_and_mittens": {
+              "position": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+              "normal": "80706bee870329a0829113e63ed178f0a904029265da2c96c69ad50f9b1f9cec",
+              "uv": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+              "stemRestPosition": "e1a4510de093384f0cb4f6d15c02bb941744d10406bd6d54b7889c746108e257",
+              "stemRestNormal": "4952dbc1c125087c1a15261b0d1147fd9fe31bfa2877ff49e025d462bf35f530",
+              "stemLocalBrushAxis": "4338236bc55b54d79da35af194ad20e035e6ace08283ab409015ad567b254410",
+              "stemLocalBrushSide": "80105553583026e49df09dcb2ef5f6443dc9f6c7084573245a1bcba62ebd3e63",
+              "index": "934286d3bdd9361657e390c41762923871cec85a48a7d9775b362aee02dc7830"
+            },
+            "B_|_small_eye_glint_-1": {
+              "position": "31d63b82449328a1454c8ffbac35522f996c58082325eb579f9fdb93682c0e25",
+              "normal": "c91f6d093288b9e4284433827e25974b5c35ba2b53b07243f5bbedd76aa480cd",
+              "uv": "22f5058b7f71ed79d582e2e6a1502f3117785ac7ffcbee4400cb450f15e4b3c8",
+              "index": "a22daa4a67dfd2d521f715bbbbd647427adcae4150dc5073974eb077b222367f"
+            },
+            "B_|_expressive_brow_-1": {
+              "position": "a7d026e4bf8e29ddaf2bc088699ab0a646bf4b50c4d1c1518fc3321d64280dd0",
+              "normal": "d67cb1f7e68afcffd73f6ce1feb38fa2ee775bb60727cac2bc7acdced2ac2588",
+              "uv": "28f426cd5e9c615e22566e1ba2dc5e7c6e927f301d6bf244781a4a21a2622f7d",
+              "index": "7d9ab7486d60694af1a925ead9ba087afd4250250fc391e57448120d44233f73"
+            },
+            "B_|_small_eye_glint_1": {
+              "position": "31d63b82449328a1454c8ffbac35522f996c58082325eb579f9fdb93682c0e25",
+              "normal": "c91f6d093288b9e4284433827e25974b5c35ba2b53b07243f5bbedd76aa480cd",
+              "uv": "22f5058b7f71ed79d582e2e6a1502f3117785ac7ffcbee4400cb450f15e4b3c8",
+              "index": "a4ce72fc9152999ec28a74c0573936689b6bb3bed65e909e0bfcb0a557693d30"
+            },
+            "B_|_expressive_brow_1": {
+              "position": "b625a42bb4606f94500f8bf75a91180ddf96341f28b1ac074e70552d167ff598",
+              "normal": "c6caa331e68a116f52427c9cab144eb4a957b8a1c2143ca79cf29c60dcf13853",
+              "uv": "28f426cd5e9c615e22566e1ba2dc5e7c6e927f301d6bf244781a4a21a2622f7d",
+              "index": "7d9ab7486d60694af1a925ead9ba087afd4250250fc391e57448120d44233f73"
+            },
+            "B_|_quiet_smile": {
+              "position": "12afa270a7e34881d323410814e0fa72874812f1d6705b55a5531ee1b522eb5b",
+              "normal": "c4647abf3c0863ace50b02ae6005e5c52a7059bca5c73dcc35137186eb95d23d",
+              "uv": "28f426cd5e9c615e22566e1ba2dc5e7c6e927f301d6bf244781a4a21a2622f7d",
+              "index": "7d9ab7486d60694af1a925ead9ba087afd4250250fc391e57448120d44233f73"
+            },
+            "B_|_almond_gaze_-1": {
+              "position": "ab4f85078af68be7ba5f07d962b602a7b629c502d8baf9e028802aa4704b9972",
+              "normal": "989df4cd7a9c446d99ccea582a1f29e0516b99b8329425b3ac98f71d54105bdf",
+              "uv": "22f5058b7f71ed79d582e2e6a1502f3117785ac7ffcbee4400cb450f15e4b3c8",
+              "index": "07d447b917012005f420be2c44775232c45500da2d1edfba73c1f3ffe2785ccc"
+            },
+            "B_|_almond_gaze_1": {
+              "position": "ab4f85078af68be7ba5f07d962b602a7b629c502d8baf9e028802aa4704b9972",
+              "normal": "989df4cd7a9c446d99ccea582a1f29e0516b99b8329425b3ac98f71d54105bdf",
+              "uv": "22f5058b7f71ed79d582e2e6a1502f3117785ac7ffcbee4400cb450f15e4b3c8",
+              "index": "0fb4a437ba2cbf65ed2a78754f9922e6ebbd31afa7237d237b6f2ab04b3d7e40"
+            }
+          },
+          "bodyMorphs": [
+            0
+          ],
+          "bodyNativeTime": 0,
+          "bodyNativeReceiveShadow": false,
+          "groundNativeReceiveShadow": true,
+          "groundLinkedShadowMap": true,
+          "bodyNativeTransmission": 0.9800000190734863,
+          "bodyNativeThickness": 0.30000001192092896,
+          "bodyNativeTransmissionSampler": 4,
+          "bodyNativeTransmissionSize": [
+            640,
+            760
+          ],
+          "camera": {
+            "position": [
+              -0.42,
+              1.84,
+              2.45
+            ],
+            "world": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0.9991147502967768,
+              -0.04206798948618011,
+              0,
+              0,
+              0.04206798948618011,
+              0.9991147502967768,
+              0,
+              -0.42,
+              1.84,
+              2.45,
+              1
+            ],
+            "projection": [
+              3.44875041724004,
+              0,
+              0,
+              0,
+              0,
+              2.9042108776758226,
+              0,
+              0,
+              0,
+              0,
+              -1.005012531328321,
+              -1,
+              0,
+              0,
+              -0.2005012531328321,
+              0
+            ]
+          },
+          "shadows": {
+            "enabled": true,
+            "type": 1,
+            "keyCast": true,
+            "mapSize": [
+              1024,
+              1024
+            ],
+            "bias": -0.0002,
+            "groundReceive": true
+          },
+          "passes": [
+            {
+              "mesh": "B_|_almond_gaze_-1",
+              "target": null,
+              "material": "Deep teal expression",
+              "transparent": true,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_almond_gaze_1",
+              "target": null,
+              "material": "Deep teal expression",
+              "transparent": true,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_quiet_smile",
+              "target": null,
+              "material": "Deep teal expression",
+              "transparent": true,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_expressive_brow_-1",
+              "target": null,
+              "material": "Deep teal expression",
+              "transparent": true,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_expressive_brow_1",
+              "target": null,
+              "material": "Deep teal expression",
+              "transparent": true,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_small_eye_glint_-1",
+              "target": null,
+              "material": "Soft glint",
+              "transparent": true,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_small_eye_glint_1",
+              "target": null,
+              "material": "Soft glint",
+              "transparent": true,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            }
+          ],
+          "errors": [],
+          "glError": 0,
+          "webgl": {
+            "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+            "renderer": "WebKit WebGL",
+            "vendor": "WebKit"
+          },
+          "draws": 36,
+          "file": "계해-high-0.00000-close-0.000-1-original.png",
+          "pngSHA256": "be0a34daab12cc825333cd96dd873de0ffe7bcac7473ccb558f4480187e4873e"
+        }
+      ],
+      "diffs": []
+    },
+    {
+      "loaded": {
+        "day": "신해",
+        "quality": "high",
+        "faceNames": [
+          "B_|_small_eye_glint_-1",
+          "B_|_expressive_brow_-1",
+          "B_|_small_eye_glint_1",
+          "B_|_expressive_brow_1",
+          "B_|_quiet_smile",
+          "B_|_almond_gaze_-1",
+          "B_|_almond_gaze_1"
+        ],
+        "bodyReceiveShadow": false,
+        "bodyMaterial": {
+          "transmission": 0,
+          "thickness": 0
+        }
+      },
+      "close": false,
+      "states": [
+        {
+          "day": "신해",
+          "quality": "high",
+          "mode": "original",
+          "time": 0,
+          "close": false,
+          "angle": 0,
+          "pixelRatio": 1,
+          "size": [
+            640,
+            760
+          ],
+          "pixels": "5bbb27979db7fa5bf5a0ac95fcb054a0cd97f2ba940731bf1b05bb9cc2107dca",
+          "meshes": [
+            {
+              "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.42,
+                0,
+                0,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  -58.30737618325159,
+                  -9.747545037944136
+                ],
+                "max": [
+                  506.75051801869614,
+                  798.4018311973751
+                ]
+              },
+              "material": [
+                {
+                  "name": "辛 · Liquid silver",
+                  "type": "MeshPhysicalMaterial",
+                  "transparent": false,
+                  "side": 0,
+                  "forceSinglePass": false,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_small_eye_glint_-1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                -0.25999999046325684,
+                1.777999997138977,
+                0.48069074749946594
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.6799999904632568,
+                1.777999997138977,
+                0.648932509124279,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  166.65534906135633,
+                  269.748227175704
+                ],
+                "max": [
+                  174.8423989595938,
+                  277.75839107755786
+                ]
+              },
+              "material": [
+                {
+                  "name": "Soft glint",
+                  "type": "MeshStandardMaterial",
+                  "transparent": false,
+                  "side": 2,
+                  "forceSinglePass": false,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_expressive_brow_-1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.42,
+                0,
+                0,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  147.2340597626176,
+                  230.81513775158345
+                ],
+                "max": [
+                  202.28466651970882,
+                  243.94398241067378
+                ]
+              },
+              "material": [
+                {
+                  "name": "Deep teal expression",
+                  "type": "MeshStandardMaterial",
+                  "transparent": false,
+                  "side": 2,
+                  "forceSinglePass": false,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_small_eye_glint_1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0.20999999344348907,
+                1.777999997138977,
+                0.4807272255420685
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.2100000065565109,
+                1.777999997138977,
+                0.6489817544817925,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  270.05799679566746,
+                  269.74801982727246
+                ],
+                "max": [
+                  277.74405482277655,
+                  277.7582627377074
+                ]
+              },
+              "material": [
+                {
+                  "name": "Soft glint",
+                  "type": "MeshStandardMaterial",
+                  "transparent": false,
+                  "side": 2,
+                  "forceSinglePass": false,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_expressive_brow_1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.42,
+                0,
+                0,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  250.9166208327562,
+                  225.2461882751249
+                ],
+                "max": [
+                  305.0466351151228,
+                  243.76636896566703
+                ]
+              },
+              "material": [
+                {
+                  "name": "Deep teal expression",
+                  "type": "MeshStandardMaterial",
+                  "transparent": false,
+                  "side": 2,
+                  "forceSinglePass": false,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_quiet_smile",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.42,
+                0,
+                0,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  200.8729737063387,
+                  312.56558883122256
+                ],
+                "max": [
+                  257.5709931563339,
+                  325.3667146762481
+                ]
+              },
+              "material": [
+                {
+                  "name": "Deep teal expression",
+                  "type": "MeshStandardMaterial",
+                  "transparent": false,
+                  "side": 2,
+                  "forceSinglePass": false,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_almond_gaze_-1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                -0.23499999940395355,
+                1.7599999904632568,
+                0.4536909759044647
+              ],
+              "scale": [
+                0.11800000071525574,
+                0.05700000002980232,
+                0.028999999165534973
+              ],
+              "matrix": [
+                0.11741049222272172,
+                -0.011780343259846721,
+                0,
+                0,
+                0.005690504763493039,
+                0.0567152374544775,
+                0,
+                0,
+                0,
+                0,
+                0.039149998873472217,
+                0,
+                -0.6549999994039535,
+                1.7599999904632568,
+                0.6124828174710274,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  148.99872037801822,
+                  262.6065778474739
+                ],
+                "max": [
+                  205.14301874603262,
+                  292.8065554553126
+                ]
+              },
+              "material": [
+                {
+                  "name": "Deep teal expression",
+                  "type": "MeshStandardMaterial",
+                  "transparent": false,
+                  "side": 2,
+                  "forceSinglePass": false,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_almond_gaze_1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0.23499999940395355,
+                1.7599999904632568,
+                0.45372721552848816
+              ],
+              "scale": [
+                0.11800000071525574,
+                0.05700000002980232,
+                0.028999999165534973
+              ],
+              "matrix": [
+                0.11741049222272172,
+                0.011780343259846721,
+                0,
+                0,
+                -0.005690504763493039,
+                0.0567152374544775,
+                0,
+                0,
+                0,
+                0,
+                0.039149998873472217,
+                0,
+                -0.18500000059604643,
+                1.7599999904632568,
+                0.6125317409634591,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  252.28878364783895,
+                  262.60630101922953
+                ],
+                "max": [
+                  306.6335449877873,
+                  292.80657186662313
+                ]
+              },
+              "material": [
+                {
+                  "name": "Deep teal expression",
+                  "type": "MeshStandardMaterial",
+                  "transparent": false,
+                  "side": 2,
+                  "forceSinglePass": false,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            }
+          ],
+          "geometryHashes": {
+            "B_candidate5_reconstructed_|_seamless_body_and_mittens": {
+              "position": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+              "normal": "80706bee870329a0829113e63ed178f0a904029265da2c96c69ad50f9b1f9cec",
+              "uv": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+              "stemRestPosition": "e1a4510de093384f0cb4f6d15c02bb941744d10406bd6d54b7889c746108e257",
+              "stemRestNormal": "4952dbc1c125087c1a15261b0d1147fd9fe31bfa2877ff49e025d462bf35f530",
+              "stemLocalBrushAxis": "4338236bc55b54d79da35af194ad20e035e6ace08283ab409015ad567b254410",
+              "stemLocalBrushSide": "80105553583026e49df09dcb2ef5f6443dc9f6c7084573245a1bcba62ebd3e63",
+              "index": "934286d3bdd9361657e390c41762923871cec85a48a7d9775b362aee02dc7830"
+            },
+            "B_|_small_eye_glint_-1": {
+              "position": "31d63b82449328a1454c8ffbac35522f996c58082325eb579f9fdb93682c0e25",
+              "normal": "c91f6d093288b9e4284433827e25974b5c35ba2b53b07243f5bbedd76aa480cd",
+              "uv": "22f5058b7f71ed79d582e2e6a1502f3117785ac7ffcbee4400cb450f15e4b3c8",
+              "index": "a22daa4a67dfd2d521f715bbbbd647427adcae4150dc5073974eb077b222367f"
+            },
+            "B_|_expressive_brow_-1": {
+              "position": "a7d026e4bf8e29ddaf2bc088699ab0a646bf4b50c4d1c1518fc3321d64280dd0",
+              "normal": "d67cb1f7e68afcffd73f6ce1feb38fa2ee775bb60727cac2bc7acdced2ac2588",
+              "uv": "28f426cd5e9c615e22566e1ba2dc5e7c6e927f301d6bf244781a4a21a2622f7d",
+              "index": "7d9ab7486d60694af1a925ead9ba087afd4250250fc391e57448120d44233f73"
+            },
+            "B_|_small_eye_glint_1": {
+              "position": "31d63b82449328a1454c8ffbac35522f996c58082325eb579f9fdb93682c0e25",
+              "normal": "c91f6d093288b9e4284433827e25974b5c35ba2b53b07243f5bbedd76aa480cd",
+              "uv": "22f5058b7f71ed79d582e2e6a1502f3117785ac7ffcbee4400cb450f15e4b3c8",
+              "index": "a4ce72fc9152999ec28a74c0573936689b6bb3bed65e909e0bfcb0a557693d30"
+            },
+            "B_|_expressive_brow_1": {
+              "position": "b625a42bb4606f94500f8bf75a91180ddf96341f28b1ac074e70552d167ff598",
+              "normal": "c6caa331e68a116f52427c9cab144eb4a957b8a1c2143ca79cf29c60dcf13853",
+              "uv": "28f426cd5e9c615e22566e1ba2dc5e7c6e927f301d6bf244781a4a21a2622f7d",
+              "index": "7d9ab7486d60694af1a925ead9ba087afd4250250fc391e57448120d44233f73"
+            },
+            "B_|_quiet_smile": {
+              "position": "12afa270a7e34881d323410814e0fa72874812f1d6705b55a5531ee1b522eb5b",
+              "normal": "c4647abf3c0863ace50b02ae6005e5c52a7059bca5c73dcc35137186eb95d23d",
+              "uv": "28f426cd5e9c615e22566e1ba2dc5e7c6e927f301d6bf244781a4a21a2622f7d",
+              "index": "7d9ab7486d60694af1a925ead9ba087afd4250250fc391e57448120d44233f73"
+            },
+            "B_|_almond_gaze_-1": {
+              "position": "ab4f85078af68be7ba5f07d962b602a7b629c502d8baf9e028802aa4704b9972",
+              "normal": "989df4cd7a9c446d99ccea582a1f29e0516b99b8329425b3ac98f71d54105bdf",
+              "uv": "22f5058b7f71ed79d582e2e6a1502f3117785ac7ffcbee4400cb450f15e4b3c8",
+              "index": "07d447b917012005f420be2c44775232c45500da2d1edfba73c1f3ffe2785ccc"
+            },
+            "B_|_almond_gaze_1": {
+              "position": "ab4f85078af68be7ba5f07d962b602a7b629c502d8baf9e028802aa4704b9972",
+              "normal": "989df4cd7a9c446d99ccea582a1f29e0516b99b8329425b3ac98f71d54105bdf",
+              "uv": "22f5058b7f71ed79d582e2e6a1502f3117785ac7ffcbee4400cb450f15e4b3c8",
+              "index": "0fb4a437ba2cbf65ed2a78754f9922e6ebbd31afa7237d237b6f2ab04b3d7e40"
+            }
+          },
+          "bodyMorphs": [
+            0
+          ],
+          "bodyNativeTime": 0,
+          "bodyNativeReceiveShadow": false,
+          "groundNativeReceiveShadow": true,
+          "groundLinkedShadowMap": true,
+          "bodyNativeTransmission": null,
+          "bodyNativeThickness": null,
+          "bodyNativeTransmissionSampler": null,
+          "bodyNativeTransmissionSize": null,
+          "camera": {
+            "position": [
+              0,
+              1.7,
+              5.7
+            ],
+            "world": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0.9967594336616964,
+              -0.0804402349972597,
+              0,
+              0,
+              0.0804402349972597,
+              0.9967594336616964,
+              0,
+              0,
+              1.7,
+              5.7,
+              1
+            ],
+            "projection": [
+              3.44875041724004,
+              0,
+              0,
+              0,
+              0,
+              2.9042108776758226,
+              0,
+              0,
+              0,
+              0,
+              -1.005012531328321,
+              -1,
+              0,
+              0,
+              -0.2005012531328321,
+              0
+            ]
+          },
+          "shadows": {
+            "enabled": true,
+            "type": 1,
+            "keyCast": true,
+            "mapSize": [
+              1024,
+              1024
+            ],
+            "bias": -0.0002,
+            "groundReceive": true
+          },
+          "passes": [
+            {
+              "mesh": "B_|_small_eye_glint_1",
+              "target": null,
+              "material": "Soft glint",
+              "transparent": false,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_small_eye_glint_-1",
+              "target": null,
+              "material": "Soft glint",
+              "transparent": false,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_expressive_brow_1",
+              "target": null,
+              "material": "Deep teal expression",
+              "transparent": false,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_expressive_brow_-1",
+              "target": null,
+              "material": "Deep teal expression",
+              "transparent": false,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_quiet_smile",
+              "target": null,
+              "material": "Deep teal expression",
+              "transparent": false,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_almond_gaze_1",
+              "target": null,
+              "material": "Deep teal expression",
+              "transparent": false,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_almond_gaze_-1",
+              "target": null,
+              "material": "Deep teal expression",
+              "transparent": false,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            }
+          ],
+          "errors": [],
+          "glError": 0,
+          "webgl": {
+            "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+            "renderer": "WebKit WebGL",
+            "vendor": "WebKit"
+          },
+          "draws": 53,
+          "file": "신해-high-0.00000-full-0.000-1-original.png",
+          "pngSHA256": "8ca8a8d21932cbfbb893a5325c6ea0ccf38bfb90c851b48a62c9f1bcb5125adb"
+        }
+      ],
+      "diffs": []
+    },
+    {
+      "loaded": {
+        "day": "신해",
+        "quality": "high",
+        "faceNames": [
+          "B_|_small_eye_glint_-1",
+          "B_|_expressive_brow_-1",
+          "B_|_small_eye_glint_1",
+          "B_|_expressive_brow_1",
+          "B_|_quiet_smile",
+          "B_|_almond_gaze_-1",
+          "B_|_almond_gaze_1"
+        ],
+        "bodyReceiveShadow": false,
+        "bodyMaterial": {
+          "transmission": 0,
+          "thickness": 0
+        }
+      },
+      "close": true,
+      "states": [
+        {
+          "day": "신해",
+          "quality": "high",
+          "mode": "original",
+          "time": 0,
+          "close": true,
+          "angle": 0,
+          "pixelRatio": 1,
+          "size": [
+            640,
+            760
+          ],
+          "pixels": "f3c595b9b94a2184ea6c8950e16d613ae44e3167a58fda82920b4df7bb52f723",
+          "meshes": [
+            {
+              "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.42,
+                0,
+                0,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  -503.53198298132315,
+                  -447.71595609393466
+                ],
+                "max": [
+                  1143.5412543009975,
+                  1851.3008862430804
+                ]
+              },
+              "material": [
+                {
+                  "name": "辛 · Liquid silver",
+                  "type": "MeshPhysicalMaterial",
+                  "transparent": false,
+                  "side": 0,
+                  "forceSinglePass": false,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_small_eye_glint_-1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                -0.25999999046325684,
+                1.777999997138977,
+                0.48069074749946594
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.6799999904632568,
+                1.777999997138977,
+                0.648932509124279,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  149.27033625765694,
+                  360.352914565148
+                ],
+                "max": [
+                  172.1335771810101,
+                  382.84281969800924
+                ]
+              },
+              "material": [
+                {
+                  "name": "Soft glint",
+                  "type": "MeshStandardMaterial",
+                  "transparent": false,
+                  "side": 2,
+                  "forceSinglePass": false,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_expressive_brow_-1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.42,
+                0,
+                0,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  94.68145601713476,
+                  251.74345260982275
+                ],
+                "max": [
+                  247.96726457938544,
+                  288.61740444439835
+                ]
+              },
+              "material": [
+                {
+                  "name": "Deep teal expression",
+                  "type": "MeshStandardMaterial",
+                  "transparent": false,
+                  "side": 2,
+                  "forceSinglePass": false,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_small_eye_glint_1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0.20999999344348907,
+                1.777999997138977,
+                0.4807272255420685
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.2100000065565109,
+                1.777999997138977,
+                0.6489817544817925,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  437.4444270808873,
+                  360.3536427979969
+                ],
+                "max": [
+                  459.9158855341514,
+                  382.8441735763333
+                ]
+              },
+              "material": [
+                {
+                  "name": "Soft glint",
+                  "type": "MeshStandardMaterial",
+                  "transparent": false,
+                  "side": 2,
+                  "forceSinglePass": false,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_expressive_brow_1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.42,
+                0,
+                0,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  384.7190368574647,
+                  236.0577173998908
+                ],
+                "max": [
+                  540.114276077509,
+                  288.13194882503126
+                ]
+              },
+              "material": [
+                {
+                  "name": "Deep teal expression",
+                  "type": "MeshStandardMaterial",
+                  "transparent": false,
+                  "side": 2,
+                  "forceSinglePass": false,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_quiet_smile",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.42,
+                0,
+                0,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  244.58408151438974,
+                  477.50895754383276
+                ],
+                "max": [
+                  401.9684402272779,
+                  515.945889918505
+                ]
+              },
+              "material": [
+                {
+                  "name": "Deep teal expression",
+                  "type": "MeshStandardMaterial",
+                  "transparent": false,
+                  "side": 2,
+                  "forceSinglePass": false,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_almond_gaze_-1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                -0.23499999940395355,
+                1.7599999904632568,
+                0.4536909759044647
+              ],
+              "scale": [
+                0.11800000071525574,
+                0.05700000002980232,
+                0.028999999165534973
+              ],
+              "matrix": [
+                0.11741049222272172,
+                -0.011780343259846721,
+                0,
+                0,
+                0.005690504763493039,
+                0.0567152374544775,
+                0,
+                0,
+                0,
+                0,
+                0.039149998873472217,
+                0,
+                -0.6549999994039535,
+                1.7599999904632568,
+                0.6124828174710274,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  100.10951921382159,
+                  340.3082165493432
+                ],
+                "max": [
+                  254.356617329573,
+                  424.50486136789976
+                ]
+              },
+              "material": [
+                {
+                  "name": "Deep teal expression",
+                  "type": "MeshStandardMaterial",
+                  "transparent": false,
+                  "side": 2,
+                  "forceSinglePass": false,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_almond_gaze_1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0.23499999940395355,
+                1.7599999904632568,
+                0.45372721552848816
+              ],
+              "scale": [
+                0.11800000071525574,
+                0.05700000002980232,
+                0.028999999165534973
+              ],
+              "matrix": [
+                0.11741049222272172,
+                0.011780343259846721,
+                0,
+                0,
+                -0.005690504763493039,
+                0.0567152374544775,
+                0,
+                0,
+                0,
+                0,
+                0.039149998873472217,
+                0,
+                -0.18500000059604643,
+                1.7599999904632568,
+                0.6125317409634591,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  385.6451334840764,
+                  340.3083885957002
+                ],
+                "max": [
+                  539.8965086360636,
+                  424.50732298931837
+                ]
+              },
+              "material": [
+                {
+                  "name": "Deep teal expression",
+                  "type": "MeshStandardMaterial",
+                  "transparent": false,
+                  "side": 2,
+                  "forceSinglePass": false,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            }
+          ],
+          "geometryHashes": {
+            "B_candidate5_reconstructed_|_seamless_body_and_mittens": {
+              "position": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+              "normal": "80706bee870329a0829113e63ed178f0a904029265da2c96c69ad50f9b1f9cec",
+              "uv": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+              "stemRestPosition": "e1a4510de093384f0cb4f6d15c02bb941744d10406bd6d54b7889c746108e257",
+              "stemRestNormal": "4952dbc1c125087c1a15261b0d1147fd9fe31bfa2877ff49e025d462bf35f530",
+              "stemLocalBrushAxis": "4338236bc55b54d79da35af194ad20e035e6ace08283ab409015ad567b254410",
+              "stemLocalBrushSide": "80105553583026e49df09dcb2ef5f6443dc9f6c7084573245a1bcba62ebd3e63",
+              "index": "934286d3bdd9361657e390c41762923871cec85a48a7d9775b362aee02dc7830"
+            },
+            "B_|_small_eye_glint_-1": {
+              "position": "31d63b82449328a1454c8ffbac35522f996c58082325eb579f9fdb93682c0e25",
+              "normal": "c91f6d093288b9e4284433827e25974b5c35ba2b53b07243f5bbedd76aa480cd",
+              "uv": "22f5058b7f71ed79d582e2e6a1502f3117785ac7ffcbee4400cb450f15e4b3c8",
+              "index": "a22daa4a67dfd2d521f715bbbbd647427adcae4150dc5073974eb077b222367f"
+            },
+            "B_|_expressive_brow_-1": {
+              "position": "a7d026e4bf8e29ddaf2bc088699ab0a646bf4b50c4d1c1518fc3321d64280dd0",
+              "normal": "d67cb1f7e68afcffd73f6ce1feb38fa2ee775bb60727cac2bc7acdced2ac2588",
+              "uv": "28f426cd5e9c615e22566e1ba2dc5e7c6e927f301d6bf244781a4a21a2622f7d",
+              "index": "7d9ab7486d60694af1a925ead9ba087afd4250250fc391e57448120d44233f73"
+            },
+            "B_|_small_eye_glint_1": {
+              "position": "31d63b82449328a1454c8ffbac35522f996c58082325eb579f9fdb93682c0e25",
+              "normal": "c91f6d093288b9e4284433827e25974b5c35ba2b53b07243f5bbedd76aa480cd",
+              "uv": "22f5058b7f71ed79d582e2e6a1502f3117785ac7ffcbee4400cb450f15e4b3c8",
+              "index": "a4ce72fc9152999ec28a74c0573936689b6bb3bed65e909e0bfcb0a557693d30"
+            },
+            "B_|_expressive_brow_1": {
+              "position": "b625a42bb4606f94500f8bf75a91180ddf96341f28b1ac074e70552d167ff598",
+              "normal": "c6caa331e68a116f52427c9cab144eb4a957b8a1c2143ca79cf29c60dcf13853",
+              "uv": "28f426cd5e9c615e22566e1ba2dc5e7c6e927f301d6bf244781a4a21a2622f7d",
+              "index": "7d9ab7486d60694af1a925ead9ba087afd4250250fc391e57448120d44233f73"
+            },
+            "B_|_quiet_smile": {
+              "position": "12afa270a7e34881d323410814e0fa72874812f1d6705b55a5531ee1b522eb5b",
+              "normal": "c4647abf3c0863ace50b02ae6005e5c52a7059bca5c73dcc35137186eb95d23d",
+              "uv": "28f426cd5e9c615e22566e1ba2dc5e7c6e927f301d6bf244781a4a21a2622f7d",
+              "index": "7d9ab7486d60694af1a925ead9ba087afd4250250fc391e57448120d44233f73"
+            },
+            "B_|_almond_gaze_-1": {
+              "position": "ab4f85078af68be7ba5f07d962b602a7b629c502d8baf9e028802aa4704b9972",
+              "normal": "989df4cd7a9c446d99ccea582a1f29e0516b99b8329425b3ac98f71d54105bdf",
+              "uv": "22f5058b7f71ed79d582e2e6a1502f3117785ac7ffcbee4400cb450f15e4b3c8",
+              "index": "07d447b917012005f420be2c44775232c45500da2d1edfba73c1f3ffe2785ccc"
+            },
+            "B_|_almond_gaze_1": {
+              "position": "ab4f85078af68be7ba5f07d962b602a7b629c502d8baf9e028802aa4704b9972",
+              "normal": "989df4cd7a9c446d99ccea582a1f29e0516b99b8329425b3ac98f71d54105bdf",
+              "uv": "22f5058b7f71ed79d582e2e6a1502f3117785ac7ffcbee4400cb450f15e4b3c8",
+              "index": "0fb4a437ba2cbf65ed2a78754f9922e6ebbd31afa7237d237b6f2ab04b3d7e40"
+            }
+          },
+          "bodyMorphs": [
+            0
+          ],
+          "bodyNativeTime": 0,
+          "bodyNativeReceiveShadow": false,
+          "groundNativeReceiveShadow": true,
+          "groundLinkedShadowMap": true,
+          "bodyNativeTransmission": null,
+          "bodyNativeThickness": null,
+          "bodyNativeTransmissionSampler": null,
+          "bodyNativeTransmissionSize": null,
+          "camera": {
+            "position": [
+              -0.42,
+              1.84,
+              2.45
+            ],
+            "world": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0.9991147502967768,
+              -0.04206798948618011,
+              0,
+              0,
+              0.04206798948618011,
+              0.9991147502967768,
+              0,
+              -0.42,
+              1.84,
+              2.45,
+              1
+            ],
+            "projection": [
+              3.44875041724004,
+              0,
+              0,
+              0,
+              0,
+              2.9042108776758226,
+              0,
+              0,
+              0,
+              0,
+              -1.005012531328321,
+              -1,
+              0,
+              0,
+              -0.2005012531328321,
+              0
+            ]
+          },
+          "shadows": {
+            "enabled": true,
+            "type": 1,
+            "keyCast": true,
+            "mapSize": [
+              1024,
+              1024
+            ],
+            "bias": -0.0002,
+            "groundReceive": true
+          },
+          "passes": [
+            {
+              "mesh": "B_|_small_eye_glint_1",
+              "target": null,
+              "material": "Soft glint",
+              "transparent": false,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_small_eye_glint_-1",
+              "target": null,
+              "material": "Soft glint",
+              "transparent": false,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_expressive_brow_1",
+              "target": null,
+              "material": "Deep teal expression",
+              "transparent": false,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_expressive_brow_-1",
+              "target": null,
+              "material": "Deep teal expression",
+              "transparent": false,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_quiet_smile",
+              "target": null,
+              "material": "Deep teal expression",
+              "transparent": false,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_almond_gaze_1",
+              "target": null,
+              "material": "Deep teal expression",
+              "transparent": false,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_almond_gaze_-1",
+              "target": null,
+              "material": "Deep teal expression",
+              "transparent": false,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            }
+          ],
+          "errors": [],
+          "glError": 0,
+          "webgl": {
+            "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+            "renderer": "WebKit WebGL",
+            "vendor": "WebKit"
+          },
+          "draws": 35,
+          "file": "신해-high-0.00000-close-0.000-1-original.png",
+          "pngSHA256": "ecff175aa32e1db4d05b56926bb6ec47c9004a6450d0de2ee0d7263e20a247f8"
+        }
+      ],
+      "diffs": []
+    },
+    {
+      "loaded": {
+        "day": "기사",
+        "quality": "high",
+        "faceNames": [
+          "B_|_small_eye_glint_-1",
+          "B_|_expressive_brow_-1",
+          "B_|_small_eye_glint_1",
+          "B_|_expressive_brow_1",
+          "B_|_quiet_smile",
+          "B_|_almond_gaze_-1",
+          "B_|_almond_gaze_1"
+        ],
+        "bodyReceiveShadow": false,
+        "bodyMaterial": {
+          "transmission": 0.14,
+          "thickness": 0
+        }
+      },
+      "close": false,
+      "states": [
+        {
+          "day": "기사",
+          "quality": "high",
+          "mode": "original",
+          "time": 0,
+          "close": false,
+          "angle": 0,
+          "pixelRatio": 1,
+          "size": [
+            640,
+            760
+          ],
+          "pixels": "40f78262a593bf369361af664e5d1673654ea6d31fc98e9c4d83142a1aaefd9e",
+          "meshes": [
+            {
+              "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.42,
+                0,
+                0,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  -58.30737618325159,
+                  -9.747545037944136
+                ],
+                "max": [
+                  506.75051801869614,
+                  798.4018311973751
+                ]
+              },
+              "material": [
+                {
+                  "name": "己 · Approved evolving jade v002",
+                  "type": "MeshPhysicalMaterial",
+                  "transparent": false,
+                  "side": 2,
+                  "forceSinglePass": false,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0.14,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_small_eye_glint_-1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                -0.25999999046325684,
+                1.777999997138977,
+                0.48069074749946594
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.6799999904632568,
+                1.777999997138977,
+                0.648932509124279,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  166.65534906135633,
+                  269.748227175704
+                ],
+                "max": [
+                  174.8423989595938,
+                  277.75839107755786
+                ]
+              },
+              "material": [
+                {
+                  "name": "Soft glint",
+                  "type": "MeshStandardMaterial",
+                  "transparent": false,
+                  "side": 2,
+                  "forceSinglePass": false,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_expressive_brow_-1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.42,
+                0,
+                0,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  147.2340597626176,
+                  230.81513775158345
+                ],
+                "max": [
+                  202.28466651970882,
+                  243.94398241067378
+                ]
+              },
+              "material": [
+                {
+                  "name": "Deep teal expression",
+                  "type": "MeshStandardMaterial",
+                  "transparent": false,
+                  "side": 2,
+                  "forceSinglePass": false,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_small_eye_glint_1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0.20999999344348907,
+                1.777999997138977,
+                0.4807272255420685
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.2100000065565109,
+                1.777999997138977,
+                0.6489817544817925,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  270.05799679566746,
+                  269.74801982727246
+                ],
+                "max": [
+                  277.74405482277655,
+                  277.7582627377074
+                ]
+              },
+              "material": [
+                {
+                  "name": "Soft glint",
+                  "type": "MeshStandardMaterial",
+                  "transparent": false,
+                  "side": 2,
+                  "forceSinglePass": false,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_expressive_brow_1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.42,
+                0,
+                0,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  250.9166208327562,
+                  225.2461882751249
+                ],
+                "max": [
+                  305.0466351151228,
+                  243.76636896566703
+                ]
+              },
+              "material": [
+                {
+                  "name": "Deep teal expression",
+                  "type": "MeshStandardMaterial",
+                  "transparent": false,
+                  "side": 2,
+                  "forceSinglePass": false,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_quiet_smile",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.42,
+                0,
+                0,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  200.8729737063387,
+                  312.56558883122256
+                ],
+                "max": [
+                  257.5709931563339,
+                  325.3667146762481
+                ]
+              },
+              "material": [
+                {
+                  "name": "Deep teal expression",
+                  "type": "MeshStandardMaterial",
+                  "transparent": false,
+                  "side": 2,
+                  "forceSinglePass": false,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_almond_gaze_-1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                -0.23499999940395355,
+                1.7599999904632568,
+                0.4536909759044647
+              ],
+              "scale": [
+                0.11800000071525574,
+                0.05700000002980232,
+                0.028999999165534973
+              ],
+              "matrix": [
+                0.11741049222272172,
+                -0.011780343259846721,
+                0,
+                0,
+                0.005690504763493039,
+                0.0567152374544775,
+                0,
+                0,
+                0,
+                0,
+                0.039149998873472217,
+                0,
+                -0.6549999994039535,
+                1.7599999904632568,
+                0.6124828174710274,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  148.99872037801822,
+                  262.6065778474739
+                ],
+                "max": [
+                  205.14301874603262,
+                  292.8065554553126
+                ]
+              },
+              "material": [
+                {
+                  "name": "Deep teal expression",
+                  "type": "MeshStandardMaterial",
+                  "transparent": false,
+                  "side": 2,
+                  "forceSinglePass": false,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_almond_gaze_1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0.23499999940395355,
+                1.7599999904632568,
+                0.45372721552848816
+              ],
+              "scale": [
+                0.11800000071525574,
+                0.05700000002980232,
+                0.028999999165534973
+              ],
+              "matrix": [
+                0.11741049222272172,
+                0.011780343259846721,
+                0,
+                0,
+                -0.005690504763493039,
+                0.0567152374544775,
+                0,
+                0,
+                0,
+                0,
+                0.039149998873472217,
+                0,
+                -0.18500000059604643,
+                1.7599999904632568,
+                0.6125317409634591,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  252.28878364783895,
+                  262.60630101922953
+                ],
+                "max": [
+                  306.6335449877873,
+                  292.80657186662313
+                ]
+              },
+              "material": [
+                {
+                  "name": "Deep teal expression",
+                  "type": "MeshStandardMaterial",
+                  "transparent": false,
+                  "side": 2,
+                  "forceSinglePass": false,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            }
+          ],
+          "geometryHashes": {
+            "B_candidate5_reconstructed_|_seamless_body_and_mittens": {
+              "position": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+              "normal": "80706bee870329a0829113e63ed178f0a904029265da2c96c69ad50f9b1f9cec",
+              "uv": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+              "index": "934286d3bdd9361657e390c41762923871cec85a48a7d9775b362aee02dc7830"
+            },
+            "B_|_small_eye_glint_-1": {
+              "position": "31d63b82449328a1454c8ffbac35522f996c58082325eb579f9fdb93682c0e25",
+              "normal": "c91f6d093288b9e4284433827e25974b5c35ba2b53b07243f5bbedd76aa480cd",
+              "uv": "22f5058b7f71ed79d582e2e6a1502f3117785ac7ffcbee4400cb450f15e4b3c8",
+              "index": "a22daa4a67dfd2d521f715bbbbd647427adcae4150dc5073974eb077b222367f"
+            },
+            "B_|_expressive_brow_-1": {
+              "position": "a7d026e4bf8e29ddaf2bc088699ab0a646bf4b50c4d1c1518fc3321d64280dd0",
+              "normal": "d67cb1f7e68afcffd73f6ce1feb38fa2ee775bb60727cac2bc7acdced2ac2588",
+              "uv": "28f426cd5e9c615e22566e1ba2dc5e7c6e927f301d6bf244781a4a21a2622f7d",
+              "index": "7d9ab7486d60694af1a925ead9ba087afd4250250fc391e57448120d44233f73"
+            },
+            "B_|_small_eye_glint_1": {
+              "position": "31d63b82449328a1454c8ffbac35522f996c58082325eb579f9fdb93682c0e25",
+              "normal": "c91f6d093288b9e4284433827e25974b5c35ba2b53b07243f5bbedd76aa480cd",
+              "uv": "22f5058b7f71ed79d582e2e6a1502f3117785ac7ffcbee4400cb450f15e4b3c8",
+              "index": "a4ce72fc9152999ec28a74c0573936689b6bb3bed65e909e0bfcb0a557693d30"
+            },
+            "B_|_expressive_brow_1": {
+              "position": "b625a42bb4606f94500f8bf75a91180ddf96341f28b1ac074e70552d167ff598",
+              "normal": "c6caa331e68a116f52427c9cab144eb4a957b8a1c2143ca79cf29c60dcf13853",
+              "uv": "28f426cd5e9c615e22566e1ba2dc5e7c6e927f301d6bf244781a4a21a2622f7d",
+              "index": "7d9ab7486d60694af1a925ead9ba087afd4250250fc391e57448120d44233f73"
+            },
+            "B_|_quiet_smile": {
+              "position": "12afa270a7e34881d323410814e0fa72874812f1d6705b55a5531ee1b522eb5b",
+              "normal": "c4647abf3c0863ace50b02ae6005e5c52a7059bca5c73dcc35137186eb95d23d",
+              "uv": "28f426cd5e9c615e22566e1ba2dc5e7c6e927f301d6bf244781a4a21a2622f7d",
+              "index": "7d9ab7486d60694af1a925ead9ba087afd4250250fc391e57448120d44233f73"
+            },
+            "B_|_almond_gaze_-1": {
+              "position": "ab4f85078af68be7ba5f07d962b602a7b629c502d8baf9e028802aa4704b9972",
+              "normal": "989df4cd7a9c446d99ccea582a1f29e0516b99b8329425b3ac98f71d54105bdf",
+              "uv": "22f5058b7f71ed79d582e2e6a1502f3117785ac7ffcbee4400cb450f15e4b3c8",
+              "index": "07d447b917012005f420be2c44775232c45500da2d1edfba73c1f3ffe2785ccc"
+            },
+            "B_|_almond_gaze_1": {
+              "position": "ab4f85078af68be7ba5f07d962b602a7b629c502d8baf9e028802aa4704b9972",
+              "normal": "989df4cd7a9c446d99ccea582a1f29e0516b99b8329425b3ac98f71d54105bdf",
+              "uv": "22f5058b7f71ed79d582e2e6a1502f3117785ac7ffcbee4400cb450f15e4b3c8",
+              "index": "0fb4a437ba2cbf65ed2a78754f9922e6ebbd31afa7237d237b6f2ab04b3d7e40"
+            }
+          },
+          "bodyMorphs": [
+            0
+          ],
+          "bodyNativeTime": null,
+          "bodyNativeReceiveShadow": false,
+          "groundNativeReceiveShadow": true,
+          "groundLinkedShadowMap": true,
+          "bodyNativeTransmission": 0.14000000059604645,
+          "bodyNativeThickness": 0,
+          "bodyNativeTransmissionSampler": 6,
+          "bodyNativeTransmissionSize": [
+            640,
+            760
+          ],
+          "camera": {
+            "position": [
+              0,
+              1.7,
+              5.7
+            ],
+            "world": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0.9967594336616964,
+              -0.0804402349972597,
+              0,
+              0,
+              0.0804402349972597,
+              0.9967594336616964,
+              0,
+              0,
+              1.7,
+              5.7,
+              1
+            ],
+            "projection": [
+              3.44875041724004,
+              0,
+              0,
+              0,
+              0,
+              2.9042108776758226,
+              0,
+              0,
+              0,
+              0,
+              -1.005012531328321,
+              -1,
+              0,
+              0,
+              -0.2005012531328321,
+              0
+            ]
+          },
+          "shadows": {
+            "enabled": true,
+            "type": 1,
+            "keyCast": true,
+            "mapSize": [
+              1024,
+              1024
+            ],
+            "bias": -0.0002,
+            "groundReceive": true
+          },
+          "passes": [
+            {
+              "mesh": "B_|_small_eye_glint_1",
+              "target": {
+                "width": 640,
+                "height": 760,
+                "type": 1016,
+                "colorSpace": "srgb-linear"
+              },
+              "material": "Soft glint",
+              "transparent": false,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_small_eye_glint_-1",
+              "target": {
+                "width": 640,
+                "height": 760,
+                "type": 1016,
+                "colorSpace": "srgb-linear"
+              },
+              "material": "Soft glint",
+              "transparent": false,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_expressive_brow_1",
+              "target": {
+                "width": 640,
+                "height": 760,
+                "type": 1016,
+                "colorSpace": "srgb-linear"
+              },
+              "material": "Deep teal expression",
+              "transparent": false,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_expressive_brow_-1",
+              "target": {
+                "width": 640,
+                "height": 760,
+                "type": 1016,
+                "colorSpace": "srgb-linear"
+              },
+              "material": "Deep teal expression",
+              "transparent": false,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_quiet_smile",
+              "target": {
+                "width": 640,
+                "height": 760,
+                "type": 1016,
+                "colorSpace": "srgb-linear"
+              },
+              "material": "Deep teal expression",
+              "transparent": false,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_almond_gaze_1",
+              "target": {
+                "width": 640,
+                "height": 760,
+                "type": 1016,
+                "colorSpace": "srgb-linear"
+              },
+              "material": "Deep teal expression",
+              "transparent": false,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_almond_gaze_-1",
+              "target": {
+                "width": 640,
+                "height": 760,
+                "type": 1016,
+                "colorSpace": "srgb-linear"
+              },
+              "material": "Deep teal expression",
+              "transparent": false,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_small_eye_glint_1",
+              "target": null,
+              "material": "Soft glint",
+              "transparent": false,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_small_eye_glint_-1",
+              "target": null,
+              "material": "Soft glint",
+              "transparent": false,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_expressive_brow_1",
+              "target": null,
+              "material": "Deep teal expression",
+              "transparent": false,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_expressive_brow_-1",
+              "target": null,
+              "material": "Deep teal expression",
+              "transparent": false,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_quiet_smile",
+              "target": null,
+              "material": "Deep teal expression",
+              "transparent": false,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_almond_gaze_1",
+              "target": null,
+              "material": "Deep teal expression",
+              "transparent": false,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_almond_gaze_-1",
+              "target": null,
+              "material": "Deep teal expression",
+              "transparent": false,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            }
+          ],
+          "errors": [],
+          "glError": 0,
+          "webgl": {
+            "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+            "renderer": "WebKit WebGL",
+            "vendor": "WebKit"
+          },
+          "draws": 55,
+          "file": "기사-high-0.00000-full-0.000-1-original.png",
+          "pngSHA256": "5d38b5b6f852a87208be0f536823f00c8a5d888df3c0082d39dd72a6cae927fd"
+        }
+      ],
+      "diffs": []
+    },
+    {
+      "loaded": {
+        "day": "기사",
+        "quality": "high",
+        "faceNames": [
+          "B_|_small_eye_glint_-1",
+          "B_|_expressive_brow_-1",
+          "B_|_small_eye_glint_1",
+          "B_|_expressive_brow_1",
+          "B_|_quiet_smile",
+          "B_|_almond_gaze_-1",
+          "B_|_almond_gaze_1"
+        ],
+        "bodyReceiveShadow": false,
+        "bodyMaterial": {
+          "transmission": 0.14,
+          "thickness": 0
+        }
+      },
+      "close": true,
+      "states": [
+        {
+          "day": "기사",
+          "quality": "high",
+          "mode": "original",
+          "time": 0,
+          "close": true,
+          "angle": 0,
+          "pixelRatio": 1,
+          "size": [
+            640,
+            760
+          ],
+          "pixels": "57a3cda3c8b9c523a3fef8a8882a541f115fa1133e823d71713417678a3d402a",
+          "meshes": [
+            {
+              "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.42,
+                0,
+                0,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  -503.53198298132315,
+                  -447.71595609393466
+                ],
+                "max": [
+                  1143.5412543009975,
+                  1851.3008862430804
+                ]
+              },
+              "material": [
+                {
+                  "name": "己 · Approved evolving jade v002",
+                  "type": "MeshPhysicalMaterial",
+                  "transparent": false,
+                  "side": 2,
+                  "forceSinglePass": false,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0.14,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_small_eye_glint_-1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                -0.25999999046325684,
+                1.777999997138977,
+                0.48069074749946594
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.6799999904632568,
+                1.777999997138977,
+                0.648932509124279,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  149.27033625765694,
+                  360.352914565148
+                ],
+                "max": [
+                  172.1335771810101,
+                  382.84281969800924
+                ]
+              },
+              "material": [
+                {
+                  "name": "Soft glint",
+                  "type": "MeshStandardMaterial",
+                  "transparent": false,
+                  "side": 2,
+                  "forceSinglePass": false,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_expressive_brow_-1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.42,
+                0,
+                0,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  94.68145601713476,
+                  251.74345260982275
+                ],
+                "max": [
+                  247.96726457938544,
+                  288.61740444439835
+                ]
+              },
+              "material": [
+                {
+                  "name": "Deep teal expression",
+                  "type": "MeshStandardMaterial",
+                  "transparent": false,
+                  "side": 2,
+                  "forceSinglePass": false,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_small_eye_glint_1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0.20999999344348907,
+                1.777999997138977,
+                0.4807272255420685
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.2100000065565109,
+                1.777999997138977,
+                0.6489817544817925,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  437.4444270808873,
+                  360.3536427979969
+                ],
+                "max": [
+                  459.9158855341514,
+                  382.8441735763333
+                ]
+              },
+              "material": [
+                {
+                  "name": "Soft glint",
+                  "type": "MeshStandardMaterial",
+                  "transparent": false,
+                  "side": 2,
+                  "forceSinglePass": false,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_expressive_brow_1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.42,
+                0,
+                0,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  384.7190368574647,
+                  236.0577173998908
+                ],
+                "max": [
+                  540.114276077509,
+                  288.13194882503126
+                ]
+              },
+              "material": [
+                {
+                  "name": "Deep teal expression",
+                  "type": "MeshStandardMaterial",
+                  "transparent": false,
+                  "side": 2,
+                  "forceSinglePass": false,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_quiet_smile",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1.35,
+                0,
+                -0.42,
+                0,
+                0,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  244.58408151438974,
+                  477.50895754383276
+                ],
+                "max": [
+                  401.9684402272779,
+                  515.945889918505
+                ]
+              },
+              "material": [
+                {
+                  "name": "Deep teal expression",
+                  "type": "MeshStandardMaterial",
+                  "transparent": false,
+                  "side": 2,
+                  "forceSinglePass": false,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_almond_gaze_-1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                -0.23499999940395355,
+                1.7599999904632568,
+                0.4536909759044647
+              ],
+              "scale": [
+                0.11800000071525574,
+                0.05700000002980232,
+                0.028999999165534973
+              ],
+              "matrix": [
+                0.11741049222272172,
+                -0.011780343259846721,
+                0,
+                0,
+                0.005690504763493039,
+                0.0567152374544775,
+                0,
+                0,
+                0,
+                0,
+                0.039149998873472217,
+                0,
+                -0.6549999994039535,
+                1.7599999904632568,
+                0.6124828174710274,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  100.10951921382159,
+                  340.3082165493432
+                ],
+                "max": [
+                  254.356617329573,
+                  424.50486136789976
+                ]
+              },
+              "material": [
+                {
+                  "name": "Deep teal expression",
+                  "type": "MeshStandardMaterial",
+                  "transparent": false,
+                  "side": 2,
+                  "forceSinglePass": false,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            },
+            {
+              "name": "B_|_almond_gaze_1",
+              "castShadow": true,
+              "receiveShadow": false,
+              "visible": true,
+              "position": [
+                0.23499999940395355,
+                1.7599999904632568,
+                0.45372721552848816
+              ],
+              "scale": [
+                0.11800000071525574,
+                0.05700000002980232,
+                0.028999999165534973
+              ],
+              "matrix": [
+                0.11741049222272172,
+                0.011780343259846721,
+                0,
+                0,
+                -0.005690504763493039,
+                0.0567152374544775,
+                0,
+                0,
+                0,
+                0,
+                0.039149998873472217,
+                0,
+                -0.18500000059604643,
+                1.7599999904632568,
+                0.6125317409634591,
+                1
+              ],
+              "bounds": {
+                "min": [
+                  385.6451334840764,
+                  340.3083885957002
+                ],
+                "max": [
+                  539.8965086360636,
+                  424.50732298931837
+                ]
+              },
+              "material": [
+                {
+                  "name": "Deep teal expression",
+                  "type": "MeshStandardMaterial",
+                  "transparent": false,
+                  "side": 2,
+                  "forceSinglePass": false,
+                  "opacity": 1,
+                  "colorWrite": true,
+                  "depthWrite": true,
+                  "transmission": 0,
+                  "thickness": 0
+                }
+              ]
+            }
+          ],
+          "geometryHashes": {
+            "B_candidate5_reconstructed_|_seamless_body_and_mittens": {
+              "position": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+              "normal": "80706bee870329a0829113e63ed178f0a904029265da2c96c69ad50f9b1f9cec",
+              "uv": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+              "index": "934286d3bdd9361657e390c41762923871cec85a48a7d9775b362aee02dc7830"
+            },
+            "B_|_small_eye_glint_-1": {
+              "position": "31d63b82449328a1454c8ffbac35522f996c58082325eb579f9fdb93682c0e25",
+              "normal": "c91f6d093288b9e4284433827e25974b5c35ba2b53b07243f5bbedd76aa480cd",
+              "uv": "22f5058b7f71ed79d582e2e6a1502f3117785ac7ffcbee4400cb450f15e4b3c8",
+              "index": "a22daa4a67dfd2d521f715bbbbd647427adcae4150dc5073974eb077b222367f"
+            },
+            "B_|_expressive_brow_-1": {
+              "position": "a7d026e4bf8e29ddaf2bc088699ab0a646bf4b50c4d1c1518fc3321d64280dd0",
+              "normal": "d67cb1f7e68afcffd73f6ce1feb38fa2ee775bb60727cac2bc7acdced2ac2588",
+              "uv": "28f426cd5e9c615e22566e1ba2dc5e7c6e927f301d6bf244781a4a21a2622f7d",
+              "index": "7d9ab7486d60694af1a925ead9ba087afd4250250fc391e57448120d44233f73"
+            },
+            "B_|_small_eye_glint_1": {
+              "position": "31d63b82449328a1454c8ffbac35522f996c58082325eb579f9fdb93682c0e25",
+              "normal": "c91f6d093288b9e4284433827e25974b5c35ba2b53b07243f5bbedd76aa480cd",
+              "uv": "22f5058b7f71ed79d582e2e6a1502f3117785ac7ffcbee4400cb450f15e4b3c8",
+              "index": "a4ce72fc9152999ec28a74c0573936689b6bb3bed65e909e0bfcb0a557693d30"
+            },
+            "B_|_expressive_brow_1": {
+              "position": "b625a42bb4606f94500f8bf75a91180ddf96341f28b1ac074e70552d167ff598",
+              "normal": "c6caa331e68a116f52427c9cab144eb4a957b8a1c2143ca79cf29c60dcf13853",
+              "uv": "28f426cd5e9c615e22566e1ba2dc5e7c6e927f301d6bf244781a4a21a2622f7d",
+              "index": "7d9ab7486d60694af1a925ead9ba087afd4250250fc391e57448120d44233f73"
+            },
+            "B_|_quiet_smile": {
+              "position": "12afa270a7e34881d323410814e0fa72874812f1d6705b55a5531ee1b522eb5b",
+              "normal": "c4647abf3c0863ace50b02ae6005e5c52a7059bca5c73dcc35137186eb95d23d",
+              "uv": "28f426cd5e9c615e22566e1ba2dc5e7c6e927f301d6bf244781a4a21a2622f7d",
+              "index": "7d9ab7486d60694af1a925ead9ba087afd4250250fc391e57448120d44233f73"
+            },
+            "B_|_almond_gaze_-1": {
+              "position": "ab4f85078af68be7ba5f07d962b602a7b629c502d8baf9e028802aa4704b9972",
+              "normal": "989df4cd7a9c446d99ccea582a1f29e0516b99b8329425b3ac98f71d54105bdf",
+              "uv": "22f5058b7f71ed79d582e2e6a1502f3117785ac7ffcbee4400cb450f15e4b3c8",
+              "index": "07d447b917012005f420be2c44775232c45500da2d1edfba73c1f3ffe2785ccc"
+            },
+            "B_|_almond_gaze_1": {
+              "position": "ab4f85078af68be7ba5f07d962b602a7b629c502d8baf9e028802aa4704b9972",
+              "normal": "989df4cd7a9c446d99ccea582a1f29e0516b99b8329425b3ac98f71d54105bdf",
+              "uv": "22f5058b7f71ed79d582e2e6a1502f3117785ac7ffcbee4400cb450f15e4b3c8",
+              "index": "0fb4a437ba2cbf65ed2a78754f9922e6ebbd31afa7237d237b6f2ab04b3d7e40"
+            }
+          },
+          "bodyMorphs": [
+            0
+          ],
+          "bodyNativeTime": null,
+          "bodyNativeReceiveShadow": false,
+          "groundNativeReceiveShadow": true,
+          "groundLinkedShadowMap": true,
+          "bodyNativeTransmission": 0.14000000059604645,
+          "bodyNativeThickness": 0,
+          "bodyNativeTransmissionSampler": 6,
+          "bodyNativeTransmissionSize": [
+            640,
+            760
+          ],
+          "camera": {
+            "position": [
+              -0.42,
+              1.84,
+              2.45
+            ],
+            "world": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0.9991147502967768,
+              -0.04206798948618011,
+              0,
+              0,
+              0.04206798948618011,
+              0.9991147502967768,
+              0,
+              -0.42,
+              1.84,
+              2.45,
+              1
+            ],
+            "projection": [
+              3.44875041724004,
+              0,
+              0,
+              0,
+              0,
+              2.9042108776758226,
+              0,
+              0,
+              0,
+              0,
+              -1.005012531328321,
+              -1,
+              0,
+              0,
+              -0.2005012531328321,
+              0
+            ]
+          },
+          "shadows": {
+            "enabled": true,
+            "type": 1,
+            "keyCast": true,
+            "mapSize": [
+              1024,
+              1024
+            ],
+            "bias": -0.0002,
+            "groundReceive": true
+          },
+          "passes": [
+            {
+              "mesh": "B_|_small_eye_glint_1",
+              "target": {
+                "width": 640,
+                "height": 760,
+                "type": 1016,
+                "colorSpace": "srgb-linear"
+              },
+              "material": "Soft glint",
+              "transparent": false,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_small_eye_glint_-1",
+              "target": {
+                "width": 640,
+                "height": 760,
+                "type": 1016,
+                "colorSpace": "srgb-linear"
+              },
+              "material": "Soft glint",
+              "transparent": false,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_expressive_brow_1",
+              "target": {
+                "width": 640,
+                "height": 760,
+                "type": 1016,
+                "colorSpace": "srgb-linear"
+              },
+              "material": "Deep teal expression",
+              "transparent": false,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_expressive_brow_-1",
+              "target": {
+                "width": 640,
+                "height": 760,
+                "type": 1016,
+                "colorSpace": "srgb-linear"
+              },
+              "material": "Deep teal expression",
+              "transparent": false,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_quiet_smile",
+              "target": {
+                "width": 640,
+                "height": 760,
+                "type": 1016,
+                "colorSpace": "srgb-linear"
+              },
+              "material": "Deep teal expression",
+              "transparent": false,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_almond_gaze_1",
+              "target": {
+                "width": 640,
+                "height": 760,
+                "type": 1016,
+                "colorSpace": "srgb-linear"
+              },
+              "material": "Deep teal expression",
+              "transparent": false,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_almond_gaze_-1",
+              "target": {
+                "width": 640,
+                "height": 760,
+                "type": 1016,
+                "colorSpace": "srgb-linear"
+              },
+              "material": "Deep teal expression",
+              "transparent": false,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_small_eye_glint_1",
+              "target": null,
+              "material": "Soft glint",
+              "transparent": false,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_small_eye_glint_-1",
+              "target": null,
+              "material": "Soft glint",
+              "transparent": false,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_expressive_brow_1",
+              "target": null,
+              "material": "Deep teal expression",
+              "transparent": false,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_expressive_brow_-1",
+              "target": null,
+              "material": "Deep teal expression",
+              "transparent": false,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_quiet_smile",
+              "target": null,
+              "material": "Deep teal expression",
+              "transparent": false,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_almond_gaze_1",
+              "target": null,
+              "material": "Deep teal expression",
+              "transparent": false,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            },
+            {
+              "mesh": "B_|_almond_gaze_-1",
+              "target": null,
+              "material": "Deep teal expression",
+              "transparent": false,
+              "colorWrite": true,
+              "depthWrite": true,
+              "linkedReceiveShadow": false
+            }
+          ],
+          "errors": [],
+          "glError": 0,
+          "webgl": {
+            "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+            "renderer": "WebKit WebGL",
+            "vendor": "WebKit"
+          },
+          "draws": 35,
+          "file": "기사-high-0.00000-close-0.000-1-original.png",
+          "pngSHA256": "8cd11a6a96ad2c05fb6811a76e420103f64c1df1f5c943b605601d167a5b3443"
+        }
+      ],
+      "diffs": []
+    }
+  ],
+  "errors": [],
+  "outbound": [],
+  "limits": [
+    "Real approved loader/GLB/materials in local Chromium ANGLE SwiftShader. No inaccessible user screenshot or physical GPU was used.",
+    "Baseline source files stay unchanged. Vite transforms only the loader to exact proposed source bytes. All 8 actual patched frames must exactly match the dynamic candidate pixel hashes."
+  ]
+}

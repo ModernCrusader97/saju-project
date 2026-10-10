@@ -155,6 +155,15 @@ export async function loadApprovedSpirit(dayKey: string, monthKey: string, quali
       // shader. Keep the B body and other accents casting their existing shadows.
       mesh.castShadow = mesh.userData.surfaceNonShadowCaster !== true &&
         !((stem === '丙' || stem === '丁') && (mesh as THREE.InstancedMesh).isInstancedMesh);
+      // Opaque facial markers must not enter their own water refraction buffer.
+      // Opacity and depth writing remain unchanged; draw them after transmission.
+      if ((stem === '壬' || stem === '癸') &&
+        /almond_gaze|small_eye_glint|expressive_brow|quiet_smile/.test(mesh.name)) {
+        for (const material of Array.isArray(mesh.material) ? mesh.material : [mesh.material]) {
+          material.transparent = true;
+          material.forceSinglePass = true;
+        }
+      }
     });
     const eyes: THREE.Mesh[] = [];
     model.traverse(object => { const mesh = object as THREE.Mesh; if (mesh.isMesh && mesh.name.includes('almond_gaze')) eyes.push(mesh); });

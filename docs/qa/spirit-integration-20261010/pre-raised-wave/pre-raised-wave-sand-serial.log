@@ -1,0 +1,17 @@
+✔ 戊 low: actual triangle fissure origins, original B geometry and bounded instances (316.405223ms)
+✔ 戊 high: actual triangle fissure origins, original B geometry and bounded instances (327.153841ms)
+✔ attached source follows paused rigid rotations with inverse-transpose normals (249.198763ms)
+✔ world-gravity flight remains vertical under nonuniform presentation; body-crossing particles hide (271.725769ms)
+✔ one owned instance mesh/geometry/material releases once, source stays owned by caller (273.596047ms)
+✔ Gentle_wave_pose keeps rest crack identity and refits collision to actual posed vertices (375.734945ms)
+✔ invalid time, missing rest binding, active morph and singular transforms fail explicitly (551.199529ms)
+✔ fashion exclusion hides a source batch and restores unchanged seeds when removed (250.648001ms)
+✔ real-body CPU update has finite bounded budget (247.433049ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3038.213998

@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "sourceGLBSHA256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+  "measurements": {
+    "samples": 17885,
+    "maxBroadBefore": 0.033999999996671214,
+    "maxBroadAfter": 0.016999999998335607,
+    "rmsRatio": 0.5,
+    "maxHalfError": 0
+  },
+  "checks": [
+    "actual rest samples: broad sinusoid halves exactly",
+    "only broad coefficient and water program cache identity change",
+    "all nine other active stem shader recipes/cache identities retained",
+    "original GLB POSITION/NORMAL/UV preserved"
+  ],
+  "limits": [
+    "CPU texture image placeholders; actual archived positions and depth1.35 rest binding.",
+    "Compiled shader contracts and independently evaluated broad sinusoid; native full shader field/render checked separately."
+  ]
+}

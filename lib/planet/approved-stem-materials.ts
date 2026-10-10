@@ -272,7 +272,8 @@ StemSurface stSurface(vec3 p,vec3 n) {
   vec3 blue=mix(vec3(.070,.32,.53),vec3(.11,.49,.69),body*.68);
   s.color=mix(blue,vec3(.91,.96,.95),foam);
   s.roughness=mix(.054+.018*body,.59,foam);
-  s.height=.034*wave+.0045*ripple+.0014*(detail-.5)+.0018*foam;
+  // Half the broad relief; keep the moving fine ripples and breaker detail.
+  s.height=.017*wave+.0045*ripple+.0014*(detail-.5)+.0018*foam;
   s.emission=vec3(.006,.014,.020)*foam;
  #elif STEM_KIND == 9
   // Raised smooth spherical-cap droplets, independent of the much flatter underlying liquid.
@@ -335,7 +336,7 @@ export function createStemMaterial(stem: Stem, quality: StemQuality = 'high', op
   const time={value:0};
   const botanical=index===5?cobaltBotanicalTexture(quality==='low'?256:quality==='medium'?384:512):null;
   material.defines={...material.defines,STEM_KIND:index,STEM_OCTAVES:quality==='low'?3:4};
-  material.customProgramCacheKey=()=>`${VERSION}:${index}:${quality}${characterRest ? ':character-rest-v1' : ''}`;
+  material.customProgramCacheKey=()=>`${VERSION}:${index}:${quality}${characterRest ? ':character-rest-v1' : ''}${index===8 ? ':half-broad-wave-v1' : ''}`;
   material.onBeforeCompile=(shader)=>{
     shader.uniforms.uStemTime=time;
     if(characterRest) shader.uniforms.uStemCoordinateDensity={value:coordinateDensity};

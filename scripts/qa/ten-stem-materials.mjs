@@ -76,6 +76,8 @@ const reference = await parse();
 let referenceBody;
 reference.scene.traverse(object => { if (object.isMesh && object.geometry.getAttribute('position').count === 33207) referenceBody = object; });
 const expectedHashes = attributeHashes(referenceBody.geometry);
+const originalFaces=new Map();reference.scene.traverse(o=>{if(o.isMesh&&/almond_gaze|small_eye_glint|expressive_brow|quiet_smile/.test(o.name))
+  originalFaces.set(o.name,{position:o.position.toArray(),scale:o.scale.toArray(),quaternion:o.quaternion.toArray()});});
 const pairs = [['갑자', '甲'], ['을축', '乙'], ['병인', '丙'], ['정묘', '丁'], ['무진', '戊'], ['기사', '己'], ['경오', '庚'], ['신미', '辛'], ['임신', '壬'], ['계유', '癸']];
 const expectedModes = ['normal-rooted-forked-woody-branches', 'connected-triangle-short-creeping-vines', 'triangle-emitted-original-fire', 'triangle-emitted-original-fire', 'triangle-fissure-gravity-sand', 'base-material-only', 'base-material-only', 'base-material-only', 'base-material-only', 'triangle-sliding-coalescing-dew'];
 const snapshotEffects = group => {
@@ -115,6 +117,17 @@ for (const quality of ['low', 'high']) for (const [index, [key, stem]] of pairs.
       assert(spirit.bodyMesh.morphTargetInfluences.every(weight => weight === 0));
       assert.deepEqual(spirit.avatarPivot.scale.toArray(), [1, 1, 1.35]);
       assert.equal(spirit.avatarPivot.position.x, -.42);
+      const faces=[];spirit.bodyMesh.parent.traverse(o=>{if(originalFaces.has(o.name))faces.push(o);});
+      assert.equal(faces.length,7,'Exactly the original seven facial meshes');
+      for(const face of faces){
+        assert.deepEqual({position:face.position.toArray(),scale:face.scale.toArray(),quaternion:face.quaternion.toArray()},originalFaces.get(face.name),'Original face transform preserved');
+        assert(face.castShadow&&!face.receiveShadow,'Original facial shadow flags preserved');
+        for(const faceMaterial of [face.material].flat()){
+          assert.equal(faceMaterial.opacity,1);assert.equal(faceMaterial.depthWrite,true);
+          assert.equal(faceMaterial.transparent,stem==='壬'||stem==='癸','Only water facial markers route after transmission');
+          if(stem==='壬'||stem==='癸')assert.equal(faceMaterial.forceSinglePass,true);
+        }
+      }
       assert.equal(spirit.mapping.bodyStem, key[0]);
       assert.equal(spirit.mapping.petBranch, key[1]);
       assert.equal(spirit.mapping.backgroundStem, '병');

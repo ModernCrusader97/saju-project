@@ -1,0 +1,110 @@
+{"status":"PASS","threeRevision":"186","presentationDepth":1.35,"method":"Actual production onBeforeCompile hook and installed Three ShaderChunk normal formula; actual real-B rendered grain instance matrices","observations":[{"quality":"low","mode":"affine-cofactor","samples":31680,"maximumErrorDegrees":0.0000017075472925031877,"negativeControlStockMaximumDegrees":18.37732239645743,"exactRegression":[]},{"quality":"high","mode":"affine-cofactor","samples":62640,"maximumErrorDegrees":0.0000017075472925031877,"negativeControlStockMaximumDegrees":18.37754889128614,"exactRegression":[{"time":1.75,"instance":8,"vertex":18,"productionErrorDegrees":0,"stockErrorDegrees":18.37754889128614}]}],"limits":["CPU emulation of the exact installed shader math; separate actual WebGL shader/render checks required","No geometry, particle matrix or color changes"]}
+✔ scripts/qa/affine-instance-normals.mjs (3664.486667ms)
+✔ original GLB neutral pose, face transforms and geometry remain exact at t=0 and reset (29.52363ms)
+✔ all ten stem idles are bounded, distinct, neutral-arm and keep the original floor planted (150.418184ms)
+✔ sole subset matches the full posed mesh across the complete allowed roll/scale/wave range (98.637556ms)
+✔ greeting has two small waves, opens its blink and returns exactly to the moving idle (34.668075ms)
+✔ active tap retriggers coalesce without any pose jump, including while paused (4.272855ms)
+✔ raised arm and the complete reaction stay planted, with a smooth return under user yaw (154.481521ms)
+✔ 15 and 60 Hz plus one large time step produce the same pose and bounded queued wave (9.959567ms)
+✔ absolute time repeats are stable, finite extremes remain finite and backwards seek cancels reaction (3.192459ms)
+✔ dispose restores captured facial transforms and neutral root, then every method is inert (7.173716ms)
+✔ geometry queries and allocations are confined to setup, with cached sole updates below the attachment budget (187.229847ms)
+✔ bounded real morph preserves welded seams and has no collapsed triangles, rest-normal reversal or new adjacent folds (6422.547648ms)
+✔ 壬 broad height is exactly half on the actual original GLB rest coordinates (32.375578ms)
+✔ 壬 ripples, flow phase, foam, color and optics retain their complete compiled recipe (1.882425ms)
+✔ other nine recipes, vertex shaders, material settings and cache identity are preserved (58.991118ms)
+✔ source attributes remain exact after rest binding and release (0.991817ms)
+✔ near drops transfer volume and become one larger rendered bead (67.394229ms)
+✔ threshold drop detaches and keeps its world launch while the body moves (7.411365ms)
+✔ round released bead starts outside its tilted source plane (8.025096ms)
+✔ one bounded draw has deterministic seek, dead slots and new condensation (18.673025ms)
+✔ sparse surface routes remain distinct instead of duplicating bead pairs (44.53709ms)
+✔ actual B matrices including hidden slots repeat byte-for-byte at one time (1214.517166ms)
+✔ exclusion overlap includes bead radius under transformed fashion masks (0.398215ms)
+✔ 戊 low: actual triangle fissure origins, original B geometry and bounded instances (785.301614ms)
+✔ 戊 high: actual triangle fissure origins, original B geometry and bounded instances (684.278144ms)
+✔ attached source follows paused rigid rotations with inverse-transpose normals (628.889692ms)
+✔ world-gravity flight remains vertical under nonuniform presentation; body-crossing particles hide (606.256236ms)
+✔ one owned instance mesh/geometry/material releases once, source stays owned by caller (381.678627ms)
+✖ Gentle_wave_pose keeps rest crack identity and refits collision to actual posed vertices (721.199595ms)
+✔ invalid time, missing rest binding, active morph and singular transforms fail explicitly (968.968447ms)
+✔ fashion exclusion hides a source batch and restores unchanged seeds when removed (443.301796ms)
+✔ real-body CPU update has finite bounded budget (381.417554ms)
+✔ dew contact actually slides downward rather than changing only bead radius (101.81374ms)
+✔ attached beads stay outside their actual face plane through growth and travel (36.126598ms)
+✔ absolute time repeats after reverse seek and reset with a visible death and rebirth (73.474649ms)
+✔ quality levels have fixed geometry budgets and isolated transparent material (5.317259ms)
+✔ world normal and plane clearance survive paused nested nonuniform rotation (2.054517ms)
+✔ local accessory masking hides nearby beads and restores the same identities exactly (3.538277ms)
+✔ real approved GLB shows cross-triangle contact travel and preserves source attributes (1181.471853ms)
+✔ explicit morph opt-in reattaches actual B arm beads to the posed triangles (1027.691603ms)
+✔ actual GLB full cycles remain continuous with bounded quality update work (847.083019ms)
+✔ disposal releases only owned instance buffers geometry material exactly once (1.694469ms)
+✔ unsupported deformation and nonfinite values fail without changing the source (2.413936ms)
+✔ real B: closed welded UV topology and cross-triangle downward paths (33.041436ms)
+✔ interpolation preserves its target and arc-length endpoint identity (0.960901ms)
+✔ open boundaries and separate close surfaces stop rather than project to another part (0.508898ms)
+✔ explicit wave support follows actual preserved posed vertices and geometric normals (4.121414ms)
+✔ accessory exclusions use local model regions and exact stable clear/restore (1.557638ms)
+✔ write actual B topology/path evidence (58.231182ms)
+PASS 甲 low: original B face is free of woody roots; transforms/time/mask/disposal
+PASS 乙 low: connected real-triangle crawl with leaves on its actual stem
+PASS 甲 high: original B face is free of woody roots; transforms/time/mask/disposal
+PASS 乙 high: connected real-triangle crawl with leaves on its actual stem
+{"phase":"after","checks":4,"failed":0,"observations":[{"stem":"甲","quality":"low","branches":30,"drawCalls":5,"minWorldRootNormalDot":0.9999999999999998,"woodyCenterlineSweeps":930,"woodyCenterlineCrossings":0,"transformedWoodyCenterlineCrossings":0,"productionWaveCenterlineCrossings":0,"creationMs":626.613249,"budget":{"drawCalls":5,"instances":120,"triangles":12600,"bufferBytes":42480},"maxRightArmAnchorTravel":0.10730569366128548,"maxConnectedLeafTravel":0.18338231456948983},{"stem":"乙","quality":"low","paths":6,"leaves":18,"segments":144,"drawCalls":3,"maxLeafRootToStemDistance":0,"creationMs":288.68764400000146,"budget":{"drawCalls":3,"instances":318,"triangles":9144,"bufferBytes":23256},"minimumTubePlaneClearance":0.0052388688281464636,"maxRenderedLeafRootDistance":9.313012002984801e-8,"visibleSegments":123,"maxRightArmAnchorTravel":0.12576237516936173,"maxConnectedLeafTravel":0.1118971834411031},{"stem":"甲","quality":"high","branches":44,"drawCalls":5,"minWorldRootNormalDot":0.9999999999999998,"woodyCenterlineSweeps":1892,"woodyCenterlineCrossings":0,"transformedWoodyCenterlineCrossings":0,"productionWaveCenterlineCrossings":0,"creationMs":447.1451850000012,"budget":{"drawCalls":5,"instances":176,"triangles":24816,"bufferBytes":57584},"maxRightArmAnchorTravel":0.3254518089103035,"maxConnectedLeafTravel":0.42109016837775276},{"stem":"乙","quality":"high","paths":10,"leaves":30,"segments":328,"drawCalls":3,"maxLeafRootToStemDistance":0,"creationMs":193.90711700000247,"budget":{"drawCalls":3,"instances":706,"triangles":26008,"bufferBytes":48600},"minimumTubePlaneClearance":0.0052042957814448666,"maxRenderedLeafRootDistance":7.273812770392945e-8,"visibleSegments":246,"maxRightArmAnchorTravel":0.12576237516936173,"maxConnectedLeafTravel":0.10918398666588142}]}
+✔ scripts/qa/surface-vegetation.mjs (48408.128367ms)
+{"glbSHA256":"0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84","originalAttributeHashes":{"position":"f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b","normal":"80706bee870329a0829113e63ed178f0a904029265da2c96c69ad50f9b1f9cec","uv":"f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c","index":"934286d3bdd9361657e390c41762923871cec85a48a7d9775b362aee02dc7830"},"ioBoundary":"CPU uses real GLB with image I/O placeholders; browser QA loads actual textures"}
+✔ 甲 low: approved material, original B geometry and supported effects (571.893183ms)
+✔ 乙 low: approved material, original B geometry and supported effects (281.407923ms)
+✔ 丙 low: approved material, original B geometry and supported effects (97.815067ms)
+✔ 丁 low: approved material, original B geometry and supported effects (78.303221ms)
+✔ 戊 low: approved material, original B geometry and supported effects (394.288747ms)
+✔ 己 low: approved material, original B geometry and supported effects (233.507594ms)
+✔ 庚 low: approved material, original B geometry and supported effects (61.419425ms)
+✔ 辛 low: approved material, original B geometry and supported effects (66.682364ms)
+✔ 壬 low: approved material, original B geometry and supported effects (61.577367ms)
+✔ 癸 low: approved material, original B geometry and supported effects (243.728274ms)
+✔ 甲 high: approved material, original B geometry and supported effects (427.713617ms)
+✔ 乙 high: approved material, original B geometry and supported effects (276.239247ms)
+✔ 丙 high: approved material, original B geometry and supported effects (104.253734ms)
+✔ 丁 high: approved material, original B geometry and supported effects (155.718257ms)
+✔ 戊 high: approved material, original B geometry and supported effects (574.654825ms)
+✔ 己 high: approved material, original B geometry and supported effects (28.80199ms)
+✔ 庚 high: approved material, original B geometry and supported effects (59.74871ms)
+✔ 辛 high: approved material, original B geometry and supported effects (54.061168ms)
+✔ 壬 high: approved material, original B geometry and supported effects (50.947765ms)
+✔ 癸 high: approved material, original B geometry and supported effects (257.85372ms)
+✔ real B neutral morph has exact triangle attachment and rejects active morphs (34.379873ms)
+✔ rest binding includes fixed depth and restores prior attributes exactly once (21.057786ms)
+✔ 甲 leaves meet transformed branch tip centers under nonuniform presentation (390.422659ms)
+✔ jade reject releases the real GLB and fulfilled textures once (4.730398ms)
+✔ jade wrong-size releases the real GLB and fulfilled textures once (8.816158ms)
+ℹ tests 75
+ℹ suites 0
+ℹ pass 74
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 55795.783649
+
+✖ failing tests:
+
+test at scripts/qa/surface-fissure-sand.mjs:112:2
+✖ Gentle_wave_pose keeps rest crack identity and refits collision to actual posed vertices (721.199595ms)
+  AssertionError [ERR_ASSERTION]: Changing wave morph collision refit must stay within the 3ms local CPU median budget
+      at TestContext.<anonymous> (file:///workspace/saju-spirit-fashion-dew-water-20261010/scripts/qa/surface-fissure-sand.mjs:126:4)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

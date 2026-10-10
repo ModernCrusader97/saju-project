@@ -162,7 +162,28 @@ for (const key of ['갑자', '을축', '계유']) test(`${key}: localized exclus
     spirit.fashion.set(api.EMPTY_FASHION); spirit.reset(); spirit.update(0); if (pose === 'wave') spirit.triggerReaction();
     const time = pose === 'wave' ? .65 : 2.25; spirit.update(time); const original = matrices(spirit.propGroup);
     spirit.fashion.set(outfit); spirit.update(time); const masked = matrices(spirit.propGroup), delta = maskDifference(original, masked);
-    if (key !== '을축') assert(delta.hidden > 0, 'this outfit covers at least one actual branch or bead');
+    if (key === '갑자') assert(delta.hidden > 0, 'this outfit covers an actual branch at this pose');
+    // Bounded dew pairs now follow different deterministic routes. This static
+    // outfit may overlap no bead at this instant; test a real overlap directly.
+    if (key === '계유') {
+      const active = original[0].values.findIndex((_, i, a) => i % 16 === 0 &&
+        Math.abs(new THREE.Matrix4().fromArray(a, i).determinant()) > 1e-12);
+      assert(active >= 0, 'a real dew bead is visible at the controlled time');
+      const center = new THREE.Vector3().setFromMatrixPosition(new THREE.Matrix4().fromArray(original[0].values, active));
+      center.applyMatrix4(spirit.propGroup.matrixWorld).applyMatrix4(owner.matrixWorld.clone().invert());
+      const masks = owner.userData.surfaceAttachmentExclusions;
+      const updateFashion = spirit.fashion.update;
+      // Keep this explicit test envelope during the normal effect update;
+      // fashion otherwise republishes its four production regions each frame.
+      try {
+        spirit.fashion.update = () => {};
+        owner.userData.surfaceAttachmentExclusions = [...masks, {id:'qa-real-dew-overlap',shape:'sphere',center:center.toArray(),radius:.001}];
+        spirit.update(time);
+        const covered = maskDifference(original, matrices(spirit.propGroup));
+        assert(covered.hidden > delta.hidden && covered.hidden < covered.total, 'a targeted actual overlapping bead hides locally');
+      } finally { spirit.fashion.update = updateFashion; owner.userData.surfaceAttachmentExclusions = masks; }
+      spirit.update(time); assert.deepEqual(matrices(spirit.propGroup), masked, 'removing the probe restores exact outfit-only bead identities');
+    }
     assert(delta.hidden < delta.total, 'attachments outside the small regions stay active');
     assert.equal(owner.userData.surfaceAttachmentExclusions.length, 4);
     for (const item of spirit.fashion.group.children) {
