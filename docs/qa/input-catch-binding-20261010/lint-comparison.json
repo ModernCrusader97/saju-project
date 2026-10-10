@@ -1,0 +1,9 @@
+{
+  "lintExitCode": 0,
+  "beforeErrors": 1,
+  "afterErrors": 0,
+  "beforeWarnings": 3,
+  "afterWarnings": 2,
+  "onlyAnyAndUnusedCatchBindingRemoved": true,
+  "newQaMessages": 0
+}

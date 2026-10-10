@@ -1,0 +1,128 @@
+{
+  "basis": "8d7760e0565f25be02ab6180c0d817040a4c8e88",
+  "phase": "before",
+  "applicationSourceSHA256": "4f7b370074101abccc4883fca40684455bf1e9695b042aee0d58e7f315f45117",
+  "passed": 7,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "Error rejection",
+      "status": "PASS"
+    },
+    {
+      "name": "string rejection",
+      "status": "PASS"
+    },
+    {
+      "name": "null rejection",
+      "status": "PASS"
+    },
+    {
+      "name": "unreadable message property",
+      "status": "PASS"
+    },
+    {
+      "name": "active rejection named AbortError",
+      "status": "PASS"
+    },
+    {
+      "name": "malformed JSON response",
+      "status": "PASS"
+    },
+    {
+      "name": "invalid JSON shape",
+      "status": "PASS"
+    }
+  ],
+  "observations": [
+    {
+      "name": "Error rejection",
+      "messageReads": 0,
+      "closes": 0,
+      "alerts": [
+        "네트워크 오류가 발생했습니다."
+      ],
+      "requests": 1,
+      "pendingTimers": 0,
+      "results": 0,
+      "activeSignalAborted": false
+    },
+    {
+      "name": "string rejection",
+      "messageReads": 0,
+      "closes": 0,
+      "alerts": [
+        "네트워크 오류가 발생했습니다."
+      ],
+      "requests": 1,
+      "pendingTimers": 0,
+      "results": 0,
+      "activeSignalAborted": false
+    },
+    {
+      "name": "null rejection",
+      "messageReads": 0,
+      "closes": 0,
+      "alerts": [
+        "네트워크 오류가 발생했습니다."
+      ],
+      "requests": 1,
+      "pendingTimers": 0,
+      "results": 0,
+      "activeSignalAborted": false
+    },
+    {
+      "name": "unreadable message property",
+      "messageReads": 0,
+      "closes": 0,
+      "alerts": [
+        "네트워크 오류가 발생했습니다."
+      ],
+      "requests": 1,
+      "pendingTimers": 0,
+      "results": 0,
+      "activeSignalAborted": false
+    },
+    {
+      "name": "active rejection named AbortError",
+      "messageReads": 0,
+      "closes": 0,
+      "alerts": [
+        "네트워크 오류가 발생했습니다."
+      ],
+      "requests": 1,
+      "pendingTimers": 0,
+      "results": 0,
+      "activeSignalAborted": false
+    },
+    {
+      "name": "malformed JSON response",
+      "messageReads": 0,
+      "closes": 0,
+      "alerts": [
+        "네트워크 오류가 발생했습니다."
+      ],
+      "requests": 1,
+      "pendingTimers": 0,
+      "results": 0,
+      "activeSignalAborted": false
+    },
+    {
+      "name": "invalid JSON shape",
+      "messageReads": 0,
+      "closes": 0,
+      "alerts": [
+        "네트워크 오류가 발생했습니다."
+      ],
+      "requests": 1,
+      "pendingTimers": 0,
+      "results": 0,
+      "activeSignalAborted": false
+    }
+  ],
+  "limits": [
+    "Actual React/modal and response reader in jsdom; alert, HTTP and progress-time boundaries are controlled.",
+    "No existing runtime defect is claimed. This suite preserves exception-shape-independent generic error handling.",
+    "No native-browser, real server write, hosted-authentication or external AI check is performed."
+  ]
+}

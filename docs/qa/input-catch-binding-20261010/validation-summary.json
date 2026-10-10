@@ -1,0 +1,41 @@
+{
+  "basis": "8d7760e0565f25be02ab6180c0d817040a4c8e88",
+  "branch": "maint/saju-input-catch-binding-20261010",
+  "productSource": "components/SajuInputModal.tsx",
+  "productSourceSHA256": "3c3ee35575e68fb80c85d92e609cf2806d17583ab3656525752f57348a7526bd",
+  "productLinesReplaced": 1,
+  "before": {
+    "qaPassed": 7,
+    "qaFailed": 0
+  },
+  "after": {
+    "qaPassed": 7,
+    "qaFailed": 0
+  },
+  "exceptionBehaviorObservationsIdentical": true,
+  "typecheck": {
+    "command": "tsc --noEmit --incremental false",
+    "exitCode": 0,
+    "elapsedSeconds": 4.0
+  },
+  "build": {
+    "command": "npm run build",
+    "exitCode": 0,
+    "elapsedSeconds": 7.3
+  },
+  "scopedLint": {
+    "lintExitCode": 0,
+    "beforeErrors": 1,
+    "afterErrors": 0,
+    "beforeWarnings": 3,
+    "afterWarnings": 2,
+    "onlyAnyAndUnusedCatchBindingRemoved": true,
+    "newQaMessages": 0
+  },
+  "scope": "Remove an unused any-typed catch binding; preserve the complete handler body and request cleanup.",
+  "limits": [
+    "No existing runtime defect is claimed.",
+    "Actual React/jsdom with controlled alert, HTTP and progress timer boundaries.",
+    "Native browser, real server writes, hosted authentication, external AI and other browsers are not tested."
+  ]
+}
