@@ -1,0 +1,76 @@
+{
+  "basis": "ea018e2228df521ca560e203fe6955c1a2158c27",
+  "branch": "fix/manse-checkbox-pointer-20261010",
+  "before": {
+    "passed": 5,
+    "failed": 3,
+    "exitCode": 1
+  },
+  "after": {
+    "passed": 8,
+    "failed": 0,
+    "exitCode": 0
+  },
+  "labelsRegression": {
+    "passed": 5,
+    "failed": 0,
+    "exitCode": 0
+  },
+  "typecheck": {
+    "command": "node_modules/.bin/tsc --noEmit --incremental false",
+    "exitCode": 0
+  },
+  "build": {
+    "command": "npm run build",
+    "exitCode": 0,
+    "beforeBuild": "Previously completed ea018e2 own build; candidate baseline symlink only, removed before own corrected build. Source SHA256 matches the preserved label-task validation.",
+    "afterBuild": "Fresh candidate production build"
+  },
+  "scopedLint": {
+    "exitCode": 0,
+    "sameExistingPageMessages": true,
+    "existingPageErrors": 0,
+    "existingPageWarnings": 4,
+    "newScriptErrors": 0,
+    "newScriptWarnings": 0
+  },
+  "diffCheck": {
+    "exitCode": 0
+  },
+  "visualInspection": [
+    "Before and after actual 390px checked-form screenshots",
+    "After 1100px checked form; known/unknown desktop images byte identical"
+  ],
+  "imageComparison": [
+    {
+      "name": "form-390-known.png",
+      "byteIdentical": false,
+      "beforeSHA256": "fa010741076367804cdc07813e386ae07aebfd938bfa8bfd8b7af64faeae0ed3",
+      "afterSHA256": "c1db4a99aabaef176b600bc027fe5766b78031dbf42c7efca67de07ce4c0037b"
+    },
+    {
+      "name": "form-390-unknown.png",
+      "byteIdentical": false,
+      "beforeSHA256": "e79c611bd92b72fd0ed47caa9bedb8872afc7a18aa4fa6231183bd83f42dcb58",
+      "afterSHA256": "f15ff1ae914e3f75291c91471dea2faaa5ec16c3e80bbf01c01a3c29b9bb017f"
+    },
+    {
+      "name": "form-1100-known.png",
+      "byteIdentical": true,
+      "beforeSHA256": "d44294cf8e4454ad0f98667806a99c32437136a1fab63ecd157374510d4d2823",
+      "afterSHA256": "d44294cf8e4454ad0f98667806a99c32437136a1fab63ecd157374510d4d2823"
+    },
+    {
+      "name": "form-1100-unknown.png",
+      "byteIdentical": true,
+      "beforeSHA256": "30daec190a6c163bb939ac16bdd6d542341729a503b513cad62f6b9f1cd9255c",
+      "afterSHA256": "30daec190a6c163bb939ac16bdd6d542341729a503b513cad62f6b9f1cd9255c"
+    }
+  ],
+  "scope": "Only two layout classes change the preexisting product; all 672 other preexisting tracked files are byte identical.",
+  "limits": [
+    "Native Chromium only; physical devices, screen readers and other browsers are not tested.",
+    "No API, actual user DB, external AI, hosted authentication or calendar accuracy checks.",
+    "Main/PR/deployment/authentication/payment/permission/model/source-search work is outside the change."
+  ]
+}

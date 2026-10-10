@@ -1,0 +1,16 @@
+{
+  "basis": "ea018e2228df521ca560e203fe6955c1a2158c27",
+  "comparedPreexistingFiles": 673,
+  "byteIdenticalPreexistingFiles": 672,
+  "changedPreexistingFiles": [
+    "app/manse/page.tsx"
+  ],
+  "removingOnlyTwoAddedLayoutClassesRestoresOriginalPageExactly": true,
+  "sourceSHA256": "5c35553e46bf99376c2e29d0181e74029d8fdefb3e938fa4d52de22413ea84e4",
+  "originalSourceSHA256": "12e47d47c36005757f15020c15da9afdbec6663aec99afa0cc59ef61e96aaa4d",
+  "preservedWipSHA256": "75ea6f5726ce41272841494c3a3316e3f4b88ea7c4888d71e21e981ee9030539",
+  "wipStatus": [
+    "?? dist",
+    "?? scripts/qa/error-keyboard-browser.mjs"
+  ]
+}

@@ -160,8 +160,8 @@ export default function MansePage() {
           </div>
 
           {/* Hour & Unknown time */}
-          <div className="flex items-center gap-3 pt-1">
-            <div className="flex-1 flex items-center gap-2">
+          <div className="flex flex-wrap items-center gap-3 pt-1">
+            <div className="flex-1 min-w-max flex items-center gap-2">
               <label htmlFor="manse-hour" className="text-[10.5px] font-bold text-doryeong-textMuted shrink-0">태어난 시 (0~23시):</label>
               <input
                 id="manse-hour"

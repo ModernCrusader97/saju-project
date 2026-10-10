@@ -1,0 +1,170 @@
+{
+  "basis": "ea018e2228df521ca560e203fe6955c1a2158c27",
+  "phase": "after",
+  "applicationSourceSHA256": "5c35553e46bf99376c2e29d0181e74029d8fdefb3e938fa4d52de22413ea84e4",
+  "passed": 5,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "all five existing labels name their actual native controls",
+      "status": "PASS"
+    },
+    {
+      "name": "native clicks on each label focus its intended input",
+      "status": "PASS"
+    },
+    {
+      "name": "native Tab order and disabled-hour skipping remain intact",
+      "status": "PASS"
+    },
+    {
+      "name": "existing defaults and explicit calculation are preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "no page errors, API requests or outbound calls",
+      "status": "PASS"
+    }
+  ],
+  "observations": [
+    {
+      "scenario": "existing label accessible names",
+      "records": [
+        {
+          "label": "이름",
+          "role": "textbox",
+          "namedControlCount": 1,
+          "id": "manse-name",
+          "type": "text",
+          "value": "홍길동",
+          "labels": [
+            "이름"
+          ],
+          "uniqueId": true
+        },
+        {
+          "label": "태어난 년도",
+          "role": "spinbutton",
+          "namedControlCount": 1,
+          "id": "manse-year",
+          "type": "number",
+          "value": "1995",
+          "labels": [
+            "태어난 년도"
+          ],
+          "uniqueId": true
+        },
+        {
+          "label": "월",
+          "role": "spinbutton",
+          "namedControlCount": 1,
+          "id": "manse-month",
+          "type": "number",
+          "value": "5",
+          "labels": [
+            "월"
+          ],
+          "uniqueId": true
+        },
+        {
+          "label": "일",
+          "role": "spinbutton",
+          "namedControlCount": 1,
+          "id": "manse-day",
+          "type": "number",
+          "value": "15",
+          "labels": [
+            "일"
+          ],
+          "uniqueId": true
+        },
+        {
+          "label": "태어난 시 (0~23시):",
+          "role": "spinbutton",
+          "namedControlCount": 1,
+          "id": "manse-hour",
+          "type": "number",
+          "value": "14",
+          "labels": [
+            "태어난 시 (0~23시):"
+          ],
+          "uniqueId": true
+        }
+      ]
+    },
+    {
+      "scenario": "native label activation",
+      "records": [
+        {
+          "label": "이름",
+          "intendedInputFocused": true
+        },
+        {
+          "label": "태어난 년도",
+          "intendedInputFocused": true
+        },
+        {
+          "label": "월",
+          "intendedInputFocused": true
+        },
+        {
+          "label": "일",
+          "intendedInputFocused": true
+        },
+        {
+          "label": "태어난 시 (0~23시):",
+          "intendedInputFocused": true
+        }
+      ]
+    },
+    {
+      "scenario": "defaults and calculation",
+      "defaults": [
+        {
+          "type": "text",
+          "value": "홍길동",
+          "min": "",
+          "max": "",
+          "maxLength": 20
+        },
+        {
+          "type": "number",
+          "value": "1995",
+          "min": "1900",
+          "max": "2100",
+          "maxLength": -1
+        },
+        {
+          "type": "number",
+          "value": "5",
+          "min": "1",
+          "max": "12",
+          "maxLength": -1
+        },
+        {
+          "type": "number",
+          "value": "15",
+          "min": "1",
+          "max": "31",
+          "maxLength": -1
+        },
+        {
+          "type": "number",
+          "value": "14",
+          "min": "0",
+          "max": "23",
+          "maxLength": -1
+        }
+      ],
+      "resultName": "합성 연결"
+    }
+  ],
+  "errors": [],
+  "api": [],
+  "outbound": [],
+  "limits": [
+    "Actual built Manse form and native Chromium label/keyboard events at 390x844.",
+    "No API call, real user DB or external AI call executes. Calendar calculation accuracy is outside this association change.",
+    "Physical screen readers, hosted authentication, other browsers and physical devices are not tested."
+  ]
+}

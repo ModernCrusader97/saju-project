@@ -1,0 +1,2775 @@
+{
+  "basis": "ea018e2228df521ca560e203fe6955c1a2158c27",
+  "phase": "after",
+  "applicationSourceSHA256": "5c35553e46bf99376c2e29d0181e74029d8fdefb3e938fa4d52de22413ea84e4",
+  "widths": [
+    320,
+    360,
+    390,
+    430,
+    1100
+  ],
+  "passed": 8,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "checkbox center toggles both ways without hour overlap at 320px",
+      "width": 320,
+      "status": "PASS"
+    },
+    {
+      "name": "checkbox center toggles both ways without hour overlap at 360px",
+      "width": 360,
+      "status": "PASS"
+    },
+    {
+      "name": "checkbox center toggles both ways without hour overlap at 390px",
+      "width": 390,
+      "status": "PASS"
+    },
+    {
+      "name": "checkbox center toggles both ways without hour overlap at 430px",
+      "width": 430,
+      "status": "PASS"
+    },
+    {
+      "name": "checkbox center toggles both ways without hour overlap at 1100px",
+      "width": 1100,
+      "status": "PASS"
+    },
+    {
+      "name": "native caption clicks toggle unknown time both ways at 390px",
+      "width": 390,
+      "status": "PASS"
+    },
+    {
+      "name": "native Tab and Space preserve disabled-hour skipping at 390px",
+      "width": 390,
+      "status": "PASS"
+    },
+    {
+      "name": "no page errors, API requests or outbound calls",
+      "status": "PASS"
+    }
+  ],
+  "observations": [
+    {
+      "scenario": "fresh native checkbox center clicks",
+      "width": 320,
+      "initial": {
+        "checked": false,
+        "hourDisabled": false,
+        "hourValue": "14",
+        "checkboxRect": {
+          "x": 37,
+          "y": 647.5,
+          "width": 13,
+          "height": 13,
+          "right": 50,
+          "bottom": 660.5
+        },
+        "hourRect": {
+          "x": 145.453125,
+          "y": 579,
+          "width": 80,
+          "height": 38,
+          "right": 225.453125,
+          "bottom": 617
+        },
+        "groupRect": {
+          "x": 37,
+          "y": 576,
+          "width": 246,
+          "height": 44,
+          "right": 283,
+          "bottom": 620
+        },
+        "rowRect": {
+          "x": 37,
+          "y": 572,
+          "width": 246,
+          "height": 104,
+          "right": 283,
+          "bottom": 676
+        },
+        "labelRect": {
+          "x": 37,
+          "y": 632,
+          "width": 149.375,
+          "height": 44,
+          "right": 186.375,
+          "bottom": 676
+        },
+        "center": {
+          "x": 43.5,
+          "y": 654
+        },
+        "centerInsideCurrentCheckbox": true,
+        "centerInsideViewport": true,
+        "centerHitsCheckbox": true,
+        "centerHit": {
+          "tag": "INPUT",
+          "id": "",
+          "type": "checkbox",
+          "disabled": false
+        },
+        "overlapArea": 0,
+        "rowStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "wrap",
+          "minWidth": "0px",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "groupStyle": {
+          "flex": "1 1 0%",
+          "flexWrap": "nowrap",
+          "minWidth": "max-content",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "hourStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "checkboxStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "horizontalOverflow": false
+      },
+      "first": {
+        "checked": false,
+        "hourDisabled": false,
+        "hourValue": "14",
+        "checkboxRect": {
+          "x": 37,
+          "y": 647.5,
+          "width": 13,
+          "height": 13,
+          "right": 50,
+          "bottom": 660.5
+        },
+        "hourRect": {
+          "x": 145.453125,
+          "y": 579,
+          "width": 80,
+          "height": 38,
+          "right": 225.453125,
+          "bottom": 617
+        },
+        "groupRect": {
+          "x": 37,
+          "y": 576,
+          "width": 246,
+          "height": 44,
+          "right": 283,
+          "bottom": 620
+        },
+        "rowRect": {
+          "x": 37,
+          "y": 572,
+          "width": 246,
+          "height": 104,
+          "right": 283,
+          "bottom": 676
+        },
+        "labelRect": {
+          "x": 37,
+          "y": 632,
+          "width": 149.375,
+          "height": 44,
+          "right": 186.375,
+          "bottom": 676
+        },
+        "center": {
+          "x": 43.5,
+          "y": 654
+        },
+        "centerInsideCurrentCheckbox": true,
+        "centerInsideViewport": true,
+        "centerHitsCheckbox": true,
+        "centerHit": {
+          "tag": "INPUT",
+          "id": "",
+          "type": "checkbox",
+          "disabled": false
+        },
+        "overlapArea": 0,
+        "rowStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "wrap",
+          "minWidth": "0px",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "groupStyle": {
+          "flex": "1 1 0%",
+          "flexWrap": "nowrap",
+          "minWidth": "max-content",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "hourStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "checkboxStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "horizontalOverflow": false
+      },
+      "checked": {
+        "checked": true,
+        "hourDisabled": true,
+        "hourValue": "14",
+        "checkboxRect": {
+          "x": 37,
+          "y": 647.5,
+          "width": 13,
+          "height": 13,
+          "right": 50,
+          "bottom": 660.5
+        },
+        "hourRect": {
+          "x": 145.453125,
+          "y": 579,
+          "width": 80,
+          "height": 38,
+          "right": 225.453125,
+          "bottom": 617
+        },
+        "groupRect": {
+          "x": 37,
+          "y": 576,
+          "width": 246,
+          "height": 44,
+          "right": 283,
+          "bottom": 620
+        },
+        "rowRect": {
+          "x": 37,
+          "y": 572,
+          "width": 246,
+          "height": 104,
+          "right": 283,
+          "bottom": 676
+        },
+        "labelRect": {
+          "x": 37,
+          "y": 632,
+          "width": 149.375,
+          "height": 44,
+          "right": 186.375,
+          "bottom": 676
+        },
+        "center": {
+          "x": 43.5,
+          "y": 654
+        },
+        "centerInsideCurrentCheckbox": true,
+        "centerInsideViewport": true,
+        "centerHitsCheckbox": true,
+        "centerHit": {
+          "tag": "INPUT",
+          "id": "",
+          "type": "checkbox",
+          "disabled": false
+        },
+        "overlapArea": 0,
+        "rowStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "wrap",
+          "minWidth": "0px",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "groupStyle": {
+          "flex": "1 1 0%",
+          "flexWrap": "nowrap",
+          "minWidth": "max-content",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "hourStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "0.4",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "checkboxStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "horizontalOverflow": false
+      },
+      "second": {
+        "checked": true,
+        "hourDisabled": true,
+        "hourValue": "14",
+        "checkboxRect": {
+          "x": 37,
+          "y": 647.5,
+          "width": 13,
+          "height": 13,
+          "right": 50,
+          "bottom": 660.5
+        },
+        "hourRect": {
+          "x": 145.453125,
+          "y": 579,
+          "width": 80,
+          "height": 38,
+          "right": 225.453125,
+          "bottom": 617
+        },
+        "groupRect": {
+          "x": 37,
+          "y": 576,
+          "width": 246,
+          "height": 44,
+          "right": 283,
+          "bottom": 620
+        },
+        "rowRect": {
+          "x": 37,
+          "y": 572,
+          "width": 246,
+          "height": 104,
+          "right": 283,
+          "bottom": 676
+        },
+        "labelRect": {
+          "x": 37,
+          "y": 632,
+          "width": 149.375,
+          "height": 44,
+          "right": 186.375,
+          "bottom": 676
+        },
+        "center": {
+          "x": 43.5,
+          "y": 654
+        },
+        "centerInsideCurrentCheckbox": true,
+        "centerInsideViewport": true,
+        "centerHitsCheckbox": true,
+        "centerHit": {
+          "tag": "INPUT",
+          "id": "",
+          "type": "checkbox",
+          "disabled": false
+        },
+        "overlapArea": 0,
+        "rowStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "wrap",
+          "minWidth": "0px",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "groupStyle": {
+          "flex": "1 1 0%",
+          "flexWrap": "nowrap",
+          "minWidth": "max-content",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "hourStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "0.4",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "checkboxStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "horizontalOverflow": false
+      },
+      "unchecked": {
+        "checked": false,
+        "hourDisabled": false,
+        "hourValue": "14",
+        "checkboxRect": {
+          "x": 37,
+          "y": 647.5,
+          "width": 13,
+          "height": 13,
+          "right": 50,
+          "bottom": 660.5
+        },
+        "hourRect": {
+          "x": 145.453125,
+          "y": 579,
+          "width": 80,
+          "height": 38,
+          "right": 225.453125,
+          "bottom": 617
+        },
+        "groupRect": {
+          "x": 37,
+          "y": 576,
+          "width": 246,
+          "height": 44,
+          "right": 283,
+          "bottom": 620
+        },
+        "rowRect": {
+          "x": 37,
+          "y": 572,
+          "width": 246,
+          "height": 104,
+          "right": 283,
+          "bottom": 676
+        },
+        "labelRect": {
+          "x": 37,
+          "y": 632,
+          "width": 149.375,
+          "height": 44,
+          "right": 186.375,
+          "bottom": 676
+        },
+        "center": {
+          "x": 43.5,
+          "y": 654
+        },
+        "centerInsideCurrentCheckbox": true,
+        "centerInsideViewport": true,
+        "centerHitsCheckbox": true,
+        "centerHit": {
+          "tag": "INPUT",
+          "id": "",
+          "type": "checkbox",
+          "disabled": false
+        },
+        "overlapArea": 0,
+        "rowStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "wrap",
+          "minWidth": "0px",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "groupStyle": {
+          "flex": "1 1 0%",
+          "flexWrap": "nowrap",
+          "minWidth": "max-content",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "hourStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "checkboxStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "horizontalOverflow": false
+      },
+      "events": [
+        {
+          "type": "pointerdown",
+          "trusted": true,
+          "targetId": "",
+          "targetType": "checkbox",
+          "targetTag": "INPUT",
+          "x": 43.5,
+          "y": 654
+        },
+        {
+          "type": "click",
+          "trusted": true,
+          "targetId": "",
+          "targetType": "checkbox",
+          "targetTag": "INPUT",
+          "x": 43,
+          "y": 654
+        },
+        {
+          "type": "pointerdown",
+          "trusted": true,
+          "targetId": "",
+          "targetType": "checkbox",
+          "targetTag": "INPUT",
+          "x": 43.5,
+          "y": 654
+        },
+        {
+          "type": "click",
+          "trusted": true,
+          "targetId": "",
+          "targetType": "checkbox",
+          "targetTag": "INPUT",
+          "x": 43,
+          "y": 654
+        }
+      ]
+    },
+    {
+      "scenario": "fresh native checkbox center clicks",
+      "width": 360,
+      "initial": {
+        "checked": false,
+        "hourDisabled": false,
+        "hourValue": "14",
+        "checkboxRect": {
+          "x": 39,
+          "y": 641.5,
+          "width": 13,
+          "height": 13,
+          "right": 52,
+          "bottom": 654.5
+        },
+        "hourRect": {
+          "x": 147.453125,
+          "y": 573,
+          "width": 80,
+          "height": 38,
+          "right": 227.453125,
+          "bottom": 611
+        },
+        "groupRect": {
+          "x": 39,
+          "y": 570,
+          "width": 282,
+          "height": 44,
+          "right": 321,
+          "bottom": 614
+        },
+        "rowRect": {
+          "x": 39,
+          "y": 566,
+          "width": 282,
+          "height": 104,
+          "right": 321,
+          "bottom": 670
+        },
+        "labelRect": {
+          "x": 39,
+          "y": 626,
+          "width": 149.375,
+          "height": 44,
+          "right": 188.375,
+          "bottom": 670
+        },
+        "center": {
+          "x": 45.5,
+          "y": 648
+        },
+        "centerInsideCurrentCheckbox": true,
+        "centerInsideViewport": true,
+        "centerHitsCheckbox": true,
+        "centerHit": {
+          "tag": "INPUT",
+          "id": "",
+          "type": "checkbox",
+          "disabled": false
+        },
+        "overlapArea": 0,
+        "rowStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "wrap",
+          "minWidth": "0px",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "groupStyle": {
+          "flex": "1 1 0%",
+          "flexWrap": "nowrap",
+          "minWidth": "max-content",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "hourStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "checkboxStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "horizontalOverflow": false
+      },
+      "first": {
+        "checked": false,
+        "hourDisabled": false,
+        "hourValue": "14",
+        "checkboxRect": {
+          "x": 39,
+          "y": 641.5,
+          "width": 13,
+          "height": 13,
+          "right": 52,
+          "bottom": 654.5
+        },
+        "hourRect": {
+          "x": 147.453125,
+          "y": 573,
+          "width": 80,
+          "height": 38,
+          "right": 227.453125,
+          "bottom": 611
+        },
+        "groupRect": {
+          "x": 39,
+          "y": 570,
+          "width": 282,
+          "height": 44,
+          "right": 321,
+          "bottom": 614
+        },
+        "rowRect": {
+          "x": 39,
+          "y": 566,
+          "width": 282,
+          "height": 104,
+          "right": 321,
+          "bottom": 670
+        },
+        "labelRect": {
+          "x": 39,
+          "y": 626,
+          "width": 149.375,
+          "height": 44,
+          "right": 188.375,
+          "bottom": 670
+        },
+        "center": {
+          "x": 45.5,
+          "y": 648
+        },
+        "centerInsideCurrentCheckbox": true,
+        "centerInsideViewport": true,
+        "centerHitsCheckbox": true,
+        "centerHit": {
+          "tag": "INPUT",
+          "id": "",
+          "type": "checkbox",
+          "disabled": false
+        },
+        "overlapArea": 0,
+        "rowStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "wrap",
+          "minWidth": "0px",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "groupStyle": {
+          "flex": "1 1 0%",
+          "flexWrap": "nowrap",
+          "minWidth": "max-content",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "hourStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "checkboxStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "horizontalOverflow": false
+      },
+      "checked": {
+        "checked": true,
+        "hourDisabled": true,
+        "hourValue": "14",
+        "checkboxRect": {
+          "x": 39,
+          "y": 641.5,
+          "width": 13,
+          "height": 13,
+          "right": 52,
+          "bottom": 654.5
+        },
+        "hourRect": {
+          "x": 147.453125,
+          "y": 573,
+          "width": 80,
+          "height": 38,
+          "right": 227.453125,
+          "bottom": 611
+        },
+        "groupRect": {
+          "x": 39,
+          "y": 570,
+          "width": 282,
+          "height": 44,
+          "right": 321,
+          "bottom": 614
+        },
+        "rowRect": {
+          "x": 39,
+          "y": 566,
+          "width": 282,
+          "height": 104,
+          "right": 321,
+          "bottom": 670
+        },
+        "labelRect": {
+          "x": 39,
+          "y": 626,
+          "width": 149.375,
+          "height": 44,
+          "right": 188.375,
+          "bottom": 670
+        },
+        "center": {
+          "x": 45.5,
+          "y": 648
+        },
+        "centerInsideCurrentCheckbox": true,
+        "centerInsideViewport": true,
+        "centerHitsCheckbox": true,
+        "centerHit": {
+          "tag": "INPUT",
+          "id": "",
+          "type": "checkbox",
+          "disabled": false
+        },
+        "overlapArea": 0,
+        "rowStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "wrap",
+          "minWidth": "0px",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "groupStyle": {
+          "flex": "1 1 0%",
+          "flexWrap": "nowrap",
+          "minWidth": "max-content",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "hourStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "0.4",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "checkboxStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "horizontalOverflow": false
+      },
+      "second": {
+        "checked": true,
+        "hourDisabled": true,
+        "hourValue": "14",
+        "checkboxRect": {
+          "x": 39,
+          "y": 641.5,
+          "width": 13,
+          "height": 13,
+          "right": 52,
+          "bottom": 654.5
+        },
+        "hourRect": {
+          "x": 147.453125,
+          "y": 573,
+          "width": 80,
+          "height": 38,
+          "right": 227.453125,
+          "bottom": 611
+        },
+        "groupRect": {
+          "x": 39,
+          "y": 570,
+          "width": 282,
+          "height": 44,
+          "right": 321,
+          "bottom": 614
+        },
+        "rowRect": {
+          "x": 39,
+          "y": 566,
+          "width": 282,
+          "height": 104,
+          "right": 321,
+          "bottom": 670
+        },
+        "labelRect": {
+          "x": 39,
+          "y": 626,
+          "width": 149.375,
+          "height": 44,
+          "right": 188.375,
+          "bottom": 670
+        },
+        "center": {
+          "x": 45.5,
+          "y": 648
+        },
+        "centerInsideCurrentCheckbox": true,
+        "centerInsideViewport": true,
+        "centerHitsCheckbox": true,
+        "centerHit": {
+          "tag": "INPUT",
+          "id": "",
+          "type": "checkbox",
+          "disabled": false
+        },
+        "overlapArea": 0,
+        "rowStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "wrap",
+          "minWidth": "0px",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "groupStyle": {
+          "flex": "1 1 0%",
+          "flexWrap": "nowrap",
+          "minWidth": "max-content",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "hourStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "0.4",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "checkboxStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "horizontalOverflow": false
+      },
+      "unchecked": {
+        "checked": false,
+        "hourDisabled": false,
+        "hourValue": "14",
+        "checkboxRect": {
+          "x": 39,
+          "y": 641.5,
+          "width": 13,
+          "height": 13,
+          "right": 52,
+          "bottom": 654.5
+        },
+        "hourRect": {
+          "x": 147.453125,
+          "y": 573,
+          "width": 80,
+          "height": 38,
+          "right": 227.453125,
+          "bottom": 611
+        },
+        "groupRect": {
+          "x": 39,
+          "y": 570,
+          "width": 282,
+          "height": 44,
+          "right": 321,
+          "bottom": 614
+        },
+        "rowRect": {
+          "x": 39,
+          "y": 566,
+          "width": 282,
+          "height": 104,
+          "right": 321,
+          "bottom": 670
+        },
+        "labelRect": {
+          "x": 39,
+          "y": 626,
+          "width": 149.375,
+          "height": 44,
+          "right": 188.375,
+          "bottom": 670
+        },
+        "center": {
+          "x": 45.5,
+          "y": 648
+        },
+        "centerInsideCurrentCheckbox": true,
+        "centerInsideViewport": true,
+        "centerHitsCheckbox": true,
+        "centerHit": {
+          "tag": "INPUT",
+          "id": "",
+          "type": "checkbox",
+          "disabled": false
+        },
+        "overlapArea": 0,
+        "rowStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "wrap",
+          "minWidth": "0px",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "groupStyle": {
+          "flex": "1 1 0%",
+          "flexWrap": "nowrap",
+          "minWidth": "max-content",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "hourStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "checkboxStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "horizontalOverflow": false
+      },
+      "events": [
+        {
+          "type": "pointerdown",
+          "trusted": true,
+          "targetId": "",
+          "targetType": "checkbox",
+          "targetTag": "INPUT",
+          "x": 45.5,
+          "y": 648
+        },
+        {
+          "type": "click",
+          "trusted": true,
+          "targetId": "",
+          "targetType": "checkbox",
+          "targetTag": "INPUT",
+          "x": 45,
+          "y": 648
+        },
+        {
+          "type": "pointerdown",
+          "trusted": true,
+          "targetId": "",
+          "targetType": "checkbox",
+          "targetTag": "INPUT",
+          "x": 45.5,
+          "y": 648
+        },
+        {
+          "type": "click",
+          "trusted": true,
+          "targetId": "",
+          "targetType": "checkbox",
+          "targetTag": "INPUT",
+          "x": 45,
+          "y": 648
+        }
+      ]
+    },
+    {
+      "scenario": "fresh native checkbox center clicks",
+      "width": 390,
+      "initial": {
+        "checked": false,
+        "hourDisabled": false,
+        "hourValue": "14",
+        "checkboxRect": {
+          "x": 40.5,
+          "y": 641.5,
+          "width": 13,
+          "height": 13,
+          "right": 53.5,
+          "bottom": 654.5
+        },
+        "hourRect": {
+          "x": 148.953125,
+          "y": 573,
+          "width": 80,
+          "height": 38,
+          "right": 228.953125,
+          "bottom": 611
+        },
+        "groupRect": {
+          "x": 40.5,
+          "y": 570,
+          "width": 309,
+          "height": 44,
+          "right": 349.5,
+          "bottom": 614
+        },
+        "rowRect": {
+          "x": 40.5,
+          "y": 566,
+          "width": 309,
+          "height": 104,
+          "right": 349.5,
+          "bottom": 670
+        },
+        "labelRect": {
+          "x": 40.5,
+          "y": 626,
+          "width": 149.375,
+          "height": 44,
+          "right": 189.875,
+          "bottom": 670
+        },
+        "center": {
+          "x": 47,
+          "y": 648
+        },
+        "centerInsideCurrentCheckbox": true,
+        "centerInsideViewport": true,
+        "centerHitsCheckbox": true,
+        "centerHit": {
+          "tag": "INPUT",
+          "id": "",
+          "type": "checkbox",
+          "disabled": false
+        },
+        "overlapArea": 0,
+        "rowStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "wrap",
+          "minWidth": "0px",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "groupStyle": {
+          "flex": "1 1 0%",
+          "flexWrap": "nowrap",
+          "minWidth": "max-content",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "hourStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "checkboxStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "horizontalOverflow": false
+      },
+      "first": {
+        "checked": false,
+        "hourDisabled": false,
+        "hourValue": "14",
+        "checkboxRect": {
+          "x": 40.5,
+          "y": 641.5,
+          "width": 13,
+          "height": 13,
+          "right": 53.5,
+          "bottom": 654.5
+        },
+        "hourRect": {
+          "x": 148.953125,
+          "y": 573,
+          "width": 80,
+          "height": 38,
+          "right": 228.953125,
+          "bottom": 611
+        },
+        "groupRect": {
+          "x": 40.5,
+          "y": 570,
+          "width": 309,
+          "height": 44,
+          "right": 349.5,
+          "bottom": 614
+        },
+        "rowRect": {
+          "x": 40.5,
+          "y": 566,
+          "width": 309,
+          "height": 104,
+          "right": 349.5,
+          "bottom": 670
+        },
+        "labelRect": {
+          "x": 40.5,
+          "y": 626,
+          "width": 149.375,
+          "height": 44,
+          "right": 189.875,
+          "bottom": 670
+        },
+        "center": {
+          "x": 47,
+          "y": 648
+        },
+        "centerInsideCurrentCheckbox": true,
+        "centerInsideViewport": true,
+        "centerHitsCheckbox": true,
+        "centerHit": {
+          "tag": "INPUT",
+          "id": "",
+          "type": "checkbox",
+          "disabled": false
+        },
+        "overlapArea": 0,
+        "rowStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "wrap",
+          "minWidth": "0px",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "groupStyle": {
+          "flex": "1 1 0%",
+          "flexWrap": "nowrap",
+          "minWidth": "max-content",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "hourStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "checkboxStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "horizontalOverflow": false
+      },
+      "checked": {
+        "checked": true,
+        "hourDisabled": true,
+        "hourValue": "14",
+        "checkboxRect": {
+          "x": 40.5,
+          "y": 641.5,
+          "width": 13,
+          "height": 13,
+          "right": 53.5,
+          "bottom": 654.5
+        },
+        "hourRect": {
+          "x": 148.953125,
+          "y": 573,
+          "width": 80,
+          "height": 38,
+          "right": 228.953125,
+          "bottom": 611
+        },
+        "groupRect": {
+          "x": 40.5,
+          "y": 570,
+          "width": 309,
+          "height": 44,
+          "right": 349.5,
+          "bottom": 614
+        },
+        "rowRect": {
+          "x": 40.5,
+          "y": 566,
+          "width": 309,
+          "height": 104,
+          "right": 349.5,
+          "bottom": 670
+        },
+        "labelRect": {
+          "x": 40.5,
+          "y": 626,
+          "width": 149.375,
+          "height": 44,
+          "right": 189.875,
+          "bottom": 670
+        },
+        "center": {
+          "x": 47,
+          "y": 648
+        },
+        "centerInsideCurrentCheckbox": true,
+        "centerInsideViewport": true,
+        "centerHitsCheckbox": true,
+        "centerHit": {
+          "tag": "INPUT",
+          "id": "",
+          "type": "checkbox",
+          "disabled": false
+        },
+        "overlapArea": 0,
+        "rowStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "wrap",
+          "minWidth": "0px",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "groupStyle": {
+          "flex": "1 1 0%",
+          "flexWrap": "nowrap",
+          "minWidth": "max-content",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "hourStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "0.4",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "checkboxStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "horizontalOverflow": false
+      },
+      "second": {
+        "checked": true,
+        "hourDisabled": true,
+        "hourValue": "14",
+        "checkboxRect": {
+          "x": 40.5,
+          "y": 641.5,
+          "width": 13,
+          "height": 13,
+          "right": 53.5,
+          "bottom": 654.5
+        },
+        "hourRect": {
+          "x": 148.953125,
+          "y": 573,
+          "width": 80,
+          "height": 38,
+          "right": 228.953125,
+          "bottom": 611
+        },
+        "groupRect": {
+          "x": 40.5,
+          "y": 570,
+          "width": 309,
+          "height": 44,
+          "right": 349.5,
+          "bottom": 614
+        },
+        "rowRect": {
+          "x": 40.5,
+          "y": 566,
+          "width": 309,
+          "height": 104,
+          "right": 349.5,
+          "bottom": 670
+        },
+        "labelRect": {
+          "x": 40.5,
+          "y": 626,
+          "width": 149.375,
+          "height": 44,
+          "right": 189.875,
+          "bottom": 670
+        },
+        "center": {
+          "x": 47,
+          "y": 648
+        },
+        "centerInsideCurrentCheckbox": true,
+        "centerInsideViewport": true,
+        "centerHitsCheckbox": true,
+        "centerHit": {
+          "tag": "INPUT",
+          "id": "",
+          "type": "checkbox",
+          "disabled": false
+        },
+        "overlapArea": 0,
+        "rowStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "wrap",
+          "minWidth": "0px",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "groupStyle": {
+          "flex": "1 1 0%",
+          "flexWrap": "nowrap",
+          "minWidth": "max-content",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "hourStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "0.4",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "checkboxStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "horizontalOverflow": false
+      },
+      "unchecked": {
+        "checked": false,
+        "hourDisabled": false,
+        "hourValue": "14",
+        "checkboxRect": {
+          "x": 40.5,
+          "y": 641.5,
+          "width": 13,
+          "height": 13,
+          "right": 53.5,
+          "bottom": 654.5
+        },
+        "hourRect": {
+          "x": 148.953125,
+          "y": 573,
+          "width": 80,
+          "height": 38,
+          "right": 228.953125,
+          "bottom": 611
+        },
+        "groupRect": {
+          "x": 40.5,
+          "y": 570,
+          "width": 309,
+          "height": 44,
+          "right": 349.5,
+          "bottom": 614
+        },
+        "rowRect": {
+          "x": 40.5,
+          "y": 566,
+          "width": 309,
+          "height": 104,
+          "right": 349.5,
+          "bottom": 670
+        },
+        "labelRect": {
+          "x": 40.5,
+          "y": 626,
+          "width": 149.375,
+          "height": 44,
+          "right": 189.875,
+          "bottom": 670
+        },
+        "center": {
+          "x": 47,
+          "y": 648
+        },
+        "centerInsideCurrentCheckbox": true,
+        "centerInsideViewport": true,
+        "centerHitsCheckbox": true,
+        "centerHit": {
+          "tag": "INPUT",
+          "id": "",
+          "type": "checkbox",
+          "disabled": false
+        },
+        "overlapArea": 0,
+        "rowStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "wrap",
+          "minWidth": "0px",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "groupStyle": {
+          "flex": "1 1 0%",
+          "flexWrap": "nowrap",
+          "minWidth": "max-content",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "hourStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "checkboxStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "horizontalOverflow": false
+      },
+      "events": [
+        {
+          "type": "pointerdown",
+          "trusted": true,
+          "targetId": "",
+          "targetType": "checkbox",
+          "targetTag": "INPUT",
+          "x": 47,
+          "y": 648
+        },
+        {
+          "type": "click",
+          "trusted": true,
+          "targetId": "",
+          "targetType": "checkbox",
+          "targetTag": "INPUT",
+          "x": 47,
+          "y": 648
+        },
+        {
+          "type": "pointerdown",
+          "trusted": true,
+          "targetId": "",
+          "targetType": "checkbox",
+          "targetTag": "INPUT",
+          "x": 47,
+          "y": 648
+        },
+        {
+          "type": "click",
+          "trusted": true,
+          "targetId": "",
+          "targetType": "checkbox",
+          "targetTag": "INPUT",
+          "x": 47,
+          "y": 648
+        }
+      ]
+    },
+    {
+      "scenario": "fresh native checkbox center clicks",
+      "width": 430,
+      "initial": {
+        "checked": false,
+        "hourDisabled": false,
+        "hourValue": "14",
+        "checkboxRect": {
+          "x": 42.5,
+          "y": 641.5,
+          "width": 13,
+          "height": 13,
+          "right": 55.5,
+          "bottom": 654.5
+        },
+        "hourRect": {
+          "x": 150.953125,
+          "y": 573,
+          "width": 80,
+          "height": 38,
+          "right": 230.953125,
+          "bottom": 611
+        },
+        "groupRect": {
+          "x": 42.5,
+          "y": 570,
+          "width": 345,
+          "height": 44,
+          "right": 387.5,
+          "bottom": 614
+        },
+        "rowRect": {
+          "x": 42.5,
+          "y": 566,
+          "width": 345,
+          "height": 104,
+          "right": 387.5,
+          "bottom": 670
+        },
+        "labelRect": {
+          "x": 42.5,
+          "y": 626,
+          "width": 149.375,
+          "height": 44,
+          "right": 191.875,
+          "bottom": 670
+        },
+        "center": {
+          "x": 49,
+          "y": 648
+        },
+        "centerInsideCurrentCheckbox": true,
+        "centerInsideViewport": true,
+        "centerHitsCheckbox": true,
+        "centerHit": {
+          "tag": "INPUT",
+          "id": "",
+          "type": "checkbox",
+          "disabled": false
+        },
+        "overlapArea": 0,
+        "rowStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "wrap",
+          "minWidth": "0px",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "groupStyle": {
+          "flex": "1 1 0%",
+          "flexWrap": "nowrap",
+          "minWidth": "max-content",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "hourStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "checkboxStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "horizontalOverflow": false
+      },
+      "first": {
+        "checked": false,
+        "hourDisabled": false,
+        "hourValue": "14",
+        "checkboxRect": {
+          "x": 42.5,
+          "y": 641.5,
+          "width": 13,
+          "height": 13,
+          "right": 55.5,
+          "bottom": 654.5
+        },
+        "hourRect": {
+          "x": 150.953125,
+          "y": 573,
+          "width": 80,
+          "height": 38,
+          "right": 230.953125,
+          "bottom": 611
+        },
+        "groupRect": {
+          "x": 42.5,
+          "y": 570,
+          "width": 345,
+          "height": 44,
+          "right": 387.5,
+          "bottom": 614
+        },
+        "rowRect": {
+          "x": 42.5,
+          "y": 566,
+          "width": 345,
+          "height": 104,
+          "right": 387.5,
+          "bottom": 670
+        },
+        "labelRect": {
+          "x": 42.5,
+          "y": 626,
+          "width": 149.375,
+          "height": 44,
+          "right": 191.875,
+          "bottom": 670
+        },
+        "center": {
+          "x": 49,
+          "y": 648
+        },
+        "centerInsideCurrentCheckbox": true,
+        "centerInsideViewport": true,
+        "centerHitsCheckbox": true,
+        "centerHit": {
+          "tag": "INPUT",
+          "id": "",
+          "type": "checkbox",
+          "disabled": false
+        },
+        "overlapArea": 0,
+        "rowStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "wrap",
+          "minWidth": "0px",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "groupStyle": {
+          "flex": "1 1 0%",
+          "flexWrap": "nowrap",
+          "minWidth": "max-content",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "hourStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "checkboxStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "horizontalOverflow": false
+      },
+      "checked": {
+        "checked": true,
+        "hourDisabled": true,
+        "hourValue": "14",
+        "checkboxRect": {
+          "x": 42.5,
+          "y": 641.5,
+          "width": 13,
+          "height": 13,
+          "right": 55.5,
+          "bottom": 654.5
+        },
+        "hourRect": {
+          "x": 150.953125,
+          "y": 573,
+          "width": 80,
+          "height": 38,
+          "right": 230.953125,
+          "bottom": 611
+        },
+        "groupRect": {
+          "x": 42.5,
+          "y": 570,
+          "width": 345,
+          "height": 44,
+          "right": 387.5,
+          "bottom": 614
+        },
+        "rowRect": {
+          "x": 42.5,
+          "y": 566,
+          "width": 345,
+          "height": 104,
+          "right": 387.5,
+          "bottom": 670
+        },
+        "labelRect": {
+          "x": 42.5,
+          "y": 626,
+          "width": 149.375,
+          "height": 44,
+          "right": 191.875,
+          "bottom": 670
+        },
+        "center": {
+          "x": 49,
+          "y": 648
+        },
+        "centerInsideCurrentCheckbox": true,
+        "centerInsideViewport": true,
+        "centerHitsCheckbox": true,
+        "centerHit": {
+          "tag": "INPUT",
+          "id": "",
+          "type": "checkbox",
+          "disabled": false
+        },
+        "overlapArea": 0,
+        "rowStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "wrap",
+          "minWidth": "0px",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "groupStyle": {
+          "flex": "1 1 0%",
+          "flexWrap": "nowrap",
+          "minWidth": "max-content",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "hourStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "0.4",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "checkboxStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "horizontalOverflow": false
+      },
+      "second": {
+        "checked": true,
+        "hourDisabled": true,
+        "hourValue": "14",
+        "checkboxRect": {
+          "x": 42.5,
+          "y": 641.5,
+          "width": 13,
+          "height": 13,
+          "right": 55.5,
+          "bottom": 654.5
+        },
+        "hourRect": {
+          "x": 150.953125,
+          "y": 573,
+          "width": 80,
+          "height": 38,
+          "right": 230.953125,
+          "bottom": 611
+        },
+        "groupRect": {
+          "x": 42.5,
+          "y": 570,
+          "width": 345,
+          "height": 44,
+          "right": 387.5,
+          "bottom": 614
+        },
+        "rowRect": {
+          "x": 42.5,
+          "y": 566,
+          "width": 345,
+          "height": 104,
+          "right": 387.5,
+          "bottom": 670
+        },
+        "labelRect": {
+          "x": 42.5,
+          "y": 626,
+          "width": 149.375,
+          "height": 44,
+          "right": 191.875,
+          "bottom": 670
+        },
+        "center": {
+          "x": 49,
+          "y": 648
+        },
+        "centerInsideCurrentCheckbox": true,
+        "centerInsideViewport": true,
+        "centerHitsCheckbox": true,
+        "centerHit": {
+          "tag": "INPUT",
+          "id": "",
+          "type": "checkbox",
+          "disabled": false
+        },
+        "overlapArea": 0,
+        "rowStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "wrap",
+          "minWidth": "0px",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "groupStyle": {
+          "flex": "1 1 0%",
+          "flexWrap": "nowrap",
+          "minWidth": "max-content",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "hourStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "0.4",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "checkboxStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "horizontalOverflow": false
+      },
+      "unchecked": {
+        "checked": false,
+        "hourDisabled": false,
+        "hourValue": "14",
+        "checkboxRect": {
+          "x": 42.5,
+          "y": 641.5,
+          "width": 13,
+          "height": 13,
+          "right": 55.5,
+          "bottom": 654.5
+        },
+        "hourRect": {
+          "x": 150.953125,
+          "y": 573,
+          "width": 80,
+          "height": 38,
+          "right": 230.953125,
+          "bottom": 611
+        },
+        "groupRect": {
+          "x": 42.5,
+          "y": 570,
+          "width": 345,
+          "height": 44,
+          "right": 387.5,
+          "bottom": 614
+        },
+        "rowRect": {
+          "x": 42.5,
+          "y": 566,
+          "width": 345,
+          "height": 104,
+          "right": 387.5,
+          "bottom": 670
+        },
+        "labelRect": {
+          "x": 42.5,
+          "y": 626,
+          "width": 149.375,
+          "height": 44,
+          "right": 191.875,
+          "bottom": 670
+        },
+        "center": {
+          "x": 49,
+          "y": 648
+        },
+        "centerInsideCurrentCheckbox": true,
+        "centerInsideViewport": true,
+        "centerHitsCheckbox": true,
+        "centerHit": {
+          "tag": "INPUT",
+          "id": "",
+          "type": "checkbox",
+          "disabled": false
+        },
+        "overlapArea": 0,
+        "rowStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "wrap",
+          "minWidth": "0px",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "groupStyle": {
+          "flex": "1 1 0%",
+          "flexWrap": "nowrap",
+          "minWidth": "max-content",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "hourStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "checkboxStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "horizontalOverflow": false
+      },
+      "events": [
+        {
+          "type": "pointerdown",
+          "trusted": true,
+          "targetId": "",
+          "targetType": "checkbox",
+          "targetTag": "INPUT",
+          "x": 49,
+          "y": 648
+        },
+        {
+          "type": "click",
+          "trusted": true,
+          "targetId": "",
+          "targetType": "checkbox",
+          "targetTag": "INPUT",
+          "x": 49,
+          "y": 648
+        },
+        {
+          "type": "pointerdown",
+          "trusted": true,
+          "targetId": "",
+          "targetType": "checkbox",
+          "targetTag": "INPUT",
+          "x": 49,
+          "y": 648
+        },
+        {
+          "type": "click",
+          "trusted": true,
+          "targetId": "",
+          "targetType": "checkbox",
+          "targetTag": "INPUT",
+          "x": 49,
+          "y": 648
+        }
+      ]
+    },
+    {
+      "scenario": "fresh native checkbox center clicks",
+      "width": 1100,
+      "initial": {
+        "checked": false,
+        "hourDisabled": false,
+        "hourValue": "14",
+        "checkboxRect": {
+          "x": 874.625,
+          "y": 477.5,
+          "width": 13,
+          "height": 13,
+          "right": 887.625,
+          "bottom": 490.5
+        },
+        "hourRect": {
+          "x": 184.453125,
+          "y": 466.5,
+          "width": 80,
+          "height": 35,
+          "right": 264.453125,
+          "bottom": 501.5
+        },
+        "groupRect": {
+          "x": 76,
+          "y": 462,
+          "width": 786.625,
+          "height": 44,
+          "right": 862.625,
+          "bottom": 506
+        },
+        "rowRect": {
+          "x": 76,
+          "y": 458,
+          "width": 948,
+          "height": 48,
+          "right": 1024,
+          "bottom": 506
+        },
+        "labelRect": {
+          "x": 874.625,
+          "y": 462,
+          "width": 149.375,
+          "height": 44,
+          "right": 1024,
+          "bottom": 506
+        },
+        "center": {
+          "x": 881.125,
+          "y": 484
+        },
+        "centerInsideCurrentCheckbox": true,
+        "centerInsideViewport": true,
+        "centerHitsCheckbox": true,
+        "centerHit": {
+          "tag": "INPUT",
+          "id": "",
+          "type": "checkbox",
+          "disabled": false
+        },
+        "overlapArea": 0,
+        "rowStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "wrap",
+          "minWidth": "0px",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "groupStyle": {
+          "flex": "1 1 0%",
+          "flexWrap": "nowrap",
+          "minWidth": "max-content",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "hourStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "checkboxStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "horizontalOverflow": false
+      },
+      "first": {
+        "checked": false,
+        "hourDisabled": false,
+        "hourValue": "14",
+        "checkboxRect": {
+          "x": 874.625,
+          "y": 477.5,
+          "width": 13,
+          "height": 13,
+          "right": 887.625,
+          "bottom": 490.5
+        },
+        "hourRect": {
+          "x": 184.453125,
+          "y": 466.5,
+          "width": 80,
+          "height": 35,
+          "right": 264.453125,
+          "bottom": 501.5
+        },
+        "groupRect": {
+          "x": 76,
+          "y": 462,
+          "width": 786.625,
+          "height": 44,
+          "right": 862.625,
+          "bottom": 506
+        },
+        "rowRect": {
+          "x": 76,
+          "y": 458,
+          "width": 948,
+          "height": 48,
+          "right": 1024,
+          "bottom": 506
+        },
+        "labelRect": {
+          "x": 874.625,
+          "y": 462,
+          "width": 149.375,
+          "height": 44,
+          "right": 1024,
+          "bottom": 506
+        },
+        "center": {
+          "x": 881.125,
+          "y": 484
+        },
+        "centerInsideCurrentCheckbox": true,
+        "centerInsideViewport": true,
+        "centerHitsCheckbox": true,
+        "centerHit": {
+          "tag": "INPUT",
+          "id": "",
+          "type": "checkbox",
+          "disabled": false
+        },
+        "overlapArea": 0,
+        "rowStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "wrap",
+          "minWidth": "0px",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "groupStyle": {
+          "flex": "1 1 0%",
+          "flexWrap": "nowrap",
+          "minWidth": "max-content",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "hourStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "checkboxStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "horizontalOverflow": false
+      },
+      "checked": {
+        "checked": true,
+        "hourDisabled": true,
+        "hourValue": "14",
+        "checkboxRect": {
+          "x": 874.625,
+          "y": 477.5,
+          "width": 13,
+          "height": 13,
+          "right": 887.625,
+          "bottom": 490.5
+        },
+        "hourRect": {
+          "x": 184.453125,
+          "y": 466.5,
+          "width": 80,
+          "height": 35,
+          "right": 264.453125,
+          "bottom": 501.5
+        },
+        "groupRect": {
+          "x": 76,
+          "y": 462,
+          "width": 786.625,
+          "height": 44,
+          "right": 862.625,
+          "bottom": 506
+        },
+        "rowRect": {
+          "x": 76,
+          "y": 458,
+          "width": 948,
+          "height": 48,
+          "right": 1024,
+          "bottom": 506
+        },
+        "labelRect": {
+          "x": 874.625,
+          "y": 462,
+          "width": 149.375,
+          "height": 44,
+          "right": 1024,
+          "bottom": 506
+        },
+        "center": {
+          "x": 881.125,
+          "y": 484
+        },
+        "centerInsideCurrentCheckbox": true,
+        "centerInsideViewport": true,
+        "centerHitsCheckbox": true,
+        "centerHit": {
+          "tag": "INPUT",
+          "id": "",
+          "type": "checkbox",
+          "disabled": false
+        },
+        "overlapArea": 0,
+        "rowStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "wrap",
+          "minWidth": "0px",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "groupStyle": {
+          "flex": "1 1 0%",
+          "flexWrap": "nowrap",
+          "minWidth": "max-content",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "hourStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "0.4",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "checkboxStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "horizontalOverflow": false
+      },
+      "second": {
+        "checked": true,
+        "hourDisabled": true,
+        "hourValue": "14",
+        "checkboxRect": {
+          "x": 874.625,
+          "y": 477.5,
+          "width": 13,
+          "height": 13,
+          "right": 887.625,
+          "bottom": 490.5
+        },
+        "hourRect": {
+          "x": 184.453125,
+          "y": 466.5,
+          "width": 80,
+          "height": 35,
+          "right": 264.453125,
+          "bottom": 501.5
+        },
+        "groupRect": {
+          "x": 76,
+          "y": 462,
+          "width": 786.625,
+          "height": 44,
+          "right": 862.625,
+          "bottom": 506
+        },
+        "rowRect": {
+          "x": 76,
+          "y": 458,
+          "width": 948,
+          "height": 48,
+          "right": 1024,
+          "bottom": 506
+        },
+        "labelRect": {
+          "x": 874.625,
+          "y": 462,
+          "width": 149.375,
+          "height": 44,
+          "right": 1024,
+          "bottom": 506
+        },
+        "center": {
+          "x": 881.125,
+          "y": 484
+        },
+        "centerInsideCurrentCheckbox": true,
+        "centerInsideViewport": true,
+        "centerHitsCheckbox": true,
+        "centerHit": {
+          "tag": "INPUT",
+          "id": "",
+          "type": "checkbox",
+          "disabled": false
+        },
+        "overlapArea": 0,
+        "rowStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "wrap",
+          "minWidth": "0px",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "groupStyle": {
+          "flex": "1 1 0%",
+          "flexWrap": "nowrap",
+          "minWidth": "max-content",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "hourStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "0.4",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "checkboxStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "horizontalOverflow": false
+      },
+      "unchecked": {
+        "checked": false,
+        "hourDisabled": false,
+        "hourValue": "14",
+        "checkboxRect": {
+          "x": 874.625,
+          "y": 477.5,
+          "width": 13,
+          "height": 13,
+          "right": 887.625,
+          "bottom": 490.5
+        },
+        "hourRect": {
+          "x": 184.453125,
+          "y": 466.5,
+          "width": 80,
+          "height": 35,
+          "right": 264.453125,
+          "bottom": 501.5
+        },
+        "groupRect": {
+          "x": 76,
+          "y": 462,
+          "width": 786.625,
+          "height": 44,
+          "right": 862.625,
+          "bottom": 506
+        },
+        "rowRect": {
+          "x": 76,
+          "y": 458,
+          "width": 948,
+          "height": 48,
+          "right": 1024,
+          "bottom": 506
+        },
+        "labelRect": {
+          "x": 874.625,
+          "y": 462,
+          "width": 149.375,
+          "height": 44,
+          "right": 1024,
+          "bottom": 506
+        },
+        "center": {
+          "x": 881.125,
+          "y": 484
+        },
+        "centerInsideCurrentCheckbox": true,
+        "centerInsideViewport": true,
+        "centerHitsCheckbox": true,
+        "centerHit": {
+          "tag": "INPUT",
+          "id": "",
+          "type": "checkbox",
+          "disabled": false
+        },
+        "overlapArea": 0,
+        "rowStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "wrap",
+          "minWidth": "0px",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "groupStyle": {
+          "flex": "1 1 0%",
+          "flexWrap": "nowrap",
+          "minWidth": "max-content",
+          "maxWidth": "none",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "hourStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "checkboxStyle": {
+          "flex": "0 1 auto",
+          "flexWrap": "nowrap",
+          "minWidth": "auto",
+          "maxWidth": "100%",
+          "opacity": "1",
+          "position": "static",
+          "zIndex": "auto",
+          "pointerEvents": "auto"
+        },
+        "horizontalOverflow": false
+      },
+      "events": [
+        {
+          "type": "pointerdown",
+          "trusted": true,
+          "targetId": "",
+          "targetType": "checkbox",
+          "targetTag": "INPUT",
+          "x": 881.125,
+          "y": 484
+        },
+        {
+          "type": "click",
+          "trusted": true,
+          "targetId": "",
+          "targetType": "checkbox",
+          "targetTag": "INPUT",
+          "x": 881,
+          "y": 484
+        },
+        {
+          "type": "pointerdown",
+          "trusted": true,
+          "targetId": "",
+          "targetType": "checkbox",
+          "targetTag": "INPUT",
+          "x": 881.125,
+          "y": 484
+        },
+        {
+          "type": "click",
+          "trusted": true,
+          "targetId": "",
+          "targetType": "checkbox",
+          "targetTag": "INPUT",
+          "x": 881,
+          "y": 484
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "api": [],
+  "outbound": [],
+  "limits": [
+    "Actual built Manse page with native Chromium pointer, label and keyboard events.",
+    "Fresh viewport coordinates are measured after scrolling and after every state change. No force click, z-index override, handler invocation or event interception fix.",
+    "No API call, real user DB or external AI call executes. Physical devices, screen readers, other browsers, hosted authentication and calendar accuracy are not tested."
+  ]
+}
