@@ -1,0 +1,263 @@
+{
+  "status": "NEW_APPROVED_DESIGN_3D_CANDIDATE_VERIFIED",
+  "reference": {
+    "drive_id": "1Aop_3VuaFcGOcbuqkmKuLh4eRDiC4N3R",
+    "library_id": "libfile_5b6221dbc0f48191aea2118b22b4791a",
+    "bytes": 1651398,
+    "sha256": "6184555091c80769d6553ae40641dbb44eb6dcc859dd0b8591b7887cc1502e58",
+    "pixels": [
+      1254,
+      1254
+    ]
+  },
+  "repository": "ModernCrusader97/saju-project",
+  "visibility": "private",
+  "branch": "art/dragon-approved-mini-pet-20261010-joseph",
+  "base_commit": "2e2d82b05f87b39ff8057ae914e8dfa01100a974",
+  "source_blend_sha256": "0e4cd443c67a180bfff6befd7b2d5b67dca70ad298f0ecea5e83ba1a22396938",
+  "glb_sha256": "5060b049e5e74519bd0991c4280f4a492f6b1025e6639d9f166a92a51f2a9343",
+  "video_sha256": "96dbc2adfadea5e06eda9fe427e9a650488a17c3a7857a72771e0cac4be4a4d6",
+  "candidate_version": 2,
+  "preserved_v1_commit": "66141436fe4eb1461fcb1427475e2781b49e4e8d",
+  "blender_version": "5.2.1 LTS",
+  "node_version": "v24.13.1",
+  "loop_seconds": 6,
+  "final_selection": {
+    "blend": "model-v11 refined: exact approved PNG retained via fake-user; same final generator packed",
+    "glb": "model-v11 refined: same final GLB bytes as runtime QA and actual rendered MP4",
+    "native_glb_pair": "Final saved blend and delivered GLB round-trip validation passed"
+  },
+  "app_checks": "PASS_TYPES_AND_PRODUCTION_BUILD",
+  "khronos": {
+    "errors": 0,
+    "warnings": 10,
+    "infos": 0
+  },
+  "limitations": [
+    "222646 triangles; no mobile GPU performance/LOD assessment",
+    "Browser automated playback tool unavailable; actual MP4 decode and visual boundary review completed"
+  ],
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 84,
+      "sha256": "6a40c62d60215b658de023099dca346b7c471bc06299f80f18f9fe08c9bd3f88"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6947,
+      "sha256": "f8678d92f6991977ba6ca0d7cc85ea08ff9bbdd9258fc81a39193ddbe278989f"
+    },
+    {
+      "path": "SaJu_Dragon_Approved_Candidate_v2.blend",
+      "bytes": 14284584,
+      "sha256": "0e4cd443c67a180bfff6befd7b2d5b67dca70ad298f0ecea5e83ba1a22396938"
+    },
+    {
+      "path": "SaJu_Dragon_Approved_Candidate_v2.glb",
+      "bytes": 6715056,
+      "sha256": "5060b049e5e74519bd0991c4280f4a492f6b1025e6639d9f166a92a51f2a9343"
+    },
+    {
+      "path": "previews/actual-mp4-full-cycle.png",
+      "bytes": 490137,
+      "sha256": "fdccd0d7c83dd775521010b1cb5fc040b87f3f828d34290506361674566f69d3"
+    },
+    {
+      "path": "previews/actual-mp4-loop-boundary.png",
+      "bytes": 392892,
+      "sha256": "37c891b445ca6fd720a32ec1c35de487a8c0a723454f0dbe0442735293ffe5c9"
+    },
+    {
+      "path": "previews/front.png",
+      "bytes": 880276,
+      "sha256": "8e020eeabec8c7503659d594db35cf7d7408a90b4cbcc06fbcbd33cbfe30bdc6"
+    },
+    {
+      "path": "previews/glb-reimport-threequarter.png",
+      "bytes": 913838,
+      "sha256": "78f23125f2826347ac20acbf2ac92f74aeaf94e639f9c4fcad2707b719fa500e"
+    },
+    {
+      "path": "previews/idle-actual-glb.mp4",
+      "bytes": 261915,
+      "sha256": "96dbc2adfadea5e06eda9fe427e9a650488a17c3a7857a72771e0cac4be4a4d6"
+    },
+    {
+      "path": "previews/junction-before-after.png",
+      "bytes": 647257,
+      "sha256": "f5d458c2ef2f33094fa1e1990e526b038bcb426163ea1062429aff6b75ff7f94"
+    },
+    {
+      "path": "previews/side.png",
+      "bytes": 785623,
+      "sha256": "ea4bb3adcc869b7d7a823c67603ed6924cc0033e2752c4944db860ffa8cd8586"
+    },
+    {
+      "path": "previews/threequarter.png",
+      "bytes": 913849,
+      "sha256": "146c74a8ee633c4bf0bfec6fc0b8beb67057baf984600184e85200fc5bb98d0b"
+    },
+    {
+      "path": "qa/application-checks.json",
+      "bytes": 794,
+      "sha256": "149191d43f6621f304ab122e1ef0cb05b28f87fef512e701c4834211892e5ccf"
+    },
+    {
+      "path": "qa/build.log",
+      "bytes": 2510,
+      "sha256": "7551799b172377137a4a05d7a54c5c0befaa3863d281e6363df092c40e8f46ff"
+    },
+    {
+      "path": "qa/generation-report.json",
+      "bytes": 832,
+      "sha256": "49beafd8ac7b2e4f98daf0525985d346e81f524bbe49a2c9734cfb1b0e857be2"
+    },
+    {
+      "path": "qa/history/native-glb-qa-v01.log",
+      "bytes": 700,
+      "sha256": "91f3882f1d7c8987d3690ce4e11d999063bea7dccfbe21030526a46871d6924f"
+    },
+    {
+      "path": "qa/history/native-v04-failure-diagnostics.json",
+      "bytes": 10689,
+      "sha256": "d536dc014b205fe78b878e102f3faf93341c078a71690831f03eb8cb36275b14"
+    },
+    {
+      "path": "qa/history/packed-source-initial-failure.log",
+      "bytes": 227,
+      "sha256": "7b3cbcc19c149ad6b3166d1d0e20b46bafe1228fcba4e98b9757f281d858eb36"
+    },
+    {
+      "path": "qa/history/roundtrip-v01-failure-diagnostics.json",
+      "bytes": 67647,
+      "sha256": "04d58487a795f2c2ed6b2d66aff49a9edc7a384e65a1dd60ff58a9b96796177b"
+    },
+    {
+      "path": "qa/history/runtime-verification-initial.log",
+      "bytes": 377,
+      "sha256": "a800dfcee243557354cf69e741a8d2461a992cc69390172fea1ae301350f600b"
+    },
+    {
+      "path": "qa/junction-after.json",
+      "bytes": 1345,
+      "sha256": "3540032ff72354016affba7038a7ef4930ecd1c8fc8e5054e055e6ccc6931f3d"
+    },
+    {
+      "path": "qa/junction-before.json",
+      "bytes": 1342,
+      "sha256": "59d01af0a5c9c3a026b3d63c87de8bf48632efd8c1cb4cf5b2b71a1d0d447cf0"
+    },
+    {
+      "path": "qa/khronos-verification-v2.json",
+      "bytes": 3482,
+      "sha256": "02d06b91afd08feee8a5ee70047f3abf40cdd93eecc58857d84e8da0b05a5e65"
+    },
+    {
+      "path": "qa/model-generation.log",
+      "bytes": 2274,
+      "sha256": "bb0d750a39ddc79474e35b4af51d126138e7c2cf048c2c3e6837c85e10c1a3c3"
+    },
+    {
+      "path": "qa/native-glb-verification.json",
+      "bytes": 1766,
+      "sha256": "450a59a11a99cca94ebd1ac4b435e0ce3cc2ff372091f8585acd33025dc3b5c8"
+    },
+    {
+      "path": "qa/native-glb-verification.log",
+      "bytes": 2157,
+      "sha256": "6cc131515946908069db055a246a10844744c3520ba61d9b7b357c111c81b7eb"
+    },
+    {
+      "path": "qa/packed-source-verification.json",
+      "bytes": 444,
+      "sha256": "17546585de65a7d5605a9c40125f5d19fcd2e35e62a8c86aaa96df62e27280c1"
+    },
+    {
+      "path": "qa/private-preview-files.json",
+      "bytes": 1986,
+      "sha256": "dae1c67b9815f5aeaadcb4df0d19f63c625673bd5bf6c2fa13dc67cd9d4ab540"
+    },
+    {
+      "path": "qa/render-provenance.json",
+      "bytes": 8209,
+      "sha256": "ce80804050c98e50d00cb3c0bd177cda0bb179d0c826ff3baf53b3a618891963"
+    },
+    {
+      "path": "qa/runtime-verification.json",
+      "bytes": 1109,
+      "sha256": "0497fd7a7717ea39dc9318e8dbd3152ecffbbc0d868ff1ae82372871791df37c"
+    },
+    {
+      "path": "qa/typecheck.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "qa/video-verification.json",
+      "bytes": 1977,
+      "sha256": "7b905b40bbf2dc231621716e3ff49c4829c7a3e20d1367340b2bb159724cc194"
+    },
+    {
+      "path": "qa/visual-review.json",
+      "bytes": 1191,
+      "sha256": "9be9245778a2af6c5ec16c362217601667c17f36d08e80bf3feaf0483595ac9f"
+    },
+    {
+      "path": "reference/SaJu_dragon_new-approved-design-concept_2D-image_not-3D-model_2026-10-10.png",
+      "bytes": 1651398,
+      "sha256": "6184555091c80769d6553ae40641dbb44eb6dcc859dd0b8591b7887cc1502e58"
+    },
+    {
+      "path": "source/build_dragon.py",
+      "bytes": 38600,
+      "sha256": "d65e1272a7356256160970150b7d770d00a06f3d6f2ea96e1cd1a233e11c2b35"
+    },
+    {
+      "path": "source/diagnose_junction.py",
+      "bytes": 3066,
+      "sha256": "444b64f97e16ef0ec904de2a16a599b291218eecedf6ad29c3c0a07733ba60a4"
+    },
+    {
+      "path": "source/encode_idle.mjs",
+      "bytes": 2934,
+      "sha256": "487f2665c2c63a10726f34eeed34e1696012bdedbe4f09ee9d96f45b18c697e8"
+    },
+    {
+      "path": "source/preview_server.mjs",
+      "bytes": 3080,
+      "sha256": "331f4b81db91a0297343c8d58aa01fd13b52a843a80987cf7d4efc2b624f5fbb"
+    },
+    {
+      "path": "source/record_render_provenance.py",
+      "bytes": 2275,
+      "sha256": "765257d9991d93ffe57d816daf198a644c9aad1ac99cc6b1ed9392742a84f60c"
+    },
+    {
+      "path": "source/render_idle.py",
+      "bytes": 1771,
+      "sha256": "4fa25bc2f85a6ebdf1ec7c42b66de7681357fc35c28cbfe1bee3f33681f91aab"
+    },
+    {
+      "path": "source/verify_dragon.mjs",
+      "bytes": 5548,
+      "sha256": "bd1edc0b4b988a85d1e2ad20a7f455d8729e0d9648f1393f0736aafd99f0a25a"
+    },
+    {
+      "path": "source/verify_khronos.mjs",
+      "bytes": 1231,
+      "sha256": "fb3047edd0fa0435383550ad9f153703d043e0e0e621bf24e923fa9f08ff8d8d"
+    },
+    {
+      "path": "source/verify_native.py",
+      "bytes": 8364,
+      "sha256": "a77ff60a157f1bbfa64181c4846184f4424397bb865de246eab66e6ca1448497"
+    },
+    {
+      "path": "source/verify_packed_source.py",
+      "bytes": 1460,
+      "sha256": "d013ca2b8de7894fca021621987bb7e15673c3928cc33c818c00e9d4ed652409"
+    }
+  ],
+  "git_candidate_attributes": "Directory-scoped * -text preserves exact source/reference/checksum bytes; no repository-wide configuration change."
+}

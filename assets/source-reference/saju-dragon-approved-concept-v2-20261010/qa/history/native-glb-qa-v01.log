@@ -1,0 +1,11 @@
+00:02.110  blend            | Read blend: "D:\Codex\Results\SaJuDragonApproved20261010-Joseph\model-v04\SaJu_Dragon_Approved_Candidate_v1.blend"
+Traceback (most recent call last):
+  File "D:\Codex\Work\SaJuDragonApproved20261010-Joseph\authoring\verify_native.py", line 84, in <module>
+    assert .78<min_ratio<=max_ratio<1.23,("Joint edge distortion",min_ratio,max_ratio)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('Joint edge distortion', 0.385546049191726, 2.5462869619575397)
+
+Error: script failed, file: 'D:\Codex\Work\SaJuDragonApproved20261010-Joseph\authoring\verify_native.py', exiting.
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

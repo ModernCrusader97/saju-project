@@ -1,0 +1,60 @@
+{
+  "status": "PRIVATE_PREVIEW_FILE_METADATA_VERIFIED",
+  "model_blend_sha256": "0e4cd443c67a180bfff6befd7b2d5b67dca70ad298f0ecea5e83ba1a22396938",
+  "model_glb_sha256": "5060b049e5e74519bd0991c4280f4a492f6b1025e6639d9f166a92a51f2a9343",
+  "views": [
+    {
+      "view": "front",
+      "drive_id": "17VVB6NV_Wy7_4dlNq3rWkDMCeF75ibkT",
+      "url": "https://drive.google.com/file/d/17VVB6NV_Wy7_4dlNq3rWkDMCeF75ibkT/view?usp=drivesdk",
+      "bytes": 880276,
+      "shared": false,
+      "permissions": [
+        {
+          "type": "user",
+          "role": "owner",
+          "emailAddress": null,
+          "domain": null,
+          "displayName": null,
+          "allowFileDiscovery": null
+        }
+      ]
+    },
+    {
+      "view": "threequarter",
+      "drive_id": "1bPlmtj0CKlfh3idBD1h6jtSgrthnT5Zu",
+      "url": "https://drive.google.com/file/d/1bPlmtj0CKlfh3idBD1h6jtSgrthnT5Zu/view?usp=drivesdk",
+      "bytes": 913849,
+      "shared": false,
+      "permissions": [
+        {
+          "type": "user",
+          "role": "owner",
+          "emailAddress": null,
+          "domain": null,
+          "displayName": null,
+          "allowFileDiscovery": null
+        }
+      ]
+    },
+    {
+      "view": "side",
+      "drive_id": "1m5CM3vH8Bh61t9IS6GNYS-xOgGG8MXSb",
+      "url": "https://drive.google.com/file/d/1m5CM3vH8Bh61t9IS6GNYS-xOgGG8MXSb/view?usp=drivesdk",
+      "bytes": 785623,
+      "shared": false,
+      "permissions": [
+        {
+          "type": "user",
+          "role": "owner",
+          "emailAddress": null,
+          "domain": null,
+          "displayName": null,
+          "allowFileDiscovery": null
+        }
+      ]
+    }
+  ],
+  "library_ids": null,
+  "library_note": "The PC's normal Library companion metadata path was unavailable (Windows os.setxattr in earlier reference materialization; companion resource read also failed). No helper edits or alternate authentication were used. Verified private Drive IDs and local provenance are delivered."
+}

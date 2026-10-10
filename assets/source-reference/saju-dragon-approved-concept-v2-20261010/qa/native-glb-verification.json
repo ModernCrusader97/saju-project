@@ -1,0 +1,70 @@
+{
+  "status": "PASS_NATIVE_AND_GLB_ROUNDTRIP",
+  "source_blend_sha256": "0e4cd443c67a180bfff6befd7b2d5b67dca70ad298f0ecea5e83ba1a22396938",
+  "glb_sha256": "5060b049e5e74519bd0991c4280f4a492f6b1025e6639d9f166a92a51f2a9343",
+  "checks": {
+    "continuous_skin_components": 1,
+    "skin_weights_normalized": true,
+    "bones": 13,
+    "vertex_color_on_same_skin": true,
+    "native_loop_max_vertex_error": 0.0,
+    "sampled_edge_length_ratio": [
+      0.8406418390560861,
+      1.1610845906025187
+    ],
+    "sampled_skin_motion_max": 0.18164931937913348,
+    "sampled_frames": [
+      0,
+      36,
+      72,
+      108,
+      144
+    ],
+    "sampled_edge_count": 11778,
+    "invalid_native_vertex_normals": 0,
+    "native_sampled_bounds_zup": {
+      "min": [
+        -2.5125269889831543,
+        -0.9441750645637512,
+        -0.01750543713569641
+      ],
+      "max": [
+        3.0575623512268066,
+        0.6413695812225342,
+        4.495295524597168
+      ]
+    },
+    "importer_control_objects_excluded": [
+      "Icosphere"
+    ],
+    "glb_import_mesh_count": 10,
+    "glb_roundtrip_max_nearest_vertex_error": {
+      "0": 2.396076979493955e-06,
+      "36": 2.6340937893110095e-06,
+      "72": 2.700031245694845e-06,
+      "108": 2.499322818039218e-06,
+      "144": 2.396076979493955e-06
+    },
+    "glb_source_geometry_preserved": true,
+    "glb_animation_reimported": true,
+    "glb_actual_render": "glb-reimport-threequarter.png"
+  },
+  "video_formats_available": [
+    "AVIF",
+    "JPEG",
+    "OPEN_EXR",
+    "PNG",
+    "WEBP",
+    "BMP",
+    "CINEON",
+    "DPX",
+    "IRIS",
+    "JPEG2000",
+    "HDR",
+    "TARGA",
+    "TARGA_RAW",
+    "TIFF",
+    "OPEN_EXR_MULTILAYER",
+    "FFMPEG"
+  ]
+}

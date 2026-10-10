@@ -1,0 +1,35 @@
+{
+  "status": "ACTUAL_JUNCTION_GEOMETRY_DIAGNOSIS",
+  "source_sha256": "85b208cae6c134ceea2170906abcf1716b2a2d980ea2607b4cbaa269be1dcaaf",
+  "boundary_edges": 0,
+  "nonmanifold_edges": 0,
+  "face_normals_differ_from_recalculation": 0,
+  "signed_mesh_volume": 4.654449846270296,
+  "local_junction_curvature": {
+    "Front_Left": {
+      "vertices": 1966,
+      "max_concave_laplacian": 0.001194209500681609,
+      "positive_concave_vertices": 445,
+      "mean_positive_concavity": 7.696083609225437e-05
+    },
+    "Front_Right": {
+      "vertices": 1173,
+      "max_concave_laplacian": 0.0013256235979497433,
+      "positive_concave_vertices": 485,
+      "mean_positive_concavity": 0.0001347048213522595
+    },
+    "Hind_Far": {
+      "vertices": 1929,
+      "max_concave_laplacian": 0.0015515804989263415,
+      "positive_concave_vertices": 409,
+      "mean_positive_concavity": 8.15343152372247e-05
+    },
+    "Hind_Near": {
+      "vertices": 2188,
+      "max_concave_laplacian": 0.001770694121660199,
+      "positive_concave_vertices": 625,
+      "mean_positive_concavity": 0.00013313186293693074
+    }
+  },
+  "diagnosis": "Material-independent neutral clay and curvature inspected; a positive concave surface value identifies a real inset, while normal consistency checks identify orientation problems."
+}

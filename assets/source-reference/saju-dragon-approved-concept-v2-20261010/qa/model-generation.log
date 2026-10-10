@@ -1,0 +1,39 @@
+SKIN_READY_SMOOTH_UNION 36639 69365
+Warning: No mesh data to join
+Warning: No mesh data to join
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+03:55:14 | INFO: Starting glTF 2.0 export
+03:55:14 | INFO: Extracting primitive: Horn_Main_-1_Mesh.001
+03:55:14 | INFO: Primitives created: 1
+03:55:14 | INFO: Extracting primitive: Belly_Fold_00_Mesh.001
+03:55:14 | INFO: Primitives created: 1
+03:55:14 | INFO: Extracting primitive: Surface_Eye_Soft_Lid_-1_Mesh.001
+03:55:14 | INFO: Primitives created: 1
+03:55:14 | INFO: Extracting primitive: Dragon_Continuous_Skin_Mesh.001
+03:55:15 | INFO: Primitives created: 1
+03:55:15 | INFO: Extracting primitive: Surface_Ear_Ivory_Inset_-1_Mesh.001
+03:55:15 | INFO: Primitives created: 1
+03:55:15 | INFO: Extracting primitive: Surface_Eye_White_-1_Mesh.001
+03:55:15 | INFO: Primitives created: 1
+03:55:15 | INFO: Extracting primitive: Surface_Eye_Brown_-1_Mesh.001
+03:55:15 | INFO: Primitives created: 1
+03:55:15 | INFO: Extracting primitive: Sphere.024
+03:55:15 | INFO: Primitives created: 1
+03:55:15 | INFO: Extracting primitive: Surface_Nostril_-1_Mesh.001
+03:55:15 | INFO: Primitives created: 1
+03:55:15 | INFO: Extracting primitive: Surface_Gentle_Closed_Smile_Mesh.001
+03:55:15 | INFO: Primitives created: 1
+03:55:16 | INFO: Finished glTF 2.0 export in 1.7835984230041504 s
+01:10.625  render           | Saved: 'D:\Codex\Results\SaJuDragonApproved20261010-Joseph\model-v11\previews\front.png'
+
+Info: Saved as "SaJu_Dragon_Approved_Candidate_v2.blend"
+PREVIEW_READY Front
+01:38.204  render           | Saved: 'D:\Codex\Results\SaJuDragonApproved20261010-Joseph\model-v11\previews\threequarter.png'
+PREVIEW_READY ThreeQuarter
+01:48.485  render           | Saved: 'D:\Codex\Results\SaJuDragonApproved20261010-Joseph\model-v11\previews\side.png'
+PREVIEW_READY Side
+MODEL_DELIVERABLES_READY D:\Codex\Results\SaJuDragonApproved20261010-Joseph\model-v11
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit
