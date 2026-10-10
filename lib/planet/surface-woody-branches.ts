@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import { MeshSurface, seeded, type SurfaceAnchor } from './mesh-surface';
 import { isSurfaceAttachmentExcluded } from './surface-attachment-exclusions';
+import { supportAffineInstanceNormals } from './affine-instance-normals';
 import type { SurfaceAccentOptions, SurfaceStemAccents } from './surface-stem-accents';
 
 const Y = new THREE.Vector3(0, 1, 0), Z = new THREE.Vector3(0, 0, 1), TAU = Math.PI * 2;
@@ -111,21 +112,6 @@ function branchCurves(variant: number): THREE.Curve<THREE.Vector3>[] {
   }
   return curves;
 }
-/** An inverse-parent instance matrix may contain shear. Three's default
- * instance normal shortcut supports scale only; cofactor columns also handle
- * this affine compensation, including mirrored parent transforms. */
-function supportAffineNormals(material: THREE.MeshStandardMaterial): void {
-  material.onBeforeCompile = shader => {
-    const chunk = THREE.ShaderChunk.defaultnormal_vertex.replace(
-      /transformedNormal \/= vec3\( dot\( im\[ 0 \], im\[ 0 \] \), dot\( im\[ 1 \], im\[ 1 \] \), dot\( im\[ 2 \], im\[ 2 \] \) \);\s*transformedNormal = im \* transformedNormal;/,
-      'mat3 cofactors = mat3(cross(im[1], im[2]), cross(im[2], im[0]), cross(im[0], im[1]));\n' +
-      'transformedNormal = cofactors * transformedNormal * (dot(im[0], cross(im[1], im[2])) < 0.0 ? -1.0 : 1.0);',
-    );
-    shader.vertexShader = shader.vertexShader.replace('#include <defaultnormal_vertex>', chunk);
-  };
-  material.customProgramCacheKey = () => 'surface-woody-affine-normals-v1';
-}
-
 export function createSurfaceWoodyBranches(options: SurfaceAccentOptions): SurfaceStemAccents {
   const sampler = new MeshSurface(options.meshes, { allowMorphTargets: options.allowMorphTargets });
   const size = sampler.bounds.getSize(new THREE.Vector3()), unit = options.detailScale ?? Math.min(size.x, size.y, size.z) * .5;
@@ -189,7 +175,8 @@ export function createSurfaceWoodyBranches(options: SurfaceAccentOptions): Surfa
       'Creation-time curved trunk/fork centerline collision filters; branch thickness and unrelated moving body parts have no continuous collision simulation.'] };
   const bark = new THREE.MeshStandardMaterial({ color: 0x795235, roughness: .9 });
   const leafMaterial = new THREE.MeshPhysicalMaterial({ color: 0x98b54e, roughness: .56, side: THREE.DoubleSide, clearcoat: .08 });
-  supportAffineNormals(bark); supportAffineNormals(leafMaterial);
+  supportAffineInstanceNormals(bark, 'surface-woody-affine-normals-v1');
+  supportAffineInstanceNormals(leafMaterial, 'surface-woody-affine-normals-v1');
   const geometries: THREE.BufferGeometry[] = [], branches: THREE.InstancedMesh[] = [];
   const tips = prototypes.map(curves => curves.map(curve => curve.getPoint(1)));
   for (let variant = 0; variant < 4; variant++) {

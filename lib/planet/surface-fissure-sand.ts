@@ -2,6 +2,7 @@ import * as THREE from 'three';
 import {MeshSurface,seeded,type SurfaceAnchor} from './mesh-surface';
 import {sandstoneFissureDistance} from './sandstone-fissure-field';
 import {isSurfaceAttachmentExcluded} from './surface-attachment-exclusions';
+import {supportAffineInstanceNormals} from './affine-instance-normals';
 import type {SurfaceAccentOptions,SurfaceStemAccents} from './surface-stem-accents';
 
 interface Source {anchor:SurfaceAnchor;rest:number[];score:number;period:number;phase:number}
@@ -142,6 +143,7 @@ export function createSurfaceFissureSand(options:SurfaceAccentOptions):SurfaceSt
   'Actual-triangle segment collision hides body-crossing grains; no bouncing, floor accumulation or full swept-sphere collision simulation.',
  ]};
  const geometry=new THREE.IcosahedronGeometry(1,0),material=new THREE.MeshStandardMaterial({color:0xe1b77e,roughness:.94,metalness:0});
+ supportAffineInstanceNormals(material);
  const grains=new THREE.InstancedMesh(geometry,material,desired*perSource);grains.name='ActualSurfaceFissureSand';grains.frustumCulled=false;
  grains.instanceMatrix.setUsage(THREE.DynamicDrawUsage);grains.castShadow=false;grains.receiveShadow=true;
  grains.userData.surfaceNonShadowCaster=true;

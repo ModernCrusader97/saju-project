@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "threeRevision": "186",
+  "presentationDepth": 1.35,
+  "method": "Actual production onBeforeCompile hook and installed Three ShaderChunk normal formula; actual real-B rendered grain instance matrices",
+  "observations": [
+    {
+      "quality": "low",
+      "mode": "affine-cofactor",
+      "samples": 31680,
+      "maximumErrorDegrees": 0.0000017075472925031877,
+      "negativeControlStockMaximumDegrees": 18.37732239645743,
+      "exactRegression": []
+    },
+    {
+      "quality": "high",
+      "mode": "affine-cofactor",
+      "samples": 62640,
+      "maximumErrorDegrees": 0.0000017075472925031877,
+      "negativeControlStockMaximumDegrees": 18.37754889128614,
+      "exactRegression": [
+        {
+          "time": 1.75,
+          "instance": 8,
+          "vertex": 18,
+          "productionErrorDegrees": 0,
+          "stockErrorDegrees": 18.37754889128614
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "CPU emulation of the exact installed shader math; separate actual WebGL shader/render checks required",
+    "No geometry, particle matrix or color changes"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "status": "FAIL",
+  "threeRevision": "186",
+  "presentationDepth": 1.35,
+  "method": "Actual production onBeforeCompile hook and installed Three ShaderChunk normal formula; actual real-B rendered grain instance matrices",
+  "observations": [
+    {
+      "quality": "low",
+      "mode": "stock-scale-shortcut",
+      "samples": 31680,
+      "maximumErrorDegrees": 18.37732239645743,
+      "negativeControlStockMaximumDegrees": 18.37732239645743,
+      "exactRegression": []
+    }
+  ],
+  "error": "low: production normal must equal the inverse transpose of the complete rendered transform",
+  "limits": [
+    "CPU emulation of the exact installed shader math; separate actual WebGL shader/render checks required",
+    "No geometry, particle matrix or color changes"
+  ]
+}
