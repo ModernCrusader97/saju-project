@@ -1,0 +1,64 @@
+{
+  "basis": "637d93cc60ae4cf8d8096dae478eb3eb7cca1f9d",
+  "branch": "fix/saved-detail-element-counts-20261010",
+  "productChange": "Only two explicit undefined/null checks for analysis.elementsCount appended to the existing Saved detail guard. No individual count or broad schema validation.",
+  "before": {
+    "passed": 2,
+    "failed": 2,
+    "exitCode": 1
+  },
+  "after": {
+    "passed": 4,
+    "failed": 0,
+    "exitCode": 0
+  },
+  "previousAnalysisBrowserRegression": {
+    "passed": 9,
+    "failed": 0,
+    "exitCode": 0
+  },
+  "detailDOMRegression": {
+    "passed": 9,
+    "failed": 0,
+    "exitCode": 0
+  },
+  "types": {
+    "command": "node_modules/.bin/tsc --noEmit --incremental false",
+    "exitCode": 0
+  },
+  "build": {
+    "command": "npm run build",
+    "exitCode": 0,
+    "before": "Verified 637d93c own build reused via candidate-only symlink; removed before own correction build.",
+    "after": "Fresh candidate production build"
+  },
+  "scopedLint": {
+    "exitCode": 0,
+    "samePageMessages": true,
+    "pageErrors": 0,
+    "pageWarnings": 0,
+    "newQAErrors": 0,
+    "newQAWarnings": 0
+  },
+  "diffCheck": {
+    "exitCode": 0
+  },
+  "healthyImagesByteIdentical": true,
+  "healthyImageSHA256": "fd8b2005b0106016f8f2db7021036b1352557fcd1090733fcd203933115d86c8",
+  "visualInspection": [
+    "Actual before missing-counts framework fallback",
+    "Actual after existing detail error and retry",
+    "Actual after retry recovery to selected B"
+  ],
+  "preservation": "All 720 preexisting tracked files compared: 719 byte identical; only the Saved page guard changes.",
+  "compatibility": [
+    "Numeric zero wood count remains rendered as 0\uac1c",
+    "Prior missing/non-object analysis protections still work",
+    "Unknown-time and legacy lunar optional solar-conversion behavior preserved"
+  ],
+  "limits": [
+    "Only missing/null elementsCount container is guarded. Individual counts, other nested fields and full FortuneResult schema are not validated.",
+    "Synthetic intercepted GETs; no real user DB, API write, chat or external AI. No claim about actual private record corruption.",
+    "Native Chromium only; physical devices, screen readers, other browsers, hosted auth and calendar accuracy not tested."
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "basis": "637d93cc60ae4cf8d8096dae478eb3eb7cca1f9d",
+  "phase": "after",
+  "applicationSourceSHA256": "9b9631372d990a9877fbac148a9308bb5965bc1f0380444824c5e4eb83ada393",
+  "passed": 4,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "matching-ID missing element counts stay retryable and recover to the selected reading",
+      "status": "PASS"
+    },
+    {
+      "name": "matching-ID null element counts stay retryable and recover to the selected reading",
+      "status": "PASS"
+    },
+    {
+      "name": "an existing counts object with a zero wood count remains readable",
+      "status": "PASS"
+    },
+    {
+      "name": "no unexpected API requests or outbound calls",
+      "status": "PASS"
+    }
+  ],
+  "observations": [
+    {
+      "name": "matching-ID missing element counts stay retryable and recover to the selected reading",
+      "errors": [],
+      "consoleErrors": [],
+      "requests": [
+        {
+          "path": "/api/saju",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/a",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/b",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/b",
+          "method": "GET"
+        }
+      ]
+    },
+    {
+      "name": "matching-ID null element counts stay retryable and recover to the selected reading",
+      "errors": [],
+      "consoleErrors": [],
+      "requests": [
+        {
+          "path": "/api/saju",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/a",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/b",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/b",
+          "method": "GET"
+        }
+      ]
+    },
+    {
+      "name": "an existing counts object with a zero wood count remains readable",
+      "errors": [],
+      "consoleErrors": [],
+      "requests": [
+        {
+          "path": "/api/saju",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/a",
+          "method": "GET"
+        }
+      ]
+    }
+  ],
+  "unexpectedApi": [],
+  "outbound": [],
+  "limits": [
+    "Actual built Saved page, FortuneCard and client router in Chromium at 390x844.",
+    "Only absent/null analysis.elementsCount is under test; no full nested schema or individual count validation.",
+    "Summary/detail GETs are synthetic intercepted fixtures. No real user DB, API writes, chat or external AI runs.",
+    "Physical devices, screen readers, other browsers, hosted authentication and calendar accuracy are not tested."
+  ]
+}

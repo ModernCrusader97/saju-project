@@ -1,0 +1,96 @@
+{
+  "basis": "637d93cc60ae4cf8d8096dae478eb3eb7cca1f9d",
+  "phase": "before",
+  "applicationSourceSHA256": "90c9943a5960b6989de6529ec03622d19b253ca632ff35dd3debf75f3ac2c107",
+  "passed": 2,
+  "failed": 2,
+  "checks": [
+    {
+      "name": "matching-ID missing element counts stay retryable and recover to the selected reading",
+      "status": "FAIL",
+      "error": "absent element counts must use the existing retryable detail error\n\n0 !== 1\n"
+    },
+    {
+      "name": "matching-ID null element counts stay retryable and recover to the selected reading",
+      "status": "FAIL",
+      "error": "absent element counts must use the existing retryable detail error\n\n0 !== 1\n"
+    },
+    {
+      "name": "an existing counts object with a zero wood count remains readable",
+      "status": "PASS"
+    },
+    {
+      "name": "no unexpected API requests or outbound calls",
+      "status": "PASS"
+    }
+  ],
+  "observations": [
+    {
+      "name": "matching-ID missing element counts stay retryable and recover to the selected reading",
+      "errors": [],
+      "consoleErrors": [
+        "TypeError: Cannot read properties of undefined (reading 'wood')\n    at Me (http://127.0.0.1:42237/_next/static/chunks/FortuneCard-Bvtc99Wn.js:2:24732)\n    at Oo (http://127.0.0.1:42237/_next/static/chunks/framework-D_rUT4EX.js:8:47494)\n    at yc (http://127.0.0.1:42237/_next/static/chunks/framework-D_rUT4EX.js:8:69918)\n    at Ic (http://127.0.0.1:42237/_next/static/chunks/framework-D_rUT4EX.js:8:80174)\n    at Mu (http://127.0.0.1:42237/_next/static/chunks/framework-D_rUT4EX.js:8:115478)\n    at ku (http://127.0.0.1:42237/_next/static/chunks/framework-D_rUT4EX.js:8:114561)\n    at Ou (http://127.0.0.1:42237/_next/static/chunks/framework-D_rUT4EX.js:8:114400)\n    at gu (http://127.0.0.1:42237/_next/static/chunks/framework-D_rUT4EX.js:8:111269)\n    at cd (http://127.0.0.1:42237/_next/static/chunks/framework-D_rUT4EX.js:8:122765)\n    at MessagePort.ie (http://127.0.0.1:42237/_next/static/chunks/framework-D_rUT4EX.js:1:12908)",
+        "The above error occurred in a React component:\n\n    at Me (http://127.0.0.1:42237/_next/static/chunks/FortuneCard-Bvtc99Wn.js:2:20752)\n    at div (<anonymous>)\n    at div (<anonymous>)\n    at v (http://127.0.0.1:42237/_next/static/chunks/page-tSA1qhte.js:1:1590)\n    at Suspense (<anonymous>)\n    at div (<anonymous>)\n    at y (<anonymous>)\n    at Xn (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:16307)\n    at Qn (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:17705)\n    at o (http://127.0.0.1:42237/_next/static/chunks/layout-segment-context-DrrXwB7b.js:1:263)\n    at kt (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:4781)\n    at At (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:5253)\n    at un (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:11229)\n    at fn (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:12165)\n    at Pt (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:6301)\n    at Ft (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:6840)\n    at $n (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:18026)\n    at main (<anonymous>)\n    at div (<anonymous>)\n    at body (<anonymous>)\n    at html (<anonymous>)\n    at Xn (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:16307)\n    at Qn (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:17705)\n    at o (http://127.0.0.1:42237/_next/static/chunks/layout-segment-context-DrrXwB7b.js:1:263)\n    at jt (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:5338)\n    at Mt (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:6028)\n    at jt (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:5338)\n    at Nt (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:6145)\n    at Xn (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:16307)\n    at Qn (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:17705)\n    at M (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:110393)\n    at kt (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:4781)\n    at At (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:5253)\n    at Pp (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:33:35693)\n    at dn (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:12078)\n    at jt (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:5338)\n    at Nt (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:6145)\n    at Ip (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:33:36217)"
+      ],
+      "requests": [
+        {
+          "path": "/api/saju",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/a",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/b",
+          "method": "GET"
+        }
+      ]
+    },
+    {
+      "name": "matching-ID null element counts stay retryable and recover to the selected reading",
+      "errors": [],
+      "consoleErrors": [
+        "TypeError: Cannot read properties of null (reading 'wood')\n    at Me (http://127.0.0.1:42237/_next/static/chunks/FortuneCard-Bvtc99Wn.js:2:24732)\n    at Oo (http://127.0.0.1:42237/_next/static/chunks/framework-D_rUT4EX.js:8:47494)\n    at yc (http://127.0.0.1:42237/_next/static/chunks/framework-D_rUT4EX.js:8:69918)\n    at Ic (http://127.0.0.1:42237/_next/static/chunks/framework-D_rUT4EX.js:8:80174)\n    at Mu (http://127.0.0.1:42237/_next/static/chunks/framework-D_rUT4EX.js:8:115478)\n    at ku (http://127.0.0.1:42237/_next/static/chunks/framework-D_rUT4EX.js:8:114561)\n    at Ou (http://127.0.0.1:42237/_next/static/chunks/framework-D_rUT4EX.js:8:114400)\n    at gu (http://127.0.0.1:42237/_next/static/chunks/framework-D_rUT4EX.js:8:111269)\n    at cd (http://127.0.0.1:42237/_next/static/chunks/framework-D_rUT4EX.js:8:122765)\n    at MessagePort.ie (http://127.0.0.1:42237/_next/static/chunks/framework-D_rUT4EX.js:1:12908)",
+        "The above error occurred in a React component:\n\n    at Me (http://127.0.0.1:42237/_next/static/chunks/FortuneCard-Bvtc99Wn.js:2:20752)\n    at div (<anonymous>)\n    at div (<anonymous>)\n    at v (http://127.0.0.1:42237/_next/static/chunks/page-tSA1qhte.js:1:1590)\n    at Suspense (<anonymous>)\n    at div (<anonymous>)\n    at y (<anonymous>)\n    at Xn (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:16307)\n    at Qn (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:17705)\n    at o (http://127.0.0.1:42237/_next/static/chunks/layout-segment-context-DrrXwB7b.js:1:263)\n    at kt (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:4781)\n    at At (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:5253)\n    at un (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:11229)\n    at fn (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:12165)\n    at Pt (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:6301)\n    at Ft (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:6840)\n    at $n (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:18026)\n    at main (<anonymous>)\n    at div (<anonymous>)\n    at body (<anonymous>)\n    at html (<anonymous>)\n    at Xn (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:16307)\n    at Qn (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:17705)\n    at o (http://127.0.0.1:42237/_next/static/chunks/layout-segment-context-DrrXwB7b.js:1:263)\n    at jt (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:5338)\n    at Mt (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:6028)\n    at jt (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:5338)\n    at Nt (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:6145)\n    at Xn (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:16307)\n    at Qn (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:17705)\n    at M (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:110393)\n    at kt (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:4781)\n    at At (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:5253)\n    at Pp (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:33:35693)\n    at dn (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:12078)\n    at jt (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:5338)\n    at Nt (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:32:6145)\n    at Ip (http://127.0.0.1:42237/_next/static/chunks/index-CI5xxY43.js:33:36217)"
+      ],
+      "requests": [
+        {
+          "path": "/api/saju",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/a",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/b",
+          "method": "GET"
+        }
+      ]
+    },
+    {
+      "name": "an existing counts object with a zero wood count remains readable",
+      "errors": [],
+      "consoleErrors": [],
+      "requests": [
+        {
+          "path": "/api/saju",
+          "method": "GET"
+        },
+        {
+          "path": "/api/saju/a",
+          "method": "GET"
+        }
+      ]
+    }
+  ],
+  "unexpectedApi": [],
+  "outbound": [],
+  "limits": [
+    "Actual built Saved page, FortuneCard and client router in Chromium at 390x844.",
+    "Only absent/null analysis.elementsCount is under test; no full nested schema or individual count validation.",
+    "Summary/detail GETs are synthetic intercepted fixtures. No real user DB, API writes, chat or external AI runs.",
+    "Physical devices, screen readers, other browsers, hosted authentication and calendar accuracy are not tested."
+  ]
+}
