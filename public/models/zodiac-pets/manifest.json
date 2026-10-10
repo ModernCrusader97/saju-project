@@ -9,6 +9,16 @@
     "report": "PRESERVATION_REPORT.md"
   },
   "availableAuthoredAnimals": 0,
+  "sourceStatusScope": "authored-runtime-GLBs-present-in-this-repository",
+  "existingProceduralSource": {
+    "file": "lib/planet/spirit-zodiac-pet.ts",
+    "factory": "createZodiacPet",
+    "firstVerifiedCommit": "dffb235fbe47c063b8535a21b4fdf3ea8235d6aa",
+    "selection": "dayKey[1]",
+    "animals": 12,
+    "status": "existing-temporary-models-already-connected",
+    "relationshipToLatestCraftedModels": "unverified"
+  },
   "fallback": "procedural-placeholder",
   "pets": {
     "자": {
@@ -63,8 +73,10 @@
       "version": null,
       "sha256": null,
       "expectedSha256": "2745a970701c86a3bc74eb0008b597607022a5c7ee576d79b287970ac977d366",
-      "latestApprovedStatus": "missing",
-      "missingVersion": "Latest selected Dragon C"
+      "latestApprovedStatus": "unverified",
+      "missingVersion": "Historical Dragon C — 2026-10-09 preservation reference",
+      "expectedSha256Role": "historical-reference-not-current-approval",
+      "referenceDate": "2026-10-09"
     },
     "사": {
       "branch": "사",
@@ -140,8 +152,10 @@
       "version": null,
       "sha256": null,
       "expectedSha256": "d1c6f8625b5fb97cdbde102455cdbf181f335942b7cb0f87aeb07a7fc0fba290",
-      "latestApprovedStatus": "missing",
-      "missingVersion": "Latest pig limb candidate"
+      "latestApprovedStatus": "unverified",
+      "missingVersion": "Historical pig limb candidate — 2026-10-09 preservation reference",
+      "expectedSha256Role": "historical-reference-not-current-approval",
+      "referenceDate": "2026-10-09"
     }
   }
 }

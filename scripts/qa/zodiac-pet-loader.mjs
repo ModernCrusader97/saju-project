@@ -1,5 +1,5 @@
 // Run with: node --test scripts/qa/zodiac-pet-loader.mjs
-// Authored animal sources are unavailable. The GLB below is an explicitly
+// Authored animal sources are not present in this repository. The GLB below is an explicitly
 // synthetic loader fixture; it is never shipped or described as a zodiac asset.
 import assert from 'node:assert/strict';
 import { createHash, webcrypto } from 'node:crypto';
@@ -23,7 +23,7 @@ const missingManifest = {
   pets: Object.fromEntries(branches.map((branch, index) => [branch, {
     branch, animal: animals[index], sourceStatus: 'missing-source', file: null, version: null,
     sha256: null, expectedSha256: missingHashes[branch] ?? null,
-    latestApprovedStatus: missingHashes[branch] ? 'missing' : 'unverified',
+    latestApprovedStatus: 'unverified',
   }])),
 };
 
@@ -116,7 +116,7 @@ test('all twelve branches expose missing authored sources without claiming asset
     assert.equal(pet.group.userData.authoredAssetStatus, 'missing-source');
     assert.equal(pet.group.userData.authoredVersion, null);
     assert.equal(pet.group.userData.expectedAuthoredSha256, missingHashes[branch] ?? null);
-    assert.equal(pet.group.userData.latestApprovedStatus, missingHashes[branch] ? 'missing' : 'unverified');
+    assert.equal(pet.group.userData.latestApprovedStatus, 'unverified');
     const bounds = new THREE.Box3().setFromObject(pet.group, true), size = bounds.getSize(new THREE.Vector3());
     assert(Math.abs(bounds.min.y) < .002); assert(size.x <= .625); assert(size.y <= .665); assert(size.z <= .855);
     pet.dispose();
@@ -167,11 +167,16 @@ test('separate parses have independent owned resources and disposing one cannot 
   assert.equal(typeof api.loadZodiacPet, 'function');
   const [first, second] = await Promise.all([api.loadZodiacPet('인'), api.loadZodiacPet('인')]);
   assert.equal(parsed.length, 2);
-  const otherResources = new Set(parsed[1].resources.map(row => row.resource));
-  assert(parsed[0].resources.every(row => !otherResources.has(row.resource)));
+  // Concurrent GLTF parses can finish in either order. Match each resource
+  // record to its actual returned owner instead of assuming completion order.
+  const firstParse = parsed.find(row => first.group.getObjectById(row.gltf.scene.id) === row.gltf.scene);
+  const secondParse = parsed.find(row => second.group.getObjectById(row.gltf.scene.id) === row.gltf.scene);
+  assert(firstParse && secondParse && firstParse !== secondParse);
+  const otherResources = new Set(secondParse.resources.map(row => row.resource));
+  assert(firstParse.resources.every(row => !otherResources.has(row.resource)));
   first.dispose();
-  assert(parsed[0].resources.every(row => row.disposals === 1)); assert(parsed[1].resources.every(row => row.disposals === 0));
-  second.dispose(); assert(parsed[1].resources.every(row => row.disposals === 1));
+  assert(firstParse.resources.every(row => row.disposals === 1)); assert(secondParse.resources.every(row => row.disposals === 0));
+  second.dispose(); assert(secondParse.resources.every(row => row.disposals === 1));
 });
 
 test('a mismatched GLB hash falls back explicitly before allocating a model', async () => {
@@ -204,16 +209,26 @@ test('an abort while GLTF parsing completes disposes the late model and never re
   assert(parsed[0].resources.every(row => row.disposals === 1));
 });
 
-test('the shipped manifest records zero recovered animals and both known missing selected hashes', async () => {
+test('the shipped manifest scopes missing runtime GLBs and separates historical references from current approval', async () => {
   let shipped;
   try { shipped = JSON.parse(await fs.readFile('public/models/zodiac-pets/manifest.json', 'utf8')); }
   catch { assert.fail('publish a truthful zodiac source manifest before integrating a loader'); }
   assert.equal(shipped.sourceArchive.commit, missingManifest.sourceArchive.commit);
+  assert.equal(shipped.sourceStatusScope, 'authored-runtime-GLBs-present-in-this-repository');
+  assert.equal(shipped.existingProceduralSource.animals, 12);
+  assert.equal(shipped.existingProceduralSource.firstVerifiedCommit, 'dffb235fbe47c063b8535a21b4fdf3ea8235d6aa');
+  assert.equal(shipped.existingProceduralSource.selection, 'dayKey[1]');
   assert.deepEqual(Object.keys(shipped.pets), branches);
   for (const [index, branch] of branches.entries()) {
     assert.equal(shipped.pets[branch].animal, animals[index]);
     assert.equal(shipped.pets[branch].sourceStatus, 'missing-source');
     assert.equal(shipped.pets[branch].file, null); assert.equal(shipped.pets[branch].sha256, null);
     assert.equal(shipped.pets[branch].expectedSha256, missingHashes[branch] ?? null);
+    assert.equal(shipped.pets[branch].latestApprovedStatus, 'unverified');
+    if (missingHashes[branch]) {
+      assert.match(shipped.pets[branch].missingVersion, /^Historical /);
+      assert.equal(shipped.pets[branch].expectedSha256Role, 'historical-reference-not-current-approval');
+      assert.equal(shipped.pets[branch].referenceDate, '2026-10-09');
+    }
   }
 });

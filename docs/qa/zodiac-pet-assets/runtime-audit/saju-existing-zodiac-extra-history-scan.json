@@ -1,0 +1,370 @@
+[
+  {
+    "commit": {
+      "sha": "9aa8768ab880f1c79ccdcab8cb4a42d107bf9118",
+      "authored": "2026-10-09T13:27:36Z",
+      "subject": "Rebuild approved ten-stem materials on preserved B spirit"
+    },
+    "root": "/workspace/saju-project",
+    "modelAssets": [
+      {
+        "path": "assets/source-reference/saju-b-clear-green050-20261006/SaJu_B_Jade_ClearGreen050_20261006.blend",
+        "blob": "17df3ec161bda34ffa9bdbbade52b5a6b4c80b92",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "assets/source-reference/saju-b-clear-green050-20261006/SaJu_B_Jade_ClearGreen050_20261006.glb",
+        "blob": "76d8434a424ff1bf23489eb60028bcc5a2df59b6",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "assets/source-reference/saju-b-evolving-light-v002/SaJu_Jade_Evolving_Light_v002_Final.blend",
+        "blob": "274de93b9644e281d89496dbc8459e41f8f3f1b3",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "assets/source-reference/saju-b-evolving-light-v002/reference/SaJu_Jade_Approved_Static_Material.glb",
+        "blob": "3752b6a268162a8936de7fd1588ded4a7db160ff",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "assets/source-reference/saju-b-green-emission-separated-v001/SaJu_Jade_GreenEmission_Separated_v001.blend",
+        "blob": "1ef866c9452784acb59663da6b5e30842dd98efe",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "assets/source-reference/saju-b-green-emission-separated-v001/SaJu_Jade_GreenEmission_Separated_v001.glb",
+        "blob": "3752b6a268162a8936de7fd1588ded4a7db160ff",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/SaJu_B_Jade_Character_Study.glb",
+        "blob": "24de1ca6887a6e7ab639e5440f296e9a1c677388",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/SaJu_B_Jade_Character_Study_Native.blend",
+        "blob": "897d91c674f6f298666caf684e103f410da8180e",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/source/candidate_5.blend",
+        "blob": "f487e1eecca279e7eaa7b9d99bd68e322b458742",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "assets/source-reference/saju-b-moving-light-v001/SaJu_Jade_Moving_Green_Light_v001.blend",
+        "blob": "47b2850719225bb9ad4553462af646a5efe62ef5",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "assets/source-reference/saju-b-moving-light-v001/reference/SaJu_Jade_Approved_Static_Material.glb",
+        "blob": "3752b6a268162a8936de7fd1588ded4a7db160ff",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "preservation-archives/porcelain-hero-blink-v1.glb.gz",
+        "blob": "9a105b1157be0d90547cf1990fa0799d2fb2fdb0",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "public/models/five-elements/earth-expression-v1.glb",
+        "blob": "3965f668e32a2d3cea39d6625b39a32836582bae",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "public/models/five-elements/earth-v1.glb",
+        "blob": "ee1b47371686aa180b970bb6b0444f658985cd4f",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "public/models/five-elements/fire-expression-v1.glb",
+        "blob": "8d56c149bfdfc78edf61bebad1750dff4c098cc4",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "public/models/five-elements/fire-v1.glb",
+        "blob": "e4ba85b5a60d96949de3e8ef836b312262b13fc3",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "public/models/five-elements/metal-expression-v1.glb",
+        "blob": "c859265bcb6caf66f4f41489995919341adc9c64",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "public/models/five-elements/metal-v1.glb",
+        "blob": "514181b542b40f39b61a7c776c880245acdc1475",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "public/models/five-elements/water-expression-v1.glb",
+        "blob": "e748e38fd5453c9768879ccc93b01ed10763c58c",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "public/models/five-elements/water-v1.glb",
+        "blob": "b3491e380b0c898dd9682f9a3dfe4c91cfa73f69",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "public/models/five-elements/wood-expression-v1.glb",
+        "blob": "6e5ee9b7bf040535aecbaf1efa30125cc899eccc",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "public/models/five-elements/wood-v1.glb",
+        "blob": "8eae36395f6094b4307966ca63c3445e9924c393",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "public/models/porcelain-hero-v1-lite.glb",
+        "blob": "86f20fa81cd8af9e95be16e2cbf78780a8dfebcd",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "public/models/porcelain-hero-v2.glb",
+        "blob": "431984a28b6af8ad0929bcbc4ef5290660166265",
+        "alreadyInReachableAssetInventory": true
+      }
+    ],
+    "zodiacSourceAndConnections": [
+      {
+        "path": "lib/planet/approved-jade-spirit.ts",
+        "blob": "474011b16f1b857a79423d91879e746713ea3412",
+        "sha256": "3c6c7fa15a836e8eb39e5e574a49cbb552aab4e9fd2ad4368aaaae7020c3264c",
+        "calls": [
+          {
+            "line": 7,
+            "text": "import { createZodiacPet } from './spirit-zodiac-pet';"
+          },
+          {
+            "line": 129,
+            "text": "const pet = createZodiacPet(dayKey.charAt(1), quality);"
+          }
+        ]
+      },
+      {
+        "path": "lib/planet/elemental-spirit.ts",
+        "blob": "339c8901ee094ea4159c541dbcdb7ca6fbfb8c13",
+        "sha256": "3bdb5c0c63f9b6c5f78f57a12435c0b876389f099b4cb560e6bb0523470a9ee7",
+        "calls": [
+          {
+            "line": 6,
+            "text": "import { createZodiacPet } from \"./spirit-zodiac-pet\";"
+          },
+          {
+            "line": 65,
+            "text": "const pet=createZodiacPet(dayPillar.branch,quality);"
+          }
+        ]
+      },
+      {
+        "path": "lib/planet/spirit-zodiac-pet.ts",
+        "blob": "8595a73296087b93c34487dad9b55174cc396238",
+        "sha256": "d6e8384d03f1a3eec3ec0f916fb9212ac10c14aa32f41c0d8751892ea54b0daa",
+        "calls": [
+          {
+            "line": 10,
+            "text": "export function createZodiacPet(branch: string, quality: SpiritQuality = 'high'): ZodiacPet {"
+          }
+        ]
+      },
+      {
+        "path": "lib/planet/spirit-zodiac.ts",
+        "blob": "ad1049f0a8f9852ba08768175986fa8bc705ebd0",
+        "sha256": "a59195d639b56af25f4bfb718fdd9bc9a84f658d12ce7e8becdaeb194da8fde3",
+        "calls": [
+          {
+            "line": 19,
+            "text": "export function createZodiacFeatures("
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "commit": {
+      "sha": "05c0ab479d26ca6519828683826223b3ee96951c",
+      "authored": "2026-10-10T00:27:51Z",
+      "subject": "Preserve live v29 while fixing galaxy entry and owner planet appearance"
+    },
+    "root": "/workspace/saju-sites-live-v29-20261010",
+    "modelAssets": [
+      {
+        "path": "assets/source-reference/saju-b-clear-green050-20261006/SaJu_B_Jade_ClearGreen050_20261006.blend",
+        "blob": "17df3ec161bda34ffa9bdbbade52b5a6b4c80b92",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "assets/source-reference/saju-b-clear-green050-20261006/SaJu_B_Jade_ClearGreen050_20261006.glb",
+        "blob": "76d8434a424ff1bf23489eb60028bcc5a2df59b6",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "assets/source-reference/saju-b-evolving-light-v002/SaJu_Jade_Evolving_Light_v002_Final.blend",
+        "blob": "274de93b9644e281d89496dbc8459e41f8f3f1b3",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "assets/source-reference/saju-b-evolving-light-v002/reference/SaJu_Jade_Approved_Static_Material.glb",
+        "blob": "3752b6a268162a8936de7fd1588ded4a7db160ff",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "assets/source-reference/saju-b-green-emission-separated-v001/SaJu_Jade_GreenEmission_Separated_v001.blend",
+        "blob": "1ef866c9452784acb59663da6b5e30842dd98efe",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "assets/source-reference/saju-b-green-emission-separated-v001/SaJu_Jade_GreenEmission_Separated_v001.glb",
+        "blob": "3752b6a268162a8936de7fd1588ded4a7db160ff",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/SaJu_B_Jade_Character_Study.glb",
+        "blob": "24de1ca6887a6e7ab639e5440f296e9a1c677388",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/SaJu_B_Jade_Character_Study_Native.blend",
+        "blob": "897d91c674f6f298666caf684e103f410da8180e",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "assets/source-reference/saju-b-jade-reconstruction-baseline-20261006/source/candidate_5.blend",
+        "blob": "f487e1eecca279e7eaa7b9d99bd68e322b458742",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "assets/source-reference/saju-b-moving-light-v001/SaJu_Jade_Moving_Green_Light_v001.blend",
+        "blob": "47b2850719225bb9ad4553462af646a5efe62ef5",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "assets/source-reference/saju-b-moving-light-v001/reference/SaJu_Jade_Approved_Static_Material.glb",
+        "blob": "3752b6a268162a8936de7fd1588ded4a7db160ff",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "preservation-archives/porcelain-hero-blink-v1.glb.gz",
+        "blob": "9a105b1157be0d90547cf1990fa0799d2fb2fdb0",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "public/models/five-elements/earth-expression-v1.glb",
+        "blob": "3965f668e32a2d3cea39d6625b39a32836582bae",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "public/models/five-elements/earth-v1.glb",
+        "blob": "ee1b47371686aa180b970bb6b0444f658985cd4f",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "public/models/five-elements/fire-expression-v1.glb",
+        "blob": "8d56c149bfdfc78edf61bebad1750dff4c098cc4",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "public/models/five-elements/fire-v1.glb",
+        "blob": "e4ba85b5a60d96949de3e8ef836b312262b13fc3",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "public/models/five-elements/metal-expression-v1.glb",
+        "blob": "c859265bcb6caf66f4f41489995919341adc9c64",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "public/models/five-elements/metal-v1.glb",
+        "blob": "514181b542b40f39b61a7c776c880245acdc1475",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "public/models/five-elements/water-expression-v1.glb",
+        "blob": "e748e38fd5453c9768879ccc93b01ed10763c58c",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "public/models/five-elements/water-v1.glb",
+        "blob": "b3491e380b0c898dd9682f9a3dfe4c91cfa73f69",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "public/models/five-elements/wood-expression-v1.glb",
+        "blob": "6e5ee9b7bf040535aecbaf1efa30125cc899eccc",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "public/models/five-elements/wood-v1.glb",
+        "blob": "8eae36395f6094b4307966ca63c3445e9924c393",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "public/models/porcelain-hero-v1-lite.glb",
+        "blob": "86f20fa81cd8af9e95be16e2cbf78780a8dfebcd",
+        "alreadyInReachableAssetInventory": true
+      },
+      {
+        "path": "public/models/porcelain-hero-v2.glb",
+        "blob": "431984a28b6af8ad0929bcbc4ef5290660166265",
+        "alreadyInReachableAssetInventory": true
+      }
+    ],
+    "zodiacSourceAndConnections": [
+      {
+        "path": "lib/planet/approved-jade-spirit.ts",
+        "blob": "c602b52be5b087fbf3f4682cf9bdfb6ed4808b5e",
+        "sha256": "5da840b01972fba1f388f0edb3d4d796c680a99d9d002c4a0099f72c27f338aa",
+        "calls": [
+          {
+            "line": 7,
+            "text": "import { createZodiacPet } from './spirit-zodiac-pet';"
+          },
+          {
+            "line": 108,
+            "text": "const pet = createZodiacPet(dayKey.charAt(1), quality);"
+          }
+        ]
+      },
+      {
+        "path": "lib/planet/elemental-spirit.ts",
+        "blob": "1ef968ab9853a83f61fbc4af2ea434a607919b70",
+        "sha256": "bfec67641f7ed06b8a75565e3670a8d523099a9b55f13f4e5d13b6cc9ab91ed4",
+        "calls": [
+          {
+            "line": 6,
+            "text": "import { createZodiacPet } from \"./spirit-zodiac-pet\";"
+          },
+          {
+            "line": 65,
+            "text": "const pet=createZodiacPet(dayPillar.branch,quality);"
+          }
+        ]
+      },
+      {
+        "path": "lib/planet/spirit-zodiac-pet.ts",
+        "blob": "8595a73296087b93c34487dad9b55174cc396238",
+        "sha256": "d6e8384d03f1a3eec3ec0f916fb9212ac10c14aa32f41c0d8751892ea54b0daa",
+        "calls": [
+          {
+            "line": 10,
+            "text": "export function createZodiacPet(branch: string, quality: SpiritQuality = 'high'): ZodiacPet {"
+          }
+        ]
+      },
+      {
+        "path": "lib/planet/spirit-zodiac.ts",
+        "blob": "ad1049f0a8f9852ba08768175986fa8bc705ebd0",
+        "sha256": "a59195d639b56af25f4bfb718fdd9bc9a84f658d12ce7e8becdaeb194da8fde3",
+        "calls": [
+          {
+            "line": 19,
+            "text": "export function createZodiacFeatures("
+          }
+        ]
+      }
+    ]
+  }
+]

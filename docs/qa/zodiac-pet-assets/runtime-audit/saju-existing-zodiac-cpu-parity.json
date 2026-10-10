@@ -1,0 +1,779 @@
+{
+  "baseline": "dffb235fbe47c063b8535a21b4fdf3ea8235d6aa",
+  "current": "f7e99f144223d1497238767c26d10ec9f6e2002b",
+  "instancesCompared": 24,
+  "comparisons": 192,
+  "requestedAnimalUrls": 0,
+  "pass": true,
+  "rows": [
+    {
+      "branch": "자",
+      "animal": "rat",
+      "quality": "high",
+      "meshCount": 15,
+      "dimensions": [
+        0.4970367886811205,
+        0.656276032777732,
+        0.6643810274535498
+      ],
+      "sourceParity": true,
+      "loaderParity": true,
+      "idleAndResetParity": true,
+      "samples": [
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "52057b288af309f8503b0e981a860d27d978b00379b5a2d44ab65396cb63315d"
+        },
+        {
+          "time": 1.25,
+          "runtimeSnapshotSha256": "52aace236bc74677c5202c9c0e100c6972d919379fe08d1306b94c059bf25240"
+        },
+        {
+          "time": 4,
+          "runtimeSnapshotSha256": "9e4ad59493cd581cca7e983898483b8dfdaf8af6763ac9334084dd300c96ab39"
+        },
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "52057b288af309f8503b0e981a860d27d978b00379b5a2d44ab65396cb63315d"
+        }
+      ]
+    },
+    {
+      "branch": "축",
+      "animal": "ox",
+      "quality": "high",
+      "meshCount": 21,
+      "dimensions": [
+        0.5027128982015843,
+        0.657025493022098,
+        0.6604378066151266
+      ],
+      "sourceParity": true,
+      "loaderParity": true,
+      "idleAndResetParity": true,
+      "samples": [
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "62d772bc0f625b4b6efc8b43db448772f01c09f785e99d1163c6874c87ec0965"
+        },
+        {
+          "time": 1.25,
+          "runtimeSnapshotSha256": "cc8d9a730e8e1d54792b1bec1751a05137b731d5f79d336ac6eced3970257b03"
+        },
+        {
+          "time": 4,
+          "runtimeSnapshotSha256": "2e03096cd1a835d6a2c25e4b5343d99bfc93e1b0f9eb81596c1dee38d28345c0"
+        },
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "62d772bc0f625b4b6efc8b43db448772f01c09f785e99d1163c6874c87ec0965"
+        }
+      ]
+    },
+    {
+      "branch": "인",
+      "animal": "tiger",
+      "quality": "high",
+      "meshCount": 28,
+      "dimensions": [
+        0.40377275681104097,
+        0.6563430358983482,
+        0.6871003042922808
+      ],
+      "sourceParity": true,
+      "loaderParity": true,
+      "idleAndResetParity": true,
+      "samples": [
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "a543bb0cc443a653c2f6cf076446c35bc2d6ed10a29a97935ac7532967e52e7d"
+        },
+        {
+          "time": 1.25,
+          "runtimeSnapshotSha256": "01941c39c3b5ecf2fa6797a31b178ba453f304f1a882ad93944e3ff7629a7864"
+        },
+        {
+          "time": 4,
+          "runtimeSnapshotSha256": "fa9db271ed2d56b2914918bd9595e6c4cce3cd1f3e607948015cc51408734b19"
+        },
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "a543bb0cc443a653c2f6cf076446c35bc2d6ed10a29a97935ac7532967e52e7d"
+        }
+      ]
+    },
+    {
+      "branch": "묘",
+      "animal": "rabbit",
+      "quality": "high",
+      "meshCount": 15,
+      "dimensions": [
+        0.23649139995961072,
+        0.6550457184600483,
+        0.49340917794578343
+      ],
+      "sourceParity": true,
+      "loaderParity": true,
+      "idleAndResetParity": true,
+      "samples": [
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "8f061859d7f987e32bd46e949f7b15105cdf8b5c6d80d43c13f78674ab89b200"
+        },
+        {
+          "time": 1.25,
+          "runtimeSnapshotSha256": "f22e4d3d3d9e50edcdff2614a40abd9399843c77a398419d231952edc6be3e9e"
+        },
+        {
+          "time": 4,
+          "runtimeSnapshotSha256": "40e6bad7b808ea061a22d041746d94d67a986f589903052b9a0e1277f0a17905"
+        },
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "8f061859d7f987e32bd46e949f7b15105cdf8b5c6d80d43c13f78674ab89b200"
+        }
+      ]
+    },
+    {
+      "branch": "진",
+      "animal": "dragon",
+      "quality": "high",
+      "meshCount": 16,
+      "dimensions": [
+        0.41210837549731116,
+        0.6550505417394358,
+        0.7235350889628187
+      ],
+      "sourceParity": true,
+      "loaderParity": true,
+      "idleAndResetParity": true,
+      "samples": [
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "a1cb7a1ff799da3e951b525e945ed3d83b71dc9c3dc9d25da46ff4c0644fe20d"
+        },
+        {
+          "time": 1.25,
+          "runtimeSnapshotSha256": "2f7be5a7499668743325cca538662bf576a569dce538793d0aa2d0b9add8e82a"
+        },
+        {
+          "time": 4,
+          "runtimeSnapshotSha256": "f46846e5f875c1e7be15a4398622355352b38b345c92509639117d0c77c5f5c5"
+        },
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "a1cb7a1ff799da3e951b525e945ed3d83b71dc9c3dc9d25da46ff4c0644fe20d"
+        }
+      ]
+    },
+    {
+      "branch": "사",
+      "animal": "snake",
+      "quality": "high",
+      "meshCount": 10,
+      "dimensions": [
+        0.62,
+        0.44702376323239984,
+        0.6042333797735273
+      ],
+      "sourceParity": true,
+      "loaderParity": true,
+      "idleAndResetParity": true,
+      "samples": [
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "90b25898f5be35f3ae9bafb759ecaf3e63b24d1af80127997a26733e879fe840"
+        },
+        {
+          "time": 1.25,
+          "runtimeSnapshotSha256": "6afe93a4fd236825443d776a67946a81045f3b139c4956b00e2639c26749434d"
+        },
+        {
+          "time": 4,
+          "runtimeSnapshotSha256": "729042c5db443028f84399871923b50b433a5d6a12cb94a05203dc5b1e4c1157"
+        },
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "90b25898f5be35f3ae9bafb759ecaf3e63b24d1af80127997a26733e879fe840"
+        }
+      ]
+    },
+    {
+      "branch": "오",
+      "animal": "horse",
+      "quality": "high",
+      "meshCount": 21,
+      "dimensions": [
+        0.23742480471284033,
+        0.6549429771469407,
+        0.5938760818150414
+      ],
+      "sourceParity": true,
+      "loaderParity": true,
+      "idleAndResetParity": true,
+      "samples": [
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "76964af8fee5659b657b573605cf1309f47eb925ab51d3de2a39002c9ef37b7d"
+        },
+        {
+          "time": 1.25,
+          "runtimeSnapshotSha256": "b6e9ab8d2be744427d9fefda4cb1480ad61537755f952747c4e6f36809bc7bb2"
+        },
+        {
+          "time": 4,
+          "runtimeSnapshotSha256": "8a27af73ba6e753569939d67c195b7ddc5f0d2cff859347221b727882fe7731b"
+        },
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "76964af8fee5659b657b573605cf1309f47eb925ab51d3de2a39002c9ef37b7d"
+        }
+      ]
+    },
+    {
+      "branch": "미",
+      "animal": "sheep",
+      "quality": "high",
+      "meshCount": 23,
+      "dimensions": [
+        0.5205747729370823,
+        0.6513692683034703,
+        0.5857088049470667
+      ],
+      "sourceParity": true,
+      "loaderParity": true,
+      "idleAndResetParity": true,
+      "samples": [
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "673caa15e27ba77047fb917d684fd46c3ef62eff6beb4678bed538ceb25223cd"
+        },
+        {
+          "time": 1.25,
+          "runtimeSnapshotSha256": "f3b116d776952e2a51ea618fcc614de7638fa386048c226479e45a03d2f513ef"
+        },
+        {
+          "time": 4,
+          "runtimeSnapshotSha256": "d30091df24a5db34a38c674e6a6cc9ac1b23e39d53fa85f615863402b5d46a6c"
+        },
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "673caa15e27ba77047fb917d684fd46c3ef62eff6beb4678bed538ceb25223cd"
+        }
+      ]
+    },
+    {
+      "branch": "신",
+      "animal": "monkey",
+      "quality": "high",
+      "meshCount": 16,
+      "dimensions": [
+        0.5413056340033874,
+        0.6474603749704072,
+        0.7372961437951795
+      ],
+      "sourceParity": true,
+      "loaderParity": true,
+      "idleAndResetParity": true,
+      "samples": [
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "d959dc6c0c462b7e3d62e9af0aebbe6f43dd025e13d9bd3d48d8263ed47af029"
+        },
+        {
+          "time": 1.25,
+          "runtimeSnapshotSha256": "e1718342500a195f94a9aa8055746469f31f1a79306d20a60f651e626067e32a"
+        },
+        {
+          "time": 4,
+          "runtimeSnapshotSha256": "ae154cb32ae8ff2990029ce699e459c83b06e053b3f86e35f0b48c1601db9bde"
+        },
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "d959dc6c0c462b7e3d62e9af0aebbe6f43dd025e13d9bd3d48d8263ed47af029"
+        }
+      ]
+    },
+    {
+      "branch": "유",
+      "animal": "rooster",
+      "quality": "high",
+      "meshCount": 18,
+      "dimensions": [
+        0.35124957333666396,
+        0.6574159793704577,
+        0.7162828982928735
+      ],
+      "sourceParity": true,
+      "loaderParity": true,
+      "idleAndResetParity": true,
+      "samples": [
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "139d02eee3f44cea8229fc9f6fa4858154307c5d23d8ca17052034978b3ad138"
+        },
+        {
+          "time": 1.25,
+          "runtimeSnapshotSha256": "23f7cf08fdc3f5527a3a365923e1eb4e6bfb0b929d52b60c89f2e507939418a3"
+        },
+        {
+          "time": 4,
+          "runtimeSnapshotSha256": "f2cee224ab6b50255b6942abd811ebf732aa7096b7451b5a14ecc292f2843869"
+        },
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "139d02eee3f44cea8229fc9f6fa4858154307c5d23d8ca17052034978b3ad138"
+        }
+      ]
+    },
+    {
+      "branch": "술",
+      "animal": "dog",
+      "quality": "high",
+      "meshCount": 14,
+      "dimensions": [
+        0.4264655547040607,
+        0.6474603749704072,
+        0.7033109093767068
+      ],
+      "sourceParity": true,
+      "loaderParity": true,
+      "idleAndResetParity": true,
+      "samples": [
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "421291df6d8f38ac70de3b16b1d153848c54d741d8cd7f1325353068315eb1c0"
+        },
+        {
+          "time": 1.25,
+          "runtimeSnapshotSha256": "1fdbe9d148fc6ef28c739ad9dfb30d4216119bc0183a9c9a1c7f194dd3724668"
+        },
+        {
+          "time": 4,
+          "runtimeSnapshotSha256": "38b90cdc83c019d7f48f70cafd039be2c426799d35c55f15b4cc3cba577bb406"
+        },
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "421291df6d8f38ac70de3b16b1d153848c54d741d8cd7f1325353068315eb1c0"
+        }
+      ]
+    },
+    {
+      "branch": "해",
+      "animal": "pig",
+      "quality": "high",
+      "meshCount": 18,
+      "dimensions": [
+        0.3100380992575398,
+        0.6358806166035479,
+        0.6289547104567554
+      ],
+      "sourceParity": true,
+      "loaderParity": true,
+      "idleAndResetParity": true,
+      "samples": [
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "10a4ac63d937274b5f36a5ef7873d3525c3d819bc363989186b94a75e0b16d20"
+        },
+        {
+          "time": 1.25,
+          "runtimeSnapshotSha256": "c9278cae244437e2f0d8b8bef6317a6e79f565f8814e0b82436ba4392c531143"
+        },
+        {
+          "time": 4,
+          "runtimeSnapshotSha256": "7c73216f79fb85ac3ace3540a9971e5b07aa564e754745451dde8a6d7b7de09e"
+        },
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "10a4ac63d937274b5f36a5ef7873d3525c3d819bc363989186b94a75e0b16d20"
+        }
+      ]
+    },
+    {
+      "branch": "자",
+      "animal": "rat",
+      "quality": "low",
+      "meshCount": 15,
+      "dimensions": [
+        0.49506702092746496,
+        0.6562409338861042,
+        0.6604442790517089
+      ],
+      "sourceParity": true,
+      "loaderParity": true,
+      "idleAndResetParity": true,
+      "samples": [
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "3801bc6317a0889da0f7b38b7f4f89a26b46fe591a4b321518ac844474045381"
+        },
+        {
+          "time": 1.25,
+          "runtimeSnapshotSha256": "81979d3e156c413e635982ebcb7752dec636a32155512df88f138eac689e918b"
+        },
+        {
+          "time": 4,
+          "runtimeSnapshotSha256": "55c1516d1deab9b7af24a4a3b53baaff3ed292225e2b6da8393406986186f4f0"
+        },
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "3801bc6317a0889da0f7b38b7f4f89a26b46fe591a4b321518ac844474045381"
+        }
+      ]
+    },
+    {
+      "branch": "축",
+      "animal": "ox",
+      "quality": "low",
+      "meshCount": 21,
+      "dimensions": [
+        0.5038148176126366,
+        0.6577480370676658,
+        0.6623108418709763
+      ],
+      "sourceParity": true,
+      "loaderParity": true,
+      "idleAndResetParity": true,
+      "samples": [
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "90253fcab1d853aa12c874c98cf3ca0bca2b0701d2ae275dba025efabae59eb3"
+        },
+        {
+          "time": 1.25,
+          "runtimeSnapshotSha256": "4631aecac9631fc575023d352fcb70d64f25875ea206f6bede78796165a85f75"
+        },
+        {
+          "time": 4,
+          "runtimeSnapshotSha256": "421388260df89549e398acf4fa02d5de207137c783d4634082a69e4d3a1a28be"
+        },
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "90253fcab1d853aa12c874c98cf3ca0bca2b0701d2ae275dba025efabae59eb3"
+        }
+      ]
+    },
+    {
+      "branch": "인",
+      "animal": "tiger",
+      "quality": "low",
+      "meshCount": 28,
+      "dimensions": [
+        0.40374837371067657,
+        0.6563034005394792,
+        0.6867256816314267
+      ],
+      "sourceParity": true,
+      "loaderParity": true,
+      "idleAndResetParity": true,
+      "samples": [
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "81c92a4762af230814ad5c5490cf39b6f2029f45c40dfa43b451d7f76920133b"
+        },
+        {
+          "time": 1.25,
+          "runtimeSnapshotSha256": "224f9bedabf809927c4d8f5434f689e38dac519f2bc208e308e23aca88418591"
+        },
+        {
+          "time": 4,
+          "runtimeSnapshotSha256": "4b1087eb9518b95b985c6a4f16c4ff8ce7951fbb938b7e17da1cc0f0fccc4f52"
+        },
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "81c92a4762af230814ad5c5490cf39b6f2029f45c40dfa43b451d7f76920133b"
+        }
+      ]
+    },
+    {
+      "branch": "묘",
+      "animal": "rabbit",
+      "quality": "low",
+      "meshCount": 15,
+      "dimensions": [
+        0.23648106236088107,
+        0.6550170848615828,
+        0.49433861721041805
+      ],
+      "sourceParity": true,
+      "loaderParity": true,
+      "idleAndResetParity": true,
+      "samples": [
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "51ac332c4b2e128135c00a5044857aa4710ef9f88f9b63788be70848ca82d20b"
+        },
+        {
+          "time": 1.25,
+          "runtimeSnapshotSha256": "40073501b0e649d8c492e7f3bd187d688140bb6ba5d0d9c24ea67fe0d6df9a00"
+        },
+        {
+          "time": 4,
+          "runtimeSnapshotSha256": "03f97dfdd227fa2406eb1ec44566c5d090c6a1db8f4926009d7e1b96ee6787db"
+        },
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "51ac332c4b2e128135c00a5044857aa4710ef9f88f9b63788be70848ca82d20b"
+        }
+      ]
+    },
+    {
+      "branch": "진",
+      "animal": "dragon",
+      "quality": "low",
+      "meshCount": 16,
+      "dimensions": [
+        0.41176611903119575,
+        0.655132535128448,
+        0.7174784887443223
+      ],
+      "sourceParity": true,
+      "loaderParity": true,
+      "idleAndResetParity": true,
+      "samples": [
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "b59d372b51a062f91d3b36878d36da9846d6773b3d6b2999d715a2af111acca6"
+        },
+        {
+          "time": 1.25,
+          "runtimeSnapshotSha256": "0af014a6732689e8a82f8db26b043522484ca049f3f82824d18cfcbf069a7c48"
+        },
+        {
+          "time": 4,
+          "runtimeSnapshotSha256": "216e76671c380f2c58c21bcd02ecd3dd03a66f7e222b1c062e7fe0778faabf48"
+        },
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "b59d372b51a062f91d3b36878d36da9846d6773b3d6b2999d715a2af111acca6"
+        }
+      ]
+    },
+    {
+      "branch": "사",
+      "animal": "snake",
+      "quality": "low",
+      "meshCount": 10,
+      "dimensions": [
+        0.6200000000000001,
+        0.4588858943398575,
+        0.613314100212407
+      ],
+      "sourceParity": true,
+      "loaderParity": true,
+      "idleAndResetParity": true,
+      "samples": [
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "912a830cb557d7c5abb0f9e17da872495455d42826199628eb4ebc6038199667"
+        },
+        {
+          "time": 1.25,
+          "runtimeSnapshotSha256": "2784e5e3e9be7158a44cfe9e87a35a0fdfc1a2641ba98dec9526309e7e7778c4"
+        },
+        {
+          "time": 4,
+          "runtimeSnapshotSha256": "1cc472522cf6c8142e92c2fa8969fddb9881087a55dab1ce6206821c3c0e9b86"
+        },
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "912a830cb557d7c5abb0f9e17da872495455d42826199628eb4ebc6038199667"
+        }
+      ]
+    },
+    {
+      "branch": "오",
+      "animal": "horse",
+      "quality": "low",
+      "meshCount": 21,
+      "dimensions": [
+        0.23741699013856687,
+        0.6549214204248199,
+        0.5896611977459782
+      ],
+      "sourceParity": true,
+      "loaderParity": true,
+      "idleAndResetParity": true,
+      "samples": [
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "f316dcea69214f94c9ee3f4d20df5f9a4f7f7177dfb273abdcc917dda97ad738"
+        },
+        {
+          "time": 1.25,
+          "runtimeSnapshotSha256": "fddca549aa4ef5a0f4e36ac683dc3e211d427533ff42f75a54004ef7d8ba8df6"
+        },
+        {
+          "time": 4,
+          "runtimeSnapshotSha256": "d5d015e61e96e781a0894626ff079f7522c7ee8df5c90c688ec94244a495863f"
+        },
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "f316dcea69214f94c9ee3f4d20df5f9a4f7f7177dfb273abdcc917dda97ad738"
+        }
+      ]
+    },
+    {
+      "branch": "미",
+      "animal": "sheep",
+      "quality": "low",
+      "meshCount": 23,
+      "dimensions": [
+        0.5202304258122805,
+        0.6473094812858656,
+        0.5891027464150558
+      ],
+      "sourceParity": true,
+      "loaderParity": true,
+      "idleAndResetParity": true,
+      "samples": [
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "75d2bb46f0ab2c7dded45a97a030c99a89db84a2827b3421203a32b489a640ad"
+        },
+        {
+          "time": 1.25,
+          "runtimeSnapshotSha256": "cc562a4b7622ed1dfc37d7f859076f9acc6f899843547cb1a43534327109cef9"
+        },
+        {
+          "time": 4,
+          "runtimeSnapshotSha256": "4cd7fcf625d182e411d713005d83f246d248fdb7f385aec0b8498ada25883aed"
+        },
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "75d2bb46f0ab2c7dded45a97a030c99a89db84a2827b3421203a32b489a640ad"
+        }
+      ]
+    },
+    {
+      "branch": "신",
+      "animal": "monkey",
+      "quality": "low",
+      "meshCount": 16,
+      "dimensions": [
+        0.5410200443067488,
+        0.6473094812858656,
+        0.7376288793757639
+      ],
+      "sourceParity": true,
+      "loaderParity": true,
+      "idleAndResetParity": true,
+      "samples": [
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "b2da1f261b7d7c494e61d839e12193d95f2301c4860fdde8ca864383c253a03f"
+        },
+        {
+          "time": 1.25,
+          "runtimeSnapshotSha256": "3a0f7fb6600386bf71cc445acbece4f70b0b51e1ec6c54ed307cee50cca76959"
+        },
+        {
+          "time": 4,
+          "runtimeSnapshotSha256": "4084714ad941653a6a587355d4b38b4f39b39d0824adf888283ef8fb275d5871"
+        },
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "b2da1f261b7d7c494e61d839e12193d95f2301c4860fdde8ca864383c253a03f"
+        }
+      ]
+    },
+    {
+      "branch": "유",
+      "animal": "rooster",
+      "quality": "low",
+      "meshCount": 18,
+      "dimensions": [
+        0.35123228514826693,
+        0.6573836219466505,
+        0.7163619376892257
+      ],
+      "sourceParity": true,
+      "loaderParity": true,
+      "idleAndResetParity": true,
+      "samples": [
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "659c2f24157cdfe093812202b7f14166c06550f061baf7831af1642a1150c835"
+        },
+        {
+          "time": 1.25,
+          "runtimeSnapshotSha256": "35778d738f87c0529f64c5cd86f510bc7a39bea3ddf8ce1c79fbcca29b293451"
+        },
+        {
+          "time": 4,
+          "runtimeSnapshotSha256": "093add4a2bc3d6fa061366ef05a0eb1533a8e7d695490630ac3fcd15dd9119c7"
+        },
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "659c2f24157cdfe093812202b7f14166c06550f061baf7831af1642a1150c835"
+        }
+      ]
+    },
+    {
+      "branch": "술",
+      "animal": "dog",
+      "quality": "low",
+      "meshCount": 14,
+      "dimensions": [
+        0.42513470078164106,
+        0.6473094812858656,
+        0.7020961179390048
+      ],
+      "sourceParity": true,
+      "loaderParity": true,
+      "idleAndResetParity": true,
+      "samples": [
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "64689b4c44f6b0a14e280c8fbea420cf5cad70773c72812f0e4fd049464fc646"
+        },
+        {
+          "time": 1.25,
+          "runtimeSnapshotSha256": "ad8e417fae88093bc42caeaa7635ff3df17fc252ea3015d06405abbc3ba5d78a"
+        },
+        {
+          "time": 4,
+          "runtimeSnapshotSha256": "75b7ccb10bef64f695b9cbe1ea20cb2f0dd24638f67a6862c4ee01d12a2ec0ab"
+        },
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "64689b4c44f6b0a14e280c8fbea420cf5cad70773c72812f0e4fd049464fc646"
+        }
+      ]
+    },
+    {
+      "branch": "해",
+      "animal": "pig",
+      "quality": "low",
+      "meshCount": 18,
+      "dimensions": [
+        0.31002381627976594,
+        0.6357292329493746,
+        0.6287008120541769
+      ],
+      "sourceParity": true,
+      "loaderParity": true,
+      "idleAndResetParity": true,
+      "samples": [
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "42478e201237edcfdb0536eb14857c09bc0ffa547e94f0a65244c0bbddf6bafa"
+        },
+        {
+          "time": 1.25,
+          "runtimeSnapshotSha256": "73f9bd8bf2735407be46caa6e1cc181d34ff39c1a27b4aac259cacb55cc010dd"
+        },
+        {
+          "time": 4,
+          "runtimeSnapshotSha256": "145fc25ddb933344bf7edd7bc1f3a8c9871f4897fb0f4e432900792edf27a5e6"
+        },
+        {
+          "time": 0,
+          "runtimeSnapshotSha256": "42478e201237edcfdb0536eb14857c09bc0ffa547e94f0a65244c0bbddf6bafa"
+        }
+      ]
+    }
+  ],
+  "limits": "CPU source parity only; no new model exports, browser captures or authored original asset approval verification."
+}

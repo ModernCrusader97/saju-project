@@ -61,7 +61,7 @@ export default function ElementalSpiritCanvas({
     const camera=new THREE.PerspectiveCamera(38,1,.1,40);
     let renderer:THREE.WebGLRenderer;
     try {
-      renderer=new THREE.WebGLRenderer({antialias:!low,alpha:true,powerPreference:"high-performance",preserveDrawingBuffer:true});
+      renderer=new THREE.WebGLRenderer({antialias:!low,alpha:true,premultipliedAlpha:true,powerPreference:"high-performance",preserveDrawingBuffer:true});
     } catch {
       setGraphicsError("3D 화면을 사용할 수 없어요. WebGL을 지원하는 브라우저에서 다시 열어주세요.");return;
     }
@@ -122,6 +122,22 @@ export default function ElementalSpiritCanvas({
     // attach a model to an unmounted scene or keep its GPU resources alive.
     loadApprovedSpirit(dayKey,monthKey,low?"low":"high").then(instance=>{
       if(disposed){instance.dispose();return;}
+      // Transmission draws without alpha blending. Premultiply its final canvas
+      // output, while preserving straight RGB in offscreen refraction targets.
+      // Normal-blended fire and the ground already use the canvas convention.
+      instance.group.traverse(object=>{
+        const mesh=object as THREE.Mesh;if(!mesh.isMesh)return;
+        for(const material of Array.isArray(mesh.material)?mesh.material:[mesh.material]) {
+          const physical=material as THREE.MeshPhysicalMaterial;
+          if(!physical.isMeshPhysicalMaterial || physical.transmission<=0)continue;
+          const previousOnBeforeRender=physical.onBeforeRender;
+          physical.onBeforeRender=function(...args) {
+            previousOnBeforeRender.apply(this,args);
+            const canvasOutput=args[0].getRenderTarget()===null;
+            if(this.premultipliedAlpha!==canvasOutput){this.premultipliedAlpha=canvasOutput;this.needsUpdate=true;}
+          };
+        }
+      });
       spirit=instance;scene.add(instance.group);spiritRef.current=instance;
       setSpiritInfo(instance.data);setLoading(false);resize();
     }).catch(()=>{

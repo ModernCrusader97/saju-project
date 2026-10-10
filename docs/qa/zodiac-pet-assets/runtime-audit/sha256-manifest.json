@@ -1,0 +1,70 @@
+{
+  "artifacts": [
+    {
+      "file": "saju-existing-zodiac-cpu-parity.json",
+      "bytes": 22365,
+      "sha256": "c182a9865ee1dcf7fe2a11477c17a3b7b2084824cf1197e50619e2b1bf400191"
+    },
+    {
+      "file": "saju-existing-zodiac-extra-history-scan.json",
+      "bytes": 14463,
+      "sha256": "e4b3faf91cb29c91352712e565c97d1b64f7c227c4785b7fd27be43b8ee8e78d"
+    },
+    {
+      "file": "saju-existing-zodiac-forensic-20261010.json",
+      "bytes": 19287,
+      "sha256": "9c1742cbfbea7f9b7433a446ba9fa608808abdea40314459628611b4582c4bf0"
+    },
+    {
+      "file": "saju-existing-zodiac-forensic-20261010.md",
+      "bytes": 12518,
+      "sha256": "4a4dc8bead3a2c78cfc52f957edcd4d7a430fdfc6ef6115ce8baca5f50984714"
+    },
+    {
+      "file": "saju-existing-zodiac-generator-parity.json",
+      "bytes": 2362,
+      "sha256": "b2980004ce9d7dc760c7fde1405c0859db052bdb33bcdefda58498c223bffac2"
+    },
+    {
+      "file": "saju-existing-zodiac-parity.cjs",
+      "bytes": 5851,
+      "sha256": "c0e38ee2908113a87cdd516963a51fffd59bbafe26e03847daa92bf4975a1e79"
+    },
+    {
+      "file": "saju-existing-zodiac-remote-heads.json",
+      "bytes": 5915,
+      "sha256": "f246cc6ed56b4d33c1381bb78e5a3ebd649c71905fda65b1c809f838f2466708"
+    },
+    {
+      "file": "saju-existing-zodiac-visual-provenance.json",
+      "bytes": 881,
+      "sha256": "8c548848b19d705c273815549a9e361a6b5ea4ed163ec1bf75d3201b2fe346d8"
+    },
+    {
+      "file": "sites-report.md",
+      "bytes": 8307,
+      "sha256": "d4771fee8acbee167c6cc6446425fb2a7d0779fbe89d35a393cd600f73141998"
+    },
+    {
+      "file": "sites-runtime-linkage.json",
+      "bytes": 9617,
+      "sha256": "3c216a102573ab09dc13ce05a146597c20676ecce0a9ac40dad1d218827a7ff1"
+    },
+    {
+      "file": "sites-native-version-provenance.json",
+      "bytes": 1419,
+      "sha256": "77e94999c53d3b292374627d4b59020f124e6422711c3bea02342c4ba1e0c856"
+    },
+    {
+      "file": "sites-current-feature-manifest-snapshot.json",
+      "bytes": 3899,
+      "sha256": "f2628432831193592d8434ca98490cf6c9b376a19fe016e0d7c4a461e7a99c28"
+    },
+    {
+      "file": "sites-archive-preservation-report.txt",
+      "bytes": 4459,
+      "sha256": "811c3bd2122efb875cd1c82b228a364251239bdc632f1931bc4be9f056bf6ad7"
+    }
+  ],
+  "rawSnapshotsDescribeTheirRecordedCommit": true
+}
