@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "checks": [
+    "10 connections × 120 frames: baseline 31,200 sample vectors / 1,200 arrays; restored 0 / 0",
+    "all Float32 point coordinates, pulse phases/positions and recomputed bounding spheres equal v27 exactly",
+    "missing owner fallback, zero motion and pulse wrap remain equivalent; geometry and typed buffers retain identity",
+    "separate scene sampling vectors do not affect another mounted scene"
+  ],
+  "limits": [
+    "Counts cover connection curve sampling only, not total scene allocations or frame rate",
+    "CPU equality with pinned Three.js; no WebGL or real-browser rendering claim"
+  ]
+}

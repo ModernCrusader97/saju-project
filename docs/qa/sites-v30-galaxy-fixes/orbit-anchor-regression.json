@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "checks": [
+    "connection endpoints are independent of owner/friend fixed orbit anchors",
+    "30/60/144 FPS through 600 seconds have identical intended orbit positions without acceleration",
+    "unchanged slow orbit completes one turn in 133.097 seconds for the radius-7.28 fixture",
+    "180 paused frames cannot move a surrounding planet or its connection endpoint",
+    "resuming after a pause advances by one normal timestep without a jump",
+    "separate scenes and connection updates cannot mutate another scene anchor"
+  ],
+  "baseline": {
+    "source": "3d180b141993d86f7198f2f393e6e20acdf1eeab",
+    "afterOneSecondPositionError": 9.338783572603761,
+    "differenceBetween60And120FPS": 9.469966415774214
+  },
+  "limits": [
+    "Actual production motion/construction/sampling code with synthetic Three.js scene objects",
+    "CPU behavior only; no browser or visual reproduction claim",
+    "No changes to orbit speed, shape, shaders, artwork, authentication or stored records"
+  ]
+}

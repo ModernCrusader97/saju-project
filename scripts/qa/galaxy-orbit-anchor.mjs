@@ -6,6 +6,8 @@ import ts from 'typescript';
 import * as THREE from 'three';
 
 const source=await fs.readFile('components/planet/GalaxyCanvas.tsx','utf8');
+const helper=ts.transpileModule(await fs.readFile('lib/planet/galaxy-motion.ts','utf8'),{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ESNext}}).outputText;
+const { setGalaxyOrbitPosition }=await import('data:text/javascript;base64,'+Buffer.from(helper).toString('base64'));
 function compile(code,args){return new Function(...args,ts.transpileModule(code,{compilerOptions:{target:ts.ScriptTarget.ES2022}}).outputText);}
 function runtime(text){
  const orbitStart=text.indexOf('if (galaxyGroupRef.current) {',text.indexOf('const simulationTime ='));
@@ -15,7 +17,7 @@ function runtime(text){
  const samplingEnd=text.indexOf('\n      });',samplingStart)+10;
  const construction=text.match(/const curve = new THREE\.QuadraticBezierCurve3\([^;]+;/)?.[0];assert(construction);
  return {
-  orbit:compile(text.slice(orbitStart,orbitEnd),['galaxyGroupRef','spiralGalaxy','planetMeshesRef','landingAnimRef','simulationTime']),
+  orbit:compile(text.slice(orbitStart,orbitEnd),['galaxyGroupRef','spiralGalaxy','planetMeshesRef','landingAnimRef','simulationTime','setGalaxyOrbitPosition','motionDt','reducedMotion']),
   sample:compile(text.slice(samplingStart,samplingEnd),['THREE','connectionsRef','ownerGroupRef','motionDt','connectionOrigin','connectionPoint']),
   curve:compile(construction+'\nreturn curve;',['THREE','ownerPos','mid','friendPos']),
  };
@@ -30,7 +32,7 @@ function scene(engine){
  const connection={friendGroup,curve,line:new THREE.Line(new THREE.BufferGeometry().setFromPoints(curve.getPoints(24)),new THREE.LineBasicMaterial()),pulseMesh:new THREE.Object3D(),pulseT:0};
  return {engine,ownerNode,friendNode,ownerGroup,friendGroup,start,connection,connectionsRef:{current:[connection]},ownerGroupRef:{current:ownerGroup},planets:{current:new Map([['owner',{group:ownerGroup,node:ownerNode}],['friend',{group:friendGroup,node:friendNode}]])},galaxy:{current:new THREE.Group()},spiral:{galaxyGroup:new THREE.Group()},landing:{current:null},origin:new THREE.Vector3(),point:new THREE.Vector3()};
 }
-function step(s,time,dt){s.engine.orbit(s.galaxy,s.spiral,s.planets,s.landing,time);s.engine.sample(THREE,s.connectionsRef,s.ownerGroupRef,dt,s.origin,s.point);}
+function step(s,time,dt){s.engine.orbit(s.galaxy,s.spiral,s.planets,s.landing,time,setGalaxyOrbitPosition,dt,{matches:false});s.engine.sample(THREE,s.connectionsRef,s.ownerGroupRef,dt,s.origin,s.point);}
 function expected(start,time){const radius=Math.hypot(start.x,start.z),angle=time*.052/Math.sqrt(Math.max(1,radius/6)),c=Math.cos(angle),s=Math.sin(angle);return new THREE.Vector3(start.x*c+start.z*s,start.y,start.z*c-start.x*s);}
 function run(engine,fps,seconds){const s=scene(engine);for(let frame=1;frame<=fps*seconds;frame++)step(s,frame/fps,1/fps);return s;}
 const old60=run(previous,60,1),old120=run(previous,120,1),correct=expected(old60.start,1);

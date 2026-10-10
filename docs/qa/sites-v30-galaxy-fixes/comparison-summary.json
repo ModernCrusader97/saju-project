@@ -1,0 +1,46 @@
+{
+  "nativeLiveBase": "aa41b1a3601c5254c28bc5a4c853cd5efa50c5cc",
+  "reviewedGithubFix": "7291fd0f01aca2d8a339388377517c29003499be",
+  "nativeLiveFileCount": 365,
+  "reviewedGithubFileCount": 518,
+  "identicalFileCount": 339,
+  "differentFiles": [
+    "app/api/saju/[id]/chat/route.ts",
+    "app/daily/page.tsx",
+    "app/guin/[id]/page.tsx",
+    "app/guin/page.tsx",
+    "app/page.tsx",
+    "app/saved/page.tsx",
+    "components/AskDoryeongModal.tsx",
+    "components/SajuInputModal.tsx",
+    "components/planet/CosmicPassportModal.tsx",
+    "components/planet/ElementalSpiritCanvas.tsx",
+    "components/planet/GalaxyCanvas.tsx",
+    "components/planet/PlanetCanvas.tsx",
+    "lib/db/store.ts",
+    "lib/saju/daily-orbital.ts",
+    "lib/saju/input.ts",
+    "lib/universe-state.ts",
+    "scripts/qa/chat-recovery-dom.mjs",
+    "scripts/qa/galaxy-orbit-anchor.mjs"
+  ],
+  "liveOnlyFiles": [
+    "docs/GALAXY_ORBIT_ANCHOR_FIX.md",
+    "docs/MODAL_KEYBOARD_MAINTENANCE.md",
+    "docs/PERFORMANCE_RECOVERY.md",
+    "hooks/use-dialog-focus.ts",
+    "lib/planet/visibility-loop.ts",
+    "scripts/qa/galaxy-connection-sampling.mjs",
+    "scripts/qa/modal-accessibility-dom.mjs",
+    "scripts/qa/visibility-loop.mjs"
+  ],
+  "rebuiltOnlyFileCount": 161,
+  "decision": "Use native deployed v29 base. Adapt only the six runtime files from reviewed fix. Preserve all live-only files, visibility-gated scheduler, allocation-free connection sampling, keyboard modal fixes, DB/auth/API/resources. No replacement of entire restored GitHub tree.",
+  "exactPatchApplies": false,
+  "patchContextDifferences": [
+    "app/guin/[id]/page.tsx has existing old fetch effect",
+    "GalaxyCanvas preserves native visibility loop and scratch vectors",
+    "PlanetCanvas preserves native visibility loop"
+  ],
+  "sourceHelper": "Sites skill workflow scripts are unavailable in configured cloud/executor packages and filesystem. Native Sites Git and native private deployment tools are callable; existing tracked build emits supported .openai metadata and Worker entries. Use these APIs with explicit source and artifact proof."
+}

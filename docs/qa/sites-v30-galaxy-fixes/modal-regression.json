@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "checks": [
+    "birth: named dialog/focus entry/Tab wrap/latest Escape/restore/44px close declaration",
+    "chat: named dialog/focus entry/Tab wrap/latest Escape/restore/44px close declaration",
+    "dynamic disabled and removed controls retain focus containment"
+  ],
+  "limits": [
+    "JSDOM validates focus/event/semantic behavior, not real browser layout or assistive technology",
+    "44px is the CSS minimum declaration, not a device measurement",
+    "No API writes or real-user data"
+  ]
+}

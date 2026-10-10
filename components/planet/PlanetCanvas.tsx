@@ -6,7 +6,8 @@ import * as THREE from "three";
 import { createVisibilityLoop } from "@/lib/planet/visibility-loop";
 import { MAX_LIVING_RADIAL_RELIEF } from "@/lib/planet/living-surface-shader";
 import { createStudioEnvironment } from "@/lib/planet/scene-environment";
-import { createSurfaceEffects, animateSurfaceEffects, disposeSurfaceEffects } from "@/lib/planet/surface-effects";
+import { animateSurfaceEffects, disposeSurfaceEffects } from "@/lib/planet/surface-effects";
+import { createPlanetAppearance } from "@/lib/planet/planet-appearance";
 import { getStemThemePreset } from "@/lib/planet/theme-library";
 import { createPlanetMaterial, animateSurface, resetSurface } from "@/lib/planet/surface-material";
 import { disposeObject, disposeMaterial } from "@/lib/planet/render-resources";
@@ -266,9 +267,9 @@ export default function PlanetCanvas({
 
     // Shared sphere UV/material path for all four heavenly-stem slots.
     disposeMaterial(mainPlanetRef.current.material as THREE.Material);
-    mainPlanetRef.current.material = createPlanetMaterial(presetD, presetM, maskStyle, 1024);
     if (surfaceEffectsRef.current) disposeSurfaceEffects(surfaceEffectsRef.current);
-    const effects = createSurfaceEffects(presetD, presetM, maskStyle, 1.85);
+    const { material, effects } = createPlanetAppearance(presetD, presetM, 1.85, maskStyle);
+    mainPlanetRef.current.material = material;
     mainPlanetRef.current.add(effects);
     surfaceEffectsRef.current = effects;
     animateSurfaceEffects(effects, motionTimeRef.current, 0);

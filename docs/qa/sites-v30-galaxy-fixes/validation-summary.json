@@ -1,0 +1,92 @@
+{
+  "status": "PASS",
+  "nativeLiveBase": "aa41b1a3601c5254c28bc5a4c853cd5efa50c5cc",
+  "reviewedGithubFix": "7291fd0f01aca2d8a339388377517c29003499be",
+  "applicationScope": "Six runtime files ported onto exact native v29; no replacement with restored GitHub tree. Native visibility loop, connection scratch vectors and independent curve endpoints remain.",
+  "entryCPU": {
+    "before": {
+      "passed": 11,
+      "failed": 12
+    },
+    "after": {
+      "passed": 23,
+      "failed": 0
+    }
+  },
+  "effectsCPU": {
+    "before": {
+      "passed": 0,
+      "failed": 13
+    },
+    "after": {
+      "passed": 13,
+      "failed": 0
+    }
+  },
+  "ownerMaskSession": {
+    "passed": 10,
+    "failed": 0
+  },
+  "nativeWorkerWebGL": {
+    "before": {
+      "passed": 1,
+      "failed": 7
+    },
+    "after": {
+      "passed": 8,
+      "failed": 0
+    }
+  },
+  "browserHarnessSha256": "7b39f72d67781e247e6e757832053f70e6fa2b351dad430698ef4a8682463a69",
+  "browserHarnessCompatibility": "Join selector matches native v29 input-containing form; source-basis metadata corrected. Original attempted copied selector expected later GitHub dialog markup; initial run was discarded as incompatible and both phases rerun with identical adapted harness. Runtime UI was not changed to fit the test.",
+  "typecheck": "PASS, tsc --noEmit exit 0",
+  "build": "PASS, before and after npm run build exit 0",
+  "regressions": {
+    "nativeVisibilityGateChecks": 8,
+    "allocationFreeConnectionSamplingChecks": 4,
+    "fixedOrbitAnchorChecks": 6,
+    "modalDOMChecks": 3
+  },
+  "approvedAssetHashesAndPNG": "PASS; 46 manifest source files, atlas PNG/raw pixels match",
+  "actualGLB": "PASS; immutable v29 reference and emitted runtime body both 4293332 bytes, 8 meshes, original UVs/world bounds identical, preserved depth 1.35",
+  "lint": {
+    "existingRuntimeBefore": {
+      "errors": 9,
+      "warnings": 10
+    },
+    "existingRuntimeAfter": {
+      "errors": 9,
+      "warnings": 10
+    },
+    "newHelpersAndQA": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "newDiagnostics": 0,
+    "fullRepository": "NOT_RUN"
+  },
+  "preservation": {
+    "originalFiles": 365,
+    "unchangedOriginalFiles": 360,
+    "changedOriginalFiles": 5,
+    "deletedOriginalFiles": 0,
+    "resourceFilesPreserved": 179,
+    "builtPublicFilesPreserved": 24
+  },
+  "visual": {
+    "personalPangaeaPNGExact": true,
+    "personalArchipelagoPNGExact": true,
+    "inspected": [
+      "before-galaxy-owner-pangaea.png",
+      "after-galaxy-owner-pangaea.png",
+      "after-ten-stem-galaxy.png"
+    ]
+  },
+  "ownerMaskRule": "Valid same-tab creation binding for same owner preserves mask. Unbound/new legacy maps use pangaea. API alone does not reconstruct exact birth time.",
+  "productionVerification": "Native Sites save/deploy result will provide publication status; direct hosted browser/HTTP QA blocked by environment DNS EAI_AGAIN and proxy CONNECT 403. No network bypass, auth/permission changes, production DB reads/writes or payment calls.",
+  "limits": [
+    "SwiftShader/synthetic rAF with real local built Worker and disposable synthetic D1; no physical device or GPU verification",
+    "Service access supplies no visitor identity; no visitor headers forged at production",
+    "This patch connects existing supported planet effects; it does not implement the lost GLB ten-stem candidate or certify complete vine/sand/spray/flowing dew bodies"
+  ]
+}
