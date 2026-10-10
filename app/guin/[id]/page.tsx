@@ -5,6 +5,7 @@ import { readApiResponse } from "@/lib/http-client";
 
 import React, { lazy, Suspense, useState, useEffect, useRef } from "react";
 import { restoreGalaxyUniverse } from "@/lib/universe-state";
+import type { MaskStyle } from "@/lib/planet/uv-mask";
 import Header from "@/components/Header";
 import { GuinMapData, GuinPerson } from "@/lib/saju/types";
 import {
@@ -41,6 +42,7 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
   const [selectedPersonId, setSelectedPersonId] = useState<string | undefined>(undefined);
   const [distanceScale, setDistanceScale] = useState(1.0);
   const [speedScale, setSpeedScale] = useState(1.0);
+  const [ownerMaskStyle, setOwnerMaskStyle] = useState<MaskStyle>("pangaea");
 
   // 도감 및 여권 모달 상태
   const [showPokedexModal, setShowPokedexModal] = useState(false);
@@ -72,7 +74,7 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
         if (!res.ok) throw new Error(data.error || "지도를 불러오지 못했습니다.");
         if (data.guinMap) {
           setMapData(data.guinMap);
-          restoreGalaxyUniverse(data.guinMap);
+          setOwnerMaskStyle(restoreGalaxyUniverse(data.guinMap)?.maskStyle ?? "pangaea");
         }
       } catch (error) {
         if (active) {
@@ -267,6 +269,7 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
             distanceScale={distanceScale}
             speedScale={speedScale}
             incomingPersonId={lastAddedPersonId}
+            ownerMaskStyle={ownerMaskStyle}
           /></Suspense>
         </div>
 

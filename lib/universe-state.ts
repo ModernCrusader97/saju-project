@@ -118,9 +118,15 @@ export function saveGalaxyUniverse(snapshot: UniverseSnapshot, map: GuinMapData)
   try { sessionStorage.setItem(GALAXY_OWNER_SESSION_KEY, JSON.stringify({ path, snapshot })); } catch { /* Storage may be blocked. */ }
   saveUniverseSession(snapshot);
 }
-export function restoreGalaxyUniverse(map: GuinMapData): void {
+export function restoreGalaxyUniverse(map: GuinMapData): UniverseSnapshot | null {
   const saved = readGalaxyOwner();
   // GET cannot recover an exact birth time: reuse only the snapshot that was
   // bound on successful creation, and verify it against the actual map owner.
-  if (saved?.path === `/guin/${map.id}` && galaxyMatchesSnapshot(map, saved.snapshot)) saveUniverseSession(saved.snapshot);
+  if (saved?.path !== `/guin/${map.id}` || !galaxyMatchesSnapshot(map, saved.snapshot)) return null;
+  const current = readUniverseSession();
+  // Keep later mask/view choices only for the same exact bound owner, including
+  // birth time. Another map or another person's session cannot supply a style.
+  const restored = current && universeOwnerKey(current) === universeOwnerKey(saved.snapshot) ? current : saved.snapshot;
+  saveUniverseSession(restored);
+  return restored;
 }

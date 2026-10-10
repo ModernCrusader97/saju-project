@@ -1,0 +1,101 @@
+{
+  "basis": "8ba3b9763bcaa88a8a3f2e108fa331a49800090f",
+  "branch": "fix/galaxy-entry-owner-appearance-20261010",
+  "sourceSha256": "ece40f1f65f2e114902ab5297e901d17358d83d8a1d6ceb83e94ee309d345a40",
+  "checks": {
+    "entryCpu": {
+      "beforePass": 11,
+      "beforeFail": 12,
+      "afterPass": 23,
+      "afterFail": 0
+    },
+    "effectsCpu": {
+      "beforePass": 0,
+      "beforeFail": 13,
+      "afterPass": 13,
+      "afterFail": 0
+    },
+    "webGl": {
+      "beforePass": 1,
+      "beforeFail": 7,
+      "afterPass": 8,
+      "afterFail": 0
+    },
+    "ownerMaskSession": {
+      "afterPass": 10,
+      "afterFail": 0
+    },
+    "existingNameSession": {
+      "pass": 12,
+      "fail": 0
+    },
+    "mapLoadingDom": {
+      "pass": 7,
+      "fail": 0
+    },
+    "backgroundCpu": {
+      "pass": 17,
+      "fail": 0
+    },
+    "orbitCpuOneHourAllRates": {
+      "pass": 16,
+      "fail": 0
+    },
+    "backgroundWebGl": {
+      "pass": 5,
+      "fail": 0
+    },
+    "responsiveUi": {
+      "pass": 1,
+      "fail": 0,
+      "widths": [
+        320,
+        390,
+        768,
+        1440
+      ]
+    }
+  },
+  "exitCodes": {
+    "before-browser": 1,
+    "after-entry-cpu": 0,
+    "after-owner-effects-cpu": 0,
+    "after-browser": 0,
+    "regression-responsive-browser": 0,
+    "regression-map-loading": 0,
+    "build": 0,
+    "regression-background-browser": 0,
+    "approved-assets": 0,
+    "after-lint": 1,
+    "after-owner-mask-session": 0,
+    "regression-orbit-cpu": 0,
+    "regression-background-cpu": 0,
+    "before-owner-effects-cpu": 1,
+    "new-files-lint": 0,
+    "before-entry-cpu": 1,
+    "before-owner-mask-session": 1,
+    "typecheck": 0
+  },
+  "typecheck": "PASS",
+  "build": "PASS",
+  "approvedOriginalFilesVerified": 46,
+  "actualGlbCpu": "PASS",
+  "lint": {
+    "scope": "4 existing runtime files plus 2 new helpers and 4 new QA scripts",
+    "beforeErrors": 4,
+    "afterErrors": 4,
+    "beforeWarnings": 9,
+    "afterWarnings": 9,
+    "newFilesErrors": 0,
+    "newFilesWarnings": 0,
+    "baselineLintStillFails": true
+  },
+  "limits": [
+    "Restored 8ba3b976 lineage; exact deployed v29 source unrecovered",
+    "SwiftShader WebGL with synthetic rAF/clock, not physical-device performance",
+    "Pre-roll draws sampled; all entry-boundary frames render natively",
+    "GLB CPU textures use placeholders; no new spirit/pet/B-model raster validation",
+    "Existing effects only; no new full vine body, sand, spray or flowing dew implementation",
+    "No full-project lint success claimed; lint profiling paused in separate QA branch"
+  ]
+}

@@ -1,0 +1,444 @@
+{
+  "phase": "after",
+  "basis": "8ba3b9763bcaa88a8a3f2e108fa331a49800090f",
+  "method": "Actual React animation closure, node builder, Three vectors/material time/disposal; synthetic clock/rAF, GPU/environment and Canvas2D boundary stubs",
+  "durationSeconds": 3600,
+  "rates": [
+    30,
+    60,
+    144
+  ],
+  "tolerance": 0.000001,
+  "passed": 16,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "30fps: original anchors remain exactly unchanged for one hour",
+      "status": "PASS"
+    },
+    {
+      "name": "30fps: analytic paths retain the original angular speed",
+      "status": "PASS"
+    },
+    {
+      "name": "30fps: orbital radii do not expand",
+      "status": "PASS"
+    },
+    {
+      "name": "30fps: angular velocity and accumulated travel remain bounded",
+      "status": "PASS"
+    },
+    {
+      "name": "60fps: original anchors remain exactly unchanged for one hour",
+      "status": "PASS"
+    },
+    {
+      "name": "60fps: analytic paths retain the original angular speed",
+      "status": "PASS"
+    },
+    {
+      "name": "60fps: orbital radii do not expand",
+      "status": "PASS"
+    },
+    {
+      "name": "60fps: angular velocity and accumulated travel remain bounded",
+      "status": "PASS"
+    },
+    {
+      "name": "144fps: original anchors remain exactly unchanged for one hour",
+      "status": "PASS"
+    },
+    {
+      "name": "144fps: analytic paths retain the original angular speed",
+      "status": "PASS"
+    },
+    {
+      "name": "144fps: orbital radii do not expand",
+      "status": "PASS"
+    },
+    {
+      "name": "144fps: angular velocity and accumulated travel remain bounded",
+      "status": "PASS"
+    },
+    {
+      "name": "30/60/144fps yield the same final positions after one hour",
+      "status": "PASS"
+    },
+    {
+      "name": "user pause freezes friend positions and anchors in the foreground",
+      "status": "PASS"
+    },
+    {
+      "name": "reset restores the original anchors rather than the last rotated positions",
+      "status": "PASS"
+    },
+    {
+      "name": "incoming landing updates its curve without rewriting orbital anchors",
+      "status": "PASS"
+    }
+  ],
+  "observations": [
+    {
+      "fps": 30,
+      "durationSeconds": 3600,
+      "frames": 108000,
+      "anchorsBefore": [
+        [
+          5.067185250247139,
+          0.1,
+          2.82199107717899
+        ],
+        [
+          -0.7129556806750416,
+          0,
+          5.352727734285874
+        ],
+        [
+          2.3865445897161224,
+          0.347082683658364,
+          -3.3338273682505974
+        ],
+        [
+          9.837177446255962,
+          -0.08943938570939092,
+          3.671503764246065
+        ]
+      ],
+      "anchorsAfter": [
+        [
+          5.067185250247139,
+          0.1,
+          2.82199107717899
+        ],
+        [
+          -0.7129556806750416,
+          0,
+          5.352727734285874
+        ],
+        [
+          2.3865445897161224,
+          0.347082683658364,
+          -3.3338273682505974
+        ],
+        [
+          9.837177446255962,
+          -0.08943938570939092,
+          3.671503764246065
+        ]
+      ],
+      "finalPositions": [
+        [
+          5.067185250247139,
+          0.1,
+          2.82199107717899
+        ],
+        [
+          -5.345018881278063,
+          0,
+          0.7686176935128454
+        ],
+        [
+          3.856948187620193,
+          0.347082683658364,
+          1.3906655521775564
+        ],
+        [
+          -10.249240558289,
+          -0.08943938570939092,
+          -2.2810234497531625
+        ]
+      ],
+      "maxAnchorDisplacement": 0,
+      "records": [
+        {
+          "id": "synthetic-owner",
+          "owner": true,
+          "radius": 5.800000000000001,
+          "omega": 0,
+          "maxRadiusError": 0,
+          "maxPathError": 0,
+          "maxAngularSpeedRatio": 0,
+          "signedTravel": 0,
+          "expectedSignedTravel": 0
+        },
+        {
+          "id": "synthetic-friend",
+          "owner": false,
+          "radius": 5.4,
+          "omega": 0.052,
+          "maxRadiusError": 2.6645352591003757e-15,
+          "maxPathError": 1.780336214901331e-9,
+          "maxAngularSpeedRatio": 1.0000000000088571,
+          "signedTravel": -187.1999999996703,
+          "expectedSignedTravel": -187.2
+        },
+        {
+          "id": "synthetic-near",
+          "owner": false,
+          "radius": 4.1,
+          "omega": 0.052,
+          "maxRadiusError": 1.7763568394002505e-15,
+          "maxPathError": 1.351736762578779e-9,
+          "maxAngularSpeedRatio": 1.0000000000088571,
+          "signedTravel": -187.1999999996703,
+          "expectedSignedTravel": -187.2
+        },
+        {
+          "id": "synthetic-far",
+          "owner": false,
+          "radius": 10.5,
+          "omega": 0.03930830519295963,
+          "maxRadiusError": 3.552713678800501e-15,
+          "maxPathError": 2.61691570605584e-9,
+          "maxAngularSpeedRatio": 1.0000000000180833,
+          "signedTravel": -141.50989869440542,
+          "expectedSignedTravel": -141.50989869465465
+        }
+      ]
+    },
+    {
+      "fps": 60,
+      "durationSeconds": 3600,
+      "frames": 216000,
+      "anchorsBefore": [
+        [
+          5.067185250247139,
+          0.1,
+          2.82199107717899
+        ],
+        [
+          -0.7129556806750416,
+          0,
+          5.352727734285874
+        ],
+        [
+          2.3865445897161224,
+          0.347082683658364,
+          -3.3338273682505974
+        ],
+        [
+          9.837177446255962,
+          -0.08943938570939092,
+          3.671503764246065
+        ]
+      ],
+      "anchorsAfter": [
+        [
+          5.067185250247139,
+          0.1,
+          2.82199107717899
+        ],
+        [
+          -0.7129556806750416,
+          0,
+          5.352727734285874
+        ],
+        [
+          2.3865445897161224,
+          0.347082683658364,
+          -3.3338273682505974
+        ],
+        [
+          9.837177446255962,
+          -0.08943938570939092,
+          3.671503764246065
+        ]
+      ],
+      "finalPositions": [
+        [
+          5.067185250247139,
+          0.1,
+          2.82199107717899
+        ],
+        [
+          -5.3450188815264665,
+          0,
+          0.7686176917854248
+        ],
+        [
+          3.856948187170753,
+          0.347082683658364,
+          1.3906655534240575
+        ],
+        [
+          -10.249240557731781,
+          -0.08943938570939092,
+          -2.281023452256894
+        ]
+      ],
+      "maxAnchorDisplacement": 0,
+      "records": [
+        {
+          "id": "synthetic-owner",
+          "owner": true,
+          "radius": 5.800000000000001,
+          "omega": 0,
+          "maxRadiusError": 0,
+          "maxPathError": 0,
+          "maxAngularSpeedRatio": 0,
+          "signedTravel": 0,
+          "expectedSignedTravel": 0
+        },
+        {
+          "id": "synthetic-friend",
+          "owner": false,
+          "radius": 5.4,
+          "omega": 0.052,
+          "maxRadiusError": 2.6645352591003757e-15,
+          "maxPathError": 3.5255256748684863e-9,
+          "maxAngularSpeedRatio": 1.000000000033709,
+          "signedTravel": -187.19999999934691,
+          "expectedSignedTravel": -187.2
+        },
+        {
+          "id": "synthetic-near",
+          "owner": false,
+          "radius": 4.1,
+          "omega": 0.052,
+          "maxRadiusError": 1.7763568394002505e-15,
+          "maxPathError": 2.6767882346741176e-9,
+          "maxAngularSpeedRatio": 1.000000000033709,
+          "signedTravel": -187.19999999934709,
+          "expectedSignedTravel": -187.2
+        },
+        {
+          "id": "synthetic-far",
+          "owner": false,
+          "radius": 10.5,
+          "omega": 0.03930830519295963,
+          "maxRadiusError": 3.552713678800501e-15,
+          "maxPathError": 5.181903688046101e-9,
+          "maxAngularSpeedRatio": 1.0000000000509595,
+          "signedTravel": -141.50989869416114,
+          "expectedSignedTravel": -141.50989869465465
+        }
+      ]
+    },
+    {
+      "fps": 144,
+      "durationSeconds": 3600,
+      "frames": 518400,
+      "anchorsBefore": [
+        [
+          5.067185250247139,
+          0.1,
+          2.82199107717899
+        ],
+        [
+          -0.7129556806750416,
+          0,
+          5.352727734285874
+        ],
+        [
+          2.3865445897161224,
+          0.347082683658364,
+          -3.3338273682505974
+        ],
+        [
+          9.837177446255962,
+          -0.08943938570939092,
+          3.671503764246065
+        ]
+      ],
+      "anchorsAfter": [
+        [
+          5.067185250247139,
+          0.1,
+          2.82199107717899
+        ],
+        [
+          -0.7129556806750416,
+          0,
+          5.352727734285874
+        ],
+        [
+          2.3865445897161224,
+          0.347082683658364,
+          -3.3338273682505974
+        ],
+        [
+          9.837177446255962,
+          -0.08943938570939092,
+          3.671503764246065
+        ]
+      ],
+      "finalPositions": [
+        [
+          5.067185250247139,
+          0.1,
+          2.82199107717899
+        ],
+        [
+          -5.34501888201102,
+          0,
+          0.7686176884158077
+        ],
+        [
+          3.8569481862940473,
+          0.347082683658364,
+          1.3906655558555623
+        ],
+        [
+          -10.249240556644766,
+          -0.08943938570939092,
+          -2.2810234571411367
+        ]
+      ],
+      "maxAnchorDisplacement": 0,
+      "records": [
+        {
+          "id": "synthetic-owner",
+          "owner": true,
+          "radius": 5.800000000000001,
+          "omega": 0,
+          "maxRadiusError": 0,
+          "maxPathError": 0,
+          "maxAngularSpeedRatio": 0,
+          "signedTravel": 0,
+          "expectedSignedTravel": 0
+        },
+        {
+          "id": "synthetic-friend",
+          "owner": false,
+          "radius": 5.4,
+          "omega": 0.052,
+          "maxRadiusError": 2.6645352591003757e-15,
+          "maxPathError": 6.929804158446933e-9,
+          "maxAngularSpeedRatio": 1.0000000000597395,
+          "signedTravel": -187.1999999987167,
+          "expectedSignedTravel": -187.2
+        },
+        {
+          "id": "synthetic-near",
+          "owner": false,
+          "radius": 4.1,
+          "omega": 0.052,
+          "maxRadiusError": 1.7763568394002505e-15,
+          "maxPathError": 5.261518117172072e-9,
+          "maxAngularSpeedRatio": 1.000000000059432,
+          "signedTravel": -187.1999999987167,
+          "expectedSignedTravel": -187.2
+        },
+        {
+          "id": "synthetic-far",
+          "owner": false,
+          "radius": 10.5,
+          "omega": 0.03930830519295963,
+          "maxRadiusError": 3.552713678800501e-15,
+          "maxPathError": 1.0185645193545308e-8,
+          "maxAngularSpeedRatio": 1.0000000000866145,
+          "signedTravel": -141.50989869368402,
+          "expectedSignedTravel": -141.50989869465465
+        }
+      ]
+    },
+    {
+      "scenario": "incoming landing",
+      "frames": 180,
+      "maxAnchorDisplacement": 0
+    }
+  ],
+  "applicationSourceSha256": "ece40f1f65f2e114902ab5297e901d17358d83d8a1d6ceb83e94ee309d345a40",
+  "harnessSha256": "ec238c0d1461342b07553ad975303966cb9378cfbb5f5173bd092343cbbf34b0",
+  "hostSha256": "c27e8e7bd6290a24acdfa3bf721b28df1f111705e6c2563bd8900999da4b3177"
+}

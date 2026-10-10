@@ -1,0 +1,59 @@
+{
+  "sameBrowserHarnessBeforeAfter": true,
+  "controlledEntryAffinity": 91,
+  "entryAnchorsIdenticalBeforeAfter": true,
+  "personalRasterPreservation": [
+    {
+      "mask": "pangaea",
+      "exactPngBytesBeforeAfter": true,
+      "sha256": "5d64acd6f4c925ededa777b9565e153e01d4b7c1feac60c7d407527573cf4e03"
+    },
+    {
+      "mask": "archipelago",
+      "exactPngBytesBeforeAfter": true,
+      "sha256": "11b0e21f07307f6ba3c3bd976c504c97f5b03fab8688d2c23fea1dbea191bc2e"
+    }
+  ],
+  "images": [
+    {
+      "file": "before-entry-60fps-168.png",
+      "sha256": "cb391b5cdc10224fa3fb10c9fbb7b3ebb6ab47c2b978304d52f78c3557b71a34"
+    },
+    {
+      "file": "before-entry-60fps-177.png",
+      "sha256": "a22ad3ffbae73a1568d77c7ea0e2a78c0706e09e402b7ecd5d8515f6f5934183"
+    },
+    {
+      "file": "after-entry-60fps-168.png",
+      "sha256": "cd1431bafb21e42d5aeac9c40d5e290db01fd0c05e9c607991aec203e2a1ed68"
+    },
+    {
+      "file": "after-entry-60fps-177.png",
+      "sha256": "135f79d49e464345e0c188be6d245bffaebbbb64c4982cf53090a1bdcd82494b"
+    },
+    {
+      "file": "before-galaxy-owner-pangaea.png",
+      "sha256": "3f97a308e8f1aa2af8df59532c430417bfd8adcdfe670665dc58e85c8fe01f43"
+    },
+    {
+      "file": "after-galaxy-owner-pangaea.png",
+      "sha256": "491486b219fdfd623157db050c0b1ab523f00782e9a99041ef8bf3279c8078d3"
+    },
+    {
+      "file": "after-personal-pangaea.png",
+      "sha256": "5d64acd6f4c925ededa777b9565e153e01d4b7c1feac60c7d407527573cf4e03"
+    },
+    {
+      "file": "after-personal-archipelago.png",
+      "sha256": "11b0e21f07307f6ba3c3bd976c504c97f5b03fab8688d2c23fea1dbea191bc2e"
+    },
+    {
+      "file": "after-galaxy-owner-archipelago.png",
+      "sha256": "9aff887df8090cef5d928a34412973cc7090757edcd69df5f836f8317a05f7c5"
+    },
+    {
+      "file": "after-ten-stem-galaxy.png",
+      "sha256": "6a03197fed3e6336699613af4e1c1cec4d412e0bef6eac07aee60d1f11fd22a2"
+    }
+  ]
+}

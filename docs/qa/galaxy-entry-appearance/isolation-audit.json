@@ -1,0 +1,174 @@
+{
+  "basis": "8ba3b9763bcaa88a8a3f2e108fa331a49800090f",
+  "oldWorktreesUnchanged": 18,
+  "worktrees": [
+    {
+      "path": "/workspace/saju-project",
+      "head": "2e2d82b05f87b39ff8057ae914e8dfa01100a974",
+      "unchanged": true,
+      "statusUnchanged": true,
+      "currentTask": false
+    },
+    {
+      "path": "/workspace/saju-detail-result-fix",
+      "head": "6f7f970878c39b1bae8148a47292c715a9946dc7",
+      "unchanged": true,
+      "statusUnchanged": true,
+      "currentTask": false
+    },
+    {
+      "path": "/workspace/saju-galaxy-anchor-fix",
+      "head": "92b453514ee59c2b1231a4dfcdfea5b4a6ea0a33",
+      "unchanged": true,
+      "statusUnchanged": true,
+      "currentTask": false
+    },
+    {
+      "path": "/workspace/saju-galaxy-day-fix",
+      "head": "831d328889759f722b1e5b2214ace906b0483c0c",
+      "unchanged": true,
+      "statusUnchanged": true,
+      "currentTask": false
+    },
+    {
+      "path": "/workspace/saju-galaxy-declarations",
+      "head": "8ba3b9763bcaa88a8a3f2e108fa331a49800090f",
+      "unchanged": true,
+      "statusUnchanged": true,
+      "currentTask": false
+    },
+    {
+      "path": "/workspace/saju-galaxy-effect-state",
+      "head": "da5c36c97b3b9b24f9eebddd0c4b9123c9f6274a",
+      "unchanged": true,
+      "statusUnchanged": true,
+      "currentTask": false
+    },
+    {
+      "path": "/workspace/saju-galaxy-entry-appearance",
+      "head": "8ba3b9763bcaa88a8a3f2e108fa331a49800090f",
+      "unchanged": true,
+      "statusUnchanged": false,
+      "currentTask": true
+    },
+    {
+      "path": "/workspace/saju-galaxy-jsx-lint",
+      "head": "5450f107182d9de0ef6d40281b8f018c45aea6f8",
+      "unchanged": true,
+      "statusUnchanged": true,
+      "currentTask": false
+    },
+    {
+      "path": "/workspace/saju-galaxy-resume-fix",
+      "head": "b4459dd9fb74af57f3cfeed9bfb630393096f448",
+      "unchanged": true,
+      "statusUnchanged": true,
+      "currentTask": false
+    },
+    {
+      "path": "/workspace/saju-map-form-qa",
+      "head": "c7648b7ac3f8b18c3ac08c4c12931276bb92aee4",
+      "unchanged": true,
+      "statusUnchanged": true,
+      "currentTask": false
+    },
+    {
+      "path": "/workspace/saju-map-ime-fix",
+      "head": "db5179b1723b4b462868ce656968a9d2f355720c",
+      "unchanged": true,
+      "statusUnchanged": true,
+      "currentTask": false
+    },
+    {
+      "path": "/workspace/saju-map-keyboard-fix",
+      "head": "8b3f1cb0c1c77c06a2fd0084753222f6d518126b",
+      "unchanged": true,
+      "statusUnchanged": true,
+      "currentTask": false
+    },
+    {
+      "path": "/workspace/saju-map-name-match-fix",
+      "head": "caf265e529edd689f1ff7d33ed5e573cb397cc68",
+      "unchanged": true,
+      "statusUnchanged": true,
+      "currentTask": false
+    },
+    {
+      "path": "/workspace/saju-mobile-home-rebuild",
+      "head": "23a067e2391ea033e5d507cf7b147b8794ce0316",
+      "unchanged": true,
+      "statusUnchanged": true,
+      "currentTask": false
+    },
+    {
+      "path": "/workspace/saju-name-boundary-fix",
+      "head": "d84d77659faa7942c903f14885f3a7eaa47c2801",
+      "unchanged": true,
+      "statusUnchanged": true,
+      "currentTask": false
+    },
+    {
+      "path": "/workspace/saju-name-idempotence-fix",
+      "head": "b36e98d989a36d098bb3668f89f3d35a8dc1cfa9",
+      "unchanged": true,
+      "statusUnchanged": true,
+      "currentTask": false
+    },
+    {
+      "path": "/workspace/saju-passport-title-fix",
+      "head": "073a71ec2120537332c489cec8b3ae07903ce5a6",
+      "unchanged": true,
+      "statusUnchanged": true,
+      "currentTask": false
+    },
+    {
+      "path": "/workspace/saju-saved-list-perf",
+      "head": "6f7f970878c39b1bae8148a47292c715a9946dc7",
+      "unchanged": true,
+      "statusUnchanged": true,
+      "currentTask": false
+    },
+    {
+      "path": "/workspace/saju-stem-rebuild",
+      "head": "de85ce2ed7f9c655f532d9a8a16be8855e6dd661",
+      "unchanged": true,
+      "statusUnchanged": true,
+      "currentTask": false
+    }
+  ],
+  "existingRemoteBranchesProtected": 23,
+  "runtimeFilesChanged": [
+    "app/guin/[id]/page.tsx",
+    "components/planet/GalaxyCanvas.tsx",
+    "components/planet/PlanetCanvas.tsx",
+    "lib/universe-state.ts",
+    "lib/planet/galaxy-motion.ts",
+    "lib/planet/planet-appearance.ts"
+  ],
+  "protectedAssetCode": {
+    "lib/planet/approved-jade-spirit.ts": {
+      "unchanged": true,
+      "sha256": "5da840b01972fba1f388f0edb3d4d796c680a99d9d002c4a0099f72c27f338aa"
+    },
+    "lib/planet/surface-effects.ts": {
+      "unchanged": true,
+      "sha256": "94f1c479f8ed96ee42af839bf7a78aaba2acd4d90be5db8d4d02cda5b3bc8a52"
+    },
+    "lib/planet/surface-material.ts": {
+      "unchanged": true,
+      "sha256": "ab2ba1d4386e4b76a3c77372274439fecb0bddb623269127eb45046aff45df45"
+    },
+    "lib/planet/living-surface-shader.ts": {
+      "unchanged": true,
+      "sha256": "588edc821ca82d0e6bf8e0389fd503929b94ba8a985e67792b002dd8d1f14f03"
+    },
+    "lib/planet/theme-library.ts": {
+      "unchanged": true,
+      "sha256": "1e51156fbb99ea622a075dbbd22531c083ecb4a8b0aeec15c609cd9302d7798a"
+    },
+    "scripts/sync-approved-jade-assets.mjs": {
+      "unchanged": true,
+      "sha256": "50e834a91a9c0a46cbb79604c3a202deb00cac95aaf6d70acbb1b838df00126f"
+    }
+  }
+}

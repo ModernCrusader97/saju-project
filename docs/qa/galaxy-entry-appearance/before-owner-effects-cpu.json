@@ -1,0 +1,79 @@
+{
+  "phase": "before",
+  "checks": [
+    {
+      "name": "갑자: personal and galaxy effects share batches and normalized placements",
+      "status": "FAIL",
+      "error": "Galaxy main body has no supported surface effects"
+    },
+    {
+      "name": "을축: personal and galaxy effects share batches and normalized placements",
+      "status": "FAIL",
+      "error": "Galaxy main body has no supported surface effects"
+    },
+    {
+      "name": "병인: personal and galaxy effects share batches and normalized placements",
+      "status": "FAIL",
+      "error": "Galaxy main body has no supported surface effects"
+    },
+    {
+      "name": "정묘: personal and galaxy effects share batches and normalized placements",
+      "status": "FAIL",
+      "error": "Galaxy main body has no supported surface effects"
+    },
+    {
+      "name": "무진: personal and galaxy effects share batches and normalized placements",
+      "status": "FAIL",
+      "error": "Galaxy main body has no supported surface effects"
+    },
+    {
+      "name": "기사: personal and galaxy effects share batches and normalized placements",
+      "status": "FAIL",
+      "error": "Galaxy main body has no supported surface effects"
+    },
+    {
+      "name": "경오: personal and galaxy effects share batches and normalized placements",
+      "status": "FAIL",
+      "error": "Galaxy main body has no supported surface effects"
+    },
+    {
+      "name": "신미: personal and galaxy effects share batches and normalized placements",
+      "status": "FAIL",
+      "error": "Galaxy main body has no supported surface effects"
+    },
+    {
+      "name": "임신: personal and galaxy effects share batches and normalized placements",
+      "status": "FAIL",
+      "error": "Galaxy main body has no supported surface effects"
+    },
+    {
+      "name": "계유: personal and galaxy effects share batches and normalized placements",
+      "status": "FAIL",
+      "error": "Galaxy main body has no supported surface effects"
+    },
+    {
+      "name": "mixed day/month effects occupy the same personal 70/30 regions",
+      "status": "FAIL",
+      "error": "The expression evaluated to a falsy value:\n\n  assert(actual)\n"
+    },
+    {
+      "name": "effects follow simulation time, freeze on pause and zero speed, reset with the body",
+      "status": "FAIL",
+      "error": "The expression evaluated to a falsy value:\n\n  assert(effects.every(Boolean))\n"
+    },
+    {
+      "name": "node replacement and unmount dispose every effect instance buffer, geometry and material once",
+      "status": "FAIL",
+      "error": "The expression evaluated to a falsy value:\n\n  assert(first.every(Boolean))\n"
+    }
+  ],
+  "observations": [],
+  "passed": 0,
+  "failed": 13,
+  "sourceSha256": "c1cbc80fc9137717f6a42c9759364c1707e03863d37f6f48f68d318bfd2d32fd",
+  "harnessSha256": "e503059e6b5f05bf8dd2f17dab1eddba7f542c146b2560583a25ad505a974f34",
+  "hostSha256": "c27e8e7bd6290a24acdfa3bf721b28df1f111705e6c2563bd8900999da4b3177",
+  "limits": [
+    "Actual React/Three/material/effects/disposal; GPU, Canvas2D and clock are synthetic host boundaries"
+  ]
+}

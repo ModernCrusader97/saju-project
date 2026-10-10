@@ -1,0 +1,452 @@
+{
+  "status": "PASS",
+  "basis": "8ba3b9763bcaa88a8a3f2e108fa331a49800090f",
+  "trackedReference": "assets/source-reference/saju-b-evolving-light-v002/reference/SaJu_Jade_Approved_Static_Material.glb",
+  "runtimeBody": "Generated, ignored copy created by sync-approved-jade-assets.mjs",
+  "method": "Actual Three GLTFLoader CPU decoding of both GLBs; compare generated runtime bytes and checked-out reference to tracked original at basis",
+  "limits": [
+    "Texture image loading replaced by owned CPU Texture placeholders; no GLB rasterization or pet/spirit visual claim"
+  ],
+  "rows": [
+    {
+      "file": "public/spirits/jade-v002/body.glb",
+      "bytes": 4293332,
+      "sha256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+      "identicalToTrackedOriginalAtBasis": true,
+      "meshes": [
+        {
+          "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+          "vertices": 33207,
+          "uvVertices": 33207,
+          "positionsSha256": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+          "uvSha256": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+          "worldMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "B_|_small_eye_glint_-1",
+          "vertices": 691,
+          "uvVertices": 691,
+          "positionsSha256": "31d63b82449328a1454c8ffbac35522f996c58082325eb579f9fdb93682c0e25",
+          "uvSha256": "22f5058b7f71ed79d582e2e6a1502f3117785ac7ffcbee4400cb450f15e4b3c8",
+          "worldMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            -0.25999999046325684,
+            1.777999997138977,
+            0.48069074749946594,
+            1
+          ]
+        },
+        {
+          "name": "B_|_expressive_brow_-1",
+          "vertices": 275,
+          "uvVertices": 275,
+          "positionsSha256": "a7d026e4bf8e29ddaf2bc088699ab0a646bf4b50c4d1c1518fc3321d64280dd0",
+          "uvSha256": "28f426cd5e9c615e22566e1ba2dc5e7c6e927f301d6bf244781a4a21a2622f7d",
+          "worldMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "B_|_small_eye_glint_1",
+          "vertices": 691,
+          "uvVertices": 691,
+          "positionsSha256": "31d63b82449328a1454c8ffbac35522f996c58082325eb579f9fdb93682c0e25",
+          "uvSha256": "22f5058b7f71ed79d582e2e6a1502f3117785ac7ffcbee4400cb450f15e4b3c8",
+          "worldMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0.20999999344348907,
+            1.777999997138977,
+            0.4807272255420685,
+            1
+          ]
+        },
+        {
+          "name": "B_|_expressive_brow_1",
+          "vertices": 275,
+          "uvVertices": 275,
+          "positionsSha256": "b625a42bb4606f94500f8bf75a91180ddf96341f28b1ac074e70552d167ff598",
+          "uvSha256": "28f426cd5e9c615e22566e1ba2dc5e7c6e927f301d6bf244781a4a21a2622f7d",
+          "worldMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "B_|_quiet_smile",
+          "vertices": 275,
+          "uvVertices": 275,
+          "positionsSha256": "12afa270a7e34881d323410814e0fa72874812f1d6705b55a5531ee1b522eb5b",
+          "uvSha256": "28f426cd5e9c615e22566e1ba2dc5e7c6e927f301d6bf244781a4a21a2622f7d",
+          "worldMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "B_|_almond_gaze_-1",
+          "vertices": 691,
+          "uvVertices": 691,
+          "positionsSha256": "ab4f85078af68be7ba5f07d962b602a7b629c502d8baf9e028802aa4704b9972",
+          "uvSha256": "22f5058b7f71ed79d582e2e6a1502f3117785ac7ffcbee4400cb450f15e4b3c8",
+          "worldMatrix": [
+            0.11741049222272172,
+            -0.011780343259846721,
+            0,
+            0,
+            0.005690504763493039,
+            0.0567152374544775,
+            0,
+            0,
+            0,
+            0,
+            0.028999999165534973,
+            0,
+            -0.23499999940395355,
+            1.7599999904632568,
+            0.4536909759044647,
+            1
+          ]
+        },
+        {
+          "name": "B_|_almond_gaze_1",
+          "vertices": 691,
+          "uvVertices": 691,
+          "positionsSha256": "ab4f85078af68be7ba5f07d962b602a7b629c502d8baf9e028802aa4704b9972",
+          "uvSha256": "22f5058b7f71ed79d582e2e6a1502f3117785ac7ffcbee4400cb450f15e4b3c8",
+          "worldMatrix": [
+            0.11741049222272172,
+            0.011780343259846721,
+            0,
+            0,
+            -0.005690504763493039,
+            0.0567152374544775,
+            0,
+            0,
+            0,
+            0,
+            0.028999999165534973,
+            0,
+            0.23499999940395355,
+            1.7599999904632568,
+            0.45372721552848816,
+            1
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          -1.2388960719108582,
+          -0.6532603735104203,
+          -0.5472796857357025
+        ],
+        "max": [
+          1.2389100193977356,
+          3.0142458081245422,
+          0.5473074913024902
+        ]
+      }
+    },
+    {
+      "file": "assets/source-reference/saju-b-evolving-light-v002/reference/SaJu_Jade_Approved_Static_Material.glb",
+      "bytes": 4293332,
+      "sha256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+      "identicalToTrackedOriginalAtBasis": true,
+      "meshes": [
+        {
+          "name": "B_candidate5_reconstructed_|_seamless_body_and_mittens",
+          "vertices": 33207,
+          "uvVertices": 33207,
+          "positionsSha256": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+          "uvSha256": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+          "worldMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "B_|_small_eye_glint_-1",
+          "vertices": 691,
+          "uvVertices": 691,
+          "positionsSha256": "31d63b82449328a1454c8ffbac35522f996c58082325eb579f9fdb93682c0e25",
+          "uvSha256": "22f5058b7f71ed79d582e2e6a1502f3117785ac7ffcbee4400cb450f15e4b3c8",
+          "worldMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            -0.25999999046325684,
+            1.777999997138977,
+            0.48069074749946594,
+            1
+          ]
+        },
+        {
+          "name": "B_|_expressive_brow_-1",
+          "vertices": 275,
+          "uvVertices": 275,
+          "positionsSha256": "a7d026e4bf8e29ddaf2bc088699ab0a646bf4b50c4d1c1518fc3321d64280dd0",
+          "uvSha256": "28f426cd5e9c615e22566e1ba2dc5e7c6e927f301d6bf244781a4a21a2622f7d",
+          "worldMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "B_|_small_eye_glint_1",
+          "vertices": 691,
+          "uvVertices": 691,
+          "positionsSha256": "31d63b82449328a1454c8ffbac35522f996c58082325eb579f9fdb93682c0e25",
+          "uvSha256": "22f5058b7f71ed79d582e2e6a1502f3117785ac7ffcbee4400cb450f15e4b3c8",
+          "worldMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0.20999999344348907,
+            1.777999997138977,
+            0.4807272255420685,
+            1
+          ]
+        },
+        {
+          "name": "B_|_expressive_brow_1",
+          "vertices": 275,
+          "uvVertices": 275,
+          "positionsSha256": "b625a42bb4606f94500f8bf75a91180ddf96341f28b1ac074e70552d167ff598",
+          "uvSha256": "28f426cd5e9c615e22566e1ba2dc5e7c6e927f301d6bf244781a4a21a2622f7d",
+          "worldMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "B_|_quiet_smile",
+          "vertices": 275,
+          "uvVertices": 275,
+          "positionsSha256": "12afa270a7e34881d323410814e0fa72874812f1d6705b55a5531ee1b522eb5b",
+          "uvSha256": "28f426cd5e9c615e22566e1ba2dc5e7c6e927f301d6bf244781a4a21a2622f7d",
+          "worldMatrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "B_|_almond_gaze_-1",
+          "vertices": 691,
+          "uvVertices": 691,
+          "positionsSha256": "ab4f85078af68be7ba5f07d962b602a7b629c502d8baf9e028802aa4704b9972",
+          "uvSha256": "22f5058b7f71ed79d582e2e6a1502f3117785ac7ffcbee4400cb450f15e4b3c8",
+          "worldMatrix": [
+            0.11741049222272172,
+            -0.011780343259846721,
+            0,
+            0,
+            0.005690504763493039,
+            0.0567152374544775,
+            0,
+            0,
+            0,
+            0,
+            0.028999999165534973,
+            0,
+            -0.23499999940395355,
+            1.7599999904632568,
+            0.4536909759044647,
+            1
+          ]
+        },
+        {
+          "name": "B_|_almond_gaze_1",
+          "vertices": 691,
+          "uvVertices": 691,
+          "positionsSha256": "ab4f85078af68be7ba5f07d962b602a7b629c502d8baf9e028802aa4704b9972",
+          "uvSha256": "22f5058b7f71ed79d582e2e6a1502f3117785ac7ffcbee4400cb450f15e4b3c8",
+          "worldMatrix": [
+            0.11741049222272172,
+            0.011780343259846721,
+            0,
+            0,
+            -0.005690504763493039,
+            0.0567152374544775,
+            0,
+            0,
+            0,
+            0,
+            0.028999999165534973,
+            0,
+            0.23499999940395355,
+            1.7599999904632568,
+            0.45372721552848816,
+            1
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          -1.2388960719108582,
+          -0.6532603735104203,
+          -0.5472796857357025
+        ],
+        "max": [
+          1.2389100193977356,
+          3.0142458081245422,
+          0.5473074913024902
+        ]
+      }
+    }
+  ]
+}

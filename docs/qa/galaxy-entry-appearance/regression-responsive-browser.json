@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "four responsive widths; 44px controls; 16px body; three tabs",
+      "ms": 6165
+    }
+  ],
+  "errors": [],
+  "outbound": [],
+  "metrics": [
+    {
+      "scene": "spirit",
+      "width": 1440,
+      "cls": 0.00010443793402777779,
+      "lcp": 6324
+    },
+    {
+      "scene": "spirit",
+      "width": 768,
+      "cls": 0.00010443793402777779,
+      "lcp": 6324
+    },
+    {
+      "scene": "spirit",
+      "width": 390,
+      "cls": 0.00010443793402777779,
+      "lcp": 6324
+    },
+    {
+      "scene": "spirit",
+      "width": 320,
+      "cls": 0.00010443793402777779,
+      "lcp": 6324
+    }
+  ],
+  "limits": [
+    "Desktop Chrome with SwiftShader; no physical mobile GPU or touch device",
+    "Synthetic local identity and disposable D1; hosted login not exercised",
+    "Lab LCP/CLS only; no field INP or production Web Vitals claim",
+    "No deployment or audience changes"
+  ]
+}

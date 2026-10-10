@@ -9,6 +9,10 @@ import { GuinPerson } from "@/lib/saju/types";
 import { buildGalaxyNodes, GalaxyNode } from "@/lib/planet/galaxy-helper";
 import { getStemThemePreset } from "@/lib/planet/theme-library";
 import { createPlanetMaterial, animateSurface, resetSurface } from "@/lib/planet/surface-material";
+import { createPlanetAppearance } from "@/lib/planet/planet-appearance";
+import { animateSurfaceEffects, disposeSurfaceEffects } from "@/lib/planet/surface-effects";
+import { setGalaxyOrbitPosition } from "@/lib/planet/galaxy-motion";
+import type { MaskStyle } from "@/lib/planet/uv-mask";
 import { safeDelta, damping, seededRandom, hashSeed } from "@/lib/planet/surface-math";
 import { disposeObject } from "@/lib/planet/render-resources";
 import { buildSpiralGalaxy } from "@/lib/planet/spiral-galaxy";
@@ -33,6 +37,7 @@ interface GalaxyCanvasProps {
   distanceScale?: number;
   speedScale?: number;
   incomingPersonId?: string;
+  ownerMaskStyle?: MaskStyle;
 }
 
 interface PlanetConnection {
@@ -106,6 +111,7 @@ export default function GalaxyCanvas({
   distanceScale = 1.0,
   speedScale = 1.0,
   incomingPersonId,
+  ownerMaskStyle = "pangaea",
 }: GalaxyCanvasProps) {
   const [graphicsError, setGraphicsError] = useState<string | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -124,6 +130,7 @@ export default function GalaxyCanvas({
         group: THREE.Group;
         node: GalaxyNode;
         mesh: THREE.Mesh;
+        effects: THREE.Group;
         hitbox?: THREE.Mesh;
         beltPoints?: THREE.Points;
         satPivot?: THREE.Group | null;
@@ -149,8 +156,7 @@ export default function GalaxyCanvas({
   const landingAnimRef = useRef<{
     personId: string;
     group: THREE.Group;
-    startPos: THREE.Vector3;
-    targetPos: THREE.Vector3;
+    approachOffset: THREE.Vector3;
     elapsed: number;
     duration: number;
   } | null>(null);
@@ -183,6 +189,7 @@ export default function GalaxyCanvas({
   useEffect(() => {
     if (!containerRef.current) return;
     const container = containerRef.current;
+    const ownedPlanetMeshes = planetMeshesRef.current;
     const width = container.clientWidth || 360;
     const height = container.clientHeight || 480;
     const low = window.matchMedia("(max-width: 640px), (pointer: coarse)").matches;
@@ -354,11 +361,18 @@ export default function GalaxyCanvas({
         // Stars and each system have independent angular speeds, not one rigid parent spin.
         spiralGalaxy.galaxyGroup.rotation.y = simulationTime * .026;
         planetMeshesRef.current.forEach(({group, node}) => {
-          if (landingAnimRef.current?.group === group || node.isOwner) return;
-          const radius = Math.hypot(node.worldPos.x, node.worldPos.z);
-          const angle = simulationTime * .052 / Math.sqrt(Math.max(1, radius / 6));
-          const c = Math.cos(angle), s = Math.sin(angle);
-          group.position.set(node.worldPos.x * c + node.worldPos.z * s, node.worldPos.y, node.worldPos.z * c - node.worldPos.x * s);
+          if (node.isOwner) return;
+          setGalaxyOrbitPosition(group.position, node.worldPos, simulationTime);
+          const landing = landingAnimRef.current;
+          if (landing?.group === group) {
+            landing.elapsed += motionDt;
+            const elapsed = reducedMotion.matches ? landing.duration : landing.elapsed;
+            const t = Math.min(1, elapsed / landing.duration);
+            // The moving orbit remains the destination. At t=1 both offset and
+            // its first derivative are zero, so position and velocity join it.
+            group.position.addScaledVector(landing.approachOffset, Math.pow(1 - t, 3));
+            if (t >= 1) landingAnimRef.current = null;
+          }
         });
       }
 
@@ -392,27 +406,11 @@ export default function GalaxyCanvas({
       // 5. 매 프레임 카메라 위치 및 시선 갱신
       updateCameraPosition();
 
-      // [Step 2] 착륙 도킹 궤도 비행 애니메이션 (우주 저편에서 나선팔로 진입)
-      if (landingAnimRef.current) {
-        const { group, startPos, targetPos, duration } = landingAnimRef.current;
-        landingAnimRef.current.elapsed += motionDt;
-        const elapsed = reducedMotion.matches ? duration : landingAnimRef.current.elapsed;
-        const t = Math.min(1.0, elapsed / duration);
-        const ease = 1 - Math.pow(1 - t, 3); // Cubic ease out
-        const curPos = new THREE.Vector3().lerpVectors(startPos, targetPos, ease);
-        curPos.y += Math.sin(t * Math.PI) * 4.5;
-        group.position.copy(curPos);
-
-        if (t >= 1.0) {
-          group.position.copy(targetPos);
-          landingAnimRef.current = null;
-        }
-      }
-
       // 6. 사주 행성 개별 자전, 연주 소행성대 회전 및 위성 공전
-      planetMeshesRef.current.forEach(({ mesh, beltPoints, satPivot, satMesh }) => {
+      planetMeshesRef.current.forEach(({ mesh, effects, beltPoints, satPivot, satMesh }) => {
         mesh.rotation.y += .16 * motionDt;
         animateSurface(mesh.material, motionDt);
+        animateSurfaceEffects(effects, simulationTime, motionDt);
 
         if (beltPoints) {
           beltPoints.rotation.y += .075 * motionDt;
@@ -456,6 +454,7 @@ export default function GalaxyCanvas({
       reducedMotion.removeEventListener("change", updateMotionPreference);
       document.removeEventListener("visibilitychange", onVisibility);
       detachGestures();
+      ownedPlanetMeshes.forEach(({ effects }) => disposeSurfaceEffects(effects));
       if (sceneRef.current) {
         disposeHierarchy(sceneRef.current);
       }
@@ -505,8 +504,9 @@ export default function GalaxyCanvas({
   const resetGalaxyMotion = () => {
     simulationTimeRef.current = 0;
     landingAnimRef.current = null;
-    planetMeshesRef.current.forEach(({mesh, group, node, satPivot, satMesh, beltPoints}) => {
+    planetMeshesRef.current.forEach(({mesh, effects, group, node, satPivot, satMesh, beltPoints}) => {
       mesh.rotation.set(0, 0, 0); resetSurface(mesh.material);
+      animateSurfaceEffects(effects, 0, 0);
       group.position.copy(node.worldPos);
       if (satPivot) satPivot.rotation.set(.28, 0, .12);
       if (satMesh) { satMesh.rotation.set(0, 0, 0); resetSurface(satMesh.material); }
@@ -530,6 +530,7 @@ export default function GalaxyCanvas({
   useEffect(() => {
     if (!galaxyGroupRef.current || !sceneRef.current) return;
     const galaxyGroup = galaxyGroupRef.current;
+    planetMeshesRef.current.forEach(({ effects }) => disposeSurfaceEffects(effects));
 
     const planetsToRemove: THREE.Object3D[] = [];
     galaxyGroup.children.forEach((c, idx) => {
@@ -569,9 +570,12 @@ export default function GalaxyCanvas({
       const pH = node.hourKey ? getStemThemePreset(node.hourKey) : null;
 
       // 70:30 표면 합성 (일간 70% + 월간 30%)
-      const mat = createPlanetMaterial(pD, pM, "pangaea", 512);
-      const mainMesh = new THREE.Mesh(sharedSphereGeo, mat);
+      const maskStyle = isOwner ? ownerMaskStyle : "pangaea";
+      const { material, effects } = createPlanetAppearance(pD, pM, 1, maskStyle);
+      const mainMesh = new THREE.Mesh(sharedSphereGeo, material);
       mainMesh.scale.set(scale, scale, scale);
+      mainMesh.add(effects);
+      animateSurfaceEffects(effects, simulationTimeRef.current, 0);
       planetGroup.add(mainMesh);
 
       // 연주 소행성대 파티클 (SLOT-Y: 단 1개 고리 또는 얇은 소행성대 파티클 클라우드)
@@ -625,12 +629,13 @@ export default function GalaxyCanvas({
           node.worldPos.z * 2.8 + 8
         );
         planetGroup.position.copy(startPos);
+        const orbitalPosition = new THREE.Vector3();
+        setGalaxyOrbitPosition(orbitalPosition, node.worldPos, simulationTimeRef.current);
 
         landingAnimRef.current = {
           personId: node.person.id,
           group: planetGroup,
-          startPos,
-          targetPos: node.worldPos.clone(),
+          approachOffset: startPos.clone().sub(orbitalPosition),
           elapsed: 0,
           duration: 2.8,
         };
@@ -695,6 +700,7 @@ export default function GalaxyCanvas({
         group: planetGroup,
         node,
         mesh: mainMesh,
+        effects,
         hitbox,
         beltPoints: belt.points,
         satPivot,
@@ -729,7 +735,7 @@ export default function GalaxyCanvas({
     const currentSelected =
       guins.find((g) => g.id === selectedPersonId) || guins.find((g) => g.isMe) || null;
     setActivePerson(currentSelected);
-  }, [guins, distanceScale, showOrbitGuides, incomingPersonId]);
+  }, [guins, distanceScale, showOrbitGuides, incomingPersonId, ownerMaskStyle]);
 
   // 선택된 인연이 외부에서 바뀔 때 카메라 실시간 추적 포커싱
   useEffect(() => {

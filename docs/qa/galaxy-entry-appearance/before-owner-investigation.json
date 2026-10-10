@@ -1,0 +1,2920 @@
+{
+  "sourceCommit": "8ba3b9763bcaa88a8a3f2e108fa331a49800090f",
+  "sourceRoot": "/workspace/saju-galaxy-declarations",
+  "provenance": "Restored source and its existing dist; not recovered live v29 source.",
+  "sourceHashes": {
+    "components/planet/PlanetCanvas.tsx": "4dad7a2771a9f9bccc57ae79143236e981a55fcec77a3821746b7ebc99a0353b",
+    "components/planet/GalaxyCanvas.tsx": "c1cbc80fc9137717f6a42c9759364c1707e03863d37f6f48f68d318bfd2d32fd",
+    "lib/planet/surface-material.ts": "ab2ba1d4386e4b76a3c77372274439fecb0bddb623269127eb45046aff45df45",
+    "lib/planet/surface-effects.ts": "94f1c479f8ed96ee42af839bf7a78aaba2acd4d90be5db8d4d02cda5b3bc8a52",
+    "lib/planet/living-surface-shader.ts": "588edc821ca82d0e6bf8e0389fd503929b94ba8a985e67792b002dd8d1f14f03",
+    "lib/planet/theme-library.ts": "1e51156fbb99ea622a075dbbd22531c083ecb4a8b0aeec15c609cd9302d7798a",
+    "lib/universe-state.ts": "ad10311c566a2562bce07ae6e2f9f98f6abb7e38808af0569a4b56e7fca2950c",
+    "hooks/use-universe.ts": "ba402065edace6a1608cdfd1f78ad2cd38c3c56e45992a34eee16b9f03183c17",
+    "app/guin/page.tsx": "010a94f93d525e92f059fbaa474b4e5c22383707215834ac8086a467cb47506d",
+    "app/api/guin/route.ts": "d30b39ba805647b315dc006e21e21222669d746bb0eaba59a3e04d1a75ebb145",
+    "dist/server/index.js": "3af52a309414d74bea4202d3490b792f528ddafdd899b26f3b928e09159db7e8"
+  },
+  "errors": [],
+  "outbound": [],
+  "checks": [
+    {
+      "name": "Removing only personal effects changes rendered pixels at identical data/material/camera/light/time",
+      "status": "PASS",
+      "changedPixels": 1839,
+      "totalPixels": 448152,
+      "meanAbsRgba": 0.3672074430104072
+    },
+    {
+      "name": "Exact synthetic owner birth, day/month/year/hour and session binding preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "Same body material identity/parameters, missing galaxy surface effects confirmed in rendered scenes",
+      "status": "PASS"
+    },
+    {
+      "name": "Exposure only control rendered with exact unchanged camera/body/lights",
+      "status": "PASS",
+      "changedPixels": 363774,
+      "totalPixels": 660372,
+      "meanAbsRgba": 5.10205459952875
+    },
+    {
+      "name": "Camera pose only control rendered with unchanged body/material/lights/exposure/time",
+      "status": "PASS",
+      "changedPixels": 526467,
+      "totalPixels": 660372,
+      "meanAbsRgba": 85.405156108981
+    },
+    {
+      "name": "Lights only control rendered with unchanged body/material/camera/exposure/time",
+      "status": "PASS",
+      "changedPixels": 110258,
+      "totalPixels": 660372,
+      "meanAbsRgba": 0.2027039305118933
+    },
+    {
+      "name": "Same owner with archipelago preference: galaxy preserves session preference but renders hard-coded pangaea mask",
+      "status": "PASS",
+      "personalMask": {
+        "width": 512,
+        "height": 256,
+        "rgbaFnv1a": 1100551764
+      },
+      "galaxyMask": {
+        "width": 512,
+        "height": 256,
+        "rgbaFnv1a": 2245384427
+      }
+    }
+  ],
+  "browser": "151.0.7922.173",
+  "personalSnapshot": {
+    "version": 1,
+    "birth": {
+      "name": "Synthetic Owner Look",
+      "year": "2000",
+      "month": "1",
+      "day": "1",
+      "hour": "12",
+      "minute": "30",
+      "unknown": false
+    },
+    "dayKey": "무오",
+    "monthKey": "병자",
+    "yearKey": "기묘",
+    "hourKey": "무오",
+    "maskStyle": "pangaea",
+    "mode": "planet",
+    "source": "calculated"
+  },
+  "personal": {
+    "scene": "planet",
+    "ready": "ready",
+    "exposure": 1.05,
+    "toneMapping": 4,
+    "colorSpace": "srgb",
+    "shadow": true,
+    "environmentIntensity": 1.1,
+    "camera": {
+      "fov": 45,
+      "position": [
+        0,
+        1.5,
+        9.6
+      ],
+      "quaternion": [
+        -0.077420818,
+        0,
+        0,
+        0.996998504
+      ],
+      "aspect": 1.3890845070422535,
+      "zoom": 1
+    },
+    "lights": [
+      {
+        "type": "AmbientLight",
+        "color": [
+          1,
+          1,
+          1
+        ],
+        "intensity": 0.22,
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "castShadow": false
+      },
+      {
+        "type": "DirectionalLight",
+        "color": [
+          1,
+          0.913098652,
+          0.79129794
+        ],
+        "intensity": 2,
+        "position": [
+          5,
+          4,
+          5
+        ],
+        "castShadow": true
+      },
+      {
+        "type": "DirectionalLight",
+        "color": [
+          0.08021982,
+          0.162029376,
+          0.351532599
+        ],
+        "intensity": 0.8,
+        "position": [
+          -6,
+          -2,
+          -4
+        ],
+        "castShadow": false
+      },
+      {
+        "type": "DirectionalLight",
+        "color": [
+          0.473531496,
+          0.715693501,
+          1
+        ],
+        "intensity": 1.5,
+        "position": [
+          -4,
+          3,
+          -3
+        ],
+        "castShadow": false
+      }
+    ],
+    "meshes": [
+      {
+        "name": "living:무:병",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "geometry": {
+          "radius": 1.85,
+          "widthSegments": 96,
+          "heightSegments": 64,
+          "phiStart": 0,
+          "phiLength": 6.283185307179586,
+          "thetaStart": 0,
+          "thetaLength": 3.141592653589793
+        },
+        "indices": 36288,
+        "vertices": 6305,
+        "uv": 6305,
+        "material": {
+          "type": "MeshPhysicalMaterial",
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "roughness": 0.94,
+          "metalness": 0,
+          "clearcoat": 1,
+          "ior": 1.45,
+          "envMapIntensity": 1,
+          "defines": {
+            "STANDARD": "",
+            "PHYSICAL": "",
+            "LS_HAS_MONTH": 1,
+            "LS_DAY_FAMILY": 2,
+            "LS_MONTH_FAMILY": 1
+          },
+          "programCacheKey": "living-surface-r186-v3-gerstner:2:1:1",
+          "time": 0,
+          "reliefScale": 1,
+          "shaderUniforms": {
+            "day": [
+              0,
+              5.85095781,
+              0.94,
+              0.6
+            ],
+            "month": [
+              0,
+              10.084873022,
+              0.76,
+              0.6
+            ],
+            "dayPrimary": [
+              0.337163615,
+              0.124771818,
+              0.039546235
+            ],
+            "monthPrimary": [
+              0.034339807,
+              0.008568126,
+              0.006512091
+            ],
+            "mask": {
+              "width": 512,
+              "height": 256,
+              "rgbaFnv1a": 2245384427
+            }
+          }
+        },
+        "effects": [
+          {
+            "name": "day-무-sandstone-outcrops",
+            "kind": "sandstone-outcrops",
+            "region": "day",
+            "presetKey": "무",
+            "instances": 120,
+            "visible": true
+          },
+          {
+            "name": "day-무-strata-caps",
+            "kind": "strata-caps",
+            "region": "day",
+            "presetKey": "무",
+            "instances": 40,
+            "visible": true
+          },
+          {
+            "name": "month-병-lava-domes",
+            "kind": "lava-domes",
+            "region": "month",
+            "presetKey": "병",
+            "instances": 28,
+            "visible": true
+          },
+          {
+            "name": "month-병-flame-plumes",
+            "kind": "flame-plumes",
+            "region": "month",
+            "presetKey": "병",
+            "instances": 28,
+            "visible": true
+          },
+          {
+            "name": "month-병-rising-embers",
+            "kind": "rising-embers",
+            "region": "month",
+            "presetKey": "병",
+            "instances": 28,
+            "visible": true
+          }
+        ]
+      },
+      {
+        "name": "living:무",
+        "position": [
+          3.8,
+          0.65,
+          0
+        ],
+        "worldPosition": [
+          3.8,
+          0.65,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "geometry": {
+          "radius": 0.44,
+          "widthSegments": 32,
+          "heightSegments": 32,
+          "phiStart": 0,
+          "phiLength": 6.283185307179586,
+          "thetaStart": 0,
+          "thetaLength": 3.141592653589793
+        },
+        "indices": 5952,
+        "vertices": 1089,
+        "uv": 1089,
+        "material": {
+          "type": "MeshPhysicalMaterial",
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "roughness": 0.94,
+          "metalness": 0,
+          "clearcoat": 0,
+          "ior": 1.45,
+          "envMapIntensity": 1,
+          "defines": {
+            "STANDARD": "",
+            "PHYSICAL": "",
+            "LS_HAS_MONTH": 0,
+            "LS_DAY_FAMILY": 2,
+            "LS_MONTH_FAMILY": 2
+          },
+          "programCacheKey": "living-surface-r186-v3-gerstner:2:2:0",
+          "time": 0,
+          "reliefScale": 1,
+          "shaderUniforms": {
+            "day": [
+              0,
+              5.85095781,
+              0.94,
+              0.6
+            ],
+            "month": [
+              0,
+              5.85095781,
+              0.94,
+              0.6
+            ],
+            "dayPrimary": [
+              0.337163615,
+              0.124771818,
+              0.039546235
+            ],
+            "monthPrimary": [
+              0.337163615,
+              0.124771818,
+              0.039546235
+            ],
+            "mask": null
+          }
+        },
+        "effects": []
+      }
+    ],
+    "belts": [
+      {
+        "points": 2200,
+        "rotation": [
+          0.28,
+          0.12,
+          0,
+          "XYZ"
+        ],
+        "size": 0.08
+      }
+    ]
+  },
+  "personalWithoutEffects": {
+    "scene": "planet",
+    "ready": "ready",
+    "exposure": 1.05,
+    "toneMapping": 4,
+    "colorSpace": "srgb",
+    "shadow": true,
+    "environmentIntensity": 1.1,
+    "camera": {
+      "fov": 45,
+      "position": [
+        0,
+        1.5,
+        9.6
+      ],
+      "quaternion": [
+        -0.077420818,
+        0,
+        0,
+        0.996998504
+      ],
+      "aspect": 1.3890845070422535,
+      "zoom": 1
+    },
+    "lights": [
+      {
+        "type": "AmbientLight",
+        "color": [
+          1,
+          1,
+          1
+        ],
+        "intensity": 0.22,
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "castShadow": false
+      },
+      {
+        "type": "DirectionalLight",
+        "color": [
+          1,
+          0.913098652,
+          0.79129794
+        ],
+        "intensity": 2,
+        "position": [
+          5,
+          4,
+          5
+        ],
+        "castShadow": true
+      },
+      {
+        "type": "DirectionalLight",
+        "color": [
+          0.08021982,
+          0.162029376,
+          0.351532599
+        ],
+        "intensity": 0.8,
+        "position": [
+          -6,
+          -2,
+          -4
+        ],
+        "castShadow": false
+      },
+      {
+        "type": "DirectionalLight",
+        "color": [
+          0.473531496,
+          0.715693501,
+          1
+        ],
+        "intensity": 1.5,
+        "position": [
+          -4,
+          3,
+          -3
+        ],
+        "castShadow": false
+      }
+    ],
+    "meshes": [
+      {
+        "name": "living:무:병",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "geometry": {
+          "radius": 1.85,
+          "widthSegments": 96,
+          "heightSegments": 64,
+          "phiStart": 0,
+          "phiLength": 6.283185307179586,
+          "thetaStart": 0,
+          "thetaLength": 3.141592653589793
+        },
+        "indices": 36288,
+        "vertices": 6305,
+        "uv": 6305,
+        "material": {
+          "type": "MeshPhysicalMaterial",
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "roughness": 0.94,
+          "metalness": 0,
+          "clearcoat": 1,
+          "ior": 1.45,
+          "envMapIntensity": 1,
+          "defines": {
+            "STANDARD": "",
+            "PHYSICAL": "",
+            "LS_HAS_MONTH": 1,
+            "LS_DAY_FAMILY": 2,
+            "LS_MONTH_FAMILY": 1
+          },
+          "programCacheKey": "living-surface-r186-v3-gerstner:2:1:1",
+          "time": 0,
+          "reliefScale": 1,
+          "shaderUniforms": {
+            "day": [
+              0,
+              5.85095781,
+              0.94,
+              0.6
+            ],
+            "month": [
+              0,
+              10.084873022,
+              0.76,
+              0.6
+            ],
+            "dayPrimary": [
+              0.337163615,
+              0.124771818,
+              0.039546235
+            ],
+            "monthPrimary": [
+              0.034339807,
+              0.008568126,
+              0.006512091
+            ],
+            "mask": {
+              "width": 512,
+              "height": 256,
+              "rgbaFnv1a": 2245384427
+            }
+          }
+        },
+        "effects": [
+          {
+            "name": "day-무-sandstone-outcrops",
+            "kind": "sandstone-outcrops",
+            "region": "day",
+            "presetKey": "무",
+            "instances": 120,
+            "visible": true
+          },
+          {
+            "name": "day-무-strata-caps",
+            "kind": "strata-caps",
+            "region": "day",
+            "presetKey": "무",
+            "instances": 40,
+            "visible": true
+          },
+          {
+            "name": "month-병-lava-domes",
+            "kind": "lava-domes",
+            "region": "month",
+            "presetKey": "병",
+            "instances": 28,
+            "visible": true
+          },
+          {
+            "name": "month-병-flame-plumes",
+            "kind": "flame-plumes",
+            "region": "month",
+            "presetKey": "병",
+            "instances": 28,
+            "visible": true
+          },
+          {
+            "name": "month-병-rising-embers",
+            "kind": "rising-embers",
+            "region": "month",
+            "presetKey": "병",
+            "instances": 28,
+            "visible": true
+          }
+        ]
+      },
+      {
+        "name": "living:무",
+        "position": [
+          3.8,
+          0.65,
+          0
+        ],
+        "worldPosition": [
+          3.8,
+          0.65,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "geometry": {
+          "radius": 0.44,
+          "widthSegments": 32,
+          "heightSegments": 32,
+          "phiStart": 0,
+          "phiLength": 6.283185307179586,
+          "thetaStart": 0,
+          "thetaLength": 3.141592653589793
+        },
+        "indices": 5952,
+        "vertices": 1089,
+        "uv": 1089,
+        "material": {
+          "type": "MeshPhysicalMaterial",
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "roughness": 0.94,
+          "metalness": 0,
+          "clearcoat": 0,
+          "ior": 1.45,
+          "envMapIntensity": 1,
+          "defines": {
+            "STANDARD": "",
+            "PHYSICAL": "",
+            "LS_HAS_MONTH": 0,
+            "LS_DAY_FAMILY": 2,
+            "LS_MONTH_FAMILY": 2
+          },
+          "programCacheKey": "living-surface-r186-v3-gerstner:2:2:0",
+          "time": 0,
+          "reliefScale": 1,
+          "shaderUniforms": {
+            "day": [
+              0,
+              5.85095781,
+              0.94,
+              0.6
+            ],
+            "month": [
+              0,
+              5.85095781,
+              0.94,
+              0.6
+            ],
+            "dayPrimary": [
+              0.337163615,
+              0.124771818,
+              0.039546235
+            ],
+            "monthPrimary": [
+              0.337163615,
+              0.124771818,
+              0.039546235
+            ],
+            "mask": null
+          }
+        },
+        "effects": []
+      }
+    ],
+    "belts": [
+      {
+        "points": 2200,
+        "rotation": [
+          0.28,
+          0.12,
+          0,
+          "XYZ"
+        ],
+        "size": 0.08
+      }
+    ]
+  },
+  "effectsRasterDelta": {
+    "changedPixels": 1839,
+    "totalPixels": 448152,
+    "meanAbsRgba": 0.3672074430104072
+  },
+  "galaxyForm": {
+    "이름": "Synthetic Owner Look",
+    "연도": "2000",
+    "월": "1",
+    "일": "1",
+    "시": "12",
+    "분": "30"
+  },
+  "galaxySnapshot": {
+    "version": 1,
+    "birth": {
+      "name": "Synthetic Owner Look",
+      "year": "2000",
+      "month": "1",
+      "day": "1",
+      "hour": "12",
+      "minute": "30",
+      "unknown": false
+    },
+    "dayKey": "무오",
+    "monthKey": "병자",
+    "yearKey": "기묘",
+    "hourKey": "무오",
+    "maskStyle": "pangaea",
+    "mode": "planet",
+    "source": "calculated"
+  },
+  "galaxyOwner": {
+    "id": "me",
+    "name": "Synthetic Owner Look (나)",
+    "birthDate": "2000.1.1",
+    "calendarType": "solar",
+    "solarBirthDate": {
+      "year": 2000,
+      "month": 1,
+      "day": 1
+    },
+    "relationType": "mentor",
+    "relationTitle": "나의 중심 별",
+    "dayMaster": "戊午 (무오)",
+    "elementMatch": "화(火)",
+    "affinityScore": 100,
+    "advice": "내 사주의 고유한 빛이 주변의 좋은 인연들을 이끌어당깁니다.",
+    "isMe": true,
+    "pillars": {
+      "dayKey": "무오",
+      "monthKey": "병자",
+      "yearKey": "기묘",
+      "hourKey": "무오"
+    }
+  },
+  "galaxyOverview": {
+    "scene": "galaxy",
+    "ready": "ready",
+    "exposure": 1.45,
+    "toneMapping": 4,
+    "colorSpace": "srgb",
+    "shadow": false,
+    "environmentIntensity": 1.1,
+    "camera": {
+      "fov": 45,
+      "position": [
+        4.75476616,
+        19.092021953,
+        9.843114167
+      ],
+      "quaternion": [
+        -0.4889153,
+        0.193014737,
+        0.11190067,
+        0.843318078
+      ],
+      "aspect": 1.4365781710914454,
+      "zoom": 1
+    },
+    "lights": [
+      {
+        "type": "AmbientLight",
+        "color": [
+          1,
+          1,
+          1
+        ],
+        "intensity": 0.85,
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "castShadow": false
+      },
+      {
+        "type": "PointLight",
+        "color": [
+          1,
+          0.79129794,
+          0.351532599
+        ],
+        "intensity": 4.5,
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "castShadow": false
+      },
+      {
+        "type": "DirectionalLight",
+        "color": [
+          1,
+          1,
+          1
+        ],
+        "intensity": 1.6,
+        "position": [
+          16,
+          22,
+          14
+        ],
+        "castShadow": false
+      },
+      {
+        "type": "DirectionalLight",
+        "color": [
+          0.08021982,
+          0.177888416,
+          0.376262123
+        ],
+        "intensity": 1.1,
+        "position": [
+          -15,
+          -10,
+          -15
+        ],
+        "castShadow": false
+      }
+    ],
+    "meshes": [
+      {
+        "name": "living:무:병",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "worldPosition": [
+          5.06718525,
+          0.1,
+          2.821991077
+        ],
+        "scale": [
+          1.3,
+          1.3,
+          1.3
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "geometry": {
+          "radius": 1,
+          "widthSegments": 32,
+          "heightSegments": 32,
+          "phiStart": 0,
+          "phiLength": 6.283185307179586,
+          "thetaStart": 0,
+          "thetaLength": 3.141592653589793
+        },
+        "indices": 5952,
+        "vertices": 1089,
+        "uv": 1089,
+        "material": {
+          "type": "MeshPhysicalMaterial",
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "roughness": 0.94,
+          "metalness": 0,
+          "clearcoat": 1,
+          "ior": 1.45,
+          "envMapIntensity": 1,
+          "defines": {
+            "STANDARD": "",
+            "PHYSICAL": "",
+            "LS_HAS_MONTH": 1,
+            "LS_DAY_FAMILY": 2,
+            "LS_MONTH_FAMILY": 1
+          },
+          "programCacheKey": "living-surface-r186-v3-gerstner:2:1:1",
+          "time": 0,
+          "reliefScale": 1,
+          "shaderUniforms": {
+            "day": [
+              0,
+              5.85095781,
+              0.94,
+              0.6
+            ],
+            "month": [
+              0,
+              10.084873022,
+              0.76,
+              0.6
+            ],
+            "dayPrimary": [
+              0.337163615,
+              0.124771818,
+              0.039546235
+            ],
+            "monthPrimary": [
+              0.034339807,
+              0.008568126,
+              0.006512091
+            ],
+            "mask": {
+              "width": 512,
+              "height": 256,
+              "rgbaFnv1a": 2245384427
+            }
+          }
+        },
+        "effects": []
+      },
+      {
+        "name": "living:무",
+        "position": [
+          2.86,
+          0,
+          0
+        ],
+        "worldPosition": [
+          7.906617949,
+          0.429043194,
+          2.916608871
+        ],
+        "scale": [
+          0.364,
+          0.364,
+          0.364
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "geometry": {
+          "radius": 1,
+          "widthSegments": 32,
+          "heightSegments": 32,
+          "phiStart": 0,
+          "phiLength": 6.283185307179586,
+          "thetaStart": 0,
+          "thetaLength": 3.141592653589793
+        },
+        "indices": 5952,
+        "vertices": 1089,
+        "uv": 1089,
+        "material": {
+          "type": "MeshPhysicalMaterial",
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "roughness": 0.94,
+          "metalness": 0,
+          "clearcoat": 0,
+          "ior": 1.45,
+          "envMapIntensity": 1,
+          "defines": {
+            "STANDARD": "",
+            "PHYSICAL": "",
+            "LS_HAS_MONTH": 0,
+            "LS_DAY_FAMILY": 2,
+            "LS_MONTH_FAMILY": 2
+          },
+          "programCacheKey": "living-surface-r186-v3-gerstner:2:2:0",
+          "time": 0,
+          "reliefScale": 1,
+          "shaderUniforms": {
+            "day": [
+              0,
+              5.85095781,
+              0.94,
+              0.6
+            ],
+            "month": [
+              0,
+              5.85095781,
+              0.94,
+              0.6
+            ],
+            "dayPrimary": [
+              0.337163615,
+              0.124771818,
+              0.039546235
+            ],
+            "monthPrimary": [
+              0.337163615,
+              0.124771818,
+              0.039546235
+            ],
+            "mask": null
+          }
+        },
+        "effects": []
+      }
+    ],
+    "belts": [
+      {
+        "points": 21600,
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "size": 0.18
+      },
+      {
+        "points": 2400,
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "size": 0.42
+      },
+      {
+        "points": 1200,
+        "rotation": [
+          0.28,
+          0,
+          0,
+          "XYZ"
+        ],
+        "size": 0.06032
+      }
+    ]
+  },
+  "galaxyOwnerFocus": {
+    "scene": "galaxy",
+    "ready": "ready",
+    "exposure": 1.45,
+    "toneMapping": 4,
+    "colorSpace": "srgb",
+    "shadow": false,
+    "environmentIntensity": 1.1,
+    "camera": {
+      "fov": 45,
+      "position": [
+        6.215845607,
+        5.709509145,
+        5.19992515
+      ],
+      "quaternion": [
+        -0.522247949,
+        0.188385513,
+        0.119529693,
+        0.823092116
+      ],
+      "aspect": 1.4365781710914454,
+      "zoom": 1
+    },
+    "lights": [
+      {
+        "type": "AmbientLight",
+        "color": [
+          1,
+          1,
+          1
+        ],
+        "intensity": 0.85,
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "castShadow": false
+      },
+      {
+        "type": "PointLight",
+        "color": [
+          1,
+          0.79129794,
+          0.351532599
+        ],
+        "intensity": 4.5,
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "castShadow": false
+      },
+      {
+        "type": "DirectionalLight",
+        "color": [
+          1,
+          1,
+          1
+        ],
+        "intensity": 1.6,
+        "position": [
+          16,
+          22,
+          14
+        ],
+        "castShadow": false
+      },
+      {
+        "type": "DirectionalLight",
+        "color": [
+          0.08021982,
+          0.177888416,
+          0.376262123
+        ],
+        "intensity": 1.1,
+        "position": [
+          -15,
+          -10,
+          -15
+        ],
+        "castShadow": false
+      }
+    ],
+    "meshes": [
+      {
+        "name": "living:무:병",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "worldPosition": [
+          5.06718525,
+          0.1,
+          2.821991077
+        ],
+        "scale": [
+          1.3,
+          1.3,
+          1.3
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "geometry": {
+          "radius": 1,
+          "widthSegments": 32,
+          "heightSegments": 32,
+          "phiStart": 0,
+          "phiLength": 6.283185307179586,
+          "thetaStart": 0,
+          "thetaLength": 3.141592653589793
+        },
+        "indices": 5952,
+        "vertices": 1089,
+        "uv": 1089,
+        "material": {
+          "type": "MeshPhysicalMaterial",
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "roughness": 0.94,
+          "metalness": 0,
+          "clearcoat": 1,
+          "ior": 1.45,
+          "envMapIntensity": 1,
+          "defines": {
+            "STANDARD": "",
+            "PHYSICAL": "",
+            "LS_HAS_MONTH": 1,
+            "LS_DAY_FAMILY": 2,
+            "LS_MONTH_FAMILY": 1
+          },
+          "programCacheKey": "living-surface-r186-v3-gerstner:2:1:1",
+          "time": 0,
+          "reliefScale": 1,
+          "shaderUniforms": {
+            "day": [
+              0,
+              5.85095781,
+              0.94,
+              0.6
+            ],
+            "month": [
+              0,
+              10.084873022,
+              0.76,
+              0.6
+            ],
+            "dayPrimary": [
+              0.337163615,
+              0.124771818,
+              0.039546235
+            ],
+            "monthPrimary": [
+              0.034339807,
+              0.008568126,
+              0.006512091
+            ],
+            "mask": {
+              "width": 512,
+              "height": 256,
+              "rgbaFnv1a": 2245384427
+            }
+          }
+        },
+        "effects": []
+      },
+      {
+        "name": "living:무",
+        "position": [
+          2.86,
+          0,
+          0
+        ],
+        "worldPosition": [
+          7.906617949,
+          0.429043194,
+          2.916608871
+        ],
+        "scale": [
+          0.364,
+          0.364,
+          0.364
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "geometry": {
+          "radius": 1,
+          "widthSegments": 32,
+          "heightSegments": 32,
+          "phiStart": 0,
+          "phiLength": 6.283185307179586,
+          "thetaStart": 0,
+          "thetaLength": 3.141592653589793
+        },
+        "indices": 5952,
+        "vertices": 1089,
+        "uv": 1089,
+        "material": {
+          "type": "MeshPhysicalMaterial",
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "roughness": 0.94,
+          "metalness": 0,
+          "clearcoat": 0,
+          "ior": 1.45,
+          "envMapIntensity": 1,
+          "defines": {
+            "STANDARD": "",
+            "PHYSICAL": "",
+            "LS_HAS_MONTH": 0,
+            "LS_DAY_FAMILY": 2,
+            "LS_MONTH_FAMILY": 2
+          },
+          "programCacheKey": "living-surface-r186-v3-gerstner:2:2:0",
+          "time": 0,
+          "reliefScale": 1,
+          "shaderUniforms": {
+            "day": [
+              0,
+              5.85095781,
+              0.94,
+              0.6
+            ],
+            "month": [
+              0,
+              5.85095781,
+              0.94,
+              0.6
+            ],
+            "dayPrimary": [
+              0.337163615,
+              0.124771818,
+              0.039546235
+            ],
+            "monthPrimary": [
+              0.337163615,
+              0.124771818,
+              0.039546235
+            ],
+            "mask": null
+          }
+        },
+        "effects": []
+      }
+    ],
+    "belts": [
+      {
+        "points": 21600,
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "size": 0.18
+      },
+      {
+        "points": 2400,
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "size": 0.42
+      },
+      {
+        "points": 1200,
+        "rotation": [
+          0.28,
+          0,
+          0,
+          "XYZ"
+        ],
+        "size": 0.06032
+      }
+    ]
+  },
+  "galaxyExposureOnly": {
+    "scene": "galaxy",
+    "ready": "ready",
+    "exposure": 1.05,
+    "toneMapping": 4,
+    "colorSpace": "srgb",
+    "shadow": false,
+    "environmentIntensity": 1.1,
+    "camera": {
+      "fov": 45,
+      "position": [
+        6.215845607,
+        5.709509145,
+        5.19992515
+      ],
+      "quaternion": [
+        -0.522247949,
+        0.188385513,
+        0.119529693,
+        0.823092116
+      ],
+      "aspect": 1.4365781710914454,
+      "zoom": 1
+    },
+    "lights": [
+      {
+        "type": "AmbientLight",
+        "color": [
+          1,
+          1,
+          1
+        ],
+        "intensity": 0.85,
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "castShadow": false
+      },
+      {
+        "type": "PointLight",
+        "color": [
+          1,
+          0.79129794,
+          0.351532599
+        ],
+        "intensity": 4.5,
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "castShadow": false
+      },
+      {
+        "type": "DirectionalLight",
+        "color": [
+          1,
+          1,
+          1
+        ],
+        "intensity": 1.6,
+        "position": [
+          16,
+          22,
+          14
+        ],
+        "castShadow": false
+      },
+      {
+        "type": "DirectionalLight",
+        "color": [
+          0.08021982,
+          0.177888416,
+          0.376262123
+        ],
+        "intensity": 1.1,
+        "position": [
+          -15,
+          -10,
+          -15
+        ],
+        "castShadow": false
+      }
+    ],
+    "meshes": [
+      {
+        "name": "living:무:병",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "worldPosition": [
+          5.06718525,
+          0.1,
+          2.821991077
+        ],
+        "scale": [
+          1.3,
+          1.3,
+          1.3
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "geometry": {
+          "radius": 1,
+          "widthSegments": 32,
+          "heightSegments": 32,
+          "phiStart": 0,
+          "phiLength": 6.283185307179586,
+          "thetaStart": 0,
+          "thetaLength": 3.141592653589793
+        },
+        "indices": 5952,
+        "vertices": 1089,
+        "uv": 1089,
+        "material": {
+          "type": "MeshPhysicalMaterial",
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "roughness": 0.94,
+          "metalness": 0,
+          "clearcoat": 1,
+          "ior": 1.45,
+          "envMapIntensity": 1,
+          "defines": {
+            "STANDARD": "",
+            "PHYSICAL": "",
+            "LS_HAS_MONTH": 1,
+            "LS_DAY_FAMILY": 2,
+            "LS_MONTH_FAMILY": 1
+          },
+          "programCacheKey": "living-surface-r186-v3-gerstner:2:1:1",
+          "time": 0,
+          "reliefScale": 1,
+          "shaderUniforms": {
+            "day": [
+              0,
+              5.85095781,
+              0.94,
+              0.6
+            ],
+            "month": [
+              0,
+              10.084873022,
+              0.76,
+              0.6
+            ],
+            "dayPrimary": [
+              0.337163615,
+              0.124771818,
+              0.039546235
+            ],
+            "monthPrimary": [
+              0.034339807,
+              0.008568126,
+              0.006512091
+            ],
+            "mask": {
+              "width": 512,
+              "height": 256,
+              "rgbaFnv1a": 2245384427
+            }
+          }
+        },
+        "effects": []
+      },
+      {
+        "name": "living:무",
+        "position": [
+          2.86,
+          0,
+          0
+        ],
+        "worldPosition": [
+          7.906617949,
+          0.429043194,
+          2.916608871
+        ],
+        "scale": [
+          0.364,
+          0.364,
+          0.364
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "geometry": {
+          "radius": 1,
+          "widthSegments": 32,
+          "heightSegments": 32,
+          "phiStart": 0,
+          "phiLength": 6.283185307179586,
+          "thetaStart": 0,
+          "thetaLength": 3.141592653589793
+        },
+        "indices": 5952,
+        "vertices": 1089,
+        "uv": 1089,
+        "material": {
+          "type": "MeshPhysicalMaterial",
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "roughness": 0.94,
+          "metalness": 0,
+          "clearcoat": 0,
+          "ior": 1.45,
+          "envMapIntensity": 1,
+          "defines": {
+            "STANDARD": "",
+            "PHYSICAL": "",
+            "LS_HAS_MONTH": 0,
+            "LS_DAY_FAMILY": 2,
+            "LS_MONTH_FAMILY": 2
+          },
+          "programCacheKey": "living-surface-r186-v3-gerstner:2:2:0",
+          "time": 0,
+          "reliefScale": 1,
+          "shaderUniforms": {
+            "day": [
+              0,
+              5.85095781,
+              0.94,
+              0.6
+            ],
+            "month": [
+              0,
+              5.85095781,
+              0.94,
+              0.6
+            ],
+            "dayPrimary": [
+              0.337163615,
+              0.124771818,
+              0.039546235
+            ],
+            "monthPrimary": [
+              0.337163615,
+              0.124771818,
+              0.039546235
+            ],
+            "mask": null
+          }
+        },
+        "effects": []
+      }
+    ],
+    "belts": [
+      {
+        "points": 21600,
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "size": 0.18
+      },
+      {
+        "points": 2400,
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "size": 0.42
+      },
+      {
+        "points": 1200,
+        "rotation": [
+          0.28,
+          0,
+          0,
+          "XYZ"
+        ],
+        "size": 0.06032
+      }
+    ]
+  },
+  "exposureRasterDelta": {
+    "changedPixels": 363774,
+    "totalPixels": 660372,
+    "meanAbsRgba": 5.10205459952875
+  },
+  "galaxyCameraPersonalAngle": {
+    "scene": "galaxy",
+    "ready": "ready",
+    "exposure": 1.45,
+    "toneMapping": 4,
+    "colorSpace": "srgb",
+    "shadow": false,
+    "environmentIntensity": 1.1,
+    "camera": {
+      "fov": 45,
+      "position": [
+        5.06718525,
+        1.057143927,
+        8.947712212
+      ],
+      "quaternion": [
+        -0.077420818,
+        0,
+        0,
+        0.996998504
+      ],
+      "aspect": 1.4365781710914454,
+      "zoom": 1
+    },
+    "lights": [
+      {
+        "type": "AmbientLight",
+        "color": [
+          1,
+          1,
+          1
+        ],
+        "intensity": 0.85,
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "castShadow": false
+      },
+      {
+        "type": "PointLight",
+        "color": [
+          1,
+          0.79129794,
+          0.351532599
+        ],
+        "intensity": 4.5,
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "castShadow": false
+      },
+      {
+        "type": "DirectionalLight",
+        "color": [
+          1,
+          1,
+          1
+        ],
+        "intensity": 1.6,
+        "position": [
+          16,
+          22,
+          14
+        ],
+        "castShadow": false
+      },
+      {
+        "type": "DirectionalLight",
+        "color": [
+          0.08021982,
+          0.177888416,
+          0.376262123
+        ],
+        "intensity": 1.1,
+        "position": [
+          -15,
+          -10,
+          -15
+        ],
+        "castShadow": false
+      }
+    ],
+    "meshes": [
+      {
+        "name": "living:무:병",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "worldPosition": [
+          5.06718525,
+          0.1,
+          2.821991077
+        ],
+        "scale": [
+          1.3,
+          1.3,
+          1.3
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "geometry": {
+          "radius": 1,
+          "widthSegments": 32,
+          "heightSegments": 32,
+          "phiStart": 0,
+          "phiLength": 6.283185307179586,
+          "thetaStart": 0,
+          "thetaLength": 3.141592653589793
+        },
+        "indices": 5952,
+        "vertices": 1089,
+        "uv": 1089,
+        "material": {
+          "type": "MeshPhysicalMaterial",
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "roughness": 0.94,
+          "metalness": 0,
+          "clearcoat": 1,
+          "ior": 1.45,
+          "envMapIntensity": 1,
+          "defines": {
+            "STANDARD": "",
+            "PHYSICAL": "",
+            "LS_HAS_MONTH": 1,
+            "LS_DAY_FAMILY": 2,
+            "LS_MONTH_FAMILY": 1
+          },
+          "programCacheKey": "living-surface-r186-v3-gerstner:2:1:1",
+          "time": 0,
+          "reliefScale": 1,
+          "shaderUniforms": {
+            "day": [
+              0,
+              5.85095781,
+              0.94,
+              0.6
+            ],
+            "month": [
+              0,
+              10.084873022,
+              0.76,
+              0.6
+            ],
+            "dayPrimary": [
+              0.337163615,
+              0.124771818,
+              0.039546235
+            ],
+            "monthPrimary": [
+              0.034339807,
+              0.008568126,
+              0.006512091
+            ],
+            "mask": {
+              "width": 512,
+              "height": 256,
+              "rgbaFnv1a": 2245384427
+            }
+          }
+        },
+        "effects": []
+      },
+      {
+        "name": "living:무",
+        "position": [
+          2.86,
+          0,
+          0
+        ],
+        "worldPosition": [
+          7.906617949,
+          0.429043194,
+          2.916608871
+        ],
+        "scale": [
+          0.364,
+          0.364,
+          0.364
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "geometry": {
+          "radius": 1,
+          "widthSegments": 32,
+          "heightSegments": 32,
+          "phiStart": 0,
+          "phiLength": 6.283185307179586,
+          "thetaStart": 0,
+          "thetaLength": 3.141592653589793
+        },
+        "indices": 5952,
+        "vertices": 1089,
+        "uv": 1089,
+        "material": {
+          "type": "MeshPhysicalMaterial",
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "roughness": 0.94,
+          "metalness": 0,
+          "clearcoat": 0,
+          "ior": 1.45,
+          "envMapIntensity": 1,
+          "defines": {
+            "STANDARD": "",
+            "PHYSICAL": "",
+            "LS_HAS_MONTH": 0,
+            "LS_DAY_FAMILY": 2,
+            "LS_MONTH_FAMILY": 2
+          },
+          "programCacheKey": "living-surface-r186-v3-gerstner:2:2:0",
+          "time": 0,
+          "reliefScale": 1,
+          "shaderUniforms": {
+            "day": [
+              0,
+              5.85095781,
+              0.94,
+              0.6
+            ],
+            "month": [
+              0,
+              5.85095781,
+              0.94,
+              0.6
+            ],
+            "dayPrimary": [
+              0.337163615,
+              0.124771818,
+              0.039546235
+            ],
+            "monthPrimary": [
+              0.337163615,
+              0.124771818,
+              0.039546235
+            ],
+            "mask": null
+          }
+        },
+        "effects": []
+      }
+    ],
+    "belts": [
+      {
+        "points": 21600,
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "size": 0.18
+      },
+      {
+        "points": 2400,
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "size": 0.42
+      },
+      {
+        "points": 1200,
+        "rotation": [
+          0.28,
+          0,
+          0,
+          "XYZ"
+        ],
+        "size": 0.06032
+      }
+    ]
+  },
+  "cameraRasterDelta": {
+    "changedPixels": 526467,
+    "totalPixels": 660372,
+    "meanAbsRgba": 85.405156108981
+  },
+  "galaxyPersonalLights": {
+    "scene": "galaxy",
+    "ready": "ready",
+    "exposure": 1.45,
+    "toneMapping": 4,
+    "colorSpace": "srgb",
+    "shadow": false,
+    "environmentIntensity": 1.1,
+    "camera": {
+      "fov": 45,
+      "position": [
+        6.215845607,
+        5.709509145,
+        5.19992515
+      ],
+      "quaternion": [
+        -0.522247949,
+        0.188385513,
+        0.119529693,
+        0.823092116
+      ],
+      "aspect": 1.4365781710914454,
+      "zoom": 1
+    },
+    "lights": [
+      {
+        "type": "AmbientLight",
+        "color": [
+          1,
+          1,
+          1
+        ],
+        "intensity": 0.22,
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "castShadow": false
+      },
+      {
+        "type": "DirectionalLight",
+        "color": [
+          1,
+          0.913098652,
+          0.79129794
+        ],
+        "intensity": 2,
+        "position": [
+          10.06718525,
+          4.1,
+          7.821991077
+        ],
+        "castShadow": false
+      },
+      {
+        "type": "DirectionalLight",
+        "color": [
+          0.08021982,
+          0.162029376,
+          0.351532599
+        ],
+        "intensity": 0.8,
+        "position": [
+          -0.93281475,
+          -1.9,
+          -1.178008923
+        ],
+        "castShadow": false
+      },
+      {
+        "type": "DirectionalLight",
+        "color": [
+          0.473531496,
+          0.715693501,
+          1
+        ],
+        "intensity": 1.5,
+        "position": [
+          1.06718525,
+          3.1,
+          -0.178008923
+        ],
+        "castShadow": false
+      }
+    ],
+    "meshes": [
+      {
+        "name": "living:무:병",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "worldPosition": [
+          5.06718525,
+          0.1,
+          2.821991077
+        ],
+        "scale": [
+          1.3,
+          1.3,
+          1.3
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "geometry": {
+          "radius": 1,
+          "widthSegments": 32,
+          "heightSegments": 32,
+          "phiStart": 0,
+          "phiLength": 6.283185307179586,
+          "thetaStart": 0,
+          "thetaLength": 3.141592653589793
+        },
+        "indices": 5952,
+        "vertices": 1089,
+        "uv": 1089,
+        "material": {
+          "type": "MeshPhysicalMaterial",
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "roughness": 0.94,
+          "metalness": 0,
+          "clearcoat": 1,
+          "ior": 1.45,
+          "envMapIntensity": 1,
+          "defines": {
+            "STANDARD": "",
+            "PHYSICAL": "",
+            "LS_HAS_MONTH": 1,
+            "LS_DAY_FAMILY": 2,
+            "LS_MONTH_FAMILY": 1
+          },
+          "programCacheKey": "living-surface-r186-v3-gerstner:2:1:1",
+          "time": 0,
+          "reliefScale": 1,
+          "shaderUniforms": {
+            "day": [
+              0,
+              5.85095781,
+              0.94,
+              0.6
+            ],
+            "month": [
+              0,
+              10.084873022,
+              0.76,
+              0.6
+            ],
+            "dayPrimary": [
+              0.337163615,
+              0.124771818,
+              0.039546235
+            ],
+            "monthPrimary": [
+              0.034339807,
+              0.008568126,
+              0.006512091
+            ],
+            "mask": {
+              "width": 512,
+              "height": 256,
+              "rgbaFnv1a": 2245384427
+            }
+          }
+        },
+        "effects": []
+      },
+      {
+        "name": "living:무",
+        "position": [
+          2.86,
+          0,
+          0
+        ],
+        "worldPosition": [
+          7.906617949,
+          0.429043194,
+          2.916608871
+        ],
+        "scale": [
+          0.364,
+          0.364,
+          0.364
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "geometry": {
+          "radius": 1,
+          "widthSegments": 32,
+          "heightSegments": 32,
+          "phiStart": 0,
+          "phiLength": 6.283185307179586,
+          "thetaStart": 0,
+          "thetaLength": 3.141592653589793
+        },
+        "indices": 5952,
+        "vertices": 1089,
+        "uv": 1089,
+        "material": {
+          "type": "MeshPhysicalMaterial",
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "roughness": 0.94,
+          "metalness": 0,
+          "clearcoat": 0,
+          "ior": 1.45,
+          "envMapIntensity": 1,
+          "defines": {
+            "STANDARD": "",
+            "PHYSICAL": "",
+            "LS_HAS_MONTH": 0,
+            "LS_DAY_FAMILY": 2,
+            "LS_MONTH_FAMILY": 2
+          },
+          "programCacheKey": "living-surface-r186-v3-gerstner:2:2:0",
+          "time": 0,
+          "reliefScale": 1,
+          "shaderUniforms": {
+            "day": [
+              0,
+              5.85095781,
+              0.94,
+              0.6
+            ],
+            "month": [
+              0,
+              5.85095781,
+              0.94,
+              0.6
+            ],
+            "dayPrimary": [
+              0.337163615,
+              0.124771818,
+              0.039546235
+            ],
+            "monthPrimary": [
+              0.337163615,
+              0.124771818,
+              0.039546235
+            ],
+            "mask": null
+          }
+        },
+        "effects": []
+      }
+    ],
+    "belts": [
+      {
+        "points": 21600,
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "size": 0.18
+      },
+      {
+        "points": 2400,
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "size": 0.42
+      },
+      {
+        "points": 1200,
+        "rotation": [
+          0.28,
+          0,
+          0,
+          "XYZ"
+        ],
+        "size": 0.06032
+      }
+    ]
+  },
+  "lightsRasterDelta": {
+    "changedPixels": 110258,
+    "totalPixels": 660372,
+    "meanAbsRgba": 0.2027039305118933
+  },
+  "archipelagoSnapshot": {
+    "version": 1,
+    "birth": {
+      "name": "Synthetic Owner Look",
+      "year": "2000",
+      "month": "1",
+      "day": "1",
+      "hour": "12",
+      "minute": "30",
+      "unknown": false
+    },
+    "dayKey": "무오",
+    "monthKey": "병자",
+    "yearKey": "기묘",
+    "hourKey": "무오",
+    "maskStyle": "archipelago",
+    "mode": "planet",
+    "source": "calculated"
+  },
+  "archipelagoPersonal": {
+    "scene": "planet",
+    "ready": "ready",
+    "exposure": 1.05,
+    "toneMapping": 4,
+    "colorSpace": "srgb",
+    "shadow": true,
+    "environmentIntensity": 1.1,
+    "camera": {
+      "fov": 45,
+      "position": [
+        0,
+        1.5,
+        9.6
+      ],
+      "quaternion": [
+        -0.077420818,
+        0,
+        0,
+        0.996998504
+      ],
+      "aspect": 1.3890845070422535,
+      "zoom": 1
+    },
+    "lights": [
+      {
+        "type": "AmbientLight",
+        "color": [
+          1,
+          1,
+          1
+        ],
+        "intensity": 0.22,
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "castShadow": false
+      },
+      {
+        "type": "DirectionalLight",
+        "color": [
+          1,
+          0.913098652,
+          0.79129794
+        ],
+        "intensity": 2,
+        "position": [
+          5,
+          4,
+          5
+        ],
+        "castShadow": true
+      },
+      {
+        "type": "DirectionalLight",
+        "color": [
+          0.08021982,
+          0.162029376,
+          0.351532599
+        ],
+        "intensity": 0.8,
+        "position": [
+          -6,
+          -2,
+          -4
+        ],
+        "castShadow": false
+      },
+      {
+        "type": "DirectionalLight",
+        "color": [
+          0.473531496,
+          0.715693501,
+          1
+        ],
+        "intensity": 1.5,
+        "position": [
+          -4,
+          3,
+          -3
+        ],
+        "castShadow": false
+      }
+    ],
+    "meshes": [
+      {
+        "name": "living:무:병",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "geometry": {
+          "radius": 1.85,
+          "widthSegments": 96,
+          "heightSegments": 64,
+          "phiStart": 0,
+          "phiLength": 6.283185307179586,
+          "thetaStart": 0,
+          "thetaLength": 3.141592653589793
+        },
+        "indices": 36288,
+        "vertices": 6305,
+        "uv": 6305,
+        "material": {
+          "type": "MeshPhysicalMaterial",
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "roughness": 0.94,
+          "metalness": 0,
+          "clearcoat": 1,
+          "ior": 1.45,
+          "envMapIntensity": 1,
+          "defines": {
+            "STANDARD": "",
+            "PHYSICAL": "",
+            "LS_HAS_MONTH": 1,
+            "LS_DAY_FAMILY": 2,
+            "LS_MONTH_FAMILY": 1
+          },
+          "programCacheKey": "living-surface-r186-v3-gerstner:2:1:1",
+          "time": 0,
+          "reliefScale": 1,
+          "shaderUniforms": {
+            "day": [
+              0,
+              5.85095781,
+              0.94,
+              0.6
+            ],
+            "month": [
+              0,
+              10.084873022,
+              0.76,
+              0.6
+            ],
+            "dayPrimary": [
+              0.337163615,
+              0.124771818,
+              0.039546235
+            ],
+            "monthPrimary": [
+              0.034339807,
+              0.008568126,
+              0.006512091
+            ],
+            "mask": {
+              "width": 512,
+              "height": 256,
+              "rgbaFnv1a": 1100551764
+            }
+          }
+        },
+        "effects": [
+          {
+            "name": "day-무-sandstone-outcrops",
+            "kind": "sandstone-outcrops",
+            "region": "day",
+            "presetKey": "무",
+            "instances": 120,
+            "visible": true
+          },
+          {
+            "name": "day-무-strata-caps",
+            "kind": "strata-caps",
+            "region": "day",
+            "presetKey": "무",
+            "instances": 40,
+            "visible": true
+          },
+          {
+            "name": "month-병-lava-domes",
+            "kind": "lava-domes",
+            "region": "month",
+            "presetKey": "병",
+            "instances": 28,
+            "visible": true
+          },
+          {
+            "name": "month-병-flame-plumes",
+            "kind": "flame-plumes",
+            "region": "month",
+            "presetKey": "병",
+            "instances": 28,
+            "visible": true
+          },
+          {
+            "name": "month-병-rising-embers",
+            "kind": "rising-embers",
+            "region": "month",
+            "presetKey": "병",
+            "instances": 28,
+            "visible": true
+          }
+        ]
+      },
+      {
+        "name": "living:무",
+        "position": [
+          3.8,
+          0.65,
+          0
+        ],
+        "worldPosition": [
+          3.8,
+          0.65,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "geometry": {
+          "radius": 0.44,
+          "widthSegments": 32,
+          "heightSegments": 32,
+          "phiStart": 0,
+          "phiLength": 6.283185307179586,
+          "thetaStart": 0,
+          "thetaLength": 3.141592653589793
+        },
+        "indices": 5952,
+        "vertices": 1089,
+        "uv": 1089,
+        "material": {
+          "type": "MeshPhysicalMaterial",
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "roughness": 0.94,
+          "metalness": 0,
+          "clearcoat": 0,
+          "ior": 1.45,
+          "envMapIntensity": 1,
+          "defines": {
+            "STANDARD": "",
+            "PHYSICAL": "",
+            "LS_HAS_MONTH": 0,
+            "LS_DAY_FAMILY": 2,
+            "LS_MONTH_FAMILY": 2
+          },
+          "programCacheKey": "living-surface-r186-v3-gerstner:2:2:0",
+          "time": 0,
+          "reliefScale": 1,
+          "shaderUniforms": {
+            "day": [
+              0,
+              5.85095781,
+              0.94,
+              0.6
+            ],
+            "month": [
+              0,
+              5.85095781,
+              0.94,
+              0.6
+            ],
+            "dayPrimary": [
+              0.337163615,
+              0.124771818,
+              0.039546235
+            ],
+            "monthPrimary": [
+              0.337163615,
+              0.124771818,
+              0.039546235
+            ],
+            "mask": null
+          }
+        },
+        "effects": []
+      }
+    ],
+    "belts": [
+      {
+        "points": 2200,
+        "rotation": [
+          0.28,
+          0.12,
+          0,
+          "XYZ"
+        ],
+        "size": 0.08
+      }
+    ]
+  },
+  "archipelagoGalaxySnapshot": {
+    "version": 1,
+    "birth": {
+      "name": "Synthetic Owner Look",
+      "year": "2000",
+      "month": "1",
+      "day": "1",
+      "hour": "12",
+      "minute": "30",
+      "unknown": false
+    },
+    "dayKey": "무오",
+    "monthKey": "병자",
+    "yearKey": "기묘",
+    "hourKey": "무오",
+    "maskStyle": "archipelago",
+    "mode": "planet",
+    "source": "calculated"
+  },
+  "archipelagoGalaxy": {
+    "scene": "galaxy",
+    "ready": "ready",
+    "exposure": 1.45,
+    "toneMapping": 4,
+    "colorSpace": "srgb",
+    "shadow": false,
+    "environmentIntensity": 1.1,
+    "camera": {
+      "fov": 45,
+      "position": [
+        4.75476616,
+        19.092021953,
+        9.843114167
+      ],
+      "quaternion": [
+        -0.4889153,
+        0.193014737,
+        0.11190067,
+        0.843318078
+      ],
+      "aspect": 1.4365781710914454,
+      "zoom": 1
+    },
+    "lights": [
+      {
+        "type": "AmbientLight",
+        "color": [
+          1,
+          1,
+          1
+        ],
+        "intensity": 0.85,
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "castShadow": false
+      },
+      {
+        "type": "PointLight",
+        "color": [
+          1,
+          0.79129794,
+          0.351532599
+        ],
+        "intensity": 4.5,
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "castShadow": false
+      },
+      {
+        "type": "DirectionalLight",
+        "color": [
+          1,
+          1,
+          1
+        ],
+        "intensity": 1.6,
+        "position": [
+          16,
+          22,
+          14
+        ],
+        "castShadow": false
+      },
+      {
+        "type": "DirectionalLight",
+        "color": [
+          0.08021982,
+          0.177888416,
+          0.376262123
+        ],
+        "intensity": 1.1,
+        "position": [
+          -15,
+          -10,
+          -15
+        ],
+        "castShadow": false
+      }
+    ],
+    "meshes": [
+      {
+        "name": "living:무:병",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "worldPosition": [
+          5.06718525,
+          0.1,
+          2.821991077
+        ],
+        "scale": [
+          1.3,
+          1.3,
+          1.3
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "geometry": {
+          "radius": 1,
+          "widthSegments": 32,
+          "heightSegments": 32,
+          "phiStart": 0,
+          "phiLength": 6.283185307179586,
+          "thetaStart": 0,
+          "thetaLength": 3.141592653589793
+        },
+        "indices": 5952,
+        "vertices": 1089,
+        "uv": 1089,
+        "material": {
+          "type": "MeshPhysicalMaterial",
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "roughness": 0.94,
+          "metalness": 0,
+          "clearcoat": 1,
+          "ior": 1.45,
+          "envMapIntensity": 1,
+          "defines": {
+            "STANDARD": "",
+            "PHYSICAL": "",
+            "LS_HAS_MONTH": 1,
+            "LS_DAY_FAMILY": 2,
+            "LS_MONTH_FAMILY": 1
+          },
+          "programCacheKey": "living-surface-r186-v3-gerstner:2:1:1",
+          "time": 0,
+          "reliefScale": 1,
+          "shaderUniforms": {
+            "day": [
+              0,
+              5.85095781,
+              0.94,
+              0.6
+            ],
+            "month": [
+              0,
+              10.084873022,
+              0.76,
+              0.6
+            ],
+            "dayPrimary": [
+              0.337163615,
+              0.124771818,
+              0.039546235
+            ],
+            "monthPrimary": [
+              0.034339807,
+              0.008568126,
+              0.006512091
+            ],
+            "mask": {
+              "width": 512,
+              "height": 256,
+              "rgbaFnv1a": 2245384427
+            }
+          }
+        },
+        "effects": []
+      },
+      {
+        "name": "living:무",
+        "position": [
+          2.86,
+          0,
+          0
+        ],
+        "worldPosition": [
+          7.906617949,
+          0.429043194,
+          2.916608871
+        ],
+        "scale": [
+          0.364,
+          0.364,
+          0.364
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "geometry": {
+          "radius": 1,
+          "widthSegments": 32,
+          "heightSegments": 32,
+          "phiStart": 0,
+          "phiLength": 6.283185307179586,
+          "thetaStart": 0,
+          "thetaLength": 3.141592653589793
+        },
+        "indices": 5952,
+        "vertices": 1089,
+        "uv": 1089,
+        "material": {
+          "type": "MeshPhysicalMaterial",
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "roughness": 0.94,
+          "metalness": 0,
+          "clearcoat": 0,
+          "ior": 1.45,
+          "envMapIntensity": 1,
+          "defines": {
+            "STANDARD": "",
+            "PHYSICAL": "",
+            "LS_HAS_MONTH": 0,
+            "LS_DAY_FAMILY": 2,
+            "LS_MONTH_FAMILY": 2
+          },
+          "programCacheKey": "living-surface-r186-v3-gerstner:2:2:0",
+          "time": 0,
+          "reliefScale": 1,
+          "shaderUniforms": {
+            "day": [
+              0,
+              5.85095781,
+              0.94,
+              0.6
+            ],
+            "month": [
+              0,
+              5.85095781,
+              0.94,
+              0.6
+            ],
+            "dayPrimary": [
+              0.337163615,
+              0.124771818,
+              0.039546235
+            ],
+            "monthPrimary": [
+              0.337163615,
+              0.124771818,
+              0.039546235
+            ],
+            "mask": null
+          }
+        },
+        "effects": []
+      }
+    ],
+    "belts": [
+      {
+        "points": 21600,
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "size": 0.18
+      },
+      {
+        "points": 2400,
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "size": 0.42
+      },
+      {
+        "points": 1200,
+        "rotation": [
+          0.28,
+          0,
+          0,
+          "XYZ"
+        ],
+        "size": 0.06032
+      }
+    ]
+  },
+  "finalSceneErrors": []
+}
