@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 export interface SurfaceAnchor { mesh: THREE.Mesh; triangle: number; barycentric: THREE.Vector3 }
 export interface SurfacePose { position: THREE.Vector3; normal: THREE.Vector3 }
-export interface MeshSurfaceOptions { allowMorphTargets?: boolean }
+export interface MeshSurfaceOptions { allowMorphTargets?: boolean; allowSkinning?: boolean }
 interface Face { mesh: THREE.Mesh; triangle: number; a: THREE.Vector3; b: THREE.Vector3; c: THREE.Vector3; cumulative: number }
 const fract = (n:number) => n-Math.floor(n);
 export const seeded = (n:number):number => fract(Math.sin(n*127.1+311.7)*43758.5453123);
@@ -21,7 +21,7 @@ export class MeshSurface {
   constructor(readonly meshes: THREE.Mesh[], private options: MeshSurfaceOptions = {}) {
     if (!meshes.length) throw new RangeError('At least one mesh surface is required.');
     for (const mesh of meshes) {
-      if ((mesh as THREE.SkinnedMesh).isSkinnedMesh || (mesh as THREE.InstancedMesh).isInstancedMesh ||
+      if (((mesh as THREE.SkinnedMesh).isSkinnedMesh && !options.allowSkinning) || (mesh as THREE.InstancedMesh).isInstancedMesh ||
         (!options.allowMorphTargets && mesh.morphTargetInfluences?.some(weight => weight !== 0))) throw new Error('Rigid Mesh surfaces with neutral morphs only.');
       const p = mesh.geometry.getAttribute('position');
       if (!p) throw new Error('Mesh requires position geometry.');
@@ -58,7 +58,7 @@ export class MeshSurface {
     const {a,b,c,relative,normalMatrix}=this;
     const vertex=(offset:number,out:THREE.Vector3)=>{
       const id=index?index.getX(anchor.triangle*3+offset):anchor.triangle*3+offset;
-      if(this.options.allowMorphTargets)mesh.getVertexPosition(id,out);
+      if(this.options.allowMorphTargets || this.options.allowSkinning)mesh.getVertexPosition(id,out);
       else out.fromBufferAttribute(p,id);
     };
     vertex(0,a);vertex(1,b);vertex(2,c);

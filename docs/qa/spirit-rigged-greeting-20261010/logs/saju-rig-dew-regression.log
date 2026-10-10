@@ -1,0 +1,15 @@
+✔ near drops transfer volume and become one larger rendered bead (43.024513ms)
+✔ threshold drop detaches and keeps its world launch while the body moves (24.540198ms)
+✔ round released bead starts outside its tilted source plane (4.74111ms)
+✔ one bounded draw has deterministic seek, dead slots and new condensation (18.463246ms)
+✔ sparse surface routes remain distinct instead of duplicating bead pairs (32.53888ms)
+✔ actual B matrices including hidden slots repeat byte-for-byte at one time (954.816705ms)
+✔ exclusion overlap includes bead radius under transformed fashion masks (1.550416ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1087.188397

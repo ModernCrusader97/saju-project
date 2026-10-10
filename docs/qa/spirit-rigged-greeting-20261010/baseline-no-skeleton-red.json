@@ -1,0 +1,7 @@
+{
+  "status": "FAIL",
+  "sourceSHA256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+  "rigGLBSHA256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+  "checks": [],
+  "error": "AssertionError [ERR_ASSERTION]: Original v32 GLB has no skeleton; a procedural morph is insufficient.\n\nundefined !== 1\n\n    at file:///workspace/saju-spirit-b-rigged-greeting-20261010/scripts/qa/approved-spirit-rig.mjs:22:12\n    at check (file:///workspace/saju-spirit-b-rigged-greeting-20261010/scripts/qa/approved-spirit-rig.mjs:19:30)\n    at file:///workspace/saju-spirit-b-rigged-greeting-20261010/scripts/qa/approved-spirit-rig.mjs:21:3"
+}

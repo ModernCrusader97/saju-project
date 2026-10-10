@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import {hasMovingSkinVertex} from './skinned-surface-state';
 import { seeded, type SurfaceAnchor, type SurfacePose } from './mesh-surface';
 import { SurfaceTriangleWalker } from './surface-triangle-walk';
 import { isSurfaceAttachmentExcluded } from './surface-attachment-exclusions';
@@ -34,7 +35,7 @@ const MAX_LAUNCH_NORMAL_Y = .3;
  * cubic volume, then sufficiently large drops release into world-space flight.
  * No all-pairs collision search, new physics engine, or nearest-surface jump. */
 export function createSurfaceSlidingDew(options: SurfaceAccentOptions): SurfaceStemAccents {
-  const walker = new SurfaceTriangleWalker(options.meshes, { allowMorphTargets: options.allowMorphTargets }), sampler = walker.sampler;
+  const walker = new SurfaceTriangleWalker(options.meshes, { allowMorphTargets: options.allowMorphTargets, allowSkinning: options.allowSkinning }), sampler = walker.sampler;
   const extent = sampler.bounds.getSize(new THREE.Vector3());
   const unit = options.detailScale ?? Math.min(extent.x, extent.y, extent.z) * .5;
   if (!Number.isFinite(unit) || unit <= 0) throw new RangeError('detailScale must be positive.');
@@ -91,9 +92,13 @@ export function createSurfaceSlidingDew(options: SurfaceAccentOptions): SurfaceS
   // Keep original morph-bearing routes when halving the old route pool into
   // two-slot pairs. Read the preserved target attributes, never modify them.
   const movesWithMorph = (source: DewSource): boolean => {
-    if (!options.allowMorphTargets) return false;
+    if (!options.allowMorphTargets && !options.allowSkinning) return false;
     for (const anchor of source.path) {
       const g = anchor.mesh.geometry, p = g.getAttribute('position');
+      if (options.allowSkinning) for (let corner = 0; corner < 3; corner++) {
+        const id = g.index ? g.index.getX(anchor.triangle * 3 + corner) : anchor.triangle * 3 + corner;
+        if (hasMovingSkinVertex(anchor.mesh,id)) return true;
+      }
       for (const target of g.morphAttributes.position ?? []) for (let corner = 0; corner < 3; corner++) {
         const offset = anchor.triangle * 3 + corner, id = g.index ? g.index.getX(offset) : offset;
         const dx = target.getX(id) - (g.morphTargetsRelative ? 0 : p.getX(id));
@@ -123,12 +128,12 @@ export function createSurfaceSlidingDew(options: SurfaceAccentOptions): SurfaceS
   mesh.instanceMatrix.setUsage(THREE.DynamicDrawUsage); group.add(mesh);
   const diagnostics = { supported: sources.length > 0, mode: 'triangle-sliding-coalescing-dew',
     anchorCount: sources.length, limitations: [
-      'Routes follow connected reference triangle edges in rest-local gravity; rigid transforms and explicitly enabled morph vertex positions preserve attachment.',
+      'Routes follow connected reference triangle edges in rest-local gravity; rigid transforms and explicitly enabled morphs/skin vertex positions preserve attachment.',
       'Fixed neighboring pairs on one route merge only within their contact envelope; arbitrary all-pairs fluid interaction is not simulated.',
       'Attached ellipsoids stay outside their current face plane. Flight has a bounded outward launch and world gravity, without full body/ground collision simulation.',
       'Creation-time face masking and radius-aware accessory masks preserve clear regions without reseeding.',
       'World launches retain at most four cycles per route for pause/seek reuse. Reset and reattachment clear them; a cold seek uses the currently supplied pose, not an unavailable historical pose.',
-      'Fixed path/particle budgets do not adapt to later topology, skinning or large scale changes; morphs require explicit opt-in.',
+      'Fixed path/particle budgets do not adapt to later topology or large scale changes; morphs and skinning require explicit opt-in.',
     ] };
   group.userData.surfaceDew = { beads: mesh.count, budget, pairs: sources.length,
     pathPoints: sources.reduce((count, source) => count + source.path.length, 0),

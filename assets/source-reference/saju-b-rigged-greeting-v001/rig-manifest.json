@@ -1,0 +1,181 @@
+{
+  "version": "B-rig-v001",
+  "sourceSHA256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+  "rigGLBSHA256": "6f9354848e33c9335f3fcae6752f0ad4821c0829f704bdc9e8cd19ede29282ec",
+  "asset": "SaJu_B_Rigged_Greeting_v001.glb",
+  "sourceBinaryPrefixPreserved": true,
+  "sourceAccessorsPreserved": 34,
+  "sourceBufferViewsPreserved": 38,
+  "vertices": 33207,
+  "triangles": 62124,
+  "movingVertices": 8262,
+  "armVertices": 3022,
+  "maxWeightsPerVertex": 2,
+  "field": {
+    "weldedNodes": 31064,
+    "freeNodes": 4903,
+    "iterations": 283,
+    "relativeResidual": 9.331048506414841e-11
+  },
+  "bones": [
+    {
+      "name": "B_Rest",
+      "parent": -1,
+      "restPosition": [
+        0,
+        0,
+        0
+      ],
+      "worldPosition": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "B_RightShoulder_1",
+      "parent": 0,
+      "restPosition": [
+        0.47,
+        1.1,
+        0.1
+      ],
+      "worldPosition": [
+        0.47,
+        1.1,
+        0.1
+      ]
+    },
+    {
+      "name": "B_RightShoulder_2",
+      "parent": 0,
+      "restPosition": [
+        0.47,
+        1.1,
+        0.1
+      ],
+      "worldPosition": [
+        0.47,
+        1.1,
+        0.1
+      ]
+    },
+    {
+      "name": "B_RightShoulder_3",
+      "parent": 0,
+      "restPosition": [
+        0.47,
+        1.1,
+        0.1
+      ],
+      "worldPosition": [
+        0.47,
+        1.1,
+        0.1
+      ]
+    },
+    {
+      "name": "B_RightShoulder_4",
+      "parent": 0,
+      "restPosition": [
+        0.47,
+        1.1,
+        0.1
+      ],
+      "worldPosition": [
+        0.47,
+        1.1,
+        0.1
+      ]
+    },
+    {
+      "name": "B_RightShoulder_5",
+      "parent": 0,
+      "restPosition": [
+        0.47,
+        1.1,
+        0.1
+      ],
+      "worldPosition": [
+        0.47,
+        1.1,
+        0.1
+      ]
+    },
+    {
+      "name": "B_RightUpperArm",
+      "parent": 5,
+      "restPosition": [
+        0.0650969846612266,
+        -0.04064819209920145,
+        0.012448035690072995
+      ],
+      "worldPosition": [
+        0.5350969846612266,
+        1.0593518079007986,
+        0.112448035690073
+      ]
+    },
+    {
+      "name": "B_RightForearm",
+      "parent": 6,
+      "restPosition": [
+        0.06388781434909196,
+        -0.06279165247014284,
+        0.015987240948923592
+      ],
+      "worldPosition": [
+        0.5989847990103185,
+        0.9965601554306558,
+        0.1284352766389966
+      ]
+    },
+    {
+      "name": "B_RightWristSupport",
+      "parent": 7,
+      "restPosition": [
+        0.05336028707902862,
+        -0.071755655599124,
+        0.016932137548071213
+      ],
+      "worldPosition": [
+        0.6523450860893472,
+        0.9248044998315318,
+        0.1453674141870678
+      ]
+    },
+    {
+      "name": "B_RightWrist",
+      "parent": 8,
+      "restPosition": [
+        0.0433157957214072,
+        -0.07820787614159264,
+        0.017180796604363308
+      ],
+      "worldPosition": [
+        0.6956608818107544,
+        0.8465966236899392,
+        0.1625482107914311
+      ]
+    },
+    {
+      "name": "B_RightHand",
+      "parent": 9,
+      "restPosition": [
+        0.03508139974619218,
+        -0.08231654626695706,
+        0.016895564348166303
+      ],
+      "worldPosition": [
+        0.7307422815569465,
+        0.7642800774229821,
+        0.17944377513959742
+      ]
+    }
+  ],
+  "clips": [
+    "Gentle_wave_study",
+    "Rigged_three_wave_greeting_v001"
+  ],
+  "profileSHA256": "1ac6a8d22afd8ea59c9df6c64152a927b0458feaedbccc88602da2961e9ed45d"
+}

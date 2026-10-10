@@ -1,0 +1,465 @@
+{
+  "rigGLBSHA256": "6f9354848e33c9335f3fcae6752f0ad4821c0829f704bdc9e8cd19ede29282ec",
+  "sourceSHA256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+  "sourcePrefixBytes": 4281948,
+  "poses": [
+    {
+      "lift": 1,
+      "wrist": -1,
+      "positionSHA256": "4c3a4ac86ef01d798b3514500505fe3d7b8f6f946f9ef63484929b501f037404",
+      "detailReport": "/tmp/greeting-review-tmp-greeting-review-exported-rig-1--1-positions-audit.json",
+      "newSevereAdjacentFoldCount": 0,
+      "newStrictNoncoplanarIntersectionCount": 0,
+      "collisionCandidatePairs": 4896,
+      "minEdge": {
+        "triangle": 46030,
+        "vertexIds": [
+          21381,
+          21380
+        ],
+        "source": [
+          [
+            0.507296085357666,
+            0.8053650856018066,
+            0.17485815286636353
+          ],
+          [
+            0.5133164525032043,
+            0.7920130491256714,
+            0.1747339367866516
+          ]
+        ],
+        "posed": [
+          [
+            0.8155073687836913,
+            1.1444822449996888,
+            0.19069770087170837
+          ],
+          [
+            0.8191919765916877,
+            1.1464249846174197,
+            0.19146656947988697
+          ]
+        ],
+        "ratio": 0.2891884458544016,
+        "sourceLength": 0.014647085998982278
+      },
+      "maxEdge": {
+        "triangle": 16569,
+        "vertexIds": [
+          20611,
+          20610
+        ],
+        "source": [
+          [
+            0.43145641684532166,
+            0.6650131344795227,
+            0.006937820464372635
+          ],
+          [
+            0.42870819568634033,
+            0.6417254209518433,
+            0.0075121126137673855
+          ]
+        ],
+        "posed": [
+          [
+            0.6282715261485083,
+            0.7194250581628446,
+            -0.03212136687541457
+          ],
+          [
+            0.5882774162170177,
+            0.6743320752601405,
+            -0.026370979610713913
+          ]
+        ],
+        "ratio": 2.581275023886057,
+        "sourceLength": 0.023456345247262908
+      },
+      "minAreaRatio": 0.2748945382592457,
+      "trianglesBelowAreaRatio08": 0,
+      "materialCenterline": [
+        {
+          "uRange": [
+            0.35,
+            0.95
+          ],
+          "sourceLength": 0.3903030229922784,
+          "posedLength": 0.3935358854459534,
+          "lengthRatio": 1.0082829551995014
+        },
+        {
+          "uRange": [
+            0.4,
+            0.9
+          ],
+          "sourceLength": 0.3252592929051011,
+          "posedLength": 0.3268136531143961,
+          "lengthRatio": 1.0047788341277262
+        },
+        {
+          "uRange": [
+            0.7,
+            0.95
+          ],
+          "sourceLength": 0.1626482807965482,
+          "posedLength": 0.16279458895767057,
+          "lengthRatio": 1.0008995370895153
+        }
+      ],
+      "diameterRatioRange": [
+        0.9966481080462896,
+        1.0004799472403008
+      ],
+      "circumferenceRatioRange": [
+        0.9983141965181805,
+        1.0109756160382166
+      ]
+    },
+    {
+      "lift": 1,
+      "wrist": 0,
+      "positionSHA256": "4bac7a23ac5970dce8c91ffbbd24e5039a6468160a2735efe9b52ba7877ff80d",
+      "detailReport": "/tmp/greeting-review-tmp-greeting-review-exported-rig-1-0-positions-audit.json",
+      "newSevereAdjacentFoldCount": 0,
+      "newStrictNoncoplanarIntersectionCount": 0,
+      "collisionCandidatePairs": 4726,
+      "minEdge": {
+        "triangle": 43570,
+        "vertexIds": [
+          19437,
+          19433
+        ],
+        "source": [
+          [
+            0.3221966028213501,
+            0.9227939248085022,
+            0.21134838461875916
+          ],
+          [
+            0.31412646174430847,
+            0.971213161945343,
+            0.21563869714736938
+          ]
+        ],
+        "posed": [
+          [
+            0.5350519920002528,
+            0.8885927912314089,
+            0.170618066318433
+          ],
+          [
+            0.5319642258356678,
+            0.9168801235806276,
+            0.17356569093034366
+          ]
+        ],
+        "ratio": 0.5805789554770604,
+        "sourceLength": 0.049274298407081654
+      },
+      "maxEdge": {
+        "triangle": 16569,
+        "vertexIds": [
+          20611,
+          20610
+        ],
+        "source": [
+          [
+            0.43145641684532166,
+            0.6650131344795227,
+            0.006937820464372635
+          ],
+          [
+            0.42870819568634033,
+            0.6417254209518433,
+            0.0075121126137673855
+          ]
+        ],
+        "posed": [
+          [
+            0.6282715261485083,
+            0.7194250581628446,
+            -0.03212136687541457
+          ],
+          [
+            0.5882774162170177,
+            0.6743320752601405,
+            -0.026370979610713913
+          ]
+        ],
+        "ratio": 2.581275023886057,
+        "sourceLength": 0.023456345247262908
+      },
+      "minAreaRatio": 0.5228505335267294,
+      "trianglesBelowAreaRatio08": 0,
+      "materialCenterline": [
+        {
+          "uRange": [
+            0.35,
+            0.95
+          ],
+          "sourceLength": 0.3903030229922784,
+          "posedLength": 0.3917452293143109,
+          "lengthRatio": 1.0036950939067182
+        },
+        {
+          "uRange": [
+            0.4,
+            0.9
+          ],
+          "sourceLength": 0.3252592929051011,
+          "posedLength": 0.3252593238482309,
+          "lengthRatio": 1.0000000951337302
+        },
+        {
+          "uRange": [
+            0.7,
+            0.95
+          ],
+          "sourceLength": 0.1626482807965482,
+          "posedLength": 0.16264829763061667,
+          "lengthRatio": 1.0000001034998243
+        }
+      ],
+      "diameterRatioRange": [
+        0.9980562644995636,
+        1.0005331045169747
+      ],
+      "circumferenceRatioRange": [
+        0.9999999813362777,
+        1.010465988950046
+      ]
+    },
+    {
+      "lift": 1,
+      "wrist": 1,
+      "positionSHA256": "7d8a9af24c622ef9c6ae844a896a619852c4604a0cf0bcfbaaf3534e2faef28d",
+      "detailReport": "/tmp/greeting-review-tmp-greeting-review-exported-rig-1-1-positions-audit.json",
+      "newSevereAdjacentFoldCount": 0,
+      "newStrictNoncoplanarIntersectionCount": 0,
+      "collisionCandidatePairs": 5088,
+      "minEdge": {
+        "triangle": 14065,
+        "vertexIds": [
+          24589,
+          24562
+        ],
+        "source": [
+          [
+            0.8425650596618652,
+            0.9695483446121216,
+            0.13355085253715515
+          ],
+          [
+            0.8380495309829712,
+            0.9772635698318481,
+            0.13298611342906952
+          ]
+        ],
+        "posed": [
+          [
+            0.6386323023294848,
+            1.4677048430636734,
+            0.2958413083676862
+          ],
+          [
+            0.6349546011379781,
+            1.465044293104063,
+            0.2939775689783376
+          ]
+        ],
+        "ratio": 0.547807288831983,
+        "sourceLength": 0.00895732268600505
+      },
+      "maxEdge": {
+        "triangle": 16569,
+        "vertexIds": [
+          20611,
+          20610
+        ],
+        "source": [
+          [
+            0.43145641684532166,
+            0.6650131344795227,
+            0.006937820464372635
+          ],
+          [
+            0.42870819568634033,
+            0.6417254209518433,
+            0.0075121126137673855
+          ]
+        ],
+        "posed": [
+          [
+            0.6282715261485083,
+            0.7194250581628446,
+            -0.03212136687541457
+          ],
+          [
+            0.5882774162170177,
+            0.6743320752601405,
+            -0.026370979610713913
+          ]
+        ],
+        "ratio": 2.581275023886057,
+        "sourceLength": 0.023456345247262908
+      },
+      "minAreaRatio": 0.5228505335267294,
+      "trianglesBelowAreaRatio08": 0,
+      "materialCenterline": [
+        {
+          "uRange": [
+            0.35,
+            0.95
+          ],
+          "sourceLength": 0.3903030229922784,
+          "posedLength": 0.39185006135774886,
+          "lengthRatio": 1.0039636853273899
+        },
+        {
+          "uRange": [
+            0.4,
+            0.9
+          ],
+          "sourceLength": 0.3252592929051011,
+          "posedLength": 0.32542300474807084,
+          "lengthRatio": 1.0005033271809316
+        },
+        {
+          "uRange": [
+            0.7,
+            0.95
+          ],
+          "sourceLength": 0.1626482807965482,
+          "posedLength": 0.1625358354803706,
+          "lengthRatio": 0.9993086596696448
+        }
+      ],
+      "diameterRatioRange": [
+        0.9951253872965525,
+        1.0005771976201956
+      ],
+      "circumferenceRatioRange": [
+        0.9977778914239211,
+        1.0099884476634076
+      ]
+    },
+    {
+      "lift": 0.5,
+      "wrist": 0,
+      "positionSHA256": "7bb4976b3e726ec7825a4a5c678efcf169ddf8ad89ad7bb6e22b1b38c2095527",
+      "detailReport": "/tmp/greeting-review-tmp-greeting-review-exported-rig-0.5-0-positions-audit.json",
+      "newSevereAdjacentFoldCount": 0,
+      "newStrictNoncoplanarIntersectionCount": 0,
+      "collisionCandidatePairs": 3234,
+      "minEdge": {
+        "triangle": 45749,
+        "vertexIds": [
+          21130,
+          21139
+        ],
+        "source": [
+          [
+            0.5308258533477783,
+            1.4936251640319824,
+            0.26656314730644226
+          ],
+          [
+            0.5413820147514343,
+            1.4795011281967163,
+            0.25112438201904297
+          ]
+        ],
+        "posed": [
+          [
+            0.523983170517007,
+            1.4941515124069802,
+            0.26907591566311184
+          ],
+          [
+            0.5249745146562126,
+            1.4816351274212514,
+            0.25722850056007107
+          ]
+        ],
+        "ratio": 0.7365725036659656,
+        "sourceLength": 0.023436646634177924
+      },
+      "maxEdge": {
+        "triangle": 40831,
+        "vertexIds": [
+          17257,
+          17260
+        ],
+        "source": [
+          [
+            0.06299920380115509,
+            0.8212906718254089,
+            0.3273705542087555
+          ],
+          [
+            0.0775696411728859,
+            0.8212710618972778,
+            0.3253118693828583
+          ]
+        ],
+        "posed": [
+          [
+            0.06299920380115526,
+            0.821290671825409,
+            0.3273705542087555
+          ],
+          [
+            0.08517140021749808,
+            0.8134050378326648,
+            0.3236336182443703
+          ]
+        ],
+        "ratio": 1.6192537528297126,
+        "sourceLength": 0.014715169484759271
+      },
+      "minAreaRatio": 0.7010124424685257,
+      "trianglesBelowAreaRatio08": 0,
+      "materialCenterline": [
+        {
+          "uRange": [
+            0.35,
+            0.95
+          ],
+          "sourceLength": 0.3903030229922784,
+          "posedLength": 0.3908915502068531,
+          "lengthRatio": 1.001507872550058
+        },
+        {
+          "uRange": [
+            0.4,
+            0.9
+          ],
+          "sourceLength": 0.3252592929051011,
+          "posedLength": 0.32525931109031525,
+          "lengthRatio": 1.000000055909899
+        },
+        {
+          "uRange": [
+            0.7,
+            0.95
+          ],
+          "sourceLength": 0.1626482807965482,
+          "posedLength": 0.16264829074064985,
+          "lengthRatio": 1.0000000611386828
+        }
+      ],
+      "diameterRatioRange": [
+        0.9999998113427001,
+        1.0006344938383989
+      ],
+      "circumferenceRatioRange": [
+        0.9999999787801768,
+        1.0028049298498076
+      ]
+    }
+  ],
+  "collisionMethod": "CPU AABB hierarchy + strict noncoplanar edge-plane interior intersection; excludes shared source-vertex neighbors and pre-existing source intersections. Does not classify coplanar overlap or touching-only contact.",
+  "status": "PASS"
+}

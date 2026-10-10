@@ -1,0 +1,22 @@
+✔ empty schema, slot exclusivity, wrong-slot recovery and six item definitions (1.565759ms)
+✔ version1 browser storage is per stem, repairs missing fields and rejects corrupt/unknown versions (1.965136ms)
+✔ real B is completely unequipped by default; geometry, eyes, UV and depth are preserved (58.827319ms)
+✔ low: real triangle attachment, rotation/depth, penetration and resource budgets (10186.625852ms)
+✔ high: real triangle attachment, rotation/depth, penetration and resource budgets (6796.091414ms)
+✔ support follows a changed actual triangle without moving source vertices during normal operation (14.961161ms)
+✔ triangle projection index matches native raycasting on real front/back/morph poses (1418.771122ms)
+✔ 갑자: localized exclusions follow idle/wave and restore exact stable instance poses (634.326813ms)
+✔ 을축: localized exclusions follow idle/wave and restore exact stable instance poses (379.884307ms)
+✔ 계유: localized exclusions follow idle/wave and restore exact stable instance poses (391.591772ms)
+✔ actual connected vines hide only overlapping points and restore their fixed identities (220.736923ms)
+✔ actual flame attachment exclusions preserve particle identities and restore original visibility (498.885374ms)
+✔ ten production stems: accessories and exclusion regions follow actual raised-arm triangles (222912.737502ms)
+{"status":"PASS","checks":["validated four-slot schema; two face choices are exclusive","schema v1 recovery, independent ten-stem outfits, denied storage remains usable; no prior fashion schema exists","default appearance unchanged; original real B positions/normals/UV/index and eyes preserved","low: six items, four-item combination, transformed triangle supports, sampled body clearance, resource disposal once","high: six items, four-item combination, transformed triangle supports, sampled body clearance, resource disposal once","live triangle binding follows a controlled source-pose change; original bytes restored in the test","224 real front/back ray comparisons include morph snapshots, rotation/depth and scale; no radius approximation","갑자: motion-root regions, local masks, restorable stable seeds and resources","을축: motion-root regions, local masks, restorable stable seeds and resources","계유: motion-root regions, local masks, restorable stable seeds and resources","actual connected vine overlap probe: local hide, clear/replace and stable segment/leaf IDs; non-overlapping outfit points stay visible","actual 丙/丁 flame-source visibility masks restore particle age/seed data and preserve flight matrices; flight collisions are not simulated","ten production stems: actual idle and raised hand, live triangle normals/supports, current local regions and sampled clearance; reset keeps clothing and restores all neutral controls"],"budgets":[{"quality":"low","config":{"head":"sprout-pin","face":"round-sunglasses","neck":"ribbon-bow","back":"leaf-brooch"},"draws":21,"triangles":3204},{"quality":"low","config":{"head":"crescent-pin","face":"fitted-mask","neck":"ribbon-bow","back":"leaf-brooch"},"draws":18,"triangles":3200},{"quality":"high","config":{"head":"sprout-pin","face":"round-sunglasses","neck":"ribbon-bow","back":"leaf-brooch"},"draws":21,"triangles":9156},{"quality":"high","config":{"head":"crescent-pin","face":"fitted-mask","neck":"ribbon-bow","back":"leaf-brooch"},"draws":18,"triangles":8952}]}
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 243543.123325

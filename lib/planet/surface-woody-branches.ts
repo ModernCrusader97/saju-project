@@ -113,14 +113,14 @@ function branchCurves(variant: number): THREE.Curve<THREE.Vector3>[] {
   return curves;
 }
 export function createSurfaceWoodyBranches(options: SurfaceAccentOptions): SurfaceStemAccents {
-  const sampler = new MeshSurface(options.meshes, { allowMorphTargets: options.allowMorphTargets });
+  const sampler = new MeshSurface(options.meshes, { allowMorphTargets: options.allowMorphTargets, allowSkinning: options.allowSkinning });
   const size = sampler.bounds.getSize(new THREE.Vector3()), unit = options.detailScale ?? Math.min(size.x, size.y, size.z) * .5;
   if (!Number.isFinite(unit) || unit <= 0) throw new RangeError('detailScale must be positive.');
   const high = options.quality !== 'low', desired = high ? 44 : 30, group = new THREE.Group(); group.name = 'SurfaceStemAccents_甲';
   const prototypes = Array.from({ length: 4 }, (_, variant) => branchCurves(variant));
   const anchors: BranchAnchor[] = [], worldPoints: THREE.Vector3[] = [];
   const identity = new THREE.Group(), faceExcluded = createSurfaceFaceGuard(options.meshes, Math.max(unit * .15, .08));
-  let collisionQuery: ReturnType<typeof createBodyCollisionQuery> | undefined = createBodyCollisionQuery(options.meshes, options.allowMorphTargets);
+  let collisionQuery: ReturnType<typeof createBodyCollisionQuery> | undefined = createBodyCollisionQuery(options.meshes, options.allowMorphTargets || options.allowSkinning);
   const edge = new THREE.Vector3(), a = new THREE.Vector3(), b = new THREE.Vector3(), tangent = new THREE.Vector3(), binormal = new THREE.Vector3();
   const frame = new THREE.Matrix4(), worldMatrix = new THREE.Matrix4(), worldQuaternion = new THREE.Quaternion(), spin = new THREE.Quaternion();
   const rootWorld = new THREE.Vector3(), normalWorld = new THREE.Vector3(), curvePoint = new THREE.Vector3(), previous = new THREE.Vector3(), delta = new THREE.Vector3();
@@ -129,7 +129,7 @@ export function createSurfaceWoodyBranches(options: SurfaceAccentOptions): Surfa
     const mesh = anchor.mesh, index = mesh.geometry.index, position = mesh.geometry.getAttribute('position');
     const vertex = (offset: number, out: THREE.Vector3) => {
       const id = index ? index.getX(anchor.triangle * 3 + offset) : anchor.triangle * 3 + offset;
-      if (options.allowMorphTargets) mesh.getVertexPosition(id, out); else out.fromBufferAttribute(position, id);
+      if (options.allowMorphTargets || options.allowSkinning) mesh.getVertexPosition(id, out); else out.fromBufferAttribute(position, id);
     };
     vertex(0, a); vertex(1, b); edge.subVectors(b, a).transformDirection(mesh.matrixWorld);
     tangent.copy(edge).addScaledVector(normal, -edge.dot(normal)).normalize();

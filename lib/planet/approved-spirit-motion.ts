@@ -1,5 +1,6 @@
 import * as THREE from 'three';
-import { createApprovedSpiritArmControls } from './approved-spirit-arm-controls';
+import { createApprovedSpiritRigControls } from './approved-spirit-rig-controls';
+import { APPROVED_SPIRIT_RIG_PROFILE as rigProfile, rigGreetingPose } from './approved-spirit-rig-profile.mjs';
 
 // Retained for QA of the original limited pose study, which stays neutral in the
 // raised greeting. Larger source weights compress the original wrist triangles.
@@ -26,24 +27,15 @@ const STEM_TEMPO: Readonly<Record<string, number>> = {
   甲: 1.04, 乙: 1.12, 丙: .93, 丁: 1.01, 戊: 1.15,
   己: 1.08, 庚: .98, 辛: 1.03, 壬: 1.11, 癸: 1.17,
 };
-const smooth = (value: number) => value * value * (3 - 2 * value);
 // Reduce the time before multiplication so even very large finite times stay finite.
 const phase = (time: number, period: number) => (time % period) / period * Math.PI * 2;
-
-function waveEnvelope(progress: number): number {
-  if (progress <= 0 || progress >= 1) return 0;
-  const ease = (x: number) => x * x * x * (x * (x * 6 - 15) + 10);
-  if (progress < .25) return ease(progress / .25);
-  if (progress <= .75) return 1;
-  return 1 - ease((progress - .75) / .25);
-}
 
 /** Pass an identity child of avatarPivot containing the original body, face and
  * every attached effect. Display placement/depth and user rotation stay outside
  * this owned child. stemKey is the mapped 甲…癸 key, not the Korean day label.
  * update uses absolute paused/playback time; it never edits
- * original vertex, UV, normal, index or morph-target attributes. Owned derived
- * morph controls use the same Mesh.getVertexPosition and native shadow path. */
+ * original vertex, UV, normal, index or morph-target attributes. The authored
+ * skeleton uses the same Mesh.getVertexPosition and native shadow path. */
 export function createApprovedSpiritMotion(
   motionRoot: THREE.Object3D, body: THREE.Mesh, stemKey: string,
 ): ApprovedSpiritMotion {
@@ -52,14 +44,14 @@ export function createApprovedSpiritMotion(
   const position = body.geometry.getAttribute('position');
   const waveTarget = waveIndex === undefined ? undefined : body.geometry.morphAttributes.position?.[waveIndex];
   if (waveIndex === undefined || !sourceInfluences || !position || !waveTarget || waveTarget.count !== position.count ||
-    (body as THREE.SkinnedMesh).isSkinnedMesh || (body as THREE.InstancedMesh).isInstancedMesh) {
-    throw new Error('Approved motion requires the original rigid B Gentle_wave_pose target.');
+    !(body as THREE.SkinnedMesh).isSkinnedMesh || (body as THREE.InstancedMesh).isInstancedMesh) {
+    throw new Error('Approved motion requires the preserved B morph and the separately authored skin rig.');
   }
   if (sourceInfluences.some(weight => weight !== 0)) throw new Error('Approved motion starts from neutral source morphs.');
   let ancestor: THREE.Object3D | null = body;
   while (ancestor && ancestor !== motionRoot) ancestor = ancestor.parent;
   if (!ancestor) throw new Error('The original B body must belong to the owned motion root.');
-  const arm = createApprovedSpiritArmControls(body);
+  const arm = createApprovedSpiritRigControls(body);
   const influences = body.morphTargetInfluences!;
 
   const restPosition = motionRoot.position.clone(), restQuaternion = motionRoot.quaternion.clone();
@@ -78,7 +70,7 @@ export function createApprovedSpiritMotion(
     face.eyeY = faces.find(other => other.kind === 'eye' && other.object.name.endsWith(side))?.position.y ?? face.position.y;
   }
 
-  // Only a setup scan touches the complete mesh. Derived arm controls retain the
+  // Only a setup scan touches the complete mesh. The rest-bone sole weights retain the
   // soles. A .10 band contains 1,577 sole candidates; CPU QA checks their minimum
   // against all 33,207 vertices over the greeting's allowed roll/scale poses.
   motionRoot.updateWorldMatrix(true, true);
@@ -102,10 +94,10 @@ export function createApprovedSpiritMotion(
     soleValues.push(point.x, point.y, point.z, delta.x, delta.y, delta.z);
   }
   const soles = new Float64Array(soleValues);
-  const tempo = STEM_TEMPO[stemKey] ?? 1, duration = 3.6 * tempo, tapBlinkDuration = 2.4 * tempo * .2;
+  const tempo = STEM_TEMPO[stemKey] ?? 1, duration = rigProfile.duration * tempo, tapBlinkDuration = 2.4 * tempo * .2;
   let currentTime = 0, reactionStart = 0, reacting = false, queued = false, disposed = false;
   const previousRootDiagnostic = motionRoot.userData.approvedSpiritGreeting, previousBodyDiagnostic = body.userData.approvedSpiritGreeting;
-  const greeting = { version: 'raised-hand-wave-v1', stage: 'idle', duration, progress: 0, armLift: 0, wrist: 0,
+  const greeting = { version: 'rigged-three-wave-v1', stage: 'idle', duration, progress: 0, armLift: 0, wrist: 0,
     cycles: 3, queued: false, sourceWaveIndex: waveIndex, sourceWaveWeight: 0,
     controlIndices: arm.controlIndices, controlWeights: arm.controlWeights, handVertexIDs: arm.handVertexIDs, field: arm.field };
   motionRoot.userData.approvedSpiritGreeting = body.userData.approvedSpiritGreeting = greeting;
@@ -117,7 +109,7 @@ export function createApprovedSpiritMotion(
     }
     for (let i = 0; i < restMorphs.length; i++) influences[i] = restMorphs[i];
     arm.setPose(0, 0); greeting.stage = 'idle'; greeting.progress = greeting.armLift = greeting.wrist = 0; greeting.queued = false;
-    motionRoot.updateMatrix();
+    motionRoot.updateWorldMatrix(true,false); motionRoot.updateMatrixWorld(true); (body as THREE.SkinnedMesh).skeleton.update();
   };
 
   const update = (time: number) => {
@@ -134,17 +126,12 @@ export function createApprovedSpiritMotion(
     }
     const elapsed = reacting ? currentTime - reactionStart : -1;
     const progress = elapsed >= 0 ? elapsed / duration : 0;
-    const response = elapsed >= 0 ? waveEnvelope(progress) : 0;
-    let wrist = 0;
-    if (elapsed >= 0 && progress >= .25 && progress <= .75) {
-      const stage = (progress - .25) / .50, taper = smooth(Math.min(1, stage / .08)) * smooth(Math.min(1, (1 - stage) / .08));
-      wrist = Math.sin(stage * Math.PI * 6) * taper;
-    }
-    // The source pose study remains neutral. Increasing its old cap would fold
-    // the wrist; two adjacent derived pose controls are sufficient at any time.
+    const rigPose = rigGreetingPose(elapsed >= 0 ? progress : -1), response = rigPose.lift, wrist = rigPose.wrist;
+    // The source pose study remains neutral. Shoulder/arm and wrist bones own
+    // the full greeting, while the approved shape/UV/morph buffers stay intact.
     influences[waveIndex] = 0;
     arm.setPose(response, wrist);
-    greeting.stage = elapsed < 0 ? 'idle' : progress < .25 ? 'raise' : progress <= .75 ? 'wave' : 'lower';
+    greeting.stage = rigPose.stage;
     greeting.progress = progress; greeting.armLift = response; greeting.wrist = wrist; greeting.queued = queued;
     const weight = 0;
 
@@ -176,9 +163,14 @@ export function createApprovedSpiritMotion(
       } else if (face.kind === 'brow') face.object.position.y = face.position.y + .006 * response;
       else face.object.scale.x = face.scale.x * (1 + .012 * response);
     }
-    motionRoot.updateMatrix();
+    // Refresh both bones and SkinnedMesh.bindMatrixInverse before CPU triangle
+    // attachments/collisions run. Native rendering uses the same skeleton.
+    motionRoot.updateWorldMatrix(true,false); motionRoot.updateMatrixWorld(true); (body as THREE.SkinnedMesh).skeleton.update();
   };
 
+  // The loader creates surface/fashion caches immediately after this factory.
+  // Establish attached bind matrices at the presented depth before those reads.
+  restore();
   return {
     update,
     triggerReaction() {

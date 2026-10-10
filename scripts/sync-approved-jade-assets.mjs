@@ -31,6 +31,15 @@ mkdirSync(output, { recursive: true });
 for (const [relative, target] of files) copyFileSync(path.join(source, relative), path.join(output, target));
 console.log('Approved jade v002: 4 runtime assets copied after SHA-256 verification.');
 
+// New skin derivative is separate from body.glb and the original v002 package.
+const rigSource = path.join(root,'assets/source-reference/saju-b-rigged-greeting-v001');
+const rigName = 'SaJu_B_Rigged_Greeting_v001.glb';
+const rigHash = readFileSync(path.join(rigSource,'SHA256SUMS.txt'),'utf8').trim().match(/^([a-f0-9]{64})\s+SaJu_B_Rigged_Greeting_v001\.glb$/)?.[1];
+if (!rigHash || createHash('sha256').update(readFileSync(path.join(rigSource,rigName))).digest('hex') !== rigHash) throw new Error('Approved B rig derivative checksum mismatch.');
+const rigOutput = path.join(root,'public/spirits/jade-rig-v001'); mkdirSync(rigOutput,{recursive:true});
+copyFileSync(path.join(rigSource,rigName),path.join(rigOutput,'body.glb'));
+console.log('Approved B rig v001: separate skin asset copied after SHA-256 verification.');
+
 // The README Python restoration remains available. Clean portable builds also
 // restore the same preserved GLB using Node's gzip and the identical two hashes.
 const archive = readFileSync(path.join(root, 'preservation-archives/porcelain-hero-blink-v1.glb.gz'));

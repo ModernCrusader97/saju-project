@@ -10,8 +10,11 @@ export function disposeMaterial(material: THREE.Material): void {
 export function disposeObject(root: THREE.Object3D): void {
   const geometries = new Set<THREE.BufferGeometry>();
   const materials = new Set<THREE.Material>();
+  const skeletons = new Set<THREE.Skeleton>();
   root.traverse(object => {
     const drawable = object as THREE.Mesh;
+    const skin = object as THREE.SkinnedMesh;
+    if (skin.isSkinnedMesh && !skeletons.has(skin.skeleton)) { skeletons.add(skin.skeleton); skin.skeleton.dispose(); }
     if (drawable.geometry && !geometries.has(drawable.geometry)) { geometries.add(drawable.geometry); drawable.geometry.dispose(); }
     for (const material of Array.isArray(drawable.material) ? drawable.material : drawable.material ? [drawable.material] : []) {
       if (!materials.has(material)) { materials.add(material); disposeMaterial(material); }

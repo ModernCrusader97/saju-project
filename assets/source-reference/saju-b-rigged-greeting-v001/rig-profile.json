@@ -1,0 +1,22 @@
+{
+  "version": "B-rig-v001",
+  "sourceSHA256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+  "sourceVertices": 33207,
+  "socketPivot": [0.47, 1.10, 0.10],
+  "socketSupports": 5,
+  "armStations": [0.35, 0.49, 0.63, 0.77, 0.91],
+  "armNames": ["B_RightUpperArm", "B_RightForearm", "B_RightWristSupport", "B_RightWrist", "B_RightHand"],
+  "waveFractions": [0, 0.16, 0.47, 0.80, 1],
+  "shoulderRadians": 1.5707963267948966,
+  "forwardRadians": 0.4363323129985824,
+  "clavicleTravel": [0.10, 0.07, 0.02],
+  "wristRadians": 0.55,
+  "duration": 3.9,
+  "raiseEnd": 0.23,
+  "holdEnd": 0.30,
+  "waveEnd": 0.78,
+  "waveCycles": 3,
+  "guide": [[0.34,1.17,0.08],[0.58,1.08,0.11],[0.68,0.92,0.15],[0.75,0.71,0.19]],
+  "freeRegion": {"minX":0.07,"minY":0.45,"maxY":1.50,"lowerFadeSpan":0.30},
+  "armRegion": {"minX":0.36,"minU":0.35,"maxRadius":0.21}
+}

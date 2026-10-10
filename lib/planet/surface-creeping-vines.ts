@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import {hasMovingSkinVertex} from './skinned-surface-state';
 import { seeded, type SurfaceAnchor, type SurfacePose } from './mesh-surface';
 import { SurfaceTriangleWalker } from './surface-triangle-walk';
 import { isSurfaceAttachmentExcluded } from './surface-attachment-exclusions';
@@ -39,7 +40,7 @@ const smooth = (value: number, from: number, to: number) => {
 /** Short connected crawls. Rest-topology edges select stable IDs; the resolved
  * triangle positions/normals follow each current rigid or opted-in morph pose. */
 export function createSurfaceCreepingVines(options: SurfaceAccentOptions): SurfaceStemAccents {
-  const walker = new SurfaceTriangleWalker(options.meshes, { allowMorphTargets: options.allowMorphTargets });
+  const walker = new SurfaceTriangleWalker(options.meshes, { allowMorphTargets: options.allowMorphTargets, allowSkinning: options.allowSkinning });
   const sampler = walker.sampler, size = sampler.bounds.getSize(new THREE.Vector3());
   const unit = options.detailScale ?? Math.min(size.x, size.y, size.z) * .5;
   if (!Number.isFinite(unit) || unit <= 0) throw new RangeError('detailScale must be positive.');
@@ -47,13 +48,17 @@ export function createSurfaceCreepingVines(options: SurfaceAccentOptions): Surfa
   const group = new THREE.Group(); group.name = 'SurfaceStemAccents_乙';
   const identity = new THREE.Group(), faceExcluded = createSurfaceFaceGuard(options.meshes, Math.max(unit * .15, .08));
   const vines: Vine[] = [], roots: THREE.Vector3[] = [];
-  const hasMorphSurface = options.allowMorphTargets && options.meshes.some(mesh => mesh.geometry.morphAttributes.position?.length);
+  const hasMorphSurface = (options.allowMorphTargets && options.meshes.some(mesh => mesh.geometry.morphAttributes.position?.length)) ||
+    (options.allowSkinning && options.meshes.some(mesh => (mesh as THREE.SkinnedMesh).isSkinnedMesh));
   const morphDelta = new THREE.Vector3(), morphVertex = new THREE.Vector3(), baseVertex = new THREE.Vector3();
   // Reserve one stable crawl on an existing moving surface when morphs are
   // enabled. Remaining roots keep the same area-weighted selection; accessory
   // changes and animation never resample any path.
   function hasMovingMorph(anchor: SurfaceAnchor): boolean {
     const mesh = anchor.mesh, position = mesh.geometry.getAttribute('position'), index = mesh.geometry.index;
+    if (options.allowSkinning) for (let corner = 0; corner < 3; corner++) {
+      if (hasMovingSkinVertex(mesh,index ? index.getX(anchor.triangle * 3 + corner) : anchor.triangle * 3 + corner)) return true;
+    }
     return (mesh.geometry.morphAttributes.position ?? []).some(attribute => {
       morphDelta.set(0, 0, 0);
       for (let i = 0; i < 3; i++) {
@@ -133,7 +138,7 @@ export function createSurfaceCreepingVines(options: SurfaceAccentOptions): Surfa
 
   const diagnostics = { supported: true, mode: 'connected-triangle-short-creeping-vines', anchorCount: vines.length,
     limitations: ['Short edge-connected crawls only; this does not wrap vines around the entire body.',
-      options.allowMorphTargets ? 'Rest-topology paths resolve actual posed morph triangles each frame; skinned surfaces are unsupported.' : 'Neutral rigid topology only; skinned and active morph surfaces are unsupported.',
+      options.allowMorphTargets || options.allowSkinning ? 'Rest-topology paths resolve opted-in morph/skinned triangle positions and normals each frame.' : 'Neutral rigid topology only; skinned and active morph surfaces require explicit opt-in.',
       'Tube offsets clear their incident triangle planes; unrelated moving parts have no physical collision simulation.'] };
   const attachment = {
     pathCount: vines.length, leafCount: vines.length * 3, segmentCount, jointCount, maxLeafRootToStemDistance: 0,

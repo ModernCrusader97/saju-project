@@ -55,7 +55,7 @@ export function attachJadeEvolution(material: THREE.MeshPhysicalMaterial, atlas:
 /** New rebuild from preserved sources: B geometry stays intact, the day stem
  * selects its study recipe, and 己 uses the approved evolving jade. */
 export async function loadApprovedSpirit(dayKey: string, monthKey: string, quality: SpiritQuality): Promise<ElementalSpiritInstance> {
-  const gltf = await new GLTFLoader().loadAsync(`${ASSET_ROOT}/body.glb`);
+  const gltf = await new GLTFLoader().loadAsync('/spirits/jade-rig-v001/body.glb');
   const group = new THREE.Group();
   group.name = `saju-B-avatar:${dayKey}`;
   const model = gltf.scene;
@@ -73,7 +73,7 @@ export async function loadApprovedSpirit(dayKey: string, monthKey: string, quali
     const mesh = object as THREE.Mesh;
     if (mesh.isMesh && mesh.geometry.getAttribute('position')?.count === 33207) body = mesh;
   });
-  if (!body || (body as THREE.SkinnedMesh).isSkinnedMesh || body.geometry.getAttribute('position').count !== 33207) {
+  if (!body || !(body as THREE.SkinnedMesh).isSkinnedMesh || body.geometry.getAttribute('position').count !== 33207) {
     disposeObject(group);
     throw new Error('Approved B body does not match the verified undeformed adapter.');
   }
@@ -143,7 +143,7 @@ export async function loadApprovedSpirit(dayKey: string, monthKey: string, quali
 
     // Install owned arm controls before effects cache the moving triangle set.
     motion = createApprovedSpiritMotion(motionRoot, body, stem);
-    effects = createSurfaceStemAccents(stem, { meshes: [body], quality, allowMorphTargets: true });
+    effects = createSurfaceStemAccents(stem, { meshes: [body], quality, allowMorphTargets: true, allowSkinning: true });
     const features = effects.group;
     features.userData.surfaceAccentDiagnostics = effects.diagnostics;
     motionRoot.add(features);

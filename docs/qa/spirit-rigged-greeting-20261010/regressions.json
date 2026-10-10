@@ -1,0 +1,122 @@
+{
+  "status": "PASS",
+  "results": [
+    {
+      "name": "approved-jade-glb-cpu",
+      "status": "PASS",
+      "exitCode": 0,
+      "testCounts": [],
+      "log": "/tmp/saju-rig-regression-approved-jade-glb-cpu.log"
+    },
+    {
+      "name": "surface-triangle-walk",
+      "status": "PASS",
+      "exitCode": 0,
+      "testCounts": [
+        6,
+        6
+      ],
+      "log": "/tmp/saju-rig-regression-surface-triangle-walk.log"
+    },
+    {
+      "name": "surface-vegetation",
+      "status": "PASS",
+      "exitCode": 0,
+      "testCounts": [],
+      "log": "/tmp/saju-rig-regression-surface-vegetation.log"
+    },
+    {
+      "name": "surface-sliding-dew",
+      "status": "PASS",
+      "exitCode": 0,
+      "testCounts": [
+        11,
+        11
+      ],
+      "log": "/tmp/saju-rig-regression-surface-sliding-dew.log"
+    },
+    {
+      "name": "surface-fissure-sand",
+      "status": "PASS",
+      "exitCode": 0,
+      "testCounts": [
+        9,
+        9
+      ],
+      "log": "/tmp/saju-rig-regression-surface-fissure-sand.log"
+    },
+    {
+      "name": "affine-instance-normals",
+      "status": "PASS",
+      "exitCode": 0,
+      "testCounts": [],
+      "log": "/tmp/saju-rig-regression-affine-instance-normals.log"
+    },
+    {
+      "name": "spirit-water-wave-cpu",
+      "status": "PASS",
+      "exitCode": 0,
+      "testCounts": [
+        4,
+        4
+      ],
+      "log": "/tmp/saju-rig-regression-spirit-water-wave-cpu.log"
+    },
+    {
+      "name": "spirit-coordinate-density",
+      "status": "PASS",
+      "exitCode": 0,
+      "testCounts": [],
+      "log": "/tmp/saju-rig-regression-spirit-coordinate-density.log"
+    },
+    {
+      "name": "verify-approved-assets",
+      "status": "PASS",
+      "exitCode": 0,
+      "testCounts": [],
+      "log": "/tmp/saju-rig-regression-verify-approved-assets.log"
+    },
+    {
+      "name": "zodiac-pet-loader",
+      "status": "PASS",
+      "exitCode": 0,
+      "testCounts": [
+        8,
+        8
+      ],
+      "log": "/tmp/saju-rig-regression-zodiac-pet-loader.log"
+    },
+    {
+      "name": "visibility-loop",
+      "status": "PASS",
+      "exitCode": 0,
+      "testCounts": [],
+      "log": "/tmp/saju-rig-regression-visibility-loop.log"
+    },
+    {
+      "name": "galaxy-entry-motion",
+      "status": "PASS",
+      "exitCode": 0,
+      "testCounts": [],
+      "log": "/tmp/saju-rig-regression-galaxy-entry-motion.log",
+      "initialExitCode": 1,
+      "environmentFix": "Existing workspace jsdom supplied through SAJU_QA_JSDOM_PATH; dependency lock unchanged."
+    },
+    {
+      "name": "galaxy-orbit-anchor",
+      "status": "PASS",
+      "exitCode": 0,
+      "testCounts": [],
+      "log": "/tmp/saju-rig-regression-galaxy-orbit-anchor.log"
+    },
+    {
+      "name": "galaxy-owner-effects",
+      "status": "PASS",
+      "exitCode": 0,
+      "testCounts": [],
+      "log": "/tmp/saju-rig-regression-galaxy-owner-effects.log",
+      "initialExitCode": 1,
+      "environmentFix": "Existing workspace jsdom supplied through SAJU_QA_JSDOM_PATH; dependency lock unchanged."
+    }
+  ]
+}

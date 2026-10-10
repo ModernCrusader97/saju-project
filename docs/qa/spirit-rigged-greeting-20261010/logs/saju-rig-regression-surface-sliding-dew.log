@@ -1,0 +1,19 @@
+✔ dew contact actually slides downward rather than changing only bead radius (37.474348ms)
+✔ attached beads stay outside their actual face plane through growth and travel (23.05663ms)
+✔ absolute time repeats after reverse seek and reset with a visible death and rebirth (43.510132ms)
+✔ quality levels have fixed geometry budgets and isolated transparent material (4.023963ms)
+✔ world normal and plane clearance survive paused nested nonuniform rotation (2.004731ms)
+✔ local accessory masking hides nearby beads and restores the same identities exactly (3.991134ms)
+✔ real approved GLB shows cross-triangle contact travel and preserves source attributes (629.605145ms)
+✔ explicit morph opt-in reattaches actual B arm beads to the posed triangles (652.448398ms)
+✔ actual GLB full cycles remain continuous with bounded quality update work (487.611399ms)
+✔ disposal releases only owned instance buffers geometry material exactly once (2.053773ms)
+✔ unsupported deformation and nonfinite values fail without changing the source (2.369075ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1899.458178

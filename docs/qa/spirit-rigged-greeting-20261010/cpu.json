@@ -1,0 +1,302 @@
+{
+  "status": "PASS",
+  "sourceSHA256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+  "rigGLBSHA256": "6f9354848e33c9335f3fcae6752f0ad4821c0829f704bdc9e8cd19ede29282ec",
+  "checks": [
+    {
+      "name": "real skeleton and skin attributes exist in the derived GLB",
+      "status": "PASS"
+    },
+    {
+      "name": "all original BIN bytes, accessors, image/material data and source morph clip remain exact",
+      "status": "PASS"
+    },
+    {
+      "name": "normalized finite weights use two adjacent bones; head, soles and left arm bind to the rest bone",
+      "status": "PASS"
+    },
+    {
+      "name": "raise, a still hold, three independent wrist waves and lowering return to neutral",
+      "status": "PASS"
+    },
+    {
+      "name": "surface attachments and sand collider resolve current skinned triangles",
+      "status": "PASS"
+    },
+    {
+      "name": "paused rotation, repeated taps, backwards seek and reset do not accumulate rig deformation",
+      "status": "PASS"
+    },
+    {
+      "name": "portable GLB greeting action targets the same authored bones as runtime controls",
+      "status": "PASS"
+    }
+  ],
+  "skin": {
+    "bones": 11,
+    "maxInfluences": 2,
+    "movingInfluences": 13774
+  },
+  "maxNeutralError": 6.607435745493221e-8,
+  "maxColliderVertexError": 8.955206467987463e-16,
+  "resetNeutralError": 6.698804050338104e-8,
+  "embeddedClip": {
+    "name": "Rigged_three_wave_greeting_v001",
+    "samples": 26,
+    "maxBoneComponentError": 1.3401018664205289e-7
+  },
+  "motion": {
+    "duration": 4.329000000000001,
+    "stages": [
+      {
+        "progress": 0,
+        "stage": "raise",
+        "lift": 0,
+        "wrist": 0,
+        "hand": [
+          0.7809096692821939,
+          0.782935429816631,
+          0.16230660762724305
+        ]
+      },
+      {
+        "progress": 0.05,
+        "stage": "raise",
+        "lift": 0.07214888951691978,
+        "wrist": 0,
+        "hand": [
+          0.8219864783327236,
+          0.8233577734411716,
+          0.15490960601764295
+        ]
+      },
+      {
+        "progress": 0.1,
+        "stage": "raise",
+        "lift": 0.379097260664946,
+        "wrist": 0,
+        "hand": [
+          0.9431493122147881,
+          1.029381893452504,
+          0.1545319541433073
+        ]
+      },
+      {
+        "progress": 0.15,
+        "stage": "raise",
+        "lift": 0.7681963189345252,
+        "wrist": 0,
+        "hand": [
+          0.9538193852097078,
+          1.3010055597808605,
+          0.23262803715731864
+        ]
+      },
+      {
+        "progress": 0.2,
+        "stage": "raise",
+        "lift": 0.981924052214122,
+        "wrist": 0,
+        "hand": [
+          0.89395584589537,
+          1.4173545977670128,
+          0.3016912159973044
+        ]
+      },
+      {
+        "progress": 0.25,
+        "stage": "hold",
+        "lift": 1,
+        "wrist": 0,
+        "hand": [
+          0.8870645718265956,
+          1.4254479456532085,
+          0.307865067677583
+        ]
+      },
+      {
+        "progress": 0.3,
+        "stage": "wave",
+        "lift": 1,
+        "wrist": 0,
+        "hand": [
+          0.887064571827786,
+          1.4254479456536127,
+          0.307865067677583
+        ]
+      },
+      {
+        "progress": 0.35,
+        "stage": "wave",
+        "lift": 1,
+        "wrist": 0.923879532511287,
+        "hand": [
+          0.8274646928163756,
+          1.4603844863491418,
+          0.32415624415320854
+        ]
+      },
+      {
+        "progress": 0.4,
+        "stage": "wave",
+        "lift": 1,
+        "wrist": -0.7071067811865481,
+        "hand": [
+          0.9232341380245238,
+          1.3858074786994181,
+          0.28938041436376255
+        ]
+      },
+      {
+        "progress": 0.45,
+        "stage": "wave",
+        "lift": 1,
+        "wrist": -0.3826834323650904,
+        "hand": [
+          0.9079641409961201,
+          1.4052252967051362,
+          0.29843509160444426
+        ]
+      },
+      {
+        "progress": 0.5,
+        "stage": "wave",
+        "lift": 1,
+        "wrist": 1,
+        "hand": [
+          0.822191171302137,
+          1.4623242393368063,
+          0.3250607658261518
+        ]
+      },
+      {
+        "progress": 0.55,
+        "stage": "wave",
+        "lift": 1,
+        "wrist": -0.38268343236508984,
+        "hand": [
+          0.9079641409965544,
+          1.4052252967049967,
+          0.29843509160444426
+        ]
+      },
+      {
+        "progress": 0.6,
+        "stage": "wave",
+        "lift": 1,
+        "wrist": -0.7071067811865497,
+        "hand": [
+          0.923234138025385,
+          1.3858074786991395,
+          0.28938041436376255
+        ]
+      },
+      {
+        "progress": 0.65,
+        "stage": "wave",
+        "lift": 1,
+        "wrist": 0.9238795325112864,
+        "hand": [
+          0.8274646928176449,
+          1.4603844863487376,
+          0.32415624415320854
+        ]
+      },
+      {
+        "progress": 0.7,
+        "stage": "wave",
+        "lift": 1,
+        "wrist": 4.1650370783741775e-15,
+        "hand": [
+          0.8870645718294363,
+          1.425447945653088,
+          0.3078650676775832
+        ]
+      },
+      {
+        "progress": 0.75,
+        "stage": "wave",
+        "lift": 1,
+        "wrist": -0.9238795325112882,
+        "hand": [
+          0.932004526415466,
+          1.3718171116802094,
+          0.2828565990830279
+        ]
+      },
+      {
+        "progress": 0.8,
+        "stage": "lower",
+        "lift": 0.9934741168946483,
+        "wrist": 0,
+        "hand": [
+          0.8895823525026545,
+          1.4225607030126,
+          0.3056343852755744
+        ]
+      },
+      {
+        "progress": 0.85,
+        "stage": "lower",
+        "lift": 0.8120486678133017,
+        "wrist": 0,
+        "hand": [
+          0.9450146359969259,
+          1.32768271684714,
+          0.24587381958268073
+        ]
+      },
+      {
+        "progress": 0.9,
+        "stage": "lower",
+        "lift": 0.4152411347958098,
+        "wrist": 0,
+        "hand": [
+          0.9510614715905367,
+          1.0556163079987566,
+          0.1581927231951335
+        ]
+      },
+      {
+        "progress": 0.95,
+        "stage": "lower",
+        "lift": 0.08101082886787403,
+        "wrist": 0,
+        "hand": [
+          0.8267350202977352,
+          0.8285967437252677,
+          0.15416777488835398
+        ]
+      },
+      {
+        "progress": 1,
+        "stage": "idle",
+        "lift": 0,
+        "wrist": 0,
+        "hand": [
+          0.7809096692852023,
+          0.7829354298163388,
+          0.16230660762724305
+        ]
+      }
+    ],
+    "waveTravel": 0.11260017348202567,
+    "maxima": 3,
+    "minima": 3,
+    "motionOnlyUpdateMs": {
+      "median": 0.04443500000002132,
+      "p95": 0.12950999999998203
+    },
+    "sourceAttrHashes": {
+      "position": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "normal": "80706bee870329a0829113e63ed178f0a904029265da2c96c69ad50f9b1f9cec",
+      "uv": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+      "skinIndex": "c4bc5ee901081cc5b1e9d815048b7c1103d722578b54fb09fa49554006bacc39",
+      "skinWeight": "d54bc498bcdefc50360d85374529a4f4700d5460cbb250eecb1b7c13adeafdb1",
+      "stemRestPosition": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+      "stemRestNormal": "7be61a196ee9e42785b5149a2a4d8b26164b5db107f315e609e46ffa518c8908",
+      "stemLocalBrushAxis": "4338236bc55b54d79da35af194ad20e035e6ace08283ab409015ad567b254410",
+      "stemLocalBrushSide": "80105553583026e49df09dcb2ef5f6443dc9f6c7084573245a1bcba62ebd3e63"
+    }
+  }
+}

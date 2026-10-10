@@ -4,6 +4,7 @@ import {sandstoneFissureDistance} from './sandstone-fissure-field';
 import {isSurfaceAttachmentExcluded} from './surface-attachment-exclusions';
 import {supportAffineInstanceNormals} from './affine-instance-normals';
 import type {SurfaceAccentOptions,SurfaceStemAccents} from './surface-stem-accents';
+import {skinPoseKey,hasMovingSkinVertex} from './skinned-surface-state';
 
 interface Source {anchor:SurfaceAnchor;rest:number[];score:number;period:number;phase:number}
 interface CollisionNode {bounds:THREE.Box3;start:number;end:number;affected:boolean;left?:CollisionNode;right?:CollisionNode}
@@ -16,6 +17,7 @@ class RigidTriangleCollider {
  private padding=0;
  private oversizedWeights=false;
  private weights='';
+ private skinPose='';
  refitCount=0;
  private tree:CollisionNode|undefined;
  private readonly inverse=new THREE.Matrix4();
@@ -34,7 +36,7 @@ class RigidTriangleCollider {
   this.padding=morphs.length*2.02e-6;
   for(let i=0;i<p.count;i++){
    this.a.fromBufferAttribute(p,i).toArray(this.vertices,i*3);
-   let changed=false,significant=false;
+   let changed=hasMovingSkinVertex(mesh,i),significant=changed;
    for(const m of morphs){
     const dx=m.getX(i)-(mesh.geometry.morphTargetsRelative?0:p.getX(i)),dy=m.getY(i)-(mesh.geometry.morphTargetsRelative?0:p.getY(i)),dz=m.getZ(i)-(mesh.geometry.morphTargetsRelative?0:p.getZ(i));
     changed||=dx!==0||dy!==0||dz!==0;significant||=dx*dx+dy*dy+dz*dz>1e-12;
@@ -68,9 +70,10 @@ class RigidTriangleCollider {
   if(Math.abs(this.mesh.matrixWorld.determinant())<1e-12)throw new RangeError('Sand surface transforms must be invertible.');
   this.inverse.copy(this.mesh.matrixWorld).invert();
   const weights=this.mesh.morphTargetInfluences?.join(',')??'';
+  const skinPose=skinPoseKey(this.mesh);
   if(this.mesh.morphTargetInfluences?.some(w=>!Number.isFinite(w)))throw new RangeError('Sand collision morph weights must be finite.');
-  if(weights!==this.weights){
-   this.weights=weights;
+  if(weights!==this.weights||skinPose!==this.skinPose){
+   this.weights=weights;this.skinPose=skinPose;
    const geometry=this.mesh.geometry,influences=this.mesh.morphTargetInfluences,morphs=geometry.morphAttributes.position??[];
    if(geometry.morphTargetsRelative&&influences&&influences.length===morphs.length&&this.mesh.getVertexPosition===THREE.Mesh.prototype.getVertexPosition){
     // Collect the bounded nonzero controls once. Match Three's target order and
@@ -124,7 +127,7 @@ function restPosition(anchor:SurfaceAnchor):number[] {
 
 /** Actual-triangle sandstone emitters. No sphere shell, UV changes or texture drift. */
 export function createSurfaceFissureSand(options:SurfaceAccentOptions):SurfaceStemAccents {
- const sampler=new MeshSurface(options.meshes,{allowMorphTargets:options.allowMorphTargets});
+ const sampler=new MeshSurface(options.meshes,{allowMorphTargets:options.allowMorphTargets,allowSkinning:options.allowSkinning});
  for(const mesh of options.meshes){const rest=mesh.geometry.getAttribute('stemRestPosition');if(!rest||rest.itemSize!==3||rest.count!==mesh.geometry.getAttribute('position').count)throw new Error('Sand requires character-rest position binding matching the stone shader.');}
  const quality=options.quality==='low'?'low':'high',high=quality==='high',desired=high?6:4,perSource=high?8:6;
  const extent=sampler.bounds.getSize(new THREE.Vector3()),unit=options.detailScale??Math.min(extent.x,extent.y,extent.z)*.5;
@@ -148,7 +151,7 @@ export function createSurfaceFissureSand(options:SurfaceAccentOptions):SurfaceSt
  if(sources.length<desired){for(const collider of colliders)collider.clear();throw new Error(`Only ${sources.length}/${desired} validated actual sandstone fissure sources found.`);}
  const group=new THREE.Group();group.name='SurfaceStemAccents_戊';
  const diagnostics={supported:true,mode:'triangle-fissure-gravity-sand',anchorCount:sources.length,limitations:[
-  'Actual triangle/barycentric sources use character-rest F2-F1 cracks; optional pose morphs refit persistent collision storage. Skinning and changed topology require rebuilding.',
+  'Actual triangle/barycentric sources use character-rest F2-F1 cracks; opted-in morphs and skinning refit persistent collision storage. Changed topology requires rebuilding.',
   'Float32 CPU field is tested against the actual WebGL material on the QA device; GPU arithmetic can differ on other hardware.',
   'Deterministic flights are re-evaluated from current emitter pose on seeks; birth-transform history and free independent world trajectories are not cached.',
   'Actual-triangle segment collision hides body-crossing grains; no bouncing, floor accumulation or full swept-sphere collision simulation.',

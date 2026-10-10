@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import {skinPoseKey} from './skinned-surface-state';
 export interface FashionSurfaceHit { triangle: number; barycentric: THREE.Vector3 }
 /** A small XY triangle index for the approved model's front/back support rays.
  * It accelerates the SAME actual-triangle intersection; it never approximates
@@ -20,7 +21,7 @@ export class FashionSurfaceProjector {
   private prepare(): void {
     const geometry = this.mesh.geometry, position = geometry.getAttribute('position'), index = geometry.index;
     const positionVersion = position instanceof THREE.InterleavedBufferAttribute ? position.data.version : position.version;
-    const token = `${geometry.uuid}:${positionVersion}:${index?.version ?? 0}:${this.mesh.morphTargetInfluences?.join(',') ?? ''}`;
+    const token = `${geometry.uuid}:${positionVersion}:${index?.version ?? 0}:${this.mesh.morphTargetInfluences?.join(',') ?? ''}:${skinPoseKey(this.mesh)}`;
     if (token === this.token) return;
     this.token = token; this.vertices = new Float64Array(position.count * 3); this.bounds.makeEmpty();
     for (let i = 0; i < position.count; i++) { this.mesh.getVertexPosition(i, this.point); this.point.toArray(this.vertices, i * 3); this.bounds.expandByPoint(this.point); }
@@ -38,10 +39,10 @@ export class FashionSurfaceProjector {
       for (let y = firstY; y <= lastY; y++) for (let x = firstX; x <= lastX; x++) this.cells[y * this.columns + x].push(offset / 3);
     }
   }
-  /** Rays are in mesh-local coordinates. Non-axis/skin rays use the caller's
+  /** Rays are in mesh-local coordinates. Non-axis rays use the caller's
    * normal Three raycaster; those paths must never use an invalid projection. */
   intersect(origin: THREE.Vector3, direction: THREE.Vector3): FashionSurfaceHit | null | undefined {
-    if ((this.mesh as THREE.SkinnedMesh).isSkinnedMesh || Math.abs(direction.x) > 1e-8 || Math.abs(direction.y) > 1e-8) return undefined;
+    if (Math.abs(direction.x) > 1e-8 || Math.abs(direction.y) > 1e-8) return undefined;
     this.prepare();
     if (origin.x < this.bounds.min.x || origin.x > this.bounds.max.x || origin.y < this.bounds.min.y || origin.y > this.bounds.max.y) return null;
     const x = THREE.MathUtils.clamp(Math.floor((origin.x - this.bounds.min.x) / (this.bounds.max.x - this.bounds.min.x) * this.columns), 0, this.columns - 1);

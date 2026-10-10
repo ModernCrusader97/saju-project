@@ -24,6 +24,8 @@ const sha = array => createHash('sha256').update(Buffer.from(array.buffer, array
 const hashes = geometry => Object.fromEntries(['position', 'normal', 'uv'].map(key => [key, sha(geometry.attributes[key].array)]).concat([['index', sha(geometry.index.array)]]));
 const loader = new GLTFLoader().register(() => ({ name: 'CPU_IMAGE_IO', loadTexture: async () => new THREE.Texture() }));
 const parse = () => loader.parseAsync(bytes.buffer.slice(bytes.byteOffset, bytes.byteOffset + bytes.byteLength), '');
+const rigBytes = await fs.readFile('public/spirits/jade-rig-v001/body.glb');
+const parseRig = () => loader.parseAsync(rigBytes.buffer.slice(rigBytes.byteOffset, rigBytes.byteOffset + rigBytes.byteLength), '');
 const report = { status: 'RUNNING', glbSHA256: sha(bytes), checks: [], attachments: [], penetration: [], budgets: [], motion: [], masks: [], limits: ['CPU image I/O placeholders; browser QA uses actual textures.', 'Support triangles move; fabric and physical collisions are not simulated.'] };
 
 async function fixture(quality = 'high', stem = '갑') {
@@ -153,7 +155,7 @@ test('triangle projection index matches native raycasting on real front/back/mor
 });
 
 const nativeLoad = GLTFLoader.prototype.loadAsync, nativeTexture = THREE.TextureLoader.prototype.loadAsync;
-GLTFLoader.prototype.loadAsync = async () => parse();
+GLTFLoader.prototype.loadAsync = async url => { assert.equal(url, '/spirits/jade-rig-v001/body.glb'); return parseRig(); };
 THREE.TextureLoader.prototype.loadAsync = async url => new THREE.Texture({ width: url.endsWith('fields.png') ? 2048 : 1024, height: 1024 });
 for (const key of ['갑자', '을축', '계유']) test(`${key}: localized exclusions follow idle/wave and restore exact stable instance poses`, async () => {
   const spirit = await api.loadApprovedSpirit(key, '병인', 'low'), owner = spirit.fashion.group.parent;
@@ -242,14 +244,14 @@ test('ten production stems: accessories and exclusion regions follow actual rais
     spirit.fashion.set(outfit); spirit.reset(); spirit.update(0); const start = spirit.fashion.group.children[0].getWorldPosition(new THREE.Vector3());
     spirit.update(1.5); const idle = spirit.fashion.group.children[0].getWorldPosition(new THREE.Vector3()); assert(idle.distanceTo(start) > .001, 'hardware must follow actual idle');
     spirit.reset(); spirit.update(0); spirit.triggerReaction(); let peakTime;
-    for (let t = .05; t <= 1.2; t += .05) { spirit.update(t); if (body.userData.approvedSpiritGreeting.stage === 'wave') { peakTime = t; break; } }
+    for (let t = .05; t <= 2; t += .05) { spirit.update(t); if (body.userData.approvedSpiritGreeting.stage === 'wave') { peakTime = t; break; } }
     assert(peakTime); assert.equal(body.morphTargetInfluences[0], 0);
     const greeting = body.userData.approvedSpiritGreeting;
-    assert.equal(greeting.armLift, 1); assert.equal(body.morphTargetInfluences.length, 11);
-    assert(greeting.controlWeights.filter(weight => weight > 1e-12).length <= 2);
+    assert.equal(greeting.armLift, 1); assert.equal(body.morphTargetInfluences.length, 1);
+    assert.equal(body.isSkinnedMesh, true); assert.equal(body.skeleton.bones.length, 11);
     const hand = new THREE.Vector3();
     for (const id of greeting.handVertexIDs) hand.add(body.getVertexPosition(id, new THREE.Vector3()));
-    hand.divideScalar(greeting.handVertexIDs.length); assert(hand.y > 1.55);
+    hand.divideScalar(greeting.handVertexIDs.length); assert(hand.y > 1.2);
     for (const config of [outfit, { ...outfit, head: 'crescent-pin', face: 'fitted-mask' }]) {
       spirit.fashion.set(config); spirit.avatarPivot.rotation.set(.17, .93, -.08); spirit.update(peakTime); spirit.group.updateMatrixWorld(true);
       let samples = 0; const inside = [], ray = new THREE.Raycaster();
@@ -257,7 +259,7 @@ test('ten production stems: accessories and exclusion regions follow actual rais
         const s = item.userData.support, v = [0, 1, 2].map(j => body.getVertexPosition(body.geometry.index.getX(s.triangle * 3 + j), new THREE.Vector3()));
         const actualSupport = v.reduce((sum, p, j) => sum.addScaledVector(p, s.barycentric[j]), new THREE.Vector3()).applyMatrix4(body.matrixWorld);
         const publishedSupport = new THREE.Vector3(...s.position).applyMatrix4(spirit.fashion.group.matrixWorld);
-        assert(actualSupport.distanceTo(publishedSupport) < 1e-8, 'fashion must resolve the current morphed triangle');
+        assert(actualSupport.distanceTo(publishedSupport) < 1e-8, 'fashion must resolve the current skinned triangle');
         const actualNormal = new THREE.Triangle(...v).getNormal(new THREE.Vector3()).applyNormalMatrix(new THREE.Matrix3().getNormalMatrix(body.matrixWorld));
         assert(new THREE.Vector3(0, 0, 1).transformDirection(item.matrixWorld).dot(actualNormal) > .99999);
         const pInEffect = actualSupport.clone().applyMatrix4(spirit.propGroup.matrixWorld.clone().invert()); assert(api.isSurfaceAttachmentExcluded(spirit.propGroup, pInEffect));

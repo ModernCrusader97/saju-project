@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "sourceFilesVerified": 46,
+  "checkoutTextFilesVerifiedAsCanonicalLF": 0,
+  "pngRawExactMatch": true,
+  "alphaAlways255": true,
+  "pixelFormat": "RGBA8_UNORM",
+  "atlasSize": [
+    2048,
+    1024
+  ],
+  "atlasBytes": 8388608,
+  "restoredGLBBytes": 13700928,
+  "restoredGLBSHA256": "57d7ee5b3c4e0b99eaadefb8095283bed44986beaa5a91c096dd7a0c514bf9c2"
+}

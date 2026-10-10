@@ -27,7 +27,8 @@ const { loadApprovedSpirit, MeshSurface, bindCharacterRestCoordinates, CHARACTER
 const bytes = await fs.readFile('public/spirits/jade-v002/body.glb');
 const source = await fs.readFile('assets/source-reference/saju-b-evolving-light-v002/reference/SaJu_Jade_Approved_Static_Material.glb');
 assert(bytes.equals(source), 'Runtime GLB must exactly match its archived source');
-const glb = bytes.buffer.slice(bytes.byteOffset, bytes.byteOffset + bytes.byteLength);
+const rigBytes = await fs.readFile('public/spirits/jade-rig-v001/body.glb');
+const glb = rigBytes.buffer.slice(rigBytes.byteOffset, rigBytes.byteOffset + rigBytes.byteLength);
 const sha = array => createHash('sha256').update(Buffer.from(array.buffer, array.byteOffset, array.byteLength)).digest('hex');
 const attributeHashes = geometry => Object.fromEntries(['position', 'normal', 'uv'].map(name => [name, sha(geometry.getAttribute(name).array)]).concat([['index', sha(geometry.index.array)]]));
 const loader = new GLTFLoader().register(() => ({
@@ -38,7 +39,8 @@ const loader = new GLTFLoader().register(() => ({
     return texture;
   },
 }));
-const parse = () => loader.parseAsync(glb.slice(0), '');
+const parse = () => loader.parseAsync(bytes.buffer.slice(bytes.byteOffset, bytes.byteOffset + bytes.byteLength), '');
+const parseRig = () => loader.parseAsync(glb.slice(0), '');
 const records = [];
 let textureBehavior = 'ok';
 const nativeLoad = GLTFLoader.prototype.loadAsync;
@@ -49,8 +51,8 @@ function track(resource, label, record) {
   record.push(item);
 }
 GLTFLoader.prototype.loadAsync = async function(url) {
-  assert.equal(url, '/spirits/jade-v002/body.glb');
-  const result = await parse();
+  assert.equal(url, '/spirits/jade-rig-v001/body.glb');
+  const result = await parseRig();
   const tracked = [], seen = new Set();
   result.scene.traverse(object => {
     if (!object.isMesh) return;

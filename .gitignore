@@ -47,5 +47,6 @@ next-env.d.ts
 
 # Runtime assets are copied from their checksum-verified preservation package.
 /public/spirits/jade-v002/
+/public/spirits/jade-rig-v001/
 /public/models/porcelain-hero-blink-v1.glb
 *.tsbuildinfo

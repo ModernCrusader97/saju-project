@@ -1,0 +1,205 @@
+{
+  "sourceSHA256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+  "rigSHA256": "6f9354848e33c9335f3fcae6752f0ad4821c0829f704bdc9e8cd19ede29282ec",
+  "sourcePrefixBytes": 4281948,
+  "sourceAccessorCount": 34,
+  "factoryNeutralError": 6.607435745493221e-8,
+  "shaderCPUError": {
+    "max": 7.208220142168942e-7,
+    "maximum": {
+      "progress": 0.77,
+      "id": 9137,
+      "cpu": [
+        -0.29035720229148854,
+        2.24146819114685,
+        0.17574858665466309
+      ],
+      "shader": [
+        -0.2903572916984558,
+        2.241468906402588,
+        0.17574858665466309
+      ]
+    },
+    "method": "Float32 matrix/vector and blend emulation, no actual GPU readback"
+  },
+  "poses": [
+    {
+      "progress": 0,
+      "stage": "raise",
+      "revision": 1,
+      "shaderCPUError": 1.4307357496590178e-7,
+      "refitCount": 0
+    },
+    {
+      "progress": 0.05,
+      "stage": "raise",
+      "revision": 2,
+      "shaderCPUError": 4.826228243150278e-7,
+      "refitCount": 1
+    },
+    {
+      "progress": 0.115,
+      "stage": "raise",
+      "revision": 3,
+      "shaderCPUError": 4.85146658633682e-7,
+      "refitCount": 2
+    },
+    {
+      "progress": 0.23,
+      "stage": "hold",
+      "revision": 4,
+      "shaderCPUError": 4.769681074582048e-7,
+      "refitCount": 3
+    },
+    {
+      "progress": 0.27,
+      "stage": "hold",
+      "revision": 4,
+      "shaderCPUError": 4.915124924265645e-7,
+      "refitCount": 3
+    },
+    {
+      "progress": 0.32,
+      "stage": "wave",
+      "revision": 5,
+      "shaderCPUError": 3.2641393507702124e-7,
+      "refitCount": 4
+    },
+    {
+      "progress": 0.36,
+      "stage": "wave",
+      "revision": 6,
+      "shaderCPUError": 4.789280497920655e-7,
+      "refitCount": 5
+    },
+    {
+      "progress": 0.4,
+      "stage": "wave",
+      "revision": 7,
+      "shaderCPUError": 4.805480091680904e-7,
+      "refitCount": 6
+    },
+    {
+      "progress": 0.44,
+      "stage": "wave",
+      "revision": 8,
+      "shaderCPUError": 4.806057643260199e-7,
+      "refitCount": 7
+    },
+    {
+      "progress": 0.48,
+      "stage": "wave",
+      "revision": 9,
+      "shaderCPUError": 4.853754474314975e-7,
+      "refitCount": 8
+    },
+    {
+      "progress": 0.52,
+      "stage": "wave",
+      "revision": 10,
+      "shaderCPUError": 4.915124928304675e-7,
+      "refitCount": 9
+    },
+    {
+      "progress": 0.56,
+      "stage": "wave",
+      "revision": 11,
+      "shaderCPUError": 4.853754478984503e-7,
+      "refitCount": 10
+    },
+    {
+      "progress": 0.6,
+      "stage": "wave",
+      "revision": 12,
+      "shaderCPUError": 4.838290242819924e-7,
+      "refitCount": 11
+    },
+    {
+      "progress": 0.64,
+      "stage": "wave",
+      "revision": 13,
+      "shaderCPUError": 4.835421076146313e-7,
+      "refitCount": 12
+    },
+    {
+      "progress": 0.68,
+      "stage": "wave",
+      "revision": 14,
+      "shaderCPUError": 4.805480096156356e-7,
+      "refitCount": 13
+    },
+    {
+      "progress": 0.72,
+      "stage": "wave",
+      "revision": 15,
+      "shaderCPUError": 4.851466599533609e-7,
+      "refitCount": 14
+    },
+    {
+      "progress": 0.77,
+      "stage": "wave",
+      "revision": 16,
+      "shaderCPUError": 7.208220142168942e-7,
+      "refitCount": 15
+    },
+    {
+      "progress": 0.85,
+      "stage": "lower",
+      "revision": 17,
+      "shaderCPUError": 3.720983665765554e-7,
+      "refitCount": 16
+    },
+    {
+      "progress": 0.95,
+      "stage": "lower",
+      "revision": 18,
+      "shaderCPUError": 4.915124923727108e-7,
+      "refitCount": 17
+    },
+    {
+      "progress": 1,
+      "stage": "idle",
+      "revision": 19,
+      "shaderCPUError": 4.915124927496869e-7,
+      "refitCount": 18
+    }
+  ],
+  "cache": {
+    "holdRefitCount": 19,
+    "holdRevision": 20,
+    "transformInvariantError": 1.1102230246251565e-16
+  },
+  "freshResetNeutralError": 6.817244354097686e-8,
+  "skeletonDisposeCalls": 1,
+  "exportedPoseFiles": [
+    {
+      "lift": 1,
+      "wrist": -1,
+      "file": "/tmp/greeting-review-exported-rig-1--1-positions.json",
+      "rigSHA256": "6f9354848e33c9335f3fcae6752f0ad4821c0829f704bdc9e8cd19ede29282ec",
+      "positionSHA256": "4c3a4ac86ef01d798b3514500505fe3d7b8f6f946f9ef63484929b501f037404"
+    },
+    {
+      "lift": 1,
+      "wrist": 0,
+      "file": "/tmp/greeting-review-exported-rig-1-0-positions.json",
+      "rigSHA256": "6f9354848e33c9335f3fcae6752f0ad4821c0829f704bdc9e8cd19ede29282ec",
+      "positionSHA256": "4bac7a23ac5970dce8c91ffbbd24e5039a6468160a2735efe9b52ba7877ff80d"
+    },
+    {
+      "lift": 1,
+      "wrist": 1,
+      "file": "/tmp/greeting-review-exported-rig-1-1-positions.json",
+      "rigSHA256": "6f9354848e33c9335f3fcae6752f0ad4821c0829f704bdc9e8cd19ede29282ec",
+      "positionSHA256": "7d8a9af24c622ef9c6ae844a896a619852c4604a0cf0bcfbaaf3534e2faef28d"
+    },
+    {
+      "lift": 0.5,
+      "wrist": 0,
+      "file": "/tmp/greeting-review-exported-rig-0.5-0-positions.json",
+      "rigSHA256": "6f9354848e33c9335f3fcae6752f0ad4821c0829f704bdc9e8cd19ede29282ec",
+      "positionSHA256": "7bb4976b3e726ec7825a4a5c678efcf169ddf8ad89ad7bb6e22b1b38c2095527"
+    }
+  ],
+  "status": "PASS"
+}

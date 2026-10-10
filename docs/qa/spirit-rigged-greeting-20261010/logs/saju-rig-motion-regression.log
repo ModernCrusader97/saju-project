@@ -1,0 +1,19 @@
+✔ original GLB neutral pose, face transforms and geometry remain exact at t=0 and reset (23.598441ms)
+✔ all ten stem idles are bounded, distinct, neutral-arm and keep the original floor planted (1996.476359ms)
+✔ sole subset matches the full posed mesh across the complete allowed roll/scale/wave range (1389.790255ms)
+✔ greeting raises the original mitten, makes three distinct wrist waves and returns to moving idle (398.498211ms)
+✔ active tap retriggers coalesce without any pose jump, including while paused (5.203291ms)
+✔ raised arm and the complete reaction stay planted, with a smooth return under user yaw (1081.393705ms)
+✔ 15 and 60 Hz plus one large time step produce the same pose and bounded queued wave (7.970416ms)
+✔ absolute time repeats are stable, finite extremes remain finite and backwards seek cancels reaction (8.495577ms)
+✔ dispose restores captured facial transforms and neutral root, then every method is inert (5.613514ms)
+✔ geometry queries and allocations are confined to setup, with cached sole updates below the attachment budget (135.71088ms)
+✔ the preserved original limited study still preserves welded seams and has no collapsed triangles, rest-normal reversal or new adjacent folds (4949.941172ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 10019.181617

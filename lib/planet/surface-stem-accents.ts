@@ -6,7 +6,7 @@ import { createSurfaceFissureSand } from './surface-fissure-sand';
 import { createStemAccents, type AccentStem, type StemAccents } from './approved-stem-accents';
 import { MeshSurface } from './mesh-surface';
 import { isSurfaceAttachmentExcluded } from './surface-attachment-exclusions';
-export interface SurfaceAccentOptions { meshes: THREE.Mesh[]; quality?: 'low' | 'high'; detailScale?: number; allowMorphTargets?: boolean }
+export interface SurfaceAccentOptions { meshes: THREE.Mesh[]; quality?: 'low' | 'high'; detailScale?: number; allowMorphTargets?: boolean; allowSkinning?: boolean }
 export interface SurfaceAccentBudget { drawCalls: number; instances: number; triangles: number; bufferBytes: number }
 export interface SurfaceAccentDiagnostics { supported: boolean; mode: string; limitations: string[]; anchorCount: number; budget?: SurfaceAccentBudget }
 export interface SurfaceStemAccents extends StemAccents { diagnostics: SurfaceAccentDiagnostics }
@@ -19,12 +19,12 @@ export function createSurfaceStemAccents(stem: AccentStem | '己' | '庚' | '辛
   else if (stem === '癸') effect = createSurfaceSlidingDew(options);
   else if (stem === '戊') effect = createSurfaceFissureSand(options);
   else {
-    const sampler = new MeshSurface(options.meshes, { allowMorphTargets: options.allowMorphTargets });
+    const sampler = new MeshSurface(options.meshes, { allowMorphTargets: options.allowMorphTargets, allowSkinning: options.allowSkinning });
     const extent = sampler.bounds.getSize(new THREE.Vector3());
     const unit = options.detailScale ?? Math.min(extent.x, extent.y, extent.z) * .5;
     if (!Number.isFinite(unit) || unit <= 0) throw new RangeError('detailScale must be positive.');
     const diagnostics: SurfaceAccentDiagnostics = { supported: true, mode: 'triangle-attached', anchorCount: 0,
-      limitations: ['Reference-pose area; rotations and explicitly enabled morphs resolve current triangles. Skinning/topology changes require another adapter.'] };
+      limitations: ['Reference-pose area and fixed topology; explicitly enabled morphs and skinning resolve current triangle vertices and normals. Topology changes require rebuilding.'] };
     if (stem === '丙' || stem === '丁') {
       const fireCount = stem === '丁' ? (options.quality === 'low' ? 12 : 18) : (options.quality === 'low' ? 48 : 72);
       const anchors = Array.from({ length: fireCount }, (_, i) => sampler.sample(i * 53 + 400));

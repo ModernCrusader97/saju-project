@@ -1,0 +1,147 @@
+{
+  "status": "PASS",
+  "sourceGLB_SHA256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+  "rigGLB_SHA256": "6f9354848e33c9335f3fcae6752f0ad4821c0829f704bdc9e8cd19ede29282ec",
+  "moduleSHA256": "cd0ff53727f9a5e0a036f4852575dd45a1eae4b45aa8df067d57d88ae1bff1e1",
+  "harnessSHA256": "f1483c4fd09a45002d816c4e7ebf5a9852c35331fc6053548b371cda00cd5538",
+  "geometryHashes": {
+    "position": "f7e39c85723b4220d0e69161e4405c3232d514b18be56e8a3854ec6fff48da8b",
+    "normal": "80706bee870329a0829113e63ed178f0a904029265da2c96c69ad50f9b1f9cec",
+    "uv": "f3300a24812551e09c6b6a4bc31795feb19c80dc22cf1708cda7a64890e9539c",
+    "skinIndex": "c4bc5ee901081cc5b1e9d815048b7c1103d722578b54fb09fa49554006bacc39",
+    "skinWeight": "d54bc498bcdefc50360d85374529a4f4700d5460cbb250eecb1b7c13adeafdb1",
+    "index": "934286d3bdd9361657e390c41762923871cec85a48a7d9775b362aee02dc7830",
+    "morph:position:0": "7bf926ae1fd903a4a63d39b32c3c1cdafdcd30bc982138404f38b75f50c4dfde",
+    "morph:normal:0": "cf790aaebf3c4a41cbed597f93c53a82f4ba43f726c178d9504bc30dffd1ffbd"
+  },
+  "maxWaveWeight": 0.45,
+  "checks": [
+    "Original geometry and morph attributes unchanged; no new local collapses/folds at bounded weights. Global self-intersection and artistic shape still require actual GPU review."
+  ],
+  "testResults": [
+    {
+      "name": "original GLB neutral pose, face transforms and geometry remain exact at t=0 and reset",
+      "status": "PASS"
+    },
+    {
+      "name": "all ten stem idles are bounded, distinct, neutral-arm and keep the original floor planted",
+      "status": "PASS"
+    },
+    {
+      "name": "sole subset matches the full posed mesh across the complete allowed roll/scale/wave range",
+      "status": "PASS"
+    },
+    {
+      "name": "greeting raises the original mitten, makes three distinct wrist waves and returns to moving idle",
+      "status": "PASS"
+    },
+    {
+      "name": "active tap retriggers coalesce without any pose jump, including while paused",
+      "status": "PASS"
+    },
+    {
+      "name": "raised arm and the complete reaction stay planted, with a smooth return under user yaw",
+      "status": "PASS"
+    },
+    {
+      "name": "15 and 60 Hz plus one large time step produce the same pose and bounded queued wave",
+      "status": "PASS"
+    },
+    {
+      "name": "absolute time repeats are stable, finite extremes remain finite and backwards seek cancels reaction",
+      "status": "PASS"
+    },
+    {
+      "name": "dispose restores captured facial transforms and neutral root, then every method is inert",
+      "status": "PASS"
+    },
+    {
+      "name": "geometry queries and allocations are confined to setup, with cached sole updates below the attachment budget",
+      "status": "PASS"
+    },
+    {
+      "name": "the preserved original limited study still preserves welded seams and has no collapsed triangles, rest-normal reversal or new adjacent folds",
+      "status": "PASS"
+    }
+  ],
+  "idle": {
+    "stems": 10,
+    "variants": 10,
+    "maxFloorError": 5.204170427930421e-18,
+    "neutralMorph": true
+  },
+  "floorSubset": {
+    "totalVertices": 33207,
+    "candidates": 1577,
+    "affectedVertices": 4097,
+    "minAffectedY": 0.6971657276153564,
+    "cases": 60,
+    "maxSubsetError": 0
+  },
+  "greeting": {
+    "maximumY": 1.4623242055436918,
+    "sideToSideTravel": 0.11259920564198489,
+    "maxima": 3,
+    "minima": 3,
+    "minEyeScale": 0.012547134162720592,
+    "returnedToIdle": true
+  },
+  "reactionFloor": {
+    "yaw": 0.85,
+    "maxFloorError": 5.204170427930421e-18,
+    "largestWeightStepAt240Hz": 0.008430838603473156,
+    "originalChildrenPreserved": true
+  },
+  "cachedUpdate": {
+    "calls": 10000,
+    "meanMilliseconds": 0.012624972600000001,
+    "bodyVertexQueriesPerUpdate": 0,
+    "budgetMilliseconds": 2.2
+  },
+  "topology": {
+    "sampledWeights": 91,
+    "triangles": 62124,
+    "edges": 95275,
+    "adjacentPairs": 91097,
+    "minEdgeRatio": 0.3900276419640673,
+    "maxEdgeRatio": 1.9665723237809005,
+    "minAreaRatio": 0.2425655503087907,
+    "minRestNormalDot": 0.07566894106031932,
+    "collapsedBelowOnePercent": 0,
+    "restNormalReversals": 0,
+    "newSharpAdjacentFolds": 0,
+    "maxWeldGap": 0
+  },
+  "largerAmplitudeProbes": [
+    {
+      "weight": 0.55,
+      "minAreaRatio": 0.17512098678755086,
+      "minRestNormalDot": -0.03790184158763635,
+      "restNormalReversals": 6,
+      "collapsedBelowOnePercent": 0,
+      "newSharpAdjacentFolds": 0
+    },
+    {
+      "weight": 0.6,
+      "minAreaRatio": 0.15568327625402487,
+      "minRestNormalDot": -0.08033975671956735,
+      "restNormalReversals": 28,
+      "collapsedBelowOnePercent": 0,
+      "newSharpAdjacentFolds": 0
+    },
+    {
+      "weight": 1,
+      "minAreaRatio": 0.35357324789455186,
+      "minRestNormalDot": -0.9093998075060689,
+      "restNormalReversals": 1389,
+      "collapsedBelowOnePercent": 0,
+      "newSharpAdjacentFolds": 3
+    }
+  ],
+  "limitations": [
+    "CPU uses the actual derived rig GLB with placeholder texture I/O.",
+    "Original limited pose study is retained at neutral; greeting uses 11 authored bones and at most two adjacent skin influences.",
+    "Hand height criteria reflect the preserved short arm; the previously stretched v32 height is not an acceptance target. Actual front/side GPU and joint appearance remain a separate required review.",
+    "Topology assertions are local measurements, not a proof of global nonintersection or artistic approval."
+  ]
+}

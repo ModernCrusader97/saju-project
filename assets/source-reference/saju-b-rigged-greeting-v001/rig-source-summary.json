@@ -1,0 +1,44 @@
+{
+  "sourceGLBSHA256": "6f9354848e33c9335f3fcae6752f0ad4821c0829f704bdc9e8cd19ede29282ec",
+  "blendSHA256": "162984fe778a6caab511286ce42136c75975871253ad5ebd44e6efb512b2b9cc",
+  "vertices": 33207,
+  "polygons": 62124,
+  "bones": [
+    "B_Rest",
+    "B_RightShoulder_1",
+    "B_RightShoulder_2",
+    "B_RightShoulder_3",
+    "B_RightShoulder_4",
+    "B_RightShoulder_5",
+    "B_RightUpperArm",
+    "B_RightForearm",
+    "B_RightWristSupport",
+    "B_RightWrist",
+    "B_RightHand"
+  ],
+  "vertexGroups": [
+    "B_Rest",
+    "B_RightShoulder_1",
+    "B_RightShoulder_2",
+    "B_RightShoulder_3",
+    "B_RightShoulder_4",
+    "B_RightShoulder_5",
+    "B_RightUpperArm",
+    "B_RightForearm",
+    "B_RightWristSupport",
+    "B_RightWrist",
+    "B_RightHand"
+  ],
+  "shapeKeys": [
+    "Basis",
+    "Gentle_wave_pose"
+  ],
+  "clips": [
+    "Gentle_wave_study_Sphere",
+    "Rigged_three_wave_greeting_v001_Approved_B_rig_v001"
+  ],
+  "packedImages": 3,
+  "limits": [
+    "Editable imported derivative; exact GLB reproduction uses the Node source-BIN appender, not a Blender mesh re-export."
+  ]
+}

@@ -19,8 +19,9 @@ const { createSurfaceSlidingDew, isSurfaceAttachmentExcluded, createApprovedSpir
 const sha = bytes => createHash('sha256').update(bytes).digest('hex');
 const sourceBytes = fs.readFileSync('public/spirits/jade-v002/body.glb');
 assert.equal(sha(sourceBytes), '0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84');
+const rigBytes = fs.readFileSync('public/spirits/jade-rig-v001/body.glb');
 const gltf = await new GLTFLoader().register(() => ({ name: 'CPU_IMAGE_IO', loadTexture: async () => new THREE.Texture() }))
-  .parseAsync(sourceBytes.buffer.slice(sourceBytes.byteOffset, sourceBytes.byteOffset + sourceBytes.byteLength), '');
+  .parseAsync(rigBytes.buffer.slice(rigBytes.byteOffset, rigBytes.byteOffset + rigBytes.byteLength), '');
 const model = gltf.scene; model.position.x = -.42; model.scale.z = 1.35;
 let body; model.traverse(o => { if (o.isMesh && o.geometry.getAttribute('position')?.count === 33207) body = o; });
 assert(body); body.morphTargetInfluences.fill(0);
@@ -132,7 +133,7 @@ test('sparse surface routes remain distinct instead of duplicating bead pairs', 
 
 test('actual B matrices including hidden slots repeat byte-for-byte at one time', () => {
   for (const quality of ['low', 'high']) {
-    const effect = createSurfaceSlidingDew({ meshes: [body], quality, allowMorphTargets: true }); motionRoot.add(effect.group);
+    const effect = createSurfaceSlidingDew({ meshes: [body], quality, allowMorphTargets: true, allowSkinning: true }); motionRoot.add(effect.group);
     const motion = createApprovedSpiritMotion(motionRoot, body, '癸'); motion.update(2.25);
     root.updateMatrixWorld(true); effect.update(2.25);
     const mesh = effect.group.children.find(o => o.isInstancedMesh);
