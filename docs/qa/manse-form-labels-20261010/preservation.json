@@ -1,0 +1,16 @@
+{
+  "basis": "410c957e6e82886e45f26ab3d5dcc84c69140efb",
+  "preexistingTrackedFiles": 653,
+  "byteIdenticalPreexistingFiles": 652,
+  "changedPreexistingFiles": [
+    "app/manse/page.tsx"
+  ],
+  "nativeLabelControlPairsConnected": 5,
+  "attributesAdded": 10,
+  "exactOriginalSourceRecoveredByRemovingOnlyForAndIdAttributes": true,
+  "labelsStylesDefaultsValidationCalculationAndOtherCompletedChangesUnchanged": true,
+  "beforeAndAfterQASourceHashesMatch": true,
+  "currentApplicationSourceSHA256": "12e47d47c36005757f15020c15da9afdbec6663aec99afa0cc59ef61e96aaa4d",
+  "originalKeyboardWipSHA256": "75ea6f5726ce41272841494c3a3316e3f4b88ea7c4888d71e21e981ee9030539",
+  "initialFormScreenshotsByteIdentical": true
+}

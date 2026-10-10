@@ -1,0 +1,162 @@
+{
+  "basis": "410c957e6e82886e45f26ab3d5dcc84c69140efb",
+  "phase": "before",
+  "applicationSourceSHA256": "823495ad9e71435d1d516ee03167a8baa45afd2565dda5b159f809a691713ff4",
+  "passed": 3,
+  "failed": 2,
+  "checks": [
+    {
+      "name": "all five existing labels name their actual native controls",
+      "status": "FAIL",
+      "error": "The expression evaluated to a falsy value:\n\n  assert(records.every(r => r.namedControlCount === 1 && r.uniqueId && r.labels.length === 1 && r.labels[0] === r.label))\n"
+    },
+    {
+      "name": "native clicks on each label focus its intended input",
+      "status": "FAIL",
+      "error": "The expression evaluated to a falsy value:\n\n  assert(records.every(r => r.intendedInputFocused))\n"
+    },
+    {
+      "name": "native Tab order and disabled-hour skipping remain intact",
+      "status": "PASS"
+    },
+    {
+      "name": "existing defaults and explicit calculation are preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "no page errors, API requests or outbound calls",
+      "status": "PASS"
+    }
+  ],
+  "observations": [
+    {
+      "scenario": "existing label accessible names",
+      "records": [
+        {
+          "label": "이름",
+          "role": "textbox",
+          "namedControlCount": 0,
+          "id": "",
+          "type": "text",
+          "value": "홍길동",
+          "labels": [],
+          "uniqueId": false
+        },
+        {
+          "label": "태어난 년도",
+          "role": "spinbutton",
+          "namedControlCount": 0,
+          "id": "",
+          "type": "number",
+          "value": "1995",
+          "labels": [],
+          "uniqueId": false
+        },
+        {
+          "label": "월",
+          "role": "spinbutton",
+          "namedControlCount": 0,
+          "id": "",
+          "type": "number",
+          "value": "5",
+          "labels": [],
+          "uniqueId": false
+        },
+        {
+          "label": "일",
+          "role": "spinbutton",
+          "namedControlCount": 0,
+          "id": "",
+          "type": "number",
+          "value": "15",
+          "labels": [],
+          "uniqueId": false
+        },
+        {
+          "label": "태어난 시 (0~23시):",
+          "role": "spinbutton",
+          "namedControlCount": 0,
+          "id": "",
+          "type": "number",
+          "value": "14",
+          "labels": [],
+          "uniqueId": false
+        }
+      ]
+    },
+    {
+      "scenario": "native label activation",
+      "records": [
+        {
+          "label": "이름",
+          "intendedInputFocused": false
+        },
+        {
+          "label": "태어난 년도",
+          "intendedInputFocused": false
+        },
+        {
+          "label": "월",
+          "intendedInputFocused": false
+        },
+        {
+          "label": "일",
+          "intendedInputFocused": false
+        },
+        {
+          "label": "태어난 시 (0~23시):",
+          "intendedInputFocused": false
+        }
+      ]
+    },
+    {
+      "scenario": "defaults and calculation",
+      "defaults": [
+        {
+          "type": "text",
+          "value": "홍길동",
+          "min": "",
+          "max": "",
+          "maxLength": 20
+        },
+        {
+          "type": "number",
+          "value": "1995",
+          "min": "1900",
+          "max": "2100",
+          "maxLength": -1
+        },
+        {
+          "type": "number",
+          "value": "5",
+          "min": "1",
+          "max": "12",
+          "maxLength": -1
+        },
+        {
+          "type": "number",
+          "value": "15",
+          "min": "1",
+          "max": "31",
+          "maxLength": -1
+        },
+        {
+          "type": "number",
+          "value": "14",
+          "min": "0",
+          "max": "23",
+          "maxLength": -1
+        }
+      ],
+      "resultName": "합성 연결"
+    }
+  ],
+  "errors": [],
+  "api": [],
+  "outbound": [],
+  "limits": [
+    "Actual built Manse form and native Chromium label/keyboard events at 390x844.",
+    "No API call, real user DB or external AI call executes. Calendar calculation accuracy is outside this association change.",
+    "Physical screen readers, hosted authentication, other browsers and physical devices are not tested."
+  ]
+}

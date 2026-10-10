@@ -1,0 +1,51 @@
+{
+  "basis": "410c957e6e82886e45f26ab3d5dcc84c69140efb",
+  "branch": "fix/manse-form-labels-20261010",
+  "productSource": "app/manse/page.tsx",
+  "productSourceSHA256": "12e47d47c36005757f15020c15da9afdbec6663aec99afa0cc59ef61e96aaa4d",
+  "labelControlPairs": 5,
+  "attributesAdded": 10,
+  "before": {
+    "qaPassed": 3,
+    "qaFailed": 2,
+    "namedNativeInputs": 0,
+    "labelsFocusingTheirInputs": 0
+  },
+  "after": {
+    "qaPassed": 5,
+    "qaFailed": 0,
+    "namedNativeInputs": 5,
+    "labelsFocusingTheirInputs": 5
+  },
+  "initialFormScreenshotsByteIdentical": true,
+  "visualInspection": [
+    "before-form.png",
+    "after-form.png"
+  ],
+  "typecheck": {
+    "command": "tsc --noEmit --incremental false",
+    "exitCode": 0,
+    "elapsedSeconds": 4.1
+  },
+  "build": {
+    "command": "npm run build",
+    "exitCode": 0,
+    "elapsedSeconds": 7.6
+  },
+  "scopedLint": {
+    "lintExitCode": 0,
+    "beforeErrors": 0,
+    "afterErrors": 0,
+    "beforeWarnings": 4,
+    "afterWarnings": 4,
+    "baselineDiagnosticsUnchanged": true,
+    "newQaMessages": 0
+  },
+  "scope": "Connect five existing Manse form labels with matching native for/id attributes. Preserve text, styles, input state and calculation.",
+  "remainingObservation": "A preliminary pointer uncheck attempt was intercepted by the disabled hour input at 390px; recorded separately and not addressed by the label change. Final checkbox checks use native Tab/Space.",
+  "limits": [
+    "Actual built form and native Chromium at 390x844.",
+    "No API, real user DB or external AI call executes. Calculation accuracy is outside this association change.",
+    "Physical screen readers, hosted authentication, other browsers and physical devices are not tested."
+  ]
+}
