@@ -1,0 +1,488 @@
+{
+  "status": "PASS",
+  "phase": "item5",
+  "at_utc": "2026-10-11T04:04:02.758Z",
+  "browser": "154.0.8037.98",
+  "products": {
+    "app/guin/page.tsx": "764b7d10af9345d579c4778f93c47b945382179f9b484baa86ba74299f70a7a1",
+    "app/guin/[id]/page.tsx": "b002d5f7d547c5f9ce0f036f3099db0a19784337d6e71d13193d8f1a494cbd5f",
+    "components/AskDoryeongModal.tsx": "6fb49eaf5a63e29d38ee7d490995b1287765a7eb7bb766458b43dfb920417a6c",
+    "components/SajuInputModal.tsx": "4787358979a2427fb9d55fd39933c2def54134e4532244876f8ab10e265e0748",
+    "app/ai-test/page.tsx": "2f4680e8c57104b9d44b05d4cc152f3efa374a3fdbc919453a1c64259b830663"
+  },
+  "harness_sha256": "126012756a1a3f6f294c4cbfc905c3854ebe34c472e9c1b4f9386bd6473b0873",
+  "css_sha256": "4e2f086b3fd0c53e4e5729a49947310046f415c5e7aa7ab4e0428ef8d8dd50ca",
+  "passed": 12,
+  "failed": 0,
+  "groups": {
+    "result": {
+      "passed": 12,
+      "failed": 0
+    }
+  },
+  "checks": [
+    {
+      "group": "result",
+      "name": "null 390",
+      "observed": {
+        "post_count": 1,
+        "result_panel_count": 1,
+        "result_text": "{\n  \"error\": \"시험 결과 응답 형식을 확인할 수 없습니다.\"\n}",
+        "button_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "result",
+      "name": "false 390",
+      "observed": {
+        "post_count": 1,
+        "result_panel_count": 1,
+        "result_text": "{\n  \"error\": \"시험 결과 응답 형식을 확인할 수 없습니다.\"\n}",
+        "button_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "result",
+      "name": "string 390",
+      "observed": {
+        "post_count": 1,
+        "result_panel_count": 1,
+        "result_text": "{\n  \"error\": \"시험 결과 응답 형식을 확인할 수 없습니다.\"\n}",
+        "button_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "result",
+      "name": "array 390",
+      "observed": {
+        "post_count": 1,
+        "result_panel_count": 1,
+        "result_text": "{\n  \"error\": \"시험 결과 응답 형식을 확인할 수 없습니다.\"\n}",
+        "button_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "result",
+      "name": "valid-control 390",
+      "observed": {
+        "post_count": 1,
+        "result_panel_count": 1,
+        "result_text": "{\n  \"success\": true,\n  \"valid\": true,\n  \"errors\": [],\n  \"fixture\": \"known_time\",\n  \"notice\": \"가상 검증 결과\"\n}",
+        "button_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "result",
+      "name": "error-control 390",
+      "observed": {
+        "post_count": 1,
+        "result_panel_count": 1,
+        "result_text": "{\n  \"error\": \"가상 제공자 실패\",\n  \"attempt\": 1\n}",
+        "button_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "result",
+      "name": "null 1440",
+      "observed": {
+        "post_count": 1,
+        "result_panel_count": 1,
+        "result_text": "{\n  \"error\": \"시험 결과 응답 형식을 확인할 수 없습니다.\"\n}",
+        "button_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "result",
+      "name": "false 1440",
+      "observed": {
+        "post_count": 1,
+        "result_panel_count": 1,
+        "result_text": "{\n  \"error\": \"시험 결과 응답 형식을 확인할 수 없습니다.\"\n}",
+        "button_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "result",
+      "name": "string 1440",
+      "observed": {
+        "post_count": 1,
+        "result_panel_count": 1,
+        "result_text": "{\n  \"error\": \"시험 결과 응답 형식을 확인할 수 없습니다.\"\n}",
+        "button_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "result",
+      "name": "array 1440",
+      "observed": {
+        "post_count": 1,
+        "result_panel_count": 1,
+        "result_text": "{\n  \"error\": \"시험 결과 응답 형식을 확인할 수 없습니다.\"\n}",
+        "button_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "result",
+      "name": "valid-control 1440",
+      "observed": {
+        "post_count": 1,
+        "result_panel_count": 1,
+        "result_text": "{\n  \"success\": true,\n  \"valid\": true,\n  \"errors\": [],\n  \"fixture\": \"known_time\",\n  \"notice\": \"가상 검증 결과\"\n}",
+        "button_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "result",
+      "name": "error-control 1440",
+      "observed": {
+        "post_count": 1,
+        "result_panel_count": 1,
+        "result_text": "{\n  \"error\": \"가상 제공자 실패\",\n  \"attempt\": 1\n}",
+        "button_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    }
+  ],
+  "observations": [
+    {
+      "group": "result",
+      "mode": "null",
+      "width": 390,
+      "post_count": 1,
+      "result_panel_count": 1,
+      "result_text": "{\n  \"error\": \"시험 결과 응답 형식을 확인할 수 없습니다.\"\n}",
+      "button_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "result",
+      "mode": "false",
+      "width": 390,
+      "post_count": 1,
+      "result_panel_count": 1,
+      "result_text": "{\n  \"error\": \"시험 결과 응답 형식을 확인할 수 없습니다.\"\n}",
+      "button_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "result",
+      "mode": "string",
+      "width": 390,
+      "post_count": 1,
+      "result_panel_count": 1,
+      "result_text": "{\n  \"error\": \"시험 결과 응답 형식을 확인할 수 없습니다.\"\n}",
+      "button_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "result",
+      "mode": "array",
+      "width": 390,
+      "post_count": 1,
+      "result_panel_count": 1,
+      "result_text": "{\n  \"error\": \"시험 결과 응답 형식을 확인할 수 없습니다.\"\n}",
+      "button_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "result",
+      "mode": "valid-control",
+      "width": 390,
+      "post_count": 1,
+      "result_panel_count": 1,
+      "result_text": "{\n  \"success\": true,\n  \"valid\": true,\n  \"errors\": [],\n  \"fixture\": \"known_time\",\n  \"notice\": \"가상 검증 결과\"\n}",
+      "button_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "result",
+      "mode": "error-control",
+      "width": 390,
+      "post_count": 1,
+      "result_panel_count": 1,
+      "result_text": "{\n  \"error\": \"가상 제공자 실패\",\n  \"attempt\": 1\n}",
+      "button_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "result",
+      "mode": "null",
+      "width": 1440,
+      "post_count": 1,
+      "result_panel_count": 1,
+      "result_text": "{\n  \"error\": \"시험 결과 응답 형식을 확인할 수 없습니다.\"\n}",
+      "button_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "result",
+      "mode": "false",
+      "width": 1440,
+      "post_count": 1,
+      "result_panel_count": 1,
+      "result_text": "{\n  \"error\": \"시험 결과 응답 형식을 확인할 수 없습니다.\"\n}",
+      "button_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "result",
+      "mode": "string",
+      "width": 1440,
+      "post_count": 1,
+      "result_panel_count": 1,
+      "result_text": "{\n  \"error\": \"시험 결과 응답 형식을 확인할 수 없습니다.\"\n}",
+      "button_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "result",
+      "mode": "array",
+      "width": 1440,
+      "post_count": 1,
+      "result_panel_count": 1,
+      "result_text": "{\n  \"error\": \"시험 결과 응답 형식을 확인할 수 없습니다.\"\n}",
+      "button_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "result",
+      "mode": "valid-control",
+      "width": 1440,
+      "post_count": 1,
+      "result_panel_count": 1,
+      "result_text": "{\n  \"success\": true,\n  \"valid\": true,\n  \"errors\": [],\n  \"fixture\": \"known_time\",\n  \"notice\": \"가상 검증 결과\"\n}",
+      "button_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "result",
+      "mode": "error-control",
+      "width": 1440,
+      "post_count": 1,
+      "result_panel_count": 1,
+      "result_text": "{\n  \"error\": \"가상 제공자 실패\",\n  \"attempt\": 1\n}",
+      "button_enabled": true,
+      "page_errors": []
+    }
+  ],
+  "page_errors": [],
+  "console_errors": [],
+  "outbound_requests": [],
+  "synthetic_gets": [
+    {
+      "group": "result",
+      "mode": "null",
+      "width": 390,
+      "endpoint": "ai-fixed-configured"
+    },
+    {
+      "group": "result",
+      "mode": "false",
+      "width": 390,
+      "endpoint": "ai-fixed-configured"
+    },
+    {
+      "group": "result",
+      "mode": "string",
+      "width": 390,
+      "endpoint": "ai-fixed-configured"
+    },
+    {
+      "group": "result",
+      "mode": "array",
+      "width": 390,
+      "endpoint": "ai-fixed-configured"
+    },
+    {
+      "group": "result",
+      "mode": "valid-control",
+      "width": 390,
+      "endpoint": "ai-fixed-configured"
+    },
+    {
+      "group": "result",
+      "mode": "error-control",
+      "width": 390,
+      "endpoint": "ai-fixed-configured"
+    },
+    {
+      "group": "result",
+      "mode": "null",
+      "width": 1440,
+      "endpoint": "ai-fixed-configured"
+    },
+    {
+      "group": "result",
+      "mode": "false",
+      "width": 1440,
+      "endpoint": "ai-fixed-configured"
+    },
+    {
+      "group": "result",
+      "mode": "string",
+      "width": 1440,
+      "endpoint": "ai-fixed-configured"
+    },
+    {
+      "group": "result",
+      "mode": "array",
+      "width": 1440,
+      "endpoint": "ai-fixed-configured"
+    },
+    {
+      "group": "result",
+      "mode": "valid-control",
+      "width": 1440,
+      "endpoint": "ai-fixed-configured"
+    },
+    {
+      "group": "result",
+      "mode": "error-control",
+      "width": 1440,
+      "endpoint": "ai-fixed-configured"
+    }
+  ],
+  "synthetic_posts": [
+    {
+      "group": "result",
+      "mode": "null",
+      "width": 390,
+      "endpoint": "ai",
+      "body": {
+        "case": "known_time"
+      }
+    },
+    {
+      "group": "result",
+      "mode": "false",
+      "width": 390,
+      "endpoint": "ai",
+      "body": {
+        "case": "known_time"
+      }
+    },
+    {
+      "group": "result",
+      "mode": "string",
+      "width": 390,
+      "endpoint": "ai",
+      "body": {
+        "case": "known_time"
+      }
+    },
+    {
+      "group": "result",
+      "mode": "array",
+      "width": 390,
+      "endpoint": "ai",
+      "body": {
+        "case": "known_time"
+      }
+    },
+    {
+      "group": "result",
+      "mode": "valid-control",
+      "width": 390,
+      "endpoint": "ai",
+      "body": {
+        "case": "known_time"
+      }
+    },
+    {
+      "group": "result",
+      "mode": "error-control",
+      "width": 390,
+      "endpoint": "ai",
+      "body": {
+        "case": "known_time"
+      }
+    },
+    {
+      "group": "result",
+      "mode": "null",
+      "width": 1440,
+      "endpoint": "ai",
+      "body": {
+        "case": "known_time"
+      }
+    },
+    {
+      "group": "result",
+      "mode": "false",
+      "width": 1440,
+      "endpoint": "ai",
+      "body": {
+        "case": "known_time"
+      }
+    },
+    {
+      "group": "result",
+      "mode": "string",
+      "width": 1440,
+      "endpoint": "ai",
+      "body": {
+        "case": "known_time"
+      }
+    },
+    {
+      "group": "result",
+      "mode": "array",
+      "width": 1440,
+      "endpoint": "ai",
+      "body": {
+        "case": "known_time"
+      }
+    },
+    {
+      "group": "result",
+      "mode": "valid-control",
+      "width": 1440,
+      "endpoint": "ai",
+      "body": {
+        "case": "known_time"
+      }
+    },
+    {
+      "group": "result",
+      "mode": "error-control",
+      "width": 1440,
+      "endpoint": "ai",
+      "body": {
+        "case": "known_time"
+      }
+    }
+  ],
+  "actual_backend_requests": 0,
+  "database_operations": 0,
+  "actual_ai_provider_calls": 0,
+  "user_clipboard_or_storage_access": 0,
+  "isolated_fictional_session_storage_only": true,
+  "native_pointer_and_keyboard": true,
+  "manual_dom_events": 0,
+  "previous_completed_suites_rerun": 0,
+  "previous_completed_fixes_counted": 0,
+  "scope": "Production relationship create/join known-time fields, create map ID type, Chat modal focus boundary, Saju choice states and AI POST JSON record display. Actual native Chrome React/Tailwind at 390x844 and 1440x1000 with fictional intercepted APIs. Fixed Next/host/navigation landing fixtures, only GalaxyCanvas blank. Pure calculation prepares fictional matching owner/pillars; no correctness claim for calculation, storage ownership or existing GET/status/send validators. No real API/DB/Gemini/user storage/clipboard/3D/hosted/physical device claim. Previous completed suites excluded."
+}

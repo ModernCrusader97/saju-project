@@ -1,0 +1,45 @@
+{
+  "status": "PASS_HARNESS_ASSUMPTIONS_CORRECTED_BEFORE_ANY_PRODUCT_EDIT",
+  "at_utc": "2026-10-11T03:55:16.849Z",
+  "old_harness_sha256": "8803086e4f3b390dd5665bf18de591bef4e68133816d3b57f753eb76d43d7964",
+  "new_harness_sha256": "126012756a1a3f6f294c4cbfc905c3854ebe34c472e9c1b4f9386bd6473b0873",
+  "corrections": [
+    {
+      "before": "assert.equal(errors.length,0);assert.equal(alerts.length,0);if(mode.includes('empty'))",
+      "after": "assert.equal(errors.length,0);assert.equal(alerts.length,join&&!mode.includes('empty')?1:0);if(mode.includes('empty'))",
+      "count": 1
+    },
+    {
+      "before": "assert.equal(value.isolated_session_keys.length,2)",
+      "after": "assert.equal(value.isolated_session_keys.length,3)",
+      "count": 1
+    },
+    {
+      "before": "()=>!Array.from(document.querySelectorAll('button')).find(b=>b.textContent==='가상 사례 1회 전송').disabled",
+      "after": "()=>Array.from(document.querySelectorAll('button')).find(b=>b.textContent==='가상 사례 1회 전송')?.disabled===false",
+      "count": 2
+    },
+    {
+      "before": "A blank known-time field must not submit as midnight",
+      "after": "A blank known-time field must stay at native required-field validation",
+      "count": 1
+    }
+  ],
+  "product_edits": 0,
+  "previous_completed_tests_rerun": 0,
+  "raw_original_before_retained": true,
+  "first_before_result": {
+    "passed": 11,
+    "failed": 35,
+    "page_errors": 6
+  },
+  "first_before_noise": "Six waitForFunction errors were caused by the harness dereferencing the temporarily renamed busy button. Existing join success alerts and three isolated session keys were also initially miscounted.",
+  "revised_time_candidate": {
+    "id": "guin-known-time-required-field-focus",
+    "observed": "Create empty known-hour/minute is rejected by the existing strict integer parser; submit focus stays outside the missing input, whose native valueMissing is false. Join empty-time fields are also native-valid and sent to the API (fictional intercepted acceptance only).",
+    "rejected_hypothesis": "Blank strings are not parsed as midnight. Existing integer() explicitly rejects them.",
+    "minimal_authorized_improvement": "Mark the four known-time inputs across create/manual-join forms required, so native validation focuses the missing field before submission; preserve existing parser, server, valid-known and unknown-time behavior.",
+    "no_actual_bad_value_persistence_claim": true
+  },
+  "limits": "Only helper assumptions were corrected; UI assertions, original FAIL evidence and fixed fictional API protocol are retained. Fresh unchanged-product before-v2 establishes the valid baseline."
+}

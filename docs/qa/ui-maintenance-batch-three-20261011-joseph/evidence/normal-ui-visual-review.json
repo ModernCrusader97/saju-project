@@ -1,0 +1,45 @@
+{
+  "status": "PASS_MEASURED_NORMAL_UI_RASTER_VARIANCE_REVIEW_NO_PRODUCT_OR_CSS_REGRESSION_FOUND",
+  "at_utc": "2026-10-11T04:19:13.228Z",
+  "compared": 16,
+  "byte_identical_count": 13,
+  "pixel_identical_count": 13,
+  "different_png_count": 3,
+  "different_pixels_total": 43,
+  "max_channel_delta": 5,
+  "source_inverse_native_bytes_verified": true,
+  "css_bytes_identical": true,
+  "affected_fixture_observations_identical": true,
+  "desktop_known_unknown_pixel_hashes_cross_match": true,
+  "raw_pixel_diagnostic": "normal-ui-pixel-difference-diagnostic.json",
+  "raw_byte_diagnostic": "normal-ui-byte-difference-diagnostic.json",
+  "direct_original_images_inspected": [
+    "before-v2/time-join-known-control-390.png",
+    "final/time-join-known-control-390.png",
+    "before-v2/time-join-known-control-1440.png",
+    "final/time-join-known-control-1440.png",
+    "before-v2/time-join-unknown-control-1440.png",
+    "final/time-join-unknown-control-1440.png"
+  ],
+  "observations": [
+    "Mobile pair: 37 pixels across small icon/decorative edge regions, maximum channel difference 5/255; full native images show matching content and layout.",
+    "Desktop pairs: three icon-edge pixels each at y=1508, maximum channel difference 1/255; before/final known and unknown captures alternate between exactly the same two pixel hashes.",
+    "Required attributes exist only on the join dialog inputs; these normal captures show the dialog closed. The added fields are absent from the painted normal screen. The other four changes target other pages/dialogs.",
+    "Inference: native raster/compositor quantization variance is consistent with the measured edge changes. Its exact Chrome mechanism was not independently established.",
+    "No visual product regression found in direct inspection. This is a bounded review, not a claim that all screenshots have identical bytes/pixels. Original PNGs, strict-guard failure and diagnostics are retained."
+  ],
+  "original_assembly": {
+    "file": "D:/Codex/Work/SaJuUiBatchThree-20261011-Joseph/authoring/assemble_batch_three.mjs",
+    "sha256": "13fff10c56cfd03951e2e8278163a23c5f02003bcd9ede1b422abad84ecf2fa3",
+    "failed_guard": "Retain any normal UI pixel difference for review before commit",
+    "failure_before_repository_evidence_scope_created": true,
+    "products_changed_after_final_gates": false,
+    "extra_fixes_counted": 0,
+    "extra_regression_cases_counted": 0
+  },
+  "generated_images": 0,
+  "edited_images": 0,
+  "masked_images": 0,
+  "commit_created": false,
+  "push_performed": false
+}

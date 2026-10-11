@@ -1,0 +1,25 @@
+{
+  "status": "PASS_DIRECT_ACTUAL_CHROME_BATCH3_UI_PIXEL_INSPECTION",
+  "at_utc": "2026-10-11T04:06:03.4420460Z",
+  "generated_images": 0,
+  "edited_or_masked_images": 0,
+  "images": [
+    {
+      "observed": "Actual 390px create form retains the fictional draft and shows Chrome native required-input popup at the blank hour. Full-page capture includes the visible form and submit control.",
+      "path": "D:/Codex/Results/SaJuUiBatchThree-20261011-Joseph/item1/time-create-empty-hour-390.png"
+    },
+    {
+      "observed": "Actual chat pane fits 390x844 with its heading, existing close control focus ring, fictional greeting, composer and disabled send control visible. Long input placeholder is naturally truncated by the input width.",
+      "path": "D:/Codex/Results/SaJuUiBatchThree-20261011-Joseph/item3/chat-normal-390.png"
+    },
+    {
+      "observed": "Invalid create ID retains the original create page and fictional name/date/time draft. The existing native error alert is captured and accepted separately in the browser report, not painted into this PNG.",
+      "path": "D:/Codex/Results/SaJuUiBatchThree-20261011-Joseph/item2/id-missing-390.png"
+    },
+    {
+      "observed": "Actual AI test page shows an explicit JSON error explaining that the result response format cannot be checked; the manual send control is available. All responses are fictional.",
+      "path": "D:/Codex/Results/SaJuUiBatchThree-20261011-Joseph/item5/result-null-390.png"
+    }
+  ],
+  "limits": "Actual native Chrome production React/Tailwind under isolated fictional APIs and host/Next/landing fixtures. Only GalaxyCanvas blank. No generated art, 3D/model rendering, real provider/backend/user-storage/hosted-route/physical-device claim."
+}

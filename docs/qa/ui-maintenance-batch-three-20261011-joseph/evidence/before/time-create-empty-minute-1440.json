@@ -1,0 +1,15 @@
+{
+  "post_count": 0,
+  "alerts": [
+    "분은(는) 0~59 사이의 정수로 입력해주세요."
+  ],
+  "page_errors": [],
+  "missing_before": {
+    "required": false,
+    "missing": false
+  },
+  "focused_missing_input": false,
+  "route": "/guin",
+  "request": null,
+  "join_dialog_visible": null
+}

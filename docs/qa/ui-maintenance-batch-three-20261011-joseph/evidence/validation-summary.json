@@ -1,0 +1,1184 @@
+{
+  "status": "PASS_FIVE_NEW_DISTINCT_BATCH3_UI_FIXES_READY_FOR_ONE_BATCH_COMMIT",
+  "at_utc": "2026-10-11T04:19:56.069Z",
+  "host": "Joseph",
+  "branch": "fix/ui-maintenance-batch-three-20261011-joseph",
+  "basis": "05b1e0471755121137f130227a16b62b870f069a",
+  "validated_new_fix_count": 5,
+  "commit_batch_target": 5,
+  "fixes": [
+    {
+      "number": 1,
+      "id": "guin-known-time-required-field-focus",
+      "group": "time",
+      "files": [
+        {
+          "file": "app/guin/page.tsx",
+          "before_sha256": "d7ef63b5a5ce9c822af432fec7d1631f6d29bb145672317eb4e40c7eb7f0b35b",
+          "after_sha256": "dbaa9095b117ad26cc00dc163c6243de2f5445744a4d73b9bca2ffaf40cbc749",
+          "inverse_native_bytes_verified": true
+        },
+        {
+          "file": "app/guin/[id]/page.tsx",
+          "before_sha256": "bc95942c2d8d2c9ab9df2a5b324126a13e57cc7b01665df0128c44f9cd912a61",
+          "after_sha256": "b002d5f7d547c5f9ce0f036f3099db0a19784337d6e71d13193d8f1a494cbd5f",
+          "inverse_native_bytes_verified": true
+        }
+      ],
+      "change": "Require known-hour/minute fields in relationship create/manual-join forms so native missing-field validation focuses the input before submission. Existing strict parser already rejects blanks; preserve valid known and unknown-time flows.",
+      "before_reproduction": {
+        "passed": 8,
+        "failed": 8
+      },
+      "after_focused_verification": {
+        "passed": 16,
+        "failed": 0
+      },
+      "browser": "154.0.8037.98",
+      "viewports": [
+        "390x844",
+        "1440x1000"
+      ],
+      "native_pointer_and_keyboard": true,
+      "manual_dom_events": 0,
+      "proof": "D:/Codex/Results/SaJuUiBatchThree-20261011-Joseph/item1/browser-results.json"
+    },
+    {
+      "number": 2,
+      "id": "guin-create-map-id-type",
+      "group": "id",
+      "files": [
+        {
+          "file": "app/guin/page.tsx",
+          "before_sha256": "dbaa9095b117ad26cc00dc163c6243de2f5445744a4d73b9bca2ffaf40cbc749",
+          "after_sha256": "764b7d10af9345d579c4778f93c47b945382179f9b484baa86ba74299f70a7a1",
+          "inverse_native_bytes_verified": true
+        }
+      ],
+      "change": "Require a string ID matching the already supported map-path characters before persisting or navigating after creation. Missing/null/numeric IDs retain the draft and follow the existing error alert.",
+      "before_reproduction": {
+        "passed": 2,
+        "failed": 6
+      },
+      "after_focused_verification": {
+        "passed": 8,
+        "failed": 0
+      },
+      "browser": "154.0.8037.98",
+      "viewports": [
+        "390x844",
+        "1440x1000"
+      ],
+      "native_pointer_and_keyboard": true,
+      "manual_dom_events": 0,
+      "proof": "D:/Codex/Results/SaJuUiBatchThree-20261011-Joseph/item2/browser-results.json"
+    },
+    {
+      "number": 3,
+      "id": "chat-modal-native-keyboard-boundary",
+      "group": "chat",
+      "files": [
+        {
+          "file": "components/AskDoryeongModal.tsx",
+          "before_sha256": "27a207a8d45c92b2e30c8c2417939e620470fb4dc3526c6e66439b6b1bb604ad",
+          "after_sha256": "6fb49eaf5a63e29d38ee7d490995b1287765a7eb7bb766458b43dfb920417a6c",
+          "inverse_native_bytes_verified": true
+        }
+      ],
+      "change": "Name the conversation pane as a modal dialog, focus its existing close control, contain native Tab/Shift+Tab during normal/pending history and restore the opener. Existing close/history/send logic stays unchanged.",
+      "before_reproduction": {
+        "passed": 2,
+        "failed": 4
+      },
+      "after_focused_verification": {
+        "passed": 6,
+        "failed": 0
+      },
+      "browser": "154.0.8037.98",
+      "viewports": [
+        "390x844",
+        "1440x1000"
+      ],
+      "native_pointer_and_keyboard": true,
+      "manual_dom_events": 0,
+      "proof": "D:/Codex/Results/SaJuUiBatchThree-20261011-Joseph/item3/browser-results.json"
+    },
+    {
+      "number": 4,
+      "id": "saju-input-choice-selection-state",
+      "group": "choice",
+      "files": [
+        {
+          "file": "components/SajuInputModal.tsx",
+          "before_sha256": "b309a761c60404360e164f46efe8c535ebf831d84c0bc08d335b30c05e9d8956",
+          "after_sha256": "4787358979a2427fb9d55fd39933c2def54134e4532244876f8ab10e265e0748",
+          "inverse_native_bytes_verified": true
+        }
+      ],
+      "change": "Expose selected gender and calendar using aria-pressed on the existing five buttons; preserve pointer selection and native Space/Enter without form submission.",
+      "before_reproduction": {
+        "passed": 2,
+        "failed": 2
+      },
+      "after_focused_verification": {
+        "passed": 4,
+        "failed": 0
+      },
+      "browser": "154.0.8037.98",
+      "viewports": [
+        "390x844",
+        "1440x1000"
+      ],
+      "native_pointer_and_keyboard": true,
+      "manual_dom_events": 0,
+      "proof": "D:/Codex/Results/SaJuUiBatchThree-20261011-Joseph/item4/browser-results.json"
+    },
+    {
+      "number": 5,
+      "id": "ai-post-result-json-record",
+      "group": "result",
+      "files": [
+        {
+          "file": "app/ai-test/page.tsx",
+          "before_sha256": "1516ef77ecdb4fb1020001acac839b7356cd64a38753a8a2b6444d349203eb3b",
+          "after_sha256": "2f4680e8c57104b9d44b05d4cc152f3efa374a3fdbc919453a1c64259b830663",
+          "inverse_native_bytes_verified": true
+        }
+      ],
+      "change": "Show an explicit visible result-format error for POST null/primitives/arrays instead of accepting them or silently hiding null. Preserve valid/error JSON objects and one explicit request without auto-retry; existing GET status validator is unchanged.",
+      "before_reproduction": {
+        "passed": 4,
+        "failed": 8
+      },
+      "after_focused_verification": {
+        "passed": 12,
+        "failed": 0
+      },
+      "browser": "154.0.8037.98",
+      "viewports": [
+        "390x844",
+        "1440x1000"
+      ],
+      "native_pointer_and_keyboard": true,
+      "manual_dom_events": 0,
+      "proof": "D:/Codex/Results/SaJuUiBatchThree-20261011-Joseph/item5/browser-results.json"
+    }
+  ],
+  "new_native_cases": {
+    "before_passed": 18,
+    "before_failed": 28,
+    "before_page_errors": 0,
+    "final_passed": 46,
+    "final_failed": 0,
+    "final_page_errors": 0,
+    "final_console_errors": 0,
+    "final_outbound_requests": 0
+  },
+  "focused_native_cases": 46,
+  "current_batch_final_regression_cases": 46,
+  "current_batch_types_exit": 0,
+  "current_batch_production_build_exit": 0,
+  "lint": {
+    "existing_errors": 4,
+    "existing_warnings": 7,
+    "new_errors": 0,
+    "new_warnings": 0,
+    "qa_errors": 0,
+    "qa_warnings": 0,
+    "rules_or_suppressions_changed": false
+  },
+  "visual": {
+    "status": "PASS_SIXTEEN_NORMAL_UI_CAPTURES_REVIEWED_THIRTEEN_BYTE_IDENTICAL_THREE_BOUNDED_RASTER_DIFFERENCES",
+    "normal_pngs": [
+      {
+        "file": "time-create-known-control-390.png",
+        "bytes": 5715,
+        "before_sha256": "dac4b99b0283c075fc6ab07ce9ffd20ec10cc3a25de6305672584baeeaea2ffb",
+        "final_sha256": "dac4b99b0283c075fc6ab07ce9ffd20ec10cc3a25de6305672584baeeaea2ffb",
+        "byte_identical": true
+      },
+      {
+        "file": "time-create-unknown-control-390.png",
+        "bytes": 5715,
+        "before_sha256": "dac4b99b0283c075fc6ab07ce9ffd20ec10cc3a25de6305672584baeeaea2ffb",
+        "final_sha256": "dac4b99b0283c075fc6ab07ce9ffd20ec10cc3a25de6305672584baeeaea2ffb",
+        "byte_identical": true
+      },
+      {
+        "file": "time-join-known-control-390.png",
+        "bytes": 133886,
+        "before_sha256": "5caacb68a85f2ec26e3d827644d9dcb600032796183d1236710f7ccb728ec56d",
+        "final_sha256": "e64ee75ad61dd56e71b9942561b248e641e04047469f80b148188a5b25bd0c62",
+        "byte_identical": false
+      },
+      {
+        "file": "time-join-unknown-control-390.png",
+        "bytes": 133895,
+        "before_sha256": "5caacb68a85f2ec26e3d827644d9dcb600032796183d1236710f7ccb728ec56d",
+        "final_sha256": "5caacb68a85f2ec26e3d827644d9dcb600032796183d1236710f7ccb728ec56d",
+        "byte_identical": true
+      },
+      {
+        "file": "id-valid-control-390.png",
+        "bytes": 5715,
+        "before_sha256": "dac4b99b0283c075fc6ab07ce9ffd20ec10cc3a25de6305672584baeeaea2ffb",
+        "final_sha256": "dac4b99b0283c075fc6ab07ce9ffd20ec10cc3a25de6305672584baeeaea2ffb",
+        "byte_identical": true
+      },
+      {
+        "file": "choice-pointer-control-390.png",
+        "bytes": 42028,
+        "before_sha256": "ef43d00068173bcb32241b1fffc902035d45790909559f42871688557a8e5deb",
+        "final_sha256": "ef43d00068173bcb32241b1fffc902035d45790909559f42871688557a8e5deb",
+        "byte_identical": true
+      },
+      {
+        "file": "result-valid-control-390.png",
+        "bytes": 30479,
+        "before_sha256": "8149b37cd7f6fd0fd2ecba16d3bb4f0fedff48baa9f6d2337f288c82ef174a08",
+        "final_sha256": "8149b37cd7f6fd0fd2ecba16d3bb4f0fedff48baa9f6d2337f288c82ef174a08",
+        "byte_identical": true
+      },
+      {
+        "file": "result-error-control-390.png",
+        "bytes": 28765,
+        "before_sha256": "1d5315133647c882dd91c0be3e003110616ae823cd0286cdd332602bcfbc66a1",
+        "final_sha256": "1d5315133647c882dd91c0be3e003110616ae823cd0286cdd332602bcfbc66a1",
+        "byte_identical": true
+      },
+      {
+        "file": "time-create-known-control-1440.png",
+        "bytes": 9675,
+        "before_sha256": "8d85451c7f75cea6a21d5fca3c8dce3ea5a3e2bc47a84d154ff1955f2a096547",
+        "final_sha256": "8d85451c7f75cea6a21d5fca3c8dce3ea5a3e2bc47a84d154ff1955f2a096547",
+        "byte_identical": true
+      },
+      {
+        "file": "time-create-unknown-control-1440.png",
+        "bytes": 9675,
+        "before_sha256": "8d85451c7f75cea6a21d5fca3c8dce3ea5a3e2bc47a84d154ff1955f2a096547",
+        "final_sha256": "8d85451c7f75cea6a21d5fca3c8dce3ea5a3e2bc47a84d154ff1955f2a096547",
+        "byte_identical": true
+      },
+      {
+        "file": "time-join-known-control-1440.png",
+        "bytes": 196235,
+        "before_sha256": "2dc919bece7bff1e8ff0ec533a13096e444002aac30c109ee3e46ef6229e3262",
+        "final_sha256": "47247640b916379d5a78d978f9935c6b2727d47109849bbb721283063a99ecb0",
+        "byte_identical": false
+      },
+      {
+        "file": "time-join-unknown-control-1440.png",
+        "bytes": 196236,
+        "before_sha256": "47247640b916379d5a78d978f9935c6b2727d47109849bbb721283063a99ecb0",
+        "final_sha256": "2dc919bece7bff1e8ff0ec533a13096e444002aac30c109ee3e46ef6229e3262",
+        "byte_identical": false
+      },
+      {
+        "file": "id-valid-control-1440.png",
+        "bytes": 9675,
+        "before_sha256": "8d85451c7f75cea6a21d5fca3c8dce3ea5a3e2bc47a84d154ff1955f2a096547",
+        "final_sha256": "8d85451c7f75cea6a21d5fca3c8dce3ea5a3e2bc47a84d154ff1955f2a096547",
+        "byte_identical": true
+      },
+      {
+        "file": "choice-pointer-control-1440.png",
+        "bytes": 54036,
+        "before_sha256": "0c5960e8432d3f9a7a0cbeed73bbc8e74d5c8c41e67d6cae47cd1c663efd1c7e",
+        "final_sha256": "0c5960e8432d3f9a7a0cbeed73bbc8e74d5c8c41e67d6cae47cd1c663efd1c7e",
+        "byte_identical": true
+      },
+      {
+        "file": "result-valid-control-1440.png",
+        "bytes": 39042,
+        "before_sha256": "fb4c92261c381a936afcdef01897b312aa92453d90ef7435efda59520a89b273",
+        "final_sha256": "fb4c92261c381a936afcdef01897b312aa92453d90ef7435efda59520a89b273",
+        "byte_identical": true
+      },
+      {
+        "file": "result-error-control-1440.png",
+        "bytes": 36818,
+        "before_sha256": "7d813ec78619d3ac24f45e0dde9fda37cfad491c17e0138267f667ce49d203a2",
+        "final_sha256": "7d813ec78619d3ac24f45e0dde9fda37cfad491c17e0138267f667ce49d203a2",
+        "byte_identical": true
+      }
+    ],
+    "compared": 16,
+    "byte_identical_count": 13,
+    "pixel_identical_count": 13,
+    "different_png_count": 3,
+    "different_pixels_total": 43,
+    "max_channel_delta": 5,
+    "css_sha256_before": "4e2f086b3fd0c53e4e5729a49947310046f415c5e7aa7ab4e0428ef8d8dd50ca",
+    "css_sha256_final": "4e2f086b3fd0c53e4e5729a49947310046f415c5e7aa7ab4e0428ef8d8dd50ca",
+    "css_bytes_identical": true,
+    "changed_chat_focus_ring_not_in_unchanged_control_set": true,
+    "generated_images": 0,
+    "altered_or_masked_images": 0,
+    "normal_review": {
+      "status": "PASS_MEASURED_NORMAL_UI_RASTER_VARIANCE_REVIEW_NO_PRODUCT_OR_CSS_REGRESSION_FOUND",
+      "at_utc": "2026-10-11T04:19:13.228Z",
+      "compared": 16,
+      "byte_identical_count": 13,
+      "pixel_identical_count": 13,
+      "different_png_count": 3,
+      "different_pixels_total": 43,
+      "max_channel_delta": 5,
+      "source_inverse_native_bytes_verified": true,
+      "css_bytes_identical": true,
+      "affected_fixture_observations_identical": true,
+      "desktop_known_unknown_pixel_hashes_cross_match": true,
+      "raw_pixel_diagnostic": "normal-ui-pixel-difference-diagnostic.json",
+      "raw_byte_diagnostic": "normal-ui-byte-difference-diagnostic.json",
+      "direct_original_images_inspected": [
+        "before-v2/time-join-known-control-390.png",
+        "final/time-join-known-control-390.png",
+        "before-v2/time-join-known-control-1440.png",
+        "final/time-join-known-control-1440.png",
+        "before-v2/time-join-unknown-control-1440.png",
+        "final/time-join-unknown-control-1440.png"
+      ],
+      "observations": [
+        "Mobile pair: 37 pixels across small icon/decorative edge regions, maximum channel difference 5/255; full native images show matching content and layout.",
+        "Desktop pairs: three icon-edge pixels each at y=1508, maximum channel difference 1/255; before/final known and unknown captures alternate between exactly the same two pixel hashes.",
+        "Required attributes exist only on the join dialog inputs; these normal captures show the dialog closed. The added fields are absent from the painted normal screen. The other four changes target other pages/dialogs.",
+        "Inference: native raster/compositor quantization variance is consistent with the measured edge changes. Its exact Chrome mechanism was not independently established.",
+        "No visual product regression found in direct inspection. This is a bounded review, not a claim that all screenshots have identical bytes/pixels. Original PNGs, strict-guard failure and diagnostics are retained."
+      ],
+      "original_assembly": {
+        "file": "D:/Codex/Work/SaJuUiBatchThree-20261011-Joseph/authoring/assemble_batch_three.mjs",
+        "sha256": "13fff10c56cfd03951e2e8278163a23c5f02003bcd9ede1b422abad84ecf2fa3",
+        "failed_guard": "Retain any normal UI pixel difference for review before commit",
+        "failure_before_repository_evidence_scope_created": true,
+        "products_changed_after_final_gates": false,
+        "extra_fixes_counted": 0,
+        "extra_regression_cases_counted": 0
+      },
+      "generated_images": 0,
+      "edited_images": 0,
+      "masked_images": 0,
+      "commit_created": false,
+      "push_performed": false
+    },
+    "pixel_analysis": {
+      "status": "RETAINED_RAW_PNG_PIXEL_DIFFERENCE_ANALYSIS_BEFORE_COMMIT",
+      "analysis": "Independent standard-library PNG chunk CRC, zlib and reverse-filter decode. No image edited, masked or regenerated.",
+      "pairs": [
+        {
+          "file": "time-create-known-control-390.png",
+          "width": 390,
+          "height": 844,
+          "channels": 3,
+          "byte_identical": true,
+          "pixel_identical": true,
+          "different_pixels": 0,
+          "total_pixels": 329160,
+          "max_channel_delta": 0,
+          "bounds": null,
+          "first_samples": [],
+          "before_pixel_sha256": "8de17b132137fef0bad923c08a6fc2680cc93dbbacd5ff33f32557bbdbe24a17",
+          "final_pixel_sha256": "8de17b132137fef0bad923c08a6fc2680cc93dbbacd5ff33f32557bbdbe24a17",
+          "chunk_types_identical": true,
+          "row_filters_identical": true
+        },
+        {
+          "file": "time-create-unknown-control-390.png",
+          "width": 390,
+          "height": 844,
+          "channels": 3,
+          "byte_identical": true,
+          "pixel_identical": true,
+          "different_pixels": 0,
+          "total_pixels": 329160,
+          "max_channel_delta": 0,
+          "bounds": null,
+          "first_samples": [],
+          "before_pixel_sha256": "8de17b132137fef0bad923c08a6fc2680cc93dbbacd5ff33f32557bbdbe24a17",
+          "final_pixel_sha256": "8de17b132137fef0bad923c08a6fc2680cc93dbbacd5ff33f32557bbdbe24a17",
+          "chunk_types_identical": true,
+          "row_filters_identical": true
+        },
+        {
+          "file": "time-join-known-control-390.png",
+          "width": 390,
+          "height": 2132,
+          "channels": 3,
+          "byte_identical": false,
+          "pixel_identical": false,
+          "different_pixels": 37,
+          "total_pixels": 831480,
+          "max_channel_delta": 5,
+          "bounds": {
+            "left": 41,
+            "top": 1084,
+            "right": 348,
+            "bottom": 2005
+          },
+          "first_samples": [
+            {
+              "x": 258,
+              "y": 1084,
+              "before": [
+                49,
+                69,
+                62
+              ],
+              "final": [
+                49,
+                66,
+                61
+              ]
+            },
+            {
+              "x": 259,
+              "y": 1084,
+              "before": [
+                41,
+                56,
+                59
+              ],
+              "final": [
+                40,
+                54,
+                59
+              ]
+            },
+            {
+              "x": 330,
+              "y": 1084,
+              "before": [
+                37,
+                51,
+                52
+              ],
+              "final": [
+                36,
+                49,
+                51
+              ]
+            },
+            {
+              "x": 331,
+              "y": 1084,
+              "before": [
+                46,
+                64,
+                55
+              ],
+              "final": [
+                45,
+                62,
+                55
+              ]
+            },
+            {
+              "x": 259,
+              "y": 1085,
+              "before": [
+                51,
+                71,
+                62
+              ],
+              "final": [
+                51,
+                72,
+                62
+              ]
+            },
+            {
+              "x": 260,
+              "y": 1085,
+              "before": [
+                44,
+                59,
+                60
+              ],
+              "final": [
+                45,
+                62,
+                60
+              ]
+            },
+            {
+              "x": 329,
+              "y": 1085,
+              "before": [
+                40,
+                56,
+                53
+              ],
+              "final": [
+                42,
+                59,
+                53
+              ]
+            },
+            {
+              "x": 330,
+              "y": 1085,
+              "before": [
+                48,
+                68,
+                56
+              ],
+              "final": [
+                49,
+                69,
+                56
+              ]
+            },
+            {
+              "x": 261,
+              "y": 1086,
+              "before": [
+                52,
+                71,
+                62
+              ],
+              "final": [
+                52,
+                70,
+                61
+              ]
+            },
+            {
+              "x": 262,
+              "y": 1086,
+              "before": [
+                49,
+                66,
+                61
+              ],
+              "final": [
+                49,
+                67,
+                61
+              ]
+            },
+            {
+              "x": 263,
+              "y": 1086,
+              "before": [
+                46,
+                63,
+                60
+              ],
+              "final": [
+                46,
+                63,
+                61
+              ]
+            },
+            {
+              "x": 326,
+              "y": 1086,
+              "before": [
+                42,
+                59,
+                53
+              ],
+              "final": [
+                43,
+                59,
+                54
+              ]
+            }
+          ],
+          "before_pixel_sha256": "72d2d754bcfe6abcfce972c4c55f466715f7819bfe382262dcb7864d68cf069a",
+          "final_pixel_sha256": "0d16310f845c20e6a1b436ff5a68539f74b58001c910ff280ff8406347237377",
+          "chunk_types_identical": true,
+          "row_filters_identical": true
+        },
+        {
+          "file": "time-join-unknown-control-390.png",
+          "width": 390,
+          "height": 2132,
+          "channels": 3,
+          "byte_identical": true,
+          "pixel_identical": true,
+          "different_pixels": 0,
+          "total_pixels": 831480,
+          "max_channel_delta": 0,
+          "bounds": null,
+          "first_samples": [],
+          "before_pixel_sha256": "72d2d754bcfe6abcfce972c4c55f466715f7819bfe382262dcb7864d68cf069a",
+          "final_pixel_sha256": "72d2d754bcfe6abcfce972c4c55f466715f7819bfe382262dcb7864d68cf069a",
+          "chunk_types_identical": true,
+          "row_filters_identical": true
+        },
+        {
+          "file": "id-valid-control-390.png",
+          "width": 390,
+          "height": 844,
+          "channels": 3,
+          "byte_identical": true,
+          "pixel_identical": true,
+          "different_pixels": 0,
+          "total_pixels": 329160,
+          "max_channel_delta": 0,
+          "bounds": null,
+          "first_samples": [],
+          "before_pixel_sha256": "8de17b132137fef0bad923c08a6fc2680cc93dbbacd5ff33f32557bbdbe24a17",
+          "final_pixel_sha256": "8de17b132137fef0bad923c08a6fc2680cc93dbbacd5ff33f32557bbdbe24a17",
+          "chunk_types_identical": true,
+          "row_filters_identical": true
+        },
+        {
+          "file": "choice-pointer-control-390.png",
+          "width": 390,
+          "height": 844,
+          "channels": 3,
+          "byte_identical": true,
+          "pixel_identical": true,
+          "different_pixels": 0,
+          "total_pixels": 329160,
+          "max_channel_delta": 0,
+          "bounds": null,
+          "first_samples": [],
+          "before_pixel_sha256": "afcaba7565ac096342dd193b595c511065b301b608b0b94e586a24e9e24d8a10",
+          "final_pixel_sha256": "afcaba7565ac096342dd193b595c511065b301b608b0b94e586a24e9e24d8a10",
+          "chunk_types_identical": true,
+          "row_filters_identical": true
+        },
+        {
+          "file": "result-valid-control-390.png",
+          "width": 390,
+          "height": 844,
+          "channels": 3,
+          "byte_identical": true,
+          "pixel_identical": true,
+          "different_pixels": 0,
+          "total_pixels": 329160,
+          "max_channel_delta": 0,
+          "bounds": null,
+          "first_samples": [],
+          "before_pixel_sha256": "fcf6df412226b663cea358d64fa777bea819e47b7183acff35af4c8593a7eb26",
+          "final_pixel_sha256": "fcf6df412226b663cea358d64fa777bea819e47b7183acff35af4c8593a7eb26",
+          "chunk_types_identical": true,
+          "row_filters_identical": true
+        },
+        {
+          "file": "result-error-control-390.png",
+          "width": 390,
+          "height": 844,
+          "channels": 3,
+          "byte_identical": true,
+          "pixel_identical": true,
+          "different_pixels": 0,
+          "total_pixels": 329160,
+          "max_channel_delta": 0,
+          "bounds": null,
+          "first_samples": [],
+          "before_pixel_sha256": "938941c978251e54c0bca1a6b56bccfdcc932427526f97d396623facf5f2bb82",
+          "final_pixel_sha256": "938941c978251e54c0bca1a6b56bccfdcc932427526f97d396623facf5f2bb82",
+          "chunk_types_identical": true,
+          "row_filters_identical": true
+        },
+        {
+          "file": "time-create-known-control-1440.png",
+          "width": 1440,
+          "height": 1000,
+          "channels": 3,
+          "byte_identical": true,
+          "pixel_identical": true,
+          "different_pixels": 0,
+          "total_pixels": 1440000,
+          "max_channel_delta": 0,
+          "bounds": null,
+          "first_samples": [],
+          "before_pixel_sha256": "a835be0d87634845fd1be056b276a64a8c4b244b0de9aac7740eb3a8f55decc9",
+          "final_pixel_sha256": "a835be0d87634845fd1be056b276a64a8c4b244b0de9aac7740eb3a8f55decc9",
+          "chunk_types_identical": true,
+          "row_filters_identical": true
+        },
+        {
+          "file": "time-create-unknown-control-1440.png",
+          "width": 1440,
+          "height": 1000,
+          "channels": 3,
+          "byte_identical": true,
+          "pixel_identical": true,
+          "different_pixels": 0,
+          "total_pixels": 1440000,
+          "max_channel_delta": 0,
+          "bounds": null,
+          "first_samples": [],
+          "before_pixel_sha256": "a835be0d87634845fd1be056b276a64a8c4b244b0de9aac7740eb3a8f55decc9",
+          "final_pixel_sha256": "a835be0d87634845fd1be056b276a64a8c4b244b0de9aac7740eb3a8f55decc9",
+          "chunk_types_identical": true,
+          "row_filters_identical": true
+        },
+        {
+          "file": "time-join-known-control-1440.png",
+          "width": 1440,
+          "height": 1635,
+          "channels": 3,
+          "byte_identical": false,
+          "pixel_identical": false,
+          "different_pixels": 3,
+          "total_pixels": 2354400,
+          "max_channel_delta": 1,
+          "bounds": {
+            "left": 398,
+            "top": 1508,
+            "right": 1339,
+            "bottom": 1508
+          },
+          "first_samples": [
+            {
+              "x": 398,
+              "y": 1508,
+              "before": [
+                113,
+                144,
+                101
+              ],
+              "final": [
+                113,
+                143,
+                102
+              ]
+            },
+            {
+              "x": 869,
+              "y": 1508,
+              "before": [
+                114,
+                144,
+                101
+              ],
+              "final": [
+                114,
+                143,
+                102
+              ]
+            },
+            {
+              "x": 1339,
+              "y": 1508,
+              "before": [
+                113,
+                144,
+                101
+              ],
+              "final": [
+                113,
+                143,
+                102
+              ]
+            }
+          ],
+          "before_pixel_sha256": "bfc830590d7b0106af78404a5ebe8bdd325eb0d83c19f44fce4df7ace772a472",
+          "final_pixel_sha256": "4a8ddd041c4393446a93d0ec6ce0c251bfa29b2747353d9f2746317af8d80d11",
+          "chunk_types_identical": true,
+          "row_filters_identical": true
+        },
+        {
+          "file": "time-join-unknown-control-1440.png",
+          "width": 1440,
+          "height": 1635,
+          "channels": 3,
+          "byte_identical": false,
+          "pixel_identical": false,
+          "different_pixels": 3,
+          "total_pixels": 2354400,
+          "max_channel_delta": 1,
+          "bounds": {
+            "left": 398,
+            "top": 1508,
+            "right": 1339,
+            "bottom": 1508
+          },
+          "first_samples": [
+            {
+              "x": 398,
+              "y": 1508,
+              "before": [
+                113,
+                143,
+                102
+              ],
+              "final": [
+                113,
+                144,
+                101
+              ]
+            },
+            {
+              "x": 869,
+              "y": 1508,
+              "before": [
+                114,
+                143,
+                102
+              ],
+              "final": [
+                114,
+                144,
+                101
+              ]
+            },
+            {
+              "x": 1339,
+              "y": 1508,
+              "before": [
+                113,
+                143,
+                102
+              ],
+              "final": [
+                113,
+                144,
+                101
+              ]
+            }
+          ],
+          "before_pixel_sha256": "4a8ddd041c4393446a93d0ec6ce0c251bfa29b2747353d9f2746317af8d80d11",
+          "final_pixel_sha256": "bfc830590d7b0106af78404a5ebe8bdd325eb0d83c19f44fce4df7ace772a472",
+          "chunk_types_identical": true,
+          "row_filters_identical": true
+        },
+        {
+          "file": "id-valid-control-1440.png",
+          "width": 1440,
+          "height": 1000,
+          "channels": 3,
+          "byte_identical": true,
+          "pixel_identical": true,
+          "different_pixels": 0,
+          "total_pixels": 1440000,
+          "max_channel_delta": 0,
+          "bounds": null,
+          "first_samples": [],
+          "before_pixel_sha256": "a835be0d87634845fd1be056b276a64a8c4b244b0de9aac7740eb3a8f55decc9",
+          "final_pixel_sha256": "a835be0d87634845fd1be056b276a64a8c4b244b0de9aac7740eb3a8f55decc9",
+          "chunk_types_identical": true,
+          "row_filters_identical": true
+        },
+        {
+          "file": "choice-pointer-control-1440.png",
+          "width": 1440,
+          "height": 1000,
+          "channels": 3,
+          "byte_identical": true,
+          "pixel_identical": true,
+          "different_pixels": 0,
+          "total_pixels": 1440000,
+          "max_channel_delta": 0,
+          "bounds": null,
+          "first_samples": [],
+          "before_pixel_sha256": "049bdd75e42e6a0a95843e36eaae1876b436295466448620d6d6dcb34017c2a1",
+          "final_pixel_sha256": "049bdd75e42e6a0a95843e36eaae1876b436295466448620d6d6dcb34017c2a1",
+          "chunk_types_identical": true,
+          "row_filters_identical": true
+        },
+        {
+          "file": "result-valid-control-1440.png",
+          "width": 1440,
+          "height": 1000,
+          "channels": 3,
+          "byte_identical": true,
+          "pixel_identical": true,
+          "different_pixels": 0,
+          "total_pixels": 1440000,
+          "max_channel_delta": 0,
+          "bounds": null,
+          "first_samples": [],
+          "before_pixel_sha256": "6b35eb9354f35b636653a2e11e49a54ee5eb1152c59ef7359b33a7d4a981f08a",
+          "final_pixel_sha256": "6b35eb9354f35b636653a2e11e49a54ee5eb1152c59ef7359b33a7d4a981f08a",
+          "chunk_types_identical": true,
+          "row_filters_identical": true
+        },
+        {
+          "file": "result-error-control-1440.png",
+          "width": 1440,
+          "height": 1000,
+          "channels": 3,
+          "byte_identical": true,
+          "pixel_identical": true,
+          "different_pixels": 0,
+          "total_pixels": 1440000,
+          "max_channel_delta": 0,
+          "bounds": null,
+          "first_samples": [],
+          "before_pixel_sha256": "bd37bffaa45627e3671b2e0f450b99631464f50a4c1737d64b4495f1a1316350",
+          "final_pixel_sha256": "bd37bffaa45627e3671b2e0f450b99631464f50a4c1737d64b4495f1a1316350",
+          "chunk_types_identical": true,
+          "row_filters_identical": true
+        }
+      ],
+      "byte_identical_count": 13,
+      "pixel_identical_count": 13,
+      "generated_images": 0,
+      "altered_images": 0,
+      "commit_created": false,
+      "push_performed": false
+    }
+  },
+  "source_inverse": [
+    {
+      "file": "app/guin/page.tsx",
+      "basis_native_sha256": "d7ef63b5a5ce9c822af432fec7d1631f6d29bb145672317eb4e40c7eb7f0b35b",
+      "current_native_sha256": "764b7d10af9345d579c4778f93c47b945382179f9b484baa86ba74299f70a7a1",
+      "native_before_bytes": 13063,
+      "native_after_bytes": 13173,
+      "whole_product_inverse_native_bytes_identical": true
+    },
+    {
+      "file": "app/guin/[id]/page.tsx",
+      "basis_native_sha256": "bc95942c2d8d2c9ab9df2a5b324126a13e57cc7b01665df0128c44f9cd912a61",
+      "current_native_sha256": "b002d5f7d547c5f9ce0f036f3099db0a19784337d6e71d13193d8f1a494cbd5f",
+      "native_before_bytes": 33824,
+      "native_after_bytes": 33892,
+      "whole_product_inverse_native_bytes_identical": true
+    },
+    {
+      "file": "components/AskDoryeongModal.tsx",
+      "basis_native_sha256": "27a207a8d45c92b2e30c8c2417939e620470fb4dc3526c6e66439b6b1bb604ad",
+      "current_native_sha256": "6fb49eaf5a63e29d38ee7d490995b1287765a7eb7bb766458b43dfb920417a6c",
+      "native_before_bytes": 12810,
+      "native_after_bytes": 14546,
+      "whole_product_inverse_native_bytes_identical": true
+    },
+    {
+      "file": "components/SajuInputModal.tsx",
+      "basis_native_sha256": "b309a761c60404360e164f46efe8c535ebf831d84c0bc08d335b30c05e9d8956",
+      "current_native_sha256": "4787358979a2427fb9d55fd39933c2def54134e4532244876f8ab10e265e0748",
+      "native_before_bytes": 16393,
+      "native_after_bytes": 16564,
+      "whole_product_inverse_native_bytes_identical": true
+    },
+    {
+      "file": "app/ai-test/page.tsx",
+      "basis_native_sha256": "1516ef77ecdb4fb1020001acac839b7356cd64a38753a8a2b6444d349203eb3b",
+      "current_native_sha256": "2f4680e8c57104b9d44b05d4cc152f3efa374a3fdbc919453a1c64259b830663",
+      "native_before_bytes": 2521,
+      "native_after_bytes": 2699,
+      "whole_product_inverse_native_bytes_identical": true
+    }
+  ],
+  "intermediate_1of5_drive_backup": {
+    "status": "PASS_PRIVATE_NEW_DRIVE_INTERMEDIATE_1OF5_METADATA_VERIFIED",
+    "validated_new_fix_count": 1,
+    "commit_batch_target": 5,
+    "commit_created": false,
+    "push_performed": false,
+    "local_path": "D:\\Codex\\Results\\SaJuUiBatchThree-20261011-Joseph\\SaJu_UI_Batch3_Progress_1of5_20261011_Joseph_05b1e047.zip",
+    "bytes": 6856487,
+    "local_sha256": "ae9771a770def9801bffb90e42c9fa55e229a7fd18fa920d17cf6a97658fb908",
+    "id": "1yDA42YMDNRZzgoy8GbZP6CDCY8oi2Nk6",
+    "url": "https://drive.google.com/file/d/1yDA42YMDNRZzgoy8GbZP6CDCY8oi2Nk6/view?usp=drivesdk",
+    "shared": false,
+    "permissions": [
+      {
+        "type": "user",
+        "role": "owner"
+      }
+    ],
+    "owner_only": true,
+    "size_metadata_verified": true,
+    "remote_drive_bytes_independently_rehashed": false
+  },
+  "previous_completed_suites_rerun": 0,
+  "previous_completed_fixes_counted": 0,
+  "previous_qa_directories_excluded": 25,
+  "previous_batch_fixes_excluded": 10,
+  "original_remote_branches_preserved": 61,
+  "legacy_wip_files_byte_preserved": 3,
+  "protected_art_checkouts": 5,
+  "initial_own_wip": [],
+  "direct_visual_inspection": {
+    "status": "PASS_DIRECT_ACTUAL_CHROME_BATCH3_UI_PIXEL_INSPECTION",
+    "at_utc": "2026-10-11T04:06:03.4420460Z",
+    "generated_images": 0,
+    "edited_or_masked_images": 0,
+    "images": [
+      {
+        "observed": "Actual 390px create form retains the fictional draft and shows Chrome native required-input popup at the blank hour. Full-page capture includes the visible form and submit control.",
+        "path": "D:/Codex/Results/SaJuUiBatchThree-20261011-Joseph/item1/time-create-empty-hour-390.png"
+      },
+      {
+        "observed": "Actual chat pane fits 390x844 with its heading, existing close control focus ring, fictional greeting, composer and disabled send control visible. Long input placeholder is naturally truncated by the input width.",
+        "path": "D:/Codex/Results/SaJuUiBatchThree-20261011-Joseph/item3/chat-normal-390.png"
+      },
+      {
+        "observed": "Invalid create ID retains the original create page and fictional name/date/time draft. The existing native error alert is captured and accepted separately in the browser report, not painted into this PNG.",
+        "path": "D:/Codex/Results/SaJuUiBatchThree-20261011-Joseph/item2/id-missing-390.png"
+      },
+      {
+        "observed": "Actual AI test page shows an explicit JSON error explaining that the result response format cannot be checked; the manual send control is available. All responses are fictional.",
+        "path": "D:/Codex/Results/SaJuUiBatchThree-20261011-Joseph/item5/result-null-390.png"
+      }
+    ],
+    "limits": "Actual native Chrome production React/Tailwind under isolated fictional APIs and host/Next/landing fixtures. Only GalaxyCanvas blank. No generated art, 3D/model rendering, real provider/backend/user-storage/hosted-route/physical-device claim."
+  },
+  "build_input_preservation": {
+    "branch_switch": {
+      "status": "PASS_EXISTING_PRODUCT_BUILD_INPUT_AND_RUNTIME_BYTES_PRESERVED_ON_NEW_BRANCH",
+      "restored_missing_identical_dependencies": [
+        "assets/source-reference/saju-b-evolving-light-v002/SHA256SUMS.txt",
+        "assets/source-reference/saju-b-evolving-light-v002/reference/SaJu_Jade_Approved_Static_Material.glb",
+        "assets/source-reference/saju-b-evolving-light-v002/runtime/textures/jade_fields_atlas_128.png",
+        "assets/source-reference/saju-b-evolving-light-v002/runtime/textures/Jade_OriginalBaseColor_1024.png",
+        "assets/source-reference/saju-b-evolving-light-v002/preview_keyframes/001.png",
+        "assets/source-reference/saju-b-evolving-light-v002/runtime/saju-jade-evolution.glsl",
+        "assets/source-reference/saju-b-evolving-light-v002/runtime/saju-jade-evolution.mjs",
+        ".openai/hosting.json"
+      ],
+      "products": 5,
+      "canonical_inputs": 8,
+      "runtime_outputs": 5,
+      "existing_file_overwrites": 0,
+      "raw_hosting_values_recorded": false,
+      "model_or_default_change": false,
+      "staged_diff_empty": true
+    },
+    "after_gates": {
+      "status": "PASS_THIRTEEN_EXISTING_CANONICAL_INPUT_AND_RUNTIME_FILES_BYTES_PRESERVED_AFTER_GATES",
+      "files": [
+        {
+          "file": "assets/source-reference/saju-b-evolving-light-v002/SHA256SUMS.txt",
+          "bytes": 4521,
+          "sha256": "a8c57385c849549a44baa66ed802a2ee3f1d8a12a4b6afb8c21915241978927f",
+          "byte_identical_to_initial_batch3_checkpoint": true
+        },
+        {
+          "file": "assets/source-reference/saju-b-evolving-light-v002/reference/SaJu_Jade_Approved_Static_Material.glb",
+          "bytes": 4293332,
+          "sha256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+          "byte_identical_to_initial_batch3_checkpoint": true
+        },
+        {
+          "file": "assets/source-reference/saju-b-evolving-light-v002/runtime/textures/jade_fields_atlas_128.png",
+          "bytes": 3338794,
+          "sha256": "3175c131be983bd985b8018c191d3a25c9ce00ea20baa31bbb2772833b9a5bd0",
+          "byte_identical_to_initial_batch3_checkpoint": true
+        },
+        {
+          "file": "assets/source-reference/saju-b-evolving-light-v002/runtime/textures/Jade_OriginalBaseColor_1024.png",
+          "bytes": 804444,
+          "sha256": "29bdd5ab8a2c87715fd3aedae3f0465c8b6910b5a9c0e8b8bffeb84a03c6b824",
+          "byte_identical_to_initial_batch3_checkpoint": true
+        },
+        {
+          "file": "assets/source-reference/saju-b-evolving-light-v002/preview_keyframes/001.png",
+          "bytes": 188340,
+          "sha256": "f17790815107c4c5d751df92050c3e00c6c597f95843dfcd1b2c6c39c7735c54",
+          "byte_identical_to_initial_batch3_checkpoint": true
+        },
+        {
+          "file": "assets/source-reference/saju-b-evolving-light-v002/runtime/saju-jade-evolution.glsl",
+          "bytes": 4041,
+          "sha256": "7cfc8ad83f76f8b9505db1e0e38e94bd9ebd7b0c4282a686016c06a09e96255f",
+          "byte_identical_to_initial_batch3_checkpoint": true
+        },
+        {
+          "file": "assets/source-reference/saju-b-evolving-light-v002/runtime/saju-jade-evolution.mjs",
+          "bytes": 5678,
+          "sha256": "b92ffe42be37a8c52427ec6c104a56eb828c4e7f6a02b7d368b72921a46a9e7c",
+          "byte_identical_to_initial_batch3_checkpoint": true
+        },
+        {
+          "file": ".openai/hosting.json",
+          "bytes": 91,
+          "sha256": "9e1fb7eef4d729865c16d638f731f2f37d27bbec12a3345e48cdc44d51dd1f6f",
+          "byte_identical_to_initial_batch3_checkpoint": true
+        },
+        {
+          "file": "public/spirits/jade-v002/body.glb",
+          "bytes": 4293332,
+          "sha256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+          "byte_identical_to_initial_batch3_checkpoint": true
+        },
+        {
+          "file": "public/spirits/jade-v002/fields.png",
+          "bytes": 3338794,
+          "sha256": "3175c131be983bd985b8018c191d3a25c9ce00ea20baa31bbb2772833b9a5bd0",
+          "byte_identical_to_initial_batch3_checkpoint": true
+        },
+        {
+          "file": "public/spirits/jade-v002/base-color.png",
+          "bytes": 804444,
+          "sha256": "29bdd5ab8a2c87715fd3aedae3f0465c8b6910b5a9c0e8b8bffeb84a03c6b824",
+          "byte_identical_to_initial_batch3_checkpoint": true
+        },
+        {
+          "file": "public/spirits/jade-v002/still.png",
+          "bytes": 188340,
+          "sha256": "f17790815107c4c5d751df92050c3e00c6c597f95843dfcd1b2c6c39c7735c54",
+          "byte_identical_to_initial_batch3_checkpoint": true
+        },
+        {
+          "file": "public/models/porcelain-hero-blink-v1.glb",
+          "bytes": 13700928,
+          "sha256": "57d7ee5b3c4e0b99eaadefb8095283bed44986beaa5a91c096dd7a0c514bf9c2",
+          "byte_identical_to_initial_batch3_checkpoint": true
+        }
+      ],
+      "count": 13,
+      "original_runtime_outputs": 5,
+      "model_or_default_change": false,
+      "art_tests_rerun": 0,
+      "raw_hosting_values_recorded": false
+    }
+  },
+  "reproduction_diagnosis": {
+    "status": "PASS_HARNESS_ASSUMPTIONS_CORRECTED_BEFORE_ANY_PRODUCT_EDIT",
+    "at_utc": "2026-10-11T03:55:16.849Z",
+    "old_harness_sha256": "8803086e4f3b390dd5665bf18de591bef4e68133816d3b57f753eb76d43d7964",
+    "new_harness_sha256": "126012756a1a3f6f294c4cbfc905c3854ebe34c472e9c1b4f9386bd6473b0873",
+    "corrections": [
+      {
+        "before": "assert.equal(errors.length,0);assert.equal(alerts.length,0);if(mode.includes('empty'))",
+        "after": "assert.equal(errors.length,0);assert.equal(alerts.length,join&&!mode.includes('empty')?1:0);if(mode.includes('empty'))",
+        "count": 1
+      },
+      {
+        "before": "assert.equal(value.isolated_session_keys.length,2)",
+        "after": "assert.equal(value.isolated_session_keys.length,3)",
+        "count": 1
+      },
+      {
+        "before": "()=>!Array.from(document.querySelectorAll('button')).find(b=>b.textContent==='가상 사례 1회 전송').disabled",
+        "after": "()=>Array.from(document.querySelectorAll('button')).find(b=>b.textContent==='가상 사례 1회 전송')?.disabled===false",
+        "count": 2
+      },
+      {
+        "before": "A blank known-time field must not submit as midnight",
+        "after": "A blank known-time field must stay at native required-field validation",
+        "count": 1
+      }
+    ],
+    "product_edits": 0,
+    "previous_completed_tests_rerun": 0,
+    "raw_original_before_retained": true,
+    "first_before_result": {
+      "passed": 11,
+      "failed": 35,
+      "page_errors": 6
+    },
+    "first_before_noise": "Six waitForFunction errors were caused by the harness dereferencing the temporarily renamed busy button. Existing join success alerts and three isolated session keys were also initially miscounted.",
+    "revised_time_candidate": {
+      "id": "guin-known-time-required-field-focus",
+      "observed": "Create empty known-hour/minute is rejected by the existing strict integer parser; submit focus stays outside the missing input, whose native valueMissing is false. Join empty-time fields are also native-valid and sent to the API (fictional intercepted acceptance only).",
+      "rejected_hypothesis": "Blank strings are not parsed as midnight. Existing integer() explicitly rejects them.",
+      "minimal_authorized_improvement": "Mark the four known-time inputs across create/manual-join forms required, so native validation focuses the missing field before submission; preserve existing parser, server, valid-known and unknown-time behavior.",
+      "no_actual_bad_value_persistence_claim": true
+    },
+    "limits": "Only helper assumptions were corrected; UI assertions, original FAIL evidence and fixed fictional API protocol are retained. Fresh unchanged-product before-v2 establishes the valid baseline."
+  },
+  "limits": [
+    "Production relationship create/join known-time fields, create map ID type, Chat modal focus boundary, Saju choice states and AI POST JSON record display. Actual native Chrome React/Tailwind at 390x844 and 1440x1000 with fictional intercepted APIs. Fixed Next/host/navigation landing fixtures, only GalaxyCanvas blank. Pure calculation prepares fictional matching owner/pillars; no correctness claim for calculation, storage ownership or existing GET/status/send validators. No real API/DB/Gemini/user storage/clipboard/3D/hosted/physical device claim. Previous completed suites excluded.",
+    "Existing integer parser rejects empty known-time strings; no midnight miscalculation or real invalid-value persistence is claimed. This fix is native missing-field focus/validation in relationship create/manual-join only; other forms/calculation/server behavior stay unchanged.",
+    "Create ID type/character check only; prior ownership/pillar matching and friend-map GET/POST schema validators are unchanged and not rerun. No real record creation or persistence acceptance.",
+    "Chat only tests dialog semantics and normal/pending-history Tab/Shift+Tab/opener focus. Prior history row/reply/uncertain-send/IME suites are neither rerun nor counted.",
+    "Saju gender/calendar button selection semantics only; no calendar calculation, submission or prior input modal keyboard/date/request lifecycle suite is rerun.",
+    "AI POST top-level JSON record display only, preserving object/error-object display; configured GET validator/provider behavior/cap/auth/billing are unchanged and not retested. Exactly one fictional POST per explicit native input; no actual Gemini calls.",
+    "Current-batch focused tests are followed by the requested current-batch final regression. Prior completed UI/model suites/fixes are excluded.",
+    "First harness noise and false midnight hypothesis are retained with a correction record. Valid before-v2 uses unchanged products and the same v2 assertions/harness as all focused/final checks.",
+    "Sixteen normal UI captures reviewed: thirteen byte/pixel-identical, three with 43 total differing edge pixels and maximum channel difference 5/255. CSS and affected fixture observations are identical; desktop before/final variants cross-match. Native raster variance is an inference; exact mechanism was not independently established. Direct inspection found no content/layout regression. All originals and the failed strict byte guard are retained. Changed focus/error UI is inspected directly; screenshots are unedited, not generated images or 3D renders.",
+    "Build inputs removed by sparse branch switch were restored only from exact pre-switch same-file bytes, zero existing overwrites. Eight inputs and five runtime outputs are byte-identical after gates. No raw hosting values, credentials, model bytes or database contents are packaged.",
+    "Existing lint diagnostics are preserved without config/rule/suppression changes. New evidence scope treats raw logs/bundles/native snapshots as binary diffs to preserve exact bytes; product/QA whitespace and lint checks remain enabled.",
+    "Drive unshared single-owner/size metadata is verified; uploaded remote bytes are not independently downloaded/rehashed. Local ZIP CRC/entry/native bytes are verified."
+  ]
+}

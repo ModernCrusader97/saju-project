@@ -64,7 +64,8 @@ export default function GuinPage() {
         }),
       });
       const data = await readApiResponse(res);
-      if (res.ok && data.success && data.guinMap) {
+      if (res.ok && data.success && data.guinMap
+        && typeof data.guinMap.id === "string" && /^[a-zA-Z0-9_-]+$/.test(data.guinMap.id)) {
         saveGalaxyUniverse(next, data.guinMap);
         window.location.assign(`/guin/${data.guinMap.id}`);
       } else {
@@ -213,7 +214,7 @@ export default function GuinPage() {
                       type="number"
                       min="0"
                       max="23"
-                      aria-label="은하 시" value={birthHour}
+                      aria-label="은하 시" required value={birthHour}
                       onChange={(e) => setBirthHour(e.target.value)}
                       className="w-full text-center text-sm font-semibold bg-transparent focus:outline-none"
                     />
@@ -224,7 +225,7 @@ export default function GuinPage() {
                       type="number"
                       min="0"
                       max="59"
-                      aria-label="은하 분" value={birthMinute}
+                      aria-label="은하 분" required value={birthMinute}
                       onChange={(e) => setBirthMinute(e.target.value)}
                       className="w-full text-center text-sm font-semibold bg-transparent focus:outline-none"
                     />

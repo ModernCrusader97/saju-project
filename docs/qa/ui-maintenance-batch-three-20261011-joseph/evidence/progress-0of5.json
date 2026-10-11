@@ -1,0 +1,47 @@
+{
+  "status": "PASS_SEPARATE_BATCH3_UI_BRANCH_ZERO_OF_FIVE",
+  "branch": "fix/ui-maintenance-batch-three-20261011-joseph",
+  "basis": "05b1e0471755121137f130227a16b62b870f069a",
+  "validated_new_fix_count": 0,
+  "commit_created": false,
+  "push_performed": false,
+  "previous_completed_suites_rerun": 0,
+  "previous_completed_fixes_counted": 0,
+  "candidates": [
+    {
+      "id": "guin-known-time-empty-fields",
+      "mechanism": "Known-time relationship forms permit empty hour/minute fields to reach submit and be interpreted as midnight."
+    },
+    {
+      "id": "guin-create-map-id-type",
+      "mechanism": "Create success can use undefined/null/numeric ID to construct and save a misleading valid-looking path."
+    },
+    {
+      "id": "chat-modal-native-keyboard-boundary",
+      "mechanism": "Conversation pane lacks dialog semantics, initial focus, native Tab containment and opener restoration."
+    },
+    {
+      "id": "saju-input-choice-selection-state",
+      "mechanism": "Input gender and calendar buttons express selected state only visually."
+    },
+    {
+      "id": "ai-post-result-json-record",
+      "mechanism": "Null/primitives/arrays are accepted as a POST result; null silently hides the entire result panel."
+    }
+  ],
+  "candidates_not_yet_counted": true,
+  "rejected_candidates": [
+    {
+      "id": "chat-close-button-name",
+      "reason": "Already has explicit accessible name; no fix."
+    },
+    {
+      "id": "guin-orbit-slider-names",
+      "reason": "Both ranges already have explicit accessible names; no fix."
+    },
+    {
+      "id": "guin-create-full-map-rewrite",
+      "reason": "Existing saveGalaxyUniverse checks ownership and pillars; only new ID type boundary is in scope."
+    }
+  ]
+}

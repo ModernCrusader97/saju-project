@@ -1,0 +1,6 @@
+* -text
+# Preserve raw process output, generated browser bundles and native source snapshots.
+*.log -diff
+evidence/**/bundle.js -diff
+evidence/basis-native-source/*.tsx -diff
+evidence/changes/*.tsx -diff

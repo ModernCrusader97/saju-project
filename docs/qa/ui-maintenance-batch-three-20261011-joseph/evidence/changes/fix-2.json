@@ -1,0 +1,29 @@
+{
+  "status": "APPLIED_PENDING_FOCUSED_NATIVE_VERIFICATION",
+  "number": 2,
+  "id": "guin-create-map-id-type",
+  "group": "id",
+  "files": [
+    {
+      "file": "app/guin/page.tsx",
+      "before_sha256": "dbaa9095b117ad26cc00dc163c6243de2f5445744a4d73b9bca2ffaf40cbc749",
+      "after_sha256": "764b7d10af9345d579c4778f93c47b945382179f9b484baa86ba74299f70a7a1",
+      "before_bytes": 13081,
+      "after_bytes": 13173,
+      "before_snapshot": "changes/fix-2-0-before-native.tsx",
+      "after_snapshot": "changes/fix-2-0-after-native.tsx",
+      "replacements": [
+        {
+          "before": "if (res.ok && data.success && data.guinMap) {",
+          "after": "if (res.ok && data.success && data.guinMap\r\n        && typeof data.guinMap.id === \"string\" && /^[a-zA-Z0-9_-]+$/.test(data.guinMap.id)) {",
+          "count": 1
+        }
+      ],
+      "inverse_native_bytes_verified": true
+    }
+  ],
+  "expected": 8,
+  "change": "Require a string ID matching the already supported map-path characters before persisting or navigating after creation. Missing/null/numeric IDs retain the draft and follow the existing error alert.",
+  "at_utc": "2026-10-11T04:00:43.651Z",
+  "prior_completed_work_recounted": 0
+}

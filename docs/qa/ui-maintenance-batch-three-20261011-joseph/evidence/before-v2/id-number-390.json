@@ -1,0 +1,12 @@
+{
+  "post_count": 1,
+  "route": "/guin/123",
+  "isolated_session_keys": [
+    "saju:galaxy-owner:v1",
+    "saju:galaxy-path",
+    "saju:universe:v1"
+  ],
+  "draft": null,
+  "alerts": [],
+  "page_errors": []
+}

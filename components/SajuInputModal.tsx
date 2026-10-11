@@ -215,6 +215,7 @@ export default function SajuInputModal({
                 <div className="grid grid-cols-2 gap-1 bg-doryeong-ivoryDark p-1 rounded-xl">
                   <button
                     type="button"
+                    aria-pressed={gender === "male"}
                     onClick={() => setGender("male")}
                     className={`py-1.5 text-xs font-bold rounded-lg transition-all ${
                       gender === "male"
@@ -226,6 +227,7 @@ export default function SajuInputModal({
                   </button>
                   <button
                     type="button"
+                    aria-pressed={gender === "female"}
                     onClick={() => setGender("female")}
                     className={`py-1.5 text-xs font-bold rounded-lg transition-all ${
                       gender === "female"
@@ -253,6 +255,7 @@ export default function SajuInputModal({
                   <button
                     key={item.id}
                     type="button"
+                    aria-pressed={calendarType === item.id}
                     onClick={() => setCalendarType(item.id as any)}
                     className={`py-1.5 rounded-lg transition-all ${
                       calendarType === item.id

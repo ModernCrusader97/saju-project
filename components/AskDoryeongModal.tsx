@@ -44,6 +44,7 @@ function Conversation({
   const persistedCount = useRef(0);
   const uncertainSend = useRef<{ question: string; after: number } | null>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
+  const dialogRef = useRef<HTMLDivElement>(null);
   const messages = history.messages;
   const historyLoading = history.token !== historyToken;
   const historyError = history.token === historyToken ? history.error : "";
@@ -110,6 +111,39 @@ function Conversation({
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [isOpen, onClose]);
 
+  useEffect(() => {
+    if (!isOpen) return;
+    const dialog = dialogRef.current;
+    const opener = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+    if (!dialog) return;
+    dialog.querySelector<HTMLButtonElement>("button")?.focus();
+    const containTab = (event: KeyboardEvent) => {
+      if (event.key !== "Tab" || event.altKey || event.ctrlKey || event.metaKey) return;
+      const controls = Array.from(dialog.querySelectorAll<HTMLElement>(
+        'button:not([disabled]),input:not([disabled]),select:not([disabled]),textarea:not([disabled]),a[href],[tabindex]'
+      )).filter(element => element.tabIndex >= 0 && element.getClientRects().length > 0);
+      if (!controls.length) return;
+      const first = controls[0], last = controls[controls.length - 1];
+      if (!controls.includes(document.activeElement as HTMLElement)
+        || (event.shiftKey && document.activeElement === first)
+        || (!event.shiftKey && document.activeElement === last)) {
+        event.preventDefault();
+        (event.shiftKey ? last : first).focus();
+      }
+    };
+    document.addEventListener("keydown", containTab);
+    return () => {
+      document.removeEventListener("keydown", containTab);
+      if (opener?.isConnected) opener.focus();
+    };
+  }, [isOpen]);
+
+  useEffect(() => {
+    if (isOpen && dialogRef.current && !dialogRef.current.contains(document.activeElement)) {
+      dialogRef.current.querySelector<HTMLButtonElement>("button")?.focus();
+    }
+  }, [isOpen, loading, historyLoading, historyError]);
+
   if (!isOpen) return null;
 
   const handleSend = async (e: React.FormEvent, allowResend = false) => {
@@ -162,6 +196,8 @@ function Conversation({
       onClick={onClose}
     >
       <div
+        ref={dialogRef}
+        role="dialog" aria-modal="true" aria-label="사주 풀이 대화"
         className="w-full max-w-md bg-doryeong-ivory rounded-t-[32px] sm:rounded-[32px] shadow-2xl border border-doryeong-border flex flex-col h-[85vh] overflow-hidden animate-in slide-in-from-bottom duration-300"
         onClick={(e) => e.stopPropagation()}
       >

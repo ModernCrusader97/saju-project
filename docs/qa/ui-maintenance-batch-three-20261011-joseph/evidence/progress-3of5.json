@@ -1,0 +1,110 @@
+{
+  "status": "PASS_PARTIAL_BATCH3_NEW_FIXES_PRESERVED",
+  "at_utc": "2026-10-11T04:02:03.871Z",
+  "branch": "fix/ui-maintenance-batch-three-20261011-joseph",
+  "basis": "05b1e0471755121137f130227a16b62b870f069a",
+  "validated_new_fix_count": 3,
+  "commit_batch_target": 5,
+  "fixes": [
+    {
+      "number": 1,
+      "id": "guin-known-time-required-field-focus",
+      "group": "time",
+      "files": [
+        {
+          "file": "app/guin/page.tsx",
+          "before_sha256": "d7ef63b5a5ce9c822af432fec7d1631f6d29bb145672317eb4e40c7eb7f0b35b",
+          "after_sha256": "dbaa9095b117ad26cc00dc163c6243de2f5445744a4d73b9bca2ffaf40cbc749",
+          "inverse_native_bytes_verified": true
+        },
+        {
+          "file": "app/guin/[id]/page.tsx",
+          "before_sha256": "bc95942c2d8d2c9ab9df2a5b324126a13e57cc7b01665df0128c44f9cd912a61",
+          "after_sha256": "b002d5f7d547c5f9ce0f036f3099db0a19784337d6e71d13193d8f1a494cbd5f",
+          "inverse_native_bytes_verified": true
+        }
+      ],
+      "change": "Require known-hour/minute fields in relationship create/manual-join forms so native missing-field validation focuses the input before submission. Existing strict parser already rejects blanks; preserve valid known and unknown-time flows.",
+      "before_reproduction": {
+        "passed": 8,
+        "failed": 8
+      },
+      "after_focused_verification": {
+        "passed": 16,
+        "failed": 0
+      },
+      "browser": "154.0.8037.98",
+      "viewports": [
+        "390x844",
+        "1440x1000"
+      ],
+      "native_pointer_and_keyboard": true,
+      "manual_dom_events": 0,
+      "proof": "D:/Codex/Results/SaJuUiBatchThree-20261011-Joseph/item1/browser-results.json"
+    },
+    {
+      "number": 2,
+      "id": "guin-create-map-id-type",
+      "group": "id",
+      "files": [
+        {
+          "file": "app/guin/page.tsx",
+          "before_sha256": "dbaa9095b117ad26cc00dc163c6243de2f5445744a4d73b9bca2ffaf40cbc749",
+          "after_sha256": "764b7d10af9345d579c4778f93c47b945382179f9b484baa86ba74299f70a7a1",
+          "inverse_native_bytes_verified": true
+        }
+      ],
+      "change": "Require a string ID matching the already supported map-path characters before persisting or navigating after creation. Missing/null/numeric IDs retain the draft and follow the existing error alert.",
+      "before_reproduction": {
+        "passed": 2,
+        "failed": 6
+      },
+      "after_focused_verification": {
+        "passed": 8,
+        "failed": 0
+      },
+      "browser": "154.0.8037.98",
+      "viewports": [
+        "390x844",
+        "1440x1000"
+      ],
+      "native_pointer_and_keyboard": true,
+      "manual_dom_events": 0,
+      "proof": "D:/Codex/Results/SaJuUiBatchThree-20261011-Joseph/item2/browser-results.json"
+    },
+    {
+      "number": 3,
+      "id": "chat-modal-native-keyboard-boundary",
+      "group": "chat",
+      "files": [
+        {
+          "file": "components/AskDoryeongModal.tsx",
+          "before_sha256": "27a207a8d45c92b2e30c8c2417939e620470fb4dc3526c6e66439b6b1bb604ad",
+          "after_sha256": "6fb49eaf5a63e29d38ee7d490995b1287765a7eb7bb766458b43dfb920417a6c",
+          "inverse_native_bytes_verified": true
+        }
+      ],
+      "change": "Name the conversation pane as a modal dialog, focus its existing close control, contain native Tab/Shift+Tab during normal/pending history and restore the opener. Existing close/history/send logic stays unchanged.",
+      "before_reproduction": {
+        "passed": 2,
+        "failed": 4
+      },
+      "after_focused_verification": {
+        "passed": 6,
+        "failed": 0
+      },
+      "browser": "154.0.8037.98",
+      "viewports": [
+        "390x844",
+        "1440x1000"
+      ],
+      "native_pointer_and_keyboard": true,
+      "manual_dom_events": 0,
+      "proof": "D:/Codex/Results/SaJuUiBatchThree-20261011-Joseph/item3/browser-results.json"
+    }
+  ],
+  "commit_created": false,
+  "push_performed": false,
+  "previous_completed_suites_rerun": 0,
+  "previous_completed_fixes_counted": 0
+}

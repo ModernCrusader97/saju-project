@@ -1,0 +1,46 @@
+{
+  "status": "PASS_FIVE_NATIVE_PRODUCTS_INVERSE_TO_EXACT_BASIS_BYTES",
+  "products": [
+    {
+      "file": "app/guin/page.tsx",
+      "basis_native_sha256": "d7ef63b5a5ce9c822af432fec7d1631f6d29bb145672317eb4e40c7eb7f0b35b",
+      "current_native_sha256": "764b7d10af9345d579c4778f93c47b945382179f9b484baa86ba74299f70a7a1",
+      "native_before_bytes": 13063,
+      "native_after_bytes": 13173,
+      "whole_product_inverse_native_bytes_identical": true
+    },
+    {
+      "file": "app/guin/[id]/page.tsx",
+      "basis_native_sha256": "bc95942c2d8d2c9ab9df2a5b324126a13e57cc7b01665df0128c44f9cd912a61",
+      "current_native_sha256": "b002d5f7d547c5f9ce0f036f3099db0a19784337d6e71d13193d8f1a494cbd5f",
+      "native_before_bytes": 33824,
+      "native_after_bytes": 33892,
+      "whole_product_inverse_native_bytes_identical": true
+    },
+    {
+      "file": "components/AskDoryeongModal.tsx",
+      "basis_native_sha256": "27a207a8d45c92b2e30c8c2417939e620470fb4dc3526c6e66439b6b1bb604ad",
+      "current_native_sha256": "6fb49eaf5a63e29d38ee7d490995b1287765a7eb7bb766458b43dfb920417a6c",
+      "native_before_bytes": 12810,
+      "native_after_bytes": 14546,
+      "whole_product_inverse_native_bytes_identical": true
+    },
+    {
+      "file": "components/SajuInputModal.tsx",
+      "basis_native_sha256": "b309a761c60404360e164f46efe8c535ebf831d84c0bc08d335b30c05e9d8956",
+      "current_native_sha256": "4787358979a2427fb9d55fd39933c2def54134e4532244876f8ab10e265e0748",
+      "native_before_bytes": 16393,
+      "native_after_bytes": 16564,
+      "whole_product_inverse_native_bytes_identical": true
+    },
+    {
+      "file": "app/ai-test/page.tsx",
+      "basis_native_sha256": "1516ef77ecdb4fb1020001acac839b7356cd64a38753a8a2b6444d349203eb3b",
+      "current_native_sha256": "2f4680e8c57104b9d44b05d4cc152f3efa374a3fdbc919453a1c64259b830663",
+      "native_before_bytes": 2521,
+      "native_after_bytes": 2699,
+      "whole_product_inverse_native_bytes_identical": true
+    }
+  ],
+  "previous_surrounding_source_bytes_preserved": true
+}

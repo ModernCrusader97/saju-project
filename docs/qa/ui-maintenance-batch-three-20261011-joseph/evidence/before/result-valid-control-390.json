@@ -1,0 +1,7 @@
+{
+  "post_count": 1,
+  "result_panel_count": 1,
+  "result_text": "{\n  \"success\": true,\n  \"valid\": true,\n  \"errors\": [],\n  \"fixture\": \"known_time\",\n  \"notice\": \"가상 검증 결과\"\n}",
+  "button_enabled": true,
+  "page_errors": []
+}

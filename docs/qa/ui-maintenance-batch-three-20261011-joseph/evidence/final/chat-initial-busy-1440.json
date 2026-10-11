@@ -1,0 +1,8 @@
+{
+  "named_modal_count": 1,
+  "aria_modal": "true",
+  "initial_close_focused": true,
+  "initial_input_disabled": true,
+  "busy_tab_keeps_close": true,
+  "resolved_focus_contained": true
+}

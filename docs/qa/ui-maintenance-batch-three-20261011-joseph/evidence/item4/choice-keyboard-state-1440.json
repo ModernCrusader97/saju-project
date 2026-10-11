@@ -1,0 +1,18 @@
+{
+  "initial": {
+    "남성": "true",
+    "여성": "false",
+    "양력": "true",
+    "음력 (평달)": "false",
+    "음력 (윤달)": "false"
+  },
+  "selected": {
+    "남성": "false",
+    "여성": "true",
+    "양력": "false",
+    "음력 (평달)": "false",
+    "음력 (윤달)": "true"
+  },
+  "page_errors": [],
+  "synthetic_posts": 0
+}

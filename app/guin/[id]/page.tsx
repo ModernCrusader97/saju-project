@@ -659,6 +659,7 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
                         type="number"
                         min="0"
                         max="23"
+                        required
                         placeholder="시 (0~23)"
                         value={fHour}
                         onChange={(e) => setFHour(e.target.value)}
@@ -668,6 +669,7 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
                         type="number"
                         min="0"
                         max="59"
+                        required
                         placeholder="분 (0~59)"
                         value={fMinute}
                         onChange={(e) => setFMinute(e.target.value)}

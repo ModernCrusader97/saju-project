@@ -1,0 +1,39 @@
+{
+  "status": "APPLIED_PENDING_FOCUSED_NATIVE_VERIFICATION",
+  "number": 3,
+  "id": "chat-modal-native-keyboard-boundary",
+  "group": "chat",
+  "files": [
+    {
+      "file": "components/AskDoryeongModal.tsx",
+      "before_sha256": "27a207a8d45c92b2e30c8c2417939e620470fb4dc3526c6e66439b6b1bb604ad",
+      "after_sha256": "6fb49eaf5a63e29d38ee7d490995b1287765a7eb7bb766458b43dfb920417a6c",
+      "before_bytes": 12810,
+      "after_bytes": 14546,
+      "before_snapshot": "changes/fix-3-0-before-native.tsx",
+      "after_snapshot": "changes/fix-3-0-after-native.tsx",
+      "replacements": [
+        {
+          "before": "  const scrollRef = useRef<HTMLDivElement>(null);",
+          "after": "  const scrollRef = useRef<HTMLDivElement>(null);\r\n  const dialogRef = useRef<HTMLDivElement>(null);",
+          "count": 1
+        },
+        {
+          "before": "  if (!isOpen) return null;",
+          "after": "  useEffect(() => {\r\n    if (!isOpen) return;\r\n    const dialog = dialogRef.current;\r\n    const opener = document.activeElement instanceof HTMLElement ? document.activeElement : null;\r\n    if (!dialog) return;\r\n    dialog.querySelector<HTMLButtonElement>(\"button\")?.focus();\r\n    const containTab = (event: KeyboardEvent) => {\r\n      if (event.key !== \"Tab\" || event.altKey || event.ctrlKey || event.metaKey) return;\r\n      const controls = Array.from(dialog.querySelectorAll<HTMLElement>(\r\n        'button:not([disabled]),input:not([disabled]),select:not([disabled]),textarea:not([disabled]),a[href],[tabindex]'\r\n      )).filter(element => element.tabIndex >= 0 && element.getClientRects().length > 0);\r\n      if (!controls.length) return;\r\n      const first = controls[0], last = controls[controls.length - 1];\r\n      if (!controls.includes(document.activeElement as HTMLElement)\r\n        || (event.shiftKey && document.activeElement === first)\r\n        || (!event.shiftKey && document.activeElement === last)) {\r\n        event.preventDefault();\r\n        (event.shiftKey ? last : first).focus();\r\n      }\r\n    };\r\n    document.addEventListener(\"keydown\", containTab);\r\n    return () => {\r\n      document.removeEventListener(\"keydown\", containTab);\r\n      if (opener?.isConnected) opener.focus();\r\n    };\r\n  }, [isOpen]);\r\n\r\n  useEffect(() => {\r\n    if (isOpen && dialogRef.current && !dialogRef.current.contains(document.activeElement)) {\r\n      dialogRef.current.querySelector<HTMLButtonElement>(\"button\")?.focus();\r\n    }\r\n  }, [isOpen, loading, historyLoading, historyError]);\r\n\r\n  if (!isOpen) return null;",
+          "count": 1
+        },
+        {
+          "before": "      <div\r\n        className=\"w-full max-w-md",
+          "after": "      <div\r\n        ref={dialogRef}\r\n        role=\"dialog\" aria-modal=\"true\" aria-label=\"사주 풀이 대화\"\r\n        className=\"w-full max-w-md",
+          "count": 1
+        }
+      ],
+      "inverse_native_bytes_verified": true
+    }
+  ],
+  "expected": 6,
+  "change": "Name the conversation pane as a modal dialog, focus its existing close control, contain native Tab/Shift+Tab during normal/pending history and restore the opener. Existing close/history/send logic stays unchanged.",
+  "at_utc": "2026-10-11T04:01:52.863Z",
+  "prior_completed_work_recounted": 0
+}

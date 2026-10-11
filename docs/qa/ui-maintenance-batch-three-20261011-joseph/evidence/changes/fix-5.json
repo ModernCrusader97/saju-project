@@ -1,0 +1,29 @@
+{
+  "status": "APPLIED_PENDING_FOCUSED_NATIVE_VERIFICATION",
+  "number": 5,
+  "id": "ai-post-result-json-record",
+  "group": "result",
+  "files": [
+    {
+      "file": "app/ai-test/page.tsx",
+      "before_sha256": "1516ef77ecdb4fb1020001acac839b7356cd64a38753a8a2b6444d349203eb3b",
+      "after_sha256": "2f4680e8c57104b9d44b05d4cc152f3efa374a3fdbc919453a1c64259b830663",
+      "before_bytes": 2521,
+      "after_bytes": 2699,
+      "before_snapshot": "changes/fix-5-0-before-native.tsx",
+      "after_snapshot": "changes/fix-5-0-after-native.tsx",
+      "replacements": [
+        {
+          "before": "setResult(await response.json());",
+          "after": "const value:unknown=await response.json();if(value===null||typeof value!==\"object\"||Array.isArray(value)){setResult({error:\"시험 결과 응답 형식을 확인할 수 없습니다.\"});return;}setResult(value);",
+          "count": 1
+        }
+      ],
+      "inverse_native_bytes_verified": true
+    }
+  ],
+  "expected": 12,
+  "change": "Show an explicit visible result-format error for POST null/primitives/arrays instead of accepting them or silently hiding null. Preserve valid/error JSON objects and one explicit request without auto-retry; existing GET status validator is unchanged.",
+  "at_utc": "2026-10-11T04:03:46.898Z",
+  "prior_completed_work_recounted": 0
+}

@@ -1,0 +1,88 @@
+{
+  "status": "PASS_THIRTEEN_EXISTING_CANONICAL_INPUT_AND_RUNTIME_FILES_BYTES_PRESERVED_AFTER_GATES",
+  "files": [
+    {
+      "file": "assets/source-reference/saju-b-evolving-light-v002/SHA256SUMS.txt",
+      "bytes": 4521,
+      "sha256": "a8c57385c849549a44baa66ed802a2ee3f1d8a12a4b6afb8c21915241978927f",
+      "byte_identical_to_initial_batch3_checkpoint": true
+    },
+    {
+      "file": "assets/source-reference/saju-b-evolving-light-v002/reference/SaJu_Jade_Approved_Static_Material.glb",
+      "bytes": 4293332,
+      "sha256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+      "byte_identical_to_initial_batch3_checkpoint": true
+    },
+    {
+      "file": "assets/source-reference/saju-b-evolving-light-v002/runtime/textures/jade_fields_atlas_128.png",
+      "bytes": 3338794,
+      "sha256": "3175c131be983bd985b8018c191d3a25c9ce00ea20baa31bbb2772833b9a5bd0",
+      "byte_identical_to_initial_batch3_checkpoint": true
+    },
+    {
+      "file": "assets/source-reference/saju-b-evolving-light-v002/runtime/textures/Jade_OriginalBaseColor_1024.png",
+      "bytes": 804444,
+      "sha256": "29bdd5ab8a2c87715fd3aedae3f0465c8b6910b5a9c0e8b8bffeb84a03c6b824",
+      "byte_identical_to_initial_batch3_checkpoint": true
+    },
+    {
+      "file": "assets/source-reference/saju-b-evolving-light-v002/preview_keyframes/001.png",
+      "bytes": 188340,
+      "sha256": "f17790815107c4c5d751df92050c3e00c6c597f95843dfcd1b2c6c39c7735c54",
+      "byte_identical_to_initial_batch3_checkpoint": true
+    },
+    {
+      "file": "assets/source-reference/saju-b-evolving-light-v002/runtime/saju-jade-evolution.glsl",
+      "bytes": 4041,
+      "sha256": "7cfc8ad83f76f8b9505db1e0e38e94bd9ebd7b0c4282a686016c06a09e96255f",
+      "byte_identical_to_initial_batch3_checkpoint": true
+    },
+    {
+      "file": "assets/source-reference/saju-b-evolving-light-v002/runtime/saju-jade-evolution.mjs",
+      "bytes": 5678,
+      "sha256": "b92ffe42be37a8c52427ec6c104a56eb828c4e7f6a02b7d368b72921a46a9e7c",
+      "byte_identical_to_initial_batch3_checkpoint": true
+    },
+    {
+      "file": ".openai/hosting.json",
+      "bytes": 91,
+      "sha256": "9e1fb7eef4d729865c16d638f731f2f37d27bbec12a3345e48cdc44d51dd1f6f",
+      "byte_identical_to_initial_batch3_checkpoint": true
+    },
+    {
+      "file": "public/spirits/jade-v002/body.glb",
+      "bytes": 4293332,
+      "sha256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+      "byte_identical_to_initial_batch3_checkpoint": true
+    },
+    {
+      "file": "public/spirits/jade-v002/fields.png",
+      "bytes": 3338794,
+      "sha256": "3175c131be983bd985b8018c191d3a25c9ce00ea20baa31bbb2772833b9a5bd0",
+      "byte_identical_to_initial_batch3_checkpoint": true
+    },
+    {
+      "file": "public/spirits/jade-v002/base-color.png",
+      "bytes": 804444,
+      "sha256": "29bdd5ab8a2c87715fd3aedae3f0465c8b6910b5a9c0e8b8bffeb84a03c6b824",
+      "byte_identical_to_initial_batch3_checkpoint": true
+    },
+    {
+      "file": "public/spirits/jade-v002/still.png",
+      "bytes": 188340,
+      "sha256": "f17790815107c4c5d751df92050c3e00c6c597f95843dfcd1b2c6c39c7735c54",
+      "byte_identical_to_initial_batch3_checkpoint": true
+    },
+    {
+      "file": "public/models/porcelain-hero-blink-v1.glb",
+      "bytes": 13700928,
+      "sha256": "57d7ee5b3c4e0b99eaadefb8095283bed44986beaa5a91c096dd7a0c514bf9c2",
+      "byte_identical_to_initial_batch3_checkpoint": true
+    }
+  ],
+  "count": 13,
+  "original_runtime_outputs": 5,
+  "model_or_default_change": false,
+  "art_tests_rerun": 0,
+  "raw_hosting_values_recorded": false
+}

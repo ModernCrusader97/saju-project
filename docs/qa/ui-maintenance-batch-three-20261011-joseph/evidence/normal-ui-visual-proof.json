@@ -1,0 +1,728 @@
+{
+  "status": "PASS_SIXTEEN_NORMAL_UI_CAPTURES_REVIEWED_THIRTEEN_BYTE_IDENTICAL_THREE_BOUNDED_RASTER_DIFFERENCES",
+  "normal_pngs": [
+    {
+      "file": "time-create-known-control-390.png",
+      "bytes": 5715,
+      "before_sha256": "dac4b99b0283c075fc6ab07ce9ffd20ec10cc3a25de6305672584baeeaea2ffb",
+      "final_sha256": "dac4b99b0283c075fc6ab07ce9ffd20ec10cc3a25de6305672584baeeaea2ffb",
+      "byte_identical": true
+    },
+    {
+      "file": "time-create-unknown-control-390.png",
+      "bytes": 5715,
+      "before_sha256": "dac4b99b0283c075fc6ab07ce9ffd20ec10cc3a25de6305672584baeeaea2ffb",
+      "final_sha256": "dac4b99b0283c075fc6ab07ce9ffd20ec10cc3a25de6305672584baeeaea2ffb",
+      "byte_identical": true
+    },
+    {
+      "file": "time-join-known-control-390.png",
+      "bytes": 133886,
+      "before_sha256": "5caacb68a85f2ec26e3d827644d9dcb600032796183d1236710f7ccb728ec56d",
+      "final_sha256": "e64ee75ad61dd56e71b9942561b248e641e04047469f80b148188a5b25bd0c62",
+      "byte_identical": false
+    },
+    {
+      "file": "time-join-unknown-control-390.png",
+      "bytes": 133895,
+      "before_sha256": "5caacb68a85f2ec26e3d827644d9dcb600032796183d1236710f7ccb728ec56d",
+      "final_sha256": "5caacb68a85f2ec26e3d827644d9dcb600032796183d1236710f7ccb728ec56d",
+      "byte_identical": true
+    },
+    {
+      "file": "id-valid-control-390.png",
+      "bytes": 5715,
+      "before_sha256": "dac4b99b0283c075fc6ab07ce9ffd20ec10cc3a25de6305672584baeeaea2ffb",
+      "final_sha256": "dac4b99b0283c075fc6ab07ce9ffd20ec10cc3a25de6305672584baeeaea2ffb",
+      "byte_identical": true
+    },
+    {
+      "file": "choice-pointer-control-390.png",
+      "bytes": 42028,
+      "before_sha256": "ef43d00068173bcb32241b1fffc902035d45790909559f42871688557a8e5deb",
+      "final_sha256": "ef43d00068173bcb32241b1fffc902035d45790909559f42871688557a8e5deb",
+      "byte_identical": true
+    },
+    {
+      "file": "result-valid-control-390.png",
+      "bytes": 30479,
+      "before_sha256": "8149b37cd7f6fd0fd2ecba16d3bb4f0fedff48baa9f6d2337f288c82ef174a08",
+      "final_sha256": "8149b37cd7f6fd0fd2ecba16d3bb4f0fedff48baa9f6d2337f288c82ef174a08",
+      "byte_identical": true
+    },
+    {
+      "file": "result-error-control-390.png",
+      "bytes": 28765,
+      "before_sha256": "1d5315133647c882dd91c0be3e003110616ae823cd0286cdd332602bcfbc66a1",
+      "final_sha256": "1d5315133647c882dd91c0be3e003110616ae823cd0286cdd332602bcfbc66a1",
+      "byte_identical": true
+    },
+    {
+      "file": "time-create-known-control-1440.png",
+      "bytes": 9675,
+      "before_sha256": "8d85451c7f75cea6a21d5fca3c8dce3ea5a3e2bc47a84d154ff1955f2a096547",
+      "final_sha256": "8d85451c7f75cea6a21d5fca3c8dce3ea5a3e2bc47a84d154ff1955f2a096547",
+      "byte_identical": true
+    },
+    {
+      "file": "time-create-unknown-control-1440.png",
+      "bytes": 9675,
+      "before_sha256": "8d85451c7f75cea6a21d5fca3c8dce3ea5a3e2bc47a84d154ff1955f2a096547",
+      "final_sha256": "8d85451c7f75cea6a21d5fca3c8dce3ea5a3e2bc47a84d154ff1955f2a096547",
+      "byte_identical": true
+    },
+    {
+      "file": "time-join-known-control-1440.png",
+      "bytes": 196235,
+      "before_sha256": "2dc919bece7bff1e8ff0ec533a13096e444002aac30c109ee3e46ef6229e3262",
+      "final_sha256": "47247640b916379d5a78d978f9935c6b2727d47109849bbb721283063a99ecb0",
+      "byte_identical": false
+    },
+    {
+      "file": "time-join-unknown-control-1440.png",
+      "bytes": 196236,
+      "before_sha256": "47247640b916379d5a78d978f9935c6b2727d47109849bbb721283063a99ecb0",
+      "final_sha256": "2dc919bece7bff1e8ff0ec533a13096e444002aac30c109ee3e46ef6229e3262",
+      "byte_identical": false
+    },
+    {
+      "file": "id-valid-control-1440.png",
+      "bytes": 9675,
+      "before_sha256": "8d85451c7f75cea6a21d5fca3c8dce3ea5a3e2bc47a84d154ff1955f2a096547",
+      "final_sha256": "8d85451c7f75cea6a21d5fca3c8dce3ea5a3e2bc47a84d154ff1955f2a096547",
+      "byte_identical": true
+    },
+    {
+      "file": "choice-pointer-control-1440.png",
+      "bytes": 54036,
+      "before_sha256": "0c5960e8432d3f9a7a0cbeed73bbc8e74d5c8c41e67d6cae47cd1c663efd1c7e",
+      "final_sha256": "0c5960e8432d3f9a7a0cbeed73bbc8e74d5c8c41e67d6cae47cd1c663efd1c7e",
+      "byte_identical": true
+    },
+    {
+      "file": "result-valid-control-1440.png",
+      "bytes": 39042,
+      "before_sha256": "fb4c92261c381a936afcdef01897b312aa92453d90ef7435efda59520a89b273",
+      "final_sha256": "fb4c92261c381a936afcdef01897b312aa92453d90ef7435efda59520a89b273",
+      "byte_identical": true
+    },
+    {
+      "file": "result-error-control-1440.png",
+      "bytes": 36818,
+      "before_sha256": "7d813ec78619d3ac24f45e0dde9fda37cfad491c17e0138267f667ce49d203a2",
+      "final_sha256": "7d813ec78619d3ac24f45e0dde9fda37cfad491c17e0138267f667ce49d203a2",
+      "byte_identical": true
+    }
+  ],
+  "compared": 16,
+  "byte_identical_count": 13,
+  "pixel_identical_count": 13,
+  "different_png_count": 3,
+  "different_pixels_total": 43,
+  "max_channel_delta": 5,
+  "css_sha256_before": "4e2f086b3fd0c53e4e5729a49947310046f415c5e7aa7ab4e0428ef8d8dd50ca",
+  "css_sha256_final": "4e2f086b3fd0c53e4e5729a49947310046f415c5e7aa7ab4e0428ef8d8dd50ca",
+  "css_bytes_identical": true,
+  "changed_chat_focus_ring_not_in_unchanged_control_set": true,
+  "generated_images": 0,
+  "altered_or_masked_images": 0,
+  "normal_review": {
+    "status": "PASS_MEASURED_NORMAL_UI_RASTER_VARIANCE_REVIEW_NO_PRODUCT_OR_CSS_REGRESSION_FOUND",
+    "at_utc": "2026-10-11T04:19:13.228Z",
+    "compared": 16,
+    "byte_identical_count": 13,
+    "pixel_identical_count": 13,
+    "different_png_count": 3,
+    "different_pixels_total": 43,
+    "max_channel_delta": 5,
+    "source_inverse_native_bytes_verified": true,
+    "css_bytes_identical": true,
+    "affected_fixture_observations_identical": true,
+    "desktop_known_unknown_pixel_hashes_cross_match": true,
+    "raw_pixel_diagnostic": "normal-ui-pixel-difference-diagnostic.json",
+    "raw_byte_diagnostic": "normal-ui-byte-difference-diagnostic.json",
+    "direct_original_images_inspected": [
+      "before-v2/time-join-known-control-390.png",
+      "final/time-join-known-control-390.png",
+      "before-v2/time-join-known-control-1440.png",
+      "final/time-join-known-control-1440.png",
+      "before-v2/time-join-unknown-control-1440.png",
+      "final/time-join-unknown-control-1440.png"
+    ],
+    "observations": [
+      "Mobile pair: 37 pixels across small icon/decorative edge regions, maximum channel difference 5/255; full native images show matching content and layout.",
+      "Desktop pairs: three icon-edge pixels each at y=1508, maximum channel difference 1/255; before/final known and unknown captures alternate between exactly the same two pixel hashes.",
+      "Required attributes exist only on the join dialog inputs; these normal captures show the dialog closed. The added fields are absent from the painted normal screen. The other four changes target other pages/dialogs.",
+      "Inference: native raster/compositor quantization variance is consistent with the measured edge changes. Its exact Chrome mechanism was not independently established.",
+      "No visual product regression found in direct inspection. This is a bounded review, not a claim that all screenshots have identical bytes/pixels. Original PNGs, strict-guard failure and diagnostics are retained."
+    ],
+    "original_assembly": {
+      "file": "D:/Codex/Work/SaJuUiBatchThree-20261011-Joseph/authoring/assemble_batch_three.mjs",
+      "sha256": "13fff10c56cfd03951e2e8278163a23c5f02003bcd9ede1b422abad84ecf2fa3",
+      "failed_guard": "Retain any normal UI pixel difference for review before commit",
+      "failure_before_repository_evidence_scope_created": true,
+      "products_changed_after_final_gates": false,
+      "extra_fixes_counted": 0,
+      "extra_regression_cases_counted": 0
+    },
+    "generated_images": 0,
+    "edited_images": 0,
+    "masked_images": 0,
+    "commit_created": false,
+    "push_performed": false
+  },
+  "pixel_analysis": {
+    "status": "RETAINED_RAW_PNG_PIXEL_DIFFERENCE_ANALYSIS_BEFORE_COMMIT",
+    "analysis": "Independent standard-library PNG chunk CRC, zlib and reverse-filter decode. No image edited, masked or regenerated.",
+    "pairs": [
+      {
+        "file": "time-create-known-control-390.png",
+        "width": 390,
+        "height": 844,
+        "channels": 3,
+        "byte_identical": true,
+        "pixel_identical": true,
+        "different_pixels": 0,
+        "total_pixels": 329160,
+        "max_channel_delta": 0,
+        "bounds": null,
+        "first_samples": [],
+        "before_pixel_sha256": "8de17b132137fef0bad923c08a6fc2680cc93dbbacd5ff33f32557bbdbe24a17",
+        "final_pixel_sha256": "8de17b132137fef0bad923c08a6fc2680cc93dbbacd5ff33f32557bbdbe24a17",
+        "chunk_types_identical": true,
+        "row_filters_identical": true
+      },
+      {
+        "file": "time-create-unknown-control-390.png",
+        "width": 390,
+        "height": 844,
+        "channels": 3,
+        "byte_identical": true,
+        "pixel_identical": true,
+        "different_pixels": 0,
+        "total_pixels": 329160,
+        "max_channel_delta": 0,
+        "bounds": null,
+        "first_samples": [],
+        "before_pixel_sha256": "8de17b132137fef0bad923c08a6fc2680cc93dbbacd5ff33f32557bbdbe24a17",
+        "final_pixel_sha256": "8de17b132137fef0bad923c08a6fc2680cc93dbbacd5ff33f32557bbdbe24a17",
+        "chunk_types_identical": true,
+        "row_filters_identical": true
+      },
+      {
+        "file": "time-join-known-control-390.png",
+        "width": 390,
+        "height": 2132,
+        "channels": 3,
+        "byte_identical": false,
+        "pixel_identical": false,
+        "different_pixels": 37,
+        "total_pixels": 831480,
+        "max_channel_delta": 5,
+        "bounds": {
+          "left": 41,
+          "top": 1084,
+          "right": 348,
+          "bottom": 2005
+        },
+        "first_samples": [
+          {
+            "x": 258,
+            "y": 1084,
+            "before": [
+              49,
+              69,
+              62
+            ],
+            "final": [
+              49,
+              66,
+              61
+            ]
+          },
+          {
+            "x": 259,
+            "y": 1084,
+            "before": [
+              41,
+              56,
+              59
+            ],
+            "final": [
+              40,
+              54,
+              59
+            ]
+          },
+          {
+            "x": 330,
+            "y": 1084,
+            "before": [
+              37,
+              51,
+              52
+            ],
+            "final": [
+              36,
+              49,
+              51
+            ]
+          },
+          {
+            "x": 331,
+            "y": 1084,
+            "before": [
+              46,
+              64,
+              55
+            ],
+            "final": [
+              45,
+              62,
+              55
+            ]
+          },
+          {
+            "x": 259,
+            "y": 1085,
+            "before": [
+              51,
+              71,
+              62
+            ],
+            "final": [
+              51,
+              72,
+              62
+            ]
+          },
+          {
+            "x": 260,
+            "y": 1085,
+            "before": [
+              44,
+              59,
+              60
+            ],
+            "final": [
+              45,
+              62,
+              60
+            ]
+          },
+          {
+            "x": 329,
+            "y": 1085,
+            "before": [
+              40,
+              56,
+              53
+            ],
+            "final": [
+              42,
+              59,
+              53
+            ]
+          },
+          {
+            "x": 330,
+            "y": 1085,
+            "before": [
+              48,
+              68,
+              56
+            ],
+            "final": [
+              49,
+              69,
+              56
+            ]
+          },
+          {
+            "x": 261,
+            "y": 1086,
+            "before": [
+              52,
+              71,
+              62
+            ],
+            "final": [
+              52,
+              70,
+              61
+            ]
+          },
+          {
+            "x": 262,
+            "y": 1086,
+            "before": [
+              49,
+              66,
+              61
+            ],
+            "final": [
+              49,
+              67,
+              61
+            ]
+          },
+          {
+            "x": 263,
+            "y": 1086,
+            "before": [
+              46,
+              63,
+              60
+            ],
+            "final": [
+              46,
+              63,
+              61
+            ]
+          },
+          {
+            "x": 326,
+            "y": 1086,
+            "before": [
+              42,
+              59,
+              53
+            ],
+            "final": [
+              43,
+              59,
+              54
+            ]
+          }
+        ],
+        "before_pixel_sha256": "72d2d754bcfe6abcfce972c4c55f466715f7819bfe382262dcb7864d68cf069a",
+        "final_pixel_sha256": "0d16310f845c20e6a1b436ff5a68539f74b58001c910ff280ff8406347237377",
+        "chunk_types_identical": true,
+        "row_filters_identical": true
+      },
+      {
+        "file": "time-join-unknown-control-390.png",
+        "width": 390,
+        "height": 2132,
+        "channels": 3,
+        "byte_identical": true,
+        "pixel_identical": true,
+        "different_pixels": 0,
+        "total_pixels": 831480,
+        "max_channel_delta": 0,
+        "bounds": null,
+        "first_samples": [],
+        "before_pixel_sha256": "72d2d754bcfe6abcfce972c4c55f466715f7819bfe382262dcb7864d68cf069a",
+        "final_pixel_sha256": "72d2d754bcfe6abcfce972c4c55f466715f7819bfe382262dcb7864d68cf069a",
+        "chunk_types_identical": true,
+        "row_filters_identical": true
+      },
+      {
+        "file": "id-valid-control-390.png",
+        "width": 390,
+        "height": 844,
+        "channels": 3,
+        "byte_identical": true,
+        "pixel_identical": true,
+        "different_pixels": 0,
+        "total_pixels": 329160,
+        "max_channel_delta": 0,
+        "bounds": null,
+        "first_samples": [],
+        "before_pixel_sha256": "8de17b132137fef0bad923c08a6fc2680cc93dbbacd5ff33f32557bbdbe24a17",
+        "final_pixel_sha256": "8de17b132137fef0bad923c08a6fc2680cc93dbbacd5ff33f32557bbdbe24a17",
+        "chunk_types_identical": true,
+        "row_filters_identical": true
+      },
+      {
+        "file": "choice-pointer-control-390.png",
+        "width": 390,
+        "height": 844,
+        "channels": 3,
+        "byte_identical": true,
+        "pixel_identical": true,
+        "different_pixels": 0,
+        "total_pixels": 329160,
+        "max_channel_delta": 0,
+        "bounds": null,
+        "first_samples": [],
+        "before_pixel_sha256": "afcaba7565ac096342dd193b595c511065b301b608b0b94e586a24e9e24d8a10",
+        "final_pixel_sha256": "afcaba7565ac096342dd193b595c511065b301b608b0b94e586a24e9e24d8a10",
+        "chunk_types_identical": true,
+        "row_filters_identical": true
+      },
+      {
+        "file": "result-valid-control-390.png",
+        "width": 390,
+        "height": 844,
+        "channels": 3,
+        "byte_identical": true,
+        "pixel_identical": true,
+        "different_pixels": 0,
+        "total_pixels": 329160,
+        "max_channel_delta": 0,
+        "bounds": null,
+        "first_samples": [],
+        "before_pixel_sha256": "fcf6df412226b663cea358d64fa777bea819e47b7183acff35af4c8593a7eb26",
+        "final_pixel_sha256": "fcf6df412226b663cea358d64fa777bea819e47b7183acff35af4c8593a7eb26",
+        "chunk_types_identical": true,
+        "row_filters_identical": true
+      },
+      {
+        "file": "result-error-control-390.png",
+        "width": 390,
+        "height": 844,
+        "channels": 3,
+        "byte_identical": true,
+        "pixel_identical": true,
+        "different_pixels": 0,
+        "total_pixels": 329160,
+        "max_channel_delta": 0,
+        "bounds": null,
+        "first_samples": [],
+        "before_pixel_sha256": "938941c978251e54c0bca1a6b56bccfdcc932427526f97d396623facf5f2bb82",
+        "final_pixel_sha256": "938941c978251e54c0bca1a6b56bccfdcc932427526f97d396623facf5f2bb82",
+        "chunk_types_identical": true,
+        "row_filters_identical": true
+      },
+      {
+        "file": "time-create-known-control-1440.png",
+        "width": 1440,
+        "height": 1000,
+        "channels": 3,
+        "byte_identical": true,
+        "pixel_identical": true,
+        "different_pixels": 0,
+        "total_pixels": 1440000,
+        "max_channel_delta": 0,
+        "bounds": null,
+        "first_samples": [],
+        "before_pixel_sha256": "a835be0d87634845fd1be056b276a64a8c4b244b0de9aac7740eb3a8f55decc9",
+        "final_pixel_sha256": "a835be0d87634845fd1be056b276a64a8c4b244b0de9aac7740eb3a8f55decc9",
+        "chunk_types_identical": true,
+        "row_filters_identical": true
+      },
+      {
+        "file": "time-create-unknown-control-1440.png",
+        "width": 1440,
+        "height": 1000,
+        "channels": 3,
+        "byte_identical": true,
+        "pixel_identical": true,
+        "different_pixels": 0,
+        "total_pixels": 1440000,
+        "max_channel_delta": 0,
+        "bounds": null,
+        "first_samples": [],
+        "before_pixel_sha256": "a835be0d87634845fd1be056b276a64a8c4b244b0de9aac7740eb3a8f55decc9",
+        "final_pixel_sha256": "a835be0d87634845fd1be056b276a64a8c4b244b0de9aac7740eb3a8f55decc9",
+        "chunk_types_identical": true,
+        "row_filters_identical": true
+      },
+      {
+        "file": "time-join-known-control-1440.png",
+        "width": 1440,
+        "height": 1635,
+        "channels": 3,
+        "byte_identical": false,
+        "pixel_identical": false,
+        "different_pixels": 3,
+        "total_pixels": 2354400,
+        "max_channel_delta": 1,
+        "bounds": {
+          "left": 398,
+          "top": 1508,
+          "right": 1339,
+          "bottom": 1508
+        },
+        "first_samples": [
+          {
+            "x": 398,
+            "y": 1508,
+            "before": [
+              113,
+              144,
+              101
+            ],
+            "final": [
+              113,
+              143,
+              102
+            ]
+          },
+          {
+            "x": 869,
+            "y": 1508,
+            "before": [
+              114,
+              144,
+              101
+            ],
+            "final": [
+              114,
+              143,
+              102
+            ]
+          },
+          {
+            "x": 1339,
+            "y": 1508,
+            "before": [
+              113,
+              144,
+              101
+            ],
+            "final": [
+              113,
+              143,
+              102
+            ]
+          }
+        ],
+        "before_pixel_sha256": "bfc830590d7b0106af78404a5ebe8bdd325eb0d83c19f44fce4df7ace772a472",
+        "final_pixel_sha256": "4a8ddd041c4393446a93d0ec6ce0c251bfa29b2747353d9f2746317af8d80d11",
+        "chunk_types_identical": true,
+        "row_filters_identical": true
+      },
+      {
+        "file": "time-join-unknown-control-1440.png",
+        "width": 1440,
+        "height": 1635,
+        "channels": 3,
+        "byte_identical": false,
+        "pixel_identical": false,
+        "different_pixels": 3,
+        "total_pixels": 2354400,
+        "max_channel_delta": 1,
+        "bounds": {
+          "left": 398,
+          "top": 1508,
+          "right": 1339,
+          "bottom": 1508
+        },
+        "first_samples": [
+          {
+            "x": 398,
+            "y": 1508,
+            "before": [
+              113,
+              143,
+              102
+            ],
+            "final": [
+              113,
+              144,
+              101
+            ]
+          },
+          {
+            "x": 869,
+            "y": 1508,
+            "before": [
+              114,
+              143,
+              102
+            ],
+            "final": [
+              114,
+              144,
+              101
+            ]
+          },
+          {
+            "x": 1339,
+            "y": 1508,
+            "before": [
+              113,
+              143,
+              102
+            ],
+            "final": [
+              113,
+              144,
+              101
+            ]
+          }
+        ],
+        "before_pixel_sha256": "4a8ddd041c4393446a93d0ec6ce0c251bfa29b2747353d9f2746317af8d80d11",
+        "final_pixel_sha256": "bfc830590d7b0106af78404a5ebe8bdd325eb0d83c19f44fce4df7ace772a472",
+        "chunk_types_identical": true,
+        "row_filters_identical": true
+      },
+      {
+        "file": "id-valid-control-1440.png",
+        "width": 1440,
+        "height": 1000,
+        "channels": 3,
+        "byte_identical": true,
+        "pixel_identical": true,
+        "different_pixels": 0,
+        "total_pixels": 1440000,
+        "max_channel_delta": 0,
+        "bounds": null,
+        "first_samples": [],
+        "before_pixel_sha256": "a835be0d87634845fd1be056b276a64a8c4b244b0de9aac7740eb3a8f55decc9",
+        "final_pixel_sha256": "a835be0d87634845fd1be056b276a64a8c4b244b0de9aac7740eb3a8f55decc9",
+        "chunk_types_identical": true,
+        "row_filters_identical": true
+      },
+      {
+        "file": "choice-pointer-control-1440.png",
+        "width": 1440,
+        "height": 1000,
+        "channels": 3,
+        "byte_identical": true,
+        "pixel_identical": true,
+        "different_pixels": 0,
+        "total_pixels": 1440000,
+        "max_channel_delta": 0,
+        "bounds": null,
+        "first_samples": [],
+        "before_pixel_sha256": "049bdd75e42e6a0a95843e36eaae1876b436295466448620d6d6dcb34017c2a1",
+        "final_pixel_sha256": "049bdd75e42e6a0a95843e36eaae1876b436295466448620d6d6dcb34017c2a1",
+        "chunk_types_identical": true,
+        "row_filters_identical": true
+      },
+      {
+        "file": "result-valid-control-1440.png",
+        "width": 1440,
+        "height": 1000,
+        "channels": 3,
+        "byte_identical": true,
+        "pixel_identical": true,
+        "different_pixels": 0,
+        "total_pixels": 1440000,
+        "max_channel_delta": 0,
+        "bounds": null,
+        "first_samples": [],
+        "before_pixel_sha256": "6b35eb9354f35b636653a2e11e49a54ee5eb1152c59ef7359b33a7d4a981f08a",
+        "final_pixel_sha256": "6b35eb9354f35b636653a2e11e49a54ee5eb1152c59ef7359b33a7d4a981f08a",
+        "chunk_types_identical": true,
+        "row_filters_identical": true
+      },
+      {
+        "file": "result-error-control-1440.png",
+        "width": 1440,
+        "height": 1000,
+        "channels": 3,
+        "byte_identical": true,
+        "pixel_identical": true,
+        "different_pixels": 0,
+        "total_pixels": 1440000,
+        "max_channel_delta": 0,
+        "bounds": null,
+        "first_samples": [],
+        "before_pixel_sha256": "bd37bffaa45627e3671b2e0f450b99631464f50a4c1737d64b4495f1a1316350",
+        "final_pixel_sha256": "bd37bffaa45627e3671b2e0f450b99631464f50a4c1737d64b4495f1a1316350",
+        "chunk_types_identical": true,
+        "row_filters_identical": true
+      }
+    ],
+    "byte_identical_count": 13,
+    "pixel_identical_count": 13,
+    "generated_images": 0,
+    "altered_images": 0,
+    "commit_created": false,
+    "push_performed": false
+  }
+}

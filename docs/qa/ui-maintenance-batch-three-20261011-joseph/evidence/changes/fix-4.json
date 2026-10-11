@@ -1,0 +1,39 @@
+{
+  "status": "APPLIED_PENDING_FOCUSED_NATIVE_VERIFICATION",
+  "number": 4,
+  "id": "saju-input-choice-selection-state",
+  "group": "choice",
+  "files": [
+    {
+      "file": "components/SajuInputModal.tsx",
+      "before_sha256": "b309a761c60404360e164f46efe8c535ebf831d84c0bc08d335b30c05e9d8956",
+      "after_sha256": "4787358979a2427fb9d55fd39933c2def54134e4532244876f8ab10e265e0748",
+      "before_bytes": 16393,
+      "after_bytes": 16564,
+      "before_snapshot": "changes/fix-4-0-before-native.tsx",
+      "after_snapshot": "changes/fix-4-0-after-native.tsx",
+      "replacements": [
+        {
+          "before": "type=\"button\"\r\n                    onClick={() => setGender(\"male\")}",
+          "after": "type=\"button\"\r\n                    aria-pressed={gender === \"male\"}\r\n                    onClick={() => setGender(\"male\")}",
+          "count": 1
+        },
+        {
+          "before": "type=\"button\"\r\n                    onClick={() => setGender(\"female\")}",
+          "after": "type=\"button\"\r\n                    aria-pressed={gender === \"female\"}\r\n                    onClick={() => setGender(\"female\")}",
+          "count": 1
+        },
+        {
+          "before": "type=\"button\"\r\n                    onClick={() => setCalendarType(item.id as any)}",
+          "after": "type=\"button\"\r\n                    aria-pressed={calendarType === item.id}\r\n                    onClick={() => setCalendarType(item.id as any)}",
+          "count": 1
+        }
+      ],
+      "inverse_native_bytes_verified": true
+    }
+  ],
+  "expected": 4,
+  "change": "Expose selected gender and calendar using aria-pressed on the existing five buttons; preserve pointer selection and native Space/Enter without form submission.",
+  "at_utc": "2026-10-11T04:03:13.606Z",
+  "prior_completed_work_recounted": 0
+}

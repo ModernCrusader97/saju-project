@@ -1,0 +1,1 @@
+{"status":"FAIL","phase":"before-v2","passed":18,"failed":28,"groups":{"time":{"passed":8,"failed":8},"id":{"passed":2,"failed":6},"chat":{"passed":2,"failed":4},"choice":{"passed":2,"failed":2},"result":{"passed":4,"failed":8}},"page_errors":0,"console_errors":0,"outbound":0,"report":"D:\\Codex\\Results\\SaJuUiBatchThree-20261011-Joseph\\before-v2/browser-results.json"}

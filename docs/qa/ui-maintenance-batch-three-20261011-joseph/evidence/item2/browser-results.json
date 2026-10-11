@@ -1,0 +1,395 @@
+{
+  "status": "PASS",
+  "phase": "item2",
+  "at_utc": "2026-10-11T04:00:56.465Z",
+  "browser": "154.0.8037.98",
+  "products": {
+    "app/guin/page.tsx": "764b7d10af9345d579c4778f93c47b945382179f9b484baa86ba74299f70a7a1",
+    "app/guin/[id]/page.tsx": "b002d5f7d547c5f9ce0f036f3099db0a19784337d6e71d13193d8f1a494cbd5f",
+    "components/AskDoryeongModal.tsx": "27a207a8d45c92b2e30c8c2417939e620470fb4dc3526c6e66439b6b1bb604ad",
+    "components/SajuInputModal.tsx": "b309a761c60404360e164f46efe8c535ebf831d84c0bc08d335b30c05e9d8956",
+    "app/ai-test/page.tsx": "1516ef77ecdb4fb1020001acac839b7356cd64a38753a8a2b6444d349203eb3b"
+  },
+  "harness_sha256": "126012756a1a3f6f294c4cbfc905c3854ebe34c472e9c1b4f9386bd6473b0873",
+  "css_sha256": "4e2f086b3fd0c53e4e5729a49947310046f415c5e7aa7ab4e0428ef8d8dd50ca",
+  "passed": 8,
+  "failed": 0,
+  "groups": {
+    "id": {
+      "passed": 8,
+      "failed": 0
+    }
+  },
+  "checks": [
+    {
+      "group": "id",
+      "name": "missing 390",
+      "observed": {
+        "post_count": 1,
+        "route": "/guin",
+        "isolated_session_keys": [],
+        "draft": "가상 지도주인",
+        "alerts": [
+          "지도 생성 실패"
+        ],
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "id",
+      "name": "null 390",
+      "observed": {
+        "post_count": 1,
+        "route": "/guin",
+        "isolated_session_keys": [],
+        "draft": "가상 지도주인",
+        "alerts": [
+          "지도 생성 실패"
+        ],
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "id",
+      "name": "number 390",
+      "observed": {
+        "post_count": 1,
+        "route": "/guin",
+        "isolated_session_keys": [],
+        "draft": "가상 지도주인",
+        "alerts": [
+          "지도 생성 실패"
+        ],
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "id",
+      "name": "valid-control 390",
+      "observed": {
+        "post_count": 1,
+        "route": "/guin/qa-batch3-created",
+        "isolated_session_keys": [
+          "saju:galaxy-owner:v1",
+          "saju:galaxy-path",
+          "saju:universe:v1"
+        ],
+        "draft": null,
+        "alerts": [],
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "id",
+      "name": "missing 1440",
+      "observed": {
+        "post_count": 1,
+        "route": "/guin",
+        "isolated_session_keys": [],
+        "draft": "가상 지도주인",
+        "alerts": [
+          "지도 생성 실패"
+        ],
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "id",
+      "name": "null 1440",
+      "observed": {
+        "post_count": 1,
+        "route": "/guin",
+        "isolated_session_keys": [],
+        "draft": "가상 지도주인",
+        "alerts": [
+          "지도 생성 실패"
+        ],
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "id",
+      "name": "number 1440",
+      "observed": {
+        "post_count": 1,
+        "route": "/guin",
+        "isolated_session_keys": [],
+        "draft": "가상 지도주인",
+        "alerts": [
+          "지도 생성 실패"
+        ],
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "id",
+      "name": "valid-control 1440",
+      "observed": {
+        "post_count": 1,
+        "route": "/guin/qa-batch3-created",
+        "isolated_session_keys": [
+          "saju:galaxy-owner:v1",
+          "saju:galaxy-path",
+          "saju:universe:v1"
+        ],
+        "draft": null,
+        "alerts": [],
+        "page_errors": []
+      },
+      "pass": true
+    }
+  ],
+  "observations": [
+    {
+      "group": "id",
+      "mode": "missing",
+      "width": 390,
+      "post_count": 1,
+      "route": "/guin",
+      "isolated_session_keys": [],
+      "draft": "가상 지도주인",
+      "alerts": [
+        "지도 생성 실패"
+      ],
+      "page_errors": []
+    },
+    {
+      "group": "id",
+      "mode": "null",
+      "width": 390,
+      "post_count": 1,
+      "route": "/guin",
+      "isolated_session_keys": [],
+      "draft": "가상 지도주인",
+      "alerts": [
+        "지도 생성 실패"
+      ],
+      "page_errors": []
+    },
+    {
+      "group": "id",
+      "mode": "number",
+      "width": 390,
+      "post_count": 1,
+      "route": "/guin",
+      "isolated_session_keys": [],
+      "draft": "가상 지도주인",
+      "alerts": [
+        "지도 생성 실패"
+      ],
+      "page_errors": []
+    },
+    {
+      "group": "id",
+      "mode": "valid-control",
+      "width": 390,
+      "post_count": 1,
+      "route": "/guin/qa-batch3-created",
+      "isolated_session_keys": [
+        "saju:galaxy-owner:v1",
+        "saju:galaxy-path",
+        "saju:universe:v1"
+      ],
+      "draft": null,
+      "alerts": [],
+      "page_errors": []
+    },
+    {
+      "group": "id",
+      "mode": "missing",
+      "width": 1440,
+      "post_count": 1,
+      "route": "/guin",
+      "isolated_session_keys": [],
+      "draft": "가상 지도주인",
+      "alerts": [
+        "지도 생성 실패"
+      ],
+      "page_errors": []
+    },
+    {
+      "group": "id",
+      "mode": "null",
+      "width": 1440,
+      "post_count": 1,
+      "route": "/guin",
+      "isolated_session_keys": [],
+      "draft": "가상 지도주인",
+      "alerts": [
+        "지도 생성 실패"
+      ],
+      "page_errors": []
+    },
+    {
+      "group": "id",
+      "mode": "number",
+      "width": 1440,
+      "post_count": 1,
+      "route": "/guin",
+      "isolated_session_keys": [],
+      "draft": "가상 지도주인",
+      "alerts": [
+        "지도 생성 실패"
+      ],
+      "page_errors": []
+    },
+    {
+      "group": "id",
+      "mode": "valid-control",
+      "width": 1440,
+      "post_count": 1,
+      "route": "/guin/qa-batch3-created",
+      "isolated_session_keys": [
+        "saju:galaxy-owner:v1",
+        "saju:galaxy-path",
+        "saju:universe:v1"
+      ],
+      "draft": null,
+      "alerts": [],
+      "page_errors": []
+    }
+  ],
+  "page_errors": [],
+  "console_errors": [],
+  "outbound_requests": [],
+  "synthetic_gets": [],
+  "synthetic_posts": [
+    {
+      "group": "id",
+      "mode": "missing",
+      "width": 390,
+      "endpoint": "create",
+      "body": {
+        "name": "가상 지도주인",
+        "birthYear": "1996",
+        "birthMonth": "7",
+        "birthDay": "20",
+        "birthHour": "14",
+        "birthMinute": "30",
+        "isUnknownTime": false
+      }
+    },
+    {
+      "group": "id",
+      "mode": "null",
+      "width": 390,
+      "endpoint": "create",
+      "body": {
+        "name": "가상 지도주인",
+        "birthYear": "1996",
+        "birthMonth": "7",
+        "birthDay": "20",
+        "birthHour": "14",
+        "birthMinute": "30",
+        "isUnknownTime": false
+      }
+    },
+    {
+      "group": "id",
+      "mode": "number",
+      "width": 390,
+      "endpoint": "create",
+      "body": {
+        "name": "가상 지도주인",
+        "birthYear": "1996",
+        "birthMonth": "7",
+        "birthDay": "20",
+        "birthHour": "14",
+        "birthMinute": "30",
+        "isUnknownTime": false
+      }
+    },
+    {
+      "group": "id",
+      "mode": "valid-control",
+      "width": 390,
+      "endpoint": "create",
+      "body": {
+        "name": "가상 지도주인",
+        "birthYear": "1996",
+        "birthMonth": "7",
+        "birthDay": "20",
+        "birthHour": "14",
+        "birthMinute": "30",
+        "isUnknownTime": false
+      }
+    },
+    {
+      "group": "id",
+      "mode": "missing",
+      "width": 1440,
+      "endpoint": "create",
+      "body": {
+        "name": "가상 지도주인",
+        "birthYear": "1996",
+        "birthMonth": "7",
+        "birthDay": "20",
+        "birthHour": "14",
+        "birthMinute": "30",
+        "isUnknownTime": false
+      }
+    },
+    {
+      "group": "id",
+      "mode": "null",
+      "width": 1440,
+      "endpoint": "create",
+      "body": {
+        "name": "가상 지도주인",
+        "birthYear": "1996",
+        "birthMonth": "7",
+        "birthDay": "20",
+        "birthHour": "14",
+        "birthMinute": "30",
+        "isUnknownTime": false
+      }
+    },
+    {
+      "group": "id",
+      "mode": "number",
+      "width": 1440,
+      "endpoint": "create",
+      "body": {
+        "name": "가상 지도주인",
+        "birthYear": "1996",
+        "birthMonth": "7",
+        "birthDay": "20",
+        "birthHour": "14",
+        "birthMinute": "30",
+        "isUnknownTime": false
+      }
+    },
+    {
+      "group": "id",
+      "mode": "valid-control",
+      "width": 1440,
+      "endpoint": "create",
+      "body": {
+        "name": "가상 지도주인",
+        "birthYear": "1996",
+        "birthMonth": "7",
+        "birthDay": "20",
+        "birthHour": "14",
+        "birthMinute": "30",
+        "isUnknownTime": false
+      }
+    }
+  ],
+  "actual_backend_requests": 0,
+  "database_operations": 0,
+  "actual_ai_provider_calls": 0,
+  "user_clipboard_or_storage_access": 0,
+  "isolated_fictional_session_storage_only": true,
+  "native_pointer_and_keyboard": true,
+  "manual_dom_events": 0,
+  "previous_completed_suites_rerun": 0,
+  "previous_completed_fixes_counted": 0,
+  "scope": "Production relationship create/join known-time fields, create map ID type, Chat modal focus boundary, Saju choice states and AI POST JSON record display. Actual native Chrome React/Tailwind at 390x844 and 1440x1000 with fictional intercepted APIs. Fixed Next/host/navigation landing fixtures, only GalaxyCanvas blank. Pure calculation prepares fictional matching owner/pillars; no correctness claim for calculation, storage ownership or existing GET/status/send validators. No real API/DB/Gemini/user storage/clipboard/3D/hosted/physical device claim. Previous completed suites excluded."
+}

@@ -1,0 +1,13 @@
+{
+  "post_count": 0,
+  "alerts": [],
+  "page_errors": [],
+  "missing_before": {
+    "required": true,
+    "missing": true
+  },
+  "focused_missing_input": true,
+  "route": "/guin/qa-batch3-map",
+  "request": null,
+  "join_dialog_visible": true
+}

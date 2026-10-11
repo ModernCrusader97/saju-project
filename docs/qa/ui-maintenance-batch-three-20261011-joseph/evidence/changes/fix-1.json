@@ -1,0 +1,56 @@
+{
+  "status": "APPLIED_PENDING_FOCUSED_NATIVE_VERIFICATION",
+  "number": 1,
+  "id": "guin-known-time-required-field-focus",
+  "group": "time",
+  "files": [
+    {
+      "file": "app/guin/page.tsx",
+      "before_sha256": "d7ef63b5a5ce9c822af432fec7d1631f6d29bb145672317eb4e40c7eb7f0b35b",
+      "after_sha256": "dbaa9095b117ad26cc00dc163c6243de2f5445744a4d73b9bca2ffaf40cbc749",
+      "before_bytes": 13063,
+      "after_bytes": 13081,
+      "before_snapshot": "changes/fix-1-0-before-native.tsx",
+      "after_snapshot": "changes/fix-1-0-after-native.tsx",
+      "replacements": [
+        {
+          "before": "aria-label=\"은하 시\" value={birthHour}",
+          "after": "aria-label=\"은하 시\" required value={birthHour}",
+          "count": 1
+        },
+        {
+          "before": "aria-label=\"은하 분\" value={birthMinute}",
+          "after": "aria-label=\"은하 분\" required value={birthMinute}",
+          "count": 1
+        }
+      ],
+      "inverse_native_bytes_verified": true
+    },
+    {
+      "file": "app/guin/[id]/page.tsx",
+      "before_sha256": "bc95942c2d8d2c9ab9df2a5b324126a13e57cc7b01665df0128c44f9cd912a61",
+      "after_sha256": "b002d5f7d547c5f9ce0f036f3099db0a19784337d6e71d13193d8f1a494cbd5f",
+      "before_bytes": 33824,
+      "after_bytes": 33892,
+      "before_snapshot": "changes/fix-1-1-before-native.tsx",
+      "after_snapshot": "changes/fix-1-1-after-native.tsx",
+      "replacements": [
+        {
+          "before": "placeholder=\"시 (0~23)\"",
+          "after": "required\r\n                        placeholder=\"시 (0~23)\"",
+          "count": 1
+        },
+        {
+          "before": "placeholder=\"분 (0~59)\"",
+          "after": "required\r\n                        placeholder=\"분 (0~59)\"",
+          "count": 1
+        }
+      ],
+      "inverse_native_bytes_verified": true
+    }
+  ],
+  "expected": 16,
+  "change": "Require known-hour/minute fields in relationship create/manual-join forms so native missing-field validation focuses the input before submission. Existing strict parser already rejects blanks; preserve valid known and unknown-time flows.",
+  "at_utc": "2026-10-11T03:57:53.126Z",
+  "prior_completed_work_recounted": 0
+}
