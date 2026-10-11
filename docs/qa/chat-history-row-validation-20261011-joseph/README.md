@@ -1,0 +1,11 @@
+# Chat history row rendering safety
+
+Basis 2df6b6bde19851a1f443b9cc8a2d3742300b385d; private branch fix/chat-history-row-validation-20261011-joseph; existing consumer components/FortuneCard.tsx, exact locations recorded. Three malformed row cases (object content, null row, numeric content) across 390/1440px fail before the fix: 2 pass/6 fail with 4 actual React/page errors. Numeric content wrongly appears without error feedback.
+
+Only the existing history response predicate expands: non-null object, known user/doryeong role and string content. Product diff 5 added lines/1 removed; the inverse recovers native CRLF source bytes exactly. Text/classes/ARIA, keyboard/IME, send response, request ownership, uncertain-send reconciliation, retry callbacks, routes and all other behavior are unchanged. Invalid history now uses the existing error UI and disabled composer. Identical new suite passes 8/8 with zero page/console errors, no automatic retry and six native manual GET retries recovering valid history. Two valid-history PNG files/pixels and CSS are identical. Actual before blank crash and after error/retry screens inspected directly.
+
+All history GETs are fulfilled at the synthetic browser boundary with fictional person/messages. No actual backend/DB, chat POST or outbound request. Production React/modal/Tailwind run through an own loopback fixture; no full hosted route, physical device or real data claim. Sixteen previous QA records reused without old suite execution; completed calendar as-any/catch lint branches are explicitly excluded.
+
+Current-branch production build and postbuild nonincremental types pass. Relevant lint: 0 unchanged existing product errors, 0 unchanged warnings, zero new errors/warnings and no QA diagnostics; rules/config/suppression unchanged. All 58 old remote heads, local refs, legacy WIP bytes, five art checkouts and other preexisting Git entries checked before/after normal commit/nonforce push. Other eleven designs untouched.
+
+Run scripts/qa/chat-history-rows-browser.mjs with new SAJU_QA_OUTPUT/SAJU_QA_SCRATCH, SAJU_QA_PHASE=after and installed SAJU_QA_PLAYWRIGHT_PATH/SAJU_QA_CHROME. No main merge/PR/deploy/art/default/auth/billing/permission/DB-data/user-process control.

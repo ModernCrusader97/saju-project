@@ -1,0 +1,31 @@
+{
+  "status": "PASS_NO_NEW_DIAGNOSTICS_EXISTING_BASELINE_PRESERVED",
+  "same_real_product_filename_for_baseline": true,
+  "before": [
+    {
+      "file": "D:\\Codex\\Work\\SaJuUiOneBug-20261010-Joseph\\repo\\components\\AskDoryeongModal.tsx",
+      "errorCount": 0,
+      "warningCount": 0,
+      "messages": []
+    }
+  ],
+  "after": [
+    {
+      "file": "D:\\Codex\\Work\\SaJuUiOneBug-20261010-Joseph\\repo\\components\\AskDoryeongModal.tsx",
+      "errorCount": 0,
+      "warningCount": 0,
+      "messages": []
+    },
+    {
+      "file": "D:\\Codex\\Work\\SaJuUiOneBug-20261010-Joseph\\repo\\scripts\\qa\\chat-history-rows-browser.mjs",
+      "errorCount": 0,
+      "warningCount": 0,
+      "messages": []
+    }
+  ],
+  "rules_or_suppressions_changed": false,
+  "existing_product_errors": 0,
+  "existing_product_warnings": 0,
+  "new_errors": 0,
+  "new_warnings": 0
+}

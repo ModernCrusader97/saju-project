@@ -1,0 +1,13 @@
+{
+  "mode": "object_content",
+  "width": 390,
+  "gets": 1,
+  "unexpected_page_errors": [
+    "Minified React error #31; visit https://react.dev/errors/31?args[]=object%20with%20keys%20%7Bunexpected%7D for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+  ],
+  "visible_error": false,
+  "error_text": null,
+  "composer_exists": false,
+  "composer_disabled": null,
+  "body_text": ""
+}

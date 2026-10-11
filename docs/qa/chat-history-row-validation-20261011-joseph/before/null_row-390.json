@@ -1,0 +1,13 @@
+{
+  "mode": "null_row",
+  "width": 390,
+  "gets": 1,
+  "unexpected_page_errors": [
+    "Cannot read properties of null (reading 'role')"
+  ],
+  "visible_error": false,
+  "error_text": null,
+  "composer_exists": false,
+  "composer_disabled": null,
+  "body_text": ""
+}

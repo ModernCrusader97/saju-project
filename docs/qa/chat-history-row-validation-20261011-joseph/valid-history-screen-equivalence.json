@@ -1,0 +1,23 @@
+{
+  "status": "PASS_TWO_IDENTICAL_VALID_HISTORY_UI_PNG_BYTES",
+  "screens": [
+    {
+      "file": "valid-390.png",
+      "bytes": 19811,
+      "sha256": "c748bfc62f6dd01579cedf7ea020569cc121baa93268b99bf28a5c1876cda6df",
+      "png_bytes_and_pixels_identical": true
+    },
+    {
+      "file": "valid-1440.png",
+      "bytes": 29333,
+      "sha256": "576466473fbd73545d74c07bb31d9032f532a338ac2d816968d4f25174bedaad",
+      "png_bytes_and_pixels_identical": true
+    }
+  ],
+  "css_sha256": "a770bae117a73d8437a3af2cf6aa0577df45ae3b2e9dbd5f12154d17f64aa363",
+  "harness_sha256": "30869e70a0f921f3c03874f5bd0ed39e88590a316d25f7e9580e61e784e71a13",
+  "direct_visual_inspection": [
+    "before/object_content-390.png",
+    "after/object_content-390.png"
+  ]
+}

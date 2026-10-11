@@ -1,0 +1,271 @@
+{
+  "status": "FAIL",
+  "phase": "before",
+  "at_utc": "2026-10-11T01:16:45.347Z",
+  "browser": "154.0.8037.98",
+  "product": "components/AskDoryeongModal.tsx",
+  "source_sha256": "3e0f3f5798b9151e69639b078009c821439b8115a67869b9fcdb3daa99f7f195",
+  "harness_sha256": "30869e70a0f921f3c03874f5bd0ed39e88590a316d25f7e9580e61e784e71a13",
+  "css_sha256": "a770bae117a73d8437a3af2cf6aa0577df45ae3b2e9dbd5f12154d17f64aa363",
+  "passed": 2,
+  "failed": 6,
+  "checks": [
+    {
+      "name": "Valid history text and composer remain usable 390",
+      "observed": {
+        "texts": [
+          "새 대화 기록 형식 확인용 가상 안내입니다.",
+          "가상 질문 기록입니다."
+        ],
+        "input_enabled": true,
+        "gets": 1
+      },
+      "pass": true
+    },
+    {
+      "name": "Malformed object_content shows retryable error and manual GET retry restores 390",
+      "pass": false,
+      "error": "Malformed history rows must reach the existing retryable error UI.\n\nfalse !== true\n"
+    },
+    {
+      "name": "Malformed null_row shows retryable error and manual GET retry restores 390",
+      "pass": false,
+      "error": "Malformed history rows must reach the existing retryable error UI.\n\nfalse !== true\n"
+    },
+    {
+      "name": "Malformed numeric_content shows retryable error and manual GET retry restores 390",
+      "pass": false,
+      "error": "Malformed history rows must reach the existing retryable error UI.\n\nfalse !== true\n"
+    },
+    {
+      "name": "Valid history text and composer remain usable 1440",
+      "observed": {
+        "texts": [
+          "새 대화 기록 형식 확인용 가상 안내입니다.",
+          "가상 질문 기록입니다."
+        ],
+        "input_enabled": true,
+        "gets": 1
+      },
+      "pass": true
+    },
+    {
+      "name": "Malformed object_content shows retryable error and manual GET retry restores 1440",
+      "pass": false,
+      "error": "Malformed history rows must reach the existing retryable error UI.\n\nfalse !== true\n"
+    },
+    {
+      "name": "Malformed null_row shows retryable error and manual GET retry restores 1440",
+      "pass": false,
+      "error": "Malformed history rows must reach the existing retryable error UI.\n\nfalse !== true\n"
+    },
+    {
+      "name": "Malformed numeric_content shows retryable error and manual GET retry restores 1440",
+      "pass": false,
+      "error": "Malformed history rows must reach the existing retryable error UI.\n\nfalse !== true\n"
+    }
+  ],
+  "observations": [
+    {
+      "mode": "object_content",
+      "width": 390,
+      "gets": 1,
+      "unexpected_page_errors": [
+        "Minified React error #31; visit https://react.dev/errors/31?args[]=object%20with%20keys%20%7Bunexpected%7D for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+      ],
+      "visible_error": false,
+      "error_text": null,
+      "composer_exists": false,
+      "composer_disabled": null,
+      "body_text": ""
+    },
+    {
+      "mode": "null_row",
+      "width": 390,
+      "gets": 1,
+      "unexpected_page_errors": [
+        "Cannot read properties of null (reading 'role')"
+      ],
+      "visible_error": false,
+      "error_text": null,
+      "composer_exists": false,
+      "composer_disabled": null,
+      "body_text": ""
+    },
+    {
+      "mode": "numeric_content",
+      "width": 390,
+      "gets": 1,
+      "unexpected_page_errors": [],
+      "visible_error": false,
+      "error_text": null,
+      "composer_exists": true,
+      "composer_disabled": false,
+      "body_text": "Open synthetic chat history QA\n청\n나의 풀이에 관해\n\n홍길동님의 사주를 바탕으로 상담합니다\n\n12345\n나"
+    },
+    {
+      "mode": "object_content",
+      "width": 1440,
+      "gets": 1,
+      "unexpected_page_errors": [
+        "Minified React error #31; visit https://react.dev/errors/31?args[]=object%20with%20keys%20%7Bunexpected%7D for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+      ],
+      "visible_error": false,
+      "error_text": null,
+      "composer_exists": false,
+      "composer_disabled": null,
+      "body_text": ""
+    },
+    {
+      "mode": "null_row",
+      "width": 1440,
+      "gets": 1,
+      "unexpected_page_errors": [
+        "Cannot read properties of null (reading 'role')"
+      ],
+      "visible_error": false,
+      "error_text": null,
+      "composer_exists": false,
+      "composer_disabled": null,
+      "body_text": ""
+    },
+    {
+      "mode": "numeric_content",
+      "width": 1440,
+      "gets": 1,
+      "unexpected_page_errors": [],
+      "visible_error": false,
+      "error_text": null,
+      "composer_exists": true,
+      "composer_disabled": false,
+      "body_text": "Open synthetic chat history QA\n청\n나의 풀이에 관해\n\n홍길동님의 사주를 바탕으로 상담합니다\n\n12345\n나"
+    }
+  ],
+  "synthetic_gets": [
+    {
+      "mode": "valid",
+      "width": 390,
+      "rows": [
+        {
+          "role": "doryeong",
+          "content": "새 대화 기록 형식 확인용 가상 안내입니다.",
+          "createdAt": "2026-10-11T00:00:00.000Z"
+        },
+        {
+          "role": "user",
+          "content": "가상 질문 기록입니다.",
+          "createdAt": "2026-10-11T00:01:00.000Z"
+        }
+      ]
+    },
+    {
+      "mode": "object_content",
+      "width": 390,
+      "rows": [
+        {
+          "role": "user",
+          "content": {
+            "unexpected": "object"
+          },
+          "createdAt": "2026-10-11T00:01:00.000Z"
+        }
+      ]
+    },
+    {
+      "mode": "null_row",
+      "width": 390,
+      "rows": [
+        null
+      ]
+    },
+    {
+      "mode": "numeric_content",
+      "width": 390,
+      "rows": [
+        {
+          "role": "user",
+          "content": 12345,
+          "createdAt": "2026-10-11T00:01:00.000Z"
+        }
+      ]
+    },
+    {
+      "mode": "valid",
+      "width": 1440,
+      "rows": [
+        {
+          "role": "doryeong",
+          "content": "새 대화 기록 형식 확인용 가상 안내입니다.",
+          "createdAt": "2026-10-11T00:00:00.000Z"
+        },
+        {
+          "role": "user",
+          "content": "가상 질문 기록입니다.",
+          "createdAt": "2026-10-11T00:01:00.000Z"
+        }
+      ]
+    },
+    {
+      "mode": "object_content",
+      "width": 1440,
+      "rows": [
+        {
+          "role": "user",
+          "content": {
+            "unexpected": "object"
+          },
+          "createdAt": "2026-10-11T00:01:00.000Z"
+        }
+      ]
+    },
+    {
+      "mode": "null_row",
+      "width": 1440,
+      "rows": [
+        null
+      ]
+    },
+    {
+      "mode": "numeric_content",
+      "width": 1440,
+      "rows": [
+        {
+          "role": "user",
+          "content": 12345,
+          "createdAt": "2026-10-11T00:01:00.000Z"
+        }
+      ]
+    }
+  ],
+  "page_errors": [
+    {
+      "mode": "object_content",
+      "width": 390,
+      "error": "Minified React error #31; visit https://react.dev/errors/31?args[]=object%20with%20keys%20%7Bunexpected%7D for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+    },
+    {
+      "mode": "null_row",
+      "width": 390,
+      "error": "Cannot read properties of null (reading 'role')"
+    },
+    {
+      "mode": "object_content",
+      "width": 1440,
+      "error": "Minified React error #31; visit https://react.dev/errors/31?args[]=object%20with%20keys%20%7Bunexpected%7D for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+    },
+    {
+      "mode": "null_row",
+      "width": 1440,
+      "error": "Cannot read properties of null (reading 'role')"
+    }
+  ],
+  "console_errors": [],
+  "outbound_requests": [],
+  "actual_backend_requests": 0,
+  "chat_posts": 0,
+  "database_operations": 0,
+  "native_pointer": true,
+  "manual_dom_events": 0,
+  "previous_suites_rerun": 0,
+  "scope": "Actual production React/Tailwind AskDoryeongModal with fictional person/history at 390x844/1440x1000. Only valid row controls and three malformed row cases plus existing manual history GET retry. Every history GET intercepted at the browser boundary; no actual backend/DB or chat POST. Previous history request ownership/send recovery/IME and all completed QA suites not rerun. No full hosted route or physical device claim."
+}

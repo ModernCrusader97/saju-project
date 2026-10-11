@@ -1,0 +1,15 @@
+{
+  "file": "components/FortuneCard.tsx",
+  "sha256": "e5c8859f37439ded19f0e41910bdfe191a518ba89ac1ad743a1f2540bf2fac3c",
+  "occurrences": [
+    {
+      "line": 6,
+      "text": "import AskDoryeongModal from \"./AskDoryeongModal\";"
+    },
+    {
+      "line": 252,
+      "text": "<AskDoryeongModal"
+    }
+  ],
+  "unchanged": true
+}

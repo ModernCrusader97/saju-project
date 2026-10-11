@@ -61,7 +61,11 @@ function Conversation({
       .then(async res => {
         const data = await readApiResponse(res);
         if (!res.ok) throw new Error(data.error || "대화 기록을 불러오지 못했어요.");
-        if (!Array.isArray(data.chats)) throw new Error("대화 기록을 확인할 수 없습니다.");
+        if (!Array.isArray(data.chats) || !data.chats.every(message =>
+          message !== null && typeof message === "object" &&
+          (message.role === "user" || message.role === "doryeong") &&
+          typeof message.content === "string"
+        )) throw new Error("대화 기록을 확인할 수 없습니다.");
         return data.chats;
       })
       .then(chats => {

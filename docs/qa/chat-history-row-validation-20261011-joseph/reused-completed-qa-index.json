@@ -1,0 +1,91 @@
+{
+  "status": "REUSED_NOT_RERUN",
+  "reports": [
+    {
+      "commit": "5f70798e27c9dd2474bceb823706cf6d37e5475c",
+      "path": "docs/qa/saju-input-request-lifecycle-20261010/validation-summary.json",
+      "sha256": "22971d4a1f1b60ea6ed022619a695ee7cdd508165169e0746321e6a56e982116"
+    },
+    {
+      "commit": "410c957e6e82886e45f26ab3d5dcc84c69140efb",
+      "path": "docs/qa/home-validation-state-20261010/validation-summary.json",
+      "sha256": "a0885f626e343746cec45d95239c121dad151b9c26d7fb7a478701915de92094"
+    },
+    {
+      "commit": "ea018e2228df521ca560e203fe6955c1a2158c27",
+      "path": "docs/qa/manse-form-labels-20261010/validation-summary.json",
+      "sha256": "7f5144d31afd5f7d1227c2c370525d37aa0cd6f9263e9d905f77e529c2aacc86"
+    },
+    {
+      "commit": "dd6fff0fe9701e3a190d14694ace10d517ca4a29",
+      "path": "docs/qa/manse-checkbox-pointer-20261010/validation-summary.json",
+      "sha256": "655db532519c851dd021c3a14e83f438bf8b758c181c8f47397f80a4c46e25aa"
+    },
+    {
+      "commit": "637d93cc60ae4cf8d8096dae478eb3eb7cca1f9d",
+      "path": "docs/qa/saved-detail-analysis-response-20261010/validation-summary.json",
+      "sha256": "19b52873f9d891fa352aec2c99a178b862dd70ef489e218bc57329fc18c746ac"
+    },
+    {
+      "commit": "468861672c7a44c9fb96439e7f2031778001c33c",
+      "path": "docs/qa/saved-detail-element-counts-20261010/validation-summary.json",
+      "sha256": "6003275aa9bce188c407aaf00e8c0a5228dc3ee0ce8ae25534d697732b0f26b8"
+    },
+    {
+      "commit": "37f9bab1f8480170ea64cd17232d7f07a301f7cd",
+      "path": "docs/qa/chat-composition-escape-20261010/validation-summary.json",
+      "sha256": "7ff485f67a5fa1f2167a6b82643596f539ddf2cdd8421c89593920c4506b67b5"
+    },
+    {
+      "commit": "bad1d8abd9d6b691d7da0b506e763bca53d3c424",
+      "path": "docs/qa/galaxy-fallback-dialog-keyboard-20261010/validation-summary.json",
+      "sha256": "4249a1d3d2c1c30d707ad77ac25b65ec0bf1ed50fac5d1ad1091e82d1435f33b"
+    },
+    {
+      "commit": "61f1a3dbcc3e4d991198b64e0a624c208ccf8b58",
+      "path": "docs/qa/galaxy-share-feedback-lifecycle-20261010/validation-summary.json",
+      "sha256": "2f2614eb5eee4f7dac3a9b1f26560850aefd679445dff79bb3fa67d7b29735cc"
+    },
+    {
+      "commit": "f13750ac8776bd360b9b1e9ad6d66de4e8a2e0a2",
+      "path": "docs/qa/passport-image-error-retry-20261010-joseph/validation-summary.json",
+      "sha256": "5e5edb3ed606b3c6955b717acd779264b5436414db6b7b3b96888597aae217c1"
+    },
+    {
+      "commit": "60f2f9c7f003667e71683a4e35d94871d23745f5",
+      "path": "docs/qa/pokedex-close-accessible-name-20261010-joseph/validation-summary.json",
+      "sha256": "2847c69d6538763b8f8f454fba417a9ec520fc4120b37acd891760c4a75eaf5a"
+    },
+    {
+      "commit": "1208601bde07c0817f178b1318d96b93f2432951",
+      "path": "docs/qa/pokedex-keyboard-focus-20261010-joseph/validation-summary.json",
+      "sha256": "c1777f9e5c61b243d603b2cbcb43fc2a96628674b2ac6257336b85659355e90c"
+    },
+    {
+      "commit": "8d48d8c53628eeb5d02d921ba55a4cd89e85c963",
+      "path": "docs/qa/passport-invite-copy-failure-20261010-joseph/validation-summary.json",
+      "sha256": "22cd22cc4bcd1f4f8541d4f86114c0025ea23fb080c9dfe301ad84d14eeb4d2f"
+    },
+    {
+      "commit": "ac5f5f1e628cfca3a5d293ab18e008d6874fd984",
+      "path": "docs/qa/manse-gender-selected-state-20261011-joseph/validation-summary.json",
+      "sha256": "1e106617efa50c4e18810fcde1f2baf5902ddcaafab0c3df1de60471c4fc50fe"
+    },
+    {
+      "commit": "98074bdb585fc2ccc4086517bf839e8ceda5846f",
+      "path": "docs/qa/passport-short-viewport-20261011-joseph/validation-summary.json",
+      "sha256": "a1d3a7f6af181c01468a84c9899b2336340457ebb6c98a728dbdeecb6181ba64"
+    },
+    {
+      "commit": "2df6b6bde19851a1f443b9cc8a2d3742300b385d",
+      "path": "docs/qa/saju-input-date-required-20261011-joseph/validation-summary.json",
+      "sha256": "6aefe2a5dd923aa6d9e948abc81c5c0104a5ff59000a0b5afd2e0a0739a48fce"
+    }
+  ],
+  "previous_suites_rerun": 0,
+  "investigation": [
+    "New candidate: array-only history validation permits null/object-content/numeric-content rows to break or misrender the chat UI. Test existing production component with intercepted fictional GET history only.",
+    "Remote completed maint/saju-calendar-option-types-20261010 8d7760e0565f25be02ab6180c0d817040a4c8e88 and maint/saju-input-catch-binding-20261010 6c2c4285e167d4feb9f966e0208ab1b81e9cd04c are preserved and excluded.",
+    "Existing chat recovery/composition and saved-detail checks are separate; previous sixteen accepted QA records are reused without rerunning."
+  ]
+}

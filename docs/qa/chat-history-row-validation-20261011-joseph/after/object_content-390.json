@@ -1,0 +1,11 @@
+{
+  "mode": "object_content",
+  "width": 390,
+  "gets": 1,
+  "unexpected_page_errors": [],
+  "visible_error": true,
+  "error_text": "대화 기록을 확인할 수 없습니다.대화 기록 다시 불러오기",
+  "composer_exists": true,
+  "composer_disabled": true,
+  "body_text": "Open synthetic chat history QA\n청\n나의 풀이에 관해\n\n홍길동님의 사주를 바탕으로 상담합니다\n\n대화 기록을 확인할 수 없습니다.\n\n대화 기록 다시 불러오기"
+}
