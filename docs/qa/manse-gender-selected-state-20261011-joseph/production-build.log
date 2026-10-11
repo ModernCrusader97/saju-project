@@ -1,0 +1,73 @@
+
+> saju-doryeong-private-preview@0.1.0 build
+> node scripts/sync-approved-jade-assets.mjs && node scripts/run-framework.mjs build
+
+Approved jade v002: 4 runtime assets copied after SHA-256 verification.
+Preserved porcelain GLB: restored with both SHA-256 checks.
+
+  vinext build  (Vite 8.0.13)
+
+(node:19244) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[1/5] analyze client references...
+[2Ktransforming...✓ 252 modules transformed.
+rendering chunks...
+✓ built in 660ms
+[2/5] analyze server references...
+[2Ktransforming...✓ 261 modules transformed.
+rendering chunks...
+✓ built in 1.17s
+[3/5] build rsc environment...
+[2Ktransforming...✓ 249 modules transformed.
+rendering chunks...
+computing gzip size...
+✓ built in 2.38s
+[4/5] build client environment...
+[2Ktransforming...✓ 1997 modules transformed.
+rendering chunks...
+computing gzip size...
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugins. Here is a breakdown:
+  - vinext:middleware-server-only (22%)
+  - vinext:css-data-url (18%)
+  - alias (14%)
+  - vinext:og-inline-fetch-assets (10%)
+  - rsc:virtual-client-package (7%)
+See https://rolldown.rs/options/checks#plugintimings for more details.
+
+✓ built in 5.42s
+[5/5] build ssr environment...
+[2Ktransforming...✓ 263 modules transformed.
+rendering chunks...
+computing gzip size...
+✓ built in 2.58s
+[0m
+  Route (app)
+  ┌ ? /                 
+  ├ ? /ai-test          
+  ├ λ /api/ai-test      
+  ├ λ /api/guin         
+  ├ λ /api/guin/:id     
+  ├ λ /api/saju         
+  ├ λ /api/saju/:id     
+  ├ λ /api/saju/:id/chat
+  ├ ? /daily            
+  ├ ? /guin             
+  ├ ƒ /guin/:id         
+  ├ ? /lab              
+  ├ ? /manse            
+  ├ ? /planet           
+  └ ? /saved            
+
+  λ API  ƒ Dynamic  ? Unknown
+
+  ? Some routes could not be classified. vinext currently uses static analysis
+    and cannot detect dynamic API usage (headers(), cookies(), etc.) at build time.
+    Automatic classification will be improved in a future release.
+
+  Build complete. Run `vinext start` to start the production server.
+

@@ -1,0 +1,85 @@
+{
+  "status": "PASS_NO_ERRORS_AND_UNCHANGED_EXISTING_WARNINGS",
+  "same_real_product_filename_for_baseline": true,
+  "before": [
+    {
+      "file": "D:\\Codex\\Work\\SaJuUiOneBug-20261010-Joseph\\repo\\app\\manse\\page.tsx",
+      "errorCount": 0,
+      "warningCount": 4,
+      "messages": [
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'Sparkles' is defined but never used.",
+          "line": 8,
+          "column": 20
+        },
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'User' is defined but never used.",
+          "line": 8,
+          "column": 30
+        },
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'Clock' is defined but never used.",
+          "line": 8,
+          "column": 36
+        },
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'Compass' is defined but never used.",
+          "line": 8,
+          "column": 43
+        }
+      ]
+    }
+  ],
+  "after": [
+    {
+      "file": "D:\\Codex\\Work\\SaJuUiOneBug-20261010-Joseph\\repo\\app\\manse\\page.tsx",
+      "errorCount": 0,
+      "warningCount": 4,
+      "messages": [
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'Sparkles' is defined but never used.",
+          "line": 8,
+          "column": 20
+        },
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'User' is defined but never used.",
+          "line": 8,
+          "column": 30
+        },
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'Clock' is defined but never used.",
+          "line": 8,
+          "column": 36
+        },
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'Compass' is defined but never used.",
+          "line": 8,
+          "column": 43
+        }
+      ]
+    },
+    {
+      "file": "D:\\Codex\\Work\\SaJuUiOneBug-20261010-Joseph\\repo\\scripts\\qa\\manse-gender-selected-state-browser.mjs",
+      "errorCount": 0,
+      "warningCount": 0,
+      "messages": []
+    }
+  ],
+  "rules_or_suppressions_changed": false
+}

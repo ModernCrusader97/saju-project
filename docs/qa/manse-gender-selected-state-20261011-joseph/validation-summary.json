@@ -1,0 +1,69 @@
+{
+  "status": "PASS_ONE_DISTINCT_MANSE_GENDER_SELECTED_STATE_FIX",
+  "host": "Joseph",
+  "at_utc": "2026-10-11T00:19:25.285Z",
+  "basis": "8d48d8c53628eeb5d02d921ba55a4cd89e85c963",
+  "branch": "fix/manse-gender-selected-state-20261011-joseph",
+  "product": "app/manse/page.tsx",
+  "consumer": "Existing /manse route default export in app/manse/page.tsx",
+  "problem": "Gender buttons change their visual selection but both native AX buttons have no pressed/selected state, including after pointer or keyboard activation.",
+  "fix": "Add aria-pressed to the two existing buttons, directly matching the unchanged male/female state.",
+  "product_diff": {
+    "insertions": 2,
+    "deletions": 0,
+    "modified_preexisting_files": 1
+  },
+  "before": {
+    "passed": 0,
+    "failed": 6
+  },
+  "after": {
+    "passed": 6,
+    "failed": 0
+  },
+  "actual_browser": "154.0.8037.98",
+  "viewports": [
+    390,
+    1440
+  ],
+  "actual_native_AX": true,
+  "native_keyboard_and_pointer": true,
+  "manual_keyboard_or_AX_events": 0,
+  "identical_new_harness_and_css": true,
+  "identical_png_files_and_pixels": 6,
+  "identical_form_text_values_and_visible_gender_selection": 6,
+  "unexpected_page_errors": 0,
+  "console_errors": 0,
+  "outbound_requests": 0,
+  "api_requests": 0,
+  "database_operations": 0,
+  "previous_suites_rerun": 0,
+  "labels_checkbox_calculation_state_setters_text_classes_unchanged": true,
+  "types": {
+    "exit_code": 0,
+    "nonincremental": true,
+    "after_own_build": true
+  },
+  "build": {
+    "exit_code": 0,
+    "own_current_branch_run": true,
+    "no_install_or_deployment": true
+  },
+  "lint": {
+    "errors": 0,
+    "unchanged_existing_product_warnings": 4,
+    "new_qa_warnings": 0,
+    "rules_config_suppressions_unchanged": true
+  },
+  "source_reverse_patch_byte_exact": true,
+  "previous_completed_records_reused": 13,
+  "preexisting_tracked_entries": 728,
+  "scope": "docs/qa/manse-gender-selected-state-20261011-joseph",
+  "models_other_11_art_default_auth_billing_permissions_db_unchanged": true,
+  "private_repo_fresh_read_verified": true,
+  "limits": [
+    "Actual production React/Tailwind /manse page and native Chrome gender pressed-state after native pointer/Tab+Space. Only usePathname is a fixed /manse route fixture. No previous label/checkbox/calculation, passport/collection, API/DB, model, hosted route, screen-reader hardware or full-app integration validation.",
+    "Native Chrome AX exposes the pressed state. No physical screen-reader or hosted/full-app route validation, and calculation accuracy is outside these state checks."
+  ],
+  "remaining_blockers": []
+}

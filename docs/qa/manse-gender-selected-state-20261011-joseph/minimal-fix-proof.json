@@ -1,0 +1,27 @@
+{
+  "status": "PASS_TWO_SELECTED_STATE_ATTRIBUTES_ONLY_SOURCE_PROOF",
+  "basis": "8d48d8c53628eeb5d02d921ba55a4cd89e85c963",
+  "branch": "fix/manse-gender-selected-state-20261011-joseph",
+  "product": "app/manse/page.tsx",
+  "before_sha256": "a10f377baa1af762fe3812613b5586b0df8b09bae34c3ea03e162b66e23a74b1",
+  "after_sha256": "69059f05bd8a6014e72905927d592855929f2b10868baed1cc1ec41dc1f5b0cc",
+  "changes": [
+    {
+      "from": "                type=\"button\"\r\n                onClick={() => setGender(\"male\")}",
+      "to": "                type=\"button\"\r\n                aria-pressed={gender === \"male\"}\r\n                onClick={() => setGender(\"male\")}"
+    },
+    {
+      "from": "                type=\"button\"\r\n                onClick={() => setGender(\"female\")}",
+      "to": "                type=\"button\"\r\n                aria-pressed={gender === \"female\"}\r\n                onClick={() => setGender(\"female\")}"
+    }
+  ],
+  "product_diff": {
+    "insertions": 2,
+    "deletions": 0,
+    "modified_preexisting_files": 1
+  },
+  "reverse_native_source_byte_exact": true,
+  "displayed_text_classes_gender_state_setters_inputs_labels_checkbox_calculation_handlers_unchanged": true,
+  "api_db_art_models_default_auth_billing_permissions_unchanged": true,
+  "only_new_behavior": "Two existing gender toggle buttons expose aria-pressed matching the existing gender state."
+}

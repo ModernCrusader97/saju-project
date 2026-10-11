@@ -1,0 +1,66 @@
+{
+  "status": "PASS_SIX_IDENTICAL_STATE_UI_PNG_BYTES_AND_VISUAL_OBSERVATIONS",
+  "screens": [
+    {
+      "file": "initial-390.png",
+      "width": 390,
+      "height": 844,
+      "bytes": 44956,
+      "sha256": "69ea377b960dcb4553d03e429e039e8ce588a218720b2519015eca95671d36e9",
+      "png_bytes_and_pixels_identical": true,
+      "visible_selection_text_form_values_identical": true
+    },
+    {
+      "file": "pointer-female-390.png",
+      "width": 390,
+      "height": 844,
+      "bytes": 44973,
+      "sha256": "c30e814fc62c06ac6bfa918ab2c6e95f4f215cb65eafd90a63c5ddba41aa63fa",
+      "png_bytes_and_pixels_identical": true,
+      "visible_selection_text_form_values_identical": true
+    },
+    {
+      "file": "keyboard-female-390.png",
+      "width": 390,
+      "height": 844,
+      "bytes": 45555,
+      "sha256": "f9fa3f85d5fbf7de5ed6a0cf835f99224803dbdeb5aba12e22d1068f7eaf87ec",
+      "png_bytes_and_pixels_identical": true,
+      "visible_selection_text_form_values_identical": true
+    },
+    {
+      "file": "initial-1440.png",
+      "width": 1440,
+      "height": 1000,
+      "bytes": 93843,
+      "sha256": "b66489391cfcef05d10019664df252d6dc6e78ad0d86484479392353df41ddb7",
+      "png_bytes_and_pixels_identical": true,
+      "visible_selection_text_form_values_identical": true
+    },
+    {
+      "file": "pointer-female-1440.png",
+      "width": 1440,
+      "height": 1000,
+      "bytes": 93843,
+      "sha256": "5fd4d4c0700b121f2e1df04bf8c3fb079e19a6517f26cb459fb884233212088e",
+      "png_bytes_and_pixels_identical": true,
+      "visible_selection_text_form_values_identical": true
+    },
+    {
+      "file": "keyboard-female-1440.png",
+      "width": 1440,
+      "height": 1000,
+      "bytes": 94505,
+      "sha256": "b37b6f9878b02ab88ec08a256ab1120893d0d5fef1e1e2ea90d10ad9bd94d307",
+      "png_bytes_and_pixels_identical": true,
+      "visible_selection_text_form_values_identical": true
+    }
+  ],
+  "css_sha256": "f455acbc02ae6740a95b9ee2da3aeb77d70fdb906ae45ef504a55b7eb3c83387",
+  "harness_sha256": "9c9202d1eea471c9514a9135351502aa5bc1021c3ed06249e4b422b7880124af",
+  "only_native_pressed_state_changes": true,
+  "direct_visual_inspection": [
+    "before/initial-390.png",
+    "after/pointer-female-390.png"
+  ]
+}

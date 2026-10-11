@@ -1,0 +1,36 @@
+{
+  "native_buttons": [
+    {
+      "name": "남성 (乾命)",
+      "role": "button",
+      "pressed": "true"
+    },
+    {
+      "name": "여성 (坤命)",
+      "role": "button",
+      "pressed": "false"
+    }
+  ],
+  "visual": {
+    "selected_buttons": [
+      "남성 (乾命)"
+    ],
+    "gender_names": [
+      "남성 (乾命)",
+      "여성 (坤命)"
+    ],
+    "values": [
+      "홍길동",
+      "1995",
+      "5",
+      "15",
+      "14",
+      "on"
+    ],
+    "input_error": null,
+    "text": "사주 명식 입력\n남성 (乾命)\n여성 (坤命)\n이름\n태어난 년도\n월\n일\n태어난 시 (0~23시):\n시간 모름 (3주만 풀이)\n정통 만세력 계산하기"
+  },
+  "screenshot_sha256": "69ea377b960dcb4553d03e429e039e8ce588a218720b2519015eca95671d36e9",
+  "actual_native_AX": true,
+  "manual_keyboard_or_AX_events": 0
+}

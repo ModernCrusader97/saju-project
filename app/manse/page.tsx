@@ -86,6 +86,7 @@ export default function MansePage() {
             <div className="inline-flex rounded-lg bg-doryeong-ivory p-0.5 border border-doryeong-border text-xs">
               <button
                 type="button"
+                aria-pressed={gender === "male"}
                 onClick={() => setGender("male")}
                 className={`px-3 py-1 rounded-md font-bold transition-colors ${
                   gender === "male"
@@ -97,6 +98,7 @@ export default function MansePage() {
               </button>
               <button
                 type="button"
+                aria-pressed={gender === "female"}
                 onClick={() => setGender("female")}
                 className={`px-3 py-1 rounded-md font-bold transition-colors ${
                   gender === "female"

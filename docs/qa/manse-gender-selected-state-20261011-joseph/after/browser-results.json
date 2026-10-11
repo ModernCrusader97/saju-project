@@ -1,0 +1,265 @@
+{
+  "status": "PASS",
+  "phase": "after",
+  "at_utc": "2026-10-11T00:16:50.680Z",
+  "browser": "154.0.8037.98",
+  "product": "app/manse/page.tsx",
+  "source_sha256": "69059f05bd8a6014e72905927d592855929f2b10868baed1cc1ec41dc1f5b0cc",
+  "harness_sha256": "9c9202d1eea471c9514a9135351502aa5bc1021c3ed06249e4b422b7880124af",
+  "css_sha256": "f455acbc02ae6740a95b9ee2da3aeb77d70fdb906ae45ef504a55b7eb3c83387",
+  "passed": 6,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "native selected gender initial 390",
+      "observed": {
+        "native_buttons": [
+          {
+            "name": "남성 (乾命)",
+            "role": "button",
+            "pressed": "true"
+          },
+          {
+            "name": "여성 (坤命)",
+            "role": "button",
+            "pressed": "false"
+          }
+        ],
+        "visual": {
+          "selected_buttons": [
+            "남성 (乾命)"
+          ],
+          "gender_names": [
+            "남성 (乾命)",
+            "여성 (坤命)"
+          ],
+          "values": [
+            "홍길동",
+            "1995",
+            "5",
+            "15",
+            "14",
+            "on"
+          ],
+          "input_error": null,
+          "text": "사주 명식 입력\n남성 (乾命)\n여성 (坤命)\n이름\n태어난 년도\n월\n일\n태어난 시 (0~23시):\n시간 모름 (3주만 풀이)\n정통 만세력 계산하기"
+        },
+        "screenshot_sha256": "69ea377b960dcb4553d03e429e039e8ce588a218720b2519015eca95671d36e9",
+        "actual_native_AX": true,
+        "manual_keyboard_or_AX_events": 0
+      },
+      "pass": true
+    },
+    {
+      "name": "native selected gender pointer-female 390",
+      "observed": {
+        "native_buttons": [
+          {
+            "name": "남성 (乾命)",
+            "role": "button",
+            "pressed": "false"
+          },
+          {
+            "name": "여성 (坤命)",
+            "role": "button",
+            "pressed": "true"
+          }
+        ],
+        "visual": {
+          "selected_buttons": [
+            "여성 (坤命)"
+          ],
+          "gender_names": [
+            "남성 (乾命)",
+            "여성 (坤命)"
+          ],
+          "values": [
+            "홍길동",
+            "1995",
+            "5",
+            "15",
+            "14",
+            "on"
+          ],
+          "input_error": null,
+          "text": "사주 명식 입력\n남성 (乾命)\n여성 (坤命)\n이름\n태어난 년도\n월\n일\n태어난 시 (0~23시):\n시간 모름 (3주만 풀이)\n정통 만세력 계산하기"
+        },
+        "screenshot_sha256": "c30e814fc62c06ac6bfa918ab2c6e95f4f215cb65eafd90a63c5ddba41aa63fa",
+        "actual_native_AX": true,
+        "manual_keyboard_or_AX_events": 0
+      },
+      "pass": true
+    },
+    {
+      "name": "native selected gender keyboard-female 390",
+      "observed": {
+        "native_buttons": [
+          {
+            "name": "남성 (乾命)",
+            "role": "button",
+            "pressed": "false"
+          },
+          {
+            "name": "여성 (坤命)",
+            "role": "button",
+            "pressed": "true"
+          }
+        ],
+        "visual": {
+          "selected_buttons": [
+            "여성 (坤命)"
+          ],
+          "gender_names": [
+            "남성 (乾命)",
+            "여성 (坤命)"
+          ],
+          "values": [
+            "홍길동",
+            "1995",
+            "5",
+            "15",
+            "14",
+            "on"
+          ],
+          "input_error": null,
+          "text": "사주 명식 입력\n남성 (乾命)\n여성 (坤命)\n이름\n태어난 년도\n월\n일\n태어난 시 (0~23시):\n시간 모름 (3주만 풀이)\n정통 만세력 계산하기"
+        },
+        "screenshot_sha256": "f9fa3f85d5fbf7de5ed6a0cf835f99224803dbdeb5aba12e22d1068f7eaf87ec",
+        "actual_native_AX": true,
+        "manual_keyboard_or_AX_events": 0
+      },
+      "pass": true
+    },
+    {
+      "name": "native selected gender initial 1440",
+      "observed": {
+        "native_buttons": [
+          {
+            "name": "남성 (乾命)",
+            "role": "button",
+            "pressed": "true"
+          },
+          {
+            "name": "여성 (坤命)",
+            "role": "button",
+            "pressed": "false"
+          }
+        ],
+        "visual": {
+          "selected_buttons": [
+            "남성 (乾命)"
+          ],
+          "gender_names": [
+            "남성 (乾命)",
+            "여성 (坤命)"
+          ],
+          "values": [
+            "홍길동",
+            "1995",
+            "5",
+            "15",
+            "14",
+            "on"
+          ],
+          "input_error": null,
+          "text": "사주 명식 입력\n남성 (乾命)\n여성 (坤命)\n이름\n태어난 년도\n월\n일\n태어난 시 (0~23시):\n시간 모름 (3주만 풀이)\n정통 만세력 계산하기"
+        },
+        "screenshot_sha256": "b66489391cfcef05d10019664df252d6dc6e78ad0d86484479392353df41ddb7",
+        "actual_native_AX": true,
+        "manual_keyboard_or_AX_events": 0
+      },
+      "pass": true
+    },
+    {
+      "name": "native selected gender pointer-female 1440",
+      "observed": {
+        "native_buttons": [
+          {
+            "name": "남성 (乾命)",
+            "role": "button",
+            "pressed": "false"
+          },
+          {
+            "name": "여성 (坤命)",
+            "role": "button",
+            "pressed": "true"
+          }
+        ],
+        "visual": {
+          "selected_buttons": [
+            "여성 (坤命)"
+          ],
+          "gender_names": [
+            "남성 (乾命)",
+            "여성 (坤命)"
+          ],
+          "values": [
+            "홍길동",
+            "1995",
+            "5",
+            "15",
+            "14",
+            "on"
+          ],
+          "input_error": null,
+          "text": "사주 명식 입력\n남성 (乾命)\n여성 (坤命)\n이름\n태어난 년도\n월\n일\n태어난 시 (0~23시):\n시간 모름 (3주만 풀이)\n정통 만세력 계산하기"
+        },
+        "screenshot_sha256": "5fd4d4c0700b121f2e1df04bf8c3fb079e19a6517f26cb459fb884233212088e",
+        "actual_native_AX": true,
+        "manual_keyboard_or_AX_events": 0
+      },
+      "pass": true
+    },
+    {
+      "name": "native selected gender keyboard-female 1440",
+      "observed": {
+        "native_buttons": [
+          {
+            "name": "남성 (乾命)",
+            "role": "button",
+            "pressed": "false"
+          },
+          {
+            "name": "여성 (坤命)",
+            "role": "button",
+            "pressed": "true"
+          }
+        ],
+        "visual": {
+          "selected_buttons": [
+            "여성 (坤命)"
+          ],
+          "gender_names": [
+            "남성 (乾命)",
+            "여성 (坤命)"
+          ],
+          "values": [
+            "홍길동",
+            "1995",
+            "5",
+            "15",
+            "14",
+            "on"
+          ],
+          "input_error": null,
+          "text": "사주 명식 입력\n남성 (乾命)\n여성 (坤命)\n이름\n태어난 년도\n월\n일\n태어난 시 (0~23시):\n시간 모름 (3주만 풀이)\n정통 만세력 계산하기"
+        },
+        "screenshot_sha256": "b37b6f9878b02ab88ec08a256ab1120893d0d5fef1e1e2ea90d10ad9bd94d307",
+        "actual_native_AX": true,
+        "manual_keyboard_or_AX_events": 0
+      },
+      "pass": true
+    }
+  ],
+  "page_errors": [],
+  "console_errors": [],
+  "outbound_requests": [],
+  "api_requests": 0,
+  "database_operations": 0,
+  "actual_native_AX": true,
+  "native_keyboard_and_pointer": true,
+  "manual_keyboard_or_AX_events": 0,
+  "previous_suites_rerun": 0,
+  "synthetic_default_example_only": true,
+  "scope": "Actual production React/Tailwind /manse page and native Chrome gender pressed-state after native pointer/Tab+Space. Only usePathname is a fixed /manse route fixture. No previous label/checkbox/calculation, passport/collection, API/DB, model, hosted route, screen-reader hardware or full-app integration validation."
+}
