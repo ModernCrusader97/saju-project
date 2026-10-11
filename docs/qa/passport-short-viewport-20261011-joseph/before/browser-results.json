@@ -1,0 +1,1153 @@
+{
+  "status": "FAIL",
+  "phase": "before",
+  "at_utc": "2026-10-11T00:38:55.547Z",
+  "browser": "154.0.8037.98",
+  "product": "components/planet/CosmicPassportModal.tsx",
+  "source_sha256": "e72aa472d5084064998018eef0c60d8b54741490d559757f07307cae7d763d65",
+  "harness_sha256": "a5b3a536f864818c72adebfd196158a8568e02e2fa55f27912d03cd454a94224",
+  "css_sha256": "f455acbc02ae6740a95b9ee2da3aeb77d70fdb906ae45ef504a55b7eb3c83387",
+  "passed": 8,
+  "failed": 4,
+  "checks": [
+    {
+      "name": "Header and close button are scroll reachable 390x844",
+      "observed": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "dialog": {
+          "left": 16,
+          "top": 75.453125,
+          "right": 374,
+          "bottom": 768.53125,
+          "width": 358,
+          "height": 693.078125
+        },
+        "close": {
+          "left": 321,
+          "top": 106.703125,
+          "right": 349,
+          "bottom": 134.703125,
+          "width": 28,
+          "height": 28
+        },
+        "last_action": {
+          "left": 41,
+          "top": 705.53125,
+          "right": 349,
+          "bottom": 743.53125,
+          "width": 308,
+          "height": 38
+        },
+        "header": {
+          "left": 41,
+          "top": 100.453125,
+          "right": 349,
+          "bottom": 157.953125,
+          "width": 308,
+          "height": 57.5
+        },
+        "scroll_top": 0,
+        "scroll_height": 844,
+        "client_height": 844,
+        "max_scroll": 0,
+        "document_scroll_y": 0,
+        "buttons": [
+          "",
+          "인스타 스토리용 9:16 카드 저장 (PNG)",
+          "카톡 초대 링크 복사 (내 은하로 착륙해줘)"
+        ]
+      },
+      "pass": true
+    },
+    {
+      "name": "Bottom action buttons are scroll reachable 390x844",
+      "observed": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "dialog": {
+          "left": 16,
+          "top": 75.453125,
+          "right": 374,
+          "bottom": 768.53125,
+          "width": 358,
+          "height": 693.078125
+        },
+        "close": {
+          "left": 321,
+          "top": 106.703125,
+          "right": 349,
+          "bottom": 134.703125,
+          "width": 28,
+          "height": 28
+        },
+        "last_action": {
+          "left": 41,
+          "top": 705.53125,
+          "right": 349,
+          "bottom": 743.53125,
+          "width": 308,
+          "height": 38
+        },
+        "header": {
+          "left": 41,
+          "top": 100.453125,
+          "right": 349,
+          "bottom": 157.953125,
+          "width": 308,
+          "height": 57.5
+        },
+        "scroll_top": 0,
+        "scroll_height": 844,
+        "client_height": 844,
+        "max_scroll": 0,
+        "document_scroll_y": 0,
+        "buttons": [
+          "",
+          "인스타 스토리용 9:16 카드 저장 (PNG)",
+          "카톡 초대 링크 복사 (내 은하로 착륙해줘)"
+        ]
+      },
+      "pass": true
+    },
+    {
+      "name": "Native pointer closes after scrolling back 390x844",
+      "observed": {
+        "closed_by_native_pointer": true
+      },
+      "pass": true
+    },
+    {
+      "name": "Header and close button are scroll reachable 1440x1000",
+      "observed": {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "dialog": {
+          "left": 496,
+          "top": 153.453125,
+          "right": 944,
+          "bottom": 846.53125,
+          "width": 448,
+          "height": 693.078125
+        },
+        "close": {
+          "left": 891,
+          "top": 184.703125,
+          "right": 919,
+          "bottom": 212.703125,
+          "width": 28,
+          "height": 28
+        },
+        "last_action": {
+          "left": 521,
+          "top": 783.53125,
+          "right": 919,
+          "bottom": 821.53125,
+          "width": 398,
+          "height": 38
+        },
+        "header": {
+          "left": 521,
+          "top": 178.453125,
+          "right": 919,
+          "bottom": 235.953125,
+          "width": 398,
+          "height": 57.5
+        },
+        "scroll_top": 0,
+        "scroll_height": 1000,
+        "client_height": 1000,
+        "max_scroll": 0,
+        "document_scroll_y": 0,
+        "buttons": [
+          "",
+          "인스타 스토리용 9:16 카드 저장 (PNG)",
+          "카톡 초대 링크 복사 (내 은하로 착륙해줘)"
+        ]
+      },
+      "pass": true
+    },
+    {
+      "name": "Bottom action buttons are scroll reachable 1440x1000",
+      "observed": {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "dialog": {
+          "left": 496,
+          "top": 153.453125,
+          "right": 944,
+          "bottom": 846.53125,
+          "width": 448,
+          "height": 693.078125
+        },
+        "close": {
+          "left": 891,
+          "top": 184.703125,
+          "right": 919,
+          "bottom": 212.703125,
+          "width": 28,
+          "height": 28
+        },
+        "last_action": {
+          "left": 521,
+          "top": 783.53125,
+          "right": 919,
+          "bottom": 821.53125,
+          "width": 398,
+          "height": 38
+        },
+        "header": {
+          "left": 521,
+          "top": 178.453125,
+          "right": 919,
+          "bottom": 235.953125,
+          "width": 398,
+          "height": 57.5
+        },
+        "scroll_top": 0,
+        "scroll_height": 1000,
+        "client_height": 1000,
+        "max_scroll": 0,
+        "document_scroll_y": 0,
+        "buttons": [
+          "",
+          "인스타 스토리용 9:16 카드 저장 (PNG)",
+          "카톡 초대 링크 복사 (내 은하로 착륙해줘)"
+        ]
+      },
+      "pass": true
+    },
+    {
+      "name": "Native pointer closes after scrolling back 1440x1000",
+      "observed": {
+        "closed_by_native_pointer": true
+      },
+      "pass": true
+    },
+    {
+      "name": "Header and close button are scroll reachable 844x390",
+      "pass": false,
+      "error": "Passport header remains above the viewport at scrollTop=0."
+    },
+    {
+      "name": "Bottom action buttons are scroll reachable 844x390",
+      "observed": {
+        "viewport": {
+          "width": 844,
+          "height": 390
+        },
+        "dialog": {
+          "left": 198,
+          "top": -319.53125,
+          "right": 646,
+          "bottom": 373.546875,
+          "width": 448,
+          "height": 693.078125
+        },
+        "close": {
+          "left": 593,
+          "top": -288.28125,
+          "right": 621,
+          "bottom": -260.28125,
+          "width": 28,
+          "height": 28
+        },
+        "last_action": {
+          "left": 223,
+          "top": 310.546875,
+          "right": 621,
+          "bottom": 348.546875,
+          "width": 398,
+          "height": 38
+        },
+        "header": {
+          "left": 223,
+          "top": -294.53125,
+          "right": 621,
+          "bottom": -237.03125,
+          "width": 398,
+          "height": 57.5
+        },
+        "scroll_top": 168,
+        "scroll_height": 558,
+        "client_height": 390,
+        "max_scroll": 168,
+        "document_scroll_y": 0,
+        "buttons": [
+          "",
+          "인스타 스토리용 9:16 카드 저장 (PNG)",
+          "카톡 초대 링크 복사 (내 은하로 착륙해줘)"
+        ]
+      },
+      "pass": true
+    },
+    {
+      "name": "Native pointer closes after scrolling back 844x390",
+      "pass": false,
+      "error": "Native pointer cannot reach close after scrolling back to top."
+    },
+    {
+      "name": "Header and close button are scroll reachable 390x360",
+      "pass": false,
+      "error": "Passport header remains above the viewport at scrollTop=0."
+    },
+    {
+      "name": "Bottom action buttons are scroll reachable 390x360",
+      "observed": {
+        "viewport": {
+          "width": 390,
+          "height": 360
+        },
+        "dialog": {
+          "left": 16,
+          "top": -349.53125,
+          "right": 374,
+          "bottom": 343.546875,
+          "width": 358,
+          "height": 693.078125
+        },
+        "close": {
+          "left": 321,
+          "top": -318.28125,
+          "right": 349,
+          "bottom": -290.28125,
+          "width": 28,
+          "height": 28
+        },
+        "last_action": {
+          "left": 41,
+          "top": 280.546875,
+          "right": 349,
+          "bottom": 318.546875,
+          "width": 308,
+          "height": 38
+        },
+        "header": {
+          "left": 41,
+          "top": -324.53125,
+          "right": 349,
+          "bottom": -267.03125,
+          "width": 308,
+          "height": 57.5
+        },
+        "scroll_top": 183,
+        "scroll_height": 543,
+        "client_height": 360,
+        "max_scroll": 183,
+        "document_scroll_y": 0,
+        "buttons": [
+          "",
+          "인스타 스토리용 9:16 카드 저장 (PNG)",
+          "카톡 초대 링크 복사 (내 은하로 착륙해줘)"
+        ]
+      },
+      "pass": true
+    },
+    {
+      "name": "Native pointer closes after scrolling back 390x360",
+      "pass": false,
+      "error": "Native pointer cannot reach close after scrolling back to top."
+    }
+  ],
+  "observations": [
+    {
+      "key": "390x844",
+      "opening": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "dialog": {
+          "left": 16,
+          "top": 75.453125,
+          "right": 374,
+          "bottom": 768.53125,
+          "width": 358,
+          "height": 693.078125
+        },
+        "close": {
+          "left": 321,
+          "top": 106.703125,
+          "right": 349,
+          "bottom": 134.703125,
+          "width": 28,
+          "height": 28
+        },
+        "last_action": {
+          "left": 41,
+          "top": 705.53125,
+          "right": 349,
+          "bottom": 743.53125,
+          "width": 308,
+          "height": 38
+        },
+        "header": {
+          "left": 41,
+          "top": 100.453125,
+          "right": 349,
+          "bottom": 157.953125,
+          "width": 308,
+          "height": 57.5
+        },
+        "scroll_top": 0,
+        "scroll_height": 844,
+        "client_height": 844,
+        "max_scroll": 0,
+        "document_scroll_y": 0,
+        "buttons": [
+          "",
+          "인스타 스토리용 9:16 카드 저장 (PNG)",
+          "카톡 초대 링크 복사 (내 은하로 착륙해줘)"
+        ]
+      },
+      "top": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "dialog": {
+          "left": 16,
+          "top": 75.453125,
+          "right": 374,
+          "bottom": 768.53125,
+          "width": 358,
+          "height": 693.078125
+        },
+        "close": {
+          "left": 321,
+          "top": 106.703125,
+          "right": 349,
+          "bottom": 134.703125,
+          "width": 28,
+          "height": 28
+        },
+        "last_action": {
+          "left": 41,
+          "top": 705.53125,
+          "right": 349,
+          "bottom": 743.53125,
+          "width": 308,
+          "height": 38
+        },
+        "header": {
+          "left": 41,
+          "top": 100.453125,
+          "right": 349,
+          "bottom": 157.953125,
+          "width": 308,
+          "height": 57.5
+        },
+        "scroll_top": 0,
+        "scroll_height": 844,
+        "client_height": 844,
+        "max_scroll": 0,
+        "document_scroll_y": 0,
+        "buttons": [
+          "",
+          "인스타 스토리용 9:16 카드 저장 (PNG)",
+          "카톡 초대 링크 복사 (내 은하로 착륙해줘)"
+        ]
+      },
+      "bottom": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "dialog": {
+          "left": 16,
+          "top": 75.453125,
+          "right": 374,
+          "bottom": 768.53125,
+          "width": 358,
+          "height": 693.078125
+        },
+        "close": {
+          "left": 321,
+          "top": 106.703125,
+          "right": 349,
+          "bottom": 134.703125,
+          "width": 28,
+          "height": 28
+        },
+        "last_action": {
+          "left": 41,
+          "top": 705.53125,
+          "right": 349,
+          "bottom": 743.53125,
+          "width": 308,
+          "height": 38
+        },
+        "header": {
+          "left": 41,
+          "top": 100.453125,
+          "right": 349,
+          "bottom": 157.953125,
+          "width": 308,
+          "height": 57.5
+        },
+        "scroll_top": 0,
+        "scroll_height": 844,
+        "client_height": 844,
+        "max_scroll": 0,
+        "document_scroll_y": 0,
+        "buttons": [
+          "",
+          "인스타 스토리용 9:16 카드 저장 (PNG)",
+          "카톡 초대 링크 복사 (내 은하로 착륙해줘)"
+        ]
+      },
+      "returned_top": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "dialog": {
+          "left": 16,
+          "top": 75.453125,
+          "right": 374,
+          "bottom": 768.53125,
+          "width": 358,
+          "height": 693.078125
+        },
+        "close": {
+          "left": 321,
+          "top": 106.703125,
+          "right": 349,
+          "bottom": 134.703125,
+          "width": 28,
+          "height": 28
+        },
+        "last_action": {
+          "left": 41,
+          "top": 705.53125,
+          "right": 349,
+          "bottom": 743.53125,
+          "width": 308,
+          "height": 38
+        },
+        "header": {
+          "left": 41,
+          "top": 100.453125,
+          "right": 349,
+          "bottom": 157.953125,
+          "width": 308,
+          "height": 57.5
+        },
+        "scroll_top": 0,
+        "scroll_height": 844,
+        "client_height": 844,
+        "max_scroll": 0,
+        "document_scroll_y": 0,
+        "buttons": [
+          "",
+          "인스타 스토리용 9:16 카드 저장 (PNG)",
+          "카톡 초대 링크 복사 (내 은하로 착륙해줘)"
+        ]
+      }
+    },
+    {
+      "key": "1440x1000",
+      "opening": {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "dialog": {
+          "left": 496,
+          "top": 153.453125,
+          "right": 944,
+          "bottom": 846.53125,
+          "width": 448,
+          "height": 693.078125
+        },
+        "close": {
+          "left": 891,
+          "top": 184.703125,
+          "right": 919,
+          "bottom": 212.703125,
+          "width": 28,
+          "height": 28
+        },
+        "last_action": {
+          "left": 521,
+          "top": 783.53125,
+          "right": 919,
+          "bottom": 821.53125,
+          "width": 398,
+          "height": 38
+        },
+        "header": {
+          "left": 521,
+          "top": 178.453125,
+          "right": 919,
+          "bottom": 235.953125,
+          "width": 398,
+          "height": 57.5
+        },
+        "scroll_top": 0,
+        "scroll_height": 1000,
+        "client_height": 1000,
+        "max_scroll": 0,
+        "document_scroll_y": 0,
+        "buttons": [
+          "",
+          "인스타 스토리용 9:16 카드 저장 (PNG)",
+          "카톡 초대 링크 복사 (내 은하로 착륙해줘)"
+        ]
+      },
+      "top": {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "dialog": {
+          "left": 496,
+          "top": 153.453125,
+          "right": 944,
+          "bottom": 846.53125,
+          "width": 448,
+          "height": 693.078125
+        },
+        "close": {
+          "left": 891,
+          "top": 184.703125,
+          "right": 919,
+          "bottom": 212.703125,
+          "width": 28,
+          "height": 28
+        },
+        "last_action": {
+          "left": 521,
+          "top": 783.53125,
+          "right": 919,
+          "bottom": 821.53125,
+          "width": 398,
+          "height": 38
+        },
+        "header": {
+          "left": 521,
+          "top": 178.453125,
+          "right": 919,
+          "bottom": 235.953125,
+          "width": 398,
+          "height": 57.5
+        },
+        "scroll_top": 0,
+        "scroll_height": 1000,
+        "client_height": 1000,
+        "max_scroll": 0,
+        "document_scroll_y": 0,
+        "buttons": [
+          "",
+          "인스타 스토리용 9:16 카드 저장 (PNG)",
+          "카톡 초대 링크 복사 (내 은하로 착륙해줘)"
+        ]
+      },
+      "bottom": {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "dialog": {
+          "left": 496,
+          "top": 153.453125,
+          "right": 944,
+          "bottom": 846.53125,
+          "width": 448,
+          "height": 693.078125
+        },
+        "close": {
+          "left": 891,
+          "top": 184.703125,
+          "right": 919,
+          "bottom": 212.703125,
+          "width": 28,
+          "height": 28
+        },
+        "last_action": {
+          "left": 521,
+          "top": 783.53125,
+          "right": 919,
+          "bottom": 821.53125,
+          "width": 398,
+          "height": 38
+        },
+        "header": {
+          "left": 521,
+          "top": 178.453125,
+          "right": 919,
+          "bottom": 235.953125,
+          "width": 398,
+          "height": 57.5
+        },
+        "scroll_top": 0,
+        "scroll_height": 1000,
+        "client_height": 1000,
+        "max_scroll": 0,
+        "document_scroll_y": 0,
+        "buttons": [
+          "",
+          "인스타 스토리용 9:16 카드 저장 (PNG)",
+          "카톡 초대 링크 복사 (내 은하로 착륙해줘)"
+        ]
+      },
+      "returned_top": {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "dialog": {
+          "left": 496,
+          "top": 153.453125,
+          "right": 944,
+          "bottom": 846.53125,
+          "width": 448,
+          "height": 693.078125
+        },
+        "close": {
+          "left": 891,
+          "top": 184.703125,
+          "right": 919,
+          "bottom": 212.703125,
+          "width": 28,
+          "height": 28
+        },
+        "last_action": {
+          "left": 521,
+          "top": 783.53125,
+          "right": 919,
+          "bottom": 821.53125,
+          "width": 398,
+          "height": 38
+        },
+        "header": {
+          "left": 521,
+          "top": 178.453125,
+          "right": 919,
+          "bottom": 235.953125,
+          "width": 398,
+          "height": 57.5
+        },
+        "scroll_top": 0,
+        "scroll_height": 1000,
+        "client_height": 1000,
+        "max_scroll": 0,
+        "document_scroll_y": 0,
+        "buttons": [
+          "",
+          "인스타 스토리용 9:16 카드 저장 (PNG)",
+          "카톡 초대 링크 복사 (내 은하로 착륙해줘)"
+        ]
+      }
+    },
+    {
+      "key": "844x390",
+      "opening": {
+        "viewport": {
+          "width": 844,
+          "height": 390
+        },
+        "dialog": {
+          "left": 198,
+          "top": -151.53125,
+          "right": 646,
+          "bottom": 541.546875,
+          "width": 448,
+          "height": 693.078125
+        },
+        "close": {
+          "left": 593,
+          "top": -120.28125,
+          "right": 621,
+          "bottom": -92.28125,
+          "width": 28,
+          "height": 28
+        },
+        "last_action": {
+          "left": 223,
+          "top": 478.546875,
+          "right": 621,
+          "bottom": 516.546875,
+          "width": 398,
+          "height": 38
+        },
+        "header": {
+          "left": 223,
+          "top": -126.53125,
+          "right": 621,
+          "bottom": -69.03125,
+          "width": 398,
+          "height": 57.5
+        },
+        "scroll_top": 0,
+        "scroll_height": 558,
+        "client_height": 390,
+        "max_scroll": 168,
+        "document_scroll_y": 0,
+        "buttons": [
+          "",
+          "인스타 스토리용 9:16 카드 저장 (PNG)",
+          "카톡 초대 링크 복사 (내 은하로 착륙해줘)"
+        ]
+      },
+      "top": {
+        "viewport": {
+          "width": 844,
+          "height": 390
+        },
+        "dialog": {
+          "left": 198,
+          "top": -151.53125,
+          "right": 646,
+          "bottom": 541.546875,
+          "width": 448,
+          "height": 693.078125
+        },
+        "close": {
+          "left": 593,
+          "top": -120.28125,
+          "right": 621,
+          "bottom": -92.28125,
+          "width": 28,
+          "height": 28
+        },
+        "last_action": {
+          "left": 223,
+          "top": 478.546875,
+          "right": 621,
+          "bottom": 516.546875,
+          "width": 398,
+          "height": 38
+        },
+        "header": {
+          "left": 223,
+          "top": -126.53125,
+          "right": 621,
+          "bottom": -69.03125,
+          "width": 398,
+          "height": 57.5
+        },
+        "scroll_top": 0,
+        "scroll_height": 558,
+        "client_height": 390,
+        "max_scroll": 168,
+        "document_scroll_y": 0,
+        "buttons": [
+          "",
+          "인스타 스토리용 9:16 카드 저장 (PNG)",
+          "카톡 초대 링크 복사 (내 은하로 착륙해줘)"
+        ]
+      },
+      "bottom": {
+        "viewport": {
+          "width": 844,
+          "height": 390
+        },
+        "dialog": {
+          "left": 198,
+          "top": -319.53125,
+          "right": 646,
+          "bottom": 373.546875,
+          "width": 448,
+          "height": 693.078125
+        },
+        "close": {
+          "left": 593,
+          "top": -288.28125,
+          "right": 621,
+          "bottom": -260.28125,
+          "width": 28,
+          "height": 28
+        },
+        "last_action": {
+          "left": 223,
+          "top": 310.546875,
+          "right": 621,
+          "bottom": 348.546875,
+          "width": 398,
+          "height": 38
+        },
+        "header": {
+          "left": 223,
+          "top": -294.53125,
+          "right": 621,
+          "bottom": -237.03125,
+          "width": 398,
+          "height": 57.5
+        },
+        "scroll_top": 168,
+        "scroll_height": 558,
+        "client_height": 390,
+        "max_scroll": 168,
+        "document_scroll_y": 0,
+        "buttons": [
+          "",
+          "인스타 스토리용 9:16 카드 저장 (PNG)",
+          "카톡 초대 링크 복사 (내 은하로 착륙해줘)"
+        ]
+      },
+      "returned_top": {
+        "viewport": {
+          "width": 844,
+          "height": 390
+        },
+        "dialog": {
+          "left": 198,
+          "top": -151.53125,
+          "right": 646,
+          "bottom": 541.546875,
+          "width": 448,
+          "height": 693.078125
+        },
+        "close": {
+          "left": 593,
+          "top": -120.28125,
+          "right": 621,
+          "bottom": -92.28125,
+          "width": 28,
+          "height": 28
+        },
+        "last_action": {
+          "left": 223,
+          "top": 478.546875,
+          "right": 621,
+          "bottom": 516.546875,
+          "width": 398,
+          "height": 38
+        },
+        "header": {
+          "left": 223,
+          "top": -126.53125,
+          "right": 621,
+          "bottom": -69.03125,
+          "width": 398,
+          "height": 57.5
+        },
+        "scroll_top": 0,
+        "scroll_height": 558,
+        "client_height": 390,
+        "max_scroll": 168,
+        "document_scroll_y": 0,
+        "buttons": [
+          "",
+          "인스타 스토리용 9:16 카드 저장 (PNG)",
+          "카톡 초대 링크 복사 (내 은하로 착륙해줘)"
+        ]
+      }
+    },
+    {
+      "key": "390x360",
+      "opening": {
+        "viewport": {
+          "width": 390,
+          "height": 360
+        },
+        "dialog": {
+          "left": 16,
+          "top": -166.53125,
+          "right": 374,
+          "bottom": 526.546875,
+          "width": 358,
+          "height": 693.078125
+        },
+        "close": {
+          "left": 321,
+          "top": -135.28125,
+          "right": 349,
+          "bottom": -107.28125,
+          "width": 28,
+          "height": 28
+        },
+        "last_action": {
+          "left": 41,
+          "top": 463.546875,
+          "right": 349,
+          "bottom": 501.546875,
+          "width": 308,
+          "height": 38
+        },
+        "header": {
+          "left": 41,
+          "top": -141.53125,
+          "right": 349,
+          "bottom": -84.03125,
+          "width": 308,
+          "height": 57.5
+        },
+        "scroll_top": 0,
+        "scroll_height": 543,
+        "client_height": 360,
+        "max_scroll": 183,
+        "document_scroll_y": 0,
+        "buttons": [
+          "",
+          "인스타 스토리용 9:16 카드 저장 (PNG)",
+          "카톡 초대 링크 복사 (내 은하로 착륙해줘)"
+        ]
+      },
+      "top": {
+        "viewport": {
+          "width": 390,
+          "height": 360
+        },
+        "dialog": {
+          "left": 16,
+          "top": -166.53125,
+          "right": 374,
+          "bottom": 526.546875,
+          "width": 358,
+          "height": 693.078125
+        },
+        "close": {
+          "left": 321,
+          "top": -135.28125,
+          "right": 349,
+          "bottom": -107.28125,
+          "width": 28,
+          "height": 28
+        },
+        "last_action": {
+          "left": 41,
+          "top": 463.546875,
+          "right": 349,
+          "bottom": 501.546875,
+          "width": 308,
+          "height": 38
+        },
+        "header": {
+          "left": 41,
+          "top": -141.53125,
+          "right": 349,
+          "bottom": -84.03125,
+          "width": 308,
+          "height": 57.5
+        },
+        "scroll_top": 0,
+        "scroll_height": 543,
+        "client_height": 360,
+        "max_scroll": 183,
+        "document_scroll_y": 0,
+        "buttons": [
+          "",
+          "인스타 스토리용 9:16 카드 저장 (PNG)",
+          "카톡 초대 링크 복사 (내 은하로 착륙해줘)"
+        ]
+      },
+      "bottom": {
+        "viewport": {
+          "width": 390,
+          "height": 360
+        },
+        "dialog": {
+          "left": 16,
+          "top": -349.53125,
+          "right": 374,
+          "bottom": 343.546875,
+          "width": 358,
+          "height": 693.078125
+        },
+        "close": {
+          "left": 321,
+          "top": -318.28125,
+          "right": 349,
+          "bottom": -290.28125,
+          "width": 28,
+          "height": 28
+        },
+        "last_action": {
+          "left": 41,
+          "top": 280.546875,
+          "right": 349,
+          "bottom": 318.546875,
+          "width": 308,
+          "height": 38
+        },
+        "header": {
+          "left": 41,
+          "top": -324.53125,
+          "right": 349,
+          "bottom": -267.03125,
+          "width": 308,
+          "height": 57.5
+        },
+        "scroll_top": 183,
+        "scroll_height": 543,
+        "client_height": 360,
+        "max_scroll": 183,
+        "document_scroll_y": 0,
+        "buttons": [
+          "",
+          "인스타 스토리용 9:16 카드 저장 (PNG)",
+          "카톡 초대 링크 복사 (내 은하로 착륙해줘)"
+        ]
+      },
+      "returned_top": {
+        "viewport": {
+          "width": 390,
+          "height": 360
+        },
+        "dialog": {
+          "left": 16,
+          "top": -166.53125,
+          "right": 374,
+          "bottom": 526.546875,
+          "width": 358,
+          "height": 693.078125
+        },
+        "close": {
+          "left": 321,
+          "top": -135.28125,
+          "right": 349,
+          "bottom": -107.28125,
+          "width": 28,
+          "height": 28
+        },
+        "last_action": {
+          "left": 41,
+          "top": 463.546875,
+          "right": 349,
+          "bottom": 501.546875,
+          "width": 308,
+          "height": 38
+        },
+        "header": {
+          "left": 41,
+          "top": -141.53125,
+          "right": 349,
+          "bottom": -84.03125,
+          "width": 308,
+          "height": 57.5
+        },
+        "scroll_top": 0,
+        "scroll_height": 543,
+        "client_height": 360,
+        "max_scroll": 183,
+        "document_scroll_y": 0,
+        "buttons": [
+          "",
+          "인스타 스토리용 9:16 카드 저장 (PNG)",
+          "카톡 초대 링크 복사 (내 은하로 착륙해줘)"
+        ]
+      }
+    }
+  ],
+  "page_errors": [],
+  "console_errors": [],
+  "outbound_requests": [],
+  "api_requests": 0,
+  "database_operations": 0,
+  "native_pointer": true,
+  "native_wheel": true,
+  "manual_dom_events": 0,
+  "programmatic_scroll_or_focus": 0,
+  "previous_suites_rerun": 0,
+  "scope": "Actual production React/Tailwind passport dialog with fictional Hong Gildong on four native Chrome viewports. Only short-height header, close, bottom geometry and native scroll/pointer checks. Prior save/copy/focus/name/timer/gender suites not rerun; no full hosted app, actual art/model render, API/DB or clipboard operation."
+}

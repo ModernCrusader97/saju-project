@@ -1,0 +1,57 @@
+{
+  "status": "PASS_NO_ERRORS_AND_UNCHANGED_EXISTING_WARNINGS",
+  "same_real_product_filename_for_baseline": true,
+  "before": [
+    {
+      "file": "D:\\Codex\\Work\\SaJuUiOneBug-20261010-Joseph\\repo\\components\\planet\\CosmicPassportModal.tsx",
+      "errorCount": 0,
+      "warningCount": 2,
+      "messages": [
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'Compass' is defined but never used.",
+          "line": 7,
+          "column": 41
+        },
+        {
+          "ruleId": "@next/next/no-img-element",
+          "severity": 1,
+          "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element",
+          "line": 267,
+          "column": 15
+        }
+      ]
+    }
+  ],
+  "after": [
+    {
+      "file": "D:\\Codex\\Work\\SaJuUiOneBug-20261010-Joseph\\repo\\components\\planet\\CosmicPassportModal.tsx",
+      "errorCount": 0,
+      "warningCount": 2,
+      "messages": [
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'Compass' is defined but never used.",
+          "line": 7,
+          "column": 41
+        },
+        {
+          "ruleId": "@next/next/no-img-element",
+          "severity": 1,
+          "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element",
+          "line": 267,
+          "column": 15
+        }
+      ]
+    },
+    {
+      "file": "D:\\Codex\\Work\\SaJuUiOneBug-20261010-Joseph\\repo\\scripts\\qa\\passport-short-viewport-browser.mjs",
+      "errorCount": 0,
+      "warningCount": 0,
+      "messages": []
+    }
+  ],
+  "rules_or_suppressions_changed": false
+}

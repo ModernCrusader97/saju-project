@@ -1,0 +1,16 @@
+{
+  "file": "app/guin/[id]/page.tsx",
+  "sha256": "ac5a2ec4084b0ed768e0c9e6ce2e7aa20483396939f87e5ef343c1ac227e6f8e",
+  "occurrences": [
+    {
+      "line": 28,
+      "text": "import CosmicPassportModal from \"@/components/planet/CosmicPassportModal\";"
+    },
+    {
+      "line": 668,
+      "text": "<CosmicPassportModal"
+    }
+  ],
+  "route": "/guin/[id]",
+  "unchanged": true
+}

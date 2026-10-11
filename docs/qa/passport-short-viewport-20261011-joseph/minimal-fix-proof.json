@@ -1,0 +1,22 @@
+{
+  "status": "PASS_ONE_DIALOG_AUTO_MARGIN_TOKEN_ONLY_SOURCE_PROOF",
+  "basis": "ac5f5f1e628cfca3a5d293ab18e008d6874fd984",
+  "branch": "fix/passport-short-viewport-20261011-joseph",
+  "product": "components/planet/CosmicPassportModal.tsx",
+  "before_sha256": "e72aa472d5084064998018eef0c60d8b54741490d559757f07307cae7d763d65",
+  "after_sha256": "28f11421dc1e0e346225ee50eaa1c80da240026ec336116a019a4432a9ab804b",
+  "change": {
+    "from": "className=\"relative w-full max-w-md bg-gradient-to-b",
+    "to": "className=\"relative my-auto w-full max-w-md bg-gradient-to-b"
+  },
+  "product_diff": {
+    "insertions": 1,
+    "deletions": 1,
+    "modified_preexisting_files": 1,
+    "added_class_tokens": 1
+  },
+  "reverse_native_source_byte_exact": true,
+  "all_text_handlers_buttons_aria_focus_state_save_copy_content_unchanged": true,
+  "api_db_art_models_default_auth_billing_permissions_unchanged": true,
+  "only_new_behavior": "The existing dialog uses vertical auto margins: centered when it fits, top edge scroll-reachable when it exceeds the viewport."
+}

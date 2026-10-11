@@ -1,0 +1,195 @@
+{
+  "key": "390x360",
+  "opening": {
+    "viewport": {
+      "width": 390,
+      "height": 360
+    },
+    "dialog": {
+      "left": 16,
+      "top": -166.53125,
+      "right": 374,
+      "bottom": 526.546875,
+      "width": 358,
+      "height": 693.078125
+    },
+    "close": {
+      "left": 321,
+      "top": -135.28125,
+      "right": 349,
+      "bottom": -107.28125,
+      "width": 28,
+      "height": 28
+    },
+    "last_action": {
+      "left": 41,
+      "top": 463.546875,
+      "right": 349,
+      "bottom": 501.546875,
+      "width": 308,
+      "height": 38
+    },
+    "header": {
+      "left": 41,
+      "top": -141.53125,
+      "right": 349,
+      "bottom": -84.03125,
+      "width": 308,
+      "height": 57.5
+    },
+    "scroll_top": 0,
+    "scroll_height": 543,
+    "client_height": 360,
+    "max_scroll": 183,
+    "document_scroll_y": 0,
+    "buttons": [
+      "",
+      "인스타 스토리용 9:16 카드 저장 (PNG)",
+      "카톡 초대 링크 복사 (내 은하로 착륙해줘)"
+    ]
+  },
+  "top": {
+    "viewport": {
+      "width": 390,
+      "height": 360
+    },
+    "dialog": {
+      "left": 16,
+      "top": -166.53125,
+      "right": 374,
+      "bottom": 526.546875,
+      "width": 358,
+      "height": 693.078125
+    },
+    "close": {
+      "left": 321,
+      "top": -135.28125,
+      "right": 349,
+      "bottom": -107.28125,
+      "width": 28,
+      "height": 28
+    },
+    "last_action": {
+      "left": 41,
+      "top": 463.546875,
+      "right": 349,
+      "bottom": 501.546875,
+      "width": 308,
+      "height": 38
+    },
+    "header": {
+      "left": 41,
+      "top": -141.53125,
+      "right": 349,
+      "bottom": -84.03125,
+      "width": 308,
+      "height": 57.5
+    },
+    "scroll_top": 0,
+    "scroll_height": 543,
+    "client_height": 360,
+    "max_scroll": 183,
+    "document_scroll_y": 0,
+    "buttons": [
+      "",
+      "인스타 스토리용 9:16 카드 저장 (PNG)",
+      "카톡 초대 링크 복사 (내 은하로 착륙해줘)"
+    ]
+  },
+  "bottom": {
+    "viewport": {
+      "width": 390,
+      "height": 360
+    },
+    "dialog": {
+      "left": 16,
+      "top": -349.53125,
+      "right": 374,
+      "bottom": 343.546875,
+      "width": 358,
+      "height": 693.078125
+    },
+    "close": {
+      "left": 321,
+      "top": -318.28125,
+      "right": 349,
+      "bottom": -290.28125,
+      "width": 28,
+      "height": 28
+    },
+    "last_action": {
+      "left": 41,
+      "top": 280.546875,
+      "right": 349,
+      "bottom": 318.546875,
+      "width": 308,
+      "height": 38
+    },
+    "header": {
+      "left": 41,
+      "top": -324.53125,
+      "right": 349,
+      "bottom": -267.03125,
+      "width": 308,
+      "height": 57.5
+    },
+    "scroll_top": 183,
+    "scroll_height": 543,
+    "client_height": 360,
+    "max_scroll": 183,
+    "document_scroll_y": 0,
+    "buttons": [
+      "",
+      "인스타 스토리용 9:16 카드 저장 (PNG)",
+      "카톡 초대 링크 복사 (내 은하로 착륙해줘)"
+    ]
+  },
+  "returned_top": {
+    "viewport": {
+      "width": 390,
+      "height": 360
+    },
+    "dialog": {
+      "left": 16,
+      "top": -166.53125,
+      "right": 374,
+      "bottom": 526.546875,
+      "width": 358,
+      "height": 693.078125
+    },
+    "close": {
+      "left": 321,
+      "top": -135.28125,
+      "right": 349,
+      "bottom": -107.28125,
+      "width": 28,
+      "height": 28
+    },
+    "last_action": {
+      "left": 41,
+      "top": 463.546875,
+      "right": 349,
+      "bottom": 501.546875,
+      "width": 308,
+      "height": 38
+    },
+    "header": {
+      "left": 41,
+      "top": -141.53125,
+      "right": 349,
+      "bottom": -84.03125,
+      "width": 308,
+      "height": 57.5
+    },
+    "scroll_top": 0,
+    "scroll_height": 543,
+    "client_height": 360,
+    "max_scroll": 183,
+    "document_scroll_y": 0,
+    "buttons": [
+      "",
+      "인스타 스토리용 9:16 카드 저장 (PNG)",
+      "카톡 초대 링크 복사 (내 은하로 착륙해줘)"
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "status": "PASS_ONE_DISTINCT_PASSPORT_SHORT_VIEWPORT_FIX",
+  "host": "Joseph",
+  "at_utc": "2026-10-11T00:43:04.546Z",
+  "basis": "ac5f5f1e628cfca3a5d293ab18e008d6874fd984",
+  "branch": "fix/passport-short-viewport-20261011-joseph",
+  "product": "components/planet/CosmicPassportModal.tsx",
+  "consumer": {
+    "file": "app/guin/[id]/page.tsx",
+    "occurrences": [
+      {
+        "line": 28,
+        "text": "import CosmicPassportModal from \"@/components/planet/CosmicPassportModal\";"
+      },
+      {
+        "line": 668,
+        "text": "<CosmicPassportModal"
+      }
+    ]
+  },
+  "problem": "On short-height screens the oversized centered passport dialog starts above the viewport; even at scrollTop=0 its header and close button cannot be reached.",
+  "example": {
+    "viewport": "844x390",
+    "before_close_top": -120.28125,
+    "after_close_top": 47.25
+  },
+  "fix": "Add one my-auto class token to the existing dialog. Flex cross-axis auto margins retain centering when the dialog fits and keep its top scroll reachable when oversized.",
+  "product_diff": {
+    "insertions": 1,
+    "deletions": 1,
+    "modified_preexisting_files": 1,
+    "added_class_tokens": 1
+  },
+  "before": {
+    "passed": 8,
+    "failed": 4
+  },
+  "after": {
+    "passed": 12,
+    "failed": 0
+  },
+  "actual_browser": "154.0.8037.98",
+  "viewports": [
+    "390x844",
+    "1440x1000",
+    "844x390",
+    "390x360"
+  ],
+  "native_pointer_and_wheel": true,
+  "programmatic_scroll_focus_or_dom_events": 0,
+  "identical_new_harness": true,
+  "identical_normal_screen_png_files_and_pixels": 6,
+  "identical_normal_screen_geometry": 2,
+  "unexpected_page_errors": 0,
+  "console_errors": 0,
+  "outbound_requests": 0,
+  "api_requests": 0,
+  "database_operations": 0,
+  "previous_suites_rerun": 0,
+  "all_text_handlers_buttons_aria_focus_state_save_copy_content_unchanged": true,
+  "types": {
+    "exit_code": 0,
+    "nonincremental": true,
+    "after_own_build": true
+  },
+  "build": {
+    "exit_code": 0,
+    "own_current_branch_run": true,
+    "no_install_or_deployment": true
+  },
+  "lint": {
+    "errors": 0,
+    "unchanged_existing_product_warnings": 2,
+    "new_qa_warnings": 0,
+    "rules_config_suppressions_unchanged": true
+  },
+  "source_reverse_patch_byte_exact": true,
+  "previous_completed_records_reused": 14,
+  "preexisting_tracked_entries": 769,
+  "scope": "docs/qa/passport-short-viewport-20261011-joseph",
+  "models_other_11_art_default_auth_billing_permissions_db_unchanged": true,
+  "private_repo_fresh_read_verified": true,
+  "limits": [
+    "Actual production React/Tailwind passport dialog with fictional Hong Gildong on four native Chrome viewports. Only short-height header, close, bottom geometry and native scroll/pointer checks. Prior save/copy/focus/name/timer/gender suites not rerun; no full hosted app, actual art/model render, API/DB or clipboard operation.",
+    "Only the existing modal layout is validated with native desktop Chrome viewports; full hosted route and physical mobile browser behavior are outside this check. The visual uses the existing fallback badge, not a model render."
+  ],
+  "remaining_blockers": []
+}

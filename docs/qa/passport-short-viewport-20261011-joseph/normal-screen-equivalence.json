@@ -1,0 +1,50 @@
+{
+  "status": "PASS_SIX_IDENTICAL_NORMAL_SCREEN_UI_PNG_BYTES_AND_GEOMETRY",
+  "screens": [
+    {
+      "file": "opening-390x844.png",
+      "bytes": 80744,
+      "sha256": "68712487c5f494087ed1172b50f3969c88b2f43e6c321c8332356019d5ebbd85",
+      "png_bytes_and_pixels_identical": true
+    },
+    {
+      "file": "top-390x844.png",
+      "bytes": 80744,
+      "sha256": "68712487c5f494087ed1172b50f3969c88b2f43e6c321c8332356019d5ebbd85",
+      "png_bytes_and_pixels_identical": true
+    },
+    {
+      "file": "bottom-390x844.png",
+      "bytes": 80744,
+      "sha256": "68712487c5f494087ed1172b50f3969c88b2f43e6c321c8332356019d5ebbd85",
+      "png_bytes_and_pixels_identical": true
+    },
+    {
+      "file": "opening-1440x1000.png",
+      "bytes": 96562,
+      "sha256": "348bdaa948645c26a06b854a99ae9cee8bb588ed0f6bb3f02020498cd2524b67",
+      "png_bytes_and_pixels_identical": true
+    },
+    {
+      "file": "top-1440x1000.png",
+      "bytes": 96562,
+      "sha256": "348bdaa948645c26a06b854a99ae9cee8bb588ed0f6bb3f02020498cd2524b67",
+      "png_bytes_and_pixels_identical": true
+    },
+    {
+      "file": "bottom-1440x1000.png",
+      "bytes": 96562,
+      "sha256": "348bdaa948645c26a06b854a99ae9cee8bb588ed0f6bb3f02020498cd2524b67",
+      "png_bytes_and_pixels_identical": true
+    }
+  ],
+  "harness_sha256": "a5b3a536f864818c72adebfd196158a8568e02e2fa55f27912d03cd454a94224",
+  "css_before_sha256": "f455acbc02ae6740a95b9ee2da3aeb77d70fdb906ae45ef504a55b7eb3c83387",
+  "css_after_sha256": "a770bae117a73d8437a3af2cf6aa0577df45ae3b2e9dbd5f12154d17f64aa363",
+  "only_one_dialog_margin_token_added": true,
+  "direct_visual_inspection": [
+    "before/top-844x390.png",
+    "after/top-844x390.png",
+    "after/bottom-390x360.png"
+  ]
+}

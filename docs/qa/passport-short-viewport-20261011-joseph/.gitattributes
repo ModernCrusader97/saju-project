@@ -1,0 +1,3 @@
+* -text
+# Preserve raw process-output bytes and emitted whitespace.
+*.log -text -diff

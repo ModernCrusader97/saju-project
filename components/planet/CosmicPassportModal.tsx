@@ -216,7 +216,7 @@ export default function CosmicPassportModal({
     >
       <div
         ref={dialogRef} role="dialog" aria-modal="true" aria-label="우주 여권"
-        className="relative w-full max-w-md bg-gradient-to-b from-[#0F172A] via-[#1E293B] to-[#0A0F1D] border border-doryeong-gold/30 rounded-[36px] p-6 text-white shadow-2xl space-y-6"
+        className="relative my-auto w-full max-w-md bg-gradient-to-b from-[#0F172A] via-[#1E293B] to-[#0A0F1D] border border-doryeong-gold/30 rounded-[36px] p-6 text-white shadow-2xl space-y-6"
         onClick={(e) => e.stopPropagation()}
       >
         {/* 상단 닫기 */}
