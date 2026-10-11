@@ -1,0 +1,3 @@
+* -text
+# Preserve raw process output and native evidence exactly.
+*.log -text -diff

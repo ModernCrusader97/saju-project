@@ -1,0 +1,302 @@
+{
+  "status": "FAIL",
+  "phase": "before",
+  "at_utc": "2026-10-11T01:36:26.198Z",
+  "browser": "154.0.8037.98",
+  "product": "components/AskDoryeongModal.tsx",
+  "source_sha256": "5437b37e398c2d1dcbce025eeb97da09e35fa9c9fded389dff2dca30030c144a",
+  "harness_sha256": "af2c65c2513fcb297be1c92a9f956b8333245d03bcc207edb612645adfe6431a",
+  "css_sha256": "a770bae117a73d8437a3af2cf6aa0577df45ae3b2e9dbd5f12154d17f64aa363",
+  "passed": 2,
+  "failed": 6,
+  "checks": [
+    {
+      "name": "String reply remains normal 390",
+      "observed": {
+        "reply_visible": true,
+        "draft_cleared": true,
+        "synthetic_posts": 1,
+        "reconciled_gets": 2
+      },
+      "pass": true
+    },
+    {
+      "name": "Non-string object reply preserves draft and review path 390",
+      "pass": false,
+      "error": "A non-string POST reply must enter the existing uncertain-send error/review path.\n\nfalse !== true\n"
+    },
+    {
+      "name": "Non-string number reply preserves draft and review path 390",
+      "pass": false,
+      "error": "A non-string POST reply must enter the existing uncertain-send error/review path.\n\nfalse !== true\n"
+    },
+    {
+      "name": "Non-string boolean reply preserves draft and review path 390",
+      "pass": false,
+      "error": "A non-string POST reply must enter the existing uncertain-send error/review path.\n\nfalse !== true\n"
+    },
+    {
+      "name": "String reply remains normal 1440",
+      "observed": {
+        "reply_visible": true,
+        "draft_cleared": true,
+        "synthetic_posts": 1,
+        "reconciled_gets": 2
+      },
+      "pass": true
+    },
+    {
+      "name": "Non-string object reply preserves draft and review path 1440",
+      "pass": false,
+      "error": "A non-string POST reply must enter the existing uncertain-send error/review path.\n\nfalse !== true\n"
+    },
+    {
+      "name": "Non-string number reply preserves draft and review path 1440",
+      "pass": false,
+      "error": "A non-string POST reply must enter the existing uncertain-send error/review path.\n\nfalse !== true\n"
+    },
+    {
+      "name": "Non-string boolean reply preserves draft and review path 1440",
+      "pass": false,
+      "error": "A non-string POST reply must enter the existing uncertain-send error/review path.\n\nfalse !== true\n"
+    }
+  ],
+  "observations": [
+    {
+      "mode": "object",
+      "width": 390,
+      "synthetic_posts": 1,
+      "gets": 1,
+      "page_errors": [
+        "Minified React error #31; visit https://react.dev/errors/31?args[]=object%20with%20keys%20%7Bunexpected%7D for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+      ],
+      "visible_error": false,
+      "error_text": null,
+      "composer_exists": false,
+      "draft": null,
+      "send_disabled": null,
+      "review_button_count": 0,
+      "body_text": ""
+    },
+    {
+      "mode": "number",
+      "width": 390,
+      "synthetic_posts": 1,
+      "gets": 2,
+      "page_errors": [],
+      "visible_error": false,
+      "error_text": null,
+      "composer_exists": true,
+      "draft": "",
+      "send_disabled": true,
+      "review_button_count": 0,
+      "body_text": "Open synthetic chat reply QA\n청\n나의 풀이에 관해\n\n홍길동님의 사주를 바탕으로 상담합니다\n\n새 전송 답변 형식 확인용 가상 안내입니다.\n해석 안내"
+    },
+    {
+      "mode": "boolean",
+      "width": 390,
+      "synthetic_posts": 1,
+      "gets": 2,
+      "page_errors": [],
+      "visible_error": false,
+      "error_text": null,
+      "composer_exists": true,
+      "draft": "",
+      "send_disabled": true,
+      "review_button_count": 0,
+      "body_text": "Open synthetic chat reply QA\n청\n나의 풀이에 관해\n\n홍길동님의 사주를 바탕으로 상담합니다\n\n새 전송 답변 형식 확인용 가상 안내입니다.\n해석 안내"
+    },
+    {
+      "mode": "object",
+      "width": 1440,
+      "synthetic_posts": 1,
+      "gets": 1,
+      "page_errors": [
+        "Minified React error #31; visit https://react.dev/errors/31?args[]=object%20with%20keys%20%7Bunexpected%7D for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+      ],
+      "visible_error": false,
+      "error_text": null,
+      "composer_exists": false,
+      "draft": null,
+      "send_disabled": null,
+      "review_button_count": 0,
+      "body_text": ""
+    },
+    {
+      "mode": "number",
+      "width": 1440,
+      "synthetic_posts": 1,
+      "gets": 2,
+      "page_errors": [],
+      "visible_error": false,
+      "error_text": null,
+      "composer_exists": true,
+      "draft": "",
+      "send_disabled": true,
+      "review_button_count": 0,
+      "body_text": "Open synthetic chat reply QA\n청\n나의 풀이에 관해\n\n홍길동님의 사주를 바탕으로 상담합니다\n\n새 전송 답변 형식 확인용 가상 안내입니다.\n해석 안내"
+    },
+    {
+      "mode": "boolean",
+      "width": 1440,
+      "synthetic_posts": 1,
+      "gets": 2,
+      "page_errors": [],
+      "visible_error": false,
+      "error_text": null,
+      "composer_exists": true,
+      "draft": "",
+      "send_disabled": true,
+      "review_button_count": 0,
+      "body_text": "Open synthetic chat reply QA\n청\n나의 풀이에 관해\n\n홍길동님의 사주를 바탕으로 상담합니다\n\n새 전송 답변 형식 확인용 가상 안내입니다.\n해석 안내"
+    }
+  ],
+  "synthetic_gets": [
+    {
+      "mode": "valid",
+      "width": 390
+    },
+    {
+      "mode": "valid",
+      "width": 390
+    },
+    {
+      "mode": "object",
+      "width": 390
+    },
+    {
+      "mode": "number",
+      "width": 390
+    },
+    {
+      "mode": "number",
+      "width": 390
+    },
+    {
+      "mode": "boolean",
+      "width": 390
+    },
+    {
+      "mode": "boolean",
+      "width": 390
+    },
+    {
+      "mode": "valid",
+      "width": 1440
+    },
+    {
+      "mode": "valid",
+      "width": 1440
+    },
+    {
+      "mode": "object",
+      "width": 1440
+    },
+    {
+      "mode": "number",
+      "width": 1440
+    },
+    {
+      "mode": "number",
+      "width": 1440
+    },
+    {
+      "mode": "boolean",
+      "width": 1440
+    },
+    {
+      "mode": "boolean",
+      "width": 1440
+    }
+  ],
+  "synthetic_posts": [
+    {
+      "mode": "valid",
+      "width": 390,
+      "body": {
+        "question": "형식 검증용 가상 질문입니다."
+      },
+      "reply": "검증용 가상 답변입니다."
+    },
+    {
+      "mode": "object",
+      "width": 390,
+      "body": {
+        "question": "형식 검증용 가상 질문입니다."
+      },
+      "reply": {
+        "unexpected": "object"
+      }
+    },
+    {
+      "mode": "number",
+      "width": 390,
+      "body": {
+        "question": "형식 검증용 가상 질문입니다."
+      },
+      "reply": 12345
+    },
+    {
+      "mode": "boolean",
+      "width": 390,
+      "body": {
+        "question": "형식 검증용 가상 질문입니다."
+      },
+      "reply": true
+    },
+    {
+      "mode": "valid",
+      "width": 1440,
+      "body": {
+        "question": "형식 검증용 가상 질문입니다."
+      },
+      "reply": "검증용 가상 답변입니다."
+    },
+    {
+      "mode": "object",
+      "width": 1440,
+      "body": {
+        "question": "형식 검증용 가상 질문입니다."
+      },
+      "reply": {
+        "unexpected": "object"
+      }
+    },
+    {
+      "mode": "number",
+      "width": 1440,
+      "body": {
+        "question": "형식 검증용 가상 질문입니다."
+      },
+      "reply": 12345
+    },
+    {
+      "mode": "boolean",
+      "width": 1440,
+      "body": {
+        "question": "형식 검증용 가상 질문입니다."
+      },
+      "reply": true
+    }
+  ],
+  "page_errors": [
+    {
+      "mode": "object",
+      "width": 390,
+      "error": "Minified React error #31; visit https://react.dev/errors/31?args[]=object%20with%20keys%20%7Bunexpected%7D for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+    },
+    {
+      "mode": "object",
+      "width": 1440,
+      "error": "Minified React error #31; visit https://react.dev/errors/31?args[]=object%20with%20keys%20%7Bunexpected%7D for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+    }
+  ],
+  "console_errors": [],
+  "outbound_requests": [],
+  "actual_backend_requests": 0,
+  "database_operations": 0,
+  "native_pointer_and_keyboard": true,
+  "manual_dom_events": 0,
+  "previous_suites_rerun": 0,
+  "scope": "Actual production React/Tailwind AskDoryeongModal at 390x844/1440x1000 with fictional valid history and intercepted POST replies (string/object/number/boolean). Only the new POST reply type boundary is checked; all history rows remain valid. No live backend/DB, real persistence or outbound requests. Previous history-row, send ownership/uncertain reconciliation/resend/IME and other completed suites not rerun; no full hosted route or physical device claim."
+}

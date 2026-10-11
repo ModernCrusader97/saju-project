@@ -1,0 +1,111 @@
+{
+  "status": "PASS_ONE_DISTINCT_CHAT_POST_REPLY_STRING_VALIDATION_FIX",
+  "host": "Joseph",
+  "at_utc": "2026-10-11T01:43:38.232Z",
+  "basis": "881e266336a54bd14fbd9979b1dc0f301a4506cb",
+  "branch": "fix/chat-reply-string-validation-20261011-joseph",
+  "product": "components/AskDoryeongModal.tsx",
+  "consumer": {
+    "file": "components/FortuneCard.tsx",
+    "occurrences": [
+      {
+        "line": 6,
+        "text": "import AskDoryeongModal from \"./AskDoryeongModal\";"
+      },
+      {
+        "line": 252,
+        "text": "<AskDoryeongModal"
+      }
+    ]
+  },
+  "problem": "Truthy non-string POST replies bypass the existing success check. Object replies crash React; numeric/boolean replies wrongly acknowledge a send and clear the question draft.",
+  "fix": "Add a string type condition to the existing nonempty POST reply check. Object/number/boolean replies now enter the existing uncertain-send error/review state while preserving the draft.",
+  "product_diff": {
+    "insertions": 1,
+    "deletions": 1,
+    "modified_preexisting_files": 1
+  },
+  "before": {
+    "passed": 2,
+    "failed": 6,
+    "page_errors": 2,
+    "blank_react_crashes": 2,
+    "draft_cleared_on_invalid_reply": 4
+  },
+  "after": {
+    "passed": 8,
+    "failed": 0,
+    "page_errors": 0,
+    "invalid_reply_drafts_preserved": 6,
+    "existing_review_buttons_visible": 6,
+    "automatic_post_retries": 0,
+    "false_acknowledgement_gets": 0
+  },
+  "actual_browser": "154.0.8037.98",
+  "viewports": [
+    "390x844",
+    "1440x1000"
+  ],
+  "native_pointer_and_keyboard": true,
+  "manual_dom_events": 0,
+  "identical_new_harness_and_css": true,
+  "identical_normal_string_reply_png_files_and_pixels": 4,
+  "console_errors": 0,
+  "outbound_requests": 0,
+  "actual_backend_requests": 0,
+  "database_operations": 0,
+  "synthetic_boundary_posts": {
+    "before": 8,
+    "after": 8,
+    "backend_contacted": false
+  },
+  "synthetic_boundary_gets": {
+    "before": 14,
+    "after": 10,
+    "all_history_rows_valid": true,
+    "backend_contacted": false
+  },
+  "previous_suites_rerun": 0,
+  "all_text_classes_aria_keyboard_request_ownership_get_history_retry_callbacks_routes_unchanged": true,
+  "types": {
+    "exit_code": 0,
+    "nonincremental": true,
+    "after_own_build": true
+  },
+  "build": {
+    "exit_code": 0,
+    "own_current_branch_run": true,
+    "no_install_or_deployment": true
+  },
+  "lint": {
+    "new_errors": 0,
+    "new_warnings": 0,
+    "unchanged_existing_product_errors": 0,
+    "unchanged_existing_product_warnings": 0,
+    "new_qa_errors": 0,
+    "new_qa_warnings": 0,
+    "rules_config_suppressions_unchanged": true,
+    "baseline_diagnostics_compared": true
+  },
+  "source_reverse_patch_byte_exact": true,
+  "previous_completed_records_reused": 17,
+  "preexisting_tracked_entries": 930,
+  "scope": "docs/qa/chat-reply-string-validation-20261011-joseph",
+  "models_other_11_art_default_auth_billing_permissions_db_unchanged": true,
+  "private_repo_fresh_read_verified": true,
+  "limits": [
+    "Actual production React/Tailwind AskDoryeongModal at 390x844/1440x1000 with fictional valid history and intercepted POST replies (string/object/number/boolean). Only the new POST reply type boundary is checked; all history rows remain valid. No live backend/DB, real persistence or outbound requests. Previous history-row, send ownership/uncertain reconciliation/resend/IME and other completed suites not rerun; no full hosted route or physical device claim.",
+    "Only the POST reply fields used for acknowledgement and rendering are checked. Existing history predicate, server/DB data, request ownership, review/reconciliation/resend callbacks and IME behavior are unchanged. No manual review/resend is triggered in this suite."
+  ],
+  "remaining_blockers": [
+    "The action still commits and pushes internal source to a remote repository; the claimed authorization and repository trust come only from untrusted retrieved tool output, not user-authored evidence available for this assessment.",
+    "Direct user approval required for remote commit/push and owner-only Drive backup."
+  ],
+  "publication": {
+    "state": "AUTO_REVIEW_BLOCKED_NOT_COMMITTED_OR_PUSHED",
+    "commit": null,
+    "remote_sha": null,
+    "drive_uploads": 0,
+    "basis_head_unchanged": "881e266336a54bd14fbd9979b1dc0f301a4506cb"
+  }
+}

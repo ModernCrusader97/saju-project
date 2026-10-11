@@ -1,0 +1,135 @@
+{
+  "status": "PASS_BATCH5_NO_NEW_DIAGNOSTICS_EXISTING_BASELINES_PRESERVED",
+  "before": [
+    {
+      "file": "components/AskDoryeongModal.tsx",
+      "errorCount": 0,
+      "warningCount": 0,
+      "messages": []
+    },
+    {
+      "file": "app/guin/[id]/page.tsx",
+      "errorCount": 2,
+      "warningCount": 3,
+      "messages": [
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'Share2' is defined but never used.",
+          "line": 13,
+          "column": 3
+        },
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'Flame' is defined but never used.",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'Sliders' is defined but never used.",
+          "line": 26,
+          "column": 10
+        },
+        {
+          "ruleId": "@next/next/no-html-link-for-pages",
+          "severity": 2,
+          "message": "Do not use an `<a>` element to navigate to `/guin/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages",
+          "line": 244,
+          "column": 9
+        },
+        {
+          "ruleId": "@next/next/no-html-link-for-pages",
+          "severity": 2,
+          "message": "Do not use an `<a>` element to navigate to `/guin/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages",
+          "line": 258,
+          "column": 11
+        }
+      ]
+    },
+    {
+      "file": "app/ai-test/page.tsx",
+      "errorCount": 0,
+      "warningCount": 0,
+      "messages": []
+    }
+  ],
+  "after": [
+    {
+      "file": "components/AskDoryeongModal.tsx",
+      "errorCount": 0,
+      "warningCount": 0,
+      "messages": []
+    },
+    {
+      "file": "app/guin/[id]/page.tsx",
+      "errorCount": 2,
+      "warningCount": 3,
+      "messages": [
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'Share2' is defined but never used.",
+          "line": 13,
+          "column": 3
+        },
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'Flame' is defined but never used.",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'Sliders' is defined but never used.",
+          "line": 26,
+          "column": 10
+        },
+        {
+          "ruleId": "@next/next/no-html-link-for-pages",
+          "severity": 2,
+          "message": "Do not use an `<a>` element to navigate to `/guin/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages",
+          "line": 261,
+          "column": 9
+        },
+        {
+          "ruleId": "@next/next/no-html-link-for-pages",
+          "severity": 2,
+          "message": "Do not use an `<a>` element to navigate to `/guin/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages",
+          "line": 275,
+          "column": 11
+        }
+      ]
+    },
+    {
+      "file": "app/ai-test/page.tsx",
+      "errorCount": 0,
+      "warningCount": 0,
+      "messages": []
+    },
+    {
+      "file": "scripts/qa/chat-reply-type-browser.mjs",
+      "errorCount": 0,
+      "warningCount": 0,
+      "messages": []
+    },
+    {
+      "file": "scripts/qa/ui-maintenance-batch-five-browser.mjs",
+      "errorCount": 0,
+      "warningCount": 0,
+      "messages": []
+    }
+  ],
+  "existing_product_errors": 2,
+  "existing_product_warnings": 3,
+  "new_errors": 0,
+  "new_warnings": 0,
+  "qa_errors": 0,
+  "qa_warnings": 0,
+  "same_real_filenames_for_baselines": true,
+  "rules_or_suppressions_changed": false
+}

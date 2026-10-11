@@ -1,0 +1,241 @@
+{
+  "status": "PASS_FIVE_DISTINCT_VALIDATED_UI_FIXES_READY_FOR_ONE_BATCH_COMMIT",
+  "at_utc": "2026-10-11T02:17:20.171835+00:00",
+  "host": "Joseph",
+  "basis": "881e266336a54bd14fbd9979b1dc0f301a4506cb",
+  "branch": "fix/chat-reply-string-validation-20261011-joseph",
+  "validated_new_fix_count": 5,
+  "commit_batch_target": 5,
+  "commit_created": false,
+  "push_performed": false,
+  "fixes": [
+    {
+      "number": 1,
+      "id": "chat-post-reply-string-validation",
+      "product": "components/AskDoryeongModal.tsx",
+      "change": "Require a nonempty string POST reply before acknowledging a send; retain draft and use existing error/review UI for truthy non-string replies.",
+      "product_diff": {
+        "insertions": 1,
+        "deletions": 1,
+        "modified_preexisting_files": 1
+      },
+      "validation": {
+        "native_chrome_before_pass_fail": [
+          2,
+          6
+        ],
+        "native_chrome_after_pass_fail": [
+          8,
+          0
+        ],
+        "after_page_errors": 0,
+        "preserved_invalid_reply_drafts": 6,
+        "normal_png_bytes_identical": 4,
+        "types_exit": 0,
+        "build_exit": 0,
+        "lint_errors": 0,
+        "lint_warnings": 0,
+        "current_batch_types_exit": 0,
+        "current_batch_build_exit": 0
+      },
+      "tests_reused_not_rerun": true,
+      "first_validation_receipt": "D:\\Codex\\Results\\SaJuUiChatReplyType-20261011-Joseph\\delivery-pending-receipt.json",
+      "before_source_sha256": "5437b37e398c2d1dcbce025eeb97da09e35fa9c9fded389dff2dca30030c144a",
+      "after_source_sha256": "27a207a8d45c92b2e30c8c2417939e620470fb4dc3526c6e66439b6b1bb604ad"
+    },
+    {
+      "number": 2,
+      "id": "galaxy-link-copy-failure",
+      "product": "app/guin/[id]/page.tsx",
+      "change": "Await clipboard success before showing copied; reject/unavailable use a visible error, preserve the share button and permit manual retry.",
+      "validation": {
+        "before": {
+          "passed": 2,
+          "failed": 4
+        },
+        "after": {
+          "passed": 6,
+          "failed": 0
+        },
+        "native_chrome": "154.0.8037.98",
+        "viewports": [
+          "390x844",
+          "1440x1000"
+        ],
+        "current_batch_types_exit": 0,
+        "current_batch_build_exit": 0,
+        "new_lint_diagnostics": 0
+      },
+      "source_reverse_patch_byte_exact": true
+    },
+    {
+      "number": 3,
+      "id": "galaxy-get-map-render-shape",
+      "product": "app/guin/[id]/page.tsx",
+      "change": "Validate map owner/list/person fields before GET map state; malformed arrays/rows/names use the existing load-error fallback without render crashes.",
+      "validation": {
+        "before": {
+          "passed": 2,
+          "failed": 6
+        },
+        "after": {
+          "passed": 8,
+          "failed": 0
+        },
+        "native_chrome": "154.0.8037.98",
+        "viewports": [
+          "390x844",
+          "1440x1000"
+        ],
+        "current_batch_types_exit": 0,
+        "current_batch_build_exit": 0,
+        "new_lint_diagnostics": 0
+      },
+      "source_reverse_patch_byte_exact": true
+    },
+    {
+      "number": 4,
+      "id": "ai-status-http-and-boolean-validation",
+      "product": "app/ai-test/page.tsx",
+      "change": "Require successful HTTP and an actual boolean configured status before enabling AI test sending; errors retain the existing unknown configuration state.",
+      "validation": {
+        "before": {
+          "passed": 4,
+          "failed": 4
+        },
+        "after": {
+          "passed": 8,
+          "failed": 0
+        },
+        "native_chrome": "154.0.8037.98",
+        "viewports": [
+          "390x844",
+          "1440x1000"
+        ],
+        "current_batch_types_exit": 0,
+        "current_batch_build_exit": 0,
+        "new_lint_diagnostics": 0
+      },
+      "source_reverse_patch_byte_exact": true
+    },
+    {
+      "number": 5,
+      "id": "galaxy-person-card-native-keyboard",
+      "product": "app/guin/[id]/page.tsx",
+      "change": "Use a native selected button inside each person heading; Tab/Space/Enter select persons while existing mouse card behavior is preserved.",
+      "validation": {
+        "before": {
+          "passed": 2,
+          "failed": 2
+        },
+        "after": {
+          "passed": 4,
+          "failed": 0
+        },
+        "native_chrome": "154.0.8037.98",
+        "viewports": [
+          "390x844",
+          "1440x1000"
+        ],
+        "current_batch_types_exit": 0,
+        "current_batch_build_exit": 0,
+        "new_lint_diagnostics": 0
+      },
+      "source_reverse_patch_byte_exact": true
+    }
+  ],
+  "first_fix_native_cases_reused": 8,
+  "first_fix_source_bytes_unchanged": true,
+  "new_four_fix_native_cases": {
+    "before_passed": 10,
+    "before_failed": 16,
+    "before_page_errors": 10,
+    "after_passed": 26,
+    "after_failed": 0,
+    "after_page_errors": 0,
+    "after_unexpected_console_errors": 0,
+    "expected_synthetic_http503_console_diagnostics": 2
+  },
+  "normal_new_ui_pngs_byte_identical": 10,
+  "stylesheet": {
+    "status": "PASS_EXISTING_CSS_BYTES_PRESERVED_ONE_NEW_ERROR_COLOR_RULE",
+    "before_sha256": "a770bae117a73d8437a3af2cf6aa0577df45ae3b2e9dbd5f12154d17f64aa363",
+    "after_sha256": "4e2f086b3fd0c53e4e5729a49947310046f415c5e7aa7ab4e0428ef8d8dd50ca",
+    "identical": false,
+    "only_change": [
+      {
+        "operation": "insert",
+        "before": [],
+        "after": [
+          ".text-red-600 {\n",
+          "  --tw-text-opacity: 1;\n",
+          "  color: rgb(220 38 38 / var(--tw-text-opacity, 1));\n",
+          "}\n"
+        ]
+      }
+    ],
+    "purpose": "Red text for the new clipboard failure alert. Existing styles unchanged; 10 normal UI PNGs byte-identical."
+  },
+  "native_pointer_and_keyboard": true,
+  "manual_dom_events": 0,
+  "first_fix_previous_types_build_lint_proof_reused": true,
+  "current_batch_types_exit": 0,
+  "current_batch_production_build_exit": 0,
+  "lint": {
+    "new_errors": 0,
+    "new_warnings": 0,
+    "existing_product_errors": 2,
+    "existing_product_warnings": 3,
+    "qa_errors": 0,
+    "qa_warnings": 0,
+    "rules_suppressions_config_changed": false
+  },
+  "source_proof": "four-new-fixes-source-proof.json",
+  "only_modified_preexisting_paths": [
+    "app/ai-test/page.tsx",
+    "app/guin/[id]/page.tsx",
+    "components/AskDoryeongModal.tsx"
+  ],
+  "initial_own_wip_files_byte_preserved": 53,
+  "previous_completed_records_reused": 17,
+  "previous_completed_suites_rerun": 0,
+  "previous_completed_fixes_counted": 0,
+  "intermediate_1of5_drive_backup": {
+    "validated_new_fix_count": 1,
+    "commit_batch_target": 5,
+    "commit_created": false,
+    "push_performed": false,
+    "local_path": "D:/Codex/Results/SaJuUiBatchFive-20261011-Joseph/SaJu_UI_Batch5_Progress_1of5_20261011_Joseph_881e2663.zip",
+    "bytes": 505121,
+    "local_sha256": "f13f86fe5662cf6632fcd956f7bc567fc6683e2bfcc37c7734d6f45fcda2fb40",
+    "id": "1UwziQDGyljAhpivLZY9cPRzgzWqt42A4",
+    "url": "https://drive.google.com/file/d/1UwziQDGyljAhpivLZY9cPRzgzWqt42A4/view",
+    "shared": false,
+    "permissions": [
+      {
+        "type": "user",
+        "role": "owner"
+      }
+    ],
+    "owner_only": true,
+    "size_metadata_verified": true,
+    "remote_drive_bytes_independently_rehashed": false
+  },
+  "old_first_fix_rejection_records_retained_as_historical": true,
+  "latest_approval_and_five_fix_cadence_applied": true,
+  "original_remote_heads_expected_unchanged": 59,
+  "legacy_wip_files_expected_byte_identical": 3,
+  "art_checkouts_expected_unchanged": 5,
+  "preexisting_tree_entries": 930,
+  "all_other_preexisting_entries_expected_unchanged": 927,
+  "no_main_pr_merge_deploy_auth_billing_permissions_db_art_models_default_process_control_change": true,
+  "scope": "docs/qa/ui-maintenance-batch-five-20261011-joseph",
+  "limits": [
+    "Production Guin detail and AI-test React/Tailwind at 390x844/1440x1000 with fictional intercepted GET/POST and clipboard boundary. next/navigation is a fixed fixture; only heavy GalaxyCanvas is a blank prop-observation stub. No 3D/model/WebGL, real backend/DB/Gemini/clipboard, full hosted-route or physical-device claim. Prior reply/history/IME/request-ownership/join/dialog/timer/other completed suites not rerun. Four distinct new boundaries: clipboard failure feedback, GET map render shape, AI status HTTP/boolean validation, native keyboard selection of person cards.",
+    "Existing first reply-type suite is reused byte-exact without rerun. Four new boundaries only; next/navigation and the heavy 3D renderer are fixtures. No actual backend, DB, Gemini, user clipboard, 3D/model/WebGL, physical device or hosted-route claim.",
+    "Guin GET validation protects consumed map/person fields; POST join/create responses and optional 3D pillar metadata are unchanged and not covered here.",
+    "Two existing next/no-html-link lint errors and three unused-import warnings are preserved; no new diagnostics or rule suppression.",
+    "Raw failed v1 harness, two failed helper versions and diagnostics are retained. Corrected before-v2 and after-v2 share exact harness bytes. Intended fake HTTP503 resource diagnostics are recorded separately."
+  ],
+  "remaining_blockers": []
+}

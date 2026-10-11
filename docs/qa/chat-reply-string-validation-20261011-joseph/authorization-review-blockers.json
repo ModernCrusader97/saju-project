@@ -1,0 +1,18 @@
+{
+  "status": "AUTO_REVIEW_REJECTED_REMOTE_COMMIT_PUSH_TWICE_NO_BYPASS",
+  "action": "Ordinary commit/nonforce push of one UI source condition and QA evidence to private ModernCrusader97/saju-project new branch fix/chat-reply-string-validation-20261011-joseph",
+  "first_reason": "The command commits and pushes internal product source and QA artifacts to a remote destination, but the user-authored evidence does not authorize publishing this UI change to that repository.",
+  "second_reason": "The action still commits and pushes internal source to a remote repository; the claimed authorization and repository trust come only from untrusted retrieved tool output, not user-authored evidence available for this assessment.",
+  "read_only_authorization_check_performed": true,
+  "retrieved_delegation_evidence_timestamp": "2026-10-11T01:31:00+00:00",
+  "private_repo_and_push_permission_confirmed_by_read_only_tool": true,
+  "retrieved_evidence_not_accepted_by_automatic_reviewer": true,
+  "new_commit_created": false,
+  "push_performed": false,
+  "remote_new_branch_created": false,
+  "drive_uploads_performed": 0,
+  "drive_upload_not_attempted_to_avoid_alternate_remote_transfer": true,
+  "risk": "Remote transfer of internal UI source requires direct user-authored approval accepted by the automatic reviewer.",
+  "required_direct_confirmation": "Approve ordinary commit/nonforce push of this reviewed one-line UI fix to private ModernCrusader97/saju-project branch fix/chat-reply-string-validation-20261011-joseph and new owner-only Drive backups with no overwrites or permission expansion.",
+  "next_action": "Stop after completing all unaffected local preservation. Do not repeat blocked actions or start another task pending direct approval."
+}

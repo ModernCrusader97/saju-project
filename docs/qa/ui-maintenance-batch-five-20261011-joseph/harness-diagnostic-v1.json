@@ -1,0 +1,29 @@
+{
+  "status": "PRESERVED_V1_RAW_FAILURE_EXPECTED_HTTP503_CONSOLE_ACCOUNTED_IN_V2",
+  "raw_before_report": "before/browser-results.json",
+  "before_passed": 10,
+  "before_failed": 16,
+  "actual_page_errors": 10,
+  "expected_fixture_http503_console_errors": [
+    {
+      "group": "ai",
+      "mode": "bad-http",
+      "width": 390,
+      "error": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+    },
+    {
+      "group": "ai",
+      "mode": "bad-http",
+      "width": 1440,
+      "error": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+    }
+  ],
+  "issue": "Overall harness status included two intended 503 resource diagnostics as unexpected console errors. V2 classifies only AI bad-http fixture messages whose exact URL is the intercepted status endpoint and text contains 503. All case assertions and UI fixtures unchanged.",
+  "prior_completed_suites_rerun": 0,
+  "product_before_snapshots_unchanged": true,
+  "new_uncompleted_baseline_once_rerun_for_corrected_collector": true,
+  "failed_v1_source_and_raw_reports_retained": true,
+  "failed_helper_generator": "repair_batch_console_accounting.mjs has a syntax error before execution; preserved",
+  "corrected_helper": "repair_batch_console_accounting_v2.mjs",
+  "generated_helpers_node_syntax_checks_pass": true
+}

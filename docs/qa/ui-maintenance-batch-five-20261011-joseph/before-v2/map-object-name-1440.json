@@ -1,0 +1,9 @@
+{
+  "fallback_error_visible": false,
+  "heading_visible": false,
+  "page_errors": [
+    "person.name.substring is not a function"
+  ],
+  "gets": 1,
+  "body": ""
+}

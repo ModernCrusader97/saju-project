@@ -1,0 +1,13 @@
+--- before-v2/styles.css
++++ after-v2/styles.css
+@@ -1970,6 +1970,10 @@
+   --tw-text-opacity: 1;
+   color: rgb(107 33 168 / var(--tw-text-opacity, 1));
+ }
++.text-red-600 {
++  --tw-text-opacity: 1;
++  color: rgb(220 38 38 / var(--tw-text-opacity, 1));
++}
+ .text-red-700 {
+   --tw-text-opacity: 1;
+   color: rgb(185 28 28 / var(--tw-text-opacity, 1));

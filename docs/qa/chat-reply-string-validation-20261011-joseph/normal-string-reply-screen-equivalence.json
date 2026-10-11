@@ -1,0 +1,36 @@
+{
+  "status": "PASS_FOUR_IDENTICAL_NORMAL_STRING_REPLY_UI_PNG_BYTES",
+  "screens": [
+    {
+      "file": "opening-390.png",
+      "bytes": 17893,
+      "sha256": "0e4bc5e615f8d92e92c5ad304504d849c260eefd05cbeecc921c353718a1f2e0",
+      "png_bytes_and_pixels_identical": true
+    },
+    {
+      "file": "success-390.png",
+      "bytes": 21918,
+      "sha256": "ab822f288efc9f7a00898720bea34c1df46f1175126992055df0dbe2ca6831d6",
+      "png_bytes_and_pixels_identical": true
+    },
+    {
+      "file": "opening-1440.png",
+      "bytes": 27175,
+      "sha256": "d818f12bcd81b60aa735b9f494779b6bbce530cc21ebfdcc76e69a42bc9923a6",
+      "png_bytes_and_pixels_identical": true
+    },
+    {
+      "file": "success-1440.png",
+      "bytes": 31581,
+      "sha256": "2d02ad029985c9f1e8f6057ad657ca1da284c86b24e1aea7ff3f2f256700a86d",
+      "png_bytes_and_pixels_identical": true
+    }
+  ],
+  "css_sha256": "a770bae117a73d8437a3af2cf6aa0577df45ae3b2e9dbd5f12154d17f64aa363",
+  "harness_sha256": "af2c65c2513fcb297be1c92a9f956b8333245d03bcc207edb612645adfe6431a",
+  "direct_visual_inspection": [
+    "before/object-390.png",
+    "after/object-390.png",
+    "after/success-1440.png"
+  ]
+}

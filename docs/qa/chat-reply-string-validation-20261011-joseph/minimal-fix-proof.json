@@ -1,0 +1,21 @@
+{
+  "status": "PASS_POST_REPLY_STRING_CONDITION_ONLY_SOURCE_PROOF",
+  "basis": "881e266336a54bd14fbd9979b1dc0f301a4506cb",
+  "branch": "fix/chat-reply-string-validation-20261011-joseph",
+  "product": "components/AskDoryeongModal.tsx",
+  "before_sha256": "5437b37e398c2d1dcbce025eeb97da09e35fa9c9fded389dff2dca30030c144a",
+  "after_sha256": "27a207a8d45c92b2e30c8c2417939e620470fb4dc3526c6e66439b6b1bb604ad",
+  "change": {
+    "from": "      if (!res.ok || !data.success || !data.reply) throw new Error(data.error || \"답변을 확인하지 못했어요.\");",
+    "to": "      if (!res.ok || !data.success || typeof data.reply !== \"string\" || !data.reply) throw new Error(data.error || \"답변을 확인하지 못했어요.\");"
+  },
+  "product_diff": {
+    "insertions": 1,
+    "deletions": 1,
+    "modified_preexisting_files": 1
+  },
+  "reverse_native_source_byte_exact": true,
+  "all_text_classes_aria_keyboard_request_ownership_get_history_retry_callbacks_routes_unchanged": true,
+  "api_db_art_models_default_auth_billing_permissions_unchanged": true,
+  "only_new_behavior": "Require a nonempty string POST reply before acknowledging the send. Truthy object/number/boolean replies use the existing uncertain-send error/review state and preserve the question draft."
+}

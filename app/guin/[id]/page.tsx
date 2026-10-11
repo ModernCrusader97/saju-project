@@ -38,6 +38,7 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
   const [loading, setLoading] = useState(true);
   const [loadError,setLoadError]=useState<string|null>(null);
   const [copied, setCopied] = useState(false);
+  const [copyError, setCopyError] = useState<string | null>(null);
   const copyFeedbackTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
   const [selectedPersonId, setSelectedPersonId] = useState<string | undefined>(undefined);
   const [distanceScale, setDistanceScale] = useState(1.0);
@@ -76,6 +77,16 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
         if (!active) return;
         if (!res.ok) throw new Error(data.error || "지도를 불러오지 못했습니다.");
         if (data.guinMap) {
+          const candidateMap = data.guinMap;
+          if (typeof candidateMap !== "object"
+            || !["id", "ownerName", "ownerBirth", "ownerDayMaster", "ownerTheme", "createdAt"].every(key => typeof candidateMap[key as keyof GuinMapData] === "string")
+            || !Array.isArray(candidateMap.guins) || !candidateMap.guins.every(person =>
+              person !== null && typeof person === "object"
+              && ["id", "name", "relationTitle", "dayMaster", "elementMatch", "advice"].every(key => typeof person[key as keyof GuinPerson] === "string")
+              && ["mentor", "partner", "supporter", "grounding"].includes(person.relationType)
+              && typeof person.affinityScore === "number" && Number.isFinite(person.affinityScore)
+              && (person.isMe === undefined || typeof person.isMe === "boolean")
+            )) throw new Error("지도를 확인할 수 없습니다.");
           setMapData(data.guinMap);
           restoreGalaxyUniverse(data.guinMap);
         }
@@ -149,15 +160,21 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
     if (dialog && !dialog.contains(document.activeElement)) dialog.querySelector<HTMLInputElement>('input')?.focus();
   }, [showJoinModal, joining]);
 
-  const handleCopyLink = () => {
+  const handleCopyLink = async () => {
     const url = window.location.href;
-    navigator.clipboard.writeText(url);
-    setCopied(true);
-    clearTimeout(copyFeedbackTimer.current);
-    copyFeedbackTimer.current = setTimeout(() => {
-      copyFeedbackTimer.current = undefined;
+    setCopyError(null);
+    try {
+      await navigator.clipboard.writeText(url);
+      setCopied(true);
+      clearTimeout(copyFeedbackTimer.current);
+      copyFeedbackTimer.current = setTimeout(() => {
+        copyFeedbackTimer.current = undefined;
+        setCopied(false);
+      }, 2000);
+    } catch {
       setCopied(false);
-    }, 2000);
+      setCopyError("링크를 복사하지 못했어요. 다시 시도해주세요.");
+    }
   };
 
   const handleQuickAddTestFriend = async (name: string, y: number, m: number, d: number, h?: number, min?: number) => {
@@ -428,6 +445,7 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
               <span>체험용 인연 추가</span>
             </button>
           </div>
+          {copyError && <p role="alert" className="text-xs text-red-600">{copyError}</p>}
         </div>
 
         {/* Guin Persons List / Nodes */}
@@ -466,7 +484,11 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
                     <div>
                       <div className="flex items-center gap-1.5">
                         <h4 className="font-bold text-sm text-doryeong-textDark">
-                          {person.name}
+                          <button type="button" aria-pressed={isSelected}
+                            onClick={(event) => { event.stopPropagation(); setSelectedPersonId(person.id); }}
+                            className="text-left">
+                            {person.name}
+                          </button>
                         </h4>
                         {person.isMe && (
                           <span className="text-[9px] font-bold px-1.5 py-0.2 rounded bg-doryeong-gold/20 text-doryeong-goldDark">

@@ -1,0 +1,10 @@
+{
+  "status": "PRESERVED_FAILED_V1_HELPER_REPAIRED_BEFORE_PRODUCT_EDIT",
+  "reason": "Exact source-line guard rejected a helper expecting 12 indentation spaces; actual source has 6. Assertion failed before any product write or after-browser execution.",
+  "failed_helper": "authoring/fix_chat_reply.mjs",
+  "corrected_helper": "authoring/fix_chat_reply_v2.mjs",
+  "original_product_unchanged": true,
+  "original_native_sha256": "5437b37e398c2d1dcbce025eeb97da09e35fa9c9fded389dff2dca30030c144a",
+  "before_browser_reexecuted": false,
+  "corrected_helper_only_changes_exact_match_indentation": true
+}

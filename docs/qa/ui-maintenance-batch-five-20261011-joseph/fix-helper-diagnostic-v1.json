@@ -1,0 +1,9 @@
+{
+  "status": "PRESERVED_V1_EXACT_MATCH_GUARD_FAILURE_BEFORE_ANY_PRODUCT_WRITE",
+  "failed_helper": "apply_batch_four_fixes.mjs",
+  "corrected_helper": "apply_batch_four_fixes_v2.mjs",
+  "reason": "Card name/closing h4 source has 26/24 indentation spaces; helper expected 24/22. In-memory replacements were abandoned by the exact occurrence guard before any filesystem product write. V2 uses the inspected native fragment and aligned replacement.",
+  "both_product_files_still_original": true,
+  "baseline_suite_not_reexecuted_for_helper_fix": true,
+  "node_syntax_check_pass": true
+}

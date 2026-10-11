@@ -1,0 +1,19 @@
+{
+  "status": "PASS_EXISTING_CSS_BYTES_PRESERVED_ONE_NEW_ERROR_COLOR_RULE",
+  "before_sha256": "a770bae117a73d8437a3af2cf6aa0577df45ae3b2e9dbd5f12154d17f64aa363",
+  "after_sha256": "4e2f086b3fd0c53e4e5729a49947310046f415c5e7aa7ab4e0428ef8d8dd50ca",
+  "identical": false,
+  "only_change": [
+    {
+      "operation": "insert",
+      "before": [],
+      "after": [
+        ".text-red-600 {\n",
+        "  --tw-text-opacity: 1;\n",
+        "  color: rgb(220 38 38 / var(--tw-text-opacity, 1));\n",
+        "}\n"
+      ]
+    }
+  ],
+  "purpose": "Red text for the new clipboard failure alert. Existing styles unchanged; 10 normal UI PNGs byte-identical."
+}

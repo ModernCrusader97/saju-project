@@ -1,0 +1,13 @@
+{
+  "visible_error": false,
+  "copied": true,
+  "page_errors": [],
+  "gets": 1,
+  "clipboard": {
+    "mode": "success",
+    "accesses": 1,
+    "writes": [
+      "http://127.0.0.1:9314/guin/qa-batch-galaxy"
+    ]
+  }
+}

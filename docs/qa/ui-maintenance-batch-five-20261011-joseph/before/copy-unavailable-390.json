@@ -1,0 +1,13 @@
+{
+  "visible_error": false,
+  "copied": false,
+  "page_errors": [
+    "Cannot read properties of undefined (reading 'writeText')"
+  ],
+  "gets": 1,
+  "clipboard": {
+    "mode": "unavailable",
+    "accesses": 1,
+    "writes": []
+  }
+}

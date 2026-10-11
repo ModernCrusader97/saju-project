@@ -1,0 +1,851 @@
+{
+  "status": "PASS",
+  "phase": "after",
+  "at_utc": "2026-10-11T02:08:51.854Z",
+  "browser": "154.0.8037.98",
+  "products": {
+    "app/guin/[id]/page.tsx": "fa83ace810ccce8f166af7282705684573c2f6c9f81cdaaa4f8952c38700f29a",
+    "app/ai-test/page.tsx": "1516ef77ecdb4fb1020001acac839b7356cd64a38753a8a2b6444d349203eb3b"
+  },
+  "harness_sha256": "919452dbac0c192612e77f05b062c661cf82bf516cb2e7c42df114f64faf9746",
+  "css_sha256": "4e2f086b3fd0c53e4e5729a49947310046f415c5e7aa7ab4e0428ef8d8dd50ca",
+  "passed": 26,
+  "failed": 0,
+  "groups": {
+    "copy": {
+      "passed": 6,
+      "failed": 0
+    },
+    "map": {
+      "passed": 8,
+      "failed": 0
+    },
+    "ai": {
+      "passed": 8,
+      "failed": 0
+    },
+    "cards": {
+      "passed": 4,
+      "failed": 0
+    }
+  },
+  "checks": [
+    {
+      "group": "copy",
+      "name": "success 390",
+      "observed": {
+        "visible_error": false,
+        "copied": true,
+        "page_errors": [],
+        "gets": 1,
+        "clipboard": {
+          "mode": "success",
+          "accesses": 1,
+          "writes": [
+            "http://127.0.0.1:11573/guin/qa-batch-galaxy"
+          ]
+        }
+      },
+      "pass": true
+    },
+    {
+      "group": "copy",
+      "name": "reject 390",
+      "observed": {
+        "visible_error": true,
+        "copied": false,
+        "page_errors": [],
+        "gets": 1,
+        "clipboard": {
+          "mode": "reject",
+          "accesses": 1,
+          "writes": [
+            "http://127.0.0.1:11573/guin/qa-batch-galaxy"
+          ]
+        },
+        "native_manual_copy_retry_recovered": true
+      },
+      "pass": true
+    },
+    {
+      "group": "copy",
+      "name": "unavailable 390",
+      "observed": {
+        "visible_error": true,
+        "copied": false,
+        "page_errors": [],
+        "gets": 1,
+        "clipboard": {
+          "mode": "unavailable",
+          "accesses": 1,
+          "writes": []
+        },
+        "native_manual_copy_retry_recovered": true
+      },
+      "pass": true
+    },
+    {
+      "group": "map",
+      "name": "valid 390",
+      "observed": {
+        "fallback_error_visible": false,
+        "heading_visible": true,
+        "page_errors": [],
+        "gets": 1,
+        "body": "나의 우주\n\nPERSONAL UNIVERSE / 03\n\n검증주인의 갤럭시\n\n행성을 선택하면 함께하는 사람의 이야기를 볼 수 있어요. 관계 점수는 기존 시연용 해석입니다.\n\n지도 목록\n은하 속 인연: 2개 행성\n오늘 우리 행성의 궤도 날씨 · 데일리 관계 인사이트\n\n매일 달라지는 일진(日辰)에 따른 은하 속 인연 역학 (클릭 시 3D 뷰어 핀포인트 추적)\n\n오늘의 일진 역학 분석\n가상동료\n순항 궤도 🌤️\n\n가상동료님과 잔잔하고 편안한 궤도 비행 중입니다.\n\n💡 가벼운 안부 인사나 숏폼 릴스를 공유해보세요.\n\nGALACTIC PHYSICS CONTROLS\n검증주인님의 우리은하 조작\n인연 거리\n공전 속도\n1.0x\n은하 링크 공유\n친구 행성 등록\n60간지 우주 도감\n체험용 인연 추가\n지도에 연결된 귀인들\n검\n검증주인\n중심별\n\n가상 중심별\n\n가상 안내\n\n일주미상\n우주 여권\n3D 추적\n가\n가상동료\n\n가상 인연\n\n시연 점수 70점\n\n가상 안내\n\n일주미상\n우주 여권\n3D 추적"
+      },
+      "pass": true
+    },
+    {
+      "group": "map",
+      "name": "null-array 390",
+      "observed": {
+        "fallback_error_visible": true,
+        "heading_visible": false,
+        "page_errors": [],
+        "gets": 1,
+        "body": "지도를 확인할 수 없습니다.\n\n새 은하 만들기"
+      },
+      "pass": true
+    },
+    {
+      "group": "map",
+      "name": "null-person 390",
+      "observed": {
+        "fallback_error_visible": true,
+        "heading_visible": false,
+        "page_errors": [],
+        "gets": 1,
+        "body": "지도를 확인할 수 없습니다.\n\n새 은하 만들기"
+      },
+      "pass": true
+    },
+    {
+      "group": "map",
+      "name": "object-name 390",
+      "observed": {
+        "fallback_error_visible": true,
+        "heading_visible": false,
+        "page_errors": [],
+        "gets": 1,
+        "body": "지도를 확인할 수 없습니다.\n\n새 은하 만들기"
+      },
+      "pass": true
+    },
+    {
+      "group": "ai",
+      "name": "true 390",
+      "observed": {
+        "button_disabled": false,
+        "unknown_configuration": false,
+        "registered": true,
+        "unregistered": false,
+        "page_errors": [],
+        "gets": 1,
+        "synthetic_post_completed": true
+      },
+      "pass": true
+    },
+    {
+      "group": "ai",
+      "name": "false 390",
+      "observed": {
+        "button_disabled": true,
+        "unknown_configuration": false,
+        "registered": false,
+        "unregistered": true,
+        "page_errors": [],
+        "gets": 1
+      },
+      "pass": true
+    },
+    {
+      "group": "ai",
+      "name": "bad-http 390",
+      "observed": {
+        "button_disabled": true,
+        "unknown_configuration": true,
+        "registered": false,
+        "unregistered": false,
+        "page_errors": [],
+        "gets": 1
+      },
+      "pass": true
+    },
+    {
+      "group": "ai",
+      "name": "bad-type 390",
+      "observed": {
+        "button_disabled": true,
+        "unknown_configuration": true,
+        "registered": false,
+        "unregistered": false,
+        "page_errors": [],
+        "gets": 1
+      },
+      "pass": true
+    },
+    {
+      "group": "cards",
+      "name": "mouse 390",
+      "observed": {
+        "pointer_selection_preserved": true
+      },
+      "pass": true
+    },
+    {
+      "group": "cards",
+      "name": "keyboard 390",
+      "observed": {
+        "owner_named_button_count": 1,
+        "friend_named_button_count": 1,
+        "page_errors": [],
+        "native_tab_space_enter_selected_both": true
+      },
+      "pass": true
+    },
+    {
+      "group": "copy",
+      "name": "success 1440",
+      "observed": {
+        "visible_error": false,
+        "copied": true,
+        "page_errors": [],
+        "gets": 1,
+        "clipboard": {
+          "mode": "success",
+          "accesses": 1,
+          "writes": [
+            "http://127.0.0.1:11573/guin/qa-batch-galaxy"
+          ]
+        }
+      },
+      "pass": true
+    },
+    {
+      "group": "copy",
+      "name": "reject 1440",
+      "observed": {
+        "visible_error": true,
+        "copied": false,
+        "page_errors": [],
+        "gets": 1,
+        "clipboard": {
+          "mode": "reject",
+          "accesses": 1,
+          "writes": [
+            "http://127.0.0.1:11573/guin/qa-batch-galaxy"
+          ]
+        },
+        "native_manual_copy_retry_recovered": true
+      },
+      "pass": true
+    },
+    {
+      "group": "copy",
+      "name": "unavailable 1440",
+      "observed": {
+        "visible_error": true,
+        "copied": false,
+        "page_errors": [],
+        "gets": 1,
+        "clipboard": {
+          "mode": "unavailable",
+          "accesses": 1,
+          "writes": []
+        },
+        "native_manual_copy_retry_recovered": true
+      },
+      "pass": true
+    },
+    {
+      "group": "map",
+      "name": "valid 1440",
+      "observed": {
+        "fallback_error_visible": false,
+        "heading_visible": true,
+        "page_errors": [],
+        "gets": 1,
+        "body": "나의 우주\n정령\n행성\n은하\n\nPERSONAL UNIVERSE / 03\n\n검증주인의 갤럭시\n\n행성을 선택하면 함께하는 사람의 이야기를 볼 수 있어요. 관계 점수는 기존 시연용 해석입니다.\n\n지도 목록\n은하 속 인연: 2개 행성\n오늘 우리 행성의 궤도 날씨 · 데일리 관계 인사이트\n\n매일 달라지는 일진(日辰)에 따른 은하 속 인연 역학 (클릭 시 3D 뷰어 핀포인트 추적)\n\n오늘의 일진 역학 분석\n가상동료\n순항 궤도 🌤️\n\n가상동료님과 잔잔하고 편안한 궤도 비행 중입니다.\n\n💡 가벼운 안부 인사나 숏폼 릴스를 공유해보세요.\n\nGALACTIC PHYSICS CONTROLS\n검증주인님의 우리은하 조작\n인연 거리\n공전 속도\n1.0x\n은하 링크 공유\n친구 행성 등록\n60간지 우주 도감\n체험용 인연 추가\n지도에 연결된 귀인들\n검\n검증주인\n중심별\n\n가상 중심별\n\n가상 안내\n\n일주미상\n우주 여권\n3D 추적\n가\n가상동료\n\n가상 인연\n\n시연 점수 70점\n\n가상 안내\n\n일주미상\n우주 여권\n3D 추적"
+      },
+      "pass": true
+    },
+    {
+      "group": "map",
+      "name": "null-array 1440",
+      "observed": {
+        "fallback_error_visible": true,
+        "heading_visible": false,
+        "page_errors": [],
+        "gets": 1,
+        "body": "지도를 확인할 수 없습니다.\n\n새 은하 만들기"
+      },
+      "pass": true
+    },
+    {
+      "group": "map",
+      "name": "null-person 1440",
+      "observed": {
+        "fallback_error_visible": true,
+        "heading_visible": false,
+        "page_errors": [],
+        "gets": 1,
+        "body": "지도를 확인할 수 없습니다.\n\n새 은하 만들기"
+      },
+      "pass": true
+    },
+    {
+      "group": "map",
+      "name": "object-name 1440",
+      "observed": {
+        "fallback_error_visible": true,
+        "heading_visible": false,
+        "page_errors": [],
+        "gets": 1,
+        "body": "지도를 확인할 수 없습니다.\n\n새 은하 만들기"
+      },
+      "pass": true
+    },
+    {
+      "group": "ai",
+      "name": "true 1440",
+      "observed": {
+        "button_disabled": false,
+        "unknown_configuration": false,
+        "registered": true,
+        "unregistered": false,
+        "page_errors": [],
+        "gets": 1,
+        "synthetic_post_completed": true
+      },
+      "pass": true
+    },
+    {
+      "group": "ai",
+      "name": "false 1440",
+      "observed": {
+        "button_disabled": true,
+        "unknown_configuration": false,
+        "registered": false,
+        "unregistered": true,
+        "page_errors": [],
+        "gets": 1
+      },
+      "pass": true
+    },
+    {
+      "group": "ai",
+      "name": "bad-http 1440",
+      "observed": {
+        "button_disabled": true,
+        "unknown_configuration": true,
+        "registered": false,
+        "unregistered": false,
+        "page_errors": [],
+        "gets": 1
+      },
+      "pass": true
+    },
+    {
+      "group": "ai",
+      "name": "bad-type 1440",
+      "observed": {
+        "button_disabled": true,
+        "unknown_configuration": true,
+        "registered": false,
+        "unregistered": false,
+        "page_errors": [],
+        "gets": 1
+      },
+      "pass": true
+    },
+    {
+      "group": "cards",
+      "name": "mouse 1440",
+      "observed": {
+        "pointer_selection_preserved": true
+      },
+      "pass": true
+    },
+    {
+      "group": "cards",
+      "name": "keyboard 1440",
+      "observed": {
+        "owner_named_button_count": 1,
+        "friend_named_button_count": 1,
+        "page_errors": [],
+        "native_tab_space_enter_selected_both": true
+      },
+      "pass": true
+    }
+  ],
+  "observations": [
+    {
+      "group": "copy",
+      "mode": "success",
+      "width": 390,
+      "visible_error": false,
+      "copied": true,
+      "page_errors": [],
+      "gets": 1,
+      "clipboard": {
+        "mode": "success",
+        "accesses": 1,
+        "writes": [
+          "http://127.0.0.1:11573/guin/qa-batch-galaxy"
+        ]
+      }
+    },
+    {
+      "group": "copy",
+      "mode": "reject",
+      "width": 390,
+      "visible_error": true,
+      "copied": false,
+      "page_errors": [],
+      "gets": 1,
+      "clipboard": {
+        "mode": "reject",
+        "accesses": 1,
+        "writes": [
+          "http://127.0.0.1:11573/guin/qa-batch-galaxy"
+        ]
+      }
+    },
+    {
+      "group": "copy",
+      "mode": "unavailable",
+      "width": 390,
+      "visible_error": true,
+      "copied": false,
+      "page_errors": [],
+      "gets": 1,
+      "clipboard": {
+        "mode": "unavailable",
+        "accesses": 1,
+        "writes": []
+      }
+    },
+    {
+      "group": "map",
+      "mode": "valid",
+      "width": 390,
+      "fallback_error_visible": false,
+      "heading_visible": true,
+      "page_errors": [],
+      "gets": 1,
+      "body": "나의 우주\n\nPERSONAL UNIVERSE / 03\n\n검증주인의 갤럭시\n\n행성을 선택하면 함께하는 사람의 이야기를 볼 수 있어요. 관계 점수는 기존 시연용 해석입니다.\n\n지도 목록\n은하 속 인연: 2개 행성\n오늘 우리 행성의 궤도 날씨 · 데일리 관계 인사이트\n\n매일 달라지는 일진(日辰)에 따른 은하 속 인연 역학 (클릭 시 3D 뷰어 핀포인트 추적)\n\n오늘의 일진 역학 분석\n가상동료\n순항 궤도 🌤️\n\n가상동료님과 잔잔하고 편안한 궤도 비행 중입니다.\n\n💡 가벼운 안부 인사나 숏폼 릴스를 공유해보세요.\n\nGALACTIC PHYSICS CONTROLS\n검증주인님의 우리은하 조작\n인연 거리\n공전 속도\n1.0x\n은하 링크 공유\n친구 행성 등록\n60간지 우주 도감\n체험용 인연 추가\n지도에 연결된 귀인들\n검\n검증주인\n중심별\n\n가상 중심별\n\n가상 안내\n\n일주미상\n우주 여권\n3D 추적\n가\n가상동료\n\n가상 인연\n\n시연 점수 70점\n\n가상 안내\n\n일주미상\n우주 여권\n3D 추적"
+    },
+    {
+      "group": "map",
+      "mode": "null-array",
+      "width": 390,
+      "fallback_error_visible": true,
+      "heading_visible": false,
+      "page_errors": [],
+      "gets": 1,
+      "body": "지도를 확인할 수 없습니다.\n\n새 은하 만들기"
+    },
+    {
+      "group": "map",
+      "mode": "null-person",
+      "width": 390,
+      "fallback_error_visible": true,
+      "heading_visible": false,
+      "page_errors": [],
+      "gets": 1,
+      "body": "지도를 확인할 수 없습니다.\n\n새 은하 만들기"
+    },
+    {
+      "group": "map",
+      "mode": "object-name",
+      "width": 390,
+      "fallback_error_visible": true,
+      "heading_visible": false,
+      "page_errors": [],
+      "gets": 1,
+      "body": "지도를 확인할 수 없습니다.\n\n새 은하 만들기"
+    },
+    {
+      "group": "ai",
+      "mode": "true",
+      "width": 390,
+      "button_disabled": false,
+      "unknown_configuration": false,
+      "registered": true,
+      "unregistered": false,
+      "page_errors": [],
+      "gets": 1
+    },
+    {
+      "group": "ai",
+      "mode": "false",
+      "width": 390,
+      "button_disabled": true,
+      "unknown_configuration": false,
+      "registered": false,
+      "unregistered": true,
+      "page_errors": [],
+      "gets": 1
+    },
+    {
+      "group": "ai",
+      "mode": "bad-http",
+      "width": 390,
+      "button_disabled": true,
+      "unknown_configuration": true,
+      "registered": false,
+      "unregistered": false,
+      "page_errors": [],
+      "gets": 1
+    },
+    {
+      "group": "ai",
+      "mode": "bad-type",
+      "width": 390,
+      "button_disabled": true,
+      "unknown_configuration": true,
+      "registered": false,
+      "unregistered": false,
+      "page_errors": [],
+      "gets": 1
+    },
+    {
+      "group": "cards",
+      "mode": "mouse",
+      "width": 390,
+      "selected": "qa-friend",
+      "page_errors": []
+    },
+    {
+      "group": "cards",
+      "mode": "keyboard",
+      "width": 390,
+      "owner_named_button_count": 1,
+      "friend_named_button_count": 1,
+      "page_errors": []
+    },
+    {
+      "group": "copy",
+      "mode": "success",
+      "width": 1440,
+      "visible_error": false,
+      "copied": true,
+      "page_errors": [],
+      "gets": 1,
+      "clipboard": {
+        "mode": "success",
+        "accesses": 1,
+        "writes": [
+          "http://127.0.0.1:11573/guin/qa-batch-galaxy"
+        ]
+      }
+    },
+    {
+      "group": "copy",
+      "mode": "reject",
+      "width": 1440,
+      "visible_error": true,
+      "copied": false,
+      "page_errors": [],
+      "gets": 1,
+      "clipboard": {
+        "mode": "reject",
+        "accesses": 1,
+        "writes": [
+          "http://127.0.0.1:11573/guin/qa-batch-galaxy"
+        ]
+      }
+    },
+    {
+      "group": "copy",
+      "mode": "unavailable",
+      "width": 1440,
+      "visible_error": true,
+      "copied": false,
+      "page_errors": [],
+      "gets": 1,
+      "clipboard": {
+        "mode": "unavailable",
+        "accesses": 1,
+        "writes": []
+      }
+    },
+    {
+      "group": "map",
+      "mode": "valid",
+      "width": 1440,
+      "fallback_error_visible": false,
+      "heading_visible": true,
+      "page_errors": [],
+      "gets": 1,
+      "body": "나의 우주\n정령\n행성\n은하\n\nPERSONAL UNIVERSE / 03\n\n검증주인의 갤럭시\n\n행성을 선택하면 함께하는 사람의 이야기를 볼 수 있어요. 관계 점수는 기존 시연용 해석입니다.\n\n지도 목록\n은하 속 인연: 2개 행성\n오늘 우리 행성의 궤도 날씨 · 데일리 관계 인사이트\n\n매일 달라지는 일진(日辰)에 따른 은하 속 인연 역학 (클릭 시 3D 뷰어 핀포인트 추적)\n\n오늘의 일진 역학 분석\n가상동료\n순항 궤도 🌤️\n\n가상동료님과 잔잔하고 편안한 궤도 비행 중입니다.\n\n💡 가벼운 안부 인사나 숏폼 릴스를 공유해보세요.\n\nGALACTIC PHYSICS CONTROLS\n검증주인님의 우리은하 조작\n인연 거리\n공전 속도\n1.0x\n은하 링크 공유\n친구 행성 등록\n60간지 우주 도감\n체험용 인연 추가\n지도에 연결된 귀인들\n검\n검증주인\n중심별\n\n가상 중심별\n\n가상 안내\n\n일주미상\n우주 여권\n3D 추적\n가\n가상동료\n\n가상 인연\n\n시연 점수 70점\n\n가상 안내\n\n일주미상\n우주 여권\n3D 추적"
+    },
+    {
+      "group": "map",
+      "mode": "null-array",
+      "width": 1440,
+      "fallback_error_visible": true,
+      "heading_visible": false,
+      "page_errors": [],
+      "gets": 1,
+      "body": "지도를 확인할 수 없습니다.\n\n새 은하 만들기"
+    },
+    {
+      "group": "map",
+      "mode": "null-person",
+      "width": 1440,
+      "fallback_error_visible": true,
+      "heading_visible": false,
+      "page_errors": [],
+      "gets": 1,
+      "body": "지도를 확인할 수 없습니다.\n\n새 은하 만들기"
+    },
+    {
+      "group": "map",
+      "mode": "object-name",
+      "width": 1440,
+      "fallback_error_visible": true,
+      "heading_visible": false,
+      "page_errors": [],
+      "gets": 1,
+      "body": "지도를 확인할 수 없습니다.\n\n새 은하 만들기"
+    },
+    {
+      "group": "ai",
+      "mode": "true",
+      "width": 1440,
+      "button_disabled": false,
+      "unknown_configuration": false,
+      "registered": true,
+      "unregistered": false,
+      "page_errors": [],
+      "gets": 1
+    },
+    {
+      "group": "ai",
+      "mode": "false",
+      "width": 1440,
+      "button_disabled": true,
+      "unknown_configuration": false,
+      "registered": false,
+      "unregistered": true,
+      "page_errors": [],
+      "gets": 1
+    },
+    {
+      "group": "ai",
+      "mode": "bad-http",
+      "width": 1440,
+      "button_disabled": true,
+      "unknown_configuration": true,
+      "registered": false,
+      "unregistered": false,
+      "page_errors": [],
+      "gets": 1
+    },
+    {
+      "group": "ai",
+      "mode": "bad-type",
+      "width": 1440,
+      "button_disabled": true,
+      "unknown_configuration": true,
+      "registered": false,
+      "unregistered": false,
+      "page_errors": [],
+      "gets": 1
+    },
+    {
+      "group": "cards",
+      "mode": "mouse",
+      "width": 1440,
+      "selected": "qa-friend",
+      "page_errors": []
+    },
+    {
+      "group": "cards",
+      "mode": "keyboard",
+      "width": 1440,
+      "owner_named_button_count": 1,
+      "friend_named_button_count": 1,
+      "page_errors": []
+    }
+  ],
+  "page_errors": [],
+  "console_errors": [],
+  "expected_console_errors": [
+    {
+      "group": "ai",
+      "mode": "bad-http",
+      "width": 390,
+      "error": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "url": "http://127.0.0.1:11573/api/ai-test"
+    },
+    {
+      "group": "ai",
+      "mode": "bad-http",
+      "width": 1440,
+      "error": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "url": "http://127.0.0.1:11573/api/ai-test"
+    }
+  ],
+  "outbound_requests": [],
+  "synthetic_gets": [
+    {
+      "group": "copy",
+      "mode": "success",
+      "width": 390
+    },
+    {
+      "group": "copy",
+      "mode": "reject",
+      "width": 390
+    },
+    {
+      "group": "copy",
+      "mode": "unavailable",
+      "width": 390
+    },
+    {
+      "group": "map",
+      "mode": "valid",
+      "width": 390
+    },
+    {
+      "group": "map",
+      "mode": "null-array",
+      "width": 390
+    },
+    {
+      "group": "map",
+      "mode": "null-person",
+      "width": 390
+    },
+    {
+      "group": "map",
+      "mode": "object-name",
+      "width": 390
+    },
+    {
+      "group": "ai",
+      "mode": "true",
+      "width": 390
+    },
+    {
+      "group": "ai",
+      "mode": "false",
+      "width": 390
+    },
+    {
+      "group": "ai",
+      "mode": "bad-http",
+      "width": 390
+    },
+    {
+      "group": "ai",
+      "mode": "bad-type",
+      "width": 390
+    },
+    {
+      "group": "cards",
+      "mode": "mouse",
+      "width": 390
+    },
+    {
+      "group": "cards",
+      "mode": "keyboard",
+      "width": 390
+    },
+    {
+      "group": "copy",
+      "mode": "success",
+      "width": 1440
+    },
+    {
+      "group": "copy",
+      "mode": "reject",
+      "width": 1440
+    },
+    {
+      "group": "copy",
+      "mode": "unavailable",
+      "width": 1440
+    },
+    {
+      "group": "map",
+      "mode": "valid",
+      "width": 1440
+    },
+    {
+      "group": "map",
+      "mode": "null-array",
+      "width": 1440
+    },
+    {
+      "group": "map",
+      "mode": "null-person",
+      "width": 1440
+    },
+    {
+      "group": "map",
+      "mode": "object-name",
+      "width": 1440
+    },
+    {
+      "group": "ai",
+      "mode": "true",
+      "width": 1440
+    },
+    {
+      "group": "ai",
+      "mode": "false",
+      "width": 1440
+    },
+    {
+      "group": "ai",
+      "mode": "bad-http",
+      "width": 1440
+    },
+    {
+      "group": "ai",
+      "mode": "bad-type",
+      "width": 1440
+    },
+    {
+      "group": "cards",
+      "mode": "mouse",
+      "width": 1440
+    },
+    {
+      "group": "cards",
+      "mode": "keyboard",
+      "width": 1440
+    }
+  ],
+  "synthetic_posts": [
+    {
+      "group": "ai",
+      "mode": "true",
+      "width": 390,
+      "body": {
+        "case": "known_time"
+      }
+    },
+    {
+      "group": "ai",
+      "mode": "true",
+      "width": 1440,
+      "body": {
+        "case": "known_time"
+      }
+    }
+  ],
+  "actual_backend_requests": 0,
+  "database_operations": 0,
+  "actual_ai_provider_calls": 0,
+  "user_clipboard_access": 0,
+  "native_pointer_and_keyboard": true,
+  "manual_dom_events": 0,
+  "previous_suites_rerun": 0,
+  "scope": "Production Guin detail and AI-test React/Tailwind at 390x844/1440x1000 with fictional intercepted GET/POST and clipboard boundary. next/navigation is a fixed fixture; only heavy GalaxyCanvas is a blank prop-observation stub. No 3D/model/WebGL, real backend/DB/Gemini/clipboard, full hosted-route or physical-device claim. Prior reply/history/IME/request-ownership/join/dialog/timer/other completed suites not rerun. Four distinct new boundaries: clipboard failure feedback, GET map render shape, AI status HTTP/boolean validation, native keyboard selection of person cards."
+}

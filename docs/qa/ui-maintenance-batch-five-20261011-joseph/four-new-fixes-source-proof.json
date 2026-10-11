@@ -1,0 +1,97 @@
+{
+  "status": "PASS_FOUR_DISTINCT_NEW_UI_FIX_SOURCE_INVERSE_BYTES",
+  "validated_new_fix_count_pending_after_browser": 1,
+  "new_fix_candidates": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "product_files": [
+    "app/guin/[id]/page.tsx",
+    "app/ai-test/page.tsx"
+  ],
+  "edits": [
+    {
+      "number": 2,
+      "id": "galaxy-link-copy-failure",
+      "file": "app/guin/[id]/page.tsx",
+      "from": "  const [copied, setCopied] = useState(false);",
+      "to": "  const [copied, setCopied] = useState(false);\r\n  const [copyError, setCopyError] = useState<string | null>(null);",
+      "before_native_sha256": "ac5a2ec4084b0ed768e0c9e6ce2e7aa20483396939f87e5ef343c1ac227e6f8e",
+      "after_native_sha256": "55df8ffb22e9af9ae46f1c0a363ff263cc7715c6dbcb91395ef48d008f25c4e5",
+      "reverse_native_source_byte_exact": true
+    },
+    {
+      "number": 2,
+      "id": "galaxy-link-copy-failure",
+      "file": "app/guin/[id]/page.tsx",
+      "from": "  const handleCopyLink = () => {\r\n    const url = window.location.href;\r\n    navigator.clipboard.writeText(url);\r\n    setCopied(true);\r\n    clearTimeout(copyFeedbackTimer.current);\r\n    copyFeedbackTimer.current = setTimeout(() => {\r\n      copyFeedbackTimer.current = undefined;\r\n      setCopied(false);\r\n    }, 2000);\r\n  };",
+      "to": "  const handleCopyLink = async () => {\r\n    const url = window.location.href;\r\n    setCopyError(null);\r\n    try {\r\n      await navigator.clipboard.writeText(url);\r\n      setCopied(true);\r\n      clearTimeout(copyFeedbackTimer.current);\r\n      copyFeedbackTimer.current = setTimeout(() => {\r\n        copyFeedbackTimer.current = undefined;\r\n        setCopied(false);\r\n      }, 2000);\r\n    } catch {\r\n      setCopied(false);\r\n      setCopyError(\"링크를 복사하지 못했어요. 다시 시도해주세요.\");\r\n    }\r\n  };",
+      "before_native_sha256": "55df8ffb22e9af9ae46f1c0a363ff263cc7715c6dbcb91395ef48d008f25c4e5",
+      "after_native_sha256": "575dd86c1d7f7b0fb00129b178e954b53f06fefe00f49fddd4fec12dcf7b9bd6",
+      "reverse_native_source_byte_exact": true
+    },
+    {
+      "number": 2,
+      "id": "galaxy-link-copy-failure",
+      "file": "app/guin/[id]/page.tsx",
+      "from": "          </div>\r\n        </div>\r\n\r\n        {/* Guin Persons List / Nodes */}",
+      "to": "          </div>\r\n          {copyError && <p role=\"alert\" className=\"text-xs text-red-600\">{copyError}</p>}\r\n        </div>\r\n\r\n        {/* Guin Persons List / Nodes */}",
+      "before_native_sha256": "575dd86c1d7f7b0fb00129b178e954b53f06fefe00f49fddd4fec12dcf7b9bd6",
+      "after_native_sha256": "ac30558a23b5075fba3e5c6f5542dbe22d37fc3325c83f01a1f9d775b22b24cd",
+      "reverse_native_source_byte_exact": true
+    },
+    {
+      "number": 3,
+      "id": "galaxy-get-map-render-shape",
+      "file": "app/guin/[id]/page.tsx",
+      "from": "        if (data.guinMap) {\r\n          setMapData(data.guinMap);",
+      "to": "        if (data.guinMap) {\r\n          const candidateMap = data.guinMap;\r\n          if (typeof candidateMap !== \"object\"\r\n            || ![\"id\", \"ownerName\", \"ownerBirth\", \"ownerDayMaster\", \"ownerTheme\", \"createdAt\"].every(key => typeof candidateMap[key as keyof GuinMapData] === \"string\")\r\n            || !Array.isArray(candidateMap.guins) || !candidateMap.guins.every(person =>\r\n              person !== null && typeof person === \"object\"\r\n              && [\"id\", \"name\", \"relationTitle\", \"dayMaster\", \"elementMatch\", \"advice\"].every(key => typeof person[key as keyof GuinPerson] === \"string\")\r\n              && [\"mentor\", \"partner\", \"supporter\", \"grounding\"].includes(person.relationType)\r\n              && typeof person.affinityScore === \"number\" && Number.isFinite(person.affinityScore)\r\n              && (person.isMe === undefined || typeof person.isMe === \"boolean\")\r\n            )) throw new Error(\"지도를 확인할 수 없습니다.\");\r\n          setMapData(data.guinMap);",
+      "before_native_sha256": "ac30558a23b5075fba3e5c6f5542dbe22d37fc3325c83f01a1f9d775b22b24cd",
+      "after_native_sha256": "08b8570bb41fb413488a8f954a25e37622ca5f4b78f4106cd1939b6e36c360b4",
+      "reverse_native_source_byte_exact": true
+    },
+    {
+      "number": 4,
+      "id": "ai-status-http-and-boolean-validation",
+      "file": "app/ai-test/page.tsx",
+      "from": "fetch('/api/ai-test').then(r=>r.json()).then((v:unknown)=>setConfigured(!!(v as {configured?:boolean}).configured)).catch(()=>setConfigured(null));",
+      "to": "fetch('/api/ai-test').then(r=>{if(!r.ok)throw new Error('상태 확인 실패');return r.json();}).then((v:unknown)=>{const status=(v as {configured?:unknown}|null)?.configured;if(typeof status!=='boolean')throw new Error('상태 응답 형식 오류');setConfigured(status);}).catch(()=>setConfigured(null));",
+      "before_native_sha256": "fbc43a3935af603a0bb3c6487d5a052cd7f0fd54b4afe1216c6f2c8811a0721f",
+      "after_native_sha256": "1516ef77ecdb4fb1020001acac839b7356cd64a38753a8a2b6444d349203eb3b",
+      "reverse_native_source_byte_exact": true
+    },
+    {
+      "number": 5,
+      "id": "galaxy-person-card-native-keyboard",
+      "file": "app/guin/[id]/page.tsx",
+      "from": "                          {person.name}\r\n                        </h4>",
+      "to": "                          <button type=\"button\" aria-pressed={isSelected}\r\n                            onClick={(event) => { event.stopPropagation(); setSelectedPersonId(person.id); }}\r\n                            className=\"text-left\">\r\n                            {person.name}\r\n                          </button>\r\n                        </h4>",
+      "before_native_sha256": "08b8570bb41fb413488a8f954a25e37622ca5f4b78f4106cd1939b6e36c360b4",
+      "after_native_sha256": "fa83ace810ccce8f166af7282705684573c2f6c9f81cdaaa4f8952c38700f29a",
+      "reverse_native_source_byte_exact": true
+    }
+  ],
+  "combined_guin": {
+    "before_sha256": "ac5a2ec4084b0ed768e0c9e6ce2e7aa20483396939f87e5ef343c1ac227e6f8e",
+    "after_sha256": "fa83ace810ccce8f166af7282705684573c2f6c9f81cdaaa4f8952c38700f29a",
+    "reverse_native_source_byte_exact": true
+  },
+  "combined_ai": {
+    "before_sha256": "fbc43a3935af603a0bb3c6487d5a052cd7f0fd54b4afe1216c6f2c8811a0721f",
+    "after_sha256": "1516ef77ecdb4fb1020001acac839b7356cd64a38753a8a2b6444d349203eb3b",
+    "reverse_native_source_byte_exact": true
+  },
+  "first_fix_source_preserved_sha256": "27a207a8d45c92b2e30c8c2417939e620470fb4dc3526c6e66439b6b1bb604ad",
+  "qa_script": "scripts/qa/ui-maintenance-batch-five-browser.mjs",
+  "qa_authoring_bytes_identical": true,
+  "only_modified_preexisting_paths": [
+    "app/ai-test/page.tsx",
+    "app/guin/[id]/page.tsx",
+    "components/AskDoryeongModal.tsx"
+  ],
+  "existing_classes_text_mouse_actions_routes_request_ownership_and_timer_disposal_preserved": true,
+  "no_api_db_auth_billing_permissions_models_art_default_main_pr_merge_deploy_process_control_changes": true,
+  "scope": "Four independent UI fixes after new failures reproduced. Copy feedback waits for success and catches rejection/unavailability. GET map render shape enters existing load-error fallback. AI status requires successful HTTP and boolean configuration without backend/key/provider changes. Person names become native selected buttons while existing pointer card behavior stays."
+}

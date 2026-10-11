@@ -1,0 +1,93 @@
+{
+  "status": "PASS_TEN_NORMAL_UI_PNG_FILES_BYTE_IDENTICAL",
+  "screens": [
+    {
+      "file": "copy-success-390.png",
+      "bytes": 100530,
+      "sha256": "04c70e013d11fd518f3ce80219905b50b035bbc2370faf17bfbd6daeb7ecf1d7",
+      "png_bytes_and_pixels_identical": true
+    },
+    {
+      "file": "map-valid-390.png",
+      "bytes": 100729,
+      "sha256": "0de6d9f2811c4128b5faf81134e393d6a434f599c7d3bee08fb76da9363b3745",
+      "png_bytes_and_pixels_identical": true
+    },
+    {
+      "file": "ai-true-390.png",
+      "bytes": 26474,
+      "sha256": "afdbf3f453f1a4e406192224487c0efa6d05aa74bf7e321f093d759df92cd166",
+      "png_bytes_and_pixels_identical": true
+    },
+    {
+      "file": "ai-false-390.png",
+      "bytes": 26164,
+      "sha256": "b4f432c61a48dbef800bc35e29ed34c3e771dafce2adecfeba4fd272c7cd3227",
+      "png_bytes_and_pixels_identical": true
+    },
+    {
+      "file": "cards-mouse-390.png",
+      "bytes": 101722,
+      "sha256": "60a462fabeb53954f24c5e72c18f3ed2630f247f71670cfad026cedcd90fda1b",
+      "png_bytes_and_pixels_identical": true
+    },
+    {
+      "file": "copy-success-1440.png",
+      "bytes": 187625,
+      "sha256": "2345fae6528be9f220d377f3204f4845ee01dbe32acdd434347c0a07a63d5753",
+      "png_bytes_and_pixels_identical": true
+    },
+    {
+      "file": "map-valid-1440.png",
+      "bytes": 187865,
+      "sha256": "545f8360ebb2d46127bc5f42650da822d5d4a5d89917f94510cde2c48a62c7ec",
+      "png_bytes_and_pixels_identical": true
+    },
+    {
+      "file": "ai-true-1440.png",
+      "bytes": 34281,
+      "sha256": "59db86bb19f5f268203f30308f68cd613020d92c779949389af934356fb94b87",
+      "png_bytes_and_pixels_identical": true
+    },
+    {
+      "file": "ai-false-1440.png",
+      "bytes": 34013,
+      "sha256": "81464089afb23f04ce9769ea2cc14df75026de693ad21995372cae08fc0b9f12",
+      "png_bytes_and_pixels_identical": true
+    },
+    {
+      "file": "cards-mouse-1440.png",
+      "bytes": 189290,
+      "sha256": "af4409748ccc9ba6f2677ee90cb7b24250e26950e91b9f9df6e90502cce07028",
+      "png_bytes_and_pixels_identical": true
+    }
+  ],
+  "harness_identical": true,
+  "css_change": {
+    "status": "PASS_EXISTING_CSS_BYTES_PRESERVED_ONE_NEW_ERROR_COLOR_RULE",
+    "before_sha256": "a770bae117a73d8437a3af2cf6aa0577df45ae3b2e9dbd5f12154d17f64aa363",
+    "after_sha256": "4e2f086b3fd0c53e4e5729a49947310046f415c5e7aa7ab4e0428ef8d8dd50ca",
+    "identical": false,
+    "only_change": [
+      {
+        "operation": "insert",
+        "before": [],
+        "after": [
+          ".text-red-600 {\n",
+          "  --tw-text-opacity: 1;\n",
+          "  color: rgb(220 38 38 / var(--tw-text-opacity, 1));\n",
+          "}\n"
+        ]
+      }
+    ],
+    "purpose": "Red text for the new clipboard failure alert. Existing styles unchanged; 10 normal UI PNGs byte-identical."
+  },
+  "first_fix_reused_normal_screen_records": 4,
+  "first_fix_reused_records_not_rerendered": true,
+  "direct_visual_inspection": [
+    "after-v2/copy-reject-390.png",
+    "after-v2/map-null-array-390.png",
+    "after-v2/ai-bad-type-390.png",
+    "after-v2/cards-mouse-390.png"
+  ]
+}

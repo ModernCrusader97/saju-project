@@ -1,0 +1,15 @@
+{
+  "visible_error": false,
+  "copied": true,
+  "page_errors": [
+    "Synthetic clipboard denial"
+  ],
+  "gets": 1,
+  "clipboard": {
+    "mode": "reject",
+    "accesses": 1,
+    "writes": [
+      "http://127.0.0.1:14054/guin/qa-batch-galaxy"
+    ]
+  }
+}

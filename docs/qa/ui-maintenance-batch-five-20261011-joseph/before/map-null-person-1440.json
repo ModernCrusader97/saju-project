@@ -1,0 +1,9 @@
+{
+  "fallback_error_visible": false,
+  "heading_visible": false,
+  "page_errors": [
+    "Cannot read properties of null (reading 'isMe')"
+  ],
+  "gets": 1,
+  "body": ""
+}
