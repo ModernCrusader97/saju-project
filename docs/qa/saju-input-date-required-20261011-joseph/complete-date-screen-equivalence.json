@@ -1,0 +1,24 @@
+{
+  "status": "PASS_TWO_IDENTICAL_COMPLETE_DATE_UI_PNG_BYTES",
+  "screens": [
+    {
+      "file": "complete-opening-390.png",
+      "bytes": 36876,
+      "sha256": "ed65719dea951d7c069e9b054584594e686c863e67a7fd965b474de449764d75",
+      "png_bytes_and_pixels_identical": true
+    },
+    {
+      "file": "complete-opening-1440.png",
+      "bytes": 48263,
+      "sha256": "fa143f58a2335fe484a0698a7d5d5593a5550657d188d42dc38e4f32601ba48c",
+      "png_bytes_and_pixels_identical": true
+    }
+  ],
+  "css_sha256": "a770bae117a73d8437a3af2cf6aa0577df45ae3b2e9dbd5f12154d17f64aa363",
+  "harness_sha256": "d0dda9af18c66150e4cab3f262865b5ae2a2724b2200a047cd0b6cfa8bd72cc9",
+  "only_native_required_validation_changes": true,
+  "direct_visual_inspection": [
+    "before/empty-birthYear-390.png",
+    "after/submitted-empty-birthYear-390.png"
+  ]
+}

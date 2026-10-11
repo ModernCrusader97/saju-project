@@ -1,0 +1,24 @@
+{
+  "key": "birthYear-390",
+  "width": 390,
+  "empty_before_submit": {
+    "value": "",
+    "required": true,
+    "valid": false,
+    "value_missing": true,
+    "native_message": "이 입력란을 작성하세요.",
+    "is_focused": true
+  },
+  "post_count_after_empty": 0,
+  "posts_after_empty": [],
+  "form_still_open": true,
+  "native_missing_state": {
+    "value": "",
+    "required": true,
+    "valid": false,
+    "value_missing": true,
+    "native_message": "이 입력란을 작성하세요.",
+    "is_focused": true
+  },
+  "synthetic_successes": 0
+}

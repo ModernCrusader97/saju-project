@@ -1,0 +1,16 @@
+{
+  "file": "app/page.tsx",
+  "sha256": "326257228ab8257bc4450b2446d59a40ba72d5f42e000c6de30f9e339fd14eac",
+  "occurrences": [
+    {
+      "line": 7,
+      "text": "import SajuInputModal from '@/components/SajuInputModal';"
+    },
+    {
+      "line": 122,
+      "text": "<SajuInputModal isOpen={modal.open} onClose={() => setModal({ ...modal, open: false })} category={modal.category} categoryTitle={modal.title} onSuccess={fortune => { setResult(fortune); setModal({ ...modal, open: false }); }} />"
+    }
+  ],
+  "route": "/",
+  "unchanged": true
+}

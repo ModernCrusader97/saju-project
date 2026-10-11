@@ -1,0 +1,23 @@
+{
+  "status": "PASS_THREE_NATIVE_REQUIRED_ATTRIBUTES_ONLY_SOURCE_PROOF",
+  "basis": "98074bdb585fc2ccc4086517bf839e8ceda5846f",
+  "branch": "fix/saju-input-date-required-20261011-joseph",
+  "product": "components/SajuInputModal.tsx",
+  "before_sha256": "d632800fa432a49f47020710586a6b4cf98742b486204980674ce984cf42bc6d",
+  "after_sha256": "7afc6b2bbd8d1bf77460f0891da405457c79b7309da853eb6d996b98cc2c8533",
+  "change": {
+    "from": "                    type=\"number\"\r\n",
+    "to": "                    type=\"number\"\r\n                    required\r\n",
+    "occurrences": 3
+  },
+  "product_diff": {
+    "insertions": 3,
+    "deletions": 0,
+    "modified_preexisting_files": 1,
+    "required_attributes_added": 3
+  },
+  "reverse_native_source_byte_exact": true,
+  "all_text_classes_labels_handlers_state_request_lifecycle_callbacks_routes_calculation_unchanged": true,
+  "api_db_art_models_default_auth_billing_permissions_unchanged": true,
+  "only_new_behavior": "Existing year/month/day numeric inputs are required; native browser validation blocks empty date fields before the submit handler and focuses the missing field."
+}

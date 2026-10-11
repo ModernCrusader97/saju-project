@@ -1,0 +1,449 @@
+{
+  "status": "FAIL",
+  "phase": "before",
+  "at_utc": "2026-10-11T00:57:27.617Z",
+  "browser": "154.0.8037.98",
+  "product": "components/SajuInputModal.tsx",
+  "source_sha256": "d632800fa432a49f47020710586a6b4cf98742b486204980674ce984cf42bc6d",
+  "harness_sha256": "d0dda9af18c66150e4cab3f262865b5ae2a2724b2200a047cd0b6cfa8bd72cc9",
+  "css_sha256": "a770bae117a73d8437a3af2cf6aa0577df45ae3b2e9dbd5f12154d17f64aa363",
+  "passed": 2,
+  "failed": 6,
+  "checks": [
+    {
+      "name": "Complete default birth date remains submittable 390",
+      "observed": {
+        "posts": [
+          {
+            "name": "홍길동",
+            "gender": "male",
+            "calendarType": "solar",
+            "birthYear": 1995,
+            "birthMonth": 5,
+            "birthDay": 15,
+            "birthHour": 13,
+            "birthMinute": 30,
+            "isUnknownTime": false,
+            "category": "overall"
+          }
+        ],
+        "fields": [
+          {
+            "value": "1995",
+            "required": false,
+            "valid": true,
+            "value_missing": false,
+            "native_message": "",
+            "is_focused": false
+          },
+          {
+            "value": "5",
+            "required": false,
+            "valid": true,
+            "value_missing": false,
+            "native_message": "",
+            "is_focused": false
+          },
+          {
+            "value": "15",
+            "required": false,
+            "valid": true,
+            "value_missing": false,
+            "native_message": "",
+            "is_focused": false
+          }
+        ]
+      },
+      "pass": true
+    },
+    {
+      "name": "Empty birthYear is natively blocked and refill recovers 390",
+      "pass": false,
+      "error": "An empty birth-date field must stop the POST before the request handler.\n\n1 !== 0\n"
+    },
+    {
+      "name": "Empty birthMonth is natively blocked and refill recovers 390",
+      "pass": false,
+      "error": "An empty birth-date field must stop the POST before the request handler.\n\n1 !== 0\n"
+    },
+    {
+      "name": "Empty birthDay is natively blocked and refill recovers 390",
+      "pass": false,
+      "error": "An empty birth-date field must stop the POST before the request handler.\n\n1 !== 0\n"
+    },
+    {
+      "name": "Complete default birth date remains submittable 1440",
+      "observed": {
+        "posts": [
+          {
+            "name": "홍길동",
+            "gender": "male",
+            "calendarType": "solar",
+            "birthYear": 1995,
+            "birthMonth": 5,
+            "birthDay": 15,
+            "birthHour": 13,
+            "birthMinute": 30,
+            "isUnknownTime": false,
+            "category": "overall"
+          }
+        ],
+        "fields": [
+          {
+            "value": "1995",
+            "required": false,
+            "valid": true,
+            "value_missing": false,
+            "native_message": "",
+            "is_focused": false
+          },
+          {
+            "value": "5",
+            "required": false,
+            "valid": true,
+            "value_missing": false,
+            "native_message": "",
+            "is_focused": false
+          },
+          {
+            "value": "15",
+            "required": false,
+            "valid": true,
+            "value_missing": false,
+            "native_message": "",
+            "is_focused": false
+          }
+        ]
+      },
+      "pass": true
+    },
+    {
+      "name": "Empty birthYear is natively blocked and refill recovers 1440",
+      "pass": false,
+      "error": "An empty birth-date field must stop the POST before the request handler.\n\n1 !== 0\n"
+    },
+    {
+      "name": "Empty birthMonth is natively blocked and refill recovers 1440",
+      "pass": false,
+      "error": "An empty birth-date field must stop the POST before the request handler.\n\n1 !== 0\n"
+    },
+    {
+      "name": "Empty birthDay is natively blocked and refill recovers 1440",
+      "pass": false,
+      "error": "An empty birth-date field must stop the POST before the request handler.\n\n1 !== 0\n"
+    }
+  ],
+  "observations": [
+    {
+      "key": "birthYear-390",
+      "width": 390,
+      "empty_before_submit": {
+        "value": "",
+        "required": false,
+        "valid": true,
+        "value_missing": false,
+        "native_message": "",
+        "is_focused": true
+      },
+      "post_count_after_empty": 1,
+      "posts_after_empty": [
+        {
+          "name": "홍길동",
+          "gender": "male",
+          "calendarType": "solar",
+          "birthYear": 0,
+          "birthMonth": 5,
+          "birthDay": 15,
+          "birthHour": 13,
+          "birthMinute": 30,
+          "isUnknownTime": false,
+          "category": "overall"
+        }
+      ],
+      "form_still_open": false,
+      "native_missing_state": null,
+      "synthetic_successes": 1
+    },
+    {
+      "key": "birthMonth-390",
+      "width": 390,
+      "empty_before_submit": {
+        "value": "",
+        "required": false,
+        "valid": true,
+        "value_missing": false,
+        "native_message": "",
+        "is_focused": true
+      },
+      "post_count_after_empty": 1,
+      "posts_after_empty": [
+        {
+          "name": "홍길동",
+          "gender": "male",
+          "calendarType": "solar",
+          "birthYear": 1995,
+          "birthMonth": 0,
+          "birthDay": 15,
+          "birthHour": 13,
+          "birthMinute": 30,
+          "isUnknownTime": false,
+          "category": "overall"
+        }
+      ],
+      "form_still_open": false,
+      "native_missing_state": null,
+      "synthetic_successes": 1
+    },
+    {
+      "key": "birthDay-390",
+      "width": 390,
+      "empty_before_submit": {
+        "value": "",
+        "required": false,
+        "valid": true,
+        "value_missing": false,
+        "native_message": "",
+        "is_focused": true
+      },
+      "post_count_after_empty": 1,
+      "posts_after_empty": [
+        {
+          "name": "홍길동",
+          "gender": "male",
+          "calendarType": "solar",
+          "birthYear": 1995,
+          "birthMonth": 5,
+          "birthDay": 0,
+          "birthHour": 13,
+          "birthMinute": 30,
+          "isUnknownTime": false,
+          "category": "overall"
+        }
+      ],
+      "form_still_open": false,
+      "native_missing_state": null,
+      "synthetic_successes": 1
+    },
+    {
+      "key": "birthYear-1440",
+      "width": 1440,
+      "empty_before_submit": {
+        "value": "",
+        "required": false,
+        "valid": true,
+        "value_missing": false,
+        "native_message": "",
+        "is_focused": true
+      },
+      "post_count_after_empty": 1,
+      "posts_after_empty": [
+        {
+          "name": "홍길동",
+          "gender": "male",
+          "calendarType": "solar",
+          "birthYear": 0,
+          "birthMonth": 5,
+          "birthDay": 15,
+          "birthHour": 13,
+          "birthMinute": 30,
+          "isUnknownTime": false,
+          "category": "overall"
+        }
+      ],
+      "form_still_open": false,
+      "native_missing_state": null,
+      "synthetic_successes": 1
+    },
+    {
+      "key": "birthMonth-1440",
+      "width": 1440,
+      "empty_before_submit": {
+        "value": "",
+        "required": false,
+        "valid": true,
+        "value_missing": false,
+        "native_message": "",
+        "is_focused": true
+      },
+      "post_count_after_empty": 1,
+      "posts_after_empty": [
+        {
+          "name": "홍길동",
+          "gender": "male",
+          "calendarType": "solar",
+          "birthYear": 1995,
+          "birthMonth": 0,
+          "birthDay": 15,
+          "birthHour": 13,
+          "birthMinute": 30,
+          "isUnknownTime": false,
+          "category": "overall"
+        }
+      ],
+      "form_still_open": false,
+      "native_missing_state": null,
+      "synthetic_successes": 1
+    },
+    {
+      "key": "birthDay-1440",
+      "width": 1440,
+      "empty_before_submit": {
+        "value": "",
+        "required": false,
+        "valid": true,
+        "value_missing": false,
+        "native_message": "",
+        "is_focused": true
+      },
+      "post_count_after_empty": 1,
+      "posts_after_empty": [
+        {
+          "name": "홍길동",
+          "gender": "male",
+          "calendarType": "solar",
+          "birthYear": 1995,
+          "birthMonth": 5,
+          "birthDay": 0,
+          "birthHour": 13,
+          "birthMinute": 30,
+          "isUnknownTime": false,
+          "category": "overall"
+        }
+      ],
+      "form_still_open": false,
+      "native_missing_state": null,
+      "synthetic_successes": 1
+    }
+  ],
+  "synthetic_posts": [
+    {
+      "key": "complete-390",
+      "body": {
+        "name": "홍길동",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "key": "birthYear-390",
+      "body": {
+        "name": "홍길동",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 0,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "key": "birthMonth-390",
+      "body": {
+        "name": "홍길동",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 0,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "key": "birthDay-390",
+      "body": {
+        "name": "홍길동",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 0,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "key": "complete-1440",
+      "body": {
+        "name": "홍길동",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "key": "birthYear-1440",
+      "body": {
+        "name": "홍길동",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 0,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "key": "birthMonth-1440",
+      "body": {
+        "name": "홍길동",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 0,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "key": "birthDay-1440",
+      "body": {
+        "name": "홍길동",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 0,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    }
+  ],
+  "page_errors": [],
+  "console_errors": [],
+  "outbound_requests": [],
+  "actual_backend_requests": 0,
+  "database_operations": 0,
+  "native_pointer_and_keyboard": true,
+  "manual_dom_events": 0,
+  "previous_suites_rerun": 0,
+  "scope": "Actual production React/Tailwind SajuInputModal and native Chrome input/submit with fictional Hong Gildong. Only complete defaults and three separately empty birth-date fields plus refills at 390/1440px. All POSTs fulfilled at the synthetic browser boundary without contacting any backend or DB. Prior request lifecycle, home validation, gender, passport, collection and other QA not rerun. No full hosted route, real persistence, calculation accuracy or physical mobile device claim."
+}

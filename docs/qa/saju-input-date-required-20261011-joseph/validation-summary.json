@@ -1,0 +1,93 @@
+{
+  "status": "PASS_ONE_DISTINCT_SAJU_INPUT_DATE_REQUIRED_FIX",
+  "host": "Joseph",
+  "at_utc": "2026-10-11T01:02:18.802Z",
+  "basis": "98074bdb585fc2ccc4086517bf839e8ceda5846f",
+  "branch": "fix/saju-input-date-required-20261011-joseph",
+  "product": "components/SajuInputModal.tsx",
+  "consumer": {
+    "file": "app/page.tsx",
+    "occurrences": [
+      {
+        "line": 7,
+        "text": "import SajuInputModal from '@/components/SajuInputModal';"
+      },
+      {
+        "line": 122,
+        "text": "<SajuInputModal isOpen={modal.open} onClose={() => setModal({ ...modal, open: false })} category={modal.category} categoryTitle={modal.title} onSuccess={fortune => { setResult(fortune); setModal({ ...modal, open: false }); }} />"
+      }
+    ]
+  },
+  "problem": "Empty birth year, month or day is natively valid and becomes numeric zero in a submit POST even though the existing server contract requires a complete birth date.",
+  "fix": "Add required to the three existing numeric birth-date inputs. Native browser validation prevents empty-date submission and focuses the missing field; a native refill permits normal submission.",
+  "product_diff": {
+    "insertions": 3,
+    "deletions": 0,
+    "modified_preexisting_files": 1,
+    "required_attributes_added": 3
+  },
+  "before": {
+    "passed": 2,
+    "failed": 6,
+    "empty_date_synthetic_posts": 6
+  },
+  "after": {
+    "passed": 8,
+    "failed": 0,
+    "empty_date_synthetic_posts": 0,
+    "refill_recoveries": 6
+  },
+  "actual_browser": "154.0.8037.98",
+  "viewports": [
+    "390x844",
+    "1440x1000"
+  ],
+  "native_pointer_and_keyboard": true,
+  "manual_dom_events": 0,
+  "identical_new_harness_and_css": true,
+  "identical_complete_date_png_files_and_pixels": 2,
+  "unexpected_page_errors": 0,
+  "console_errors": 0,
+  "outbound_requests": 0,
+  "actual_backend_requests": 0,
+  "database_operations": 0,
+  "synthetic_boundary_posts": {
+    "before": 8,
+    "after": 8,
+    "backend_contacted": false
+  },
+  "previous_suites_rerun": 0,
+  "all_text_classes_labels_handlers_state_request_lifecycle_callbacks_routes_calculation_unchanged": true,
+  "types": {
+    "exit_code": 0,
+    "nonincremental": true,
+    "after_own_build": true
+  },
+  "build": {
+    "exit_code": 0,
+    "own_current_branch_run": true,
+    "no_install_or_deployment": true
+  },
+  "lint": {
+    "new_errors": 0,
+    "new_warnings": 0,
+    "unchanged_existing_product_errors": 2,
+    "unchanged_existing_product_warnings": 3,
+    "new_qa_errors": 0,
+    "new_qa_warnings": 0,
+    "rules_config_suppressions_unchanged": true,
+    "baseline_diagnostics_compared": true,
+    "full_scoped_lint_is_not_clean": true
+  },
+  "source_reverse_patch_byte_exact": true,
+  "previous_completed_records_reused": 15,
+  "preexisting_tracked_entries": 819,
+  "scope": "docs/qa/saju-input-date-required-20261011-joseph",
+  "models_other_11_art_default_auth_billing_permissions_db_unchanged": true,
+  "private_repo_fresh_read_verified": true,
+  "limits": [
+    "Actual production React/Tailwind SajuInputModal and native Chrome input/submit with fictional Hong Gildong. Only complete defaults and three separately empty birth-date fields plus refills at 390/1440px. All POSTs fulfilled at the synthetic browser boundary without contacting any backend or DB. Prior request lifecycle, home validation, gender, passport, collection and other QA not rerun. No full hosted route, real persistence, calculation accuracy or physical mobile device claim.",
+    "Scoped lint retains 2 existing errors and 3 existing warnings in SajuInputModal; all diagnostic messages match the original source and the new QA has none. No suppression or unrelated lint cleanup."
+  ],
+  "remaining_blockers": []
+}

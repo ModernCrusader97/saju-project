@@ -1,0 +1,56 @@
+// New native empty birth-date validation checks only. No request lifecycle or earlier QA reruns.
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+import {fileURLToPath,pathToFileURL} from 'node:url';
+import {createServer} from 'node:http';
+const root=path.resolve(process.env.SAJU_QA_REPO||fileURLToPath(new URL('../..',import.meta.url))),phase=process.env.SAJU_QA_PHASE||'after';assert(['before','after'].includes(phase));
+const output=path.resolve(process.env.SAJU_QA_OUTPUT||path.join(root,'outputs/saju-input-date-required',phase)),scratch=path.resolve(process.env.SAJU_QA_SCRATCH||path.join(root,'outputs/saju-input-date-required-runtime'));
+await fs.mkdir(output,{recursive:true});await fs.mkdir(scratch,{recursive:true});try{await fs.access(path.join(output,'browser-results.json'));throw Error('Use a new report directory');}catch(error){if(error.code!=='ENOENT')throw error;}
+const dependencies=path.resolve(process.env.SAJU_QA_DEPENDENCY_ROOT||path.join(root,'node_modules'));
+const {chromium}=await import(pathToFileURL(process.env.SAJU_QA_PLAYWRIGHT_PATH||path.join(root,'.sites-runtime/test-tools/node_modules/playwright/index.mjs')).href);
+const {build}=await import(pathToFileURL(path.join(dependencies,'esbuild/lib/main.js')).href);
+const {default:postcss}=await import(pathToFileURL(path.join(dependencies,'postcss/lib/postcss.js')).href);
+const {default:tailwind}=await import(pathToFileURL(path.join(dependencies,'tailwindcss/lib/index.js')).href);
+const {default:autoprefixer}=await import(pathToFileURL(path.join(dependencies,'autoprefixer/lib/autoprefixer.js')).href);
+const {default:ts}=await import(pathToFileURL(path.join(dependencies,'typescript/lib/typescript.js')).href);
+const sha=bytes=>createHash('sha256').update(bytes).digest('hex'),source=await fs.readFile(path.join(root,'components/SajuInputModal.tsx'));
+const entry=`import React,{useState} from 'react';import {createRoot} from 'react-dom/client';import Modal from './components/SajuInputModal.tsx';
+function Fixture(){const[open,setOpen]=useState(false);return <><button data-qa-launcher onClick={()=>setOpen(true)}>Open synthetic birth date QA</button><Modal isOpen={open} onClose={()=>setOpen(false)} onSuccess={()=>{window.syntheticSuccesses=(window.syntheticSuccesses||0)+1;}}/></>;}
+createRoot(document.getElementById('root')).render(<Fixture/>);window.ready=true;`;
+await fs.writeFile(path.join(output,'synthetic-entry.jsx'),entry,{flag:'wx'});
+const bundle=await build({absWorkingDir:root,stdin:{contents:entry,resolveDir:root,sourcefile:'synthetic-saju-input-required-entry.jsx',loader:'jsx'},bundle:true,write:false,format:'esm',platform:'browser',nodePaths:[dependencies],alias:{'@':root,react:path.join(dependencies,'react'),'react-dom':path.join(dependencies,'react-dom'),'lucide-react':path.join(dependencies,'lucide-react')},define:{'process.env.NODE_ENV':"'production'"}});
+const config=ts.transpileModule(await fs.readFile(path.join(root,'tailwind.config.ts'),'utf8'),{compilerOptions:{module:ts.ModuleKind.ESNext,target:ts.ScriptTarget.ES2022}}).outputText;
+const {default:cssConfig}=await import('data:text/javascript;base64,'+Buffer.from(config).toString('base64'));cssConfig.content=cssConfig.content.map(pattern=>path.resolve(root,pattern));
+const css=await postcss([tailwind(cssConfig),autoprefixer]).process(await fs.readFile(path.join(root,'app/globals.css'),'utf8'),{from:path.join(root,'app/globals.css')});
+await fs.writeFile(path.join(output,'bundle.js'),bundle.outputFiles[0].contents,{flag:'wx'});await fs.writeFile(path.join(output,'styles.css'),css.css,{flag:'wx'});
+const html='<!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><title>Synthetic Birth Date Required QA</title><link rel="stylesheet" href="/styles.css"></head><body><div id="root"></div><script type="module" src="/entry.js"></script></body></html>';
+const server=createServer((req,res)=>{const routes={'/__saju-input-date-required':['text/html',html],'/entry.js':['text/javascript',bundle.outputFiles[0].contents],'/styles.css':['text/css',css.css]};if(req.method==='GET'&&routes[req.url]){res.setHeader('Content-Type',routes[req.url][0]);res.end(routes[req.url][1]);return;}res.statusCode=req.url==='/favicon.ico'?204:404;res.end();});
+const checks=[],observations=[],outbound=[],pageErrors=[],consoleErrors=[],syntheticPosts=[];let context;
+try{
+ await new Promise((resolve,reject)=>{server.once('error',reject);server.listen(0,'127.0.0.1',resolve);});const base='http://127.0.0.1:'+server.address().port;
+ context=await chromium.launchPersistentContext(path.join(scratch,'chrome-profile-'+phase),{headless:true,executablePath:process.env.SAJU_QA_CHROME||'C:/Program Files/Google/Chrome/Application/chrome.exe',viewport:{width:390,height:844},args:['--disable-background-networking','--disable-component-update','--no-first-run']});
+ await context.route('**/*',async route=>{const req=route.request(),url=new URL(req.url());if(url.origin===base&&req.method()==='GET')await route.continue();else{outbound.push({url:req.url(),method:req.method()});await route.abort();}});
+ async function check(name,run){const record={name};try{record.observed=await run();record.pass=true;}catch(error){record.pass=false;record.error=error.message;}checks.push(record);}
+ async function view(width,key){const page=await context.newPage();await page.setViewportSize({width,height:width===390?844:1000});const posts=[];
+  page.on('pageerror',error=>pageErrors.push({key,error:error.message}));page.on('console',message=>{if(message.type()==='error')consoleErrors.push(message.text());});page.on('dialog',dialog=>dialog.dismiss());
+  await page.route('**/api/saju',async route=>{const req=route.request();assert.equal(req.method(),'POST');const body=req.postDataJSON();posts.push(body);syntheticPosts.push({key,body});await route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({success:true,fortune:{id:'qa-only-not-persisted'}})});});
+  await page.goto(base+'/__saju-input-date-required',{waitUntil:'networkidle'});await page.waitForFunction(()=>window.ready===true);await page.locator('[data-qa-launcher]').click();await page.locator('form').waitFor({state:'visible'});await page.getByPlaceholder('예: 홍길동',{exact:true}).click();await page.keyboard.insertText('홍길동');return {page,posts};
+ }
+ async function fieldState(page,index){return page.locator('input[type="number"]').nth(index).evaluate(input=>({value:input.value,required:input.required,valid:input.validity.valid,value_missing:input.validity.valueMissing,native_message:input.validationMessage,is_focused:document.activeElement===input}));}
+ const keys=['birthYear','birthMonth','birthDay'],defaults=['1995','5','15'];
+ for(const width of [390,1440]){
+  await check('Complete default birth date remains submittable '+width,async()=>{const {page,posts}=await view(width,'complete-'+width);try{await page.screenshot({path:path.join(output,'complete-opening-'+width+'.png'),animations:'disabled'});const fields=[];for(let i=0;i<3;i++)fields.push(await fieldState(page,i));await page.getByRole('button',{name:'나의 이야기 보기',exact:true}).click();await page.waitForFunction(()=>window.syntheticSuccesses===1);assert.equal(posts.length,1);assert.deepEqual(keys.map(key=>posts[0][key]),[1995,5,15]);assert(fields.every(f=>f.valid));return {posts,fields};}finally{await page.close();}});
+  for(let index=0;index<3;index++)await check('Empty '+keys[index]+' is natively blocked and refill recovers '+width,async()=>{const key=keys[index]+'-'+width,{page,posts}=await view(width,key);try{
+   const field=page.locator('input[type="number"]').nth(index);await field.click();await page.keyboard.press('Control+A');await page.keyboard.press('Backspace');const empty=await fieldState(page,index);assert.equal(empty.value,'');await page.screenshot({path:path.join(output,'empty-'+key+'.png'),animations:'disabled'});
+   await page.getByRole('button',{name:'나의 이야기 보기',exact:true}).click();await page.waitForTimeout(120);const formPresent=await page.locator('form').count()===1;
+   const observed={key,width,empty_before_submit:empty,post_count_after_empty:posts.length,posts_after_empty:[...posts],form_still_open:formPresent,native_missing_state:formPresent?await fieldState(page,index):null,synthetic_successes:await page.evaluate(()=>window.syntheticSuccesses||0)};observations.push(observed);await fs.writeFile(path.join(output,'empty-'+key+'.json'),JSON.stringify(observed,null,2)+'\n',{flag:'wx'});await page.screenshot({path:path.join(output,'submitted-empty-'+key+'.png'),animations:'disabled'});
+   assert.equal(posts.length,0,'An empty birth-date field must stop the POST before the request handler.');assert.equal(observed.form_still_open,true);assert.equal(observed.native_missing_state.value_missing,true);assert.equal(observed.native_missing_state.valid,false);assert.equal(observed.native_missing_state.is_focused,true);assert(observed.native_missing_state.native_message.length>0);
+   await page.keyboard.insertText(defaults[index]);const refilled=await fieldState(page,index);assert.equal(refilled.valid,true);await page.getByRole('button',{name:'나의 이야기 보기',exact:true}).click();await page.waitForFunction(()=>window.syntheticSuccesses===1);assert.equal(posts.length,1);assert.deepEqual(keys.map(k=>posts[0][k]),[1995,5,15]);return {empty_submission:observed,refill:{native_valid:true,synthetic_posts:1,date:[1995,5,15]}};
+  }finally{await page.close();}});
+ }
+ const passed=checks.filter(x=>x.pass).length,failed=checks.length-passed;
+ const report={status:failed||pageErrors.length||outbound.length||consoleErrors.length?'FAIL':'PASS',phase,at_utc:new Date().toISOString(),browser:await context.browser().version(),product:'components/SajuInputModal.tsx',source_sha256:sha(source),harness_sha256:sha(await fs.readFile(fileURLToPath(import.meta.url))),css_sha256:sha(Buffer.from(css.css)),passed,failed,checks,observations,synthetic_posts:syntheticPosts,page_errors:pageErrors,console_errors:consoleErrors,outbound_requests:outbound,actual_backend_requests:0,database_operations:0,native_pointer_and_keyboard:true,manual_dom_events:0,previous_suites_rerun:0,scope:'Actual production React/Tailwind SajuInputModal and native Chrome input/submit with fictional Hong Gildong. Only complete defaults and three separately empty birth-date fields plus refills at 390/1440px. All POSTs fulfilled at the synthetic browser boundary without contacting any backend or DB. Prior request lifecycle, home validation, gender, passport, collection and other QA not rerun. No full hosted route, real persistence, calculation accuracy or physical mobile device claim.'};
+ await fs.writeFile(path.join(output,'browser-results.json'),JSON.stringify(report,null,2)+'\n',{flag:'wx'});console.log(JSON.stringify({status:report.status,phase,passed,failed,browser:report.browser,page_errors:pageErrors.length,actual_backend_requests:0,synthetic_posts:syntheticPosts.length,report:path.join(output,'browser-results.json')}));process.exitCode=report.status==='PASS'?0:1;
+}finally{if(context)await context.close();await new Promise(resolve=>server.close(resolve));}

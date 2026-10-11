@@ -1,0 +1,103 @@
+{
+  "status": "PASS_NO_NEW_DIAGNOSTICS_EXISTING_BASELINE_PRESERVED",
+  "same_real_product_filename_for_baseline": true,
+  "before": [
+    {
+      "file": "D:\\Codex\\Work\\SaJuUiOneBug-20261010-Joseph\\repo\\components\\SajuInputModal.tsx",
+      "errorCount": 2,
+      "warningCount": 3,
+      "messages": [
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'Loader2' is defined but never used.",
+          "line": 7,
+          "column": 23
+        },
+        {
+          "ruleId": "@next/next/no-location-assign-relative-destination",
+          "severity": 1,
+          "message": "Do not use `window.location.assign()` to navigate to internal Next.js pages. Use `redirect()` in the render phase, or `useRouter().push()` in Client Components' event handlers instead. See: https://nextjs.org/docs/messages/no-location-assign-relative-destination",
+          "line": 92,
+          "column": 11
+        },
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'err' is defined but never used.",
+          "line": 98,
+          "column": 14
+        },
+        {
+          "ruleId": "@typescript-eslint/no-explicit-any",
+          "severity": 2,
+          "message": "Unexpected any. Specify a different type.",
+          "line": 98,
+          "column": 19
+        },
+        {
+          "ruleId": "@typescript-eslint/no-explicit-any",
+          "severity": 2,
+          "message": "Unexpected any. Specify a different type.",
+          "line": 214,
+          "column": 63
+        }
+      ]
+    }
+  ],
+  "after": [
+    {
+      "file": "D:\\Codex\\Work\\SaJuUiOneBug-20261010-Joseph\\repo\\components\\SajuInputModal.tsx",
+      "errorCount": 2,
+      "warningCount": 3,
+      "messages": [
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'Loader2' is defined but never used.",
+          "line": 7,
+          "column": 23
+        },
+        {
+          "ruleId": "@next/next/no-location-assign-relative-destination",
+          "severity": 1,
+          "message": "Do not use `window.location.assign()` to navigate to internal Next.js pages. Use `redirect()` in the render phase, or `useRouter().push()` in Client Components' event handlers instead. See: https://nextjs.org/docs/messages/no-location-assign-relative-destination",
+          "line": 92,
+          "column": 11
+        },
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'err' is defined but never used.",
+          "line": 98,
+          "column": 14
+        },
+        {
+          "ruleId": "@typescript-eslint/no-explicit-any",
+          "severity": 2,
+          "message": "Unexpected any. Specify a different type.",
+          "line": 98,
+          "column": 19
+        },
+        {
+          "ruleId": "@typescript-eslint/no-explicit-any",
+          "severity": 2,
+          "message": "Unexpected any. Specify a different type.",
+          "line": 214,
+          "column": 63
+        }
+      ]
+    },
+    {
+      "file": "D:\\Codex\\Work\\SaJuUiOneBug-20261010-Joseph\\repo\\scripts\\qa\\saju-input-date-required-browser.mjs",
+      "errorCount": 0,
+      "warningCount": 0,
+      "messages": []
+    }
+  ],
+  "rules_or_suppressions_changed": false,
+  "existing_product_errors": 2,
+  "existing_product_warnings": 3,
+  "new_errors": 0,
+  "new_warnings": 0
+}

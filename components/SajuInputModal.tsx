@@ -238,6 +238,7 @@ export default function SajuInputModal({
                 <div className="flex items-center rounded-xl border border-doryeong-border bg-white px-2 py-2">
                   <input
                     type="number"
+                    required
                     min="1900"
                     max={calendarType === "solar" ? 2100 : 2050}
                     value={birthYear}
@@ -249,6 +250,7 @@ export default function SajuInputModal({
                 <div className="flex items-center rounded-xl border border-doryeong-border bg-white px-2 py-2">
                   <input
                     type="number"
+                    required
                     min="1"
                     max="12"
                     value={birthMonth}
@@ -260,6 +262,7 @@ export default function SajuInputModal({
                 <div className="flex items-center rounded-xl border border-doryeong-border bg-white px-2 py-2">
                   <input
                     type="number"
+                    required
                     min="1"
                     max={calendarType === "solar" ? 31 : 30}
                     value={birthDay}

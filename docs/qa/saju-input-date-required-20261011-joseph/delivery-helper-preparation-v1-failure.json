@@ -1,0 +1,10 @@
+{
+  "status": "PRESERVED_DELIVERY_HELPER_PREPARATION_FAILURE",
+  "at_utc": "2026-10-11T01:01:40.359Z",
+  "original_generator": "D:/Codex/Work/SaJuUiInputDateRequired-20261011-Joseph/authoring/generate_input_required_delivery.mjs",
+  "original_attempt_exit_code": 1,
+  "observed_error": "AssertionError: assert(!text.includes('short viewport')&&!text.includes('normal_screen')&&!text.includes('lint_errors:0')&&!text.includes('existing_remote_heads:56'))",
+  "cause": "The final delivery object had a remaining geometry property from the prior layout task. Preparation stopped before any commit or upload.",
+  "repair": "Generate separate v2 delivery helpers with the unchanged complete-date CSS proof instead. Original helper and any generated v1 intermediate files are preserved.",
+  "product_or_browser_or_gate_tests_rerun": false
+}

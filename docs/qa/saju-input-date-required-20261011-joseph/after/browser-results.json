@@ -1,0 +1,617 @@
+{
+  "status": "PASS",
+  "phase": "after",
+  "at_utc": "2026-10-11T00:58:01.760Z",
+  "browser": "154.0.8037.98",
+  "product": "components/SajuInputModal.tsx",
+  "source_sha256": "7afc6b2bbd8d1bf77460f0891da405457c79b7309da853eb6d996b98cc2c8533",
+  "harness_sha256": "d0dda9af18c66150e4cab3f262865b5ae2a2724b2200a047cd0b6cfa8bd72cc9",
+  "css_sha256": "a770bae117a73d8437a3af2cf6aa0577df45ae3b2e9dbd5f12154d17f64aa363",
+  "passed": 8,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "Complete default birth date remains submittable 390",
+      "observed": {
+        "posts": [
+          {
+            "name": "홍길동",
+            "gender": "male",
+            "calendarType": "solar",
+            "birthYear": 1995,
+            "birthMonth": 5,
+            "birthDay": 15,
+            "birthHour": 13,
+            "birthMinute": 30,
+            "isUnknownTime": false,
+            "category": "overall"
+          }
+        ],
+        "fields": [
+          {
+            "value": "1995",
+            "required": true,
+            "valid": true,
+            "value_missing": false,
+            "native_message": "",
+            "is_focused": false
+          },
+          {
+            "value": "5",
+            "required": true,
+            "valid": true,
+            "value_missing": false,
+            "native_message": "",
+            "is_focused": false
+          },
+          {
+            "value": "15",
+            "required": true,
+            "valid": true,
+            "value_missing": false,
+            "native_message": "",
+            "is_focused": false
+          }
+        ]
+      },
+      "pass": true
+    },
+    {
+      "name": "Empty birthYear is natively blocked and refill recovers 390",
+      "observed": {
+        "empty_submission": {
+          "key": "birthYear-390",
+          "width": 390,
+          "empty_before_submit": {
+            "value": "",
+            "required": true,
+            "valid": false,
+            "value_missing": true,
+            "native_message": "이 입력란을 작성하세요.",
+            "is_focused": true
+          },
+          "post_count_after_empty": 0,
+          "posts_after_empty": [],
+          "form_still_open": true,
+          "native_missing_state": {
+            "value": "",
+            "required": true,
+            "valid": false,
+            "value_missing": true,
+            "native_message": "이 입력란을 작성하세요.",
+            "is_focused": true
+          },
+          "synthetic_successes": 0
+        },
+        "refill": {
+          "native_valid": true,
+          "synthetic_posts": 1,
+          "date": [
+            1995,
+            5,
+            15
+          ]
+        }
+      },
+      "pass": true
+    },
+    {
+      "name": "Empty birthMonth is natively blocked and refill recovers 390",
+      "observed": {
+        "empty_submission": {
+          "key": "birthMonth-390",
+          "width": 390,
+          "empty_before_submit": {
+            "value": "",
+            "required": true,
+            "valid": false,
+            "value_missing": true,
+            "native_message": "이 입력란을 작성하세요.",
+            "is_focused": true
+          },
+          "post_count_after_empty": 0,
+          "posts_after_empty": [],
+          "form_still_open": true,
+          "native_missing_state": {
+            "value": "",
+            "required": true,
+            "valid": false,
+            "value_missing": true,
+            "native_message": "이 입력란을 작성하세요.",
+            "is_focused": true
+          },
+          "synthetic_successes": 0
+        },
+        "refill": {
+          "native_valid": true,
+          "synthetic_posts": 1,
+          "date": [
+            1995,
+            5,
+            15
+          ]
+        }
+      },
+      "pass": true
+    },
+    {
+      "name": "Empty birthDay is natively blocked and refill recovers 390",
+      "observed": {
+        "empty_submission": {
+          "key": "birthDay-390",
+          "width": 390,
+          "empty_before_submit": {
+            "value": "",
+            "required": true,
+            "valid": false,
+            "value_missing": true,
+            "native_message": "이 입력란을 작성하세요.",
+            "is_focused": true
+          },
+          "post_count_after_empty": 0,
+          "posts_after_empty": [],
+          "form_still_open": true,
+          "native_missing_state": {
+            "value": "",
+            "required": true,
+            "valid": false,
+            "value_missing": true,
+            "native_message": "이 입력란을 작성하세요.",
+            "is_focused": true
+          },
+          "synthetic_successes": 0
+        },
+        "refill": {
+          "native_valid": true,
+          "synthetic_posts": 1,
+          "date": [
+            1995,
+            5,
+            15
+          ]
+        }
+      },
+      "pass": true
+    },
+    {
+      "name": "Complete default birth date remains submittable 1440",
+      "observed": {
+        "posts": [
+          {
+            "name": "홍길동",
+            "gender": "male",
+            "calendarType": "solar",
+            "birthYear": 1995,
+            "birthMonth": 5,
+            "birthDay": 15,
+            "birthHour": 13,
+            "birthMinute": 30,
+            "isUnknownTime": false,
+            "category": "overall"
+          }
+        ],
+        "fields": [
+          {
+            "value": "1995",
+            "required": true,
+            "valid": true,
+            "value_missing": false,
+            "native_message": "",
+            "is_focused": false
+          },
+          {
+            "value": "5",
+            "required": true,
+            "valid": true,
+            "value_missing": false,
+            "native_message": "",
+            "is_focused": false
+          },
+          {
+            "value": "15",
+            "required": true,
+            "valid": true,
+            "value_missing": false,
+            "native_message": "",
+            "is_focused": false
+          }
+        ]
+      },
+      "pass": true
+    },
+    {
+      "name": "Empty birthYear is natively blocked and refill recovers 1440",
+      "observed": {
+        "empty_submission": {
+          "key": "birthYear-1440",
+          "width": 1440,
+          "empty_before_submit": {
+            "value": "",
+            "required": true,
+            "valid": false,
+            "value_missing": true,
+            "native_message": "이 입력란을 작성하세요.",
+            "is_focused": true
+          },
+          "post_count_after_empty": 0,
+          "posts_after_empty": [],
+          "form_still_open": true,
+          "native_missing_state": {
+            "value": "",
+            "required": true,
+            "valid": false,
+            "value_missing": true,
+            "native_message": "이 입력란을 작성하세요.",
+            "is_focused": true
+          },
+          "synthetic_successes": 0
+        },
+        "refill": {
+          "native_valid": true,
+          "synthetic_posts": 1,
+          "date": [
+            1995,
+            5,
+            15
+          ]
+        }
+      },
+      "pass": true
+    },
+    {
+      "name": "Empty birthMonth is natively blocked and refill recovers 1440",
+      "observed": {
+        "empty_submission": {
+          "key": "birthMonth-1440",
+          "width": 1440,
+          "empty_before_submit": {
+            "value": "",
+            "required": true,
+            "valid": false,
+            "value_missing": true,
+            "native_message": "이 입력란을 작성하세요.",
+            "is_focused": true
+          },
+          "post_count_after_empty": 0,
+          "posts_after_empty": [],
+          "form_still_open": true,
+          "native_missing_state": {
+            "value": "",
+            "required": true,
+            "valid": false,
+            "value_missing": true,
+            "native_message": "이 입력란을 작성하세요.",
+            "is_focused": true
+          },
+          "synthetic_successes": 0
+        },
+        "refill": {
+          "native_valid": true,
+          "synthetic_posts": 1,
+          "date": [
+            1995,
+            5,
+            15
+          ]
+        }
+      },
+      "pass": true
+    },
+    {
+      "name": "Empty birthDay is natively blocked and refill recovers 1440",
+      "observed": {
+        "empty_submission": {
+          "key": "birthDay-1440",
+          "width": 1440,
+          "empty_before_submit": {
+            "value": "",
+            "required": true,
+            "valid": false,
+            "value_missing": true,
+            "native_message": "이 입력란을 작성하세요.",
+            "is_focused": true
+          },
+          "post_count_after_empty": 0,
+          "posts_after_empty": [],
+          "form_still_open": true,
+          "native_missing_state": {
+            "value": "",
+            "required": true,
+            "valid": false,
+            "value_missing": true,
+            "native_message": "이 입력란을 작성하세요.",
+            "is_focused": true
+          },
+          "synthetic_successes": 0
+        },
+        "refill": {
+          "native_valid": true,
+          "synthetic_posts": 1,
+          "date": [
+            1995,
+            5,
+            15
+          ]
+        }
+      },
+      "pass": true
+    }
+  ],
+  "observations": [
+    {
+      "key": "birthYear-390",
+      "width": 390,
+      "empty_before_submit": {
+        "value": "",
+        "required": true,
+        "valid": false,
+        "value_missing": true,
+        "native_message": "이 입력란을 작성하세요.",
+        "is_focused": true
+      },
+      "post_count_after_empty": 0,
+      "posts_after_empty": [],
+      "form_still_open": true,
+      "native_missing_state": {
+        "value": "",
+        "required": true,
+        "valid": false,
+        "value_missing": true,
+        "native_message": "이 입력란을 작성하세요.",
+        "is_focused": true
+      },
+      "synthetic_successes": 0
+    },
+    {
+      "key": "birthMonth-390",
+      "width": 390,
+      "empty_before_submit": {
+        "value": "",
+        "required": true,
+        "valid": false,
+        "value_missing": true,
+        "native_message": "이 입력란을 작성하세요.",
+        "is_focused": true
+      },
+      "post_count_after_empty": 0,
+      "posts_after_empty": [],
+      "form_still_open": true,
+      "native_missing_state": {
+        "value": "",
+        "required": true,
+        "valid": false,
+        "value_missing": true,
+        "native_message": "이 입력란을 작성하세요.",
+        "is_focused": true
+      },
+      "synthetic_successes": 0
+    },
+    {
+      "key": "birthDay-390",
+      "width": 390,
+      "empty_before_submit": {
+        "value": "",
+        "required": true,
+        "valid": false,
+        "value_missing": true,
+        "native_message": "이 입력란을 작성하세요.",
+        "is_focused": true
+      },
+      "post_count_after_empty": 0,
+      "posts_after_empty": [],
+      "form_still_open": true,
+      "native_missing_state": {
+        "value": "",
+        "required": true,
+        "valid": false,
+        "value_missing": true,
+        "native_message": "이 입력란을 작성하세요.",
+        "is_focused": true
+      },
+      "synthetic_successes": 0
+    },
+    {
+      "key": "birthYear-1440",
+      "width": 1440,
+      "empty_before_submit": {
+        "value": "",
+        "required": true,
+        "valid": false,
+        "value_missing": true,
+        "native_message": "이 입력란을 작성하세요.",
+        "is_focused": true
+      },
+      "post_count_after_empty": 0,
+      "posts_after_empty": [],
+      "form_still_open": true,
+      "native_missing_state": {
+        "value": "",
+        "required": true,
+        "valid": false,
+        "value_missing": true,
+        "native_message": "이 입력란을 작성하세요.",
+        "is_focused": true
+      },
+      "synthetic_successes": 0
+    },
+    {
+      "key": "birthMonth-1440",
+      "width": 1440,
+      "empty_before_submit": {
+        "value": "",
+        "required": true,
+        "valid": false,
+        "value_missing": true,
+        "native_message": "이 입력란을 작성하세요.",
+        "is_focused": true
+      },
+      "post_count_after_empty": 0,
+      "posts_after_empty": [],
+      "form_still_open": true,
+      "native_missing_state": {
+        "value": "",
+        "required": true,
+        "valid": false,
+        "value_missing": true,
+        "native_message": "이 입력란을 작성하세요.",
+        "is_focused": true
+      },
+      "synthetic_successes": 0
+    },
+    {
+      "key": "birthDay-1440",
+      "width": 1440,
+      "empty_before_submit": {
+        "value": "",
+        "required": true,
+        "valid": false,
+        "value_missing": true,
+        "native_message": "이 입력란을 작성하세요.",
+        "is_focused": true
+      },
+      "post_count_after_empty": 0,
+      "posts_after_empty": [],
+      "form_still_open": true,
+      "native_missing_state": {
+        "value": "",
+        "required": true,
+        "valid": false,
+        "value_missing": true,
+        "native_message": "이 입력란을 작성하세요.",
+        "is_focused": true
+      },
+      "synthetic_successes": 0
+    }
+  ],
+  "synthetic_posts": [
+    {
+      "key": "complete-390",
+      "body": {
+        "name": "홍길동",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "key": "birthYear-390",
+      "body": {
+        "name": "홍길동",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "key": "birthMonth-390",
+      "body": {
+        "name": "홍길동",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "key": "birthDay-390",
+      "body": {
+        "name": "홍길동",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "key": "complete-1440",
+      "body": {
+        "name": "홍길동",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "key": "birthYear-1440",
+      "body": {
+        "name": "홍길동",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "key": "birthMonth-1440",
+      "body": {
+        "name": "홍길동",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "key": "birthDay-1440",
+      "body": {
+        "name": "홍길동",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    }
+  ],
+  "page_errors": [],
+  "console_errors": [],
+  "outbound_requests": [],
+  "actual_backend_requests": 0,
+  "database_operations": 0,
+  "native_pointer_and_keyboard": true,
+  "manual_dom_events": 0,
+  "previous_suites_rerun": 0,
+  "scope": "Actual production React/Tailwind SajuInputModal and native Chrome input/submit with fictional Hong Gildong. Only complete defaults and three separately empty birth-date fields plus refills at 390/1440px. All POSTs fulfilled at the synthetic browser boundary without contacting any backend or DB. Prior request lifecycle, home validation, gender, passport, collection and other QA not rerun. No full hosted route, real persistence, calculation accuracy or physical mobile device claim."
+}

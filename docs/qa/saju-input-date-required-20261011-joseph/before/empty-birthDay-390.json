@@ -1,0 +1,30 @@
+{
+  "key": "birthDay-390",
+  "width": 390,
+  "empty_before_submit": {
+    "value": "",
+    "required": false,
+    "valid": true,
+    "value_missing": false,
+    "native_message": "",
+    "is_focused": true
+  },
+  "post_count_after_empty": 1,
+  "posts_after_empty": [
+    {
+      "name": "홍길동",
+      "gender": "male",
+      "calendarType": "solar",
+      "birthYear": 1995,
+      "birthMonth": 5,
+      "birthDay": 0,
+      "birthHour": 13,
+      "birthMinute": 30,
+      "isUnknownTime": false,
+      "category": "overall"
+    }
+  ],
+  "form_still_open": false,
+  "native_missing_state": null,
+  "synthetic_successes": 1
+}
