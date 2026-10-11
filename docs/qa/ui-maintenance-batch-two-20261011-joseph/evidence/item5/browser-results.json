@@ -1,0 +1,458 @@
+{
+  "status": "PASS",
+  "phase": "item5",
+  "at_utc": "2026-10-11T03:01:00.167Z",
+  "browser": "154.0.8037.98",
+  "products": {
+    "components/SajuInputModal.tsx": "b309a761c60404360e164f46efe8c535ebf831d84c0bc08d335b30c05e9d8956",
+    "app/saved/page.tsx": "0d86e8fec1257881c16e841a6ce1aca3c48a7fcd6066388e56bd2b33fb19f4fc",
+    "app/guin/[id]/page.tsx": "bc95942c2d8d2c9ab9df2a5b324126a13e57cc7b01665df0128c44f9cd912a61"
+  },
+  "harness_sha256": "66d3a810e0b86a7e412ff4c0dd957ec51019d0be17975b657b346aa12900dfe8",
+  "css_sha256": "4e2f086b3fd0c53e4e5729a49947310046f415c5e7aa7ab4e0428ef8d8dd50ca",
+  "passed": 8,
+  "failed": 0,
+  "groups": {
+    "join": {
+      "passed": 8,
+      "failed": 0
+    }
+  },
+  "checks": [
+    {
+      "group": "join",
+      "name": "manual-valid 390",
+      "observed": {
+        "posts": 1,
+        "map_heading_visible": true,
+        "old_friend_visible": true,
+        "new_friend_visible": true,
+        "join_dialog_visible": false,
+        "draft": null,
+        "alerts": [
+          "검증주인님의 우리은하에 등록되었습니다! ✨"
+        ],
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "join",
+      "name": "manual-object-name 390",
+      "observed": {
+        "posts": 1,
+        "map_heading_visible": true,
+        "old_friend_visible": true,
+        "new_friend_visible": false,
+        "join_dialog_visible": true,
+        "draft": "가상 새 인연",
+        "alerts": [
+          "등록 중 오류가 발생했습니다."
+        ],
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "join",
+      "name": "quick-valid 390",
+      "observed": {
+        "posts": 1,
+        "map_heading_visible": true,
+        "old_friend_visible": true,
+        "new_friend_visible": true,
+        "join_dialog_visible": false,
+        "draft": null,
+        "alerts": [],
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "join",
+      "name": "quick-null-person 390",
+      "observed": {
+        "posts": 1,
+        "map_heading_visible": true,
+        "old_friend_visible": true,
+        "new_friend_visible": false,
+        "join_dialog_visible": false,
+        "draft": null,
+        "alerts": [
+          "등록 중 오류가 발생했습니다."
+        ],
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "join",
+      "name": "manual-valid 1440",
+      "observed": {
+        "posts": 1,
+        "map_heading_visible": true,
+        "old_friend_visible": true,
+        "new_friend_visible": true,
+        "join_dialog_visible": false,
+        "draft": null,
+        "alerts": [
+          "검증주인님의 우리은하에 등록되었습니다! ✨"
+        ],
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "join",
+      "name": "manual-object-name 1440",
+      "observed": {
+        "posts": 1,
+        "map_heading_visible": true,
+        "old_friend_visible": true,
+        "new_friend_visible": false,
+        "join_dialog_visible": true,
+        "draft": "가상 새 인연",
+        "alerts": [
+          "등록 중 오류가 발생했습니다."
+        ],
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "join",
+      "name": "quick-valid 1440",
+      "observed": {
+        "posts": 1,
+        "map_heading_visible": true,
+        "old_friend_visible": true,
+        "new_friend_visible": true,
+        "join_dialog_visible": false,
+        "draft": null,
+        "alerts": [],
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "join",
+      "name": "quick-null-person 1440",
+      "observed": {
+        "posts": 1,
+        "map_heading_visible": true,
+        "old_friend_visible": true,
+        "new_friend_visible": false,
+        "join_dialog_visible": false,
+        "draft": null,
+        "alerts": [
+          "등록 중 오류가 발생했습니다."
+        ],
+        "page_errors": []
+      },
+      "pass": true
+    }
+  ],
+  "observations": [
+    {
+      "group": "join",
+      "mode": "manual-valid",
+      "width": 390,
+      "posts": 1,
+      "map_heading_visible": true,
+      "old_friend_visible": true,
+      "new_friend_visible": true,
+      "join_dialog_visible": false,
+      "draft": null,
+      "alerts": [
+        "검증주인님의 우리은하에 등록되었습니다! ✨"
+      ],
+      "page_errors": []
+    },
+    {
+      "group": "join",
+      "mode": "manual-object-name",
+      "width": 390,
+      "posts": 1,
+      "map_heading_visible": true,
+      "old_friend_visible": true,
+      "new_friend_visible": false,
+      "join_dialog_visible": true,
+      "draft": "가상 새 인연",
+      "alerts": [
+        "등록 중 오류가 발생했습니다."
+      ],
+      "page_errors": []
+    },
+    {
+      "group": "join",
+      "mode": "quick-valid",
+      "width": 390,
+      "posts": 1,
+      "map_heading_visible": true,
+      "old_friend_visible": true,
+      "new_friend_visible": true,
+      "join_dialog_visible": false,
+      "draft": null,
+      "alerts": [],
+      "page_errors": []
+    },
+    {
+      "group": "join",
+      "mode": "quick-null-person",
+      "width": 390,
+      "posts": 1,
+      "map_heading_visible": true,
+      "old_friend_visible": true,
+      "new_friend_visible": false,
+      "join_dialog_visible": false,
+      "draft": null,
+      "alerts": [
+        "등록 중 오류가 발생했습니다."
+      ],
+      "page_errors": []
+    },
+    {
+      "group": "join",
+      "mode": "manual-valid",
+      "width": 1440,
+      "posts": 1,
+      "map_heading_visible": true,
+      "old_friend_visible": true,
+      "new_friend_visible": true,
+      "join_dialog_visible": false,
+      "draft": null,
+      "alerts": [
+        "검증주인님의 우리은하에 등록되었습니다! ✨"
+      ],
+      "page_errors": []
+    },
+    {
+      "group": "join",
+      "mode": "manual-object-name",
+      "width": 1440,
+      "posts": 1,
+      "map_heading_visible": true,
+      "old_friend_visible": true,
+      "new_friend_visible": false,
+      "join_dialog_visible": true,
+      "draft": "가상 새 인연",
+      "alerts": [
+        "등록 중 오류가 발생했습니다."
+      ],
+      "page_errors": []
+    },
+    {
+      "group": "join",
+      "mode": "quick-valid",
+      "width": 1440,
+      "posts": 1,
+      "map_heading_visible": true,
+      "old_friend_visible": true,
+      "new_friend_visible": true,
+      "join_dialog_visible": false,
+      "draft": null,
+      "alerts": [],
+      "page_errors": []
+    },
+    {
+      "group": "join",
+      "mode": "quick-null-person",
+      "width": 1440,
+      "posts": 1,
+      "map_heading_visible": true,
+      "old_friend_visible": true,
+      "new_friend_visible": false,
+      "join_dialog_visible": false,
+      "draft": null,
+      "alerts": [
+        "등록 중 오류가 발생했습니다."
+      ],
+      "page_errors": []
+    }
+  ],
+  "page_errors": [],
+  "console_errors": [],
+  "expected_console_errors": [],
+  "outbound_requests": [],
+  "synthetic_gets": [
+    {
+      "group": "join",
+      "mode": "manual-valid",
+      "width": 390,
+      "endpoint": "guin"
+    },
+    {
+      "group": "join",
+      "mode": "manual-object-name",
+      "width": 390,
+      "endpoint": "guin"
+    },
+    {
+      "group": "join",
+      "mode": "quick-valid",
+      "width": 390,
+      "endpoint": "guin"
+    },
+    {
+      "group": "join",
+      "mode": "quick-null-person",
+      "width": 390,
+      "endpoint": "guin"
+    },
+    {
+      "group": "join",
+      "mode": "manual-valid",
+      "width": 1440,
+      "endpoint": "guin"
+    },
+    {
+      "group": "join",
+      "mode": "manual-object-name",
+      "width": 1440,
+      "endpoint": "guin"
+    },
+    {
+      "group": "join",
+      "mode": "quick-valid",
+      "width": 1440,
+      "endpoint": "guin"
+    },
+    {
+      "group": "join",
+      "mode": "quick-null-person",
+      "width": 1440,
+      "endpoint": "guin"
+    }
+  ],
+  "synthetic_posts": [
+    {
+      "group": "join",
+      "mode": "manual-valid",
+      "width": 390,
+      "endpoint": "guin",
+      "body": {
+        "friendName": "가상 새 인연",
+        "birthYear": "1997",
+        "birthMonth": "3",
+        "birthDay": "10",
+        "birthHour": "10",
+        "birthMinute": "30",
+        "isUnknownTime": false
+      }
+    },
+    {
+      "group": "join",
+      "mode": "manual-object-name",
+      "width": 390,
+      "endpoint": "guin",
+      "body": {
+        "friendName": "가상 새 인연",
+        "birthYear": "1997",
+        "birthMonth": "3",
+        "birthDay": "10",
+        "birthHour": "10",
+        "birthMinute": "30",
+        "isUnknownTime": false
+      }
+    },
+    {
+      "group": "join",
+      "mode": "quick-valid",
+      "width": 390,
+      "endpoint": "guin",
+      "body": {
+        "friendName": "민준2",
+        "birthYear": 1998,
+        "birthMonth": 2,
+        "birthDay": 2,
+        "birthHour": 1,
+        "birthMinute": 35,
+        "isUnknownTime": false
+      }
+    },
+    {
+      "group": "join",
+      "mode": "quick-null-person",
+      "width": 390,
+      "endpoint": "guin",
+      "body": {
+        "friendName": "민준2",
+        "birthYear": 1996,
+        "birthMonth": 6,
+        "birthDay": 10,
+        "birthHour": 16,
+        "birthMinute": 50,
+        "isUnknownTime": false
+      }
+    },
+    {
+      "group": "join",
+      "mode": "manual-valid",
+      "width": 1440,
+      "endpoint": "guin",
+      "body": {
+        "friendName": "가상 새 인연",
+        "birthYear": "1997",
+        "birthMonth": "3",
+        "birthDay": "10",
+        "birthHour": "10",
+        "birthMinute": "30",
+        "isUnknownTime": false
+      }
+    },
+    {
+      "group": "join",
+      "mode": "manual-object-name",
+      "width": 1440,
+      "endpoint": "guin",
+      "body": {
+        "friendName": "가상 새 인연",
+        "birthYear": "1997",
+        "birthMonth": "3",
+        "birthDay": "10",
+        "birthHour": "10",
+        "birthMinute": "30",
+        "isUnknownTime": false
+      }
+    },
+    {
+      "group": "join",
+      "mode": "quick-valid",
+      "width": 1440,
+      "endpoint": "guin",
+      "body": {
+        "friendName": "도윤2",
+        "birthYear": 2000,
+        "birthMonth": 3,
+        "birthDay": 23,
+        "birthHour": 1,
+        "birthMinute": 33,
+        "isUnknownTime": false
+      }
+    },
+    {
+      "group": "join",
+      "mode": "quick-null-person",
+      "width": 1440,
+      "endpoint": "guin",
+      "body": {
+        "friendName": "지안2",
+        "birthYear": 1994,
+        "birthMonth": 11,
+        "birthDay": 8,
+        "birthHour": 0,
+        "birthMinute": 17,
+        "isUnknownTime": false
+      }
+    }
+  ],
+  "actual_backend_requests": 0,
+  "database_operations": 0,
+  "actual_ai_provider_calls": 0,
+  "user_clipboard_access": 0,
+  "native_pointer_and_keyboard": true,
+  "manual_dom_events": 0,
+  "previous_completed_suites_rerun": 0,
+  "previous_completed_fixes_counted": 0,
+  "scope": "Production SajuInputModal, saved list category chips, and Guin POST friend-map consumption with fictional intercepted APIs at 390x844 and 1440x1000. Host fixture, next/navigation and next/link are fixed test boundaries; only heavy GalaxyCanvas is blank. No backend/DB/Gemini/user storage or clipboard/3D/hosted route/physical device claim. Prior completed UI/model suites excluded."
+}

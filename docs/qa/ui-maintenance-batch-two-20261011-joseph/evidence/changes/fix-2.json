@@ -1,0 +1,24 @@
+{
+  "status": "APPLIED_REPRODUCED_FIX_AWAITING_OWN_FOCUSED_BROWSER_PROOF",
+  "at_utc": "2026-10-11T02:57:42.822Z",
+  "number": 2,
+  "id": "saju-input-close-accessible-name",
+  "group": "close",
+  "file": "components/SajuInputModal.tsx",
+  "expected": 4,
+  "change": "Give the existing X close control an explicit name and button type; preserve pointer closing and permit native Tab/Enter identification.",
+  "before_sha256": "014d78b2613b4d97192e19119b309cd0b2768b70dd3bc6d55e3b3e9e76418426",
+  "after_sha256": "5dfad61f027020e669944964934721f223ee7f73b98f0525417dde33795bcae0",
+  "before_bytes": 14521,
+  "after_bytes": 14595,
+  "inverse_native_bytes_verified": true,
+  "replacements": [
+    {
+      "before": "<button\r\n            onClick={onClose}",
+      "after": "<button\r\n            type=\"button\"\r\n            aria-label=\"사주 입력 닫기\"\r\n            onClick={onClose}",
+      "count": 1
+    }
+  ],
+  "commit_created": false,
+  "push_performed": false
+}

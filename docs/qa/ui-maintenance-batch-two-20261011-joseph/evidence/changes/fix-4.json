@@ -1,0 +1,29 @@
+{
+  "status": "APPLIED_REPRODUCED_FIX_AWAITING_OWN_FOCUSED_BROWSER_PROOF",
+  "at_utc": "2026-10-11T03:00:39.680Z",
+  "number": 4,
+  "id": "saved-category-selection-state",
+  "group": "filter",
+  "file": "app/saved/page.tsx",
+  "expected": 4,
+  "change": "Expose the currently selected archive category with aria-pressed on existing chips; preserve pointer filtering and support native Space/Enter selection and reset.",
+  "before_sha256": "2498425ac485e328ef7846fa06d5e1dd1de5dad42a87bc2527393714688aefb7",
+  "after_sha256": "0d86e8fec1257881c16e841a6ce1aca3c48a7fcd6066388e56bd2b33fb19f4fc",
+  "before_bytes": 14534,
+  "after_bytes": 14654,
+  "inverse_native_bytes_verified": true,
+  "replacements": [
+    {
+      "before": "                onClick={() => setSelectedCategory(\"all\")}",
+      "after": "                aria-pressed={selectedCategory === \"all\"}\r\n                onClick={() => setSelectedCategory(\"all\")}",
+      "count": 1
+    },
+    {
+      "before": "                    onClick={() => setSelectedCategory(key)}",
+      "after": "                    aria-pressed={selectedCategory === key}\r\n                    onClick={() => setSelectedCategory(key)}",
+      "count": 1
+    }
+  ],
+  "commit_created": false,
+  "push_performed": false
+}

@@ -1,0 +1,19 @@
+{
+  "status": "PASS_ACTUAL_NONSECRET_PROJECT_RESOURCE_IDENTIFIER_FORMAT_CONFIRMED",
+  "bytes": 91,
+  "known_keys_only": [
+    "d1",
+    "r2",
+    "project_id"
+  ],
+  "binding_names_only": true,
+  "project_id_length": 40,
+  "project_id_ascii_resource_identifier": true,
+  "project_id_uuid": false,
+  "prior_v4_uuid_assumption_incorrect_and_stopped_before_write": true,
+  "prior_schema_diagnostic_superseded_for_id_format": true,
+  "original_failed_helpers_retained": true,
+  "raw_values_not_printed_or_packaged": true,
+  "auth_billing_permission_database_or_product_change": false,
+  "new_fix_count_added": 0
+}

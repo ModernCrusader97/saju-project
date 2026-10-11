@@ -1,0 +1,14 @@
+{
+  "status": "PASS_OWN_NEW_EVIDENCE_ONLY_RAW_BYTE_PRESERVATION_ATTRIBUTES",
+  "at_utc": "2026-10-11T03:29:40.7464497Z",
+  "scope": "docs/qa/ui-maintenance-batch-two-20261011-joseph",
+  "previous_attributes": "* -text",
+  "previous_sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+  "new_sha256": "39a5f7fcc58355e3b0470d7f05f06c805f9589efbecd5daeb2a81973005afe6b",
+  "reason": "Raw build logs and before/after native source contain preexisting formatting; keep original bytes and treat only those recorded artifacts as binary diffs, as already done for logs in the previous evidence scope.",
+  "raw_native_or_log_bytes_edited": 0,
+  "product_diff_or_whitespace_check_disabled": false,
+  "lint_rules_or_suppressions_changed": false,
+  "global_git_config_changed": false,
+  "previous_completed_scope_changed": false
+}

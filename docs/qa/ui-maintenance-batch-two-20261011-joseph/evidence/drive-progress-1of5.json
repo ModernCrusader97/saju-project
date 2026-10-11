@@ -1,0 +1,22 @@
+{
+  "status": "PASS_PRIVATE_NEW_DRIVE_INTERMEDIATE_1OF5_METADATA_VERIFIED",
+  "validated_new_fix_count": 1,
+  "commit_batch_target": 5,
+  "commit_created": false,
+  "push_performed": false,
+  "local_path": "D:/Codex/Results/SaJuUiBatchTwo-20261011-Joseph/SaJu_UI_Batch2_Progress_1of5_20261011_Joseph_343e3c3e.zip",
+  "bytes": 3234580,
+  "local_sha256": "920bb24196441ed0dbe8b4f3947b4b621b04d89854bc39cf7d6354ae5e1cda98",
+  "id": "1Ucdh6ksn04749nqznFNcQ1L278nEywkE",
+  "url": "https://drive.google.com/file/d/1Ucdh6ksn04749nqznFNcQ1L278nEywkE/view?usp=drivesdk",
+  "shared": false,
+  "permissions": [
+    {
+      "type": "user",
+      "role": "owner"
+    }
+  ],
+  "owner_only": true,
+  "size_metadata_verified": true,
+  "remote_drive_bytes_independently_rehashed": false
+}

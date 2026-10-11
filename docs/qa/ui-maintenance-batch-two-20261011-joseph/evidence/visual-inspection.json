@@ -1,0 +1,21 @@
+{
+  "status": "PASS_DIRECT_ACTUAL_CHROME_UI_PIXEL_INSPECTION",
+  "at_utc": "2026-10-11T03:12:34.903Z",
+  "generated_images": 0,
+  "edited_or_masked_images": 0,
+  "images": [
+    {
+      "path": "D:/Codex/Results/SaJuUiBatchTwo-20261011-Joseph/final/dialog-normal-390.png",
+      "observed": "At 390x844 the real input pane shows its heading, close focus ring, name, gender, calendar, date, time, question and submit controls; no text or footer clipping is visible."
+    },
+    {
+      "path": "D:/Codex/Results/SaJuUiBatchTwo-20261011-Joseph/final/join-manual-object-name-390.png",
+      "observed": "Malformed friend POST retains the existing two-person fictional map and the open form containing the fictional friend draft. The native failure alert is separately captured and dismissed in the browser report, not painted in this PNG."
+    },
+    {
+      "path": "D:/Codex/Results/SaJuUiBatchTwo-20261011-Joseph/final/filter-selected-keyboard-1440.png",
+      "observed": "At 1440x1000 the real archive shows the focused love filter and exactly its matching fictional record."
+    }
+  ],
+  "limits": "Actual production React/Tailwind component pixels under isolated fictional API responses. Host and Next routing fixtures, empty GalaxyCanvas. No generated art, 3D/model, hosted route or physical-device acceptance."
+}

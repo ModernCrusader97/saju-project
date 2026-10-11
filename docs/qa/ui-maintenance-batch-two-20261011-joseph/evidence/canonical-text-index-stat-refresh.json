@@ -1,0 +1,47 @@
+{
+  "status": "PASS_FOUR_UNCHANGED_CANONICAL_TEXT_INDEX_STAT_ENTRIES_REFRESHED",
+  "at_utc": "2026-10-11T03:32:04.484Z",
+  "basis": "343e3c3ee2ca91f42eafe7e14fbae1b91c0e5893",
+  "failed_prepare_guard": "Unexpected WIP must be preserved instead of staged; stopped before staging or commit.",
+  "diagnosis": "Working LF bytes and filtered/index blob hashes matched basis exactly; raw Git status showed four stat-cache modifications while diff --numstat was empty.",
+  "first_hash_only_diagnostic_helper": "Relative Git sparse path was incorrectly resolved from shell cwd; helper stopped before file/index writes. Corrected to resolve against the actual repo.",
+  "files": [
+    {
+      "file": ".openai/hosting.json",
+      "bytes": 91,
+      "sha256": "9e1fb7eef4d729865c16d638f731f2f37d27bbec12a3345e48cdc44d51dd1f6f",
+      "basis_blob": "38e0db4fb5cfcb7b6e490216c0ca4dfbf9d4d2a1"
+    },
+    {
+      "file": "assets/source-reference/saju-b-evolving-light-v002/SHA256SUMS.txt",
+      "bytes": 4521,
+      "sha256": "a8c57385c849549a44baa66ed802a2ee3f1d8a12a4b6afb8c21915241978927f",
+      "basis_blob": "8df9ad425ccd6729fc9d8f4aea9300b4effb058a"
+    },
+    {
+      "file": "assets/source-reference/saju-b-evolving-light-v002/runtime/saju-jade-evolution.glsl",
+      "bytes": 4041,
+      "sha256": "7cfc8ad83f76f8b9505db1e0e38e94bd9ebd7b0c4282a686016c06a09e96255f",
+      "basis_blob": "4fb94fcf27dcd2eb398667c46adfb3a1181caa0a"
+    },
+    {
+      "file": "assets/source-reference/saju-b-evolving-light-v002/runtime/saju-jade-evolution.mjs",
+      "bytes": 5678,
+      "sha256": "b92ffe42be37a8c52427ec6c104a56eb828c4e7f6a02b7d368b72921a46a9e7c",
+      "basis_blob": "a58820dc3f6ff3a817afa1a1a1729ff0710669c3"
+    }
+  ],
+  "targeted_git_add_sparse_on_identical_blobs_only": true,
+  "staged_diff_after_refresh_empty": true,
+  "source_file_byte_edits": 0,
+  "hosting_config_value_changes": 0,
+  "sparse_config_byte_changes": 0,
+  "commit_or_push_during_refresh": 0,
+  "new_fix_count": 0,
+  "tracked_actual_product_wip_after": [
+    "app/guin/[id]/page.tsx",
+    "app/saved/page.tsx",
+    "components/SajuInputModal.tsx"
+  ],
+  "limits": "Hash-only classified nonsecret project binding metadata verification. No raw hosting values recorded."
+}

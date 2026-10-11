@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+const work='D:/Codex/Work/SaJuUiBatchTwo-20261011-Joseph',results='D:/Codex/Results/SaJuUiBatchTwo-20261011-Joseph';
+const original=fs.readFileSync(work+'/authoring/batch_two_browser.mjs','utf8'),needle="{waitUntil:'networkidle'});await page.waitForFunction";
+assert.equal(original.split(needle).length-1,1);const corrected=original.replace(needle,"{waitUntil:'networkidle',timeout:30000});await page.waitForFunction");
+fs.writeFileSync(work+'/authoring/batch_two_browser_v2.mjs',corrected,{flag:'wx'});
+const runner=fs.readFileSync(work+'/authoring/run_batch_two_browser.mjs','utf8');assert(runner.includes("['before','item1'"));assert(runner.includes("if(phase==='before')"));assert(runner.includes("[work+'/authoring/batch_two_browser.mjs']"));
+const correctedRunner=runner.replace("['before','item1'","['before','before-v2','item1'").replace("if(phase==='before')","if(phase==='before'||phase==='before-v2')").replace("[work+'/authoring/batch_two_browser.mjs']","[work+'/authoring/batch_two_browser_v2.mjs']");fs.writeFileSync(work+'/authoring/run_batch_two_browser_v2.mjs',correctedRunner,{flag:'wx'});
+const raw=JSON.parse(fs.readFileSync(results+'/before/browser-results.json','utf8')),sha=data=>createHash('sha256').update(data).digest('hex');
+assert.equal(raw.checks.filter(item=>!item.pass&&item.error.includes('page.goto: Timeout')).length,1);
+fs.writeFileSync(results+'/harness-navigation-timeout-diagnostic.json',JSON.stringify({status:'PRESERVED_V1_COLD_NAVIGATION_TIMEOUT_SEPARATE_FROM_REPRODUCED_PRODUCT_FAILURES',original_harness_sha256:sha(Buffer.from(original)),corrected_harness_sha256:sha(Buffer.from(corrected)),only_harness_change:'Raise page.goto networkidle navigation timeout from inherited 4 seconds to explicit 30 seconds. All case assertions, fixture responses, native inputs and boundaries are unchanged.',raw_first_before_passed:raw.passed,raw_first_before_failed:raw.failed,cold_navigation_timeouts:1,product_failures_reproduced:14,previous_completed_items_or_suites_rerun:0,product_edits_before_corrected_baseline:0,raw_report_preserved:results+'/before/browser-results.json'},null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify({status:'PASS_V1_FAILURE_RETAINED_V2_ONLY_NAVIGATION_BUDGET_CHANGED',product_edits:0,original_report:results+'/before/browser-results.json'}));

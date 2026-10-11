@@ -1,0 +1,39 @@
+{
+  "status": "PASS_FIVE_CANONICAL_RUNTIME_ASSET_BYTES_PRESERVED_AFTER_BUILD",
+  "outputs": [
+    {
+      "file": "public/spirits/jade-v002/body.glb",
+      "existed_before": true,
+      "canonical_sha256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+      "before_sha256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84"
+    },
+    {
+      "file": "public/spirits/jade-v002/fields.png",
+      "existed_before": true,
+      "canonical_sha256": "3175c131be983bd985b8018c191d3a25c9ce00ea20baa31bbb2772833b9a5bd0",
+      "before_sha256": "3175c131be983bd985b8018c191d3a25c9ce00ea20baa31bbb2772833b9a5bd0"
+    },
+    {
+      "file": "public/spirits/jade-v002/base-color.png",
+      "existed_before": true,
+      "canonical_sha256": "29bdd5ab8a2c87715fd3aedae3f0465c8b6910b5a9c0e8b8bffeb84a03c6b824",
+      "before_sha256": "29bdd5ab8a2c87715fd3aedae3f0465c8b6910b5a9c0e8b8bffeb84a03c6b824"
+    },
+    {
+      "file": "public/spirits/jade-v002/still.png",
+      "existed_before": true,
+      "canonical_sha256": "f17790815107c4c5d751df92050c3e00c6c597f95843dfcd1b2c6c39c7735c54",
+      "before_sha256": "f17790815107c4c5d751df92050c3e00c6c597f95843dfcd1b2c6c39c7735c54"
+    },
+    {
+      "file": "public/models/porcelain-hero-blink-v1.glb",
+      "existed_before": true,
+      "canonical_sha256": "57d7ee5b3c4e0b99eaadefb8095283bed44986beaa5a91c096dd7a0c514bf9c2",
+      "before_sha256": "57d7ee5b3c4e0b99eaadefb8095283bed44986beaa5a91c096dd7a0c514bf9c2"
+    }
+  ],
+  "all_present_original_bytes_identical": true,
+  "model_or_default_change": false,
+  "restoration_new_fix_count": 0,
+  "previous_art_tests_rerun": 0
+}

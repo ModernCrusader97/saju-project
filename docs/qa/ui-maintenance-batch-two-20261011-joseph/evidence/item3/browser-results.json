@@ -1,0 +1,171 @@
+{
+  "status": "PASS",
+  "phase": "item3",
+  "at_utc": "2026-10-11T02:59:07.864Z",
+  "browser": "154.0.8037.98",
+  "products": {
+    "components/SajuInputModal.tsx": "b309a761c60404360e164f46efe8c535ebf831d84c0bc08d335b30c05e9d8956",
+    "app/saved/page.tsx": "2498425ac485e328ef7846fa06d5e1dd1de5dad42a87bc2527393714688aefb7",
+    "app/guin/[id]/page.tsx": "fa83ace810ccce8f166af7282705684573c2f6c9f81cdaaa4f8952c38700f29a"
+  },
+  "harness_sha256": "66d3a810e0b86a7e412ff4c0dd957ec51019d0be17975b657b346aa12900dfe8",
+  "css_sha256": "4e2f086b3fd0c53e4e5729a49947310046f415c5e7aa7ab4e0428ef8d8dd50ca",
+  "passed": 4,
+  "failed": 0,
+  "groups": {
+    "dialog": {
+      "passed": 4,
+      "failed": 0
+    }
+  },
+  "checks": [
+    {
+      "group": "dialog",
+      "name": "normal 390",
+      "observed": {
+        "named_modal_count": 1,
+        "aria_modal": "true",
+        "initial_name_focus": true,
+        "backward_wraps_to_submit": true,
+        "forward_wraps_to_close": true,
+        "escape_restores_opener": true
+      },
+      "pass": true
+    },
+    {
+      "group": "dialog",
+      "name": "busy 390",
+      "observed": {
+        "named_modal_count": 1,
+        "aria_modal": "true",
+        "initial_name_focus": true,
+        "busy_focus_contained": true,
+        "busy_tab_contained": true,
+        "failed_save_focus_contained": true,
+        "failed_save_draft": "가상 입력"
+      },
+      "pass": true
+    },
+    {
+      "group": "dialog",
+      "name": "normal 1440",
+      "observed": {
+        "named_modal_count": 1,
+        "aria_modal": "true",
+        "initial_name_focus": true,
+        "backward_wraps_to_submit": true,
+        "forward_wraps_to_close": true,
+        "escape_restores_opener": true
+      },
+      "pass": true
+    },
+    {
+      "group": "dialog",
+      "name": "busy 1440",
+      "observed": {
+        "named_modal_count": 1,
+        "aria_modal": "true",
+        "initial_name_focus": true,
+        "busy_focus_contained": true,
+        "busy_tab_contained": true,
+        "failed_save_focus_contained": true,
+        "failed_save_draft": "가상 입력"
+      },
+      "pass": true
+    }
+  ],
+  "observations": [
+    {
+      "group": "dialog",
+      "mode": "normal",
+      "width": 390,
+      "named_modal_count": 1,
+      "aria_modal": "true",
+      "initial_name_focus": true,
+      "backward_wraps_to_submit": true,
+      "forward_wraps_to_close": true
+    },
+    {
+      "group": "dialog",
+      "mode": "busy",
+      "width": 390,
+      "named_modal_count": 1,
+      "aria_modal": "true",
+      "initial_name_focus": true,
+      "busy_focus_contained": true,
+      "busy_tab_contained": true
+    },
+    {
+      "group": "dialog",
+      "mode": "normal",
+      "width": 1440,
+      "named_modal_count": 1,
+      "aria_modal": "true",
+      "initial_name_focus": true,
+      "backward_wraps_to_submit": true,
+      "forward_wraps_to_close": true
+    },
+    {
+      "group": "dialog",
+      "mode": "busy",
+      "width": 1440,
+      "named_modal_count": 1,
+      "aria_modal": "true",
+      "initial_name_focus": true,
+      "busy_focus_contained": true,
+      "busy_tab_contained": true
+    }
+  ],
+  "page_errors": [],
+  "console_errors": [],
+  "expected_console_errors": [],
+  "outbound_requests": [],
+  "synthetic_gets": [],
+  "synthetic_posts": [
+    {
+      "group": "dialog",
+      "mode": "busy",
+      "width": 390,
+      "endpoint": "saju",
+      "body": {
+        "name": "가상 입력",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "dialog",
+      "mode": "busy",
+      "width": 1440,
+      "endpoint": "saju",
+      "body": {
+        "name": "가상 입력",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    }
+  ],
+  "actual_backend_requests": 0,
+  "database_operations": 0,
+  "actual_ai_provider_calls": 0,
+  "user_clipboard_access": 0,
+  "native_pointer_and_keyboard": true,
+  "manual_dom_events": 0,
+  "previous_completed_suites_rerun": 0,
+  "previous_completed_fixes_counted": 0,
+  "scope": "Production SajuInputModal, saved list category chips, and Guin POST friend-map consumption with fictional intercepted APIs at 390x844 and 1440x1000. Host fixture, next/navigation and next/link are fixed test boundaries; only heavy GalaxyCanvas is blank. No backend/DB/Gemini/user storage or clipboard/3D/hosted route/physical device claim. Prior completed UI/model suites excluded."
+}

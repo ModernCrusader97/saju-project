@@ -1,0 +1,495 @@
+{
+  "status": "PASS_FIVE_NEW_DISTINCT_UI_FIXES_READY_FOR_ONE_BATCH_COMMIT",
+  "at_utc": "2026-10-11T03:23:31.485Z",
+  "host": "Joseph",
+  "branch": "fix/ui-maintenance-batch-two-20261011-joseph",
+  "basis": "343e3c3ee2ca91f42eafe7e14fbae1b91c0e5893",
+  "validated_new_fix_count": 5,
+  "commit_batch_target": 5,
+  "fixes": [
+    {
+      "number": 1,
+      "id": "saju-post-http-error-false-success",
+      "file": "components/SajuInputModal.tsx",
+      "change": "Require response.ok before invoking the existing success callback or closing the Saju input draft. Non-2xx success-shaped JSON follows the existing error path and permits manual retry.",
+      "before_reproduction": {
+        "passed": 4,
+        "failed": 2
+      },
+      "after_focused_verification": {
+        "passed": 6,
+        "failed": 0
+      },
+      "browser": "154.0.8037.98",
+      "viewports": [
+        "390x844",
+        "1440x1000"
+      ],
+      "native_pointer_and_keyboard": true,
+      "manual_dom_events": 0,
+      "before_sha256": "7afc6b2bbd8d1bf77460f0891da405457c79b7309da853eb6d996b98cc2c8533",
+      "after_sha256": "014d78b2613b4d97192e19119b309cd0b2768b70dd3bc6d55e3b3e9e76418426",
+      "inverse_native_bytes_verified": true,
+      "proof": "D:/Codex/Results/SaJuUiBatchTwo-20261011-Joseph/item1/browser-results.json"
+    },
+    {
+      "number": 2,
+      "id": "saju-input-close-accessible-name",
+      "file": "components/SajuInputModal.tsx",
+      "change": "Give the existing X close control an explicit name and button type; preserve pointer closing and permit native Tab/Enter identification.",
+      "before_reproduction": {
+        "passed": 2,
+        "failed": 2
+      },
+      "after_focused_verification": {
+        "passed": 4,
+        "failed": 0
+      },
+      "browser": "154.0.8037.98",
+      "viewports": [
+        "390x844",
+        "1440x1000"
+      ],
+      "native_pointer_and_keyboard": true,
+      "manual_dom_events": 0,
+      "before_sha256": "014d78b2613b4d97192e19119b309cd0b2768b70dd3bc6d55e3b3e9e76418426",
+      "after_sha256": "5dfad61f027020e669944964934721f223ee7f73b98f0525417dde33795bcae0",
+      "inverse_native_bytes_verified": true,
+      "proof": "D:/Codex/Results/SaJuUiBatchTwo-20261011-Joseph/item2/browser-results.json"
+    },
+    {
+      "number": 3,
+      "id": "saju-input-dialog-keyboard",
+      "file": "components/SajuInputModal.tsx",
+      "change": "Name the input pane as a modal dialog, focus its first input, contain native Tab/Shift+Tab, restore the opener, and keep focus inside when submission temporarily removes the form.",
+      "before_reproduction": {
+        "passed": 0,
+        "failed": 4
+      },
+      "after_focused_verification": {
+        "passed": 4,
+        "failed": 0
+      },
+      "browser": "154.0.8037.98",
+      "viewports": [
+        "390x844",
+        "1440x1000"
+      ],
+      "native_pointer_and_keyboard": true,
+      "manual_dom_events": 0,
+      "before_sha256": "5dfad61f027020e669944964934721f223ee7f73b98f0525417dde33795bcae0",
+      "after_sha256": "b309a761c60404360e164f46efe8c535ebf831d84c0bc08d335b30c05e9d8956",
+      "inverse_native_bytes_verified": true,
+      "proof": "D:/Codex/Results/SaJuUiBatchTwo-20261011-Joseph/item3/browser-results.json"
+    },
+    {
+      "number": 4,
+      "id": "saved-category-selection-state",
+      "file": "app/saved/page.tsx",
+      "change": "Expose the currently selected archive category with aria-pressed on existing chips; preserve pointer filtering and support native Space/Enter selection and reset.",
+      "before_reproduction": {
+        "passed": 2,
+        "failed": 2
+      },
+      "after_focused_verification": {
+        "passed": 4,
+        "failed": 0
+      },
+      "browser": "154.0.8037.98",
+      "viewports": [
+        "390x844",
+        "1440x1000"
+      ],
+      "native_pointer_and_keyboard": true,
+      "manual_dom_events": 0,
+      "before_sha256": "2498425ac485e328ef7846fa06d5e1dd1de5dad42a87bc2527393714688aefb7",
+      "after_sha256": "0d86e8fec1257881c16e841a6ce1aca3c48a7fcd6066388e56bd2b33fb19f4fc",
+      "inverse_native_bytes_verified": true,
+      "proof": "D:/Codex/Results/SaJuUiBatchTwo-20261011-Joseph/item4/browser-results.json"
+    },
+    {
+      "number": 5,
+      "id": "guin-post-person-map-shape",
+      "file": "app/guin/[id]/page.tsx",
+      "change": "Validate the POST friend map before acknowledging either manual or quick addition, retaining the current map and manual draft on malformed people. Existing GET validation stays byte-identical.",
+      "before_reproduction": {
+        "passed": 4,
+        "failed": 4
+      },
+      "after_focused_verification": {
+        "passed": 8,
+        "failed": 0
+      },
+      "browser": "154.0.8037.98",
+      "viewports": [
+        "390x844",
+        "1440x1000"
+      ],
+      "native_pointer_and_keyboard": true,
+      "manual_dom_events": 0,
+      "before_sha256": "fa83ace810ccce8f166af7282705684573c2f6c9f81cdaaa4f8952c38700f29a",
+      "after_sha256": "bc95942c2d8d2c9ab9df2a5b324126a13e57cc7b01665df0128c44f9cd912a61",
+      "inverse_native_bytes_verified": true,
+      "proof": "D:/Codex/Results/SaJuUiBatchTwo-20261011-Joseph/item5/browser-results.json"
+    }
+  ],
+  "new_native_cases": {
+    "before_passed": 12,
+    "before_failed": 14,
+    "before_page_errors": 4,
+    "final_passed": 26,
+    "final_failed": 0,
+    "final_page_errors": 0,
+    "final_unexpected_console_errors": 0,
+    "intended_synthetic_http503_console_diagnostics": 2
+  },
+  "focused_native_cases": 26,
+  "current_batch_final_regression_cases": 26,
+  "current_batch_types_exit": 0,
+  "current_batch_production_build_exit": 0,
+  "lint": {
+    "existing_errors": 4,
+    "existing_warnings": 6,
+    "new_errors": 0,
+    "new_warnings": 0,
+    "qa_errors": 0,
+    "qa_warnings": 0,
+    "rules_or_suppressions_changed": false
+  },
+  "visual": {
+    "status": "PASS_ALL_EIGHT_UNCHANGED_NORMAL_UI_PNG_BYTES",
+    "normal_pngs": [
+      {
+        "file": "close-pointer-control-390.png",
+        "bytes": 39635,
+        "before_sha256": "51304c1a8f402bfed008c7ee1008f329adae597c0135f89eb5a25714340d6b55",
+        "final_sha256": "51304c1a8f402bfed008c7ee1008f329adae597c0135f89eb5a25714340d6b55",
+        "byte_identical": true
+      },
+      {
+        "file": "filter-pointer-control-390.png",
+        "bytes": 25566,
+        "before_sha256": "6dc6d65d90e4e67cec738aa9e1af552f0eaa04eb246d350636950e539479156e",
+        "final_sha256": "6dc6d65d90e4e67cec738aa9e1af552f0eaa04eb246d350636950e539479156e",
+        "byte_identical": true
+      },
+      {
+        "file": "join-manual-valid-390.png",
+        "bytes": 133742,
+        "before_sha256": "144c496b1777d859eab61b3dc844194092a29396ae2490166a9199aea655dfbd",
+        "final_sha256": "144c496b1777d859eab61b3dc844194092a29396ae2490166a9199aea655dfbd",
+        "byte_identical": true
+      },
+      {
+        "file": "join-quick-valid-390.png",
+        "bytes": 133742,
+        "before_sha256": "144c496b1777d859eab61b3dc844194092a29396ae2490166a9199aea655dfbd",
+        "final_sha256": "144c496b1777d859eab61b3dc844194092a29396ae2490166a9199aea655dfbd",
+        "byte_identical": true
+      },
+      {
+        "file": "close-pointer-control-1440.png",
+        "bytes": 51267,
+        "before_sha256": "f348ecf22e06fe878db27a52163a2ef6cf5ed62edc696cbd8f89b52faddc363f",
+        "final_sha256": "f348ecf22e06fe878db27a52163a2ef6cf5ed62edc696cbd8f89b52faddc363f",
+        "byte_identical": true
+      },
+      {
+        "file": "filter-pointer-control-1440.png",
+        "bytes": 34265,
+        "before_sha256": "280df2ffb9047a598b164f59c10a7d4ab85470e8cdff3b21ec770aef25167b48",
+        "final_sha256": "280df2ffb9047a598b164f59c10a7d4ab85470e8cdff3b21ec770aef25167b48",
+        "byte_identical": true
+      },
+      {
+        "file": "join-manual-valid-1440.png",
+        "bytes": 195858,
+        "before_sha256": "4910135a5f40720a0713800a370e310b0fd7d78d94c44df2ca8f0f7f33230903",
+        "final_sha256": "4910135a5f40720a0713800a370e310b0fd7d78d94c44df2ca8f0f7f33230903",
+        "byte_identical": true
+      },
+      {
+        "file": "join-quick-valid-1440.png",
+        "bytes": 195814,
+        "before_sha256": "0c5d5e6e7000f7bb1c7fcf4b312fc6fdaf23e72e08da34df98b97ed518a49f67",
+        "final_sha256": "0c5d5e6e7000f7bb1c7fcf4b312fc6fdaf23e72e08da34df98b97ed518a49f67",
+        "byte_identical": true
+      }
+    ],
+    "byte_identical_count": 8,
+    "css_sha256_before": "4e2f086b3fd0c53e4e5729a49947310046f415c5e7aa7ab4e0428ef8d8dd50ca",
+    "css_sha256_final": "4e2f086b3fd0c53e4e5729a49947310046f415c5e7aa7ab4e0428ef8d8dd50ca",
+    "css_bytes_identical": true,
+    "altered_images_or_masking": 0,
+    "generated_images": 0
+  },
+  "source_inverse": [
+    {
+      "file": "components/SajuInputModal.tsx",
+      "basis_native_sha256": "7afc6b2bbd8d1bf77460f0891da405457c79b7309da853eb6d996b98cc2c8533",
+      "current_native_sha256": "b309a761c60404360e164f46efe8c535ebf831d84c0bc08d335b30c05e9d8956",
+      "native_before_bytes": 14511,
+      "native_after_bytes": 16393,
+      "whole_product_inverse_native_bytes_identical": true
+    },
+    {
+      "file": "app/saved/page.tsx",
+      "basis_native_sha256": "2498425ac485e328ef7846fa06d5e1dd1de5dad42a87bc2527393714688aefb7",
+      "current_native_sha256": "0d86e8fec1257881c16e841a6ce1aca3c48a7fcd6066388e56bd2b33fb19f4fc",
+      "native_before_bytes": 14534,
+      "native_after_bytes": 14654,
+      "whole_product_inverse_native_bytes_identical": true
+    },
+    {
+      "file": "app/guin/[id]/page.tsx",
+      "basis_native_sha256": "fa83ace810ccce8f166af7282705684573c2f6c9f81cdaaa4f8952c38700f29a",
+      "current_native_sha256": "bc95942c2d8d2c9ab9df2a5b324126a13e57cc7b01665df0128c44f9cd912a61",
+      "native_before_bytes": 32539,
+      "native_after_bytes": 33824,
+      "whole_product_inverse_native_bytes_identical": true
+    }
+  ],
+  "intermediate_1of5_drive_backup": {
+    "status": "PASS_PRIVATE_NEW_DRIVE_INTERMEDIATE_1OF5_METADATA_VERIFIED",
+    "validated_new_fix_count": 1,
+    "commit_batch_target": 5,
+    "commit_created": false,
+    "push_performed": false,
+    "local_path": "D:/Codex/Results/SaJuUiBatchTwo-20261011-Joseph/SaJu_UI_Batch2_Progress_1of5_20261011_Joseph_343e3c3e.zip",
+    "bytes": 3234580,
+    "local_sha256": "920bb24196441ed0dbe8b4f3947b4b621b04d89854bc39cf7d6354ae5e1cda98",
+    "id": "1Ucdh6ksn04749nqznFNcQ1L278nEywkE",
+    "url": "https://drive.google.com/file/d/1Ucdh6ksn04749nqznFNcQ1L278nEywkE/view?usp=drivesdk",
+    "shared": false,
+    "permissions": [
+      {
+        "type": "user",
+        "role": "owner"
+      }
+    ],
+    "owner_only": true,
+    "size_metadata_verified": true,
+    "remote_drive_bytes_independently_rehashed": false
+  },
+  "previous_completed_suites_rerun": 0,
+  "previous_completed_fixes_counted": 0,
+  "original_remote_branches_preserved": 60,
+  "legacy_wip_files_byte_preserved": 3,
+  "protected_art_checkouts": 5,
+  "initial_own_wip": [],
+  "limits": [
+    "Production SajuInputModal, saved list category chips, and Guin POST friend-map consumption with fictional intercepted APIs at 390x844 and 1440x1000. Host fixture, next/navigation and next/link are fixed test boundaries; only heavy GalaxyCanvas is blank. No backend/DB/Gemini/user storage or clipboard/3D/hosted route/physical device claim. Prior completed UI/model suites excluded.",
+    "Current batch focused tests are followed by the explicitly requested current-batch final regression. Prior completed UI/model suites and fixes are neither rerun nor recounted.",
+    "HTTP check covers only response.ok acknowledgement in SajuInputModal; fortune full payload shape, calculation, ownership, IME and request lifecycle are unchanged and not claimed.",
+    "Guin POST validation covers requested map ID, owner strings and currently consumed person fields. Prior GET validation is byte-identical; optional pillar/3D metadata, server persistence and real joining are not validated.",
+    "Native Chrome production React/Tailwind UI with isolated fictional fixtures; no actual API/backend/DB/Gemini/user clipboard or storage, 3D/model/WebGL, hosted authentication or physical device acceptance.",
+    "First v1 cold navigation timeout and raw FAILs are preserved; v2 changes only navigation wait budget.",
+    "Existing product lint debt is preserved without rule or suppression changes; Drive metadata proves size and unshared single-owner status, not a separate remote-byte rehash.",
+    "Sparse branch switch removed required build inputs. Seven missing canonical assets/code inputs and the nonsecret 91-byte project binding metadata were materialized byte-exact from basis Git objects without replacing existing files or changing sparse/auth/permissions/data. Two failed builds and overly strict helper schema guards are retained; actual resource ID is a 40-character ASCII identifier, not a UUID. Build-v3 and first nonincremental types passed; five existing runtime assets remain byte-identical. No raw hosting config values are packaged."
+  ],
+  "build_input_recovery": {
+    "canonical_inputs": {
+      "status": "PASS_ONLY_MISSING_CANONICAL_BUILD_INPUTS_MATERIALIZED_FROM_EXISTING_BASIS_GIT_BYTES",
+      "at_utc": "2026-10-11T03:11:44.939Z",
+      "basis": "343e3c3ee2ca91f42eafe7e14fbae1b91c0e5893",
+      "reason": "The existing sparse configuration excludes /assets/. Branch switch removed manually materialized out-of-sparse build inputs. Build stopped before product compilation.",
+      "source": "Existing local Git objects at the exact clean basis commit; no transfer, external art adoption or new model generation.",
+      "restored_missing_count": 7,
+      "files": [
+        {
+          "file": "assets/source-reference/saju-b-evolving-light-v002/SHA256SUMS.txt",
+          "destination": "D:\\Codex\\Work\\SaJuUiOneBug-20261010-Joseph\\repo\\assets\\source-reference\\saju-b-evolving-light-v002\\SHA256SUMS.txt",
+          "bytes": 4521,
+          "sha256": "a8c57385c849549a44baa66ed802a2ee3f1d8a12a4b6afb8c21915241978927f",
+          "git_blob_sha1": "8df9ad425ccd6729fc9d8f4aea9300b4effb058a",
+          "existed": false
+        },
+        {
+          "file": "assets/source-reference/saju-b-evolving-light-v002/reference/SaJu_Jade_Approved_Static_Material.glb",
+          "destination": "D:\\Codex\\Work\\SaJuUiOneBug-20261010-Joseph\\repo\\assets\\source-reference\\saju-b-evolving-light-v002\\reference\\SaJu_Jade_Approved_Static_Material.glb",
+          "bytes": 4293332,
+          "sha256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+          "git_blob_sha1": "3752b6a268162a8936de7fd1588ded4a7db160ff",
+          "existed": false
+        },
+        {
+          "file": "assets/source-reference/saju-b-evolving-light-v002/runtime/textures/jade_fields_atlas_128.png",
+          "destination": "D:\\Codex\\Work\\SaJuUiOneBug-20261010-Joseph\\repo\\assets\\source-reference\\saju-b-evolving-light-v002\\runtime\\textures\\jade_fields_atlas_128.png",
+          "bytes": 3338794,
+          "sha256": "3175c131be983bd985b8018c191d3a25c9ce00ea20baa31bbb2772833b9a5bd0",
+          "git_blob_sha1": "63d12bd3a6b1b95dbc39db51b02f545dc8313785",
+          "existed": false
+        },
+        {
+          "file": "assets/source-reference/saju-b-evolving-light-v002/runtime/textures/Jade_OriginalBaseColor_1024.png",
+          "destination": "D:\\Codex\\Work\\SaJuUiOneBug-20261010-Joseph\\repo\\assets\\source-reference\\saju-b-evolving-light-v002\\runtime\\textures\\Jade_OriginalBaseColor_1024.png",
+          "bytes": 804444,
+          "sha256": "29bdd5ab8a2c87715fd3aedae3f0465c8b6910b5a9c0e8b8bffeb84a03c6b824",
+          "git_blob_sha1": "03007864b83ff9a7f96929207d7f22dc7ec86ad8",
+          "existed": false
+        },
+        {
+          "file": "assets/source-reference/saju-b-evolving-light-v002/preview_keyframes/001.png",
+          "destination": "D:\\Codex\\Work\\SaJuUiOneBug-20261010-Joseph\\repo\\assets\\source-reference\\saju-b-evolving-light-v002\\preview_keyframes\\001.png",
+          "bytes": 188340,
+          "sha256": "f17790815107c4c5d751df92050c3e00c6c597f95843dfcd1b2c6c39c7735c54",
+          "git_blob_sha1": "f68667e393cd960c4d052e413c8a1517a1e88c87",
+          "existed": false
+        },
+        {
+          "file": "assets/source-reference/saju-b-evolving-light-v002/runtime/saju-jade-evolution.glsl",
+          "destination": "D:\\Codex\\Work\\SaJuUiOneBug-20261010-Joseph\\repo\\assets\\source-reference\\saju-b-evolving-light-v002\\runtime\\saju-jade-evolution.glsl",
+          "bytes": 4041,
+          "sha256": "7cfc8ad83f76f8b9505db1e0e38e94bd9ebd7b0c4282a686016c06a09e96255f",
+          "git_blob_sha1": "4fb94fcf27dcd2eb398667c46adfb3a1181caa0a",
+          "existed": false
+        },
+        {
+          "file": "assets/source-reference/saju-b-evolving-light-v002/runtime/saju-jade-evolution.mjs",
+          "destination": "D:\\Codex\\Work\\SaJuUiOneBug-20261010-Joseph\\repo\\assets\\source-reference\\saju-b-evolving-light-v002\\runtime\\saju-jade-evolution.mjs",
+          "bytes": 5678,
+          "sha256": "b92ffe42be37a8c52427ec6c104a56eb828c4e7f6a02b7d368b72921a46a9e7c",
+          "git_blob_sha1": "a58820dc3f6ff3a817afa1a1a1729ff0710669c3",
+          "existed": false
+        }
+      ],
+      "runtime_outputs_expected_byte_identical": [
+        {
+          "file": "public/spirits/jade-v002/body.glb",
+          "existed_before": true,
+          "canonical_sha256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+          "before_sha256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84"
+        },
+        {
+          "file": "public/spirits/jade-v002/fields.png",
+          "existed_before": true,
+          "canonical_sha256": "3175c131be983bd985b8018c191d3a25c9ce00ea20baa31bbb2772833b9a5bd0",
+          "before_sha256": "3175c131be983bd985b8018c191d3a25c9ce00ea20baa31bbb2772833b9a5bd0"
+        },
+        {
+          "file": "public/spirits/jade-v002/base-color.png",
+          "existed_before": true,
+          "canonical_sha256": "29bdd5ab8a2c87715fd3aedae3f0465c8b6910b5a9c0e8b8bffeb84a03c6b824",
+          "before_sha256": "29bdd5ab8a2c87715fd3aedae3f0465c8b6910b5a9c0e8b8bffeb84a03c6b824"
+        },
+        {
+          "file": "public/spirits/jade-v002/still.png",
+          "existed_before": true,
+          "canonical_sha256": "f17790815107c4c5d751df92050c3e00c6c597f95843dfcd1b2c6c39c7735c54",
+          "before_sha256": "f17790815107c4c5d751df92050c3e00c6c597f95843dfcd1b2c6c39c7735c54"
+        },
+        {
+          "file": "public/models/porcelain-hero-blink-v1.glb",
+          "existed_before": true,
+          "canonical_sha256": "57d7ee5b3c4e0b99eaadefb8095283bed44986beaa5a91c096dd7a0c514bf9c2",
+          "before_sha256": "57d7ee5b3c4e0b99eaadefb8095283bed44986beaa5a91c096dd7a0c514bf9c2"
+        }
+      ],
+      "sparse_configuration_unchanged": true,
+      "existing_files_overwritten": 0,
+      "protected_art_checkouts_written": 0,
+      "model_version_or_default_changed": false,
+      "new_fix_count_added": 0,
+      "previous_completed_art_tests_rerun": 0,
+      "original_failed_build_log_preserved": "D:/Codex/Results/SaJuUiBatchTwo-20261011-Joseph/production-build.log"
+    },
+    "local_binding_metadata": {
+      "status": "PASS_ONLY_MISSING_NONSECRET_LOCAL_BINDING_CONFIG_RESTORED_BYTE_EXACT",
+      "basis": "343e3c3ee2ca91f42eafe7e14fbae1b91c0e5893",
+      "relative_path": ".openai/hosting.json",
+      "bytes": 91,
+      "sha256": "9e1fb7eef4d729865c16d638f731f2f37d27bbec12a3345e48cdc44d51dd1f6f",
+      "git_blob_sha1": "38e0db4fb5cfcb7b6e490216c0ca4dfbf9d4d2a1",
+      "nonsecret_binding_names_and_project_resource_identifier_only": true,
+      "raw_config_not_printed_or_packaged": true,
+      "source": "Exact existing project Git blob, consumed by vite.config.ts only for local D1/R2 binding identifiers and placeholder resource IDs.",
+      "existing_files_overwritten": 0,
+      "authentication_billing_permission_or_database_data_change": false,
+      "sparse_configuration_unchanged": true,
+      "external_requests": 0,
+      "new_fix_count_added": 0,
+      "failed_second_build_log_retained": "D:/Codex/Results/SaJuUiBatchTwo-20261011-Joseph/production-build-v2.log"
+    },
+    "actual_resource_id_format": {
+      "status": "PASS_ACTUAL_NONSECRET_PROJECT_RESOURCE_IDENTIFIER_FORMAT_CONFIRMED",
+      "bytes": 91,
+      "known_keys_only": [
+        "d1",
+        "r2",
+        "project_id"
+      ],
+      "binding_names_only": true,
+      "project_id_length": 40,
+      "project_id_ascii_resource_identifier": true,
+      "project_id_uuid": false,
+      "prior_v4_uuid_assumption_incorrect_and_stopped_before_write": true,
+      "prior_schema_diagnostic_superseded_for_id_format": true,
+      "original_failed_helpers_retained": true,
+      "raw_values_not_printed_or_packaged": true,
+      "auth_billing_permission_database_or_product_change": false,
+      "new_fix_count_added": 0
+    },
+    "canonical_runtime_bytes": {
+      "status": "PASS_FIVE_CANONICAL_RUNTIME_ASSET_BYTES_PRESERVED_AFTER_BUILD",
+      "outputs": [
+        {
+          "file": "public/spirits/jade-v002/body.glb",
+          "existed_before": true,
+          "canonical_sha256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+          "before_sha256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84"
+        },
+        {
+          "file": "public/spirits/jade-v002/fields.png",
+          "existed_before": true,
+          "canonical_sha256": "3175c131be983bd985b8018c191d3a25c9ce00ea20baa31bbb2772833b9a5bd0",
+          "before_sha256": "3175c131be983bd985b8018c191d3a25c9ce00ea20baa31bbb2772833b9a5bd0"
+        },
+        {
+          "file": "public/spirits/jade-v002/base-color.png",
+          "existed_before": true,
+          "canonical_sha256": "29bdd5ab8a2c87715fd3aedae3f0465c8b6910b5a9c0e8b8bffeb84a03c6b824",
+          "before_sha256": "29bdd5ab8a2c87715fd3aedae3f0465c8b6910b5a9c0e8b8bffeb84a03c6b824"
+        },
+        {
+          "file": "public/spirits/jade-v002/still.png",
+          "existed_before": true,
+          "canonical_sha256": "f17790815107c4c5d751df92050c3e00c6c597f95843dfcd1b2c6c39c7735c54",
+          "before_sha256": "f17790815107c4c5d751df92050c3e00c6c597f95843dfcd1b2c6c39c7735c54"
+        },
+        {
+          "file": "public/models/porcelain-hero-blink-v1.glb",
+          "existed_before": true,
+          "canonical_sha256": "57d7ee5b3c4e0b99eaadefb8095283bed44986beaa5a91c096dd7a0c514bf9c2",
+          "before_sha256": "57d7ee5b3c4e0b99eaadefb8095283bed44986beaa5a91c096dd7a0c514bf9c2"
+        }
+      ],
+      "all_present_original_bytes_identical": true,
+      "model_or_default_change": false,
+      "restoration_new_fix_count": 0,
+      "previous_art_tests_rerun": 0
+    },
+    "failed_build_attempts_retained": 2,
+    "recovery_product_edits_or_new_fix_count": 0
+  },
+  "direct_visual_inspection": {
+    "status": "PASS_DIRECT_ACTUAL_CHROME_UI_PIXEL_INSPECTION",
+    "at_utc": "2026-10-11T03:12:34.903Z",
+    "generated_images": 0,
+    "edited_or_masked_images": 0,
+    "images": [
+      {
+        "path": "D:/Codex/Results/SaJuUiBatchTwo-20261011-Joseph/final/dialog-normal-390.png",
+        "observed": "At 390x844 the real input pane shows its heading, close focus ring, name, gender, calendar, date, time, question and submit controls; no text or footer clipping is visible."
+      },
+      {
+        "path": "D:/Codex/Results/SaJuUiBatchTwo-20261011-Joseph/final/join-manual-object-name-390.png",
+        "observed": "Malformed friend POST retains the existing two-person fictional map and the open form containing the fictional friend draft. The native failure alert is separately captured and dismissed in the browser report, not painted in this PNG."
+      },
+      {
+        "path": "D:/Codex/Results/SaJuUiBatchTwo-20261011-Joseph/final/filter-selected-keyboard-1440.png",
+        "observed": "At 1440x1000 the real archive shows the focused love filter and exactly its matching fictional record."
+      }
+    ],
+    "limits": "Actual production React/Tailwind component pixels under isolated fictional API responses. Host and Next routing fixtures, empty GalaxyCanvas. No generated art, 3D/model, hosted route or physical-device acceptance."
+  }
+}

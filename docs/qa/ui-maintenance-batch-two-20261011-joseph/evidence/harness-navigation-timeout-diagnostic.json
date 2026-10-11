@@ -1,0 +1,13 @@
+{
+  "status": "PRESERVED_V1_COLD_NAVIGATION_TIMEOUT_SEPARATE_FROM_REPRODUCED_PRODUCT_FAILURES",
+  "original_harness_sha256": "7b60d19053f74c11f0f3e89f9659edbe92ec731b1cdbcb8171e1d7b60595c3aa",
+  "corrected_harness_sha256": "66d3a810e0b86a7e412ff4c0dd957ec51019d0be17975b657b346aa12900dfe8",
+  "only_harness_change": "Raise page.goto networkidle navigation timeout from inherited 4 seconds to explicit 30 seconds. All case assertions, fixture responses, native inputs and boundaries are unchanged.",
+  "raw_first_before_passed": 11,
+  "raw_first_before_failed": 15,
+  "cold_navigation_timeouts": 1,
+  "product_failures_reproduced": 14,
+  "previous_completed_items_or_suites_rerun": 0,
+  "product_edits_before_corrected_baseline": 0,
+  "raw_report_preserved": "D:/Codex/Results/SaJuUiBatchTwo-20261011-Joseph/before/browser-results.json"
+}

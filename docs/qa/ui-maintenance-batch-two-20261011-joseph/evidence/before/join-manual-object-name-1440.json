@@ -1,0 +1,14 @@
+{
+  "posts": 1,
+  "map_heading_visible": false,
+  "old_friend_visible": false,
+  "new_friend_visible": false,
+  "join_dialog_visible": false,
+  "draft": null,
+  "alerts": [
+    "검증주인님의 우리은하에 등록되었습니다! ✨"
+  ],
+  "page_errors": [
+    "person.name.substring is not a function"
+  ]
+}

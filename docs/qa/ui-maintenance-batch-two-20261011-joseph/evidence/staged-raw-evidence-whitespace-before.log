@@ -1,0 +1,416 @@
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before-v2/bundle.js:20119: space before tab in indent.
++  	 * Creates a perspective projection matrix. This is used internally by
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before-v2/bundle.js:20120: space before tab in indent.
++  	 * {@link PerspectiveCamera#updateProjectionMatrix}.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before-v2/bundle.js:20121: trailing whitespace.
++  
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before-v2/bundle.js:20122: space before tab in indent.
++  	 * @param {number} left - Left boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before-v2/bundle.js:20123: space before tab in indent.
++  	 * @param {number} right - Right boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before-v2/bundle.js:20124: space before tab in indent.
++  	 * @param {number} top - Top boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before-v2/bundle.js:20125: space before tab in indent.
++  	 * @param {number} bottom - Bottom boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before-v2/bundle.js:20126: space before tab in indent.
++  	 * @param {number} near - The distance from the camera to the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before-v2/bundle.js:20127: space before tab in indent.
++  	 * @param {number} far - The distance from the camera to the far plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before-v2/bundle.js:20128: space before tab in indent.
++  	 * @param {(WebGLCoordinateSystem|WebGPUCoordinateSystem)} [coordinateSystem=WebGLCoordinateSystem] - The coordinate system.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before-v2/bundle.js:20129: space before tab in indent.
++  	 * @param {boolean} [reversedDepth=false] - Whether to use a reversed depth.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before-v2/bundle.js:20130: space before tab in indent.
++  	 * @return {Matrix4} A reference to this matrix.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before-v2/bundle.js:20131: space before tab in indent.
++  	 */
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before-v2/bundle.js:20172: space before tab in indent.
++  	 * Creates a orthographic projection matrix. This is used internally by
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before-v2/bundle.js:20173: space before tab in indent.
++  	 * {@link OrthographicCamera#updateProjectionMatrix}.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before-v2/bundle.js:20174: trailing whitespace.
++  
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before-v2/bundle.js:20175: space before tab in indent.
++  	 * @param {number} left - Left boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before-v2/bundle.js:20176: space before tab in indent.
++  	 * @param {number} right - Right boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before-v2/bundle.js:20177: space before tab in indent.
++  	 * @param {number} top - Top boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before-v2/bundle.js:20178: space before tab in indent.
++  	 * @param {number} bottom - Bottom boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before-v2/bundle.js:20179: space before tab in indent.
++  	 * @param {number} near - The distance from the camera to the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before-v2/bundle.js:20180: space before tab in indent.
++  	 * @param {number} far - The distance from the camera to the far plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before-v2/bundle.js:20181: space before tab in indent.
++  	 * @param {(WebGLCoordinateSystem|WebGPUCoordinateSystem)} [coordinateSystem=WebGLCoordinateSystem] - The coordinate system.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before-v2/bundle.js:20182: space before tab in indent.
++  	 * @param {boolean} [reversedDepth=false] - Whether to use a reversed depth.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before-v2/bundle.js:20183: space before tab in indent.
++  	 * @return {Matrix4} A reference to this matrix.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before-v2/bundle.js:20184: space before tab in indent.
++  	 */
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before/bundle.js:20119: space before tab in indent.
++  	 * Creates a perspective projection matrix. This is used internally by
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before/bundle.js:20120: space before tab in indent.
++  	 * {@link PerspectiveCamera#updateProjectionMatrix}.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before/bundle.js:20121: trailing whitespace.
++  
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before/bundle.js:20122: space before tab in indent.
++  	 * @param {number} left - Left boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before/bundle.js:20123: space before tab in indent.
++  	 * @param {number} right - Right boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before/bundle.js:20124: space before tab in indent.
++  	 * @param {number} top - Top boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before/bundle.js:20125: space before tab in indent.
++  	 * @param {number} bottom - Bottom boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before/bundle.js:20126: space before tab in indent.
++  	 * @param {number} near - The distance from the camera to the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before/bundle.js:20127: space before tab in indent.
++  	 * @param {number} far - The distance from the camera to the far plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before/bundle.js:20128: space before tab in indent.
++  	 * @param {(WebGLCoordinateSystem|WebGPUCoordinateSystem)} [coordinateSystem=WebGLCoordinateSystem] - The coordinate system.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before/bundle.js:20129: space before tab in indent.
++  	 * @param {boolean} [reversedDepth=false] - Whether to use a reversed depth.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before/bundle.js:20130: space before tab in indent.
++  	 * @return {Matrix4} A reference to this matrix.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before/bundle.js:20131: space before tab in indent.
++  	 */
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before/bundle.js:20172: space before tab in indent.
++  	 * Creates a orthographic projection matrix. This is used internally by
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before/bundle.js:20173: space before tab in indent.
++  	 * {@link OrthographicCamera#updateProjectionMatrix}.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before/bundle.js:20174: trailing whitespace.
++  
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before/bundle.js:20175: space before tab in indent.
++  	 * @param {number} left - Left boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before/bundle.js:20176: space before tab in indent.
++  	 * @param {number} right - Right boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before/bundle.js:20177: space before tab in indent.
++  	 * @param {number} top - Top boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before/bundle.js:20178: space before tab in indent.
++  	 * @param {number} bottom - Bottom boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before/bundle.js:20179: space before tab in indent.
++  	 * @param {number} near - The distance from the camera to the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before/bundle.js:20180: space before tab in indent.
++  	 * @param {number} far - The distance from the camera to the far plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before/bundle.js:20181: space before tab in indent.
++  	 * @param {(WebGLCoordinateSystem|WebGPUCoordinateSystem)} [coordinateSystem=WebGLCoordinateSystem] - The coordinate system.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before/bundle.js:20182: space before tab in indent.
++  	 * @param {boolean} [reversedDepth=false] - Whether to use a reversed depth.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before/bundle.js:20183: space before tab in indent.
++  	 * @return {Matrix4} A reference to this matrix.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/before/bundle.js:20184: space before tab in indent.
++  	 */
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/final/bundle.js:20159: space before tab in indent.
++  	 * Creates a perspective projection matrix. This is used internally by
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/final/bundle.js:20160: space before tab in indent.
++  	 * {@link PerspectiveCamera#updateProjectionMatrix}.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/final/bundle.js:20161: trailing whitespace.
++  
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/final/bundle.js:20162: space before tab in indent.
++  	 * @param {number} left - Left boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/final/bundle.js:20163: space before tab in indent.
++  	 * @param {number} right - Right boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/final/bundle.js:20164: space before tab in indent.
++  	 * @param {number} top - Top boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/final/bundle.js:20165: space before tab in indent.
++  	 * @param {number} bottom - Bottom boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/final/bundle.js:20166: space before tab in indent.
++  	 * @param {number} near - The distance from the camera to the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/final/bundle.js:20167: space before tab in indent.
++  	 * @param {number} far - The distance from the camera to the far plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/final/bundle.js:20168: space before tab in indent.
++  	 * @param {(WebGLCoordinateSystem|WebGPUCoordinateSystem)} [coordinateSystem=WebGLCoordinateSystem] - The coordinate system.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/final/bundle.js:20169: space before tab in indent.
++  	 * @param {boolean} [reversedDepth=false] - Whether to use a reversed depth.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/final/bundle.js:20170: space before tab in indent.
++  	 * @return {Matrix4} A reference to this matrix.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/final/bundle.js:20171: space before tab in indent.
++  	 */
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/final/bundle.js:20212: space before tab in indent.
++  	 * Creates a orthographic projection matrix. This is used internally by
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/final/bundle.js:20213: space before tab in indent.
++  	 * {@link OrthographicCamera#updateProjectionMatrix}.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/final/bundle.js:20214: trailing whitespace.
++  
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/final/bundle.js:20215: space before tab in indent.
++  	 * @param {number} left - Left boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/final/bundle.js:20216: space before tab in indent.
++  	 * @param {number} right - Right boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/final/bundle.js:20217: space before tab in indent.
++  	 * @param {number} top - Top boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/final/bundle.js:20218: space before tab in indent.
++  	 * @param {number} bottom - Bottom boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/final/bundle.js:20219: space before tab in indent.
++  	 * @param {number} near - The distance from the camera to the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/final/bundle.js:20220: space before tab in indent.
++  	 * @param {number} far - The distance from the camera to the far plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/final/bundle.js:20221: space before tab in indent.
++  	 * @param {(WebGLCoordinateSystem|WebGPUCoordinateSystem)} [coordinateSystem=WebGLCoordinateSystem] - The coordinate system.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/final/bundle.js:20222: space before tab in indent.
++  	 * @param {boolean} [reversedDepth=false] - Whether to use a reversed depth.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/final/bundle.js:20223: space before tab in indent.
++  	 * @return {Matrix4} A reference to this matrix.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/final/bundle.js:20224: space before tab in indent.
++  	 */
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item1/bundle.js:20119: space before tab in indent.
++  	 * Creates a perspective projection matrix. This is used internally by
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item1/bundle.js:20120: space before tab in indent.
++  	 * {@link PerspectiveCamera#updateProjectionMatrix}.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item1/bundle.js:20121: trailing whitespace.
++  
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item1/bundle.js:20122: space before tab in indent.
++  	 * @param {number} left - Left boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item1/bundle.js:20123: space before tab in indent.
++  	 * @param {number} right - Right boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item1/bundle.js:20124: space before tab in indent.
++  	 * @param {number} top - Top boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item1/bundle.js:20125: space before tab in indent.
++  	 * @param {number} bottom - Bottom boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item1/bundle.js:20126: space before tab in indent.
++  	 * @param {number} near - The distance from the camera to the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item1/bundle.js:20127: space before tab in indent.
++  	 * @param {number} far - The distance from the camera to the far plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item1/bundle.js:20128: space before tab in indent.
++  	 * @param {(WebGLCoordinateSystem|WebGPUCoordinateSystem)} [coordinateSystem=WebGLCoordinateSystem] - The coordinate system.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item1/bundle.js:20129: space before tab in indent.
++  	 * @param {boolean} [reversedDepth=false] - Whether to use a reversed depth.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item1/bundle.js:20130: space before tab in indent.
++  	 * @return {Matrix4} A reference to this matrix.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item1/bundle.js:20131: space before tab in indent.
++  	 */
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item1/bundle.js:20172: space before tab in indent.
++  	 * Creates a orthographic projection matrix. This is used internally by
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item1/bundle.js:20173: space before tab in indent.
++  	 * {@link OrthographicCamera#updateProjectionMatrix}.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item1/bundle.js:20174: trailing whitespace.
++  
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item1/bundle.js:20175: space before tab in indent.
++  	 * @param {number} left - Left boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item1/bundle.js:20176: space before tab in indent.
++  	 * @param {number} right - Right boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item1/bundle.js:20177: space before tab in indent.
++  	 * @param {number} top - Top boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item1/bundle.js:20178: space before tab in indent.
++  	 * @param {number} bottom - Bottom boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item1/bundle.js:20179: space before tab in indent.
++  	 * @param {number} near - The distance from the camera to the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item1/bundle.js:20180: space before tab in indent.
++  	 * @param {number} far - The distance from the camera to the far plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item1/bundle.js:20181: space before tab in indent.
++  	 * @param {(WebGLCoordinateSystem|WebGPUCoordinateSystem)} [coordinateSystem=WebGLCoordinateSystem] - The coordinate system.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item1/bundle.js:20182: space before tab in indent.
++  	 * @param {boolean} [reversedDepth=false] - Whether to use a reversed depth.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item1/bundle.js:20183: space before tab in indent.
++  	 * @return {Matrix4} A reference to this matrix.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item1/bundle.js:20184: space before tab in indent.
++  	 */
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item2/bundle.js:20121: space before tab in indent.
++  	 * Creates a perspective projection matrix. This is used internally by
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item2/bundle.js:20122: space before tab in indent.
++  	 * {@link PerspectiveCamera#updateProjectionMatrix}.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item2/bundle.js:20123: trailing whitespace.
++  
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item2/bundle.js:20124: space before tab in indent.
++  	 * @param {number} left - Left boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item2/bundle.js:20125: space before tab in indent.
++  	 * @param {number} right - Right boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item2/bundle.js:20126: space before tab in indent.
++  	 * @param {number} top - Top boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item2/bundle.js:20127: space before tab in indent.
++  	 * @param {number} bottom - Bottom boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item2/bundle.js:20128: space before tab in indent.
++  	 * @param {number} near - The distance from the camera to the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item2/bundle.js:20129: space before tab in indent.
++  	 * @param {number} far - The distance from the camera to the far plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item2/bundle.js:20130: space before tab in indent.
++  	 * @param {(WebGLCoordinateSystem|WebGPUCoordinateSystem)} [coordinateSystem=WebGLCoordinateSystem] - The coordinate system.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item2/bundle.js:20131: space before tab in indent.
++  	 * @param {boolean} [reversedDepth=false] - Whether to use a reversed depth.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item2/bundle.js:20132: space before tab in indent.
++  	 * @return {Matrix4} A reference to this matrix.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item2/bundle.js:20133: space before tab in indent.
++  	 */
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item2/bundle.js:20174: space before tab in indent.
++  	 * Creates a orthographic projection matrix. This is used internally by
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item2/bundle.js:20175: space before tab in indent.
++  	 * {@link OrthographicCamera#updateProjectionMatrix}.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item2/bundle.js:20176: trailing whitespace.
++  
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item2/bundle.js:20177: space before tab in indent.
++  	 * @param {number} left - Left boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item2/bundle.js:20178: space before tab in indent.
++  	 * @param {number} right - Right boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item2/bundle.js:20179: space before tab in indent.
++  	 * @param {number} top - Top boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item2/bundle.js:20180: space before tab in indent.
++  	 * @param {number} bottom - Bottom boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item2/bundle.js:20181: space before tab in indent.
++  	 * @param {number} near - The distance from the camera to the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item2/bundle.js:20182: space before tab in indent.
++  	 * @param {number} far - The distance from the camera to the far plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item2/bundle.js:20183: space before tab in indent.
++  	 * @param {(WebGLCoordinateSystem|WebGPUCoordinateSystem)} [coordinateSystem=WebGLCoordinateSystem] - The coordinate system.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item2/bundle.js:20184: space before tab in indent.
++  	 * @param {boolean} [reversedDepth=false] - Whether to use a reversed depth.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item2/bundle.js:20185: space before tab in indent.
++  	 * @return {Matrix4} A reference to this matrix.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item2/bundle.js:20186: space before tab in indent.
++  	 */
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item3/bundle.js:20157: space before tab in indent.
++  	 * Creates a perspective projection matrix. This is used internally by
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item3/bundle.js:20158: space before tab in indent.
++  	 * {@link PerspectiveCamera#updateProjectionMatrix}.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item3/bundle.js:20159: trailing whitespace.
++  
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item3/bundle.js:20160: space before tab in indent.
++  	 * @param {number} left - Left boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item3/bundle.js:20161: space before tab in indent.
++  	 * @param {number} right - Right boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item3/bundle.js:20162: space before tab in indent.
++  	 * @param {number} top - Top boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item3/bundle.js:20163: space before tab in indent.
++  	 * @param {number} bottom - Bottom boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item3/bundle.js:20164: space before tab in indent.
++  	 * @param {number} near - The distance from the camera to the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item3/bundle.js:20165: space before tab in indent.
++  	 * @param {number} far - The distance from the camera to the far plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item3/bundle.js:20166: space before tab in indent.
++  	 * @param {(WebGLCoordinateSystem|WebGPUCoordinateSystem)} [coordinateSystem=WebGLCoordinateSystem] - The coordinate system.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item3/bundle.js:20167: space before tab in indent.
++  	 * @param {boolean} [reversedDepth=false] - Whether to use a reversed depth.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item3/bundle.js:20168: space before tab in indent.
++  	 * @return {Matrix4} A reference to this matrix.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item3/bundle.js:20169: space before tab in indent.
++  	 */
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item3/bundle.js:20210: space before tab in indent.
++  	 * Creates a orthographic projection matrix. This is used internally by
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item3/bundle.js:20211: space before tab in indent.
++  	 * {@link OrthographicCamera#updateProjectionMatrix}.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item3/bundle.js:20212: trailing whitespace.
++  
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item3/bundle.js:20213: space before tab in indent.
++  	 * @param {number} left - Left boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item3/bundle.js:20214: space before tab in indent.
++  	 * @param {number} right - Right boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item3/bundle.js:20215: space before tab in indent.
++  	 * @param {number} top - Top boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item3/bundle.js:20216: space before tab in indent.
++  	 * @param {number} bottom - Bottom boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item3/bundle.js:20217: space before tab in indent.
++  	 * @param {number} near - The distance from the camera to the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item3/bundle.js:20218: space before tab in indent.
++  	 * @param {number} far - The distance from the camera to the far plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item3/bundle.js:20219: space before tab in indent.
++  	 * @param {(WebGLCoordinateSystem|WebGPUCoordinateSystem)} [coordinateSystem=WebGLCoordinateSystem] - The coordinate system.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item3/bundle.js:20220: space before tab in indent.
++  	 * @param {boolean} [reversedDepth=false] - Whether to use a reversed depth.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item3/bundle.js:20221: space before tab in indent.
++  	 * @return {Matrix4} A reference to this matrix.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item3/bundle.js:20222: space before tab in indent.
++  	 */
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item4/bundle.js:20159: space before tab in indent.
++  	 * Creates a perspective projection matrix. This is used internally by
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item4/bundle.js:20160: space before tab in indent.
++  	 * {@link PerspectiveCamera#updateProjectionMatrix}.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item4/bundle.js:20161: trailing whitespace.
++  
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item4/bundle.js:20162: space before tab in indent.
++  	 * @param {number} left - Left boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item4/bundle.js:20163: space before tab in indent.
++  	 * @param {number} right - Right boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item4/bundle.js:20164: space before tab in indent.
++  	 * @param {number} top - Top boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item4/bundle.js:20165: space before tab in indent.
++  	 * @param {number} bottom - Bottom boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item4/bundle.js:20166: space before tab in indent.
++  	 * @param {number} near - The distance from the camera to the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item4/bundle.js:20167: space before tab in indent.
++  	 * @param {number} far - The distance from the camera to the far plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item4/bundle.js:20168: space before tab in indent.
++  	 * @param {(WebGLCoordinateSystem|WebGPUCoordinateSystem)} [coordinateSystem=WebGLCoordinateSystem] - The coordinate system.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item4/bundle.js:20169: space before tab in indent.
++  	 * @param {boolean} [reversedDepth=false] - Whether to use a reversed depth.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item4/bundle.js:20170: space before tab in indent.
++  	 * @return {Matrix4} A reference to this matrix.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item4/bundle.js:20171: space before tab in indent.
++  	 */
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item4/bundle.js:20212: space before tab in indent.
++  	 * Creates a orthographic projection matrix. This is used internally by
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item4/bundle.js:20213: space before tab in indent.
++  	 * {@link OrthographicCamera#updateProjectionMatrix}.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item4/bundle.js:20214: trailing whitespace.
++  
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item4/bundle.js:20215: space before tab in indent.
++  	 * @param {number} left - Left boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item4/bundle.js:20216: space before tab in indent.
++  	 * @param {number} right - Right boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item4/bundle.js:20217: space before tab in indent.
++  	 * @param {number} top - Top boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item4/bundle.js:20218: space before tab in indent.
++  	 * @param {number} bottom - Bottom boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item4/bundle.js:20219: space before tab in indent.
++  	 * @param {number} near - The distance from the camera to the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item4/bundle.js:20220: space before tab in indent.
++  	 * @param {number} far - The distance from the camera to the far plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item4/bundle.js:20221: space before tab in indent.
++  	 * @param {(WebGLCoordinateSystem|WebGPUCoordinateSystem)} [coordinateSystem=WebGLCoordinateSystem] - The coordinate system.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item4/bundle.js:20222: space before tab in indent.
++  	 * @param {boolean} [reversedDepth=false] - Whether to use a reversed depth.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item4/bundle.js:20223: space before tab in indent.
++  	 * @return {Matrix4} A reference to this matrix.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item4/bundle.js:20224: space before tab in indent.
++  	 */
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item5/bundle.js:20159: space before tab in indent.
++  	 * Creates a perspective projection matrix. This is used internally by
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item5/bundle.js:20160: space before tab in indent.
++  	 * {@link PerspectiveCamera#updateProjectionMatrix}.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item5/bundle.js:20161: trailing whitespace.
++  
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item5/bundle.js:20162: space before tab in indent.
++  	 * @param {number} left - Left boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item5/bundle.js:20163: space before tab in indent.
++  	 * @param {number} right - Right boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item5/bundle.js:20164: space before tab in indent.
++  	 * @param {number} top - Top boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item5/bundle.js:20165: space before tab in indent.
++  	 * @param {number} bottom - Bottom boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item5/bundle.js:20166: space before tab in indent.
++  	 * @param {number} near - The distance from the camera to the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item5/bundle.js:20167: space before tab in indent.
++  	 * @param {number} far - The distance from the camera to the far plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item5/bundle.js:20168: space before tab in indent.
++  	 * @param {(WebGLCoordinateSystem|WebGPUCoordinateSystem)} [coordinateSystem=WebGLCoordinateSystem] - The coordinate system.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item5/bundle.js:20169: space before tab in indent.
++  	 * @param {boolean} [reversedDepth=false] - Whether to use a reversed depth.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item5/bundle.js:20170: space before tab in indent.
++  	 * @return {Matrix4} A reference to this matrix.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item5/bundle.js:20171: space before tab in indent.
++  	 */
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item5/bundle.js:20212: space before tab in indent.
++  	 * Creates a orthographic projection matrix. This is used internally by
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item5/bundle.js:20213: space before tab in indent.
++  	 * {@link OrthographicCamera#updateProjectionMatrix}.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item5/bundle.js:20214: trailing whitespace.
++  
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item5/bundle.js:20215: space before tab in indent.
++  	 * @param {number} left - Left boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item5/bundle.js:20216: space before tab in indent.
++  	 * @param {number} right - Right boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item5/bundle.js:20217: space before tab in indent.
++  	 * @param {number} top - Top boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item5/bundle.js:20218: space before tab in indent.
++  	 * @param {number} bottom - Bottom boundary of the viewing frustum at the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item5/bundle.js:20219: space before tab in indent.
++  	 * @param {number} near - The distance from the camera to the near plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item5/bundle.js:20220: space before tab in indent.
++  	 * @param {number} far - The distance from the camera to the far plane.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item5/bundle.js:20221: space before tab in indent.
++  	 * @param {(WebGLCoordinateSystem|WebGPUCoordinateSystem)} [coordinateSystem=WebGLCoordinateSystem] - The coordinate system.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item5/bundle.js:20222: space before tab in indent.
++  	 * @param {boolean} [reversedDepth=false] - Whether to use a reversed depth.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item5/bundle.js:20223: space before tab in indent.
++  	 * @return {Matrix4} A reference to this matrix.
+docs/qa/ui-maintenance-batch-two-20261011-joseph/evidence/item5/bundle.js:20224: space before tab in indent.
++  	 */

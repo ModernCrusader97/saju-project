@@ -1,0 +1,12 @@
+{
+  "posts": 1,
+  "map_heading_visible": false,
+  "old_friend_visible": false,
+  "new_friend_visible": false,
+  "join_dialog_visible": false,
+  "draft": null,
+  "alerts": [],
+  "page_errors": [
+    "Cannot read properties of null (reading 'isMe')"
+  ]
+}

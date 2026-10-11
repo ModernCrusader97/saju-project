@@ -153,6 +153,7 @@ function SavedContent() {
             {/* Category Chips */}
             <div className="flex items-center gap-1.5 overflow-x-auto pb-1 text-xs no-scrollbar">
               <button
+                aria-pressed={selectedCategory === "all"}
                 onClick={() => setSelectedCategory("all")}
                 className={`px-3 py-1.5 rounded-xl font-bold shrink-0 transition-colors ${
                   selectedCategory === "all"
@@ -168,6 +169,7 @@ function SavedContent() {
                 return (
                   <button
                     key={key}
+                    aria-pressed={selectedCategory === key}
                     onClick={() => setSelectedCategory(key)}
                     className={`px-3 py-1.5 rounded-xl font-bold shrink-0 transition-colors ${
                       selectedCategory === key

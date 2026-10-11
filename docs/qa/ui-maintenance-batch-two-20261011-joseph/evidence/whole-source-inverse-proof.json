@@ -1,0 +1,30 @@
+{
+  "status": "PASS_THREE_NATIVE_PRODUCTS_INVERSE_TO_EXACT_BASIS_BYTES",
+  "products": [
+    {
+      "file": "components/SajuInputModal.tsx",
+      "basis_native_sha256": "7afc6b2bbd8d1bf77460f0891da405457c79b7309da853eb6d996b98cc2c8533",
+      "current_native_sha256": "b309a761c60404360e164f46efe8c535ebf831d84c0bc08d335b30c05e9d8956",
+      "native_before_bytes": 14511,
+      "native_after_bytes": 16393,
+      "whole_product_inverse_native_bytes_identical": true
+    },
+    {
+      "file": "app/saved/page.tsx",
+      "basis_native_sha256": "2498425ac485e328ef7846fa06d5e1dd1de5dad42a87bc2527393714688aefb7",
+      "current_native_sha256": "0d86e8fec1257881c16e841a6ce1aca3c48a7fcd6066388e56bd2b33fb19f4fc",
+      "native_before_bytes": 14534,
+      "native_after_bytes": 14654,
+      "whole_product_inverse_native_bytes_identical": true
+    },
+    {
+      "file": "app/guin/[id]/page.tsx",
+      "basis_native_sha256": "fa83ace810ccce8f166af7282705684573c2f6c9f81cdaaa4f8952c38700f29a",
+      "current_native_sha256": "bc95942c2d8d2c9ab9df2a5b324126a13e57cc7b01665df0128c44f9cd912a61",
+      "native_before_bytes": 32539,
+      "native_after_bytes": 33824,
+      "whole_product_inverse_native_bytes_identical": true
+    }
+  ],
+  "all_previous_surrounding_source_bytes_preserved": true
+}

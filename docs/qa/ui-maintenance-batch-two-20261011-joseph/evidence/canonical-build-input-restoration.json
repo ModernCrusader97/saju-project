@@ -1,0 +1,105 @@
+{
+  "status": "PASS_ONLY_MISSING_CANONICAL_BUILD_INPUTS_MATERIALIZED_FROM_EXISTING_BASIS_GIT_BYTES",
+  "at_utc": "2026-10-11T03:11:44.939Z",
+  "basis": "343e3c3ee2ca91f42eafe7e14fbae1b91c0e5893",
+  "reason": "The existing sparse configuration excludes /assets/. Branch switch removed manually materialized out-of-sparse build inputs. Build stopped before product compilation.",
+  "source": "Existing local Git objects at the exact clean basis commit; no transfer, external art adoption or new model generation.",
+  "restored_missing_count": 7,
+  "files": [
+    {
+      "file": "assets/source-reference/saju-b-evolving-light-v002/SHA256SUMS.txt",
+      "destination": "D:\\Codex\\Work\\SaJuUiOneBug-20261010-Joseph\\repo\\assets\\source-reference\\saju-b-evolving-light-v002\\SHA256SUMS.txt",
+      "bytes": 4521,
+      "sha256": "a8c57385c849549a44baa66ed802a2ee3f1d8a12a4b6afb8c21915241978927f",
+      "git_blob_sha1": "8df9ad425ccd6729fc9d8f4aea9300b4effb058a",
+      "existed": false
+    },
+    {
+      "file": "assets/source-reference/saju-b-evolving-light-v002/reference/SaJu_Jade_Approved_Static_Material.glb",
+      "destination": "D:\\Codex\\Work\\SaJuUiOneBug-20261010-Joseph\\repo\\assets\\source-reference\\saju-b-evolving-light-v002\\reference\\SaJu_Jade_Approved_Static_Material.glb",
+      "bytes": 4293332,
+      "sha256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+      "git_blob_sha1": "3752b6a268162a8936de7fd1588ded4a7db160ff",
+      "existed": false
+    },
+    {
+      "file": "assets/source-reference/saju-b-evolving-light-v002/runtime/textures/jade_fields_atlas_128.png",
+      "destination": "D:\\Codex\\Work\\SaJuUiOneBug-20261010-Joseph\\repo\\assets\\source-reference\\saju-b-evolving-light-v002\\runtime\\textures\\jade_fields_atlas_128.png",
+      "bytes": 3338794,
+      "sha256": "3175c131be983bd985b8018c191d3a25c9ce00ea20baa31bbb2772833b9a5bd0",
+      "git_blob_sha1": "63d12bd3a6b1b95dbc39db51b02f545dc8313785",
+      "existed": false
+    },
+    {
+      "file": "assets/source-reference/saju-b-evolving-light-v002/runtime/textures/Jade_OriginalBaseColor_1024.png",
+      "destination": "D:\\Codex\\Work\\SaJuUiOneBug-20261010-Joseph\\repo\\assets\\source-reference\\saju-b-evolving-light-v002\\runtime\\textures\\Jade_OriginalBaseColor_1024.png",
+      "bytes": 804444,
+      "sha256": "29bdd5ab8a2c87715fd3aedae3f0465c8b6910b5a9c0e8b8bffeb84a03c6b824",
+      "git_blob_sha1": "03007864b83ff9a7f96929207d7f22dc7ec86ad8",
+      "existed": false
+    },
+    {
+      "file": "assets/source-reference/saju-b-evolving-light-v002/preview_keyframes/001.png",
+      "destination": "D:\\Codex\\Work\\SaJuUiOneBug-20261010-Joseph\\repo\\assets\\source-reference\\saju-b-evolving-light-v002\\preview_keyframes\\001.png",
+      "bytes": 188340,
+      "sha256": "f17790815107c4c5d751df92050c3e00c6c597f95843dfcd1b2c6c39c7735c54",
+      "git_blob_sha1": "f68667e393cd960c4d052e413c8a1517a1e88c87",
+      "existed": false
+    },
+    {
+      "file": "assets/source-reference/saju-b-evolving-light-v002/runtime/saju-jade-evolution.glsl",
+      "destination": "D:\\Codex\\Work\\SaJuUiOneBug-20261010-Joseph\\repo\\assets\\source-reference\\saju-b-evolving-light-v002\\runtime\\saju-jade-evolution.glsl",
+      "bytes": 4041,
+      "sha256": "7cfc8ad83f76f8b9505db1e0e38e94bd9ebd7b0c4282a686016c06a09e96255f",
+      "git_blob_sha1": "4fb94fcf27dcd2eb398667c46adfb3a1181caa0a",
+      "existed": false
+    },
+    {
+      "file": "assets/source-reference/saju-b-evolving-light-v002/runtime/saju-jade-evolution.mjs",
+      "destination": "D:\\Codex\\Work\\SaJuUiOneBug-20261010-Joseph\\repo\\assets\\source-reference\\saju-b-evolving-light-v002\\runtime\\saju-jade-evolution.mjs",
+      "bytes": 5678,
+      "sha256": "b92ffe42be37a8c52427ec6c104a56eb828c4e7f6a02b7d368b72921a46a9e7c",
+      "git_blob_sha1": "a58820dc3f6ff3a817afa1a1a1729ff0710669c3",
+      "existed": false
+    }
+  ],
+  "runtime_outputs_expected_byte_identical": [
+    {
+      "file": "public/spirits/jade-v002/body.glb",
+      "existed_before": true,
+      "canonical_sha256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+      "before_sha256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84"
+    },
+    {
+      "file": "public/spirits/jade-v002/fields.png",
+      "existed_before": true,
+      "canonical_sha256": "3175c131be983bd985b8018c191d3a25c9ce00ea20baa31bbb2772833b9a5bd0",
+      "before_sha256": "3175c131be983bd985b8018c191d3a25c9ce00ea20baa31bbb2772833b9a5bd0"
+    },
+    {
+      "file": "public/spirits/jade-v002/base-color.png",
+      "existed_before": true,
+      "canonical_sha256": "29bdd5ab8a2c87715fd3aedae3f0465c8b6910b5a9c0e8b8bffeb84a03c6b824",
+      "before_sha256": "29bdd5ab8a2c87715fd3aedae3f0465c8b6910b5a9c0e8b8bffeb84a03c6b824"
+    },
+    {
+      "file": "public/spirits/jade-v002/still.png",
+      "existed_before": true,
+      "canonical_sha256": "f17790815107c4c5d751df92050c3e00c6c597f95843dfcd1b2c6c39c7735c54",
+      "before_sha256": "f17790815107c4c5d751df92050c3e00c6c597f95843dfcd1b2c6c39c7735c54"
+    },
+    {
+      "file": "public/models/porcelain-hero-blink-v1.glb",
+      "existed_before": true,
+      "canonical_sha256": "57d7ee5b3c4e0b99eaadefb8095283bed44986beaa5a91c096dd7a0c514bf9c2",
+      "before_sha256": "57d7ee5b3c4e0b99eaadefb8095283bed44986beaa5a91c096dd7a0c514bf9c2"
+    }
+  ],
+  "sparse_configuration_unchanged": true,
+  "existing_files_overwritten": 0,
+  "protected_art_checkouts_written": 0,
+  "model_version_or_default_changed": false,
+  "new_fix_count_added": 0,
+  "previous_completed_art_tests_rerun": 0,
+  "original_failed_build_log_preserved": "D:/Codex/Results/SaJuUiBatchTwo-20261011-Joseph/production-build.log"
+}

@@ -1,0 +1,24 @@
+{
+  "status": "APPLIED_REPRODUCED_FIX_AWAITING_OWN_FOCUSED_BROWSER_PROOF",
+  "at_utc": "2026-10-11T02:55:37.783Z",
+  "number": 1,
+  "id": "saju-post-http-error-false-success",
+  "group": "http",
+  "file": "components/SajuInputModal.tsx",
+  "expected": 6,
+  "change": "Require response.ok before invoking the existing success callback or closing the Saju input draft. Non-2xx success-shaped JSON follows the existing error path and permits manual retry.",
+  "before_sha256": "7afc6b2bbd8d1bf77460f0891da405457c79b7309da853eb6d996b98cc2c8533",
+  "after_sha256": "014d78b2613b4d97192e19119b309cd0b2768b70dd3bc6d55e3b3e9e76418426",
+  "before_bytes": 14511,
+  "after_bytes": 14521,
+  "inverse_native_bytes_verified": true,
+  "replacements": [
+    {
+      "before": "if (data.success && data.fortune) {",
+      "after": "if (res.ok && data.success && data.fortune) {",
+      "count": 1
+    }
+  ],
+  "commit_created": false,
+  "push_performed": false
+}

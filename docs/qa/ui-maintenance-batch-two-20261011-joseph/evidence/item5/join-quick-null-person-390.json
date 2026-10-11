@@ -1,0 +1,12 @@
+{
+  "posts": 1,
+  "map_heading_visible": true,
+  "old_friend_visible": true,
+  "new_friend_visible": false,
+  "join_dialog_visible": false,
+  "draft": null,
+  "alerts": [
+    "등록 중 오류가 발생했습니다."
+  ],
+  "page_errors": []
+}

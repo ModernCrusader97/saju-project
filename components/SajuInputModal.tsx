@@ -3,7 +3,7 @@
 import { readApiResponse } from "@/lib/http-client";
 
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { X, Sparkles, Loader2 } from "lucide-react";
 
 import { HOUR_PERIODS } from "@/lib/saju/input";
@@ -37,6 +37,7 @@ export default function SajuInputModal({
 
   const [loading, setLoading] = useState(false);
   const [loadingStep, setLoadingStep] = useState(0);
+  const dialogRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -47,6 +48,41 @@ export default function SajuInputModal({
     }
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [isOpen, onClose]);
+
+  useEffect(() => {
+    if (!isOpen) return;
+    const dialog = dialogRef.current;
+    const opener = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+    if (!dialog) return;
+    dialog.querySelector<HTMLInputElement>("input")?.focus();
+    const containTab = (event: KeyboardEvent) => {
+      if (event.key !== "Tab" || event.altKey || event.ctrlKey || event.metaKey) return;
+      const controls = Array.from(dialog.querySelectorAll<HTMLElement>(
+        'button:not([disabled]),input:not([disabled]),select:not([disabled]),textarea:not([disabled]),a[href],[tabindex]'
+      )).filter(element => element.tabIndex >= 0 && element.getClientRects().length > 0);
+      if (!controls.length) return;
+      const first = controls[0], last = controls[controls.length - 1];
+      if (!controls.includes(document.activeElement as HTMLElement)
+        || (event.shiftKey && document.activeElement === first)
+        || (!event.shiftKey && document.activeElement === last)) {
+        event.preventDefault();
+        (event.shiftKey ? last : first).focus();
+      }
+    };
+    document.addEventListener("keydown", containTab);
+    return () => {
+      document.removeEventListener("keydown", containTab);
+      if (opener?.isConnected) opener.focus();
+    };
+  }, [isOpen]);
+
+  useEffect(() => {
+    if (!isOpen) return;
+    const dialog = dialogRef.current;
+    if (dialog && !dialog.contains(document.activeElement)) {
+      (dialog.querySelector<HTMLInputElement>("input") || dialog.querySelector<HTMLButtonElement>("button"))?.focus();
+    }
+  }, [isOpen, loading]);
 
   if (!isOpen) return null;
 
@@ -85,7 +121,7 @@ export default function SajuInputModal({
 
       const data = await readApiResponse(res);
 
-      if (data.success && data.fortune) {
+      if (res.ok && data.success && data.fortune) {
         if (onSuccess) {
           onSuccess(data.fortune);
         } else {
@@ -110,6 +146,10 @@ export default function SajuInputModal({
       onClick={onClose}
     >
       <div
+        ref={dialogRef}
+        role="dialog"
+        aria-modal="true"
+        aria-label={categoryTitle}
         className="w-full max-w-md bg-doryeong-ivory rounded-t-[32px] sm:rounded-[32px] shadow-2xl border border-doryeong-border flex flex-col max-h-[92vh] overflow-hidden animate-in slide-in-from-bottom duration-300"
         onClick={(e) => e.stopPropagation()}
       >
@@ -124,6 +164,8 @@ export default function SajuInputModal({
             </h2>
           </div>
           <button
+            type="button"
+            aria-label="사주 입력 닫기"
             onClick={onClose}
             className="p-1 rounded-full text-doryeong-textMuted hover:bg-black/5 transition-colors"
           >

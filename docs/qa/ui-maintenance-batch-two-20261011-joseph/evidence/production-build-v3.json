@@ -1,0 +1,9 @@
+{
+  "command": "Current batch npm build after byte-exact materialization of missing sparse canonical inputs; failed first log retained, no source edits or new art version",
+  "exit_code": 0,
+  "signal": null,
+  "spawn_error": null,
+  "at_utc": "2026-10-11T03:20:37.689Z",
+  "no_product_changes_since_current_batch_regression": true,
+  "no_install_deploy_api_db_or_credential_file_access": true
+}

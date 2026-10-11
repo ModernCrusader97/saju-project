@@ -1,0 +1,8 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+const work='D:/Codex/Work/SaJuUiBatchTwo-20261011-Joseph',results='D:/Codex/Results/SaJuUiBatchTwo-20261011-Joseph';let text=fs.readFileSync(work+'/authoring/recover_binding_build_v4.mjs','utf8');
+const uuid='/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(config[key])',binding='/^[A-Z][A-Z0-9_]{0,63}$/.test(config[key])';assert.equal(text.split(uuid).length-1,1);assert.equal(text.split(binding).length-1,1);
+text=text.replace(uuid,'/^[A-Za-z0-9_-]{1,100}$/.test(config[key])').replace(binding,'/^[A-Za-z_][A-Za-z0-9_]{0,63}$/.test(config[key])').replace('nonsecret_binding_names_and_project_resource_uuid_only:true','nonsecret_binding_names_and_project_resource_identifier_only:true');
+fs.writeFileSync(work+'/authoring/recover_binding_build_v5.mjs',text,{flag:'wx'});
+fs.writeFileSync(results+'/hosting-resource-id-format-diagnostic.json',JSON.stringify({status:'PASS_ACTUAL_NONSECRET_PROJECT_RESOURCE_IDENTIFIER_FORMAT_CONFIRMED',bytes:91,known_keys_only:['d1','r2','project_id'],binding_names_only:true,project_id_length:40,project_id_ascii_resource_identifier:true,project_id_uuid:false,prior_v4_uuid_assumption_incorrect_and_stopped_before_write:true,prior_schema_diagnostic_superseded_for_id_format:true,original_failed_helpers_retained:true,raw_values_not_printed_or_packaged:true,auth_billing_permission_database_or_product_change:false,new_fix_count_added:0},null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify({status:'PASS_ACTUAL_RESOURCE_ID_FORMAT_CONFIRMED_V5_HELPER_PREPARED',existing_config_written:false,raw_values_printed:false,new_fix_count_added:0}));

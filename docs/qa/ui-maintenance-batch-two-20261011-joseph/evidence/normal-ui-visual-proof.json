@@ -1,0 +1,67 @@
+{
+  "status": "PASS_ALL_EIGHT_UNCHANGED_NORMAL_UI_PNG_BYTES",
+  "normal_pngs": [
+    {
+      "file": "close-pointer-control-390.png",
+      "bytes": 39635,
+      "before_sha256": "51304c1a8f402bfed008c7ee1008f329adae597c0135f89eb5a25714340d6b55",
+      "final_sha256": "51304c1a8f402bfed008c7ee1008f329adae597c0135f89eb5a25714340d6b55",
+      "byte_identical": true
+    },
+    {
+      "file": "filter-pointer-control-390.png",
+      "bytes": 25566,
+      "before_sha256": "6dc6d65d90e4e67cec738aa9e1af552f0eaa04eb246d350636950e539479156e",
+      "final_sha256": "6dc6d65d90e4e67cec738aa9e1af552f0eaa04eb246d350636950e539479156e",
+      "byte_identical": true
+    },
+    {
+      "file": "join-manual-valid-390.png",
+      "bytes": 133742,
+      "before_sha256": "144c496b1777d859eab61b3dc844194092a29396ae2490166a9199aea655dfbd",
+      "final_sha256": "144c496b1777d859eab61b3dc844194092a29396ae2490166a9199aea655dfbd",
+      "byte_identical": true
+    },
+    {
+      "file": "join-quick-valid-390.png",
+      "bytes": 133742,
+      "before_sha256": "144c496b1777d859eab61b3dc844194092a29396ae2490166a9199aea655dfbd",
+      "final_sha256": "144c496b1777d859eab61b3dc844194092a29396ae2490166a9199aea655dfbd",
+      "byte_identical": true
+    },
+    {
+      "file": "close-pointer-control-1440.png",
+      "bytes": 51267,
+      "before_sha256": "f348ecf22e06fe878db27a52163a2ef6cf5ed62edc696cbd8f89b52faddc363f",
+      "final_sha256": "f348ecf22e06fe878db27a52163a2ef6cf5ed62edc696cbd8f89b52faddc363f",
+      "byte_identical": true
+    },
+    {
+      "file": "filter-pointer-control-1440.png",
+      "bytes": 34265,
+      "before_sha256": "280df2ffb9047a598b164f59c10a7d4ab85470e8cdff3b21ec770aef25167b48",
+      "final_sha256": "280df2ffb9047a598b164f59c10a7d4ab85470e8cdff3b21ec770aef25167b48",
+      "byte_identical": true
+    },
+    {
+      "file": "join-manual-valid-1440.png",
+      "bytes": 195858,
+      "before_sha256": "4910135a5f40720a0713800a370e310b0fd7d78d94c44df2ca8f0f7f33230903",
+      "final_sha256": "4910135a5f40720a0713800a370e310b0fd7d78d94c44df2ca8f0f7f33230903",
+      "byte_identical": true
+    },
+    {
+      "file": "join-quick-valid-1440.png",
+      "bytes": 195814,
+      "before_sha256": "0c5d5e6e7000f7bb1c7fcf4b312fc6fdaf23e72e08da34df98b97ed518a49f67",
+      "final_sha256": "0c5d5e6e7000f7bb1c7fcf4b312fc6fdaf23e72e08da34df98b97ed518a49f67",
+      "byte_identical": true
+    }
+  ],
+  "byte_identical_count": 8,
+  "css_sha256_before": "4e2f086b3fd0c53e4e5729a49947310046f415c5e7aa7ab4e0428ef8d8dd50ca",
+  "css_sha256_final": "4e2f086b3fd0c53e4e5729a49947310046f415c5e7aa7ab4e0428ef8d8dd50ca",
+  "css_bytes_identical": true,
+  "altered_images_or_masking": 0,
+  "generated_images": 0
+}

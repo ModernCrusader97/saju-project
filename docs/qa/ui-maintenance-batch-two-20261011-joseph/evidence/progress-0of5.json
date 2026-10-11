@@ -1,0 +1,34 @@
+{
+  "status": "PASS_NEW_SEPARATE_LOCAL_ART_UNCHANGED_UI_BRANCH_ZERO_OF_FIVE",
+  "at_utc": "2026-10-11T02:45:42.517Z",
+  "branch": "fix/ui-maintenance-batch-two-20261011-joseph",
+  "basis": "343e3c3ee2ca91f42eafe7e14fbae1b91c0e5893",
+  "validated_new_fix_count": 0,
+  "commit_created": false,
+  "push_performed": false,
+  "previous_completed_suites_rerun": 0,
+  "previous_completed_fixes_counted": 0,
+  "candidates": [
+    {
+      "id": "saju-post-http-error-false-success",
+      "mechanism": "Modal success callback and close ignores response.ok; hypothetical success-shaped non-2xx response must not be acknowledged."
+    },
+    {
+      "id": "saju-input-close-accessible-name",
+      "mechanism": "X-only close control has no accessible name."
+    },
+    {
+      "id": "saju-input-dialog-keyboard",
+      "mechanism": "Modal lacks dialog semantics, initial focus, Tab containment and opener focus restoration."
+    },
+    {
+      "id": "saved-category-selection-state",
+      "mechanism": "Category chip state is only visual; selection missing from accessible state."
+    },
+    {
+      "id": "guin-post-person-map-shape",
+      "mechanism": "Friend addition uses unvalidated POST map to set state, unlike already-completed GET validation."
+    }
+  ],
+  "candidates_not_yet_counted": true
+}

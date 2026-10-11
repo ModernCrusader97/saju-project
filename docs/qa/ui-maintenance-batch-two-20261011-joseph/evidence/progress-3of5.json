@@ -1,0 +1,93 @@
+{
+  "status": "PASS_3_OF_5_NEW_DISTINCT_UI_FIXES_VALIDATED_NO_INTERMEDIATE_COMMIT",
+  "at_utc": "2026-10-11T02:59:08.821Z",
+  "branch": "fix/ui-maintenance-batch-two-20261011-joseph",
+  "basis": "343e3c3ee2ca91f42eafe7e14fbae1b91c0e5893",
+  "validated_new_fix_count": 3,
+  "commit_batch_target": 5,
+  "fixes": [
+    {
+      "number": 1,
+      "id": "saju-post-http-error-false-success",
+      "file": "components/SajuInputModal.tsx",
+      "change": "Require response.ok before invoking the existing success callback or closing the Saju input draft. Non-2xx success-shaped JSON follows the existing error path and permits manual retry.",
+      "before_reproduction": {
+        "passed": 4,
+        "failed": 2
+      },
+      "after_focused_verification": {
+        "passed": 6,
+        "failed": 0
+      },
+      "browser": "154.0.8037.98",
+      "viewports": [
+        "390x844",
+        "1440x1000"
+      ],
+      "native_pointer_and_keyboard": true,
+      "manual_dom_events": 0,
+      "before_sha256": "7afc6b2bbd8d1bf77460f0891da405457c79b7309da853eb6d996b98cc2c8533",
+      "after_sha256": "014d78b2613b4d97192e19119b309cd0b2768b70dd3bc6d55e3b3e9e76418426",
+      "inverse_native_bytes_verified": true,
+      "proof": "D:/Codex/Results/SaJuUiBatchTwo-20261011-Joseph/item1/browser-results.json"
+    },
+    {
+      "number": 2,
+      "id": "saju-input-close-accessible-name",
+      "file": "components/SajuInputModal.tsx",
+      "change": "Give the existing X close control an explicit name and button type; preserve pointer closing and permit native Tab/Enter identification.",
+      "before_reproduction": {
+        "passed": 2,
+        "failed": 2
+      },
+      "after_focused_verification": {
+        "passed": 4,
+        "failed": 0
+      },
+      "browser": "154.0.8037.98",
+      "viewports": [
+        "390x844",
+        "1440x1000"
+      ],
+      "native_pointer_and_keyboard": true,
+      "manual_dom_events": 0,
+      "before_sha256": "014d78b2613b4d97192e19119b309cd0b2768b70dd3bc6d55e3b3e9e76418426",
+      "after_sha256": "5dfad61f027020e669944964934721f223ee7f73b98f0525417dde33795bcae0",
+      "inverse_native_bytes_verified": true,
+      "proof": "D:/Codex/Results/SaJuUiBatchTwo-20261011-Joseph/item2/browser-results.json"
+    },
+    {
+      "number": 3,
+      "id": "saju-input-dialog-keyboard",
+      "file": "components/SajuInputModal.tsx",
+      "change": "Name the input pane as a modal dialog, focus its first input, contain native Tab/Shift+Tab, restore the opener, and keep focus inside when submission temporarily removes the form.",
+      "before_reproduction": {
+        "passed": 0,
+        "failed": 4
+      },
+      "after_focused_verification": {
+        "passed": 4,
+        "failed": 0
+      },
+      "browser": "154.0.8037.98",
+      "viewports": [
+        "390x844",
+        "1440x1000"
+      ],
+      "native_pointer_and_keyboard": true,
+      "manual_dom_events": 0,
+      "before_sha256": "5dfad61f027020e669944964934721f223ee7f73b98f0525417dde33795bcae0",
+      "after_sha256": "b309a761c60404360e164f46efe8c535ebf831d84c0bc08d335b30c05e9d8956",
+      "inverse_native_bytes_verified": true,
+      "proof": "D:/Codex/Results/SaJuUiBatchTwo-20261011-Joseph/item3/browser-results.json"
+    }
+  ],
+  "ordinary_commit_count": 0,
+  "nonforce_push_count": 0,
+  "commit_created": false,
+  "push_performed": false,
+  "previous_completed_fixes_counted": 0,
+  "previous_completed_suites_rerun": 0,
+  "remaining": "Current-batch full regression and type/build/lint gates required before publishing five fixes.",
+  "limits": "Production SajuInputModal, saved list category chips, and Guin POST friend-map consumption with fictional intercepted APIs at 390x844 and 1440x1000. Host fixture, next/navigation and next/link are fixed test boundaries; only heavy GalaxyCanvas is blank. No backend/DB/Gemini/user storage or clipboard/3D/hosted route/physical device claim. Prior completed UI/model suites excluded."
+}

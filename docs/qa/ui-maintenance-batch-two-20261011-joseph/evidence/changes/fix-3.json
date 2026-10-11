@@ -1,0 +1,39 @@
+{
+  "status": "APPLIED_REPRODUCED_FIX_AWAITING_OWN_FOCUSED_BROWSER_PROOF",
+  "at_utc": "2026-10-11T02:58:57.403Z",
+  "number": 3,
+  "id": "saju-input-dialog-keyboard",
+  "group": "dialog",
+  "file": "components/SajuInputModal.tsx",
+  "expected": 4,
+  "change": "Name the input pane as a modal dialog, focus its first input, contain native Tab/Shift+Tab, restore the opener, and keep focus inside when submission temporarily removes the form.",
+  "before_sha256": "5dfad61f027020e669944964934721f223ee7f73b98f0525417dde33795bcae0",
+  "after_sha256": "b309a761c60404360e164f46efe8c535ebf831d84c0bc08d335b30c05e9d8956",
+  "before_bytes": 14595,
+  "after_bytes": 16393,
+  "inverse_native_bytes_verified": true,
+  "replacements": [
+    {
+      "before": "import React, { useState, useEffect } from \"react\";",
+      "after": "import React, { useState, useEffect, useRef } from \"react\";",
+      "count": 1
+    },
+    {
+      "before": "  const [loadingStep, setLoadingStep] = useState(0);\r\n",
+      "after": "  const [loadingStep, setLoadingStep] = useState(0);\r\n  const dialogRef = useRef<HTMLDivElement>(null);\r\n",
+      "count": 1
+    },
+    {
+      "before": "  if (!isOpen) return null;",
+      "after": "  useEffect(() => {\r\n    if (!isOpen) return;\r\n    const dialog = dialogRef.current;\r\n    const opener = document.activeElement instanceof HTMLElement ? document.activeElement : null;\r\n    if (!dialog) return;\r\n    dialog.querySelector<HTMLInputElement>(\"input\")?.focus();\r\n    const containTab = (event: KeyboardEvent) => {\r\n      if (event.key !== \"Tab\" || event.altKey || event.ctrlKey || event.metaKey) return;\r\n      const controls = Array.from(dialog.querySelectorAll<HTMLElement>(\r\n        'button:not([disabled]),input:not([disabled]),select:not([disabled]),textarea:not([disabled]),a[href],[tabindex]'\r\n      )).filter(element => element.tabIndex >= 0 && element.getClientRects().length > 0);\r\n      if (!controls.length) return;\r\n      const first = controls[0], last = controls[controls.length - 1];\r\n      if (!controls.includes(document.activeElement as HTMLElement)\r\n        || (event.shiftKey && document.activeElement === first)\r\n        || (!event.shiftKey && document.activeElement === last)) {\r\n        event.preventDefault();\r\n        (event.shiftKey ? last : first).focus();\r\n      }\r\n    };\r\n    document.addEventListener(\"keydown\", containTab);\r\n    return () => {\r\n      document.removeEventListener(\"keydown\", containTab);\r\n      if (opener?.isConnected) opener.focus();\r\n    };\r\n  }, [isOpen]);\r\n\r\n  useEffect(() => {\r\n    if (!isOpen) return;\r\n    const dialog = dialogRef.current;\r\n    if (dialog && !dialog.contains(document.activeElement)) {\r\n      (dialog.querySelector<HTMLInputElement>(\"input\") || dialog.querySelector<HTMLButtonElement>(\"button\"))?.focus();\r\n    }\r\n  }, [isOpen, loading]);\r\n\r\n  if (!isOpen) return null;",
+      "count": 1
+    },
+    {
+      "before": "<div\r\n        className=\"w-full max-w-md",
+      "after": "<div\r\n        ref={dialogRef}\r\n        role=\"dialog\"\r\n        aria-modal=\"true\"\r\n        aria-label={categoryTitle}\r\n        className=\"w-full max-w-md",
+      "count": 1
+    }
+  ],
+  "commit_created": false,
+  "push_performed": false
+}

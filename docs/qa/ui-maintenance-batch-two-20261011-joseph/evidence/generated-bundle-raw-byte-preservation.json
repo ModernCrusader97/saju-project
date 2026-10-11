@@ -1,0 +1,21 @@
+{
+  "status": "PASS_RECORDED_GENERATED_BROWSER_BUNDLES_PRESERVED_AS_RAW_BINARY_DIFFS_ONLY",
+  "at_utc": "2026-10-11T03:33:45.935Z",
+  "previous_attributes_sha256": "39a5f7fcc58355e3b0470d7f05f06c805f9589efbecd5daeb2a81973005afe6b",
+  "new_attributes_sha256": "f610b665f5aa15047e03f4f1aec216fe57a2da1b0737a97fea388b38e0fd524f",
+  "raw_failed_staged_check": "evidence/staged-raw-evidence-whitespace-before.log",
+  "raw_check_bytes": 37250,
+  "raw_check_sha256": "f52d8f86cd653e600048cd60a9d297297d1f5cd5ea1460ed780b5b270a239873",
+  "generated_bundle_files": 8,
+  "preexisting_space_before_tab_diagnostics_per_bundle": 26,
+  "product_diagnostics_in_failed_check": 0,
+  "product_diff_or_whitespace_check_disabled": false,
+  "lint_config_or_suppressions_changed": false,
+  "raw_native_or_bundle_bytes_edited": 0,
+  "previous_scope_or_global_git_config_changes": 0,
+  "commit_count_before_resume": 0,
+  "push_count_before_resume": 0,
+  "resume_script": "authoring/commit_batch_two_resume_v2.mjs",
+  "resume_precondition": "Exact already-staged three products plus own new QA/evidence only; final native products and staged blobs rehashed; HEAD remains basis and commit/push receipts do not exist.",
+  "reason": "Recorded esbuild browser bundles include dependency indentation; keep complete original bytes, treat these generated raw artifacts as binary diffs, and retain staged whitespace checks on product/QA/readable evidence."
+}

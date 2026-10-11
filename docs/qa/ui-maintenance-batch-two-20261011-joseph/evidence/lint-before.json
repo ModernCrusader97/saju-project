@@ -1,0 +1,98 @@
+{
+  "status": "RECORDED_BASELINE_WITH_REAL_PRODUCT_FILENAMES",
+  "at_utc": "2026-10-11T02:52:46.822Z",
+  "records": [
+    {
+      "file": "components/SajuInputModal.tsx",
+      "errorCount": 2,
+      "warningCount": 3,
+      "messages": [
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'Loader2' is defined but never used.",
+          "line": 7,
+          "column": 23
+        },
+        {
+          "ruleId": "@next/next/no-location-assign-relative-destination",
+          "severity": 1,
+          "message": "Do not use `window.location.assign()` to navigate to internal Next.js pages. Use `redirect()` in the render phase, or `useRouter().push()` in Client Components' event handlers instead. See: https://nextjs.org/docs/messages/no-location-assign-relative-destination",
+          "line": 92,
+          "column": 11
+        },
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'err' is defined but never used.",
+          "line": 98,
+          "column": 14
+        },
+        {
+          "ruleId": "@typescript-eslint/no-explicit-any",
+          "severity": 2,
+          "message": "Unexpected any. Specify a different type.",
+          "line": 98,
+          "column": 19
+        },
+        {
+          "ruleId": "@typescript-eslint/no-explicit-any",
+          "severity": 2,
+          "message": "Unexpected any. Specify a different type.",
+          "line": 214,
+          "column": 63
+        }
+      ]
+    },
+    {
+      "file": "app/saved/page.tsx",
+      "errorCount": 0,
+      "warningCount": 0,
+      "messages": []
+    },
+    {
+      "file": "app/guin/[id]/page.tsx",
+      "errorCount": 2,
+      "warningCount": 3,
+      "messages": [
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'Share2' is defined but never used.",
+          "line": 13,
+          "column": 3
+        },
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'Flame' is defined but never used.",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'Sliders' is defined but never used.",
+          "line": 26,
+          "column": 10
+        },
+        {
+          "ruleId": "@next/next/no-html-link-for-pages",
+          "severity": 2,
+          "message": "Do not use an `<a>` element to navigate to `/guin/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages",
+          "line": 261,
+          "column": 9
+        },
+        {
+          "ruleId": "@next/next/no-html-link-for-pages",
+          "severity": 2,
+          "message": "Do not use an `<a>` element to navigate to `/guin/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages",
+          "line": 275,
+          "column": 11
+        }
+      ]
+    }
+  ],
+  "errors": 4,
+  "warnings": 6
+}

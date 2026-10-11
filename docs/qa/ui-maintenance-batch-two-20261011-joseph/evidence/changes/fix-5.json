@@ -1,0 +1,39 @@
+{
+  "status": "APPLIED_REPRODUCED_FIX_AWAITING_OWN_FOCUSED_BROWSER_PROOF",
+  "at_utc": "2026-10-11T03:00:47.863Z",
+  "number": 5,
+  "id": "guin-post-person-map-shape",
+  "group": "join",
+  "file": "app/guin/[id]/page.tsx",
+  "expected": 8,
+  "change": "Validate the POST friend map before acknowledging either manual or quick addition, retaining the current map and manual draft on malformed people. Existing GET validation stays byte-identical.",
+  "before_sha256": "fa83ace810ccce8f166af7282705684573c2f6c9f81cdaaa4f8952c38700f29a",
+  "after_sha256": "bc95942c2d8d2c9ab9df2a5b324126a13e57cc7b01665df0128c44f9cd912a61",
+  "before_bytes": 32539,
+  "after_bytes": 33824,
+  "inverse_native_bytes_verified": true,
+  "replacements": [
+    {
+      "before": "import GalaxyPokedexModal from \"@/components/planet/GalaxyPokedexModal\";\r\n",
+      "after": "import GalaxyPokedexModal from \"@/components/planet/GalaxyPokedexModal\";\r\n\r\nfunction canRenderAddedGuinMap(value: unknown, mapId: string): value is GuinMapData {\r\n  if (!value || typeof value !== \"object\" || Array.isArray(value)) return false;\r\n  const candidate = value as Record<string, unknown>;\r\n  return candidate.id === mapId\r\n    && [\"ownerName\", \"ownerBirth\", \"ownerDayMaster\", \"ownerTheme\", \"createdAt\"].every(key => typeof candidate[key] === \"string\")\r\n    && Array.isArray(candidate.guins) && candidate.guins.every(value => {\r\n      if (!value || typeof value !== \"object\" || Array.isArray(value)) return false;\r\n      const person = value as Record<string, unknown>;\r\n      return [\"id\", \"name\", \"relationTitle\", \"dayMaster\", \"elementMatch\", \"advice\"].every(key => typeof person[key] === \"string\")\r\n        && typeof person.relationType === \"string\" && [\"mentor\", \"partner\", \"supporter\", \"grounding\"].includes(person.relationType)\r\n        && typeof person.affinityScore === \"number\" && Number.isFinite(person.affinityScore)\r\n        && (person.isMe === undefined || typeof person.isMe === \"boolean\");\r\n    });\r\n}\r\n",
+      "count": 1
+    },
+    {
+      "before": "if (data.success && data.guinMap) {",
+      "after": "if (data.success && canRenderAddedGuinMap(data.guinMap, mapId)) {",
+      "count": 2
+    },
+    {
+      "before": "        setMapData(data.guinMap);\r\n      }\r\n    } catch {",
+      "after": "        setMapData(data.guinMap);\r\n      } else {\r\n        throw new Error(\"등록 중 오류가 발생했습니다.\");\r\n      }\r\n    } catch {",
+      "count": 1
+    },
+    {
+      "before": "        alert(`${mapData?.ownerName}님의 우리은하에 등록되었습니다! ✨`);\r\n      }\r\n    } catch {",
+      "after": "        alert(`${mapData?.ownerName}님의 우리은하에 등록되었습니다! ✨`);\r\n      } else {\r\n        throw new Error(\"등록 중 오류가 발생했습니다.\");\r\n      }\r\n    } catch {",
+      "count": 1
+    }
+  ],
+  "commit_created": false,
+  "push_performed": false
+}

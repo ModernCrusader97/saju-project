@@ -1,0 +1,6 @@
+* -text
+# Preserve raw process logs and native before/after snapshots byte-exact.
+*.log -diff
+evidence/basis-native-source/*.tsx -diff
+evidence/changes/*.tsx -diff
+evidence/**/bundle.js -diff

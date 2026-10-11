@@ -1,0 +1,17 @@
+{
+  "status": "PASS_ONLY_MISSING_NONSECRET_LOCAL_BINDING_CONFIG_RESTORED_BYTE_EXACT",
+  "basis": "343e3c3ee2ca91f42eafe7e14fbae1b91c0e5893",
+  "relative_path": ".openai/hosting.json",
+  "bytes": 91,
+  "sha256": "9e1fb7eef4d729865c16d638f731f2f37d27bbec12a3345e48cdc44d51dd1f6f",
+  "git_blob_sha1": "38e0db4fb5cfcb7b6e490216c0ca4dfbf9d4d2a1",
+  "nonsecret_binding_names_and_project_resource_identifier_only": true,
+  "raw_config_not_printed_or_packaged": true,
+  "source": "Exact existing project Git blob, consumed by vite.config.ts only for local D1/R2 binding identifiers and placeholder resource IDs.",
+  "existing_files_overwritten": 0,
+  "authentication_billing_permission_or_database_data_change": false,
+  "sparse_configuration_unchanged": true,
+  "external_requests": 0,
+  "new_fix_count_added": 0,
+  "failed_second_build_log_retained": "D:/Codex/Results/SaJuUiBatchTwo-20261011-Joseph/production-build-v2.log"
+}

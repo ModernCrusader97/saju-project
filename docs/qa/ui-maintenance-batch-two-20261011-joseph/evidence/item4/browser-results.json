@@ -1,0 +1,201 @@
+{
+  "status": "PASS",
+  "phase": "item4",
+  "at_utc": "2026-10-11T03:00:46.925Z",
+  "browser": "154.0.8037.98",
+  "products": {
+    "components/SajuInputModal.tsx": "b309a761c60404360e164f46efe8c535ebf831d84c0bc08d335b30c05e9d8956",
+    "app/saved/page.tsx": "0d86e8fec1257881c16e841a6ce1aca3c48a7fcd6066388e56bd2b33fb19f4fc",
+    "app/guin/[id]/page.tsx": "fa83ace810ccce8f166af7282705684573c2f6c9f81cdaaa4f8952c38700f29a"
+  },
+  "harness_sha256": "66d3a810e0b86a7e412ff4c0dd957ec51019d0be17975b657b346aa12900dfe8",
+  "css_sha256": "4e2f086b3fd0c53e4e5729a49947310046f415c5e7aa7ab4e0428ef8d8dd50ca",
+  "passed": 4,
+  "failed": 0,
+  "groups": {
+    "filter": {
+      "passed": 4,
+      "failed": 0
+    }
+  },
+  "checks": [
+    {
+      "group": "filter",
+      "name": "pointer-control 390",
+      "observed": {
+        "initial": {
+          "all": "true",
+          "love": "false"
+        },
+        "selected": {
+          "all": "false",
+          "love": "true"
+        },
+        "matching_rows": 1,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "filter",
+      "name": "selected-keyboard 390",
+      "observed": {
+        "initial": {
+          "all": "true",
+          "love": "false"
+        },
+        "selected": {
+          "all": "false",
+          "love": "true"
+        },
+        "matching_rows": 1,
+        "page_errors": [],
+        "reset": {
+          "all": "true",
+          "love": "false"
+        }
+      },
+      "pass": true
+    },
+    {
+      "group": "filter",
+      "name": "pointer-control 1440",
+      "observed": {
+        "initial": {
+          "all": "true",
+          "love": "false"
+        },
+        "selected": {
+          "all": "false",
+          "love": "true"
+        },
+        "matching_rows": 1,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "filter",
+      "name": "selected-keyboard 1440",
+      "observed": {
+        "initial": {
+          "all": "true",
+          "love": "false"
+        },
+        "selected": {
+          "all": "false",
+          "love": "true"
+        },
+        "matching_rows": 1,
+        "page_errors": [],
+        "reset": {
+          "all": "true",
+          "love": "false"
+        }
+      },
+      "pass": true
+    }
+  ],
+  "observations": [
+    {
+      "group": "filter",
+      "mode": "pointer-control",
+      "width": 390,
+      "initial": {
+        "all": "true",
+        "love": "false"
+      },
+      "selected": {
+        "all": "false",
+        "love": "true"
+      },
+      "matching_rows": 1,
+      "page_errors": []
+    },
+    {
+      "group": "filter",
+      "mode": "selected-keyboard",
+      "width": 390,
+      "initial": {
+        "all": "true",
+        "love": "false"
+      },
+      "selected": {
+        "all": "false",
+        "love": "true"
+      },
+      "matching_rows": 1,
+      "page_errors": []
+    },
+    {
+      "group": "filter",
+      "mode": "pointer-control",
+      "width": 1440,
+      "initial": {
+        "all": "true",
+        "love": "false"
+      },
+      "selected": {
+        "all": "false",
+        "love": "true"
+      },
+      "matching_rows": 1,
+      "page_errors": []
+    },
+    {
+      "group": "filter",
+      "mode": "selected-keyboard",
+      "width": 1440,
+      "initial": {
+        "all": "true",
+        "love": "false"
+      },
+      "selected": {
+        "all": "false",
+        "love": "true"
+      },
+      "matching_rows": 1,
+      "page_errors": []
+    }
+  ],
+  "page_errors": [],
+  "console_errors": [],
+  "expected_console_errors": [],
+  "outbound_requests": [],
+  "synthetic_gets": [
+    {
+      "group": "filter",
+      "mode": "pointer-control",
+      "width": 390,
+      "endpoint": "summary"
+    },
+    {
+      "group": "filter",
+      "mode": "selected-keyboard",
+      "width": 390,
+      "endpoint": "summary"
+    },
+    {
+      "group": "filter",
+      "mode": "pointer-control",
+      "width": 1440,
+      "endpoint": "summary"
+    },
+    {
+      "group": "filter",
+      "mode": "selected-keyboard",
+      "width": 1440,
+      "endpoint": "summary"
+    }
+  ],
+  "synthetic_posts": [],
+  "actual_backend_requests": 0,
+  "database_operations": 0,
+  "actual_ai_provider_calls": 0,
+  "user_clipboard_access": 0,
+  "native_pointer_and_keyboard": true,
+  "manual_dom_events": 0,
+  "previous_completed_suites_rerun": 0,
+  "previous_completed_fixes_counted": 0,
+  "scope": "Production SajuInputModal, saved list category chips, and Guin POST friend-map consumption with fictional intercepted APIs at 390x844 and 1440x1000. Host fixture, next/navigation and next/link are fixed test boundaries; only heavy GalaxyCanvas is blank. No backend/DB/Gemini/user storage or clipboard/3D/hosted route/physical device claim. Prior completed UI/model suites excluded."
+}

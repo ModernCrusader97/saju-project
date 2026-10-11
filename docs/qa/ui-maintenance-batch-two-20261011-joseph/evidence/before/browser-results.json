@@ -1,0 +1,1012 @@
+{
+  "status": "FAIL",
+  "phase": "before",
+  "at_utc": "2026-10-11T02:52:32.447Z",
+  "browser": "154.0.8037.98",
+  "products": {
+    "components/SajuInputModal.tsx": "7afc6b2bbd8d1bf77460f0891da405457c79b7309da853eb6d996b98cc2c8533",
+    "app/saved/page.tsx": "2498425ac485e328ef7846fa06d5e1dd1de5dad42a87bc2527393714688aefb7",
+    "app/guin/[id]/page.tsx": "fa83ace810ccce8f166af7282705684573c2f6c9f81cdaaa4f8952c38700f29a"
+  },
+  "harness_sha256": "7b60d19053f74c11f0f3e89f9659edbe92ec731b1cdbcb8171e1d7b60595c3aa",
+  "css_sha256": "4e2f086b3fd0c53e4e5729a49947310046f415c5e7aa7ab4e0428ef8d8dd50ca",
+  "passed": 11,
+  "failed": 15,
+  "groups": {
+    "http": {
+      "passed": 3,
+      "failed": 3
+    },
+    "close": {
+      "passed": 2,
+      "failed": 2
+    },
+    "dialog": {
+      "passed": 0,
+      "failed": 4
+    },
+    "filter": {
+      "passed": 2,
+      "failed": 2
+    },
+    "join": {
+      "passed": 4,
+      "failed": 4
+    }
+  },
+  "checks": [
+    {
+      "group": "http",
+      "name": "valid 390",
+      "pass": false,
+      "error": "page.goto: Timeout 4000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:4017/saju-input\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "group": "http",
+      "name": "error-status 390",
+      "pass": false,
+      "error": "An error response must not call success or close the draft.\n\n1 !== 0\n"
+    },
+    {
+      "group": "http",
+      "name": "declared-failure 390",
+      "observed": {
+        "success_callbacks": 0,
+        "modal_visible": true,
+        "draft": "가상 입력",
+        "alerts": [
+          "가상 풀이 오류"
+        ],
+        "posts": 1,
+        "page_errors": [],
+        "native_manual_retry_recovered": true
+      },
+      "pass": true
+    },
+    {
+      "group": "close",
+      "name": "pointer-control 390",
+      "observed": {
+        "named_close_count": 0,
+        "page_errors": [],
+        "closed_with_native_input": true
+      },
+      "pass": true
+    },
+    {
+      "group": "close",
+      "name": "named-keyboard 390",
+      "pass": false,
+      "error": "Close control must have its own accessible name.\n\n0 !== 1\n"
+    },
+    {
+      "group": "dialog",
+      "name": "normal 390",
+      "pass": false,
+      "error": "The expression evaluated to a falsy value:\n\n  assert(observed.backward_wraps_to_submit)\n"
+    },
+    {
+      "group": "dialog",
+      "name": "busy 390",
+      "pass": false,
+      "error": "The expression evaluated to a falsy value:\n\n  assert(observed.busy_focus_contained)\n"
+    },
+    {
+      "group": "filter",
+      "name": "pointer-control 390",
+      "observed": {
+        "initial": {
+          "all": null,
+          "love": null
+        },
+        "selected": {
+          "all": null,
+          "love": null
+        },
+        "matching_rows": 1,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "filter",
+      "name": "selected-keyboard 390",
+      "pass": false,
+      "error": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  {\n+   all: null,\n+   love: null\n-   all: 'true',\n-   love: 'false'\n  }\n"
+    },
+    {
+      "group": "join",
+      "name": "manual-valid 390",
+      "observed": {
+        "posts": 1,
+        "map_heading_visible": true,
+        "old_friend_visible": true,
+        "new_friend_visible": true,
+        "join_dialog_visible": false,
+        "draft": null,
+        "alerts": [
+          "검증주인님의 우리은하에 등록되었습니다! ✨"
+        ],
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "join",
+      "name": "manual-object-name 390",
+      "pass": false,
+      "error": "Malformed POST map must not crash the existing map render.\n\n1 !== 0\n"
+    },
+    {
+      "group": "join",
+      "name": "quick-valid 390",
+      "observed": {
+        "posts": 1,
+        "map_heading_visible": true,
+        "old_friend_visible": true,
+        "new_friend_visible": true,
+        "join_dialog_visible": false,
+        "draft": null,
+        "alerts": [],
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "join",
+      "name": "quick-null-person 390",
+      "pass": false,
+      "error": "Malformed POST map must not crash the existing map render.\n\n1 !== 0\n"
+    },
+    {
+      "group": "http",
+      "name": "valid 1440",
+      "observed": {
+        "success_callbacks": 1,
+        "modal_visible": false,
+        "draft": null,
+        "alerts": [],
+        "posts": 1,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "http",
+      "name": "error-status 1440",
+      "pass": false,
+      "error": "An error response must not call success or close the draft.\n\n1 !== 0\n"
+    },
+    {
+      "group": "http",
+      "name": "declared-failure 1440",
+      "observed": {
+        "success_callbacks": 0,
+        "modal_visible": true,
+        "draft": "가상 입력",
+        "alerts": [
+          "가상 풀이 오류"
+        ],
+        "posts": 1,
+        "page_errors": [],
+        "native_manual_retry_recovered": true
+      },
+      "pass": true
+    },
+    {
+      "group": "close",
+      "name": "pointer-control 1440",
+      "observed": {
+        "named_close_count": 0,
+        "page_errors": [],
+        "closed_with_native_input": true
+      },
+      "pass": true
+    },
+    {
+      "group": "close",
+      "name": "named-keyboard 1440",
+      "pass": false,
+      "error": "Close control must have its own accessible name.\n\n0 !== 1\n"
+    },
+    {
+      "group": "dialog",
+      "name": "normal 1440",
+      "pass": false,
+      "error": "The expression evaluated to a falsy value:\n\n  assert(observed.backward_wraps_to_submit)\n"
+    },
+    {
+      "group": "dialog",
+      "name": "busy 1440",
+      "pass": false,
+      "error": "The expression evaluated to a falsy value:\n\n  assert(observed.busy_focus_contained)\n"
+    },
+    {
+      "group": "filter",
+      "name": "pointer-control 1440",
+      "observed": {
+        "initial": {
+          "all": null,
+          "love": null
+        },
+        "selected": {
+          "all": null,
+          "love": null
+        },
+        "matching_rows": 1,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "filter",
+      "name": "selected-keyboard 1440",
+      "pass": false,
+      "error": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  {\n+   all: null,\n+   love: null\n-   all: 'true',\n-   love: 'false'\n  }\n"
+    },
+    {
+      "group": "join",
+      "name": "manual-valid 1440",
+      "observed": {
+        "posts": 1,
+        "map_heading_visible": true,
+        "old_friend_visible": true,
+        "new_friend_visible": true,
+        "join_dialog_visible": false,
+        "draft": null,
+        "alerts": [
+          "검증주인님의 우리은하에 등록되었습니다! ✨"
+        ],
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "join",
+      "name": "manual-object-name 1440",
+      "pass": false,
+      "error": "Malformed POST map must not crash the existing map render.\n\n1 !== 0\n"
+    },
+    {
+      "group": "join",
+      "name": "quick-valid 1440",
+      "observed": {
+        "posts": 1,
+        "map_heading_visible": true,
+        "old_friend_visible": true,
+        "new_friend_visible": true,
+        "join_dialog_visible": false,
+        "draft": null,
+        "alerts": [],
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "join",
+      "name": "quick-null-person 1440",
+      "pass": false,
+      "error": "Malformed POST map must not crash the existing map render.\n\n1 !== 0\n"
+    }
+  ],
+  "observations": [
+    {
+      "group": "http",
+      "mode": "error-status",
+      "width": 390,
+      "success_callbacks": 1,
+      "modal_visible": false,
+      "draft": null,
+      "alerts": [],
+      "posts": 1,
+      "page_errors": []
+    },
+    {
+      "group": "http",
+      "mode": "declared-failure",
+      "width": 390,
+      "success_callbacks": 0,
+      "modal_visible": true,
+      "draft": "가상 입력",
+      "alerts": [
+        "가상 풀이 오류"
+      ],
+      "posts": 1,
+      "page_errors": []
+    },
+    {
+      "group": "close",
+      "mode": "pointer-control",
+      "width": 390,
+      "named_close_count": 0,
+      "page_errors": []
+    },
+    {
+      "group": "close",
+      "mode": "named-keyboard",
+      "width": 390,
+      "named_close_count": 0,
+      "page_errors": []
+    },
+    {
+      "group": "dialog",
+      "mode": "normal",
+      "width": 390,
+      "named_modal_count": 0,
+      "aria_modal": null,
+      "initial_name_focus": false,
+      "backward_wraps_to_submit": false,
+      "forward_wraps_to_close": true
+    },
+    {
+      "group": "dialog",
+      "mode": "busy",
+      "width": 390,
+      "named_modal_count": 0,
+      "aria_modal": null,
+      "initial_name_focus": false,
+      "busy_focus_contained": false,
+      "busy_tab_contained": false
+    },
+    {
+      "group": "filter",
+      "mode": "pointer-control",
+      "width": 390,
+      "initial": {
+        "all": null,
+        "love": null
+      },
+      "selected": {
+        "all": null,
+        "love": null
+      },
+      "matching_rows": 1,
+      "page_errors": []
+    },
+    {
+      "group": "filter",
+      "mode": "selected-keyboard",
+      "width": 390,
+      "initial": {
+        "all": null,
+        "love": null
+      },
+      "selected": {
+        "all": null,
+        "love": null
+      },
+      "matching_rows": 1,
+      "page_errors": []
+    },
+    {
+      "group": "join",
+      "mode": "manual-valid",
+      "width": 390,
+      "posts": 1,
+      "map_heading_visible": true,
+      "old_friend_visible": true,
+      "new_friend_visible": true,
+      "join_dialog_visible": false,
+      "draft": null,
+      "alerts": [
+        "검증주인님의 우리은하에 등록되었습니다! ✨"
+      ],
+      "page_errors": []
+    },
+    {
+      "group": "join",
+      "mode": "manual-object-name",
+      "width": 390,
+      "posts": 1,
+      "map_heading_visible": false,
+      "old_friend_visible": false,
+      "new_friend_visible": false,
+      "join_dialog_visible": false,
+      "draft": null,
+      "alerts": [
+        "검증주인님의 우리은하에 등록되었습니다! ✨"
+      ],
+      "page_errors": [
+        "person.name.substring is not a function"
+      ]
+    },
+    {
+      "group": "join",
+      "mode": "quick-valid",
+      "width": 390,
+      "posts": 1,
+      "map_heading_visible": true,
+      "old_friend_visible": true,
+      "new_friend_visible": true,
+      "join_dialog_visible": false,
+      "draft": null,
+      "alerts": [],
+      "page_errors": []
+    },
+    {
+      "group": "join",
+      "mode": "quick-null-person",
+      "width": 390,
+      "posts": 1,
+      "map_heading_visible": false,
+      "old_friend_visible": false,
+      "new_friend_visible": false,
+      "join_dialog_visible": false,
+      "draft": null,
+      "alerts": [],
+      "page_errors": [
+        "Cannot read properties of null (reading 'isMe')"
+      ]
+    },
+    {
+      "group": "http",
+      "mode": "valid",
+      "width": 1440,
+      "success_callbacks": 1,
+      "modal_visible": false,
+      "draft": null,
+      "alerts": [],
+      "posts": 1,
+      "page_errors": []
+    },
+    {
+      "group": "http",
+      "mode": "error-status",
+      "width": 1440,
+      "success_callbacks": 1,
+      "modal_visible": false,
+      "draft": null,
+      "alerts": [],
+      "posts": 1,
+      "page_errors": []
+    },
+    {
+      "group": "http",
+      "mode": "declared-failure",
+      "width": 1440,
+      "success_callbacks": 0,
+      "modal_visible": true,
+      "draft": "가상 입력",
+      "alerts": [
+        "가상 풀이 오류"
+      ],
+      "posts": 1,
+      "page_errors": []
+    },
+    {
+      "group": "close",
+      "mode": "pointer-control",
+      "width": 1440,
+      "named_close_count": 0,
+      "page_errors": []
+    },
+    {
+      "group": "close",
+      "mode": "named-keyboard",
+      "width": 1440,
+      "named_close_count": 0,
+      "page_errors": []
+    },
+    {
+      "group": "dialog",
+      "mode": "normal",
+      "width": 1440,
+      "named_modal_count": 0,
+      "aria_modal": null,
+      "initial_name_focus": false,
+      "backward_wraps_to_submit": false,
+      "forward_wraps_to_close": true
+    },
+    {
+      "group": "dialog",
+      "mode": "busy",
+      "width": 1440,
+      "named_modal_count": 0,
+      "aria_modal": null,
+      "initial_name_focus": false,
+      "busy_focus_contained": false,
+      "busy_tab_contained": false
+    },
+    {
+      "group": "filter",
+      "mode": "pointer-control",
+      "width": 1440,
+      "initial": {
+        "all": null,
+        "love": null
+      },
+      "selected": {
+        "all": null,
+        "love": null
+      },
+      "matching_rows": 1,
+      "page_errors": []
+    },
+    {
+      "group": "filter",
+      "mode": "selected-keyboard",
+      "width": 1440,
+      "initial": {
+        "all": null,
+        "love": null
+      },
+      "selected": {
+        "all": null,
+        "love": null
+      },
+      "matching_rows": 1,
+      "page_errors": []
+    },
+    {
+      "group": "join",
+      "mode": "manual-valid",
+      "width": 1440,
+      "posts": 1,
+      "map_heading_visible": true,
+      "old_friend_visible": true,
+      "new_friend_visible": true,
+      "join_dialog_visible": false,
+      "draft": null,
+      "alerts": [
+        "검증주인님의 우리은하에 등록되었습니다! ✨"
+      ],
+      "page_errors": []
+    },
+    {
+      "group": "join",
+      "mode": "manual-object-name",
+      "width": 1440,
+      "posts": 1,
+      "map_heading_visible": false,
+      "old_friend_visible": false,
+      "new_friend_visible": false,
+      "join_dialog_visible": false,
+      "draft": null,
+      "alerts": [
+        "검증주인님의 우리은하에 등록되었습니다! ✨"
+      ],
+      "page_errors": [
+        "person.name.substring is not a function"
+      ]
+    },
+    {
+      "group": "join",
+      "mode": "quick-valid",
+      "width": 1440,
+      "posts": 1,
+      "map_heading_visible": true,
+      "old_friend_visible": true,
+      "new_friend_visible": true,
+      "join_dialog_visible": false,
+      "draft": null,
+      "alerts": [],
+      "page_errors": []
+    },
+    {
+      "group": "join",
+      "mode": "quick-null-person",
+      "width": 1440,
+      "posts": 1,
+      "map_heading_visible": false,
+      "old_friend_visible": false,
+      "new_friend_visible": false,
+      "join_dialog_visible": false,
+      "draft": null,
+      "alerts": [],
+      "page_errors": [
+        "Cannot read properties of null (reading 'isMe')"
+      ]
+    }
+  ],
+  "page_errors": [
+    {
+      "group": "join",
+      "mode": "manual-object-name",
+      "width": 390,
+      "error": "person.name.substring is not a function"
+    },
+    {
+      "group": "join",
+      "mode": "quick-null-person",
+      "width": 390,
+      "error": "Cannot read properties of null (reading 'isMe')"
+    },
+    {
+      "group": "join",
+      "mode": "manual-object-name",
+      "width": 1440,
+      "error": "person.name.substring is not a function"
+    },
+    {
+      "group": "join",
+      "mode": "quick-null-person",
+      "width": 1440,
+      "error": "Cannot read properties of null (reading 'isMe')"
+    }
+  ],
+  "console_errors": [],
+  "expected_console_errors": [
+    {
+      "group": "http",
+      "mode": "error-status",
+      "width": 390,
+      "error": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "url": "http://127.0.0.1:4017/api/saju"
+    },
+    {
+      "group": "http",
+      "mode": "error-status",
+      "width": 1440,
+      "error": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "url": "http://127.0.0.1:4017/api/saju"
+    }
+  ],
+  "outbound_requests": [],
+  "synthetic_gets": [
+    {
+      "group": "filter",
+      "mode": "pointer-control",
+      "width": 390,
+      "endpoint": "summary"
+    },
+    {
+      "group": "filter",
+      "mode": "selected-keyboard",
+      "width": 390,
+      "endpoint": "summary"
+    },
+    {
+      "group": "join",
+      "mode": "manual-valid",
+      "width": 390,
+      "endpoint": "guin"
+    },
+    {
+      "group": "join",
+      "mode": "manual-object-name",
+      "width": 390,
+      "endpoint": "guin"
+    },
+    {
+      "group": "join",
+      "mode": "quick-valid",
+      "width": 390,
+      "endpoint": "guin"
+    },
+    {
+      "group": "join",
+      "mode": "quick-null-person",
+      "width": 390,
+      "endpoint": "guin"
+    },
+    {
+      "group": "filter",
+      "mode": "pointer-control",
+      "width": 1440,
+      "endpoint": "summary"
+    },
+    {
+      "group": "filter",
+      "mode": "selected-keyboard",
+      "width": 1440,
+      "endpoint": "summary"
+    },
+    {
+      "group": "join",
+      "mode": "manual-valid",
+      "width": 1440,
+      "endpoint": "guin"
+    },
+    {
+      "group": "join",
+      "mode": "manual-object-name",
+      "width": 1440,
+      "endpoint": "guin"
+    },
+    {
+      "group": "join",
+      "mode": "quick-valid",
+      "width": 1440,
+      "endpoint": "guin"
+    },
+    {
+      "group": "join",
+      "mode": "quick-null-person",
+      "width": 1440,
+      "endpoint": "guin"
+    }
+  ],
+  "synthetic_posts": [
+    {
+      "group": "http",
+      "mode": "error-status",
+      "width": 390,
+      "endpoint": "saju",
+      "body": {
+        "name": "가상 입력",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "http",
+      "mode": "declared-failure",
+      "width": 390,
+      "endpoint": "saju",
+      "body": {
+        "name": "가상 입력",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "http",
+      "mode": "declared-failure",
+      "width": 390,
+      "endpoint": "saju",
+      "body": {
+        "name": "가상 입력",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "dialog",
+      "mode": "busy",
+      "width": 390,
+      "endpoint": "saju",
+      "body": {
+        "name": "가상 입력",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "join",
+      "mode": "manual-valid",
+      "width": 390,
+      "endpoint": "guin",
+      "body": {
+        "friendName": "가상 새 인연",
+        "birthYear": "1997",
+        "birthMonth": "3",
+        "birthDay": "10",
+        "birthHour": "10",
+        "birthMinute": "30",
+        "isUnknownTime": false
+      }
+    },
+    {
+      "group": "join",
+      "mode": "manual-object-name",
+      "width": 390,
+      "endpoint": "guin",
+      "body": {
+        "friendName": "가상 새 인연",
+        "birthYear": "1997",
+        "birthMonth": "3",
+        "birthDay": "10",
+        "birthHour": "10",
+        "birthMinute": "30",
+        "isUnknownTime": false
+      }
+    },
+    {
+      "group": "join",
+      "mode": "quick-valid",
+      "width": 390,
+      "endpoint": "guin",
+      "body": {
+        "friendName": "시우2",
+        "birthYear": 1995,
+        "birthMonth": 12,
+        "birthDay": 13,
+        "birthHour": 6,
+        "birthMinute": 12,
+        "isUnknownTime": false
+      }
+    },
+    {
+      "group": "join",
+      "mode": "quick-null-person",
+      "width": 390,
+      "endpoint": "guin",
+      "body": {
+        "friendName": "시우2",
+        "birthYear": 1996,
+        "birthMonth": 8,
+        "birthDay": 8,
+        "birthHour": 1,
+        "birthMinute": 4,
+        "isUnknownTime": false
+      }
+    },
+    {
+      "group": "http",
+      "mode": "valid",
+      "width": 1440,
+      "endpoint": "saju",
+      "body": {
+        "name": "가상 입력",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "http",
+      "mode": "error-status",
+      "width": 1440,
+      "endpoint": "saju",
+      "body": {
+        "name": "가상 입력",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "http",
+      "mode": "declared-failure",
+      "width": 1440,
+      "endpoint": "saju",
+      "body": {
+        "name": "가상 입력",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "http",
+      "mode": "declared-failure",
+      "width": 1440,
+      "endpoint": "saju",
+      "body": {
+        "name": "가상 입력",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "dialog",
+      "mode": "busy",
+      "width": 1440,
+      "endpoint": "saju",
+      "body": {
+        "name": "가상 입력",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "join",
+      "mode": "manual-valid",
+      "width": 1440,
+      "endpoint": "guin",
+      "body": {
+        "friendName": "가상 새 인연",
+        "birthYear": "1997",
+        "birthMonth": "3",
+        "birthDay": "10",
+        "birthHour": "10",
+        "birthMinute": "30",
+        "isUnknownTime": false
+      }
+    },
+    {
+      "group": "join",
+      "mode": "manual-object-name",
+      "width": 1440,
+      "endpoint": "guin",
+      "body": {
+        "friendName": "가상 새 인연",
+        "birthYear": "1997",
+        "birthMonth": "3",
+        "birthDay": "10",
+        "birthHour": "10",
+        "birthMinute": "30",
+        "isUnknownTime": false
+      }
+    },
+    {
+      "group": "join",
+      "mode": "quick-valid",
+      "width": 1440,
+      "endpoint": "guin",
+      "body": {
+        "friendName": "서아2",
+        "birthYear": 2000,
+        "birthMonth": 8,
+        "birthDay": 27,
+        "birthHour": 12,
+        "birthMinute": 50,
+        "isUnknownTime": false
+      }
+    },
+    {
+      "group": "join",
+      "mode": "quick-null-person",
+      "width": 1440,
+      "endpoint": "guin",
+      "body": {
+        "friendName": "서아2",
+        "birthYear": 1998,
+        "birthMonth": 11,
+        "birthDay": 22,
+        "birthHour": 19,
+        "birthMinute": 25,
+        "isUnknownTime": false
+      }
+    }
+  ],
+  "actual_backend_requests": 0,
+  "database_operations": 0,
+  "actual_ai_provider_calls": 0,
+  "user_clipboard_access": 0,
+  "native_pointer_and_keyboard": true,
+  "manual_dom_events": 0,
+  "previous_completed_suites_rerun": 0,
+  "previous_completed_fixes_counted": 0,
+  "scope": "Production SajuInputModal, saved list category chips, and Guin POST friend-map consumption with fictional intercepted APIs at 390x844 and 1440x1000. Host fixture, next/navigation and next/link are fixed test boundaries; only heavy GalaxyCanvas is blank. No backend/DB/Gemini/user storage or clipboard/3D/hosted route/physical device claim. Prior completed UI/model suites excluded."
+}

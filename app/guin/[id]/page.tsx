@@ -28,6 +28,21 @@ import { calculateDailyOrbitalWeather } from "@/lib/saju/daily-orbital";
 import CosmicPassportModal from "@/components/planet/CosmicPassportModal";
 import GalaxyPokedexModal from "@/components/planet/GalaxyPokedexModal";
 
+function canRenderAddedGuinMap(value: unknown, mapId: string): value is GuinMapData {
+  if (!value || typeof value !== "object" || Array.isArray(value)) return false;
+  const candidate = value as Record<string, unknown>;
+  return candidate.id === mapId
+    && ["ownerName", "ownerBirth", "ownerDayMaster", "ownerTheme", "createdAt"].every(key => typeof candidate[key] === "string")
+    && Array.isArray(candidate.guins) && candidate.guins.every(value => {
+      if (!value || typeof value !== "object" || Array.isArray(value)) return false;
+      const person = value as Record<string, unknown>;
+      return ["id", "name", "relationTitle", "dayMaster", "elementMatch", "advice"].every(key => typeof person[key] === "string")
+        && typeof person.relationType === "string" && ["mentor", "partner", "supporter", "grounding"].includes(person.relationType)
+        && typeof person.affinityScore === "number" && Number.isFinite(person.affinityScore)
+        && (person.isMe === undefined || typeof person.isMe === "boolean");
+    });
+}
+
 export default function GuinMapDetailPage() {
   const { id } = useParams<{id:string}>();
   return <GuinMapDetailContent key={id} mapId={id} />;
@@ -195,10 +210,12 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
       });
       const data = await readApiResponse(res);
       if(!res.ok) throw new Error(data.error || "등록 중 오류가 발생했습니다.");
-      if (data.success && data.guinMap) {
+      if (data.success && canRenderAddedGuinMap(data.guinMap, mapId)) {
         const lastFriend = data.guinMap.guins[data.guinMap.guins.length - 1];
         if (lastFriend) setLastAddedPersonId(lastFriend.id);
         setMapData(data.guinMap);
+      } else {
+        throw new Error("등록 중 오류가 발생했습니다.");
       }
     } catch {
       alert("등록 중 오류가 발생했습니다.");
@@ -228,13 +245,15 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
       });
       const data = await readApiResponse(res);
       if(!res.ok) throw new Error(data.error || "등록 중 오류가 발생했습니다.");
-      if (data.success && data.guinMap) {
+      if (data.success && canRenderAddedGuinMap(data.guinMap, mapId)) {
         const lastFriend = data.guinMap.guins[data.guinMap.guins.length - 1];
         if (lastFriend) setLastAddedPersonId(lastFriend.id);
         setMapData(data.guinMap);
         setShowJoinModal(false);
         setFriendName("");
         alert(`${mapData?.ownerName}님의 우리은하에 등록되었습니다! ✨`);
+      } else {
+        throw new Error("등록 중 오류가 발생했습니다.");
       }
     } catch {
       alert("등록 중 오류가 발생했습니다.");

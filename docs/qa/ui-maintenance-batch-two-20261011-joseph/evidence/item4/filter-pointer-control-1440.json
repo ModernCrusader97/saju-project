@@ -1,0 +1,12 @@
+{
+  "initial": {
+    "all": "true",
+    "love": "false"
+  },
+  "selected": {
+    "all": "false",
+    "love": "true"
+  },
+  "matching_rows": 1,
+  "page_errors": []
+}
