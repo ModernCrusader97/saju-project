@@ -1,0 +1,11 @@
+{
+  "writes": [
+    {
+      "path": "/guin",
+      "join": "true",
+      "from": "QA & 초대"
+    }
+  ],
+  "error_count": 0,
+  "alert_count": 0
+}

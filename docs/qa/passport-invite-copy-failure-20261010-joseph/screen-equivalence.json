@@ -1,0 +1,45 @@
+{
+  "status": "PASS_IDENTICAL_UNAFFECTED_OPENING_UI_PNG_BYTES_AND_CSS",
+  "opening": [
+    {
+      "width": 390,
+      "height": 844,
+      "bytes": 81740,
+      "sha256": "60cfac31eb45881df381b41141dfc8dab5ca2274b657b0ee577606ba733dc6f9",
+      "png_bytes_and_pixels_identical": true
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "bytes": 96912,
+      "sha256": "445f2672c3dd55aeacda8c3038029bf0302524241bf917f9a95fd7b812d2cdc3",
+      "png_bytes_and_pixels_identical": true
+    }
+  ],
+  "new_failure_ui": [
+    {
+      "width": 390,
+      "height": 844,
+      "bytes": 85270,
+      "sha256": "3f704fa734f157db1b52baebcc643b5c57ef171863e1abb454a303ef0710aa9b",
+      "new_failure_message_visible": true,
+      "kind": "actual UI with synthetic person, not model rendering"
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "bytes": 100907,
+      "sha256": "5efad229679ccda540272cfc69ccc54f5e0ffad0a6e65569a140716eaecb7380",
+      "new_failure_message_visible": true,
+      "kind": "actual UI with synthetic person, not model rendering"
+    }
+  ],
+  "css_sha256": "f455acbc02ae6740a95b9ee2da3aeb77d70fdb906ae45ef504a55b7eb3c83387",
+  "harness_sha256": "410c1badbce5f6f0bec1050c7ebbd927d1ee6be880f71effa71afd1a51f1b345",
+  "direct_visual_inspection": [
+    "before/failed-390.png",
+    "after/failed-390.png",
+    "after/opening-390.png"
+  ],
+  "failure_ui_change_expected": true
+}

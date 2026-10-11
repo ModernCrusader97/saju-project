@@ -1,0 +1,174 @@
+{
+  "status": "PASS",
+  "phase": "after",
+  "at_utc": "2026-10-10T23:59:44.556Z",
+  "browser": "154.0.8037.98",
+  "product": "components/planet/CosmicPassportModal.tsx",
+  "source_sha256": "e72aa472d5084064998018eef0c60d8b54741490d559757f07307cae7d763d65",
+  "harness_sha256": "410c1badbce5f6f0bec1050c7ebbd927d1ee6be880f71effa71afd1a51f1b345",
+  "css_sha256": "f455acbc02ae6740a95b9ee2da3aeb77d70fdb906ae45ef504a55b7eb3c83387",
+  "passed": 8,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "successful copy preserves encoded invite and UI 390",
+      "observed": {
+        "writes": [
+          {
+            "path": "/guin",
+            "join": "true",
+            "from": "QA & 초대"
+          }
+        ],
+        "error_count": 0,
+        "alert_count": 0
+      },
+      "pass": true
+    },
+    {
+      "name": "failed copy reports error and permits manual retry denied 390",
+      "observed": {
+        "failure": {
+          "visible_error": true,
+          "unexpected_page_errors": [],
+          "copy_button_still_ready": true,
+          "false_success_count": 0,
+          "copy_attempts": 1
+        },
+        "recovery": {
+          "success_button_visible": true,
+          "error_cleared": true,
+          "copy_attempts": 2,
+          "page_errors": 0
+        }
+      },
+      "pass": true
+    },
+    {
+      "name": "failed copy reports error and permits manual retry throw 390",
+      "observed": {
+        "failure": {
+          "visible_error": true,
+          "unexpected_page_errors": [],
+          "copy_button_still_ready": true,
+          "false_success_count": 0,
+          "copy_attempts": 1
+        },
+        "recovery": {
+          "success_button_visible": true,
+          "error_cleared": true,
+          "copy_attempts": 2,
+          "page_errors": 0
+        }
+      },
+      "pass": true
+    },
+    {
+      "name": "failed copy reports error and permits manual retry unavailable 390",
+      "observed": {
+        "failure": {
+          "visible_error": true,
+          "unexpected_page_errors": [],
+          "copy_button_still_ready": true,
+          "false_success_count": 0,
+          "copy_attempts": 0
+        },
+        "recovery": {
+          "success_button_visible": true,
+          "error_cleared": true,
+          "copy_attempts": 1,
+          "page_errors": 0
+        }
+      },
+      "pass": true
+    },
+    {
+      "name": "successful copy preserves encoded invite and UI 1440",
+      "observed": {
+        "writes": [
+          {
+            "path": "/guin",
+            "join": "true",
+            "from": "QA & 초대"
+          }
+        ],
+        "error_count": 0,
+        "alert_count": 0
+      },
+      "pass": true
+    },
+    {
+      "name": "failed copy reports error and permits manual retry denied 1440",
+      "observed": {
+        "failure": {
+          "visible_error": true,
+          "unexpected_page_errors": [],
+          "copy_button_still_ready": true,
+          "false_success_count": 0,
+          "copy_attempts": 1
+        },
+        "recovery": {
+          "success_button_visible": true,
+          "error_cleared": true,
+          "copy_attempts": 2,
+          "page_errors": 0
+        }
+      },
+      "pass": true
+    },
+    {
+      "name": "failed copy reports error and permits manual retry throw 1440",
+      "observed": {
+        "failure": {
+          "visible_error": true,
+          "unexpected_page_errors": [],
+          "copy_button_still_ready": true,
+          "false_success_count": 0,
+          "copy_attempts": 1
+        },
+        "recovery": {
+          "success_button_visible": true,
+          "error_cleared": true,
+          "copy_attempts": 2,
+          "page_errors": 0
+        }
+      },
+      "pass": true
+    },
+    {
+      "name": "failed copy reports error and permits manual retry unavailable 1440",
+      "observed": {
+        "failure": {
+          "visible_error": true,
+          "unexpected_page_errors": [],
+          "copy_button_still_ready": true,
+          "false_success_count": 0,
+          "copy_attempts": 0
+        },
+        "recovery": {
+          "success_button_visible": true,
+          "error_cleared": true,
+          "copy_attempts": 1,
+          "page_errors": 0
+        }
+      },
+      "pass": true
+    }
+  ],
+  "page_errors": [],
+  "console_errors": [],
+  "outbound_requests": [],
+  "api_requests": 0,
+  "database_operations": 0,
+  "native_pointer": true,
+  "browser_boundary_clipboard_faults": [
+    "denied promise",
+    "synchronous throw",
+    "API unavailable"
+  ],
+  "real_clipboard_writes": 0,
+  "permission_changes": 0,
+  "manual_dom_events": 0,
+  "previous_suites_rerun": 0,
+  "scope": "Actual production React/Tailwind passport component and native Chrome pointer with synthetic person and clipboard boundary faults. No previous image-save, close-name/focus or timer QA rerun; no full hosted/built app route, actual OS clipboard permission/content, auth/DB or model-render claim."
+}

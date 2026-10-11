@@ -1,0 +1,81 @@
+{
+  "status": "PASS_ONE_DISTINCT_PASSPORT_INVITE_COPY_FAILURE_FIX",
+  "host": "Joseph",
+  "at_utc": "2026-10-11T00:02:55.900Z",
+  "basis": "1208601bde07c0817f178b1318d96b93f2432951",
+  "branch": "fix/passport-invite-copy-failure-20261010-joseph",
+  "product": "components/planet/CosmicPassportModal.tsx",
+  "consumer": "app/guin/[id]/page.tsx:668",
+  "problem": "A rejected copy Promise, synchronous clipboard error or unavailable API escapes the invite-copy handler and gives no visible retry feedback.",
+  "fix": "Await the same encoded invite copy in try/catch, show a concise alert on failure, clear it at the next manual attempt and report success only after resolved copy.",
+  "product_diff": {
+    "insertions": 10,
+    "deletions": 3,
+    "modified_preexisting_files": 1
+  },
+  "before": {
+    "passed": 2,
+    "failed": 6,
+    "unhandled_page_errors": 6
+  },
+  "after": {
+    "passed": 8,
+    "failed": 0,
+    "unhandled_page_errors": 0
+  },
+  "actual_browser": "154.0.8037.98",
+  "viewports": [
+    390,
+    1440
+  ],
+  "native_pointer": true,
+  "browser_boundary_clipboard_faults": [
+    "denied promise",
+    "synchronous throw",
+    "API unavailable"
+  ],
+  "manual_dom_event_dispatches": 0,
+  "real_clipboard_writes": 0,
+  "permission_changes": 0,
+  "automatic_retries": 0,
+  "previous_suites_rerun": 0,
+  "previous_image_failure_fix_unchanged": true,
+  "encoded_invite_url_success_label_timer_download_close_handlers_unchanged": true,
+  "identical_new_harness_and_css": true,
+  "identical_unaffected_opening_PNG_files_and_pixels": 2,
+  "new_failure_ui_screenshots": 2,
+  "unexpected_after_page_errors": 0,
+  "console_errors": 0,
+  "outbound_requests": 0,
+  "api_requests": 0,
+  "database_operations": 0,
+  "types": {
+    "exit_code": 0,
+    "nonincremental": true,
+    "after_own_build": true
+  },
+  "build": {
+    "exit_code": 0,
+    "own_current_branch_run": true,
+    "no_install_or_deployment": true
+  },
+  "lint": {
+    "errors": 0,
+    "unchanged_existing_product_warnings": 2,
+    "new_qa_warnings": 0,
+    "config_rules_suppressions_unchanged": true,
+    "warning_locations_shift_only_from_new_lines": true
+  },
+  "source_reverse_patch_byte_exact": true,
+  "previous_completed_records_reused": 12,
+  "preexisting_tracked_entries": 680,
+  "scope": "docs/qa/passport-invite-copy-failure-20261010-joseph",
+  "models_other_11_art_default_auth_billing_permissions_db_unchanged": true,
+  "private_repo_fresh_read_verified": true,
+  "metadata_correction": "Original preflight consumer line 663 was corrected to verified actual JSX line 668; original preflight retained unchanged with fresh consumer-location-proof.json.",
+  "limits": [
+    "Actual production React/Tailwind passport component and native Chrome pointer with synthetic person and clipboard boundary faults. No previous image-save, close-name/focus or timer QA rerun; no full hosted/built app route, actual OS clipboard permission/content, auth/DB or model-render claim.",
+    "Clipboard failures/success are explicit browser-boundary fixtures. Actual OS clipboard contents/permissions and hosted application route were not tested."
+  ],
+  "remaining_blockers": []
+}

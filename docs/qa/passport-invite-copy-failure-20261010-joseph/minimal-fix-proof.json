@@ -1,0 +1,32 @@
+{
+  "status": "PASS_COPY_FAILURE_ONLY_SOURCE_PROOF",
+  "basis": "1208601bde07c0817f178b1318d96b93f2432951",
+  "branch": "fix/passport-invite-copy-failure-20261010-joseph",
+  "product": "components/planet/CosmicPassportModal.tsx",
+  "before_sha256": "92cf1fc79c00316d0820c05b4e68595f3e6c6ced9da22ad1e8830a185b2ec2c6",
+  "after_sha256": "e72aa472d5084064998018eef0c60d8b54741490d559757f07307cae7d763d65",
+  "product_diff": {
+    "insertions": 10,
+    "deletions": 3,
+    "modified_preexisting_files": 1
+  },
+  "changes": [
+    {
+      "from": "  const [copied, setCopied] = useState(false);",
+      "to": "  const [copied, setCopied] = useState(false);\r\n  const [copyError, setCopyError] = useState(\"\");"
+    },
+    {
+      "from": "  const handleCopyInviteLink = () => {\r\n    const url = `${window.location.origin}/guin?join=true&from=${encodeURIComponent(person.name)}`;\r\n    navigator.clipboard.writeText(url).then(() => {\r\n      setCopied(true);\r\n      setTimeout(() => setCopied(false), 2000);\r\n    });\r\n  };",
+      "to": "  const handleCopyInviteLink = async () => {\r\n    const url = `${window.location.origin}/guin?join=true&from=${encodeURIComponent(person.name)}`;\r\n    setCopyError(\"\");\r\n    try {\r\n      await navigator.clipboard.writeText(url);\r\n      setCopied(true);\r\n      setTimeout(() => setCopied(false), 2000);\r\n    } catch {\r\n      setCopied(false);\r\n      setCopyError(\"초대 링크를 복사하지 못했어요. 다시 시도해 주세요.\");\r\n    }\r\n  };"
+    },
+    {
+      "from": "          </button>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  );",
+      "to": "          </button>\r\n          {copyError && <p role=\"alert\" className=\"text-center text-xs text-white/80\">{copyError}</p>}\r\n        </div>\r\n      </div>\r\n    </div>\r\n  );"
+    }
+  ],
+  "reverse_native_source_byte_exact": true,
+  "previous_image_failure_fix_unchanged": true,
+  "existing_url_encoding_success_copy_label_timer_and_download_handler_unchanged": true,
+  "api_db_art_models_default_auth_billing_permissions_unchanged": true,
+  "only_new_behavior": "Await and catch invite-copy failures, show a concise alert, clear it on the next manual attempt, retain success only after resolved copy."
+}

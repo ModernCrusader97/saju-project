@@ -1,0 +1,6 @@
+{
+  "status": "PASS_ACTUAL_CONSUMER_LOCATION",
+  "actual_consumer": "app/guin/[id]/page.tsx:668",
+  "git_grep": "app/guin/[id]/page.tsx:668:          <CosmicPassportModal",
+  "preflight_consumer_field_correction": "Original preflight recorded 663; fresh Git source lookup shows 668. Original preflight preserved unchanged; all final records use verified 668."
+}

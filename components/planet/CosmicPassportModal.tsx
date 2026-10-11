@@ -21,6 +21,7 @@ export default function CosmicPassportModal({
 }: CosmicPassportModalProps) {
   const [downloading, setDownloading] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [copyError, setCopyError] = useState("");
   const cardRef = useRef<HTMLDivElement>(null);
   const dialogRef = useRef<HTMLDivElement>(null);
 
@@ -51,12 +52,17 @@ export default function CosmicPassportModal({
   const spirit = TEN_STEM_SPIRITS[stem] || TEN_STEM_SPIRITS["갑"];
 
   // 카카오톡 / SNS 은하 초대 링크 복사
-  const handleCopyInviteLink = () => {
+  const handleCopyInviteLink = async () => {
     const url = `${window.location.origin}/guin?join=true&from=${encodeURIComponent(person.name)}`;
-    navigator.clipboard.writeText(url).then(() => {
+    setCopyError("");
+    try {
+      await navigator.clipboard.writeText(url);
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
-    });
+    } catch {
+      setCopied(false);
+      setCopyError("초대 링크를 복사하지 못했어요. 다시 시도해 주세요.");
+    }
   };
 
   // 9:16 인스타그램 스토리용 고해상도 여권 카드 이미지 생성 (HTML5 Canvas)
@@ -327,6 +333,7 @@ export default function CosmicPassportModal({
               </>
             )}
           </button>
+          {copyError && <p role="alert" className="text-center text-xs text-white/80">{copyError}</p>}
         </div>
       </div>
     </div>
