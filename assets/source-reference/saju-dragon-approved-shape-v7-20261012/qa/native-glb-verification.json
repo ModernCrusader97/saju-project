@@ -1,0 +1,142 @@
+{
+  "status": "PASS_NATIVE_AND_GLB_ROUNDTRIP",
+  "source_blend_sha256": "1114348935a1563248431aa61eb20cd1dba14f67869096508f4b4842742f1825",
+  "glb_sha256": "4c15f0070372071d35f8f659b1a1017e4665381200dbba42904637bf30e16d9e",
+  "checks": {
+    "continuous_skin_components": 1,
+    "Dragon_Continuous_Skin_topology": {
+      "closed_components": 1,
+      "euler_characteristic": 2,
+      "unintended_handles": 0,
+      "nonmanifold_edges": 0
+    },
+    "Mane_Continuous_Layered_topology": {
+      "closed_components": 31,
+      "euler_characteristic": 62,
+      "unintended_handles": 0,
+      "nonmanifold_edges": 0
+    },
+    "skin_weights_normalized": true,
+    "bones": 13,
+    "vertex_color_on_same_skin": true,
+    "native_loop_max_vertex_error": 0.0,
+    "sampled_edge_length_ratio": [
+      0.8626567928150526,
+      1.2154678611985625
+    ],
+    "sampled_skin_motion_max": 0.15989688880935243,
+    "sampled_frames": [
+      0,
+      36,
+      72,
+      108,
+      144
+    ],
+    "sampled_edge_count": 12710,
+    "native_loop_sampled_boundary_velocity_error_per_frame": 0.00022756695088872747,
+    "invalid_native_vertex_normals": 0,
+    "native_sampled_bounds_zup": {
+      "min": [
+        -2.5121989250183105,
+        -1.1033352613449097,
+        0.12877458333969116
+      ],
+      "max": [
+        2.4807467460632324,
+        0.7471778988838196,
+        4.605062484741211
+      ]
+    },
+    "importer_control_objects_excluded": [
+      "Icosphere"
+    ],
+    "glb_import_mesh_count": 10,
+    "glb_roundtrip_max_nearest_vertex_error": {
+      "0": 2.0759193830599543e-06,
+      "36": 5.1426063691906165e-06,
+      "72": 2.8537183425214607e-06,
+      "108": 4.1381249502592254e-06,
+      "144": 2.0759193830599543e-06
+    },
+    "glb_source_geometry_preserved": true,
+    "glb_animation_reimported": true,
+    "actual_imported_glb_camera_records": {
+      "front": {
+        "location": [
+          0.0,
+          -11.0,
+          2.180000066757202
+        ],
+        "rotation_euler": [
+          1.5698872804641724,
+          6.231171134629676e-10,
+          -0.013635518960654736
+        ],
+        "ortho_scale": 5.849999904632568,
+        "resolution": [
+          900,
+          900
+        ],
+        "frame": 0,
+        "cycles_samples": 40
+      },
+      "threequarter": {
+        "location": [
+          6.0,
+          -10.0,
+          5.599999904632568
+        ],
+        "rotation_euler": [
+          1.2829573154449463,
+          -1.9346337865044916e-09,
+          0.5293172001838684
+        ],
+        "ortho_scale": 5.849999904632568,
+        "resolution": [
+          900,
+          900
+        ],
+        "frame": 0,
+        "cycles_samples": 40
+      },
+      "side": {
+        "location": [
+          10.0,
+          -0.05000000074505806,
+          2.299999952316284
+        ],
+        "rotation_euler": [
+          1.557599425315857,
+          9.316531190961541e-08,
+          1.5657203197479248
+        ],
+        "ortho_scale": 5.300000190734863,
+        "resolution": [
+          900,
+          900
+        ],
+        "frame": 0,
+        "cycles_samples": 40
+      }
+    },
+    "glb_actual_render": "glb-reimport-threequarter.png"
+  },
+  "video_formats_available": [
+    "AVIF",
+    "JPEG",
+    "OPEN_EXR",
+    "PNG",
+    "WEBP",
+    "BMP",
+    "CINEON",
+    "DPX",
+    "IRIS",
+    "JPEG2000",
+    "HDR",
+    "TARGA",
+    "TARGA_RAW",
+    "TIFF",
+    "OPEN_EXR_MULTILAYER",
+    "FFMPEG"
+  ]
+}

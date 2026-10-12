@@ -1,0 +1,25 @@
+{
+  "status": "PASS_EXPLICIT_WORLD_RUNTIME_COPY_GEOMETRY",
+  "input_sha256": "1a0835ae36797dff9a79571f68e16f9ddfd15d0a9e4b65223b013eecceef31bb",
+  "authoring_geometry_normals_weights_uv_materials_exact_unchanged": true,
+  "packed_images_exact_unchanged": {
+    "Approved_2D_Concept_SHA256_6184555091c8": "6184555091c80769d6553ae40641dbb44eb6dcc859dd0b8591b7887cc1502e58",
+    "Dragon_V7_Body_BaseColor": "c04d177c62311e833bc6fb8fa345d2605d56aa3ed280466a85571329d85ac059"
+  },
+  "runtime_meshes": 10,
+  "runtime_rest_point_match_max_error": 0,
+  "old_runtime_names": [
+    "Dragon_Continuous_Teal_Ivory_Vertex_PBR",
+    "Dragon_Belly_Subtle_Seams",
+    "Dragon_Smile_Warm_Deep_Teal",
+    "Dragon_Body_Teal",
+    "Dragon_Eyes_Soft_Ivory",
+    "Dragon_Eyes_Warm_Brown",
+    "Dragon_Nostrils_Deep_Teal",
+    "Dragon_Ear_Inner_Ivory",
+    "Dragon_Belly_Horns_Whiskers_Ivory",
+    "Dragon_Mane_Warm_Orange"
+  ],
+  "cause": "Runtime orange copy retained identity matrix while the native mane origin was (-1.06,0.41,3.27). Bake each copied mesh with its explicit world rest matrix before material joins.",
+  "source_original_unchanged": true
+}

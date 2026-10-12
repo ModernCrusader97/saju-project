@@ -1,0 +1,78 @@
+{
+  "status": "ORIGINAL_APPROVED_DESIGN_AND_ACTUAL_V7_PIXEL_COMPARISONS_READY_FOR_REVIEW",
+  "at_utc": "2026-10-12T08:29:43.309Z",
+  "source_reference_sha256": "6184555091c80769d6553ae40641dbb44eb6dcc859dd0b8591b7887cc1502e58",
+  "v7_glb_sha256": "4c15f0070372071d35f8f659b1a1017e4665381200dbba42904637bf30e16d9e",
+  "entries": [
+    {
+      "name": "01-whole-design-versus-v7-actual",
+      "filename": "01-whole-design-versus-v7-actual.png",
+      "width": 1920,
+      "height": 1028,
+      "sha256": "63873a6c445c7bc8fdb69ffac0fdc3b0b3a4c611bfe5a93c35a2555f12935b83",
+      "original_reference": "D:/Codex/Results/SaJuDragonApprovedShapeV7-20261012-Joseph/baseline/approved-2D-concept-original.png",
+      "actual_v7_model_render": "D:/Codex/Results/SaJuDragonApprovedShapeV7-20261012-Joseph/delivery-v7-reviewed/previews/v7-threequarter.png",
+      "left_crop": null,
+      "right_crop": {
+        "x": 20,
+        "y": 40,
+        "w": 820,
+        "h": 800
+      },
+      "reference_camera_unknown": true,
+      "pixel_composition_only_no_generated_content": true,
+      "notes": "Approximate comparable framing, bicubic resampling; no geometry/image content is synthesized or retouched."
+    },
+    {
+      "name": "02-threequarter-head-comparison",
+      "filename": "02-threequarter-head-comparison.png",
+      "width": 1600,
+      "height": 820,
+      "sha256": "86c9e213ac25226a4e111e31869c84ef24253ceee955bb5abe2faad37b5b879b",
+      "original_reference": "D:/Codex/Results/SaJuDragonApprovedShapeV7-20261012-Joseph/baseline/approved-2D-concept-original.png",
+      "actual_v7_model_render": "D:/Codex/Results/SaJuDragonApprovedShapeV7-20261012-Joseph/delivery-v7-reviewed/previews/v7-threequarter.png",
+      "left_crop": {
+        "x": 20,
+        "y": 65,
+        "w": 730,
+        "h": 685
+      },
+      "right_crop": {
+        "x": 20,
+        "y": 42,
+        "w": 485,
+        "h": 455
+      },
+      "reference_camera_unknown": true,
+      "pixel_composition_only_no_generated_content": true,
+      "notes": "Approximate comparable framing, bicubic resampling; no geometry/image content is synthesized or retouched."
+    },
+    {
+      "name": "03-front-head-comparison",
+      "filename": "03-front-head-comparison.png",
+      "width": 1600,
+      "height": 928,
+      "sha256": "432a2ee9fadea7fa8bb648c17dbc7e1b843fdec13e7d5ae480f2484c27eda538",
+      "original_reference": "D:/Codex/Results/SaJuDragonApprovedShapeV7-20261012-Joseph/baseline/approved-2D-concept-original.png",
+      "actual_v7_model_render": "D:/Codex/Results/SaJuDragonApprovedShapeV7-20261012-Joseph/delivery-v7-reviewed/previews/v7-front.png",
+      "left_crop": {
+        "x": 720,
+        "y": 25,
+        "w": 534,
+        "h": 590
+      },
+      "right_crop": {
+        "x": 80,
+        "y": 75,
+        "w": 420,
+        "h": 450
+      },
+      "reference_camera_unknown": true,
+      "pixel_composition_only_no_generated_content": true,
+      "notes": "Approximate comparable framing, bicubic resampling; no geometry/image content is synthesized or retouched."
+    }
+  ],
+  "mesh_or_rig_rebuilt": false,
+  "technical_geometry_measurements_not_used_as_appearance_similarity_evidence": true,
+  "user_final_appearance_approval": false
+}

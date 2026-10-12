@@ -1,0 +1,49 @@
+{
+  "status": "PASS_GLTFLOADER_MATERIAL_PNG_DECODE_AND_ANIMATIONMIXER_CPU",
+  "glb_sha256": "4c15f0070372071d35f8f659b1a1017e4665381200dbba42904637bf30e16d9e",
+  "source_raw_v7_glb_sha256": "b1e8a2b12ccfc919d5d492b161c58584950d0290ac0c6750f61bd261a4a6c57d",
+  "bytes": 11370496,
+  "animation_channels_and_keys_exact_raw_v7": true,
+  "inverse_bind_matrices_exact_raw_v7": true,
+  "embedded_image": {
+    "mime": "image/png",
+    "width": 4096,
+    "height": 4096,
+    "png_sha256": "c04d177c62311e833bc6fb8fa345d2605d56aa3ed280466a85571329d85ac059",
+    "pixel_sha256": "7a167fe9ee3e82ec74afbe738d149403e6c06310f646d41593dfd6018ecd4a7a",
+    "palette": {
+      "teal_srgb": [
+        57,
+        170,
+        143
+      ],
+      "ivory_srgb": [
+        244,
+        222,
+        176
+      ],
+      "teal_pixels": 15012238,
+      "ivory_pixels": 1727255,
+      "edge_pixels": 37723
+    },
+    "loader_decoded": true,
+    "vertex_multiplier_white": true
+  },
+  "stats": {
+    "meshCount": 10,
+    "triangles": 312956,
+    "vertices": 161476,
+    "bones": 13,
+    "invalidNormals": 0,
+    "invalidWeights": 0,
+    "nonfinitePositions": 0,
+    "zeroAreaTriangles": 0,
+    "loopEndPoseError": 9.282138430802992e-7,
+    "maxMotion": 0.24148875963475033,
+    "frames": 145,
+    "sampledVertices": 9086
+  },
+  "limits": [
+    "CPU GLTFLoader/AnimationMixer and decoded embedded PNG checks; no browser GPU upload or mobile performance claim."
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "status": "SOURCE_COMPONENTS_FROZEN_AND_LINE_ENDINGS_RECORDED",
+  "sources": [
+    {
+      "original": "build_dragon_shape_v7_v02.py",
+      "canonical": "build_dragon_v7.py",
+      "original_bytes": 39966,
+      "original_sha256": "9fdc8787bf685681eab6467e3ffc3230a7b311adbdf2abdeb9d47dfb44437b05",
+      "canonical_bytes": 39966,
+      "canonical_sha256": "9fdc8787bf685681eab6467e3ffc3230a7b311adbdf2abdeb9d47dfb44437b05",
+      "only_CRLF_to_LF_normalization": false
+    },
+    {
+      "original": "repair_material_surface_smooth_v7.py",
+      "canonical": "material_surface_v7.py",
+      "original_bytes": 18068,
+      "original_sha256": "08861c2321e8477729c5d87a854ab466c29a2261271b6e422a6fc5ab9278c362",
+      "canonical_bytes": 18068,
+      "canonical_sha256": "08861c2321e8477729c5d87a854ab466c29a2261271b6e422a6fc5ab9278c362",
+      "only_CRLF_to_LF_normalization": false
+    },
+    {
+      "original": "repair_runtime_copy_v7.py",
+      "canonical": "runtime_copy_v7.py",
+      "original_bytes": 5074,
+      "original_sha256": "3cf8ee45ea70264af2c381cb4214383d9544c4a94f3b2e8e297bb0d3aa42176b",
+      "canonical_bytes": 5074,
+      "canonical_sha256": "3cf8ee45ea70264af2c381cb4214383d9544c4a94f3b2e8e297bb0d3aa42176b",
+      "only_CRLF_to_LF_normalization": false
+    },
+    {
+      "original": "repair_radius_aware_weights_final_v7.py",
+      "canonical": "weight_binding_v7.py",
+      "original_bytes": 9855,
+      "original_sha256": "bb0e4b45cacf48e7b76b29c3191b9cb09ccd29d21db3794f6af6d920d1f1711c",
+      "canonical_bytes": 9854,
+      "canonical_sha256": "cb702a5d8a21231017340336e233399adc78135ab6f3c895f10a0d87efba026f",
+      "only_CRLF_to_LF_normalization": true
+    },
+    {
+      "original": "root_skin_export.py",
+      "canonical": "root_skin_export.py",
+      "original_bytes": 6046,
+      "original_sha256": "aac6bab6a5aa07a4476eb2293635720aa28824717b95edcd859fd8b4d1fc9083",
+      "canonical_bytes": 6046,
+      "canonical_sha256": "aac6bab6a5aa07a4476eb2293635720aa28824717b95edcd859fd8b4d1fc9083",
+      "only_CRLF_to_LF_normalization": false
+    },
+    {
+      "original": "regenerate_v7.py",
+      "canonical": "regenerate_v7.py",
+      "original_bytes": 4512,
+      "original_sha256": "75f074ed18c0c42f31cfe54d258b00874d42cd04fe7db1f8d65d4e1a6f429938",
+      "canonical_bytes": 4512,
+      "canonical_sha256": "75f074ed18c0c42f31cfe54d258b00874d42cd04fe7db1f8d65d4e1a6f429938",
+      "only_CRLF_to_LF_normalization": false
+    }
+  ],
+  "component_scripts_already_executed_by_blender": true,
+  "orchestrator_plan_validation_pending": true
+}

@@ -1,0 +1,113 @@
+{
+  "status": "PASS_ACTUAL_V6_V7_CAMERA_MATCHED_RENDERS",
+  "baseline_glb_sha256": "855d72c9b1f6ed7cd90ce1322021c8e6af8bfc46ea2abd323a3eca2d92999688",
+  "final_glb_sha256": "4c15f0070372071d35f8f659b1a1017e4665381200dbba42904637bf30e16d9e",
+  "camera_records": {
+    "front": {
+      "location": [
+        0,
+        -11,
+        2.180000066757202
+      ],
+      "rotation_euler": [
+        1.5698872804641724,
+        6.231171134629676e-10,
+        -0.013635518960654736
+      ],
+      "ortho_scale": 5.849999904632568,
+      "resolution": [
+        900,
+        900
+      ],
+      "frame": 0,
+      "cycles_samples": 40
+    },
+    "threequarter": {
+      "location": [
+        6,
+        -10,
+        5.599999904632568
+      ],
+      "rotation_euler": [
+        1.2829573154449463,
+        -1.9346337865044916e-9,
+        0.5293172001838684
+      ],
+      "ortho_scale": 5.849999904632568,
+      "resolution": [
+        900,
+        900
+      ],
+      "frame": 0,
+      "cycles_samples": 40
+    },
+    "side": {
+      "location": [
+        10,
+        -0.05000000074505806,
+        2.299999952316284
+      ],
+      "rotation_euler": [
+        1.557599425315857,
+        9.316531190961541e-8,
+        1.5657203197479248
+      ],
+      "ortho_scale": 5.300000190734863,
+      "resolution": [
+        900,
+        900
+      ],
+      "frame": 0,
+      "cycles_samples": 40
+    }
+  },
+  "images": [
+    {
+      "kind": "v6",
+      "view": "front",
+      "path": "previews/v6-front.png",
+      "sha256": "340c46c5f6d08d63bba1bbc7bff087b507cb47e74ca233d2571e10d8694713cf",
+      "actual_blender_glb_reimport_render": true
+    },
+    {
+      "kind": "v7",
+      "view": "front",
+      "path": "previews/v7-front.png",
+      "sha256": "24ed361abdbd0a62ddc24bf50206b72b42e8565c1cc17e871fc529203063d106",
+      "actual_blender_glb_reimport_render": true
+    },
+    {
+      "kind": "v6",
+      "view": "threequarter",
+      "path": "previews/v6-threequarter.png",
+      "sha256": "21bd9835c7f6a87899b3ac0653be7440fb51719df36f6fcde0fc681913136400",
+      "actual_blender_glb_reimport_render": true
+    },
+    {
+      "kind": "v7",
+      "view": "threequarter",
+      "path": "previews/v7-threequarter.png",
+      "sha256": "63fef651549faa101707484b3bb5b43b962599cb324897a8086b262731dbc563",
+      "actual_blender_glb_reimport_render": true
+    },
+    {
+      "kind": "v6",
+      "view": "side",
+      "path": "previews/v6-side.png",
+      "sha256": "bca749d3bb9fafdd855afa7ddf19e0a5296da9f57b27786ac9a4c920fdd70211",
+      "actual_blender_glb_reimport_render": true
+    },
+    {
+      "kind": "v7",
+      "view": "side",
+      "path": "previews/v7-side.png",
+      "sha256": "a23250f6487b04e93af64d4010ac6fba9e7cfe9153f6e7ce54b4c0cfcd998aba",
+      "actual_blender_glb_reimport_render": true
+    }
+  ],
+  "reference_2D_camera_unknown": true,
+  "limits": [
+    "Camera, orthographic scale, frame, resolution and samples match for the two 3D candidates. The original approved 2D concept has no calibrated camera.",
+    "Actual Blender reimport renders; no image generation or inferred 3D geometry is presented as a render."
+  ]
+}

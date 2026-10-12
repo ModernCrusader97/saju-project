@@ -1,0 +1,61 @@
+{
+  "status": "PASS_NATIVE_PACKED_REFERENCE_TEXTURE_AND_EXACT_SOURCE_BYTES",
+  "native_sha256": "1114348935a1563248431aa61eb20cd1dba14f67869096508f4b4842742f1825",
+  "native_bytes": 19484251,
+  "source_code": [
+    {
+      "native_text": "REGENERATE_build_dragon.py",
+      "deliverable_source": "build_dragon_v7.py",
+      "bytes": 39966,
+      "sha256": "9fdc8787bf685681eab6467e3ffc3230a7b311adbdf2abdeb9d47dfb44437b05",
+      "byte_identical": true
+    },
+    {
+      "native_text": "material_surface_smooth_v7.py",
+      "deliverable_source": "material_surface_v7.py",
+      "bytes": 18068,
+      "sha256": "08861c2321e8477729c5d87a854ab466c29a2261271b6e422a6fc5ab9278c362",
+      "byte_identical": true
+    },
+    {
+      "native_text": "explicit_world_runtime_copy_v7.py",
+      "deliverable_source": "runtime_copy_v7.py",
+      "bytes": 5074,
+      "sha256": "3cf8ee45ea70264af2c381cb4214383d9544c4a94f3b2e8e297bb0d3aa42176b",
+      "byte_identical": true
+    },
+    {
+      "native_text": "shape_weight_binding_v7.py",
+      "deliverable_source": "weight_binding_v7.py",
+      "bytes": 9854,
+      "sha256": "cb702a5d8a21231017340336e233399adc78135ab6f3c895f10a0d87efba026f",
+      "byte_identical": true
+    }
+  ],
+  "packed_images": [
+    {
+      "name": "Approved_2D_Concept_SHA256_6184555091c8",
+      "size": [
+        1254,
+        1254
+      ],
+      "packed_bytes": 1651398,
+      "sha256": "6184555091c80769d6553ae40641dbb44eb6dcc859dd0b8591b7887cc1502e58"
+    },
+    {
+      "name": "Dragon_V7_Body_BaseColor",
+      "size": [
+        4096,
+        4096
+      ],
+      "packed_bytes": 707350,
+      "sha256": "c04d177c62311e833bc6fb8fa345d2605d56aa3ed280466a85571329d85ac059"
+    }
+  ],
+  "linked_external_blender_libraries": 0,
+  "frozen_python_sources_syntax_valid": true,
+  "source_native_not_saved_or_modified": true,
+  "reproduction_components_actually_executed": true,
+  "orchestrator_validate_only_passed": true,
+  "orchestrator_full_fresh_run_not_repeated": true
+}

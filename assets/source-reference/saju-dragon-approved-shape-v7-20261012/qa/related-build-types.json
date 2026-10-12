@@ -1,0 +1,28 @@
+{
+  "status": "PASS_ART_RELATED_PRODUCT_BUILD_AND_TYPES",
+  "build": {
+    "status": "PASS",
+    "stage": "art-basis-production-build",
+    "start_utc": "2026-10-12T06:42:50.526Z",
+    "end_utc": "2026-10-12T06:43:56.138Z",
+    "exit_code": 0,
+    "spawn_error": null,
+    "log": "D:/Codex/Results/SaJuDragonApprovedShapeV7-20261012-Joseph/art-basis-production-build.log",
+    "log_sha256": "a4acad9ad167ffa58b80e321e8086b080c95d648c0f81afe209a511be20eda8e",
+    "scope": "Existing product code at preserved V6 basis; candidate art is added independently without replacing product model."
+  },
+  "types": {
+    "status": "PASS",
+    "stage": "art-basis-types",
+    "start_utc": "2026-10-12T06:43:56.143Z",
+    "end_utc": "2026-10-12T06:44:05.037Z",
+    "exit_code": 0,
+    "spawn_error": null,
+    "log": "D:/Codex/Results/SaJuDragonApprovedShapeV7-20261012-Joseph/art-basis-types.log",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "scope": "Existing product code at preserved V6 basis; candidate art is added independently without replacing product model."
+  },
+  "production_code_unchanged": true,
+  "source_snapshot_sha256": "bbd084ad18b0e267fc643d6061b8be10fb729a098c44a4c2453b7f93d5b78853",
+  "not_site_batch_five_verification": true
+}

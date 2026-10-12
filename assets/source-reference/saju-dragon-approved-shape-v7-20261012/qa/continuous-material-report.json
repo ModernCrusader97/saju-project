@@ -1,0 +1,23 @@
+{
+  "status": "PASS_V7_CONTINUOUS_SURFACE_MATERIAL_GENERATED",
+  "source_v7_blockout_blend_sha256": "4041b36789ed38df0c3bb201550af103f8f5f7f68fa98dd2b9daaea281e605fb",
+  "geometry_normals_weights_objects_exact_unchanged": true,
+  "verified_mesh_objects": 101,
+  "original_BodyTint_exact_unchanged": true,
+  "surface_materials": "One continuous teal/ivory texture including lower muzzle and body; original BodyTint data retained for editability but not rendered",
+  "preserved_head_face_count": 0,
+  "repaired_body_face_count": 74822,
+  "pose_145_frames_exact_unchanged": true,
+  "pose_matrix_sha256": "8847762e76d9211816faa01a02ca0499c7ff21f02d8805523f148a481878e81f",
+  "studio_camera_lights_exact_unchanged": true,
+  "uv_layer": "BoundaryUV",
+  "texture_pixels": [
+    4096,
+    4096
+  ],
+  "texture_sha256": "c04d177c62311e833bc6fb8fa345d2605d56aa3ed280466a85571329d85ac059",
+  "changes": "One continuous rest-position teal/ivory material across head, chin, body and paws removes the demonstrated inter-material collar mismatch. Geometry, normals, weights, original editable BodyTint and 145-frame animation remain exact.",
+  "body_centerline_from_delivered_rig_metadata": true,
+  "paw_paths_from_delivered_editable_geometry": true,
+  "remaining_scope": "This material stage preserves V7 geometry and animation; raw export hierarchy is repaired and reloaded in the next independent stage. No mobile performance claim."
+}

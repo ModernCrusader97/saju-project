@@ -1,0 +1,69 @@
+{
+  "status": "REFERENCE_APPEARANCE_FIDELITY_INSUFFICIENT_RECONSTRUCTION_RECOMMENDED",
+  "at_utc": "2026-10-12T08:41:10.561Z",
+  "approved_reference_sha256": "6184555091c80769d6553ae40641dbb44eb6dcc859dd0b8591b7887cc1502e58",
+  "actual_v7_glb_sha256": "4c15f0070372071d35f8f659b1a1017e4665381200dbba42904637bf30e16d9e",
+  "original_reference_pixels_seen": true,
+  "two_new_library_attachments_not_resolved_or_bypassed": true,
+  "comparison_method": "Original image/actual Blender GLB render pixels cropped, bicubic resized to approximately comparable framing, and placed side by side. No generated/retouched replacement pixels.",
+  "cameras_not_calibrated": true,
+  "visual_findings": [
+    {
+      "area": "face_silhouette",
+      "difference": "V7 is flatter and wider across the forehead and mouth. The concept has a domed, rounded head with full lower cheeks and a distinct muzzle."
+    },
+    {
+      "area": "eyes",
+      "difference": "V7 eyes sit higher and closer together and read more as circular buttons with thin white rims. The front concept shows wider separation and a more vertical oval gaze."
+    },
+    {
+      "area": "muzzle",
+      "difference": "V7 muzzle blends into a broad shallow face plane; nose projection and the lobed round muzzle/ivory jaw volume are weaker than the reference."
+    },
+    {
+      "area": "head_body_ratio_and_neck",
+      "difference": "At approximately comparable whole-body framing V7 head reads smaller relative to the thick torso; its neck/chest forms a horizontal shelf. The reference has a prominent head and a more distinct rising neck."
+    },
+    {
+      "area": "body_curve",
+      "difference": "V7 lower coil is a compact C and the upper body stretches horizontally. The reference has a flowing S transition and a broader sweeping tail arc."
+    },
+    {
+      "area": "mane_volume",
+      "difference": "V7 has sparse rounded rectangular dorsal lobes and limited visible side mane. The reference has larger pointed overlapping flame leaves flowing continuously around the head and spine."
+    },
+    {
+      "area": "secondary_details",
+      "difference": "V7 antlers are thinner, straighter and have extra prongs. Three small pointed claws are visible on each V7 paw while two broad blunt toes dominate the concept."
+    }
+  ],
+  "technical_tests_not_photographic_similarity_approval": true,
+  "user_final_3D_appearance_approved": false,
+  "mesh_and_rig_constraints": {
+    "preserve_existing_models_work_branches_and_WIP": true,
+    "retain_current_V7_mesh_or_exact_13_bone_rig_is_not_a_user_requirement": true,
+    "workflow_choice": "Reused the numerical authoring framework and skeletal arrangement while changing geometry parameters; this choice did not sufficiently reconstruct the concept silhouette.",
+    "technical_blocker": false,
+    "judgment": "The current rig can be repositioned/reweighted. It is not an unavoidable barrier to fidelity."
+  },
+  "next_work_judgment": "Local eye/horn/toe adjustments are feasible but insufficient for whole-design fidelity. Reconstruct face volume, neck/head-to-body balance and body centreline, then redesign the mane silhouettes and rebind the idle rig. Separate rebuild has NOT started.",
+  "preservation_only_continues": true,
+  "comparison_private_drive": [
+    {
+      "kind": "whole",
+      "id": "1JQN_mpCssSG8dul1saAH1yXz5iGlRDkb",
+      "bytes": 2257102
+    },
+    {
+      "kind": "front_head",
+      "id": "1LR42IWsjN26kgNMbvO93dlR8qU8c50Zl",
+      "bytes": 1592642
+    },
+    {
+      "kind": "quarter_head",
+      "id": "1l5L7rxdBco-hlXiulX_JDm8gD0yv_doH",
+      "bytes": 1478465
+    }
+  ],
+  "metadata_owner_only_verified": true
+}

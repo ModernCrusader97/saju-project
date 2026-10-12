@@ -1,0 +1,43 @@
+{
+  "status": "PASS_ACTUAL_ENCODED_MP4_DECODE_SEEK_AND_LOOP_PLAYBACK",
+  "video_sha256": "8d87d9f7b270828ef1ec14fa2af45b935d22c646da8a7db2e4e238b7da2e836c",
+  "metadata": {
+    "duration": 6,
+    "width": 640,
+    "height": 640,
+    "readyState": 4
+  },
+  "decoded_captures": [
+    {
+      "time": 0,
+      "file": "decoded-0.png",
+      "sha256": "6d23066dad75623f2ee44d3dd64ce486c047360104000efde89afeacc04e9583"
+    },
+    {
+      "time": 1.5,
+      "file": "decoded-1_5.png",
+      "sha256": "6d23066dad75623f2ee44d3dd64ce486c047360104000efde89afeacc04e9583"
+    },
+    {
+      "time": 3,
+      "file": "decoded-3.png",
+      "sha256": "6d23066dad75623f2ee44d3dd64ce486c047360104000efde89afeacc04e9583"
+    },
+    {
+      "time": 4.5,
+      "file": "decoded-4_5.png",
+      "sha256": "6d23066dad75623f2ee44d3dd64ce486c047360104000efde89afeacc04e9583"
+    },
+    {
+      "time": 5.916667,
+      "file": "decoded-5_916667.png",
+      "sha256": "6d23066dad75623f2ee44d3dd64ce486c047360104000efde89afeacc04e9583"
+    }
+  ],
+  "loop_wrap_observed": true,
+  "isolated_owned_browser_profile": true,
+  "user_browser_tabs_profiles_clipboard_accessed": false,
+  "page_errors": [],
+  "outbound_requests": [],
+  "manual_decoded_frame_review_still_required": true
+}

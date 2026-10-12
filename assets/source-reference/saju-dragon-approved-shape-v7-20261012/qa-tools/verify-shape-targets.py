@@ -1,0 +1,19 @@
+import bpy,sys,argparse,json,pathlib,hashlib,numpy as np
+from mathutils import Vector
+p=argparse.ArgumentParser();p.add_argument('--input',required=True);p.add_argument('--out',required=True);p.add_argument('--expected-before',action='store_true');a=p.parse_args(sys.argv[sys.argv.index('--')+1:]);source=pathlib.Path(a.input);before=hashlib.sha256(source.read_bytes()).hexdigest();bpy.ops.wm.open_mainfile(filepath=str(source));bpy.context.scene.frame_set(0)
+def points(name):
+ o=bpy.data.objects.get(name);assert o and o.type=='MESH','Missing delivered native geometry '+name
+ return np.array([tuple(o.matrix_world@v.co) for v in o.data.vertices],dtype=np.float64)
+def pca_ratio(name):
+ v=points(name);e=np.linalg.eigvalsh(np.cov((v-v.mean(axis=0)).T));e=np.maximum(e,0);return float(np.sqrt(e[0]/e[1]))
+v=points('Dragon_Continuous_Skin');face=v[(v[:,0]>-2.1)&(v[:,0]<-.20)&(v[:,2]>2.70)&(v[:,2]<3.43)];assert len(face)>100
+muzzle_min_y=float(face[:,1].min());cheek=face[(face[:,2]>2.94)&(face[:,2]<3.10)&(face[:,1]<-.20)];cheek_width=float(np.ptp(cheek[:,0]));torso=v[(v[:,0]>.05)&(v[:,0]<.35)&(v[:,2]>1.45)&(v[:,2]<3.35)&(v[:,1]<.50)];torso_height=float(np.ptp(torso[:,2]));skin_max_x=float(v[:,0].max())
+horn=points('Horn_Main_-1');lower_branch_count=int(np.sum((horn[:,0]<-1.86)&(horn[:,2]>3.98)&(horn[:,2]<4.19)))
+leaf_ratio=pca_ratio('EDIT_Dorsal_Mane_03');claw=points('Surface_Front_Left_Ivory_Claw_0');claw_depth=float(np.ptp(claw[:,1]))
+checks=[{'item':'face_cheek_short_projecting_muzzle','pass':muzzle_min_y<=-.985,'measured':{'muzzle_front_y':muzzle_min_y,'lower_face_width':cheek_width},'target':'Front surface y <= -0.985; visually judge cheek fullness and short round muzzle against approved concept.'},{'item':'plump_compact_s_body_tail','pass':skin_max_x<=2.48 and torso_height>=1.20,'measured':{'connected_skin_right_extent_x':skin_max_x,'upper_torso_section_height':torso_height},'target':'Rightward skin span <= 2.48 and middle-body vertical thickness >= 1.20; matched views must visibly show a plumper tighter S bend.'},{'item':'additional_branched_round_horns','pass':lower_branch_count>=40,'measured':{'delivered_horn_surface_vertices_in_lower_outward_branch_region':lower_branch_count},'target':'A third lower outward arm has real surface geometry; visually confirm three gentle branches and rounded tips.'},{'item':'broad_layered_leaf_mane','pass':leaf_ratio<=.29,'measured':{'editable_dorsal_leaf_thickness_to_width_pca_ratio':leaf_ratio},'target':'Thickness/width <= 0.29; merged rendered mane must retain broad overlapping leaves rather than round bead lobes.'},{'item':'plump_paws_volumetric_claws','pass':claw_depth>=.080,'measured':{'native_claw_front_back_depth':claw_depth},'target':'Real short rounded claw volume depth >= 0.080; visually verify all four fused plump paws and gentle claw tips.'}]
+assert hashlib.sha256(source.read_bytes()).hexdigest()==before
+report={'status':'PASS_FIVE_GEOMETRIC_TARGETS' if all(x['pass'] for x in checks) else 'EXPECTED_BASELINE_SHAPE_TARGETS_NOT_MET' if a.expected_before else 'SHAPE_TARGETS_NOT_MET','source_sha256':before,'input':str(source),'checks':checks,'measured_from_native_geometry_not_generator_parameter_echo':True,'manual_matched_camera_visual_acceptance_still_required':True,'limits':['Geometric proxies accompany actual three-view appearance review; these values do not prove pixel-identical matching to a 2D concept.','Editable leaf geometry checks its construction shape; the merged runtime/rendered result is checked independently before acceptance.'],'native_source_saved_or_modified':False}
+with pathlib.Path(a.out).open('x',encoding='utf-8') as f:json.dump(report,f,indent=2);f.write('\n')
+print(json.dumps(report),flush=True)
+if a.expected_before:assert sum(not x['pass'] for x in checks)==5,'Baseline must expose all five expected shape differences'
+else:assert all(x['pass'] for x in checks),'Delivered geometry still misses a requested shape target'

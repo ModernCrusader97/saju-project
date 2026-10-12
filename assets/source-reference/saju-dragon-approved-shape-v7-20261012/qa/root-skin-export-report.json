@@ -1,0 +1,101 @@
+{
+  "status": "PASS_EXPORT_HIERARCHY_ONLY",
+  "input_name": "SaJu_Dragon_Approved_Shape_v7.glb",
+  "output_name": "SaJu_Dragon_Approved_Shape_v7.glb",
+  "input_sha256": "b1e8a2b12ccfc919d5d492b161c58584950d0290ac0c6750f61bd261a4a6c57d",
+  "output_sha256": "4c15f0070372071d35f8f659b1a1017e4665381200dbba42904637bf30e16d9e",
+  "input_bytes": 11370496,
+  "output_bytes": 11370496,
+  "bin_chunk_bytes": 11342168,
+  "bin_chunk_sha256": "db86679c42171d9fc6a9586a60814daaa1f749be662408d04f30905b895a2e91",
+  "bin_chunk_byte_identical": true,
+  "moved_skinned_mesh_nodes": [
+    {
+      "node": 13,
+      "name": "Dragon_Belly_Horns_Whiskers_Ivory",
+      "former_parent": 23
+    },
+    {
+      "node": 14,
+      "name": "Dragon_Belly_Subtle_Seams",
+      "former_parent": 23
+    },
+    {
+      "node": 15,
+      "name": "Dragon_Body_Teal",
+      "former_parent": 23
+    },
+    {
+      "node": 16,
+      "name": "Dragon_Continuous_Teal_Ivory_Textured_PBR",
+      "former_parent": 23
+    },
+    {
+      "node": 17,
+      "name": "Dragon_Ear_Inner_Ivory",
+      "former_parent": 23
+    },
+    {
+      "node": 18,
+      "name": "Dragon_Eyes_Soft_Ivory",
+      "former_parent": 23
+    },
+    {
+      "node": 19,
+      "name": "Dragon_Eyes_Warm_Brown",
+      "former_parent": 23
+    },
+    {
+      "node": 20,
+      "name": "Dragon_Mane_Warm_Orange",
+      "former_parent": 23
+    },
+    {
+      "node": 21,
+      "name": "Dragon_Nostrils_Deep_Teal",
+      "former_parent": 23
+    },
+    {
+      "node": 22,
+      "name": "Dragon_Smile_Warm_Deep_Teal",
+      "former_parent": 23
+    }
+  ],
+  "former_parent_children": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    12
+  ],
+  "new_parent_children": [
+    12
+  ],
+  "scene_roots_before": [
+    23
+  ],
+  "scene_roots_after": [
+    23,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22
+  ],
+  "all_other_json_properties_equal": true,
+  "native_blend_modified": false,
+  "primary_spec": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#joint-hierarchy",
+  "warning_code": "NODE_SKINNED_MESH_NON_ROOT",
+  "reason": "Mesh parent transforms are ignored for skinning. Identity, unanimated mesh nodes and their identity, unanimated former parent permit direct scene-root promotion; joint hierarchy remains unchanged."
+}

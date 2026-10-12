@@ -1,0 +1,56 @@
+{
+  "status": "PASS_FIVE_GEOMETRIC_TARGETS",
+  "source_sha256": "1114348935a1563248431aa61eb20cd1dba14f67869096508f4b4842742f1825",
+  "input": "D:\\Codex\\Results\\SaJuDragonApprovedShapeV7-20261012-Joseph\\delivery-v7-reviewed\\native\\SaJu_Dragon_Approved_Shape_v7.blend",
+  "checks": [
+    {
+      "item": "face_cheek_short_projecting_muzzle",
+      "pass": true,
+      "measured": {
+        "muzzle_front_y": -1.0485131740570068,
+        "lower_face_width": 1.7622234672307968
+      },
+      "target": "Front surface y <= -0.985; visually judge cheek fullness and short round muzzle against approved concept."
+    },
+    {
+      "item": "plump_compact_s_body_tail",
+      "pass": true,
+      "measured": {
+        "connected_skin_right_extent_x": 2.1926565170288086,
+        "upper_torso_section_height": 1.6327924728393555
+      },
+      "target": "Rightward skin span <= 2.48 and middle-body vertical thickness >= 1.20; matched views must visibly show a plumper tighter S bend."
+    },
+    {
+      "item": "additional_branched_round_horns",
+      "pass": true,
+      "measured": {
+        "delivered_horn_surface_vertices_in_lower_outward_branch_region": 730
+      },
+      "target": "A third lower outward arm has real surface geometry; visually confirm three gentle branches and rounded tips."
+    },
+    {
+      "item": "broad_layered_leaf_mane",
+      "pass": true,
+      "measured": {
+        "editable_dorsal_leaf_thickness_to_width_pca_ratio": 0.2274639845977972
+      },
+      "target": "Thickness/width <= 0.29; merged rendered mane must retain broad overlapping leaves rather than round bead lobes."
+    },
+    {
+      "item": "plump_paws_volumetric_claws",
+      "pass": true,
+      "measured": {
+        "native_claw_front_back_depth": 0.19235879182815552
+      },
+      "target": "Real short rounded claw volume depth >= 0.080; visually verify all four fused plump paws and gentle claw tips."
+    }
+  ],
+  "measured_from_native_geometry_not_generator_parameter_echo": true,
+  "manual_matched_camera_visual_acceptance_still_required": true,
+  "limits": [
+    "Geometric proxies accompany actual three-view appearance review; these values do not prove pixel-identical matching to a 2D concept.",
+    "Editable leaf geometry checks its construction shape; the merged runtime/rendered result is checked independently before acceptance."
+  ],
+  "native_source_saved_or_modified": false
+}

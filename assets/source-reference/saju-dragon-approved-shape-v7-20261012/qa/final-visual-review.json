@@ -1,0 +1,26 @@
+{
+  "status": "PASS_MANUAL_ACTUAL_THREE_VIEW_AND_DECODED_IDLE_REVIEW",
+  "at_utc": "2026-10-12T08:07:09.531Z",
+  "reviewer": "Codex on Joseph",
+  "rendered_glb_sha256": "4c15f0070372071d35f8f659b1a1017e4665381200dbba42904637bf30e16d9e",
+  "views": [
+    "front",
+    "threequarter",
+    "side"
+  ],
+  "decoded_movie_times": [
+    0,
+    1.5,
+    3,
+    4.5,
+    5.916667
+  ],
+  "eyes": "Gentle oval fitted brown eye caps; no detached or intersecting eye shells visible.",
+  "limbs": "Four fused plump paws visible in front/threequarter; side occlusion is consistent. Short ivory claws remain seated through the reviewed motion extrema.",
+  "surface": "Connected skin remains smooth; no torn normals or voxel holes visible; 31 intentional closed overlapping mane layers retain a flow base.",
+  "loop": "Native and GLB endpoints measured; actual encoded video playback wraps. Last rendered sample approaches frame zero smoothly.",
+  "approval_scope": "Implementation/QA acceptance of an authorized candidate; user approval of final 3D appearance is not claimed.",
+  "generated_design_images_presented_as_model_renders": false,
+  "reference_fidelity_status": "REFERENCE_APPEARANCE_FIDELITY_INSUFFICIENT_RECONSTRUCTION_RECOMMENDED",
+  "visual_review_scope": "Render defects, eye attachment, limbs, normals, deformation and loop; reference resemblance is reviewed separately and is insufficient."
+}

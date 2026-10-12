@@ -1,0 +1,110 @@
+{
+  "status": "PASS_TECHNICAL_V7_CANDIDATE_WITH_REFERENCE_APPEARANCE_GAPS",
+  "art_verified_count": 5,
+  "site_verified_count": 4,
+  "site_batch_five_paused": true,
+  "host": "Joseph",
+  "branch": "art/dragon-approved-shape-v7-20261012-joseph",
+  "basis": "4e96de0e131a8081864695a697e2d8d3becf9f1a",
+  "groups": [
+    {
+      "id": "face_cheek_short_projecting_muzzle",
+      "before": {
+        "muzzle_front_y": -0.8437600135803223,
+        "lower_face_width": 1.5176177024841309
+      },
+      "after": {
+        "muzzle_front_y": -1.0485131740570068,
+        "lower_face_width": 1.7622234672307968
+      },
+      "geometry_pass": true,
+      "actual_three_view_review_pass": true,
+      "idle_review_pass": true
+    },
+    {
+      "id": "plump_compact_s_body_tail",
+      "before": {
+        "connected_skin_right_extent_x": 2.736010789871216,
+        "upper_torso_section_height": 1.1460740566253662
+      },
+      "after": {
+        "connected_skin_right_extent_x": 2.1926565170288086,
+        "upper_torso_section_height": 1.6327924728393555
+      },
+      "geometry_pass": true,
+      "actual_three_view_review_pass": true,
+      "idle_review_pass": true
+    },
+    {
+      "id": "additional_branched_round_horns",
+      "before": {
+        "delivered_horn_surface_vertices_in_lower_outward_branch_region": 0
+      },
+      "after": {
+        "delivered_horn_surface_vertices_in_lower_outward_branch_region": 730
+      },
+      "geometry_pass": true,
+      "actual_three_view_review_pass": true,
+      "idle_review_pass": true
+    },
+    {
+      "id": "broad_layered_leaf_mane",
+      "before": {
+        "editable_dorsal_leaf_thickness_to_width_pca_ratio": 0.39840988303028646
+      },
+      "after": {
+        "editable_dorsal_leaf_thickness_to_width_pca_ratio": 0.2274639845977972
+      },
+      "geometry_pass": true,
+      "actual_three_view_review_pass": true,
+      "idle_review_pass": true
+    },
+    {
+      "id": "plump_paws_volumetric_claws",
+      "before": {
+        "native_claw_front_back_depth": 0.07243615388870239
+      },
+      "after": {
+        "native_claw_front_back_depth": 0.19235879182815552
+      },
+      "geometry_pass": true,
+      "actual_three_view_review_pass": true,
+      "idle_review_pass": true
+    }
+  ],
+  "glb": {
+    "bytes": 11370496,
+    "sha256": "4c15f0070372071d35f8f659b1a1017e4665381200dbba42904637bf30e16d9e",
+    "triangles": 312956,
+    "bones": 13,
+    "loop_seconds": 6
+  },
+  "native": {
+    "bytes": 19484251,
+    "sha256": "1114348935a1563248431aa61eb20cd1dba14f67869096508f4b4842742f1825"
+  },
+  "movie": {
+    "bytes": 266465,
+    "sha256": "8d87d9f7b270828ef1ec14fa2af45b935d22c646da8a7db2e4e238b7da2e836c",
+    "seconds": 6,
+    "fps": 12,
+    "frames": 72
+  },
+  "reference_sha256": "6184555091c80769d6553ae40641dbb44eb6dcc859dd0b8591b7887cc1502e58",
+  "source_components_byte_equal_native": true,
+  "related_build_and_types_pass": true,
+  "candidate_only": true,
+  "product_default_changed": false,
+  "other_animals_changed": false,
+  "limitations": [
+    "312956 triangles and an 11.37MB runtime candidate; GPU/mobile performance has not been measured.",
+    "One Khronos informational unused orange UV attribute; zero errors and zero warnings.",
+    "The original 2D concept camera is unknown, so exact pixel matching is not asserted.",
+    "All component scripts were executed and the one-command orchestrator was syntax/plan checked; a redundant full new orchestrator run was not performed."
+  ],
+  "geometry_target_count_passed": 5,
+  "art_verified_count_means": "Five requested geometric modifications and runtime/deformation QA; this does not measure or approve reference-image similarity.",
+  "reference_fidelity_status": "REFERENCE_APPEARANCE_FIDELITY_INSUFFICIENT_RECONSTRUCTION_RECOMMENDED",
+  "user_final_appearance_approved": false,
+  "separate_model_rebuild_started": false
+}

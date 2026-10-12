@@ -1,0 +1,4 @@
+# Preserve exact candidate/source/evidence bytes in all checkouts.
+* -text whitespace=cr-at-eol
+# Raw encoder/build logs remain immutable evidence.
+*.log binary
