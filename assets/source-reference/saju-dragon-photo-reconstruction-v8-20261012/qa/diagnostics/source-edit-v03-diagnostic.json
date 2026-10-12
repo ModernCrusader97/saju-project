@@ -1,0 +1,24 @@
+{
+  "status": "SOURCE_EDIT_ANCHOR_ERROR_CORRECTED_NO_VISUAL_OR_GEOMETRY_GATE_LOWERED",
+  "failed_source_edit": "An unnecessary no-op replace required absent comment # Preserve; this was a source patch precondition, not an art acceptance test.",
+  "first_attempt_generated_model": false,
+  "failed_blender_log": "static-v03-generation.log",
+  "failed_log_sha256": "6fe4f389503a579bb07375d2c0cd25933e14558c8fc8ed4675ca0e2df44ea6f5",
+  "repair": "Removed the no-op anchor requirement; added immediate nonzero-exit checks for Node patch and Python AST before Blender launch.",
+  "unchanged_static_validator": "verify_v8_static.py",
+  "unchanged_static_validator_sha256": "98099bfd2b64f418f3da6effeaf8351e2a7eb097d500cea51c2dabf72401b761",
+  "kept_geometry_guards": [
+    "Skin nonmanifold edges = 0",
+    "Skin connected components = 1",
+    "Skin Euler characteristic = 2",
+    "Finite positions and unit normals",
+    "No zero-area triangles",
+    "Approved PNG original bytes and SHA256 exact"
+  ],
+  "kept_future_deformation_edge_guard": [
+    0.78,
+    1.23
+  ],
+  "photo_fidelity_not_inferred_from_technical_pass": true,
+  "failure_log_preserved": true
+}

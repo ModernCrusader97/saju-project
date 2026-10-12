@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "stage": "art-v8-production-build-installed-cli",
+  "start_utc": "2026-10-12T11:41:29.125Z",
+  "end_utc": "2026-10-12T11:42:49.105Z",
+  "exit_code": 0,
+  "spawn_error": null,
+  "log": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/art-v8-production-build-installed-cli.log",
+  "log_sha256": "40a73c67c3635f047efd321895ad469a7c3c5f336837a94dfc309b05c5194767",
+  "command": [
+    "D:/Codex/Work/SaJuDragonApprovedShapeV7-20261012-Joseph/verification-repo/node_modules/vinext/dist/cli.js",
+    "build"
+  ],
+  "cwd": "D:/Codex/Work/SaJuDragonApprovedShapeV7-20261012-Joseph/verification-repo/V8Build_SaJuDragonPhotoReconstruction_20261012_01a126cc",
+  "original_npm_wrapper_failed_only_because_no_local_node_modules_path": true,
+  "equivalence": "Unchanged run-framework.mjs on Joseph selects vinext/dist/cli.js and argv build. The identical installed CLI is invoked by absolute path so parent-resolved libraries can be reused.",
+  "product_source_modified": false,
+  "not_site_batch_five_verification": true
+}

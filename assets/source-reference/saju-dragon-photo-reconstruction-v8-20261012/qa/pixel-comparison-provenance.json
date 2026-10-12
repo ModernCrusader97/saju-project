@@ -1,0 +1,68 @@
+{
+  "status": "ACTUAL_APPROVED_ORIGINAL_AND_DELIVERED_GLB_RENDER_PIXEL_COMPARISON",
+  "stage": "final-actual-glb",
+  "entries": [
+    {
+      "name": "01-whole-reference-actual",
+      "reference": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/reference/approved-2D-concept-original.png",
+      "reference_sha256": "6184555091c80769d6553ae40641dbb44eb6dcc859dd0b8591b7887cc1502e58",
+      "actual_model_image": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/qa-native-v01/glb-reimport-threequarter.png",
+      "model_image_sha256": "51f0a58b120d2a58e85e1741822e60be8eb3cec0a0d174624b4a79e1187842de",
+      "left_crop": null,
+      "right_crop": null,
+      "output": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/final-actual-glb-photo-comparison/01-whole-reference-actual.png",
+      "output_sha256": "3651afa16557297516e0090a8509208f0683ac6f714b28a078ba1b6dbbbbb8c7",
+      "camera_match": "Approximate only: original 2D camera is unknown",
+      "operations": "Crop + bicubic resizing + labels only. No synthesis, retouch or generated illustration."
+    },
+    {
+      "name": "02-threequarter-face-reference-actual",
+      "reference": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/reference/approved-2D-concept-original.png",
+      "reference_sha256": "6184555091c80769d6553ae40641dbb44eb6dcc859dd0b8591b7887cc1502e58",
+      "actual_model_image": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/qa-native-v01/glb-reimport-headthreequarter.png",
+      "model_image_sha256": "dd2b6c43f096da162d21cfd64335c399710e39daf005335fbae5fa6c1e288aaa",
+      "left_crop": {
+        "x": 130,
+        "y": 235,
+        "w": 560,
+        "h": 360
+      },
+      "right_crop": {
+        "x": 133,
+        "y": 211,
+        "w": 583,
+        "h": 389
+      },
+      "output": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/final-actual-glb-photo-comparison/02-threequarter-face-reference-actual.png",
+      "output_sha256": "e05a5dfc3eeea2b3eb3cd865f3ba3a174d214d4ee399915f88d6e59e355539ed",
+      "camera_match": "Approximate only: original 2D camera is unknown",
+      "operations": "Crop + bicubic resizing + labels only. No synthesis, retouch or generated illustration."
+    },
+    {
+      "name": "03-front-face-reference-actual",
+      "reference": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/reference/approved-2D-concept-original.png",
+      "reference_sha256": "6184555091c80769d6553ae40641dbb44eb6dcc859dd0b8591b7887cc1502e58",
+      "actual_model_image": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/qa-native-v01/glb-reimport-headfront.png",
+      "model_image_sha256": "9ac58c45b1911d9bcf2e7d3691fdc7ed5f5041b9b79f5e475afda1d7a41f0239",
+      "left_crop": {
+        "x": 800,
+        "y": 235,
+        "w": 400,
+        "h": 310
+      },
+      "right_crop": {
+        "x": 139,
+        "y": 226,
+        "w": 522,
+        "h": 361
+      },
+      "output": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/final-actual-glb-photo-comparison/03-front-face-reference-actual.png",
+      "output_sha256": "f9d0d27c3e6912b281b07a16d7489acc3c715b8b3010cf335142ca6c09c6af46",
+      "camera_match": "Approximate only: original 2D camera is unknown",
+      "operations": "Crop + bicubic resizing + labels only. No synthesis, retouch or generated illustration."
+    }
+  ],
+  "user_final_appearance_approved": false,
+  "rig_applied": true,
+  "technical_checks_are_not_photo_fidelity": true
+}

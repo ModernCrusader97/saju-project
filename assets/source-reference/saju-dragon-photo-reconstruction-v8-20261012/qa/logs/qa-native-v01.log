@@ -1,0 +1,95 @@
+00:03.156  blend            | Read blend: "D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\animated-v01\SaJu_Dragon_Photo_Reconstruction_V8.blend"
+20:14:06 | INFO: Data are loaded, start creating Blender stuff
+20:14:06 | INFO: Blender create Mesh node Ivory_Antler_-1_Mesh.001
+20:14:06 | INFO: Blender create Mesh node Belly_Subtle_Fold_00_Mesh.001
+20:14:06 | INFO: Blender create Mesh node Surface_V8_Lid_-1_Mesh.001
+20:14:06 | INFO: Blender create Mesh node Surface_V8_Almond_Ear_Ivory_-1_Mesh.001
+20:14:06 | INFO: Blender create Mesh node Surface_V8_Eye_White_-1_Mesh.001
+20:14:06 | INFO: Blender create Mesh node Surface_V8_Eye_Pupil_-1_Mesh.001
+20:14:06 | INFO: Blender create Mesh node Sphere.018
+20:14:06 | INFO: Blender create Mesh node Surface_V8_Nostril_-1_Mesh.001
+20:14:06 | INFO: Blender create Mesh node Gentle_Closed_Toothless_Smile_Mesh.001
+20:14:06 | INFO: Blender create Mesh node Dragon_Continuous_Skin_Mesh.001
+20:14:06 | INFO: glTF import finished in 0.63s
+00:20.062  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\glb-reimport-front.png'
+00:38.922  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\glb-reimport-threequarter.png'
+00:48.047  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\glb-reimport-side.png'
+01:03.031  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\glb-reimport-headfront.png'
+01:17.890  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\glb-reimport-headthreequarter.png'
+NATIVE_GLB_QA_PASS {"continuous_skin_components": 1, "Dragon_Continuous_Skin_topology": {"closed_components": 1, "euler_characteristic": 2, "unintended_handles": 0, "nonmanifold_edges": 0}, "skin_weights_normalized": true, "bones": 13, "vertex_color_on_same_skin": true, "native_loop_max_vertex_error": 0.0, "sampled_edge_length_ratio": [0.8633182541793697, 1.217680673721382], "sampled_skin_motion_max": 0.23166699798106327, "sampled_frames": [0, 36, 72, 108, 144], "deformation_frames": [12, 24, 36, 48, 60, 72, 84, 96, 108, 120, 132, 144], "deformation_guards_unchanged": [0.78, 1.23], "sampled_edge_count": 10223, "native_loop_sampled_boundary_velocity_error_per_frame": 0.0003422440571890871, "invalid_native_vertex_normals": 0, "packed_approved_source_image": [{"name": "Approved_2D_Concept_SHA256_6184555091c8", "bytes": 1651398, "sha256": "6184555091c80769d6553ae40641dbb44eb6dcc859dd0b8591b7887cc1502e58"}], "packed_authoring_literal_bytes": [{"name": "REGENERATE_build_dragon_v8_static.py", "bytes": 28109, "sha256": "cf6f49c18d663e3dfe0d96bce35169e8e25dacbaba5c55d05a93b062cc84489f"}, {"name": "REGENERATE_bind_idle_export_v8.py", "bytes": 11051, "sha256": "651705afea9c5c818eefe9462e0f53cda6282ddae65d5caefd4fabf07454715d"}], "native_sampled_bounds_zup": {"min": [-2.8333349227905273, -1.2065962553024292, -0.20527884364128113], "max": [3.2082104682922363, 0.860312283039093, 5.1259965896606445]}, "importer_control_objects_excluded": ["Icosphere"], "glb_import_mesh_count": 10, "glb_roundtrip_max_nearest_vertex_error": {"0": 1.8963739876198815e-06, "36": 3.3717478800099343e-06, "72": 5.136039362696465e-06, "108": 4.179237748758169e-06, "144": 1.8963739876198815e-06}, "glb_source_geometry_preserved": true, "glb_animation_reimported": true, "actual_imported_glb_camera_records": {"front": {"location": [0.10000000149011612, -11.0, 2.390000104904175], "rotation_euler": [1.5707964897155762, -0.0, 0.0], "ortho_scale": 6.349999904632568, "resolution": [800, 800], "frame": 0, "cycles_samples": 24}, "threequarter": {"location": [6.0, -11.0, 5.400000095367432], "rotation_euler": [1.3338502645492554, 1.3124472175718438e-08, 0.4958367943763733], "ortho_scale": 6.449999809265137, "resolution": [800, 800], "frame": 0, "cycles_samples": 24}, "side": {"location": [11.0, 0.0, 2.380000114440918], "rotation_euler": [1.5707963705062866, -0.0, 1.5707963705062866], "ortho_scale": 5.630000114440918, "resolution": [800, 800], "frame": 0, "cycles_samples": 24}, "headfront": {"location": [-1.100000023841858, -10.892999649047852, 5.111000061035156], "rotation_euler": [1.431161880493164, -0.0, 0.0], "ortho_scale": 3.299999952316284, "resolution": [800, 800], "frame": 0, "cycles_samples": 24}, "headthreequarter": {"location": [4.900000095367432, -11.0, 6.25], "rotation_euler": [1.3566685914993286, -2.659028552898235e-08, 0.5043604969978333], "ortho_scale": 3.3299999237060547, "resolution": [800, 800], "frame": 0, "cycles_samples": 24}}, "glb_actual_render": "glb-reimport-threequarter.png"}
+01:25.172  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0000.png'
+01:32.156  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0002.png'
+01:39.640  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0004.png'
+01:46.937  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0006.png'
+01:54.140  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0008.png'
+02:01.312  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0010.png'
+02:09.593  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0012.png'
+02:17.015  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0014.png'
+02:24.359  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0016.png'
+02:31.797  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0018.png'
+02:39.187  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0020.png'
+02:46.672  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0022.png'
+02:54.031  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0024.png'
+03:01.312  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0026.png'
+03:08.687  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0028.png'
+03:16.203  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0030.png'
+03:23.547  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0032.png'
+03:30.937  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0034.png'
+03:38.218  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0036.png'
+03:45.953  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0038.png'
+03:52.890  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0040.png'
+04:00.125  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0042.png'
+04:07.359  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0044.png'
+04:14.375  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0046.png'
+04:21.547  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0048.png'
+04:28.453  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0050.png'
+04:35.640  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0052.png'
+04:42.812  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0054.png'
+04:49.843  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0056.png'
+04:57.140  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0058.png'
+05:04.453  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0060.png'
+05:11.547  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0062.png'
+05:18.547  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0064.png'
+05:25.734  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0066.png'
+05:32.984  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0068.png'
+05:40.281  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0070.png'
+05:47.500  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0072.png'
+05:54.734  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0074.png'
+06:02.031  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0076.png'
+06:09.312  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0078.png'
+06:16.406  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0080.png'
+06:23.437  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0082.png'
+06:30.265  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0084.png'
+06:37.672  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0086.png'
+06:44.718  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0088.png'
+06:51.625  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0090.png'
+06:58.515  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0092.png'
+07:05.609  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0094.png'
+07:12.750  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0096.png'
+07:19.875  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0098.png'
+07:26.812  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0100.png'
+07:33.843  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0102.png'
+07:40.718  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0104.png'
+07:47.593  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0106.png'
+07:54.718  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0108.png'
+08:01.812  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0110.png'
+08:08.828  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0112.png'
+08:16.015  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0114.png'
+08:23.015  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0116.png'
+08:30.203  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0118.png'
+08:37.375  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0120.png'
+08:44.656  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0122.png'
+08:51.703  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0124.png'
+08:59.000  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0126.png'
+09:06.468  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0128.png'
+09:13.750  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0130.png'
+09:21.031  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0132.png'
+09:28.187  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0134.png'
+09:34.687  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0136.png'
+09:41.593  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0138.png'
+09:48.718  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0140.png'
+09:55.781  render           | Saved: 'D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\qa-native-v01\idle-frames\frame_0142.png'
+ACTUAL_GLB_IDLE_FRAMES_READY
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

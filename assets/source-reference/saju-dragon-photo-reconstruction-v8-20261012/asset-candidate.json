@@ -1,0 +1,24 @@
+{
+  "candidate": "saju-dragon-photo-reconstruction-v8",
+  "host": "Joseph",
+  "basis": "c94c92068f823903758f16f95ae59b52d53931ed",
+  "branch": "art/dragon-photo-reconstruction-v8-20261012-joseph",
+  "product_default_replaced": false,
+  "other_11_animals_changed": false,
+  "old_dragon_C_copied": false,
+  "old_mesh_or_rig_imported": false,
+  "original_approved_drive_id": "1Aop_3VuaFcGOcbuqkmKuLh4eRDiC4N3R",
+  "original_library_id": "libfile_5b6221dbc0f48191aea2118b22b4791a",
+  "original_bytes": 1651398,
+  "original_sha256": "6184555091c80769d6553ae40641dbb44eb6dcc859dd0b8591b7887cc1502e58",
+  "final_appearance_approved": false,
+  "drive_verified": {
+    "actual_idle": "https://drive.google.com/file/d/1K9WoNSTBJkSpFwwDuPHG26j7ACu7RD-k/view?usp=drivesdk",
+    "actual_glb_comparison": "https://drive.google.com/file/d/1tOHtkxziZUNDULxZVJK0XvXyj6By1N7T/view?usp=drivesdk",
+    "owner_only_metadata_verified": true,
+    "remote_bytes_rehashed": false
+  },
+  "one_art_candidate": true,
+  "site_verified_count_preserved": 4,
+  "site_unverified_count_preserved": 1
+}

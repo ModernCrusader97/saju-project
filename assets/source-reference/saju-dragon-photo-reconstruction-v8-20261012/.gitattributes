@@ -1,0 +1,3 @@
+# Preserve literal candidate, source, approved image and evidence bytes.
+* -text whitespace=cr-at-eol
+*.log binary

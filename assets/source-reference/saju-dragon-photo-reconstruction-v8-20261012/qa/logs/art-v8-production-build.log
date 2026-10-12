@@ -1,0 +1,24 @@
+
+> saju-doryeong-private-preview@0.1.0 build
+> node scripts/run-framework.mjs build
+
+node:internal/modules/esm/resolve:275
+    throw new ERR_MODULE_NOT_FOUND(
+          ^
+
+Error [ERR_MODULE_NOT_FOUND]: Cannot find module 'D:\Codex\Work\SaJuDragonApprovedShapeV7-20261012-Joseph\verification-repo\V8Build_SaJuDragonPhotoReconstruction_20261012_01a126cc\node_modules\vinext\dist\cli.js' imported from D:\Codex\Work\SaJuDragonApprovedShapeV7-20261012-Joseph\verification-repo\V8Build_SaJuDragonPhotoReconstruction_20261012_01a126cc\scripts\run-framework.mjs
+    at finalizeResolution (node:internal/modules/esm/resolve:275:11)
+    at moduleResolve (node:internal/modules/esm/resolve:866:10)
+    at defaultResolve (node:internal/modules/esm/resolve:992:11)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:719:20)
+    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:736:38)
+    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:765:52)
+    at #resolve (node:internal/modules/esm/loader:701:17)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:621:35)
+    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:650:32)
+    at TracingChannel.tracePromise (node:diagnostics_channel:350:14) {
+  code: 'ERR_MODULE_NOT_FOUND',
+  url: 'file:///D:/Codex/Work/SaJuDragonApprovedShapeV7-20261012-Joseph/verification-repo/V8Build_SaJuDragonPhotoReconstruction_20261012_01a126cc/node_modules/vinext/dist/cli.js'
+}
+
+Node.js v24.13.1

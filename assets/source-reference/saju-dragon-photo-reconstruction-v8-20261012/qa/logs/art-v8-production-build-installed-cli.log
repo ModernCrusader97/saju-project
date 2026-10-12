@@ -1,0 +1,91 @@
+
+  vinext build  (Vite 8.0.13)
+
+(node:28264) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[34m[1/5] analyze client references...[39m
+[2Ktransforming...✓ 250 modules transformed.
+rendering chunks...
+[33m[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugins. Here is a breakdown:
+  - vinext:jsx-in-js (35%)
+  - rsc:virtual-client-package (8%)
+  - vinext:og-inline-fetch-assets (7%)
+  - rsc:use-server (7%)
+  - alias (5%)
+See https://rolldown.rs/options/checks#plugintimings for more details.
+[39m
+[32m✓ built in 7.12s[39m
+[34m[2/5] analyze server references...[39m
+[2Ktransforming...✓ 232 modules transformed.
+rendering chunks...
+[32m✓ built in 1.51s[39m
+[34m[3/5] build rsc environment...[39m
+[2Ktransforming...✓ 247 modules transformed.
+rendering chunks...
+computing gzip size...
+[33m[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugins. Here is a breakdown:
+  - rsc:virtual-client-package (17%)
+  - vinext:middleware-server-only (14%)
+  - vinext:css-data-url (13%)
+  - vinext:og-inline-fetch-assets (12%)
+  - alias (11%)
+See https://rolldown.rs/options/checks#plugintimings for more details.
+[39m
+[32m✓ built in 3.71s[39m
+[34m[4/5] build client environment...[39m
+[2Ktransforming...✓ 1971 modules transformed.
+rendering chunks...
+computing gzip size...
+[33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+[33m[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugins. Here is a breakdown:
+  - vinext:css-data-url (33%)
+  - vinext:og-inline-fetch-assets (32%)
+  - alias (5%)
+  - vinext:middleware-server-only (3%)
+  - rsc:virtual-client-package (3%)
+See https://rolldown.rs/options/checks#plugintimings for more details.
+[39m
+[32m✓ built in 8.42s[39m
+[34m[5/5] build ssr environment...[39m
+[2Ktransforming...✓ 237 modules transformed.
+rendering chunks...
+computing gzip size...
+[33m[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugins. Here is a breakdown:
+  - vinext:og-inline-fetch-assets (20%)
+  - alias (14%)
+  - rsc:virtual-client-package (11%)
+  - vinext:middleware-server-only (9%)
+  - vinext:css-data-url (8%)
+See https://rolldown.rs/options/checks#plugintimings for more details.
+[39m
+[32m✓ built in 3.45s[39m
+[0m
+  Route (app)
+  ┌ ? /                 
+  ├ ? /ai-test          
+  ├ λ /api/ai-test      
+  ├ λ /api/guin         
+  ├ λ /api/guin/:id     
+  ├ λ /api/saju         
+  ├ λ /api/saju/:id     
+  ├ λ /api/saju/:id/chat
+  ├ ? /daily            
+  ├ ? /guin             
+  ├ ƒ /guin/:id         
+  ├ ? /lab              
+  ├ ? /manse            
+  ├ ? /planet           
+  └ ? /saved            
+
+  λ API  ƒ Dynamic  ? Unknown
+
+  ? Some routes could not be classified. vinext currently uses static analysis
+    and cannot detect dynamic API usage (headers(), cookies(), etc.) at build time.
+    Automatic classification will be improved in a future release.
+
+  Build complete. Run `vinext start` to start the production server.
+

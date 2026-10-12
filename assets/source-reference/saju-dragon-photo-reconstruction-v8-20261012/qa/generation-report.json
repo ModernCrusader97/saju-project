@@ -1,0 +1,26 @@
+{
+  "status": "NEW_V8_RIG_AND_GLTF_CANDIDATE_GENERATED_QA_PENDING",
+  "static_source": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\static-v07\\SaJu_Dragon_V8_Static_Reconstruction_v07.blend",
+  "static_source_sha256": "c1015b518197ed77d3ad4bdc93d9870375df9c42df0216c5f2f959d880dd7686",
+  "bones": 13,
+  "runtime_meshes": 10,
+  "native_editable_meshes": 76,
+  "triangles_native": 161454,
+  "fps": 24,
+  "frames": [
+    0,
+    144
+  ],
+  "loop_seconds": 6,
+  "head_neck_tail_and_paw_motion": true,
+  "old_mesh_or_rig_imported": false,
+  "new_rig_for_reconstructed_anatomy": true,
+  "body_color_method": "Self-contained linear COLOR_0 attribute",
+  "skinned_nodes_are_scene_roots": true,
+  "user_final_appearance_approved": false,
+  "technical_checks_do_not_measure_photo_fidelity": true,
+  "deformation_edge_guards": [
+    0.78,
+    1.23
+  ]
+}

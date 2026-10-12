@@ -1,0 +1,12 @@
+{
+  "status": "PASS_KHRONOS_GLTF_VALIDATOR",
+  "sha256": "35164091f7a346d28d2051650ee42cc4e4be95f221abee764345b4a7fdb87969",
+  "issues": {
+    "numErrors": 0,
+    "numWarnings": 0,
+    "numInfos": 0,
+    "numHints": 0,
+    "messages": [],
+    "truncated": false
+  }
+}

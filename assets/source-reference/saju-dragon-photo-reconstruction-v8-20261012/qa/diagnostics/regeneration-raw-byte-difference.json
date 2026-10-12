@@ -1,0 +1,20 @@
+{
+  "status": "DIAGNOSTIC_REGENERATION_RAW_GLB_BYTES_DIFFER",
+  "original": {
+    "bytes": 4959836,
+    "sha256": "35164091f7a346d28d2051650ee42cc4e4be95f221abee764345b4a7fdb87969",
+    "jsonBytes": 28628,
+    "binBytes": 4931180
+  },
+  "regenerated": {
+    "bytes": 4959836,
+    "sha256": "1a7f399f6932b0418f081d2dcad1bb11623bd0be5eafcfabd6a232731d42eb70",
+    "jsonBytes": 28628,
+    "binBytes": 4931180
+  },
+  "json_differences_count": 0,
+  "json_first_differences": [],
+  "bin_bytes_equal": false,
+  "raw_byte_equality_claimed": false,
+  "model_guards_changed": false
+}

@@ -1,0 +1,42 @@
+{
+  "status": "ACTUAL_GLB_VIEWS_AND_DECODED_IDLE_POSES_DIRECTLY_REVIEWED",
+  "host": "Joseph",
+  "actual_glb_sha256": "35164091f7a346d28d2051650ee42cc4e4be95f221abee764345b4a7fdb87969",
+  "views": [
+    "front",
+    "threequarter",
+    "side",
+    "headfront",
+    "headthreequarter"
+  ],
+  "movie_seconds": 6,
+  "movie_decoded_times_reviewed": [
+    0,
+    1.5,
+    3,
+    4.5,
+    5.916667
+  ],
+  "loop_boundary_frames_reviewed": [
+    0,
+    142
+  ],
+  "findings": {
+    "eyes": "Both soft oval brown eyes and white rims remain attached; v06 rim overlap corrected before export.",
+    "limbs": "Four short integrated paws and eight blunt ivory toes remain attached during the reviewed motion.",
+    "normals": "No flipped patches or skin holes observed in these views; unit/finite normals also checked numerically.",
+    "loop": "Start and final decoded poses are close; exact endpoint and sampled boundary velocity checked independently.",
+    "deformation": "No severe joint tearing or detached head/tail observed in reviewed poses; unchanged numerical edge guards pass."
+  },
+  "known_visual_differences": [
+    "Cheeks are smaller and less round than the source.",
+    "Flame mane layers are more regularly spaced than the source.",
+    "Muzzle and eye placement are an approximation; source 2D camera and projection are unknown.",
+    "Material lighting and soft ivory lip transition differ from the reference."
+  ],
+  "additional_cosmetic_difference": "Soft teal/ivory lip paint transition is less clean than the source illustration.",
+  "source_camera_unknown": true,
+  "final_user_appearance_approved": false,
+  "photo_fidelity_pass_claimed": false,
+  "model_images_generated_by_blender_not_image_synthesis": true
+}

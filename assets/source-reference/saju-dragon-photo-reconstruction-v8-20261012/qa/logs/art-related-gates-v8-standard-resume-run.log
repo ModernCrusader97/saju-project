@@ -1,0 +1,25 @@
+{"stage":"art-v8-production-build","state":"RUNNING"}
+{"status":"FAIL","stage":"art-v8-production-build","start_utc":"2026-10-12T11:38:19.082Z","end_utc":"2026-10-12T11:38:23.039Z","exit_code":1,"spawn_error":null,"log":"D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/art-v8-production-build.log","log_sha256":"5e0c3f517f7102aa872365152c422a3e394de04130beac22c6e373024de8dce8","scope":"Preserved product code at V7 basis; new V8 art candidate does not replace product model or verify site batch-five WIP."}
+{"stage":"art-v8-types","state":"RUNNING"}
+{"status":"PASS","stage":"art-v8-types","start_utc":"2026-10-12T11:38:23.044Z","end_utc":"2026-10-12T11:38:46.678Z","exit_code":0,"spawn_error":null,"log":"D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/art-v8-types.log","log_sha256":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","scope":"Preserved product code at V7 basis; new V8 art candidate does not replace product model or verify site batch-five WIP."}
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+'FAIL' !== 'PASS'
+
+    at file:///D:/Codex/Work/SaJuDragonPhotoReconstructionV8-20261012-Joseph/authoring/run_related_gates_v8_standard_resume.mjs:9:440
+    at ModuleJob.run (node:internal/modules/esm/module_job:430:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:661:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 'FAIL',
+  expected: 'PASS',
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.13.1

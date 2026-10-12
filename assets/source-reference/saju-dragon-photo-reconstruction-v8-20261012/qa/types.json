@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "stage": "art-v8-types",
+  "start_utc": "2026-10-12T11:38:23.044Z",
+  "end_utc": "2026-10-12T11:38:46.678Z",
+  "exit_code": 0,
+  "spawn_error": null,
+  "log": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/art-v8-types.log",
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "scope": "Preserved product code at V7 basis; new V8 art candidate does not replace product model or verify site batch-five WIP."
+}

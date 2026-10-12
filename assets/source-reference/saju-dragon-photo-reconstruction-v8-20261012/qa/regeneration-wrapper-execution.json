@@ -1,0 +1,68 @@
+{
+  "status": "PASS_FRESH_V8_STATIC_NEW_RIG_IDLE_AND_GLTF_REGENERATION",
+  "source_files": [
+    {
+      "name": "build_dragon_v8_static_v07.py",
+      "bytes": 28109,
+      "sha256": "cf6f49c18d663e3dfe0d96bce35169e8e25dacbaba5c55d05a93b062cc84489f"
+    },
+    {
+      "name": "bind_idle_export_v8.py",
+      "bytes": 11051,
+      "sha256": "651705afea9c5c818eefe9462e0f53cda6282ddae65d5caefd4fabf07454715d"
+    },
+    {
+      "name": "verify_v8_static.py",
+      "bytes": 2572,
+      "sha256": "98099bfd2b64f418f3da6effeaf8351e2a7eb097d500cea51c2dabf72401b761"
+    },
+    {
+      "name": "verify_native_v8.py",
+      "bytes": 11638,
+      "sha256": "6117c5f9e453ab8973c1ceaf122b07a6e5c61df30f949b67bdcebf74e3b96c84"
+    },
+    {
+      "name": "verify_runtime_v8.mjs",
+      "bytes": 5920,
+      "sha256": "63ab8c4cf74062903c01b7e6694c61449872a58b6569c08c792304a9a5ccbc0f"
+    },
+    {
+      "name": "verify_khronos.mjs",
+      "bytes": 1231,
+      "sha256": "fb3047edd0fa0435383550ad9f153703d043e0e0e621bf24e923fa9f08ff8d8d"
+    },
+    {
+      "name": "encode_idle.mjs",
+      "bytes": 2934,
+      "sha256": "487f2665c2c63a10726f34eeed34e1696012bdedbe4f09ee9d96f45b18c697e8"
+    },
+    {
+      "name": "png_decode.mjs",
+      "bytes": 1798,
+      "sha256": "4ad46dd94e32edc4a1e923e7878ed0b1f7d267144dbebe73d8cf895fbec98336"
+    }
+  ],
+  "reference_sha256": "6184555091c80769d6553ae40641dbb44eb6dcc859dd0b8591b7887cc1502e58",
+  "installs": false,
+  "previous_mesh_or_rig_imported": false,
+  "final_user_appearance_approved": false,
+  "outputs": [
+    {
+      "file": "generation-report.json",
+      "bytes": 912,
+      "sha256": "2f2da29430f30ea24224ad027782109a8041643155b3f659c227f2e8dc047768"
+    },
+    {
+      "file": "SaJu_Dragon_Photo_Reconstruction_V8.blend",
+      "bytes": 9423926,
+      "sha256": "81a3f4994a0f6d423fa9dcaff71845ec633395d53ca41b4dcb2854ad8f1250af"
+    },
+    {
+      "file": "SaJu_Dragon_Photo_Reconstruction_V8.glb",
+      "bytes": 4959836,
+      "sha256": "1a7f399f6932b0418f081d2dcad1bb11623bd0be5eafcfabd6a232731d42eb70"
+    }
+  ],
+  "model_directory": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\regeneration-smoke-v01\\model",
+  "not_a_photosimilarity_claim": true
+}

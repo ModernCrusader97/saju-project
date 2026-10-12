@@ -1,0 +1,59 @@
+{
+  "status": "STATIC_V07_ACTUAL_PIXEL_REVIEW_COMPLETED_NEW_RIG_AUTHORIZED_TO_PROCEED",
+  "one_art_candidate": true,
+  "iterations_are_not_site_quota_improvements": true,
+  "reference_sha256": "6184555091c80769d6553ae40641dbb44eb6dcc859dd0b8591b7887cc1502e58",
+  "static_native_sha256": "c1015b518197ed77d3ad4bdc93d9870375df9c42df0216c5f2f959d880dd7686",
+  "actual_raw_previews": [
+    "static-v07/previews/threequarter.png",
+    "static-v07/previews/headfront.png",
+    "static-v07/previews/headthreequarter.png"
+  ],
+  "reference_comparison": "static-v07-photo-comparison",
+  "known_visual_differences": [
+    "Cheeks are smaller and less round than the source.",
+    "Flame mane layers are more regularly spaced than the source.",
+    "Muzzle and eye placement are an approximation; source 2D camera and projection are unknown.",
+    "Material lighting and soft ivory lip transition differ from the reference."
+  ],
+  "resolved_iteration_defects": [
+    "Raised thin disk-like muzzle changed to a taller smooth union with cheeks and jaw.",
+    "Cylindrical eye-seat subtraction removed, reducing the nasal groove.",
+    "Oversized ivory chin reduced.",
+    "Eye layer depths separated to remove interrupted white eye rims."
+  ],
+  "technical_geometry_pass": true,
+  "not_photosimilarity_pass": true,
+  "user_final_appearance_approved": false,
+  "new_old_mesh_or_rig_imported": false,
+  "static_comparison_drive": {
+    "id": "1V6DgpDj_cSpXNw8M_GEXr2DRdiaDK1hp",
+    "url": "https://drive.google.com/file/d/1V6DgpDj_cSpXNw8M_GEXr2DRdiaDK1hp/view?usp=drivesdk",
+    "bytes": 1332481,
+    "sha256": "be54a6ffc6f921976c9708d83f54c10326b0a1ec96bf8bdb6947c1929fab7b1f",
+    "shared": false,
+    "owner_permissions": 1,
+    "metadata_verified": true,
+    "remote_bytes_rehashed": false
+  },
+  "source_edit_failure": {
+    "stage": "v06 source-edit preparation",
+    "cause": "The exact patch anchor assumed CRLF while the read source used LF.",
+    "output_written": false,
+    "blender_launched": false,
+    "correction": "Normalize line endings in the new source copy before exact-anchor editing and keep immediate nonzero exit guards.",
+    "model_validation_criteria_changed": false,
+    "unchanged_guards": {
+      "skin_components": 1,
+      "skin_euler": 2,
+      "skin_nonmanifold_edges": 0,
+      "unit_normals": true,
+      "nonzero_triangles": true,
+      "exact_approved_pixel_bytes": true,
+      "deformation_edge_ratios": [
+        0.78,
+        1.23
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+00:02.359  blend            | Read blend: "D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\static-v07\SaJu_Dragon_V8_Static_Reconstruction_v07.blend"
+V8_FRESH_RIG_AND_RADIUS_AWARE_SMOOTH_WEIGHTS_READY 13
+Warning: No mesh data to join
+Warning: No mesh data to join
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+20:13:02 | INFO: Starting glTF 2.0 export
+20:13:02 | WARNING: Armature must be the parent of skinned meshArmature is selected by its name, but may be false in case of instances
+20:13:02 | WARNING: Armature must be the parent of skinned meshArmature is selected by its name, but may be false in case of instances
+20:13:02 | WARNING: Armature must be the parent of skinned meshArmature is selected by its name, but may be false in case of instances
+20:13:02 | WARNING: Armature must be the parent of skinned meshArmature is selected by its name, but may be false in case of instances
+20:13:02 | WARNING: Armature must be the parent of skinned meshArmature is selected by its name, but may be false in case of instances
+20:13:02 | WARNING: Armature must be the parent of skinned meshArmature is selected by its name, but may be false in case of instances
+20:13:02 | WARNING: Armature must be the parent of skinned meshArmature is selected by its name, but may be false in case of instances
+20:13:02 | WARNING: Armature must be the parent of skinned meshArmature is selected by its name, but may be false in case of instances
+20:13:02 | WARNING: Armature must be the parent of skinned meshArmature is selected by its name, but may be false in case of instances
+20:13:02 | WARNING: Armature must be the parent of skinned meshArmature is selected by its name, but may be false in case of instances
+20:13:02 | INFO: Extracting primitive: Ivory_Antler_-1_Mesh.001
+20:13:03 | INFO: Primitives created: 1
+20:13:03 | INFO: Extracting primitive: Belly_Subtle_Fold_00_Mesh.001
+20:13:03 | INFO: Primitives created: 1
+20:13:03 | INFO: Extracting primitive: Surface_V8_Lid_-1_Mesh.001
+20:13:03 | INFO: Primitives created: 1
+20:13:03 | INFO: Extracting primitive: Surface_V8_Almond_Ear_Ivory_-1_Mesh.001
+20:13:03 | INFO: Primitives created: 1
+20:13:03 | INFO: Extracting primitive: Surface_V8_Eye_White_-1_Mesh.001
+20:13:03 | INFO: Primitives created: 1
+20:13:03 | INFO: Extracting primitive: Surface_V8_Eye_Pupil_-1_Mesh.001
+20:13:03 | INFO: Primitives created: 1
+20:13:03 | INFO: Extracting primitive: Sphere.018
+20:13:03 | INFO: Primitives created: 1
+20:13:03 | INFO: Extracting primitive: Surface_V8_Nostril_-1_Mesh.001
+20:13:03 | INFO: Primitives created: 1
+20:13:03 | INFO: Extracting primitive: Gentle_Closed_Toothless_Smile_Mesh.001
+20:13:03 | INFO: Primitives created: 1
+20:13:03 | INFO: Extracting primitive: Dragon_Continuous_Skin_Mesh.001
+20:13:03 | INFO: Primitives created: 1
+20:13:04 | INFO: Finished glTF 2.0 export in 1.6417241096496582 s
+
+Info: Saved as "SaJu_Dragon_Photo_Reconstruction_V8.blend"
+{"status": "NEW_V8_RIG_AND_GLTF_CANDIDATE_GENERATED_QA_PENDING", "static_source": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\static-v07\\SaJu_Dragon_V8_Static_Reconstruction_v07.blend", "static_source_sha256": "c1015b518197ed77d3ad4bdc93d9870375df9c42df0216c5f2f959d880dd7686", "bones": 13, "runtime_meshes": 10, "native_editable_meshes": 76, "triangles_native": 161454, "fps": 24, "frames": [0, 144], "loop_seconds": 6, "head_neck_tail_and_paw_motion": true, "old_mesh_or_rig_imported": false, "new_rig_for_reconstructed_anatomy": true, "body_color_method": "Self-contained linear COLOR_0 attribute", "skinned_nodes_are_scene_roots": true, "user_final_appearance_approved": false, "technical_checks_do_not_measure_photo_fidelity": true, "deformation_edge_guards": [0.78, 1.23]}
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

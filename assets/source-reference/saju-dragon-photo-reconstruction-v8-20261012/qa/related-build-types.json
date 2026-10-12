@@ -1,0 +1,109 @@
+{
+  "status": "PASS_ART_V8_RELATED_PRODUCT_BUILD_AND_TYPES",
+  "build": {
+    "status": "PASS",
+    "stage": "art-v8-production-build-installed-cli",
+    "start_utc": "2026-10-12T11:41:29.125Z",
+    "end_utc": "2026-10-12T11:42:49.105Z",
+    "exit_code": 0,
+    "spawn_error": null,
+    "log": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/art-v8-production-build-installed-cli.log",
+    "log_sha256": "40a73c67c3635f047efd321895ad469a7c3c5f336837a94dfc309b05c5194767",
+    "command": [
+      "D:/Codex/Work/SaJuDragonApprovedShapeV7-20261012-Joseph/verification-repo/node_modules/vinext/dist/cli.js",
+      "build"
+    ],
+    "cwd": "D:/Codex/Work/SaJuDragonApprovedShapeV7-20261012-Joseph/verification-repo/V8Build_SaJuDragonPhotoReconstruction_20261012_01a126cc",
+    "original_npm_wrapper_failed_only_because_no_local_node_modules_path": true,
+    "equivalence": "Unchanged run-framework.mjs on Joseph selects vinext/dist/cli.js and argv build. The identical installed CLI is invoked by absolute path so parent-resolved libraries can be reused.",
+    "product_source_modified": false,
+    "not_site_batch_five_verification": true
+  },
+  "types": {
+    "status": "PASS",
+    "stage": "art-v8-types",
+    "start_utc": "2026-10-12T11:38:23.044Z",
+    "end_utc": "2026-10-12T11:38:46.678Z",
+    "exit_code": 0,
+    "spawn_error": null,
+    "log": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/art-v8-types.log",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "scope": "Preserved product code at V7 basis; new V8 art candidate does not replace product model or verify site batch-five WIP."
+  },
+  "production_source_unchanged": true,
+  "library_key_bytes_unchanged": true,
+  "library_key_files": [
+    {
+      "path": "three/package.json",
+      "bytes": 3672,
+      "sha256": "f9c474a27c920b9435353a6235968f4453436bee0444fac7e5fd289c8fa463de",
+      "after_sha256": "f9c474a27c920b9435353a6235968f4453436bee0444fac7e5fd289c8fa463de"
+    },
+    {
+      "path": "three/build/three.module.js",
+      "bytes": 662772,
+      "sha256": "9052042d676cb0fdc1ddfefe193053f34b7ac0513a616fdac4535d49987812ea",
+      "after_sha256": "9052042d676cb0fdc1ddfefe193053f34b7ac0513a616fdac4535d49987812ea"
+    },
+    {
+      "path": "typescript/package.json",
+      "bytes": 3620,
+      "sha256": "822ef7ca6452205657b6288b066481ecf508bfbf43455d715cf7d3ec457561e6",
+      "after_sha256": "822ef7ca6452205657b6288b066481ecf508bfbf43455d715cf7d3ec457561e6"
+    },
+    {
+      "path": "typescript/lib/tsc.js",
+      "bytes": 267,
+      "sha256": "2cffde0b8c6760dfb0b5b0382bbb7e00ba6a8b2d981b9205b256a700a481d983",
+      "after_sha256": "2cffde0b8c6760dfb0b5b0382bbb7e00ba6a8b2d981b9205b256a700a481d983"
+    },
+    {
+      "path": "typescript/lib/_tsc.js",
+      "bytes": 6213092,
+      "sha256": "e8f349eabd48486bdb2bf9dc1a00c89d58297270c54b745838879e2859194419",
+      "after_sha256": "e8f349eabd48486bdb2bf9dc1a00c89d58297270c54b745838879e2859194419"
+    },
+    {
+      "path": "vinext/package.json",
+      "bytes": 6780,
+      "sha256": "299258b9286c04d544274987b8a6f8fa7b88fe03d5e69221ecb4dac308b25fcd",
+      "after_sha256": "299258b9286c04d544274987b8a6f8fa7b88fe03d5e69221ecb4dac308b25fcd"
+    },
+    {
+      "path": "vite/package.json",
+      "bytes": 5005,
+      "sha256": "5d084b8d09cedc0206adeea4096e9aaa5f9489efb919b4dc55486c5ee790a7d2",
+      "after_sha256": "5d084b8d09cedc0206adeea4096e9aaa5f9489efb919b4dc55486c5ee790a7d2"
+    },
+    {
+      "path": "wrangler/package.json",
+      "bytes": 6002,
+      "sha256": "b659402d435053012c1843c226a701964abbeb4ce8a9a560d57c5be0ced4916d",
+      "after_sha256": "b659402d435053012c1843c226a701964abbeb4ce8a9a560d57c5be0ced4916d"
+    },
+    {
+      "path": "next/package.json",
+      "bytes": 3173,
+      "sha256": "c4ef8a1c8da320a162485f96d35df7745da90e6becc36882d6e81be9df66eec1",
+      "after_sha256": "c4ef8a1c8da320a162485f96d35df7745da90e6becc36882d6e81be9df66eec1"
+    },
+    {
+      "path": "react/package.json",
+      "bytes": 1248,
+      "sha256": "e631b6ac066fa758d9b36f226d96e8fc05425d1e8993ffcc99c6de2d6aa7268c",
+      "after_sha256": "e631b6ac066fa758d9b36f226d96e8fc05425d1e8993ffcc99c6de2d6aa7268c"
+    },
+    {
+      "path": "@cloudflare/vite-plugin/package.json",
+      "bytes": 2237,
+      "sha256": "1b70071cd6a59ef353716d16bc136ab41e87078d5a21d870a997aa45483797ce",
+      "after_sha256": "1b70071cd6a59ef353716d16bc136ab41e87078d5a21d870a997aa45483797ce"
+    }
+  ],
+  "full_dependency_tree_after_hash_claimed": false,
+  "standard_node_resolution": true,
+  "source_snapshot_sha256": "6fe05a0869bab71105d09ff985cf96a6bbc11356fa8a5ae5955606d18d6bf405",
+  "original_wrapper_failure_preserved": true,
+  "not_site_batch_five_verification": true,
+  "geometry_animation_source_image_guards_unchanged": true
+}

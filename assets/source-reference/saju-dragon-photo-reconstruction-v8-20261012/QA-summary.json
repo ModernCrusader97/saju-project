@@ -1,0 +1,87 @@
+{
+  "status": "TECHNICALLY_VERIFIED_V8_NEW_CANDIDATE_WITH_VISUAL_DIFFERENCES_DOCUMENTED",
+  "approved_photo_sha256": "6184555091c80769d6553ae40641dbb44eb6dcc859dd0b8591b7887cc1502e58",
+  "glb": {
+    "bytes": 4959836,
+    "sha256": "35164091f7a346d28d2051650ee42cc4e4be95f221abee764345b4a7fdb87969",
+    "meshes": 10,
+    "triangles": 161454,
+    "vertices": 81135,
+    "bones": 13,
+    "animation": "Idle_Loop",
+    "seconds": 6
+  },
+  "khronos": {
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0
+  },
+  "native": {
+    "single_closed_skin": true,
+    "nonmanifold_edges": 0,
+    "loop_max_vertex_error": 0,
+    "edge_length_ratio": [
+      0.8633182541793697,
+      1.217680673721382
+    ],
+    "unchanged_edge_guards": [
+      0.78,
+      1.23
+    ],
+    "roundtrip_max_error": 0.000005136039362696465,
+    "packed_approved_pixels_and_literal_sources_exact": true
+  },
+  "runtime": {
+    "actual_three_loader": true,
+    "frames": 145,
+    "sampled_vertices": 9526,
+    "endpoint_error": 0.0000010278162207515606,
+    "boundary_velocity_error_per_frame": 0.0003369245325436897,
+    "invalid_normals": 0,
+    "invalid_weights": 0,
+    "nonfinite_positions": 0,
+    "zero_area_triangles": 0
+  },
+  "video": {
+    "actual_glb_renders": true,
+    "frames": 72,
+    "fps": 12,
+    "seconds": 6,
+    "dimensions": [
+      640,
+      640
+    ],
+    "bytes": 260892,
+    "sha256": "5c15139bbfa89d7df4b79cf52582ec81cd906ce3e7877cbbed0b64548d37e703",
+    "five_decoded_frames_different": true,
+    "directly_reviewed": true
+  },
+  "regeneration": {
+    "full_wrapper_and_components_actually_ran": true,
+    "positions_normals_colors_skin_animation_exact": true,
+    "oriented_triangle_multisets_exact": true,
+    "raw_glb_sha_not_deterministic_due_triangle_order": true
+  },
+  "related_product": {
+    "types": "PASS",
+    "production_build": "PASS_IDENTICAL_INSTALLED_VINEXT_CLI",
+    "source_unchanged": true,
+    "initial_relative_cli_failure_preserved": true,
+    "site_batch_five_verified": false
+  },
+  "one_art_candidate": true,
+  "static_iteration_count_is_not_site_improvement_quota": true,
+  "user_final_appearance_approved": false,
+  "photo_fidelity_pass_claimed": false,
+  "known_visual_differences": [
+    "Cheeks are smaller and less round than the source.",
+    "Flame mane layers are more regularly spaced than the source.",
+    "Muzzle and eye placement are an approximation; source 2D camera and projection are unknown.",
+    "Material lighting and soft ivory lip transition differ from the reference."
+  ],
+  "limits": [
+    "CPU Three.js loader/AnimationMixer and actual Blender GLB rendering checked; GPU/mobile runtime performance not measured.",
+    "Source 2D camera is unknown; pixel comparisons approximate camera framing.",
+    "Appearance differs in cheek volume, mane layering, eye/muzzle placement and lip paint transition."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "status": "REGENERATION_ACCESSOR_BYTE_DIFFERENCE_DIAGNOSIS",
+  "json_exact": true,
+  "raw_bytes_equal": false,
+  "total_changed_binary_bytes": 24814,
+  "differing_accessors": [
+    {
+      "id": 4,
+      "roles": [
+        "mesh:Ivory_Antler_-1_Mesh.001:indices"
+      ],
+      "component_type": 5123,
+      "count": 68892,
+      "changed_components": 17116,
+      "max_absolute_delta": 360,
+      "first": {
+        "element": 51612,
+        "component": 0,
+        "original": 8967,
+        "regenerated": 8613
+      }
+    },
+    {
+      "id": 34,
+      "roles": [
+        "mesh:Sphere.018:indices"
+      ],
+      "component_type": 5123,
+      "count": 169440,
+      "changed_components": 6434,
+      "max_absolute_delta": 1071,
+      "first": {
+        "element": 0,
+        "component": 0,
+        "original": 1,
+        "regenerated": 18
+      }
+    }
+  ],
+  "approved_source_bytes_exact": true,
+  "existing_model_validation_guards_changed": false
+}

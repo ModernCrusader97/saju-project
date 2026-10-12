@@ -1,0 +1,29 @@
+{
+  "status": "PASS_FULL_REGENERATION_EXACT_GEOMETRY_MATERIAL_SKIN_AND_ANIMATION_TRIANGLE_ORDER_VARIATION",
+  "original_glb_sha256": "35164091f7a346d28d2051650ee42cc4e4be95f221abee764345b4a7fdb87969",
+  "regenerated_glb_sha256": "1a7f399f6932b0418f081d2dcad1bb11623bd0be5eafcfabd6a232731d42eb70",
+  "bytes": 4959836,
+  "raw_glb_bytes_equal": false,
+  "json_exact": true,
+  "positions_normals_colors_weights_bind_matrices_animation_literal_accessor_bytes_equal": true,
+  "differences_limited_to_index_triangle_sequence_and_cyclic_corner_order": true,
+  "oriented_triangle_multisets_byte_exact": [
+    {
+      "accessor": 4,
+      "triangles": 22964,
+      "oriented_triangles_exact_after_order_normalization": true,
+      "canonical_triangle_sha256": "6ccd68de825ab321ab4eba8f9a8b59fd2b06dbaea12e42c2f776b4aa6b80b48b"
+    },
+    {
+      "accessor": 34,
+      "triangles": 56480,
+      "oriented_triangles_exact_after_order_normalization": true,
+      "canonical_triangle_sha256": "f4bd6f3e4f21c012569ec9b12d1b185953e02585e6235ef1fbd175f8ef9ba86f"
+    }
+  ],
+  "wrapper_and_all_authoring_components_actually_executed": true,
+  "approved_photo_and_literal_source_bytes_exact": true,
+  "existing_model_validation_guards_changed": false,
+  "native_blend_byte_determinism_claimed": false,
+  "photo_fidelity_claimed": false
+}

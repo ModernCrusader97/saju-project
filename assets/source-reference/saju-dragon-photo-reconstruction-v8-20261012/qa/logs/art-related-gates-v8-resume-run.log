@@ -1,0 +1,18 @@
+node:fs:1867
+  binding.symlink(
+          ^
+
+Error: EISDIR: illegal operation on a directory, symlink 'D:\Codex\Work\SaJuDragonApprovedShapeV7-20261012-Joseph\verification-repo\node_modules' -> 'D:\Codex\Work\SaJuDragonPhotoReconstructionV8-20261012-Joseph\verification-repo\node_modules'
+    at Object.symlinkSync (node:fs:1867:11)
+    at file:///D:/Codex/Work/SaJuDragonPhotoReconstructionV8-20261012-Joseph/authoring/run_related_gates_v8_resume.mjs:8:24
+    at ModuleJob.run (node:internal/modules/esm/module_job:430:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:661:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  errno: -4068,
+  code: 'EISDIR',
+  syscall: 'symlink',
+  path: 'D:\\Codex\\Work\\SaJuDragonApprovedShapeV7-20261012-Joseph\\verification-repo\\node_modules',
+  dest: 'D:\\Codex\\Work\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\verification-repo\\node_modules'
+}
+
+Node.js v24.13.1
