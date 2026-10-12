@@ -1,0 +1,660 @@
+{
+  "status": "PASS",
+  "at_utc": "2026-10-12T02:11:10.630Z",
+  "phase": "final-whitespace",
+  "component": "components/AskDoryeongModal.tsx",
+  "source_sha256": "e8839ad1c4656e5d54023307f4b51a57977d46e614d04ef80ec04a43bbc85948",
+  "harness_sha256": "206d50d66dd73ac27b6da2035b7b527694fc769b01c4037d5aa6a7bf1075796f",
+  "css_sha256": "4e2f086b3fd0c53e4e5729a49947310046f415c5e7aa7ab4e0428ef8d8dd50ca",
+  "browser": "154.0.8037.98",
+  "passed": 12,
+  "failed": 0,
+  "new_blank_boundary_cases": 6,
+  "existing_or_normal_control_cases": 6,
+  "checks": [
+    {
+      "mode": "spaces",
+      "width": 390,
+      "new_failure_boundary": true,
+      "observed": {
+        "draft": "가상 공백 응답 검증",
+        "draft_preserved": true,
+        "alert_count": 1,
+        "alert_text": [
+          "답변을 확인하지 못했어요. 질문은 입력란에 남겨두었어요. 중복 전송을 피하려면 대화 기록을 먼저 확인해 주세요.대화 기록 확인하기"
+        ],
+        "send_disabled": true,
+        "history_gets": 1,
+        "synthetic_posts": 1,
+        "bubble_contents": [
+          "가상 대화 검증님, 사주 풀이에서 궁금한 점을 질문해 주세요."
+        ],
+        "response_content_preserved_exactly": false,
+        "dialog_count": 1,
+        "page_errors": [],
+        "native_keyboard_send": true,
+        "request_was_whitespace_acknowledgement": true
+      },
+      "pass": true
+    },
+    {
+      "mode": "tabs-lines",
+      "width": 390,
+      "new_failure_boundary": true,
+      "observed": {
+        "draft": "가상 공백 응답 검증",
+        "draft_preserved": true,
+        "alert_count": 1,
+        "alert_text": [
+          "답변을 확인하지 못했어요. 질문은 입력란에 남겨두었어요. 중복 전송을 피하려면 대화 기록을 먼저 확인해 주세요.대화 기록 확인하기"
+        ],
+        "send_disabled": true,
+        "history_gets": 1,
+        "synthetic_posts": 1,
+        "bubble_contents": [
+          "가상 대화 검증님, 사주 풀이에서 궁금한 점을 질문해 주세요."
+        ],
+        "response_content_preserved_exactly": false,
+        "dialog_count": 1,
+        "page_errors": [],
+        "native_keyboard_send": true,
+        "request_was_whitespace_acknowledgement": true
+      },
+      "pass": true
+    },
+    {
+      "mode": "unicode-whitespace",
+      "width": 390,
+      "new_failure_boundary": true,
+      "observed": {
+        "draft": "가상 공백 응답 검증",
+        "draft_preserved": true,
+        "alert_count": 1,
+        "alert_text": [
+          "답변을 확인하지 못했어요. 질문은 입력란에 남겨두었어요. 중복 전송을 피하려면 대화 기록을 먼저 확인해 주세요.대화 기록 확인하기"
+        ],
+        "send_disabled": true,
+        "history_gets": 1,
+        "synthetic_posts": 1,
+        "bubble_contents": [
+          "가상 대화 검증님, 사주 풀이에서 궁금한 점을 질문해 주세요."
+        ],
+        "response_content_preserved_exactly": false,
+        "dialog_count": 1,
+        "page_errors": [],
+        "native_keyboard_send": true,
+        "request_was_whitespace_acknowledgement": true
+      },
+      "pass": true
+    },
+    {
+      "mode": "plain-valid-control",
+      "width": 390,
+      "new_failure_boundary": false,
+      "observed": {
+        "draft": "",
+        "draft_preserved": false,
+        "alert_count": 0,
+        "alert_text": [],
+        "send_disabled": true,
+        "history_gets": 2,
+        "synthetic_posts": 1,
+        "bubble_contents": [
+          "가상 공백 응답 검증",
+          "가상 답변을 유지합니다."
+        ],
+        "response_content_preserved_exactly": true,
+        "dialog_count": 1,
+        "page_errors": [],
+        "native_keyboard_send": true,
+        "request_was_whitespace_acknowledgement": false
+      },
+      "pass": true
+    },
+    {
+      "mode": "formatted-valid-control",
+      "width": 390,
+      "new_failure_boundary": false,
+      "observed": {
+        "draft": "",
+        "draft_preserved": false,
+        "alert_count": 0,
+        "alert_text": [],
+        "send_disabled": true,
+        "history_gets": 2,
+        "synthetic_posts": 1,
+        "bubble_contents": [
+          "가상 공백 응답 검증",
+          "\n  가상 답변을 유지합니다.  \t"
+        ],
+        "response_content_preserved_exactly": true,
+        "dialog_count": 1,
+        "page_errors": [],
+        "native_keyboard_send": true,
+        "request_was_whitespace_acknowledgement": false
+      },
+      "pass": true
+    },
+    {
+      "mode": "old-empty-control",
+      "width": 390,
+      "new_failure_boundary": false,
+      "observed": {
+        "draft": "가상 공백 응답 검증",
+        "draft_preserved": true,
+        "alert_count": 1,
+        "alert_text": [
+          "답변을 확인하지 못했어요. 질문은 입력란에 남겨두었어요. 중복 전송을 피하려면 대화 기록을 먼저 확인해 주세요.대화 기록 확인하기"
+        ],
+        "send_disabled": true,
+        "history_gets": 1,
+        "synthetic_posts": 1,
+        "bubble_contents": [
+          "가상 대화 검증님, 사주 풀이에서 궁금한 점을 질문해 주세요."
+        ],
+        "response_content_preserved_exactly": false,
+        "dialog_count": 1,
+        "page_errors": [],
+        "native_keyboard_send": true,
+        "request_was_whitespace_acknowledgement": false
+      },
+      "pass": true
+    },
+    {
+      "mode": "spaces",
+      "width": 1440,
+      "new_failure_boundary": true,
+      "observed": {
+        "draft": "가상 공백 응답 검증",
+        "draft_preserved": true,
+        "alert_count": 1,
+        "alert_text": [
+          "답변을 확인하지 못했어요. 질문은 입력란에 남겨두었어요. 중복 전송을 피하려면 대화 기록을 먼저 확인해 주세요.대화 기록 확인하기"
+        ],
+        "send_disabled": true,
+        "history_gets": 1,
+        "synthetic_posts": 1,
+        "bubble_contents": [
+          "가상 대화 검증님, 사주 풀이에서 궁금한 점을 질문해 주세요."
+        ],
+        "response_content_preserved_exactly": false,
+        "dialog_count": 1,
+        "page_errors": [],
+        "native_keyboard_send": true,
+        "request_was_whitespace_acknowledgement": true
+      },
+      "pass": true
+    },
+    {
+      "mode": "tabs-lines",
+      "width": 1440,
+      "new_failure_boundary": true,
+      "observed": {
+        "draft": "가상 공백 응답 검증",
+        "draft_preserved": true,
+        "alert_count": 1,
+        "alert_text": [
+          "답변을 확인하지 못했어요. 질문은 입력란에 남겨두었어요. 중복 전송을 피하려면 대화 기록을 먼저 확인해 주세요.대화 기록 확인하기"
+        ],
+        "send_disabled": true,
+        "history_gets": 1,
+        "synthetic_posts": 1,
+        "bubble_contents": [
+          "가상 대화 검증님, 사주 풀이에서 궁금한 점을 질문해 주세요."
+        ],
+        "response_content_preserved_exactly": false,
+        "dialog_count": 1,
+        "page_errors": [],
+        "native_keyboard_send": true,
+        "request_was_whitespace_acknowledgement": true
+      },
+      "pass": true
+    },
+    {
+      "mode": "unicode-whitespace",
+      "width": 1440,
+      "new_failure_boundary": true,
+      "observed": {
+        "draft": "가상 공백 응답 검증",
+        "draft_preserved": true,
+        "alert_count": 1,
+        "alert_text": [
+          "답변을 확인하지 못했어요. 질문은 입력란에 남겨두었어요. 중복 전송을 피하려면 대화 기록을 먼저 확인해 주세요.대화 기록 확인하기"
+        ],
+        "send_disabled": true,
+        "history_gets": 1,
+        "synthetic_posts": 1,
+        "bubble_contents": [
+          "가상 대화 검증님, 사주 풀이에서 궁금한 점을 질문해 주세요."
+        ],
+        "response_content_preserved_exactly": false,
+        "dialog_count": 1,
+        "page_errors": [],
+        "native_keyboard_send": true,
+        "request_was_whitespace_acknowledgement": true
+      },
+      "pass": true
+    },
+    {
+      "mode": "plain-valid-control",
+      "width": 1440,
+      "new_failure_boundary": false,
+      "observed": {
+        "draft": "",
+        "draft_preserved": false,
+        "alert_count": 0,
+        "alert_text": [],
+        "send_disabled": true,
+        "history_gets": 2,
+        "synthetic_posts": 1,
+        "bubble_contents": [
+          "가상 공백 응답 검증",
+          "가상 답변을 유지합니다."
+        ],
+        "response_content_preserved_exactly": true,
+        "dialog_count": 1,
+        "page_errors": [],
+        "native_keyboard_send": true,
+        "request_was_whitespace_acknowledgement": false
+      },
+      "pass": true
+    },
+    {
+      "mode": "formatted-valid-control",
+      "width": 1440,
+      "new_failure_boundary": false,
+      "observed": {
+        "draft": "",
+        "draft_preserved": false,
+        "alert_count": 0,
+        "alert_text": [],
+        "send_disabled": true,
+        "history_gets": 2,
+        "synthetic_posts": 1,
+        "bubble_contents": [
+          "가상 공백 응답 검증",
+          "\n  가상 답변을 유지합니다.  \t"
+        ],
+        "response_content_preserved_exactly": true,
+        "dialog_count": 1,
+        "page_errors": [],
+        "native_keyboard_send": true,
+        "request_was_whitespace_acknowledgement": false
+      },
+      "pass": true
+    },
+    {
+      "mode": "old-empty-control",
+      "width": 1440,
+      "new_failure_boundary": false,
+      "observed": {
+        "draft": "가상 공백 응답 검증",
+        "draft_preserved": true,
+        "alert_count": 1,
+        "alert_text": [
+          "답변을 확인하지 못했어요. 질문은 입력란에 남겨두었어요. 중복 전송을 피하려면 대화 기록을 먼저 확인해 주세요.대화 기록 확인하기"
+        ],
+        "send_disabled": true,
+        "history_gets": 1,
+        "synthetic_posts": 1,
+        "bubble_contents": [
+          "가상 대화 검증님, 사주 풀이에서 궁금한 점을 질문해 주세요."
+        ],
+        "response_content_preserved_exactly": false,
+        "dialog_count": 1,
+        "page_errors": [],
+        "native_keyboard_send": true,
+        "request_was_whitespace_acknowledgement": false
+      },
+      "pass": true
+    }
+  ],
+  "observations": [
+    {
+      "mode": "spaces",
+      "width": 390,
+      "draft": "가상 공백 응답 검증",
+      "draft_preserved": true,
+      "alert_count": 1,
+      "alert_text": [
+        "답변을 확인하지 못했어요. 질문은 입력란에 남겨두었어요. 중복 전송을 피하려면 대화 기록을 먼저 확인해 주세요.대화 기록 확인하기"
+      ],
+      "send_disabled": true,
+      "history_gets": 1,
+      "synthetic_posts": 1,
+      "bubble_contents": [
+        "가상 대화 검증님, 사주 풀이에서 궁금한 점을 질문해 주세요."
+      ],
+      "response_content_preserved_exactly": false,
+      "dialog_count": 1,
+      "page_errors": [],
+      "native_keyboard_send": true,
+      "request_was_whitespace_acknowledgement": true
+    },
+    {
+      "mode": "tabs-lines",
+      "width": 390,
+      "draft": "가상 공백 응답 검증",
+      "draft_preserved": true,
+      "alert_count": 1,
+      "alert_text": [
+        "답변을 확인하지 못했어요. 질문은 입력란에 남겨두었어요. 중복 전송을 피하려면 대화 기록을 먼저 확인해 주세요.대화 기록 확인하기"
+      ],
+      "send_disabled": true,
+      "history_gets": 1,
+      "synthetic_posts": 1,
+      "bubble_contents": [
+        "가상 대화 검증님, 사주 풀이에서 궁금한 점을 질문해 주세요."
+      ],
+      "response_content_preserved_exactly": false,
+      "dialog_count": 1,
+      "page_errors": [],
+      "native_keyboard_send": true,
+      "request_was_whitespace_acknowledgement": true
+    },
+    {
+      "mode": "unicode-whitespace",
+      "width": 390,
+      "draft": "가상 공백 응답 검증",
+      "draft_preserved": true,
+      "alert_count": 1,
+      "alert_text": [
+        "답변을 확인하지 못했어요. 질문은 입력란에 남겨두었어요. 중복 전송을 피하려면 대화 기록을 먼저 확인해 주세요.대화 기록 확인하기"
+      ],
+      "send_disabled": true,
+      "history_gets": 1,
+      "synthetic_posts": 1,
+      "bubble_contents": [
+        "가상 대화 검증님, 사주 풀이에서 궁금한 점을 질문해 주세요."
+      ],
+      "response_content_preserved_exactly": false,
+      "dialog_count": 1,
+      "page_errors": [],
+      "native_keyboard_send": true,
+      "request_was_whitespace_acknowledgement": true
+    },
+    {
+      "mode": "plain-valid-control",
+      "width": 390,
+      "draft": "",
+      "draft_preserved": false,
+      "alert_count": 0,
+      "alert_text": [],
+      "send_disabled": true,
+      "history_gets": 2,
+      "synthetic_posts": 1,
+      "bubble_contents": [
+        "가상 공백 응답 검증",
+        "가상 답변을 유지합니다."
+      ],
+      "response_content_preserved_exactly": true,
+      "dialog_count": 1,
+      "page_errors": [],
+      "native_keyboard_send": true,
+      "request_was_whitespace_acknowledgement": false
+    },
+    {
+      "mode": "formatted-valid-control",
+      "width": 390,
+      "draft": "",
+      "draft_preserved": false,
+      "alert_count": 0,
+      "alert_text": [],
+      "send_disabled": true,
+      "history_gets": 2,
+      "synthetic_posts": 1,
+      "bubble_contents": [
+        "가상 공백 응답 검증",
+        "\n  가상 답변을 유지합니다.  \t"
+      ],
+      "response_content_preserved_exactly": true,
+      "dialog_count": 1,
+      "page_errors": [],
+      "native_keyboard_send": true,
+      "request_was_whitespace_acknowledgement": false
+    },
+    {
+      "mode": "old-empty-control",
+      "width": 390,
+      "draft": "가상 공백 응답 검증",
+      "draft_preserved": true,
+      "alert_count": 1,
+      "alert_text": [
+        "답변을 확인하지 못했어요. 질문은 입력란에 남겨두었어요. 중복 전송을 피하려면 대화 기록을 먼저 확인해 주세요.대화 기록 확인하기"
+      ],
+      "send_disabled": true,
+      "history_gets": 1,
+      "synthetic_posts": 1,
+      "bubble_contents": [
+        "가상 대화 검증님, 사주 풀이에서 궁금한 점을 질문해 주세요."
+      ],
+      "response_content_preserved_exactly": false,
+      "dialog_count": 1,
+      "page_errors": [],
+      "native_keyboard_send": true,
+      "request_was_whitespace_acknowledgement": false
+    },
+    {
+      "mode": "spaces",
+      "width": 1440,
+      "draft": "가상 공백 응답 검증",
+      "draft_preserved": true,
+      "alert_count": 1,
+      "alert_text": [
+        "답변을 확인하지 못했어요. 질문은 입력란에 남겨두었어요. 중복 전송을 피하려면 대화 기록을 먼저 확인해 주세요.대화 기록 확인하기"
+      ],
+      "send_disabled": true,
+      "history_gets": 1,
+      "synthetic_posts": 1,
+      "bubble_contents": [
+        "가상 대화 검증님, 사주 풀이에서 궁금한 점을 질문해 주세요."
+      ],
+      "response_content_preserved_exactly": false,
+      "dialog_count": 1,
+      "page_errors": [],
+      "native_keyboard_send": true,
+      "request_was_whitespace_acknowledgement": true
+    },
+    {
+      "mode": "tabs-lines",
+      "width": 1440,
+      "draft": "가상 공백 응답 검증",
+      "draft_preserved": true,
+      "alert_count": 1,
+      "alert_text": [
+        "답변을 확인하지 못했어요. 질문은 입력란에 남겨두었어요. 중복 전송을 피하려면 대화 기록을 먼저 확인해 주세요.대화 기록 확인하기"
+      ],
+      "send_disabled": true,
+      "history_gets": 1,
+      "synthetic_posts": 1,
+      "bubble_contents": [
+        "가상 대화 검증님, 사주 풀이에서 궁금한 점을 질문해 주세요."
+      ],
+      "response_content_preserved_exactly": false,
+      "dialog_count": 1,
+      "page_errors": [],
+      "native_keyboard_send": true,
+      "request_was_whitespace_acknowledgement": true
+    },
+    {
+      "mode": "unicode-whitespace",
+      "width": 1440,
+      "draft": "가상 공백 응답 검증",
+      "draft_preserved": true,
+      "alert_count": 1,
+      "alert_text": [
+        "답변을 확인하지 못했어요. 질문은 입력란에 남겨두었어요. 중복 전송을 피하려면 대화 기록을 먼저 확인해 주세요.대화 기록 확인하기"
+      ],
+      "send_disabled": true,
+      "history_gets": 1,
+      "synthetic_posts": 1,
+      "bubble_contents": [
+        "가상 대화 검증님, 사주 풀이에서 궁금한 점을 질문해 주세요."
+      ],
+      "response_content_preserved_exactly": false,
+      "dialog_count": 1,
+      "page_errors": [],
+      "native_keyboard_send": true,
+      "request_was_whitespace_acknowledgement": true
+    },
+    {
+      "mode": "plain-valid-control",
+      "width": 1440,
+      "draft": "",
+      "draft_preserved": false,
+      "alert_count": 0,
+      "alert_text": [],
+      "send_disabled": true,
+      "history_gets": 2,
+      "synthetic_posts": 1,
+      "bubble_contents": [
+        "가상 공백 응답 검증",
+        "가상 답변을 유지합니다."
+      ],
+      "response_content_preserved_exactly": true,
+      "dialog_count": 1,
+      "page_errors": [],
+      "native_keyboard_send": true,
+      "request_was_whitespace_acknowledgement": false
+    },
+    {
+      "mode": "formatted-valid-control",
+      "width": 1440,
+      "draft": "",
+      "draft_preserved": false,
+      "alert_count": 0,
+      "alert_text": [],
+      "send_disabled": true,
+      "history_gets": 2,
+      "synthetic_posts": 1,
+      "bubble_contents": [
+        "가상 공백 응답 검증",
+        "\n  가상 답변을 유지합니다.  \t"
+      ],
+      "response_content_preserved_exactly": true,
+      "dialog_count": 1,
+      "page_errors": [],
+      "native_keyboard_send": true,
+      "request_was_whitespace_acknowledgement": false
+    },
+    {
+      "mode": "old-empty-control",
+      "width": 1440,
+      "draft": "가상 공백 응답 검증",
+      "draft_preserved": true,
+      "alert_count": 1,
+      "alert_text": [
+        "답변을 확인하지 못했어요. 질문은 입력란에 남겨두었어요. 중복 전송을 피하려면 대화 기록을 먼저 확인해 주세요.대화 기록 확인하기"
+      ],
+      "send_disabled": true,
+      "history_gets": 1,
+      "synthetic_posts": 1,
+      "bubble_contents": [
+        "가상 대화 검증님, 사주 풀이에서 궁금한 점을 질문해 주세요."
+      ],
+      "response_content_preserved_exactly": false,
+      "dialog_count": 1,
+      "page_errors": [],
+      "native_keyboard_send": true,
+      "request_was_whitespace_acknowledgement": false
+    }
+  ],
+  "page_errors": [],
+  "console_errors": [],
+  "outbound_requests": [],
+  "synthetic_posts": [
+    {
+      "mode": "spaces",
+      "width": 390,
+      "body": {
+        "question": "가상 공백 응답 검증"
+      }
+    },
+    {
+      "mode": "tabs-lines",
+      "width": 390,
+      "body": {
+        "question": "가상 공백 응답 검증"
+      }
+    },
+    {
+      "mode": "unicode-whitespace",
+      "width": 390,
+      "body": {
+        "question": "가상 공백 응답 검증"
+      }
+    },
+    {
+      "mode": "plain-valid-control",
+      "width": 390,
+      "body": {
+        "question": "가상 공백 응답 검증"
+      }
+    },
+    {
+      "mode": "formatted-valid-control",
+      "width": 390,
+      "body": {
+        "question": "가상 공백 응답 검증"
+      }
+    },
+    {
+      "mode": "old-empty-control",
+      "width": 390,
+      "body": {
+        "question": "가상 공백 응답 검증"
+      }
+    },
+    {
+      "mode": "spaces",
+      "width": 1440,
+      "body": {
+        "question": "가상 공백 응답 검증"
+      }
+    },
+    {
+      "mode": "tabs-lines",
+      "width": 1440,
+      "body": {
+        "question": "가상 공백 응답 검증"
+      }
+    },
+    {
+      "mode": "unicode-whitespace",
+      "width": 1440,
+      "body": {
+        "question": "가상 공백 응답 검증"
+      }
+    },
+    {
+      "mode": "plain-valid-control",
+      "width": 1440,
+      "body": {
+        "question": "가상 공백 응답 검증"
+      }
+    },
+    {
+      "mode": "formatted-valid-control",
+      "width": 1440,
+      "body": {
+        "question": "가상 공백 응답 검증"
+      }
+    },
+    {
+      "mode": "old-empty-control",
+      "width": 1440,
+      "body": {
+        "question": "가상 공백 응답 검증"
+      }
+    }
+  ],
+  "actual_backend_requests": 0,
+  "database_operations": 0,
+  "actual_ai_provider_calls": 0,
+  "user_clipboard_or_storage_access": 0,
+  "source_files_written": 0,
+  "manual_dom_events": 0,
+  "physical_device_or_screen_reader_acceptance": false,
+  "generated_image_or_model_render": false,
+  "scope": "One added semantic blank-reply acknowledgement guard, with the prior empty-string rejection and plain/formatted success as controls. HTTP status/type, history validation, focus handling, recovery fence, persistence, provider and previous completed suites are preserved and are not counted as new fixes."
+}

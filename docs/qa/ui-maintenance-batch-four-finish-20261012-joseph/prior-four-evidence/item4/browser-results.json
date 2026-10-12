@@ -1,0 +1,175 @@
+{
+  "status": "PASS",
+  "phase": "item4",
+  "at_utc": "2026-10-11T05:06:33.542Z",
+  "browser": "154.0.8037.98",
+  "products": {
+    "app/manse/page.tsx": "012b6e4c3aaa72c50d2873ebbdbb6b5b549c9eb62dc77076f892b96298b76140",
+    "app/saved/page.tsx": "378572d7489980372ed6e3558c938f76ebcb5f1f63e0dce33b362835dccbcf09",
+    "components/planet/GalaxyPokedexModal.tsx": "f57f22eec3459b88ac70a51f24b36fae184b5269af18470f85717e6a7c6529b9",
+    "components/SajuInputModal.tsx": "4787358979a2427fb9d55fd39933c2def54134e4532244876f8ab10e265e0748"
+  },
+  "harness_sha256": "62b1b984e00898637c5c54630023d9b7bad1ae3a92daf5443ee9647a8d26d4de",
+  "css_sha256": "4e2f086b3fd0c53e4e5729a49947310046f415c5e7aa7ab4e0428ef8d8dd50ca",
+  "passed": 6,
+  "failed": 0,
+  "groups": {
+    "pokedex": {
+      "passed": 6,
+      "failed": 0
+    }
+  },
+  "checks": [
+    {
+      "group": "pokedex",
+      "name": "empty-named 390",
+      "observed": {
+        "native_named_modal_count": 1,
+        "role": "dialog",
+        "aria_modal": "true",
+        "generated_or_rendered_model": false,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "pokedex",
+      "name": "collected-named 390",
+      "observed": {
+        "native_named_modal_count": 1,
+        "role": "dialog",
+        "aria_modal": "true",
+        "generated_or_rendered_model": false,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "pokedex",
+      "name": "pointer-control 390",
+      "observed": {
+        "native_named_modal_count": 1,
+        "role": "dialog",
+        "aria_modal": "true",
+        "generated_or_rendered_model": false,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "pokedex",
+      "name": "empty-named 1440",
+      "observed": {
+        "native_named_modal_count": 1,
+        "role": "dialog",
+        "aria_modal": "true",
+        "generated_or_rendered_model": false,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "pokedex",
+      "name": "collected-named 1440",
+      "observed": {
+        "native_named_modal_count": 1,
+        "role": "dialog",
+        "aria_modal": "true",
+        "generated_or_rendered_model": false,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "pokedex",
+      "name": "pointer-control 1440",
+      "observed": {
+        "native_named_modal_count": 1,
+        "role": "dialog",
+        "aria_modal": "true",
+        "generated_or_rendered_model": false,
+        "page_errors": []
+      },
+      "pass": true
+    }
+  ],
+  "observations": [
+    {
+      "group": "pokedex",
+      "mode": "empty-named",
+      "width": 390,
+      "native_named_modal_count": 1,
+      "role": "dialog",
+      "aria_modal": "true",
+      "generated_or_rendered_model": false,
+      "page_errors": []
+    },
+    {
+      "group": "pokedex",
+      "mode": "collected-named",
+      "width": 390,
+      "native_named_modal_count": 1,
+      "role": "dialog",
+      "aria_modal": "true",
+      "generated_or_rendered_model": false,
+      "page_errors": []
+    },
+    {
+      "group": "pokedex",
+      "mode": "pointer-control",
+      "width": 390,
+      "native_named_modal_count": 1,
+      "role": "dialog",
+      "aria_modal": "true",
+      "generated_or_rendered_model": false,
+      "page_errors": []
+    },
+    {
+      "group": "pokedex",
+      "mode": "empty-named",
+      "width": 1440,
+      "native_named_modal_count": 1,
+      "role": "dialog",
+      "aria_modal": "true",
+      "generated_or_rendered_model": false,
+      "page_errors": []
+    },
+    {
+      "group": "pokedex",
+      "mode": "collected-named",
+      "width": 1440,
+      "native_named_modal_count": 1,
+      "role": "dialog",
+      "aria_modal": "true",
+      "generated_or_rendered_model": false,
+      "page_errors": []
+    },
+    {
+      "group": "pokedex",
+      "mode": "pointer-control",
+      "width": 1440,
+      "native_named_modal_count": 1,
+      "role": "dialog",
+      "aria_modal": "true",
+      "generated_or_rendered_model": false,
+      "page_errors": []
+    }
+  ],
+  "page_errors": [],
+  "console_errors": [],
+  "outbound_requests": [],
+  "synthetic_gets": [],
+  "synthetic_posts": [],
+  "actual_backend_requests": 0,
+  "database_operations": 0,
+  "actual_ai_provider_calls": 0,
+  "user_clipboard_or_storage_access": 0,
+  "isolated_fictional_session_storage_only": true,
+  "native_pointer_and_keyboard": true,
+  "native_computed_accessibility_role_queries": true,
+  "physical_screen_reader_tested": false,
+  "manual_dom_events": 0,
+  "previous_completed_suites_rerun": 0,
+  "previous_completed_fixes_counted": 0,
+  "scope": "New Manse visible-label associations and native missing-field validation, actual Saved/FortuneCard nested render shape, Pokedex named modal semantics and Saju create acknowledgement ID type. Native Chrome production React/Tailwind at 390x844 and 1440x1000 with isolated fictional intercepted APIs. Fixed Next/host/navigation landing fixtures; actual card and calculation UI components. Pure calculation prepares fictional reading data; no calculation correctness claim. Prior gender/selection, saved list/ID/cache/cancellation, collection close/focus, Saju HTTP/date/dialog/send and all completed suites are unchanged/excluded. No real API/DB/Gemini/user storage/clipboard/auth/3D/hosted/physical device or screen-reader acceptance."
+}

@@ -1,0 +1,33 @@
+{
+  "status": "PASS_ALL_ORIGINAL_WIP_SOURCE_ZIP_EXISTING_EVIDENCE_LEGACY_AND_ART_BYTES_PRESERVED",
+  "at_utc": "2026-10-11T06:12:32.175Z",
+  "branch": "fix/ui-maintenance-batch-four-20261011-joseph",
+  "head": "0209c23fe04a0ef60c916a16d6e8002ae65693dd",
+  "index_empty": true,
+  "own_wip": [
+    " M app/manse/page.tsx",
+    " M app/saved/page.tsx",
+    " M components/SajuInputModal.tsx",
+    " M components/planet/GalaxyPokedexModal.tsx",
+    "?? scripts/qa/ui-maintenance-batch-four-browser.mjs"
+  ],
+  "source_and_runtime_files_byte_identical": 1800,
+  "previous_evidence_files_byte_identical": 592,
+  "canonical_asset_runtime_files_byte_identical": 13,
+  "original_local_refs_preserved": 12,
+  "legacy_wip_files_byte_identical": 3,
+  "art_checkouts_unchanged": 5,
+  "zip": {
+    "path": "D:\\Codex\\Results\\SaJuUiBatchFour-20261011-Joseph\\SaJu_UI_Batch4_Partial_4of5_DuplicateReviewed_20261011_Joseph_0209c23f.zip",
+    "bytes": 13685568,
+    "sha256": "dcc289f84a1fd36d1d4b6d3a2f496982f8fd60b2474c590fcd1ea4a687789052"
+  },
+  "existing_sparse_absences_preserved": 157,
+  "private_copy_input_changes": [],
+  "all_build_generated_files_in_new_private_copy": true,
+  "private_dependency_files_copied": 55906,
+  "dependency_links_back_to_original": 0,
+  "original_dependency_tree_not_used_as_build_output": true,
+  "new_C_task_output_staging_created": false,
+  "no_new_source_edits_reset_staging_commit_push_drive_deployment_or_other_process_stop": true
+}

@@ -1,0 +1,2941 @@
+{
+  "status": "PASS",
+  "phase": "final-core",
+  "at_utc": "2026-10-12T02:10:48.497Z",
+  "browser": "154.0.8037.98",
+  "products": {
+    "app/manse/page.tsx": "012b6e4c3aaa72c50d2873ebbdbb6b5b549c9eb62dc77076f892b96298b76140",
+    "app/saved/page.tsx": "378572d7489980372ed6e3558c938f76ebcb5f1f63e0dce33b362835dccbcf09",
+    "components/planet/GalaxyPokedexModal.tsx": "f57f22eec3459b88ac70a51f24b36fae184b5269af18470f85717e6a7c6529b9",
+    "components/SajuInputModal.tsx": "9b8f44d9225f7f3e60fae6282adeb0cd86a580f3da9ed4d1f7909af5d8072ec6"
+  },
+  "harness_sha256": "62b1b984e00898637c5c54630023d9b7bad1ae3a92daf5443ee9647a8d26d4de",
+  "css_sha256": "4e2f086b3fd0c53e4e5729a49947310046f415c5e7aa7ab4e0428ef8d8dd50ca",
+  "passed": 60,
+  "failed": 0,
+  "groups": {
+    "labels": {
+      "passed": 6,
+      "failed": 0
+    },
+    "required": {
+      "passed": 12,
+      "failed": 0
+    },
+    "detail": {
+      "passed": 16,
+      "failed": 0
+    },
+    "pokedex": {
+      "passed": 6,
+      "failed": 0
+    },
+    "ack": {
+      "passed": 20,
+      "failed": 0
+    }
+  },
+  "checks": [
+    {
+      "group": "labels",
+      "name": "programmatic-names 390",
+      "observed": {
+        "named": [
+          {
+            "label": "이름",
+            "native_named_count": 1,
+            "label_control": "manse-name",
+            "input_id": "manse-name",
+            "input_focused": true
+          },
+          {
+            "label": "태어난 년도",
+            "native_named_count": 1,
+            "label_control": "manse-year",
+            "input_id": "manse-year",
+            "input_focused": false
+          },
+          {
+            "label": "월",
+            "native_named_count": 1,
+            "label_control": "manse-month",
+            "input_id": "manse-month",
+            "input_focused": false
+          },
+          {
+            "label": "일",
+            "native_named_count": 1,
+            "label_control": "manse-day",
+            "input_id": "manse-day",
+            "input_focused": false
+          },
+          {
+            "label": "태어난 시 (0~23시):",
+            "native_named_count": 1,
+            "label_control": "manse-hour",
+            "input_id": "manse-hour",
+            "input_focused": false
+          }
+        ],
+        "values": [
+          "가상 만세 검증",
+          "1995",
+          "5",
+          "15",
+          "14"
+        ],
+        "result_count": 0,
+        "synthetic_posts": 0,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "labels",
+      "name": "pointer-label-association 390",
+      "observed": {
+        "named": [
+          {
+            "label": "이름",
+            "native_named_count": 1,
+            "label_control": "manse-name",
+            "input_id": "manse-name",
+            "input_focused": true
+          },
+          {
+            "label": "태어난 년도",
+            "native_named_count": 1,
+            "label_control": "manse-year",
+            "input_id": "manse-year",
+            "input_focused": true
+          },
+          {
+            "label": "월",
+            "native_named_count": 1,
+            "label_control": "manse-month",
+            "input_id": "manse-month",
+            "input_focused": true
+          },
+          {
+            "label": "일",
+            "native_named_count": 1,
+            "label_control": "manse-day",
+            "input_id": "manse-day",
+            "input_focused": true
+          },
+          {
+            "label": "태어난 시 (0~23시):",
+            "native_named_count": 1,
+            "label_control": "manse-hour",
+            "input_id": "manse-hour",
+            "input_focused": true
+          }
+        ],
+        "values": [
+          "가상 만세 검증",
+          "1995",
+          "5",
+          "15",
+          "14"
+        ],
+        "result_count": 0,
+        "synthetic_posts": 0,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "labels",
+      "name": "valid-control 390",
+      "observed": {
+        "named": [],
+        "values": [
+          "가상 만세 검증",
+          "1995",
+          "5",
+          "15",
+          "14"
+        ],
+        "result_count": 1,
+        "synthetic_posts": 0,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "required",
+      "name": "empty-year 390",
+      "observed": {
+        "missing_before": {
+          "required": true,
+          "missing": true
+        },
+        "focused_missing_input": true,
+        "prior_result_count": 1,
+        "result_count": 1,
+        "error_count": 0,
+        "hour_disabled": false,
+        "unknown_result_count": 0,
+        "synthetic_posts": 0,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "required",
+      "name": "empty-month 390",
+      "observed": {
+        "missing_before": {
+          "required": true,
+          "missing": true
+        },
+        "focused_missing_input": true,
+        "prior_result_count": 1,
+        "result_count": 1,
+        "error_count": 0,
+        "hour_disabled": false,
+        "unknown_result_count": 0,
+        "synthetic_posts": 0,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "required",
+      "name": "empty-day 390",
+      "observed": {
+        "missing_before": {
+          "required": true,
+          "missing": true
+        },
+        "focused_missing_input": true,
+        "prior_result_count": 1,
+        "result_count": 1,
+        "error_count": 0,
+        "hour_disabled": false,
+        "unknown_result_count": 0,
+        "synthetic_posts": 0,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "required",
+      "name": "empty-hour 390",
+      "observed": {
+        "missing_before": {
+          "required": true,
+          "missing": true
+        },
+        "focused_missing_input": true,
+        "prior_result_count": 1,
+        "result_count": 1,
+        "error_count": 0,
+        "hour_disabled": false,
+        "unknown_result_count": 0,
+        "synthetic_posts": 0,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "required",
+      "name": "known-control 390",
+      "observed": {
+        "missing_before": null,
+        "focused_missing_input": false,
+        "prior_result_count": 1,
+        "result_count": 1,
+        "error_count": 0,
+        "hour_disabled": false,
+        "unknown_result_count": 0,
+        "synthetic_posts": 0,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "required",
+      "name": "unknown-control 390",
+      "observed": {
+        "missing_before": null,
+        "focused_missing_input": false,
+        "prior_result_count": 1,
+        "result_count": 1,
+        "error_count": 0,
+        "hour_disabled": true,
+        "unknown_result_count": 1,
+        "synthetic_posts": 0,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "detail",
+      "name": "missing-analysis 390",
+      "observed": {
+        "page_errors": [],
+        "alert_count": 1,
+        "alert_text": "요청한 기록을 확인할 수 없습니다.\n\n다시 불러오기",
+        "title_count": 0,
+        "detail_get_count": 1,
+        "synthetic_posts": 0
+      },
+      "pass": true
+    },
+    {
+      "group": "detail",
+      "name": "bad-elements 390",
+      "observed": {
+        "page_errors": [],
+        "alert_count": 1,
+        "alert_text": "요청한 기록을 확인할 수 없습니다.\n\n다시 불러오기",
+        "title_count": 0,
+        "detail_get_count": 1,
+        "synthetic_posts": 0
+      },
+      "pass": true
+    },
+    {
+      "group": "detail",
+      "name": "sections-object 390",
+      "observed": {
+        "page_errors": [],
+        "alert_count": 1,
+        "alert_text": "요청한 기록을 확인할 수 없습니다.\n\n다시 불러오기",
+        "title_count": 0,
+        "detail_get_count": 1,
+        "synthetic_posts": 0
+      },
+      "pass": true
+    },
+    {
+      "group": "detail",
+      "name": "null-section 390",
+      "observed": {
+        "page_errors": [],
+        "alert_count": 1,
+        "alert_text": "요청한 기록을 확인할 수 없습니다.\n\n다시 불러오기",
+        "title_count": 0,
+        "detail_get_count": 1,
+        "synthetic_posts": 0
+      },
+      "pass": true
+    },
+    {
+      "group": "detail",
+      "name": "bad-metaphor 390",
+      "observed": {
+        "page_errors": [],
+        "alert_count": 1,
+        "alert_text": "요청한 기록을 확인할 수 없습니다.\n\n다시 불러오기",
+        "title_count": 0,
+        "detail_get_count": 1,
+        "synthetic_posts": 0
+      },
+      "pass": true
+    },
+    {
+      "group": "detail",
+      "name": "bad-advice 390",
+      "observed": {
+        "page_errors": [],
+        "alert_count": 1,
+        "alert_text": "요청한 기록을 확인할 수 없습니다.\n\n다시 불러오기",
+        "title_count": 0,
+        "detail_get_count": 1,
+        "synthetic_posts": 0
+      },
+      "pass": true
+    },
+    {
+      "group": "detail",
+      "name": "valid-control 390",
+      "observed": {
+        "page_errors": [],
+        "alert_count": 0,
+        "alert_text": null,
+        "title_count": 1,
+        "detail_get_count": 1,
+        "synthetic_posts": 0
+      },
+      "pass": true
+    },
+    {
+      "group": "detail",
+      "name": "legacy-control 390",
+      "observed": {
+        "page_errors": [],
+        "alert_count": 0,
+        "alert_text": null,
+        "title_count": 1,
+        "detail_get_count": 1,
+        "synthetic_posts": 0
+      },
+      "pass": true
+    },
+    {
+      "group": "pokedex",
+      "name": "empty-named 390",
+      "observed": {
+        "native_named_modal_count": 1,
+        "role": "dialog",
+        "aria_modal": "true",
+        "generated_or_rendered_model": false,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "pokedex",
+      "name": "collected-named 390",
+      "observed": {
+        "native_named_modal_count": 1,
+        "role": "dialog",
+        "aria_modal": "true",
+        "generated_or_rendered_model": false,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "pokedex",
+      "name": "pointer-control 390",
+      "observed": {
+        "native_named_modal_count": 1,
+        "role": "dialog",
+        "aria_modal": "true",
+        "generated_or_rendered_model": false,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "callback missing-id 390",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [
+          "풀이 중 문제가 발생했습니다."
+        ],
+        "route": "/ack",
+        "query_id": null,
+        "callback_calls": 0,
+        "callback_id": null,
+        "dialog_count": 1,
+        "draft": "가상 생성 검증",
+        "submit_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "callback null-id 390",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [
+          "풀이 중 문제가 발생했습니다."
+        ],
+        "route": "/ack",
+        "query_id": null,
+        "callback_calls": 0,
+        "callback_id": null,
+        "dialog_count": 1,
+        "draft": "가상 생성 검증",
+        "submit_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "callback number-id 390",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [
+          "풀이 중 문제가 발생했습니다."
+        ],
+        "route": "/ack",
+        "query_id": null,
+        "callback_calls": 0,
+        "callback_id": null,
+        "dialog_count": 1,
+        "draft": "가상 생성 검증",
+        "submit_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "callback empty-id 390",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [
+          "풀이 중 문제가 발생했습니다."
+        ],
+        "route": "/ack",
+        "query_id": null,
+        "callback_calls": 0,
+        "callback_id": null,
+        "dialog_count": 1,
+        "draft": "가상 생성 검증",
+        "submit_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "callback valid-control 390",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [],
+        "route": "/ack",
+        "query_id": null,
+        "callback_calls": 1,
+        "callback_id": "qa-batch4-created",
+        "dialog_count": 0,
+        "draft": null,
+        "submit_enabled": false,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "default missing-id 390",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [
+          "풀이 중 문제가 발생했습니다."
+        ],
+        "route": "/ack",
+        "query_id": null,
+        "callback_calls": 0,
+        "callback_id": null,
+        "dialog_count": 1,
+        "draft": "가상 생성 검증",
+        "submit_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "default null-id 390",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [
+          "풀이 중 문제가 발생했습니다."
+        ],
+        "route": "/ack",
+        "query_id": null,
+        "callback_calls": 0,
+        "callback_id": null,
+        "dialog_count": 1,
+        "draft": "가상 생성 검증",
+        "submit_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "default number-id 390",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [
+          "풀이 중 문제가 발생했습니다."
+        ],
+        "route": "/ack",
+        "query_id": null,
+        "callback_calls": 0,
+        "callback_id": null,
+        "dialog_count": 1,
+        "draft": "가상 생성 검증",
+        "submit_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "default empty-id 390",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [
+          "풀이 중 문제가 발생했습니다."
+        ],
+        "route": "/ack",
+        "query_id": null,
+        "callback_calls": 0,
+        "callback_id": null,
+        "dialog_count": 1,
+        "draft": "가상 생성 검증",
+        "submit_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "default valid-control 390",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [],
+        "route": "/saved",
+        "query_id": "qa-batch4-created",
+        "callback_calls": 0,
+        "callback_id": null,
+        "dialog_count": 0,
+        "draft": null,
+        "submit_enabled": false,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "labels",
+      "name": "programmatic-names 1440",
+      "observed": {
+        "named": [
+          {
+            "label": "이름",
+            "native_named_count": 1,
+            "label_control": "manse-name",
+            "input_id": "manse-name",
+            "input_focused": true
+          },
+          {
+            "label": "태어난 년도",
+            "native_named_count": 1,
+            "label_control": "manse-year",
+            "input_id": "manse-year",
+            "input_focused": false
+          },
+          {
+            "label": "월",
+            "native_named_count": 1,
+            "label_control": "manse-month",
+            "input_id": "manse-month",
+            "input_focused": false
+          },
+          {
+            "label": "일",
+            "native_named_count": 1,
+            "label_control": "manse-day",
+            "input_id": "manse-day",
+            "input_focused": false
+          },
+          {
+            "label": "태어난 시 (0~23시):",
+            "native_named_count": 1,
+            "label_control": "manse-hour",
+            "input_id": "manse-hour",
+            "input_focused": false
+          }
+        ],
+        "values": [
+          "가상 만세 검증",
+          "1995",
+          "5",
+          "15",
+          "14"
+        ],
+        "result_count": 0,
+        "synthetic_posts": 0,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "labels",
+      "name": "pointer-label-association 1440",
+      "observed": {
+        "named": [
+          {
+            "label": "이름",
+            "native_named_count": 1,
+            "label_control": "manse-name",
+            "input_id": "manse-name",
+            "input_focused": true
+          },
+          {
+            "label": "태어난 년도",
+            "native_named_count": 1,
+            "label_control": "manse-year",
+            "input_id": "manse-year",
+            "input_focused": true
+          },
+          {
+            "label": "월",
+            "native_named_count": 1,
+            "label_control": "manse-month",
+            "input_id": "manse-month",
+            "input_focused": true
+          },
+          {
+            "label": "일",
+            "native_named_count": 1,
+            "label_control": "manse-day",
+            "input_id": "manse-day",
+            "input_focused": true
+          },
+          {
+            "label": "태어난 시 (0~23시):",
+            "native_named_count": 1,
+            "label_control": "manse-hour",
+            "input_id": "manse-hour",
+            "input_focused": true
+          }
+        ],
+        "values": [
+          "가상 만세 검증",
+          "1995",
+          "5",
+          "15",
+          "14"
+        ],
+        "result_count": 0,
+        "synthetic_posts": 0,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "labels",
+      "name": "valid-control 1440",
+      "observed": {
+        "named": [],
+        "values": [
+          "가상 만세 검증",
+          "1995",
+          "5",
+          "15",
+          "14"
+        ],
+        "result_count": 1,
+        "synthetic_posts": 0,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "required",
+      "name": "empty-year 1440",
+      "observed": {
+        "missing_before": {
+          "required": true,
+          "missing": true
+        },
+        "focused_missing_input": true,
+        "prior_result_count": 1,
+        "result_count": 1,
+        "error_count": 0,
+        "hour_disabled": false,
+        "unknown_result_count": 0,
+        "synthetic_posts": 0,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "required",
+      "name": "empty-month 1440",
+      "observed": {
+        "missing_before": {
+          "required": true,
+          "missing": true
+        },
+        "focused_missing_input": true,
+        "prior_result_count": 1,
+        "result_count": 1,
+        "error_count": 0,
+        "hour_disabled": false,
+        "unknown_result_count": 0,
+        "synthetic_posts": 0,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "required",
+      "name": "empty-day 1440",
+      "observed": {
+        "missing_before": {
+          "required": true,
+          "missing": true
+        },
+        "focused_missing_input": true,
+        "prior_result_count": 1,
+        "result_count": 1,
+        "error_count": 0,
+        "hour_disabled": false,
+        "unknown_result_count": 0,
+        "synthetic_posts": 0,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "required",
+      "name": "empty-hour 1440",
+      "observed": {
+        "missing_before": {
+          "required": true,
+          "missing": true
+        },
+        "focused_missing_input": true,
+        "prior_result_count": 1,
+        "result_count": 1,
+        "error_count": 0,
+        "hour_disabled": false,
+        "unknown_result_count": 0,
+        "synthetic_posts": 0,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "required",
+      "name": "known-control 1440",
+      "observed": {
+        "missing_before": null,
+        "focused_missing_input": false,
+        "prior_result_count": 1,
+        "result_count": 1,
+        "error_count": 0,
+        "hour_disabled": false,
+        "unknown_result_count": 0,
+        "synthetic_posts": 0,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "required",
+      "name": "unknown-control 1440",
+      "observed": {
+        "missing_before": null,
+        "focused_missing_input": false,
+        "prior_result_count": 1,
+        "result_count": 1,
+        "error_count": 0,
+        "hour_disabled": true,
+        "unknown_result_count": 1,
+        "synthetic_posts": 0,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "detail",
+      "name": "missing-analysis 1440",
+      "observed": {
+        "page_errors": [],
+        "alert_count": 1,
+        "alert_text": "요청한 기록을 확인할 수 없습니다.\n\n다시 불러오기",
+        "title_count": 0,
+        "detail_get_count": 1,
+        "synthetic_posts": 0
+      },
+      "pass": true
+    },
+    {
+      "group": "detail",
+      "name": "bad-elements 1440",
+      "observed": {
+        "page_errors": [],
+        "alert_count": 1,
+        "alert_text": "요청한 기록을 확인할 수 없습니다.\n\n다시 불러오기",
+        "title_count": 0,
+        "detail_get_count": 1,
+        "synthetic_posts": 0
+      },
+      "pass": true
+    },
+    {
+      "group": "detail",
+      "name": "sections-object 1440",
+      "observed": {
+        "page_errors": [],
+        "alert_count": 1,
+        "alert_text": "요청한 기록을 확인할 수 없습니다.\n\n다시 불러오기",
+        "title_count": 0,
+        "detail_get_count": 1,
+        "synthetic_posts": 0
+      },
+      "pass": true
+    },
+    {
+      "group": "detail",
+      "name": "null-section 1440",
+      "observed": {
+        "page_errors": [],
+        "alert_count": 1,
+        "alert_text": "요청한 기록을 확인할 수 없습니다.\n\n다시 불러오기",
+        "title_count": 0,
+        "detail_get_count": 1,
+        "synthetic_posts": 0
+      },
+      "pass": true
+    },
+    {
+      "group": "detail",
+      "name": "bad-metaphor 1440",
+      "observed": {
+        "page_errors": [],
+        "alert_count": 1,
+        "alert_text": "요청한 기록을 확인할 수 없습니다.\n\n다시 불러오기",
+        "title_count": 0,
+        "detail_get_count": 1,
+        "synthetic_posts": 0
+      },
+      "pass": true
+    },
+    {
+      "group": "detail",
+      "name": "bad-advice 1440",
+      "observed": {
+        "page_errors": [],
+        "alert_count": 1,
+        "alert_text": "요청한 기록을 확인할 수 없습니다.\n\n다시 불러오기",
+        "title_count": 0,
+        "detail_get_count": 1,
+        "synthetic_posts": 0
+      },
+      "pass": true
+    },
+    {
+      "group": "detail",
+      "name": "valid-control 1440",
+      "observed": {
+        "page_errors": [],
+        "alert_count": 0,
+        "alert_text": null,
+        "title_count": 1,
+        "detail_get_count": 1,
+        "synthetic_posts": 0
+      },
+      "pass": true
+    },
+    {
+      "group": "detail",
+      "name": "legacy-control 1440",
+      "observed": {
+        "page_errors": [],
+        "alert_count": 0,
+        "alert_text": null,
+        "title_count": 1,
+        "detail_get_count": 1,
+        "synthetic_posts": 0
+      },
+      "pass": true
+    },
+    {
+      "group": "pokedex",
+      "name": "empty-named 1440",
+      "observed": {
+        "native_named_modal_count": 1,
+        "role": "dialog",
+        "aria_modal": "true",
+        "generated_or_rendered_model": false,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "pokedex",
+      "name": "collected-named 1440",
+      "observed": {
+        "native_named_modal_count": 1,
+        "role": "dialog",
+        "aria_modal": "true",
+        "generated_or_rendered_model": false,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "pokedex",
+      "name": "pointer-control 1440",
+      "observed": {
+        "native_named_modal_count": 1,
+        "role": "dialog",
+        "aria_modal": "true",
+        "generated_or_rendered_model": false,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "callback missing-id 1440",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [
+          "풀이 중 문제가 발생했습니다."
+        ],
+        "route": "/ack",
+        "query_id": null,
+        "callback_calls": 0,
+        "callback_id": null,
+        "dialog_count": 1,
+        "draft": "가상 생성 검증",
+        "submit_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "callback null-id 1440",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [
+          "풀이 중 문제가 발생했습니다."
+        ],
+        "route": "/ack",
+        "query_id": null,
+        "callback_calls": 0,
+        "callback_id": null,
+        "dialog_count": 1,
+        "draft": "가상 생성 검증",
+        "submit_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "callback number-id 1440",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [
+          "풀이 중 문제가 발생했습니다."
+        ],
+        "route": "/ack",
+        "query_id": null,
+        "callback_calls": 0,
+        "callback_id": null,
+        "dialog_count": 1,
+        "draft": "가상 생성 검증",
+        "submit_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "callback empty-id 1440",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [
+          "풀이 중 문제가 발생했습니다."
+        ],
+        "route": "/ack",
+        "query_id": null,
+        "callback_calls": 0,
+        "callback_id": null,
+        "dialog_count": 1,
+        "draft": "가상 생성 검증",
+        "submit_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "callback valid-control 1440",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [],
+        "route": "/ack",
+        "query_id": null,
+        "callback_calls": 1,
+        "callback_id": "qa-batch4-created",
+        "dialog_count": 0,
+        "draft": null,
+        "submit_enabled": false,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "default missing-id 1440",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [
+          "풀이 중 문제가 발생했습니다."
+        ],
+        "route": "/ack",
+        "query_id": null,
+        "callback_calls": 0,
+        "callback_id": null,
+        "dialog_count": 1,
+        "draft": "가상 생성 검증",
+        "submit_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "default null-id 1440",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [
+          "풀이 중 문제가 발생했습니다."
+        ],
+        "route": "/ack",
+        "query_id": null,
+        "callback_calls": 0,
+        "callback_id": null,
+        "dialog_count": 1,
+        "draft": "가상 생성 검증",
+        "submit_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "default number-id 1440",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [
+          "풀이 중 문제가 발생했습니다."
+        ],
+        "route": "/ack",
+        "query_id": null,
+        "callback_calls": 0,
+        "callback_id": null,
+        "dialog_count": 1,
+        "draft": "가상 생성 검증",
+        "submit_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "default empty-id 1440",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [
+          "풀이 중 문제가 발생했습니다."
+        ],
+        "route": "/ack",
+        "query_id": null,
+        "callback_calls": 0,
+        "callback_id": null,
+        "dialog_count": 1,
+        "draft": "가상 생성 검증",
+        "submit_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "default valid-control 1440",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [],
+        "route": "/saved",
+        "query_id": "qa-batch4-created",
+        "callback_calls": 0,
+        "callback_id": null,
+        "dialog_count": 0,
+        "draft": null,
+        "submit_enabled": false,
+        "page_errors": []
+      },
+      "pass": true
+    }
+  ],
+  "observations": [
+    {
+      "group": "labels",
+      "mode": "programmatic-names",
+      "width": 390,
+      "named": [
+        {
+          "label": "이름",
+          "native_named_count": 1,
+          "label_control": "manse-name",
+          "input_id": "manse-name",
+          "input_focused": true
+        },
+        {
+          "label": "태어난 년도",
+          "native_named_count": 1,
+          "label_control": "manse-year",
+          "input_id": "manse-year",
+          "input_focused": false
+        },
+        {
+          "label": "월",
+          "native_named_count": 1,
+          "label_control": "manse-month",
+          "input_id": "manse-month",
+          "input_focused": false
+        },
+        {
+          "label": "일",
+          "native_named_count": 1,
+          "label_control": "manse-day",
+          "input_id": "manse-day",
+          "input_focused": false
+        },
+        {
+          "label": "태어난 시 (0~23시):",
+          "native_named_count": 1,
+          "label_control": "manse-hour",
+          "input_id": "manse-hour",
+          "input_focused": false
+        }
+      ],
+      "values": [
+        "가상 만세 검증",
+        "1995",
+        "5",
+        "15",
+        "14"
+      ],
+      "result_count": 0,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "labels",
+      "mode": "pointer-label-association",
+      "width": 390,
+      "named": [
+        {
+          "label": "이름",
+          "native_named_count": 1,
+          "label_control": "manse-name",
+          "input_id": "manse-name",
+          "input_focused": true
+        },
+        {
+          "label": "태어난 년도",
+          "native_named_count": 1,
+          "label_control": "manse-year",
+          "input_id": "manse-year",
+          "input_focused": true
+        },
+        {
+          "label": "월",
+          "native_named_count": 1,
+          "label_control": "manse-month",
+          "input_id": "manse-month",
+          "input_focused": true
+        },
+        {
+          "label": "일",
+          "native_named_count": 1,
+          "label_control": "manse-day",
+          "input_id": "manse-day",
+          "input_focused": true
+        },
+        {
+          "label": "태어난 시 (0~23시):",
+          "native_named_count": 1,
+          "label_control": "manse-hour",
+          "input_id": "manse-hour",
+          "input_focused": true
+        }
+      ],
+      "values": [
+        "가상 만세 검증",
+        "1995",
+        "5",
+        "15",
+        "14"
+      ],
+      "result_count": 0,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "labels",
+      "mode": "valid-control",
+      "width": 390,
+      "named": [],
+      "values": [
+        "가상 만세 검증",
+        "1995",
+        "5",
+        "15",
+        "14"
+      ],
+      "result_count": 1,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "required",
+      "mode": "empty-year",
+      "width": 390,
+      "missing_before": {
+        "required": true,
+        "missing": true
+      },
+      "focused_missing_input": true,
+      "prior_result_count": 1,
+      "result_count": 1,
+      "error_count": 0,
+      "hour_disabled": false,
+      "unknown_result_count": 0,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "required",
+      "mode": "empty-month",
+      "width": 390,
+      "missing_before": {
+        "required": true,
+        "missing": true
+      },
+      "focused_missing_input": true,
+      "prior_result_count": 1,
+      "result_count": 1,
+      "error_count": 0,
+      "hour_disabled": false,
+      "unknown_result_count": 0,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "required",
+      "mode": "empty-day",
+      "width": 390,
+      "missing_before": {
+        "required": true,
+        "missing": true
+      },
+      "focused_missing_input": true,
+      "prior_result_count": 1,
+      "result_count": 1,
+      "error_count": 0,
+      "hour_disabled": false,
+      "unknown_result_count": 0,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "required",
+      "mode": "empty-hour",
+      "width": 390,
+      "missing_before": {
+        "required": true,
+        "missing": true
+      },
+      "focused_missing_input": true,
+      "prior_result_count": 1,
+      "result_count": 1,
+      "error_count": 0,
+      "hour_disabled": false,
+      "unknown_result_count": 0,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "required",
+      "mode": "known-control",
+      "width": 390,
+      "missing_before": null,
+      "focused_missing_input": false,
+      "prior_result_count": 1,
+      "result_count": 1,
+      "error_count": 0,
+      "hour_disabled": false,
+      "unknown_result_count": 0,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "required",
+      "mode": "unknown-control",
+      "width": 390,
+      "missing_before": null,
+      "focused_missing_input": false,
+      "prior_result_count": 1,
+      "result_count": 1,
+      "error_count": 0,
+      "hour_disabled": true,
+      "unknown_result_count": 1,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "detail",
+      "mode": "missing-analysis",
+      "width": 390,
+      "page_errors": [],
+      "alert_count": 1,
+      "alert_text": "요청한 기록을 확인할 수 없습니다.\n\n다시 불러오기",
+      "title_count": 0,
+      "detail_get_count": 1,
+      "synthetic_posts": 0
+    },
+    {
+      "group": "detail",
+      "mode": "retry-missing-analysis",
+      "width": 390,
+      "title_count": 1,
+      "alert_count": 0,
+      "detail_get_count": 2,
+      "page_errors": []
+    },
+    {
+      "group": "detail",
+      "mode": "bad-elements",
+      "width": 390,
+      "page_errors": [],
+      "alert_count": 1,
+      "alert_text": "요청한 기록을 확인할 수 없습니다.\n\n다시 불러오기",
+      "title_count": 0,
+      "detail_get_count": 1,
+      "synthetic_posts": 0
+    },
+    {
+      "group": "detail",
+      "mode": "retry-bad-elements",
+      "width": 390,
+      "title_count": 1,
+      "alert_count": 0,
+      "detail_get_count": 2,
+      "page_errors": []
+    },
+    {
+      "group": "detail",
+      "mode": "sections-object",
+      "width": 390,
+      "page_errors": [],
+      "alert_count": 1,
+      "alert_text": "요청한 기록을 확인할 수 없습니다.\n\n다시 불러오기",
+      "title_count": 0,
+      "detail_get_count": 1,
+      "synthetic_posts": 0
+    },
+    {
+      "group": "detail",
+      "mode": "retry-sections-object",
+      "width": 390,
+      "title_count": 1,
+      "alert_count": 0,
+      "detail_get_count": 2,
+      "page_errors": []
+    },
+    {
+      "group": "detail",
+      "mode": "null-section",
+      "width": 390,
+      "page_errors": [],
+      "alert_count": 1,
+      "alert_text": "요청한 기록을 확인할 수 없습니다.\n\n다시 불러오기",
+      "title_count": 0,
+      "detail_get_count": 1,
+      "synthetic_posts": 0
+    },
+    {
+      "group": "detail",
+      "mode": "retry-null-section",
+      "width": 390,
+      "title_count": 1,
+      "alert_count": 0,
+      "detail_get_count": 2,
+      "page_errors": []
+    },
+    {
+      "group": "detail",
+      "mode": "bad-metaphor",
+      "width": 390,
+      "page_errors": [],
+      "alert_count": 1,
+      "alert_text": "요청한 기록을 확인할 수 없습니다.\n\n다시 불러오기",
+      "title_count": 0,
+      "detail_get_count": 1,
+      "synthetic_posts": 0
+    },
+    {
+      "group": "detail",
+      "mode": "retry-bad-metaphor",
+      "width": 390,
+      "title_count": 1,
+      "alert_count": 0,
+      "detail_get_count": 2,
+      "page_errors": []
+    },
+    {
+      "group": "detail",
+      "mode": "bad-advice",
+      "width": 390,
+      "page_errors": [],
+      "alert_count": 1,
+      "alert_text": "요청한 기록을 확인할 수 없습니다.\n\n다시 불러오기",
+      "title_count": 0,
+      "detail_get_count": 1,
+      "synthetic_posts": 0
+    },
+    {
+      "group": "detail",
+      "mode": "retry-bad-advice",
+      "width": 390,
+      "title_count": 1,
+      "alert_count": 0,
+      "detail_get_count": 2,
+      "page_errors": []
+    },
+    {
+      "group": "detail",
+      "mode": "valid-control",
+      "width": 390,
+      "page_errors": [],
+      "alert_count": 0,
+      "alert_text": null,
+      "title_count": 1,
+      "detail_get_count": 1,
+      "synthetic_posts": 0
+    },
+    {
+      "group": "detail",
+      "mode": "legacy-control",
+      "width": 390,
+      "page_errors": [],
+      "alert_count": 0,
+      "alert_text": null,
+      "title_count": 1,
+      "detail_get_count": 1,
+      "synthetic_posts": 0
+    },
+    {
+      "group": "pokedex",
+      "mode": "empty-named",
+      "width": 390,
+      "native_named_modal_count": 1,
+      "role": "dialog",
+      "aria_modal": "true",
+      "generated_or_rendered_model": false,
+      "page_errors": []
+    },
+    {
+      "group": "pokedex",
+      "mode": "collected-named",
+      "width": 390,
+      "native_named_modal_count": 1,
+      "role": "dialog",
+      "aria_modal": "true",
+      "generated_or_rendered_model": false,
+      "page_errors": []
+    },
+    {
+      "group": "pokedex",
+      "mode": "pointer-control",
+      "width": 390,
+      "native_named_modal_count": 1,
+      "role": "dialog",
+      "aria_modal": "true",
+      "generated_or_rendered_model": false,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "callback-missing-id",
+      "width": 390,
+      "synthetic_posts": 1,
+      "alerts": [
+        "풀이 중 문제가 발생했습니다."
+      ],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 1,
+      "draft": "가상 생성 검증",
+      "submit_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "callback-null-id",
+      "width": 390,
+      "synthetic_posts": 1,
+      "alerts": [
+        "풀이 중 문제가 발생했습니다."
+      ],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 1,
+      "draft": "가상 생성 검증",
+      "submit_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "callback-number-id",
+      "width": 390,
+      "synthetic_posts": 1,
+      "alerts": [
+        "풀이 중 문제가 발생했습니다."
+      ],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 1,
+      "draft": "가상 생성 검증",
+      "submit_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "callback-empty-id",
+      "width": 390,
+      "synthetic_posts": 1,
+      "alerts": [
+        "풀이 중 문제가 발생했습니다."
+      ],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 1,
+      "draft": "가상 생성 검증",
+      "submit_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "callback-valid-control",
+      "width": 390,
+      "synthetic_posts": 1,
+      "alerts": [],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 1,
+      "callback_id": "qa-batch4-created",
+      "dialog_count": 0,
+      "draft": null,
+      "submit_enabled": false,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "default-missing-id",
+      "width": 390,
+      "synthetic_posts": 1,
+      "alerts": [
+        "풀이 중 문제가 발생했습니다."
+      ],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 1,
+      "draft": "가상 생성 검증",
+      "submit_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "default-null-id",
+      "width": 390,
+      "synthetic_posts": 1,
+      "alerts": [
+        "풀이 중 문제가 발생했습니다."
+      ],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 1,
+      "draft": "가상 생성 검증",
+      "submit_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "default-number-id",
+      "width": 390,
+      "synthetic_posts": 1,
+      "alerts": [
+        "풀이 중 문제가 발생했습니다."
+      ],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 1,
+      "draft": "가상 생성 검증",
+      "submit_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "default-empty-id",
+      "width": 390,
+      "synthetic_posts": 1,
+      "alerts": [
+        "풀이 중 문제가 발생했습니다."
+      ],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 1,
+      "draft": "가상 생성 검증",
+      "submit_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "default-valid-control",
+      "width": 390,
+      "synthetic_posts": 1,
+      "alerts": [],
+      "route": "/saved",
+      "query_id": "qa-batch4-created",
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 0,
+      "draft": null,
+      "submit_enabled": false,
+      "page_errors": []
+    },
+    {
+      "group": "labels",
+      "mode": "programmatic-names",
+      "width": 1440,
+      "named": [
+        {
+          "label": "이름",
+          "native_named_count": 1,
+          "label_control": "manse-name",
+          "input_id": "manse-name",
+          "input_focused": true
+        },
+        {
+          "label": "태어난 년도",
+          "native_named_count": 1,
+          "label_control": "manse-year",
+          "input_id": "manse-year",
+          "input_focused": false
+        },
+        {
+          "label": "월",
+          "native_named_count": 1,
+          "label_control": "manse-month",
+          "input_id": "manse-month",
+          "input_focused": false
+        },
+        {
+          "label": "일",
+          "native_named_count": 1,
+          "label_control": "manse-day",
+          "input_id": "manse-day",
+          "input_focused": false
+        },
+        {
+          "label": "태어난 시 (0~23시):",
+          "native_named_count": 1,
+          "label_control": "manse-hour",
+          "input_id": "manse-hour",
+          "input_focused": false
+        }
+      ],
+      "values": [
+        "가상 만세 검증",
+        "1995",
+        "5",
+        "15",
+        "14"
+      ],
+      "result_count": 0,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "labels",
+      "mode": "pointer-label-association",
+      "width": 1440,
+      "named": [
+        {
+          "label": "이름",
+          "native_named_count": 1,
+          "label_control": "manse-name",
+          "input_id": "manse-name",
+          "input_focused": true
+        },
+        {
+          "label": "태어난 년도",
+          "native_named_count": 1,
+          "label_control": "manse-year",
+          "input_id": "manse-year",
+          "input_focused": true
+        },
+        {
+          "label": "월",
+          "native_named_count": 1,
+          "label_control": "manse-month",
+          "input_id": "manse-month",
+          "input_focused": true
+        },
+        {
+          "label": "일",
+          "native_named_count": 1,
+          "label_control": "manse-day",
+          "input_id": "manse-day",
+          "input_focused": true
+        },
+        {
+          "label": "태어난 시 (0~23시):",
+          "native_named_count": 1,
+          "label_control": "manse-hour",
+          "input_id": "manse-hour",
+          "input_focused": true
+        }
+      ],
+      "values": [
+        "가상 만세 검증",
+        "1995",
+        "5",
+        "15",
+        "14"
+      ],
+      "result_count": 0,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "labels",
+      "mode": "valid-control",
+      "width": 1440,
+      "named": [],
+      "values": [
+        "가상 만세 검증",
+        "1995",
+        "5",
+        "15",
+        "14"
+      ],
+      "result_count": 1,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "required",
+      "mode": "empty-year",
+      "width": 1440,
+      "missing_before": {
+        "required": true,
+        "missing": true
+      },
+      "focused_missing_input": true,
+      "prior_result_count": 1,
+      "result_count": 1,
+      "error_count": 0,
+      "hour_disabled": false,
+      "unknown_result_count": 0,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "required",
+      "mode": "empty-month",
+      "width": 1440,
+      "missing_before": {
+        "required": true,
+        "missing": true
+      },
+      "focused_missing_input": true,
+      "prior_result_count": 1,
+      "result_count": 1,
+      "error_count": 0,
+      "hour_disabled": false,
+      "unknown_result_count": 0,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "required",
+      "mode": "empty-day",
+      "width": 1440,
+      "missing_before": {
+        "required": true,
+        "missing": true
+      },
+      "focused_missing_input": true,
+      "prior_result_count": 1,
+      "result_count": 1,
+      "error_count": 0,
+      "hour_disabled": false,
+      "unknown_result_count": 0,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "required",
+      "mode": "empty-hour",
+      "width": 1440,
+      "missing_before": {
+        "required": true,
+        "missing": true
+      },
+      "focused_missing_input": true,
+      "prior_result_count": 1,
+      "result_count": 1,
+      "error_count": 0,
+      "hour_disabled": false,
+      "unknown_result_count": 0,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "required",
+      "mode": "known-control",
+      "width": 1440,
+      "missing_before": null,
+      "focused_missing_input": false,
+      "prior_result_count": 1,
+      "result_count": 1,
+      "error_count": 0,
+      "hour_disabled": false,
+      "unknown_result_count": 0,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "required",
+      "mode": "unknown-control",
+      "width": 1440,
+      "missing_before": null,
+      "focused_missing_input": false,
+      "prior_result_count": 1,
+      "result_count": 1,
+      "error_count": 0,
+      "hour_disabled": true,
+      "unknown_result_count": 1,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "detail",
+      "mode": "missing-analysis",
+      "width": 1440,
+      "page_errors": [],
+      "alert_count": 1,
+      "alert_text": "요청한 기록을 확인할 수 없습니다.\n\n다시 불러오기",
+      "title_count": 0,
+      "detail_get_count": 1,
+      "synthetic_posts": 0
+    },
+    {
+      "group": "detail",
+      "mode": "retry-missing-analysis",
+      "width": 1440,
+      "title_count": 1,
+      "alert_count": 0,
+      "detail_get_count": 2,
+      "page_errors": []
+    },
+    {
+      "group": "detail",
+      "mode": "bad-elements",
+      "width": 1440,
+      "page_errors": [],
+      "alert_count": 1,
+      "alert_text": "요청한 기록을 확인할 수 없습니다.\n\n다시 불러오기",
+      "title_count": 0,
+      "detail_get_count": 1,
+      "synthetic_posts": 0
+    },
+    {
+      "group": "detail",
+      "mode": "retry-bad-elements",
+      "width": 1440,
+      "title_count": 1,
+      "alert_count": 0,
+      "detail_get_count": 2,
+      "page_errors": []
+    },
+    {
+      "group": "detail",
+      "mode": "sections-object",
+      "width": 1440,
+      "page_errors": [],
+      "alert_count": 1,
+      "alert_text": "요청한 기록을 확인할 수 없습니다.\n\n다시 불러오기",
+      "title_count": 0,
+      "detail_get_count": 1,
+      "synthetic_posts": 0
+    },
+    {
+      "group": "detail",
+      "mode": "retry-sections-object",
+      "width": 1440,
+      "title_count": 1,
+      "alert_count": 0,
+      "detail_get_count": 2,
+      "page_errors": []
+    },
+    {
+      "group": "detail",
+      "mode": "null-section",
+      "width": 1440,
+      "page_errors": [],
+      "alert_count": 1,
+      "alert_text": "요청한 기록을 확인할 수 없습니다.\n\n다시 불러오기",
+      "title_count": 0,
+      "detail_get_count": 1,
+      "synthetic_posts": 0
+    },
+    {
+      "group": "detail",
+      "mode": "retry-null-section",
+      "width": 1440,
+      "title_count": 1,
+      "alert_count": 0,
+      "detail_get_count": 2,
+      "page_errors": []
+    },
+    {
+      "group": "detail",
+      "mode": "bad-metaphor",
+      "width": 1440,
+      "page_errors": [],
+      "alert_count": 1,
+      "alert_text": "요청한 기록을 확인할 수 없습니다.\n\n다시 불러오기",
+      "title_count": 0,
+      "detail_get_count": 1,
+      "synthetic_posts": 0
+    },
+    {
+      "group": "detail",
+      "mode": "retry-bad-metaphor",
+      "width": 1440,
+      "title_count": 1,
+      "alert_count": 0,
+      "detail_get_count": 2,
+      "page_errors": []
+    },
+    {
+      "group": "detail",
+      "mode": "bad-advice",
+      "width": 1440,
+      "page_errors": [],
+      "alert_count": 1,
+      "alert_text": "요청한 기록을 확인할 수 없습니다.\n\n다시 불러오기",
+      "title_count": 0,
+      "detail_get_count": 1,
+      "synthetic_posts": 0
+    },
+    {
+      "group": "detail",
+      "mode": "retry-bad-advice",
+      "width": 1440,
+      "title_count": 1,
+      "alert_count": 0,
+      "detail_get_count": 2,
+      "page_errors": []
+    },
+    {
+      "group": "detail",
+      "mode": "valid-control",
+      "width": 1440,
+      "page_errors": [],
+      "alert_count": 0,
+      "alert_text": null,
+      "title_count": 1,
+      "detail_get_count": 1,
+      "synthetic_posts": 0
+    },
+    {
+      "group": "detail",
+      "mode": "legacy-control",
+      "width": 1440,
+      "page_errors": [],
+      "alert_count": 0,
+      "alert_text": null,
+      "title_count": 1,
+      "detail_get_count": 1,
+      "synthetic_posts": 0
+    },
+    {
+      "group": "pokedex",
+      "mode": "empty-named",
+      "width": 1440,
+      "native_named_modal_count": 1,
+      "role": "dialog",
+      "aria_modal": "true",
+      "generated_or_rendered_model": false,
+      "page_errors": []
+    },
+    {
+      "group": "pokedex",
+      "mode": "collected-named",
+      "width": 1440,
+      "native_named_modal_count": 1,
+      "role": "dialog",
+      "aria_modal": "true",
+      "generated_or_rendered_model": false,
+      "page_errors": []
+    },
+    {
+      "group": "pokedex",
+      "mode": "pointer-control",
+      "width": 1440,
+      "native_named_modal_count": 1,
+      "role": "dialog",
+      "aria_modal": "true",
+      "generated_or_rendered_model": false,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "callback-missing-id",
+      "width": 1440,
+      "synthetic_posts": 1,
+      "alerts": [
+        "풀이 중 문제가 발생했습니다."
+      ],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 1,
+      "draft": "가상 생성 검증",
+      "submit_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "callback-null-id",
+      "width": 1440,
+      "synthetic_posts": 1,
+      "alerts": [
+        "풀이 중 문제가 발생했습니다."
+      ],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 1,
+      "draft": "가상 생성 검증",
+      "submit_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "callback-number-id",
+      "width": 1440,
+      "synthetic_posts": 1,
+      "alerts": [
+        "풀이 중 문제가 발생했습니다."
+      ],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 1,
+      "draft": "가상 생성 검증",
+      "submit_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "callback-empty-id",
+      "width": 1440,
+      "synthetic_posts": 1,
+      "alerts": [
+        "풀이 중 문제가 발생했습니다."
+      ],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 1,
+      "draft": "가상 생성 검증",
+      "submit_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "callback-valid-control",
+      "width": 1440,
+      "synthetic_posts": 1,
+      "alerts": [],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 1,
+      "callback_id": "qa-batch4-created",
+      "dialog_count": 0,
+      "draft": null,
+      "submit_enabled": false,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "default-missing-id",
+      "width": 1440,
+      "synthetic_posts": 1,
+      "alerts": [
+        "풀이 중 문제가 발생했습니다."
+      ],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 1,
+      "draft": "가상 생성 검증",
+      "submit_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "default-null-id",
+      "width": 1440,
+      "synthetic_posts": 1,
+      "alerts": [
+        "풀이 중 문제가 발생했습니다."
+      ],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 1,
+      "draft": "가상 생성 검증",
+      "submit_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "default-number-id",
+      "width": 1440,
+      "synthetic_posts": 1,
+      "alerts": [
+        "풀이 중 문제가 발생했습니다."
+      ],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 1,
+      "draft": "가상 생성 검증",
+      "submit_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "default-empty-id",
+      "width": 1440,
+      "synthetic_posts": 1,
+      "alerts": [
+        "풀이 중 문제가 발생했습니다."
+      ],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 1,
+      "draft": "가상 생성 검증",
+      "submit_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "default-valid-control",
+      "width": 1440,
+      "synthetic_posts": 1,
+      "alerts": [],
+      "route": "/saved",
+      "query_id": "qa-batch4-created",
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 0,
+      "draft": null,
+      "submit_enabled": false,
+      "page_errors": []
+    }
+  ],
+  "page_errors": [],
+  "console_errors": [],
+  "outbound_requests": [],
+  "synthetic_gets": [
+    {
+      "group": "detail",
+      "mode": "missing-analysis",
+      "width": 390,
+      "endpoint": "fixed-valid-summary"
+    },
+    {
+      "group": "detail",
+      "mode": "missing-analysis",
+      "width": 390,
+      "endpoint": "detail",
+      "attempt": 1
+    },
+    {
+      "group": "detail",
+      "mode": "missing-analysis",
+      "width": 390,
+      "endpoint": "detail",
+      "attempt": 2
+    },
+    {
+      "group": "detail",
+      "mode": "bad-elements",
+      "width": 390,
+      "endpoint": "fixed-valid-summary"
+    },
+    {
+      "group": "detail",
+      "mode": "bad-elements",
+      "width": 390,
+      "endpoint": "detail",
+      "attempt": 1
+    },
+    {
+      "group": "detail",
+      "mode": "bad-elements",
+      "width": 390,
+      "endpoint": "detail",
+      "attempt": 2
+    },
+    {
+      "group": "detail",
+      "mode": "sections-object",
+      "width": 390,
+      "endpoint": "fixed-valid-summary"
+    },
+    {
+      "group": "detail",
+      "mode": "sections-object",
+      "width": 390,
+      "endpoint": "detail",
+      "attempt": 1
+    },
+    {
+      "group": "detail",
+      "mode": "sections-object",
+      "width": 390,
+      "endpoint": "detail",
+      "attempt": 2
+    },
+    {
+      "group": "detail",
+      "mode": "null-section",
+      "width": 390,
+      "endpoint": "fixed-valid-summary"
+    },
+    {
+      "group": "detail",
+      "mode": "null-section",
+      "width": 390,
+      "endpoint": "detail",
+      "attempt": 1
+    },
+    {
+      "group": "detail",
+      "mode": "null-section",
+      "width": 390,
+      "endpoint": "detail",
+      "attempt": 2
+    },
+    {
+      "group": "detail",
+      "mode": "bad-metaphor",
+      "width": 390,
+      "endpoint": "fixed-valid-summary"
+    },
+    {
+      "group": "detail",
+      "mode": "bad-metaphor",
+      "width": 390,
+      "endpoint": "detail",
+      "attempt": 1
+    },
+    {
+      "group": "detail",
+      "mode": "bad-metaphor",
+      "width": 390,
+      "endpoint": "detail",
+      "attempt": 2
+    },
+    {
+      "group": "detail",
+      "mode": "bad-advice",
+      "width": 390,
+      "endpoint": "fixed-valid-summary"
+    },
+    {
+      "group": "detail",
+      "mode": "bad-advice",
+      "width": 390,
+      "endpoint": "detail",
+      "attempt": 1
+    },
+    {
+      "group": "detail",
+      "mode": "bad-advice",
+      "width": 390,
+      "endpoint": "detail",
+      "attempt": 2
+    },
+    {
+      "group": "detail",
+      "mode": "valid-control",
+      "width": 390,
+      "endpoint": "fixed-valid-summary"
+    },
+    {
+      "group": "detail",
+      "mode": "valid-control",
+      "width": 390,
+      "endpoint": "detail",
+      "attempt": 1
+    },
+    {
+      "group": "detail",
+      "mode": "legacy-control",
+      "width": 390,
+      "endpoint": "fixed-valid-summary"
+    },
+    {
+      "group": "detail",
+      "mode": "legacy-control",
+      "width": 390,
+      "endpoint": "detail",
+      "attempt": 1
+    },
+    {
+      "group": "detail",
+      "mode": "missing-analysis",
+      "width": 1440,
+      "endpoint": "fixed-valid-summary"
+    },
+    {
+      "group": "detail",
+      "mode": "missing-analysis",
+      "width": 1440,
+      "endpoint": "detail",
+      "attempt": 1
+    },
+    {
+      "group": "detail",
+      "mode": "missing-analysis",
+      "width": 1440,
+      "endpoint": "detail",
+      "attempt": 2
+    },
+    {
+      "group": "detail",
+      "mode": "bad-elements",
+      "width": 1440,
+      "endpoint": "fixed-valid-summary"
+    },
+    {
+      "group": "detail",
+      "mode": "bad-elements",
+      "width": 1440,
+      "endpoint": "detail",
+      "attempt": 1
+    },
+    {
+      "group": "detail",
+      "mode": "bad-elements",
+      "width": 1440,
+      "endpoint": "detail",
+      "attempt": 2
+    },
+    {
+      "group": "detail",
+      "mode": "sections-object",
+      "width": 1440,
+      "endpoint": "fixed-valid-summary"
+    },
+    {
+      "group": "detail",
+      "mode": "sections-object",
+      "width": 1440,
+      "endpoint": "detail",
+      "attempt": 1
+    },
+    {
+      "group": "detail",
+      "mode": "sections-object",
+      "width": 1440,
+      "endpoint": "detail",
+      "attempt": 2
+    },
+    {
+      "group": "detail",
+      "mode": "null-section",
+      "width": 1440,
+      "endpoint": "fixed-valid-summary"
+    },
+    {
+      "group": "detail",
+      "mode": "null-section",
+      "width": 1440,
+      "endpoint": "detail",
+      "attempt": 1
+    },
+    {
+      "group": "detail",
+      "mode": "null-section",
+      "width": 1440,
+      "endpoint": "detail",
+      "attempt": 2
+    },
+    {
+      "group": "detail",
+      "mode": "bad-metaphor",
+      "width": 1440,
+      "endpoint": "fixed-valid-summary"
+    },
+    {
+      "group": "detail",
+      "mode": "bad-metaphor",
+      "width": 1440,
+      "endpoint": "detail",
+      "attempt": 1
+    },
+    {
+      "group": "detail",
+      "mode": "bad-metaphor",
+      "width": 1440,
+      "endpoint": "detail",
+      "attempt": 2
+    },
+    {
+      "group": "detail",
+      "mode": "bad-advice",
+      "width": 1440,
+      "endpoint": "fixed-valid-summary"
+    },
+    {
+      "group": "detail",
+      "mode": "bad-advice",
+      "width": 1440,
+      "endpoint": "detail",
+      "attempt": 1
+    },
+    {
+      "group": "detail",
+      "mode": "bad-advice",
+      "width": 1440,
+      "endpoint": "detail",
+      "attempt": 2
+    },
+    {
+      "group": "detail",
+      "mode": "valid-control",
+      "width": 1440,
+      "endpoint": "fixed-valid-summary"
+    },
+    {
+      "group": "detail",
+      "mode": "valid-control",
+      "width": 1440,
+      "endpoint": "detail",
+      "attempt": 1
+    },
+    {
+      "group": "detail",
+      "mode": "legacy-control",
+      "width": 1440,
+      "endpoint": "fixed-valid-summary"
+    },
+    {
+      "group": "detail",
+      "mode": "legacy-control",
+      "width": 1440,
+      "endpoint": "detail",
+      "attempt": 1
+    }
+  ],
+  "synthetic_posts": [
+    {
+      "group": "ack",
+      "mode": "missing-id",
+      "width": 390,
+      "delivery": "callback",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "null-id",
+      "width": 390,
+      "delivery": "callback",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "number-id",
+      "width": 390,
+      "delivery": "callback",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "empty-id",
+      "width": 390,
+      "delivery": "callback",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "valid-control",
+      "width": 390,
+      "delivery": "callback",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "missing-id",
+      "width": 390,
+      "delivery": "default",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "null-id",
+      "width": 390,
+      "delivery": "default",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "number-id",
+      "width": 390,
+      "delivery": "default",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "empty-id",
+      "width": 390,
+      "delivery": "default",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "valid-control",
+      "width": 390,
+      "delivery": "default",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "missing-id",
+      "width": 1440,
+      "delivery": "callback",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "null-id",
+      "width": 1440,
+      "delivery": "callback",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "number-id",
+      "width": 1440,
+      "delivery": "callback",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "empty-id",
+      "width": 1440,
+      "delivery": "callback",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "valid-control",
+      "width": 1440,
+      "delivery": "callback",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "missing-id",
+      "width": 1440,
+      "delivery": "default",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "null-id",
+      "width": 1440,
+      "delivery": "default",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "number-id",
+      "width": 1440,
+      "delivery": "default",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "empty-id",
+      "width": 1440,
+      "delivery": "default",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "valid-control",
+      "width": 1440,
+      "delivery": "default",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    }
+  ],
+  "actual_backend_requests": 0,
+  "database_operations": 0,
+  "actual_ai_provider_calls": 0,
+  "user_clipboard_or_storage_access": 0,
+  "isolated_fictional_session_storage_only": true,
+  "native_pointer_and_keyboard": true,
+  "native_computed_accessibility_role_queries": true,
+  "physical_screen_reader_tested": false,
+  "manual_dom_events": 0,
+  "previous_completed_suites_rerun": 0,
+  "previous_completed_fixes_counted": 0,
+  "scope": "New Manse visible-label associations and native missing-field validation, actual Saved/FortuneCard nested render shape, Pokedex named modal semantics and Saju create acknowledgement ID type. Native Chrome production React/Tailwind at 390x844 and 1440x1000 with isolated fictional intercepted APIs. Fixed Next/host/navigation landing fixtures; actual card and calculation UI components. Pure calculation prepares fictional reading data; no calculation correctness claim. Prior gender/selection, saved list/ID/cache/cancellation, collection close/focus, Saju HTTP/date/dialog/send and all completed suites are unchanged/excluded. No real API/DB/Gemini/user storage/clipboard/auth/3D/hosted/physical device or screen-reader acceptance."
+}

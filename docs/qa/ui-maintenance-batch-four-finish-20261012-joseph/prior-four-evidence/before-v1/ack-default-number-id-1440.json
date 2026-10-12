@@ -1,0 +1,12 @@
+{
+  "synthetic_posts": 1,
+  "alerts": [],
+  "route": "/saved",
+  "query_id": "123",
+  "callback_calls": 0,
+  "callback_id": null,
+  "dialog_count": 0,
+  "draft": null,
+  "submit_enabled": false,
+  "page_errors": []
+}

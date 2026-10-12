@@ -1,0 +1,451 @@
+{
+  "status": "PASS",
+  "phase": "item2",
+  "at_utc": "2026-10-11T05:00:59.372Z",
+  "browser": "154.0.8037.98",
+  "products": {
+    "app/manse/page.tsx": "012b6e4c3aaa72c50d2873ebbdbb6b5b549c9eb62dc77076f892b96298b76140",
+    "app/saved/page.tsx": "0d86e8fec1257881c16e841a6ce1aca3c48a7fcd6066388e56bd2b33fb19f4fc",
+    "components/planet/GalaxyPokedexModal.tsx": "3606a887f5781959e52b833a0eea63a718c7348b66bef472eac336eb1fd0bc85",
+    "components/SajuInputModal.tsx": "4787358979a2427fb9d55fd39933c2def54134e4532244876f8ab10e265e0748"
+  },
+  "harness_sha256": "62b1b984e00898637c5c54630023d9b7bad1ae3a92daf5443ee9647a8d26d4de",
+  "css_sha256": "4e2f086b3fd0c53e4e5729a49947310046f415c5e7aa7ab4e0428ef8d8dd50ca",
+  "passed": 12,
+  "failed": 0,
+  "groups": {
+    "required": {
+      "passed": 12,
+      "failed": 0
+    }
+  },
+  "checks": [
+    {
+      "group": "required",
+      "name": "empty-year 390",
+      "observed": {
+        "missing_before": {
+          "required": true,
+          "missing": true
+        },
+        "focused_missing_input": true,
+        "prior_result_count": 1,
+        "result_count": 1,
+        "error_count": 0,
+        "hour_disabled": false,
+        "unknown_result_count": 0,
+        "synthetic_posts": 0,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "required",
+      "name": "empty-month 390",
+      "observed": {
+        "missing_before": {
+          "required": true,
+          "missing": true
+        },
+        "focused_missing_input": true,
+        "prior_result_count": 1,
+        "result_count": 1,
+        "error_count": 0,
+        "hour_disabled": false,
+        "unknown_result_count": 0,
+        "synthetic_posts": 0,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "required",
+      "name": "empty-day 390",
+      "observed": {
+        "missing_before": {
+          "required": true,
+          "missing": true
+        },
+        "focused_missing_input": true,
+        "prior_result_count": 1,
+        "result_count": 1,
+        "error_count": 0,
+        "hour_disabled": false,
+        "unknown_result_count": 0,
+        "synthetic_posts": 0,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "required",
+      "name": "empty-hour 390",
+      "observed": {
+        "missing_before": {
+          "required": true,
+          "missing": true
+        },
+        "focused_missing_input": true,
+        "prior_result_count": 1,
+        "result_count": 1,
+        "error_count": 0,
+        "hour_disabled": false,
+        "unknown_result_count": 0,
+        "synthetic_posts": 0,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "required",
+      "name": "known-control 390",
+      "observed": {
+        "missing_before": null,
+        "focused_missing_input": false,
+        "prior_result_count": 1,
+        "result_count": 1,
+        "error_count": 0,
+        "hour_disabled": false,
+        "unknown_result_count": 0,
+        "synthetic_posts": 0,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "required",
+      "name": "unknown-control 390",
+      "observed": {
+        "missing_before": null,
+        "focused_missing_input": false,
+        "prior_result_count": 1,
+        "result_count": 1,
+        "error_count": 0,
+        "hour_disabled": true,
+        "unknown_result_count": 1,
+        "synthetic_posts": 0,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "required",
+      "name": "empty-year 1440",
+      "observed": {
+        "missing_before": {
+          "required": true,
+          "missing": true
+        },
+        "focused_missing_input": true,
+        "prior_result_count": 1,
+        "result_count": 1,
+        "error_count": 0,
+        "hour_disabled": false,
+        "unknown_result_count": 0,
+        "synthetic_posts": 0,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "required",
+      "name": "empty-month 1440",
+      "observed": {
+        "missing_before": {
+          "required": true,
+          "missing": true
+        },
+        "focused_missing_input": true,
+        "prior_result_count": 1,
+        "result_count": 1,
+        "error_count": 0,
+        "hour_disabled": false,
+        "unknown_result_count": 0,
+        "synthetic_posts": 0,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "required",
+      "name": "empty-day 1440",
+      "observed": {
+        "missing_before": {
+          "required": true,
+          "missing": true
+        },
+        "focused_missing_input": true,
+        "prior_result_count": 1,
+        "result_count": 1,
+        "error_count": 0,
+        "hour_disabled": false,
+        "unknown_result_count": 0,
+        "synthetic_posts": 0,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "required",
+      "name": "empty-hour 1440",
+      "observed": {
+        "missing_before": {
+          "required": true,
+          "missing": true
+        },
+        "focused_missing_input": true,
+        "prior_result_count": 1,
+        "result_count": 1,
+        "error_count": 0,
+        "hour_disabled": false,
+        "unknown_result_count": 0,
+        "synthetic_posts": 0,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "required",
+      "name": "known-control 1440",
+      "observed": {
+        "missing_before": null,
+        "focused_missing_input": false,
+        "prior_result_count": 1,
+        "result_count": 1,
+        "error_count": 0,
+        "hour_disabled": false,
+        "unknown_result_count": 0,
+        "synthetic_posts": 0,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "required",
+      "name": "unknown-control 1440",
+      "observed": {
+        "missing_before": null,
+        "focused_missing_input": false,
+        "prior_result_count": 1,
+        "result_count": 1,
+        "error_count": 0,
+        "hour_disabled": true,
+        "unknown_result_count": 1,
+        "synthetic_posts": 0,
+        "page_errors": []
+      },
+      "pass": true
+    }
+  ],
+  "observations": [
+    {
+      "group": "required",
+      "mode": "empty-year",
+      "width": 390,
+      "missing_before": {
+        "required": true,
+        "missing": true
+      },
+      "focused_missing_input": true,
+      "prior_result_count": 1,
+      "result_count": 1,
+      "error_count": 0,
+      "hour_disabled": false,
+      "unknown_result_count": 0,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "required",
+      "mode": "empty-month",
+      "width": 390,
+      "missing_before": {
+        "required": true,
+        "missing": true
+      },
+      "focused_missing_input": true,
+      "prior_result_count": 1,
+      "result_count": 1,
+      "error_count": 0,
+      "hour_disabled": false,
+      "unknown_result_count": 0,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "required",
+      "mode": "empty-day",
+      "width": 390,
+      "missing_before": {
+        "required": true,
+        "missing": true
+      },
+      "focused_missing_input": true,
+      "prior_result_count": 1,
+      "result_count": 1,
+      "error_count": 0,
+      "hour_disabled": false,
+      "unknown_result_count": 0,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "required",
+      "mode": "empty-hour",
+      "width": 390,
+      "missing_before": {
+        "required": true,
+        "missing": true
+      },
+      "focused_missing_input": true,
+      "prior_result_count": 1,
+      "result_count": 1,
+      "error_count": 0,
+      "hour_disabled": false,
+      "unknown_result_count": 0,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "required",
+      "mode": "known-control",
+      "width": 390,
+      "missing_before": null,
+      "focused_missing_input": false,
+      "prior_result_count": 1,
+      "result_count": 1,
+      "error_count": 0,
+      "hour_disabled": false,
+      "unknown_result_count": 0,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "required",
+      "mode": "unknown-control",
+      "width": 390,
+      "missing_before": null,
+      "focused_missing_input": false,
+      "prior_result_count": 1,
+      "result_count": 1,
+      "error_count": 0,
+      "hour_disabled": true,
+      "unknown_result_count": 1,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "required",
+      "mode": "empty-year",
+      "width": 1440,
+      "missing_before": {
+        "required": true,
+        "missing": true
+      },
+      "focused_missing_input": true,
+      "prior_result_count": 1,
+      "result_count": 1,
+      "error_count": 0,
+      "hour_disabled": false,
+      "unknown_result_count": 0,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "required",
+      "mode": "empty-month",
+      "width": 1440,
+      "missing_before": {
+        "required": true,
+        "missing": true
+      },
+      "focused_missing_input": true,
+      "prior_result_count": 1,
+      "result_count": 1,
+      "error_count": 0,
+      "hour_disabled": false,
+      "unknown_result_count": 0,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "required",
+      "mode": "empty-day",
+      "width": 1440,
+      "missing_before": {
+        "required": true,
+        "missing": true
+      },
+      "focused_missing_input": true,
+      "prior_result_count": 1,
+      "result_count": 1,
+      "error_count": 0,
+      "hour_disabled": false,
+      "unknown_result_count": 0,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "required",
+      "mode": "empty-hour",
+      "width": 1440,
+      "missing_before": {
+        "required": true,
+        "missing": true
+      },
+      "focused_missing_input": true,
+      "prior_result_count": 1,
+      "result_count": 1,
+      "error_count": 0,
+      "hour_disabled": false,
+      "unknown_result_count": 0,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "required",
+      "mode": "known-control",
+      "width": 1440,
+      "missing_before": null,
+      "focused_missing_input": false,
+      "prior_result_count": 1,
+      "result_count": 1,
+      "error_count": 0,
+      "hour_disabled": false,
+      "unknown_result_count": 0,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "required",
+      "mode": "unknown-control",
+      "width": 1440,
+      "missing_before": null,
+      "focused_missing_input": false,
+      "prior_result_count": 1,
+      "result_count": 1,
+      "error_count": 0,
+      "hour_disabled": true,
+      "unknown_result_count": 1,
+      "synthetic_posts": 0,
+      "page_errors": []
+    }
+  ],
+  "page_errors": [],
+  "console_errors": [],
+  "outbound_requests": [],
+  "synthetic_gets": [],
+  "synthetic_posts": [],
+  "actual_backend_requests": 0,
+  "database_operations": 0,
+  "actual_ai_provider_calls": 0,
+  "user_clipboard_or_storage_access": 0,
+  "isolated_fictional_session_storage_only": true,
+  "native_pointer_and_keyboard": true,
+  "native_computed_accessibility_role_queries": true,
+  "physical_screen_reader_tested": false,
+  "manual_dom_events": 0,
+  "previous_completed_suites_rerun": 0,
+  "previous_completed_fixes_counted": 0,
+  "scope": "New Manse visible-label associations and native missing-field validation, actual Saved/FortuneCard nested render shape, Pokedex named modal semantics and Saju create acknowledgement ID type. Native Chrome production React/Tailwind at 390x844 and 1440x1000 with isolated fictional intercepted APIs. Fixed Next/host/navigation landing fixtures; actual card and calculation UI components. Pure calculation prepares fictional reading data; no calculation correctness claim. Prior gender/selection, saved list/ID/cache/cancellation, collection close/focus, Saju HTTP/date/dialog/send and all completed suites are unchanged/excluded. No real API/DB/Gemini/user storage/clipboard/auth/3D/hosted/physical device or screen-reader acceptance."
+}

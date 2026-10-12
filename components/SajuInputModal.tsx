@@ -121,7 +121,8 @@ export default function SajuInputModal({
 
       const data = await readApiResponse(res);
 
-      if (res.ok && data.success && data.fortune) {
+      if (res.ok && data.success && data.fortune
+        && typeof data.fortune.id === "string" && data.fortune.id.length > 0) {
         if (onSuccess) {
           onSuccess(data.fortune);
         } else {

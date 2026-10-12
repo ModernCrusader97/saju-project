@@ -1,0 +1,39 @@
+- dialog "60간지 우주 도감":
+  - heading "60간지 우주 도감 (Galaxy Pokedex)" [level=3]
+  - paragraph: "COLLECTED SPIRITS: 2 / 10 SPECIES"
+  - button "도감 닫기"
+  - text: Level 1 · 성간 원시 성단 (Proto Cluster) 행성 2개 안착
+  - paragraph: 나의 중심별과 인연들이 태동하는 작은 성단입니다.
+  - paragraph: 행성 3개 수집 시 '나선 은하'로 진화!
+  - heading "나의 은하에 모인 10대 수호 정령 (2/10)" [level=4]
+  - text: 갑 (양)
+  - paragraph: 갑목
+  - paragraph: 곧게 자라는 숲의 기운
+  - text: "#우직함 을 (음)"
+  - paragraph: 을목
+  - paragraph: 유연하게 뻗는 가지의 기운
+  - text: "#유연함 병 (양)"
+  - paragraph: 미발견 정령
+  - paragraph: 친구 초대 필요
+  - text: "??? 정 (음)"
+  - paragraph: 미발견 정령
+  - paragraph: 친구 초대 필요
+  - text: "??? 무 (양)"
+  - paragraph: 미발견 정령
+  - paragraph: 친구 초대 필요
+  - text: "??? 기 (음)"
+  - paragraph: 미발견 정령
+  - paragraph: 친구 초대 필요
+  - text: "??? 경 (양)"
+  - paragraph: 미발견 정령
+  - paragraph: 친구 초대 필요
+  - text: "??? 신 (음)"
+  - paragraph: 미발견 정령
+  - paragraph: 친구 초대 필요
+  - text: "??? 임 (양)"
+  - paragraph: 미발견 정령
+  - paragraph: 친구 초대 필요
+  - text: "??? 계 (음)"
+  - paragraph: 미발견 정령
+  - paragraph: 친구 초대 필요
+  - text: "???"

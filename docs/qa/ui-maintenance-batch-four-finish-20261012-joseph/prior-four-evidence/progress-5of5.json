@@ -1,0 +1,169 @@
+{
+  "status": "PASS_FIVE_NEW_BATCH4_UI_FIXES_AWAITING_BATCH_GATES",
+  "at_utc": "2026-10-11T05:10:36.369Z",
+  "branch": "fix/ui-maintenance-batch-four-20261011-joseph",
+  "basis": "0209c23fe04a0ef60c916a16d6e8002ae65693dd",
+  "validated_new_fix_count": 5,
+  "commit_batch_target": 5,
+  "fixes": [
+    {
+      "number": 1,
+      "id": "manse-field-label-association",
+      "group": "labels",
+      "files": [
+        {
+          "file": "app/manse/page.tsx",
+          "before_sha256": "69059f05bd8a6014e72905927d592855929f2b10868baed1cc1ec41dc1f5b0cc",
+          "after_sha256": "3875530ebd4aefcdecb23a4048e8c6bf777395bd698d59a8caf710febdb271da",
+          "inverse_native_bytes_verified": true
+        }
+      ],
+      "change": "Associate all five visible Manse labels with their existing inputs so native accessible names and label clicks work; preserve values, optional name and normal calculation display.",
+      "before_reproduction": {
+        "passed": 2,
+        "failed": 4
+      },
+      "after_focused_verification": {
+        "passed": 6,
+        "failed": 0
+      },
+      "browser": "154.0.8037.98",
+      "viewports": [
+        "390x844",
+        "1440x1000"
+      ],
+      "native_pointer_and_keyboard": true,
+      "physical_screen_reader_tested": false,
+      "manual_dom_events": 0,
+      "proof": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/item1/browser-results.json"
+    },
+    {
+      "number": 2,
+      "id": "manse-birth-required-field-focus",
+      "group": "required",
+      "files": [
+        {
+          "file": "app/manse/page.tsx",
+          "before_sha256": "3875530ebd4aefcdecb23a4048e8c6bf777395bd698d59a8caf710febdb271da",
+          "after_sha256": "012b6e4c3aaa72c50d2873ebbdbb6b5b549c9eb62dc77076f892b96298b76140",
+          "inverse_native_bytes_verified": true
+        }
+      ],
+      "change": "Require birth year/month/day and enabled known-hour input before submit; focus the blank field and retain the last displayed reading. Existing strict parser and calculation stay unchanged; disabled unknown-hour remains valid.",
+      "before_reproduction": {
+        "passed": 4,
+        "failed": 8
+      },
+      "after_focused_verification": {
+        "passed": 12,
+        "failed": 0
+      },
+      "browser": "154.0.8037.98",
+      "viewports": [
+        "390x844",
+        "1440x1000"
+      ],
+      "native_pointer_and_keyboard": true,
+      "physical_screen_reader_tested": false,
+      "manual_dom_events": 0,
+      "proof": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/item2/browser-results.json"
+    },
+    {
+      "number": 3,
+      "id": "saved-detail-render-shape",
+      "group": "detail",
+      "files": [
+        {
+          "file": "app/saved/page.tsx",
+          "before_sha256": "0d86e8fec1257881c16e841a6ce1aca3c48a7fcd6066388e56bd2b33fb19f4fc",
+          "after_sha256": "378572d7489980372ed6e3558c938f76ebcb5f1f63e0dce33b362835dccbcf09",
+          "inverse_native_bytes_verified": true
+        }
+      ],
+      "change": "Validate only fields actually rendered by FortuneCard before storing a correct-ID detail response; broken analysis/elements/sections/metaphor/advice reach the existing retryable error. Preserve complete and legacy unknown-hour/no-solar-date readings and existing ID/list/cache/cancellation checks.",
+      "before_reproduction": {
+        "passed": 4,
+        "failed": 12
+      },
+      "after_focused_verification": {
+        "passed": 16,
+        "failed": 0
+      },
+      "browser": "154.0.8037.98",
+      "viewports": [
+        "390x844",
+        "1440x1000"
+      ],
+      "native_pointer_and_keyboard": true,
+      "physical_screen_reader_tested": false,
+      "manual_dom_events": 0,
+      "proof": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/item3/browser-results.json"
+    },
+    {
+      "number": 4,
+      "id": "pokedex-named-modal-semantics",
+      "group": "pokedex",
+      "files": [
+        {
+          "file": "components/planet/GalaxyPokedexModal.tsx",
+          "before_sha256": "3606a887f5781959e52b833a0eea63a718c7348b66bef472eac336eb1fd0bc85",
+          "after_sha256": "f57f22eec3459b88ac70a51f24b36fae184b5269af18470f85717e6a7c6529b9",
+          "inverse_native_bytes_verified": true
+        }
+      ],
+      "change": "Expose the existing collection pane as a named modal dialog. Keep its current appearance, close control, focus handling and data/art unchanged; prior keyboard/close-name suites are not rerun.",
+      "before_reproduction": {
+        "passed": 2,
+        "failed": 4
+      },
+      "after_focused_verification": {
+        "passed": 6,
+        "failed": 0
+      },
+      "browser": "154.0.8037.98",
+      "viewports": [
+        "390x844",
+        "1440x1000"
+      ],
+      "native_pointer_and_keyboard": true,
+      "physical_screen_reader_tested": false,
+      "manual_dom_events": 0,
+      "proof": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/item4/browser-results.json"
+    },
+    {
+      "number": 5,
+      "id": "saju-create-result-id-type",
+      "group": "ack",
+      "files": [
+        {
+          "file": "components/SajuInputModal.tsx",
+          "before_sha256": "4787358979a2427fb9d55fd39933c2def54134e4532244876f8ab10e265e0748",
+          "after_sha256": "9b8f44d9225f7f3e60fae6282adeb0cd86a580f3da9ed4d1f7909af5d8072ec6",
+          "inverse_native_bytes_verified": true
+        }
+      ],
+      "change": "Require a nonempty string reading ID before invoking success, closing the draft or navigating after a successful create acknowledgement. Missing/null/numeric/empty IDs retain the draft and use the existing error path; prior HTTP/form/modal/provider behavior stays unchanged.",
+      "before_reproduction": {
+        "passed": 4,
+        "failed": 16
+      },
+      "after_focused_verification": {
+        "passed": 20,
+        "failed": 0
+      },
+      "browser": "154.0.8037.98",
+      "viewports": [
+        "390x844",
+        "1440x1000"
+      ],
+      "native_pointer_and_keyboard": true,
+      "physical_screen_reader_tested": false,
+      "manual_dom_events": 0,
+      "proof": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/item5/browser-results.json"
+    }
+  ],
+  "commit_created": false,
+  "push_performed": false,
+  "previous_completed_suites_rerun": 0,
+  "previous_completed_fixes_counted": 0
+}

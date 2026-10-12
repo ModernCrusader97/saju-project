@@ -1,0 +1,1922 @@
+{
+  "status": "FAIL",
+  "phase": "before-v1",
+  "at_utc": "2026-10-11T04:47:55.032Z",
+  "browser": "154.0.8037.98",
+  "products": {
+    "app/manse/page.tsx": "69059f05bd8a6014e72905927d592855929f2b10868baed1cc1ec41dc1f5b0cc",
+    "app/saved/page.tsx": "0d86e8fec1257881c16e841a6ce1aca3c48a7fcd6066388e56bd2b33fb19f4fc",
+    "components/planet/GalaxyPokedexModal.tsx": "3606a887f5781959e52b833a0eea63a718c7348b66bef472eac336eb1fd0bc85",
+    "components/SajuInputModal.tsx": "4787358979a2427fb9d55fd39933c2def54134e4532244876f8ab10e265e0748"
+  },
+  "harness_sha256": "4eab67261e8e971849c33c7009569edc25a0fff3c9985565549d7801b600038a",
+  "css_sha256": "4e2f086b3fd0c53e4e5729a49947310046f415c5e7aa7ab4e0428ef8d8dd50ca",
+  "passed": 12,
+  "failed": 48,
+  "groups": {
+    "labels": {
+      "passed": 0,
+      "failed": 6
+    },
+    "required": {
+      "passed": 4,
+      "failed": 8
+    },
+    "detail": {
+      "passed": 2,
+      "failed": 14
+    },
+    "pokedex": {
+      "passed": 2,
+      "failed": 4
+    },
+    "ack": {
+      "passed": 4,
+      "failed": 16
+    }
+  },
+  "checks": [
+    {
+      "group": "labels",
+      "name": "programmatic-names 390",
+      "pass": false,
+      "error": "locator.evaluate: Timeout 4000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('form').locator('label').filter({ hasText: '태어난 연도' }).filter({ hasNot: locator('input') }).first()\u001b[22m\n"
+    },
+    {
+      "group": "labels",
+      "name": "pointer-label-association 390",
+      "pass": false,
+      "error": "locator.click: Timeout 4000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('form').locator('label').filter({ hasText: '태어난 연도' }).filter({ hasNot: locator('input') }).first()\u001b[22m\n"
+    },
+    {
+      "group": "labels",
+      "name": "valid-control 390",
+      "pass": false,
+      "error": "locator.waitFor: Timeout 4000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('가상 만세 검증님의 상세 사주표', { exact: true }) to be visible\u001b[22m\n"
+    },
+    {
+      "group": "required",
+      "name": "empty-year 390",
+      "pass": false,
+      "error": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  {\n+   missing: false,\n+   required: false\n-   missing: true,\n-   required: true\n  }\n"
+    },
+    {
+      "group": "required",
+      "name": "empty-month 390",
+      "pass": false,
+      "error": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  {\n+   missing: false,\n+   required: false\n-   missing: true,\n-   required: true\n  }\n"
+    },
+    {
+      "group": "required",
+      "name": "empty-day 390",
+      "pass": false,
+      "error": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  {\n+   missing: false,\n+   required: false\n-   missing: true,\n-   required: true\n  }\n"
+    },
+    {
+      "group": "required",
+      "name": "empty-hour 390",
+      "pass": false,
+      "error": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  {\n+   missing: false,\n+   required: false\n-   missing: true,\n-   required: true\n  }\n"
+    },
+    {
+      "group": "required",
+      "name": "known-control 390",
+      "observed": {
+        "missing_before": null,
+        "focused_missing_input": false,
+        "prior_result_count": 1,
+        "result_count": 1,
+        "error_count": 0,
+        "hour_disabled": false,
+        "unknown_result_count": 0,
+        "synthetic_posts": 0,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "required",
+      "name": "unknown-control 390",
+      "observed": {
+        "missing_before": null,
+        "focused_missing_input": false,
+        "prior_result_count": 1,
+        "result_count": 1,
+        "error_count": 0,
+        "hour_disabled": true,
+        "unknown_result_count": 1,
+        "synthetic_posts": 0,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "detail",
+      "name": "missing-analysis 390",
+      "pass": false,
+      "error": "Broken nested card fields must reach retryable error instead of React render failure\n\n1 !== 0\n"
+    },
+    {
+      "group": "detail",
+      "name": "bad-elements 390",
+      "pass": false,
+      "error": "Broken nested card fields must reach retryable error instead of React render failure\n\n1 !== 0\n"
+    },
+    {
+      "group": "detail",
+      "name": "sections-object 390",
+      "pass": false,
+      "error": "Broken nested card fields must reach retryable error instead of React render failure\n\n1 !== 0\n"
+    },
+    {
+      "group": "detail",
+      "name": "null-section 390",
+      "pass": false,
+      "error": "Broken nested card fields must reach retryable error instead of React render failure\n\n1 !== 0\n"
+    },
+    {
+      "group": "detail",
+      "name": "bad-metaphor 390",
+      "pass": false,
+      "error": "Broken nested card fields must reach retryable error instead of React render failure\n\n1 !== 0\n"
+    },
+    {
+      "group": "detail",
+      "name": "bad-advice 390",
+      "pass": false,
+      "error": "Broken nested card fields must reach retryable error instead of React render failure\n\n1 !== 0\n"
+    },
+    {
+      "group": "detail",
+      "name": "valid-control 390",
+      "observed": {
+        "page_errors": [],
+        "alert_count": 0,
+        "alert_text": null,
+        "title_count": 1,
+        "detail_get_count": 1,
+        "synthetic_posts": 0
+      },
+      "pass": true
+    },
+    {
+      "group": "detail",
+      "name": "legacy-control 390",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\n0 !== 1\n"
+    },
+    {
+      "group": "pokedex",
+      "name": "empty-named 390",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\n0 !== 1\n"
+    },
+    {
+      "group": "pokedex",
+      "name": "collected-named 390",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\n0 !== 1\n"
+    },
+    {
+      "group": "pokedex",
+      "name": "pointer-control 390",
+      "observed": {
+        "native_named_modal_count": 0,
+        "role": null,
+        "aria_modal": null,
+        "generated_or_rendered_model": false,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "callback missing-id 390",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\n1 !== 0\n"
+    },
+    {
+      "group": "ack",
+      "name": "callback null-id 390",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\n1 !== 0\n"
+    },
+    {
+      "group": "ack",
+      "name": "callback number-id 390",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\n1 !== 0\n"
+    },
+    {
+      "group": "ack",
+      "name": "callback empty-id 390",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\n1 !== 0\n"
+    },
+    {
+      "group": "ack",
+      "name": "callback valid-control 390",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [],
+        "route": "/ack",
+        "query_id": null,
+        "callback_calls": 1,
+        "callback_id": "qa-batch4-created",
+        "dialog_count": 0,
+        "draft": null,
+        "submit_enabled": false,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "default missing-id 390",
+      "pass": false,
+      "error": "An invalid reading ID must retain the create draft\n\n'/saved' !== '/ack'\n"
+    },
+    {
+      "group": "ack",
+      "name": "default null-id 390",
+      "pass": false,
+      "error": "An invalid reading ID must retain the create draft\n\n'/saved' !== '/ack'\n"
+    },
+    {
+      "group": "ack",
+      "name": "default number-id 390",
+      "pass": false,
+      "error": "An invalid reading ID must retain the create draft\n\n'/saved' !== '/ack'\n"
+    },
+    {
+      "group": "ack",
+      "name": "default empty-id 390",
+      "pass": false,
+      "error": "An invalid reading ID must retain the create draft\n\n'/saved' !== '/ack'\n"
+    },
+    {
+      "group": "ack",
+      "name": "default valid-control 390",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [],
+        "route": "/saved",
+        "query_id": "qa-batch4-created",
+        "callback_calls": 0,
+        "callback_id": null,
+        "dialog_count": 0,
+        "draft": null,
+        "submit_enabled": false,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "labels",
+      "name": "programmatic-names 1440",
+      "pass": false,
+      "error": "locator.evaluate: Timeout 4000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('form').locator('label').filter({ hasText: '태어난 연도' }).filter({ hasNot: locator('input') }).first()\u001b[22m\n"
+    },
+    {
+      "group": "labels",
+      "name": "pointer-label-association 1440",
+      "pass": false,
+      "error": "locator.click: Timeout 4000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('form').locator('label').filter({ hasText: '태어난 연도' }).filter({ hasNot: locator('input') }).first()\u001b[22m\n"
+    },
+    {
+      "group": "labels",
+      "name": "valid-control 1440",
+      "pass": false,
+      "error": "locator.waitFor: Timeout 4000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('가상 만세 검증님의 상세 사주표', { exact: true }) to be visible\u001b[22m\n"
+    },
+    {
+      "group": "required",
+      "name": "empty-year 1440",
+      "pass": false,
+      "error": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  {\n+   missing: false,\n+   required: false\n-   missing: true,\n-   required: true\n  }\n"
+    },
+    {
+      "group": "required",
+      "name": "empty-month 1440",
+      "pass": false,
+      "error": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  {\n+   missing: false,\n+   required: false\n-   missing: true,\n-   required: true\n  }\n"
+    },
+    {
+      "group": "required",
+      "name": "empty-day 1440",
+      "pass": false,
+      "error": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  {\n+   missing: false,\n+   required: false\n-   missing: true,\n-   required: true\n  }\n"
+    },
+    {
+      "group": "required",
+      "name": "empty-hour 1440",
+      "pass": false,
+      "error": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  {\n+   missing: false,\n+   required: false\n-   missing: true,\n-   required: true\n  }\n"
+    },
+    {
+      "group": "required",
+      "name": "known-control 1440",
+      "observed": {
+        "missing_before": null,
+        "focused_missing_input": false,
+        "prior_result_count": 1,
+        "result_count": 1,
+        "error_count": 0,
+        "hour_disabled": false,
+        "unknown_result_count": 0,
+        "synthetic_posts": 0,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "required",
+      "name": "unknown-control 1440",
+      "observed": {
+        "missing_before": null,
+        "focused_missing_input": false,
+        "prior_result_count": 1,
+        "result_count": 1,
+        "error_count": 0,
+        "hour_disabled": true,
+        "unknown_result_count": 1,
+        "synthetic_posts": 0,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "detail",
+      "name": "missing-analysis 1440",
+      "pass": false,
+      "error": "Broken nested card fields must reach retryable error instead of React render failure\n\n1 !== 0\n"
+    },
+    {
+      "group": "detail",
+      "name": "bad-elements 1440",
+      "pass": false,
+      "error": "Broken nested card fields must reach retryable error instead of React render failure\n\n1 !== 0\n"
+    },
+    {
+      "group": "detail",
+      "name": "sections-object 1440",
+      "pass": false,
+      "error": "Broken nested card fields must reach retryable error instead of React render failure\n\n1 !== 0\n"
+    },
+    {
+      "group": "detail",
+      "name": "null-section 1440",
+      "pass": false,
+      "error": "Broken nested card fields must reach retryable error instead of React render failure\n\n1 !== 0\n"
+    },
+    {
+      "group": "detail",
+      "name": "bad-metaphor 1440",
+      "pass": false,
+      "error": "Broken nested card fields must reach retryable error instead of React render failure\n\n1 !== 0\n"
+    },
+    {
+      "group": "detail",
+      "name": "bad-advice 1440",
+      "pass": false,
+      "error": "Broken nested card fields must reach retryable error instead of React render failure\n\n1 !== 0\n"
+    },
+    {
+      "group": "detail",
+      "name": "valid-control 1440",
+      "observed": {
+        "page_errors": [],
+        "alert_count": 0,
+        "alert_text": null,
+        "title_count": 1,
+        "detail_get_count": 1,
+        "synthetic_posts": 0
+      },
+      "pass": true
+    },
+    {
+      "group": "detail",
+      "name": "legacy-control 1440",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\n0 !== 1\n"
+    },
+    {
+      "group": "pokedex",
+      "name": "empty-named 1440",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\n0 !== 1\n"
+    },
+    {
+      "group": "pokedex",
+      "name": "collected-named 1440",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\n0 !== 1\n"
+    },
+    {
+      "group": "pokedex",
+      "name": "pointer-control 1440",
+      "observed": {
+        "native_named_modal_count": 0,
+        "role": null,
+        "aria_modal": null,
+        "generated_or_rendered_model": false,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "callback missing-id 1440",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\n1 !== 0\n"
+    },
+    {
+      "group": "ack",
+      "name": "callback null-id 1440",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\n1 !== 0\n"
+    },
+    {
+      "group": "ack",
+      "name": "callback number-id 1440",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\n1 !== 0\n"
+    },
+    {
+      "group": "ack",
+      "name": "callback empty-id 1440",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\n1 !== 0\n"
+    },
+    {
+      "group": "ack",
+      "name": "callback valid-control 1440",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [],
+        "route": "/ack",
+        "query_id": null,
+        "callback_calls": 1,
+        "callback_id": "qa-batch4-created",
+        "dialog_count": 0,
+        "draft": null,
+        "submit_enabled": false,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "default missing-id 1440",
+      "pass": false,
+      "error": "An invalid reading ID must retain the create draft\n\n'/saved' !== '/ack'\n"
+    },
+    {
+      "group": "ack",
+      "name": "default null-id 1440",
+      "pass": false,
+      "error": "An invalid reading ID must retain the create draft\n\n'/saved' !== '/ack'\n"
+    },
+    {
+      "group": "ack",
+      "name": "default number-id 1440",
+      "pass": false,
+      "error": "An invalid reading ID must retain the create draft\n\n'/saved' !== '/ack'\n"
+    },
+    {
+      "group": "ack",
+      "name": "default empty-id 1440",
+      "pass": false,
+      "error": "An invalid reading ID must retain the create draft\n\n'/saved' !== '/ack'\n"
+    },
+    {
+      "group": "ack",
+      "name": "default valid-control 1440",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [],
+        "route": "/saved",
+        "query_id": "qa-batch4-created",
+        "callback_calls": 0,
+        "callback_id": null,
+        "dialog_count": 0,
+        "draft": null,
+        "submit_enabled": false,
+        "page_errors": []
+      },
+      "pass": true
+    }
+  ],
+  "observations": [
+    {
+      "group": "required",
+      "mode": "empty-year",
+      "width": 390,
+      "missing_before": {
+        "required": false,
+        "missing": false
+      },
+      "focused_missing_input": false,
+      "prior_result_count": 1,
+      "result_count": 0,
+      "error_count": 1,
+      "hour_disabled": false,
+      "unknown_result_count": 0,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "required",
+      "mode": "empty-month",
+      "width": 390,
+      "missing_before": {
+        "required": false,
+        "missing": false
+      },
+      "focused_missing_input": false,
+      "prior_result_count": 1,
+      "result_count": 0,
+      "error_count": 1,
+      "hour_disabled": false,
+      "unknown_result_count": 0,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "required",
+      "mode": "empty-day",
+      "width": 390,
+      "missing_before": {
+        "required": false,
+        "missing": false
+      },
+      "focused_missing_input": false,
+      "prior_result_count": 1,
+      "result_count": 0,
+      "error_count": 1,
+      "hour_disabled": false,
+      "unknown_result_count": 0,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "required",
+      "mode": "empty-hour",
+      "width": 390,
+      "missing_before": {
+        "required": false,
+        "missing": false
+      },
+      "focused_missing_input": false,
+      "prior_result_count": 1,
+      "result_count": 0,
+      "error_count": 1,
+      "hour_disabled": false,
+      "unknown_result_count": 0,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "required",
+      "mode": "known-control",
+      "width": 390,
+      "missing_before": null,
+      "focused_missing_input": false,
+      "prior_result_count": 1,
+      "result_count": 1,
+      "error_count": 0,
+      "hour_disabled": false,
+      "unknown_result_count": 0,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "required",
+      "mode": "unknown-control",
+      "width": 390,
+      "missing_before": null,
+      "focused_missing_input": false,
+      "prior_result_count": 1,
+      "result_count": 1,
+      "error_count": 0,
+      "hour_disabled": true,
+      "unknown_result_count": 1,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "detail",
+      "mode": "missing-analysis",
+      "width": 390,
+      "page_errors": [
+        "Cannot read properties of undefined (reading 'hourPillar')"
+      ],
+      "alert_count": 0,
+      "alert_text": null,
+      "title_count": 0,
+      "detail_get_count": 1,
+      "synthetic_posts": 0
+    },
+    {
+      "group": "detail",
+      "mode": "bad-elements",
+      "width": 390,
+      "page_errors": [
+        "Cannot read properties of null (reading 'wood')"
+      ],
+      "alert_count": 0,
+      "alert_text": null,
+      "title_count": 0,
+      "detail_get_count": 1,
+      "synthetic_posts": 0
+    },
+    {
+      "group": "detail",
+      "mode": "sections-object",
+      "width": 390,
+      "page_errors": [
+        "fortune.sections.map is not a function"
+      ],
+      "alert_count": 0,
+      "alert_text": null,
+      "title_count": 0,
+      "detail_get_count": 1,
+      "synthetic_posts": 0
+    },
+    {
+      "group": "detail",
+      "mode": "null-section",
+      "width": 390,
+      "page_errors": [
+        "Cannot read properties of null (reading 'title')"
+      ],
+      "alert_count": 0,
+      "alert_text": null,
+      "title_count": 0,
+      "detail_get_count": 1,
+      "synthetic_posts": 0
+    },
+    {
+      "group": "detail",
+      "mode": "bad-metaphor",
+      "width": 390,
+      "page_errors": [
+        "Cannot read properties of null (reading 'coreTitle')"
+      ],
+      "alert_count": 0,
+      "alert_text": null,
+      "title_count": 0,
+      "detail_get_count": 1,
+      "synthetic_posts": 0
+    },
+    {
+      "group": "detail",
+      "mode": "bad-advice",
+      "width": 390,
+      "page_errors": [
+        "Cannot read properties of null (reading 'color')"
+      ],
+      "alert_count": 0,
+      "alert_text": null,
+      "title_count": 0,
+      "detail_get_count": 1,
+      "synthetic_posts": 0
+    },
+    {
+      "group": "detail",
+      "mode": "valid-control",
+      "width": 390,
+      "page_errors": [],
+      "alert_count": 0,
+      "alert_text": null,
+      "title_count": 1,
+      "detail_get_count": 1,
+      "synthetic_posts": 0
+    },
+    {
+      "group": "detail",
+      "mode": "legacy-control",
+      "width": 390,
+      "page_errors": [],
+      "alert_count": 0,
+      "alert_text": null,
+      "title_count": 1,
+      "detail_get_count": 1,
+      "synthetic_posts": 0
+    },
+    {
+      "group": "pokedex",
+      "mode": "empty-named",
+      "width": 390,
+      "native_named_modal_count": 0,
+      "role": null,
+      "aria_modal": null,
+      "generated_or_rendered_model": false,
+      "page_errors": []
+    },
+    {
+      "group": "pokedex",
+      "mode": "collected-named",
+      "width": 390,
+      "native_named_modal_count": 0,
+      "role": null,
+      "aria_modal": null,
+      "generated_or_rendered_model": false,
+      "page_errors": []
+    },
+    {
+      "group": "pokedex",
+      "mode": "pointer-control",
+      "width": 390,
+      "native_named_modal_count": 0,
+      "role": null,
+      "aria_modal": null,
+      "generated_or_rendered_model": false,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "callback-missing-id",
+      "width": 390,
+      "synthetic_posts": 1,
+      "alerts": [],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 1,
+      "dialog_count": 0,
+      "draft": null,
+      "submit_enabled": false,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "callback-null-id",
+      "width": 390,
+      "synthetic_posts": 1,
+      "alerts": [],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 1,
+      "callback_id": null,
+      "dialog_count": 0,
+      "draft": null,
+      "submit_enabled": false,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "callback-number-id",
+      "width": 390,
+      "synthetic_posts": 1,
+      "alerts": [],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 1,
+      "callback_id": 123,
+      "dialog_count": 0,
+      "draft": null,
+      "submit_enabled": false,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "callback-empty-id",
+      "width": 390,
+      "synthetic_posts": 1,
+      "alerts": [],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 1,
+      "callback_id": "",
+      "dialog_count": 0,
+      "draft": null,
+      "submit_enabled": false,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "callback-valid-control",
+      "width": 390,
+      "synthetic_posts": 1,
+      "alerts": [],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 1,
+      "callback_id": "qa-batch4-created",
+      "dialog_count": 0,
+      "draft": null,
+      "submit_enabled": false,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "default-missing-id",
+      "width": 390,
+      "synthetic_posts": 1,
+      "alerts": [],
+      "route": "/saved",
+      "query_id": "undefined",
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 0,
+      "draft": null,
+      "submit_enabled": false,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "default-null-id",
+      "width": 390,
+      "synthetic_posts": 1,
+      "alerts": [],
+      "route": "/saved",
+      "query_id": "null",
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 0,
+      "draft": null,
+      "submit_enabled": false,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "default-number-id",
+      "width": 390,
+      "synthetic_posts": 1,
+      "alerts": [],
+      "route": "/saved",
+      "query_id": "123",
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 0,
+      "draft": null,
+      "submit_enabled": false,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "default-empty-id",
+      "width": 390,
+      "synthetic_posts": 1,
+      "alerts": [],
+      "route": "/saved",
+      "query_id": "",
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 0,
+      "draft": null,
+      "submit_enabled": false,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "default-valid-control",
+      "width": 390,
+      "synthetic_posts": 1,
+      "alerts": [],
+      "route": "/saved",
+      "query_id": "qa-batch4-created",
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 0,
+      "draft": null,
+      "submit_enabled": false,
+      "page_errors": []
+    },
+    {
+      "group": "required",
+      "mode": "empty-year",
+      "width": 1440,
+      "missing_before": {
+        "required": false,
+        "missing": false
+      },
+      "focused_missing_input": false,
+      "prior_result_count": 1,
+      "result_count": 0,
+      "error_count": 1,
+      "hour_disabled": false,
+      "unknown_result_count": 0,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "required",
+      "mode": "empty-month",
+      "width": 1440,
+      "missing_before": {
+        "required": false,
+        "missing": false
+      },
+      "focused_missing_input": false,
+      "prior_result_count": 1,
+      "result_count": 0,
+      "error_count": 1,
+      "hour_disabled": false,
+      "unknown_result_count": 0,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "required",
+      "mode": "empty-day",
+      "width": 1440,
+      "missing_before": {
+        "required": false,
+        "missing": false
+      },
+      "focused_missing_input": false,
+      "prior_result_count": 1,
+      "result_count": 0,
+      "error_count": 1,
+      "hour_disabled": false,
+      "unknown_result_count": 0,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "required",
+      "mode": "empty-hour",
+      "width": 1440,
+      "missing_before": {
+        "required": false,
+        "missing": false
+      },
+      "focused_missing_input": false,
+      "prior_result_count": 1,
+      "result_count": 0,
+      "error_count": 1,
+      "hour_disabled": false,
+      "unknown_result_count": 0,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "required",
+      "mode": "known-control",
+      "width": 1440,
+      "missing_before": null,
+      "focused_missing_input": false,
+      "prior_result_count": 1,
+      "result_count": 1,
+      "error_count": 0,
+      "hour_disabled": false,
+      "unknown_result_count": 0,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "required",
+      "mode": "unknown-control",
+      "width": 1440,
+      "missing_before": null,
+      "focused_missing_input": false,
+      "prior_result_count": 1,
+      "result_count": 1,
+      "error_count": 0,
+      "hour_disabled": true,
+      "unknown_result_count": 1,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "detail",
+      "mode": "missing-analysis",
+      "width": 1440,
+      "page_errors": [
+        "Cannot read properties of undefined (reading 'hourPillar')"
+      ],
+      "alert_count": 0,
+      "alert_text": null,
+      "title_count": 0,
+      "detail_get_count": 1,
+      "synthetic_posts": 0
+    },
+    {
+      "group": "detail",
+      "mode": "bad-elements",
+      "width": 1440,
+      "page_errors": [
+        "Cannot read properties of null (reading 'wood')"
+      ],
+      "alert_count": 0,
+      "alert_text": null,
+      "title_count": 0,
+      "detail_get_count": 1,
+      "synthetic_posts": 0
+    },
+    {
+      "group": "detail",
+      "mode": "sections-object",
+      "width": 1440,
+      "page_errors": [
+        "fortune.sections.map is not a function"
+      ],
+      "alert_count": 0,
+      "alert_text": null,
+      "title_count": 0,
+      "detail_get_count": 1,
+      "synthetic_posts": 0
+    },
+    {
+      "group": "detail",
+      "mode": "null-section",
+      "width": 1440,
+      "page_errors": [
+        "Cannot read properties of null (reading 'title')"
+      ],
+      "alert_count": 0,
+      "alert_text": null,
+      "title_count": 0,
+      "detail_get_count": 1,
+      "synthetic_posts": 0
+    },
+    {
+      "group": "detail",
+      "mode": "bad-metaphor",
+      "width": 1440,
+      "page_errors": [
+        "Cannot read properties of null (reading 'coreTitle')"
+      ],
+      "alert_count": 0,
+      "alert_text": null,
+      "title_count": 0,
+      "detail_get_count": 1,
+      "synthetic_posts": 0
+    },
+    {
+      "group": "detail",
+      "mode": "bad-advice",
+      "width": 1440,
+      "page_errors": [
+        "Cannot read properties of null (reading 'color')"
+      ],
+      "alert_count": 0,
+      "alert_text": null,
+      "title_count": 0,
+      "detail_get_count": 1,
+      "synthetic_posts": 0
+    },
+    {
+      "group": "detail",
+      "mode": "valid-control",
+      "width": 1440,
+      "page_errors": [],
+      "alert_count": 0,
+      "alert_text": null,
+      "title_count": 1,
+      "detail_get_count": 1,
+      "synthetic_posts": 0
+    },
+    {
+      "group": "detail",
+      "mode": "legacy-control",
+      "width": 1440,
+      "page_errors": [],
+      "alert_count": 0,
+      "alert_text": null,
+      "title_count": 1,
+      "detail_get_count": 1,
+      "synthetic_posts": 0
+    },
+    {
+      "group": "pokedex",
+      "mode": "empty-named",
+      "width": 1440,
+      "native_named_modal_count": 0,
+      "role": null,
+      "aria_modal": null,
+      "generated_or_rendered_model": false,
+      "page_errors": []
+    },
+    {
+      "group": "pokedex",
+      "mode": "collected-named",
+      "width": 1440,
+      "native_named_modal_count": 0,
+      "role": null,
+      "aria_modal": null,
+      "generated_or_rendered_model": false,
+      "page_errors": []
+    },
+    {
+      "group": "pokedex",
+      "mode": "pointer-control",
+      "width": 1440,
+      "native_named_modal_count": 0,
+      "role": null,
+      "aria_modal": null,
+      "generated_or_rendered_model": false,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "callback-missing-id",
+      "width": 1440,
+      "synthetic_posts": 1,
+      "alerts": [],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 1,
+      "dialog_count": 0,
+      "draft": null,
+      "submit_enabled": false,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "callback-null-id",
+      "width": 1440,
+      "synthetic_posts": 1,
+      "alerts": [],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 1,
+      "callback_id": null,
+      "dialog_count": 0,
+      "draft": null,
+      "submit_enabled": false,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "callback-number-id",
+      "width": 1440,
+      "synthetic_posts": 1,
+      "alerts": [],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 1,
+      "callback_id": 123,
+      "dialog_count": 0,
+      "draft": null,
+      "submit_enabled": false,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "callback-empty-id",
+      "width": 1440,
+      "synthetic_posts": 1,
+      "alerts": [],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 1,
+      "callback_id": "",
+      "dialog_count": 0,
+      "draft": null,
+      "submit_enabled": false,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "callback-valid-control",
+      "width": 1440,
+      "synthetic_posts": 1,
+      "alerts": [],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 1,
+      "callback_id": "qa-batch4-created",
+      "dialog_count": 0,
+      "draft": null,
+      "submit_enabled": false,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "default-missing-id",
+      "width": 1440,
+      "synthetic_posts": 1,
+      "alerts": [],
+      "route": "/saved",
+      "query_id": "undefined",
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 0,
+      "draft": null,
+      "submit_enabled": false,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "default-null-id",
+      "width": 1440,
+      "synthetic_posts": 1,
+      "alerts": [],
+      "route": "/saved",
+      "query_id": "null",
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 0,
+      "draft": null,
+      "submit_enabled": false,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "default-number-id",
+      "width": 1440,
+      "synthetic_posts": 1,
+      "alerts": [],
+      "route": "/saved",
+      "query_id": "123",
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 0,
+      "draft": null,
+      "submit_enabled": false,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "default-empty-id",
+      "width": 1440,
+      "synthetic_posts": 1,
+      "alerts": [],
+      "route": "/saved",
+      "query_id": "",
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 0,
+      "draft": null,
+      "submit_enabled": false,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "default-valid-control",
+      "width": 1440,
+      "synthetic_posts": 1,
+      "alerts": [],
+      "route": "/saved",
+      "query_id": "qa-batch4-created",
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 0,
+      "draft": null,
+      "submit_enabled": false,
+      "page_errors": []
+    }
+  ],
+  "page_errors": [
+    {
+      "group": "detail",
+      "mode": "missing-analysis",
+      "width": 390,
+      "error": "Cannot read properties of undefined (reading 'hourPillar')"
+    },
+    {
+      "group": "detail",
+      "mode": "bad-elements",
+      "width": 390,
+      "error": "Cannot read properties of null (reading 'wood')"
+    },
+    {
+      "group": "detail",
+      "mode": "sections-object",
+      "width": 390,
+      "error": "fortune.sections.map is not a function"
+    },
+    {
+      "group": "detail",
+      "mode": "null-section",
+      "width": 390,
+      "error": "Cannot read properties of null (reading 'title')"
+    },
+    {
+      "group": "detail",
+      "mode": "bad-metaphor",
+      "width": 390,
+      "error": "Cannot read properties of null (reading 'coreTitle')"
+    },
+    {
+      "group": "detail",
+      "mode": "bad-advice",
+      "width": 390,
+      "error": "Cannot read properties of null (reading 'color')"
+    },
+    {
+      "group": "detail",
+      "mode": "missing-analysis",
+      "width": 1440,
+      "error": "Cannot read properties of undefined (reading 'hourPillar')"
+    },
+    {
+      "group": "detail",
+      "mode": "bad-elements",
+      "width": 1440,
+      "error": "Cannot read properties of null (reading 'wood')"
+    },
+    {
+      "group": "detail",
+      "mode": "sections-object",
+      "width": 1440,
+      "error": "fortune.sections.map is not a function"
+    },
+    {
+      "group": "detail",
+      "mode": "null-section",
+      "width": 1440,
+      "error": "Cannot read properties of null (reading 'title')"
+    },
+    {
+      "group": "detail",
+      "mode": "bad-metaphor",
+      "width": 1440,
+      "error": "Cannot read properties of null (reading 'coreTitle')"
+    },
+    {
+      "group": "detail",
+      "mode": "bad-advice",
+      "width": 1440,
+      "error": "Cannot read properties of null (reading 'color')"
+    }
+  ],
+  "console_errors": [],
+  "outbound_requests": [],
+  "synthetic_gets": [
+    {
+      "group": "detail",
+      "mode": "missing-analysis",
+      "width": 390,
+      "endpoint": "fixed-valid-summary"
+    },
+    {
+      "group": "detail",
+      "mode": "missing-analysis",
+      "width": 390,
+      "endpoint": "detail",
+      "attempt": 1
+    },
+    {
+      "group": "detail",
+      "mode": "bad-elements",
+      "width": 390,
+      "endpoint": "fixed-valid-summary"
+    },
+    {
+      "group": "detail",
+      "mode": "bad-elements",
+      "width": 390,
+      "endpoint": "detail",
+      "attempt": 1
+    },
+    {
+      "group": "detail",
+      "mode": "sections-object",
+      "width": 390,
+      "endpoint": "fixed-valid-summary"
+    },
+    {
+      "group": "detail",
+      "mode": "sections-object",
+      "width": 390,
+      "endpoint": "detail",
+      "attempt": 1
+    },
+    {
+      "group": "detail",
+      "mode": "null-section",
+      "width": 390,
+      "endpoint": "fixed-valid-summary"
+    },
+    {
+      "group": "detail",
+      "mode": "null-section",
+      "width": 390,
+      "endpoint": "detail",
+      "attempt": 1
+    },
+    {
+      "group": "detail",
+      "mode": "bad-metaphor",
+      "width": 390,
+      "endpoint": "fixed-valid-summary"
+    },
+    {
+      "group": "detail",
+      "mode": "bad-metaphor",
+      "width": 390,
+      "endpoint": "detail",
+      "attempt": 1
+    },
+    {
+      "group": "detail",
+      "mode": "bad-advice",
+      "width": 390,
+      "endpoint": "fixed-valid-summary"
+    },
+    {
+      "group": "detail",
+      "mode": "bad-advice",
+      "width": 390,
+      "endpoint": "detail",
+      "attempt": 1
+    },
+    {
+      "group": "detail",
+      "mode": "valid-control",
+      "width": 390,
+      "endpoint": "fixed-valid-summary"
+    },
+    {
+      "group": "detail",
+      "mode": "valid-control",
+      "width": 390,
+      "endpoint": "detail",
+      "attempt": 1
+    },
+    {
+      "group": "detail",
+      "mode": "legacy-control",
+      "width": 390,
+      "endpoint": "fixed-valid-summary"
+    },
+    {
+      "group": "detail",
+      "mode": "legacy-control",
+      "width": 390,
+      "endpoint": "detail",
+      "attempt": 1
+    },
+    {
+      "group": "detail",
+      "mode": "missing-analysis",
+      "width": 1440,
+      "endpoint": "fixed-valid-summary"
+    },
+    {
+      "group": "detail",
+      "mode": "missing-analysis",
+      "width": 1440,
+      "endpoint": "detail",
+      "attempt": 1
+    },
+    {
+      "group": "detail",
+      "mode": "bad-elements",
+      "width": 1440,
+      "endpoint": "fixed-valid-summary"
+    },
+    {
+      "group": "detail",
+      "mode": "bad-elements",
+      "width": 1440,
+      "endpoint": "detail",
+      "attempt": 1
+    },
+    {
+      "group": "detail",
+      "mode": "sections-object",
+      "width": 1440,
+      "endpoint": "fixed-valid-summary"
+    },
+    {
+      "group": "detail",
+      "mode": "sections-object",
+      "width": 1440,
+      "endpoint": "detail",
+      "attempt": 1
+    },
+    {
+      "group": "detail",
+      "mode": "null-section",
+      "width": 1440,
+      "endpoint": "fixed-valid-summary"
+    },
+    {
+      "group": "detail",
+      "mode": "null-section",
+      "width": 1440,
+      "endpoint": "detail",
+      "attempt": 1
+    },
+    {
+      "group": "detail",
+      "mode": "bad-metaphor",
+      "width": 1440,
+      "endpoint": "fixed-valid-summary"
+    },
+    {
+      "group": "detail",
+      "mode": "bad-metaphor",
+      "width": 1440,
+      "endpoint": "detail",
+      "attempt": 1
+    },
+    {
+      "group": "detail",
+      "mode": "bad-advice",
+      "width": 1440,
+      "endpoint": "fixed-valid-summary"
+    },
+    {
+      "group": "detail",
+      "mode": "bad-advice",
+      "width": 1440,
+      "endpoint": "detail",
+      "attempt": 1
+    },
+    {
+      "group": "detail",
+      "mode": "valid-control",
+      "width": 1440,
+      "endpoint": "fixed-valid-summary"
+    },
+    {
+      "group": "detail",
+      "mode": "valid-control",
+      "width": 1440,
+      "endpoint": "detail",
+      "attempt": 1
+    },
+    {
+      "group": "detail",
+      "mode": "legacy-control",
+      "width": 1440,
+      "endpoint": "fixed-valid-summary"
+    },
+    {
+      "group": "detail",
+      "mode": "legacy-control",
+      "width": 1440,
+      "endpoint": "detail",
+      "attempt": 1
+    }
+  ],
+  "synthetic_posts": [
+    {
+      "group": "ack",
+      "mode": "missing-id",
+      "width": 390,
+      "delivery": "callback",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "null-id",
+      "width": 390,
+      "delivery": "callback",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "number-id",
+      "width": 390,
+      "delivery": "callback",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "empty-id",
+      "width": 390,
+      "delivery": "callback",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "valid-control",
+      "width": 390,
+      "delivery": "callback",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "missing-id",
+      "width": 390,
+      "delivery": "default",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "null-id",
+      "width": 390,
+      "delivery": "default",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "number-id",
+      "width": 390,
+      "delivery": "default",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "empty-id",
+      "width": 390,
+      "delivery": "default",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "valid-control",
+      "width": 390,
+      "delivery": "default",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "missing-id",
+      "width": 1440,
+      "delivery": "callback",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "null-id",
+      "width": 1440,
+      "delivery": "callback",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "number-id",
+      "width": 1440,
+      "delivery": "callback",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "empty-id",
+      "width": 1440,
+      "delivery": "callback",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "valid-control",
+      "width": 1440,
+      "delivery": "callback",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "missing-id",
+      "width": 1440,
+      "delivery": "default",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "null-id",
+      "width": 1440,
+      "delivery": "default",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "number-id",
+      "width": 1440,
+      "delivery": "default",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "empty-id",
+      "width": 1440,
+      "delivery": "default",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "valid-control",
+      "width": 1440,
+      "delivery": "default",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    }
+  ],
+  "actual_backend_requests": 0,
+  "database_operations": 0,
+  "actual_ai_provider_calls": 0,
+  "user_clipboard_or_storage_access": 0,
+  "isolated_fictional_session_storage_only": true,
+  "native_pointer_and_keyboard": true,
+  "native_computed_accessibility_role_queries": true,
+  "physical_screen_reader_tested": false,
+  "manual_dom_events": 0,
+  "previous_completed_suites_rerun": 0,
+  "previous_completed_fixes_counted": 0,
+  "scope": "New Manse visible-label associations and native missing-field validation, actual Saved/FortuneCard nested render shape, Pokedex named modal semantics and Saju create acknowledgement ID type. Native Chrome production React/Tailwind at 390x844 and 1440x1000 with isolated fictional intercepted APIs. Fixed Next/host/navigation landing fixtures; actual card and calculation UI components. Pure calculation prepares fictional reading data; no calculation correctness claim. Prior gender/selection, saved list/ID/cache/cancellation, collection close/focus, Saju HTTP/date/dialog/send and all completed suites are unchanged/excluded. No real API/DB/Gemini/user storage/clipboard/auth/3D/hosted/physical device or screen-reader acceptance."
+}

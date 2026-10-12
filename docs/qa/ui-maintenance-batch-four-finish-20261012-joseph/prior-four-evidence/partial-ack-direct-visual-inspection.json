@@ -1,0 +1,9 @@
+{
+  "status": "ACTUAL_NATIVE_CHROME_ACK_INPUT_PRESERVATION_DIRECTLY_INSPECTED",
+  "file": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/item5/ack-callback-missing-id-390.png",
+  "bytes": 41041,
+  "observation": "Actual creation modal retains fictional name and birth inputs after a missing ID response; the native error alert was accepted before this PNG. The recorded alert and zero callback/navigation are verified in the accompanying JSON, not claimed visible in the PNG.",
+  "generated_image": false,
+  "model_render": false,
+  "physical_device_or_screen_reader_acceptance": false
+}

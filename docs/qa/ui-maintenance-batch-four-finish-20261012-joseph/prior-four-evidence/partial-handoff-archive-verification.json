@@ -1,0 +1,21 @@
+{
+  "status": "PASS_PARTIAL_4OF5_ZIP_ALL_ENTRIES_CRC_NATIVE_BYTES_AND_CORRECTED_COUNTS_VERIFIED",
+  "archive": "D:\\Codex\\Results\\SaJuUiBatchFour-20261011-Joseph\\SaJu_UI_Batch4_Partial_4of5_DuplicateReviewed_20261011_Joseph_0209c23f.zip",
+  "bytes": 13685568,
+  "sha256": "dcc289f84a1fd36d1d4b6d3a2f496982f8fd60b2474c590fcd1ea4a687789052",
+  "entries": 612,
+  "basis": "0209c23fe04a0ef60c916a16d6e8002ae65693dd",
+  "branch": "fix/ui-maintenance-batch-four-20261011-joseph",
+  "validated_new_fix_count": 4,
+  "excluded_duplicate_label_fix_count": 1,
+  "focused_raw_native_passes": 60,
+  "excluded_repeated_native_cases": 10,
+  "new_nonduplicate_cases_and_controls_passed": 50,
+  "source_native_entries": 4,
+  "source_inverse_to_exact_basis_bytes_verified": true,
+  "index_empty": true,
+  "commit_created": false,
+  "push_performed": false,
+  "full_five_fix_gates_not_run": true,
+  "raw_hosting_credentials_personal_db_profiles_dependencies_or_model_bytes_packaged": false
+}

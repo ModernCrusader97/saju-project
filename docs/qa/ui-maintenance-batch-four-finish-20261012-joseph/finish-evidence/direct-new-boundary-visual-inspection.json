@@ -1,0 +1,20 @@
+{
+  "status": "ACTUAL_NATIVE_UI_BEFORE_AFTER_PIXELS_DIRECTLY_INSPECTED",
+  "seen": [
+    {
+      "path": "before-whitespace/spaces-390.png",
+      "observation": "Actual pre-fix native UI shows an empty assistant bubble and cleared question after a whitespace reply.",
+      "bytes": 22376,
+      "sha256": "9cac0e9613ca42adb7dd99ae303e4387b3dfa9ccb148ff1281dd791f73b4c4f2"
+    },
+    {
+      "path": "after-whitespace/spaces-390.png",
+      "observation": "Actual post-fix native UI shows the existing retry/review error, retains the fictional question draft and blocks blind resend.",
+      "bytes": 26781,
+      "sha256": "e44ace01a8f77afc76fdd4ea4cbac09f93a9fa157f04a3e5e803c25acab8ad2e"
+    }
+  ],
+  "generated_image_or_model_render": false,
+  "physical_device_or_screen_reader_acceptance": false,
+  "normal_reply_formatting_verified_in_native_dom_and_not_trimmed": true
+}

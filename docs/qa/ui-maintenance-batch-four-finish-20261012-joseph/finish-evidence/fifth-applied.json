@@ -1,0 +1,32 @@
+{
+  "status": "APPLIED_ONE_NEW_BLANK_REPLY_GUARD_PENDING_NATIVE_FOCUSED_VERIFICATION",
+  "at_utc": "2026-10-12T01:49:38.357Z",
+  "id": "chat-whitespace-only-reply-acknowledgement",
+  "file": "components/AskDoryeongModal.tsx",
+  "before_sha256": "6fb49eaf5a63e29d38ee7d490995b1287765a7eb7bb766458b43dfb920417a6c",
+  "after_sha256": "e8839ad1c4656e5d54023307f4b51a57977d46e614d04ef80ec04a43bbc85948",
+  "before_bytes": 14546,
+  "after_bytes": 14553,
+  "replacement": {
+    "before": "typeof data.reply !== \"string\" || !data.reply) throw",
+    "after": "typeof data.reply !== \"string\" || !data.reply.trim()) throw",
+    "count": 1
+  },
+  "inverse_to_exact_prior_native_bytes": true,
+  "previous_four_source_bytes_unchanged": true,
+  "before_native_reproduction": {
+    "passed": 6,
+    "failed": 6,
+    "new_blank_cases_failed": 6,
+    "old_empty_and_normal_controls_passed": 6
+  },
+  "historical_string_type_guard_excluded_from_new_count": true,
+  "qa": {
+    "file": "scripts/qa/ui-maintenance-batch-four-chat-whitespace.mjs",
+    "sha256": "206d50d66dd73ac27b6da2035b7b527694fc769b01c4037d5aa6a7bf1075796f",
+    "bytes": 10470
+  },
+  "validated_new_fix_count": 4,
+  "commit_created": false,
+  "push_performed": false
+}

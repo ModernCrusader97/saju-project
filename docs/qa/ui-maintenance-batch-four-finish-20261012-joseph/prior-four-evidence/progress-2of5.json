@@ -1,0 +1,76 @@
+{
+  "status": "PASS_PARTIAL_BATCH4_NEW_FIXES_PRESERVED",
+  "at_utc": "2026-10-11T05:01:00.338Z",
+  "branch": "fix/ui-maintenance-batch-four-20261011-joseph",
+  "basis": "0209c23fe04a0ef60c916a16d6e8002ae65693dd",
+  "validated_new_fix_count": 2,
+  "commit_batch_target": 5,
+  "fixes": [
+    {
+      "number": 1,
+      "id": "manse-field-label-association",
+      "group": "labels",
+      "files": [
+        {
+          "file": "app/manse/page.tsx",
+          "before_sha256": "69059f05bd8a6014e72905927d592855929f2b10868baed1cc1ec41dc1f5b0cc",
+          "after_sha256": "3875530ebd4aefcdecb23a4048e8c6bf777395bd698d59a8caf710febdb271da",
+          "inverse_native_bytes_verified": true
+        }
+      ],
+      "change": "Associate all five visible Manse labels with their existing inputs so native accessible names and label clicks work; preserve values, optional name and normal calculation display.",
+      "before_reproduction": {
+        "passed": 2,
+        "failed": 4
+      },
+      "after_focused_verification": {
+        "passed": 6,
+        "failed": 0
+      },
+      "browser": "154.0.8037.98",
+      "viewports": [
+        "390x844",
+        "1440x1000"
+      ],
+      "native_pointer_and_keyboard": true,
+      "physical_screen_reader_tested": false,
+      "manual_dom_events": 0,
+      "proof": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/item1/browser-results.json"
+    },
+    {
+      "number": 2,
+      "id": "manse-birth-required-field-focus",
+      "group": "required",
+      "files": [
+        {
+          "file": "app/manse/page.tsx",
+          "before_sha256": "3875530ebd4aefcdecb23a4048e8c6bf777395bd698d59a8caf710febdb271da",
+          "after_sha256": "012b6e4c3aaa72c50d2873ebbdbb6b5b549c9eb62dc77076f892b96298b76140",
+          "inverse_native_bytes_verified": true
+        }
+      ],
+      "change": "Require birth year/month/day and enabled known-hour input before submit; focus the blank field and retain the last displayed reading. Existing strict parser and calculation stay unchanged; disabled unknown-hour remains valid.",
+      "before_reproduction": {
+        "passed": 4,
+        "failed": 8
+      },
+      "after_focused_verification": {
+        "passed": 12,
+        "failed": 0
+      },
+      "browser": "154.0.8037.98",
+      "viewports": [
+        "390x844",
+        "1440x1000"
+      ],
+      "native_pointer_and_keyboard": true,
+      "physical_screen_reader_tested": false,
+      "manual_dom_events": 0,
+      "proof": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/item2/browser-results.json"
+    }
+  ],
+  "commit_created": false,
+  "push_performed": false,
+  "previous_completed_suites_rerun": 0,
+  "previous_completed_fixes_counted": 0
+}

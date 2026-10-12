@@ -1,0 +1,535 @@
+{
+  "status": "PASS",
+  "phase": "item1",
+  "at_utc": "2026-10-11T04:58:04.703Z",
+  "browser": "154.0.8037.98",
+  "products": {
+    "app/manse/page.tsx": "3875530ebd4aefcdecb23a4048e8c6bf777395bd698d59a8caf710febdb271da",
+    "app/saved/page.tsx": "0d86e8fec1257881c16e841a6ce1aca3c48a7fcd6066388e56bd2b33fb19f4fc",
+    "components/planet/GalaxyPokedexModal.tsx": "3606a887f5781959e52b833a0eea63a718c7348b66bef472eac336eb1fd0bc85",
+    "components/SajuInputModal.tsx": "4787358979a2427fb9d55fd39933c2def54134e4532244876f8ab10e265e0748"
+  },
+  "harness_sha256": "62b1b984e00898637c5c54630023d9b7bad1ae3a92daf5443ee9647a8d26d4de",
+  "css_sha256": "4e2f086b3fd0c53e4e5729a49947310046f415c5e7aa7ab4e0428ef8d8dd50ca",
+  "passed": 6,
+  "failed": 0,
+  "groups": {
+    "labels": {
+      "passed": 6,
+      "failed": 0
+    }
+  },
+  "checks": [
+    {
+      "group": "labels",
+      "name": "programmatic-names 390",
+      "observed": {
+        "named": [
+          {
+            "label": "이름",
+            "native_named_count": 1,
+            "label_control": "manse-name",
+            "input_id": "manse-name",
+            "input_focused": true
+          },
+          {
+            "label": "태어난 년도",
+            "native_named_count": 1,
+            "label_control": "manse-year",
+            "input_id": "manse-year",
+            "input_focused": false
+          },
+          {
+            "label": "월",
+            "native_named_count": 1,
+            "label_control": "manse-month",
+            "input_id": "manse-month",
+            "input_focused": false
+          },
+          {
+            "label": "일",
+            "native_named_count": 1,
+            "label_control": "manse-day",
+            "input_id": "manse-day",
+            "input_focused": false
+          },
+          {
+            "label": "태어난 시 (0~23시):",
+            "native_named_count": 1,
+            "label_control": "manse-hour",
+            "input_id": "manse-hour",
+            "input_focused": false
+          }
+        ],
+        "values": [
+          "가상 만세 검증",
+          "1995",
+          "5",
+          "15",
+          "14"
+        ],
+        "result_count": 0,
+        "synthetic_posts": 0,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "labels",
+      "name": "pointer-label-association 390",
+      "observed": {
+        "named": [
+          {
+            "label": "이름",
+            "native_named_count": 1,
+            "label_control": "manse-name",
+            "input_id": "manse-name",
+            "input_focused": true
+          },
+          {
+            "label": "태어난 년도",
+            "native_named_count": 1,
+            "label_control": "manse-year",
+            "input_id": "manse-year",
+            "input_focused": true
+          },
+          {
+            "label": "월",
+            "native_named_count": 1,
+            "label_control": "manse-month",
+            "input_id": "manse-month",
+            "input_focused": true
+          },
+          {
+            "label": "일",
+            "native_named_count": 1,
+            "label_control": "manse-day",
+            "input_id": "manse-day",
+            "input_focused": true
+          },
+          {
+            "label": "태어난 시 (0~23시):",
+            "native_named_count": 1,
+            "label_control": "manse-hour",
+            "input_id": "manse-hour",
+            "input_focused": true
+          }
+        ],
+        "values": [
+          "가상 만세 검증",
+          "1995",
+          "5",
+          "15",
+          "14"
+        ],
+        "result_count": 0,
+        "synthetic_posts": 0,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "labels",
+      "name": "valid-control 390",
+      "observed": {
+        "named": [],
+        "values": [
+          "가상 만세 검증",
+          "1995",
+          "5",
+          "15",
+          "14"
+        ],
+        "result_count": 1,
+        "synthetic_posts": 0,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "labels",
+      "name": "programmatic-names 1440",
+      "observed": {
+        "named": [
+          {
+            "label": "이름",
+            "native_named_count": 1,
+            "label_control": "manse-name",
+            "input_id": "manse-name",
+            "input_focused": true
+          },
+          {
+            "label": "태어난 년도",
+            "native_named_count": 1,
+            "label_control": "manse-year",
+            "input_id": "manse-year",
+            "input_focused": false
+          },
+          {
+            "label": "월",
+            "native_named_count": 1,
+            "label_control": "manse-month",
+            "input_id": "manse-month",
+            "input_focused": false
+          },
+          {
+            "label": "일",
+            "native_named_count": 1,
+            "label_control": "manse-day",
+            "input_id": "manse-day",
+            "input_focused": false
+          },
+          {
+            "label": "태어난 시 (0~23시):",
+            "native_named_count": 1,
+            "label_control": "manse-hour",
+            "input_id": "manse-hour",
+            "input_focused": false
+          }
+        ],
+        "values": [
+          "가상 만세 검증",
+          "1995",
+          "5",
+          "15",
+          "14"
+        ],
+        "result_count": 0,
+        "synthetic_posts": 0,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "labels",
+      "name": "pointer-label-association 1440",
+      "observed": {
+        "named": [
+          {
+            "label": "이름",
+            "native_named_count": 1,
+            "label_control": "manse-name",
+            "input_id": "manse-name",
+            "input_focused": true
+          },
+          {
+            "label": "태어난 년도",
+            "native_named_count": 1,
+            "label_control": "manse-year",
+            "input_id": "manse-year",
+            "input_focused": true
+          },
+          {
+            "label": "월",
+            "native_named_count": 1,
+            "label_control": "manse-month",
+            "input_id": "manse-month",
+            "input_focused": true
+          },
+          {
+            "label": "일",
+            "native_named_count": 1,
+            "label_control": "manse-day",
+            "input_id": "manse-day",
+            "input_focused": true
+          },
+          {
+            "label": "태어난 시 (0~23시):",
+            "native_named_count": 1,
+            "label_control": "manse-hour",
+            "input_id": "manse-hour",
+            "input_focused": true
+          }
+        ],
+        "values": [
+          "가상 만세 검증",
+          "1995",
+          "5",
+          "15",
+          "14"
+        ],
+        "result_count": 0,
+        "synthetic_posts": 0,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "labels",
+      "name": "valid-control 1440",
+      "observed": {
+        "named": [],
+        "values": [
+          "가상 만세 검증",
+          "1995",
+          "5",
+          "15",
+          "14"
+        ],
+        "result_count": 1,
+        "synthetic_posts": 0,
+        "page_errors": []
+      },
+      "pass": true
+    }
+  ],
+  "observations": [
+    {
+      "group": "labels",
+      "mode": "programmatic-names",
+      "width": 390,
+      "named": [
+        {
+          "label": "이름",
+          "native_named_count": 1,
+          "label_control": "manse-name",
+          "input_id": "manse-name",
+          "input_focused": true
+        },
+        {
+          "label": "태어난 년도",
+          "native_named_count": 1,
+          "label_control": "manse-year",
+          "input_id": "manse-year",
+          "input_focused": false
+        },
+        {
+          "label": "월",
+          "native_named_count": 1,
+          "label_control": "manse-month",
+          "input_id": "manse-month",
+          "input_focused": false
+        },
+        {
+          "label": "일",
+          "native_named_count": 1,
+          "label_control": "manse-day",
+          "input_id": "manse-day",
+          "input_focused": false
+        },
+        {
+          "label": "태어난 시 (0~23시):",
+          "native_named_count": 1,
+          "label_control": "manse-hour",
+          "input_id": "manse-hour",
+          "input_focused": false
+        }
+      ],
+      "values": [
+        "가상 만세 검증",
+        "1995",
+        "5",
+        "15",
+        "14"
+      ],
+      "result_count": 0,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "labels",
+      "mode": "pointer-label-association",
+      "width": 390,
+      "named": [
+        {
+          "label": "이름",
+          "native_named_count": 1,
+          "label_control": "manse-name",
+          "input_id": "manse-name",
+          "input_focused": true
+        },
+        {
+          "label": "태어난 년도",
+          "native_named_count": 1,
+          "label_control": "manse-year",
+          "input_id": "manse-year",
+          "input_focused": true
+        },
+        {
+          "label": "월",
+          "native_named_count": 1,
+          "label_control": "manse-month",
+          "input_id": "manse-month",
+          "input_focused": true
+        },
+        {
+          "label": "일",
+          "native_named_count": 1,
+          "label_control": "manse-day",
+          "input_id": "manse-day",
+          "input_focused": true
+        },
+        {
+          "label": "태어난 시 (0~23시):",
+          "native_named_count": 1,
+          "label_control": "manse-hour",
+          "input_id": "manse-hour",
+          "input_focused": true
+        }
+      ],
+      "values": [
+        "가상 만세 검증",
+        "1995",
+        "5",
+        "15",
+        "14"
+      ],
+      "result_count": 0,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "labels",
+      "mode": "valid-control",
+      "width": 390,
+      "named": [],
+      "values": [
+        "가상 만세 검증",
+        "1995",
+        "5",
+        "15",
+        "14"
+      ],
+      "result_count": 1,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "labels",
+      "mode": "programmatic-names",
+      "width": 1440,
+      "named": [
+        {
+          "label": "이름",
+          "native_named_count": 1,
+          "label_control": "manse-name",
+          "input_id": "manse-name",
+          "input_focused": true
+        },
+        {
+          "label": "태어난 년도",
+          "native_named_count": 1,
+          "label_control": "manse-year",
+          "input_id": "manse-year",
+          "input_focused": false
+        },
+        {
+          "label": "월",
+          "native_named_count": 1,
+          "label_control": "manse-month",
+          "input_id": "manse-month",
+          "input_focused": false
+        },
+        {
+          "label": "일",
+          "native_named_count": 1,
+          "label_control": "manse-day",
+          "input_id": "manse-day",
+          "input_focused": false
+        },
+        {
+          "label": "태어난 시 (0~23시):",
+          "native_named_count": 1,
+          "label_control": "manse-hour",
+          "input_id": "manse-hour",
+          "input_focused": false
+        }
+      ],
+      "values": [
+        "가상 만세 검증",
+        "1995",
+        "5",
+        "15",
+        "14"
+      ],
+      "result_count": 0,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "labels",
+      "mode": "pointer-label-association",
+      "width": 1440,
+      "named": [
+        {
+          "label": "이름",
+          "native_named_count": 1,
+          "label_control": "manse-name",
+          "input_id": "manse-name",
+          "input_focused": true
+        },
+        {
+          "label": "태어난 년도",
+          "native_named_count": 1,
+          "label_control": "manse-year",
+          "input_id": "manse-year",
+          "input_focused": true
+        },
+        {
+          "label": "월",
+          "native_named_count": 1,
+          "label_control": "manse-month",
+          "input_id": "manse-month",
+          "input_focused": true
+        },
+        {
+          "label": "일",
+          "native_named_count": 1,
+          "label_control": "manse-day",
+          "input_id": "manse-day",
+          "input_focused": true
+        },
+        {
+          "label": "태어난 시 (0~23시):",
+          "native_named_count": 1,
+          "label_control": "manse-hour",
+          "input_id": "manse-hour",
+          "input_focused": true
+        }
+      ],
+      "values": [
+        "가상 만세 검증",
+        "1995",
+        "5",
+        "15",
+        "14"
+      ],
+      "result_count": 0,
+      "synthetic_posts": 0,
+      "page_errors": []
+    },
+    {
+      "group": "labels",
+      "mode": "valid-control",
+      "width": 1440,
+      "named": [],
+      "values": [
+        "가상 만세 검증",
+        "1995",
+        "5",
+        "15",
+        "14"
+      ],
+      "result_count": 1,
+      "synthetic_posts": 0,
+      "page_errors": []
+    }
+  ],
+  "page_errors": [],
+  "console_errors": [],
+  "outbound_requests": [],
+  "synthetic_gets": [],
+  "synthetic_posts": [],
+  "actual_backend_requests": 0,
+  "database_operations": 0,
+  "actual_ai_provider_calls": 0,
+  "user_clipboard_or_storage_access": 0,
+  "isolated_fictional_session_storage_only": true,
+  "native_pointer_and_keyboard": true,
+  "native_computed_accessibility_role_queries": true,
+  "physical_screen_reader_tested": false,
+  "manual_dom_events": 0,
+  "previous_completed_suites_rerun": 0,
+  "previous_completed_fixes_counted": 0,
+  "scope": "New Manse visible-label associations and native missing-field validation, actual Saved/FortuneCard nested render shape, Pokedex named modal semantics and Saju create acknowledgement ID type. Native Chrome production React/Tailwind at 390x844 and 1440x1000 with isolated fictional intercepted APIs. Fixed Next/host/navigation landing fixtures; actual card and calculation UI components. Pure calculation prepares fictional reading data; no calculation correctness claim. Prior gender/selection, saved list/ID/cache/cancellation, collection close/focus, Saju HTTP/date/dialog/send and all completed suites are unchanged/excluded. No real API/DB/Gemini/user storage/clipboard/auth/3D/hosted/physical device or screen-reader acceptance."
+}

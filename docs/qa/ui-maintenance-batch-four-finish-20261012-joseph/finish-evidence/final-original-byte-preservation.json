@@ -1,0 +1,14 @@
+{
+  "status": "PASS_ORIGINAL_CURRENT_WIP_CANONICAL_MODELS_PREVIOUS_EVIDENCE_AND_ZIP_BYTES_PRESERVED_AFTER_FINAL_GATES",
+  "current_source_files": 1801,
+  "previous_evidence_files": 757,
+  "canonical_files": 13,
+  "archive": {
+    "path": "D:\\Codex\\Results\\SaJuUiBatchFour-20261011-Joseph\\SaJu_UI_Batch4_Partial_4of5_DuplicateReviewed_20261011_Joseph_0209c23f.zip",
+    "bytes": 13685568,
+    "sha256": "dcc289f84a1fd36d1d4b6d3a2f496982f8fd60b2474c590fcd1ea4a687789052",
+    "entries": 612,
+    "crc_manifest_all_entry_bytes_verified": true
+  },
+  "install_source_reset_commit_push_or_deployment": false
+}

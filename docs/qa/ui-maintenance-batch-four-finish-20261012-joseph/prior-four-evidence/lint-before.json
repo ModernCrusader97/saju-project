@@ -1,0 +1,105 @@
+{
+  "status": "RECORDED_BASELINE_WITH_REAL_PRODUCT_FILENAMES",
+  "at_utc": "2026-10-11T04:49:22.303Z",
+  "records": [
+    {
+      "file": "app/manse/page.tsx",
+      "errorCount": 0,
+      "warningCount": 4,
+      "messages": [
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'Sparkles' is defined but never used.",
+          "line": 8,
+          "column": 20
+        },
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'User' is defined but never used.",
+          "line": 8,
+          "column": 30
+        },
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'Clock' is defined but never used.",
+          "line": 8,
+          "column": 36
+        },
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'Compass' is defined but never used.",
+          "line": 8,
+          "column": 43
+        }
+      ]
+    },
+    {
+      "file": "app/saved/page.tsx",
+      "errorCount": 0,
+      "warningCount": 0,
+      "messages": []
+    },
+    {
+      "file": "components/planet/GalaxyPokedexModal.tsx",
+      "errorCount": 0,
+      "warningCount": 1,
+      "messages": [
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'level' is assigned a value but never used.",
+          "line": 63,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "file": "components/SajuInputModal.tsx",
+      "errorCount": 2,
+      "warningCount": 3,
+      "messages": [
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'Loader2' is defined but never used.",
+          "line": 7,
+          "column": 23
+        },
+        {
+          "ruleId": "@next/next/no-location-assign-relative-destination",
+          "severity": 1,
+          "message": "Do not use `window.location.assign()` to navigate to internal Next.js pages. Use `redirect()` in the render phase, or `useRouter().push()` in Client Components' event handlers instead. See: https://nextjs.org/docs/messages/no-location-assign-relative-destination",
+          "line": 128,
+          "column": 11
+        },
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'err' is defined but never used.",
+          "line": 134,
+          "column": 14
+        },
+        {
+          "ruleId": "@typescript-eslint/no-explicit-any",
+          "severity": 2,
+          "message": "Unexpected any. Specify a different type.",
+          "line": 134,
+          "column": 19
+        },
+        {
+          "ruleId": "@typescript-eslint/no-explicit-any",
+          "severity": 2,
+          "message": "Unexpected any. Specify a different type.",
+          "line": 259,
+          "column": 63
+        }
+      ]
+    }
+  ],
+  "errors": 2,
+  "warnings": 8
+}

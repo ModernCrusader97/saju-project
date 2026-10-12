@@ -1,0 +1,27 @@
+{
+  "status": "CORRECTED_RAW_CAPTURED_PATCH_DIFF_ATTRIBUTE_WITH_PRODUCT_WHITESPACE_CHECKS_RETAINED",
+  "initial_check_exit": 2,
+  "failed_log_sha256": "efee6e0174fac6b8e67385b46903d701ec975acfe66a332c4b81364cd978bf5f",
+  "reason": "Original captured diff context contains single spaces on blank lines. Preserve its exact bytes and treat raw patch captures like raw logs/bundles/native snapshots for Git diff.",
+  "scope_attribute_before_sha256": "d793749cef617fc735787118e474ea0fe4077515745b1099c89e8a9aa39fe964",
+  "scope_attribute_after_sha256": "1ab431de430b29f88c4821f7abe3a029b2a2181bfcdc35648f23fabe2902eabd",
+  "preserved_original_patches": [
+    {
+      "file": "prior-four-evidence/historical-ui-overlap/labels-patch.patch",
+      "sha256": "be1dac2d14d7ef024e9d08ad08695ce8382578c0431bbf45a98278746cad1209",
+      "original_old_result_bytes_identical": true
+    },
+    {
+      "file": "prior-four-evidence/partial-uncommitted-products.patch",
+      "sha256": "6d267d7a8c87e8e01e94e30132002f5f8bda29ec954423c8a94eb725a325cefa",
+      "original_old_result_bytes_identical": true
+    }
+  ],
+  "products_and_qa_whitespace_checks_not_suppressed": true,
+  "lint_config_rules_or_suppressions_changed": false,
+  "product_source_changes": 0,
+  "commit_created": false,
+  "push_performed": false,
+  "own_existing_staged_paths_preserved": 1048,
+  "new_improvements_counted": 0
+}

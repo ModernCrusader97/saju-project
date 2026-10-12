@@ -1,0 +1,74 @@
+{
+  "status": "APPLIED_PENDING_FOCUSED_NATIVE_VERIFICATION",
+  "number": 1,
+  "id": "manse-field-label-association",
+  "group": "labels",
+  "files": [
+    {
+      "file": "app/manse/page.tsx",
+      "before_sha256": "69059f05bd8a6014e72905927d592855929f2b10868baed1cc1ec41dc1f5b0cc",
+      "after_sha256": "3875530ebd4aefcdecb23a4048e8c6bf777395bd698d59a8caf710febdb271da",
+      "before_bytes": 15046,
+      "after_bytes": 15316,
+      "before_snapshot": "changes/fix-1-0-before-native.tsx",
+      "after_snapshot": "changes/fix-1-0-after-native.tsx",
+      "replacements": [
+        {
+          "before": "<label className=\"text-[10.5px] font-bold text-doryeong-textMuted block mb-1\">이름</label>",
+          "after": "<label htmlFor=\"manse-name\" className=\"text-[10.5px] font-bold text-doryeong-textMuted block mb-1\">이름</label>",
+          "count": 1
+        },
+        {
+          "before": "type=\"text\"\r\n                value={name}",
+          "after": "type=\"text\"\r\n                id=\"manse-name\"\r\n                value={name}",
+          "count": 1
+        },
+        {
+          "before": "<label className=\"text-[10.5px] font-bold text-doryeong-textMuted block mb-1\">태어난 년도</label>",
+          "after": "<label htmlFor=\"manse-year\" className=\"text-[10.5px] font-bold text-doryeong-textMuted block mb-1\">태어난 년도</label>",
+          "count": 1
+        },
+        {
+          "before": "max={2100}\r\n                value={year}",
+          "after": "max={2100}\r\n                id=\"manse-year\"\r\n                value={year}",
+          "count": 1
+        },
+        {
+          "before": "<label className=\"text-[10.5px] font-bold text-doryeong-textMuted block mb-1\">월</label>",
+          "after": "<label htmlFor=\"manse-month\" className=\"text-[10.5px] font-bold text-doryeong-textMuted block mb-1\">월</label>",
+          "count": 1
+        },
+        {
+          "before": "max={12}\r\n                value={month}",
+          "after": "max={12}\r\n                id=\"manse-month\"\r\n                value={month}",
+          "count": 1
+        },
+        {
+          "before": "<label className=\"text-[10.5px] font-bold text-doryeong-textMuted block mb-1\">일</label>",
+          "after": "<label htmlFor=\"manse-day\" className=\"text-[10.5px] font-bold text-doryeong-textMuted block mb-1\">일</label>",
+          "count": 1
+        },
+        {
+          "before": "max={31}\r\n                value={day}",
+          "after": "max={31}\r\n                id=\"manse-day\"\r\n                value={day}",
+          "count": 1
+        },
+        {
+          "before": "<label className=\"text-[10.5px] font-bold text-doryeong-textMuted shrink-0\">태어난 시 (0~23시):</label>",
+          "after": "<label htmlFor=\"manse-hour\" className=\"text-[10.5px] font-bold text-doryeong-textMuted shrink-0\">태어난 시 (0~23시):</label>",
+          "count": 1
+        },
+        {
+          "before": "disabled={isUnknownTime}\r\n                value={hour}",
+          "after": "disabled={isUnknownTime}\r\n                id=\"manse-hour\"\r\n                value={hour}",
+          "count": 1
+        }
+      ],
+      "inverse_native_bytes_verified": true
+    }
+  ],
+  "expected": 6,
+  "change": "Associate all five visible Manse labels with their existing inputs so native accessible names and label clicks work; preserve values, optional name and normal calculation display.",
+  "at_utc": "2026-10-11T04:57:53.989Z",
+  "prior_completed_work_recounted": 0
+}

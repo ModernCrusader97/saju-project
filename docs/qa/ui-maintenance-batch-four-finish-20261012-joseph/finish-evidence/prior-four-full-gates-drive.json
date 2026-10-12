@@ -1,0 +1,19 @@
+{
+  "status": "PASS_PRIOR_FOUR_FULL_REGRESSION_TYPES_BUILD_RECEIPT_PRESERVED_NEW_OWNER_ONLY_DRIVE_FILE",
+  "id": "1PiIfvGqcSGdX4NBbQ4oBO0mU5yiZmsdG",
+  "url": "https://drive.google.com/file/d/1PiIfvGqcSGdX4NBbQ4oBO0mU5yiZmsdG/view?usp=drivesdk",
+  "local_path": "D:/Codex/Results/SaJuUiBatchFourVerificationFollowup-20261011-Joseph/verification-final-receipt.json",
+  "bytes": 7055,
+  "local_sha256": "eb6113cd4ce887d0e12b422562fd8280c8dab3ed5814a591be057222c275c969",
+  "shared": false,
+  "permissions": [
+    {
+      "type": "user",
+      "role": "owner"
+    }
+  ],
+  "owner_only": true,
+  "size_metadata_verified": true,
+  "remote_drive_bytes_independently_rehashed": false,
+  "older_four_fix_record_not_final_five_fix_result": true
+}

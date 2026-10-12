@@ -1,0 +1,123 @@
+{
+  "status": "PASS_NEW_SEMANTIC_WHITESPACE_BOUNDARY_NOT_HISTORICAL_STRING_TYPE_FIX",
+  "at_utc": "2026-10-12T01:46:53.350Z",
+  "file": "components/AskDoryeongModal.tsx",
+  "remote_tips_reviewed": 62,
+  "history_commits_touching_component": 10,
+  "distinct_source_versions": 8,
+  "missing_historical_tips": [],
+  "versions": [
+    {
+      "commit": "40f0c9a4b66bcae1c222d33d99cc6f6963e2f573",
+      "source_sha256": "02c43262476408d1b9c85ba6d54773434bf7c2c8d9410202667f522a261a9eb8",
+      "reply_conditions": [
+        {
+          "condition": "!res.ok || !data.success || !data.reply",
+          "throw_on_true": true
+        }
+      ],
+      "semantic_trim_guard_present": false
+    },
+    {
+      "commit": "9273191bf0630b45a2373460a36dd75648087e40",
+      "source_sha256": "8e799a4f2e45367f347b0a76baa7fba975b8a90daedc55bb40b5c562f6b724c0",
+      "reply_conditions": [
+        {
+          "condition": "data.success && data.reply",
+          "throw_on_true": false
+        }
+      ],
+      "semantic_trim_guard_present": false
+    },
+    {
+      "commit": "9cfbe47e373a79e88006405c8bc3c4298c62b6d8",
+      "source_sha256": "5900690d92e636975bdb30707b400269da197a3230e58b5ca70491195b1e3524",
+      "reply_conditions": [
+        {
+          "condition": "!res.ok || !data.success || !data.reply",
+          "throw_on_true": true
+        }
+      ],
+      "semantic_trim_guard_present": false
+    },
+    {
+      "commit": "f3223904b271c6fbc1d35f9960903e8320a9532b",
+      "source_sha256": "c0c748e980963bfe89f9921ffe0682fbce0d829836ac9e2ad62d60bdb39e0ae4",
+      "reply_conditions": [
+        {
+          "condition": "data.success && data.reply",
+          "throw_on_true": false
+        }
+      ],
+      "semantic_trim_guard_present": false
+    },
+    {
+      "commit": "37f9bab1f8480170ea64cd17232d7f07a301f7cd",
+      "source_sha256": "b3d1756a2844a022071d35f90936784155f6de156004e80a79beb06ab2389d66",
+      "reply_conditions": [
+        {
+          "condition": "!res.ok || !data.success || !data.reply",
+          "throw_on_true": true
+        }
+      ],
+      "semantic_trim_guard_present": false
+    },
+    {
+      "commit": "881e266336a54bd14fbd9979b1dc0f301a4506cb",
+      "source_sha256": "8b674b5cee79dbffcc31af4b7811c09c8ee62e12fef8e5e3e0526952ec1cba9b",
+      "reply_conditions": [
+        {
+          "condition": "!res.ok || !data.success || !data.reply",
+          "throw_on_true": true
+        }
+      ],
+      "semantic_trim_guard_present": false
+    },
+    {
+      "commit": "343e3c3ee2ca91f42eafe7e14fbae1b91c0e5893",
+      "source_sha256": "4918e2b59138dbeee2c04f1f47389418caa5181e08fca4620f63184f367a9b09",
+      "reply_conditions": [
+        {
+          "condition": "!res.ok || !data.success || typeof data.reply !== \"string\" || !data.reply",
+          "throw_on_true": true
+        }
+      ],
+      "semantic_trim_guard_present": false
+    },
+    {
+      "commit": "0209c23fe04a0ef60c916a16d6e8002ae65693dd",
+      "source_sha256": "8eb9fb0c7a378e752c993d8d4c7f04fa76f0ba7c276f4ebdf02690ccc0de187f",
+      "reply_conditions": [
+        {
+          "condition": "!res.ok || !data.success || typeof data.reply !== \"string\" || !data.reply",
+          "throw_on_true": true
+        }
+      ],
+      "semantic_trim_guard_present": false
+    }
+  ],
+  "prior_string_type_commit": "343e3c3ee2ca91f42eafe7e14fbae1b91c0e5893",
+  "prior_type_patch_sha256": "15ed1e1127b53697d1b986f596253004e1f76177e2b800b6d3100a2955615d7d",
+  "current_source_sha256": "6fb49eaf5a63e29d38ee7d490995b1287765a7eb7bb766458b43dfb920417a6c",
+  "examples": [
+    {
+      "reply_json": "\"   \"",
+      "historical_string_and_truthiness_guard_accepts": true,
+      "proposed_non_whitespace_guard_accepts": false
+    },
+    {
+      "reply_json": "\"\\t\\r\\n\\t\"",
+      "historical_string_and_truthiness_guard_accepts": true,
+      "proposed_non_whitespace_guard_accepts": false
+    },
+    {
+      "reply_json": "\" 　\\n\"",
+      "historical_string_and_truthiness_guard_accepts": true,
+      "proposed_non_whitespace_guard_accepts": false
+    }
+  ],
+  "scope": "Reject only replies whose ECMAScript trim result is empty. Previous type/empty-string/HTTP/history/focus/recovery changes are preserved and excluded from new improvement count. Plain replies and surrounding useful formatting remain byte-preserved in displayed response.",
+  "new_improvement_count_if_native_before_after_passes": 1,
+  "previous_label_analysis_elements_duplicates_counted": 0,
+  "implementation_applied": false
+}

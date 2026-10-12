@@ -1,0 +1,242 @@
+{
+  "status": "PASS_EXISTING_DIAGNOSTICS_PRESERVED_NO_NEW_PRODUCT_OR_QA_DIAGNOSTICS",
+  "scope": [
+    "app/manse/page.tsx",
+    "app/saved/page.tsx",
+    "components/planet/GalaxyPokedexModal.tsx",
+    "components/SajuInputModal.tsx",
+    "components/AskDoryeongModal.tsx",
+    "scripts/qa/ui-maintenance-batch-four-browser.mjs",
+    "scripts/qa/ui-maintenance-batch-four-chat-whitespace.mjs"
+  ],
+  "baseline": [
+    {
+      "file": "app/manse/page.tsx",
+      "errors": 0,
+      "warnings": 4,
+      "messages": [
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'Sparkles' is defined but never used.",
+          "line": 8,
+          "column": 20
+        },
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'User' is defined but never used.",
+          "line": 8,
+          "column": 30
+        },
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'Clock' is defined but never used.",
+          "line": 8,
+          "column": 36
+        },
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'Compass' is defined but never used.",
+          "line": 8,
+          "column": 43
+        }
+      ]
+    },
+    {
+      "file": "app/saved/page.tsx",
+      "errors": 0,
+      "warnings": 0,
+      "messages": []
+    },
+    {
+      "file": "components/planet/GalaxyPokedexModal.tsx",
+      "errors": 0,
+      "warnings": 1,
+      "messages": [
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'level' is assigned a value but never used.",
+          "line": 63,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "file": "components/SajuInputModal.tsx",
+      "errors": 2,
+      "warnings": 3,
+      "messages": [
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'Loader2' is defined but never used.",
+          "line": 7,
+          "column": 23
+        },
+        {
+          "ruleId": "@next/next/no-location-assign-relative-destination",
+          "severity": 1,
+          "message": "Do not use `window.location.assign()` to navigate to internal Next.js pages. Use `redirect()` in the render phase, or `useRouter().push()` in Client Components' event handlers instead. See: https://nextjs.org/docs/messages/no-location-assign-relative-destination",
+          "line": 129,
+          "column": 11
+        },
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'err' is defined but never used.",
+          "line": 135,
+          "column": 14
+        },
+        {
+          "ruleId": "@typescript-eslint/no-explicit-any",
+          "severity": 2,
+          "message": "Unexpected any. Specify a different type.",
+          "line": 135,
+          "column": 19
+        },
+        {
+          "ruleId": "@typescript-eslint/no-explicit-any",
+          "severity": 2,
+          "message": "Unexpected any. Specify a different type.",
+          "line": 260,
+          "column": 63
+        }
+      ]
+    },
+    {
+      "file": "components/AskDoryeongModal.tsx",
+      "errors": 0,
+      "warnings": 0,
+      "messages": []
+    }
+  ],
+  "current": [
+    {
+      "file": "app/manse/page.tsx",
+      "errors": 0,
+      "warnings": 4,
+      "messages": [
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'Sparkles' is defined but never used.",
+          "line": 8,
+          "column": 20
+        },
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'User' is defined but never used.",
+          "line": 8,
+          "column": 30
+        },
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'Clock' is defined but never used.",
+          "line": 8,
+          "column": 36
+        },
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'Compass' is defined but never used.",
+          "line": 8,
+          "column": 43
+        }
+      ]
+    },
+    {
+      "file": "app/saved/page.tsx",
+      "errors": 0,
+      "warnings": 0,
+      "messages": []
+    },
+    {
+      "file": "components/planet/GalaxyPokedexModal.tsx",
+      "errors": 0,
+      "warnings": 1,
+      "messages": [
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'level' is assigned a value but never used.",
+          "line": 63,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "file": "components/SajuInputModal.tsx",
+      "errors": 2,
+      "warnings": 3,
+      "messages": [
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'Loader2' is defined but never used.",
+          "line": 7,
+          "column": 23
+        },
+        {
+          "ruleId": "@next/next/no-location-assign-relative-destination",
+          "severity": 1,
+          "message": "Do not use `window.location.assign()` to navigate to internal Next.js pages. Use `redirect()` in the render phase, or `useRouter().push()` in Client Components' event handlers instead. See: https://nextjs.org/docs/messages/no-location-assign-relative-destination",
+          "line": 129,
+          "column": 11
+        },
+        {
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
+          "message": "'err' is defined but never used.",
+          "line": 135,
+          "column": 14
+        },
+        {
+          "ruleId": "@typescript-eslint/no-explicit-any",
+          "severity": 2,
+          "message": "Unexpected any. Specify a different type.",
+          "line": 135,
+          "column": 19
+        },
+        {
+          "ruleId": "@typescript-eslint/no-explicit-any",
+          "severity": 2,
+          "message": "Unexpected any. Specify a different type.",
+          "line": 260,
+          "column": 63
+        }
+      ]
+    },
+    {
+      "file": "components/AskDoryeongModal.tsx",
+      "errors": 0,
+      "warnings": 0,
+      "messages": []
+    },
+    {
+      "file": "scripts/qa/ui-maintenance-batch-four-browser.mjs",
+      "errors": 0,
+      "warnings": 0,
+      "messages": []
+    },
+    {
+      "file": "scripts/qa/ui-maintenance-batch-four-chat-whitespace.mjs",
+      "errors": 0,
+      "warnings": 0,
+      "messages": []
+    }
+  ],
+  "existing_errors": 2,
+  "existing_warnings": 8,
+  "new_errors": 0,
+  "new_warnings": 0,
+  "qa_errors": 0,
+  "qa_warnings": 0,
+  "rules_config_or_suppressions_changed": false,
+  "full_repository_lint_not_run": true
+}

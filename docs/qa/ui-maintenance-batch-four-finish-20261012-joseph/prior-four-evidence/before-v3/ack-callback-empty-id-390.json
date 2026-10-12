@@ -1,0 +1,12 @@
+{
+  "synthetic_posts": 1,
+  "alerts": [],
+  "route": "/ack",
+  "query_id": null,
+  "callback_calls": 1,
+  "callback_id": "",
+  "dialog_count": 0,
+  "draft": null,
+  "submit_enabled": false,
+  "page_errors": []
+}

@@ -1,0 +1,14 @@
+{
+  "synthetic_posts": 1,
+  "alerts": [
+    "풀이 중 문제가 발생했습니다."
+  ],
+  "route": "/ack",
+  "query_id": null,
+  "callback_calls": 0,
+  "callback_id": null,
+  "dialog_count": 1,
+  "draft": "가상 생성 검증",
+  "submit_enabled": true,
+  "page_errors": []
+}

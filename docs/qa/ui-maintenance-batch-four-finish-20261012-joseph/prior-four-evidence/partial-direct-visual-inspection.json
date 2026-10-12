@@ -1,0 +1,49 @@
+{
+  "status": "ACTUAL_NATIVE_CHROME_UI_SCREENSHOTS_DIRECTLY_INSPECTED_PARTIAL_WIP",
+  "physical_screen_reader_or_device_tested": false,
+  "actual_model_render": false,
+  "images_generated_modified_or_masked": false,
+  "seen": [
+    {
+      "file": "item1/labels-pointer-label-association-390.png",
+      "classification": "DUPLICATE_LABEL_CASE_EXCLUDED",
+      "observation": "Actual visible field focus after label click; this repeats the historical completed label association and is excluded.",
+      "sha256": "bae9e14c9d56111b63dad22d06cf3f7f15a07965b8f75ef770810d09d4f80f67",
+      "bytes": 75270
+    },
+    {
+      "file": "item2/required-empty-year-390.png",
+      "observation": "Chrome focuses the blank required year with its native validation bubble; previous displayed reading is retained.",
+      "sha256": "4c0beb86a87262a3967e21a8d716281cae8d094b40cb6080a183c3a7432c879a",
+      "bytes": 74945
+    },
+    {
+      "file": "item3/detail-missing-analysis-390.png",
+      "classification": "PAST_COMPLETED_BOUNDARY_EXCLUDED",
+      "observation": "Existing retryable error state; missing analysis is an overlap control.",
+      "sha256": "bd934952f8ead4378d446514ea74c2d9176062798f2b90ba2849c7b884a651e9",
+      "bytes": 11702
+    },
+    {
+      "file": "item3/detail-sections-object-390.png",
+      "classification": "NEW_SECTION_RENDER_BOUNDARY",
+      "observation": "Actual error panel and retry button instead of sections.map render failure.",
+      "sha256": "bd934952f8ead4378d446514ea74c2d9176062798f2b90ba2849c7b884a651e9",
+      "bytes": 11702
+    },
+    {
+      "file": "item3/detail-retry-sections-object-390.png",
+      "classification": "NEW_SECTION_RENDER_BOUNDARY_RETRY",
+      "observation": "After native keyboard retry the actual fictional reading, pillars, section, metaphor and advice are visible again.",
+      "sha256": "92df7e28e189406b5e4bbfbe4e818dd00d60f823319e6d0d1549ada6da3f7c34",
+      "bytes": 101244
+    },
+    {
+      "file": "item4/pokedex-empty-named-390.png",
+      "observation": "Actual existing empty collection modal; existing appearance and collected count are visible. No 3D render is shown.",
+      "sha256": "7efebbaf0f4965fb120308389770fbfe13715b3fa77a148e95308268b44c4ff5",
+      "bytes": 87145
+    }
+  ],
+  "evidence_scope": "390 and 1440 native interactions and reports exist, but only these named raw 390 captures were directly visually inspected. No final whole-batch 60-case regression/types/build/16-pair visual comparison was run after count correction."
+}

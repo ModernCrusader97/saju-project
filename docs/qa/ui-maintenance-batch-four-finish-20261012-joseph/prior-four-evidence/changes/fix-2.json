@@ -1,0 +1,44 @@
+{
+  "status": "APPLIED_PENDING_FOCUSED_NATIVE_VERIFICATION",
+  "number": 2,
+  "id": "manse-birth-required-field-focus",
+  "group": "required",
+  "files": [
+    {
+      "file": "app/manse/page.tsx",
+      "before_sha256": "3875530ebd4aefcdecb23a4048e8c6bf777395bd698d59a8caf710febdb271da",
+      "after_sha256": "012b6e4c3aaa72c50d2873ebbdbb6b5b549c9eb62dc77076f892b96298b76140",
+      "before_bytes": 15316,
+      "after_bytes": 15420,
+      "before_snapshot": "changes/fix-2-0-before-native.tsx",
+      "after_snapshot": "changes/fix-2-0-after-native.tsx",
+      "replacements": [
+        {
+          "before": "id=\"manse-year\"\r\n                value={year}",
+          "after": "id=\"manse-year\"\r\n                required\r\n                value={year}",
+          "count": 1
+        },
+        {
+          "before": "id=\"manse-month\"\r\n                value={month}",
+          "after": "id=\"manse-month\"\r\n                required\r\n                value={month}",
+          "count": 1
+        },
+        {
+          "before": "id=\"manse-day\"\r\n                value={day}",
+          "after": "id=\"manse-day\"\r\n                required\r\n                value={day}",
+          "count": 1
+        },
+        {
+          "before": "id=\"manse-hour\"\r\n                value={hour}",
+          "after": "id=\"manse-hour\"\r\n                required\r\n                value={hour}",
+          "count": 1
+        }
+      ],
+      "inverse_native_bytes_verified": true
+    }
+  ],
+  "expected": 12,
+  "change": "Require birth year/month/day and enabled known-hour input before submit; focus the blank field and retain the last displayed reading. Existing strict parser and calculation stay unchanged; disabled unknown-hour remains valid.",
+  "at_utc": "2026-10-11T05:00:43.392Z",
+  "prior_completed_work_recounted": 0
+}

@@ -1,0 +1,55 @@
+{
+  "status": "RECORDED_HARNESS_CONTROL_COPY_CORRECTION_WITH_UNCHANGED_NATIVE_PRODUCTS",
+  "at_utc": "2026-10-11T04:49:54.450Z",
+  "original_harness_sha256": "4eab67261e8e971849c33c7009569edc25a0fff3c9985565549d7801b600038a",
+  "corrected_harness_sha256": "a5fc1702a55267f4d15a6836050ef6bc65d30f213f77b4e45ff6c97cb2d4aa93",
+  "original_report": {
+    "passed": 12,
+    "failed": 48,
+    "page_errors": 12
+  },
+  "unexpected_control_failures": [
+    {
+      "group": "labels",
+      "name": "valid-control 390",
+      "pass": false,
+      "error": "locator.waitFor: Timeout 4000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('가상 만세 검증님의 상세 사주표', { exact: true }) to be visible\u001b[22m\n"
+    },
+    {
+      "group": "detail",
+      "name": "legacy-control 390",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\n0 !== 1\n"
+    },
+    {
+      "group": "labels",
+      "name": "valid-control 1440",
+      "pass": false,
+      "error": "locator.waitFor: Timeout 4000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByText('가상 만세 검증님의 상세 사주표', { exact: true }) to be visible\u001b[22m\n"
+    },
+    {
+      "group": "detail",
+      "name": "legacy-control 1440",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\n0 !== 1\n"
+    }
+  ],
+  "replacements": [
+    {
+      "before": "님의 상세 사주표",
+      "after": "님의 사주 원국표",
+      "count": 2,
+      "product_behavior_assertions_changed": false
+    },
+    {
+      "before": "예전 음력 저장본에는",
+      "after": "이전 음력 결과에는",
+      "count": 1,
+      "product_behavior_assertions_changed": false
+    }
+  ],
+  "product_native_bytes_identical_to_initial_checkpoint": true,
+  "old_harness_and_raw_fail_evidence_retained": true,
+  "validated_new_fix_count": 0,
+  "prior_completed_suites_rerun": 0
+}

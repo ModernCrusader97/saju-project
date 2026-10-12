@@ -1,0 +1,15 @@
+{
+  "status": "PASS_SOURCE_NATIVE_BYTES_AND_PRIVATE_DEPENDENCY_COPY_READY_NO_LINKS_BACK_TO_ORIGINAL",
+  "at_utc": "2026-10-11T05:59:18.506Z",
+  "repo": "D:/Codex/Work/SaJuUiOneBug-20261010-Joseph/repo",
+  "snapshot": "D:/Codex/Work/SaJuUiBatchFourVerificationFollowup-20261011-Joseph/repo",
+  "native_source_files": 1800,
+  "dependency_files_copied": 55906,
+  "dependency_bytes_copied": 852302738,
+  "dependency_links_created": 0,
+  "install_performed": false,
+  "source_or_existing_evidence_modified": false,
+  "build_output_root": "D:/Codex/Work/SaJuUiBatchFourVerificationFollowup-20261011-Joseph/repo",
+  "cache_profile_temp_roots": "D:/Codex/Scratch/SaJuUiBatchFourVerificationFollowup-20261011-Joseph",
+  "validation_count_remains": 4
+}

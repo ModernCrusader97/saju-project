@@ -1,0 +1,19 @@
+{
+  "draft": "가상 공백 응답 검증",
+  "draft_preserved": true,
+  "alert_count": 1,
+  "alert_text": [
+    "답변을 확인하지 못했어요. 질문은 입력란에 남겨두었어요. 중복 전송을 피하려면 대화 기록을 먼저 확인해 주세요.대화 기록 확인하기"
+  ],
+  "send_disabled": true,
+  "history_gets": 1,
+  "synthetic_posts": 1,
+  "bubble_contents": [
+    "가상 대화 검증님, 사주 풀이에서 궁금한 점을 질문해 주세요."
+  ],
+  "response_content_preserved_exactly": false,
+  "dialog_count": 1,
+  "page_errors": [],
+  "native_keyboard_send": true,
+  "request_was_whitespace_acknowledgement": false
+}

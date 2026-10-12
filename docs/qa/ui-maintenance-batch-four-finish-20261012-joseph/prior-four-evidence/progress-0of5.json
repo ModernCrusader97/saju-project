@@ -1,0 +1,60 @@
+{
+  "status": "PASS_SEPARATE_BATCH4_UI_BRANCH_ZERO_OF_FIVE",
+  "branch": "fix/ui-maintenance-batch-four-20261011-joseph",
+  "basis": "0209c23fe04a0ef60c916a16d6e8002ae65693dd",
+  "validated_new_fix_count": 0,
+  "commit_created": false,
+  "push_performed": false,
+  "previous_completed_suites_rerun": 0,
+  "previous_completed_fixes_counted": 0,
+  "candidates": [
+    {
+      "id": "manse-field-label-association",
+      "group": "labels",
+      "mechanism": "Five visible form labels have no programmatic input association; native accessible names and label focus fail."
+    },
+    {
+      "id": "manse-birth-required-field-focus",
+      "group": "required",
+      "mechanism": "Blank birth year/month/day/known hour bypass native required validation, invoke the existing strict parser and discard the last displayed reading without focusing the missing field."
+    },
+    {
+      "id": "saved-detail-render-shape",
+      "group": "detail",
+      "mechanism": "Correct-ID detail responses with broken nested card fields are stored then crash the actual FortuneCard instead of reaching retryable error."
+    },
+    {
+      "id": "pokedex-named-modal-semantics",
+      "group": "pokedex",
+      "mechanism": "Collection pane has existing keyboard handling but lacks a named modal dialog role; the semantic boundary is absent."
+    },
+    {
+      "id": "saju-create-result-id-type",
+      "group": "ack",
+      "mechanism": "Successful HTTP create acknowledgments with missing/null/numeric/empty reading IDs close the draft and invoke success or navigate to a misleading saved route."
+    }
+  ],
+  "candidates_not_yet_counted": true,
+  "rejected_candidates": [
+    {
+      "id": "passport-keyboard-boundary",
+      "reason": "Current passport already has role/modal/name, initial focus, Escape, Tab trap and opener restoration; no completed change repeated."
+    },
+    {
+      "id": "guin-list-get-shape",
+      "reason": "Current create page has no list GET UI; nonexistent mechanism excluded."
+    },
+    {
+      "id": "header-or-navigation-semantics",
+      "reason": "Header already has expanded/dialog/keyboard handling and navigation already exposes aria-current."
+    },
+    {
+      "id": "manse-gender-or-saju-choice-state",
+      "reason": "Already complete; existing selected-state code stays unchanged."
+    },
+    {
+      "id": "saved-list-or-detail-id-mismatch",
+      "reason": "Already complete; summary validator, selection/cache/cancellation and ID ownership boundary stay unchanged."
+    }
+  ]
+}

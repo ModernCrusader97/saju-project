@@ -1,0 +1,303 @@
+{
+  "status": "RECORDED_ALL_REQUESTED_GATES_WITH_PASS_FAIL_NO_ORIGINAL_CHANGES",
+  "at_utc": "2026-10-11T06:08:48.241Z",
+  "validated_new_fix_count": 4,
+  "regression": {
+    "status": "PASS",
+    "name": "regression-process",
+    "started_at_utc": "2026-10-11T06:01:23.687Z",
+    "finished_at_utc": "2026-10-11T06:03:57.430Z",
+    "exit_code": 0,
+    "signal": null,
+    "spawn_error": null,
+    "command": [
+      "C:/Program Files/nodejs/node.exe",
+      "D:/Codex/Work/SaJuUiBatchFour-20261011-Joseph/authoring/batch_four_browser_v3.mjs"
+    ],
+    "cwd": "D:/Codex/Work/SaJuUiBatchFourVerificationFollowup-20261011-Joseph/repo",
+    "log": "D:/Codex/Results/SaJuUiBatchFourVerificationFollowup-20261011-Joseph/regression-process.log",
+    "log_sha256": "7daee35e5d8664155f25ba2e1ef130bc84ace335b0a5155da5dfd5a2e1be7a8e",
+    "original_source_and_zip_byte_preservation_after_gate": true,
+    "validated_new_fix_count": 4,
+    "no_install_commit_push_drive_deployment_or_new_improvement": true
+  },
+  "regression_counts": {
+    "passed": 60,
+    "failed": 0,
+    "page_errors": 0,
+    "console_errors": 0,
+    "outbound_requests": 0,
+    "full_current_wip_cases_include_historical_overlap_as_regression_only": true,
+    "new_improvement_count_not_incremented": true
+  },
+  "build": {
+    "status": "PASS",
+    "name": "production-build",
+    "started_at_utc": "2026-10-11T06:03:58.707Z",
+    "finished_at_utc": "2026-10-11T06:05:36.373Z",
+    "exit_code": 0,
+    "signal": null,
+    "spawn_error": null,
+    "command": [
+      "C:/Program Files/nodejs/node.exe",
+      "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+      "run",
+      "build"
+    ],
+    "cwd": "D:/Codex/Work/SaJuUiBatchFourVerificationFollowup-20261011-Joseph/repo",
+    "log": "D:/Codex/Results/SaJuUiBatchFourVerificationFollowup-20261011-Joseph/production-build.log",
+    "log_sha256": "44d7a95029ebff4cfc9917fd6dfb1ff59cf570f504d8064940394205a5265587",
+    "original_source_and_zip_byte_preservation_after_gate": true,
+    "validated_new_fix_count": 4,
+    "no_install_commit_push_drive_deployment_or_new_improvement": true
+  },
+  "types": {
+    "status": "PASS",
+    "name": "types",
+    "started_at_utc": "2026-10-11T06:05:40.765Z",
+    "finished_at_utc": "2026-10-11T06:06:30.871Z",
+    "exit_code": 0,
+    "signal": null,
+    "spawn_error": null,
+    "command": [
+      "C:/Program Files/nodejs/node.exe",
+      "node_modules/typescript/lib/tsc.js",
+      "--noEmit",
+      "--incremental",
+      "false"
+    ],
+    "cwd": "D:/Codex/Work/SaJuUiBatchFourVerificationFollowup-20261011-Joseph/repo",
+    "log": "D:/Codex/Results/SaJuUiBatchFourVerificationFollowup-20261011-Joseph/types.log",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "original_source_and_zip_byte_preservation_after_gate": true,
+    "validated_new_fix_count": 4,
+    "no_install_commit_push_drive_deployment_or_new_improvement": true
+  },
+  "lint": {
+    "status": "PASS_NO_NEW_DIAGNOSTICS_EXISTING_BASELINE_DISTINGUISHED",
+    "scope": [
+      "app/manse/page.tsx",
+      "app/saved/page.tsx",
+      "components/planet/GalaxyPokedexModal.tsx",
+      "components/SajuInputModal.tsx",
+      "scripts/qa/ui-maintenance-batch-four-browser.mjs"
+    ],
+    "baseline": [
+      {
+        "file": "app/manse/page.tsx",
+        "errorCount": 0,
+        "warningCount": 4,
+        "messages": [
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Sparkles' is defined but never used.",
+            "line": 8,
+            "column": 20
+          },
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'User' is defined but never used.",
+            "line": 8,
+            "column": 30
+          },
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Clock' is defined but never used.",
+            "line": 8,
+            "column": 36
+          },
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Compass' is defined but never used.",
+            "line": 8,
+            "column": 43
+          }
+        ]
+      },
+      {
+        "file": "app/saved/page.tsx",
+        "errorCount": 0,
+        "warningCount": 0,
+        "messages": []
+      },
+      {
+        "file": "components/planet/GalaxyPokedexModal.tsx",
+        "errorCount": 0,
+        "warningCount": 1,
+        "messages": [
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'level' is assigned a value but never used.",
+            "line": 63,
+            "column": 5
+          }
+        ]
+      },
+      {
+        "file": "components/SajuInputModal.tsx",
+        "errorCount": 2,
+        "warningCount": 3,
+        "messages": [
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Loader2' is defined but never used.",
+            "line": 7,
+            "column": 23
+          },
+          {
+            "ruleId": "@next/next/no-location-assign-relative-destination",
+            "severity": 1,
+            "message": "Do not use `window.location.assign()` to navigate to internal Next.js pages. Use `redirect()` in the render phase, or `useRouter().push()` in Client Components' event handlers instead. See: https://nextjs.org/docs/messages/no-location-assign-relative-destination",
+            "line": 128,
+            "column": 11
+          },
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'err' is defined but never used.",
+            "line": 134,
+            "column": 14
+          },
+          {
+            "ruleId": "@typescript-eslint/no-explicit-any",
+            "severity": 2,
+            "message": "Unexpected any. Specify a different type.",
+            "line": 134,
+            "column": 19
+          },
+          {
+            "ruleId": "@typescript-eslint/no-explicit-any",
+            "severity": 2,
+            "message": "Unexpected any. Specify a different type.",
+            "line": 259,
+            "column": 63
+          }
+        ]
+      }
+    ],
+    "current": [
+      {
+        "file": "app/manse/page.tsx",
+        "errorCount": 0,
+        "warningCount": 4,
+        "messages": [
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Sparkles' is defined but never used.",
+            "line": 8,
+            "column": 20
+          },
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'User' is defined but never used.",
+            "line": 8,
+            "column": 30
+          },
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Clock' is defined but never used.",
+            "line": 8,
+            "column": 36
+          },
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Compass' is defined but never used.",
+            "line": 8,
+            "column": 43
+          }
+        ]
+      },
+      {
+        "file": "app/saved/page.tsx",
+        "errorCount": 0,
+        "warningCount": 0,
+        "messages": []
+      },
+      {
+        "file": "components/planet/GalaxyPokedexModal.tsx",
+        "errorCount": 0,
+        "warningCount": 1,
+        "messages": [
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'level' is assigned a value but never used.",
+            "line": 63,
+            "column": 5
+          }
+        ]
+      },
+      {
+        "file": "components/SajuInputModal.tsx",
+        "errorCount": 2,
+        "warningCount": 3,
+        "messages": [
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Loader2' is defined but never used.",
+            "line": 7,
+            "column": 23
+          },
+          {
+            "ruleId": "@next/next/no-location-assign-relative-destination",
+            "severity": 1,
+            "message": "Do not use `window.location.assign()` to navigate to internal Next.js pages. Use `redirect()` in the render phase, or `useRouter().push()` in Client Components' event handlers instead. See: https://nextjs.org/docs/messages/no-location-assign-relative-destination",
+            "line": 129,
+            "column": 11
+          },
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'err' is defined but never used.",
+            "line": 135,
+            "column": 14
+          },
+          {
+            "ruleId": "@typescript-eslint/no-explicit-any",
+            "severity": 2,
+            "message": "Unexpected any. Specify a different type.",
+            "line": 135,
+            "column": 19
+          },
+          {
+            "ruleId": "@typescript-eslint/no-explicit-any",
+            "severity": 2,
+            "message": "Unexpected any. Specify a different type.",
+            "line": 260,
+            "column": 63
+          }
+        ]
+      },
+      {
+        "file": "scripts/qa/ui-maintenance-batch-four-browser.mjs",
+        "errorCount": 0,
+        "warningCount": 0,
+        "messages": []
+      }
+    ],
+    "existing_product_errors": 2,
+    "existing_product_warnings": 8,
+    "new_errors": 0,
+    "new_warnings": 0,
+    "removed_errors": 0,
+    "removed_warnings": 0,
+    "qa_errors": 0,
+    "qa_warnings": 0,
+    "rules_config_or_suppressions_changed": false,
+    "full_repository_lint_not_run": true,
+    "validated_new_fix_count": 4
+  },
+  "any_failure": false,
+  "no_new_source_change_commit_push_drive_or_deployment": true
+}

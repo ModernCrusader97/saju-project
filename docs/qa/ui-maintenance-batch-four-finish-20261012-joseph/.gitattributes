@@ -1,0 +1,5 @@
+* -text
+*.log -diff
+**/bundle.js -diff
+**/*.tsx -diff
+**/*.patch -diff

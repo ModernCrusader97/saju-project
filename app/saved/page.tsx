@@ -32,6 +32,35 @@ function canRenderFortuneSummary(value: unknown): boolean {
   return row.createdAt === "" || Number.isFinite(new Date(row.createdAt).getTime());
 }
 
+// Check the card's rendered fields before storing detail data; optional legacy fields remain optional.
+function canRenderFortune(value: unknown): boolean {
+  const record = (candidate: unknown): candidate is Record<string, unknown> =>
+    candidate !== null && typeof candidate === "object" && !Array.isArray(candidate);
+  const strings = (candidate: Record<string, unknown>, keys: string[]) =>
+    keys.every(key => typeof candidate[key] === "string");
+  const numbers = (candidate: Record<string, unknown>, keys: string[]) =>
+    keys.every(key => typeof candidate[key] === "number" && Number.isFinite(candidate[key]));
+  const pillar = (candidate: unknown) => record(candidate) && strings(candidate, [
+    "ganElement", "ganHanja", "gan", "shipshinGan", "jiElement", "jiHanja", "ji", "shipshinJi",
+  ]);
+  if (!record(value) || !strings(value, ["title", "summary"])) return false;
+  const analysis = value.analysis;
+  if (!record(analysis) || !strings(analysis, ["name", "calendarType"])
+    || !numbers(analysis, ["birthYear", "birthMonth", "birthDay"])) return false;
+  if (![analysis.yearPillar, analysis.monthPillar, analysis.dayPillar].every(pillar)
+    || (analysis.hourPillar != null && !pillar(analysis.hourPillar))) return false;
+  if (!record(analysis.elementsCount)
+    || !numbers(analysis.elementsCount, ["wood", "fire", "earth", "metal", "water"])) return false;
+  if (analysis.solarBirthDate && (!record(analysis.solarBirthDate)
+    || !numbers(analysis.solarBirthDate, ["year", "month", "day"]))) return false;
+  if (!record(value.metaphor) || !strings(value.metaphor, ["coreTitle", "description"])) return false;
+  if (!record(value.luckyAdvice) || !strings(value.luckyAdvice, ["color", "direction", "mindset"])) return false;
+  return Array.isArray(value.sections) && value.sections.every((section: unknown) =>
+    record(section) && strings(section, ["title", "content"])
+    && (section.subtitle == null || typeof section.subtitle === "string")
+    && (section.advice == null || typeof section.advice === "string"));
+}
+
 function SavedContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -71,7 +100,7 @@ function SavedContent() {
       .then(async (res) => {
         const data = await readApiResponse(res);
         if (!res.ok) throw new Error(data.error || "기록을 불러오지 못했습니다.");
-        if (!data.fortune || data.fortune.id !== queryId) throw new Error("요청한 기록을 확인할 수 없습니다.");
+        if (!data.fortune || data.fortune.id !== queryId || !canRenderFortune(data.fortune)) throw new Error("요청한 기록을 확인할 수 없습니다.");
         return data.fortune;
       })
       .then((fortune) => { if (!controller.signal.aborted) setDetails(previous => new Map(previous).set(queryId, fortune)); })

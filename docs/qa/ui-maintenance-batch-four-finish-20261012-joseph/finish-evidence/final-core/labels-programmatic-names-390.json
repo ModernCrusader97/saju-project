@@ -1,0 +1,49 @@
+{
+  "named": [
+    {
+      "label": "이름",
+      "native_named_count": 1,
+      "label_control": "manse-name",
+      "input_id": "manse-name",
+      "input_focused": true
+    },
+    {
+      "label": "태어난 년도",
+      "native_named_count": 1,
+      "label_control": "manse-year",
+      "input_id": "manse-year",
+      "input_focused": false
+    },
+    {
+      "label": "월",
+      "native_named_count": 1,
+      "label_control": "manse-month",
+      "input_id": "manse-month",
+      "input_focused": false
+    },
+    {
+      "label": "일",
+      "native_named_count": 1,
+      "label_control": "manse-day",
+      "input_id": "manse-day",
+      "input_focused": false
+    },
+    {
+      "label": "태어난 시 (0~23시):",
+      "native_named_count": 1,
+      "label_control": "manse-hour",
+      "input_id": "manse-hour",
+      "input_focused": false
+    }
+  ],
+  "values": [
+    "가상 만세 검증",
+    "1995",
+    "5",
+    "15",
+    "14"
+  ],
+  "result_count": 0,
+  "synthetic_posts": 0,
+  "page_errors": []
+}

@@ -1,0 +1,34 @@
+{
+  "status": "APPLIED_PENDING_FOCUSED_NATIVE_VERIFICATION",
+  "number": 3,
+  "id": "saved-detail-render-shape",
+  "group": "detail",
+  "files": [
+    {
+      "file": "app/saved/page.tsx",
+      "before_sha256": "0d86e8fec1257881c16e841a6ce1aca3c48a7fcd6066388e56bd2b33fb19f4fc",
+      "after_sha256": "378572d7489980372ed6e3558c938f76ebcb5f1f63e0dce33b362835dccbcf09",
+      "before_bytes": 14654,
+      "after_bytes": 16762,
+      "before_snapshot": "changes/fix-3-0-before-native.tsx",
+      "after_snapshot": "changes/fix-3-0-after-native.tsx",
+      "replacements": [
+        {
+          "before": "function SavedContent() {",
+          "after": "// Check the card's rendered fields before storing detail data; optional legacy fields remain optional.\r\nfunction canRenderFortune(value: unknown): boolean {\r\n  const record = (candidate: unknown): candidate is Record<string, unknown> =>\r\n    candidate !== null && typeof candidate === \"object\" && !Array.isArray(candidate);\r\n  const strings = (candidate: Record<string, unknown>, keys: string[]) =>\r\n    keys.every(key => typeof candidate[key] === \"string\");\r\n  const numbers = (candidate: Record<string, unknown>, keys: string[]) =>\r\n    keys.every(key => typeof candidate[key] === \"number\" && Number.isFinite(candidate[key]));\r\n  const pillar = (candidate: unknown) => record(candidate) && strings(candidate, [\r\n    \"ganElement\", \"ganHanja\", \"gan\", \"shipshinGan\", \"jiElement\", \"jiHanja\", \"ji\", \"shipshinJi\",\r\n  ]);\r\n  if (!record(value) || !strings(value, [\"title\", \"summary\"])) return false;\r\n  const analysis = value.analysis;\r\n  if (!record(analysis) || !strings(analysis, [\"name\", \"calendarType\"])\r\n    || !numbers(analysis, [\"birthYear\", \"birthMonth\", \"birthDay\"])) return false;\r\n  if (![analysis.yearPillar, analysis.monthPillar, analysis.dayPillar].every(pillar)\r\n    || (analysis.hourPillar != null && !pillar(analysis.hourPillar))) return false;\r\n  if (!record(analysis.elementsCount)\r\n    || !numbers(analysis.elementsCount, [\"wood\", \"fire\", \"earth\", \"metal\", \"water\"])) return false;\r\n  if (analysis.solarBirthDate && (!record(analysis.solarBirthDate)\r\n    || !numbers(analysis.solarBirthDate, [\"year\", \"month\", \"day\"]))) return false;\r\n  if (!record(value.metaphor) || !strings(value.metaphor, [\"coreTitle\", \"description\"])) return false;\r\n  if (!record(value.luckyAdvice) || !strings(value.luckyAdvice, [\"color\", \"direction\", \"mindset\"])) return false;\r\n  return Array.isArray(value.sections) && value.sections.every((section: unknown) =>\r\n    record(section) && strings(section, [\"title\", \"content\"])\r\n    && (section.subtitle == null || typeof section.subtitle === \"string\")\r\n    && (section.advice == null || typeof section.advice === \"string\"));\r\n}\r\n\r\nfunction SavedContent() {",
+          "count": 1
+        },
+        {
+          "before": "if (!data.fortune || data.fortune.id !== queryId) throw new Error(\"요청한 기록을 확인할 수 없습니다.\");",
+          "after": "if (!data.fortune || data.fortune.id !== queryId || !canRenderFortune(data.fortune)) throw new Error(\"요청한 기록을 확인할 수 없습니다.\");",
+          "count": 1
+        }
+      ],
+      "inverse_native_bytes_verified": true
+    }
+  ],
+  "expected": 16,
+  "change": "Validate only fields actually rendered by FortuneCard before storing a correct-ID detail response; broken analysis/elements/sections/metaphor/advice reach the existing retryable error. Preserve complete and legacy unknown-hour/no-solar-date readings and existing ID/list/cache/cancellation checks.",
+  "at_utc": "2026-10-11T05:02:47.385Z",
+  "prior_completed_work_recounted": 0
+}

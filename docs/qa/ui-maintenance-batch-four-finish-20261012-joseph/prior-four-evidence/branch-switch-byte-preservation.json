@@ -1,0 +1,20 @@
+{
+  "status": "PASS_EXISTING_PRODUCT_BUILD_INPUT_AND_RUNTIME_BYTES_PRESERVED_ON_NEW_BRANCH",
+  "restored_missing_identical_dependencies": [
+    "assets/source-reference/saju-b-evolving-light-v002/SHA256SUMS.txt",
+    "assets/source-reference/saju-b-evolving-light-v002/reference/SaJu_Jade_Approved_Static_Material.glb",
+    "assets/source-reference/saju-b-evolving-light-v002/runtime/textures/jade_fields_atlas_128.png",
+    "assets/source-reference/saju-b-evolving-light-v002/runtime/textures/Jade_OriginalBaseColor_1024.png",
+    "assets/source-reference/saju-b-evolving-light-v002/preview_keyframes/001.png",
+    "assets/source-reference/saju-b-evolving-light-v002/runtime/saju-jade-evolution.glsl",
+    "assets/source-reference/saju-b-evolving-light-v002/runtime/saju-jade-evolution.mjs",
+    ".openai/hosting.json"
+  ],
+  "products": 4,
+  "canonical_inputs": 8,
+  "runtime_outputs": 5,
+  "existing_file_overwrites": 0,
+  "raw_hosting_values_recorded": false,
+  "model_or_default_change": false,
+  "staged_diff_empty": true
+}

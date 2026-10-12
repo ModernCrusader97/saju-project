@@ -113,9 +113,10 @@ export default function MansePage() {
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
             <div>
-              <label className="text-[10.5px] font-bold text-doryeong-textMuted block mb-1">이름</label>
+              <label htmlFor="manse-name" className="text-[10.5px] font-bold text-doryeong-textMuted block mb-1">이름</label>
               <input
                 type="text"
+                id="manse-name"
                 value={name}
                 maxLength={20}
                 onChange={(e) => setName(e.target.value)}
@@ -123,33 +124,39 @@ export default function MansePage() {
               />
             </div>
             <div>
-              <label className="text-[10.5px] font-bold text-doryeong-textMuted block mb-1">태어난 년도</label>
+              <label htmlFor="manse-year" className="text-[10.5px] font-bold text-doryeong-textMuted block mb-1">태어난 년도</label>
               <input
                 type="number"
                 min={1900}
                 max={2100}
+                id="manse-year"
+                required
                 value={year}
                 onChange={(e) => setYear(e.target.value)}
                 className="w-full text-xs font-semibold px-2.5 py-2 rounded-xl border border-doryeong-border text-center bg-doryeong-ivory/50 focus:bg-white focus:border-doryeong-gold focus:outline-none"
               />
             </div>
             <div>
-              <label className="text-[10.5px] font-bold text-doryeong-textMuted block mb-1">월</label>
+              <label htmlFor="manse-month" className="text-[10.5px] font-bold text-doryeong-textMuted block mb-1">월</label>
               <input
                 type="number"
                 min={1}
                 max={12}
+                id="manse-month"
+                required
                 value={month}
                 onChange={(e) => setMonth(e.target.value)}
                 className="w-full text-xs font-semibold px-2.5 py-2 rounded-xl border border-doryeong-border text-center bg-doryeong-ivory/50 focus:bg-white focus:border-doryeong-gold focus:outline-none"
               />
             </div>
             <div>
-              <label className="text-[10.5px] font-bold text-doryeong-textMuted block mb-1">일</label>
+              <label htmlFor="manse-day" className="text-[10.5px] font-bold text-doryeong-textMuted block mb-1">일</label>
               <input
                 type="number"
                 min={1}
                 max={31}
+                id="manse-day"
+                required
                 value={day}
                 onChange={(e) => setDay(e.target.value)}
                 className="w-full text-xs font-semibold px-2.5 py-2 rounded-xl border border-doryeong-border text-center bg-doryeong-ivory/50 focus:bg-white focus:border-doryeong-gold focus:outline-none"
@@ -160,12 +167,14 @@ export default function MansePage() {
           {/* Hour & Unknown time */}
           <div className="flex items-center gap-3 pt-1">
             <div className="flex-1 flex items-center gap-2">
-              <label className="text-[10.5px] font-bold text-doryeong-textMuted shrink-0">태어난 시 (0~23시):</label>
+              <label htmlFor="manse-hour" className="text-[10.5px] font-bold text-doryeong-textMuted shrink-0">태어난 시 (0~23시):</label>
               <input
                 type="number"
                 min={0}
                 max={23}
                 disabled={isUnknownTime}
+                id="manse-hour"
+                required
                 value={hour}
                 onChange={(e) => setHour(e.target.value)}
                 className="w-20 text-xs font-semibold px-2 py-1.5 rounded-lg border border-doryeong-border text-center bg-doryeong-ivory/50 disabled:opacity-40"

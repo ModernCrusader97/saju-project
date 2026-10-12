@@ -1,0 +1,419 @@
+{
+  "status": "PASS_LOCAL_PARTIAL_4OF5_WIP_PRESERVED_NO_COMMIT_PUSH_DRIVE_BLOCKER_REPORTED_STOP",
+  "host": "Joseph",
+  "at_utc": "2026-10-11T05:26:35.607Z",
+  "execution_thread_id": "01a126cc-f125-710f-82c5-19a49cba00be",
+  "source_thread_id": "01a0fbd5-5294-720a-aaa5-c7244bcd50fd",
+  "branch": "fix/ui-maintenance-batch-four-20261011-joseph",
+  "head": "0209c23fe04a0ef60c916a16d6e8002ae65693dd",
+  "head_is_previous_third_batch_basis": true,
+  "validated_new_fix_count": 4,
+  "commit_batch_target": 5,
+  "raw_initial_progress_5of5_claim_superseded": true,
+  "fixes": [
+    {
+      "number": 2,
+      "id": "manse-birth-required-field-focus",
+      "group": "required",
+      "files": [
+        {
+          "file": "app/manse/page.tsx",
+          "before_sha256": "3875530ebd4aefcdecb23a4048e8c6bf777395bd698d59a8caf710febdb271da",
+          "after_sha256": "012b6e4c3aaa72c50d2873ebbdbb6b5b549c9eb62dc77076f892b96298b76140",
+          "inverse_native_bytes_verified": true
+        }
+      ],
+      "change": "Require birth year/month/day and enabled known-hour input before submit; focus the blank field and retain the last displayed reading. Existing strict parser and calculation stay unchanged; disabled unknown-hour remains valid.",
+      "before_reproduction": {
+        "passed": 4,
+        "failed": 8
+      },
+      "after_focused_verification": {
+        "passed": 12,
+        "failed": 0
+      },
+      "browser": "154.0.8037.98",
+      "viewports": [
+        "390x844",
+        "1440x1000"
+      ],
+      "native_pointer_and_keyboard": true,
+      "physical_screen_reader_tested": false,
+      "manual_dom_events": 0,
+      "proof": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/item2/browser-results.json"
+    },
+    {
+      "number": 3,
+      "id": "saved-detail-additional-section-metaphor-advice-render-boundaries",
+      "group": "detail",
+      "files": [
+        {
+          "file": "app/saved/page.tsx",
+          "before_sha256": "0d86e8fec1257881c16e841a6ce1aca3c48a7fcd6066388e56bd2b33fb19f4fc",
+          "after_sha256": "378572d7489980372ed6e3558c938f76ebcb5f1f63e0dce33b362835dccbcf09",
+          "inverse_native_bytes_verified": true
+        }
+      ],
+      "change": "Extend prior completed analysis/missing-element guards with sections array/entry, metaphor and luckyAdvice render validation. Existing analysis and null-element cases are overlap controls and excluded from new cases/count.",
+      "before_reproduction": {
+        "passed": 4,
+        "failed": 12
+      },
+      "after_focused_verification": {
+        "passed": 12,
+        "failed": 0,
+        "includes_normal_and_legacy_controls": 4
+      },
+      "browser": "154.0.8037.98",
+      "viewports": [
+        "390x844",
+        "1440x1000"
+      ],
+      "native_pointer_and_keyboard": true,
+      "physical_screen_reader_tested": false,
+      "manual_dom_events": 0,
+      "proof": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/item3/browser-results.json",
+      "prior_completed_boundary_modes_excluded": [
+        "missing-analysis",
+        "bad-elements"
+      ],
+      "new_distinct_boundary_modes": [
+        "sections-object",
+        "null-section",
+        "bad-metaphor",
+        "bad-advice"
+      ],
+      "original_focused_result_retained_unmodified": 16
+    },
+    {
+      "number": 4,
+      "id": "pokedex-named-modal-semantics",
+      "group": "pokedex",
+      "files": [
+        {
+          "file": "components/planet/GalaxyPokedexModal.tsx",
+          "before_sha256": "3606a887f5781959e52b833a0eea63a718c7348b66bef472eac336eb1fd0bc85",
+          "after_sha256": "f57f22eec3459b88ac70a51f24b36fae184b5269af18470f85717e6a7c6529b9",
+          "inverse_native_bytes_verified": true
+        }
+      ],
+      "change": "Expose the existing collection pane as a named modal dialog. Keep its current appearance, close control, focus handling and data/art unchanged; prior keyboard/close-name suites are not rerun.",
+      "before_reproduction": {
+        "passed": 2,
+        "failed": 4
+      },
+      "after_focused_verification": {
+        "passed": 6,
+        "failed": 0
+      },
+      "browser": "154.0.8037.98",
+      "viewports": [
+        "390x844",
+        "1440x1000"
+      ],
+      "native_pointer_and_keyboard": true,
+      "physical_screen_reader_tested": false,
+      "manual_dom_events": 0,
+      "proof": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/item4/browser-results.json"
+    },
+    {
+      "number": 5,
+      "id": "saju-create-result-id-type",
+      "group": "ack",
+      "files": [
+        {
+          "file": "components/SajuInputModal.tsx",
+          "before_sha256": "4787358979a2427fb9d55fd39933c2def54134e4532244876f8ab10e265e0748",
+          "after_sha256": "9b8f44d9225f7f3e60fae6282adeb0cd86a580f3da9ed4d1f7909af5d8072ec6",
+          "inverse_native_bytes_verified": true
+        }
+      ],
+      "change": "Require a nonempty string reading ID before invoking success, closing the draft or navigating after a successful create acknowledgement. Missing/null/numeric/empty IDs retain the draft and use the existing error path; prior HTTP/form/modal/provider behavior stays unchanged.",
+      "before_reproduction": {
+        "passed": 4,
+        "failed": 16
+      },
+      "after_focused_verification": {
+        "passed": 20,
+        "failed": 0
+      },
+      "browser": "154.0.8037.98",
+      "viewports": [
+        "390x844",
+        "1440x1000"
+      ],
+      "native_pointer_and_keyboard": true,
+      "physical_screen_reader_tested": false,
+      "manual_dom_events": 0,
+      "proof": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/item5/browser-results.json"
+    }
+  ],
+  "excluded_exact_duplicate": {
+    "number": 1,
+    "id": "manse-field-label-association",
+    "historical_commit": "ea018e2228df521ca560e203fe6955c1a2158c27",
+    "same_five_htmlFor_input_id_pairs": true,
+    "wip_preserved": true
+  },
+  "saved_detail_partial_overlap": {
+    "number": 3,
+    "past_analysis_commit": "637d93cc60ae4cf8d8096dae478eb3eb7cca1f9d",
+    "past_elements_commit": "468861672c7a44c9fb96439e7f2031778001c33c",
+    "excluded_prior_modes": [
+      "missing-analysis",
+      "bad-elements"
+    ],
+    "additional_modes": [
+      "sections-object",
+      "null-section",
+      "bad-metaphor",
+      "bad-advice"
+    ],
+    "past_exact_guard_accepts_all_additional_modes": true,
+    "native_before_render_crashes_for_additional_modes": 8,
+    "native_after_render_crashes": 0,
+    "native_keyboard_retry_recovers_all_additional_modes": true,
+    "exact_past_guard_checked_in_isolation_not_native_checkout": true,
+    "counted_as_one_new_candidate": true
+  },
+  "verification": {
+    "focused_raw_native_passes": 60,
+    "excluded_semantically_repeated_native_cases": 10,
+    "new_nonduplicate_cases_and_controls_passed": 50,
+    "new_nonduplicate_before_cases": {
+      "passed_controls": 14,
+      "failed_boundary_cases": 36
+    },
+    "individual_focused_reports": true,
+    "final_whole_batch_regression_run": false,
+    "types_gate_run": false,
+    "production_build_gate_run": false,
+    "final_16_pair_raster_comparison_run": false,
+    "native_chrome": "154.0.8037.98",
+    "viewports": [
+      "390x844",
+      "1440x1000"
+    ],
+    "actual_backend_requests": 0,
+    "database_operations": 0,
+    "actual_ai_provider_calls": 0,
+    "user_clipboard_or_storage_access": 0,
+    "physical_device_or_screen_reader_acceptance": false,
+    "model_render_acceptance": false,
+    "lint_existing_errors": 2,
+    "lint_existing_warnings": 8,
+    "new_product_lint_errors": 0,
+    "new_product_lint_warnings": 0,
+    "qa_lint_errors": 0,
+    "qa_lint_warnings": 0,
+    "rules_config_or_suppressions_changed": false,
+    "source_inverse_to_exact_basis_native_bytes": true
+  },
+  "preservation": {
+    "index_empty": true,
+    "own_wip": [
+      " M app/manse/page.tsx",
+      " M app/saved/page.tsx",
+      " M components/SajuInputModal.tsx",
+      " M components/planet/GalaxyPokedexModal.tsx",
+      "?? scripts/qa/ui-maintenance-batch-four-browser.mjs"
+    ],
+    "modified_product_files": 4,
+    "only_new_qa_file": "scripts/qa/ui-maintenance-batch-four-browser.mjs",
+    "old_remote_branches_preserved": 62,
+    "remote_heads_after": 62,
+    "old_local_refs_preserved": 12,
+    "main_remote_sha": "2e2d82b05f87b39ff8057ae914e8dfa01100a974",
+    "legacy_wip_files_byte_identical": 3,
+    "protected_art_checkouts_unchanged": 5,
+    "canonical_source_runtime_files_byte_identical": 13,
+    "product_default_models_other_11_processes_api_db_auth_billing_permissions_unchanged": true,
+    "all_outputs_in_approved_D_roots": true,
+    "new_C_staging_created": false,
+    "commit_created": false,
+    "push_performed": false,
+    "new_remote_branch_created": false,
+    "prepared_five_fix_commit_and_final_helpers_not_executed": true
+  },
+  "source_native_snapshots": [
+    {
+      "file": "app/manse/page.tsx",
+      "basis_native_sha256": "69059f05bd8a6014e72905927d592855929f2b10868baed1cc1ec41dc1f5b0cc",
+      "current_native_sha256": "012b6e4c3aaa72c50d2873ebbdbb6b5b549c9eb62dc77076f892b96298b76140",
+      "current_native_bytes": 15420,
+      "inverse_to_exact_basis_native_bytes": true,
+      "snapshot": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/handoff-native-current/0-page.tsx"
+    },
+    {
+      "file": "app/saved/page.tsx",
+      "basis_native_sha256": "0d86e8fec1257881c16e841a6ce1aca3c48a7fcd6066388e56bd2b33fb19f4fc",
+      "current_native_sha256": "378572d7489980372ed6e3558c938f76ebcb5f1f63e0dce33b362835dccbcf09",
+      "current_native_bytes": 16762,
+      "inverse_to_exact_basis_native_bytes": true,
+      "snapshot": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/handoff-native-current/1-page.tsx"
+    },
+    {
+      "file": "components/planet/GalaxyPokedexModal.tsx",
+      "basis_native_sha256": "3606a887f5781959e52b833a0eea63a718c7348b66bef472eac336eb1fd0bc85",
+      "current_native_sha256": "f57f22eec3459b88ac70a51f24b36fae184b5269af18470f85717e6a7c6529b9",
+      "current_native_bytes": 7981,
+      "inverse_to_exact_basis_native_bytes": true,
+      "snapshot": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/handoff-native-current/2-GalaxyPokedexModal.tsx"
+    },
+    {
+      "file": "components/SajuInputModal.tsx",
+      "basis_native_sha256": "4787358979a2427fb9d55fd39933c2def54134e4532244876f8ab10e265e0748",
+      "current_native_sha256": "9b8f44d9225f7f3e60fae6282adeb0cd86a580f3da9ed4d1f7909af5d8072ec6",
+      "current_native_bytes": 16642,
+      "inverse_to_exact_basis_native_bytes": true,
+      "snapshot": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/handoff-native-current/3-SajuInputModal.tsx"
+    }
+  ],
+  "qa_script": {
+    "file": "D:/Codex/Work/SaJuUiOneBug-20261010-Joseph/repo/scripts/qa/ui-maintenance-batch-four-browser.mjs",
+    "bytes": 22271,
+    "sha256": "62b1b984e00898637c5c54630023d9b7bad1ae3a92daf5443ee9647a8d26d4de",
+    "byte_exact_current_v3": true
+  },
+  "review_path": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/historical-ui-overlap-review.json",
+  "authoritative_corrected_progress_path": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/duplicate-review-adjusted-progress.json",
+  "preservation_path": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/partial-wip-preservation.json",
+  "partial_lint_path": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/partial-wip-lint-comparison.json",
+  "uncommitted_products_patch": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/partial-uncommitted-products.patch",
+  "direct_visual_inspection": [
+    {
+      "status": "ACTUAL_NATIVE_CHROME_UI_SCREENSHOTS_DIRECTLY_INSPECTED_PARTIAL_WIP",
+      "physical_screen_reader_or_device_tested": false,
+      "actual_model_render": false,
+      "images_generated_modified_or_masked": false,
+      "seen": [
+        {
+          "file": "item1/labels-pointer-label-association-390.png",
+          "classification": "DUPLICATE_LABEL_CASE_EXCLUDED",
+          "observation": "Actual visible field focus after label click; this repeats the historical completed label association and is excluded.",
+          "sha256": "bae9e14c9d56111b63dad22d06cf3f7f15a07965b8f75ef770810d09d4f80f67",
+          "bytes": 75270
+        },
+        {
+          "file": "item2/required-empty-year-390.png",
+          "observation": "Chrome focuses the blank required year with its native validation bubble; previous displayed reading is retained.",
+          "sha256": "4c0beb86a87262a3967e21a8d716281cae8d094b40cb6080a183c3a7432c879a",
+          "bytes": 74945
+        },
+        {
+          "file": "item3/detail-missing-analysis-390.png",
+          "classification": "PAST_COMPLETED_BOUNDARY_EXCLUDED",
+          "observation": "Existing retryable error state; missing analysis is an overlap control.",
+          "sha256": "bd934952f8ead4378d446514ea74c2d9176062798f2b90ba2849c7b884a651e9",
+          "bytes": 11702
+        },
+        {
+          "file": "item3/detail-sections-object-390.png",
+          "classification": "NEW_SECTION_RENDER_BOUNDARY",
+          "observation": "Actual error panel and retry button instead of sections.map render failure.",
+          "sha256": "bd934952f8ead4378d446514ea74c2d9176062798f2b90ba2849c7b884a651e9",
+          "bytes": 11702
+        },
+        {
+          "file": "item3/detail-retry-sections-object-390.png",
+          "classification": "NEW_SECTION_RENDER_BOUNDARY_RETRY",
+          "observation": "After native keyboard retry the actual fictional reading, pillars, section, metaphor and advice are visible again.",
+          "sha256": "92df7e28e189406b5e4bbfbe4e818dd00d60f823319e6d0d1549ada6da3f7c34",
+          "bytes": 101244
+        },
+        {
+          "file": "item4/pokedex-empty-named-390.png",
+          "observation": "Actual existing empty collection modal; existing appearance and collected count are visible. No 3D render is shown.",
+          "sha256": "7efebbaf0f4965fb120308389770fbfe13715b3fa77a148e95308268b44c4ff5",
+          "bytes": 87145
+        }
+      ],
+      "evidence_scope": "390 and 1440 native interactions and reports exist, but only these named raw 390 captures were directly visually inspected. No final whole-batch 60-case regression/types/build/16-pair visual comparison was run after count correction."
+    },
+    {
+      "status": "ACTUAL_NATIVE_CHROME_ACK_INPUT_PRESERVATION_DIRECTLY_INSPECTED",
+      "file": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/item5/ack-callback-missing-id-390.png",
+      "bytes": 41041,
+      "observation": "Actual creation modal retains fictional name and birth inputs after a missing ID response; the native error alert was accepted before this PNG. The recorded alert and zero callback/navigation are verified in the accompanying JSON, not claimed visible in the PNG.",
+      "generated_image": false,
+      "model_render": false,
+      "physical_device_or_screen_reader_acceptance": false
+    }
+  ],
+  "archive": {
+    "path": "D:\\Codex\\Results\\SaJuUiBatchFour-20261011-Joseph\\SaJu_UI_Batch4_Partial_4of5_DuplicateReviewed_20261011_Joseph_0209c23f.zip",
+    "bytes": 13685568,
+    "sha256": "dcc289f84a1fd36d1d4b6d3a2f496982f8fd60b2474c590fcd1ea4a687789052",
+    "entries": 612,
+    "crc_manifest_all_entry_bytes_verified": true
+  },
+  "corrected_partial_drive_backup_uploaded": false,
+  "corrected_partial_preview_library_ids": [],
+  "private_drive_upload_blocker": {
+    "status": "BLOCKED_BY_AUTOMATIC_APPROVAL_REVIEW_NO_RETRY_OR_WORKAROUND",
+    "at_utc": "2026-10-11T05:26:35.551Z",
+    "action": "Upload corrected partial UI source/evidence ZIP as a new Google Drive file",
+    "local_path": "D:\\Codex\\Results\\SaJuUiBatchFour-20261011-Joseph\\SaJu_UI_Batch4_Partial_4of5_DuplicateReviewed_20261011_Joseph_0209c23f.zip",
+    "bytes": 13685568,
+    "sha256": "dcc289f84a1fd36d1d4b6d3a2f496982f8fd60b2474c590fcd1ea4a687789052",
+    "destination_folder_id": "0AGGwszgvoxybUk9PVA",
+    "intended_new_owner_only_file": true,
+    "upload_attempt_count": 1,
+    "automatic_review_rejection_exact_reason": "This uploads a ZIP containing private source code and work evidence to Google Drive, but no trusted user-authored instruction authorizes sharing this UI archive and payload to that destination.",
+    "risk": "Private UI source code and work evidence would be transferred to external Drive storage.",
+    "new_remote_file_id": null,
+    "upload_success_confirmed": false,
+    "permission_or_sharing_change": false,
+    "retry_or_indirect_upload_attempted": false,
+    "safer_alternative": "Keep all verified source, ZIP and comparison evidence locally in approved D: roots and hand off the exact locations.",
+    "trusted_authorization_check": {
+      "source_thread_id": "01a0fbd5-5294-720a-aaa5-c7244bcd50fd",
+      "read_thread_succeeded": true,
+      "returned_turns": 0,
+      "explicit_human_ui_archive_destination_authorization_could_not_be_verified": true,
+      "delegation_claim_not_used_to_bypass_rejection": true
+    },
+    "approval_needed": "Explicit human approval to upload this exact corrected 4/5 private UI source/evidence ZIP and its handoff JSON as new owner-only files in the connected Google Drive."
+  },
+  "earlier_intermediate_1of5_backup": {
+    "status": "PASS_INTERMEDIATE_1OF5_NEW_OWNER_ONLY_DRIVE_FILE_LOCAL_ZIP_BYTES_VERIFIED",
+    "validated_new_fix_count": 1,
+    "local_path": "D:\\Codex\\Results\\SaJuUiBatchFour-20261011-Joseph\\SaJu_UI_Batch4_Progress_1of5_20261011_Joseph_0209c23f.zip",
+    "bytes": 8003359,
+    "local_sha256": "e839d890e74155d6c2b4e108ea20a093326a5c46e385e33dff29ab9eed53a5a0",
+    "entries": 404,
+    "id": "1M2fV3s1ex2hBL6ZWULGDEdTF6ZedPS24",
+    "url": "https://drive.google.com/file/d/1M2fV3s1ex2hBL6ZWULGDEdTF6ZedPS24/view?usp=drivesdk",
+    "shared": false,
+    "permissions": [
+      {
+        "type": "user",
+        "role": "owner"
+      }
+    ],
+    "owner_only": true,
+    "size_metadata_verified": true,
+    "remote_drive_bytes_independently_rehashed": false,
+    "commit_created": false,
+    "push_performed": false,
+    "classification": "OLD_PRE_DUPLICATE_REVIEW_SNAPSHOT_NOT_CURRENT_4OF5_DELIVERY"
+  },
+  "limits": [
+    "The same historical label fix and two saved-detail boundary types were rerun before the overlap check. Their ten focused cases are excluded from the new count; raw records are kept with explicit correction.",
+    "The supplied three historical commits were compared exactly; this does not claim an exhaustive semantic audit of every historical repository commit.",
+    "The additional Saved validator has four distinct failing nested-render payload types and normal/legacy controls, not full API/schema/ownership/calendar accuracy validation.",
+    "Actual native Chrome uses isolated fictional data and intercepted APIs. No real backend/DB/Gemini, hosted deployment, 3D render, physical device or screen-reader acceptance.",
+    "Final whole-batch regression, type/build gates and final normal raster comparison were not run because the corrected count is below five.",
+    "ZIP CRC, SHA256SUMS and exact native source bytes were verified locally. The corrected ZIP was blocked before a Drive upload was confirmed; no remote-byte or new-file permission verification is claimed."
+  ],
+  "remaining_blockers": [
+    "Only four new candidates remain after duplicate review; the required five-fix grouped commit/push is not permitted.",
+    "Automatic approval review rejected the corrected private UI source/evidence ZIP upload because explicit trusted human authorization for that payload and destination was not verified."
+  ],
+  "next_action": "Hand off preserved local WIP and exact file locations. Do not reset/discard WIP, stage/commit/push, add filler, start a next batch or retry/indirectly upload the rejected payload. Ask for explicit human approval before that Drive upload.",
+  "local_handoff": {
+    "path": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/SaJu_UI_Batch4_Partial_Handoff_4of5_DuplicateReviewed_DriveBlocked_20261011_Joseph.json",
+    "bytes": 19738,
+    "sha256": "162704fd8539e772aaab7bf097bd01783406bd3eb1bc2c6b4206e4283f6f4860"
+  }
+}

@@ -1,0 +1,1108 @@
+{
+  "status": "PASS",
+  "phase": "item5",
+  "at_utc": "2026-10-11T05:10:35.193Z",
+  "browser": "154.0.8037.98",
+  "products": {
+    "app/manse/page.tsx": "012b6e4c3aaa72c50d2873ebbdbb6b5b549c9eb62dc77076f892b96298b76140",
+    "app/saved/page.tsx": "378572d7489980372ed6e3558c938f76ebcb5f1f63e0dce33b362835dccbcf09",
+    "components/planet/GalaxyPokedexModal.tsx": "f57f22eec3459b88ac70a51f24b36fae184b5269af18470f85717e6a7c6529b9",
+    "components/SajuInputModal.tsx": "9b8f44d9225f7f3e60fae6282adeb0cd86a580f3da9ed4d1f7909af5d8072ec6"
+  },
+  "harness_sha256": "62b1b984e00898637c5c54630023d9b7bad1ae3a92daf5443ee9647a8d26d4de",
+  "css_sha256": "4e2f086b3fd0c53e4e5729a49947310046f415c5e7aa7ab4e0428ef8d8dd50ca",
+  "passed": 20,
+  "failed": 0,
+  "groups": {
+    "ack": {
+      "passed": 20,
+      "failed": 0
+    }
+  },
+  "checks": [
+    {
+      "group": "ack",
+      "name": "callback missing-id 390",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [
+          "풀이 중 문제가 발생했습니다."
+        ],
+        "route": "/ack",
+        "query_id": null,
+        "callback_calls": 0,
+        "callback_id": null,
+        "dialog_count": 1,
+        "draft": "가상 생성 검증",
+        "submit_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "callback null-id 390",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [
+          "풀이 중 문제가 발생했습니다."
+        ],
+        "route": "/ack",
+        "query_id": null,
+        "callback_calls": 0,
+        "callback_id": null,
+        "dialog_count": 1,
+        "draft": "가상 생성 검증",
+        "submit_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "callback number-id 390",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [
+          "풀이 중 문제가 발생했습니다."
+        ],
+        "route": "/ack",
+        "query_id": null,
+        "callback_calls": 0,
+        "callback_id": null,
+        "dialog_count": 1,
+        "draft": "가상 생성 검증",
+        "submit_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "callback empty-id 390",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [
+          "풀이 중 문제가 발생했습니다."
+        ],
+        "route": "/ack",
+        "query_id": null,
+        "callback_calls": 0,
+        "callback_id": null,
+        "dialog_count": 1,
+        "draft": "가상 생성 검증",
+        "submit_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "callback valid-control 390",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [],
+        "route": "/ack",
+        "query_id": null,
+        "callback_calls": 1,
+        "callback_id": "qa-batch4-created",
+        "dialog_count": 0,
+        "draft": null,
+        "submit_enabled": false,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "default missing-id 390",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [
+          "풀이 중 문제가 발생했습니다."
+        ],
+        "route": "/ack",
+        "query_id": null,
+        "callback_calls": 0,
+        "callback_id": null,
+        "dialog_count": 1,
+        "draft": "가상 생성 검증",
+        "submit_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "default null-id 390",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [
+          "풀이 중 문제가 발생했습니다."
+        ],
+        "route": "/ack",
+        "query_id": null,
+        "callback_calls": 0,
+        "callback_id": null,
+        "dialog_count": 1,
+        "draft": "가상 생성 검증",
+        "submit_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "default number-id 390",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [
+          "풀이 중 문제가 발생했습니다."
+        ],
+        "route": "/ack",
+        "query_id": null,
+        "callback_calls": 0,
+        "callback_id": null,
+        "dialog_count": 1,
+        "draft": "가상 생성 검증",
+        "submit_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "default empty-id 390",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [
+          "풀이 중 문제가 발생했습니다."
+        ],
+        "route": "/ack",
+        "query_id": null,
+        "callback_calls": 0,
+        "callback_id": null,
+        "dialog_count": 1,
+        "draft": "가상 생성 검증",
+        "submit_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "default valid-control 390",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [],
+        "route": "/saved",
+        "query_id": "qa-batch4-created",
+        "callback_calls": 0,
+        "callback_id": null,
+        "dialog_count": 0,
+        "draft": null,
+        "submit_enabled": false,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "callback missing-id 1440",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [
+          "풀이 중 문제가 발생했습니다."
+        ],
+        "route": "/ack",
+        "query_id": null,
+        "callback_calls": 0,
+        "callback_id": null,
+        "dialog_count": 1,
+        "draft": "가상 생성 검증",
+        "submit_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "callback null-id 1440",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [
+          "풀이 중 문제가 발생했습니다."
+        ],
+        "route": "/ack",
+        "query_id": null,
+        "callback_calls": 0,
+        "callback_id": null,
+        "dialog_count": 1,
+        "draft": "가상 생성 검증",
+        "submit_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "callback number-id 1440",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [
+          "풀이 중 문제가 발생했습니다."
+        ],
+        "route": "/ack",
+        "query_id": null,
+        "callback_calls": 0,
+        "callback_id": null,
+        "dialog_count": 1,
+        "draft": "가상 생성 검증",
+        "submit_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "callback empty-id 1440",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [
+          "풀이 중 문제가 발생했습니다."
+        ],
+        "route": "/ack",
+        "query_id": null,
+        "callback_calls": 0,
+        "callback_id": null,
+        "dialog_count": 1,
+        "draft": "가상 생성 검증",
+        "submit_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "callback valid-control 1440",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [],
+        "route": "/ack",
+        "query_id": null,
+        "callback_calls": 1,
+        "callback_id": "qa-batch4-created",
+        "dialog_count": 0,
+        "draft": null,
+        "submit_enabled": false,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "default missing-id 1440",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [
+          "풀이 중 문제가 발생했습니다."
+        ],
+        "route": "/ack",
+        "query_id": null,
+        "callback_calls": 0,
+        "callback_id": null,
+        "dialog_count": 1,
+        "draft": "가상 생성 검증",
+        "submit_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "default null-id 1440",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [
+          "풀이 중 문제가 발생했습니다."
+        ],
+        "route": "/ack",
+        "query_id": null,
+        "callback_calls": 0,
+        "callback_id": null,
+        "dialog_count": 1,
+        "draft": "가상 생성 검증",
+        "submit_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "default number-id 1440",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [
+          "풀이 중 문제가 발생했습니다."
+        ],
+        "route": "/ack",
+        "query_id": null,
+        "callback_calls": 0,
+        "callback_id": null,
+        "dialog_count": 1,
+        "draft": "가상 생성 검증",
+        "submit_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "default empty-id 1440",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [
+          "풀이 중 문제가 발생했습니다."
+        ],
+        "route": "/ack",
+        "query_id": null,
+        "callback_calls": 0,
+        "callback_id": null,
+        "dialog_count": 1,
+        "draft": "가상 생성 검증",
+        "submit_enabled": true,
+        "page_errors": []
+      },
+      "pass": true
+    },
+    {
+      "group": "ack",
+      "name": "default valid-control 1440",
+      "observed": {
+        "synthetic_posts": 1,
+        "alerts": [],
+        "route": "/saved",
+        "query_id": "qa-batch4-created",
+        "callback_calls": 0,
+        "callback_id": null,
+        "dialog_count": 0,
+        "draft": null,
+        "submit_enabled": false,
+        "page_errors": []
+      },
+      "pass": true
+    }
+  ],
+  "observations": [
+    {
+      "group": "ack",
+      "mode": "callback-missing-id",
+      "width": 390,
+      "synthetic_posts": 1,
+      "alerts": [
+        "풀이 중 문제가 발생했습니다."
+      ],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 1,
+      "draft": "가상 생성 검증",
+      "submit_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "callback-null-id",
+      "width": 390,
+      "synthetic_posts": 1,
+      "alerts": [
+        "풀이 중 문제가 발생했습니다."
+      ],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 1,
+      "draft": "가상 생성 검증",
+      "submit_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "callback-number-id",
+      "width": 390,
+      "synthetic_posts": 1,
+      "alerts": [
+        "풀이 중 문제가 발생했습니다."
+      ],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 1,
+      "draft": "가상 생성 검증",
+      "submit_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "callback-empty-id",
+      "width": 390,
+      "synthetic_posts": 1,
+      "alerts": [
+        "풀이 중 문제가 발생했습니다."
+      ],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 1,
+      "draft": "가상 생성 검증",
+      "submit_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "callback-valid-control",
+      "width": 390,
+      "synthetic_posts": 1,
+      "alerts": [],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 1,
+      "callback_id": "qa-batch4-created",
+      "dialog_count": 0,
+      "draft": null,
+      "submit_enabled": false,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "default-missing-id",
+      "width": 390,
+      "synthetic_posts": 1,
+      "alerts": [
+        "풀이 중 문제가 발생했습니다."
+      ],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 1,
+      "draft": "가상 생성 검증",
+      "submit_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "default-null-id",
+      "width": 390,
+      "synthetic_posts": 1,
+      "alerts": [
+        "풀이 중 문제가 발생했습니다."
+      ],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 1,
+      "draft": "가상 생성 검증",
+      "submit_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "default-number-id",
+      "width": 390,
+      "synthetic_posts": 1,
+      "alerts": [
+        "풀이 중 문제가 발생했습니다."
+      ],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 1,
+      "draft": "가상 생성 검증",
+      "submit_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "default-empty-id",
+      "width": 390,
+      "synthetic_posts": 1,
+      "alerts": [
+        "풀이 중 문제가 발생했습니다."
+      ],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 1,
+      "draft": "가상 생성 검증",
+      "submit_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "default-valid-control",
+      "width": 390,
+      "synthetic_posts": 1,
+      "alerts": [],
+      "route": "/saved",
+      "query_id": "qa-batch4-created",
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 0,
+      "draft": null,
+      "submit_enabled": false,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "callback-missing-id",
+      "width": 1440,
+      "synthetic_posts": 1,
+      "alerts": [
+        "풀이 중 문제가 발생했습니다."
+      ],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 1,
+      "draft": "가상 생성 검증",
+      "submit_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "callback-null-id",
+      "width": 1440,
+      "synthetic_posts": 1,
+      "alerts": [
+        "풀이 중 문제가 발생했습니다."
+      ],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 1,
+      "draft": "가상 생성 검증",
+      "submit_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "callback-number-id",
+      "width": 1440,
+      "synthetic_posts": 1,
+      "alerts": [
+        "풀이 중 문제가 발생했습니다."
+      ],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 1,
+      "draft": "가상 생성 검증",
+      "submit_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "callback-empty-id",
+      "width": 1440,
+      "synthetic_posts": 1,
+      "alerts": [
+        "풀이 중 문제가 발생했습니다."
+      ],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 1,
+      "draft": "가상 생성 검증",
+      "submit_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "callback-valid-control",
+      "width": 1440,
+      "synthetic_posts": 1,
+      "alerts": [],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 1,
+      "callback_id": "qa-batch4-created",
+      "dialog_count": 0,
+      "draft": null,
+      "submit_enabled": false,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "default-missing-id",
+      "width": 1440,
+      "synthetic_posts": 1,
+      "alerts": [
+        "풀이 중 문제가 발생했습니다."
+      ],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 1,
+      "draft": "가상 생성 검증",
+      "submit_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "default-null-id",
+      "width": 1440,
+      "synthetic_posts": 1,
+      "alerts": [
+        "풀이 중 문제가 발생했습니다."
+      ],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 1,
+      "draft": "가상 생성 검증",
+      "submit_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "default-number-id",
+      "width": 1440,
+      "synthetic_posts": 1,
+      "alerts": [
+        "풀이 중 문제가 발생했습니다."
+      ],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 1,
+      "draft": "가상 생성 검증",
+      "submit_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "default-empty-id",
+      "width": 1440,
+      "synthetic_posts": 1,
+      "alerts": [
+        "풀이 중 문제가 발생했습니다."
+      ],
+      "route": "/ack",
+      "query_id": null,
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 1,
+      "draft": "가상 생성 검증",
+      "submit_enabled": true,
+      "page_errors": []
+    },
+    {
+      "group": "ack",
+      "mode": "default-valid-control",
+      "width": 1440,
+      "synthetic_posts": 1,
+      "alerts": [],
+      "route": "/saved",
+      "query_id": "qa-batch4-created",
+      "callback_calls": 0,
+      "callback_id": null,
+      "dialog_count": 0,
+      "draft": null,
+      "submit_enabled": false,
+      "page_errors": []
+    }
+  ],
+  "page_errors": [],
+  "console_errors": [],
+  "outbound_requests": [],
+  "synthetic_gets": [],
+  "synthetic_posts": [
+    {
+      "group": "ack",
+      "mode": "missing-id",
+      "width": 390,
+      "delivery": "callback",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "null-id",
+      "width": 390,
+      "delivery": "callback",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "number-id",
+      "width": 390,
+      "delivery": "callback",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "empty-id",
+      "width": 390,
+      "delivery": "callback",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "valid-control",
+      "width": 390,
+      "delivery": "callback",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "missing-id",
+      "width": 390,
+      "delivery": "default",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "null-id",
+      "width": 390,
+      "delivery": "default",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "number-id",
+      "width": 390,
+      "delivery": "default",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "empty-id",
+      "width": 390,
+      "delivery": "default",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "valid-control",
+      "width": 390,
+      "delivery": "default",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "missing-id",
+      "width": 1440,
+      "delivery": "callback",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "null-id",
+      "width": 1440,
+      "delivery": "callback",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "number-id",
+      "width": 1440,
+      "delivery": "callback",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "empty-id",
+      "width": 1440,
+      "delivery": "callback",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "valid-control",
+      "width": 1440,
+      "delivery": "callback",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "missing-id",
+      "width": 1440,
+      "delivery": "default",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "null-id",
+      "width": 1440,
+      "delivery": "default",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "number-id",
+      "width": 1440,
+      "delivery": "default",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "empty-id",
+      "width": 1440,
+      "delivery": "default",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    },
+    {
+      "group": "ack",
+      "mode": "valid-control",
+      "width": 1440,
+      "delivery": "default",
+      "body": {
+        "name": "가상 생성 검증",
+        "gender": "male",
+        "calendarType": "solar",
+        "birthYear": 1995,
+        "birthMonth": 5,
+        "birthDay": 15,
+        "birthHour": 13,
+        "birthMinute": 30,
+        "isUnknownTime": false,
+        "category": "overall"
+      }
+    }
+  ],
+  "actual_backend_requests": 0,
+  "database_operations": 0,
+  "actual_ai_provider_calls": 0,
+  "user_clipboard_or_storage_access": 0,
+  "isolated_fictional_session_storage_only": true,
+  "native_pointer_and_keyboard": true,
+  "native_computed_accessibility_role_queries": true,
+  "physical_screen_reader_tested": false,
+  "manual_dom_events": 0,
+  "previous_completed_suites_rerun": 0,
+  "previous_completed_fixes_counted": 0,
+  "scope": "New Manse visible-label associations and native missing-field validation, actual Saved/FortuneCard nested render shape, Pokedex named modal semantics and Saju create acknowledgement ID type. Native Chrome production React/Tailwind at 390x844 and 1440x1000 with isolated fictional intercepted APIs. Fixed Next/host/navigation landing fixtures; actual card and calculation UI components. Pure calculation prepares fictional reading data; no calculation correctness claim. Prior gender/selection, saved list/ID/cache/cancellation, collection close/focus, Saju HTTP/date/dialog/send and all completed suites are unchanged/excluded. No real API/DB/Gemini/user storage/clipboard/auth/3D/hosted/physical device or screen-reader acceptance."
+}

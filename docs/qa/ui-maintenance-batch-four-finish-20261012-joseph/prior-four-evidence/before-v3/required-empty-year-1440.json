@@ -1,0 +1,14 @@
+{
+  "missing_before": {
+    "required": false,
+    "missing": false
+  },
+  "focused_missing_input": false,
+  "prior_result_count": 1,
+  "result_count": 0,
+  "error_count": 1,
+  "hour_disabled": false,
+  "unknown_result_count": 0,
+  "synthetic_posts": 0,
+  "page_errors": []
+}

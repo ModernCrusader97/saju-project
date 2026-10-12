@@ -1,0 +1,498 @@
+{
+  "status": "PASS_HISTORICAL_UI_DIFF_REVIEW_ONE_DUPLICATE_EXCLUDED_PARTIAL_WIP_HANDOFF_REQUIRED",
+  "at_utc": "2026-10-11T05:15:55.846Z",
+  "branch": "fix/ui-maintenance-batch-four-20261011-joseph",
+  "basis": "0209c23fe04a0ef60c916a16d6e8002ae65693dd",
+  "original_raw_progress_count": 5,
+  "validated_new_fix_count": 4,
+  "commit_batch_target": 5,
+  "duplicate_fix_count": 1,
+  "historical_commits": [
+    {
+      "boundary": "labels",
+      "commit": "ea018e2228df521ca560e203fe6955c1a2158c27",
+      "file": "app/manse/page.tsx",
+      "patch_sha256": "be1dac2d14d7ef024e9d08ad08695ce8382578c0431bbf45a98278746cad1209",
+      "before_git_sha256": "823495ad9e71435d1d516ee03167a8baa45afd2565dda5b159f809a691713ff4",
+      "after_git_sha256": "12e47d47c36005757f15020c15da9afdbec6663aec99afa0cc59ef61e96aaa4d",
+      "author_identity_body_or_other_project_files_included": false
+    },
+    {
+      "boundary": "analysis",
+      "commit": "637d93cc60ae4cf8d8096dae478eb3eb7cca1f9d",
+      "file": "app/saved/page.tsx",
+      "patch_sha256": "b2aa6812a91048bfed170189a0acbc04cc74652be9dff02e745e44c874b2ed09",
+      "before_git_sha256": "30f92245ffff3d5489d6e52975acb18ae51b1f421355527a1f0086b827e1b5de",
+      "after_git_sha256": "90c9943a5960b6989de6529ec03622d19b253ca632ff35dd3debf75f3ac2c107",
+      "author_identity_body_or_other_project_files_included": false
+    },
+    {
+      "boundary": "elements",
+      "commit": "468861672c7a44c9fb96439e7f2031778001c33c",
+      "file": "app/saved/page.tsx",
+      "patch_sha256": "2fffc480e1dc0e0ecc69af7c17b0e5769a436bcaa4be6685993b6dc5006ce515",
+      "before_git_sha256": "90c9943a5960b6989de6529ec03622d19b253ca632ff35dd3debf75f3ac2c107",
+      "after_git_sha256": "9b9631372d990a9877fbac148a9308bb5965bc1f0380444824c5e4eb83ada393",
+      "author_identity_body_or_other_project_files_included": false
+    }
+  ],
+  "label_review": {
+    "id": "manse-field-label-association",
+    "classification": "EXACT_SAME_FIVE_LABEL_INPUT_ASSOCIATIONS_REEXECUTED_EXCLUDE_FROM_NEW_COUNT",
+    "historical_commit": "ea018e2228df521ca560e203fe6955c1a2158c27",
+    "current_before_equals_prior_label_pairs": true,
+    "current_after_equals_prior_label_pairs": true,
+    "before": {
+      "labels": [
+        {
+          "label": "이름",
+          "html_for": null
+        },
+        {
+          "label": "태어난 년도",
+          "html_for": null
+        },
+        {
+          "label": "월",
+          "html_for": null
+        },
+        {
+          "label": "일",
+          "html_for": null
+        },
+        {
+          "label": "태어난 시 (0~23시):",
+          "html_for": null
+        }
+      ],
+      "input_ids": []
+    },
+    "after": {
+      "labels": [
+        {
+          "label": "이름",
+          "html_for": "manse-name"
+        },
+        {
+          "label": "태어난 년도",
+          "html_for": "manse-year"
+        },
+        {
+          "label": "월",
+          "html_for": "manse-month"
+        },
+        {
+          "label": "일",
+          "html_for": "manse-day"
+        },
+        {
+          "label": "태어난 시 (0~23시):",
+          "html_for": "manse-hour"
+        }
+      ],
+      "input_ids": [
+        "manse-day",
+        "manse-hour",
+        "manse-month",
+        "manse-name",
+        "manse-year"
+      ]
+    },
+    "only_htmlFor_and_matching_input_id_added": true,
+    "attribute_placement_does_not_create_a_new_boundary": true,
+    "native_label_cases_excluded": 6
+  },
+  "saved_detail_review": {
+    "classification": "PARTIAL_OVERLAP_WITH_SUBSTANTIVE_NEW_RENDER_BOUNDARIES_ONE_NEW_CANDIDATE",
+    "prior_analysis_commit": "637d93cc60ae4cf8d8096dae478eb3eb7cca1f9d",
+    "prior_elements_commit": "468861672c7a44c9fb96439e7f2031778001c33c",
+    "prior_guard_declaration": "const analysis = data.fortune?.analysis;",
+    "prior_guard_condition": "!data.fortune || data.fortune.id !== queryId || !analysis || typeof analysis !== \"object\" || Array.isArray(analysis) || analysis.elementsCount === undefined || analysis.elementsCount === null",
+    "actual_current_validator_sha256": "e8f4bbf93829d13341d1a042c6677cecf8910b7f2e562f8eee80ffbbca70a380",
+    "fixture_logic_matches_current_focused_harness": true,
+    "boundaries": [
+      {
+        "mode": "missing-analysis",
+        "fixture_sha256": "a9c3738f46fec644a07e27ab7c9d18edc1946ccd0c0704ccae3e27c95b6f435f",
+        "prior_468_condition_accepts": false,
+        "current_validator_accepts": false,
+        "classification": "PAST_COMPLETED_BOUNDARY_EXCLUDED",
+        "counted_as_separate_ui_fixes": false,
+        "native": [
+          {
+            "width": 390,
+            "before_render_error": "Cannot read properties of undefined (reading 'hourPillar')",
+            "after_retryable_alert_count": 1,
+            "after_page_errors": 0,
+            "native_keyboard_retry_recovers": true,
+            "after_detail_gets": 2
+          },
+          {
+            "width": 1440,
+            "before_render_error": "Cannot read properties of undefined (reading 'hourPillar')",
+            "after_retryable_alert_count": 1,
+            "after_page_errors": 0,
+            "native_keyboard_retry_recovers": true,
+            "after_detail_gets": 2
+          }
+        ]
+      },
+      {
+        "mode": "bad-elements",
+        "fixture_sha256": "eda017d060bee030b88ea5d18b82391e052258bf898f26f2ea68d601c95dd64f",
+        "prior_468_condition_accepts": false,
+        "current_validator_accepts": false,
+        "classification": "PAST_COMPLETED_BOUNDARY_EXCLUDED",
+        "counted_as_separate_ui_fixes": false,
+        "native": [
+          {
+            "width": 390,
+            "before_render_error": "Cannot read properties of null (reading 'wood')",
+            "after_retryable_alert_count": 1,
+            "after_page_errors": 0,
+            "native_keyboard_retry_recovers": true,
+            "after_detail_gets": 2
+          },
+          {
+            "width": 1440,
+            "before_render_error": "Cannot read properties of null (reading 'wood')",
+            "after_retryable_alert_count": 1,
+            "after_page_errors": 0,
+            "native_keyboard_retry_recovers": true,
+            "after_detail_gets": 2
+          }
+        ]
+      },
+      {
+        "mode": "sections-object",
+        "fixture_sha256": "980c3a7ce124998d4e0e2530223c492908fe302b311ad5119fd274c15ddeac9f",
+        "prior_468_condition_accepts": true,
+        "current_validator_accepts": false,
+        "classification": "ADDITIONAL_RENDER_BOUNDARY",
+        "counted_as_separate_ui_fixes": false,
+        "native": [
+          {
+            "width": 390,
+            "before_render_error": "fortune.sections.map is not a function",
+            "after_retryable_alert_count": 1,
+            "after_page_errors": 0,
+            "native_keyboard_retry_recovers": true,
+            "after_detail_gets": 2
+          },
+          {
+            "width": 1440,
+            "before_render_error": "fortune.sections.map is not a function",
+            "after_retryable_alert_count": 1,
+            "after_page_errors": 0,
+            "native_keyboard_retry_recovers": true,
+            "after_detail_gets": 2
+          }
+        ]
+      },
+      {
+        "mode": "null-section",
+        "fixture_sha256": "87ca3c6faae29600b4567164df09e8738ebf3e7702341cfed3cab586fe9bd217",
+        "prior_468_condition_accepts": true,
+        "current_validator_accepts": false,
+        "classification": "ADDITIONAL_RENDER_BOUNDARY",
+        "counted_as_separate_ui_fixes": false,
+        "native": [
+          {
+            "width": 390,
+            "before_render_error": "Cannot read properties of null (reading 'title')",
+            "after_retryable_alert_count": 1,
+            "after_page_errors": 0,
+            "native_keyboard_retry_recovers": true,
+            "after_detail_gets": 2
+          },
+          {
+            "width": 1440,
+            "before_render_error": "Cannot read properties of null (reading 'title')",
+            "after_retryable_alert_count": 1,
+            "after_page_errors": 0,
+            "native_keyboard_retry_recovers": true,
+            "after_detail_gets": 2
+          }
+        ]
+      },
+      {
+        "mode": "bad-metaphor",
+        "fixture_sha256": "c22a21872f412a30bbed603148418368e65da0b82214cf19798a9f8b56d6ad38",
+        "prior_468_condition_accepts": true,
+        "current_validator_accepts": false,
+        "classification": "ADDITIONAL_RENDER_BOUNDARY",
+        "counted_as_separate_ui_fixes": false,
+        "native": [
+          {
+            "width": 390,
+            "before_render_error": "Cannot read properties of null (reading 'coreTitle')",
+            "after_retryable_alert_count": 1,
+            "after_page_errors": 0,
+            "native_keyboard_retry_recovers": true,
+            "after_detail_gets": 2
+          },
+          {
+            "width": 1440,
+            "before_render_error": "Cannot read properties of null (reading 'coreTitle')",
+            "after_retryable_alert_count": 1,
+            "after_page_errors": 0,
+            "native_keyboard_retry_recovers": true,
+            "after_detail_gets": 2
+          }
+        ]
+      },
+      {
+        "mode": "bad-advice",
+        "fixture_sha256": "c3c1fe6941c63fd09134a4fcb107d78d1a5b69df47536c6c5847eb65542acd65",
+        "prior_468_condition_accepts": true,
+        "current_validator_accepts": false,
+        "classification": "ADDITIONAL_RENDER_BOUNDARY",
+        "counted_as_separate_ui_fixes": false,
+        "native": [
+          {
+            "width": 390,
+            "before_render_error": "Cannot read properties of null (reading 'color')",
+            "after_retryable_alert_count": 1,
+            "after_page_errors": 0,
+            "native_keyboard_retry_recovers": true,
+            "after_detail_gets": 2
+          },
+          {
+            "width": 1440,
+            "before_render_error": "Cannot read properties of null (reading 'color')",
+            "after_retryable_alert_count": 1,
+            "after_page_errors": 0,
+            "native_keyboard_retry_recovers": true,
+            "after_detail_gets": 2
+          }
+        ]
+      },
+      {
+        "mode": "valid-control",
+        "fixture_sha256": "789103e35215aa116260f15e5bb3299317aa027b3bc10f3ad8a241943a663f3c",
+        "prior_468_condition_accepts": true,
+        "current_validator_accepts": true,
+        "classification": "NORMAL_OR_LEGACY_CONTROL",
+        "counted_as_separate_ui_fixes": false,
+        "native": [
+          {
+            "width": 390,
+            "normal_or_optional_legacy_display_preserved": true
+          },
+          {
+            "width": 1440,
+            "normal_or_optional_legacy_display_preserved": true
+          }
+        ]
+      },
+      {
+        "mode": "legacy-control",
+        "fixture_sha256": "22a8bb10aed4eb07f22a3b043623ac6900834d20cd42dfe0cc7d49c39c7e5168",
+        "prior_468_condition_accepts": true,
+        "current_validator_accepts": true,
+        "classification": "NORMAL_OR_LEGACY_CONTROL",
+        "counted_as_separate_ui_fixes": false,
+        "native": [
+          {
+            "width": 390,
+            "normal_or_optional_legacy_display_preserved": true
+          },
+          {
+            "width": 1440,
+            "normal_or_optional_legacy_display_preserved": true
+          }
+        ]
+      }
+    ],
+    "overlap_native_cases_excluded": 4,
+    "new_failure_boundary_native_cases": 8,
+    "normal_and_legacy_control_cases": 4,
+    "additional_boundaries_counted_as_one_fix": 1,
+    "past_source_guard_evaluated_in_isolation_no_old_test_suite_or_product_branch_checkout": true
+  },
+  "fixes": [
+    {
+      "number": 2,
+      "id": "manse-birth-required-field-focus",
+      "group": "required",
+      "files": [
+        {
+          "file": "app/manse/page.tsx",
+          "before_sha256": "3875530ebd4aefcdecb23a4048e8c6bf777395bd698d59a8caf710febdb271da",
+          "after_sha256": "012b6e4c3aaa72c50d2873ebbdbb6b5b549c9eb62dc77076f892b96298b76140",
+          "inverse_native_bytes_verified": true
+        }
+      ],
+      "change": "Require birth year/month/day and enabled known-hour input before submit; focus the blank field and retain the last displayed reading. Existing strict parser and calculation stay unchanged; disabled unknown-hour remains valid.",
+      "before_reproduction": {
+        "passed": 4,
+        "failed": 8
+      },
+      "after_focused_verification": {
+        "passed": 12,
+        "failed": 0
+      },
+      "browser": "154.0.8037.98",
+      "viewports": [
+        "390x844",
+        "1440x1000"
+      ],
+      "native_pointer_and_keyboard": true,
+      "physical_screen_reader_tested": false,
+      "manual_dom_events": 0,
+      "proof": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/item2/browser-results.json"
+    },
+    {
+      "number": 3,
+      "id": "saved-detail-additional-section-metaphor-advice-render-boundaries",
+      "group": "detail",
+      "files": [
+        {
+          "file": "app/saved/page.tsx",
+          "before_sha256": "0d86e8fec1257881c16e841a6ce1aca3c48a7fcd6066388e56bd2b33fb19f4fc",
+          "after_sha256": "378572d7489980372ed6e3558c938f76ebcb5f1f63e0dce33b362835dccbcf09",
+          "inverse_native_bytes_verified": true
+        }
+      ],
+      "change": "Extend prior completed analysis/missing-element guards with sections array/entry, metaphor and luckyAdvice render validation. Existing analysis and null-element cases are overlap controls and excluded from new cases/count.",
+      "before_reproduction": {
+        "passed": 4,
+        "failed": 12
+      },
+      "after_focused_verification": {
+        "passed": 12,
+        "failed": 0,
+        "includes_normal_and_legacy_controls": 4
+      },
+      "browser": "154.0.8037.98",
+      "viewports": [
+        "390x844",
+        "1440x1000"
+      ],
+      "native_pointer_and_keyboard": true,
+      "physical_screen_reader_tested": false,
+      "manual_dom_events": 0,
+      "proof": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/item3/browser-results.json",
+      "prior_completed_boundary_modes_excluded": [
+        "missing-analysis",
+        "bad-elements"
+      ],
+      "new_distinct_boundary_modes": [
+        "sections-object",
+        "null-section",
+        "bad-metaphor",
+        "bad-advice"
+      ],
+      "original_focused_result_retained_unmodified": 16
+    },
+    {
+      "number": 4,
+      "id": "pokedex-named-modal-semantics",
+      "group": "pokedex",
+      "files": [
+        {
+          "file": "components/planet/GalaxyPokedexModal.tsx",
+          "before_sha256": "3606a887f5781959e52b833a0eea63a718c7348b66bef472eac336eb1fd0bc85",
+          "after_sha256": "f57f22eec3459b88ac70a51f24b36fae184b5269af18470f85717e6a7c6529b9",
+          "inverse_native_bytes_verified": true
+        }
+      ],
+      "change": "Expose the existing collection pane as a named modal dialog. Keep its current appearance, close control, focus handling and data/art unchanged; prior keyboard/close-name suites are not rerun.",
+      "before_reproduction": {
+        "passed": 2,
+        "failed": 4
+      },
+      "after_focused_verification": {
+        "passed": 6,
+        "failed": 0
+      },
+      "browser": "154.0.8037.98",
+      "viewports": [
+        "390x844",
+        "1440x1000"
+      ],
+      "native_pointer_and_keyboard": true,
+      "physical_screen_reader_tested": false,
+      "manual_dom_events": 0,
+      "proof": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/item4/browser-results.json"
+    },
+    {
+      "number": 5,
+      "id": "saju-create-result-id-type",
+      "group": "ack",
+      "files": [
+        {
+          "file": "components/SajuInputModal.tsx",
+          "before_sha256": "4787358979a2427fb9d55fd39933c2def54134e4532244876f8ab10e265e0748",
+          "after_sha256": "9b8f44d9225f7f3e60fae6282adeb0cd86a580f3da9ed4d1f7909af5d8072ec6",
+          "inverse_native_bytes_verified": true
+        }
+      ],
+      "change": "Require a nonempty string reading ID before invoking success, closing the draft or navigating after a successful create acknowledgement. Missing/null/numeric/empty IDs retain the draft and use the existing error path; prior HTTP/form/modal/provider behavior stays unchanged.",
+      "before_reproduction": {
+        "passed": 4,
+        "failed": 16
+      },
+      "after_focused_verification": {
+        "passed": 20,
+        "failed": 0
+      },
+      "browser": "154.0.8037.98",
+      "viewports": [
+        "390x844",
+        "1440x1000"
+      ],
+      "native_pointer_and_keyboard": true,
+      "physical_screen_reader_tested": false,
+      "manual_dom_events": 0,
+      "proof": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/item5/browser-results.json"
+    }
+  ],
+  "source_inverse": [
+    {
+      "file": "app/manse/page.tsx",
+      "basis_native_sha256": "69059f05bd8a6014e72905927d592855929f2b10868baed1cc1ec41dc1f5b0cc",
+      "current_native_sha256": "012b6e4c3aaa72c50d2873ebbdbb6b5b549c9eb62dc77076f892b96298b76140",
+      "current_native_bytes": 15420,
+      "inverse_to_exact_basis_native_bytes": true
+    },
+    {
+      "file": "app/saved/page.tsx",
+      "basis_native_sha256": "0d86e8fec1257881c16e841a6ce1aca3c48a7fcd6066388e56bd2b33fb19f4fc",
+      "current_native_sha256": "378572d7489980372ed6e3558c938f76ebcb5f1f63e0dce33b362835dccbcf09",
+      "current_native_bytes": 16762,
+      "inverse_to_exact_basis_native_bytes": true
+    },
+    {
+      "file": "components/planet/GalaxyPokedexModal.tsx",
+      "basis_native_sha256": "3606a887f5781959e52b833a0eea63a718c7348b66bef472eac336eb1fd0bc85",
+      "current_native_sha256": "f57f22eec3459b88ac70a51f24b36fae184b5269af18470f85717e6a7c6529b9",
+      "current_native_bytes": 7981,
+      "inverse_to_exact_basis_native_bytes": true
+    },
+    {
+      "file": "components/SajuInputModal.tsx",
+      "basis_native_sha256": "4787358979a2427fb9d55fd39933c2def54134e4532244876f8ab10e265e0748",
+      "current_native_sha256": "9b8f44d9225f7f3e60fae6282adeb0cd86a580f3da9ed4d1f7909af5d8072ec6",
+      "current_native_bytes": 16642,
+      "inverse_to_exact_basis_native_bytes": true
+    }
+  ],
+  "focused_verification": {
+    "raw_passed": 60,
+    "new_nonduplicate_cases_and_controls_passed": 50,
+    "excluded_semantically_repeated_cases": 10,
+    "source": "Existing item1..5 results, reclassified; no full current-batch final regression or build/type gate was run after correction.",
+    "page_errors_after": 0,
+    "console_errors_after": 0,
+    "outbound_requests_after": 0
+  },
+  "all_original_raw_evidence_retained": true,
+  "raw_progress_and_harness_prior_count_claims_superseded_by_this_review": true,
+  "product_wip_discarded_or_reset": false,
+  "index_empty": true,
+  "commit_created": false,
+  "push_performed": false,
+  "remaining_blocker": "Only four new candidates after required duplicate review; five-fix commit/push is not authorized.",
+  "next_action": "Preserve corrected WIP and evidence in new owner-only Drive files and hand off without filler, commit, push or next batch."
+}

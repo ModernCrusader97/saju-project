@@ -1,0 +1,692 @@
+{
+  "status": "PASS_FIVE_NEW_BATCH4_UI_FIXES_FINAL_GATES_READY_FOR_ONE_COMMIT",
+  "at_utc": "2026-10-12T02:18:51.300Z",
+  "host": "Joseph",
+  "repo": "D:/Codex/Work/SaJuUiOneBug-20261010-Joseph/repo",
+  "branch": "fix/ui-maintenance-batch-four-20261011-joseph",
+  "basis": "0209c23fe04a0ef60c916a16d6e8002ae65693dd",
+  "validated_new_fix_count": 5,
+  "commit_batch_target": 5,
+  "fixes": [
+    {
+      "number": 1,
+      "id": "manse-birth-required-field-focus",
+      "files": [
+        "app/manse/page.tsx"
+      ],
+      "change": "Require birth year/month/day and enabled known-hour input before submit; focus the blank field and retain the last displayed reading. Existing strict parser and calculation stay unchanged; disabled unknown-hour remains valid.",
+      "focused_passed": 12,
+      "prior_boundaries_excluded": [],
+      "source_proof": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/item2/browser-results.json"
+    },
+    {
+      "number": 2,
+      "id": "saved-detail-additional-section-metaphor-advice-render-boundaries",
+      "files": [
+        "app/saved/page.tsx"
+      ],
+      "change": "Extend prior completed analysis/missing-element guards with sections array/entry, metaphor and luckyAdvice render validation. Existing analysis and null-element cases are overlap controls and excluded from new cases/count.",
+      "focused_passed": 12,
+      "prior_boundaries_excluded": [
+        "missing-analysis",
+        "bad-elements"
+      ],
+      "source_proof": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/item3/browser-results.json"
+    },
+    {
+      "number": 3,
+      "id": "pokedex-named-modal-semantics",
+      "files": [
+        "components/planet/GalaxyPokedexModal.tsx"
+      ],
+      "change": "Expose the existing collection pane as a named modal dialog. Keep its current appearance, close control, focus handling and data/art unchanged; prior keyboard/close-name suites are not rerun.",
+      "focused_passed": 6,
+      "prior_boundaries_excluded": [],
+      "source_proof": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/item4/browser-results.json"
+    },
+    {
+      "number": 4,
+      "id": "saju-create-result-id-type",
+      "files": [
+        "components/SajuInputModal.tsx"
+      ],
+      "change": "Require a nonempty string reading ID before invoking success, closing the draft or navigating after a successful create acknowledgement. Missing/null/numeric/empty IDs retain the draft and use the existing error path; prior HTTP/form/modal/provider behavior stays unchanged.",
+      "focused_passed": 20,
+      "prior_boundaries_excluded": [],
+      "source_proof": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/item5/browser-results.json"
+    },
+    {
+      "number": 5,
+      "id": "chat-whitespace-only-reply-acknowledgement",
+      "files": [
+        "components/AskDoryeongModal.tsx"
+      ],
+      "change": "Reject whitespace-only reply acknowledgements and retain the question draft",
+      "focused_passed": 12,
+      "prior_boundaries_excluded": [],
+      "source_proof": "D:/Codex/Results/SaJuUiBatchFourFinish-20261012-Joseph/after-whitespace/browser-results.json"
+    }
+  ],
+  "excluded_historical_label_fix": {
+    "number": 1,
+    "id": "manse-field-label-association",
+    "prior_commit": "ea018e2228df521ca560e203fe6955c1a2158c27"
+  },
+  "excluded_saved_prior_boundaries": [
+    "missing-analysis",
+    "bad-elements"
+  ],
+  "previous_duplicate_claims_corrected_and_original_raw_records_retained": true,
+  "fifth_boundary": {
+    "history": {
+      "status": "PASS_NEW_SEMANTIC_WHITESPACE_BOUNDARY_NOT_HISTORICAL_STRING_TYPE_FIX",
+      "at_utc": "2026-10-12T01:46:53.350Z",
+      "file": "components/AskDoryeongModal.tsx",
+      "remote_tips_reviewed": 62,
+      "history_commits_touching_component": 10,
+      "distinct_source_versions": 8,
+      "missing_historical_tips": [],
+      "versions": [
+        {
+          "commit": "40f0c9a4b66bcae1c222d33d99cc6f6963e2f573",
+          "source_sha256": "02c43262476408d1b9c85ba6d54773434bf7c2c8d9410202667f522a261a9eb8",
+          "reply_conditions": [
+            {
+              "condition": "!res.ok || !data.success || !data.reply",
+              "throw_on_true": true
+            }
+          ],
+          "semantic_trim_guard_present": false
+        },
+        {
+          "commit": "9273191bf0630b45a2373460a36dd75648087e40",
+          "source_sha256": "8e799a4f2e45367f347b0a76baa7fba975b8a90daedc55bb40b5c562f6b724c0",
+          "reply_conditions": [
+            {
+              "condition": "data.success && data.reply",
+              "throw_on_true": false
+            }
+          ],
+          "semantic_trim_guard_present": false
+        },
+        {
+          "commit": "9cfbe47e373a79e88006405c8bc3c4298c62b6d8",
+          "source_sha256": "5900690d92e636975bdb30707b400269da197a3230e58b5ca70491195b1e3524",
+          "reply_conditions": [
+            {
+              "condition": "!res.ok || !data.success || !data.reply",
+              "throw_on_true": true
+            }
+          ],
+          "semantic_trim_guard_present": false
+        },
+        {
+          "commit": "f3223904b271c6fbc1d35f9960903e8320a9532b",
+          "source_sha256": "c0c748e980963bfe89f9921ffe0682fbce0d829836ac9e2ad62d60bdb39e0ae4",
+          "reply_conditions": [
+            {
+              "condition": "data.success && data.reply",
+              "throw_on_true": false
+            }
+          ],
+          "semantic_trim_guard_present": false
+        },
+        {
+          "commit": "37f9bab1f8480170ea64cd17232d7f07a301f7cd",
+          "source_sha256": "b3d1756a2844a022071d35f90936784155f6de156004e80a79beb06ab2389d66",
+          "reply_conditions": [
+            {
+              "condition": "!res.ok || !data.success || !data.reply",
+              "throw_on_true": true
+            }
+          ],
+          "semantic_trim_guard_present": false
+        },
+        {
+          "commit": "881e266336a54bd14fbd9979b1dc0f301a4506cb",
+          "source_sha256": "8b674b5cee79dbffcc31af4b7811c09c8ee62e12fef8e5e3e0526952ec1cba9b",
+          "reply_conditions": [
+            {
+              "condition": "!res.ok || !data.success || !data.reply",
+              "throw_on_true": true
+            }
+          ],
+          "semantic_trim_guard_present": false
+        },
+        {
+          "commit": "343e3c3ee2ca91f42eafe7e14fbae1b91c0e5893",
+          "source_sha256": "4918e2b59138dbeee2c04f1f47389418caa5181e08fca4620f63184f367a9b09",
+          "reply_conditions": [
+            {
+              "condition": "!res.ok || !data.success || typeof data.reply !== \"string\" || !data.reply",
+              "throw_on_true": true
+            }
+          ],
+          "semantic_trim_guard_present": false
+        },
+        {
+          "commit": "0209c23fe04a0ef60c916a16d6e8002ae65693dd",
+          "source_sha256": "8eb9fb0c7a378e752c993d8d4c7f04fa76f0ba7c276f4ebdf02690ccc0de187f",
+          "reply_conditions": [
+            {
+              "condition": "!res.ok || !data.success || typeof data.reply !== \"string\" || !data.reply",
+              "throw_on_true": true
+            }
+          ],
+          "semantic_trim_guard_present": false
+        }
+      ],
+      "prior_string_type_commit": "343e3c3ee2ca91f42eafe7e14fbae1b91c0e5893",
+      "prior_type_patch_sha256": "15ed1e1127b53697d1b986f596253004e1f76177e2b800b6d3100a2955615d7d",
+      "current_source_sha256": "6fb49eaf5a63e29d38ee7d490995b1287765a7eb7bb766458b43dfb920417a6c",
+      "examples": [
+        {
+          "reply_json": "\"   \"",
+          "historical_string_and_truthiness_guard_accepts": true,
+          "proposed_non_whitespace_guard_accepts": false
+        },
+        {
+          "reply_json": "\"\\t\\r\\n\\t\"",
+          "historical_string_and_truthiness_guard_accepts": true,
+          "proposed_non_whitespace_guard_accepts": false
+        },
+        {
+          "reply_json": "\" 　\\n\"",
+          "historical_string_and_truthiness_guard_accepts": true,
+          "proposed_non_whitespace_guard_accepts": false
+        }
+      ],
+      "scope": "Reject only replies whose ECMAScript trim result is empty. Previous type/empty-string/HTTP/history/focus/recovery changes are preserved and excluded from new improvement count. Plain replies and surrounding useful formatting remain byte-preserved in displayed response.",
+      "new_improvement_count_if_native_before_after_passes": 1,
+      "previous_label_analysis_elements_duplicates_counted": 0,
+      "implementation_applied": false
+    },
+    "before": [
+      {
+        "mode": "spaces",
+        "width": 390,
+        "pass": false
+      },
+      {
+        "mode": "tabs-lines",
+        "width": 390,
+        "pass": false
+      },
+      {
+        "mode": "unicode-whitespace",
+        "width": 390,
+        "pass": false
+      },
+      {
+        "mode": "plain-valid-control",
+        "width": 390,
+        "pass": true
+      },
+      {
+        "mode": "formatted-valid-control",
+        "width": 390,
+        "pass": true
+      },
+      {
+        "mode": "old-empty-control",
+        "width": 390,
+        "pass": true
+      },
+      {
+        "mode": "spaces",
+        "width": 1440,
+        "pass": false
+      },
+      {
+        "mode": "tabs-lines",
+        "width": 1440,
+        "pass": false
+      },
+      {
+        "mode": "unicode-whitespace",
+        "width": 1440,
+        "pass": false
+      },
+      {
+        "mode": "plain-valid-control",
+        "width": 1440,
+        "pass": true
+      },
+      {
+        "mode": "formatted-valid-control",
+        "width": 1440,
+        "pass": true
+      },
+      {
+        "mode": "old-empty-control",
+        "width": 1440,
+        "pass": true
+      }
+    ],
+    "after_focused_passed": 12,
+    "after_final_passed": 12,
+    "new_whitespace_failure_cases_before": 6,
+    "normal_or_prior_empty_controls": 6,
+    "new_type_or_empty_string_fix_counted": false,
+    "useful_reply_formatting_preserved": true,
+    "only_one_semantic_condition_changed": true
+  },
+  "final_regression": {
+    "native_chrome": "154.0.8037.98",
+    "viewports": [
+      "390x844",
+      "1440x1000"
+    ],
+    "old_four_current_wip_cases_passed": 60,
+    "new_fifth_related_cases_passed": 12,
+    "total_passed": 72,
+    "total_failed": 0,
+    "page_errors": 0,
+    "console_errors": 0,
+    "outbound_requests": 0,
+    "prior_label_cases6_and_saved_overlap_cases4_and_prior_empty_cases2_are_regression_controls_only": true,
+    "manual_dom_events": 0,
+    "actual_backend_requests": 0,
+    "database_operations": 0,
+    "actual_ai_provider_calls": 0,
+    "user_clipboard_or_storage_access": 0
+  },
+  "types_exit": 0,
+  "production_build_exit": 0,
+  "lint": {
+    "status": "PASS_EXISTING_DIAGNOSTICS_PRESERVED_NO_NEW_PRODUCT_OR_QA_DIAGNOSTICS",
+    "scope": [
+      "app/manse/page.tsx",
+      "app/saved/page.tsx",
+      "components/planet/GalaxyPokedexModal.tsx",
+      "components/SajuInputModal.tsx",
+      "components/AskDoryeongModal.tsx",
+      "scripts/qa/ui-maintenance-batch-four-browser.mjs",
+      "scripts/qa/ui-maintenance-batch-four-chat-whitespace.mjs"
+    ],
+    "baseline": [
+      {
+        "file": "app/manse/page.tsx",
+        "errors": 0,
+        "warnings": 4,
+        "messages": [
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Sparkles' is defined but never used.",
+            "line": 8,
+            "column": 20
+          },
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'User' is defined but never used.",
+            "line": 8,
+            "column": 30
+          },
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Clock' is defined but never used.",
+            "line": 8,
+            "column": 36
+          },
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Compass' is defined but never used.",
+            "line": 8,
+            "column": 43
+          }
+        ]
+      },
+      {
+        "file": "app/saved/page.tsx",
+        "errors": 0,
+        "warnings": 0,
+        "messages": []
+      },
+      {
+        "file": "components/planet/GalaxyPokedexModal.tsx",
+        "errors": 0,
+        "warnings": 1,
+        "messages": [
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'level' is assigned a value but never used.",
+            "line": 63,
+            "column": 5
+          }
+        ]
+      },
+      {
+        "file": "components/SajuInputModal.tsx",
+        "errors": 2,
+        "warnings": 3,
+        "messages": [
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Loader2' is defined but never used.",
+            "line": 7,
+            "column": 23
+          },
+          {
+            "ruleId": "@next/next/no-location-assign-relative-destination",
+            "severity": 1,
+            "message": "Do not use `window.location.assign()` to navigate to internal Next.js pages. Use `redirect()` in the render phase, or `useRouter().push()` in Client Components' event handlers instead. See: https://nextjs.org/docs/messages/no-location-assign-relative-destination",
+            "line": 129,
+            "column": 11
+          },
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'err' is defined but never used.",
+            "line": 135,
+            "column": 14
+          },
+          {
+            "ruleId": "@typescript-eslint/no-explicit-any",
+            "severity": 2,
+            "message": "Unexpected any. Specify a different type.",
+            "line": 135,
+            "column": 19
+          },
+          {
+            "ruleId": "@typescript-eslint/no-explicit-any",
+            "severity": 2,
+            "message": "Unexpected any. Specify a different type.",
+            "line": 260,
+            "column": 63
+          }
+        ]
+      },
+      {
+        "file": "components/AskDoryeongModal.tsx",
+        "errors": 0,
+        "warnings": 0,
+        "messages": []
+      }
+    ],
+    "current": [
+      {
+        "file": "app/manse/page.tsx",
+        "errors": 0,
+        "warnings": 4,
+        "messages": [
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Sparkles' is defined but never used.",
+            "line": 8,
+            "column": 20
+          },
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'User' is defined but never used.",
+            "line": 8,
+            "column": 30
+          },
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Clock' is defined but never used.",
+            "line": 8,
+            "column": 36
+          },
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Compass' is defined but never used.",
+            "line": 8,
+            "column": 43
+          }
+        ]
+      },
+      {
+        "file": "app/saved/page.tsx",
+        "errors": 0,
+        "warnings": 0,
+        "messages": []
+      },
+      {
+        "file": "components/planet/GalaxyPokedexModal.tsx",
+        "errors": 0,
+        "warnings": 1,
+        "messages": [
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'level' is assigned a value but never used.",
+            "line": 63,
+            "column": 5
+          }
+        ]
+      },
+      {
+        "file": "components/SajuInputModal.tsx",
+        "errors": 2,
+        "warnings": 3,
+        "messages": [
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Loader2' is defined but never used.",
+            "line": 7,
+            "column": 23
+          },
+          {
+            "ruleId": "@next/next/no-location-assign-relative-destination",
+            "severity": 1,
+            "message": "Do not use `window.location.assign()` to navigate to internal Next.js pages. Use `redirect()` in the render phase, or `useRouter().push()` in Client Components' event handlers instead. See: https://nextjs.org/docs/messages/no-location-assign-relative-destination",
+            "line": 129,
+            "column": 11
+          },
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'err' is defined but never used.",
+            "line": 135,
+            "column": 14
+          },
+          {
+            "ruleId": "@typescript-eslint/no-explicit-any",
+            "severity": 2,
+            "message": "Unexpected any. Specify a different type.",
+            "line": 135,
+            "column": 19
+          },
+          {
+            "ruleId": "@typescript-eslint/no-explicit-any",
+            "severity": 2,
+            "message": "Unexpected any. Specify a different type.",
+            "line": 260,
+            "column": 63
+          }
+        ]
+      },
+      {
+        "file": "components/AskDoryeongModal.tsx",
+        "errors": 0,
+        "warnings": 0,
+        "messages": []
+      },
+      {
+        "file": "scripts/qa/ui-maintenance-batch-four-browser.mjs",
+        "errors": 0,
+        "warnings": 0,
+        "messages": []
+      },
+      {
+        "file": "scripts/qa/ui-maintenance-batch-four-chat-whitespace.mjs",
+        "errors": 0,
+        "warnings": 0,
+        "messages": []
+      }
+    ],
+    "existing_errors": 2,
+    "existing_warnings": 8,
+    "new_errors": 0,
+    "new_warnings": 0,
+    "qa_errors": 0,
+    "qa_warnings": 0,
+    "rules_config_or_suppressions_changed": false,
+    "full_repository_lint_not_run": true
+  },
+  "source_inverse": [
+    {
+      "file": "app/manse/page.tsx",
+      "current_native_bytes": 15420,
+      "current_native_sha256": "012b6e4c3aaa72c50d2873ebbdbb6b5b549c9eb62dc77076f892b96298b76140",
+      "basis_native_bytes": 15046,
+      "basis_native_sha256": "69059f05bd8a6014e72905927d592855929f2b10868baed1cc1ec41dc1f5b0cc",
+      "inverse_to_exact_basis_native_bytes": true
+    },
+    {
+      "file": "app/saved/page.tsx",
+      "current_native_bytes": 16762,
+      "current_native_sha256": "378572d7489980372ed6e3558c938f76ebcb5f1f63e0dce33b362835dccbcf09",
+      "basis_native_bytes": 14654,
+      "basis_native_sha256": "0d86e8fec1257881c16e841a6ce1aca3c48a7fcd6066388e56bd2b33fb19f4fc",
+      "inverse_to_exact_basis_native_bytes": true
+    },
+    {
+      "file": "components/planet/GalaxyPokedexModal.tsx",
+      "current_native_bytes": 7981,
+      "current_native_sha256": "f57f22eec3459b88ac70a51f24b36fae184b5269af18470f85717e6a7c6529b9",
+      "basis_native_bytes": 7904,
+      "basis_native_sha256": "3606a887f5781959e52b833a0eea63a718c7348b66bef472eac336eb1fd0bc85",
+      "inverse_to_exact_basis_native_bytes": true
+    },
+    {
+      "file": "components/SajuInputModal.tsx",
+      "current_native_bytes": 16642,
+      "current_native_sha256": "9b8f44d9225f7f3e60fae6282adeb0cd86a580f3da9ed4d1f7909af5d8072ec6",
+      "basis_native_bytes": 16564,
+      "basis_native_sha256": "4787358979a2427fb9d55fd39933c2def54134e4532244876f8ab10e265e0748",
+      "inverse_to_exact_basis_native_bytes": true
+    },
+    {
+      "file": "components/AskDoryeongModal.tsx",
+      "current_native_bytes": 14553,
+      "current_native_sha256": "e8839ad1c4656e5d54023307f4b51a57977d46e614d04ef80ec04a43bbc85948",
+      "basis_native_bytes": 14546,
+      "basis_native_sha256": "6fb49eaf5a63e29d38ee7d490995b1287765a7eb7bb766458b43dfb920417a6c",
+      "inverse_to_exact_basis_native_bytes": true
+    }
+  ],
+  "final_code_copied_byte_exact_for_gates": true,
+  "dependency_install_performed": false,
+  "dependency_links_back_to_original": 0,
+  "original_source_evidence_and_zip_preservation": {
+    "status": "PASS_ORIGINAL_CURRENT_WIP_CANONICAL_MODELS_PREVIOUS_EVIDENCE_AND_ZIP_BYTES_PRESERVED_AFTER_FINAL_GATES",
+    "current_source_files": 1801,
+    "previous_evidence_files": 757,
+    "canonical_files": 13,
+    "archive": {
+      "path": "D:\\Codex\\Results\\SaJuUiBatchFour-20261011-Joseph\\SaJu_UI_Batch4_Partial_4of5_DuplicateReviewed_20261011_Joseph_0209c23f.zip",
+      "bytes": 13685568,
+      "sha256": "dcc289f84a1fd36d1d4b6d3a2f496982f8fd60b2474c590fcd1ea4a687789052",
+      "entries": 612,
+      "crc_manifest_all_entry_bytes_verified": true
+    },
+    "install_source_reset_commit_push_or_deployment": false
+  },
+  "initial_four_private_drive_preservation": {
+    "status": "PASS_PRIOR_4OF5_ZIP_AND_ORIGINAL_HANDOFF_PRESERVED_AS_TWO_NEW_OWNER_ONLY_DRIVE_FILES",
+    "at_utc": "2026-10-12T01:38:24.6398570Z",
+    "validated_new_fix_count": 4,
+    "zip": {
+      "id": "1qkwNWwwX1i02-Pq7CSCZQ7r-OOboGUUn",
+      "url": "https://drive.google.com/file/d/1qkwNWwwX1i02-Pq7CSCZQ7r-OOboGUUn/view?usp=drivesdk",
+      "local_path": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/SaJu_UI_Batch4_Partial_4of5_DuplicateReviewed_20261011_Joseph_0209c23f.zip",
+      "bytes": 13685568,
+      "local_sha256": "dcc289f84a1fd36d1d4b6d3a2f496982f8fd60b2474c590fcd1ea4a687789052",
+      "shared": false,
+      "permissions": [
+        {
+          "role": "owner",
+          "type": "user"
+        }
+      ],
+      "owner_only": true,
+      "size_metadata_verified": true,
+      "remote_drive_bytes_independently_rehashed": false
+    },
+    "original_handoff": {
+      "id": "15Z13Q-1YunOxQI11MnlNVeO9cZvAtgs2",
+      "url": "https://drive.google.com/file/d/15Z13Q-1YunOxQI11MnlNVeO9cZvAtgs2/view?usp=drivesdk",
+      "local_path": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/SaJu_UI_Batch4_Partial_Handoff_4of5_DuplicateReviewed_DriveBlocked_20261011_Joseph.json",
+      "bytes": 19738,
+      "local_sha256": "162704fd8539e772aaab7bf097bd01783406bd3eb1bc2c6b4206e4283f6f4860",
+      "shared": false,
+      "permissions": [
+        {
+          "role": "owner",
+          "type": "user"
+        }
+      ],
+      "owner_only": true,
+      "size_metadata_verified": true,
+      "remote_drive_bytes_independently_rehashed": false,
+      "historical_record_before_current_approval": true
+    },
+    "prior_drive_blockers_resolved_for_these_uploads": true,
+    "existing_files_replaced_deleted_or_permissions_expanded": false,
+    "retry_count_for_20261012": 1,
+    "current_four_fix_full_gate_receipt": "D:/Codex/Results/SaJuUiBatchFourVerificationFollowup-20261011-Joseph/verification-final-receipt.json",
+    "privacy_review": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/preservation-payload-privacy-review.json"
+  },
+  "initial_four_full_gates_private_drive": {
+    "status": "PASS_PRIOR_FOUR_FULL_REGRESSION_TYPES_BUILD_RECEIPT_PRESERVED_NEW_OWNER_ONLY_DRIVE_FILE",
+    "id": "1PiIfvGqcSGdX4NBbQ4oBO0mU5yiZmsdG",
+    "url": "https://drive.google.com/file/d/1PiIfvGqcSGdX4NBbQ4oBO0mU5yiZmsdG/view?usp=drivesdk",
+    "local_path": "D:/Codex/Results/SaJuUiBatchFourVerificationFollowup-20261011-Joseph/verification-final-receipt.json",
+    "bytes": 7055,
+    "local_sha256": "eb6113cd4ce887d0e12b422562fd8280c8dab3ed5814a591be057222c275c969",
+    "shared": false,
+    "permissions": [
+      {
+        "type": "user",
+        "role": "owner"
+      }
+    ],
+    "owner_only": true,
+    "size_metadata_verified": true,
+    "remote_drive_bytes_independently_rehashed": false,
+    "older_four_fix_record_not_final_five_fix_result": true
+  },
+  "direct_visual_inspection": {
+    "status": "ACTUAL_NATIVE_UI_BEFORE_AFTER_PIXELS_DIRECTLY_INSPECTED",
+    "seen": [
+      {
+        "path": "before-whitespace/spaces-390.png",
+        "observation": "Actual pre-fix native UI shows an empty assistant bubble and cleared question after a whitespace reply.",
+        "bytes": 22376,
+        "sha256": "9cac0e9613ca42adb7dd99ae303e4387b3dfa9ccb148ff1281dd791f73b4c4f2"
+      },
+      {
+        "path": "after-whitespace/spaces-390.png",
+        "observation": "Actual post-fix native UI shows the existing retry/review error, retains the fictional question draft and blocks blind resend.",
+        "bytes": 26781,
+        "sha256": "e44ace01a8f77afc76fdd4ea4cbac09f93a9fa157f04a3e5e803c25acab8ad2e"
+      }
+    ],
+    "generated_image_or_model_render": false,
+    "physical_device_or_screen_reader_acceptance": false,
+    "normal_reply_formatting_verified_in_native_dom_and_not_trimmed": true
+  },
+  "limits": [
+    "Native Chrome uses isolated fictional fixtures and intercepted API responses, not real backend/DB/Gemini or hosted acceptance.",
+    "No calendar correctness, 3D renderer, physical-device or screen-reader acceptance is claimed.",
+    "The new reply guard rejects ECMAScript whitespace-only strings, not every possible invisible Unicode character; useful reply formatting is retained.",
+    "Old label, analysis and element-count changes remain preserved WIP/source but are excluded from the five new improvement count. Old empty response cases are regression controls.",
+    "Only five touched products and two QA scripts were lint-compared; full-repository lint is not claimed clean. Existing diagnostics are retained, with no rule/config/suppression change.",
+    "Local ZIP and source SHA proofs plus Drive size/permission readback are evidence; remote Drive bytes were not independently re-downloaded and rehashed.",
+    "Raw original failed reproductions, verifier corrections, initially mistaken five-count and blocked Drive records remain historical evidence; current authoritative count/gates and new successful backup receipts supersede them."
+  ],
+  "commit_created": false,
+  "push_performed": false
+}

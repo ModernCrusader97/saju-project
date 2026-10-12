@@ -1,0 +1,45 @@
+{
+  "status": "PASS_PRIOR_4OF5_ZIP_AND_ORIGINAL_HANDOFF_PRESERVED_AS_TWO_NEW_OWNER_ONLY_DRIVE_FILES",
+  "at_utc": "2026-10-12T01:38:24.6398570Z",
+  "validated_new_fix_count": 4,
+  "zip": {
+    "id": "1qkwNWwwX1i02-Pq7CSCZQ7r-OOboGUUn",
+    "url": "https://drive.google.com/file/d/1qkwNWwwX1i02-Pq7CSCZQ7r-OOboGUUn/view?usp=drivesdk",
+    "local_path": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/SaJu_UI_Batch4_Partial_4of5_DuplicateReviewed_20261011_Joseph_0209c23f.zip",
+    "bytes": 13685568,
+    "local_sha256": "dcc289f84a1fd36d1d4b6d3a2f496982f8fd60b2474c590fcd1ea4a687789052",
+    "shared": false,
+    "permissions": [
+      {
+        "role": "owner",
+        "type": "user"
+      }
+    ],
+    "owner_only": true,
+    "size_metadata_verified": true,
+    "remote_drive_bytes_independently_rehashed": false
+  },
+  "original_handoff": {
+    "id": "15Z13Q-1YunOxQI11MnlNVeO9cZvAtgs2",
+    "url": "https://drive.google.com/file/d/15Z13Q-1YunOxQI11MnlNVeO9cZvAtgs2/view?usp=drivesdk",
+    "local_path": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/SaJu_UI_Batch4_Partial_Handoff_4of5_DuplicateReviewed_DriveBlocked_20261011_Joseph.json",
+    "bytes": 19738,
+    "local_sha256": "162704fd8539e772aaab7bf097bd01783406bd3eb1bc2c6b4206e4283f6f4860",
+    "shared": false,
+    "permissions": [
+      {
+        "role": "owner",
+        "type": "user"
+      }
+    ],
+    "owner_only": true,
+    "size_metadata_verified": true,
+    "remote_drive_bytes_independently_rehashed": false,
+    "historical_record_before_current_approval": true
+  },
+  "prior_drive_blockers_resolved_for_these_uploads": true,
+  "existing_files_replaced_deleted_or_permissions_expanded": false,
+  "retry_count_for_20261012": 1,
+  "current_four_fix_full_gate_receipt": "D:/Codex/Results/SaJuUiBatchFourVerificationFollowup-20261011-Joseph/verification-final-receipt.json",
+  "privacy_review": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/preservation-payload-privacy-review.json"
+}

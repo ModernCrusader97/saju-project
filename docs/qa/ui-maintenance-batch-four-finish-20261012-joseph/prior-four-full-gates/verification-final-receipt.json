@@ -1,0 +1,157 @@
+{
+  "status": "PASS_CURRENT_4OF5_WIP_REQUESTED_REGRESSION_TYPES_BUILD_NO_NEW_LINT_ALL_ORIGINALS_PRESERVED_STOP",
+  "at_utc": "2026-10-11T06:12:32.199Z",
+  "host": "Joseph",
+  "execution_thread_id": "01a126cc-f125-710f-82c5-19a49cba00be",
+  "source_thread_id": "01a0fbd5-5294-720a-aaa5-c7244bcd50fd",
+  "validated_new_fix_count": 4,
+  "commit_batch_target": 5,
+  "test_completion_counted_as_new_improvement": false,
+  "new_improvements_added": 0,
+  "current_branch": "fix/ui-maintenance-batch-four-20261011-joseph",
+  "head": "0209c23fe04a0ef60c916a16d6e8002ae65693dd",
+  "head_is_prior_third_batch_basis": true,
+  "execution": {
+    "original": "D:/Codex/Work/SaJuUiOneBug-20261010-Joseph/repo",
+    "private_current_wip_native_copy": "D:/Codex/Work/SaJuUiBatchFourVerificationFollowup-20261011-Joseph/repo",
+    "private_dependency_copy": true,
+    "private_dependency_links": 0,
+    "no_dependency_install": true,
+    "only_new_local_verification_records_and_private_working_files_created": true
+  },
+  "requested_checks": {
+    "regression": {
+      "status": "PASS",
+      "passed": 60,
+      "failed": 0,
+      "viewports": [
+        "390x844",
+        "1440x1000"
+      ],
+      "native_chrome": "154.0.8037.98",
+      "page_errors": 0,
+      "console_errors": 0,
+      "outbound_requests": 0,
+      "nonduplicate_cases_and_controls_passed": 50,
+      "historical_overlap_cases_included_only_as_regression": 10,
+      "proof": "D:/Codex/Results/SaJuUiBatchFourVerificationFollowup-20261011-Joseph/regression/browser-results.json"
+    },
+    "types": {
+      "status": "PASS",
+      "name": "types",
+      "started_at_utc": "2026-10-11T06:05:40.765Z",
+      "finished_at_utc": "2026-10-11T06:06:30.871Z",
+      "exit_code": 0,
+      "signal": null,
+      "spawn_error": null,
+      "command": [
+        "C:/Program Files/nodejs/node.exe",
+        "node_modules/typescript/lib/tsc.js",
+        "--noEmit",
+        "--incremental",
+        "false"
+      ],
+      "cwd": "D:/Codex/Work/SaJuUiBatchFourVerificationFollowup-20261011-Joseph/repo",
+      "log": "D:/Codex/Results/SaJuUiBatchFourVerificationFollowup-20261011-Joseph/types.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_source_and_zip_byte_preservation_after_gate": true,
+      "validated_new_fix_count": 4,
+      "no_install_commit_push_drive_deployment_or_new_improvement": true,
+      "command_display": "tsc --noEmit --incremental false"
+    },
+    "production_build": {
+      "status": "PASS",
+      "name": "production-build",
+      "started_at_utc": "2026-10-11T06:03:58.707Z",
+      "finished_at_utc": "2026-10-11T06:05:36.373Z",
+      "exit_code": 0,
+      "signal": null,
+      "spawn_error": null,
+      "command": [
+        "C:/Program Files/nodejs/node.exe",
+        "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+        "run",
+        "build"
+      ],
+      "cwd": "D:/Codex/Work/SaJuUiBatchFourVerificationFollowup-20261011-Joseph/repo",
+      "log": "D:/Codex/Results/SaJuUiBatchFourVerificationFollowup-20261011-Joseph/production-build.log",
+      "log_sha256": "44d7a95029ebff4cfc9917fd6dfb1ff59cf570f504d8064940394205a5265587",
+      "original_source_and_zip_byte_preservation_after_gate": true,
+      "validated_new_fix_count": 4,
+      "no_install_commit_push_drive_deployment_or_new_improvement": true,
+      "command_display": "npm run build; actual unchanged package scripts in private current-WIP copy"
+    },
+    "changed_products_and_qa_lint_comparison": {
+      "status": "PASS_NO_NEW_DIAGNOSTICS_EXISTING_BASELINE_DISTINGUISHED",
+      "scope": [
+        "app/manse/page.tsx",
+        "app/saved/page.tsx",
+        "components/planet/GalaxyPokedexModal.tsx",
+        "components/SajuInputModal.tsx",
+        "scripts/qa/ui-maintenance-batch-four-browser.mjs"
+      ],
+      "existing_product_errors": 2,
+      "existing_product_warnings": 8,
+      "new_errors": 0,
+      "new_warnings": 0,
+      "qa_errors": 0,
+      "qa_warnings": 0,
+      "rules_config_or_suppressions_changed": false,
+      "proof": "D:/Codex/Results/SaJuUiBatchFourVerificationFollowup-20261011-Joseph/lint-comparison.json",
+      "full_repository_lint_not_run": true
+    }
+  },
+  "preservation": {
+    "status": "PASS_ALL_ORIGINAL_WIP_SOURCE_ZIP_EXISTING_EVIDENCE_LEGACY_AND_ART_BYTES_PRESERVED",
+    "at_utc": "2026-10-11T06:12:32.175Z",
+    "branch": "fix/ui-maintenance-batch-four-20261011-joseph",
+    "head": "0209c23fe04a0ef60c916a16d6e8002ae65693dd",
+    "index_empty": true,
+    "own_wip": [
+      " M app/manse/page.tsx",
+      " M app/saved/page.tsx",
+      " M components/SajuInputModal.tsx",
+      " M components/planet/GalaxyPokedexModal.tsx",
+      "?? scripts/qa/ui-maintenance-batch-four-browser.mjs"
+    ],
+    "source_and_runtime_files_byte_identical": 1800,
+    "previous_evidence_files_byte_identical": 592,
+    "canonical_asset_runtime_files_byte_identical": 13,
+    "original_local_refs_preserved": 12,
+    "legacy_wip_files_byte_identical": 3,
+    "art_checkouts_unchanged": 5,
+    "zip": {
+      "path": "D:\\Codex\\Results\\SaJuUiBatchFour-20261011-Joseph\\SaJu_UI_Batch4_Partial_4of5_DuplicateReviewed_20261011_Joseph_0209c23f.zip",
+      "bytes": 13685568,
+      "sha256": "dcc289f84a1fd36d1d4b6d3a2f496982f8fd60b2474c590fcd1ea4a687789052"
+    },
+    "existing_sparse_absences_preserved": 157,
+    "private_copy_input_changes": [],
+    "all_build_generated_files_in_new_private_copy": true,
+    "private_dependency_files_copied": 55906,
+    "dependency_links_back_to_original": 0,
+    "original_dependency_tree_not_used_as_build_output": true,
+    "new_C_task_output_staging_created": false,
+    "no_new_source_edits_reset_staging_commit_push_drive_deployment_or_other_process_stop": true
+  },
+  "prior_four_fix_handoff": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/preservation-followup-final-receipt.json",
+  "existing_wip_zip": {
+    "path": "D:\\Codex\\Results\\SaJuUiBatchFour-20261011-Joseph\\SaJu_UI_Batch4_Partial_4of5_DuplicateReviewed_20261011_Joseph_0209c23f.zip",
+    "bytes": 13685568,
+    "sha256": "dcc289f84a1fd36d1d4b6d3a2f496982f8fd60b2474c590fcd1ea4a687789052"
+  },
+  "not_executed": [
+    "New improvements or source fixes",
+    "Commit/push, main/branch changes or deployment",
+    "Drive or alternate external transfer; direct approval remains pending",
+    "Full-repository lint; the four touched products and current QA script were compared to their actual original baseline",
+    "Real API/DB/Gemini, hosted runtime, calculation correctness, 3D render or physical-device/screen-reader acceptance"
+  ],
+  "current_followup_uploaded_file_ids": [],
+  "remaining_blockers": [],
+  "separate_pending_constraints": [
+    "The improvement batch remains below five; commit/push is still not performed.",
+    "Direct user approval for Drive storage is still pending; no upload or alternate route was attempted."
+  ],
+  "next_action": "Hand off pass/fail/not-executed records locally and stop this verification-only followup. Retain original four-fix WIP and ZIP."
+}

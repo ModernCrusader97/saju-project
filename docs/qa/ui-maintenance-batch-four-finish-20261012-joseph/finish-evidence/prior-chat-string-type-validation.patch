@@ -1,0 +1,13 @@
+diff --git a/components/AskDoryeongModal.tsx b/components/AskDoryeongModal.tsx
+index 8d7e86b..d3a0506 100644
+--- a/components/AskDoryeongModal.tsx
++++ b/components/AskDoryeongModal.tsx
+@@ -134,7 +134,7 @@ function Conversation({
+         body: JSON.stringify({ question: userText }),
+       });
+       const data = await readApiResponse(res);
+-      if (!res.ok || !data.success || !data.reply) throw new Error(data.error || "답변을 확인하지 못했어요.");
++      if (!res.ok || !data.success || typeof data.reply !== "string" || !data.reply) throw new Error(data.error || "답변을 확인하지 못했어요.");
+       if (!mounted.current) return;
+       const now = new Date().toISOString();
+       setHistory(previous => ({ ...previous, messages: [...previous.messages, { role: "user", content: userText, createdAt: now }, { role: "doryeong", content: data.reply!, createdAt: now }] }));

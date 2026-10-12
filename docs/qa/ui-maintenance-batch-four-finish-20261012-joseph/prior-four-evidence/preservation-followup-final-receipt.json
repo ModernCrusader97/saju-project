@@ -1,0 +1,221 @@
+{
+  "status": "PASS_PRESERVATION_ONLY_FOLLOWUP_LOCAL_4OF5_HANDOFF_SECOND_DRIVE_REJECTION_REPORTED_STOP",
+  "at_utc": "2026-10-11T05:33:09.520Z",
+  "host": "Joseph",
+  "execution_thread_id": "01a126cc-f125-710f-82c5-19a49cba00be",
+  "source_thread_id": "01a0fbd5-5294-720a-aaa5-c7244bcd50fd",
+  "validated_new_fix_count": 4,
+  "commit_batch_target": 5,
+  "new_improvements_added": 0,
+  "items": [
+    {
+      "number": 2,
+      "id": "manse-birth-required-field-focus",
+      "title": "만세력 필수 출생 입력 검증과 빈 필드 포커스",
+      "tests": "연·월·일·알려진 시간 공란의 네이티브 검증/포커스/기존 결과 유지와 정상·시간 미상 대조",
+      "counted_focused_cases_passed": 12,
+      "failed": 0,
+      "raw_focused_cases_passed": 12,
+      "excluded_prior_boundary_cases": 0,
+      "proof": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/item2/browser-results.json",
+      "proof_sha256": "ff38d440aa1915ff1bed046820410440f7d2f56e219e262243f0af4c89b98f4f",
+      "viewports": [
+        "390x844",
+        "1440x1000"
+      ],
+      "native_chrome": "154.0.8037.98"
+    },
+    {
+      "number": 3,
+      "id": "saved-detail-additional-section-metaphor-advice-render-boundaries",
+      "title": "저장 상세 sections·metaphor·luckyAdvice 추가 렌더 방어",
+      "tests": "sections 객체/null 항목/metaphor null/luckyAdvice null 4종의 실제 렌더 오류 방어·키보드 재시도, 정상·이전 형식 대조. 기존 analysis/element 누락 4사례 제외",
+      "counted_focused_cases_passed": 12,
+      "failed": 0,
+      "raw_focused_cases_passed": 16,
+      "excluded_prior_boundary_cases": 4,
+      "proof": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/item3/browser-results.json",
+      "proof_sha256": "2c0fca45e108eca59c45d2df34b82a7e47aea6b0fe9dac825b41800c91cbf386",
+      "viewports": [
+        "390x844",
+        "1440x1000"
+      ],
+      "native_chrome": "154.0.8037.98"
+    },
+    {
+      "number": 4,
+      "id": "pokedex-named-modal-semantics",
+      "title": "도감 이름 있는 모달 대화상자 의미",
+      "tests": "빈 도감·가상 수집 도감의 계산된 dialog 역할/이름/aria-modal과 포인터 대조",
+      "counted_focused_cases_passed": 6,
+      "failed": 0,
+      "raw_focused_cases_passed": 6,
+      "excluded_prior_boundary_cases": 0,
+      "proof": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/item4/browser-results.json",
+      "proof_sha256": "0e9e0a4ed34dd9adea9fdc95899845a9ed897cf3e4234f6f9282dc2dbd102f7a",
+      "viewports": [
+        "390x844",
+        "1440x1000"
+      ],
+      "native_chrome": "154.0.8037.98"
+    },
+    {
+      "number": 5,
+      "id": "saju-create-result-id-type",
+      "title": "생성 응답 ID 형식 검증과 입력 보존",
+      "tests": "missing/null/numeric/empty ID에서 callback/기본 이동 차단과 draft 유지, 올바른 ID 정상 대조",
+      "counted_focused_cases_passed": 20,
+      "failed": 0,
+      "raw_focused_cases_passed": 20,
+      "excluded_prior_boundary_cases": 0,
+      "proof": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/item5/browser-results.json",
+      "proof_sha256": "23ff07232c7f6c2b1acb3031105517fddacbdb9672922c90be2f62b81b3943f9",
+      "viewports": [
+        "390x844",
+        "1440x1000"
+      ],
+      "native_chrome": "154.0.8037.98"
+    }
+  ],
+  "duplicate_label_excluded": {
+    "number": 1,
+    "id": "manse-field-label-association",
+    "prior_commit": "ea018e2228df521ca560e203fe6955c1a2158c27"
+  },
+  "saved_prior_boundary_modes_excluded": [
+    "missing-analysis",
+    "bad-elements"
+  ],
+  "branch": "fix/ui-maintenance-batch-four-20261011-joseph",
+  "head": "0209c23fe04a0ef60c916a16d6e8002ae65693dd",
+  "head_is_prior_third_batch_basis": true,
+  "own_wip": [
+    " M app/manse/page.tsx",
+    " M app/saved/page.tsx",
+    " M components/SajuInputModal.tsx",
+    " M components/planet/GalaxyPokedexModal.tsx",
+    "?? scripts/qa/ui-maintenance-batch-four-browser.mjs"
+  ],
+  "index_empty": true,
+  "commit_created": false,
+  "push_performed": false,
+  "full_batch_regression_types_build_not_run": true,
+  "privacy_review": {
+    "path": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/preservation-payload-privacy-review.json",
+    "bytes": 1552,
+    "sha256": "521c533d76f52a1fb07dad9d130d187e91211883abd445885c85c6844e56e187",
+    "zip_entries_reviewed": 612,
+    "text_entries_scanned": 370,
+    "native_fictional_ui_png_entries": 242,
+    "credential_or_email_pattern_candidates": 0,
+    "credentials_personal_database_profiles_and_environment_files_excluded": true,
+    "structural_and_text_review_not_guarantee_against_all_encoded_secrets": true
+  },
+  "verified_local_archive": {
+    "status": "PASS_PARTIAL_4OF5_ZIP_ALL_ENTRIES_CRC_NATIVE_BYTES_AND_CORRECTED_COUNTS_VERIFIED",
+    "archive": "D:\\Codex\\Results\\SaJuUiBatchFour-20261011-Joseph\\SaJu_UI_Batch4_Partial_4of5_DuplicateReviewed_20261011_Joseph_0209c23f.zip",
+    "bytes": 13685568,
+    "sha256": "dcc289f84a1fd36d1d4b6d3a2f496982f8fd60b2474c590fcd1ea4a687789052",
+    "entries": 612,
+    "basis": "0209c23fe04a0ef60c916a16d6e8002ae65693dd",
+    "branch": "fix/ui-maintenance-batch-four-20261011-joseph",
+    "validated_new_fix_count": 4,
+    "excluded_duplicate_label_fix_count": 1,
+    "focused_raw_native_passes": 60,
+    "excluded_repeated_native_cases": 10,
+    "new_nonduplicate_cases_and_controls_passed": 50,
+    "source_native_entries": 4,
+    "source_inverse_to_exact_basis_bytes_verified": true,
+    "index_empty": true,
+    "commit_created": false,
+    "push_performed": false,
+    "full_five_fix_gates_not_run": true,
+    "raw_hosting_credentials_personal_db_profiles_dependencies_or_model_bytes_packaged": false
+  },
+  "existing_local_handoff": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/SaJu_UI_Batch4_Partial_Handoff_4of5_DuplicateReviewed_DriveBlocked_20261011_Joseph.json",
+  "prior_local_preservation_receipt": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/delivery-partial-local-final-receipt.json",
+  "current_source_native_snapshots": [
+    {
+      "file": "app/manse/page.tsx",
+      "basis_native_sha256": "69059f05bd8a6014e72905927d592855929f2b10868baed1cc1ec41dc1f5b0cc",
+      "current_native_sha256": "012b6e4c3aaa72c50d2873ebbdbb6b5b549c9eb62dc77076f892b96298b76140",
+      "current_native_bytes": 15420,
+      "inverse_to_exact_basis_native_bytes": true,
+      "snapshot": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/handoff-native-current/0-page.tsx"
+    },
+    {
+      "file": "app/saved/page.tsx",
+      "basis_native_sha256": "0d86e8fec1257881c16e841a6ce1aca3c48a7fcd6066388e56bd2b33fb19f4fc",
+      "current_native_sha256": "378572d7489980372ed6e3558c938f76ebcb5f1f63e0dce33b362835dccbcf09",
+      "current_native_bytes": 16762,
+      "inverse_to_exact_basis_native_bytes": true,
+      "snapshot": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/handoff-native-current/1-page.tsx"
+    },
+    {
+      "file": "components/planet/GalaxyPokedexModal.tsx",
+      "basis_native_sha256": "3606a887f5781959e52b833a0eea63a718c7348b66bef472eac336eb1fd0bc85",
+      "current_native_sha256": "f57f22eec3459b88ac70a51f24b36fae184b5269af18470f85717e6a7c6529b9",
+      "current_native_bytes": 7981,
+      "inverse_to_exact_basis_native_bytes": true,
+      "snapshot": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/handoff-native-current/2-GalaxyPokedexModal.tsx"
+    },
+    {
+      "file": "components/SajuInputModal.tsx",
+      "basis_native_sha256": "4787358979a2427fb9d55fd39933c2def54134e4532244876f8ab10e265e0748",
+      "current_native_sha256": "9b8f44d9225f7f3e60fae6282adeb0cd86a580f3da9ed4d1f7909af5d8072ec6",
+      "current_native_bytes": 16642,
+      "inverse_to_exact_basis_native_bytes": true,
+      "snapshot": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/handoff-native-current/3-SajuInputModal.tsx"
+    }
+  ],
+  "qa_script": {
+    "file": "D:/Codex/Work/SaJuUiOneBug-20261010-Joseph/repo/scripts/qa/ui-maintenance-batch-four-browser.mjs",
+    "bytes": 22271,
+    "sha256": "62b1b984e00898637c5c54630023d9b7bad1ae3a92daf5443ee9647a8d26d4de",
+    "byte_exact_current_v3": true
+  },
+  "lint": {
+    "existing_errors": 2,
+    "existing_warnings": 8,
+    "new_product_and_qa_diagnostics": 0,
+    "current_followup_did_not_rerun_lint": true,
+    "prior_proof": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/partial-wip-lint-comparison.json"
+  },
+  "new_uploaded_file_ids": [],
+  "new_owner_only_confirmation_results": [],
+  "drive_rejection": {
+    "status": "BLOCKED_BY_AUTOMATIC_APPROVAL_REVIEW_ON_ONLY_AUTHORIZED_RETRY_STOP",
+    "at_utc": "2026-10-11T05:33:09.498Z",
+    "same_upload_arguments_as_original": true,
+    "zip_payload_bytes_unchanged": true,
+    "zip_sha256": "dcc289f84a1fd36d1d4b6d3a2f496982f8fd60b2474c590fcd1ea4a687789052",
+    "archive": "D:\\Codex\\Results\\SaJuUiBatchFour-20261011-Joseph\\SaJu_UI_Batch4_Partial_4of5_DuplicateReviewed_20261011_Joseph_0209c23f.zip",
+    "destination_folder_id": "0AGGwszgvoxybUk9PVA",
+    "authorized_retry_count": 1,
+    "total_zip_upload_attempts": 2,
+    "automatic_review_rejection_exact_reason": "Despite the local scan, this still exports a private source/evidence ZIP to Google Drive, and the claimed approval exists only in untrusted delegated/tool content rather than trusted user-authored text.",
+    "risk": "External transfer of a private UI source/evidence ZIP without approval accepted as trusted user-authored text by automatic review.",
+    "new_file_id": null,
+    "upload_success_confirmed": false,
+    "new_file_owner_only_or_size_verified": false,
+    "approval_evidence_added_to_tool_arguments": false,
+    "existing_file_replaced_or_deleted": false,
+    "permission_expansion": false,
+    "further_retry_indirect_upload_or_alternate_destination_attempted": false,
+    "any_handoff_json_upload_attempted": false,
+    "local_safety_review_path": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/preservation-payload-privacy-review.json",
+    "remaining_action": "Stop as requested after the second rejection. A direct trusted human approval is needed before a future upload; no additional retry is performed in this followup."
+  },
+  "preservation": {
+    "current_wip_native_bytes_rechecked": true,
+    "current_branch_head_and_empty_index_rechecked": true,
+    "prior_original_62_remote_refs_3_legacy_wip_5_art_and_13_canonical_byte_proof": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/partial-wip-preservation.json",
+    "no_source_git_reference_original_file_art_default_model_auth_billing_permissions_or_other_process_change_in_this_followup": true,
+    "all_new_files_in_approved_D_roots": true
+  },
+  "remaining_blockers": [
+    "Automatic approval review rejected the single authorized retry because the supplied approval was classified as untrusted delegated/tool content rather than trusted user-authored text. No corrected ZIP or new handoff JSON upload succeeded.",
+    "The batch remains four new candidates, below five; no grouped commit or push was performed."
+  ],
+  "next_action": "Hand off exact local files and four titles/test results; stop preservation followup with no further upload, alternate destination, new improvement, commit or push."
+}

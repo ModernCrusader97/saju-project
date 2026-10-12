@@ -1,0 +1,12 @@
+{
+  "status": "PASS_FIVE_FIX_PRIVATE_SOURCE_AND_EXISTING_DEPENDENCY_COPY_READY",
+  "at_utc": "2026-10-12T02:05:25.449Z",
+  "snapshot": "D:/Codex/Work/SaJuUiBatchFourFinish-20261012-Joseph/verification-repo",
+  "dependency_files": 55906,
+  "dependency_bytes": 852302738,
+  "dependency_links": 0,
+  "robocopy_exit": 1,
+  "install_performed": false,
+  "source_changes_performed_by_snapshot_tool": 0,
+  "validated_new_fix_count": 5
+}

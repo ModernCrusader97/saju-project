@@ -168,7 +168,7 @@ function Conversation({
         body: JSON.stringify({ question: userText }),
       });
       const data = await readApiResponse(res);
-      if (!res.ok || !data.success || typeof data.reply !== "string" || !data.reply) throw new Error(data.error || "답변을 확인하지 못했어요.");
+      if (!res.ok || !data.success || typeof data.reply !== "string" || !data.reply.trim()) throw new Error(data.error || "답변을 확인하지 못했어요.");
       if (!mounted.current) return;
       const now = new Date().toISOString();
       setHistory(previous => ({ ...previous, messages: [...previous.messages, { role: "user", content: userText, createdAt: now }, { role: "doryeong", content: data.reply!, createdAt: now }] }));

@@ -1,0 +1,403 @@
+{
+  "status": "PASS_PARTIAL_4OF5_WIP_PRESERVED_AFTER_DUPLICATE_REVIEW_NO_COMMIT_OR_PUSH",
+  "at_utc": "2026-10-11T05:19:52.849Z",
+  "branch": "fix/ui-maintenance-batch-four-20261011-joseph",
+  "basis": "0209c23fe04a0ef60c916a16d6e8002ae65693dd",
+  "head": "0209c23fe04a0ef60c916a16d6e8002ae65693dd",
+  "validated_new_fix_count": 4,
+  "duplicate_label_fix_excluded": 1,
+  "saved_prior_boundaries_excluded": [
+    "missing-analysis",
+    "bad-elements"
+  ],
+  "index_empty": true,
+  "own_wip": [
+    " M app/manse/page.tsx",
+    " M app/saved/page.tsx",
+    " M components/SajuInputModal.tsx",
+    " M components/planet/GalaxyPokedexModal.tsx",
+    "?? scripts/qa/ui-maintenance-batch-four-browser.mjs"
+  ],
+  "original_local_refs_preserved": 12,
+  "original_remote_heads_preserved": 62,
+  "remote_heads_after": 62,
+  "new_branch_not_pushed": true,
+  "remote_main_sha": "2e2d82b05f87b39ff8057ae914e8dfa01100a974",
+  "original_legacy_wip_files_byte_identical": 3,
+  "protected_art_checkouts_unchanged": 5,
+  "canonical_bytes_preserved": [
+    {
+      "file": "assets/source-reference/saju-b-evolving-light-v002/SHA256SUMS.txt",
+      "bytes": 4521,
+      "sha256": "a8c57385c849549a44baa66ed802a2ee3f1d8a12a4b6afb8c21915241978927f",
+      "raw_bytes_packaged": false
+    },
+    {
+      "file": "assets/source-reference/saju-b-evolving-light-v002/reference/SaJu_Jade_Approved_Static_Material.glb",
+      "bytes": 4293332,
+      "sha256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+      "raw_bytes_packaged": false
+    },
+    {
+      "file": "assets/source-reference/saju-b-evolving-light-v002/runtime/textures/jade_fields_atlas_128.png",
+      "bytes": 3338794,
+      "sha256": "3175c131be983bd985b8018c191d3a25c9ce00ea20baa31bbb2772833b9a5bd0",
+      "raw_bytes_packaged": false
+    },
+    {
+      "file": "assets/source-reference/saju-b-evolving-light-v002/runtime/textures/Jade_OriginalBaseColor_1024.png",
+      "bytes": 804444,
+      "sha256": "29bdd5ab8a2c87715fd3aedae3f0465c8b6910b5a9c0e8b8bffeb84a03c6b824",
+      "raw_bytes_packaged": false
+    },
+    {
+      "file": "assets/source-reference/saju-b-evolving-light-v002/preview_keyframes/001.png",
+      "bytes": 188340,
+      "sha256": "f17790815107c4c5d751df92050c3e00c6c597f95843dfcd1b2c6c39c7735c54",
+      "raw_bytes_packaged": false
+    },
+    {
+      "file": "assets/source-reference/saju-b-evolving-light-v002/runtime/saju-jade-evolution.glsl",
+      "bytes": 4041,
+      "sha256": "7cfc8ad83f76f8b9505db1e0e38e94bd9ebd7b0c4282a686016c06a09e96255f",
+      "raw_bytes_packaged": false
+    },
+    {
+      "file": "assets/source-reference/saju-b-evolving-light-v002/runtime/saju-jade-evolution.mjs",
+      "bytes": 5678,
+      "sha256": "b92ffe42be37a8c52427ec6c104a56eb828c4e7f6a02b7d368b72921a46a9e7c",
+      "raw_bytes_packaged": false
+    },
+    {
+      "file": ".openai/hosting.json",
+      "bytes": 91,
+      "sha256": "9e1fb7eef4d729865c16d638f731f2f37d27bbec12a3345e48cdc44d51dd1f6f",
+      "raw_bytes_packaged": false
+    },
+    {
+      "file": "public/spirits/jade-v002/body.glb",
+      "bytes": 4293332,
+      "sha256": "0e339d90253c8bbf6a865210f39d200ec3b5c042bcddb7ce669cea5c75c37b84",
+      "raw_bytes_packaged": false
+    },
+    {
+      "file": "public/spirits/jade-v002/fields.png",
+      "bytes": 3338794,
+      "sha256": "3175c131be983bd985b8018c191d3a25c9ce00ea20baa31bbb2772833b9a5bd0",
+      "raw_bytes_packaged": false
+    },
+    {
+      "file": "public/spirits/jade-v002/base-color.png",
+      "bytes": 804444,
+      "sha256": "29bdd5ab8a2c87715fd3aedae3f0465c8b6910b5a9c0e8b8bffeb84a03c6b824",
+      "raw_bytes_packaged": false
+    },
+    {
+      "file": "public/spirits/jade-v002/still.png",
+      "bytes": 188340,
+      "sha256": "f17790815107c4c5d751df92050c3e00c6c597f95843dfcd1b2c6c39c7735c54",
+      "raw_bytes_packaged": false
+    },
+    {
+      "file": "public/models/porcelain-hero-blink-v1.glb",
+      "bytes": 13700928,
+      "sha256": "57d7ee5b3c4e0b99eaadefb8095283bed44986beaa5a91c096dd7a0c514bf9c2",
+      "raw_bytes_packaged": false
+    }
+  ],
+  "source_inverse_and_current_native_snapshots": [
+    {
+      "file": "app/manse/page.tsx",
+      "basis_native_sha256": "69059f05bd8a6014e72905927d592855929f2b10868baed1cc1ec41dc1f5b0cc",
+      "current_native_sha256": "012b6e4c3aaa72c50d2873ebbdbb6b5b549c9eb62dc77076f892b96298b76140",
+      "current_native_bytes": 15420,
+      "inverse_to_exact_basis_native_bytes": true,
+      "snapshot": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/handoff-native-current/0-page.tsx"
+    },
+    {
+      "file": "app/saved/page.tsx",
+      "basis_native_sha256": "0d86e8fec1257881c16e841a6ce1aca3c48a7fcd6066388e56bd2b33fb19f4fc",
+      "current_native_sha256": "378572d7489980372ed6e3558c938f76ebcb5f1f63e0dce33b362835dccbcf09",
+      "current_native_bytes": 16762,
+      "inverse_to_exact_basis_native_bytes": true,
+      "snapshot": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/handoff-native-current/1-page.tsx"
+    },
+    {
+      "file": "components/planet/GalaxyPokedexModal.tsx",
+      "basis_native_sha256": "3606a887f5781959e52b833a0eea63a718c7348b66bef472eac336eb1fd0bc85",
+      "current_native_sha256": "f57f22eec3459b88ac70a51f24b36fae184b5269af18470f85717e6a7c6529b9",
+      "current_native_bytes": 7981,
+      "inverse_to_exact_basis_native_bytes": true,
+      "snapshot": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/handoff-native-current/2-GalaxyPokedexModal.tsx"
+    },
+    {
+      "file": "components/SajuInputModal.tsx",
+      "basis_native_sha256": "4787358979a2427fb9d55fd39933c2def54134e4532244876f8ab10e265e0748",
+      "current_native_sha256": "9b8f44d9225f7f3e60fae6282adeb0cd86a580f3da9ed4d1f7909af5d8072ec6",
+      "current_native_bytes": 16642,
+      "inverse_to_exact_basis_native_bytes": true,
+      "snapshot": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/handoff-native-current/3-SajuInputModal.tsx"
+    }
+  ],
+  "qa": {
+    "file": "D:/Codex/Work/SaJuUiOneBug-20261010-Joseph/repo/scripts/qa/ui-maintenance-batch-four-browser.mjs",
+    "bytes": 22271,
+    "sha256": "62b1b984e00898637c5c54630023d9b7bad1ae3a92daf5443ee9647a8d26d4de",
+    "byte_exact_current_v3": true
+  },
+  "instructions": [
+    {
+      "path": "C:/Users/whdtj/.codex/AGENTS.md",
+      "sha256": "363f3dd968f0fca7882278a73c4300f01bc9a3ddde6a0fe5ee05fb2acac1f564",
+      "same_as_preflight": true,
+      "raw_content_packaged": false
+    },
+    {
+      "path": "D:/Codex/settings/LOCAL_OUTPUT_RULE.md",
+      "sha256": "7f3f11fd1b7d663605b5d295c83e584f407058ba6e66133f8aa07235e7e67e7c",
+      "same_as_preflight": true,
+      "raw_content_packaged": false
+    },
+    {
+      "path": "C:/Users/whdtj/.codex/memories/memory_summary.md",
+      "sha256": "519d1ee99fc1bdde4906b51de5c063c06ee06620a3aab450fd9b8e740f530c64",
+      "same_as_preflight": true,
+      "raw_content_packaged": false
+    },
+    {
+      "path": "D:/Codex/Work/SaJuUiOneBug-20261010-Joseph/repo/README.md",
+      "sha256": "314036eba3e659afdb7657c310471c56b1802a54b055ba1b04413e3815594c66",
+      "same_as_preflight": true,
+      "raw_content_packaged": false
+    }
+  ],
+  "product_default_models_other_11_processes_api_db_auth_billing_permissions_unchanged": true,
+  "commit_created": false,
+  "push_performed": false,
+  "one_batch_commit_helper_executed": false,
+  "final_regression_types_build_gates_run": false,
+  "normal_16_pair_pixel_comparison_run": false,
+  "focused_raw_native_checks_passed": 60,
+  "new_nonduplicate_cases_and_controls_passed": 50,
+  "semantically_repeated_cases_excluded": 10,
+  "lint": {
+    "status": "PASS_PARTIAL_WIP_NO_NEW_PRODUCT_OR_QA_LINT_DIAGNOSTICS",
+    "before": [
+      {
+        "file": "app/manse/page.tsx",
+        "errorCount": 0,
+        "warningCount": 4,
+        "messages": [
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Sparkles' is defined but never used.",
+            "line": 8,
+            "column": 20
+          },
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'User' is defined but never used.",
+            "line": 8,
+            "column": 30
+          },
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Clock' is defined but never used.",
+            "line": 8,
+            "column": 36
+          },
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Compass' is defined but never used.",
+            "line": 8,
+            "column": 43
+          }
+        ]
+      },
+      {
+        "file": "app/saved/page.tsx",
+        "errorCount": 0,
+        "warningCount": 0,
+        "messages": []
+      },
+      {
+        "file": "components/planet/GalaxyPokedexModal.tsx",
+        "errorCount": 0,
+        "warningCount": 1,
+        "messages": [
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'level' is assigned a value but never used.",
+            "line": 63,
+            "column": 5
+          }
+        ]
+      },
+      {
+        "file": "components/SajuInputModal.tsx",
+        "errorCount": 2,
+        "warningCount": 3,
+        "messages": [
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Loader2' is defined but never used.",
+            "line": 7,
+            "column": 23
+          },
+          {
+            "ruleId": "@next/next/no-location-assign-relative-destination",
+            "severity": 1,
+            "message": "Do not use `window.location.assign()` to navigate to internal Next.js pages. Use `redirect()` in the render phase, or `useRouter().push()` in Client Components' event handlers instead. See: https://nextjs.org/docs/messages/no-location-assign-relative-destination",
+            "line": 128,
+            "column": 11
+          },
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'err' is defined but never used.",
+            "line": 134,
+            "column": 14
+          },
+          {
+            "ruleId": "@typescript-eslint/no-explicit-any",
+            "severity": 2,
+            "message": "Unexpected any. Specify a different type.",
+            "line": 134,
+            "column": 19
+          },
+          {
+            "ruleId": "@typescript-eslint/no-explicit-any",
+            "severity": 2,
+            "message": "Unexpected any. Specify a different type.",
+            "line": 259,
+            "column": 63
+          }
+        ]
+      }
+    ],
+    "after": [
+      {
+        "file": "app/manse/page.tsx",
+        "errorCount": 0,
+        "warningCount": 4,
+        "messages": [
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Sparkles' is defined but never used.",
+            "line": 8,
+            "column": 20
+          },
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'User' is defined but never used.",
+            "line": 8,
+            "column": 30
+          },
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Clock' is defined but never used.",
+            "line": 8,
+            "column": 36
+          },
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Compass' is defined but never used.",
+            "line": 8,
+            "column": 43
+          }
+        ]
+      },
+      {
+        "file": "app/saved/page.tsx",
+        "errorCount": 0,
+        "warningCount": 0,
+        "messages": []
+      },
+      {
+        "file": "components/planet/GalaxyPokedexModal.tsx",
+        "errorCount": 0,
+        "warningCount": 1,
+        "messages": [
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'level' is assigned a value but never used.",
+            "line": 63,
+            "column": 5
+          }
+        ]
+      },
+      {
+        "file": "components/SajuInputModal.tsx",
+        "errorCount": 2,
+        "warningCount": 3,
+        "messages": [
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'Loader2' is defined but never used.",
+            "line": 7,
+            "column": 23
+          },
+          {
+            "ruleId": "@next/next/no-location-assign-relative-destination",
+            "severity": 1,
+            "message": "Do not use `window.location.assign()` to navigate to internal Next.js pages. Use `redirect()` in the render phase, or `useRouter().push()` in Client Components' event handlers instead. See: https://nextjs.org/docs/messages/no-location-assign-relative-destination",
+            "line": 129,
+            "column": 11
+          },
+          {
+            "ruleId": "@typescript-eslint/no-unused-vars",
+            "severity": 1,
+            "message": "'err' is defined but never used.",
+            "line": 135,
+            "column": 14
+          },
+          {
+            "ruleId": "@typescript-eslint/no-explicit-any",
+            "severity": 2,
+            "message": "Unexpected any. Specify a different type.",
+            "line": 135,
+            "column": 19
+          },
+          {
+            "ruleId": "@typescript-eslint/no-explicit-any",
+            "severity": 2,
+            "message": "Unexpected any. Specify a different type.",
+            "line": 260,
+            "column": 63
+          }
+        ]
+      },
+      {
+        "file": "scripts/qa/ui-maintenance-batch-four-browser.mjs",
+        "errorCount": 0,
+        "warningCount": 0,
+        "messages": []
+      }
+    ],
+    "existing_errors": 2,
+    "existing_warnings": 8,
+    "new_errors": 0,
+    "new_warnings": 0,
+    "qa_errors": 0,
+    "qa_warnings": 0,
+    "rules_or_suppressions_changed": false,
+    "full_types_build_gates_not_run": true
+  },
+  "all_original_evidence_retained_and_initial_5of5_claim_superseded": true,
+  "current_counts_file": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/duplicate-review-adjusted-progress.json",
+  "historical_comparison_file": "D:/Codex/Results/SaJuUiBatchFour-20261011-Joseph/historical-ui-overlap-review.json",
+  "blocker": "Four new candidates after one exact duplicate exclusion; user requested partial WIP handoff and no five-fix commit/push.",
+  "next_action": "Create new private Drive snapshot and handoff without filler, staging, commit, push, reset or another batch."
+}

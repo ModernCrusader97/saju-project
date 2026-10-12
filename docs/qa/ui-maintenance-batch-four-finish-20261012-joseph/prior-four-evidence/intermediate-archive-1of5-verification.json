@@ -1,0 +1,20 @@
+{
+  "status": "PASS_INTERMEDIATE_1OF5_WIP_SOURCE_REPORT_ZIP_ENTRY_BYTES_AND_CRC_VERIFIED",
+  "validated_new_fix_count": 1,
+  "commit_batch_target": 5,
+  "archive": "D:\\Codex\\Results\\SaJuUiBatchFour-20261011-Joseph\\SaJu_UI_Batch4_Progress_1of5_20261011_Joseph_0209c23f.zip",
+  "bytes": 8003359,
+  "sha256": "e839d890e74155d6c2b4e108ea20a093326a5c46e385e33dff29ab9eed53a5a0",
+  "entries": 404,
+  "commit_created": false,
+  "push_performed": false,
+  "excluded": [
+    "credentials",
+    "database contents",
+    "profiles",
+    "dependencies",
+    "build outputs",
+    "models",
+    "unrelated personal information"
+  ]
+}

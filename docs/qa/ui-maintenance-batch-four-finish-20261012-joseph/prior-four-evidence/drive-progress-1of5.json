@@ -1,0 +1,22 @@
+{
+  "status": "PASS_INTERMEDIATE_1OF5_NEW_OWNER_ONLY_DRIVE_FILE_LOCAL_ZIP_BYTES_VERIFIED",
+  "validated_new_fix_count": 1,
+  "local_path": "D:\\Codex\\Results\\SaJuUiBatchFour-20261011-Joseph\\SaJu_UI_Batch4_Progress_1of5_20261011_Joseph_0209c23f.zip",
+  "bytes": 8003359,
+  "local_sha256": "e839d890e74155d6c2b4e108ea20a093326a5c46e385e33dff29ab9eed53a5a0",
+  "entries": 404,
+  "id": "1M2fV3s1ex2hBL6ZWULGDEdTF6ZedPS24",
+  "url": "https://drive.google.com/file/d/1M2fV3s1ex2hBL6ZWULGDEdTF6ZedPS24/view?usp=drivesdk",
+  "shared": false,
+  "permissions": [
+    {
+      "type": "user",
+      "role": "owner"
+    }
+  ],
+  "owner_only": true,
+  "size_metadata_verified": true,
+  "remote_drive_bytes_independently_rehashed": false,
+  "commit_created": false,
+  "push_performed": false
+}

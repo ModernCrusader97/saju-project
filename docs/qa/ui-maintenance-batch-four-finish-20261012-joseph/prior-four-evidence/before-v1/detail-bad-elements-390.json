@@ -1,0 +1,10 @@
+{
+  "page_errors": [
+    "Cannot read properties of null (reading 'wood')"
+  ],
+  "alert_count": 0,
+  "alert_text": null,
+  "title_count": 0,
+  "detail_get_count": 1,
+  "synthetic_posts": 0
+}

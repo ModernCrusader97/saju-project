@@ -1,0 +1,59 @@
+diff --git a/app/manse/page.tsx b/app/manse/page.tsx
+index c5120a3..02ae3fb 100644
+--- a/app/manse/page.tsx
++++ b/app/manse/page.tsx
+@@ -111,8 +111,9 @@ export default function MansePage() {
+ 
+           <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+             <div>
+-              <label className="text-[10.5px] font-bold text-doryeong-textMuted block mb-1">이름</label>
++              <label htmlFor="manse-name" className="text-[10.5px] font-bold text-doryeong-textMuted block mb-1">이름</label>
+               <input
++                id="manse-name"
+                 type="text"
+                 value={name}
+                 maxLength={20}
+@@ -121,8 +122,9 @@ export default function MansePage() {
+               />
+             </div>
+             <div>
+-              <label className="text-[10.5px] font-bold text-doryeong-textMuted block mb-1">태어난 년도</label>
++              <label htmlFor="manse-year" className="text-[10.5px] font-bold text-doryeong-textMuted block mb-1">태어난 년도</label>
+               <input
++                id="manse-year"
+                 type="number"
+                 min={1900}
+                 max={2100}
+@@ -132,8 +134,9 @@ export default function MansePage() {
+               />
+             </div>
+             <div>
+-              <label className="text-[10.5px] font-bold text-doryeong-textMuted block mb-1">월</label>
++              <label htmlFor="manse-month" className="text-[10.5px] font-bold text-doryeong-textMuted block mb-1">월</label>
+               <input
++                id="manse-month"
+                 type="number"
+                 min={1}
+                 max={12}
+@@ -143,8 +146,9 @@ export default function MansePage() {
+               />
+             </div>
+             <div>
+-              <label className="text-[10.5px] font-bold text-doryeong-textMuted block mb-1">일</label>
++              <label htmlFor="manse-day" className="text-[10.5px] font-bold text-doryeong-textMuted block mb-1">일</label>
+               <input
++                id="manse-day"
+                 type="number"
+                 min={1}
+                 max={31}
+@@ -158,8 +162,9 @@ export default function MansePage() {
+           {/* Hour & Unknown time */}
+           <div className="flex items-center gap-3 pt-1">
+             <div className="flex-1 flex items-center gap-2">
+-              <label className="text-[10.5px] font-bold text-doryeong-textMuted shrink-0">태어난 시 (0~23시):</label>
++              <label htmlFor="manse-hour" className="text-[10.5px] font-bold text-doryeong-textMuted shrink-0">태어난 시 (0~23시):</label>
+               <input
++                id="manse-hour"
+                 type="number"
+                 min={0}
+                 max={23}

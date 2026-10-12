@@ -1,0 +1,29 @@
+{
+  "status": "APPLIED_PENDING_FOCUSED_NATIVE_VERIFICATION",
+  "number": 5,
+  "id": "saju-create-result-id-type",
+  "group": "ack",
+  "files": [
+    {
+      "file": "components/SajuInputModal.tsx",
+      "before_sha256": "4787358979a2427fb9d55fd39933c2def54134e4532244876f8ab10e265e0748",
+      "after_sha256": "9b8f44d9225f7f3e60fae6282adeb0cd86a580f3da9ed4d1f7909af5d8072ec6",
+      "before_bytes": 16564,
+      "after_bytes": 16642,
+      "before_snapshot": "changes/fix-5-0-before-native.tsx",
+      "after_snapshot": "changes/fix-5-0-after-native.tsx",
+      "replacements": [
+        {
+          "before": "if (res.ok && data.success && data.fortune) {",
+          "after": "if (res.ok && data.success && data.fortune\r\n        && typeof data.fortune.id === \"string\" && data.fortune.id.length > 0) {",
+          "count": 1
+        }
+      ],
+      "inverse_native_bytes_verified": true
+    }
+  ],
+  "expected": 20,
+  "change": "Require a nonempty string reading ID before invoking success, closing the draft or navigating after a successful create acknowledgement. Missing/null/numeric/empty IDs retain the draft and use the existing error path; prior HTTP/form/modal/provider behavior stays unchanged.",
+  "at_utc": "2026-10-11T05:09:33.649Z",
+  "prior_completed_work_recounted": 0
+}

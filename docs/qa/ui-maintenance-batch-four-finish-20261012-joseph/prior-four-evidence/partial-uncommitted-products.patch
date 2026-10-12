@@ -1,0 +1,150 @@
+diff --git a/app/manse/page.tsx b/app/manse/page.tsx
+index 11dbf73..d5c2cc8 100644
+--- a/app/manse/page.tsx
++++ b/app/manse/page.tsx
+@@ -113,9 +113,10 @@ export default function MansePage() {
+ 
+           <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+             <div>
+-              <label className="text-[10.5px] font-bold text-doryeong-textMuted block mb-1">이름</label>
++              <label htmlFor="manse-name" className="text-[10.5px] font-bold text-doryeong-textMuted block mb-1">이름</label>
+               <input
+                 type="text"
++                id="manse-name"
+                 value={name}
+                 maxLength={20}
+                 onChange={(e) => setName(e.target.value)}
+@@ -123,33 +124,39 @@ export default function MansePage() {
+               />
+             </div>
+             <div>
+-              <label className="text-[10.5px] font-bold text-doryeong-textMuted block mb-1">태어난 년도</label>
++              <label htmlFor="manse-year" className="text-[10.5px] font-bold text-doryeong-textMuted block mb-1">태어난 년도</label>
+               <input
+                 type="number"
+                 min={1900}
+                 max={2100}
++                id="manse-year"
++                required
+                 value={year}
+                 onChange={(e) => setYear(e.target.value)}
+                 className="w-full text-xs font-semibold px-2.5 py-2 rounded-xl border border-doryeong-border text-center bg-doryeong-ivory/50 focus:bg-white focus:border-doryeong-gold focus:outline-none"
+               />
+             </div>
+             <div>
+-              <label className="text-[10.5px] font-bold text-doryeong-textMuted block mb-1">월</label>
++              <label htmlFor="manse-month" className="text-[10.5px] font-bold text-doryeong-textMuted block mb-1">월</label>
+               <input
+                 type="number"
+                 min={1}
+                 max={12}
++                id="manse-month"
++                required
+                 value={month}
+                 onChange={(e) => setMonth(e.target.value)}
+                 className="w-full text-xs font-semibold px-2.5 py-2 rounded-xl border border-doryeong-border text-center bg-doryeong-ivory/50 focus:bg-white focus:border-doryeong-gold focus:outline-none"
+               />
+             </div>
+             <div>
+-              <label className="text-[10.5px] font-bold text-doryeong-textMuted block mb-1">일</label>
++              <label htmlFor="manse-day" className="text-[10.5px] font-bold text-doryeong-textMuted block mb-1">일</label>
+               <input
+                 type="number"
+                 min={1}
+                 max={31}
++                id="manse-day"
++                required
+                 value={day}
+                 onChange={(e) => setDay(e.target.value)}
+                 className="w-full text-xs font-semibold px-2.5 py-2 rounded-xl border border-doryeong-border text-center bg-doryeong-ivory/50 focus:bg-white focus:border-doryeong-gold focus:outline-none"
+@@ -160,12 +167,14 @@ export default function MansePage() {
+           {/* Hour & Unknown time */}
+           <div className="flex items-center gap-3 pt-1">
+             <div className="flex-1 flex items-center gap-2">
+-              <label className="text-[10.5px] font-bold text-doryeong-textMuted shrink-0">태어난 시 (0~23시):</label>
++              <label htmlFor="manse-hour" className="text-[10.5px] font-bold text-doryeong-textMuted shrink-0">태어난 시 (0~23시):</label>
+               <input
+                 type="number"
+                 min={0}
+                 max={23}
+                 disabled={isUnknownTime}
++                id="manse-hour"
++                required
+                 value={hour}
+                 onChange={(e) => setHour(e.target.value)}
+                 className="w-20 text-xs font-semibold px-2 py-1.5 rounded-lg border border-doryeong-border text-center bg-doryeong-ivory/50 disabled:opacity-40"
+diff --git a/app/saved/page.tsx b/app/saved/page.tsx
+index bf3c780..8e3cb66 100644
+--- a/app/saved/page.tsx
++++ b/app/saved/page.tsx
+@@ -32,6 +32,35 @@ function canRenderFortuneSummary(value: unknown): boolean {
+   return row.createdAt === "" || Number.isFinite(new Date(row.createdAt).getTime());
+ }
+ 
++// Check the card's rendered fields before storing detail data; optional legacy fields remain optional.
++function canRenderFortune(value: unknown): boolean {
++  const record = (candidate: unknown): candidate is Record<string, unknown> =>
++    candidate !== null && typeof candidate === "object" && !Array.isArray(candidate);
++  const strings = (candidate: Record<string, unknown>, keys: string[]) =>
++    keys.every(key => typeof candidate[key] === "string");
++  const numbers = (candidate: Record<string, unknown>, keys: string[]) =>
++    keys.every(key => typeof candidate[key] === "number" && Number.isFinite(candidate[key]));
++  const pillar = (candidate: unknown) => record(candidate) && strings(candidate, [
++    "ganElement", "ganHanja", "gan", "shipshinGan", "jiElement", "jiHanja", "ji", "shipshinJi",
++  ]);
++  if (!record(value) || !strings(value, ["title", "summary"])) return false;
++  const analysis = value.analysis;
++  if (!record(analysis) || !strings(analysis, ["name", "calendarType"])
++    || !numbers(analysis, ["birthYear", "birthMonth", "birthDay"])) return false;
++  if (![analysis.yearPillar, analysis.monthPillar, analysis.dayPillar].every(pillar)
++    || (analysis.hourPillar != null && !pillar(analysis.hourPillar))) return false;
++  if (!record(analysis.elementsCount)
++    || !numbers(analysis.elementsCount, ["wood", "fire", "earth", "metal", "water"])) return false;
++  if (analysis.solarBirthDate && (!record(analysis.solarBirthDate)
++    || !numbers(analysis.solarBirthDate, ["year", "month", "day"]))) return false;
++  if (!record(value.metaphor) || !strings(value.metaphor, ["coreTitle", "description"])) return false;
++  if (!record(value.luckyAdvice) || !strings(value.luckyAdvice, ["color", "direction", "mindset"])) return false;
++  return Array.isArray(value.sections) && value.sections.every((section: unknown) =>
++    record(section) && strings(section, ["title", "content"])
++    && (section.subtitle == null || typeof section.subtitle === "string")
++    && (section.advice == null || typeof section.advice === "string"));
++}
++
+ function SavedContent() {
+   const router = useRouter();
+   const searchParams = useSearchParams();
+@@ -71,7 +100,7 @@ function SavedContent() {
+       .then(async (res) => {
+         const data = await readApiResponse(res);
+         if (!res.ok) throw new Error(data.error || "기록을 불러오지 못했습니다.");
+-        if (!data.fortune || data.fortune.id !== queryId) throw new Error("요청한 기록을 확인할 수 없습니다.");
++        if (!data.fortune || data.fortune.id !== queryId || !canRenderFortune(data.fortune)) throw new Error("요청한 기록을 확인할 수 없습니다.");
+         return data.fortune;
+       })
+       .then((fortune) => { if (!controller.signal.aborted) setDetails(previous => new Map(previous).set(queryId, fortune)); })
+diff --git a/components/SajuInputModal.tsx b/components/SajuInputModal.tsx
+index a6f8f6b..99f438d 100644
+--- a/components/SajuInputModal.tsx
++++ b/components/SajuInputModal.tsx
+@@ -121,7 +121,8 @@ export default function SajuInputModal({
+ 
+       const data = await readApiResponse(res);
+ 
+-      if (res.ok && data.success && data.fortune) {
++      if (res.ok && data.success && data.fortune
++        && typeof data.fortune.id === "string" && data.fortune.id.length > 0) {
+         if (onSuccess) {
+           onSuccess(data.fortune);
+         } else {
+diff --git a/components/planet/GalaxyPokedexModal.tsx b/components/planet/GalaxyPokedexModal.tsx
+index f2044b7..c1b64a5 100644
+--- a/components/planet/GalaxyPokedexModal.tsx
++++ b/components/planet/GalaxyPokedexModal.tsx
+@@ -74,6 +74,7 @@ export default function GalaxyPokedexModal({
+       onClick={onClose}
+     >
+       <div
++        role="dialog" aria-modal="true" aria-label="60간지 우주 도감"
+         className="relative w-full max-w-lg bg-gradient-to-b from-[#0B132B] via-[#1C2541] to-[#0A0F1D] border border-doryeong-gold/30 rounded-[36px] p-6 text-white shadow-2xl space-y-6 max-h-[90vh] overflow-y-auto"
+         onClick={(e) => e.stopPropagation()}
+       >

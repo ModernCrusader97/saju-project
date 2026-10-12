@@ -1,0 +1,13 @@
+{
+  "status": "CORRECTED_VISIBLE_YEAR_LABEL_AND_EXACT_SOURCE_MATCH_GUARD_BEFORE_ANY_PRODUCT_WRITE",
+  "at_utc": "2026-10-11T04:55:50.764Z",
+  "actual_visible_label": "태어난 년도",
+  "mistaken_selector": "태어난 연도",
+  "original_exact_source_guard_stopped_before_product_write": true,
+  "product_native_bytes_unchanged": true,
+  "original_guard_and_all_prior_fail_evidence_retained": true,
+  "corrected_harness_sha256": "62b1b984e00898637c5c54630023d9b7bad1ae3a92daf5443ee9647a8d26d4de",
+  "source_guard_now_matches_exact_tag_text_without_interpolated_regex": true,
+  "validated_new_fix_count": 0,
+  "no_new_fixes_from_harness_corrections": true
+}

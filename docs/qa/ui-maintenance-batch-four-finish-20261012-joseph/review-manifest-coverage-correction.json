@@ -1,0 +1,13 @@
+{
+  "status": "CORRECTED_ONE_NESTED_HISTORICAL_MANIFEST_COVERAGE_BEFORE_STAGING",
+  "before_manifest_sha256": "ab7723ca932c26826afce19da34e4b7bd30e59c4c3d382925435c5faf87dfc49",
+  "prior_entries": 1038,
+  "omitted_file": {
+    "file": "prior-four-full-gates/SHA256SUMS",
+    "hash": "2074a371ed75b77d4a29eb434482765f7a06072387f79cf43901de5be6dae383"
+  },
+  "reason": "The post-documentation manifest scan excluded every SHA256SUMS basename; only the new root manifest should be excluded. Retained nested historical bytes are now covered.",
+  "product_source_changes": 0,
+  "new_improvements_counted": 0,
+  "types_regression_build_or_lint_inputs_changed": false
+}

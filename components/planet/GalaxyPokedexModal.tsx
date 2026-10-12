@@ -74,6 +74,7 @@ export default function GalaxyPokedexModal({
       onClick={onClose}
     >
       <div
+        role="dialog" aria-modal="true" aria-label="60간지 우주 도감"
         className="relative w-full max-w-lg bg-gradient-to-b from-[#0B132B] via-[#1C2541] to-[#0A0F1D] border border-doryeong-gold/30 rounded-[36px] p-6 text-white shadow-2xl space-y-6 max-h-[90vh] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
