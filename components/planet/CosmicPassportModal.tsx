@@ -24,6 +24,18 @@ export default function CosmicPassportModal({
   const [copyError, setCopyError] = useState("");
   const cardRef = useRef<HTMLDivElement>(null);
   const dialogRef = useRef<HTMLDivElement>(null);
+  const copyFeedbackTimersRef = useRef(new Set<ReturnType<typeof setTimeout>>());
+  const mountedRef = useRef(true);
+
+  useEffect(() => {
+    const timers = copyFeedbackTimersRef.current;
+    mountedRef.current = true;
+    return () => {
+      mountedRef.current = false;
+      timers.forEach(timer => clearTimeout(timer));
+      timers.clear();
+    };
+  }, []);
 
   useEffect(() => {
     if (!isOpen) return;
@@ -57,9 +69,15 @@ export default function CosmicPassportModal({
     setCopyError("");
     try {
       await navigator.clipboard.writeText(url);
+      if (!mountedRef.current) return;
       setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
+      const timer = setTimeout(() => {
+        copyFeedbackTimersRef.current.delete(timer);
+        setCopied(false);
+      }, 2000);
+      copyFeedbackTimersRef.current.add(timer);
     } catch {
+      if (!mountedRef.current) return;
       setCopied(false);
       setCopyError("초대 링크를 복사하지 못했어요. 다시 시도해 주세요.");
     }

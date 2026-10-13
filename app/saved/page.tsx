@@ -130,10 +130,10 @@ function SavedContent() {
   };
 
   const filteredFortunes = useMemo(() => {
+    const q = fortunes.length ? searchQuery.trim().toLowerCase() : "";
     return fortunes.filter((f) => {
       const matchCategory =
         selectedCategory === "all" || (f.category || "overall") === selectedCategory;
-      const q = searchQuery.trim().toLowerCase();
       const matchSearch =
         !q ||
         f.name.toLowerCase().includes(q) ||

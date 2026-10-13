@@ -28,9 +28,9 @@ const ELEMENT_MAP: Record<string, "wood" | "fire" | "earth" | "metal" | "water">
 
 export function calculateDailyOrbitalWeather(
   ownerPerson: GuinPerson,
-  friends: GuinPerson[]
+  friends: GuinPerson[],
+  today: Date = new Date()
 ): OrbitalWeatherInsight[] {
-  const today = new Date();
   const { gan: todayStem, element: todayElement } = getDailyPillar(
     today.getFullYear(), today.getMonth() + 1, today.getDate()
   );

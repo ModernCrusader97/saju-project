@@ -3,7 +3,7 @@
 import { readApiResponse } from "@/lib/http-client";
 
 
-import React, { lazy, Suspense, useState, useEffect, useRef } from "react";
+import React, { lazy, Suspense, useState, useEffect, useRef, useMemo } from "react";
 import Link from "next/link";
 import { restoreGalaxyUniverse } from "@/lib/universe-state";
 import Header from "@/components/Header";
@@ -264,6 +264,18 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
     }
   };
 
+  const weatherDate = new Date();
+  const weatherYear = weatherDate.getFullYear();
+  const weatherMonth = weatherDate.getMonth();
+  const weatherDay = weatherDate.getDate();
+  const weatherInsights = useMemo(() => {
+    if (!mapData) return [];
+    const owner = mapData.guins.find((g) => g.isMe) || mapData.guins[0];
+    return owner
+      ? calculateDailyOrbitalWeather(owner, mapData.guins, new Date(weatherYear, weatherMonth, weatherDay))
+      : [];
+  }, [mapData, weatherYear, weatherMonth, weatherDay]);
+
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center p-6 text-center">
@@ -321,8 +333,6 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
 
         {/* [Step 3] "오늘 우리 행성의 궤도 날씨" 데일리 관계 인사이트 */}
         {(() => {
-          const owner = mapData.guins.find((g) => g.isMe) || mapData.guins[0];
-          const weatherInsights = owner ? calculateDailyOrbitalWeather(owner, mapData.guins) : [];
           if (weatherInsights.length === 0) return null;
 
           return (
@@ -352,7 +362,15 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
                   return (
                     <div
                       key={insight.friendId}
+                      role="button"
+                      tabIndex={0}
                       onClick={() => setSelectedPersonId(insight.friendId)}
+                      onKeyDown={(event) => {
+                        if (event.key === "Enter" || event.key === " ") {
+                          event.preventDefault();
+                          setSelectedPersonId(insight.friendId);
+                        }
+                      }}
                       className={`p-3 rounded-2xl border transition-all cursor-pointer ${
                         isSelected
                           ? "bg-white/15 border-doryeong-gold shadow-md ring-2 ring-doryeong-gold/70"
