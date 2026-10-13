@@ -1,0 +1,30 @@
+{
+  "goal": "Regenerate an explicitly labeled V26 reconstruction candidate from pinned V25 code, then round only both eye contours without shrinking them.",
+  "authorized_scope": "User explicitly approved cloud regeneration and eye contour correction; no additional approval gate is needed.",
+  "base_commit": "b57f37aa1ff552e3c77ca0f75f4ac21ce2a9ae40",
+  "exact_V26_code_available": false,
+  "reference_pixels": "Original SHA-256 verified, viewed from authorized repository copy. Original V26 comparison PNG pixels unavailable.",
+  "steps": [
+    {
+      "task": "Pinned V25 regeneration",
+      "validation": "Original generator hash matches; approved packed reference hash matches; static geometry checks pass."
+    },
+    {
+      "task": "Reconstruct two known V26 fixes",
+      "validation": "Keep eye/glint mesh bytes exact to V25; keep non-face geometry unchanged; local upper eyelid contact and mouth boundary checks."
+    },
+    {
+      "task": "Round both eyes while keeping size",
+      "validation": "Before/after front and 3/4 cameras identical; eye width/height/projected area do not decrease; smoother contour; convexity, contact, symmetry, topology; all non-eye objects and mouth unchanged."
+    },
+    {
+      "task": "Delivery",
+      "validation": "Blender and GLB open/export checks; Drive new owner-only backups; preserve every intermediate/failure; 0 commits/pushes under 5 verified improvements."
+    }
+  ],
+  "preserve_failure": "generate_v25_cloud_baseline.py used one wrong relative parent; failure occurred before creating model output; corrected in new v2 wrapper.",
+  "commit_push_allowed": false,
+  "UI_changes_allowed": false,
+  "Joseph_PC_allowed": false,
+  "Drive_binary_URL_download_retry_allowed": false
+}

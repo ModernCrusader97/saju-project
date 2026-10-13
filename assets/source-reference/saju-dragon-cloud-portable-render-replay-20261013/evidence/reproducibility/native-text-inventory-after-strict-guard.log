@@ -1,0 +1,5 @@
+[{"name": "CLOUD_FINAL_RIGGED_LID_REPAIR", "bytes": 4192, "sha256": "a6772b87bf3d5cb0cf0bca3145fdc8f19185181e3d13fea97bd46eacc7e6d904"}, {"name": "CLOUD_RECONSTRUCTION_PROVENANCE", "bytes": 5359, "sha256": "1aaef5060b6086fc6b51c1a1a4589b2b813127ba712a9ea245c0b2a8c741e8cd"}, {"name": "CLOUD_ROUND_EYE_AUTHORING", "bytes": 6157, "sha256": "c0e53ca7102ac6cd008d2ec44a8d8ce1c9b29ab88374479c9e4e906eb9a61388"}, {"name": "REGENERATE_bind_idle_export_v8.py", "bytes": 11974, "sha256": "b993cb156f937fd58ded34733a149c5431fa86a52a25d124cdcda27171852c89"}, {"name": "REGENERATE_build_dragon_v8_static.py", "bytes": 44316, "sha256": "691202de75b0c3e11934a1fefa12dd1cf200e41edd88ffd9163b695b42308c4c"}, {"name": "V8_ART_SOURCE_README", "bytes": 294, "sha256": "2327a95fe7546a6bb91890063b595278cd922fb7af9a8da1cd58c77d8c7a1e17"}]
+Blender 4.3.2
+Read blend: "/workspace/saju-cloud-reconstruction-20261013/assets/source-reference/saju-dragon-cloud-v26-reconstruction-20261013/model/SaJu_Dragon_Cloud_V26_Reconstructed_RoundEyes_Final_Idle.blend"
+
+Blender quit

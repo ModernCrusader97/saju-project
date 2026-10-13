@@ -1,0 +1,5 @@
+{"status": "PASS_PRESERVED_STRICT_UPPER_LID_CONTACT", "maximum_gap": 0.0008008213953871746, "minimum_gap": 0.0007994269672053633, "maximum_allowed_gap": 0.002, "minimum_allowed_gap": -0.015}
+Blender 4.3.2
+Read blend: "/workspace/saju-cloud-repro-audit-20261013/relocated/inputs/after.blend"
+
+Blender quit

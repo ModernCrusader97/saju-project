@@ -1,0 +1,14 @@
+{
+  "status": "FAIL_RELOCATED_RENDERER",
+  "exception_type": "FileNotFoundError",
+  "exception": "Relocated execution has no undeclared original scratch input: /workspace/saju-cloud-generated-20261013/matched-renders-01/render-provenance.json",
+  "undeclared_scratch_reads": [
+    {
+      "event": "undeclared_original_scratch_read",
+      "path": "/workspace/saju-cloud-generated-20261013/matched-renders-01/render-provenance.json",
+      "mode": "r"
+    }
+  ],
+  "original_files_removed_or_renamed": false,
+  "isolation": "Python filesystem audit denies undeclared original scratch inputs; old files remain intact"
+}

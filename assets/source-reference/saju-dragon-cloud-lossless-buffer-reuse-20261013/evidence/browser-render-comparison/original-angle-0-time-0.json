@@ -1,0 +1,14 @@
+{
+  "name": "original",
+  "time_seconds": 0,
+  "angle_radians": 0,
+  "pixel_rgba8_sha256": "f5abf3ff47af11b54f27406957a179c30f139c4de3cba7fd071519e4c01565bc",
+  "render_info": {
+    "frame": 35,
+    "calls": 7,
+    "triangles": 1111062,
+    "points": 0,
+    "lines": 0
+  },
+  "non_background_pixels": 0
+}

@@ -1,0 +1,100 @@
+{
+  "status": "PASS_STRICT_EYE_LID_AND_MANE_CONTACT_IN_ACTUAL_MOTION",
+  "frames": [
+    {
+      "frame": 0,
+      "upper_lid_maximum_gap": 0.000800581638031872,
+      "upper_lid_minimum_gap": 0.0007991650963958818,
+      "mane_root_maximum_clearance": -0.00017860128809843445,
+      "mane_root_samples": 33
+    },
+    {
+      "frame": 12,
+      "upper_lid_maximum_gap": 0.0008004882713414929,
+      "upper_lid_minimum_gap": 0.0007992187113252669,
+      "mane_root_maximum_clearance": -0.0001784091205081495,
+      "mane_root_samples": 33
+    },
+    {
+      "frame": 24,
+      "upper_lid_maximum_gap": 0.0008003074657807474,
+      "upper_lid_minimum_gap": 0.0007993605022562633,
+      "mane_root_maximum_clearance": -0.00017874314607979613,
+      "mane_root_samples": 33
+    },
+    {
+      "frame": 36,
+      "upper_lid_maximum_gap": 0.0008006789820953486,
+      "upper_lid_minimum_gap": 0.0007992863747219303,
+      "mane_root_maximum_clearance": -0.00017845526008386514,
+      "mane_root_samples": 33
+    },
+    {
+      "frame": 48,
+      "upper_lid_maximum_gap": 0.0008004622351691637,
+      "upper_lid_minimum_gap": 0.0007992498651461233,
+      "mane_root_maximum_clearance": -0.00017826615021476755,
+      "mane_root_samples": 33
+    },
+    {
+      "frame": 60,
+      "upper_lid_maximum_gap": 0.0008004902615590635,
+      "upper_lid_minimum_gap": 0.0007990411918450645,
+      "mane_root_maximum_clearance": -0.0001786326547517092,
+      "mane_root_samples": 33
+    },
+    {
+      "frame": 72,
+      "upper_lid_maximum_gap": 0.0008004177109626198,
+      "upper_lid_minimum_gap": 0.0007990593769875431,
+      "mane_root_maximum_clearance": -0.00017839860356616555,
+      "mane_root_samples": 33
+    },
+    {
+      "frame": 84,
+      "upper_lid_maximum_gap": 0.0008004142148365645,
+      "upper_lid_minimum_gap": 0.0007991356256269455,
+      "mane_root_maximum_clearance": -0.00017890050685309689,
+      "mane_root_samples": 33
+    },
+    {
+      "frame": 96,
+      "upper_lid_maximum_gap": 0.0008006882624727041,
+      "upper_lid_minimum_gap": 0.0007992972321630987,
+      "mane_root_maximum_clearance": -0.00017856059366749832,
+      "mane_root_samples": 33
+    },
+    {
+      "frame": 108,
+      "upper_lid_maximum_gap": 0.0008005809698374833,
+      "upper_lid_minimum_gap": 0.000799013335665677,
+      "mane_root_maximum_clearance": -0.00017840100827015704,
+      "mane_root_samples": 33
+    },
+    {
+      "frame": 120,
+      "upper_lid_maximum_gap": 0.0008005017382828328,
+      "upper_lid_minimum_gap": 0.0007993617699213473,
+      "mane_root_maximum_clearance": -0.00017850591257229098,
+      "mane_root_samples": 33
+    },
+    {
+      "frame": 132,
+      "upper_lid_maximum_gap": 0.0008007366795652615,
+      "upper_lid_minimum_gap": 0.0007994869210676825,
+      "mane_root_maximum_clearance": -0.0001786017014637764,
+      "mane_root_samples": 33
+    },
+    {
+      "frame": 144,
+      "upper_lid_maximum_gap": 0.000800581638031872,
+      "upper_lid_minimum_gap": 0.0007991650963958818,
+      "mane_root_maximum_clearance": -0.00017860128809843445,
+      "mane_root_samples": 33
+    }
+  ],
+  "maximum_upper_lid_gap": 0.0008007366795652615,
+  "maximum_mane_root_clearance": -0.00017826615021476755,
+  "source_sha256": "7884639bc779697117b8d468460b4fa5a2f6ffa12412a75fd204bbce7f406929",
+  "native_modified": false
+}

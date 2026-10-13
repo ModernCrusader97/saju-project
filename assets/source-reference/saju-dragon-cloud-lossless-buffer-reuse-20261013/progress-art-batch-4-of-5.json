@@ -1,0 +1,18 @@
+{
+  "verified_art_count": 4,
+  "previous_verified_art_count": 3,
+  "new_verified_improvements": 1,
+  "new_improvement": "Byte-identical reuse of9duplicate/contained GLB buffer ranges",
+  "saving_bytes": 326672,
+  "saving_percent": 0.7514027847575312,
+  "source_GLBF_SHA256": "a2a1e0a27d5a07cf7c2ec2358f981711b03ce961e8be6ae538d36022caeda2e6",
+  "candidate_GLB_SHA256": "9b9e04221279d7917f4c446bc04957eebaa5a1a2307ea4c125b63d56b35c713a",
+  "old_ledger_preserved": "/workspace/saju-cloud-reconstruction-20261013/assets/source-reference/saju-dragon-cloud-v26-reconstruction-20261013/progress-final.json",
+  "old_ledger_SHA256": "152916718cb2c3e46ef685e094bcbe34c1de17a437a9cb882aa58f4c51c18e6d",
+  "commit_push_threshold": 5,
+  "new_commits": 0,
+  "pushes": 0,
+  "experiments_tests_review_fixes_counted_separately": false,
+  "UI_batch_touched": false,
+  "main_PR_deployment_permissions_payment_auth_changes": false
+}

@@ -1,0 +1,72 @@
+{
+  "status": "FINAL_LOCAL_LID_GEOMETRY_TRANSFERRED_TO_RIG_QA_PENDING",
+  "volume_refinement_iteration": "CLOUD_RECONSTRUCTED_V26_ROUND_EYES",
+  "binding_revision": 3,
+  "weight_relaxation_iterations": 96,
+  "local_motion_scale": 0.4,
+  "float_root_motion_unchanged": true,
+  "actual_limb_path_point_counts": {
+    "Front_Left": 4,
+    "Front_Right": 4,
+    "Hind_Far": 4,
+    "Hind_Near": 4
+  },
+  "actual_limb_radii": {
+    "Front_Left": [
+      0.235,
+      0.265,
+      0.19,
+      0.155
+    ],
+    "Front_Right": [
+      0.235,
+      0.265,
+      0.19,
+      0.155
+    ],
+    "Hind_Far": [
+      0.18,
+      0.205,
+      0.17,
+      0.155
+    ],
+    "Hind_Near": [
+      0.18,
+      0.205,
+      0.17,
+      0.155
+    ]
+  },
+  "static_source": "/workspace/saju-cloud-generated-20261013/v26-round-eyes-final-03/SaJu_Dragon_Cloud_V26_Reconstructed_RoundEyes_Final.blend",
+  "static_source_sha256": "1abf7e2a288efdda5006a9cc16bf85970d1bd4112e7115ff1db011d6c258d29d",
+  "bones": 13,
+  "runtime_meshes": 7,
+  "native_editable_meshes": 70,
+  "triangles_native": 1111062,
+  "fps": 24,
+  "frames": [
+    0,
+    144
+  ],
+  "loop_seconds": 6,
+  "head_neck_tail_and_paw_motion": true,
+  "old_mesh_or_rig_imported": false,
+  "new_rig_for_reconstructed_anatomy": true,
+  "body_color_method": "Self-contained linear COLOR_0 attribute",
+  "skinned_nodes_are_scene_roots": true,
+  "user_final_appearance_approved": false,
+  "technical_checks_do_not_measure_photo_fidelity": true,
+  "deformation_edge_guards": [
+    0.78,
+    1.23
+  ],
+  "weight_generation_static_source": "/workspace/saju-cloud-generated-20261013/v26-round-eyes-01/SaJu_Dragon_Cloud_V26_Reconstructed_RoundEyes.blend",
+  "affected_lid_vertices": 127,
+  "affected_vertices_rigid_Head_weighted": true,
+  "skin_weights_exactly_frozen": true,
+  "weights_sha256": "c3efb8f74061dbe2c007d33fa3a43f2022fc9904f89df1b3124e5cba368168f3",
+  "native_sha256": "7884639bc779697117b8d468460b4fa5a2f6ffa12412a75fd204bbce7f406929",
+  "glb_sha256": "a2a1e0a27d5a07cf7c2ec2358f981711b03ce961e8be6ae538d36022caeda2e6",
+  "exact_original_V26_claim": false,
+  "animation_or_camera_parameters_changed": false
+}

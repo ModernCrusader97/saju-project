@@ -1,0 +1,9 @@
+{
+  "status": "PASS_NATIVE_OUTGOING_PACKED_SCOPE_VERIFIED",
+  "packed_text_count": 6,
+  "regenerate_script_count": 2,
+  "other_texts": "Existing cloud repair/authoring/provenance documents and V8 source README",
+  "initial_guard_failure": "A new audit assumed that all native text blocks were the two regeneration scripts. It failed before publication. This was an audit assumption, not an asset or production regression. The failing audit script/log remain preserved.",
+  "resolution": "Inventoried all six text blocks and checked every extracted UTF8 text using the same bounded credential rules, expected SHA values, exactly one approved packed image and zero linked Blender libraries. Native asset unchanged.",
+  "additional_improvements_counted": 0
+}

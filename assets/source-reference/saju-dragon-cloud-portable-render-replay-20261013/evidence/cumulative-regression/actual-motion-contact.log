@@ -1,0 +1,5 @@
+{"status": "PASS_STRICT_EYE_LID_AND_MANE_CONTACT_IN_ACTUAL_MOTION", "maximum_upper_lid_gap": 0.0008007366795652615, "maximum_mane_root_clearance": -0.00017826615021476755, "source_sha256": "7884639bc779697117b8d468460b4fa5a2f6ffa12412a75fd204bbce7f406929", "native_modified": false}
+Blender 4.3.2
+Read blend: "/workspace/saju-cloud-restoration-check-20261013/delivery/SaJu_Dragon_Cloud_V26_Reconstructed_RoundEyes_Final_Idle.blend"
+
+Blender quit

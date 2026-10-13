@@ -1,0 +1,13 @@
+{
+  "verified_art_count": 3,
+  "all_validation_passed": true,
+  "new_commits": 0,
+  "pushes": 0,
+  "rulings": [
+    "Exact V26 code absent: separately labeled reconstructed candidate, no identical recovery claim.",
+    "The smile tube was removed as explicit inference, all V25 originals preserved.",
+    "Blender 4.3 needs OIDN disabled and legacy FCurve API; camera overrides removed, motion/weight constants unchanged.",
+    "One Important independent review issue fixed with red\u2192green regression test and final whole suite.",
+    "No cleanup of work or intermediate files; user preservation rule overrides any skill cleanup suggestion."
+  ]
+}

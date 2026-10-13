@@ -1,0 +1,14 @@
+--- preserved_render_final_matched_after.py
++++ render_final_matched_after_portable.py
+@@ -1,7 +1,10 @@
+ """Render real before/after native models with identical cameras, lights and settings."""
+ import argparse,bpy,hashlib,json,sys,numpy as np
+ from pathlib import Path
+-ap=argparse.ArgumentParser();ap.add_argument('--before',required=True);ap.add_argument('--after',required=True);ap.add_argument('--out',required=True);a=ap.parse_args(sys.argv[sys.argv.index('--')+1:]);out=Path(a.out);assert not out.exists();out.mkdir(parents=True);records=[];studio=json.loads(Path('/workspace/saju-cloud-generated-20261013/matched-renders-01/render-provenance.json').read_text())['camera_signature']
++ap=argparse.ArgumentParser();ap.add_argument('--before',required=True);ap.add_argument('--after',required=True);ap.add_argument('--out',required=True);a=ap.parse_args(sys.argv[sys.argv.index('--')+1:]);out=Path(a.out);assert not out.exists();out.mkdir(parents=True);records=[]
++before=Path(a.before).resolve();after=Path(a.after).resolve();assert before.is_file() and after.is_file(),'Declared before/after input files must exist'
++bpy.ops.wm.open_mainfile(filepath=str(before),load_ui=False)
++studio={o.name:{'matrix':np.asarray(o.matrix_world).tolist(),'ortho_scale':o.data.ortho_scale,'lens':o.data.lens,'type':o.data.type} for o in bpy.data.objects if o.type=='CAMERA'}
+ for phase,path in [('after_final_round_eyes',a.after)]:
+  bpy.ops.wm.open_mainfile(filepath=path,load_ui=False);s=bpy.context.scene;signature={o.name:{'matrix':np.asarray(o.matrix_world).tolist(),'ortho_scale':o.data.ortho_scale,'lens':o.data.lens,'type':o.data.type} for o in bpy.data.objects if o.type=='CAMERA'}
+  if studio is None:studio=signature

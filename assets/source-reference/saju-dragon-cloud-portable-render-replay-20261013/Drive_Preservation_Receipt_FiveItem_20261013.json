@@ -1,0 +1,136 @@
+{
+  "status": "PASS_NEW_OWNER_ONLY_DRIVE_PRESERVATION_FIVE_ITEM_ART_BATCH",
+  "created_utc": "2026-10-13T05:31:28.185Z",
+  "new_Drive_files": [
+    {
+      "file_name": "SaJu_Cloud_FiveItem_Replay_All_New_Private_Part01_20261013.zip",
+      "id": "1TNgvenJzYQ49ry-BGQPvb194Pk5kq9hK",
+      "url": "https://drive.google.com/file/d/1TNgvenJzYQ49ry-BGQPvb194Pk5kq9hK/view",
+      "bytes": 58153849,
+      "sha256": "f27bc6b614f1b31f792d7ab9a125c130ba52c0e3a36bd8d58033e372c3ff33bb",
+      "owner_only_metadata_readback": true,
+      "observed_bytes": 58153849,
+      "remote_body_rehashed": false
+    },
+    {
+      "file_name": "SaJu_Cloud_FiveItem_Replay_All_New_Private_Part02_20261013.zip",
+      "id": "1ztqLSfXFwBpl__YPjlwQSQGv226SeX3n",
+      "url": "https://drive.google.com/file/d/1ztqLSfXFwBpl__YPjlwQSQGv226SeX3n/view",
+      "bytes": 55943924,
+      "sha256": "83ab0c2d787d320147ba18cc8308ef0d73e5c0d6b0c754d11914a10df469a496",
+      "owner_only_metadata_readback": true,
+      "observed_bytes": 55943924,
+      "remote_body_rehashed": false
+    },
+    {
+      "file_name": "SaJu_Cloud_FiveItem_Replay_All_New_Private_Part03_20261013.zip",
+      "id": "1UUqKoUwvL8qfEGTwVR-DsfpuZ-fMg54S",
+      "url": "https://drive.google.com/file/d/1UUqKoUwvL8qfEGTwVR-DsfpuZ-fMg54S/view",
+      "bytes": 11586175,
+      "sha256": "d45e509c894cd0fd75898f43589c5a96898a0ee8aafa0b9de88ddbed52794344",
+      "owner_only_metadata_readback": true,
+      "observed_bytes": 11586175,
+      "remote_body_rehashed": false
+    },
+    {
+      "file_name": "SaJu_Cloud_FiveItem_Private_new-five-item-preservation-manifest.json",
+      "id": "1vO2VNBRFUYe-HWWZipFWkQ9W05AYeHlO",
+      "url": "https://drive.google.com/file/d/1vO2VNBRFUYe-HWWZipFWkQ9W05AYeHlO/view",
+      "bytes": 73903,
+      "sha256": "6488d00263176abf587c59071d46edb1850d0aee68419a95a013b2744b7e3951",
+      "owner_only_metadata_readback": true,
+      "observed_bytes": 73903,
+      "remote_body_rehashed": false
+    },
+    {
+      "file_name": "SaJu_Cloud_FiveItem_Private_portable-render-replay-final-report.json",
+      "id": "1x0frr3mANNMCohph2nzjHltrtF63jYIA",
+      "url": "https://drive.google.com/file/d/1x0frr3mANNMCohph2nzjHltrtF63jYIA/view",
+      "bytes": 12173,
+      "sha256": "0524416e87bb0b433c883aecfb454aaf76d9f955c54510128cdc8f5f36f08f04",
+      "owner_only_metadata_readback": true,
+      "observed_bytes": 12173,
+      "remote_body_rehashed": false
+    },
+    {
+      "file_name": "SaJu_Cloud_FiveItem_Private_progress-art-batch-5-of-5.json",
+      "id": "1S0nfZtag10P3xi-SAJMN6fiVkOfGOv2F",
+      "url": "https://drive.google.com/file/d/1S0nfZtag10P3xi-SAJMN6fiVkOfGOv2F/view",
+      "bytes": 1816,
+      "sha256": "fa94bdfea8d472d2508d37d3474feb8b15df4a1fc2b8e4432022ed55dd03e985",
+      "owner_only_metadata_readback": true,
+      "observed_bytes": 1816,
+      "remote_body_rehashed": false
+    },
+    {
+      "file_name": "SaJu_Cloud_FiveItem_Private_restore_cloud_snapshot.py",
+      "id": "1B_HBYX63byssEQjXLDuYvsPVNoMrBbCW",
+      "url": "https://drive.google.com/file/d/1B_HBYX63byssEQjXLDuYvsPVNoMrBbCW/view",
+      "bytes": 1698,
+      "sha256": "4ef9dcf5367edd54bed301b95b57e30e57e8e881a8f56f5377cf73fcb2697cc5",
+      "owner_only_metadata_readback": true,
+      "observed_bytes": 1698,
+      "remote_body_rehashed": false
+    },
+    {
+      "file_name": "SaJu_Cloud_FiveItem_Private_local-snapshot-verification.log",
+      "id": "1owdS6_CsigO49LTwXCDnv9v-SqMeAGSU",
+      "url": "https://drive.google.com/file/d/1owdS6_CsigO49LTwXCDnv9v-SqMeAGSU/view",
+      "bytes": 757,
+      "sha256": "5b14ee80743e48c9d5a370eb4c875ed3329c103b211e9aedd465dd0e5c359733",
+      "owner_only_metadata_readback": true,
+      "observed_bytes": 757,
+      "remote_body_rehashed": false
+    }
+  ],
+  "local_snapshot": {
+    "source_files": 126,
+    "source_total_bytes": 164913058,
+    "unique_raw_chunk_bytes": 125662864,
+    "ZIP_CRC_chunk_and_each_full_file_SHA256_pass": true,
+    "manifest_SHA256": "6488d00263176abf587c59071d46edb1850d0aee68419a95a013b2744b7e3951"
+  },
+  "batch": {
+    "verified_art_count": 5,
+    "new_independent_improvements_in_this_audit": 1,
+    "audits_tests_replay_generation_and_review_corrections_counted": 0,
+    "commit_push_threshold": 5,
+    "ordinary_batch_commit_push": "Pending exact staged-file check; authorized on existing local art branch only"
+  },
+  "existing_verified_recovery_reused": {
+    "files": 158,
+    "existing_log": "/workspace/saju-cloud-backups-20261013/actual-restoration-verification.log",
+    "status": "PASS_RESTORED_EXACT_CLOUD_FILES 158",
+    "restoration_repeated": false
+  },
+  "model": {
+    "native_SHA256": "7884639bc779697117b8d468460b4fa5a2f6ffa12412a75fd204bbce7f406929",
+    "current_GLB_SHA256": "9b9e04221279d7917f4c446bc04957eebaa5a1a2307ea4c125b63d56b35c713a",
+    "all_native_packed_texts_scanned": 6,
+    "expected_approved_packed_images": 1,
+    "asset_input_bytes_modified": false,
+    "GLB_saving_bytes": 326672
+  },
+  "minimal_renderer_fix": {
+    "description": "Obtain unchanged camera signature from required --before native input",
+    "exact_existing_image_pixel_pairs": 3,
+    "different_pixels": 0,
+    "PNG_file_binary_identity": false,
+    "PNG_hash_difference": "tEXt metadata only",
+    "isolation_evidence_scope": "Specific Python open audit; no complete OS native Blender file-read isolation or Windows run claim"
+  },
+  "git_scope": {
+    "repository": "ModernCrusader97/saju-project",
+    "visibility": "private",
+    "branch": "art/dragon-cloud-v26-round-eyes-reconstruction-20261013",
+    "base": "b57f37aa1ff552e3c77ca0f75f4ac21ce2a9ae40",
+    "main_before": "2e2d82b05f87b39ff8057ae914e8dfa01100a974",
+    "old_Joseph_art_branch_before": "b57f37aa1ff552e3c77ca0f75f4ac21ce2a9ae40",
+    "UI_batch_touched": false,
+    "main_PR_deployment_public_permissions_auth_payment_changes": false,
+    "Joseph_PC_used": false,
+    "denied_Drive_transfer_path_used": false
+  },
+  "remote_verification": "Successful new uploads; exact sizes, shared=false and sole user owner permission confirmed. Remote binary bodies were not downloaded or rehashed.",
+  "preservation_receipt": "New standalone Drive upload follows creation; final commit/push and staged-check receipt are separate new files."
+}

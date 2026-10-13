@@ -1,0 +1,185 @@
+{
+  "status": "PASS_CUMULATIVE_FIVE_ITEM_ART_REGRESSION",
+  "checks": [
+    {
+      "name": "exact-glb-storage",
+      "command": [
+        "python3",
+        "/workspace/saju-cloud-reconstruction-20261013/assets/source-reference/saju-dragon-cloud-lossless-buffer-reuse-20261013/source/verify_exact_glb_storage.py",
+        "--original",
+        "/workspace/saju-cloud-repro-audit-20261013/relocated/inputs/original.glb",
+        "--candidate",
+        "/workspace/saju-cloud-repro-audit-20261013/relocated/lossless-regenerated.glb",
+        "--out",
+        "/workspace/saju-cloud-repro-audit-20261013/batch-regression/exact-glb-storage.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.784,
+      "log": "exact-glb-storage.log"
+    },
+    {
+      "name": "three-runtime",
+      "command": [
+        "node",
+        "/workspace/saju-cloud-reconstruction-20261013/assets/source-reference/saju-dragon-cloud-lossless-buffer-reuse-20261013/source/pinned_original_runtime_verifier.mjs",
+        "--glb",
+        "/workspace/saju-cloud-repro-audit-20261013/relocated/lossless-regenerated.glb",
+        "--out",
+        "/workspace/saju-cloud-repro-audit-20261013/batch-regression/three-runtime.json",
+        "--three-root",
+        "/workspace/saju-project/node_modules/three",
+        "--generation-report",
+        "/workspace/saju-cloud-reconstruction-20261013/assets/source-reference/saju-dragon-cloud-lossless-buffer-reuse-20261013/evidence/input-original-generation-report.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.655,
+      "log": "three-runtime.log"
+    },
+    {
+      "name": "khronos",
+      "command": [
+        "node",
+        "/workspace/saju-cloud-reconstruction-20261013/assets/source-reference/saju-dragon-cloud-lossless-buffer-reuse-20261013/source/pinned_original_khronos_verifier.mjs",
+        "--glb",
+        "/workspace/saju-cloud-repro-audit-20261013/relocated/lossless-regenerated.glb",
+        "--out",
+        "/workspace/saju-cloud-repro-audit-20261013/batch-regression/khronos.json",
+        "--validator",
+        "/workspace/saju-cloud-validation-tools/node_modules/gltf-validator"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.382,
+      "log": "khronos.log"
+    },
+    {
+      "name": "static-geometry",
+      "command": [
+        "blender",
+        "--background",
+        "--factory-startup",
+        "--python-exit-code",
+        "1",
+        "--threads",
+        "4",
+        "--python",
+        "/workspace/saju-cloud-reconstruction-20261013/assets/source-reference/saju-dragon-volume-review-v22-face-v25-20261012/latest-static-face-v25/source/verify_v8_static.py",
+        "--",
+        "--blend",
+        "/workspace/saju-cloud-repro-audit-20261013/relocated/inputs/after.blend",
+        "--out",
+        "/workspace/saju-cloud-repro-audit-20261013/batch-regression/static-geometry.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 6.073,
+      "log": "static-geometry.log"
+    },
+    {
+      "name": "eye-only-no-shrink",
+      "command": [
+        "blender",
+        "--background",
+        "--factory-startup",
+        "--python-exit-code",
+        "1",
+        "--threads",
+        "4",
+        "--python",
+        "/workspace/saju-cloud-reconstruction-20261013/assets/source-reference/saju-dragon-cloud-v26-reconstruction-20261013/source/verify_eye_only_change_v2.py",
+        "--",
+        "--before",
+        "/workspace/saju-cloud-repro-audit-20261013/relocated/inputs/before.blend",
+        "--after",
+        "/workspace/saju-cloud-repro-audit-20261013/relocated/inputs/after.blend",
+        "--out",
+        "/workspace/saju-cloud-repro-audit-20261013/batch-regression/eye-only-no-shrink.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.303,
+      "log": "eye-only-no-shrink.log"
+    },
+    {
+      "name": "strict-lid-contact",
+      "command": [
+        "blender",
+        "--background",
+        "--factory-startup",
+        "--python-exit-code",
+        "1",
+        "--threads",
+        "4",
+        "--python",
+        "/workspace/saju-cloud-reconstruction-20261013/assets/source-reference/saju-dragon-cloud-v26-reconstruction-20261013/source/verify_upper_lid_contact.py",
+        "--",
+        "--blend",
+        "/workspace/saju-cloud-repro-audit-20261013/relocated/inputs/after.blend",
+        "--out",
+        "/workspace/saju-cloud-repro-audit-20261013/batch-regression/strict-lid-contact.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.873,
+      "log": "strict-lid-contact.log"
+    },
+    {
+      "name": "actual-motion-contact",
+      "command": [
+        "blender",
+        "--background",
+        "--factory-startup",
+        "--python-exit-code",
+        "1",
+        "--threads",
+        "4",
+        "--python",
+        "/workspace/saju-cloud-reconstruction-20261013/assets/source-reference/saju-dragon-cloud-v26-reconstruction-20261013/source/verify_face_and_mane_contact_in_motion.py",
+        "--",
+        "--blend",
+        "/workspace/saju-cloud-restoration-check-20261013/delivery/SaJu_Dragon_Cloud_V26_Reconstructed_RoundEyes_Final_Idle.blend",
+        "--out",
+        "/workspace/saju-cloud-repro-audit-20261013/batch-regression/actual-motion-contact.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 6.045,
+      "log": "actual-motion-contact.log"
+    },
+    {
+      "name": "native-current-glb-roundtrip",
+      "command": [
+        "blender",
+        "--background",
+        "--factory-startup",
+        "--python-exit-code",
+        "1",
+        "--threads",
+        "4",
+        "--python",
+        "/workspace/saju-cloud-reconstruction-20261013/assets/source-reference/saju-dragon-cloud-v26-reconstruction-20261013/source/verify_native_cloud_final.py",
+        "--",
+        "--blend",
+        "/workspace/saju-cloud-restoration-check-20261013/delivery/SaJu_Dragon_Cloud_V26_Reconstructed_RoundEyes_Final_Idle.blend",
+        "--glb",
+        "/workspace/saju-cloud-repro-audit-20261013/relocated/lossless-regenerated.glb",
+        "--out",
+        "/workspace/saju-cloud-repro-audit-20261013/batch-regression/native-current-glb-roundtrip",
+        "--source-static",
+        "/workspace/saju-cloud-reconstruction-20261013/assets/source-reference/saju-dragon-volume-review-v22-face-v25-20261012/latest-static-face-v25/source/build_dragon_v8_volume_v25.py",
+        "--source-bind",
+        "/workspace/saju-cloud-reconstruction-20261013/assets/source-reference/saju-dragon-cloud-v26-reconstruction-20261013/source/bind_cloud_reconstructed_round_eyes_idle.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 81.959,
+      "log": "native-current-glb-roundtrip.log"
+    }
+  ],
+  "input_hashes": {
+    "/workspace/saju-cloud-repro-audit-20261013/relocated/inputs/before.blend": "600c637567aa9b4887bc1ac464e076299af833a33e19aa97d2ac153ea6525e7f",
+    "/workspace/saju-cloud-repro-audit-20261013/relocated/inputs/after.blend": "1abf7e2a288efdda5006a9cc16bf85970d1bd4112e7115ff1db011d6c258d29d",
+    "/workspace/saju-cloud-repro-audit-20261013/relocated/inputs/original.glb": "a2a1e0a27d5a07cf7c2ec2358f981711b03ce961e8be6ae538d36022caeda2e6",
+    "/workspace/saju-cloud-repro-audit-20261013/relocated/lossless-regenerated.glb": "9b9e04221279d7917f4c446bc04957eebaa5a1a2307ea4c125b63d56b35c713a",
+    "/workspace/saju-cloud-restoration-check-20261013/delivery/SaJu_Dragon_Cloud_V26_Reconstructed_RoundEyes_Final_Idle.blend": "7884639bc779697117b8d468460b4fa5a2f6ffa12412a75fd204bbce7f406929"
+  },
+  "all_asset_inputs_unchanged": true,
+  "heavy_158_file_restore_repeated": false,
+  "geometry_generation_repeated": false,
+  "verifier_thresholds_modified": false,
+  "tests_count_as_new_improvements": false
+}

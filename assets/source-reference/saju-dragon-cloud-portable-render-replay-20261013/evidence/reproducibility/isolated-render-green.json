@@ -1,0 +1,6 @@
+{
+  "status": "PASS_RELOCATED_RENDERER_DECLARED_INPUTS_ONLY",
+  "undeclared_scratch_reads": [],
+  "original_files_removed_or_renamed": false,
+  "isolation": "Same original-scratch read policy as red probe"
+}

@@ -1,0 +1,5 @@
+{"status": "PASS_STATIC_TECHNICAL_GEOMETRY_REFERENCE_BYTES_ONLY_VISUAL_REVIEW_REQUIRED", "mesh_count": 70, "skin": {"name": "Dragon_Continuous_Skin", "vertices": 488467, "polygons": 976921, "nonmanifold_edges": 0, "components": 1, "euler": 2, "signed_volume": 8.710095055096412}}
+Blender 4.3.2
+Read blend: "/workspace/saju-cloud-repro-audit-20261013/relocated/inputs/after.blend"
+
+Blender quit

@@ -1,0 +1,26 @@
+{
+  "status": "PASS_INDEPENDENT_READ_ONLY_REVIEW_ONE_PRODUCTION_RENDERER_FIX",
+  "reviewer": "review_lossless_buffer_reuse",
+  "critical_findings": 0,
+  "important_findings": 0,
+  "independent_improvement_accepted": true,
+  "accepted_change": "Read camera signatures from declared --before native input instead of undeclared absolute scratch render-provenance.json",
+  "confirmed": [
+    "The original hidden Python JSON read failed in the relocated red execution.",
+    "The same Python open policy admitted the green execution with declared input files.",
+    "All three new images have exactly identical RGBA8 pixels and PNG IDAT chunks to preserved originals.",
+    "PNG file hash differences occur only in tEXt metadata; PNG binary identity is not claimed.",
+    "Camera signatures and quality settings match preserved originals exactly.",
+    "Relocated inputs match their restored-source hashes.",
+    "Original renderer source remains byte-identical in production, restoration, and relocated copies.",
+    "Relocated optimizer output remains SHA256 9b9e04221279d7917f4c446bc04957eebaa5a1a2307ea4c125b63d56b35c713a."
+  ],
+  "limitations": [
+    "The probe intercepts Python file opens. It proves removal of the specific Python scratch dependency, not complete operating-system isolation of Blender native file reads.",
+    "No Windows execution or Joseph PC access was performed.",
+    "Archived diagnostic helpers retain original scratch paths and are not claimed to be portable entrypoints.",
+    "The complete 158-file restoration and geometry generation were not repeated. Existing verification was reused."
+  ],
+  "reviewer_wrote_files_or_ran_renders": false,
+  "audit_optimizer_regeneration_and_tests_counted_as_improvements": false
+}

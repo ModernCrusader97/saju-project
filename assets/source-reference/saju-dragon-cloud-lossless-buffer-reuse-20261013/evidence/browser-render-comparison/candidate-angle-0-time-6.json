@@ -1,0 +1,14 @@
+{
+  "name": "candidate",
+  "time_seconds": 6,
+  "angle_radians": 0,
+  "pixel_rgba8_sha256": "10a6615a9453456ad2adc701068d2de332c3db5bc349a87bc732dfbb8a80548f",
+  "render_info": {
+    "frame": 40,
+    "calls": 7,
+    "triangles": 1111062,
+    "points": 0,
+    "lines": 0
+  },
+  "non_background_pixels": 0
+}

@@ -1,0 +1,27 @@
+Traceback (most recent call last):
+  File "/workspace/saju-cloud-repro-audit-20261013/isolated_render_probe.py", line 15, in <module>
+    runpy.run_path(str(script),run_name='__main__')
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "/workspace/saju-cloud-repro-audit-20261013/relocated/tools/render_final_matched_after.py", line 4, in <module>
+    ap=argparse.ArgumentParser();ap.add_argument('--before',required=True);ap.add_argument('--after',required=True);ap.add_argument('--out',required=True);a=ap.parse_args(sys.argv[sys.argv.index('--')+1:]);out=Path(a.out);assert not out.exists();out.mkdir(parents=True);records=[];studio=json.loads(Path('/workspace/saju-cloud-generated-20261013/matched-renders-01/render-provenance.json').read_text())['camera_signature']
+                                                                                                                                                                                                                                                                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/pathlib/_local.py", line 548, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/pathlib/_local.py", line 539, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/saju-cloud-repro-audit-20261013/isolated_render_probe.py", line 11, in audit
+    raise FileNotFoundError('Relocated execution has no undeclared original scratch input: '+p)
+FileNotFoundError: Relocated execution has no undeclared original scratch input: /workspace/saju-cloud-generated-20261013/matched-renders-01/render-provenance.json
+
+Error: script failed, file: '/workspace/saju-cloud-repro-audit-20261013/isolated_render_probe.py', exiting.
+Blender 4.3.2
+
+Blender quit

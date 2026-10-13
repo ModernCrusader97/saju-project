@@ -1,0 +1,89 @@
+{
+  "status": "PASS_EYE_ONLY_NO_SHRINK_ROUNDER_CONTOUR",
+  "checks": {
+    "same_object_names": true,
+    "only_eye_and_local_skin_meshes_changed": true,
+    "same_cameras_lights_floor": true,
+    "skin_topology_count_unchanged": true,
+    "skin_paint_and_topology_exactly_frozen": true,
+    "skin_changes_confined_to_eye_support": true,
+    "local_skin_displacement_bounded": true,
+    "-1_width_not_reduced": true,
+    "-1_height_not_reduced": true,
+    "-1_area_not_reduced": true,
+    "-1_area_change_small": true,
+    "-1_rounder_outline": true,
+    "-1_convex_eye": true,
+    "1_width_not_reduced": true,
+    "1_height_not_reduced": true,
+    "1_area_not_reduced": true,
+    "1_area_change_small": true,
+    "1_rounder_outline": true,
+    "1_convex_eye": true,
+    "bilateral_outline_dimensions_symmetric": true
+  },
+  "before": {
+    "-1": {
+      "width": 0.24049801211203303,
+      "height": 0.2963276770585024,
+      "center": [
+        -1.5707127040432347,
+        3.625257291331014
+      ],
+      "area": 0.055385205098843926,
+      "ellipse_radial_std": 0.032719082000216004,
+      "circularity": 0.9780657698269711,
+      "minimum_radial_convex_bulge": 7.20460362799713e-05
+    },
+    "1": {
+      "width": 0.24037678395548168,
+      "height": 0.29436072031085336,
+      "center": [
+        -0.6292267203330995,
+        3.6260284146410724
+      ],
+      "area": 0.05503876481307657,
+      "ellipse_radial_std": 0.029285274577595576,
+      "circularity": 0.9796004086037279,
+      "minimum_radial_convex_bulge": 7.11938500899123e-05
+    }
+  },
+  "after": {
+    "-1": {
+      "width": 0.24049810824855689,
+      "height": 0.2963274302225978,
+      "center": [
+        -1.5707429389799794,
+        3.625642791012099
+      ],
+      "area": 0.05588247862800699,
+      "ellipse_radial_std": 6.315764463217693e-07,
+      "circularity": 0.9830624395436632,
+      "minimum_radial_convex_bulge": 0.00011339227785356343
+    },
+    "1": {
+      "width": 0.24049806018029485,
+      "height": 0.2963275229785034,
+      "center": [
+        -0.6292570273722372,
+        3.62564276201993
+      ],
+      "area": 0.05588247989291517,
+      "ellipse_radial_std": 5.791144172591935e-07,
+      "circularity": 0.9830623661262702,
+      "minimum_radial_convex_bulge": 0.00011324104411869484
+    }
+  },
+  "changed_meshes": [
+    "Dragon_Continuous_Skin",
+    "Eye_Closed_Fitted_Convex_Volume_-1",
+    "Eye_Attached_Glint_-1",
+    "Eye_Closed_Fitted_Convex_Volume_1",
+    "Eye_Attached_Glint_1"
+  ],
+  "skin_changed_vertices": 1402,
+  "max_skin_displacement": 0.021910693496465683,
+  "original_V26_identical_claim": false,
+  "before_native_sha256": "600c637567aa9b4887bc1ac464e076299af833a33e19aa97d2ac153ea6525e7f",
+  "after_native_sha256": "1abf7e2a288efdda5006a9cc16bf85970d1bd4112e7115ff1db011d6c258d29d"
+}

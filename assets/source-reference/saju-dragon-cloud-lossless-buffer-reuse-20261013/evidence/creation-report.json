@@ -1,0 +1,73 @@
+{
+  "status": "BYTE_IDENTICAL_STORAGE_REUSE_CANDIDATE_QA_PENDING",
+  "source_file": "/workspace/saju-cloud-delivery-20261013/SaJu_Dragon_Cloud_V26_Reconstructed_RoundEyes_Final_Idle.glb",
+  "source_sha256": "a2a1e0a27d5a07cf7c2ec2358f981711b03ce961e8be6ae538d36022caeda2e6",
+  "candidate_sha256": "9b9e04221279d7917f4c446bc04957eebaa5a1a2307ea4c125b63d56b35c713a",
+  "source_bytes": 43474952,
+  "candidate_bytes": 43148280,
+  "saved_bytes": 326672,
+  "saved_percent": 0.7514027847575312,
+  "reused_ranges": [
+    {
+      "view": 11,
+      "existing_view": 31,
+      "existing_range_offset": 0,
+      "bytes": 231424
+    },
+    {
+      "view": 15,
+      "existing_view": 35,
+      "existing_range_offset": 0,
+      "bytes": 10256
+    },
+    {
+      "view": 16,
+      "existing_view": 36,
+      "existing_range_offset": 0,
+      "bytes": 41024
+    },
+    {
+      "view": 20,
+      "existing_view": 35,
+      "existing_range_offset": 0,
+      "bytes": 4936
+    },
+    {
+      "view": 21,
+      "existing_view": 36,
+      "existing_range_offset": 0,
+      "bytes": 19744
+    },
+    {
+      "view": 25,
+      "existing_view": 35,
+      "existing_range_offset": 0,
+      "bytes": 3848
+    },
+    {
+      "view": 26,
+      "existing_view": 36,
+      "existing_range_offset": 0,
+      "bytes": 15392
+    },
+    {
+      "view": 45,
+      "existing_view": 42,
+      "existing_range_offset": 0,
+      "bytes": 24
+    },
+    {
+      "view": 75,
+      "existing_view": 42,
+      "existing_range_offset": 0,
+      "bytes": 24
+    }
+  ],
+  "accessor_component_types_or_values_changed": false,
+  "bufferView_count_unchanged": true,
+  "accessor_count_unchanged": true,
+  "extensions_added": false,
+  "runtime_dependencies_added": false,
+  "UV_cleanup_repeated": false,
+  "original_overwritten": false
+}

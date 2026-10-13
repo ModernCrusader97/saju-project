@@ -1,0 +1,195 @@
+{
+  "status": "PASS_IDENTICAL_CAMERA_ACTUAL_NATIVE_BEFORE_AFTER_RENDERS",
+  "before_is_reconstructed_candidate_not_original_V26": true,
+  "camera_signature": {
+    "Camera_Front": {
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.10000000149011612
+        ],
+        [
+          0.0,
+          -1.6292068494294654e-07,
+          -1.0,
+          -11.0
+        ],
+        [
+          0.0,
+          1.0,
+          -1.6292068494294654e-07,
+          2.390000104904175
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "ortho_scale": 5.630000114440918,
+      "lens": 50.0,
+      "type": "ORTHO"
+    },
+    "Camera_HeadFront": {
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.100000023841858
+        ],
+        [
+          0.0,
+          0.13918089866638184,
+          -0.9902669787406921,
+          -10.892999649047852
+        ],
+        [
+          0.0,
+          0.9902669787406921,
+          0.13918089866638184,
+          5.111000061035156
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "ortho_scale": 3.299999952316284,
+      "lens": 50.0,
+      "type": "ORTHO"
+    },
+    "Camera_HeadThreeQuarter": {
+      "matrix": [
+        [
+          0.8754836916923523,
+          -0.10268781334161758,
+          0.4722113013267517,
+          4.900000095367432
+        ],
+        [
+          0.48324766755104065,
+          0.18603603541851044,
+          -0.8554894924163818,
+          -11.0
+        ],
+        [
+          2.659028552898235e-08,
+          0.9771621227264404,
+          0.21249516308307648,
+          6.25
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "ortho_scale": 3.3299999237060547,
+      "lens": 50.0,
+      "type": "ORTHO"
+    },
+    "Camera_Side": {
+      "matrix": [
+        [
+          -4.371138828673793e-08,
+          4.371138828673793e-08,
+          1.0,
+          11.0
+        ],
+        [
+          1.0,
+          1.910685676922942e-15,
+          4.371138828673793e-08,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          2.380000114440918
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "ortho_scale": 5.630000114440918,
+      "lens": 50.0,
+      "type": "ORTHO"
+    },
+    "Camera_ThreeQuarter": {
+      "matrix": [
+        [
+          0.8795708417892456,
+          -0.11167941242456436,
+          0.46247464418411255,
+          6.0
+        ],
+        [
+          0.4757678806781769,
+          0.2064661830663681,
+          -0.8549951314926147,
+          -11.0
+        ],
+        [
+          -1.7953754039012892e-08,
+          0.9720593690872192,
+          0.23473511636257172,
+          5.400000095367432
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "ortho_scale": 6.449999809265137,
+      "lens": 50.0,
+      "type": "ORTHO"
+    }
+  },
+  "settings": {
+    "engine": "CYCLES",
+    "device": "CPU",
+    "samples": 64,
+    "denoising": false,
+    "resolution": [
+      640,
+      640
+    ],
+    "seed": 20261013
+  },
+  "renders": [
+    {
+      "phase": "after_final_round_eyes",
+      "camera": "HeadFront",
+      "file": "after_final_round_eyes_headfront.png",
+      "sha256": "d07c2808f9599279b666a5e517970c710d04f53fa8941231a79ccddc497a2607",
+      "native_sha256": "1abf7e2a288efdda5006a9cc16bf85970d1bd4112e7115ff1db011d6c258d29d"
+    },
+    {
+      "phase": "after_final_round_eyes",
+      "camera": "HeadThreeQuarter",
+      "file": "after_final_round_eyes_headthreequarter.png",
+      "sha256": "0ef86dd03a43407ba6e8e95caf9bdc9cad9d5518a6290a02fc9f7c39258a83d6",
+      "native_sha256": "1abf7e2a288efdda5006a9cc16bf85970d1bd4112e7115ff1db011d6c258d29d"
+    },
+    {
+      "phase": "after_final_round_eyes",
+      "camera": "ThreeQuarter",
+      "file": "after_final_round_eyes_threequarter.png",
+      "sha256": "bb4d79fc12a8c6e1c9d777e8cd62c5c363ac75de8f5ca6727968b647bdba7f6c",
+      "native_sha256": "1abf7e2a288efdda5006a9cc16bf85970d1bd4112e7115ff1db011d6c258d29d"
+    }
+  ]
+}

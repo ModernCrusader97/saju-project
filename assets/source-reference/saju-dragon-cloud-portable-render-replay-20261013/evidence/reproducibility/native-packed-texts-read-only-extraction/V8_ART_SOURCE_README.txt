@@ -1,0 +1,1 @@
+New reconstructed geometry. Reference pixels are packed and exact. Static review precedes new rig and idle. Technical geometry checks are not photo similarity or user approval. Editable skin/curved flame leaves/hidden construction seeds remain available. No previous mesh or armature imported.

@@ -1,0 +1,212 @@
+{
+  "status": "PASS_NATIVE_AND_GLB_ROUNDTRIP",
+  "source_blend_sha256": "7884639bc779697117b8d468460b4fa5a2f6ffa12412a75fd204bbce7f406929",
+  "glb_sha256": "9b9e04221279d7917f4c446bc04957eebaa5a1a2307ea4c125b63d56b35c713a",
+  "checks": {
+    "continuous_skin_components": 1,
+    "Dragon_Continuous_Skin_topology": {
+      "closed_components": 1,
+      "euler_characteristic": 2,
+      "unintended_handles": 0,
+      "nonmanifold_edges": 0
+    },
+    "skin_weights_normalized": true,
+    "bones": 13,
+    "vertex_color_on_same_skin": true,
+    "native_loop_max_vertex_error": 0.0,
+    "sampled_edge_length_ratio": [
+      0.8360410215880175,
+      1.2018075243578041
+    ],
+    "sampled_skin_motion_max": 0.12497667378099135,
+    "sampled_frames": [
+      0,
+      36,
+      72,
+      108,
+      144
+    ],
+    "deformation_frames": [
+      12,
+      24,
+      36,
+      48,
+      60,
+      72,
+      84,
+      96,
+      108,
+      120,
+      132,
+      144
+    ],
+    "deformation_guards_unchanged": [
+      0.78,
+      1.23
+    ],
+    "sampled_edge_count": 162821,
+    "native_loop_sampled_boundary_velocity_error_per_frame": 0.00014291776955940532,
+    "invalid_native_vertex_normals": 0,
+    "packed_approved_source_image": [
+      {
+        "name": "Approved_2D_Concept_SHA256_6184555091c8",
+        "bytes": 1651398,
+        "sha256": "6184555091c80769d6553ae40641dbb44eb6dcc859dd0b8591b7887cc1502e58"
+      }
+    ],
+    "packed_authoring_literal_bytes": [
+      {
+        "name": "REGENERATE_build_dragon_v8_static.py",
+        "bytes": 44316,
+        "sha256": "691202de75b0c3e11934a1fefa12dd1cf200e41edd88ffd9163b695b42308c4c"
+      },
+      {
+        "name": "REGENERATE_bind_idle_export_v8.py",
+        "bytes": 11974,
+        "sha256": "b993cb156f937fd58ded34733a149c5431fa86a52a25d124cdcda27171852c89"
+      }
+    ],
+    "native_sampled_bounds_zup": {
+      "min": [
+        -3.07614803314209,
+        -1.485387921333313,
+        -0.28062930703163147
+      ],
+      "max": [
+        3.1646437644958496,
+        1.2991929054260254,
+        5.319169044494629
+      ]
+    },
+    "importer_control_objects_excluded": [
+      "Icosphere"
+    ],
+    "glb_import_mesh_count": 7,
+    "glb_roundtrip_max_nearest_vertex_error": {
+      "0": 1.469710809942626e-06,
+      "36": 2.4343225959455594e-06,
+      "72": 2.64486175183265e-06,
+      "108": 3.4903086998383515e-06,
+      "144": 1.469710809942626e-06
+    },
+    "glb_source_geometry_preserved": true,
+    "glb_animation_reimported": true,
+    "actual_imported_glb_camera_records": {
+      "front": {
+        "location": [
+          0.10000000149011612,
+          -11.0,
+          2.390000104904175
+        ],
+        "rotation_euler": [
+          1.5707964897155762,
+          -0.0,
+          0.0
+        ],
+        "ortho_scale": 5.630000114440918,
+        "resolution": [
+          640,
+          640
+        ],
+        "frame": 0,
+        "cycles_samples": 24
+      },
+      "threequarter": {
+        "location": [
+          6.0,
+          -11.0,
+          5.400000095367432
+        ],
+        "rotation_euler": [
+          1.3338502645492554,
+          1.7953754039012892e-08,
+          0.49583685398101807
+        ],
+        "ortho_scale": 6.449999809265137,
+        "resolution": [
+          640,
+          640
+        ],
+        "frame": 0,
+        "cycles_samples": 24
+      },
+      "side": {
+        "location": [
+          11.0,
+          0.0,
+          2.380000114440918
+        ],
+        "rotation_euler": [
+          1.5707963705062866,
+          -0.0,
+          1.5707963705062866
+        ],
+        "ortho_scale": 5.630000114440918,
+        "resolution": [
+          640,
+          640
+        ],
+        "frame": 0,
+        "cycles_samples": 24
+      },
+      "headfront": {
+        "location": [
+          -1.100000023841858,
+          -10.892999649047852,
+          5.111000061035156
+        ],
+        "rotation_euler": [
+          1.4311621189117432,
+          -0.0,
+          0.0
+        ],
+        "ortho_scale": 3.299999952316284,
+        "resolution": [
+          640,
+          640
+        ],
+        "frame": 0,
+        "cycles_samples": 24
+      },
+      "headthreequarter": {
+        "location": [
+          4.900000095367432,
+          -11.0,
+          6.25
+        ],
+        "rotation_euler": [
+          1.3566685914993286,
+          -2.659028552898235e-08,
+          0.5043604969978333
+        ],
+        "ortho_scale": 3.3299999237060547,
+        "resolution": [
+          640,
+          640
+        ],
+        "frame": 0,
+        "cycles_samples": 24
+      }
+    },
+    "glb_actual_render": "glb-reimport-threequarter.png"
+  },
+  "user_final_appearance_approved": false,
+  "technical_checks_do_not_measure_photo_fidelity": true,
+  "video_formats_available": [
+    "BMP",
+    "IRIS",
+    "PNG",
+    "JPEG",
+    "JPEG2000",
+    "TARGA",
+    "TARGA_RAW",
+    "CINEON",
+    "DPX",
+    "OPEN_EXR_MULTILAYER",
+    "OPEN_EXR",
+    "HDR",
+    "TIFF",
+    "WEBP",
+    "FFMPEG"
+  ]
+}

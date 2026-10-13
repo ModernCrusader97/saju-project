@@ -1,0 +1,70 @@
+{
+  "status": "PASS_NEW_OWNER_ONLY_DRIVE_PRESERVATION_ONE_LOSSLESS_STORAGE_IMPROVEMENT",
+  "created_utc": "2026-10-13T04:39:07.079Z",
+  "new_Drive_files": [
+    {
+      "key": "losslessCandidate",
+      "file_name": "SaJu_Dragon_Cloud_RoundEyes_Lossless_BufferReuse_Verified_WIP_Private_20261013.glb",
+      "id": "1MQOO-BvaMhPNhR39BGzTCsfNm_T_m8G6",
+      "url": "https://drive.google.com/file/d/1MQOO-BvaMhPNhR39BGzTCsfNm_T_m8G6/view?usp=drivesdk",
+      "bytes": 43148280,
+      "sha256": "9b9e04221279d7917f4c446bc04957eebaa5a1a2307ea4c125b63d56b35c713a",
+      "owner_only_metadata_readback": true,
+      "observed_bytes": 43148280,
+      "remote_body_rehashed": false
+    },
+    {
+      "key": "losslessEvidence",
+      "file_name": "SaJu_Cloud_Lossless_BufferReuse_All_New_WIP_Evidence_Private_20261013.zip",
+      "id": "1ATBx8LCL_kcjB8Af3qH7sgDy0Cf--BxR",
+      "url": "https://drive.google.com/file/d/1ATBx8LCL_kcjB8Af3qH7sgDy0Cf--BxR/view?usp=drivesdk",
+      "bytes": 24320920,
+      "sha256": "479f1861fd108975a9352094026d5c60bd1b9362ac783da480dc76787ac9fc69",
+      "owner_only_metadata_readback": true,
+      "observed_bytes": 24320920,
+      "remote_body_rehashed": false
+    },
+    {
+      "key": "losslessReport",
+      "file_name": "SaJu_Cloud_Lossless_BufferReuse_Verified_Report_Private_20261013.json",
+      "id": "1DD-smJwWrM8_5SxhAu8A-MuBlEQoqo4G",
+      "url": "https://drive.google.com/file/d/1DD-smJwWrM8_5SxhAu8A-MuBlEQoqo4G/view?usp=drivesdk",
+      "bytes": 13667,
+      "sha256": "42367249b14fbff811c87f2f3a2d13daa4e65ec6686e7d834b77ace6ea0f5d43",
+      "owner_only_metadata_readback": true,
+      "observed_bytes": 13667,
+      "remote_body_rehashed": false
+    }
+  ],
+  "local_preservation": {
+    "source_files": 58,
+    "source_total_bytes": 44676727,
+    "ZIP_CRC_and_each_file_SHA256_pass": true
+  },
+  "originals": {
+    "GLB_SHA256": "a2a1e0a27d5a07cf7c2ec2358f981711b03ce961e8be6ae538d36022caeda2e6",
+    "native_SHA256": "7884639bc779697117b8d468460b4fa5a2f6ffa12412a75fd204bbce7f406929",
+    "original_GLBF_and_native_and_3_WIP_ledger_unchanged": true
+  },
+  "batch": {
+    "verified_art_count": 4,
+    "new_independent_improvements": 1,
+    "experiments_or_tests_or_review_corrections_added_to_count": 0,
+    "commit_push_threshold": 5,
+    "commits": 0,
+    "pushes": 0
+  },
+  "isolated_WIP_directory": "/workspace/saju-cloud-reconstruction-20261013/assets/source-reference/saju-dragon-cloud-lossless-buffer-reuse-20261013",
+  "unchanged_remote": {
+    "art_SHA": "b57f37aa1ff552e3c77ca0f75f4ac21ce2a9ae40",
+    "main_SHA": "2e2d82b05f87b39ff8057ae914e8dfa01100a974"
+  },
+  "scope": {
+    "Joseph_PC_used": false,
+    "denied_Drive_download_path_used": false,
+    "new_extensions_or_dependencies_or_app_geometry_quality_eye_changes": false,
+    "PR_main_merge_deployment_public_permissions_auth_payment_changes": false
+  },
+  "remote_verification": "Successful new uploads; exact sizes, shared=false and sole user owner permission confirmed. Remote binary bodies were not re-downloaded for SHA.",
+  "receipt_own_upload": "Reported after metadata readback in parent handoff"
+}

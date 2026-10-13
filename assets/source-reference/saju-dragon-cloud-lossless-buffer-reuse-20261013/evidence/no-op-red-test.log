@@ -1,0 +1,6 @@
+{"status": "FAIL_EXACT_GLB_STORAGE_EQUIVALENCE", "failure": "No meaningful storage saving (need at least 300000 bytes)"}
+Traceback (most recent call last):
+  File "/workspace/saju-cloud-lossless-buffer-reuse-20261013/source/verify_exact_glb_storage.py", line 54, in <module>
+    assert report['saved_bytes']>=300000,'No meaningful storage saving (need at least 300000 bytes)'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: No meaningful storage saving (need at least 300000 bytes)

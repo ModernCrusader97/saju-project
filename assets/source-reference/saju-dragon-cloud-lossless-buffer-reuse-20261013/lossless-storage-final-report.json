@@ -1,0 +1,349 @@
+{
+  "status": "PASS_ONE_EXACT_LOSSLESS_GLB_STORAGE_IMPROVEMENT",
+  "created_utc": "2026-10-13T04:32:59.576403+00:00",
+  "scope": "Saved cloud only; original/native/app/UI unchanged; one storage improvement; no quantization/decimation/remesh/texture conversion/eye edit/extensions/new dependencies",
+  "base_commit": "b57f37aa1ff552e3c77ca0f75f4ac21ce2a9ae40",
+  "branch": "art/dragon-cloud-v26-round-eyes-reconstruction-20261013",
+  "creation": {
+    "status": "BYTE_IDENTICAL_STORAGE_REUSE_CANDIDATE_QA_PENDING",
+    "source_file": "/workspace/saju-cloud-delivery-20261013/SaJu_Dragon_Cloud_V26_Reconstructed_RoundEyes_Final_Idle.glb",
+    "source_sha256": "a2a1e0a27d5a07cf7c2ec2358f981711b03ce961e8be6ae538d36022caeda2e6",
+    "candidate_sha256": "9b9e04221279d7917f4c446bc04957eebaa5a1a2307ea4c125b63d56b35c713a",
+    "source_bytes": 43474952,
+    "candidate_bytes": 43148280,
+    "saved_bytes": 326672,
+    "saved_percent": 0.7514027847575312,
+    "reused_ranges": [
+      {
+        "view": 11,
+        "existing_view": 31,
+        "existing_range_offset": 0,
+        "bytes": 231424
+      },
+      {
+        "view": 15,
+        "existing_view": 35,
+        "existing_range_offset": 0,
+        "bytes": 10256
+      },
+      {
+        "view": 16,
+        "existing_view": 36,
+        "existing_range_offset": 0,
+        "bytes": 41024
+      },
+      {
+        "view": 20,
+        "existing_view": 35,
+        "existing_range_offset": 0,
+        "bytes": 4936
+      },
+      {
+        "view": 21,
+        "existing_view": 36,
+        "existing_range_offset": 0,
+        "bytes": 19744
+      },
+      {
+        "view": 25,
+        "existing_view": 35,
+        "existing_range_offset": 0,
+        "bytes": 3848
+      },
+      {
+        "view": 26,
+        "existing_view": 36,
+        "existing_range_offset": 0,
+        "bytes": 15392
+      },
+      {
+        "view": 45,
+        "existing_view": 42,
+        "existing_range_offset": 0,
+        "bytes": 24
+      },
+      {
+        "view": 75,
+        "existing_view": 42,
+        "existing_range_offset": 0,
+        "bytes": 24
+      }
+    ],
+    "accessor_component_types_or_values_changed": false,
+    "bufferView_count_unchanged": true,
+    "accessor_count_unchanged": true,
+    "extensions_added": false,
+    "runtime_dependencies_added": false,
+    "UV_cleanup_repeated": false,
+    "original_overwritten": false
+  },
+  "all_79_accessor_component_bits_and_bufferView_bytes_exact": true,
+  "all_other_document_semantics_exact": true,
+  "actual_Three_equivalence": {
+    "status": "PASS_ACTUAL_THREE_ALL_ACCESSORS_MATERIALS_SKINS_ANIMATION_AND_DEFORMED_VERTEX_BITS",
+    "original_sha256": "a2a1e0a27d5a07cf7c2ec2358f981711b03ce961e8be6ae538d36022caeda2e6",
+    "candidate_sha256": "9b9e04221279d7917f4c446bc04957eebaa5a1a2307ea4c125b63d56b35c713a",
+    "mesh_count": 7,
+    "material_count": 7,
+    "bones": 13,
+    "animation_seconds": 6,
+    "actual_animation_frames_compared": 145,
+    "sampled_vertices": 5905,
+    "sampled_frame_vertex_comparisons": 856225,
+    "all_vertex_comparisons_at_five_poses": 2822935,
+    "fullPoseHashes": [
+      {
+        "time_seconds": 0,
+        "full_deformed_vertex_float64_sha256": "35b992090f55d669172bbccd2927a1ad33cfed9bf800edcbe96c66f556a97f1e",
+        "equal": true
+      },
+      {
+        "time_seconds": 1.5,
+        "full_deformed_vertex_float64_sha256": "31f3725d0680e4ca7b73098023675f47b9ff51bc13355ff6abc6e3acd7784b1a",
+        "equal": true
+      },
+      {
+        "time_seconds": 3,
+        "full_deformed_vertex_float64_sha256": "8578606f9fd769d7856e98a644967fc65f05054d8f11d068af8f725731f9157f",
+        "equal": true
+      },
+      {
+        "time_seconds": 4.5,
+        "full_deformed_vertex_float64_sha256": "de2d3fc52cc2669e0282f9006a0840cadae485c24b0ba8c24bb80280d012b754",
+        "equal": true
+      },
+      {
+        "time_seconds": 6,
+        "full_deformed_vertex_float64_sha256": "b24d18abb21f792f01586bfe5e4fd3075ace7aafcbfe86e6e8dff15147811097",
+        "equal": true
+      }
+    ],
+    "maximum_component_difference": 0,
+    "loader_dependency": "/workspace/saju-project/node_modules/three",
+    "new_runtime_dependencies": 0
+  },
+  "Khronos_issues": {
+    "numErrors": 0,
+    "numWarnings": 0,
+    "numInfos": 0,
+    "numHints": 0,
+    "messages": [],
+    "truncated": false
+  },
+  "existing_runtime_regression": {
+    "meshCount": 7,
+    "triangles": 1111062,
+    "vertices": 564587,
+    "bones": 13,
+    "invalidNormals": 0,
+    "invalidWeights": 0,
+    "nonfinitePositions": 0,
+    "zeroAreaTriangles": 0,
+    "loopEndPoseError": 6.888667257305481e-07,
+    "maxMotion": 0.1773044220733133,
+    "frames": 145,
+    "sampledVertices": 5905,
+    "boundaryVelocityErrorPerFrame": 0.0001408537212652848
+  },
+  "actual_same_condition_render": {
+    "status": "PASS_ALL_SIX_ACTUAL_NONBLANK_RENDER_PAIRS_EXACT_PIXELS",
+    "environment": {
+      "THREE_revision": "186",
+      "bytes": {
+        "original": 43474952,
+        "candidate": 43148280
+      },
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "resolution": [
+        640,
+        640
+      ],
+      "DPR": 1,
+      "settings": {
+        "antialias": true,
+        "preserveDrawingBuffer": true,
+        "toneMapping": "ACESFilmicToneMapping",
+        "exposure": 0.8,
+        "environmentIntensity": 0.45,
+        "shadows": false,
+        "postprocessing": false
+      },
+      "camera": {
+        "position": [
+          0,
+          0,
+          15.118079738018006
+        ],
+        "matrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          15.118079738018006,
+          1
+        ],
+        "projection": [
+          3.4874144438409087,
+          0,
+          0,
+          0,
+          0,
+          3.4874144438409087,
+          0,
+          0,
+          0,
+          0,
+          -1.0002000200020003,
+          -1,
+          0,
+          0,
+          -0.020002000200020003,
+          0
+        ]
+      },
+      "not_mobile_GPU_measurement": true
+    },
+    "pairs": [
+      {
+        "angle": 0,
+        "time_seconds": 0,
+        "decoded_PNG_RGBA8_sha256": "623fd3c784d4d62b8718381321823d3888cb21b9055915cac651189a37026462",
+        "original_PNG_file_sha256": "245ae7f5241e357c9d578cb2ab1c360cb3e2a2fe9296874458da08cc2de141bf",
+        "candidate_PNG_file_sha256": "245ae7f5241e357c9d578cb2ab1c360cb3e2a2fe9296874458da08cc2de141bf",
+        "actual_non_background_pixels": 74875,
+        "different_pixels": 0,
+        "captured_WebGL_RGBA8_sha256": "f5abf3ff47af11b54f27406957a179c30f139c4de3cba7fd071519e4c01565bc",
+        "captured_WebGL_pixel_hash_equal": true
+      },
+      {
+        "angle": 0,
+        "time_seconds": 3,
+        "decoded_PNG_RGBA8_sha256": "29050f998360e0c026642eb85f5a2500293b05c43c9bf282dadcb20aad1eea1d",
+        "original_PNG_file_sha256": "1db105e8cfd241d271e66c75ce1fbf784185bef5f6070bcb84f30ce3ec7953a4",
+        "candidate_PNG_file_sha256": "1db105e8cfd241d271e66c75ce1fbf784185bef5f6070bcb84f30ce3ec7953a4",
+        "actual_non_background_pixels": 74890,
+        "different_pixels": 0,
+        "captured_WebGL_RGBA8_sha256": "354a932688dc44cd7eb192d8235f0530cdcac1015f6979cee1686b2d0ca8ed78",
+        "captured_WebGL_pixel_hash_equal": true
+      },
+      {
+        "angle": 0,
+        "time_seconds": 6,
+        "decoded_PNG_RGBA8_sha256": "f390687aaed7397b3dfcd8f9c7181bd6f35ab8e383d683f8f83a5a8033378a4e",
+        "original_PNG_file_sha256": "f8b41bd6f29596b7cc5e82eea471d96c9feb797ac7a892299f64b9c3551c4ca8",
+        "candidate_PNG_file_sha256": "f8b41bd6f29596b7cc5e82eea471d96c9feb797ac7a892299f64b9c3551c4ca8",
+        "actual_non_background_pixels": 74875,
+        "different_pixels": 0,
+        "captured_WebGL_RGBA8_sha256": "10a6615a9453456ad2adc701068d2de332c3db5bc349a87bc732dfbb8a80548f",
+        "captured_WebGL_pixel_hash_equal": true
+      },
+      {
+        "angle": 0.28,
+        "time_seconds": 0,
+        "decoded_PNG_RGBA8_sha256": "55459849007eb7a948a20bf134c785e4f82fd4e8522c6356d54f0f0cc26eca3b",
+        "original_PNG_file_sha256": "260d3b12724b3916215743d65d990112df3bddb03b934ff01ce8348399ae7fe3",
+        "candidate_PNG_file_sha256": "260d3b12724b3916215743d65d990112df3bddb03b934ff01ce8348399ae7fe3",
+        "actual_non_background_pixels": 71084,
+        "different_pixels": 0,
+        "captured_WebGL_RGBA8_sha256": "714bffb41c8cf7278ae9c11a8a0d1f962d413dc0726125290fafa208d3cbcc3e",
+        "captured_WebGL_pixel_hash_equal": true
+      },
+      {
+        "angle": 0.28,
+        "time_seconds": 3,
+        "decoded_PNG_RGBA8_sha256": "c4bc7adee9bb9b9ea3bac2b3167da21dfcc7b6e9a86a781fa120efca71682f53",
+        "original_PNG_file_sha256": "aa3240adf8cb0cadb9c2b1c5cfb03f38ccee758aeec4df095f3592c6c78d38ce",
+        "candidate_PNG_file_sha256": "aa3240adf8cb0cadb9c2b1c5cfb03f38ccee758aeec4df095f3592c6c78d38ce",
+        "actual_non_background_pixels": 71106,
+        "different_pixels": 0,
+        "captured_WebGL_RGBA8_sha256": "0c3f1fa3eafa9fc22f2617bca101915f50d52fded51910419eb6c0c42be922a7",
+        "captured_WebGL_pixel_hash_equal": true
+      },
+      {
+        "angle": 0.28,
+        "time_seconds": 6,
+        "decoded_PNG_RGBA8_sha256": "8c01920d500d56dfd4936f51d62c7635505af1b88802e95a73a031b5c6506be4",
+        "original_PNG_file_sha256": "4244d2e96680aac404f5be7870a2bb35d9b9964656877ec04a36fb8dadb0eaec",
+        "candidate_PNG_file_sha256": "4244d2e96680aac404f5be7870a2bb35d9b9964656877ec04a36fb8dadb0eaec",
+        "actual_non_background_pixels": 71084,
+        "different_pixels": 0,
+        "captured_WebGL_RGBA8_sha256": "a9996d83dd1daf5095b67e8ba8e032a5b0aab6222cb0ebcb3e36c34e99b305b8",
+        "captured_WebGL_pixel_hash_equal": true
+      }
+    ],
+    "legacy_unused_placeholder": "Original browser probe records non_background_pixels:0 as an unused placeholder, not a measurement. This separate image-based count is authoritative. Original records preserved; corrected reproduction source provided separately.",
+    "model_or_quality_changes": false
+  },
+  "independent_review": {
+    "status": "READY_TO_ACCEPT_ONE_LOSSLESS_STORAGE_IMPROVEMENT",
+    "reviewer": "independent read-only agent review_lossless_buffer_reuse",
+    "critical_findings": 0,
+    "important_findings": 0,
+    "minor_findings": [
+      {
+        "issue": "unused hardcoded non_background_pixels:0 in preserved initial render probe",
+        "resolution": "Excluded from verified claims. Authoritative image-based check counts actual nonbackground pixels, confirms six exact nonblank pairs. Independent reviewer confirmed all vertically flipped PNG RGBA arrays reproduce captured WebGL hashes. Corrected reproduction v2 sources preserved; no full rerender after counter-only correction."
+      }
+    ],
+    "independent_recomputations": [
+      "Both source/candidate SHA256 and326672-byte delta",
+      "All79 bufferView bytes unchanged",
+      "Whole JSON unchanged except bufferView byteOffsets andbuffer byteLength",
+      "Shared overlapping ranges have same target andstride",
+      "All12 PNGs decode to six identical nonblank pairs and reproduce WebGL hashes"
+    ],
+    "writes_renders_installs_commit_push_performed_by_reviewer": false,
+    "remaining_artifact_blockers": []
+  },
+  "batch": {
+    "verified_art_count": 4,
+    "previous_verified_art_count": 3,
+    "new_verified_improvements": 1,
+    "new_improvement": "Byte-identical reuse of9duplicate/contained GLB buffer ranges",
+    "saving_bytes": 326672,
+    "saving_percent": 0.7514027847575312,
+    "source_GLBF_SHA256": "a2a1e0a27d5a07cf7c2ec2358f981711b03ce961e8be6ae538d36022caeda2e6",
+    "candidate_GLB_SHA256": "9b9e04221279d7917f4c446bc04957eebaa5a1a2307ea4c125b63d56b35c713a",
+    "old_ledger_preserved": "/workspace/saju-cloud-reconstruction-20261013/assets/source-reference/saju-dragon-cloud-v26-reconstruction-20261013/progress-final.json",
+    "old_ledger_SHA256": "152916718cb2c3e46ef685e094bcbe34c1de17a437a9cb882aa58f4c51c18e6d",
+    "commit_push_threshold": 5,
+    "new_commits": 0,
+    "pushes": 0,
+    "experiments_tests_review_fixes_counted_separately": false,
+    "UI_batch_touched": false,
+    "main_PR_deployment_permissions_payment_auth_changes": false
+  },
+  "prior_V6_history": {
+    "unused_UV_removal_previously_saved_bytes": 87820,
+    "current_model_has_no_TEXCOORD_or_image_textures": "Confirmed previous resource analysis and raw current spec",
+    "UV_cleanup_repeated": false
+  },
+  "preservation": {
+    "source_GLB_unchanged": true,
+    "source_native_unchanged": true,
+    "all_original_WIP_versions_preserved": true,
+    "all_new_code_candidates_tests_and_red_failure_retained": true,
+    "Drive_upload_readbacks": "Recorded in separately uploaded preservation receipt",
+    "remote_binary_body_rehashed": false,
+    "includes_credentials_or_unrelated_personal_data": false
+  },
+  "limits": [
+    "Storage reduction is0.7514%; decoded geometry/GPU draw/texture memory remain unchanged",
+    "No new mobile GPU/latency/performance approval claim",
+    "Source remains separately labeled V26 reconstruction candidate, not identical original V26 recovery",
+    "Initial render instrumentation contains an excluded placeholder; image-based measured summary is authoritative",
+    "Corrected counter-only reproduction sourcev2 was not rerendered; actual executed original probe + measured saved-image check supply render proof"
+  ],
+  "core_glTF_reference": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#buffers-and-buffer-views",
+  "prohibited_actions_performed": false
+}

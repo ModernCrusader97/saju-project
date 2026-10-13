@@ -1,0 +1,39 @@
+{
+  "status": "PASS_RELOCATED_RENDERER_ALL_THREE_EXISTING_IMAGES_EXACT_PIXELS",
+  "comparisons": [
+    {
+      "new_file": "after_final_round_eyes_headfront.png",
+      "new_file_sha256": "d07c2808f9599279b666a5e517970c710d04f53fa8941231a79ccddc497a2607",
+      "original_file_sha256": "f817a116e735a5e38b5eaf52f142238452414142f4b57ccdafc5e30ecbf2f3d7",
+      "RGBA8_pixel_sha256": "150bde9d676308bfe8f7185eea215e160c98ee6000c79ed8c38ea75739db0d00",
+      "exact_pixel_equal": true,
+      "different_pixels": 0
+    },
+    {
+      "new_file": "after_final_round_eyes_headthreequarter.png",
+      "new_file_sha256": "0ef86dd03a43407ba6e8e95caf9bdc9cad9d5518a6290a02fc9f7c39258a83d6",
+      "original_file_sha256": "de9e7e629ce777d5c5c6d22c350f117604967aa84379523c8d853b5faf263677",
+      "RGBA8_pixel_sha256": "77ef0a77350feb970c1b7ca9f359687a4aa9eda3db260b04b2c17457c775ee04",
+      "exact_pixel_equal": true,
+      "different_pixels": 0
+    },
+    {
+      "new_file": "after_final_round_eyes_threequarter.png",
+      "new_file_sha256": "bb4d79fc12a8c6e1c9d777e8cd62c5c363ac75de8f5ca6727968b647bdba7f6c",
+      "original_file_sha256": "5c9b8a8b3afaccf08560b363e4e76613074be6e58869e22175e53fbc618415a1",
+      "RGBA8_pixel_sha256": "18ca53cefb025b122319fa91b6c43c6e0883116f3b42ae2d47707c0e6ee11eb5",
+      "exact_pixel_equal": true,
+      "different_pixels": 0
+    }
+  ],
+  "same_render_quality_settings": true,
+  "old_scratch_input_reads": 0,
+  "declared_before_input_camera_signature_equals_original": true,
+  "no_geometry_material_color_animation_camera_asset_or_app_changes": true,
+  "actual_file_input_policy": {
+    "status": "PASS_RELOCATED_RENDERER_DECLARED_INPUTS_ONLY",
+    "undeclared_scratch_reads": [],
+    "original_files_removed_or_renamed": false,
+    "isolation": "Same original-scratch read policy as red probe"
+  }
+}

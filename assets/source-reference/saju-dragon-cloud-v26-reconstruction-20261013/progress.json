@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-10-13T02:25:36.521019+00:00",
+  "phase": "source acquisition complete; baseline generation",
+  "verified_art_count": 2,
+  "new_verified_improvements": 0,
+  "rulings": [
+    "Exact V26 generator/wrapper bodies are unavailable; generated asset must be labeled reconstructed candidate rather than identical recovery.",
+    "No original source edits or commit/push; Blender packaging adaptation disables OIDN only."
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "verified_art_count": 5,
+  "previous_verified_art_count": 4,
+  "new_independent_improvements": 1,
+  "new_improvement": "Final matched renderer uses the declared before native input instead of an undeclared absolute scratch camera-provenance file",
+  "items": [
+    {
+      "number": 1,
+      "improvement": "Reconstructed V26 upper-eyelid contact",
+      "scope": "Separately labelled cloud reconstruction; exact original V26 identity not claimed"
+    },
+    {
+      "number": 2,
+      "improvement": "Reconstructed V26 mouth boundary",
+      "scope": "Smile-tube removal remains explicitly labelled inference"
+    },
+    {
+      "number": 3,
+      "improvement": "Rounder soft convex eye outlines, preserving size and bilateral symmetry"
+    },
+    {
+      "number": 4,
+      "improvement": "Exact GLB buffer range reuse",
+      "saving_bytes": 326672,
+      "candidate_sha256": "9b9e04221279d7917f4c446bc04957eebaa5a1a2307ea4c125b63d56b35c713a"
+    },
+    {
+      "number": 5,
+      "improvement": "Declared-input final renderer replay path fix",
+      "different_pixels_in_three_existing_render_pairs": 0
+    }
+  ],
+  "audits_restore_reuse_optimizer_regeneration_tests_reviews_counted_as_improvements": false,
+  "cumulative_regression_passed": true,
+  "independent_review_critical_or_important_findings": 0,
+  "old_ledger_3_sha256": "152916718cb2c3e46ef685e094bcbe34c1de17a437a9cb882aa58f4c51c18e6d",
+  "old_ledger_4_sha256": "9fe438369782656816d6c1ae8f48e87c5dd3a1c3503f47da9fd0ada2909cae00",
+  "old_ledger_files_preserved": true,
+  "commit_push_threshold": 5,
+  "commit_push_status": "Awaiting new owner-only Drive preservation and exact staged-file secret check; one ordinary batch commit then push authorized",
+  "UI_batch_touched": false,
+  "main_PR_deployment_permissions_payment_auth_changes": false
+}

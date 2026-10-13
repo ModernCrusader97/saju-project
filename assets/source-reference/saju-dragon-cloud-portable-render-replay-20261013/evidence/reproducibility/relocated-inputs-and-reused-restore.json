@@ -1,0 +1,24 @@
+{
+  "existing_158_restore_not_repeated": true,
+  "existing_restore_result": "PASS_RESTORED_EXACT_CLOUD_FILES 158",
+  "only_three_declared_input_files_copied": [
+    {
+      "source_already_restored": "/workspace/saju-cloud-restoration-check-20261013/generated/v26-reconstructed-baseline-03/SaJu_Dragon_Cloud_V26_Reconstructed_Baseline.blend",
+      "relocated": "/workspace/saju-cloud-repro-audit-20261013/relocated/inputs/before.blend",
+      "sha256": "600c637567aa9b4887bc1ac464e076299af833a33e19aa97d2ac153ea6525e7f",
+      "bytes": 33437306
+    },
+    {
+      "source_already_restored": "/workspace/saju-cloud-restoration-check-20261013/generated/v26-round-eyes-final-03/SaJu_Dragon_Cloud_V26_Reconstructed_RoundEyes_Final.blend",
+      "relocated": "/workspace/saju-cloud-repro-audit-20261013/relocated/inputs/after.blend",
+      "sha256": "1abf7e2a288efdda5006a9cc16bf85970d1bd4112e7115ff1db011d6c258d29d",
+      "bytes": 33440986
+    },
+    {
+      "source_already_restored": "/workspace/saju-cloud-restoration-check-20261013/delivery/SaJu_Dragon_Cloud_V26_Reconstructed_RoundEyes_Final_Idle.glb",
+      "relocated": "/workspace/saju-cloud-repro-audit-20261013/relocated/inputs/original.glb",
+      "sha256": "a2a1e0a27d5a07cf7c2ec2358f981711b03ce961e8be6ae538d36022caeda2e6",
+      "bytes": 43474952
+    }
+  ]
+}

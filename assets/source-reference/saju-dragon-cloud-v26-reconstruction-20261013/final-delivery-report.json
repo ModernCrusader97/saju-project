@@ -1,0 +1,183 @@
+{
+  "status": "PASS_CLOUD_RECONSTRUCTED_ROUND_EYES_NATIVE_GLB_AND_MOTION_QA",
+  "created_utc": "2026-10-13T03:05:59.785648+00:00",
+  "base_commit": "b57f37aa1ff552e3c77ca0f75f4ac21ce2a9ae40",
+  "work_branch": "art/dragon-cloud-v26-round-eyes-reconstruction-20261013",
+  "repository": "/workspace/saju-cloud-reconstruction-20261013",
+  "original_checkout_unchanged": true,
+  "Joseph_PC_used": false,
+  "Drive_binary_download_retries_or_bypass": false,
+  "V27_shrink_candidate_used": false,
+  "exact_original_V26_recovered": false,
+  "provenance": {
+    "generator_used": "V25 literal source + explicit semantic reconstruction of two reported V26 fixes",
+    "V25_generator_sha256": "691202de75b0c3e11934a1fefa12dd1cf200e41edd88ffd9163b695b42308c4c",
+    "V26_generator_expected_sha256_not_obtained": "ab61cb83c3548be8118f44f0681ecd07d661664b051ecdbe118580276507c8d4",
+    "V26_wrapper_expected_sha256_not_obtained": "aca037358e26c89d6dd69df7b85f459aeccf60c5e4755f159b0d3788e8a57971",
+    "approved_photo_sha256": "6184555091c80769d6553ae40641dbb44eb6dcc859dd0b8591b7887cc1502e58",
+    "approved_photo_pixels_viewed": true,
+    "original_V26_comparison_pixels_viewed": false,
+    "mouth_tube_removal_is_inference_from_70_vs_71_meshes_and_reported_boundary_fix": true,
+    "Blender_version": "4.3.2",
+    "original_PC_source_version": "5.2.1",
+    "Blender_version_can_change_modifier_results": true,
+    "not_a_photo_similarity_or_appearance_approval_claim": true
+  },
+  "eye_change": {
+    "size_shrink": false,
+    "before": {
+      "-1": {
+        "width": 0.24049801211203303,
+        "height": 0.2963276770585024,
+        "center": [
+          -1.5707127040432347,
+          3.625257291331014
+        ],
+        "area": 0.055385205098843926,
+        "ellipse_radial_std": 0.032719082000216004,
+        "circularity": 0.9780657698269711,
+        "minimum_radial_convex_bulge": 7.20460362799713e-05
+      },
+      "1": {
+        "width": 0.24037678395548168,
+        "height": 0.29436072031085336,
+        "center": [
+          -0.6292267203330995,
+          3.6260284146410724
+        ],
+        "area": 0.05503876481307657,
+        "ellipse_radial_std": 0.029285274577595576,
+        "circularity": 0.9796004086037279,
+        "minimum_radial_convex_bulge": 7.11938500899123e-05
+      }
+    },
+    "after": {
+      "-1": {
+        "width": 0.24049810824855689,
+        "height": 0.2963274302225978,
+        "center": [
+          -1.5707429389799794,
+          3.625642791012099
+        ],
+        "area": 0.05588247862800699,
+        "ellipse_radial_std": 6.315764463217693e-07,
+        "circularity": 0.9830624395436632,
+        "minimum_radial_convex_bulge": 0.00011339227785356343
+      },
+      "1": {
+        "width": 0.24049806018029485,
+        "height": 0.2963275229785034,
+        "center": [
+          -0.6292570273722372,
+          3.62564276201993
+        ],
+        "area": 0.05588247989291517,
+        "ellipse_radial_std": 5.791144172591935e-07,
+        "circularity": 0.9830623661262702,
+        "minimum_radial_convex_bulge": 0.00011324104411869484
+      }
+    },
+    "only_eye_caps_glints_and_bounded_local_support_changed": true,
+    "body_limbs_mane_mouth_cameras_unchanged_relative_to_reconstructed_baseline": true,
+    "skin_paint_and_topology_frozen": true,
+    "maximum_skin_displacement": 0.021910693496465683,
+    "maximum_upper_lid_gap_in_motion": 0.0008007366795652615
+  },
+  "validation": {
+    "checks": {
+      "eye-change-final-green.json": "PASS_EYE_ONLY_NO_SHRINK_ROUNDER_CONTOUR",
+      "strict-lid-green-test.json": "PASS_PRESERVED_STRICT_UPPER_LID_CONTACT",
+      "final-contact-in-motion-qa.json": "PASS_STRICT_EYE_LID_AND_MANE_CONTACT_IN_ACTUAL_MOTION",
+      "final-three-runtime-qa-v2.json": "PASS_THREE_GLTFLOADER_COLOR0_AND_ACTUAL_ANIMATIONMIXER_CPU",
+      "final-khronos-qa-v2.json": "PASS_KHRONOS_GLTF_VALIDATOR",
+      "native-glb-final-qa-02/native-glb-verification.json": "PASS_NATIVE_AND_GLB_ROUNDTRIP"
+    },
+    "static_regressions_all_pass": true,
+    "Khronos_issues": {
+      "numErrors": 0,
+      "numWarnings": 0,
+      "numInfos": 0,
+      "numHints": 0,
+      "messages": [],
+      "truncated": false
+    },
+    "actual_Three_GLTFLoader_AnimationMixer": {
+      "meshCount": 7,
+      "triangles": 1111062,
+      "vertices": 564587,
+      "bones": 13,
+      "invalidNormals": 0,
+      "invalidWeights": 0,
+      "nonfinitePositions": 0,
+      "zeroAreaTriangles": 0,
+      "loopEndPoseError": 6.888667257305481e-07,
+      "maxMotion": 0.1773044220733133,
+      "frames": 145,
+      "sampledVertices": 5905,
+      "boundaryVelocityErrorPerFrame": 0.0001408537212652848
+    },
+    "native_loop_error": 0.0,
+    "native_deformation_edge_ratios": [
+      0.8360410215880175,
+      1.2018075243578041
+    ],
+    "GLB_roundtrip_max_vertex_error": 3.4903086998383515e-06,
+    "mane_contact_in_13_motion_frames": -0.00017826615021476755,
+    "browser_GPU_mobile_performance_tested": false
+  },
+  "final_files": [
+    {
+      "file": "SaJu_Dragon_Cloud_V26_Reconstructed_RoundEyes_Final_Idle.blend",
+      "bytes": 79087295,
+      "sha256": "7884639bc779697117b8d468460b4fa5a2f6ffa12412a75fd204bbce7f406929"
+    },
+    {
+      "file": "SaJu_Dragon_Cloud_V26_Reconstructed_RoundEyes_Final_Idle.glb",
+      "bytes": 43474952,
+      "sha256": "a2a1e0a27d5a07cf7c2ec2358f981711b03ce961e8be6ae538d36022caeda2e6"
+    }
+  ],
+  "art_batch": {
+    "previous_verified": 2,
+    "new_verified_requested_eye_change": 1,
+    "total_verified": 3,
+    "commit_push_threshold": 5,
+    "commits": 0,
+    "pushes": 0,
+    "no_extra_count_filling_edits": true,
+    "reconstruction_debugging_and_review_repairs_counted_as_new_changes": false
+  },
+  "review": {
+    "independent_read_only_review_completed": true,
+    "critical_issues": 0,
+    "important_issue": "Upper-lid fix became looser after rounding",
+    "resolution": "Dedicated regression test observed fail, actual triangle support solve applied, strict lid test and full static/runtime/native/motion suite all passed",
+    "minor_deferred": []
+  },
+  "installation": {
+    "Blender_installed": false,
+    "validator": "Official Khronos gltf-validator@2.0.0-dev.3.10",
+    "validator_location": "/workspace/saju-cloud-validation-tools",
+    "node": "v24.19.0",
+    "project_dependencies_or_auth_changed": false
+  },
+  "preservation": {
+    "all_intermediates_and_failures_preserved": true,
+    "existing_Drive_files_deleted_or_overwritten": false,
+    "Drive_owner_only_readback_pending_for_new_uploads": true,
+    "remote_uploaded_binary_body_rehashed": false,
+    "credentials_and_unrelated_personal_data_included": false
+  },
+  "prohibited_actions_performed": {
+    "main_merge": false,
+    "PR": false,
+    "deployment": false,
+    "public_access": false,
+    "auth_payment_permissions_changes": false,
+    "UI_batch_changes": false
+  },
+  "other_storage_delegation": {
+    "the_three_Joseph_D_next_cache_directories_used_by_this_cloud_task": false,
+    "D_drive_access_performed": false
+  }
+}

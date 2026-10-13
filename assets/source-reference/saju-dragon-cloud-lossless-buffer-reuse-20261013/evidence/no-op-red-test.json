@@ -1,0 +1,728 @@
+{
+  "original_sha256": "a2a1e0a27d5a07cf7c2ec2358f981711b03ce961e8be6ae538d36022caeda2e6",
+  "candidate_sha256": "a2a1e0a27d5a07cf7c2ec2358f981711b03ce961e8be6ae538d36022caeda2e6",
+  "original_bytes": 43474952,
+  "candidate_bytes": 43474952,
+  "checks": {
+    "all_accessors_formats_names_counts_bounds_and_document_semantics_exact": true,
+    "all_bufferView_raw_bytes_identical_including_unused_padding": true,
+    "all_decoded_component_bits_identical_including_float_sign_bits": true,
+    "geometry_indices_colors_UV_materials_skeleton_animations_cameras_and_scene_exact": true
+  },
+  "accessors": [
+    {
+      "index": 0,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 488467,
+      "logical_bytes": 5861604,
+      "decoded_component_bits_sha256": "e6a4c581562d11b57bec505818a0a8ff125d0aa65e19c05775d14ff277c7e02f",
+      "equal": true
+    },
+    {
+      "index": 1,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 488467,
+      "logical_bytes": 5861604,
+      "decoded_component_bits_sha256": "fbe0aa78e63caeeac61def8cc6fc1a9d161e600a885d19b4be466d034add6075",
+      "equal": true
+    },
+    {
+      "index": 2,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 488467,
+      "logical_bytes": 5861604,
+      "decoded_component_bits_sha256": "10decaa0b594b7b3b86563ec26d710837a5ca4bcb002a669d40d40e47c80a9ce",
+      "equal": true
+    },
+    {
+      "index": 3,
+      "type": "VEC4",
+      "componentType": 5121,
+      "count": 488467,
+      "logical_bytes": 1953868,
+      "decoded_component_bits_sha256": "e36fa7aa66528d897163ac14eab316acb05e77645f662a1634901ab0944d8d7a",
+      "equal": true
+    },
+    {
+      "index": 4,
+      "type": "VEC4",
+      "componentType": 5126,
+      "count": 488467,
+      "logical_bytes": 7815472,
+      "decoded_component_bits_sha256": "3c5f7699e59349340b36be01e7c2f41067b1b900541fa3f3a7eb1d836ea8db13",
+      "equal": true
+    },
+    {
+      "index": 5,
+      "type": "SCALAR",
+      "componentType": 5125,
+      "count": 2930790,
+      "logical_bytes": 11723160,
+      "decoded_component_bits_sha256": "6b1f491525fee50598614587df819226a580cb39c55fa13413e2b7ea8d63d484",
+      "equal": true
+    },
+    {
+      "index": 6,
+      "type": "MAT4",
+      "componentType": 5126,
+      "count": 13,
+      "logical_bytes": 832,
+      "decoded_component_bits_sha256": "ad57cbe3e9c9776e38008ccfacb2c3235e2f9a00ac321f6890899ff0161e0b5b",
+      "equal": true
+    },
+    {
+      "index": 7,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 14464,
+      "logical_bytes": 173568,
+      "decoded_component_bits_sha256": "577aa60a9be87547ffd3fc846816f48eff9f0b5e5a479fcd8b819ef995a56ccf",
+      "equal": true
+    },
+    {
+      "index": 8,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 14464,
+      "logical_bytes": 173568,
+      "decoded_component_bits_sha256": "08a439e194b3872ec1f6815b26401baec491e27f3a045eee7349a127efec7e2c",
+      "equal": true
+    },
+    {
+      "index": 9,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 14464,
+      "logical_bytes": 173568,
+      "decoded_component_bits_sha256": "a557a91b680bc4561883f5364cdd38fc0b887e38f36c74d7683b129f9ee13cdc",
+      "equal": true
+    },
+    {
+      "index": 10,
+      "type": "VEC4",
+      "componentType": 5121,
+      "count": 14464,
+      "logical_bytes": 57856,
+      "decoded_component_bits_sha256": "ee010cb78435f2824a9aa4301cde165eb54572be5c95d50461cf09b39b505423",
+      "equal": true
+    },
+    {
+      "index": 11,
+      "type": "VEC4",
+      "componentType": 5126,
+      "count": 14464,
+      "logical_bytes": 231424,
+      "decoded_component_bits_sha256": "5a5dfeb3b3d4a86869e2e756350c3e9b1ac170fff08630e8b7d228320531913b",
+      "equal": true
+    },
+    {
+      "index": 12,
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 33792,
+      "logical_bytes": 67584,
+      "decoded_component_bits_sha256": "ad5fbe403b8d4356fe1194b055da9827de0cf63d939bbee8dfbb18fc5bc50118",
+      "equal": true
+    },
+    {
+      "index": 13,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 2564,
+      "logical_bytes": 30768,
+      "decoded_component_bits_sha256": "d1df4c329b403951604a3c74da75a9e45e0b3942b45fb7f3796c0acd8059ea47",
+      "equal": true
+    },
+    {
+      "index": 14,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 2564,
+      "logical_bytes": 30768,
+      "decoded_component_bits_sha256": "9bd18f69658fcf4a7a78449cdbea2cf908e652df4384790bb1c2460e9656784b",
+      "equal": true
+    },
+    {
+      "index": 15,
+      "type": "VEC4",
+      "componentType": 5121,
+      "count": 2564,
+      "logical_bytes": 10256,
+      "decoded_component_bits_sha256": "ef2cd1bcb26cca17d93948350efdfe2e41a7e2f613c9f187492594314fc4f3c2",
+      "equal": true
+    },
+    {
+      "index": 16,
+      "type": "VEC4",
+      "componentType": 5126,
+      "count": 2564,
+      "logical_bytes": 41024,
+      "decoded_component_bits_sha256": "4ff0e511785c5d97d09366fcfaef6feea2a91da18c02939b3ee8084aa4f60aaa",
+      "equal": true
+    },
+    {
+      "index": 17,
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 15360,
+      "logical_bytes": 30720,
+      "decoded_component_bits_sha256": "d466f76204d79a44a8a06352ced6bc36dc9e7fe6b0acc3fafcdac13f93a0db4b",
+      "equal": true
+    },
+    {
+      "index": 18,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 1234,
+      "logical_bytes": 14808,
+      "decoded_component_bits_sha256": "57fcf3efb6ea93cbca30a6c38659fc83ead56c022bd24f7cb7b3ecf02e75ec45",
+      "equal": true
+    },
+    {
+      "index": 19,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 1234,
+      "logical_bytes": 14808,
+      "decoded_component_bits_sha256": "fb0ffdff5c2d3c85f8cdf0d68caa42f583f4b928afa46de5feab875c1e1203f2",
+      "equal": true
+    },
+    {
+      "index": 20,
+      "type": "VEC4",
+      "componentType": 5121,
+      "count": 1234,
+      "logical_bytes": 4936,
+      "decoded_component_bits_sha256": "8f5351add38d5d741256a7fee32e401e4487f8369af52ea6d96eab857ba395a2",
+      "equal": true
+    },
+    {
+      "index": 21,
+      "type": "VEC4",
+      "componentType": 5126,
+      "count": 1234,
+      "logical_bytes": 19744,
+      "decoded_component_bits_sha256": "7c0d0507e40c74d739c131277dfda48f51e8e87a75d525390e342a22712c63af",
+      "equal": true
+    },
+    {
+      "index": 22,
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 7128,
+      "logical_bytes": 14256,
+      "decoded_component_bits_sha256": "014e9eb2b90afdc3ce0d311ed7153776beb1de791529091b5933aa65028c4fad",
+      "equal": true
+    },
+    {
+      "index": 23,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 962,
+      "logical_bytes": 11544,
+      "decoded_component_bits_sha256": "967a0d4692a4688583e96ae33185851a324774b3329865037a5dc63fccb4d872",
+      "equal": true
+    },
+    {
+      "index": 24,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 962,
+      "logical_bytes": 11544,
+      "decoded_component_bits_sha256": "55e30b20c85733a822808cfc369089e221fe046110da16fe842f07cc3f76270e",
+      "equal": true
+    },
+    {
+      "index": 25,
+      "type": "VEC4",
+      "componentType": 5121,
+      "count": 962,
+      "logical_bytes": 3848,
+      "decoded_component_bits_sha256": "9f4bb6cbad39d5d1cc317f9952de74fa23fad02e53119f555d177fe04ad5fe65",
+      "equal": true
+    },
+    {
+      "index": 26,
+      "type": "VEC4",
+      "componentType": 5126,
+      "count": 962,
+      "logical_bytes": 15392,
+      "decoded_component_bits_sha256": "3eb2153da6666dc6c4ca175ce5d9c70162942aebcbfc30a21ff94c541e0f8684",
+      "equal": true
+    },
+    {
+      "index": 27,
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 5472,
+      "logical_bytes": 10944,
+      "decoded_component_bits_sha256": "9b5e51f5d5013d1d28ee4ee665c75e2c72579268aaf9de6f46a24d50caefa83f",
+      "equal": true
+    },
+    {
+      "index": 28,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 18038,
+      "logical_bytes": 216456,
+      "decoded_component_bits_sha256": "3ca31bef2205c6f761da15a714e026cac552eaf4b7561effbab80942522f7d8c",
+      "equal": true
+    },
+    {
+      "index": 29,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 18038,
+      "logical_bytes": 216456,
+      "decoded_component_bits_sha256": "68979c2db7c10825acaf753fd567e7ebaff6c2ddb520afb3b35229421da0b3ce",
+      "equal": true
+    },
+    {
+      "index": 30,
+      "type": "VEC4",
+      "componentType": 5121,
+      "count": 18038,
+      "logical_bytes": 72152,
+      "decoded_component_bits_sha256": "ccc0b2d0d0006844aef3b3f3a6006227ceb8d633f1e4bf79220d74498ebd8d4f",
+      "equal": true
+    },
+    {
+      "index": 31,
+      "type": "VEC4",
+      "componentType": 5126,
+      "count": 18038,
+      "logical_bytes": 288608,
+      "decoded_component_bits_sha256": "5dd65f37bf7d1524dad546fc44058dc60e5a5df13dc13ae8d2dd0993a36cc681",
+      "equal": true
+    },
+    {
+      "index": 32,
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 108084,
+      "logical_bytes": 216168,
+      "decoded_component_bits_sha256": "6e3eeb4e430a9453cb652595beef09971180ee28725cda55e48788efff05d6ec",
+      "equal": true
+    },
+    {
+      "index": 33,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 38858,
+      "logical_bytes": 466296,
+      "decoded_component_bits_sha256": "db4c092046b74b934b078e4d484c661235a1200bb45bbd2049191c5dd6db1a72",
+      "equal": true
+    },
+    {
+      "index": 34,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 38858,
+      "logical_bytes": 466296,
+      "decoded_component_bits_sha256": "15bddb33274b509b33ebb8639d726fcf2c3dd58118a7f0a1fcc9584d5003167a",
+      "equal": true
+    },
+    {
+      "index": 35,
+      "type": "VEC4",
+      "componentType": 5121,
+      "count": 38858,
+      "logical_bytes": 155432,
+      "decoded_component_bits_sha256": "ba41bcb3a4b3deb6f6e069119b8b3a77503a6cf6c4f7086672a595c9072415ce",
+      "equal": true
+    },
+    {
+      "index": 36,
+      "type": "VEC4",
+      "componentType": 5126,
+      "count": 38858,
+      "logical_bytes": 621728,
+      "decoded_component_bits_sha256": "cce72ebcaaa23fb0772a811789595aab3ca2f98bcb6ed7283b2fb38eec0dbb1d",
+      "equal": true
+    },
+    {
+      "index": 37,
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 232560,
+      "logical_bytes": 465120,
+      "decoded_component_bits_sha256": "e27b2854c87bf5dd934dfac4dd5f89a9dfa19dfc189986784e5223842c716114",
+      "equal": true
+    },
+    {
+      "index": 38,
+      "type": "SCALAR",
+      "componentType": 5126,
+      "count": 145,
+      "logical_bytes": 580,
+      "decoded_component_bits_sha256": "212aade7cd9a6d8721166d12f8df63910f0930e246b53b6aa1a15df702c4a679",
+      "equal": true
+    },
+    {
+      "index": 39,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 145,
+      "logical_bytes": 1740,
+      "decoded_component_bits_sha256": "c0b23116bc5fe9a2f78790764ba72ffc8ac6b1de4f4df015dcc16371b53326a6",
+      "equal": true
+    },
+    {
+      "index": 40,
+      "type": "VEC4",
+      "componentType": 5126,
+      "count": 145,
+      "logical_bytes": 2320,
+      "decoded_component_bits_sha256": "781f03626a286f7991d174d8f8492c3c72a8ffcec95f965f8f446a0decb6aaf3",
+      "equal": true
+    },
+    {
+      "index": 41,
+      "type": "SCALAR",
+      "componentType": 5126,
+      "count": 2,
+      "logical_bytes": 8,
+      "decoded_component_bits_sha256": "44a5833cb8b06d1afc489843d583d22f714c4a868c7fbeb547597528e640a447",
+      "equal": true
+    },
+    {
+      "index": 42,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 2,
+      "logical_bytes": 24,
+      "decoded_component_bits_sha256": "f46913286d895f62d646314f400fc3d7a543cf34eb4ae56df87f43dc4582a36b",
+      "equal": true
+    },
+    {
+      "index": 43,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 2,
+      "logical_bytes": 24,
+      "decoded_component_bits_sha256": "1279ac217d46978a81e4641575b43a911f18c640a1055280d4de61032463bed7",
+      "equal": true
+    },
+    {
+      "index": 44,
+      "type": "VEC4",
+      "componentType": 5126,
+      "count": 145,
+      "logical_bytes": 2320,
+      "decoded_component_bits_sha256": "c7095834b7afc050db4d347330e634ae6159df2b54d3f4bb8c30c3edf71f466f",
+      "equal": true
+    },
+    {
+      "index": 45,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 2,
+      "logical_bytes": 24,
+      "decoded_component_bits_sha256": "f46913286d895f62d646314f400fc3d7a543cf34eb4ae56df87f43dc4582a36b",
+      "equal": true
+    },
+    {
+      "index": 46,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 2,
+      "logical_bytes": 24,
+      "decoded_component_bits_sha256": "902f38694177b0c591ad2f28e0afe54ce1c9a9e080a37539dc0ded3be60d3e02",
+      "equal": true
+    },
+    {
+      "index": 47,
+      "type": "VEC4",
+      "componentType": 5126,
+      "count": 145,
+      "logical_bytes": 2320,
+      "decoded_component_bits_sha256": "52762c01aa7c9e74d5320efb94eed5311d30f1641eaf3c8b0d46216004b05186",
+      "equal": true
+    },
+    {
+      "index": 48,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 2,
+      "logical_bytes": 24,
+      "decoded_component_bits_sha256": "b043f9563e4ce1b13f1a6f0d7b7ce5b792043179ccfed43253caadf4bdb22d9c",
+      "equal": true
+    },
+    {
+      "index": 49,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 2,
+      "logical_bytes": 24,
+      "decoded_component_bits_sha256": "eb961b51fccb60aab9561fd80132af3b2aab7ac691f92bc51ce7e7d2417be595",
+      "equal": true
+    },
+    {
+      "index": 50,
+      "type": "VEC4",
+      "componentType": 5126,
+      "count": 145,
+      "logical_bytes": 2320,
+      "decoded_component_bits_sha256": "4a75d3290e9b33b37f806565fb8e694cd018eac4b639142e81bd31daf21ec50b",
+      "equal": true
+    },
+    {
+      "index": 51,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 2,
+      "logical_bytes": 24,
+      "decoded_component_bits_sha256": "627cd080e44452b34ea9b89919b31296d603ba47a00fc1da5f92233ef81bf9e0",
+      "equal": true
+    },
+    {
+      "index": 52,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 2,
+      "logical_bytes": 24,
+      "decoded_component_bits_sha256": "912e30e8e15f89c4f20ac8ffc2accf812d5fc8cdd07276f8da550202a2f10283",
+      "equal": true
+    },
+    {
+      "index": 53,
+      "type": "VEC4",
+      "componentType": 5126,
+      "count": 145,
+      "logical_bytes": 2320,
+      "decoded_component_bits_sha256": "0491c5a0034e6d20d69e0f64f84f9b93ea9133e74ab6cd1b6cadec7df98255a0",
+      "equal": true
+    },
+    {
+      "index": 54,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 2,
+      "logical_bytes": 24,
+      "decoded_component_bits_sha256": "7d30bbb09430161ae80f9da7cd22e5da18e990a360bec81b44d1106d91d139d0",
+      "equal": true
+    },
+    {
+      "index": 55,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 2,
+      "logical_bytes": 24,
+      "decoded_component_bits_sha256": "51ada525ea53bf0ed20858f57ed9c9a857fbc2124ca5d280dde7f08a54edd545",
+      "equal": true
+    },
+    {
+      "index": 56,
+      "type": "VEC4",
+      "componentType": 5126,
+      "count": 145,
+      "logical_bytes": 2320,
+      "decoded_component_bits_sha256": "397843115f2d84965a33883fbfdc6ee385d2e5089e70ede13958b6190c4b9754",
+      "equal": true
+    },
+    {
+      "index": 57,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 2,
+      "logical_bytes": 24,
+      "decoded_component_bits_sha256": "4e664ed1f9c74c21cc74c64521bd0c269070543d71d4498ccdb90523c9f20ed1",
+      "equal": true
+    },
+    {
+      "index": 58,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 2,
+      "logical_bytes": 24,
+      "decoded_component_bits_sha256": "e99365b5e0aec7960e7e6ab2a3522d1b5f91b7c52e83b3b594ee36fa6ee48f91",
+      "equal": true
+    },
+    {
+      "index": 59,
+      "type": "VEC4",
+      "componentType": 5126,
+      "count": 145,
+      "logical_bytes": 2320,
+      "decoded_component_bits_sha256": "4bf19b41ea5c36053cbd5c0ea6b43fab5a37447967c02398d02be2456cb66665",
+      "equal": true
+    },
+    {
+      "index": 60,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 2,
+      "logical_bytes": 24,
+      "decoded_component_bits_sha256": "ad1e970020e692b6270926c6bb96b7b2ac368ca05659581821efbf7896efccdc",
+      "equal": true
+    },
+    {
+      "index": 61,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 2,
+      "logical_bytes": 24,
+      "decoded_component_bits_sha256": "541523002dc94e99b82562feb00f3d75ee64a6589ec926b90611b5cc194c0967",
+      "equal": true
+    },
+    {
+      "index": 62,
+      "type": "VEC4",
+      "componentType": 5126,
+      "count": 145,
+      "logical_bytes": 2320,
+      "decoded_component_bits_sha256": "0a634f92e72c2dfb475c5e484c0dff134b480604a09278eec757a6186116084f",
+      "equal": true
+    },
+    {
+      "index": 63,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 2,
+      "logical_bytes": 24,
+      "decoded_component_bits_sha256": "73b830a909c98764002d570286dd2417a7ac610cd6905dd26fcb1d1e7231f22f",
+      "equal": true
+    },
+    {
+      "index": 64,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 2,
+      "logical_bytes": 24,
+      "decoded_component_bits_sha256": "43f2118b1eccf6adba15092ab87b56a7f140c2f64213c96695eac8f511543ba2",
+      "equal": true
+    },
+    {
+      "index": 65,
+      "type": "VEC4",
+      "componentType": 5126,
+      "count": 145,
+      "logical_bytes": 2320,
+      "decoded_component_bits_sha256": "eedecc9411d510aef838a584b459f61c488c689717e1b8a939df400e66d9f0bd",
+      "equal": true
+    },
+    {
+      "index": 66,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 2,
+      "logical_bytes": 24,
+      "decoded_component_bits_sha256": "4c3b20bfa1f73df92a61319f4d672b98bd6503b08acd870de482362c534b5d8a",
+      "equal": true
+    },
+    {
+      "index": 67,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 2,
+      "logical_bytes": 24,
+      "decoded_component_bits_sha256": "ef2a5effc6725eb746189fd192a545d8da12b730ff09ffef5fe67bd0deba5bc5",
+      "equal": true
+    },
+    {
+      "index": 68,
+      "type": "VEC4",
+      "componentType": 5126,
+      "count": 145,
+      "logical_bytes": 2320,
+      "decoded_component_bits_sha256": "cda3f8bd5262c0e4e528e5859746cfc517ba61b802e5c8f8198b18b0a3191122",
+      "equal": true
+    },
+    {
+      "index": 69,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 2,
+      "logical_bytes": 24,
+      "decoded_component_bits_sha256": "90ae89ca8a1e391fd410e0a8d73df4b562c1ce96e4e26b25ab40a1e3b8f34865",
+      "equal": true
+    },
+    {
+      "index": 70,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 2,
+      "logical_bytes": 24,
+      "decoded_component_bits_sha256": "37a5dafadec9964a402fa15eda8274dad96dd67ec0ab498796b339883a503997",
+      "equal": true
+    },
+    {
+      "index": 71,
+      "type": "VEC4",
+      "componentType": 5126,
+      "count": 145,
+      "logical_bytes": 2320,
+      "decoded_component_bits_sha256": "b7bc5aecee406a3f139b913b171302e5ecb1a0a2dee738ebabce7a1600403971",
+      "equal": true
+    },
+    {
+      "index": 72,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 2,
+      "logical_bytes": 24,
+      "decoded_component_bits_sha256": "9c1d1a9902c988c5bcd67bc858c6b7bc446fdd3cd4d085cbcb6d0df2e9cc85fc",
+      "equal": true
+    },
+    {
+      "index": 73,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 2,
+      "logical_bytes": 24,
+      "decoded_component_bits_sha256": "ec84c71d8e23487eab3b430f5b503706967f5d1387ef3697b3f06e767303a4da",
+      "equal": true
+    },
+    {
+      "index": 74,
+      "type": "VEC4",
+      "componentType": 5126,
+      "count": 145,
+      "logical_bytes": 2320,
+      "decoded_component_bits_sha256": "c93c27eec93c345260636d4b35e4f5970ba5c1cf7f0d44873263185ece05a99b",
+      "equal": true
+    },
+    {
+      "index": 75,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 2,
+      "logical_bytes": 24,
+      "decoded_component_bits_sha256": "f46913286d895f62d646314f400fc3d7a543cf34eb4ae56df87f43dc4582a36b",
+      "equal": true
+    },
+    {
+      "index": 76,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 2,
+      "logical_bytes": 24,
+      "decoded_component_bits_sha256": "cee9eb1f75e3d262a84246d8695ab25ddd723340140c2292803620e8782804c5",
+      "equal": true
+    },
+    {
+      "index": 77,
+      "type": "VEC4",
+      "componentType": 5126,
+      "count": 145,
+      "logical_bytes": 2320,
+      "decoded_component_bits_sha256": "635be0f14be13b8ec0b393e1c576dc3b3e7913e540d9c8331a09b9b7ca895add",
+      "equal": true
+    },
+    {
+      "index": 78,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 2,
+      "logical_bytes": 24,
+      "decoded_component_bits_sha256": "e25783926e199ee6bb745c7b718a6517e6207d32e19a96782317475de28b8b13",
+      "equal": true
+    }
+  ],
+  "saved_bytes": 0,
+  "status": "FAIL_EXACT_GLB_STORAGE_EQUIVALENCE",
+  "failure": "No meaningful storage saving (need at least 300000 bytes)"
+}

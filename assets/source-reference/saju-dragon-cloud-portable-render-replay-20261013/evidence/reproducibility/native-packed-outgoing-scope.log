@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/workspace/saju-cloud-repro-audit-20261013/inspect_native_embedded_outgoing_scope.py", line 26, in <module>
+    assert {t.name for t in bpy.data.texts} == set(expected), 'Unexpected native text block'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Unexpected native text block
+
+Error: script failed, file: '/workspace/saju-cloud-repro-audit-20261013/inspect_native_embedded_outgoing_scope.py', exiting.
+Blender 4.3.2
+Read blend: "/workspace/saju-cloud-reconstruction-20261013/assets/source-reference/saju-dragon-cloud-v26-reconstruction-20261013/model/SaJu_Dragon_Cloud_V26_Reconstructed_RoundEyes_Final_Idle.blend"
+
+Blender quit

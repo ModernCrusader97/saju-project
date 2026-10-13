@@ -1,0 +1,272 @@
+{
+  "status": "PASS_ACTUAL_BROWSER_SAME_CONDITION_RGBA8_PIXELS_ALL_SIX_PAIRS",
+  "browser": "151.0.7922.173",
+  "environment": {
+    "THREE_revision": "186",
+    "bytes": {
+      "original": 43474952,
+      "candidate": 43148280
+    },
+    "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "resolution": [
+      640,
+      640
+    ],
+    "DPR": 1,
+    "settings": {
+      "antialias": true,
+      "preserveDrawingBuffer": true,
+      "toneMapping": "ACESFilmicToneMapping",
+      "exposure": 0.8,
+      "environmentIntensity": 0.45,
+      "shadows": false,
+      "postprocessing": false
+    },
+    "camera": {
+      "position": [
+        0,
+        0,
+        15.118079738018006
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        15.118079738018006,
+        1
+      ],
+      "projection": [
+        3.4874144438409087,
+        0,
+        0,
+        0,
+        0,
+        3.4874144438409087,
+        0,
+        0,
+        0,
+        0,
+        -1.0002000200020003,
+        -1,
+        0,
+        0,
+        -0.020002000200020003,
+        0
+      ]
+    },
+    "not_mobile_GPU_measurement": true
+  },
+  "pairs": [
+    {
+      "angle": 0,
+      "time_seconds": 0,
+      "original": {
+        "name": "original",
+        "time_seconds": 0,
+        "angle_radians": 0,
+        "pixel_rgba8_sha256": "f5abf3ff47af11b54f27406957a179c30f139c4de3cba7fd071519e4c01565bc",
+        "render_info": {
+          "frame": 35,
+          "calls": 7,
+          "triangles": 1111062,
+          "points": 0,
+          "lines": 0
+        },
+        "non_background_pixels": 0
+      },
+      "candidate": {
+        "name": "candidate",
+        "time_seconds": 0,
+        "angle_radians": 0,
+        "pixel_rgba8_sha256": "f5abf3ff47af11b54f27406957a179c30f139c4de3cba7fd071519e4c01565bc",
+        "render_info": {
+          "frame": 36,
+          "calls": 7,
+          "triangles": 1111062,
+          "points": 0,
+          "lines": 0
+        },
+        "non_background_pixels": 0
+      },
+      "exact_pixel_match": true
+    },
+    {
+      "angle": 0,
+      "time_seconds": 3,
+      "original": {
+        "name": "original",
+        "time_seconds": 3,
+        "angle_radians": 0,
+        "pixel_rgba8_sha256": "354a932688dc44cd7eb192d8235f0530cdcac1015f6979cee1686b2d0ca8ed78",
+        "render_info": {
+          "frame": 37,
+          "calls": 7,
+          "triangles": 1111062,
+          "points": 0,
+          "lines": 0
+        },
+        "non_background_pixels": 0
+      },
+      "candidate": {
+        "name": "candidate",
+        "time_seconds": 3,
+        "angle_radians": 0,
+        "pixel_rgba8_sha256": "354a932688dc44cd7eb192d8235f0530cdcac1015f6979cee1686b2d0ca8ed78",
+        "render_info": {
+          "frame": 38,
+          "calls": 7,
+          "triangles": 1111062,
+          "points": 0,
+          "lines": 0
+        },
+        "non_background_pixels": 0
+      },
+      "exact_pixel_match": true
+    },
+    {
+      "angle": 0,
+      "time_seconds": 6,
+      "original": {
+        "name": "original",
+        "time_seconds": 6,
+        "angle_radians": 0,
+        "pixel_rgba8_sha256": "10a6615a9453456ad2adc701068d2de332c3db5bc349a87bc732dfbb8a80548f",
+        "render_info": {
+          "frame": 39,
+          "calls": 7,
+          "triangles": 1111062,
+          "points": 0,
+          "lines": 0
+        },
+        "non_background_pixels": 0
+      },
+      "candidate": {
+        "name": "candidate",
+        "time_seconds": 6,
+        "angle_radians": 0,
+        "pixel_rgba8_sha256": "10a6615a9453456ad2adc701068d2de332c3db5bc349a87bc732dfbb8a80548f",
+        "render_info": {
+          "frame": 40,
+          "calls": 7,
+          "triangles": 1111062,
+          "points": 0,
+          "lines": 0
+        },
+        "non_background_pixels": 0
+      },
+      "exact_pixel_match": true
+    },
+    {
+      "angle": 0.28,
+      "time_seconds": 0,
+      "original": {
+        "name": "original",
+        "time_seconds": 0,
+        "angle_radians": 0.28,
+        "pixel_rgba8_sha256": "714bffb41c8cf7278ae9c11a8a0d1f962d413dc0726125290fafa208d3cbcc3e",
+        "render_info": {
+          "frame": 41,
+          "calls": 7,
+          "triangles": 1111062,
+          "points": 0,
+          "lines": 0
+        },
+        "non_background_pixels": 0
+      },
+      "candidate": {
+        "name": "candidate",
+        "time_seconds": 0,
+        "angle_radians": 0.28,
+        "pixel_rgba8_sha256": "714bffb41c8cf7278ae9c11a8a0d1f962d413dc0726125290fafa208d3cbcc3e",
+        "render_info": {
+          "frame": 42,
+          "calls": 7,
+          "triangles": 1111062,
+          "points": 0,
+          "lines": 0
+        },
+        "non_background_pixels": 0
+      },
+      "exact_pixel_match": true
+    },
+    {
+      "angle": 0.28,
+      "time_seconds": 3,
+      "original": {
+        "name": "original",
+        "time_seconds": 3,
+        "angle_radians": 0.28,
+        "pixel_rgba8_sha256": "0c3f1fa3eafa9fc22f2617bca101915f50d52fded51910419eb6c0c42be922a7",
+        "render_info": {
+          "frame": 43,
+          "calls": 7,
+          "triangles": 1111062,
+          "points": 0,
+          "lines": 0
+        },
+        "non_background_pixels": 0
+      },
+      "candidate": {
+        "name": "candidate",
+        "time_seconds": 3,
+        "angle_radians": 0.28,
+        "pixel_rgba8_sha256": "0c3f1fa3eafa9fc22f2617bca101915f50d52fded51910419eb6c0c42be922a7",
+        "render_info": {
+          "frame": 44,
+          "calls": 7,
+          "triangles": 1111062,
+          "points": 0,
+          "lines": 0
+        },
+        "non_background_pixels": 0
+      },
+      "exact_pixel_match": true
+    },
+    {
+      "angle": 0.28,
+      "time_seconds": 6,
+      "original": {
+        "name": "original",
+        "time_seconds": 6,
+        "angle_radians": 0.28,
+        "pixel_rgba8_sha256": "a9996d83dd1daf5095b67e8ba8e032a5b0aab6222cb0ebcb3e36c34e99b305b8",
+        "render_info": {
+          "frame": 45,
+          "calls": 7,
+          "triangles": 1111062,
+          "points": 0,
+          "lines": 0
+        },
+        "non_background_pixels": 0
+      },
+      "candidate": {
+        "name": "candidate",
+        "time_seconds": 6,
+        "angle_radians": 0.28,
+        "pixel_rgba8_sha256": "a9996d83dd1daf5095b67e8ba8e032a5b0aab6222cb0ebcb3e36c34e99b305b8",
+        "render_info": {
+          "frame": 46,
+          "calls": 7,
+          "triangles": 1111062,
+          "points": 0,
+          "lines": 0
+        },
+        "non_background_pixels": 0
+      },
+      "exact_pixel_match": true
+    }
+  ],
+  "errors": [],
+  "not_a_mobile_performance_benchmark": true
+}

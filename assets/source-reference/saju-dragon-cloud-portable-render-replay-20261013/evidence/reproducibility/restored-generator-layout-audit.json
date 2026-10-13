@@ -1,0 +1,10 @@
+{
+  "status": "REUSED_RESTORE_LAYOUT_RESOLVES_PINNED_GENERATOR_SOURCE",
+  "generator_wrapper_in_existing_restored_new_root": "/workspace/saju-cloud-restoration-check-20261013/repo/assets/source-reference/saju-dragon-cloud-v26-reconstruction-20261013/source/generate_v25_cloud_baseline_v2.py",
+  "resolved_generator": "/workspace/saju-cloud-restoration-check-20261013/repo/assets/source-reference/saju-dragon-volume-review-v22-face-v25-20261012/latest-static-face-v25/source/build_dragon_v8_volume_v25.py",
+  "generator_sha256": "691202de75b0c3e11934a1fefa12dd1cf200e41edd88ffd9163b695b42308c4c",
+  "new_full_geometry_generation_run": false,
+  "existing_generation_evidence_reused": "/workspace/saju-cloud-generated-20261013/v25-baseline-02/generation-report.json",
+  "Windows_paths_in_literal_generator": "Example documentation only; active reference/output paths come from required CLI arguments",
+  "existing_158_file_restore_repeated": false
+}
