@@ -187,6 +187,15 @@ export default function GalaxyCanvas({
   } | null>(null);
 
   useEffect(() => {
+    const syncFullscreen = () => {
+      const wrapper = wrapperRef.current;
+      setIsFullscreen(wrapper !== null && document.fullscreenElement === wrapper);
+    };
+    document.addEventListener("fullscreenchange", syncFullscreen);
+    return () => document.removeEventListener("fullscreenchange", syncFullscreen);
+  }, []);
+
+  useEffect(() => {
     if (!showPillarInspectModal) return;
     const dialog = pillarInspectDialogRef.current;
     const trigger = pillarInspectTriggerRef.current;
@@ -848,6 +857,8 @@ export default function GalaxyCanvas({
           {/* 은하 항로선 토글 */}
           <button
             onClick={() => setShowOrbitGuides((prev) => !prev)}
+            aria-label="나선 궤도 안내선"
+            aria-pressed={showOrbitGuides}
             className="px-2.5 py-1 rounded-full bg-black/60 hover:bg-black/80 backdrop-blur-md border border-white/20 text-[10.5px] font-medium text-white transition-all flex items-center gap-1 shadow-sm"
             title="나선 궤도 안내선 토글"
           >

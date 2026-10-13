@@ -3,7 +3,7 @@
 import { readApiResponse } from "@/lib/http-client";
 
 
-import React, { useState, useEffect, Suspense, useMemo } from "react";
+import React, { useState, useEffect, useRef, Suspense, useMemo } from "react";
 import Header from "@/components/Header";
 import FortuneCard from "@/components/FortuneCard";
 import { FortuneResult } from "@/lib/saju/types";
@@ -65,6 +65,21 @@ function SavedContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const queryId = searchParams.get("id");
+  const returnFocusId = useRef<string | null>(null);
+
+  useEffect(() => {
+    if (queryId || returnFocusId.current === null) return;
+    const id = returnFocusId.current;
+    const frame = requestAnimationFrame(() => {
+      if (returnFocusId.current !== id) return;
+      returnFocusId.current = null;
+      const card = Array.from(document.querySelectorAll<HTMLElement>("[data-saved-record-id]"))
+        .find(element => element.dataset.savedRecordId === id);
+      card?.focus({ preventScroll: true });
+      card?.scrollIntoView({ block: "center", behavior: "instant" });
+    });
+    return () => cancelAnimationFrame(frame);
+  }, [queryId]);
 
   const [fortunes, setFortunes] = useState<FortuneSummary[]>([]);
   const [details, setDetails] = useState<Map<string, FortuneResult>>(() => new Map());
@@ -109,6 +124,7 @@ function SavedContent() {
   }, [queryId, details, detailRetry]);
 
   const openFortune = (id: string) => {
+    returnFocusId.current = id;
     setDetailError({ id, message: "" });
     router.push(`/saved?id=${encodeURIComponent(id)}`, { scroll: false });
   };
@@ -253,6 +269,7 @@ function SavedContent() {
                 return (
                   <div
                     key={f.id}
+                    data-saved-record-id={f.id}
                     role="button"
                     tabIndex={0}
                     onClick={() => openFortune(f.id)}

@@ -118,7 +118,7 @@ export default function DailyPage() {
             <Flame className="h-4 w-4" />
             <span>오늘의 기운 · 정통 일진(日辰)</span>
           </div>
-          <h2 className="font-serif text-2xl font-bold">{dateInfo.dateStr} 운세</h2>
+          <h1 className="font-serif text-2xl font-bold">{dateInfo.dateStr} 운세</h1>
           <div className="mt-3 inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/15 backdrop-blur-sm border border-white/20 text-xs font-medium">
             <Sparkles className="h-3.5 w-3.5 text-amber-300" />
             <span>
@@ -143,9 +143,9 @@ export default function DailyPage() {
                   <Icon className="h-4 w-4" />
                   <span>{f.time}</span>
                 </div>
-                <h3 className="font-serif text-base font-bold text-doryeong-navy">
+                <h2 className="font-serif text-base font-bold text-doryeong-navy">
                   {f.theme}
-                </h3>
+                </h2>
                 <p className="text-xs leading-relaxed text-doryeong-textMuted font-serif">
                   {f.desc}
                 </p>
