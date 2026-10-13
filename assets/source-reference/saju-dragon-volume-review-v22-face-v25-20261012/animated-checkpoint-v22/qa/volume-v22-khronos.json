@@ -1,0 +1,46 @@
+{
+  "uri": "SaJu_Dragon_V8_Volume_Refinement_v22.glb",
+  "mimeType": "model/gltf-binary",
+  "validatorVersion": "2.0.0-dev.3.10",
+  "validatedAt": "2026-10-12T19:47:13.893Z",
+  "issues": {
+    "numErrors": 0,
+    "numWarnings": 0,
+    "numInfos": 0,
+    "numHints": 0,
+    "messages": [],
+    "truncated": false
+  },
+  "info": {
+    "version": "2.0",
+    "generator": "Khronos glTF Blender I/O v5.2.40",
+    "extensionsUsed": [
+      "KHR_materials_clearcoat",
+      "KHR_materials_specular",
+      "KHR_materials_ior"
+    ],
+    "resources": [
+      {
+        "pointer": "/buffers/0",
+        "mimeType": "application/gltf-buffer",
+        "storage": "glb",
+        "byteLength": 43249104
+      }
+    ],
+    "animationCount": 1,
+    "materialCount": 8,
+    "hasMorphTargets": false,
+    "hasSkins": true,
+    "hasTextures": false,
+    "hasDefaultScene": true,
+    "drawCallCount": 8,
+    "totalVertexCount": 562382,
+    "totalTriangleCount": 1106644,
+    "maxUVs": 0,
+    "maxInfluences": 4,
+    "maxAttributes": 5
+  },
+  "validated_sha256": "5189fdd5894bf9d17c805f9340c20e2eb08525c635f9fb9add41758abfe4913d",
+  "validation_library": "KhronosGroup/glTF-Validator",
+  "status": "PASS_KHRONOS_GLTF_VALIDATOR"
+}

@@ -1,0 +1,40 @@
+{
+  "status": "MANUAL_ACTUAL_RENDER_SAMPLE_REVIEW_COMPLETED_EXTERNAL_APPEARANCE_REVIEW_PENDING",
+  "views": [
+    "actual imported GLB front",
+    "actual imported GLB threequarter",
+    "actual imported GLB complete side",
+    "native headfront and headthreequarter"
+  ],
+  "actual_mp4_decoded_times_reviewed": [
+    0,
+    1.5,
+    4.5,
+    5.916667
+  ],
+  "checks": [
+    "Eye rims have no visible dark floating gap",
+    "Four authored paws and curved blunt claws",
+    "Smooth continuous torso and lower bend",
+    "Gentle float/head/tail motion in inspected frames",
+    "No visible sudden boundary jump in inspected last/first frames"
+  ],
+  "source_photo_fidelity_complete": false,
+  "user_final_appearance_approved": false,
+  "appearance_completion_hold": true,
+  "remaining_differences": [
+    "Muzzle and ivory lower-mouth contour remain broader/flatter than approved source",
+    "Dorsal overlap and silhouette remain approximate in lower bend",
+    "Exact original 2D camera is unknown"
+  ],
+  "technical_limits": [
+    "1,106,644 triangles and 43,276,624-byte GLB; no mobile/browser GPU FPS claim",
+    "Beauty camera has visible studio horizon; raw render retained"
+  ],
+  "site_batch_five_counts": {
+    "verified": 4,
+    "unverified_wip": 1,
+    "paused": true
+  },
+  "other_animals_or_default_changed": false
+}

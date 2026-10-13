@@ -1,0 +1,506 @@
+{
+  "status": "PASS_FACE_V23_V25_LITERAL_FILES_ZIP_CRC_SHA256_AND_SOURCE_UNCHANGED",
+  "created_utc": "2026-10-12T21:43:28.025843+00:00",
+  "files": [
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\face-diagnostics-v23-01.log",
+      "restore_relative_path": "results/face-diagnostics-v23-01.log",
+      "bytes": 1706,
+      "sha256": "a056d4367033b5e9656f4a6973e54075b681013b7fcfad54f24c88be9bae49ab",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part01.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\face-diagnostics-v23-01\\diagnostic-report.json",
+      "restore_relative_path": "results/face-diagnostics-v23-01/diagnostic-report.json",
+      "bytes": 174750,
+      "sha256": "df3e3e5b9e24e078d53eda06674474fe8ce51869744f4a85a06abbcbb5218c78",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part01.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\face-diagnostics-v23-01\\reference-approx-glossy.png",
+      "restore_relative_path": "results/face-diagnostics-v23-01/reference-approx-glossy.png",
+      "bytes": 672538,
+      "sha256": "efc652b28d27ba2145c2e440a245f770479363b95bf03918252bf2f75c3dff6a",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part01.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\face-diagnostics-v23-01\\reference-approx-matte-diagnostic.png",
+      "restore_relative_path": "results/face-diagnostics-v23-01/reference-approx-matte-diagnostic.png",
+      "bytes": 671529,
+      "sha256": "58e768d1c9c0a2eb7f86d28718731d098f1b4a27167e26ee4191a8b607d6eb9a",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part01.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\face-diagnostics-v23-height-matched-01\\alignment-provenance.json",
+      "restore_relative_path": "results/face-diagnostics-v23-height-matched-01/alignment-provenance.json",
+      "bytes": 1832,
+      "sha256": "0776bf4a8bdd17e3aa9bfc7006c3e253f2951c258a2dcc2655ec27ebce5353af",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part01.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\face-diagnostics-v23-height-matched-01\\reference-approx-glossy.png",
+      "restore_relative_path": "results/face-diagnostics-v23-height-matched-01/reference-approx-glossy.png",
+      "bytes": 1350609,
+      "sha256": "222e59f998c425560148d5c13700896fd9b2416c3915f23397205678393f94af",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part01.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\face-diagnostics-v23-height-matched-01\\reference-approx-glossy.png.log",
+      "restore_relative_path": "results/face-diagnostics-v23-height-matched-01/reference-approx-glossy.png.log",
+      "bytes": 1370,
+      "sha256": "0dd1d40d2bd2936c7e3ce5cf87e53545e940fe40c45623eb81838d802770f519",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part01.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\face-diagnostics-v23-height-matched-01\\reference-approx-matte-diagnostic.png",
+      "restore_relative_path": "results/face-diagnostics-v23-height-matched-01/reference-approx-matte-diagnostic.png",
+      "bytes": 1345376,
+      "sha256": "b7d85bb33b99a68ea18e1989edc52c6d551b1a3c7968f62b33b6651d0919a6af",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part01.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\face-diagnostics-v23-height-matched-01\\reference-approx-matte-diagnostic.png.log",
+      "restore_relative_path": "results/face-diagnostics-v23-height-matched-01/reference-approx-matte-diagnostic.png.log",
+      "bytes": 1390,
+      "sha256": "21fe6523abb7a223db594bdd7fd047f24db585c9abe84c97af1c04e79f06af9a",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part01.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\face-diagnostics-v24-01.log",
+      "restore_relative_path": "results/face-diagnostics-v24-01.log",
+      "bytes": 1707,
+      "sha256": "e659b809cf98ffa66d4128a84c3d114500ba1a7ea9ca685d6dc388a6cd67adca",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part01.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\face-diagnostics-v24-01\\diagnostic-report.json",
+      "restore_relative_path": "results/face-diagnostics-v24-01/diagnostic-report.json",
+      "bytes": 105917,
+      "sha256": "4543be0477a3bba2d03fa77502a8a9f370699fc4d2e3cb68e6f585cfa518913f",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part01.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\face-diagnostics-v24-01\\reference-approx-glossy.png",
+      "restore_relative_path": "results/face-diagnostics-v24-01/reference-approx-glossy.png",
+      "bytes": 669897,
+      "sha256": "6146227eff2651ddb120fee185c0bf9cf672dfe17a626f18f5acddc18afee68c",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part01.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\face-diagnostics-v24-01\\reference-approx-matte-diagnostic.png",
+      "restore_relative_path": "results/face-diagnostics-v24-01/reference-approx-matte-diagnostic.png",
+      "bytes": 667464,
+      "sha256": "0717aff4cbba7556097731a55a401858331f0468b41d61c42a8962487475578e",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part01.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\face-diagnostics-v25-01.log",
+      "restore_relative_path": "results/face-diagnostics-v25-01.log",
+      "bytes": 1696,
+      "sha256": "17bdc32a2d03f13d1da9fe07e71465327464e9f0caeb2fc8e4edda8ac4e0f3ec",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part01.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\face-diagnostics-v25-01\\diagnostic-report.json",
+      "restore_relative_path": "results/face-diagnostics-v25-01/diagnostic-report.json",
+      "bytes": 32221,
+      "sha256": "99a03137fd51b0361d343e1eda0e14b76b2be4d00e7d314029f34b4e7a2959a9",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part01.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\face-diagnostics-v25-01\\reference-approx-glossy.png",
+      "restore_relative_path": "results/face-diagnostics-v25-01/reference-approx-glossy.png",
+      "bytes": 668035,
+      "sha256": "403b2a8bfdd2048721334e352d822633cd6f60ee2c30fae8ac0971d2b545b963",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part01.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\face-diagnostics-v25-01\\reference-approx-matte-diagnostic.png",
+      "restore_relative_path": "results/face-diagnostics-v25-01/reference-approx-matte-diagnostic.png",
+      "bytes": 666327,
+      "sha256": "e46f31d450c7a25cf156f20f77a8b4c892966338916befc3c0a4d5e1d54054c7",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part01.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\face-diagnostics-v25-height-matched-01\\alignment-provenance.json",
+      "restore_relative_path": "results/face-diagnostics-v25-height-matched-01/alignment-provenance.json",
+      "bytes": 1832,
+      "sha256": "911040f24a50f235f9ebb3e019f626d58afd704fa1ee4a2055ee197375c99230",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part01.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\face-diagnostics-v25-height-matched-01\\reference-approx-glossy.png",
+      "restore_relative_path": "results/face-diagnostics-v25-height-matched-01/reference-approx-glossy.png",
+      "bytes": 1341622,
+      "sha256": "ddd69d8758f701c773a25f25d1f20096074ca9cc5014e691c8063e1e2abecfb1",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part01.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\face-diagnostics-v25-height-matched-01\\reference-approx-glossy.png.log",
+      "restore_relative_path": "results/face-diagnostics-v25-height-matched-01/reference-approx-glossy.png.log",
+      "bytes": 1370,
+      "sha256": "a07c3ab75ab6681e7589f72a9ee4fac295578eff4b32b5ecc9f536bd9b61bb21",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part01.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\face-diagnostics-v25-height-matched-01\\reference-approx-matte-diagnostic.png",
+      "restore_relative_path": "results/face-diagnostics-v25-height-matched-01/reference-approx-matte-diagnostic.png",
+      "bytes": 1335180,
+      "sha256": "c2c2d4c96579a551a52c2bfa8d1aab891e63309fcfb184b4c73470557505746d",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part01.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\face-diagnostics-v25-height-matched-01\\reference-approx-matte-diagnostic.png.log",
+      "restore_relative_path": "results/face-diagnostics-v25-height-matched-01/reference-approx-matte-diagnostic.png.log",
+      "bytes": 1390,
+      "sha256": "49315893a80c686dc3caca98f39cd7216aefa3fc9904e59b6be107fa66995b07",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part01.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\volume-refinement-v23\\generation-report.json",
+      "restore_relative_path": "results/volume-refinement-v23/generation-report.json",
+      "bytes": 12765,
+      "sha256": "a88bac99ddf07f3a8a5719febd45eef0a547184e9973d6463f79d0cde37b4cd6",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part01.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\volume-refinement-v23\\previews\\headfront.png",
+      "restore_relative_path": "results/volume-refinement-v23/previews/headfront.png",
+      "bytes": 649241,
+      "sha256": "3cf2861759e74f3fce1bbdaddd2b44d8d57237cfdae4b068b433dacbc0f1f0e4",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part01.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\volume-refinement-v23\\previews\\headthreequarter.png",
+      "restore_relative_path": "results/volume-refinement-v23/previews/headthreequarter.png",
+      "bytes": 624221,
+      "sha256": "f451d47600d51c5b3817eed4646b7f72096893e68e991789eab01ae57783752f",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part01.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\volume-refinement-v23\\previews\\threequarter.png",
+      "restore_relative_path": "results/volume-refinement-v23/previews/threequarter.png",
+      "bytes": 619207,
+      "sha256": "a58315c215d86cf564c6b63dd00bc17748d3892cb5b7b1a9dbca2d484cdc9682",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part01.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\volume-refinement-v23\\SaJu_Dragon_V8_Volume_Refinement_v23.blend",
+      "restore_relative_path": "results/volume-refinement-v23/SaJu_Dragon_V8_Volume_Refinement_v23.blend",
+      "bytes": 33668496,
+      "sha256": "0a48a8743378814acc5e0d8e139816ef1b299354d5a47b73a9914c3addaf5f08",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part01.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\volume-refinement-v24\\generation-report.json",
+      "restore_relative_path": "results/volume-refinement-v24/generation-report.json",
+      "bytes": 13208,
+      "sha256": "b868f1ee7fac6dcf6d4e14eb5977646e36fd76e2818932bcbe00cec205da7f08",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part01.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\volume-refinement-v24\\previews\\headfront.png",
+      "restore_relative_path": "results/volume-refinement-v24/previews/headfront.png",
+      "bytes": 648105,
+      "sha256": "81fa0acae48f6705ad6f010f4580c804d5eb7867cfc7ed47c64ee77e5a6c6b1c",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part01.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\volume-refinement-v24\\previews\\headthreequarter.png",
+      "restore_relative_path": "results/volume-refinement-v24/previews/headthreequarter.png",
+      "bytes": 623439,
+      "sha256": "950d8535645e9d8f6432d88880bcef55cc27aa23f8e58999d953663b2b58363c",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part01.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\volume-refinement-v24\\previews\\threequarter.png",
+      "restore_relative_path": "results/volume-refinement-v24/previews/threequarter.png",
+      "bytes": 619005,
+      "sha256": "25e863180982c9c63e0ca93120127e69623627c49d454fb11decaebb57e4f197",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part01.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\volume-refinement-v24\\SaJu_Dragon_V8_Volume_Refinement_v24.blend",
+      "restore_relative_path": "results/volume-refinement-v24/SaJu_Dragon_V8_Volume_Refinement_v24.blend",
+      "bytes": 33892513,
+      "sha256": "a091717f4e4b836703d94c013db6c98cf4d37b81f051d0a485b3b3bdb32c7d32",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part02.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\volume-refinement-v25\\generation-report.json",
+      "restore_relative_path": "results/volume-refinement-v25/generation-report.json",
+      "bytes": 13368,
+      "sha256": "a7a6c5d8d6519f15ce3e366d15fcea3e0b7482ded3ca34d5773521297248c4a5",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part02.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\volume-refinement-v25\\previews\\headfront.png",
+      "restore_relative_path": "results/volume-refinement-v25/previews/headfront.png",
+      "bytes": 645982,
+      "sha256": "20aa04d56c4a4ee511ea3f44dfc5ce1d82e74a016dc8a7eb15568870be50c72e",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part02.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\volume-refinement-v25\\previews\\headthreequarter.png",
+      "restore_relative_path": "results/volume-refinement-v25/previews/headthreequarter.png",
+      "bytes": 622376,
+      "sha256": "85beb5817dc955602c75fcdc3047a7e3c5f451b80054a0baab3fd5d9cb52b7c2",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part02.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\volume-refinement-v25\\previews\\threequarter.png",
+      "restore_relative_path": "results/volume-refinement-v25/previews/threequarter.png",
+      "bytes": 618085,
+      "sha256": "4ee2cef5b066ebc384e5ba5a49c38cc76d365b3ea7794093ceb37530afcffa8a",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part02.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\volume-refinement-v25\\SaJu_Dragon_V8_Volume_Refinement_v25.blend",
+      "restore_relative_path": "results/volume-refinement-v25/SaJu_Dragon_V8_Volume_Refinement_v25.blend",
+      "bytes": 33900763,
+      "sha256": "a0d534682119cf9f423968d6e63087d2505a550bb231e36baec7c9a52c92723b",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part03.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\volume-v22-mane-root-contact-before-v23.json",
+      "restore_relative_path": "results/volume-v22-mane-root-contact-before-v23.json",
+      "bytes": 13016,
+      "sha256": "0ad0c34c5175abf3d7e495c3d2f942e5c5499cf798a26de523854ff8d379dec3",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part03.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\volume-v22-mane-root-contact-before-v23.log",
+      "restore_relative_path": "results/volume-v22-mane-root-contact-before-v23.log",
+      "bytes": 1674,
+      "sha256": "7f72e48342efcac4f7eaea6a6e583e09fbafa8bddca091dbfc2a4e25f2130458",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part03.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\volume-v23-mane-root-contact.json",
+      "restore_relative_path": "results/volume-v23-mane-root-contact.json",
+      "bytes": 13113,
+      "sha256": "81d7f347e3ae98b1c27de27f8e378e7c53bcddbfeff0f0015bd0fb078dfae9c9",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part03.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\volume-v23-mane-root-contact.log",
+      "restore_relative_path": "results/volume-v23-mane-root-contact.log",
+      "bytes": 1720,
+      "sha256": "2a4c6798840de127cb5ef73b934bf3c4c2663f55544a80a5e6f2dfed77ac2cb1",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part03.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\volume-v24-eye-contact-qa.log",
+      "restore_relative_path": "results/volume-v24-eye-contact-qa.log",
+      "bytes": 789,
+      "sha256": "88c22df88f5666af534ac79eabdfa85e732a4d7c8e3bd91dc2655c8e3383ba96",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part03.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\volume-v24-eye-rim-contact.json",
+      "restore_relative_path": "results/volume-v24-eye-rim-contact.json",
+      "bytes": 52195,
+      "sha256": "085d2f7055d94fa7e4c74a7d550b2f88a39b0441dbf33a65e4bfc47775f76280",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part03.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\volume-v24-eye-shell-qa.log",
+      "restore_relative_path": "results/volume-v24-eye-shell-qa.log",
+      "bytes": 768,
+      "sha256": "2a2ef4777d6570197abee8b6eecfbefaf536b05f151c2e413f52de9135c9d2d7",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part03.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\volume-v24-eye-shell-self-occlusion.json",
+      "restore_relative_path": "results/volume-v24-eye-shell-self-occlusion.json",
+      "bytes": 1037,
+      "sha256": "c00d9ec25b71514e96b06f09ed6ee10561383c4fa96fd060031c7eb068891752",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part03.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\volume-v24-static-qa.log",
+      "restore_relative_path": "results/volume-v24-static-qa.log",
+      "bytes": 537,
+      "sha256": "bf3e2f6c6b27ea63658b9da117eba5f02bab1555e84fb181c89ec38c8ce9682e",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part03.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\volume-v24-static-technical-qa.json",
+      "restore_relative_path": "results/volume-v24-static-technical-qa.json",
+      "bytes": 16342,
+      "sha256": "2242d26db3b34599ddc4251f3cc432cc1b34765fe4b9c48c2b91a15caa2fe92b",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part03.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\volume-v25-eye-contact-qa.log",
+      "restore_relative_path": "results/volume-v25-eye-contact-qa.log",
+      "bytes": 788,
+      "sha256": "19212226598bc4d1b4675536f992e9178360cf3d002b5e8b4ac5dee69633a1e5",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part03.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\volume-v25-eye-rim-contact.json",
+      "restore_relative_path": "results/volume-v25-eye-rim-contact.json",
+      "bytes": 52151,
+      "sha256": "860a1fa74e77afc8e7a1bdf95bbff0c9f7a37ec8d66a42c85aef6313cc5cefe3",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part03.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\volume-v25-eye-shell-qa.log",
+      "restore_relative_path": "results/volume-v25-eye-shell-qa.log",
+      "bytes": 768,
+      "sha256": "467959f99ae88df14159fc81290e97e907381afb950445ee5886dd6a93a49212",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part03.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\volume-v25-eye-shell-self-occlusion.json",
+      "restore_relative_path": "results/volume-v25-eye-shell-self-occlusion.json",
+      "bytes": 1037,
+      "sha256": "d09e3211fd96f8a5a975bc9d4b335f165c9f9d35746005649f79e806d0ce2109",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part03.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\volume-v25-mane-root-contact.json",
+      "restore_relative_path": "results/volume-v25-mane-root-contact.json",
+      "bytes": 13111,
+      "sha256": "dd9fc26fec56c80ecc85e72bc6fb59968a0b43590205a32e5e9742f367fcb369",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part03.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\volume-v25-mane-root-qa.log",
+      "restore_relative_path": "results/volume-v25-mane-root-qa.log",
+      "bytes": 1721,
+      "sha256": "a1e08b08a2df701afe6403ce16597f0d69551f7ed4338cfd8c9b5b339896ad98",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part03.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\volume-v25-static-qa.log",
+      "restore_relative_path": "results/volume-v25-static-qa.log",
+      "bytes": 537,
+      "sha256": "8e72ed734d24eb1e85be121be534183e42e72aa53a9fc34099772e74a998740e",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part03.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\volume-v25-static-technical-qa.json",
+      "restore_relative_path": "results/volume-v25-static-technical-qa.json",
+      "bytes": 16342,
+      "sha256": "284e7c53fdb65eda165c226b14ea737bb83b7298e98d75db2fab388534dd2278",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part03.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Work\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\authoring\\build_dragon_v8_volume_v23.py",
+      "restore_relative_path": "work/authoring/build_dragon_v8_volume_v23.py",
+      "bytes": 43062,
+      "sha256": "7dca9a64caa3ce978adecbc1723a703b3fe38c57e380b413650c9361d0da92f8",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part03.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Work\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\authoring\\build_dragon_v8_volume_v24.py",
+      "restore_relative_path": "work/authoring/build_dragon_v8_volume_v24.py",
+      "bytes": 43440,
+      "sha256": "f4315a9c89775cb0aea2181b00d8fa9e4bd593e55f477e6444639e67eae61f52",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part03.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Work\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\authoring\\build_dragon_v8_volume_v25.py",
+      "restore_relative_path": "work/authoring/build_dragon_v8_volume_v25.py",
+      "bytes": 44316,
+      "sha256": "691202de75b0c3e11934a1fefa12dd1cf200e41edd88ffd9163b695b42308c4c",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part03.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Work\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\authoring\\check_precommit_preservation_v22.mjs",
+      "restore_relative_path": "work/authoring/check_precommit_preservation_v22.mjs",
+      "bytes": 4847,
+      "sha256": "ae0dd41bee2b66e0a1801ea31a5596d6f4e955f1dbfaefc0b590398b6ea62b90",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part03.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Work\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\authoring\\compare_v23_diagnostic_face_height.mjs",
+      "restore_relative_path": "work/authoring/compare_v23_diagnostic_face_height.mjs",
+      "bytes": 2448,
+      "sha256": "d2d80f6b0ecc3f4e3c56430be34608288f2d607eff7bc7de10eca44df6b777d8",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part03.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Work\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\authoring\\compare_v25_diagnostic_face_height.mjs",
+      "restore_relative_path": "work/authoring/compare_v25_diagnostic_face_height.mjs",
+      "bytes": 2448,
+      "sha256": "ff8759dced880e2685380f19e6147f4aa2e73c2fddbbf2cb20eaf771978fc80e",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part03.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Work\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\authoring\\diagnose_mane_root_skin_contact.py",
+      "restore_relative_path": "work/authoring/diagnose_mane_root_skin_contact.py",
+      "bytes": 1865,
+      "sha256": "bd014b7df7d549843ae669dccb3c394d72a7d9c916916050fb9029ad86c893a3",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part03.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Work\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\authoring\\diagnose_v23_eye_curvature_lighting.py",
+      "restore_relative_path": "work/authoring/diagnose_v23_eye_curvature_lighting.py",
+      "bytes": 4349,
+      "sha256": "e1ca3c302267568a899b061e7ea65bc027b7ccb9607ae62b49995e60b825c7ab",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part03.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Work\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\authoring\\prepare_v22_preservation_check.mjs",
+      "restore_relative_path": "work/authoring/prepare_v22_preservation_check.mjs",
+      "bytes": 1228,
+      "sha256": "50c79e890574bc22cc8b85375840cbcf5f7d5da2438fefc1e62f32842caec82c",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part03.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Work\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\authoring\\prepare_volume_v23_smile_mane_roots.mjs",
+      "restore_relative_path": "work/authoring/prepare_volume_v23_smile_mane_roots.mjs",
+      "bytes": 2588,
+      "sha256": "1f981ea1d33ba436283c49ef2b651b251227a7dd0db3c33dcdebbd6c27528033",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part03.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Work\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\authoring\\prepare_volume_v24_convex_eye_lid.mjs",
+      "restore_relative_path": "work/authoring/prepare_volume_v24_convex_eye_lid.mjs",
+      "bytes": 3149,
+      "sha256": "8c4f980335c6e151debc84aef4b50f9938ee518f15c76758fd8bc0d3409dbf32",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part03.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Work\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\authoring\\prepare_volume_v25_spherical_eye_intersection.mjs",
+      "restore_relative_path": "work/authoring/prepare_volume_v25_spherical_eye_intersection.mjs",
+      "bytes": 3024,
+      "sha256": "669d8de8014cec4b1fc7b954854bc86dafb746fe47fa17d92e56f508a472d16c",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part03.zip"
+    },
+    {
+      "source_path": "D:\\Codex\\Work\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\authoring\\preserve_face_v23_v25_addendum.py",
+      "restore_relative_path": "work/authoring/preserve_face_v23_v25_addendum.py",
+      "bytes": 3156,
+      "sha256": "8d500a8ca482b5e064c81ed9bf0ab85d0ce0ac5ea5d7eea99d79fe7e0e5ca27f",
+      "part": "SaJu_Dragon_Face_V23_V25_Private_Part03.zip"
+    }
+  ],
+  "parts": [
+    {
+      "file": "SaJu_Dragon_Face_V23_V25_Private_Part01.zip",
+      "bytes": 46610992,
+      "sha256": "cd43696c3d6c634d46428d088a0f9a10d240ea1d5bff28355609b3e5f7de68bc"
+    },
+    {
+      "file": "SaJu_Dragon_Face_V23_V25_Private_Part02.zip",
+      "bytes": 35503600,
+      "sha256": "46c871ec0e2760ed0e1c534d1e5d228cbb8bbde241f5054106f2f3b29fffeb97"
+    },
+    {
+      "file": "SaJu_Dragon_Face_V23_V25_Private_Part03.zip",
+      "bytes": 33730558,
+      "sha256": "1c9befd5cf55466b5978981a5276957da923f208413f31b408a73675c725819d"
+    }
+  ],
+  "source_bytes": 117234098,
+  "baseline_manifest": "backup-volume-v01-v22-01/preservation-manifest.json",
+  "appearance_completion_hold": true,
+  "new_face_rig_idle_and_regeneration_not_run": true,
+  "source_deleted_or_overwritten": false,
+  "cloud_upload_pending": true,
+  "free_bytes_after": 23443144704
+}

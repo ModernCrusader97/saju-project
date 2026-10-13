@@ -1,0 +1,43 @@
+{
+  "status": "V23_TO_V25_FACE_ORIGINALS_AND_DIAGNOSTICS_PRIVATE_CLOUD_METADATA_VERIFIED",
+  "files": 68,
+  "source_bytes": 117234098,
+  "parts": [
+    {
+      "file": "SaJu_Dragon_Face_V23_V25_Private_Part01.zip",
+      "id": "1mB-Aonnqu0tI30SD12lUFLR81xXt-4Nm",
+      "url": "https://drive.google.com/file/d/1mB-Aonnqu0tI30SD12lUFLR81xXt-4Nm/view?usp=drivesdk",
+      "bytes": 46610992,
+      "local_sha256": "cd43696c3d6c634d46428d088a0f9a10d240ea1d5bff28355609b3e5f7de68bc",
+      "shared": false,
+      "owner_only": true,
+      "remote_body_rehashed": false
+    },
+    {
+      "file": "SaJu_Dragon_Face_V23_V25_Private_Part02.zip",
+      "id": "1VM1WUP50clNKxYPdIX7on2t4oY4IM3hp",
+      "url": "https://drive.google.com/file/d/1VM1WUP50clNKxYPdIX7on2t4oY4IM3hp/view?usp=drivesdk",
+      "bytes": 35503600,
+      "local_sha256": "46c871ec0e2760ed0e1c534d1e5d228cbb8bbde241f5054106f2f3b29fffeb97",
+      "shared": false,
+      "owner_only": true,
+      "remote_body_rehashed": false
+    },
+    {
+      "file": "SaJu_Dragon_Face_V23_V25_Private_Part03.zip",
+      "id": "1Ew7X4iw-oAr34FtvI1bIeIysYhs7uC_-",
+      "url": "https://drive.google.com/file/d/1Ew7X4iw-oAr34FtvI1bIeIysYhs7uC_-/view?usp=drivesdk",
+      "bytes": 33730558,
+      "local_sha256": "1c9befd5cf55466b5978981a5276957da923f208413f31b408a73675c725819d",
+      "shared": false,
+      "owner_only": true,
+      "remote_body_rehashed": false
+    }
+  ],
+  "local_zip_crc_and_file_sha256_verified": true,
+  "source_bytes_unchanged": true,
+  "remote_body_rehashed": false,
+  "appearance_completion_hold": true,
+  "current_face_version": 25,
+  "current_face_animation_not_run": true
+}

@@ -1,0 +1,31 @@
+{
+  "status": "ACTUAL_GLB_COMPLETE_SIDE_RENDER_SOURCE_BYTES_UNCHANGED",
+  "source": {
+    "blend": "e4c55088f2d7eaec6d1d14f0bad1c2dcb702721ad02856ee3c5f3c85bee1abbd",
+    "glb": "5189fdd5894bf9d17c805f9340c20e2eb08525c635f9fb9add41758abfe4913d"
+  },
+  "camera": {
+    "type": "ORTHO",
+    "location": [
+      11.0,
+      0.0,
+      2.5199999809265137
+    ],
+    "target": [
+      0.05000000074505806,
+      0.0,
+      2.5199999809265137
+    ],
+    "ortho_scale": 6.550000190734863,
+    "resolution": [
+      800,
+      800
+    ],
+    "samples": 24,
+    "frame": 0
+  },
+  "actual_glb_mesh_count": 8,
+  "render_sha256": "8f1c63da504f01167dc927ee653855ff456d16c9319406e4b70f4bdb4a67f4f4",
+  "native_saved_or_modified": false,
+  "appearance_approved": false
+}

@@ -1,0 +1,38 @@
+{
+  "status": "PASS_RELATED_PRODUCT_TYPES_AND_BUILD",
+  "stages": [
+    {
+      "name": "types",
+      "exit_code": 0,
+      "start_utc": "2026-10-12T18:57:18.150356+00:00",
+      "end_utc": "2026-10-12T18:57:34.136372+00:00",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "D:\\Codex\\Work\\SaJuDragonApprovedShapeV7-20261012-Joseph\\verification-repo\\node_modules\\typescript\\bin\\tsc",
+        "--noEmit"
+      ],
+      "cwd": "D:\\Codex\\Work\\SaJuDragonApprovedShapeV7-20261012-Joseph\\verification-repo\\V20Build_SaJuDragonPhotoVolume_20261012_01a126cc",
+      "log": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\volume-v20-related-types.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "build",
+      "exit_code": 0,
+      "start_utc": "2026-10-12T18:57:34.150565+00:00",
+      "end_utc": "2026-10-12T18:58:43.554565+00:00",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "D:\\Codex\\Work\\SaJuDragonApprovedShapeV7-20261012-Joseph\\verification-repo\\node_modules\\vinext\\dist\\cli.js",
+        "build"
+      ],
+      "cwd": "D:\\Codex\\Work\\SaJuDragonApprovedShapeV7-20261012-Joseph\\verification-repo\\V20Build_SaJuDragonPhotoVolume_20261012_01a126cc",
+      "log": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\volume-v20-related-build.log",
+      "log_sha256": "1cd069f34ca6e15855b55f1fb3968a5c6181265dc90f339e53c349c04f7d35d1"
+    }
+  ],
+  "source_snapshot_unchanged": true,
+  "shared_library_key_bytes_unchanged": true,
+  "full_dependency_tree_after_hash_claimed": false,
+  "not_site_batch_five_verification": true,
+  "art_candidate_does_not_replace_product_default": true
+}

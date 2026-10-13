@@ -1,0 +1,1168 @@
+{
+  "status": "LITERAL_COPY_SHA256_VERIFIED_REVIEW_HOLD",
+  "files": [
+    {
+      "file": ".gitattributes",
+      "bytes": 42,
+      "sha256": "4637fb84ef403f14a87670727b471e05f5f4bdd364a40b89db28f42693bcd5c8"
+    },
+    {
+      "file": "animated-checkpoint-v22/.gitattributes",
+      "bytes": 44,
+      "sha256": "ef4d8af35e4fcb311e3be2222d246db3a904553891848ec034e51f71c0ce3092"
+    },
+    {
+      "file": "animated-checkpoint-v22/delivery-file-manifest.json",
+      "bytes": 11805,
+      "sha256": "3a935debf4c20080b72df7f368316abaef37fcdd030c738de93a7f3bb5c580a3"
+    },
+    {
+      "file": "animated-checkpoint-v22/model/generation-report.json",
+      "bytes": 1560,
+      "sha256": "973f2e54e47a648e36aecad6fb4067e70aa57f79b1a17222a4e8b0bd45bdaa11"
+    },
+    {
+      "file": "animated-checkpoint-v22/model/SaJu_Dragon_V8_Volume_Refinement_v22.blend",
+      "bytes": 79418208,
+      "sha256": "e4c55088f2d7eaec6d1d14f0bad1c2dcb702721ad02856ee3c5f3c85bee1abbd"
+    },
+    {
+      "file": "animated-checkpoint-v22/model/SaJu_Dragon_V8_Volume_Refinement_v22.glb",
+      "bytes": 43276624,
+      "sha256": "5189fdd5894bf9d17c805f9340c20e2eb08525c635f9fb9add41758abfe4913d"
+    },
+    {
+      "file": "animated-checkpoint-v22/previews/glb-reimport-front.png",
+      "bytes": 754618,
+      "sha256": "e4bd21d8a7980ba22cde59cf87e3b1507816adcd2017a593475dcfa0b014032f"
+    },
+    {
+      "file": "animated-checkpoint-v22/previews/glb-reimport-headfront.png",
+      "bytes": 782367,
+      "sha256": "b446837357e4f3ad814fd5394e67905cf78cdb4f5b68e5c76795966c38031381"
+    },
+    {
+      "file": "animated-checkpoint-v22/previews/glb-reimport-headthreequarter.png",
+      "bytes": 756396,
+      "sha256": "17de402eb6903d194365adfed145c10dbf25efeda574b3c3f9a2cfe09b3ec965"
+    },
+    {
+      "file": "animated-checkpoint-v22/previews/glb-reimport-side-complete.png",
+      "bytes": 659271,
+      "sha256": "8f1c63da504f01167dc927ee653855ff456d16c9319406e4b70f4bdb4a67f4f4"
+    },
+    {
+      "file": "animated-checkpoint-v22/previews/glb-reimport-side.png",
+      "bytes": 682151,
+      "sha256": "abe7efba2d63c157bf5b87d4edf051ea23bf7c252e6ce8011b79a39533f50fba"
+    },
+    {
+      "file": "animated-checkpoint-v22/previews/glb-reimport-threequarter.png",
+      "bytes": 731884,
+      "sha256": "84dc86b6621d037eddb79f004cf3a001c31c7bdbb010aa024fccb15218a01e7c"
+    },
+    {
+      "file": "animated-checkpoint-v22/previews/SaJu_Dragon_V22_Review_Candidate_Actual_GLB_Idle_6s.mp4",
+      "bytes": 246408,
+      "sha256": "f6fb97b3c00271a1bf28b34dfb5dedd1ebfccca85cbba27baf8ed92f4606b134"
+    },
+    {
+      "file": "animated-checkpoint-v22/previews/SaJu_Dragon_V22_Review_Candidate_Actual_GLB_Idle_6s.mp4.encode.log",
+      "bytes": 3736,
+      "sha256": "d702cbd0c45b69d1819cac41433ab8f23355650672299a8e8a6642155d8ad022"
+    },
+    {
+      "file": "animated-checkpoint-v22/previews/SaJu_Dragon_V22_Review_Candidate_Actual_GLB_Idle_6s.mp4.verification.json",
+      "bytes": 1977,
+      "sha256": "8420522ab9f83077fcca3cdd88d6406f44ed49b4cc4e06f8853134a4cba54c73"
+    },
+    {
+      "file": "animated-checkpoint-v22/previews/source-comparison/01-whole-reference-actual.log",
+      "bytes": 1373,
+      "sha256": "48dac5b987e07aee9c1b8f0b9f8f0c9e24c7008015296759be6441d219153be5"
+    },
+    {
+      "file": "animated-checkpoint-v22/previews/source-comparison/01-whole-reference-actual.png",
+      "bytes": 1328197,
+      "sha256": "fa4387ef0326641fd561aafc7d5857feb16ed9d75e2de2cb41bf8c944c8e5bae"
+    },
+    {
+      "file": "animated-checkpoint-v22/previews/source-comparison/02-threequarter-face-reference-actual.log",
+      "bytes": 1379,
+      "sha256": "111fbfe73a8761ef2c723ceca1b559c00c190bc5bbf761f6c9b3da32a6017b16"
+    },
+    {
+      "file": "animated-checkpoint-v22/previews/source-comparison/02-threequarter-face-reference-actual.png",
+      "bytes": 1007731,
+      "sha256": "688c060aa3c7bebd6f5d51b726a0598ae13a3b5b5aaea76f33b47ea107811917"
+    },
+    {
+      "file": "animated-checkpoint-v22/previews/source-comparison/03-front-face-reference-actual.log",
+      "bytes": 1373,
+      "sha256": "86168147c7f906802a8e44cd4e2b1f53582b482b3c08a2ed56150f4cdd374931"
+    },
+    {
+      "file": "animated-checkpoint-v22/previews/source-comparison/03-front-face-reference-actual.png",
+      "bytes": 1185568,
+      "sha256": "0542f8c0e1d01d824290e12676fe5c2e110fe7221c91632ce1e18623a82d6a17"
+    },
+    {
+      "file": "animated-checkpoint-v22/previews/source-comparison/pixel-comparison-provenance.json",
+      "bytes": 3611,
+      "sha256": "472d025a836568d4d7fecec7aeada4c37cd5295583ca34507a8e7b64f0a07040"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/decoded-actual-video/decoded-0.png",
+      "bytes": 237995,
+      "sha256": "e348a64260010bc7b8c6e494658153335a199061d297e5e60c5ff2042e4b31f6"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/decoded-actual-video/decoded-0.png.log",
+      "bytes": 1659,
+      "sha256": "d37f3672e676355739ebfdb31af23075a0e72637efcf9452c8ddff5beb0de37d"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/decoded-actual-video/decoded-1_5.png",
+      "bytes": 269580,
+      "sha256": "baa1fc5708f382ebb2fe706eb712304a1db438b117bef5db012c463c5543cc36"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/decoded-actual-video/decoded-1_5.png.log",
+      "bytes": 1661,
+      "sha256": "22ba57fa496b036f0756001b41fedff87a37e5d8f72bd98f1e63374b0d5705cd"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/decoded-actual-video/decoded-3.png",
+      "bytes": 277250,
+      "sha256": "ef1497a1a020de64d24ecd526fed57ba59127220fa380edc6d80bd221a1861e8"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/decoded-actual-video/decoded-3.png.log",
+      "bytes": 1659,
+      "sha256": "e2751164d54614134f0bcef73868eec83dfb5c32c7a0abd08b7ec4bbeb48fbbd"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/decoded-actual-video/decoded-4_5.png",
+      "bytes": 278324,
+      "sha256": "80257ff3dda15c249b91f6ef5106db7ab5c7009094f401af9be502ace1c90af3"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/decoded-actual-video/decoded-4_5.png.log",
+      "bytes": 1661,
+      "sha256": "0ed0fddac4f7021bf366e2156454583d0450d091869c0beac9627fe26c0a0792"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/decoded-actual-video/decoded-5_916667.png",
+      "bytes": 277548,
+      "sha256": "b31a6855b6e949249f55d669eb3529a694c82771d798102a651e6f440efe710d"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/decoded-actual-video/decoded-5_916667.png.log",
+      "bytes": 1666,
+      "sha256": "85604448125c6d76768f120d79b2790d835f61bd3eb1bea2620c638e04ac0830"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/decoded-actual-video/decoded-video-verification.json",
+      "bytes": 3014,
+      "sha256": "a810096e6ae98ccc118d58d39ebc8659358cbf69daf5e9daea3e091378426329"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/manual-render-review.json",
+      "bytes": 1368,
+      "sha256": "54a7af9b51b25e177e3bc0e5d627d7e814f9869c4caf6eba9e043469681cf023"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/native-glb-verification.json",
+      "bytes": 5216,
+      "sha256": "70c4287c93f12c7da209ae884f0c78ae55216b4317886f67da1112f2588200cc"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/regeneration-report.json",
+      "bytes": 3237,
+      "sha256": "fa256a7e321a3ee9d6cc202511a4b73a0b0dc8b3045d724021001b8283f7519d"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/side-render-provenance.json",
+      "bytes": 785,
+      "sha256": "2799a09a5020e7f6cf4c9b30904e720d027c5066d34d705cd411080a8f5a22d2"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/volume-v20-build-source-snapshot.json",
+      "bytes": 30635,
+      "sha256": "9646cafcd57df1bd8981ffdb95929fe9564f18526f834fe444ea1e5fbd7e1316"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/volume-v20-related-build.log",
+      "bytes": 2687,
+      "sha256": "1cd069f34ca6e15855b55f1fb3968a5c6181265dc90f339e53c349c04f7d35d1"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/volume-v20-related-types-build.json",
+      "bytes": 1803,
+      "sha256": "cda394798b8c052e11e8551e9642e9b947982897705d5c79149573dfb6f39f24"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/volume-v20-related-types.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/volume-v22-eye-rim-contact.json",
+      "bytes": 52162,
+      "sha256": "e4312df0d7c3a6d25f1d456fe8ca04e27629b0134f475ffb3c5643f4d2b9f683"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/volume-v22-eye-shell-self-occlusion.json",
+      "bytes": 1037,
+      "sha256": "5b174c1d180f27bbfb26900efa6e630b5a2cf0c6fa6f6c222cdfcf85988ace18"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/volume-v22-khronos.json",
+      "bytes": 1210,
+      "sha256": "181e1f4f465059d1d679d8fd1afff16438345319bf621209df3700a9867b39e6"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/volume-v22-regenerated-glb-semantics.json",
+      "bytes": 10571,
+      "sha256": "fd8973a15c9b66b7acba07a42cd9c728ce89ec2d9cb98f9466006644634093ef"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/volume-v22-static-technical-qa.json",
+      "bytes": 16339,
+      "sha256": "4135ee2ddbaf87a0aeb3e05b982bbe04a7b2283c95ef2015b963a495f43cd805"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/volume-v22-three-runtime.json",
+      "bytes": 1185,
+      "sha256": "4ebc43b5026c027c482364c32bbbc3021f633daef64687864bd393852d71577f"
+    },
+    {
+      "file": "animated-checkpoint-v22/README.md",
+      "bytes": 1939,
+      "sha256": "582d139f9361855446ab1a07fb5dd63dca2bc6d2765736cc5dd5cf8d5a6d3e88"
+    },
+    {
+      "file": "animated-checkpoint-v22/reference/approved-2D-concept-original.png",
+      "bytes": 1651398,
+      "sha256": "6184555091c80769d6553ae40641dbb44eb6dcc859dd0b8591b7887cc1502e58"
+    },
+    {
+      "file": "animated-checkpoint-v22/source/bind_idle_export_v8_volume_v22.py",
+      "bytes": 12256,
+      "sha256": "538d1b2c10c31a689d700140175bdbab364bfc98151c898d8c564196532a139c"
+    },
+    {
+      "file": "animated-checkpoint-v22/source/build_dragon_v8_volume_v22.py",
+      "bytes": 42706,
+      "sha256": "be8d50a7a96230800d1da30cc6db9dc9a38daee95140988dcfa5b1df69fdc227"
+    },
+    {
+      "file": "animated-checkpoint-v22/source/compare_static_volume_v22_pixels.mjs",
+      "bytes": 2892,
+      "sha256": "446f386084654d9c7b49821653b2f13208e533ef5caae3d0c619904ac2ea796d"
+    },
+    {
+      "file": "animated-checkpoint-v22/source/diagnose_eye_front_self_occlusion_v2.py",
+      "bytes": 2396,
+      "sha256": "1bed71ea06025f27e4c7ab7986b830a6f08a9726dbf55df1d6628cfb52ed8ffc"
+    },
+    {
+      "file": "animated-checkpoint-v22/source/diagnose_volume_eye_contact_1624.py",
+      "bytes": 2138,
+      "sha256": "441a6a8d83aa32e17ebfa536cdeb1351d3627b89ea71e0466126eed140a149f6"
+    },
+    {
+      "file": "animated-checkpoint-v22/source/png_decode.mjs",
+      "bytes": 1798,
+      "sha256": "4ad46dd94e32edc4a1e923e7878ed0b1f7d267144dbebe73d8cf895fbec98336"
+    },
+    {
+      "file": "animated-checkpoint-v22/source/regenerate_v8_volume_v22.py",
+      "bytes": 3401,
+      "sha256": "1cc57a1304105c44b57342eed6ddb507835fbe1fc08c2280d09d3f80d5e27e28"
+    },
+    {
+      "file": "animated-checkpoint-v22/source/source-manifest.json",
+      "bytes": 2400,
+      "sha256": "c12d3a8f82551f39c0baa67a96e12eb23d16d5a274fdcb93953d729ae4d6c403"
+    },
+    {
+      "file": "animated-checkpoint-v22/source/verify_native_v8_volume_v22.py",
+      "bytes": 11638,
+      "sha256": "6117c5f9e453ab8973c1ceaf122b07a6e5c61df30f949b67bdcebf74e3b96c84"
+    },
+    {
+      "file": "animated-checkpoint-v22/source/verify_v8_static.py",
+      "bytes": 2572,
+      "sha256": "98099bfd2b64f418f3da6effeaf8351e2a7eb097d500cea51c2dabf72401b761"
+    },
+    {
+      "file": "animated-checkpoint-v22/source/volume_v22_decode_actual_video_v8.mjs",
+      "bytes": 2184,
+      "sha256": "18b5c2fbde6fb52ea182b7fe0840342e7ebc6e4120eecba755875f20e7966fde"
+    },
+    {
+      "file": "animated-checkpoint-v22/source/volume_v22_encode_idle.mjs",
+      "bytes": 2934,
+      "sha256": "487f2665c2c63a10726f34eeed34e1696012bdedbe4f09ee9d96f45b18c697e8"
+    },
+    {
+      "file": "animated-checkpoint-v22/source/volume_v22_verify_khronos.mjs",
+      "bytes": 1231,
+      "sha256": "fb3047edd0fa0435383550ad9f153703d043e0e0e621bf24e923fa9f08ff8d8d"
+    },
+    {
+      "file": "animated-checkpoint-v22/source/volume_v22_verify_runtime_v8.mjs",
+      "bytes": 5920,
+      "sha256": "63ab8c4cf74062903c01b7e6694c61449872a58b6569c08c792304a9a5ccbc0f"
+    },
+    {
+      "file": "animated-checkpoint-v22/source-extra/compare_actual_glb_volume_v22.mjs",
+      "bytes": 2830,
+      "sha256": "d3dbffdd9fdc0d53f4be2e5bf10a6ebcc953b3639bb35211b535b4e9d1f06794"
+    },
+    {
+      "file": "animated-checkpoint-v22/source-extra/render_v22_complete_side.py",
+      "bytes": 2394,
+      "sha256": "476169d1d632800dddb5996371f0804e61f3ce24261e27019611d62680a2d304"
+    },
+    {
+      "file": "animated-checkpoint-v22/source-extra/verify_v22_regenerated_glb_semantics.mjs",
+      "bytes": 3843,
+      "sha256": "3a7d452d3bb66b71baf0e1f8ab1a72af32e3092272eea1b7a216a337d8d489ab"
+    },
+    {
+      "file": "known-regressions/volume-v22-mane-root-contact-before-v23.json",
+      "bytes": 13016,
+      "sha256": "0ad0c34c5175abf3d7e495c3d2f942e5c5499cf798a26de523854ff8d379dec3"
+    },
+    {
+      "file": "known-regressions/volume-v22-mane-root-contact-before-v23.log",
+      "bytes": 1674,
+      "sha256": "7f72e48342efcac4f7eaea6a6e583e09fbafa8bddca091dbfc2a4e25f2130458"
+    },
+    {
+      "file": "known-regressions/volume-v23-mane-root-contact.json",
+      "bytes": 13113,
+      "sha256": "81d7f347e3ae98b1c27de27f8e378e7c53bcddbfeff0f0015bd0fb078dfae9c9"
+    },
+    {
+      "file": "latest-static-face-v25/diagnostics/face-diagnostics-v25-01/diagnostic-report.json",
+      "bytes": 32221,
+      "sha256": "99a03137fd51b0361d343e1eda0e14b76b2be4d00e7d314029f34b4e7a2959a9"
+    },
+    {
+      "file": "latest-static-face-v25/diagnostics/face-diagnostics-v25-01/reference-approx-glossy.png",
+      "bytes": 668035,
+      "sha256": "403b2a8bfdd2048721334e352d822633cd6f60ee2c30fae8ac0971d2b545b963"
+    },
+    {
+      "file": "latest-static-face-v25/diagnostics/face-diagnostics-v25-01/reference-approx-matte-diagnostic.png",
+      "bytes": 666327,
+      "sha256": "e46f31d450c7a25cf156f20f77a8b4c892966338916befc3c0a4d5e1d54054c7"
+    },
+    {
+      "file": "latest-static-face-v25/diagnostics/face-diagnostics-v25-height-matched-01/alignment-provenance.json",
+      "bytes": 1832,
+      "sha256": "911040f24a50f235f9ebb3e019f626d58afd704fa1ee4a2055ee197375c99230"
+    },
+    {
+      "file": "latest-static-face-v25/diagnostics/face-diagnostics-v25-height-matched-01/reference-approx-glossy.png",
+      "bytes": 1341622,
+      "sha256": "ddd69d8758f701c773a25f25d1f20096074ca9cc5014e691c8063e1e2abecfb1"
+    },
+    {
+      "file": "latest-static-face-v25/diagnostics/face-diagnostics-v25-height-matched-01/reference-approx-glossy.png.log",
+      "bytes": 1370,
+      "sha256": "a07c3ab75ab6681e7589f72a9ee4fac295578eff4b32b5ecc9f536bd9b61bb21"
+    },
+    {
+      "file": "latest-static-face-v25/diagnostics/face-diagnostics-v25-height-matched-01/reference-approx-matte-diagnostic.png",
+      "bytes": 1335180,
+      "sha256": "c2c2d4c96579a551a52c2bfa8d1aab891e63309fcfb184b4c73470557505746d"
+    },
+    {
+      "file": "latest-static-face-v25/diagnostics/face-diagnostics-v25-height-matched-01/reference-approx-matte-diagnostic.png.log",
+      "bytes": 1390,
+      "sha256": "49315893a80c686dc3caca98f39cd7216aefa3fc9904e59b6be107fa66995b07"
+    },
+    {
+      "file": "latest-static-face-v25/native/generation-report.json",
+      "bytes": 13368,
+      "sha256": "a7a6c5d8d6519f15ce3e366d15fcea3e0b7482ded3ca34d5773521297248c4a5"
+    },
+    {
+      "file": "latest-static-face-v25/native/previews/headfront.png",
+      "bytes": 645982,
+      "sha256": "20aa04d56c4a4ee511ea3f44dfc5ce1d82e74a016dc8a7eb15568870be50c72e"
+    },
+    {
+      "file": "latest-static-face-v25/native/previews/headthreequarter.png",
+      "bytes": 622376,
+      "sha256": "85beb5817dc955602c75fcdc3047a7e3c5f451b80054a0baab3fd5d9cb52b7c2"
+    },
+    {
+      "file": "latest-static-face-v25/native/previews/threequarter.png",
+      "bytes": 618085,
+      "sha256": "4ee2cef5b066ebc384e5ba5a49c38cc76d365b3ea7794093ceb37530afcffa8a"
+    },
+    {
+      "file": "latest-static-face-v25/native/SaJu_Dragon_V8_Volume_Refinement_v25.blend",
+      "bytes": 33900763,
+      "sha256": "a0d534682119cf9f423968d6e63087d2505a550bb231e36baec7c9a52c92723b"
+    },
+    {
+      "file": "latest-static-face-v25/qa/volume-v25-eye-contact-qa.log",
+      "bytes": 788,
+      "sha256": "19212226598bc4d1b4675536f992e9178360cf3d002b5e8b4ac5dee69633a1e5"
+    },
+    {
+      "file": "latest-static-face-v25/qa/volume-v25-eye-rim-contact.json",
+      "bytes": 52151,
+      "sha256": "860a1fa74e77afc8e7a1bdf95bbff0c9f7a37ec8d66a42c85aef6313cc5cefe3"
+    },
+    {
+      "file": "latest-static-face-v25/qa/volume-v25-eye-shell-qa.log",
+      "bytes": 768,
+      "sha256": "467959f99ae88df14159fc81290e97e907381afb950445ee5886dd6a93a49212"
+    },
+    {
+      "file": "latest-static-face-v25/qa/volume-v25-eye-shell-self-occlusion.json",
+      "bytes": 1037,
+      "sha256": "d09e3211fd96f8a5a975bc9d4b335f165c9f9d35746005649f79e806d0ce2109"
+    },
+    {
+      "file": "latest-static-face-v25/qa/volume-v25-mane-root-contact.json",
+      "bytes": 13111,
+      "sha256": "dd9fc26fec56c80ecc85e72bc6fb59968a0b43590205a32e5e9742f367fcb369"
+    },
+    {
+      "file": "latest-static-face-v25/qa/volume-v25-mane-root-qa.log",
+      "bytes": 1721,
+      "sha256": "a1e08b08a2df701afe6403ce16597f0d69551f7ed4338cfd8c9b5b339896ad98"
+    },
+    {
+      "file": "latest-static-face-v25/qa/volume-v25-static-qa.log",
+      "bytes": 537,
+      "sha256": "8e72ed734d24eb1e85be121be534183e42e72aa53a9fc34099772e74a998740e"
+    },
+    {
+      "file": "latest-static-face-v25/qa/volume-v25-static-technical-qa.json",
+      "bytes": 16342,
+      "sha256": "284e7c53fdb65eda165c226b14ea737bb83b7298e98d75db2fab388534dd2278"
+    },
+    {
+      "file": "latest-static-face-v25/source/build_dragon_v8_volume_v25.py",
+      "bytes": 44316,
+      "sha256": "691202de75b0c3e11934a1fefa12dd1cf200e41edd88ffd9163b695b42308c4c"
+    },
+    {
+      "file": "latest-static-face-v25/source/compare_v25_diagnostic_face_height.mjs",
+      "bytes": 2448,
+      "sha256": "ff8759dced880e2685380f19e6147f4aa2e73c2fddbbf2cb20eaf771978fc80e"
+    },
+    {
+      "file": "latest-static-face-v25/source/diagnose_eye_front_self_occlusion_v2.py",
+      "bytes": 2396,
+      "sha256": "1bed71ea06025f27e4c7ab7986b830a6f08a9726dbf55df1d6628cfb52ed8ffc"
+    },
+    {
+      "file": "latest-static-face-v25/source/diagnose_mane_root_skin_contact.py",
+      "bytes": 1865,
+      "sha256": "bd014b7df7d549843ae669dccb3c394d72a7d9c916916050fb9029ad86c893a3"
+    },
+    {
+      "file": "latest-static-face-v25/source/diagnose_v23_eye_curvature_lighting.py",
+      "bytes": 4349,
+      "sha256": "e1ca3c302267568a899b061e7ea65bc027b7ccb9607ae62b49995e60b825c7ab"
+    },
+    {
+      "file": "latest-static-face-v25/source/diagnose_volume_eye_contact_1624.py",
+      "bytes": 2138,
+      "sha256": "441a6a8d83aa32e17ebfa536cdeb1351d3627b89ea71e0466126eed140a149f6"
+    },
+    {
+      "file": "latest-static-face-v25/source/png_decode.mjs",
+      "bytes": 1798,
+      "sha256": "4ad46dd94e32edc4a1e923e7878ed0b1f7d267144dbebe73d8cf895fbec98336"
+    },
+    {
+      "file": "latest-static-face-v25/source/stage_review_checkpoint_v22_face_v25.py",
+      "bytes": 10052,
+      "sha256": "ff7e846332a715c97a044ba48d4f3fc2a605621f76a235beea829a61e7fb569e"
+    },
+    {
+      "file": "latest-static-face-v25/source/verify_v8_static.py",
+      "bytes": 2572,
+      "sha256": "98099bfd2b64f418f3da6effeaf8351e2a7eb097d500cea51c2dabf72401b761"
+    },
+    {
+      "file": "private-backup-maps/backup-face-v23-v25-01/cloud-face-upload-receipt.json",
+      "bytes": 1648,
+      "sha256": "e184734e3c0fce75612504a902005609437305eafbb38185c80bf2cf992ad51b"
+    },
+    {
+      "file": "private-backup-maps/backup-face-v23-v25-01/face-addendum-manifest.json",
+      "bytes": 29383,
+      "sha256": "fc25781f9598136dc2fe4e26a20f4551cea4614c309d3f3b82f36dba7b110cc1"
+    },
+    {
+      "file": "private-backup-maps/backup-volume-v01-v22-01/cloud-upload-receipt.json",
+      "bytes": 9183,
+      "sha256": "e5b586c9af394bca8d22932c6383cafcd36a8519172e091f9b01e788118c7059"
+    },
+    {
+      "file": "private-backup-maps/backup-volume-v01-v22-01/local-archive-integrity.json",
+      "bytes": 4375,
+      "sha256": "222b803a471adf5ccaf39ea7add279b49c5f227acd2dc0f8f1249de2ee3a1295"
+    },
+    {
+      "file": "private-backup-maps/backup-volume-v01-v22-01/preservation-manifest.json",
+      "bytes": 706522,
+      "sha256": "f7a1daa955946605976b8c3496e704f1b9a2c2c19c34e7d0049d9b6760a893e6"
+    },
+    {
+      "file": "private-backup-maps/backup-volume-v01-v22-01/restore_preserved_sources.py",
+      "bytes": 1289,
+      "sha256": "6a4582d3ce5d24ef5b4eab5147ce7092da61aafe7af794a1a2d4563f1d29280e"
+    },
+    {
+      "file": "README.md",
+      "bytes": 3578,
+      "sha256": "1a7e02ed08342d3c286e82b897945eed7d17b6c1516f0ee37cf5830c80c5ff0f"
+    },
+    {
+      "file": "review-state.json",
+      "bytes": 1906,
+      "sha256": "cebe18fd90df84f24bd34d70fef98b47b09ba83ddabb9369728622c91b633a45"
+    }
+  ],
+  "original_source_copies": [
+    {
+      "file": "animated-checkpoint-v22/.gitattributes",
+      "bytes": 44,
+      "sha256": "ef4d8af35e4fcb311e3be2222d246db3a904553891848ec034e51f71c0ce3092",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/.gitattributes"
+    },
+    {
+      "file": "animated-checkpoint-v22/delivery-file-manifest.json",
+      "bytes": 11805,
+      "sha256": "3a935debf4c20080b72df7f368316abaef37fcdd030c738de93a7f3bb5c580a3",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/delivery-file-manifest.json"
+    },
+    {
+      "file": "animated-checkpoint-v22/model/generation-report.json",
+      "bytes": 1560,
+      "sha256": "973f2e54e47a648e36aecad6fb4067e70aa57f79b1a17222a4e8b0bd45bdaa11",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/model/generation-report.json"
+    },
+    {
+      "file": "animated-checkpoint-v22/model/SaJu_Dragon_V8_Volume_Refinement_v22.blend",
+      "bytes": 79418208,
+      "sha256": "e4c55088f2d7eaec6d1d14f0bad1c2dcb702721ad02856ee3c5f3c85bee1abbd",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/model/SaJu_Dragon_V8_Volume_Refinement_v22.blend"
+    },
+    {
+      "file": "animated-checkpoint-v22/model/SaJu_Dragon_V8_Volume_Refinement_v22.glb",
+      "bytes": 43276624,
+      "sha256": "5189fdd5894bf9d17c805f9340c20e2eb08525c635f9fb9add41758abfe4913d",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/model/SaJu_Dragon_V8_Volume_Refinement_v22.glb"
+    },
+    {
+      "file": "animated-checkpoint-v22/previews/glb-reimport-front.png",
+      "bytes": 754618,
+      "sha256": "e4bd21d8a7980ba22cde59cf87e3b1507816adcd2017a593475dcfa0b014032f",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/previews/glb-reimport-front.png"
+    },
+    {
+      "file": "animated-checkpoint-v22/previews/glb-reimport-headfront.png",
+      "bytes": 782367,
+      "sha256": "b446837357e4f3ad814fd5394e67905cf78cdb4f5b68e5c76795966c38031381",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/previews/glb-reimport-headfront.png"
+    },
+    {
+      "file": "animated-checkpoint-v22/previews/glb-reimport-headthreequarter.png",
+      "bytes": 756396,
+      "sha256": "17de402eb6903d194365adfed145c10dbf25efeda574b3c3f9a2cfe09b3ec965",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/previews/glb-reimport-headthreequarter.png"
+    },
+    {
+      "file": "animated-checkpoint-v22/previews/glb-reimport-side-complete.png",
+      "bytes": 659271,
+      "sha256": "8f1c63da504f01167dc927ee653855ff456d16c9319406e4b70f4bdb4a67f4f4",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/previews/glb-reimport-side-complete.png"
+    },
+    {
+      "file": "animated-checkpoint-v22/previews/glb-reimport-side.png",
+      "bytes": 682151,
+      "sha256": "abe7efba2d63c157bf5b87d4edf051ea23bf7c252e6ce8011b79a39533f50fba",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/previews/glb-reimport-side.png"
+    },
+    {
+      "file": "animated-checkpoint-v22/previews/glb-reimport-threequarter.png",
+      "bytes": 731884,
+      "sha256": "84dc86b6621d037eddb79f004cf3a001c31c7bdbb010aa024fccb15218a01e7c",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/previews/glb-reimport-threequarter.png"
+    },
+    {
+      "file": "animated-checkpoint-v22/previews/SaJu_Dragon_V22_Review_Candidate_Actual_GLB_Idle_6s.mp4",
+      "bytes": 246408,
+      "sha256": "f6fb97b3c00271a1bf28b34dfb5dedd1ebfccca85cbba27baf8ed92f4606b134",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/previews/SaJu_Dragon_V22_Review_Candidate_Actual_GLB_Idle_6s.mp4"
+    },
+    {
+      "file": "animated-checkpoint-v22/previews/SaJu_Dragon_V22_Review_Candidate_Actual_GLB_Idle_6s.mp4.encode.log",
+      "bytes": 3736,
+      "sha256": "d702cbd0c45b69d1819cac41433ab8f23355650672299a8e8a6642155d8ad022",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/previews/SaJu_Dragon_V22_Review_Candidate_Actual_GLB_Idle_6s.mp4.encode.log"
+    },
+    {
+      "file": "animated-checkpoint-v22/previews/SaJu_Dragon_V22_Review_Candidate_Actual_GLB_Idle_6s.mp4.verification.json",
+      "bytes": 1977,
+      "sha256": "8420522ab9f83077fcca3cdd88d6406f44ed49b4cc4e06f8853134a4cba54c73",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/previews/SaJu_Dragon_V22_Review_Candidate_Actual_GLB_Idle_6s.mp4.verification.json"
+    },
+    {
+      "file": "animated-checkpoint-v22/previews/source-comparison/01-whole-reference-actual.log",
+      "bytes": 1373,
+      "sha256": "48dac5b987e07aee9c1b8f0b9f8f0c9e24c7008015296759be6441d219153be5",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/previews/source-comparison/01-whole-reference-actual.log"
+    },
+    {
+      "file": "animated-checkpoint-v22/previews/source-comparison/01-whole-reference-actual.png",
+      "bytes": 1328197,
+      "sha256": "fa4387ef0326641fd561aafc7d5857feb16ed9d75e2de2cb41bf8c944c8e5bae",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/previews/source-comparison/01-whole-reference-actual.png"
+    },
+    {
+      "file": "animated-checkpoint-v22/previews/source-comparison/02-threequarter-face-reference-actual.log",
+      "bytes": 1379,
+      "sha256": "111fbfe73a8761ef2c723ceca1b559c00c190bc5bbf761f6c9b3da32a6017b16",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/previews/source-comparison/02-threequarter-face-reference-actual.log"
+    },
+    {
+      "file": "animated-checkpoint-v22/previews/source-comparison/02-threequarter-face-reference-actual.png",
+      "bytes": 1007731,
+      "sha256": "688c060aa3c7bebd6f5d51b726a0598ae13a3b5b5aaea76f33b47ea107811917",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/previews/source-comparison/02-threequarter-face-reference-actual.png"
+    },
+    {
+      "file": "animated-checkpoint-v22/previews/source-comparison/03-front-face-reference-actual.log",
+      "bytes": 1373,
+      "sha256": "86168147c7f906802a8e44cd4e2b1f53582b482b3c08a2ed56150f4cdd374931",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/previews/source-comparison/03-front-face-reference-actual.log"
+    },
+    {
+      "file": "animated-checkpoint-v22/previews/source-comparison/03-front-face-reference-actual.png",
+      "bytes": 1185568,
+      "sha256": "0542f8c0e1d01d824290e12676fe5c2e110fe7221c91632ce1e18623a82d6a17",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/previews/source-comparison/03-front-face-reference-actual.png"
+    },
+    {
+      "file": "animated-checkpoint-v22/previews/source-comparison/pixel-comparison-provenance.json",
+      "bytes": 3611,
+      "sha256": "472d025a836568d4d7fecec7aeada4c37cd5295583ca34507a8e7b64f0a07040",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/previews/source-comparison/pixel-comparison-provenance.json"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/decoded-actual-video/decoded-0.png",
+      "bytes": 237995,
+      "sha256": "e348a64260010bc7b8c6e494658153335a199061d297e5e60c5ff2042e4b31f6",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/qa/decoded-actual-video/decoded-0.png"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/decoded-actual-video/decoded-0.png.log",
+      "bytes": 1659,
+      "sha256": "d37f3672e676355739ebfdb31af23075a0e72637efcf9452c8ddff5beb0de37d",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/qa/decoded-actual-video/decoded-0.png.log"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/decoded-actual-video/decoded-1_5.png",
+      "bytes": 269580,
+      "sha256": "baa1fc5708f382ebb2fe706eb712304a1db438b117bef5db012c463c5543cc36",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/qa/decoded-actual-video/decoded-1_5.png"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/decoded-actual-video/decoded-1_5.png.log",
+      "bytes": 1661,
+      "sha256": "22ba57fa496b036f0756001b41fedff87a37e5d8f72bd98f1e63374b0d5705cd",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/qa/decoded-actual-video/decoded-1_5.png.log"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/decoded-actual-video/decoded-3.png",
+      "bytes": 277250,
+      "sha256": "ef1497a1a020de64d24ecd526fed57ba59127220fa380edc6d80bd221a1861e8",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/qa/decoded-actual-video/decoded-3.png"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/decoded-actual-video/decoded-3.png.log",
+      "bytes": 1659,
+      "sha256": "e2751164d54614134f0bcef73868eec83dfb5c32c7a0abd08b7ec4bbeb48fbbd",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/qa/decoded-actual-video/decoded-3.png.log"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/decoded-actual-video/decoded-4_5.png",
+      "bytes": 278324,
+      "sha256": "80257ff3dda15c249b91f6ef5106db7ab5c7009094f401af9be502ace1c90af3",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/qa/decoded-actual-video/decoded-4_5.png"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/decoded-actual-video/decoded-4_5.png.log",
+      "bytes": 1661,
+      "sha256": "0ed0fddac4f7021bf366e2156454583d0450d091869c0beac9627fe26c0a0792",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/qa/decoded-actual-video/decoded-4_5.png.log"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/decoded-actual-video/decoded-5_916667.png",
+      "bytes": 277548,
+      "sha256": "b31a6855b6e949249f55d669eb3529a694c82771d798102a651e6f440efe710d",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/qa/decoded-actual-video/decoded-5_916667.png"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/decoded-actual-video/decoded-5_916667.png.log",
+      "bytes": 1666,
+      "sha256": "85604448125c6d76768f120d79b2790d835f61bd3eb1bea2620c638e04ac0830",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/qa/decoded-actual-video/decoded-5_916667.png.log"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/decoded-actual-video/decoded-video-verification.json",
+      "bytes": 3014,
+      "sha256": "a810096e6ae98ccc118d58d39ebc8659358cbf69daf5e9daea3e091378426329",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/qa/decoded-actual-video/decoded-video-verification.json"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/manual-render-review.json",
+      "bytes": 1368,
+      "sha256": "54a7af9b51b25e177e3bc0e5d627d7e814f9869c4caf6eba9e043469681cf023",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/qa/manual-render-review.json"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/native-glb-verification.json",
+      "bytes": 5216,
+      "sha256": "70c4287c93f12c7da209ae884f0c78ae55216b4317886f67da1112f2588200cc",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/qa/native-glb-verification.json"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/regeneration-report.json",
+      "bytes": 3237,
+      "sha256": "fa256a7e321a3ee9d6cc202511a4b73a0b0dc8b3045d724021001b8283f7519d",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/qa/regeneration-report.json"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/side-render-provenance.json",
+      "bytes": 785,
+      "sha256": "2799a09a5020e7f6cf4c9b30904e720d027c5066d34d705cd411080a8f5a22d2",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/qa/side-render-provenance.json"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/volume-v20-build-source-snapshot.json",
+      "bytes": 30635,
+      "sha256": "9646cafcd57df1bd8981ffdb95929fe9564f18526f834fe444ea1e5fbd7e1316",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/qa/volume-v20-build-source-snapshot.json"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/volume-v20-related-build.log",
+      "bytes": 2687,
+      "sha256": "1cd069f34ca6e15855b55f1fb3968a5c6181265dc90f339e53c349c04f7d35d1",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/qa/volume-v20-related-build.log"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/volume-v20-related-types-build.json",
+      "bytes": 1803,
+      "sha256": "cda394798b8c052e11e8551e9642e9b947982897705d5c79149573dfb6f39f24",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/qa/volume-v20-related-types-build.json"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/volume-v20-related-types.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/qa/volume-v20-related-types.log"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/volume-v22-eye-rim-contact.json",
+      "bytes": 52162,
+      "sha256": "e4312df0d7c3a6d25f1d456fe8ca04e27629b0134f475ffb3c5643f4d2b9f683",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/qa/volume-v22-eye-rim-contact.json"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/volume-v22-eye-shell-self-occlusion.json",
+      "bytes": 1037,
+      "sha256": "5b174c1d180f27bbfb26900efa6e630b5a2cf0c6fa6f6c222cdfcf85988ace18",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/qa/volume-v22-eye-shell-self-occlusion.json"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/volume-v22-khronos.json",
+      "bytes": 1210,
+      "sha256": "181e1f4f465059d1d679d8fd1afff16438345319bf621209df3700a9867b39e6",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/qa/volume-v22-khronos.json"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/volume-v22-regenerated-glb-semantics.json",
+      "bytes": 10571,
+      "sha256": "fd8973a15c9b66b7acba07a42cd9c728ce89ec2d9cb98f9466006644634093ef",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/qa/volume-v22-regenerated-glb-semantics.json"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/volume-v22-static-technical-qa.json",
+      "bytes": 16339,
+      "sha256": "4135ee2ddbaf87a0aeb3e05b982bbe04a7b2283c95ef2015b963a495f43cd805",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/qa/volume-v22-static-technical-qa.json"
+    },
+    {
+      "file": "animated-checkpoint-v22/qa/volume-v22-three-runtime.json",
+      "bytes": 1185,
+      "sha256": "4ebc43b5026c027c482364c32bbbc3021f633daef64687864bd393852d71577f",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/qa/volume-v22-three-runtime.json"
+    },
+    {
+      "file": "animated-checkpoint-v22/README.md",
+      "bytes": 1939,
+      "sha256": "582d139f9361855446ab1a07fb5dd63dca2bc6d2765736cc5dd5cf8d5a6d3e88",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/README.md"
+    },
+    {
+      "file": "animated-checkpoint-v22/reference/approved-2D-concept-original.png",
+      "bytes": 1651398,
+      "sha256": "6184555091c80769d6553ae40641dbb44eb6dcc859dd0b8591b7887cc1502e58",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/reference/approved-2D-concept-original.png"
+    },
+    {
+      "file": "animated-checkpoint-v22/source/bind_idle_export_v8_volume_v22.py",
+      "bytes": 12256,
+      "sha256": "538d1b2c10c31a689d700140175bdbab364bfc98151c898d8c564196532a139c",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/source/bind_idle_export_v8_volume_v22.py"
+    },
+    {
+      "file": "animated-checkpoint-v22/source/build_dragon_v8_volume_v22.py",
+      "bytes": 42706,
+      "sha256": "be8d50a7a96230800d1da30cc6db9dc9a38daee95140988dcfa5b1df69fdc227",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/source/build_dragon_v8_volume_v22.py"
+    },
+    {
+      "file": "animated-checkpoint-v22/source/compare_static_volume_v22_pixels.mjs",
+      "bytes": 2892,
+      "sha256": "446f386084654d9c7b49821653b2f13208e533ef5caae3d0c619904ac2ea796d",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/source/compare_static_volume_v22_pixels.mjs"
+    },
+    {
+      "file": "animated-checkpoint-v22/source/diagnose_eye_front_self_occlusion_v2.py",
+      "bytes": 2396,
+      "sha256": "1bed71ea06025f27e4c7ab7986b830a6f08a9726dbf55df1d6628cfb52ed8ffc",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/source/diagnose_eye_front_self_occlusion_v2.py"
+    },
+    {
+      "file": "animated-checkpoint-v22/source/diagnose_volume_eye_contact_1624.py",
+      "bytes": 2138,
+      "sha256": "441a6a8d83aa32e17ebfa536cdeb1351d3627b89ea71e0466126eed140a149f6",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/source/diagnose_volume_eye_contact_1624.py"
+    },
+    {
+      "file": "animated-checkpoint-v22/source/png_decode.mjs",
+      "bytes": 1798,
+      "sha256": "4ad46dd94e32edc4a1e923e7878ed0b1f7d267144dbebe73d8cf895fbec98336",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/source/png_decode.mjs"
+    },
+    {
+      "file": "animated-checkpoint-v22/source/regenerate_v8_volume_v22.py",
+      "bytes": 3401,
+      "sha256": "1cc57a1304105c44b57342eed6ddb507835fbe1fc08c2280d09d3f80d5e27e28",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/source/regenerate_v8_volume_v22.py"
+    },
+    {
+      "file": "animated-checkpoint-v22/source/source-manifest.json",
+      "bytes": 2400,
+      "sha256": "c12d3a8f82551f39c0baa67a96e12eb23d16d5a274fdcb93953d729ae4d6c403",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/source/source-manifest.json"
+    },
+    {
+      "file": "animated-checkpoint-v22/source/verify_native_v8_volume_v22.py",
+      "bytes": 11638,
+      "sha256": "6117c5f9e453ab8973c1ceaf122b07a6e5c61df30f949b67bdcebf74e3b96c84",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/source/verify_native_v8_volume_v22.py"
+    },
+    {
+      "file": "animated-checkpoint-v22/source/verify_v8_static.py",
+      "bytes": 2572,
+      "sha256": "98099bfd2b64f418f3da6effeaf8351e2a7eb097d500cea51c2dabf72401b761",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/source/verify_v8_static.py"
+    },
+    {
+      "file": "animated-checkpoint-v22/source/volume_v22_decode_actual_video_v8.mjs",
+      "bytes": 2184,
+      "sha256": "18b5c2fbde6fb52ea182b7fe0840342e7ebc6e4120eecba755875f20e7966fde",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/source/volume_v22_decode_actual_video_v8.mjs"
+    },
+    {
+      "file": "animated-checkpoint-v22/source/volume_v22_encode_idle.mjs",
+      "bytes": 2934,
+      "sha256": "487f2665c2c63a10726f34eeed34e1696012bdedbe4f09ee9d96f45b18c697e8",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/source/volume_v22_encode_idle.mjs"
+    },
+    {
+      "file": "animated-checkpoint-v22/source/volume_v22_verify_khronos.mjs",
+      "bytes": 1231,
+      "sha256": "fb3047edd0fa0435383550ad9f153703d043e0e0e621bf24e923fa9f08ff8d8d",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/source/volume_v22_verify_khronos.mjs"
+    },
+    {
+      "file": "animated-checkpoint-v22/source/volume_v22_verify_runtime_v8.mjs",
+      "bytes": 5920,
+      "sha256": "63ab8c4cf74062903c01b7e6694c61449872a58b6569c08c792304a9a5ccbc0f",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/source/volume_v22_verify_runtime_v8.mjs"
+    },
+    {
+      "file": "animated-checkpoint-v22/source-extra/compare_actual_glb_volume_v22.mjs",
+      "bytes": 2830,
+      "sha256": "d3dbffdd9fdc0d53f4be2e5bf10a6ebcc953b3639bb35211b535b4e9d1f06794",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/source-extra/compare_actual_glb_volume_v22.mjs"
+    },
+    {
+      "file": "animated-checkpoint-v22/source-extra/render_v22_complete_side.py",
+      "bytes": 2394,
+      "sha256": "476169d1d632800dddb5996371f0804e61f3ce24261e27019611d62680a2d304",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/source-extra/render_v22_complete_side.py"
+    },
+    {
+      "file": "animated-checkpoint-v22/source-extra/verify_v22_regenerated_glb_semantics.mjs",
+      "bytes": 3843,
+      "sha256": "3a7d452d3bb66b71baf0e1f8ab1a72af32e3092272eea1b7a216a337d8d489ab",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/delivery-volume-v22-01/source-extra/verify_v22_regenerated_glb_semantics.mjs"
+    },
+    {
+      "file": "latest-static-face-v25/native/generation-report.json",
+      "bytes": 13368,
+      "sha256": "a7a6c5d8d6519f15ce3e366d15fcea3e0b7482ded3ca34d5773521297248c4a5",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/volume-refinement-v25/generation-report.json"
+    },
+    {
+      "file": "latest-static-face-v25/native/previews/headfront.png",
+      "bytes": 645982,
+      "sha256": "20aa04d56c4a4ee511ea3f44dfc5ce1d82e74a016dc8a7eb15568870be50c72e",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/volume-refinement-v25/previews/headfront.png"
+    },
+    {
+      "file": "latest-static-face-v25/native/previews/headthreequarter.png",
+      "bytes": 622376,
+      "sha256": "85beb5817dc955602c75fcdc3047a7e3c5f451b80054a0baab3fd5d9cb52b7c2",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/volume-refinement-v25/previews/headthreequarter.png"
+    },
+    {
+      "file": "latest-static-face-v25/native/previews/threequarter.png",
+      "bytes": 618085,
+      "sha256": "4ee2cef5b066ebc384e5ba5a49c38cc76d365b3ea7794093ceb37530afcffa8a",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/volume-refinement-v25/previews/threequarter.png"
+    },
+    {
+      "file": "latest-static-face-v25/native/SaJu_Dragon_V8_Volume_Refinement_v25.blend",
+      "bytes": 33900763,
+      "sha256": "a0d534682119cf9f423968d6e63087d2505a550bb231e36baec7c9a52c92723b",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/volume-refinement-v25/SaJu_Dragon_V8_Volume_Refinement_v25.blend"
+    },
+    {
+      "file": "latest-static-face-v25/source/build_dragon_v8_volume_v25.py",
+      "bytes": 44316,
+      "sha256": "691202de75b0c3e11934a1fefa12dd1cf200e41edd88ffd9163b695b42308c4c",
+      "source": "D:/Codex/Work/SaJuDragonPhotoReconstructionV8-20261012-Joseph/authoring/build_dragon_v8_volume_v25.py"
+    },
+    {
+      "file": "latest-static-face-v25/source/verify_v8_static.py",
+      "bytes": 2572,
+      "sha256": "98099bfd2b64f418f3da6effeaf8351e2a7eb097d500cea51c2dabf72401b761",
+      "source": "D:/Codex/Work/SaJuDragonPhotoReconstructionV8-20261012-Joseph/authoring/verify_v8_static.py"
+    },
+    {
+      "file": "latest-static-face-v25/source/diagnose_volume_eye_contact_1624.py",
+      "bytes": 2138,
+      "sha256": "441a6a8d83aa32e17ebfa536cdeb1351d3627b89ea71e0466126eed140a149f6",
+      "source": "D:/Codex/Work/SaJuDragonPhotoReconstructionV8-20261012-Joseph/authoring/diagnose_volume_eye_contact_1624.py"
+    },
+    {
+      "file": "latest-static-face-v25/source/diagnose_eye_front_self_occlusion_v2.py",
+      "bytes": 2396,
+      "sha256": "1bed71ea06025f27e4c7ab7986b830a6f08a9726dbf55df1d6628cfb52ed8ffc",
+      "source": "D:/Codex/Work/SaJuDragonPhotoReconstructionV8-20261012-Joseph/authoring/diagnose_eye_front_self_occlusion_v2.py"
+    },
+    {
+      "file": "latest-static-face-v25/source/diagnose_mane_root_skin_contact.py",
+      "bytes": 1865,
+      "sha256": "bd014b7df7d549843ae669dccb3c394d72a7d9c916916050fb9029ad86c893a3",
+      "source": "D:/Codex/Work/SaJuDragonPhotoReconstructionV8-20261012-Joseph/authoring/diagnose_mane_root_skin_contact.py"
+    },
+    {
+      "file": "latest-static-face-v25/source/diagnose_v23_eye_curvature_lighting.py",
+      "bytes": 4349,
+      "sha256": "e1ca3c302267568a899b061e7ea65bc027b7ccb9607ae62b49995e60b825c7ab",
+      "source": "D:/Codex/Work/SaJuDragonPhotoReconstructionV8-20261012-Joseph/authoring/diagnose_v23_eye_curvature_lighting.py"
+    },
+    {
+      "file": "latest-static-face-v25/source/compare_v25_diagnostic_face_height.mjs",
+      "bytes": 2448,
+      "sha256": "ff8759dced880e2685380f19e6147f4aa2e73c2fddbbf2cb20eaf771978fc80e",
+      "source": "D:/Codex/Work/SaJuDragonPhotoReconstructionV8-20261012-Joseph/authoring/compare_v25_diagnostic_face_height.mjs"
+    },
+    {
+      "file": "latest-static-face-v25/source/png_decode.mjs",
+      "bytes": 1798,
+      "sha256": "4ad46dd94e32edc4a1e923e7878ed0b1f7d267144dbebe73d8cf895fbec98336",
+      "source": "D:/Codex/Work/SaJuDragonPhotoReconstructionV8-20261012-Joseph/authoring/png_decode.mjs"
+    },
+    {
+      "file": "latest-static-face-v25/source/stage_review_checkpoint_v22_face_v25.py",
+      "bytes": 10052,
+      "sha256": "ff7e846332a715c97a044ba48d4f3fc2a605621f76a235beea829a61e7fb569e",
+      "source": "D:/Codex/Work/SaJuDragonPhotoReconstructionV8-20261012-Joseph/authoring/stage_review_checkpoint_v22_face_v25.py"
+    },
+    {
+      "file": "latest-static-face-v25/qa/volume-v25-static-technical-qa.json",
+      "bytes": 16342,
+      "sha256": "284e7c53fdb65eda165c226b14ea737bb83b7298e98d75db2fab388534dd2278",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/volume-v25-static-technical-qa.json"
+    },
+    {
+      "file": "latest-static-face-v25/qa/volume-v25-eye-rim-contact.json",
+      "bytes": 52151,
+      "sha256": "860a1fa74e77afc8e7a1bdf95bbff0c9f7a37ec8d66a42c85aef6313cc5cefe3",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/volume-v25-eye-rim-contact.json"
+    },
+    {
+      "file": "latest-static-face-v25/qa/volume-v25-eye-shell-self-occlusion.json",
+      "bytes": 1037,
+      "sha256": "d09e3211fd96f8a5a975bc9d4b335f165c9f9d35746005649f79e806d0ce2109",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/volume-v25-eye-shell-self-occlusion.json"
+    },
+    {
+      "file": "latest-static-face-v25/qa/volume-v25-mane-root-contact.json",
+      "bytes": 13111,
+      "sha256": "dd9fc26fec56c80ecc85e72bc6fb59968a0b43590205a32e5e9742f367fcb369",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/volume-v25-mane-root-contact.json"
+    },
+    {
+      "file": "latest-static-face-v25/qa/volume-v25-static-qa.log",
+      "bytes": 537,
+      "sha256": "8e72ed734d24eb1e85be121be534183e42e72aa53a9fc34099772e74a998740e",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/volume-v25-static-qa.log"
+    },
+    {
+      "file": "latest-static-face-v25/qa/volume-v25-eye-contact-qa.log",
+      "bytes": 788,
+      "sha256": "19212226598bc4d1b4675536f992e9178360cf3d002b5e8b4ac5dee69633a1e5",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/volume-v25-eye-contact-qa.log"
+    },
+    {
+      "file": "latest-static-face-v25/qa/volume-v25-eye-shell-qa.log",
+      "bytes": 768,
+      "sha256": "467959f99ae88df14159fc81290e97e907381afb950445ee5886dd6a93a49212",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/volume-v25-eye-shell-qa.log"
+    },
+    {
+      "file": "latest-static-face-v25/qa/volume-v25-mane-root-qa.log",
+      "bytes": 1721,
+      "sha256": "a1e08b08a2df701afe6403ce16597f0d69551f7ed4338cfd8c9b5b339896ad98",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/volume-v25-mane-root-qa.log"
+    },
+    {
+      "file": "latest-static-face-v25/diagnostics/face-diagnostics-v25-01/diagnostic-report.json",
+      "bytes": 32221,
+      "sha256": "99a03137fd51b0361d343e1eda0e14b76b2be4d00e7d314029f34b4e7a2959a9",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/face-diagnostics-v25-01/diagnostic-report.json"
+    },
+    {
+      "file": "latest-static-face-v25/diagnostics/face-diagnostics-v25-01/reference-approx-glossy.png",
+      "bytes": 668035,
+      "sha256": "403b2a8bfdd2048721334e352d822633cd6f60ee2c30fae8ac0971d2b545b963",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/face-diagnostics-v25-01/reference-approx-glossy.png"
+    },
+    {
+      "file": "latest-static-face-v25/diagnostics/face-diagnostics-v25-01/reference-approx-matte-diagnostic.png",
+      "bytes": 666327,
+      "sha256": "e46f31d450c7a25cf156f20f77a8b4c892966338916befc3c0a4d5e1d54054c7",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/face-diagnostics-v25-01/reference-approx-matte-diagnostic.png"
+    },
+    {
+      "file": "latest-static-face-v25/diagnostics/face-diagnostics-v25-height-matched-01/alignment-provenance.json",
+      "bytes": 1832,
+      "sha256": "911040f24a50f235f9ebb3e019f626d58afd704fa1ee4a2055ee197375c99230",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/face-diagnostics-v25-height-matched-01/alignment-provenance.json"
+    },
+    {
+      "file": "latest-static-face-v25/diagnostics/face-diagnostics-v25-height-matched-01/reference-approx-glossy.png",
+      "bytes": 1341622,
+      "sha256": "ddd69d8758f701c773a25f25d1f20096074ca9cc5014e691c8063e1e2abecfb1",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/face-diagnostics-v25-height-matched-01/reference-approx-glossy.png"
+    },
+    {
+      "file": "latest-static-face-v25/diagnostics/face-diagnostics-v25-height-matched-01/reference-approx-glossy.png.log",
+      "bytes": 1370,
+      "sha256": "a07c3ab75ab6681e7589f72a9ee4fac295578eff4b32b5ecc9f536bd9b61bb21",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/face-diagnostics-v25-height-matched-01/reference-approx-glossy.png.log"
+    },
+    {
+      "file": "latest-static-face-v25/diagnostics/face-diagnostics-v25-height-matched-01/reference-approx-matte-diagnostic.png",
+      "bytes": 1335180,
+      "sha256": "c2c2d4c96579a551a52c2bfa8d1aab891e63309fcfb184b4c73470557505746d",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/face-diagnostics-v25-height-matched-01/reference-approx-matte-diagnostic.png"
+    },
+    {
+      "file": "latest-static-face-v25/diagnostics/face-diagnostics-v25-height-matched-01/reference-approx-matte-diagnostic.png.log",
+      "bytes": 1390,
+      "sha256": "49315893a80c686dc3caca98f39cd7216aefa3fc9904e59b6be107fa66995b07",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/face-diagnostics-v25-height-matched-01/reference-approx-matte-diagnostic.png.log"
+    },
+    {
+      "file": "known-regressions/volume-v22-mane-root-contact-before-v23.json",
+      "bytes": 13016,
+      "sha256": "0ad0c34c5175abf3d7e495c3d2f942e5c5499cf798a26de523854ff8d379dec3",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/volume-v22-mane-root-contact-before-v23.json"
+    },
+    {
+      "file": "known-regressions/volume-v22-mane-root-contact-before-v23.log",
+      "bytes": 1674,
+      "sha256": "7f72e48342efcac4f7eaea6a6e583e09fbafa8bddca091dbfc2a4e25f2130458",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/volume-v22-mane-root-contact-before-v23.log"
+    },
+    {
+      "file": "known-regressions/volume-v23-mane-root-contact.json",
+      "bytes": 13113,
+      "sha256": "81d7f347e3ae98b1c27de27f8e378e7c53bcddbfeff0f0015bd0fb078dfae9c9",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/volume-v23-mane-root-contact.json"
+    },
+    {
+      "file": "private-backup-maps/backup-volume-v01-v22-01/preservation-manifest.json",
+      "bytes": 706522,
+      "sha256": "f7a1daa955946605976b8c3496e704f1b9a2c2c19c34e7d0049d9b6760a893e6",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/backup-volume-v01-v22-01/preservation-manifest.json"
+    },
+    {
+      "file": "private-backup-maps/backup-volume-v01-v22-01/restore_preserved_sources.py",
+      "bytes": 1289,
+      "sha256": "6a4582d3ce5d24ef5b4eab5147ce7092da61aafe7af794a1a2d4563f1d29280e",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/backup-volume-v01-v22-01/restore_preserved_sources.py"
+    },
+    {
+      "file": "private-backup-maps/backup-volume-v01-v22-01/local-archive-integrity.json",
+      "bytes": 4375,
+      "sha256": "222b803a471adf5ccaf39ea7add279b49c5f227acd2dc0f8f1249de2ee3a1295",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/backup-volume-v01-v22-01/local-archive-integrity.json"
+    },
+    {
+      "file": "private-backup-maps/backup-volume-v01-v22-01/cloud-upload-receipt.json",
+      "bytes": 9183,
+      "sha256": "e5b586c9af394bca8d22932c6383cafcd36a8519172e091f9b01e788118c7059",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/backup-volume-v01-v22-01/cloud-upload-receipt.json"
+    },
+    {
+      "file": "private-backup-maps/backup-face-v23-v25-01/face-addendum-manifest.json",
+      "bytes": 29383,
+      "sha256": "fc25781f9598136dc2fe4e26a20f4551cea4614c309d3f3b82f36dba7b110cc1",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/backup-face-v23-v25-01/face-addendum-manifest.json"
+    },
+    {
+      "file": "private-backup-maps/backup-face-v23-v25-01/cloud-face-upload-receipt.json",
+      "bytes": 1648,
+      "sha256": "e184734e3c0fce75612504a902005609437305eafbb38185c80bf2cf992ad51b",
+      "source": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/backup-face-v23-v25-01/cloud-face-upload-receipt.json"
+    }
+  ],
+  "manifest_self_excluded": true,
+  "appearance_completion_hold": true
+}

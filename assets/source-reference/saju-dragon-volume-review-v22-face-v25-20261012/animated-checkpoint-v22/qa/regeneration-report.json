@@ -1,0 +1,93 @@
+{
+  "status": "PASS_FRESH_V8_STATIC_NEW_RIG_IDLE_AND_GLTF_REGENERATION",
+  "source_files": [
+    {
+      "name": "build_dragon_v8_volume_v22.py",
+      "bytes": 42706,
+      "sha256": "be8d50a7a96230800d1da30cc6db9dc9a38daee95140988dcfa5b1df69fdc227"
+    },
+    {
+      "name": "bind_idle_export_v8_volume_v22.py",
+      "bytes": 12256,
+      "sha256": "538d1b2c10c31a689d700140175bdbab364bfc98151c898d8c564196532a139c"
+    },
+    {
+      "name": "verify_native_v8_volume_v22.py",
+      "bytes": 11638,
+      "sha256": "6117c5f9e453ab8973c1ceaf122b07a6e5c61df30f949b67bdcebf74e3b96c84"
+    },
+    {
+      "name": "verify_v8_static.py",
+      "bytes": 2572,
+      "sha256": "98099bfd2b64f418f3da6effeaf8351e2a7eb097d500cea51c2dabf72401b761"
+    },
+    {
+      "name": "volume_v22_verify_runtime_v8.mjs",
+      "bytes": 5920,
+      "sha256": "63ab8c4cf74062903c01b7e6694c61449872a58b6569c08c792304a9a5ccbc0f"
+    },
+    {
+      "name": "volume_v22_verify_khronos.mjs",
+      "bytes": 1231,
+      "sha256": "fb3047edd0fa0435383550ad9f153703d043e0e0e621bf24e923fa9f08ff8d8d"
+    },
+    {
+      "name": "volume_v22_encode_idle.mjs",
+      "bytes": 2934,
+      "sha256": "487f2665c2c63a10726f34eeed34e1696012bdedbe4f09ee9d96f45b18c697e8"
+    },
+    {
+      "name": "volume_v22_decode_actual_video_v8.mjs",
+      "bytes": 2184,
+      "sha256": "18b5c2fbde6fb52ea182b7fe0840342e7ebc6e4120eecba755875f20e7966fde"
+    },
+    {
+      "name": "png_decode.mjs",
+      "bytes": 1798,
+      "sha256": "4ad46dd94e32edc4a1e923e7878ed0b1f7d267144dbebe73d8cf895fbec98336"
+    },
+    {
+      "name": "compare_static_volume_v22_pixels.mjs",
+      "bytes": 2892,
+      "sha256": "446f386084654d9c7b49821653b2f13208e533ef5caae3d0c619904ac2ea796d"
+    },
+    {
+      "name": "diagnose_volume_eye_contact_1624.py",
+      "bytes": 2138,
+      "sha256": "441a6a8d83aa32e17ebfa536cdeb1351d3627b89ea71e0466126eed140a149f6"
+    },
+    {
+      "name": "diagnose_eye_front_self_occlusion_v2.py",
+      "bytes": 2396,
+      "sha256": "1bed71ea06025f27e4c7ab7986b830a6f08a9726dbf55df1d6628cfb52ed8ffc"
+    },
+    {
+      "name": "regenerate_v8_volume_v22.py",
+      "bytes": 3401,
+      "sha256": "1cc57a1304105c44b57342eed6ddb507835fbe1fc08c2280d09d3f80d5e27e28"
+    }
+  ],
+  "reference_sha256": "6184555091c80769d6553ae40641dbb44eb6dcc859dd0b8591b7887cc1502e58",
+  "installs": false,
+  "previous_mesh_or_rig_imported": false,
+  "final_user_appearance_approved": false,
+  "outputs": [
+    {
+      "file": "generation-report.json",
+      "bytes": 1579,
+      "sha256": "127d4bdf5ccbe2030ed0e68c0d6e6b2234eebabffd1efad1426d3dc0252466d0"
+    },
+    {
+      "file": "SaJu_Dragon_V8_Volume_Refinement_v22.blend",
+      "bytes": 79425313,
+      "sha256": "8ed0b1bebd762cd062620a0497d0bab58dd38f1fc7f5ae78c72f69391381a8a1"
+    },
+    {
+      "file": "SaJu_Dragon_V8_Volume_Refinement_v22.glb",
+      "bytes": 43276624,
+      "sha256": "b61ba430426335623cd26d394bf34745b3e808b77ce5691cb0edaa9a57686c98"
+    }
+  ],
+  "model_directory": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\regeneration-volume-v22-smoke-01\\model",
+  "not_a_photosimilarity_claim": true
+}

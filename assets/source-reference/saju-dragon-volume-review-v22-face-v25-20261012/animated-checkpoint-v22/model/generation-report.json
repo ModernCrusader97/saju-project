@@ -1,0 +1,63 @@
+{
+  "status": "NEW_V8_RIG_AND_GLTF_CANDIDATE_GENERATED_QA_PENDING",
+  "volume_refinement_iteration": 22,
+  "binding_revision": 3,
+  "weight_relaxation_iterations": 96,
+  "local_motion_scale": 0.4,
+  "float_root_motion_unchanged": true,
+  "actual_limb_path_point_counts": {
+    "Front_Left": 4,
+    "Front_Right": 4,
+    "Hind_Far": 4,
+    "Hind_Near": 4
+  },
+  "actual_limb_radii": {
+    "Front_Left": [
+      0.235,
+      0.265,
+      0.19,
+      0.155
+    ],
+    "Front_Right": [
+      0.235,
+      0.265,
+      0.19,
+      0.155
+    ],
+    "Hind_Far": [
+      0.18,
+      0.205,
+      0.17,
+      0.155
+    ],
+    "Hind_Near": [
+      0.18,
+      0.205,
+      0.17,
+      0.155
+    ]
+  },
+  "static_source": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\volume-refinement-v22\\SaJu_Dragon_V8_Volume_Refinement_v22.blend",
+  "static_source_sha256": "873a6d393e41119ed2b1da2844f6d6e4e364a0259cc1c437b910be9e28b29910",
+  "bones": 13,
+  "runtime_meshes": 8,
+  "native_editable_meshes": 71,
+  "triangles_native": 1106644,
+  "fps": 24,
+  "frames": [
+    0,
+    144
+  ],
+  "loop_seconds": 6,
+  "head_neck_tail_and_paw_motion": true,
+  "old_mesh_or_rig_imported": false,
+  "new_rig_for_reconstructed_anatomy": true,
+  "body_color_method": "Self-contained linear COLOR_0 attribute",
+  "skinned_nodes_are_scene_roots": true,
+  "user_final_appearance_approved": false,
+  "technical_checks_do_not_measure_photo_fidelity": true,
+  "deformation_edge_guards": [
+    0.78,
+    1.23
+  ]
+}

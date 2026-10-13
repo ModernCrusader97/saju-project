@@ -1,0 +1,113 @@
+{
+  "status": "PASS_LOCAL_ORIGINALS_INTERMEDIATES_FINAL_CRC_SHA256_AND_SOURCE_UNCHANGED",
+  "files": 768,
+  "source_bytes": 1610907393,
+  "unique_chunks": 886,
+  "parts": [
+    {
+      "file": "SaJu_Dragon_Volume_v01_v22_Originals_Part01_Private.zip",
+      "bytes": 60042829,
+      "sha256": "8bea253cb848eccf4730e8a857cadae3d5787d85729d836eb3f6f3298492ca72"
+    },
+    {
+      "file": "SaJu_Dragon_Volume_v01_v22_Originals_Part02_Private.zip",
+      "bytes": 43891968,
+      "sha256": "e9bfbbf0ceeadda0dbe5b5b1382e2c3f2e19e74b68f24b507a5fe5a88a00a856"
+    },
+    {
+      "file": "SaJu_Dragon_Volume_v01_v22_Originals_Part03_Private.zip",
+      "bytes": 56097813,
+      "sha256": "8f2f405b5863cfc08fa07d000b42ee99de6ba9976ab1fbaa6ff6b5f1fe6f1a9c"
+    },
+    {
+      "file": "SaJu_Dragon_Volume_v01_v22_Originals_Part04_Private.zip",
+      "bytes": 44833805,
+      "sha256": "67aada65195a2a90fc9636bf5d02623174ebdb03ec1857904bcdd6380e41d38f"
+    },
+    {
+      "file": "SaJu_Dragon_Volume_v01_v22_Originals_Part05_Private.zip",
+      "bytes": 55585583,
+      "sha256": "f4b52c13baac82a5968629ef43024b64990c8298fc86e74068c240788c1905f4"
+    },
+    {
+      "file": "SaJu_Dragon_Volume_v01_v22_Originals_Part06_Private.zip",
+      "bytes": 48359736,
+      "sha256": "f3051ef36f319339b7527010637d2cd8658898d7fff7dff2c9fdd9c1817be151"
+    },
+    {
+      "file": "SaJu_Dragon_Volume_v01_v22_Originals_Part07_Private.zip",
+      "bytes": 62340325,
+      "sha256": "02a89cc377a61274d3af37be10626727150a0bfa838b37c318274747d992ec96"
+    },
+    {
+      "file": "SaJu_Dragon_Volume_v01_v22_Originals_Part08_Private.zip",
+      "bytes": 62387775,
+      "sha256": "7c311e5035e18459eba3e2c407657bb63a230d2da867da94c61b8976d5d1ca60"
+    },
+    {
+      "file": "SaJu_Dragon_Volume_v01_v22_Originals_Part09_Private.zip",
+      "bytes": 60346454,
+      "sha256": "814173b11267975f0a4bcd76dcd56ae421a993f11cfe8da76e8d8f316f0cdbff"
+    },
+    {
+      "file": "SaJu_Dragon_Volume_v01_v22_Originals_Part10_Private.zip",
+      "bytes": 59325700,
+      "sha256": "3367ede1debd2d7098e6b9b0a6f979ce6bf53cd8aefe29fb11da498258f7a044"
+    },
+    {
+      "file": "SaJu_Dragon_Volume_v01_v22_Originals_Part11_Private.zip",
+      "bytes": 61925844,
+      "sha256": "cc5946b5d0d7b3677470f410c509285df16e7fbeca050116a3469336c2680ea7"
+    },
+    {
+      "file": "SaJu_Dragon_Volume_v01_v22_Originals_Part12_Private.zip",
+      "bytes": 59988194,
+      "sha256": "f81a5ba85f904868296f406ce7a905c9c268c98da5460b1d6af34b436a4b96a9"
+    },
+    {
+      "file": "SaJu_Dragon_Volume_v01_v22_Originals_Part13_Private.zip",
+      "bytes": 62538214,
+      "sha256": "c004c7de94e688f4f3ac1c35c8deab0328ffe7abd0f01adb1dde7acef57c4d54"
+    },
+    {
+      "file": "SaJu_Dragon_Volume_v01_v22_Originals_Part14_Private.zip",
+      "bytes": 60565009,
+      "sha256": "97bb195ebddfde1081747ece2e99d1ee8442b32f64b35f248f06de454a379fc0"
+    },
+    {
+      "file": "SaJu_Dragon_Volume_v01_v22_Originals_Part15_Private.zip",
+      "bytes": 59556850,
+      "sha256": "a7b6adfdfb9c8d4383915fcab27ebee7333c35f5d7955fd740dd591b7df5a0bc"
+    },
+    {
+      "file": "SaJu_Dragon_Volume_v01_v22_Originals_Part16_Private.zip",
+      "bytes": 61135250,
+      "sha256": "991129b14f94024c978df67174f44eb490a19c32e8eaa5d83f248725bbc23f8d"
+    },
+    {
+      "file": "SaJu_Dragon_Volume_v01_v22_Originals_Part17_Private.zip",
+      "bytes": 59581773,
+      "sha256": "ee9c222748721c481b854a9f45038e46fa73b33b3c6cbaf70fb4871eef5daaba"
+    },
+    {
+      "file": "SaJu_Dragon_Volume_v01_v22_Originals_Part18_Private.zip",
+      "bytes": 59484515,
+      "sha256": "e84e4d7199474cff17e73987f2a02cf3b5be7bdf948e4910ae6d36256a40003c"
+    },
+    {
+      "file": "SaJu_Dragon_Volume_v01_v22_Originals_Part19_Private.zip",
+      "bytes": 61834798,
+      "sha256": "6f1e2efb4d22a31a2fdea177a4d27e7bde13ac3e519fc4de2c666e28a64bb5d4"
+    },
+    {
+      "file": "SaJu_Dragon_Volume_v01_v22_Originals_Part20_Private.zip",
+      "bytes": 41235626,
+      "sha256": "961cd8753b38c7befbd6b68e434a6dc2a93c456fdb8587f7a8d68e35a4c2709c"
+    }
+  ],
+  "all_zip_crc_and_chunk_sha256_valid": true,
+  "all_source_file_sha256_unchanged": true,
+  "free_bytes_after": 23714594816,
+  "user_final_appearance_approved": false,
+  "appearance_completion_hold": true
+}

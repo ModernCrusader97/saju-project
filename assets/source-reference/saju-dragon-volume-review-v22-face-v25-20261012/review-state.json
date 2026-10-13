@@ -1,0 +1,48 @@
+{
+  "status": "REVIEW_CHECKPOINT_ONLY_APPEARANCE_COMPLETION_HOLD",
+  "created_utc": "2026-10-12T23:57:46.157959+00:00",
+  "branch": "art/dragon-photo-volume-refinement-v8-20261012-joseph",
+  "basis": "64b33195ff39c5c5b02e3188ede4ea2be91ade07",
+  "latest_face": {
+    "version": 25,
+    "static_only": true,
+    "native_sha256": "a0d534682119cf9f423968d6e63087d2505a550bb231e36baec7c9a52c92723b",
+    "builder_sha256": "691202de75b0c3e11934a1fefa12dd1cf200e41edd88ffd9163b695b42308c4c",
+    "brown_radial_concave_samples": [
+      0,
+      0
+    ],
+    "eye_contact_shell_skin_and_mane_root_checks_pass": true,
+    "new_face_rig_idle_and_full_regeneration_tested": false
+  },
+  "older_animated_checkpoint": {
+    "version": 22,
+    "glb_sha256": "5189fdd5894bf9d17c805f9340c20e2eb08525c635f9fb9add41758abfe4913d",
+    "native_sha256": "e4c55088f2d7eaec6d1d14f0bad1c2dcb702721ad02856ee3c5f3c85bee1abbd",
+    "idle_seconds": 6,
+    "native_glb_runtime_loop_and_regeneration_checks_passed": true,
+    "later_mane_root_contact_regression_failed": true,
+    "appearance_approved": false
+  },
+  "backup": {
+    "distinct_preserved_file_records": 836,
+    "private_zip_parts": 23,
+    "local_zip_crc_sha256_and_source_unchanged": true,
+    "remote_metadata_size_and_owner_only_checked": true,
+    "remote_body_rehashed": false
+  },
+  "review_pngs": {
+    "equal_face_height_glossy": "https://drive.google.com/file/d/1EfkUQbLqArH8yTa3fp6gM9ErDHFbkPYx/view?usp=drivesdk",
+    "equal_face_height_matte": "https://drive.google.com/file/d/18gEeMQ9114A3Dvj-ThDWaJTFLbevREGo/view?usp=drivesdk"
+  },
+  "site_batch_five": {
+    "previously_verified": 4,
+    "unverified_wip": 1,
+    "paused": true,
+    "not_retested_by_art_checks": true
+  },
+  "user_final_appearance_approved": false,
+  "appearance_completion_hold": true,
+  "default_product_model_or_other_animals_changed": false,
+  "deployment_or_pr_requested": false
+}

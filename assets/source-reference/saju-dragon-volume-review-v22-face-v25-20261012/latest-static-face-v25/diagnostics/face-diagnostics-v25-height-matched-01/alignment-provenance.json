@@ -1,0 +1,49 @@
+{
+  "status": "ACTUAL_PIXELS_WITH_APPROX_MANUAL_FOREHEAD_CHIN_LANDMARK_HEIGHT_ALIGNMENT",
+  "reference_sha256": "6184555091c80769d6553ae40641dbb44eb6dcc859dd0b8591b7887cc1502e58",
+  "source_crop": {
+    "x": 830,
+    "y": 216,
+    "w": 419,
+    "h": 361
+  },
+  "model_crop": {
+    "x": 80,
+    "y": 134,
+    "w": 559,
+    "h": 481
+  },
+  "manual_landmarks": {
+    "source": {
+      "forehead_y": 242,
+      "chin_y": 533,
+      "centre_x": 1040
+    },
+    "model": {
+      "forehead_y": 169,
+      "chin_y": 557,
+      "centre_x": 360
+    },
+    "target_face_height_pixels": 500
+  },
+  "uniform_scaling_only": true,
+  "horizontal_geometry_not_stretched": true,
+  "face_width_difference_retained": true,
+  "exact_source_camera_or_lighting_claimed": false,
+  "landmarks_are_manual_approximation": true,
+  "appearance_approved": false,
+  "rows": [
+    {
+      "input": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/face-diagnostics-v25-01/reference-approx-glossy.png",
+      "sha256": "403b2a8bfdd2048721334e352d822633cd6f60ee2c30fae8ac0971d2b545b963",
+      "comparison": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/face-diagnostics-v25-height-matched-01/reference-approx-glossy.png",
+      "comparison_sha256": "ddd69d8758f701c773a25f25d1f20096074ca9cc5014e691c8063e1e2abecfb1"
+    },
+    {
+      "input": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/face-diagnostics-v25-01/reference-approx-matte-diagnostic.png",
+      "sha256": "e46f31d450c7a25cf156f20f77a8b4c892966338916befc3c0a4d5e1d54054c7",
+      "comparison": "D:/Codex/Results/SaJuDragonPhotoReconstructionV8-20261012-Joseph/face-diagnostics-v25-height-matched-01/reference-approx-matte-diagnostic.png",
+      "comparison_sha256": "c2c2d4c96579a551a52c2bfa8d1aab891e63309fcfb184b4c73470557505746d"
+    }
+  ]
+}

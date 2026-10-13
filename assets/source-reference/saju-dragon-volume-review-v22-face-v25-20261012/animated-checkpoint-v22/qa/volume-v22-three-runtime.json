@@ -1,0 +1,42 @@
+{
+  "status": "PASS_THREE_GLTFLOADER_COLOR0_AND_ACTUAL_ANIMATIONMIXER_CPU",
+  "glb_sha256": "5189fdd5894bf9d17c805f9340c20e2eb08525c635f9fb9add41758abfe4913d",
+  "bytes": 43276624,
+  "stats": {
+    "meshCount": 8,
+    "triangles": 1106644,
+    "vertices": 562382,
+    "bones": 13,
+    "invalidNormals": 0,
+    "invalidWeights": 0,
+    "nonfinitePositions": 0,
+    "zeroAreaTriangles": 0,
+    "loopEndPoseError": 6.888667257305481e-7,
+    "maxMotion": 0.17742139583134828,
+    "frames": 145,
+    "sampledVertices": 6457,
+    "boundaryVelocityErrorPerFrame": 0.0001410213838552617
+  },
+  "body_palette": {
+    "linear_teal": [
+      0.021219010376003555,
+      0.33716361504833037,
+      0.20155625379439707
+    ],
+    "linear_ivory": [
+      0.8713671191987972,
+      0.6583748172794485,
+      0.33245153634617935
+    ],
+    "teal_vertices": 360737,
+    "ivory_vertices": 64331,
+    "color0": true,
+    "external_resources": 0
+  },
+  "skinned_nodes_are_scene_roots": true,
+  "technical_checks_do_not_measure_photo_fidelity": true,
+  "user_final_appearance_approved": false,
+  "limits": [
+    "Actual CPU GLTFLoader and AnimationMixer; no browser GPU or mobile performance claim."
+  ]
+}

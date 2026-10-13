@@ -1,0 +1,29 @@
+{
+  "status": "PASS_EYE_FRONT_NOT_SELF_OCCLUDED",
+  "source": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\volume-refinement-v22\\SaJu_Dragon_V8_Volume_Refinement_v22.blend",
+  "source_sha256": "873a6d393e41119ed2b1da2844f6d6e4e364a0259cc1c437b910be9e28b29910",
+  "max_allowed_self_occlusion": 0.003,
+  "max_actual_self_occlusion": 0,
+  "missing_rays": 0,
+  "eyes": [
+    {
+      "eye": "Eye_Closed_Fitted_Convex_Volume_-1",
+      "front_triangle_centroids_sampled": 2752,
+      "missing_rays": [],
+      "self_occluded_front_triangles": 0,
+      "max_occlusion_depth": 0,
+      "samples": []
+    },
+    {
+      "eye": "Eye_Closed_Fitted_Convex_Volume_1",
+      "front_triangle_centroids_sampled": 2752,
+      "missing_rays": [],
+      "self_occluded_front_triangles": 0,
+      "max_occlusion_depth": 0,
+      "samples": []
+    }
+  ],
+  "native_modified": false,
+  "visual_approval_claimed": false,
+  "method": "Interior triangle centroids avoid tangent rays on perimeter vertices."
+}

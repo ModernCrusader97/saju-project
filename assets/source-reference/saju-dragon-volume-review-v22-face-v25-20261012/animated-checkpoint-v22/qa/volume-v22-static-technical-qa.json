@@ -1,0 +1,656 @@
+{
+  "status": "PASS_STATIC_TECHNICAL_GEOMETRY_REFERENCE_BYTES_ONLY_VISUAL_REVIEW_REQUIRED",
+  "source": "D:\\Codex\\Results\\SaJuDragonPhotoReconstructionV8-20261012-Joseph\\volume-refinement-v22\\SaJu_Dragon_V8_Volume_Refinement_v22.blend",
+  "native_sha256": "873a6d393e41119ed2b1da2844f6d6e4e364a0259cc1c437b910be9e28b29910",
+  "geometry": [
+    {
+      "name": "Dragon_Continuous_Skin",
+      "vertices": 485708,
+      "polygons": 971411,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 8.813520270168308
+    },
+    {
+      "name": "Gentle_Closed_Toothless_Smile",
+      "vertices": 552,
+      "polygons": 560,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.00039698045083885514
+    },
+    {
+      "name": "Eye_Closed_Fitted_Convex_Volume_-1",
+      "vertices": 2818,
+      "polygons": 2880,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.008075246965068564
+    },
+    {
+      "name": "Eye_Attached_Glint_-1",
+      "vertices": 1282,
+      "polygons": 1344,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 1.7182347584342567e-05
+    },
+    {
+      "name": "Surface_V8_Nostril_-1",
+      "vertices": 617,
+      "polygons": 616,
+      "nonmanifold_edges": 44,
+      "components": 1,
+      "euler": 1,
+      "signed_volume": 0.007559022028359417
+    },
+    {
+      "name": "Surface_V8_Almond_Ear_Ivory_-1",
+      "vertices": 481,
+      "polygons": 480,
+      "nonmanifold_edges": 48,
+      "components": 1,
+      "euler": 1,
+      "signed_volume": 0.021519426386769177
+    },
+    {
+      "name": "Ivory_Antler_-1",
+      "vertices": 3916,
+      "polygons": 6009,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.11271066215699488
+    },
+    {
+      "name": "Eye_Closed_Fitted_Convex_Volume_1",
+      "vertices": 2818,
+      "polygons": 2880,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.008075246951127452
+    },
+    {
+      "name": "Eye_Attached_Glint_1",
+      "vertices": 1282,
+      "polygons": 1344,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 1.71823739063305e-05
+    },
+    {
+      "name": "Surface_V8_Nostril_1",
+      "vertices": 617,
+      "polygons": 616,
+      "nonmanifold_edges": 44,
+      "components": 1,
+      "euler": 1,
+      "signed_volume": 0.006170724229531258
+    },
+    {
+      "name": "Surface_V8_Almond_Ear_Ivory_1",
+      "vertices": 481,
+      "polygons": 480,
+      "nonmanifold_edges": 48,
+      "components": 1,
+      "euler": 1,
+      "signed_volume": 0.015678592477226933
+    },
+    {
+      "name": "Ivory_Antler_1",
+      "vertices": 3926,
+      "polygons": 5986,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.11281290175659359
+    },
+    {
+      "name": "Ivory_Whisker_Left",
+      "vertices": 1250,
+      "polygons": 1264,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.01799419018738721
+    },
+    {
+      "name": "Ivory_Whisker_Right",
+      "vertices": 1250,
+      "polygons": 1264,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.016807038259271632
+    },
+    {
+      "name": "Front_Left_Curved_Rounded_Teardrop_Claw_-1",
+      "vertices": 962,
+      "polygons": 984,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.004715589646206962
+    },
+    {
+      "name": "Front_Left_Curved_Rounded_Teardrop_Claw_1",
+      "vertices": 962,
+      "polygons": 984,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.004715589226412228
+    },
+    {
+      "name": "Front_Right_Curved_Rounded_Teardrop_Claw_-1",
+      "vertices": 962,
+      "polygons": 984,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.00471559165401749
+    },
+    {
+      "name": "Front_Right_Curved_Rounded_Teardrop_Claw_1",
+      "vertices": 962,
+      "polygons": 984,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.00471559193641898
+    },
+    {
+      "name": "Hind_Far_Curved_Rounded_Teardrop_Claw_-1",
+      "vertices": 962,
+      "polygons": 984,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.004715597863206689
+    },
+    {
+      "name": "Hind_Far_Curved_Rounded_Teardrop_Claw_1",
+      "vertices": 962,
+      "polygons": 984,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.004715597650311795
+    },
+    {
+      "name": "Hind_Near_Curved_Rounded_Teardrop_Claw_-1",
+      "vertices": 962,
+      "polygons": 984,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.004715595560712396
+    },
+    {
+      "name": "Hind_Near_Curved_Rounded_Teardrop_Claw_1",
+      "vertices": 962,
+      "polygons": 984,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.004715595796385376
+    },
+    {
+      "name": "Mane_Head_Continuous_Back_Base",
+      "vertices": 1082,
+      "polygons": 1120,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 1.5388082693079912
+    },
+    {
+      "name": "Head_Flame_00",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.07612001247994137
+    },
+    {
+      "name": "Head_Flame_01",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.08141992442626056
+    },
+    {
+      "name": "Head_Flame_02",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.08538667328342386
+    },
+    {
+      "name": "Head_Flame_03",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.07110339199275478
+    },
+    {
+      "name": "Head_Flame_04",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.11322508600378514
+    },
+    {
+      "name": "Head_Flame_05",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.07948316737967664
+    },
+    {
+      "name": "Head_Flame_06",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.06827266902982658
+    },
+    {
+      "name": "Head_Flame_07",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.04448772983426194
+    },
+    {
+      "name": "Head_Flame_08",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.02258341921788767
+    },
+    {
+      "name": "Head_Flame_09",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.01388905996715865
+    },
+    {
+      "name": "Head_Flame_10",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.045074771378939366
+    },
+    {
+      "name": "Head_Flame_11",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.03736262791298518
+    },
+    {
+      "name": "Head_Flame_12",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.03189555707146594
+    },
+    {
+      "name": "Head_Flame_13",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.02675750124811863
+    },
+    {
+      "name": "Mane_Dorsal_Continuous_Base",
+      "vertices": 1962,
+      "polygons": 1974,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.09772742679229222
+    },
+    {
+      "name": "Dorsal_Flame_00",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.03230944389119042
+    },
+    {
+      "name": "Dorsal_Flame_01",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.03470053101772932
+    },
+    {
+      "name": "Dorsal_Flame_02",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.031940283756490113
+    },
+    {
+      "name": "Dorsal_Flame_03",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.02904829827353838
+    },
+    {
+      "name": "Dorsal_Flame_04",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.03232836118429715
+    },
+    {
+      "name": "Dorsal_Flame_05",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.03401985329441403
+    },
+    {
+      "name": "Dorsal_Flame_06",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.0303600688498962
+    },
+    {
+      "name": "Dorsal_Flame_07",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.030353522468679676
+    },
+    {
+      "name": "Dorsal_Flame_08",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.034084867420894414
+    },
+    {
+      "name": "Dorsal_Flame_09",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.03319390828855851
+    },
+    {
+      "name": "Dorsal_Flame_10",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.029460854649257396
+    },
+    {
+      "name": "Dorsal_Flame_11",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.03241171947982263
+    },
+    {
+      "name": "Dorsal_Flame_12",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.033533629830986275
+    },
+    {
+      "name": "Dorsal_Flame_13",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.032310062811020314
+    },
+    {
+      "name": "Dorsal_Flame_14",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.02968232069093664
+    },
+    {
+      "name": "Dorsal_Flame_15",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.03276079855379475
+    },
+    {
+      "name": "Dorsal_Flame_16",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.011508958445450376
+    },
+    {
+      "name": "Dorsal_Flame_17",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.010374929688808383
+    },
+    {
+      "name": "Dorsal_Flame_18",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.010088110448925712
+    },
+    {
+      "name": "Dorsal_Flame_19",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.01133100975954865
+    },
+    {
+      "name": "Dorsal_Flame_20",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.01117958382774287
+    },
+    {
+      "name": "Dorsal_Flame_21",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.009980528726281208
+    },
+    {
+      "name": "Dorsal_Flame_22",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.01043363915318418
+    },
+    {
+      "name": "Dorsal_Flame_23",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.01157215767123981
+    },
+    {
+      "name": "Dorsal_Flame_24",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.010773465601068724
+    },
+    {
+      "name": "Dorsal_Flame_25",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.009957600735425577
+    },
+    {
+      "name": "Dorsal_Flame_26",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.010856040302190414
+    },
+    {
+      "name": "Dorsal_Flame_27",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.011643845780540686
+    },
+    {
+      "name": "Tail_Flame_Fan_00",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.12250157140335184
+    },
+    {
+      "name": "Tail_Flame_Fan_01",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.10456188334903384
+    },
+    {
+      "name": "Tail_Flame_Fan_02",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.07493805441386692
+    },
+    {
+      "name": "Tail_Flame_Fan_03",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.07057496300069277
+    },
+    {
+      "name": "Tail_Flame_Fan_04",
+      "vertices": 762,
+      "polygons": 780,
+      "nonmanifold_edges": 0,
+      "components": 1,
+      "euler": 2,
+      "signed_volume": 0.043215252161733574
+    }
+  ],
+  "packed_images": [
+    {
+      "name": "Approved_2D_Concept_SHA256_6184555091c8",
+      "bytes": 1651398,
+      "sha256": "6184555091c80769d6553ae40641dbb44eb6dcc859dd0b8591b7887cc1502e58"
+    }
+  ],
+  "photosimilarity_measured": false,
+  "final_user_appearance_approved": false,
+  "animation_not_started": true
+}

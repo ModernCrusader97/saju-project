@@ -1,0 +1,5 @@
+00:01.843  blend            | Read blend: "D:\Codex\Results\SaJuDragonPhotoReconstructionV8-20261012-Joseph\volume-refinement-v25\SaJu_Dragon_V8_Volume_Refinement_v25.blend"
+{"status": "PASS_STATIC_TECHNICAL_GEOMETRY_REFERENCE_BYTES_ONLY_VISUAL_REVIEW_REQUIRED", "mesh_count": 71, "skin": {"name": "Dragon_Continuous_Skin", "vertices": 488460, "polygons": 976907, "nonmanifold_edges": 0, "components": 1, "euler": 2, "signed_volume": 8.710006085294511}}
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit
