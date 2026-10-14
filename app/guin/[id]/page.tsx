@@ -27,6 +27,7 @@ import { Sliders, PlusCircle } from "lucide-react";
 import { calculateDailyOrbitalWeather } from "@/lib/saju/daily-orbital";
 import CosmicPassportModal from "@/components/planet/CosmicPassportModal";
 import GalaxyPokedexModal from "@/components/planet/GalaxyPokedexModal";
+import GanziMascotImage from "@/components/planet/GanziMascotImage";
 
 function canRenderAddedGuinMap(value: unknown, mapId: string): value is GuinMapData {
   if (!value || typeof value !== "object" || Array.isArray(value)) return false;
@@ -498,7 +499,7 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
                           : "bg-doryeong-ivoryDark text-doryeong-navy border border-doryeong-border"
                       }`}
                     >
-                      {person.name.substring(0, 1)}
+                      <GanziMascotImage dayKey={person.pillars?.dayKey} thumbnail className="mascot-friend-portrait"/>
                     </div>
                     <div>
                       <div className="flex items-center gap-1.5">

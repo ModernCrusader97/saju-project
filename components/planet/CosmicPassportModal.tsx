@@ -5,6 +5,8 @@ import { TEN_STEM_SPIRITS } from "@/lib/planet/spirit-profiles";
 import { fitPassportTitle } from "@/lib/planet/passport-title";
 import { GuinPerson } from "@/lib/saju/types";
 import { X, Sparkles, Download, Share2, Compass, Check, Heart } from "lucide-react";
+import { getGanziMascot } from "@/lib/planet/ganzi-mascot";
+import GanziMascotImage from "./GanziMascotImage";
 
 interface CosmicPassportModalProps {
   person: GuinPerson;
@@ -17,7 +19,6 @@ export default function CosmicPassportModal({
   person,
   isOpen,
   onClose,
-  planetSnapshotUrl,
 }: CosmicPassportModalProps) {
   const [downloading, setDownloading] = useState(false);
   const [copied, setCopied] = useState(false);
@@ -50,6 +51,8 @@ export default function CosmicPassportModal({
   const dayKey = person.pillars?.dayKey || "갑자";
   const stem = dayKey.charAt(0);
   const spirit = TEN_STEM_SPIRITS[stem] || TEN_STEM_SPIRITS["갑"];
+  const mascot = getGanziMascot(person.pillars?.dayKey);
+  const portraitUrl = mascot?.ready ? mascot.src : '';
 
   // 카카오톡 / SNS 은하 초대 링크 복사
   const handleCopyInviteLink = async () => {
@@ -69,6 +72,7 @@ export default function CosmicPassportModal({
   const handleDownloadStoryCard = async () => {
     setDownloading(true);
     try {
+      if (!portraitUrl) throw new Error("Mascot image is not ready.");
       const canvas = document.createElement("canvas");
       canvas.width = 1080;
       canvas.height = 1920;
@@ -103,7 +107,7 @@ export default function CosmicPassportModal({
 
       ctx.fillStyle = "#94A3B8";
       ctx.font = "24px monospace";
-      ctx.fillText("HYPER3D GALAXY EXPLORATION ID", 540, 195);
+      ctx.fillText("ELEMENT ANIMAL MASCOT ID", 540, 195);
 
       // 3. 카드 내부 프레임 (골드 테두리)
       ctx.strokeStyle = "rgba(230, 200, 117, 0.4)";
@@ -114,31 +118,28 @@ export default function CosmicPassportModal({
 
       // 4. 이름 및 사주 간지
       ctx.fillStyle = "#FFFFFF";
-      ctx.fillText(fitPassportTitle(ctx, `${person.name}님의 우주 정령`), 540, 360);
+      ctx.fillText(fitPassportTitle(ctx, `${person.name}님의 마스코트`), 540, 360);
 
       ctx.fillStyle = "#F59E0B";
       ctx.font = "bold 38px sans-serif";
-      ctx.fillText(`[${dayKey}] 일주 · ${spirit.name}`, 540, 430);
+      ctx.fillText(mascot?.title || `[${dayKey}] 일주`, 540, 430);
 
-      // 5. 3D 행성 / 샌드맨 정령 샷 (있을 시 렌더링)
-      if (planetSnapshotUrl) {
+      // 화면과 같은 전체 일주 이미지. 모서리의 귀·손발까지 유지한다.
+      if (portraitUrl) {
         const img = new Image();
         await new Promise<void>((resolve, reject) => {
           img.onload = () => resolve();
-          img.onerror = () => reject(new Error("Passport snapshot could not be loaded."));
-          img.src = planetSnapshotUrl;
+          img.onerror = () => reject(new Error("Mascot portrait could not be loaded."));
+          img.src = portraitUrl;
         });
         ctx.save();
-        ctx.beginPath();
-        ctx.arc(540, 800, 300, 0, Math.PI * 2);
-        ctx.clip();
         ctx.drawImage(img, 240, 500, 600, 600);
         ctx.restore();
 
         ctx.strokeStyle = "#F59E0B";
         ctx.lineWidth = 6;
         ctx.beginPath();
-        ctx.arc(540, 800, 305, 0, Math.PI * 2);
+        ctx.roundRect(232, 492, 616, 616, 12);
         ctx.stroke();
       } else {
         // 대체 비주얼 원
@@ -254,30 +255,14 @@ export default function CosmicPassportModal({
 
           <div>
             <h4 className="text-xl font-bold font-serif text-white">
-              {person.name}님의 3D 사주 정령
+              {person.name}님의 사주 마스코트
             </h4>
             <p className="text-xs text-doryeong-gold font-semibold mt-0.5">
-              [{dayKey}] 일간 · {spirit.name}
+              {mascot?.title || "일주 정보 없음"}
             </p>
           </div>
 
-          {/* 중앙 비주얼 (스냅샷 또는 슬라임 뱃지) */}
-          <div className="relative mx-auto w-40 h-40 rounded-full overflow-hidden border-2 border-doryeong-gold/60 shadow-[0_0_25px_rgba(230,200,117,0.3)] bg-black/60 flex items-center justify-center">
-            {planetSnapshotUrl ? (
-              <img
-                src={planetSnapshotUrl}
-                alt={spirit.name}
-                className="w-full h-full object-cover"
-              />
-            ) : (
-              <div
-                className="w-28 h-28 rounded-full flex items-center justify-center text-3xl shadow-inner font-bold"
-                style={{ backgroundColor: spirit.primaryColor }}
-              >
-                ✨
-              </div>
-            )}
-          </div>
+          <GanziMascotImage dayKey={person.pillars?.dayKey} priority className="mascot-passport-portrait"/>
 
           <div className="space-y-1">
             <span className="text-xs font-bold text-cyan-300">
@@ -310,7 +295,7 @@ export default function CosmicPassportModal({
         <div className="space-y-2.5 pt-1">
           <button
             onClick={handleDownloadStoryCard}
-            disabled={downloading}
+            disabled={downloading || !portraitUrl}
             className="w-full py-3 rounded-2xl bg-gradient-to-r from-doryeong-gold via-amber-400 to-yellow-500 text-doryeong-navy font-bold text-xs flex items-center justify-center gap-2 shadow-lg hover:brightness-105 active:scale-[0.98] transition-all disabled:opacity-50"
           >
             <Download className="h-4 w-4" />

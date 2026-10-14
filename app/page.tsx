@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import Header from '@/components/Header';
@@ -9,6 +9,8 @@ import FortuneCard from '@/components/FortuneCard';
 import type { FortuneResult } from '@/lib/saju/types';
 import { parseSajuInput } from '@/lib/saju/input';
 import styles from './home.module.css';
+import { EXAMPLE_UNIVERSE, readUniverseSession, UNIVERSE_CHANGE_EVENT } from '@/lib/universe-state';
+import GanziMascotImage from '@/components/planet/GanziMascotImage';
 
 const readings = [
   ['overall', '나의 성향'], ['love', '연애와 관계'], ['match', '두 사람의 궁합'],
@@ -18,6 +20,17 @@ const readings = [
 
 export default function Home() {
   const router = useRouter();
+  const [snapshot, setSnapshot] = useState(EXAMPLE_UNIVERSE);
+  useEffect(() => {
+    const restore = () => setSnapshot(readUniverseSession() || EXAMPLE_UNIVERSE);
+    restore();
+    window.addEventListener(UNIVERSE_CHANGE_EVENT, restore);
+    window.addEventListener('popstate', restore);
+    return () => {
+      window.removeEventListener(UNIVERSE_CHANGE_EVENT, restore);
+      window.removeEventListener('popstate', restore);
+    };
+  }, []);
   const [modal, setModal] = useState({ open: false, category: 'overall', title: '나의 성향' });
   const [result, setResult] = useState<FortuneResult | null>(null);
   const [name, setName] = useState('');
@@ -53,7 +66,7 @@ export default function Home() {
         <div>
           <p className="eyebrow">태어난 순간에서 시작하는 이야기</p>
           <h1 id="home-title">나를 닮은 우주</h1>
-          <p className={styles.introText}>나의 사주를 정령과 행성으로 만나보세요.<br />소중한 사람들과는 하나의 은하로 이어져요.</p>
+          <p className={styles.introText}>나의 사주를 원소 동물 마스코트와 행성으로 만나보세요.<br />소중한 사람들과는 하나의 은하로 이어져요.</p>
         </div>
         <a href="#birth-form" className={'primary-button ' + styles.start}>
           나의 우주 만들기 <span aria-hidden="true">↓</span>
@@ -63,11 +76,11 @@ export default function Home() {
       <section className={styles.entries} aria-label="예시 먼저 둘러보기">
         <Link href="/planet" prefetch={false} onNavigate={event => { event.preventDefault(); router.push('/planet'); }} className={styles.entry} aria-labelledby="spirit-entry-title">
           <div className={styles.media + ' ' + styles.jade}>
-            <img src="/spirits/jade-v002/still.png" alt="둥근 옥 정령 B의 정지 예시" width={320} height={320} fetchPriority="high" />
+            <GanziMascotImage dayKey={snapshot.dayKey} priority className="mascot-home-portrait"/>
           </div>
           <div className={styles.entryText}>
-            <span className={styles.example}>예시</span>
-            <h2 id="spirit-entry-title">정령 · 행성 보기</h2>
+            <span className={styles.example}>{snapshot.source === 'example' ? '예시' : '내 일주'} · {snapshot.dayKey}</span>
+            <h2 id="spirit-entry-title">마스코트 · 행성 보기</h2>
             <p>태어난 날을 나만의 모습으로.</p>
             <span className={styles.arrow} aria-hidden="true">→</span>
           </div>

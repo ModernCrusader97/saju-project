@@ -1,7 +1,9 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
-import { TEN_STEM_SPIRITS } from "@/lib/planet/elemental-spirit";
+import { SIXTY_GANZI_KEYS } from "@/lib/planet/theme-library";
+import { collectGanziKeys, getGanziMascot } from "@/lib/planet/ganzi-mascot";
+import GanziMascotImage from "./GanziMascotImage";
 import { GuinPerson } from "@/lib/saju/types";
 import { X, Sparkles, Trophy, CheckCircle2, Lock } from "lucide-react";
 
@@ -17,6 +19,7 @@ export default function GalaxyPokedexModal({
   onClose,
 }: GalaxyPokedexModalProps) {
   const closeButton = useRef<HTMLButtonElement>(null);
+  const dialogRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (!isOpen) return;
@@ -25,8 +28,12 @@ export default function GalaxyPokedexModal({
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
       if (e.key === "Tab") {
-        e.preventDefault();
-        closeButton.current?.focus({ preventScroll: true });
+        const controls = Array.from(dialogRef.current?.querySelectorAll<HTMLButtonElement>('button:not([disabled])') || [])
+          .filter(control => control.getClientRects().length > 0);
+        if (!controls.length) return;
+        const first = controls[0], last = controls[controls.length - 1];
+        if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+        else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
       }
     };
     window.addEventListener("keydown", handleKeyDown);
@@ -38,14 +45,8 @@ export default function GalaxyPokedexModal({
 
   if (!isOpen) return null;
 
-  // 수집된 일간(천간) 추출
-  const collectedStems = new Set<string>();
-  guins.forEach((g) => {
-    const stem = g.pillars?.dayKey?.charAt(0);
-    if (stem) collectedStems.add(stem);
-  });
-
-  const totalCollected = collectedStems.size;
+  const collectedKeys = collectGanziKeys(guins.map(person => person.pillars?.dayKey));
+  const totalCollected = collectedKeys.size;
   const planetCount = guins.length;
 
   // 은하 레벨 계산
@@ -58,7 +59,7 @@ export default function GalaxyPokedexModal({
     level = 3;
     levelName = "Level 3 · 4대 나선팔 대은하 (Grand 4-Arm Galaxy)";
     levelDesc = "황금빛 은하핵과 42,000개 항성이 찬란하게 회전하는 완성형 대은하입니다!";
-    nextGoal = "최고 등급 은하 달성! 우주 도감 10종 완성을 향해 달려보세요.";
+    nextGoal = "최고 등급 은하 달성! 마스코트 도감 60종을 만나보세요.";
   } else if (planetCount >= 3) {
     level = 2;
     levelName = "Level 2 · 2중 나선 은하 (Spiral Galaxy)";
@@ -66,16 +67,14 @@ export default function GalaxyPokedexModal({
     nextGoal = "행성 6개 달성 시 '4대 나선팔 대은하'로 레벨업!";
   }
 
-  const allStems = ["갑", "을", "병", "정", "무", "기", "경", "신", "임", "계"];
-
   return (
     <div
       className="fixed inset-0 z-50 bg-black/85 backdrop-blur-xl flex items-center justify-center p-4 overflow-y-auto animate-in fade-in"
       onClick={onClose}
     >
       <div
-        role="dialog" aria-modal="true" aria-label="60간지 우주 도감"
-        className="relative w-full max-w-lg bg-gradient-to-b from-[#0B132B] via-[#1C2541] to-[#0A0F1D] border border-doryeong-gold/30 rounded-[36px] p-6 text-white shadow-2xl space-y-6 max-h-[90vh] overflow-y-auto"
+        ref={dialogRef} role="dialog" aria-modal="true" aria-label="60간지 우주 도감"
+        className="relative my-auto w-full max-w-lg bg-gradient-to-b from-[#0B132B] via-[#1C2541] to-[#0A0F1D] border border-doryeong-gold/30 rounded-[36px] p-6 text-white shadow-2xl space-y-6 max-h-[calc(100dvh-2rem)] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
         {/* 상단 헤더 */}
@@ -86,10 +85,10 @@ export default function GalaxyPokedexModal({
             </span>
             <div>
               <h3 className="font-serif font-bold text-lg text-doryeong-gold">
-                60간지 우주 도감 (Galaxy Pokedex)
+                60간지 마스코트 도감
               </h3>
               <p className="text-xs text-white/60 font-mono">
-                COLLECTED SPIRITS: {totalCollected} / 10 SPECIES
+                COLLECTED MASCOTS: {totalCollected} / 60
               </p>
             </div>
           </div>
@@ -132,21 +131,22 @@ export default function GalaxyPokedexModal({
           </div>
         </div>
 
-        {/* 10대 오행 정령 컬렉션 그리드 */}
+        {/* 기존 전체 간지 순서를 유지하는 60종 컬렉션 */}
         <div className="space-y-3">
           <h4 className="text-xs font-bold text-white/90 font-serif flex items-center gap-1">
-            <span>나의 은하에 모인 10대 수호 정령</span>
-            <span className="text-doryeong-gold">({totalCollected}/10)</span>
+            <span>나의 은하에 모인 마스코트</span>
+            <span className="text-doryeong-gold">({totalCollected}/60)</span>
           </h4>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
-            {allStems.map((stem) => {
-              const sp = TEN_STEM_SPIRITS[stem];
-              const isDiscovered = collectedStems.has(stem);
+            {SIXTY_GANZI_KEYS.map((pillar) => {
+              const mascot = getGanziMascot(pillar.key)!;
+              const isDiscovered = collectedKeys.has(pillar.key);
 
               return (
                 <div
-                  key={stem}
+                  key={pillar.key}
+                  data-ganzi-card={pillar.key}
                   className={`rounded-2xl p-3 border transition-all text-left flex flex-col justify-between ${
                     isDiscovered
                       ? "bg-white/10 border-doryeong-gold/50 shadow-md"
@@ -156,9 +156,9 @@ export default function GalaxyPokedexModal({
                   <div className="flex items-center justify-between">
                     <span
                       className="text-xs font-bold px-2 py-0.5 rounded-lg text-white font-serif"
-                      style={{ backgroundColor: isDiscovered ? sp.primaryColor : "#334155" }}
+                      style={{ backgroundColor: isDiscovered ? "#527645" : "#334155" }}
                     >
-                      {sp.stem} ({sp.polarity === "yang" ? "양" : "음"})
+                      {pillar.key} ({pillar.hanja})
                     </span>
                     {isDiscovered ? (
                       <CheckCircle2 className="h-3.5 w-3.5 text-emerald-400" />
@@ -167,17 +167,19 @@ export default function GalaxyPokedexModal({
                     )}
                   </div>
 
+                  <GanziMascotImage dayKey={pillar.key} thumbnail className="mascot-collection-portrait"/>
+
                   <div className="my-2">
                     <p className="text-xs font-bold text-white truncate font-serif">
-                      {isDiscovered ? sp.name.split(" ")[0] : "미발견 정령"}
+                      {mascot.title}
                     </p>
                     <p className="text-[10px] text-white/60 truncate">
-                      {isDiscovered ? sp.speciesTitle : "친구 초대 필요"}
+                      {isDiscovered ? "나의 은하에서 만났어요." : "아직 만나지 않은 마스코트"}
                     </p>
                   </div>
 
                   <div className="text-[9.5px] text-doryeong-gold/90 font-mono">
-                    {isDiscovered ? `#${sp.personalityTraits[0]}` : "???"}
+                    {mascot.polarity === "yang" ? "양" : "음"} · {mascot.animalLabel}
                   </div>
                 </div>
               );
