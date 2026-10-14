@@ -1,4 +1,5 @@
 "use client";
+import {useCanvasStatus} from "@/hooks/use-canvas-status";
 
 import React, { useEffect, useRef, useState } from "react";
 import { bindSceneGestures } from "@/lib/planet/scene-gestures";
@@ -39,7 +40,7 @@ export default function PlanetCanvas({
   const presetH = getStemThemePreset(hourKey);
   const presetY = getStemThemePreset(yearKey);
   const [isCloseUp, setIsCloseUp] = useState(false);
-  const [graphicsError, setGraphicsError] = useState<string | null>(null);
+  const {error: graphicsError, setError: setGraphicsError} = useCanvasStatus("planet-canvas");
   const containerRef = useRef<HTMLDivElement>(null);
   const rendererRef = useRef<THREE.WebGLRenderer | null>(null);
   const sceneRef = useRef<THREE.Scene | null>(null);
@@ -264,7 +265,7 @@ export default function PlanetCanvas({
         container.removeChild(dom);
       }
     };
-  }, []);
+  }, [setGraphicsError]);
 
   // 2. 테마 & 70:30 마스크 실시간 업데이트 (메모리 해제 및 초기 렌더 보장)
   useEffect(() => {

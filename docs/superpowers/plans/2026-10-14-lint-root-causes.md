@@ -26,47 +26,54 @@
 
 ### Task 1: Unknown catch types
 Files: app/api/guin/[id]/route.ts, app/api/guin/route.ts, app/api/saju/[id]/route.ts, app/api/saju/[id]/chat/route.ts, components/SajuInputModal.tsx.
-- [ ] Read six existing no-explicit-any failures from baseline.
-- [ ] Replace only catch type annotations with unknown.
-- [ ] Compare erased TypeScript runtime output before/after; require byte equality. Run targeted lint for this rule and types at batch gate.
+- [x] Read six existing no-explicit-any failures from baseline.
+- [x] Replace only catch type annotations with unknown.
+- [x] Compare erased TypeScript runtime output before/after; require byte equality. Run targeted lint for this rule and types at batch gate.
 
 ### Task 2: Calendar literal domain
 File: components/SajuInputModal.tsx.
-- [ ] Read literal options cast failure.
-- [ ] Infer the three options as a readonly literal array; remove any cast.
-- [ ] Require identical erased runtime output and targeted no-explicit-any lint; existing calendar/name fixtures at batch gate.
+- [x] Read literal options cast failure.
+- [x] Infer the three option IDs as literals with per-literal as const; remove the any cast.
+- [x] Require identical erased runtime output and targeted no-explicit-any lint; existing calendar/name fixtures at batch gate.
 
 ### Task 3: JSX quotes
 Files: components/FortuneCard.tsx, app/daily/page.tsx.
-- [ ] Read six unescaped JSX quote failures.
-- [ ] Escape exactly the affected quotes as &quot;.
-- [ ] Compare transpiled JSX string values before/after; require equality, then targeted lint and existing text/calendar regression.
+- [x] Read six unescaped JSX quote failures.
+- [x] Escape exactly the affected quotes as &quot;.
+- [x] Compare transpiled JSX string values before/after; require equality, then targeted lint and existing text/calendar regression.
 
 ### Task 4: Fixed object bindings
 Files: components/planet/FiveElementFormStudy.tsx, PorcelainHeroStudy.tsx, lib/planet/mesh-surface.ts.
-- [ ] Read five prefer-const diagnostics and trace assignment versus object mutation.
-- [ ] Make only the unreassigned bindings const; keep vector mutation and other reassignments unchanged.
-- [ ] Targeted prefer-const lint, typecheck and static geometry/loader fixtures; no rendering or model generation.
+- [x] Read five prefer-const diagnostics and trace assignment versus object mutation.
+- [x] Make only the unreassigned bindings const; keep vector mutation and other reassignments unchanged.
+- [x] Targeted prefer-const lint, typecheck and static geometry/loader fixtures; no rendering or model generation.
 
 ### Task 5: Native QA modules
 Files: scripts/qa/load-ts.cjs, spirit-vertex-colors.cjs and six existing callers found by rg.
-- [ ] Preserve CommonJS originals and read eight no-require-imports failures.
-- [ ] Migrate helper and vertex QA to native .mjs imports, update every current caller, preserve createLoader(mocks, globals) and VM module guard.
-- [ ] Run offline name/session/calendar/detail fixtures and static vertex-color QA, plus targeted lint.
-- [ ] Batch tasks 1–5: typecheck, production build without asset sync, full unchanged lint and immutable archive/WIP guards. Independent read-only review, then normal commit/push and exact remote SHA.
+- [x] Preserve CommonJS originals and read eight no-require-imports failures.
+- [x] Migrate helper and vertex QA to native .mjs imports, update every current caller, preserve createLoader(mocks, globals) and VM module guard.
+- [x] Run offline name/session/calendar/detail fixtures and static vertex-color QA, plus targeted lint.
+- [x] Batch tasks 1–5: typecheck, production build without asset sync, full unchanged lint and immutable archive/WIP guards. Independent read-only review, then normal commit/push and exact remote SHA.
 
 ### Task 6: Internal links
 Files: components/Header.tsx, app/guin/[id]/page.tsx.
-- [ ] Reproduce three native-anchor errors.
-- [ ] Use next/link only for those current internal links.
-- [ ] Native browser navigation, error page and keyboard checks with external requests blocked; retain original unrelated WIP checkout bytes.
+- [x] Reproduce three native-anchor errors.
+- [x] Use next/link only for those current internal links.
+- [x] Native browser navigation, error page and keyboard checks with external requests blocked; retain original unrelated WIP checkout bytes.
 
 ### Task 7: Renderer status lifecycle
 Files: the five diagnosed components/planet renderer study/canvas components.
-- [ ] Trace seven effect failures and resource ownership before selecting a change.
-- [ ] Separate external canvas status and reduced-motion subscription from redundant synchronous effect resets; preserve cancellation, failure, retry and ready states.
-- [ ] Add focused native DOM lifecycle regression before implementation, deliberately fail old code for the redundant-reset behavior, then verify retry/selection/cleanup; no WebGL draws or dragon/model changes.
+- [x] Trace seven effect failures and resource ownership before selecting a change.
+- [x] Separate external canvas status and reduced-motion subscription from redundant synchronous effect resets; preserve cancellation, failure, retry and ready states.
+- [x] Use existing effect lint failures as RED and native DOM/store regressions to verify retry/selection/cleanup; reduced-motion updates fail old code and pass new code. No WebGL draws or dragon/model changes.
 
 ### Historical scope decision
-- [ ] Keep all 503 original evidence diagnostics and hashes visible. Scope routing remains pending user preference; do not change the global ignore list or rewrite archives without resolving the requested interpretation.
-- [ ] Preserve any final under-five bundle as WIP and continue only genuine remaining causes.
+- [x] Keep all 503 original evidence diagnostics and hashes visible. User reaffirmation authorized purpose-based routing: audit immutable docs/qa with full SHA/inventory and optional fresh unchanged-rule lint, verify the app JS/TS graph, and lint maintained product/scripts separately. Original ESLint configuration and rules are unchanged.
+- [x] Preserve any under-five bundle as WIP; a subsequently reproduced real navigation build failure supplies the fifth cause for the second bundle, subject to all final gates.
+
+### Task 8: Production navigation module exports
+- [x] Native Link inspection reproduced missing navigateClientSide/prefetch functions in production; preserve failed chunk, screenshots and full diagnostics.
+- [x] Reject the unsuccessful minifyInternalExports trial. Use the typed client-only Vite build Plugin options hook to preserveEntrySignatures strict, retaining the dynamic navigation module facade. Server, auth, hosting, dependency versions and routes are unchanged.
+- [ ] Final native pointer/keyboard navigation, typecheck, build, product lint, original WIP/archive/asset hashes and independent read-only review; then normal second-five commit/push and exact remote SHA.
+
+**Accounting:** First five causes committed at 1a2a83281f6725d43eb134192061a77883f23df2. Second five causes: external renderer status ownership, reduced-motion defaults, internal client navigation, immutable archive/product audit boundary, and production navigation export preservation. Historical 503 diagnostics remain intact; current source errors are corrected, not suppressed.

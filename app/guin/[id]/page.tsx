@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 import { readApiResponse } from "@/lib/http-client";
 
@@ -278,9 +279,9 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
     return (
       <div className="min-h-screen p-6 text-center">
         <p className="text-sm text-doryeong-textMuted">{loadError || "지도를 찾을 수 없습니다."}</p>
-        <a href="/guin" className="mt-4 inline-block text-xs text-doryeong-navy underline">
+        <Link href="/guin" className="mt-4 inline-block text-xs text-doryeong-navy underline">
           새 은하 만들기
-        </a>
+        </Link>
       </div>
     );
   }
@@ -292,13 +293,13 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
       <div className="px-5 pt-2 space-y-6">
         <div className="galaxy-heading"><p className="eyebrow">PERSONAL UNIVERSE / 03</p><h1>{mapData.ownerName}의 갤럭시</h1><p>행성을 선택하면 함께하는 사람의 이야기를 볼 수 있어요. 관계 점수는 기존 시연용 해석입니다.</p></div>
         <div className="flex items-center justify-between">
-          <a
+          <Link
             href="/guin"
             className="flex items-center gap-1 text-xs text-doryeong-textMuted hover:text-doryeong-navy font-semibold"
           >
             <ArrowLeft className="h-3.5 w-3.5" />
             <span>지도 목록</span>
-          </a>
+          </Link>
           <span className="text-[11px] text-doryeong-gold font-bold">
             은하 속 인연: {mapData.guins.length}개 행성
           </span>

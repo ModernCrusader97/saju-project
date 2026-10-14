@@ -1,4 +1,5 @@
 "use client";
+import {useCanvasStatus} from "@/hooks/use-canvas-status";
 import {useEffect,useRef,useState} from 'react';
 import * as THREE from 'three';
 import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader.js';
@@ -15,11 +16,12 @@ const expressionBindings={wood:woodBindings,fire:fireBindings,earth:earthBinding
 export default function FiveElementFormStudy(){
  const [expression,setExpression]=useState<Expression>('calm');const expressionRef=useRef<Expression>('calm'),blinkRequest=useRef(false);
  useEffect(()=>{expressionRef.current=expression},[expression]);
- const [selected,setSelected]=useState(4),[ready,setReady]=useState(false),[error,setError]=useState(''),[reset,setReset]=useState(0),[auto,setAuto]=useState(false);
+ const [selected,setSelected]=useState(4),[reset,setReset]=useState(0),[auto,setAuto]=useState(false);
  const mount=useRef<HTMLDivElement>(null),canvas=useRef<HTMLCanvasElement|null>(null),spin=useRef(false),reaction=useRef(false);const form=forms[selected];
+ const {ready,error,setReady,setError}=useCanvasStatus(JSON.stringify([form.id,reset]));
  useEffect(()=>{spin.current=auto},[auto]);
  useEffect(()=>{
-  const target=mount.current;if(!target)return;setReady(false);setError('');reaction.current=false;
+  const target=mount.current;if(!target)return;reaction.current=false;
   let renderer:THREE.WebGLRenderer;try{renderer=new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true})}catch{setError('이 브라우저에서 3D를 시작하지 못했어요. 아래 렌더 이미지로 비교할 수 있습니다.');return}
   renderer.setPixelRatio(Math.min(window.devicePixelRatio,1.5));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=.9;
   const element=renderer.domElement;canvas.current=element;target.replaceChildren(element);element.style.cssText='display:block;width:100%;height:100%;touch-action:pan-y';element.setAttribute('aria-label',`${form.name} 오행 정령 형태의 3D 시제품`);
@@ -39,7 +41,7 @@ export default function FiveElementFormStudy(){
    if(t>=0&&t<1.6){const wave=Math.sin(t*12)*Math.exp(-t*3),fade=Math.sin(Math.PI*Math.min(t/1.6,1));if(form.id==='water'){const y=1+.09*wave;body.scale.set(1/Math.sqrt(y),y,1/Math.sqrt(y));body.rotation.z=.06*wave;}else if(form.id==='fire'){body.scale.set(1-.035*wave,1+.08*wave,1-.035*wave);body.rotation.z=.04*wave;}else if(form.id==='wood'){body.rotation.z=.1*wave;}else if(form.id==='earth'){body.position.y=.05*fade;body.rotation.z=.025*wave;}else{body.rotation.z=.07*wave;}}
    if(!document.hidden&&(dirty||spin.current||(t>=0&&t<1.7))){renderer.render(scene,camera);dirty=false}frame=requestAnimationFrame(draw)};frame=requestAnimationFrame(draw);
   return()=>{active=false;cancelAnimationFrame(frame);observer.disconnect();element.removeEventListener('pointerdown',down);element.removeEventListener('pointermove',move);element.removeEventListener('pointerup',up);element.removeEventListener('pointercancel',up);element.removeEventListener('webglcontextlost',lost);dispose(body);floor.geometry.dispose();floor.material.dispose();environment.dispose();renderer.dispose();renderer.forceContextLoss();target.replaceChildren();canvas.current=null};
- },[selected,reset,form.id,form.name]);
+ },[selected,reset,form.id,form.name,setReady,setError]);
  const capture=()=>{if(!canvas.current)return;try{const a=document.createElement('a');a.href=canvas.current.toDataURL('image/png');a.download=`element-${form.id}.png`;a.click()}catch{setError('이미지를 저장하지 못했어요.')}};
  return <section className="material-study"><div className="material-study-heading"><p>FIVE ELEMENTS · FORM STUDY</p><h2>다섯 가지 원소, 다섯 가지 몸</h2><span>사람의 몸을 고집하지 않는 조형 탐색입니다. 형태와 재질을 함께 비교하세요.</span></div><div className="material-pair-tabs">{forms.map((f,i)=><button key={f.id} aria-pressed={selected===i} onClick={()=>setSelected(i)}>{f.name}</button>)}</div><div className="material-study-toolbar"><span style={{fontSize:16}}>{form.name} · {form.note}</span><div><button disabled={!ready} onClick={()=>{reaction.current=true}}>살짝 움직이기</button><button onClick={()=>{setExpression('calm');setReset(v=>v+1)}}>초기화</button><button disabled={!ready} onClick={capture}>이미지 저장</button></div></div><label className="material-accent-toggle"><input type="checkbox" checked={auto} onChange={e=>setAuto(e.target.checked)}/>천천히 회전</label>{<div className="material-study-toolbar"><div>{(['calm','curious','warm'] as const).map((v,i)=><button key={v} aria-pressed={expression===v} onClick={()=>setExpression(v)}>{['차분','호기심','미소'][i]}</button>)}</div><button disabled={!ready} onClick={()=>{blinkRequest.current=true}}>눈 깜박이기</button></div>}<div ref={mount} style={{height:'min(65vh,580px)',minHeight:360,borderRadius:20,overflow:'hidden'}}/>{!ready&&!error&&<p>모델을 불러오는 중입니다.</p>}{error&&<p role="alert" className="material-error">{error}</p>}<p className="material-study-note">시제품입니다. 움직임은 간단한 형태 반응이며 물리 시뮬레이션이 아닙니다. 캐릭터 표현만 탐색하며 사주 계산은 바꾸지 않습니다.</p><details className="material-reference" open={!!error}><summary>Blender 렌더 비교</summary><img src="/images/five-element-lineup-v1.png" alt="목·화·토·금·수의 서로 다른 비인간형 조형과 재질을 비교한 Blender 렌더" loading="lazy"/></details></section>;
 }
