@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState, useEffect, useLayoutEffect } from "react";
 import { TEN_STEM_SPIRITS } from "@/lib/planet/spirit-profiles";
 import { fitPassportTitle } from "@/lib/planet/passport-title";
 import { GuinPerson } from "@/lib/saju/types";
@@ -23,8 +23,23 @@ export default function CosmicPassportModal({
   const [downloading, setDownloading] = useState(false);
   const [copied, setCopied] = useState(false);
   const [copyError, setCopyError] = useState("");
+  const [copyContext, setCopyContext] = useState({isOpen, personId: person.id, personName: person.name});
+  const copyRequest = useRef(0);
+  const copyFeedbackTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
   const cardRef = useRef<HTMLDivElement>(null);
   const dialogRef = useRef<HTMLDivElement>(null);
+
+  if (copyContext.isOpen !== isOpen || copyContext.personId !== person.id || copyContext.personName !== person.name) {
+    setCopyContext({isOpen, personId: person.id, personName: person.name});
+    setCopied(false);
+    setCopyError("");
+  }
+
+  useLayoutEffect(() => () => {
+    copyRequest.current += 1;
+    clearTimeout(copyFeedbackTimer.current);
+    copyFeedbackTimer.current = undefined;
+  }, [isOpen, person.id, person.name]);
 
   useEffect(() => {
     if (!isOpen) return;
@@ -57,12 +72,22 @@ export default function CosmicPassportModal({
   // 카카오톡 / SNS 은하 초대 링크 복사
   const handleCopyInviteLink = async () => {
     const url = `${window.location.origin}/guin?join=true&from=${encodeURIComponent(person.name)}`;
+    const request = ++copyRequest.current;
+    clearTimeout(copyFeedbackTimer.current);
+    copyFeedbackTimer.current = undefined;
+    setCopied(false);
     setCopyError("");
     try {
       await navigator.clipboard.writeText(url);
+      if (copyRequest.current !== request) return;
       setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
+      copyFeedbackTimer.current = setTimeout(() => {
+        if (copyRequest.current !== request) return;
+        copyFeedbackTimer.current = undefined;
+        setCopied(false);
+      }, 2000);
     } catch {
+      if (copyRequest.current !== request) return;
       setCopied(false);
       setCopyError("초대 링크를 복사하지 못했어요. 다시 시도해 주세요.");
     }

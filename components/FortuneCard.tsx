@@ -49,7 +49,7 @@ export default function FortuneCard({ fortune }: FortuneCardProps) {
       {/* 2. 만세력 사주 원국표 (4주 8자) */}
       <div className="rounded-[24px] bg-white border border-doryeong-border p-5 shadow-sm">
         <div className="flex items-center justify-between mb-3">
-          <h3 className="font-serif text-base font-bold text-doryeong-navy">
+          <h3 className="min-w-0 font-serif text-base font-bold text-doryeong-navy">
             {a.name}님의 사주팔자 (四柱)
           </h3>
           <span className="text-xs text-doryeong-textMuted">

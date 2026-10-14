@@ -3,7 +3,7 @@
 import { readApiResponse } from "@/lib/http-client";
 
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useId } from "react";
 import { useRouter } from "next/navigation";
 import { X, Sparkles } from "lucide-react";
 
@@ -25,6 +25,7 @@ export default function SajuInputModal({
   categoryTitle = "내 사주 풀이",
   onSuccess,
 }: SajuInputModalProps) {
+  const formId = useId();
   const router = useRouter();
   
   const [name, setName] = useState("");
@@ -195,15 +196,16 @@ export default function SajuInputModal({
             </p>
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className="overflow-y-auto px-6 py-4 space-y-4">
+          <form onSubmit={handleSubmit} className="overflow-y-auto overscroll-y-contain px-6 py-4 space-y-4">
             {/* 이름 & 성별 */}
             <div className="grid grid-cols-2 gap-3">
               <div>
-                <label className="block text-xs font-bold text-doryeong-textDark mb-1">
+                <label htmlFor={`${formId}-name`} className="block text-xs font-bold text-doryeong-textDark mb-1">
                   이름 (또는 닉네임)
                 </label>
                 <input
                   type="text"
+                  id={`${formId}-name`}
                   required
                   placeholder="예: 홍길동"
                   value={name}
@@ -288,6 +290,7 @@ export default function SajuInputModal({
                     type="number"
                     required
                     min="1900"
+                    aria-label="태어난 연도"
                     max={calendarType === "solar" ? 2100 : 2050}
                     value={birthYear}
                     onChange={(e) => setBirthYear(e.target.value)}
@@ -301,6 +304,7 @@ export default function SajuInputModal({
                     required
                     min="1"
                     max="12"
+                    aria-label="태어난 월"
                     value={birthMonth}
                     onChange={(e) => setBirthMonth(e.target.value)}
                     className="w-full text-center text-sm font-semibold focus:outline-none"
@@ -313,6 +317,7 @@ export default function SajuInputModal({
                     required
                     min="1"
                     max={calendarType === "solar" ? 31 : 30}
+                    aria-label="태어난 일"
                     value={birthDay}
                     onChange={(e) => setBirthDay(e.target.value)}
                     className="w-full text-center text-sm font-semibold focus:outline-none"
@@ -325,7 +330,7 @@ export default function SajuInputModal({
             {/* 태어난 시간 */}
             <div>
               <div className="flex items-center justify-between mb-1">
-                <label className="text-xs font-bold text-doryeong-textDark">
+                <label htmlFor={`${formId}-hour`} className="text-xs font-bold text-doryeong-textDark">
                   태어난 시간
                 </label>
                 <label className="flex items-center gap-1.5 cursor-pointer text-xs text-doryeong-textMuted">
@@ -341,6 +346,7 @@ export default function SajuInputModal({
               {!isUnknownTime ? (
                 <div>
                   <select
+                    id={`${formId}-hour`}
                     value={birthHour}
                     onChange={(e) => setBirthHour(e.target.value)}
                     className="w-full px-3.5 py-2.5 rounded-xl border border-doryeong-border bg-white text-sm focus:outline-none focus:border-doryeong-navy"
@@ -362,10 +368,11 @@ export default function SajuInputModal({
 
             {/* 맞춤 질문 (선택) */}
             <div>
-              <label className="block text-xs font-bold text-doryeong-textDark mb-1">
+              <label htmlFor={`${formId}-question`} className="block text-xs font-bold text-doryeong-textDark mb-1">
                 함께 살펴보고 싶은 이야기 (선택)
               </label>
               <textarea
+                id={`${formId}-question`}
                 rows={2}
                 placeholder="예: 올해 이직을 준비 중인데 흐름이 궁금해요."
                 value={customQuestion}
