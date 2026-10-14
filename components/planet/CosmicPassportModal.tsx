@@ -4,7 +4,7 @@ import React, { useRef, useState, useEffect } from "react";
 import { TEN_STEM_SPIRITS } from "@/lib/planet/spirit-profiles";
 import { fitPassportTitle } from "@/lib/planet/passport-title";
 import { GuinPerson } from "@/lib/saju/types";
-import { X, Sparkles, Download, Share2, Compass, Check, Heart } from "lucide-react";
+import { X, Sparkles, Download, Share2, Check, Heart } from "lucide-react";
 import { getGanziMascot } from "@/lib/planet/ganzi-mascot";
 import GanziMascotImage from "./GanziMascotImage";
 

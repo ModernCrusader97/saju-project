@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { analyzeSaju } from "@/lib/saju/manse";
 import { parseJsonBody, parseSajuInput, SajuInputError } from "@/lib/saju/input";
 import { db, DataStoreError } from "@/lib/db/store";
-import { GuinMapData, GuinPerson } from "@/lib/saju/types";
+import { GuinMapData } from "@/lib/saju/types";
 
 export async function POST(req: NextRequest) {
   try {

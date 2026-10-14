@@ -11,7 +11,6 @@ import { GuinMapData, GuinPerson } from "@/lib/saju/types";
 import {
   Compass,
   Sparkles,
-  Share2,
   Users,
   Copy,
   Check,
@@ -19,12 +18,11 @@ import {
   ArrowLeft,
   Trophy,
   Download,
-  Flame,
 } from "lucide-react";
 
 import { useParams } from "next/navigation";
 const GalaxyCanvas = lazy(() => import("@/components/planet/GalaxyCanvas"));
-import { Sliders, PlusCircle } from "lucide-react";
+import { PlusCircle } from "lucide-react";
 import { calculateDailyOrbitalWeather } from "@/lib/saju/daily-orbital";
 import CosmicPassportModal from "@/components/planet/CosmicPassportModal";
 import GalaxyPokedexModal from "@/components/planet/GalaxyPokedexModal";

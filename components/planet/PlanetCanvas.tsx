@@ -56,7 +56,6 @@ export default function PlanetCanvas({
 
   // Interaction state
   const isDragging = useRef(false);
-  const previousMousePosition = useRef({ x: 0, y: 0 });
   const isAutoRotatingRef = useRef(true);
   const [isAutoRotating, setIsAutoRotating] = useState(true);
   const motionTimeRef = useRef(0);

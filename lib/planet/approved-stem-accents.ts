@@ -22,7 +22,6 @@ export interface StemAccents {
 const TAU = Math.PI * 2;
 const GOLDEN_ANGLE = Math.PI * (3 - Math.sqrt(5));
 const Y_AXIS = new THREE.Vector3(0, 1, 0);
-const Z_AXIS = new THREE.Vector3(0, 0, 1);
 const fract = (value: number): number => value - Math.floor(value);
 const hash = (seed: number): number => fract(Math.sin(seed * 127.1 + 311.7) * 43758.5453123);
 

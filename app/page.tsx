@@ -48,7 +48,7 @@ export default function Home() {
       parseSajuInput({ name: name.trim() || '나', gender: 'male', birthYear: y, birthMonth: m,
         birthDay: d, birthHour: unknown ? undefined : h, isUnknownTime: unknown, calendarType: 'solar' });
       const query = new URLSearchParams({ name: name.trim() || '나', y, m, d, h, unknown: String(unknown) });
-      window.location.assign('/planet?' + query.toString());
+      router.push('/planet?' + query.toString());
     } catch (error) {
       setError(error instanceof Error ? error.message : '입력을 확인해주세요.');
     }

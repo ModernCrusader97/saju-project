@@ -50,18 +50,15 @@ export default function GalaxyPokedexModal({
   const planetCount = guins.length;
 
   // 은하 레벨 계산
-  let level = 1;
   let levelName = "Level 1 · 성간 원시 성단 (Proto Cluster)";
   let levelDesc = "나의 중심별과 인연들이 태동하는 작은 성단입니다.";
   let nextGoal = "행성 3개 수집 시 '나선 은하'로 진화!";
 
   if (planetCount >= 6) {
-    level = 3;
     levelName = "Level 3 · 4대 나선팔 대은하 (Grand 4-Arm Galaxy)";
     levelDesc = "황금빛 은하핵과 42,000개 항성이 찬란하게 회전하는 완성형 대은하입니다!";
     nextGoal = "최고 등급 은하 달성! 마스코트 도감 60종을 만나보세요.";
   } else if (planetCount >= 3) {
-    level = 2;
     levelName = "Level 2 · 2중 나선 은하 (Spiral Galaxy)";
     levelDesc = "중력과 인연선이 균형을 이루며 유려하게 회전하는 나선은하입니다.";
     nextGoal = "행성 6개 달성 시 '4대 나선팔 대은하'로 레벨업!";

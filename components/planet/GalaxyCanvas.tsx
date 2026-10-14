@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef, useState, useCallback, useSyncExternalStore, useId } from "react";
+import React, { useEffect, useEffectEvent, useRef, useState, useCallback, useSyncExternalStore, useId } from "react";
 import { createGraphicsErrorStore } from "@/lib/planet/graphics-error-store";
 import { bindSceneGestures } from "@/lib/planet/scene-gestures";
 import * as THREE from "three";
@@ -140,7 +140,6 @@ export default function GalaxyCanvas({
   // Camera Orbit State
   const cameraAngle = useRef({ theta: 0.45, phi: 0.52, radius: 22.0 });
   const isDragging = useRef(false);
-  const prevMouse = useRef({ x: 0, y: 0 });
 
   // Camera Dynamic Fly-To & Realtime Tracking Target
   const trackedPlanetIdRef = useRef<string | null>(null);
@@ -185,6 +184,9 @@ export default function GalaxyCanvas({
     relationTitle: string;
     affinity: number;
   } | null>(null);
+  const notifyGestureSelection = useEffectEvent((person: GuinPerson) => {
+    onSelectPerson?.(person);
+  });
 
   useEffect(() => {
     if (!showPillarInspectModal) return;
@@ -206,6 +208,7 @@ export default function GalaxyCanvas({
   useEffect(() => {
     if (!containerRef.current) return;
     const container = containerRef.current;
+    const toastTimers = toastTimersRef.current;
     const width = container.clientWidth || 360;
     const height = container.clientHeight || 480;
     const low = window.matchMedia("(max-width: 640px), (pointer: coarse)").matches;
@@ -315,7 +318,7 @@ export default function GalaxyCanvas({
         planetMeshesRef.current.forEach((val) => {
           if (val.mesh === hit || val.hitbox === hit || val.group.children.includes(hit)) {
             setActivePerson(val.node.person);
-            if (onSelectPerson) onSelectPerson(val.node.person);
+            notifyGestureSelection(val.node.person);
 
             // 실시간 궤도 추적 락온
             trackPlanet(val.node.person.id, val.node.isOwner);
@@ -473,7 +476,7 @@ export default function GalaxyCanvas({
 
     return () => {
       cancelAnimationFrame(animationFrameId);
-      toastTimersRef.current.forEach(clearTimeout);
+      toastTimers.forEach(clearTimeout);
       window.removeEventListener("resize", handleResize);
       resizeObserver.disconnect();
       reducedMotion.removeEventListener("change", updateMotionPreference);

@@ -4,7 +4,8 @@ import { readApiResponse } from "@/lib/http-client";
 
 
 import React, { useState, useEffect, useRef } from "react";
-import { X, Sparkles, Loader2 } from "lucide-react";
+import { useRouter } from "next/navigation";
+import { X, Sparkles } from "lucide-react";
 
 import { HOUR_PERIODS } from "@/lib/saju/input";
 import { FortuneResult } from "@/lib/saju/types";
@@ -24,6 +25,7 @@ export default function SajuInputModal({
   categoryTitle = "내 사주 풀이",
   onSuccess,
 }: SajuInputModalProps) {
+  const router = useRouter();
   
   const [name, setName] = useState("");
   const [gender, setGender] = useState<"male" | "female">("male");
@@ -126,13 +128,13 @@ export default function SajuInputModal({
         if (onSuccess) {
           onSuccess(data.fortune);
         } else {
-          window.location.assign(`/saved?id=${data.fortune.id}`);
+          router.push(`/saved?${new URLSearchParams({ id: data.fortune.id })}`);
         }
         onClose();
       } else {
         alert(data.error || "풀이 중 문제가 발생했습니다.");
       }
-    } catch (err: unknown) {
+    } catch {
       alert("네트워크 오류가 발생했습니다.");
     } finally {
       clearTimeout(timer);

@@ -4,12 +4,14 @@ import { readApiResponse } from "@/lib/http-client";
 
 
 import React, { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 import { calculateUniverse, EXAMPLE_UNIVERSE, readUniverseSession, saveGalaxyUniverse, UNIVERSE_CHANGE_EVENT } from "@/lib/universe-state";
 
 import Header from "@/components/Header";
 import { Compass, Sparkles, Share2 } from "lucide-react";
 
 export default function GuinPage() {
+  const router = useRouter();
   
   const [name, setName] = useState("");
   const [birthYear, setBirthYear] = useState("1996");
@@ -67,7 +69,7 @@ export default function GuinPage() {
       if (res.ok && data.success && data.guinMap
         && typeof data.guinMap.id === "string" && /^[a-zA-Z0-9_-]+$/.test(data.guinMap.id)) {
         saveGalaxyUniverse(next, data.guinMap);
-        window.location.assign(`/guin/${data.guinMap.id}`);
+        router.push(`/guin/${data.guinMap.id}`);
       } else {
         alert(data.error || "지도 생성 실패");
       }

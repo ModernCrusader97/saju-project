@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { FortuneResult } from "@/lib/saju/types";
-import { Sparkles, MessageCircle, Heart, Compass, ShieldCheck } from "lucide-react";
+import { MessageCircle, Compass } from "lucide-react";
 import AskDoryeongModal from "./AskDoryeongModal";
 
 interface FortuneCardProps {

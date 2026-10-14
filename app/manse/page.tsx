@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 import { analyzeSaju } from "@/lib/saju/manse";
 import { parseSajuInput } from "@/lib/saju/input";
 import { SajuAnalysis, Gender } from "@/lib/saju/types";
-import { BookOpen, Sparkles, User, Clock, Compass } from "lucide-react";
+import { BookOpen } from "lucide-react";
 
 const ELEMENT_COLORS: Record<string, { bg: string; text: string; bar: string; name: string }> = {
   wood: { bg: "bg-emerald-50 border-emerald-300 text-emerald-800", text: "text-emerald-700", bar: "bg-emerald-500", name: "목(木)" },
