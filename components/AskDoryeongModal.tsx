@@ -98,7 +98,7 @@ function Conversation({
   }, [isOpen, fortune.id, fortune.analysis.name, historyToken]);
 
   useEffect(() => {
-    scrollRef.current?.scrollIntoView({ behavior: "smooth" });
+    scrollRef.current?.scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
   }, [messages, loading]);
 
   useEffect(() => {
@@ -235,7 +235,7 @@ function Conversation({
               }`}
             >
               <div
-                className={`max-w-[85%] rounded-2xl px-4 py-3 text-sm leading-relaxed ${
+                className={`max-w-[85%] break-words rounded-2xl px-4 py-3 text-sm leading-relaxed ${
                   m.role === "user"
                     ? "bg-doryeong-navy text-white rounded-br-none shadow-sm"
                     : "bg-white text-doryeong-textDark border border-doryeong-border rounded-bl-none shadow-sm font-serif"

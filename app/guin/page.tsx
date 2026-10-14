@@ -117,7 +117,7 @@ export default function GuinPage() {
                 <Share2 className="h-4 w-4 text-doryeong-gold shrink-0 mt-0.5" />
                 <p>
                   <strong className="text-doryeong-navy">관계 더하기: </strong>
-                  생성된 지도의 링크를 단톡방이나 인스타 스토리에 공유해보세요. 친구가 생일을 입력하면 내 은하에 친구의 행성이 채워집니다.
+                  내 지도에서 친구의 생년월일을 직접 입력해 관계를 살펴보세요. 지도는 현재 본인만 볼 수 있습니다.
                 </p>
               </div>
             </div>

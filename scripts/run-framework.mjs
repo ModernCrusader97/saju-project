@@ -11,6 +11,7 @@ if (managedLinux && command === "build") {
     fileURLToPath(new URL("./build-verified.sh", import.meta.url)), ...args,
   ], { stdio: "inherit" });
   if (result.error) throw result.error;
+  if (result.signal) process.kill(process.pid, result.signal);
   process.exit(result.status ?? 1);
 }
 

@@ -196,7 +196,11 @@ export default function SajuInputModal({
             </p>
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className="overflow-y-auto overscroll-y-contain px-6 py-4 space-y-4">
+          <form onSubmit={handleSubmit}
+            onKeyDown={(event) => {
+              if (event.key === "Enter" && event.nativeEvent.isComposing) event.preventDefault();
+            }}
+            className="overflow-y-auto overscroll-y-contain px-6 py-4 space-y-4">
             {/* 이름 & 성별 */}
             <div className="grid grid-cols-2 gap-3">
               <div>
