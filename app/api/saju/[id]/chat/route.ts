@@ -27,7 +27,7 @@ export async function POST(
     await db.addChatExchange(id, cleanQuestion, reply);
 
     return NextResponse.json({ success: true, reply });
-  } catch (error: any) {
+  } catch (error: unknown) {
     if (error instanceof DataStoreError) return NextResponse.json({error:error.message},{status:error.status});
     if (error instanceof SajuInputError) {
       return NextResponse.json({ error: error.message }, { status: error.status });

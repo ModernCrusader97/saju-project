@@ -1,3 +1,4 @@
+import { createLoader } from './load-ts.mjs';
 // Actual built animation and WebGL. Simulate every frame; native draw/clear
 // runs at minute samples during long simulations. All uniform uploads stay native.
 import assert from 'node:assert/strict';
@@ -153,7 +154,7 @@ const clientFiles = (await walk(path.join(root, 'dist/client'))).sort();
 const fingerprint = createHash('sha256');
 for (const file of clientFiles) fingerprint.update(path.relative(root, file)).update(await fs.readFile(file));
 const builtClientFingerprint = fingerprint.digest('hex');
-const nodesFrom = map => require('./scripts/qa/load-ts.cjs').createLoader({ three: THREE }).load('lib/planet/galaxy-helper.ts').buildGalaxyNodes(map.guins);
+const nodesFrom = map => createLoader({ three: THREE }).load('lib/planet/galaxy-helper.ts').buildGalaxyNodes(map.guins);
 const bodies = state => state.states.filter(draw => {
   const matrix = draw.nativeModelMatrix; if (!matrix) return false;
   const scale = Math.hypot(matrix[0], matrix[1], matrix[2]);

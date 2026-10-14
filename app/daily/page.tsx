@@ -190,7 +190,7 @@ export default function DailyPage() {
             <div className="text-xs">
               <span className="font-bold text-doryeong-navy block">오늘의 마음가짐 처방</span>
               <p className="text-doryeong-textMuted text-[11.5px] mt-0.5 font-serif leading-relaxed">
-                "{elementInfo.mindset}"
+                &quot;{elementInfo.mindset}&quot;
               </p>
             </div>
           </div>

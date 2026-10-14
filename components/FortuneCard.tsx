@@ -41,7 +41,7 @@ export default function FortuneCard({ fortune }: FortuneCardProps) {
             {fortune.title}
           </h2>
           <p className="mt-3 text-sm text-white/80 leading-relaxed font-serif">
-            "{fortune.summary}"
+            &quot;{fortune.summary}&quot;
           </p>
         </div>
       </div>
@@ -226,7 +226,7 @@ export default function FortuneCard({ fortune }: FortuneCardProps) {
           <div className="p-3 rounded-xl bg-doryeong-ivory border border-doryeong-border col-span-2">
             <span className="font-bold text-doryeong-textMuted block">마음가짐 처방</span>
             <span className="font-semibold text-doryeong-navy mt-1 block">
-              "{fortune.luckyAdvice.mindset}"
+              &quot;{fortune.luckyAdvice.mindset}&quot;
             </span>
           </div>
         </div>

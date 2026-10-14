@@ -18,7 +18,7 @@ const zones = ['Etc/UTC', 'Asia/Seoul', 'America/New_York', 'Europe/Berlin',
 const stems = ['갑', '을', '병', '정', '무', '기', '경', '신', '임', '계'];
 const branches = ['자', '축', '인', '묘', '진', '사', '오', '미', '신', '유'];
 const require = createRequire(import.meta.url);
-const { createLoader } = require('./load-ts.cjs');
+import { createLoader } from './load-ts.mjs';
 const plain = value => JSON.parse(JSON.stringify(value));
 const key = (year, month, day) => `${year}-${month}-${day}`;
 

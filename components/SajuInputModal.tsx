@@ -132,7 +132,7 @@ export default function SajuInputModal({
       } else {
         alert(data.error || "풀이 중 문제가 발생했습니다.");
       }
-    } catch (err: any) {
+    } catch (err: unknown) {
       alert("네트워크 오류가 발생했습니다.");
     } finally {
       clearTimeout(timer);
@@ -249,15 +249,15 @@ export default function SajuInputModal({
               </label>
               <div className="grid grid-cols-3 gap-2 bg-doryeong-ivoryDark p-1 rounded-xl text-xs font-bold">
                 {[
-                  { id: "solar", label: "양력" },
-                  { id: "lunar", label: "음력 (평달)" },
-                  { id: "leap-lunar", label: "음력 (윤달)" },
+                  { id: "solar" as const, label: "양력" },
+                  { id: "lunar" as const, label: "음력 (평달)" },
+                  { id: "leap-lunar" as const, label: "음력 (윤달)" },
                 ].map((item) => (
                   <button
                     key={item.id}
                     type="button"
                     aria-pressed={calendarType === item.id}
-                    onClick={() => setCalendarType(item.id as any)}
+                    onClick={() => setCalendarType(item.id)}
                     className={`py-1.5 rounded-lg transition-all ${
                       calendarType === item.id
                         ? "bg-white text-doryeong-navy shadow-sm"

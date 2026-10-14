@@ -1,12 +1,10 @@
 // Synthetic fixtures shared by the detail lifecycle and production-browser checks.
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { createRequire } from 'node:module';
 
 export const root = path.resolve(fileURLToPath(new URL('../../', import.meta.url)));
 export const output = path.join(root, 'outputs/detail-result-state');
-const require = createRequire(import.meta.url);
-const { createLoader } = require('./load-ts.cjs');
+import { createLoader } from './load-ts.mjs';
 const loader = createLoader();
 const { analyzeSaju } = loader.load('lib/saju/manse.ts');
 const { parseSajuInput } = loader.load('lib/saju/input.ts');

@@ -1,12 +1,14 @@
 // Isolated TypeScript execution: project source, explicit mocks, and the pinned offline calendar only.
-const fs = require('node:fs');
-const path = require('node:path');
-const vm = require('node:vm');
-const ts = require('typescript');
-const root = path.resolve(__dirname, '../..');
-const trustedOfflineModules = { 'korean-lunar-calendar': require('korean-lunar-calendar') };
+import fs from 'node:fs';
+import path from 'node:path';
+import vm from 'node:vm';
+import { fileURLToPath } from 'node:url';
+import ts from 'typescript';
+import KoreanLunarCalendar from 'korean-lunar-calendar';
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
+const trustedOfflineModules = { 'korean-lunar-calendar': KoreanLunarCalendar };
 
-function createLoader(mocks = {}, globals = {}) {
+export function createLoader(mocks = {}, globals = {}) {
   const cache = new Map();
   function load(filename) {
     const file = path.resolve(root, filename);
@@ -40,4 +42,3 @@ function createLoader(mocks = {}, globals = {}) {
     },
   };
 }
-module.exports = { createLoader };

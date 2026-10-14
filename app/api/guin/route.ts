@@ -53,7 +53,7 @@ export async function POST(req: NextRequest) {
     await db.saveGuinMap(guinMap);
 
     return NextResponse.json({ success: true, guinMap });
-  } catch (err: any) {
+  } catch (err: unknown) {
     if (err instanceof DataStoreError) return NextResponse.json({error:err.message},{status:err.status});
     if (err instanceof SajuInputError) {
       return NextResponse.json({ error: err.message }, { status: err.status });

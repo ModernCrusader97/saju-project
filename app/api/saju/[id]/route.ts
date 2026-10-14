@@ -13,7 +13,7 @@ export async function GET(
     }
     const chats = await db.getChat(id);
     return NextResponse.json({ fortune, chats });
-  } catch (error: any) {
+  } catch (error: unknown) {
     if (error instanceof DataStoreError) return NextResponse.json({error:error.message},{status:error.status});
     return NextResponse.json({ error: "저장소를 사용할 수 없습니다. 입력을 보존하고 다시 시도해주세요." }, { status: 500 });
   }

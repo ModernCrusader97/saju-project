@@ -15,7 +15,7 @@ export async function GET(
       return NextResponse.json({ error: "귀인 지도를 찾을 수 없습니다." }, { status: 404 });
     }
     return NextResponse.json({ guinMap: map });
-  } catch (err: any) {
+  } catch (err: unknown) {
     if (err instanceof DataStoreError) return NextResponse.json({error:err.message},{status:err.status});
     return NextResponse.json({ error: "저장소를 사용할 수 없습니다. 입력을 보존하고 다시 시도해주세요." }, { status: 500 });
   }
@@ -76,7 +76,7 @@ export async function POST(
     const updated = await db.addFriendToGuinMap(id, newPerson);
 
     return NextResponse.json({ success: true, guinMap: updated, newPerson });
-  } catch (err: any) {
+  } catch (err: unknown) {
     if (err instanceof DataStoreError) return NextResponse.json({error:err.message},{status:err.status});
     if (err instanceof SajuInputError) {
       return NextResponse.json({ error: err.message }, { status: err.status });

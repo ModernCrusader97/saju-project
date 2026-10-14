@@ -1,10 +1,8 @@
 // Shared parser and local UI calculation; synthetic names only.
 import assert from 'node:assert/strict';
-import { createRequire } from 'node:module';
 import test from 'node:test';
 
-const require = createRequire(import.meta.url);
-const { createLoader } = require('./load-ts.cjs');
+import { createLoader } from './load-ts.mjs';
 const loader = createLoader();
 const { parseSajuInput, SajuInputError } = loader.load('lib/saju/input.ts');
 const { analyzeSaju } = loader.load('lib/saju/manse.ts');

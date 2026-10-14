@@ -1,6 +1,6 @@
-const assert=require('node:assert/strict');
-const THREE=require('three');
-const {createLoader}=require('./load-ts.cjs');
+import assert from 'node:assert/strict';
+import * as THREE from 'three';
+import {createLoader} from './load-ts.mjs';
 const loader=createLoader({three:THREE});
 const {getThemePreset,SIXTY_GANZI_KEYS}=loader.load('lib/planet/theme-library.ts');
 const {createSpiritGeometry}=loader.load('lib/planet/spirit-geometry.ts');

@@ -3,15 +3,13 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { createRequire } from 'node:module';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { Miniflare } from 'miniflare';
 
 const root = fileURLToPath(new URL('../..', import.meta.url));
 const output = path.join(root, 'outputs/name-idempotence');
 await fs.mkdir(output, { recursive: true });
-const require = createRequire(import.meta.url);
-const { createLoader } = require('./load-ts.cjs');
+import { createLoader } from './load-ts.mjs';
 const loader = createLoader();
 const { parseSajuInput } = loader.load('lib/saju/input.ts');
 const { analyzeSaju } = loader.load('lib/saju/manse.ts');

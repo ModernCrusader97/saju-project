@@ -4,7 +4,7 @@ import { createRequire } from 'node:module';
 import test from 'node:test';
 
 const require = createRequire(import.meta.url);
-const { createLoader } = require('./load-ts.cjs');
+import { createLoader } from './load-ts.mjs';
 function harness() {
   const values = new Map();
   const loader = createLoader({ three: require('three') }, {

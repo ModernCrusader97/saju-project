@@ -60,14 +60,14 @@ export class MeshSurface {
   path(anchor:SurfaceAnchor,length:number,steps=24):SurfaceAnchor[] {
     const face=(this.byMesh.get(anchor.mesh)??[]).find(f=>f.triangle===anchor.triangle)!;
     let point=face.a.clone().multiplyScalar(anchor.barycentric.x).addScaledVector(face.b,anchor.barycentric.y).addScaledVector(face.c,anchor.barycentric.z);
-    let normal=new THREE.Triangle(face.a,face.b,face.c).getNormal(new THREE.Vector3());
-    let direction=new THREE.Vector3(0,1,0).addScaledVector(normal,-normal.y);
+    const normal=new THREE.Triangle(face.a,face.b,face.c).getNormal(new THREE.Vector3());
+    const direction=new THREE.Vector3(0,1,0).addScaledVector(normal,-normal.y);
     if(direction.lengthSq()<.01)direction.set(1,0,0).addScaledVector(normal,-normal.x);
     direction.normalize();
     const result=[anchor], step=length/steps, tri=new THREE.Triangle(), closest=new THREE.Vector3(), n=new THREE.Vector3();
     for(let i=1;i<=steps;i++){
       const wanted=point.clone().addScaledVector(direction,step);
-      let best:Face|undefined, distance=Infinity, pos=new THREE.Vector3();
+      let best:Face|undefined, distance=Infinity;const pos=new THREE.Vector3();
       for(const f of this.byMesh.get(anchor.mesh)??[]){
         tri.set(f.a,f.b,f.c);tri.getNormal(n);if(n.dot(normal)<.35)continue;
         tri.closestPointToPoint(wanted,closest);const d=closest.distanceToSquared(wanted);
