@@ -30,7 +30,8 @@ export function buildGalaxyNodes(
 
   // 1. 나의 중심별 (지도 소유자 행성)
   // 나선은하의 제1주요나선팔(Arm 0) 반경 5.8 지점에 안착 (은하핵 0,0,0을 중심으로 은하 전체와 함께 공전)
-  const ownerRadius = 5.8 * distanceScale;
+  const ownerBaseRadius = 5.8;
+  const ownerRadius = ownerBaseRadius * distanceScale;
   const ownerArm = 0;
   const ownerPos = getSpiralArmPosition(ownerArm, ownerRadius, 0, 0.1);
 
@@ -72,12 +73,12 @@ export function buildGalaxyNodes(
     } else if (score >= 87) {
       // 좋은 인연: 인접한 조화 나선팔 (Arm 1 또는 Arm 3)
       armIndex = (idx % 2 === 0) ? 1 : 3;
-      radius = (ownerRadius + (idx * 0.8 - 0.4)) * distanceScale;
+      radius = (ownerBaseRadius + (idx * 0.8 - 0.4)) * distanceScale;
       angleOffset = (idx * 0.15) - 0.1;
     } else {
       // 거리감 있는 인연: 반대편 나선팔 (Arm 2) 또는 외곽 성단
       armIndex = 2;
-      radius = (ownerRadius + 2.5 + idx * 1.1) * distanceScale;
+      radius = (ownerBaseRadius + 2.5 + idx * 1.1) * distanceScale;
       angleOffset = 0.2;
     }
 

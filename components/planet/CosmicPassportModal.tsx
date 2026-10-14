@@ -102,7 +102,7 @@ export default function CosmicPassportModal({
       canvas.width = 1080;
       canvas.height = 1920;
       const ctx = canvas.getContext("2d");
-      if (!ctx) return;
+      if (!ctx) throw new Error("Canvas 2D context is not available.");
 
       // 1. 우주 배경 그라데이션
       const bgGrad = ctx.createLinearGradient(0, 0, 0, 1920);

@@ -12,6 +12,10 @@ export function bindSceneGestures(canvas: HTMLCanvasElement, options: {
   const down = (event: PointerEvent) => {
     if (event.pointerType === 'mouse' && event.button !== 0) return;
     points.set(event.pointerId, { x: event.clientX, y: event.clientY, originX: event.clientX, originY: event.clientY, moved: 0, intent: event.pointerType !== 'touch' });
+    // Every contact in a multi-pointer gesture is ineligible for a later tap.
+    if (points.size > 1) {
+      for (const point of points.values()) point.moved = 100;
+    }
     canvas.setPointerCapture(event.pointerId); options.dragging(true);
     pinchDistance = distance();
   };

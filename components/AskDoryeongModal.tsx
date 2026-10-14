@@ -203,11 +203,11 @@ function Conversation({
       >
         {/* Header */}
         <div className="flex items-center justify-between px-6 py-4 border-b border-doryeong-border/60 bg-white/70 backdrop-blur-sm">
-          <div className="flex items-center gap-2.5">
-            <div className="h-8 w-8 rounded-full bg-doryeong-gold/20 flex items-center justify-center font-serif text-doryeong-navy font-bold text-sm">
+          <div className="flex min-w-0 items-center gap-2.5">
+            <div className="h-8 w-8 shrink-0 rounded-full bg-doryeong-gold/20 flex items-center justify-center font-serif text-doryeong-navy font-bold text-sm">
               청
             </div>
-            <div>
+            <div className="min-w-0">
               <h3 className="font-serif text-base font-bold text-doryeong-navy leading-tight">
                 나의 풀이에 관해
               </h3>
@@ -219,7 +219,7 @@ function Conversation({
           <button
             onClick={onClose}
             aria-label="대화 닫기"
-            className="p-1 rounded-full text-doryeong-textMuted hover:bg-black/5"
+            className="shrink-0 p-1 rounded-full text-doryeong-textMuted hover:bg-black/5"
           >
             <X className="h-6 w-6" />
           </button>

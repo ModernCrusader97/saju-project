@@ -120,7 +120,7 @@ try {
 async function serve(name) {
   active.add(name);
   try {
-    const body = await readFile(path.join(directory, name), "utf8");
+    const body = await readFile(path.join(directory, name));
     const response = await binding.fetch(
       new Request("http://preview/invoke", { method: "POST", body }),
     );

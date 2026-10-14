@@ -27,10 +27,6 @@ for (const [relative] of files) {
     throw new Error(`Approved v002 asset checksum mismatch: ${relative}`);
   }
 }
-mkdirSync(output, { recursive: true });
-for (const [relative, target] of files) copyFileSync(path.join(source, relative), path.join(output, target));
-console.log('Approved jade v002: 4 runtime assets copied after SHA-256 verification.');
-
 // The README Python restoration remains available. Clean portable builds also
 // restore the same preserved GLB using Node's gzip and the identical two hashes.
 const archive = readFileSync(path.join(root, 'preservation-archives/porcelain-hero-blink-v1.glb.gz'));
@@ -38,8 +34,13 @@ const sha = bytes => createHash('sha256').update(bytes).digest('hex');
 if (sha(archive) !== '09f11f913f4853ea2050a007618ec607e7a6e4350403f7e4bdd91a68e542f3a1') throw new Error('Preserved GLB archive checksum mismatch.');
 const restored = gunzipSync(archive);
 if (sha(restored) !== '57d7ee5b3c4e0b99eaadefb8095283bed44986beaa5a91c096dd7a0c514bf9c2') throw new Error('Restored GLB checksum mismatch.');
-mkdirSync(path.join(root, 'public/models'), { recursive: true });
 const restoredPath = path.join(root, 'public/models/porcelain-hero-blink-v1.glb');
 if (existsSync(restoredPath) && sha(readFileSync(restoredPath)) !== sha(restored)) throw new Error('Refusing to replace a different preserved GLB.');
+
+// Complete content validation before writing any runtime output.
+mkdirSync(output, { recursive: true });
+for (const [relative, target] of files) copyFileSync(path.join(source, relative), path.join(output, target));
+console.log('Approved jade v002: 4 runtime assets copied after SHA-256 verification.');
+mkdirSync(path.join(root, 'public/models'), { recursive: true });
 writeFileSync(restoredPath, restored);
 console.log('Preserved porcelain GLB: restored with both SHA-256 checks.');
