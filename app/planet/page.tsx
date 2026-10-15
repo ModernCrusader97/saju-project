@@ -23,7 +23,8 @@ export default function PlanetStudioPage() {
   const [captured, setCaptured] = useState<{ key:string; url:string } | null>(null);
   const [passportOpen, setPassportOpen] = useState(false);
   const sceneRef = useRef<HTMLElement>(null);
-  const [applied, setApplied] = useState(false);
+  const [appliedBirth, setAppliedBirth] = useState<UniverseBirth | null>(null);
+  const applied = appliedBirth === snapshot.birth;
   const [form, setForm] = useState({ birth:snapshot.birth, draft:snapshot.birth });
   const draft = form.birth === snapshot.birth ? form.draft : snapshot.birth;
   const { mode, dayKey, monthKey, yearKey, hourKey, maskStyle, birth } = snapshot;
@@ -41,15 +42,15 @@ export default function PlanetStudioPage() {
   }
   function changeBirth(key: keyof UniverseBirth, value: string | boolean) {
     setForm({ birth:snapshot.birth, draft:{ ...draft, [key]:value } });
-    setApplied(false);
+    setAppliedBirth(null);
   }
   function applyBirth(event: React.FormEvent) {
     event.preventDefault(); setError("");
-    try { commit(calculateUniverse(draft, snapshot), true); setApplied(true); }
-    catch (reason) { setError(reason instanceof Error ? reason.message : "입력을 확인해주세요."); setApplied(false); }
+    try { const next = calculateUniverse(draft, snapshot); commit(next, true); setAppliedBirth(next.birth); }
+    catch (reason) { setError(reason instanceof Error ? reason.message : "입력을 확인해주세요."); setAppliedBirth(null); }
   }
   function selectPillar(key: "dayKey" | "monthKey" | "yearKey" | "hourKey", value: string) {
-    commit({ ...snapshot, [key]: value, source: "example" }, true); setApplied(false);
+    commit({ ...snapshot, [key]: value, source: "example" }, true); setAppliedBirth(null);
   }
 
   return <div className="universe-page">

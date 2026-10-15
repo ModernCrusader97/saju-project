@@ -28,6 +28,10 @@ import CosmicPassportModal from "@/components/planet/CosmicPassportModal";
 import GalaxyPokedexModal from "@/components/planet/GalaxyPokedexModal";
 import GanziMascotImage from "@/components/planet/GanziMascotImage";
 
+function hasRenderableDayKey(pillars: unknown): boolean {
+  const dayKey = (pillars as { dayKey?: unknown } | null | undefined)?.dayKey;
+  return dayKey == null || typeof dayKey === "string";
+}
 function canRenderAddedGuinMap(value: unknown, mapId: string): value is GuinMapData {
   if (!value || typeof value !== "object" || Array.isArray(value)) return false;
   const candidate = value as Record<string, unknown>;
@@ -39,6 +43,7 @@ function canRenderAddedGuinMap(value: unknown, mapId: string): value is GuinMapD
       return ["id", "name", "relationTitle", "dayMaster", "elementMatch", "advice"].every(key => typeof person[key] === "string")
         && typeof person.relationType === "string" && ["mentor", "partner", "supporter", "grounding"].includes(person.relationType)
         && typeof person.affinityScore === "number" && Number.isFinite(person.affinityScore)
+        && hasRenderableDayKey(person.pillars)
         && (person.isMe === undefined || typeof person.isMe === "boolean");
     });
 }
@@ -55,6 +60,7 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
   const [copied, setCopied] = useState(false);
   const [copyError, setCopyError] = useState<string | null>(null);
   const copyFeedbackTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
+  const copyRequest = useRef(0);
   const [selectedPersonId, setSelectedPersonId] = useState<string | undefined>(undefined);
   const [distanceScale, setDistanceScale] = useState(1.0);
   const [speedScale, setSpeedScale] = useState(1.0);
@@ -78,6 +84,7 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
   const joinTriggerRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => () => {
+    copyRequest.current += 1;
     clearTimeout(copyFeedbackTimer.current);
   }, []);
 
@@ -100,6 +107,7 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
               && ["id", "name", "relationTitle", "dayMaster", "elementMatch", "advice"].every(key => typeof person[key as keyof GuinPerson] === "string")
               && ["mentor", "partner", "supporter", "grounding"].includes(person.relationType)
               && typeof person.affinityScore === "number" && Number.isFinite(person.affinityScore)
+              && hasRenderableDayKey(person.pillars)
               && (person.isMe === undefined || typeof person.isMe === "boolean")
             )) throw new Error("지도를 확인할 수 없습니다.");
           setMapData(data.guinMap);
@@ -176,10 +184,12 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
   }, [showJoinModal, joining]);
 
   const handleCopyLink = async () => {
+    const request = ++copyRequest.current;
     const url = window.location.href;
     setCopyError(null);
     try {
       await navigator.clipboard.writeText(url);
+      if (request !== copyRequest.current) return;
       setCopied(true);
       clearTimeout(copyFeedbackTimer.current);
       copyFeedbackTimer.current = setTimeout(() => {
@@ -187,6 +197,7 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
         setCopied(false);
       }, 2000);
     } catch {
+      if (request !== copyRequest.current) return;
       setCopied(false);
       setCopyError("링크를 복사하지 못했어요. 다시 시도해주세요.");
     }

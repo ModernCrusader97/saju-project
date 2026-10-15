@@ -45,6 +45,11 @@ export default function CosmicPassportModal({
     if (!isOpen) return;
     const previous = document.activeElement as HTMLElement | null;
     dialogRef.current?.querySelector<HTMLButtonElement>('button')?.focus();
+    return () => { previous?.focus(); };
+  }, [isOpen]);
+
+  useEffect(() => {
+    if (!isOpen) return;
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
       if (e.key === "Tab") {
@@ -58,7 +63,7 @@ export default function CosmicPassportModal({
     if (isOpen) {
       window.addEventListener("keydown", handleKeyDown);
     }
-    return () => { window.removeEventListener("keydown", handleKeyDown); previous?.focus(); };
+    return () => { window.removeEventListener("keydown", handleKeyDown); };
   }, [isOpen, onClose]);
 
   if (!isOpen) return null;

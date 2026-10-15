@@ -40,7 +40,7 @@ export default function PlanetCanvas({
   const presetH = getStemThemePreset(hourKey);
   const presetY = getStemThemePreset(yearKey);
   const [isCloseUp, setIsCloseUp] = useState(false);
-  const {error: graphicsError, setError: setGraphicsError} = useCanvasStatus("planet-canvas");
+  const {ready, error: graphicsError, setReady, setError: setGraphicsError} = useCanvasStatus("planet-canvas");
   const containerRef = useRef<HTMLDivElement>(null);
   const rendererRef = useRef<THREE.WebGLRenderer | null>(null);
   const sceneRef = useRef<THREE.Scene | null>(null);
@@ -183,7 +183,7 @@ export default function PlanetCanvas({
       dragging: active => { isDragging.current = active; },
       rotate: (dx, dy) => { if (planetRootRef.current) { planetRootRef.current.rotation.y += dx * .008; planetRootRef.current.rotation.x += dy * .008; } },
     });
-    const onContextLost = (event: Event) => { event.preventDefault(); contextLost = true; setGraphicsError("3D 연결이 잠시 끊겼어요. 복구를 기다려주세요."); };
+    const onContextLost = (event: Event) => { event.preventDefault(); contextLost = true; setReady(false); setGraphicsError("3D 연결이 잠시 끊겼어요. 복구를 기다려주세요."); };
     const onContextRestored = () => {
       try { const restored = createStudioEnvironment(renderer); reflectionTarget.dispose(); reflectionTarget = restored; scene.environment = restored.texture; contextLost = false; shaderFailed = false; setGraphicsError(null); }
       catch { setGraphicsError("반사광을 복구하지 못했어요. 화면을 다시 열어주세요."); }
@@ -195,6 +195,7 @@ export default function PlanetCanvas({
       if (!containerRef.current || !rendererRef.current || !cameraRef.current) return;
       const w = containerRef.current.clientWidth;
       const h = Math.max(1, containerRef.current.clientHeight);
+      setReady(false);
       cameraRef.current.aspect = w / h;
       cameraRef.current.updateProjectionMatrix();
       rendererRef.current.setSize(w, h);
@@ -237,6 +238,7 @@ export default function PlanetCanvas({
         if (asteroidBeltPointsRef.current) asteroidBeltPointsRef.current.rotation.y = .12 + t * .065;
       }
       renderer.render(scene, camera);
+      if (!shaderFailed && renderer.domElement.width > 0 && renderer.domElement.height > 0) setReady(true);
     };
     animationFrameId = requestAnimationFrame(animate);
 
@@ -264,11 +266,12 @@ export default function PlanetCanvas({
         container.removeChild(dom);
       }
     };
-  }, [setGraphicsError]);
+  }, [setGraphicsError, setReady]);
 
   // 2. 테마 & 70:30 마스크 실시간 업데이트 (메모리 해제 및 초기 렌더 보장)
   useEffect(() => {
     if (!mainPlanetRef.current || !satelliteMeshRef.current || !asteroidBeltPointsRef.current) return;
+    setReady(false);
 
     // Shared sphere UV/material path for all four heavenly-stem slots.
     disposeMaterial(mainPlanetRef.current.material as THREE.Material);
@@ -294,7 +297,7 @@ export default function PlanetCanvas({
       planetRootRef.current.add(newBelt.points);
       asteroidBeltPointsRef.current = newBelt.points;
     }
-  }, [presetD, presetM, presetH, presetY, maskStyle, isUnknownTime]);
+  }, [presetD, presetM, presetH, presetY, maskStyle, isUnknownTime, setReady]);
 
   const handleToggleAutoRotate = () => {
     isAutoRotatingRef.current = !isAutoRotatingRef.current;
@@ -327,7 +330,7 @@ export default function PlanetCanvas({
   };
 
   const handleCaptureSnapshot = () => {
-    if (!rendererRef.current || graphicsError) return;
+    if (!rendererRef.current || !ready || graphicsError) return;
     try {
       const dataUrl = rendererRef.current.domElement.toDataURL("image/png");
       onCapture?.(dataUrl);
@@ -344,7 +347,7 @@ export default function PlanetCanvas({
   };
 
   return (
-    <div className="planet-stage relative w-full h-full min-h-[440px] rounded-[32px] overflow-hidden border border-doryeong-border" data-scene="planet" data-scene-state={graphicsError?"fallback":"ready"}>
+    <div className="planet-stage relative w-full h-full min-h-[440px] rounded-[32px] overflow-hidden border border-doryeong-border" data-scene="planet" data-scene-state={graphicsError?"fallback":ready?"ready":"loading"}>
       {graphicsError && <div role="status" className="absolute inset-0 z-20 flex items-center justify-center p-8 text-center text-sm text-white bg-[#0A0D18]/90">{graphicsError}</div>}
       {/* 3D WebGL 캔버스 컨테이너 */}
       <div ref={containerRef} className="w-full h-full cursor-grab active:cursor-grabbing" />
@@ -380,6 +383,7 @@ export default function PlanetCanvas({
 
           <button
             onClick={handleCaptureSnapshot}
+            disabled={!ready || !!graphicsError}
             className="p-1.5 rounded-full bg-black/60 hover:bg-black/80 backdrop-blur-md border border-white/20 text-white transition-all shadow-sm"
             title="행성 캡처 이미지 저장"
           >

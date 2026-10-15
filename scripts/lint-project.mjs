@@ -14,5 +14,6 @@ try{
  const args=['.', '--ignore-pattern','dist','--ignore-pattern','.next','--ignore-pattern','docs/qa/**',...process.argv.slice(2)];
  const result=spawnSync(process.execPath,[path.join(root,'node_modules/eslint/bin/eslint.js'),...args],{cwd:root,stdio:'inherit'});
  if(result.error)throw result.error;
+ if(result.signal)process.kill(process.pid,result.signal);
  process.exitCode=result.status??1;
 }catch(error){console.error(error instanceof Error?error.message:String(error));process.exitCode=1}

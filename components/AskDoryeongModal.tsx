@@ -261,7 +261,7 @@ function Conversation({
         </div>
 
         {/* Keep recovery next to the composer, outside the scrolling history. */}
-        <div className="px-3 space-y-2">
+        <div className="px-3 space-y-2 overflow-y-auto">
           {historyLoading && !loading && !sendError && <p role="status" className="text-sm text-doryeong-textMuted">대화 기록을 불러오고 있어요.</p>}
           {historyError && <div role="alert" className="p-3 rounded-xl border border-red-200 bg-red-50 text-red-800 text-sm space-y-2">
             <p>{historyError}</p><button type="button" className="secondary-button" onClick={() => setHistoryRetry(count => count + 1)}>대화 기록 다시 불러오기</button>
