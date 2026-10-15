@@ -117,13 +117,13 @@ function SavedContent() {
     return fortunes.filter((f) => {
       const matchCategory =
         selectedCategory === "all" || (f.category || "overall") === selectedCategory;
-      const q = searchQuery.trim().toLowerCase();
+      const q = searchQuery.trim().normalize("NFC").toLowerCase();
       const matchSearch =
         !q ||
-        f.name.toLowerCase().includes(q) ||
-        f.title.toLowerCase().includes(q) ||
-        f.summary.toLowerCase().includes(q) ||
-        (f.dayMaster && f.dayMaster.toLowerCase().includes(q));
+        f.name.normalize("NFC").toLowerCase().includes(q) ||
+        f.title.normalize("NFC").toLowerCase().includes(q) ||
+        f.summary.normalize("NFC").toLowerCase().includes(q) ||
+        (f.dayMaster && f.dayMaster.normalize("NFC").toLowerCase().includes(q));
       return matchCategory && matchSearch;
     });
   }, [fortunes, selectedCategory, searchQuery]);
@@ -246,8 +246,13 @@ function SavedContent() {
             <div className="space-y-3">
               {filteredFortunes.map((f) => {
                 const catInfo = CATEGORY_MAP[f.category || "overall"] || CATEGORY_MAP.overall;
-                const formattedDate = f.createdAt
-                  ? new Date(f.createdAt).toISOString().split("T")[0]
+                const createdDate = f.createdAt ? new Date(f.createdAt) : null;
+                const formattedDate = createdDate
+                  ? [
+                    String(createdDate.getFullYear()).padStart(4, "0"),
+                    String(createdDate.getMonth() + 1).padStart(2, "0"),
+                    String(createdDate.getDate()).padStart(2, "0"),
+                  ].join("-")
                   : "";
 
                 return (

@@ -159,12 +159,16 @@ export default function DailyPage() {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2 text-doryeong-navy font-serif font-bold text-sm">
               <Sparkles className="h-4 w-4 text-doryeong-gold" />
-              <span>오늘의 맞춤 개운 포인트</span>
+              <span>오늘의 기운과 생활 힌트</span>
             </div>
             <span className="text-[10px] text-doryeong-textSubtle bg-white px-2 py-0.5 rounded-full border border-doryeong-border">
               {dateInfo.dailyPillar.ganHanja}{dateInfo.dailyPillar.jiHanja} 일진 기반
             </span>
           </div>
+
+          <p className="text-xs leading-relaxed text-doryeong-textMuted">
+            오늘의 일진을 일상에 빗댄 해석이에요. 내 상황과 연결해 참고해보세요.
+          </p>
 
           <div className="grid grid-cols-2 gap-2 text-xs text-doryeong-textDark">
             <div className="p-3 rounded-xl bg-white border border-doryeong-border">

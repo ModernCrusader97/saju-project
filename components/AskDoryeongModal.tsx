@@ -116,6 +116,8 @@ function Conversation({
     const dialog = dialogRef.current;
     const opener = document.activeElement instanceof HTMLElement ? document.activeElement : null;
     if (!dialog) return;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
     dialog.querySelector<HTMLButtonElement>("button")?.focus();
     const containTab = (event: KeyboardEvent) => {
       if (event.key !== "Tab" || event.altKey || event.ctrlKey || event.metaKey) return;
@@ -134,6 +136,7 @@ function Conversation({
     document.addEventListener("keydown", containTab);
     return () => {
       document.removeEventListener("keydown", containTab);
+      document.body.style.overflow = previousOverflow;
       if (opener?.isConnected) opener.focus();
     };
   }, [isOpen]);
@@ -235,7 +238,7 @@ function Conversation({
               }`}
             >
               <div
-                className={`max-w-[85%] break-words rounded-2xl px-4 py-3 text-sm leading-relaxed ${
+                className={`max-w-[85%] break-words whitespace-pre-wrap rounded-2xl px-4 py-3 text-sm leading-relaxed ${
                   m.role === "user"
                     ? "bg-doryeong-navy text-white rounded-br-none shadow-sm"
                     : "bg-white text-doryeong-textDark border border-doryeong-border rounded-bl-none shadow-sm font-serif"

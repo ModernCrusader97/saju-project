@@ -101,6 +101,7 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
         if (data.guinMap) {
           const candidateMap = data.guinMap;
           if (typeof candidateMap !== "object"
+            || candidateMap.id !== mapId
             || !["id", "ownerName", "ownerBirth", "ownerDayMaster", "ownerTheme", "createdAt"].every(key => typeof candidateMap[key as keyof GuinMapData] === "string")
             || !Array.isArray(candidateMap.guins) || !candidateMap.guins.every(person =>
               person !== null && typeof person === "object"

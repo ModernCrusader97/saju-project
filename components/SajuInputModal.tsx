@@ -3,7 +3,7 @@
 import { readApiResponse } from "@/lib/http-client";
 
 
-import React, { useState, useEffect, useRef, useId } from "react";
+import React, { useState, useEffect, useLayoutEffect, useRef, useId } from "react";
 import { useRouter } from "next/navigation";
 import { X, Sparkles } from "lucide-react";
 
@@ -40,7 +40,22 @@ export default function SajuInputModal({
 
   const [loading, setLoading] = useState(false);
   const [loadingStep, setLoadingStep] = useState(0);
+  const [requestContext, setRequestContext] = useState({ isOpen, category });
+  const activeRequest = useRef(0);
+  const loadingTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
   const dialogRef = useRef<HTMLDivElement>(null);
+
+  if (requestContext.isOpen !== isOpen || requestContext.category !== category) {
+    setRequestContext({ isOpen, category });
+    setLoading(false);
+    setLoadingStep(0);
+  }
+
+  useLayoutEffect(() => () => {
+    activeRequest.current += 1;
+    clearTimeout(loadingTimer.current);
+    loadingTimer.current = undefined;
+  }, [isOpen, category]);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -96,12 +111,14 @@ export default function SajuInputModal({
       return;
     }
 
+    const request = ++activeRequest.current;
     setLoading(true);
     setLoadingStep(1); // 1. 만세력 사주팔자 계산 중
 
     const timer = setTimeout(() => {
-      setLoadingStep(2); // 2. 도령 청명이가 비유로 풀어내는 중
+      if (activeRequest.current === request) setLoadingStep(2); // 2. 도령 청명이가 비유로 풀어내는 중
     }, 900);
+    loadingTimer.current = timer;
 
     try {
       const res = await fetch("/api/saju", {
@@ -123,6 +140,7 @@ export default function SajuInputModal({
       });
 
       const data = await readApiResponse(res);
+      if (activeRequest.current !== request) return;
 
       if (res.ok && data.success && data.fortune
         && typeof data.fortune.id === "string" && data.fortune.id.length > 0) {
@@ -136,11 +154,14 @@ export default function SajuInputModal({
         alert(data.error || "풀이 중 문제가 발생했습니다.");
       }
     } catch {
-      alert("네트워크 오류가 발생했습니다.");
+      if (activeRequest.current === request) alert("네트워크 오류가 발생했습니다.");
     } finally {
       clearTimeout(timer);
-      setLoading(false);
-      setLoadingStep(0);
+      if (loadingTimer.current === timer) loadingTimer.current = undefined;
+      if (activeRequest.current === request) {
+        setLoading(false);
+        setLoadingStep(0);
+      }
     }
   };
 
