@@ -72,6 +72,8 @@ export default function SajuInputModal({
     const dialog = dialogRef.current;
     const opener = document.activeElement instanceof HTMLElement ? document.activeElement : null;
     if (!dialog) return;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
     dialog.querySelector<HTMLInputElement>("input")?.focus();
     const containTab = (event: KeyboardEvent) => {
       if (event.key !== "Tab" || event.altKey || event.ctrlKey || event.metaKey) return;
@@ -90,6 +92,7 @@ export default function SajuInputModal({
     document.addEventListener("keydown", containTab);
     return () => {
       document.removeEventListener("keydown", containTab);
+      document.body.style.overflow = previousOverflow;
       if (opener?.isConnected) opener.focus();
     };
   }, [isOpen]);
@@ -209,7 +212,7 @@ export default function SajuInputModal({
             </div>
             <h3 className="font-serif text-lg font-bold text-doryeong-navy">
               {loadingStep === 1
-                ? "사주 4주와 오행을 정밀하게 계산하고 있습니다..."
+                ? `사주 ${isUnknownTime ? "3주" : "4주"}와 오행을 정밀하게 계산하고 있습니다...`
                 : "입력한 사주 구성으로 해석을 정리하고 있어요."}
             </h3>
             <p className="mt-2 text-xs text-doryeong-textMuted">
@@ -394,11 +397,12 @@ export default function SajuInputModal({
             {/* 맞춤 질문 (선택) */}
             <div>
               <label htmlFor={`${formId}-question`} className="block text-xs font-bold text-doryeong-textDark mb-1">
-                함께 살펴보고 싶은 이야기 (선택)
+                함께 살펴보고 싶은 이야기 (선택 · 최대 500자)
               </label>
               <textarea
                 id={`${formId}-question`}
                 rows={2}
+                maxLength={500}
                 placeholder="예: 올해 이직을 준비 중인데 흐름이 궁금해요."
                 value={customQuestion}
                 onChange={(e) => setCustomQuestion(e.target.value)}

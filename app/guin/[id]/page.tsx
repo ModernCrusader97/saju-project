@@ -256,7 +256,10 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
         }),
       });
       const data = await readApiResponse(res);
-      if(!res.ok) throw new Error(data.error || "등록 중 오류가 발생했습니다.");
+      if (!res.ok) {
+        alert(data.error || "등록 중 오류가 발생했습니다.");
+        return;
+      }
       if (data.success && canRenderAddedGuinMap(data.guinMap, mapId)) {
         const lastFriend = data.guinMap.guins[data.guinMap.guins.length - 1];
         if (lastFriend) setLastAddedPersonId(lastFriend.id);
@@ -630,18 +633,21 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
                   <div className="grid grid-cols-3 gap-2">
                     <input
                       type="number"
+                      required
                       value={fYear}
                       onChange={(e) => setFYear(e.target.value)}
                       className="px-2 py-2 text-center rounded-xl border border-doryeong-border bg-white text-sm"
                     />
                     <input
                       type="number"
+                      required
                       value={fMonth}
                       onChange={(e) => setFMonth(e.target.value)}
                       className="px-2 py-2 text-center rounded-xl border border-doryeong-border bg-white text-sm"
                     />
                     <input
                       type="number"
+                      required
                       value={fDay}
                       onChange={(e) => setFDay(e.target.value)}
                       className="px-2 py-2 text-center rounded-xl border border-doryeong-border bg-white text-sm"

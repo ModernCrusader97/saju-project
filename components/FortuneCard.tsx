@@ -177,7 +177,7 @@ export default function FortuneCard({ fortune }: FortuneCardProps) {
             className="rounded-[24px] bg-white border border-doryeong-border p-5 shadow-sm space-y-2"
           >
             <div className="flex items-start justify-between">
-              <div>
+              <div className="min-w-0 break-words">
                 <h4 className="font-serif text-base font-bold text-doryeong-navy">
                   {sec.title}
                 </h4>
@@ -195,7 +195,7 @@ export default function FortuneCard({ fortune }: FortuneCardProps) {
 
             {sec.advice && (
               <div className="mt-3 rounded-xl bg-doryeong-ivoryDark/60 p-3 border-l-4 border-doryeong-gold">
-                <p className="text-xs font-serif text-doryeong-textMuted leading-relaxed">
+                <p className="text-xs font-serif text-doryeong-textMuted leading-relaxed whitespace-pre-line">
                   💡 <strong className="text-doryeong-navy font-bold">돌아볼 점:</strong> {sec.advice}
                 </p>
               </div>

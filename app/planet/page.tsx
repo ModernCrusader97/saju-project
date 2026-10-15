@@ -112,7 +112,7 @@ export default function PlanetStudioPage() {
             {error && <p role="alert" className="form-error">{error}</p>}
             {applied && <p role="status" className="form-note">같은 사주를 정령과 행성에 반영했어요.</p>}
             <button type="submit" className="primary-button">내 사주 반영하기</button>
-            <p className="form-note"><a href="/manse">음력·윤달과 자세한 사주 구성</a> · 절기와 대운 계산은 검증 중입니다.</p>
+            <p className="form-note"><a href="/manse">양력·자세한 사주 구성</a> · 절기와 대운 계산은 검증 중입니다.</p>
           </form>
         </details>
         <details className="universe-disclosure">

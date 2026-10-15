@@ -115,7 +115,7 @@ export default function Home() {
         </div>
         {error && <p role="alert" className="form-error">{error}</p>}
         <button className="primary-button" type="submit">나의 우주 보기</button>
-        <p className="form-note">시간을 몰라도 시작할 수 있어요. <a href="/manse" className="underline">음력·자세한 사주 구성</a></p>
+        <p className="form-note">시간을 몰라도 시작할 수 있어요. <a href="/manse" className="underline">양력·자세한 사주 구성</a></p>
       </form>
 
       <aside className={styles.saved}>

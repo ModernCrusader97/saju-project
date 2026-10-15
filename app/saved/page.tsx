@@ -46,7 +46,8 @@ function canRenderFortune(value: unknown): boolean {
   if (!record(value) || !strings(value, ["title", "summary"])) return false;
   const analysis = value.analysis;
   if (!record(analysis) || !strings(analysis, ["name", "calendarType"])
-    || !numbers(analysis, ["birthYear", "birthMonth", "birthDay"])) return false;
+    || !numbers(analysis, ["birthYear", "birthMonth", "birthDay"])
+    || !["patternName", "yongshin"].every(key => analysis[key] == null || typeof analysis[key] === "string")) return false;
   if (![analysis.yearPillar, analysis.monthPillar, analysis.dayPillar].every(pillar)
     || (analysis.hourPillar != null && !pillar(analysis.hourPillar))) return false;
   if (!record(analysis.elementsCount)

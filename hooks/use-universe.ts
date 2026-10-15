@@ -16,7 +16,13 @@ export function useUniverse() {
         // Legacy home URLs remain readable; birth details need not remain in the URL.
         window.history.replaceState({ ...window.history.state, universeSnapshot: next }, '', `/planet?view=${next.mode}`);
         saveUniverseSession(next);
-      } catch (reason) { setError(reason instanceof Error ? reason.message : '입력을 확인해주세요.'); setSnapshot(prior); saveUniverseSession(prior); }
+      } catch (reason) {
+        setError(reason instanceof Error ? reason.message : '입력을 확인해주세요.'); setSnapshot(prior);
+        const fallbackUrl = new URL(window.location.href);
+        fallbackUrl.searchParams.set('view', prior.mode);
+        window.history.replaceState({ ...window.history.state, universeSnapshot: prior }, '', fallbackUrl.href);
+        saveUniverseSession(prior);
+      }
       setReady(true);
     };
     restore(); window.addEventListener('popstate', restore);

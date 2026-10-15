@@ -162,7 +162,7 @@ export default function GuinPage() {
                     type="number"
                     min="1900"
                     max="2100"
-                    aria-label="은하 연도" value={birthYear}
+                    aria-label="은하 연도" required value={birthYear}
                     onChange={(e) => setBirthYear(e.target.value)}
                     className="w-full text-center text-sm font-semibold bg-transparent focus:outline-none"
                   />
@@ -173,7 +173,7 @@ export default function GuinPage() {
                     type="number"
                     min="1"
                     max="12"
-                    aria-label="은하 월" value={birthMonth}
+                    aria-label="은하 월" required value={birthMonth}
                     onChange={(e) => setBirthMonth(e.target.value)}
                     className="w-full text-center text-sm font-semibold bg-transparent focus:outline-none"
                   />
@@ -184,7 +184,7 @@ export default function GuinPage() {
                     type="number"
                     min="1"
                     max="31"
-                    aria-label="은하 일" value={birthDay}
+                    aria-label="은하 일" required value={birthDay}
                     onChange={(e) => setBirthDay(e.target.value)}
                     className="w-full text-center text-sm font-semibold bg-transparent focus:outline-none"
                   />

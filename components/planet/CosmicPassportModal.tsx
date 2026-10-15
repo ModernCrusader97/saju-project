@@ -160,7 +160,8 @@ export default function CosmicPassportModal({
         await new Promise<void>((resolve, reject) => {
           img.onload = () => resolve();
           img.onerror = () => reject(new Error("Mascot portrait could not be loaded."));
-          img.src = portraitUrl;
+          const visiblePortrait = cardRef.current?.querySelector<HTMLImageElement>("img[data-ganzi-key]");
+          img.src = visiblePortrait?.currentSrc || portraitUrl;
         });
         ctx.save();
         ctx.drawImage(img, 240, 500, 600, 600);

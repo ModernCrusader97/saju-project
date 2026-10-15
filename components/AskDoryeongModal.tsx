@@ -280,6 +280,9 @@ function Conversation({
         {/* Input Bar */}
         <form
           onSubmit={handleSend}
+          onKeyDown={(event) => {
+            if (event.key === "Enter" && event.nativeEvent.isComposing) event.preventDefault();
+          }}
           className="p-3 bg-white border-t border-doryeong-border flex items-center gap-2"
         >
           <input
