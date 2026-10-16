@@ -154,7 +154,7 @@ export default function GuinPage() {
                 type="text"
                 required
                 placeholder="예: 별이"
-                aria-label="은하 이름" value={name}
+                aria-label="은하 이름" disabled={loading} value={name}
                 onChange={(e) => setName(e.target.value)}
                 className="w-full px-4 py-3 rounded-xl border border-doryeong-border bg-doryeong-ivory text-sm focus:outline-none focus:border-doryeong-navy font-medium"
               />
@@ -170,7 +170,7 @@ export default function GuinPage() {
                     type="number"
                     min="1900"
                     max="2100"
-                    aria-label="은하 연도" required value={birthYear}
+                    aria-label="은하 연도" required disabled={loading} value={birthYear}
                     onChange={(e) => setBirthYear(e.target.value)}
                     className="w-full text-center text-sm font-semibold bg-transparent focus:outline-none"
                   />
@@ -181,7 +181,7 @@ export default function GuinPage() {
                     type="number"
                     min="1"
                     max="12"
-                    aria-label="은하 월" required value={birthMonth}
+                    aria-label="은하 월" required disabled={loading} value={birthMonth}
                     onChange={(e) => setBirthMonth(e.target.value)}
                     className="w-full text-center text-sm font-semibold bg-transparent focus:outline-none"
                   />
@@ -192,7 +192,7 @@ export default function GuinPage() {
                     type="number"
                     min="1"
                     max="31"
-                    aria-label="은하 일" required value={birthDay}
+                    aria-label="은하 일" required disabled={loading} value={birthDay}
                     onChange={(e) => setBirthDay(e.target.value)}
                     className="w-full text-center text-sm font-semibold bg-transparent focus:outline-none"
                   />
@@ -209,7 +209,7 @@ export default function GuinPage() {
                 <label className="text-[11px] text-doryeong-textMuted flex items-center gap-1 cursor-pointer">
                   <input
                     type="checkbox"
-                    aria-label="은하 시간 모름" checked={isUnknownTime}
+                    aria-label="은하 시간 모름" disabled={loading} checked={isUnknownTime}
                     onChange={(e) => setIsUnknownTime(e.target.checked)}
                     className="rounded accent-doryeong-navy"
                   />
@@ -224,7 +224,7 @@ export default function GuinPage() {
                       type="number"
                       min="0"
                       max="23"
-                      aria-label="은하 시" required value={birthHour}
+                      aria-label="은하 시" required disabled={loading} value={birthHour}
                       onChange={(e) => setBirthHour(e.target.value)}
                       className="w-full text-center text-sm font-semibold bg-transparent focus:outline-none"
                     />
@@ -235,7 +235,7 @@ export default function GuinPage() {
                       type="number"
                       min="0"
                       max="59"
-                      aria-label="은하 분" required value={birthMinute}
+                      aria-label="은하 분" required disabled={loading} value={birthMinute}
                       onChange={(e) => setBirthMinute(e.target.value)}
                       className="w-full text-center text-sm font-semibold bg-transparent focus:outline-none"
                     />

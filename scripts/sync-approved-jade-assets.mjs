@@ -39,8 +39,13 @@ if (existsSync(restoredPath) && sha(readFileSync(restoredPath)) !== sha(restored
 
 // Complete content validation before writing any runtime output.
 mkdirSync(output, { recursive: true });
-for (const [relative, target] of files) copyFileSync(path.join(source, relative), path.join(output, target));
-console.log('Approved jade v002: 4 runtime assets copied after SHA-256 verification.');
+for (const [relative, target] of files) {
+  const destination = path.join(output, target);
+  if (!existsSync(destination) || sha(readFileSync(destination)) !== hashes.get(relative)) {
+    copyFileSync(path.join(source, relative), destination);
+  }
+}
+console.log('Approved jade v002: 4 runtime assets synchronized after SHA-256 verification.');
 mkdirSync(path.join(root, 'public/models'), { recursive: true });
-writeFileSync(restoredPath, restored);
-console.log('Preserved porcelain GLB: restored with both SHA-256 checks.');
+if (!existsSync(restoredPath)) writeFileSync(restoredPath, restored);
+console.log('Preserved porcelain GLB: available with both SHA-256 checks.');

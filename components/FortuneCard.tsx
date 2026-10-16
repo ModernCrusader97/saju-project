@@ -37,10 +37,10 @@ export default function FortuneCard({ fortune }: FortuneCardProps) {
           <span className="inline-block px-3 py-1 rounded-full bg-doryeong-gold/20 border border-doryeong-gold/40 text-[11px] font-bold text-doryeong-gold mb-3">
             나의 사주 이야기
           </span>
-          <h2 className="font-serif text-2xl font-bold leading-tight">
+          <h2 className="font-serif text-2xl font-bold leading-tight whitespace-pre-line">
             {fortune.title}
           </h2>
-          <p className="mt-3 text-sm text-white/80 leading-relaxed font-serif">
+          <p className="mt-3 text-sm text-white/80 leading-relaxed font-serif whitespace-pre-line">
             &quot;{fortune.summary}&quot;
           </p>
         </div>
@@ -160,11 +160,11 @@ export default function FortuneCard({ fortune }: FortuneCardProps) {
           <span className="flex h-6 w-6 items-center justify-center rounded-full bg-doryeong-gold text-white text-xs font-bold">
             ★
           </span>
-          <h4 className="font-serif text-lg font-bold text-doryeong-navy">
+          <h4 className="font-serif text-lg font-bold text-doryeong-navy whitespace-pre-line">
             {fortune.metaphor.coreTitle}
           </h4>
         </div>
-        <p className="text-sm leading-relaxed text-doryeong-textMuted font-serif">
+        <p className="text-sm leading-relaxed text-doryeong-textMuted font-serif whitespace-pre-line">
           {fortune.metaphor.description}
         </p>
       </div>
@@ -178,11 +178,11 @@ export default function FortuneCard({ fortune }: FortuneCardProps) {
           >
             <div className="flex items-start justify-between">
               <div className="min-w-0 break-words">
-                <h4 className="font-serif text-base font-bold text-doryeong-navy">
+                <h4 className="font-serif text-base font-bold text-doryeong-navy whitespace-pre-line">
                   {sec.title}
                 </h4>
                 {sec.subtitle && (
-                  <p className="text-xs text-doryeong-gold font-medium mt-0.5">
+                  <p className="text-xs text-doryeong-gold font-medium mt-0.5 whitespace-pre-line">
                     {sec.subtitle}
                   </p>
                 )}
@@ -213,19 +213,19 @@ export default function FortuneCard({ fortune }: FortuneCardProps) {
         <div className="grid grid-cols-2 gap-3 text-xs">
           <div className="p-3 rounded-xl bg-doryeong-ivory border border-doryeong-border">
             <span className="font-bold text-doryeong-textMuted block">나를 돕는 색상</span>
-            <span className="font-semibold text-doryeong-navy mt-1 block">
+            <span className="font-semibold text-doryeong-navy mt-1 block whitespace-pre-line">
               {fortune.luckyAdvice.color}
             </span>
           </div>
           <div className="p-3 rounded-xl bg-doryeong-ivory border border-doryeong-border">
             <span className="font-bold text-doryeong-textMuted block">기운을 얻는 방위</span>
-            <span className="font-semibold text-doryeong-navy mt-1 block">
+            <span className="font-semibold text-doryeong-navy mt-1 block whitespace-pre-line">
               {fortune.luckyAdvice.direction}
             </span>
           </div>
           <div className="p-3 rounded-xl bg-doryeong-ivory border border-doryeong-border col-span-2">
             <span className="font-bold text-doryeong-textMuted block">마음가짐 처방</span>
-            <span className="font-semibold text-doryeong-navy mt-1 block">
+            <span className="font-semibold text-doryeong-navy mt-1 block whitespace-pre-line">
               &quot;{fortune.luckyAdvice.mindset}&quot;
             </span>
           </div>

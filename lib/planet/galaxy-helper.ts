@@ -57,7 +57,7 @@ export function buildGalaxyNodes(
   // 케미/궁합 점수에 따라 같은 나선팔(인접 성단) 또는 조화 나선팔에 배치
   friendList.forEach((friend, idx) => {
     const pillars = resolvePersonPillars(friend);
-    const score = friend.affinityScore || 90;
+    const score = friend.affinityScore ?? 90;
 
     // 궁합 점수에 따른 나선팔 선택 및 반경 오프셋
     let armIndex = 0;

@@ -24,6 +24,8 @@ export default function GalaxyPokedexModal({
   useEffect(() => {
     if (!isOpen) return;
     const opener = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
     closeButton.current?.focus({ preventScroll: true });
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
@@ -32,13 +34,18 @@ export default function GalaxyPokedexModal({
           .filter(control => control.getClientRects().length > 0);
         if (!controls.length) return;
         const first = controls[0], last = controls[controls.length - 1];
-        if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
-        else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+        if (!controls.includes(document.activeElement as HTMLButtonElement)
+          || (e.shiftKey && document.activeElement === first)
+          || (!e.shiftKey && document.activeElement === last)) {
+          e.preventDefault();
+          (e.shiftKey ? last : first).focus();
+        }
       }
     };
     window.addEventListener("keydown", handleKeyDown);
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = previousOverflow;
       if (opener?.isConnected) opener.focus({ preventScroll: true });
     };
   }, [isOpen, onClose]);

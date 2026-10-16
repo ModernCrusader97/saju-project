@@ -113,7 +113,7 @@ export default function Home() {
           <label>일<input required type="number" min={1} max={31} value={d} onChange={event => setD(event.target.value)} inputMode="numeric" /></label>
         </div>
         <div className="time-row">
-          <label>태어난 시각<input type="number" min={0} max={23} value={h} disabled={unknown} onChange={event => setH(event.target.value)} inputMode="numeric" /></label>
+          <label>태어난 시각<input required type="number" min={0} max={23} value={h} disabled={unknown} onChange={event => setH(event.target.value)} inputMode="numeric" /></label>
           <label className="checkbox-label"><input type="checkbox" checked={unknown} onChange={event => setUnknown(event.target.checked)} />시간 모름</label>
         </div>
         {error && <p role="alert" className="form-error">{error}</p>}

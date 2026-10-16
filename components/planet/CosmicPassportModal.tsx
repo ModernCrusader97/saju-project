@@ -25,6 +25,7 @@ export default function CosmicPassportModal({
   const [copyError, setCopyError] = useState("");
   const [copyContext, setCopyContext] = useState({isOpen, personId: person.id, personName: person.name});
   const copyRequest = useRef(0);
+  const downloadRequest = useRef(0);
   const copyFeedbackTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
   const cardRef = useRef<HTMLDivElement>(null);
   const dialogRef = useRef<HTMLDivElement>(null);
@@ -33,10 +34,12 @@ export default function CosmicPassportModal({
     setCopyContext({isOpen, personId: person.id, personName: person.name});
     setCopied(false);
     setCopyError("");
+    setDownloading(false);
   }
 
   useLayoutEffect(() => () => {
     copyRequest.current += 1;
+    downloadRequest.current += 1;
     clearTimeout(copyFeedbackTimer.current);
     copyFeedbackTimer.current = undefined;
   }, [isOpen, person.id, person.name]);
@@ -44,8 +47,13 @@ export default function CosmicPassportModal({
   useEffect(() => {
     if (!isOpen) return;
     const previous = document.activeElement as HTMLElement | null;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
     dialogRef.current?.querySelector<HTMLButtonElement>('button')?.focus();
-    return () => { previous?.focus(); };
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      previous?.focus();
+    };
   }, [isOpen]);
 
   useEffect(() => {
@@ -100,6 +108,7 @@ export default function CosmicPassportModal({
 
   // 9:16 인스타그램 스토리용 고해상도 여권 카드 이미지 생성 (HTML5 Canvas)
   const handleDownloadStoryCard = async () => {
+    const request = ++downloadRequest.current;
     setDownloading(true);
     try {
       if (!portraitUrl) throw new Error("Mascot image is not ready.");
@@ -163,6 +172,7 @@ export default function CosmicPassportModal({
           const visiblePortrait = cardRef.current?.querySelector<HTMLImageElement>("img[data-ganzi-key]");
           img.src = visiblePortrait?.currentSrc || portraitUrl;
         });
+        if (downloadRequest.current !== request) return;
         ctx.save();
         ctx.drawImage(img, 240, 500, 600, 600);
         ctx.restore();
@@ -235,9 +245,10 @@ export default function CosmicPassportModal({
       a.download = `우주여권_${person.name}_${dayKey}.png`;
       a.click();
     } catch {
+      if (downloadRequest.current !== request) return;
       alert("스토리 카드 생성 중 오류가 발생했습니다.");
     } finally {
-      setDownloading(false);
+      if (downloadRequest.current === request) setDownloading(false);
     }
   };
 

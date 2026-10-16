@@ -167,6 +167,7 @@ export default function GalaxyCanvas({
   const motionPausedRef = useRef(false);
   const simulationTimeRef = useRef(0);
   const toastTimersRef = useRef<ReturnType<typeof setTimeout>[]>([]);
+  const captureFeedbackTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [motionPaused, setMotionPaused] = useState(false);
 
   // UI States
@@ -631,7 +632,7 @@ export default function GalaxyCanvas({
       // 천체 HUD 라벨 스프라이트 부착 (Hyper3D 레퍼런스 스타일)
       const badgeText = isOwner
         ? "나의 중심별"
-        : `${node.person.relationTitle} · 궁합 ${node.person.affinityScore || 90}점`;
+        : `${node.person.relationTitle} · 궁합 ${node.person.affinityScore ?? 90}점`;
       const labelSprite = createPlanetLabelSprite(node.person.name, badgeText, isOwner);
       labelSprite.position.set(0, scale * 1.6 + 0.5, 0);
       planetGroup.add(labelSprite);
@@ -668,7 +669,7 @@ export default function GalaxyCanvas({
         setLandingNotice({
           name: node.person.name,
           relationTitle: node.person.relationTitle,
-          affinity: node.person.affinityScore || 90,
+          affinity: node.person.affinityScore ?? 90,
         });
 
         toastTimersRef.current.push(setTimeout(() => {
@@ -777,7 +778,12 @@ export default function GalaxyCanvas({
       a.download = `우리은하_${new Date().toISOString().slice(0, 10)}.png`;
       a.click();
       setCapturedNotice(true);
-      toastTimersRef.current.push(setTimeout(() => setCapturedNotice(false), 2500));
+      if (captureFeedbackTimerRef.current !== null) clearTimeout(captureFeedbackTimerRef.current);
+      captureFeedbackTimerRef.current = setTimeout(() => {
+        captureFeedbackTimerRef.current = null;
+        setCapturedNotice(false);
+      }, 2500);
+      toastTimersRef.current.push(captureFeedbackTimerRef.current);
     } catch {
       alert("이미지 저장 중 오류가 발생했습니다.");
     }
@@ -886,7 +892,7 @@ export default function GalaxyCanvas({
 
       {/* 스냅샷 저장 알림 토스트 */}
       {capturedNotice && (
-        <div className="absolute top-16 left-1/2 -translate-x-1/2 z-20 bg-emerald-950/90 border border-emerald-400 text-emerald-200 text-xs px-4 py-2 rounded-xl backdrop-blur-md shadow-xl flex items-center gap-2 animate-in fade-in slide-in-from-top-2">
+        <div className="absolute top-16 left-1/2 -translate-x-1/2 z-20 pointer-events-none bg-emerald-950/90 border border-emerald-400 text-emerald-200 text-xs px-4 py-2 rounded-xl backdrop-blur-md shadow-xl flex items-center gap-2 animate-in fade-in slide-in-from-top-2">
           <Camera className="h-4 w-4 text-emerald-400" />
           <span>우리은하 고해상도 이미지가 저장되었습니다! ✨</span>
         </div>
@@ -894,7 +900,7 @@ export default function GalaxyCanvas({
 
       {/* [Step 2] 시네마틱 착륙 도킹 HUD 알림 */}
       {landingNotice && (
-        <div className="absolute top-16 left-1/2 -translate-x-1/2 z-20 bg-gradient-to-r from-amber-950/95 via-purple-950/95 to-slate-950/95 border-2 border-doryeong-gold text-white px-5 py-3 rounded-2xl backdrop-blur-xl shadow-2xl flex items-center gap-3 animate-in fade-in slide-in-from-top-4">
+        <div className="absolute top-16 left-1/2 -translate-x-1/2 z-20 pointer-events-none bg-gradient-to-r from-amber-950/95 via-purple-950/95 to-slate-950/95 border-2 border-doryeong-gold text-white px-5 py-3 rounded-2xl backdrop-blur-xl shadow-2xl flex items-center gap-3 animate-in fade-in slide-in-from-top-4">
           <div className="p-2 rounded-xl bg-doryeong-gold/20 text-doryeong-gold shrink-0">
             <Sparkles className="h-5 w-5 animate-spin" />
           </div>

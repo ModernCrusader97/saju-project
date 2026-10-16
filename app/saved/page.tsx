@@ -131,10 +131,12 @@ function SavedContent() {
   }, [fortunes, selectedCategory, searchQuery]);
 
   const categoryCounts = useMemo(() => {
-    return Object.fromEntries(Object.keys(CATEGORY_MAP).map((key) => [
-      key,
-      fortunes.filter((f) => (f.category || "overall") === key).length,
-    ]));
+    const counts: Record<string, number> = Object.fromEntries(Object.keys(CATEGORY_MAP).map(key => [key, 0]));
+    for (const fortune of fortunes) {
+      const key = fortune.category || "overall";
+      if (Object.prototype.hasOwnProperty.call(counts, key)) counts[key] += 1;
+    }
+    return counts;
   }, [fortunes]);
 
   return (

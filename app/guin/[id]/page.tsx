@@ -515,9 +515,9 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
                   }`}
                 >
                 <div className="flex items-start justify-between">
-                  <div className="flex items-center gap-2.5">
+                  <div className="flex min-w-0 items-center gap-2.5">
                     <div
-                      className={`h-10 w-10 rounded-2xl flex items-center justify-center font-bold text-sm ${
+                      className={`h-10 w-10 shrink-0 rounded-2xl flex items-center justify-center font-bold text-sm ${
                         person.isMe
                           ? "bg-doryeong-gold text-doryeong-navy font-serif"
                           : "bg-doryeong-ivoryDark text-doryeong-navy border border-doryeong-border"
@@ -525,12 +525,12 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
                     >
                       <GanziMascotImage dayKey={person.pillars?.dayKey} thumbnail className="mascot-friend-portrait"/>
                     </div>
-                    <div>
+                    <div className="min-w-0">
                       <div className="flex items-center gap-1.5">
-                        <h4 className="font-bold text-sm text-doryeong-textDark">
+                        <h4 className="min-w-0 font-bold text-sm text-doryeong-textDark">
                           <button type="button" aria-pressed={isSelected}
                             onClick={(event) => { event.stopPropagation(); setSelectedPersonId(person.id); }}
-                            className="text-left">
+                            className="max-w-full break-words text-left">
                             {person.name}
                           </button>
                         </h4>
@@ -547,7 +547,7 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
                   </div>
 
                   {!person.isMe && (
-                    <div className="text-right">
+                    <div className="shrink-0 text-right">
                       <span className="text-xs font-bold text-doryeong-roseText bg-doryeong-roseBg px-2 py-0.5 rounded-full">
                         시연 점수 {person.affinityScore}점
                       </span>
@@ -631,7 +631,7 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
                     type="text"
                     required
                     placeholder="예: 지우"
-                    value={friendName}
+                    disabled={joining} value={friendName}
                     onChange={(e) => setFriendName(e.target.value)}
                     className="w-full px-4 py-2.5 rounded-xl border border-doryeong-border bg-white text-sm focus:outline-none"
                   />
@@ -646,7 +646,7 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
                       type="number"
                       required
                       aria-label="태어난 연도"
-                      value={fYear}
+                      disabled={joining} value={fYear}
                       onChange={(e) => setFYear(e.target.value)}
                       className="px-2 py-2 text-center rounded-xl border border-doryeong-border bg-white text-sm"
                     />
@@ -654,7 +654,7 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
                       type="number"
                       required
                       aria-label="태어난 월"
-                      value={fMonth}
+                      disabled={joining} value={fMonth}
                       onChange={(e) => setFMonth(e.target.value)}
                       className="px-2 py-2 text-center rounded-xl border border-doryeong-border bg-white text-sm"
                     />
@@ -662,7 +662,7 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
                       type="number"
                       required
                       aria-label="태어난 일"
-                      value={fDay}
+                      disabled={joining} value={fDay}
                       onChange={(e) => setFDay(e.target.value)}
                       className="px-2 py-2 text-center rounded-xl border border-doryeong-border bg-white text-sm"
                     />
@@ -677,7 +677,7 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
                     <label className="text-[11px] text-doryeong-textMuted flex items-center gap-1 cursor-pointer">
                       <input
                         type="checkbox"
-                        checked={fUnknownTime}
+                        disabled={joining} checked={fUnknownTime}
                         onChange={(e) => setFUnknownTime(e.target.checked)}
                         className="rounded accent-doryeong-navy"
                       />
@@ -693,7 +693,7 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
                         max="23"
                         required
                         placeholder="시 (0~23)"
-                        value={fHour}
+                        disabled={joining} value={fHour}
                         onChange={(e) => setFHour(e.target.value)}
                         className="px-3 py-2 text-center rounded-xl border border-doryeong-border bg-white text-sm"
                       />
@@ -703,7 +703,7 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
                         max="59"
                         required
                         placeholder="분 (0~59)"
-                        value={fMinute}
+                        disabled={joining} value={fMinute}
                         onChange={(e) => setFMinute(e.target.value)}
                         className="px-3 py-2 text-center rounded-xl border border-doryeong-border bg-white text-sm"
                       />
