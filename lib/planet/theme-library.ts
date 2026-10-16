@@ -179,7 +179,7 @@ const BRANCH_MODIFIERS: Record<string, { roughMod: number; metalMod: number; bum
 };
 
 // 60종 테마 프리셋 맵 생성
-const THEME_PRESET_MAP: Record<string, GanziThemePreset> = {};
+const THEME_PRESET_MAP: Record<string, GanziThemePreset> = Object.create(null);
 
 SIXTY_GANZI_KEYS.forEach(({ key, hanja, stem, branch }) => {
   const base = STEM_BASE_PROFILES[stem] || STEM_BASE_PROFILES["갑"];

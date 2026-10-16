@@ -9,7 +9,7 @@ import { createStudioEnvironment } from "@/lib/planet/scene-environment";
 import { createSurfaceEffects, animateSurfaceEffects, disposeSurfaceEffects } from "@/lib/planet/surface-effects";
 import { getStemThemePreset } from "@/lib/planet/theme-library";
 import { createPlanetMaterial, animateSurface, resetSurface } from "@/lib/planet/surface-material";
-import { disposeObject, disposeMaterial } from "@/lib/planet/render-resources";
+import { disposeObject, disposeMaterial, observeCanvasResize, resizeRenderer } from "@/lib/planet/render-resources";
 import { safeDelta } from "@/lib/planet/surface-math";
 import { MaskStyle } from "@/lib/planet/uv-mask";
 import { createAsteroidBeltParticles } from "@/lib/planet/asteroid-belt";
@@ -198,9 +198,8 @@ export default function PlanetCanvas({
       setReady(false);
       cameraRef.current.aspect = w / h;
       cameraRef.current.updateProjectionMatrix();
-      rendererRef.current.setSize(w, h);
+      resizeRenderer(rendererRef.current, w, h, low ? 1.25 : 1.75);
     };
-    window.addEventListener("resize", handleResize);
 
     // Reduced motion starts paused. Explicit user play can opt into gentle motion.
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -213,8 +212,7 @@ export default function PlanetCanvas({
     let previousTime = performance.now();
     const onVisibility = () => { previousTime = performance.now(); };
     document.addEventListener("visibilitychange", onVisibility);
-    const resizeObserver = new ResizeObserver(handleResize);
-    resizeObserver.observe(container);
+    const detachResize = observeCanvasResize(container, handleResize);
     let animationFrameId: number;
     const animate = (now: number) => {
       animationFrameId = requestAnimationFrame(animate);
@@ -245,8 +243,7 @@ export default function PlanetCanvas({
     return () => {
       cancelAnimationFrame(animationFrameId);
       if (toastTimerRef.current) clearTimeout(toastTimerRef.current);
-      window.removeEventListener("resize", handleResize);
-      resizeObserver.disconnect();
+      detachResize();
       reducedMotion.removeEventListener("change", updateMotionPreference);
       document.removeEventListener("visibilitychange", onVisibility);
       detachGestures();

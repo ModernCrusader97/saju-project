@@ -11,7 +11,7 @@ import { buildGalaxyNodes, GalaxyNode } from "@/lib/planet/galaxy-helper";
 import { getStemThemePreset } from "@/lib/planet/theme-library";
 import { createPlanetMaterial, animateSurface, resetSurface } from "@/lib/planet/surface-material";
 import { safeDelta, damping, seededRandom, hashSeed } from "@/lib/planet/surface-math";
-import { disposeObject } from "@/lib/planet/render-resources";
+import { disposeObject, observeCanvasResize, resizeRenderer } from "@/lib/planet/render-resources";
 import { buildSpiralGalaxy } from "@/lib/planet/spiral-galaxy";
 import { createAsteroidBeltParticles } from "@/lib/planet/asteroid-belt";
 import {
@@ -349,13 +349,13 @@ export default function GalaxyCanvas({
       const h = Math.max(1, containerRef.current.clientHeight);
       cameraRef.current.aspect = w / h;
       cameraRef.current.updateProjectionMatrix();
-      rendererRef.current.setSize(w, h);
+      resizeRenderer(rendererRef.current, w, h, low ? 1.25 : 1.75);
     };
-    window.addEventListener("resize", handleResize);
 
     // 렌더 애니메이션 루프
     let animationFrameId: number;
     let previousTime = performance.now();
+    const connectionPoint = new THREE.Vector3();
 
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
     const updateMotionPreference = () => { motionPausedRef.current = reducedMotion.matches; setMotionPaused(reducedMotion.matches); };
@@ -363,8 +363,7 @@ export default function GalaxyCanvas({
     reducedMotion.addEventListener("change", updateMotionPreference);
     const onVisibility = () => { previousTime = performance.now(); };
     document.addEventListener("visibilitychange", onVisibility);
-    const resizeObserver = new ResizeObserver(handleResize);
-    resizeObserver.observe(container);
+    const detachResize = observeCanvasResize(container, handleResize);
 
     const animate = (now: number) => {
       animationFrameId = requestAnimationFrame(animate);
@@ -393,9 +392,7 @@ export default function GalaxyCanvas({
       if (trackedPlanetIdRef.current) {
         const tracked = planetMeshesRef.current.get(trackedPlanetIdRef.current);
         if (tracked && tracked.group) {
-          const worldPos = new THREE.Vector3();
-          tracked.group.getWorldPosition(worldPos);
-          cameraTarget.current.copy(worldPos);
+          tracked.group.getWorldPosition(cameraTarget.current);
         } else {
           trackedPlanetIdRef.current = null;
         }
@@ -426,9 +423,8 @@ export default function GalaxyCanvas({
         const elapsed = reducedMotion.matches ? duration : landingAnimRef.current.elapsed;
         const t = Math.min(1.0, elapsed / duration);
         const ease = 1 - Math.pow(1 - t, 3); // Cubic ease out
-        const curPos = new THREE.Vector3().lerpVectors(startPos, targetPos, ease);
+        const curPos = group.position.lerpVectors(startPos, targetPos, ease);
         curPos.y += Math.sin(t * Math.PI) * 4.5;
-        group.position.copy(curPos);
 
         if (t >= 1.0) {
           group.position.copy(targetPos);
@@ -456,19 +452,21 @@ export default function GalaxyCanvas({
 
       // 7. 인연선 펄스 파티클 동적 갱신
       connectionsRef.current.forEach((conn) => {
-        const origin = ownerGroupRef.current?.position ?? new THREE.Vector3();
-        conn.curve.v0.copy(origin);
+        const origin = conn.curve.v0;
+        if (ownerGroupRef.current) origin.copy(ownerGroupRef.current.position);
+        else origin.set(0, 0, 0);
         conn.curve.v2.copy(conn.friendGroup.position);
         conn.curve.v1.copy(origin).add(conn.friendGroup.position).multiplyScalar(.5);
         conn.curve.v1.y += .9;
-        const points = conn.curve.getPoints(24);
         const attribute = conn.line.geometry.getAttribute('position') as THREE.BufferAttribute;
-        points.forEach((point, i) => attribute.setXYZ(i, point.x, point.y, point.z));
+        for (let i = 0; i <= 24; i++) {
+          conn.curve.getPoint(i / 24, connectionPoint);
+          attribute.setXYZ(i, connectionPoint.x, connectionPoint.y, connectionPoint.z);
+        }
         attribute.needsUpdate = true;
         conn.line.geometry.computeBoundingSphere();
         conn.pulseT = (conn.pulseT + .22 * motionDt) % 1.0;
-        const pPos = conn.curve.getPoint(conn.pulseT);
-        conn.pulseMesh.position.copy(pPos);
+        conn.curve.getPoint(conn.pulseT, conn.pulseMesh.position);
       });
 
       renderer.render(scene, camera);
@@ -478,8 +476,7 @@ export default function GalaxyCanvas({
     return () => {
       cancelAnimationFrame(animationFrameId);
       toastTimers.forEach(clearTimeout);
-      window.removeEventListener("resize", handleResize);
-      resizeObserver.disconnect();
+      detachResize();
       reducedMotion.removeEventListener("change", updateMotionPreference);
       document.removeEventListener("visibilitychange", onVisibility);
       detachGestures();

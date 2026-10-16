@@ -28,6 +28,8 @@ export function createAsteroidBeltParticles(
   // 연주 테마의 주/보조 색상 파싱
   const pCol = new THREE.Color(yearPreset.surface.primaryColor);
   const sCol = new THREE.Color(yearPreset.surface.secondaryColor);
+  const particleColor = new THREE.Color();
+  const highlightColor = new THREE.Color(0xFFFFFF);
 
   // 안쪽/바깥쪽 반경 (행성 본체와의 간격 유지)
   const innerRadius = 2.35 * scale;
@@ -59,11 +61,11 @@ export function createAsteroidBeltParticles(
 
     // 4. 연주 테마 파티클 색상 (주 색상, 보조 색상, 미세 발광 암석 파편)
     const colorMix = random();
-    const particleColor = new THREE.Color().lerpColors(pCol, sCol, colorMix);
+    particleColor.lerpColors(pCol, sCol, colorMix);
 
     // 20% 확률로 햇빛을 반사하는 밝은 광물성/얼음 하이라이트 파편
     if (random() < 0.20) {
-      particleColor.lerp(new THREE.Color(0xFFFFFF), 0.65);
+      particleColor.lerp(highlightColor, 0.65);
     }
 
     colors[i * 3] = particleColor.r;

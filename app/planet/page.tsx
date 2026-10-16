@@ -109,8 +109,8 @@ export default function PlanetStudioPage() {
               <label>월<input aria-label="스튜디오 월" required type="number" min={1} max={12} inputMode="numeric" value={draft.month} onChange={e => changeBirth("month", e.target.value)}/></label>
               <label>일<input aria-label="스튜디오 일" required type="number" min={1} max={31} inputMode="numeric" value={draft.day} onChange={e => changeBirth("day", e.target.value)}/></label>
             </div>
-            <div className="time-row"><label>시<input aria-label="스튜디오 시" type="number" min={0} max={23} disabled={draft.unknown} value={draft.hour} onChange={e => changeBirth("hour", e.target.value)}/></label>
-              <label>분<input aria-label="스튜디오 분" type="number" min={0} max={59} disabled={draft.unknown} value={draft.minute} onChange={e => changeBirth("minute", e.target.value)}/></label>
+            <div className="time-row"><label>시<input aria-label="스튜디오 시" required type="number" min={0} max={23} disabled={draft.unknown} value={draft.hour} onChange={e => changeBirth("hour", e.target.value)}/></label>
+              <label>분<input aria-label="스튜디오 분" required type="number" min={0} max={59} disabled={draft.unknown} value={draft.minute} onChange={e => changeBirth("minute", e.target.value)}/></label>
               <label className="checkbox-label"><input aria-label="스튜디오 시간 모름" type="checkbox" checked={draft.unknown} onChange={e => changeBirth("unknown", e.target.checked)}/>시간 모름</label></div>
             {error && <p role="alert" className="form-error">{error}</p>}
             {applied && <p role="status" className="form-note">같은 사주를 정령과 행성에 반영했어요.</p>}

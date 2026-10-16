@@ -1,4 +1,5 @@
 "use client";
+import { observeCanvasResize, resizeRenderer } from "@/lib/planet/render-resources";
 
 import React, { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
@@ -109,9 +110,9 @@ export default function ElementalSpiritCanvas({
       // Fit the unchanged front width and the separate small day-branch animal.
       const distance=Math.max(5.7,1.50/(Math.tan(THREE.MathUtils.degToRad(camera.fov/2))*camera.aspect));
       camera.position.set(0,1.70,distance);camera.lookAt(0,1.24,0);camera.updateProjectionMatrix();
-      renderer.setSize(width,height,false);render();
+      resizeRenderer(renderer,width,height,low?1.35:1.75,false);render();
     };
-    const observer=new ResizeObserver(resize);observer.observe(container);resize();
+    const detachResize=observeCanvasResize(container,resize);resize();
     // Loading is asynchronous and scoped to this mounted view. Late completions never
     // attach a model to an unmounted scene or keep its GPU resources alive.
     loadApprovedSpirit(dayKey,monthKey,low?"low":"high").then(instance=>{
@@ -131,6 +132,7 @@ export default function ElementalSpiritCanvas({
       spirit.avatarPivot.rotation.x=viewRotation.current.x;spirit.avatarPivot.rotation.y=viewRotation.current.y;render();
     };
     const onDown=(event:PointerEvent)=>{
+      if(event.pointerType==="mouse" && event.button!==0)return;
       if(activePointer!==null)return;
       activePointer=event.pointerId;previous={x:event.clientX,y:event.clientY};origin={...previous};movement=0;dragIntent=null;
       dom.setPointerCapture(event.pointerId);
@@ -188,7 +190,7 @@ export default function ElementalSpiritCanvas({
     };
     frame=requestAnimationFrame(animate);
     return ()=>{
-      cancelAnimationFrame(frame);observer.disconnect();
+      cancelAnimationFrame(frame);detachResize();
       reducedMotion.removeEventListener("change",onMotionPreference);
       document.removeEventListener("visibilitychange",onVisibility);
       dom.removeEventListener("pointerdown",onDown);dom.removeEventListener("pointermove",onMove);

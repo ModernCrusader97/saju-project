@@ -26,3 +26,34 @@ export function surfaceTexture(canvas: HTMLCanvasElement, color = false): THREE.
   texture.anisotropy = 4;
   return texture;
 }
+
+/** Keep the drawing buffer at the current display density within the view's cap. */
+export function resizeRenderer(renderer: THREE.WebGLRenderer, width: number, height: number, maxPixelRatio: number, updateStyle = true): void {
+  const ratio = Math.min(window.devicePixelRatio, maxPixelRatio);
+  if (renderer.getPixelRatio() !== ratio) renderer.setPixelRatio(ratio);
+  renderer.setSize(width, height, updateStyle);
+}
+
+/** Content-box observers alone do not report a display-density-only change. */
+export function observeCanvasResize(element: Element, onResize: () => void): () => void {
+  let disposed = false;
+  const resized = () => { if (!disposed) onResize(); };
+  const observer = new ResizeObserver(resized);
+  observer.observe(element);
+  let resolution = window.matchMedia(`(resolution: ${window.devicePixelRatio}dppx)`);
+  const changed = () => {
+    if (disposed) return;
+    resolution.removeEventListener('change', changed);
+    resolution = window.matchMedia(`(resolution: ${window.devicePixelRatio}dppx)`);
+    resolution.addEventListener('change', changed);
+    resized();
+  };
+  resolution.addEventListener('change', changed);
+  window.addEventListener('resize', resized);
+  return () => {
+    disposed = true;
+    observer.disconnect();
+    resolution.removeEventListener('change', changed);
+    window.removeEventListener('resize', resized);
+  };
+}

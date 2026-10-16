@@ -40,18 +40,32 @@ export function createSphereMask(style: SurfaceMaskStyle, width: number, height:
   const histogram = new Float64Array(2048);
   const weights = Float64Array.from({length: height}, (_, y) => sphereRowWeight(y, height));
   const frequency = style === "pangaea" ? 2.7 : style === "archipelago" ? 6.2 : 4.2;
+  // Keep native precision and the duplicate meridian while reusing each column.
+  const longitudeCos = new Float64Array(Math.ceil(width));
+  const longitudeSin = new Float64Array(Math.ceil(width));
+  for (let x = 0; x < width; x++) {
+    const angle = ((x / (width - 1)) % 1) * Math.PI * 2;
+    longitudeCos[x] = Math.cos(angle);
+    longitudeSin[x] = Math.sin(angle);
+  }
   let total = 0;
-  for (let y = 0; y < height; y++) for (let x = 0; x < width; x++) {
-    const [sx, sy, sz] = spherePoint(x / (width - 1), y / (height - 1));
-    let score = sphericalField(sx, sy, sz, frequency, 0.82) * 0.76 + sphericalField(sx, sy, sz, frequency * 2.4, 1.3) * 0.24;
-    if (style === "bands") score = Math.sin(sy * 14 + sphericalField(sx, sy, sz, 4, .4) * 1.7) * .75;
-    if (style === "vortices") score = Math.sin(sy * 8 + sphericalField(sx, sy, sz, 3, 2) * 5 + sphericalField(sx, sy, sz, 9, .7)) * .78;
-    if (style === "tectonic") score = Math.abs(score) * 2 - 0.6;
-    scores[y * width + x] = score;
-    // Duplicate meridian endpoints each represent half a longitude cell.
-    const weight = weights[y] * (x === 0 || x === width - 1 ? 0.5 : 1);
-    histogram[Math.max(0, Math.min(2047, Math.round((score + 1) * 1023.5)))] += weight;
-    total += weight;
+  for (let y = 0; y < height; y++) {
+    const v = y / (height - 1), latitude = v * Math.PI;
+    const radius = Math.sin(latitude), sy = Math.cos(latitude);
+    const pole = v === 0 || v === 1;
+    for (let x = 0; x < width; x++) {
+      const sx = pole ? 0 : radius * longitudeCos[x];
+      const sz = pole ? 0 : radius * longitudeSin[x];
+      let score = sphericalField(sx, sy, sz, frequency, 0.82) * 0.76 + sphericalField(sx, sy, sz, frequency * 2.4, 1.3) * 0.24;
+      if (style === "bands") score = Math.sin(sy * 14 + sphericalField(sx, sy, sz, 4, .4) * 1.7) * .75;
+      if (style === "vortices") score = Math.sin(sy * 8 + sphericalField(sx, sy, sz, 3, 2) * 5 + sphericalField(sx, sy, sz, 9, .7)) * .78;
+      if (style === "tectonic") score = Math.abs(score) * 2 - 0.6;
+      scores[y * width + x] = score;
+      // Duplicate meridian endpoints each represent half a longitude cell.
+      const weight = weights[y] * (x === 0 || x === width - 1 ? 0.5 : 1);
+      histogram[Math.max(0, Math.min(2047, Math.round((score + 1) * 1023.5)))] += weight;
+      total += weight;
+    }
   }
   let low = -1.1, high = 1.1;
   // Calibrate the *soft, quantized* blend, not a different binary mask.

@@ -373,7 +373,15 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
                   return (
                     <div
                       key={insight.friendId}
+                      role="button"
+                      tabIndex={0}
                       onClick={() => setSelectedPersonId(insight.friendId)}
+                      onKeyDown={(event) => {
+                        if (event.key === "Enter" || event.key === " ") {
+                          event.preventDefault();
+                          setSelectedPersonId(insight.friendId);
+                        }
+                      }}
                       className={`p-3 rounded-2xl border transition-all cursor-pointer ${
                         isSelected
                           ? "bg-white/15 border-doryeong-gold shadow-md ring-2 ring-doryeong-gold/70"
