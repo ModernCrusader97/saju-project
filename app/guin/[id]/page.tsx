@@ -80,12 +80,17 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
   const [fMinute, setFMinute] = useState("30");
   const [fUnknownTime, setFUnknownTime] = useState(false);
   const [joining, setJoining] = useState(false);
+  const mounted = useRef(true);
   const joinDialogRef = useRef<HTMLDivElement>(null);
   const joinTriggerRef = useRef<HTMLButtonElement>(null);
 
-  useEffect(() => () => {
-    copyRequest.current += 1;
-    clearTimeout(copyFeedbackTimer.current);
+  useEffect(() => {
+    mounted.current = true;
+    return () => {
+      mounted.current = false;
+      copyRequest.current += 1;
+      clearTimeout(copyFeedbackTimer.current);
+    };
   }, []);
 
   useEffect(() => {
@@ -147,6 +152,8 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
     const dialog = joinDialogRef.current;
     const trigger = joinTriggerRef.current;
     if (!dialog) return;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
     dialog.querySelector<HTMLInputElement>('input')?.focus();
     const handleTab = (event: KeyboardEvent) => {
       if (event.key !== 'Tab' || event.altKey || event.ctrlKey || event.metaKey) return;
@@ -165,6 +172,7 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
     document.addEventListener('keydown', handleTab);
     return () => {
       document.removeEventListener('keydown', handleTab);
+      document.body.style.overflow = previousOverflow;
       if (!trigger?.isConnected) return;
       trigger.focus();
       requestAnimationFrame(() => {
@@ -221,6 +229,7 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
         }),
       });
       const data = await readApiResponse(res);
+      if (!mounted.current) return;
       if(!res.ok) throw new Error(data.error || "등록 중 오류가 발생했습니다.");
       if (data.success && canRenderAddedGuinMap(data.guinMap, mapId)) {
         const lastFriend = data.guinMap.guins[data.guinMap.guins.length - 1];
@@ -230,9 +239,9 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
         throw new Error("등록 중 오류가 발생했습니다.");
       }
     } catch {
-      alert("등록 중 오류가 발생했습니다.");
+      if (mounted.current) alert("등록 중 오류가 발생했습니다.");
     } finally {
-      setJoining(false);
+      if (mounted.current) setJoining(false);
     }
   };
 
@@ -256,6 +265,7 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
         }),
       });
       const data = await readApiResponse(res);
+      if (!mounted.current) return;
       if (!res.ok) {
         alert(data.error || "등록 중 오류가 발생했습니다.");
         return;
@@ -271,9 +281,9 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
         throw new Error("등록 중 오류가 발생했습니다.");
       }
     } catch {
-      alert("등록 중 오류가 발생했습니다.");
+      if (mounted.current) alert("등록 중 오류가 발생했습니다.");
     } finally {
-      setJoining(false);
+      if (mounted.current) setJoining(false);
     }
   };
 
@@ -586,12 +596,12 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
         {/* Join Modal for Friends */}
         {showJoinModal && (
           <div
-            className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/50 backdrop-blur-sm p-0 sm:p-4"
+            className="fixed inset-0 !mt-0 z-50 flex items-end sm:items-center justify-center bg-black/50 backdrop-blur-sm p-0 sm:p-4"
             onClick={() => setShowJoinModal(false)}
           >
             <div
               ref={joinDialogRef} role="dialog" aria-modal="true" aria-labelledby="guin-join-heading"
-              className="w-full max-w-md bg-doryeong-ivory rounded-t-[32px] sm:rounded-[32px] shadow-2xl border border-doryeong-border p-6 animate-in slide-in-from-bottom"
+              className="w-full max-w-md bg-doryeong-ivory rounded-t-[32px] sm:rounded-[32px] shadow-2xl border border-doryeong-border p-6 max-h-[92dvh] overflow-y-auto overscroll-y-contain animate-in slide-in-from-bottom"
               onClick={(e) => e.stopPropagation()}
             >
               <div className="flex items-center justify-between mb-4">

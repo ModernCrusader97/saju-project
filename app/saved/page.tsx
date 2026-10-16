@@ -254,7 +254,10 @@ function SavedContent() {
           ) : (
             <div className="space-y-3">
               {filteredFortunes.map((f) => {
-                const catInfo = CATEGORY_MAP[f.category || "overall"] || CATEGORY_MAP.overall;
+                const category = f.category || "overall";
+                const catInfo = Object.prototype.hasOwnProperty.call(CATEGORY_MAP, category)
+                  ? CATEGORY_MAP[category]
+                  : CATEGORY_MAP.overall;
                 const createdDate = f.createdAt ? new Date(f.createdAt) : null;
                 const formattedDate = createdDate
                   ? [

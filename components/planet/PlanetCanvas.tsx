@@ -282,7 +282,6 @@ export default function PlanetCanvas({
     surfaceEffectsRef.current = effects;
     animateSurfaceEffects(effects, motionTimeRef.current, 0);
     const satMesh = satelliteMeshRef.current;
-    satMesh.visible = !isUnknownTime;
     disposeMaterial(satMesh.material as THREE.Material);
     satMesh.material = createPlanetMaterial(presetH, undefined, maskStyle, 512);
 
@@ -297,7 +296,13 @@ export default function PlanetCanvas({
       planetRootRef.current.add(newBelt.points);
       asteroidBeltPointsRef.current = newBelt.points;
     }
-  }, [presetD, presetM, presetH, presetY, maskStyle, isUnknownTime, setReady]);
+  }, [presetD, presetM, presetH, presetY, maskStyle, setReady]);
+
+  useEffect(() => {
+    if (!satelliteMeshRef.current) return;
+    setReady(false);
+    satelliteMeshRef.current.visible = !isUnknownTime;
+  }, [isUnknownTime, setReady]);
 
   const handleToggleAutoRotate = () => {
     isAutoRotatingRef.current = !isAutoRotatingRef.current;

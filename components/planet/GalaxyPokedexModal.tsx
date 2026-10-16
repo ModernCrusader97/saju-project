@@ -66,7 +66,7 @@ export default function GalaxyPokedexModal({
 
   return (
     <div
-      className="fixed inset-0 z-50 bg-black/85 backdrop-blur-xl flex items-center justify-center p-4 overflow-y-auto animate-in fade-in"
+      className="fixed inset-0 !mt-0 z-50 bg-black/85 backdrop-blur-xl flex items-center justify-center p-4 overflow-y-auto animate-in fade-in"
       onClick={onClose}
     >
       <div
