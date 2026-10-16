@@ -115,10 +115,11 @@ function SavedContent() {
   };
 
   const filteredFortunes = useMemo(() => {
+    const q = searchQuery.trim().normalize("NFC").toLowerCase();
     return fortunes.filter((f) => {
       const matchCategory =
         selectedCategory === "all" || (f.category || "overall") === selectedCategory;
-      const q = searchQuery.trim().normalize("NFC").toLowerCase();
+      if (!matchCategory) return false;
       const matchSearch =
         !q ||
         f.name.normalize("NFC").toLowerCase().includes(q) ||
@@ -128,6 +129,13 @@ function SavedContent() {
       return matchCategory && matchSearch;
     });
   }, [fortunes, selectedCategory, searchQuery]);
+
+  const categoryCounts = useMemo(() => {
+    return Object.fromEntries(Object.keys(CATEGORY_MAP).map((key) => [
+      key,
+      fortunes.filter((f) => (f.category || "overall") === key).length,
+    ]));
+  }, [fortunes]);
 
   return (
     <div className="px-5 pt-2 pb-24 space-y-5">
@@ -194,7 +202,7 @@ function SavedContent() {
                 전체 ({fortunes.length})
               </button>
               {Object.entries(CATEGORY_MAP).map(([key, cat]) => {
-                const count = fortunes.filter((f) => (f.category || "overall") === key).length;
+                const count = categoryCounts[key];
                 if (count === 0 && selectedCategory !== key) return null;
                 return (
                   <button
@@ -265,7 +273,7 @@ function SavedContent() {
                     onKeyDown={(e) => {
                       if (e.key === "Enter" || e.key === " ") {
                         e.preventDefault();
-                        openFortune(f.id);
+                        if (!e.repeat) openFortune(f.id);
                       }
                     }}
                     className="p-4 rounded-[22px] bg-white border border-doryeong-border hover:border-doryeong-gold/60 focus:outline-none focus:ring-2 focus:ring-doryeong-gold cursor-pointer shadow-sm active:scale-[0.99] transition-all flex items-center justify-between gap-3 group"

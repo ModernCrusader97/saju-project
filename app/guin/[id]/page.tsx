@@ -132,7 +132,7 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") {
+      if (e.key === "Escape" && !e.isComposing) {
         if (showJoinModal) setShowJoinModal(false);
         if (passportPerson) setPassportPerson(null);
         if (showPokedexModal) setShowPokedexModal(false);
@@ -613,10 +613,11 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
                 }}
                 className="space-y-4">
                 <div>
-                  <label className="block text-xs font-bold text-doryeong-textDark mb-1">
+                  <label htmlFor="guin-friend-name" className="block text-xs font-bold text-doryeong-textDark mb-1">
                     내 이름 (또는 별명)
                   </label>
                   <input
+                    id="guin-friend-name"
                     type="text"
                     required
                     placeholder="예: 지우"
@@ -634,6 +635,7 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
                     <input
                       type="number"
                       required
+                      aria-label="태어난 연도"
                       value={fYear}
                       onChange={(e) => setFYear(e.target.value)}
                       className="px-2 py-2 text-center rounded-xl border border-doryeong-border bg-white text-sm"
@@ -641,6 +643,7 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
                     <input
                       type="number"
                       required
+                      aria-label="태어난 월"
                       value={fMonth}
                       onChange={(e) => setFMonth(e.target.value)}
                       className="px-2 py-2 text-center rounded-xl border border-doryeong-border bg-white text-sm"
@@ -648,6 +651,7 @@ function GuinMapDetailContent({ mapId }: { mapId: string }) {
                     <input
                       type="number"
                       required
+                      aria-label="태어난 일"
                       value={fDay}
                       onChange={(e) => setFDay(e.target.value)}
                       className="px-2 py-2 text-center rounded-xl border border-doryeong-border bg-white text-sm"

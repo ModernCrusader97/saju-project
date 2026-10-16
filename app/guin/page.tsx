@@ -3,7 +3,7 @@
 import { readApiResponse } from "@/lib/http-client";
 
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { calculateUniverse, EXAMPLE_UNIVERSE, readUniverseSession, saveGalaxyUniverse, UNIVERSE_CHANGE_EVENT } from "@/lib/universe-state";
 
@@ -21,6 +21,7 @@ export default function GuinPage() {
   const [birthMinute, setBirthMinute] = useState("30");
   const [isUnknownTime, setIsUnknownTime] = useState(false);
   const [loading, setLoading] = useState(false);
+  const mounted = useRef(true);
   const handleFormFocus = (event: React.FocusEvent<HTMLFormElement>) => {
     const target = event.target as HTMLElement;
     requestAnimationFrame(() => {
@@ -32,6 +33,7 @@ export default function GuinPage() {
     });
   };
   useEffect(() => {
+    mounted.current = true;
     const restore = () => {
       const saved = readUniverseSession();
       if (!saved) return;
@@ -41,7 +43,10 @@ export default function GuinPage() {
       setIsUnknownTime(birth.unknown);
     };
     restore(); window.addEventListener(UNIVERSE_CHANGE_EVENT, restore);
-    return () => window.removeEventListener(UNIVERSE_CHANGE_EVENT, restore);
+    return () => {
+      mounted.current = false;
+      window.removeEventListener(UNIVERSE_CHANGE_EVENT, restore);
+    };
   }, []);
 
   const handleCreate = async (e: React.FormEvent) => {
@@ -66,6 +71,7 @@ export default function GuinPage() {
         }),
       });
       const data = await readApiResponse(res);
+      if (!mounted.current) return;
       if (res.ok && data.success && data.guinMap
         && typeof data.guinMap.id === "string" && /^[a-zA-Z0-9_-]+$/.test(data.guinMap.id)) {
         saveGalaxyUniverse(next, data.guinMap);
@@ -74,9 +80,10 @@ export default function GuinPage() {
         alert(data.error || "지도 생성 실패");
       }
     } catch (reason) {
+      if (!mounted.current) return;
       alert(reason instanceof Error ? reason.message : "네트워크 오류가 발생했습니다.");
     } finally {
-      setLoading(false);
+      if (mounted.current) setLoading(false);
     }
   };
 
@@ -139,10 +146,11 @@ export default function GuinPage() {
             }}
             className="space-y-4">
             <div>
-              <label className="block text-xs font-bold text-doryeong-textDark mb-1">
+              <label htmlFor="guin-owner-name" className="block text-xs font-bold text-doryeong-textDark mb-1">
                 이름 (또는 닉네임)
               </label>
               <input
+                id="guin-owner-name"
                 type="text"
                 required
                 placeholder="예: 별이"

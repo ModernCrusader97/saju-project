@@ -79,7 +79,11 @@ export default function MansePage() {
         </div>
 
         {/* Input Form */}
-        <form onSubmit={handleCalc} className="p-5 rounded-[24px] bg-white border border-doryeong-border space-y-4 shadow-sm">
+        <form onSubmit={handleCalc}
+          onKeyDown={(event) => {
+            if (event.key === "Enter" && event.nativeEvent.isComposing) event.preventDefault();
+          }}
+          className="p-5 rounded-[24px] bg-white border border-doryeong-border space-y-4 shadow-sm">
           <div className="flex items-center justify-between pb-2 border-b border-doryeong-border">
             <span className="text-xs font-serif font-bold text-doryeong-navy">사주 명식 입력</span>
             {/* Gender Toggle */}
@@ -165,8 +169,8 @@ export default function MansePage() {
           </div>
 
           {/* Hour & Unknown time */}
-          <div className="flex items-center gap-3 pt-1">
-            <div className="flex-1 flex items-center gap-2">
+          <div className="flex flex-wrap items-center gap-3 pt-1">
+            <div className="flex grow items-center gap-2">
               <label htmlFor="manse-hour" className="text-[10.5px] font-bold text-doryeong-textMuted shrink-0">태어난 시 (0~23시):</label>
               <input
                 type="number"
@@ -204,7 +208,7 @@ export default function MansePage() {
         {result && (
           <div className="rounded-[24px] bg-white border border-doryeong-border p-5 shadow-sm space-y-5">
             <div className="flex items-center justify-between pb-3 border-b border-doryeong-border">
-              <div>
+              <div className="min-w-0 break-words">
                 <span className="font-serif font-bold text-base text-doryeong-navy block">
                   {result.name}님의 사주 원국표
                 </span>

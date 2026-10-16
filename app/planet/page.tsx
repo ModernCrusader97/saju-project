@@ -98,7 +98,10 @@ export default function PlanetStudioPage() {
       <div className="universe-controls">
         <details className="universe-disclosure" open>
           <summary><Calendar size={19}/><span>내 사주로 만나기</span></summary>
-          <form className="birth-panel" onSubmit={applyBirth}>
+          <form className="birth-panel" onSubmit={applyBirth}
+            onKeyDown={event => {
+              if (event.key === 'Enter' && event.nativeEvent.isComposing) event.preventDefault();
+            }}>
             <p>양력 생년월일을 입력하면 정령과 행성에 같은 사주가 반영돼요.</p>
             <label>이름 또는 별명<input aria-label="스튜디오 이름" value={draft.name} maxLength={40} autoComplete="nickname" onChange={e => changeBirth("name", e.target.value)}/></label>
             <div className="field-grid">
