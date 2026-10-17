@@ -97,7 +97,7 @@ function SavedContent() {
   useEffect(() => {
     if (!queryId || details.has(queryId)) return;
     const controller = new AbortController();
-    fetch(`/api/saju/${encodeURIComponent(queryId)}`, { signal: controller.signal })
+    fetch(`/api/saju/${encodeURIComponent(queryId)}`, { headers: { "X-Saju-View": "fortune" }, signal: controller.signal })
       .then(async (res) => {
         const data = await readApiResponse(res);
         if (!res.ok) throw new Error(data.error || "기록을 불러오지 못했습니다.");

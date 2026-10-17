@@ -56,10 +56,13 @@ export function createSphereMask(style: SurfaceMaskStyle, width: number, height:
     for (let x = 0; x < width; x++) {
       const sx = pole ? 0 : radius * longitudeCos[x];
       const sz = pole ? 0 : radius * longitudeSin[x];
-      let score = sphericalField(sx, sy, sz, frequency, 0.82) * 0.76 + sphericalField(sx, sy, sz, frequency * 2.4, 1.3) * 0.24;
+      let score: number;
       if (style === "bands") score = Math.sin(sy * 14 + sphericalField(sx, sy, sz, 4, .4) * 1.7) * .75;
-      if (style === "vortices") score = Math.sin(sy * 8 + sphericalField(sx, sy, sz, 3, 2) * 5 + sphericalField(sx, sy, sz, 9, .7)) * .78;
-      if (style === "tectonic") score = Math.abs(score) * 2 - 0.6;
+      else if (style === "vortices") score = Math.sin(sy * 8 + sphericalField(sx, sy, sz, 3, 2) * 5 + sphericalField(sx, sy, sz, 9, .7)) * .78;
+      else {
+        score = sphericalField(sx, sy, sz, frequency, 0.82) * 0.76 + sphericalField(sx, sy, sz, frequency * 2.4, 1.3) * 0.24;
+        if (style === "tectonic") score = Math.abs(score) * 2 - 0.6;
+      }
       scores[y * width + x] = score;
       // Duplicate meridian endpoints each represent half a longitude cell.
       const weight = weights[y] * (x === 0 || x === width - 1 ? 0.5 : 1);

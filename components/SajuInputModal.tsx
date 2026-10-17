@@ -203,7 +203,7 @@ export default function SajuInputModal({
 
         {/* Modal Body / Loading State */}
         {loading ? (
-          <div className="py-20 px-6 flex flex-col items-center justify-center text-center">
+          <div role="status" className="py-20 px-6 flex flex-col items-center justify-center text-center">
             <div className="relative mb-6">
               <div className="w-16 h-16 rounded-full border-4 border-doryeong-gold/30 border-t-doryeong-navy animate-spin" />
               <div className="absolute inset-0 flex items-center justify-center text-doryeong-navy">

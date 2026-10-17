@@ -10,6 +10,10 @@ export class MeshSurface {
   private byMesh = new Map<THREE.Mesh, Face[]>();
   private total = 0;
   readonly bounds = new THREE.Box3();
+  // Scratch storage is instance-local; returned poses retain their own vectors.
+  private readonly resolveVertices = [new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3()];
+  private readonly resolveTransform = new THREE.Matrix4();
+  private readonly resolveNormal = new THREE.Matrix3();
   constructor(readonly meshes: THREE.Mesh[]) {
     if (!meshes.length) throw new RangeError('At least one mesh surface is required.');
     for (const mesh of meshes) {
@@ -46,14 +50,15 @@ export class MeshSurface {
     const out=target??{position:new THREE.Vector3(),normal:new THREE.Vector3()};
     const mesh=anchor.mesh, p=mesh.geometry.getAttribute('position'), index=mesh.geometry.index;
     const ids=[0,1,2].map(i=>index?index.getX(anchor.triangle*3+i):anchor.triangle*3+i);
-    const [a,b,c]=ids.map(i=>new THREE.Vector3().fromBufferAttribute(p,i));
+    const [a,b,c]=this.resolveVertices;
+    a.fromBufferAttribute(p,ids[0]);b.fromBufferAttribute(p,ids[1]);c.fromBufferAttribute(p,ids[2]);
     out.position.copy(a).multiplyScalar(anchor.barycentric.x).addScaledVector(b,anchor.barycentric.y).addScaledVector(c,anchor.barycentric.z);
     // Geometric normals ensure attachment to actual polygon, avoiding interpolated-normal drift.
     out.normal.crossVectors(b.sub(a),c.sub(a)).normalize();
     mesh.updateWorldMatrix(true,false);root.updateWorldMatrix(true,false);
-    const relative=new THREE.Matrix4().copy(root.matrixWorld).invert().multiply(mesh.matrixWorld);
+    const relative=this.resolveTransform.copy(root.matrixWorld).invert().multiply(mesh.matrixWorld);
     if (Math.abs(relative.determinant())<1e-14) throw new Error('Surface transforms must be invertible.');
-    out.position.applyMatrix4(relative);out.normal.applyNormalMatrix(new THREE.Matrix3().getNormalMatrix(relative));
+    out.position.applyMatrix4(relative);out.normal.applyNormalMatrix(this.resolveNormal.getNormalMatrix(relative));
     return out;
   }
   /** Short local surface crawl. Restricts projection to the SAME mesh and similar facing triangles. */
